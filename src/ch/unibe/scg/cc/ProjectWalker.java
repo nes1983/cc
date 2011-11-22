@@ -1,0 +1,127 @@
+package ch.unibe.scg.cc;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.filefilter.*;
+
+import javax.inject.Inject;
+import javax.inject.Provider;
+
+import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.vfs2.FileFilterSelector;
+import org.apache.commons.vfs2.FileName;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSelectInfo;
+import org.apache.commons.vfs2.FileSelector;
+import org.apache.commons.vfs2.FileSystemException;
+import org.apache.commons.vfs2.FileSystemManager;
+import org.apache.commons.vfs2.FileTypeSelector;
+import org.apache.commons.vfs2.VFS;
+import org.junit.Test;
+
+import ch.unibe.scg.cc.activerecord.Project;
+
+public class ProjectWalker {
+
+	@Inject
+	@Java
+	Frontend javaFrontend;
+	
+	@Inject
+	Connection connection;
+
+	@Inject
+	Provider<Project> projectProvider;
+
+	final FileSystemManager fsManager;
+	final FileSelector javaFilter = new SuffixFilter(".java");
+
+	public ProjectWalker() {
+		try {
+			fsManager = VFS.getManager();
+		} catch (FileSystemException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public void crawl(String path) throws SQLException, IOException {
+		SuffixFileFilter filter = new SuffixFileFilter(".tar.gz");
+		File base = new File(path);
+		String[] projectNames = base
+				.list((FilenameFilter) new SuffixFileFilter(".tar.gz"));
+		for (String projectName : projectNames) {
+			FileObject project;
+
+			project = fsManager.resolveFile(base, projectName);
+			project = fsManager.resolveFile("tgz://"
+					+ project.toString().substring("file://".length()));
+
+			crawl(project, projectName);
+		}
+	}
+
+	public void crawl(FileObject project) throws SQLException, IOException {
+		crawl(project, project.getName().getBaseName());
+	}
+
+	public void crawl(FileObject project, String projectName) throws SQLException, IOException {
+	
+		Project currentProject = makeProject(projectName);
+	
+		FileObject[] javaFiles = project.findFiles(javaFilter);
+
+		System.out.println(ArrayUtils.toString(javaFiles));
+		crawl(javaFiles, currentProject);
+	}
+
+	Project makeProject(String projectName) {
+		Project project = projectProvider.get();
+		project.setName(projectName);
+		return project;
+	}
+
+	void crawl(FileObject[] javaFiles, Project project) throws SQLException, IOException {
+		for (FileObject o : javaFiles) {
+			crawl(o, project);
+		}
+	}
+
+	public void crawl(FileObject file, Project project) throws SQLException, IOException {
+		InputStream 	is = file.getContent().getInputStream();
+		String contents = IOUtils.toString(is, "UTF-8");
+		FileName name = file.getName();
+		javaFrontend.register(contents, project, name.getBaseName(), name
+				.getParent().getPath());
+		connection.commit();
+
+	}
+}
+
+class SuffixFilter implements FileSelector {
+
+	final String suffix;
+
+	public SuffixFilter(String suffix) {
+		this.suffix = suffix;
+	}
+
+	@Override
+	public boolean includeFile(FileSelectInfo fileInfo) throws Exception {
+		return fileInfo.getFile().getName().toString().endsWith(suffix);
+	}
+
+	@Override
+	public boolean traverseDescendents(FileSelectInfo fileInfo)
+			throws Exception {
+		return true;
+	}
+}
