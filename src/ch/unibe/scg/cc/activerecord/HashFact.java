@@ -29,7 +29,7 @@ public class HashFact {
 	final HTable facts;
 
 	@Inject
-	public HashFact(@Named("facts") HTable  facts, StandardHasher standardHasher) {
+	public HashFact(HTable  facts, StandardHasher standardHasher) {
 		this.facts = facts;
 		this.standardHasher = standardHasher;
 	}

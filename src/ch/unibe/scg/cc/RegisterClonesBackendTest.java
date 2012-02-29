@@ -66,7 +66,7 @@ public class RegisterClonesBackendTest {
 	
 	
 	@Given("testOneRegister")
-	public RegisterClonesBackend tesMoreRegisters(RegisterClonesBackend rcb) {
+	public RegisterClonesBackend testMoreRegisters(RegisterClonesBackend rcb) {
 		rcb.registerConsecutiveLinesOfCode(aThruF, project, function, Main.TYPE_3_CLONE);
 		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(project),  eq(function),
 				eq(3), eq(5), eq(Main.TYPE_3_CLONE));
