@@ -32,11 +32,8 @@ public class CloneRegistry {
 		fact.setProject(project);
 		fact.setFunction(function);
 		fact.setType(type);
-		try {
-			fact.save();
-		} catch (SQLException e) {
-			throw new RuntimeException(e);
-		}
+		fact.save();
+
 	}
 
 
@@ -45,7 +42,6 @@ public class CloneRegistry {
 			int from, int length, int type) {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
-		location.setLength(length);
 		this.register(hash, project, function, location, type);
 	}
 

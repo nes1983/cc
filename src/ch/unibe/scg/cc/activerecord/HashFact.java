@@ -1,6 +1,8 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,16 +10,28 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
+import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.util.Bytes;
+
+import ch.unibe.scg.cc.StandardHasher;
 import ch.unibe.scg.cc.lines.StringOfLines;
 
 import postmatchphase.HashFactLoader;
 
 
-public class HashFact extends ActiveRecord {
+public class HashFact {
 	
-	public HashFact(PreparedStatement insert) {
-		super(insert);
+	private static final String FILE_PATH = "filePath";
+	private static final String PROJECT_NAME = "projectName";
+	final HTable facts;
+
+	@Inject
+	public HashFact(@Named("facts") HTable  facts, StandardHasher standardHasher) {
+		this.facts = facts;
+		this.standardHasher = standardHasher;
 	}
 
 	byte[] hash;
@@ -25,41 +39,13 @@ public class HashFact extends ActiveRecord {
 	Function function;
 	Location location;
 	int type;
-
-//	/**
-//	 * Loads the entire contents of the file referenced by this fact, and not just the snippet it references.
-//	 * @param loader
-//	 * @return
-//	 * @throws IOException
-//	 */
-//	public String loadFrom(HashFactLoader loader) throws IOException {
-//		return loader.loadFile(this); 
-//	}
-
-	@Override
-	protected void mySave() throws SQLException {
-		project.save();
-		//location.save();
-		function.save();
-		insert.setBytes(1, hash);
-		insert.setLong(2, project.getId());
-		insert.setLong(3, function.getId());
-		//insert.setLong(4, location.getId());
-		insert.setInt(4, location.getFirstLine());
-		insert.setInt(5, location.getLength());
-		insert.setInt(6, type);
-	}
 	
-	@Override 
-	public void save() throws SQLException  {
-		mySave();
-		execute();
-	}
+	StandardHasher standardHasher;
+
 	
-	@Override
-	protected void execute() throws SQLException {
-		insert.executeUpdate();
-	}
+
+	
+	
 
 	public byte[] getHash() {
 		return hash;
@@ -99,6 +85,27 @@ public class HashFact extends ActiveRecord {
 
 	public void setType(int type) {
 		this.type = type;
+	}
+
+	public void save() {
+        Put put = new Put(getPrimaryKey());
+        project.save(put);
+        function.save(put);
+        location.save(put);
+        try {
+			facts.put(put);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	protected byte[] getPrimaryKey() {
+		return Bytes.add(hash, this.getSourceIdentifier());
+	}
+
+	byte[] getSourceIdentifier() {
+		String value = getProject().getName() + getFunction().getFile_path() + getLocation().getFirstLine();
+		return standardHasher.hash(value);
 	}
 
 

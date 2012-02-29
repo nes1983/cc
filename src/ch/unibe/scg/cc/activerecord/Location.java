@@ -1,38 +1,29 @@
 package ch.unibe.scg.cc.activerecord;
 
+import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.inject.Inject;
 
-
-public class Location extends ActiveRecord {
-
-	public Location(PreparedStatement insert)  {
-		super(insert);
-	}
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.util.Bytes;
 
 
+public class Location extends Column {
 
-	int length;
+	private static final int MINIMUM_CLONE_LENGTH = 5;
+	private final String LOCATION_NAME = "lineNumber";
+	final int length = MINIMUM_CLONE_LENGTH;
 	int firstLine;
 
-
-	
-	@Override
-	protected void mySave() throws SQLException {
-		insert.setInt(1, firstLine);
-		insert.setInt(2, length);
+	public void save(Put put) {
+        put.add(Bytes.toBytes("f1"), Bytes.toBytes(LOCATION_NAME), 0l, Bytes.toBytes(getFirstLine()));
 	}
 	
 	public int getLength() {
 		return length;
-	}
-
-
-	public void setLength(int length) {
-		this.length = length;
 	}
 
 

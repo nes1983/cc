@@ -19,7 +19,7 @@ public class RegisterClonesBackend {
 
 	public final int MINIMUM_LINES = 5;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
-	public final int MAXIMUM_FRAME_SIZE = 2 * MINIMUM_FRAME_SIZE;
+
 
 	@Inject
 	CloneRegistry registry;
