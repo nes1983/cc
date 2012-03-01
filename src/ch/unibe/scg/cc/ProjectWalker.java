@@ -1,32 +1,24 @@
 package ch.unibe.scg.cc;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.StringWriter;
-import java.net.URL;
-import java.sql.Connection;
 import java.sql.SQLException;
-
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.io.filefilter.*;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
 
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.filefilter.SuffixFileFilter;
 import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.vfs2.FileFilterSelector;
 import org.apache.commons.vfs2.FileName;
 import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.FileSelectInfo;
 import org.apache.commons.vfs2.FileSelector;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;
-import org.apache.commons.vfs2.FileTypeSelector;
 import org.apache.commons.vfs2.VFS;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.activerecord.Project;
 

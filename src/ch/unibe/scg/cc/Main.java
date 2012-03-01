@@ -40,7 +40,7 @@ public class Main {
 		FileObject file = VFS.getManager().resolveFile(new File("."),
 				"projects/eclipse-ant.zip");
 		file = VFS.getManager()
-				.resolveFile("zip://" + file.getName().getPath());
+				.resolveFile("zip://" + file.getURL().getPath());
 		//file = VFS.getManager().resolveFile(file, "eclipse-ant/src/zip");
 		walker.crawl(file, "eclipse-ant");
 	}

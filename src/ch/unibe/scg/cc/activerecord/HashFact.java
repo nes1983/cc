@@ -1,31 +1,18 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.security.MessageDigest;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.StandardHasher;
-import ch.unibe.scg.cc.lines.StringOfLines;
-
-import postmatchphase.HashFactLoader;
 
 
 public class HashFact {
 	
-	private static final String FILE_PATH = "filePath";
-	private static final String PROJECT_NAME = "projectName";
 	final HTable facts;
 
 	@Inject
