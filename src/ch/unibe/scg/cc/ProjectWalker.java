@@ -36,8 +36,6 @@ public class ProjectWalker {
 	@Java
 	Frontend javaFrontend;
 	
-	@Inject
-	Connection connection;
 
 	@Inject
 	Provider<Project> projectProvider;
@@ -95,13 +93,12 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(FileObject file, Project project) throws SQLException, IOException {
+	public void crawl(FileObject file, Project project) throws IOException {
 		InputStream 	is = file.getContent().getInputStream();
 		String contents = IOUtils.toString(is, "UTF-8");
 		FileName name = file.getName();
 		javaFrontend.register(contents, project, name.getBaseName(), name
 				.getParent().getPath());
-		connection.commit();
 
 	}
 }
