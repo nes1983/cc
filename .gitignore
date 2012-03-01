@@ -13,3 +13,4 @@ tmp/**/*
 *.ear
 
 eclipse-ant
+bedrock_log.log
