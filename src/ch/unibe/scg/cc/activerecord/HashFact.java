@@ -1,8 +1,11 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
@@ -10,14 +13,14 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.StandardHasher;
 
-
 public class HashFact {
-	
-	final HTable facts;
+
+	final HTable facts, strings;
 
 	@Inject
-	public HashFact(HTable  facts, StandardHasher standardHasher) {
+	public HashFact(@Named("facts") HTable facts, @Named("strings") HTable strings, StandardHasher standardHasher) {
 		this.facts = facts;
+		this.strings = strings;
 		this.standardHasher = standardHasher;
 	}
 
@@ -28,11 +31,6 @@ public class HashFact {
 	int type;
 	
 	StandardHasher standardHasher;
-
-	
-
-	
-	
 
 	public byte[] getHash() {
 		return hash;
@@ -77,10 +75,10 @@ public class HashFact {
 
 	public void save() {
         Put put = new Put(getPrimaryKey());
-        project.save(put);
-        function.save(put);
-        location.save(put);
         try {
+	        project.save(put);
+	        function.save(put);
+	        location.save(put);
 			facts.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
@@ -88,7 +86,7 @@ public class HashFact {
 	}
 
 	protected byte[] getPrimaryKey() {
-		return Bytes.add(hash, this.getSourceIdentifier());
+		return Bytes.add(new byte[]{(byte) type}, hash, this.getSourceIdentifier());
 	}
 
 	byte[] getSourceIdentifier() {

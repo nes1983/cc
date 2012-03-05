@@ -21,8 +21,7 @@ public class HashFactTest {
 		Function function = new Function();
 		function.setBaseLine(1);
 		function.setContents("abcde");
-		function.setFile_path("/root/test/");
-		function.setFname("poppins.java");
+		function.setFile_path("/root/test/poppins.java");
 		hashFact.setFunction(function);
 		Project project = new Project();
 		project.setName("Mary Poppins");

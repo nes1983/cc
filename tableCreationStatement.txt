@@ -1,2 +1,2 @@
-create 'facts', {NAME => 'fact', COMPRESSION => 'gz'}
-
+create 'facts', {NAME => 'd', COMPRESSION => 'gz'}
+create 'strings', {NAME => 'd', COMPRESSION => 'gz'}

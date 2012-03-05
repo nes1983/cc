@@ -32,16 +32,16 @@ public class Main {
 		walk(walker);
 		stopWatch.stop();
 		System.out.format("Time needed: %,8d msec%n", stopWatch.getTime());
-		
 	}
 
 	public static void walk(ProjectWalker walker) throws SQLException,
 			IOException {
+//		FileObject file = VFS.getManager().resolveFile(new File("."),
+//				"projects/eclipse-ant.zip");
+//		file = VFS.getManager()
+//				.resolveFile("zip://" + file.getURL().getPath());
 		FileObject file = VFS.getManager().resolveFile(new File("."),
-				"projects/eclipse-ant.zip");
-		file = VFS.getManager()
-				.resolveFile("zip://" + file.getURL().getPath());
-		//file = VFS.getManager().resolveFile(file, "eclipse-ant/src/zip");
+				"projects/onefile/");
 		walker.crawl(file, "eclipse-ant");
 	}
 

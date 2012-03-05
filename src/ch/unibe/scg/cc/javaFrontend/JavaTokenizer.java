@@ -1,22 +1,14 @@
 package ch.unibe.scg.cc.javaFrontend;
 
 import java.util.ArrayList;
-
-
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
 import javax.inject.Singleton;
 
-import org.apache.commons.lang3.StringUtils;
-
-
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Location;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
@@ -68,8 +60,7 @@ public class JavaTokenizer implements Tokenizer {
 	Function makeFunction(int baseLine, String fname, String filePath, String contents) {
 		Function f = functionProvider.get();
 		f.setBaseLine(baseLine);
-		f.setFname(fname);
-		f.setFile_path(filePath);
+		f.setFile_path(filePath + "/" + fname); // XXX 
 		f.setContents(contents);
 		return f;
 	}

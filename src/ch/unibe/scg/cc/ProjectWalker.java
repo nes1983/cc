@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.sql.SQLException;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.inject.Provider;
 
 import org.apache.commons.io.IOUtils;
@@ -28,9 +29,12 @@ public class ProjectWalker {
 	@Inject
 	@Java
 	Frontend javaFrontend;
+
+	@Inject @Named("facts")
+	HTable facts;
 	
-	@Inject
-	HTable htable;
+	@Inject @Named("strings")
+	HTable strings;
 
 	@Inject
 	Provider<Project> projectProvider;
@@ -94,7 +98,8 @@ public class ProjectWalker {
 		FileName name = file.getName();
 		javaFrontend.register(contents, project, name.getBaseName(), name
 				.getParent().getPath());
-        htable.flushCommits();
+        facts.flushCommits();
+        strings.flushCommits();
 	}
 }
 
