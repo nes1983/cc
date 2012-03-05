@@ -1,17 +1,9 @@
 package ch.unibe.scg.cc;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-
 import javax.inject.Inject;
-import javax.inject.Provider;
-
-import org.apache.commons.lang3.StringUtils;
 
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
@@ -72,15 +64,13 @@ public class RegisterClonesBackend {
 		
 		
 		for (int frameStart = 0; frameStart < stringOfLines.getNumberOfLines() - MINIMUM_LINES + 1; frameStart++) {
-			for (int frameLength : new int[] {MINIMUM_LINES}) {
-				if (frameStart + frameLength > stringOfLines.getNumberOfLines()) {
-					break;
-				}
-				String snippet = stringOfLines.getLines(frameStart, frameLength);
-				this.registerSnippet(snippet, project, function,
-						function.getBaseLine() + frameStart, frameLength,
-						hasher, type);
+			if (frameStart + MINIMUM_LINES > stringOfLines.getNumberOfLines()) {
+				break;
 			}
+			String snippet = stringOfLines.getLines(frameStart, MINIMUM_LINES);
+			this.registerSnippet(snippet, project, function,
+					function.getBaseLine() + frameStart, MINIMUM_LINES,
+					hasher, type);
 		}
 	}
 
@@ -93,7 +83,6 @@ public class RegisterClonesBackend {
 		} catch(CannotBeHashedException e) {
 			return;
 		}
-	
 		registry.register(hash, project, function, from, length, type);
 	}
 }

@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc;
 
-import java.sql.SQLException;
-
 import javax.inject.Inject;
 import javax.inject.Provider;
 import javax.inject.Singleton;

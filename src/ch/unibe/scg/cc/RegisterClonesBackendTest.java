@@ -1,10 +1,15 @@
 package ch.unibe.scg.cc;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyObject;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.stub;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
-import org.junit.After;
-import org.junit.Before;
+import java.sql.Connection;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -21,8 +26,6 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Module;
 import com.google.inject.util.Modules;
-
-import static org.mockito.Mockito.*;
 
 @RunWith(JExample.class)
 public class RegisterClonesBackendTest {
@@ -70,18 +73,16 @@ public class RegisterClonesBackendTest {
 		rcb.registerConsecutiveLinesOfCode(aThruF, project, function, Main.TYPE_3_CLONE);
 		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(project),  eq(function),
 				eq(3), eq(5), eq(Main.TYPE_3_CLONE));
-		verify(cloneRegistry).register(eq(new byte[] {-19, -102, -45, -43, 62, 36, 123, 88, -108, -2, 109, 11, 49, 14, -93, -90, 113, -45, -44, 48}),  eq(project),  eq(function),
-				eq(3), eq(6), eq(Main.TYPE_3_CLONE));
-		verify(cloneRegistry).register((byte[])anyObject(),  eq(project),  eq(function),
+		verify(cloneRegistry).register(eq(new byte[] {11, 94, -59, -112, 63, 8, -52, -68, 86, -65, 105, 103, -53, -106, -96, -11, 25, 50, -98, -25}),  eq(project),  eq(function),
 				eq(4), eq(5), eq(Main.TYPE_3_CLONE));
 		Mockito.reset(cloneRegistry); //JExample doesn't support @After
 		return rcb;
 	}
 	
-	@Given("tesMoreRegisters")
+	@Given("testMoreRegisters")
 	public RegisterClonesBackend testLotsOfRegisters(RegisterClonesBackend rcb) {
 		rcb.registerConsecutiveLinesOfCode(aThruK, project, function, Main.TYPE_2_CLONE);
-		verify(cloneRegistry, times(25)).register(((byte[]) anyObject()), eq(project), eq(function), anyInt(), anyInt(), eq(Main.TYPE_2_CLONE));
+		verify(cloneRegistry, times(7)).register(((byte[]) anyObject()), eq(project), eq(function), anyInt(), anyInt(), eq(Main.TYPE_2_CLONE));
 		Mockito.reset(cloneRegistry); //JExample doesn't support @After
 
 		return rcb;
