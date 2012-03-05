@@ -39,6 +39,7 @@ public class HashFact {
 	}
 
 	public void setHash(byte[] hash) {
+		assert hash.length == 20;
 		this.hash = hash;
 	}
 

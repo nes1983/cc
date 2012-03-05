@@ -19,6 +19,7 @@ import org.apache.commons.vfs2.FileSelector;
 import org.apache.commons.vfs2.FileSystemException;
 import org.apache.commons.vfs2.FileSystemManager;
 import org.apache.commons.vfs2.VFS;
+import org.apache.hadoop.hbase.client.HTable;
 
 import ch.unibe.scg.cc.activerecord.Project;
 
@@ -28,6 +29,8 @@ public class ProjectWalker {
 	@Java
 	Frontend javaFrontend;
 	
+	@Inject
+	HTable htable;
 
 	@Inject
 	Provider<Project> projectProvider;
@@ -69,7 +72,7 @@ public class ProjectWalker {
 	
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
-		System.out.println(ArrayUtils.toString(javaFiles));
+		System.out.format("Processing files: %s%n", ArrayUtils.toString(javaFiles));
 		crawl(javaFiles, currentProject);
 	}
 
@@ -91,7 +94,7 @@ public class ProjectWalker {
 		FileName name = file.getName();
 		javaFrontend.register(contents, project, name.getBaseName(), name
 				.getParent().getPath());
-
+        htable.flushCommits();
 	}
 }
 

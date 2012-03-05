@@ -31,7 +31,7 @@ public class Main {
 		stopWatch.start();
 		walk(walker);
 		stopWatch.stop();
-		System.out.println(stopWatch.getTime());
+		System.out.format("Time needed: %,8d msec%n", stopWatch.getTime());
 		
 	}
 

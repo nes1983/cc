@@ -16,7 +16,6 @@ public class Project extends Column {
 	}
 
 	public void setName(String name) {
-		System.out.println(name);
 		this.name = name;
 	}
 	

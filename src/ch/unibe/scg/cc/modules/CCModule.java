@@ -23,7 +23,7 @@ public class CCModule extends AbstractModule {
 		.toProvider(JavaType1ReplacerFactory.class);
 		bind(String.class).annotatedWith(Names.named("tableName"))
 			.toInstance("facts");
-		bind(HTable.class).toProvider(HTableProvider.class);
+		bind(HTable.class).toProvider(HTableProvider.class).in(Singleton.class);
 	}
 
 }
