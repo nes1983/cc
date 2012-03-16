@@ -1,8 +1,6 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -76,9 +74,10 @@ public class HashFact {
 	public void save() {
         Put put = new Put(getPrimaryKey());
         try {
-	        project.save(put);
-	        function.save(put);
-	        location.save(put);
+//	        project.save(put);
+//	        function.save(put);
+//	        location.save(put);
+        	put.add(Bytes.toBytes("d"),  new byte[0], 0l, new byte[0]); //dummy add
 			facts.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
@@ -90,8 +89,7 @@ public class HashFact {
 	}
 
 	byte[] getSourceIdentifier() {
-		String value = getProject().getName() + getFunction().getFile_path() + getLocation().getFirstLine();
-		return standardHasher.hash(value);
+		return Bytes.add(new byte[] {(byte) getLocation().getFirstLine()}, new byte[] {(byte) getLocation().getLength()}, getFunction().getCodeFile().getHash());
 	}
 
 

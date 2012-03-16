@@ -21,7 +21,10 @@ public class Main {
 
 
 	public static void main(String[] args) throws SQLException, IOException {
-		Injector injector = Guice.createInjector(new JavaModule(), new CCModule());
+		Injector injector = Guice.createInjector(
+				new JavaModule(), 
+				new CCModule()
+		);
 		ProjectWalker walker = injector.getInstance(ProjectWalker.class);
 		stoppedWalk(walker);
 	}
@@ -36,12 +39,12 @@ public class Main {
 
 	public static void walk(ProjectWalker walker) throws SQLException,
 			IOException {
-//		FileObject file = VFS.getManager().resolveFile(new File("."),
-//				"projects/eclipse-ant.zip");
-//		file = VFS.getManager()
-//				.resolveFile("zip://" + file.getURL().getPath());
 		FileObject file = VFS.getManager().resolveFile(new File("."),
-				"projects/onefile/");
+				"projects/eclipse-ant.zip");
+		file = VFS.getManager()
+				.resolveFile("zip://" + file.getURL().getPath());
+//		FileObject file = VFS.getManager().resolveFile(new File("."),
+//				"projects/onefile/");
 		walker.crawl(file, "eclipse-ant");
 	}
 

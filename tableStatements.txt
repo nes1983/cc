@@ -1,0 +1,14 @@
+-- CREATION --
+create 'facts', {NAME => 'd', COMPRESSION => 'gz'}
+create 'functions', {NAME => 'd', COMPRESSION => 'gz'}
+create 'files', {NAME => 'd', COMPRESSION => 'gz'}
+create 'projects', {NAME => 'd', COMPRESSION => 'gz'}
+create 'strings', {NAME => 'd', COMPRESSION => 'gz'}
+
+
+-- TRUNCATE --
+truncate 'facts'
+truncate 'functions'
+truncate 'files'
+truncate 'projects'
+truncate 'strings'

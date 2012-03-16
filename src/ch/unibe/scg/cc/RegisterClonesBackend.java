@@ -2,6 +2,7 @@ package ch.unibe.scg.cc;
 
 import javax.inject.Inject;
 
+import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.lines.StringOfLines;
@@ -84,5 +85,23 @@ public class RegisterClonesBackend {
 			return;
 		}
 		registry.register(hash, project, function, from, length, type);
+	}
+
+	/**
+	 * registers the file in the database
+	 * @param fileContents
+	 * @return returns true, if file was already in database, otherwise false.
+	 */
+	public boolean register(CodeFile codeFile) {
+		boolean codeFileAlreadyInDB;
+		byte[] hash = standardHasher.hash(codeFile.getFileContents());
+		codeFileAlreadyInDB = registry.lookup(hash, CloneRegistry.TABLE_CODEFILES);
+		
+		registry.register(codeFile);
+		return codeFileAlreadyInDB;
+	}
+
+	public void register(Project project) {
+		registry.register(project);
 	}
 }

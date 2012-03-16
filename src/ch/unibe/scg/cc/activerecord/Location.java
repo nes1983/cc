@@ -12,7 +12,12 @@ public class Location extends Column {
 	int firstLine;
 
 	public void save(Put put) {
-        put.add(Bytes.toBytes("d"), Bytes.toBytes(LOCATION_NAME), 0l, Bytes.toBytes(getFirstLine()));
+        put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_NAME), 0l, Bytes.toBytes(getFirstLine()));
+	}
+
+	@Override
+	public byte[] getHash() {
+		return null;
 	}
 	
 	public int getLength() {

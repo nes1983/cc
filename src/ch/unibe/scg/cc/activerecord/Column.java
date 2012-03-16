@@ -10,11 +10,14 @@ import org.apache.hadoop.hbase.client.Put;
 
 public abstract class Column implements Cloneable {
 	
+	protected static final String FAMILY_NAME = "d";
+	
 	@Inject @Named("strings")
 	protected HTable strings;
 	
-	protected abstract void save(Put put) throws IOException ;
+	public abstract void save(Put put) throws IOException ;
 
+	public abstract byte[] getHash();
 	
 	public Object clone()  {
 		try {

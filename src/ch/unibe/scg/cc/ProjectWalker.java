@@ -30,6 +30,15 @@ public class ProjectWalker {
 	@Java
 	Frontend javaFrontend;
 
+	@Inject @Named("projects")
+	HTable projects;
+	
+	@Inject @Named("files")
+	HTable codefiles;
+	
+	@Inject @Named("functions")
+	HTable functions;
+	
 	@Inject @Named("facts")
 	HTable facts;
 	
@@ -72,7 +81,7 @@ public class ProjectWalker {
 
 	public void crawl(FileObject project, String projectName) throws SQLException, IOException {
 	
-		Project currentProject = makeProject(projectName);
+		Project currentProject = createProject(projectName, "1.23"); // TODO get Version
 	
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
@@ -80,9 +89,10 @@ public class ProjectWalker {
 		crawl(javaFiles, currentProject);
 	}
 
-	Project makeProject(String projectName) {
+	Project createProject(String projectName, String version) {
 		Project project = projectProvider.get();
 		project.setName(projectName);
+		project.setVersion(version);
 		return project;
 	}
 
@@ -98,7 +108,10 @@ public class ProjectWalker {
 		FileName name = file.getName();
 		javaFrontend.register(contents, project, name.getBaseName(), name
 				.getParent().getPath());
+		// XXX flushCommits get called for every single file --> bad performance!?
         facts.flushCommits();
+        codefiles.flushCommits();
+        projects.flushCommits();
         strings.flushCommits();
 	}
 }

@@ -3,7 +3,9 @@ package ch.unibe.scg.cc;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
+import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.lines.StringOfLines;
@@ -23,7 +25,6 @@ public  class Frontend {
 	
 	@Inject @Type2
 	protected PhaseFrontent type2;
-
 	
 	@Inject
 	protected StringOfLinesFactory stringOfLinesFactory;
@@ -33,7 +34,9 @@ public  class Frontend {
 	
 	@Inject
 	protected Tokenizer tokenizer;
-	
+
+	@Inject
+	Provider<CodeFile> codeFileProvider;
 	
 	@ForTestingOnly
 	public void type1Normalize(StringBuilder fileContents) {
@@ -64,13 +67,26 @@ public  class Frontend {
 	
 
 	public void register(String fileContents, Project project, String fileName, String filePath) {
+		project.setFilePath(filePath + "/" + fileName); // XXX dirty!?
+		
+		CodeFile codeFile = codeFileProvider.get();
+		codeFile.setProject(project);
+		codeFile.setFileContents(fileContents);
+		
+		// register project
+		backend.register(project);
+		
+		boolean codeFileAlreadyInDB = backend.register(codeFile);
+		if(codeFileAlreadyInDB)
+			return; // already processed this file =)
+		
 		StringBuilder contents = new StringBuilder(fileContents);
-		registerWithBuilder(contents, project, fileName, filePath);
+		registerWithBuilder(contents, project, fileName, codeFile);
 	}
-	
-	void registerWithBuilder(StringBuilder fileContents, Project project, String fileName, String filePath) {
+
+	void registerWithBuilder(StringBuilder fileContents, Project project, String fileName, CodeFile codeFile) {
 		type1.normalize(fileContents);
-		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName, filePath);
+		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName, codeFile);
 		for(Function function : functions) {
 			registerFunction(project, function);
 		}	

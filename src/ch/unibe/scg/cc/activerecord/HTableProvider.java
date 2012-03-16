@@ -3,17 +3,19 @@ package ch.unibe.scg.cc.activerecord;
 import java.io.IOException;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
-public class HTableFactsProvider implements Provider<HTable> {
+public class HTableProvider implements Provider<HTable> {
 	
 	@Inject
 	Configuration hbaseConfig;
-
-	String tableName = "facts";
+	
+	@Inject @Named("tableName")
+	String tableName;
 	
 	@Override
 	public HTable get() {

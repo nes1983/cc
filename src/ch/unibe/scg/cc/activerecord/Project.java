@@ -1,6 +1,8 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -13,10 +15,45 @@ import ch.unibe.scg.cc.StandardHasher;
 public class Project extends Column {
 
 	private static final String PROJECT_NAME = "pn";
+	private static final String PROJECTVERSION_NAME = "pv";
+	private static final String FILEPATH_NAME = "fp";
 	String name;
+	String version;
+	String filePath;
 	
 	@Inject
 	StandardHasher standardHasher;
+
+	public void save(Put put) throws IOException {
+		byte[] hashName = standardHasher.hash(getName());
+		byte[] hashVersion = standardHasher.hash(getVersion());
+		byte[] hashFilePath = standardHasher.hash(getFilePath());
+
+		put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(PROJECT_NAME), 0l, hashName);
+		put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(PROJECTVERSION_NAME), 0l, hashVersion);
+		put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(FILEPATH_NAME), 0l, hashFilePath);
+        
+        List<Put> stringPuts = new ArrayList<Put>();
+        Put s1 = new Put(hashName);
+        s1.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(PROJECT_NAME), 0l, Bytes.toBytes(getName()));
+        Put s2 = new Put(hashVersion);
+        s2.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(PROJECTVERSION_NAME), 0l, Bytes.toBytes(getVersion()));
+        Put s3 = new Put(hashFilePath);
+        s3.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(FILEPATH_NAME), 0l, Bytes.toBytes(getFilePath()));
+        
+        stringPuts.add(s1);
+        stringPuts.add(s2);
+        stringPuts.add(s3);
+        strings.put(stringPuts);
+	}
+
+	@Override
+	public byte[] getHash() {
+		assert name != null;
+		assert version != null;
+		assert filePath != null;
+		return standardHasher.hash(new String(Bytes.add(standardHasher.hash(getName()), standardHasher.hash(getVersion()), standardHasher.hash(getFilePath())))); // XXX efficient??
+	}
 	
 	public String getName() {
 		return name;
@@ -26,11 +63,19 @@ public class Project extends Column {
 		this.name = name;
 	}
 	
-	public void save(Put put) throws IOException {
-        put.add(Bytes.toBytes("d"), Bytes.toBytes(PROJECT_NAME), 0l, standardHasher.hash(getName()));
-        
-        Put stringPut = new Put(standardHasher.hash(getName()));
-        stringPut.add(Bytes.toBytes("d"), Bytes.toBytes(PROJECT_NAME), 0l, Bytes.toBytes(getName()));
-        strings.put(stringPut);
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+
+	public String getFilePath() {
+		return filePath;
 	}
 }

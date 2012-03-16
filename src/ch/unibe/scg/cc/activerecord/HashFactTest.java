@@ -1,8 +1,5 @@
 package ch.unibe.scg.cc.activerecord;
 
-import org.junit.runner.RunWith;
-
-import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.Main;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
@@ -10,7 +7,6 @@ import ch.unibe.scg.cc.modules.JavaModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-@RunWith(JExample.class)
 public class HashFactTest {
 	
 	public static void main(String... args) {
@@ -21,7 +17,7 @@ public class HashFactTest {
 		Function function = new Function();
 		function.setBaseLine(1);
 		function.setContents("abcde");
-		function.setFile_path("/root/test/poppins.java");
+//		function.setFile_path("/root/test/poppins.java");
 		hashFact.setFunction(function);
 		Project project = new Project();
 		project.setName("Mary Poppins");
