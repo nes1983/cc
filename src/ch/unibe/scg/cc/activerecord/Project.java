@@ -20,9 +20,15 @@ public class Project extends Column {
 	String name;
 	String version;
 	String filePath;
+	byte[] hash;
+	boolean isOutdatedHash;
 	
 	@Inject
 	StandardHasher standardHasher;
+	
+	public Project() {
+		this.isOutdatedHash = true;
+	}
 
 	public void save(Put put) throws IOException {
 		byte[] hashName = standardHasher.hash(getName());
@@ -52,7 +58,11 @@ public class Project extends Column {
 		assert name != null;
 		assert version != null;
 		assert filePath != null;
-		return standardHasher.hash(new String(Bytes.add(standardHasher.hash(getName()), standardHasher.hash(getVersion()), standardHasher.hash(getFilePath())))); // XXX efficient??
+		if(this.isOutdatedHash) {
+			this.hash = standardHasher.hash(new String(Bytes.add(standardHasher.hash(getName()), standardHasher.hash(getVersion()), standardHasher.hash(getFilePath())))); // XXX efficient??
+			this.isOutdatedHash = false;
+		}
+		return this.hash;
 	}
 	
 	public String getName() {
@@ -61,6 +71,7 @@ public class Project extends Column {
 
 	public void setName(String name) {
 		this.name = name;
+		this.isOutdatedHash = true;
 	}
 	
 	public String getVersion() {
@@ -69,10 +80,12 @@ public class Project extends Column {
 
 	public void setVersion(String version) {
 		this.version = version;
+		this.isOutdatedHash = true;
 	}
 
 	public void setFilePath(String filePath) {
 		this.filePath = filePath;
+		this.isOutdatedHash = true;
 	}
 
 	public String getFilePath() {

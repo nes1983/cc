@@ -37,15 +37,19 @@ public class Main {
 		System.out.format("Time needed: %,8d msec%n", stopWatch.getTime());
 	}
 
-	public static void walk(ProjectWalker walker) throws SQLException,
-			IOException {
-		FileObject file = VFS.getManager().resolveFile(new File("."),
-				"projects/eclipse-ant.zip");
-		file = VFS.getManager()
-				.resolveFile("zip://" + file.getURL().getPath());
-//		FileObject file = VFS.getManager().resolveFile(new File("."),
-//				"projects/onefile/");
-		walker.crawl(file, "eclipse-ant");
+	public static void walk(ProjectWalker walker) throws SQLException, IOException {
+		crawl(walker, "eclipse-ant", "projects/eclipse-ant.zip");
+		crawl(walker, "eclipse-jdtcore", "projects/eclipse-jdtcore.zip");
+		crawl(walker, "j2sdk1.4.0-javax-swing", "projects/j2sdk1.4.0-javax-swing.zip");
+		crawl(walker, "netbeans-javadoc", "projects/netbeans-javadoc.zip");
+	}
+	
+	private static void crawl(ProjectWalker walker, String projectName, String filePath) throws SQLException, IOException {
+		FileObject file = VFS.getManager().resolveFile(new File("."), filePath);
+		file = VFS.getManager().resolveFile("zip://" + file.getURL().getPath());
+		// FileObject file = VFS.getManager().resolveFile(new File("."),
+		// "projects/onefile/");
+		walker.crawl(file, projectName);
 	}
 
 }

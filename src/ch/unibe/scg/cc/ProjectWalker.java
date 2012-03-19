@@ -108,6 +108,7 @@ public class ProjectWalker {
 		FileName name = file.getName();
 		javaFrontend.register(contents, project, name.getBaseName(), name
 				.getParent().getPath());
+		
 		// XXX flushCommits get called for every single file --> bad performance!?
         facts.flushCommits();
         codefiles.flushCommits();

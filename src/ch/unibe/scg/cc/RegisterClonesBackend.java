@@ -95,7 +95,7 @@ public class RegisterClonesBackend {
 	public boolean register(CodeFile codeFile) {
 		boolean codeFileAlreadyInDB;
 		byte[] hash = standardHasher.hash(codeFile.getFileContents());
-		codeFileAlreadyInDB = registry.lookup(hash, CloneRegistry.TABLE_CODEFILES);
+		codeFileAlreadyInDB = registry.lookupCodeFile(hash);
 		
 		registry.register(codeFile);
 		return codeFileAlreadyInDB;

@@ -10,6 +10,9 @@ import javax.inject.Singleton;
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.client.Scan;
+import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.util.bloom.Filter;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
@@ -82,6 +85,17 @@ public class CloneRegistry {
 		Get k = new Get(key);
 		try {
 			return !t.get(k).isEmpty();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	public boolean lookupCodeFile(byte[] key) {
+		HTable t = getTable(CloneRegistry.TABLE_CODEFILES);
+		assert t != null;
+		Scan s = new Scan(Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}), Bytes.add(key, new byte[] {15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15}));
+		try {
+			return t.getScanner(s).next() != null;
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

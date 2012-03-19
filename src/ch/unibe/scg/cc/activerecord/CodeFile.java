@@ -14,15 +14,25 @@ public class CodeFile extends Column {
 
 	private Project project;
 	private String fileContents;
+	private byte[] hash;
+	private boolean isOutdatedHash;
 	
 	@Inject
 	StandardHasher standardHasher;
+	
+	public CodeFile() {
+		isOutdatedHash = true;
+	}
 
 	@Override
 	public byte[] getHash() {
 		assert fileContents != null;
 		assert project != null;
-		return Bytes.add(standardHasher.hash(getFileContents()), project.getHash());
+		if(this.isOutdatedHash) {
+			hash = Bytes.add(standardHasher.hash(getFileContents()), project.getHash());
+			this.isOutdatedHash = false;
+		}
+		return hash;
 	}
 
 	@Override
@@ -32,6 +42,7 @@ public class CodeFile extends Column {
 
 	public void setFileContents(String fileContents) {
 		this.fileContents = fileContents;
+		this.isOutdatedHash = true;
 	}
 
 	public String getFileContents() {
@@ -40,6 +51,7 @@ public class CodeFile extends Column {
 
 	public void setProject(Project project) {
 		this.project = project;
+		this.isOutdatedHash = true;
 	}
 
 	public Project getProject() {

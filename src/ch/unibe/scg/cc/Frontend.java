@@ -77,8 +77,10 @@ public  class Frontend {
 		backend.register(project);
 		
 		boolean codeFileAlreadyInDB = backend.register(codeFile);
-		if(codeFileAlreadyInDB)
+		if(codeFileAlreadyInDB) {
+			System.out.println("file is already in DB: " + codeFile.getProject().getFilePath());
 			return; // already processed this file =)
+		}
 		
 		StringBuilder contents = new StringBuilder(fileContents);
 		registerWithBuilder(contents, project, fileName, codeFile);
