@@ -12,13 +12,13 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.hadoop.util.bloom.Filter;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.HashFact;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.Version;
 
 @Singleton
 public class CloneRegistry {
@@ -26,24 +26,24 @@ public class CloneRegistry {
 	public static final int TABLE_PROJECTS = 1;
 	public static final int TABLE_CODEFILES = 2;
 	public static final int TABLE_FUNCTIONS = 3;
-	public static final int TABLE_FACTS = 4;
+	public static final int TABLE_VERSIONS = 4;
 	public static final int TABLE_STRINGS = 5;
 	
 	final Provider<HashFact> hashFactProvider;
 	
 	final Provider<Location> locationProvider;
-	
+
 	@Inject @Named("projects")
 	HTable projects;
+
+	@Inject @Named("versions")
+	HTable versions;
 	
 	@Inject @Named("files")
 	HTable codefiles;
 	
 	@Inject @Named("functions")
 	HTable functions;
-	
-	@Inject @Named("facts")
-	HTable facts;
 	
 	@Inject @Named("strings")
 	HTable strings;
@@ -54,23 +54,27 @@ public class CloneRegistry {
 		this.locationProvider = locationProvider;
 	}
 	
-	public void register(byte[] hash, Project project, Function function,
-			Location location, int type) {
-		HashFact fact =  hashFactProvider.get();
+	public void register(byte[] hash, Function function, Location location, int type) {
+		HashFact fact = hashFactProvider.get();
 		fact.setHash(hash);
 		fact.setLocation(location);
-		fact.setProject(project);
 		fact.setFunction(function);
 		fact.setType(type);
-		fact.save();
-
+		function.addHashFact(fact);
+//		Put put = new Put(Bytes.add(function.getHash(), fact.getHash()));
+//		try {
+//			fact.save(put);
+//			functions.put(put);
+//		} catch (IOException e) {
+//			throw new RuntimeException(e);
+//		}
 	}
 
-	public void register(byte[] hash, Project project, Function function,
+	public void register(byte[] hash, Function function,
 			int from, int length, int type) {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
-		this.register(hash, project, function, location, type);
+		this.register(hash, function, location, type);
 	}
 
 	/**
@@ -93,7 +97,9 @@ public class CloneRegistry {
 	public boolean lookupCodeFile(byte[] key) {
 		HTable t = getTable(CloneRegistry.TABLE_CODEFILES);
 		assert t != null;
-		Scan s = new Scan(Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}), Bytes.add(key, new byte[] {15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15}));
+		byte[] startKey = Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
+		byte[] endKey = Bytes.add(key, new byte[] {127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127});
+		Scan s = new Scan(startKey, endKey); // XXX funkt. das?
 		try {
 			return t.getScanner(s).next() != null;
 		} catch (IOException e) {
@@ -106,22 +112,30 @@ public class CloneRegistry {
 		case TABLE_PROJECTS : return projects;
 		case TABLE_CODEFILES : return codefiles;
 		case TABLE_FUNCTIONS : return functions;
-		case TABLE_FACTS : return facts;
+		case TABLE_VERSIONS : return versions;
 		case TABLE_STRINGS : return strings;
 		default: return null;
 		}
 	}
 
 	public void register(CodeFile codeFile) {
-		Put put = new Put(codeFile.getHash());
-		try {
-			codeFile.save(put);
-			codefiles.put(put);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
+		for(Function function : codeFile.getFunctions()) {
+			Put put = new Put(Bytes.add(codeFile.getFileContentsHash(), function.getHash()));
+			try {
+				put.add(Bytes.toBytes(CodeFile.FAMILY_NAME),
+						Bytes.toBytes(CodeFile.FUNCTION_OFFSET_NAME), 0l,
+						Bytes.toBytes(function.getBaseLine()));
+				codefiles.put(put);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 		}
 	}
 
+	/**
+	 * saves the project in the projects table
+	 * @param project
+	 */
 	public void register(Project project) {
 		Put put = new Put(project.getHash());
 		try {
@@ -129,6 +143,32 @@ public class CloneRegistry {
 			projects.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
+		}
+	}
+	
+	/**
+	 * saves the version in the versions table
+	 * @param version
+	 */
+	public void register(Version version) {
+		Put put = new Put(version.getHash());
+		try {
+			version.save(put);
+			versions.put(put);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public void register(Function function) {
+		for(HashFact hashFact : function.getHashFacts()) {
+			Put put = new Put(Bytes.add(function.getHash(), Bytes.toBytes(hashFact.getType()), hashFact.getHash()));
+			try {
+				hashFact.save(put);
+				functions.put(put);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
 		}
 	}
 

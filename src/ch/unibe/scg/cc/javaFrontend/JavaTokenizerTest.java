@@ -1,30 +1,25 @@
 package ch.unibe.scg.cc.javaFrontend;
 
-import static org.junit.Assert.*;
-
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.stub;
+import static org.mockito.Mockito.verify;
 
 import java.util.List;
-import java.util.Map;
 
-import org.apache.commons.lang3.StringEscapeUtils;
-import org.hamcrest.Matcher;
+import javax.inject.Provider;
+
 import org.junit.Test;
 import org.mockito.Mockito;
 import org.mockito.stubbing.Answer;
 
-import com.google.inject.Guice;
-
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Location;
-import ch.unibe.scg.cc.modules.CCModule;
 import dk.brics.automaton.Automaton;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
-import static org.mockito.Mockito.*;
-import javax.inject.Provider;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
 public class JavaTokenizerTest {
 	
 	@Test
@@ -62,7 +57,7 @@ public class JavaTokenizerTest {
 		stub(provider.get()).toReturn(function);
 		tokenizer.functionProvider = provider;
 
-		List<Function> list = tokenizer.tokenize(sampleClass(), null, null);
+		List<Function> list = tokenizer.tokenize(sampleClass(), null);
 		//Don't delete! The only way to fix the unit test!
 //		for( Map.Entry<String, Location> e : m.entrySet()) {
 //			System.out.println(StringEscapeUtils.escapeJava(e.getKey()));

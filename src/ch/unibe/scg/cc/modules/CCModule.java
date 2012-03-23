@@ -23,9 +23,9 @@ public class CCModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		installHTable("projects");
-		installHTable("functions");
+		installHTable("versions");
 		installHTable("files");
-		installHTable("facts");
+		installHTable("functions");
 		installHTable("strings");
 		
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(Singleton.class);

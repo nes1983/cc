@@ -4,10 +4,12 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import javax.inject.Provider;
 
+import org.apache.hadoop.hbase.client.Put;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.activerecord.HashFact;
@@ -15,7 +17,7 @@ import ch.unibe.scg.cc.activerecord.HashFact;
 public class RegisterSnippetTest {
 
 	@Test
-	public void addSnippet() throws SQLException {
+	public void addSnippet() throws SQLException, IOException {
 		final Provider<HashFact> hashFactProvider = (Provider<HashFact>) mock(Provider.class);
 		final HashFact hashFact = mock(HashFact.class);
 		when(hashFactProvider.get()).thenReturn(hashFact);
@@ -24,9 +26,9 @@ public class RegisterSnippetTest {
 
 
 		byte[] bytes = new byte[] { 0 };
-		registry.register(bytes, null, null, null, 3);
+		registry.register(bytes, null, null, 3);
 
-		verify(hashFact).save();
+		verify(hashFact).save(new Put(new byte[] {}));
 
 		verify(hashFact).setType(3);
 	}

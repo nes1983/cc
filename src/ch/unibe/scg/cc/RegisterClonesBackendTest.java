@@ -57,9 +57,9 @@ public class RegisterClonesBackendTest {
 		function = mock(Function.class);
 		stub(function.getBaseLine()).toReturn(3);
 		
-		rcb.registerConsecutiveLinesOfCode(sampleLines, project, function, Main.TYPE_3_CLONE);
+		rcb.registerConsecutiveLinesOfCode(sampleLines, function, Main.TYPE_3_CLONE);
 		
-		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(project),  eq(function),
+		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(function),
 				eq(3+0), eq(5), eq(Main.TYPE_3_CLONE));
 
 		Mockito.reset(cloneRegistry); //JExample doesn't support @After
@@ -70,10 +70,10 @@ public class RegisterClonesBackendTest {
 	
 	@Given("testOneRegister")
 	public RegisterClonesBackend testMoreRegisters(RegisterClonesBackend rcb) {
-		rcb.registerConsecutiveLinesOfCode(aThruF, project, function, Main.TYPE_3_CLONE);
-		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(project),  eq(function),
+		rcb.registerConsecutiveLinesOfCode(aThruF, function, Main.TYPE_3_CLONE);
+		verify(cloneRegistry).register(eq(new byte[] {69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71, 70}),  eq(function),
 				eq(3), eq(5), eq(Main.TYPE_3_CLONE));
-		verify(cloneRegistry).register(eq(new byte[] {11, 94, -59, -112, 63, 8, -52, -68, 86, -65, 105, 103, -53, -106, -96, -11, 25, 50, -98, -25}),  eq(project),  eq(function),
+		verify(cloneRegistry).register(eq(new byte[] {11, 94, -59, -112, 63, 8, -52, -68, 86, -65, 105, 103, -53, -106, -96, -11, 25, 50, -98, -25}), eq(function),
 				eq(4), eq(5), eq(Main.TYPE_3_CLONE));
 		Mockito.reset(cloneRegistry); //JExample doesn't support @After
 		return rcb;
@@ -81,8 +81,8 @@ public class RegisterClonesBackendTest {
 	
 	@Given("testMoreRegisters")
 	public RegisterClonesBackend testLotsOfRegisters(RegisterClonesBackend rcb) {
-		rcb.registerConsecutiveLinesOfCode(aThruK, project, function, Main.TYPE_2_CLONE);
-		verify(cloneRegistry, times(7)).register(((byte[]) anyObject()), eq(project), eq(function), anyInt(), anyInt(), eq(Main.TYPE_2_CLONE));
+		rcb.registerConsecutiveLinesOfCode(aThruK, function, Main.TYPE_2_CLONE);
+		verify(cloneRegistry, times(7)).register(((byte[]) anyObject()), eq(function), anyInt(), anyInt(), eq(Main.TYPE_2_CLONE));
 		Mockito.reset(cloneRegistry); //JExample doesn't support @After
 
 		return rcb;

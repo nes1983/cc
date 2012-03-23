@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
@@ -37,12 +38,11 @@ public class RegisterClonesBackend {
 	public void registerFunction(String lines, Project project,
 			Function function, int type) {
 		StringOfLines stringOfLines = stringOfLinesFactory.make(lines);
-		registerConsecutiveLinesOfCode(stringOfLines, project, function, type);
+		registerConsecutiveLinesOfCode(stringOfLines, function, type);
 	}
 	
-	public void shingleRegisterFunction(StringOfLines contentsSOL, Project project,
-			Function function) {
-		registerConsecutiveLinesOfCode(contentsSOL, project, function, shingleHasher, Main.TYPE_3_CLONE);
+	public void shingleRegisterFunction(StringOfLines contentsSOL, Function function) {
+		registerConsecutiveLinesOfCode(contentsSOL, function, shingleHasher, Main.TYPE_3_CLONE);
 	}
 	
 
@@ -54,12 +54,12 @@ public class RegisterClonesBackend {
 	 * @param project
 	 * @param location
 	 */
-	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Project project,
+	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, 
 			Function function, int type) {
-		registerConsecutiveLinesOfCode(stringOfLines, project, function, standardHasher, type);
+		registerConsecutiveLinesOfCode(stringOfLines, function, standardHasher, type);
 	}
 
-	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Project project,
+	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, 
 			Function function, Hasher hasher, int type) {
 		assert stringOfLines.getNumberOfLines() >= MINIMUM_LINES;
 		
@@ -69,14 +69,13 @@ public class RegisterClonesBackend {
 				break;
 			}
 			String snippet = stringOfLines.getLines(frameStart, MINIMUM_LINES);
-			this.registerSnippet(snippet, project, function,
+			this.registerSnippet(snippet, function,
 					function.getBaseLine() + frameStart, MINIMUM_LINES,
 					hasher, type);
 		}
 	}
 
-	private void registerSnippet(String snippet, Project project,
-			Function function, int from, int length, Hasher hasher, int type) {
+	private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, int type) {
 
 		byte[] hash;
 		try {
@@ -84,24 +83,35 @@ public class RegisterClonesBackend {
 		} catch(CannotBeHashedException e) {
 			return;
 		}
-		registry.register(hash, project, function, from, length, type);
+		registry.register(hash, function, from, length, type);
 	}
 
-	/**
-	 * registers the file in the database
-	 * @param fileContents
-	 * @return returns true, if file was already in database, otherwise false.
-	 */
-	public boolean register(CodeFile codeFile) {
-		boolean codeFileAlreadyInDB;
-		byte[] hash = standardHasher.hash(codeFile.getFileContents());
-		codeFileAlreadyInDB = registry.lookupCodeFile(hash);
-		
+	public void register(CodeFile codeFile) {
 		registry.register(codeFile);
-		return codeFileAlreadyInDB;
+		for(Function function : codeFile.getFunctions())
+			register(function);
+	}
+
+	private void register(Function function) {
+		registry.register(function);
 	}
 
 	public void register(Project project) {
 		registry.register(project);
+		register(project.getVersion());
+	}
+
+	private void register(Version version) {
+		registry.register(version);
+	}
+	
+	/**
+	 * looks up the codefile
+	 * @param codeFile
+	 * @return returns true, if file is already in the database, otherwise false.
+	 */
+	public boolean lookup(CodeFile codeFile) {
+		byte[] hash = codeFile.getFileContentsHash();
+		return registry.lookupCodeFile(hash);
 	}
 }

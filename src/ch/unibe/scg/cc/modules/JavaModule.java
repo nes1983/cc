@@ -1,19 +1,18 @@
 package ch.unibe.scg.cc.modules;
 
-import javax.inject.Provider;
-
+import ch.unibe.scg.cc.Frontend;
+import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.PhaseFrontent;
 import ch.unibe.scg.cc.Tokenizer;
-import ch.unibe.scg.cc.*;
+import ch.unibe.scg.cc.Type1;
+import ch.unibe.scg.cc.Type2;
 import ch.unibe.scg.cc.Type2ReplacerFactory;
 import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
-import ch.unibe.scg.cc.regex.*;
+import ch.unibe.scg.cc.regex.Replace;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.Binder;
-import com.google.inject.Module;
 import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 

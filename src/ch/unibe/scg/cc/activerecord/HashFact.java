@@ -3,35 +3,39 @@ package ch.unibe.scg.cc.activerecord;
 import java.io.IOException;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.StandardHasher;
 
-public class HashFact {
+public class HashFact extends Column {
 
-	final HTable facts, strings;
+	private static final String LOCATION_FIRST_LINE_NAME = "fl";
+	private static final String LOCATION_LENGTH_NAME = "ll";
 
-	@Inject
-	public HashFact(@Named("facts") HTable facts, @Named("strings") HTable strings, StandardHasher standardHasher) {
-		this.facts = facts;
-		this.strings = strings;
-		this.standardHasher = standardHasher;
-	}
-
-	byte[] hash;
-	Project project;
-	Function function;
-	Location location;
-	int type;
+	private byte[] hash;
+	private Project project;
+	private Function function;
+	private Location location;
+	private int type;
 	
 	StandardHasher standardHasher;
 
+	@Inject
+	public HashFact(StandardHasher standardHasher) {
+		this.standardHasher = standardHasher;
+	}
+
+	@Override
+	public void save(Put put) throws IOException {
+		assert location != null;
+    	put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_FIRST_LINE_NAME), 0l, Bytes.toBytes(location.getFirstLine()));
+    	put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_LENGTH_NAME), 0l, Bytes.toBytes(location.getLength()));
+	}
+
 	public byte[] getHash() {
-		return hash;
+		return Bytes.add(new byte[]{(byte) type}, hash);
 	}
 
 	public void setHash(byte[] hash) {
@@ -69,27 +73,6 @@ public class HashFact {
 
 	public void setType(int type) {
 		this.type = type;
-	}
-
-	public void save() {
-        Put put = new Put(getPrimaryKey());
-        try {
-//	        project.save(put);
-//	        function.save(put);
-//	        location.save(put);
-        	put.add(Bytes.toBytes("d"),  new byte[0], 0l, new byte[0]); //dummy add
-			facts.put(put);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	protected byte[] getPrimaryKey() {
-		return Bytes.add(new byte[]{(byte) type}, hash, this.getSourceIdentifier());
-	}
-
-	byte[] getSourceIdentifier() {
-		return Bytes.add(new byte[] {(byte) getLocation().getFirstLine()}, new byte[] {(byte) getLocation().getLength()}, getFunction().getCodeFile().getHash());
 	}
 
 

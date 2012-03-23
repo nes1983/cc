@@ -8,7 +8,6 @@ import javax.inject.Provider;
 import javax.inject.Singleton;
 
 import ch.unibe.scg.cc.Tokenizer;
-import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
@@ -34,7 +33,7 @@ public class JavaTokenizer implements Tokenizer {
 	 * @see ch.unibe.scg.cc.javaFrontend.Tokenizer#tokenize(java.lang.String, java.lang.String, java.lang.String)
 	 */
 	@Override
-	public List<Function> tokenize(String file, String fileName, CodeFile codeFile) {
+	public List<Function> tokenize(String file, String fileName) {
 		int currentLineNumber = 0;
 		int lineLength=0;
 		int lastStart = 0;
@@ -45,7 +44,7 @@ public class JavaTokenizer implements Tokenizer {
 		while(m.find()) {
 			String currentFunctionString = file.substring(lastStart,m.start());
 			lineLength = countOccurrences(currentFunctionString, '\n');
-			Function function = makeFunction(currentLineNumber, fileName, codeFile, currentFunctionString);
+			Function function = makeFunction(currentLineNumber, fileName, currentFunctionString);
 			ret.add(function);
 			
 			lastStart = m.start();
@@ -53,16 +52,15 @@ public class JavaTokenizer implements Tokenizer {
 		} 
 		String currentFunctionString = file.substring(lastStart, file.length());
 		//Location location = makeLocation(currentLineNumber, countOccurrences(currentFunction, '\n'));
-		Function function = makeFunction(currentLineNumber, fileName, codeFile, currentFunctionString);
+		Function function = makeFunction(currentLineNumber, fileName, currentFunctionString);
 		ret.add(function);
 		return ret;
 	}
 	
-	Function makeFunction(int baseLine, String fname, CodeFile codeFile, String contents) {
+	Function makeFunction(int baseLine, String fname, String contents) {
 		Function f = functionProvider.get();
 		f.setBaseLine(baseLine);
 		f.setContents(contents);
-		f.setCodeFile(codeFile);
 		return f;
 	}
 	

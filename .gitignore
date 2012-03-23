@@ -6,6 +6,8 @@ tmp/**/*
 *.swp
 *~.nib
 
+.metadata/*
+
 *.class
 
 # Package Files #

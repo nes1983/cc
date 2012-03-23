@@ -1,61 +1,65 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
-import org.apache.hadoop.hbase.util.Bytes;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import ch.unibe.scg.cc.StandardHasher;
-
 
 public class CodeFile extends Column {
 
-	private Project project;
+	public static final String FUNCTION_OFFSET_NAME = "fo";
+	private List<Function> functions;
 	private String fileContents;
-	private byte[] hash;
-	private boolean isOutdatedHash;
-	
+	private byte[] fileContentHash;
+	private boolean isOutdatedFileContentHash;
+
 	@Inject
 	StandardHasher standardHasher;
-	
+
 	public CodeFile() {
-		isOutdatedHash = true;
+		functions = new ArrayList<Function>();
+		isOutdatedFileContentHash = true;
 	}
 
 	@Override
 	public byte[] getHash() {
-		assert fileContents != null;
-		assert project != null;
-		if(this.isOutdatedHash) {
-			hash = Bytes.add(standardHasher.hash(getFileContents()), project.getHash());
-			this.isOutdatedHash = false;
-		}
-		return hash;
+		throw new NotImplementedException();
 	}
 
 	@Override
 	public void save(Put put) throws IOException {
-		put.add(Bytes.toBytes(FAMILY_NAME),  new byte[0], 0l, new byte[0]); //dummy add
+		throw new NotImplementedException();
 	}
 
 	public void setFileContents(String fileContents) {
 		this.fileContents = fileContents;
-		this.isOutdatedHash = true;
+		this.isOutdatedFileContentHash = true;
 	}
 
 	public String getFileContents() {
 		return fileContents;
 	}
 
-	public void setProject(Project project) {
-		this.project = project;
-		this.isOutdatedHash = true;
+	public byte[] getFileContentsHash() {
+		if(isOutdatedFileContentHash) {
+			this.fileContentHash = standardHasher.hash(getFileContents());
+			this.isOutdatedFileContentHash = false;
+		}
+		return this.fileContentHash;
 	}
 
-	public Project getProject() {
-		return project;
+	public void addFunction(Function function) {
+		this.functions.add(function);
 	}
-	
+
+	public List<Function> getFunctions() {
+		return functions;
+	}
+
 }

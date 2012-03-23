@@ -8,6 +8,7 @@ import javax.inject.Provider;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
@@ -38,6 +39,9 @@ public  class Frontend {
 	@Inject
 	Provider<CodeFile> codeFileProvider;
 	
+	@Inject
+	Provider<Version> versionProvider;
+	
 	@ForTestingOnly
 	public void type1Normalize(StringBuilder fileContents) {
 		type1.normalize(fileContents);
@@ -67,34 +71,44 @@ public  class Frontend {
 	
 
 	public void register(String fileContents, Project project, String fileName, String filePath) {
-		project.setFilePath(filePath + "/" + fileName); // XXX dirty!?
-		
 		CodeFile codeFile = codeFileProvider.get();
-		codeFile.setProject(project);
 		codeFile.setFileContents(fileContents);
 		
-		// register project
+		Version v = createVersion(filePath + "/" + fileName, codeFile); // XXX dirty!?
+		project.setVersion(v);
+		
+		// register project and version
 		backend.register(project);
 		
-		boolean codeFileAlreadyInDB = backend.register(codeFile);
+		boolean codeFileAlreadyInDB = backend.lookup(codeFile);
 		if(codeFileAlreadyInDB) {
-			System.out.println("file is already in DB: " + codeFile.getProject().getFilePath());
+			System.out.println("file is already in DB: " + codeFile.getFileContentsHash());
 			return; // already processed this file =)
 		}
 		
 		StringBuilder contents = new StringBuilder(fileContents);
-		registerWithBuilder(contents, project, fileName, codeFile);
+		registerWithBuilder(contents, fileName, codeFile);
+		
+		backend.register(codeFile);
 	}
 
-	void registerWithBuilder(StringBuilder fileContents, Project project, String fileName, CodeFile codeFile) {
+	private Version createVersion(String filePath, CodeFile codeFile) {
+		Version v = versionProvider.get();
+		v.setFilePath(filePath);
+		v.setCodeFile(codeFile);
+		return v;
+	}
+
+	void registerWithBuilder(StringBuilder fileContents, String fileName, CodeFile codeFile) {
 		type1.normalize(fileContents);
-		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName, codeFile);
+		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName);
 		for(Function function : functions) {
-			registerFunction(project, function);
+			codeFile.addFunction(function);
+			registerFunction(function);
 		}	
 	}
 
-	void registerFunction(Project project, Function function) {
+	void registerFunction(Function function) {
 		StringBuilder contents = function.getContents();
 		StringOfLines contentsStringOfLines = asSOL(contents);
 		
@@ -102,11 +116,11 @@ public  class Frontend {
 			return;
 		}
 		
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, project, function, Main.TYPE_1_CLONE);
+		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function, Main.TYPE_1_CLONE);
 		type2.normalize(contents);
 		contentsStringOfLines = asSOL(contents);
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, project, function, Main.TYPE_2_CLONE);
-		backend.shingleRegisterFunction(contentsStringOfLines, project, function);
+		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function, Main.TYPE_2_CLONE);
+		backend.shingleRegisterFunction(contentsStringOfLines, function);
 	}
 	
 	private StringOfLines asSOL(StringBuilder sb) {

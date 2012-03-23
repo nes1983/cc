@@ -33,14 +33,14 @@ public class ProjectWalker {
 	@Inject @Named("projects")
 	HTable projects;
 	
+	@Inject @Named("versions")
+	HTable versions;
+	
 	@Inject @Named("files")
 	HTable codefiles;
 	
 	@Inject @Named("functions")
 	HTable functions;
-	
-	@Inject @Named("facts")
-	HTable facts;
 	
 	@Inject @Named("strings")
 	HTable strings;
@@ -92,7 +92,6 @@ public class ProjectWalker {
 	Project createProject(String projectName, String version) {
 		Project project = projectProvider.get();
 		project.setName(projectName);
-		project.setVersion(version);
 		return project;
 	}
 
@@ -106,13 +105,14 @@ public class ProjectWalker {
 		InputStream 	is = file.getContent().getInputStream();
 		String contents = IOUtils.toString(is, "UTF-8");
 		FileName name = file.getName();
-		javaFrontend.register(contents, project, name.getBaseName(), name
-				.getParent().getPath());
+		javaFrontend.register(contents, project, name.getBaseName(), 
+				name.getParent().getPath());
 		
 		// XXX flushCommits get called for every single file --> bad performance!?
-        facts.flushCommits();
-        codefiles.flushCommits();
         projects.flushCommits();
+        versions.flushCommits();
+        codefiles.flushCommits();
+        functions.flushCommits();
         strings.flushCommits();
 	}
 }
