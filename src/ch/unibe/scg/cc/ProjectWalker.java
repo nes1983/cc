@@ -5,10 +5,11 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.inject.Provider;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
@@ -22,7 +23,11 @@ import org.apache.commons.vfs2.FileSystemManager;
 import org.apache.commons.vfs2.VFS;
 import org.apache.hadoop.hbase.client.HTable;
 
+import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.RealProjectFactory;
+import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 
 public class ProjectWalker {
 
@@ -46,7 +51,10 @@ public class ProjectWalker {
 	HTable strings;
 
 	@Inject
-	Provider<Project> projectProvider;
+	RealProjectFactory projectFactory;
+
+	@Inject
+	RealVersionFactory versionFactory;
 
 	final FileSystemManager fsManager;
 	final FileSelector javaFilter = new SuffixFilter(".java");
@@ -75,38 +83,32 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(FileObject project) throws SQLException, IOException {
-		crawl(project, project.getName().getBaseName());
-	}
-
 	public void crawl(FileObject project, String projectName) throws SQLException, IOException {
-	
-		Project currentProject = createProject(projectName, "1.23"); // TODO get Version
-	
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
 		System.out.format("Processing files: %s%n", ArrayUtils.toString(javaFiles));
-		crawl(javaFiles, currentProject);
-	}
-
-	Project createProject(String projectName, String version) {
-		Project project = projectProvider.get();
-		project.setName(projectName);
-		return project;
-	}
-
-	void crawl(FileObject[] javaFiles, Project project) throws SQLException, IOException {
-		for (FileObject o : javaFiles) {
-			crawl(o, project);
+		List<Version> versions = crawl(javaFiles);
+		
+		for(Version version : versions) {
+			Project proj = projectFactory.create(projectName, version, 1); // TODO get versionNumber
+			javaFrontend.register(proj);
 		}
 	}
 
-	public void crawl(FileObject file, Project project) throws IOException {
+	List<Version> crawl(FileObject[] javaFiles) throws SQLException, IOException {
+		List<Version> versions = new ArrayList<Version>();
+		for (FileObject o : javaFiles) {
+			versions.add(crawl(o));
+		}
+		
+		return versions;
+	}
+
+	public Version crawl(FileObject file) throws IOException {
 		InputStream 	is = file.getContent().getInputStream();
 		String contents = IOUtils.toString(is, "UTF-8");
 		FileName name = file.getName();
-		javaFrontend.register(contents, project, name.getBaseName(), 
-				name.getParent().getPath());
+		CodeFile codeFile = javaFrontend.register(contents, name.getBaseName());
 		
 		// XXX flushCommits get called for every single file --> bad performance!?
         projects.flushCommits();
@@ -114,6 +116,10 @@ public class ProjectWalker {
         codefiles.flushCommits();
         functions.flushCommits();
         strings.flushCommits();
+        
+        String filePath = name.getParent().getPath() + "/" + name.getBaseName();
+		Version version = versionFactory.create(filePath, codeFile); // XXX dirty!?
+		return version;
 	}
 }
 

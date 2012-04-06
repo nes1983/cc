@@ -39,9 +39,9 @@ public class Main {
 
 	public static void walk(ProjectWalker walker) throws SQLException, IOException {
 		crawl(walker, "eclipse-ant", "projects/eclipse-ant.zip");
-		crawl(walker, "eclipse-jdtcore", "projects/eclipse-jdtcore.zip");
-		crawl(walker, "j2sdk1.4.0-javax-swing", "projects/j2sdk1.4.0-javax-swing.zip");
-		crawl(walker, "netbeans-javadoc", "projects/netbeans-javadoc.zip");
+//		crawl(walker, "eclipse-jdtcore", "projects/eclipse-jdtcore.zip");
+//		crawl(walker, "j2sdk1.4.0-javax-swing", "projects/j2sdk1.4.0-javax-swing.zip");
+//		crawl(walker, "netbeans-javadoc", "projects/netbeans-javadoc.zip");
 	}
 	
 	private static void crawl(ProjectWalker walker, String projectName, String filePath) throws SQLException, IOException {

@@ -12,6 +12,7 @@ public class StandardHasher implements Hasher {
 	public byte[] hash(String document) {
 		byte[] ret;
 		try {
+			assert document != null;
 			ret = md.digest(document.getBytes("UTF-16LE"));
 		} catch (UnsupportedEncodingException e) {
 			throw new RuntimeException(e);

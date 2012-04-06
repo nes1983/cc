@@ -3,12 +3,12 @@ package ch.unibe.scg.cc;
 import java.util.List;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
@@ -37,10 +37,10 @@ public  class Frontend {
 	protected Tokenizer tokenizer;
 
 	@Inject
-	Provider<CodeFile> codeFileProvider;
+	RealCodeFileFactory codeFileFactory;
 	
 	@Inject
-	Provider<Version> versionProvider;
+	RealVersionFactory versionFactory;
 	
 	@ForTestingOnly
 	public void type1Normalize(StringBuilder fileContents) {
@@ -69,34 +69,25 @@ public  class Frontend {
 		 return file.toString();
 	}
 	
-
-	public void register(String fileContents, Project project, String fileName, String filePath) {
-		CodeFile codeFile = codeFileProvider.get();
-		codeFile.setFileContents(fileContents);
-		
-		Version v = createVersion(filePath + "/" + fileName, codeFile); // XXX dirty!?
-		project.setVersion(v);
-		
-		// register project and version
+	void register(Project project) {
 		backend.register(project);
+	}
+
+	CodeFile register(String fileContents, String fileName) {
+		CodeFile codeFile = codeFileFactory.create(fileContents);
 		
 		boolean codeFileAlreadyInDB = backend.lookup(codeFile);
 		if(codeFileAlreadyInDB) {
 			System.out.println("file is already in DB: " + codeFile.getFileContentsHash());
-			return; // already processed this file =)
+			return codeFile; // already processed this file =)
 		}
 		
 		StringBuilder contents = new StringBuilder(fileContents);
 		registerWithBuilder(contents, fileName, codeFile);
 		
 		backend.register(codeFile);
-	}
-
-	private Version createVersion(String filePath, CodeFile codeFile) {
-		Version v = versionProvider.get();
-		v.setFilePath(filePath);
-		v.setCodeFile(codeFile);
-		return v;
+		
+		return codeFile;
 	}
 
 	void registerWithBuilder(StringBuilder fileContents, String fileName, CodeFile codeFile) {

@@ -15,7 +15,6 @@ public class Location extends Column {
         put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_NAME), 0l, Bytes.toBytes(getFirstLine()));
 	}
 
-	@Override
 	public byte[] getHash() {
 		return null;
 	}

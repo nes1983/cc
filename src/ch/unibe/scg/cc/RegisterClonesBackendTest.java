@@ -17,7 +17,7 @@ import org.mockito.Mockito;
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.modules.CCModule;
@@ -30,7 +30,7 @@ import com.google.inject.util.Modules;
 @RunWith(JExample.class)
 public class RegisterClonesBackendTest {
 	
-	Project project;
+	RealProject project;
 	final CloneRegistry cloneRegistry = mock(CloneRegistry.class);
 	final Connection connection = mock(Connection.class);
 	Function function;
@@ -53,7 +53,7 @@ public class RegisterClonesBackendTest {
 		Module tt = Modules.override(new CCModule()).with(t);
 		RegisterClonesBackend rcb = Guice.createInjector(tt).getInstance(RegisterClonesBackend.class);
 		
-		project = mock(Project.class);
+		project = mock(RealProject.class);
 		function = mock(Function.class);
 		stub(function.getBaseLine()).toReturn(3);
 		

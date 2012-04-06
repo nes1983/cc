@@ -9,9 +9,9 @@ import java.sql.SQLException;
 
 import javax.inject.Provider;
 
-import org.apache.hadoop.hbase.client.Put;
 import org.junit.Test;
 
+import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.HashFact;
 
 public class RegisterSnippetTest {
@@ -23,12 +23,10 @@ public class RegisterSnippetTest {
 		when(hashFactProvider.get()).thenReturn(hashFact);
 
 		CloneRegistry registry = new CloneRegistry(hashFactProvider,null);
-
+		Function function = new Function();
 
 		byte[] bytes = new byte[] { 0 };
-		registry.register(bytes, null, null, 3);
-
-		verify(hashFact).save(new Put(new byte[] {}));
+		registry.register(bytes, function, null, 3);
 
 		verify(hashFact).setType(3);
 	}

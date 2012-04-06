@@ -15,7 +15,7 @@ public class HashFact extends Column {
 	private static final String LOCATION_LENGTH_NAME = "ll";
 
 	private byte[] hash;
-	private Project project;
+	private RealProject project;
 	private Function function;
 	private Location location;
 	private int type;
@@ -27,7 +27,6 @@ public class HashFact extends Column {
 		this.standardHasher = standardHasher;
 	}
 
-	@Override
 	public void save(Put put) throws IOException {
 		assert location != null;
     	put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_FIRST_LINE_NAME), 0l, Bytes.toBytes(location.getFirstLine()));
@@ -43,11 +42,11 @@ public class HashFact extends Column {
 		this.hash = hash;
 	}
 
-	public Project getProject() {
+	public RealProject getProject() {
 		return project;
 	}
 
-	public void setProject(Project project) {
+	public void setProject(RealProject project) {
 		this.project = project;
 	}
 

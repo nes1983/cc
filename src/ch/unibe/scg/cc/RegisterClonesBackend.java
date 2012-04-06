@@ -5,6 +5,7 @@ import javax.inject.Inject;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
@@ -35,7 +36,7 @@ public class RegisterClonesBackend {
 	 * @param project
 	 * @param location
 	 */
-	public void registerFunction(String lines, Project project,
+	public void registerFunction(String lines, RealProject project,
 			Function function, int type) {
 		StringOfLines stringOfLines = stringOfLinesFactory.make(lines);
 		registerConsecutiveLinesOfCode(stringOfLines, function, type);
@@ -98,10 +99,9 @@ public class RegisterClonesBackend {
 
 	public void register(Project project) {
 		registry.register(project);
-		register(project.getVersion());
 	}
 
-	private void register(Version version) {
+	public void register(Version version) {
 		registry.register(version);
 	}
 	

@@ -18,6 +18,7 @@ import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.HashFact;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.RealCodeFile;
 import ch.unibe.scg.cc.activerecord.Version;
 
 @Singleton
@@ -61,13 +62,6 @@ public class CloneRegistry {
 		fact.setFunction(function);
 		fact.setType(type);
 		function.addHashFact(fact);
-//		Put put = new Put(Bytes.add(function.getHash(), fact.getHash()));
-//		try {
-//			fact.save(put);
-//			functions.put(put);
-//		} catch (IOException e) {
-//			throw new RuntimeException(e);
-//		}
 	}
 
 	public void register(byte[] hash, Function function,
@@ -122,8 +116,8 @@ public class CloneRegistry {
 		for(Function function : codeFile.getFunctions()) {
 			Put put = new Put(Bytes.add(codeFile.getFileContentsHash(), function.getHash()));
 			try {
-				put.add(Bytes.toBytes(CodeFile.FAMILY_NAME),
-						Bytes.toBytes(CodeFile.FUNCTION_OFFSET_NAME), 0l,
+				put.add(Bytes.toBytes(RealCodeFile.FAMILY_NAME),
+						Bytes.toBytes(RealCodeFile.FUNCTION_OFFSET_NAME), 0l,
 						Bytes.toBytes(function.getBaseLine()));
 				codefiles.put(put);
 			} catch (IOException e) {

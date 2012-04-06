@@ -30,7 +30,6 @@ public class Function extends Column {
 		// nothing to do
 	}
 
-	@Override
 	public byte[] getHash() {
 		assert getContents() != null;
 		if(isOutdatedHash)
