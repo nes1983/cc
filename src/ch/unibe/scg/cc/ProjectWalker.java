@@ -67,7 +67,7 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(String path) throws SQLException, IOException {
+	public void crawl(String path) throws  IOException {
 		SuffixFileFilter filter = new SuffixFileFilter(".tar.gz");
 		File base = new File(path);
 		String[] projectNames = base
@@ -83,7 +83,7 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(FileObject project, String projectName) throws SQLException, IOException {
+	public void crawl(FileObject project, String projectName) throws  IOException {
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
 		System.out.format("Processing files: %s%n", ArrayUtils.toString(javaFiles));
@@ -95,7 +95,7 @@ public class ProjectWalker {
 		}
 	}
 
-	List<Version> crawl(FileObject[] javaFiles) throws SQLException, IOException {
+	List<Version> crawl(FileObject[] javaFiles) throws IOException {
 		List<Version> versions = new ArrayList<Version>();
 		for (FileObject o : javaFiles) {
 			versions.add(crawl(o));

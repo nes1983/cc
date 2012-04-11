@@ -13,13 +13,12 @@ import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 public  class Frontend {
-	
+	 
 	@Inject
 	StandardHasher standardHasher;
 
 	@Inject
 	ShingleHasher shingleHasher;
-
 	
 	@Inject @Type1
 	protected PhaseFrontent type1;

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="clone-detector">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../Applications/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="clone-detector.classpath">
+	    <pathelement location="libs/junit-dep-4.9.jar"/>
+        <pathelement location="libs/hamcrest-all-1.3.0RC2.jar"/>
+        <pathelement location="libs/jregex1.2_01.jar"/>
+        <pathelement location="libs/commons-lang3-3.0.1.jar"/>
+        <pathelement location="libs/commons-io-2.1.jar"/>
+        <pathelement location="libs/commons-vfs2-2.0.jar"/>
+        <pathelement location="libs/commons-logging-1.1.1.jar"/>
+        <pathelement location="libs/commons-collections-3.2.1.jar"/>
+        <pathelement location="libs/postgresql-8.4-703.jdbc4.jar"/>
+        <pathelement location="libs/guava-10.0.1.jar"/>
+        <pathelement location="libs/zookeeper-3.3.2.jar"/>
+        <pathelement location="libs/log4j-1.2.16.jar"/>
+        <pathelement location="libs/hawtdispatch-1.7.jar"/>
+        <pathelement location="libs/hadoop-core-1.0.1.jar"/>
+        <pathelement location="libs/hbase-0.92.0.jar"/>
+        <pathelement location="libs/commons-cli-1.2.jar"/>
+        <pathelement location="bin"/>
+        <pathelement location="libs/aopalliance.jar"/>
+        <pathelement location="libs/guice-3.0.jar"/>
+        <pathelement location="libs/guice-assistedinject-3.0.jar"/>
+        <pathelement location="libs/guice-grapher-3.0.jar"/>
+        <pathelement location="libs/guice-jmx-3.0.jar"/>
+        <pathelement location="libs/guice-jndi-3.0.jar"/>
+        <pathelement location="libs/guice-multibindings-3.0.jar"/>
+        <pathelement location="libs/guice-persist-3.0.jar"/>
+        <pathelement location="libs/guice-throwingproviders-3.0.jar"/>
+        <pathelement location="libs/javax.inject.jar"/>
+        <pathelement location="libs/mockito-all-1.9.0-rc1.jar"/>
+        <pathelement location="libs/jexample-4.5-391.jar"/>
+        <pathelement location="libs/automaton.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+	<target name="jar">
+		<jar destfile="bin/cc.jar" basedir="bin"/>
+	</target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="clone-detector.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CC">
+        <java classname="ch.unibe.scg.cc.Main" failonerror="true" fork="yes">
+            <classpath refid="clone-detector.classpath"/>
+        </java>
+    </target>
+    <target name="src">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="ch.unibe.scg.cc.FrontendTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.ProjectWalkerTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.RegisterClonesBackendTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.RegisterSnippetTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.ShingleHasherTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.Type2ReplacerFactoryTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactoryTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.lines.ModifiableLinesTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.lines.StringOfLinesTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.regex.ReplaceTest" todir="${junit.output.dir}"/>
+            <test name="ch.unibe.scg.cc.regex.ReplacementStringTest" todir="${junit.output.dir}"/>
+            <classpath refid="clone-detector.classpath"/>
+        </junit>
+    </target>
+    <target name="TestStore">
+        <java classname="TestStore" failonerror="true" fork="yes">
+            <classpath refid="clone-detector.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

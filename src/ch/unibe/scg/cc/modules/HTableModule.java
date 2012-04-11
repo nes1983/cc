@@ -9,15 +9,6 @@ import ch.unibe.scg.cc.activerecord.HTableProvider;
 import com.google.inject.PrivateModule;
 import com.google.inject.name.Names;
 
-//public class HTableModule {
-//	public HTableModule() {
-//		new MyHTableModule(HTabl) {
-//	          @Override void bindHTable() {
-//	            bind(HTable.class).toInstance(new Foot("leftie"));
-//	          }
-//	        }
-//	}
-//}
 
 public abstract class HTableModule extends PrivateModule {
 	private final String named;

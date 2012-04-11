@@ -33,14 +33,16 @@
 			<attribute name="javadoc_location" value="http://docs.guava-libraries.googlecode.com/git-history/v10.0.1/javadoc/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/hbase-0.90.5.jar" sourcepath="libs/hbase-src-0.95.zip">
+	<classpathentry kind="lib" path="libs/zookeeper-3.3.2.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/hawtdispatch-1.7.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="http://hbase.apache.org/apidocs/"/>
+			<attribute name="javadoc_location" value="http://hawtdispatch.fusesource.org/versions/1.7/maven/hawtdispatch/apidocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/zookeeper-3.3.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-core-0.20-append-r1056497.jar"/>
-	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-core-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hbase-0.92.0.jar"/>
+	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
 		<attributes>
@@ -49,7 +51,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/guice-3.0.jar" sourcepath="libs/guice-src.zip">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/project-clone-detector/libs/guice-doc.zip!/javadoc"/>
+			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/guice-doc.zip!/javadoc"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/guice-assistedinject-3.0.jar"/>
