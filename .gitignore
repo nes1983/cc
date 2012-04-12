@@ -1,6 +1,7 @@
 bin/**/*
+bin/*
 tmp/**/*
-tmp/**/*
+tmp/*
 *.tmp
 *.bak
 *.swp
