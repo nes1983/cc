@@ -54,8 +54,19 @@
     <target name="clean">
         <delete dir="bin"/>
     </target>
-	<target name="jar">
-		<jar destfile="bin/cc.jar" basedir="bin"/>
+	<target name="jar" depends="build">
+		<manifestclasspath jarfile="cc.jar" property="manifest.class.path">
+			<classpath refid="clone-detector.classpath" />
+		</manifestclasspath>
+		<jar destfile="cc.jar" basedir="bin">
+			<manifest>
+				<attribute name="Class-Path" value="${manifest.class.path}" />
+				<attribute name="Main-Class" value="ch.unibe.scg.cc.mappers.MapMain" />
+			</manifest>
+		</jar>
+	</target>
+	<target name="executeJar" depends="jar">
+		<java jar="cc.jar" fork="true"/>
 	</target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
