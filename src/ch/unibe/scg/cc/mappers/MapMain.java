@@ -30,7 +30,7 @@ public class MapMain {
 		
 		Scan scan = new Scan();
 		HbaseWrapper.launchMapReduceJob(
-		                        "WordCountTestJob", "GT_wordCount", scan, 
+		                        "WordCountTestJob", "projects", scan, 
 		                        WordCountTest.class, Mapper1.class, 
 		                        Reducer1.class, Text.class, IntWritable.class);
 		

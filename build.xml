@@ -61,12 +61,16 @@
 		<jar destfile="cc.jar" basedir="bin">
 			<manifest>
 				<attribute name="Class-Path" value="${manifest.class.path}" />
-				<attribute name="Main-Class" value="ch.unibe.scg.cc.mappers.MapMain" />
+				<attribute name="Main-Class" value="ch.unibe.scg.cc.mappers.TablePopulator" />
 			</manifest>
 		</jar>
 	</target>
 	<target name="executeJar" depends="jar">
 		<java jar="cc.jar" fork="true"/>
+	</target>
+	<target name="uploadJar" depends="jar">
+		<scp file="cc.jar" todir="deploy@pinocchio.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" />
+		<sshexec host="pinocchio.unibe.ch" username="deploy" keyfile="${user.home}/.ssh/id_rsa" command="sudo -u hadoop hadoop jar /tmp/cc.jar" />
 	</target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>

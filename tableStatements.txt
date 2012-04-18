@@ -1,9 +1,9 @@
 -- CREATION --
-create 'projects', {NAME => 'd', COMPRESSION => 'gz'}
-create 'versions', {NAME => 'd', COMPRESSION => 'gz'}
-create 'files', {NAME => 'd', COMPRESSION => 'gz'}
-create 'functions', {NAME => 'd', COMPRESSION => 'gz'}
-create 'strings', {NAME => 'd', COMPRESSION => 'gz'}
+create 'projects', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'versions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'files', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
 
 
 -- TRUNCATE --
