@@ -114,4 +114,24 @@ public class RegisterClonesBackend {
 		byte[] hash = codeFile.getFileContentsHash();
 		return registry.lookupCodeFile(hash);
 	}
+	
+	/**
+	 * looks up the version
+	 * @param version
+	 * @return returns true, if version is already in the database, otherwise false.
+	 */
+	public boolean lookup(Version version) {
+		byte[] hash = version.getHash();
+		return registry.lookupVersion(hash);
+	}
+	
+	/**
+	 * looks up the project
+	 * @param project
+	 * @return returns true, if project is already in the database, otherwise false.
+	 */
+	public boolean lookup(Project project) {
+		byte[] hash = project.getHash();
+		return registry.lookupProject(hash);
+	}
 }

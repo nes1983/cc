@@ -42,6 +42,7 @@
         <pathelement location="libs/mockito-all-1.9.0-rc1.jar"/>
         <pathelement location="libs/jexample-4.5-391.jar"/>
         <pathelement location="libs/automaton.jar"/>
+        <pathelement location="libs/juniversalchardet-1.0.3.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -70,7 +71,7 @@
 	</target>
 	<target name="uploadJar" depends="jar">
 		<scp file="cc.jar" todir="deploy@pinocchio.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" />
-		<sshexec host="pinocchio.unibe.ch" username="deploy" keyfile="${user.home}/.ssh/id_rsa" command="sudo -u hadoop hadoop jar /tmp/cc.jar" />
+		<sshexec host="pinocchio.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="sudo -u hadoop hadoop jar /tmp/cc.jar" />
 	</target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>

@@ -93,7 +93,31 @@ public class CloneRegistry {
 		assert t != null;
 		byte[] startKey = Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
 		byte[] endKey = Bytes.add(key, new byte[] {127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127});
-		Scan s = new Scan(startKey, endKey); // XXX funkt. das?
+		Scan s = new Scan(startKey, endKey);
+		try {
+			return t.getScanner(s).next() != null;
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public boolean lookupVersion(byte[] key) {
+		HTable t = getTable(CloneRegistry.TABLE_VERSIONS);
+		assert t != null;
+		byte[] startKey = Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
+		byte[] endKey = Bytes.add(key, new byte[] {127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127});
+		Scan s = new Scan(startKey, endKey);
+		try {
+			return t.getScanner(s).next() != null;
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	public boolean lookupProject(byte[] key) {
+		HTable t = getTable(CloneRegistry.TABLE_PROJECTS);
+		assert t != null;
+		Scan s = new Scan(key, key);
 		try {
 			return t.getScanner(s).next() != null;
 		} catch (IOException e) {

@@ -9,10 +9,11 @@ import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
-public  class Frontend {
+public class Frontend {
 	 
 	@Inject
 	StandardHasher standardHasher;
@@ -68,21 +69,30 @@ public  class Frontend {
 		 return file.toString();
 	}
 	
-	void register(Project project) {
+	public void register(Project project) {
+		boolean alreadyInDB = backend.lookup(project);
+		if(alreadyInDB) { return; }
+		
 		backend.register(project);
 	}
-
-	CodeFile register(String fileContents, String fileName) {
-		CodeFile codeFile = codeFileFactory.create(fileContents);
+	
+	public void register(Version version) {
+		boolean alreadyInDB = backend.lookup(version);
+		if(alreadyInDB) { return; }
 		
-		boolean codeFileAlreadyInDB = backend.lookup(codeFile);
-		if(codeFileAlreadyInDB) {
-			System.out.println("file is already in DB: " + codeFile.getFileContentsHash());
+		backend.register(version);
+	}
+
+	public CodeFile register(String fileContent, String fileName) {
+		CodeFile codeFile = codeFileFactory.create(fileContent);
+		
+		boolean alreadyInDB = backend.lookup(codeFile);
+		if(alreadyInDB) {
 			return codeFile; // already processed this file =)
 		}
 		
-		StringBuilder contents = new StringBuilder(fileContents);
-		registerWithBuilder(contents, fileName, codeFile);
+		StringBuilder content = new StringBuilder(fileContent);
+		registerWithBuilder(content, fileName, codeFile);
 		
 		backend.register(codeFile);
 		
