@@ -4,6 +4,9 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
+import org.apache.hadoop.hbase.HTableDescriptor;
+import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.mapreduce.TableInputFormat;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
@@ -19,7 +22,9 @@ import org.apache.hadoop.mapreduce.Reducer;
 public class HbaseWrapper {
 	private static Configuration configuration = null;
 
-	public static boolean launchMapReduceJob(String jobName, String tableName,
+	@SuppressWarnings("rawtypes")
+	public static boolean launchMapReduceJob(String jobName, 
+			String tableNameMapper, String tableNameReducer,
 			Scan tableScanner, Class<?> jobClassName,
 			Class<? extends TableMapper> mapperClassName,
 			Class<? extends TableReducer> reducerClassName,
@@ -28,13 +33,13 @@ public class HbaseWrapper {
 
 		Job thisJob;
 		try {
-			thisJob = initMapReduceJob(jobName, tableName, tableScanner,
+			thisJob = initMapReduceJob(jobName, tableScanner,
 					jobClassName, mapperClassName, reducerClassName, outputKey,
 					outputValue);
 
-			TableMapReduceUtil.initTableMapperJob(tableName, tableScanner,
+			TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner,
 					mapperClassName, outputKey, outputValue, thisJob);
-			TableMapReduceUtil.initTableReducerJob(tableName, reducerClassName,
+			TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClassName,
 					thisJob);
 
 			return thisJob.waitForCompletion(true);
@@ -44,7 +49,8 @@ public class HbaseWrapper {
 		}
 	}
 
-	public static Job initMapReduceJob(String jobName, String tableName,
+	@SuppressWarnings("rawtypes")
+	public static Job initMapReduceJob(String jobName,
 			Scan tableScanner, Class<?> jobClassName,
 			Class<? extends Mapper> mapperClassName,
 			Class<? extends Reducer> reducerClassName, Class<?> outputKey,
@@ -72,5 +78,14 @@ public class HbaseWrapper {
 			//configuration.set("mapred.job.tracker", "pinocchio:50030");
 		}
 		return configuration;
+	}
+
+	public static void truncate(HTable hTable) throws IOException {
+		HBaseAdmin admin = new HBaseAdmin(getConfiguration());
+		HTableDescriptor tableDescription = hTable.getTableDescriptor();
+		String tableName = tableDescription.getNameAsString();
+		admin.disableTable(tableName);
+		admin.deleteTable(tableName);
+		admin.createTable(tableDescription);
 	}
 }

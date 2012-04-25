@@ -45,6 +45,7 @@
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.6.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
 		<attributes>

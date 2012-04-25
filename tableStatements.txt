@@ -6,6 +6,12 @@ create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
 
 
+create 'indexProjects', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexVersions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFiles', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFunctions', {NAME => 'd', COMPRESSION => 'GZ'}
+
+
 -- TRUNCATE --
 truncate 'projects'
 truncate 'versions'
