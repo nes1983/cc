@@ -63,19 +63,10 @@ public class TablePopulator {
 
 		Job job = new Job(conf, "populate");
 		job.setJarByClass(TablePopulator.class);
-
-//		job.setOutputKeyClass();
-//		job.setOutputValueClass(IntWritable.class);
-
 		job.setMapperClass(Map.class);
-//		job.setReducerClass(null);
-
 		job.setInputFormatClass(ZipFileInputFormat.class);
 		job.setOutputFormatClass(NullOutputFormat.class);
-
 		FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
-//		FileOutputFormat.setOutputPath(job, new Path(args[1]));
-
 		job.waitForCompletion(true);
 	}
 	

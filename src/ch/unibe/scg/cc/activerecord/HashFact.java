@@ -34,7 +34,7 @@ public class HashFact extends Column {
 	}
 
 	public byte[] getHash() {
-		return Bytes.add(new byte[]{(byte) type}, hash);
+		return Bytes.add(Bytes.toBytes(type), hash);
 	}
 
 	public void setHash(byte[] hash) {

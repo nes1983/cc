@@ -32,14 +32,17 @@ public class CCModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		installHTable("projects");
-		installHTable("indexProjects");
 		installHTable("versions");
-		installHTable("indexVersions");
 		installHTable("files");
-		installHTable("indexFiles");
 		installHTable("functions");
-		installHTable("indexFunctions");
 		installHTable("strings");
+		
+		installHTable("indexProjects");
+		installHTable("indexVersions");
+		installHTable("indexFiles");
+		installHTable("indexFunctions");
+		
+		installHTable("indexFactToProject");
 		
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(
 				Singleton.class);

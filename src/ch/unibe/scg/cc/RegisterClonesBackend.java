@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import java.util.Arrays;
+
 import javax.inject.Inject;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
@@ -14,6 +16,7 @@ public class RegisterClonesBackend {
 
 	public final int MINIMUM_LINES = 5;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
+	final byte[] emptySHA1Key = new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 
 	@Inject
@@ -81,6 +84,9 @@ public class RegisterClonesBackend {
 		byte[] hash;
 		try {
 			hash = hasher.hash(snippet);
+			
+			if(Arrays.equals(hash, emptySHA1Key)) //can happen with the shingle hasher
+				return;
 		} catch(CannotBeHashedException e) {
 			return;
 		}

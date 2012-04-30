@@ -26,7 +26,8 @@ public class RealVersion extends Column implements Version {
 		this.filePath = filePath;
 		this.codeFile = codeFile;
 		this.hashFilePath = standardHasher.hash(getFilePath());
-		this.hash = ByteUtils.xor(codeFile.getFileContentsHash(), this.hashFilePath);
+		byte[] hashVersion = ByteUtils.xor(codeFile.getFileContentsHash(), this.hashFilePath);
+		this.hash = Bytes.add(hashVersion, codeFile.getFileContentsHash(), this.hashFilePath);
 	}
 
 	@Override

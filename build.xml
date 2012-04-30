@@ -74,23 +74,49 @@
 		<antcall target="jar">
 			<param name="mainClass" value="ch.unibe.scg.cc.mappers.TablePopulator" />
 		</antcall>
-		<antcall target="uploadJar" />
+		<antcall target="uploadJar">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.TablePopulator" />
+		</antcall>
 	</target>
-	<target name="indexFactToProjectCreator">
+	<target name="indexCreator">
 		<antcall target="jar">
 			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MapMain" />
 		</antcall>
 		<antcall target="uploadJar">
+			<param name="classArgument" value="${classArgument}" />
+		</antcall>
+	</target>
+	<target name="indexFunctions">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctionsCreator" />
+		</antcall>
+	</target>
+	<target name="indexFiles">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFilesCreator" />
+		</antcall>
+	</target>
+	<target name="indexVersions">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexVersionsCreator" />
+		</antcall>
+	</target>
+	<target name="indexProjects">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexProjectsCreator" />
+		</antcall>
+	</target>
+	<target name="indexFactToProject">
+		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFactToProjectCreator" />
 		</antcall>
 	</target>
-	<target name="indexFilesCreator">
-		<antcall target="jar">
-			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MapMain" />
-		</antcall>
-		<antcall target="uploadJar">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFilesCreator" />
-		</antcall>
+	<target name="indexAllTables">
+		<antcall target="indexFunctions" />
+		<antcall target="indexFiles" />
+		<antcall target="indexVersions" />
+		<antcall target="indexProjects" />
+		<antcall target="indexFactToProject" />
 	</target>
 	<target name="executeJar" depends="jar">
 		<java jar="cc.jar" fork="true"/>

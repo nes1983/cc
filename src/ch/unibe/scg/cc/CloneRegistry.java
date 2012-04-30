@@ -180,7 +180,7 @@ public class CloneRegistry {
 
 	public void register(Function function) {
 		for(HashFact hashFact : function.getHashFacts()) {
-			Put put = new Put(Bytes.add(function.getHash(), Bytes.toBytes(hashFact.getType()), hashFact.getHash()));
+			Put put = new Put(Bytes.add(function.getHash(), hashFact.getHash()));
 			try {
 				hashFact.save(put);
 				functions.put(put);

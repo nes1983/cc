@@ -10,6 +10,7 @@ create 'indexProjects', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexVersions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFiles', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFunctions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFactToProject', {NAME => 'd', COMPRESSION => 'GZ'}
 
 
 -- TRUNCATE --

@@ -34,29 +34,31 @@ import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 
-public class IndexFilesCreator implements Runnable {
+public class IndexProjectsCreator implements Runnable {
 	
-	HTable indexFiles;
+	HTable indexProjects;
 	
 	@Inject
-	IndexFilesCreator(@Named("indexFiles") HTable indexFiles) {
-		this.indexFiles = indexFiles;
+	IndexProjectsCreator(@Named("indexProjects") HTable indexProjects) {
+		this.indexProjects = indexProjects;
 	}
 
-	public static class IndexCodefilesMapper extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+	public static class IndexProjectsMapper extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+		
+		BytesWritable empty = new BytesWritable(new byte[] {});
 		
 		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException, InterruptedException {
 			byte[] key = value.getRow();
 			byte[] indexKey = Bytes.add(Bytes.tail(key, 20), Bytes.head(key, 20));
-			byte[] functionOffset = value.getValue(Bytes.toBytes("d"), Bytes.toBytes("fo"));
-			context.write(new ImmutableBytesWritable(indexKey), new ImmutableBytesWritable(functionOffset));
+			byte[] versionNumber = value.getValue(Bytes.toBytes("d"), Bytes.toBytes("vn"));
+			context.write(new ImmutableBytesWritable(indexKey), new ImmutableBytesWritable(versionNumber));
 		}
 	}
 	
-	public static class IndexCodefilesReducer extends TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
+	public static class IndexProjectsReducer extends TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		public void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context) throws IOException, InterruptedException {
 			Put put = new Put(key.get());
-			put.add(Bytes.toBytes("d"), Bytes.toBytes("fo"), 0l, values.iterator().next().get());
+			put.add(Bytes.toBytes("d"), Bytes.toBytes("vn"), 0l, values.iterator().next().get());
 			context.write(key, put);
 		}
 	}
@@ -64,47 +66,47 @@ public class IndexFilesCreator implements Runnable {
 	@Override
 	public void run() {
 		try {
-			HbaseWrapper.truncate(this.indexFiles);
+			HbaseWrapper.truncate(this.indexProjects);
 			
 			Scan scan = new Scan();
 			HbaseWrapper.launchMapReduceJob(
-					IndexFilesCreator.class.getName()+" Job", 
-					"files", 
-					"indexFiles",
+					IndexProjectsCreator.class.getName()+" Job", 
+					"projects", 
+					"indexProjects",
 					scan,
-					IndexFilesCreator.class, 
-					IndexCodefilesMapper.class, 
-					IndexCodefilesReducer.class, 
+					IndexProjectsCreator.class, 
+					IndexProjectsMapper.class, 
+					IndexProjectsReducer.class, 
 					ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 			
-			indexFiles.flushCommits();
+			indexProjects.flushCommits();
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 	}
 	
-	public static class FileIndexTest {
+	public static class ProjectIndexTest {
 		@Test
 		public void testIndex() throws IOException {
 			Injector i = Guice.createInjector(new CCModule(), new JavaModule());
-			HTable files = i.getInstance(Key.get(HTable.class, Names.named("files")));
-			HTable indexFiles = i.getInstance(Key.get(HTable.class, Names.named("indexFiles")));
+			HTable projects = i.getInstance(Key.get(HTable.class, Names.named("projects")));
+			HTable indexProjects = i.getInstance(Key.get(HTable.class, Names.named("indexProjects")));
 			
 			Scan scan = new Scan();
-			ResultScanner rsFiles = files.getScanner(scan);
-			Iterator<Result> ir = rsFiles.iterator();
+			ResultScanner rsProjects = projects.getScanner(scan);
+			Iterator<Result> ir = rsProjects.iterator();
 			int rowsToTest = 50; // XXX 
 			
 			while(ir.hasNext() && rowsToTest > 0) {
-				byte[] functionHash = Bytes.tail(ir.next().getRow(), 20);
-				Scan s = new Scan(functionHash);
+				byte[] versionHash = Bytes.tail(ir.next().getRow(), 20);
+				Scan s = new Scan(versionHash);
 				
-				ResultScanner rsIndexFiles = indexFiles.getScanner(s);
-				Iterator<Result> iri = rsIndexFiles.iterator();
+				ResultScanner rsindexProjects = indexProjects.getScanner(s);
+				Iterator<Result> iri = rsindexProjects.iterator();
 				Assert.assertTrue(iri.hasNext());
-				byte[] functionHashIndexTable = Bytes.head(iri.next().getRow(), 20);
-				Assert.assertTrue(Arrays.equals(functionHash, functionHashIndexTable));
+				byte[] versionHashIndexTable = Bytes.head(iri.next().getRow(), 20);
+				Assert.assertTrue(Arrays.equals(versionHash, versionHashIndexTable));
 				rowsToTest--;
 			}
 		}
