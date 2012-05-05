@@ -38,9 +38,9 @@ public class CCModule extends AbstractModule {
 		installHTable("strings");
 		
 		installHTable("indexProjects");
-		installHTable("indexVersions");
-		installHTable("indexFiles");
-		installHTable("indexFunctions");
+		installHTable("indexFiles2Versions");
+		installHTable("indexFunctions2Files");
+		installHTable("indexHashfacts2Functions");
 		
 		installHTable("indexFactToProject");
 		
