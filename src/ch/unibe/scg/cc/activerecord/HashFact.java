@@ -11,10 +11,12 @@ import ch.unibe.scg.cc.StandardHasher;
 
 public class HashFact extends Column {
 
-	private static final String LOCATION_FIRST_LINE_NAME = "fl";
-	private static final String LOCATION_LENGTH_NAME = "ll";
+	private static final byte[] LOCATION_FIRST_LINE_NAME = Bytes.toBytes("fl");
+	private static final byte[] LOCATION_LENGTH_NAME = Bytes.toBytes("ll");
+	private static final byte[] SNIPPET_VALUE = Bytes.toBytes("sv");
 
 	private byte[] hash;
+	private String snippet;
 	private RealProject project;
 	private Function function;
 	private Location location;
@@ -29,8 +31,8 @@ public class HashFact extends Column {
 
 	public void save(Put put) throws IOException {
 		assert location != null;
-    	put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_FIRST_LINE_NAME), 0l, Bytes.toBytes(location.getFirstLine()));
-    	put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(LOCATION_LENGTH_NAME), 0l, Bytes.toBytes(location.getLength()));
+    	put.add(FAMILY_NAME, LOCATION_FIRST_LINE_NAME, 0l, Bytes.toBytes(location.getFirstLine()));
+    	put.add(FAMILY_NAME, LOCATION_LENGTH_NAME, 0l, Bytes.toBytes(location.getLength()));
 	}
 
 	public byte[] getHash() {
@@ -72,6 +74,18 @@ public class HashFact extends Column {
 
 	public void setType(int type) {
 		this.type = type;
+	}
+
+	public void saveSnippet(Put put) {
+    	put.add(FAMILY_NAME, SNIPPET_VALUE, 0l, Bytes.toBytes(snippet));
+	}
+	
+	public String getSnippet() {
+		return this.snippet;
+	}
+
+	public void setSnippet(String snippet) {
+		this.snippet = snippet;
 	}
 
 

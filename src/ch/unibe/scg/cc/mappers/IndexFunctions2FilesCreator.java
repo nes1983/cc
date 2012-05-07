@@ -75,10 +75,8 @@ public class IndexFunctions2FilesCreator implements Runnable {
 		private static final byte[] COLUMN_COUNT_PROJECTS = Bytes.toBytes("np");
 		private static final byte[] COLUMN_COUNT_VERSIONS = Bytes.toBytes("nv");
 		private static final byte[] COLUMN_VALUES_FILES = Bytes.toBytes("vf");
-		private static final byte[] COLUMN_VALUES_PROJECTS = Bytes
-					.toBytes("vp");
-		private static final byte[] COLUMN_VALUES_VERSIONS = Bytes
-					.toBytes("vv");
+		private static final byte[] COLUMN_VALUES_PROJECTS = Bytes.toBytes("vp");
+		private static final byte[] COLUMN_VALUES_VERSIONS = Bytes.toBytes("vv");
 		private final HTable indexFiles2Versions;
 		private final HashSerializer hashSerializer;
 		private final Provider<Set<byte[]>> byteSetProvider;
@@ -87,7 +85,6 @@ public class IndexFunctions2FilesCreator implements Runnable {
 		public GuiceIndexFunctions2FilesReducer(
 				@Named("indexFiles2Versions") HTable indexFiles2Versions,
 				HashSerializer hashSerializer,
-				Comparator<byte[]> byteArrayComparator,
 				Provider<Set<byte[]>> byteSetProvider) {
 			this.indexFiles2Versions = indexFiles2Versions;
 			this.hashSerializer = hashSerializer;
@@ -99,11 +96,10 @@ public class IndexFunctions2FilesCreator implements Runnable {
 				Iterable<ImmutableBytesWritable> fileContentHashes,
 				Context context) throws IOException, InterruptedException {
 			Iterator<ImmutableBytesWritable> i = fileContentHashes.iterator();
-			byte[] filecontenthashValues = new byte[] {};
+			Set<byte[]> filecontentHashes = byteSetProvider.get();
 			Set<byte[]> projnameHashes = byteSetProvider.get();
 			Set<byte[]> versionHashes = byteSetProvider.get();
 			
-			long filesCounter = 0;
 			while (i.hasNext()) {
 				byte[] cur = i.next().get();
 				byte[] fileContentHash = cur;
@@ -112,18 +108,16 @@ public class IndexFunctions2FilesCreator implements Runnable {
 				byte[] vh = getColumnValue(row, COLUMN_VALUES_VERSIONS);
 				projnameHashes.addAll(hashSerializer.deserialize(pnh, 20)); // XXX possible performance loss
 				versionHashes.addAll(hashSerializer.deserialize(vh, 20)); // XXX possible performance loss
-				filecontenthashValues = Bytes.add(filecontenthashValues,
-						fileContentHash);
-				filesCounter++;
+				filecontentHashes.addAll(hashSerializer.deserialize(fileContentHash, 20)); // XXX possible performance loss
 			}
 
 			Put put = new Put(functionHash.get());
-			put.add(FAMILY, COLUMN_COUNT_FILES, 0l, Bytes.toBytes(filesCounter));
-			put.add(FAMILY, COLUMN_VALUES_FILES, 0l, filecontenthashValues);
-			put.add(FAMILY, COLUMN_VALUES_PROJECTS, 0l, hashSerializer.serialize(projnameHashes));
+			put.add(FAMILY, COLUMN_COUNT_FILES, 0l, Bytes.toBytes(filecontentHashes.size()));
+			put.add(FAMILY, COLUMN_VALUES_FILES, 0l, hashSerializer.serialize(filecontentHashes));
 			put.add(FAMILY, COLUMN_COUNT_PROJECTS, 0l, Bytes.toBytes(projnameHashes.size()));
-			put.add(FAMILY, COLUMN_VALUES_VERSIONS, 0l, hashSerializer.serialize(versionHashes));
+			put.add(FAMILY, COLUMN_VALUES_PROJECTS, 0l, hashSerializer.serialize(projnameHashes));
 			put.add(FAMILY, COLUMN_COUNT_VERSIONS, 0l, Bytes.toBytes(versionHashes.size()));
+			put.add(FAMILY, COLUMN_VALUES_VERSIONS, 0l, hashSerializer.serialize(versionHashes));
 			context.write(functionHash, put);
 		}
 		
@@ -146,6 +140,8 @@ public class IndexFunctions2FilesCreator implements Runnable {
 			HbaseWrapper.truncate(this.indexFunctions2Files);
 
 			Scan scan = new Scan();
+			scan.setCaching(500);
+			scan.setCacheBlocks(false);
 			HbaseWrapper.launchMapReduceJob(
 					IndexFunctions2FilesCreator.class.getName() + " Job",
 					"files", "indexFunctions2Files", scan,

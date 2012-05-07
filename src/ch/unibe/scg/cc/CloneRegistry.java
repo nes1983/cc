@@ -49,26 +49,30 @@ public class CloneRegistry {
 	@Inject @Named("strings")
 	HTable strings;
 	
+	@Inject @Named("hashfactContent")
+	HTable hashfactContent;
+	
 	@Inject
 	public CloneRegistry(Provider<HashFact> hashFactProvider, Provider<Location> locationProvider) {
 		this.hashFactProvider = hashFactProvider;
 		this.locationProvider = locationProvider;
 	}
 	
-	public void register(byte[] hash, Function function, Location location, int type) {
+	public void register(byte[] hash, String snippet, Function function, Location location, int type) {
 		HashFact fact = hashFactProvider.get();
 		fact.setHash(hash);
+		fact.setSnippet(snippet);
 		fact.setLocation(location);
 		fact.setFunction(function);
 		fact.setType(type);
 		function.addHashFact(fact);
 	}
 
-	public void register(byte[] hash, Function function,
+	public void register(byte[] hash, String snippet, Function function,
 			int from, int length, int type) {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
-		this.register(hash, function, location, type);
+		this.register(hash, snippet, function, location, type);
 	}
 
 	/**
@@ -139,8 +143,9 @@ public class CloneRegistry {
 	public void register(CodeFile codeFile) {
 		for(Function function : codeFile.getFunctions()) {
 			Put put = new Put(Bytes.add(codeFile.getFileContentsHash(), function.getHash()));
+			put.setWriteToWAL(false); //XXX performance increase
 			try {
-				put.add(Bytes.toBytes(RealCodeFile.FAMILY_NAME),
+				put.add(RealCodeFile.FAMILY_NAME,
 						Bytes.toBytes(RealCodeFile.FUNCTION_OFFSET_NAME), 0l,
 						Bytes.toBytes(function.getBaseLine()));
 				codefiles.put(put);
@@ -181,9 +186,14 @@ public class CloneRegistry {
 	public void register(Function function) {
 		for(HashFact hashFact : function.getHashFacts()) {
 			Put put = new Put(Bytes.add(function.getHash(), hashFact.getHash()));
+			Put hfSnippet = new Put(hashFact.getHash());
+			put.setWriteToWAL(false); //XXX performance increase
+			hfSnippet.setWriteToWAL(false); //XXX performance increase
 			try {
 				hashFact.save(put);
 				functions.put(put);
+				hashFact.saveSnippet(hfSnippet);
+				hashfactContent.put(hfSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}

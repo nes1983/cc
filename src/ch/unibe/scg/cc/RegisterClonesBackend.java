@@ -90,7 +90,7 @@ public class RegisterClonesBackend {
 		} catch(CannotBeHashedException e) {
 			return;
 		}
-		registry.register(hash, function, from, length, type);
+		registry.register(hash, snippet, function, from, length, type);
 	}
 
 	public void register(CodeFile codeFile) {

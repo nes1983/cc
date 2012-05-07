@@ -2,18 +2,18 @@ package ch.unibe.scg.cc.mappers;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import static org.mockito.Matchers.anyObject;
-import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.vfs2.FileName;
-import org.apache.commons.vfs2.FileObject;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -28,7 +28,6 @@ import org.apache.hadoop.mapreduce.Mapper.Context;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.junit.Test;
-import org.mockito.Mockito;
 import org.mozilla.universalchardet.UniversalDetector;
 
 import ch.unibe.scg.cc.Frontend;
@@ -48,13 +47,16 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 
 public class TablePopulator {
-	public static class Map extends
-			Mapper<Text, BytesWritable, Text, IntWritable> {
+	public static class Map extends Mapper<Text, BytesWritable, Text, IntWritable> {
+		GuicePopulateMapper gpm;
 		
-		public void map(Text key, BytesWritable value, Context context)
-				throws IOException, InterruptedException {
+		Map() {
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule());
-			injector.getInstance(GuicePopulateMapper.class).map(key, value, context);
+			this.gpm = injector.getInstance(GuicePopulateMapper.class);
+		}
+		
+		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
+			gpm.map(key, value, context);
 		}
 	}
 
@@ -74,7 +76,8 @@ public class TablePopulator {
 		@Inject
 		GuicePopulateMapper(@Java Frontend javaFrontend, @Named("projects") HTable projects,
 				@Named("versions") HTable versions,  @Named("files") HTable codefiles, @Named("functions") HTable functions,
-				@Named("strings") HTable strings, RealProjectFactory projectFactory,
+				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,  
+				RealProjectFactory projectFactory,
 				RealVersionFactory versionFactory,
 				CharsetDetector charsetDetector) {
 			super();
@@ -84,6 +87,7 @@ public class TablePopulator {
 			this.codefiles = codefiles;
 			this.functions = functions;
 			this.strings = strings;
+			this.hashfactContent = hashfactContent;
 			this.projectFactory = projectFactory;
 			this.versionFactory = versionFactory;
 			this.charsetDetector = charsetDetector;
@@ -91,7 +95,7 @@ public class TablePopulator {
 
 		
 		final Frontend javaFrontend;
-		final HTable projects, versions,  codefiles, functions, strings;
+		final HTable projects, versions,  codefiles, functions, strings, hashfactContent;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -118,6 +122,7 @@ public class TablePopulator {
 			CodeFile codeFile = javaFrontend.register(content, fileName);
 	        codefiles.flushCommits();
 	        functions.flushCommits();
+	        hashfactContent.flushCommits();
 	        return codeFile;
 		}
 
@@ -136,13 +141,28 @@ public class TablePopulator {
 		}
 	}
 	
+	public static class CharsetDetector {
+		final UniversalDetector detector = new UniversalDetector(null);
+		
+		CharsetDetector() {}
+		 
+		public String charsetOf(byte[] bytes) {
+		    detector.handleData(bytes, 0, bytes.length);
+		    detector.dataEnd();
+		    String encoding = detector.getDetectedCharset();
+		    detector.reset();
+		    return encoding == null ? "ASCII" : encoding;
+		}
+	}
+	
 	public static final class PopulateTest {
 		@Test
 		public void testFilePath() throws IOException, InterruptedException {
 			
 			final Frontend javaFrontend = mock(Frontend.class);
 			final HTable projects = mock(HTable.class), versions = mock(HTable.class),  
-				codefiles = mock(HTable.class), functions = mock(HTable.class), strings = mock(HTable.class);
+				codefiles = mock(HTable.class), functions = mock(HTable.class), strings = mock(HTable.class),
+				hashfactContent = mock(HTable.class);
 			final RealProjectFactory projectFactory = mock(RealProjectFactory.class);
 			final RealVersionFactory versionFactory = mock(RealVersionFactory.class);
 			final CharsetDetector charsetDetector = mock(CharsetDetector.class);
@@ -154,7 +174,7 @@ public class TablePopulator {
 			when(projectFactory.create(eq("postgresql"), eq(version), anyInt())).thenReturn(project);
 			
 			GuicePopulateMapper mapper = new GuicePopulateMapper(javaFrontend, projects, versions, codefiles, 
-						functions, strings, projectFactory, versionFactory, charsetDetector);
+						functions, strings, hashfactContent, projectFactory, versionFactory, charsetDetector);
 			
 			mapper.map(new Text("postgresql/simon/myfile.java"), new BytesWritable(new byte[] {0x20}), null);
 			
@@ -173,19 +193,5 @@ public class TablePopulator {
 		    assertThat(cd.charsetOf(Bytes.toBytes("Hallo")), is("ASCII"));
 		}
 	
-	}
-	
-	public static class CharsetDetector {
-		final UniversalDetector detector = new UniversalDetector(null);
-		
-		CharsetDetector() {}
-		 
-		public String charsetOf(byte[] bytes) {
-		    detector.handleData(bytes, 0, bytes.length);
-		    detector.dataEnd();
-		    String encoding = detector.getDetectedCharset();
-		    detector.reset();
-		    return encoding == null ? "ASCII" : encoding;
-		}
 	}
 }

@@ -2,10 +2,13 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Set;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Provider;
 
+import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
@@ -14,12 +17,17 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.hbase.util.Bytes;
+import org.junit.Assert;
+import org.junit.Test;
 
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
+import ch.unibe.scg.cc.util.HashSerializer;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Key;
+import com.google.inject.name.Names;
 
 public class IndexHashfacts2FunctionsCreator implements Runnable {
 	
@@ -60,29 +68,61 @@ public class IndexHashfacts2FunctionsCreator implements Runnable {
 		private static final byte[] FAMILY = Bytes.toBytes("d");
 		private static final byte[] COLUMN_COUNT_FUNCTIONS = Bytes.toBytes("nf");
 		private static final byte[] COLUMN_VALUES_FUNCTIONS = Bytes.toBytes("vf");
+		private static final byte[] COLUMN_COUNT_FILES = Bytes.toBytes("nf");
+		private static final byte[] COLUMN_COUNT_PROJECTS = Bytes.toBytes("np");
+		private static final byte[] COLUMN_COUNT_VERSIONS = Bytes.toBytes("nv");
+		private static final byte[] COLUMN_VALUES_FILES = Bytes.toBytes("vf");
+		private static final byte[] COLUMN_VALUES_PROJECTS = Bytes.toBytes("vp");
+		private static final byte[] COLUMN_VALUES_VERSIONS = Bytes.toBytes("vv");
 		private final HTable indexFunctions2Files;
+		private HashSerializer hashSerializer;
+		private Provider<Set<byte[]>> byteSetProvider;
 		
 		@Inject
-		public GuiceIndexHashfacts2FunctionsReducer(@Named("indexFunctions2Files") HTable indexFunctions2Files) {
+		public GuiceIndexHashfacts2FunctionsReducer(@Named("indexFunctions2Files") HTable indexFunctions2Files,
+				HashSerializer hashSerializer,
+				Provider<Set<byte[]>> byteSetProvider) {
 			this.indexFunctions2Files = indexFunctions2Files;
+			this.hashSerializer = hashSerializer;
+			this.byteSetProvider = byteSetProvider;
 		}
 
 		@Override
 		public void reduce(ImmutableBytesWritable factHashKey, Iterable<ImmutableBytesWritable> functionHashes, Context context) throws IOException, InterruptedException {
 			Iterator<ImmutableBytesWritable> i = functionHashes.iterator();
-			byte[] functionhashValues = new byte[] {};
-			long functionCounter = 0;
+			Set<byte[]> functionhashValues = byteSetProvider.get();
+			Set<byte[]> filecontentHashes = byteSetProvider.get();
+			Set<byte[]> projnameHashes = byteSetProvider.get();
+			Set<byte[]> versionHashes = byteSetProvider.get();
 			while(i.hasNext()) {
-				byte[] currentValue = i.next().get();
-				byte[] functionHash = currentValue;
-				functionhashValues = Bytes.add(functionhashValues, functionHash);
-				functionCounter++;
+				byte[] functionHash = i.next().get();
+				Result row = getRow(functionHash);
+				byte[] vp = row.getValue(FAMILY, COLUMN_VALUES_PROJECTS);
+				byte[] vh = row.getValue(FAMILY, COLUMN_VALUES_VERSIONS);
+				byte[] vf = row.getValue(FAMILY, COLUMN_VALUES_FILES);
+				projnameHashes.addAll(hashSerializer.deserialize(vp, 20)); // XXX possible performance loss
+				versionHashes.addAll(hashSerializer.deserialize(vh, 20)); // XXX possible performance loss
+				filecontentHashes.addAll(hashSerializer.deserialize(vf, 20)); // XXX possible performance loss
+				functionhashValues.addAll(hashSerializer.deserialize(functionHash, 20)); // XXX possible performance loss
 			}
 			
 			Put put = new Put(factHashKey.get());
-			put.add(FAMILY, COLUMN_COUNT_FUNCTIONS, 0l, Bytes.toBytes(functionCounter));
-			put.add(FAMILY, COLUMN_VALUES_FUNCTIONS, 0l, functionhashValues);
-			context.write(factHashKey, put);
+			put.add(FAMILY, COLUMN_COUNT_FUNCTIONS, 0l, Bytes.toBytes(functionhashValues.size()));
+			put.add(FAMILY, COLUMN_VALUES_FUNCTIONS, 0l, hashSerializer.serialize(functionhashValues));
+			put.add(FAMILY, COLUMN_COUNT_FILES, 0l, Bytes.toBytes(filecontentHashes.size()));
+			put.add(FAMILY, COLUMN_VALUES_FILES, 0l, hashSerializer.serialize(filecontentHashes));
+			put.add(FAMILY, COLUMN_COUNT_PROJECTS, 0l, Bytes.toBytes(projnameHashes.size()));
+			put.add(FAMILY, COLUMN_VALUES_PROJECTS, 0l, hashSerializer.serialize(projnameHashes));
+			put.add(FAMILY, COLUMN_COUNT_VERSIONS, 0l, Bytes.toBytes(versionHashes.size()));
+			put.add(FAMILY, COLUMN_VALUES_VERSIONS, 0l, hashSerializer.serialize(versionHashes));
+			put.setWriteToWAL(false); // XXX massive performance increase!!!
+			context.write(null, put);
+		}
+
+		private Result getRow(byte[] functionHash) throws IOException {
+			Get get = new Get(functionHash);
+			get.addFamily(FAMILY);
+			return this.indexFunctions2Files.get(get);
 		}
 	}
 
@@ -92,6 +132,8 @@ public class IndexHashfacts2FunctionsCreator implements Runnable {
 			HbaseWrapper.truncate(this.indexHashfacts2Functions);
 			
 			Scan scan = new Scan();
+			scan.setCaching(500);
+			scan.setCacheBlocks(false);
 			HbaseWrapper.launchMapReduceJob(
 					IndexHashfacts2FunctionsCreator.class.getName()+" Job", 
 					"functions", 
@@ -110,6 +152,18 @@ public class IndexHashfacts2FunctionsCreator implements Runnable {
 	}
 	
 	public static class IndexHashfacts2FunctionsTest {
+		private static final byte[] FAMILY = Bytes.toBytes("d");
 		
+		@Test
+		public void testRowScan() throws IOException {
+			Injector i = Guice.createInjector(new CCModule(), new JavaModule());
+			HTable indexFunctions2Files = i.getInstance(Key.get(HTable.class, Names.named("indexFunctions2Files")));
+			
+			Scan scan = new Scan();
+//			scan.addFamily(FAMILY);
+			Iterator<Result> it = indexFunctions2Files.getScanner(scan).iterator();
+			Result result = it.next();
+			Assert.assertTrue(!it.hasNext());
+		}
 	}
 }

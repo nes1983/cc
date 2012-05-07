@@ -86,14 +86,9 @@
 			<param name="classArgument" value="${classArgument}" />
 		</antcall>
 	</target>
-	<target name="indexFunctions">
+	<target name="indexProjects">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctionsCreator" />
-		</antcall>
-	</target>
-	<target name="indexFunctions2Files">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctions2FilesCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexProjectsCreator" />
 		</antcall>
 	</target>
 	<target name="indexFiles2Versions">
@@ -101,9 +96,14 @@
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFiles2VersionsCreator" />
 		</antcall>
 	</target>
-	<target name="indexProjects">
+	<target name="indexFunctions2Files">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexProjectsCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctions2FilesCreator" />
+		</antcall>
+	</target>
+	<target name="indexHashfacts2Functions">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexHashfacts2FunctionsCreator" />
 		</antcall>
 	</target>
 	<target name="indexFactToProject">
@@ -115,7 +115,7 @@
 		<antcall target="indexProjects" />
 		<antcall target="indexFiles2Versions" />
 		<antcall target="indexFunctions2Files" />
-		<antcall target="indexFunctions" />
+		<antcall target="indexHashfacts2Functions" />
 		<antcall target="indexFactToProject" />
 	</target>
 	<target name="executeJar" depends="jar">

@@ -10,8 +10,10 @@ create 'indexProjects', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFiles2Versions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFunctions2Files', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexHashfacts2Functions', {NAME => 'd', COMPRESSION => 'GZ'}
+
 create 'indexFactToProject', {NAME => 'd', COMPRESSION => 'GZ'}
 
+create 'hashfactContent', {NAME => 'd', COMPRESSION => 'GZ'}
 
 -- TRUNCATE --
 truncate 'projects'

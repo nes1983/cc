@@ -4,10 +4,11 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.util.Bytes;
 
 public abstract class Column implements Cloneable {
 	
-	public static final String FAMILY_NAME = "d";
+	public static final byte[] FAMILY_NAME = Bytes.toBytes("d");
 	
 	@Inject @Named("strings")
 	protected HTable strings;

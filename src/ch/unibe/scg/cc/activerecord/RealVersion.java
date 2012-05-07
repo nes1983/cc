@@ -14,7 +14,7 @@ import ch.unibe.scg.cc.util.ByteUtils;
 
 public class RealVersion extends Column implements Version {
 
-	private static final String FILEPATH_NAME = "fp";
+	private static final byte[] FILEPATH_NAME = Bytes.toBytes("fp");
 
 	private String filePath;
 	private CodeFile codeFile;
@@ -32,10 +32,10 @@ public class RealVersion extends Column implements Version {
 
 	@Override
 	public void save(Put put) throws IOException {
-		put.add(Bytes.toBytes(FAMILY_NAME),  new byte[0], 0l, new byte[0]); //dummy add
+		put.add(FAMILY_NAME,  new byte[0], 0l, new byte[0]); //dummy add
         
         Put s = new Put(this.hashFilePath);
-        s.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(FILEPATH_NAME), 0l, Bytes.toBytes(getFilePath()));
+        s.add(FAMILY_NAME, FILEPATH_NAME, 0l, Bytes.toBytes(getFilePath()));
         strings.put(s);
 	}
 

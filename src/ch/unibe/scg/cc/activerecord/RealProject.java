@@ -14,8 +14,8 @@ import com.google.inject.assistedinject.Assisted;
 
 public class RealProject extends Column implements Project {
 
-	private static final String PROJECT_NAME = "pn";
-	private static final String VERSIONNUMBER_NAME = "vn";
+	private static final byte[] PROJECT_NAME = Bytes.toBytes("pn");
+	private static final byte[] VERSIONNUMBER_NAME = Bytes.toBytes("vn");
 	private String name;
 	private Version version;
 	private int versionNumber;
@@ -32,10 +32,10 @@ public class RealProject extends Column implements Project {
 	}
 
 	public void save(Put put) throws IOException {
-		put.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(VERSIONNUMBER_NAME), 0l, Bytes.toBytes(versionNumber));
+		put.add(FAMILY_NAME, VERSIONNUMBER_NAME, 0l, Bytes.toBytes(versionNumber));
         
         Put s = new Put(this.hashName);
-        s.add(Bytes.toBytes(FAMILY_NAME), Bytes.toBytes(PROJECT_NAME), 0l, Bytes.toBytes(getName()));
+        s.add(FAMILY_NAME, PROJECT_NAME, 0l, Bytes.toBytes(getName()));
         strings.put(s);
 	}
 

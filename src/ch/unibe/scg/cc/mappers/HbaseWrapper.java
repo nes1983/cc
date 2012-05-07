@@ -41,6 +41,12 @@ public class HbaseWrapper {
 					mapperClassName, outputKey, outputValue, thisJob);
 			TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClassName,
 					thisJob);
+			
+			// experimental
+//			thisJob.setOutputFormatClass(HFileOutputFormat.class);
+//			HTable table = new HTable(tableNameReducer);
+//			table.setAutoFlush(false);
+//			HFileOutputFormat.configureIncrementalLoad(thisJob, table);
 
 			return thisJob.waitForCompletion(true);
 
@@ -66,8 +72,8 @@ public class HbaseWrapper {
 		thisJob.setMapOutputKeyClass(outputValue);
 		thisJob.setMapOutputValueClass(outputValue);
 
-		thisJob.setInputFormatClass(TableInputFormat.class);
-		thisJob.setOutputFormatClass(TableOutputFormat.class);
+//		thisJob.setInputFormatClass(TableInputFormat.class);// done by TableMapReduceUtil map
+//		thisJob.setOutputFormatClass(TableOutputFormat.class); //done by TableMapReduceUtil reduce
 
 		return thisJob;
 	}

@@ -1,29 +1,34 @@
 package ch.unibe.scg.cc.modules;
 
 import java.security.MessageDigest;
+import java.util.Comparator;
+import java.util.Set;
 
 import javax.inject.Singleton;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.MessageDigestProvider;
+import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.HTableProvider;
+import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealCodeFile;
 import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
-import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
-import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.RealProjectFactory;
 import ch.unibe.scg.cc.activerecord.RealVersion;
 import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.regex.Replace;
+import ch.unibe.scg.cc.util.ByteSetProvider;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
+import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.name.Names;
 
@@ -36,6 +41,8 @@ public class CCModule extends AbstractModule {
 		installHTable("files");
 		installHTable("functions");
 		installHTable("strings");
+		
+		installHTable("hashfactContent");
 		
 		installHTable("indexProjects");
 		installHTable("indexFiles2Versions");
@@ -50,6 +57,11 @@ public class CCModule extends AbstractModule {
 				JavaType1ReplacerFactory.class);
 		bind(Configuration.class).toProvider(ConfigurationProvider.class).in(
 				Singleton.class);
+		bind(new TypeLiteral<Comparator<byte[]>>(){}).
+				toInstance(Bytes.BYTES_COMPARATOR);
+		bind(new TypeLiteral<Set<byte[]>>(){}).
+				toProvider(ByteSetProvider.class);
+
 
 		install(new FactoryModuleBuilder().implement(Project.class,
 				RealProject.class).build(RealProjectFactory.class));

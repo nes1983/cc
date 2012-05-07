@@ -8,6 +8,10 @@ import java.util.TreeSet;
 import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.util.Bytes;
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.google.common.primitives.UnsignedBytes;
 
 public class HashSerializer {
 	
@@ -35,7 +39,8 @@ public class HashSerializer {
 		
 		int tgtOffset = 0;
 		for(byte[] b : set) {
-			Bytes.writeByteArray(result, tgtOffset, b, 0, size);
+			System.arraycopy(b, 0, result, tgtOffset, size);
+//			Bytes.writeByteArray(result, tgtOffset, b, 0, size);
 			tgtOffset += size;
 		}
 		return result;
@@ -65,9 +70,21 @@ public class HashSerializer {
 		
 		for(int i=0; i*sizeOfSingleEntry < array.length; i++) {
 			byte[] target = new byte[sizeOfSingleEntry];
-			Bytes.writeByteArray(target, 0, array, i*sizeOfSingleEntry, sizeOfSingleEntry);
+			int offset = i*sizeOfSingleEntry;
+			System.arraycopy(array, offset, target, 0, sizeOfSingleEntry);
 			result.add(target);
 		}
 		return Collections.unmodifiableSet(result);
+	}
+	
+	public static class HashSerializerTest {
+		@Test
+		public void testDeserialize() {
+			HashSerializer hs = new HashSerializer(UnsignedBytes.lexicographicalComparator());
+			byte[] array = new byte[] {0,1,2,3,4,5,6,7};
+			Set<byte[]> s = hs.deserialize(array, 2);
+			byte[] b = hs.serialize(s);
+			Assert.assertArrayEquals(array, b);
+		}
 	}
 }
