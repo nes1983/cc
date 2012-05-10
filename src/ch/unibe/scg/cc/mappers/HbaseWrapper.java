@@ -8,16 +8,15 @@ import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.hadoop.hbase.mapreduce.TableInputFormat;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
-import org.apache.hadoop.hbase.mapreduce.TableMapper;
-import org.apache.hadoop.hbase.mapreduce.TableOutputFormat;
-import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
+
+import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
+import ch.unibe.scg.cc.mappers.MRMain.MRMainReducer;
 
 public class HbaseWrapper {
 	private static Configuration configuration = null;
@@ -26,27 +25,27 @@ public class HbaseWrapper {
 	public static boolean launchMapReduceJob(String jobName, 
 			String tableNameMapper, String tableNameReducer,
 			Scan tableScanner, Class<?> jobClassName,
-			Class<? extends TableMapper> mapperClassName,
-			Class<? extends TableReducer> reducerClassName,
+			String mapperClassName,
+			String reducerClassName,
 			Class<? extends WritableComparable> outputKey,
 			Class<? extends Writable> outputValue) {
 
 		Job thisJob;
+		Class<MRMainMapper> mapperClass = MRMainMapper.class;
+		Class<MRMainReducer> reducerClass = MRMainReducer.class;
+		
 		try {
 			thisJob = initMapReduceJob(jobName, tableScanner,
-					jobClassName, mapperClassName, reducerClassName, outputKey,
+					jobClassName, mapperClass, reducerClass, outputKey,
 					outputValue);
 
 			TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner,
-					mapperClassName, outputKey, outputValue, thisJob);
-			TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClassName,
+					mapperClass, outputKey, outputValue, thisJob);
+			TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass,
 					thisJob);
 			
-			// experimental
-//			thisJob.setOutputFormatClass(HFileOutputFormat.class);
-//			HTable table = new HTable(tableNameReducer);
-//			table.setAutoFlush(false);
-//			HFileOutputFormat.configureIncrementalLoad(thisJob, table);
+			thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
+			thisJob.getConfiguration().set("GuiceReducerAnnotation", reducerClassName);
 
 			return thisJob.waitForCompletion(true);
 

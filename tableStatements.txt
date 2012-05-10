@@ -6,7 +6,7 @@ create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
 
 
-create 'indexProjects', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexVersions2Projects', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFiles2Versions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexFunctions2Files', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'indexHashfacts2Functions', {NAME => 'd', COMPRESSION => 'GZ'}

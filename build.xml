@@ -80,43 +80,37 @@
 	</target>
 	<target name="indexCreator">
 		<antcall target="jar">
-			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MapMain" />
+			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MRMain" />
 		</antcall>
 		<antcall target="uploadJar">
 			<param name="classArgument" value="${classArgument}" />
 		</antcall>
 	</target>
-	<target name="indexProjects">
+	<target name="indexVersions2Projects">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexProjectsCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexVersions2Projects" />
 		</antcall>
 	</target>
 	<target name="indexFiles2Versions">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFiles2VersionsCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFiles2Versions" />
 		</antcall>
 	</target>
 	<target name="indexFunctions2Files">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctions2FilesCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctions2Files" />
 		</antcall>
 	</target>
 	<target name="indexHashfacts2Functions">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexHashfacts2FunctionsCreator" />
-		</antcall>
-	</target>
-	<target name="indexFactToProject">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFactToProjectCreator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexHashfacts2Functions" />
 		</antcall>
 	</target>
 	<target name="indexAllTables">
-		<antcall target="indexProjects" />
+		<antcall target="indexVersions2Projects" />
 		<antcall target="indexFiles2Versions" />
 		<antcall target="indexFunctions2Files" />
 		<antcall target="indexHashfacts2Functions" />
-		<antcall target="indexFactToProject" />
 	</target>
 	<target name="executeJar" depends="jar">
 		<java jar="cc.jar" fork="true"/>

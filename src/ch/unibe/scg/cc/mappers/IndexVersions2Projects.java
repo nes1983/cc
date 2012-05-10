@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
 import junit.framework.Assert;
 
@@ -14,16 +13,9 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.hadoop.hbase.filter.CompareFilter.CompareOp;
-import org.apache.hadoop.hbase.filter.BinaryComparator;
-import org.apache.hadoop.hbase.filter.Filter;
-import org.apache.hadoop.hbase.filter.RowFilter;
-import org.apache.hadoop.hbase.filter.WritableByteArrayComparable;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
-import org.apache.hadoop.hbase.mapreduce.TableMapper;
-import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.hadoop.io.BytesWritable;
+import org.apache.hadoop.mapreduce.Reducer.Context;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.modules.CCModule;
@@ -34,31 +26,27 @@ import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 
-public class IndexProjectsCreator implements Runnable {
-	
-	HTable indexProjects;
-	
+public class IndexVersions2Projects implements Runnable {
 	@Inject
-	IndexProjectsCreator(@Named("indexProjects") HTable indexProjects) {
-		this.indexProjects = indexProjects;
-	}
-
-	public static class IndexProjectsMapper extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		
-		BytesWritable empty = new BytesWritable(new byte[] {});
-		
-		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException, InterruptedException {
+	private GuiceResource resource;
+	
+	public static class IndexVersions2ProjectsMapper extends GuiceMapper {
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		void map(ImmutableBytesWritable uselessKey, Result value, org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException, InterruptedException {
 			byte[] key = value.getRow();
 			byte[] indexKey = Bytes.add(Bytes.tail(key, 20), Bytes.head(key, 20));
-			byte[] versionNumber = value.getValue(Bytes.toBytes("d"), Bytes.toBytes("vn"));
+			byte[] versionNumber = value.getValue(GuiceResource.FAMILY, Bytes.toBytes("vn"));
 			context.write(new ImmutableBytesWritable(indexKey), new ImmutableBytesWritable(versionNumber));
 		}
 	}
 	
-	public static class IndexProjectsReducer extends TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
-		public void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context) throws IOException, InterruptedException {
-			Put put = new Put(key.get());
-			put.add(Bytes.toBytes("d"), Bytes.toBytes("vn"), 0l, values.iterator().next().get());
+	public static class IndexVersions2ProjectsReducer extends GuiceReducer {
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context) throws IOException, InterruptedException {
+			Put put = resource.createPut(key.get());
+			put.add(GuiceResource.FAMILY, Bytes.toBytes("vn"), 0l, values.iterator().next().get());
 			context.write(key, put);
 		}
 	}
@@ -66,21 +54,23 @@ public class IndexProjectsCreator implements Runnable {
 	@Override
 	public void run() {
 		try {
-			HbaseWrapper.truncate(this.indexProjects);
+			
+			HbaseWrapper.truncate(resource.indexProjects);
 			
 			Scan scan = new Scan();
 			HbaseWrapper.launchMapReduceJob(
-					IndexProjectsCreator.class.getName()+" Job", 
+					IndexVersions2Projects.class.getName()+" Job", 
 					"projects", 
-					"indexProjects",
+					"indexVersions2Projects",
 					scan,
-					IndexProjectsCreator.class, 
-					IndexProjectsMapper.class, 
-					IndexProjectsReducer.class, 
+					IndexVersions2Projects.class, 
+					"IndexVersions2ProjectsMapper", 
+					"IndexVersions2ProjectsReducer", 
 					ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 			
-			indexProjects.flushCommits();
+			resource.indexProjects.flushCommits();
+			
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -91,7 +81,7 @@ public class IndexProjectsCreator implements Runnable {
 		public void testIndex() throws IOException {
 			Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 			HTable projects = i.getInstance(Key.get(HTable.class, Names.named("projects")));
-			HTable indexProjects = i.getInstance(Key.get(HTable.class, Names.named("indexProjects")));
+			HTable indexProjects = i.getInstance(Key.get(HTable.class, Names.named("indexVersions2Projects")));
 			
 			Scan scan = new Scan();
 			ResultScanner rsProjects = projects.getScanner(scan);
