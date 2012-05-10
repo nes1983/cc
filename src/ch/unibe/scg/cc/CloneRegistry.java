@@ -58,7 +58,7 @@ public class CloneRegistry {
 		this.locationProvider = locationProvider;
 	}
 	
-	public void register(byte[] hash, String snippet, Function function, Location location, int type) {
+	public void register(byte[] hash, String snippet, Function function, Location location, byte type) {
 		HashFact fact = hashFactProvider.get();
 		fact.setHash(hash);
 		fact.setSnippet(snippet);
@@ -69,7 +69,7 @@ public class CloneRegistry {
 	}
 
 	public void register(byte[] hash, String snippet, Function function,
-			int from, int length, int type) {
+			int from, int length, byte type) {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
 		this.register(hash, snippet, function, location, type);

@@ -26,9 +26,9 @@ public class RegisterSnippetTest {
 		Function function = new Function();
 
 		byte[] bytes = new byte[] { 0 };
-		registry.register(bytes, "", function, null, 3);
+		registry.register(bytes, "", function, null, (byte) 0x03);
 
-		verify(hashFact).setType(3);
+		verify(hashFact).setType((byte) 0x03);
 	}
 
 }

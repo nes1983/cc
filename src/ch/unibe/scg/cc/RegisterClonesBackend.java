@@ -40,7 +40,7 @@ public class RegisterClonesBackend {
 	 * @param location
 	 */
 	public void registerFunction(String lines, RealProject project,
-			Function function, int type) {
+			Function function, byte type) {
 		StringOfLines stringOfLines = stringOfLinesFactory.make(lines);
 		registerConsecutiveLinesOfCode(stringOfLines, function, type);
 	}
@@ -59,12 +59,12 @@ public class RegisterClonesBackend {
 	 * @param location
 	 */
 	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, 
-			Function function, int type) {
+			Function function, byte type) {
 		registerConsecutiveLinesOfCode(stringOfLines, function, standardHasher, type);
 	}
 
 	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, 
-			Function function, Hasher hasher, int type) {
+			Function function, Hasher hasher, byte type) {
 		assert stringOfLines.getNumberOfLines() >= MINIMUM_LINES;
 		
 		
@@ -79,7 +79,7 @@ public class RegisterClonesBackend {
 		}
 	}
 
-	private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, int type) {
+	private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, byte type) {
 
 		byte[] hash;
 		try {

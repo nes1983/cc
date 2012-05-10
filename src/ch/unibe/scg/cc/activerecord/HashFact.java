@@ -20,7 +20,7 @@ public class HashFact extends Column {
 	private RealProject project;
 	private Function function;
 	private Location location;
-	private int type;
+	private byte type;
 	
 	StandardHasher standardHasher;
 
@@ -36,7 +36,7 @@ public class HashFact extends Column {
 	}
 
 	public byte[] getHash() {
-		return Bytes.add(Bytes.toBytes(type), hash);
+		return Bytes.add(new byte[] {type}, hash);
 	}
 
 	public void setHash(byte[] hash) {
@@ -68,11 +68,11 @@ public class HashFact extends Column {
 		this.function = function;
 	}
 
-	public int getType() {
+	public byte getType() {
 		return type;
 	}
 
-	public void setType(int type) {
+	public void setType(byte type) {
 		this.type = type;
 	}
 

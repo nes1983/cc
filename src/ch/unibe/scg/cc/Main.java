@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.SQLException;
 
 import org.apache.commons.lang3.time.StopWatch;
 import org.apache.commons.vfs2.FileObject;
@@ -15,9 +14,9 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 
 public class Main {
-	public static final int TYPE_1_CLONE = 1;
-	public static final int TYPE_2_CLONE = 2;
-	public static final int TYPE_3_CLONE = 3;
+	public static final byte TYPE_1_CLONE = 0x01;
+	public static final byte TYPE_2_CLONE = 0x02;
+	public static final byte TYPE_3_CLONE = 0x03;
 
 
 	public static void main(String[] args) throws  IOException {
