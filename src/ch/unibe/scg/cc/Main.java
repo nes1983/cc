@@ -8,6 +8,7 @@ import org.apache.commons.vfs2.FileObject;
 import org.apache.commons.vfs2.VFS;
 
 import ch.unibe.scg.cc.modules.CCModule;
+import ch.unibe.scg.cc.modules.HBaseModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
 import com.google.inject.Guice;
@@ -22,7 +23,8 @@ public class Main {
 	public static void main(String[] args) throws  IOException {
 		Injector injector = Guice.createInjector(
 				new JavaModule(), 
-				new CCModule()
+				new CCModule(),
+				new HBaseModule()
 		);
 		ProjectWalker walker = injector.getInstance(ProjectWalker.class);
 		stoppedWalk(walker);

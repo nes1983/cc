@@ -39,7 +39,7 @@ public class MRMain {
 		@Override
 		public void setup(Context context) {
 			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule());
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = injector.getInstance(Key.get(GuiceMapper.class, Names.named(clazz)));
 		}
 		
@@ -56,7 +56,7 @@ public class MRMain {
 		@Override
 		public void setup(Context context) {
 			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule());
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = injector.getInstance(Key.get(GuiceTableMapper.class, Names.named(clazz)));
 		}
 		
@@ -73,7 +73,7 @@ public class MRMain {
 		@Override
 		protected void setup(Context context) {
 			String clazz = context.getConfiguration().get("GuiceReducerAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule());
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			reducer = injector.getInstance(Key.get(GuiceTableReducer.class, Names.named(clazz)));
 		}
 		

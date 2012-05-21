@@ -16,6 +16,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.Main;
 import ch.unibe.scg.cc.modules.CCModule;
+import ch.unibe.scg.cc.modules.HBaseModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
 import com.google.inject.Guice;
@@ -27,7 +28,7 @@ public class IndexTopHashfacts {
 	
 	public static void main(String[] args) throws IOException {
 		
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
+		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 		HTable indexHashfacts2Functions = i.getInstance(Key.get(HTable.class, Names.named("indexHashfacts2Functions")));
 		HTable hashfactContent = i.getInstance(Key.get(HTable.class, Names.named("hashfactContent")));
 
