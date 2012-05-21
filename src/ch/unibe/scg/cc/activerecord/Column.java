@@ -14,12 +14,4 @@ public abstract class Column implements Cloneable {
 	@Inject(optional=true) @Named("strings")
 	protected HTable strings;
 	
-	public Object clone()  {
-		try {
-			return super.clone();
-		} catch (CloneNotSupportedException e) {
-			throw new AssertionError();
-		}
-	}
-	
 }
