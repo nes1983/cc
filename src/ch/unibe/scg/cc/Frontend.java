@@ -14,33 +14,35 @@ import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 public class Frontend {
-	 
-	@Inject
+
 	StandardHasher standardHasher;
-
-	@Inject
 	ShingleHasher shingleHasher;
-	
-	@Inject @Type1
-	protected PhaseFrontent type1;
-	
-	@Inject @Type2
-	protected PhaseFrontent type2;
-	
-	@Inject
+	protected PhaseFrontend type1;
+	protected PhaseFrontend type2;
 	protected StringOfLinesFactory stringOfLinesFactory;
-	
-	@Inject 
 	protected RegisterClonesBackend backend;
-	
-	@Inject
 	protected Tokenizer tokenizer;
-
-	@Inject
 	RealCodeFileFactory codeFileFactory;
+	RealVersionFactory versionFactory;
 	
 	@Inject
-	RealVersionFactory versionFactory;
+	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher,
+			@Type1 PhaseFrontend type1, @Type2 PhaseFrontend type2,
+			StringOfLinesFactory stringOfLinesFactory,
+			RegisterClonesBackend backend, Tokenizer tokenizer,
+			RealCodeFileFactory codeFileFactory,
+			RealVersionFactory versionFactory) {
+		super();
+		this.standardHasher = standardHasher;
+		this.shingleHasher = shingleHasher;
+		this.type1 = type1;
+		this.type2 = type2;
+		this.stringOfLinesFactory = stringOfLinesFactory;
+		this.backend = backend;
+		this.tokenizer = tokenizer;
+		this.codeFileFactory = codeFileFactory;
+		this.versionFactory = versionFactory;
+	}
 	
 	@ForTestingOnly
 	public void type1Normalize(StringBuilder fileContents) {

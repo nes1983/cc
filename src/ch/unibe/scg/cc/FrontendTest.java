@@ -1,61 +1,49 @@
 package ch.unibe.scg.cc;
 
-import static org.junit.Assert.*;
-
-import java.sql.Connection;
-import java.sql.SQLClientInfoException;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
-import ch.unibe.scg.cc.modules.CCModule;
-import ch.unibe.scg.cc.modules.JavaModule;
-
-import com.google.inject.AbstractModule;
-import com.google.inject.Guice;
-import com.google.inject.Module;
-
-import static org.mockito.Mockito.*;
-import static org.hamcrest.Matchers.*;
+import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 
 @RunWith(JExample.class)
 public class FrontendTest {
+	
+	PhaseFrontend phaseFrontend = mock(PhaseFrontend.class);
+	Tokenizer tokenizer = mock(Tokenizer.class);
 
-	final Connection connection = mock(Connection.class);
+	@Test
+	public void testType2() {
+		Normalizer p1 = new Normalizer(new JavaType1ReplacerFactory().get());
+		Normalizer p2 = new Normalizer(new Type2ReplacerFactory().get());
+		
+		Frontend frontend = new Frontend(null, null, p1, p2, null, null, null, null, null);
+		String s = frontend.type2NormalForm("\npublic    static void doIt(char[] arg) {\n");
+		
+		assertThat(s, is("\nt t t(t[] t) {\n"));
+	}
 	
 	@Test
-	public Frontend makeFrontend() {
-
-		Frontend frontend = Guice.createInjector(testingModule(), new CCModule(), new JavaModule()).getInstance(Frontend.class);
-		assertThat(frontend.tokenizer, notNullValue());
+	public Frontend testNormalize() {
+		Frontend frontend = new Frontend(null, null, phaseFrontend, phaseFrontend, null, null, null, null, null);
+		frontend.type1NormalForm("\npublic    static void doIt(char[] arg) {\n");
+		verify(phaseFrontend).normalize(any(StringBuilder.class));
 		return frontend;
 	}
 	
-	@Given("makeFrontend")
-	public Frontend testNormalize1(Frontend frontend) {
-		String normalized = frontend.type1NormalForm("\npublic    static void doIt(char[] arg) {\n");
-		assertThat(normalized, is("\nstatic void doIt(char[] arg) {\n"));
-		return frontend;
-	}
-	
-	@Given("testNormalize1") 
-	public Frontend testNormalize2(Frontend frontend) {
-		String normalized = frontend.type2NormalForm("\npublic    static void doIt(char[] arg) {\n");
-		assertThat(normalized, is("\nt t t(t[] t) {\n"));
-		return frontend;
-	}
-	
-	Module testingModule() {
-		return new AbstractModule() {
-
-			@Override
-			protected void configure() {
-				bind(Connection.class).toInstance(connection);	
-			}
-		};
+	@Test
+	public void testTokenizer() {
+		Frontend frontend = new Frontend(null, null, phaseFrontend, null, null, null, tokenizer, null, null);
+		CodeFile cf = mock(CodeFile.class);
+		frontend.registerWithBuilder(new StringBuilder("\npublic    static void doIt(char[] arg) {\n"), "MickeyPaint.java", cf);
+		verify(tokenizer).tokenize(eq("\npublic    static void doIt(char[] arg) {\n"), eq("MickeyPaint.java"));
 	}
 
 }

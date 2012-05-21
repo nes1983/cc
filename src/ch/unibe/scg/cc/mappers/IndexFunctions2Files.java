@@ -5,23 +5,31 @@ import java.util.Iterator;
 import java.util.Set;
 
 import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Provider;
 
+import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.hadoop.mapreduce.Reducer.Context;
+
+import ch.unibe.scg.cc.util.HashSerializer;
+import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class IndexFunctions2Files implements Runnable {
 
-	@Inject
-	GuiceResource resource;
+	final HTable indexFunctions2Files;
 	
-	public static class IndexFunctions2FilesMapper extends GuiceMapper {
-		@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Inject
+	IndexFunctions2Files(@Named("indexFunctions2Files") HTable indexFunctions2Files) {
+		this.indexFunctions2Files = indexFunctions2Files;
+	}
+	
+	public static class IndexFunctions2FilesMapper<KEYOUT,VALUEOUT> extends GuiceTableMapper<KEYOUT,VALUEOUT> {
 		@Override
-		void map(ImmutableBytesWritable uselessKey, Result value,
+		public void map(ImmutableBytesWritable uselessKey, Result value,
 				org.apache.hadoop.mapreduce.Mapper.Context context)
 				throws IOException, InterruptedException {
 			byte[] key = value.getRow();
@@ -33,16 +41,31 @@ public class IndexFunctions2Files implements Runnable {
 		}
 	}
 
-	public static class IndexFunctions2FilesReducer extends GuiceReducer {
-		@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static class IndexFunctions2FilesReducer extends GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
+		final HashSerializer hashSerializer;
+		final Provider<Set<byte[]>> byteSetProvider;
+		final HTable indexFiles2Versions;
+
+		@Inject
+		IndexFunctions2FilesReducer(
+				@Named("indexFunctions2Files") HTable indexFunctions2Files,
+				@Named("indexFiles2Versions") HTable indexFiles2Versions,
+				HashSerializer hashSerializer,
+				Provider<Set<byte[]>> byteSetProvider) {
+			super(indexFunctions2Files);
+			this.indexFiles2Versions = indexFiles2Versions;
+			this.hashSerializer = hashSerializer;
+			this.byteSetProvider = byteSetProvider;
+		}
+
 		@Override
 		public void reduce(ImmutableBytesWritable functionHash,
 				Iterable<ImmutableBytesWritable> fileContentHashes, Context context)
 				throws IOException, InterruptedException {
 			Iterator<ImmutableBytesWritable> i = fileContentHashes.iterator();
-			Set<byte[]> filecontentHashes = resource.byteSetProvider.get();
-			Set<byte[]> projnameHashes = resource.byteSetProvider.get();
-			Set<byte[]> versionHashes = resource.byteSetProvider.get();
+			Set<byte[]> filecontentHashes = byteSetProvider.get();
+			Set<byte[]> projnameHashes = byteSetProvider.get();
+			Set<byte[]> versionHashes = byteSetProvider.get();
 			
 			while (i.hasNext()) {
 				byte[] cur = i.next().get();
@@ -50,23 +73,23 @@ public class IndexFunctions2Files implements Runnable {
 				Result row = getRow(fileContentHash);
 				byte[] pnh = getColumnValue(row, GuiceResource.COLUMN_VALUES_PROJECTS);
 				byte[] vh = getColumnValue(row, GuiceResource.COLUMN_VALUES_VERSIONS);
-				projnameHashes.addAll(resource.hashSerializer.deserialize(pnh, 20)); // XXX possible performance loss
-				versionHashes.addAll(resource.hashSerializer.deserialize(vh, 20)); // XXX possible performance loss
-				filecontentHashes.addAll(resource.hashSerializer.deserialize(fileContentHash, 20)); // XXX possible performance loss
+				projnameHashes.addAll(hashSerializer.deserialize(pnh, 20)); // XXX possible performance loss
+				versionHashes.addAll(hashSerializer.deserialize(vh, 20)); // XXX possible performance loss
+				filecontentHashes.addAll(hashSerializer.deserialize(fileContentHash, 20)); // XXX possible performance loss
 			}
 
 			Put put = new Put(functionHash.get());
 			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_FILES, 0l, Bytes.toBytes(filecontentHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_FILES, 0l, resource.hashSerializer.serialize(filecontentHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_FILES, 0l, hashSerializer.serialize(filecontentHashes));
 			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_PROJECTS, 0l, Bytes.toBytes(projnameHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_PROJECTS, 0l, resource.hashSerializer.serialize(projnameHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_PROJECTS, 0l, hashSerializer.serialize(projnameHashes));
 			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_VERSIONS, 0l, Bytes.toBytes(versionHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_VERSIONS, 0l, resource.hashSerializer.serialize(versionHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_VERSIONS, 0l, hashSerializer.serialize(versionHashes));
 			context.write(functionHash, put);
 		}
 		
 		private Result getRow(byte[] fileContentHash) throws IOException {
-			Iterator<Result> i = resource.indexFiles2Versions.getScanner(
+			Iterator<Result> i = indexFiles2Versions.getScanner(
 					new Scan(fileContentHash)).iterator();
 			Result result = i.next();
 			assert !i.hasNext();
@@ -81,12 +104,12 @@ public class IndexFunctions2Files implements Runnable {
 	@Override
 	public void run() {
 		try {
-			HbaseWrapper.truncate(resource.indexFunctions2Files);
+			HbaseWrapper.truncate(indexFunctions2Files);
 
 			Scan scan = new Scan();
 			scan.setCaching(500);
 			scan.setCacheBlocks(false);
-			HbaseWrapper.launchMapReduceJob(
+			HbaseWrapper.launchTableMapReduceJob(
 					IndexFunctions2Files.class.getName() + " Job",
 					"files", "indexFunctions2Files", scan,
 					IndexFunctions2Files.class,
@@ -94,9 +117,13 @@ public class IndexFunctions2Files implements Runnable {
 					"IndexFunctions2FilesReducer",
 					ImmutableBytesWritable.class, ImmutableBytesWritable.class);
 
-			resource.indexFunctions2Files.flushCommits();
+			indexFunctions2Files.flushCommits();
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new WrappedRuntimeException(e.getCause());
+		} catch (InterruptedException e) {
+			throw new WrappedRuntimeException(e.getCause());
+		} catch (ClassNotFoundException e) {
+			throw new WrappedRuntimeException(e.getCause());
 		}
 	}
 

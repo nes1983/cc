@@ -14,7 +14,7 @@ import ch.unibe.scg.cc.regex.Replace;
 import com.google.inject.Provider;
 
 @Singleton
-public abstract class ReplacerFactory implements Provider<Replace[]> {
+public abstract class ReplacerProvider implements Provider<Replace[]> {
 
 	final Replace[] type = new Replace[] {};
 	@Override

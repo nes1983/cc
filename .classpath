@@ -40,8 +40,8 @@
 			<attribute name="javadoc_location" value="http://hawtdispatch.fusesource.org/versions/1.7/maven/hawtdispatch/apidocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/hadoop-core-1.0.1.jar"/>
-	<classpathentry kind="lib" path="libs/hbase-0.92.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-core-1.0.1.jar" sourcepath="libs/hadoop-1.0.1.zip"/>
+	<classpathentry kind="lib" path="libs/hbase-0.92.0.jar" sourcepath="libs/hbase-0.92.1.zip"/>
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>

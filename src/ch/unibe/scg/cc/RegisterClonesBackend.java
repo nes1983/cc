@@ -17,19 +17,23 @@ public class RegisterClonesBackend {
 	public final int MINIMUM_LINES = 5;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 	final byte[] emptySHA1Key = new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-
-	@Inject
 	CloneRegistry registry;
-
-	@Inject
 	StandardHasher standardHasher;
-
-	@Inject
 	ShingleHasher shingleHasher;
+	StringOfLinesFactory stringOfLinesFactory;
 
 	@Inject
-	StringOfLinesFactory stringOfLinesFactory;
+	public RegisterClonesBackend(CloneRegistry registry,
+			StandardHasher standardHasher, ShingleHasher shingleHasher,
+			StringOfLinesFactory stringOfLinesFactory) {
+		super();
+		this.registry = registry;
+		this.standardHasher = standardHasher;
+		this.shingleHasher = shingleHasher;
+		this.stringOfLinesFactory = stringOfLinesFactory;
+	}
+
+
 	
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic

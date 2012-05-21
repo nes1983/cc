@@ -6,7 +6,7 @@ import javax.inject.Singleton;
 import ch.unibe.scg.cc.regex.Replace;
 
 @Singleton
-public class Normalizer implements PhaseFrontent {
+public class Normalizer implements PhaseFrontend {
 
 	final Replace[] replacers;
 

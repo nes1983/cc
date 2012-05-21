@@ -23,7 +23,6 @@ import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Mapper.Context;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
@@ -40,41 +39,31 @@ import ch.unibe.scg.cc.activerecord.RealVersion;
 import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.mappers.inputformats.ZipFileInputFormat;
-import ch.unibe.scg.cc.modules.CCModule;
-import ch.unibe.scg.cc.modules.JavaModule;
+import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
-import com.google.inject.Guice;
-import com.google.inject.Injector;
+public class TablePopulator implements Runnable {
 
-public class TablePopulator {
-	public static class Map extends Mapper<Text, BytesWritable, Text, IntWritable> {
-		GuicePopulateMapper gpm;
-		
-		Map() {
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule());
-			this.gpm = injector.getInstance(GuicePopulateMapper.class);
+	TablePopulator() {}
+	
+	public void run() {
+		try {
+			Job job = HbaseWrapper.createMapJob("populate", TablePopulator.class, "TablePopulatorMapper", Text.class, IntWritable.class);
+			job.setInputFormatClass(ZipFileInputFormat.class);
+			job.setOutputFormatClass(NullOutputFormat.class);
+			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
+			job.waitForCompletion(true);
+		} catch (IOException e) {
+			throw new WrappedRuntimeException(e);
+		} catch (InterruptedException e) {
+			throw new WrappedRuntimeException(e);
+		} catch (ClassNotFoundException e) {
+			throw new WrappedRuntimeException(e);
 		}
-		
-		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
-			gpm.map(key, value, context);
-		}
-	}
-
-	public static void main(String[] args) throws Exception {
-		Configuration conf = HBaseConfiguration.create();
-
-		Job job = new Job(conf, "populate");
-		job.setJarByClass(TablePopulator.class);
-		job.setMapperClass(Map.class);
-		job.setInputFormatClass(ZipFileInputFormat.class);
-		job.setOutputFormatClass(NullOutputFormat.class);
-		FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
-		job.waitForCompletion(true);
 	}
 	
-	public static class GuicePopulateMapper {
+	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		@Inject
-		GuicePopulateMapper(@Java Frontend javaFrontend, @Named("projects") HTable projects,
+		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("projects") HTable projects,
 				@Named("versions") HTable versions,  @Named("files") HTable codefiles, @Named("functions") HTable functions,
 				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,  
 				RealProjectFactory projectFactory,
@@ -93,7 +82,6 @@ public class TablePopulator {
 			this.charsetDetector = charsetDetector;
 		}
 
-		
 		final Frontend javaFrontend;
 		final HTable projects, versions,  codefiles, functions, strings, hashfactContent;
 		final RealProjectFactory projectFactory;
@@ -173,7 +161,7 @@ public class TablePopulator {
 			when(versionFactory.create(eq("postgresql/simon/myfile.java"), any(CodeFile.class))).thenReturn(version);
 			when(projectFactory.create(eq("postgresql"), eq(version), anyInt())).thenReturn(project);
 			
-			GuicePopulateMapper mapper = new GuicePopulateMapper(javaFrontend, projects, versions, codefiles, 
+			TablePopulatorMapper mapper = new TablePopulatorMapper(javaFrontend, projects, versions, codefiles, 
 						functions, strings, hashfactContent, projectFactory, versionFactory, charsetDetector);
 			
 			mapper.map(new Text("postgresql/simon/myfile.java"), new BytesWritable(new byte[] {0x20}), null);

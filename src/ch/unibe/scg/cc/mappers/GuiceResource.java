@@ -1,18 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
-import java.util.Set;
-
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.inject.Provider;
-
-import org.apache.hadoop.hbase.client.HTable;
-import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.BytesWritable;
-
-import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.util.HashSerializer;
 
 /**
  * provides all useful resources to the mapper and reducers
@@ -32,6 +21,7 @@ public class GuiceResource {
 	public static final byte[] COLUMN_COUNT_FUNCTIONS = Bytes.toBytes("nf");
 	public static final byte[] COLUMN_VALUES_FUNCTIONS = Bytes.toBytes("vf");
 	
+	/* ONLY FOR FAST COPY/PASTE...
 	final HTable versions;
 	final HTable codefiles;
 	final HTable functions;
@@ -80,4 +70,5 @@ public class GuiceResource {
 	Put createPut(byte[] rowKey) {
 		return this.putFactory.create(rowKey);
 	}
+	*/
 }

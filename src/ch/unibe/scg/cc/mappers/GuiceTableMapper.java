@@ -2,9 +2,10 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
-import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.hbase.client.Result;
+import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 
-public abstract class GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends GuiceMapper<ImmutableBytesWritable, Result, KEYOUT, VALUEOUT> {
 	
 	@Override
 	public void setup(Context context) throws IOException, InterruptedException {
@@ -17,7 +18,7 @@ public abstract class GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapp
 	}
 	
 	@Override
-	public void map(KEYIN key, VALUEIN value, Context context) throws IOException, InterruptedException {
+	public void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
 		super.map(key, value, context);
 	}
 }

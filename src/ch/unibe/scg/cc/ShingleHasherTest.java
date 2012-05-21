@@ -5,8 +5,6 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
 
-import java.sql.Connection;
-
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,22 +12,15 @@ import org.junit.runner.RunWith;
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.modules.CCModule;
+import ch.unibe.scg.cc.modules.JavaModule;
 
-import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
-import static org.mockito.Mockito.*;
 @RunWith(JExample.class)
 public class ShingleHasherTest {
 
 	@Test
 	public ShingleHasher test() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(), new AbstractModule() {
-
-			final Connection connection = mock(Connection.class);
-			@Override
-			protected void configure() {
-				bind(Connection.class).toInstance(connection);
-			}}).getInstance(
+		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(
 				ShingleHasher.class);
 
 		String[] shingles = ss

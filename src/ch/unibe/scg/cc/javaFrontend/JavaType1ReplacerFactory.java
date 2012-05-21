@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import javax.inject.Singleton;
 
 import jregex.Pattern;
-import ch.unibe.scg.cc.ReplacerFactory;
+import ch.unibe.scg.cc.ReplacerProvider;
 import ch.unibe.scg.cc.regex.Replace;
 
 import com.google.inject.Provider;
 
 @Singleton
-public class JavaType1ReplacerFactory extends ReplacerFactory implements Provider<Replace[]> { 
+public class JavaType1ReplacerFactory extends ReplacerProvider implements Provider<Replace[]> { 
 
 	/**
 	 * Hides deep function definitions

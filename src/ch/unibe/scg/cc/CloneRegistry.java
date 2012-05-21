@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.io.IOException;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Provider;
 import javax.inject.Singleton;
@@ -12,6 +11,8 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
+
+import com.google.inject.Inject;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
@@ -34,22 +35,22 @@ public class CloneRegistry {
 	
 	final Provider<Location> locationProvider;
 
-	@Inject @Named("projects")
+	@Inject(optional=true) @Named("projects")
 	HTable projects;
 
-	@Inject @Named("versions")
+	@Inject(optional=true) @Named("versions")
 	HTable versions;
 	
-	@Inject @Named("files")
+	@Inject(optional=true) @Named("files")
 	HTable codefiles;
 	
-	@Inject @Named("functions")
+	@Inject(optional=true) @Named("functions")
 	HTable functions;
 	
-	@Inject @Named("strings")
+	@Inject(optional=true) @Named("strings")
 	HTable strings;
 	
-	@Inject @Named("hashfactContent")
+	@Inject(optional=true) @Named("hashfactContent")
 	HTable hashfactContent;
 	
 	@Inject

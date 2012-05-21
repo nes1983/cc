@@ -1,6 +1,6 @@
 package ch.unibe.scg.cc;
 
-public interface PhaseFrontent {
+public interface PhaseFrontend {
 
 	void normalize(StringBuilder fileContents);
 

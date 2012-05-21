@@ -15,7 +15,7 @@ import ch.unibe.scg.cc.regex.Replace;
 public class Type2ReplacerFactoryTest {
 
 	@Test
-	public PhaseFrontent testFactory() {
+	public PhaseFrontend testFactory() {
 		Type2ReplacerFactory factory = new Type2ReplacerFactory();
 		Replace[] replaces = factory.get();
 		assertThat(replaces, is(arrayWithSize(3)));
@@ -24,7 +24,7 @@ public class Type2ReplacerFactoryTest {
 	}
 	
 	@Given("testFactory")
-	public PhaseFrontent testNormalize(PhaseFrontent phase) {
+	public PhaseFrontend testNormalize(PhaseFrontend phase) {
 		StringBuilder sb = new StringBuilder(sampleString());
 		phase.normalize(sb);
 		assertThat(sb.toString(), is("\t\tt. t.t. t(t t[] { 1, 1 ,1 });\n\t}\n"));

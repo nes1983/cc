@@ -8,13 +8,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
-import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
 
+import ch.unibe.scg.cc.Main;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
@@ -31,7 +31,7 @@ public class IndexTopHashfacts {
 		HTable indexHashfacts2Functions = i.getInstance(Key.get(HTable.class, Names.named("indexHashfacts2Functions")));
 		HTable hashfactContent = i.getInstance(Key.get(HTable.class, Names.named("hashfactContent")));
 
-		Scan scan = new Scan();
+		Scan scan = new Scan(new byte[] {Main.TYPE_1_CLONE}, new byte[] {Main.TYPE_1_CLONE});
 		scan.setCaching(250000);
 		scan.addFamily(GuiceResource.FAMILY);
 		ResultScanner rsHashfacts = indexHashfacts2Functions.getScanner(scan);

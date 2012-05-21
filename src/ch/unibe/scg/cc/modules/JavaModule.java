@@ -3,7 +3,7 @@ package ch.unibe.scg.cc.modules;
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.Normalizer;
-import ch.unibe.scg.cc.PhaseFrontent;
+import ch.unibe.scg.cc.PhaseFrontend;
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.Type1;
 import ch.unibe.scg.cc.Type2;
@@ -31,8 +31,8 @@ public class JavaModule extends AbstractModule{
 class Type1Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontent.class).annotatedWith(Type1.class).to(Normalizer.class);
-		expose(PhaseFrontent.class).annotatedWith(Type1.class);
+		bind(PhaseFrontend.class).annotatedWith(Type1.class).to(Normalizer.class);
+		expose(PhaseFrontend.class).annotatedWith(Type1.class);
 		
 		//Private:
 		bind(new TypeLiteral<Replace[]>() {}).toProvider(JavaType1ReplacerFactory.class);
@@ -42,8 +42,8 @@ class Type1Module extends PrivateModule {
 class Type2Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontent.class).annotatedWith(Type2.class).to(Normalizer.class);
-		expose(PhaseFrontent.class).annotatedWith(Type2.class);
+		bind(PhaseFrontend.class).annotatedWith(Type2.class).to(Normalizer.class);
+		expose(PhaseFrontend.class).annotatedWith(Type2.class);
 		
 		//Private:
 		bind(new TypeLiteral<Replace[]>() {}).toProvider(Type2ReplacerFactory.class);

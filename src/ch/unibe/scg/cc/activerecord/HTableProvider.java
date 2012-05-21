@@ -24,6 +24,7 @@ public class HTableProvider implements Provider<HTable> {
 			htable = new HTable(hbaseConfig, tableName);
 			htable.setAutoFlush(false);
 			htable.setWriteBufferSize(1024 * 1024 * 12);
+			htable.getTableDescriptor().setDeferredLogFlush(true);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
