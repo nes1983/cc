@@ -41,11 +41,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/hadoop-core-1.0.1.jar" sourcepath="libs/hadoop-1.0.1.zip"/>
-	<classpathentry kind="lib" path="libs/hbase-0.92.0.jar" sourcepath="libs/hbase-0.92.1.zip"/>
+	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.0.1-security.jar" sourcepath="libs/hbase-0.92.1.zip"/>
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
 	<classpathentry kind="lib" path="libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="libs/jsch-0.1.48.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
 		<attributes>

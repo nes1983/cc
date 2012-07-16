@@ -7,6 +7,7 @@ import org.apache.hadoop.hbase.client.HTable;
 import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.PutFactory;
+import ch.unibe.scg.cc.mappers.GitTablePopulator.GitTablePopulatorMapper;
 import ch.unibe.scg.cc.mappers.GuiceMapper;
 import ch.unibe.scg.cc.mappers.GuiceTableMapper;
 import ch.unibe.scg.cc.mappers.GuiceTableReducer;
@@ -49,6 +50,7 @@ public class HBaseModule extends AbstractModule {
 
 		// MR
 		bind(GuiceMapper.class).annotatedWith(Names.named("TablePopulatorMapper")).to(TablePopulatorMapper.class);
+		bind(GuiceMapper.class).annotatedWith(Names.named("GitTablePopulatorMapper")).to(GitTablePopulatorMapper.class);
         bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexVersions2ProjectsMapper")).to(IndexVersions2ProjectsMapper.class);
         bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexVersions2ProjectsReducer")).to(IndexVersions2ProjectsReducer.class);
         bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexFiles2VersionsMapper")).to(IndexFiles2VersionsMapper.class);

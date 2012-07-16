@@ -15,6 +15,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 
+import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableReducer;
@@ -91,7 +92,8 @@ public class HbaseWrapper {
 
 	private static Configuration getConfiguration() {
 		if (configuration == null) {
-			configuration = HBaseConfiguration.create();
+			configuration = new ConfigurationProvider().get(); //XXX
+			//configuration = HBaseConfiguration.create();
 			//configuration.set("mapred.job.tracker", "pinocchio:50030");
 		}
 		return configuration;
