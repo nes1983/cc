@@ -21,10 +21,12 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 public class IndexFunctions2Files implements Runnable {
 
 	final HTable indexFunctions2Files;
+	final HbaseWrapper hbaseWrapper;
 	
 	@Inject
-	IndexFunctions2Files(@Named("indexFunctions2Files") HTable indexFunctions2Files) {
+	IndexFunctions2Files(@Named("indexFunctions2Files") HTable indexFunctions2Files, HbaseWrapper hbaseWrapper) {
 		this.indexFunctions2Files = indexFunctions2Files;
+		this.hbaseWrapper = hbaseWrapper;
 	}
 	
 	public static class IndexFunctions2FilesMapper<KEYOUT,VALUEOUT> extends GuiceTableMapper<KEYOUT,VALUEOUT> {
@@ -71,20 +73,20 @@ public class IndexFunctions2Files implements Runnable {
 				byte[] cur = i.next().get();
 				byte[] fileContentHash = cur;
 				Result row = getRow(fileContentHash);
-				byte[] pnh = getColumnValue(row, GuiceResource.COLUMN_VALUES_PROJECTS);
-				byte[] vh = getColumnValue(row, GuiceResource.COLUMN_VALUES_VERSIONS);
+				byte[] pnh = getColumnValue(row, GuiceResource.ColumnName.VALUES_VERSIONS.getName());
+				byte[] vh = getColumnValue(row, GuiceResource.ColumnName.VALUES_FILES.getName());
 				projnameHashes.addAll(hashSerializer.deserialize(pnh, 20)); // XXX possible performance loss
 				versionHashes.addAll(hashSerializer.deserialize(vh, 20)); // XXX possible performance loss
 				filecontentHashes.addAll(hashSerializer.deserialize(fileContentHash, 20)); // XXX possible performance loss
 			}
 
 			Put put = new Put(functionHash.get());
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_FILES, 0l, Bytes.toBytes(filecontentHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_FILES, 0l, hashSerializer.serialize(filecontentHashes));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_PROJECTS, 0l, Bytes.toBytes(projnameHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_PROJECTS, 0l, hashSerializer.serialize(projnameHashes));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_VERSIONS, 0l, Bytes.toBytes(versionHashes.size()));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_VERSIONS, 0l, hashSerializer.serialize(versionHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FUNCTIONS.getName(), 0l, Bytes.toBytes(filecontentHashes.size()));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FUNCTIONS.getName(), 0l, hashSerializer.serialize(filecontentHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l, Bytes.toBytes(projnameHashes.size()));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l, hashSerializer.serialize(projnameHashes));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FILES.getName(), 0l, Bytes.toBytes(versionHashes.size()));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FILES.getName(), 0l, hashSerializer.serialize(versionHashes));
 			context.write(functionHash, put);
 		}
 		
@@ -104,12 +106,12 @@ public class IndexFunctions2Files implements Runnable {
 	@Override
 	public void run() {
 		try {
-			HbaseWrapper.truncate(indexFunctions2Files);
+			hbaseWrapper.truncate(indexFunctions2Files);
 
 			Scan scan = new Scan();
 			scan.setCaching(500);
 			scan.setCacheBlocks(false);
-			HbaseWrapper.launchTableMapReduceJob(
+			hbaseWrapper.launchTableMapReduceJob(
 					IndexFunctions2Files.class.getName() + " Job",
 					"files", "indexFunctions2Files", scan,
 					IndexFunctions2Files.class,

@@ -18,21 +18,21 @@ public class RealProject extends Column implements Project {
 	private static final byte[] VERSIONNUMBER_NAME = Bytes.toBytes("vn");
 	private String name;
 	private Version version;
-	private int versionNumber;
+	private String tag;
 	private byte[] hash;
 	private byte[] hashName;
 	
 	@Inject
-	public RealProject(StandardHasher standardHasher, @Assisted String name, @Assisted Version version, @Assisted int versionNumber) {
+	public RealProject(StandardHasher standardHasher, @Assisted("name") String name, @Assisted Version version, @Assisted("tag") String tag) {
 		this.name = name;
 		this.version = version;
-		this.versionNumber = versionNumber;
+		this.tag = tag;
 		this.hashName = standardHasher.hash(getName());
 		this.hash = Bytes.add(hashName, version.getHash());
 	}
 
 	public void save(Put put) throws IOException {
-		put.add(FAMILY_NAME, VERSIONNUMBER_NAME, 0l, Bytes.toBytes(versionNumber));
+		put.add(FAMILY_NAME, VERSIONNUMBER_NAME, 0l, Bytes.toBytes(tag));
         
         Put s = new Put(this.hashName);
         s.add(FAMILY_NAME, PROJECT_NAME, 0l, Bytes.toBytes(getName()));
@@ -52,7 +52,7 @@ public class RealProject extends Column implements Project {
 		return version;
 	}
 
-	public int getVersionNumber() {
-		return versionNumber;
+	public String getTag() {
+		return tag;
 	}
 }

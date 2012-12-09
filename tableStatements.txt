@@ -1,8 +1,8 @@
 -- CREATION --
-create 'projects', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'versions', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'files', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'facts', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
 
 create 'indexVersions2Projects', {NAME => 'd', COMPRESSION => 'GZ'}
@@ -15,9 +15,9 @@ create 'indexFactToProject', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'hashfactContent', {NAME => 'd', COMPRESSION => 'GZ'}
 
 -- TRUNCATE --
-truncate 'projects'
 truncate 'versions'
 truncate 'files'
 truncate 'functions'
+truncate 'facts'
 truncate 'strings'
 truncate 'hashfactContent'

@@ -19,7 +19,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 public class GitRecordReader extends RecordReader<Text,BytesWritable>
 {
-	private static final String REGEX_PACKFILE = ".*/pack-[a-f0-9]{40}\\.pack";
+	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private FSDataInputStream fsin;
 	private Text currentKey;
 	private BytesWritable currentValue;
@@ -36,6 +36,7 @@ public class GitRecordReader extends RecordReader<Text,BytesWritable>
 		fs = path.getFileSystem(conf);
 		
 		packFilePaths = new LinkedList<Path>();
+		System.out.println("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
 		
 		if(packFilePaths.isEmpty()) {
@@ -48,10 +49,12 @@ public class GitRecordReader extends RecordReader<Text,BytesWritable>
 		FileStatus[] fstatus = fs.listStatus(path);
 		for(FileStatus f : fstatus) {
 			Path p = f.getPath();
-			if(f.isDir() && f.getPath().getName().equals(".git")) {
+			System.out.println("yyy scanning: " + f.getPath() + " || "
+					+ f.getPath().getName());
+			if(f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)) {
 				listToFill.add(p);
 			}
-			else if(f.isDir())
+			else if(f.isDirectory())
 				findPackFilePaths(fs, p, listToFill);
 		}
 	}
@@ -61,11 +64,13 @@ public class GitRecordReader extends RecordReader<Text,BytesWritable>
 	{
 		if(packFilePaths.isEmpty()) {
 			isFinished = true;
+			System.out.println("yyy packFilePaths is empty... finished");
 			return false;
 		}
+
+		Path packFilePath = packFilePaths.poll();
+		System.out.println("yyy opening " + packFilePath);
 		
-		Path gitDir = packFilePaths.poll();
-		Path packFilePath = new Path(gitDir + "");
 		fsin = fs.open(packFilePath);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		byte[] temp = new byte[8192];
@@ -79,6 +84,7 @@ public class GitRecordReader extends RecordReader<Text,BytesWritable>
 		}
 		currentValue = new BytesWritable(bos.toByteArray());
 		currentKey = new Text(packFilePath.toString());
+		
 		return true;
 	}	
 

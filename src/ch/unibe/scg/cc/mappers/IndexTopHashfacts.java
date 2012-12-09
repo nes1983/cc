@@ -47,7 +47,7 @@ public class IndexTopHashfacts {
 		int count = 0;
 		while(ir.hasNext()) {
 			Result r = ir.next();
-			int nf = Bytes.toInt(r.getValue(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_FUNCTIONS));
+			int nf = Bytes.toInt(r.getValue(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FACTS.getName()));
 			byte[] rowKey = r.getRow();
 			
 			if(hm.get(nf) == null) {

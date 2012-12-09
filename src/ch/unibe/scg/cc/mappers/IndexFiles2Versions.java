@@ -34,10 +34,12 @@ import com.google.inject.name.Names;
 public class IndexFiles2Versions implements Runnable {
 	
 	final HTable indexFiles2Versions;
+	final HbaseWrapper hbaseWrapper;
 	
 	@Inject
-	IndexFiles2Versions(@Named("indexFiles2Versions") HTable indexFiles2Versions) {
+	IndexFiles2Versions(@Named("indexFiles2Versions") HTable indexFiles2Versions, HbaseWrapper hbaseWrapper) {
 		this.indexFiles2Versions = indexFiles2Versions;
+		this.hbaseWrapper = hbaseWrapper;
 	}
 	
 	public static class IndexFiles2VersionsMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
@@ -93,10 +95,10 @@ public class IndexFiles2Versions implements Runnable {
 				projectsCounter++;
 			}
 			Put put = new Put(((ImmutableBytesWritable)key).get());
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_VERSIONS, 0l, Bytes.toBytes(versionsCounter));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_COUNT_PROJECTS, 0l, Bytes.toBytes(projectsCounter));
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_VERSIONS, 0l, versionhashValues);
-			put.add(GuiceResource.FAMILY, GuiceResource.COLUMN_VALUES_PROJECTS, 0l, projecthashValues);
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FILES.getName(), 0l, Bytes.toBytes(versionsCounter));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l, Bytes.toBytes(projectsCounter));
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FILES.getName(), 0l, versionhashValues);
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l, projecthashValues);
 			context.write(null, put);
 		}
 
@@ -113,10 +115,10 @@ public class IndexFiles2Versions implements Runnable {
 	@Override
 	public void run() {
 		try {
-			HbaseWrapper.truncate(indexFiles2Versions);
+			hbaseWrapper.truncate(indexFiles2Versions);
 			
 			Scan scan = new Scan();
-			HbaseWrapper.launchTableMapReduceJob(
+			hbaseWrapper.launchTableMapReduceJob(
 					IndexFiles2Versions.class.getName()+" Job", 
 					"versions", 
 					"indexFiles2Versions",

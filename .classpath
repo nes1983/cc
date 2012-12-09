@@ -40,7 +40,6 @@
 			<attribute name="javadoc_location" value="http://hawtdispatch.fusesource.org/versions/1.7/maven/hawtdispatch/apidocs/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/hadoop-core-1.0.1.jar" sourcepath="libs/hadoop-1.0.1.zip"/>
 	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.0.1-security.jar" sourcepath="libs/hbase-0.92.1.zip"/>
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
@@ -87,5 +86,13 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/junit-dep-4.9.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-hs-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.0.1-tests.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

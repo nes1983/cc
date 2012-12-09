@@ -1,35 +1,55 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
+import java.util.Arrays;
 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
 
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.HBaseModule;
 import ch.unibe.scg.cc.modules.JavaModule;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
+import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
 
-public class MRMain {
-	@SuppressWarnings({ "rawtypes", "unchecked" })
+public class MRMain extends Configured implements Tool {
 	public static void main(String[] args) throws Throwable {
+		System.out.println(Arrays.toString(args));
+		int res = ToolRunner.run(new MRMain(), args);
+//		System.exit(res);
+	}
+
+	@Override
+	public int run(String[] args) {
+		System.out.println(Arrays.toString(args));
 		assert args.length == 1;
-		Class c = Class.forName(args[0]);
-		Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
-		Object instance = injector.getInstance(c);
+		Class<?> c;
 		try {
-			((Runnable) instance).run();
-		} catch(WrappedRuntimeException e) {
-			throw e.getCause();
+			c = Class.forName(args[0]);
+		} catch (ClassNotFoundException e) {
+			throw new RuntimeException(e);
 		}
+		AbstractModule confModule = new AbstractModule() {
+			@Override
+			protected void configure() {
+//				bind(Configuration.class).annotatedWith(Names.named("commandLine")).toInstance(getConf());
+			}
+		};
+		Injector injector = Guice.createInjector(confModule, new CCModule(), new JavaModule(), new HBaseModule());
+		Object instance = injector.getInstance(c);
+		((Runnable) instance).run();
+		return 0;
 	}
 	
 	public static class MRMainMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {

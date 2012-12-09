@@ -24,28 +24,28 @@ import ch.unibe.scg.cc.activerecord.Version;
 
 @Singleton
 public class CloneRegistry {
-
-	public static final int TABLE_PROJECTS = 1;
-	public static final int TABLE_CODEFILES = 2;
-	public static final int TABLE_FUNCTIONS = 3;
-	public static final int TABLE_VERSIONS = 4;
+	
+	public static final int TABLE_VERSIONS = 1;
+	public static final int TABLE_FUNCTIONS = 2;
+	public static final int TABLE_FACTS = 3;
+	public static final int TABLE_FILES = 4;
 	public static final int TABLE_STRINGS = 5;
 	
 	final Provider<HashFact> hashFactProvider;
 	
 	final Provider<Location> locationProvider;
 
-	@Inject(optional=true) @Named("projects")
-	HTable projects;
-
 	@Inject(optional=true) @Named("versions")
 	HTable versions;
-	
+
 	@Inject(optional=true) @Named("files")
-	HTable codefiles;
+	HTable files;
 	
 	@Inject(optional=true) @Named("functions")
 	HTable functions;
+	
+	@Inject(optional=true) @Named("facts")
+	HTable facts;
 	
 	@Inject(optional=true) @Named("strings")
 	HTable strings;
@@ -94,7 +94,7 @@ public class CloneRegistry {
 	}
 	
 	public boolean lookupCodeFile(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_CODEFILES);
+		HTable t = getTable(CloneRegistry.TABLE_FUNCTIONS);
 		assert t != null;
 		byte[] startKey = Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
 		byte[] endKey = Bytes.add(key, new byte[] {127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127});
@@ -107,7 +107,7 @@ public class CloneRegistry {
 	}
 
 	public boolean lookupVersion(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_VERSIONS);
+		HTable t = getTable(CloneRegistry.TABLE_FILES);
 		assert t != null;
 		byte[] startKey = Bytes.add(key, new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
 		byte[] endKey = Bytes.add(key, new byte[] {127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127,127});
@@ -120,7 +120,7 @@ public class CloneRegistry {
 	}
 
 	public boolean lookupProject(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_PROJECTS);
+		HTable t = getTable(CloneRegistry.TABLE_VERSIONS);
 		assert t != null;
 		Scan s = new Scan(key, key);
 		try {
@@ -132,10 +132,10 @@ public class CloneRegistry {
 
 	private HTable getTable(int table) {
 		switch(table) {
-		case TABLE_PROJECTS : return projects;
-		case TABLE_CODEFILES : return codefiles;
-		case TABLE_FUNCTIONS : return functions;
 		case TABLE_VERSIONS : return versions;
+		case TABLE_FUNCTIONS : return functions;
+		case TABLE_FACTS : return facts;
+		case TABLE_FILES : return files;
 		case TABLE_STRINGS : return strings;
 		default: return null;
 		}
@@ -149,7 +149,7 @@ public class CloneRegistry {
 				put.add(RealCodeFile.FAMILY_NAME,
 						Bytes.toBytes(RealCodeFile.FUNCTION_OFFSET_NAME), 0l,
 						Bytes.toBytes(function.getBaseLine()));
-				codefiles.put(put);
+				functions.put(put);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -164,7 +164,7 @@ public class CloneRegistry {
 		Put put = new Put(project.getHash());
 		try {
 			project.save(put);
-			projects.put(put);
+			versions.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -178,7 +178,7 @@ public class CloneRegistry {
 		Put put = new Put(version.getHash());
 		try {
 			version.save(put);
-			versions.put(put);
+			files.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -192,7 +192,7 @@ public class CloneRegistry {
 			hfSnippet.setWriteToWAL(false); //XXX performance increase
 			try {
 				hashFact.save(put);
-				functions.put(put);
+				facts.put(put);
 				hashFact.saveSnippet(hfSnippet);
 				hashfactContent.put(hfSnippet);
 			} catch (IOException e) {

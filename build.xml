@@ -68,8 +68,9 @@
 		</jar>
 	</target>
 	<target name="uploadJar">
-		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" /><!-- sudo -u hadoop hadoop -->
-		<sshexec host="haddock.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${classArgument}" />
+		<property name="libjars" value="-libjars /tmp/hbase-0.92.1-cdh4.0.1-security.jar"/>
+		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" /><!-- sudo -u hadoop hadoop --><!-- /tmp/hadoop-mapreduce-client-app-2.0.0-cdh4.0.1.jar,/tmp/hadoop-mapreduce-client-common-2.0.0-cdh4.0.1.jar,/tmp/hadoop-mapreduce-client-core-2.0.0-cdh4.0.1.jar,/tmp/hadoop-mapreduce-client-hs-2.0.0-cdh4.0.1.jar,/tmp/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.0.1.jar,/tmp/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.0.1.jar,/tmp/hadoop-yarn-common-2.0.0-cdh4.0.1.jar,/tmp/hadoop-common-2.0.0-cdh4.0.1.jar,/tmp/hadoop-yarn-api-2.0.0-cdh4.0.1.jar, -->
+		<sshexec host="haddock.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${libjars} ${classArgument}" />
 	</target>
 	<target name="indexCreator">
 		<antcall target="jar">

@@ -35,17 +35,17 @@ public class ProjectWalker {
 	@Java
 	Frontend javaFrontend;
 
-	@Inject @Named("projects")
-	HTable projects;
-	
 	@Inject @Named("versions")
 	HTable versions;
 	
 	@Inject @Named("files")
-	HTable codefiles;
+	HTable files;
 	
 	@Inject @Named("functions")
 	HTable functions;
+	
+	@Inject @Named("facts")
+	HTable facts;
 	
 	@Inject @Named("strings")
 	HTable strings;
@@ -90,7 +90,7 @@ public class ProjectWalker {
 		List<Version> versions = crawl(javaFiles);
 		
 		for(Version version : versions) {
-			Project proj = projectFactory.create(projectName, version, 1); // TODO get versionNumber
+			Project proj = projectFactory.create(projectName, version, "1"); // TODO get versionNumber
 			javaFrontend.register(proj);
 		}
 	}
@@ -111,10 +111,10 @@ public class ProjectWalker {
 		CodeFile codeFile = javaFrontend.register(contents, name.getBaseName());
 		
 		// XXX flushCommits get called for every single file --> bad performance!?
-        projects.flushCommits();
         versions.flushCommits();
-        codefiles.flushCommits();
+        files.flushCommits();
         functions.flushCommits();
+        facts.flushCommits();
         strings.flushCommits();
         
         String filePath = name.getParent().getPath() + "/" + name.getBaseName();

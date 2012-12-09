@@ -40,14 +40,20 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class TablePopulator implements Runnable {
 
-	TablePopulator() {}
+	final HbaseWrapper hbaseWrapper;
+	
+	@Inject
+	TablePopulator(HbaseWrapper hbaseWrapper) {
+		this.hbaseWrapper = hbaseWrapper;
+	}
 	
 	public void run() {
 		try {
-			Job job = HbaseWrapper.createMapJob("populate", TablePopulator.class, "TablePopulatorMapper", Text.class, IntWritable.class);
+			Job job = hbaseWrapper.createMapJob("populate", TablePopulator.class, "TablePopulatorMapper", Text.class, IntWritable.class);
 			job.setInputFormatClass(ZipFileInputFormat.class);
 			job.setOutputFormatClass(NullOutputFormat.class);
-			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
+			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/zipprojects"));
+			System.out.println("yyy wait for completion");
 			job.waitForCompletion(true);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
@@ -60,18 +66,18 @@ public class TablePopulator implements Runnable {
 	
 	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		@Inject
-		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("projects") HTable projects,
-				@Named("versions") HTable versions,  @Named("files") HTable codefiles, @Named("functions") HTable functions,
+		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
+				@Named("files") HTable files,  @Named("functions") HTable functions, @Named("facts") HTable facts,
 				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,  
 				RealProjectFactory projectFactory,
 				RealVersionFactory versionFactory,
 				CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
-			this.projects = projects;
 			this.versions = versions;
-			this.codefiles = codefiles;
+			this.files = files;
 			this.functions = functions;
+			this.facts = facts;
 			this.strings = strings;
 			this.hashfactContent = hashfactContent;
 			this.projectFactory = projectFactory;
@@ -80,7 +86,7 @@ public class TablePopulator implements Runnable {
 		}
 
 		final Frontend javaFrontend;
-		final HTable projects, versions,  codefiles, functions, strings, hashfactContent;
+		final HTable versions, files, functions, facts, strings, hashfactContent;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -105,8 +111,8 @@ public class TablePopulator implements Runnable {
 
 		private CodeFile register(String content, String fileName) throws IOException {
 			CodeFile codeFile = javaFrontend.register(content, fileName);
-	        codefiles.flushCommits();
 	        functions.flushCommits();
+	        facts.flushCommits();
 	        hashfactContent.flushCommits();
 	        return codeFile;
 		}
@@ -114,14 +120,14 @@ public class TablePopulator implements Runnable {
 		private Version register(String filePath, CodeFile codeFile) throws IOException {
 			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
-	        versions.flushCommits();
+	        files.flushCommits();
 	        return version;
 		}
 
 		private void register(String projectName, Version version, int versionNumber) throws IOException {
-			Project proj = projectFactory.create(projectName, version, 1); // TODO get versionNumber
+			Project proj = projectFactory.create(projectName, version, "1"); // TODO get versionNumber
 			javaFrontend.register(proj);
-	        projects.flushCommits();
+	        versions.flushCommits();
 	        strings.flushCommits();
 		}
 	}
@@ -156,7 +162,7 @@ public class TablePopulator implements Runnable {
 			
 			when(charsetDetector.charsetOf(new byte[] { 0x20 })).thenReturn("UTF-8");
 			when(versionFactory.create(eq("postgresql/simon/myfile.java"), any(CodeFile.class))).thenReturn(version);
-			when(projectFactory.create(eq("postgresql"), eq(version), anyInt())).thenReturn(project);
+			when(projectFactory.create(eq("postgresql"), eq(version), any(String.class))).thenReturn(project);
 			
 			TablePopulatorMapper mapper = new TablePopulatorMapper(javaFrontend, projects, versions, codefiles, 
 						functions, strings, hashfactContent, projectFactory, versionFactory, charsetDetector);

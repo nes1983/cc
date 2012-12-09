@@ -32,10 +32,10 @@ public class HBaseModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		installHTable("projects");
 		installHTable("versions");
 		installHTable("files");
 		installHTable("functions");
+		installHTable("facts");
 		installHTable("strings");
 		
 		installHTable("hashfactContent");

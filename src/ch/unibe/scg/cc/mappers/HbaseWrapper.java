@@ -2,8 +2,8 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.HBaseConfiguration;
+import javax.inject.Inject;
+
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
@@ -21,10 +21,11 @@ import ch.unibe.scg.cc.mappers.MRMain.MRMainTableMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableReducer;
 
 public class HbaseWrapper {
-	private static Configuration configuration = null;
+	@Inject
+	private ConfigurationProvider configurationProvider;
 
 	@SuppressWarnings("rawtypes")
-	public static Job createMapJob(String jobName, 
+	public Job createMapJob(String jobName, 
 			Class<?> jobClassName,
 			String mapperClassName,
 			Class<? extends WritableComparable> outputKey,
@@ -40,7 +41,7 @@ public class HbaseWrapper {
 	}
 
 	@SuppressWarnings("rawtypes")
-	public static boolean launchTableMapReduceJob(String jobName, 
+	public boolean launchTableMapReduceJob(String jobName, 
 			String tableNameMapper, String tableNameReducer,
 			Scan tableScanner, Class<?> jobClassName,
 			String mapperClassName,
@@ -53,7 +54,7 @@ public class HbaseWrapper {
 		Class<MRMainTableReducer> reducerClass = MRMainTableReducer.class;
 		
 		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, reducerClass, outputKey, outputValue);
-
+		
 		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner, mapperClass, outputKey, outputValue, thisJob);
 		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass, thisJob);
 		
@@ -64,7 +65,7 @@ public class HbaseWrapper {
 	}
 
 	@SuppressWarnings("rawtypes")
-	private static Job initMapReduceJob(
+	private Job initMapReduceJob(
 			String jobName,
 			Class<?> jobClassName,
 			Class<? extends Mapper> mapperClassName,
@@ -72,7 +73,7 @@ public class HbaseWrapper {
 			Class<?> outputKey,
 			Class<?> outputValue) throws IOException {
 
-		Job thisJob = new Job(getConfiguration(), jobName);
+		Job thisJob = new Job(configurationProvider.get(), jobName);
 
 		thisJob.setJarByClass(jobClassName);
 		thisJob.setMapperClass(mapperClassName);
@@ -90,17 +91,8 @@ public class HbaseWrapper {
 		return thisJob;
 	}
 
-	private static Configuration getConfiguration() {
-		if (configuration == null) {
-			configuration = new ConfigurationProvider().get(); //XXX
-			//configuration = HBaseConfiguration.create();
-			//configuration.set("mapred.job.tracker", "pinocchio:50030");
-		}
-		return configuration;
-	}
-
-	public static void truncate(HTable hTable) throws IOException {
-		HBaseAdmin admin = new HBaseAdmin(getConfiguration());
+	public void truncate(HTable hTable) throws IOException {
+		HBaseAdmin admin = new HBaseAdmin(configurationProvider.get());
 		HTableDescriptor tableDescription = hTable.getTableDescriptor();
 		String tableName = tableDescription.getNameAsString();
 		admin.disableTable(tableName);

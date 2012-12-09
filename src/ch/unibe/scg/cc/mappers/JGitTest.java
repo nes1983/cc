@@ -41,7 +41,7 @@ public class JGitTest implements Runnable {
 			InMemoryRepository r = new InMemoryRepository(desc);
 
 			Configuration conf = new Configuration();
-			conf.addResource(new Path("/etc/hadoop/core-site.xml"));
+			conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
 			FileSystem fileSystem = FileSystem.get(conf);
 			Path path = new Path("/tmp/scribe-java/.git/objects/pack/pack-b0838be1c3b7b22ac27675baee3692c4d44f8cf0.pack");
 			FSDataInputStream in = fileSystem.open(path);

@@ -21,6 +21,7 @@ public class GitInputFormat extends FileInputFormat<Text, BytesWritable> {
 	public RecordReader<Text, BytesWritable> createRecordReader(
 			InputSplit split, TaskAttemptContext context) throws IOException,
 			InterruptedException {
+		System.out.println("yyy recordreader creation");
 		return new GitRecordReader();
 	}
 }

@@ -31,10 +31,12 @@ import com.google.inject.name.Names;
 public class IndexVersions2Projects implements Runnable {
 	
 	final HTable indexVersions2Projects;
+	final HbaseWrapper hbaseWrapper;
 	
 	@Inject
-	IndexVersions2Projects(@Named("indexVersions2Projects") HTable indexVersions2Projects) {
+	IndexVersions2Projects(@Named("indexVersions2Projects") HTable indexVersions2Projects, HbaseWrapper hbaseWrapper) {
 		this.indexVersions2Projects = indexVersions2Projects;
+		this.hbaseWrapper = hbaseWrapper;
 	}
 	
 	public static class IndexVersions2ProjectsMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
@@ -71,12 +73,12 @@ public class IndexVersions2Projects implements Runnable {
 	public void run() {
 		try {
 			
-			HbaseWrapper.truncate(indexVersions2Projects);
+			hbaseWrapper.truncate(indexVersions2Projects);
 			
 			Scan scan = new Scan();
-			HbaseWrapper.launchTableMapReduceJob(
+			hbaseWrapper.launchTableMapReduceJob(
 					IndexVersions2Projects.class.getName()+" Job", 
-					"projects", 
+					"versions", 
 					"indexVersions2Projects",
 					scan,
 					IndexVersions2Projects.class, 
@@ -102,7 +104,7 @@ public class IndexVersions2Projects implements Runnable {
 			if(true)
 				return;
 			Injector i = Guice.createInjector(new CCModule(), new JavaModule());
-			HTable projects = i.getInstance(Key.get(HTable.class, Names.named("projects")));
+			HTable projects = i.getInstance(Key.get(HTable.class, Names.named("versions")));
 			HTable indexProjects = i.getInstance(Key.get(HTable.class, Names.named("indexVersions2Projects")));
 			
 			Scan scan = new Scan();

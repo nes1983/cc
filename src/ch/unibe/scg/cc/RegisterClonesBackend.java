@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc;
 
 import java.util.Arrays;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -14,7 +15,7 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 public class RegisterClonesBackend {
 
-	public final int MINIMUM_LINES = 5;
+	public final int MINIMUM_LINES = 10;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 	final byte[] emptySHA1Key = new byte[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	CloneRegistry registry;
@@ -99,8 +100,11 @@ public class RegisterClonesBackend {
 
 	public void register(CodeFile codeFile) {
 		registry.register(codeFile);
-		for(Function function : codeFile.getFunctions())
+		List<Function> functions = codeFile.getFunctions();
+		functions = functions.subList(1, functions.size()); //XXX removes first function with the whole filecontent
+		for(Function function : functions) {
 			register(function);
+		}
 	}
 
 	private void register(Function function) {

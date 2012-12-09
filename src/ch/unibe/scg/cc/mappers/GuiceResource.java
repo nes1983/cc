@@ -10,16 +10,29 @@ import org.apache.hadoop.io.BytesWritable;
  */
 public class GuiceResource {
 
+	public enum ColumnName {
+		COUNT_VERSIONS(Bytes.toBytes("nve")),
+		VALUES_VERSIONS(Bytes.toBytes("vve")),
+		COUNT_FILES(Bytes.toBytes("nfi")),
+		VALUES_FILES(Bytes.toBytes("vfi")),
+		COUNT_FUNCTIONS(Bytes.toBytes("vfn")),
+		VALUES_FUNCTIONS(Bytes.toBytes("vfn")),
+		COUNT_FACTS(Bytes.toBytes("nfa")),
+		VALUES_FACTS(Bytes.toBytes("vfa"));
+		
+		private final byte[] name;
+		
+		private ColumnName(byte[] name) {
+			this.name = name;
+		}
+		
+		public byte[] getName() {
+			return this.name;
+		}
+	}
+	
 	public static final BytesWritable EMPTY_BYTES_WRITABLE = new BytesWritable(new byte[] {});
 	public static final byte[] FAMILY = Bytes.toBytes("d");
-	public static final byte[] COLUMN_COUNT_PROJECTS = Bytes.toBytes("np");
-	public static final byte[] COLUMN_VALUES_PROJECTS = Bytes.toBytes("vp");
-	public static final byte[] COLUMN_COUNT_VERSIONS = Bytes.toBytes("nv");
-	public static final byte[] COLUMN_VALUES_VERSIONS = Bytes.toBytes("vv");
-	public static final byte[] COLUMN_COUNT_FILES = Bytes.toBytes("nf");
-	public static final byte[] COLUMN_VALUES_FILES = Bytes.toBytes("vf");
-	public static final byte[] COLUMN_COUNT_FUNCTIONS = Bytes.toBytes("nf");
-	public static final byte[] COLUMN_VALUES_FUNCTIONS = Bytes.toBytes("vf");
 	
 	/* ONLY FOR FAST COPY/PASTE...
 	final HTable versions;
@@ -38,10 +51,10 @@ public class GuiceResource {
 	
 	@Inject
 	public GuiceResource(
-			@Named("projects") HTable projects,
 			@Named("versions") HTable versions,
 			@Named("files") HTable codefiles,
 			@Named("functions") HTable functions,
+			@Named("facts") HTable facts,
 			@Named("strings") HTable strings,
 			@Named("hashfactContent") HTable hashfactContent,
 			@Named("indexVersions2Projects") HTable indexProjects,
