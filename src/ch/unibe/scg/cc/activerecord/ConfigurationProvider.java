@@ -21,8 +21,8 @@ public class ConfigurationProvider implements Provider<Configuration> {
 //		Configuration hConf = HBaseConfiguration.create(commandLineConfiguration);
 		Configuration hConf = HBaseConfiguration.create();
 		hConf.set(HBASE_CONFIGURATION_HBASE_MASTER, "leela.unibe.ch:60000");
-//		hConf.set(HBASE_CONFIGURATION_ZOOKEEPER_QUORUM, "leela.unibe.ch");
-//		hConf.setInt(HBASE_CONFIGURATION_ZOOKEEPER_CLIENTPORT, 2181);
+		hConf.set(HBASE_CONFIGURATION_ZOOKEEPER_QUORUM, "leela.unibe.ch");
+		hConf.setInt(HBASE_CONFIGURATION_ZOOKEEPER_CLIENTPORT, 2181);
 		hConf.setBoolean("fs.automatic.close", false);
 		return hConf;
 	}

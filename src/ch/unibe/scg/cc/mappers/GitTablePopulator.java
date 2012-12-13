@@ -49,6 +49,7 @@ import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitInputFormat;
+import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class GitTablePopulator implements Runnable {
@@ -63,9 +64,10 @@ public class GitTablePopulator implements Runnable {
 	public void run() {
 		try {
 			Job job = hbaseWrapper.createMapJob("gitPopulate", GitTablePopulator.class, "GitTablePopulatorMapper", Text.class, IntWritable.class);
-			job.setInputFormatClass(GitInputFormat.class);
+			job.setInputFormatClass(GitPathInputFormat.class);
 			job.setOutputFormatClass(NullOutputFormat.class);
-			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
+			//FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
+			FileInputFormat.addInputPaths(job, "/project-clone-detector/projects/phibernate/hibernate-orm.git/objects/pack/pack-6327097f1f4e9559a5027dbfe76581b50fb93c90.pack,/project-clone-detector/projects/pjdt/eclipse.jdt.core.git/objects/pack/pack-a930d0f1100ab6526da1643d63589a2adc6cbd2a.pack,/project-clone-detector/projects/pjetty/jetty-project.git/objects/pack/pack-ef50a2803c51229fc67e2eff77b2769307e04cbb.pack,/project-clone-detector/projects/plog4j/log4j.git/objects/pack/pack-32d9be6ddd3b13db028c2d95a956881722ec8048.pack");
 //			job.getConfiguration().setInt("mapred.map.tasks", 1); //XXX
 //			job.getConfiguration().setInt("mapreduce.job.maps", 1); //XXX
 			System.out.println("yyy wait for completion");
@@ -163,11 +165,14 @@ public class GitTablePopulator implements Runnable {
 							continue;
 //						System.out.println("twn filepath: " + filePath);
 						String fileName = filePath.lastIndexOf('/') == -1 ? filePath : filePath.substring(filePath.lastIndexOf('/')+1);
-						CodeFile codeFile = register(content, fileName);
+						
+						//CodeFile codeFile = register(content, fileName);
 //						System.out.println("svd contents: " + fileName);
-						Version version = register(filePath, codeFile);
+						
+						//Version version = register(filePath, codeFile);
 //						System.out.println("svd codefile: " + filePath);
-						register(projectName, version, tag);
+						
+						//register(projectName, version, tag);
 //						System.out.println("svd version: " + tag);
 					} catch (MissingObjectException moe) {
 						System.out.println("twn MissingObjectException: " + moe);
