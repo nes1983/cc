@@ -5,7 +5,9 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,6 +16,7 @@ import javax.inject.Named;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.HTable;
@@ -48,28 +51,33 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
-import ch.unibe.scg.cc.mappers.inputformats.GitInputFormat;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
+import com.google.common.base.Joiner;
+
 public class GitTablePopulator implements Runnable {
 
+	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
+	private static final String PROJECTS_PATH = "/project-clone-detector/projects";
+	private static final long MAX_PACK_FILESIZE_BYTES = 50000000;
 	final HbaseWrapper hbaseWrapper;
-	
+
 	@Inject
 	GitTablePopulator(HbaseWrapper hbaseWrapper) {
 		this.hbaseWrapper = hbaseWrapper;
 	}
-	
+
 	public void run() {
 		try {
-			Job job = hbaseWrapper.createMapJob("gitPopulate", GitTablePopulator.class, "GitTablePopulatorMapper", Text.class, IntWritable.class);
+			Job job = hbaseWrapper.createMapJob("gitPopulate",
+					GitTablePopulator.class, "GitTablePopulatorMapper",
+					Text.class, IntWritable.class);
 			job.setInputFormatClass(GitPathInputFormat.class);
 			job.setOutputFormatClass(NullOutputFormat.class);
-			//FileInputFormat.addInputPath(job, new Path("/project-clone-detector/projects"));
-			FileInputFormat.addInputPaths(job, "/project-clone-detector/projects/phibernate/hibernate-orm.git/objects/pack/pack-6327097f1f4e9559a5027dbfe76581b50fb93c90.pack,/project-clone-detector/projects/pjdt/eclipse.jdt.core.git/objects/pack/pack-a930d0f1100ab6526da1643d63589a2adc6cbd2a.pack,/project-clone-detector/projects/pjetty/jetty-project.git/objects/pack/pack-ef50a2803c51229fc67e2eff77b2769307e04cbb.pack,/project-clone-detector/projects/plog4j/log4j.git/objects/pack/pack-32d9be6ddd3b13db028c2d95a956881722ec8048.pack");
-//			job.getConfiguration().setInt("mapred.map.tasks", 1); //XXX
-//			job.getConfiguration().setInt("mapreduce.job.maps", 1); //XXX
+			String inputPaths = getInputPaths();
+			FileInputFormat.addInputPaths(job, inputPaths);
+			System.out.println("found: " + inputPaths);
 			System.out.println("yyy wait for completion");
 			job.waitForCompletion(true);
 		} catch (IOException e) {
@@ -80,12 +88,50 @@ public class GitTablePopulator implements Runnable {
 			throw new WrappedRuntimeException(e);
 		}
 	}
-	
-	public static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
+
+	private String getInputPaths() throws IOException {
+		Configuration conf = new Configuration();
+		conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
+		FileSystem fs = FileSystem.get(conf);
+		Path path = new Path(PROJECTS_PATH);
+
+		Queue<Path> packFilePaths = new LinkedList<Path>();
+		System.out.println("yyy start finding pack files " + path);
+		findPackFilePaths(fs, path, packFilePaths);
+
+		Joiner joiner = Joiner.on(",");
+		return joiner.join(packFilePaths);
+
+	}
+
+	/**
+	 * @param listToFill
+	 *            result parameter
+	 */
+	private void findPackFilePaths(FileSystem fs, Path path,
+			Queue<Path> listToFill) throws IOException {
+		FileStatus[] fstatus = fs.listStatus(path);
+		for (FileStatus f : fstatus) {
+			Path p = f.getPath();
+			System.out.println("yyy scanning: " + f.getPath() + " || "
+					+ f.getPath().getName());
+			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)
+					&& f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
+				listToFill.add(p);
+			} else if (f.isDirectory())
+				findPackFilePaths(fs, p, listToFill);
+		}
+	}
+
+	public static class GitTablePopulatorMapper extends
+			GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		@Inject
-		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
-				@Named("files") HTable files,  @Named("functions") HTable functions, @Named("facts") HTable facts,
-				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,  
+		GitTablePopulatorMapper(@Java Frontend javaFrontend,
+				@Named("versions") HTable versions,
+				@Named("files") HTable files,
+				@Named("functions") HTable functions,
+				@Named("facts") HTable facts, @Named("strings") HTable strings,
+				@Named("hashfactContent") HTable hashfactContent,
 				RealProjectFactory projectFactory,
 				RealVersionFactory versionFactory,
 				CharsetDetector charsetDetector) {
@@ -103,22 +149,26 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		final Frontend javaFrontend;
-		final HTable versions, files, functions, facts, strings, hashfactContent;
+		final HTable versions, files, functions, facts, strings,
+				hashfactContent;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
-		
-		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
+
+		public void map(Text key, BytesWritable value, Context context)
+				throws IOException, InterruptedException {
 			String packFilePath = key.toString();
 			System.out.println("yyy RECEIVED: " + packFilePath);
-			InputStream packFileStream = new ByteArrayInputStream(value.getBytes());
-			DfsRepositoryDescription desc = new DfsRepositoryDescription(packFilePath);
+			InputStream packFileStream = new ByteArrayInputStream(
+					value.getBytes());
+			DfsRepositoryDescription desc = new DfsRepositoryDescription(
+					packFilePath);
 			InMemoryRepository r = new InMemoryRepository(desc);
 
 			Configuration conf = new Configuration();
 			conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
 			FileSystem fileSystem = FileSystem.get(conf);
-			
+
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
 			pp.parse(null);
 
@@ -126,26 +176,36 @@ public class GitTablePopulator implements Runnable {
 			DfsObjDatabase db = r.getObjectDatabase();
 
 			RevWalk revWalk = new RevWalk(r);
-			
+
 			PackedRefParser prp = new PackedRefParser();
-			Pattern pattern = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack");
+			Pattern pattern = Pattern
+					.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack");
 			Matcher matcher = pattern.matcher(key.toString());
-			if(!matcher.matches())
-				throw new RuntimeException("Something seems to be wrong with this input path: " + key.toString());
+			if (!matcher.matches())
+				throw new RuntimeException(
+						"Something seems to be wrong with this input path: "
+								+ key.toString());
 			String gitDirPath = matcher.group(1);
 			String packedRefsPath = gitDirPath + Constants.PACKED_REFS;
-			
+
 			FSDataInputStream ins = fileSystem.open(new Path(packedRefsPath));
 			List<PackedRef> pr = prp.parse(ins);
-			
+
 			String projectName = packFilePath; // XXX
 			System.out.println("PROCESSING: " + packFilePath);
-			for(PackedRef paref : pr) {
+			for (PackedRef paref : pr) {
 				String tag = paref.getName();
 				System.out.println("WALK TAG: " + tag);
 
 				revWalk.dispose();
-				RevCommit commit = revWalk.parseCommit(paref.getKey());
+				RevCommit commit;
+				try {
+					commit = revWalk.parseCommit(paref.getKey());
+				} catch (MissingObjectException e) {
+					System.out.println("ERROR in file " + packFilePath + ": "
+							+ e.getMessage());
+					continue;
+				}
 				RevTree tree = commit.getTree();
 				TreeWalk treeWalk = new TreeWalk(r);
 				treeWalk.addTree(tree);
@@ -156,36 +216,32 @@ public class GitTablePopulator implements Runnable {
 				while (treeWalk.next()) {
 					ObjectId objectId = treeWalk.getObjectId(0);
 					try {
-//						ObjectLoader loader = r.open(objectId);
-//						System.out.println("twn " + Constants.typeString(loader.getType())
-//							+ ": " + objectId + " " + treeWalk.getPathString());
 						String content = getContent(r, objectId);
 						String filePath = treeWalk.getPathString();
-						if(!filePath.endsWith(".java"))
+						if (!filePath.endsWith(".java"))
 							continue;
-//						System.out.println("twn filepath: " + filePath);
-						String fileName = filePath.lastIndexOf('/') == -1 ? filePath : filePath.substring(filePath.lastIndexOf('/')+1);
-						
-						//CodeFile codeFile = register(content, fileName);
-//						System.out.println("svd contents: " + fileName);
-						
-						//Version version = register(filePath, codeFile);
-//						System.out.println("svd codefile: " + filePath);
-						
-						//register(projectName, version, tag);
-//						System.out.println("svd version: " + tag);
+						String fileName = filePath.lastIndexOf('/') == -1 ? filePath
+								: filePath
+										.substring(filePath.lastIndexOf('/') + 1);
+						CodeFile codeFile = register(content, fileName);
+						Version version = register(filePath, codeFile);
+						register(projectName, version, tag);
 					} catch (MissingObjectException moe) {
-						System.out.println("twn MissingObjectException: " + moe);
+						System.out
+								.println("twn MissingObjectException: " + moe);
 					}
 				}
+
 			}
 			System.out.println("svd FINISHED PROCESSING " + packFilePath);
 		}
-		
-		private String getContent(Repository repository, ObjectId objectId) throws MissingObjectException, IOException {
+
+		private String getContent(Repository repository, ObjectId objectId)
+				throws MissingObjectException, IOException {
 			ObjectLoader loader = repository.open(objectId);
 			InputStream inputStream = loader.openStream();
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+			BufferedReader bufferedReader = new BufferedReader(
+					new InputStreamReader(inputStream));
 			StringBuilder stringBuilder = new StringBuilder();
 			String line = null;
 			while ((line = bufferedReader.readLine()) != null) {
@@ -194,27 +250,30 @@ public class GitTablePopulator implements Runnable {
 			bufferedReader.close();
 			return stringBuilder.toString();
 		}
-		
-		private CodeFile register(String content, String fileName) throws IOException {
+
+		private CodeFile register(String content, String fileName)
+				throws IOException {
 			CodeFile codeFile = javaFrontend.register(content, fileName);
-	        functions.flushCommits();
-	        facts.flushCommits();
-	        hashfactContent.flushCommits();
-	        return codeFile;
+			functions.flushCommits();
+			facts.flushCommits();
+			hashfactContent.flushCommits();
+			return codeFile;
 		}
 
-		private Version register(String filePath, CodeFile codeFile) throws IOException {
+		private Version register(String filePath, CodeFile codeFile)
+				throws IOException {
 			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
-	        files.flushCommits();
-	        return version;
+			files.flushCommits();
+			return version;
 		}
 
-		private void register(String projectName, Version version, String tag) throws IOException {
+		private void register(String projectName, Version version, String tag)
+				throws IOException {
 			Project proj = projectFactory.create(projectName, version, tag);
 			javaFrontend.register(proj);
-	        versions.flushCommits();
-	        strings.flushCommits();
+			versions.flushCommits();
+			strings.flushCommits();
 		}
 	}
 }
