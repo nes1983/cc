@@ -5,6 +5,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -55,12 +56,17 @@ import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Joiner;
+import com.google.common.collect.Lists;
 
 public class GitTablePopulator implements Runnable {
 
+	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
+	private static final String MAP_MEMORY = "2000";
+	private static final String REDUCE_MEMORY = "2000";
+	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private static final String PROJECTS_PATH = "/project-clone-detector/projects";
-	private static final long MAX_PACK_FILESIZE_BYTES = 50000000;
+	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
 	final HbaseWrapper hbaseWrapper;
 
 	@Inject
@@ -75,6 +81,11 @@ public class GitTablePopulator implements Runnable {
 					Text.class, IntWritable.class);
 			job.setInputFormatClass(GitPathInputFormat.class);
 			job.setOutputFormatClass(NullOutputFormat.class);
+			job.getConfiguration().set("mapred.child.java.opts",
+					MAPRED_CHILD_JAVA_OPTS);
+			job.getConfiguration().set("mapreduce.map.memory.mb", MAP_MEMORY);
+			job.getConfiguration().set("mapreduce.reduce.memory.mb",
+					REDUCE_MEMORY);
 			String inputPaths = getInputPaths();
 			FileInputFormat.addInputPaths(job, inputPaths);
 			System.out.println("found: " + inputPaths);
@@ -91,7 +102,7 @@ public class GitTablePopulator implements Runnable {
 
 	private String getInputPaths() throws IOException {
 		Configuration conf = new Configuration();
-		conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
+		conf.addResource(new Path(CORE_SITE_PATH));
 		FileSystem fs = FileSystem.get(conf);
 		Path path = new Path(PROJECTS_PATH);
 
@@ -125,6 +136,8 @@ public class GitTablePopulator implements Runnable {
 
 	public static class GitTablePopulatorMapper extends
 			GuiceMapper<Text, BytesWritable, Text, IntWritable> {
+		private static final int MAX_TAGS_TO_PARSE = 15;
+
 		@Inject
 		GitTablePopulatorMapper(@Java Frontend javaFrontend,
 				@Named("versions") HTable versions,
@@ -166,7 +179,7 @@ public class GitTablePopulator implements Runnable {
 			InMemoryRepository r = new InMemoryRepository(desc);
 
 			Configuration conf = new Configuration();
-			conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
+			conf.addResource(new Path(CORE_SITE_PATH));
 			FileSystem fileSystem = FileSystem.get(conf);
 
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
@@ -193,7 +206,18 @@ public class GitTablePopulator implements Runnable {
 
 			String projectName = packFilePath; // XXX
 			System.out.println("PROCESSING: " + packFilePath);
-			for (PackedRef paref : pr) {
+			int tagCount = pr.size();
+			if (tagCount > MAX_TAGS_TO_PARSE) {
+				int toIndex = tagCount - 1;
+				int fromIndex = (tagCount - MAX_TAGS_TO_PARSE) < 0 ? 0
+						: (tagCount - MAX_TAGS_TO_PARSE);
+				pr = pr.subList(fromIndex, toIndex);
+			}
+			pr = Lists.reverse(pr);
+			Iterator<PackedRef> it = pr.iterator();
+			int processedTagsCounter = 0;
+			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
+				PackedRef paref = it.next();
 				String tag = paref.getName();
 				System.out.println("WALK TAG: " + tag);
 
@@ -231,7 +255,7 @@ public class GitTablePopulator implements Runnable {
 								.println("twn MissingObjectException: " + moe);
 					}
 				}
-
+				processedTagsCounter++;
 			}
 			System.out.println("svd FINISHED PROCESSING " + packFilePath);
 		}
