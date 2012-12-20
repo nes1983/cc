@@ -1,7 +1,6 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,6 +10,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.log4j.Logger;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
@@ -31,36 +31,40 @@ import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class JGitTest implements Runnable {
+	static Logger logger = Logger.getLogger(JGitTest.class);
 
 	JGitTest() {
 	}
 
 	public void run() {
 		try {
-			DfsRepositoryDescription desc = new DfsRepositoryDescription("scribe-java");
+			DfsRepositoryDescription desc = new DfsRepositoryDescription(
+					"scribe-java");
 			InMemoryRepository r = new InMemoryRepository(desc);
 
 			Configuration conf = new Configuration();
 			conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
 			FileSystem fileSystem = FileSystem.get(conf);
-			Path path = new Path("/tmp/scribe-java/.git/objects/pack/pack-b0838be1c3b7b22ac27675baee3692c4d44f8cf0.pack");
+			Path path = new Path(
+					"/tmp/scribe-java/.git/objects/pack/pack-b0838be1c3b7b22ac27675baee3692c4d44f8cf0.pack");
 			FSDataInputStream in = fileSystem.open(path);
-			
+
 			PackParser pp = r.newObjectInserter().newPackParser(in);
 			pp.parse(null);
 
 			Git git = Git.wrap(r);
-			
+
 			DfsObjDatabase db = r.getObjectDatabase();
 
 			RevWalk revWalk = new RevWalk(r);
-			
+
 			PackedRefParser prp = new PackedRefParser();
-			FSDataInputStream ins = fileSystem.open(new Path("/tmp/scribe-java/.git/packed-refs"));
+			FSDataInputStream ins = fileSystem.open(new Path(
+					"/tmp/scribe-java/.git/packed-refs"));
 			List<PackedRef> pr = prp.parse(ins);
-			
-			for(PackedRef paref : pr) {
-				System.out.println("WALK TAG " + paref.getName());
+
+			for (PackedRef paref : pr) {
+				logger.debug("WALK TAG " + paref.getName());
 
 				revWalk.dispose();
 				RevCommit commit = revWalk.parseCommit(paref.getKey());
@@ -74,14 +78,14 @@ public class JGitTest implements Runnable {
 				while (treeWalk.next()) {
 					ObjectId objectId = treeWalk.getObjectId(0);
 					ObjectLoader loader = r.open(objectId);
-	
-					System.out.println(Constants.typeString(loader.getType())
-							+ ": " + objectId + " " + treeWalk.getPathString());
-					//System.out.println(getContent(r, objectId));
+
+					logger.debug(Constants.typeString(loader.getType()) + ": "
+							+ objectId + " " + treeWalk.getPathString());
+					// logger.debug(getContent(r, objectId));
 				}
 			}
 		} catch (Exception e) {
-			System.out.println("ABSTURZ...");
+			logger.debug("ABSTURZ...");
 			throw new WrappedRuntimeException(e);
 		}
 	}

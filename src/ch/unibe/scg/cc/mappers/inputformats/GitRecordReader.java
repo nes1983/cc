@@ -16,9 +16,10 @@ import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+import org.apache.log4j.Logger;
 
-public class GitRecordReader extends RecordReader<Text,BytesWritable>
-{
+public class GitRecordReader extends RecordReader<Text, BytesWritable> {
+	static Logger logger = Logger.getLogger(GitRecordReader.class);
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private FSDataInputStream fsin;
 	private Text currentKey;
@@ -28,88 +29,86 @@ public class GitRecordReader extends RecordReader<Text,BytesWritable>
 	private FileSystem fs;
 
 	@Override
-	public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException, InterruptedException
-	{
+	public void initialize(InputSplit inputSplit,
+			TaskAttemptContext taskAttemptContext) throws IOException,
+			InterruptedException {
 		FileSplit split = (FileSplit) inputSplit;
 		Configuration conf = taskAttemptContext.getConfiguration();
 		Path path = split.getPath();
 		fs = path.getFileSystem(conf);
-		
+
 		packFilePaths = new LinkedList<Path>();
-		System.out.println("yyy start finding pack files " + path);
+		logger.debug("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
-		
-		if(packFilePaths.isEmpty()) {
+
+		if (packFilePaths.isEmpty()) {
 			isFinished = true;
 			return;
 		}
 	}
-	
-	private void findPackFilePaths(FileSystem fs, Path path, Queue<Path> listToFill) throws IOException {
+
+	private void findPackFilePaths(FileSystem fs, Path path,
+			Queue<Path> listToFill) throws IOException {
 		FileStatus[] fstatus = fs.listStatus(path);
-		for(FileStatus f : fstatus) {
+		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
-			System.out.println("yyy scanning: " + f.getPath() + " || "
+			logger.debug("yyy scanning: " + f.getPath() + " || "
 					+ f.getPath().getName());
-			if(f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)) {
+			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)) {
 				listToFill.add(p);
-			}
-			else if(f.isDirectory())
+			} else if (f.isDirectory())
 				findPackFilePaths(fs, p, listToFill);
 		}
 	}
 
 	@Override
-	public boolean nextKeyValue() throws IOException, InterruptedException
-	{
-		if(packFilePaths.isEmpty()) {
+	public boolean nextKeyValue() throws IOException, InterruptedException {
+		if (packFilePaths.isEmpty()) {
 			isFinished = true;
-			System.out.println("yyy packFilePaths is empty... finished");
+			logger.debug("yyy packFilePaths is empty... finished");
 			return false;
 		}
 
 		Path packFilePath = packFilePaths.poll();
-		System.out.println("yyy opening " + packFilePath);
-		
+		logger.debug("yyy opening " + packFilePath);
+
 		fsin = fs.open(packFilePath);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		byte[] temp = new byte[8192];
-		while ( true )
-		{
+		while (true) {
 			int bytesRead = fsin.read(temp, 0, 8192);
-			if ( bytesRead > 0 )
+			if (bytesRead > 0)
 				bos.write(temp, 0, bytesRead);
 			else
 				break;
 		}
 		currentValue = new BytesWritable(bos.toByteArray());
 		currentKey = new Text(packFilePath.toString());
-		
+
 		return true;
-	}	
+	}
 
 	@Override
-	public float getProgress() throws IOException, InterruptedException
-	{
+	public float getProgress() throws IOException, InterruptedException {
 		return isFinished ? 1 : 0;
 	}
 
 	@Override
-	public Text getCurrentKey() throws IOException, InterruptedException
-	{
+	public Text getCurrentKey() throws IOException, InterruptedException {
 		return currentKey;
 	}
 
 	@Override
-	public BytesWritable getCurrentValue() throws IOException, InterruptedException
-	{
+	public BytesWritable getCurrentValue() throws IOException,
+			InterruptedException {
 		return currentValue;
 	}
 
 	@Override
-	public void close() throws IOException
-	{
-		try { fsin.close(); } catch (Exception e) { }
+	public void close() throws IOException {
+		try {
+			fsin.close();
+		} catch (Exception e) {
+		}
 	}
 }
-

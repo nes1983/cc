@@ -27,6 +27,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
+import org.apache.log4j.Logger;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
@@ -59,7 +60,7 @@ import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 
 public class GitTablePopulator implements Runnable {
-
+	static Logger logger = Logger.getLogger(GitTablePopulator.class);
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "2000";
 	private static final String REDUCE_MEMORY = "2000";
@@ -88,8 +89,8 @@ public class GitTablePopulator implements Runnable {
 					REDUCE_MEMORY);
 			String inputPaths = getInputPaths();
 			FileInputFormat.addInputPaths(job, inputPaths);
-			System.out.println("found: " + inputPaths);
-			System.out.println("yyy wait for completion");
+			logger.debug("found: " + inputPaths);
+			logger.debug("yyy wait for completion");
 			job.waitForCompletion(true);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
@@ -124,7 +125,7 @@ public class GitTablePopulator implements Runnable {
 		FileStatus[] fstatus = fs.listStatus(path);
 		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
-			System.out.println("yyy scanning: " + f.getPath() + " || "
+			logger.debug("yyy scanning: " + f.getPath() + " || "
 					+ f.getPath().getName());
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)
 					&& f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
@@ -171,7 +172,7 @@ public class GitTablePopulator implements Runnable {
 		public void map(Text key, BytesWritable value, Context context)
 				throws IOException, InterruptedException {
 			String packFilePath = key.toString();
-			System.out.println("yyy RECEIVED: " + packFilePath);
+			logger.debug("yyy RECEIVED: " + packFilePath);
 			InputStream packFileStream = new ByteArrayInputStream(
 					value.getBytes());
 			DfsRepositoryDescription desc = new DfsRepositoryDescription(
@@ -205,7 +206,7 @@ public class GitTablePopulator implements Runnable {
 			List<PackedRef> pr = prp.parse(ins);
 
 			String projectName = packFilePath; // XXX
-			System.out.println("PROCESSING: " + packFilePath);
+			logger.debug("PROCESSING: " + packFilePath);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
 				int toIndex = tagCount - 1;
@@ -219,14 +220,14 @@ public class GitTablePopulator implements Runnable {
 			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
 				PackedRef paref = it.next();
 				String tag = paref.getName();
-				System.out.println("WALK TAG: " + tag);
+				logger.debug("WALK TAG: " + tag);
 
 				revWalk.dispose();
 				RevCommit commit;
 				try {
 					commit = revWalk.parseCommit(paref.getKey());
 				} catch (MissingObjectException e) {
-					System.out.println("ERROR in file " + packFilePath + ": "
+					logger.debug("ERROR in file " + packFilePath + ": "
 							+ e.getMessage());
 					continue;
 				}
@@ -257,7 +258,7 @@ public class GitTablePopulator implements Runnable {
 				}
 				processedTagsCounter++;
 			}
-			System.out.println("svd FINISHED PROCESSING " + packFilePath);
+			logger.debug("svd FINISHED PROCESSING " + packFilePath);
 		}
 
 		private String getContent(Repository repository, ObjectId objectId)

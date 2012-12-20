@@ -10,8 +10,11 @@ import org.apache.hadoop.mapreduce.JobContext;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.log4j.Logger;
 
 public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
+	static Logger logger = Logger.getLogger(GitPathInputFormat.class);
+
 	@Override
 	protected boolean isSplitable(JobContext context, Path filename) {
 		return false;
@@ -21,7 +24,7 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 	public RecordReader<Text, BytesWritable> createRecordReader(
 			InputSplit split, TaskAttemptContext context) throws IOException,
 			InterruptedException {
-		System.out.println("yyy recordreader creation");
+		logger.debug("yyy recordreader creation");
 		return new GitPathRecordReader();
 	}
 }
