@@ -8,7 +8,7 @@ tmp/*
 *~.nib
 *.patch
 cc.jar
-
+.DS_STORE
 .metadata/*
 
 *.class
