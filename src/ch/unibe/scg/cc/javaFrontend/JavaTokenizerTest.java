@@ -51,7 +51,7 @@ public class JavaTokenizerTest {
 	}
 
 	@Test
-	public void test() {
+	public void testSampleClass() {
 		Answer<Object> a = Mockito.RETURNS_DEEP_STUBS;
 
 		JavaTokenizer tokenizer = new JavaTokenizer();
@@ -92,6 +92,54 @@ public class JavaTokenizerTest {
 				+ "\t\tif(System.timeInMillis() > 10000)\n"
 				+ "\t\t\tout.println(1337);\n" + "\t\tmain(null);\n" + "\t}\n"
 				+ "}\n";
+	}
+
+	@Test
+	public void testOtherClass() {
+		JavaTokenizer tokenizer = new JavaTokenizer();
+		Provider<Function> provider = (Provider<Function>) Mockito
+				.mock(Provider.class);
+		Function function = Mockito.mock(Function.class);
+		stub(provider.get()).toReturn(function);
+		tokenizer.functionProvider = provider;
+
+		List<Function> list = tokenizer.tokenize(otherClass(), null);
+		// Don't delete! The only way to fix the unit test!
+		// for( Map.Entry<String, Location> e : m.entrySet()) {
+		// logger.debug(StringEscapeUtils.escapeJava(e.getKey()));
+		// logger.debug("---");
+		// }
+
+		assertThat(list.size(), is(3));
+		verify(function).setContents("package ch.unibe.testdata;\n\n");
+		verify(function).setContents(
+				"public class Apfel {\n\n\t/**\n\t * @param args\n\t */\n\t");
+		verify(function).setContents(
+				"public static void main(String[] args) {\n"
+						+ "\t\tString name = \"Apfel\";\n"
+						+ "\t\tSystem.out.println(name);\n"
+						+ "\t\tint a = 10;\n" + "\t\twhile (a > 0) {\n"
+						+ "\t\t\tSystem.out.println(\"a\" + a);\n"
+						+ "\t\t\ta -= 1;\n" + "\t\t}\n"
+						+ "\t\tfor (int i = 0; i < 10; i++) {\n"
+						+ "\t\t\tSystem.out.println(\"i\" + i);\n" + "\t\t}\n"
+						+ "\t\tSystem.out.println(\"finished\");\n"
+						+ "\t\treturn;\n" + "\t}\n" + "	\n" + "}\n");
+	}
+
+	// produced a bug earlier
+	String otherClass() {
+		return "package ch.unibe.testdata;\n" + "\n" + "public class Apfel {\n"
+				+ "\n" + "\t/**\n" + "\t * @param args\n" + "\t */\n"
+				+ "\tpublic static void main(String[] args) {\n"
+				+ "\t\tString name = \"Apfel\";\n"
+				+ "\t\tSystem.out.println(name);\n" + "\t\tint a = 10;\n"
+				+ "\t\twhile (a > 0) {\n"
+				+ "\t\t\tSystem.out.println(\"a\" + a);\n" + "\t\t\ta -= 1;\n"
+				+ "\t\t}\n" + "\t\tfor (int i = 0; i < 10; i++) {\n"
+				+ "\t\t\tSystem.out.println(\"i\" + i);\n" + "\t\t}\n"
+				+ "\t\tSystem.out.println(\"finished\");\n" + "\t\treturn;\n"
+				+ "\t}\n" + "	\n" + "}\n";
 	}
 
 }

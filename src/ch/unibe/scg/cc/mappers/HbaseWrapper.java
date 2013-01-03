@@ -25,68 +25,77 @@ public class HbaseWrapper {
 	private ConfigurationProvider configurationProvider;
 
 	@SuppressWarnings("rawtypes")
-	public Job createMapJob(String jobName, 
-			Class<?> jobClassName,
+	public Job createMapJob(String jobName, Class<?> jobClassName,
 			String mapperClassName,
 			Class<? extends WritableComparable> outputKey,
-			Class<? extends Writable> outputValue) throws IOException, InterruptedException, ClassNotFoundException {
+			Class<? extends Writable> outputValue) throws IOException,
+			InterruptedException, ClassNotFoundException {
 
 		Class<MRMainMapper> mapperClass = MRMainMapper.class;
-		
-		Job thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, null, outputKey, outputValue);
-		
-		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
+
+		Job thisJob = initMapReduceJob(jobName, jobClassName, mapperClass,
+				null, outputKey, outputValue);
+
+		thisJob.getConfiguration()
+				.set("GuiceMapperAnnotation", mapperClassName);
 
 		return thisJob;
 	}
 
 	@SuppressWarnings("rawtypes")
-	public boolean launchTableMapReduceJob(String jobName, 
-			String tableNameMapper, String tableNameReducer,
-			Scan tableScanner, Class<?> jobClassName,
-			String mapperClassName,
+	public boolean launchTableMapReduceJob(String jobName,
+			String tableNameMapper, String tableNameReducer, Scan tableScanner,
+			Class<?> jobClassName, String mapperClassName,
 			String reducerClassName,
 			Class<? extends WritableComparable> outputKey,
-			Class<? extends Writable> outputValue) throws IOException, InterruptedException, ClassNotFoundException {
+			Class<? extends Writable> outputValue, String mapred_child_java_opts)
+			throws IOException, InterruptedException, ClassNotFoundException {
 
 		Job thisJob;
 		Class<MRMainTableMapper> mapperClass = MRMainTableMapper.class;
 		Class<MRMainTableReducer> reducerClass = MRMainTableReducer.class;
-		
-		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, reducerClass, outputKey, outputValue);
-		
-		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner, mapperClass, outputKey, outputValue, thisJob);
-		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass, thisJob);
-		
-		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
-		thisJob.getConfiguration().set("GuiceReducerAnnotation", reducerClassName);
+
+		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass,
+				reducerClass, outputKey, outputValue);
+
+		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner,
+				mapperClass, outputKey, outputValue, thisJob);
+		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass,
+				thisJob);
+
+		thisJob.getConfiguration()
+				.set("GuiceMapperAnnotation", mapperClassName);
+		thisJob.getConfiguration().set("GuiceReducerAnnotation",
+				reducerClassName);
+
+		thisJob.getConfiguration().set("mapred.child.java.opts",
+				mapred_child_java_opts);
 
 		return thisJob.waitForCompletion(true);
 	}
 
 	@SuppressWarnings("rawtypes")
-	private Job initMapReduceJob(
-			String jobName,
-			Class<?> jobClassName,
+	private Job initMapReduceJob(String jobName, Class<?> jobClassName,
 			Class<? extends Mapper> mapperClassName,
-			Class<? extends Reducer> reducerClassName, 
-			Class<?> outputKey,
+			Class<? extends Reducer> reducerClassName, Class<?> outputKey,
 			Class<?> outputValue) throws IOException {
 
 		Job thisJob = new Job(configurationProvider.get(), jobName);
 
 		thisJob.setJarByClass(jobClassName);
 		thisJob.setMapperClass(mapperClassName);
-		
-		if(reducerClassName != null) {
+
+		if (reducerClassName != null) {
 			thisJob.setReducerClass(reducerClassName);
 		}
 
 		thisJob.setMapOutputKeyClass(outputValue);
 		thisJob.setMapOutputValueClass(outputValue);
 
-//		thisJob.setInputFormatClass(TableInputFormat.class);// done by TableMapReduceUtil map
-//		thisJob.setOutputFormatClass(TableOutputFormat.class); //done by TableMapReduceUtil reduce
+		// thisJob.setInputFormatClass(TableInputFormat.class);// done by
+		// TableMapReduceUtil map
+		// thisJob.setOutputFormatClass(TableOutputFormat.class); //done by
+		// TableMapReduceUtil reduce
 
 		return thisJob;
 	}

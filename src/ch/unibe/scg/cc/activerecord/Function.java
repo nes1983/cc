@@ -20,10 +20,21 @@ public class Function extends Column {
 
 	@Inject
 	StandardHasher standardHasher;
-	
+
 	public Function() {
 		this.hashFacts = new ArrayList<HashFact>();
 		this.isOutdatedHash = true;
+	}
+
+	/**
+	 * Creates a new function by copying only "contents", "baseline" and
+	 * "standardHasher" from the provided function.
+	 */
+	public Function(Function function) {
+		this.hashFacts = new ArrayList<HashFact>();
+		this.standardHasher = function.standardHasher;
+		this.setBaseLine(function.getBaseLine());
+		this.setContents(function.getContents().toString());
 	}
 
 	public void save(Put put) throws IOException {
@@ -32,7 +43,7 @@ public class Function extends Column {
 
 	public byte[] getHash() {
 		assert getContents() != null;
-		if(isOutdatedHash)
+		if (isOutdatedHash)
 			this.hash = standardHasher.hash(getContents().toString());
 		return this.hash;
 	}
@@ -57,11 +68,11 @@ public class Function extends Column {
 	public void setContents(String contents) {
 		setContents(new StringBuilder(contents));
 	}
-	
+
 	public void addHashFact(HashFact hashFact) {
 		this.hashFacts.add(hashFact);
 	}
-	
+
 	public List<HashFact> getHashFacts() {
 		return this.hashFacts;
 	}
