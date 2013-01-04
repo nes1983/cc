@@ -6,6 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import javax.inject.Singleton;
 
 import com.google.inject.Provider;
+
 @Singleton
 public class MessageDigestProvider implements Provider<MessageDigest> {
 

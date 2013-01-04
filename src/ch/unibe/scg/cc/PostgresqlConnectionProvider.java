@@ -8,7 +8,7 @@ import java.util.Properties;
 import com.google.inject.Provider;
 
 public class PostgresqlConnectionProvider implements Provider<Connection> {
-	
+
 	void loadDriver() {
 		try {
 			Class.forName("org.postgresql.Driver");
@@ -22,8 +22,8 @@ public class PostgresqlConnectionProvider implements Provider<Connection> {
 		loadDriver();
 
 		Properties props = new Properties();
-		props.setProperty("user","niko");
-		props.setProperty("password","Richardigel");
+		props.setProperty("user", "niko");
+		props.setProperty("password", "Richardigel");
 		props.setProperty("tcpKeepAlive", "true");
 		props.setProperty("prepareThreshold", "1");
 		Connection conn = null;

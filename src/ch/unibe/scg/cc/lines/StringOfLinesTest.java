@@ -22,18 +22,14 @@ public class StringOfLinesTest {
 		StringOfLines stringOfLines = new StringOfLinesFactory()
 				.make(sampleString);
 		assertThat(stringOfLines.getNumberOfLines(), is(7));
-		assertThat(new StringOfLinesFactory().make("a").getNumberOfLines(), is(1));
+		assertThat(new StringOfLinesFactory().make("a").getNumberOfLines(),
+				is(1));
 		return stringOfLines;
 	}
-	
 
 	@Given("testLinesOfCode")
 	public void getLines(StringOfLines stringOfLines) {
 		assertThat(stringOfLines.getLines(3, 3), is("\nd\ne\nf\n"));
 	}
- 
+
 }
-
-
-
-

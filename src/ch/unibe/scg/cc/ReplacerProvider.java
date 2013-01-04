@@ -17,13 +17,14 @@ import com.google.inject.Provider;
 public abstract class ReplacerProvider implements Provider<Replace[]> {
 
 	final Replace[] type = new Replace[] {};
+
 	@Override
 	public Replace[] get() {
 		List<Replace> ret = new ArrayList<Replace>();
 		Method[] methods = this.getClass().getMethods();
 		assert methods.length > 0;
-		for(Method method : methods) {
-			if(! method.getName().startsWith("make")) {
+		for (Method method : methods) {
+			if (!method.getName().startsWith("make")) {
 				continue;
 			}
 			Replace r = makeReplace(method);
@@ -31,13 +32,14 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 		}
 		return ret.toArray(type);
 	}
-	
+
 	Replace makeReplace(Method method) {
 		Replace r;
 		try {
 			r = (Replace) method.invoke(this);
 		} catch (IllegalArgumentException e) {
-			throw new RuntimeException("Methods named 'make' should not accept arguments.", e);
+			throw new RuntimeException(
+					"Methods named 'make' should not accept arguments.", e);
 		} catch (IllegalAccessException e) {
 			throw new RuntimeException(e);
 		} catch (InvocationTargetException e) {
@@ -46,5 +48,5 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 		assert r != null;
 		return r;
 	}
-	 
+
 }

@@ -24,26 +24,26 @@ public class ProjectWalkerTest {
 	final Connection connection = mock(Connection.class);
 	final PreparedStatement preparedStatement = mock(PreparedStatement.class);
 	final ResultSet resultSet = mock(ResultSet.class);
-	
+
 	@Test
 	public ProjectWalker makeProjectWalker() {
-		if(true)
+		if (true)
 			return null;
 		ProjectWalker walker = Guice.createInjector(testingModule(),
-				new CCModule(), new JavaModule()).getInstance(ProjectWalker.class);
+				new CCModule(), new JavaModule()).getInstance(
+				ProjectWalker.class);
 		assertThat(walker.projectFactory, notNullValue());
 		return walker;
 	}
-	
+
 	Module testingModule() {
 		return new AbstractModule() {
 
 			@Override
 			protected void configure() {
-				bind(Connection.class).toInstance(connection);	
+				bind(Connection.class).toInstance(connection);
 			}
 		};
 	}
-
 
 }

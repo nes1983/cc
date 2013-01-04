@@ -10,16 +10,17 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
 public class HTableProvider implements Provider<HTable> {
-	
+
 	@Inject
 	Configuration hbaseConfig;
-	
-	@Inject @Named("tableName")
+
+	@Inject
+	@Named("tableName")
 	String tableName;
-	
+
 	@Override
 	public HTable get() {
-        HTable htable;
+		HTable htable;
 		try {
 			htable = new HTable(hbaseConfig, tableName);
 			htable.setAutoFlush(false);

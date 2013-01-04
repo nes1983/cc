@@ -3,7 +3,7 @@ package ch.unibe.scg.cc.git;
 import org.eclipse.jgit.lib.ObjectId;
 
 public class PackedRef {
-	
+
 	final ObjectId key;
 	final String name;
 

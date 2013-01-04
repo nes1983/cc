@@ -27,19 +27,19 @@ public class ReplaceTest {
 		Replace r = new Replace(new Pattern("x"), "y");
 		assertThat(r.replacementString.contents.size(), is(1));
 		return r;
-		
+
 	}
-	
+
 	@Given("testMakeReplace")
 	public Replace testReplace(Replace r) {
 		StringBuilder sb = new StringBuilder("123x123");
-		
+
 		r.replaceAll(sb);
 		assertThat(sb.toString(), is("123y123"));
 		return r;
 	}
-	
-	@Test 
+
+	@Test
 	public Replace makePatternReplace() {
 		Replace r = new Replace(new Pattern("x"), "<$0>");
 		ArrayList<Segment> contents = r.replacementString.contents;
@@ -47,11 +47,10 @@ public class ReplaceTest {
 		assertThat(contents.get(0), ((Matcher) isA(LiteralSegment.class)));
 		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));
 		assertThat(contents.get(2), ((Matcher) isA(LiteralSegment.class)));
-		assertThat(((LiteralSegment)contents.get(2)).s, is(">"));
+		assertThat(((LiteralSegment) contents.get(2)).s, is(">"));
 		return r;
 	}
-	
-	
+
 	@Given("makePatternReplace")
 	public Replace useReplacePattern(Replace r) {
 		StringBuilder sb = new StringBuilder("xxyxx");
@@ -59,21 +58,20 @@ public class ReplaceTest {
 		assertThat(sb.toString(), is("<x><x>y<x><x>"));
 		return r;
 	}
-	
-	@Test 
+
+	@Test
 	public Replace simpleSelfReplace() {
 		Replace r = new Replace(new Pattern("(x)"), "$0");
 		String selfReplaced = r.allReplaced("xxx");
 		assertThat(selfReplaced, is("xxx"));
 		return r;
 	}
-	
-	@Test 
+
+	@Test
 	public Replace reverseThings() {
 		Replace r = new Replace(new Pattern("(\\d*)(bla)"), "$2$1");
 
 		ArrayList<Segment> contents = r.replacementString.contents;
-
 
 		String reversed = r.allReplaced("123bla");
 		assertThat(reversed, is("bla123"));

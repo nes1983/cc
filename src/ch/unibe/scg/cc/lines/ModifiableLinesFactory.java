@@ -32,5 +32,4 @@ public class ModifiableLinesFactory {
 		return this.make(string, '\n');
 	}
 
-
 }

@@ -22,11 +22,11 @@ public class HTableWriteBuffer {
 		this.htable = htable;
 		this.puts = new ArrayList<Put>(MAX_SIZE);
 	}
-	
+
 	public void write(Put put) throws IOException {
 		assert put != null;
 		puts.add(put);
-		if(puts.size() == MAX_SIZE ) {
+		if (puts.size() == MAX_SIZE) {
 			HTableUtil.bucketRsPut(htable, puts);
 			puts.clear();
 		}
@@ -37,11 +37,11 @@ public class HTableWriteBuffer {
 		HTableUtil.bucketRsPut(htable, puts);
 		assert invariant();
 	}
-	
+
 	protected boolean invariant() {
 		return puts.size() <= MAX_SIZE;
 	}
-	
+
 	public static interface BufferFactory {
 		public HTableWriteBuffer create(HTable htable);
 	}

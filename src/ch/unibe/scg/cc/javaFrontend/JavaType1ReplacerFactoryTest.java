@@ -24,19 +24,20 @@ public class JavaType1ReplacerFactoryTest {
 				startsWith("package fish.stink;\nimport java.util.*;\nimport static System.out;\npublic class Rod {\n"));
 		return replacers;
 	}
-	
+
 	@Given("checkWhiteSpaces")
 	public Replace[] checkVisibility(Replace[] replaces) {
-		StringBuilder sb = new StringBuilder("\nprotected static void doIt() {\n");
+		StringBuilder sb = new StringBuilder(
+				"\nprotected static void doIt() {\n");
 		replaces[5].replaceAll(sb);
 		assertThat(sb.toString(), is("\nstatic void doIt() {\n"));
 		return replaces;
 	}
-	
+
 	@Given("checkWhiteSpaces")
 	public Normalizer checkAll(Replace[] replaces) {
 		StringBuilder sb = new StringBuilder(sampleClass());
-		assertThat(replaces,is(arrayWithSize(8)));
+		assertThat(replaces, is(arrayWithSize(8)));
 		Normalizer n = new Normalizer(replaces);
 		n.normalize(sb);
 		assertThat(
@@ -47,18 +48,14 @@ public class JavaType1ReplacerFactoryTest {
 	}
 
 	String sampleClass() {
-		return    "package        fish.stink;\n" +
-				  "import java.util.*;\n"
-				+ "import static System.out;\n\n" 
-				+ "public class Rod {\n"
+		return "package        fish.stink;\n" + "import java.util.*;\n"
+				+ "import static System.out;\n\n" + "public class Rod {\n"
 				+ "\tpublic static void main(String[] args) {\n"
 				+ "\t\tout.println(\"Hiya, wassup?\");\n"
 				+ "\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n" + "	}\n"
 				+ "\t\t\tprotected static void doIt() {\n"
 				+ "\t\tif(System.timeInMillis() > 10000)\n"
-				+ "\t\t\tout.println(1337);\n" 
-				+ "\t\tmain(null);\n"
-				+ "\t}\n"
+				+ "\t\t\tout.println(1337);\n" + "\t\tmain(null);\n" + "\t}\n"
 				+ "}\n";
 	}
 }

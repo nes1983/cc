@@ -35,19 +35,24 @@ public class ProjectWalker {
 	@Java
 	Frontend javaFrontend;
 
-	@Inject @Named("versions")
+	@Inject
+	@Named("versions")
 	HTable versions;
-	
-	@Inject @Named("files")
+
+	@Inject
+	@Named("files")
 	HTable files;
-	
-	@Inject @Named("functions")
+
+	@Inject
+	@Named("functions")
 	HTable functions;
-	
-	@Inject @Named("facts")
+
+	@Inject
+	@Named("facts")
 	HTable facts;
-	
-	@Inject @Named("strings")
+
+	@Inject
+	@Named("strings")
 	HTable strings;
 
 	@Inject
@@ -67,7 +72,7 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(String path) throws  IOException {
+	public void crawl(String path) throws IOException {
 		SuffixFileFilter filter = new SuffixFileFilter(".tar.gz");
 		File base = new File(path);
 		String[] projectNames = base
@@ -83,14 +88,18 @@ public class ProjectWalker {
 		}
 	}
 
-	public void crawl(FileObject project, String projectName) throws  IOException {
+	public void crawl(FileObject project, String projectName)
+			throws IOException {
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
-		System.out.format("Processing files: %s%n", ArrayUtils.toString(javaFiles));
+		System.out.format("Processing files: %s%n",
+				ArrayUtils.toString(javaFiles));
 		List<Version> versions = crawl(javaFiles);
-		
-		for(Version version : versions) {
-			Project proj = projectFactory.create(projectName, version, "1"); // TODO get versionNumber
+
+		for (Version version : versions) {
+			Project proj = projectFactory.create(projectName, version, "1"); // TODO
+																				// get
+																				// versionNumber
 			javaFrontend.register(proj);
 		}
 	}
@@ -100,25 +109,27 @@ public class ProjectWalker {
 		for (FileObject o : javaFiles) {
 			versions.add(crawl(o));
 		}
-		
+
 		return versions;
 	}
 
 	public Version crawl(FileObject file) throws IOException {
-		InputStream 	is = file.getContent().getInputStream();
+		InputStream is = file.getContent().getInputStream();
 		String contents = IOUtils.toString(is, "UTF-8");
 		FileName name = file.getName();
 		CodeFile codeFile = javaFrontend.register(contents, name.getBaseName());
-		
-		// XXX flushCommits get called for every single file --> bad performance!?
-        versions.flushCommits();
-        files.flushCommits();
-        functions.flushCommits();
-        facts.flushCommits();
-        strings.flushCommits();
-        
-        String filePath = name.getParent().getPath() + "/" + name.getBaseName();
-		Version version = versionFactory.create(filePath, codeFile); // XXX dirty!?
+
+		// XXX flushCommits get called for every single file --> bad
+		// performance!?
+		versions.flushCommits();
+		files.flushCommits();
+		functions.flushCommits();
+		facts.flushCommits();
+		strings.flushCommits();
+
+		String filePath = name.getParent().getPath() + "/" + name.getBaseName();
+		Version version = versionFactory.create(filePath, codeFile); // XXX
+																		// dirty!?
 		return version;
 	}
 }

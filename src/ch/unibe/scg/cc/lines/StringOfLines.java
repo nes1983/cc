@@ -14,14 +14,18 @@ public class StringOfLines {
 	public int getNumberOfLines() {
 		return separators.length - 1;
 	}
-	
+
 	/**
-	 * Get <code> length </code> lines, starting with <code>from</code>. 
-	 * @param length Number of lines to return.
-	 * @param from Index of first returned line. Counting starts with 0.
+	 * Get <code> length </code> lines, starting with <code>from</code>.
+	 * 
+	 * @param length
+	 *            Number of lines to return.
+	 * @param from
+	 *            Index of first returned line. Counting starts with 0.
 	 */
 	public String getLines(int from, int length) {
-		return string.substring(separators[from], separators[from + length]+1);
+		return string
+				.substring(separators[from], separators[from + length] + 1);
 	}
 
 }

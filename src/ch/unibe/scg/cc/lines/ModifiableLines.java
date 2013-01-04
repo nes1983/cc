@@ -52,48 +52,49 @@ public class ModifiableLines {
 	}
 
 	/**
-	 * Replaces the string from i to j, preserving line numbers. 
-	 * @param from 
+	 * Replaces the string from i to j, preserving line numbers.
+	 * 
+	 * @param from
 	 * @param to
 	 * @param replacement
-	 * 	   May not contain character <code>'\n'</code>.
+	 *            May not contain character <code>'\n'</code>.
 	 */
 	public void replace(int from, int to, String replacement) {
 		assert replacement.indexOf('\n') == -1;
-		int start = Collections.binarySearch(lineBreaks, new LineBreak(from,0), comparator);
-		int end = Collections.binarySearch(lineBreaks, new LineBreak(to,0), comparator);
+		int start = Collections.binarySearch(lineBreaks,
+				new LineBreak(from, 0), comparator);
+		int end = Collections.binarySearch(lineBreaks, new LineBreak(to, 0),
+				comparator);
 		start = Math.abs(start);
-		if(end < 0)  {
+		if (end < 0) {
 			end = -end - 2;
 		}
-		removeFromTo(lineBreaks,start,end);
-		
+		removeFromTo(lineBreaks, start, end);
+
 		int removedLines = positivePart(end - start + 1);
-		lineBreaks.get(start).weight+=removedLines;
-		final int shift = replacement.length() - (to-from);
-		for(int i = end;i<lineBreaks.size();i++) {
-			lineBreaks.get(i).position+=shift;
+		lineBreaks.get(start).weight += removedLines;
+		final int shift = replacement.length() - (to - from);
+		for (int i = end; i < lineBreaks.size(); i++) {
+			lineBreaks.get(i).position += shift;
 		}
 
 		string.replace(from, to, replacement);
 	}
 
 	int positivePart(int i) {
-		if(i < 0) 
+		if (i < 0)
 			return 0;
 		return i;
 	}
 
 	void removeFromTo(List<?> list, int start, int end) {
 		assert end >= start;
-		for(int i=start;i<=end;i++) {
+		for (int i = start; i <= end; i++) {
 			list.remove(i);
 		}
 	}
-	
+
 	public String toString() {
 		return string.toString();
 	}
 }
-
-

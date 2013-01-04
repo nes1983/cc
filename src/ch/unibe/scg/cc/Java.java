@@ -1,4 +1,5 @@
 package ch.unibe.scg.cc;
+
 import com.google.inject.BindingAnnotation;
 import java.lang.annotation.Target;
 import java.lang.annotation.Retention;
@@ -7,7 +8,9 @@ import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 
-@BindingAnnotation @Target({ FIELD, PARAMETER, METHOD }) @Retention(RUNTIME)
+@BindingAnnotation
+@Target({ FIELD, PARAMETER, METHOD })
+@Retention(RUNTIME)
 public @interface Java {
 
 }

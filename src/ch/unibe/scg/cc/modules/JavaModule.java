@@ -16,36 +16,41 @@ import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 
-public class JavaModule extends AbstractModule{
-	
+public class JavaModule extends AbstractModule {
+
 	@Override
 	protected void configure() {
 		bind(Tokenizer.class).to(JavaTokenizer.class);
 		install(new Type1Module());
 		install(new Type2Module());
-		bind(Frontend.class).annotatedWith(Java.class).to(Frontend.class); //XXX Make private
+		bind(Frontend.class).annotatedWith(Java.class).to(Frontend.class); // XXX
+																			// Make
+																			// private
 	}
 }
-
 
 class Type1Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontend.class).annotatedWith(Type1.class).to(Normalizer.class);
+		bind(PhaseFrontend.class).annotatedWith(Type1.class).to(
+				Normalizer.class);
 		expose(PhaseFrontend.class).annotatedWith(Type1.class);
-		
-		//Private:
-		bind(new TypeLiteral<Replace[]>() {}).toProvider(JavaType1ReplacerFactory.class);
+
+		// Private:
+		bind(new TypeLiteral<Replace[]>() {
+		}).toProvider(JavaType1ReplacerFactory.class);
 	}
 }
 
 class Type2Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontend.class).annotatedWith(Type2.class).to(Normalizer.class);
+		bind(PhaseFrontend.class).annotatedWith(Type2.class).to(
+				Normalizer.class);
 		expose(PhaseFrontend.class).annotatedWith(Type2.class);
-		
-		//Private:
-		bind(new TypeLiteral<Replace[]>() {}).toProvider(Type2ReplacerFactory.class);
+
+		// Private:
+		bind(new TypeLiteral<Replace[]>() {
+		}).toProvider(Type2ReplacerFactory.class);
 	}
 }
