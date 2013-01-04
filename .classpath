@@ -45,20 +45,20 @@
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
 	<classpathentry kind="lib" path="libs/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="libs/jsch-0.1.48.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-auth-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-hdfs-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-api-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-common-2.0.0-cdh4.1.2.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-server-common-2.0.0-cdh4.1.2.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-auth-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-hdfs-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-api-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-server-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
 	<classpathentry kind="lib" path="libs/slf4j-api-1.7.2.jar"/>
 	<classpathentry kind="lib" path="libs/slf4j-simple-1.7.2.jar"/>
-	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.1.2-security.jar"/>
+	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.1.2-security.jar" sourcepath="libs/hbase-0.92.1-cdh4.1.2.zip"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
 		<attributes>
