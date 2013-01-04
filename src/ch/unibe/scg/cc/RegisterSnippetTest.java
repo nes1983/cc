@@ -22,8 +22,8 @@ public class RegisterSnippetTest {
 		final HashFact hashFact = mock(HashFact.class);
 		when(hashFactProvider.get()).thenReturn(hashFact);
 
-		CloneRegistry registry = new CloneRegistry(hashFactProvider,null);
-		Function function = new Function();
+		CloneRegistry registry = new CloneRegistry(hashFactProvider, null);
+		Function function = new Function(null, 0, "");
 
 		byte[] bytes = new byte[] { 0 };
 		registry.register(bytes, "", function, null, (byte) 0x03);

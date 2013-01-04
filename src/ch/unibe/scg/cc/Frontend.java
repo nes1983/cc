@@ -24,6 +24,7 @@ public class Frontend {
 	protected Tokenizer tokenizer;
 	RealCodeFileFactory codeFileFactory;
 	RealVersionFactory versionFactory;
+	Function.FunctionFactory functionFactory;
 
 	@Inject
 	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher,
@@ -31,7 +32,8 @@ public class Frontend {
 			StringOfLinesFactory stringOfLinesFactory,
 			RegisterClonesBackend backend, Tokenizer tokenizer,
 			RealCodeFileFactory codeFileFactory,
-			RealVersionFactory versionFactory) {
+			RealVersionFactory versionFactory,
+			Function.FunctionFactory functionFactory) {
 		super();
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
@@ -42,6 +44,7 @@ public class Frontend {
 		this.tokenizer = tokenizer;
 		this.codeFileFactory = codeFileFactory;
 		this.versionFactory = versionFactory;
+		this.functionFactory = functionFactory;
 	}
 
 	@ForTestingOnly
@@ -114,8 +117,9 @@ public class Frontend {
 	}
 
 	void registerFunction(CodeFile codeFile, Function function) {
-		StringBuilder contents = function.getContents();
-		StringOfLines contentsStringOfLines = asSOL(contents);
+		StringBuilder contents = new StringBuilder(function.getContents());
+		StringOfLines contentsStringOfLines = stringOfLinesFactory
+				.make(contents.toString());
 
 		if (contentsStringOfLines.getNumberOfLines() < backend.MINIMUM_LINES) {
 			return;
@@ -126,20 +130,20 @@ public class Frontend {
 		Function functionType1 = function;
 		codeFile.addFunction(functionType1);
 
-		Function functionType2 = new Function(functionType1);
-		type2.normalize(functionType2.getContents());
-		contentsStringOfLines = asSOL(functionType2.getContents());
+		type2.normalize(contents);
+		String contentsString = contents.toString();
+		Function functionType2 = functionFactory.makeFunction(
+				functionType1.getBaseLine(), contentsString);
+		contentsStringOfLines = stringOfLinesFactory.make(functionType2
+				.getContents());
 		backend.registerConsecutiveLinesOfCode(contentsStringOfLines,
 				functionType2, Main.TYPE_2_CLONE);
 		codeFile.addFunction(functionType2);
 
-		Function functionType3 = new Function(functionType2);
+		Function functionType3 = functionFactory.makeFunction(
+				functionType2.getBaseLine(), contentsString);
 		backend.shingleRegisterFunction(contentsStringOfLines, functionType3);
 		codeFile.addFunction(functionType3);
-	}
-
-	private StringOfLines asSOL(StringBuilder sb) {
-		return stringOfLinesFactory.make(sb.toString());
 	}
 
 }

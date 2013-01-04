@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
 import javax.inject.Singleton;
 
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.activerecord.Function;
+import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
@@ -19,7 +19,7 @@ public class JavaTokenizer implements Tokenizer {
 	final String splitterRegex = "([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
 
 	@Inject
-	Provider<Function> functionProvider;
+	FunctionFactory functionFactory;
 
 	final RunAutomaton splitter;
 
@@ -42,8 +42,8 @@ public class JavaTokenizer implements Tokenizer {
 			lineLength = countOccurrences(currentFunctionString, '\n');
 
 			if (!currentFunctionString.equals("")) {
-				Function function = makeFunction(currentLineNumber, fileName,
-						currentFunctionString);
+				Function function = functionFactory.makeFunction(
+						currentLineNumber, currentFunctionString);
 				ret.add(function);
 			}
 
@@ -54,18 +54,11 @@ public class JavaTokenizer implements Tokenizer {
 		// Location location = makeLocation(currentLineNumber,
 		// countOccurrences(currentFunction, '\n'));
 		if (!currentFunctionString.equals("")) {
-			Function function = makeFunction(currentLineNumber, fileName,
+			Function function = functionFactory.makeFunction(currentLineNumber,
 					currentFunctionString);
 			ret.add(function);
 		}
 		return ret;
-	}
-
-	Function makeFunction(int baseLine, String fname, String contents) {
-		Function f = functionProvider.get();
-		f.setBaseLine(baseLine);
-		f.setContents(contents);
-		return f;
 	}
 
 	public static int countOccurrences(String haystack, char needle) {

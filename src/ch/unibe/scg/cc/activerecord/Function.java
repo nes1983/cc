@@ -10,31 +10,32 @@ import org.apache.hadoop.hbase.client.Put;
 
 import ch.unibe.scg.cc.StandardHasher;
 
+import com.google.inject.assistedinject.Assisted;
+
 public class Function extends Column {
 
-	private List<HashFact> hashFacts;
-	private int baseLine;
-	transient StringBuilder contents;
-	private byte[] hash;
-	private boolean isOutdatedHash;
+	final private List<HashFact> hashFacts;
+	final private int baseLine;
+	final transient CharSequence contents;
+	private byte[] hash = null;
 
-	@Inject
-	StandardHasher standardHasher;
+	final StandardHasher standardHasher;
 
-	public Function() {
-		this.hashFacts = new ArrayList<HashFact>();
-		this.isOutdatedHash = true;
+	public static interface FunctionFactory {
+		Function makeFunction(int baseLine, CharSequence contents);
 	}
 
+	@Inject
 	/**
 	 * Creates a new function by copying only "contents", "baseline" and
 	 * "standardHasher" from the provided function.
 	 */
-	public Function(Function function) {
+	public Function(StandardHasher standardHasher, @Assisted int baseLine,
+			@Assisted CharSequence contents) {
 		this.hashFacts = new ArrayList<HashFact>();
-		this.standardHasher = function.standardHasher;
-		this.setBaseLine(function.getBaseLine());
-		this.setContents(function.getContents().toString());
+		this.standardHasher = standardHasher;
+		this.baseLine = baseLine;
+		this.contents = contents;
 	}
 
 	public void save(Put put) throws IOException {
@@ -43,30 +44,18 @@ public class Function extends Column {
 
 	public byte[] getHash() {
 		assert getContents() != null;
-		if (isOutdatedHash)
-			this.hash = standardHasher.hash(getContents().toString());
-		return this.hash;
+		if (hash == null) {
+			hash = standardHasher.hash(getContents().toString());
+		}
+		return hash;
 	}
 
 	public int getBaseLine() {
 		return baseLine;
 	}
 
-	public void setBaseLine(int baseLine) {
-		this.baseLine = baseLine;
-	}
-
-	public StringBuilder getContents() {
-		return contents;
-	}
-
-	public void setContents(StringBuilder contents) {
-		this.contents = contents;
-		this.isOutdatedHash = true;
-	}
-
-	public void setContents(String contents) {
-		setContents(new StringBuilder(contents));
+	public String getContents() {
+		return contents.toString();
 	}
 
 	public void addHashFact(HashFact hashFact) {
