@@ -13,7 +13,10 @@ import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
 
 import ch.unibe.scg.cc.Main;
 import ch.unibe.scg.cc.modules.CCModule;
@@ -29,6 +32,10 @@ public class IndexTopHashfacts {
 	static Logger logger = Logger.getLogger(IndexTopHashfacts.class);
 
 	public static void main(String[] args) throws IOException {
+		ConsoleAppender console = new ConsoleAppender(new PatternLayout());
+		logger.addAppender(console);
+		logger.setLevel(Level.ALL);
+		logger.debug("los");
 
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(),
 				new HBaseModule());

@@ -32,17 +32,20 @@ import com.google.inject.Key;
 import com.google.inject.name.Names;
 
 public class IndexFiles2Versions implements Runnable {
-	
+
 	final HTable indexFiles2Versions;
-	final HbaseWrapper hbaseWrapper;
-	
+	final HBaseWrapper hbaseWrapper;
+
 	@Inject
-	IndexFiles2Versions(@Named("indexFiles2Versions") HTable indexFiles2Versions, HbaseWrapper hbaseWrapper) {
+	IndexFiles2Versions(
+			@Named("indexFiles2Versions") HTable indexFiles2Versions,
+			HBaseWrapper hbaseWrapper) {
 		this.indexFiles2Versions = indexFiles2Versions;
 		this.hbaseWrapper = hbaseWrapper;
 	}
-	
-	public static class IndexFiles2VersionsMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
+
+	public static class IndexFiles2VersionsMapper<KEYOUT, VALUEOUT> extends
+			GuiceTableMapper<KEYOUT, VALUEOUT> {
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
 				org.apache.hadoop.mapreduce.Mapper.Context context)
@@ -53,11 +56,14 @@ public class IndexFiles2Versions implements Runnable {
 			byte[] versionHash = Bytes.head(key, 20);
 			byte[] filePathHash = Bytes.tail(key, 20);
 			byte[] restOfKey = Bytes.add(versionHash, filePathHash);
-			context.write(new ImmutableBytesWritable(fileContentHash), new ImmutableBytesWritable(restOfKey));
+			context.write(new ImmutableBytesWritable(fileContentHash),
+					new ImmutableBytesWritable(restOfKey));
 		}
 	}
-	
-	public static class IndexFiles2VersionsReducer extends GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
+
+	public static class IndexFiles2VersionsReducer
+			extends
+			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final HTable indexVersions2Projects;
 		final IPutFactory putFactory;
 		final HashSerializer hashSerializer;
@@ -67,8 +73,7 @@ public class IndexFiles2Versions implements Runnable {
 		public IndexFiles2VersionsReducer(
 				@Named("indexFiles2Versions") HTable indexFiles2Versions,
 				@Named("indexVersions2Projects") HTable indexVersions2Projects,
-				IPutFactory putFactory,
-				HashSerializer hashSerializer,
+				IPutFactory putFactory, HashSerializer hashSerializer,
 				Provider<Set<byte[]>> byteSetProvider) {
 			super(indexFiles2Versions);
 			this.indexVersions2Projects = indexVersions2Projects;
@@ -78,14 +83,16 @@ public class IndexFiles2Versions implements Runnable {
 		}
 
 		@Override
-		public void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context) throws IOException, InterruptedException {
+		public void reduce(ImmutableBytesWritable key,
+				Iterable<ImmutableBytesWritable> values, Context context)
+				throws IOException, InterruptedException {
 			Iterator<ImmutableBytesWritable> i = values.iterator();
 			byte[] versionhashValues = new byte[] {};
 			byte[] projecthashValues = new byte[] {};
 			long versionsCounter = 0;
 			long projectsCounter = 0;
-			while(i.hasNext()) {
-				ImmutableBytesWritable value = i.next(); 
+			while (i.hasNext()) {
+				ImmutableBytesWritable value = i.next();
 				byte[] currentValue = value.get();
 				byte[] versionHash = Bytes.head(currentValue, 20);
 				byte[] projnameHash = getProjnameHash(versionHash);
@@ -94,20 +101,29 @@ public class IndexFiles2Versions implements Runnable {
 				versionsCounter++;
 				projectsCounter++;
 			}
-			Put put = new Put(((ImmutableBytesWritable)key).get());
-			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FILES.getName(), 0l, Bytes.toBytes(versionsCounter));
-			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l, Bytes.toBytes(projectsCounter));
-			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FILES.getName(), 0l, versionhashValues);
-			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l, projecthashValues);
+			Put put = new Put(((ImmutableBytesWritable) key).get());
+			put.add(GuiceResource.FAMILY,
+					GuiceResource.ColumnName.COUNT_FILES.getName(), 0l,
+					Bytes.toBytes(versionsCounter));
+			put.add(GuiceResource.FAMILY,
+					GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l,
+					Bytes.toBytes(projectsCounter));
+			put.add(GuiceResource.FAMILY,
+					GuiceResource.ColumnName.VALUES_FILES.getName(), 0l,
+					versionhashValues);
+			put.add(GuiceResource.FAMILY,
+					GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l,
+					projecthashValues);
 			context.write(null, put);
 		}
 
 		private byte[] getProjnameHash(byte[] versionHash) throws IOException {
-			Iterator<Result> i = indexVersions2Projects.getScanner(new Scan(versionHash)).iterator();
-			
+			Iterator<Result> i = indexVersions2Projects.getScanner(
+					new Scan(versionHash)).iterator();
+
 			byte[] projnameHash = Bytes.tail(i.next().getRow(), 20);
 			assert !i.hasNext();
-			
+
 			return projnameHash;
 		}
 	}
@@ -116,19 +132,15 @@ public class IndexFiles2Versions implements Runnable {
 	public void run() {
 		try {
 			hbaseWrapper.truncate(indexFiles2Versions);
-			
+
 			Scan scan = new Scan();
 			hbaseWrapper.launchTableMapReduceJob(
-					IndexFiles2Versions.class.getName()+" Job", 
-					"versions", 
-					"indexFiles2Versions",
-					scan,
-					IndexFiles2Versions.class, 
-					"IndexFiles2VersionsMapper", 
-					"IndexFiles2VersionsReducer", 
-					ImmutableBytesWritable.class,
-					ImmutableBytesWritable.class);
-			
+					IndexFiles2Versions.class.getName() + " Job", "versions",
+					"indexFiles2Versions", scan, IndexFiles2Versions.class,
+					"IndexFiles2VersionsMapper", "IndexFiles2VersionsReducer",
+					ImmutableBytesWritable.class, ImmutableBytesWritable.class,
+					"-Xmx2000m");
+
 			indexFiles2Versions.flushCommits();
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e.getCause());
@@ -138,30 +150,35 @@ public class IndexFiles2Versions implements Runnable {
 			throw new WrappedRuntimeException(e.getCause());
 		}
 	}
-	
+
 	public static class IndexFiles2VersionsTest {
 		@Test
 		public void testIndex() throws IOException {
-			if(true)
+			if (true)
 				return;
 			Injector i = Guice.createInjector(new CCModule(), new JavaModule());
-			HTable versions = i.getInstance(Key.get(HTable.class, Names.named("versions")));
-			HTable indexVersions = i.getInstance(Key.get(HTable.class, Names.named("indexFiles2Versions")));
-			
+			HTable versions = i.getInstance(Key.get(HTable.class,
+					Names.named("versions")));
+			HTable indexVersions = i.getInstance(Key.get(HTable.class,
+					Names.named("indexFiles2Versions")));
+
 			Scan scan = new Scan();
 			ResultScanner rsVersions = versions.getScanner(scan);
 			Iterator<Result> ir = rsVersions.iterator();
-			int rowsToTest = 50; // XXX 
-			
-			while(ir.hasNext() && rowsToTest > 0) {
-				byte[] fileContentHash = Bytes.head(Bytes.tail(ir.next().getRow(), 40), 20);
+			int rowsToTest = 50; // XXX
+
+			while (ir.hasNext() && rowsToTest > 0) {
+				byte[] fileContentHash = Bytes.head(
+						Bytes.tail(ir.next().getRow(), 40), 20);
 				Scan s = new Scan(fileContentHash);
-				
+
 				ResultScanner rsIndexFiles = indexVersions.getScanner(s);
 				Iterator<Result> iri = rsIndexFiles.iterator();
 				Assert.assertTrue(iri.hasNext());
-				byte[] fileContentHashIndexTable = Bytes.head(iri.next().getRow(), 20);
-				Assert.assertTrue(Arrays.equals(fileContentHash, fileContentHashIndexTable));
+				byte[] fileContentHashIndexTable = Bytes.head(iri.next()
+						.getRow(), 20);
+				Assert.assertTrue(Arrays.equals(fileContentHash,
+						fileContentHashIndexTable));
 				rowsToTest--;
 			}
 		}

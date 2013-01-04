@@ -40,10 +40,10 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class TablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(TablePopulator.class);
-	final HbaseWrapper hbaseWrapper;
+	final HBaseWrapper hbaseWrapper;
 
 	@Inject
-	TablePopulator(HbaseWrapper hbaseWrapper) {
+	TablePopulator(HBaseWrapper hbaseWrapper) {
 		this.hbaseWrapper = hbaseWrapper;
 	}
 
@@ -200,7 +200,7 @@ public class TablePopulator implements Runnable {
 		@Test
 		public void testCharset() {
 			CharsetDetector cd = new CharsetDetector();
-			assertThat(cd.charsetOf(Bytes.toBytes("Hall�")), is("UTF-8"));
+			assertThat(cd.charsetOf(Bytes.toBytes("Hallö")), is("UTF-8"));
 			assertThat(cd.charsetOf(Bytes.toBytes("Hallo")), is("ASCII"));
 		}
 

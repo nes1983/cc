@@ -34,12 +34,12 @@ public class IndexHashfacts2Functions implements Runnable {
 	static Logger logger = Logger.getLogger(IndexHashfacts2Functions.class);
 
 	final HTable indexHashfacts2Functions;
-	final HbaseWrapper hbaseWrapper;
+	final HBaseWrapper hbaseWrapper;
 
 	@Inject
 	IndexHashfacts2Functions(
 			@Named("indexHashfacts2Functions") HTable indexHashfacts2Functions,
-			HbaseWrapper hbaseWrapper) {
+			HBaseWrapper hbaseWrapper) {
 		this.indexHashfacts2Functions = indexHashfacts2Functions;
 		this.hbaseWrapper = hbaseWrapper;
 	}
@@ -96,6 +96,7 @@ public class IndexHashfacts2Functions implements Runnable {
 			while (i.hasNext()) {
 				ImmutableBytesWritable value = i.next();
 				byte[] functionHash = value.get();
+				System.out.println("get " + bytesToHex(functionHash));
 				Result row = getRow(functionHash);
 				byte[] vp = row.getValue(GuiceResource.FAMILY,
 						GuiceResource.ColumnName.VALUES_VERSIONS.getName());
@@ -103,6 +104,7 @@ public class IndexHashfacts2Functions implements Runnable {
 						GuiceResource.ColumnName.VALUES_FILES.getName());
 				byte[] vf = row.getValue(GuiceResource.FAMILY,
 						GuiceResource.ColumnName.VALUES_FUNCTIONS.getName());
+				System.out.println(row + ";" + vp + ";" + vh + ";" + vf);
 				projnameHashes.addAll(hashSerializer.deserialize(vp, 20)); // XXX
 																			// possible
 																			// performance
@@ -152,6 +154,19 @@ public class IndexHashfacts2Functions implements Runnable {
 			get.addFamily(GuiceResource.FAMILY);
 			return indexFunctions2Files.get(get);
 		}
+
+		public static String bytesToHex(byte[] bytes) {
+			final char[] hexArray = { '0', '1', '2', '3', '4', '5', '6', '7',
+					'8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+			char[] hexChars = new char[bytes.length * 2];
+			int v;
+			for (int j = 0; j < bytes.length; j++) {
+				v = bytes[j] & 0xFF;
+				hexChars[j * 2] = hexArray[v >>> 4];
+				hexChars[j * 2 + 1] = hexArray[v & 0x0F];
+			}
+			return new String(hexChars);
+		}
 	}
 
 	@Override
@@ -168,7 +183,8 @@ public class IndexHashfacts2Functions implements Runnable {
 					IndexHashfacts2Functions.class,
 					"IndexHashfacts2FunctionsMapper",
 					"IndexHashfacts2FunctionsReducer",
-					ImmutableBytesWritable.class, ImmutableBytesWritable.class);
+					ImmutableBytesWritable.class, ImmutableBytesWritable.class,
+					"-Xmx2000m");
 
 			indexHashfacts2Functions.flushCommits();
 		} catch (IOException e) {

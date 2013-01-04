@@ -68,10 +68,10 @@ public class GitTablePopulator implements Runnable {
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private static final String PROJECTS_PATH = "/project-clone-detector/testdata";
 	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
-	final HbaseWrapper hbaseWrapper;
+	final HBaseWrapper hbaseWrapper;
 
 	@Inject
-	GitTablePopulator(HbaseWrapper hbaseWrapper) {
+	GitTablePopulator(HBaseWrapper hbaseWrapper) {
 		this.hbaseWrapper = hbaseWrapper;
 	}
 
@@ -108,7 +108,7 @@ public class GitTablePopulator implements Runnable {
 		Path path = new Path(PROJECTS_PATH);
 
 		Queue<Path> packFilePaths = new LinkedList<Path>();
-		System.out.println("yyy start finding pack files " + path);
+		logger.debug("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
 
 		Joiner joiner = Joiner.on(",");

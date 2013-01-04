@@ -95,6 +95,11 @@
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
 	</target>
+	<target name="indexFacts2Files">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2Files" />
+		</antcall>
+	</target>
 	<target name="indexVersions2Projects">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexVersions2Projects" />
