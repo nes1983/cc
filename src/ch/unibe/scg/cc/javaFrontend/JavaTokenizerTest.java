@@ -11,7 +11,6 @@ import java.util.List;
 
 import org.junit.Test;
 import org.mockito.Mockito;
-import org.mockito.stubbing.Answer;
 
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
@@ -51,18 +50,11 @@ public class JavaTokenizerTest {
 
 	@Test
 	public void testSampleClass() {
-		Answer<Object> a = Mockito.RETURNS_DEEP_STUBS;
-
 		JavaTokenizer tokenizer = new JavaTokenizer();
 		FunctionFactory functionFactory = Mockito.mock(FunctionFactory.class);
 		tokenizer.functionFactory = functionFactory;
 
 		List<Function> list = tokenizer.tokenize(sampleClass(), null);
-		// Don't delete! The only way to fix the unit test!
-		// for( Map.Entry<String, Location> e : m.entrySet()) {
-		// logger.debug(StringEscapeUtils.escapeJava(e.getKey()));
-		// logger.debug("---");
-		// }
 
 		assertThat(list.size(), is(4));
 		verify(functionFactory)

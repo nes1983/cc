@@ -20,7 +20,7 @@ import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableReducer;
 
-public class HbaseWrapper {
+public class HBaseWrapper {
 	@Inject
 	private ConfigurationProvider configurationProvider;
 
@@ -91,11 +91,6 @@ public class HbaseWrapper {
 
 		thisJob.setMapOutputKeyClass(outputValue);
 		thisJob.setMapOutputValueClass(outputValue);
-
-		// thisJob.setInputFormatClass(TableInputFormat.class);// done by
-		// TableMapReduceUtil map
-		// thisJob.setOutputFormatClass(TableOutputFormat.class); //done by
-		// TableMapReduceUtil reduce
 
 		return thisJob;
 	}
