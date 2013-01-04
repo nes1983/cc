@@ -1,0 +1,8 @@
+create 'versions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'files', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'facts', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'hashfactContent', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFacts2Files', {NAME => 'd', COMPRESSION => 'GZ'}
+exit
