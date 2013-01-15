@@ -80,7 +80,7 @@ public class HBaseWrapper {
 			Class<? extends Reducer> reducerClassName, Class<?> outputKey,
 			Class<?> outputValue) throws IOException {
 
-		Job thisJob = new Job(configurationProvider.get(), jobName);
+		Job thisJob = Job.getInstance(configurationProvider.get(), jobName);
 
 		thisJob.setJarByClass(jobClassName);
 		thisJob.setMapperClass(mapperClassName);
@@ -102,5 +102,6 @@ public class HBaseWrapper {
 		admin.disableTable(tableName);
 		admin.deleteTable(tableName);
 		admin.createTable(tableDescription);
+		admin.close();
 	}
 }

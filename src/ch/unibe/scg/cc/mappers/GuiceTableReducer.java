@@ -17,29 +17,25 @@ public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends
 	}
 
 	@Override
-	public void setup(Context context) throws IOException, InterruptedException {
+	protected void setup(Context context) throws IOException,
+			InterruptedException {
 		super.setup(context);
 	}
 
+	// Closes the WriteBuffer when the reduce-phase is finished
 	@Override
-	public void cleanup(Context context) throws IOException,
+	protected void cleanup(Context context) throws IOException,
 			InterruptedException {
 		super.cleanup(context);
-		this.writeBuffer.writeRemainingPuts();
+		this.writeBuffer.close();
 	}
 
 	@Override
-	public void reduce(KEYIN key, Iterable<VALUEIN> values, Context context)
+	protected void reduce(KEYIN key, Iterable<VALUEIN> values, Context context)
 			throws IOException, InterruptedException {
 		super.reduce(key, values, context);
 	}
 
-	/**
-	 * 
-	 * @param put
-	 *            not null.
-	 * @throws IOException
-	 */
 	protected final void write(Put put) throws IOException {
 		this.writeBuffer.write(put);
 	}
