@@ -7,6 +7,7 @@ create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
 create 'hashfactContent', {NAME => 'd', COMPRESSION => 'GZ'}
 
 create 'indexFacts2Files', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFacts2FilesStep2', {NAME => 'd', COMPRESSION => 'GZ'}
 
 // create 'indexVersions2Projects', {NAME => 'd', COMPRESSION => 'GZ'}
 // create 'indexFiles2Versions', {NAME => 'd', COMPRESSION => 'GZ'}

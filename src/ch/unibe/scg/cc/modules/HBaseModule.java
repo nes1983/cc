@@ -15,6 +15,8 @@ import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 import ch.unibe.scg.cc.mappers.IndexFacts2Files.IndexFacts2FilesMapper;
 import ch.unibe.scg.cc.mappers.IndexFacts2Files.IndexFacts2FilesReducer;
+import ch.unibe.scg.cc.mappers.IndexFacts2FilesStep2.IndexFacts2FilesStep2Mapper;
+import ch.unibe.scg.cc.mappers.IndexFacts2FilesStep2.IndexFacts2FilesStep2Reducer;
 import ch.unibe.scg.cc.mappers.IndexFiles2Versions.IndexFiles2VersionsMapper;
 import ch.unibe.scg.cc.mappers.IndexFiles2Versions.IndexFiles2VersionsReducer;
 import ch.unibe.scg.cc.mappers.IndexFunctions2Files.IndexFunctions2FilesMapper;
@@ -43,6 +45,7 @@ public class HBaseModule extends AbstractModule {
 		installHTable("hashfactContent");
 
 		installHTable("indexFacts2Files");
+		installHTable("indexFacts2FilesStep2");
 
 		installHTable("indexVersions2Projects");
 		installHTable("indexFiles2Versions");
@@ -88,6 +91,12 @@ public class HBaseModule extends AbstractModule {
 		bind(GuiceTableReducer.class).annotatedWith(
 				Names.named("IndexFacts2FilesReducer")).to(
 				IndexFacts2FilesReducer.class);
+		bind(GuiceTableMapper.class).annotatedWith(
+				Names.named("IndexFacts2FilesStep2Mapper")).to(
+				IndexFacts2FilesStep2Mapper.class);
+		bind(GuiceTableReducer.class).annotatedWith(
+				Names.named("IndexFacts2FilesStep2Reducer")).to(
+				IndexFacts2FilesStep2Reducer.class);
 
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class,
 				HTableWriteBuffer.class).build(BufferFactory.class));

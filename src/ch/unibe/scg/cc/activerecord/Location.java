@@ -22,10 +22,12 @@ public class Location extends Column {
 		return length;
 	}
 
+	/** This value is relative to the function and not to the file! */
 	public int getFirstLine() {
 		return firstLine;
 	}
 
+	/** Sets the firstline relative to the function */
 	public void setFirstLine(int firstLine) {
 		this.firstLine = firstLine;
 	}

@@ -79,8 +79,7 @@ public class RegisterClonesBackend {
 				break;
 			}
 			String snippet = stringOfLines.getLines(frameStart, MINIMUM_LINES);
-			this.registerSnippet(snippet, function, function.getBaseLine()
-					+ frameStart, MINIMUM_LINES, hasher, type);
+			this.registerSnippet(snippet, function, frameStart, MINIMUM_LINES, hasher, type);
 		}
 	}
 

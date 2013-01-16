@@ -28,7 +28,6 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.apache.log4j.Logger;
-import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
@@ -37,7 +36,6 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
-import org.eclipse.jgit.storage.dfs.DfsObjDatabase;
 import org.eclipse.jgit.storage.dfs.DfsRepositoryDescription;
 import org.eclipse.jgit.storage.dfs.InMemoryRepository;
 import org.eclipse.jgit.transport.PackParser;
@@ -185,10 +183,7 @@ public class GitTablePopulator implements Runnable {
 
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
 			pp.parse(null);
-
-			Git git = Git.wrap(r);
-			DfsObjDatabase db = r.getObjectDatabase();
-
+			
 			RevWalk revWalk = new RevWalk(r);
 
 			PackedRefParser prp = new PackedRefParser();
