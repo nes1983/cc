@@ -49,13 +49,11 @@ public class TablePopulator implements Runnable {
 
 	public void run() {
 		try {
-			Job job = hbaseWrapper.createMapJob("populate",
-					TablePopulator.class, "TablePopulatorMapper", Text.class,
+			Job job = hbaseWrapper.createMapJob("populate", TablePopulator.class, "TablePopulatorMapper", Text.class,
 					IntWritable.class);
 			job.setInputFormatClass(ZipFileInputFormat.class);
 			job.setOutputFormatClass(NullOutputFormat.class);
-			FileInputFormat.addInputPath(job, new Path(
-					"/project-clone-detector/zipprojects"));
+			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/zipprojects"));
 			logger.debug("yyy wait for completion");
 			job.waitForCompletion(true);
 		} catch (IOException e) {
@@ -67,18 +65,12 @@ public class TablePopulator implements Runnable {
 		}
 	}
 
-	public static class TablePopulatorMapper extends
-			GuiceMapper<Text, BytesWritable, Text, IntWritable> {
+	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		@Inject
-		TablePopulatorMapper(@Java Frontend javaFrontend,
-				@Named("versions") HTable versions,
-				@Named("files") HTable files,
-				@Named("functions") HTable functions,
-				@Named("facts") HTable facts, @Named("strings") HTable strings,
-				@Named("hashfactContent") HTable hashfactContent,
-				RealProjectFactory projectFactory,
-				RealVersionFactory versionFactory,
-				CharsetDetector charsetDetector) {
+		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
+				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
+				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,
+				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
 			this.versions = versions;
@@ -93,14 +85,12 @@ public class TablePopulator implements Runnable {
 		}
 
 		final Frontend javaFrontend;
-		final HTable versions, files, functions, facts, strings,
-				hashfactContent;
+		final HTable versions, files, functions, facts, strings, hashfactContent;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
 
-		public void map(Text key, BytesWritable value, Context context)
-				throws IOException, InterruptedException {
+		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
 
 			if (value.getLength() == 0)
 				return;
@@ -117,8 +107,7 @@ public class TablePopulator implements Runnable {
 			register(projectName, version, 1);
 		}
 
-		private CodeFile register(String content, String fileName)
-				throws IOException {
+		private CodeFile register(String content, String fileName) throws IOException {
 			CodeFile codeFile = javaFrontend.register(content, fileName);
 			functions.flushCommits();
 			facts.flushCommits();
@@ -126,16 +115,14 @@ public class TablePopulator implements Runnable {
 			return codeFile;
 		}
 
-		private Version register(String filePath, CodeFile codeFile)
-				throws IOException {
+		private Version register(String filePath, CodeFile codeFile) throws IOException {
 			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
 			files.flushCommits();
 			return version;
 		}
 
-		private void register(String projectName, Version version,
-				int versionNumber) throws IOException {
+		private void register(String projectName, Version version, int versionNumber) throws IOException {
 			Project proj = projectFactory.create(projectName, version, "1"); // TODO
 																				// get
 																				// versionNumber
@@ -172,22 +159,14 @@ public class TablePopulator implements Runnable {
 			final RealVersion version = mock(RealVersion.class);
 			final RealProject project = mock(RealProject.class);
 
-			when(charsetDetector.charsetOf(new byte[] { 0x20 })).thenReturn(
-					"UTF-8");
-			when(
-					versionFactory.create(eq("postgresql/simon/myfile.java"),
-							any(CodeFile.class))).thenReturn(version);
-			when(
-					projectFactory.create(eq("postgresql"), eq(version),
-							any(String.class))).thenReturn(project);
+			when(charsetDetector.charsetOf(new byte[] { 0x20 })).thenReturn("UTF-8");
+			when(versionFactory.create(eq("postgresql/simon/myfile.java"), any(CodeFile.class))).thenReturn(version);
+			when(projectFactory.create(eq("postgresql"), eq(version), any(String.class))).thenReturn(project);
 
-			TablePopulatorMapper mapper = new TablePopulatorMapper(
-					javaFrontend, projects, versions, codefiles, functions,
-					strings, hashfactContent, projectFactory, versionFactory,
-					charsetDetector);
+			TablePopulatorMapper mapper = new TablePopulatorMapper(javaFrontend, projects, versions, codefiles,
+					functions, strings, hashfactContent, projectFactory, versionFactory, charsetDetector);
 
-			mapper.map(new Text("postgresql/simon/myfile.java"),
-					new BytesWritable(new byte[] { 0x20 }), null);
+			mapper.map(new Text("postgresql/simon/myfile.java"), new BytesWritable(new byte[] { 0x20 }), null);
 
 			verify(javaFrontend).register(eq(" "), eq("myfile.java"));
 			verify(javaFrontend).register(eq(version));

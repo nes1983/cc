@@ -25,60 +25,46 @@ public class HBaseWrapper {
 	private ConfigurationProvider configurationProvider;
 
 	@SuppressWarnings("rawtypes")
-	public Job createMapJob(String jobName, Class<?> jobClassName,
-			String mapperClassName,
-			Class<? extends WritableComparable> outputKey,
-			Class<? extends Writable> outputValue) throws IOException,
+	public Job createMapJob(String jobName, Class<?> jobClassName, String mapperClassName,
+			Class<? extends WritableComparable> outputKey, Class<? extends Writable> outputValue) throws IOException,
 			InterruptedException, ClassNotFoundException {
 
 		Class<MRMainMapper> mapperClass = MRMainMapper.class;
 
-		Job thisJob = initMapReduceJob(jobName, jobClassName, mapperClass,
-				null, outputKey, outputValue);
+		Job thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, null, outputKey, outputValue);
 
-		thisJob.getConfiguration()
-				.set("GuiceMapperAnnotation", mapperClassName);
+		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
 
 		return thisJob;
 	}
 
 	@SuppressWarnings("rawtypes")
-	public boolean launchTableMapReduceJob(String jobName,
-			String tableNameMapper, String tableNameReducer, Scan tableScanner,
-			Class<?> jobClassName, String mapperClassName,
-			String reducerClassName,
-			Class<? extends WritableComparable> outputKey,
-			Class<? extends Writable> outputValue, String mapred_child_java_opts)
-			throws IOException, InterruptedException, ClassNotFoundException {
+	public boolean launchTableMapReduceJob(String jobName, String tableNameMapper, String tableNameReducer,
+			Scan tableScanner, Class<?> jobClassName, String mapperClassName, String reducerClassName,
+			Class<? extends WritableComparable> outputKey, Class<? extends Writable> outputValue,
+			String mapred_child_java_opts) throws IOException, InterruptedException, ClassNotFoundException {
 
 		Job thisJob;
 		Class<MRMainTableMapper> mapperClass = MRMainTableMapper.class;
 		Class<MRMainTableReducer> reducerClass = MRMainTableReducer.class;
 
-		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass,
-				reducerClass, outputKey, outputValue);
+		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, reducerClass, outputKey, outputValue);
 
-		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner,
-				mapperClass, outputKey, outputValue, thisJob);
-		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass,
+		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner, mapperClass, outputKey, outputValue,
 				thisJob);
+		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass, thisJob);
 
-		thisJob.getConfiguration()
-				.set("GuiceMapperAnnotation", mapperClassName);
-		thisJob.getConfiguration().set("GuiceReducerAnnotation",
-				reducerClassName);
+		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
+		thisJob.getConfiguration().set("GuiceReducerAnnotation", reducerClassName);
 
-		thisJob.getConfiguration().set("mapred.child.java.opts",
-				mapred_child_java_opts);
+		thisJob.getConfiguration().set("mapred.child.java.opts", mapred_child_java_opts);
 
 		return thisJob.waitForCompletion(true);
 	}
 
 	@SuppressWarnings("rawtypes")
-	private Job initMapReduceJob(String jobName, Class<?> jobClassName,
-			Class<? extends Mapper> mapperClassName,
-			Class<? extends Reducer> reducerClassName, Class<?> outputKey,
-			Class<?> outputValue) throws IOException {
+	private Job initMapReduceJob(String jobName, Class<?> jobClassName, Class<? extends Mapper> mapperClassName,
+			Class<? extends Reducer> reducerClassName, Class<?> outputKey, Class<?> outputValue) throws IOException {
 
 		Job thisJob = Job.getInstance(configurationProvider.get(), jobName);
 

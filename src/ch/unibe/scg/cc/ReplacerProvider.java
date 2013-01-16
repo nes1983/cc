@@ -38,8 +38,7 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 		try {
 			r = (Replace) method.invoke(this);
 		} catch (IllegalArgumentException e) {
-			throw new RuntimeException(
-					"Methods named 'make' should not accept arguments.", e);
+			throw new RuntimeException("Methods named 'make' should not accept arguments.", e);
 		} catch (IllegalAccessException e) {
 			throw new RuntimeException(e);
 		} catch (InvocationTargetException e) {

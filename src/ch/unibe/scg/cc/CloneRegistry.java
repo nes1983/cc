@@ -61,14 +61,12 @@ public class CloneRegistry {
 	HTable hashfactContent;
 
 	@Inject
-	public CloneRegistry(Provider<HashFact> hashFactProvider,
-			Provider<Location> locationProvider) {
+	public CloneRegistry(Provider<HashFact> hashFactProvider, Provider<Location> locationProvider) {
 		this.hashFactProvider = hashFactProvider;
 		this.locationProvider = locationProvider;
 	}
 
-	public void register(byte[] hash, String snippet, Function function,
-			Location location, byte type) {
+	public void register(byte[] hash, String snippet, Function function, Location location, byte type) {
 		HashFact fact = hashFactProvider.get();
 		fact.setHash(hash);
 		fact.setSnippet(snippet);
@@ -78,8 +76,7 @@ public class CloneRegistry {
 		function.addHashFact(fact);
 	}
 
-	public void register(byte[] hash, String snippet, Function function,
-			int from, int length, byte type) {
+	public void register(byte[] hash, String snippet, Function function, int from, int length, byte type) {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
 		this.register(hash, snippet, function, location, type);
@@ -106,11 +103,9 @@ public class CloneRegistry {
 	public boolean lookupCodeFile(byte[] key) {
 		HTable t = getTable(CloneRegistry.TABLE_FUNCTIONS);
 		assert t != null;
-		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
-		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127 });
+		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
+		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+				127, 127, 127, 127, 127, 127, 127 });
 		Scan s = new Scan(startKey, endKey);
 		try {
 			return t.getScanner(s).next() != null;
@@ -122,13 +117,11 @@ public class CloneRegistry {
 	public boolean lookupVersion(byte[] key) {
 		HTable t = getTable(CloneRegistry.TABLE_FILES);
 		assert t != null;
-		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
-		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127 });
+		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
+		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
+				127, 127, 127, 127, 127, 127, 127 });
 		Scan s = new Scan(startKey, endKey);
 		try {
 			return t.getScanner(s).next() != null;
@@ -171,8 +164,7 @@ public class CloneRegistry {
 			Put put = new Put(hashFileContents);
 			put.setWriteToWAL(false); // XXX performance increase
 			try {
-				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l,
-						Bytes.toBytes(function.getBaseLine()));
+				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
 				functions.put(put);
 
 				Put fnSnippet = new Put(function.getHash()); // XXX

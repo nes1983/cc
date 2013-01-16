@@ -21,15 +21,11 @@ public class ShingleHasherTest {
 
 	@Test
 	public ShingleHasher test() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(),
-				new JavaModule()).getInstance(ShingleHasher.class);
+		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);
 
-		String[] shingles = ss
-				.shingles("one two three four five six seven eight nine");
-		assertThat(shingles, is(new String[] { "one two three four",
-				"five six seven eight", "two three four five",
-				"six seven eight nine", "three four five six",
-				"four five six seven" }));
+		String[] shingles = ss.shingles("one two three four five six seven eight nine");
+		assertThat(shingles, is(new String[] { "one two three four", "five six seven eight", "two three four five",
+				"six seven eight nine", "three four five six", "four five six seven" }));
 
 		byte[][] hashedShingles = ss.hashedShingles(shingles);
 		assertThat(hashedShingles, is(arrayWithSize(6)));
@@ -39,8 +35,7 @@ public class ShingleHasherTest {
 	}
 
 	@Given("test")
-	public ShingleHasher testEntireSketch(ShingleHasher ss)
-			throws CannotBeHashedException {
+	public ShingleHasher testEntireSketch(ShingleHasher ss) throws CannotBeHashedException {
 		byte[] sketch = ss.hash("one two three four five six");
 		assertThat(ArrayUtils.toString(sketch), startsWith("{20,57,"));
 		// The first two check out.

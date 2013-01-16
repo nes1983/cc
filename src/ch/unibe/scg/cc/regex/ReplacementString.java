@@ -17,15 +17,12 @@ class ReplacementString {
 		int lastFind = 0;
 		while (m.find()) {
 
-			addUnlessEmpty(
-					contents,
-					new LiteralSegment(with.substring(lastFind, m.start(1) - 1)));
+			addUnlessEmpty(contents, new LiteralSegment(with.substring(lastFind, m.start(1) - 1)));
 			contents.add(new PlaceHolderSegment(Integer.parseInt(m.group(1))));
 
 			lastFind = m.end();
 		}
-		addUnlessEmpty(contents,
-				new LiteralSegment(with.substring(lastFind, with.length())));
+		addUnlessEmpty(contents, new LiteralSegment(with.substring(lastFind, with.length())));
 	}
 
 	void addUnlessEmpty(List<Segment> list, LiteralSegment segment) {

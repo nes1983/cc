@@ -29,8 +29,7 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 	private FileSystem fs;
 
 	@Override
-	public void initialize(InputSplit inputSplit,
-			TaskAttemptContext taskAttemptContext) throws IOException,
+	public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException,
 			InterruptedException {
 		FileSplit split = (FileSplit) inputSplit;
 		Configuration conf = taskAttemptContext.getConfiguration();
@@ -47,13 +46,11 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 		}
 	}
 
-	private void findPackFilePaths(FileSystem fs, Path path,
-			Queue<Path> listToFill) throws IOException {
+	private void findPackFilePaths(FileSystem fs, Path path, Queue<Path> listToFill) throws IOException {
 		FileStatus[] fstatus = fs.listStatus(path);
 		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
-			logger.debug("yyy scanning: " + f.getPath() + " || "
-					+ f.getPath().getName());
+			logger.debug("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)) {
 				listToFill.add(p);
 			} else if (f.isDirectory())
@@ -99,8 +96,7 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 	}
 
 	@Override
-	public BytesWritable getCurrentValue() throws IOException,
-			InterruptedException {
+	public BytesWritable getCurrentValue() throws IOException, InterruptedException {
 		return currentValue;
 	}
 

@@ -21,8 +21,7 @@ public class RealCodeFile extends Column implements CodeFile {
 	private byte[] fileContentHash;
 
 	@Inject
-	public RealCodeFile(StandardHasher standardHasher,
-			@Assisted String fileContents) {
+	public RealCodeFile(StandardHasher standardHasher, @Assisted String fileContents) {
 		functions = new ArrayList<Function>();
 		this.fileContents = fileContents;
 		this.fileContentHash = standardHasher.hash(getFileContents());

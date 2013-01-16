@@ -20,8 +20,7 @@ public class ModifiableLinesFactory {
 		lineBreaks.add(new LineBreak(0, 1));
 		int thisIndex = string.indexOf(separator);
 
-		for (; thisIndex != -1; thisIndex = string.indexOf(separator,
-				thisIndex + 1)) {
+		for (; thisIndex != -1; thisIndex = string.indexOf(separator, thisIndex + 1)) {
 			lineBreaks.add(new LineBreak(thisIndex, 1));
 		}
 		return new ModifiableLines(stringBuilder, lineBreaks);

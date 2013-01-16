@@ -32,8 +32,7 @@ public class HashFact extends Column {
 		int lineNumberRelativeToFunction = location.getFirstLine();
 		byte[] locationFirstLine = Bytes.toBytes(lineNumberRelativeToFunction);
 		byte[] locationLength = Bytes.toBytes(location.getLength());
-		put.add(FAMILY_NAME, getHash(), 0l,
-				Bytes.add(locationFirstLine, locationLength));
+		put.add(FAMILY_NAME, getHash(), 0l, Bytes.add(locationFirstLine, locationLength));
 	}
 
 	public byte[] getHash() {

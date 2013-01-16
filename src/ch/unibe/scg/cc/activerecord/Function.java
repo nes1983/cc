@@ -30,8 +30,7 @@ public class Function extends Column {
 	 * Creates a new function by copying only "contents", "baseline" and
 	 * "standardHasher" from the provided function.
 	 */
-	public Function(StandardHasher standardHasher, @Assisted int baseLine,
-			@Assisted CharSequence contents) {
+	public Function(StandardHasher standardHasher, @Assisted int baseLine, @Assisted CharSequence contents) {
 		this.hashFacts = new ArrayList<HashFact>();
 		this.standardHasher = standardHasher;
 		this.baseLine = baseLine;

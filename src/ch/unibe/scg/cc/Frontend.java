@@ -27,12 +27,9 @@ public class Frontend {
 	Function.FunctionFactory functionFactory;
 
 	@Inject
-	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher,
-			@Type1 PhaseFrontend type1, @Type2 PhaseFrontend type2,
-			StringOfLinesFactory stringOfLinesFactory,
-			RegisterClonesBackend backend, Tokenizer tokenizer,
-			RealCodeFileFactory codeFileFactory,
-			RealVersionFactory versionFactory,
+	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
+			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, RegisterClonesBackend backend,
+			Tokenizer tokenizer, RealCodeFileFactory codeFileFactory, RealVersionFactory versionFactory,
 			Function.FunctionFactory functionFactory) {
 		super();
 		this.standardHasher = standardHasher;
@@ -106,11 +103,9 @@ public class Frontend {
 		return codeFile;
 	}
 
-	void registerWithBuilder(StringBuilder fileContents, String fileName,
-			CodeFile codeFile) {
+	void registerWithBuilder(StringBuilder fileContents, String fileName, CodeFile codeFile) {
 		type1.normalize(fileContents);
-		List<Function> functions = tokenizer.tokenize(fileContents.toString(),
-				fileName);
+		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName);
 		for (Function function : functions) {
 			registerFunction(codeFile, function);
 		}
@@ -118,30 +113,24 @@ public class Frontend {
 
 	void registerFunction(CodeFile codeFile, Function function) {
 		StringBuilder contents = new StringBuilder(function.getContents());
-		StringOfLines contentsStringOfLines = stringOfLinesFactory
-				.make(contents.toString());
+		StringOfLines contentsStringOfLines = stringOfLinesFactory.make(contents.toString());
 
 		if (contentsStringOfLines.getNumberOfLines() < backend.MINIMUM_LINES) {
 			return;
 		}
 
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function,
-				Main.TYPE_1_CLONE);
+		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function, Main.TYPE_1_CLONE);
 		Function functionType1 = function;
 		codeFile.addFunction(functionType1);
 
 		type2.normalize(contents);
 		String contentsString = contents.toString();
-		Function functionType2 = functionFactory.makeFunction(
-				functionType1.getBaseLine(), contentsString);
-		contentsStringOfLines = stringOfLinesFactory.make(functionType2
-				.getContents());
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines,
-				functionType2, Main.TYPE_2_CLONE);
+		Function functionType2 = functionFactory.makeFunction(functionType1.getBaseLine(), contentsString);
+		contentsStringOfLines = stringOfLinesFactory.make(functionType2.getContents());
+		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, functionType2, Main.TYPE_2_CLONE);
 		codeFile.addFunction(functionType2);
 
-		Function functionType3 = functionFactory.makeFunction(
-				functionType2.getBaseLine(), contentsString);
+		Function functionType3 = functionFactory.makeFunction(functionType2.getBaseLine(), contentsString);
 		backend.shingleRegisterFunction(contentsStringOfLines, functionType3);
 		codeFile.addFunction(functionType3);
 	}

@@ -14,16 +14,13 @@ import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
 @RunWith(JExample.class)
 public class StringOfLinesTest {
 
-	final String sampleString = "a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n"
-			+ "g\n";
+	final String sampleString = "a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n" + "g\n";
 
 	@Test
 	public StringOfLines testLinesOfCode() {
-		StringOfLines stringOfLines = new StringOfLinesFactory()
-				.make(sampleString);
+		StringOfLines stringOfLines = new StringOfLinesFactory().make(sampleString);
 		assertThat(stringOfLines.getNumberOfLines(), is(7));
-		assertThat(new StringOfLinesFactory().make("a").getNumberOfLines(),
-				is(1));
+		assertThat(new StringOfLinesFactory().make("a").getNumberOfLines(), is(1));
 		return stringOfLines;
 	}
 

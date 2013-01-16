@@ -41,16 +41,14 @@ public class JavaTokenizer implements Tokenizer {
 			String currentFunctionString = file.substring(lastStart, m.start());
 			lineLength = countOccurrences(currentFunctionString, '\n');
 
-			Function function = functionFactory.makeFunction(currentLineNumber,
-					currentFunctionString);
+			Function function = functionFactory.makeFunction(currentLineNumber, currentFunctionString);
 			ret.add(function);
 
 			lastStart = m.start();
 			currentLineNumber += lineLength;
 		}
 		String currentFunctionString = file.substring(lastStart, file.length());
-		Function function = functionFactory.makeFunction(currentLineNumber,
-				currentFunctionString);
+		Function function = functionFactory.makeFunction(currentLineNumber, currentFunctionString);
 		ret.add(function);
 		return ret;
 	}

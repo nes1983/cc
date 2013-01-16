@@ -47,8 +47,7 @@ public class ModifiableLines {
 	 *            Index of first returned line. Counting starts with 0.
 	 */
 	public String getLines(int from, int length) {
-		return string.substring(lineBreaks.get(from).position,
-				lineBreaks.get(from + length).position + 1);
+		return string.substring(lineBreaks.get(from).position, lineBreaks.get(from + length).position + 1);
 	}
 
 	/**
@@ -61,10 +60,8 @@ public class ModifiableLines {
 	 */
 	public void replace(int from, int to, String replacement) {
 		assert replacement.indexOf('\n') == -1;
-		int start = Collections.binarySearch(lineBreaks,
-				new LineBreak(from, 0), comparator);
-		int end = Collections.binarySearch(lineBreaks, new LineBreak(to, 0),
-				comparator);
+		int start = Collections.binarySearch(lineBreaks, new LineBreak(from, 0), comparator);
+		int end = Collections.binarySearch(lineBreaks, new LineBreak(to, 0), comparator);
 		start = Math.abs(start);
 		if (end < 0) {
 			end = -end - 2;

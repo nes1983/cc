@@ -82,8 +82,7 @@ public class HashSerializer {
 	public static class HashSerializerTest {
 		@Test
 		public void testDeserialize() {
-			HashSerializer hs = new HashSerializer(
-					UnsignedBytes.lexicographicalComparator());
+			HashSerializer hs = new HashSerializer(UnsignedBytes.lexicographicalComparator());
 			byte[] array = new byte[] { 0, 1, 2, 3, 4, 5, 6, 7 };
 			Set<byte[]> s = hs.deserialize(array, 2);
 			byte[] b = hs.serialize(s);

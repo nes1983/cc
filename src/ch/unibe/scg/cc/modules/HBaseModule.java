@@ -55,51 +55,35 @@ public class HBaseModule extends AbstractModule {
 		installHTable("indexFactToProject");
 
 		// MR
-		bind(GuiceMapper.class).annotatedWith(
-				Names.named("TablePopulatorMapper")).to(
-				TablePopulatorMapper.class);
-		bind(GuiceMapper.class).annotatedWith(
-				Names.named("GitTablePopulatorMapper")).to(
-				GitTablePopulatorMapper.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexVersions2ProjectsMapper")).to(
+		bind(GuiceMapper.class).annotatedWith(Names.named("TablePopulatorMapper")).to(TablePopulatorMapper.class);
+		bind(GuiceMapper.class).annotatedWith(Names.named("GitTablePopulatorMapper")).to(GitTablePopulatorMapper.class);
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexVersions2ProjectsMapper")).to(
 				IndexVersions2ProjectsMapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexVersions2ProjectsReducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexVersions2ProjectsReducer")).to(
 				IndexVersions2ProjectsReducer.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexFiles2VersionsMapper")).to(
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexFiles2VersionsMapper")).to(
 				IndexFiles2VersionsMapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexFiles2VersionsReducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexFiles2VersionsReducer")).to(
 				IndexFiles2VersionsReducer.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexFunctions2FilesMapper")).to(
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexFunctions2FilesMapper")).to(
 				IndexFunctions2FilesMapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexFunctions2FilesReducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexFunctions2FilesReducer")).to(
 				IndexFunctions2FilesReducer.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexHashfacts2FunctionsMapper")).to(
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexHashfacts2FunctionsMapper")).to(
 				IndexHashfacts2FunctionsMapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexHashfacts2FunctionsReducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexHashfacts2FunctionsReducer")).to(
 				IndexHashfacts2FunctionsReducer.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexFacts2FilesMapper")).to(
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexFacts2FilesMapper")).to(
 				IndexFacts2FilesMapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexFacts2FilesReducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexFacts2FilesReducer")).to(
 				IndexFacts2FilesReducer.class);
-		bind(GuiceTableMapper.class).annotatedWith(
-				Names.named("IndexFacts2FilesStep2Mapper")).to(
+		bind(GuiceTableMapper.class).annotatedWith(Names.named("IndexFacts2FilesStep2Mapper")).to(
 				IndexFacts2FilesStep2Mapper.class);
-		bind(GuiceTableReducer.class).annotatedWith(
-				Names.named("IndexFacts2FilesStep2Reducer")).to(
+		bind(GuiceTableReducer.class).annotatedWith(Names.named("IndexFacts2FilesStep2Reducer")).to(
 				IndexFacts2FilesStep2Reducer.class);
 
-		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class,
-				HTableWriteBuffer.class).build(BufferFactory.class));
+		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
+				BufferFactory.class));
 		bind(IPutFactory.class).to(PutFactory.class);
 	}
 
@@ -107,8 +91,7 @@ public class HBaseModule extends AbstractModule {
 		this.install(new HTableModule(tableName) {
 			@Override
 			void bindHTable() {
-				bind(String.class).annotatedWith(Names.named("tableName"))
-						.toInstance(tableName);
+				bind(String.class).annotatedWith(Names.named("tableName")).toInstance(tableName);
 			}
 		});
 	}
@@ -122,8 +105,7 @@ public class HBaseModule extends AbstractModule {
 
 		@Override
 		protected void configure() {
-			bind(HTable.class).annotatedWith(Names.named(named))
-					.toProvider(HTableProvider.class).in(Singleton.class);
+			bind(HTable.class).annotatedWith(Names.named(named)).toProvider(HTableProvider.class).in(Singleton.class);
 			expose(HTable.class).annotatedWith(Names.named(named));
 
 			bindHTable();

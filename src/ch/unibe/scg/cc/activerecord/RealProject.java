@@ -20,8 +20,7 @@ public class RealProject extends Column implements Project {
 	private byte[] hash;
 
 	@Inject
-	public RealProject(StandardHasher standardHasher,
-			@Assisted("name") String name, @Assisted Version version,
+	public RealProject(StandardHasher standardHasher, @Assisted("name") String name, @Assisted Version version,
 			@Assisted("tag") String tag) {
 		this.name = name;
 		this.version = version;

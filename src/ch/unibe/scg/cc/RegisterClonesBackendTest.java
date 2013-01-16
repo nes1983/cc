@@ -35,12 +35,9 @@ public class RegisterClonesBackendTest {
 	final HTable htable = mock(HTable.class);
 	Function function;
 	final StringOfLinesFactory stringOfLinesFactory = new StringOfLinesFactory();
-	final StringOfLines sampleLines = stringOfLinesFactory
-			.make("a\nb\nc\nd\ne\nf\n");
-	final StringOfLines aThruF = stringOfLinesFactory
-			.make("a\nb\nc\nd\ne\nf\n");
-	final StringOfLines aThruK = stringOfLinesFactory
-			.make("a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\n");
+	final StringOfLines sampleLines = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\n");
+	final StringOfLines aThruF = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\n");
+	final StringOfLines aThruK = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\n");
 
 	@Test
 	public RegisterClonesBackend testOneRegister() {
@@ -49,21 +46,17 @@ public class RegisterClonesBackendTest {
 		StandardHasher sth = i.getInstance(StandardHasher.class);
 		ShingleHasher shh = i.getInstance(ShingleHasher.class);
 
-		RegisterClonesBackend rcb = new RegisterClonesBackend(cr, sth, shh,
-				null);
+		RegisterClonesBackend rcb = new RegisterClonesBackend(cr, sth, shh, null);
 
 		project = mock(RealProject.class);
 		function = mock(Function.class);
 		stub(function.getBaseLine()).toReturn(3);
 
-		rcb.registerConsecutiveLinesOfCode(sampleLines, function,
-				Main.TYPE_3_CLONE);
+		rcb.registerConsecutiveLinesOfCode(sampleLines, function, Main.TYPE_3_CLONE);
 
 		verify(cr).register(
-				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28,
-						44, 42, 38, -9, 20, -75, -38, 89, -71, 70 }),
-				(String) anyObject(), eq(function), eq(3 + 0), eq(5),
-				eq(Main.TYPE_3_CLONE));
+				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71,
+						70 }), (String) anyObject(), eq(function), eq(3 + 0), eq(5), eq(Main.TYPE_3_CLONE));
 
 		Mockito.reset(cr); // JExample doesn't support @After
 		return rcb;
@@ -75,15 +68,11 @@ public class RegisterClonesBackendTest {
 		rcb.registry = cr;
 		rcb.registerConsecutiveLinesOfCode(aThruF, function, Main.TYPE_3_CLONE);
 		verify(cr).register(
-				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28,
-						44, 42, 38, -9, 20, -75, -38, 89, -71, 70 }),
-				(String) anyObject(), eq(function), eq(3), eq(5),
-				eq(Main.TYPE_3_CLONE));
+				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71,
+						70 }), (String) anyObject(), eq(function), eq(3), eq(5), eq(Main.TYPE_3_CLONE));
 		verify(cr).register(
-				eq(new byte[] { 11, 94, -59, -112, 63, 8, -52, -68, 86, -65,
-						105, 103, -53, -106, -96, -11, 25, 50, -98, -25 }),
-				(String) anyObject(), eq(function), eq(4), eq(5),
-				eq(Main.TYPE_3_CLONE));
+				eq(new byte[] { 11, 94, -59, -112, 63, 8, -52, -68, 86, -65, 105, 103, -53, -106, -96, -11, 25, 50,
+						-98, -25 }), (String) anyObject(), eq(function), eq(4), eq(5), eq(Main.TYPE_3_CLONE));
 		Mockito.reset(cr); // JExample doesn't support @After
 		return rcb;
 	}
@@ -93,8 +82,7 @@ public class RegisterClonesBackendTest {
 		CloneRegistry cr = mock(CloneRegistry.class);
 		rcb.registry = cr;
 		rcb.registerConsecutiveLinesOfCode(aThruK, function, Main.TYPE_2_CLONE);
-		verify(cr, times(7)).register(((byte[]) anyObject()),
-				(String) anyObject(), eq(function), anyInt(), anyInt(),
+		verify(cr, times(7)).register(((byte[]) anyObject()), (String) anyObject(), eq(function), anyInt(), anyInt(),
 				eq(Main.TYPE_2_CLONE));
 		Mockito.reset(cr); // JExample doesn't support @After
 

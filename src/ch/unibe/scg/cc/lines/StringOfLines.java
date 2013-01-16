@@ -24,8 +24,7 @@ public class StringOfLines {
 	 *            Index of first returned line. Counting starts with 0.
 	 */
 	public String getLines(int from, int length) {
-		return string
-				.substring(separators[from], separators[from + length] + 1);
+		return string.substring(separators[from], separators[from + length] + 1);
 	}
 
 }

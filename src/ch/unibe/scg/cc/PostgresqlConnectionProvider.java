@@ -28,8 +28,7 @@ public class PostgresqlConnectionProvider implements Provider<Connection> {
 		props.setProperty("prepareThreshold", "1");
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection(
-					"jdbc:postgresql://pinocchio/cc_ref", props);
+			conn = DriverManager.getConnection("jdbc:postgresql://pinocchio/cc_ref", props);
 			conn.setAutoCommit(false);
 		} catch (SQLException e) {
 			throw new RuntimeException("Could not connect to database.", e);

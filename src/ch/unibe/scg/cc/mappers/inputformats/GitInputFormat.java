@@ -21,9 +21,8 @@ public class GitInputFormat extends FileInputFormat<Text, BytesWritable> {
 	}
 
 	@Override
-	public RecordReader<Text, BytesWritable> createRecordReader(
-			InputSplit split, TaskAttemptContext context) throws IOException,
-			InterruptedException {
+	public RecordReader<Text, BytesWritable> createRecordReader(InputSplit split, TaskAttemptContext context)
+			throws IOException, InterruptedException {
 		logger.debug("yyy recordreader creation");
 		return new GitRecordReader();
 	}

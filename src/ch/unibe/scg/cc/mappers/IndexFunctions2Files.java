@@ -24,40 +24,32 @@ public class IndexFunctions2Files implements Runnable {
 	final HBaseWrapper hbaseWrapper;
 
 	@Inject
-	IndexFunctions2Files(
-			@Named("indexFunctions2Files") HTable indexFunctions2Files,
-			HBaseWrapper hbaseWrapper) {
+	IndexFunctions2Files(@Named("indexFunctions2Files") HTable indexFunctions2Files, HBaseWrapper hbaseWrapper) {
 		this.indexFunctions2Files = indexFunctions2Files;
 		this.hbaseWrapper = hbaseWrapper;
 	}
 
-	public static class IndexFunctions2FilesMapper<KEYOUT, VALUEOUT> extends
-			GuiceTableMapper<KEYOUT, VALUEOUT> {
+	public static class IndexFunctions2FilesMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
-				org.apache.hadoop.mapreduce.Mapper.Context context)
-				throws IOException, InterruptedException {
+				org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException, InterruptedException {
 			byte[] key = value.getRow();
 			assert key.length == 40;
 			byte[] functionHash = Bytes.tail(key, 20);
 			byte[] fileContentHash = Bytes.head(key, 20);
-			context.write(new ImmutableBytesWritable(functionHash),
-					new ImmutableBytesWritable(fileContentHash));
+			context.write(new ImmutableBytesWritable(functionHash), new ImmutableBytesWritable(fileContentHash));
 		}
 	}
 
-	public static class IndexFunctions2FilesReducer
-			extends
+	public static class IndexFunctions2FilesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final HashSerializer hashSerializer;
 		final Provider<Set<byte[]>> byteSetProvider;
 		final HTable indexFiles2Versions;
 
 		@Inject
-		IndexFunctions2FilesReducer(
-				@Named("indexFunctions2Files") HTable indexFunctions2Files,
-				@Named("indexFiles2Versions") HTable indexFiles2Versions,
-				HashSerializer hashSerializer,
+		IndexFunctions2FilesReducer(@Named("indexFunctions2Files") HTable indexFunctions2Files,
+				@Named("indexFiles2Versions") HTable indexFiles2Versions, HashSerializer hashSerializer,
 				Provider<Set<byte[]>> byteSetProvider) {
 			super(indexFunctions2Files);
 			this.indexFiles2Versions = indexFiles2Versions;
@@ -66,8 +58,7 @@ public class IndexFunctions2Files implements Runnable {
 		}
 
 		@Override
-		public void reduce(ImmutableBytesWritable functionHash,
-				Iterable<ImmutableBytesWritable> fileContentHashes,
+		public void reduce(ImmutableBytesWritable functionHash, Iterable<ImmutableBytesWritable> fileContentHashes,
 				Context context) throws IOException, InterruptedException {
 			Iterator<ImmutableBytesWritable> i = fileContentHashes.iterator();
 			Set<byte[]> filecontentHashes = byteSetProvider.get();
@@ -78,10 +69,8 @@ public class IndexFunctions2Files implements Runnable {
 				byte[] cur = i.next().get();
 				byte[] fileContentHash = cur;
 				Result row = getRow(fileContentHash);
-				byte[] pnh = getColumnValue(row,
-						GuiceResource.ColumnName.VALUES_VERSIONS.getName());
-				byte[] vh = getColumnValue(row,
-						GuiceResource.ColumnName.VALUES_FILES.getName());
+				byte[] pnh = getColumnValue(row, GuiceResource.ColumnName.VALUES_VERSIONS.getName());
+				byte[] vh = getColumnValue(row, GuiceResource.ColumnName.VALUES_FILES.getName());
 				projnameHashes.addAll(hashSerializer.deserialize(pnh, 20)); // XXX
 																			// possible
 																			// performance
@@ -90,35 +79,30 @@ public class IndexFunctions2Files implements Runnable {
 																			// possible
 																			// performance
 																			// loss
-				filecontentHashes.addAll(hashSerializer.deserialize(
-						fileContentHash, 20)); // XXX possible performance loss
+				filecontentHashes.addAll(hashSerializer.deserialize(fileContentHash, 20)); // XXX
+																							// possible
+																							// performance
+																							// loss
 			}
 
 			Put put = new Put(functionHash.get());
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.COUNT_FUNCTIONS.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FUNCTIONS.getName(), 0l,
 					Bytes.toBytes(filecontentHashes.size()));
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.VALUES_FUNCTIONS.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FUNCTIONS.getName(), 0l,
 					hashSerializer.serialize(filecontentHashes));
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_VERSIONS.getName(), 0l,
 					Bytes.toBytes(projnameHashes.size()));
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_VERSIONS.getName(), 0l,
 					hashSerializer.serialize(projnameHashes));
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.COUNT_FILES.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FILES.getName(), 0l,
 					Bytes.toBytes(versionHashes.size()));
-			put.add(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.VALUES_FILES.getName(), 0l,
+			put.add(GuiceResource.FAMILY, GuiceResource.ColumnName.VALUES_FILES.getName(), 0l,
 					hashSerializer.serialize(versionHashes));
 			context.write(functionHash, put);
 		}
 
 		private Result getRow(byte[] fileContentHash) throws IOException {
-			Iterator<Result> i = indexFiles2Versions.getScanner(
-					new Scan(fileContentHash)).iterator();
+			Iterator<Result> i = indexFiles2Versions.getScanner(new Scan(fileContentHash)).iterator();
 			Result result = i.next();
 			assert !i.hasNext();
 			return result;
@@ -137,12 +121,9 @@ public class IndexFunctions2Files implements Runnable {
 			Scan scan = new Scan();
 			scan.setCaching(500);
 			scan.setCacheBlocks(false);
-			hbaseWrapper.launchTableMapReduceJob(
-					IndexFunctions2Files.class.getName() + " Job", "files",
-					"indexFunctions2Files", scan, IndexFunctions2Files.class,
-					"IndexFunctions2FilesMapper",
-					"IndexFunctions2FilesReducer",
-					ImmutableBytesWritable.class, ImmutableBytesWritable.class,
+			hbaseWrapper.launchTableMapReduceJob(IndexFunctions2Files.class.getName() + " Job", "files",
+					"indexFunctions2Files", scan, IndexFunctions2Files.class, "IndexFunctions2FilesMapper",
+					"IndexFunctions2FilesReducer", ImmutableBytesWritable.class, ImmutableBytesWritable.class,
 					"-Xmx2000m");
 
 			indexFunctions2Files.flushCommits();

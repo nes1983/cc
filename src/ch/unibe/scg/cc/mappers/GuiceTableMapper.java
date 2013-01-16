@@ -14,14 +14,12 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 	}
 
 	@Override
-	public void cleanup(Context context) throws IOException,
-			InterruptedException {
+	public void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);
 	}
 
 	@Override
-	public void map(ImmutableBytesWritable key, Result value, Context context)
-			throws IOException, InterruptedException {
+	public void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
 		super.map(key, value, context);
 	}
 }

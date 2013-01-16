@@ -19,16 +19,14 @@ public class JavaType1ReplacerFactoryTest {
 		assertThat(replacers.length, greaterThan(2));
 		Replace whiteSpaceA = replacers[0];
 		Replace whiteSpaceB = replacers[1];
-		assertThat(
-				whiteSpaceB.allReplaced(whiteSpaceA.allReplaced(sampleClass())),
+		assertThat(whiteSpaceB.allReplaced(whiteSpaceA.allReplaced(sampleClass())),
 				startsWith("package fish.stink;\nimport java.util.*;\nimport static System.out;\npublic class Rod {\n"));
 		return replacers;
 	}
 
 	@Given("checkWhiteSpaces")
 	public Replace[] checkVisibility(Replace[] replaces) {
-		StringBuilder sb = new StringBuilder(
-				"\nprotected static void doIt() {\n");
+		StringBuilder sb = new StringBuilder("\nprotected static void doIt() {\n");
 		replaces[5].replaceAll(sb);
 		assertThat(sb.toString(), is("\nstatic void doIt() {\n"));
 		return replaces;
@@ -48,14 +46,10 @@ public class JavaType1ReplacerFactoryTest {
 	}
 
 	String sampleClass() {
-		return "package        fish.stink;\n" + "import java.util.*;\n"
-				+ "import static System.out;\n\n" + "public class Rod {\n"
-				+ "\tpublic static void main(String[] args) {\n"
-				+ "\t\tout.println(\"Hiya, wassup?\");\n"
-				+ "\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n" + "	}\n"
-				+ "\t\t\tprotected static void doIt() {\n"
-				+ "\t\tif(System.timeInMillis() > 10000)\n"
-				+ "\t\t\tout.println(1337);\n" + "\t\tmain(null);\n" + "\t}\n"
-				+ "}\n";
+		return "package        fish.stink;\n" + "import java.util.*;\n" + "import static System.out;\n\n"
+				+ "public class Rod {\n" + "\tpublic static void main(String[] args) {\n"
+				+ "\t\tout.println(\"Hiya, wassup?\");\n" + "\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n"
+				+ "	}\n" + "\t\t\tprotected static void doIt() {\n" + "\t\tif(System.timeInMillis() > 10000)\n"
+				+ "\t\t\tout.println(1337);\n" + "\t\tmain(null);\n" + "\t}\n" + "}\n";
 	}
 }

@@ -17,16 +17,14 @@ public class RegisterClonesBackend {
 
 	public final int MINIMUM_LINES = 10;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
-	final byte[] emptySHA1Key = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-			0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	final byte[] emptySHA1Key = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	CloneRegistry registry;
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
 	StringOfLinesFactory stringOfLinesFactory;
 
 	@Inject
-	public RegisterClonesBackend(CloneRegistry registry,
-			StandardHasher standardHasher, ShingleHasher shingleHasher,
+	public RegisterClonesBackend(CloneRegistry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
 			StringOfLinesFactory stringOfLinesFactory) {
 		super();
 		this.registry = registry;
@@ -43,16 +41,13 @@ public class RegisterClonesBackend {
 	 * @param project
 	 * @param location
 	 */
-	public void registerFunction(String lines, RealProject project,
-			Function function, byte type) {
+	public void registerFunction(String lines, RealProject project, Function function, byte type) {
 		StringOfLines stringOfLines = stringOfLinesFactory.make(lines);
 		registerConsecutiveLinesOfCode(stringOfLines, function, type);
 	}
 
-	public void shingleRegisterFunction(StringOfLines contentsSOL,
-			Function function) {
-		registerConsecutiveLinesOfCode(contentsSOL, function, shingleHasher,
-				Main.TYPE_3_CLONE);
+	public void shingleRegisterFunction(StringOfLines contentsSOL, Function function) {
+		registerConsecutiveLinesOfCode(contentsSOL, function, shingleHasher, Main.TYPE_3_CLONE);
 	}
 
 	/**
@@ -63,18 +58,14 @@ public class RegisterClonesBackend {
 	 * @param project
 	 * @param location
 	 */
-	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines,
-			Function function, byte type) {
-		registerConsecutiveLinesOfCode(stringOfLines, function, standardHasher,
-				type);
+	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Function function, byte type) {
+		registerConsecutiveLinesOfCode(stringOfLines, function, standardHasher, type);
 	}
 
-	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines,
-			Function function, Hasher hasher, byte type) {
+	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Function function, Hasher hasher, byte type) {
 		assert stringOfLines.getNumberOfLines() >= MINIMUM_LINES;
 
-		for (int frameStart = 0; frameStart < stringOfLines.getNumberOfLines()
-				- MINIMUM_LINES + 1; frameStart++) {
+		for (int frameStart = 0; frameStart < stringOfLines.getNumberOfLines() - MINIMUM_LINES + 1; frameStart++) {
 			if (frameStart + MINIMUM_LINES > stringOfLines.getNumberOfLines()) {
 				break;
 			}
@@ -83,8 +74,7 @@ public class RegisterClonesBackend {
 		}
 	}
 
-	private void registerSnippet(String snippet, Function function, int from,
-			int length, Hasher hasher, byte type) {
+	private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, byte type) {
 
 		byte[] hash;
 		try {

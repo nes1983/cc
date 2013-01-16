@@ -35,8 +35,7 @@ public class ShingleHasher implements Hasher {
 		ArrayList<String> shingles = new ArrayList<String>();
 		int start = 0;
 		for (int i = 0; i < SHINGLE_LENGTH; i++) {
-			AutomatonMatcher matcher = shingleRegex.newMatcher(doc, start,
-					doc.length());
+			AutomatonMatcher matcher = shingleRegex.newMatcher(doc, start, doc.length());
 			while (matcher.find()) {
 				shingles.add(matcher.group());
 			}

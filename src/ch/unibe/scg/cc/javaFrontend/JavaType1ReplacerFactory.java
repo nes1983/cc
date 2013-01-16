@@ -11,8 +11,7 @@ import ch.unibe.scg.cc.regex.Replace;
 import com.google.inject.Provider;
 
 @Singleton
-public class JavaType1ReplacerFactory extends ReplacerProvider implements
-		Provider<Replace[]> {
+public class JavaType1ReplacerFactory extends ReplacerProvider implements Provider<Replace[]> {
 
 	/**
 	 * Hides deep function definitions
@@ -69,8 +68,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements
 	 * 5
 	 */
 	public Replace makeRj5() {
-		Pattern visibility = new Pattern(
-				"(\\s)(?:private\\s|public\\s|protected\\s)");
+		Pattern visibility = new Pattern("(\\s)(?:private\\s|public\\s|protected\\s)");
 		return new Replace(visibility, "$1");
 	}
 
@@ -78,8 +76,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements
 	 * 6
 	 */
 	public Replace makeRj6() {
-		Pattern ifPattern = new Pattern(
-				"\\sif\\s*\\((?:.*)\\)\\s*(\\n[^\\n\\{\\}]*)$");
+		Pattern ifPattern = new Pattern("\\sif\\s*\\((?:.*)\\)\\s*(\\n[^\\n\\{\\}]*)$");
 		return new Replace(ifPattern, " {\\n$1\\n}\\n");
 	}
 

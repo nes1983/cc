@@ -38,8 +38,7 @@ public class JGitTest implements Runnable {
 
 	public void run() {
 		try {
-			DfsRepositoryDescription desc = new DfsRepositoryDescription(
-					"scribe-java");
+			DfsRepositoryDescription desc = new DfsRepositoryDescription("scribe-java");
 			InMemoryRepository r = new InMemoryRepository(desc);
 
 			Configuration conf = new Configuration();
@@ -59,8 +58,7 @@ public class JGitTest implements Runnable {
 			RevWalk revWalk = new RevWalk(r);
 
 			PackedRefParser prp = new PackedRefParser();
-			FSDataInputStream ins = fileSystem.open(new Path(
-					"/tmp/scribe-java/.git/packed-refs"));
+			FSDataInputStream ins = fileSystem.open(new Path("/tmp/scribe-java/.git/packed-refs"));
 			List<PackedRef> pr = prp.parse(ins);
 
 			for (PackedRef paref : pr) {
@@ -79,8 +77,8 @@ public class JGitTest implements Runnable {
 					ObjectId objectId = treeWalk.getObjectId(0);
 					ObjectLoader loader = r.open(objectId);
 
-					logger.debug(Constants.typeString(loader.getType()) + ": "
-							+ objectId + " " + treeWalk.getPathString());
+					logger.debug(Constants.typeString(loader.getType()) + ": " + objectId + " "
+							+ treeWalk.getPathString());
 					// logger.debug(getContent(r, objectId));
 				}
 			}
@@ -90,12 +88,11 @@ public class JGitTest implements Runnable {
 		}
 	}
 
-	private static String getContent(Repository repository, ObjectId objectId)
-			throws MissingObjectException, IOException {
+	private static String getContent(Repository repository, ObjectId objectId) throws MissingObjectException,
+			IOException {
 		ObjectLoader loader = repository.open(objectId);
 		InputStream inputStream = loader.openStream();
-		BufferedReader bufferedReader = new BufferedReader(
-				new InputStreamReader(inputStream));
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 		StringBuilder stringBuilder = new StringBuilder();
 		String line = null;
 		while ((line = bufferedReader.readLine()) != null) {

@@ -33,11 +33,9 @@ public class ReplacementStringTest {
 		assertThat(contents.get(3), ((Matcher) isA(PlaceHolderSegment.class)));
 
 		assertThat(((LiteralSegment) contents.get(0)).s, is("waa"));
-		assertThat(((PlaceHolderSegment) contents.get(1)).placeHolderNumber,
-				is(2));
+		assertThat(((PlaceHolderSegment) contents.get(1)).placeHolderNumber, is(2));
 		assertThat(((LiteralSegment) contents.get(2)).s, is("blaa"));
-		assertThat(((PlaceHolderSegment) contents.get(3)).placeHolderNumber,
-				is(1));
+		assertThat(((PlaceHolderSegment) contents.get(3)).placeHolderNumber, is(1));
 		return s;
 
 	}
@@ -50,10 +48,8 @@ public class ReplacementStringTest {
 		assertThat(contents.get(0), ((Matcher) isA(PlaceHolderSegment.class)));
 		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));
 
-		assertThat(((PlaceHolderSegment) contents.get(0)).placeHolderNumber,
-				is(2));
-		assertThat(((PlaceHolderSegment) contents.get(1)).placeHolderNumber,
-				is(1));
+		assertThat(((PlaceHolderSegment) contents.get(0)).placeHolderNumber, is(2));
+		assertThat(((PlaceHolderSegment) contents.get(1)).placeHolderNumber, is(1));
 		return s;
 
 	}

@@ -23,8 +23,7 @@ public class RealVersion extends Column implements Version {
 	private byte[] hashFilePath;
 
 	@Inject
-	public RealVersion(StandardHasher standardHasher,
-			@Assisted String filePath, @Assisted CodeFile codeFile) {
+	public RealVersion(StandardHasher standardHasher, @Assisted String filePath, @Assisted CodeFile codeFile) {
 		this.filePath = filePath;
 		this.codeFile = codeFile;
 		this.hashCodeFile = codeFile.getFileContentsHash();

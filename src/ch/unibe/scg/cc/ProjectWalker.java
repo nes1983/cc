@@ -75,25 +75,21 @@ public class ProjectWalker {
 	public void crawl(String path) throws IOException {
 		SuffixFileFilter filter = new SuffixFileFilter(".tar.gz");
 		File base = new File(path);
-		String[] projectNames = base
-				.list((FilenameFilter) new SuffixFileFilter(".tar.gz"));
+		String[] projectNames = base.list((FilenameFilter) new SuffixFileFilter(".tar.gz"));
 		for (String projectName : projectNames) {
 			FileObject project;
 
 			project = fsManager.resolveFile(base, projectName);
-			project = fsManager.resolveFile("tgz://"
-					+ project.toString().substring("file://".length()));
+			project = fsManager.resolveFile("tgz://" + project.toString().substring("file://".length()));
 
 			crawl(project, projectName);
 		}
 	}
 
-	public void crawl(FileObject project, String projectName)
-			throws IOException {
+	public void crawl(FileObject project, String projectName) throws IOException {
 		FileObject[] javaFiles = project.findFiles(javaFilter);
 
-		System.out.format("Processing files: %s%n",
-				ArrayUtils.toString(javaFiles));
+		System.out.format("Processing files: %s%n", ArrayUtils.toString(javaFiles));
 		List<Version> versions = crawl(javaFiles);
 
 		for (Version version : versions) {
@@ -148,8 +144,7 @@ class SuffixFilter implements FileSelector {
 	}
 
 	@Override
-	public boolean traverseDescendents(FileSelectInfo fileInfo)
-			throws Exception {
+	public boolean traverseDescendents(FileSelectInfo fileInfo) throws Exception {
 		return true;
 	}
 }

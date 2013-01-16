@@ -17,8 +17,7 @@ public class StringOfLinesFactory {
 		separators[0] = 0;
 		int thisIndex = string.indexOf(separator);
 		int i;
-		for (i = 1; thisIndex != -1; thisIndex = string.indexOf(separator,
-				thisIndex + 1)) {
+		for (i = 1; thisIndex != -1; thisIndex = string.indexOf(separator, thisIndex + 1)) {
 			separators[i] = thisIndex;
 			i++;
 		}

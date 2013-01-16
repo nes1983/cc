@@ -32,8 +32,7 @@ public class JavaModule extends AbstractModule {
 class Type1Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontend.class).annotatedWith(Type1.class).to(
-				Normalizer.class);
+		bind(PhaseFrontend.class).annotatedWith(Type1.class).to(Normalizer.class);
 		expose(PhaseFrontend.class).annotatedWith(Type1.class);
 
 		// Private:
@@ -45,8 +44,7 @@ class Type1Module extends PrivateModule {
 class Type2Module extends PrivateModule {
 	@Override
 	protected void configure() {
-		bind(PhaseFrontend.class).annotatedWith(Type2.class).to(
-				Normalizer.class);
+		bind(PhaseFrontend.class).annotatedWith(Type2.class).to(Normalizer.class);
 		expose(PhaseFrontend.class).annotatedWith(Type2.class);
 
 		// Private:

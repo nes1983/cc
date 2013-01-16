@@ -37,32 +37,26 @@ public class IndexTopHashfacts {
 		logger.setLevel(Level.ALL);
 		logger.debug("los");
 
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(),
-				new HBaseModule());
-		HTable indexHashfacts2Functions = i.getInstance(Key.get(HTable.class,
-				Names.named("indexHashfacts2Functions")));
-		HTable hashfactContent = i.getInstance(Key.get(HTable.class,
-				Names.named("hashfactContent")));
+		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+		HTable indexHashfacts2Functions = i.getInstance(Key.get(HTable.class, Names.named("indexHashfacts2Functions")));
+		HTable hashfactContent = i.getInstance(Key.get(HTable.class, Names.named("hashfactContent")));
 
-		Scan scan = new Scan(new byte[] { Main.TYPE_1_CLONE },
-				new byte[] { Main.TYPE_1_CLONE });
+		Scan scan = new Scan(new byte[] { Main.TYPE_1_CLONE }, new byte[] { Main.TYPE_1_CLONE });
 		scan.setCaching(250000);
 		scan.addFamily(GuiceResource.FAMILY);
 		ResultScanner rsHashfacts = indexHashfacts2Functions.getScanner(scan);
 		Iterator<Result> ir = rsHashfacts.iterator();
 
-		TreeMap<Integer, List<byte[]>> hm = new TreeMap<Integer, List<byte[]>>(
-				new Comparator<Integer>() {
-					public int compare(Integer a, Integer b) {
-						return b.compareTo(a);
-					}
-				});
+		TreeMap<Integer, List<byte[]>> hm = new TreeMap<Integer, List<byte[]>>(new Comparator<Integer>() {
+			public int compare(Integer a, Integer b) {
+				return b.compareTo(a);
+			}
+		});
 
 		int count = 0;
 		while (ir.hasNext()) {
 			Result r = ir.next();
-			int nf = Bytes.toInt(r.getValue(GuiceResource.FAMILY,
-					GuiceResource.ColumnName.COUNT_FACTS.getName()));
+			int nf = Bytes.toInt(r.getValue(GuiceResource.FAMILY, GuiceResource.ColumnName.COUNT_FACTS.getName()));
 			byte[] rowKey = r.getRow();
 
 			if (hm.get(nf) == null) {
@@ -91,8 +85,7 @@ public class IndexTopHashfacts {
 		}
 	}
 
-	private static String lookupContent(byte[] rowKey, HTable hashfactContent)
-			throws IOException {
+	private static String lookupContent(byte[] rowKey, HTable hashfactContent) throws IOException {
 		Scan s = new Scan(rowKey);
 		Result r = hashfactContent.getScanner(s).iterator().next();
 		byte[] res = r.getValue(GuiceResource.FAMILY, Bytes.toBytes("sv"));

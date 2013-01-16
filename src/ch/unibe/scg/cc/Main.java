@@ -20,8 +20,7 @@ public class Main {
 	public static final byte TYPE_3_CLONE = 0x03;
 
 	public static void main(String[] args) throws IOException {
-		Injector injector = Guice.createInjector(new JavaModule(),
-				new CCModule(), new HBaseModule());
+		Injector injector = Guice.createInjector(new JavaModule(), new CCModule(), new HBaseModule());
 		ProjectWalker walker = injector.getInstance(ProjectWalker.class);
 		stoppedWalk(walker);
 	}
@@ -42,8 +41,7 @@ public class Main {
 		// crawl(walker, "netbeans-javadoc", "projects/netbeans-javadoc.zip");
 	}
 
-	private static void crawl(ProjectWalker walker, String projectName,
-			String filePath) throws IOException {
+	private static void crawl(ProjectWalker walker, String projectName, String filePath) throws IOException {
 		FileObject file = VFS.getManager().resolveFile(new File("."), filePath);
 		file = VFS.getManager().resolveFile("zip://" + file.getURL().getPath());
 		// FileObject file = VFS.getManager().resolveFile(new File("."),

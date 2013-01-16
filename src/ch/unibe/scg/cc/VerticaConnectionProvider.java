@@ -25,8 +25,7 @@ public class VerticaConnectionProvider implements Provider<Connection> {
 		myProp.put("user", "dbadmin");
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection(
-					"jdbc:vertica://[fe80::5ef3:fcff:fe78:8ef0]/cc", myProp);
+			conn = DriverManager.getConnection("jdbc:vertica://[fe80::5ef3:fcff:fe78:8ef0]/cc", myProp);
 		} catch (SQLException e) {
 			throw new RuntimeException("Could not connect to database.", e);
 		}

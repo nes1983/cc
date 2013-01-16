@@ -69,8 +69,7 @@ public class MRMain extends Configured implements Tool {
 				// bind(Configuration.class).annotatedWith(Names.named("commandLine")).toInstance(getConf());
 			}
 		};
-		Injector injector = Guice.createInjector(confModule, new CCModule(),
-				new JavaModule(), new HBaseModule());
+		Injector injector = Guice.createInjector(confModule, new CCModule(), new JavaModule(), new HBaseModule());
 		Object instance = injector.getInstance(c);
 		((Runnable) instance).run();
 		return 0;
@@ -88,32 +87,25 @@ public class MRMain extends Configured implements Tool {
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
 	 * the guice-configured reducer.
 	 */
-	public static class MRMainMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends
-			Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+	public static class MRMainMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> guiceMapper;
 
 		@SuppressWarnings("unchecked")
 		@Override
-		protected void setup(Context context) throws IOException,
-				InterruptedException {
-			String clazz = context.getConfiguration().get(
-					"GuiceMapperAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(),
-					new JavaModule(), new HBaseModule());
-			guiceMapper = injector.getInstance(Key.get(GuiceMapper.class,
-					Names.named(clazz)));
+		protected void setup(Context context) throws IOException, InterruptedException {
+			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			guiceMapper = injector.getInstance(Key.get(GuiceMapper.class, Names.named(clazz)));
 			guiceMapper.setup(context);
 		}
 
 		@Override
-		protected void map(KEYIN key, VALUEIN value, Context context)
-				throws IOException, InterruptedException {
+		protected void map(KEYIN key, VALUEIN value, Context context) throws IOException, InterruptedException {
 			guiceMapper.map(key, value, context);
 		}
 
 		@Override
-		protected void cleanup(Context context) throws IOException,
-				InterruptedException {
+		protected void cleanup(Context context) throws IOException, InterruptedException {
 			guiceMapper.cleanup(context);
 		}
 
@@ -123,44 +115,36 @@ public class MRMain extends Configured implements Tool {
 		 * {@link #map(Object, Object, Mapper.Context)} and
 		 * {@link #cleanup(Mapper.Context)} methods.
 		 */
-		public void run(Context context) throws IOException,
-				InterruptedException {
+		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
 	}
 
 	/** see {@link MRMainMapper} */
-	public static class MRMainTableMapper<KEYOUT, VALUEOUT> extends
-			TableMapper<KEYOUT, VALUEOUT> {
+	public static class MRMainTableMapper<KEYOUT, VALUEOUT> extends TableMapper<KEYOUT, VALUEOUT> {
 		GuiceTableMapper<KEYOUT, VALUEOUT> guiceMapper;
 
 		@SuppressWarnings("unchecked")
 		@Override
-		protected void setup(Context context) throws IOException,
-				InterruptedException {
-			String clazz = context.getConfiguration().get(
-					"GuiceMapperAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(),
-					new JavaModule(), new HBaseModule());
-			guiceMapper = injector.getInstance(Key.get(GuiceTableMapper.class,
-					Names.named(clazz)));
+		protected void setup(Context context) throws IOException, InterruptedException {
+			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			guiceMapper = injector.getInstance(Key.get(GuiceTableMapper.class, Names.named(clazz)));
 			guiceMapper.setup(context);
 		}
 
 		@Override
-		protected void map(ImmutableBytesWritable key, Result value,
-				Context context) throws IOException, InterruptedException {
+		protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException,
+				InterruptedException {
 			guiceMapper.map(key, value, context);
 		}
 
 		@Override
-		protected void cleanup(Context context) throws IOException,
-				InterruptedException {
+		protected void cleanup(Context context) throws IOException, InterruptedException {
 			guiceMapper.cleanup(context);
 		}
 
-		public void run(Context context) throws IOException,
-				InterruptedException {
+		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
 	}
@@ -168,38 +152,30 @@ public class MRMain extends Configured implements Tool {
 	/**
 	 * see {@link MRMainMapper}
 	 */
-	public static class MRMainTableReducer
-			extends
+	public static class MRMainTableReducer extends
 			TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> reducer;
 
 		@SuppressWarnings("unchecked")
 		@Override
-		protected void setup(Context context) throws IOException,
-				InterruptedException {
-			String clazz = context.getConfiguration().get(
-					"GuiceReducerAnnotation");
-			Injector injector = Guice.createInjector(new CCModule(),
-					new JavaModule(), new HBaseModule());
-			reducer = injector.getInstance(Key.get(GuiceTableReducer.class,
-					Names.named(clazz)));
+		protected void setup(Context context) throws IOException, InterruptedException {
+			String clazz = context.getConfiguration().get("GuiceReducerAnnotation");
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			reducer = injector.getInstance(Key.get(GuiceTableReducer.class, Names.named(clazz)));
 			reducer.setup(context);
 		}
 
 		@Override
-		protected void cleanup(Context context) throws IOException,
-				InterruptedException {
+		protected void cleanup(Context context) throws IOException, InterruptedException {
 			reducer.cleanup(context);
 		}
 
-		public void run(Context context) throws IOException,
-				InterruptedException {
+		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
 
 		@Override
-		protected void reduce(ImmutableBytesWritable key,
-				Iterable<ImmutableBytesWritable> values, Context context)
+		protected void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context)
 				throws IOException, InterruptedException {
 			reducer.reduce(key, values, context);
 		}

@@ -40,8 +40,7 @@ public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 	private boolean isFinished = false;
 
 	@Override
-	public void initialize(InputSplit inputSplit,
-			TaskAttemptContext taskAttemptContext) throws IOException,
+	public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException,
 			InterruptedException {
 		FileSplit split = (FileSplit) inputSplit;
 		Configuration conf = taskAttemptContext.getConfiguration();
@@ -84,8 +83,7 @@ public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 	}
 
 	@Override
-	public BytesWritable getCurrentValue() throws IOException,
-			InterruptedException {
+	public BytesWritable getCurrentValue() throws IOException, InterruptedException {
 		return currentValue;
 	}
 
