@@ -25,8 +25,18 @@
         <pathelement location="libs/zookeeper-3.3.2.jar"/>
         <pathelement location="libs/log4j-1.2.16.jar"/>
         <pathelement location="libs/hawtdispatch-1.7.jar"/>
-        <pathelement location="libs/hadoop-core-1.0.1.jar"/>
-        <pathelement location="libs/hbase-0.92.0.jar"/>
+        <pathelement location="libs/hadoop-auth-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-common-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.1.2.jar"/>
+        <pathelement location="libs/hbase-0.92.1-cdh4.1.2-security.jar"/>
         <pathelement location="libs/commons-cli-1.2.jar"/>
         <pathelement location="bin"/>
         <pathelement location="libs/aopalliance.jar"/>
@@ -95,14 +105,14 @@
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
 	</target>
-	<target name="indexFacts2Files">
+	<target name="indexFacts2Functions">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2Files" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2Functions" />
 		</antcall>
 	</target>
-	<target name="indexFacts2FilesStep2">
+	<target name="indexFacts2FunctionsStep2">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2FilesStep2" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2FunctionsStep2" />
 		</antcall>
 	</target>
 	<target name="indexVersions2Projects">

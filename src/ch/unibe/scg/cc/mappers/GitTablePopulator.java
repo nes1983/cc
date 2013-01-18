@@ -64,7 +64,7 @@ public class GitTablePopulator implements Runnable {
 	private static final String REDUCE_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
-	private static final String PROJECTS_PATH = "/project-clone-detector/testdata";
+	private static final String PROJECTS_PATH = "/project-clone-detector/projects"; // testdata
 	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
 	final HBaseWrapper hbaseWrapper;
 

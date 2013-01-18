@@ -1,13 +1,13 @@
 -- CREATION --
-create 'versions', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'files', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'functions', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'facts', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'strings', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'hashfactContent', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'versions', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'files', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'functions', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'facts', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'strings', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'hashfactContent', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 
-create 'indexFacts2Files', {NAME => 'd', COMPRESSION => 'GZ'}
-create 'indexFacts2FilesStep2', {NAME => 'd', COMPRESSION => 'GZ'}
+create 'indexFacts2Functions', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'indexFacts2FunctionsStep2', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 
 // create 'indexVersions2Projects', {NAME => 'd', COMPRESSION => 'GZ'}
 // create 'indexFiles2Versions', {NAME => 'd', COMPRESSION => 'GZ'}
