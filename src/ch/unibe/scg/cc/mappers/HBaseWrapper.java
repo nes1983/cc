@@ -59,6 +59,10 @@ public class HBaseWrapper {
 
 		thisJob.getConfiguration().set("mapred.child.java.opts", mapred_child_java_opts);
 
+		// for profiling
+		thisJob.setProfileEnabled(true);
+		thisJob.setProfileParams("-agentlib:hprof=cpu=samples,force=n,thread=y,interval=100,verbose=n,doe=y,file=%s");
+
 		return thisJob.waitForCompletion(true);
 	}
 

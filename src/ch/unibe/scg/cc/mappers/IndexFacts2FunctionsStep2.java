@@ -1,9 +1,11 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
+import java.util.Set;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -104,8 +106,10 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 				byte[] putColumnKey = Bytes.add(position, factHash);
 				assert putColumnKey.length == 25; // 4B pos + 1B type + 20B hash
 
+				// now fetch all functions/locations containing the facthash
 				Result row = getRow(factHash);
 				NavigableMap<byte[], byte[]> map = row.getFamilyMap(GuiceResource.FAMILY);
+				Set<byte[]> functionHashPlusLocationSet = new HashSet<byte[]>();
 				for (Entry<byte[], byte[]> column : map.entrySet()) {
 					// skip column where key equals fileHash
 					if (Bytes.equals(functionHash, column.getKey())) {
@@ -116,8 +120,11 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 					byte[] columnLocation = column.getValue();
 					byte[] putColumnValue = Bytes.add(columnFunctionHash, columnLocation);
 
-					put.add(GuiceResource.FAMILY, putColumnKey, 0l, putColumnValue);
+					functionHashPlusLocationSet.add(putColumnValue);
 				}
+
+				byte[] functionHashPlusLocation = hashSerializer.serialize(functionHashPlusLocationSet);
+				put.add(GuiceResource.FAMILY, putColumnKey, 0l, functionHashPlusLocation);
 			}
 			context.write(functionHashKey, put);
 		}
