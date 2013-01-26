@@ -59,7 +59,9 @@
 	<classpathentry kind="lib" path="libs/slf4j-api-1.7.2.jar"/>
 	<classpathentry kind="lib" path="libs/slf4j-simple-1.7.2.jar"/>
 	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.1.2-security.jar" sourcepath="libs/hbase-0.92.1-cdh4.1.2.zip"/>
+	<classpathentry kind="lib" path="libs/protobuf-java-2.4.1.jar" sourcepath="libs/protobuf-2.4.1.zip"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/guice-src.zip!/javadoc"/>
