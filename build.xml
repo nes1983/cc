@@ -54,6 +54,7 @@
         <pathelement location="libs/automaton.jar"/>
         <pathelement location="libs/juniversalchardet-1.0.3.jar"/>
     	<pathelement location="libs/jsch-0.1.48.jar"/>
+    	<pathelement location="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
