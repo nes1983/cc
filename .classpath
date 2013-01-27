@@ -28,11 +28,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/postgresql-8.4-703.jdbc4.jar"/>
-	<classpathentry kind="lib" path="libs/guava-10.0.1.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://docs.guava-libraries.googlecode.com/git-history/v10.0.1/javadoc/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="libs/zookeeper-3.3.2.jar"/>
 	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="libs/hawtdispatch-1.7.jar">
@@ -64,8 +59,8 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/org.eclipse.jgit-2.2.0.201212191850-r-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="org/eclipse/jgit/api/|org/eclipse/jgit/api/errors/|org/eclipse/jgit/blame/|org/eclipse/jgit/diff/|org/eclipse/jgit/dircache/|org/eclipse/jgit/errors/|org/eclipse/jgit/events/|org/eclipse/jgit/fnmatch/|org/eclipse/jgit/ignore/|org/eclipse/jgit/internal/|org/eclipse/jgit/lib/|org/eclipse/jgit/merge/|org/eclipse/jgit/nls/|org/eclipse/jgit/notes/|org/eclipse/jgit/patch/|org/eclipse/jgit/revplot/|org/eclipse/jgit/revwalk/|org/eclipse/jgit/revwalk/filter/|org/eclipse/jgit/storage/dfs/|org/eclipse/jgit/storage/file/|org/eclipse/jgit/storage/pack/|org/eclipse/jgit/submodule/|org/eclipse/jgit/transport/|org/eclipse/jgit/transport/resolver/|org/eclipse/jgit/treewalk/|org/eclipse/jgit/treewalk/filter/|org/eclipse/jgit/util/|org/eclipse/jgit/util/io/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/protobuf-java-2.4.1.jar" sourcepath="libs/protobuf-2.4.1.zip"/>
+	<classpathentry kind="lib" path="libs/guava-14.0-rc1.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
