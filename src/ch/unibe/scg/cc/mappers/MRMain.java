@@ -9,6 +9,7 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.apache.log4j.Logger;
@@ -93,7 +94,7 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
+			String clazz = context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING);
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = injector.getInstance(Key.get(GuiceMapper.class, Names.named(clazz)));
 			guiceMapper.setup(context);
@@ -127,7 +128,7 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get("GuiceMapperAnnotation");
+			String clazz = context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING);
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = injector.getInstance(Key.get(GuiceTableMapper.class, Names.named(clazz)));
 			guiceMapper.setup(context);
@@ -152,6 +153,38 @@ public class MRMain extends Configured implements Tool {
 	/**
 	 * see {@link MRMainMapper}
 	 */
+	public static class MRMainReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends
+			Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+		GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> reducer;
+
+		@SuppressWarnings("unchecked")
+		@Override
+		protected void setup(Context context) throws IOException, InterruptedException {
+			String clazz = context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING);
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			reducer = injector.getInstance(Key.get(GuiceReducer.class, Names.named(clazz)));
+			reducer.setup(context);
+		}
+
+		@Override
+		protected void cleanup(Context context) throws IOException, InterruptedException {
+			reducer.cleanup(context);
+		}
+
+		public void run(Context context) throws IOException, InterruptedException {
+			super.run(context);
+		}
+
+		@Override
+		protected void reduce(KEYIN key, Iterable<VALUEIN> values, Context context) throws IOException,
+				InterruptedException {
+			reducer.reduce(key, values, context);
+		}
+	}
+
+	/**
+	 * see {@link MRMainMapper}
+	 */
 	public static class MRMainTableReducer extends
 			TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> reducer;
@@ -159,7 +192,7 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get("GuiceReducerAnnotation");
+			String clazz = context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING);
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			reducer = injector.getInstance(Key.get(GuiceTableReducer.class, Names.named(clazz)));
 			reducer.setup(context);

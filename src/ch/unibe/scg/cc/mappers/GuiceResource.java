@@ -29,6 +29,8 @@ public class GuiceResource {
 
 	public static final BytesWritable EMPTY_BYTES_WRITABLE = new BytesWritable(new byte[] {});
 	public static final byte[] FAMILY = Bytes.toBytes("d");
+	public static final String GUICE_MAPPER_ANNOTATION_STRING = "GuiceMapperAnnotation";
+	public static final String GUICE_REDUCER_ANNOTATION_STRING = "GuiceReducerAnnotation";
 
 	/*
 	 * ONLY FOR FAST COPY/PASTE... final HTable versions; final HTable
