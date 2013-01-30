@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package mappers;
+
+option java_package = "ch.unibe.scg.cc.mappers";
+
+message FunctionLocation {
+	optional bytes function = 1;
+	optional bytes row_function_location = 2;
+	optional bytes fact_hash = 3;
+	optional bytes fact_hash_location = 4;
+}
