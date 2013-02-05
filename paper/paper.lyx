@@ -77,12 +77,218 @@ Introduction
 Clone detection as a map reduce
 \end_layout
 
+\begin_layout Subsection
+Gathering data
+\end_layout
+
+\begin_layout Standard
+Before we can explain the inner working of our algorithm, we shall first
+ explain where and how we got the data we are going to analyze.
+ The choice went on Ohloh which is a directory of open source projects amongst
+ other things.
+ Statistics about the usage of programming languages is evaluated on every
+ registered project.
+ We are especially interested in Java source files, as our parser is currently
+ only capable to tokenize Java files on function/method
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+only one word
+\end_layout
+
+\end_inset
+
+ level.
+ The public API of Ohloh had several restrictions, so we decided
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Don't discuss anything on that level
+\end_layout
+
+\end_inset
+
+ to use a trivial
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Don't say it's trivial.
+ Just say what you did.
+\end_layout
+
+\end_inset
+
+ website parsing approach.
+ Under the URL http://www.ohloh.net/tags/java all projects tagged with 
+\begin_inset Quotes eld
+\end_inset
+
+java
+\begin_inset Quotes erd
+\end_inset
+
+ are listed.
+ By writing a ruby script we were able to crawl all listed repositories
+ of the evaluated projects.
+ We only process Git repositories as we only have a git format parser
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+A what? Connect!
+\end_layout
+
+\end_inset
+
+ (note that we read in many versions of the same project).
+\end_layout
+
+\begin_layout Standard
+After parsing the repository URLs, we had to determine which one of the
+ found repository was the official one (example: http://www.ohloh.net/p/php/enlist
+ments).
+ We came up with a scoring system 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Describe! Where's the code?
+\end_layout
+
+\end_inset
+
+ to better
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+general blabber
+\end_layout
+
+\end_inset
+
+ evaluate the one repository we were interested in per project.
+\end_layout
+
+\begin_layout Subsection
+Git pack files
+\end_layout
+
+\begin_layout Standard
+Our goal
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I NEVER want to know your goal.
+ Say what you did, and what came out.
+ And that's that.
+\end_layout
+
+\end_inset
+
+ is to process a project's source code coming from various versions.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Why?
+\end_layout
+
+\end_inset
+
+ Therefore
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Does not follow.
+\end_layout
+
+\end_inset
+
+ we chose to rely on the newest fifteen tags of a project repository.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jumps must be separated by paragraphs.
+\end_layout
+
+\end_inset
+
+ All tags are stored in the packed-refs file.
+ The other file we need is the pack file, in which all data is stored
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Focus on this part.
+ It's easier to write, because it's detaily stuff.
+ Get this right before you do the part above.
+\end_layout
+
+\end_inset
+
+.
+ Important to mention, that we never extract the contents of the pack file
+ on disk.
+ Later in the mapping phase, when we load all the data and fill up the database,
+ we dynamically load the contents of the pack file into memory, but never
+ on disk.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Describe the big file thing (and do it, maybe)
+\end_layout
+
+\end_inset
+
+ Hadoop archive file...
+\end_layout
+
+\begin_layout Subsection
+Cluster setup
+\end_layout
+
+\begin_layout Standard
+Our cluster setup consists of four server machines: Haddock, Leela, Bender
+ and Pinocchio.
+ Leela is the strongest machine: [Spec-sheet: 128GB RAM, 32 CORES].
+ All the others have 16GB of RAM and 8 Cores each.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Your goal: explain the setup.
+ Why like this?
+\end_layout
+
+\end_inset
+
+ The most important criteria regarding our MR design was to get as much
+ RAM as we could.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Hadoop
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Simon: describe algorithm.
+Not a focus point.
 \end_layout
 
 \end_inset
@@ -90,12 +296,121 @@ Simon: describe algorithm.
 
 \end_layout
 
+\begin_layout Standard
+Resource Manager: Haddock
+\end_layout
+
+\begin_layout Standard
+Namenodes: All 4 with different amount of resources.
+\end_layout
+
+\begin_layout Standard
+History server: Leela
+\end_layout
+
+\begin_layout Standard
+Log aggregation enabled.
+\end_layout
+
+\begin_layout Subsubsection
+HBase
+\end_layout
+
+\begin_layout Standard
+The HBase master as well as the region server service are installed on Leela.
+ HDFS - Our projects are stored inside HDFS.
+\end_layout
+
+\begin_layout Subsection
+Algorithm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Selling point: No random reading across the cluster.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Table populate: avoid flush, avoid read.
+ Quote: Bigtable paper, GFS paper.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Simon: describe algorithm.
+ Beispiel!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+MR Steps - Explain whole procedure using a detailed example - Process HDFS-Folde
+r with all pack files - Clone Escalation
+\end_layout
+
+\begin_layout Standard
+GitTablePopulator: Process HDFS-Folder with all pack files (see section
+ Git pack files...).
+ GitPackFile RecordReader.
+ Before the real Map-job starts, all folders in a specific HDFS-folder are
+ scanned.
+\end_layout
+
+\begin_layout Standard
+Histogram data showed similar results as on how often code is cloned across
+ repositories.
+ 
+\end_layout
+
 \begin_layout Section
 Tracing snippets
 \end_layout
 
 \begin_layout Section
-Case studies
+Lessons learnt
+\end_layout
+
+\begin_layout Standard
+YARN Configuration - Distribution of configuration file - Updating the configura
+tion
+\end_layout
+
+\begin_layout Subsection
+Leap second bug or how we won 1 second and lost a week
+\end_layout
+
+\begin_layout Standard
+We were not aware of the Leap second which was added at at 23:59:60 UTC
+ on June 30, 2012.
+ Java processes used excessive amount of CPU.
+ Very slow reaction times of Hadoop and HBase, restarted services multiple
+ times.
+ In the end, the only thing that effectively helped was a reboot of the
+ machines.
+ (see https://bugzilla.mozilla.org/show_bug.cgi?id=769972)
 \end_layout
 
 \begin_layout Section

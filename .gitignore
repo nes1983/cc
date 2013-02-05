@@ -11,6 +11,8 @@ cc.jar
 .DS_STORE
 .metadata/*
 src-gen/**/*
+*.lyx#
+*.lyx~
 
 *.class
 
