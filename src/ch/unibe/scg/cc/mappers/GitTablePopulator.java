@@ -16,6 +16,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
@@ -24,7 +25,10 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.OutputFormat;
+import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.apache.log4j.Logger;
@@ -50,43 +54,51 @@ import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
+import ch.unibe.scg.cc.mappers.Histogram.HistogramReducer;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Joiner;
+import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 
 public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class);
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "2000";
-	private static final String REDUCE_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
-	private static final String PROJECTS_PATH = "/project-clone-detector/projects"; // testdata
+	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/projects.har";
+	private static final String PROJECTS_FOLDER_PATH = "testdata"; // projects
 	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
-	final HBaseWrapper hbaseWrapper;
+	final MRWrapper mrWrapper;
 
 	@Inject
-	GitTablePopulator(HBaseWrapper hbaseWrapper) {
-		this.hbaseWrapper = hbaseWrapper;
+	GitTablePopulator(MRWrapper mrWrapper) {
+		this.mrWrapper = mrWrapper;
 	}
 
 	public void run() {
 		try {
-			Job job = hbaseWrapper.createMapJob("gitPopulate", GitTablePopulator.class, "GitTablePopulatorMapper",
-					Text.class, IntWritable.class);
-			job.setInputFormatClass(GitPathInputFormat.class);
-			job.setOutputFormatClass(NullOutputFormat.class);
-			job.getConfiguration().set("mapred.child.java.opts", MAPRED_CHILD_JAVA_OPTS);
-			job.getConfiguration().set("mapreduce.map.memory.mb", MAP_MEMORY);
-			job.getConfiguration().set("mapreduce.reduce.memory.mb", REDUCE_MEMORY);
+			Configuration config = new Configuration();
+			config.set("mapreduce.job.reduces", "0");
+			config.set("mapreduce.job.ubertask.enable", "false");
+			config.set("mapreduce.job.jvm.numtasks", "-1");
+			config.set("mapreduce.task.timeout", "86400000");
+			config.set("mapreduce.map.memory.mb", MAP_MEMORY);
+			config.set("mapreduce.map.java.opts", MAPRED_CHILD_JAVA_OPTS);
+			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
+			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
+			config.setClass(Job.COMBINE_CLASS_ATTR, HistogramReducer.class, Reducer.class);
 			String inputPaths = getInputPaths();
-			FileInputFormat.addInputPaths(job, inputPaths);
+			config.set(FileInputFormat.INPUT_DIR, inputPaths);
+
 			logger.debug("found: " + inputPaths);
 			logger.debug("yyy wait for completion");
-			job.waitForCompletion(true);
+			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
+					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
+					IntWritable.class);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
@@ -99,8 +111,9 @@ public class GitTablePopulator implements Runnable {
 	private String getInputPaths() throws IOException {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
+		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 		FileSystem fs = FileSystem.get(conf);
-		Path path = new Path(PROJECTS_PATH);
+		Path path = new Path(PROJECTS_FOLDER_PATH);
 
 		Queue<Path> packFilePaths = new LinkedList<Path>();
 		logger.debug("yyy start finding pack files " + path);
@@ -163,6 +176,7 @@ public class GitTablePopulator implements Runnable {
 
 			Configuration conf = new Configuration();
 			conf.addResource(new Path(CORE_SITE_PATH));
+			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 			FileSystem fileSystem = FileSystem.get(conf);
 
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
@@ -248,23 +262,28 @@ public class GitTablePopulator implements Runnable {
 
 		private CodeFile register(String content, String fileName) throws IOException {
 			CodeFile codeFile = javaFrontend.register(content, fileName);
-			functions.flushCommits();
-			facts.flushCommits();
-			hashfactContent.flushCommits();
 			return codeFile;
 		}
 
 		private Version register(String filePath, CodeFile codeFile) throws IOException {
 			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
-			files.flushCommits();
 			return version;
 		}
 
 		private void register(String projectName, Version version, String tag) throws IOException {
 			Project proj = projectFactory.create(projectName, version, tag);
 			javaFrontend.register(proj);
+		}
+
+		@Override
+		public void cleanup(Context context) throws IOException, InterruptedException {
+			super.cleanup(context);
 			versions.flushCommits();
+			files.flushCommits();
+			functions.flushCommits();
+			facts.flushCommits();
+			hashfactContent.flushCommits();
 			strings.flushCommits();
 		}
 	}

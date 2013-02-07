@@ -89,39 +89,8 @@ Before we can explain the inner working of our algorithm, we shall first
  Statistics about the usage of programming languages is evaluated on every
  registered project.
  We are especially interested in Java source files, as our parser is currently
- only capable to tokenize Java files on function/method
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-only one word
-\end_layout
-
-\end_inset
-
- level.
- The public API of Ohloh had several restrictions, so we decided
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Don't discuss anything on that level
-\end_layout
-
-\end_inset
-
- to use a trivial
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Don't say it's trivial.
- Just say what you did.
-\end_layout
-
-\end_inset
-
- website parsing approach.
+ only capable to tokenize Java files on function level.
+ In order to get these repository URLs we used a website parsing approach.
  Under the URL http://www.ohloh.net/tags/java all projects tagged with 
 \begin_inset Quotes eld
 \end_inset
@@ -133,17 +102,8 @@ java
  are listed.
  By writing a ruby script we were able to crawl all listed repositories
  of the evaluated projects.
- We only process Git repositories as we only have a git format parser
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-A what? Connect!
-\end_layout
-
-\end_inset
-
- (note that we read in many versions of the same project).
+ We exclusively process Git repositories as we only implemented a parser
+ for this type of repository.
 \end_layout
 
 \begin_layout Standard
@@ -160,7 +120,7 @@ Describe! Where's the code?
 
 \end_inset
 
- to better
+ to 
 \begin_inset Note Note
 status open
 
@@ -174,84 +134,89 @@ general blabber
 \end_layout
 
 \begin_layout Subsection
-Git pack files
+Git 
 \end_layout
 
 \begin_layout Standard
-Our goal
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I NEVER want to know your goal.
- Say what you did, and what came out.
- And that's that.
+Git enables us to store and retrieve revision controlled data in an efficient
+ way.
+ This allows us to process the whole project's source code at specific versions.
+ In our setup we only need to read two Git files to get the data we need.
 \end_layout
 
-\end_inset
-
- is to process a project's source code coming from various versions.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Why?
+\begin_layout Subsubsection
+The packed-refs file
 \end_layout
 
-\end_inset
-
- Therefore
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Does not follow.
-\end_layout
-
-\end_inset
-
- we chose to rely on the newest fifteen tags of a project repository.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Jumps must be separated by paragraphs.
-\end_layout
-
-\end_inset
-
+\begin_layout Standard
+Important versions like releases or release candidates usually get tagged.
  All tags are stored in the packed-refs file.
- The other file we need is the pack file, in which all data is stored
+ In order to gain performance improvements while processing a repository's
+ data, we chose to rely on the newest fifteen 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Focus on this part.
- It's easier to write, because it's detaily stuff.
- Get this right before you do the part above.
+check number
 \end_layout
 
 \end_inset
 
-.
- Important to mention, that we never extract the contents of the pack file
- on disk.
+ tags of a project repository.
+\end_layout
+
+\begin_layout Subsubsection
+The pack file
+\end_layout
+
+\begin_layout Standard
+This single file contains all versioned data of a project.
+ Specific files at a certain version can be fetched with dedicated instructions.
+ For this task we use JGit which is an implementation of the Git SCM in
+ Java.
  Later in the mapping phase, when we load all the data and fill up the database,
  we dynamically load the contents of the pack file into memory, but never
  on disk.
+\end_layout
+
+\begin_layout Subsubsection
+Cloning
+\end_layout
+
+\begin_layout Standard
+For each gathered repository URL we execute the command 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+git clone --bare <repositoryURL>
+\end_layout
+
+\end_inset
+
+to copy the repository to a local directory.
+ The option 
+\shape italic
+--bare
+\shape default
+ prevents Git to extract the files from the latest working copy to disk.
  
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Describe the big file thing (and do it, maybe)
+Idea: Why not create a MR task to clone all repos? Mappers directly clone
+ into HDFS directory /project-clone-detector/projects/.
+ The reducer finally creates the Hadoop Archive file in /projects/projects.har.
+ What do you think about that Niko?
 \end_layout
 
 \end_inset
 
- Hadoop archive file...
+We then pack all downloaded repositories into a Hadoop Archive file in order
+ to increase efficiency.
 \end_layout
 
 \begin_layout Subsection
@@ -274,7 +239,7 @@ Your goal: explain the setup.
 
 \end_inset
 
- The most important criteria regarding our MR design was to get as much
+ The most important criterion regarding our MR design was to get as much
  RAM as we could.
  
 \end_layout
@@ -312,17 +277,442 @@ History server: Leela
 Log aggregation enabled.
 \end_layout
 
+\begin_layout Standard
+HDFS - Our projects are stored inside HDFS.
+\end_layout
+
 \begin_layout Subsubsection
 HBase
 \end_layout
 
 \begin_layout Standard
 The HBase master as well as the region server service are installed on Leela.
- HDFS - Our projects are stored inside HDFS.
+\end_layout
+
+\begin_layout Subsubsection
+Database layout
+\end_layout
+
+\begin_layout Itemize
+Population phase tables
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+versions
+\end_layout
+
+\begin_layout Itemize
+files
+\end_layout
+
+\begin_layout Itemize
+functions
+\end_layout
+
+\begin_layout Itemize
+facts
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Clone escalation phase tables
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+indexFacts2Functions
+\end_layout
+
+\begin_layout Itemize
+indexFacts2FunctionsStep2
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Special tables
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+strings
+\end_layout
+
+\begin_layout Itemize
+hashfactContent
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Configuration files
+\end_layout
+
+\begin_layout Standard
+As our cluster consists of heterogeneous nodes, an adjusted configuration
+ file can not simply be distributed to the nodes.
+ We wrote a ruby script 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert link to configuration merge script
+\end_layout
+
+\end_inset
+
+ to merge node specific configurations with the more general cluster configurati
+on.
+ It expects two customized files in the Hadoop configuration directory 
+\shape italic
+/etc/hadoop/conf
+\shape default
+.
+ Cluster specific configuration properties are set in the file 
+\shape italic
+default-config.xml
+\shape default
+, node specific ones in 
+\shape italic
+site-config.xml
+\shape default
+.
+ During the merge process, node specific properties always override cluster
+ specific ones.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The exact working of the script has yet to be defined.
+\end_layout
+
+\end_inset
+
+ The generated file is the 
+\shape italic
+core-site.xml
+\shape default
+.
+ All other configuration files 
+\shape italic
+hdfs-site.xml,
+\shape default
+ 
+\shape italic
+mapred-site.xml
+\shape default
+ and 
+\shape italic
+yarn-site.xml
+\shape default
+ are all symlinks to 
+\shape italic
+core-site.xml
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Launching Map/Reduce Jobs
+\end_layout
+
+\begin_layout Standard
+To quickly launch map/reduce jobs out of our development environment we
+ created Ant targets.
+ Essentially 
 \end_layout
 
 \begin_layout Subsection
 Algorithm
+\end_layout
+
+\begin_layout Standard
+In this section we will demonstrate the complete working of the algorithm
+ in detail using an example.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Simon: describe algorithm.
+ Beispiel!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider these two dummy java files:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package ch.unibe.testdata;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Apfel {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/**
+\end_layout
+
+\begin_layout Plain Layout
+
+	 * @param args
+\end_layout
+
+\begin_layout Plain Layout
+
+	 */
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		String name = "Apfel";
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+		int a = 10;
+\end_layout
+
+\begin_layout Plain Layout
+
+		while (a > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println("a" + a);
+\end_layout
+
+\begin_layout Plain Layout
+
+			a -= 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		for (int i = 0; i < 10; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println("i" + i);
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("finished");
+\end_layout
+
+\begin_layout Plain Layout
+
+		return;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package ch.unibe.testdata;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Birne {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/**
+\end_layout
+
+\begin_layout Plain Layout
+
+	 * @param args
+\end_layout
+
+\begin_layout Plain Layout
+
+	 */
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		String name = "Birne";
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println(name);
+\end_layout
+
+\begin_layout Plain Layout
+
+		int a = 10;
+\end_layout
+
+\begin_layout Plain Layout
+
+		while (a > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println("a" + a);
+\end_layout
+
+\begin_layout Plain Layout
+
+			a -= 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		for (int i = 0; i < 10; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println("i" + i);
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("finished");
+\end_layout
+
+\begin_layout Plain Layout
+
+		return;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Population phase
+\end_layout
+
+\begin_layout Standard
+The table population phase is defined in the 
+\shape italic
+GitTablePopulatorMapper
+\shape default
+ class.
+ Each mapper gets a path to a Git repository as input.
+ We then read the packed-refs file and scan all java source files of the
+ least 15 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+check number
+\end_layout
+
+\end_inset
+
+ tags.
+ Next we calculate the SHA-1 hash for every file we find and query the table
+ 
+\shape italic
+files
+\shape default
+ to determine whether we already processed the file.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -353,20 +743,6 @@ Table populate: avoid flush, avoid read.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Simon: describe algorithm.
- Beispiel!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 MR Steps - Explain whole procedure using a detailed example - Process HDFS-Folde
 r with all pack files - Clone Escalation
 \end_layout
@@ -379,23 +755,37 @@ GitTablePopulator: Process HDFS-Folder with all pack files (see section
  scanned.
 \end_layout
 
-\begin_layout Standard
-Histogram data showed similar results as on how often code is cloned across
- repositories.
- 
-\end_layout
-
 \begin_layout Section
 Tracing snippets
 \end_layout
 
-\begin_layout Section
-Lessons learnt
+\begin_layout Subsection
+Distribution of clones
 \end_layout
 
 \begin_layout Standard
-YARN Configuration - Distribution of configuration file - Updating the configura
-tion
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Histogram MR-Job, explain results, refer to paper 
+\begin_inset Quotes eld
+\end_inset
+
+On how often code is cloned across repositories
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Lessons learnt
 \end_layout
 
 \begin_layout Subsection
@@ -406,8 +796,8 @@ Leap second bug or how we won 1 second and lost a week
 We were not aware of the Leap second which was added at at 23:59:60 UTC
  on June 30, 2012.
  Java processes used excessive amount of CPU.
- Very slow reaction times of Hadoop and HBase, restarted services multiple
- times.
+ This led to very slow reaction times of Hadoop and HBase, restarted services
+ multiple times.
  In the end, the only thing that effectively helped was a reboot of the
  machines.
  (see https://bugzilla.mozilla.org/show_bug.cgi?id=769972)
