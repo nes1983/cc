@@ -84,14 +84,71 @@ Gathering data
 \begin_layout Standard
 Before we can explain the inner working of our algorithm, we shall first
  explain where and how we got the data we are going to analyze.
- The choice went on Ohloh which is a directory of open source projects amongst
- other things.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The previous section tries to give structure to the entire thesis.
+ That's what the introduction is for.
+ Here, just say what this section does.
+\end_layout
+
+\end_inset
+
+ The choice went 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+You're talking about choices, as if you're documenting the decision process.
+ That isn't the goal.
+ Instead, outline why ohloh is a good pick.
+ Also: less prosaic.
+ More scientific.
+ Make sure you read enough related work, if only to get a feeling for the
+ usual style.
+\end_layout
+
+\end_inset
+
+on Ohloh which is a directory of open source projects amongst other things.
  Statistics about the usage of programming languages is evaluated on every
  registered project.
  We are especially interested in Java source files, as our parser is currently
  only capable to tokenize Java files on function level.
  In order to get these repository URLs we used a website parsing approach.
- Under the URL http://www.ohloh.net/tags/java all projects tagged with 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Every paragraph gets only one topic.
+ Read 
+\begin_inset Quotes eld
+\end_inset
+
+write to the point
+\begin_inset Quotes erd
+\end_inset
+
+, it's an excellent and very short manual on writing.
+ Here, you're discussing both the quality of ohloh, and implementation details
+ in one paragraph.
+ That cannot be.
+\end_layout
+
+\end_inset
+
+ Under the URL http://www.ohloh.net/tags/java 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+URLs should be in a latex url environment.
+\end_layout
+
+\end_inset
+
+all projects tagged with 
 \begin_inset Quotes eld
 \end_inset
 
@@ -130,7 +187,28 @@ general blabber
 
 \end_inset
 
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Address all comments.
+ Either answer, or fix and delete.
+\end_layout
+
+\end_inset
+
  evaluate the one repository we were interested in per project.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Indeed, more details.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -141,7 +219,36 @@ Git
 Git enables us to store and retrieve revision controlled data in an efficient
  way.
  This allows us to process the whole project's source code at specific versions.
- In our setup we only need to read two Git files to get the data we need.
+ In our setup
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+comma
+\end_layout
+
+\end_inset
+
+ we only need to read two Git files to get the data we need.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+There could be several pack files.
+ Also, forward reference: 
+\begin_inset Quotes eld
+\end_inset
+
+the following two kinds of files
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -215,8 +322,38 @@ Idea: Why not create a MR task to clone all repos? Mappers directly clone
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I think it's great :).
+ But keep in mind: the current approach is not broken.
+ It may be inefficient, but it isn't broken.
+ Focus on the most important parts to get a great thesis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 We then pack all downloaded repositories into a Hadoop Archive file in order
  to increase efficiency.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Gee, details!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -242,6 +379,22 @@ Your goal: explain the setup.
  The most important criterion regarding our MR design was to get as much
  RAM as we could.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hmm.
+ The point of leela having so much RAM is to support random read access
+ in HBase.
+ That's important for the populate phase.
+ Should talk about it.
+ Can also talk about leela having a lot of cores, which works great with
+ M/R.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -291,6 +444,25 @@ The HBase master as well as the region server service are installed on Leela.
 
 \begin_layout Subsubsection
 Database layout
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In this brevity, incomprehensible.
+ The point of the layout is to save space.
+ It's inspired by how git stores its objects.
+\end_layout
+
+\begin_layout Plain Layout
+Make example graphs.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -362,6 +534,16 @@ insert link to configuration merge script
 
  to merge node specific configurations with the more general cluster configurati
 on.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+That's missing in Hadoop.
+ Should mention it.
+\end_layout
+
+\end_inset
+
  It expects two customized files in the Hadoop configuration directory 
 \shape italic
 /etc/hadoop/conf
@@ -420,6 +602,16 @@ Launching Map/Reduce Jobs
 To quickly launch map/reduce jobs out of our development environment we
  created Ant targets.
  Essentially 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Sentence ends a bit abrupt.
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -444,7 +636,32 @@ Simon: describe algorithm.
 \end_layout
 
 \begin_layout Standard
-Consider these two dummy java files:
+Consider these two dummy 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+s/dummy/simple and similar/
+\end_layout
+
+\end_inset
+
+ java files:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Whenever we discuss the algorithm, we make examples on the white board.
+ We do that because it's the way to go to understand what's going on.
+ Don't give the reader any less.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -753,6 +970,16 @@ GitTablePopulator: Process HDFS-Folder with all pack files (see section
  GitPackFile RecordReader.
  Before the real Map-job starts, all folders in a specific HDFS-folder are
  scanned.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Is this a comment? Maybe it should go into a lyx comment?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -761,6 +988,19 @@ Tracing snippets
 
 \begin_layout Subsection
 Distribution of clones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Empirical Cumulative distribution function would be nice.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -801,6 +1041,20 @@ We were not aware of the Leap second which was added at at 23:59:60 UTC
  In the end, the only thing that effectively helped was a reboot of the
  machines.
  (see https://bugzilla.mozilla.org/show_bug.cgi?id=769972)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I had no idea.
+ Details!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
