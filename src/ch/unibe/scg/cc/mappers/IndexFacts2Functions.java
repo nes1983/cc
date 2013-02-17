@@ -10,14 +10,16 @@ import javax.inject.Named;
 
 import junit.framework.Assert;
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.log4j.Level;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.activerecord.Column;
@@ -25,20 +27,17 @@ import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.util.ByteUtils;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
+import com.google.common.base.Optional;
+
 public class IndexFacts2Functions implements Runnable {
 	static Logger logger = Logger.getLogger(IndexFacts2Functions.class);
-
-	static {
-		logger.setLevel(Level.ALL);
-	}
-
 	final HTable indexFacts2Functions;
-	final HBaseWrapper hbaseWrapper;
+	final MRWrapper mrWrapper;
 
 	@Inject
-	IndexFacts2Functions(@Named("indexFacts2Functions") HTable indexFacts2Files, HBaseWrapper hbaseWrapper) {
+	IndexFacts2Functions(@Named("indexFacts2Functions") HTable indexFacts2Files, MRWrapper mrWrapper) {
 		this.indexFacts2Functions = indexFacts2Files;
-		this.hbaseWrapper = hbaseWrapper;
+		this.mrWrapper = mrWrapper;
 	}
 
 	public static class IndexFacts2FunctionsMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
@@ -112,15 +111,32 @@ public class IndexFacts2Functions implements Runnable {
 	@Override
 	public void run() {
 		try {
-			hbaseWrapper.truncate(indexFacts2Functions);
+			mrWrapper.truncate(indexFacts2Functions);
 
 			Scan scan = new Scan();
 			scan.setCaching(500); // TODO play with this. (100 is default value)
-			scan.setCacheBlocks(false);
-			hbaseWrapper.launchTableMapReduceJob(IndexFacts2Functions.class.getName() + " Job", "facts",
-					"indexFacts2Functions", scan, IndexFacts2Functions.class, "IndexFacts2FunctionsMapper",
-					"IndexFacts2FunctionsReducer", ImmutableBytesWritable.class, ImmutableBytesWritable.class,
-					"-Xmx2000m");
+
+			Configuration config = new Configuration();
+			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
+			config.set(MRJobConfig.NUM_REDUCES, "30");
+			// TODO test that
+			config.set(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, "0");
+			config.set(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, "true");
+			config.set(MRJobConfig.IO_SORT_MB, "256");
+			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
+			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
+			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
+			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
+			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
+			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
+			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
+			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
+			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
+
+			mrWrapper.launchMapReduceJob(IndexFacts2Functions.class.getName() + "Job", config, Optional.of("facts"),
+					Optional.of("indexFacts2Functions"), scan, IndexFacts2FunctionsMapper.class.getName(),
+					Optional.of(IndexFacts2FunctionsReducer.class.getName()), ImmutableBytesWritable.class,
+					ImmutableBytesWritable.class);
 
 			indexFacts2Functions.flushCommits();
 		} catch (IOException e) {
@@ -134,6 +150,7 @@ public class IndexFacts2Functions implements Runnable {
 
 	public static class IndexFacts2FunctionsTest {
 		@Test
+		@Ignore
 		public void testIndex() {
 			// TODO
 			Assert.assertTrue(false);
