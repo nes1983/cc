@@ -13,15 +13,12 @@ import java.io.IOException;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.apache.hadoop.fs.Path;
+import org.apache.commons.lang.NotImplementedException;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.mozilla.universalchardet.UniversalDetector;
@@ -35,34 +32,19 @@ import ch.unibe.scg.cc.activerecord.RealProjectFactory;
 import ch.unibe.scg.cc.activerecord.RealVersion;
 import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
-import ch.unibe.scg.cc.mappers.inputformats.ZipFileInputFormat;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
+/** Use GitTablePopulator instead of TablePopulator! */
 public class TablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(TablePopulator.class);
-	final HBaseWrapper hbaseWrapper;
+	final MRWrapper mrWrapper;
 
 	@Inject
-	TablePopulator(HBaseWrapper hbaseWrapper) {
-		this.hbaseWrapper = hbaseWrapper;
+	TablePopulator(MRWrapper mrWrapper) {
+		this.mrWrapper = mrWrapper;
 	}
 
 	public void run() {
-		try {
-			Job job = hbaseWrapper.createMapJob("populate", TablePopulator.class, "TablePopulatorMapper", Text.class,
-					IntWritable.class);
-			job.setInputFormatClass(ZipFileInputFormat.class);
-			job.setOutputFormatClass(NullOutputFormat.class);
-			FileInputFormat.addInputPath(job, new Path("/project-clone-detector/zipprojects"));
-			logger.debug("yyy wait for completion");
-			job.waitForCompletion(true);
-		} catch (IOException e) {
-			throw new WrappedRuntimeException(e);
-		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e);
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e);
-		}
+		throw new NotImplementedException("Use GitTablePopulator - TablePopulator is no longer supported.");
 	}
 
 	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {

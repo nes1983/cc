@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 
+/** @see GuiceMapper */
 public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		GuiceMapper<ImmutableBytesWritable, Result, KEYOUT, VALUEOUT> {
 

@@ -1,10 +1,12 @@
 require 'rubygems'
 require 'nokogiri'
 
+# XSL part for pretty printing adapted from https://gist.github.com/EmmanuelOga/322025
+
 XSL = <<-EOXSL
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:output method="xml" encoding="ISO-8859-1"/>
-  <xsl:param name="indent-increment" select="'   '"/>
+  <xsl:output method="xml" encoding="UTF-8"/>
+  <xsl:param name="indent-increment" select="'  '"/>
  
   <xsl:template name="newline">
     <xsl:text disable-output-escaping="yes">
@@ -52,21 +54,21 @@ EOXSL
 
 def mergeConfigurations(low_prio_xml, high_prio_xml)
 	low_xml = Nokogiri::XML(File.open(low_prio_xml))
-	high_xml = Nokogiri::XML(File.open(high_prio_xml))
+	res = Nokogiri::XML(File.open(high_prio_xml))
 
 	low_props = low_xml.at_xpath("//property")
-	high_props = high_xml.at_xpath("//property")
+	high_props = res.at_xpath("//property")
 
 	seen = Hash.new(0)
 	high_props.each {|n| seen[n.xpath('.//name').to_xml] += 1}
 	low_props.each {|n| n.unlink if (seen[n.xpath('.//name').to_xml] += 1) > 1}
 
-	conf = high_xml.at_xpath("//configuration")
+	conf = res.at_xpath("//configuration")
 	conf.add_child(high_props)
 	conf.add_child(low_props)
 
 	xsl = Nokogiri::XSLT(XSL)
-	File.open('core-site.xml','w') {|f| f << xsl.apply_to(high_xml).to_s}
+	File.open('core-site.xml','w') {|f| f << xsl.apply_to(res).to_s}
 end
 
 mergeConfigurations("default-config.xml","site-config.xml")

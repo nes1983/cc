@@ -27,6 +27,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -82,12 +83,16 @@ public class GitTablePopulator implements Runnable {
 	public void run() {
 		try {
 			Configuration config = new Configuration();
-			config.set("mapreduce.job.reduces", "0");
-			config.set("mapreduce.job.ubertask.enable", "false");
-			config.set("mapreduce.job.jvm.numtasks", "-1");
-			config.set("mapreduce.task.timeout", "86400000");
-			config.set("mapreduce.map.memory.mb", MAP_MEMORY);
-			config.set("mapreduce.map.java.opts", MAPRED_CHILD_JAVA_OPTS);
+			config.set(MRJobConfig.NUM_REDUCES, "0");
+			// we don't want multiple mappers on the same input folder as we
+			// directly write to HBase in our map task, hence speculative
+			// execution is disabled
+			config.set(MRJobConfig.MAP_SPECULATIVE, "false");
+			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
+			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
+			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
+			config.set(MRJobConfig.MAP_MEMORY_MB, MAP_MEMORY);
+			config.set(MRJobConfig.MAP_JAVA_OPTS, MAPRED_CHILD_JAVA_OPTS);
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 			config.setClass(Job.COMBINE_CLASS_ATTR, HistogramReducer.class, Reducer.class);

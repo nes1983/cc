@@ -4,11 +4,14 @@ import java.io.IOException;
 
 import org.apache.hadoop.mapreduce.Reducer;
 
-public abstract class GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+import ch.unibe.scg.cc.mappers.MRMain.MRMainReducer;
 
-	public GuiceReducer() {
-		super();
-	}
+/**
+ * Acts as a proxy for {@link Reducer}. Except the run method is not visible
+ * because the {@link MRMainReducer} explicitly calls the run method of its
+ * superclass {@link Reducer}.
+ */
+public abstract class GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {

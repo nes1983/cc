@@ -150,9 +150,7 @@ public class MRMain extends Configured implements Tool {
 		}
 	}
 
-	/**
-	 * see {@link MRMainMapper}
-	 */
+	/** see {@link MRMainMapper} */
 	public static class MRMainReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends
 			Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> reducer;
@@ -182,9 +180,7 @@ public class MRMain extends Configured implements Tool {
 		}
 	}
 
-	/**
-	 * see {@link MRMainMapper}
-	 */
+	/** see {@link MRMainMapper} */
 	public static class MRMainTableReducer extends
 			TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> reducer;

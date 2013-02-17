@@ -6,6 +6,12 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 
+/**
+ * {@link #write(Put)} provides the ability to write puts to the custom
+ * {@link HTableWriteBuffer}.
+ * 
+ * @see GuiceReducer
+ */
 public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableReducer<KEYIN, VALUEIN, KEYOUT> {
 
 	final HTableWriteBuffer writeBuffer;

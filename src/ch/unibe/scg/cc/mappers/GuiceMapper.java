@@ -4,6 +4,13 @@ import java.io.IOException;
 
 import org.apache.hadoop.mapreduce.Mapper;
 
+import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
+
+/**
+ * Acts as a proxy for {@link Mapper}. Except the run method is not visible
+ * because the {@link MRMainMapper} explicitly calls the run method of its
+ * superclass {@link Mapper}.
+ */
 public abstract class GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 
 	@Override

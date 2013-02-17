@@ -4,9 +4,8 @@ import java.io.IOException;
 
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HTableDescriptor;
-import org.apache.hadoop.hbase.MasterNotRunningException;
-import org.apache.hadoop.hbase.ZooKeeperConnectionException;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.modules.CCModule;
@@ -15,6 +14,7 @@ import ch.unibe.scg.cc.modules.JavaModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
+@Ignore
 public class HBaseTest {
 
 	public static final String HBASE_CONFIGURATION_ZOOKEEPER_QUORUM = "hbase.zookeeper.quorum";

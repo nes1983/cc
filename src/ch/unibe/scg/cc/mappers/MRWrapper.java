@@ -31,91 +31,53 @@ public class MRWrapper {
 	@Inject
 	private ConfigurationProvider configurationProvider;
 
-	@Deprecated
-	@SuppressWarnings("rawtypes")
-	public Job createMapJob(String jobName, Class<?> jobClassName, String mapperClassName,
-			Class<? extends WritableComparable> outputKey, Class<? extends Writable> outputValue) throws IOException,
-			InterruptedException, ClassNotFoundException {
-
-		Class<MRMainMapper> mapperClass = MRMainMapper.class;
-
-		Job thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, null, outputKey, outputValue);
-
-		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
-
-		return thisJob;
-	}
-
-	@Deprecated
-	@SuppressWarnings("rawtypes")
-	public boolean launchTableMapReduceJob(String jobName, String tableNameMapper, String tableNameReducer,
-			Scan tableScanner, Class<?> jobClassName, String mapperClassName, String reducerClassName,
-			Class<? extends WritableComparable> outputKey, Class<? extends Writable> outputValue,
-			String mapred_child_java_opts) throws IOException, InterruptedException, ClassNotFoundException {
-
-		Job thisJob;
-		Class<MRMainTableMapper> mapperClass = MRMainTableMapper.class;
-		Class<MRMainTableReducer> reducerClass = MRMainTableReducer.class;
-
-		thisJob = initMapReduceJob(jobName, jobClassName, mapperClass, reducerClass, outputKey, outputValue);
-
-		TableMapReduceUtil.initTableMapperJob(tableNameMapper, tableScanner, mapperClass, outputKey, outputValue,
-				thisJob);
-		TableMapReduceUtil.initTableReducerJob(tableNameReducer, reducerClass, thisJob);
-
-		thisJob.getConfiguration().set("GuiceMapperAnnotation", mapperClassName);
-		thisJob.getConfiguration().set("GuiceReducerAnnotation", reducerClassName);
-
-		// thisJob.getConfiguration().set("mapreduce.job.maps", "600");
-
-		// thisJob.getConfiguration().set("mapred.child.java.opts",
-		// mapred_child_java_opts);
-
-		// for profiling
-		thisJob.setProfileEnabled(true);
-		thisJob.setProfileParams("-agentlib:hprof=cpu=samples,force=n,thread=y,interval=100,verbose=n,doe=y,file=%s");
-
-		return thisJob.waitForCompletion(true);
-	}
-
-	@Deprecated
-	@SuppressWarnings("rawtypes")
-	private Job initMapReduceJob(String jobName, Class<?> jobClassName, Class<? extends Mapper> mapperClassName,
-			Class<? extends Reducer> reducerClassName, Class<?> outputKey, Class<?> outputValue) throws IOException {
-
-		Job thisJob = Job.getInstance(configurationProvider.get(), jobName);
-
-		thisJob.setJarByClass(jobClassName);
-		thisJob.setMapperClass(mapperClassName);
-
-		if (reducerClassName != null) {
-			thisJob.setReducerClass(reducerClassName);
-		}
-
-		thisJob.setMapOutputKeyClass(outputValue);
-		thisJob.setMapOutputValueClass(outputValue);
-
-		return thisJob;
-	}
-
+	/** truncates a table (1. disable, 2. delete, 3. recreate) */
 	public void truncate(HTable hTable) throws IOException {
-		HBaseAdmin admin = new HBaseAdmin(configurationProvider.get());
 		HTableDescriptor tableDescription = hTable.getTableDescriptor();
 		String tableName = tableDescription.getNameAsString();
-		admin.disableTable(tableName);
-		admin.deleteTable(tableName);
-		admin.createTable(tableDescription);
-		admin.close();
+		HBaseAdmin admin = new HBaseAdmin(configurationProvider.get());
+		try {
+			admin.disableTable(tableName);
+			admin.deleteTable(tableName);
+			admin.createTable(tableDescription);
+		} finally {
+			admin.close();
+		}
 	}
 
+	/**
+	 * 
+	 * @param jobName
+	 * @param config
+	 *            the config provided will be merged with the configuration of
+	 *            the configurationProvider, while the provided config has
+	 *            higher priority
+	 * @param mapperTableName
+	 *            if mapper should get HBase rows as input, set the existing
+	 *            table name
+	 * @param reducerTableName
+	 *            if reducer should write its output to a HBase table, set its
+	 *            name
+	 * @param tableScanner
+	 * @param mapperClassName
+	 * @param reducerClassName
+	 *            only provide this name if there is actually a reduce step to
+	 *            be done
+	 * @param outputKey
+	 * @param outputValue
+	 * @return
+	 * @throws IOException
+	 * @throws ClassNotFoundException
+	 * @throws InterruptedException
+	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean launchMapReduceJob(String jobName, Configuration config, Optional<String> mapperTableName,
 			Optional<String> reducerTableName, Scan tableScanner, String mapperClassName,
 			Optional<String> reducerClassName, Class<? extends WritableComparable> outputKey,
 			Class<? extends Writable> outputValue) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration merged = merge(configurationProvider.get(), config);
-		Job thisJob = Job.getInstance(merged, jobName);
-		thisJob.setJarByClass(MRMain.class);
+		Job job = Job.getInstance(merged, jobName);
+		job.setJarByClass(MRMain.class);
 
 		Class<?> mapperClass = (mapperTableName.isPresent()) ? MRMainTableMapper.class : MRMainMapper.class;
 		Class<?> reducerClass = (reducerTableName.isPresent()) ? MRMainTableReducer.class : MRMainReducer.class;
@@ -126,12 +88,12 @@ public class MRWrapper {
 				throw new IllegalArgumentException("mapperTableName argument is not set!");
 			}
 			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner,
-					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, thisJob);
+					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, job);
 		} else {
-			thisJob.setMapperClass((Class<? extends Mapper>) mapperClass);
+			job.setMapperClass((Class<? extends Mapper>) mapperClass);
 		}
-		thisJob.setMapOutputKeyClass(outputKey);
-		thisJob.setMapOutputValueClass(outputValue);
+		job.setMapOutputKeyClass(outputKey);
+		job.setMapOutputValueClass(outputValue);
 
 		// reducer configuration
 		if (reducerClassName.isPresent()) {
@@ -141,9 +103,9 @@ public class MRWrapper {
 							"tableNameReducer argument is set, but reducerClass is not a subclass of the TableReducer class!");
 				}
 				TableMapReduceUtil.initTableReducerJob(reducerTableName.get(),
-						(Class<? extends TableReducer>) reducerClass, thisJob);
+						(Class<? extends TableReducer>) reducerClass, job);
 			} else {
-				thisJob.setReducerClass((Class<? extends Reducer>) reducerClass);
+				job.setReducerClass((Class<? extends Reducer>) reducerClass);
 
 			}
 		}
@@ -152,12 +114,12 @@ public class MRWrapper {
 		}
 
 		// guice configuration
-		thisJob.getConfiguration().set(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING, mapperClassName);
+		job.getConfiguration().set(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING, mapperClassName);
 		if (reducerClassName.isPresent()) {
-			thisJob.getConfiguration().set(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING, reducerClassName.get());
+			job.getConfiguration().set(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING, reducerClassName.get());
 		}
 
-		return thisJob.waitForCompletion(true);
+		return job.waitForCompletion(true);
 	}
 
 	static boolean isSubclassOf(Class<?> subClass, Class<?> superClass) {

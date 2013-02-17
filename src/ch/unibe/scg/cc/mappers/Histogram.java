@@ -16,12 +16,11 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -31,12 +30,6 @@ import com.google.common.base.Optional;
 
 public class Histogram implements Runnable {
 	static final String OUT_DIR = "/tmp/histogram";
-	static Logger logger = Logger.getLogger(Histogram.class);
-
-	static {
-		logger.setLevel(Level.ALL);
-	}
-
 	final MRWrapper hbaseWrapper;
 
 	@Inject
@@ -86,7 +79,6 @@ public class Histogram implements Runnable {
 	@Override
 	public void run() {
 		try {
-
 			FileSystem.get(new Configuration()).delete(new Path(OUT_DIR), true);
 
 			Scan scan = new Scan();
@@ -95,21 +87,21 @@ public class Histogram implements Runnable {
 													// specified family.
 
 			Configuration config = new Configuration();
-			config.set("mapreduce.job.reduces", "1");
+			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
+			config.set(MRJobConfig.NUM_REDUCES, "1");
 			// TODO test that
-			config.set("mapreduce.reduce.merge.inmem.threshold", "0");
-			config.set("mapreduce.reduce.merge.memtomem.enabled", "true");
-			// 256 works fine for IndexFacts2Functions
-			config.set("mapreduce.task.io.sort.mb", "512");
-			config.set("mapreduce.task.io.sort.factor", "100");
-			config.set("mapreduce.job.ubertask.enable", "true");
-			// set to 1 if unsure
-			config.set("mapreduce.job.jvm.numtasks", "-1");
-			config.set("mapreduce.task.timeout", "86400000");
-			config.set("mapreduce.map.memory.mb", "1536");
-			config.set("mapreduce.map.java.opts", "-Xmx1024M");
-			config.set("mapreduce.reduce.memory.mb", "3072");
-			config.set("mapreduce.reduce.java.opts", "-Xmx2560M");
+			config.set(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, "0");
+			config.set(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, "true");
+			config.set(MRJobConfig.IO_SORT_MB, "512");
+			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
+			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
+			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
+			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
+			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
+			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
+			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
+			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
+			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 			config.setClass(Job.COMBINE_CLASS_ATTR, HistogramReducer.class, Reducer.class);

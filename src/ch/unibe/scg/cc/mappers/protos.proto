@@ -4,6 +4,10 @@ package mappers;
 
 option java_package = "ch.unibe.scg.cc.mappers";
 
+/**
+ * a location contains: position (int 4 bytes) and line-length of snippet (int 4 bytes)
+ * positions are always relative to the position of the function
+ */
 message FunctionLocation {
 	optional bytes function = 1;
 	optional bytes row_function_location = 2;
