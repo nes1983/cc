@@ -17,12 +17,11 @@ import org.apache.log4j.Logger;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.HBaseModule;
 import ch.unibe.scg.cc.modules.JavaModule;
+import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Key;
-import com.google.inject.name.Names;
 
 /**
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
@@ -58,12 +57,7 @@ public class MRMain extends Configured implements Tool {
 	public int run(String[] args) {
 		logger.debug(Arrays.toString(args));
 		assert args.length == 1;
-		Class<?> c;
-		try {
-			c = Class.forName(args[0]);
-		} catch (ClassNotFoundException e) {
-			throw new RuntimeException(e);
-		}
+		Class<?> c = classForNameOrPanic(args[0]);
 		AbstractModule confModule = new AbstractModule() {
 			@Override
 			protected void configure() {
@@ -94,9 +88,9 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING);
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
-			guiceMapper = injector.getInstance(Key.get(GuiceMapper.class, Names.named(clazz)));
+			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
 		}
 
@@ -128,9 +122,9 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING);
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
-			guiceMapper = injector.getInstance(Key.get(GuiceTableMapper.class, Names.named(clazz)));
+			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
 		}
 
@@ -158,9 +152,9 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING);
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
-			reducer = injector.getInstance(Key.get(GuiceReducer.class, Names.named(clazz)));
+			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			reducer.setup(context);
 		}
 
@@ -188,9 +182,10 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			String clazz = context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING);
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
-			reducer = injector.getInstance(Key.get(GuiceTableReducer.class, Names.named(clazz)));
+			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) injector
+					.getInstance(clazz);
 			reducer.setup(context);
 		}
 
@@ -207,6 +202,21 @@ public class MRMain extends Configured implements Tool {
 		protected void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context)
 				throws IOException, InterruptedException {
 			reducer.reduce(key, values, context);
+		}
+	}
+
+	/**
+	 * Throws a RuntimeException if the class is not found.
+	 * 
+	 * @param qualifiedClassName
+	 *            the fully qualified class name
+	 * @return returns the class Object
+	 */
+	public static Class<?> classForNameOrPanic(String qualifiedClassName) {
+		try {
+			return Class.forName(qualifiedClassName);
+		} catch (ClassNotFoundException e) {
+			throw new WrappedRuntimeException(e);
 		}
 	}
 }
