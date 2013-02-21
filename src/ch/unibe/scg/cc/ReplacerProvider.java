@@ -3,11 +3,11 @@ package ch.unibe.scg.cc;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Singleton;
-
-import org.apache.commons.lang3.ArrayUtils;
 
 import ch.unibe.scg.cc.regex.Replace;
 
@@ -17,11 +17,13 @@ import com.google.inject.Provider;
 public abstract class ReplacerProvider implements Provider<Replace[]> {
 
 	final Replace[] type = new Replace[] {};
+	final MethodComparator methodComparator = new MethodComparator();
 
 	@Override
 	public Replace[] get() {
 		List<Replace> ret = new ArrayList<Replace>();
 		Method[] methods = this.getClass().getMethods();
+		Arrays.sort(methods, methodComparator);
 		assert methods.length > 0;
 		for (Method method : methods) {
 			if (!method.getName().startsWith("make")) {
@@ -48,4 +50,11 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 		return r;
 	}
 
+	/** lexicographic comparison of method names */
+	class MethodComparator implements Comparator<Method> {
+		@Override
+		public int compare(Method m1, Method m2) {
+			return m1.getName().compareTo(m2.getName());
+		}
+	}
 }

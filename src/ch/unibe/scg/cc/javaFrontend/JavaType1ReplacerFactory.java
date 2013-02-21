@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc.javaFrontend;
 
-import java.util.ArrayList;
-
 import javax.inject.Singleton;
 
 import jregex.Pattern;
@@ -25,7 +23,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 0
 	 */
-	public Replace makeWhitespaceA() {
+	public Replace make00WhitespaceA() {
 		Pattern whiteSpace = new Pattern("\\s*\\n\\s*");
 		return new Replace(whiteSpace, "\n");
 	}
@@ -33,7 +31,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 1
 	 */
-	public Replace makeWhitespaceB() {
+	public Replace make01WhitespaceB() {
 		Pattern whiteSpace = new Pattern("[ \f\r\t]+");
 		return new Replace(whiteSpace, " ");
 	}
@@ -41,7 +39,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 2
 	 */
-	public Replace makeRj1() {
+	public Replace make02Rj1() {
 		Pattern packagesGo = new Pattern("(?:\\p{Ll}\\s*\\.)?(\\p{Lu}+)");
 		String replaceWith = "$1";
 		return new Replace(packagesGo, replaceWith);
@@ -51,7 +49,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 3
 	 */
-	public Replace makeRj3a() {
+	public Replace make03Rj3a() {
 		Pattern initializationList = new Pattern("=\\s?\\{.*?\\}");
 		return new Replace(initializationList, "= { }");
 	}
@@ -59,7 +57,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 4
 	 */
-	public Replace makeRj3b() {
+	public Replace make04Rj3b() {
 		Pattern initializationList = new Pattern("\\]\\s?\\{.*?\\}");
 		return new Replace(initializationList, "] { }");
 	}
@@ -67,7 +65,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 5
 	 */
-	public Replace makeRj5() {
+	public Replace make05Rj5() {
 		Pattern visibility = new Pattern("(\\s)(?:private\\s|public\\s|protected\\s)");
 		return new Replace(visibility, "$1");
 	}
@@ -75,7 +73,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	/**
 	 * 6
 	 */
-	public Replace makeRj6() {
+	public Replace make06Rj6() {
 		Pattern ifPattern = new Pattern("\\sif\\s*\\((?:.*)\\)\\s*(\\n[^\\n\\{\\}]*)$");
 		return new Replace(ifPattern, " {\\n$1\\n}\\n");
 	}
@@ -86,7 +84,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	 * 
 	 * @return
 	 */
-	public Replace makeRenameWhile() {
+	public Replace make07RenameWhile() {
 		Pattern ifPattern = new Pattern("while");
 		return new Replace(ifPattern, ";while");
 	}
