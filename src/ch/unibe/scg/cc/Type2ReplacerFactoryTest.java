@@ -1,7 +1,8 @@
 package ch.unibe.scg.cc;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.arrayWithSize;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,7 +22,7 @@ public class Type2ReplacerFactoryTest {
 	public PhaseFrontend testFactory() {
 		final Type2ReplacerFactory factory = new Type2ReplacerFactory();
 		final Replace[] replaces = factory.get();
-		assertThat(replaces, is(arrayWithSize(3)));
+		assertThat(replaces, is(arrayWithSize(4)));
 		final Normalizer normalizer = new Normalizer(replaces);
 		return normalizer;
 	}

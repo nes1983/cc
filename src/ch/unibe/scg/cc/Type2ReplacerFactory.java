@@ -20,4 +20,12 @@ public class Type2ReplacerFactory extends ReplacerProvider {
 		return new Replace(invoke, "$1. $2");
 	}
 
+	/**
+	 * make02Tokenize() does not find all matches. example: "t.t.t" gets
+	 * "t. t.t" therefore we call make02Tokenize() a second time
+	 */
+	public Replace make03Tokenize() {
+		return make02Tokenize();
+	}
+
 }
