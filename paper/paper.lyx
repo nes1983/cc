@@ -6,6 +6,8 @@
 \use_default_options true
 \begin_modules
 theorems-ams
+theorems-ams-extended
+theorems-sec
 eqs-within-sections
 figs-within-sections
 \end_modules
@@ -458,6 +460,15 @@ Database layout
 \end_layout
 
 \begin_layout Standard
+The database layout is designed to save space and is inspired by how Git
+ stores its objects.
+\end_layout
+
+\begin_layout Standard
+facts -> functions -> files -> versions -> projects
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -612,17 +623,31 @@ Launching Map/Reduce Jobs
 \begin_layout Standard
 To quickly launch map/reduce jobs out of our development environment we
  created Ant targets.
- Essentially 
-\begin_inset Note Note
+ The targets create a build of the current project and export it to a JAR
+ file.
+ This JAR file then gets uploaded to a specific node the cluster.
+ After the upload is completed the MR-job gets started by a commandline
+ call.
+ The alterable part is the 
+\shape italic
+classArgument
+\shape default
+ which equals the desired MR-job we want to execute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
 status open
 
 \begin_layout Plain Layout
-Sentence ends a bit abrupt.
+
+hadoop jar ${jarFile} ${libjars} ${classArgument}
 \end_layout
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Subsection
@@ -632,14 +657,28 @@ Algorithm
 \begin_layout Standard
 In this section we will demonstrate the complete working of the algorithm
  in detail using an example.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Simon: describe algorithm.
- Beispiel!!
 \end_layout
+
+\begin_layout Subsubsection
+Job Setup
+\end_layout
+
+\begin_layout Standard
+Before the GitTablePopulator job starts we have to define the job properties.
+ Our design expects that the 
+\shape italic
+mapreduce.input.fileinputformat.inputdir
+\shape default
+ property is set with the paths to the currently available Git pack files
+ in the given HAR file.
+ So we recursively search for these pack files and set the property accordingly.
+ Our example HAR file contains two repositories.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename har.pdf
+	height 4cm
 
 \end_inset
 
@@ -647,226 +686,13 @@ Simon: describe algorithm.
 \end_layout
 
 \begin_layout Standard
-Consider these two dummy 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-s/dummy/simple and similar/
-\end_layout
-
-\end_inset
-
- java files:
+Each repository contains one java source file:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Whenever we discuss the algorithm, we make examples on the white board.
- We do that because it's the way to go to understand what's going on.
- Don't give the reader any less.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-package ch.unibe.testdata;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-public class Apple {
-\end_layout
-
-\begin_layout Plain Layout
-
-	public static void print() {
-\end_layout
-
-\begin_layout Plain Layout
-
-		String name = "Apple";
-\end_layout
-
-\begin_layout Plain Layout
-
-		System.out.println("Hi from " + name);
-\end_layout
-
-\begin_layout Plain Layout
-
-		int a = 10;
-\end_layout
-
-\begin_layout Plain Layout
-
-		while (a > 0) {
-\end_layout
-
-\begin_layout Plain Layout
-
-			System.out.println("a" + a);
-\end_layout
-
-\begin_layout Plain Layout
-
-			a -= 1;
-\end_layout
-
-\begin_layout Plain Layout
-
-		}
-\end_layout
-
-\begin_layout Plain Layout
-
-		for (int i = 0; i < 10; i++) {
-\end_layout
-
-\begin_layout Plain Layout
-
-			System.out.println("i" + i);
-\end_layout
-
-\begin_layout Plain Layout
-
-		}
-\end_layout
-
-\begin_layout Plain Layout
-
-		System.out.println("finished");
-\end_layout
-
-\begin_layout Plain Layout
-
-		return;
-\end_layout
-
-\begin_layout Plain Layout
-
-	}
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-package ch.unibe.testdata;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-public class Pear {
-\end_layout
-
-\begin_layout Plain Layout
-
-	public static void print() {
-\end_layout
-
-\begin_layout Plain Layout
-
-		String name = "Pear";
-\end_layout
-
-\begin_layout Plain Layout
-
-		System.out.println("Hi from " + name);
-\end_layout
-
-\begin_layout Plain Layout
-
-		int a = 10;
-\end_layout
-
-\begin_layout Plain Layout
-
-		while (a > 0) {
-\end_layout
-
-\begin_layout Plain Layout
-
-			System.out.println("a" + a);
-\end_layout
-
-\begin_layout Plain Layout
-
-			a -= 1;
-\end_layout
-
-\begin_layout Plain Layout
-
-		}
-\end_layout
-
-\begin_layout Plain Layout
-
-		for (int i = 0; i < 10; i++) {
-\end_layout
-
-\begin_layout Plain Layout
-
-			System.out.println("i" + i);
-\end_layout
-
-\begin_layout Plain Layout
-
-		}
-\end_layout
-
-\begin_layout Plain Layout
-
-		System.out.println("finished");
-\end_layout
-
-\begin_layout Plain Layout
-
-		return;
-\end_layout
-
-\begin_layout Plain Layout
-
-	}
-\end_layout
-
-\begin_layout Plain Layout
-
-} 
-\end_layout
+\begin_inset Graphics
+	filename sourcefiles.pdf
+	width 8cm
 
 \end_inset
 
@@ -883,9 +709,39 @@ The table population phase is defined in the
 GitTablePopulatorMapper
 \shape default
  class.
- Each mapper gets a path to a Git repository as input.
- The mapper then reads the packed-refs file and scans all java source files
- of the latest 15 
+ Each mapper gets a path to a bare Git repository as input.
+ We use JGit
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+JGit is a Java library implementing the Git version control system, see
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://eclipse.org/jgit/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ to operate on them.
+ 
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Show that packed files are far more efficient: Pack file Daten entpacken
+ und Grösse summieren/analysieren und Vergleichen mit Pack-File Grösse.
+\end_layout
+
+\end_inset
+
+ The mapper then reads the packed-refs file and collects all tags.
+ For the latest 15 
 \begin_inset Note Comment
 status collapsed
 
@@ -895,14 +751,59 @@ check number
 
 \end_inset
 
- tags.
- For every found java source file, its SHA-1 hash is being calculated.
+ tags, all scanned java source files are getting processed.
+ In our example the packed-refs file for the Apple repository looks like
+ this:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# pack-refs with: peeled
+\end_layout
+
+\begin_layout Plain Layout
+
+1f8d1c6b1d8d52f295005708727aff3cb2afd83a refs/heads/master
+\end_layout
+
+\begin_layout Plain Layout
+
+bf2e04ae5fbe9100f5bac1f432a38f0c3113a3a5 refs/tags/v0.1
+\end_layout
+
+\begin_layout Plain Layout
+
+^388fabd1e8244c05e3ccdfb4bf3aefc8bbfe9326
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For every found java source file, its SHA-1 hash is being calculated.
  We then check if the file hash already appears in the table 
 \shape italic
 files
 \shape default
- to determine whether we have already processed the file.
- Is this the case we skip the processing of the file contents.
+ to determine whterether we have already processed the file.
+ Is this the case we skip the «processing of the file contents» part.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename sourcefileshashes.pdf
+	width 8cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -913,10 +814,75 @@ Processing file content
 We extract all functions out of the file using a regular expression.
  If a function doesn't meet the minimum number of lines (which we set to
  10 lines per default) it gets vanished.
- All functions left over get further handled.
- They are split up in parts of 10 lines using the shingle algorithm.
- For every part we then calculate its hash which leads us to the so called
- hashfact.
+ All functions left over get further processed.
+ They are split up in shingles, of which each is 10 (the minimum number
+ of lines) lines long.
+ Now we calculate the hash for every shingle.
+ This hash together with the attributes «line-offset» and «number of lines»
+ represents the so called 
+\series bold
+hashfact
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Type 1 hashes: regular content.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename regextype1.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Type 2 hashes: normalization.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename regextype2.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Type 3 hashes: normalization and shinglehasher.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename regextype3.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do now know the function and its hashfacts.
+ We assume that a hashfact occurs not more than once in a function 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+TODO: Wie oft wird diese Annahme verletzt?
+\end_layout
+
+\end_inset
+
+.
+ We do also know the file and all its functions.
+ We store this information in the following way: facts -> functions -> files
 \end_layout
 
 \begin_layout Paragraph*
@@ -949,8 +915,8 @@ versions
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
+\begin_inset Note Comment
+status open
 
 \begin_layout Plain Layout
 Selling point: No random reading across the cluster.
