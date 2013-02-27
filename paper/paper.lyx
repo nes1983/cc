@@ -6,10 +6,10 @@
 \use_default_options true
 \begin_modules
 theorems-ams
-theorems-ams-extended
-theorems-sec
 eqs-within-sections
 figs-within-sections
+theorems-ams-extended
+theorems-sec
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -672,7 +672,18 @@ mapreduce.input.fileinputformat.inputdir
  property is set with the paths to the currently available Git pack files
  in the given HAR file.
  So we recursively search for these pack files and set the property accordingly.
- Our example HAR file contains two repositories.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Niko: Too abstract to be understandable.
+ What is searched? By who? How? 
+\end_layout
+
+\end_inset
+
+Our example HAR file contains two repositories.
 \end_layout
 
 \begin_layout Standard
@@ -712,9 +723,18 @@ GitTablePopulatorMapper
  Each mapper gets a path to a bare Git repository as input.
  We use JGit
 \begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
+Nice footnote :)
+\end_layout
+
+\end_inset
+
 JGit is a Java library implementing the Git version control system, see
  
 \begin_inset CommandInset href
@@ -754,6 +774,16 @@ check number
  tags, all scanned java source files are getting processed.
  In our example the packed-refs file for the Apple repository looks like
  this:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Which means?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -883,6 +913,19 @@ TODO: Wie oft wird diese Annahme verletzt?
 .
  We do also know the file and all its functions.
  We store this information in the following way: facts -> functions -> files
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Show the tables after each step.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
