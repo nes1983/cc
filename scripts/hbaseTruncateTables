@@ -3,5 +3,4 @@ truncate 'files'
 truncate 'functions'
 truncate 'facts'
 truncate 'strings'
-truncate 'hashfactContent'
 exit

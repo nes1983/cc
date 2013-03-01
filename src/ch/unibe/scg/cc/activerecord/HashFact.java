@@ -10,9 +10,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 import ch.unibe.scg.cc.StandardHasher;
 
 public class HashFact extends Column {
-
-	private static final byte[] SNIPPET_VALUE = Bytes.toBytes("sv");
-
+	private static final byte[] HASHFACT_SNIPPET = Bytes.toBytes("hs");
 	private byte[] hash;
 	private String snippet;
 	private RealProject project;
@@ -77,7 +75,7 @@ public class HashFact extends Column {
 	}
 
 	public void saveSnippet(Put put) {
-		put.add(FAMILY_NAME, SNIPPET_VALUE, 0l, Bytes.toBytes(snippet));
+		put.add(FAMILY_NAME, HASHFACT_SNIPPET, 0l, Bytes.toBytes(snippet));
 	}
 
 	public String getSnippet() {
@@ -87,5 +85,4 @@ public class HashFact extends Column {
 	public void setSnippet(String snippet) {
 		this.snippet = snippet;
 	}
-
 }

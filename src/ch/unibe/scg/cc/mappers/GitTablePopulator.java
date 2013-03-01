@@ -154,8 +154,8 @@ public class GitTablePopulator implements Runnable {
 		@Inject
 		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
 				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
-				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,
-				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
+				@Named("strings") HTable strings, RealProjectFactory projectFactory, RealVersionFactory versionFactory,
+				CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
 			this.versions = versions;
@@ -163,14 +163,13 @@ public class GitTablePopulator implements Runnable {
 			this.functions = functions;
 			this.facts = facts;
 			this.strings = strings;
-			this.hashfactContent = hashfactContent;
 			this.projectFactory = projectFactory;
 			this.versionFactory = versionFactory;
 			this.charsetDetector = charsetDetector;
 		}
 
 		final Frontend javaFrontend;
-		final HTable versions, files, functions, facts, strings, hashfactContent;
+		final HTable versions, files, functions, facts, strings;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -300,7 +299,6 @@ public class GitTablePopulator implements Runnable {
 			files.flushCommits();
 			functions.flushCommits();
 			facts.flushCommits();
-			hashfactContent.flushCommits();
 			strings.flushCommits();
 		}
 	}
@@ -309,7 +307,7 @@ public class GitTablePopulator implements Runnable {
 		@Test
 		public void testProjnameRegex() {
 			GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null, null, null, null, null,
-					null, null);
+					null);
 			String projName = gtpm
 					.getProjName("har://hdfs-haddock.unibe.ch/projects/testdata.har/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack");
 			Assert.assertEquals("apfel", projName);

@@ -25,8 +25,6 @@ public class HBaseModule extends AbstractModule {
 		installHTable("facts");
 		installHTable("strings");
 
-		installHTable("hashfactContent");
-
 		installHTable("indexFacts2Functions");
 		installHTable("indexFacts2FunctionsStep2");
 

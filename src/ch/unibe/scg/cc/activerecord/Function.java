@@ -7,6 +7,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.CannotBeHashedException;
 import ch.unibe.scg.cc.Hasher;
@@ -15,6 +16,7 @@ import ch.unibe.scg.cc.util.ByteUtils;
 import com.google.inject.assistedinject.Assisted;
 
 public class Function extends Column {
+	private static final byte[] FUNCTION_SNIPPET = Bytes.toBytes("fs");
 	final private List<HashFact> hashFacts;
 	final private int baseLine;
 	final transient CharSequence contents;
@@ -73,4 +75,7 @@ public class Function extends Column {
 		return this.hashFacts;
 	}
 
+	public void saveSnippet(Put put) {
+		put.add(FAMILY_NAME, FUNCTION_SNIPPET, 0l, Bytes.toBytes(getContents()));
+	}
 }

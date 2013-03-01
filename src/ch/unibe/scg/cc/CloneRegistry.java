@@ -13,7 +13,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.HashFact;
 import ch.unibe.scg.cc.activerecord.Location;
@@ -55,10 +54,6 @@ public class CloneRegistry {
 	@Inject(optional = true)
 	@Named("strings")
 	HTable strings;
-
-	@Inject(optional = true)
-	@Named("hashfactContent")
-	HTable hashfactContent;
 
 	@Inject
 	public CloneRegistry(Provider<HashFact> hashFactProvider, Provider<Location> locationProvider) {
@@ -164,17 +159,14 @@ public class CloneRegistry {
 			Put put = new Put(hashFileContents);
 			put.setWriteToWAL(false); // XXX performance increase
 			try {
+				// save function
 				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
 				functions.put(put);
 
-				Put fnSnippet = new Put(function.getHash()); // XXX
-																// temp
-																// debug
-				fnSnippet.add(Column.FAMILY_NAME, Bytes.toBytes("fv"), 0l,
-						Bytes.toBytes(function.getContents().toString())); // XXX
-																			// temp
-																			// debug
-				hashfactContent.put(fnSnippet); // XXX temp debug
+				// save snippet
+				Put fnSnippet = new Put(function.getHash());
+				function.saveSnippet(fnSnippet);
+				strings.put(fnSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -218,10 +210,13 @@ public class CloneRegistry {
 			put.setWriteToWAL(false); // XXX performance increase
 			hfSnippet.setWriteToWAL(false); // XXX performance increase
 			try {
+				// save hashfact
 				hashFact.save(put);
 				facts.put(put);
+
+				// save snippet
 				hashFact.saveSnippet(hfSnippet);
-				hashfactContent.put(hfSnippet);
+				strings.put(hfSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}

@@ -3,6 +3,5 @@ create 'files', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'functions', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'facts', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'strings', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'hashfactContent', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'indexFacts2Files', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 exit
