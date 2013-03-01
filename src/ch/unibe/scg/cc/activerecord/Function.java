@@ -8,21 +8,21 @@ import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
 
-import ch.unibe.scg.cc.StandardHasher;
+import ch.unibe.scg.cc.CannotBeHashedException;
+import ch.unibe.scg.cc.Hasher;
+import ch.unibe.scg.cc.util.ByteUtils;
 
 import com.google.inject.assistedinject.Assisted;
 
 public class Function extends Column {
-
 	final private List<HashFact> hashFacts;
 	final private int baseLine;
 	final transient CharSequence contents;
 	private byte[] hash = null;
-
-	final StandardHasher standardHasher;
+	final Hasher hasher;
 
 	public static interface FunctionFactory {
-		Function makeFunction(int baseLine, CharSequence contents);
+		Function makeFunction(Hasher hasher, int baseLine, CharSequence contents);
 	}
 
 	@Inject
@@ -30,9 +30,9 @@ public class Function extends Column {
 	 * Creates a new function by copying only "contents", "baseline" and
 	 * "standardHasher" from the provided function.
 	 */
-	public Function(StandardHasher standardHasher, @Assisted int baseLine, @Assisted CharSequence contents) {
+	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted CharSequence contents) {
 		this.hashFacts = new ArrayList<HashFact>();
-		this.standardHasher = standardHasher;
+		this.hasher = hasher;
 		this.baseLine = baseLine;
 		this.contents = contents;
 	}
@@ -41,10 +41,18 @@ public class Function extends Column {
 		// nothing to do
 	}
 
+	/**
+	 * @return if the hasher throws a CannotBeHashedException the
+	 *         {@link ByteUtils#EMPTY_SHA1_KEY} is returned.
+	 */
 	public byte[] getHash() {
 		assert getContents() != null;
 		if (hash == null) {
-			hash = standardHasher.hash(getContents().toString());
+			try {
+				hash = hasher.hash(getContents().toString());
+			} catch (CannotBeHashedException e) {
+				return ByteUtils.EMPTY_SHA1_KEY;
+			}
 		}
 		return hash;
 	}

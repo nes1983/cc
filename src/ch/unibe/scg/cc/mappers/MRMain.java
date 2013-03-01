@@ -88,7 +88,8 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
+					GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
@@ -122,7 +123,8 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
+					GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
@@ -152,7 +154,8 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
+					GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			reducer.setup(context);
@@ -182,7 +185,8 @@ public class MRMain extends Configured implements Tool {
 		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
+			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
+					GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) injector
 					.getInstance(clazz);
@@ -216,7 +220,7 @@ public class MRMain extends Configured implements Tool {
 		try {
 			return Class.forName(qualifiedClassName);
 		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e);
+			throw new WrappedRuntimeException("Class " + qualifiedClassName + " not found!", e);
 		}
 	}
 }

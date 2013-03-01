@@ -1,6 +1,9 @@
 package ch.unibe.scg.cc.util;
 
 public class ByteUtils {
+	/** 20 bytes each with hex-value \x00 */
+	public static final byte[] EMPTY_SHA1_KEY = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
 	/**
 	 * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of
 	 * same length.

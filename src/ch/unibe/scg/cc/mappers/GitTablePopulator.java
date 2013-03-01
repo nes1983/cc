@@ -15,6 +15,8 @@ import java.util.regex.Pattern;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import junit.framework.Assert;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -45,6 +47,7 @@ import org.eclipse.jgit.storage.dfs.DfsRepositoryDescription;
 import org.eclipse.jgit.storage.dfs.InMemoryRepository;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
+import org.junit.Test;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
@@ -70,8 +73,8 @@ public class GitTablePopulator implements Runnable {
 	private static final String MAP_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
-	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/projects.har";
-	private static final String PROJECTS_FOLDER_PATH = "testdata"; // projects
+	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/testdata.har"; // projects.har
+	private static final String PROJECTS_FOLDER_PATH = "."; // . for all folders
 	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
 	final MRWrapper mrWrapper;
 
@@ -200,7 +203,7 @@ public class GitTablePopulator implements Runnable {
 			FSDataInputStream ins = fileSystem.open(new Path(packedRefsPath));
 			List<PackedRef> pr = prp.parse(ins);
 
-			String projectName = packFilePath; // XXX
+			String projectName = getProjName(packFilePath); // XXX
 			logger.debug("PROCESSING: " + packFilePath);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
@@ -252,6 +255,15 @@ public class GitTablePopulator implements Runnable {
 			logger.debug("svd FINISHED PROCESSING " + packFilePath);
 		}
 
+		private String getProjName(String packFilePath) {
+			Pattern p = Pattern.compile(".+/(.+)/.git/.+");
+			Matcher m = p.matcher(packFilePath);
+			if (!m.matches()) {
+				return packFilePath;
+			}
+			return m.group(1);
+		}
+
 		private String getContent(Repository repository, ObjectId objectId) throws MissingObjectException, IOException {
 			ObjectLoader loader = repository.open(objectId);
 			InputStream inputStream = loader.openStream();
@@ -290,6 +302,17 @@ public class GitTablePopulator implements Runnable {
 			facts.flushCommits();
 			hashfactContent.flushCommits();
 			strings.flushCommits();
+		}
+	}
+
+	public static class GitTablePopulatorTest {
+		@Test
+		public void testProjnameRegex() {
+			GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null, null, null, null, null,
+					null, null);
+			String projName = gtpm
+					.getProjName("har://hdfs-haddock.unibe.ch/projects/testdata.har/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack");
+			Assert.assertEquals("apfel", projName);
 		}
 	}
 }

@@ -4,6 +4,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.verify;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import ch.unibe.scg.cc.Hasher;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import dk.brics.automaton.Automaton;
@@ -55,15 +57,17 @@ public class JavaTokenizerTest {
 		List<Function> list = tokenizer.tokenize(sampleClass(), null);
 
 		assertThat(list.size(), is(4));
-		verify(functionFactory).makeFunction(eq(0),
+		verify(functionFactory).makeFunction(any(Hasher.class), eq(0),
 				eq("package        fish.stink;\nimport java.util.*;\nimport static System.out;\n\n"));
-		verify(functionFactory).makeFunction(eq(4), eq("public class Rod {\n\t"));
+		verify(functionFactory).makeFunction(any(Hasher.class), eq(4), eq("public class Rod {\n\t"));
 		verify(functionFactory)
 				.makeFunction(
+						any(Hasher.class),
 						eq(5),
 						eq("public static void main(String[] args) {\n\t\tout.println(\"Hiya, wassup?\");\n\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n\t}\n\t\t\t"));
 		verify(functionFactory)
 				.makeFunction(
+						any(Hasher.class),
 						eq(9),
 						eq("protected static void doIt() {\n\t\tif(System.timeInMillis() > 10000)\n\t\t\tout.println(1337);\n\t\tmain(null);\n\t}\n}\n"));
 

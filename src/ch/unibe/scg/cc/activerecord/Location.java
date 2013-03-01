@@ -5,7 +5,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 public class Location extends Column {
 
-	private static final int MINIMUM_CLONE_LENGTH = 5;
+	private static final int MINIMUM_CLONE_LENGTH = 10;
 	private final byte[] LOCATION_NAME = Bytes.toBytes("ln");
 	final int length = MINIMUM_CLONE_LENGTH;
 	int firstLine;

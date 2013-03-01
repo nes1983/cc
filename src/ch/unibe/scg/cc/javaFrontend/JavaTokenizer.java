@@ -6,6 +6,7 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+import ch.unibe.scg.cc.StandardHasher;
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
@@ -16,10 +17,15 @@ import dk.brics.automaton.RunAutomaton;
 @Singleton
 public class JavaTokenizer implements Tokenizer {
 
+	// TODO: the last function in a class always catches one closing curly
+	// bracket ("}") too much
 	final String splitterRegex = "([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
 
 	@Inject
 	FunctionFactory functionFactory;
+
+	@Inject
+	StandardHasher standardHasher;
 
 	final RunAutomaton splitter;
 
@@ -41,14 +47,14 @@ public class JavaTokenizer implements Tokenizer {
 			String currentFunctionString = file.substring(lastStart, m.start());
 			lineLength = countOccurrences(currentFunctionString, '\n');
 
-			Function function = functionFactory.makeFunction(currentLineNumber, currentFunctionString);
+			Function function = functionFactory.makeFunction(standardHasher, currentLineNumber, currentFunctionString);
 			ret.add(function);
 
 			lastStart = m.start();
 			currentLineNumber += lineLength;
 		}
 		String currentFunctionString = file.substring(lastStart, file.length());
-		Function function = functionFactory.makeFunction(currentLineNumber, currentFunctionString);
+		Function function = functionFactory.makeFunction(standardHasher, currentLineNumber, currentFunctionString);
 		ret.add(function);
 		return ret;
 	}

@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.apache.log4j.Logger;
+
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
@@ -12,12 +14,12 @@ import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.util.ByteUtils;
 
 public class RegisterClonesBackend {
-
+	static Logger logger = Logger.getLogger(RegisterClonesBackend.class);
 	public final int MINIMUM_LINES = 10;
 	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
-	final byte[] emptySHA1Key = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	CloneRegistry registry;
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
@@ -75,15 +77,16 @@ public class RegisterClonesBackend {
 	}
 
 	private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, byte type) {
-
 		byte[] hash;
 		try {
 			hash = hasher.hash(snippet);
-
-			if (Arrays.equals(hash, emptySHA1Key)) // can happen with the
-													// shingle hasher
+			logger.info("hash " + hash + " for " + type);
+			// drop snippets which cause an empty hash:
+			if (Arrays.equals(hash, ByteUtils.EMPTY_SHA1_KEY)) {
 				return;
+			}
 		} catch (CannotBeHashedException e) {
+			logger.error(snippet + " caused CannotBeHashedException", e);
 			return;
 		}
 		registry.register(hash, snippet, function, from, length, type);

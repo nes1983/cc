@@ -12,6 +12,7 @@ import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.util.ByteUtils;
 
 public class Frontend {
 
@@ -119,18 +120,27 @@ public class Frontend {
 			return;
 		}
 
+		// type-1
 		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function, Main.TYPE_1_CLONE);
 		Function functionType1 = function;
 		codeFile.addFunction(functionType1);
 
+		// type-2
 		type2.normalize(contents);
 		String contentsString = contents.toString();
-		Function functionType2 = functionFactory.makeFunction(functionType1.getBaseLine(), contentsString);
+		Function functionType2 = functionFactory.makeFunction(standardHasher, functionType1.getBaseLine(),
+				contentsString);
 		contentsStringOfLines = stringOfLinesFactory.make(functionType2.getContents());
 		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, functionType2, Main.TYPE_2_CLONE);
 		codeFile.addFunction(functionType2);
 
-		Function functionType3 = functionFactory.makeFunction(functionType2.getBaseLine(), contentsString);
+		// type-3
+		Function functionType3 = functionFactory.makeFunction(shingleHasher, functionType2.getBaseLine(),
+				contentsString);
+		// drop functions which generate an empty hash
+		if (functionType3.getHash().equals(ByteUtils.EMPTY_SHA1_KEY)) {
+			return;
+		}
 		backend.shingleRegisterFunction(contentsStringOfLines, functionType3);
 		codeFile.addFunction(functionType3);
 	}
