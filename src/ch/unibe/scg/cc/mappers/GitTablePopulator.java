@@ -202,7 +202,7 @@ public class GitTablePopulator implements Runnable {
 			FSDataInputStream ins = fileSystem.open(new Path(packedRefsPath));
 			List<PackedRef> pr = prp.parse(ins);
 
-			String projectName = getProjName(packFilePath); // XXX
+			String projectName = getProjName(packFilePath);
 			logger.debug("PROCESSING: " + packFilePath);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
@@ -255,8 +255,7 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		private String getProjName(String packFilePath) {
-			Pattern p = Pattern.compile(".+/(.+)/.git/.+");
-			Matcher m = p.matcher(packFilePath);
+			Matcher m = Pattern.compile(".+/(.+)/.git/.+").matcher(packFilePath);
 			if (!m.matches()) {
 				return packFilePath;
 			}
@@ -308,8 +307,9 @@ public class GitTablePopulator implements Runnable {
 		public void testProjnameRegex() {
 			GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null, null, null, null, null,
 					null);
-			String projName = gtpm
-					.getProjName("har://hdfs-haddock.unibe.ch/projects/testdata.har/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack");
+			String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
+					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
+			String projName = gtpm.getProjName(fullPathString);
 			Assert.assertEquals("apfel", projName);
 		}
 	}

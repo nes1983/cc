@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.modules;
 
+import javax.inject.Singleton;
+
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.Normalizer;
@@ -20,7 +22,7 @@ public class JavaModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		bind(Tokenizer.class).to(JavaTokenizer.class);
+		bind(Tokenizer.class).to(JavaTokenizer.class).in(Singleton.class);
 		install(new Type1Module());
 		install(new Type2Module());
 		bind(Frontend.class).annotatedWith(Java.class).to(Frontend.class); // XXX

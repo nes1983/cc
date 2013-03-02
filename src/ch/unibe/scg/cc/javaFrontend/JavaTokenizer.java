@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
-import javax.inject.Singleton;
 
 import ch.unibe.scg.cc.StandardHasher;
 import ch.unibe.scg.cc.Tokenizer;
@@ -14,9 +13,7 @@ import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
-@Singleton
 public class JavaTokenizer implements Tokenizer {
-
 	// TODO: the last function in a class always catches one closing curly
 	// bracket ("}") too much
 	final String splitterRegex = "([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
