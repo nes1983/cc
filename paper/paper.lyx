@@ -6,10 +6,10 @@
 \use_default_options true
 \begin_modules
 theorems-ams
-eqs-within-sections
-figs-within-sections
 theorems-ams-extended
 theorems-sec
+eqs-within-sections
+figs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -774,16 +774,6 @@ check number
  tags, all scanned java source files are getting processed.
  In our example the packed-refs file for the Apple repository looks like
  this:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Which means?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -817,12 +807,18 @@ bf2e04ae5fbe9100f5bac1f432a38f0c3113a3a5 refs/tags/v0.1
 \end_layout
 
 \begin_layout Standard
+In this example there is one single tag, namely v0.1, stored.
+ This means we are going to browse through the whole source at the specific
+ project state linked by the hash bf2e04ae5fbe9100f5bac1f432a38f0c3113a3a5.
+\end_layout
+
+\begin_layout Standard
 For every found java source file, its SHA-1 hash is being calculated.
  We then check if the file hash already appears in the table 
 \shape italic
 files
 \shape default
- to determine whterether we have already processed the file.
+ to determine whether we have already processed the file.
  Is this the case we skip the «processing of the file contents» part.
 \end_layout
 
@@ -857,13 +853,27 @@ hashfact
 \end_layout
 
 \begin_layout Standard
-Type 1 hashes: regular content.
+Clone detection is done on three different types of hashes.
+ In the following we show how the three different types of clones are created
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schwarz:2012ta"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Type 1 hashes working definition: Two hashfacts are type-1 clones iff they
+ differ in nothing but white-space.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
 	filename regextype1.pdf
-	width 100col%
+	width 8cm
 
 \end_inset
 
@@ -871,7 +881,24 @@ Type 1 hashes: regular content.
 \end_layout
 
 \begin_layout Standard
-Type 2 hashes: normalization.
+These hashfacts are now inserted in the facts table:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tablefactstype1.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Type 2 hashes working definition: Two hashfacts are type-2 clones iff they
+ are type-1 clones after every sequence of alphabetical letters is replaced
+ by the letter “t”, and all sequences of digits are replaced with the number
+ “1”.
 \end_layout
 
 \begin_layout Standard
@@ -885,7 +912,23 @@ Type 2 hashes: normalization.
 \end_layout
 
 \begin_layout Standard
-Type 3 hashes: normalization and shinglehasher.
+These hashfacts are now inserted in the facts table:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tablefactstype2.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Type 3 hashes working definition: Two documents are type-3 clones if and
+ only if they share the same sketch.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -899,7 +942,27 @@ Type 3 hashes: normalization and shinglehasher.
 \end_layout
 
 \begin_layout Standard
-We do now know the function and its hashfacts.
+These hashfacts are now inserted in the facts table:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tablefactstype3.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We notice that this table has only four rows.
+ This is because the shinglehasher returns the same value for the shingles
+ starting at line 1 and 2.
+\end_layout
+
+\begin_layout Standard
+So what we have now: we do know the function and all of its hashfacts.
  We assume that a hashfact occurs not more than once in a function 
 \begin_inset Note Comment
 status open
@@ -912,16 +975,32 @@ TODO: Wie oft wird diese Annahme verletzt?
 
 .
  We do also know the file and all its functions.
- We store this information in the following way: facts -> functions -> files
+ This information now gets stored, the complete facts table looks like follows.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Graphics
+	filename tablefactsall.pdf
+	width 8cm
 
-\begin_layout Plain Layout
-Show the tables after each step.
+\end_inset
+
+
 \end_layout
+
+\begin_layout Standard
+The two functions (one of class Apple, one of class Pear) result in three
+ different hashes.
+ As the type-1 normalized function is different for the two classes, the
+ hasher generates two different hashes whereas the type-2 and type-3 normalized
+ functions equal in both classes and therefore produce the same hash.
+ The functions table now looks as follows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tablefunctions.pdf
+	width 8cm
 
 \end_inset
 
@@ -942,6 +1021,12 @@ files
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename tablefiles.pdf
+	width 8cm
+
+\end_inset
+
 
 \end_layout
 
@@ -955,6 +1040,55 @@ In the table
 versions
 \shape default
  the version-hash and the tag get stored together with the project-hash.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tableversions.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Strings
+\end_layout
+
+\begin_layout Standard
+In the table 
+\shape italic
+strings
+\shape default
+ we store the human readable values of data we may need later.
+ Currently this applies to the attributes 
+\shape italic
+filepath (fp)
+\shape default
+, 
+\shape italic
+filename (fn)
+\shape default
+, 
+\shape italic
+function_snippet (fs)
+\shape default
+, 
+\shape italic
+hashfact_snippet (sn)
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tablestrings.pdf
+	width 8cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -986,6 +1120,88 @@ GitTablePopulator: Process HDFS-Folder with all pack files (see section
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Cloned functions
+\end_layout
+
+\begin_layout Standard
+To identify cloned functions over various files and projects we need to
+ inverse the mapping of the tables used in the population phase.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+facts -> functions -> files -> versions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cloned hashfacts
+\end_layout
+
+\begin_layout Subsubsection
+Index generation step 1
+\end_layout
+
+\begin_layout Standard
+In the first index generation phase we invert the mapping functions -> facts.
+ As input for the mapper we get all entries of the facts table (see figure
+ tablefactsall.pdf 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+how do i reference a figure in lyx?
+\end_layout
+
+\end_inset
+
+).
+ We write the facthashes to the output key and the corresponding functions
+ to the output values.
+ This gives us the following intermediate data collection: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert graphic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the reduce function we omit all hashfacts which only appear in one single
+ function.
+ All other hashfacts get stored in the table indexFacts2Functions.
+ This table now looks like this: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert graphic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Index generation step 2
+\end_layout
+
+\begin_layout Subsubsection
+Clone escalation
 \end_layout
 
 \begin_layout Section
@@ -1065,6 +1281,17 @@ I had no idea.
 
 \begin_layout Section
 Performance
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bib"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
