@@ -469,6 +469,29 @@ facts -> functions -> files -> versions -> projects
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename hbasetable.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+HBase's strength is how it handles huge dataset entries in a fast and efficient
+ way.
+ Information stored in columns is always referenced by the row-key.
+ One row key can contains references to 0..n columns.
+\end_layout
+
+\begin_layout Standard
+In the following figures where we show HBase tables, we show them as output
+ as we would get when executing the HBase shell.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -976,6 +999,8 @@ TODO: Wie oft wird diese Annahme verletzt?
 .
  We do also know the file and all its functions.
  This information now gets stored, the complete facts table looks like follows.
+ For the ease of readability we neglect the lexicographic ordering by the
+ row key (function).
 \end_layout
 
 \begin_layout Standard
@@ -1166,13 +1191,13 @@ how do i reference a figure in lyx?
 ).
  We write the facthashes to the output key and the corresponding functions
  to the output values.
- This gives us the following intermediate data collection: 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-insert graphic
+ This gives us the following intermediate data collection:
 \end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename indexfacts2functionsmapoutput.pdf
+	width 8cm
 
 \end_inset
 
@@ -1183,13 +1208,13 @@ insert graphic
 In the reduce function we omit all hashfacts which only appear in one single
  function.
  All other hashfacts get stored in the table indexFacts2Functions.
- This table now looks like this: 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-insert graphic
+ This table now looks like this:
 \end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename indexfacts2functionsreduceoutput.pdf
+	width 8cm
 
 \end_inset
 
