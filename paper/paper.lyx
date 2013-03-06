@@ -6,10 +6,10 @@
 \use_default_options true
 \begin_modules
 theorems-ams
-theorems-ams-extended
-theorems-sec
 eqs-within-sections
 figs-within-sections
+theorems-ams-extended
+theorems-sec
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -129,9 +129,28 @@ java
 \end_layout
 
 \begin_layout Standard
-After parsing the repository URLs, we had to determine which one of the
- found repository was the official one (example: http://www.ohloh.net/p/php/enlist
-ments).
+After parsing the repository URLs, we had to
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Don't talk this way.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Then, we had to.
+\begin_inset Quotes erd
+\end_inset
+
+ is no good.
+ What did you do? The story of your thesis is not the story of writing it.
+\end_layout
+
+\end_inset
+
+ determine which one of the found repository was the official one (example:
+ http://www.ohloh.net/p/php/enlistments).
  We came up with a scoring system 
 \begin_inset Note Note
 status open
@@ -491,6 +510,27 @@ Layout of an HBase row
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+How does the figure connect? Also, put figures and tables into floats (
+\begin_inset Quotes eld
+\end_inset
+
+Gleitobjekt
+\begin_inset Quotes erd
+\end_inset
+
+ in German lyx).
 \end_layout
 
 \end_inset
