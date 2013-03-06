@@ -469,9 +469,29 @@ facts -> functions -> files -> versions -> projects
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename hbasetable.pdf
 	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Layout of an HBase row
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -710,9 +730,32 @@ Our example HAR file contains two repositories.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename har.pdf
 	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The two Git repositories.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -724,9 +767,29 @@ Each repository contains one java source file:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename sourcefiles.pdf
 	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The two source files.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -846,9 +909,32 @@ files
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename sourcefileshashes.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The two source files with their hashes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -894,9 +980,29 @@ Type 1 hashes working definition: Two hashfacts are type-1 clones iff they
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename regextype1.pdf
 	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The hashfacts of the two functions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -908,9 +1014,33 @@ These hashfacts are now inserted in the facts table:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Type-1 hashfacts to be inserted in the 
+\shape italic
+facts
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefactstype1.pdf
-	width 8cm
+	width 100col%
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -925,9 +1055,32 @@ Type 2 hashes working definition: Two hashfacts are type-2 clones iff they
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename regextype2.pdf
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The type-2 normalized function.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -939,9 +1092,33 @@ These hashfacts are now inserted in the facts table:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Type-2 hashfacts to be inserted in the 
+\shape italic
+facts
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefactstype2.pdf
-	width 8cm
+	width 100col%
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -955,9 +1132,32 @@ Type 3 hashes working definition: Two documents are type-3 clones if and
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename regextype3.pdf
 	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The type-3 normalized shingles with their hashes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -969,9 +1169,33 @@ These hashfacts are now inserted in the facts table:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Type-3 hashfacts to be inserted in the 
+\shape italic
+facts
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefactstype3.pdf
-	width 8cm
+	width 100col%
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -999,14 +1223,36 @@ TODO: Wie oft wird diese Annahme verletzt?
 .
  We do also know the file and all its functions.
  This information now gets stored, the complete facts table looks like follows.
- For the ease of readability we neglect the lexicographic ordering by the
- row key (function).
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\shape italic
+facts
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefactsall.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1023,9 +1269,33 @@ The two functions (one of class Apple, one of class Pear) result in three
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\shape italic
+functions
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefunctions.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1046,9 +1316,33 @@ files
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\shape italic
+files
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablefiles.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1068,9 +1362,33 @@ versions
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\shape italic
+versions
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tableversions.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1107,9 +1425,33 @@ hashfact_snippet (sn)
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\shape italic
+strings
+\shape default
+ table.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename tablestrings.pdf
 	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1195,6 +1537,25 @@ how do i reference a figure in lyx?
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The intermediate output after the mapping phase in the first index generation
+ step.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename indexfacts2functionsmapoutput.pdf
 	width 8cm
@@ -1204,14 +1565,38 @@ how do i reference a figure in lyx?
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 In the reduce function we omit all hashfacts which only appear in one single
  function.
- All other hashfacts get stored in the table indexFacts2Functions.
+ All other hashfacts get stored in the table 
+\shape italic
+indexFacts2Functions
+\shape default
+.
  This table now looks like this:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The table indexFacts2Functions after the reduce phase is completed.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename indexfacts2functionsreduceoutput.pdf
 	width 8cm
@@ -1221,8 +1606,164 @@ In the reduce function we omit all hashfacts which only appear in one single
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Index generation step 2
+\end_layout
+
+\begin_layout Standard
+In the second index generation phase we inverse the mapping once again.
+ Since we need to generate a data structure e do also calculate the cross
+ product of the column.
+ The input for the map function is the output of the reduce function from
+ the first index generation step, namely the table 
+\shape italic
+indexFacts2Functions
+\shape default
+.
+ We explain the the abstract procedure in the following paragraph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The abstract input for the mapping phase in index generation step 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename indexfacts2functionsstep2mapinputabstract.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's assume that this represents our content in the table 
+\shape italic
+indexFacts2Functions
+\shape default
+.
+ The first mapper gets the row with the row-key fac1.
+ Now for each column in fac1 we invert the mapping and calculate the cross
+ product with the other columns in this row.
+ The first entries would be the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insert intermediate figure to explain in detail.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After repeating this procedure to all rows the final table looks like this.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The abstract output after the reduce phase in index generation step 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename indexfacts2functionsstep2mapoutputabstract.pdf
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we apply the same algorithm to our real data.
+ The mapper input is the data stored in table 
+\shape italic
+indexFacts2Functions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The output after the reduce phase in index generation step 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Insert correct figure with 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
