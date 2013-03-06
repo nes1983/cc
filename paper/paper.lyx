@@ -6,10 +6,10 @@
 \use_default_options true
 \begin_modules
 theorems-ams
-eqs-within-sections
-figs-within-sections
 theorems-ams-extended
 theorems-sec
+eqs-within-sections
+figs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language english
@@ -131,7 +131,7 @@ java
 \begin_layout Standard
 After parsing the repository URLs, we had to
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Don't talk this way.
@@ -489,6 +489,7 @@ facts -> functions -> files -> versions -> projects
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -771,6 +772,7 @@ Our example HAR file contains two repositories.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -808,6 +810,7 @@ Each repository contains one java source file:
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -950,6 +953,7 @@ files
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1021,6 +1025,7 @@ Type 1 hashes working definition: Two hashfacts are type-1 clones iff they
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1055,6 +1060,7 @@ These hashfacts are now inserted in the facts table:
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1096,6 +1102,7 @@ Type 2 hashes working definition: Two hashfacts are type-2 clones iff they
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1133,6 +1140,7 @@ These hashfacts are now inserted in the facts table:
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1173,6 +1181,7 @@ Type 3 hashes working definition: Two documents are type-3 clones if and
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1210,6 +1219,7 @@ These hashfacts are now inserted in the facts table:
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1267,6 +1277,7 @@ TODO: Wie oft wird diese Annahme verletzt?
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1310,6 +1321,7 @@ The two functions (one of class Apple, one of class Pear) result in three
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1357,6 +1369,7 @@ files
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1403,6 +1416,7 @@ versions
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1466,6 +1480,7 @@ hashfact_snippet (sn)
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1578,6 +1593,7 @@ how do i reference a figure in lyx?
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1623,6 +1639,7 @@ indexFacts2Functions
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1670,6 +1687,7 @@ indexFacts2Functions
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1732,6 +1750,7 @@ After repeating this procedure to all rows the final table looks like this.
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -1772,6 +1791,7 @@ indexFacts2Functions.
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
