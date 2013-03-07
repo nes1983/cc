@@ -22,7 +22,7 @@ public class HBaseModule extends AbstractModule {
 		installHTable("project2version");
 		installHTable("version2file");
 		installHTable("file2function");
-		installHTable("function2fact");
+		installHTable("function2snippet");
 		installHTable("strings");
 
 		installHTable("snippet2function");

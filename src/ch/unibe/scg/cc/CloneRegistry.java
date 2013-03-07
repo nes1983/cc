@@ -14,10 +14,10 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.HashFact;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealCodeFile;
+import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 
 import com.google.inject.Inject;
@@ -27,11 +27,11 @@ public class CloneRegistry {
 
 	public static final int TABLE_PROJECT2VERSION = 1;
 	public static final int TABLE_FILE2FUNCTION = 2;
-	public static final int TABLE_FUNCTION2FACT = 3;
+	public static final int TABLE_FUNCTION2SNIPPET = 3;
 	public static final int TABLE_VERSION2FILE = 4;
 	public static final int TABLE_STRINGS = 5;
 
-	final Provider<HashFact> hashFactProvider;
+	final Provider<Snippet> snippetProvider;
 
 	final Provider<Location> locationProvider;
 
@@ -48,27 +48,27 @@ public class CloneRegistry {
 	HTable file2function;
 
 	@Inject(optional = true)
-	@Named("function2fact")
-	HTable function2fact;
+	@Named("function2snippet")
+	HTable function2snippet;
 
 	@Inject(optional = true)
 	@Named("strings")
 	HTable strings;
 
 	@Inject
-	public CloneRegistry(Provider<HashFact> hashFactProvider, Provider<Location> locationProvider) {
-		this.hashFactProvider = hashFactProvider;
+	public CloneRegistry(Provider<Snippet> hashFactProvider, Provider<Location> locationProvider) {
+		this.snippetProvider = hashFactProvider;
 		this.locationProvider = locationProvider;
 	}
 
-	public void register(byte[] hash, String snippet, Function function, Location location, byte type) {
-		HashFact fact = hashFactProvider.get();
-		fact.setHash(hash);
-		fact.setSnippet(snippet);
-		fact.setLocation(location);
-		fact.setFunction(function);
-		fact.setType(type);
-		function.addHashFact(fact);
+	public void register(byte[] hash, String snippetValue, Function function, Location location, byte type) {
+		Snippet snippet = snippetProvider.get();
+		snippet.setHash(hash);
+		snippet.setSnippet(snippetValue);
+		snippet.setLocation(location);
+		snippet.setFunction(function);
+		snippet.setType(type);
+		function.addSnippet(snippet);
 	}
 
 	public void register(byte[] hash, String snippet, Function function, int from, int length, byte type) {
@@ -142,8 +142,8 @@ public class CloneRegistry {
 			return project2version;
 		case TABLE_FILE2FUNCTION:
 			return file2function;
-		case TABLE_FUNCTION2FACT:
-			return function2fact;
+		case TABLE_FUNCTION2SNIPPET:
+			return function2snippet;
 		case TABLE_VERSION2FILE:
 			return version2file;
 		case TABLE_STRINGS:
@@ -204,18 +204,18 @@ public class CloneRegistry {
 	}
 
 	public void register(Function function) {
-		for (HashFact hashFact : function.getHashFacts()) {
+		for (Snippet snippet : function.getSnippets()) {
 			Put put = new Put(function.getHash());
-			Put hfSnippet = new Put(hashFact.getHash());
+			Put hfSnippet = new Put(snippet.getHash());
 			put.setWriteToWAL(false); // XXX performance increase
 			hfSnippet.setWriteToWAL(false); // XXX performance increase
 			try {
-				// save hashfact
-				hashFact.save(put);
-				function2fact.put(put);
-
 				// save snippet
-				hashFact.saveSnippet(hfSnippet);
+				snippet.save(put);
+				function2snippet.put(put);
+
+				// save snippetValue
+				snippet.saveSnippet(hfSnippet);
 				strings.put(hfSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);

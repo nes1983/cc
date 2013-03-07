@@ -12,8 +12,8 @@ import org.apache.hadoop.io.BytesWritable;
 public class GuiceResource {
 	public enum ColumnName {
 		COUNT_VERSIONS(Bytes.toBytes("nve")), VALUES_VERSIONS(Bytes.toBytes("vve")), COUNT_FILES(Bytes.toBytes("nfi")), VALUES_FILES(
-				Bytes.toBytes("vfi")), COUNT_FUNCTIONS(Bytes.toBytes("vfn")), VALUES_FUNCTIONS(Bytes.toBytes("vfn")), COUNT_FACTS(
-				Bytes.toBytes("nfa")), VALUES_FACTS(Bytes.toBytes("vfa"));
+				Bytes.toBytes("vfi")), COUNT_FUNCTIONS(Bytes.toBytes("vfn")), VALUES_FUNCTIONS(Bytes.toBytes("vfn")), COUNT_SNIPPETS(
+				Bytes.toBytes("nfa")), VALUES_SNIPPETS(Bytes.toBytes("vfa"));
 
 		private final byte[] name;
 

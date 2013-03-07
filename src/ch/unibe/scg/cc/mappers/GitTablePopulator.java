@@ -154,14 +154,14 @@ public class GitTablePopulator implements Runnable {
 		@Inject
 		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
 				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
-				@Named("function2fact") HTable function2fact, @Named("strings") HTable strings,
+				@Named("function2snippet") HTable function2snippet, @Named("strings") HTable strings,
 				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
 			this.project2version = project2version;
 			this.version2file = version2file;
 			this.file2function = file2function;
-			this.function2fact = function2fact;
+			this.function2snippet = function2snippet;
 			this.strings = strings;
 			this.projectFactory = projectFactory;
 			this.versionFactory = versionFactory;
@@ -169,7 +169,7 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		final Frontend javaFrontend;
-		final HTable project2version, version2file, file2function, function2fact, strings;
+		final HTable project2version, version2file, file2function, function2snippet, strings;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -297,7 +297,7 @@ public class GitTablePopulator implements Runnable {
 			project2version.flushCommits();
 			version2file.flushCommits();
 			file2function.flushCommits();
-			function2fact.flushCommits();
+			function2snippet.flushCommits();
 			strings.flushCommits();
 		}
 	}

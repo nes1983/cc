@@ -8,7 +8,6 @@ import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
@@ -22,7 +21,6 @@ public class HBaseTest {
 	public static final String HBASE_CONFIGURATION_ZOOKEEPER_QUORUM = "hbase.zookeeper.quorum";
 	public static final String HBASE_CONFIGURATION_ZOOKEEPER_CLIENTPORT = "hbase.zookeeper.property.clientPort";
 
-	@Test
 	@Before
 	public void createTable() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
@@ -33,9 +31,9 @@ public class HBaseTest {
 		HBaseAdmin admin = new HBaseAdmin(conf);
 		HTableDescriptor td = new HTableDescriptor("asdf");
 		admin.createTable(td);
+		admin.close();
 	}
 
-	@Test
 	@After
 	public void deleteTable() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
@@ -46,5 +44,6 @@ public class HBaseTest {
 		conf.set(HBASE_CONFIGURATION_ZOOKEEPER_CLIENTPORT, "2181");
 		admin.disableTable("asdf");
 		admin.deleteTable("asdf");
+		admin.close();
 	}
 }

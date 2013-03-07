@@ -12,23 +12,23 @@ import javax.inject.Provider;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.HashFact;
+import ch.unibe.scg.cc.activerecord.Snippet;
 
 public class RegisterSnippetTest {
 
 	@Test
 	public void addSnippet() throws SQLException, IOException {
-		final Provider<HashFact> hashFactProvider = (Provider<HashFact>) mock(Provider.class);
-		final HashFact hashFact = mock(HashFact.class);
-		when(hashFactProvider.get()).thenReturn(hashFact);
+		final Provider<Snippet> snippetProvider = (Provider<Snippet>) mock(Provider.class);
+		final Snippet snippet = mock(Snippet.class);
+		when(snippetProvider.get()).thenReturn(snippet);
 
-		CloneRegistry registry = new CloneRegistry(hashFactProvider, null);
+		CloneRegistry registry = new CloneRegistry(snippetProvider, null);
 		Function function = new Function(null, 0, "");
 
 		byte[] bytes = new byte[] { 0 };
 		registry.register(bytes, "", function, null, (byte) 0x03);
 
-		verify(hashFact).setType((byte) 0x03);
+		verify(snippet).setType((byte) 0x03);
 	}
 
 }

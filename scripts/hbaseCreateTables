@@ -1,7 +1,7 @@
 create 'project2version', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'version2file', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'file2function', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'function2fact', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'function2snippet', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'strings', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'snippet2function', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'function2roughclones', {NAME => 'd', COMPRESSION => 'SNAPPY'}

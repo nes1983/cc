@@ -17,7 +17,7 @@ import com.google.inject.assistedinject.Assisted;
 
 public class Function extends Column {
 	private static final byte[] FUNCTION_SNIPPET = Bytes.toBytes("fs");
-	final private List<HashFact> hashFacts;
+	final private List<Snippet> snippets;
 	final private int baseLine;
 	final transient CharSequence contents;
 	private byte[] hash = null;
@@ -33,7 +33,7 @@ public class Function extends Column {
 	 * "standardHasher" from the provided function.
 	 */
 	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted CharSequence contents) {
-		this.hashFacts = new ArrayList<HashFact>();
+		this.snippets = new ArrayList<Snippet>();
 		this.hasher = hasher;
 		this.baseLine = baseLine;
 		this.contents = contents;
@@ -67,12 +67,12 @@ public class Function extends Column {
 		return contents.toString();
 	}
 
-	public void addHashFact(HashFact hashFact) {
-		this.hashFacts.add(hashFact);
+	public void addSnippet(Snippet snippet) {
+		this.snippets.add(snippet);
 	}
 
-	public List<HashFact> getHashFacts() {
-		return this.hashFacts;
+	public List<Snippet> getSnippets() {
+		return this.snippets;
 	}
 
 	public void saveSnippet(Put put) {

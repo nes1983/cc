@@ -41,7 +41,7 @@ public class MakeSnippet2Function implements Runnable {
 	}
 
 	public static class MakeSnippet2FunctionMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
-		/** receives rows from htable function2fact */
+		/** receives rows from htable function2snippet */
 		@SuppressWarnings("unchecked")
 		// super class uses unchecked types
 		@Override
@@ -56,11 +56,10 @@ public class MakeSnippet2Function implements Runnable {
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Column.FAMILY_NAME);
 
 			for (Entry<byte[], byte[]> column : familyMap.entrySet()) {
-				byte[] factHash = column.getKey();
+				byte[] snippet = column.getKey();
 				byte[] functionHashPlusLocation = Bytes.add(functionHash, column.getValue());
-				logger.debug("fact " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6) + " found");
-				context.write(new ImmutableBytesWritable(factHash),
-						new ImmutableBytesWritable(functionHashPlusLocation));
+				logger.debug("snippet " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6) + " found");
+				context.write(new ImmutableBytesWritable(snippet), new ImmutableBytesWritable(functionHashPlusLocation));
 			}
 		}
 	}
@@ -76,15 +75,15 @@ public class MakeSnippet2Function implements Runnable {
 		}
 
 		@Override
-		public void reduce(ImmutableBytesWritable factHashKey,
+		public void reduce(ImmutableBytesWritable snippetKey,
 				Iterable<ImmutableBytesWritable> functionHashesPlusLocations, Context context) throws IOException,
 				InterruptedException {
-			byte[] factHash = factHashKey.get();
+			byte[] snippet = snippetKey.get();
 			Iterator<ImmutableBytesWritable> i = functionHashesPlusLocations.iterator();
 
-			logger.debug("reduce " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6));
+			logger.debug("reduce " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
 
-			Put put = putFactory.create(factHash);
+			Put put = putFactory.create(snippet);
 			int functionCount = 0;
 
 			while (i.hasNext()) {
@@ -102,8 +101,8 @@ public class MakeSnippet2Function implements Runnable {
 				// TODO
 				// check whether context.write(factHashKey, put) or
 				// write(put) is faster
-				logger.debug("save " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6));
-				context.write(factHashKey, put);
+				logger.debug("save " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
+				context.write(snippetKey, put);
 			}
 		}
 	}
@@ -134,7 +133,7 @@ public class MakeSnippet2Function implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
 			mrWrapper.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
-					Optional.of("function2fact"), Optional.of("snippet2function"), scan,
+					Optional.of("function2snippet"), Optional.of("snippet2function"), scan,
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);

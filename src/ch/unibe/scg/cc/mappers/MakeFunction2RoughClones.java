@@ -67,12 +67,12 @@ public class MakeFunction2RoughClones implements Runnable {
 		public void map(ImmutableBytesWritable uselessKey, Result value,
 				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
-			byte[] factHash = value.getRow();
-			assert factHash.length == 20;
+			byte[] snippet = value.getRow();
+			assert snippet.length == 20;
 
-			logger.debug("map fact " + ByteUtils.bytesToHex(factHash));
+			logger.debug("map snippet " + ByteUtils.bytesToHex(snippet));
 
-			// factHash = new byte[] {}; // dummy to save space
+			// snippetHash = new byte[] {}; // dummy to save space
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
 			if (familyMap.size() > 1000) {
@@ -80,7 +80,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			}
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterator<Entry<byte[], byte[]>> columnIterator = columns.iterator();
-			// cross product of the columns of the factHash
+			// cross product of the columns of the snippetHash
 			while (columnIterator.hasNext()) {
 				Entry<byte[], byte[]> columnFixed = columnIterator.next();
 				byte[] function = columnFixed.getKey();
@@ -90,11 +90,11 @@ public class MakeFunction2RoughClones implements Runnable {
 						continue;
 					}
 
-					byte[] factHashLocation = columnVar.getValue();
+					byte[] snippetLocation = columnVar.getValue();
 					FunctionLocation loc = FunctionLocation.newBuilder().setFunction(ByteString.copyFrom(function))
 							.setRowFunctionLocation(ByteString.copyFrom(rowFunctionLocation))
-							.setFactHash(ByteString.copyFrom(factHash))
-							.setFactHashLocation(ByteString.copyFrom(factHashLocation)).build();
+							.setSnippet(ByteString.copyFrom(snippet))
+							.setSnippetLocation(ByteString.copyFrom(snippetLocation)).build();
 					context.write(new ImmutableBytesWritable(function), new ImmutableBytesWritable(loc.toByteArray()));
 				}
 			}
@@ -116,22 +116,22 @@ public class MakeFunction2RoughClones implements Runnable {
 
 		@Override
 		public void reduce(ImmutableBytesWritable functionHashKey,
-				Iterable<ImmutableBytesWritable> factHashPlusLocationValues, Context context) throws IOException,
+				Iterable<ImmutableBytesWritable> snippetPlusLocationValues, Context context) throws IOException,
 				InterruptedException {
-			Iterator<ImmutableBytesWritable> itFactHashPlusLocation = factHashPlusLocationValues.iterator();
+			Iterator<ImmutableBytesWritable> itSnippetPlusLocation = snippetPlusLocationValues.iterator();
 
 			byte[] functionHash = functionHashKey.get();
 			logger.info("reduce " + ByteUtils.bytesToHex(functionHash));
 
 			Put put = putFactory.create(functionHash);
 
-			while (itFactHashPlusLocation.hasNext()) {
-				FunctionLocation fl = FunctionLocation.parseFrom(itFactHashPlusLocation.next().get());
+			while (itSnippetPlusLocation.hasNext()) {
+				FunctionLocation fl = FunctionLocation.parseFrom(itSnippetPlusLocation.next().get());
 				// TODO columnName seems to be wrong (contains the same
 				// functionHash as the rowkey)
 				byte[] columnName = Bytes
 						.add(fl.getFunction().toByteArray(), fl.getRowFunctionLocation().toByteArray());
-				byte[] columnValue = Bytes.add(fl.getFactHash().toByteArray(), fl.getFactHashLocation().toByteArray());
+				byte[] columnValue = Bytes.add(fl.getSnippet().toByteArray(), fl.getSnippetLocation().toByteArray());
 				put.add(GuiceResource.FAMILY, columnName, 0l, columnValue);
 			}
 			context.write(functionHashKey, put);

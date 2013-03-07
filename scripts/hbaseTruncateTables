@@ -1,6 +1,6 @@
 truncate 'project2version'
 truncate 'version2file'
 truncate 'file2function'
-truncate 'function2fact'
+truncate 'function2snippet'
 truncate 'strings'
 exit

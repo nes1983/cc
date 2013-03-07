@@ -37,7 +37,7 @@ import com.google.inject.Injector;
  * this:
  * <p>
  * {@code 
- * hadoop jar /tmp/cc.jar ch.unibe.scg.cc.mappers.IndexFacts2Files
+ * hadoop jar /tmp/cc.jar ch.unibe.scg.cc.mappers.MakeSnippet2Function
  * }
  * <p>
  * Provides generic Mappers and Reducers that will create the real
