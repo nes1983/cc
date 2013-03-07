@@ -19,21 +19,15 @@ public class HBaseModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		installHTable("versions");
-		installHTable("files");
-		installHTable("functions");
-		installHTable("facts");
+		installHTable("project2version");
+		installHTable("version2file");
+		installHTable("file2function");
+		installHTable("function2fact");
 		installHTable("strings");
 
-		installHTable("indexFacts2Functions");
-		installHTable("indexFacts2FunctionsStep2");
-
-		installHTable("indexVersions2Projects");
-		installHTable("indexFiles2Versions");
-		installHTable("indexFunctions2Files");
-		installHTable("indexHashfacts2Functions");
-
-		installHTable("indexFactToProject");
+		installHTable("snippet2function");
+		installHTable("function2roughclones");
+		installHTable("function2fineclones");
 
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));

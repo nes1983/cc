@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -21,6 +23,7 @@ public class HBaseTest {
 	public static final String HBASE_CONFIGURATION_ZOOKEEPER_CLIENTPORT = "hbase.zookeeper.property.clientPort";
 
 	@Test
+	@Before
 	public void createTable() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 		HBaseConfiguration conf = i.getInstance(HBaseConfiguration.class);
@@ -33,6 +36,7 @@ public class HBaseTest {
 	}
 
 	@Test
+	@After
 	public void deleteTable() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 		HBaseConfiguration conf = i.getInstance(HBaseConfiguration.class);

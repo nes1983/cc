@@ -1,6 +1,6 @@
-truncate 'versions'
-truncate 'files'
-truncate 'functions'
-truncate 'facts'
+truncate 'project2version'
+truncate 'version2file'
+truncate 'file2function'
+truncate 'function2fact'
 truncate 'strings'
 exit

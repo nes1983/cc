@@ -32,14 +32,14 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
 
-public class IndexFacts2FunctionsStep2 implements Runnable {
-	static Logger logger = Logger.getLogger(IndexFacts2FunctionsStep2.class);
-	final HTable indexFacts2FunctionsStep2;
+public class MakeFunction2RoughClones implements Runnable {
+	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class);
+	final HTable function2roughclones;
 	final MRWrapper mrWrapper;
 
 	@Inject
-	IndexFacts2FunctionsStep2(@Named("indexFacts2FunctionsStep2") HTable indexFacts2FilesStep2, MRWrapper mrWrapper) {
-		this.indexFacts2FunctionsStep2 = indexFacts2FilesStep2;
+	MakeFunction2RoughClones(@Named("function2roughclones") HTable function2roughclones, MRWrapper mrWrapper) {
+		this.function2roughclones = function2roughclones;
 		this.mrWrapper = mrWrapper;
 	}
 
@@ -47,21 +47,21 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 	 * INPUT:<br>
 	 * 
 	 * <pre>
-	 * FAC1 --> { [F1|2] , [F2|3] , [F3|8] }
-	 * FAC2 --> { [F1|3] , [F3|9] }
+	 * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
+	 * FAC2 --> { [FUN1|3] , [FUN3|9] }
 	 * </pre>
 	 * 
 	 * OUTPUT:<br>
 	 * 
 	 * <pre>
-	 * F1 --> { [F2,2|FAC1,3], [F3,2|FAC1,8], [F3,3|FAC2,9] }
-	 * F2 --> { [F1,3|FAC1,2], [F3,3|FAC1,8] }
-	 * F3 --> { [F1,8|FAC1,2], [F1,9|FAC2,9], [F2,8|FAC1,3] }
+	 * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
+	 * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
+	 * FUN3 --> { [FUN1,8|FAC1,2], [FUN1,9|FAC2,9], [FUN2,8|FAC1,3] }
 	 * </pre>
 	 */
-	public static class IndexFacts2FunctionsStep2Mapper extends
+	public static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		/** receives rows from htable indexFacts2Functions */
+		/** receives rows from htable snippet2function */
 		@SuppressWarnings("unchecked")
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
@@ -101,15 +101,15 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 		}
 	}
 
-	public static class IndexFacts2FunctionsStep2Reducer extends
+	public static class MakeFunction2RoughClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final IPutFactory putFactory;
 		final HashSerializer hashSerializer;
 
 		@Inject
-		public IndexFacts2FunctionsStep2Reducer(@Named("indexFacts2FunctionsStep2") HTable indexFacts2FunctionsStep2,
+		public MakeFunction2RoughClonesReducer(@Named("function2roughclones") HTable function2roughclones,
 				IPutFactory putFactory, HashSerializer hashSerializer) {
-			super(indexFacts2FunctionsStep2);
+			super(function2roughclones);
 			this.putFactory = putFactory;
 			this.hashSerializer = hashSerializer;
 		}
@@ -127,6 +127,8 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 
 			while (itFactHashPlusLocation.hasNext()) {
 				FunctionLocation fl = FunctionLocation.parseFrom(itFactHashPlusLocation.next().get());
+				// TODO columnName seems to be wrong (contains the same
+				// functionHash as the rowkey)
 				byte[] columnName = Bytes
 						.add(fl.getFunction().toByteArray(), fl.getRowFunctionLocation().toByteArray());
 				byte[] columnValue = Bytes.add(fl.getFactHash().toByteArray(), fl.getFactHashLocation().toByteArray());
@@ -139,7 +141,7 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 	@Override
 	public void run() {
 		try {
-			mrWrapper.truncate(indexFacts2FunctionsStep2);
+			mrWrapper.truncate(function2roughclones);
 
 			Scan scan = new Scan();
 			scan.setCaching(100); // TODO play with this. (100 is default value)
@@ -164,13 +166,13 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
-			mrWrapper.launchMapReduceJob(IndexFacts2FunctionsStep2.class.getName() + "Job", config,
-					Optional.of("indexFacts2Functions"), Optional.of("indexFacts2FunctionsStep2"), scan,
-					IndexFacts2FunctionsStep2Mapper.class.getName(),
-					Optional.of(IndexFacts2FunctionsStep2Reducer.class.getName()), ImmutableBytesWritable.class,
+			mrWrapper.launchMapReduceJob(MakeFunction2RoughClones.class.getName() + "Job", config,
+					Optional.of("snippet2function"), Optional.of("function2roughclones"), scan,
+					MakeFunction2RoughClonesMapper.class.getName(),
+					Optional.of(MakeFunction2RoughClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 
-			indexFacts2FunctionsStep2.flushCommits();
+			function2roughclones.flushCommits();
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
@@ -180,7 +182,7 @@ public class IndexFacts2FunctionsStep2 implements Runnable {
 		}
 	}
 
-	public static class IndexFacts2FunctionsStep2Test {
+	public static class MakeFunction2RoughClonesTest {
 		@Test
 		@Ignore
 		public void testIndex() {

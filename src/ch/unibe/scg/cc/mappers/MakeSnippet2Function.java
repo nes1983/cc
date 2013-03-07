@@ -29,19 +29,19 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 
-public class IndexFacts2Functions implements Runnable {
-	static Logger logger = Logger.getLogger(IndexFacts2Functions.class);
-	final HTable indexFacts2Functions;
+public class MakeSnippet2Function implements Runnable {
+	static Logger logger = Logger.getLogger(MakeSnippet2Function.class);
+	final HTable snippet2Function;
 	final MRWrapper mrWrapper;
 
 	@Inject
-	IndexFacts2Functions(@Named("indexFacts2Functions") HTable indexFacts2Files, MRWrapper mrWrapper) {
-		this.indexFacts2Functions = indexFacts2Files;
+	MakeSnippet2Function(@Named("snippet2function") HTable snippet2Function, MRWrapper mrWrapper) {
+		this.snippet2Function = snippet2Function;
 		this.mrWrapper = mrWrapper;
 	}
 
-	public static class IndexFacts2FunctionsMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
-		/** receives rows from htable facts */
+	public static class MakeSnippet2FunctionMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
+		/** receives rows from htable function2fact */
 		@SuppressWarnings("unchecked")
 		// super class uses unchecked types
 		@Override
@@ -51,28 +51,27 @@ public class IndexFacts2Functions implements Runnable {
 			byte[] functionHash = functionHashKey.get();
 			assert functionHash.length == 20;
 
-			logger.debug("map " + ByteUtils.bytesToHex(functionHash));
+			logger.debug("map " + ByteUtils.bytesToHex(functionHash).toLowerCase().substring(0, 4));
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Column.FAMILY_NAME);
 
 			for (Entry<byte[], byte[]> column : familyMap.entrySet()) {
 				byte[] factHash = column.getKey();
 				byte[] functionHashPlusLocation = Bytes.add(functionHash, column.getValue());
-				logger.debug("fact " + ByteUtils.bytesToHex(factHash) + " found");
+				logger.debug("fact " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6) + " found");
 				context.write(new ImmutableBytesWritable(factHash),
 						new ImmutableBytesWritable(functionHashPlusLocation));
 			}
 		}
 	}
 
-	public static class IndexFacts2FunctionsReducer extends
+	public static class MakeSnippet2FunctionReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final IPutFactory putFactory;
 
 		@Inject
-		public IndexFacts2FunctionsReducer(@Named("indexFacts2Functions") HTable indexFacts2Functions,
-				IPutFactory putFactory) {
-			super(indexFacts2Functions);
+		public MakeSnippet2FunctionReducer(@Named("snippet2function") HTable snippet2Function, IPutFactory putFactory) {
+			super(snippet2Function);
 			this.putFactory = putFactory;
 		}
 
@@ -83,7 +82,7 @@ public class IndexFacts2Functions implements Runnable {
 			byte[] factHash = factHashKey.get();
 			Iterator<ImmutableBytesWritable> i = functionHashesPlusLocations.iterator();
 
-			logger.debug("reduce " + ByteUtils.bytesToHex(factHash));
+			logger.debug("reduce " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6));
 
 			Put put = putFactory.create(factHash);
 			int functionCount = 0;
@@ -103,6 +102,7 @@ public class IndexFacts2Functions implements Runnable {
 				// TODO
 				// check whether context.write(factHashKey, put) or
 				// write(put) is faster
+				logger.debug("save " + ByteUtils.bytesToHex(factHash).toLowerCase().substring(0, 6));
 				context.write(factHashKey, put);
 			}
 		}
@@ -111,7 +111,7 @@ public class IndexFacts2Functions implements Runnable {
 	@Override
 	public void run() {
 		try {
-			mrWrapper.truncate(indexFacts2Functions);
+			mrWrapper.truncate(snippet2Function);
 
 			Scan scan = new Scan();
 			scan.setCaching(500); // TODO play with this. (100 is default value)
@@ -133,12 +133,13 @@ public class IndexFacts2Functions implements Runnable {
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
-			mrWrapper.launchMapReduceJob(IndexFacts2Functions.class.getName() + "Job", config, Optional.of("facts"),
-					Optional.of("indexFacts2Functions"), scan, IndexFacts2FunctionsMapper.class.getName(),
-					Optional.of(IndexFacts2FunctionsReducer.class.getName()), ImmutableBytesWritable.class,
+			mrWrapper.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
+					Optional.of("function2fact"), Optional.of("snippet2function"), scan,
+					MakeSnippet2FunctionMapper.class.getName(),
+					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 
-			indexFacts2Functions.flushCommits();
+			snippet2Function.flushCommits();
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
@@ -148,7 +149,7 @@ public class IndexFacts2Functions implements Runnable {
 		}
 	}
 
-	public static class IndexFacts2FunctionsTest {
+	public static class MakeSnippet2FunctionTest {
 		@Test
 		@Ignore
 		public void testIndex() {

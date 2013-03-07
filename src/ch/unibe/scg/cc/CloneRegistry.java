@@ -25,10 +25,10 @@ import com.google.inject.Inject;
 @Singleton
 public class CloneRegistry {
 
-	public static final int TABLE_VERSIONS = 1;
-	public static final int TABLE_FUNCTIONS = 2;
-	public static final int TABLE_FACTS = 3;
-	public static final int TABLE_FILES = 4;
+	public static final int TABLE_PROJECT2VERSION = 1;
+	public static final int TABLE_FILE2FUNCTION = 2;
+	public static final int TABLE_FUNCTION2FACT = 3;
+	public static final int TABLE_VERSION2FILE = 4;
 	public static final int TABLE_STRINGS = 5;
 
 	final Provider<HashFact> hashFactProvider;
@@ -36,20 +36,20 @@ public class CloneRegistry {
 	final Provider<Location> locationProvider;
 
 	@Inject(optional = true)
-	@Named("versions")
-	HTable versions;
+	@Named("project2version")
+	HTable project2version;
 
 	@Inject(optional = true)
-	@Named("files")
-	HTable files;
+	@Named("version2file")
+	HTable version2file;
 
 	@Inject(optional = true)
-	@Named("functions")
-	HTable functions;
+	@Named("file2function")
+	HTable file2function;
 
 	@Inject(optional = true)
-	@Named("facts")
-	HTable facts;
+	@Named("function2fact")
+	HTable function2fact;
 
 	@Inject(optional = true)
 	@Named("strings")
@@ -96,7 +96,7 @@ public class CloneRegistry {
 	}
 
 	public boolean lookupCodeFile(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_FUNCTIONS);
+		HTable t = getTable(CloneRegistry.TABLE_FILE2FUNCTION);
 		assert t != null;
 		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
 		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
@@ -110,7 +110,7 @@ public class CloneRegistry {
 	}
 
 	public boolean lookupVersion(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_FILES);
+		HTable t = getTable(CloneRegistry.TABLE_VERSION2FILE);
 		assert t != null;
 		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
@@ -126,7 +126,7 @@ public class CloneRegistry {
 	}
 
 	public boolean lookupProject(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_VERSIONS);
+		HTable t = getTable(CloneRegistry.TABLE_PROJECT2VERSION);
 		assert t != null;
 		Scan s = new Scan(key, key);
 		try {
@@ -138,14 +138,14 @@ public class CloneRegistry {
 
 	private HTable getTable(int table) {
 		switch (table) {
-		case TABLE_VERSIONS:
-			return versions;
-		case TABLE_FUNCTIONS:
-			return functions;
-		case TABLE_FACTS:
-			return facts;
-		case TABLE_FILES:
-			return files;
+		case TABLE_PROJECT2VERSION:
+			return project2version;
+		case TABLE_FILE2FUNCTION:
+			return file2function;
+		case TABLE_FUNCTION2FACT:
+			return function2fact;
+		case TABLE_VERSION2FILE:
+			return version2file;
 		case TABLE_STRINGS:
 			return strings;
 		default:
@@ -161,7 +161,7 @@ public class CloneRegistry {
 			try {
 				// save function
 				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
-				functions.put(put);
+				file2function.put(put);
 
 				// save snippet
 				Put fnSnippet = new Put(function.getHash());
@@ -182,7 +182,7 @@ public class CloneRegistry {
 		Put put = new Put(project.getHash());
 		try {
 			project.save(put);
-			versions.put(put);
+			project2version.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -197,7 +197,7 @@ public class CloneRegistry {
 		Put put = new Put(version.getHash());
 		try {
 			version.save(put);
-			files.put(put);
+			version2file.put(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -212,7 +212,7 @@ public class CloneRegistry {
 			try {
 				// save hashfact
 				hashFact.save(put);
-				facts.put(put);
+				function2fact.put(put);
 
 				// save snippet
 				hashFact.saveSnippet(hfSnippet);

@@ -28,12 +28,12 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 
-public class Histogram implements Runnable {
+public class MakeHistogram implements Runnable {
 	static final String OUT_DIR = "/tmp/histogram";
 	final MRWrapper hbaseWrapper;
 
 	@Inject
-	Histogram(MRWrapper hbaseWrapper) {
+	MakeHistogram(MRWrapper hbaseWrapper) {
 		this.hbaseWrapper = hbaseWrapper;
 	}
 
@@ -52,8 +52,8 @@ public class Histogram implements Runnable {
 	 * 2 --> 1
 	 * </pre>
 	 */
-	public static class HistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
-		/** receives rows from htable indexFacts2Functions */
+	public static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
+		/** receives rows from htable snippet2function */
 		@SuppressWarnings("unchecked")
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
@@ -64,7 +64,7 @@ public class Histogram implements Runnable {
 		}
 	}
 
-	public static class HistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
+	public static class MakeHistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
 		@Override
 		public void reduce(IntWritable columnCount, Iterable<LongWritable> values, Context context) throws IOException,
 				InterruptedException {
@@ -104,12 +104,11 @@ public class Histogram implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.COMBINE_CLASS_ATTR, HistogramReducer.class, Reducer.class);
+			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 
-			hbaseWrapper.launchMapReduceJob(Histogram.class.getName() + " Job", config,
-					Optional.of("indexFacts2Functions"), Optional.<String> absent(), scan,
-					HistogramMapper.class.getName(), Optional.of(HistogramReducer.class.getName()), IntWritable.class,
-					LongWritable.class);
+			hbaseWrapper.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,
+					Optional.of("snippet2function"), Optional.<String> absent(), scan, MakeHistogramMapper.class.getName(),
+					Optional.of(MakeHistogramReducer.class.getName()), IntWritable.class, LongWritable.class);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (ClassNotFoundException e) {
@@ -120,7 +119,7 @@ public class Histogram implements Runnable {
 		}
 	}
 
-	public static class IndexFacts2FunctionsStep2Test {
+	public static class MakeHistogramTest {
 		@Test
 		@Ignore
 		public void testIndex() {

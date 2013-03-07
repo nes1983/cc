@@ -58,7 +58,7 @@ import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
-import ch.unibe.scg.cc.mappers.Histogram.HistogramReducer;
+import ch.unibe.scg.cc.mappers.MakeHistogram.MakeHistogramReducer;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
@@ -98,7 +98,7 @@ public class GitTablePopulator implements Runnable {
 			config.set(MRJobConfig.MAP_JAVA_OPTS, MAPRED_CHILD_JAVA_OPTS);
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.COMBINE_CLASS_ATTR, HistogramReducer.class, Reducer.class);
+			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 
@@ -152,16 +152,16 @@ public class GitTablePopulator implements Runnable {
 		private static final int MAX_TAGS_TO_PARSE = 15;
 
 		@Inject
-		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
-				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
-				@Named("strings") HTable strings, RealProjectFactory projectFactory, RealVersionFactory versionFactory,
-				CharsetDetector charsetDetector) {
+		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
+				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
+				@Named("function2fact") HTable function2fact, @Named("strings") HTable strings,
+				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
-			this.versions = versions;
-			this.files = files;
-			this.functions = functions;
-			this.facts = facts;
+			this.project2version = project2version;
+			this.version2file = version2file;
+			this.file2function = file2function;
+			this.function2fact = function2fact;
 			this.strings = strings;
 			this.projectFactory = projectFactory;
 			this.versionFactory = versionFactory;
@@ -169,7 +169,7 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		final Frontend javaFrontend;
-		final HTable versions, files, functions, facts, strings;
+		final HTable project2version, version2file, file2function, function2fact, strings;
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -294,10 +294,10 @@ public class GitTablePopulator implements Runnable {
 		@Override
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
-			versions.flushCommits();
-			files.flushCommits();
-			functions.flushCommits();
-			facts.flushCommits();
+			project2version.flushCommits();
+			version2file.flushCommits();
+			file2function.flushCommits();
+			function2fact.flushCommits();
 			strings.flushCommits();
 		}
 	}

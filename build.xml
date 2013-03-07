@@ -96,56 +96,30 @@
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.JGitTest" />
 		</antcall>
 	</target>
-	<target name="populateDatabase">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.TablePopulator" />
-		</antcall>
-	</target>
 	<target name="gitPopulateDatabase">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
 	</target>
-	<target name="histogram">
+	<target name="makeHistogram">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.Histogram" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeHistogram" />
 		</antcall>
 	</target>
-	<target name="indexFacts2Functions">
+	<target name="makeSnippet2Function">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2Functions" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeSnippet2Function" />
 		</antcall>
 	</target>
-	<target name="indexFacts2FunctionsStep2">
+	<target name="makeFunction2RoughClones">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFacts2FunctionsStep2" />
-		</antcall>
-	</target>
-	<target name="indexVersions2Projects">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexVersions2Projects" />
-		</antcall>
-	</target>
-	<target name="indexFiles2Versions">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFiles2Versions" />
-		</antcall>
-	</target>
-	<target name="indexFunctions2Files">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexFunctions2Files" />
-		</antcall>
-	</target>
-	<target name="indexHashfacts2Functions">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.IndexHashfacts2Functions" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones" />
 		</antcall>
 	</target>
 	<target name="indexAllTables">
-		<antcall target="indexVersions2Projects" />
-		<antcall target="indexFiles2Versions" />
-		<antcall target="indexFunctions2Files" />
-		<antcall target="indexHashfacts2Functions" />
+		<antcall target="makeSnippet2Function" />
+		<antcall target="makeFunction2RoughClones" />
+		<!-- TODO add makeFunction2FineClones -->
 	</target>
 	<target name="executeJar" depends="jar">
 		<java jar="cc.jar" fork="true"/>
