@@ -502,6 +502,9 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -523,15 +526,7 @@ Layout of an HBase row
 status open
 
 \begin_layout Plain Layout
-How does the figure connect? Also, put figures and tables into floats (
-\begin_inset Quotes eld
-\end_inset
-
-Gleitobjekt
-\begin_inset Quotes erd
-\end_inset
-
- in German lyx).
+How does the figure connect?
 \end_layout
 
 \end_inset
@@ -577,19 +572,19 @@ Population phase tables
 
 \begin_deeper
 \begin_layout Itemize
-versions
+project2version
 \end_layout
 
 \begin_layout Itemize
-files
+version2file
 \end_layout
 
 \begin_layout Itemize
-functions
+file2function
 \end_layout
 
 \begin_layout Itemize
-facts
+function2fact
 \end_layout
 
 \end_deeper
@@ -599,11 +594,15 @@ Clone escalation phase tables
 
 \begin_deeper
 \begin_layout Itemize
-indexFacts2Functions
+snippet2function
 \end_layout
 
 \begin_layout Itemize
-indexFacts2FunctionsStep2
+function2roughclones
+\end_layout
+
+\begin_layout Itemize
+function2fineclones
 \end_layout
 
 \end_deeper
@@ -614,10 +613,6 @@ Special tables
 \begin_deeper
 \begin_layout Itemize
 strings
-\end_layout
-
-\begin_layout Itemize
-hashfactContent
 \end_layout
 
 \end_deeper
@@ -741,6 +736,37 @@ Algorithm
 \begin_layout Standard
 In this section we will demonstrate the complete working of the algorithm
  in detail using an example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename algorithmpipeline.pdf
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The pipeline architecture of our algorithm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1055,7 +1081,11 @@ The hashfacts of the two functions.
 \end_layout
 
 \begin_layout Standard
-These hashfacts are now inserted in the facts table:
+These hashfacts are now inserted in the 
+\shape italic
+function2fact
+\shape default
+ table:
 \end_layout
 
 \begin_layout Standard
@@ -1071,7 +1101,7 @@ status open
 \begin_layout Plain Layout
 Type-1 hashfacts to be inserted in the 
 \shape italic
-facts
+function2fact
 \shape default
  table.
 \end_layout
@@ -1135,7 +1165,11 @@ The type-2 normalized function.
 \end_layout
 
 \begin_layout Standard
-These hashfacts are now inserted in the facts table:
+These hashfacts are now inserted in the 
+\shape italic
+function2fact
+\shape default
+ table:
 \end_layout
 
 \begin_layout Standard
@@ -1151,7 +1185,7 @@ status open
 \begin_layout Plain Layout
 Type-2 hashfacts to be inserted in the 
 \shape italic
-facts
+function2fact
 \shape default
  table.
 \end_layout
@@ -1214,7 +1248,11 @@ The type-3 normalized shingles with their hashes.
 \end_layout
 
 \begin_layout Standard
-These hashfacts are now inserted in the facts table:
+These hashfacts are now inserted in the 
+\shape italic
+function2fact
+\shape default
+ table:
 \end_layout
 
 \begin_layout Standard
@@ -1230,7 +1268,7 @@ status open
 \begin_layout Plain Layout
 Type-3 hashfacts to be inserted in the 
 \shape italic
-facts
+function2fact
 \shape default
  table.
 \end_layout
@@ -1272,7 +1310,11 @@ TODO: Wie oft wird diese Annahme verletzt?
 
 .
  We do also know the file and all its functions.
- This information now gets stored, the complete facts table looks like follows.
+ This information now gets stored, the complete 
+\shape italic
+function2fact
+\shape default
+ table looks like follows.
 \end_layout
 
 \begin_layout Standard
@@ -1288,7 +1330,7 @@ status open
 \begin_layout Plain Layout
 The 
 \shape italic
-facts
+function2fact
 \shape default
  table.
 \end_layout
@@ -1316,7 +1358,11 @@ The two functions (one of class Apple, one of class Pear) result in three
  As the type-1 normalized function is different for the two classes, the
  hasher generates two different hashes whereas the type-2 and type-3 normalized
  functions equal in both classes and therefore produce the same hash.
- The functions table now looks as follows.
+ The 
+\shape italic
+file2function
+\shape default
+ table now looks as follows.
 \end_layout
 
 \begin_layout Standard
@@ -1332,7 +1378,7 @@ status open
 \begin_layout Plain Layout
 The 
 \shape italic
-functions
+file2function
 \shape default
  table.
 \end_layout
@@ -1361,7 +1407,7 @@ Processing file path
 \begin_layout Standard
 In the next step the table 
 \shape italic
-files
+version2file
 \shape default
  gets a new entry with the filepath-hash and the file-hash get stored together
  with the version-hash.
@@ -1380,7 +1426,7 @@ status open
 \begin_layout Plain Layout
 The 
 \shape italic
-files
+version2file
 \shape default
  table.
 \end_layout
@@ -1409,7 +1455,7 @@ Processing version tag
 \begin_layout Standard
 In the table 
 \shape italic
-versions
+project2version
 \shape default
  the version-hash and the tag get stored together with the project-hash.
 \end_layout
@@ -1427,7 +1473,7 @@ status open
 \begin_layout Plain Layout
 The 
 \shape italic
-versions
+project2version
 \shape default
  table.
 \end_layout
@@ -1493,7 +1539,7 @@ The
 \shape italic
 strings
 \shape default
- table.
+ table (incomplete).
 \end_layout
 
 \end_inset
@@ -1569,13 +1615,16 @@ Cloned hashfacts
 \end_layout
 
 \begin_layout Subsubsection
-Index generation step 1
+MakeSnippet2Function
 \end_layout
 
 \begin_layout Standard
 In the first index generation phase we invert the mapping functions -> facts.
- As input for the mapper we get all entries of the facts table (see figure
- tablefactsall.pdf 
+ As input for the mapper we get all entries of the 
+\shape italic
+function2fact
+\shape default
+ table (see figure tablefactsall.pdf 
 \begin_inset Note Note
 status open
 
@@ -1631,7 +1680,7 @@ In the reduce function we omit all hashfacts which only appear in one single
  function.
  All other hashfacts get stored in the table 
 \shape italic
-indexFacts2Functions
+snippet2function
 \shape default
 .
  This table now looks like this:
@@ -1648,7 +1697,11 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The table indexFacts2Functions after the reduce phase is completed.
+The table 
+\shape italic
+snippet2function
+\shape default
+ after the reduce phase is completed.
 \end_layout
 
 \end_inset
@@ -1669,7 +1722,7 @@ The table indexFacts2Functions after the reduce phase is completed.
 \end_layout
 
 \begin_layout Subsubsection
-Index generation step 2
+MakeFunction2RoughClones
 \end_layout
 
 \begin_layout Standard
@@ -1679,7 +1732,7 @@ In the second index generation phase we inverse the mapping once again.
  The input for the map function is the output of the reduce function from
  the first index generation step, namely the table 
 \shape italic
-indexFacts2Functions
+function2roughclones
 \shape default
 .
  We explain the the abstract procedure in the following paragraph:
@@ -1696,7 +1749,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The abstract input for the mapping phase in index generation step 2.
+The abstract input for the mapping phase in MakeFunction2RoughClones.
 \end_layout
 
 \end_inset
@@ -1722,7 +1775,7 @@ The abstract input for the mapping phase in index generation step 2.
 \begin_layout Standard
 Let's assume that this represents our content in the table 
 \shape italic
-indexFacts2Functions
+function2roughclones
 \shape default
 .
  The first mapper gets the row with the row-key fac1.
@@ -1759,7 +1812,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The abstract output after the reduce phase in index generation step 2.
+The abstract output after the reduce phase in MakeFunction2RoughClones.
 \end_layout
 
 \end_inset
@@ -1786,7 +1839,7 @@ The abstract output after the reduce phase in index generation step 2.
 Now we apply the same algorithm to our real data.
  The mapper input is the data stored in table 
 \shape italic
-indexFacts2Functions.
+function2roughclones.
 \end_layout
 
 \begin_layout Standard
@@ -1800,7 +1853,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The output after the reduce phase in index generation step 2.
+The output after the reduce phase in MakeFunction2RoughClones.
 \end_layout
 
 \end_inset
@@ -1827,7 +1880,7 @@ TODO: Insert correct figure with
 \end_layout
 
 \begin_layout Subsubsection
-Clone escalation
+MakeFunction2FineClones
 \end_layout
 
 \begin_layout Section
