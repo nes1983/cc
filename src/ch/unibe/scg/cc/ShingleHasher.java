@@ -5,10 +5,6 @@ import java.security.MessageDigest;
 import java.util.ArrayList;
 
 import javax.inject.Inject;
-import javax.management.RuntimeErrorException;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
@@ -64,29 +60,46 @@ public class ShingleHasher implements Hasher {
 	 * Use a quarter of all hashes.
 	 */
 	byte[] sketchFromHashedShingles(byte[][] hashedShingles) {
-		byte[] hash = new byte[SHA1_LENGTH];
-		for (byte[] each : hashedShingles) {
-			if ((each[0] & 0x3) != 0x3) {
-				continue;
+		final byte[] hash = new byte[SHA1_LENGTH];
+		int mask = 0x3;
+		do {
+			for (final byte[] each : hashedShingles) {
+				if ((each[0] & mask) != mask) {
+					continue;
+				}
+				xor(hash, each);
 			}
-			xor(hash, each);
-		}
-		return hash;
+			if (!isZero(hash)) {
+				return hash;
+			}
+			mask >>= 1;
+		} while (mask != 0);
+		throw new AssertionError("After mask was 0, there must be a hash.");
 	}
 
 	public byte[] hash(String doc) throws CannotBeHashedException {
-		String[] shingles = shingles(doc);
-		byte[][] hashedShingles = hashedShingles(shingles);
+		final String[] shingles = shingles(doc);
+		final byte[][] hashedShingles = hashedShingles(shingles);
 		return sketchFromHashedShingles(hashedShingles);
 	}
 
 	/**
 	 * Performs hash = hash XOR otherHash. Changes hash in place.
 	 */
+	// TODO: compare performance with BitSet.
 	void xor(byte[] hash, byte[] otherHash) {
 		assert hash.length == SHA1_LENGTH;
 		for (int i = 0; i < hash.length; i++) {
 			hash[i] = (byte) (hash[i] ^ otherHash[i]);
 		}
+	}
+
+	boolean isZero(byte[] ary) {
+		for (final byte element : ary) {
+			if (element != 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
