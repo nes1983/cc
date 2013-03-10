@@ -14,3 +14,15 @@ message FunctionLocation {
 	optional bytes snippet = 3;
 	optional bytes snippet_location = 4;
 }
+
+/**
+ * functions are 20 bytes each
+ * snippet has a length of 21 bytes
+ */
+message SnippetMatch {
+	optional bytes thisFunction = 1;
+	optional int32 thisPosition = 2;
+	optional bytes thatFunction = 3;
+	optional int32 thatPosition = 4;
+	optional bytes snippet = 5;
+}
