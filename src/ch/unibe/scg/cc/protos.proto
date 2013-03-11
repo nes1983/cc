@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+package mappers;
+
+option java_package = "ch.unibe.scg.cc";
+
+message SnippetMatch {
+	optional SnippetLocation thisSnippetLocation = 1;
+	optional SnippetLocation thatSnippetLocation = 2;
+}
+
+message SnippetLocation {
+	// 20 bytes long.
+	optional bytes function = 1;
+	optional int32 position = 2;
+	// 21 bytes long.
+	optional bytes snippet = 3;
+	optional int32 length = 4;
+}
+
+message Clone {
+	optional bytes this_function = 1;
+	optional bytes that_function = 2;
+	optional int32 this_from_position = 3;
+	optional int32 that_from_position = 4;
+	optional int32 this_length = 5;
+	optional int32 that_length = 6;
+}
