@@ -3,4 +3,8 @@ truncate 'version2file'
 truncate 'file2function'
 truncate 'function2snippet'
 truncate 'strings'
+truncate 'snippet2function'
+truncate 'function2roughclones'
+truncate 'popularSnippets'
+truncate 'function2fineclones'
 exit

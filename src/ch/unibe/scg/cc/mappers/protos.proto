@@ -5,23 +5,20 @@ package mappers;
 option java_package = "ch.unibe.scg.cc.mappers";
 
 /**
- * a location contains: position (int 4 bytes) and line-length of snippet (int 4 bytes)
- * positions are always relative to the position of the function
+ * fill snippet and length only in thisSnippetLocation to save space!
  */
-message FunctionLocation {
-	optional bytes function = 1;
-	optional bytes row_function_location = 2;
-	optional bytes snippet = 3;
-	optional bytes snippet_location = 4;
+message SnippetMatch {
+	optional SnippetLocation thisSnippetLocation = 1;
+	optional SnippetLocation thatSnippetLocation = 2;
 }
 
 /**
  * function has a length of 20 bytes
  * snippet has a length of 21 bytes
  */
-message SnippetMatch {
-	optional int32 thisPosition = 1;
-	optional bytes thatFunction = 2;
-	optional int32 thatPosition = 3;
-	optional bytes snippet = 4;
+message SnippetLocation {
+	optional bytes function = 1;
+	optional int32 position = 2;
+	optional bytes snippet = 3;
+	optional int32 length = 4;
 }

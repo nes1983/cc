@@ -24,7 +24,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.mappers.Protos.FunctionLocation;
+import ch.unibe.scg.cc.mappers.Protos.SnippetLocation;
+import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
 import ch.unibe.scg.cc.util.ByteUtils;
 import ch.unibe.scg.cc.util.HashSerializer;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
@@ -32,6 +33,22 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
 
+/**
+ * INPUT:<br>
+ * 
+ * <pre>
+ * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
+ * FAC2 --> { [FUN1|3] , [FUN3|9] }
+ * </pre>
+ * 
+ * OUTPUT:<br>
+ * 
+ * <pre>
+ * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
+ * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
+ * FUN3 --> { [FUN1,8|FAC1,2], [FUN1,9|FAC2,9], [FUN2,8|FAC1,3] }
+ * </pre>
+ */
 public class MakeFunction2RoughClones implements Runnable {
 	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class);
 	final HTable function2roughclones;
@@ -43,24 +60,15 @@ public class MakeFunction2RoughClones implements Runnable {
 		this.mrWrapper = mrWrapper;
 	}
 
-	/**
-	 * INPUT:<br>
-	 * 
-	 * <pre>
-	 * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
-	 * FAC2 --> { [FUN1|3] , [FUN3|9] }
-	 * </pre>
-	 * 
-	 * OUTPUT:<br>
-	 * 
-	 * <pre>
-	 * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
-	 * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
-	 * FUN3 --> { [FUN1,8|FAC1,2], [FUN1,9|FAC2,9], [FUN2,8|FAC1,3] }
-	 * </pre>
-	 */
 	public static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
+
+		@Inject
+		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTable popularSnippets) {
+			super(popularSnippets);
+		}
+
 		/** receives rows from htable snippet2function */
 		@SuppressWarnings("unchecked")
 		@Override
@@ -68,34 +76,64 @@ public class MakeFunction2RoughClones implements Runnable {
 				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
 			byte[] snippet = value.getRow();
-			assert snippet.length == 20;
+			assert snippet.length == 21;
 
 			logger.debug("map snippet " + ByteUtils.bytesToHex(snippet));
 
 			// snippetHash = new byte[] {}; // dummy to save space
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
-			if (familyMap.size() > 1000) {
-				logger.warn("FAMILY MAP SIZE " + familyMap.size());
-			}
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterator<Entry<byte[], byte[]>> columnIterator = columns.iterator();
+
+			// special handling of popular snippets
+			if (familyMap.size() > POPULAR_SNIPPET_THRESHOLD) {
+				logger.warn("FAMILY MAP SIZE " + familyMap.size());
+				// fill popularSnippets table
+				while (columnIterator.hasNext()) {
+					Entry<byte[], byte[]> column = columnIterator.next();
+					byte[] function = column.getKey();
+					byte[] location = column.getValue();
+					Put put = new Put(function);
+					put.add(GuiceResource.FAMILY, snippet, 0l, location);
+					write(put);
+				}
+				// we're done, don't go any further!
+				return;
+			}
+
 			// cross product of the columns of the snippetHash
 			while (columnIterator.hasNext()) {
 				Entry<byte[], byte[]> columnFixed = columnIterator.next();
-				byte[] function = columnFixed.getKey();
-				byte[] rowFunctionLocation = columnFixed.getValue();
+				byte[] thisFunction = columnFixed.getKey();
+				byte[] thisLocation = columnFixed.getValue();
 				for (Entry<byte[], byte[]> columnVar : columns) {
 					if (columnFixed.equals(columnVar)) {
 						continue;
 					}
 
-					byte[] snippetLocation = columnVar.getValue();
-					FunctionLocation loc = FunctionLocation.newBuilder().setFunction(ByteString.copyFrom(function))
-							.setRowFunctionLocation(ByteString.copyFrom(rowFunctionLocation))
-							.setSnippet(ByteString.copyFrom(snippet))
-							.setSnippetLocation(ByteString.copyFrom(snippetLocation)).build();
-					context.write(new ImmutableBytesWritable(function), new ImmutableBytesWritable(loc.toByteArray()));
+					byte[] thatFunction = columnVar.getKey();
+					byte[] thatLocation = columnVar.getValue();
+
+					/*
+					 * REMARK 1: we don't set thisFunction because it gets
+					 * already passed to the reducer as key. REMARK 2: we don't
+					 * set thatSnippet because it gets already stored in
+					 * thisSnippet
+					 */
+					SnippetLocation thisSnippetLocation = SnippetLocation.newBuilder()
+							.setPosition(Bytes.toInt(Bytes.head(thisLocation, 4)))
+							.setLength(Bytes.toInt(Bytes.tail(thisLocation, 4)))
+							.setSnippet(ByteString.copyFrom(snippet)).build();
+					SnippetLocation thatSnippetLocation = SnippetLocation.newBuilder()
+							.setFunction(ByteString.copyFrom(thatFunction))
+							.setPosition(Bytes.toInt(Bytes.head(thatLocation, 4)))
+							.setLength(Bytes.toInt(Bytes.tail(thatLocation, 4))).build();
+					SnippetMatch snippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisSnippetLocation)
+							.setThatSnippetLocation(thatSnippetLocation).build();
+
+					context.write(new ImmutableBytesWritable(thisFunction),
+							new ImmutableBytesWritable(snippetMatch.toByteArray()));
 				}
 			}
 		}
@@ -115,23 +153,24 @@ public class MakeFunction2RoughClones implements Runnable {
 		}
 
 		@Override
-		public void reduce(ImmutableBytesWritable functionHashKey,
-				Iterable<ImmutableBytesWritable> snippetPlusLocationValues, Context context) throws IOException,
-				InterruptedException {
-			Iterator<ImmutableBytesWritable> itSnippetPlusLocation = snippetPlusLocationValues.iterator();
+		public void reduce(ImmutableBytesWritable functionHashKey, Iterable<ImmutableBytesWritable> snippetMatchValues,
+				Context context) throws IOException, InterruptedException {
+			Iterator<ImmutableBytesWritable> snippetMatchIterator = snippetMatchValues.iterator();
 
 			byte[] functionHash = functionHashKey.get();
 			logger.info("reduce " + ByteUtils.bytesToHex(functionHash));
 
 			Put put = putFactory.create(functionHash);
 
-			while (itSnippetPlusLocation.hasNext()) {
-				FunctionLocation fl = FunctionLocation.parseFrom(itSnippetPlusLocation.next().get());
-				// TODO columnName seems to be wrong (contains the same
-				// functionHash as the rowkey)
-				byte[] columnName = Bytes
-						.add(fl.getFunction().toByteArray(), fl.getRowFunctionLocation().toByteArray());
-				byte[] columnValue = Bytes.add(fl.getSnippet().toByteArray(), fl.getSnippetLocation().toByteArray());
+			while (snippetMatchIterator.hasNext()) {
+				SnippetMatch snippetMatch = SnippetMatch.parseFrom(snippetMatchIterator.next().get());
+				SnippetLocation thisSnippet = snippetMatch.getThisSnippetLocation();
+				SnippetLocation thatSnippet = snippetMatch.getThatSnippetLocation();
+
+				byte[] columnName = Bytes.add(thatSnippet.getFunction().toByteArray(),
+						Bytes.add(Bytes.toBytes(thisSnippet.getPosition()), Bytes.toBytes(thisSnippet.getLength())));
+				byte[] columnValue = Bytes.add(thisSnippet.getSnippet().toByteArray(),
+						Bytes.add(Bytes.toBytes(thatSnippet.getPosition()), Bytes.toBytes(thatSnippet.getLength())));
 				put.add(GuiceResource.FAMILY, columnName, 0l, columnValue);
 			}
 			context.write(functionHashKey, put);
