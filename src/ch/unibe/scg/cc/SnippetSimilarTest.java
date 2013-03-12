@@ -96,24 +96,6 @@ public final class SnippetSimilarTest {
 				"]"));
 	}
 
-
-
-	private String printString(ImmutableList<Iterable<SnippetMatch>> builtClones) {
-		final StringBuilder ret = new StringBuilder();
-		for (final Iterable<SnippetMatch> es : builtClones) {
-			ret.append('(');
-			for (final SnippetMatch e : es) {
-				final ByteBuffer hash = e.getThisSnippetLocation().getSnippet().asReadOnlyByteBuffer();
-				ret.append(String.format("%d$%02x%02x@%d, ",
-						e.getThisSnippetLocation().getPosition(),
-						hash.get(0), hash.get(1),
-						e.getThatSnippetLocation().getPosition()));
-			}
-			ret.append(')');
-		}
-		return ret.toString();
-	}
-
 	ImmutableList<SnippetLocation> allSnippets(StringOfLines sol, Hasher hasher, byte[] function) throws CannotBeHashedException {
 		final List<SnippetLocation> ret = Lists.newArrayList();
 
