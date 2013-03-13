@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import static ch.unibe.scg.cc.RegisterClonesBackend.MINIMUM_LINES;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -15,28 +17,26 @@ class CloneExpander {
 	private static final int MAX_GAP = 10;
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippetlocations, they should contain their length.
-	static final int MINIMUM_LINES = 5;
 
 	public Collection<Clone> expandClones(final List<SnippetMatch> matches) {
 		final ImmutableList.Builder<Clone> clones = ImmutableList.builder();
 		final List<SnippetMatch> unprocessedMatches = Lists.newLinkedList(matches);
 		while (!unprocessedMatches.isEmpty()) {
-			final Clone.Builder clone = Clone.newBuilder();
 			final Iterator<SnippetMatch> iter = unprocessedMatches.iterator();
 			SnippetMatch last = iter.next();
 			iter.remove();
 
-			clone.setThisFunction(last.getThisSnippetLocation().getFunction());
-			clone.setThatFunction(last.getThatSnippetLocation().getFunction());
-			clone.setThisFromPosition(last.getThisSnippetLocation().getPosition());
-			clone.setThatFromPosition(last.getThatSnippetLocation().getPosition());
-			clone.setThisLength(1);
-			clone.setThatLength(1);
+			Clone.Builder clone = initializeClone(last);
 
 			while (iter.hasNext()) {
 				final SnippetMatch cur = iter.next();
-				if (!cur.getThatSnippetLocation().getFunction().equals(last.getThatSnippetLocation().getFunction())) {
-					throw new RuntimeException("to be implemented.");
+				if (!cur.getThatSnippetLocation().getFunction()
+						.equals(last.getThatSnippetLocation().getFunction())) {
+					clones.add(finalizeClone(clone));
+					iter.remove();
+					clone = initializeClone(cur);
+					last = cur;
+					continue;
 				}
 				if (Math.abs(last.getThisSnippetLocation().getPosition()
 						- cur.getThisSnippetLocation().getPosition()) <= MAX_GAP) {
@@ -45,7 +45,7 @@ class CloneExpander {
 						iter.remove();
 
 						clone.setThisLength(
-								cur.getThatSnippetLocation().getPosition() - clone.getThatFromPosition() + 1);
+								cur.getThisSnippetLocation().getPosition() - clone.getThisFromPosition() + 1);
 						clone.setThatFromPosition(Math.min(clone.getThatFromPosition(), cur.getThatSnippetLocation()
 								.getPosition()));
 						clone.setThatLength(Math.max(clone.getThatLength(), cur.getThatSnippetLocation().getPosition()
@@ -56,11 +56,26 @@ class CloneExpander {
 				}
 				last = cur;
 			}
-			clone.setThisLength(clone.getThisLength() + MINIMUM_LINES - 1);
-			clone.setThatLength(clone.getThatLength() + MINIMUM_LINES - 1);
-			clones.add(clone.build());
+			clones.add(finalizeClone(clone));
 		}
 		final Collection<Clone> builtClones = clones.build();
 		return builtClones;
+	}
+
+	private Clone finalizeClone(final Clone.Builder clone) {
+		clone.setThisLength(clone.getThisLength() + MINIMUM_LINES - 1);
+		clone.setThatLength(clone.getThatLength() + MINIMUM_LINES - 1);
+		return clone.build();
+	}
+
+	private Clone.Builder initializeClone(SnippetMatch firstMatch) {
+		final Clone.Builder clone = Clone.newBuilder();
+		clone.setThisFunction(firstMatch.getThisSnippetLocation().getFunction());
+		clone.setThatFunction(firstMatch.getThatSnippetLocation().getFunction());
+		clone.setThisFromPosition(firstMatch.getThisSnippetLocation().getPosition());
+		clone.setThatFromPosition(firstMatch.getThatSnippetLocation().getPosition());
+		clone.setThisLength(1);
+		clone.setThatLength(1);
+		return clone;
 	}
 }

@@ -18,8 +18,8 @@ import ch.unibe.scg.cc.util.ByteUtils;
 
 public class RegisterClonesBackend {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class);
-	public final int MINIMUM_LINES = 10;
-	public final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
+	public static final int MINIMUM_LINES = 5;
+	public static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 	CloneRegistry registry;
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
