@@ -2,6 +2,7 @@ package ch.unibe.scg.cc.javaFrontend;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import javax.inject.Inject;
 
@@ -17,6 +18,7 @@ public class JavaTokenizer implements Tokenizer {
 	// TODO: the last function in a class always catches one closing curly
 	// bracket ("}") too much
 	final String splitterRegex = "([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
+	final Pattern wrongMethodKeywords = Pattern.compile("\\b(switch|while|if|for)\\b\\s*\\(");
 
 	@Inject
 	FunctionFactory functionFactory;
@@ -41,13 +43,26 @@ public class JavaTokenizer implements Tokenizer {
 		AutomatonMatcher m = splitter.newMatcher(file);
 
 		while (m.find()) {
-			String currentFunctionString = file.substring(lastStart, m.start());
+			int start = m.start();
+
+			// TODO: hack - can be thrown away with the new regex-engine
+			// ensure that start is at the beginning of a line
+			if (start > 0 && file.charAt(start - 1) != '\n') {
+				start = file.substring(0, start).lastIndexOf('\n') + 1;
+			}
+
+			// enlarge match if regex captures a "wrong" method
+			if (wrongMethodKeywords.matcher(m.group()).find()) {
+				continue;
+			}
+
+			String currentFunctionString = file.substring(lastStart, start);
 			lineLength = countOccurrences(currentFunctionString, '\n');
 
 			Function function = functionFactory.makeFunction(standardHasher, currentLineNumber, currentFunctionString);
 			ret.add(function);
 
-			lastStart = m.start();
+			lastStart = start;
 			currentLineNumber += lineLength;
 		}
 		String currentFunctionString = file.substring(lastStart, file.length());

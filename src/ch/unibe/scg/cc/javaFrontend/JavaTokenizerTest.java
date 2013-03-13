@@ -33,7 +33,7 @@ public class JavaTokenizerTest {
 
 		assertFalse(r.newMatcher("String myString = new String(new int[] { 1, 2, 3});").find());
 		assertFalse(r.newMatcher("return Integer.class").find());
-		assertTrue(r.newMatcher("\nclass MyClass<String> {").find());
+		assertTrue(r.newMatcher("\nclass MyClass<String> {\n").find());
 		assertTrue(r.newMatcher("\n     class MyClass<String> {").find());
 	}
 
@@ -59,17 +59,17 @@ public class JavaTokenizerTest {
 		assertThat(list.size(), is(4));
 		verify(functionFactory).makeFunction(any(Hasher.class), eq(0),
 				eq("package        fish.stink;\nimport java.util.*;\nimport static System.out;\n\n"));
-		verify(functionFactory).makeFunction(any(Hasher.class), eq(4), eq("public class Rod {\n\t"));
+		verify(functionFactory).makeFunction(any(Hasher.class), eq(4), eq("public class Rod {\n"));
 		verify(functionFactory)
 				.makeFunction(
 						any(Hasher.class),
 						eq(5),
-						eq("public static void main(String[] args) {\n\t\tout.println(\"Hiya, wassup?\");\n\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n\t}\n\t\t\t"));
+						eq("\tpublic static void main(String[] args) {\n\t\tout.println(\"Hiya, wassup?\");\n\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n\t}\n"));
 		verify(functionFactory)
 				.makeFunction(
 						any(Hasher.class),
 						eq(9),
-						eq("protected static void doIt() {\n\t\tif(System.timeInMillis() > 10000)\n\t\t\tout.println(1337);\n\t\tmain(null);\n\t}\n}\n"));
+						eq("\t\t\tprotected static void doIt() {\n\t\tif(System.timeInMillis() > 10000)\n\t\t\tout.println(1337);\n\t\tmain(null);\n\t}\n}\n"));
 
 	}
 
