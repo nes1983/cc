@@ -43,7 +43,6 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 		Pattern packagesGo = new Pattern("(?:\\p{Ll}\\s*\\.)?(\\p{Lu}+)");
 		String replaceWith = "$1";
 		return new Replace(packagesGo, replaceWith);
-
 	}
 
 	/**
@@ -87,5 +86,14 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	public Replace make07RenameWhile() {
 		Pattern ifPattern = new Pattern("while");
 		return new Replace(ifPattern, ";while");
+	}
+
+	/**
+	 * 8. removes leading whitespace at the beginning of the string. example:
+	 * "	 public void a() {" gets "public void a() {"
+	 */
+	public Replace make08RemoveLeadingWhitespace() {
+		Pattern leadingWhiteSpace = new Pattern("^[ \f\r\t]*");
+		return new Replace(leadingWhiteSpace, "");
 	}
 }
