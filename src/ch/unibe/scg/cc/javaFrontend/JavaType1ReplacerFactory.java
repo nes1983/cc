@@ -43,8 +43,8 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	 * "int a = java.util.Math.sqrt(1);" gets "int a = Math.sqrt(1);"</code>
 	 */
 	public Replace make02Rj1() {
-		Pattern packagesGo = new Pattern("(^|[\\s\\(\\[]){1}(?:\\p{Ll}+\\s*\\.)+(\\p{Lu}+\\p{Ll}*)");
-		String replaceWith = "$1$2";
+		Pattern packagesGo = new Pattern("\\b[a-z]+\\.[a-z.]*([A-Z])");
+		String replaceWith = "$1";
 		return new Replace(packagesGo, replaceWith);
 	}
 
