@@ -37,11 +37,14 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 	}
 
 	/**
-	 * 2
+	 * 2. removes package prefixes. <br>
+	 * <code>example 1:<br>"import java.util.Math;" gets "import Math;"</code><br>
+	 * <code>example 2:<br>
+	 * "int a = java.util.Math.sqrt(1);" gets "int a = Math.sqrt(1);"</code>
 	 */
 	public Replace make02Rj1() {
-		Pattern packagesGo = new Pattern("(?:\\p{Ll}\\s*\\.)?(\\p{Lu}+)");
-		String replaceWith = "$1";
+		Pattern packagesGo = new Pattern("(^|[\\s\\(\\[]){1}(?:\\p{Ll}+\\s*\\.)+(\\p{Lu}+\\p{Ll}*)");
+		String replaceWith = "$1$2";
 		return new Replace(packagesGo, replaceWith);
 	}
 

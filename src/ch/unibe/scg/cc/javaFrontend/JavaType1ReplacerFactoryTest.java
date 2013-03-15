@@ -45,7 +45,7 @@ public class JavaType1ReplacerFactoryTest {
 		n.normalize(sb);
 		assertThat(
 				sb.toString(),
-				is("package fish.stink;\nimport java.util.*;\nimport static System.out;\nclass Rod {\nstatic void main(String[] args) {\nout.println(\"Hiya, wassup?\");\nfish.stinRod.doIt(new int[] { });\n}\nstatic void doIt() {\nif(System.timeInMillis() > 10000)\nout.println(1337);\nmain(null);\n}\n}\n"));
+				is("package fish.stink;\nimport java.util.*;\nimport static System.out;\nclass Rod {\nstatic void main(String[] args) {\nout.println(\"Hiya, wassup?\");\nRod.doIt(new int[] { });\n}\nstatic void doIt() {\nif(System.timeInMillis() > 10000)\nout.println(1337);\nmain(null);\n}\n}\n"));
 
 		return n;
 	}
