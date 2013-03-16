@@ -44,6 +44,7 @@ class CloneExpander {
 							- cur.getThatSnippetLocation().getPosition()) <= MAX_GAP) {
 						iter.remove();
 
+						// Note that clones are sorted by thisLength, not thatLength.
 						clone.setThisLength(
 								cur.getThisSnippetLocation().getPosition() - clone.getThisFromPosition() + 1);
 						clone.setThatFromPosition(Math.min(clone.getThatFromPosition(), cur.getThatSnippetLocation()
