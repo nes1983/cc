@@ -82,12 +82,12 @@ public final class SnippetSimilarTest {
 		n2.normalize(s3);
 
 		final StringOfLinesFactory solFactory = new StringOfLinesFactory();
-		final List<List<SnippetLocation>> table = ImmutableList.of(
+		List<List<SnippetLocation>> table = ImmutableList.of(
 				allSnippets(solFactory.make(s1.toString()), ss, new byte[] { 1 }),
 				allSnippets(solFactory.make(s2.toString()), ss, new byte[] { 2 }),
 				allSnippets(solFactory.make(s3.toString()), ss, new byte[] { 3 }));
 
-		// TODO: Filtering to collisions missing.
+		table = filterCollisions(table);
 
 		final List<List<SnippetMatch>> matches = Lists.newArrayList();
 		for (int i = 0; i < table.size(); i++) {
@@ -130,6 +130,48 @@ public final class SnippetSimilarTest {
 		assertThat(builtClones.toString(), is("[]"));
 	}
 
+	/** Filter to keep only snippets that collide. */
+	private List<List<SnippetLocation>> filterCollisions(List<List<SnippetLocation>> table) {
+		final List<SnippetLocation> filtering = Lists.newArrayList();
+		for (final List<SnippetLocation> subTable : table) {
+			filtering.addAll(subTable);
+		}
+		Collections.sort(filtering, new Comparator<SnippetLocation>() {
+			@Override public int compare(SnippetLocation o1, SnippetLocation o2) {
+				return o1.getSnippet().asReadOnlyByteBuffer().compareTo(
+						o2.getSnippet().asReadOnlyByteBuffer());
+			}});
+
+		table = ImmutableList.of((List<SnippetLocation>) new ArrayList<SnippetLocation>(),
+				(List<SnippetLocation>) new ArrayList<SnippetLocation>(),
+				(List<SnippetLocation>) new ArrayList<SnippetLocation>());
+		SnippetLocation last = filtering.get(0);
+		SnippetLocation next = filtering.get(1);
+		if (last.getSnippet().asReadOnlyByteBuffer().equals(next.getSnippet().asReadOnlyByteBuffer())) {
+			table.get(last.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(last);
+		}
+		for (int i = 1; i < filtering.size() - 1; i++) {
+			final SnippetLocation cur = next;
+			next = filtering.get(i + 1);
+			if (cur.getSnippet().asReadOnlyByteBuffer().equals(last.getSnippet().asReadOnlyByteBuffer())
+					|| cur.getSnippet().asReadOnlyByteBuffer().equals(next.getSnippet().asReadOnlyByteBuffer())) {
+						table.get(cur.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(cur);
+					}
+			last = cur;
+		}
+		final SnippetLocation cur = filtering.get(filtering.size() - 1);
+		if (cur.getSnippet().asReadOnlyByteBuffer().equals(last.getSnippet().asReadOnlyByteBuffer())) {
+			table.get(cur.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(cur);
+		}
+		assertThat(filtering.size(), is(51));
+		assertThat(table.get(0).size() + table.get(1).size() + table.get(2).size(), is(31));
+
+		for (final List<SnippetLocation> subTable : table) {
+			Collections.sort(subTable, snippetLocationComparator);
+		}
+		return table;
+	}
+
 	List<SnippetLocation> allSnippets(StringOfLines sol, Hasher hasher, byte[] function)
 			throws CannotBeHashedException {
 		final List<SnippetLocation> ret = Lists.newArrayList();
@@ -161,7 +203,7 @@ public final class SnippetSimilarTest {
 				+ "			// fall through\n"
 				+ "		case DOWN:\n"
 				+ "			result = logFloor;\n"
-				+ "		case CEILING:\n" 
+				+ "		case CEILING:\n"
 				+ "		case UP:\n"
 				+ "			result = (x == floorPow) ? logFloor : logFloor - 1;\n"
 				+ "		case HALF_DOWN:\n"
