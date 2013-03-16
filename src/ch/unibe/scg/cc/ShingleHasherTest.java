@@ -5,7 +5,8 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
 
-import org.apache.commons.lang3.ArrayUtils;
+import java.util.Arrays;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -31,13 +32,12 @@ public class ShingleHasherTest {
 		assertThat(hashedShingles, is(arrayWithSize(6)));
 
 		return ss;
-
 	}
 
 	@Given("test")
 	public ShingleHasher testEntireSketch(ShingleHasher ss) throws CannotBeHashedException {
 		byte[] sketch = ss.hash("one two three four five six");
-		assertThat(ArrayUtils.toString(sketch), startsWith("{20,57,"));
+		assertThat(Arrays.toString(sketch), startsWith("[20, 57,"));
 		// The first two check out.
 		// That's the XOR of the following two.
 		// {-125,62,35,96,122,41,-101,74,-113,-121,80,36,-5,-86,-10,15,-56,61,26,-55}
