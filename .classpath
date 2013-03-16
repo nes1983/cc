@@ -60,7 +60,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/protobuf-java-2.4.1.jar" sourcepath="libs/protobuf-2.4.1.zip"/>
-	<classpathentry kind="lib" path="libs/guava-14.0-rc1.jar"/>
+	<classpathentry kind="lib" path="libs/guava-14.0.1.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">
