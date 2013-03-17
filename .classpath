@@ -21,24 +21,14 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/commons-vfs2-2.0-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="libs/commons-collections-3.2.1.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="http://commons.apache.org/collections/api-release/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/postgresql-8.4-703.jdbc4.jar"/>
-	<classpathentry kind="lib" path="libs/zookeeper-3.3.2.jar"/>
-	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
-	<classpathentry kind="lib" path="libs/hawtdispatch-1.7.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://hawtdispatch.fusesource.org/versions/1.7/maven/hawtdispatch/apidocs/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
-	<classpathentry kind="lib" path="libs/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="libs/jsch-0.1.48.jar"/>
 	<classpathentry kind="lib" path="libs/hadoop-auth-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
 	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
@@ -51,8 +41,6 @@
 	<classpathentry kind="lib" path="libs/hadoop-yarn-api-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
 	<classpathentry kind="lib" path="libs/hadoop-yarn-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
 	<classpathentry kind="lib" path="libs/hadoop-yarn-server-common-2.0.0-cdh4.1.2.jar" sourcepath="libs/hadoop-2.0.0-cdh4.1.2.zip"/>
-	<classpathentry kind="lib" path="libs/slf4j-api-1.7.2.jar"/>
-	<classpathentry kind="lib" path="libs/slf4j-simple-1.7.2.jar"/>
 	<classpathentry kind="lib" path="libs/hbase-0.92.1-cdh4.1.2-security.jar" sourcepath="libs/hbase-0.92.1-cdh4.1.2.zip"/>
 	<classpathentry kind="lib" path="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar">
 		<attributes>
@@ -61,6 +49,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/protobuf-java-2.4.1.jar" sourcepath="libs/protobuf-2.4.1.zip"/>
 	<classpathentry kind="lib" path="libs/guava-14.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="lib" path="libs/aopalliance.jar" sourcepath="libs/guice-src.zip">

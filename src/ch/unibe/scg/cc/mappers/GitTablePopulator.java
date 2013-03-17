@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -34,7 +35,6 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
-import org.apache.log4j.Logger;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
@@ -68,7 +68,7 @@ import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 
 public class GitTablePopulator implements Runnable {
-	static Logger logger = Logger.getLogger(GitTablePopulator.class);
+	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
@@ -102,8 +102,8 @@ public class GitTablePopulator implements Runnable {
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 
-			logger.debug("found: " + inputPaths);
-			logger.debug("yyy wait for completion");
+			logger.finer("found: " + inputPaths);
+			logger.finer("yyy wait for completion");
 			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
 					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
 					IntWritable.class);
@@ -124,7 +124,7 @@ public class GitTablePopulator implements Runnable {
 		Path path = new Path(PROJECTS_FOLDER_PATH);
 
 		Queue<Path> packFilePaths = new LinkedList<Path>();
-		logger.debug("yyy start finding pack files " + path);
+		logger.finer("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
 
 		Joiner joiner = Joiner.on(",");
@@ -140,11 +140,12 @@ public class GitTablePopulator implements Runnable {
 		FileStatus[] fstatus = fs.listStatus(path);
 		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
-			logger.debug("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
+			logger.finer("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE) && f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
 				listToFill.add(p);
-			} else if (f.isDirectory())
+			} else if (f.isDirectory()) {
 				findPackFilePaths(fs, p, listToFill);
+			}
 		}
 	}
 
@@ -174,9 +175,10 @@ public class GitTablePopulator implements Runnable {
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
 
+		@Override
 		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
 			String packFilePath = key.toString();
-			logger.debug("yyy RECEIVED: " + packFilePath);
+			logger.finer("yyy RECEIVED: " + packFilePath);
 			InputStream packFileStream = new ByteArrayInputStream(value.getBytes());
 			DfsRepositoryDescription desc = new DfsRepositoryDescription(packFilePath);
 			InMemoryRepository r = new InMemoryRepository(desc);
@@ -194,8 +196,9 @@ public class GitTablePopulator implements Runnable {
 			PackedRefParser prp = new PackedRefParser();
 			Pattern pattern = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack");
 			Matcher matcher = pattern.matcher(key.toString());
-			if (!matcher.matches())
+			if (!matcher.matches()) {
 				throw new RuntimeException("Something seems to be wrong with this input path: " + key.toString());
+			}
 			String gitDirPath = matcher.group(1);
 			String packedRefsPath = gitDirPath + Constants.PACKED_REFS;
 
@@ -203,7 +206,7 @@ public class GitTablePopulator implements Runnable {
 			List<PackedRef> pr = prp.parse(ins);
 
 			String projectName = getProjName(packFilePath);
-			logger.debug("PROCESSING: " + packFilePath);
+			logger.finer("PROCESSING: " + packFilePath);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
 				int toIndex = tagCount - 1;
@@ -216,14 +219,14 @@ public class GitTablePopulator implements Runnable {
 			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
 				PackedRef paref = it.next();
 				String tag = paref.getName();
-				logger.debug("WALK TAG: " + tag);
+				logger.finer("WALK TAG: " + tag);
 
 				revWalk.dispose();
 				RevCommit commit;
 				try {
 					commit = revWalk.parseCommit(paref.getKey());
 				} catch (MissingObjectException e) {
-					logger.debug("ERROR in file " + packFilePath + ": " + e.getMessage());
+					logger.finer("ERROR in file " + packFilePath + ": " + e.getMessage());
 					continue;
 				}
 				RevTree tree = commit.getTree();
@@ -238,8 +241,9 @@ public class GitTablePopulator implements Runnable {
 					try {
 						String content = getContent(r, objectId);
 						String filePath = treeWalk.getPathString();
-						if (!filePath.endsWith(".java"))
+						if (!filePath.endsWith(".java")) {
 							continue;
+						}
 						String fileName = filePath.lastIndexOf('/') == -1 ? filePath : filePath.substring(filePath
 								.lastIndexOf('/') + 1);
 						CodeFile codeFile = register(content, fileName);
@@ -251,7 +255,7 @@ public class GitTablePopulator implements Runnable {
 				}
 				processedTagsCounter++;
 			}
-			logger.debug("svd FINISHED PROCESSING " + packFilePath);
+			logger.finer("svd FINISHED PROCESSING " + packFilePath);
 		}
 
 		private String getProjName(String packFilePath) {

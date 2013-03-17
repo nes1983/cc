@@ -2,6 +2,7 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.hbase.client.Result;
@@ -12,7 +13,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
-import org.apache.log4j.Logger;
 
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.HBaseModule;
@@ -27,7 +27,7 @@ import com.google.inject.Injector;
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
  * the manifest.
  * <p>
- * {@code 
+ * {@code
  * <antcall target="jar">
  * 	<param name="mainClass" value="ch.unibe.scg.cc.mappers.MRMain" />
  * 	</antcall>
@@ -36,7 +36,7 @@ import com.google.inject.Injector;
  * Finally, the command which gets called on the server looks somewhat like
  * this:
  * <p>
- * {@code 
+ * {@code
  * hadoop jar /tmp/cc.jar ch.unibe.scg.cc.mappers.MakeSnippet2Function
  * }
  * <p>
@@ -46,16 +46,16 @@ import com.google.inject.Injector;
  * "GuiceMapperAnnotation"/"GuiceReducerAnnotation" respectively.
  */
 public class MRMain extends Configured implements Tool {
-	static Logger logger = Logger.getLogger(MRMain.class);
+	static Logger logger = Logger.getLogger(MRMain.class.getName());
 
 	public static void main(String[] args) throws Throwable {
-		logger.debug(Arrays.toString(args));
+		logger.finer(Arrays.toString(args));
 		ToolRunner.run(new MRMain(), args);
 	}
 
 	@Override
 	public int run(String[] args) {
-		logger.debug(Arrays.toString(args));
+		logger.finer(Arrays.toString(args));
 		assert args.length == 1;
 		Class<?> c = classForNameOrPanic(args[0]);
 		AbstractModule confModule = new AbstractModule() {
@@ -76,7 +76,7 @@ public class MRMain extends Configured implements Tool {
 	 * Guice configured), but Hadoop won't let us. So, this class bridges
 	 * between Guice and Hadoop. In setup, we Guice configure the real reducer,
 	 * and this class acts as a proxy to the guice-configured reducer.
-	 * 
+	 *
 	 * <p>
 	 * All methods except
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
@@ -111,6 +111,7 @@ public class MRMain extends Configured implements Tool {
 		 * {@link #map(Object, Object, Mapper.Context)} and
 		 * {@link #cleanup(Mapper.Context)} methods.
 		 */
+		@Override
 		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
@@ -141,6 +142,7 @@ public class MRMain extends Configured implements Tool {
 			guiceMapper.cleanup(context);
 		}
 
+		@Override
 		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
@@ -166,6 +168,7 @@ public class MRMain extends Configured implements Tool {
 			reducer.cleanup(context);
 		}
 
+		@Override
 		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
@@ -198,6 +201,7 @@ public class MRMain extends Configured implements Tool {
 			reducer.cleanup(context);
 		}
 
+		@Override
 		public void run(Context context) throws IOException, InterruptedException {
 			super.run(context);
 		}
@@ -211,7 +215,7 @@ public class MRMain extends Configured implements Tool {
 
 	/**
 	 * Throws a RuntimeException if the class is not found.
-	 * 
+	 *
 	 * @param qualifiedClassName
 	 *            the fully qualified class name
 	 * @return returns the class Object

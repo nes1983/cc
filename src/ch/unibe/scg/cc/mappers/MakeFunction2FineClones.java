@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.Set;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -22,7 +23,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -34,7 +34,7 @@ import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
 
 public class MakeFunction2FineClones implements Runnable {
-	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class);
+	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class.getName());
 	final HTable function2fineclones;
 	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
@@ -81,7 +81,7 @@ public class MakeFunction2FineClones implements Runnable {
 			byte[] function = value.getRow();
 			assert function.length == 20;
 
-			logger.debug("map function " + ByteUtils.bytesToHex(function));
+			logger.finer("map function " + ByteUtils.bytesToHex(function));
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();

@@ -2,10 +2,9 @@ package ch.unibe.scg.cc;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
-
-import org.apache.log4j.Logger;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
@@ -17,7 +16,7 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.util.ByteUtils;
 
 public class RegisterClonesBackend {
-	static Logger logger = Logger.getLogger(RegisterClonesBackend.class);
+	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
 	public static final int MINIMUM_LINES = 5;
 	public static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 	CloneRegistry registry;
@@ -38,7 +37,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -55,7 +54,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -83,7 +82,7 @@ public class RegisterClonesBackend {
 				return;
 			}
 		} catch (CannotBeHashedException e) {
-			logger.error(snippet + " caused CannotBeHashedException", e);
+			logger.severe(snippet + " caused CannotBeHashedException. " + e);
 			return;
 		}
 		registry.register(hash, snippet, function, from, length, type);
@@ -111,7 +110,7 @@ public class RegisterClonesBackend {
 
 	/**
 	 * looks up the codefile
-	 * 
+	 *
 	 * @param codeFile
 	 * @return returns true, if file is already in the database, otherwise
 	 *         false.
@@ -123,7 +122,7 @@ public class RegisterClonesBackend {
 
 	/**
 	 * looks up the version
-	 * 
+	 *
 	 * @param version
 	 * @return returns true, if version is already in the database, otherwise
 	 *         false.
@@ -135,7 +134,7 @@ public class RegisterClonesBackend {
 
 	/**
 	 * looks up the project
-	 * 
+	 *
 	 * @param project
 	 * @return returns true, if project is already in the database, otherwise
 	 *         false.

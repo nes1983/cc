@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -16,10 +17,9 @@ import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
-import org.apache.log4j.Logger;
 
 public class GitRecordReader extends RecordReader<Text, BytesWritable> {
-	static Logger logger = Logger.getLogger(GitRecordReader.class);
+	static Logger logger = Logger.getLogger(GitRecordReader.class.getName());
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private FSDataInputStream fsin;
 	private Text currentKey;
@@ -37,7 +37,7 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 		fs = path.getFileSystem(conf);
 
 		packFilePaths = new LinkedList<Path>();
-		logger.debug("yyy start finding pack files " + path);
+		logger.finer("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
 
 		if (packFilePaths.isEmpty()) {
@@ -50,11 +50,12 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 		FileStatus[] fstatus = fs.listStatus(path);
 		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
-			logger.debug("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
+			logger.finer("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE)) {
 				listToFill.add(p);
-			} else if (f.isDirectory())
+			} else if (f.isDirectory()) {
 				findPackFilePaths(fs, p, listToFill);
+			}
 		}
 	}
 
@@ -62,22 +63,23 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 	public boolean nextKeyValue() throws IOException, InterruptedException {
 		if (packFilePaths.isEmpty()) {
 			isFinished = true;
-			logger.debug("yyy packFilePaths is empty... finished");
+			logger.finer("yyy packFilePaths is empty... finished");
 			return false;
 		}
 
 		Path packFilePath = packFilePaths.poll();
-		logger.debug("yyy opening " + packFilePath);
+		logger.finer("yyy opening " + packFilePath);
 
 		fsin = fs.open(packFilePath);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		byte[] temp = new byte[8192];
 		while (true) {
 			int bytesRead = fsin.read(temp, 0, 8192);
-			if (bytesRead > 0)
+			if (bytesRead > 0) {
 				bos.write(temp, 0, bytesRead);
-			else
+			} else {
 				break;
+			}
 		}
 		currentValue = new BytesWritable(bos.toByteArray());
 		currentKey = new Text(packFilePath.toString());

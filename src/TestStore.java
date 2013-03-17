@@ -1,15 +1,15 @@
 import java.io.IOException;
 import java.util.Random;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
-import org.apache.log4j.Logger;
 
 public class TestStore {
-	static Logger logger = Logger.getLogger(TestStore.class);
+	static Logger logger = Logger.getLogger(TestStore.class.getName());
 
 	public static void main(String[] args) throws IOException {
 		String[] pages = { "/", "/a.html", "/b.html", "/c.html" };
@@ -33,7 +33,7 @@ public class TestStore {
 		int totalRecords = 100000;
 		int maxID = totalRecords / 1000;
 		Random rand = new Random();
-		logger.debug("importing " + totalRecords + " records ....");
+		logger.finer("importing " + totalRecords + " records ....");
 		for (int i = 0; i < totalRecords; i++) {
 			int userID = rand.nextInt(maxID) + 1;
 			byte[] rowkey = Bytes.add(Bytes.toBytes(userID), Bytes.toBytes(i));
@@ -44,6 +44,6 @@ public class TestStore {
 		}
 		htable.flushCommits();
 		htable.close();
-		logger.debug("done");
+		logger.finer("done");
 	}
 }

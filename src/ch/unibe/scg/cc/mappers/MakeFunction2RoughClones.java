@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.Set;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -19,7 +20,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -35,14 +35,14 @@ import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- * 
+ *
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- * 
+ *
  * OUTPUT:<br>
- * 
+ *
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -50,7 +50,7 @@ import com.google.protobuf.ByteString;
  * </pre>
  */
 public class MakeFunction2RoughClones implements Runnable {
-	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class);
+	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class.getName());
 	final HTable function2roughclones;
 	final MRWrapper mrWrapper;
 
@@ -78,7 +78,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
 
-			logger.debug("map snippet " + ByteUtils.bytesToHex(snippet));
+			logger.finer("map snippet " + ByteUtils.bytesToHex(snippet));
 
 			// snippetHash = new byte[] {}; // dummy to save space
 
@@ -88,7 +88,7 @@ public class MakeFunction2RoughClones implements Runnable {
 
 			// special handling of popular snippets
 			if (familyMap.size() > POPULAR_SNIPPET_THRESHOLD) {
-				logger.warn("FAMILY MAP SIZE " + familyMap.size());
+				logger.warning("FAMILY MAP SIZE " + familyMap.size());
 				// fill popularSnippets table
 				while (columnIterator.hasNext()) {
 					Entry<byte[], byte[]> column = columnIterator.next();

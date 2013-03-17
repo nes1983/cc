@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -18,7 +19,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.apache.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -30,7 +30,7 @@ import ch.unibe.scg.cc.util.WrappedRuntimeException;
 import com.google.common.base.Optional;
 
 public class MakeSnippet2Function implements Runnable {
-	static Logger logger = Logger.getLogger(MakeSnippet2Function.class);
+	static Logger logger = Logger.getLogger(MakeSnippet2Function.class.getName());
 	final HTable snippet2Function;
 	final MRWrapper mrWrapper;
 
@@ -51,14 +51,14 @@ public class MakeSnippet2Function implements Runnable {
 			byte[] functionHash = functionHashKey.get();
 			assert functionHash.length == 20;
 
-			logger.debug("map " + ByteUtils.bytesToHex(functionHash).toLowerCase().substring(0, 4));
+			logger.finer("map " + ByteUtils.bytesToHex(functionHash).toLowerCase().substring(0, 4));
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Column.FAMILY_NAME);
 
 			for (Entry<byte[], byte[]> column : familyMap.entrySet()) {
 				byte[] snippet = column.getKey();
 				byte[] functionHashPlusLocation = Bytes.add(functionHash, column.getValue());
-				logger.debug("snippet " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6) + " found");
+				logger.finer("snippet " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6) + " found");
 				context.write(new ImmutableBytesWritable(snippet), new ImmutableBytesWritable(functionHashPlusLocation));
 			}
 		}
@@ -81,7 +81,7 @@ public class MakeSnippet2Function implements Runnable {
 			byte[] snippet = snippetKey.get();
 			Iterator<ImmutableBytesWritable> i = functionHashesPlusLocations.iterator();
 
-			logger.debug("reduce " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
+			logger.finer("reduce " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
 
 			Put put = putFactory.create(snippet);
 			int functionCount = 0;
@@ -101,7 +101,7 @@ public class MakeSnippet2Function implements Runnable {
 				// TODO
 				// check whether context.write(factHashKey, put) or
 				// write(put) is faster
-				logger.debug("save " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
+				logger.finer("save " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
 				context.write(snippetKey, put);
 			}
 		}

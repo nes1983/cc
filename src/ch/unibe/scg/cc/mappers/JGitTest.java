@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.log4j.Logger;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
@@ -31,7 +31,7 @@ import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class JGitTest implements Runnable {
-	static Logger logger = Logger.getLogger(JGitTest.class);
+	static Logger logger = Logger.getLogger(JGitTest.class.getName());
 
 	JGitTest() {
 	}
@@ -62,7 +62,7 @@ public class JGitTest implements Runnable {
 			List<PackedRef> pr = prp.parse(ins);
 
 			for (PackedRef paref : pr) {
-				logger.debug("WALK TAG " + paref.getName());
+				logger.finer("WALK TAG " + paref.getName());
 
 				revWalk.dispose();
 				RevCommit commit = revWalk.parseCommit(paref.getKey());
@@ -77,13 +77,13 @@ public class JGitTest implements Runnable {
 					ObjectId objectId = treeWalk.getObjectId(0);
 					ObjectLoader loader = r.open(objectId);
 
-					logger.debug(Constants.typeString(loader.getType()) + ": " + objectId + " "
+					logger.finer(Constants.typeString(loader.getType()) + ": " + objectId + " "
 							+ treeWalk.getPathString());
-					// logger.debug(getContent(r, objectId));
+					// logger.finer(getContent(r, objectId));
 				}
 			}
 		} catch (Exception e) {
-			logger.debug("ABSTURZ...");
+			logger.finer("ABSTURZ...");
 			throw new WrappedRuntimeException(e);
 		}
 	}

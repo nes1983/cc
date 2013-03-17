@@ -9,17 +9,16 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.apache.commons.lang.NotImplementedException;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.mozilla.universalchardet.UniversalDetector;
 
@@ -35,7 +34,7 @@ import ch.unibe.scg.cc.activerecord.Version;
 
 /** Use GitTablePopulator instead of TablePopulator! */
 public class TablePopulator implements Runnable {
-	static Logger logger = Logger.getLogger(TablePopulator.class);
+	static Logger logger = Logger.getLogger(TablePopulator.class.getName());
 	final MRWrapper mrWrapper;
 
 	@Inject
@@ -44,7 +43,7 @@ public class TablePopulator implements Runnable {
 	}
 
 	public void run() {
-		throw new NotImplementedException("Use GitTablePopulator - TablePopulator is no longer supported.");
+		throw new UnsupportedOperationException("Use GitTablePopulator - TablePopulator is no longer supported.");
 	}
 
 	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
@@ -72,10 +71,12 @@ public class TablePopulator implements Runnable {
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
 
+		@Override
 		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
 
-			if (value.getLength() == 0)
+			if (value.getLength() == 0) {
 				return;
+			}
 
 			byte[] bytes = value.getBytes();
 			String content = new String(bytes, charsetDetector.charsetOf(bytes));

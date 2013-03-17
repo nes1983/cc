@@ -2,6 +2,7 @@ package ch.unibe.scg.cc.mappers.inputformats;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -13,10 +14,9 @@ import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
-import org.apache.log4j.Logger;
 
 public class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
-	static Logger logger = Logger.getLogger(GitPathRecordReader.class);
+	static Logger logger = Logger.getLogger(GitPathRecordReader.class.getName());
 	private static final int BYTE_BUFFER_SIZE = 8192;
 	private FSDataInputStream fsin;
 	private Text currentKey;
@@ -41,7 +41,7 @@ public class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
 			return false;
 		}
 
-		logger.debug("yyy opening " + packFilePath);
+		logger.finer("yyy opening " + packFilePath);
 
 		fsin = fs.open(packFilePath);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
