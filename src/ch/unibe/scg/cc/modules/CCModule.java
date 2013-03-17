@@ -26,17 +26,14 @@ import ch.unibe.scg.cc.util.ByteSetProvider;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
-
+//@formatter:off
 public class CCModule extends AbstractModule {
-
 	@Override
 	protected void configure() {
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(Singleton.class);
 		bind(Configuration.class).toProvider(ConfigurationProvider.class).in(Singleton.class);
-		bind(new TypeLiteral<Comparator<byte[]>>() {
-		}).toInstance(Bytes.BYTES_COMPARATOR);
-		bind(new TypeLiteral<Set<byte[]>>() {
-		}).toProvider(ByteSetProvider.class);
+		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
+		bind(new TypeLiteral<Set<byte[]>>() {}).toProvider(ByteSetProvider.class);
 
 		// factories
 		install(new FactoryModuleBuilder().implement(Project.class, RealProject.class).build(RealProjectFactory.class));
