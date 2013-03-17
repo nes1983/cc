@@ -64,20 +64,53 @@
         <delete dir="bin"/>
     </target>
 	<target name="jar" depends="build">
+		<taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask"
+		        classpath="jarjar-1.4.jar"/>
 		<manifestclasspath jarfile="cc.jar" property="manifest.class.path">
 			<classpath refid="clone-detector.classpath" />
 		</manifestclasspath>
-		<jar destfile="cc.jar" basedir="bin">
+		<jarjar destfile="cc.jar" basedir="bin">
 			<manifest>
 				<attribute name="Class-Path" value="${manifest.class.path}" />
 				<attribute name="Main-Class" value="${mainClass}" />
 			</manifest>
-		</jar>
+			<!-- produce using 
+			find libs -name '*.jar' -prune -type f | ruby -n -e 'puts "<zipfileset src=\"" + $_.gsub(/\n/,"") + "\"/>" unless /libs\/(hbase|hadoop).*/ =~ $_'
+			-->
+			<zipfileset src="libs/aopalliance.jar"/>
+			<zipfileset src="libs/automaton.jar"/>
+			<zipfileset src="libs/commons-cli-1.2.jar"/>
+			<zipfileset src="libs/commons-collections-3.2.1.jar"/>
+			<zipfileset src="libs/commons-configuration-1.8.jar"/>
+			<zipfileset src="libs/commons-io-2.1.jar"/>
+			<zipfileset src="libs/commons-lang3-3.0.1.jar"/>
+			<zipfileset src="libs/commons-logging-1.1.1.jar"/>
+			<zipfileset src="libs/commons-vfs2-2.0-javadoc.jar"/>
+			<zipfileset src="libs/commons-vfs2-2.0.jar"/>
+			<zipfileset src="libs/dev-only/hamcrest-all-1.3.0RC2.jar"/>
+			<zipfileset src="libs/dev-only/hamcrest-library-1.3.0RC2.jar"/>
+			<zipfileset src="libs/dev-only/mockito-all-1.9.0-rc1.jar"/>
+			<zipfileset src="libs/guava-14.0.1.jar"/>
+			<zipfileset src="libs/guice-3.0.jar"/>
+			<zipfileset src="libs/guice-assistedinject-3.0.jar"/>
+			<zipfileset src="libs/guice-grapher-3.0.jar"/>
+			<zipfileset src="libs/guice-jmx-3.0.jar"/>
+			<zipfileset src="libs/guice-jndi-3.0.jar"/>
+			<zipfileset src="libs/guice-multibindings-3.0.jar"/>
+			<zipfileset src="libs/guice-persist-3.0.jar"/>
+			<zipfileset src="libs/guice-throwingproviders-3.0.jar"/>
+			<zipfileset src="libs/javax.inject.jar"/>
+			<zipfileset src="libs/jexample-4.5-391.jar"/>
+			<zipfileset src="libs/jregex1.2_01.jar"/>
+			<zipfileset src="libs/jsch-0.1.48.jar"/>
+			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>
+			<zipfileset src="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
+			<zipfileset src="libs/protobuf-java-2.4.1.jar"/>
+		</jarjar>
 	</target>
 	<target name="uploadJar">
-		<property name="libjars" value="-libjars /tmp/hbase-0.92.1-cdh4.1.2-security.jar"/>
 		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" />
-		<sshexec host="haddock.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${libjars} ${classArgument}" />
+		<sshexec host="haddock.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${classArgument}" />
 	</target>
 	<target name="indexCreator">
 		<antcall target="jar">
