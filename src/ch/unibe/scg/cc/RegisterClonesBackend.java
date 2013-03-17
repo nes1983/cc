@@ -67,10 +67,7 @@ public class RegisterClonesBackend {
 	void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Function function, Hasher hasher, byte type) {
 		assert stringOfLines.getNumberOfLines() >= MINIMUM_LINES;
 
-		for (int frameStart = 0; frameStart < stringOfLines.getNumberOfLines() - MINIMUM_LINES + 1; frameStart++) {
-			if (frameStart + MINIMUM_LINES > stringOfLines.getNumberOfLines()) {
-				break;
-			}
+		for (int frameStart = 0; frameStart + MINIMUM_LINES < stringOfLines.getNumberOfLines(); frameStart++) {
 			String snippet = stringOfLines.getLines(frameStart, MINIMUM_LINES);
 			this.registerSnippet(snippet, function, frameStart, MINIMUM_LINES, hasher, type);
 		}
