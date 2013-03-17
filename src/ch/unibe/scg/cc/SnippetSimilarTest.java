@@ -95,10 +95,10 @@ public final class SnippetSimilarTest {
 
 		assertThat(matches.size(), is(3));
 		assertThat(printString(matches.get(0)),
-				is("(1-2|5$e556@3, 1-2|14$6043@13, 1-2|16$24a1@15, 1-3|14$6043@10, 1-3|16$24a1@12, )"));
-		assertThat(printString(matches.get(1)), is("(2-3|0$832c@0, 2-3|7$650e@4, 2-3|8$68b6@5, " +
-				"2-3|9$2f8d@6, 2-3|10$a370@7, 2-3|11$270e@8, 2-3|12$cbd8@9, 2-3|13$6043@10, 2-3|14$5b92@11," +
-				" 2-3|15$24a1@12, 2-3|16$0b4c@13, 2-3|17$8cb0@14, )"));
+				is("(1-2|5$bb3e@3, 1-2|13$20a4@12, 1-2|14$6f45@13, 1-3|13$20a4@9, 1-3|14$6f45@10, )"));
+		assertThat(printString(matches.get(1)), is("(2-3|0$9721@0, 2-3|7$a037@4, 2-3|8$fc06@5, " +
+				"2-3|9$03d8@6, 2-3|10$4fe1@8, 2-3|11$4fe1@8, 2-3|12$20a4@9, 2-3|13$6f45@10, " +
+				"2-3|14$bfea@11, 2-3|15$abb0@12, 2-3|16$d0af@13, 2-3|17$c751@14, )"));
 		assertThat(printString(matches.get(2)), is("()"));
 
 		// Extract matches
@@ -109,9 +109,9 @@ public final class SnippetSimilarTest {
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
 		assertThat(builtClones.toString(),
 				is("[this_function: \"\\001\"\nthat_function: \"\\002\"\n" +
-						"this_from_position: 5\nthat_from_position: 3\nthis_length: 16\nthat_length: 17\n," +
+						"this_from_position: 5\nthat_from_position: 3\nthis_length: 14\nthat_length: 15\n," +
 						" this_function: \"\\001\"\nthat_function: \"\\003\"\n" +
-						"this_from_position: 14\nthat_from_position: 10\nthis_length: 7\nthat_length: 7\n]"));
+						"this_from_position: 13\nthat_from_position: 9\nthis_length: 6\nthat_length: 6\n]"));
 		builtClones = expanderWithoutLongRows.expandClones(matches.get(1));
 		assertThat(builtClones.toString(),
 				is("[this_function: \"\\002\"\nthat_function: \"\\003\"\n"
@@ -154,7 +154,7 @@ public final class SnippetSimilarTest {
 			table.get(cur.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(cur);
 		}
 		assertThat(filtering.size(), is(51));
-		assertThat(table.get(0).size() + table.get(1).size() + table.get(2).size(), is(31));
+		assertThat(table.get(0).size() + table.get(1).size() + table.get(2).size(), is(32));
 
 		for (final List<SnippetLocation> subTable : table) {
 			Collections.sort(subTable, snippetLocationComparator);

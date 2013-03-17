@@ -1,10 +1,13 @@
 package ch.unibe.scg.cc;
 
-import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 
 import javax.inject.Inject;
+
+import com.google.common.base.Preconditions;
 
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
@@ -41,17 +44,14 @@ public class ShingleHasher implements Hasher {
 			}
 		}
 
-		return shingles.toArray((String[]) stringArrayType);
+		return shingles.toArray(stringArrayType);
 	}
 
-	byte[][] hashedShingles(String[] shingles) {
-		byte[][] hashed = new byte[shingles.length][];
-		for (int i = 0; i < shingles.length; i++) {
-			try {
-				hashed[i] = md.digest(shingles[i].getBytes("UTF-16LE"));
-			} catch (UnsupportedEncodingException e) {
-				throw new RuntimeException(e);
-			}
+	Iterable<ByteBuffer> hashedShingles(String[] shingles) {
+		// LinkedHashSet maintains order, but deletes duplicates.
+		LinkedHashSet<ByteBuffer> hashed = new LinkedHashSet<ByteBuffer>(shingles.length);
+		for (String shingle : shingles) {
+			hashed.add(ByteBuffer.wrap(md.digest(shingle.getBytes())));
 		}
 		return hashed;
 	}
@@ -59,28 +59,29 @@ public class ShingleHasher implements Hasher {
 	/**
 	 * Use a quarter of all hashes.
 	 */
-	byte[] sketchFromHashedShingles(byte[][] hashedShingles) {
+	byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
+		Preconditions.checkArgument(hashedShingles.iterator().hasNext(),
+				"There was nothing to make a sketch from. Input:\n" + doc);
 		final byte[] hash = new byte[SHA1_LENGTH];
-		int mask = 0x3;
+		int mask = 0x7; // After the first shift, that'll give binary pattern 11.
 		do {
-			for (final byte[] each : hashedShingles) {
-				if ((each[0] & mask) != mask) {
+			mask >>= 1;
+			for (final ByteBuffer hashedShingleBuffer : hashedShingles) {
+				final byte[] hashedShingle = hashedShingleBuffer.array();
+				if ((hashedShingle[0] & mask) != mask) {
 					continue;
 				}
-				xor(hash, each);
+				xor(hash, hashedShingle);
 			}
 			if (!isZero(hash)) {
 				return hash;
 			}
-			mask >>= 1;
-		} while (mask != 0);
-		throw new AssertionError("After mask was 0, there must be a hash.");
+		} while (mask != 0); // In the last run, mask is zero. Zero must turn up a hash.
+		throw new AssertionError("After mask was 0, there must be a hash. Input:\n" + doc);
 	}
 
 	public byte[] hash(String doc) throws CannotBeHashedException {
-		final String[] shingles = shingles(doc);
-		final byte[][] hashedShingles = hashedShingles(shingles);
-		return sketchFromHashedShingles(hashedShingles);
+		return sketchFromHashedShingles(hashedShingles(shingles(doc)), doc);
 	}
 
 	/**

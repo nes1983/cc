@@ -1,11 +1,11 @@
 package ch.unibe.scg.cc;
 
-import static org.hamcrest.Matchers.arrayWithSize;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,8 +28,7 @@ public class ShingleHasherTest {
 		assertThat(shingles, is(new String[] { "one two three four", "five six seven eight", "two three four five",
 				"six seven eight nine", "three four five six", "four five six seven" }));
 
-		byte[][] hashedShingles = ss.hashedShingles(shingles);
-		assertThat(hashedShingles, is(arrayWithSize(6)));
+		assertThat(((Collection) ss.hashedShingles(shingles)).size(), is(6));
 
 		return ss;
 	}
@@ -37,11 +36,15 @@ public class ShingleHasherTest {
 	@Given("test")
 	public ShingleHasher testEntireSketch(ShingleHasher ss) throws CannotBeHashedException {
 		byte[] sketch = ss.hash("one two three four five six");
-		assertThat(Arrays.toString(sketch), startsWith("[20, 57,"));
-		// The first two check out.
-		// That's the XOR of the following two.
-		// {-125,62,35,96,122,41,-101,74,-113,-121,80,36,-5,-86,-10,15,-56,61,26,-55}
-		// {-105,7,-7,62,-107,65,-74,-6,54,104,33,-58,-103,-42,5,-91,-59,-69,-23,107}
+		assertThat(Arrays.toString(sketch), startsWith("[68, -114,"));
 		return ss;
+	}
+
+	@Test
+	public void testStrangeInput() throws CannotBeHashedException {
+		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);
+		ss.hash("} t (t t) { t. t(); t. t(1); } } }");
+		ss.hash("t t; t t; t t; t t; t t;");
+		ss.hash("} t t(t t) { t (t. t()) {");
 	}
 }
