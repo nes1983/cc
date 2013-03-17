@@ -21,7 +21,7 @@
         <pathelement location="libs/commons-logging-1.1.1.jar"/>
         <pathelement location="libs/commons-collections-3.2.1.jar"/>
         <pathelement location="libs/postgresql-8.4-703.jdbc4.jar"/>
-        <pathelement location="libs/guava-10.0.1.jar"/>
+        <pathelement location="libs/guava-14.0.1.jar"/>
         <pathelement location="libs/zookeeper-3.3.2.jar"/>
         <pathelement location="libs/log4j-1.2.16.jar"/>
         <pathelement location="libs/hawtdispatch-1.7.jar"/>
