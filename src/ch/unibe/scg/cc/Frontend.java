@@ -71,31 +71,15 @@ public class Frontend {
 	}
 
 	public void register(Project project) {
-		boolean alreadyInDB = backend.lookup(project);
-		if (alreadyInDB) {
-			return;
-		}
-
 		backend.register(project);
 	}
 
 	public void register(Version version) {
-		boolean alreadyInDB = backend.lookup(version);
-		if (alreadyInDB) {
-			return;
-		}
-
 		backend.register(version);
 	}
 
 	public CodeFile register(String fileContent, String fileName) {
 		CodeFile codeFile = codeFileFactory.create(fileContent);
-
-		boolean alreadyInDB = backend.lookup(codeFile);
-		if (alreadyInDB) {
-			return codeFile; // already processed this file =)
-		}
-
 		StringBuilder content = new StringBuilder(fileContent);
 		registerWithBuilder(content, fileName, codeFile);
 
@@ -116,7 +100,7 @@ public class Frontend {
 		StringBuilder contents = new StringBuilder(function.getContents());
 		StringOfLines contentsStringOfLines = stringOfLinesFactory.make(contents.toString());
 
-		if (contentsStringOfLines.getNumberOfLines() < backend.MINIMUM_LINES) {
+		if (contentsStringOfLines.getNumberOfLines() < RegisterClonesBackend.MINIMUM_LINES) {
 			return;
 		}
 
