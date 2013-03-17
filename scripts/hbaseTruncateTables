@@ -7,4 +7,5 @@ truncate 'snippet2function'
 truncate 'function2roughclones'
 truncate 'popularSnippets'
 truncate 'function2fineclones'
+truncate 'duplicateSnippetsPerFunction'
 exit

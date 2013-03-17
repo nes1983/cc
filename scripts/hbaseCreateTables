@@ -7,4 +7,5 @@ create 'snippet2function', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'function2roughclones', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'popularSnippets', {NAME => 'd', COMPRESSION => 'SNAPPY'}
 create 'function2fineclones', {NAME => 'd', COMPRESSION => 'SNAPPY'}
+create 'duplicateSnippetsPerFunction', {NAME => 't1', COMPRESSION => 'SNAPPY'}, {NAME => 't2', COMPRESSION => 'SNAPPY'}, {NAME => 't3', COMPRESSION => 'SNAPPY'}
 exit
