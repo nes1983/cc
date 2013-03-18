@@ -3,11 +3,11 @@ package ch.unibe.scg.cc.activerecord;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
-public class Location extends Column {
+import ch.unibe.scg.cc.RegisterClonesBackend;
 
-	private static final int MINIMUM_CLONE_LENGTH = 10;
+public class Location extends Column {
 	private final byte[] LOCATION_NAME = Bytes.toBytes("ln");
-	final int length = MINIMUM_CLONE_LENGTH;
+	final int length = RegisterClonesBackend.MINIMUM_LINES;
 	int firstLine;
 
 	public void save(Put put) {
