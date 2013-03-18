@@ -59,8 +59,12 @@ public class JavaTokenizer implements Tokenizer {
 			String currentFunctionString = file.substring(lastStart, start);
 			lineLength = countOccurrences(currentFunctionString, '\n');
 
-			Function function = functionFactory.makeFunction(standardHasher, currentLineNumber, currentFunctionString);
-			ret.add(function);
+			// don't save first match (package & import statements)
+			if (currentLineNumber > 0) {
+				Function function = functionFactory.makeFunction(standardHasher, currentLineNumber,
+						currentFunctionString);
+				ret.add(function);
+			}
 
 			lastStart = start;
 			currentLineNumber += lineLength;

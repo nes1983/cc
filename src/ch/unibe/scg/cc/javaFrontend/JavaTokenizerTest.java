@@ -56,9 +56,7 @@ public class JavaTokenizerTest {
 
 		List<Function> list = tokenizer.tokenize(sampleClass(), null);
 
-		assertThat(list.size(), is(4));
-		verify(functionFactory).makeFunction(any(Hasher.class), eq(0),
-				eq("package        fish.stink;\nimport java.util.*;\nimport static System.out;\n\n"));
+		assertThat(list.size(), is(3));
 		verify(functionFactory).makeFunction(any(Hasher.class), eq(4), eq("public class Rod {\n"));
 		verify(functionFactory)
 				.makeFunction(
@@ -89,9 +87,7 @@ public class JavaTokenizerTest {
 
 		List<Function> list = tokenizer.tokenize(biggerSampleClass(), null);
 
-		assertThat(list.size(), is(6));
-		verify(functionFactory).makeFunction(any(Hasher.class), eq(0),
-				eq("package com.stradivari.util;\n" + "\n" + "import java.math.RoundingMode;\n" + "\n"));
+		assertThat(list.size(), is(5));
 		verify(functionFactory)
 				.makeFunction(
 						any(Hasher.class),
