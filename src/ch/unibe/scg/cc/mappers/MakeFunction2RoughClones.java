@@ -36,14 +36,14 @@ import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- * 
+ *
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- * 
+ *
  * OUTPUT:<br>
- * 
+ *
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -118,6 +118,7 @@ public class MakeFunction2RoughClones implements Runnable {
 
 					// save only half of the functions as row-key
 					// full table gets reconstructed in MakeSnippet2FineClones
+					// This *must* be the same as in CloneExpander.
 					if (ByteBuffer.wrap(thisFunction).compareTo(ByteBuffer.wrap(thatFunction)) >= 0) {
 						continue;
 					}

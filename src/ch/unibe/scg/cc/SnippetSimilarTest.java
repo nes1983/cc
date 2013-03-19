@@ -23,6 +23,7 @@ import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableListMultimap;
 import com.google.common.collect.Lists;
 import com.google.inject.Guice;
 import com.google.protobuf.ByteString;
@@ -101,17 +102,21 @@ public final class SnippetSimilarTest {
 		assertThat(printString(matches.get(2)), is("()"));
 
 		// Extract matches
-		Collection<Clone> builtClones = new CloneExpander().expandClones(matches.get(0));
+		final CloneExpander expanderWithoutLongRows = new CloneExpander(
+				ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
+				ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
+				null);
+		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
 		assertThat(builtClones.toString(),
 				is("[this_function: \"\\001\"\nthat_function: \"\\002\"\n" +
 						"this_from_position: 5\nthat_from_position: 3\nthis_length: 16\nthat_length: 17\n," +
 						" this_function: \"\\001\"\nthat_function: \"\\003\"\n" +
 						"this_from_position: 14\nthat_from_position: 10\nthis_length: 7\nthat_length: 7\n]"));
-		builtClones = new CloneExpander().expandClones(matches.get(1));
+		builtClones = expanderWithoutLongRows.expandClones(matches.get(1));
 		assertThat(builtClones.toString(),
 				is("[this_function: \"\\002\"\nthat_function: \"\\003\"\n"
 				+ "this_from_position: 0\nthat_from_position: 0\nthis_length: 22\nthat_length: 19\n]"));
-		builtClones = new CloneExpander().expandClones(matches.get(2));
+		builtClones = expanderWithoutLongRows.expandClones(matches.get(2));
 		assertThat(builtClones.toString(), is("[]"));
 	}
 
