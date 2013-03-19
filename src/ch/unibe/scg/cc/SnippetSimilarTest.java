@@ -14,11 +14,11 @@ import java.util.List;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.Protos.SnippetLocation;
-import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 

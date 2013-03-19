@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import ch.unibe.scg.cc.Protos.Clone;
-import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.SnippetLocation;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;

@@ -2,7 +2,7 @@ package ch.unibe.scg.cc;
 
 import java.util.Comparator;
 
-import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.collect.ComparisonChain;
 
