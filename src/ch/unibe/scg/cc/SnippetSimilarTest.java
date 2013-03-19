@@ -22,7 +22,6 @@ import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
-import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.inject.Guice;
@@ -35,20 +34,6 @@ import com.google.protobuf.ByteString;
  */
 @SuppressWarnings("javadoc")
 public final class SnippetSimilarTest {
-	static class SnippetMatchComparator implements Comparator<SnippetMatch> {
-		@Override public int compare(SnippetMatch o1, SnippetMatch o2) {
-			return ComparisonChain
-					.start()
-					.compare(
-							o1.getThatSnippetLocation().getFunction().asReadOnlyByteBuffer(),
-							o2.getThatSnippetLocation().getFunction().asReadOnlyByteBuffer())
-					.compare(
-							o1.getThisSnippetLocation().getPosition(),
-							o2.getThisSnippetLocation().getPosition())
-					.result();
-		}
-	}
-
 	static class SnippetLocationComparator implements Comparator<SnippetLocation> {
 		@Override public int compare(SnippetLocation o1, SnippetLocation o2) {
 			return o1.getSnippet().asReadOnlyByteBuffer().compareTo(
