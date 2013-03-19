@@ -18,6 +18,18 @@ class CloneExpander {
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippetlocations, they should contain their length.
 
+	/**
+	 * Stitch together the matches into Clones.
+	 *
+	 * @param matches
+	 *            sorted first by
+	 *            {@code SnippetMatch.getThatSnippetLocation().getFunction()},
+	 *            second by
+	 *            {@code SnippetMatch.getThisSnippetLocation().getPosition()}.
+	 *            {@code SnippetMatch.getThisSnippetLocation.getFunction()} must
+	 *            be constant for the entire list.
+	 * @return The matches, stitched together.
+	 */
 	public Collection<Clone> expandClones(final List<SnippetMatch> matches) {
 		final ImmutableList.Builder<Clone> clones = ImmutableList.builder();
 		final List<SnippetMatch> unprocessedMatches = Lists.newLinkedList(matches);
