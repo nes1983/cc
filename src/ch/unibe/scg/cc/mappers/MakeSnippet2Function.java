@@ -22,10 +22,10 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import ch.unibe.scg.cc.ByteUtils;
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.util.ByteUtils;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 

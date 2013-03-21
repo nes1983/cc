@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.util;
+package ch.unibe.scg.cc;
 
 public class ByteUtils {
 	/** 20 bytes each with hex-value \x00 */

@@ -14,10 +14,10 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.HBaseModule;
 import ch.unibe.scg.cc.modules.JavaModule;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;

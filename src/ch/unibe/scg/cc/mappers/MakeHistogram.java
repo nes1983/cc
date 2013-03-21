@@ -24,7 +24,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
+import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 

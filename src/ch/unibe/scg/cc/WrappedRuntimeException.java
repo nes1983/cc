@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.util;
+package ch.unibe.scg.cc;
 
 public class WrappedRuntimeException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

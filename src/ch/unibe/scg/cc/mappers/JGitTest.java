@@ -26,9 +26,9 @@ import org.eclipse.jgit.storage.dfs.InMemoryRepository;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 public class JGitTest implements Runnable {
 	static Logger logger = Logger.getLogger(JGitTest.class.getName());

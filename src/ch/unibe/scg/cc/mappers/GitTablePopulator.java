@@ -51,6 +51,7 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealProjectFactory;
@@ -61,7 +62,6 @@ import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.MakeHistogram.MakeHistogramReducer;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;

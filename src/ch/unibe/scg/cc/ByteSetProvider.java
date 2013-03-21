@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.util;
+package ch.unibe.scg.cc;
 
 import java.util.Comparator;
 import java.util.Set;
@@ -8,12 +8,10 @@ import javax.inject.Inject;
 import javax.inject.Provider;
 
 public class ByteSetProvider implements Provider<Set<byte[]>> {
-
 	final Provider<Comparator<byte[]>> comparatorProvider;
 
 	@Inject
-	public ByteSetProvider(Provider<Comparator<byte[]>> comparatorProvider) {
-		super();
+	ByteSetProvider(Provider<Comparator<byte[]>> comparatorProvider) {
 		this.comparatorProvider = comparatorProvider;
 	}
 
@@ -21,5 +19,4 @@ public class ByteSetProvider implements Provider<Set<byte[]>> {
 	public Set<byte[]> get() {
 		return new TreeSet<byte[]>(comparatorProvider.get());
 	}
-
 }

@@ -9,6 +9,7 @@ import javax.inject.Singleton;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
+import ch.unibe.scg.cc.ByteSetProvider;
 import ch.unibe.scg.cc.MessageDigestProvider;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
@@ -21,7 +22,6 @@ import ch.unibe.scg.cc.activerecord.RealProjectFactory;
 import ch.unibe.scg.cc.activerecord.RealVersion;
 import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
-import ch.unibe.scg.cc.util.ByteSetProvider;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;

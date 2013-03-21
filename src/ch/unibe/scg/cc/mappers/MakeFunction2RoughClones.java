@@ -24,12 +24,11 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import ch.unibe.scg.cc.ByteUtils;
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.mappers.Protos.SnippetLocation;
 import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
-import ch.unibe.scg.cc.util.ByteUtils;
-import ch.unibe.scg.cc.util.HashSerializer;
-import ch.unibe.scg.cc.util.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;

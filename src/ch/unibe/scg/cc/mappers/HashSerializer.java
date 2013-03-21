@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.util;
+package ch.unibe.scg.cc.mappers;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -7,14 +7,13 @@ import java.util.TreeSet;
 
 import javax.inject.Inject;
 
-import org.apache.hadoop.hbase.util.Bytes;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.google.common.base.Preconditions;
 import com.google.common.primitives.UnsignedBytes;
 
 public class HashSerializer {
-
 	private final Comparator<byte[]> byteArrayComparator;
 
 	@Inject
@@ -22,12 +21,7 @@ public class HashSerializer {
 		this.byteArrayComparator = byteArrayComparator;
 	}
 
-	/**
-	 * 
-	 * @param set
-	 *            of byte[], all sharing the same size.
-	 * @return
-	 */
+	/** @param set of byte[], all sharing the same size. */
 	public byte[] serialize(Set<byte[]> set) {
 		if (set.size() == 0) {
 			return new byte[] {};
@@ -58,17 +52,11 @@ public class HashSerializer {
 		}
 	}
 
-	/**
-	 * assert array.length % sizeOfSingleEntry == 0;
-	 * 
-	 * @param array
-	 * @param sizeOfSingleEntry
-	 * @return
-	 */
+	/** {@code array.length % sizeOfSingleEntry == 0} should hold */
 	public Set<byte[]> deserialize(byte[] array, int sizeOfSingleEntry) {
-		Set<byte[]> result = new TreeSet<byte[]>(byteArrayComparator);
+		Preconditions.checkArgument(array.length % sizeOfSingleEntry == 0);
 
-		assert array.length % sizeOfSingleEntry == 0;
+		Set<byte[]> result = new TreeSet<byte[]>(byteArrayComparator);
 
 		for (int i = 0; i * sizeOfSingleEntry < array.length; i++) {
 			byte[] target = new byte[sizeOfSingleEntry];
@@ -79,7 +67,7 @@ public class HashSerializer {
 		return Collections.unmodifiableSet(result);
 	}
 
-	public static class HashSerializerTest {
+	public final static class HashSerializerTest {
 		@Test
 		public void testDeserialize() {
 			HashSerializer hs = new HashSerializer(UnsignedBytes.lexicographicalComparator());

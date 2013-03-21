@@ -13,7 +13,6 @@ import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.util.ByteUtils;
 
 public class RegisterClonesBackend {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
