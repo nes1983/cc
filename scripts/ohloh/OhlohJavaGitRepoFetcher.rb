@@ -20,41 +20,44 @@ def parseProject projectName, projectUrl
 	doc = getDoc(projectUrl, pageNumber)
 	
 	if (doc.nil?)
-		$stderr.puts "doc is nil: #{projectName}, #{projectUrl}"
-		return
+		raise "Could not load project #{projectName}, #{projectUrl}"
 	end
 	
 	title = projectUrl.strip.gsub(/\/p\//,"")
-	nbGitRepos = doc.css("div.span4").text.strip.slice(/of (\d+)/, 1).to_i
+	numGitRepos = doc.css("div.span4").text.strip.slice(/of (\d+)/, 1).to_i
+	remaining = numGitRepos
 	
-	if (nbGitRepos < 1)
+	if (remaining < 1)
 		$countProjectsWithoutGitRepos += 1
 		return
 	end
 	
 	links = doc.css("td.span4")
 	
-	while (nbGitRepos > 0)
+	while (remaining > 0)
 		links = doc.css("td.span4")
 		for l in links
 			link = "Git" + "\t" + l.text.gsub(/\r/,"").gsub(/\n/,"")
 			puts "#{projectName}\t#{title}\t#{link}"
 		end
-		pageNumber += 1
-        doc = getDoc(projectUrl, pageNumber)
-		nbGitRepos -= PROJECTS_PER_PAGE
+		
+		begin
+			pageNumber += 1
+        	doc = getDoc(projectUrl, pageNumber)
+		end until doc or pageNumber > numGitRepos * PROJECTS_PER_PAGE
+			
+		remaining -= PROJECTS_PER_PAGE
 	end
 end
 
 def getDoc (project, pageNumber)
 	link = "http://www.ohloh.net#{project}/enlistments?query=Git&sort=type&page=#{pageNumber}"
 	begin
-		doc = Nokogiri::HTML(open(link))
-	rescue Exception => msg
+		return Nokogiri::HTML(open(link))
+	rescue Exception => msg #
 		$stderr.puts "Error occurred in getDoc(#{project}, #{pageNumber}): #{msg}"
-		doc = nil
+		return nil
 	end
-	return doc
 end
 
 def scanRepos
