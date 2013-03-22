@@ -18,13 +18,13 @@ public class RegisterClonesBackend {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
 	public static final int MINIMUM_LINES = 5;
 	public static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
-	CloneRegistry registry;
+	Registry registry;
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
 	StringOfLinesFactory stringOfLinesFactory;
 
 	@Inject
-	public RegisterClonesBackend(CloneRegistry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
+	public RegisterClonesBackend(Registry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
 			StringOfLinesFactory stringOfLinesFactory) {
 		super();
 		this.registry = registry;
@@ -36,7 +36,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -53,7 +53,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -105,41 +105,5 @@ public class RegisterClonesBackend {
 
 	public void register(Version version) {
 		registry.register(version);
-	}
-
-	/**
-	 * looks up the codefile
-	 *
-	 * @param codeFile
-	 * @return returns true, if file is already in the database, otherwise
-	 *         false.
-	 */
-	public boolean lookup(CodeFile codeFile) {
-		byte[] hash = codeFile.getFileContentsHash();
-		return registry.lookupCodeFile(hash);
-	}
-
-	/**
-	 * looks up the version
-	 *
-	 * @param version
-	 * @return returns true, if version is already in the database, otherwise
-	 *         false.
-	 */
-	public boolean lookup(Version version) {
-		byte[] hash = version.getHash();
-		return registry.lookupVersion(hash);
-	}
-
-	/**
-	 * looks up the project
-	 *
-	 * @param project
-	 * @return returns true, if project is already in the database, otherwise
-	 *         false.
-	 */
-	public boolean lookup(Project project) {
-		byte[] hash = project.getHash();
-		return registry.lookupProject(hash);
 	}
 }

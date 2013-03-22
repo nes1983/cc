@@ -10,7 +10,9 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.ByteSetProvider;
+import ch.unibe.scg.cc.CloneRegistry;
 import ch.unibe.scg.cc.MessageDigestProvider;
+import ch.unibe.scg.cc.Registry;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
@@ -26,12 +28,14 @@ import ch.unibe.scg.cc.activerecord.Version;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
+
 //@formatter:off
 public class CCModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(Singleton.class);
 		bind(Configuration.class).toProvider(ConfigurationProvider.class).in(Singleton.class);
+		bind(Registry.class).to(CloneRegistry.class).in(Singleton.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
 		bind(new TypeLiteral<Set<byte[]>>() {}).toProvider(ByteSetProvider.class);
 

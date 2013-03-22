@@ -30,6 +30,8 @@ public class HBaseModule extends AbstractModule {
 		installHTable("popularSnippets");
 		installHTable("function2fineclones");
 
+		installHTable("duplicateSnippetsPerFunction");
+
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
 		bind(IPutFactory.class).to(PutFactory.class);

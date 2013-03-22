@@ -1,15 +1,13 @@
 package ch.unibe.scg.cc;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.inject.Named;
 import javax.inject.Provider;
-import javax.inject.Singleton;
 
-import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
-import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
@@ -22,17 +20,9 @@ import ch.unibe.scg.cc.activerecord.Version;
 
 import com.google.inject.Inject;
 
-@Singleton
-public class CloneRegistry {
-
-	public static final int TABLE_PROJECT2VERSION = 1;
-	public static final int TABLE_FILE2FUNCTION = 2;
-	public static final int TABLE_FUNCTION2SNIPPET = 3;
-	public static final int TABLE_VERSION2FILE = 4;
-	public static final int TABLE_STRINGS = 5;
-
+public class CloneRegistry implements Registry {
+	final static Logger logger = Logger.getLogger(CloneRegistry.class.getName());
 	final Provider<Snippet> snippetProvider;
-
 	final Provider<Location> locationProvider;
 
 	@Inject(optional = true)
@@ -75,82 +65,6 @@ public class CloneRegistry {
 		Location location = locationProvider.get();
 		location.setFirstLine(from);
 		this.register(hash, snippet, function, location, type);
-	}
-
-	/**
-	 * looks up a key in the provided table
-	 * 
-	 * @param key
-	 * @param table
-	 * @return true if the key was found, otherwise false
-	 */
-	public boolean lookup(byte[] key, int table) {
-		HTable t = getTable(table);
-		assert t != null;
-		Get k = new Get(key);
-		try {
-			return !t.get(k).isEmpty();
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	public boolean lookupCodeFile(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_FILE2FUNCTION);
-		assert t != null;
-		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
-		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127 });
-		Scan s = new Scan(startKey, endKey);
-		try {
-			return t.getScanner(s).next() != null;
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	public boolean lookupVersion(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_VERSION2FILE);
-		assert t != null;
-		byte[] startKey = Bytes.add(key, new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
-		byte[] endKey = Bytes.add(key, new byte[] { 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127, 127,
-				127, 127, 127, 127, 127, 127, 127 });
-		Scan s = new Scan(startKey, endKey);
-		try {
-			return t.getScanner(s).next() != null;
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	public boolean lookupProject(byte[] key) {
-		HTable t = getTable(CloneRegistry.TABLE_PROJECT2VERSION);
-		assert t != null;
-		Scan s = new Scan(key, key);
-		try {
-			return t.getScanner(s).next() != null;
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
-	private HTable getTable(int table) {
-		switch (table) {
-		case TABLE_PROJECT2VERSION:
-			return project2version;
-		case TABLE_FILE2FUNCTION:
-			return file2function;
-		case TABLE_FUNCTION2SNIPPET:
-			return function2snippet;
-		case TABLE_VERSION2FILE:
-			return version2file;
-		case TABLE_STRINGS:
-			return strings;
-		default:
-			return null;
-		}
 	}
 
 	public void register(CodeFile codeFile) {
