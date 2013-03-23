@@ -78,6 +78,7 @@ public class MRWrapper {
 		Configuration merged = merge(configurationProvider.get(), config);
 		Job job = Job.getInstance(merged, jobName);
 		job.setJarByClass(MRMain.class);
+		TableMapReduceUtil.addDependencyJars(job);
 
 		Class<?> mapperClass = (mapperTableName.isPresent()) ? MRMainTableMapper.class : MRMainMapper.class;
 		Class<?> reducerClass = (reducerTableName.isPresent()) ? MRMainTableReducer.class : MRMainReducer.class;
