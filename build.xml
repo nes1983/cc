@@ -102,6 +102,7 @@
 			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>
 			<zipfileset src="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
 			<zipfileset src="libs/protobuf-java-2.4.1.jar"/>
+			<zipfileset src="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
 		</jarjar>
 	</target>
 	<target name="uploadJar">
