@@ -77,7 +77,8 @@ public class GitTablePopulator implements Runnable {
 	private static final String MAP_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
-	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/testdata.har"; // projects.har
+	// num_porjects: projects.har 405 | testdata.har: 2 | dataset.har 2246
+	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
 	private static final String PROJECTS_FOLDER_PATH = "."; // . for all folders
 	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
 	final MRWrapper mrWrapper;
@@ -255,12 +256,12 @@ public class GitTablePopulator implements Runnable {
 				TreeWalk treeWalk = new TreeWalk(r);
 				treeWalk.addTree(tree);
 				treeWalk.setRecursive(true);
-				if (!treeWalk.next()) {
-					return;
-				}
-				while (treeWalk.next()) {
-					ObjectId objectId = treeWalk.getObjectId(0);
-					try {
+				try {
+					if (!treeWalk.next()) {
+						return;
+					}
+					while (treeWalk.next()) {
+						ObjectId objectId = treeWalk.getObjectId(0);
 						String content = getContent(r, objectId);
 						String filePath = treeWalk.getPathString();
 						if (!filePath.endsWith(".java")) {
@@ -271,11 +272,11 @@ public class GitTablePopulator implements Runnable {
 						CodeFile codeFile = register(content, fileName);
 						Version version = register(filePath, codeFile);
 						register(projectName, version, tag);
-					} catch (MissingObjectException moe) {
-						System.out.println("twn MissingObjectException: " + moe);
 					}
+					processedTagsCounter++;
+				} catch (MissingObjectException moe) {
+					logger.warning(projectName + " - MissingObjectException: " + moe);
 				}
-				processedTagsCounter++;
 			}
 			logger.finer("svd FINISHED PROCESSING " + packFilePath);
 		}
