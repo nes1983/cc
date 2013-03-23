@@ -75,12 +75,12 @@ public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "2000";
-	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx2000m";
+	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx3000m";
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	// num_porjects: projects.har 405 | testdata.har: 2 | dataset.har 2246
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
 	private static final String PROJECTS_FOLDER_PATH = "."; // . for all folders
-	private static final long MAX_PACK_FILESIZE_BYTES = 100000000;
+	private static final long MAX_PACK_FILESIZE_BYTES = 52428800;
 	final MRWrapper mrWrapper;
 
 	@Inject
