@@ -5,10 +5,9 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -120,23 +119,20 @@ public class GitTablePopulator implements Runnable {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
 		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
-		FileSystem fs = FileSystem.get(conf);
+
 		Path path = new Path(PROJECTS_FOLDER_PATH);
-
-		Queue<Path> packFilePaths = new LinkedList<Path>();
+		Collection<Path> packFilePaths = Lists.newArrayList();
 		logger.finer("yyy start finding pack files " + path);
-		findPackFilePaths(fs, path, packFilePaths);
+		findPackFilePaths(FileSystem.get(conf), path, packFilePaths);
 
-		Joiner joiner = Joiner.on(",");
-		return joiner.join(packFilePaths);
-
+		return Joiner.on(",").join(packFilePaths);
 	}
 
 	/**
 	 * @param listToFill
 	 *            result parameter
 	 */
-	private void findPackFilePaths(FileSystem fs, Path path, Queue<Path> listToFill) throws IOException {
+	private void findPackFilePaths(FileSystem fs, Path path, Collection<Path> listToFill) throws IOException {
 		FileStatus[] fstatus = fs.listStatus(path);
 		for (FileStatus f : fstatus) {
 			Path p = f.getPath();
