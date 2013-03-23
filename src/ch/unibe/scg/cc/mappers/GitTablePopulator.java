@@ -130,6 +130,7 @@ public class GitTablePopulator implements Runnable {
 		logger.finer("yyy start finding pack files " + path);
 		ExecutorService threadPool = Executors.newFixedThreadPool(32);
 		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths);
+		threadPool.shutdown();
 		try {
 			threadPool.awaitTermination(10, TimeUnit.MINUTES);
 		} catch (InterruptedException e) {
