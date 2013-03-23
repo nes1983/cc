@@ -45,4 +45,20 @@
     <name>hfile.block.index.cacheonwrite</name>
     <value>true</value>
   </property>
+  <property>
+    <name>hbase.regionserver.lease.period</name>
+    <value>900000</value> <!-- 900 000, 15 minutes -->
+  </property>
+  <property>
+    <name>hbase.rpc.timeout</name>
+    <value>900000</value> <!-- 15 minutes -->
+  </property>
+  <property>
+    <name>hbase.regionserver.wal.enablecompression</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>leela.unibe.ch</value>
+  </property>
 </configuration>
