@@ -11,8 +11,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -120,7 +120,7 @@ public class GitTablePopulator implements Runnable {
 		}
 	}
 
-	private String getInputPaths() throws IOException {
+	private String getInputPaths() throws IOException, InterruptedException {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
 		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
@@ -128,13 +128,12 @@ public class GitTablePopulator implements Runnable {
 		Path path = new Path(PROJECTS_FOLDER_PATH);
 		Collection<Path> packFilePaths = Collections.synchronizedCollection(new ArrayList<Path>());
 		logger.finer("yyy start finding pack files " + path);
-		ExecutorService threadPool = Executors.newFixedThreadPool(32);
-		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths);
-		threadPool.shutdown();
-		try {
-			threadPool.awaitTermination(10, TimeUnit.MINUTES);
-		} catch (InterruptedException e) {
-			throw new RuntimeException(e);
+
+		AtomicInteger counter = new AtomicInteger();
+		ForkJoinPool threadPool = new ForkJoinPool();
+		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths, counter);
+		while (threadPool.hasQueuedSubmissions() || counter.get() != 0) {
+			Thread.sleep(1000);
 		}
 
 		return Joiner.on(",").join(packFilePaths);
@@ -143,9 +142,11 @@ public class GitTablePopulator implements Runnable {
 	/**
 	 * @param listToFill
 	 *            result parameter.
+	 * @param counter
 	 */
 	private void findPackFilePaths(final ExecutorService executorService, final FileSystem fs, Path path,
-			final Collection<Path> listToFill) {
+			final Collection<Path> listToFill, final AtomicInteger counter) {
+		counter.incrementAndGet();
 		FileStatus[] fstatus;
 		try {
 			fstatus = fs.listStatus(path);
@@ -162,11 +163,12 @@ public class GitTablePopulator implements Runnable {
 				executorService.submit(new Runnable() {
 					@Override
 					public void run() {
-						findPackFilePaths(executorService, fs, p, listToFill);
+						findPackFilePaths(executorService, fs, p, listToFill, counter);
 					}
 				});
 			}
 		}
+		counter.decrementAndGet();
 	}
 
 	public static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
