@@ -37,7 +37,7 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -54,7 +54,7 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -76,13 +76,12 @@ public class RegisterClonesBackend implements Closeable {
 		byte[] hash;
 		try {
 			hash = hasher.hash(snippet);
-			logger.info("hash " + hash + " for " + type);
 			// drop snippets which cause an empty hash:
 			if (Arrays.equals(hash, ByteUtils.EMPTY_SHA1_KEY)) {
 				return;
 			}
 		} catch (CannotBeHashedException e) {
-			logger.severe(snippet + " caused CannotBeHashedException. " + e);
+			logger.warning(snippet + " caused CannotBeHashedException. " + e);
 			return;
 		}
 		registry.register(hash, snippet, function, from, length, type);
@@ -107,7 +106,6 @@ public class RegisterClonesBackend implements Closeable {
 	public void register(Version version) {
 		registry.register(version);
 	}
-
 
 	@Override
 	public void close() throws IOException {
