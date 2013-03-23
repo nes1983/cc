@@ -317,6 +317,7 @@ public class GitTablePopulator implements Runnable {
 		@Override
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
+			javaFrontend.close();
 			project2version.flushCommits();
 			version2file.flushCommits();
 			file2function.flushCommits();

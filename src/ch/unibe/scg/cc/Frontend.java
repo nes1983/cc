@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
+import java.io.IOException;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -13,7 +15,7 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
-public class Frontend {
+public class Frontend implements Closeable {
 
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
@@ -128,4 +130,9 @@ public class Frontend {
 		codeFile.addFunction(functionType3);
 	}
 
+
+	@Override
+	public void close() throws IOException {
+		backend.close();
+	}
 }

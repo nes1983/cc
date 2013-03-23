@@ -1,12 +1,12 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
 import java.io.IOException;
 import java.util.logging.Logger;
 
 import javax.inject.Named;
 import javax.inject.Provider;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
@@ -17,33 +17,34 @@ import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealCodeFile;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.inject.Inject;
 
-public class CloneRegistry implements Registry {
+public class CloneRegistry implements Registry, Closeable {
 	final static Logger logger = Logger.getLogger(CloneRegistry.class.getName());
 	final Provider<Snippet> snippetProvider;
 	final Provider<Location> locationProvider;
 
 	@Inject(optional = true)
 	@Named("project2version")
-	HTable project2version;
+	HTableWriteBuffer project2version;
 
 	@Inject(optional = true)
 	@Named("version2file")
-	HTable version2file;
+	HTableWriteBuffer version2file;
 
 	@Inject(optional = true)
 	@Named("file2function")
-	HTable file2function;
+	HTableWriteBuffer file2function;
 
 	@Inject(optional = true)
 	@Named("function2snippet")
-	HTable function2snippet;
+	HTableWriteBuffer function2snippet;
 
 	@Inject(optional = true)
 	@Named("strings")
-	HTable strings;
+	HTableWriteBuffer strings;
 
 	@Inject
 	public CloneRegistry(Provider<Snippet> hashFactProvider, Provider<Location> locationProvider) {
@@ -75,12 +76,12 @@ public class CloneRegistry implements Registry {
 			try {
 				// save function
 				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
-				file2function.put(put);
+				file2function.write(put);
 
 				// save snippet
 				Put fnSnippet = new Put(function.getHash());
 				function.saveSnippet(fnSnippet);
-				strings.put(fnSnippet);
+				strings.write(fnSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -89,14 +90,14 @@ public class CloneRegistry implements Registry {
 
 	/**
 	 * saves the project in the projects table
-	 * 
+	 *
 	 * @param project
 	 */
 	public void register(Project project) {
 		Put put = new Put(project.getHash());
 		try {
 			project.save(put);
-			project2version.put(put);
+			project2version.write(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -104,14 +105,14 @@ public class CloneRegistry implements Registry {
 
 	/**
 	 * saves the version in the versions table
-	 * 
+	 *
 	 * @param version
 	 */
 	public void register(Version version) {
 		Put put = new Put(version.getHash());
 		try {
 			version.save(put);
-			version2file.put(put);
+			version2file.write(put);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -126,15 +127,23 @@ public class CloneRegistry implements Registry {
 			try {
 				// save snippet
 				snippet.save(put);
-				function2snippet.put(put);
+				function2snippet.write(put);
 
 				// save snippetValue
 				snippet.saveSnippet(hfSnippet);
-				strings.put(hfSnippet);
+				strings.write(hfSnippet);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
 		}
 	}
 
+	@Override
+	public void close() throws IOException {
+		project2version.close();
+		version2file.close();
+		file2function.close();
+		function2snippet.close();
+		strings.close();
+	}
 }

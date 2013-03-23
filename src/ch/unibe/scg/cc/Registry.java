@@ -1,12 +1,14 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
+
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.Version;
 
-public interface Registry {
+public interface Registry extends Closeable {
 	public void register(Project project);
 
 	public void register(Version version);

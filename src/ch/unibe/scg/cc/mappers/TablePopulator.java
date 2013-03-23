@@ -113,6 +113,12 @@ public class TablePopulator implements Runnable {
 			versions.flushCommits();
 			strings.flushCommits();
 		}
+
+		@Override
+		public void cleanup(Context context) throws IOException, InterruptedException {
+			super.cleanup(context);
+			javaFrontend.close();
+		}
 	}
 
 	public static class CharsetDetector {

@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
@@ -14,7 +16,7 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
-public class RegisterClonesBackend {
+public class RegisterClonesBackend implements Closeable {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
 	public static final int MINIMUM_LINES = 5;
 	public static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
@@ -26,7 +28,6 @@ public class RegisterClonesBackend {
 	@Inject
 	public RegisterClonesBackend(Registry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
 			StringOfLinesFactory stringOfLinesFactory) {
-		super();
 		this.registry = registry;
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
@@ -36,7 +37,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -53,7 +54,7 @@ public class RegisterClonesBackend {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -105,5 +106,11 @@ public class RegisterClonesBackend {
 
 	public void register(Version version) {
 		registry.register(version);
+	}
+
+
+	@Override
+	public void close() throws IOException {
+		registry.close();
 	}
 }

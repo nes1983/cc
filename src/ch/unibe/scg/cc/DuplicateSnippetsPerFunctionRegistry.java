@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.logging.Logger;
@@ -25,7 +26,7 @@ import com.google.inject.Inject;
  * snippets in one function. We want to measure how often our assumption
  * "one snippet occurs at max. once per function" is violated.
  */
-public class DuplicateSnippetsPerFunctionRegistry implements Registry {
+public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable {
 	final static Logger logger = Logger.getLogger(DuplicateSnippetsPerFunctionRegistry.class.getName());
 	final private static byte[] TYPE_1_FAMILY = Bytes.toBytes("t1");
 	final private static byte[] TYPE_2_FAMILY = Bytes.toBytes("t2");
@@ -93,4 +94,9 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry {
 		}
 	}
 
+
+	@Override
+	public void close() throws IOException {
+		cloneRegistry.close();
+	}
 }

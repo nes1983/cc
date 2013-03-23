@@ -49,6 +49,7 @@ public class HTableWriteBuffer implements Closeable {
 		return puts.size() <= MAX_SIZE;
 	}
 
+	/** Factory thru assisted inject for {@link HTableWriteBuffer} */
 	public static interface BufferFactory {
 		public HTableWriteBuffer create(HTable htable);
 	}
