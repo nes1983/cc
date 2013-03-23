@@ -1,0 +1,4 @@
+<property>
+	<name>yarn.nodemanager.resource.memory-mb</name>
+	<value>12000</value>
+</property>
