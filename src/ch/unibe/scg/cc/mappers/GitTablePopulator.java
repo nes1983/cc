@@ -5,9 +5,14 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -121,26 +126,44 @@ public class GitTablePopulator implements Runnable {
 		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 
 		Path path = new Path(PROJECTS_FOLDER_PATH);
-		Collection<Path> packFilePaths = Lists.newArrayList();
+		Collection<Path> packFilePaths = Collections.synchronizedCollection(new ArrayList<Path>());
 		logger.finer("yyy start finding pack files " + path);
-		findPackFilePaths(FileSystem.get(conf), path, packFilePaths);
+		ExecutorService threadPool = Executors.newFixedThreadPool(32);
+		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths);
+		try {
+			threadPool.awaitTermination(10, TimeUnit.MINUTES);
+		} catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
 
 		return Joiner.on(",").join(packFilePaths);
 	}
 
 	/**
 	 * @param listToFill
-	 *            result parameter
+	 *            result parameter.
 	 */
-	private void findPackFilePaths(FileSystem fs, Path path, Collection<Path> listToFill) throws IOException {
-		FileStatus[] fstatus = fs.listStatus(path);
+	private void findPackFilePaths(final ExecutorService executorService, final FileSystem fs, Path path,
+			final Collection<Path> listToFill) {
+		FileStatus[] fstatus;
+		try {
+			fstatus = fs.listStatus(path);
+		} catch (IOException e) {
+			throw new RuntimeException("Failed to read " + path, e);
+		}
+
 		for (FileStatus f : fstatus) {
-			Path p = f.getPath();
+			final Path p = f.getPath();
 			logger.finer("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE) && f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
 				listToFill.add(p);
 			} else if (f.isDirectory()) {
-				findPackFilePaths(fs, p, listToFill);
+				executorService.submit(new Runnable() {
+					@Override
+					public void run() {
+						findPackFilePaths(executorService, fs, p, listToFill);
+					}
+				});
 			}
 		}
 	}
