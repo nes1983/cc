@@ -22,6 +22,7 @@ import ch.unibe.scg.cc.modules.JavaModule;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Module;
 
 /**
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
@@ -123,10 +124,18 @@ public class MRMain extends Configured implements Tool {
 
 		@SuppressWarnings("unchecked")
 		@Override
-		protected void setup(Context context) throws IOException, InterruptedException {
+		protected void setup(final Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+
+			Module contextModule = new AbstractModule() {
+				@Override protected void configure() {
+					bind(Context.class).toInstance(context);
+				}
+			};
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
+					contextModule);
+
 			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
 		}

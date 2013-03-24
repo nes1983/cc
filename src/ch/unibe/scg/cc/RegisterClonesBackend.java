@@ -8,6 +8,8 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.apache.hadoop.mapreduce.Mapper.Context;
+
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
@@ -24,20 +26,22 @@ public class RegisterClonesBackend implements Closeable {
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
 	StringOfLinesFactory stringOfLinesFactory;
+	Context context;
 
 	@Inject
 	public RegisterClonesBackend(Registry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
-			StringOfLinesFactory stringOfLinesFactory) {
+			StringOfLinesFactory stringOfLinesFactory, Context context) {
 		this.registry = registry;
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.stringOfLinesFactory = stringOfLinesFactory;
+		this.context = context;
 	}
 
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -54,7 +58,7 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -81,7 +85,7 @@ public class RegisterClonesBackend implements Closeable {
 				return;
 			}
 		} catch (CannotBeHashedException e) {
-			logger.warning(snippet + " caused CannotBeHashedException. " + e);
+			context.getCounter(Counters.CANNOT_BE_HASHED).increment(1);
 			return;
 		}
 		registry.register(hash, snippet, function, from, length, type);

@@ -8,6 +8,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.mapreduce.Mapper.Context;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -41,7 +42,7 @@ public class RegisterClonesBackendTest {
 		StandardHasher sth = i.getInstance(StandardHasher.class);
 		ShingleHasher shh = i.getInstance(ShingleHasher.class);
 
-		RegisterClonesBackend rcb = new RegisterClonesBackend(cr, sth, shh, null);
+		RegisterClonesBackend rcb = new RegisterClonesBackend(cr, sth, shh, stringOfLinesFactory, mock(Context.class));
 
 		project = mock(RealProject.class);
 		function = mock(Function.class);
