@@ -129,10 +129,10 @@ public class GitTablePopulator implements Runnable {
 		Collection<Path> packFilePaths = Collections.synchronizedCollection(new ArrayList<Path>());
 		logger.finer("yyy start finding pack files " + path);
 
-		AtomicInteger counter = new AtomicInteger();
+		AtomicInteger counter = new AtomicInteger(1);
 		ForkJoinPool threadPool = new ForkJoinPool();
 		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths, counter);
-		while (threadPool.hasQueuedSubmissions() || counter.get() != 0) {
+		while (counter.get() != 0) {
 			Thread.sleep(1000);
 		}
 
@@ -146,7 +146,6 @@ public class GitTablePopulator implements Runnable {
 	 */
 	private void findPackFilePaths(final ExecutorService executorService, final FileSystem fs, Path path,
 			final Collection<Path> listToFill, final AtomicInteger counter) {
-		counter.incrementAndGet();
 		FileStatus[] fstatus;
 		try {
 			fstatus = fs.listStatus(path);
@@ -160,6 +159,7 @@ public class GitTablePopulator implements Runnable {
 			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE) && f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
 				listToFill.add(p);
 			} else if (f.isDirectory()) {
+				counter.incrementAndGet();
 				executorService.submit(new Runnable() {
 					@Override
 					public void run() {
