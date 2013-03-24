@@ -107,8 +107,7 @@ public class GitTablePopulator implements Runnable {
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 
-			logger.finer("found: " + inputPaths);
-			logger.finer("yyy wait for completion");
+			logger.info("Found: " + inputPaths);
 			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
 					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
 					IntWritable.class);
@@ -197,11 +196,13 @@ public class GitTablePopulator implements Runnable {
 		final RealProjectFactory projectFactory;
 		final RealVersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
+		final Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
+		final Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
 
 		@Override
 		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
 			String packFilePath = key.toString();
-			logger.finer("yyy RECEIVED: " + packFilePath);
+			logger.info("Received: " + packFilePath);
 			InputStream packFileStream = new ByteArrayInputStream(value.getBytes());
 			DfsRepositoryDescription desc = new DfsRepositoryDescription(packFilePath);
 			InMemoryRepository r = new InMemoryRepository(desc);
@@ -229,7 +230,7 @@ public class GitTablePopulator implements Runnable {
 			List<PackedRef> pr = prp.parse(ins);
 
 			String projectName = getProjName(packFilePath);
-			logger.finer("PROCESSING: " + packFilePath);
+			logger.info("Processing " + projectName + ": " + packFilePath);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
 				int toIndex = tagCount - 1;
@@ -249,14 +250,14 @@ public class GitTablePopulator implements Runnable {
 				try {
 					commit = revWalk.parseCommit(paref.getKey());
 				} catch (MissingObjectException e) {
-					logger.finer("ERROR in file " + packFilePath + ": " + e.getMessage());
+					logger.warning("ERROR in file " + packFilePath + ": " + e.getMessage());
 					continue;
 				}
-				RevTree tree = commit.getTree();
-				TreeWalk treeWalk = new TreeWalk(r);
-				treeWalk.addTree(tree);
-				treeWalk.setRecursive(true);
 				try {
+					RevTree tree = commit.getTree();
+					TreeWalk treeWalk = new TreeWalk(r);
+					treeWalk.addTree(tree);
+					treeWalk.setRecursive(true);
 					if (!treeWalk.next()) {
 						return;
 					}
@@ -275,18 +276,26 @@ public class GitTablePopulator implements Runnable {
 					}
 					processedTagsCounter++;
 				} catch (MissingObjectException moe) {
-					logger.warning(projectName + " - MissingObjectException: " + moe);
+					logger.warning("MissingObjectException in " + projectName + " : " + moe);
 				}
 			}
-			logger.finer("svd FINISHED PROCESSING " + packFilePath);
+			logger.info("Finished processing: " + projectName);
 		}
 
 		private String getProjName(String packFilePath) {
-			Matcher m = Pattern.compile(".+/(.+)/.git/.+").matcher(packFilePath);
-			if (!m.matches()) {
-				return packFilePath;
+			Matcher m = projectNameRegexNonBare.matcher(packFilePath);
+			if (m.matches()) {
+				return m.group(1);
 			}
-			return m.group(1);
+
+			m = projectNameRegexBare.matcher(packFilePath);
+			if (m.matches()) {
+				return m.group(1);
+			}
+
+			logger.warning("Could not simplify project name " + packFilePath);
+			// Use URI as project name.
+			return packFilePath;
 		}
 
 		private String getContent(Repository repository, ObjectId objectId) throws MissingObjectException, IOException {
@@ -339,6 +348,10 @@ public class GitTablePopulator implements Runnable {
 					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 			String projName = gtpm.getProjName(fullPathString);
 			Assert.assertEquals("apfel", projName);
+
+			fullPathString = "har://hdfs-haddock.unibe.ch/projects/dataset.har/dataset/sensei/objects/pack/pack-a33a3daca1573e82c6fbbc95846a47be4690bbe4.pack";
+			projName = gtpm.getProjName(fullPathString);
+			Assert.assertEquals("sensei", projName);
 		}
 	}
 }
