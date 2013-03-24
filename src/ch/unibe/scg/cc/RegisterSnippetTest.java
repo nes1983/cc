@@ -22,7 +22,7 @@ public class RegisterSnippetTest {
 		final Snippet snippet = mock(Snippet.class);
 		when(snippetProvider.get()).thenReturn(snippet);
 
-		CloneRegistry registry = new CloneRegistry(snippetProvider, null);
+		CloneRegistry registry = new CloneRegistry(snippetProvider, null, null);
 		Function function = new Function(null, 0, "");
 
 		byte[] bytes = new byte[] { 0 };

@@ -63,10 +63,13 @@ public class MakeFunction2RoughClones implements Runnable {
 	public static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
+		final IPutFactory putFactory;
 
 		@Inject
-		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets) {
+		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets,
+				IPutFactory putFactory) {
 			super(popularSnippets);
+			this.putFactory = putFactory;
 		}
 
 		/** receives rows from htable snippet2function */
@@ -94,7 +97,7 @@ public class MakeFunction2RoughClones implements Runnable {
 					Entry<byte[], byte[]> column = columnIterator.next();
 					byte[] function = column.getKey();
 					byte[] location = column.getValue();
-					Put put = new Put(function);
+					Put put = putFactory.create(function);
 					put.add(GuiceResource.FAMILY, snippet, 0l, location);
 					write(put);
 				}

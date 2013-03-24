@@ -12,6 +12,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
+import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.RealCodeFile;
@@ -25,6 +26,7 @@ public class CloneRegistry implements Registry, Closeable {
 	final static Logger logger = Logger.getLogger(CloneRegistry.class.getName());
 	final Provider<Snippet> snippetProvider;
 	final Provider<Location> locationProvider;
+	final IPutFactory putFactory;
 
 	@Inject(optional = true)
 	@Named("project2version")
@@ -47,9 +49,10 @@ public class CloneRegistry implements Registry, Closeable {
 	HTableWriteBuffer strings;
 
 	@Inject
-	public CloneRegistry(Provider<Snippet> hashFactProvider, Provider<Location> locationProvider) {
+	public CloneRegistry(Provider<Snippet> hashFactProvider, Provider<Location> locationProvider, IPutFactory putFactory) {
 		this.snippetProvider = hashFactProvider;
 		this.locationProvider = locationProvider;
+		this.putFactory = putFactory;
 	}
 
 	public void register(byte[] hash, String snippetValue, Function function, Location location, byte type) {
@@ -71,15 +74,14 @@ public class CloneRegistry implements Registry, Closeable {
 	public void register(CodeFile codeFile) {
 		byte[] hashFileContents = codeFile.getFileContentsHash();
 		for (Function function : codeFile.getFunctions()) {
-			Put put = new Put(hashFileContents);
-			put.setWriteToWAL(false); // XXX performance increase
+			Put put = putFactory.create(hashFileContents);
 			try {
 				// save function
 				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
 				file2function.write(put);
 
 				// save snippet
-				Put fnSnippet = new Put(function.getHash());
+				Put fnSnippet = putFactory.create(function.getHash());
 				function.saveSnippet(fnSnippet);
 				strings.write(fnSnippet);
 			} catch (IOException e) {
@@ -90,11 +92,11 @@ public class CloneRegistry implements Registry, Closeable {
 
 	/**
 	 * saves the project in the projects table
-	 *
+	 * 
 	 * @param project
 	 */
 	public void register(Project project) {
-		Put put = new Put(project.getHash());
+		Put put = putFactory.create(project.getHash());
 		try {
 			project.save(put);
 			project2version.write(put);
@@ -105,11 +107,11 @@ public class CloneRegistry implements Registry, Closeable {
 
 	/**
 	 * saves the version in the versions table
-	 *
+	 * 
 	 * @param version
 	 */
 	public void register(Version version) {
-		Put put = new Put(version.getHash());
+		Put put = putFactory.create(version.getHash());
 		try {
 			version.save(put);
 			version2file.write(put);
@@ -120,10 +122,8 @@ public class CloneRegistry implements Registry, Closeable {
 
 	public void register(Function function) {
 		for (Snippet snippet : function.getSnippets()) {
-			Put put = new Put(function.getHash());
-			Put hfSnippet = new Put(snippet.getHash());
-			put.setWriteToWAL(false); // XXX performance increase
-			hfSnippet.setWriteToWAL(false); // XXX performance increase
+			Put put = putFactory.create(function.getHash());
+			Put hfSnippet = putFactory.create(snippet.getHash());
 			try {
 				// save snippet
 				snippet.save(put);

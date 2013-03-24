@@ -7,16 +7,17 @@ import java.util.logging.Logger;
 
 import javax.inject.Named;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
+import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.common.collect.Maps;
 import com.google.inject.Inject;
@@ -32,14 +33,16 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 	final private static byte[] TYPE_2_FAMILY = Bytes.toBytes("t2");
 	final private static byte[] TYPE_3_FAMILY = Bytes.toBytes("t3");
 	final CloneRegistry cloneRegistry;
+	final IPutFactory putFactory;
 
 	@Inject(optional = true)
 	@Named("duplicateSnippetsPerFunction")
-	HTable duplicateSnippetsPerFunction;
+	HTableWriteBuffer duplicateSnippetsPerFunction;
 
 	@Inject
-	public DuplicateSnippetsPerFunctionRegistry(CloneRegistry cloneRegistry) {
+	public DuplicateSnippetsPerFunctionRegistry(CloneRegistry cloneRegistry, IPutFactory putFactory) {
 		this.cloneRegistry = cloneRegistry;
+		this.putFactory = putFactory;
 	}
 
 	public void register(byte[] hash, String snippetValue, Function function, Location location, byte type) {
@@ -65,7 +68,7 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 			// Duplicate Hashes detection
 			final String snippetHash = ByteUtils.bytesToHex(snippet.getHash());
 			if (snippetHashes.containsKey(snippetHash)) {
-				final Put put = new Put(function.getHash());
+				final Put put = putFactory.create(function.getHash());
 				final byte typebyte = snippet.getType();
 				byte[] family;
 				switch (typebyte) {
@@ -82,9 +85,11 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 					throw new AssertionError("Unknow Clone-type: " + typebyte);
 				}
 
-				put.add(family, snippet.getHash(), 0l, Bytes.toBytes(snippet.getSnippet()));
+				// don't store the type byte in the column name
+				// it's already stored in the family name
+				put.add(family, Bytes.tail(snippet.getHash(), 20), 0l, Bytes.toBytes(snippet.getSnippet()));
 				try {
-					duplicateSnippetsPerFunction.put(put);
+					duplicateSnippetsPerFunction.write(put);
 				} catch (IOException e) {
 					throw new RuntimeException("Snippet " + snippetHash + ": " + e);
 				}
@@ -93,7 +98,6 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 			}
 		}
 	}
-
 
 	@Override
 	public void close() throws IOException {

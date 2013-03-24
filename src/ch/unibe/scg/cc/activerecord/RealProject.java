@@ -14,24 +14,26 @@ import com.google.inject.assistedinject.Assisted;
 public class RealProject extends Column implements Project {
 
 	private static final byte[] PROJECT_NAME = Bytes.toBytes("pn");
-	private String name;
-	private Version version;
-	private String tag;
-	private byte[] hash;
+	private final String name;
+	private final Version version;
+	private final String tag;
+	private final byte[] hash;
+	private final IPutFactory putFactory;
 
 	@Inject
 	public RealProject(StandardHasher standardHasher, @Assisted("name") String name, @Assisted Version version,
-			@Assisted("tag") String tag) {
+			@Assisted("tag") String tag, IPutFactory putFactory) {
 		this.name = name;
 		this.version = version;
 		this.tag = tag;
 		this.hash = standardHasher.hash(getName());
+		this.putFactory = putFactory;
 	}
 
 	public void save(Put put) throws IOException {
 		put.add(FAMILY_NAME, version.getHash(), 0l, Bytes.toBytes(tag));
 
-		Put s = new Put(this.hash);
+		Put s = putFactory.create(this.hash);
 		s.add(FAMILY_NAME, PROJECT_NAME, 0l, Bytes.toBytes(getName()));
 		strings.put(s);
 	}
