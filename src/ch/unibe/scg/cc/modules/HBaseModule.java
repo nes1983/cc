@@ -36,6 +36,7 @@ public class HBaseModule extends AbstractModule {
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
 		bind(IPutFactory.class).to(PutFactory.class);
+		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
 	}
 
 	private void installHTable(final String tableName) {
