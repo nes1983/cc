@@ -2,6 +2,7 @@ package ch.unibe.scg.cc;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -122,10 +123,10 @@ public class Frontend implements Closeable {
 		// type-3
 		Function functionType3 = functionFactory.makeFunction(shingleHasher, functionType2.getBaseLine(),
 				contentsString);
-		// drop functions which generate an empty hash
-		if (functionType3.getHash().equals(ByteUtils.EMPTY_SHA1_KEY)) {
-			return;
-		}
+
+		// Shingle hasher never produces 0.
+		assert !Arrays.equals(functionType3.getHash(), ByteUtils.EMPTY_SHA1_KEY);
+
 		backend.shingleRegisterFunction(contentsStringOfLines, functionType3);
 		codeFile.addFunction(functionType3);
 	}
