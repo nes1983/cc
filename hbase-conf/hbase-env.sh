@@ -21,8 +21,8 @@
 
 # Set environment variables here.
 
-# The java implementation to use.  Java 1.6 required.
-# export JAVA_HOME=/usr/java/jdk1.6.0/
+# The java implementation to use.
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HBASE_CLASSPATH=
@@ -34,7 +34,7 @@ export HBASE_HEAPSIZE=10000
 # Below are what we set by default.  May only work with SUN JVM.
 # For more on why as well as other possible settings,
 # see http://wiki.apache.org/hadoop/PerformanceTuning
-export HBASE_OPTS="-XX:+UseConcMarkSweepGC"
+export HBASE_OPTS="-XX:+UseG1GC -XX:+UseParallelOldGC"
 
 # Uncomment below to enable java garbage collection logging in the .out file.
 # export HBASE_OPTS="$HBASE_OPTS -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps" 
