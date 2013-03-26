@@ -16,6 +16,7 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 
@@ -76,6 +77,7 @@ public class MRWrapper {
 			Optional<String> reducerClassName, Class<? extends WritableComparable> outputKey,
 			Class<? extends Writable> outputValue) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration merged = merge(configurationProvider.get(), config);
+		appendHighlyRecommendedPropertiesToConfiguration(merged);
 		Job job = Job.getInstance(merged, jobName);
 		job.setJarByClass(MRMain.class);
 		TableMapReduceUtil.addDependencyJars(job);
@@ -121,6 +123,20 @@ public class MRWrapper {
 		}
 
 		return job.waitForCompletion(true);
+	}
+
+	private void appendHighlyRecommendedPropertiesToConfiguration(Configuration config) {
+		appendProperty(config, MRJobConfig.MAP_JAVA_OPTS, "-XX:+UseG1GC");
+		appendProperty(config, MRJobConfig.REDUCE_JAVA_OPTS, "-XX:+UseG1GC");
+	}
+
+	private void appendProperty(Configuration config, String propertyName, String propertyValue) {
+		String existingPropertyValue = config.get(propertyName);
+		if (existingPropertyValue == null) {
+			existingPropertyValue = "";
+		}
+		String enlargedProperty = existingPropertyValue + " " + propertyValue;
+		config.set(propertyName, enlargedProperty.trim());
 	}
 
 	static boolean isSubclassOf(Class<?> subClass, Class<?> superClass) {
