@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
-import javax.inject.Named;
 
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.HTableUtil;
@@ -22,20 +21,17 @@ import com.google.inject.assistedinject.Assisted;
  */
 public class HTableWriteBuffer implements Closeable {
 	private static final int MAX_SIZE = 10000;
-	final boolean writeToWalEnabled;
 	final List<Row> puts;
 	final HTable htable;
 
 	@Inject
-	HTableWriteBuffer(@Assisted HTable htable, @Named("writeToWalEnabled") boolean writeToWalEnabled) {
+	HTableWriteBuffer(@Assisted HTable htable) {
 		this.htable = htable;
 		this.puts = new ArrayList<Row>(MAX_SIZE);
-		this.writeToWalEnabled = writeToWalEnabled;
 	}
 
 	public void write(Put put) throws IOException {
 		assert put != null;
-		put.setWriteToWAL(writeToWalEnabled);
 		puts.add(put);
 		if (puts.size() == MAX_SIZE) {
 			HTableUtil.bucketRsBatch(htable, puts);
