@@ -2,7 +2,6 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
@@ -19,12 +18,11 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 	private HTableWriteBuffer writeBuffer;
 
 	public GuiceTableMapper() {
-		super();
 	}
 
-	public GuiceTableMapper(HTable htable) {
-		super();
-		this.writeBuffer = new HTableWriteBuffer(htable);
+	public GuiceTableMapper(HTableWriteBuffer htableWriteBuffer) {
+		this();
+		this.writeBuffer = htableWriteBuffer;
 	}
 
 	@Override
@@ -32,7 +30,7 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		super.setup(context);
 	}
 
-	// Closes the WriteBuffer when the map-phase is finished
+	/** Closes the WriteBuffer when the map-phase is finished */
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);
@@ -48,7 +46,8 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 
 	protected final void write(Put put) throws IOException {
 		if (this.writeBuffer == null) {
-			throw new RuntimeException("No HTable was passed to the GuiceTableMapper so don't try to write on it!");
+			throw new RuntimeException(
+					"No HTableWriteBuffer was passed to the GuiceTableMapper so don't try to write on it!");
 		}
 		this.writeBuffer.write(put);
 	}

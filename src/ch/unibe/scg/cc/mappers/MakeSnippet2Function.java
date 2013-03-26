@@ -69,7 +69,8 @@ public class MakeSnippet2Function implements Runnable {
 		final IPutFactory putFactory;
 
 		@Inject
-		public MakeSnippet2FunctionReducer(@Named("snippet2function") HTable snippet2Function, IPutFactory putFactory) {
+		public MakeSnippet2FunctionReducer(@Named("snippet2function") HTableWriteBuffer snippet2Function,
+				IPutFactory putFactory) {
 			super(snippet2Function);
 			this.putFactory = putFactory;
 		}
@@ -137,8 +138,6 @@ public class MakeSnippet2Function implements Runnable {
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
-
-			snippet2Function.flushCommits();
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {

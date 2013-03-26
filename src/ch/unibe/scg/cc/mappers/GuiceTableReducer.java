@@ -2,7 +2,6 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 
@@ -13,12 +12,10 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
  * @see GuiceReducer
  */
 public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableReducer<KEYIN, VALUEIN, KEYOUT> {
-
 	final HTableWriteBuffer writeBuffer;
 
-	public GuiceTableReducer(HTable htable) {
-		super();
-		this.writeBuffer = new HTableWriteBuffer(htable);
+	public GuiceTableReducer(HTableWriteBuffer htableWriteBuffer) {
+		this.writeBuffer = htableWriteBuffer;
 	}
 
 	@Override
@@ -26,7 +23,7 @@ public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableRed
 		super.setup(context);
 	}
 
-	// Closes the WriteBuffer when the reduce-phase is finished
+	/** Closes the WriteBuffer when the reduce-phase is finished */
 	@Override
 	protected void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);

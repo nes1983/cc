@@ -41,11 +41,11 @@ public class MakeFunction2FineClones implements Runnable {
 	private Map<ByteBuffer, SnippetLocation> popularSnippetsMap;
 
 	@Inject
-	MakeFunction2FineClones(@Named("function2fineclones") HTable function2fineclones,
-			@Named("popularSnippets") HTable popularSnippets, MRWrapper mrWrapper) throws IOException {
+	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("popularSnippets") HTable popularSnippets,
+			@Named("function2fineclones") HTable function2fineclones) throws IOException {
+		this.mrWrapper = mrWrapper;
 		this.function2fineclones = function2fineclones;
 		this.popularSnippets = popularSnippets;
-		this.mrWrapper = mrWrapper;
 
 		fillPopularSnippetsMap();
 	}
@@ -100,7 +100,7 @@ public class MakeFunction2FineClones implements Runnable {
 	public static class MakeFunction2FineClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		@Inject
-		public MakeFunction2FineClonesReducer(@Named("function2roughclones") HTable function2fineclones) {
+		public MakeFunction2FineClonesReducer(@Named("function2fineclones") HTableWriteBuffer function2fineclones) {
 			super(function2fineclones);
 		}
 
@@ -145,8 +145,6 @@ public class MakeFunction2FineClones implements Runnable {
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
-
-			function2fineclones.flushCommits();
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {

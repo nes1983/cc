@@ -35,14 +35,14 @@ import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- *
+ * 
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- *
+ * 
  * OUTPUT:<br>
- *
+ * 
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -65,7 +65,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
 
 		@Inject
-		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTable popularSnippets) {
+		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets) {
 			super(popularSnippets);
 		}
 
@@ -152,7 +152,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		final HashSerializer hashSerializer;
 
 		@Inject
-		public MakeFunction2RoughClonesReducer(@Named("function2roughclones") HTable function2roughclones,
+		public MakeFunction2RoughClonesReducer(@Named("function2roughclones") HTableWriteBuffer function2roughclones,
 				IPutFactory putFactory, HashSerializer hashSerializer) {
 			super(function2roughclones);
 			this.putFactory = putFactory;
