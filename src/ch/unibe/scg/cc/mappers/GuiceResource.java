@@ -30,4 +30,10 @@ public class GuiceResource {
 	public static final byte[] FAMILY = Bytes.toBytes("d");
 	public static final String GUICE_MAPPER_ANNOTATION_STRING = "GuiceMapperAnnotation";
 	public static final String GUICE_REDUCER_ANNOTATION_STRING = "GuiceReducerAnnotation";
+
+	/**
+	 * String values of counters should be kept synchronized with
+	 * {@link Counters}
+	 */
+	public static final String COUNTER_CANNOT_BE_HASHED = "CANNOT_BE_HASHED";
 }

@@ -9,11 +9,13 @@ import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
+import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
+import ch.unibe.scg.cc.Counters;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.HBaseModule;
@@ -23,6 +25,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
+import com.google.inject.name.Names;
 
 /**
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
@@ -77,7 +80,7 @@ public class MRMain extends Configured implements Tool {
 	 * Guice configured), but Hadoop won't let us. So, this class bridges
 	 * between Guice and Hadoop. In setup, we Guice configure the real reducer,
 	 * and this class acts as a proxy to the guice-configured reducer.
-	 *
+	 * 
 	 * <p>
 	 * All methods except
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
@@ -87,10 +90,20 @@ public class MRMain extends Configured implements Tool {
 		GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> guiceMapper;
 
 		@Override
-		protected void setup(Context context) throws IOException, InterruptedException {
+		protected void setup(final Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+
+			Module counterModule = new AbstractModule() {
+				@Override
+				protected void configure() {
+					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
+							context.getCounter(Counters.CANNOT_BE_HASHED));
+				}
+			};
+			Injector injector = Guice
+					.createInjector(new CCModule(), new JavaModule(), new HBaseModule(), counterModule);
+
 			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
 		}
@@ -126,13 +139,15 @@ public class MRMain extends Configured implements Tool {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					GuiceResource.GUICE_MAPPER_ANNOTATION_STRING));
 
-			Module contextModule = new AbstractModule() {
-				@Override protected void configure() {
-					bind(Context.class).toInstance(context);
+			Module counterModule = new AbstractModule() {
+				@Override
+				protected void configure() {
+					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
+							context.getCounter(Counters.CANNOT_BE_HASHED));
 				}
 			};
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					contextModule);
+			Injector injector = Guice
+					.createInjector(new CCModule(), new JavaModule(), new HBaseModule(), counterModule);
 
 			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
@@ -220,7 +235,7 @@ public class MRMain extends Configured implements Tool {
 
 	/**
 	 * Throws a RuntimeException if the class is not found.
-	 *
+	 * 
 	 * @param qualifiedClassName
 	 *            the fully qualified class name
 	 * @return returns the class Object

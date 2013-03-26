@@ -6,9 +6,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
-import javax.inject.Inject;
+import javax.inject.Named;
 
-import org.apache.hadoop.mapreduce.Mapper.Context;
+import org.apache.hadoop.mapreduce.Counter;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
@@ -17,6 +17,9 @@ import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.mappers.GuiceResource;
+
+import com.google.inject.Inject;
 
 public class RegisterClonesBackend implements Closeable {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
@@ -26,22 +29,24 @@ public class RegisterClonesBackend implements Closeable {
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
 	StringOfLinesFactory stringOfLinesFactory;
-	Context context;
+
+	@Inject(optional = true)
+	@Named(GuiceResource.COUNTER_CANNOT_BE_HASHED)
+	Counter cannotBeHashedCounter;
 
 	@Inject
 	public RegisterClonesBackend(Registry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
-			StringOfLinesFactory stringOfLinesFactory, Context context) {
+			StringOfLinesFactory stringOfLinesFactory) {
 		this.registry = registry;
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.stringOfLinesFactory = stringOfLinesFactory;
-		this.context = context;
 	}
 
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param lines
 	 * @param project
 	 * @param location
@@ -58,7 +63,7 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 *
+	 * 
 	 * @param stringOfLines
 	 * @param project
 	 * @param location
@@ -85,7 +90,7 @@ public class RegisterClonesBackend implements Closeable {
 				return;
 			}
 		} catch (CannotBeHashedException e) {
-			context.getCounter(Counters.CANNOT_BE_HASHED).increment(1);
+			cannotBeHashedCounter.increment(1);
 			return;
 		}
 		registry.register(hash, snippet, function, from, length, type);
