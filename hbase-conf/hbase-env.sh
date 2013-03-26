@@ -34,7 +34,7 @@ export HBASE_HEAPSIZE=10000
 # Below are what we set by default.  May only work with SUN JVM.
 # For more on why as well as other possible settings,
 # see http://wiki.apache.org/hadoop/PerformanceTuning
-export HBASE_OPTS="-XX:+UseG1GC -XX:+UseParallelOldGC"
+export HBASE_OPTS="-XX:+UseParallelOldGC"
 
 # Uncomment below to enable java garbage collection logging in the .out file.
 # export HBASE_OPTS="$HBASE_OPTS -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps" 

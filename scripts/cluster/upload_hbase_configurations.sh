@@ -9,6 +9,7 @@ USER=$(cat sshuser)
 for w in $@; do
 	rsync -av "../../hbase-conf/${w}/hbase-site.xml" "$USER@${w}:/tmp/"
 	rsync -av "../../hbase-conf/hbase-env.sh" "$USER@${w}:/tmp/"
+	rsync -av "node_update_hbase.sh" "$USER@${w}:/tmp/"
 done
 
 $(csshX --login=$USER $@)

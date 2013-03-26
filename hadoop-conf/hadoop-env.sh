@@ -13,4 +13,4 @@ export YARN_HOME=/usr/lib/hadoop-yarn
 export HADOOP_CLASSPATH=/usr/lib/hadoop/lib/*:$HADOOP_CLASSPATH
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-export HADOOP_NAMENODE_OPTS="-XX:+UseG1GC -XX:+UseParallelOldGC ${HADOOP_NAMENODE_OPTS}"
+export YARN_NODEMANAGER_OPTS="-XX:+UseParallelOldGC ${YARN_NODEMANAGER_OPTS}"

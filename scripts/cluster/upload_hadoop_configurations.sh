@@ -10,6 +10,8 @@ for w in $@; do
 	./merge_configurations.sh "../../hadoop-conf/cluster-properties.xml" "../../hadoop-conf/${w}/node-properties.xml" > "/tmp/${w}/core-site.xml"
 	rsync -av "/tmp/${w}/core-site.xml" "$USER@${w}:/tmp/"
 	rm "/tmp/${w}/core-site.xml"
+	rsync -av "../../hadoop-conf/hadoop-env.sh" "$USER@${w}:/tmp/"
+	rsync -av "node_update_hadoop.sh" "$USER@${w}:/tmp/"
 done
 
 $(csshX --login=$USER $@)
