@@ -30,6 +30,8 @@ public class RegisterClonesBackend implements Closeable {
 	ShingleHasher shingleHasher;
 	StringOfLinesFactory stringOfLinesFactory;
 
+	// Optional because in MRMain, we have an injector that does not set this
+	// property, and can't, because it doesn't have the counter available.
 	@Inject(optional = true)
 	@Named(GuiceResource.COUNTER_CANNOT_BE_HASHED)
 	Counter cannotBeHashedCounter;
