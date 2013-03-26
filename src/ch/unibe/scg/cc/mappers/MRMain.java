@@ -86,7 +86,6 @@ public class MRMain extends Configured implements Tool {
 	public static class MRMainMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> guiceMapper;
 
-		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
@@ -122,7 +121,6 @@ public class MRMain extends Configured implements Tool {
 	public static class MRMainTableMapper<KEYOUT, VALUEOUT> extends TableMapper<KEYOUT, VALUEOUT> {
 		GuiceTableMapper<KEYOUT, VALUEOUT> guiceMapper;
 
-		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(final Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
@@ -157,12 +155,11 @@ public class MRMain extends Configured implements Tool {
 		}
 	}
 
-	/** see {@link MRMainMapper} */
+	/** @see MRMainMapper */
 	public static class MRMainReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends
 			Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> reducer;
 
-		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
@@ -189,12 +186,11 @@ public class MRMain extends Configured implements Tool {
 		}
 	}
 
-	/** see {@link MRMainMapper} */
+	/** @see MRMainMapper */
 	public static class MRMainTableReducer extends
 			TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> reducer;
 
-		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(

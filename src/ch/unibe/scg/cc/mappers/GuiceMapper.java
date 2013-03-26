@@ -7,9 +7,8 @@ import org.apache.hadoop.mapreduce.Mapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
 
 /**
- * Acts as a proxy for {@link Mapper}. Except the run method is not visible
- * because the {@link MRMainMapper} explicitly calls the run method of its
- * superclass {@link Mapper}.
+ * Same as a {@link Mapper}, but with the visibility of methods raised to public,
+ * to enable hiding a mapper behind a proxy, which is done in {@link MRMainMapper}.
  */
 public abstract class GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 

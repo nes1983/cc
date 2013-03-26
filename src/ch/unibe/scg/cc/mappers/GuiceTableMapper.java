@@ -6,12 +6,7 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 
-/**
- * {@link #write(Put)} provides the ability to write puts to the custom
- * {@link HTableWriteBuffer}.
- * 
- * @see GuiceMapper
- */
+/** A {@link GuiceMapper} that writes into an HTable. */
 public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		GuiceMapper<ImmutableBytesWritable, Result, KEYOUT, VALUEOUT> {
 
@@ -25,11 +20,6 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		this.writeBuffer = htableWriteBuffer;
 	}
 
-	@Override
-	public void setup(Context context) throws IOException, InterruptedException {
-		super.setup(context);
-	}
-
 	/** Closes the WriteBuffer when the map-phase is finished */
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException {
@@ -37,11 +27,6 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		if (this.writeBuffer != null) {
 			this.writeBuffer.close();
 		}
-	}
-
-	@Override
-	public void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
-		super.map(key, value, context);
 	}
 
 	protected final void write(Put put) throws IOException {
