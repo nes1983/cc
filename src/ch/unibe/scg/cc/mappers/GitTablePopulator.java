@@ -230,7 +230,7 @@ public class GitTablePopulator implements Runnable {
 			List<PackedRef> pr = prp.parse(ins);
 
 			String projectName = getProjName(packFilePath);
-			logger.info("Processing " + projectName + ": " + packFilePath);
+			logger.info("Processing " + projectName);
 			int tagCount = pr.size();
 			if (tagCount > MAX_TAGS_TO_PARSE) {
 				int toIndex = tagCount - 1;
@@ -243,8 +243,7 @@ public class GitTablePopulator implements Runnable {
 			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
 				PackedRef paref = it.next();
 				String tag = paref.getName();
-				logger.finer("WALK TAG: " + tag);
-
+				logger.info("WALK TAG: " + tag);
 				revWalk.dispose();
 				RevCommit commit;
 				try {

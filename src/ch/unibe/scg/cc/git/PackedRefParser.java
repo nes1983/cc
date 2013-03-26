@@ -11,8 +11,7 @@ import java.util.regex.Pattern;
 import org.eclipse.jgit.lib.ObjectId;
 
 public class PackedRefParser {
-
-	final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs/tags/(.+)");
+	final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs\\/(?:tags|heads)\\/(.+)");
 
 	public List<PackedRef> parse(InputStream ins) throws IOException {
 		int ch;
