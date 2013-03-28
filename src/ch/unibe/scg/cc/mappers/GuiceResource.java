@@ -36,4 +36,5 @@ public class GuiceResource {
 	 * {@link Counters}
 	 */
 	public static final String COUNTER_CANNOT_BE_HASHED = "CANNOT_BE_HASHED";
+	public static final String COUNTER_SUCCESSFULLY_HASHED = "SUCCESSFULLY_HASHED";
 }

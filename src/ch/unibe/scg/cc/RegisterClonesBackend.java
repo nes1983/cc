@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.io.Closeable;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -35,6 +34,9 @@ public class RegisterClonesBackend implements Closeable {
 	@Inject(optional = true)
 	@Named(GuiceResource.COUNTER_CANNOT_BE_HASHED)
 	Counter cannotBeHashedCounter;
+	@Inject(optional = true)
+	@Named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED)
+	Counter successfullyHashedCounter;
 
 	@Inject
 	public RegisterClonesBackend(Registry registry, StandardHasher standardHasher, ShingleHasher shingleHasher,
@@ -87,10 +89,7 @@ public class RegisterClonesBackend implements Closeable {
 		byte[] hash;
 		try {
 			hash = hasher.hash(snippet);
-			// drop snippets which cause an empty hash:
-			if (Arrays.equals(hash, ByteUtils.EMPTY_SHA1_KEY)) {
-				return;
-			}
+			successfullyHashedCounter.increment(1);
 		} catch (CannotBeHashedException e) {
 			cannotBeHashedCounter.increment(1);
 			return;

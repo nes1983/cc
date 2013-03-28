@@ -97,6 +97,8 @@ public class MRMain extends Configured implements Tool {
 			Module counterModule = new AbstractModule() {
 				@Override
 				protected void configure() {
+					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED))
+							.toInstance(context.getCounter(Counters.SUCCESSFULLY_HASHED));
 					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
 							context.getCounter(Counters.CANNOT_BE_HASHED));
 				}
@@ -142,6 +144,8 @@ public class MRMain extends Configured implements Tool {
 			Module counterModule = new AbstractModule() {
 				@Override
 				protected void configure() {
+					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED))
+							.toInstance(context.getCounter(Counters.SUCCESSFULLY_HASHED));
 					bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
 							context.getCounter(Counters.CANNOT_BE_HASHED));
 				}

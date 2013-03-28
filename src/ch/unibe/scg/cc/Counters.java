@@ -9,5 +9,7 @@ import ch.unibe.scg.cc.mappers.GuiceResource;
  */
 public enum Counters {
 	/** Number of times a {@link CannotBeHashedException} was thrown. */
-	CANNOT_BE_HASHED;
+	CANNOT_BE_HASHED,
+	/** Number of times the hashing operation was successful. */
+	SUCCESSFULLY_HASHED;
 }
