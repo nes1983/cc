@@ -24,8 +24,8 @@ def parseProject projectName, projectUrl
 	end
 	
 	title = projectUrl.strip.gsub(/\/p\//,"")
-	numGitRepos = doc.css("div.span4").text.strip.slice(/of (\d+)/, 1).to_i
-	remaining = numGitRepos
+	numRepos = doc.css("div.span4").text.strip.slice(/of (\d+)/, 1).to_i
+	remaining = numRepos
 	
 	if (remaining < 1)
 		$countProjectsWithoutGitRepos += 1
@@ -35,23 +35,24 @@ def parseProject projectName, projectUrl
 	links = doc.css("td.span4")
 	
 	while (remaining > 0)
-		links = doc.css("td.span4")
-		for l in links
-			link = "Git" + "\t" + l.text.gsub(/\r/,"").gsub(/\n/,"")
-			puts "#{projectName}\t#{title}\t#{link}"
+		enlistment = doc.css(".enlistment")
+		for e in enlistment
+			type = e.css("td:not(.status)").css(".span2").text.gsub(/\r/,"").gsub(/\n/,"")
+			link = e.css("td.span4").text.gsub(/\r/,"").gsub(/\n/,"")
+			puts "#{projectName}\t#{title}\t#{type}\t#{link}"
 		end
 		
 		begin
 			pageNumber += 1
         	doc = getDoc(projectUrl, pageNumber)
-		end until doc or pageNumber > numGitRepos * PROJECTS_PER_PAGE
+		end until doc or pageNumber > numRepos * PROJECTS_PER_PAGE
 			
 		remaining -= PROJECTS_PER_PAGE
 	end
 end
 
 def getDoc (project, pageNumber)
-	link = "http://www.ohloh.net#{project}/enlistments?query=Git&sort=type&page=#{pageNumber}"
+	link = "http://www.ohloh.net#{project}/enlistments?sort=type&page=#{pageNumber}"
 	begin
 		return Nokogiri::HTML(open(link))
 	rescue Exception => msg #
