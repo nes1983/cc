@@ -1,0 +1,38 @@
+<property>
+	<name>hbase.cluster.distributed</name>
+	<value>true</value>
+</property>
+<property>
+	<name>hbase.rootdir</name>
+	<value>hdfs://haddock.unibe.ch:8020/hbase</value>
+</property>
+<property>
+	<name>dfs.replication</name>
+	<value>1</value>
+	<description>The replication count for HLog and HFile storage. Should not be greater than HDFS datanode count.
+	</description>
+</property>
+<property>
+	<name>hbase.hregion.max.filesize</name>
+	<value>1073741824</value>
+</property>
+<property>
+	<name>hfile.block.index.cacheonwrite</name>
+	<value>true</value>
+</property>
+<property>
+	<name>hbase.regionserver.lease.period</name>
+	<value>900000</value> <!-- 900 000, 15 minutes -->
+</property>
+<property>
+	<name>hbase.rpc.timeout</name>
+	<value>900000</value> <!-- 15 minutes -->
+</property>
+<property>
+	<name>hbase.regionserver.wal.enablecompression</name>
+	<value>true</value>
+</property>
+<property>
+	<name>hbase.zookeeper.quorum</name>
+	<value>leela.unibe.ch</value>
+</property>

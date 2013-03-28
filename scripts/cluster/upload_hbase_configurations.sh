@@ -7,7 +7,9 @@
 USER=$(cat sshuser)
 
 for w in $@; do
-	rsync -av "../../hbase-conf/${w}/hbase-site.xml" "$USER@${w}:/tmp/"
+	./merge_configurations.sh "../../hbase-conf/cluster-properties.xml" "../../hbase-conf/${w}/node-properties.xml" > "/tmp/${w}/hbase-site.xml"
+	rsync -av "/tmp/${w}/hbase-site.xml" "$USER@${w}:/tmp/"
+	rm "/tmp/${w}/hbase-site.xml"
 	rsync -av "../../hbase-conf/hbase-env.sh" "$USER@${w}:/tmp/"
 	rsync -av "node_update_hbase.sh" "$USER@${w}:/tmp/"
 done
