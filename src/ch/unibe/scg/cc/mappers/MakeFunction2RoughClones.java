@@ -131,16 +131,16 @@ public class MakeFunction2RoughClones implements Runnable {
 					 * set thatSnippet because it gets already stored in
 					 * thisSnippet
 					 */
-					SnippetLocation thisSnippetLocation = SnippetLocation.newBuilder()
-							.setPosition(Bytes.toInt(Bytes.head(thisLocation, 4)))
-							.setLength(Bytes.toInt(Bytes.tail(thisLocation, 4)))
-							.setSnippet(ByteString.copyFrom(snippet)).build();
-					SnippetLocation thatSnippetLocation = SnippetLocation.newBuilder()
-							.setFunction(ByteString.copyFrom(thatFunction))
-							.setPosition(Bytes.toInt(Bytes.head(thatLocation, 4)))
-							.setLength(Bytes.toInt(Bytes.tail(thatLocation, 4))).build();
-					SnippetMatch snippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisSnippetLocation)
-							.setThatSnippetLocation(thatSnippetLocation).build();
+					SnippetMatch snippetMatch = SnippetMatch
+							.newBuilder()
+							.setThisSnippetLocation(
+									SnippetLocation.newBuilder().setPosition(Bytes.toInt(Bytes.head(thisLocation, 4)))
+											.setLength(Bytes.toInt(Bytes.tail(thisLocation, 4)))
+											.setSnippet(ByteString.copyFrom(snippet)))
+							.setThatSnippetLocation(
+									SnippetLocation.newBuilder().setFunction(ByteString.copyFrom(thatFunction))
+											.setPosition(Bytes.toInt(Bytes.head(thatLocation, 4)))
+											.setLength(Bytes.toInt(Bytes.tail(thatLocation, 4)))).build();
 
 					context.write(new ImmutableBytesWritable(thisFunction),
 							new ImmutableBytesWritable(snippetMatch.toByteArray()));
@@ -177,11 +177,18 @@ public class MakeFunction2RoughClones implements Runnable {
 				SnippetLocation thisSnippet = snippetMatch.getThisSnippetLocation();
 				SnippetLocation thatSnippet = snippetMatch.getThatSnippetLocation();
 
-				byte[] columnName = Bytes.add(thatSnippet.getFunction().toByteArray(),
+				byte[] cellName = Bytes.add(thatSnippet.getFunction().toByteArray(),
 						Bytes.add(Bytes.toBytes(thisSnippet.getPosition()), Bytes.toBytes(thisSnippet.getLength())));
-				byte[] columnValue = Bytes.add(thisSnippet.getSnippet().toByteArray(),
-						Bytes.add(Bytes.toBytes(thatSnippet.getPosition()), Bytes.toBytes(thatSnippet.getLength())));
-				put.add(GuiceResource.FAMILY, columnName, 0l, columnValue);
+
+				// create partial SnippetLocations and clear fields already set
+				// in the cellName to save space in HBase
+				SnippetLocation thisPartialSnippet = SnippetLocation.newBuilder(thisSnippet).clearPosition()
+						.clearLength().build();
+				SnippetLocation thatPartialSnippet = SnippetLocation.newBuilder(thatSnippet).clearFunction().build();
+				SnippetMatch partialSnippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisPartialSnippet)
+						.setThatSnippetLocation(thatPartialSnippet).build();
+
+				put.add(GuiceResource.FAMILY, cellName, 0l, partialSnippetMatch.toByteArray());
 			}
 			context.write(functionHashKey, put);
 		}

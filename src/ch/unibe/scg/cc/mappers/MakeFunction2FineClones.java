@@ -3,7 +3,6 @@ package ch.unibe.scg.cc.mappers;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
@@ -27,11 +26,15 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.ByteUtils;
+import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.mappers.Protos.SnippetLocation;
 
+import com.google.common.base.Function;
 import com.google.common.base.Optional;
+import com.google.common.collect.Iterables;
 import com.google.protobuf.ByteString;
+import com.google.protobuf.InvalidProtocolBufferException;
 
 public class MakeFunction2FineClones implements Runnable {
 	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class.getName());
@@ -78,19 +81,43 @@ public class MakeFunction2FineClones implements Runnable {
 		public void map(ImmutableBytesWritable uselessKey, Result value,
 				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
-			byte[] function = value.getRow();
+			final byte[] function = value.getRow();
 			assert function.length == 20;
 
 			logger.finer("map function " + ByteUtils.bytesToHex(function));
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
-			Iterator<Entry<byte[], byte[]>> columnIterator = columns.iterator();
-			while (columnIterator.hasNext()) {
-				Entry<byte[], byte[]> column = columnIterator.next();
-				// TODO generate list with matches
-				Map<ByteBuffer, SnippetLocation> popularSnippetsMap = MakeFunction2FineClones.this.popularSnippetsMap;
-			}
+			Iterable<SnippetMatch> matches = Iterables.transform(columns,
+					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
+						public SnippetMatch apply(Entry<byte[], byte[]> cell) {
+							// extract information from cellKey
+							final byte[] cellKey = cell.getKey();
+							final ByteString thatFunction = ByteString.copyFrom(Bytes.head(cellKey, 21));
+							final int thisPosition = Bytes.toInt(Bytes.head(Bytes.tail(cellKey, 8), 4));
+							final int thisLength = Bytes.toInt(Bytes.tail(cellKey, 4));
+
+							// now reconstruct full SnippetLocations
+							SnippetMatch partialSnippetMatch = null;
+							try {
+								partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
+								final SnippetMatch snippetMatch = SnippetMatch
+										.newBuilder(partialSnippetMatch)
+										.setThisSnippetLocation(
+												SnippetLocation
+														.newBuilder(partialSnippetMatch.getThisSnippetLocation())
+														.setFunction(ByteString.copyFrom(function))
+														.setPosition(thisPosition).setLength(thisLength))
+										.setThatSnippetLocation(
+												SnippetLocation
+														.newBuilder(partialSnippetMatch.getThatSnippetLocation())
+														.setFunction(thatFunction)).build();
+								return snippetMatch;
+							} catch (InvalidProtocolBufferException e) {
+								throw new WrappedRuntimeException(e);
+							}
+						}
+					});
 			// TODO matching (symmetrical - so do only half of it in the
 			// matching part)
 			// TODO after matching expand to full clones
