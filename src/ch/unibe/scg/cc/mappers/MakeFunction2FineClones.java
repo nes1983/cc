@@ -12,8 +12,6 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import junit.framework.Assert;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
@@ -22,8 +20,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.junit.Ignore;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
@@ -50,12 +46,12 @@ public class MakeFunction2FineClones implements Runnable {
 		this.function2fineclones = function2fineclones;
 		this.popularSnippets = popularSnippets;
 
-		fillPopularSnippetsMap();
+		fillPopularSnippetsMap(); // TODO Move into Provider.
 	}
 
 	private void fillPopularSnippetsMap() throws IOException {
 		Scan scan = new Scan();
-		scan.setCaching(100); // TODO play with this. (100 is default value)
+		// TODO play with caching. (100 is the default value)
 		scan.setCacheBlocks(false);
 		scan.addFamily(GuiceResource.FAMILY);
 		ResultScanner rs = popularSnippets.getScanner(scan);
@@ -92,16 +88,14 @@ public class MakeFunction2FineClones implements Runnable {
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
 						public SnippetMatch apply(Entry<byte[], byte[]> cell) {
 							// extract information from cellKey
-							final byte[] cellKey = cell.getKey();
-							final ByteString thatFunction = ByteString.copyFrom(Bytes.head(cellKey, 21));
-							final int thisPosition = Bytes.toInt(Bytes.head(Bytes.tail(cellKey, 8), 4));
-							final int thisLength = Bytes.toInt(Bytes.tail(cellKey, 4));
+							final ByteString thatFunction = ByteString.copyFrom(Bytes.head(cell.getKey(), 21));
+							final int thisPosition = Bytes.toInt(Bytes.head(Bytes.tail(cell.getKey(), 8), 4));
+							final int thisLength = Bytes.toInt(Bytes.tail(cell.getKey(), 4));
 
 							// now reconstruct full SnippetLocations
-							SnippetMatch partialSnippetMatch = null;
 							try {
-								partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
-								final SnippetMatch snippetMatch = SnippetMatch
+								final SnippetMatch partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
+								return SnippetMatch
 										.newBuilder(partialSnippetMatch)
 										.setThisSnippetLocation(
 												SnippetLocation
@@ -112,7 +106,6 @@ public class MakeFunction2FineClones implements Runnable {
 												SnippetLocation
 														.newBuilder(partialSnippetMatch.getThatSnippetLocation())
 														.setFunction(thatFunction)).build();
-								return snippetMatch;
 							} catch (InvalidProtocolBufferException e) {
 								throw new WrappedRuntimeException(e);
 							}
@@ -180,14 +173,4 @@ public class MakeFunction2FineClones implements Runnable {
 			throw new WrappedRuntimeException(e.getCause());
 		}
 	}
-
-	public static class MakeFunction2FineClonesTest {
-		@Test
-		@Ignore
-		public void testIndex() {
-			// TODO
-			Assert.assertTrue(false);
-		}
-	}
-
 }
