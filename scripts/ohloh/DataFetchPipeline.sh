@@ -4,5 +4,4 @@ cd "$(dirname "$0")"
 | tee /tmp/logOhlohJavaRepoFetcher \
 | ./FilterRepositories.rb \
 | tee /tmp/logFilterRepositories \
-| ./GitClonerMultithreaded.rb \
-| tee /tmp/logGitClonerMultithreaded
+| parallel --pipe ./GitCloner.rb 2> >(tee -a stderr.log >&2)
