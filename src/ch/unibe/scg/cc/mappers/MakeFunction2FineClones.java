@@ -18,6 +18,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
 import ch.unibe.scg.cc.ByteUtils;
+import ch.unibe.scg.cc.CloneExpander;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.WrappedRuntimeException;
@@ -44,6 +45,13 @@ public class MakeFunction2FineClones implements Runnable {
 
 	public static class MakeFunction2FineClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+		CloneExpander cloneExpander;
+
+		@Inject
+		public MakeFunction2FineClonesMapper(CloneExpander cloneExpander) {
+			this.cloneExpander = cloneExpander;
+		}
+
 		/** receives rows from htable function2roughclones */
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
