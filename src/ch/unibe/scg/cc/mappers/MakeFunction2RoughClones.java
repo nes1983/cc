@@ -52,11 +52,14 @@ import com.google.protobuf.ByteString;
 public class MakeFunction2RoughClones implements Runnable {
 	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class.getName());
 	final HTable function2roughclones;
+	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
 
 	@Inject
-	MakeFunction2RoughClones(@Named("function2roughclones") HTable function2roughclones, MRWrapper mrWrapper) {
+	MakeFunction2RoughClones(@Named("function2roughclones") HTable function2roughclones,
+			@Named("popularSnippets") HTable popularSnippets, MRWrapper mrWrapper) {
 		this.function2roughclones = function2roughclones;
+		this.popularSnippets = popularSnippets;
 		this.mrWrapper = mrWrapper;
 	}
 
@@ -198,6 +201,7 @@ public class MakeFunction2RoughClones implements Runnable {
 	public void run() {
 		try {
 			mrWrapper.truncate(function2roughclones);
+			mrWrapper.truncate(popularSnippets);
 
 			Scan scan = new Scan();
 			scan.setCaching(100); // TODO play with this. (100 is default value)
