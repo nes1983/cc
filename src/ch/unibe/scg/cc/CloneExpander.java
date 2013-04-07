@@ -33,7 +33,7 @@ import com.google.common.collect.Lists;
  * {@link #expandClones(List)}.
  */
 // TODO(simon): make it so!
-class CloneExpander {
+public class CloneExpander {
 	private static final int MAX_GAP = 10;
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippetlocations, they should contain their length.
@@ -68,10 +68,11 @@ class CloneExpander {
 	 *            be constant for the entire list.
 	 * @return The matches, stitched together.
 	 */
-	public Collection<Clone> expandClones(final List<SnippetMatch> matches) {
+	public Collection<Clone> expandClones(final Iterable<SnippetMatch> matches) {
+		SnippetMatch first = matches.iterator().next();
 		for (SnippetMatch match : matches) {
 			assert match.getThisSnippetLocation().getFunction()
-					.equals(matches.get(0).getThisSnippetLocation().getFunction());
+					.equals(first.getThisSnippetLocation().getFunction());
 		}
 
 		final ImmutableList.Builder<Clone> clones = ImmutableList.builder();

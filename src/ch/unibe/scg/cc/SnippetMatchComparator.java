@@ -6,7 +6,7 @@ import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.collect.ComparisonChain;
 
-class SnippetMatchComparator implements Comparator<SnippetMatch> {
+public class SnippetMatchComparator implements Comparator<SnippetMatch> {
 	@Override
 	public int compare(SnippetMatch o1, SnippetMatch o2) {
 		return ComparisonChain
