@@ -11,5 +11,9 @@ public enum Counters {
 	/** Number of times a {@link CannotBeHashedException} was thrown. */
 	CANNOT_BE_HASHED,
 	/** Number of times the hashing operation was successful. */
-	SUCCESSFULLY_HASHED;
+	SUCCESSFULLY_HASHED,
+	/** Number of processed java files. */
+	PROCESSED_FILES,
+	/** Number of ignored files (not processed). */
+	IGNORED_FILES;
 }

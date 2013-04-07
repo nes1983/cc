@@ -37,4 +37,6 @@ public class GuiceResource {
 	 */
 	public static final String COUNTER_CANNOT_BE_HASHED = "CANNOT_BE_HASHED";
 	public static final String COUNTER_SUCCESSFULLY_HASHED = "SUCCESSFULLY_HASHED";
+	public static final String COUNTER_PROCESSED_FILES = "PROCESSED_FILES";
+	public static final String COUNTER_IGNORED_FILES = "IGNORED_FILES";
 }
