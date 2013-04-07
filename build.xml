@@ -143,6 +143,11 @@
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones" />
 		</antcall>
 	</target>
+	<target name="makeFunction2FineClones">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2FineClones" />
+		</antcall>
+	</target>
 	<target name="indexAllTables">
 		<antcall target="makeSnippet2Function" />
 		<antcall target="makeFunction2RoughClones" />

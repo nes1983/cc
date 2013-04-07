@@ -19,6 +19,8 @@ import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
+import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 import ch.unibe.scg.cc.modules.CCModule;
 import ch.unibe.scg.cc.modules.JavaModule;
 
@@ -103,9 +105,14 @@ public final class SnippetSimilarTest {
 
 		// Extract matches
 		final CloneExpander expanderWithoutLongRows = new CloneExpander(
-				ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
-				ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
-				null);
+				new PopularSnippetMapsProvider() {
+					@Override
+					public PopularSnippetMaps get() {
+						return new PopularSnippetMaps(
+								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(), 
+								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of());
+					}
+				}, null);
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
 		assertThat(builtClones.toString(),
 				is("[this_function: \"\\001\"\nthat_function: \"\\002\"\n" +

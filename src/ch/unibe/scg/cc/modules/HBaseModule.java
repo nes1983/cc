@@ -10,6 +10,8 @@ import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
+import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
+import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
@@ -37,6 +39,7 @@ public class HBaseModule extends AbstractModule {
 				BufferFactory.class));
 		bind(IPutFactory.class).to(PutFactory.class);
 		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
+		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
 	}
 
 	private void installHTable(final String tableName) {

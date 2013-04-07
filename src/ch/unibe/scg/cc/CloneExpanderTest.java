@@ -9,6 +9,8 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
+import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableListMultimap;
@@ -78,7 +80,12 @@ public final class CloneExpanderTest {
 				fun1Loc.getFunction().asReadOnlyByteBuffer(), fun1Loc,
 				fun2Loc.getFunction().asReadOnlyByteBuffer(), fun2Loc);
 
-		CloneExpander expander = new CloneExpander(function2Popular, snippet2Popular, new SnippetMatchComparator());
+		CloneExpander expander = new CloneExpander(new PopularSnippetMapsProvider() {
+			@Override
+			public PopularSnippetMaps get() {
+				return new PopularSnippetMaps(function2Popular, snippet2Popular);
+			}
+		}, new SnippetMatchComparator());
 		assertThat(expander.expandClones(toExpand).toString(), is(
 				"[this_function: \"fun1\"\nthat_function: \"fun2\"\n" +
 				"this_from_position: 1\nthat_from_position: 2\nthis_length: 9\nthat_length: 8\n, " +

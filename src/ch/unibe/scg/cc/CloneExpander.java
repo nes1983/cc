@@ -16,6 +16,8 @@ import javax.inject.Inject;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
+import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMultimap;
@@ -47,17 +49,16 @@ class CloneExpander {
 	final Comparator<SnippetMatch> snippetMatchComparator;
 
 	@Inject
-	CloneExpander(ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets,
-			ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippet,
-			Comparator<SnippetMatch> snippetMatchComparator) {
-		this.function2PopularSnippets = function2PopularSnippets;
-		this.snippet2PopularSnippet = snippet2PopularSnippet;
+	CloneExpander(PopularSnippetMapsProvider popularSnippetMapsProvider, Comparator<SnippetMatch> snippetMatchComparator) {
+		PopularSnippetMaps popularSnippetMaps = popularSnippetMapsProvider.get();
+		this.function2PopularSnippets = popularSnippetMaps.getFunction2PopularSnippets();
+		this.snippet2PopularSnippet = popularSnippetMaps.getSnippet2PopularSnippets();
 		this.snippetMatchComparator = snippetMatchComparator;
 	}
 
 	/**
 	 * Stitch together the matches into Clones.
-	 *
+	 * 
 	 * @param matches
 	 *            sorted first by
 	 *            {@code SnippetMatch.getThatSnippetLocation().getFunction()},

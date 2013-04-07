@@ -1,9 +1,6 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.Set;
@@ -15,7 +12,6 @@ import javax.inject.Named;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
-import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
@@ -37,7 +33,6 @@ public class MakeFunction2FineClones implements Runnable {
 	final HTable function2fineclones;
 	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
-	private Map<ByteBuffer, SnippetLocation> popularSnippetsMap;
 
 	@Inject
 	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("popularSnippets") HTable popularSnippets,
@@ -45,33 +40,10 @@ public class MakeFunction2FineClones implements Runnable {
 		this.mrWrapper = mrWrapper;
 		this.function2fineclones = function2fineclones;
 		this.popularSnippets = popularSnippets;
-
-		fillPopularSnippetsMap(); // TODO Move into Provider.
 	}
 
-	private void fillPopularSnippetsMap() throws IOException {
-		Scan scan = new Scan();
-		// TODO play with caching. (100 is the default value)
-		scan.setCacheBlocks(false);
-		scan.addFamily(GuiceResource.FAMILY);
-		ResultScanner rs = popularSnippets.getScanner(scan);
-		popularSnippetsMap = new HashMap<ByteBuffer, SnippetLocation>();
-		for (Result r : rs) {
-			ByteBuffer function = ByteBuffer.wrap(r.getRow());
-			NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
-			Set<Entry<byte[], byte[]>> columns = fm.entrySet();
-			for (Entry<byte[], byte[]> column : columns) {
-				// we don't set to function because it gets stored in the key
-				SnippetLocation snippetLocation = SnippetLocation.newBuilder()
-						.setSnippet(ByteString.copyFrom(column.getKey()))
-						.setPosition(Bytes.toInt(Bytes.head(column.getValue(), 4)))
-						.setLength(Bytes.toInt(Bytes.tail(column.getValue(), 4))).build();
-				popularSnippetsMap.put(function, snippetLocation);
-			}
-		}
-	}
-
-	public class MakeFunction2FineClonesMapper extends GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+	public static class MakeFunction2FineClonesMapper extends
+			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		/** receives rows from htable function2roughclones */
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
