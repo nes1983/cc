@@ -29,6 +29,10 @@
 	<value>900000</value> <!-- 15 minutes -->
 </property>
 <property>
+	<name>zookeeper.session.timeout</name>
+	<value>1200000</value>
+</property>
+<property>
 	<name>hbase.regionserver.wal.enablecompression</name>
 	<value>true</value>
 </property>
