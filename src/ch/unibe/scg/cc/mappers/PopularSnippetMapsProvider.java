@@ -32,40 +32,42 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 	private static PopularSnippetMaps popularSnippetMaps;
 
 	@Override
-	public synchronized PopularSnippetMaps get() {
-		if (popularSnippetMaps != null) {
+	public PopularSnippetMaps get() {
+		synchronized(this.getClass()) {
+			if (popularSnippetMaps != null) {
+				return popularSnippetMaps;
+			}
+			Scan scan = new Scan();
+			scan.setCaching(1000);
+			// TODO play with caching. (100 is the default value)
+			scan.setCacheBlocks(false);
+			scan.addFamily(GuiceResource.FAMILY);
+			ResultScanner rs;
+			try {
+				rs = popularSnippets.getScanner(scan);
+			} catch (IOException e) {
+				throw new WrappedRuntimeException("Problem with popularSnippets occured: ", e);
+			}
+			Multimap<ByteBuffer, SnippetLocation> function2PopularSnippets = HashMultimap.create();
+			Multimap<ByteBuffer, SnippetLocation> snippet2PopularSnippets = HashMultimap.create();
+			for (Result r : rs) {
+				byte[] function = r.getRow();
+				NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
+				for (Entry<byte[], byte[]> cell : fm.entrySet()) {
+					byte[] snippet = cell.getKey();
+					// To save space we didn't store a protobuffer object. We
+					// create the object now with the information we have.
+					SnippetLocation snippetLocation = SnippetLocation.newBuilder()
+							.setFunction(ByteString.copyFrom(function)).setSnippet(ByteString.copyFrom(snippet))
+							.setPosition(Bytes.toInt(Bytes.head(cell.getValue(), 4)))
+							.setLength(Bytes.toInt(Bytes.tail(cell.getValue(), 4))).build();
+					function2PopularSnippets.put(ByteBuffer.wrap(function), snippetLocation);
+					snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
+				}
+			}
+			popularSnippetMaps = new PopularSnippetMaps(ImmutableMultimap.copyOf(function2PopularSnippets),
+					ImmutableMultimap.copyOf(snippet2PopularSnippets));
 			return popularSnippetMaps;
 		}
-		Scan scan = new Scan();
-		scan.setCaching(1000);
-		// TODO play with caching. (100 is the default value)
-		scan.setCacheBlocks(false);
-		scan.addFamily(GuiceResource.FAMILY);
-		ResultScanner rs;
-		try {
-			rs = popularSnippets.getScanner(scan);
-		} catch (IOException e) {
-			throw new WrappedRuntimeException("Problem with popularSnippets occured: ", e);
-		}
-		Multimap<ByteBuffer, SnippetLocation> function2PopularSnippets = HashMultimap.create();
-		Multimap<ByteBuffer, SnippetLocation> snippet2PopularSnippets = HashMultimap.create();
-		for (Result r : rs) {
-			byte[] function = r.getRow();
-			NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
-			for (Entry<byte[], byte[]> cell : fm.entrySet()) {
-				byte[] snippet = cell.getKey();
-				// To save space we didn't store a protobuffer object. We
-				// create the object now with the information we have.
-				SnippetLocation snippetLocation = SnippetLocation.newBuilder()
-						.setFunction(ByteString.copyFrom(function)).setSnippet(ByteString.copyFrom(snippet))
-						.setPosition(Bytes.toInt(Bytes.head(cell.getValue(), 4)))
-						.setLength(Bytes.toInt(Bytes.tail(cell.getValue(), 4))).build();
-				function2PopularSnippets.put(ByteBuffer.wrap(function), snippetLocation);
-				snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
-			}
-		}
-		popularSnippetMaps = new PopularSnippetMaps(ImmutableMultimap.copyOf(function2PopularSnippets),
-				ImmutableMultimap.copyOf(snippet2PopularSnippets));
-		return popularSnippetMaps;
 	}
 }
