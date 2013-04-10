@@ -47,6 +47,7 @@
         <pathelement location="libs/juniversalchardet-1.0.3.jar"/>
     	<pathelement location="libs/jsch-0.1.48.jar"/>
     	<pathelement location="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
+    	<pathelement location="libs/protobuf-java-2.4.1.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -161,7 +162,8 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+    	<exec executable="./run-protoc.sh"/>
+    	<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="clone-detector.classpath"/>
         </javac>
