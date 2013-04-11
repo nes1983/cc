@@ -59,6 +59,7 @@
     </target>
     <target name="clean">
         <delete dir="bin"/>
+        <delete dir="src-gen"/>
     </target>
 	<target name="jar" depends="build">
 		<taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask"
