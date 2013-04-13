@@ -27,8 +27,8 @@ import org.junit.Test;
 import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.mappers.Protos.SnippetLocation;
-import ch.unibe.scg.cc.mappers.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
