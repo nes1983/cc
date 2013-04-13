@@ -21,7 +21,8 @@
         <pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.2.0.jar"/>
         <pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.2.0.jar"/>
         <pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.2.0.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-mr1-cdh4.2.0.jar"/>
+        <pathelement location="libs/hadoop-mapreduce-client-tools-2.0.0-mr1-cdh4.2.0.jar"/>
         <pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.2.0.jar"/>
         <pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.2.0.jar"/>
         <pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.2.0.jar"/>
