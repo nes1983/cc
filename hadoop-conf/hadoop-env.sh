@@ -1,16 +1,11 @@
-export HADOOP_HOME_WARN_SUPPRESS=true
-export HADOOP_HOME=/usr/lib/hadoop
-export HADOOP_PREFIX=/usr/lib/hadoop
-
-export HADOOP_LIBEXEC_DIR=/usr/lib/hadoop/libexec
-export HADOOP_CONF_DIR=/etc/hadoop/conf
-
-export HADOOP_COMMON_HOME=/usr/lib/hadoop
-export HADOOP_HDFS_HOME=/usr/lib/hadoop-hdfs
-export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
-export YARN_HOME=/usr/lib/hadoop-yarn
-
-export HADOOP_CLASSPATH=/usr/lib/hadoop/lib/*:$HADOOP_CLASSPATH
-
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-export YARN_NODEMANAGER_OPTS="-XX:+UseG1GC ${YARN_NODEMANAGER_OPTS}"
+
+#MRv1
+export HADOOP_HOME=/usr/lib/hadoop-0.20-mapreduce
+export HADOOP_MAPRED_HOME=/usr/lib/hadoop-0.20-mapreduce
+export HADOOP_HEAPSIZE=10000
+export HADOOP_JOBTRACKER_OPTS="-server -XX:+UseG1GC ${HADOOP_JOBTRACKER_OPTS}"
+export HADOOP_TASKTRACKER_OPTS="-server -XX:+UseG1GC ${HADOOP_TASKTRACKER_OPTS}"
+
+#MRv2
+#export YARN_NODEMANAGER_OPTS="-XX:+UseG1GC ${YARN_NODEMANAGER_OPTS}"
