@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc;
 
 import ch.unibe.scg.cc.mappers.GuiceResource;
+import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.MakeFunction2FineClonesReducer;
 
 /**
  * Every Hadoop counter is named by an enum. These are ours. See {@link Counter}
@@ -15,5 +16,10 @@ public enum Counters {
 	/** Number of processed java files. */
 	PROCESSED_FILES,
 	/** Number of ignored files (not processed). */
-	IGNORED_FILES;
+	IGNORED_FILES,
+	/**
+	 * Number of catched ArrayIndexOutOfBoundsException during reduce phase in
+	 * {@link MakeFunction2FineClonesReducer}.
+	 */
+	MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS;
 }

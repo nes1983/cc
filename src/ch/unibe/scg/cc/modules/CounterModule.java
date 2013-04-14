@@ -27,5 +27,8 @@ public class CounterModule extends AbstractModule {
 				context.getCounter(Counters.PROCESSED_FILES));
 		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_IGNORED_FILES)).toInstance(
 				context.getCounter(Counters.IGNORED_FILES));
+		bind(Counter.class).annotatedWith(
+				Names.named(GuiceResource.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)).toInstance(
+				context.getCounter(Counters.MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS));
 	}
 }
