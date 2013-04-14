@@ -160,7 +160,8 @@ public class MRMain extends Configured implements Tool {
 		protected void setup(Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
+					new CounterModule(context));
 			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			reducer.setup(context);
 		}
@@ -191,7 +192,8 @@ public class MRMain extends Configured implements Tool {
 		protected void setup(Context context) throws IOException, InterruptedException {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					GuiceResource.GUICE_REDUCER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
+			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
+					new CounterModule(context));
 			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) injector
 					.getInstance(clazz);
 			reducer.setup(context);
