@@ -10,15 +10,21 @@ import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
+import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
+import org.apache.hadoop.hbase.mapreduce.MultithreadedTableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
+import org.apache.hadoop.io.BytesWritable;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper;
 
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
@@ -47,7 +53,7 @@ public class MRWrapper {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param jobName
 	 * @param config
 	 *            the config provided will be merged with the configuration of
@@ -82,7 +88,8 @@ public class MRWrapper {
 		job.setJarByClass(MRMain.class);
 		TableMapReduceUtil.addDependencyJars(job);
 
-		Class<?> mapperClass = (mapperTableName.isPresent()) ? MRMainTableMapper.class : MRMainMapper.class;
+		Class<?> mapperClass = (mapperTableName.isPresent()) ? MultithreadedTableMapper.class
+				: MultithreadedMapper.class;
 		Class<?> reducerClass = (reducerTableName.isPresent()) ? MRMainTableReducer.class : MRMainReducer.class;
 
 		// mapper configuration
@@ -92,8 +99,15 @@ public class MRWrapper {
 			}
 			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner,
 					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, job);
+			MultithreadedTableMapper
+					.setMapperClass(
+							job,
+							(Class<? extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>>)
+									MRMainTableMapper.class);
 		} else {
 			job.setMapperClass((Class<? extends Mapper>) mapperClass);
+			MultithreadedMapper.setMapperClass(job,
+					(Class<? extends Mapper<Text, BytesWritable, Text, IntWritable>>) MRMainMapper.class);
 		}
 		job.setMapOutputKeyClass(outputKey);
 		job.setMapOutputValueClass(outputValue);
@@ -135,8 +149,7 @@ public class MRWrapper {
 		if (existingPropertyValue == null) {
 			existingPropertyValue = "";
 		}
-		String enlargedProperty = existingPropertyValue + " " + propertyValue;
-		config.set(propertyName, enlargedProperty.trim());
+		config.set(propertyName, (existingPropertyValue + " " + propertyValue).trim());
 	}
 
 	static boolean isSubclassOf(Class<?> subClass, Class<?> superClass) {
