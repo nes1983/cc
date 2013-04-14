@@ -141,7 +141,7 @@ public class MakeFunction2FineClones implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
 			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
-					Optional.of("function2roughclones"), Optional.of("function2fineclones"), scan,
+					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scan),
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);

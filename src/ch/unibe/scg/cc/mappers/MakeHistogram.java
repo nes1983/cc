@@ -107,8 +107,9 @@ public class MakeHistogram implements Runnable {
 			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 
 			hbaseWrapper.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,
-					Optional.of("snippet2function"), Optional.<String> absent(), scan, MakeHistogramMapper.class.getName(),
-					Optional.of(MakeHistogramReducer.class.getName()), IntWritable.class, LongWritable.class);
+					Optional.of("snippet2function"), Optional.<String> absent(), Optional.of(scan),
+					MakeHistogramMapper.class.getName(), Optional.of(MakeHistogramReducer.class.getName()),
+					IntWritable.class, LongWritable.class);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (ClassNotFoundException e) {

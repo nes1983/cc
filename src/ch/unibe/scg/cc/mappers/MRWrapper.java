@@ -79,7 +79,7 @@ public class MRWrapper {
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean launchMapReduceJob(String jobName, Configuration config, Optional<String> mapperTableName,
-			Optional<String> reducerTableName, Scan tableScanner, String mapperClassName,
+			Optional<String> reducerTableName, Optional<Scan> tableScanner, String mapperClassName,
 			Optional<String> reducerClassName, Class<? extends WritableComparable> outputKey,
 			Class<? extends Writable> outputValue) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration merged = merge(configurationProvider.get(), config);
@@ -97,7 +97,10 @@ public class MRWrapper {
 			if (!mapperTableName.isPresent()) {
 				throw new IllegalArgumentException("mapperTableName argument is not set!");
 			}
-			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner,
+			if (!tableScanner.isPresent()) {
+				throw new IllegalArgumentException("tableScanner argument is not set!");
+			}
+			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner.get(),
 					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, job);
 			MultithreadedTableMapper
 					.setMapperClass(
