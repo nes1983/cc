@@ -2,10 +2,6 @@
 	<name>yarn.nodemanager.vmem-pmem-ratio</name>
 	<value>3</value>
 </property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>fs.default.name</name>
-	<value>hdfs://haddock.unibe.ch/</value>
-</property>
 <property>
 	<name>fs.defaultFS</name>
 	<value>hdfs://haddock.unibe.ch/</value>
@@ -14,17 +10,9 @@
 	<name>dfs.permissions.superusergroup</name>
 	<value>hadoop</value>
 </property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>dfs.name.dir</name>
-	<value>/srv/hadoop/names</value>
-</property>
 <property>
 	<name>dfs.namenode.name.dir</name>
 	<value>/srv/hadoop/names</value>
-</property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>dfs.data.dir</name>
-	<value>/srv/hadoop/data</value>
 </property>
 <property>
 	<name>dfs.datanode.data.dir</name>
@@ -34,25 +22,9 @@
 	<name>dfs.datanode.max.xcievers</name>
 	<value>4096</value>
 </property>
-<property><!-- Set back to yarn when using MRv2 -->
+<property>
 	<name>mapreduce.framework.name</name>
-	<value>classic</value>
-</property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>mapred.job.tracker.http.address</name>
-	<value>haddock.unibe.ch:50030</value>
-</property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>mapred.job.tracker</name>
-	<value>haddock.unibe.ch:9001</value>
-</property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>mapred.system.dir</name>
-	<value>/hadoop/mapred/system/</value>
-</property>
-<property><!-- MRv1 property: can be deleted when switching back to MRv2 -->
-	<name>mapred.local.dir</name>
-	<value>/srv/mrv1/local</value>
+	<value>yarn</value>
 </property>
 <property>
 	<name>yarn.resourcemanager.resource-tracker.address</name>

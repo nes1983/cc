@@ -53,7 +53,7 @@ public class MRWrapper {
 	}
 
 	/**
-	 *
+	 * 
 	 * @param jobName
 	 * @param config
 	 *            the config provided will be merged with the configuration of
@@ -105,8 +105,7 @@ public class MRWrapper {
 			MultithreadedTableMapper
 					.setMapperClass(
 							job,
-							(Class<? extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>>)
-									MRMainTableMapper.class);
+							(Class<? extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>>) MRMainTableMapper.class);
 		} else {
 			job.setMapperClass((Class<? extends Mapper>) mapperClass);
 			MultithreadedMapper.setMapperClass(job,
@@ -143,8 +142,11 @@ public class MRWrapper {
 	}
 
 	private void appendHighlyRecommendedPropertiesToConfiguration(Configuration config) {
-		appendProperty(config, MRJobConfig.MAP_JAVA_OPTS, "-XX:+UseG1GC");
-		appendProperty(config, MRJobConfig.REDUCE_JAVA_OPTS, "-XX:+UseG1GC");
+		String mapJavaOpts = "-XX:+UseG1GC";
+		String reduceJavaOpts = "-XX:+UseG1GC";
+
+		appendProperty(config, MRJobConfig.MAP_JAVA_OPTS, mapJavaOpts);
+		appendProperty(config, MRJobConfig.REDUCE_JAVA_OPTS, reduceJavaOpts);
 	}
 
 	private void appendProperty(Configuration config, String propertyName, String propertyValue) {

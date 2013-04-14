@@ -7,10 +7,5 @@
 cp -v /tmp/core-site.xml /etc/hadoop/conf/
 cp -v /tmp/hadoop-env.sh /etc/hadoop/conf/
 
-#MRv1
-service hadoop-0.20-mapreduce-tasktracker restart
-service hadoop-0.20-mapreduce-jobtracker restart
-
-#MRv2
-#service hadoop-yarn-nodemanager restart
-#service hadoop-yarn-resourcemanager restart
+service hadoop-yarn-nodemanager restart
+service hadoop-yarn-resourcemanager restart
