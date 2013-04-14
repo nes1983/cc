@@ -3,7 +3,6 @@ package ch.unibe.scg.cc;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -11,7 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import ch.unibe.jexample.JExample;
-import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 
 @RunWith(JExample.class)
@@ -38,14 +36,4 @@ public class FrontendTest {
 		verify(phaseFrontend).normalize(any(StringBuilder.class));
 		return frontend;
 	}
-
-	@Test
-	public void testTokenizer() {
-		Frontend frontend = new Frontend(null, null, phaseFrontend, null, null, null, tokenizer, null, null, null);
-		CodeFile cf = mock(CodeFile.class);
-		frontend.registerWithBuilder(new StringBuilder("\npublic    static void doIt(char[] arg) {\n"),
-				"MickeyPaint.java", cf);
-		verify(tokenizer).tokenize(eq("\npublic    static void doIt(char[] arg) {\n"), eq("MickeyPaint.java"));
-	}
-
 }

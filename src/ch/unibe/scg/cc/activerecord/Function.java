@@ -16,26 +16,31 @@ import ch.unibe.scg.cc.Hasher;
 import com.google.inject.assistedinject.Assisted;
 
 public class Function extends Column {
-	private static final byte[] FUNCTION_SNIPPET = Bytes.toBytes("fs");
+	public static final byte[] FUNCTION_SNIPPET = Bytes.toBytes("fs");
 	final private List<Snippet> snippets;
 	final private int baseLine;
-	final transient CharSequence contents;
+	/** contains the normalized content */
+	final transient CharSequence normalized;
+	/** contains the real content */
+	final CharSequence contents;
 	private byte[] hash = null;
 	final Hasher hasher;
 
 	public static interface FunctionFactory {
-		Function makeFunction(Hasher hasher, int baseLine, CharSequence contents);
+		Function makeFunction(Hasher hasher, int baseLine, CharSequence normalized, CharSequence contents);
 	}
 
 	@Inject
 	/**
-	 * Creates a new function by copying only "contents", "baseline" and
+	 * Creates a new function by copying only "normalized", "contents", "baseline" and
 	 * "standardHasher" from the provided function.
 	 */
-	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted CharSequence contents) {
+	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted CharSequence normalized,
+			@Assisted CharSequence contents) {
 		this.snippets = new ArrayList<Snippet>();
 		this.hasher = hasher;
 		this.baseLine = baseLine;
+		this.normalized = normalized;
 		this.contents = contents;
 	}
 
@@ -48,10 +53,9 @@ public class Function extends Column {
 	 *         {@link ByteUtils#EMPTY_SHA1_KEY} is returned.
 	 */
 	public byte[] getHash() {
-		assert getContents() != null;
 		if (hash == null) {
 			try {
-				hash = hasher.hash(getContents().toString());
+				hash = hasher.hash(normalized.toString());
 			} catch (CannotBeHashedException e) {
 				return ByteUtils.EMPTY_SHA1_KEY;
 			}

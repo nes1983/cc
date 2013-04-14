@@ -3,10 +3,10 @@ package ch.unibe.scg.cc;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 
 import javax.inject.Inject;
 
+import ch.unibe.scg.cc.Tokenizer.SnippetWithBaseline;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
@@ -17,7 +17,6 @@ import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 public class Frontend implements Closeable {
-
 	StandardHasher standardHasher;
 	ShingleHasher shingleHasher;
 	protected PhaseFrontend type1;
@@ -91,43 +90,38 @@ public class Frontend implements Closeable {
 	}
 
 	void registerWithBuilder(StringBuilder fileContents, String fileName, CodeFile codeFile) {
-		type1.normalize(fileContents);
-		List<Function> functions = tokenizer.tokenize(fileContents.toString(), fileName);
-		for (Function function : functions) {
+		for (SnippetWithBaseline function : tokenizer.tokenize(fileContents.toString())) {
 			registerFunction(codeFile, function);
 		}
 	}
 
-	void registerFunction(CodeFile codeFile, Function function) {
-		StringBuilder contents = new StringBuilder(function.getContents());
-		StringOfLines contentsStringOfLines = stringOfLinesFactory.make(contents.toString());
-
-		if (contentsStringOfLines.getNumberOfLines() < RegisterClonesBackend.MINIMUM_LINES) {
+	void registerFunction(CodeFile codeFile, SnippetWithBaseline function) {
+		// type-1
+		StringBuilder normalized = new StringBuilder(function.getSnippet());
+		type1.normalize(normalized);
+		StringOfLines normalizedSOL = stringOfLinesFactory.make(normalized.toString());
+		if (normalizedSOL.getNumberOfLines() < RegisterClonesBackend.MINIMUM_LINES) {
 			return;
 		}
 
-		// type-1
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, function, Main.TYPE_1_CLONE);
-		Function functionType1 = function;
+		Function functionType1 = functionFactory.makeFunction(
+				standardHasher, function.getBaseLine(), normalized.toString(), function.getSnippet());
+		backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType1, Main.TYPE_1_CLONE);
 		codeFile.addFunction(functionType1);
 
 		// type-2
-		type2.normalize(contents);
-		String contentsString = contents.toString();
-		Function functionType2 = functionFactory.makeFunction(standardHasher, functionType1.getBaseLine(),
-				contentsString);
-		contentsStringOfLines = stringOfLinesFactory.make(functionType2.getContents());
-		backend.registerConsecutiveLinesOfCode(contentsStringOfLines, functionType2, Main.TYPE_2_CLONE);
+		type2.normalize(normalized);
+		Function functionType2 = functionFactory.makeFunction(shingleHasher, function.getBaseLine(),
+				normalized.toString(), function.getSnippet());
+		normalizedSOL = stringOfLinesFactory.make(normalized.toString());
+		backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType2, Main.TYPE_2_CLONE);
 		codeFile.addFunction(functionType2);
 
 		// type-3
-		Function functionType3 = functionFactory.makeFunction(shingleHasher, functionType2.getBaseLine(),
-				contentsString);
-
-		// Shingle hasher never produces 0.
+		Function functionType3 = functionFactory.makeFunction(
+				shingleHasher, functionType2.getBaseLine(),	normalized.toString(), function.getSnippet());
 		assert !Arrays.equals(functionType3.getHash(), ByteUtils.EMPTY_SHA1_KEY);
-
-		backend.shingleRegisterFunction(contentsStringOfLines, functionType3);
+		backend.shingleRegisterFunction(normalizedSOL, functionType3);
 		codeFile.addFunction(functionType3);
 	}
 

@@ -23,7 +23,7 @@ public class RegisterSnippetTest {
 		when(snippetProvider.get()).thenReturn(snippet);
 
 		CloneRegistry registry = new CloneRegistry(snippetProvider, null, null);
-		Function function = new Function(null, 0, "");
+		Function function = new Function(null, 0, "", "");
 
 		byte[] bytes = new byte[] { 0 };
 		registry.register(bytes, "", function, null, (byte) 0x03);
