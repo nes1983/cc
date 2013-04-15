@@ -79,7 +79,7 @@ public class Function extends Column {
 		return this.snippets;
 	}
 
-	public void saveSnippet(Put put) {
+	public void saveContents(Put put) {
 		put.add(FAMILY_NAME, FUNCTION_SNIPPET, 0l, Bytes.toBytes(getContents()));
 	}
 }

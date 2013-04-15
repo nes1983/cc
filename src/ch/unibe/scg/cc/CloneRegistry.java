@@ -72,29 +72,19 @@ public class CloneRegistry implements Registry, Closeable {
 	}
 
 	public void register(CodeFile codeFile) {
-		byte[] hashFileContents = codeFile.getFileContentsHash();
+		// TODO write codeFile string into strings table.
 		for (Function function : codeFile.getFunctions()) {
-			Put put = putFactory.create(hashFileContents);
+			Put functionPut = putFactory.create(codeFile.getFileContentsHash());
 			try {
-				// save function
-				put.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
-				file2function.write(put);
-
-				// save snippet
-				Put fnSnippet = putFactory.create(function.getHash());
-				function.saveSnippet(fnSnippet);
-				strings.write(fnSnippet);
+				functionPut.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
+				file2function.write(functionPut);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
 		}
 	}
 
-	/**
-	 * saves the project in the projects table
-	 * 
-	 * @param project
-	 */
+	/** Saves the project in the projects table. */
 	public void register(Project project) {
 		Put put = putFactory.create(project.getHash());
 		try {
@@ -105,11 +95,7 @@ public class CloneRegistry implements Registry, Closeable {
 		}
 	}
 
-	/**
-	 * saves the version in the versions table
-	 * 
-	 * @param version
-	 */
+	/** Saves the version in the versions table. */
 	public void register(Version version) {
 		Put put = putFactory.create(version.getHash());
 		try {
@@ -121,20 +107,18 @@ public class CloneRegistry implements Registry, Closeable {
 	}
 
 	public void register(Function function) {
-		for (Snippet snippet : function.getSnippets()) {
-			Put put = putFactory.create(function.getHash());
-			Put hfSnippet = putFactory.create(snippet.getHash());
-			try {
-				// save snippet
+		Put functionString = putFactory.create(function.getHash());
+		try {
+			function.saveContents(functionString);
+			strings.write(functionString);
+
+			for (Snippet snippet : function.getSnippets()) {
+				Put put = putFactory.create(function.getHash());
 				snippet.save(put);
 				function2snippet.write(put);
-
-				// save snippetValue
-				snippet.saveSnippet(hfSnippet);
-				strings.write(hfSnippet);
-			} catch (IOException e) {
-				throw new RuntimeException(e);
 			}
+		} catch (IOException e) {
+			throw new RuntimeException(e);
 		}
 	}
 

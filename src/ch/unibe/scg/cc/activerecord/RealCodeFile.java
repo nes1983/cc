@@ -8,17 +8,16 @@ import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
 
-import com.google.inject.assistedinject.Assisted;
-
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import ch.unibe.scg.cc.StandardHasher;
 
-public class RealCodeFile extends Column implements CodeFile {
+import com.google.inject.assistedinject.Assisted;
 
+public class RealCodeFile extends Column implements CodeFile {
 	public static final String FUNCTION_OFFSET_NAME = "fo";
-	private List<Function> functions;
-	private String fileContents;
-	private byte[] fileContentHash;
+	private final List<Function> functions;
+	private final String fileContents;
+	private final byte[] fileContentHash;
 
 	@Inject
 	public RealCodeFile(StandardHasher standardHasher, @Assisted String fileContents) {
