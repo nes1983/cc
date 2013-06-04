@@ -17,7 +17,6 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 
 import junit.framework.Assert;
@@ -32,6 +31,7 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
@@ -70,6 +70,7 @@ import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
+import com.google.inject.Inject;
 
 public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
@@ -174,6 +175,16 @@ public class GitTablePopulator implements Runnable {
 	public static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final int MAX_TAGS_TO_PARSE = 15;
 
+		// Optional because in MRMain, we have an injector that does not set
+		// this
+		// property, and can't, because it doesn't have the counter available.
+		@Inject(optional = true)
+		@Named(GuiceResource.COUNTER_PROCESSED_FILES)
+		Counter processedFilesCounter;
+		@Inject(optional = true)
+		@Named(GuiceResource.COUNTER_IGNORED_FILES)
+		Counter ignoredFilesCounter;
+
 		@Inject
 		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
 				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
@@ -211,6 +222,11 @@ public class GitTablePopulator implements Runnable {
 			conf.addResource(new Path(CORE_SITE_PATH));
 			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 			FileSystem fileSystem = FileSystem.get(conf);
+
+			if (fileSystem.listStatus(new Path(packFilePath))[0].getLen() > MAX_PACK_FILESIZE_BYTES) {
+				logger.warning("Max filesize exceeded, aborting");
+				return;
+			}
 
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
 			pp.parse(null);
@@ -265,6 +281,7 @@ public class GitTablePopulator implements Runnable {
 						String content = getContent(r, objectId);
 						String filePath = treeWalk.getPathString();
 						if (!filePath.endsWith(".java")) {
+							ignoredFilesCounter.increment(1);
 							continue;
 						}
 						String fileName = filePath.lastIndexOf('/') == -1 ? filePath : filePath.substring(filePath
@@ -272,6 +289,7 @@ public class GitTablePopulator implements Runnable {
 						CodeFile codeFile = register(content, fileName);
 						Version version = register(filePath, codeFile);
 						register(projectName, version, tag);
+						processedFilesCounter.increment(1);
 					}
 					processedTagsCounter++;
 				} catch (MissingObjectException moe) {
