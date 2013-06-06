@@ -15,6 +15,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.CommonSnippetWritable;
 
+/** Mapper and Reducer only used for sorting */
 public class Function2FineClonesSorter {
 	static final Path OUT_DIR = new Path("/tmp/fineclonessorted/");
 
