@@ -10,14 +10,10 @@ import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.mapreduce.MultithreadedTableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
-import org.apache.hadoop.io.BytesWritable;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
@@ -53,8 +49,6 @@ public class MRWrapper {
 	}
 
 	/**
-	 * 
-	 * @param jobName
 	 * @param config
 	 *            the config provided will be merged with the configuration of
 	 *            the configurationProvider, while the provided config has
@@ -65,17 +59,9 @@ public class MRWrapper {
 	 * @param reducerTableName
 	 *            if reducer should write its output to a HBase table, set its
 	 *            name
-	 * @param tableScanner
-	 * @param mapperClassName
 	 * @param reducerClassName
 	 *            only provide this name if there is actually a reduce step to
 	 *            be done
-	 * @param outputKey
-	 * @param outputValue
-	 * @return
-	 * @throws IOException
-	 * @throws ClassNotFoundException
-	 * @throws InterruptedException
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean launchMapReduceJob(String jobName, Configuration config, Optional<String> mapperTableName,
@@ -102,14 +88,10 @@ public class MRWrapper {
 			}
 			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner.get(),
 					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, job);
-			MultithreadedTableMapper
-					.setMapperClass(
-							job,
-							(Class<? extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>>) MRMainTableMapper.class);
+			MultithreadedTableMapper.setMapperClass(job, (Class) MRMainTableMapper.class);
 		} else {
 			job.setMapperClass((Class<? extends Mapper>) mapperClass);
-			MultithreadedMapper.setMapperClass(job,
-					(Class<? extends Mapper<Text, BytesWritable, Text, IntWritable>>) MRMainMapper.class);
+			MultithreadedMapper.setMapperClass(job, (Class) MRMainMapper.class);
 		}
 		job.setMapOutputKeyClass(outputKey);
 		job.setMapOutputValueClass(outputValue);
