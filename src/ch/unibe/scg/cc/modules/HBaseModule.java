@@ -6,8 +6,6 @@ import org.apache.hadoop.hbase.client.HTable;
 
 import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.activerecord.HTableWriteBufferProvider;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
@@ -37,8 +35,6 @@ public class HBaseModule extends AbstractModule {
 
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
-		bind(IPutFactory.class).to(PutFactory.class);
-		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
 		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
 	}
 

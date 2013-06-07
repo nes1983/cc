@@ -69,6 +69,9 @@ public class CloneExpander {
 	 * @return The matches, stitched together.
 	 */
 	public Collection<Clone> expandClones(final Iterable<SnippetMatch> matches) {
+		if (!matches.iterator().hasNext()) {
+			return Collections.emptyList();
+		}
 		SnippetMatch first = matches.iterator().next();
 		for (SnippetMatch match : matches) {
 			assert match.getThisSnippetLocation().getFunction()

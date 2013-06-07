@@ -18,7 +18,9 @@ import ch.unibe.scg.cc.SnippetMatchComparator;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
+import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.RealCodeFile;
 import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
 import ch.unibe.scg.cc.activerecord.RealProject;
@@ -30,6 +32,7 @@ import ch.unibe.scg.cc.activerecord.Version;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
+import com.google.inject.name.Names;
 
 //@formatter:off
 public class CCModule extends AbstractModule {
@@ -48,5 +51,8 @@ public class CCModule extends AbstractModule {
 		install(new FactoryModuleBuilder().implement(CodeFile.class, RealCodeFile.class).build(
 				RealCodeFileFactory.class));
 		install(new FactoryModuleBuilder().build(FunctionFactory.class));
+		
+		bind(IPutFactory.class).to(PutFactory.class);
+		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
 	}
 }

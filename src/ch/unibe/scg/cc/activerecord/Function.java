@@ -27,7 +27,8 @@ public class Function extends Column {
 	final Hasher hasher;
 
 	public static interface FunctionFactory {
-		Function makeFunction(Hasher hasher, int baseLine, CharSequence normalized, CharSequence contents);
+		Function makeFunction(Hasher hasher, int baseLine, @Assisted("normalized") CharSequence normalized,
+				@Assisted("contents") CharSequence contents);
 	}
 
 	@Inject
@@ -35,8 +36,8 @@ public class Function extends Column {
 	 * Creates a new function by copying only "normalized", "contents", "baseline" and
 	 * "standardHasher" from the provided function.
 	 */
-	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted CharSequence normalized,
-			@Assisted CharSequence contents) {
+	public Function(@Assisted Hasher hasher, @Assisted int baseLine, @Assisted("normalized") CharSequence normalized,
+			@Assisted("contents") CharSequence contents) {
 		this.snippets = new ArrayList<Snippet>();
 		this.hasher = hasher;
 		this.baseLine = baseLine;
