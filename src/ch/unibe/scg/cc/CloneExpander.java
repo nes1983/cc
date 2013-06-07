@@ -25,7 +25,7 @@ import com.google.common.collect.Lists;
 
 /**
  * Given a list of matches, extracts all fully expanded clones.
- *
+ * 
  * <p>
  * Popular snippets are treated special. We enforce earlier in the pipeline that
  * all functions that contain popular snippets also appear at least once in a
@@ -39,8 +39,8 @@ public class CloneExpander {
 	// Instead, look at the snippetlocations, they should contain their length.
 
 	/**
-	 * Maps from functions hashes to all of their popular snippet. See the popularsnippets
-	 * Htable definition for details.
+	 * Maps from functions hashes to all of their popular snippet. See the
+	 * popularsnippets Htable definition for details.
 	 */
 	final ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
 	/** Maps from snippet hash to popular snippet locations. */
@@ -74,8 +74,7 @@ public class CloneExpander {
 		}
 		SnippetMatch first = matches.iterator().next();
 		for (SnippetMatch match : matches) {
-			assert match.getThisSnippetLocation().getFunction()
-					.equals(first.getThisSnippetLocation().getFunction());
+			assert match.getThisSnippetLocation().getFunction().equals(first.getThisSnippetLocation().getFunction());
 		}
 
 		final ImmutableList.Builder<Clone> clones = ImmutableList.builder();
@@ -92,23 +91,22 @@ public class CloneExpander {
 
 			while (iter.hasNext()) {
 				final SnippetMatch cur = iter.next();
-				if (!cur.getThatSnippetLocation().getFunction()
-						.equals(last.getThatSnippetLocation().getFunction())) {
+				if (!cur.getThatSnippetLocation().getFunction().equals(last.getThatSnippetLocation().getFunction())) {
 					clones.add(finalizeClone(clone));
 					iter.remove();
 					clone = initializeClone(cur);
 					last = cur;
 					continue;
 				}
-				if (Math.abs(last.getThisSnippetLocation().getPosition()
-						- cur.getThisSnippetLocation().getPosition()) <= MAX_GAP) {
+				if (Math.abs(last.getThisSnippetLocation().getPosition() - cur.getThisSnippetLocation().getPosition()) <= MAX_GAP) {
 					if (Math.abs(last.getThatSnippetLocation().getPosition()
 							- cur.getThatSnippetLocation().getPosition()) <= MAX_GAP) {
 						iter.remove();
 
-						// Note that clones are sorted by thisLength, not thatLength.
-						clone.setThisLength(
-								cur.getThisSnippetLocation().getPosition() - clone.getThisFromPosition() + 1);
+						// Note that clones are sorted by thisLength, not
+						// thatLength.
+						clone.setThisLength(cur.getThisSnippetLocation().getPosition() - clone.getThisFromPosition()
+								+ 1);
 						clone.setThatFromPosition(Math.min(clone.getThatFromPosition(), cur.getThatSnippetLocation()
 								.getPosition()));
 						clone.setThatLength(Math.max(clone.getThatLength(), cur.getThatSnippetLocation().getPosition()
@@ -142,15 +140,17 @@ public class CloneExpander {
 		List<SnippetMatch> toBeWeavedIns = Lists.newArrayList();
 		for (SnippetLocation thisLocation : function2PopularSnippets.get(thisFunction)) {
 			assert snippet2PopularSnippet.containsKey(thisLocation.getSnippet().asReadOnlyByteBuffer());
-			for (SnippetLocation thatLocation : snippet2PopularSnippet.get(thisLocation.getSnippet().asReadOnlyByteBuffer())) {
-				// The following three lines *must* match the test in MakeFunction2RoughClones.java
-				// The idea is that only clone a to b should be detected, not b to a.
+			for (SnippetLocation thatLocation : snippet2PopularSnippet.get(thisLocation.getSnippet()
+					.asReadOnlyByteBuffer())) {
+				// The following three lines *must* match the test in
+				// MakeFunction2RoughClones.java
+				// The idea is that only clone a to b should be detected, not b
+				// to a.
 				if (thisFunction.compareTo(thatLocation.getFunction().asReadOnlyByteBuffer()) >= 0) {
 					continue;
 				}
 
-				toBeWeavedIns.add(SnippetMatch.newBuilder()
-						.setThisSnippetLocation(thisLocation)
+				toBeWeavedIns.add(SnippetMatch.newBuilder().setThisSnippetLocation(thisLocation)
 						.setThatSnippetLocation(thatLocation).build());
 			}
 		}
@@ -170,7 +170,8 @@ public class CloneExpander {
 			}
 			assert snippetMatch != null;
 
-			//We're one step too far now, so walk back left, unless the insertion point is the last element
+			// We're one step too far now, so walk back left, unless the
+			// insertion point is the last element
 			if (snippetMatchComparator.compare(toBeWeavedIn, snippetMatch) <= 0) {
 				unprocessed.previous();
 			}
