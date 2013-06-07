@@ -12,15 +12,15 @@ PROJECTS_PER_PAGE = 10
 $countProjectsWithoutGitRepos = 0
 $countProjects = 0
 
-def parseProject projectName, projectUrl
-	$stderr.puts "Analyze Repo #{projectName} ..."
+def parseProject projectUrl
+	$stderr.puts "Analyze Repo #{projectUrl} ..."
 	
 	pageNumber = 1
 	
 	doc = getDoc(projectUrl, pageNumber)
 	
 	if (doc.nil?)
-		raise "Could not load project #{projectName}, #{projectUrl}"
+		raise "Could not load project #{projectUrl}"
 	end
 	
 	title = projectUrl.strip.gsub(/\/p\//,"")
@@ -39,7 +39,7 @@ def parseProject projectName, projectUrl
 		for e in enlistment
 			type = e.css("td:not(.status)").css(".span2").text.gsub(/\r/,"").gsub(/\n/,"")
 			link = e.css("td.span4").text.gsub(/\r/,"").gsub(/\n/,"")
-			puts "#{projectName}\t#{title}\t#{type}\t#{link}"
+			puts "#{title}\t#{type}\t#{link}"
 		end
 		
 		begin
@@ -71,9 +71,8 @@ def scanRepos
 		projects = doc.css("div.project>h2")
 		for p in projects
 			begin
-				projectName = p.text.gsub(/\r/,"").gsub(/\n/,"")
 				projectUrl = p.child['href'].to_str
-				parseProject projectName, projectUrl
+				parseProject projectUrl
 				$countProjects += 1
 			rescue Exception => msg
 				$stderr.puts "Error occurred on page #{i}: #{msg}"

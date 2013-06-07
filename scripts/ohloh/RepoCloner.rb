@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 
-# single threaded solution
+# example of folder layout after download:
+# /tmp/repos/junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
+# /tmp/repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
+
+# the index file contains the size (MB) and the path of each pack file (tab-separated).
+# example:
+# 8	junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
+# 5	maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
 
 require 'fileutils'
 require 'pty'
@@ -8,7 +15,7 @@ require 'expect'
 require 'optparse'
 require 'tmpdir'
 
-WAIT_TIME = 180
+WAIT_TIME = 600
 
 def cloneRepos
 	FileUtils.remove_entry_secure($repo_path, true)
@@ -20,10 +27,10 @@ def cloneRepos
 end
 
 def process_line line
-	humanReadableName, name, type, repo = line.split(/\t/)
+	# it's safe to split on the tab character because tabs are always encoded in an url
+	name, type, repo = line.split(/\t/)
 	
 	begin
-		humanReadableName = humanReadableName.to_s
 		type = type.to_s
 		name = name.gsub(/[^A-Za-z]/, "")
 		repo = repo.gsub(/\r/,"").gsub(/\n/, "").split(/ /)[0]
@@ -38,7 +45,9 @@ def process_line line
 		folder_name = "#{$repo_path}/#{name}"
 		
 		if type.include? "Git"
-			spawn "git clone --quiet --bare #{repo} #{folder_name}"
+			du_out = %x(git clone --quiet --bare #{repo} #{folder_name} && cd #{folder_name} && du -m ./objects/pack/*.pack)
+			open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{name}") end
+			
 		elsif type.include? "Subversion"
 			Dir.mktmpdir {|tmpDir|
 				ok = spawn("svn co --quiet #{repo} #{tmpDir}")
@@ -51,7 +60,9 @@ def process_line line
 					git commit -m "snapshot on #{datestamp}" && \
 					git tag -a "head" -m "head" && \
 					git gc --aggressive && \
-					mv .git #{folder_name})
+					mv .git/* #{folder_name})
+				du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
+				open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{name}") end
 				$stderr.puts "Finished #{name}"
 			}
 		end

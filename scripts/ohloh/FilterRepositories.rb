@@ -3,7 +3,7 @@
 # This script filters the repositories found by the OhlohJavaGitRepoFetcher.rb script,
 # such that there is always only one Git repository per project. It tries to evaluate the best link.
 # The input is expected to be tab separated:
-# definition: projectHumanReadableName	name	type	url
+# definition:	name	type	url
 # example: Apache Maven 2	maven2	Git	https://git-wip-us.apache.org/repos/asf/maven-scm.git master
 
 
@@ -17,7 +17,7 @@ def filterRepositories
 	Enumerator.new { |repos|
 		while (gets)
 			repo = Repo.new
-			repo.humanReadableName, repo.name, repo.type, repo.url = $_.split(/\t/)
+			repo.name, repo.type, repo.url = $_.split(/\t/)
 			repo.score = 0
 			
 			repos << repo
@@ -54,11 +54,11 @@ def printBest repos
 	
 	# sort descending and choose first result after ranking
 	bestRepo = repos.max_by{|r| r.score}
-	$stdout.puts "#{bestRepo.humanReadableName}\t#{bestRepo.name}\t#{bestRepo.type}\t#{bestRepo.url}"
+	$stdout.puts "#{bestRepo.name}\t#{bestRepo.type}\t#{bestRepo.url}"
 end
 
 class Repo
-	attr_accessor :humanReadableName, :name, :type, :url, :score
+	attr_accessor :name, :type, :url, :score
 end
 
 if __FILE__ == $0
