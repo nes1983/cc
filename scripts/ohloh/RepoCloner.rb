@@ -6,8 +6,8 @@
 
 # the index file contains the size (MB) and the path of each pack file (tab-separated).
 # example:
-# 8	junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
-# 5	maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
+# 8	repos/junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
+# 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
 
 require 'fileutils'
 require 'pty'
@@ -16,6 +16,8 @@ require 'optparse'
 require 'tmpdir'
 
 WAIT_TIME = 600
+# set LOCAL_FOLDER_NAME to the same value as in DataFetchPipeline.sh
+LOCAL_FOLDER_NAME = "repos"
 
 def cloneRepos
 	FileUtils.remove_entry_secure($repo_path, true)
@@ -46,7 +48,7 @@ def process_line line
 		
 		if type.include? "Git"
 			du_out = %x(git clone --quiet --bare #{repo} #{folder_name} && cd #{folder_name} && du -m ./objects/pack/*.pack)
-			open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{name}") end
+			open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
 			
 		elsif type.include? "Subversion"
 			Dir.mktmpdir {|tmpDir|
@@ -62,7 +64,7 @@ def process_line line
 					git gc --aggressive && \
 					mv .git/* #{folder_name})
 				du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
-				open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{name}") end
+				open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
 				$stderr.puts "Finished #{name}"
 			}
 		end
