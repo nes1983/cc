@@ -47,6 +47,7 @@ import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
+import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -181,6 +182,9 @@ public class MakeFunction2FineClones implements Runnable {
 					}
 				});
 			} catch (ExecutionException e) {
+				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
+						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e);
+			} catch (UncheckedExecutionException e) {
 				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
 						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e);
 			}
