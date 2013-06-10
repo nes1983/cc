@@ -1,8 +1,11 @@
 #!/usr/bin/env jruby
 
+# For small experiments, run as ./OhlohJavaRepoFetcher.rb --max_repos 20
+
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'optparse'
 
 # this script fetches all git repositories of projects with
 # "java" (as tag | in title | in project description) from ohloh
@@ -74,6 +77,9 @@ def scanRepos
 				projectUrl = p.child['href'].to_str
 				parseProject projectUrl
 				$countProjects += 1
+				if $max_repos > 0 &&  $countProjects>= $max_repos
+					return
+				end
 			rescue Exception => msg
 				$stderr.puts "Error occurred on page #{i}: #{msg}"
 			end
@@ -83,6 +89,14 @@ def scanRepos
 end
 
 if __FILE__ == $0
+	OptionParser.new do |opts|
+	$max_repos = -1
+	opts.on("--max_repos NUM",
+		"How many repos do you want? Choose -1 for all.") do |num|
+			$max_repos = num.to_i
+		end
+	end.parse!
+	
 	scanRepos
 	$stderr.puts "#{$countProjectsWithoutGitRepos} of #{$countProjects} projects had no Git repository."
 end

@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env jruby
 
 # example of folder layout after download:
 # /tmp/repos/junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
@@ -9,6 +9,13 @@
 # 8	repos/junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
 # 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
 
+# Sample invocation: 
+# ./RepoCloner.rb 'tomcat Subversion http://svn.apache.org/repos/asf/tomcat/taglibs/standard/trunk/'
+# ./RepoCloner.rb 'jetty   Git     git://git.eclipse.org/gitroot/jetty/org.eclipse.jetty.wtp.git master'
+
+
+require './constants.rb'
+
 require 'fileutils'
 require 'pty'
 require 'expect'
@@ -16,24 +23,11 @@ require 'optparse'
 require 'tmpdir'
 
 WAIT_TIME = 600
-# set LOCAL_FOLDER_NAME to the same value as in DataFetchPipeline.sh
-LOCAL_FOLDER_NAME = "repos"
-
-def cloneRepos
-	FileUtils.remove_entry_secure($repo_path, true)
-	FileUtils.mkdir_p($repo_path)
-	
-	while (gets)
-		process_line $_
-	end
-end
 
 def process_line line
 	# it's safe to split on the tab character because tabs are always encoded in an url
-	name, type, repo = line.split(/\t/)
-	
+	name, type, repo = line.split(/\s+/)
 	begin
-		type = type.to_s
 		name = name.gsub(/[^A-Za-z]/, "")
 		repo = repo.gsub(/\r/,"").gsub(/\n/, "").split(/ /)[0]
 		repoName = repo.slice(/.*\/(.+)/, 1)
@@ -44,11 +38,12 @@ def process_line line
 			return
 		end
 		
-		folder_name = "#{$repo_path}/#{name}"
+		folder_name = "#{REPO_PATH}/#{name}"
 		
 		if type.include? "Git"
-			du_out = %x(git clone --quiet --bare #{repo} #{folder_name} && cd #{folder_name} && du -m ./objects/pack/*.pack)
-			open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
+			du_out = %x(git clone --quiet --bare #{repo} #{folder_name} && 
+				cd #{folder_name} && du -m ./objects/pack/*.pack)
+			open("#{REPO_PATH}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
 			
 		elsif type.include? "Subversion"
 			Dir.mktmpdir {|tmpDir|
@@ -62,11 +57,14 @@ def process_line line
 					git commit -m "snapshot on #{datestamp}" && \
 					git tag -a "head" -m "head" && \
 					git gc --aggressive && \
-					mv .git/* #{folder_name})
+					mv .git #{folder_name})
 				du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
-				open("#{$repo_path}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
+				open("#{REPO_PATH}/index", "a") do 
+					|f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
 				$stderr.puts "Finished #{name}"
 			}
+		else 
+			$stderr.puts "Unknown repo type ", type, " in ", repo
 		end
 	rescue Exception => e
 		$stderr.puts e.message
@@ -78,14 +76,21 @@ def spawn(cmd)
 	$stderr.puts cmd
 	begin
 		PTY.spawn(cmd) do |reader, writer, pid|
-			reader.expect(/name|pass/i, WAIT_TIME) { |name|
-				Process.kill("TERM", pid)
+			reader.expect(/username|\bname|permanent/i, WAIT_TIME) { |name|
+				if /permanent/ =~ name
+					writer.puts("p\n")
+					continue
+				end
+				
+				# Ruby offers no API to see if we ran into the timeout,
+				# We could measure the time ourselves, 
+				# but it's not actually that important.
+				# So we just ignore that case.
 				if name
 					$stderr.puts("Was asked for username/password by #{cmd}")
-				else
-					$stderr.puts("Ran into timeout on #{cmd}")
+					Process.kill("TERM", pid)
+					return false
 				end
-				return false
 			}
 			Process.kill('TERM', pid)
 		end
@@ -97,13 +102,5 @@ end
 
 if __FILE__ == $0
 	# Default setting for command-line option
-	$repo_path = "/tmp/repos"
-	OptionParser.new do |opts|
-		opts.on("--repo_path PATH",
-			"Where you'd like to find the git repos once we're done.") do |path|
-			$repo_path = path
-		end
-	end.parse!
-	
-	cloneRepos
+	ARGV.map { |el| process_line el }
 end
