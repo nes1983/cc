@@ -30,7 +30,6 @@ import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
-import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 
@@ -259,13 +258,14 @@ public class MakeFunction2FineClones implements Runnable {
 			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
 			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
 			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
-			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
-			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
+			config.set(MRJobConfig.MAP_MEMORY_MB, "8192");
+			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx8000M");
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, SequenceFileOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.COMBINE_CLASS_ATTR, MakeFunction2FineClonesReducer.class, Reducer.class);
+			config.setClass(Job.OUTPUT_KEY_CLASS, CommonSnippetWritable.class, Object.class);
+			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
 
 			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
 					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scan),
