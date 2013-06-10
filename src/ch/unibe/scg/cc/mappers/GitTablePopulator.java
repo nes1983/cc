@@ -5,14 +5,9 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ForkJoinPool;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +19,6 @@ import junit.framework.Assert;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
 import org.apache.hadoop.fs.FSDataInputStream;
-import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.HTable;
@@ -77,11 +71,12 @@ public class GitTablePopulator implements Runnable {
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "2000";
 	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx3000m";
-	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
-	// num_porjects: projects.har 405 | testdata.har: 2 | dataset.har 2246
+	// num_projects: projects.har 405 | testdata.har: 2 | dataset.har 2246
+	/** needs to correspond with the path defined in DataFetchPipeline.sh */
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
-	private static final String PROJECTS_FOLDER_PATH = "."; // . for all folders
-	private static final long MAX_PACK_FILESIZE_BYTES = 52428800;
+	private static final int MAX_PACK_FILESIZE_MB = 50;
+	/** set LOCAL_FOLDER_NAME to the same value as in RepoCloner.rb */
+	private static final String LOCAL_FOLDER_NAME = "repos";
 	final MRWrapper mrWrapper;
 
 	@Inject
@@ -126,58 +121,37 @@ public class GitTablePopulator implements Runnable {
 		conf.addResource(new Path(CORE_SITE_PATH));
 		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 
-		Path path = new Path(PROJECTS_FOLDER_PATH);
-		Collection<Path> packFilePaths = Collections.synchronizedCollection(new ArrayList<Path>());
-		logger.finer("yyy start finding pack files " + path);
-
-		AtomicInteger counter = new AtomicInteger(1);
-		ForkJoinPool threadPool = new ForkJoinPool();
-		findPackFilePaths(threadPool, FileSystem.get(conf), path, packFilePaths, counter);
-		while (counter.get() != 0) {
-			Thread.sleep(1000);
-		}
-
-		return Joiner.on(",").join(packFilePaths);
-	}
-
-	/**
-	 * @param listToFill
-	 *            result parameter.
-	 * @param counter
-	 */
-	private void findPackFilePaths(final ExecutorService executorService, final FileSystem fs, Path path,
-			final Collection<Path> listToFill, final AtomicInteger counter) {
-		FileStatus[] fstatus;
-		try {
-			fstatus = fs.listStatus(path);
-		} catch (IOException e) {
-			throw new RuntimeException("Failed to read " + path, e);
-		}
-
-		for (FileStatus f : fstatus) {
-			final Path p = f.getPath();
-			logger.finer("yyy scanning: " + f.getPath() + " || " + f.getPath().getName());
-			if (f.isFile() && f.getPath().toString().matches(REGEX_PACKFILE) && f.getLen() <= MAX_PACK_FILESIZE_BYTES) {
-				listToFill.add(p);
-			} else if (f.isDirectory()) {
-				counter.incrementAndGet();
-				executorService.submit(new Runnable() {
-					@Override
-					public void run() {
-						findPackFilePaths(executorService, fs, p, listToFill, counter);
-					}
-				});
+		FileSystem fs = FileSystem.get(conf);
+		// we read the pack files from the pre-generated index file because
+		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
+		// the HAR file is terribly slow
+		Path indexFile = new Path(LOCAL_FOLDER_NAME + "/index");
+		BufferedReader br = new BufferedReader(new InputStreamReader(fs.open(indexFile)));
+		Collection<Path> packFilePaths = Lists.newArrayList();
+		String line;
+		while ((line = br.readLine()) != null) {
+			// @formatter:off
+			// sample line:
+			// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
+			// @formatter:on
+			String[] record = line.split("\\t");
+			int fileSize = Integer.parseInt(record[0]);
+			String packPath = record[1];
+			if (fileSize > MAX_PACK_FILESIZE_MB) {
+				logger.warning(packPath + " exceeded MAX_PACK_FILESIZE_MB and won't be processed.");
+				continue;
 			}
+			packFilePaths.add(new Path(packPath));
 		}
-		counter.decrementAndGet();
+		return Joiner.on(",").join(packFilePaths);
 	}
 
 	public static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final int MAX_TAGS_TO_PARSE = 15;
 
 		// Optional because in MRMain, we have an injector that does not set
-		// this
-		// property, and can't, because it doesn't have the counter available.
+		// this property, and can't, because it doesn't have the counter
+		// available.
 		@Inject(optional = true)
 		@Named(GuiceResource.COUNTER_PROCESSED_FILES)
 		Counter processedFilesCounter;
@@ -223,12 +197,8 @@ public class GitTablePopulator implements Runnable {
 			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 			FileSystem fileSystem = FileSystem.get(conf);
 
-			if (fileSystem.listStatus(new Path(packFilePath))[0].getLen() > MAX_PACK_FILESIZE_BYTES) {
-				logger.warning("Max filesize exceeded, aborting");
-				return;
-			}
-
 			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
+			// ProgressMonitor set to null, so NullProgressMonitor will be used.
 			pp.parse(null);
 
 			RevWalk revWalk = new RevWalk(r);
