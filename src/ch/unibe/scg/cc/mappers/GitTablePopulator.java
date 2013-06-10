@@ -69,8 +69,8 @@ import com.google.inject.Inject;
 public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
-	private static final String MAP_MEMORY = "2000";
-	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx3000m";
+	private static final String MAP_MEMORY = "4000";
+	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx4000m";
 	// num_projects: projects.har 405 | testdata.har: 2 | dataset.har 2246
 	/** needs to correspond with the path defined in DataFetchPipeline.sh */
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
@@ -94,9 +94,11 @@ public class GitTablePopulator implements Runnable {
 			config.set(MRJobConfig.MAP_SPECULATIVE, "false");
 			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
 			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
-			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
+			config.set(MRJobConfig.TASK_TIMEOUT, "432000000"); // 5 days
 			config.set(MRJobConfig.MAP_MEMORY_MB, MAP_MEMORY);
 			config.set(MRJobConfig.MAP_JAVA_OPTS, MAPRED_CHILD_JAVA_OPTS);
+			// don't abort the whole job if a pack file is corrupt:
+			config.set(MRJobConfig.MAP_FAILURES_MAX_PERCENT, "99");
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
