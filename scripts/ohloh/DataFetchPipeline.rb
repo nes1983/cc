@@ -1,5 +1,9 @@
 #!/usr/bin/env jruby
 
+# Use this to download data and dump into har.
+# To create a smaller sample, run
+# ./DataFetchPipeline.rb --max_repos 4
+
 require './constants.rb'
 
 require 'fileutils'

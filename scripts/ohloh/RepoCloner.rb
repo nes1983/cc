@@ -57,7 +57,8 @@ def process_line line
 					git commit -m "snapshot on #{datestamp}" && \
 					git tag -a "head" -m "head" && \
 					git gc --aggressive && \
-					mv .git #{folder_name})
+					mv .git #{folder_name}) # By all rules of logic, this should be ".git/*". However, 
+										# The reasonable doesn't work, and this one does.
 				du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
 				open("#{REPO_PATH}/index", "a") do 
 					|f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
