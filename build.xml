@@ -21,7 +21,6 @@
 		<pathelement location="libs/commons-io-2.1.jar"/>
 		<pathelement location="libs/commons-lang3-3.0.1.jar"/>
 		<pathelement location="libs/commons-logging-1.1.1.jar"/>
-		<pathelement location="libs/commons-vfs2-2.0-javadoc.jar"/>
 		<pathelement location="libs/commons-vfs2-2.0.jar"/>
 		<pathelement location="libs/guava-14.0.1.jar"/>
 		<pathelement location="libs/guice-3.0.jar"/>
@@ -94,7 +93,6 @@
 			<zipfileset src="libs/commons-io-2.1.jar"/>
 			<zipfileset src="libs/commons-lang3-3.0.1.jar"/>
 			<zipfileset src="libs/commons-logging-1.1.1.jar"/>
-			<zipfileset src="libs/commons-vfs2-2.0-javadoc.jar"/>
 			<zipfileset src="libs/commons-vfs2-2.0.jar"/>
 			<zipfileset src="libs/guava-14.0.1.jar"/>
 			<zipfileset src="libs/guice-3.0.jar"/>
@@ -140,6 +138,8 @@
 	</target>
 
 	<target name="gitPopulateDatabase">
+		<property name="myproperty" refid=".classpath"/>
+		<echo message="${myproperty}"/>
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
