@@ -137,7 +137,7 @@
 		</antcall>
 	</target>
 
-	<target name="gitPopulateDatabase">
+	<target name="gitTablePopulate">
 		<property name="myproperty" refid=".classpath"/>
 		<echo message="${myproperty}"/>
 		<antcall target="indexCreator">
@@ -169,10 +169,11 @@
 		</antcall>
 	</target>
 
-	<target name="indexAllTables">
+	<target name="mrPipeline">
+		<antcall target="gitTablePopulate" />
 		<antcall target="makeSnippet2Function" />
 		<antcall target="makeFunction2RoughClones" />
-		<!-- TODO add makeFunction2FineClones -->
+		<antcall target="makeFunction2FineClones" />
 	</target>
 
 	<target name="executeJar" depends="jar">
