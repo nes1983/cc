@@ -50,6 +50,10 @@ public class MRMain extends Configured implements Tool {
 	static Logger logger = Logger.getLogger(MRMain.class.getName());
 
 	public static void main(String[] args) throws Throwable {
+		if (args.length == 0) {
+			System.err.println("You must specify the job as an argument to MRMain.");
+			System.exit(-1);
+		}
 		logger.finer(Arrays.toString(args));
 		ToolRunner.run(new MRMain(), args);
 	}
@@ -77,7 +81,7 @@ public class MRMain extends Configured implements Tool {
 	 * Guice configured), but Hadoop won't let us. So, this class bridges
 	 * between Guice and Hadoop. In setup, we Guice configure the real reducer,
 	 * and this class acts as a proxy to the guice-configured reducer.
-	 * 
+	 *
 	 * <p>
 	 * All methods except
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
@@ -218,7 +222,7 @@ public class MRMain extends Configured implements Tool {
 
 	/**
 	 * Throws a RuntimeException if the class is not found.
-	 * 
+	 *
 	 * @param qualifiedClassName
 	 *            the fully qualified class name
 	 * @return returns the class Object
