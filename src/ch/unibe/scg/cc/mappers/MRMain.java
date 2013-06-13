@@ -49,17 +49,18 @@ import com.google.inject.Injector;
 public class MRMain extends Configured implements Tool {
 	static Logger logger = Logger.getLogger(MRMain.class.getName());
 
+	// TODO: Doesn't seem to be used from within build.xml -- is this dead?
 	public static void main(String[] args) throws Throwable {
-		if (args.length == 0) {
-			System.err.println("You must specify the job as an argument to MRMain.");
-			System.exit(-1);
-		}
 		logger.finer(Arrays.toString(args));
 		ToolRunner.run(new MRMain(), args);
 	}
 
 	@Override
 	public int run(String[] args) {
+		if (args.length == 0) {
+			System.err.println("You must specify the job as an argument to MRMain.");
+			System.exit(-1);
+		}
 		logger.finer(Arrays.toString(args));
 		assert args.length == 1;
 		Class<?> c = classForNameOrPanic(args[0]);
