@@ -5,7 +5,6 @@ import java.util.NavigableMap;
 
 import javax.inject.Inject;
 
-import junit.framework.Assert;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -21,8 +20,6 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
-import org.junit.Ignore;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.WrappedRuntimeException;
 
@@ -117,15 +114,6 @@ public class MakeHistogram implements Runnable {
 		} catch (InterruptedException e) {
 			// exit thread
 			return;
-		}
-	}
-
-	public static class MakeHistogramTest {
-		@Test
-		@Ignore
-		public void testIndex() {
-			// TODO
-			Assert.assertTrue(false);
 		}
 	}
 

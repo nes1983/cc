@@ -7,11 +7,8 @@ import java.util.TreeSet;
 
 import javax.inject.Inject;
 
-import org.junit.Assert;
-import org.junit.Test;
 
 import com.google.common.base.Preconditions;
-import com.google.common.primitives.UnsignedBytes;
 
 public class HashSerializer {
 	private final Comparator<byte[]> byteArrayComparator;
@@ -65,16 +62,5 @@ public class HashSerializer {
 			result.add(target);
 		}
 		return Collections.unmodifiableSet(result);
-	}
-
-	public final static class HashSerializerTest {
-		@Test
-		public void testDeserialize() {
-			HashSerializer hs = new HashSerializer(UnsignedBytes.lexicographicalComparator());
-			byte[] array = new byte[] { 0, 1, 2, 3, 4, 5, 6, 7 };
-			Set<byte[]> s = hs.deserialize(array, 2);
-			byte[] b = hs.serialize(s);
-			Assert.assertArrayEquals(array, b);
-		}
 	}
 }

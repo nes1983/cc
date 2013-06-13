@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import junit.framework.Assert;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
@@ -21,8 +20,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.junit.Ignore;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.WrappedRuntimeException;
@@ -239,15 +236,6 @@ public class MakeFunction2RoughClones implements Runnable {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
-		}
-	}
-
-	public static class MakeFunction2RoughClonesTest {
-		@Test
-		@Ignore
-		public void testIndex() {
-			// TODO
-			Assert.assertTrue(false);
 		}
 	}
 

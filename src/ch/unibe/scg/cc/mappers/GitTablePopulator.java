@@ -14,7 +14,6 @@ import java.util.regex.Pattern;
 
 import javax.inject.Named;
 
-import junit.framework.Assert;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
@@ -45,7 +44,6 @@ import org.eclipse.jgit.storage.dfs.DfsRepositoryDescription;
 import org.eclipse.jgit.storage.dfs.InMemoryRepository;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
-import org.junit.Test;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
@@ -271,7 +269,7 @@ public class GitTablePopulator implements Runnable {
 			logger.info("Finished processing: " + projectName);
 		}
 
-		private String getProjName(String packFilePath) {
+		String getProjName(String packFilePath) {
 			Matcher m = projectNameRegexNonBare.matcher(packFilePath);
 			if (m.matches()) {
 				return m.group(1);
@@ -325,22 +323,6 @@ public class GitTablePopulator implements Runnable {
 			file2function.flushCommits();
 			function2snippet.flushCommits();
 			strings.flushCommits();
-		}
-	}
-
-	public static class GitTablePopulatorTest {
-		@Test
-		public void testProjnameRegex() {
-			GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null, null, null, null, null,
-					null);
-			String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
-					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
-			String projName = gtpm.getProjName(fullPathString);
-			Assert.assertEquals("apfel", projName);
-
-			fullPathString = "har://hdfs-haddock.unibe.ch/projects/dataset.har/dataset/sensei/objects/pack/pack-a33a3daca1573e82c6fbbc95846a47be4690bbe4.pack";
-			projName = gtpm.getProjName(fullPathString);
-			Assert.assertEquals("sensei", projName);
 		}
 	}
 }
