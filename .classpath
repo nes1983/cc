@@ -56,9 +56,6 @@
 	<classpathentry kind="lib" path="libs/hbasetest-only/slf4j-api-1.7.3.jar"/>
 	<classpathentry kind="lib" path="libs/hbasetest-only/zookeeper-3.4.5.jar"/>
 	<classpathentry kind="lib" path="libs/hbasetest-only/slf4j-simple-1.7.3.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-core-2.0.0-mr1-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-tools-2.0.0-mr1-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-fairscheduler-2.0.0-mr1-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
 	<classpathentry kind="lib" path="libs/protobuf-java-2.5.0.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="src-gen"/>
