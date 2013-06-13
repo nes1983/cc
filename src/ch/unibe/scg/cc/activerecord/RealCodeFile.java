@@ -8,7 +8,6 @@ import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import ch.unibe.scg.cc.StandardHasher;
 
 import com.google.inject.assistedinject.Assisted;
@@ -28,12 +27,12 @@ public class RealCodeFile extends Column implements CodeFile {
 
 	@Override
 	public byte[] getHash() {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void save(Put put) throws IOException {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	public String getFileContents() {
