@@ -1,69 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="clone-detector">
-    <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../Applications/eclipse"/>
-    <property name="junit.output.dir" value="junit"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.6"/>
-    <property name="source" value="1.6"/>
-    <path id="clone-detector.classpath">
-	    <pathelement location="libs/junit-dep-4.9.jar"/>
-        <pathelement location="libs/hamcrest-all-1.3.0RC2.jar"/>
-        <pathelement location="libs/jregex1.2_01.jar"/>
-        <pathelement location="libs/commons-lang3-3.0.1.jar"/>
-        <pathelement location="libs/commons-io-2.1.jar"/>
-        <pathelement location="libs/commons-vfs2-2.0.jar"/>
-        <pathelement location="libs/commons-logging-1.1.1.jar"/>
-        <pathelement location="libs/commons-collections-3.2.1.jar"/>
-        <pathelement location="libs/guava-14.0.1.jar"/>
-        <pathelement location="libs/hadoop-auth-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-common-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.2.0.jar"/>
-        <pathelement location="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
-        <pathelement location="libs/commons-cli-1.2.jar"/>
-        <pathelement location="bin"/>
-        <pathelement location="libs/aopalliance.jar"/>
-        <pathelement location="libs/guice-3.0.jar"/>
-        <pathelement location="libs/guice-assistedinject-3.0.jar"/>
-        <pathelement location="libs/guice-grapher-3.0.jar"/>
-        <pathelement location="libs/guice-jmx-3.0.jar"/>
-        <pathelement location="libs/guice-jndi-3.0.jar"/>
-        <pathelement location="libs/guice-multibindings-3.0.jar"/>
-        <pathelement location="libs/guice-persist-3.0.jar"/>
-        <pathelement location="libs/guice-throwingproviders-3.0.jar"/>
-        <pathelement location="libs/javax.inject.jar"/>
-        <pathelement location="libs/mockito-all-1.9.0-rc1.jar"/>
-        <pathelement location="libs/jexample-4.5-391.jar"/>
-        <pathelement location="libs/automaton.jar"/>
-        <pathelement location="libs/juniversalchardet-1.0.3.jar"/>
-    	<pathelement location="libs/jsch-0.1.48.jar"/>
-    	<pathelement location="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
-    	<pathelement location="libs/protobuf-java-2.4.1.jar"/>
-    </path>
-    <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
-    <target name="clean">
-        <delete dir="bin"/>
-        <delete dir="src-gen"/>
-    </target>
+	<property environment="env"/>
+	<property name="ECLIPSE_HOME" value="../../../../Applications/eclipse"/>
+	<property name="junit.output.dir" value="junit"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+	<property name="target" value="1.6"/>
+	<property name="source" value="1.6"/>
+	<path id="clone-detector.classpath">
+	<pathelement location="libs/junit-dep-4.9.jar"/>
+		<pathelement location="libs/hamcrest-all-1.3.0RC2.jar"/>
+		<pathelement location="libs/jregex1.2_01.jar"/>
+		<pathelement location="libs/commons-lang3-3.0.1.jar"/>
+		<pathelement location="libs/commons-io-2.1.jar"/>
+		<pathelement location="libs/commons-vfs2-2.0.jar"/>
+		<pathelement location="libs/commons-logging-1.1.1.jar"/>
+		<pathelement location="libs/commons-collections-3.2.1.jar"/>
+		<pathelement location="libs/guava-14.0.1.jar"/>
+		<pathelement location="libs/hadoop-auth-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-common-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.2.0.jar"/>
+		<pathelement location="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
+		<pathelement location="libs/commons-cli-1.2.jar"/>
+		<pathelement location="bin"/>
+		<pathelement location="libs/aopalliance.jar"/>
+		<pathelement location="libs/guice-3.0.jar"/>
+		<pathelement location="libs/guice-assistedinject-3.0.jar"/>
+		<pathelement location="libs/guice-grapher-3.0.jar"/>
+		<pathelement location="libs/guice-jmx-3.0.jar"/>
+		<pathelement location="libs/guice-jndi-3.0.jar"/>
+		<pathelement location="libs/guice-multibindings-3.0.jar"/>
+		<pathelement location="libs/guice-persist-3.0.jar"/>
+		<pathelement location="libs/guice-throwingproviders-3.0.jar"/>
+		<pathelement location="libs/javax.inject.jar"/>
+		<pathelement location="libs/mockito-all-1.9.0-rc1.jar"/>
+		<pathelement location="libs/jexample-4.5-391.jar"/>
+		<pathelement location="libs/automaton.jar"/>
+		<pathelement location="libs/juniversalchardet-1.0.3.jar"/>
+		<pathelement location="libs/jsch-0.1.48.jar"/>
+		<pathelement location="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
+		<pathelement location="libs/protobuf-java-2.4.1.jar"/>
+	</path>
+	<target name="init">
+		<mkdir dir="bin"/>
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean">
+		<delete dir="bin"/>
+		<delete dir="src-gen"/>
+	</target>
+
 	<target name="jar" depends="build">
 		<taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask"
-		        classpath="jarjar-1.4.jar"/>
+				classpath="jarjar-1.4.jar"/>
 		<manifestclasspath jarfile="cc.jar" property="manifest.class.path">
 			<classpath refid="clone-detector.classpath" />
 		</manifestclasspath>
@@ -72,8 +74,9 @@
 				<attribute name="Class-Path" value="${manifest.class.path}" />
 				<attribute name="Main-Class" value="${mainClass}" />
 			</manifest>
-			<!-- produce using 
-			find libs -name '*.jar' -prune -type f | ruby -n -e 'puts "<zipfileset src=\"" + $_.gsub(/\n/,"") + "\"/>" unless /libs\/(hbase|hadoop).*/ =~ $_'
+			<!-- produce using
+			find libs -name '*.jar' -prune -type f | ruby -n -e 'puts "<zipfileset src=\"" + $_.gsub(/\n/,"") + "\"/>"
+				 unless /libs\/(hbase|hadoop).*/ =~ $_'
 			-->
 			<zipfileset src="libs/aopalliance.jar"/>
 			<zipfileset src="libs/automaton.jar"/>
@@ -107,11 +110,14 @@
 			<zipfileset src="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
 		</jarjar>
 	</target>
+
 	<target name="uploadJar">
 		<property name="libjars" value="-libjars /tmp/hbase-0.94.2-cdh4.2.0-security.jar"/>
 		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" />
-		<sshexec host="haddock.unibe.ch" username="deploy" password="" keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${libjars} ${classArgument}" />
+		<sshexec host="haddock.unibe.ch" username="deploy" password=""
+			keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${libjars} ${classArgument}" />
 	</target>
+
 	<target name="indexCreator">
 		<antcall target="jar">
 			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MRMain" />
@@ -120,104 +126,120 @@
 			<param name="classArgument" value="${classArgument}" />
 		</antcall>
 	</target>
+
 	<target name="jGitTest">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.JGitTest" />
 		</antcall>
 	</target>
+
 	<target name="gitPopulateDatabase">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
 	</target>
+
 	<target name="makeHistogram">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeHistogram" />
 		</antcall>
 	</target>
+
 	<target name="makeSnippet2Function">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeSnippet2Function" />
 		</antcall>
 	</target>
+
 	<target name="makeFunction2RoughClones">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones" />
 		</antcall>
 	</target>
+
 	<target name="makeFunction2FineClones">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2FineClones" />
 		</antcall>
 	</target>
+
 	<target name="indexAllTables">
 		<antcall target="makeSnippet2Function" />
 		<antcall target="makeFunction2RoughClones" />
 		<!-- TODO add makeFunction2FineClones -->
 	</target>
+
 	<target name="executeJar" depends="jar">
 		<java jar="cc.jar" fork="true"/>
 	</target>
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-    	<exec executable="./run-protoc.sh"/>
-    	<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
-            <src path="src"/>
-            <classpath refid="clone-detector.classpath"/>
-        </javac>
-    </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
-    <target name="CC">
-        <java classname="ch.unibe.scg.cc.Main" failonerror="true" fork="yes">
-            <classpath refid="clone-detector.classpath"/>
-        </java>
-    </target>
-    <target name="src">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="ch.unibe.scg.cc.FrontendTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.ProjectWalkerTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.RegisterClonesBackendTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.RegisterSnippetTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.ShingleHasherTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.Type2ReplacerFactoryTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactoryTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.lines.ModifiableLinesTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.lines.StringOfLinesTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.regex.ReplaceTest" todir="${junit.output.dir}"/>
-            <test name="ch.unibe.scg.cc.regex.ReplacementStringTest" todir="${junit.output.dir}"/>
-            <classpath refid="clone-detector.classpath"/>
-        </junit>
-    </target>
-    <target name="TestStore">
-        <java classname="TestStore" failonerror="true" fork="yes">
-            <classpath refid="clone-detector.classpath"/>
-        </java>
-    </target>
-    <target name="junitreport">
-        <junitreport todir="${junit.output.dir}">
-            <fileset dir="${junit.output.dir}">
-                <include name="TEST-*.xml"/>
-            </fileset>
-            <report format="frames" todir="${junit.output.dir}"/>
-        </junitreport>
-    </target>
+
+	<target depends="clean" name="cleanall"/>
+	<target depends="build-subprojects,build-project" name="build"/>
+	<target name="build-subprojects"/>
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}"/>
+		<exec executable="./run-protoc.sh"/>
+		<javac includeantruntime="false"  debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+			<src path="src"/>
+			<classpath refid="clone-detector.classpath"/>
+		</javac>
+	</target>
+
+	<target description="Build all projects which reference this project. Useful to propagate changes."
+		name="build-refprojects"/>
+	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+		<copy todir="${ant.library.dir}">
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+		</copy>
+		<unzip dest="${ant.library.dir}">
+			<patternset includes="jdtCompilerAdapter.jar"/>
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+		</unzip>
+	</target>
+
+	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="CC">
+		<java classname="ch.unibe.scg.cc.Main" failonerror="true" fork="yes">
+			<classpath refid="clone-detector.classpath"/>
+		</java>
+	</target>
+
+	<target name="src">
+		<mkdir dir="${junit.output.dir}"/>
+		<junit fork="yes" printsummary="withOutAndErr">
+			<formatter type="xml"/>
+			<test name="ch.unibe.scg.cc.FrontendTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.ProjectWalkerTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.RegisterClonesBackendTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.RegisterSnippetTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.ShingleHasherTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.Type2ReplacerFactoryTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactoryTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.lines.ModifiableLinesTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.lines.StringOfLinesTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.regex.ReplaceTest" todir="${junit.output.dir}"/>
+			<test name="ch.unibe.scg.cc.regex.ReplacementStringTest" todir="${junit.output.dir}"/>
+			<classpath refid="clone-detector.classpath"/>
+		</junit>
+	</target>
+
+	<target name="TestStore">
+		<java classname="TestStore" failonerror="true" fork="yes">
+			<classpath refid="clone-detector.classpath"/>
+		</java>
+	</target>
+
+	<target name="junitreport">
+		<junitreport todir="${junit.output.dir}">
+			<fileset dir="${junit.output.dir}">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${junit.output.dir}"/>
+		</junitreport>
+	</target>
 </project>
