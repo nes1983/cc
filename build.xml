@@ -138,8 +138,6 @@
 	</target>
 
 	<target name="gitTablePopulate">
-		<property name="myproperty" refid=".classpath"/>
-		<echo message="${myproperty}"/>
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
 		</antcall>
