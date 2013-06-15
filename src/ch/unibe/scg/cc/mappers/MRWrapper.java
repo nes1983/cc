@@ -20,7 +20,6 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
-import org.apache.hadoop.mapreduce.lib.map.MultithreadedMapper;
 
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
@@ -74,8 +73,10 @@ public class MRWrapper {
 		job.setJarByClass(MRMain.class);
 		TableMapReduceUtil.addDependencyJars(job);
 
-		Class<?> mapperClass = (mapperTableName.isPresent()) ? MultithreadedTableMapper.class
-				: MultithreadedMapper.class;
+		// TODO: this is a bit of a crutch
+		// Don't use MultihtreadedMapper - use MRMainMapper instead,
+		// otherwise GitTablePopulator fails!
+		Class<?> mapperClass = (mapperTableName.isPresent()) ? MultithreadedTableMapper.class : MRMainMapper.class;
 		Class<?> reducerClass = (reducerTableName.isPresent()) ? MRMainTableReducer.class : MRMainReducer.class;
 
 		// mapper configuration
@@ -91,7 +92,6 @@ public class MRWrapper {
 			MultithreadedTableMapper.setMapperClass(job, (Class) MRMainTableMapper.class);
 		} else {
 			job.setMapperClass((Class<? extends Mapper>) mapperClass);
-			MultithreadedMapper.setMapperClass(job, (Class) MRMainMapper.class);
 		}
 		job.setMapOutputKeyClass(outputKey);
 		job.setMapOutputValueClass(outputValue);
