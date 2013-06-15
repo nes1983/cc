@@ -5,3 +5,4 @@ HDFS_TEMP_FOLDER="/tmp/datafetchpipeline/"
 LOCAL_FOLDER_NAME="repos"
 LOCAL_FOLDER_BASE="/tmp/"
 REPO_PATH=LOCAL_FOLDER_BASE + LOCAL_FOLDER_NAME
+LOG_FILE = "/tmp/dataFetchPipeline.log"

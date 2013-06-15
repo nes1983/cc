@@ -23,16 +23,21 @@ Dir.chdir(File.dirname(__FILE__))
 
 FileUtils.remove_entry_secure(REPO_PATH, true)
 FileUtils.mkdir_p(REPO_PATH)
+FileUtils.remove_entry_secure(LOG_FILE, true)
 
-puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} \
-| tee /tmp/fetcher.log \
-| ./FilterRepositories.rb \
-| tee /tmp/filter.log \
-| parallel ./RepoCloner.rb 2>&1  \
-| tee /tmp/cloner.log }
+puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} 2>>#{LOG_FILE} \
+| tee /tmp/fetched \
+| ./FilterRepositories.rb 2>>#{LOG_FILE} \
+| tee /tmp/filtered \
+| parallel ./RepoCloner.rb 2>>#{LOG_FILE}  \
+| tee /tmp/cloned }
 
-die
-
+log = File.read(LOG_FILE)
+if log.length > 0
+	puts "Obtained Log: ", log
+	# We write errors (and regular log information) to LOG_FILE,
+	# so we can't just abort here.
+end
 
 puts "Download phase finished, now copying to HDFS..."
 %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER})
