@@ -1,4 +1,7 @@
-#!/usr/bin/env jruby
+#!/usr/bin/env ruby1.9.1
+
+# fails with jruby 1.7.3
+# works with ruby 1.9.1 / jruby 1.7.4
 
 # example of folder layout after download:
 # /tmp/repos/junit/objects/pack/pack-9e57f6b7f2fabacd8fade8fa390ef3f9a13b646b.pack
