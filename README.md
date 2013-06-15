@@ -4,3 +4,8 @@
  2. Install [homebrew](http://mxcl.github.io/homebrew/)
  3. Install protobuf: brew install protobuf
  4. Look at build.xml or the pipeline stages available.
+
+# Hadoop commands #
+To check what's inside the generated HAR file:
+
+	hadoop fs -ls -R har:///projects/dataset.har
