@@ -14,7 +14,6 @@ import java.util.regex.Pattern;
 
 import javax.inject.Named;
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -136,7 +135,11 @@ public class GitTablePopulator implements Runnable {
 			// @formatter:on
 			String[] record = line.split("\\t");
 			int fileSize = Integer.parseInt(record[0]);
-			String packPath = record[1];
+			// see: Hadoop: The Definitive Guide, p. 78
+			// @formatter:off
+			// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
+			// @formatter:on
+			String packPath = PROJECTS_HAR_PATH + "/" + record[1];
 			if (fileSize > MAX_PACK_FILESIZE_MB) {
 				logger.warning(packPath + " exceeded MAX_PACK_FILESIZE_MB and won't be processed.");
 				continue;
