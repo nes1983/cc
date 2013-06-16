@@ -40,15 +40,15 @@ if log.length > 0
 end
 
 puts "Download phase finished, now copying to HDFS..."
-%x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER})
-%x(hadoop fs -mkdir #{HDFS_TEMP_FOLDER})
-%x(hadoop fs -copyFromLocal #{LOCAL_FOLDER_BASE}#{LOCAL_FOLDER_NAME} #{HDFS_TEMP_FOLDER})
+puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
+puts %x(hadoop fs -mkdir #{HDFS_TEMP_FOLDER} 2>&1)
+puts %x(hadoop fs -copyFromLocal #{LOCAL_FOLDER_BASE}#{LOCAL_FOLDER_NAME} #{HDFS_TEMP_FOLDER} 2>&1)
 
 puts "Creating HAR file..."
-%x(hadoop fs -rm -r -f /projects/dataset.har)
-%x(hadoop archive -archiveName dataset.har -p #{HDFS_TEMP_FOLDER} #{LOCAL_FOLDER_NAME} /projects/)
+puts %x(hadoop fs -rm -r -f /projects/dataset.har 2>&1)
+puts %x(hadoop archive -archiveName dataset.har -p #{HDFS_TEMP_FOLDER} #{LOCAL_FOLDER_NAME} /projects/ 2>&1)
 
 puts "Deleting temporary repository folder..."
-%x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER})
+puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
 
 puts "Finished."
