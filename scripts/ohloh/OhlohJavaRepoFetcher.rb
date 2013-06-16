@@ -1,4 +1,4 @@
-#!/usr/bin/env jruby
+#!/usr/bin/env jruby-1.7.4 
 
 # For small experiments, run as ./OhlohJavaRepoFetcher.rb --max_repos 20
 

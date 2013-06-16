@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby1.9.1
+#!/usr/bin/env jruby-1.7.4 
 
 # fails with jruby 1.7.3
 # works with ruby 1.9.1 / jruby 1.7.4
@@ -16,8 +16,7 @@
 # ./RepoCloner.rb 'tomcat Subversion http://svn.apache.org/repos/asf/tomcat/taglibs/standard/trunk/'
 # ./RepoCloner.rb 'jetty   Git     git://git.eclipse.org/gitroot/jetty/org.eclipse.jetty.wtp.git master'
 
-
-require './constants.rb'
+require_relative 'constants'
 
 require 'fileutils'
 require 'pty'
