@@ -17,7 +17,8 @@ def filterRepositories
 	Enumerator.new { |repos|
 		while (gets)
 			repo = Repo.new
-			repo.name, repo.type, repo.url = $_.split(/\t/)
+			repo.name, repo.type, repo.url = $_.split(/\s+/)
+			
 			repo.score = 0
 			
 			repos << repo

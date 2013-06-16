@@ -9,7 +9,22 @@ require_relative 'constants'
 require 'fileutils'
 require 'optparse'
 
-ENV["SHELL"] = "/bin/bash"
+# Cross-platform way of finding an executable in the $PATH.
+#
+#   which('ruby') #=> /usr/bin/ruby
+def which(cmd)
+	# Stolen from http://stackoverflow.com/questions/210872
+	exts = ENV['PATHEXT'] ? ENV['PATHEXT'].split(';') : ['']
+	ENV['PATH'].split(File::PATH_SEPARATOR).each do |path|
+		exts.each { |ext|
+			exe = File.join(path, "#{cmd}#{ext}")
+			return exe if File.executable? exe
+		}
+	end
+  	return nil
+end
+
+abort ("You need to have parallel installed") unless which("parallel")
 
 OptionParser.new do |opts|
 $max_repos = -1
@@ -29,8 +44,10 @@ puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} 2>>#{LOG_FILE} \
 | tee /tmp/fetched \
 | ./FilterRepositories.rb 2>>#{LOG_FILE} \
 | tee /tmp/filtered \
-| parallel ./RepoCloner.rb 2>>#{LOG_FILE}  \
+| parallel --gnu ./RepoCloner.rb 2>>#{LOG_FILE} \
 | tee /tmp/cloned }
+# In the above lines, the --gnu switch is very important. parallel will fail silently on Ubuntu unless it is set.
+
 
 log = File.read(LOG_FILE)
 if log.length > 0
