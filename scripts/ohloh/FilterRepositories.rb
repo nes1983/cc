@@ -1,4 +1,4 @@
-#!/usr/bin/env jruby-1.7.4 
+#!/usr/bin/env ruby1.9.3
 
 # This script filters the repositories found by the OhlohJavaGitRepoFetcher.rb script,
 # such that there is always only one Git repository per project. It tries to evaluate the best link.

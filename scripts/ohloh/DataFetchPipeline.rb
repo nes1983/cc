@@ -1,4 +1,4 @@
-#!/usr/bin/env jruby-1.7.4 
+#!/usr/bin/env ruby1.9.3
 
 # Use this to download data and dump into har.
 # To create a smaller sample, run
@@ -69,3 +69,4 @@ puts "Deleting temporary repository folder..."
 puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
 
 puts "Finished."
+

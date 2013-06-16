@@ -1,4 +1,4 @@
-#!/usr/bin/env jruby-1.7.4 
+#!/usr/bin/env ruby1.9.3 
 
 # fails with jruby 1.7.3
 # works with ruby 1.9.1 / jruby 1.7.4
