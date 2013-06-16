@@ -29,19 +29,6 @@
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
 	<classpathentry kind="lib" path="libs/jsch-0.1.48.jar"/>
-	<classpathentry kind="lib" path="libs/hadoop-auth-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-hdfs-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-api-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-client-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-common-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hadoop-yarn-server-common-2.0.0-cdh4.2.0.jar" sourcepath="libs/hadoop-2.0.0-cdh4.2.0.zip"/>
-	<classpathentry kind="lib" path="libs/hbase-0.94.2-cdh4.2.0-security.jar" sourcepath="libs/hbase-0.94.2-cdh4.2.0.zip"/>
 	<classpathentry kind="lib" path="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/org.eclipse.jgit-2.2.0.201212191850-r-javadoc.jar!/"/>
@@ -93,5 +80,18 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-auth-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-common-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-hdfs-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-api-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-client-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-common-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry kind="lib" path="libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
