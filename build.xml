@@ -31,20 +31,19 @@
 		<pathelement location="libs/guice-multibindings-3.0.jar"/>
 		<pathelement location="libs/guice-persist-3.0.jar"/>
 		<pathelement location="libs/guice-throwingproviders-3.0.jar"/>
-		<pathelement location="libs/hadoop-annotations-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-auth-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-common-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.2.0.jar"/>
-		<pathelement location="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
+		<pathelement location="libs/hadoop-auth-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-common-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
 		<pathelement location="libs/javax.inject.jar"/>
 		<pathelement location="libs/jexample-4.5-391.jar"/>
 		<pathelement location="libs/jregex1.2_01.jar"/>
@@ -110,13 +109,19 @@
 			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>
 			<zipfileset src="libs/org.eclipse.jgit-2.2.0.201212191850-r.jar"/>
 			<zipfileset src="libs/protobuf-java-2.5.0.jar"/>
-			<zipfileset src="libs/hbase-0.94.2-cdh4.2.0-security.jar"/>
+			<zipfileset src="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
 			<rule pattern="com.**" result="rcom.@1"/> <!-- Can only list ONE rule! -->
 		</jarjar>
 	</target>
 
 	<target name="uploadJar">
-		<property name="libjars" value="-libjars /tmp/hbase-0.94.2-cdh4.2.0-security.jar"/>
+		<!--
+		 TODO: As long as we provide the hbase-jar in the cc.jar (with jarjar, see above),
+		 we can provide an empty libjars property. When jarjar gets removed from the 
+		 build process, we need to set the libjars value again to something like this:
+		 "-libjars /tmp/hbase-0.94.6-cdh4.3.0-security.jar"
+		-->
+		<property name="libjars" value=""/>
 		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:/tmp" password="" keyfile="${user.home}/.ssh/id_rsa" />
 		<sshexec host="haddock.unibe.ch" username="deploy" password=""
 			keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar /tmp/cc.jar ${libjars} ${classArgument}" />
