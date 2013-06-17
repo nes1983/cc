@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby1.9.3 
 
+# Download repositories.
+# The repositories to download are specified as the input lines, one line for each repository.
+# If the repository was previously downloaded, just update it. Avoid downloading it from
+# scratch.
+
 # fails with jruby 1.7.3
 # works with ruby 1.9.1 / jruby 1.7.4
 
@@ -21,7 +26,6 @@ require_relative 'constants'
 require 'fileutils'
 require 'pty'
 require 'expect'
-require 'optparse'
 require 'tmpdir'
 
 WAIT_TIME = 600
@@ -42,32 +46,44 @@ def process_line line
 		
 		folder_name = "#{REPO_PATH}/#{name}"
 		
+		du_out = "0 ."
 		if type.include? "Git"
-			du_out = %x(git clone --quiet --bare #{repo} #{folder_name} && 
-				cd #{folder_name} && du -m ./objects/pack/*.pack)
-			open("#{REPO_PATH}/index", "a") do |f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
-			
+			$stderr.puts %x{git clone --quiet --bare #{repo} #{folder_name}}
+			if $?.exitstatus != 0
+				$stderr.puts "Updating #{folder_name}"
+				%x(cd #{folder_name}; git fetch --all --quiet; git gc --aggressive)
+			else
+				$stderr.puts "Cloned #{folder_name}"
+			end
+			du_out = %x(du -m #{folder_name}/objects/pack/*.pack)
 		elsif type.include? "Subversion"
-			Dir.mktmpdir {|tmpDir|
-				ok = spawn("svn co --quiet #{repo} #{tmpDir}")
-				return unless ok
-				
-				datestamp = Time.now.strftime("%Y-%m-%d")
-				%x(cd #{tmpDir} && \
-					git init . && \
-					git add . && \
-					git commit -m "snapshot on #{datestamp}" && \
-					git tag -a "head" -m "head" && \
-					git gc --aggressive && \
-					mv .git #{folder_name}) # XXX By all rules of logic, this should be ".git/*". However, 
-										# The reasonable doesn't work, and this one does.
-				du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
-				open("#{REPO_PATH}/index", "a") do 
-					|f| f.puts du_out.sub(".", "#{LOCAL_FOLDER_NAME}/#{name}") end
-				$stderr.puts "Finished #{name}"
-			}
+			# TODO: Add incremental update of svn repos. For now, just skip.
+			if !File.exist?(folder_name)
+				Dir.mktmpdir { |tmpDir|
+					ok = spawn("svn co --quiet #{repo} #{tmpDir}")
+					return unless ok
+					
+					datestamp = Time.now.strftime("%Y-%m-%d")
+					%x(cd #{tmpDir} && \
+						git init . && \
+						git add . && \
+						git commit -m "snapshot on #{datestamp}" && \
+						git tag -a "head" -m "head" && \
+						git gc --aggressive && \
+						mv .git #{folder_name}) # XXX By all rules of logic, this should be ".git/*". However, 
+											# The reasonable doesn't work, and this one does.
+					du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
+					$stderr.puts "Finished #{name}"
+				}
+			else 
+				$stderr.puts "Skipped #{name}"
+			end
 		else 
 			$stderr.puts "Unknown repo type ", type, " in ", repo
+		end
+		
+		open("#{REPO_PATH}/index",  "at") do
+			|f| f.puts du_out.sub(".",  "#{LOCAL_FOLDER_NAME}/#{name}")
 		end
 	rescue Exception => e
 		$stderr.puts e.message
@@ -98,12 +114,13 @@ def spawn(cmd)
 			Process.kill('TERM', pid)
 		end
 	rescue Errno::EIO
-		# That’s ok. It just means the child died before we could read it.
+		# That is ok. It just means the child died before we could read it.
 	end
 	return true
 end
 
 if __FILE__ == $0
-	# Default setting for command-line option
+	FileUtils.mkdir_p(REPO_PATH)
+	
 	ARGV.map { |el| process_line el }
 end
