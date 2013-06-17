@@ -44,8 +44,7 @@ puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} 2>>#{LOG_FILE} \
 | tee /tmp/fetched \
 | ./FilterRepositories.rb 2>>#{LOG_FILE} \
 | tee /tmp/filtered \
-| parallel --gnu ./RepoCloner.rb 2>>#{LOG_FILE} \
-| tee /tmp/cloned }
+| parallel --gnu ./RepoCloner.rb 2>>#{LOG_FILE}}
 # In the above lines, the --gnu switch is very important. parallel will fail silently on Ubuntu unless it is set.
 
 
