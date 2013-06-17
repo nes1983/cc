@@ -5,6 +5,7 @@
 # The input is expected to be tab separated:
 # definition:	name	type	url
 # example: Apache Maven 2	maven2	Git	https://git-wip-us.apache.org/repos/asf/maven-scm.git master
+# or: Apache Maven 2	maven2	Git	(via SyncHost)	https://git-wip-us.apache.org/repos/asf/maven-scm.git master
 
 
 # prefer "src" / "source" / "core" / "standard" / "build" / "master" appears in url
@@ -17,6 +18,7 @@ def filterRepositories
 	Enumerator.new { |repos|
 		while (gets)
 			repo = Repo.new
+			$_.sub!(/\(via.*?\)/, '') # Remove 'via' annotation in line.
 			repo.name, repo.type, repo.url = $_.split(/\s+/)
 			
 			repo.score = 0
