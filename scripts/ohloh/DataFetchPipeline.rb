@@ -36,7 +36,6 @@ end.parse!
 
 Dir.chdir(File.dirname(__FILE__))
 
-FileUtils.remove_entry_secure(REPO_PATH, true)
 FileUtils.mkdir_p(REPO_PATH)
 FileUtils.remove_entry_secure(LOG_FILE, true)
 
