@@ -46,7 +46,6 @@ def process_line line
 		
 		folder_name = "#{REPO_PATH}/#{name}"
 		
-		du_out = "0 ."
 		if type.include? "Git"
 			$stderr.puts %x{git clone --quiet --bare #{repo} #{folder_name}}
 			if $?.exitstatus != 0
@@ -55,7 +54,6 @@ def process_line line
 			else
 				$stderr.puts "Cloned #{folder_name}"
 			end
-			du_out = %x(du -m #{folder_name}/objects/pack/*.pack)
 		elsif type.include? "Subversion"
 			# TODO: Add incremental update of svn repos. For now, just skip.
 			if !File.exist?(folder_name)
@@ -72,7 +70,6 @@ def process_line line
 						git gc --aggressive && \
 						mv .git #{folder_name}) # XXX By all rules of logic, this should be ".git/*". However, 
 											# The reasonable doesn't work, and this one does.
-					du_out = %x(cd #{folder_name} && du -m ./objects/pack/*.pack)
 					$stderr.puts "Finished #{name}"
 				}
 			else 
@@ -80,10 +77,6 @@ def process_line line
 			end
 		else 
 			$stderr.puts "Unknown repo type ", type, " in ", repo
-		end
-		
-		open("#{REPO_PATH}/index",  "at") do
-			|f| f.puts du_out.sub(".",  "#{LOCAL_FOLDER_NAME}/#{name}")
 		end
 	rescue Exception => e
 		$stderr.puts e.message
