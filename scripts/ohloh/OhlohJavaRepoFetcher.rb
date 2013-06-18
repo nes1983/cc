@@ -41,7 +41,7 @@ def parseProject projectUrl
 		enlistment = doc.css(".enlistment")
 		for e in enlistment
 			type = e.css("td:not(.status)").css(".span2").text.gsub(/\r/,"").gsub(/\n/,"")
-			link = e.css("td.span4").text.gsub(/\r/,"").gsub(/\n/,"")
+			link = e.css("td.span4").text.gsub(/\r/,"").gsub(/\n/,"").gsub(/\[.*?\]/,"")
 			puts "#{title}\t#{type}\t#{link}"
 		end
 		
