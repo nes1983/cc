@@ -10,6 +10,7 @@ require 'fileutils'
 require 'optparse'
 
 $max_repos = -1
+$skip_download = false
 
 # Cross-platform way of finding an executable in the $PATH.
 #
@@ -31,6 +32,9 @@ def init()
 	OptionParser.new do |opts|
 		opts.on("--max_repos NUM", "How many repos do you want? Choose -1 for all.") do |num| 
 			$max_repos = num.to_i
+		end
+		opts.on("--skip_download", "Skip the download phase altogether.") do |skip_download|
+			$skip_download = skip_download
 		end
 	end.parse!
 
@@ -76,6 +80,6 @@ end
 
 if __FILE__ == $0
 	init()
-	download()
+	download() unless $skip_download
 	moveToHadoop()
 end
