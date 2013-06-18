@@ -50,7 +50,8 @@ def process_line line
 			$stderr.puts %x{git clone --quiet --bare #{repo} #{folder_name}}
 			if $?.exitstatus != 0
 				$stderr.puts "Updating #{folder_name}"
-				%x(cd #{folder_name}; git fetch --all --quiet; git gc --aggressive)
+				# git repack -a makes sure there's only one pack file.
+				%x(cd #{folder_name}; git fetch --all --quiet; git gc --quiet; git repack -a -d -q)
 			else
 				$stderr.puts "Cloned #{folder_name}"
 			end
