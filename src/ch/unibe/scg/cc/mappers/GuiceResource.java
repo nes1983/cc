@@ -40,4 +40,6 @@ public class GuiceResource {
 	public static final String COUNTER_PROCESSED_FILES = "PROCESSED_FILES";
 	public static final String COUNTER_IGNORED_FILES = "IGNORED_FILES";
 	public static final String COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS = "MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS";
+	public static final String COUNTER_FUNCTIONS = "FUNCTIONS";
+	public static final String COUNTER_LOC = "LOC";
 }

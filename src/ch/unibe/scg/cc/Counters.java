@@ -21,5 +21,12 @@ public enum Counters {
 	 * Number of catched ArrayIndexOutOfBoundsException during reduce phase in
 	 * {@link MakeFunction2FineClonesReducer}.
 	 */
-	MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS;
+	MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS,
+	/** Number of Functions */
+	FUNCTIONS,
+	/**
+	 * Lines of code, calculated with the function strings (and not the whole
+	 * source file).
+	 */
+	LOC;
 }

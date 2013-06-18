@@ -154,6 +154,12 @@
 		</antcall>
 	</target>
 
+	<target name="countLOC">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.CountLOC" />
+		</antcall>
+	</target>
+
 	<target name="makeSnippet2Function">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeSnippet2Function" />

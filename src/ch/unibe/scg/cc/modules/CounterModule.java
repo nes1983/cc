@@ -30,5 +30,9 @@ public class CounterModule extends AbstractModule {
 		bind(Counter.class).annotatedWith(
 				Names.named(GuiceResource.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)).toInstance(
 				context.getCounter(Counters.MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS));
+		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_FUNCTIONS)).toInstance(
+				context.getCounter(Counters.FUNCTIONS));
+		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_LOC)).toInstance(
+				context.getCounter(Counters.LOC));
 	}
 }
