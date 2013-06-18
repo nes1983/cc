@@ -9,6 +9,8 @@ require_relative 'constants'
 require 'fileutils'
 require 'optparse'
 
+$max_repos = -1
+
 # Cross-platform way of finding an executable in the $PATH.
 #
 #   which('ruby') #=> /usr/bin/ruby
@@ -24,47 +26,56 @@ def which(cmd)
   	return nil
 end
 
-abort ("You need to have parallel installed") unless which("parallel")
+def init()
+	abort ("You need to have parallel installed") unless which("parallel")
+	OptionParser.new do |opts|
+		opts.on("--max_repos NUM", "How many repos do you want? Choose -1 for all.") do |num| 
+			$max_repos = num.to_i
+		end
+	end.parse!
 
-OptionParser.new do |opts|
-$max_repos = -1
-opts.on("--max_repos NUM",
-	"How many repos do you want? Choose -1 for all.") do |num|
-		$max_repos = num.to_i
-	end
-end.parse!
-
-Dir.chdir(File.dirname(__FILE__))
-
-FileUtils.mkdir_p(REPO_PATH)
-FileUtils.remove_entry_secure(LOG_FILE, true)
-
-puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} 2>>#{LOG_FILE} \
-| tee /tmp/fetched \
-| ./FilterRepositories.rb 2>>#{LOG_FILE} \
-| tee /tmp/filtered \
-| parallel --gnu ./RepoCloner.rb 2>>#{LOG_FILE}}
-# In the above lines, the --gnu switch is very important. parallel will fail silently on Ubuntu unless it is set.
-
-
-log = File.read(LOG_FILE)
-if log.length > 0
-	puts "Obtained Log: ", log
-	# We write errors (and regular log information) to LOG_FILE,
-	# so we can't just abort here.
+	Dir.chdir(File.dirname(__FILE__))
+	
+	FileUtils.mkdir_p(REPO_PATH)
+	FileUtils.remove_entry_secure(LOG_FILE, true)
 end
 
-puts "Download phase finished, now copying to HDFS..."
-puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
-puts %x(hadoop fs -mkdir #{HDFS_TEMP_FOLDER} 2>&1)
-puts %x(hadoop fs -copyFromLocal #{LOCAL_FOLDER_BASE}#{LOCAL_FOLDER_NAME} #{HDFS_TEMP_FOLDER} 2>&1)
+def download()
+	puts %x{./OhlohJavaRepoFetcher.rb --max_repos #{$max_repos} 2>>#{LOG_FILE} \
+	| tee /tmp/fetched \
+	| ./FilterRepositories.rb 2>>#{LOG_FILE} \
+	| tee /tmp/filtered \
+	| parallel --gnu ./RepoCloner.rb 2>>#{LOG_FILE}}
+	# In the above lines, the --gnu switch is very important. parallel will fail silently on Ubuntu unless it is set.
+	
+	log = File.read(LOG_FILE)
+	if log.length > 0
+		puts "Obtained Log: ", log
+		# We write errors (and regular log information) to LOG_FILE,
+		# so we can't just abort here.
+	end
+end
 
-puts "Creating HAR file..."
-puts %x(hadoop fs -rm -r -f /projects/dataset.har 2>&1)
-puts %x(hadoop archive -archiveName dataset.har -p #{HDFS_TEMP_FOLDER} #{LOCAL_FOLDER_NAME} /projects/ 2>&1)
+def moveToHadoop()
+	puts "Download phase finished, now copying to HDFS..."
+	puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
+	puts %x(hadoop fs -mkdir #{HDFS_TEMP_FOLDER} 2>&1)
+	puts %x(hadoop fs -copyFromLocal #{LOCAL_FOLDER_BASE}#{LOCAL_FOLDER_NAME} \
+		#{HDFS_TEMP_FOLDER} 2>&1)
+	
+	puts "Creating HAR file..."
+	puts %x(hadoop fs -rm -r -f /projects/dataset.har 2>&1)
+	puts %x(hadoop archive -archiveName dataset.har -p #{HDFS_TEMP_FOLDER} \
+		#{LOCAL_FOLDER_NAME} /projects/ 2>&1)
+	
+	puts "Deleting temporary repository folder..."
+	puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
+	
+	puts "Finished."
+end
 
-puts "Deleting temporary repository folder..."
-puts %x(hadoop fs -rm -r -f #{HDFS_TEMP_FOLDER} 2>&1)
-
-puts "Finished."
-
+if __FILE__ == $0
+	init()
+	download()
+	moveToHadoop()
+end
