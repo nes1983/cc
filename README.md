@@ -7,10 +7,15 @@
  5. Run the DataFetchPipeline.rb in scripts/
  6. Look at build.xml or the pipeline stages available.
 
-# Hadoop commands #
+
+# Monitoring the cluster #
 To check what's inside the generated HAR file:
 
 	hadoop fs -ls -R har:///projects/dataset.har
+
+- [Hadoop Cluster](http://haddock:8088)
+- [DFS Health](http://haddock:50070)
+- [HBase Master](http://leela:60010)
 	
 # To download the data #
 
