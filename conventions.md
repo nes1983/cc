@@ -27,6 +27,9 @@ Please follow it with the following modifications:
  	Don't change other people's code, just because it violates style. 
  	If you are an expert, and you do wish to change formatting, please do it in a separate patch,
  	that only changes formatting and nothing else.
+- Functions don't accept null values, unless the parameter is specifically annotated
+	as `Nullable`. However, prefer the Optional type, or, better yet, avoid
+	both optional and nullable parameters.
 
 Most important:
 
