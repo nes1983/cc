@@ -28,7 +28,6 @@ import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
-import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.eclipse.jgit.errors.MissingObjectException;
@@ -54,7 +53,6 @@ import ch.unibe.scg.cc.activerecord.RealVersionFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
-import ch.unibe.scg.cc.mappers.MakeHistogram.MakeHistogramReducer;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
@@ -98,7 +96,6 @@ public class GitTablePopulator implements Runnable {
 			config.set(MRJobConfig.MAP_FAILURES_MAX_PERCENT, "99");
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 
