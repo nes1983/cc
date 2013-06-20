@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
@@ -22,24 +21,24 @@ import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
 import ch.unibe.scg.cc.ByteUtils;
-import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.WrappedRuntimeException;
+import ch.unibe.scg.cc.activerecord.IPutFactory;
 
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- * 
+ *
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- * 
+ *
  * OUTPUT:<br>
- * 
+ *
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -152,14 +151,12 @@ public class MakeFunction2RoughClones implements Runnable {
 	public static class MakeFunction2RoughClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final IPutFactory putFactory;
-		final HashSerializer hashSerializer;
 
 		@Inject
 		public MakeFunction2RoughClonesReducer(@Named("function2roughclones") HTableWriteBuffer function2roughclones,
-				IPutFactory putFactory, HashSerializer hashSerializer) {
+				IPutFactory putFactory) {
 			super(function2roughclones);
 			this.putFactory = putFactory;
-			this.hashSerializer = hashSerializer;
 		}
 
 		@Override
