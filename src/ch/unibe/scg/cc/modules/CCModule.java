@@ -2,14 +2,12 @@ package ch.unibe.scg.cc.modules;
 
 import java.security.MessageDigest;
 import java.util.Comparator;
-import java.util.Set;
 
 import javax.inject.Singleton;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.ByteSetProvider;
 import ch.unibe.scg.cc.CloneRegistry;
 import ch.unibe.scg.cc.MessageDigestProvider;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
@@ -37,7 +35,6 @@ public class CCModule extends AbstractModule {
 		bind(Registry.class).to(CloneRegistry.class).in(Singleton.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
 		bind(new TypeLiteral<Comparator<SnippetMatch>>() {}).to(SnippetMatchComparator.class);
-		bind(new TypeLiteral<Set<byte[]>>() {}).toProvider(ByteSetProvider.class);
 
 		// factories
 		install(new FactoryModuleBuilder().build(ProjectFactory.class));
