@@ -3,7 +3,6 @@ package ch.unibe.scg.cc.mappers;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Collection;
 import java.util.Iterator;
@@ -16,7 +15,6 @@ import javax.inject.Named;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
-import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.HTable;
@@ -33,10 +31,8 @@ import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.dfs.DfsRepositoryDescription;
 import org.eclipse.jgit.storage.dfs.InMemoryRepository;
@@ -112,17 +108,16 @@ public class GitTablePopulator implements Runnable {
 		}
 	}
 
-	private String getInputPaths() throws IOException, InterruptedException {
+	private String getInputPaths() throws IOException {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
 		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 
-		FileSystem fs = FileSystem.get(conf);
 		// we read the pack files from the pre-generated index file because
 		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
 		// the HAR file is terribly slow
-		Path indexFile = new Path(LOCAL_FOLDER_NAME + "/index");
-		BufferedReader br = new BufferedReader(new InputStreamReader(fs.open(indexFile)));
+		BufferedReader br = new BufferedReader(
+				new InputStreamReader(FileSystem.get(conf).open(new Path(LOCAL_FOLDER_NAME + "/index"))));
 		Collection<Path> packFilePaths = Lists.newArrayList();
 		String line;
 		while ((line = br.readLine()) != null) {
@@ -164,7 +159,6 @@ public class GitTablePopulator implements Runnable {
 				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
 				@Named("function2snippet") HTable function2snippet, @Named("strings") HTable strings,
 				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
-			super();
 			this.javaFrontend = javaFrontend;
 			this.project2version = project2version;
 			this.version2file = version2file;
@@ -186,79 +180,75 @@ public class GitTablePopulator implements Runnable {
 
 		@Override
 		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
-			String packFilePath = key.toString();
-			logger.info("Received: " + packFilePath);
-			InputStream packFileStream = new ByteArrayInputStream(value.getBytes());
-			DfsRepositoryDescription desc = new DfsRepositoryDescription(packFilePath);
-			InMemoryRepository r = new InMemoryRepository(desc);
+			logger.info("Received: " + key);
+			InMemoryRepository r = new InMemoryRepository(new DfsRepositoryDescription(key.toString()));
 
 			Configuration conf = new Configuration();
 			conf.addResource(new Path(CORE_SITE_PATH));
 			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 			FileSystem fileSystem = FileSystem.get(conf);
 
-			PackParser pp = r.newObjectInserter().newPackParser(packFileStream);
+			PackParser pp = r.newObjectInserter().newPackParser(new ByteArrayInputStream(value.getBytes()));
 			// ProgressMonitor set to null, so NullProgressMonitor will be used.
 			pp.parse(null);
 
 			RevWalk revWalk = new RevWalk(r);
 
-			PackedRefParser prp = new PackedRefParser();
-			Pattern pattern = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack");
-			Matcher matcher = pattern.matcher(key.toString());
+			Matcher matcher = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack").matcher(key.toString());
 			if (!matcher.matches()) {
-				throw new RuntimeException("Something seems to be wrong with this input path: " + key.toString());
+				throw new RuntimeException("Something seems to be wrong with this input path: " + key);
 			}
 			String gitDirPath = matcher.group(1);
 			String packedRefsPath = gitDirPath + Constants.PACKED_REFS;
 
-			FSDataInputStream ins = fileSystem.open(new Path(packedRefsPath));
-			List<PackedRef> pr = prp.parse(ins);
+			List<PackedRef> tags = new PackedRefParser().parse(fileSystem.open(new Path(packedRefsPath)));
 
-			String projectName = getProjName(packFilePath);
+			String projectName = getProjName(key.toString());
 			logger.info("Processing " + projectName);
-			int tagCount = pr.size();
-			if (tagCount > MAX_TAGS_TO_PARSE) {
-				int toIndex = tagCount - 1;
-				int fromIndex = (tagCount - MAX_TAGS_TO_PARSE) < 0 ? 0 : (tagCount - MAX_TAGS_TO_PARSE);
-				pr = pr.subList(fromIndex, toIndex);
+			if (tags.size() > MAX_TAGS_TO_PARSE) {
+				int toIndex = tags.size() - 1;
+				int fromIndex = 0;
+				if (tags.size() - MAX_TAGS_TO_PARSE >= 0) {
+					fromIndex = tags.size() - MAX_TAGS_TO_PARSE;
+				}
+				tags = tags.subList(fromIndex, toIndex);
 			}
-			pr = Lists.reverse(pr);
-			Iterator<PackedRef> it = pr.iterator();
+			tags = Lists.reverse(tags);
+			Iterator<PackedRef> it = tags.iterator();
 			int processedTagsCounter = 0;
 			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
 				PackedRef paref = it.next();
-				String tag = paref.getName();
-				logger.info("WALK TAG: " + tag);
+				logger.info("WALK TAG: " + paref.getName());
 				revWalk.dispose();
 				RevCommit commit;
 				try {
 					commit = revWalk.parseCommit(paref.getKey());
 				} catch (MissingObjectException e) {
-					logger.warning("ERROR in file " + packFilePath + ": " + e.getMessage());
+					logger.warning("ERROR in file " + key + ": " + e.getMessage());
 					continue;
 				}
 				try {
-					RevTree tree = commit.getTree();
 					TreeWalk treeWalk = new TreeWalk(r);
-					treeWalk.addTree(tree);
+					treeWalk.addTree(commit.getTree());
 					treeWalk.setRecursive(true);
 					if (!treeWalk.next()) {
 						return;
 					}
 					while (treeWalk.next()) {
-						ObjectId objectId = treeWalk.getObjectId(0);
-						String content = getContent(r, objectId);
 						String filePath = treeWalk.getPathString();
 						if (!filePath.endsWith(".java")) {
 							ignoredFilesCounter.increment(1);
 							continue;
 						}
-						String fileName = filePath.lastIndexOf('/') == -1 ? filePath : filePath.substring(filePath
-								.lastIndexOf('/') + 1);
+
+						String fileName = filePath;
+						if (filePath.lastIndexOf('/') != -1) {
+							fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+						}
+						String content = getContent(r, treeWalk.getObjectId(0));
 						CodeFile codeFile = register(content, fileName);
 						Version version = register(filePath, codeFile);
-						register(projectName, version, tag);
+						register(projectName, version, paref.getName());
 						processedFilesCounter.increment(1);
 					}
 					processedTagsCounter++;
@@ -286,9 +276,8 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		private String getContent(Repository repository, ObjectId objectId) throws MissingObjectException, IOException {
-			ObjectLoader loader = repository.open(objectId);
-			InputStream inputStream = loader.openStream();
-			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+			BufferedReader bufferedReader = new BufferedReader(
+					new InputStreamReader(repository.open(objectId).openStream()));
 			StringBuilder stringBuilder = new StringBuilder();
 			String line = null;
 			while ((line = bufferedReader.readLine()) != null) {
@@ -298,20 +287,18 @@ public class GitTablePopulator implements Runnable {
 			return stringBuilder.toString();
 		}
 
-		private CodeFile register(String content, String fileName) throws IOException {
-			CodeFile codeFile = javaFrontend.register(content, fileName);
-			return codeFile;
+		private CodeFile register(String content, String fileName) {
+			return javaFrontend.register(content, fileName);
 		}
 
-		private Version register(String filePath, CodeFile codeFile) throws IOException {
+		private Version register(String filePath, CodeFile codeFile) {
 			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
 			return version;
 		}
 
-		private void register(String projectName, Version version, String tag) throws IOException {
-			Project proj = projectFactory.create(projectName, version, tag);
-			javaFrontend.register(proj);
+		private void register(String projectName, Version version, String tag) {
+			javaFrontend.register(projectFactory.create(projectName, version, tag));
 		}
 
 		@Override
