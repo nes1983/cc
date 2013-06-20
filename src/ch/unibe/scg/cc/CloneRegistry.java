@@ -2,6 +2,8 @@ package ch.unibe.scg.cc;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import javax.inject.Named;
@@ -20,6 +22,7 @@ import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
+import com.google.common.cache.CacheBuilder;
 import com.google.inject.Inject;
 
 public class CloneRegistry implements Registry, Closeable {
@@ -27,6 +30,15 @@ public class CloneRegistry implements Registry, Closeable {
 	final Provider<Snippet> snippetProvider;
 	final Provider<Location> locationProvider;
 	final IPutFactory putFactory;
+
+	/** We cache whether or not files and functions have been written. */
+	private static final int CACHE_SIZE = 1000000;
+	/** Functions that were successfully written to DB in this mapper */
+	final Map<ByteBuffer, Boolean> writtenFunctions =
+			CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).<ByteBuffer, Boolean>build().asMap();
+	/** Files that were successfully written to DB in this mapper */
+	final Map<ByteBuffer, Boolean> writtenFiles =
+			CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).<ByteBuffer, Boolean>build().asMap();
 
 	@Inject(optional = true)
 	@Named("project2version")
@@ -73,6 +85,11 @@ public class CloneRegistry implements Registry, Closeable {
 
 	public void register(CodeFile codeFile) {
 		// TODO write codeFile string into strings table.
+		if (writtenFiles.containsKey(ByteBuffer.wrap(codeFile.getHash()))) {
+			return; // We've dealt with this file.
+		}
+		writtenFiles.put(ByteBuffer.wrap(codeFile.getHash()), true);
+
 		for (Function function : codeFile.getFunctions()) {
 			Put functionPut = putFactory.create(codeFile.getFileContentsHash());
 			try {
@@ -107,6 +124,11 @@ public class CloneRegistry implements Registry, Closeable {
 	}
 
 	public void register(Function function) {
+		if (writtenFunctions.containsKey(ByteBuffer.wrap(function.getHash()))) {
+			return; // This function has been dealt with.
+		}
+		writtenFunctions.put(ByteBuffer.wrap(function.getHash()), true);
+
 		Put functionString = putFactory.create(function.getHash());
 		try {
 			function.saveContents(functionString);
