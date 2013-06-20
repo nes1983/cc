@@ -28,7 +28,7 @@ public class RealVersion extends Column implements Version {
 			IPutFactory putFactory) {
 		this.filePath = filePath;
 		this.codeFile = codeFile;
-		this.hashCodeFile = codeFile.getFileContentsHash();
+		this.hashCodeFile = codeFile.getHash();
 		this.hashFilePath = standardHasher.hash(getFilePath());
 		this.hash = ByteUtils.xor(this.hashCodeFile, this.hashFilePath);
 		this.putFactory = putFactory;

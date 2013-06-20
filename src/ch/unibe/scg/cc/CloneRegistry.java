@@ -91,7 +91,7 @@ public class CloneRegistry implements Registry, Closeable {
 		writtenFiles.put(ByteBuffer.wrap(codeFile.getHash()), true);
 
 		for (Function function : codeFile.getFunctions()) {
-			Put functionPut = putFactory.create(codeFile.getFileContentsHash());
+			Put functionPut = putFactory.create(codeFile.getHash());
 			try {
 				functionPut.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
 				file2function.write(functionPut);

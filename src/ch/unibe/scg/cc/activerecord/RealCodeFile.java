@@ -27,7 +27,7 @@ public class RealCodeFile extends Column implements CodeFile {
 
 	@Override
 	public byte[] getHash() {
-		throw new UnsupportedOperationException();
+		return this.fileContentHash;
 	}
 
 	@Override
@@ -39,10 +39,6 @@ public class RealCodeFile extends Column implements CodeFile {
 		return fileContents;
 	}
 
-	public byte[] getFileContentsHash() {
-		return this.fileContentHash;
-	}
-
 	public void addFunction(Function function) {
 		this.functions.add(function);
 	}
@@ -50,5 +46,4 @@ public class RealCodeFile extends Column implements CodeFile {
 	public List<Function> getFunctions() {
 		return functions;
 	}
-
 }
