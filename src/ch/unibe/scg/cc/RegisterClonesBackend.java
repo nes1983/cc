@@ -19,6 +19,7 @@ import ch.unibe.scg.cc.mappers.GuiceResource;
 
 import com.google.inject.Inject;
 
+// TODO: Merge with Registry.
 public class RegisterClonesBackend implements Closeable {
 	static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
 	public static final int MINIMUM_LINES = 5;
