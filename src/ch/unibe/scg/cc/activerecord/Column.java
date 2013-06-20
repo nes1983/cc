@@ -8,11 +8,9 @@ import org.apache.hadoop.hbase.util.Bytes;
 import com.google.inject.Inject;
 
 public abstract class Column implements Cloneable {
-
 	public static final byte[] FAMILY_NAME = Bytes.toBytes("d");
 
 	@Inject(optional = true)
 	@Named("strings")
 	protected HTable strings;
-
 }

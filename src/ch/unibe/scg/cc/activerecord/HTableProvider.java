@@ -10,7 +10,6 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
 public class HTableProvider implements Provider<HTable> {
-
 	@Inject
 	Configuration hbaseConfig;
 
@@ -31,5 +30,4 @@ public class HTableProvider implements Provider<HTable> {
 		}
 		return htable;
 	}
-
 }
