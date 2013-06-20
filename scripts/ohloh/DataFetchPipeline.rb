@@ -58,6 +58,7 @@ def download()
 		# We write errors (and regular log information) to LOG_FILE,
 		# so we can't just abort here.
 	end
+	%x(./MakeIndex.rb)
 end
 
 def moveToHadoop()
