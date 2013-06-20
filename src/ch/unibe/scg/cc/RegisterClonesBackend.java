@@ -12,7 +12,6 @@ import org.apache.hadoop.mapreduce.Counter;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.RealProject;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
@@ -50,12 +49,12 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param lines
 	 * @param project
 	 * @param location
 	 */
-	public void registerFunction(String lines, RealProject project, Function function, byte type) {
+	public void registerFunction(String lines, Project project, Function function, byte type) {
 		StringOfLines stringOfLines = stringOfLinesFactory.make(lines);
 		registerConsecutiveLinesOfCode(stringOfLines, function, type);
 	}
@@ -67,7 +66,7 @@ public class RegisterClonesBackend implements Closeable {
 	/**
 	 * Registers a standard unit of code, typically a function, that is atomic
 	 * in a sense. Lines must have at least 5 lines.
-	 * 
+	 *
 	 * @param stringOfLines
 	 * @param project
 	 * @param location

@@ -13,7 +13,7 @@ public class Snippet extends Column {
 	private static final byte[] SNIPPET_VALUE = Bytes.toBytes("sv");
 	private byte[] hash;
 	private String snippet;
-	private RealProject project;
+	private Project project;
 	private Function function;
 	private Location location;
 	private byte type;
@@ -42,11 +42,11 @@ public class Snippet extends Column {
 		this.hash = hash;
 	}
 
-	public RealProject getProject() {
+	public Project getProject() {
 		return project;
 	}
 
-	public void setProject(RealProject project) {
+	public void setProject(Project project) {
 		this.project = project;
 	}
 

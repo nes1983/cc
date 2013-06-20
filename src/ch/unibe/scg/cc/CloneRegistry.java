@@ -17,7 +17,6 @@ import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.RealCodeFile;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
@@ -93,7 +92,7 @@ public class CloneRegistry implements Registry, Closeable {
 		for (Function function : codeFile.getFunctions()) {
 			Put functionPut = putFactory.create(codeFile.getHash());
 			try {
-				functionPut.add(RealCodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
+				functionPut.add(CodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
 				file2function.write(functionPut);
 			} catch (IOException e) {
 				throw new RuntimeException(e);

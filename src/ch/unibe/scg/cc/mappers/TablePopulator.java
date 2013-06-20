@@ -17,9 +17,9 @@ import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.RealProjectFactory;
-import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.VersionFactory;
 
 /** Use GitTablePopulator instead of TablePopulator! */
 public class TablePopulator implements Runnable {
@@ -40,7 +40,7 @@ public class TablePopulator implements Runnable {
 		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
 				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
 				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,
-				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
+				ProjectFactory projectFactory, VersionFactory versionFactory, CharsetDetector charsetDetector) {
 			super();
 			this.javaFrontend = javaFrontend;
 			this.versions = versions;
@@ -56,8 +56,8 @@ public class TablePopulator implements Runnable {
 
 		final Frontend javaFrontend;
 		final HTable versions, files, functions, facts, strings, hashfactContent;
-		final RealProjectFactory projectFactory;
-		final RealVersionFactory versionFactory;
+		final ProjectFactory projectFactory;
+		final VersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
 
 		@Override

@@ -43,10 +43,9 @@ import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.RealProjectFactory;
-import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
@@ -158,7 +157,7 @@ public class GitTablePopulator implements Runnable {
 		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
 				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
 				@Named("function2snippet") HTable function2snippet, @Named("strings") HTable strings,
-				RealProjectFactory projectFactory, RealVersionFactory versionFactory, CharsetDetector charsetDetector) {
+				ProjectFactory projectFactory, VersionFactory versionFactory, CharsetDetector charsetDetector) {
 			this.javaFrontend = javaFrontend;
 			this.project2version = project2version;
 			this.version2file = version2file;
@@ -172,8 +171,8 @@ public class GitTablePopulator implements Runnable {
 
 		final Frontend javaFrontend;
 		final HTable project2version, version2file, file2function, function2snippet, strings;
-		final RealProjectFactory projectFactory;
-		final RealVersionFactory versionFactory;
+		final ProjectFactory projectFactory;
+		final VersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
 		final Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 		final Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");

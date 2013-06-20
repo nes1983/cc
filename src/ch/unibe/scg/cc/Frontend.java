@@ -10,9 +10,9 @@ import ch.unibe.scg.cc.Tokenizer.SnippetWithBaseline;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
-import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
@@ -24,14 +24,14 @@ public class Frontend implements Closeable {
 	protected StringOfLinesFactory stringOfLinesFactory;
 	protected RegisterClonesBackend backend;
 	protected Tokenizer tokenizer;
-	RealCodeFileFactory codeFileFactory;
-	RealVersionFactory versionFactory;
+	CodeFileFactory codeFileFactory;
+	VersionFactory versionFactory;
 	Function.FunctionFactory functionFactory;
 
 	@Inject
 	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
 			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, RegisterClonesBackend backend,
-			Tokenizer tokenizer, RealCodeFileFactory codeFileFactory, RealVersionFactory versionFactory,
+			Tokenizer tokenizer, CodeFileFactory codeFileFactory, VersionFactory versionFactory,
 			Function.FunctionFactory functionFactory) {
 		super();
 		this.standardHasher = standardHasher;

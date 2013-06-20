@@ -15,19 +15,13 @@ import ch.unibe.scg.cc.MessageDigestProvider;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.Registry;
 import ch.unibe.scg.cc.SnippetMatchComparator;
-import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.PutFactory;
-import ch.unibe.scg.cc.activerecord.RealCodeFile;
-import ch.unibe.scg.cc.activerecord.RealCodeFileFactory;
-import ch.unibe.scg.cc.activerecord.RealProject;
-import ch.unibe.scg.cc.activerecord.RealProjectFactory;
-import ch.unibe.scg.cc.activerecord.RealVersion;
-import ch.unibe.scg.cc.activerecord.RealVersionFactory;
-import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.VersionFactory;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
@@ -46,12 +40,11 @@ public class CCModule extends AbstractModule {
 		bind(new TypeLiteral<Set<byte[]>>() {}).toProvider(ByteSetProvider.class);
 
 		// factories
-		install(new FactoryModuleBuilder().implement(Project.class, RealProject.class).build(RealProjectFactory.class));
-		install(new FactoryModuleBuilder().implement(Version.class, RealVersion.class).build(RealVersionFactory.class));
-		install(new FactoryModuleBuilder().implement(CodeFile.class, RealCodeFile.class).build(
-				RealCodeFileFactory.class));
+		install(new FactoryModuleBuilder().build(ProjectFactory.class));
+		install(new FactoryModuleBuilder().build(VersionFactory.class));
+		install(new FactoryModuleBuilder().build(CodeFileFactory.class));
 		install(new FactoryModuleBuilder().build(FunctionFactory.class));
-		
+
 		bind(IPutFactory.class).to(PutFactory.class);
 		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
 	}

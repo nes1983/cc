@@ -15,10 +15,10 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.RealProject;
-import ch.unibe.scg.cc.activerecord.RealProjectFactory;
-import ch.unibe.scg.cc.activerecord.RealVersion;
-import ch.unibe.scg.cc.activerecord.RealVersionFactory;
+import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.ProjectFactory;
+import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.TablePopulator.TablePopulatorMapper;
 
@@ -28,11 +28,11 @@ public final class PopulateTest {
 
 		final Frontend javaFrontend = mock(Frontend.class);
 		final HTable projects = mock(HTable.class), versions = mock(HTable.class), codefiles = mock(HTable.class), functions = mock(HTable.class), strings = mock(HTable.class), hashfactContent = mock(HTable.class);
-		final RealProjectFactory projectFactory = mock(RealProjectFactory.class);
-		final RealVersionFactory versionFactory = mock(RealVersionFactory.class);
+		final ProjectFactory projectFactory = mock(ProjectFactory.class);
+		final VersionFactory versionFactory = mock(VersionFactory.class);
 		final CharsetDetector charsetDetector = mock(CharsetDetector.class);
-		final RealVersion version = mock(RealVersion.class);
-		final RealProject project = mock(RealProject.class);
+		final Version version = mock(Version.class);
+		final Project project = mock(Project.class);
 
 		when(charsetDetector.charsetOf(new byte[] { 0x20 })).thenReturn("UTF-8");
 		when(versionFactory.create(eq("postgresql/simon/myfile.java"), any(CodeFile.class))).thenReturn(version);

@@ -16,7 +16,7 @@ import org.mockito.Mockito;
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.RealProject;
+import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.modules.CCModule;
@@ -27,7 +27,7 @@ import com.google.inject.Injector;
 @RunWith(JExample.class)
 public class RegisterClonesBackendTest {
 
-	RealProject project;
+	Project project;
 	final HTable htable = mock(HTable.class);
 	Function function;
 	final StringOfLinesFactory stringOfLinesFactory = new StringOfLinesFactory();
@@ -46,7 +46,7 @@ public class RegisterClonesBackendTest {
 		rcb.successfullyHashedCounter = mock(Counter.class);
 		rcb.cannotBeHashedCounter = mock(Counter.class);
 
-		project = mock(RealProject.class);
+		project = mock(Project.class);
 		function = mock(Function.class);
 
 		rcb.registerConsecutiveLinesOfCode(sampleLines, function, Main.TYPE_3_CLONE);
