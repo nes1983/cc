@@ -136,12 +136,6 @@
 		</antcall>
 	</target>
 
-	<target name="jGitTest">
-		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.JGitTest" />
-		</antcall>
-	</target>
-
 	<target name="gitTablePopulate">
 		<antcall target="indexCreator">
 			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
