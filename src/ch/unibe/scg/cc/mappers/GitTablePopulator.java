@@ -1,11 +1,14 @@
 package ch.unibe.scg.cc.mappers;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -31,13 +34,11 @@ import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
-import org.eclipse.jgit.storage.dfs.DfsRepositoryDescription;
-import org.eclipse.jgit.storage.dfs.InMemoryRepository;
+import org.eclipse.jgit.storage.file.FileRepository;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
+import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
@@ -54,17 +55,17 @@ import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
+import com.google.common.io.Files;
 import com.google.inject.Inject;
 
 public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
 	private static final String MAP_MEMORY = "4000";
-	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx4000m";
+	private static final String MAPRED_CHILD_JAVA_OPTS = "-Xmx3300m";
 	// num_projects: projects.har 405 | testdata.har: 2 | dataset.har 2246
 	/** needs to correspond with the path defined in DataFetchPipeline.sh */
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
-	private static final int MAX_PACK_FILESIZE_MB = 50;
 	/** set LOCAL_FOLDER_NAME to the same value as in RepoCloner.rb */
 	private static final String LOCAL_FOLDER_NAME = "repos";
 	final MRWrapper mrWrapper;
@@ -95,7 +96,7 @@ public class GitTablePopulator implements Runnable {
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 
-			logger.info("Found: " + inputPaths);
+			logger.finer("Input paths: " + inputPaths);
 			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
 					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
 					IntWritable.class);
@@ -111,27 +112,31 @@ public class GitTablePopulator implements Runnable {
 	private String getInputPaths() throws IOException {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
-		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
+//		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
 
 		// we read the pack files from the pre-generated index file because
 		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
 		// the HAR file is terribly slow
 		BufferedReader br = new BufferedReader(
-				new InputStreamReader(FileSystem.get(conf).open(new Path(LOCAL_FOLDER_NAME + "/index"))));
+				new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index"))));
 		Collection<Path> packFilePaths = Lists.newArrayList();
 		String line;
 		while ((line = br.readLine()) != null) {
+			if (line.equals("")) {
+				continue; // XXX This just shouldn't happen.
+			}
+
 			// @formatter:off
 			// sample line:
 			// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
 			// @formatter:on
-			String[] record = line.split("\\t");
+			String[] record = line.split("\\s+");
 			int fileSize = Integer.parseInt(record[0]);
 			// see: Hadoop: The Definitive Guide, p. 78
 			// @formatter:off
 			// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
 			// @formatter:on
-			String packPath = PROJECTS_HAR_PATH + "/" + record[1];
+			String packPath = PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()); //XXX remove substr
 			if (fileSize > MAX_PACK_FILESIZE_MB) {
 				logger.warning(packPath + " exceeded MAX_PACK_FILESIZE_MB and won't be processed.");
 				continue;
@@ -150,9 +155,6 @@ public class GitTablePopulator implements Runnable {
 		@Inject(optional = true)
 		@Named(GuiceResource.COUNTER_PROCESSED_FILES)
 		Counter processedFilesCounter;
-		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_IGNORED_FILES)
-		Counter ignoredFilesCounter;
 
 		@Inject
 		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
@@ -178,82 +180,74 @@ public class GitTablePopulator implements Runnable {
 		final Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 		final Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
 
-		@Override
-		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
-			logger.info("Received: " + key);
-			InMemoryRepository r = new InMemoryRepository(new DfsRepositoryDescription(key.toString()));
+		FileSystem fileSystem;
 
+
+		@Override
+		public void setup(Context context) throws IOException {
 			Configuration conf = new Configuration();
 			conf.addResource(new Path(CORE_SITE_PATH));
 			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
-			FileSystem fileSystem = FileSystem.get(conf);
+			fileSystem = FileSystem.get(conf);
+		}
 
-			PackParser pp = r.newObjectInserter().newPackParser(new ByteArrayInputStream(value.getBytes()));
-			// ProgressMonitor set to null, so NullProgressMonitor will be used.
-			pp.parse(null);
-
-			RevWalk revWalk = new RevWalk(r);
+		@Override
+		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
+			logger.info("Received: " + key);
 
 			Matcher matcher = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack").matcher(key.toString());
 			if (!matcher.matches()) {
 				throw new RuntimeException("Something seems to be wrong with this input path: " + key);
 			}
 			String gitDirPath = matcher.group(1);
-			String packedRefsPath = gitDirPath + Constants.PACKED_REFS;
-
-			List<PackedRef> tags = new PackedRefParser().parse(fileSystem.open(new Path(packedRefsPath)));
+			// Sorted alphabetically. This means: old to new.
 
 			String projectName = getProjName(key.toString());
 			logger.info("Processing " + projectName);
-			if (tags.size() > MAX_TAGS_TO_PARSE) {
-				int toIndex = tags.size() - 1;
-				int fromIndex = 0;
-				if (tags.size() - MAX_TAGS_TO_PARSE >= 0) {
-					fromIndex = tags.size() - MAX_TAGS_TO_PARSE;
-				}
-				tags = tags.subList(fromIndex, toIndex);
-			}
-			tags = Lists.reverse(tags);
-			Iterator<PackedRef> it = tags.iterator();
-			int processedTagsCounter = 0;
-			while (it.hasNext() && processedTagsCounter < MAX_TAGS_TO_PARSE) {
-				PackedRef paref = it.next();
-				logger.info("WALK TAG: " + paref.getName());
-				revWalk.dispose();
-				RevCommit commit;
-				try {
-					commit = revWalk.parseCommit(paref.getKey());
-				} catch (MissingObjectException e) {
-					logger.warning("ERROR in file " + key + ": " + e.getMessage());
-					continue;
-				}
-				try {
-					TreeWalk treeWalk = new TreeWalk(r);
-					treeWalk.addTree(commit.getTree());
-					treeWalk.setRecursive(true);
-					if (!treeWalk.next()) {
-						return;
-					}
-					while (treeWalk.next()) {
-						String filePath = treeWalk.getPathString();
-						if (!filePath.endsWith(".java")) {
-							ignoredFilesCounter.increment(1);
-							continue;
-						}
 
-						String fileName = filePath;
-						if (filePath.lastIndexOf('/') != -1) {
-							fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
+			mapRepo(fileSystem.open(new Path(gitDirPath + Constants.PACKED_REFS)),
+					new ByteArrayInputStream(value.getBytes()), projectName);
+		}
+
+		void mapRepo(InputStream packedRefs, InputStream packFile, String projectName) throws IOException {
+			List<PackedRef> tags = new PackedRefParser().parse(packedRefs);
+
+			File tdir = null;
+			try {
+				tdir = Files.createTempDir();
+				FileRepository r = new FileRepository(tdir);
+				r.create(true);
+				PackParser pp = r.newObjectInserter().newPackParser(packFile);
+				// ProgressMonitor set to null, so NullProgressMonitor will be used.
+				pp.parse(null);
+
+				tags = Lists.reverse(tags).subList(0, Math.min(tags.size(), MAX_TAGS_TO_PARSE));
+				for (PackedRef paref : tags) {
+					logger.info("WALK TAG: " + paref.getName());
+
+					try {
+						TreeWalk treeWalk = new TreeWalk(r);
+						treeWalk.addTree(new RevWalk(r).parseCommit(paref.getKey()).getTree());
+						treeWalk.setRecursive(true);
+						treeWalk.setFilter(PathSuffixFilter.create(".java"));
+
+						while (treeWalk.next()) {
+							ObjectId objectId = treeWalk.getObjectId(0); // There's only one tree; it has index 0.
+							byte[] bytes = treeWalk.getObjectReader().open(objectId).getBytes();
+							String content = new String(bytes, charsetDetector.charsetOf(bytes));
+							String fileName = new File(treeWalk.getPathString()).getName();
+							CodeFile codeFile = register(content, fileName);
+							Version version = register(treeWalk.getPathString(), codeFile);
+							register(projectName, version, paref.getName());
+							processedFilesCounter.increment(1);
 						}
-						String content = getContent(r, treeWalk.getObjectId(0));
-						CodeFile codeFile = register(content, fileName);
-						Version version = register(filePath, codeFile);
-						register(projectName, version, paref.getName());
-						processedFilesCounter.increment(1);
+					} catch (MissingObjectException moe) {
+						logger.warning("MissingObjectException in " + projectName + " : " + moe);
 					}
-					processedTagsCounter++;
-				} catch (MissingObjectException moe) {
-					logger.warning("MissingObjectException in " + projectName + " : " + moe);
+				}
+			} finally {
+				if (tdir != null) {
+					tdir.delete();
 				}
 			}
 			logger.info("Finished processing: " + projectName);
@@ -275,24 +269,12 @@ public class GitTablePopulator implements Runnable {
 			return packFilePath;
 		}
 
-		private String getContent(Repository repository, ObjectId objectId) throws MissingObjectException, IOException {
-			BufferedReader bufferedReader = new BufferedReader(
-					new InputStreamReader(repository.open(objectId).openStream()));
-			StringBuilder stringBuilder = new StringBuilder();
-			String line = null;
-			while ((line = bufferedReader.readLine()) != null) {
-				stringBuilder.append(line + "\n");
-			}
-			bufferedReader.close();
-			return stringBuilder.toString();
-		}
-
 		private CodeFile register(String content, String fileName) {
 			return javaFrontend.register(content, fileName);
 		}
 
 		private Version register(String filePath, CodeFile codeFile) {
-			Version version = versionFactory.create(filePath, codeFile);
+			Version version = versionFactory.create(checkNotNull(filePath, "filePath"), checkNotNull(codeFile, "codeFile"));
 			javaFrontend.register(version);
 			return version;
 		}
