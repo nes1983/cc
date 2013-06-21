@@ -84,6 +84,7 @@ public class GitTablePopulator implements Runnable {
 			config.set(MRJobConfig.MAP_SPECULATIVE, "false");
 			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
 			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
+			config.set(MRJobConfig.MAP_MAX_ATTEMPTS, "1");
 			config.set(MRJobConfig.TASK_TIMEOUT, "432000000"); // 5 days
 			config.set(MRJobConfig.MAP_MEMORY_MB, MAP_MEMORY);
 			config.set(MRJobConfig.MAP_JAVA_OPTS, MAPRED_CHILD_JAVA_OPTS);
