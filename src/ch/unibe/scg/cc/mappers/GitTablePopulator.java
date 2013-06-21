@@ -131,17 +131,13 @@ public class GitTablePopulator implements Runnable {
 			// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
 			// @formatter:on
 			String[] record = line.split("\\s+");
-			int fileSize = Integer.parseInt(record[0]);
 			// see: Hadoop: The Definitive Guide, p. 78
 			// @formatter:off
 			// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
 			// @formatter:on
-			String packPath = PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()); //XXX remove substr
-			if (fileSize > MAX_PACK_FILESIZE_MB) {
-				logger.warning(packPath + " exceeded MAX_PACK_FILESIZE_MB and won't be processed.");
-				continue;
-			}
-			packFilePaths.add(new Path(packPath));
+
+			Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length())); //XXX remove substr
+			packFilePaths.add(packPath);
 		}
 		return Joiner.on(",").join(packFilePaths);
 	}
