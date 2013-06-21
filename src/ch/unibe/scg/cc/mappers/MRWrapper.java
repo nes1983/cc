@@ -124,8 +124,8 @@ public class MRWrapper {
 	}
 
 	private void appendHighlyRecommendedPropertiesToConfiguration(Configuration config) {
-		String mapJavaOpts = "-XX:+UseG1GC";
-		String reduceJavaOpts = "-XX:+UseG1GC";
+		String mapJavaOpts = "-XX:+UseG1GC -XX:+UseGCOverheadLimit";
+		String reduceJavaOpts = "-XX:+UseG1GC -XX:+UseGCOverheadLimit";
 
 		appendProperty(config, MRJobConfig.MAP_JAVA_OPTS, mapJavaOpts);
 		appendProperty(config, MRJobConfig.REDUCE_JAVA_OPTS, reduceJavaOpts);
