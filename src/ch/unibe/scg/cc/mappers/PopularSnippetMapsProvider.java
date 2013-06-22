@@ -31,7 +31,7 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 
 	@Override
 	public PopularSnippetMaps get() {
-		synchronized (this.getClass()) {
+		synchronized (PopularSnippetMaps.class) {
 			if (popularSnippetMaps == null) {
 				Scan scan = new Scan();
 				scan.setCaching(1000);

@@ -15,9 +15,7 @@ import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 @SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class FrontendTest {
-
 	PhaseFrontend phaseFrontend = mock(PhaseFrontend.class);
-	Tokenizer tokenizer = mock(Tokenizer.class);
 
 	@Test
 	public void testType2() {

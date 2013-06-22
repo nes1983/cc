@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
@@ -54,6 +55,7 @@ import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
+import com.google.common.io.Closer;
 import com.google.common.io.Files;
 import com.google.inject.Inject;
 
@@ -119,28 +121,37 @@ public class GitTablePopulator implements Runnable {
 		// we read the pack files from the pre-generated index file because
 		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
 		// the HAR file is terribly slow
-		BufferedReader br = new BufferedReader(
-				new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index"))));
+
 		Collection<Path> packFilePaths = Lists.newArrayList();
-		String line;
-		while ((line = br.readLine()) != null) {
-			if (line.equals("")) {
-				continue; // TODO: Delete this guard as soon as a sane HAR is uploaded.
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
+				Charset.forName("UTF-8")));
+		Closer closer = Closer.create();
+		closer.register(br);
+		try {
+			for (String line; (line = br.readLine()) != null;) {
+				if (line.equals("")) {
+					continue; // TODO: Delete this guard as soon as a sane HAR is uploaded.
+				}
+
+				// @formatter:off
+				// sample line:
+				// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
+				// @formatter:on
+				String[] record = line.split("\\s+");
+				// see: Hadoop: The Definitive Guide, p. 78
+				// @formatter:off
+				// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
+				// @formatter:on
+
+				// TODO: Delete the "substring" as soon as a sane HAR is uploaded.
+				Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()));
+				packFilePaths.add(packPath);
 			}
-
-			// @formatter:off
-			// sample line:
-			// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
-			// @formatter:on
-			String[] record = line.split("\\s+");
-			// see: Hadoop: The Definitive Guide, p. 78
-			// @formatter:off
-			// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
-			// @formatter:on
-
-			// TODO: Delete the "substring" as soon as a sane HAR is uploaded.
-			Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()));
-			packFilePaths.add(packPath);
+		} catch (Throwable t) {
+			closer.rethrow(t);
+		} finally {
+			closer.close();
 		}
 		return Joiner.on(",").join(packFilePaths);
 	}

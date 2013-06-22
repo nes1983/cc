@@ -17,7 +17,6 @@ import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
-import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.mappers.GuiceResource;
@@ -44,7 +43,6 @@ public class RegisterClonesBackendTest {
 	Backend backend;
 	Injector i;
 	Function fun;
-	Project project;
 
 	@Before
 	public void setUp() {
@@ -64,7 +62,6 @@ public class RegisterClonesBackendTest {
 		backend = i.getInstance(Backend.RegisterClonesBackend.class);
 
 		fun = i.getInstance(FunctionFactory.class).makeFunction(i.getInstance(StandardHasher.class), 0, "", "");
-		project = mock(Project.class);
 	}
 
 	@Test

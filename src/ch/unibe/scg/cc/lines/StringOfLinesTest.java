@@ -12,8 +12,7 @@ import ch.unibe.jexample.JExample;
 @SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class StringOfLinesTest {
-
-	final String sampleString = "a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n" + "g\n";
+	final static String sampleString = "a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n" + "g\n";
 
 	@Test
 	public StringOfLines testLinesOfCode() {
