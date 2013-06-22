@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Iterator;
@@ -31,14 +33,14 @@ import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- *
+ * 
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- *
+ * 
  * OUTPUT:<br>
- *
+ * 
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -174,9 +176,6 @@ public class MakeFunction2RoughClones implements Runnable {
 				SnippetLocation thisSnippet = snippetMatch.getThisSnippetLocation();
 				SnippetLocation thatSnippet = snippetMatch.getThatSnippetLocation();
 
-				byte[] cellName = Bytes.add(thatSnippet.getFunction().toByteArray(),
-						Bytes.add(Bytes.toBytes(thisSnippet.getPosition()), Bytes.toBytes(thisSnippet.getLength())));
-
 				// create partial SnippetLocations and clear fields already set
 				// in the cellName to save space in HBase
 				SnippetLocation thisPartialSnippet = SnippetLocation.newBuilder(thisSnippet).clearPosition()
@@ -185,9 +184,42 @@ public class MakeFunction2RoughClones implements Runnable {
 				SnippetMatch partialSnippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisPartialSnippet)
 						.setThatSnippetLocation(thatPartialSnippet).build();
 
-				put.add(GuiceResource.FAMILY, cellName, 0l, partialSnippetMatch.toByteArray());
+				byte[] columnKey = ColumnKeyConverter.encode(thatSnippet.getFunction().toByteArray(),
+						thisSnippet.getPosition(), thisSnippet.getLength());
+				put.add(GuiceResource.FAMILY, columnKey, 0l, partialSnippetMatch.toByteArray());
 			}
 			context.write(functionHashKey, put);
+		}
+	}
+
+	static class ColumnKeyConverter {
+		static final int THAT_FUNCTION_LENGTH = 20;
+		static final int THIS_POSITION_LENGTH = 4;
+		static final int THIS_LENGTH = 4;
+
+		static byte[] encode(byte[] thatFunction, int thisPosition, int thisLength) {
+			checkArgument(thatFunction.length == THAT_FUNCTION_LENGTH, "function length illegally was "
+					+ thatFunction.length);
+
+			return Bytes.add(thatFunction, Bytes.toBytes(thisPosition), Bytes.toBytes(thisLength));
+		}
+
+		static ColumnKey decode(byte[] encoded) {
+			return new ColumnKey(Bytes.head(encoded, THAT_FUNCTION_LENGTH), Bytes.toInt(Bytes.head(
+					Bytes.tail(encoded, THIS_POSITION_LENGTH + THIS_LENGTH), THIS_POSITION_LENGTH)), Bytes.toInt(Bytes
+					.tail(encoded, THIS_LENGTH)));
+		}
+	}
+
+	static class ColumnKey {
+		final byte[] thatFunction;
+		final int thisPosition;
+		final int thisLength;
+
+		public ColumnKey(byte[] thatFunction, int thisPosition, int thisLength) {
+			this.thatFunction = thatFunction;
+			this.thisPosition = thisPosition;
+			this.thisLength = thisLength;
 		}
 	}
 

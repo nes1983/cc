@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
 import static ch.unibe.scg.cc.activerecord.Function.FUNCTION_SNIPPET;
+import static ch.unibe.scg.cc.mappers.MakeFunction2RoughClones.ColumnKeyConverter.decode;
 
 import java.io.DataInput;
 import java.io.DataOutput;
@@ -89,13 +90,11 @@ public class MakeFunction2FineClones implements Runnable {
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterable<SnippetMatch> matches = Iterables.transform(columns,
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
-						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
+						@Override
+						public SnippetMatch apply(Entry<byte[], byte[]> cell) {
 							// extract information from cellKey
-							final ByteString thatFunction = ByteString.copyFrom(Bytes.head(cell.getKey(), 21));
-							final int thisPosition = Bytes.toInt(Bytes.head(Bytes.tail(cell.getKey(), 8), 4));
-							final int thisLength = Bytes.toInt(Bytes.tail(cell.getKey(), 4));
-
-							// now reconstruct full SnippetLocations
+							// and reconstruct full SnippetLocations
+							MakeFunction2RoughClones.ColumnKey ck = decode(cell.getKey());
 							try {
 								final SnippetMatch partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
 								return SnippetMatch
@@ -104,11 +103,11 @@ public class MakeFunction2FineClones implements Runnable {
 												SnippetLocation
 														.newBuilder(partialSnippetMatch.getThisSnippetLocation())
 														.setFunction(ByteString.copyFrom(function))
-														.setPosition(thisPosition).setLength(thisLength))
+														.setPosition(ck.thisPosition).setLength(ck.thisLength))
 										.setThatSnippetLocation(
 												SnippetLocation
 														.newBuilder(partialSnippetMatch.getThatSnippetLocation())
-														.setFunction(thatFunction)).build();
+														.setFunction(ByteString.copyFrom(ck.thatFunction))).build();
 							} catch (InvalidProtocolBufferException e) {
 								throw new WrappedRuntimeException(e);
 							}
