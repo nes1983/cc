@@ -5,9 +5,9 @@ import org.apache.hadoop.io.BytesWritable;
 
 /**
  * provides all useful resources to the mapper and reducers
- * 
+ *
  * @author vs
- * 
+ *
  */
 public class GuiceResource {
 	public enum ColumnName {
@@ -33,7 +33,7 @@ public class GuiceResource {
 
 	/**
 	 * String values of counters should be kept synchronized with
-	 * {@link Counters}
+	 * {@link org.apache.hadoop.mapreduce.Counters}
 	 */
 	public static final String COUNTER_CANNOT_BE_HASHED = "CANNOT_BE_HASHED";
 	public static final String COUNTER_SUCCESSFULLY_HASHED = "SUCCESSFULLY_HASHED";

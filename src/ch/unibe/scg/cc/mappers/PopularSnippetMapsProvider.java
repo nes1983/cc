@@ -39,31 +39,38 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 				scan.setCacheBlocks(false);
 				scan.addFamily(GuiceResource.FAMILY);
 				ResultScanner rs;
+
+				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
+						.builder();
+				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
+						.builder();
+
 				try {
 					rs = popularSnippets.getScanner(scan);
 				} catch (IOException e) {
 					throw new WrappedRuntimeException("Problem with popularSnippets occured: ", e);
 				}
-				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
-						.builder();
-				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
-						.builder();
-				for (Result r : rs) {
-					byte[] function = r.getRow();
-					NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
-					for (Entry<byte[], byte[]> cell : fm.entrySet()) {
-						byte[] snippet = cell.getKey();
-						// To save space we didn't store a protobuffer object.
-						// We create the object now with the information we
-						// have.
-						SnippetLocation snippetLocation = SnippetLocation.newBuilder()
-								.setFunction(ByteString.copyFrom(function)).setSnippet(ByteString.copyFrom(snippet))
-								.setPosition(Bytes.toInt(Bytes.head(cell.getValue(), 4)))
-								.setLength(Bytes.toInt(Bytes.tail(cell.getValue(), 4))).build();
-						function2PopularSnippets.put(ByteBuffer.wrap(function), snippetLocation);
-						snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
+				try {
+					for (Result r : rs) {
+						byte[] function = r.getRow();
+						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
+						for (Entry<byte[], byte[]> cell : fm.entrySet()) {
+							byte[] snippet = cell.getKey();
+							// To save space we didn't store a protobuffer object.
+							// We create the object now with the information we
+							// have.
+							SnippetLocation snippetLocation = SnippetLocation.newBuilder()
+									.setFunction(ByteString.copyFrom(function)).setSnippet(ByteString.copyFrom(snippet))
+									.setPosition(Bytes.toInt(Bytes.head(cell.getValue(), 4)))
+									.setLength(Bytes.toInt(Bytes.tail(cell.getValue(), 4))).build();
+							function2PopularSnippets.put(ByteBuffer.wrap(function), snippetLocation);
+							snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
+						}
 					}
+				} finally {
+					rs.close();
 				}
+
 				popularSnippetMaps = new PopularSnippetMaps(function2PopularSnippets.build(),
 						snippet2PopularSnippets.build());
 			}

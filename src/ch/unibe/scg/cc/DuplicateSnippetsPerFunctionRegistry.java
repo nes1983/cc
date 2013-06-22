@@ -47,12 +47,15 @@ public class DuplicateSnippetsPerFunctionRegistry implements Backend {
 		this.shingleHasher = shingleHasher;
 	}
 
+	@Override
 	public void register(CodeFile codeFile) {
 	}
 
+	@Override
 	public void register(Project project) {
 	}
 
+	@Override
 	public void register(Version version) {
 	}
 

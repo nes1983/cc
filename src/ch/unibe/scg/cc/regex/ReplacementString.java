@@ -26,8 +26,9 @@ class ReplacementString {
 	}
 
 	void addUnlessEmpty(List<Segment> list, LiteralSegment segment) {
-		if (segment.s.equals(""))
+		if (segment.s.equals("")) {
 			return;
+		}
 		list.add(segment);
 	}
 
@@ -50,6 +51,7 @@ class ReplacementString {
 			this.placeHolderNumber = placeHolderNumber;
 		}
 
+		@Override
 		String fillIn(MatchResult m) {
 			return m.group(placeHolderNumber);
 		}

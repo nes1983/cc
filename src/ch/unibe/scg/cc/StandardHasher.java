@@ -9,6 +9,7 @@ public class StandardHasher implements Hasher {
 	@Inject
 	MessageDigest md;
 
+	@Override
 	public byte[] hash(String document) {
 		byte[] ret;
 		try {

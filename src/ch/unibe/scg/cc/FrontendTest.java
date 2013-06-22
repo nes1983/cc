@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class FrontendTest {
 
@@ -23,6 +24,7 @@ public class FrontendTest {
 		Normalizer p1 = new Normalizer(new JavaType1ReplacerFactory().get());
 		Normalizer p2 = new Normalizer(new Type2ReplacerFactory().get());
 
+		@SuppressWarnings("resource")
 		Frontend frontend = new Frontend(null, null, p1, p2, null, null, null, null, null, null);
 		String s = frontend.type2NormalForm("\npublic    static void doIt(char[] arg) {\n");
 

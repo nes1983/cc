@@ -80,6 +80,7 @@ public class ShingleHasher implements Hasher {
 		throw new AssertionError("After mask was 0, there must be a hash. Input:\n" + doc);
 	}
 
+	@Override
 	public byte[] hash(String doc) throws CannotBeHashedException {
 		return sketchFromHashedShingles(hashedShingles(shingles(doc)), doc);
 	}

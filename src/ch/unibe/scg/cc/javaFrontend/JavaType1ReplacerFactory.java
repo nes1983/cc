@@ -80,12 +80,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider implements Provid
 		return new Replace(ifPattern, " {\\n$1\\n}\\n");
 	}
 
-	/**
-	 * 7. This is necessary for tokenization. while statements look a lot like
-	 * function definitions.
-	 * 
-	 * @return
-	 */
+	/** 7. This is necessary for tokenization. while statements look a lot like function definitions. */
 	public Replace make07RenameWhile() {
 		Pattern ifPattern = new Pattern("while");
 		return new Replace(ifPattern, ";while");

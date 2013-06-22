@@ -27,10 +27,12 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.InputSplit;
+import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+
+import com.google.common.io.Closer;
 
 public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 	private FSDataInputStream fsin;
@@ -45,9 +47,18 @@ public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 		FileSplit split = (FileSplit) inputSplit;
 		Configuration conf = taskAttemptContext.getConfiguration();
 		Path path = split.getPath();
-		FileSystem fs = path.getFileSystem(conf);
-		fsin = fs.open(path);
-		zip = new ZipInputStream(fsin);
+		Closer closer = Closer.create();
+		try {
+			@SuppressWarnings("resource") // Closer will close it.
+			FileSystem fs = path.getFileSystem(conf);
+			closer.register(fs);
+			fsin = fs.open(path);
+			zip = new ZipInputStream(fsin);
+		} catch (Throwable e) {
+			closer.rethrow(e);
+		} finally {
+			closer.close();
+		}
 	}
 
 	@Override
@@ -62,10 +73,11 @@ public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 		byte[] temp = new byte[8192];
 		while (true) {
 			int bytesRead = zip.read(temp, 0, 8192);
-			if (bytesRead > 0)
+			if (bytesRead > 0) {
 				bos.write(temp, 0, bytesRead);
-			else
+			} else {
 				break;
+			}
 		}
 		zip.closeEntry();
 		currentValue = new BytesWritable(bos.toByteArray());
@@ -89,13 +101,9 @@ public class ZipFileRecordReader extends RecordReader<Text, BytesWritable> {
 
 	@Override
 	public void close() throws IOException {
-		try {
-			zip.close();
-		} catch (Exception e) {
-		}
-		try {
-			fsin.close();
-		} catch (Exception e) {
-		}
+		Closer closer = Closer.create();
+		closer.register(zip);
+		closer.register(fsin);
+		closer.close();
 	}
 }

@@ -16,13 +16,13 @@ import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
+@SuppressWarnings("javadoc")
 public class JavaTokenizerTest {
 	@Test
 	public void theRegexWorks() {
 		String regex = new JavaTokenizer().splitterRegex;
 		Automaton a = new RegExp(regex).toAutomaton();
 		RunAutomaton r = new RunAutomaton(a);
-		AutomatonMatcher m = r.newMatcher("\n      void main(String[] args) {   ");
 
 		assertFalse(r.newMatcher("String myString = new String(new int[] { 1, 2, 3});").find());
 		assertFalse(r.newMatcher("return Integer.class").find());

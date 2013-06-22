@@ -79,17 +79,17 @@ public class Frontend implements Closeable {
 		backend.register(version);
 	}
 
-	public CodeFile register(String fileContent, String fileName) {
+	public CodeFile register(String fileContent) {
 		CodeFile codeFile = codeFileFactory.create(fileContent);
 		StringBuilder content = new StringBuilder(fileContent);
-		registerWithBuilder(content, fileName, codeFile);
+		registerWithBuilder(content, codeFile);
 
 		backend.register(codeFile);
 
 		return codeFile;
 	}
 
-	void registerWithBuilder(StringBuilder fileContents, String fileName, CodeFile codeFile) {
+	void registerWithBuilder(StringBuilder fileContents, CodeFile codeFile) {
 		for (SnippetWithBaseline function : tokenizer.tokenize(fileContents.toString())) {
 			registerFunction(codeFile, function);
 		}

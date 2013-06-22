@@ -30,7 +30,7 @@ import com.google.common.collect.Lists;
  * Popular snippets are treated special. We enforce earlier in the pipeline that
  * all functions that contain popular snippets also appear at least once in a
  * match's {@link SnippetMatch#getThisSnippetLocation()} as an input to
- * {@link #expandClones(List)}.
+ * {@link #expandClones(Iterable)}.
  */
 // TODO(simon): make it so!
 public class CloneExpander {

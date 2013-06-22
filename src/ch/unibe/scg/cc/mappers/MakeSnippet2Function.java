@@ -9,7 +9,6 @@ import java.util.logging.Logger;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
@@ -22,7 +21,7 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Column;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
+import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
 
@@ -63,11 +62,11 @@ public class MakeSnippet2Function implements Runnable {
 
 	public static class MakeSnippet2FunctionReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
-		final IPutFactory putFactory;
+		final PutFactory putFactory;
 
 		@Inject
 		public MakeSnippet2FunctionReducer(@Named("snippet2function") HTableWriteBuffer snippet2Function,
-				IPutFactory putFactory) {
+				PutFactory putFactory) {
 			super(snippet2Function);
 			this.putFactory = putFactory;
 		}

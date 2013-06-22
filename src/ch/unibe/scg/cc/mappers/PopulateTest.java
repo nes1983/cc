@@ -22,12 +22,16 @@ import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.TablePopulator.TablePopulatorMapper;
 
+@SuppressWarnings("javadoc")
 public final class PopulateTest {
 	@Test
 	public void testFilePath() throws IOException, InterruptedException {
-
+		@SuppressWarnings("resource")
 		final Frontend javaFrontend = mock(Frontend.class);
-		final HTable projects = mock(HTable.class), versions = mock(HTable.class), codefiles = mock(HTable.class), functions = mock(HTable.class), strings = mock(HTable.class), hashfactContent = mock(HTable.class);
+
+		@SuppressWarnings("resource")
+		final HTable projects = mock(HTable.class), versions = mock(HTable.class), codefiles = mock(HTable.class),
+				functions = mock(HTable.class), strings = mock(HTable.class), hashfactContent = mock(HTable.class);
 		final ProjectFactory projectFactory = mock(ProjectFactory.class);
 		final VersionFactory versionFactory = mock(VersionFactory.class);
 		final CharsetDetector charsetDetector = mock(CharsetDetector.class);
@@ -43,7 +47,7 @@ public final class PopulateTest {
 
 		mapper.map(new Text("postgresql/simon/myfile.java"), new BytesWritable(new byte[] { 0x20 }), null);
 
-		verify(javaFrontend).register(eq(" "), eq("myfile.java"));
+		verify(javaFrontend).register(eq(" "));
 		verify(javaFrontend).register(eq(version));
 		verify(javaFrontend).register(eq(project));
 	}

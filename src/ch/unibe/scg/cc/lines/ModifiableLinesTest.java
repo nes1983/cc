@@ -1,13 +1,12 @@
 package ch.unibe.scg.cc.lines;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
-import java.util.Arrays;
 import java.util.Collection;
 
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.collections.Transformer;
 import org.apache.commons.collections.TransformerUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,14 +14,17 @@ import org.junit.runner.RunWith;
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class ModifiableLinesTest {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Test
 	public ModifiableLines testFactory() {
 		ModifiableLinesFactory f = new ModifiableLinesFactory();
 		StringBuilder sb = new StringBuilder("a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n");
 		ModifiableLines r = f.make(sb);
+
 		Collection lineBreakPositions = CollectionUtils.collect(r.lineBreaks,
 				TransformerUtils.invokerTransformer("getPosition"));
 		assertThat(lineBreakPositions, contains(0, 1, 3, 5, 7, 9, 11));
@@ -32,6 +34,7 @@ public class ModifiableLinesTest {
 		return r;
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Given("testFactory")
 	public ModifiableLines replace(ModifiableLines lines) {
 

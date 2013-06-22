@@ -4,8 +4,8 @@ import ch.unibe.scg.cc.mappers.GuiceResource;
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.MakeFunction2FineClonesReducer;
 
 /**
- * Every Hadoop counter is named by an enum. These are ours. See {@link Counter}
- * . The Counters' string values are stored in {@link GuiceResource} to satisfy
+ * Every Hadoop counter is named by an enum. These are ours. See {@link org.apache.hadoop.mapreduce.Counters}.
+ * The Counters' string values are stored in {@link GuiceResource} to satisfy
  * Guice seeing a constant expression.
  */
 public enum Counters {

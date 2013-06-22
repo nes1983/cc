@@ -17,9 +17,11 @@ import ch.unibe.scg.cc.modules.JavaModule;
 
 import com.google.inject.Guice;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class ShingleHasherTest {
 
+	@SuppressWarnings("rawtypes")
 	@Test
 	public ShingleHasher test() throws CannotBeHashedException {
 		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);

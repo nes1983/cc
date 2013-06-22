@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.activerecord;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,10 +42,6 @@ public class Function extends Column {
 		this.baseLine = baseLine;
 		this.normalized = normalized;
 		this.contents = contents;
-	}
-
-	public void save(Put put) throws IOException {
-		// nothing to do
 	}
 
 	/**

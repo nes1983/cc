@@ -26,6 +26,7 @@ import ch.unibe.scg.cc.modules.JavaModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
+@SuppressWarnings("javadoc")
 public final class GitTablePopulatorTest {
 	private static final String TESTREPO = "testrepo.zip";
 
@@ -46,8 +47,9 @@ public final class GitTablePopulatorTest {
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 
+		@SuppressWarnings("resource")
 		Frontend javaFrontend = mock(Frontend.class);
-		when(javaFrontend.register(Mockito.any(String.class), Mockito.any(String.class)))
+		when(javaFrontend.register(Mockito.any(String.class)))
 				.thenReturn(new CodeFile(i.getInstance(StandardHasher.class), ""));
 
 		GitTablePopulatorMapper mapper = new GitTablePopulatorMapper(javaFrontend,
@@ -70,5 +72,8 @@ public final class GitTablePopulatorTest {
 		}
 
 		mapper.mapRepo(packedRefs, packFile, "Captain Hook");
+
+		packFile.close();
+		packedRefs.close();
 	}
 }

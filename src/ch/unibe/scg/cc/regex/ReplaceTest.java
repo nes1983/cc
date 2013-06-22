@@ -1,12 +1,12 @@
 package ch.unibe.scg.cc.regex;
 
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.isA;
+import static org.junit.Assert.assertThat;
 
 import java.util.ArrayList;
 
 import jregex.Pattern;
-
-import static org.junit.Assert.*;
 
 import org.hamcrest.Matcher;
 import org.junit.Test;
@@ -17,11 +17,10 @@ import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.regex.ReplacementString.LiteralSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.PlaceHolderSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.Segment;
-import dk.brics.automaton.RegExp;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class ReplaceTest {
-
 	@Test
 	public Replace testMakeReplace() {
 		Replace r = new Replace(new Pattern("x"), "y");
@@ -39,6 +38,7 @@ public class ReplaceTest {
 		return r;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Test
 	public Replace makePatternReplace() {
 		Replace r = new Replace(new Pattern("x"), "<$0>");
@@ -72,6 +72,7 @@ public class ReplaceTest {
 		Replace r = new Replace(new Pattern("(\\d*)(bla)"), "$2$1");
 
 		ArrayList<Segment> contents = r.replacementString.contents;
+		assertThat(contents.size(), is(2));
 
 		String reversed = r.allReplaced("123bla");
 		assertThat(reversed, is("bla123"));

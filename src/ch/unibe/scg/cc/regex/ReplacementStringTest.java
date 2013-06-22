@@ -3,6 +3,8 @@ package ch.unibe.scg.cc.regex;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.isA;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 
@@ -11,7 +13,6 @@ import jregex.MatchResult;
 import org.hamcrest.Matcher;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import static org.mockito.Mockito.*;
 
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
@@ -19,9 +20,11 @@ import ch.unibe.scg.cc.regex.ReplacementString.LiteralSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.PlaceHolderSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.Segment;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class ReplacementStringTest {
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Test
 	public ReplacementString testSimpleConstruction() {
 		ReplacementString s = new ReplacementString("waa$2blaa$1");
@@ -40,6 +43,7 @@ public class ReplacementStringTest {
 
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Test
 	public ReplacementString testConstruction() {
 		ReplacementString s = new ReplacementString("$2$1");

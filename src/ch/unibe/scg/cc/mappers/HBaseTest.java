@@ -9,8 +9,6 @@ import java.util.concurrent.TimeUnit;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
-import org.apache.hadoop.hbase.MasterNotRunningException;
-import org.apache.hadoop.hbase.ZooKeeperConnectionException;
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
@@ -29,12 +27,13 @@ import com.google.common.base.Stopwatch;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-@Ignore
+@SuppressWarnings("javadoc")
+@Ignore // Modifies the database.
 public class HBaseTest {
 	private static final String TEST_TABLE_NAME = "hbasetesttable";
-	private Configuration conf;
+	private final Configuration conf;
 
-	public HBaseTest() throws MasterNotRunningException, ZooKeeperConnectionException {
+	public HBaseTest() {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 		conf = i.getInstance(ConfigurationProvider.class).get();
 	}

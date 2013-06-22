@@ -11,6 +11,7 @@ import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.regex.Replace;
 
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class Type2ReplacerFactoryTest {
 

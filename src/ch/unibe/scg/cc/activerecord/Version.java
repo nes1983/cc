@@ -19,11 +19,11 @@ public class Version extends Column implements IColumn {
 	final byte[] hash;
 	final byte[] hashCodeFile;
 	final byte[] hashFilePath;
-	final IPutFactory putFactory;
+	final PutFactory putFactory;
 
 	@Inject
 	public Version(StandardHasher standardHasher, @Assisted String filePath, @Assisted CodeFile codeFile,
-			IPutFactory putFactory) {
+			PutFactory putFactory) {
 		this.filePath = filePath;
 		this.hashCodeFile = codeFile.getHash();
 		this.hashFilePath = standardHasher.hash(filePath);

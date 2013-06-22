@@ -19,7 +19,7 @@ public class SpamDetectorTest {
 		spamDetector = new SpamDetector();
 	}
 
-	/** Test {@link SpamDetector#isSpamResult} */
+	/** Test {@link SpamDetector#isSpamByParameters(FeatureVector)} */
 	@Test
 	public void testIsSpamResult() {
 		String doc1 = "How is { life? + 12 - bbb }";

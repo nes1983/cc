@@ -61,7 +61,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 	@Inject
 	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("popularSnippets") HTable popularSnippets,
-			@Named("function2fineclones") HTable function2fineclones) throws IOException {
+			@Named("function2fineclones") HTable function2fineclones) {
 		this.mrWrapper = mrWrapper;
 		this.function2fineclones = function2fineclones;
 		this.popularSnippets = popularSnippets;
@@ -72,14 +72,13 @@ public class MakeFunction2FineClones implements Runnable {
 		CloneExpander cloneExpander;
 
 		@Inject
-		public MakeFunction2FineClonesMapper(CloneExpander cloneExpander) {
+		MakeFunction2FineClonesMapper(CloneExpander cloneExpander) {
 			this.cloneExpander = cloneExpander;
 		}
 
 		/** receives rows from htable function2roughclones */
 		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value,
-				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			final byte[] function = value.getRow();
 			assert function.length == 20;
@@ -90,7 +89,7 @@ public class MakeFunction2FineClones implements Runnable {
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterable<SnippetMatch> matches = Iterables.transform(columns,
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
-						public SnippetMatch apply(Entry<byte[], byte[]> cell) {
+						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
 							// extract information from cellKey
 							final ByteString thatFunction = ByteString.copyFrom(Bytes.head(cell.getKey(), 21));
 							final int thisPosition = Bytes.toInt(Bytes.head(Bytes.tail(cell.getKey(), 8), 4));
@@ -169,8 +168,9 @@ public class MakeFunction2FineClones implements Runnable {
 				commonness++;
 			}
 
-			if (commonness <= 0)
-				new AssertionError("commonness must be non-negative, but was " + commonness);
+			if (commonness <= 0) {
+				throw new AssertionError("commonness must be non-negative, but was " + commonness);
+			}
 
 			String functionString;
 			try {

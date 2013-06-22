@@ -1,19 +1,8 @@
 package ch.unibe.scg.cc.lines;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.collections.Transformer;
-import org.apache.commons.collections.TransformerUtils;
-import org.apache.commons.lang3.StringEscapeUtils;
-import org.apache.commons.lang3.StringUtils;
-
-import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
 
 public class ModifiableLines {
 	final StringBuilder string;
@@ -37,7 +26,7 @@ public class ModifiableLines {
 
 	/**
 	 * Get <code> length </code> lines, starting with <code>from</code>.
-	 * 
+	 *
 	 * @param length
 	 *            Number of lines to return.
 	 * @param from
@@ -49,7 +38,7 @@ public class ModifiableLines {
 
 	/**
 	 * Replaces the string from i to j, preserving line numbers.
-	 * 
+	 *
 	 * @param from
 	 * @param to
 	 * @param replacement
@@ -76,8 +65,9 @@ public class ModifiableLines {
 	}
 
 	int positivePart(int i) {
-		if (i < 0)
+		if (i < 0) {
 			return 0;
+		}
 		return i;
 	}
 
@@ -88,6 +78,7 @@ public class ModifiableLines {
 		}
 	}
 
+	@Override
 	public String toString() {
 		return string.toString();
 	}

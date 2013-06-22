@@ -24,7 +24,7 @@ import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
+import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
 import com.google.protobuf.ByteString;
@@ -62,11 +62,11 @@ public class MakeFunction2RoughClones implements Runnable {
 	public static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
-		final IPutFactory putFactory;
+		final PutFactory putFactory;
 
 		@Inject
 		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets,
-				IPutFactory putFactory) {
+				PutFactory putFactory) {
 			super(popularSnippets);
 			this.putFactory = putFactory;
 		}
@@ -150,11 +150,11 @@ public class MakeFunction2RoughClones implements Runnable {
 
 	public static class MakeFunction2RoughClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
-		final IPutFactory putFactory;
+		final PutFactory putFactory;
 
 		@Inject
 		public MakeFunction2RoughClonesReducer(@Named("function2roughclones") HTableWriteBuffer function2roughclones,
-				IPutFactory putFactory) {
+				PutFactory putFactory) {
 			super(function2roughclones);
 			this.putFactory = putFactory;
 		}

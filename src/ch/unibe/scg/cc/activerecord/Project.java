@@ -18,11 +18,11 @@ public class Project extends Column implements IColumn {
 	private final Version version;
 	private final String tag;
 	private final byte[] hash;
-	private final IPutFactory putFactory;
+	private final PutFactory putFactory;
 
 	@Inject
 	public Project(StandardHasher standardHasher, @Assisted("name") String name, @Assisted Version version,
-			@Assisted("tag") String tag, IPutFactory putFactory) {
+			@Assisted("tag") String tag, PutFactory putFactory) {
 		this.name = name;
 		this.version = version;
 		this.tag = tag;

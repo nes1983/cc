@@ -9,6 +9,7 @@ public class LineBreak {
 		this.weight = weight;
 	}
 
+	@Override
 	public String toString() {
 		return "<" + position + "," + weight + ">";
 	}

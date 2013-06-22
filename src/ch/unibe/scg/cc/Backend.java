@@ -125,11 +125,11 @@ public interface Backend extends Closeable {
 
 			for (int frameStart = 0; frameStart + MINIMUM_LINES <= stringOfLines.getNumberOfLines(); frameStart++) {
 				String snippet = stringOfLines.getLines(frameStart, MINIMUM_LINES);
-				this.registerSnippet(snippet, function, frameStart, MINIMUM_LINES, hasher, type);
+				this.registerSnippet(snippet, function, frameStart, hasher, type);
 			}
 		}
 
-		private void registerSnippet(String snippet, Function function, int from, int length, Hasher hasher, byte type) {
+		private void registerSnippet(String snippet, Function function, int from, Hasher hasher, byte type) {
 			byte[] hash;
 			try {
 				hash = hasher.hash(snippet);

@@ -5,7 +5,7 @@ import javax.inject.Named;
 
 import org.apache.hadoop.hbase.client.Put;
 
-public class PutFactory implements IPutFactory {
+public class PutFactory {
 	final boolean writeToWalEnabled;
 
 	@Inject

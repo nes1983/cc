@@ -7,7 +7,7 @@ public class ByteUtils {
 	/**
 	 * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of
 	 * same length.
-	 * 
+	 *
 	 * @param x1
 	 *            the first array
 	 * @param x2

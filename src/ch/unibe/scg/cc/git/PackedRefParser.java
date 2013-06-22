@@ -16,8 +16,9 @@ public class PackedRefParser {
 	public List<PackedRef> parse(InputStream ins) throws IOException {
 		int ch;
 		StringBuilder content = new StringBuilder();
-		while ((ch = ins.read()) != -1)
+		while ((ch = ins.read()) != -1) {
 			content.append((char) ch);
+		}
 
 		return parse(content.toString());
 	}
@@ -37,7 +38,7 @@ public class PackedRefParser {
 				list.add(pr);
 			}
 		}
+		s.close();
 		return list;
 	}
-
 }

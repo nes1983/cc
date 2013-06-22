@@ -15,9 +15,7 @@ import ch.unibe.scg.cc.SnippetMatchComparator;
 import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
-import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 
 import com.google.inject.AbstractModule;
@@ -41,7 +39,6 @@ public class CCModule extends AbstractModule {
 		install(new FactoryModuleBuilder().build(CodeFileFactory.class));
 		install(new FactoryModuleBuilder().build(FunctionFactory.class));
 
-		bind(IPutFactory.class).to(PutFactory.class);
 		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(new Boolean(false));
 	}
 }

@@ -15,6 +15,7 @@ import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.regex.Replace;
 
 //@formatter:off
+@SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class JavaType1ReplacerFactoryTest {
 

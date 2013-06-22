@@ -65,8 +65,6 @@ public class GitTablePopulator implements Runnable {
 	// num_projects: projects.har 405 | testdata.har: 2 | dataset.har 2246
 	/** needs to correspond with the path defined in DataFetchPipeline.sh */
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
-	/** set LOCAL_FOLDER_NAME to the same value as in RepoCloner.rb */
-	private static final String LOCAL_FOLDER_NAME = "repos";
 	final MRWrapper mrWrapper;
 
 	@Inject
@@ -74,6 +72,7 @@ public class GitTablePopulator implements Runnable {
 		this.mrWrapper = mrWrapper;
 	}
 
+	@Override
 	public void run() {
 		try {
 			Configuration config = new Configuration();
@@ -227,8 +226,7 @@ public class GitTablePopulator implements Runnable {
 							ObjectId objectId = treeWalk.getObjectId(0); // There's only one tree; it has index 0.
 							byte[] bytes = treeWalk.getObjectReader().open(objectId).getBytes();
 							String content = new String(bytes, charsetDetector.charsetOf(bytes));
-							String fileName = new File(treeWalk.getPathString()).getName();
-							CodeFile codeFile = register(content, fileName);
+							CodeFile codeFile = javaFrontend.register(content);
 							Version version = register(treeWalk.getPathString(), codeFile);
 							register(projectName, version, paref.getName());
 							processedFilesCounter.increment(1);
@@ -259,10 +257,6 @@ public class GitTablePopulator implements Runnable {
 			logger.warning("Could not simplify project name " + packFilePath);
 			// Use URI as project name.
 			return packFilePath;
-		}
-
-		private CodeFile register(String content, String fileName) {
-			return javaFrontend.register(content, fileName);
 		}
 
 		private Version register(String filePath, CodeFile codeFile) {

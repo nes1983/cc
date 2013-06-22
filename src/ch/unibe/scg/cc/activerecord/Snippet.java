@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc.activerecord;
 
-import java.io.IOException;
-
 import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
@@ -25,7 +23,7 @@ public class Snippet extends Column {
 		this.standardHasher = standardHasher;
 	}
 
-	public void save(Put put) throws IOException {
+	public void save(Put put) {
 		assert location != null;
 		int lineNumberRelativeToFunction = location.getFirstLine();
 		byte[] locationFirstLine = Bytes.toBytes(lineNumberRelativeToFunction);

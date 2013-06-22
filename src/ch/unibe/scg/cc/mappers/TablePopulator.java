@@ -31,6 +31,7 @@ public class TablePopulator implements Runnable {
 		this.mrWrapper = mrWrapper;
 	}
 
+	@Override
 	public void run() {
 		throw new UnsupportedOperationException("Use GitTablePopulator - TablePopulator is no longer supported.");
 	}
@@ -72,15 +73,14 @@ public class TablePopulator implements Runnable {
 
 			String filePath = key.toString();
 			String projectName = filePath.substring(0, filePath.indexOf('/'));
-			String fileName = filePath.substring(filePath.lastIndexOf('/') + 1);
 
-			CodeFile codeFile = register(content, fileName);
+			CodeFile codeFile = register(content);
 			Version version = register(filePath, codeFile);
 			register(projectName, version, 1);
 		}
 
-		private CodeFile register(String content, String fileName) throws IOException {
-			CodeFile codeFile = javaFrontend.register(content, fileName);
+		private CodeFile register(String content) throws IOException {
+			CodeFile codeFile = javaFrontend.register(content);
 			functions.flushCommits();
 			facts.flushCommits();
 			hashfactContent.flushCommits();
@@ -95,9 +95,8 @@ public class TablePopulator implements Runnable {
 		}
 
 		private void register(String projectName, Version version, int versionNumber) throws IOException {
-			Project proj = projectFactory.create(projectName, version, "1"); // TODO
-																				// get
-																				// versionNumber
+			// TODO deal with versionNumber
+			Project proj = projectFactory.create(projectName, version, "1");
 			javaFrontend.register(proj);
 			versions.flushCommits();
 			strings.flushCommits();
