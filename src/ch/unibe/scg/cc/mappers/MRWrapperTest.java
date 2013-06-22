@@ -4,6 +4,7 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+@SuppressWarnings("javadoc")
 public class MRWrapperTest {
 	@Test
 	public void testIsSubclassOf() {

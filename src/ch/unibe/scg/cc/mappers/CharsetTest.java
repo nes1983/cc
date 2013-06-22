@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 
+@SuppressWarnings("javadoc")
 public final class CharsetTest {
 	@Test
 	public void testCharset() {
