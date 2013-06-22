@@ -1,15 +1,13 @@
 package ch.unibe.scg.cc.lines;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
-import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
 
 @RunWith(JExample.class)
 public class StringOfLinesTest {
@@ -29,4 +27,9 @@ public class StringOfLinesTest {
 		assertThat(stringOfLines.getLines(3, 3), is("\nd\ne\nf\n"));
 	}
 
+	/** Testing {@link StringOfLines#toString()} */
+	@Test
+	public void testToString() {
+		assertThat(new StringOfLinesFactory().make(sampleString).toString(), is(sampleString));
+	}
 }

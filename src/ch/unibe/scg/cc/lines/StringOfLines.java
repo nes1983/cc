@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.lines;
 
-import org.apache.commons.lang3.ArrayUtils;
 
 public class StringOfLines {
 	final String string;
@@ -17,7 +16,7 @@ public class StringOfLines {
 
 	/**
 	 * Get <code> length </code> lines, starting with <code>from</code>.
-	 * 
+	 *
 	 * @param length
 	 *            Number of lines to return.
 	 * @param from
@@ -27,4 +26,8 @@ public class StringOfLines {
 		return string.substring(separators[from], separators[from + length] + 1);
 	}
 
+	@Override
+	public String toString() {
+		return string;
+	}
 }
