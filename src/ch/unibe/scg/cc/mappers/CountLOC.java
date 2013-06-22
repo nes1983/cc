@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.io.StringReader;
@@ -14,6 +16,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
@@ -21,7 +24,6 @@ import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Function;
 
 import com.google.common.base.Optional;
-import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
 
 public class CountLOC implements Runnable {
@@ -40,14 +42,19 @@ public class CountLOC implements Runnable {
 			scan.addColumn(GuiceResource.FAMILY, Function.FUNCTION_SNIPPET);
 
 			Configuration config = new Configuration();
+			config.set(MRJobConfig.MAP_MEMORY_MB, "1500");
+			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1000m");
+			config.set(MRJobConfig.REDUCE_MEMORY_MB, "1500");
+			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1000m");
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
+
 			hbaseWrapper.launchMapReduceJob(CountLOC.class.getName() + " Job", config, Optional.of("strings"),
 					Optional.<String> absent(), Optional.of(scan), CountLOCMapper.class.getName(),
 					Optional.<String> absent(), NullWritable.class, NullWritable.class);
 		} catch (IOException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getMessage(), e);
+			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
 			// exit thread
 			return;
@@ -55,8 +62,7 @@ public class CountLOC implements Runnable {
 	}
 
 	private static int countLines(String str) {
-		Preconditions.checkNotNull(str);
-		LineNumberReader lnr = new LineNumberReader(new StringReader(str));
+		LineNumberReader lnr = new LineNumberReader(new StringReader(checkNotNull(str)));
 		try {
 			lnr.skip(Long.MAX_VALUE);
 		} catch (IOException e) {
