@@ -8,7 +8,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
@@ -52,6 +51,7 @@ import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
+import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
@@ -125,7 +125,7 @@ public class GitTablePopulator implements Runnable {
 		Collection<Path> packFilePaths = Lists.newArrayList();
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
-				Charset.forName("UTF-8")));
+				Charsets.UTF_8));
 		Closer closer = Closer.create();
 		closer.register(br);
 		try {
