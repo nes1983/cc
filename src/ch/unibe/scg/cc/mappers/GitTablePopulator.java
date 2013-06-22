@@ -20,7 +20,6 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.CommonConfigurationKeysPublic;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -158,23 +157,15 @@ public class GitTablePopulator implements Runnable {
 		Counter processedFilesCounter;
 
 		@Inject
-		GitTablePopulatorMapper(@Java Frontend javaFrontend, @Named("project2version") HTable project2version,
-				@Named("version2file") HTable version2file, @Named("file2function") HTable file2function,
-				@Named("function2snippet") HTable function2snippet, @Named("strings") HTable strings,
+		GitTablePopulatorMapper(@Java Frontend javaFrontend,
 				ProjectFactory projectFactory, VersionFactory versionFactory, CharsetDetector charsetDetector) {
 			this.javaFrontend = javaFrontend;
-			this.project2version = project2version;
-			this.version2file = version2file;
-			this.file2function = file2function;
-			this.function2snippet = function2snippet;
-			this.strings = strings;
 			this.projectFactory = projectFactory;
 			this.versionFactory = versionFactory;
 			this.charsetDetector = charsetDetector;
 		}
 
 		final Frontend javaFrontend;
-		final HTable project2version, version2file, file2function, function2snippet, strings;
 		final ProjectFactory projectFactory;
 		final VersionFactory versionFactory;
 		final CharsetDetector charsetDetector;
@@ -288,11 +279,6 @@ public class GitTablePopulator implements Runnable {
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
 			javaFrontend.close();
-			project2version.flushCommits();
-			version2file.flushCommits();
-			file2function.flushCommits();
-			function2snippet.flushCommits();
-			strings.flushCommits();
 		}
 	}
 }

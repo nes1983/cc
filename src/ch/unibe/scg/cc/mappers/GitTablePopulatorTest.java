@@ -31,8 +31,7 @@ public final class GitTablePopulatorTest {
 
 	@Test
 	public void testProjnameRegex() {
-		GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null, null, null, null, null,
-				null);
+		GitTablePopulatorMapper gtpm = new GitTablePopulatorMapper(null, null, null, null);
 		String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
 				+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 		String projName = gtpm.getProjName(fullPathString);
@@ -52,7 +51,6 @@ public final class GitTablePopulatorTest {
 				.thenReturn(new CodeFile(i.getInstance(StandardHasher.class), ""));
 
 		GitTablePopulatorMapper mapper = new GitTablePopulatorMapper(javaFrontend,
-				null, null, null, null, null, // HTables.
 				i.getInstance(ProjectFactory.class), i.getInstance(VersionFactory.class),
 				i.getInstance(CharsetDetector.class));
 		mapper.processedFilesCounter = mock(Counter.class);
