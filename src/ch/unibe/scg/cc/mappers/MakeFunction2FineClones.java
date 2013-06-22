@@ -39,15 +39,20 @@ import ch.unibe.scg.cc.CloneExpander;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
+import com.google.common.base.Throwables;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import com.google.common.cache.LoadingCache;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
@@ -70,11 +75,16 @@ public class MakeFunction2FineClones implements Runnable {
 
 	public static class MakeFunction2FineClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		CloneExpander cloneExpander;
+		final CloneExpander cloneExpander;
+		final LoadingCache<byte[], String> cloneLoader;
+		final SpamDetector spamDetector;
 
 		@Inject
-		MakeFunction2FineClonesMapper(CloneExpander cloneExpander) {
+		MakeFunction2FineClonesMapper(CloneExpander cloneExpander,
+				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector) {
 			this.cloneExpander = cloneExpander;
+			this.cloneLoader = cloneLoader;
+			this.spamDetector = spamDetector;
 		}
 
 		/** receives rows from htable function2roughclones */
@@ -115,13 +125,34 @@ public class MakeFunction2FineClones implements Runnable {
 					});
 
 			// matching is symmetrical - so we do only half of it here
-			Collection<Clone> clones = cloneExpander.expandClones(matches);
-
 			// after matching procedure we expand to full clones
-			for (Clone clone : clones) {
+			for (Clone clone : filter(cloneExpander.expandClones(matches))) {
 				context.write(new ImmutableBytesWritable(clone.getThisFunction().toByteArray()),
 						new ImmutableBytesWritable(clone.toByteArray()));
 			}
+		}
+
+		/**
+		 * Filter clones down to the clones that aren't spam. In case an IOException occurs, abort.
+		 * Otherwise, try on and log error.
+		 */
+		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
+			Collection<Clone> ret = Lists.newArrayList();
+			for (Clone clone : clones) {
+				try {
+					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
+							cloneLoader.get(clone.getThisFunction().toByteArray()),
+							cloneLoader.get(clone.getThatFunction().toByteArray())))) {
+						ret.add(clone);
+					}
+				} catch (ExecutionException e) {
+					Throwables.propagateIfPossible(e.getCause(), IOException.class);
+					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
+				} catch (UncheckedExecutionException e) {
+					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
+				}
+			}
+			return ret;
 		}
 	}
 
@@ -181,11 +212,13 @@ public class MakeFunction2FineClones implements Runnable {
 					}
 				});
 			} catch (ExecutionException e) {
+				Throwables.propagateIfPossible(e, IOException.class);
 				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
-						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e);
+						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e.getCause());
 			} catch (UncheckedExecutionException e) {
-				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
-						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e);
+				logger.severe("The CacheLoader threw an exception while reading function "
+						+ ByteUtils.bytesToHex(functionHashKey.get()) + ". " + e.getCause());
+				return;
 			}
 
 			try {
@@ -193,7 +226,7 @@ public class MakeFunction2FineClones implements Runnable {
 				context.write(new CommonSnippetWritable(commonness, sol), NullWritable.get());
 			} catch (ArrayIndexOutOfBoundsException e) {
 				logger.severe("ArrayIndexOutOfBoundsException: Tried to access from: " + from + " / to: " + to
-						+ " on functionString: \n\n" + functionString);
+						+ " on functionString: \n\n" + functionString + " " + e);
 				arrayExceptions.increment(1);
 			}
 		}
