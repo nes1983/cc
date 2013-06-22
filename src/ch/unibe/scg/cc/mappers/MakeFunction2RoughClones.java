@@ -22,7 +22,6 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
-import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.WrappedRuntimeException;
@@ -81,10 +80,6 @@ public class MakeFunction2RoughClones implements Runnable {
 				InterruptedException {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
-
-			logger.finer("map snippet " + ByteUtils.bytesToHex(snippet));
-
-			// snippetHash = new byte[] {}; // dummy to save space
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
@@ -167,8 +162,6 @@ public class MakeFunction2RoughClones implements Runnable {
 			Iterator<ImmutableBytesWritable> snippetMatchIterator = snippetMatchValues.iterator();
 
 			byte[] functionHash = functionHashKey.get();
-			logger.info("reduce " + ByteUtils.bytesToHex(functionHash));
-
 			Put put = putFactory.create(functionHash);
 
 			while (snippetMatchIterator.hasNext()) {
