@@ -112,7 +112,11 @@ public class GitTablePopulator implements Runnable {
 	private String getInputPaths() throws IOException {
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(CORE_SITE_PATH));
-//		conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
+
+		if (false) {
+			// TODO: Reactivate as soon as a sane HAR is uploaded.
+			conf.set(CommonConfigurationKeysPublic.FS_DEFAULT_NAME_KEY, PROJECTS_HAR_PATH);
+		}
 
 		// we read the pack files from the pre-generated index file because
 		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
@@ -123,7 +127,7 @@ public class GitTablePopulator implements Runnable {
 		String line;
 		while ((line = br.readLine()) != null) {
 			if (line.equals("")) {
-				continue; // XXX This just shouldn't happen.
+				continue; // TODO: Delete this guard as soon as a sane HAR is uploaded.
 			}
 
 			// @formatter:off
@@ -136,7 +140,8 @@ public class GitTablePopulator implements Runnable {
 			// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
 			// @formatter:on
 
-			Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length())); //XXX remove substr
+			// TODO: Delete the "substring" as soon as a sane HAR is uploaded.
+			Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()));
 			packFilePaths.add(packPath);
 		}
 		return Joiner.on(",").join(packFilePaths);

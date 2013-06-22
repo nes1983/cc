@@ -1,6 +1,6 @@
 package ch.unibe.scg.cc;
 
-import static ch.unibe.scg.cc.RegisterClonesBackend.MINIMUM_LINES;
+import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -109,7 +109,7 @@ public final class SnippetSimilarTest {
 					@Override
 					public PopularSnippetMaps get() {
 						return new PopularSnippetMaps(
-								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(), 
+								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
 								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of());
 					}
 				}, null);

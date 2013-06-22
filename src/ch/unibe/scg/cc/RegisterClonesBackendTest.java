@@ -1,86 +1,103 @@
 package ch.unibe.scg.cc;
 
-import static org.mockito.Matchers.anyInt;
-import static org.mockito.Matchers.anyObject;
-import static org.mockito.Matchers.eq;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import org.apache.hadoop.hbase.client.HTable;
+import java.io.IOException;
+
+import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.mapreduce.Counter;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 
-import ch.unibe.jexample.Given;
-import ch.unibe.jexample.JExample;
+import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
+import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.mappers.GuiceResource;
+import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 import ch.unibe.scg.cc.modules.CCModule;
 
+import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Module;
+import com.google.inject.name.Names;
+import com.google.inject.util.Modules;
 
-@RunWith(JExample.class)
 public class RegisterClonesBackendTest {
-
-	Project project;
-	final HTable htable = mock(HTable.class);
-	Function function;
+	final HTableWriteBuffer hTable = mock(HTableWriteBuffer.class);
 	final StringOfLinesFactory stringOfLinesFactory = new StringOfLinesFactory();
-	final StringOfLines sampleLines = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\n");
 	final StringOfLines aThruF = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\n");
 	final StringOfLines aThruK = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\n");
 
-	@Test
-	public RegisterClonesBackend testOneRegister() {
-		CloneRegistry cr = mock(CloneRegistry.class);
-		Injector i = Guice.createInjector(new CCModule());
-		StandardHasher sth = i.getInstance(StandardHasher.class);
-		ShingleHasher shh = i.getInstance(ShingleHasher.class);
+	HTableWriteBuffer f2f = mock(HTableWriteBuffer.class);
+	HTableWriteBuffer strings = mock(HTableWriteBuffer.class);
+	HTableWriteBuffer f2s = mock(HTableWriteBuffer.class);
 
-		RegisterClonesBackend rcb = new RegisterClonesBackend(cr, sth, shh, stringOfLinesFactory);
-		rcb.successfullyHashedCounter = mock(Counter.class);
-		rcb.cannotBeHashedCounter = mock(Counter.class);
+	Backend backend;
+	Injector i;
+	Function fun;
+	Project project;
 
+	@Before
+	public void setUp() {
+		Module m = new AbstractModule() {
+			@Override protected void configure() {
+				bind(HTableWriteBuffer.class).annotatedWith(Names.named("file2function")).toInstance(f2f);
+				bind(HTableWriteBuffer.class).annotatedWith(Names.named("strings")).toInstance(strings);
+				bind(HTableWriteBuffer.class).annotatedWith(Names.named("function2snippet")).toInstance(f2s);
+
+				bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
+						mock(Counter.class));
+				bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED)).toInstance(
+						mock(Counter.class));
+			}
+		};
+		i = Guice.createInjector(Modules.override(new CCModule()).with(m));
+		backend = i.getInstance(Backend.RegisterClonesBackend.class);
+
+		fun = i.getInstance(FunctionFactory.class).makeFunction(i.getInstance(StandardHasher.class), 0, "", "");
 		project = mock(Project.class);
-		function = mock(Function.class);
-
-		rcb.registerConsecutiveLinesOfCode(sampleLines, function, Main.TYPE_3_CLONE);
-
-		verify(cr).register(
-				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71,
-						70 }), (String) anyObject(), eq(function), eq(0), eq(5), eq(Main.TYPE_3_CLONE));
-
-		Mockito.reset(cr); // JExample doesn't support @After
-		return rcb;
 	}
 
-	@Given("testOneRegister")
-	public RegisterClonesBackend testMoreRegisters(RegisterClonesBackend rcb) {
-		CloneRegistry cr = mock(CloneRegistry.class);
-		rcb.registry = cr;
-		rcb.registerConsecutiveLinesOfCode(aThruF, function, Main.TYPE_3_CLONE);
-		verify(cr).register(
-				eq(new byte[] { 69, 10, -93, -20, 53, -4, -66, -128, 103, -28, 44, 42, 38, -9, 20, -75, -38, 89, -71,
-						70 }), (String) anyObject(), eq(function), eq(0), eq(5), eq(Main.TYPE_3_CLONE));
-		Mockito.reset(cr); // JExample doesn't support @After
-		return rcb;
+	@Test
+	public void testOneRegister() throws IOException {
+		backend.registerConsecutiveLinesOfCode(aThruF, fun, Main.TYPE_3_CLONE);
+		assertThat(fun.getSnippets().size(), is(2));
+		assertThat(fun.getSnippets().get(0).getSnippet(), is("a\nb\nc\nd\ne\n"));
+		assertThat(fun.getSnippets().get(1).getSnippet(), is("\nb\nc\nd\ne\nf\n"));
+
+
+		CodeFile cf = i.getInstance(CodeFileFactory.class).create(aThruF.toString());
+		cf.addFunction(fun);
+		backend.register(cf);
+
+		verify(f2f, Mockito.times(1)).write(Mockito.any(Put.class));
+		verify(strings, Mockito.times(1)).write(Mockito.any(Put.class));
+		verify(f2s, Mockito.times(2)).write(Mockito.any(Put.class));
 	}
 
-	@Given("testMoreRegisters")
-	public RegisterClonesBackend testLotsOfRegisters(RegisterClonesBackend rcb) {
-		CloneRegistry cr = mock(CloneRegistry.class);
-		rcb.registry = cr;
-		rcb.registerConsecutiveLinesOfCode(aThruK, function, Main.TYPE_2_CLONE);
-		verify(cr, times(6)).register(((byte[]) anyObject()), (String) anyObject(), eq(function), anyInt(), anyInt(),
-				eq(Main.TYPE_2_CLONE));
-		Mockito.reset(cr); // JExample doesn't support @After
+	@Test
+	public void testMoreRegisters() throws IOException {
+		backend.registerConsecutiveLinesOfCode(aThruK, fun, Main.TYPE_3_CLONE);
+		assertThat(fun.getSnippets().size(), is(7));
+		assertThat(fun.getSnippets().get(0).getSnippet(), is("a\nb\nc\nd\ne\n"));
+		assertThat(fun.getSnippets().get(6).getSnippet(), is("\ng\nh\ni\nj\nk\n"));
 
-		return rcb;
+
+		CodeFile cf = i.getInstance(CodeFileFactory.class).create(aThruK.toString());
+		cf.addFunction(fun);
+		backend.register(cf);
+
+		verify(f2f, Mockito.times(1)).write(Mockito.any(Put.class));
+		verify(strings, Mockito.times(1)).write(Mockito.any(Put.class));
+		verify(f2s, Mockito.times(7)).write(Mockito.any(Put.class));
 	}
-
 }

@@ -1,13 +1,13 @@
 package ch.unibe.scg.cc.activerecord;
 
+import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
+
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.RegisterClonesBackend;
-
 public class Location extends Column {
 	private final byte[] LOCATION_NAME = Bytes.toBytes("ln");
-	final int length = RegisterClonesBackend.MINIMUM_LINES;
+	final int length = MINIMUM_LINES;
 	int firstLine;
 
 	public void save(Put put) {

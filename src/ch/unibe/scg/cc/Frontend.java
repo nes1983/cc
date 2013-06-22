@@ -8,9 +8,9 @@ import javax.inject.Inject;
 
 import ch.unibe.scg.cc.Tokenizer.SnippetWithBaseline;
 import ch.unibe.scg.cc.activerecord.CodeFile;
+import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
@@ -22,7 +22,7 @@ public class Frontend implements Closeable {
 	protected PhaseFrontend type1;
 	protected PhaseFrontend type2;
 	protected StringOfLinesFactory stringOfLinesFactory;
-	protected RegisterClonesBackend backend;
+	protected Backend backend;
 	protected Tokenizer tokenizer;
 	CodeFileFactory codeFileFactory;
 	VersionFactory versionFactory;
@@ -30,7 +30,7 @@ public class Frontend implements Closeable {
 
 	@Inject
 	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
-			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, RegisterClonesBackend backend,
+			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, Backend backend,
 			Tokenizer tokenizer, CodeFileFactory codeFileFactory, VersionFactory versionFactory,
 			Function.FunctionFactory functionFactory) {
 		super();
@@ -100,7 +100,7 @@ public class Frontend implements Closeable {
 		StringBuilder normalized = new StringBuilder(function.getSnippet());
 		type1.normalize(normalized);
 		StringOfLines normalizedSOL = stringOfLinesFactory.make(normalized.toString());
-		if (normalizedSOL.getNumberOfLines() < RegisterClonesBackend.MINIMUM_LINES) {
+		if (normalizedSOL.getNumberOfLines() < Backend.MINIMUM_LINES) {
 			return;
 		}
 

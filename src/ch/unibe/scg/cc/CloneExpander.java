@@ -1,6 +1,6 @@
 package ch.unibe.scg.cc;
 
-import static ch.unibe.scg.cc.RegisterClonesBackend.MINIMUM_LINES;
+import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
 
 import java.nio.ByteBuffer;
 import java.util.Collection;
@@ -25,7 +25,7 @@ import com.google.common.collect.Lists;
 
 /**
  * Given a list of matches, extracts all fully expanded clones.
- * 
+ *
  * <p>
  * Popular snippets are treated special. We enforce earlier in the pipeline that
  * all functions that contain popular snippets also appear at least once in a
@@ -58,7 +58,7 @@ public class CloneExpander {
 
 	/**
 	 * Stitch together the matches into Clones.
-	 * 
+	 *
 	 * @param matches
 	 *            sorted first by
 	 *            {@code SnippetMatch.getThatSnippetLocation().getFunction()},

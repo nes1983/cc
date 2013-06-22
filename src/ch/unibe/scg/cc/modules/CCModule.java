@@ -8,10 +8,9 @@ import javax.inject.Singleton;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.CloneRegistry;
+import ch.unibe.scg.cc.Backend;
 import ch.unibe.scg.cc.MessageDigestProvider;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
-import ch.unibe.scg.cc.Registry;
 import ch.unibe.scg.cc.SnippetMatchComparator;
 import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
@@ -32,7 +31,7 @@ public class CCModule extends AbstractModule {
 	protected void configure() {
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(Singleton.class);
 		bind(Configuration.class).toProvider(ConfigurationProvider.class).in(Singleton.class);
-		bind(Registry.class).to(CloneRegistry.class).in(Singleton.class);
+		bind(Backend.class).to(Backend.RegisterClonesBackend.class).in(Singleton.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
 		bind(new TypeLiteral<Comparator<SnippetMatch>>() {}).to(SnippetMatchComparator.class);
 

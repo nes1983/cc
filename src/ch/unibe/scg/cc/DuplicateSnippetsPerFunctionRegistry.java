@@ -1,56 +1,50 @@
 package ch.unibe.scg.cc;
 
-import java.io.Closeable;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
-import javax.inject.Named;
+import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.IPutFactory;
-import ch.unibe.scg.cc.activerecord.Location;
 import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.common.collect.Maps;
-import com.google.inject.Inject;
+import com.google.common.io.Closer;
 
 /**
  * The DuplicateSnippetsPerFunctionRegistry stores information about duplicate
  * snippets in one function. We want to measure how often our assumption
  * "one snippet occurs at max. once per function" is violated.
  */
-public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable {
+public class DuplicateSnippetsPerFunctionRegistry implements Backend {
 	final static Logger logger = Logger.getLogger(DuplicateSnippetsPerFunctionRegistry.class.getName());
 	final private static byte[] TYPE_1_FAMILY = Bytes.toBytes("t1");
 	final private static byte[] TYPE_2_FAMILY = Bytes.toBytes("t2");
 	final private static byte[] TYPE_3_FAMILY = Bytes.toBytes("t3");
-	final CloneRegistry cloneRegistry;
-	final IPutFactory putFactory;
-
-	@Inject(optional = true)
-	@Named("duplicateSnippetsPerFunction")
-	HTableWriteBuffer duplicateSnippetsPerFunction;
+	final PutFactory putFactory;
+	final HTableWriteBuffer duplicateSnippetsPerFunction;
+	final Backend.RegisterClonesBackend backend;
+	final StandardHasher standardHasher;
+	final ShingleHasher shingleHasher;
 
 	@Inject
-	public DuplicateSnippetsPerFunctionRegistry(CloneRegistry cloneRegistry, IPutFactory putFactory) {
-		this.cloneRegistry = cloneRegistry;
+	DuplicateSnippetsPerFunctionRegistry(PutFactory putFactory, HTableWriteBuffer duplicateSnippetsPerFunction,
+			Backend.RegisterClonesBackend backend, StandardHasher standardHasher, ShingleHasher shingleHasher) {
 		this.putFactory = putFactory;
-	}
-
-	public void register(byte[] hash, String snippetValue, Function function, Location location, byte type) {
-		cloneRegistry.register(hash, snippetValue, function, location, type);
-	}
-
-	public void register(byte[] hash, String snippet, Function function, int from, int length, byte type) {
-		cloneRegistry.register(hash, snippet, function, from, length, type);
+		this.duplicateSnippetsPerFunction = duplicateSnippetsPerFunction;
+		this.backend = backend;
+		this.standardHasher = standardHasher;
+		this.shingleHasher = shingleHasher;
 	}
 
 	public void register(CodeFile codeFile) {
@@ -62,7 +56,10 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 	public void register(Version version) {
 	}
 
-	public void register(Function function) {
+	private void register(StringOfLines stringOfLines, Function function, Hasher hasher, byte type) {
+		backend.registerConsecutiveLinesOfCode(stringOfLines, function, hasher, type);
+
+
 		final HashMap<String, Integer> snippetHashes = Maps.newHashMap();
 		for (final Snippet snippet : function.getSnippets()) {
 			// Duplicate Hashes detection
@@ -101,6 +98,19 @@ public class DuplicateSnippetsPerFunctionRegistry implements Registry, Closeable
 
 	@Override
 	public void close() throws IOException {
-		cloneRegistry.close();
+		Closer closer = Closer.create();
+		closer.register(duplicateSnippetsPerFunction);
+		closer.register(backend);
+		closer.close();
+	}
+
+	@Override
+	public void shingleRegisterFunction(StringOfLines contentsSOL, Function function) {
+		register(contentsSOL,function, shingleHasher, Main.TYPE_3_CLONE);
+	}
+
+	@Override
+	public void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Function function, byte type) {
+		register(stringOfLines,function, standardHasher, type);
 	}
 }
