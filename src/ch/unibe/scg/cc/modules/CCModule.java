@@ -17,7 +17,9 @@ import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
+import ch.unibe.scg.cc.mappers.CloneLoaderProvider;
 
+import com.google.common.cache.LoadingCache;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
@@ -32,6 +34,10 @@ public class CCModule extends AbstractModule {
 		bind(Backend.class).to(Backend.RegisterClonesBackend.class).in(Singleton.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
 		bind(new TypeLiteral<Comparator<SnippetMatch>>() {}).to(SnippetMatchComparator.class);
+		bind(new TypeLiteral<LoadingCache<byte[], String>>() {})
+			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
+			.toProvider(CloneLoaderProvider.class)
+			.in(Singleton.class);
 
 		// factories
 		install(new FactoryModuleBuilder().build(ProjectFactory.class));
