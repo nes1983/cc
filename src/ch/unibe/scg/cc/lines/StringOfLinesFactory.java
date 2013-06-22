@@ -6,7 +6,7 @@ public class StringOfLinesFactory {
 	public StringOfLines make(String string, char separator) {
 		String stringEndingInNewline = string;
 		if (!string.endsWith(String.valueOf(separator))) {
-			stringEndingInNewline = string + "\n";
+			stringEndingInNewline = string + separator;
 		}
 		return makeSanitized(stringEndingInNewline, separator);
 	}
@@ -29,5 +29,4 @@ public class StringOfLinesFactory {
 	public StringOfLines make(String string) {
 		return this.make(string, '\n');
 	}
-
 }
