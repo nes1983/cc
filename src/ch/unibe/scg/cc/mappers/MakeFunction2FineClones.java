@@ -72,6 +72,17 @@ public class MakeFunction2FineClones implements Runnable {
 		final LoadingCache<byte[], String> cloneLoader;
 		final SpamDetector spamDetector;
 
+		// Optional because in MRMain, we have an injector that does not set
+		// this property, and can't, because it doesn't have the counter
+		// available.
+		@Inject(optional = true)
+		@Named(Constants.COUNTER_CLONES_REJECTED)
+		Counter clonesRejected;
+
+		@Inject(optional = true)
+		@Named(Constants.COUNTER_CLONES_PASSED)
+		Counter clonesPassed;
+
 		@Inject
 		MakeFunction2FineClonesMapper(CloneExpander cloneExpander,
 				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector) {
@@ -144,6 +155,8 @@ public class MakeFunction2FineClones implements Runnable {
 					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
 				}
 			}
+			clonesRejected.increment(clones.size() - ret.size());
+			clonesPassed.increment(ret.size());
 			return ret;
 		}
 	}

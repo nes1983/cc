@@ -24,12 +24,15 @@ class CounterModule extends AbstractModule {
 				context.getCounter(Counters.PROCESSED_FILES));
 		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_IGNORED_FILES)).toInstance(
 				context.getCounter(Counters.IGNORED_FILES));
-		bind(Counter.class).annotatedWith(
-				Names.named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)).toInstance(
-				context.getCounter(Counters.MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS));
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS))
+				.toInstance(context.getCounter(Counters.MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS));
 		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_FUNCTIONS)).toInstance(
 				context.getCounter(Counters.FUNCTIONS));
 		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_LOC)).toInstance(
 				context.getCounter(Counters.LOC));
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_CLONES_REJECTED)).toInstance(
+				context.getCounter(Counters.CLONES_REJECTED));
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_CLONES_PASSED)).toInstance(
+				context.getCounter(Counters.CLONES_PASSED));
 	}
 }

@@ -36,4 +36,6 @@ public class Constants {
 	public static final String COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS = "MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS";
 	public static final String COUNTER_FUNCTIONS = "FUNCTIONS";
 	public static final String COUNTER_LOC = "LOC";
+	public static final String COUNTER_CLONES_REJECTED = "CLONES_REJECTED";
+	public static final String COUNTER_CLONES_PASSED = "CLONES_PASSED";
 }

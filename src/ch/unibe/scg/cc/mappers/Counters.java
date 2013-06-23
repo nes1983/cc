@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
 import ch.unibe.scg.cc.CannotBeHashedException;
+import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.MakeFunction2FineClonesReducer;
 
 
@@ -29,5 +30,9 @@ enum Counters {
 	 * Lines of code, calculated with the function strings (and not the whole
 	 * source file).
 	 */
-	LOC;
+	LOC,
+	/** Clones that were rejected by the {@link SpamDetector} */
+	CLONES_REJECTED,
+	/** Clones that passed by the {@link SpamDetector} */
+	CLONES_PASSED;
 }
