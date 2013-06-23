@@ -42,7 +42,7 @@ public class HBaseTest {
 	public void createTable() throws IOException {
 		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
 			HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
-			HColumnDescriptor family = new HColumnDescriptor(GuiceResource.FAMILY);
+			HColumnDescriptor family = new HColumnDescriptor(Constants.FAMILY);
 			td.addFamily(family);
 			if (admin.isTableAvailable(TEST_TABLE_NAME)) {
 				if (admin.isTableEnabled(TEST_TABLE_NAME)) {
@@ -61,7 +61,7 @@ public class HBaseTest {
 			Get get = new Get(key);
 			assertTrue(testTable.get(get).isEmpty());
 			Put put = new Put(key);
-			put.add(GuiceResource.FAMILY, key, 0l, key);
+			put.add(Constants.FAMILY, key, 0l, key);
 			testTable.put(put);
 			testTable.flushCommits();
 			assertFalse(testTable.get(get).isEmpty());
@@ -84,7 +84,7 @@ public class HBaseTest {
 			for (int i = 0; i < rounds; i++) {
 				Put put = new Put(key);
 				put.setWriteToWAL(false);
-				put.add(GuiceResource.FAMILY, key, 0l, key);
+				put.add(Constants.FAMILY, key, 0l, key);
 				testTable.put(put);
 			}
 			testTable.flushCommits();

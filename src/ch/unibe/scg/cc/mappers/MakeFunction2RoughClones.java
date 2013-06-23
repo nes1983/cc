@@ -81,7 +81,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
 
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
+			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterator<Entry<byte[], byte[]>> columnIterator = columns.iterator();
 
@@ -94,7 +94,7 @@ public class MakeFunction2RoughClones implements Runnable {
 					byte[] function = column.getKey();
 					byte[] location = column.getValue();
 					Put put = putFactory.create(function);
-					put.add(GuiceResource.FAMILY, snippet, 0l, location);
+					put.add(Constants.FAMILY, snippet, 0l, location);
 					write(put);
 				}
 				// we're done, don't go any further!
@@ -179,7 +179,7 @@ public class MakeFunction2RoughClones implements Runnable {
 
 				byte[] columnKey = ColumnKeyConverter.encode(thatSnippet.getFunction().toByteArray(),
 						thisSnippet.getPosition(), thisSnippet.getLength());
-				put.add(GuiceResource.FAMILY, columnKey, 0l, partialSnippetMatch.toByteArray());
+				put.add(Constants.FAMILY, columnKey, 0l, partialSnippetMatch.toByteArray());
 			}
 			context.write(functionHashKey, put);
 		}
@@ -225,7 +225,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			Scan scan = new Scan();
 			scan.setCaching(100); // TODO play with this. (100 is default value)
 			scan.setCacheBlocks(false);
-			scan.addFamily(GuiceResource.FAMILY); // Gets all columns from the
+			scan.addFamily(Constants.FAMILY); // Gets all columns from the
 													// specified family.
 
 			Configuration config = new Configuration();

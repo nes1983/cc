@@ -25,7 +25,7 @@ import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.GuiceResource;
+import ch.unibe.scg.cc.mappers.Constants;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.common.cache.CacheBuilder;
@@ -91,10 +91,10 @@ public interface Backend extends Closeable {
 		// Optional because in MRMain, we have an injector that does not set this
 		// property, and can't, because it doesn't have the counter available.
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_CANNOT_BE_HASHED)
+		@Named(Constants.COUNTER_CANNOT_BE_HASHED)
 		Counter cannotBeHashedCounter;
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED)
+		@Named(Constants.COUNTER_SUCCESSFULLY_HASHED)
 		Counter successfullyHashedCounter;
 
 		@Inject

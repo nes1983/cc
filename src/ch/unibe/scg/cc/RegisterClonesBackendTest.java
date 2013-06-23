@@ -19,7 +19,7 @@ import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.GuiceResource;
+import ch.unibe.scg.cc.mappers.Constants;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.inject.AbstractModule;
@@ -52,9 +52,9 @@ public class RegisterClonesBackendTest {
 				bind(HTableWriteBuffer.class).annotatedWith(Names.named("strings")).toInstance(strings);
 				bind(HTableWriteBuffer.class).annotatedWith(Names.named("function2snippet")).toInstance(f2s);
 
-				bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
+				bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_CANNOT_BE_HASHED)).toInstance(
 						mock(Counter.class));
-				bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED)).toInstance(
+				bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_SUCCESSFULLY_HASHED)).toInstance(
 						mock(Counter.class));
 			}
 		};

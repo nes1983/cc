@@ -16,20 +16,20 @@ class CounterModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_SUCCESSFULLY_HASHED)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_SUCCESSFULLY_HASHED)).toInstance(
 				context.getCounter(Counters.SUCCESSFULLY_HASHED));
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_CANNOT_BE_HASHED)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_CANNOT_BE_HASHED)).toInstance(
 				context.getCounter(Counters.CANNOT_BE_HASHED));
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_PROCESSED_FILES)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_PROCESSED_FILES)).toInstance(
 				context.getCounter(Counters.PROCESSED_FILES));
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_IGNORED_FILES)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_IGNORED_FILES)).toInstance(
 				context.getCounter(Counters.IGNORED_FILES));
 		bind(Counter.class).annotatedWith(
-				Names.named(GuiceResource.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)).toInstance(
+				Names.named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)).toInstance(
 				context.getCounter(Counters.MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS));
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_FUNCTIONS)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_FUNCTIONS)).toInstance(
 				context.getCounter(Counters.FUNCTIONS));
-		bind(Counter.class).annotatedWith(Names.named(GuiceResource.COUNTER_LOC)).toInstance(
+		bind(Counter.class).annotatedWith(Names.named(Constants.COUNTER_LOC)).toInstance(
 				context.getCounter(Counters.LOC));
 	}
 }

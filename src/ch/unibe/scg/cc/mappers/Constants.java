@@ -3,13 +3,7 @@ package ch.unibe.scg.cc.mappers;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.BytesWritable;
 
-/**
- * provides all useful resources to the mapper and reducers
- *
- * @author vs
- *
- */
-public class GuiceResource {
+public class Constants {
 	public enum ColumnName {
 		COUNT_VERSIONS(Bytes.toBytes("nve")), VALUES_VERSIONS(Bytes.toBytes("vve")), COUNT_FILES(Bytes.toBytes("nfi")), VALUES_FILES(
 				Bytes.toBytes("vfi")), COUNT_FUNCTIONS(Bytes.toBytes("vfn")), VALUES_FUNCTIONS(Bytes.toBytes("vfn")), COUNT_SNIPPETS(

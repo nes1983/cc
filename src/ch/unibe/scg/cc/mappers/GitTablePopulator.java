@@ -31,7 +31,6 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import org.eclipse.jgit.errors.MissingObjectException;
-import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.file.FileRepository;
@@ -163,7 +162,7 @@ public class GitTablePopulator implements Runnable {
 		// this property, and can't, because it doesn't have the counter
 		// available.
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_PROCESSED_FILES)
+		@Named(Constants.COUNTER_PROCESSED_FILES)
 		Counter processedFilesCounter;
 
 		@Inject
@@ -207,7 +206,7 @@ public class GitTablePopulator implements Runnable {
 			String projectName = getProjName(key.toString());
 			logger.info("Processing " + projectName);
 
-			mapRepo(fileSystem.open(new Path(gitDirPath + Constants.PACKED_REFS)),
+			mapRepo(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
 					new ByteArrayInputStream(value.getBytes()), projectName);
 		}
 

@@ -112,9 +112,9 @@ public class MRWrapper {
 		}
 
 		// guice configuration
-		job.getConfiguration().set(GuiceResource.GUICE_MAPPER_ANNOTATION_STRING, mapperClassName);
+		job.getConfiguration().set(Constants.GUICE_MAPPER_ANNOTATION_STRING, mapperClassName);
 		if (reducerClassName.isPresent()) {
-			job.getConfiguration().set(GuiceResource.GUICE_REDUCER_ANNOTATION_STRING, reducerClassName.get());
+			job.getConfiguration().set(Constants.GUICE_REDUCER_ANNOTATION_STRING, reducerClassName.get());
 		}
 
 		return job.waitForCompletion(true);

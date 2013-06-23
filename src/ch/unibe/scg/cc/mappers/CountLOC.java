@@ -39,7 +39,7 @@ public class CountLOC implements Runnable {
 		try {
 			Scan scan = new Scan();
 			// Gets all columns from the specified family/qualifier.
-			scan.addColumn(GuiceResource.FAMILY, Function.FUNCTION_SNIPPET);
+			scan.addColumn(Constants.FAMILY, Function.FUNCTION_SNIPPET);
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_MEMORY_MB, "1500");
@@ -51,9 +51,7 @@ public class CountLOC implements Runnable {
 			hbaseWrapper.launchMapReduceJob(CountLOC.class.getName() + " Job", config, Optional.of("strings"),
 					Optional.<String> absent(), Optional.of(scan), CountLOCMapper.class.getName(),
 					Optional.<String> absent(), NullWritable.class, NullWritable.class);
-		} catch (IOException e) {
-			throw new WrappedRuntimeException(e);
-		} catch (ClassNotFoundException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
 			// exit thread
@@ -78,10 +76,10 @@ public class CountLOC implements Runnable {
 		// this property, and can't, because it doesn't have the counter
 		// available.
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_FUNCTIONS)
+		@Named(Constants.COUNTER_FUNCTIONS)
 		Counter functionsCounter;
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_LOC)
+		@Named(Constants.COUNTER_LOC)
 		Counter locCounter;
 
 		/** receives rows from htable strings */
@@ -89,7 +87,7 @@ public class CountLOC implements Runnable {
 		public void map(ImmutableBytesWritable uselessKey, Result value,
 				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
-			String functionSnippet = Bytes.toString(value.getColumnLatest(GuiceResource.FAMILY,
+			String functionSnippet = Bytes.toString(value.getColumnLatest(Constants.FAMILY,
 					Function.FUNCTION_SNIPPET).getValue());
 			locCounter.increment(countLines(functionSnippet));
 			functionsCounter.increment(1L);

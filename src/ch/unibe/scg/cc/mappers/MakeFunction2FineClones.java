@@ -89,7 +89,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 			logger.finer("map function " + ByteUtils.bytesToHex(function));
 
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
+			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterable<SnippetMatch> matches = Iterables.transform(columns,
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
@@ -158,7 +158,7 @@ public class MakeFunction2FineClones implements Runnable {
 		// this property, and can't, because it doesn't have the counter
 		// available.
 		@Inject(optional = true)
-		@Named(GuiceResource.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)
+		@Named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)
 		Counter arrayExceptions;
 
 		@Inject
@@ -269,7 +269,7 @@ public class MakeFunction2FineClones implements Runnable {
 			Scan scan = new Scan();
 			scan.setCaching(100); // TODO play with this. (100 is default value)
 			scan.setCacheBlocks(false);
-			scan.addFamily(GuiceResource.FAMILY); // Gets all columns from the
+			scan.addFamily(Constants.FAMILY); // Gets all columns from the
 													// specified family.
 
 			Configuration config = new Configuration();

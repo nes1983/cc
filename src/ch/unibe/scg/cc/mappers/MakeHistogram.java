@@ -56,7 +56,7 @@ public class MakeHistogram implements Runnable {
 		public void map(ImmutableBytesWritable uselessKey, Result value,
 				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(GuiceResource.FAMILY);
+			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			context.write(new IntWritable(familyMap.size()), new LongWritable(1L));
 		}
 	}
@@ -80,7 +80,7 @@ public class MakeHistogram implements Runnable {
 
 			Scan scan = new Scan();
 			scan.setCaching(100); // TODO play with this. (100 is default value)
-			scan.addFamily(GuiceResource.FAMILY); // Gets all columns from the
+			scan.addFamily(Constants.FAMILY); // Gets all columns from the
 													// specified family.
 
 			Configuration config = new Configuration();

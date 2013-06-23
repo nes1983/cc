@@ -37,7 +37,7 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 				scan.setCaching(1000);
 				// TODO play with caching. (100 is the default value)
 				scan.setCacheBlocks(false);
-				scan.addFamily(GuiceResource.FAMILY);
+				scan.addFamily(Constants.FAMILY);
 
 
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
@@ -48,7 +48,7 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 				try (ResultScanner rs = popularSnippets.getScanner(scan)) {
 					for (Result r : rs) {
 						byte[] function = r.getRow();
-						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
+						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(Constants.FAMILY);
 						for (Entry<byte[], byte[]> cell : fm.entrySet()) {
 							byte[] snippet = cell.getKey();
 							// To save space we didn't store a protobuffer object.

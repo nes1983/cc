@@ -6,7 +6,7 @@ import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.MakeFunction2FineClonesRe
 
 /**
  * Every Hadoop counter is named by an enum. These are ours. See {@link org.apache.hadoop.mapreduce.Counters}.
- * The Counters' string values are stored in {@link GuiceResource} to satisfy
+ * The Counters' string values are stored in {@link Constants} to satisfy
  * Guice seeing a constant expression.
  */
 enum Counters {

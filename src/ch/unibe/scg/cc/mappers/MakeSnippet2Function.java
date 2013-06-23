@@ -89,7 +89,7 @@ public class MakeSnippet2Function implements Runnable {
 				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 				byte[] factRelativeLocation = Bytes.tail(functionHashPlusLocationKey, 8);
 
-				put.add(GuiceResource.FAMILY, functionHash, 0l, factRelativeLocation);
+				put.add(Constants.FAMILY, functionHash, 0l, factRelativeLocation);
 			}
 
 			// prevent saving non-recurring hashes
