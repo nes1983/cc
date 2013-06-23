@@ -16,6 +16,7 @@ import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
+import ch.unibe.scg.cc.mappers.ByteUtils;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.common.collect.Maps;

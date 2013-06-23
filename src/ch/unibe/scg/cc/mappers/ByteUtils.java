@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package ch.unibe.scg.cc.mappers;
 
 public class ByteUtils {
 	/** 20 bytes each with hex-value \x00 */

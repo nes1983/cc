@@ -7,8 +7,8 @@ import javax.inject.Inject;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.StandardHasher;
+import ch.unibe.scg.cc.mappers.ByteUtils;
 
 import com.google.inject.assistedinject.Assisted;
 

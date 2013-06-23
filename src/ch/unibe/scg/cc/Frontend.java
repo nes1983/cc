@@ -15,6 +15,7 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cc.mappers.ByteUtils;
 
 public class Frontend implements Closeable {
 	StandardHasher standardHasher;

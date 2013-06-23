@@ -8,9 +8,9 @@ import javax.inject.Inject;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.ByteUtils;
 import ch.unibe.scg.cc.CannotBeHashedException;
 import ch.unibe.scg.cc.Hasher;
+import ch.unibe.scg.cc.mappers.ByteUtils;
 
 import com.google.inject.assistedinject.Assisted;
 
