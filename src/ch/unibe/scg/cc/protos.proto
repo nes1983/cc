@@ -12,6 +12,8 @@ message SnippetMatch {
 message SnippetLocation {
 	// 20 bytes long.
 	optional bytes function = 1;
+	// Location relative to the surrounding function.
+	// Not the file.
 	optional int32 position = 2;
 	// 21 bytes long.
 	optional bytes snippet = 3;
@@ -26,3 +28,26 @@ message Clone {
 	optional int32 this_length = 5;
 	optional int32 that_length = 6;
 }
+
+message CloneGroup {
+	// A clone group really has several (similar!) strings representing them.
+	// This is one of them
+	optional string text = 1;
+	repeated Occurrence occurrences = 2;
+}
+
+message Occurrence {
+	// 20 byte hash of the file
+	optional bytes file = 1;
+	// Path of the file.
+	optional string file_name = 2;
+	// 20 byte hash of the function.
+	optional bytes function = 3;
+	// Relative to the function.
+	// Not the file.
+	optional position = 3;
+	// The position of this occurrence in the file
+	// is at position + function_baseline
+	optional function_baseline = 4;
+}
+
