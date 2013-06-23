@@ -175,6 +175,7 @@
 		<antcall target="makeSnippet2Function" />
 		<antcall target="makeFunction2RoughClones" />
 		<antcall target="makeFunction2FineClones" />
+		<antcall target="function2FineClonesSorter" />
 	</target>
 
 	<target name="executeJar" depends="jar">
