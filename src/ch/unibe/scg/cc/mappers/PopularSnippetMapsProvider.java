@@ -15,6 +15,7 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.PopularSnippetMaps;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.collect.ImmutableMultimap;

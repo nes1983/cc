@@ -33,7 +33,6 @@ public class HBaseModule extends AbstractModule {
 
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
-		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
 
 		bind(new TypeLiteral<LoadingCache<byte[], String>>() {})
 			.annotatedWith(CloneLoaderProvider.CloneLoader.class)

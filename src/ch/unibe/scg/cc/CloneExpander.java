@@ -16,7 +16,6 @@ import javax.inject.Inject;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
-import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
 import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;

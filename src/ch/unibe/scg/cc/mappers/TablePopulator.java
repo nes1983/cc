@@ -36,7 +36,7 @@ public class TablePopulator implements Runnable {
 		throw new UnsupportedOperationException("Use GitTablePopulator - TablePopulator is no longer supported.");
 	}
 
-	public static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
+	static class TablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		@Inject
 		TablePopulatorMapper(@Java Frontend javaFrontend, @Named("versions") HTable versions,
 				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
@@ -109,7 +109,7 @@ public class TablePopulator implements Runnable {
 		}
 	}
 
-	public static class CharsetDetector {
+	static class CharsetDetector {
 		final UniversalDetector detector = new UniversalDetector(null);
 
 		CharsetDetector() {

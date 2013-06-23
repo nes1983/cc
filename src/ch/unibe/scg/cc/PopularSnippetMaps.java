@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.mappers;
+package ch.unibe.scg.cc;
 
 import java.nio.ByteBuffer;
 

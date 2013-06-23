@@ -35,7 +35,7 @@ public class MakeSnippet2Function implements Runnable {
 		this.mrWrapper = mrWrapper;
 	}
 
-	public static class MakeSnippet2FunctionMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
+	static class MakeSnippet2FunctionMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
 		/** receives rows from htable function2snippet */
 		@SuppressWarnings("unchecked")
 		// super class uses unchecked types
@@ -59,7 +59,7 @@ public class MakeSnippet2Function implements Runnable {
 		}
 	}
 
-	public static class MakeSnippet2FunctionReducer extends
+	static class MakeSnippet2FunctionReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final PutFactory putFactory;
 
@@ -133,13 +133,11 @@ public class MakeSnippet2Function implements Runnable {
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
-		} catch (IOException e) {
-			throw new WrappedRuntimeException(e.getCause());
+		} catch (IOException | ClassNotFoundException e) {
+			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e.getCause());
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getCause());
+			// Exit thread.
+			return;
 		}
 	}
-
 }

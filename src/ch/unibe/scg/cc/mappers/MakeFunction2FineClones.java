@@ -66,7 +66,7 @@ public class MakeFunction2FineClones implements Runnable {
 		this.popularSnippets = popularSnippets;
 	}
 
-	public static class MakeFunction2FineClonesMapper extends
+	static class MakeFunction2FineClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		final CloneExpander cloneExpander;
 		final LoadingCache<byte[], String> cloneLoader;
@@ -87,14 +87,13 @@ public class MakeFunction2FineClones implements Runnable {
 			final byte[] function = value.getRow();
 			assert function.length == 20;
 
-			logger.finer("map function " + ByteUtils.bytesToHex(function));
+			context.getCounter(Counters.FUNCTIONS).increment(1);
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
 			Iterable<SnippetMatch> matches = Iterables.transform(columns,
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
-						@Override
-						public SnippetMatch apply(Entry<byte[], byte[]> cell) {
+						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
 							// extract information from cellKey
 							// and reconstruct full SnippetLocations
 							MakeFunction2RoughClones.ColumnKey ck = decode(cell.getKey());
@@ -149,7 +148,7 @@ public class MakeFunction2FineClones implements Runnable {
 		}
 	}
 
-	public static class MakeFunction2FineClonesReducer extends
+	static class MakeFunction2FineClonesReducer extends
 			GuiceReducer<ImmutableBytesWritable, ImmutableBytesWritable, CommonSnippetWritable, NullWritable> {
 		final LoadingCache<byte[], String> functionStringCache;
 		final HTable strings;
@@ -216,6 +215,7 @@ public class MakeFunction2FineClones implements Runnable {
 				logger.severe("ArrayIndexOutOfBoundsException: Tried to access from: " + from + " / to: " + to
 						+ " on functionString: \n\n" + functionString + " " + e);
 				arrayExceptions.increment(1);
+				// TODO: REMOVE THIS MESS!
 			}
 		}
 	}

@@ -5,7 +5,6 @@ import java.util.NavigableMap;
 
 import javax.inject.Inject;
 
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -36,20 +35,20 @@ public class MakeHistogram implements Runnable {
 
 	/**
 	 * INPUT:<br>
-	 * 
+	 *
 	 * <pre>
 	 * FAC1 --> { [F1|2] , [F2|3] , [F3|8] }
 	 * FAC2 --> { [F1|3] , [F3|9] }
 	 * </pre>
-	 * 
+	 *
 	 * OUTPUT:<br>
-	 * 
+	 *
 	 * <pre>
 	 * 3 --> 1
 	 * 2 --> 1
 	 * </pre>
 	 */
-	public static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
+	static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
 		/** receives rows from htable snippet2function */
 		@SuppressWarnings("unchecked")
 		@Override
@@ -61,7 +60,7 @@ public class MakeHistogram implements Runnable {
 		}
 	}
 
-	public static class MakeHistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
+	static class MakeHistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
 		@Override
 		public void reduce(IntWritable columnCount, Iterable<LongWritable> values, Context context) throws IOException,
 				InterruptedException {
@@ -116,5 +115,4 @@ public class MakeHistogram implements Runnable {
 			return;
 		}
 	}
-
 }
