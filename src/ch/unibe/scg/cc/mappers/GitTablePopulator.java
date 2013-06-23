@@ -98,12 +98,10 @@ public class GitTablePopulator implements Runnable {
 			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
 					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
 					IntWritable.class);
-		} catch (IOException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e);
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e);
+			return; // Exit.
 		}
 	}
 
@@ -262,7 +260,10 @@ public class GitTablePopulator implements Runnable {
 		}
 
 		private Version register(String filePath, CodeFile codeFile) {
-			Version version = versionFactory.create(checkNotNull(filePath, "filePath"), checkNotNull(codeFile, "codeFile"));
+			checkNotNull(filePath);
+			checkNotNull(codeFile);
+
+			Version version = versionFactory.create(filePath, codeFile);
 			javaFrontend.register(version);
 			return version;
 		}

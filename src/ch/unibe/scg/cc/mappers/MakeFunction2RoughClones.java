@@ -252,12 +252,10 @@ public class MakeFunction2RoughClones implements Runnable {
 					ImmutableBytesWritable.class);
 
 			function2roughclones.flushCommits();
-		} catch (IOException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e.getCause());
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getCause());
+			return; // Exit
 		}
 	}
 }

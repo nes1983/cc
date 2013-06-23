@@ -267,10 +267,9 @@ public class MakeFunction2FineClones implements Runnable {
 			mrWrapper.truncate(function2fineclones);
 
 			Scan scan = new Scan();
-			scan.setCaching(100); // TODO play with this. (100 is default value)
+			// TODO play with cache size. (100 is default value)
 			scan.setCacheBlocks(false);
-			scan.addFamily(Constants.FAMILY); // Gets all columns from the
-													// specified family.
+			scan.addFamily(Constants.FAMILY); // Gets all columns from the specified family.
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
@@ -296,12 +295,10 @@ public class MakeFunction2FineClones implements Runnable {
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
-		} catch (IOException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e.getCause());
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getCause());
+			return; // Exit.
 		}
 	}
 }

@@ -72,12 +72,10 @@ public class Function2FineClonesSorter implements Runnable {
 					Optional.<String> absent(), Optional.<String> absent(), Optional.<Scan> absent(),
 					IdentityMapper.class.getName(), Optional.of(IdentityReducer.class.getName()),
 					CommonSnippetWritable.class, NullWritable.class);
-		} catch (IOException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
-			throw new WrappedRuntimeException(e.getCause());
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getCause());
+			return; // Exit.
 		}
 	}
 }
