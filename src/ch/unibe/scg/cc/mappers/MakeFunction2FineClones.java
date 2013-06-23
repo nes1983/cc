@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.mappers;
 
-import static ch.unibe.scg.cc.activerecord.Function.FUNCTION_SNIPPET;
 import static ch.unibe.scg.cc.mappers.MakeFunction2RoughClones.ColumnKeyConverter.decode;
 
 import java.io.DataInput;
@@ -10,7 +9,6 @@ import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.Set;
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
 
@@ -19,12 +17,10 @@ import javax.inject.Named;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
-import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Counter;
@@ -47,8 +43,6 @@ import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
-import com.google.common.cache.Cache;
-import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
@@ -158,8 +152,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 	public static class MakeFunction2FineClonesReducer extends
 			GuiceReducer<ImmutableBytesWritable, ImmutableBytesWritable, CommonSnippetWritable, NullWritable> {
-		final static Cache<byte[], String> functionStringCache = CacheBuilder.newBuilder().maximumSize(10000)
-				.concurrencyLevel(1).build();
+		final LoadingCache<byte[], String> functionStringCache;
 		final HTable strings;
 		final StringOfLinesFactory stringOfLinesFactory;
 		// Optional because in MRMain, we have an injector that does not set
@@ -170,9 +163,11 @@ public class MakeFunction2FineClones implements Runnable {
 		Counter arrayExceptions;
 
 		@Inject
-		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory) {
+		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory,
+				@CloneLoader LoadingCache<byte[], String> functionStringCache) {
 			this.strings = strings;
 			this.stringOfLinesFactory = stringOfLinesFactory;
+			this.functionStringCache = functionStringCache;
 		}
 
 		@Override
@@ -204,13 +199,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 			String functionString;
 			try {
-				functionString = functionStringCache.get(functionHashKey.get(), new Callable<String>() {
-					@Override
-					public String call() throws Exception {
-						return Bytes.toString(strings.get(new Get(functionHashKey.get())).getValue(
-								GuiceResource.FAMILY, FUNCTION_SNIPPET));
-					}
-				});
+				functionString = functionStringCache.get(functionHashKey.get());
 			} catch (ExecutionException e) {
 				Throwables.propagateIfPossible(e, IOException.class);
 				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
