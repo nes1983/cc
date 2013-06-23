@@ -29,6 +29,7 @@ import com.google.inject.Module;
 import com.google.inject.name.Names;
 import com.google.inject.util.Modules;
 
+@SuppressWarnings("javadoc")
 public class RegisterClonesBackendTest {
 	final HTableWriteBuffer hTable = mock(HTableWriteBuffer.class);
 	final StringOfLinesFactory stringOfLinesFactory = new StringOfLinesFactory();

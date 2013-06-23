@@ -7,7 +7,8 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 
-public class NormalizerTest {
+@SuppressWarnings("javadoc")
+public final class NormalizerTest {
 	@Test
 	public void testNormalizer() {
 		Normalizer n = new Normalizer(new JavaType1ReplacerFactory().get());
