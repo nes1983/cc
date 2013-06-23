@@ -57,23 +57,22 @@ public final class GitTablePopulatorTest {
 				i.getInstance(CharsetDetector.class));
 		mapper.processedFilesCounter = mock(Counter.class);
 
-		ZipInputStream packFile = new ZipInputStream(GitTablePopulatorTest.class.getResourceAsStream(TESTREPO));
-		for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
-			if (entry.getName().endsWith(".pack")) {
-				break;
+		try (ZipInputStream packFile = new ZipInputStream(GitTablePopulatorTest.class.getResourceAsStream(TESTREPO));
+				ZipInputStream packedRefs = new ZipInputStream(
+						GitTablePopulatorTest.class.getResourceAsStream(TESTREPO))) {
+			for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
+				if (entry.getName().endsWith(".pack")) {
+					break;
+				}
 			}
-		}
 
-		ZipInputStream packedRefs = new ZipInputStream(GitTablePopulatorTest.class.getResourceAsStream(TESTREPO));
-		for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null; ) {
-			if (entry.getName().endsWith("packed-refs")) {
-				break;
+			for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null;) {
+				if (entry.getName().endsWith("packed-refs")) {
+					break;
+				}
 			}
+
+			mapper.mapRepo(packedRefs, packFile, "Captain Hook");
 		}
-
-		mapper.mapRepo(packedRefs, packFile, "Captain Hook");
-
-		packFile.close();
-		packedRefs.close();
 	}
 }

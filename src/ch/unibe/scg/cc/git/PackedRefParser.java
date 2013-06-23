@@ -25,20 +25,20 @@ public class PackedRefParser {
 
 	private List<PackedRef> parse(String content) {
 		List<PackedRef> list = new ArrayList<PackedRef>();
-		Scanner s = new Scanner(content);
-		while (s.hasNextLine()) {
-			String line = s.nextLine();
-			Matcher m = pattern.matcher(line);
-			if (m.matches()) {
-				String sha = m.group(1);
-				assert sha.length() == 40;
-				ObjectId key = ObjectId.fromString(sha);
-				String name = m.group(2);
-				PackedRef pr = new PackedRef(key, name);
-				list.add(pr);
+		try (Scanner s = new Scanner(content)) {
+			while (s.hasNextLine()) {
+				String line = s.nextLine();
+				Matcher m = pattern.matcher(line);
+				if (m.matches()) {
+					String sha = m.group(1);
+					assert sha.length() == 40;
+					ObjectId key = ObjectId.fromString(sha);
+					String name = m.group(2);
+					PackedRef pr = new PackedRef(key, name);
+					list.add(pr);
+				}
 			}
 		}
-		s.close();
 		return list;
 	}
 }

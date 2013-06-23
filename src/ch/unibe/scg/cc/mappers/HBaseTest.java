@@ -40,76 +40,76 @@ public class HBaseTest {
 
 	@Before
 	public void createTable() throws IOException {
-		HBaseAdmin admin = new HBaseAdmin(conf);
-		HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
-		HColumnDescriptor family = new HColumnDescriptor(GuiceResource.FAMILY);
-		td.addFamily(family);
-		if (admin.isTableAvailable(TEST_TABLE_NAME)) {
-			if (admin.isTableEnabled(TEST_TABLE_NAME)) {
-				admin.disableTable(TEST_TABLE_NAME);
+		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
+			HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
+			HColumnDescriptor family = new HColumnDescriptor(GuiceResource.FAMILY);
+			td.addFamily(family);
+			if (admin.isTableAvailable(TEST_TABLE_NAME)) {
+				if (admin.isTableEnabled(TEST_TABLE_NAME)) {
+					admin.disableTable(TEST_TABLE_NAME);
+				}
+				admin.deleteTable(TEST_TABLE_NAME);
 			}
-			admin.deleteTable(TEST_TABLE_NAME);
+			admin.createTable(td);
 		}
-		admin.createTable(td);
-		admin.close();
 	}
 
 	@Test
 	public void checkGetReturn() throws IOException {
-		HTable testTable = new HTable(conf, TEST_TABLE_NAME);
-		byte[] key = new byte[] { 123 };
-		Get get = new Get(key);
-		assertTrue(testTable.get(get).isEmpty());
-		Put put = new Put(key);
-		put.add(GuiceResource.FAMILY, key, 0l, key);
-		testTable.put(put);
-		testTable.flushCommits();
-		assertFalse(testTable.get(get).isEmpty());
-		testTable.close();
+		try (HTable testTable = new HTable(conf, TEST_TABLE_NAME)) {
+			byte[] key = new byte[] { 123 };
+			Get get = new Get(key);
+			assertTrue(testTable.get(get).isEmpty());
+			Put put = new Put(key);
+			put.add(GuiceResource.FAMILY, key, 0l, key);
+			testTable.put(put);
+			testTable.flushCommits();
+			assertFalse(testTable.get(get).isEmpty());
+		}
 	}
 
 	@Test
 	public void checkTimes() throws IOException {
-		HTable testTable = new HTable(conf, TEST_TABLE_NAME);
-		// settings adapted from HTableProvider
-		testTable.setAutoFlush(false);
-		testTable.setWriteBufferSize(1024 * 1024 * 12);
-		testTable.getTableDescriptor().setDeferredLogFlush(true);
+		try (HTable testTable = new HTable(conf, TEST_TABLE_NAME)) {
+			// settings adapted from HTableProvider
+			testTable.setAutoFlush(false);
+			testTable.setWriteBufferSize(1024 * 1024 * 12);
+			testTable.getTableDescriptor().setDeferredLogFlush(true);
 
-		final byte[] key = new byte[] { 123 };
-		final int rounds = 500;
-		final long time2Read, time2Write;
+			final byte[] key = new byte[] { 123 };
+			final int rounds = 500;
+			final long time2Read, time2Write;
 
-		Stopwatch stopwatch = new Stopwatch().start();
-		for (int i = 0; i < rounds; i++) {
-			Put put = new Put(key);
-			put.setWriteToWAL(false);
-			put.add(GuiceResource.FAMILY, key, 0l, key);
-			testTable.put(put);
-		}
-		testTable.flushCommits();
-		stopwatch.stop();
-		time2Write = stopwatch.elapsed(TimeUnit.MILLISECONDS);
-
-		// not using caching on purpose, simulates random read on disk
-		stopwatch.reset().start();
-		for (int i = 0; i < rounds; i++) {
-			Get get = new Get(key);
-			if (testTable.get(get).isEmpty()) {
-				Assert.fail("Key should exist here!");
+			Stopwatch stopwatch = new Stopwatch().start();
+			for (int i = 0; i < rounds; i++) {
+				Put put = new Put(key);
+				put.setWriteToWAL(false);
+				put.add(GuiceResource.FAMILY, key, 0l, key);
+				testTable.put(put);
 			}
+			testTable.flushCommits();
+			stopwatch.stop();
+			time2Write = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+
+			// not using caching on purpose, simulates random read on disk
+			stopwatch.reset().start();
+			for (int i = 0; i < rounds; i++) {
+				Get get = new Get(key);
+				if (testTable.get(get).isEmpty()) {
+					Assert.fail("Key should exist here!");
+				}
+			}
+			stopwatch.stop();
+			time2Read = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+			assertTrue(time2Write < time2Read);
 		}
-		stopwatch.stop();
-		time2Read = stopwatch.elapsed(TimeUnit.MILLISECONDS);
-		testTable.close();
-		assertTrue(time2Write < time2Read);
 	}
 
 	@After
 	public void deleteTable() throws IOException {
-		HBaseAdmin admin = new HBaseAdmin(conf);
-		admin.disableTable(TEST_TABLE_NAME);
-		admin.deleteTable(TEST_TABLE_NAME);
-		admin.close();
+		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
+			admin.disableTable(TEST_TABLE_NAME);
+			admin.deleteTable(TEST_TABLE_NAME);
+		}
 	}
 }

@@ -38,19 +38,14 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 				// TODO play with caching. (100 is the default value)
 				scan.setCacheBlocks(false);
 				scan.addFamily(GuiceResource.FAMILY);
-				ResultScanner rs;
+
 
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
 						.builder();
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
 						.builder();
 
-				try {
-					rs = popularSnippets.getScanner(scan);
-				} catch (IOException e) {
-					throw new WrappedRuntimeException("Problem with popularSnippets occured: ", e);
-				}
-				try {
+				try (ResultScanner rs = popularSnippets.getScanner(scan)) {
 					for (Result r : rs) {
 						byte[] function = r.getRow();
 						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(GuiceResource.FAMILY);
@@ -67,8 +62,8 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 							snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
 						}
 					}
-				} finally {
-					rs.close();
+				} catch (IOException e) {
+					throw new WrappedRuntimeException("Problem with popularSnippets occured: ", e);
 				}
 
 				popularSnippetMaps = new PopularSnippetMaps(function2PopularSnippets.build(),

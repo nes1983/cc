@@ -8,7 +8,7 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
 /**
  * {@link #write(Put)} provides the ability to write puts to the custom
  * {@link HTableWriteBuffer}.
- * 
+ *
  * @see GuiceReducer
  */
 public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableReducer<KEYIN, VALUEIN, KEYOUT> {
@@ -23,11 +23,12 @@ public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableRed
 		super.setup(context);
 	}
 
-	/** Closes the WriteBuffer when the reduce-phase is finished */
 	@Override
 	protected void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);
-		this.writeBuffer.close();
+		if (writeBuffer != null) {
+			writeBuffer.close();
+		}
 	}
 
 	@Override

@@ -20,7 +20,6 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 		this.writeBuffer = htableWriteBuffer;
 	}
 
-	/** Closes the WriteBuffer when the map-phase is finished */
 	@Override
 	public void cleanup(Context context) throws IOException, InterruptedException {
 		super.cleanup(context);

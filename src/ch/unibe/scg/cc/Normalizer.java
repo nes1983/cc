@@ -7,7 +7,6 @@ import ch.unibe.scg.cc.regex.Replace;
 
 @Singleton
 public class Normalizer implements PhaseFrontend {
-
 	final Replace[] replacers;
 
 	@Inject
@@ -21,5 +20,4 @@ public class Normalizer implements PhaseFrontend {
 			r.replaceAll(fileContents);
 		}
 	}
-
 }

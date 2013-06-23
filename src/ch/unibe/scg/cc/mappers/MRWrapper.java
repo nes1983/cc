@@ -37,13 +37,10 @@ public class MRWrapper {
 	public void truncate(HTable hTable) throws IOException {
 		HTableDescriptor tableDescription = hTable.getTableDescriptor();
 		String tableName = tableDescription.getNameAsString();
-		HBaseAdmin admin = new HBaseAdmin(configurationProvider.get());
-		try {
+		try (HBaseAdmin admin = new HBaseAdmin(configurationProvider.get())) {
 			admin.disableTable(tableName);
 			admin.deleteTable(tableName);
 			admin.createTable(tableDescription);
-		} finally {
-			admin.close();
 		}
 	}
 

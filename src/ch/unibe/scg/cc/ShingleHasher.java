@@ -14,7 +14,6 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
 public class ShingleHasher implements Hasher {
-
 	@Inject
 	MessageDigest md;
 

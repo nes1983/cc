@@ -128,6 +128,8 @@ public class Frontend implements Closeable {
 
 	@Override
 	public void close() throws IOException {
-		backend.close();
+		if (backend != null) {
+			backend.close();
+		}
 	}
 }
