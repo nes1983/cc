@@ -48,6 +48,24 @@ public class HBaseModule extends AbstractModule {
 		});
 	}
 
+	/**
+	 * This is a bit of a contraption to make table injection easy.
+	 * It would have been much easier to leave it at a HTableFactory
+	 * and a HTableWriteBufferFactory.
+	 *
+	 * <p>The advantage of the contraption is that -- from the client perspective,
+	 * it's actually quite nice. You can just do
+	 *
+	 * {@code @Inject @Named("popularSnippets") HTable popularSnippets; }
+	 *
+	 * and that'll work.
+	 *
+	 * <p>Without the contraption, clients needing a popularSnippetsTable would have to choose
+	 * between calling factory methods in their constructors, or all getting very
+	 * similar providers that call just one method. (That's probably what we should have done.)
+	 *
+	 * @author nes
+	 */
 	static abstract class HTableModule extends PrivateModule {
 		private final String named;
 
