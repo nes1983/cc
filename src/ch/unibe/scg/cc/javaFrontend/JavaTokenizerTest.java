@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Tokenizer.SnippetWithBaseline;
+import ch.unibe.scg.cc.SnippetWithBaseline;
 import dk.brics.automaton.Automaton;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;

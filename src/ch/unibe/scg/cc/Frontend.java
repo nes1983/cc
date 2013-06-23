@@ -6,7 +6,6 @@ import java.util.Arrays;
 
 import javax.inject.Inject;
 
-import ch.unibe.scg.cc.Tokenizer.SnippetWithBaseline;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;

@@ -3,6 +3,7 @@ package ch.unibe.scg.cc.javaFrontend;
 import java.util.Collection;
 import java.util.regex.Pattern;
 
+import ch.unibe.scg.cc.SnippetWithBaseline;
 import ch.unibe.scg.cc.Tokenizer;
 
 import com.google.common.collect.Lists;
@@ -25,11 +26,11 @@ public class JavaTokenizer implements Tokenizer {
 	}
 
 	@Override
-	public Iterable<Tokenizer.SnippetWithBaseline> tokenize(String file) {
+	public Iterable<SnippetWithBaseline> tokenize(String file) {
 		int currentLineNumber = 0;
 		int lastStart = 0;
 
-		Collection<Tokenizer.SnippetWithBaseline> ret = Lists.newArrayList();
+		Collection<SnippetWithBaseline> ret = Lists.newArrayList();
 		AutomatonMatcher m = splitter.newMatcher(file);
 
 		while (m.find()) {
@@ -49,7 +50,7 @@ public class JavaTokenizer implements Tokenizer {
 			String currentFunctionString = file.substring(lastStart, start);
 			// don't save first match (package & import statements)
 			if (currentLineNumber > 0) {
-				ret.add(new Tokenizer.SnippetWithBaseline(currentLineNumber, currentFunctionString));
+				ret.add(new SnippetWithBaseline(currentLineNumber, currentFunctionString));
 			}
 
 			lastStart = start;
