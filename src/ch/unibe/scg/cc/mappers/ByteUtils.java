@@ -5,14 +5,9 @@ public class ByteUtils {
 	public static final byte[] EMPTY_SHA1_KEY = new byte[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 	/**
-	 * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of
-	 * same length.
+	 * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of same length.
 	 *
-	 * @param x1
-	 *            the first array
-	 * @param x2
-	 *            the second array
-	 * @return x1 XOR x2
+	 * @return {@code x1} XOR {@code x2}
 	 */
 	public static byte[] xor(byte[] x1, byte[] x2) {
 		assert x1.length == x2.length;
