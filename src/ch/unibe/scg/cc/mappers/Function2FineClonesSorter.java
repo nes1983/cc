@@ -75,6 +75,7 @@ public class Function2FineClonesSorter implements Runnable {
 		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			return; // Exit.
 		}
 	}

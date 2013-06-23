@@ -106,13 +106,11 @@ public class MakeHistogram implements Runnable {
 					Optional.of("snippet2function"), Optional.<String> absent(), Optional.of(scan),
 					MakeHistogramMapper.class.getName(), Optional.of(MakeHistogramReducer.class.getName()),
 					IntWritable.class, LongWritable.class);
-		} catch (IOException e) {
+		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e);
-		} catch (ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getMessage(), e);
 		} catch (InterruptedException e) {
-			// exit thread
-			return;
+			Thread.currentThread().interrupt();
+			return; // Exit.
 		}
 	}
 }

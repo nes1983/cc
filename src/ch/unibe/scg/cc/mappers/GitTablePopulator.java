@@ -101,6 +101,7 @@ public class GitTablePopulator implements Runnable {
 		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			return; // Exit.
 		}
 	}

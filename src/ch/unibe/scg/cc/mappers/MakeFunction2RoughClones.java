@@ -255,6 +255,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			return; // Exit
 		}
 	}

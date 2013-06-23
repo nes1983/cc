@@ -136,8 +136,8 @@ public class MakeSnippet2Function implements Runnable {
 		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
-			// Exit thread.
-			return;
+			Thread.currentThread().interrupt();
+			return; // Exit.
 		}
 	}
 }
