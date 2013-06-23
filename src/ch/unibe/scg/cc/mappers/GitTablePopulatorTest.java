@@ -13,15 +13,15 @@ import org.apache.hadoop.mapreduce.Counter;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import ch.unibe.scg.cc.CCModule;
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.StandardHasher;
 import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
+import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.mappers.GitTablePopulator.GitTablePopulatorMapper;
 import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
-import ch.unibe.scg.cc.modules.CCModule;
-import ch.unibe.scg.cc.modules.JavaModule;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

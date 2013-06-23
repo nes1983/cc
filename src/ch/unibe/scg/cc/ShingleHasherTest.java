@@ -12,8 +12,7 @@ import org.junit.runner.RunWith;
 
 import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
-import ch.unibe.scg.cc.modules.CCModule;
-import ch.unibe.scg.cc.modules.JavaModule;
+import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.inject.Guice;
 

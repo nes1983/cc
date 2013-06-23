@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.modules;
+package ch.unibe.scg.cc.javaFrontend;
 
 import javax.inject.Singleton;
 
@@ -10,8 +10,6 @@ import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.Type1;
 import ch.unibe.scg.cc.Type2;
 import ch.unibe.scg.cc.Type2ReplacerFactory;
-import ch.unibe.scg.cc.javaFrontend.JavaTokenizer;
-import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.regex.Replace;
 
 import com.google.inject.AbstractModule;

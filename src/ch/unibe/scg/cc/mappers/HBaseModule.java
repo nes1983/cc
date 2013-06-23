@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.modules;
+package ch.unibe.scg.cc.mappers;
 
 import javax.inject.Singleton;
 
@@ -6,13 +6,12 @@ import org.apache.hadoop.hbase.client.HTable;
 
 import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.activerecord.HTableWriteBufferProvider;
-import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
-import ch.unibe.scg.cc.mappers.PopularSnippetMaps;
-import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
+import com.google.common.cache.LoadingCache;
 import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
+import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.name.Names;
 
@@ -36,6 +35,11 @@ public class HBaseModule extends AbstractModule {
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
 		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
+
+		bind(new TypeLiteral<LoadingCache<byte[], String>>() {})
+			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
+			.toProvider(CloneLoaderProvider.class)
+			.in(Singleton.class);
 	}
 
 	private void installHTable(final String tableName) {

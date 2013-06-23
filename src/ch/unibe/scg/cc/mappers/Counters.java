@@ -1,14 +1,15 @@
-package ch.unibe.scg.cc;
+package ch.unibe.scg.cc.mappers;
 
-import ch.unibe.scg.cc.mappers.GuiceResource;
+import ch.unibe.scg.cc.CannotBeHashedException;
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.MakeFunction2FineClonesReducer;
+
 
 /**
  * Every Hadoop counter is named by an enum. These are ours. See {@link org.apache.hadoop.mapreduce.Counters}.
  * The Counters' string values are stored in {@link GuiceResource} to satisfy
  * Guice seeing a constant expression.
  */
-public enum Counters {
+enum Counters {
 	/** Number of times a {@link CannotBeHashedException} was thrown. */
 	CANNOT_BE_HASHED,
 	/** Number of times the hashing operation was successful. */

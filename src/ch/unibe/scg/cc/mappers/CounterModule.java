@@ -1,16 +1,13 @@
-package ch.unibe.scg.cc.modules;
+package ch.unibe.scg.cc.mappers;
 
 import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
-
-import ch.unibe.scg.cc.Counters;
-import ch.unibe.scg.cc.mappers.GuiceResource;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 
 /** CounterModule binds the counters to the M/R context. */
-public class CounterModule extends AbstractModule {
+class CounterModule extends AbstractModule {
 	final TaskAttemptContext context;
 
 	public CounterModule(TaskAttemptContext context) {

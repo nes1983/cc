@@ -21,7 +21,6 @@ import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.mappers.GuiceResource;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
-import ch.unibe.scg.cc.modules.CCModule;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
