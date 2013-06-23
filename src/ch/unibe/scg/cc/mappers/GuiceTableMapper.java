@@ -12,11 +12,10 @@ public abstract class GuiceTableMapper<KEYOUT, VALUEOUT> extends
 
 	private HTableWriteBuffer writeBuffer;
 
-	public GuiceTableMapper() {
+	GuiceTableMapper() {
 	}
 
-	public GuiceTableMapper(HTableWriteBuffer htableWriteBuffer) {
-		this();
+	protected GuiceTableMapper(HTableWriteBuffer htableWriteBuffer) {
 		this.writeBuffer = htableWriteBuffer;
 	}
 

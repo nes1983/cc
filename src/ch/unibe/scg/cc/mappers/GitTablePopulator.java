@@ -54,7 +54,6 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
-import com.google.common.io.Closer;
 import com.google.common.io.Files;
 import com.google.inject.Inject;
 
@@ -123,11 +122,8 @@ public class GitTablePopulator implements Runnable {
 
 		Collection<Path> packFilePaths = Lists.newArrayList();
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
-				Charsets.UTF_8));
-		Closer closer = Closer.create();
-		closer.register(br);
-		try {
+		try(BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
+				Charsets.UTF_8))) {
 			for (String line; (line = br.readLine()) != null;) {
 				if (line.equals("")) {
 					continue; // TODO: Delete this guard as soon as a sane HAR is uploaded.
@@ -147,15 +143,11 @@ public class GitTablePopulator implements Runnable {
 				Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()));
 				packFilePaths.add(packPath);
 			}
-		} catch (Throwable t) {
-			closer.rethrow(t);
-		} finally {
-			closer.close();
 		}
 		return Joiner.on(",").join(packFilePaths);
 	}
 
-	public static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
+	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final int MAX_TAGS_TO_PARSE = 15;
 
 		// Optional because in MRMain, we have an injector that does not set
@@ -282,7 +274,9 @@ public class GitTablePopulator implements Runnable {
 		@Override
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
-			javaFrontend.close();
+			if (javaFrontend != null) {
+				javaFrontend.close();
+			}
 		}
 	}
 }

@@ -14,7 +14,7 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
 public abstract class GuiceTableReducer<KEYIN, VALUEIN, KEYOUT> extends TableReducer<KEYIN, VALUEIN, KEYOUT> {
 	final HTableWriteBuffer writeBuffer;
 
-	public GuiceTableReducer(HTableWriteBuffer htableWriteBuffer) {
+	protected GuiceTableReducer(HTableWriteBuffer htableWriteBuffer) {
 		this.writeBuffer = htableWriteBuffer;
 	}
 

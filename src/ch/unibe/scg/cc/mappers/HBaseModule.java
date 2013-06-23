@@ -5,7 +5,6 @@ import javax.inject.Singleton;
 import org.apache.hadoop.hbase.client.HTable;
 
 import ch.unibe.scg.cc.activerecord.HTableProvider;
-import ch.unibe.scg.cc.activerecord.HTableWriteBufferProvider;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 
 import com.google.common.cache.LoadingCache;
@@ -61,7 +60,8 @@ public class HBaseModule extends AbstractModule {
 		@Override
 		protected void configure() {
 			bind(HTable.class).annotatedWith(Names.named(named)).toProvider(HTableProvider.class).in(Singleton.class);
-			bind(HTableWriteBuffer.class).annotatedWith(Names.named(named)).toProvider(HTableWriteBufferProvider.class);
+			bind(HTableWriteBuffer.class).annotatedWith(Names.named(named)).toProvider(
+					HTableWriteBuffer.HTableWriteBufferProvider.class);
 
 			expose(HTable.class).annotatedWith(Names.named(named));
 			expose(HTableWriteBuffer.class).annotatedWith(Names.named(named));

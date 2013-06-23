@@ -32,14 +32,14 @@ import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
- * 
+ *
  * <pre>
  * FAC1 --> { [FUN1|2] , [FUN2|3] , [FUN3|8] }
  * FAC2 --> { [FUN1|3] , [FUN3|9] }
  * </pre>
- * 
+ *
  * OUTPUT:<br>
- * 
+ *
  * <pre>
  * FUN1 --> { [FUN2,2|FAC1,3], [FUN3,2|FAC1,8], [FUN3,3|FAC2,9] }
  * FUN2 --> { [FUN1,3|FAC1,2], [FUN3,3|FAC1,8] }
@@ -60,13 +60,13 @@ public class MakeFunction2RoughClones implements Runnable {
 		this.mrWrapper = mrWrapper;
 	}
 
-	public static class MakeFunction2RoughClonesMapper extends
+	static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
 		final PutFactory putFactory;
 
 		@Inject
-		public MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets,
+		MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets,
 				PutFactory putFactory) {
 			super(popularSnippets);
 			this.putFactory = putFactory;
@@ -145,7 +145,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		}
 	}
 
-	public static class MakeFunction2RoughClonesReducer extends
+	static class MakeFunction2RoughClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final PutFactory putFactory;
 
@@ -260,5 +260,4 @@ public class MakeFunction2RoughClones implements Runnable {
 			throw new WrappedRuntimeException(e.getCause());
 		}
 	}
-
 }

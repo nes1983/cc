@@ -29,7 +29,7 @@ import com.google.inject.Injector;
 
 @SuppressWarnings("javadoc")
 @Ignore // Modifies the database.
-public class HBaseTest {
+public final class HBaseTest {
 	private static final String TEST_TABLE_NAME = "hbasetesttable";
 	private final Configuration conf;
 

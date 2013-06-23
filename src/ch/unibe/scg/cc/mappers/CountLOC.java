@@ -59,19 +59,16 @@ public class CountLOC implements Runnable {
 		}
 	}
 
-	private static int countLines(String str) {
+	private static int countLines(String str) throws IOException {
 		LineNumberReader lnr = new LineNumberReader(new StringReader(checkNotNull(str)));
-		try {
-			lnr.skip(Long.MAX_VALUE);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		lnr.skip(Long.MAX_VALUE);
+
 		// getLineNumber() returns the number of line terminators, therefore we
 		// have to add one to get the correct number of lines.
 		return lnr.getLineNumber() + 1;
 	}
 
-	public static class CountLOCMapper extends GuiceTableMapper<NullWritable, NullWritable> {
+	static class CountLOCMapper extends GuiceTableMapper<NullWritable, NullWritable> {
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
 		// available.

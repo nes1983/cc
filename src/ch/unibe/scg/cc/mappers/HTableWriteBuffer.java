@@ -6,11 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.HTableUtil;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Row;
+
+import ch.unibe.scg.cc.activerecord.HTableProvider;
 
 import com.google.inject.assistedinject.Assisted;
 
@@ -38,6 +41,21 @@ public class HTableWriteBuffer implements Closeable {
 			puts.clear();
 		}
 		assert invariant();
+	}
+
+	/** HTableWriteBuffer can be produced both by injection and by factory */
+	// TODO: Why are there two ways?! There should be just one!
+	static class HTableWriteBufferProvider implements Provider<HTableWriteBuffer> {
+		@Inject
+		HTableProvider htableProvider;
+
+		@Inject
+		BufferFactory bufferFactory;
+
+		@Override
+		public HTableWriteBuffer get() {
+			return bufferFactory.create(htableProvider.get());
+		}
 	}
 
 	private void writeRemainingPuts() throws IOException {
