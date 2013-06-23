@@ -76,7 +76,7 @@ public class TablePopulator implements Runnable {
 
 			CodeFile codeFile = register(content);
 			Version version = register(filePath, codeFile);
-			register(projectName, version, 1);
+			register(projectName, version);
 		}
 
 		private CodeFile register(String content) throws IOException {
@@ -94,7 +94,7 @@ public class TablePopulator implements Runnable {
 			return version;
 		}
 
-		private void register(String projectName, Version version, int versionNumber) throws IOException {
+		private void register(String projectName, Version version) throws IOException {
 			// TODO deal with versionNumber
 			Project proj = projectFactory.create(projectName, version, "1");
 			javaFrontend.register(proj);
