@@ -30,6 +30,7 @@ public class Project extends Column implements IColumn {
 		this.putFactory = putFactory;
 	}
 
+	@Override
 	public void save(Put put) throws IOException {
 		put.add(FAMILY_NAME, version.getHash(), 0l, Bytes.toBytes(tag));
 

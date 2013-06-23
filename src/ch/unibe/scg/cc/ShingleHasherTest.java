@@ -7,6 +7,7 @@ import static org.junit.Assert.assertThat;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.hamcrest.Matcher;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -14,22 +15,23 @@ import ch.unibe.jexample.Given;
 import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
+import com.google.common.collect.Iterables;
 import com.google.inject.Guice;
 
 @SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class ShingleHasherTest {
 
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings({ "rawtypes", "unchecked" }) // Technically, collection and list aren't comparable.
 	@Test
 	public ShingleHasher test() throws CannotBeHashedException {
 		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);
 
-		String[] shingles = ss.shingles("one two three four five six seven eight nine");
-		assertThat(shingles, is(new String[] { "one two three four", "five six seven eight", "two three four five",
-				"six seven eight nine", "three four five six", "four five six seven" }));
+		Collection<String> shingles = ss.shingles("one two three four five six seven eight nine");
+		assertThat(shingles, (Matcher) is(Arrays.asList("one two three four", "five six seven eight", "two three four five",
+				"six seven eight nine", "three four five six", "four five six seven")));
 
-		assertThat(((Collection) ss.hashedShingles(shingles)).size(), is(6));
+		assertThat(Iterables.size(ss.hashedShingles(shingles)), is(6));
 
 		return ss;
 	}

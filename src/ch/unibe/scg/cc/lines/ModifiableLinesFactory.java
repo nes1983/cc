@@ -1,7 +1,8 @@
 package ch.unibe.scg.cc.lines;
 
-import java.util.ArrayList;
 import java.util.List;
+
+import com.google.common.collect.Lists;
 
 public class ModifiableLinesFactory {
 	ModifiableLines make(StringBuilder stringBuilder, char separator) {
@@ -14,7 +15,7 @@ public class ModifiableLinesFactory {
 
 	ModifiableLines makeSanitized(StringBuilder stringBuilder, char separator) {
 		String string = stringBuilder.toString();
-		List<LineBreak> lineBreaks = new ArrayList<LineBreak>();
+		List<LineBreak> lineBreaks = Lists.newArrayList();
 		// int count = JavaTokenizer.countOccurrences(string, separator);
 		// int[] separators = new int[count + 1];
 		lineBreaks.add(new LineBreak(0, 1));

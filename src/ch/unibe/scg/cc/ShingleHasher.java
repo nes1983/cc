@@ -2,12 +2,14 @@ package ch.unibe.scg.cc;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedHashSet;
 
 import javax.inject.Inject;
 
 import com.google.common.base.Preconditions;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
@@ -29,13 +31,13 @@ public class ShingleHasher implements Hasher {
 
 	final String[] stringArrayType = new String[] {};
 
-	String[] shingles(String doc) throws CannotBeHashedException {
-		ArrayList<String> shingles = new ArrayList<String>();
+	Collection<String> shingles(String doc) throws CannotBeHashedException {
+		Collection<String> ret = Lists.newArrayList();
 		int start = 0;
 		for (int i = 0; i < SHINGLE_LENGTH; i++) {
 			AutomatonMatcher matcher = shingleRegex.newMatcher(doc, start, doc.length());
 			while (matcher.find()) {
-				shingles.add(matcher.group());
+				ret.add(matcher.group());
 			}
 			start = doc.indexOf(' ', start + 1);
 			if (start == -1) {
@@ -43,12 +45,12 @@ public class ShingleHasher implements Hasher {
 			}
 		}
 
-		return shingles.toArray(stringArrayType);
+		return ret;
 	}
 
-	Iterable<ByteBuffer> hashedShingles(String[] shingles) {
+	Iterable<ByteBuffer> hashedShingles(Collection<String> shingles) {
 		// LinkedHashSet maintains order, but deletes duplicates.
-		LinkedHashSet<ByteBuffer> hashed = new LinkedHashSet<ByteBuffer>(shingles.length);
+		LinkedHashSet<ByteBuffer> hashed = Sets.newLinkedHashSetWithExpectedSize(shingles.size());
 		for (String shingle : shingles) {
 			hashed.add(ByteBuffer.wrap(md.digest(shingle.getBytes())));
 		}

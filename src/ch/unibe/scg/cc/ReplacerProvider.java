@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -11,6 +10,7 @@ import javax.inject.Singleton;
 
 import ch.unibe.scg.cc.regex.Replace;
 
+import com.google.common.collect.Lists;
 import com.google.inject.Provider;
 
 @Singleton
@@ -21,7 +21,7 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 
 	@Override
 	public Replace[] get() {
-		List<Replace> ret = new ArrayList<Replace>();
+		List<Replace> ret = Lists.newArrayList();
 		Method[] methods = this.getClass().getMethods();
 		Arrays.sort(methods, methodComparator);
 		assert methods.length > 0;

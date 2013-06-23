@@ -1,7 +1,6 @@
 package ch.unibe.scg.cc.activerecord;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -10,6 +9,7 @@ import org.apache.hadoop.hbase.client.Put;
 
 import ch.unibe.scg.cc.StandardHasher;
 
+import com.google.common.collect.Lists;
 import com.google.inject.assistedinject.Assisted;
 
 public class CodeFile extends Column implements IColumn {
@@ -20,7 +20,7 @@ public class CodeFile extends Column implements IColumn {
 
 	@Inject
 	public CodeFile(StandardHasher standardHasher, @Assisted String fileContents) {
-		functions = new ArrayList<Function>();
+		functions = Lists.newArrayList();
 		this.fileContents = fileContents;
 		this.fileContentHash = standardHasher.hash(getFileContents());
 	}

@@ -7,8 +7,10 @@ import jregex.MatchResult;
 import jregex.Matcher;
 import jregex.Pattern;
 
+import com.google.common.collect.Lists;
+
 class ReplacementString {
-	final ArrayList<Segment> contents = new ArrayList<Segment>();
+	final ArrayList<Segment> contents = Lists.newArrayList();
 	static final Pattern p = new Pattern("\\$(\\d+)");
 
 	public ReplacementString(String with) {
