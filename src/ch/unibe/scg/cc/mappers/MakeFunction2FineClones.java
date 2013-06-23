@@ -221,15 +221,8 @@ public class MakeFunction2FineClones implements Runnable {
 				return;
 			}
 
-			try {
-				String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
-				context.write(new CommonSnippetWritable(commonness, sol), NullWritable.get());
-			} catch (ArrayIndexOutOfBoundsException e) {
-				logger.severe("ArrayIndexOutOfBoundsException: Tried to access from: " + from + " / to: " + to
-						+ " on functionString: \n\n" + functionString + " " + e);
-				arrayExceptions.increment(1);
-				// TODO: REMOVE THIS MESS!
-			}
+			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
+			context.write(new CommonSnippetWritable(commonness, sol), NullWritable.get());
 		}
 	}
 
