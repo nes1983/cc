@@ -6,46 +6,54 @@ import static org.junit.Assert.assertThat;
 
 import java.util.Collection;
 
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.collections.TransformerUtils;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import ch.unibe.jexample.Given;
-import ch.unibe.jexample.JExample;
+import com.google.common.collect.Lists;
 
 @SuppressWarnings("javadoc")
-@RunWith(JExample.class)
-public class ModifiableLinesTest {
+public final class ModifiableLinesTest {
+	ModifiableLinesFactory f;
+	StringBuilder sb;
+	private ModifiableLines r;
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	@Test
-	public ModifiableLines testFactory() {
-		ModifiableLinesFactory f = new ModifiableLinesFactory();
-		StringBuilder sb = new StringBuilder("a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n");
-		ModifiableLines r = f.make(sb);
-
-		Collection lineBreakPositions = CollectionUtils.collect(r.lineBreaks,
-				TransformerUtils.invokerTransformer("getPosition"));
-		assertThat(lineBreakPositions, contains(0, 1, 3, 5, 7, 9, 11));
-		Collection lineBreakWeights = CollectionUtils.collect(r.lineBreaks,
-				TransformerUtils.invokerTransformer("getWeight"));
-		assertThat(lineBreakWeights, contains(1, 1, 1, 1, 1, 1, 1));
-		return r;
+	@Before
+	public void setUp() {
+		f = new ModifiableLinesFactory();
+		sb = new StringBuilder("a\n" + "b\n" + "c\n" + "d\n" + "e\n" + "f\n");
+		r = f.make(sb);
 	}
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	@Given("testFactory")
-	public ModifiableLines replace(ModifiableLines lines) {
+	@Test
+	public void testFactory() {
+		Collection<Integer> lineBreakPositions = Lists.newArrayList();
+		for (LineBreak br : r.lineBreaks) {
+			lineBreakPositions.add(br.getPosition());
+		}
 
+		Collection<Integer> weights = Lists.newArrayList();
+		for (LineBreak br : r.lineBreaks) {
+			lineBreakPositions.add(br.getWeight());
+		}
+
+		assertThat(weights, contains(1, 1, 1, 1, 1, 1, 1));
+	}
+
+	@Test
+	public void replace(ModifiableLines lines) {
 		lines.replace(3, 4, "waa");
 		assertThat(lines.toString(), is("a\nbwaac\nd\ne\nf\n"));
-		Collection lineBreakPositions = CollectionUtils.collect(lines.lineBreaks,
-				TransformerUtils.invokerTransformer("getPosition"));
+
+		Collection<Integer> lineBreakPositions = Lists.newArrayList();
+		for (LineBreak br : lines.lineBreaks) {
+			lineBreakPositions.add(br.getPosition());
+		}
 		assertThat(lineBreakPositions, contains(0, 1, 7, 9, 11, 13));
-		Collection lineBreakWeights = CollectionUtils.collect(lines.lineBreaks,
-				TransformerUtils.invokerTransformer("getWeight"));
-		assertThat(lineBreakWeights, contains(1, 1, 2, 1, 1, 1));
-		return lines;
+
+		Collection<Integer> weights = Lists.newArrayList();
+		for (LineBreak br : lines.lineBreaks) {
+			lineBreakPositions.add(br.getWeight());
+		}
+		assertThat(weights, contains(1, 1, 2, 1, 1, 1));
 	}
 }

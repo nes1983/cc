@@ -16,12 +16,8 @@
 		<pathelement location="libs/aopalliance.jar"/>
 		<pathelement location="libs/automaton.jar"/>
 		<pathelement location="libs/commons-cli-1.2.jar"/>
-		<pathelement location="libs/commons-collections-3.2.1.jar"/>
 		<pathelement location="libs/commons-configuration-1.8.jar"/>
-		<pathelement location="libs/commons-io-2.1.jar"/>
-		<pathelement location="libs/commons-lang3-3.0.1.jar"/>
 		<pathelement location="libs/commons-logging-1.1.1.jar"/>
-		<pathelement location="libs/commons-vfs2-2.0.jar"/>
 		<pathelement location="libs/guava-14.0.1.jar"/>
 		<pathelement location="libs/guice-3.0.jar"/>
 		<pathelement location="libs/guice-assistedinject-3.0.jar"/>
@@ -87,12 +83,8 @@
 			<zipfileset src="libs/aopalliance.jar"/>
 			<zipfileset src="libs/automaton.jar"/>
 			<zipfileset src="libs/commons-cli-1.2.jar"/>
-			<zipfileset src="libs/commons-collections-3.2.1.jar"/>
 			<zipfileset src="libs/commons-configuration-1.8.jar"/>
-			<zipfileset src="libs/commons-io-2.1.jar"/>
-			<zipfileset src="libs/commons-lang3-3.0.1.jar"/>
 			<zipfileset src="libs/commons-logging-1.1.1.jar"/>
-			<zipfileset src="libs/commons-vfs2-2.0.jar"/>
 			<zipfileset src="libs/guava-14.0.1.jar"/>
 			<zipfileset src="libs/guice-3.0.jar"/>
 			<zipfileset src="libs/guice-assistedinject-3.0.jar"/>

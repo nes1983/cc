@@ -5,26 +5,6 @@
 			<attribute name="javadoc_location" value="http://jregex.sourceforge.net/api/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="libs/commons-lang3-3.0.1.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://commons.apache.org/lang/api-release/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="libs/commons-io-2.1.jar" sourcepath="libs/commons-io-2.1-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/commons-io-2.1-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="libs/commons-vfs2-2.0.jar" sourcepath="libs/commons-vfs2-2.0-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/cc/libs/commons-vfs2-2.0-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="libs/commons-collections-3.2.1.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://commons.apache.org/collections/api-release/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="libs/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/commons-configuration-1.8.jar"/>
 	<classpathentry kind="lib" path="libs/juniversalchardet-1.0.3.jar"/>
