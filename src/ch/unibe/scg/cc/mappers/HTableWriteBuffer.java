@@ -2,7 +2,6 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.Closeable;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -14,7 +13,9 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Row;
 
 import ch.unibe.scg.cc.activerecord.HTableProvider;
+import ch.unibe.scg.cc.mappers.HBaseModule.HTableModule;
 
+import com.google.common.collect.Lists;
 import com.google.inject.assistedinject.Assisted;
 
 /**
@@ -30,7 +31,7 @@ public class HTableWriteBuffer implements Closeable {
 	@Inject
 	HTableWriteBuffer(@Assisted HTable htable) {
 		this.htable = htable;
-		this.puts = new ArrayList<Row>(MAX_SIZE);
+		this.puts = Lists.newArrayListWithCapacity(MAX_SIZE);
 	}
 
 	public void write(Put put) throws IOException {
@@ -43,8 +44,10 @@ public class HTableWriteBuffer implements Closeable {
 		assert invariant();
 	}
 
-	/** HTableWriteBuffer can be produced both by injection and by factory */
-	// TODO: Why are there two ways?! There should be just one!
+	/**
+	 * HTableWriteBuffer can be produced both by injection and by factory.
+	 * This is explained in {@link HTableModule}.
+	 */
 	static class HTableWriteBufferProvider implements Provider<HTableWriteBuffer> {
 		@Inject
 		HTableProvider htableProvider;

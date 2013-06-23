@@ -14,8 +14,8 @@ import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.PopularSnippetMaps;
+import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.collect.ImmutableMultimap;
@@ -35,7 +35,6 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 		synchronized (PopularSnippetMaps.class) {
 			if (popularSnippetMaps == null) {
 				Scan scan = new Scan();
-				scan.setCaching(1000);
 				// TODO play with caching. (100 is the default value)
 				scan.setCacheBlocks(false);
 				scan.addFamily(Constants.FAMILY);
