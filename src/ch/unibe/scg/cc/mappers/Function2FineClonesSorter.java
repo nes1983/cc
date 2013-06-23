@@ -2,25 +2,39 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
+import javax.inject.Inject;
+
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.MRJobConfig;
+import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
+import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.CommonSnippetWritable;
 
-/** Mapper and Reducer only used for sorting */
-public class Function2FineClonesSorter {
-	static final Path OUT_DIR = new Path("/tmp/fineclonessorted/");
+import com.google.common.base.Optional;
 
-	public static class IdentityMapper extends
-			Mapper<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
+/** Mapper and Reducer only used for sorting */
+public class Function2FineClonesSorter implements Runnable {
+	static final String OUT_DIR = "/tmp/fineclonessorted/";
+	final MRWrapper hbaseWrapper;
+
+	@Inject
+	Function2FineClonesSorter(MRWrapper hbaseWrapper) {
+		this.hbaseWrapper = hbaseWrapper;
+	}
+
+	static class IdentityMapper extends
+			GuiceMapper<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
 		@Override
 		public void map(CommonSnippetWritable key, NullWritable value, Context context) throws IOException,
 				InterruptedException {
@@ -28,8 +42,8 @@ public class Function2FineClonesSorter {
 		}
 	}
 
-	public static class IdentityReducer extends
-			Reducer<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
+	static class IdentityReducer extends
+			GuiceReducer<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
 		@Override
 		public void reduce(CommonSnippetWritable key, Iterable<NullWritable> values, Context context)
 				throws IOException, InterruptedException {
@@ -39,24 +53,31 @@ public class Function2FineClonesSorter {
 		}
 	}
 
-	public static void main(String[] args) throws Exception {
-		Configuration conf = new Configuration();
+	@Override
+	public void run() {
+		try {
+			FileSystem.get(new Configuration()).delete(new Path(OUT_DIR), true);
 
-		Job job = Job.getInstance(conf, "sort the clones");
+			Configuration config = new Configuration();
+			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
+			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
+			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
+			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
+			config.set(FileInputFormat.INPUT_DIR, "hdfs://haddock/" + MakeFunction2FineClones.OUT_DIR);
+			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
+			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, SequenceFileInputFormat.class, InputFormat.class);
+			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 
-		job.setOutputKeyClass(CommonSnippetWritable.class);
-		job.setOutputValueClass(NullWritable.class);
-
-		job.setMapperClass(IdentityMapper.class);
-		job.setReducerClass(IdentityReducer.class);
-
-		job.setInputFormatClass(SequenceFileInputFormat.class);
-		job.setOutputFormatClass(TextOutputFormat.class);
-
-		FileInputFormat.addInputPaths(job, "hdfs://haddock/" + MakeFunction2FineClones.OUT_DIR);
-		FileOutputFormat.setOutputPath(job, OUT_DIR);
-
-		job.waitForCompletion(true);
+			hbaseWrapper.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
+					Optional.<String> absent(), Optional.<String> absent(), Optional.<Scan> absent(),
+					IdentityMapper.class.getName(), Optional.of(IdentityReducer.class.getName()),
+					CommonSnippetWritable.class, NullWritable.class);
+		} catch (IOException e) {
+			throw new WrappedRuntimeException(e.getCause());
+		} catch (InterruptedException e) {
+			throw new WrappedRuntimeException(e.getCause());
+		} catch (ClassNotFoundException e) {
+			throw new WrappedRuntimeException(e.getCause());
+		}
 	}
-
 }

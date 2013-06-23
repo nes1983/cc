@@ -172,6 +172,12 @@
 		</antcall>
 	</target>
 
+	<target name="function2FineClonesSorter">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.Function2FineClonesSorter" />
+		</antcall>
+	</target>
+
 	<target name="mrPipeline">
 		<antcall target="gitTablePopulate" />
 		<antcall target="makeSnippet2Function" />
