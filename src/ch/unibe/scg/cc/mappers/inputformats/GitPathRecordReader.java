@@ -15,7 +15,7 @@ import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
-public class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
+class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
 	static Logger logger = Logger.getLogger(GitPathRecordReader.class.getName());
 	private static final int BYTE_BUFFER_SIZE = 8192;
 	private FSDataInputStream fsin;

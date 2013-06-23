@@ -2,7 +2,7 @@ package ch.unibe.scg.cc.mappers.inputformats;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.logging.Logger;
 
@@ -18,7 +18,9 @@ import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
-public class GitRecordReader extends RecordReader<Text, BytesWritable> {
+/** Instances are not threadsafe */
+class GitRecordReader extends RecordReader<Text, BytesWritable> {
+	private static final int BUFFER_SIZE = 8192;
 	static Logger logger = Logger.getLogger(GitRecordReader.class.getName());
 	private static final String REGEX_PACKFILE = "(.+)objects/pack/pack-[a-f0-9]{40}\\.pack";
 	private FSDataInputStream fsin;
@@ -36,7 +38,7 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 		Path path = split.getPath();
 		fs = path.getFileSystem(conf);
 
-		packFilePaths = new LinkedList<Path>();
+		packFilePaths = new ArrayDeque<>();
 		logger.finer("yyy start finding pack files " + path);
 		findPackFilePaths(fs, path, packFilePaths);
 
@@ -72,9 +74,9 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 
 		fsin = fs.open(packFilePath);
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		byte[] temp = new byte[8192];
+		byte[] temp = new byte[BUFFER_SIZE];
 		while (true) {
-			int bytesRead = fsin.read(temp, 0, 8192);
+			int bytesRead = fsin.read(temp, 0, BUFFER_SIZE);
 			if (bytesRead > 0) {
 				bos.write(temp, 0, bytesRead);
 			} else {
@@ -89,7 +91,10 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 
 	@Override
 	public float getProgress() throws IOException, InterruptedException {
-		return isFinished ? 1 : 0;
+		if (isFinished) {
+			return 1;
+		}
+		return 0;
 	}
 
 	@Override
@@ -104,9 +109,8 @@ public class GitRecordReader extends RecordReader<Text, BytesWritable> {
 
 	@Override
 	public void close() throws IOException {
-		try {
+		if (fsin != null) {
 			fsin.close();
-		} catch (Exception e) {
 		}
 	}
 }
