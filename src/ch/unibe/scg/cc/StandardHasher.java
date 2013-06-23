@@ -1,24 +1,23 @@
 package ch.unibe.scg.cc;
 
-import java.io.UnsupportedEncodingException;
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.security.MessageDigest;
 
 import javax.inject.Inject;
 
+import com.google.common.base.Charsets;
+
+/** Performs no normalization. Simply computes the cryptographic hash of a string */
 public class StandardHasher implements Hasher {
 	@Inject
 	MessageDigest md;
 
 	@Override
 	public byte[] hash(String document) {
-		byte[] ret;
-		try {
-			assert document != null;
-			ret = md.digest(document.getBytes("UTF-16LE"));
-		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException(e);
-		}
+		checkNotNull(document);
+
 		md.reset();
-		return ret;
+		return md.digest(document.getBytes(Charsets.UTF_16LE));
 	}
 }
