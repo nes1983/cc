@@ -4,9 +4,7 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.Iterator;
 import java.util.Map.Entry;
-import java.util.NavigableMap;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -73,24 +71,20 @@ public class MakeFunction2RoughClones implements Runnable {
 		}
 
 		/** receives rows from htable snippet2function */
-		@SuppressWarnings("unchecked")
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
-				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+				Context context) throws IOException,
 				InterruptedException {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
 
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
-			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
-			Iterator<Entry<byte[], byte[]>> columnIterator = columns.iterator();
+			Set<Entry<byte[], byte[]>> columns = value.getFamilyMap(Constants.FAMILY).entrySet();
 
 			// special handling of popular snippets
-			if (familyMap.size() > POPULAR_SNIPPET_THRESHOLD) {
-				logger.warning("FAMILY MAP SIZE " + familyMap.size());
+			if (columns.size() > POPULAR_SNIPPET_THRESHOLD) {
+				logger.warning("FAMILY MAP SIZE " + columns.size());
 				// fill popularSnippets table
-				while (columnIterator.hasNext()) {
-					Entry<byte[], byte[]> column = columnIterator.next();
+				for (Entry<byte[], byte[]> column : columns) {
 					byte[] function = column.getKey();
 					byte[] location = column.getValue();
 					Put put = putFactory.create(function);
@@ -102,8 +96,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			}
 
 			// cross product of the columns of the snippetHash
-			while (columnIterator.hasNext()) {
-				Entry<byte[], byte[]> columnFixed = columnIterator.next();
+			for (Entry<byte[], byte[]> columnFixed : columns) {
 				byte[] thisFunction = columnFixed.getKey();
 				byte[] thisLocation = columnFixed.getValue();
 				for (Entry<byte[], byte[]> columnVar : columns) {
@@ -159,13 +152,11 @@ public class MakeFunction2RoughClones implements Runnable {
 		@Override
 		public void reduce(ImmutableBytesWritable functionHashKey, Iterable<ImmutableBytesWritable> snippetMatchValues,
 				Context context) throws IOException, InterruptedException {
-			Iterator<ImmutableBytesWritable> snippetMatchIterator = snippetMatchValues.iterator();
-
 			byte[] functionHash = functionHashKey.get();
 			Put put = putFactory.create(functionHash);
 
-			while (snippetMatchIterator.hasNext()) {
-				SnippetMatch snippetMatch = SnippetMatch.parseFrom(snippetMatchIterator.next().get());
+			for (ImmutableBytesWritable snippetMatchValue : snippetMatchValues) {
+				SnippetMatch snippetMatch = SnippetMatch.parseFrom(snippetMatchValue.get());
 				SnippetLocation thisSnippet = snippetMatch.getThisSnippetLocation();
 				SnippetLocation thatSnippet = snippetMatch.getThatSnippetLocation();
 
@@ -209,7 +200,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		final int thisPosition;
 		final int thisLength;
 
-		public ColumnKey(byte[] thatFunction, int thisPosition, int thisLength) {
+		ColumnKey(byte[] thatFunction, int thisPosition, int thisLength) {
 			this.thatFunction = thatFunction;
 			this.thisPosition = thisPosition;
 			this.thisLength = thisLength;
