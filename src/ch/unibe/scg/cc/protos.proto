@@ -45,9 +45,9 @@ message Occurrence {
 	optional bytes function = 3;
 	// Relative to the function.
 	// Not the file.
-	optional position = 3;
+	optional int32 position = 4;
 	// The position of this occurrence in the file
 	// is at position + function_baseline
-	optional function_baseline = 4;
+	optional int32 function_baseline = 5;
 }
 
