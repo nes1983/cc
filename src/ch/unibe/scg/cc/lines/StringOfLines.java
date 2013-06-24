@@ -1,6 +1,6 @@
 package ch.unibe.scg.cc.lines;
 
-
+/** A string with efficient access into individual lines. First line has position 0. */
 public class StringOfLines {
 	final String string;
 	final int[] separators;
@@ -10,6 +10,7 @@ public class StringOfLines {
 		this.separators = separators;
 	}
 
+	/** @return number of lines in the string. Empty string has length 1. */
 	public int getNumberOfLines() {
 		return separators.length - 1;
 	}
