@@ -1,7 +1,6 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.logging.Logger;
@@ -75,16 +74,14 @@ public class MakeSnippet2Function implements Runnable {
 				Iterable<ImmutableBytesWritable> functionHashesPlusLocations, Context context) throws IOException,
 				InterruptedException {
 			byte[] snippet = snippetKey.get();
-			Iterator<ImmutableBytesWritable> i = functionHashesPlusLocations.iterator();
 
 			logger.finer("reduce " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
 
 			Put put = putFactory.create(snippet);
 			int functionCount = 0;
-
-			while (i.hasNext()) {
+			for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
 				functionCount++;
-				ImmutableBytesWritable functionHashPlusLocation = i.next();
+
 				byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
 				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 				byte[] factRelativeLocation = Bytes.tail(functionHashPlusLocationKey, 8);
@@ -94,9 +91,6 @@ public class MakeSnippet2Function implements Runnable {
 
 			// prevent saving non-recurring hashes
 			if (functionCount > 1) {
-				// TODO
-				// check whether context.write(factHashKey, put) or
-				// write(put) is faster
 				logger.finer("save " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
 				context.write(snippetKey, put);
 			}
