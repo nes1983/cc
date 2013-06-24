@@ -45,6 +45,7 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
+import com.google.common.io.BaseEncoding;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -214,7 +215,7 @@ public class MakeFunction2FineClones implements Runnable {
 				if (!clone.getThisFunction().equals(ByteString.copyFrom(functionHashKey.get()))) {
 					throw new AssertionError(
 							"There is a clone in cloneProtobufs that doesn't match the input function "
-									+ ByteUtils.bytesToHex(functionHashKey.get()));
+									+ BaseEncoding.base16().encode(functionHashKey.get()));
 				}
 				from = Math.min(from, clone.getThisFromPosition());
 				to = Math.max(to, clone.getThisFromPosition() + clone.getThisLength());
@@ -231,7 +232,7 @@ public class MakeFunction2FineClones implements Runnable {
 			} catch (ExecutionException e) {
 				Throwables.propagateIfPossible(e.getCause(), IOException.class);
 				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
-						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e.getCause());
+						+ BaseEncoding.base16().encode(functionHashKey.get()) + ".", e.getCause());
 			}
 
 			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);

@@ -47,7 +47,7 @@ public final class GitTablePopulatorTest {
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
 
-		@SuppressWarnings("resource")
+		@SuppressWarnings("resource") // Mocked frontend shouldn't be closed.
 		Frontend javaFrontend = mock(Frontend.class);
 		when(javaFrontend.register(Mockito.any(String.class)))
 				.thenReturn(new CodeFile(i.getInstance(StandardHasher.class), ""));

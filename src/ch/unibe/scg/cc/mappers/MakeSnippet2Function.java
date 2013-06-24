@@ -22,6 +22,7 @@ import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
+import com.google.common.io.BaseEncoding;
 
 public class MakeSnippet2Function implements Runnable {
 	static Logger logger = Logger.getLogger(MakeSnippet2Function.class.getName());
@@ -45,14 +46,16 @@ public class MakeSnippet2Function implements Runnable {
 			byte[] functionHash = functionHashKey.get();
 			assert functionHash.length == 20;
 
-			logger.finer("map " + ByteUtils.bytesToHex(functionHash).toLowerCase().substring(0, 4));
+			logger.finer("map " + BaseEncoding.base16().encode(functionHashKey.get()).substring(0, 4));
 
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Column.FAMILY_NAME);
 
 			for (Entry<byte[], byte[]> column : familyMap.entrySet()) {
 				byte[] snippet = column.getKey();
 				byte[] functionHashPlusLocation = Bytes.add(functionHash, column.getValue());
-				logger.finer("snippet " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6) + " found");
+
+				logger.finer("snippet " + BaseEncoding.base16().encode(snippet).substring(0, 6) + " found");
+
 				context.write(new ImmutableBytesWritable(snippet), new ImmutableBytesWritable(functionHashPlusLocation));
 			}
 		}
@@ -75,7 +78,7 @@ public class MakeSnippet2Function implements Runnable {
 				InterruptedException {
 			byte[] snippet = snippetKey.get();
 
-			logger.finer("reduce " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
+			logger.finer("reduce " + BaseEncoding.base16().encode(snippet).substring(0, 6));
 
 			Put put = putFactory.create(snippet);
 			int functionCount = 0;
@@ -91,7 +94,7 @@ public class MakeSnippet2Function implements Runnable {
 
 			// prevent saving non-recurring hashes
 			if (functionCount > 1) {
-				logger.finer("save " + ByteUtils.bytesToHex(snippet).toLowerCase().substring(0, 6));
+				logger.finer("save " + BaseEncoding.base16().encode(snippet).substring(0, 6));
 				context.write(snippetKey, put);
 			}
 		}

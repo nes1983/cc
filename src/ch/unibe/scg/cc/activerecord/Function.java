@@ -9,7 +9,6 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.CannotBeHashedException;
 import ch.unibe.scg.cc.Hasher;
-import ch.unibe.scg.cc.mappers.ByteUtils;
 
 import com.google.common.collect.Lists;
 import com.google.inject.assistedinject.Assisted;
@@ -52,7 +51,7 @@ public class Function extends Column {
 			try {
 				hash = hasher.hash(normalized.toString());
 			} catch (CannotBeHashedException e) {
-				return ByteUtils.EMPTY_SHA1_KEY;
+				return new byte[20];
 			}
 		}
 		return hash;

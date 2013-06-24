@@ -17,10 +17,10 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.util.Bytes;
 
-
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import com.google.common.io.BaseEncoding;
 import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
 
@@ -38,8 +38,8 @@ public class CloneLoaderProvider implements Provider<LoadingCache<byte[], String
 					public String load(byte[] functionHash) throws IOException {
 						Result result = strings.get(new Get(functionHash));
 						if (result == null) {
-							throw new RuntimeException("String for function " + ByteUtils.bytesToHex(functionHash)
-									+ " not found");
+							throw new RuntimeException("String for function "
+									+ BaseEncoding.base16().encode(functionHash) + " not found");
 						}
 						return Bytes.toString(result.getBytes().get());
 					}

@@ -8,7 +8,6 @@ import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.StandardHasher;
-import ch.unibe.scg.cc.mappers.ByteUtils;
 
 import com.google.inject.assistedinject.Assisted;
 
@@ -27,7 +26,7 @@ public class Version extends Column implements IColumn {
 		this.filePath = filePath;
 		this.hashCodeFile = codeFile.getHash();
 		this.hashFilePath = standardHasher.hash(filePath);
-		this.hash = ByteUtils.xor(this.hashCodeFile, this.hashFilePath);
+		this.hash = xor(this.hashCodeFile, this.hashFilePath);
 		this.putFactory = putFactory;
 	}
 
@@ -43,5 +42,20 @@ public class Version extends Column implements IColumn {
 	@Override
 	public byte[] getHash() {
 		return this.hash;
+	}
+
+	/**
+	 * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of same length.
+	 *
+	 * @return {@code x1} XOR {@code x2}
+	 */
+	static byte[] xor(byte[] x1, byte[] x2) {
+		assert x1.length == x2.length;
+		byte[] out = new byte[x1.length];
+
+		for (int i = x1.length - 1; i >= 0; i--) {
+			out[i] = (byte) (x1[i] ^ x2[i]);
+		}
+		return out;
 	}
 }

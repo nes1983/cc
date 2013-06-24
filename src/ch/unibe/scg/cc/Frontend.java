@@ -14,7 +14,6 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.ByteUtils;
 
 public class Frontend implements Closeable {
 	StandardHasher standardHasher;
@@ -120,7 +119,7 @@ public class Frontend implements Closeable {
 		// type-3
 		Function functionType3 = functionFactory.makeFunction(
 				shingleHasher, functionType2.getBaseLine(),	normalized.toString(), function.getSnippet());
-		assert !Arrays.equals(functionType3.getHash(), ByteUtils.EMPTY_SHA1_KEY);
+		assert !Arrays.equals(functionType3.getHash(), new byte[20]);
 		backend.shingleRegisterFunction(normalizedSOL, functionType3);
 		codeFile.addFunction(functionType3);
 	}

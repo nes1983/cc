@@ -16,10 +16,10 @@ import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
-import ch.unibe.scg.cc.mappers.ByteUtils;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
 import com.google.common.collect.Maps;
+import com.google.common.io.BaseEncoding;
 import com.google.common.io.Closer;
 
 /**
@@ -67,7 +67,7 @@ public class DuplicateSnippetsPerFunctionRegistry implements Backend {
 		final HashMap<String, Integer> snippetHashes = Maps.newHashMap();
 		for (final Snippet snippet : function.getSnippets()) {
 			// Duplicate Hashes detection
-			final String snippetHash = ByteUtils.bytesToHex(snippet.getHash());
+			final String snippetHash = BaseEncoding.base16().encode(snippet.getHash());
 			if (snippetHashes.containsKey(snippetHash)) {
 				final Put put = putFactory.create(function.getHash());
 				final byte typebyte = snippet.getType();
