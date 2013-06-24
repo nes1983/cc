@@ -52,7 +52,7 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 public class MakeFunction2FineClones implements Runnable {
-	public static final String OUT_DIR = "/tmp/fineclones/";
+	static final String OUT_DIR = "/tmp/fineclones/";
 	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class.getName());
 	final HTable function2fineclones;
 	final HTable popularSnippets;
@@ -71,6 +71,7 @@ public class MakeFunction2FineClones implements Runnable {
 		final CloneExpander cloneExpander;
 		final LoadingCache<byte[], String> cloneLoader;
 		final SpamDetector spamDetector;
+		final StringOfLinesFactory stringOfLinesFactory;
 
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
@@ -85,10 +86,12 @@ public class MakeFunction2FineClones implements Runnable {
 
 		@Inject
 		MakeFunction2FineClonesMapper(CloneExpander cloneExpander,
-				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector) {
+				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector,
+				StringOfLinesFactory stringOfLinesFactory) {
 			this.cloneExpander = cloneExpander;
 			this.cloneLoader = cloneLoader;
 			this.spamDetector = spamDetector;
+			this.stringOfLinesFactory = stringOfLinesFactory;
 		}
 
 		/** receives rows from htable function2roughclones */
@@ -144,8 +147,10 @@ public class MakeFunction2FineClones implements Runnable {
 			for (Clone clone : clones) {
 				try {
 					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
-							cloneLoader.get(clone.getThisFunction().toByteArray()),
-							cloneLoader.get(clone.getThatFunction().toByteArray())))) {
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThisFunction().toByteArray())).getLines(
+									clone.getThisFromPosition(), clone.getThisLength()),
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThatFunction().toByteArray())).getLines(
+									clone.getThatFromPosition(), clone.getThatLength())))) {
 						ret.add(clone);
 					}
 				} catch (ExecutionException e) {
