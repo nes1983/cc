@@ -45,7 +45,6 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -65,8 +64,7 @@ public class MakeFunction2FineClones implements Runnable {
 		this.popularSnippets = popularSnippets;
 	}
 
-	static class MakeFunction2FineClonesMapper extends
-			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+	static class Function2FineClones {
 		final CloneExpander cloneExpander;
 		final LoadingCache<byte[], String> cloneLoader;
 		final SpamDetector spamDetector;
@@ -84,13 +82,56 @@ public class MakeFunction2FineClones implements Runnable {
 		Counter clonesPassed;
 
 		@Inject
-		MakeFunction2FineClonesMapper(CloneExpander cloneExpander,
+		Function2FineClones(CloneExpander cloneExpander,
 				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector,
 				StringOfLinesFactory stringOfLinesFactory) {
 			this.cloneExpander = cloneExpander;
 			this.cloneLoader = cloneLoader;
 			this.spamDetector = spamDetector;
 			this.stringOfLinesFactory = stringOfLinesFactory;
+		}
+
+		Iterable<Clone> transform(Iterable<SnippetMatch> matches) throws IOException {
+			 return filter(cloneExpander.expandClones(matches));
+		}
+
+		/**
+		 * Filter clones down to the clones that aren't spam. In case an IOException occurs, abort.
+		 * Otherwise, try on and log error.
+		 */
+		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
+			Collection<Clone> ret = Lists.newArrayList();
+			for (Clone clone : clones) {
+				try {
+					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThisFunction().toByteArray())).getLines(
+									clone.getThisFromPosition(), clone.getThisLength()),
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThatFunction().toByteArray())).getLines(
+									clone.getThatFromPosition(), clone.getThatLength())))) {
+						ret.add(clone);
+					}
+				} catch (ExecutionException e) {
+					Throwables.propagateIfPossible(e.getCause(), IOException.class);
+					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
+				}
+			}
+			if (clonesRejected != null) {
+				clonesRejected.increment(clones.size() - ret.size());
+			}
+			if (clonesPassed != null) {
+				clonesPassed.increment(ret.size());
+			}
+			return ret;
+		}
+	}
+
+	static class MakeFunction2FineClonesMapper extends
+			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+		final Function2FineClones function2FineClones;
+
+		@Inject
+		MakeFunction2FineClonesMapper(Function2FineClones function2FineClones) {
+			this.function2FineClones = function2FineClones;
 		}
 
 		/** receives rows from htable function2roughclones */
@@ -130,37 +171,10 @@ public class MakeFunction2FineClones implements Runnable {
 
 			// matching is symmetrical - so we do only half of it here
 			// after matching procedure we expand to full clones
-			for (Clone clone : filter(cloneExpander.expandClones(matches))) {
+			for (Clone clone : function2FineClones.transform(matches)) {
 				context.write(new ImmutableBytesWritable(clone.getThisFunction().toByteArray()),
 						new ImmutableBytesWritable(clone.toByteArray()));
 			}
-		}
-
-		/**
-		 * Filter clones down to the clones that aren't spam. In case an IOException occurs, abort.
-		 * Otherwise, try on and log error.
-		 */
-		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
-			Collection<Clone> ret = Lists.newArrayList();
-			for (Clone clone : clones) {
-				try {
-					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
-							stringOfLinesFactory.make(cloneLoader.get(clone.getThisFunction().toByteArray())).getLines(
-									clone.getThisFromPosition(), clone.getThisLength()),
-							stringOfLinesFactory.make(cloneLoader.get(clone.getThatFunction().toByteArray())).getLines(
-									clone.getThatFromPosition(), clone.getThatLength())))) {
-						ret.add(clone);
-					}
-				} catch (ExecutionException e) {
-					Throwables.propagateIfPossible(e.getCause(), IOException.class);
-					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
-				} catch (UncheckedExecutionException e) {
-					logger.severe("Failure while trying to load sources for " + clone + e.getCause());
-				}
-			}
-			clonesRejected.increment(clones.size() - ret.size());
-			clonesPassed.increment(ret.size());
-			return ret;
 		}
 	}
 
@@ -215,13 +229,9 @@ public class MakeFunction2FineClones implements Runnable {
 			try {
 				functionString = functionStringCache.get(functionHashKey.get());
 			} catch (ExecutionException e) {
-				Throwables.propagateIfPossible(e, IOException.class);
+				Throwables.propagateIfPossible(e.getCause(), IOException.class);
 				throw new WrappedRuntimeException("The CacheLoader threw an exception while reading function "
 						+ ByteUtils.bytesToHex(functionHashKey.get()) + ".", e.getCause());
-			} catch (UncheckedExecutionException e) {
-				logger.severe("The CacheLoader threw an exception while reading function "
-						+ ByteUtils.bytesToHex(functionHashKey.get()) + ". " + e.getCause());
-				return;
 			}
 
 			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
