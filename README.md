@@ -30,3 +30,25 @@ Run the DataFetchPipeline:
 Or locally, for testing.:
 
 	./scripts/ohloh/DataFetchPipeline.rb --max_repos 3
+
+
+# HBase shell #
+
+Open with:
+
+	hbase shell
+
+List tables:
+
+	list
+
+
+# Check MR ouptput #
+
+Check HBase table size:
+
+	hadoop fs -du -h -s /hbase/
+
+Check size of HAR file:
+
+	hadoop fs -du -h /projects/dataset.har
