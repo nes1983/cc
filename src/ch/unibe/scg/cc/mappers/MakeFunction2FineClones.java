@@ -7,7 +7,6 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Map.Entry;
-import java.util.NavigableMap;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
@@ -103,8 +102,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 			context.getCounter(Counters.FUNCTIONS).increment(1);
 
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
-			Set<Entry<byte[], byte[]>> columns = familyMap.entrySet();
+			Set<Entry<byte[], byte[]>> columns = value.getFamilyMap(Constants.FAMILY).entrySet();
 			Iterable<SnippetMatch> matches = Iterables.transform(columns,
 					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
 						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
