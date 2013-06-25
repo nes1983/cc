@@ -56,8 +56,7 @@ public class MRMain extends Configured implements Tool {
 	@Override
 	public int run(String[] args) {
 		if (args.length == 0) {
-			System.err.println("You must specify the job as an argument to MRMain.");
-			System.exit(-1);
+			throw new IllegalArgumentException("You must specify the job as an argument to MRMain.");
 		}
 		logger.finer(Arrays.toString(args));
 		assert args.length == 1;

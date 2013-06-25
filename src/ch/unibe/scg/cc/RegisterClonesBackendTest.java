@@ -31,7 +31,6 @@ import com.google.inject.util.Modules;
 
 @SuppressWarnings("javadoc")
 public class RegisterClonesBackendTest {
-	final HTableWriteBuffer hTable = mock(HTableWriteBuffer.class);
 	final StringOfLinesFactory stringOfLinesFactory = new StringOfLinesFactory();
 	final StringOfLines aThruF = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\n");
 	final StringOfLines aThruK = stringOfLinesFactory.make("a\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\n");

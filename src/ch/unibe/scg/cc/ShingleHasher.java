@@ -7,6 +7,7 @@ import java.util.LinkedHashSet;
 
 import javax.inject.Inject;
 
+import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -52,7 +53,7 @@ public class ShingleHasher implements Hasher {
 		// LinkedHashSet maintains order, but deletes duplicates.
 		LinkedHashSet<ByteBuffer> hashed = Sets.newLinkedHashSetWithExpectedSize(shingles.size());
 		for (String shingle : shingles) {
-			hashed.add(ByteBuffer.wrap(md.digest(shingle.getBytes())));
+			hashed.add(ByteBuffer.wrap(md.digest(shingle.getBytes(Charsets.UTF_8))));
 		}
 		return hashed;
 	}
