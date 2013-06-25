@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
@@ -49,13 +50,16 @@ public class MakeFunction2RoughClones implements Runnable {
 	final HTable function2roughclones;
 	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
+	final Provider<Scan> scanProvider;
 
 	@Inject
 	MakeFunction2RoughClones(@Named("function2roughclones") HTable function2roughclones,
-			@Named("popularSnippets") HTable popularSnippets, MRWrapper mrWrapper) {
+			@Named("popularSnippets") HTable popularSnippets, MRWrapper mrWrapper,
+			Provider<Scan> scanProvider) {
 		this.function2roughclones = function2roughclones;
 		this.popularSnippets = popularSnippets;
 		this.mrWrapper = mrWrapper;
+		this.scanProvider = scanProvider;
 	}
 
 	static class MakeFunction2RoughClonesMapper extends
@@ -213,11 +217,8 @@ public class MakeFunction2RoughClones implements Runnable {
 			mrWrapper.truncate(function2roughclones);
 			mrWrapper.truncate(popularSnippets);
 
-			Scan scan = new Scan();
-			scan.setCaching(100); // TODO play with this. (100 is default value)
-			scan.setCacheBlocks(false);
-			scan.addFamily(Constants.FAMILY); // Gets all columns from the
-													// specified family.
+			Scan scan = scanProvider.get();
+			scan.addFamily(Constants.FAMILY);
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");

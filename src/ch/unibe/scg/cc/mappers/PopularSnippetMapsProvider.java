@@ -46,7 +46,10 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
 						.builder();
 
-				try (ResultScanner rs = popularSnippets.getScanner(scanProvider.get())) {
+				Scan scan = scanProvider.get();
+				scan.addFamily(Constants.FAMILY);
+
+				try (ResultScanner rs = popularSnippets.getScanner(scan)) {
 					for (Result r : rs) {
 						byte[] function = r.getRow();
 						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(Constants.FAMILY);

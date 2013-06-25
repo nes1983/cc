@@ -13,7 +13,6 @@ class ScanProvider implements Provider<Scan> {
 		scan.setCaching(1000);
 
 		scan.setCacheBlocks(false); // HBase book 12.9.5. Block Cache
-		scan.addFamily(Constants.FAMILY);
 		return scan;
 	}
 }

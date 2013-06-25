@@ -7,6 +7,7 @@ import java.io.LineNumberReader;
 import java.io.StringReader;
 
 import javax.inject.Named;
+import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Result;
@@ -28,17 +29,18 @@ import com.google.inject.Inject;
 
 public class CountLOC implements Runnable {
 	final MRWrapper hbaseWrapper;
+	final Provider<Scan> scanProvider;
 
 	@Inject
-	CountLOC(MRWrapper hbaseWrapper) {
+	CountLOC(MRWrapper hbaseWrapper, Provider<Scan> scanProvider) {
 		this.hbaseWrapper = hbaseWrapper;
+		this.scanProvider = scanProvider;
 	}
 
 	@Override
 	public void run() {
 		try {
-			Scan scan = new Scan();
-			// Gets all columns from the specified family/qualifier.
+			Scan scan = scanProvider.get();
 			scan.addColumn(Constants.FAMILY, Function.FUNCTION_SNIPPET);
 
 			Configuration config = new Configuration();

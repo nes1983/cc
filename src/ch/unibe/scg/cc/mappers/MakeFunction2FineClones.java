@@ -323,8 +323,11 @@ public class MakeFunction2FineClones implements Runnable {
 			config.setClass(Job.OUTPUT_KEY_CLASS, BytesWritable.class, Object.class);
 			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
 
+			Scan scan = scanProvider.get();
+			scan.addFamily(Constants.FAMILY);
+
 			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
-					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scanProvider.get()),
+					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scan),
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);

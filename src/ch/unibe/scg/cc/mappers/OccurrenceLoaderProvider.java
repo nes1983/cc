@@ -65,7 +65,7 @@ class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable
 					@Override
 					public Iterable<Occurrence> load(byte[] hash) throws IOException {
 						Collection<Occurrence> ret = Lists.newArrayList();
-						Scan scan = new Scan();
+						Scan scan = new Scan(); // Don't use ScanProvider as it's optimized for MR jobs.
 						scan.addColumn(Constants.FAMILY, hash);
 						for (Result result : table.getScanner(scan)) {
 							ret.add(occurrenceFactory.make(result, hash));

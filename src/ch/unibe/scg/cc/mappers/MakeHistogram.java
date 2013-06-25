@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.NavigableMap;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -27,10 +28,12 @@ import com.google.common.base.Optional;
 public class MakeHistogram implements Runnable {
 	static final String OUT_DIR = "/tmp/histogram";
 	final MRWrapper hbaseWrapper;
+	final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeHistogram(MRWrapper hbaseWrapper) {
+	MakeHistogram(MRWrapper hbaseWrapper, Provider<Scan> scanProvider) {
 		this.hbaseWrapper = hbaseWrapper;
+		this.scanProvider = scanProvider;
 	}
 
 	/**
@@ -77,10 +80,8 @@ public class MakeHistogram implements Runnable {
 		try {
 			FileSystem.get(new Configuration()).delete(new Path(OUT_DIR), true);
 
-			Scan scan = new Scan();
-			scan.setCaching(100); // TODO play with this. (100 is default value)
-			scan.addFamily(Constants.FAMILY); // Gets all columns from the
-													// specified family.
+			Scan scan = scanProvider.get();
+			scan.addFamily(Constants.FAMILY);
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");

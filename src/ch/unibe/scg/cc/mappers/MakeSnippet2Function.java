@@ -124,8 +124,11 @@ public class MakeSnippet2Function implements Runnable {
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
+			Scan scan = scanProvider.get();
+			scan.addFamily(Constants.FAMILY);
+
 			mrWrapper.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
-					Optional.of("function2snippet"), Optional.of("snippet2function"), Optional.of(scanProvider.get()),
+					Optional.of("function2snippet"), Optional.of("snippet2function"), Optional.of(scan),
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
