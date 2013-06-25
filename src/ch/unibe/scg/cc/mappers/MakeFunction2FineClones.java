@@ -11,6 +11,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
 
 import javax.inject.Named;
+import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -58,13 +59,15 @@ public class MakeFunction2FineClones implements Runnable {
 	final HTable function2fineclones;
 	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
+	final Provider<Scan> scanProvider;
 
 	@Inject
 	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("popularSnippets") HTable popularSnippets,
-			@Named("function2fineclones") HTable function2fineclones) {
+			@Named("function2fineclones") HTable function2fineclones, Provider<Scan> scanProvider) {
 		this.mrWrapper = mrWrapper;
 		this.function2fineclones = function2fineclones;
 		this.popularSnippets = popularSnippets;
+		this.scanProvider = scanProvider;
 	}
 
 	static class Function2FineClones {
@@ -301,11 +304,6 @@ public class MakeFunction2FineClones implements Runnable {
 			FileSystem.get(new Configuration()).delete(new Path(OUT_DIR), true);
 			mrWrapper.truncate(function2fineclones);
 
-			Scan scan = new Scan();
-			// TODO play with cache size. (100 is default value)
-			scan.setCacheBlocks(false);
-			scan.addFamily(Constants.FAMILY); // Gets all columns from the specified family.
-
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
 			config.set(MRJobConfig.NUM_REDUCES, "30");
@@ -326,7 +324,7 @@ public class MakeFunction2FineClones implements Runnable {
 			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
 
 			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
-					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scan),
+					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scanProvider.get()),
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);

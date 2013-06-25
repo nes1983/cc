@@ -43,6 +43,8 @@ public final class HBaseModule extends AbstractModule {
 			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
 			.toProvider(CloneLoaderProvider.class)
 			.in(Singleton.class);
+
+		bind(Scan.class).toProvider(ScanProvider.class);
 	}
 
 	private void installHTable(final String tableName, final Optional<Class<? extends OccurrenceFactory>> factory) {

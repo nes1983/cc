@@ -27,6 +27,13 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 	@Named("popularSnippets")
 	HTable popularSnippets;
 
+	final Provider<Scan> scanProvider;
+
+	@Inject
+	PopularSnippetMapsProvider(Provider<Scan> scanProvider) {
+		this.scanProvider = scanProvider;
+	}
+
 	// Must be static to force sharing across all JVMs.
 	private static PopularSnippetMaps popularSnippetMaps;
 
@@ -34,18 +41,12 @@ public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> 
 	public PopularSnippetMaps get() {
 		synchronized (PopularSnippetMaps.class) {
 			if (popularSnippetMaps == null) {
-				Scan scan = new Scan();
-				// TODO play with caching. (100 is the default value)
-				scan.setCacheBlocks(false);
-				scan.addFamily(Constants.FAMILY);
-
-
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
 						.builder();
 				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
 						.builder();
 
-				try (ResultScanner rs = popularSnippets.getScanner(scan)) {
+				try (ResultScanner rs = popularSnippets.getScanner(scanProvider.get())) {
 					for (Result r : rs) {
 						byte[] function = r.getRow();
 						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(Constants.FAMILY);
