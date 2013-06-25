@@ -2,8 +2,10 @@ package ch.unibe.scg.cc.mappers;
 
 import static ch.unibe.scg.cc.mappers.MakeFunction2RoughClones.ColumnKeyConverter.decode;
 import static com.google.common.base.Preconditions.checkArgument;
+import static com.google.common.base.Preconditions.checkState;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -225,27 +227,23 @@ public class MakeFunction2FineClones implements Runnable {
 
 			int commonness = 0;
 			Builder cloneGroupBuilder = CloneGroup.newBuilder();
+
+			findOccurrences(cloneGroupBuilder, functionHashKey.get());
+
 			for (ImmutableBytesWritable cloneProtobuf : cloneProtobufs) {
 				final Clone clone = Clone.parseFrom(cloneProtobuf.get());
+				checkState(Arrays.equals(clone.getThisFunction().toByteArray(), functionHashKey.get()),
+						"The function hash key did not match one of the clones. Clone says: "
+								+ BaseEncoding.base16().encode(clone.getThisFunction().toByteArray())
+								+ " reduce key: " + BaseEncoding.base16().encode(functionHashKey.get()));
+
 				if (!clone.getThisFunction().equals(ByteString.copyFrom(functionHashKey.get()))) {
 					throw new AssertionError(
 							"There is a clone in cloneProtobufs that doesn't match the input function "
 									+ BaseEncoding.base16().encode(functionHashKey.get()));
 				}
-				try {
-					for (Occurrence file : fileLoader.get(clone.getThatFunction().toByteArray())) {
-						for (Occurrence version : versionLoader.get(file.getFileNameHash().toByteArray())) {
-							for (Occurrence project : projectLoader.get(version.getVersionHash().toByteArray())) {
-								cloneGroupBuilder.addOccurrences(Occurrence.newBuilder().mergeFrom(file)
-										.mergeFrom(version).mergeFrom(project));
-							}
-						}
-					}
-				} catch (ExecutionException e) {
-					Throwables.propagateIfPossible(e.getCause(), IOException.class, InterruptedException.class);
-					logger.severe(e.getCause().toString());
-					return;
-				}
+
+				findOccurrences(cloneGroupBuilder, clone.getThatFunction().toByteArray());
 
 				from = Math.min(from, clone.getThisFromPosition());
 				to = Math.max(to, clone.getThisFromPosition() + clone.getThisLength());
@@ -265,11 +263,28 @@ public class MakeFunction2FineClones implements Runnable {
 						+ BaseEncoding.base16().encode(functionHashKey.get()) + ".", e.getCause());
 			}
 
-			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
-			cloneGroupBuilder.setText(sol.toString());
+			cloneGroupBuilder.setText(
+					stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from).toString());
 
 			byte[] key = ColumnKeyCodec.encode(commonness, cloneGroupBuilder.build());
 			context.write(new BytesWritable(key), NullWritable.get());
+		}
+
+		/** Add all occurrences of function {@code functionKey} to cloneGroupBuilder */
+		private void findOccurrences(Builder cloneGroupBuilder, byte[] functionKey) throws IOException {
+			try {
+				for (Occurrence file : fileLoader.get(functionKey)) {
+					for (Occurrence version : versionLoader.get(file.getFileNameHash().toByteArray())) {
+						for (Occurrence project : projectLoader.get(version.getVersionHash().toByteArray())) {
+							cloneGroupBuilder.addOccurrences(Occurrence.newBuilder().mergeFrom(file)
+									.mergeFrom(version).mergeFrom(project));
+						}
+					}
+				}
+			} catch (ExecutionException e) {
+				Throwables.propagateIfPossible(e.getCause(), IOException.class);
+				throw new RuntimeException(e);
+			}
 		}
 	}
 
