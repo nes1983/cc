@@ -43,8 +43,7 @@ public class Function extends Column {
 	}
 
 	/**
-	 * @return if the hasher throws a CannotBeHashedException the
-	 *         {@link ByteUtils#EMPTY_SHA1_KEY} is returned.
+	 * @return if the hasher throws a CannotBeHashedException, {@code new byte[20]} is returned.
 	 */
 	public byte[] getHash() {
 		if (hash == null) {
