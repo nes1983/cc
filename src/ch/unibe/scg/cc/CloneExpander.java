@@ -12,11 +12,11 @@ import java.util.List;
 import java.util.ListIterator;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
-import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMultimap;
@@ -48,7 +48,8 @@ public class CloneExpander {
 	final Comparator<SnippetMatch> snippetMatchComparator;
 
 	@Inject
-	CloneExpander(PopularSnippetMapsProvider popularSnippetMapsProvider, Comparator<SnippetMatch> snippetMatchComparator) {
+	CloneExpander(Provider<PopularSnippetMaps> popularSnippetMapsProvider,
+			Comparator<SnippetMatch> snippetMatchComparator) {
 		PopularSnippetMaps popularSnippetMaps = popularSnippetMapsProvider.get();
 		this.function2PopularSnippets = popularSnippetMaps.getFunction2PopularSnippets();
 		this.snippet2PopularSnippet = popularSnippetMaps.getSnippet2PopularSnippets();

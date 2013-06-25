@@ -5,11 +5,12 @@ import static org.junit.Assert.assertThat;
 
 import java.nio.ByteBuffer;
 
+import javax.inject.Provider;
+
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
-import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableListMultimap;
@@ -79,7 +80,7 @@ public final class CloneExpanderTest {
 				fun1Loc.getFunction().asReadOnlyByteBuffer(), fun1Loc,
 				fun2Loc.getFunction().asReadOnlyByteBuffer(), fun2Loc);
 
-		CloneExpander expander = new CloneExpander(new PopularSnippetMapsProvider() {
+		CloneExpander expander = new CloneExpander(new Provider<PopularSnippetMaps>() {
 			@Override
 			public PopularSnippetMaps get() {
 				return new PopularSnippetMaps(function2Popular, snippet2Popular);

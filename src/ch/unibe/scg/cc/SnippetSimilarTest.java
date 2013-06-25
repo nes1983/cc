@@ -11,6 +11,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import javax.inject.Provider;
+
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
@@ -20,7 +22,6 @@ import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableListMultimap;
@@ -103,7 +104,7 @@ public final class SnippetSimilarTest {
 
 		// Extract matches
 		final CloneExpander expanderWithoutLongRows = new CloneExpander(
-				new PopularSnippetMapsProvider() {
+				new Provider<PopularSnippetMaps>() {
 					@Override
 					public PopularSnippetMaps get() {
 						return new PopularSnippetMaps(
