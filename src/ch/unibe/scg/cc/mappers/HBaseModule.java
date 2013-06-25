@@ -5,7 +5,6 @@ import javax.inject.Singleton;
 import org.apache.hadoop.hbase.client.HTable;
 
 import ch.unibe.scg.cc.Protos.Occurrence;
-import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.File2FunctionFactory;
 import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.OccurrenceFactory;

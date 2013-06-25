@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc.activerecord;
+package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.inject.Provider;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
-public class HTableProvider implements Provider<HTable> {
+class HTableProvider implements Provider<HTable> {
 	@Inject
 	Configuration hbaseConfig;
 

@@ -12,7 +12,6 @@ import org.apache.hadoop.hbase.client.HTableUtil;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Row;
 
-import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.mappers.HBaseModule.HTableModule;
 
 import com.google.common.collect.Lists;
