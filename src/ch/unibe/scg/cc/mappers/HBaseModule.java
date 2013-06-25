@@ -3,6 +3,7 @@ package ch.unibe.scg.cc.mappers;
 import javax.inject.Singleton;
 
 import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.client.Scan;
 
 import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
