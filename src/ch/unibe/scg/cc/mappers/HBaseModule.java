@@ -83,21 +83,21 @@ public final class HBaseModule extends AbstractModule {
 			bind(HTable.class).annotatedWith(named).to(HTable.class);
 			bind(HTable.class).toProvider(HTableProvider.class).in(Singleton.class);
 
-			TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>> loadingCache
-					= new TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>>() {};
-			bind(loadingCache).annotatedWith(named).toProvider(OccurrenceLoaderProvider.class);
-
 			bind(HTableWriteBuffer.class)
 					.annotatedWith(named)
 					.toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
 
 			if (factory.isPresent()) {
+				TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>> loadingCache
+						= new TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>>() {};
+				bind(loadingCache).annotatedWith(named).toProvider(OccurrenceLoaderProvider.class);
 				bind(OccurrenceFactory.class).to(factory.get());
+				expose(loadingCache).annotatedWith(named);
 			}
 
 			expose(HTable.class).annotatedWith(named);
 			expose(HTableWriteBuffer.class).annotatedWith(named);
-			expose(loadingCache).annotatedWith(named);
+
 		}
 	}
 }
