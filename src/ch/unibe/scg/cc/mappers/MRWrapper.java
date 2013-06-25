@@ -12,14 +12,10 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.mapreduce.MultithreadedTableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
-import org.apache.hadoop.hbase.mapreduce.TableMapper;
-import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
-import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Reducer;
 
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
@@ -59,10 +55,9 @@ public class MRWrapper {
 	 *            only provide this name if there is actually a reduce step to
 	 *            be done
 	 */
-	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public boolean launchMapReduceJob(String jobName, Configuration config, Optional<String> mapperTableName,
 			Optional<String> reducerTableName, Optional<Scan> tableScanner, String mapperClassName,
-			Optional<String> reducerClassName, Class<? extends WritableComparable> outputKey,
+			Optional<String> reducerClassName, Class<? extends WritableComparable<?>> outputKey,
 			Class<? extends Writable> outputValue) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration merged = merge(configurationProvider.get(), config);
 		appendHighlyRecommendedPropertiesToConfiguration(merged);
@@ -73,37 +68,27 @@ public class MRWrapper {
 		// TODO: this is a bit of a crutch
 		// Don't use MultihtreadedMapper - use MRMainMapper instead,
 		// otherwise GitTablePopulator fails!
-		Class<?> mapperClass = (mapperTableName.isPresent()) ? MultithreadedTableMapper.class : MRMainMapper.class;
-		Class<?> reducerClass = (reducerTableName.isPresent()) ? MRMainTableReducer.class : MRMainReducer.class;
 
 		// mapper configuration
-		if (isSubclassOf(mapperClass, TableMapper.class)) {
-			if (!mapperTableName.isPresent()) {
-				throw new IllegalArgumentException("mapperTableName argument is not set!");
-			}
+		if (mapperTableName.isPresent()) {
 			if (!tableScanner.isPresent()) {
 				throw new IllegalArgumentException("tableScanner argument is not set!");
 			}
 			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner.get(),
-					(Class<? extends TableMapper>) mapperClass, outputKey, outputValue, job);
+					MultithreadedTableMapper.class, outputKey, outputValue, job);
 			MultithreadedTableMapper.setMapperClass(job, (Class) MRMainTableMapper.class);
 		} else {
-			job.setMapperClass((Class<? extends Mapper>) mapperClass);
+			job.setMapperClass(MRMainMapper.class);
 		}
 		job.setMapOutputKeyClass(outputKey);
 		job.setMapOutputValueClass(outputValue);
 
 		// reducer configuration
 		if (reducerClassName.isPresent()) {
-			if (isSubclassOf(reducerClass, TableReducer.class)) {
-				if (!reducerTableName.isPresent()) {
-					throw new IllegalArgumentException(
-							"tableNameReducer argument is set, but reducerClass is not a subclass of the TableReducer class!");
-				}
-				TableMapReduceUtil.initTableReducerJob(reducerTableName.get(),
-						(Class<? extends TableReducer>) reducerClass, job);
+			if (reducerTableName.isPresent()) {
+				TableMapReduceUtil.initTableReducerJob(reducerTableName.get(), MRMainTableReducer.class, job);
 			} else {
-				job.setReducerClass((Class<? extends Reducer>) reducerClass);
+				job.setReducerClass(MRMainReducer.class);
 
 			}
 		}
@@ -134,15 +119,6 @@ public class MRWrapper {
 			existingPropertyValue = "";
 		}
 		config.set(propertyName, (existingPropertyValue + " " + propertyValue).trim());
-	}
-
-	static boolean isSubclassOf(Class<?> subClass, Class<?> superClass) {
-		try {
-			subClass.asSubclass(superClass);
-		} catch (ClassCastException e) {
-			return false;
-		}
-		return true;
 	}
 
 	private Configuration merge(Configuration lowPriority, Configuration highPriority) {
