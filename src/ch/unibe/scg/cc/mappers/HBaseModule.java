@@ -46,12 +46,7 @@ public final class HBaseModule extends AbstractModule {
 	}
 
 	private void installHTable(final String tableName, final Optional<Class<? extends OccurrenceFactory>> factory) {
-		this.install(new HTableModule(Names.named(tableName), factory) {
-			@Override
-			void bindHTable() {
-				bind(String.class).annotatedWith(Names.named("tableName")).toInstance(tableName);
-			}
-		});
+		this.install(new HTableModule(Names.named(tableName), factory));
 	}
 
 	/**
@@ -72,7 +67,7 @@ public final class HBaseModule extends AbstractModule {
 	 *
 	 * @author nes
 	 */
-	static abstract class HTableModule extends PrivateModule {
+	static class HTableModule extends PrivateModule {
 		final Named named;
 		final Optional<Class<? extends OccurrenceFactory>> factory;
 
@@ -83,7 +78,10 @@ public final class HBaseModule extends AbstractModule {
 
 		@Override
 		protected void configure() {
-			bind(HTable.class).annotatedWith(named).toProvider(HTableProvider.class).in(Singleton.class);
+			bind(String.class).annotatedWith(Names.named("tableName")).toInstance(named.value());
+
+			bind(HTable.class).annotatedWith(named).to(HTable.class);
+			bind(HTable.class).toProvider(HTableProvider.class).in(Singleton.class);
 
 			TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>> loadingCache
 					= new TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>>() {};
@@ -100,10 +98,6 @@ public final class HBaseModule extends AbstractModule {
 			expose(HTable.class).annotatedWith(named);
 			expose(HTableWriteBuffer.class).annotatedWith(named);
 			expose(loadingCache).annotatedWith(named);
-
-			bindHTable();
 		}
-
-		abstract void bindHTable();
 	}
 }

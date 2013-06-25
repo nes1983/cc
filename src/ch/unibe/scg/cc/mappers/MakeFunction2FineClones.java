@@ -199,9 +199,9 @@ public class MakeFunction2FineClones implements Runnable {
 		@Inject
 		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory,
 				@CloneLoader LoadingCache<byte[], String> functionStringCache,
-				LoadingCache<byte[], Iterable<Occurrence>> fileLoader,
-				LoadingCache<byte[], Iterable<Occurrence>> versionLoader,
-				LoadingCache<byte[], Iterable<Occurrence>> projectLoader) {
+				@Named("file2function") LoadingCache<byte[], Iterable<Occurrence>> fileLoader,
+				@Named("version2file") LoadingCache<byte[], Iterable<Occurrence>> versionLoader,
+				@Named("project2version") LoadingCache<byte[], Iterable<Occurrence>> projectLoader) {
 			this.strings = strings;
 			this.stringOfLinesFactory = stringOfLinesFactory;
 			this.functionStringCache = functionStringCache;
@@ -265,12 +265,12 @@ public class MakeFunction2FineClones implements Runnable {
 			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
 			cloneGroupBuilder.setText(sol.toString());
 
-			byte[] key = ColumnKeyConverter.encode(commonness, cloneGroupBuilder.build());
+			byte[] key = ColumnKeyCodec.encode(commonness, cloneGroupBuilder.build());
 			context.write(new BytesWritable(key), NullWritable.get());
 		}
 	}
 
-	static class ColumnKeyConverter {
+	static class ColumnKeyCodec {
 		static final int COMMONNESS_LENGTH = 4;
 
 		static byte[] encode(int commonness, CloneGroup cloneGroup) {
