@@ -4,31 +4,38 @@ import javax.inject.Singleton;
 
 import org.apache.hadoop.hbase.client.HTable;
 
+import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.activerecord.HTableProvider;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
+import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.File2FunctionFactory;
+import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.OccurrenceFactory;
+import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.Project2VersionFactory;
+import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.Version2FileFactory;
 
+import com.google.common.base.Optional;
 import com.google.common.cache.LoadingCache;
 import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.assistedinject.FactoryModuleBuilder;
+import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 
-public class HBaseModule extends AbstractModule {
+public final class HBaseModule extends AbstractModule {
 	@Override
 	protected void configure() {
-		installHTable("project2version");
-		installHTable("version2file");
-		installHTable("file2function");
-		installHTable("function2snippet");
-		installHTable("strings");
+		installHTable("project2version", Optional.<Class<? extends OccurrenceFactory>>of(Project2VersionFactory.class));
+		installHTable("version2file", Optional.<Class<? extends OccurrenceFactory>>of(Version2FileFactory.class));
+		installHTable("file2function", Optional.<Class<? extends OccurrenceFactory>>of(File2FunctionFactory.class));
+		installHTable("function2snippet", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("strings", Optional.<Class<? extends OccurrenceFactory>>absent());
 
-		installHTable("snippet2function");
-		installHTable("function2roughclones");
-		installHTable("popularSnippets");
-		installHTable("function2fineclones");
+		installHTable("snippet2function", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("function2roughclones", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("popularSnippets", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("function2fineclones", Optional.<Class<? extends OccurrenceFactory>>absent());
 
-		installHTable("duplicateSnippetsPerFunction");
+		installHTable("duplicateSnippetsPerFunction", Optional.<Class<? extends OccurrenceFactory>>absent());
 
 		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
 				BufferFactory.class));
@@ -39,8 +46,8 @@ public class HBaseModule extends AbstractModule {
 			.in(Singleton.class);
 	}
 
-	private void installHTable(final String tableName) {
-		this.install(new HTableModule(tableName) {
+	private void installHTable(final String tableName, final Optional<Class<? extends OccurrenceFactory>> factory) {
+		this.install(new HTableModule(Names.named(tableName), factory) {
 			@Override
 			void bindHTable() {
 				bind(String.class).annotatedWith(Names.named("tableName")).toInstance(tableName);
@@ -67,20 +74,33 @@ public class HBaseModule extends AbstractModule {
 	 * @author nes
 	 */
 	static abstract class HTableModule extends PrivateModule {
-		private final String named;
+		final Named named;
+		final Optional<Class<? extends OccurrenceFactory>> factory;
 
-		HTableModule(String named) {
+		HTableModule(Named named, Optional<Class<? extends OccurrenceFactory>> factory) {
 			this.named = named;
+			this.factory = factory;
 		}
 
 		@Override
 		protected void configure() {
-			bind(HTable.class).annotatedWith(Names.named(named)).toProvider(HTableProvider.class).in(Singleton.class);
-			bind(HTableWriteBuffer.class).annotatedWith(Names.named(named)).toProvider(
-					HTableWriteBuffer.HTableWriteBufferProvider.class);
+			bind(HTable.class).annotatedWith(named).toProvider(HTableProvider.class).in(Singleton.class);
 
-			expose(HTable.class).annotatedWith(Names.named(named));
-			expose(HTableWriteBuffer.class).annotatedWith(Names.named(named));
+			TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>> loadingCache
+					= new TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>>() {};
+			bind(loadingCache).annotatedWith(named).toProvider(OccurrenceLoaderProvider.class);
+
+			bind(HTableWriteBuffer.class)
+					.annotatedWith(named)
+					.toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
+
+			if (factory.isPresent()) {
+				bind(OccurrenceFactory.class).to(factory.get());
+			}
+
+			expose(HTable.class).annotatedWith(named);
+			expose(HTableWriteBuffer.class).annotatedWith(named);
+			expose(loadingCache).annotatedWith(named);
 
 			bindHTable();
 		}
