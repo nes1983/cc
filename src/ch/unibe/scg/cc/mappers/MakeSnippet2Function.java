@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
@@ -28,20 +29,21 @@ public class MakeSnippet2Function implements Runnable {
 	static Logger logger = Logger.getLogger(MakeSnippet2Function.class.getName());
 	final HTable snippet2Function;
 	final MRWrapper mrWrapper;
+	final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeSnippet2Function(@Named("snippet2function") HTable snippet2Function, MRWrapper mrWrapper) {
+	MakeSnippet2Function(@Named("snippet2function") HTable snippet2Function, MRWrapper mrWrapper,
+			Provider<Scan> scanProvider) {
 		this.snippet2Function = snippet2Function;
 		this.mrWrapper = mrWrapper;
+		this.scanProvider = scanProvider;
 	}
 
-	static class MakeSnippet2FunctionMapper<KEYOUT, VALUEOUT> extends GuiceTableMapper<KEYOUT, VALUEOUT> {
+	static class MakeSnippet2FunctionMapper extends GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		/** receives rows from htable function2snippet */
-		@SuppressWarnings("unchecked")
 		// super class uses unchecked types
 		@Override
-		public void map(ImmutableBytesWritable functionHashKey, Result value,
-				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+		public void map(ImmutableBytesWritable functionHashKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			byte[] functionHash = functionHashKey.get();
 			assert functionHash.length == 20;
@@ -105,9 +107,6 @@ public class MakeSnippet2Function implements Runnable {
 		try {
 			mrWrapper.truncate(snippet2Function);
 
-			Scan scan = new Scan();
-			scan.setCaching(500); // TODO play with this. (100 is default value)
-
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
 			config.set(MRJobConfig.NUM_REDUCES, "30");
@@ -126,7 +125,7 @@ public class MakeSnippet2Function implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 
 			mrWrapper.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
-					Optional.of("function2snippet"), Optional.of("snippet2function"), Optional.of(scan),
+					Optional.of("function2snippet"), Optional.of("snippet2function"), Optional.of(scanProvider.get()),
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
