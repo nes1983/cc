@@ -3,6 +3,7 @@ package ch.unibe.scg.cc.mappers;
 import java.io.IOException;
 import java.util.Collection;
 
+import javax.inject.Inject;
 import javax.inject.Provider;
 
 import org.apache.hadoop.hbase.client.HTable;
@@ -16,15 +17,17 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Lists;
-import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 
 class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable<Occurrence>>> {
-	@Inject(optional=true)
-	HTable table;
+	final HTable table;
+	final OccurrenceFactory occurrenceFactory;
 
-	@Inject(optional=true)
-	OccurrenceFactory occurrenceFactory;
+	@Inject
+	OccurrenceLoaderProvider(HTable table, OccurrenceFactory occurrenceFactory) {
+		this.table = table;
+		this.occurrenceFactory = occurrenceFactory;
+	}
 
 	static interface OccurrenceFactory {
 		public Occurrence make(Result result, byte[] hash);
