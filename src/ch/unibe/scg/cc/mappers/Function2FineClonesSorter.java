@@ -8,6 +8,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.Scan;
+import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
@@ -19,34 +20,31 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.CommonSnippetWritable;
 
 import com.google.common.base.Optional;
 
 /** Mapper and Reducer only used for sorting */
 public class Function2FineClonesSorter implements Runnable {
 	static final String OUT_DIR = "/tmp/fineclonessorted/";
-	final MRWrapper hbaseWrapper;
+	final MRWrapper mrWrapper;
 
 	@Inject
-	Function2FineClonesSorter(MRWrapper hbaseWrapper) {
-		this.hbaseWrapper = hbaseWrapper;
+	Function2FineClonesSorter(MRWrapper mrWrapper) {
+		this.mrWrapper = mrWrapper;
 	}
 
-	static class IdentityMapper extends
-			GuiceMapper<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
+	static class IdentityMapper extends GuiceMapper<BytesWritable, NullWritable, BytesWritable, NullWritable> {
 		@Override
-		public void map(CommonSnippetWritable key, NullWritable value, Context context) throws IOException,
+		public void map(BytesWritable key, NullWritable value, Context context) throws IOException,
 				InterruptedException {
 			context.write(key, value);
 		}
 	}
 
-	static class IdentityReducer extends
-			GuiceReducer<CommonSnippetWritable, NullWritable, CommonSnippetWritable, NullWritable> {
+	static class IdentityReducer extends GuiceReducer<BytesWritable, NullWritable, BytesWritable, NullWritable> {
 		@Override
-		public void reduce(CommonSnippetWritable key, Iterable<NullWritable> values, Context context)
-				throws IOException, InterruptedException {
+		public void reduce(BytesWritable key, Iterable<NullWritable> values, Context context) throws IOException,
+				InterruptedException {
 			for (NullWritable value : values) {
 				context.write(key, value);
 			}
@@ -68,10 +66,10 @@ public class Function2FineClonesSorter implements Runnable {
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, SequenceFileInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 
-			hbaseWrapper.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
+			mrWrapper.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
 					Optional.<String> absent(), Optional.<String> absent(), Optional.<Scan> absent(),
-					IdentityMapper.class.getName(), Optional.of(IdentityReducer.class.getName()),
-					CommonSnippetWritable.class, NullWritable.class);
+					IdentityMapper.class.getName(), Optional.of(IdentityReducer.class.getName()), BytesWritable.class,
+					NullWritable.class);
 		} catch (IOException | ClassNotFoundException e) {
 			throw new WrappedRuntimeException(e.getCause());
 		} catch (InterruptedException e) {

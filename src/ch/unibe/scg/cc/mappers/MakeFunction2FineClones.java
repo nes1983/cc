@@ -1,9 +1,8 @@
 package ch.unibe.scg.cc.mappers;
 
 import static ch.unibe.scg.cc.mappers.MakeFunction2RoughClones.ColumnKeyConverter.decode;
+import static com.google.common.base.Preconditions.checkArgument;
 
-import java.io.DataInput;
-import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Map.Entry;
@@ -20,8 +19,9 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
+import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
-import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
@@ -31,6 +31,9 @@ import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 
 import ch.unibe.scg.cc.CloneExpander;
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.CloneGroup;
+import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
+import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.SpamDetector;
@@ -42,7 +45,6 @@ import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
 import com.google.common.cache.LoadingCache;
-import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import com.google.common.io.BaseEncoding;
@@ -83,9 +85,8 @@ public class MakeFunction2FineClones implements Runnable {
 		Counter clonesPassed;
 
 		@Inject
-		Function2FineClones(CloneExpander cloneExpander,
-				@CloneLoader LoadingCache<byte[], String> cloneLoader, SpamDetector spamDetector,
-				StringOfLinesFactory stringOfLinesFactory) {
+		Function2FineClones(CloneExpander cloneExpander, @CloneLoader LoadingCache<byte[], String> cloneLoader,
+				SpamDetector spamDetector, StringOfLinesFactory stringOfLinesFactory) {
 			this.cloneExpander = cloneExpander;
 			this.cloneLoader = cloneLoader;
 			this.spamDetector = spamDetector;
@@ -93,12 +94,12 @@ public class MakeFunction2FineClones implements Runnable {
 		}
 
 		Iterable<Clone> transform(Iterable<SnippetMatch> matches) throws IOException {
-			 return filter(cloneExpander.expandClones(matches));
+			return filter(cloneExpander.expandClones(matches));
 		}
 
 		/**
-		 * Filter clones down to the clones that aren't spam. In case an IOException occurs, abort.
-		 * Otherwise, try on and log error.
+		 * Filter clones down to the clones that aren't spam. In case an
+		 * IOException occurs, abort. Otherwise, try on and log error.
 		 */
 		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
 			Collection<Clone> ret = Lists.newArrayList();
@@ -126,8 +127,7 @@ public class MakeFunction2FineClones implements Runnable {
 		}
 	}
 
-	static class MakeFunction2FineClonesMapper extends
-			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+	static class MakeFunction2FineClonesMapper extends GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		final Function2FineClones function2FineClones;
 
 		@Inject
@@ -180,8 +180,9 @@ public class MakeFunction2FineClones implements Runnable {
 	}
 
 	static class MakeFunction2FineClonesReducer extends
-			GuiceReducer<ImmutableBytesWritable, ImmutableBytesWritable, CommonSnippetWritable, NullWritable> {
+			GuiceReducer<ImmutableBytesWritable, ImmutableBytesWritable, BytesWritable, NullWritable> {
 		final LoadingCache<byte[], String> functionStringCache;
+
 		final HTable strings;
 		final StringOfLinesFactory stringOfLinesFactory;
 		// Optional because in MRMain, we have an injector that does not set
@@ -191,12 +192,22 @@ public class MakeFunction2FineClones implements Runnable {
 		@Named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)
 		Counter arrayExceptions;
 
+		final LoadingCache<byte[], Iterable<Occurrence>> fileLoader;
+		final LoadingCache<byte[], Iterable<Occurrence>> versionLoader;
+		final LoadingCache<byte[], Iterable<Occurrence>> projectLoader;
+
 		@Inject
 		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory,
-				@CloneLoader LoadingCache<byte[], String> functionStringCache) {
+				@CloneLoader LoadingCache<byte[], String> functionStringCache,
+				LoadingCache<byte[], Iterable<Occurrence>> fileLoader,
+				LoadingCache<byte[], Iterable<Occurrence>> versionLoader,
+				LoadingCache<byte[], Iterable<Occurrence>> projectLoader) {
 			this.strings = strings;
 			this.stringOfLinesFactory = stringOfLinesFactory;
 			this.functionStringCache = functionStringCache;
+			this.fileLoader = fileLoader;
+			this.versionLoader = versionLoader;
+			this.projectLoader = projectLoader;
 		}
 
 		@Override
@@ -210,6 +221,7 @@ public class MakeFunction2FineClones implements Runnable {
 			int to = Integer.MIN_VALUE;
 
 			int commonness = 0;
+			Builder cloneGroupBuilder = CloneGroup.newBuilder();
 			for (ImmutableBytesWritable cloneProtobuf : cloneProtobufs) {
 				final Clone clone = Clone.parseFrom(cloneProtobuf.get());
 				if (!clone.getThisFunction().equals(ByteString.copyFrom(functionHashKey.get()))) {
@@ -217,6 +229,21 @@ public class MakeFunction2FineClones implements Runnable {
 							"There is a clone in cloneProtobufs that doesn't match the input function "
 									+ BaseEncoding.base16().encode(functionHashKey.get()));
 				}
+				try {
+					for (Occurrence file : fileLoader.get(clone.getThatFunction().toByteArray())) {
+						for (Occurrence version : versionLoader.get(file.getFileNameHash().toByteArray())) {
+							for (Occurrence project : projectLoader.get(version.getVersionHash().toByteArray())) {
+								cloneGroupBuilder.addOccurrences(Occurrence.newBuilder().mergeFrom(file)
+										.mergeFrom(version).mergeFrom(project));
+							}
+						}
+					}
+				} catch (ExecutionException e) {
+					Throwables.propagateIfPossible(e.getCause(), IOException.class, InterruptedException.class);
+					logger.severe(e.getCause().toString());
+					return;
+				}
+
 				from = Math.min(from, clone.getThisFromPosition());
 				to = Math.max(to, clone.getThisFromPosition() + clone.getThisLength());
 				commonness++;
@@ -236,47 +263,35 @@ public class MakeFunction2FineClones implements Runnable {
 			}
 
 			String sol = stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from);
-			context.write(new CommonSnippetWritable(commonness, sol), NullWritable.get());
+			cloneGroupBuilder.setText(sol.toString());
+
+			byte[] key = ColumnKeyConverter.encode(commonness, cloneGroupBuilder.build());
+			context.write(new BytesWritable(key), NullWritable.get());
 		}
 	}
 
-	/**
-	 * Used as the output format. The output is primarily be sorted by
-	 * commonness, then alphabetically by snippet.
-	 */
-	static class CommonSnippetWritable implements WritableComparable<CommonSnippetWritable> {
-		private int commonness;
-		private String snippet;
+	static class ColumnKeyConverter {
+		static final int COMMONNESS_LENGTH = 4;
 
-		public CommonSnippetWritable() {
+		static byte[] encode(int commonness, CloneGroup cloneGroup) {
+			checkArgument(commonness >= 0, "Negative commonness will ruin sorting. You supplied commonness "
+					+ commonness);
+			return Bytes.add(Bytes.toBytes(commonness), cloneGroup.toByteArray());
 		}
 
-		CommonSnippetWritable(int commonness, String snippet) {
+		static ColumnKey decode(byte[] encoded) throws InvalidProtocolBufferException {
+			return new ColumnKey(Bytes.toInt(Bytes.head(encoded, COMMONNESS_LENGTH)), CloneGroup.parseFrom(Bytes.tail(
+					encoded, encoded.length - COMMONNESS_LENGTH)));
+		}
+	}
+
+	static class ColumnKey {
+		final int commonness;
+		final CloneGroup cloneGroup;
+
+		ColumnKey(int commonness, CloneGroup cloneGroup) {
 			this.commonness = commonness;
-			this.snippet = snippet;
-		}
-
-		@Override
-		public void readFields(DataInput in) throws IOException {
-			commonness = in.readInt();
-			snippet = in.readUTF();
-		}
-
-		@Override
-		public void write(DataOutput out) throws IOException {
-			out.writeInt(commonness);
-			out.writeUTF(snippet);
-		}
-
-		@Override
-		public int compareTo(CommonSnippetWritable other) {
-			return ComparisonChain.start().compare(commonness, other.commonness).compare(snippet, other.snippet)
-					.result();
-		}
-
-		@Override
-		public String toString() {
-			return String.format("%d%n%s%n", commonness, snippet);
+			this.cloneGroup = cloneGroup;
 		}
 	}
 
@@ -307,7 +322,7 @@ public class MakeFunction2FineClones implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, SequenceFileOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.OUTPUT_KEY_CLASS, CommonSnippetWritable.class, Object.class);
+			config.setClass(Job.OUTPUT_KEY_CLASS, BytesWritable.class, Object.class);
 			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
 
 			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
