@@ -10,6 +10,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.InputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
@@ -20,8 +21,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 import ch.unibe.scg.cc.WrappedRuntimeException;
+import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.ColumnKeyCodec;
 
 import com.google.common.base.Optional;
+import com.google.protobuf.TextFormat;
 
 /** Mapper and Reducer only used for sorting */
 public class Function2FineClonesSorter implements Runnable {
@@ -41,12 +44,14 @@ public class Function2FineClonesSorter implements Runnable {
 		}
 	}
 
-	static class IdentityReducer extends GuiceReducer<BytesWritable, NullWritable, BytesWritable, NullWritable> {
+	static class IdentityReducer extends GuiceReducer<BytesWritable, NullWritable, Text, NullWritable> {
 		@Override
 		public void reduce(BytesWritable key, Iterable<NullWritable> values, Context context) throws IOException,
 				InterruptedException {
 			for (NullWritable value : values) {
-				context.write(key, value);
+				context.write(
+						new Text(TextFormat.printToUnicodeString(ColumnKeyCodec.decode(key.getBytes()).cloneGroup)),
+						value);
 			}
 		}
 	}
