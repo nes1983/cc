@@ -5,10 +5,12 @@ import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
 
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
 
@@ -48,6 +50,8 @@ import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
+import com.google.common.cache.Cache;
+import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
@@ -198,16 +202,16 @@ public class MakeFunction2FineClones implements Runnable {
 		@Named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)
 		Counter arrayExceptions;
 
-		final LoadingCache<byte[], Iterable<Occurrence>> fileLoader;
-		final LoadingCache<byte[], Iterable<Occurrence>> versionLoader;
-		final LoadingCache<byte[], Iterable<Occurrence>> projectLoader;
+		final LoadingCache<ByteBuffer, Iterable<Occurrence>> fileLoader;
+		final LoadingCache<ByteBuffer, Iterable<Occurrence>> versionLoader;
+		final LoadingCache<ByteBuffer, Iterable<Occurrence>> projectLoader;
 
 		@Inject
 		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory,
 				@CloneLoader LoadingCache<byte[], String> functionStringCache,
-				@Named("file2function") LoadingCache<byte[], Iterable<Occurrence>> fileLoader,
-				@Named("version2file") LoadingCache<byte[], Iterable<Occurrence>> versionLoader,
-				@Named("project2version") LoadingCache<byte[], Iterable<Occurrence>> projectLoader) {
+				@Named("file2function") LoadingCache<ByteBuffer, Iterable<Occurrence>> fileLoader,
+				@Named("version2file") LoadingCache<ByteBuffer, Iterable<Occurrence>> versionLoader,
+				@Named("project2version") LoadingCache<ByteBuffer, Iterable<Occurrence>> projectLoader) {
 			this.strings = strings;
 			this.stringOfLinesFactory = stringOfLinesFactory;
 			this.functionStringCache = functionStringCache;
@@ -229,7 +233,7 @@ public class MakeFunction2FineClones implements Runnable {
 			int commonness = 0;
 			Builder cloneGroupBuilder = CloneGroup.newBuilder();
 
-			findOccurrences(cloneGroupBuilder, functionHashKey.get());
+			cloneGroupBuilder.addAllOccurrences(findOccurrences(ByteBuffer.wrap(functionHashKey.get())));
 
 			for (ImmutableBytesWritable cloneProtobuf : cloneProtobufs) {
 				final Clone clone = Clone.parseFrom(cloneProtobuf.get());
@@ -244,7 +248,9 @@ public class MakeFunction2FineClones implements Runnable {
 									+ BaseEncoding.base16().encode(functionHashKey.get()));
 				}
 
-				findOccurrences(cloneGroupBuilder, clone.getThatFunction().toByteArray());
+				Collection<Occurrence> occ = findOccurrences(clone.getThatFunction().asReadOnlyByteBuffer());
+				context.getCounter(Counters.OCCURRENCES).increment(occ.size());
+				cloneGroupBuilder.addAllOccurrences(occ);
 
 				from = Math.min(from, clone.getThisFromPosition());
 				to = Math.max(to, clone.getThisFromPosition() + clone.getThisLength());
@@ -271,17 +277,27 @@ public class MakeFunction2FineClones implements Runnable {
 			context.write(new BytesWritable(key), NullWritable.get());
 		}
 
-		/** Add all occurrences of function {@code functionKey} to cloneGroupBuilder */
-		private void findOccurrences(Builder cloneGroupBuilder, byte[] functionKey) throws IOException {
+		Cache<ByteBuffer, Collection<Occurrence>> occCache = CacheBuilder.newBuilder().maximumSize(10000)
+				.concurrencyLevel(1).build();
+
+		/** @return all occurrences of {@code functionKey} */
+		private Collection<Occurrence> findOccurrences(final ByteBuffer functionKey) throws IOException {
 			try {
-				for (Occurrence file : fileLoader.get(functionKey)) {
-					for (Occurrence version : versionLoader.get(file.getFileNameHash().toByteArray())) {
-						for (Occurrence project : projectLoader.get(version.getVersionHash().toByteArray())) {
-							cloneGroupBuilder.addOccurrences(Occurrence.newBuilder().mergeFrom(file)
-									.mergeFrom(version).mergeFrom(project));
+				return occCache.get(functionKey, new Callable<Collection<Occurrence>>() {
+					@Override public Collection<Occurrence> call() throws Exception {
+						Collection<Occurrence> ret = Lists.newArrayList();
+						for (Occurrence file : fileLoader.get(functionKey)) {
+							for (Occurrence version : versionLoader.get(file.getFileNameHash().asReadOnlyByteBuffer())) {
+								for (Occurrence project :
+										projectLoader.get(version.getVersionHash().asReadOnlyByteBuffer())) {
+									ret.add(Occurrence.newBuilder().mergeFrom(file).mergeFrom(version)
+											.mergeFrom(project).build());
+								}
+							}
 						}
+						return ret;
 					}
-				}
+				});
 			} catch (ExecutionException e) {
 				Throwables.propagateIfPossible(e.getCause(), IOException.class);
 				throw new RuntimeException(e);
@@ -349,7 +365,7 @@ public class MakeFunction2FineClones implements Runnable {
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 		} catch (IOException | ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e.getCause());
+			throw new WrappedRuntimeException(e);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 			return; // Exit.

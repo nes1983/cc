@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
+import java.nio.ByteBuffer;
+
 import javax.inject.Singleton;
 
 import org.apache.hadoop.hbase.client.HTable;
@@ -91,8 +93,8 @@ public final class HBaseModule extends AbstractModule {
 					.toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
 
 			if (factory.isPresent()) {
-				TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>> loadingCache
-						= new TypeLiteral<LoadingCache<byte[], Iterable<Occurrence>>>() {};
+				TypeLiteral<LoadingCache<ByteBuffer, Iterable<Occurrence>>> loadingCache
+						= new TypeLiteral<LoadingCache<ByteBuffer, Iterable<Occurrence>>>() {};
 				bind(loadingCache).annotatedWith(named).toProvider(OccurrenceLoaderProvider.class);
 				bind(OccurrenceFactory.class).to(factory.get());
 				expose(loadingCache).annotatedWith(named);

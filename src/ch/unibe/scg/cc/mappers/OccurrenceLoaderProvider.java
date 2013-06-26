@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.Collection;
 
 import javax.inject.Inject;
@@ -19,7 +20,7 @@ import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
-class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable<Occurrence>>> {
+class OccurrenceLoaderProvider implements Provider<LoadingCache<ByteBuffer, Iterable<Occurrence>>> {
 	final HTable table;
 	final OccurrenceFactory occurrenceFactory;
 
@@ -30,12 +31,12 @@ class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable
 	}
 
 	static interface OccurrenceFactory {
-		public Occurrence make(Result result, byte[] hash);
+		public Occurrence make(Result result, ByteBuffer hash);
 	}
 
 	static class File2FunctionFactory implements OccurrenceFactory {
 		@Override
-		public Occurrence make(Result result, byte[] hash) {
+		public Occurrence make(Result result, ByteBuffer hash) {
 			return Occurrence.newBuilder().setFunctionHash(ByteString.copyFrom(hash))
 					.setFileHash(ByteString.copyFrom(result.getRow())).setFunctionBaseline(Bytes.toInt(result.value()))
 					.build();
@@ -44,7 +45,7 @@ class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable
 
 	static class Version2FileFactory implements OccurrenceFactory {
 		@Override
-		public Occurrence make(Result result, byte[] hash) {
+		public Occurrence make(Result result, ByteBuffer hash) {
 			return Occurrence.newBuilder().setVersionHash(ByteString.copyFrom(result.getRow()))
 					.setFileNameHash(ByteString.copyFrom(result.value())).build();
 		}
@@ -52,21 +53,24 @@ class OccurrenceLoaderProvider implements Provider<LoadingCache<byte[], Iterable
 
 	static class Project2VersionFactory implements OccurrenceFactory {
 		@Override
-		public Occurrence make(Result result, byte[] hash) {
+		public Occurrence make(Result result, ByteBuffer hash) {
 			return Occurrence.newBuilder().setProjectNameHash(ByteString.copyFrom(result.getRow()))
 					.setTag(Bytes.toString(result.value())).build();
 		}
 	}
 
 	@Override
-	public LoadingCache<byte[], Iterable<Occurrence>> get() {
-		return CacheBuilder.newBuilder().maximumSize(10000).concurrencyLevel(1)
-				.build(new CacheLoader<byte[], Iterable<Occurrence>>() {
+	public LoadingCache<ByteBuffer, Iterable<Occurrence>> get() {
+		return CacheBuilder.newBuilder().maximumSize(500).concurrencyLevel(1)
+				.build(new CacheLoader<ByteBuffer, Iterable<Occurrence>>() {
 					@Override
-					public Iterable<Occurrence> load(byte[] hash) throws IOException {
+					public Iterable<Occurrence> load(ByteBuffer hash) throws IOException {
 						Collection<Occurrence> ret = Lists.newArrayList();
 						Scan scan = new Scan(); // Don't use ScanProvider as it's optimized for MR jobs.
-						scan.addColumn(Constants.FAMILY, hash);
+						scan.setCacheBlocks(true); // Other reducers might request the same, so cache.
+						scan.setCaching(1); // We probably don't need adjacent rows. Only get the current.
+						scan.addColumn(Constants.FAMILY, Bytes.getBytes(hash));
+
 						for (Result result : table.getScanner(scan)) {
 							ret.add(occurrenceFactory.make(result, hash));
 						}

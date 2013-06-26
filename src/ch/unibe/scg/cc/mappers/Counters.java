@@ -34,5 +34,6 @@ enum Counters {
 	/** Clones that were rejected by the {@link SpamDetector} */
 	CLONES_REJECTED,
 	/** Clones that passed by the {@link SpamDetector} */
-	CLONES_PASSED;
+	CLONES_PASSED,
+	OCCURRENCES;
 }
