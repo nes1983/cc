@@ -170,14 +170,36 @@
 		</antcall>
 	</target>
 
-	<target name="makeColumnIndexVersion2Project">
+	<target name="makeColumnIndexProject2Version">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Version2Project" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Project2Version" />
+		</antcall>
+	</target>
+
+	<target name="makeColumnIndexVersion2File">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Version2File" />
+		</antcall>
+	</target>
+
+	<target name="makeColumnIndexFile2Function">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$File2Function" />
+		</antcall>
+	</target>
+
+	<target name="makeColumnIndexFunction2Snippet">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Function2Snippet" />
 		</antcall>
 	</target>
 
 	<target name="mrPipeline">
 		<antcall target="gitTablePopulate" />
+		<antcall target="makeColumnIndexFunction2Snippet" />
+		<antcall target="makeColumnIndexFile2Function" />
+		<antcall target="makeColumnIndexVersion2File" />
+		<antcall target="makeColumnIndexProject2Version" />
 		<antcall target="makeSnippet2Function" />
 		<antcall target="makeFunction2RoughClones" />
 		<antcall target="makeFunction2FineClones" />

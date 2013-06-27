@@ -13,6 +13,7 @@ import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
@@ -24,6 +25,7 @@ import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
+import com.google.inject.util.Modules;
 
 /**
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
@@ -85,14 +87,12 @@ public class MRMain extends Configured implements Tool {
 	public static class MRMainMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> guiceMapper;
 
+		// Unavoidable as we're getting the object via reflection.
+		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(final Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
-					Constants.GUICE_MAPPER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context), configurableModule(context.getConfiguration()));
-
-			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
+			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) mapperOrReducer(context,
+					Constants.GUICE_MAPPER_ANNOTATION_STRING);
 			guiceMapper.setup(context);
 		}
 
@@ -122,14 +122,12 @@ public class MRMain extends Configured implements Tool {
 	public static class MRMainTableMapper<KEYOUT, VALUEOUT> extends TableMapper<KEYOUT, VALUEOUT> {
 		GuiceTableMapper<KEYOUT, VALUEOUT> guiceMapper;
 
+		// Unavoidable as we're getting the object via reflection.
+		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(final Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
-					Constants.GUICE_MAPPER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context), configurableModule(context.getConfiguration()));
-
-			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
+			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) mapperOrReducer(context,
+					Constants.GUICE_MAPPER_ANNOTATION_STRING);
 			guiceMapper.setup(context);
 		}
 
@@ -155,13 +153,13 @@ public class MRMain extends Configured implements Tool {
 			Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
 		GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> reducer;
 
+		// Unavoidable as we're getting the object via reflection.
+		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
-					Constants.GUICE_REDUCER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context), configurableModule(context.getConfiguration()));
-			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
+			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) mapperOrReducer(context,
+					Constants.GUICE_REDUCER_ANNOTATION_STRING);
+			;
 			reducer.setup(context);
 		}
 
@@ -187,14 +185,12 @@ public class MRMain extends Configured implements Tool {
 			TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> reducer;
 
+		// Unavoidable as we're getting the object via reflection.
+		@SuppressWarnings("unchecked")
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
-					Constants.GUICE_REDUCER_ANNOTATION_STRING));
-			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context), configurableModule(context.getConfiguration()));
-			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) injector
-					.getInstance(clazz);
+			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) mapperOrReducer(
+					context, Constants.GUICE_REDUCER_ANNOTATION_STRING);
 			reducer.setup(context);
 		}
 
@@ -228,6 +224,19 @@ public class MRMain extends Configured implements Tool {
 		} catch (ClassNotFoundException e) {
 			throw new WrappedRuntimeException("Class " + qualifiedClassName + " not found!", e);
 		}
+	}
+
+	// TODO: HBaseModule needs to be added somehow again
+	static Object mapperOrReducer(TaskAttemptContext context, String annotationString) {
+		Object ret = Guice.createInjector(
+				Modules.override(new CCModule(), new JavaModule(), new MapperModule(), new CounterModule(context))
+						.with(configurableModule(context.getConfiguration()))).getInstance(
+				classForNameOrPanic(context.getConfiguration().get(annotationString)));
+		if (!(ret instanceof Mapper || ret instanceof Reducer)) {
+			throw new IllegalStateException("I tried to get a mapper/reducer from the context, but instead found a "
+					+ ret.getClass());
+		}
+		return ret;
 	}
 
 	static Module configurableModule(Configuration configuration) {
