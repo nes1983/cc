@@ -1,11 +1,11 @@
-create 'project2version', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'version2file', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'file2function', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'function2snippet', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'strings', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'snippet2function', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'function2roughclones', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'popularSnippets', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'function2fineclones', {NAME => 'd', COMPRESSION => 'SNAPPY'}
-create 'duplicateSnippetsPerFunction', {NAME => 't1', COMPRESSION => 'SNAPPY'}, {NAME => 't2', COMPRESSION => 'SNAPPY'}, {NAME => 't3', COMPRESSION => 'SNAPPY'}
+create 'project2version', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'version2file', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'file2function', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'function2snippet', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'strings', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'snippet2function', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'function2roughclones', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'popularSnippets', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'function2fineclones', {NAME => 'd', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
+create 'duplicateSnippetsPerFunction', {NAME => 't1', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}, {NAME => 't2', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}, {NAME => 't3', COMPRESSION => 'SNAPPY', BLOOMFILTER => :ROWCOL}
 exit
