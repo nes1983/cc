@@ -26,18 +26,18 @@ import com.google.inject.name.Names;
 public final class HBaseModule extends AbstractModule {
 	@Override
 	protected void configure() {
-		installHTable("project2version", Optional.<Class<? extends OccurrenceFactory>>of(Project2VersionFactory.class));
-		installHTable("version2file", Optional.<Class<? extends OccurrenceFactory>>of(Version2FileFactory.class));
-		installHTable("file2function", Optional.<Class<? extends OccurrenceFactory>>of(File2FunctionFactory.class));
-		installHTable("function2snippet", Optional.<Class<? extends OccurrenceFactory>>absent());
-		installHTable("strings", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("project2version", Optional.<Class<? extends OccurrenceFactory>> of(Project2VersionFactory.class));
+		installHTable("version2file", Optional.<Class<? extends OccurrenceFactory>> of(Version2FileFactory.class));
+		installHTable("file2function", Optional.<Class<? extends OccurrenceFactory>> of(File2FunctionFactory.class));
+		installHTable("function2snippet", Optional.<Class<? extends OccurrenceFactory>> absent());
+		installHTable("strings", Optional.<Class<? extends OccurrenceFactory>> absent());
 
-		installHTable("snippet2function", Optional.<Class<? extends OccurrenceFactory>>absent());
-		installHTable("function2roughclones", Optional.<Class<? extends OccurrenceFactory>>absent());
-		installHTable("popularSnippets", Optional.<Class<? extends OccurrenceFactory>>absent());
-		installHTable("function2fineclones", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("snippet2function", Optional.<Class<? extends OccurrenceFactory>> absent());
+		installHTable("function2roughclones", Optional.<Class<? extends OccurrenceFactory>> absent());
+		installHTable("popularSnippets", Optional.<Class<? extends OccurrenceFactory>> absent());
+		installHTable("function2fineclones", Optional.<Class<? extends OccurrenceFactory>> absent());
 
-		installHTable("duplicateSnippetsPerFunction", Optional.<Class<? extends OccurrenceFactory>>absent());
+		installHTable("duplicateSnippetsPerFunction", Optional.<Class<? extends OccurrenceFactory>> absent());
 
 		install(new FactoryModuleBuilder().build(BufferFactory.class));
 		bind(Scan.class).toProvider(ScanProvider.class);
