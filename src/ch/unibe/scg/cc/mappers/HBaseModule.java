@@ -39,15 +39,13 @@ public final class HBaseModule extends AbstractModule {
 
 		installHTable("duplicateSnippetsPerFunction", Optional.<Class<? extends OccurrenceFactory>>absent());
 
-		install(new FactoryModuleBuilder().implement(HTableWriteBuffer.class, HTableWriteBuffer.class).build(
-				BufferFactory.class));
+		install(new FactoryModuleBuilder().build(BufferFactory.class));
+		bind(Scan.class).toProvider(ScanProvider.class);
 
 		bind(new TypeLiteral<LoadingCache<byte[], String>>() {})
 			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
 			.toProvider(CloneLoaderProvider.class)
 			.in(Singleton.class);
-
-		bind(Scan.class).toProvider(ScanProvider.class);
 	}
 
 	private void installHTable(final String tableName, final Optional<Class<? extends OccurrenceFactory>> factory) {
@@ -101,7 +99,6 @@ public final class HBaseModule extends AbstractModule {
 
 			expose(HTable.class).annotatedWith(named);
 			expose(HTableWriteBuffer.class).annotatedWith(named);
-
 		}
 	}
 }
