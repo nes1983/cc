@@ -21,10 +21,13 @@ public class Constants {
 	}
 
 	public static final BytesWritable EMPTY_BYTES_WRITABLE = new BytesWritable(new byte[] {});
+	/** used as standard */
 	public static final byte[] FAMILY = Bytes.toBytes("d");
+	/** used for index */
+	public static final byte[] INDEX_FAMILY = Bytes.toBytes("i");
 	public static final String GUICE_MAPPER_ANNOTATION_STRING = "GuiceMapperAnnotation";
 	public static final String GUICE_REDUCER_ANNOTATION_STRING = "GuiceReducerAnnotation";
-
+	public static final String GUICE_CUSTOM_MODULE_ANNOTATION_STRING = "GuiceCustomModuleAnnotation";
 	/**
 	 * String values of counters should be kept synchronized with
 	 * {@link org.apache.hadoop.mapreduce.Counters}

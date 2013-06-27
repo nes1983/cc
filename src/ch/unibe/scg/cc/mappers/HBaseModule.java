@@ -88,9 +88,8 @@ public final class HBaseModule extends AbstractModule {
 			bind(HTable.class).annotatedWith(named).to(HTable.class);
 			bind(HTable.class).toProvider(HTableProvider.class).in(Singleton.class);
 
-			bind(HTableWriteBuffer.class)
-					.annotatedWith(named)
-					.toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
+			bind(HTableWriteBuffer.class).annotatedWith(named).to(HTableWriteBuffer.class);
+			bind(HTableWriteBuffer.class).toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
 
 			if (factory.isPresent()) {
 				TypeLiteral<LoadingCache<ByteBuffer, Iterable<Occurrence>>> loadingCache

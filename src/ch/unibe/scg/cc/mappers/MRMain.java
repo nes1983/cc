@@ -1,9 +1,11 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
@@ -18,8 +20,10 @@ import ch.unibe.scg.cc.CCModule;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
+import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Module;
 
 /**
  * Executes MR-jobs. All Mappers/Reducers use this class as the Main-Class in
@@ -86,7 +90,7 @@ public class MRMain extends Configured implements Tool {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					Constants.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context));
+					new CounterModule(context), configurableModule(context.getConfiguration()));
 
 			guiceMapper = (GuiceMapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
@@ -123,7 +127,7 @@ public class MRMain extends Configured implements Tool {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					Constants.GUICE_MAPPER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context));
+					new CounterModule(context), configurableModule(context.getConfiguration()));
 
 			guiceMapper = (GuiceTableMapper<KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			guiceMapper.setup(context);
@@ -156,7 +160,7 @@ public class MRMain extends Configured implements Tool {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					Constants.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context));
+					new CounterModule(context), configurableModule(context.getConfiguration()));
 			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) injector.getInstance(clazz);
 			reducer.setup(context);
 		}
@@ -188,7 +192,7 @@ public class MRMain extends Configured implements Tool {
 			Class<?> clazz = classForNameOrPanic(context.getConfiguration().get(
 					Constants.GUICE_REDUCER_ANNOTATION_STRING));
 			Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule(),
-					new CounterModule(context));
+					new CounterModule(context), configurableModule(context.getConfiguration()));
 			reducer = (GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>) injector
 					.getInstance(clazz);
 			reducer.setup(context);
@@ -224,5 +228,23 @@ public class MRMain extends Configured implements Tool {
 		} catch (ClassNotFoundException e) {
 			throw new WrappedRuntimeException("Class " + qualifiedClassName + " not found!", e);
 		}
+	}
+
+	static Module configurableModule(Configuration configuration) {
+		Module configurableModule = new Module() {
+			@Override
+			public void configure(Binder binder) {
+			}
+		};
+		String customModuleClassName = configuration.get(Constants.GUICE_CUSTOM_MODULE_ANNOTATION_STRING);
+		if (customModuleClassName != null) {
+			try {
+				configurableModule = (Module) classForNameOrPanic(customModuleClassName).getConstructor().newInstance();
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+				throw new WrappedRuntimeException(e);
+			}
+		}
+		return configurableModule;
 	}
 }

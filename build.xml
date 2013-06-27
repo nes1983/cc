@@ -170,6 +170,12 @@
 		</antcall>
 	</target>
 
+	<target name="makeColumnIndexVersion2Project">
+		<antcall target="indexCreator">
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Version2Project" />
+		</antcall>
+	</target>
+
 	<target name="mrPipeline">
 		<antcall target="gitTablePopulate" />
 		<antcall target="makeSnippet2Function" />
