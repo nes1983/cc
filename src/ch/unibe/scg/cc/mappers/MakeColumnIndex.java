@@ -30,7 +30,6 @@ class MakeColumnIndex {
 
 	/** inverts mapping: sets the column key as row key and vice versa */
 	static class MakeColumnIndexMapper extends GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		private static final byte[] EMPTY_BYTE_ARRAY = new byte[] {};
 		final PutFactory putFactory;
 
 		@Inject
