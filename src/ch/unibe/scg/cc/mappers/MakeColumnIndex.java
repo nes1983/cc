@@ -163,7 +163,7 @@ class MakeColumnIndex {
 		}
 	}
 
-	static abstract class Launcher {
+	static class Launcher {
 		final MRWrapper mrWrapper;
 		final Provider<Scan> scanProvider;
 
