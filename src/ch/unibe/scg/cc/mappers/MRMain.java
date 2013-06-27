@@ -1,7 +1,6 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
@@ -78,7 +77,7 @@ public class MRMain extends Configured implements Tool {
 	 * Guice configured), but Hadoop won't let us. So, this class bridges
 	 * between Guice and Hadoop. In setup, we Guice configure the real reducer,
 	 * and this class acts as a proxy to the guice-configured reducer.
-	 *
+	 * 
 	 * <p>
 	 * All methods except
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
@@ -213,7 +212,7 @@ public class MRMain extends Configured implements Tool {
 
 	/**
 	 * Throws a RuntimeException if the class is not found.
-	 *
+	 * 
 	 * @param qualifiedClassName
 	 *            the fully qualified class name
 	 * @return returns the class Object
@@ -248,9 +247,8 @@ public class MRMain extends Configured implements Tool {
 		String customModuleClassName = configuration.get(Constants.GUICE_CUSTOM_MODULE_ANNOTATION_STRING);
 		if (customModuleClassName != null) {
 			try {
-				configurableModule = (Module) classForNameOrPanic(customModuleClassName).getConstructor().newInstance();
-			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
-					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
+				configurableModule = (Module) classForNameOrPanic(customModuleClassName).newInstance();
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | SecurityException e) {
 				throw new WrappedRuntimeException(e);
 			}
 		}
