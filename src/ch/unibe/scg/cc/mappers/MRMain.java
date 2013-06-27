@@ -18,7 +18,6 @@ import ch.unibe.scg.cc.CCModule;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
-import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
@@ -61,13 +60,7 @@ public class MRMain extends Configured implements Tool {
 		logger.finer(Arrays.toString(args));
 		assert args.length == 1;
 		Class<?> c = classForNameOrPanic(args[0]);
-		AbstractModule confModule = new AbstractModule() {
-			@Override
-			protected void configure() {
-				// bind(Configuration.class).annotatedWith(Names.named("commandLine")).toInstance(getConf());
-			}
-		};
-		Injector injector = Guice.createInjector(confModule, new CCModule(), new JavaModule(), new HBaseModule());
+		Injector injector = Guice.createInjector(new CCModule(), new JavaModule(), new HBaseModule());
 		Object instance = injector.getInstance(c);
 		((Runnable) instance).run();
 		return 0;
