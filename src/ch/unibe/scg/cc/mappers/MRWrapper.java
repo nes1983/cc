@@ -10,7 +10,6 @@ import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.hadoop.hbase.mapreduce.MultithreadedTableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
@@ -74,9 +73,8 @@ public class MRWrapper {
 			if (!tableScanner.isPresent()) {
 				throw new IllegalArgumentException("tableScanner argument is not set!");
 			}
-			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner.get(),
-					MultithreadedTableMapper.class, outputKey, outputValue, job);
-			MultithreadedTableMapper.setMapperClass(job, (Class) MRMainTableMapper.class);
+			TableMapReduceUtil.initTableMapperJob(mapperTableName.get(), tableScanner.get(), MRMainTableMapper.class,
+					outputKey, outputValue, job);
 		} else {
 			job.setMapperClass(MRMainMapper.class);
 		}
