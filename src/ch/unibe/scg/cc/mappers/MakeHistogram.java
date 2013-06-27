@@ -102,6 +102,7 @@ public class MakeHistogram implements Runnable {
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
+			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			hbaseWrapper.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,
 					Optional.of("snippet2function"), Optional.<String> absent(), Optional.of(scan),

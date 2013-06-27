@@ -27,7 +27,9 @@ public class Constants {
 	public static final byte[] INDEX_FAMILY = Bytes.toBytes("i");
 	public static final String GUICE_MAPPER_ANNOTATION_STRING = "GuiceMapperAnnotation";
 	public static final String GUICE_REDUCER_ANNOTATION_STRING = "GuiceReducerAnnotation";
-	public static final String GUICE_CUSTOM_MODULE_ANNOTATION_STRING = "GuiceCustomModuleAnnotation";
+	public static final String GUICE_CUSTOM_MODULES_ANNOTATION_STRING = "GuiceCustomModulesAnnotation";
+	/** used to split the class names */
+	public static final char GUICE_CUSTOM_MODULES_ANNOTATION_STRING_SPLITTER = ',';
 	/**
 	 * String values of counters should be kept synchronized with
 	 * {@link org.apache.hadoop.mapreduce.Counters}

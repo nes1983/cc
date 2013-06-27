@@ -93,6 +93,7 @@ public class GitTablePopulator implements Runnable {
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
+			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			logger.finer("Input paths: " + inputPaths);
 			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),

@@ -355,6 +355,7 @@ public class MakeFunction2FineClones implements Runnable {
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, SequenceFileOutputFormat.class, OutputFormat.class);
 			config.setClass(Job.OUTPUT_KEY_CLASS, BytesWritable.class, Object.class);
 			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
+			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			Scan scan = scanProvider.get();
 			scan.addFamily(Constants.FAMILY);

@@ -201,7 +201,7 @@ class MakeColumnIndex {
 			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
 			config.setInt(MRJobConfig.REDUCE_MEMORY_MB, 3072);
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
-			config.set(Constants.GUICE_CUSTOM_MODULE_ANNOTATION_STRING, customModuleClass.getName());
+			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, customModuleClass.getName());
 
 			Scan scan = scanProvider.get();
 			scan.addFamily(Constants.FAMILY);

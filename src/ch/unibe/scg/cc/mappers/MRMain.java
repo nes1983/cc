@@ -2,6 +2,7 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
@@ -20,7 +21,7 @@ import ch.unibe.scg.cc.CCModule;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
-import com.google.inject.Binder;
+import com.google.common.collect.Lists;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
@@ -225,12 +226,11 @@ public class MRMain extends Configured implements Tool {
 		}
 	}
 
-	// TODO: HBaseModule needs to be added somehow again
 	static Object mapperOrReducer(TaskAttemptContext context, String annotationString) {
 		Object ret = Guice.createInjector(
 				Modules.override(new CCModule(), new JavaModule(), new MapperModule(), new CounterModule(context))
-						.with(configurableModule(context.getConfiguration()))).getInstance(
-				classForNameOrPanic(context.getConfiguration().get(annotationString)));
+						.with(configurableModules(context.getConfiguration())))
+						.getInstance(classForNameOrPanic(context.getConfiguration().get(annotationString)));
 		if (!(ret instanceof Mapper || ret instanceof Reducer)) {
 			throw new IllegalStateException("I tried to get a mapper/reducer from the context, but instead found a "
 					+ ret.getClass());
@@ -238,20 +238,19 @@ public class MRMain extends Configured implements Tool {
 		return ret;
 	}
 
-	static Module configurableModule(Configuration configuration) {
-		Module configurableModule = new Module() {
-			@Override
-			public void configure(Binder binder) {
-			}
-		};
-		String customModuleClassName = configuration.get(Constants.GUICE_CUSTOM_MODULE_ANNOTATION_STRING);
-		if (customModuleClassName != null) {
+	static Collection<Module> configurableModules(Configuration configuration) {
+		Collection<Module> configurableModules = Lists.newArrayList();
+		String customModuleClassNames = configuration.get(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING);
+		if (customModuleClassNames != null) {
 			try {
-				configurableModule = (Module) classForNameOrPanic(customModuleClassName).newInstance();
+				for (String customModuleClassName : customModuleClassNames.
+						split(String.valueOf(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING_SPLITTER))) {
+					configurableModules.add((Module) classForNameOrPanic(customModuleClassName).newInstance());
+				}
 			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | SecurityException e) {
 				throw new WrappedRuntimeException(e);
 			}
 		}
-		return configurableModule;
+		return configurableModules;
 	}
 }
