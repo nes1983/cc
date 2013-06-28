@@ -64,7 +64,8 @@ public class MakeFunction2RoughClones implements Runnable {
 
 	static class MakeFunction2RoughClonesMapper extends
 			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		private static final int POPULAR_SNIPPET_THRESHOLD = 1000;
+        // HBase dies when set to 1000!
+		private static final int POPULAR_SNIPPET_THRESHOLD = 500;
 		final PutFactory putFactory;
 
 		@Inject
@@ -229,8 +230,6 @@ public class MakeFunction2RoughClones implements Runnable {
 			config.set(MRJobConfig.IO_SORT_MB, "512");
 			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
 			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
-			// set to 1 if unsure TODO: check max mem allocation if only 1 jvm
-			config.set(MRJobConfig.JVM_NUMTASKS_TORUN, "-1");
 			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
 			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
 			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
