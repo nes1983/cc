@@ -90,9 +90,8 @@ public class MakeFunction2RoughClones implements Runnable {
 				logger.warning("FAMILY MAP SIZE " + columns.size());
 				// fill popularSnippets table
 				for (Entry<byte[], byte[]> column : columns) {
-					byte[] function = column.getKey();
 					byte[] location = column.getValue();
-					Put put = putFactory.create(function);
+					Put put = putFactory.create(MakeSnippet2Function.ColumnKeyConverter.decode(column.getKey()));
 					put.add(Constants.FAMILY, snippet, 0l, location);
 					write(put);
 				}
@@ -102,14 +101,14 @@ public class MakeFunction2RoughClones implements Runnable {
 
 			// cross product of the columns of the snippetHash
 			for (Entry<byte[], byte[]> columnFixed : columns) {
-				byte[] thisFunction = columnFixed.getKey();
+				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnFixed.getKey());
 				byte[] thisLocation = columnFixed.getValue();
 				for (Entry<byte[], byte[]> columnVar : columns) {
 					if (columnFixed.equals(columnVar)) {
 						continue;
 					}
-
-					byte[] thatFunction = columnVar.getKey();
+					
+					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnVar.getKey());
 					byte[] thatLocation = columnVar.getValue();
 
 					// save only half of the functions as row-key

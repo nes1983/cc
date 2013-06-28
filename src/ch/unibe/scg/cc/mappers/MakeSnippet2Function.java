@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 import java.io.IOException;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
@@ -90,8 +92,9 @@ public class MakeSnippet2Function implements Runnable {
 				byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
 				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 				byte[] factRelativeLocation = Bytes.tail(functionHashPlusLocationKey, 8);
-
-				put.add(Constants.FAMILY, functionHash, 0l, factRelativeLocation);
+				
+				byte[] columnKey = ColumnKeyConverter.encode(functionHash);
+				put.add(Constants.FAMILY, columnKey, 0l, factRelativeLocation);
 			}
 
 			// prevent saving non-recurring hashes
@@ -99,6 +102,23 @@ public class MakeSnippet2Function implements Runnable {
 				logger.finer("save " + BaseEncoding.base16().encode(snippet).substring(0, 6));
 				context.write(snippetKey, put);
 			}
+		}
+	}
+	
+	static class ColumnKeyConverter {
+		static final int FUNCTION_LENGTH = 20;
+
+		static byte[] encode(byte[] functionHash) {
+			checkArgument(functionHash.length == FUNCTION_LENGTH, "function hash length illegally was "
+					+ functionHash.length);
+			return functionHash;
+		}
+
+		/** @return function hash decoded from {@code encoded} */
+		static byte[] decode(byte[] encoded) {
+			checkArgument(encoded.length == FUNCTION_LENGTH, "encoded length illegally was "
+					+ encoded.length);
+			return encoded;
 		}
 	}
 
