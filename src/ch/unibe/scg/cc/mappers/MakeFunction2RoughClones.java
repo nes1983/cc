@@ -107,7 +107,7 @@ public class MakeFunction2RoughClones implements Runnable {
 					if (columnFixed.equals(columnVar)) {
 						continue;
 					}
-					
+
 					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnVar.getKey());
 					byte[] thatLocation = columnVar.getValue();
 
@@ -222,18 +222,18 @@ public class MakeFunction2RoughClones implements Runnable {
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
-			config.set(MRJobConfig.NUM_REDUCES, "30");
+			config.setInt(MRJobConfig.NUM_REDUCES, 30);
 			// TODO test that
-			config.set(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, "0");
-			config.set(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, "true");
-			config.set(MRJobConfig.IO_SORT_MB, "512");
-			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
+			config.setInt(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, 0);
+			config.setBoolean(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, true);
+			config.setInt(MRJobConfig.IO_SORT_MB, 512);
+			config.setInt(MRJobConfig.IO_SORT_FACTOR, 100);
 			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
 			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
-			config.set(MRJobConfig.MAP_MEMORY_MB, "1536");
+			config.setInt(MRJobConfig.MAP_MEMORY_MB, 1536);
 			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
-			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
-			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
+			config.setInt(MRJobConfig.REDUCE_MEMORY_MB, 4400);
+			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx3800M");
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			mrWrapper.launchMapReduceJob(MakeFunction2RoughClones.class.getName() + "Job", config,
