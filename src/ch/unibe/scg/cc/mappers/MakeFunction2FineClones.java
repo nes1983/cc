@@ -286,16 +286,36 @@ public class MakeFunction2FineClones implements Runnable {
 				return occCache.get(functionKey, new Callable<Collection<Occurrence>>() {
 					@Override public Collection<Occurrence> call() throws Exception {
 						Collection<Occurrence> ret = Lists.newArrayList();
-						for (Occurrence file : fileLoader.get(functionKey)) {
-							for (Occurrence version : versionLoader.get(file.getFileNameHash().asReadOnlyByteBuffer())) {
-								for (Occurrence project :
-										projectLoader.get(version.getVersionHash().asReadOnlyByteBuffer())) {
-									ret.add(Occurrence.newBuilder().mergeFrom(file).mergeFrom(version)
+						Iterable<Occurrence> files = fileLoader.get(functionKey);
+						checkNotEmpty(files, Bytes.getBytes(functionKey), "files");
+						
+						for (Occurrence file : files) {
+							Iterable<Occurrence> versions = versionLoader
+									.get(file.getFileHash().asReadOnlyByteBuffer());
+							checkNotEmpty(versions, file.getFileHash().toByteArray(), "versions");
+							
+							for (Occurrence version : versions) {
+								Iterable<Occurrence> projects = projectLoader.get(version.getVersionHash()
+										.asReadOnlyByteBuffer());
+								checkNotEmpty(projects, version.getVersionHash().toByteArray(), "projects");
+								
+								for (Occurrence project : projects) {
+									ret.add(Occurrence.newBuilder()
+											.mergeFrom(file)
+											.mergeFrom(version)
 											.mergeFrom(project).build());
 								}
 							}
 						}
+						
 						return ret;
+					}
+
+					private void checkNotEmpty(Iterable<Occurrence> i, byte[] hash, String table) {
+						if (Iterables.isEmpty(i)) {
+							logger.severe("Found no " + table + " for hash "
+									+ BaseEncoding.base16().encode(hash).substring(0, 6));
+						}
 					}
 				});
 			} catch (ExecutionException e) {
