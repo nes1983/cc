@@ -74,20 +74,23 @@ public class MakeFunction2RoughClones implements Runnable {
 			this.putFactory = putFactory;
 		}
 
-		/** receives rows from htable snippet2function */
+		/**
+		 * Input: map from snippet to functions that contain it.<br>
+		 * Output: Map from function to all its collisions.
+		 */
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
 
-			Set<Entry<byte[], byte[]>> columns = value.getFamilyMap(Constants.FAMILY).entrySet();
+			Set<Entry<byte[], byte[]>> functions = value.getFamilyMap(Constants.FAMILY).entrySet();
 
 			// special handling of popular snippets
-			if (columns.size() > POPULAR_SNIPPET_THRESHOLD) {
-				logger.warning("FAMILY MAP SIZE " + columns.size());
+			if (functions.size() > POPULAR_SNIPPET_THRESHOLD) {
+				logger.warning("FAMILY MAP SIZE " + functions.size());
 				// fill popularSnippets table
-				for (Entry<byte[], byte[]> column : columns) {
+				for (Entry<byte[], byte[]> column : functions) {
 					byte[] location = column.getValue();
 					Put put = putFactory.create(MakeSnippet2Function.ColumnKeyConverter.decode(column.getKey()));
 					put.add(Constants.FAMILY, snippet, 0l, location);
@@ -98,12 +101,12 @@ public class MakeFunction2RoughClones implements Runnable {
 			}
 
 			// cross product of the columns of the snippetHash
-			for (Entry<byte[], byte[]> columnFixed : columns) {
-				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnFixed.getKey());
-				byte[] thisLocation = columnFixed.getValue();
-				for (Entry<byte[], byte[]> columnVar : columns) {
-					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnVar.getKey());
-					byte[] thatLocation = columnVar.getValue();
+			for (Entry<byte[], byte[]> thisFunctionEntry : functions) {
+				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thisFunctionEntry.getKey());
+				byte[] thisLocation = thisFunctionEntry.getValue();
+				for (Entry<byte[], byte[]> thatFunctionEntry : functions) {
+					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thatFunctionEntry.getKey());
+					byte[] thatLocation = thatFunctionEntry.getValue();
 
 					// save only half of the functions as row-key
 					// full table gets reconstructed in MakeSnippet2FineClones
