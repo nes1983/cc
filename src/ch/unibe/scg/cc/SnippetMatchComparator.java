@@ -1,12 +1,15 @@
 package ch.unibe.scg.cc;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.collect.ComparisonChain;
 
-public class SnippetMatchComparator implements Comparator<SnippetMatch> {
+public class SnippetMatchComparator implements Comparator<SnippetMatch>, Serializable {
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public int compare(SnippetMatch o1, SnippetMatch o2) {
 		return ComparisonChain

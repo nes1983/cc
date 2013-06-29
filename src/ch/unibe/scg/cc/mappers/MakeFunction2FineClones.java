@@ -271,7 +271,7 @@ public class MakeFunction2FineClones implements Runnable {
 			}
 
 			cloneGroupBuilder.setText(
-					stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from).toString());
+					stringOfLinesFactory.make(functionString, '\n').getLines(from, to - from));
 
 			byte[] key = ColumnKeyCodec.encode(commonness, cloneGroupBuilder.build());
 			context.write(new BytesWritable(key), NullWritable.get());
@@ -288,17 +288,17 @@ public class MakeFunction2FineClones implements Runnable {
 						Collection<Occurrence> ret = Lists.newArrayList();
 						Iterable<Occurrence> files = fileLoader.get(functionKey);
 						checkNotEmpty(files, Bytes.getBytes(functionKey), "files");
-						
+
 						for (Occurrence file : files) {
 							Iterable<Occurrence> versions = versionLoader
 									.get(file.getFileHash().asReadOnlyByteBuffer());
 							checkNotEmpty(versions, file.getFileHash().toByteArray(), "versions");
-							
+
 							for (Occurrence version : versions) {
 								Iterable<Occurrence> projects = projectLoader.get(version.getVersionHash()
 										.asReadOnlyByteBuffer());
 								checkNotEmpty(projects, version.getVersionHash().toByteArray(), "projects");
-								
+
 								for (Occurrence project : projects) {
 									ret.add(Occurrence.newBuilder()
 											.mergeFrom(file)
@@ -307,7 +307,7 @@ public class MakeFunction2FineClones implements Runnable {
 								}
 							}
 						}
-						
+
 						return ret;
 					}
 

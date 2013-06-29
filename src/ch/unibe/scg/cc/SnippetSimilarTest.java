@@ -4,6 +4,7 @@ import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.io.Serializable;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -36,7 +37,9 @@ import com.google.protobuf.ByteString;
  */
 @SuppressWarnings("javadoc")
 public final class SnippetSimilarTest {
-	static class SnippetLocationComparator implements Comparator<SnippetLocation> {
+	static class SnippetLocationComparator implements Comparator<SnippetLocation>, Serializable {
+		private static final long serialVersionUID = 1L;
+
 		@Override public int compare(SnippetLocation o1, SnippetLocation o2) {
 			return o1.getSnippet().asReadOnlyByteBuffer().compareTo(
 					o2.getSnippet().asReadOnlyByteBuffer());

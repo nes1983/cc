@@ -79,9 +79,6 @@ class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
 
 	@Override
 	public void close() throws IOException {
-		try {
-			fsin.close();
-		} catch (Exception e) {
-		}
+		fsin.close();
 	}
 }

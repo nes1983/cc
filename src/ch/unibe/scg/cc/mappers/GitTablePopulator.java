@@ -150,6 +150,8 @@ public class GitTablePopulator implements Runnable {
 	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final int MAX_TAGS_TO_PARSE = 15;
 
+		private static final Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
+
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
 		// available.
@@ -239,7 +241,10 @@ public class GitTablePopulator implements Runnable {
 				}
 			} finally {
 				if (tdir != null) {
-					tdir.delete();
+					boolean ok = tdir.delete();
+					if (!ok) {
+						logger.warning("Failed to delete " + tdir);
+					}
 				}
 			}
 			logger.info("Finished processing: " + projectName);

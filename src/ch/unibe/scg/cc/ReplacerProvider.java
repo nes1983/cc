@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -51,7 +52,9 @@ public abstract class ReplacerProvider implements Provider<Replace[]> {
 	}
 
 	/** lexicographic comparison of method names */
-	static class MethodComparator implements Comparator<Method> {
+	static class MethodComparator implements Comparator<Method>, Serializable {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public int compare(Method m1, Method m2) {
 			return m1.getName().compareTo(m2.getName());
