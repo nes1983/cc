@@ -2,6 +2,7 @@ package ch.unibe.scg.cc;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 
@@ -9,7 +10,6 @@ import javax.inject.Inject;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
 import dk.brics.automaton.AutomatonMatcher;
@@ -33,7 +33,7 @@ public class ShingleHasher implements Hasher {
 	final String[] stringArrayType = new String[] {};
 
 	Collection<String> shingles(String doc) throws CannotBeHashedException {
-		Collection<String> ret = Lists.newArrayList();
+		Collection<String> ret = new ArrayList<>();
 		int start = 0;
 		for (int i = 0; i < SHINGLE_LENGTH; i++) {
 			AutomatonMatcher matcher = shingleRegex.newMatcher(doc, start, doc.length());

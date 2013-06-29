@@ -1,13 +1,11 @@
 package ch.unibe.scg.cc.javaFrontend;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.regex.Pattern;
 
 import ch.unibe.scg.cc.SnippetWithBaseline;
 import ch.unibe.scg.cc.Tokenizer;
-
-import com.google.common.collect.Lists;
-
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
@@ -30,7 +28,7 @@ public class JavaTokenizer implements Tokenizer {
 		int currentLineNumber = 0;
 		int lastStart = 0;
 
-		Collection<SnippetWithBaseline> ret = Lists.newArrayList();
+		Collection<SnippetWithBaseline> ret = new ArrayList<>();
 		AutomatonMatcher m = splitter.newMatcher(file);
 
 		while (m.find()) {

@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.logging.Logger;
@@ -21,7 +22,6 @@ import ch.unibe.scg.cc.CCModule;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
-import com.google.common.collect.Lists;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
@@ -238,7 +238,7 @@ public class MRMain extends Configured implements Tool {
 	}
 
 	static Collection<Module> configurableModules(Configuration configuration) {
-		Collection<Module> configurableModules = Lists.newArrayList();
+		Collection<Module> configurableModules = new ArrayList<>();
 		String customModuleClassNames = configuration.get(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING);
 		if (customModuleClassNames != null) {
 			try {

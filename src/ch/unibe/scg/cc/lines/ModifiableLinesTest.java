@@ -4,12 +4,11 @@ import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import com.google.common.collect.Lists;
 
 @SuppressWarnings("javadoc")
 public final class ModifiableLinesTest {
@@ -26,12 +25,12 @@ public final class ModifiableLinesTest {
 
 	@Test
 	public void testFactory() {
-		Collection<Integer> lineBreakPositions = Lists.newArrayList();
+		Collection<Integer> lineBreakPositions = new ArrayList<>();
 		for (LineBreak br : r.lineBreaks) {
 			lineBreakPositions.add(br.getPosition());
 		}
 
-		Collection<Integer> weights = Lists.newArrayList();
+		Collection<Integer> weights = new ArrayList<>();
 		for (LineBreak br : r.lineBreaks) {
 			lineBreakPositions.add(br.getWeight());
 		}
@@ -44,13 +43,13 @@ public final class ModifiableLinesTest {
 		lines.replace(3, 4, "waa");
 		assertThat(lines.toString(), is("a\nbwaac\nd\ne\nf\n"));
 
-		Collection<Integer> lineBreakPositions = Lists.newArrayList();
+		Collection<Integer> lineBreakPositions = new ArrayList<>();
 		for (LineBreak br : lines.lineBreaks) {
 			lineBreakPositions.add(br.getPosition());
 		}
 		assertThat(lineBreakPositions, contains(0, 1, 7, 9, 11, 13));
 
-		Collection<Integer> weights = Lists.newArrayList();
+		Collection<Integer> weights = new ArrayList<>();
 		for (LineBreak br : lines.lineBreaks) {
 			lineBreakPositions.add(br.getWeight());
 		}

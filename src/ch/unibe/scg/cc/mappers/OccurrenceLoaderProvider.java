@@ -2,6 +2,7 @@ package ch.unibe.scg.cc.mappers;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map.Entry;
 
@@ -18,7 +19,6 @@ import ch.unibe.scg.cc.Protos.Occurrence;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import com.google.common.collect.Lists;
 import com.google.protobuf.ByteString;
 
 class OccurrenceLoaderProvider implements Provider<LoadingCache<ByteBuffer, Iterable<Occurrence>>> {
@@ -69,10 +69,10 @@ class OccurrenceLoaderProvider implements Provider<LoadingCache<ByteBuffer, Iter
 				.build(new CacheLoader<ByteBuffer, Iterable<Occurrence>>() {
 					@Override
 					public Iterable<Occurrence> load(ByteBuffer hash) throws IOException {
-						Collection<Occurrence> ret = Lists.newArrayList();
+						Collection<Occurrence> ret = new ArrayList<>();
 						Get indexLookup = new Get(Bytes.getBytes(hash));
 						indexLookup.addFamily(Constants.INDEX_FAMILY);
-						for(Entry<byte[], byte[]> column : 
+						for(Entry<byte[], byte[]> column :
 								table.get(indexLookup).getFamilyMap(Constants.INDEX_FAMILY).entrySet()) {
 							Get get = new Get(column.getKey());
 							get.addFamily(Constants.FAMILY);

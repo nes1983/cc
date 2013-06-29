@@ -2,14 +2,13 @@ package ch.unibe.scg.cc.git;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.eclipse.jgit.lib.ObjectId;
-
-import com.google.common.collect.Lists;
 
 public class PackedRefParser {
 	final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs\\/(?:tags|heads)\\/(.+)");
@@ -25,7 +24,7 @@ public class PackedRefParser {
 	}
 
 	private List<PackedRef> parse(String content) {
-		List<PackedRef> list = Lists.newArrayList();
+		List<PackedRef> list = new ArrayList<>();
 		try (Scanner s = new Scanner(content)) {
 			while (s.hasNextLine()) {
 				String line = s.nextLine();

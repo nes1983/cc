@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
@@ -120,7 +121,7 @@ public class GitTablePopulator implements Runnable {
 		// executing `hadoop fs -ls /tmp/repos/` or recursively searching in
 		// the HAR file is terribly slow
 
-		Collection<Path> packFilePaths = Lists.newArrayList();
+		Collection<Path> packFilePaths = new ArrayList<>();
 
 		try(BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
 				Charsets.UTF_8))) {

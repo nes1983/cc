@@ -26,7 +26,6 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableListMultimap;
-import com.google.common.collect.Lists;
 import com.google.inject.Guice;
 import com.google.protobuf.ByteString;
 
@@ -79,7 +78,7 @@ public final class SnippetSimilarTest {
 
 		table = filterCollisions(table);
 
-		final List<List<SnippetMatch>> matches = Lists.newArrayList();
+		final List<List<SnippetMatch>> matches = new ArrayList<>();
 		for (int i = 0; i < table.size(); i++) {
 			matches.add(new ArrayList<SnippetMatch>());
 			// only look at j > i to avoid outputting the same match twice.
@@ -131,7 +130,7 @@ public final class SnippetSimilarTest {
 
 	/** Filter to keep only snippets that collide. */
 	private List<List<SnippetLocation>> filterCollisions(List<List<SnippetLocation>> table) {
-		final List<SnippetLocation> filtering = Lists.newArrayList();
+		final List<SnippetLocation> filtering = new ArrayList<>();
 		for (final List<SnippetLocation> subTable : table) {
 			filtering.addAll(subTable);
 		}
@@ -173,7 +172,7 @@ public final class SnippetSimilarTest {
 
 	List<SnippetLocation> allSnippets(StringOfLines sol, Hasher hasher, byte[] function)
 			throws CannotBeHashedException {
-		final List<SnippetLocation> ret = Lists.newArrayList();
+		final List<SnippetLocation> ret = new ArrayList<>();
 
 		for (int frameStart = 0; frameStart + MINIMUM_LINES
 				< sol.getNumberOfLines(); frameStart++) {

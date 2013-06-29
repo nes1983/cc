@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc.activerecord;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -10,12 +11,11 @@ import org.apache.hadoop.hbase.util.Bytes;
 import ch.unibe.scg.cc.CannotBeHashedException;
 import ch.unibe.scg.cc.Hasher;
 
-import com.google.common.collect.Lists;
 import com.google.inject.assistedinject.Assisted;
 
 public class Function extends Column {
 	public static final byte[] FUNCTION_SNIPPET = Bytes.toBytes("fs");
-	final private List<Snippet> snippets = Lists.newArrayList();
+	final private List<Snippet> snippets = new ArrayList<>();
 	final private int baseLine;
 	/** contains the normalized content */
 	final transient CharSequence normalized;

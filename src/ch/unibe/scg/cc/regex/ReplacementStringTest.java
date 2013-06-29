@@ -6,7 +6,7 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import jregex.MatchResult;
 
@@ -28,7 +28,7 @@ public class ReplacementStringTest {
 	@Test
 	public ReplacementString testSimpleConstruction() {
 		ReplacementString s = new ReplacementString("waa$2blaa$1");
-		ArrayList<Segment> contents = s.contents;
+		List<Segment> contents = s.contents;
 
 		assertThat(contents.get(0), ((Matcher) isA(LiteralSegment.class)));
 		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));
@@ -47,7 +47,7 @@ public class ReplacementStringTest {
 	@Test
 	public ReplacementString testConstruction() {
 		ReplacementString s = new ReplacementString("$2$1");
-		ArrayList<Segment> contents = s.contents;
+		List<Segment> contents = s.contents;
 
 		assertThat(contents.get(0), ((Matcher) isA(PlaceHolderSegment.class)));
 		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));

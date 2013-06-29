@@ -6,6 +6,7 @@ import static com.google.common.base.Preconditions.checkState;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map.Entry;
@@ -54,7 +55,6 @@ import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
 import com.google.common.io.BaseEncoding;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
@@ -112,7 +112,7 @@ public class MakeFunction2FineClones implements Runnable {
 		 * IOException occurs, abort. Otherwise, try on and log error.
 		 */
 		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
-			Collection<Clone> ret = Lists.newArrayList();
+			Collection<Clone> ret = new ArrayList<>();
 			for (Clone clone : clones) {
 				try {
 					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
@@ -285,7 +285,7 @@ public class MakeFunction2FineClones implements Runnable {
 			try {
 				return occCache.get(functionKey, new Callable<Collection<Occurrence>>() {
 					@Override public Collection<Occurrence> call() throws Exception {
-						Collection<Occurrence> ret = Lists.newArrayList();
+						Collection<Occurrence> ret = new ArrayList<>();
 						Iterable<Occurrence> files = fileLoader.get(functionKey);
 						checkNotEmpty(files, Bytes.getBytes(functionKey), "files");
 

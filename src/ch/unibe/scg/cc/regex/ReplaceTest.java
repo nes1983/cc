@@ -4,7 +4,7 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.isA;
 import static org.junit.Assert.assertThat;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import jregex.Pattern;
 
@@ -42,7 +42,7 @@ public class ReplaceTest {
 	@Test
 	public Replace makePatternReplace() {
 		Replace r = new Replace(new Pattern("x"), "<$0>");
-		ArrayList<Segment> contents = r.replacementString.contents;
+		List<Segment> contents = r.replacementString.contents;
 		assertThat(contents.size(), is(3));
 		assertThat(contents.get(0), ((Matcher) isA(LiteralSegment.class)));
 		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));
@@ -71,7 +71,7 @@ public class ReplaceTest {
 	public Replace reverseThings() {
 		Replace r = new Replace(new Pattern("(\\d*)(bla)"), "$2$1");
 
-		ArrayList<Segment> contents = r.replacementString.contents;
+		List<Segment> contents = r.replacementString.contents;
 		assertThat(contents.size(), is(2));
 
 		String reversed = r.allReplaced("123bla");

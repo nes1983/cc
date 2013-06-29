@@ -3,6 +3,7 @@ package ch.unibe.scg.cc;
 import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
 
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -137,7 +138,7 @@ public class CloneExpander {
 			return;
 		}
 
-		List<SnippetMatch> toBeWeavedIns = Lists.newArrayList();
+		List<SnippetMatch> toBeWeavedIns = new ArrayList<>();
 		for (SnippetLocation thisLocation : function2PopularSnippets.get(thisFunction)) {
 			assert snippet2PopularSnippet.containsKey(thisLocation.getSnippet().asReadOnlyByteBuffer());
 			for (SnippetLocation thatLocation : snippet2PopularSnippet.get(thisLocation.getSnippet()
