@@ -16,9 +16,7 @@ public class SnippetWithBaseline implements Comparable<SnippetWithBaseline> {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + baseLine;
-		if (snippet != null) {
-			result = prime * result +  snippet.hashCode();
-		}
+		result = prime * result + Objects.hashCode(snippet.hashCode());
 		return result;
 	}
 
