@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import java.util.Objects;
+
 import com.google.common.collect.ComparisonChain;
 
 public class SnippetWithBaseline implements Comparable<SnippetWithBaseline> {
