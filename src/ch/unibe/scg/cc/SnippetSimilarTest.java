@@ -140,9 +140,8 @@ public final class SnippetSimilarTest {
 						o2.getSnippet().asReadOnlyByteBuffer());
 			}});
 
-		table = ImmutableList.of((List<SnippetLocation>) new ArrayList<SnippetLocation>(),
-				(List<SnippetLocation>) new ArrayList<SnippetLocation>(),
-				(List<SnippetLocation>) new ArrayList<SnippetLocation>());
+		table = ImmutableList.<List<SnippetLocation>>of(
+				new ArrayList<SnippetLocation>(), new ArrayList<SnippetLocation>(), new ArrayList<SnippetLocation>());
 		SnippetLocation last = filtering.get(0);
 		SnippetLocation next = filtering.get(1);
 		if (last.getSnippet().asReadOnlyByteBuffer().equals(next.getSnippet().asReadOnlyByteBuffer())) {
