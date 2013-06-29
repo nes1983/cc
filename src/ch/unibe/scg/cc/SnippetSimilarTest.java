@@ -86,7 +86,7 @@ public final class SnippetSimilarTest {
 				for (final SnippetLocation e : table.get(i)) {
 					final int pos = Collections.binarySearch(table.get(j), e, snippetLocationComparator);
 					if (pos >= 0) {
-						matches.get(matches.size() - 1).add(SnippetMatch.newBuilder()
+						matches.get(i).add(SnippetMatch.newBuilder()
 								.setThisSnippetLocation(e)
 								.setThatSnippetLocation(table.get(j).get(pos))
 								.build());
