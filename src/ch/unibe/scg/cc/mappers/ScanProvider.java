@@ -4,6 +4,7 @@ import javax.inject.Provider;
 
 import org.apache.hadoop.hbase.client.Scan;
 
+/** Provides scans appropriate for reading tables sequentially, as in a Mapper. */
 class ScanProvider implements Provider<Scan> {
 	@Override
 	public Scan get() {
