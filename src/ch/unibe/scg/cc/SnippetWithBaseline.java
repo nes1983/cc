@@ -11,6 +11,25 @@ public class SnippetWithBaseline implements Comparable<SnippetWithBaseline> {
 		this.snippet = snippet;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + baseLine;
+		if (snippet != null) {
+			result = prime * result +  snippet.hashCode();
+		}
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object that) {
+		if (!(that instanceof SnippetWithBaseline)) {
+			return false;
+		}
+		return compareTo((SnippetWithBaseline) that) == 0;
+	}
+
 	public int getBaseLine() {
 		return baseLine;
 	}
@@ -19,7 +38,6 @@ public class SnippetWithBaseline implements Comparable<SnippetWithBaseline> {
 		return snippet;
 	}
 
-	// For testing only.
 	@Override
 	public int compareTo(SnippetWithBaseline o) {
 		return ComparisonChain.start()
