@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -59,7 +60,7 @@ public final class SpamDetector {
      * may include more than the identifiers.
      */
     Set<String> extractVocabulary(String doc) {
-        Set<String> ret = Sets.newHashSet();
+        Set<String> ret = new HashSet<>();
         Matcher match = identifier.matcher(doc);
         while (match.find()) {
             ret.add(match.group());
