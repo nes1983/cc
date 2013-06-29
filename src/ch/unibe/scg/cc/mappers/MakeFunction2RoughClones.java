@@ -102,10 +102,6 @@ public class MakeFunction2RoughClones implements Runnable {
 				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnFixed.getKey());
 				byte[] thisLocation = columnFixed.getValue();
 				for (Entry<byte[], byte[]> columnVar : columns) {
-					if (columnFixed.equals(columnVar)) {
-						continue;
-					}
-
 					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(columnVar.getKey());
 					byte[] thatLocation = columnVar.getValue();
 
