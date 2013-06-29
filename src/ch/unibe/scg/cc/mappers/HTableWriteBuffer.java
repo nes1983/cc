@@ -78,5 +78,6 @@ public class HTableWriteBuffer implements Closeable {
 	@Override
 	public void close() throws IOException {
 		writeRemainingPuts();
+		assert invariant();
 	}
 }
