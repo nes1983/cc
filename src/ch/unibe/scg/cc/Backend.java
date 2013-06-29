@@ -217,13 +217,13 @@ public interface Backend extends Closeable {
 
 		@Override
 		public void close() throws IOException {
-			Closer closer = Closer.create();
-			closer.register(version2file);
-			closer.register(file2function);
-			closer.register(function2snippet);
-			closer.register(strings);
-			closer.register(project2version);
-			closer.close();
+			try (Closer closer = Closer.create()) {
+				closer.register(version2file);
+				closer.register(file2function);
+				closer.register(function2snippet);
+				closer.register(strings);
+				closer.register(project2version);
+			}
 		}
 	}
 }

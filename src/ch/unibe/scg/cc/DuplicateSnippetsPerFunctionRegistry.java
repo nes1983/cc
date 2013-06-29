@@ -102,10 +102,10 @@ public class DuplicateSnippetsPerFunctionRegistry implements Backend {
 
 	@Override
 	public void close() throws IOException {
-		Closer closer = Closer.create();
-		closer.register(duplicateSnippetsPerFunction);
-		closer.register(backend);
-		closer.close();
+		try (Closer closer = Closer.create()) {
+			closer.register(duplicateSnippetsPerFunction);
+			closer.register(backend);
+		}
 	}
 
 	@Override

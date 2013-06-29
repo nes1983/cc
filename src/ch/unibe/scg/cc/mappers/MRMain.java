@@ -78,7 +78,7 @@ public class MRMain extends Configured implements Tool {
 	 * Guice configured), but Hadoop won't let us. So, this class bridges
 	 * between Guice and Hadoop. In setup, we Guice configure the real reducer,
 	 * and this class acts as a proxy to the guice-configured reducer.
-	 * 
+	 *
 	 * <p>
 	 * All methods except
 	 * {@link #run(org.apache.hadoop.mapreduce.Mapper.Context)} are called on
@@ -159,7 +159,6 @@ public class MRMain extends Configured implements Tool {
 		protected void setup(Context context) throws IOException, InterruptedException {
 			reducer = (GuiceReducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT>) mapperOrReducer(context,
 					Constants.GUICE_REDUCER_ANNOTATION_STRING);
-			;
 			reducer.setup(context);
 		}
 
@@ -213,7 +212,7 @@ public class MRMain extends Configured implements Tool {
 
 	/**
 	 * Throws a RuntimeException if the class is not found.
-	 * 
+	 *
 	 * @param qualifiedClassName
 	 *            the fully qualified class name
 	 * @return returns the class Object

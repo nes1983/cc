@@ -7,9 +7,8 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import junit.framework.Assert;
-
 import org.apache.hadoop.mapreduce.Counter;
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
