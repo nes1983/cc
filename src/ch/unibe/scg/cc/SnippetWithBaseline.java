@@ -24,7 +24,7 @@ public class SnippetWithBaseline implements Comparable<SnippetWithBaseline> {
 
 	@Override
 	public boolean equals(Object that) {
-		if (!(that instanceof SnippetWithBaseline)) {
+		if ((that == null) || !(that instanceof SnippetWithBaseline)) {
 			return false;
 		}
 		return compareTo((SnippetWithBaseline) that) == 0;
