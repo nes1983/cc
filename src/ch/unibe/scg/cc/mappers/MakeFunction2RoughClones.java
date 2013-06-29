@@ -3,7 +3,6 @@ package ch.unibe.scg.cc.mappers;
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.IOException;
-import java.nio.ByteBuffer;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Logger;
@@ -77,8 +76,7 @@ public class MakeFunction2RoughClones implements Runnable {
 
 		/** receives rows from htable snippet2function */
 		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value,
-				Context context) throws IOException,
+		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
@@ -114,7 +112,7 @@ public class MakeFunction2RoughClones implements Runnable {
 					// save only half of the functions as row-key
 					// full table gets reconstructed in MakeSnippet2FineClones
 					// This *must* be the same as in CloneExpander.
-					if (ByteBuffer.wrap(thisFunction).compareTo(ByteBuffer.wrap(thatFunction)) >= 0) {
+					if (Bytes.compareTo(thisFunction, thatFunction) >= 0) {
 						continue;
 					}
 
