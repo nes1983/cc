@@ -7,6 +7,7 @@ import javax.inject.Singleton;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
 
+import ch.unibe.scg.cc.PopularSnippetMaps;
 import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 import ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider.File2FunctionFactory;
@@ -46,6 +47,9 @@ public final class HBaseModule extends AbstractModule {
 			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
 			.toProvider(CloneLoaderProvider.class)
 			.in(Singleton.class);
+
+		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
+
 	}
 
 	private void installHTable(final String tableName, final Optional<Class<? extends OccurrenceFactory>> factory) {

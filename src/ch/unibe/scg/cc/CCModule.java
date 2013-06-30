@@ -14,7 +14,6 @@ import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.activerecord.Function.FunctionFactory;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
-import ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
@@ -36,8 +35,6 @@ public class CCModule extends AbstractModule {
 		install(new FactoryModuleBuilder().build(VersionFactory.class));
 		install(new FactoryModuleBuilder().build(CodeFileFactory.class));
 		install(new FactoryModuleBuilder().build(FunctionFactory.class));
-
-		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class).in(Singleton.class);
 
 		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(false);
 	}

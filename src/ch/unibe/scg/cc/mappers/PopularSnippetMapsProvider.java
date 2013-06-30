@@ -22,7 +22,7 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 
-public class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
+class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 	@Inject(optional = true)
 	@Named("popularSnippets")
 	HTable popularSnippets;
