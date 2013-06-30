@@ -23,6 +23,11 @@
 	<value>4096</value>
 </property>
 <property>
+	<!-- we experienced timeouts, this may be related to: https://issues.apache.org/jira/browse/HDFS-770 -->
+	<name>dfs.datanode.socket.write.timeout</name>
+	<value>0</value>
+</property>
+<property>
 	<name>mapreduce.framework.name</name>
 	<value>yarn</value>
 </property>
