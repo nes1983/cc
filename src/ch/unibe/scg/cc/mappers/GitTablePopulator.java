@@ -54,7 +54,6 @@ import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
-import com.google.common.collect.Lists;
 import com.google.common.io.Files;
 import com.google.inject.Inject;
 
@@ -149,8 +148,6 @@ public class GitTablePopulator implements Runnable {
 	}
 
 	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
-		private static final int MAX_TAGS_TO_PARSE = 15;
-
 		private static final Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 
 		// Optional because in MRMain, we have an injector that does not set
@@ -217,7 +214,6 @@ public class GitTablePopulator implements Runnable {
 				// ProgressMonitor set to null, so NullProgressMonitor will be used.
 				pp.parse(null);
 
-				tags = Lists.reverse(tags).subList(0, Math.min(tags.size(), MAX_TAGS_TO_PARSE));
 				for (PackedRef paref : tags) {
 					logger.info("WALK TAG: " + paref.getName());
 
