@@ -64,16 +64,14 @@ public class MakeFunction2FineClones implements Runnable {
 	static final String OUT_DIR = "/tmp/fineclones/";
 	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class.getName());
 	final HTable function2fineclones;
-	final HTable popularSnippets;
 	final MRWrapper mrWrapper;
 	final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("popularSnippets") HTable popularSnippets,
-			@Named("function2fineclones") HTable function2fineclones, Provider<Scan> scanProvider) {
+	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("function2fineclones") HTable function2fineclones,
+			Provider<Scan> scanProvider) {
 		this.mrWrapper = mrWrapper;
 		this.function2fineclones = function2fineclones;
-		this.popularSnippets = popularSnippets;
 		this.scanProvider = scanProvider;
 	}
 
