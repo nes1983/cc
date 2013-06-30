@@ -158,26 +158,22 @@ public class CloneExpander {
 
 		Collections.sort(toBeWeavedIns, snippetMatchComparator);
 
-		final ListIterator<SnippetMatch> unprocessed = unprocessedMatches.listIterator();
-
+		final ListIterator<SnippetMatch> target = unprocessedMatches.listIterator();
+		SnippetMatch cur = target.next();
 		for (SnippetMatch toBeWeavedIn : toBeWeavedIns) {
 			// Forward until we leave the right function or position is too big.
-			SnippetMatch snippetMatch = null;
-			while (unprocessed.hasNext()) {
-				snippetMatch = unprocessed.next();
-				if (snippetMatchComparator.compare(toBeWeavedIn, snippetMatch) <= 0) {
-					break;
-				}
+			while (target.hasNext()
+					&& snippetMatchComparator.compare(toBeWeavedIn, cur) > 0) {
+				cur = target.next();
 			}
-			assert snippetMatch != null;
 
 			// We're one step too far now, so walk back left, unless the
 			// insertion point is the last element
-			if (snippetMatchComparator.compare(toBeWeavedIn, snippetMatch) <= 0) {
-				unprocessed.previous();
+			if (snippetMatchComparator.compare(toBeWeavedIn, cur) <= 0) {
+				target.previous();
 			}
 
-			unprocessed.add(toBeWeavedIn);
+			target.add(toBeWeavedIn);
 		}
 	}
 
