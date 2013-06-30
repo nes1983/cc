@@ -84,16 +84,23 @@ public class MakeFunction2RoughClones implements Runnable {
 			byte[] snippet = value.getRow();
 			assert snippet.length == 21;
 
-			Set<Entry<byte[], byte[]>> functions = value.getFamilyMap(Constants.FAMILY).entrySet();
+			Set<Entry<byte[], byte[]>> locationCells = value.getFamilyMap(Constants.FAMILY).entrySet();
 
 			// special handling of popular snippets
-			if (functions.size() > POPULAR_SNIPPET_THRESHOLD) {
-				logger.warning("FAMILY MAP SIZE " + functions.size());
+			if (locationCells.size() > POPULAR_SNIPPET_THRESHOLD) {
 				// fill popularSnippets table
-				for (Entry<byte[], byte[]> column : functions) {
-					byte[] location = column.getValue();
-					Put put = putFactory.create(MakeSnippet2Function.ColumnKeyConverter.decode(column.getKey()));
-					put.add(Constants.FAMILY, snippet, 0l, location);
+				for (Entry<byte[], byte[]> locationCell : locationCells) {
+					ColumnKeyConverter.decode(locationCell.getValue());
+					// TODO: Decoding should not happen here.
+					SnippetLocation loc = SnippetLocation.newBuilder()
+							.setFunction(ByteString.copyFrom(locationCell.getKey()))
+							.setPosition(Bytes.toInt(Bytes.head(locationCell.getValue(), 4)))
+							.setLength(Bytes.toInt(Bytes.tail(locationCell.getValue(), 4)))
+							.setSnippet(ByteString.copyFrom(snippet)).build();
+
+					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
+					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(loc), 0l,
+							PopularSnippetsCodec.encodeColumnKey(loc));
 					write(put);
 				}
 				// we're done, don't go any further!
@@ -101,10 +108,10 @@ public class MakeFunction2RoughClones implements Runnable {
 			}
 
 			// cross product of the columns of the snippetHash
-			for (Entry<byte[], byte[]> thisFunctionEntry : functions) {
+			for (Entry<byte[], byte[]> thisFunctionEntry : locationCells) {
 				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thisFunctionEntry.getKey());
 				byte[] thisLocation = thisFunctionEntry.getValue();
-				for (Entry<byte[], byte[]> thatFunctionEntry : functions) {
+				for (Entry<byte[], byte[]> thatFunctionEntry : locationCells) {
 					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thatFunctionEntry.getKey());
 					byte[] thatLocation = thatFunctionEntry.getValue();
 

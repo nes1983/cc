@@ -12,7 +12,6 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.PopularSnippetMaps;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
@@ -20,7 +19,6 @@ import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;
-import com.google.protobuf.ByteString;
 
 class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 	@Inject(optional = true)
@@ -51,19 +49,14 @@ class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 
 				try (ResultScanner rs = popularSnippets.getScanner(scan)) {
 					for (Result r : rs) {
-						byte[] function = r.getRow();
 						NavigableMap<byte[], byte[]> fm = r.getFamilyMap(Constants.FAMILY);
 						for (Entry<byte[], byte[]> cell : fm.entrySet()) {
-							byte[] snippet = cell.getKey();
 							// To save space we didn't store a protobuffer object.
-							// We create the object now with the information we
-							// have.
-							SnippetLocation snippetLocation = SnippetLocation.newBuilder()
-									.setFunction(ByteString.copyFrom(function)).setSnippet(ByteString.copyFrom(snippet))
-									.setPosition(Bytes.toInt(Bytes.head(cell.getValue(), 4)))
-									.setLength(Bytes.toInt(Bytes.tail(cell.getValue(), 4))).build();
-							function2PopularSnippets.put(ByteBuffer.wrap(function), snippetLocation);
-							snippet2PopularSnippets.put(ByteBuffer.wrap(snippet), snippetLocation);
+							// We create the object now with the information we have.
+							SnippetLocation snippetLocation = PopularSnippetsCodec
+									.decodeSnippetLocation(r.getRow(), cell.getKey(), cell.getValue());
+							function2PopularSnippets.put(snippetLocation.getFunction().asReadOnlyByteBuffer(), snippetLocation);
+							snippet2PopularSnippets.put(snippetLocation.getSnippet().asReadOnlyByteBuffer(), snippetLocation);
 						}
 					}
 				} catch (IOException e) {
