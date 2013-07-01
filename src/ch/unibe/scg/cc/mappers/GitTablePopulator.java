@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -46,8 +47,6 @@ import ch.unibe.scg.cc.activerecord.CodeFile;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
-import ch.unibe.scg.cc.git.PackedRef;
-import ch.unibe.scg.cc.git.PackedRefParser;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
 import com.google.common.base.Charsets;
@@ -70,6 +69,57 @@ public class GitTablePopulator implements Runnable {
 	@Inject
 	GitTablePopulator(MapReduceLauncher launcher) {
 		this.launcher = launcher;
+	}
+
+	private static  class PackedRefParser {
+		final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs\\/(?:tags|heads)\\/(.+)");
+
+		public List<PackedRef> parse(InputStream ins) throws IOException {
+			int ch;
+			StringBuilder content = new StringBuilder();
+			while ((ch = ins.read()) != -1) {
+				content.append((char) ch);
+			}
+
+			return parse(content.toString());
+		}
+
+		private List<PackedRef> parse(String content) {
+			List<PackedRef> list = new ArrayList<>();
+			try (Scanner s = new Scanner(content)) {
+				while (s.hasNextLine()) {
+					String line = s.nextLine();
+					Matcher m = pattern.matcher(line);
+					if (m.matches()) {
+						String sha = m.group(1);
+						assert sha.length() == 40;
+						ObjectId key = ObjectId.fromString(sha);
+						String name = m.group(2);
+						PackedRef pr = new PackedRef(key, name);
+						list.add(pr);
+					}
+				}
+			}
+			return list;
+		}
+	}
+
+	static class PackedRef {
+		final ObjectId key;
+		final String name;
+
+		PackedRef(ObjectId key, String name) {
+			this.key = key;
+			this.name = name;
+		}
+
+		public ObjectId getKey() {
+			return key;
+		}
+
+		public String getName() {
+			return name;
+		}
 	}
 
 	@Override
