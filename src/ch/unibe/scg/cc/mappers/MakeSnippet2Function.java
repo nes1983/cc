@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc.mappers;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import java.io.IOException;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
@@ -96,14 +94,6 @@ public class MakeSnippet2Function implements Runnable {
 				return; // prevent processing non-recurring hashes
 			}
 
-			for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
-				byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
-				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
-				Bytes.tail(functionHashPlusLocationKey, 8);
-
-				ColumnKeyConverter.encode(functionHash);
-			}
-
 			// special handling of popular snippets
 			if (functionCount > POPULAR_SNIPPET_THRESHOLD) {
 				// fill popularSnippets table
@@ -113,8 +103,6 @@ public class MakeSnippet2Function implements Runnable {
 					byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
 					byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 					Bytes.tail(functionHashPlusLocationKey, 8);
-
-					ColumnKeyConverter.encode(functionHash);
 
 					SnippetLocation loc = SnippetLocation.newBuilder()
 							.setFunction(ByteString.copyFrom(functionHash))
@@ -176,23 +164,6 @@ public class MakeSnippet2Function implements Runnable {
 							new ImmutableBytesWritable(snippetMatch.toByteArray()));
 				}
 			}
-		}
-	}
-
-	static class ColumnKeyConverter {
-		static final int FUNCTION_LENGTH = 20;
-
-		static byte[] encode(byte[] functionHash) {
-			checkArgument(functionHash.length == FUNCTION_LENGTH, "function hash length illegally was "
-					+ functionHash.length);
-			return functionHash;
-		}
-
-		/** @return function hash decoded from {@code encoded} */
-		static byte[] decode(byte[] encoded) {
-			checkArgument(encoded.length == FUNCTION_LENGTH, "encoded length illegally was "
-					+ encoded.length);
-			return encoded;
 		}
 	}
 
