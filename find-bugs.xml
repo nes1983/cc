@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1372668605498" analysisTimestamp="1372668519341" release="">
+  <Project projectName="clon">
+    <Jar>/Users/nes/repos/clon/bin</Jar>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/jregex1.2_01.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/commons-cli-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/commons-configuration-1.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/juniversalchardet-1.0.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/jsch-0.1.48.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guava-14.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/commons-logging-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/dev-only/hamcrest-all-1.3.0RC2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/dev-only/mockito-all-1.9.0-rc1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbasetest-only/commons-lang-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbasetest-only/log4j-1.2.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbasetest-only/slf4j-api-1.7.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbasetest-only/zookeeper-3.4.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbasetest-only/slf4j-simple-1.7.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/protobuf-java-2.5.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/org.eclipse.jgit-2.3.1.201302201838-r.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/aopalliance.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-assistedinject-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-grapher-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-jmx-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-jndi-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-multibindings-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-persist-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/guice-throwingproviders-3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/javax.inject.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/jexample-4.5-391.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/automaton.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/eclipse4.2/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/eclipse4.2/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hbase-0.94.6-cdh4.3.0-security.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-auth-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-common-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-hdfs-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-mapreduce-client-app-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-mapreduce-client-common-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-mapreduce-client-core-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-yarn-api-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-yarn-client-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-yarn-common-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nes/repos/clon/libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nes/repos/clon/src-gen</SrcDir>
+    <SrcDir>/Users/nes/repos/clon/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.appengine.findbugs-cloud" online="true" detailsUrl="http://findbugs-cloud.appspot.com/issues/%s?embed"></Cloud>
+  </Project>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.CCModule$1">
+      <SourceLine classname="ch.unibe.scg.cc.CCModule$1" start="1" end="30" sourcefile="CCModule.java" sourcepath="ch/unibe/scg/cc/CCModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.CCModule$2">
+      <SourceLine classname="ch.unibe.scg.cc.CCModule$2" start="1" end="31" sourcefile="CCModule.java" sourcepath="ch/unibe/scg/cc/CCModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Normalizer">
+      <SourceLine classname="ch.unibe.scg.cc.Normalizer" sourcefile="Normalizer.java" sourcepath="ch/unibe/scg/cc/Normalizer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Normalizer" name="&lt;init&gt;" signature="([Lch/unibe/scg/cc/regex/Replace;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Normalizer" start="13" end="15" startBytecode="0" endBytecode="69" sourcefile="Normalizer.java" sourcepath="ch/unibe/scg/cc/Normalizer.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.Normalizer" name="replacers" signature="[Lch/unibe/scg/cc/regex/Replace;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Normalizer" sourcefile="Normalizer.java" sourcepath="ch/unibe/scg/cc/Normalizer.java"/>
+    </Field>
+    <LocalVariable name="replaces" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ch.unibe.scg.cc.Normalizer" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="Normalizer.java" sourcepath="ch/unibe/scg/cc/Normalizer.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Clone">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Clone" name="PARSER" signature="Lcom/google/protobuf/Parser;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1627" end="1627" startBytecode="7" endBytecode="7" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Clone">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Clone" name="unknownFields" signature="Lcom/google/protobuf/UnknownFieldSet;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/UnknownFieldSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.UnknownFieldSet" start="59" end="976" sourcefile="UnknownFieldSet.java" sourcepath="com/google/protobuf/UnknownFieldSet.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1525" end="1525" startBytecode="0" endBytecode="0" sourcefile="Clone.java" sourcepath="ch/unibe/scg/cc/Clone.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Clone">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Clone" name="thatFunction_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1525" end="1525" startBytecode="0" endBytecode="0" sourcefile="Clone.java" sourcepath="ch/unibe/scg/cc/Clone.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Clone">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Clone" name="thisFunction_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1525" end="1525" startBytecode="0" endBytecode="0" sourcefile="Clone.java" sourcepath="ch/unibe/scg/cc/Clone.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Clone">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Protos$Clone" name="writeReplace" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1819" end="1819" startBytecode="0" endBytecode="46" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Clone" start="1819" end="1819" startBytecode="1" endBytecode="1" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$CloneGroup">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$CloneGroup" name="PARSER" signature="Lcom/google/protobuf/Parser;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" start="2415" end="2415" startBytecode="7" endBytecode="7" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$CloneGroup">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$CloneGroup" name="unknownFields" signature="Lcom/google/protobuf/UnknownFieldSet;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/UnknownFieldSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.UnknownFieldSet" start="59" end="976" sourcefile="UnknownFieldSet.java" sourcepath="com/google/protobuf/UnknownFieldSet.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" start="2327" end="2327" startBytecode="0" endBytecode="0" sourcefile="CloneGroup.java" sourcepath="ch/unibe/scg/cc/CloneGroup.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$CloneGroup">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Protos$CloneGroup" name="writeReplace" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" start="2573" end="2573" startBytecode="0" endBytecode="46" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$CloneGroup" start="2573" end="2573" startBytecode="1" endBytecode="1" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="PARSER" signature="Lcom/google/protobuf/Parser;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3521" end="3521" startBytecode="7" endBytecode="7" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="unknownFields" signature="Lcom/google/protobuf/UnknownFieldSet;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/UnknownFieldSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.UnknownFieldSet" start="59" end="976" sourcefile="UnknownFieldSet.java" sourcepath="com/google/protobuf/UnknownFieldSet.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="fileHash_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="fileNameHash_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="functionHash_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="projectNameHash_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$Occurrence" name="versionHash_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="3394" end="3394" startBytecode="0" endBytecode="0" sourcefile="Occurrence.java" sourcepath="ch/unibe/scg/cc/Occurrence.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$Occurrence">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Protos$Occurrence" name="writeReplace" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="4018" end="4018" startBytecode="0" endBytecode="46" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$Occurrence" start="4018" end="4018" startBytecode="1" endBytecode="1" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetLocation">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetLocation" name="PARSER" signature="Lcom/google/protobuf/Parser;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="874" end="874" startBytecode="7" endBytecode="7" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetLocation">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetLocation" name="unknownFields" signature="Lcom/google/protobuf/UnknownFieldSet;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/UnknownFieldSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.UnknownFieldSet" start="59" end="976" sourcefile="UnknownFieldSet.java" sourcepath="com/google/protobuf/UnknownFieldSet.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="782" end="782" startBytecode="0" endBytecode="0" sourcefile="SnippetLocation.java" sourcepath="ch/unibe/scg/cc/SnippetLocation.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetLocation">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetLocation" name="function_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="782" end="782" startBytecode="0" endBytecode="0" sourcefile="SnippetLocation.java" sourcepath="ch/unibe/scg/cc/SnippetLocation.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="3" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetLocation">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetLocation" name="snippet_" signature="Lcom/google/protobuf/ByteString;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/ByteString;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.ByteString" start="60" end="967" sourcefile="ByteString.java" sourcepath="com/google/protobuf/ByteString.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="782" end="782" startBytecode="0" endBytecode="0" sourcefile="SnippetLocation.java" sourcepath="ch/unibe/scg/cc/SnippetLocation.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetLocation">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Protos$SnippetLocation" name="writeReplace" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="1044" end="1044" startBytecode="0" endBytecode="46" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetLocation" start="1044" end="1044" startBytecode="1" endBytecode="1" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetMatch">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetMatch" name="PARSER" signature="Lcom/google/protobuf/Parser;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" start="143" end="143" startBytecode="7" endBytecode="7" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="2" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetMatch">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.Protos$SnippetMatch" name="unknownFields" signature="Lcom/google/protobuf/UnknownFieldSet;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Field>
+    <Type descriptor="Lcom/google/protobuf/UnknownFieldSet;" role="TYPE_FOUND">
+      <SourceLine classname="com.google.protobuf.UnknownFieldSet" start="59" end="976" sourcefile="UnknownFieldSet.java" sourcepath="com/google/protobuf/UnknownFieldSet.java"/>
+    </Type>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" start="45" end="45" startBytecode="0" endBytecode="0" sourcefile="SnippetMatch.java" sourcepath="ch/unibe/scg/cc/SnippetMatch.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.Protos$SnippetMatch">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.Protos$SnippetMatch" name="writeReplace" signature="()Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" start="251" end="251" startBytecode="0" endBytecode="46" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.Protos$SnippetMatch" start="251" end="251" startBytecode="1" endBytecode="1" sourcefile="Protos.java" sourcepath="ch/unibe/scg/cc/Protos.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.SnippetSimilarTest$1">
+      <SourceLine classname="ch.unibe.scg.cc.SnippetSimilarTest$1" start="1" end="114" sourcefile="SnippetSimilarTest.java" sourcepath="ch/unibe/scg/cc/SnippetSimilarTest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.SnippetSimilarTest$2">
+      <SourceLine classname="ch.unibe.scg.cc.SnippetSimilarTest$2" start="1" end="140" sourcefile="SnippetSimilarTest.java" sourcepath="ch/unibe/scg/cc/SnippetSimilarTest.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.SpamDetectorTest">
+      <SourceLine classname="ch.unibe.scg.cc.SpamDetectorTest" sourcefile="SpamDetectorTest.java" sourcepath="ch/unibe/scg/cc/SpamDetectorTest.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.SpamDetectorTest" name="spamDetector" signature="Lch/unibe/scg/cc/SpamDetector;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.SpamDetectorTest" sourcefile="SpamDetectorTest.java" sourcepath="ch/unibe/scg/cc/SpamDetectorTest.java"/>
+    </Field>
+    <Method classname="ch.unibe.scg.cc.SpamDetectorTest" name="testIsSpamResult" signature="()V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.SpamDetectorTest" start="25" end="33" startBytecode="0" endBytecode="193" sourcefile="SpamDetectorTest.java" sourcepath="ch/unibe/scg/cc/SpamDetectorTest.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.SpamDetectorTest" start="27" end="27" startBytecode="12" endBytecode="12" sourcefile="SpamDetectorTest.java" sourcepath="ch/unibe/scg/cc/SpamDetectorTest.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.CodeFile">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.CodeFile" sourcefile="CodeFile.java" sourcepath="ch/unibe/scg/cc/activerecord/CodeFile.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.activerecord.CodeFile" name="getHash" signature="()[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.CodeFile" start="30" end="30" startBytecode="0" endBytecode="46" sourcefile="CodeFile.java" sourcepath="ch/unibe/scg/cc/activerecord/CodeFile.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.activerecord.CodeFile" name="fileContentHash" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.CodeFile" sourcefile="CodeFile.java" sourcepath="ch/unibe/scg/cc/activerecord/CodeFile.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.CodeFile" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="CodeFile.java" sourcepath="ch/unibe/scg/cc/activerecord/CodeFile.java"/>
+  </BugInstance>
+  <BugInstance type="MS_MUTABLE_ARRAY" priority="2" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Column">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Column" sourcefile="Column.java" sourcepath="ch/unibe/scg/cc/activerecord/Column.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.activerecord.Column" name="FAMILY_NAME" signature="[B" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Column" sourcefile="Column.java" sourcepath="ch/unibe/scg/cc/activerecord/Column.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Column" start="11" end="11" startBytecode="5" endBytecode="5" sourcefile="Column.java" sourcepath="ch/unibe/scg/cc/activerecord/Column.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Function">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.activerecord.Function" name="getHash" signature="()[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" start="49" end="56" startBytecode="0" endBytecode="131" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.activerecord.Function" name="hash" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" start="56" end="56" startBytecode="42" endBytecode="42" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+  </BugInstance>
+  <BugInstance type="MS_MUTABLE_ARRAY" priority="2" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Function">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.activerecord.Function" name="FUNCTION_SNIPPET" signature="[B" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Function" start="17" end="17" startBytecode="5" endBytecode="5" sourcefile="Function.java" sourcepath="ch/unibe/scg/cc/activerecord/Function.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Project">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Project" sourcefile="Project.java" sourcepath="ch/unibe/scg/cc/activerecord/Project.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.activerecord.Project" name="getHash" signature="()[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Project" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="Project.java" sourcepath="ch/unibe/scg/cc/activerecord/Project.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.activerecord.Project" name="hash" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Project" sourcefile="Project.java" sourcepath="ch/unibe/scg/cc/activerecord/Project.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Project" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="Project.java" sourcepath="ch/unibe/scg/cc/activerecord/Project.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Snippet">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Snippet" sourcefile="Snippet.java" sourcepath="ch/unibe/scg/cc/activerecord/Snippet.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.activerecord.Snippet" name="setHash" signature="([B)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Snippet" start="39" end="41" startBytecode="0" endBytecode="95" sourcefile="Snippet.java" sourcepath="ch/unibe/scg/cc/activerecord/Snippet.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.activerecord.Snippet" name="hash" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Snippet" sourcefile="Snippet.java" sourcepath="ch/unibe/scg/cc/activerecord/Snippet.java"/>
+    </Field>
+    <LocalVariable name="hash" register="1" pc="23" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Snippet" start="40" end="40" startBytecode="23" endBytecode="23" sourcefile="Snippet.java" sourcepath="ch/unibe/scg/cc/activerecord/Snippet.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.activerecord.Version">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Version" sourcefile="Version.java" sourcepath="ch/unibe/scg/cc/activerecord/Version.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.activerecord.Version" name="getHash" signature="()[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Version" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="Version.java" sourcepath="ch/unibe/scg/cc/activerecord/Version.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.activerecord.Version" name="hash" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.activerecord.Version" sourcefile="Version.java" sourcepath="ch/unibe/scg/cc/activerecord/Version.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.activerecord.Version" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="Version.java" sourcepath="ch/unibe/scg/cc/activerecord/Version.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NEW_FOR_GETCLASS" priority="3" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest">
+      <SourceLine classname="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" sourcefile="JavaTokenizerTest.java" sourcepath="ch/unibe/scg/cc/javaFrontend/JavaTokenizerTest.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" name="theRegexWorks" signature="()V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" start="23" end="31" startBytecode="0" endBytecode="183" sourcefile="JavaTokenizerTest.java" sourcepath="ch/unibe/scg/cc/javaFrontend/JavaTokenizerTest.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" start="23" end="23" startBytecode="7" endBytecode="7" sourcefile="JavaTokenizerTest.java" sourcepath="ch/unibe/scg/cc/javaFrontend/JavaTokenizerTest.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.javaFrontend.Type1Module$1">
+      <SourceLine classname="ch.unibe.scg.cc.javaFrontend.Type1Module$1" start="1" end="39" sourcefile="JavaModule.java" sourcepath="ch/unibe/scg/cc/javaFrontend/JavaModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.javaFrontend.Type2Module$1">
+      <SourceLine classname="ch.unibe.scg.cc.javaFrontend.Type2Module$1" start="1" end="51" sourcefile="JavaModule.java" sourcepath="ch/unibe/scg/cc/javaFrontend/JavaModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.lines.ModifiableLines$1">
+      <SourceLine classname="ch.unibe.scg.cc.lines.ModifiableLines$1" start="1" end="22" sourcefile="ModifiableLines.java" sourcepath="ch/unibe/scg/cc/lines/ModifiableLines.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.lines.ModifiableLinesTest">
+      <SourceLine classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" sourcefile="ModifiableLinesTest.java" sourcepath="ch/unibe/scg/cc/lines/ModifiableLinesTest.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" name="r" signature="Lch/unibe/scg/cc/lines/ModifiableLines;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" sourcefile="ModifiableLinesTest.java" sourcepath="ch/unibe/scg/cc/lines/ModifiableLinesTest.java"/>
+    </Field>
+    <Method classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" name="testFactory" signature="()V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" start="28" end="39" startBytecode="0" endBytecode="372" sourcefile="ModifiableLinesTest.java" sourcepath="ch/unibe/scg/cc/lines/ModifiableLinesTest.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.lines.ModifiableLinesTest" start="29" end="29" startBytecode="12" endBytecode="12" sourcefile="ModifiableLinesTest.java" sourcepath="ch/unibe/scg/cc/lines/ModifiableLinesTest.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" name="thatString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" start="54" end="54" startBytecode="11" endBytecode="11" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" name="thisString" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" start="53" end="53" startBytecode="6" endBytecode="6" sourcefile="CloneLoaderProvider.java" sourcepath="ch/unibe/scg/cc/mappers/CloneLoaderProvider.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.Constants$ColumnName">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" sourcefile="Constants.java" sourcepath="ch/unibe/scg/cc/mappers/Constants.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" name="getName" signature="()[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" start="19" end="19" startBytecode="0" endBytecode="46" sourcefile="Constants.java" sourcepath="ch/unibe/scg/cc/mappers/Constants.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" name="name" signature="[B" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" sourcefile="Constants.java" sourcepath="ch/unibe/scg/cc/mappers/Constants.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.Constants$ColumnName" start="19" end="19" startBytecode="4" endBytecode="4" sourcefile="Constants.java" sourcepath="ch/unibe/scg/cc/mappers/Constants.java"/>
+  </BugInstance>
+  <BugInstance type="SR_NOT_CHECKED" priority="2" abbrev="RR" category="BAD_PRACTICE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.CountLOC">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CountLOC" sourcefile="CountLOC.java" sourcepath="ch/unibe/scg/cc/mappers/CountLOC.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.CountLOC" name="countLines" signature="(Ljava/lang/String;)I" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.CountLOC" start="65" end="70" startBytecode="0" endBytecode="96" sourcefile="CountLOC.java" sourcepath="ch/unibe/scg/cc/mappers/CountLOC.java"/>
+    </Method>
+    <Method classname="java.io.LineNumberReader" name="skip" signature="(J)J" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.LineNumberReader" start="228" end="242" startBytecode="0" endBytecode="262" sourcefile="LineNumberReader.java" sourcepath="java/io/LineNumberReader.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.CountLOC" start="66" end="66" startBytecode="26" endBytecode="26" sourcefile="CountLOC.java" sourcepath="ch/unibe/scg/cc/mappers/CountLOC.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.GuiceReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.GuiceReducer" name="cleanup" signature="(Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="23" end="24" startBytecode="0" endBytecode="89" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="23" end="23" startBytecode="2" endBytecode="2" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.GuiceReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.GuiceReducer" name="reduce" signature="(Ljava/lang/Object;Ljava/lang/Iterable;Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="29" end="30" startBytecode="0" endBytecode="131" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="29" end="29" startBytecode="4" endBytecode="4" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.GuiceReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.GuiceReducer" name="setup" signature="(Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="18" end="19" startBytecode="0" endBytecode="89" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceReducer" start="18" end="18" startBytecode="2" endBytecode="2" sourcefile="GuiceReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceReducer.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.GuiceTableReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" name="reduce" signature="(Ljava/lang/Object;Ljava/lang/Iterable;Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" start="37" end="38" startBytecode="0" endBytecode="131" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" start="37" end="37" startBytecode="4" endBytecode="4" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.GuiceTableReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" name="setup" signature="(Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" start="23" end="24" startBytecode="0" endBytecode="89" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.GuiceTableReducer" start="23" end="23" startBytecode="2" endBytecode="2" sourcefile="GuiceTableReducer.java" sourcepath="ch/unibe/scg/cc/mappers/GuiceTableReducer.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.HBaseModule$1">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.HBaseModule$1" start="1" end="46" sourcefile="HBaseModule.java" sourcepath="ch/unibe/scg/cc/mappers/HBaseModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.HBaseModule$HTableModule$1">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.HBaseModule$HTableModule$1" start="1" end="98" sourcefile="HBaseModule.java" sourcepath="ch/unibe/scg/cc/mappers/HBaseModule.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper" name="run" signature="(Lorg/apache/hadoop/mapreduce/Mapper$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper" start="117" end="118" startBytecode="0" endBytecode="89" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper" start="117" end="117" startBytecode="2" endBytecode="2" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer" name="run" signature="(Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer" start="172" end="173" startBytecode="0" endBytecode="89" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer" start="172" end="172" startBytecode="2" endBytecode="2" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper" name="run" signature="(Lorg/apache/hadoop/mapreduce/Mapper$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper" start="147" end="148" startBytecode="0" endBytecode="89" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper" start="147" end="147" startBytecode="2" endBytecode="2" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+  </BugInstance>
+  <BugInstance type="USM_USELESS_SUBCLASS_METHOD" priority="3" abbrev="USM" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer" name="run" signature="(Lorg/apache/hadoop/mapreduce/Reducer$Context;)V" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer" start="203" end="204" startBytecode="0" endBytecode="79" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+    </Method>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer" start="203" end="203" startBytecode="2" endBytecode="2" sourcefile="MRMain.java" sourcepath="ch/unibe/scg/cc/mappers/MRMain.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey" sourcefile="MakeFunction2FineClones.java" sourcepath="ch/unibe/scg/cc/mappers/MakeFunction2FineClones.java"/>
+    </Class>
+    <Field classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey" name="commonness" signature="I" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey" sourcefile="MakeFunction2FineClones.java" sourcepath="ch/unibe/scg/cc/mappers/MakeFunction2FineClones.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey" start="346" end="346" startBytecode="6" endBytecode="6" sourcefile="MakeFunction2FineClones.java" sourcepath="ch/unibe/scg/cc/mappers/MakeFunction2FineClones.java"/>
+  </BugInstance>
+  <BugInstance type="NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE" priority="3" abbrev="NP" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper$1">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper$1" sourcefile="MakeFunction2FineClones.java" sourcepath="ch/unibe/scg/cc/mappers/MakeFunction2FineClones.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper$1" name="apply" signature="(Ljava/util/Map$Entry;)Lch/unibe/scg/cc/Protos$SnippetMatch;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper$1" start="161" end="176" startBytecode="0" endBytecode="284" sourcefile="MakeFunction2FineClones.java" sourcepath="ch/unibe/scg/cc/mappers/MakeFunction2FineClones.java"/>
+    </Method>
+    <LocalVariable name="cell" register="1" pc="0" role="LOCAL_VARIABLE_NAMED"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="3" abbrev="ST" category="STYLE" first="1">
+    <Class classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" sourcefile="PopularSnippetMapsProvider.java" sourcepath="ch/unibe/scg/cc/mappers/PopularSnippetMapsProvider.java"/>
+    </Class>
+    <Method classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" name="get" signature="()Lch/unibe/scg/cc/PopularSnippetMaps;" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" start="40" end="40" startBytecode="0" endBytecode="826" sourcefile="PopularSnippetMapsProvider.java" sourcepath="ch/unibe/scg/cc/mappers/PopularSnippetMapsProvider.java"/>
+    </Method>
+    <Field classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" name="popularSnippetMaps" signature="Lch/unibe/scg/cc/PopularSnippetMaps;" isStatic="true">
+      <SourceLine classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" sourcefile="PopularSnippetMapsProvider.java" sourcepath="ch/unibe/scg/cc/mappers/PopularSnippetMapsProvider.java"/>
+    </Field>
+    <SourceLine classname="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" start="66" end="66" startBytecode="294" endBytecode="294" sourcefile="PopularSnippetMapsProvider.java" sourcepath="ch/unibe/scg/cc/mappers/PopularSnippetMapsProvider.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 1 Jul 2013 10:47:58 +0200" total_classes="194" referenced_classes="542" total_bugs="60" total_size="6416" num_packages="8" vm_version="23.21-b01" cpu_seconds="24.79" clock_seconds="366.27" peak_mbytes="463.76" alloc_mbytes="494.94" gc_seconds="0.54" priority_3="40" priority_2="15" priority_1="5">
+    <PackageStats package="ch.unibe.scg.cc" total_bugs="30" total_types="66" total_size="3717" priority_3="19" priority_2="6" priority_1="5">
+      <ClassStats class="ch.unibe.scg.cc.Backend" sourceFile="Backend.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Backend$RegisterClonesBackend" sourceFile="Backend.java" interface="false" size="114" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CCModule" sourceFile="CCModule.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CCModule$1" sourceFile="CCModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.CCModule$2" sourceFile="CCModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.CannotBeHashedException" sourceFile="CannotBeHashedException.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CloneExpander" sourceFile="CloneExpander.java" interface="false" size="92" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CloneExpanderTest" sourceFile="CloneExpanderTest.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CloneExpanderTest$1" sourceFile="CloneExpanderTest.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.DuplicateSnippetsPerFunctionRegistry" sourceFile="DuplicateSnippetsPerFunctionRegistry.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.ForTestingOnly" sourceFile="ForTestingOnly.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Frontend" sourceFile="Frontend.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.FrontendTest" sourceFile="FrontendTest.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Hasher" sourceFile="Hasher.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Java" sourceFile="Java.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.MessageDigestProvider" sourceFile="MessageDigestProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Normalizer" sourceFile="Normalizer.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.NormalizerTest" sourceFile="NormalizerTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.PhaseFrontend" sourceFile="PhaseFrontend.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.PopularSnippetMaps" sourceFile="PopularSnippetMaps.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos" sourceFile="Protos.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$1" sourceFile="Protos.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Clone" sourceFile="Protos.java" interface="false" size="229" bugs="5" priority_3="3" priority_2="1" priority_1="1"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Clone$1" sourceFile="Protos.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Clone$Builder" sourceFile="Protos.java" interface="false" size="224" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$CloneGroup" sourceFile="Protos.java" interface="false" size="190" bugs="3" priority_3="1" priority_2="1" priority_1="1"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$CloneGroup$1" sourceFile="Protos.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$CloneGroup$Builder" sourceFile="Protos.java" interface="false" size="295" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$CloneGroupOrBuilder" sourceFile="Protos.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$CloneOrBuilder" sourceFile="Protos.java" interface="true" size="13" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Occurrence" sourceFile="Protos.java" interface="false" size="368" bugs="8" priority_3="6" priority_2="1" priority_1="1"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Occurrence$1" sourceFile="Protos.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$Occurrence$Builder" sourceFile="Protos.java" interface="false" size="424" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$OccurrenceOrBuilder" sourceFile="Protos.java" interface="true" size="26" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetLocation" sourceFile="Protos.java" interface="false" size="195" bugs="5" priority_3="3" priority_2="1" priority_1="1"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetLocation$1" sourceFile="Protos.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetLocation$Builder" sourceFile="Protos.java" interface="false" size="180" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetLocationOrBuilder" sourceFile="Protos.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetMatch" sourceFile="Protos.java" interface="false" size="177" bugs="3" priority_3="1" priority_2="1" priority_1="1"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetMatch$1" sourceFile="Protos.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetMatch$Builder" sourceFile="Protos.java" interface="false" size="242" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Protos$SnippetMatchOrBuilder" sourceFile="Protos.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.RegisterClonesBackendTest" sourceFile="RegisterClonesBackendTest.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.RegisterClonesBackendTest$1" sourceFile="RegisterClonesBackendTest.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.ReplacerProvider" sourceFile="ReplacerProvider.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.ReplacerProvider$MethodComparator" sourceFile="ReplacerProvider.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.ShingleHasher" sourceFile="ShingleHasher.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.ShingleHasherTest" sourceFile="ShingleHasherTest.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetMatchComparator" sourceFile="SnippetMatchComparator.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetSimilarTest" sourceFile="SnippetSimilarTest.java" interface="false" size="113" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetSimilarTest$1" sourceFile="SnippetSimilarTest.java" interface="false" size="10" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetSimilarTest$2" sourceFile="SnippetSimilarTest.java" interface="false" size="9" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetSimilarTest$SnippetLocationComparator" sourceFile="SnippetSimilarTest.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SnippetWithBaseline" sourceFile="SnippetWithBaseline.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SpamDetector" sourceFile="SpamDetector.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SpamDetector$FeatureVector" sourceFile="SpamDetector.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.SpamDetectorTest" sourceFile="SpamDetectorTest.java" interface="false" size="15" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.StandardHasher" sourceFile="StandardHasher.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Tokenizer" sourceFile="Tokenizer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Type1" sourceFile="Type1.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Type2" sourceFile="Type2.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Type2ReplacerFactory" sourceFile="Type2ReplacerFactory.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Type2ReplacerFactoryTest" sourceFile="Type2ReplacerFactoryTest.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.Type3" sourceFile="Type3.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.WrappedRuntimeException" sourceFile="WrappedRuntimeException.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.activerecord" total_bugs="7" total_types="14" total_size="243" priority_2="7">
+      <ClassStats class="ch.unibe.scg.cc.activerecord.CodeFile" sourceFile="CodeFile.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.CodeFileFactory" sourceFile="CodeFileFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Column" sourceFile="Column.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.ConfigurationProvider" sourceFile="ConfigurationProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Function" sourceFile="Function.java" interface="false" size="37" bugs="2" priority_2="2"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Function$FunctionFactory" sourceFile="Function.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.IColumn" sourceFile="IColumn.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Location" sourceFile="Location.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Project" sourceFile="Project.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.ProjectFactory" sourceFile="ProjectFactory.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.PutFactory" sourceFile="PutFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Snippet" sourceFile="Snippet.java" interface="false" size="58" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.Version" sourceFile="Version.java" interface="false" size="33" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.activerecord.VersionFactory" sourceFile="VersionFactory.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.git" total_bugs="0" total_types="2" total_size="39">
+      <ClassStats class="ch.unibe.scg.cc.git.PackedRef" sourceFile="PackedRef.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.git.PackedRefParser" sourceFile="PackedRefParser.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.javaFrontend" total_bugs="3" total_types="9" total_size="188" priority_3="3">
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.JavaModule" sourceFile="JavaModule.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.JavaTokenizer" sourceFile="JavaTokenizer.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.JavaTokenizerTest" sourceFile="JavaTokenizerTest.java" interface="false" size="47" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory" sourceFile="JavaType1ReplacerFactory.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactoryTest" sourceFile="JavaType1ReplacerFactoryTest.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.Type1Module" sourceFile="JavaModule.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.Type1Module$1" sourceFile="JavaModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.Type2Module" sourceFile="JavaModule.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.Type2Module$1" sourceFile="JavaModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.lines" total_bugs="2" total_types="8" total_size="171" priority_3="2">
+      <ClassStats class="ch.unibe.scg.cc.lines.LineBreak" sourceFile="LineBreak.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.ModifiableLines" sourceFile="ModifiableLines.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.ModifiableLines$1" sourceFile="ModifiableLines.java" interface="false" size="10" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.ModifiableLinesFactory" sourceFile="ModifiableLinesFactory.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.ModifiableLinesTest" sourceFile="ModifiableLinesTest.java" interface="false" size="32" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.StringOfLines" sourceFile="StringOfLines.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.StringOfLinesFactory" sourceFile="StringOfLinesFactory.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.lines.StringOfLinesTest" sourceFile="StringOfLinesTest.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.mappers" total_bugs="18" total_types="84" total_size="1769" priority_3="16" priority_2="2">
+      <ClassStats class="ch.unibe.scg.cc.mappers.CharsetTest" sourceFile="CharsetTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider" sourceFile="CloneLoaderProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider$1" sourceFile="CloneLoaderProvider.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider$CloneLoader" sourceFile="CloneLoaderProvider.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider$ClonedStrings" sourceFile="CloneLoaderProvider.java" interface="false" size="8" bugs="2" priority_3="2"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Constants" sourceFile="Constants.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Constants$ColumnName" sourceFile="Constants.java" interface="false" size="25" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CountLOC" sourceFile="CountLOC.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CountLOC$CountLOCMapper" sourceFile="CountLOC.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.CounterModule" sourceFile="CounterModule.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Counters" sourceFile="Counters.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Function2FineClonesSorter" sourceFile="Function2FineClonesSorter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Function2FineClonesSorter$IdentityMapper" sourceFile="Function2FineClonesSorter.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.Function2FineClonesSorter$IdentityReducer" sourceFile="Function2FineClonesSorter.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulator" sourceFile="GitTablePopulator.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulator$GitTablePopulatorMapper" sourceFile="GitTablePopulator.java" interface="false" size="95" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulatorTest" sourceFile="GitTablePopulatorTest.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GuiceMapper" sourceFile="GuiceMapper.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GuiceReducer" sourceFile="GuiceReducer.java" interface="false" size="12" bugs="3" priority_3="3"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GuiceTableMapper" sourceFile="GuiceTableMapper.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.GuiceTableReducer" sourceFile="GuiceTableReducer.java" interface="false" size="20" bugs="2" priority_3="2"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HBaseModule" sourceFile="HBaseModule.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HBaseModule$1" sourceFile="HBaseModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HBaseModule$HTableModule" sourceFile="HBaseModule.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HBaseModule$HTableModule$1" sourceFile="HBaseModule.java" interface="false" size="5" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HBaseTest" sourceFile="HBaseTest.java" interface="false" size="64" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HTableProvider" sourceFile="HTableProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HTableWriteBuffer" sourceFile="HTableWriteBuffer.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HTableWriteBuffer$BufferFactory" sourceFile="HTableWriteBuffer.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.HTableWriteBuffer$HTableWriteBufferProvider" sourceFile="HTableWriteBuffer.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRMain" sourceFile="MRMain.java" interface="false" size="44" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRMain$MRMainMapper" sourceFile="MRMain.java" interface="false" size="18" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRMain$MRMainReducer" sourceFile="MRMain.java" interface="false" size="18" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRMain$MRMainTableMapper" sourceFile="MRMain.java" interface="false" size="20" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRMain$MRMainTableReducer" sourceFile="MRMain.java" interface="false" size="20" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MRWrapper" sourceFile="MRWrapper.java" interface="false" size="56" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex" sourceFile="MakeColumnIndex.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$File2Function" sourceFile="MakeColumnIndex.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$File2Function$File2FunctionModule" sourceFile="MakeColumnIndex.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Function2Snippet" sourceFile="MakeColumnIndex.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Function2Snippet$Function2SnippetModule" sourceFile="MakeColumnIndex.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$IndexingModule" sourceFile="MakeColumnIndex.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Launcher" sourceFile="MakeColumnIndex.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$MakeColumnIndexMapper" sourceFile="MakeColumnIndex.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$MakeColumnIndexReducer" sourceFile="MakeColumnIndex.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Project2Version" sourceFile="MakeColumnIndex.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Project2Version$Project2VersionModule" sourceFile="MakeColumnIndex.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Version2File" sourceFile="MakeColumnIndex.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeColumnIndex$Version2File$Version2FileModule" sourceFile="MakeColumnIndex.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones" sourceFile="MakeFunction2FineClones.java" interface="false" size="49" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKey" sourceFile="MakeFunction2FineClones.java" interface="false" size="8" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$ColumnKeyCodec" sourceFile="MakeFunction2FineClones.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$Function2FineClones" sourceFile="MakeFunction2FineClones.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper" sourceFile="MakeFunction2FineClones.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesMapper$1" sourceFile="MakeFunction2FineClones.java" interface="false" size="21" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesReducer" sourceFile="MakeFunction2FineClones.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2FineClones$MakeFunction2FineClonesReducer$1" sourceFile="MakeFunction2FineClones.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones" sourceFile="MakeFunction2RoughClones.java" interface="false" size="46" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones$ColumnKey" sourceFile="MakeFunction2RoughClones.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones$ColumnKeyConverter" sourceFile="MakeFunction2RoughClones.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones$MakeFunction2RoughClonesMapper" sourceFile="MakeFunction2RoughClones.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones$MakeFunction2RoughClonesReducer" sourceFile="MakeFunction2RoughClones.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeHistogram" sourceFile="MakeHistogram.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeHistogram$MakeHistogramMapper" sourceFile="MakeHistogram.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeHistogram$MakeHistogramReducer" sourceFile="MakeHistogram.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeSnippet2Function" sourceFile="MakeSnippet2Function.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeSnippet2Function$ColumnKeyConverter" sourceFile="MakeSnippet2Function.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeSnippet2Function$MakeSnippet2FunctionMapper" sourceFile="MakeSnippet2Function.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MakeSnippet2Function$MakeSnippet2FunctionReducer" sourceFile="MakeSnippet2Function.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.MapperModule" sourceFile="MapperModule.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider" sourceFile="OccurrenceLoaderProvider.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider$1" sourceFile="OccurrenceLoaderProvider.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider$File2FunctionFactory" sourceFile="OccurrenceLoaderProvider.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider$OccurrenceFactory" sourceFile="OccurrenceLoaderProvider.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider$Project2VersionFactory" sourceFile="OccurrenceLoaderProvider.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.OccurrenceLoaderProvider$Version2FileFactory" sourceFile="OccurrenceLoaderProvider.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.PopularSnippetMapsProvider" sourceFile="PopularSnippetMapsProvider.java" interface="false" size="32" bugs="1" priority_3="1"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.PopularSnippetsCodec" sourceFile="PopularSnippetsCodec.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.PopularSnippetsTest" sourceFile="PopularSnippetsTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.PopulateTest" sourceFile="PopulateTest.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.ScanProvider" sourceFile="ScanProvider.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.TablePopulator" sourceFile="TablePopulator.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.TablePopulator$CharsetDetector" sourceFile="TablePopulator.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.TablePopulator$TablePopulatorMapper" sourceFile="TablePopulator.java" interface="false" size="58" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.mappers.inputformats" total_bugs="0" total_types="4" total_size="142">
+      <ClassStats class="ch.unibe.scg.cc.mappers.inputformats.GitInputFormat" sourceFile="GitInputFormat.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat" sourceFile="GitPathInputFormat.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.inputformats.GitPathRecordReader" sourceFile="GitPathRecordReader.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.mappers.inputformats.GitRecordReader" sourceFile="GitRecordReader.java" interface="false" size="70" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ch.unibe.scg.cc.regex" total_bugs="0" total_types="7" total_size="147">
+      <ClassStats class="ch.unibe.scg.cc.regex.Replace" sourceFile="Replace.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplaceTest" sourceFile="ReplaceTest.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplacementString" sourceFile="ReplacementString.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplacementString$LiteralSegment" sourceFile="ReplacementString.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplacementString$PlaceHolderSegment" sourceFile="ReplacementString.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplacementString$Segment" sourceFile="ReplacementString.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.regex.ReplacementStringTest" sourceFile="ReplacementStringTest.java" interface="false" size="29" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="81397" invocations="2" avgMicrosecondsPerInvocation="40698658" maxMicrosecondsPerInvocation="81249345" standardDeviationMircosecondsPerInvocation="40550687"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1372668605496" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
