@@ -43,7 +43,7 @@ public interface Backend extends Closeable {
 	 */
 	public abstract void registerConsecutiveLinesOfCode(StringOfLines stringOfLines, Function function, byte type);
 
-	public abstract void register(CodeFile codeFile);
+	public abstract void register(CodeFile codeFile) throws IOException;
 
 	public abstract void register(Project project);
 
@@ -146,7 +146,7 @@ public interface Backend extends Closeable {
 		}
 
 		@Override
-		public void register(CodeFile codeFile) {
+		public void register(CodeFile codeFile) throws IOException {
 			// TODO write codeFile string into strings table.
 			if (writtenFiles.containsKey(ByteBuffer.wrap(codeFile.getHash()))) {
 				return; // We've dealt with this file.
@@ -155,12 +155,8 @@ public interface Backend extends Closeable {
 
 			for (Function function : codeFile.getFunctions()) {
 				Put functionPut = putFactory.create(codeFile.getHash());
-				try {
-					functionPut.add(CodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
-					file2function.write(functionPut);
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-				}
+				functionPut.add(CodeFile.FAMILY_NAME, function.getHash(), 0l, Bytes.toBytes(function.getBaseLine()));
+				file2function.write(functionPut);
 			}
 			List<Function> functions = codeFile.getFunctions();
 			for (Function function : functions) {
@@ -168,24 +164,20 @@ public interface Backend extends Closeable {
 			}
 		}
 
-		private void register(Function function) {
+		private void register(Function function) throws IOException {
 			if (writtenFunctions.containsKey(ByteBuffer.wrap(function.getHash()))) {
 				return; // This function has been dealt with.
 			}
 			writtenFunctions.put(ByteBuffer.wrap(function.getHash()), Boolean.TRUE);
 
 			Put functionString = putFactory.create(function.getHash());
-			try {
-				function.saveContents(functionString);
-				strings.write(functionString);
+			function.saveContents(functionString);
+			strings.write(functionString);
 
-				for (Snippet snippet : function.getSnippets()) {
-					Put put = putFactory.create(function.getHash());
-					snippet.save(put);
-					function2snippet.write(put);
-				}
-			} catch (IOException e) {
-				throw new RuntimeException(e);
+			for (Snippet snippet : function.getSnippets()) {
+				Put put = putFactory.create(function.getHash());
+				snippet.save(put);
+				function2snippet.write(put);
 			}
 		}
 

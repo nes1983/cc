@@ -73,7 +73,7 @@ public class Frontend implements Closeable {
 		backend.register(version);
 	}
 
-	public CodeFile register(String fileContent) {
+	public CodeFile register(String fileContent) throws IOException {
 		CodeFile codeFile = codeFileFactory.create(fileContent);
 		StringBuilder content = new StringBuilder(fileContent);
 		registerWithBuilder(content, codeFile);

@@ -18,6 +18,7 @@ import javax.inject.Provider;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.SnippetMatchOrBuilder;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMultimap;
@@ -182,7 +183,7 @@ public class CloneExpander {
 		return clone.build();
 	}
 
-	private Clone.Builder initializeClone(SnippetMatch firstMatch) {
+	private Clone.Builder initializeClone(SnippetMatchOrBuilder firstMatch) {
 		final Clone.Builder clone = Clone.newBuilder();
 		clone.setThisFunction(firstMatch.getThisSnippetLocation().getFunction());
 		clone.setThatFunction(firstMatch.getThatSnippetLocation().getFunction());

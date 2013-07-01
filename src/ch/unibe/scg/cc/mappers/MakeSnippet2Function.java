@@ -22,6 +22,7 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 
 import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.SnippetMatchOrBuilder;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
@@ -46,7 +47,7 @@ public class MakeSnippet2Function implements Runnable {
 	}
 
 	static class Function2RoughClonesCodec {
-		static byte[] encodeColumnKey(SnippetMatch m) {
+		static byte[] encodeColumnKey(SnippetMatchOrBuilder m) {
 			return Bytes.add(m.getThatSnippetLocation().getFunction().toByteArray(),
 					Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
 					Bytes.toBytes(m.getThisSnippetLocation().getLength()));
