@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.mappers;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.List;
@@ -24,8 +26,8 @@ import com.google.inject.assistedinject.Assisted;
  */
 public class HTableWriteBuffer implements Closeable {
 	private static final int MAX_SIZE = 10000;
-	final List<Row> puts;
-	final HTable htable;
+	private final List<Row> puts;
+	private final HTable htable;
 
 	@Inject
 	HTableWriteBuffer(@Assisted HTable htable) {
@@ -33,8 +35,9 @@ public class HTableWriteBuffer implements Closeable {
 		this.puts = Lists.newArrayListWithCapacity(MAX_SIZE);
 	}
 
+	/** Write put into table. */
 	public void write(Put put) throws IOException {
-		assert put != null;
+		checkNotNull(put);
 		puts.add(put);
 		if (puts.size() == MAX_SIZE) {
 			HTableUtil.bucketRsBatch(htable, puts);
@@ -71,7 +74,8 @@ public class HTableWriteBuffer implements Closeable {
 
 	/** Factory thru assisted inject for {@link HTableWriteBuffer} */
 	public static interface BufferFactory {
-		public HTableWriteBuffer create(HTable htable);
+		/** Create a new write buffer */
+		HTableWriteBuffer create(HTable htable);
 	}
 
 	/** Writes the remaining puts. */

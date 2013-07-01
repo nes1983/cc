@@ -46,18 +46,18 @@ import com.google.protobuf.ByteString;
  */
 public class MakeFunction2RoughClones implements Runnable {
 	static Logger logger = Logger.getLogger(MakeFunction2RoughClones.class.getName());
-	final HTable function2roughclones;
-	final HTable popularSnippets;
-	final MRWrapper mrWrapper;
-	final Provider<Scan> scanProvider;
+	private final HTable function2roughclones;
+	private final HTable popularSnippets;
+	private final MapReduceLauncher launcher;
+	private final Provider<Scan> scanProvider;
 
 	@Inject
 	MakeFunction2RoughClones(@Named("function2roughclones") HTable function2roughclones,
-			@Named("popularSnippets") HTable popularSnippets, MRWrapper mrWrapper,
+			@Named("popularSnippets") HTable popularSnippets, MapReduceLauncher launcher,
 			Provider<Scan> scanProvider) {
 		this.function2roughclones = function2roughclones;
 		this.popularSnippets = popularSnippets;
-		this.mrWrapper = mrWrapper;
+		this.launcher = launcher;
 		this.scanProvider = scanProvider;
 	}
 
@@ -218,8 +218,8 @@ public class MakeFunction2RoughClones implements Runnable {
 	@Override
 	public void run() {
 		try {
-			mrWrapper.truncate(function2roughclones);
-			mrWrapper.truncate(popularSnippets);
+			launcher.truncate(function2roughclones);
+			launcher.truncate(popularSnippets);
 
 			Scan scan = scanProvider.get();
 			scan.addFamily(Constants.FAMILY);
@@ -240,7 +240,7 @@ public class MakeFunction2RoughClones implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx3800M");
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
-			mrWrapper.launchMapReduceJob(MakeFunction2RoughClones.class.getName() + "Job", config,
+			launcher.launchMapReduceJob(MakeFunction2RoughClones.class.getName() + "Job", config,
 					Optional.of("snippet2function"), Optional.of("function2roughclones"), Optional.of(scan),
 					MakeFunction2RoughClonesMapper.class.getName(),
 					Optional.of(MakeFunction2RoughClonesReducer.class.getName()), ImmutableBytesWritable.class,

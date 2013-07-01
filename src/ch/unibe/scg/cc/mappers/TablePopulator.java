@@ -24,12 +24,9 @@ import ch.unibe.scg.cc.activerecord.VersionFactory;
 /** Use GitTablePopulator instead of TablePopulator! */
 public class TablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(TablePopulator.class.getName());
-	final MRWrapper mrWrapper;
 
-	@Inject
-	TablePopulator(MRWrapper mrWrapper) {
-		this.mrWrapper = mrWrapper;
-	}
+	// Prevent subclassing
+	TablePopulator() {}
 
 	@Override
 	public void run() {
@@ -42,7 +39,6 @@ public class TablePopulator implements Runnable {
 				@Named("files") HTable files, @Named("functions") HTable functions, @Named("facts") HTable facts,
 				@Named("strings") HTable strings, @Named("hashfactContent") HTable hashfactContent,
 				ProjectFactory projectFactory, VersionFactory versionFactory, CharsetDetector charsetDetector) {
-			super();
 			this.javaFrontend = javaFrontend;
 			this.versions = versions;
 			this.files = files;

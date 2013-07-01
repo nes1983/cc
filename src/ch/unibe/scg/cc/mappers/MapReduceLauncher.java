@@ -24,7 +24,7 @@ import ch.unibe.scg.cc.mappers.MRMain.MRMainTableReducer;
 
 import com.google.common.base.Optional;
 
-public class MRWrapper {
+class MapReduceLauncher {
 	@Inject
 	private ConfigurationProvider configurationProvider;
 

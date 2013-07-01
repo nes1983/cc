@@ -57,6 +57,7 @@ import com.google.common.base.Optional;
 import com.google.common.io.Files;
 import com.google.inject.Inject;
 
+/** Load in Har file of git repositories and populate our tables. */
 public class GitTablePopulator implements Runnable {
 	static Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 	private static final String CORE_SITE_PATH = "/etc/hadoop/conf/core-site.xml";
@@ -65,11 +66,11 @@ public class GitTablePopulator implements Runnable {
 	// num_projects: projects.har 405 | testdata.har: 2 | dataset.har 2246
 	/** needs to correspond with the path defined in DataFetchPipeline.sh */
 	private static final String PROJECTS_HAR_PATH = "har://hdfs-haddock.unibe.ch/projects/dataset.har";
-	final MRWrapper mrWrapper;
+	private final MapReduceLauncher launcher;
 
 	@Inject
-	GitTablePopulator(MRWrapper mrWrapper) {
-		this.mrWrapper = mrWrapper;
+	GitTablePopulator(MapReduceLauncher launcher) {
+		this.launcher = launcher;
 	}
 
 	@Override
@@ -96,7 +97,7 @@ public class GitTablePopulator implements Runnable {
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			logger.finer("Input paths: " + inputPaths);
-			mrWrapper.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
+			launcher.launchMapReduceJob("gitPopulate", config, Optional.<String> absent(), Optional.<String> absent(),
 					null, GitTablePopulatorMapper.class.getName(), Optional.<String> absent(), Text.class,
 					IntWritable.class);
 		} catch (IOException | ClassNotFoundException e) {

@@ -24,6 +24,7 @@ import com.google.inject.assistedinject.FactoryModuleBuilder;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 
+/** All bindings needed to read and write HTables. */
 public final class HBaseModule extends AbstractModule {
 	@Override
 	protected void configure() {

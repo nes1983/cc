@@ -27,17 +27,18 @@ import ch.unibe.scg.cc.activerecord.PutFactory;
 import com.google.common.base.Optional;
 import com.google.common.io.BaseEncoding;
 
+/** See paper. */
 public class MakeSnippet2Function implements Runnable {
 	static Logger logger = Logger.getLogger(MakeSnippet2Function.class.getName());
-	final HTable snippet2Function;
-	final MRWrapper mrWrapper;
-	final Provider<Scan> scanProvider;
+	private final HTable snippet2Function;
+	private final MapReduceLauncher launcher;
+	private final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeSnippet2Function(@Named("snippet2function") HTable snippet2Function, MRWrapper mrWrapper,
+	MakeSnippet2Function(@Named("snippet2function") HTable snippet2Function, MapReduceLauncher launcher,
 			Provider<Scan> scanProvider) {
 		this.snippet2Function = snippet2Function;
-		this.mrWrapper = mrWrapper;
+		this.launcher = launcher;
 		this.scanProvider = scanProvider;
 	}
 
@@ -92,7 +93,7 @@ public class MakeSnippet2Function implements Runnable {
 				byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
 				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 				byte[] factRelativeLocation = Bytes.tail(functionHashPlusLocationKey, 8);
-				
+
 				byte[] columnKey = ColumnKeyConverter.encode(functionHash);
 				put.add(Constants.FAMILY, columnKey, 0l, factRelativeLocation);
 			}
@@ -104,7 +105,7 @@ public class MakeSnippet2Function implements Runnable {
 			}
 		}
 	}
-	
+
 	static class ColumnKeyConverter {
 		static final int FUNCTION_LENGTH = 20;
 
@@ -125,7 +126,7 @@ public class MakeSnippet2Function implements Runnable {
 	@Override
 	public void run() {
 		try {
-			mrWrapper.truncate(snippet2Function);
+			launcher.truncate(snippet2Function);
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
@@ -148,7 +149,7 @@ public class MakeSnippet2Function implements Runnable {
 			Scan scan = scanProvider.get();
 			scan.addFamily(Constants.FAMILY);
 
-			mrWrapper.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
+			launcher.launchMapReduceJob(MakeSnippet2Function.class.getName() + "Job", config,
 					Optional.of("function2snippet"), Optional.of("snippet2function"), Optional.of(scan),
 					MakeSnippet2FunctionMapper.class.getName(),
 					Optional.of(MakeSnippet2FunctionReducer.class.getName()), ImmutableBytesWritable.class,

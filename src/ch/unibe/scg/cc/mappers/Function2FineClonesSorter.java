@@ -29,11 +29,11 @@ import com.google.protobuf.TextFormat;
 /** Mapper and Reducer only used for sorting */
 public class Function2FineClonesSorter implements Runnable {
 	static final String OUT_DIR = "/tmp/fineclonessorted/";
-	final MRWrapper mrWrapper;
+	private final MapReduceLauncher launcher;
 
 	@Inject
-	Function2FineClonesSorter(MRWrapper mrWrapper) {
-		this.mrWrapper = mrWrapper;
+	Function2FineClonesSorter(MapReduceLauncher launcher) {
+		this.launcher = launcher;
 	}
 
 	static class IdentityMapper extends GuiceMapper<BytesWritable, NullWritable, BytesWritable, NullWritable> {
@@ -71,7 +71,7 @@ public class Function2FineClonesSorter implements Runnable {
 			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, SequenceFileInputFormat.class, InputFormat.class);
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 
-			mrWrapper.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
+			launcher.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
 					Optional.<String> absent(), Optional.<String> absent(), Optional.<Scan> absent(),
 					IdentityMapper.class.getName(), Optional.of(IdentityReducer.class.getName()), BytesWritable.class,
 					NullWritable.class);

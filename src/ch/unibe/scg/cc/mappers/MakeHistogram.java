@@ -25,14 +25,15 @@ import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.base.Optional;
 
+/** Compute distribution of commonness of snippets. */
 public class MakeHistogram implements Runnable {
 	static final String OUT_DIR = "/tmp/histogram";
-	final MRWrapper hbaseWrapper;
+	final MapReduceLauncher launcher;
 	final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeHistogram(MRWrapper hbaseWrapper, Provider<Scan> scanProvider) {
-		this.hbaseWrapper = hbaseWrapper;
+	MakeHistogram(MapReduceLauncher launcher, Provider<Scan> scanProvider) {
+		this.launcher = launcher;
 		this.scanProvider = scanProvider;
 	}
 
@@ -104,7 +105,7 @@ public class MakeHistogram implements Runnable {
 			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
-			hbaseWrapper.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,
+			launcher.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,
 					Optional.of("snippet2function"), Optional.<String> absent(), Optional.of(scan),
 					MakeHistogramMapper.class.getName(), Optional.of(MakeHistogramReducer.class.getName()),
 					IntWritable.class, LongWritable.class);

@@ -27,13 +27,14 @@ import ch.unibe.scg.cc.activerecord.Function;
 import com.google.common.base.Optional;
 import com.google.inject.Inject;
 
+/** Count the lines of code across all functions */
 public class CountLOC implements Runnable {
-	final MRWrapper hbaseWrapper;
+	final MapReduceLauncher launcher;
 	final Provider<Scan> scanProvider;
 
 	@Inject
-	CountLOC(MRWrapper hbaseWrapper, Provider<Scan> scanProvider) {
-		this.hbaseWrapper = hbaseWrapper;
+	CountLOC(MapReduceLauncher launcher, Provider<Scan> scanProvider) {
+		this.launcher = launcher;
 		this.scanProvider = scanProvider;
 	}
 
@@ -50,7 +51,7 @@ public class CountLOC implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1000m");
 			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 
-			hbaseWrapper.launchMapReduceJob(CountLOC.class.getName() + " Job", config, Optional.of("strings"),
+			launcher.launchMapReduceJob(CountLOC.class.getName() + " Job", config, Optional.of("strings"),
 					Optional.<String> absent(), Optional.of(scan), CountLOCMapper.class.getName(),
 					Optional.<String> absent(), NullWritable.class, NullWritable.class);
 		} catch (IOException | ClassNotFoundException e) {

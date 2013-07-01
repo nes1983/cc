@@ -162,18 +162,46 @@ class MakeColumnIndex {
 		}
 	}
 
+	// TODO: WTF is this? Why is this here?
 	static class Launcher {
-		final MRWrapper mrWrapper;
+		final MapReduceLauncher launcher;
 		final Provider<Scan> scanProvider;
 
 		@Inject
-		Launcher(MRWrapper mrWrapper, Provider<Scan> scanProvider) {
-			this.mrWrapper = mrWrapper;
+		Launcher(MapReduceLauncher launcher, Provider<Scan> scanProvider) {
+			this.launcher = launcher;
 			this.scanProvider = scanProvider;
 		}
 
 		void launch(String tableName, Class<? extends Module> module) {
-			launchMapReduceJob(mrWrapper, scanProvider, module, tableName);
+			try {
+				Configuration config = new Configuration();
+				config.set(MRJobConfig.NUM_REDUCES, "30");
+				config.set(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, "0");
+				config.set(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, "true");
+				config.set(MRJobConfig.IO_SORT_MB, "256");
+				config.set(MRJobConfig.IO_SORT_FACTOR, "100");
+				config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
+				config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
+				config.setInt(MRJobConfig.MAP_MEMORY_MB, 1536);
+				config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
+				config.setInt(MRJobConfig.REDUCE_MEMORY_MB, 3072);
+				config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
+				config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, module.getName());
+
+				Scan scan = scanProvider.get();
+				scan.addFamily(Constants.FAMILY);
+
+				launcher.launchMapReduceJob(MakeColumnIndex.class.getName() + "Job", config, Optional.of(tableName),
+						Optional.of(tableName), Optional.of(scan), MakeColumnIndexMapper.class.getName(),
+						Optional.of(MakeColumnIndexReducer.class.getName()), ImmutableBytesWritable.class,
+						ImmutableBytesWritable.class);
+			} catch (IOException | ClassNotFoundException e) {
+				throw new WrappedRuntimeException(e);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+				return; // Exit.
+			}
 		}
 	}
 
@@ -182,38 +210,6 @@ class MakeColumnIndex {
 		public void configure() {
 			bind(HTable.class).toProvider(HTableProvider.class).in(Singleton.class);
 			bind(HTableWriteBuffer.class).toProvider(HTableWriteBuffer.HTableWriteBufferProvider.class);
-		}
-	}
-
-	static void launchMapReduceJob(MRWrapper mrWrapper, Provider<Scan> scanProvider,
-			Class<? extends Module> customModuleClass, String tableName) {
-		try {
-			Configuration config = new Configuration();
-			config.set(MRJobConfig.NUM_REDUCES, "30");
-			config.set(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, "0");
-			config.set(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, "true");
-			config.set(MRJobConfig.IO_SORT_MB, "256");
-			config.set(MRJobConfig.IO_SORT_FACTOR, "100");
-			config.set(MRJobConfig.JOB_UBERTASK_ENABLE, "true");
-			config.set(MRJobConfig.TASK_TIMEOUT, "86400000");
-			config.setInt(MRJobConfig.MAP_MEMORY_MB, 1536);
-			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1024M");
-			config.setInt(MRJobConfig.REDUCE_MEMORY_MB, 3072);
-			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
-			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, customModuleClass.getName());
-
-			Scan scan = scanProvider.get();
-			scan.addFamily(Constants.FAMILY);
-
-			mrWrapper.launchMapReduceJob(MakeColumnIndex.class.getName() + "Job", config, Optional.of(tableName),
-					Optional.of(tableName), Optional.of(scan), MakeColumnIndexMapper.class.getName(),
-					Optional.of(MakeColumnIndexReducer.class.getName()), ImmutableBytesWritable.class,
-					ImmutableBytesWritable.class);
-		} catch (IOException | ClassNotFoundException e) {
-			throw new WrappedRuntimeException(e);
-		} catch (InterruptedException e) {
-			Thread.currentThread().interrupt();
-			return; // Exit.
 		}
 	}
 }

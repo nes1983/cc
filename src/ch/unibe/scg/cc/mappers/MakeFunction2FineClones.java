@@ -60,17 +60,18 @@ import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
+/** See paper. */
 public class MakeFunction2FineClones implements Runnable {
 	static final String OUT_DIR = "/tmp/fineclones/";
 	static Logger logger = Logger.getLogger(MakeFunction2FineClones.class.getName());
-	final HTable function2fineclones;
-	final MRWrapper mrWrapper;
-	final Provider<Scan> scanProvider;
+	private final HTable function2fineclones;
+	private final MapReduceLauncher launcher;
+	private final Provider<Scan> scanProvider;
 
 	@Inject
-	MakeFunction2FineClones(MRWrapper mrWrapper, @Named("function2fineclones") HTable function2fineclones,
+	MakeFunction2FineClones(MapReduceLauncher launcher, @Named("function2fineclones") HTable function2fineclones,
 			Provider<Scan> scanProvider) {
-		this.mrWrapper = mrWrapper;
+		this.launcher = launcher;
 		this.function2fineclones = function2fineclones;
 		this.scanProvider = scanProvider;
 	}
@@ -352,7 +353,7 @@ public class MakeFunction2FineClones implements Runnable {
 	public void run() {
 		try {
 			FileSystem.get(new Configuration()).delete(new Path(OUT_DIR), true);
-			mrWrapper.truncate(function2fineclones);
+			launcher.truncate(function2fineclones);
 
 			Configuration config = new Configuration();
 			config.set(MRJobConfig.MAP_LOG_LEVEL, "DEBUG");
@@ -378,7 +379,7 @@ public class MakeFunction2FineClones implements Runnable {
 			Scan scan = scanProvider.get();
 			scan.addFamily(Constants.FAMILY);
 
-			mrWrapper.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
+			launcher.launchMapReduceJob(MakeFunction2FineClones.class.getName() + "Job", config,
 					Optional.of("function2roughclones"), Optional.<String> absent(), Optional.of(scan),
 					MakeFunction2FineClonesMapper.class.getName(),
 					Optional.of(MakeFunction2FineClonesReducer.class.getName()), ImmutableBytesWritable.class,

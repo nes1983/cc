@@ -25,7 +25,7 @@ import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
 
 /** key is a functionhash, value is the complete functionstring */
-public class CloneLoaderProvider implements Provider<LoadingCache<byte[], String>> {
+class CloneLoaderProvider implements Provider<LoadingCache<byte[], String>> {
 	@Inject(optional = true)
 	@Named("strings")
 	HTable strings;
