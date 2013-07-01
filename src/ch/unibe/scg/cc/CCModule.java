@@ -36,6 +36,6 @@ public class CCModule extends AbstractModule {
 		install(new FactoryModuleBuilder().build(CodeFileFactory.class));
 		install(new FactoryModuleBuilder().build(FunctionFactory.class));
 
-		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(false);
+		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(Boolean.FALSE);
 	}
 }

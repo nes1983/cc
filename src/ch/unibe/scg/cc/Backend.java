@@ -151,7 +151,7 @@ public interface Backend extends Closeable {
 			if (writtenFiles.containsKey(ByteBuffer.wrap(codeFile.getHash()))) {
 				return; // We've dealt with this file.
 			}
-			writtenFiles.put(ByteBuffer.wrap(codeFile.getHash()), true);
+			writtenFiles.put(ByteBuffer.wrap(codeFile.getHash()), Boolean.TRUE);
 
 			for (Function function : codeFile.getFunctions()) {
 				Put functionPut = putFactory.create(codeFile.getHash());
@@ -172,7 +172,7 @@ public interface Backend extends Closeable {
 			if (writtenFunctions.containsKey(ByteBuffer.wrap(function.getHash()))) {
 				return; // This function has been dealt with.
 			}
-			writtenFunctions.put(ByteBuffer.wrap(function.getHash()), true);
+			writtenFunctions.put(ByteBuffer.wrap(function.getHash()), Boolean.TRUE);
 
 			Put functionString = putFactory.create(function.getHash());
 			try {
