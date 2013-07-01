@@ -52,17 +52,13 @@ public class MakeSnippet2Function implements Runnable {
 		static final int THIS_POSITION_LENGTH = 4;
 		static final int THIS_LENGTH = 4;
 
-		static byte[] encode(byte[] thatFunction, int thisPosition, int thisLength) {
+		static byte[] encode(SnippetMatch m) {
+			byte[] thatFunction = m.getThatSnippetLocation().getFunction().toByteArray();
 			checkArgument(thatFunction.length == THAT_FUNCTION_LENGTH, "function length illegally was "
 					+ thatFunction.length);
 
-			return Bytes.add(thatFunction, Bytes.toBytes(thisPosition), Bytes.toBytes(thisLength));
-		}
-
-		static ColumnKey2 decode(byte[] encoded) {
-			return new ColumnKey2(Bytes.head(encoded, THAT_FUNCTION_LENGTH), Bytes.toInt(Bytes.head(
-					Bytes.tail(encoded, THIS_POSITION_LENGTH + THIS_LENGTH), THIS_POSITION_LENGTH)), Bytes.toInt(Bytes
-					.tail(encoded, THIS_LENGTH)));
+			return Bytes.add(thatFunction, Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
+					Bytes.toBytes(m.getThisSnippetLocation().getLength()));
 		}
 	}
 
@@ -155,35 +151,17 @@ public class MakeSnippet2Function implements Runnable {
 						continue;
 					}
 
-					/*
-					 * REMARK 1: we don't set thisFunction because it gets
-					 * already passed to the reducer as key. REMARK 2: we don't
-					 * set thatSnippet because it gets already stored in
-					 * thisSnippet
-					 */
-					SnippetMatch snippetMatch = SnippetMatch
-							.newBuilder()
-							.setThisSnippetLocation(thisLoc)
+					//	REMARK 1: we don't set thisFunction because it gets
+					//	already passed to the reducer as key. REMARK 2: we don't
+					//	set thatSnippet because it gets already stored in
+					//	thisSnippet
+					SnippetMatch snippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisLoc)
 							.setThatSnippetLocation(thatLoc).build();
 
+					byte[] columnKey = ColumnKeyConverter.encode(thatLoc.getFunction().toByteArray(),
+							thisLoc.getPosition(), thisLoc.getLength());
 					Put put = putFactory.create(thisLoc.getFunction().toByteArray());
-
-					SnippetLocation thisSnippet = snippetMatch.getThisSnippetLocation();
-					SnippetLocation thatSnippet = snippetMatch.getThatSnippetLocation();
-
-					// create partial SnippetLocations and clear fields already set
-					// in the cellName to save space in HBase
-					SnippetLocation thisPartialSnippet = SnippetLocation.newBuilder(thisSnippet).clearPosition()
-							.clearLength().build();
-					SnippetLocation thatPartialSnippet = SnippetLocation.newBuilder(thatSnippet).clearFunction()
-							.build();
-					SnippetMatch partialSnippetMatch = SnippetMatch.newBuilder()
-							.setThisSnippetLocation(thisPartialSnippet).setThatSnippetLocation(thatPartialSnippet)
-							.build();
-
-					byte[] columnKey = ColumnKeyConverter.encode(thatSnippet.getFunction().toByteArray(),
-							thisSnippet.getPosition(), thisSnippet.getLength());
-					put.add(Constants.FAMILY, columnKey, 0l, partialSnippetMatch.toByteArray());
+					put.add(Constants.FAMILY, columnKey, 0l, snippetMatch.toByteArray());
 					context.write(new ImmutableBytesWritable(thisLoc.getFunction().toByteArray()), put);
 				}
 			}
