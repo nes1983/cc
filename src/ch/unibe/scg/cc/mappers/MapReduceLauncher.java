@@ -31,10 +31,9 @@ class MapReduceLauncher {
 	/** truncates a table (1. disable, 2. delete, 3. recreate) */
 	public void truncate(HTableInterface hTable) throws IOException {
 		HTableDescriptor tableDescription = hTable.getTableDescriptor();
-		String tableName = tableDescription.getNameAsString();
 		try (HBaseAdmin admin = new HBaseAdmin(configurationProvider.get())) {
-			admin.disableTable(tableName);
-			admin.deleteTable(tableName);
+			admin.disableTable(tableDescription.getNameAsString());
+			admin.deleteTable(tableDescription.getNameAsString());
 			admin.createTable(tableDescription);
 		}
 	}
