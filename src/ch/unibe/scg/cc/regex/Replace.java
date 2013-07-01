@@ -11,7 +11,7 @@ import jregex.Pattern;
  *
  */
 public class Replace {
-	public final Pattern pattern;
+	private final Pattern pattern;
 	final ReplacementString replacementString;
 
 	public Replace(Pattern pattern, String with) {
@@ -37,5 +37,4 @@ public class Replace {
 		replaceAll(sb);
 		return sb.toString();
 	}
-
 }

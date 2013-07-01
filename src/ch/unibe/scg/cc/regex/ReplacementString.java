@@ -9,10 +9,9 @@ import jregex.Pattern;
 
 class ReplacementString {
 	final List<Segment> contents = new ArrayList<>();
-	static final Pattern p = new Pattern("\\$(\\d+)");
+	private static final Pattern p = new Pattern("\\$(\\d+)");
 
 	public ReplacementString(String with) {
-
 		Matcher m = p.matcher(with);
 		int lastFind = 0;
 		while (m.find()) {
@@ -45,7 +44,7 @@ class ReplacementString {
 	}
 
 	static class PlaceHolderSegment extends Segment {
-		int placeHolderNumber;
+		final int placeHolderNumber;
 
 		public PlaceHolderSegment(int placeHolderNumber) {
 			this.placeHolderNumber = placeHolderNumber;
@@ -58,7 +57,7 @@ class ReplacementString {
 	}
 
 	static class LiteralSegment extends Segment {
-		String s;
+		final String s;
 
 		public LiteralSegment(String s) {
 			this.s = s;
