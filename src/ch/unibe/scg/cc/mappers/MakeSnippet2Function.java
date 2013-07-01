@@ -27,6 +27,7 @@ import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
+import com.google.common.collect.Iterables;
 import com.google.common.io.BaseEncoding;
 import com.google.protobuf.ByteString;
 
@@ -118,11 +119,7 @@ public class MakeSnippet2Function implements Runnable {
 				InterruptedException {
 			logger.finer("reduce " + BaseEncoding.base16().encode(snippetKey.get()).substring(0, 6));
 
-			int functionCount = 0;
-			for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
-				functionCount++;
-			}
-
+			int functionCount = Iterables.size(functionHashesPlusLocations);
 			if (functionCount <= 1) {
 				return; // prevent processing non-recurring hashes
 			}
