@@ -3,8 +3,6 @@ package ch.unibe.scg.cc.mappers;
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.IOException;
-import java.util.Map.Entry;
-import java.util.Set;
 import java.util.logging.Logger;
 
 import javax.inject.Inject;
@@ -14,7 +12,6 @@ import javax.inject.Provider;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
-import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
@@ -26,7 +23,6 @@ import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
-import com.google.protobuf.ByteString;
 
 /**
  * INPUT:<br>
@@ -61,91 +57,7 @@ public class MakeFunction2RoughClones implements Runnable {
 		this.scanProvider = scanProvider;
 	}
 
-	static class MakeFunction2RoughClonesMapper extends
-			GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-        // HBase dies when set to 1000!
-		private static final int POPULAR_SNIPPET_THRESHOLD = 500;
-		final PutFactory putFactory;
-
-		@Inject
-		MakeFunction2RoughClonesMapper(@Named("popularSnippets") HTableWriteBuffer popularSnippets,
-				PutFactory putFactory) {
-			super(popularSnippets);
-			this.putFactory = putFactory;
-		}
-
-		/**
-		 * Input: map from snippet to functions that contain it.<br>
-		 * Output: Map from function to all its collisions.
-		 */
-		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
-				InterruptedException {
-			byte[] snippet = value.getRow();
-			assert snippet.length == 21;
-
-			Set<Entry<byte[], byte[]>> locationCells = value.getFamilyMap(Constants.FAMILY).entrySet();
-
-			// special handling of popular snippets
-			if (locationCells.size() > POPULAR_SNIPPET_THRESHOLD) {
-				// fill popularSnippets table
-				for (Entry<byte[], byte[]> locationCell : locationCells) {
-					ColumnKeyConverter.decode(locationCell.getValue());
-					// TODO: Decoding should not happen here.
-					SnippetLocation loc = SnippetLocation.newBuilder()
-							.setFunction(ByteString.copyFrom(locationCell.getKey()))
-							.setPosition(Bytes.toInt(Bytes.head(locationCell.getValue(), 4)))
-							.setLength(Bytes.toInt(Bytes.tail(locationCell.getValue(), 4)))
-							.setSnippet(ByteString.copyFrom(snippet)).build();
-
-					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
-					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(loc), 0l,
-							PopularSnippetsCodec.encodeColumnKey(loc));
-					write(put);
-				}
-				// we're done, don't go any further!
-				return;
-			}
-
-			// cross product of the columns of the snippetHash
-			for (Entry<byte[], byte[]> thisFunctionEntry : locationCells) {
-				byte[] thisFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thisFunctionEntry.getKey());
-				byte[] thisLocation = thisFunctionEntry.getValue();
-				for (Entry<byte[], byte[]> thatFunctionEntry : locationCells) {
-					byte[] thatFunction = MakeSnippet2Function.ColumnKeyConverter.decode(thatFunctionEntry.getKey());
-					byte[] thatLocation = thatFunctionEntry.getValue();
-
-					// save only half of the functions as row-key
-					// full table gets reconstructed in MakeSnippet2FineClones
-					// This *must* be the same as in CloneExpander.
-					if (Bytes.compareTo(thisFunction, thatFunction) >= 0) {
-						continue;
-					}
-
-					/*
-					 * REMARK 1: we don't set thisFunction because it gets
-					 * already passed to the reducer as key. REMARK 2: we don't
-					 * set thatSnippet because it gets already stored in
-					 * thisSnippet
-					 */
-					SnippetMatch snippetMatch = SnippetMatch
-							.newBuilder()
-							.setThisSnippetLocation(
-									SnippetLocation.newBuilder().setPosition(Bytes.toInt(Bytes.head(thisLocation, 4)))
-											.setLength(Bytes.toInt(Bytes.tail(thisLocation, 4)))
-											.setSnippet(ByteString.copyFrom(snippet)))
-							.setThatSnippetLocation(
-									SnippetLocation.newBuilder().setFunction(ByteString.copyFrom(thatFunction))
-											.setPosition(Bytes.toInt(Bytes.head(thatLocation, 4)))
-											.setLength(Bytes.toInt(Bytes.tail(thatLocation, 4)))).build();
-
-					context.write(new ImmutableBytesWritable(thisFunction),
-							new ImmutableBytesWritable(snippetMatch.toByteArray()));
-				}
-			}
-		}
-	}
-
+	// TODO: inline reducer.
 	static class MakeFunction2RoughClonesReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		final PutFactory putFactory;
@@ -242,7 +154,7 @@ public class MakeFunction2RoughClones implements Runnable {
 
 			launcher.launchMapReduceJob(MakeFunction2RoughClones.class.getName() + "Job", config,
 					Optional.of("snippet2function"), Optional.of("function2roughclones"), Optional.of(scan),
-					MakeFunction2RoughClonesMapper.class.getName(),
+					null,
 					Optional.of(MakeFunction2RoughClonesReducer.class.getName()), ImmutableBytesWritable.class,
 					ImmutableBytesWritable.class);
 

@@ -20,12 +20,15 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
+import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
 import com.google.common.io.BaseEncoding;
+import com.google.protobuf.ByteString;
 
 /** See paper. */
 public class MakeSnippet2Function implements Runnable {
@@ -68,7 +71,8 @@ public class MakeSnippet2Function implements Runnable {
 
 	static class MakeSnippet2FunctionReducer extends
 			GuiceTableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
-		final PutFactory putFactory;
+		private static final int POPULAR_SNIPPET_THRESHOLD = 500;
+		final private PutFactory putFactory;
 
 		@Inject
 		public MakeSnippet2FunctionReducer(@Named("snippet2function") HTableWriteBuffer snippet2Function,
@@ -81,27 +85,96 @@ public class MakeSnippet2Function implements Runnable {
 		public void reduce(ImmutableBytesWritable snippetKey,
 				Iterable<ImmutableBytesWritable> functionHashesPlusLocations, Context context) throws IOException,
 				InterruptedException {
-			byte[] snippet = snippetKey.get();
+			logger.finer("reduce " + BaseEncoding.base16().encode(snippetKey.get()).substring(0, 6));
 
-			logger.finer("reduce " + BaseEncoding.base16().encode(snippet).substring(0, 6));
-
-			Put put = putFactory.create(snippet);
 			int functionCount = 0;
 			for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
 				functionCount++;
+			}
 
+			if (functionCount <= 1) {
+				return; // prevent processing non-recurring hashes
+			}
+
+			for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
 				byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
+				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
+				Bytes.tail(functionHashPlusLocationKey, 8);
+
+				ColumnKeyConverter.encode(functionHash);
+			}
+
+			// special handling of popular snippets
+			if (functionCount > POPULAR_SNIPPET_THRESHOLD) {
+				// fill popularSnippets table
+				for (ImmutableBytesWritable functionHashPlusLocation : functionHashesPlusLocations) {
+					// TODO: Decoding should not happen here.
+
+					byte[] functionHashPlusLocationKey = functionHashPlusLocation.get();
+					byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
+					Bytes.tail(functionHashPlusLocationKey, 8);
+
+					ColumnKeyConverter.encode(functionHash);
+
+					SnippetLocation loc = SnippetLocation.newBuilder()
+							.setFunction(ByteString.copyFrom(functionHash))
+							.setPosition(Bytes.toInt(Bytes.head(functionHashPlusLocationKey, 4)))
+							.setLength(Bytes.toInt(Bytes.tail(functionHashPlusLocationKey, 4)))
+							.setSnippet(ByteString.copyFrom(snippetKey.get())).build();
+
+					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
+					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(loc), 0l,
+							PopularSnippetsCodec.encodeColumnKey(loc));
+					write(put);
+				}
+				// we're done, don't go any further!
+				return;
+			}
+
+			// cross product of the columns of the snippetHash
+			for (ImmutableBytesWritable thisFunctionHashPlusLocation : functionHashesPlusLocations) {
+				// TODO: Decoding should not happen here.
+				// TODO: de-duplicate.
+				byte[] functionHashPlusLocationKey = thisFunctionHashPlusLocation.get();
 				byte[] functionHash = Bytes.head(functionHashPlusLocationKey, 20);
 				byte[] factRelativeLocation = Bytes.tail(functionHashPlusLocationKey, 8);
 
-				byte[] columnKey = ColumnKeyConverter.encode(functionHash);
-				put.add(Constants.FAMILY, columnKey, 0l, factRelativeLocation);
-			}
 
-			// prevent saving non-recurring hashes
-			if (functionCount > 1) {
-				logger.finer("save " + BaseEncoding.base16().encode(snippet).substring(0, 6));
-				context.write(snippetKey, put);
+				byte[] thisFunction = functionHash;
+				byte[] thisLocation = factRelativeLocation;
+				for (ImmutableBytesWritable thatFunctionHashPlusLocation : functionHashesPlusLocations) {
+					// TODO: de-duplicate.
+					byte[] thatFunctionHashPlusLocationKey = thatFunctionHashPlusLocation.get();
+					byte[] thatFunction = Bytes.head(thatFunctionHashPlusLocationKey, 20);
+					byte[] thatLocation = Bytes.tail(thatFunctionHashPlusLocationKey, 8);
+
+					// save only half of the functions as row-key
+					// full table gets reconstructed in MakeSnippet2FineClones
+					// This *must* be the same as in CloneExpander.
+					if (Bytes.compareTo(thisFunction, thatFunction) >= 0) {
+						continue;
+					}
+
+					/*
+					 * REMARK 1: we don't set thisFunction because it gets
+					 * already passed to the reducer as key. REMARK 2: we don't
+					 * set thatSnippet because it gets already stored in
+					 * thisSnippet
+					 */
+					SnippetMatch snippetMatch = SnippetMatch
+							.newBuilder()
+							.setThisSnippetLocation(
+									SnippetLocation.newBuilder().setPosition(Bytes.toInt(Bytes.head(thisLocation, 4)))
+											.setLength(Bytes.toInt(Bytes.tail(thisLocation, 4)))
+											.setSnippet(ByteString.copyFrom(snippetKey.get())))
+							.setThatSnippetLocation(
+									SnippetLocation.newBuilder().setFunction(ByteString.copyFrom(thatFunction))
+											.setPosition(Bytes.toInt(Bytes.head(thatLocation, 4)))
+											.setLength(Bytes.toInt(Bytes.tail(thatLocation, 4)))).build();
+
+					context.write(new ImmutableBytesWritable(thisFunction),
+							new ImmutableBytesWritable(snippetMatch.toByteArray()));
+				}
 			}
 		}
 	}
