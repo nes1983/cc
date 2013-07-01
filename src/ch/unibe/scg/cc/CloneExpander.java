@@ -120,8 +120,7 @@ public class CloneExpander {
 			}
 			clones.add(finalizeClone(clone));
 		}
-		final Collection<Clone> builtClones = clones.build();
-		return builtClones;
+		return clones.build();
 	}
 
 	/** The unprocessed matches still lack the popular rows. Weave them in here. */

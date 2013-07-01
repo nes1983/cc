@@ -24,7 +24,8 @@ class ReplacementString {
 		addUnlessEmpty(contents, new LiteralSegment(with.substring(lastFind, with.length())));
 	}
 
-	void addUnlessEmpty(List<Segment> list, LiteralSegment segment) {
+	// Called from constructor and therefore final.
+	final void addUnlessEmpty(List<Segment> list, LiteralSegment segment) {
 		if (segment.s.equals("")) {
 			return;
 		}

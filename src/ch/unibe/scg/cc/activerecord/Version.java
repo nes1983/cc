@@ -53,7 +53,7 @@ public class Version extends Column implements IColumn {
 		assert x1.length == x2.length;
 		byte[] out = new byte[x1.length];
 
-		for (int i = x1.length - 1; i >= 0; i--) {
+		for (int i = out.length - 1; i >= 0; i--) {
 			out[i] = (byte) (x1[i] ^ x2[i]);
 		}
 		return out;

@@ -23,8 +23,7 @@ public class Type2ReplacerFactoryTest {
 		final Type2ReplacerFactory factory = new Type2ReplacerFactory();
 		final Replace[] replaces = factory.get();
 		assertThat(replaces, is(arrayWithSize(4)));
-		final Normalizer normalizer = new Normalizer(replaces);
-		return normalizer;
+		return new Normalizer(replaces);
 	}
 
 	@Given("testFactory")
