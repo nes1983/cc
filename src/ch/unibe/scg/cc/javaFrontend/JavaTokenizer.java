@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 import ch.unibe.scg.cc.SnippetWithBaseline;
 import ch.unibe.scg.cc.Tokenizer;
+import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
@@ -15,13 +16,12 @@ public class JavaTokenizer implements Tokenizer {
 	// bracket ("}") too much
 	final static String splitterRegex =
 			"([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
-	final Pattern wrongMethodKeywords = Pattern.compile("\\b(switch|while|if|for)\\b\\s*\\(");
 
-	final RunAutomaton splitter;
+	final private Pattern wrongMethodKeywords = Pattern.compile("\\b(switch|while|if|for)\\b\\s*\\(");
+	final private RunAutomaton splitter = new RunAutomaton(new RegExp(splitterRegex).toAutomaton());
 
-	JavaTokenizer() {
-		splitter = new RunAutomaton(new RegExp(splitterRegex).toAutomaton());
-	}
+	// Prevent subclassing.
+	JavaTokenizer() {}
 
 	@Override
 	public Iterable<SnippetWithBaseline> tokenize(String file) {
@@ -52,20 +52,10 @@ public class JavaTokenizer implements Tokenizer {
 			}
 
 			lastStart = start;
-			currentLineNumber += countOccurrences(currentFunctionString, '\n');
+			currentLineNumber += StringOfLinesFactory.countOccurrences(currentFunctionString, '\n');
 		}
 		String currentFunctionString = file.substring(lastStart, file.length());
 		ret.add(new SnippetWithBaseline(currentLineNumber, currentFunctionString));
 		return ret;
-	}
-
-	public static int countOccurrences(String haystack, char needle) {
-		int count = 0;
-		for (int i = 0; i < haystack.length(); i++) {
-			if (haystack.charAt(i) == needle) {
-				count++;
-			}
-		}
-		return count;
 	}
 }

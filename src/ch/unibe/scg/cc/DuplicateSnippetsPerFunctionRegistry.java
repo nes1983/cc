@@ -32,11 +32,12 @@ public class DuplicateSnippetsPerFunctionRegistry implements Backend {
 	final private static byte[] TYPE_1_FAMILY = Bytes.toBytes("t1");
 	final private static byte[] TYPE_2_FAMILY = Bytes.toBytes("t2");
 	final private static byte[] TYPE_3_FAMILY = Bytes.toBytes("t3");
-	final PutFactory putFactory;
-	final HTableWriteBuffer duplicateSnippetsPerFunction;
-	final Backend.RegisterClonesBackend backend;
-	final StandardHasher standardHasher;
-	final ShingleHasher shingleHasher;
+
+	final private PutFactory putFactory;
+	final private HTableWriteBuffer duplicateSnippetsPerFunction;
+	final private Backend.RegisterClonesBackend backend;
+	final private StandardHasher standardHasher;
+	final private ShingleHasher shingleHasher;
 
 	@Inject
 	DuplicateSnippetsPerFunctionRegistry(PutFactory putFactory, HTableWriteBuffer duplicateSnippetsPerFunction,

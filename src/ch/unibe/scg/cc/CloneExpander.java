@@ -42,11 +42,11 @@ public class CloneExpander {
 	 * Maps from functions hashes to all of their popular snippet. See the
 	 * popularsnippets Htable definition for details.
 	 */
-	final ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
+	private final ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
 	/** Maps from snippet hash to popular snippet locations. */
-	final ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippet;
+	private final ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippet;
 
-	final Comparator<SnippetMatch> snippetMatchComparator;
+	private final Comparator<SnippetMatch> snippetMatchComparator;
 
 	@Inject
 	CloneExpander(Provider<PopularSnippetMaps> popularSnippetMapsProvider,

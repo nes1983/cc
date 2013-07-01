@@ -14,7 +14,6 @@ import ch.unibe.scg.cc.regex.Replace;
 @SuppressWarnings("javadoc")
 @RunWith(JExample.class)
 public class Type2ReplacerFactoryTest {
-
 	String sampleString() {
 		return "\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n" + "	}\n";
 	}

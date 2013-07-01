@@ -23,7 +23,7 @@ public class FrontendTest {
 		Normalizer p2 = new Normalizer(new Type2ReplacerFactory().get());
 
 		@SuppressWarnings("resource")
-		Frontend frontend = new Frontend(null, null, p1, p2, null, null, null, null, null, null);
+		Frontend frontend = new Frontend(null, null, p1, p2, null, null, null, null, null);
 		String s = frontend.type2NormalForm("\npublic    static void doIt(char[] arg) {\n");
 
 		assertThat(s, is("\nt t t(t[] t) {\n"));
@@ -31,7 +31,7 @@ public class FrontendTest {
 
 	@Test
 	public Frontend testNormalize() {
-		Frontend frontend = new Frontend(null, null, phaseFrontend, phaseFrontend, null, null, null, null, null, null);
+		Frontend frontend = new Frontend(null, null, phaseFrontend, phaseFrontend, null, null, null, null, null);
 		frontend.type1NormalForm("\npublic    static void doIt(char[] arg) {\n");
 		verify(phaseFrontend).normalize(any(StringBuilder.class));
 		return frontend;

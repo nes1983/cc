@@ -10,8 +10,12 @@ import com.google.common.base.Charsets;
 
 /** Performs no normalization. Simply computes the cryptographic hash of a string */
 public class StandardHasher implements Hasher {
+	final private MessageDigest md;
+
 	@Inject
-	MessageDigest md;
+	StandardHasher(MessageDigest md) {
+		this.md = md;
+	}
 
 	@Override
 	public byte[] hash(String document) {

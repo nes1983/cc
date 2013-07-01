@@ -11,28 +11,24 @@ import ch.unibe.scg.cc.activerecord.CodeFileFactory;
 import ch.unibe.scg.cc.activerecord.Function;
 import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.Version;
-import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 public class Frontend implements Closeable {
-	StandardHasher standardHasher;
-	ShingleHasher shingleHasher;
-	protected PhaseFrontend type1;
-	protected PhaseFrontend type2;
-	protected StringOfLinesFactory stringOfLinesFactory;
-	protected Backend backend;
-	protected Tokenizer tokenizer;
-	CodeFileFactory codeFileFactory;
-	VersionFactory versionFactory;
-	Function.FunctionFactory functionFactory;
+	final private StandardHasher standardHasher;
+	final private ShingleHasher shingleHasher;
+	final protected PhaseFrontend type1;
+	final protected PhaseFrontend type2;
+	final protected StringOfLinesFactory stringOfLinesFactory;
+	final protected Backend backend;
+	final protected Tokenizer tokenizer;
+	final private CodeFileFactory codeFileFactory;
+	final private Function.FunctionFactory functionFactory;
 
 	@Inject
 	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
 			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, Backend backend,
-			Tokenizer tokenizer, CodeFileFactory codeFileFactory, VersionFactory versionFactory,
-			Function.FunctionFactory functionFactory) {
-		super();
+			Tokenizer tokenizer, CodeFileFactory codeFileFactory, Function.FunctionFactory functionFactory) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -41,7 +37,6 @@ public class Frontend implements Closeable {
 		this.backend = backend;
 		this.tokenizer = tokenizer;
 		this.codeFileFactory = codeFileFactory;
-		this.versionFactory = versionFactory;
 		this.functionFactory = functionFactory;
 	}
 

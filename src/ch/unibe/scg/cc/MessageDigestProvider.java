@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 import com.google.inject.Provider;
 
-public class MessageDigestProvider implements Provider<MessageDigest> {
+class MessageDigestProvider implements Provider<MessageDigest> {
 	@Override
 	public MessageDigest get() {
 		try {

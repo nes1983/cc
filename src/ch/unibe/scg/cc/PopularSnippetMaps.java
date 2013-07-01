@@ -11,9 +11,9 @@ public class PopularSnippetMaps {
 	 * Maps from functions hashes to all of their popular snippet. See the
 	 * popularsnippets Htable definition for details.
 	 */
-	final ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
+	final private ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
 	/** Maps from snippet hash to popular snippet locations. */
-	final ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippets;
+	final private ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippets;
 
 	public PopularSnippetMaps(ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets,
 			ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippets) {

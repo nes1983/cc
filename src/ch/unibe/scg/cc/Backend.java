@@ -24,7 +24,6 @@ import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.activerecord.Snippet;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
-import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.mappers.Constants;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 
@@ -50,14 +49,13 @@ public interface Backend extends Closeable {
 
 	public abstract void register(Version version);
 
-	public static class RegisterClonesBackend implements Closeable, Backend {
+	static class RegisterClonesBackend implements Backend {
 		static Logger logger = Logger.getLogger(RegisterClonesBackend.class.getName());
-		final StandardHasher standardHasher;
-		final ShingleHasher shingleHasher;
-		final StringOfLinesFactory stringOfLinesFactory;
-		final PutFactory putFactory;
-		final Provider<Location> locationProvider;
-		final Provider<Snippet> snippetProvider;
+		final private StandardHasher standardHasher;
+		final private ShingleHasher shingleHasher;
+		final private PutFactory putFactory;
+		final private Provider<Location> locationProvider;
+		final private Provider<Snippet> snippetProvider;
 
 		/** We cache whether or not files and functions have been written. */
 		private static final int CACHE_SIZE = 1000000;
@@ -99,11 +97,9 @@ public interface Backend extends Closeable {
 
 		@Inject
 		RegisterClonesBackend(StandardHasher standardHasher, ShingleHasher shingleHasher,
-				StringOfLinesFactory stringOfLinesFactory, PutFactory putFactory, Provider<Location> locationProvider,
-				Provider<Snippet> snippetProvider) {
+				PutFactory putFactory, Provider<Location> locationProvider, Provider<Snippet> snippetProvider) {
 			this.standardHasher = standardHasher;
 			this.shingleHasher = shingleHasher;
-			this.stringOfLinesFactory = stringOfLinesFactory;
 			this.putFactory = putFactory;
 			this.locationProvider = locationProvider;
 			this.snippetProvider = snippetProvider;

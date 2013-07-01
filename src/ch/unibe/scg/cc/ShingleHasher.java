@@ -17,17 +17,16 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
 public class ShingleHasher implements Hasher {
-	@Inject
-	MessageDigest md;
+	private final MessageDigest md;
 
-	final int SHINGLE_LENGTH = 4;
-	RunAutomaton shingleRegex;
+	final private static int SHINGLE_LENGTH = 4;
+	final private RunAutomaton shingleRegex =  new RunAutomaton(new RegExp("[^\\ ]+\\ [^\\ ]+\\ [^\\ ]+\\ [^\\ ]+").toAutomaton());
 
 	final int SHA1_LENGTH = 20;
 
-	public ShingleHasher() {
-		RegExp regex = new RegExp("[^\\ ]+\\ [^\\ ]+\\ [^\\ ]+\\ [^\\ ]+");
-		shingleRegex = new RunAutomaton(regex.toAutomaton());
+	@Inject
+	ShingleHasher(MessageDigest md) {
+		this.md = md;
 	}
 
 	final String[] stringArrayType = new String[] {};

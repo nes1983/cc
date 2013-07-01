@@ -16,9 +16,8 @@ import com.google.inject.Provider;
 
 @Singleton
 public abstract class ReplacerProvider implements Provider<Replace[]> {
-
-	final Replace[] type = new Replace[] {};
-	final MethodComparator methodComparator = new MethodComparator();
+	final private Replace[] type = new Replace[] {};
+	final private MethodComparator methodComparator = new MethodComparator();
 
 	@Override
 	public Replace[] get() {

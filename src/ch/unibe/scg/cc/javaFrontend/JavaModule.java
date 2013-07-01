@@ -17,15 +17,12 @@ import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 
 public class JavaModule extends AbstractModule {
-
 	@Override
 	protected void configure() {
 		bind(Tokenizer.class).to(JavaTokenizer.class).in(Singleton.class);
 		install(new Type1Module());
 		install(new Type2Module());
-		bind(Frontend.class).annotatedWith(Java.class).to(Frontend.class); // XXX
-																			// Make
-																			// private
+		bind(Frontend.class).annotatedWith(Java.class).to(Frontend.class); // TODO: Make private																			// Make
 	}
 }
 
@@ -36,8 +33,7 @@ class Type1Module extends PrivateModule {
 		expose(PhaseFrontend.class).annotatedWith(Type1.class);
 
 		// Private:
-		bind(new TypeLiteral<Replace[]>() {
-		}).toProvider(JavaType1ReplacerFactory.class);
+		bind(new TypeLiteral<Replace[]>() {}).toProvider(JavaType1ReplacerFactory.class);
 	}
 }
 

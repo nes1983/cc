@@ -1,23 +1,10 @@
 package ch.unibe.scg.cc.javaFrontend;
 
-import javax.inject.Singleton;
-
 import jregex.Pattern;
 import ch.unibe.scg.cc.ReplacerProvider;
 import ch.unibe.scg.cc.regex.Replace;
 
-@Singleton
 public class JavaType1ReplacerFactory extends ReplacerProvider {
-
-	/**
-	 * Hides deep function definitions
-	 */
-	// Replace makeHideDeepDefinitions() {
-	// Pattern ifPattern = new
-	// Pattern("(\\t{2,}|\\ {8,})([a-zA-Z \\t<>,]*\\([a-zA-Z \\t<>,]*\\)[a-zA-Z \\t<>,]*\\{|(\\n|[^\n]*[^.])class)");
-	// return new Replace(ifPattern, "; $1");
-	// }
-
 	/**
 	 * 0
 	 */
