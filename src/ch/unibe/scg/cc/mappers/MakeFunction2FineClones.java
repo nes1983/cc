@@ -52,6 +52,7 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.LoadingCache;
 import com.google.common.collect.Iterables;
 import com.google.common.io.BaseEncoding;
+import com.google.common.primitives.Ints;
 import com.google.inject.Inject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
@@ -299,8 +300,6 @@ public class MakeFunction2FineClones implements Runnable {
 	}
 
 	static class ColumnKeyCodec {
-		static final int COMMONNESS_LENGTH = 4;
-
 		static byte[] encode(int commonness, CloneGroup cloneGroup) {
 			checkArgument(commonness >= 0, "Negative commonness will ruin sorting. You supplied commonness "
 					+ commonness);
@@ -308,8 +307,8 @@ public class MakeFunction2FineClones implements Runnable {
 		}
 
 		static ColumnKey decode(byte[] encoded) throws InvalidProtocolBufferException {
-			return new ColumnKey(Bytes.toInt(Bytes.head(encoded, COMMONNESS_LENGTH)), CloneGroup.parseFrom(Bytes.tail(
-					encoded, encoded.length - COMMONNESS_LENGTH)));
+			return new ColumnKey(Bytes.toInt(Bytes.head(encoded, Ints.BYTES)), CloneGroup.parseFrom(Bytes.tail(
+					encoded, encoded.length - Ints.BYTES)));
 		}
 	}
 
