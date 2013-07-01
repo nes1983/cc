@@ -20,7 +20,7 @@ import dk.brics.automaton.RunAutomaton;
 public class JavaTokenizerTest {
 	@Test
 	public void theRegexWorks() {
-		String regex = new JavaTokenizer().splitterRegex;
+		String regex = JavaTokenizer.splitterRegex;
 		Automaton a = new RegExp(regex).toAutomaton();
 		RunAutomaton r = new RunAutomaton(a);
 

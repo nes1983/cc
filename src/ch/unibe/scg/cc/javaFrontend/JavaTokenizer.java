@@ -13,7 +13,7 @@ import dk.brics.automaton.RunAutomaton;
 public class JavaTokenizer implements Tokenizer {
 	// TODO: the last function in a class always catches one closing curly
 	// bracket ("}") too much
-	final String splitterRegex =
+	final static String splitterRegex =
 			"([a-zA-Z \\[\\]<>,]*\\([a-zA-Z \\[\\]<>,]*\\)[a-zA-Z \\[\\]<>,]*\\{|([^\n]*[^.]|\\n)(class|interface)[^\n]*)[^\n]*";
 	final Pattern wrongMethodKeywords = Pattern.compile("\\b(switch|while|if|for)\\b\\s*\\(");
 
