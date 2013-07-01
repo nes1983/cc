@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
-import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.client.HTableInterface;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.io.Writable;
@@ -29,7 +29,7 @@ class MapReduceLauncher {
 	private ConfigurationProvider configurationProvider;
 
 	/** truncates a table (1. disable, 2. delete, 3. recreate) */
-	public void truncate(HTable hTable) throws IOException {
+	public void truncate(HTableInterface hTable) throws IOException {
 		HTableDescriptor tableDescription = hTable.getTableDescriptor();
 		String tableName = tableDescription.getNameAsString();
 		try (HBaseAdmin admin = new HBaseAdmin(configurationProvider.get())) {

@@ -3,20 +3,21 @@ package ch.unibe.scg.cc.mappers;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.SnippetLocationOrBuilder;
 
 import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
 
 class PopularSnippetsCodec {
-	static byte[] encodeRowKey(SnippetLocation loc) {
+	static byte[] encodeRowKey(SnippetLocationOrBuilder loc) {
 		return loc.getFunction().toByteArray();
 	}
 
-	static byte[] encodeColumnKey(SnippetLocation loc) {
+	static byte[] encodeColumnKey(SnippetLocationOrBuilder loc) {
 		return loc.getSnippet().toByteArray();
 	}
 
-	static byte[] encodeCellValue(SnippetLocation loc) {
+	static byte[] encodeCellValue(SnippetLocationOrBuilder loc) {
 		return Bytes.add(Bytes.toBytes(loc.getPosition()), Bytes.toBytes(loc.getLength()));
 	}
 
