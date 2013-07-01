@@ -19,7 +19,6 @@ import ch.unibe.scg.cc.activerecord.Project;
 import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
-import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.TablePopulator.TablePopulatorMapper;
 
 @SuppressWarnings("javadoc")

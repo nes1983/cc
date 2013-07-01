@@ -11,7 +11,6 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.mozilla.universalchardet.UniversalDetector;
 
 import ch.unibe.scg.cc.Frontend;
 import ch.unibe.scg.cc.Java;
@@ -102,21 +101,6 @@ public class TablePopulator implements Runnable {
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
 			javaFrontend.close();
-		}
-	}
-
-	static class CharsetDetector {
-		final UniversalDetector detector = new UniversalDetector(null);
-
-		CharsetDetector() {
-		}
-
-		public String charsetOf(byte[] bytes) {
-			detector.handleData(bytes, 0, bytes.length);
-			detector.dataEnd();
-			String encoding = detector.getDetectedCharset();
-			detector.reset();
-			return encoding == null ? "ASCII" : encoding;
 		}
 	}
 }

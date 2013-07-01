@@ -6,7 +6,6 @@ import static org.junit.Assert.assertThat;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 
 @SuppressWarnings("javadoc")
 public final class CharsetTest {

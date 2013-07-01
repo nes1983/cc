@@ -48,7 +48,6 @@ import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.git.PackedRef;
 import ch.unibe.scg.cc.git.PackedRefParser;
-import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
 import com.google.common.base.Charsets;

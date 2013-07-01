@@ -20,7 +20,6 @@ import ch.unibe.scg.cc.activerecord.ProjectFactory;
 import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.mappers.GitTablePopulator.GitTablePopulatorMapper;
-import ch.unibe.scg.cc.mappers.TablePopulator.CharsetDetector;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
