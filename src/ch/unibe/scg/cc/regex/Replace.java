@@ -1,15 +1,14 @@
 package ch.unibe.scg.cc.regex;
 
-import ch.unibe.scg.cc.lines.ModifiableLines;
 import jregex.Matcher;
 import jregex.Pattern;
 
 /**
  * Replace is a command (as in command pattern) to high-speed replaces a regex
  * in a string for substitution string.
- * 
+ *
  * @author nes
- * 
+ *
  */
 public class Replace {
 	public final Pattern pattern;
@@ -28,19 +27,6 @@ public class Replace {
 			int start = matcher.start();
 			int end = matcher.end();
 			sb.replace(start + offset, end + offset, replacement);
-			int matchLength = matcher.end() - matcher.start();
-			offset += replacement.length() - matchLength;
-		}
-	}
-
-	public void replaceAll(ModifiableLines lines) {
-		int offset = 0;
-		Matcher matcher = pattern.matcher(lines.toString());
-		while (matcher.find()) {
-			String replacement = replacementString.fillIn(matcher);
-			int start = matcher.start();
-			int end = matcher.end();
-			lines.replace(start + offset, end + offset, replacement);
 			int matchLength = matcher.end() - matcher.start();
 			offset += replacement.length() - matchLength;
 		}
