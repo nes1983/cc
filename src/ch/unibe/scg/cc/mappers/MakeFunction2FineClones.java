@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
@@ -40,16 +39,12 @@ import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
 import ch.unibe.scg.cc.Protos.Occurrence;
-import ch.unibe.scg.cc.Protos.SnippetLocation;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
-import ch.unibe.scg.cc.mappers.MakeSnippet2Function.ColumnKey2;
-import ch.unibe.scg.cc.mappers.MakeSnippet2Function.ColumnKeyConverter;
 
-import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;
 import com.google.common.cache.Cache;
@@ -149,36 +144,16 @@ public class MakeFunction2FineClones implements Runnable {
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
-			final byte[] function = value.getRow();
-			assert function.length == 20;
-
 			context.getCounter(Counters.FUNCTIONS).increment(1);
 
-			Set<Entry<byte[], byte[]>> columns = value.getFamilyMap(Constants.FAMILY).entrySet();
-			Iterable<SnippetMatch> matches = Iterables.transform(columns,
-					new Function<Entry<byte[], byte[]>, SnippetMatch>() {
-						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
-							// extract information from cellKey
-							// and reconstruct full SnippetLocations
-							ColumnKey2 ck = ColumnKeyConverter.decode(cell.getKey());
-							try {
-								final SnippetMatch partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
-								return SnippetMatch
-										.newBuilder(partialSnippetMatch)
-										.setThisSnippetLocation(
-												SnippetLocation
-														.newBuilder(partialSnippetMatch.getThisSnippetLocation())
-														.setFunction(ByteString.copyFrom(function))
-														.setPosition(ck.thisPosition).setLength(ck.thisLength))
-										.setThatSnippetLocation(
-												SnippetLocation
-														.newBuilder(partialSnippetMatch.getThatSnippetLocation())
-														.setFunction(ByteString.copyFrom(ck.thatFunction))).build();
-							} catch (InvalidProtocolBufferException e) {
-								throw new WrappedRuntimeException(e);
-							}
-						}
-					});
+			Collection<SnippetMatch> matches = new ArrayList<>();
+			for (Entry<byte[], byte[]> col : value.getFamilyMap(Constants.FAMILY).entrySet()) {
+				try {
+					matches.add(SnippetMatch.parseFrom(col.getValue()));
+				} catch (InvalidProtocolBufferException e) {
+					throw new RuntimeException("Could not decode " + Arrays.toString(col.getValue()), e);
+				}
+			}
 
 			// matching is symmetrical - so we do only half of it here
 			// after matching procedure we expand to full clones
@@ -191,10 +166,9 @@ public class MakeFunction2FineClones implements Runnable {
 
 	static class MakeFunction2FineClonesReducer extends
 			GuiceReducer<ImmutableBytesWritable, ImmutableBytesWritable, BytesWritable, NullWritable> {
-		final LoadingCache<byte[], String> functionStringCache;
+		final private LoadingCache<byte[], String> functionStringCache;
 
-		final HTable strings;
-		final StringOfLinesFactory stringOfLinesFactory;
+		final private StringOfLinesFactory stringOfLinesFactory;
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
 		// available.
@@ -202,17 +176,16 @@ public class MakeFunction2FineClones implements Runnable {
 		@Named(Constants.COUNTER_MAKE_FUNCTION_2_FINE_CLONES_ARRAY_EXCEPTIONS)
 		Counter arrayExceptions;
 
-		final LoadingCache<ByteBuffer, Iterable<Occurrence>> fileLoader;
-		final LoadingCache<ByteBuffer, Iterable<Occurrence>> versionLoader;
-		final LoadingCache<ByteBuffer, Iterable<Occurrence>> projectLoader;
+		final private LoadingCache<ByteBuffer, Iterable<Occurrence>> fileLoader;
+		final private LoadingCache<ByteBuffer, Iterable<Occurrence>> versionLoader;
+		final private LoadingCache<ByteBuffer, Iterable<Occurrence>> projectLoader;
 
 		@Inject
-		MakeFunction2FineClonesReducer(@Named("strings") HTable strings, StringOfLinesFactory stringOfLinesFactory,
+		MakeFunction2FineClonesReducer(StringOfLinesFactory stringOfLinesFactory,
 				@CloneLoader LoadingCache<byte[], String> functionStringCache,
 				@Named("file2function") LoadingCache<ByteBuffer, Iterable<Occurrence>> fileLoader,
 				@Named("version2file") LoadingCache<ByteBuffer, Iterable<Occurrence>> versionLoader,
 				@Named("project2version") LoadingCache<ByteBuffer, Iterable<Occurrence>> projectLoader) {
-			this.strings = strings;
 			this.stringOfLinesFactory = stringOfLinesFactory;
 			this.functionStringCache = functionStringCache;
 			this.fileLoader = fileLoader;

@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc.mappers;
 
-import static com.google.common.base.Preconditions.checkArgument;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -47,32 +45,14 @@ public class MakeSnippet2Function implements Runnable {
 		this.scanProvider = scanProvider;
 	}
 
-	static class ColumnKeyConverter {
-		static final int THAT_FUNCTION_LENGTH = 20;
-		static final int THIS_POSITION_LENGTH = 4;
-		static final int THIS_LENGTH = 4;
-
-		static byte[] encode(SnippetMatch m) {
-			byte[] thatFunction = m.getThatSnippetLocation().getFunction().toByteArray();
-			checkArgument(thatFunction.length == THAT_FUNCTION_LENGTH, "function length illegally was "
-					+ thatFunction.length);
-
-			return Bytes.add(thatFunction, Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
+	static class Function2RoughClonesCodec {
+		static byte[] encodeColumnKey(SnippetMatch m) {
+			return Bytes.add(m.getThatSnippetLocation().getFunction().toByteArray(),
+					Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
 					Bytes.toBytes(m.getThisSnippetLocation().getLength()));
 		}
 	}
 
-	static class ColumnKey2 {
-		final byte[] thatFunction;
-		final int thisPosition;
-		final int thisLength;
-
-		ColumnKey2(byte[] thatFunction, int thisPosition, int thisLength) {
-			this.thatFunction = thatFunction;
-			this.thisPosition = thisPosition;
-			this.thisLength = thisLength;
-		}
-	}
 
 	static class MakeSnippet2FunctionMapper extends GuiceTableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
 		/** receives rows from htable function2snippet */
@@ -158,8 +138,7 @@ public class MakeSnippet2Function implements Runnable {
 					SnippetMatch snippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisLoc)
 							.setThatSnippetLocation(thatLoc).build();
 
-					byte[] columnKey = ColumnKeyConverter.encode(thatLoc.getFunction().toByteArray(),
-							thisLoc.getPosition(), thisLoc.getLength());
+					byte[] columnKey = Function2RoughClonesCodec.encodeColumnKey(snippetMatch);
 					Put put = putFactory.create(thisLoc.getFunction().toByteArray());
 					put.add(Constants.FAMILY, columnKey, 0l, snippetMatch.toByteArray());
 					context.write(new ImmutableBytesWritable(thisLoc.getFunction().toByteArray()), put);
