@@ -162,7 +162,7 @@ class MakeColumnIndex {
 		}
 	}
 
-	// TODO: WTF is this? Why is this here?
+	/** Launching of the indexers is very similar. This class abstracts their launching. */
 	static class Launcher {
 		final MapReduceLauncher launcher;
 		final Provider<Scan> scanProvider;
