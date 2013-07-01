@@ -3,6 +3,8 @@ package ch.unibe.scg.cc.mappers;
 import static com.google.common.base.Preconditions.checkArgument;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 import java.util.logging.Logger;
@@ -26,9 +28,7 @@ import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
-import com.google.common.base.Function;
 import com.google.common.base.Optional;
-import com.google.common.collect.Iterables;
 import com.google.common.io.BaseEncoding;
 import com.google.protobuf.ByteString;
 
@@ -120,25 +120,20 @@ public class MakeSnippet2Function implements Runnable {
 				InterruptedException {
 			logger.finer("reduce " + BaseEncoding.base16().encode(snippetKey.get()).substring(0, 6));
 
-			int nLocs = Iterables.size(functionHashesPlusLocations);
-			if (nLocs <= 1) {
+			Collection<SnippetLocation> locs = new ArrayList<>();
+			for (ImmutableBytesWritable in : functionHashesPlusLocations) {
+				locs.add(SnippetLocation.newBuilder().setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
+						.setPosition(Bytes.toInt(Bytes.head(in.get(), 4)))
+						.setLength(Bytes.toInt(Bytes.tail(in.get(), 4)))
+						.setSnippet(ByteString.copyFrom(snippetKey.get())).build());
+			}
+
+			if (locs.size() <= 1) {
 				return; // prevent processing non-recurring hashes
 			}
 
-			Iterable<SnippetLocation> locs = Iterables.transform(functionHashesPlusLocations,
-					new Function<ImmutableBytesWritable, SnippetLocation>() {
-						@Override public SnippetLocation apply(ImmutableBytesWritable in) {
-							return SnippetLocation.newBuilder()
-									.setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
-									.setPosition(Bytes.toInt(Bytes.head(in.get(), 4)))
-									.setLength(Bytes.toInt(Bytes.tail(in.get(), 4)))
-									.setSnippet(ByteString.copyFrom(snippetKey.get())).build();
-						}
-			});
-
-
 			// special handling of popular snippets
-			if (nLocs > POPULAR_SNIPPET_THRESHOLD) {
+			if (locs.size() > POPULAR_SNIPPET_THRESHOLD) {
 				// fill popularSnippets table
 				for (SnippetLocation loc : locs) {
 					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
