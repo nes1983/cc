@@ -14,11 +14,11 @@ import com.google.inject.assistedinject.Assisted;
 public class Version extends Column implements IColumn {
 	private static final byte[] FILEPATH_NAME = Bytes.toBytes("fp");
 
-	final String filePath;
-	final byte[] hash;
-	final byte[] hashCodeFile;
-	final byte[] hashFilePath;
-	final PutFactory putFactory;
+	final private String filePath;
+	final private byte[] hash;
+	final private byte[] hashCodeFile;
+	final private byte[] hashFilePath;
+	final private PutFactory putFactory;
 
 	@Inject
 	public Version(StandardHasher standardHasher, @Assisted String filePath, @Assisted CodeFile codeFile,
