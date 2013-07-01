@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.mappers;
 
-import static ch.unibe.scg.cc.mappers.MakeFunction2RoughClones.ColumnKeyConverter.decode;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkState;
 
@@ -47,6 +46,8 @@ import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
+import ch.unibe.scg.cc.mappers.MakeSnippet2Function.ColumnKey2;
+import ch.unibe.scg.cc.mappers.MakeSnippet2Function.ColumnKeyConverter;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
@@ -159,7 +160,7 @@ public class MakeFunction2FineClones implements Runnable {
 						@Override public SnippetMatch apply(Entry<byte[], byte[]> cell) {
 							// extract information from cellKey
 							// and reconstruct full SnippetLocations
-							MakeFunction2RoughClones.ColumnKey ck = decode(cell.getKey());
+							ColumnKey2 ck = ColumnKeyConverter.decode(cell.getKey());
 							try {
 								final SnippetMatch partialSnippetMatch = SnippetMatch.parseFrom(cell.getValue());
 								return SnippetMatch
