@@ -89,15 +89,14 @@ public class ShingleHasher implements Hasher {
 	/**
 	 * Performs hash = hash XOR otherHash. Changes hash in place.
 	 */
-	// TODO: compare performance with BitSet.
-	void xor(byte[] hash, byte[] otherHash) {
+	private void xor(byte[] hash, byte[] otherHash) {
 		assert hash.length == SHA1_LENGTH;
 		for (int i = 0; i < hash.length; i++) {
-			hash[i] = (byte) (hash[i] ^ otherHash[i]);
+			hash[i] ^= otherHash[i];
 		}
 	}
 
-	boolean isZero(byte[] ary) {
+	private boolean isZero(byte[] ary) {
 		for (final byte element : ary) {
 			if (element != 0) {
 				return false;
