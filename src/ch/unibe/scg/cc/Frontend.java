@@ -17,11 +17,11 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 public class Frontend implements Closeable {
 	final private StandardHasher standardHasher;
 	final private ShingleHasher shingleHasher;
-	final protected PhaseFrontend type1;
-	final protected PhaseFrontend type2;
-	final protected StringOfLinesFactory stringOfLinesFactory;
-	final protected Backend backend;
-	final protected Tokenizer tokenizer;
+	final private PhaseFrontend type1;
+	final private PhaseFrontend type2;
+	final private StringOfLinesFactory stringOfLinesFactory;
+	final private Backend backend;
+	final private Tokenizer tokenizer;
 	final private CodeFileFactory codeFileFactory;
 	final private Function.FunctionFactory functionFactory;
 
@@ -75,50 +75,40 @@ public class Frontend implements Closeable {
 
 	public CodeFile register(String fileContent) throws IOException {
 		CodeFile codeFile = codeFileFactory.create(fileContent);
-		StringBuilder content = new StringBuilder(fileContent);
-		registerWithBuilder(content, codeFile);
+		for (SnippetWithBaseline function : tokenizer.tokenize(fileContent)) {
+			// type-1
+			StringBuilder normalized = new StringBuilder(function.getSnippet());
+			type1.normalize(normalized);
+			StringOfLines normalizedSOL = stringOfLinesFactory.make(normalized.toString());
+			if (normalizedSOL.getNumberOfLines() < Backend.MINIMUM_LINES) {
+				continue;
+			}
+
+			Function functionType1 = functionFactory.makeFunction(
+					standardHasher, function.getBaseLine(), normalized.toString(), function.getSnippet());
+			backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType1, Main.TYPE_1_CLONE);
+			codeFile.addFunction(functionType1);
+
+			// type-2
+			type2.normalize(normalized);
+			Function functionType2 = functionFactory.makeFunction(shingleHasher, function.getBaseLine(),
+					normalized.toString(), function.getSnippet());
+			normalizedSOL = stringOfLinesFactory.make(normalized.toString());
+			backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType2, Main.TYPE_2_CLONE);
+			codeFile.addFunction(functionType2);
+
+			// type-3
+			Function functionType3 = functionFactory.makeFunction(
+					shingleHasher, functionType2.getBaseLine(),	normalized.toString(), function.getSnippet());
+			assert !Arrays.equals(functionType3.getHash(), new byte[20]);
+			backend.shingleRegisterFunction(normalizedSOL, functionType3);
+			codeFile.addFunction(functionType3);
+		}
 
 		backend.register(codeFile);
 
 		return codeFile;
 	}
-
-	void registerWithBuilder(StringBuilder fileContents, CodeFile codeFile) {
-		for (SnippetWithBaseline function : tokenizer.tokenize(fileContents.toString())) {
-			registerFunction(codeFile, function);
-		}
-	}
-
-	void registerFunction(CodeFile codeFile, SnippetWithBaseline function) {
-		// type-1
-		StringBuilder normalized = new StringBuilder(function.getSnippet());
-		type1.normalize(normalized);
-		StringOfLines normalizedSOL = stringOfLinesFactory.make(normalized.toString());
-		if (normalizedSOL.getNumberOfLines() < Backend.MINIMUM_LINES) {
-			return;
-		}
-
-		Function functionType1 = functionFactory.makeFunction(
-				standardHasher, function.getBaseLine(), normalized.toString(), function.getSnippet());
-		backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType1, Main.TYPE_1_CLONE);
-		codeFile.addFunction(functionType1);
-
-		// type-2
-		type2.normalize(normalized);
-		Function functionType2 = functionFactory.makeFunction(shingleHasher, function.getBaseLine(),
-				normalized.toString(), function.getSnippet());
-		normalizedSOL = stringOfLinesFactory.make(normalized.toString());
-		backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType2, Main.TYPE_2_CLONE);
-		codeFile.addFunction(functionType2);
-
-		// type-3
-		Function functionType3 = functionFactory.makeFunction(
-				shingleHasher, functionType2.getBaseLine(),	normalized.toString(), function.getSnippet());
-		assert !Arrays.equals(functionType3.getHash(), new byte[20]);
-		backend.shingleRegisterFunction(normalizedSOL, functionType3);
-		codeFile.addFunction(functionType3);
-	}
-
 
 	@Override
 	public void close() throws IOException {
