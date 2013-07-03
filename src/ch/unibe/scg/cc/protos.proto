@@ -4,22 +4,59 @@ package mappers;
 
 option java_package = "ch.unibe.scg.cc";
 
-message SnippetMatch {
-	optional SnippetLocation thisSnippetLocation = 1;
-	optional SnippetLocation thatSnippetLocation = 2;
+enum CloneType {
+	LITERAL = 1;
+	RENAMED = 2;
+	GAPPED = 3;
 }
 
-message SnippetLocation {
-	// 20 bytes long.
-	optional bytes function = 1;
+message Project {
+	optional bytes hash = 1;
+	optional string name = 2;
+	repeated Version versions = 3;
+}
+
+message Version {
+	optional bytes hash = 1;
+	// Hash of the project containing this version.
+	optional bytes project = 2;
+	optional string name = 3;
+}
+
+// A named file of source code
+message CodeFile {
+	optional bytes hash = 1;
+	optional bytes version = 2;
+	optional string path = 3;
+	optional string contents = 4;
+}
+
+message Function {
+	optional bytes hash = 1;
+	// hash of the referencing code_file
+	optional bytes code_file = 2;
+	optional string contents = 3;
+	// first line of the function in the surrounding file.
+	optional int32 base_line = 4;
+}
+
+message SnippetMatch {
+	optional Snippet thisSnippetLocation = 1;
+	optional Snippet thatSnippetLocation = 2;
+}
+
+message Snippet {
+	optional bytes hash = 1;
+	optional bytes function = 2;
 	// Location relative to the surrounding function.
 	// Not the file.
-	optional int32 position = 2;
-	// 21 bytes long.
-	optional bytes snippet = 3;
-	optional int32 length = 4;
+	optional int32 position = 3;
+	optional CloneType clone_type = 4;
+	// Hash of the contents.
+	optional int32 length = 5;
 }
 
+// TODO: delete.
 message Clone {
 	optional bytes this_function = 1;
 	optional bytes that_function = 2;

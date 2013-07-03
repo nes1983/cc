@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc;
 
-import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
-
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,7 +14,7 @@ import javax.inject.Inject;
 import javax.inject.Provider;
 
 import ch.unibe.scg.cc.Protos.Clone;
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.Protos.SnippetMatchOrBuilder;
 
@@ -43,9 +41,9 @@ public class CloneExpander {
 	 * Maps from functions hashes to all of their popular snippet. See the
 	 * popularsnippets Htable definition for details.
 	 */
-	private final ImmutableMultimap<ByteBuffer, SnippetLocation> function2PopularSnippets;
+	private final ImmutableMultimap<ByteBuffer, Snippet> function2PopularSnippets;
 	/** Maps from snippet hash to popular snippet locations. */
-	private final ImmutableMultimap<ByteBuffer, SnippetLocation> snippet2PopularSnippet;
+	private final ImmutableMultimap<ByteBuffer, Snippet> snippet2PopularSnippet;
 
 	private final Comparator<SnippetMatch> snippetMatchComparator;
 
@@ -139,9 +137,9 @@ public class CloneExpander {
 		}
 
 		List<SnippetMatch> toBeWeavedIns = new ArrayList<>();
-		for (SnippetLocation thisLocation : function2PopularSnippets.get(thisFunction)) {
-			assert snippet2PopularSnippet.containsKey(thisLocation.getSnippet().asReadOnlyByteBuffer());
-			for (SnippetLocation thatLocation : snippet2PopularSnippet.get(thisLocation.getSnippet()
+		for (Snippet thisLocation : function2PopularSnippets.get(thisFunction)) {
+			assert snippet2PopularSnippet.containsKey(thisLocation.getHash().asReadOnlyByteBuffer());
+			for (Snippet thatLocation : snippet2PopularSnippet.get(thisLocation.getHash()
 					.asReadOnlyByteBuffer())) {
 				// The following three lines *must* match the test in
 				// MakeFunction2RoughClones.java
@@ -178,8 +176,8 @@ public class CloneExpander {
 	}
 
 	private Clone finalizeClone(final Clone.Builder clone) {
-		clone.setThisLength(clone.getThisLength() + MINIMUM_LINES - 1);
-		clone.setThatLength(clone.getThatLength() + MINIMUM_LINES - 1);
+		clone.setThisLength(clone.getThisLength() + Frontend.MINIMUM_LINES - 1);
+		clone.setThatLength(clone.getThatLength() + Frontend.MINIMUM_LINES - 1);
 		return clone.build();
 	}
 

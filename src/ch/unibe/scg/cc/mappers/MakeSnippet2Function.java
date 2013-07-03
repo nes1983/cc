@@ -20,11 +20,10 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.Protos.SnippetMatchOrBuilder;
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.activerecord.Column;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;
@@ -66,7 +65,7 @@ public class MakeSnippet2Function implements Runnable {
 
 			logger.finer("map " + BaseEncoding.base16().encode(functionHashKey.get()).substring(0, 4));
 
-			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Column.FAMILY_NAME);
+			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 
 			for (Entry<byte[], byte[]> column : familyMap.entrySet()) {
 				byte[] snippet = column.getKey();
@@ -97,12 +96,12 @@ public class MakeSnippet2Function implements Runnable {
 				InterruptedException {
 			logger.finer("reduce " + BaseEncoding.base16().encode(snippetKey.get()).substring(0, 6));
 
-			Collection<SnippetLocation> locs = new ArrayList<>();
+			Collection<Snippet> locs = new ArrayList<>();
 			for (ImmutableBytesWritable in : functionHashesPlusLocations) {
-				locs.add(SnippetLocation.newBuilder().setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
+				locs.add(Snippet.newBuilder().setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
 						.setPosition(Bytes.toInt(Bytes.head(in.get(), 4)))
 						.setLength(Bytes.toInt(Bytes.tail(in.get(), 4)))
-						.setSnippet(ByteString.copyFrom(snippetKey.get())).build());
+						.setHash(ByteString.copyFrom(snippetKey.get())).build());
 			}
 
 			if (locs.size() <= 1) {
@@ -112,7 +111,7 @@ public class MakeSnippet2Function implements Runnable {
 			// special handling of popular snippets
 			if (locs.size() > POPULAR_SNIPPET_THRESHOLD) {
 				// fill popularSnippets table
-				for (SnippetLocation loc : locs) {
+				for (Snippet loc : locs) {
 					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
 					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(loc), 0l,
 							PopularSnippetsCodec.encodeColumnKey(loc));
@@ -122,8 +121,8 @@ public class MakeSnippet2Function implements Runnable {
 				return;
 			}
 
-			for (SnippetLocation thisLoc : locs) {
-				for (SnippetLocation thatLoc : locs) {
+			for (Snippet thisLoc : locs) {
+				for (Snippet thatLoc : locs) {
 					// save only half of the functions as row-key
 					// full table gets reconstructed in MakeSnippet2FineClones
 					// This *must* be the same as in CloneExpander.

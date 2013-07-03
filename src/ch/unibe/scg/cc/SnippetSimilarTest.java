@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc;
 
-import static ch.unibe.scg.cc.Backend.MINIMUM_LINES;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -17,7 +16,7 @@ import javax.inject.Provider;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
@@ -36,17 +35,17 @@ import com.google.protobuf.ByteString;
  */
 @SuppressWarnings("javadoc")
 public final class SnippetSimilarTest {
-	static class SnippetLocationComparator implements Comparator<SnippetLocation>, Serializable {
+	static class SnippetLocationComparator implements Comparator<Snippet>, Serializable {
 		private static final long serialVersionUID = 1L;
 
-		@Override public int compare(SnippetLocation o1, SnippetLocation o2) {
-			return o1.getSnippet().asReadOnlyByteBuffer().compareTo(
-					o2.getSnippet().asReadOnlyByteBuffer());
+		@Override public int compare(Snippet o1, Snippet o2) {
+			return o1.getHash().asReadOnlyByteBuffer().compareTo(
+					o2.getHash().asReadOnlyByteBuffer());
 		}
 	}
 
 	final Comparator<SnippetMatch> snippetMatchComparator = new SnippetMatchComparator();
-	final Comparator<SnippetLocation> snippetLocationComparator = new SnippetLocationComparator();
+	final Comparator<Snippet> snippetLocationComparator = new SnippetLocationComparator();
 
 	@Test
 	public void testAreSimilar() throws CannotBeHashedException {
@@ -71,7 +70,7 @@ public final class SnippetSimilarTest {
 		n2.normalize(s3);
 
 		final StringOfLinesFactory solFactory = new StringOfLinesFactory();
-		List<List<SnippetLocation>> table = ImmutableList.of(
+		List<List<Snippet>> table = ImmutableList.of(
 				allSnippets(solFactory.make(s1.toString()), ss, new byte[] { 1 }),
 				allSnippets(solFactory.make(s2.toString()), ss, new byte[] { 2 }),
 				allSnippets(solFactory.make(s3.toString()), ss, new byte[] { 3 }));
@@ -83,7 +82,7 @@ public final class SnippetSimilarTest {
 			matches.add(new ArrayList<SnippetMatch>());
 			// only look at j > i to avoid outputting the same match twice.
 			for (int j = i + 1; j < table.size(); j++) {
-				for (final SnippetLocation e : table.get(i)) {
+				for (final Snippet e : table.get(i)) {
 					final int pos = Collections.binarySearch(table.get(j), e, snippetLocationComparator);
 					if (pos >= 0) {
 						matches.get(i).add(SnippetMatch.newBuilder()
@@ -110,8 +109,8 @@ public final class SnippetSimilarTest {
 					@Override
 					public PopularSnippetMaps get() {
 						return new PopularSnippetMaps(
-								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of(),
-								ImmutableListMultimap.<ByteBuffer, Protos.SnippetLocation>of());
+								ImmutableListMultimap.<ByteBuffer, Snippet>of(),
+								ImmutableListMultimap.<ByteBuffer, Snippet>of());
 					}
 				}, null);
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
@@ -129,56 +128,56 @@ public final class SnippetSimilarTest {
 	}
 
 	/** Filter to keep only snippets that collide. */
-	private List<List<SnippetLocation>> filterCollisions(List<List<SnippetLocation>> table) {
-		final List<SnippetLocation> filtering = new ArrayList<>();
-		for (final List<SnippetLocation> subTable : table) {
+	private List<List<Snippet>> filterCollisions(List<List<Snippet>> table) {
+		final List<Snippet> filtering = new ArrayList<>();
+		for (final List<Snippet> subTable : table) {
 			filtering.addAll(subTable);
 		}
-		Collections.sort(filtering, new Comparator<SnippetLocation>() {
-			@Override public int compare(SnippetLocation o1, SnippetLocation o2) {
-				return o1.getSnippet().asReadOnlyByteBuffer().compareTo(
-						o2.getSnippet().asReadOnlyByteBuffer());
+		Collections.sort(filtering, new Comparator<Snippet>() {
+			@Override public int compare(Snippet o1, Snippet o2) {
+				return o1.getHash().asReadOnlyByteBuffer().compareTo(
+						o2.getHash().asReadOnlyByteBuffer());
 			}});
 
-		table = ImmutableList.<List<SnippetLocation>>of(
-				new ArrayList<SnippetLocation>(), new ArrayList<SnippetLocation>(), new ArrayList<SnippetLocation>());
-		SnippetLocation last = filtering.get(0);
-		SnippetLocation next = filtering.get(1);
-		if (last.getSnippet().asReadOnlyByteBuffer().equals(next.getSnippet().asReadOnlyByteBuffer())) {
+		table = ImmutableList.<List<Snippet>>of(
+				new ArrayList<Snippet>(), new ArrayList<Snippet>(), new ArrayList<Snippet>());
+		Snippet last = filtering.get(0);
+		Snippet next = filtering.get(1);
+		if (last.getHash().asReadOnlyByteBuffer().equals(next.getHash().asReadOnlyByteBuffer())) {
 			table.get(last.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(last);
 		}
 		for (int i = 1; i < filtering.size() - 1; i++) {
-			final SnippetLocation cur = next;
+			final Snippet cur = next;
 			next = filtering.get(i + 1);
-			if (cur.getSnippet().asReadOnlyByteBuffer().equals(last.getSnippet().asReadOnlyByteBuffer())
-					|| cur.getSnippet().asReadOnlyByteBuffer().equals(next.getSnippet().asReadOnlyByteBuffer())) {
+			if (cur.getHash().asReadOnlyByteBuffer().equals(last.getHash().asReadOnlyByteBuffer())
+					|| cur.getHash().asReadOnlyByteBuffer().equals(next.getHash().asReadOnlyByteBuffer())) {
 						table.get(cur.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(cur);
 					}
 			last = cur;
 		}
-		final SnippetLocation cur = filtering.get(filtering.size() - 1);
-		if (cur.getSnippet().asReadOnlyByteBuffer().equals(last.getSnippet().asReadOnlyByteBuffer())) {
+		final Snippet cur = filtering.get(filtering.size() - 1);
+		if (cur.getHash().asReadOnlyByteBuffer().equals(last.getHash().asReadOnlyByteBuffer())) {
 			table.get(cur.getFunction().asReadOnlyByteBuffer().get(0) - 1).add(cur);
 		}
 		assertThat(filtering.size(), is(51));
 		assertThat(table.get(0).size() + table.get(1).size() + table.get(2).size(), is(32));
 
-		for (final List<SnippetLocation> subTable : table) {
+		for (final List<Snippet> subTable : table) {
 			Collections.sort(subTable, snippetLocationComparator);
 		}
 		return table;
 	}
 
-	List<SnippetLocation> allSnippets(StringOfLines sol, Hasher hasher, byte[] function)
+	List<Snippet> allSnippets(StringOfLines sol, Hasher hasher, byte[] function)
 			throws CannotBeHashedException {
-		final List<SnippetLocation> ret = new ArrayList<>();
+		final List<Snippet> ret = new ArrayList<>();
 
-		for (int frameStart = 0; frameStart + MINIMUM_LINES
+		for (int frameStart = 0; frameStart + Frontend.MINIMUM_LINES
 				< sol.getNumberOfLines(); frameStart++) {
-			final String value = sol.getLines(frameStart, MINIMUM_LINES);
+			final String value = sol.getLines(frameStart, Frontend.MINIMUM_LINES);
 			final ByteBuffer newHash = ByteBuffer.wrap(hasher.hash(value));
-			ret.add(SnippetLocation.newBuilder()
-					.setSnippet(ByteString.copyFrom(newHash))
+			ret.add(Snippet.newBuilder()
+					.setHash(ByteString.copyFrom(newHash))
 					.setFunction(ByteString.copyFrom(function))
 					.setPosition(frameStart)
 					.build());
@@ -266,7 +265,7 @@ public final class SnippetSimilarTest {
 	private String printString(Iterable<SnippetMatch> matches) {
 		final StringBuilder ret = new StringBuilder("(");
 			for (final SnippetMatch e : matches) {
-				final ByteBuffer hash = e.getThisSnippetLocation().getSnippet().asReadOnlyByteBuffer();
+				final ByteBuffer hash = e.getThisSnippetLocation().getHash().asReadOnlyByteBuffer();
 				ret.append(String.format("%d-%d|%d$%02x%02x@%d, ",
 						e.getThisSnippetLocation().getFunction().asReadOnlyByteBuffer().get(0),
 						e.getThatSnippetLocation().getFunction().asReadOnlyByteBuffer().get(0),

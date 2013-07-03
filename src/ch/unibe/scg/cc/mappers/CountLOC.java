@@ -1,10 +1,8 @@
 package ch.unibe.scg.cc.mappers;
 
-import static com.google.common.base.Preconditions.checkNotNull;
+import static ch.unibe.scg.cc.Utils.countLines;
 
 import java.io.IOException;
-import java.io.LineNumberReader;
-import java.io.StringReader;
 
 import javax.inject.Named;
 import javax.inject.Provider;
@@ -60,15 +58,6 @@ public class CountLOC implements Runnable {
 			// exit thread
 			return;
 		}
-	}
-
-	private static int countLines(String str) throws IOException {
-		LineNumberReader lnr = new LineNumberReader(new StringReader(checkNotNull(str)));
-		lnr.skip(Long.MAX_VALUE);
-
-		// getLineNumber() returns the number of line terminators, therefore we
-		// have to add one to get the correct number of lines.
-		return lnr.getLineNumber() + 1;
 	}
 
 	static class CountLOCMapper extends GuiceTableMapper<NullWritable, NullWritable> {

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.regex.Pattern;
 
-import ch.unibe.scg.cc.SnippetWithBaseline;
+import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
-public class JavaTokenizer implements Tokenizer {
+class JavaTokenizer implements Tokenizer {
 	// TODO: the last function in a class always catches one closing curly
 	// bracket ("}") too much
 	final static String splitterRegex =
@@ -24,11 +24,11 @@ public class JavaTokenizer implements Tokenizer {
 	JavaTokenizer() {}
 
 	@Override
-	public Iterable<SnippetWithBaseline> tokenize(String file) {
+	public Iterable<Function> tokenize(String file) {
 		int currentLineNumber = 0;
 		int lastStart = 0;
 
-		Collection<SnippetWithBaseline> ret = new ArrayList<>();
+		Collection<Function> ret = new ArrayList<>();
 		AutomatonMatcher m = splitter.newMatcher(file);
 
 		while (m.find()) {
@@ -48,14 +48,16 @@ public class JavaTokenizer implements Tokenizer {
 			String currentFunctionString = file.substring(lastStart, start);
 			// don't save first match (package & import statements)
 			if (currentLineNumber > 0) {
-				ret.add(new SnippetWithBaseline(currentLineNumber, currentFunctionString));
+				ret.add(Function.newBuilder()
+						.setBaseLine(currentLineNumber).setContents(currentFunctionString).build());
 			}
 
 			lastStart = start;
 			currentLineNumber += StringOfLinesFactory.countOccurrences(currentFunctionString, '\n');
 		}
 		String currentFunctionString = file.substring(lastStart, file.length());
-		ret.add(new SnippetWithBaseline(currentLineNumber, currentFunctionString));
+		ret.add(Function.newBuilder()
+				.setBaseLine(currentLineNumber).setContents(currentFunctionString).build());
 		return ret;
 	}
 }

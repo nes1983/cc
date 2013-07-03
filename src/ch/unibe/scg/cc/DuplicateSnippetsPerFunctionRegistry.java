@@ -9,12 +9,10 @@ import javax.inject.Inject;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Project;
+import ch.unibe.scg.cc.Protos.CodeFile;
+import ch.unibe.scg.cc.Protos.Project;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.activerecord.PutFactory;
-import ch.unibe.scg.cc.activerecord.Snippet;
-import ch.unibe.scg.cc.activerecord.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer;
 

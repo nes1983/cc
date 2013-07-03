@@ -9,7 +9,7 @@ import javax.inject.Provider;
 
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.collect.ImmutableList;
@@ -22,61 +22,61 @@ public final class CloneExpanderTest {
 	@Test
 	public void testExpandClones() {
 		// Construct something like h1fun2@3 h2fun2@5 h3fun3@1 h4fun3@7
-		SnippetLocation thisFunction = SnippetLocation.newBuilder().setFunction(ByteString.copyFromUtf8("fun1")).build();
+		Snippet thisFunction = Snippet.newBuilder().setFunction(ByteString.copyFromUtf8("fun1")).build();
 		ImmutableList<SnippetMatch> toExpand = ImmutableList.of(
 				SnippetMatch.newBuilder()
-					.setThisSnippetLocation(SnippetLocation.newBuilder(thisFunction)
-							.setSnippet(ByteString.copyFromUtf8("h1"))
+					.setThisSnippetLocation(Snippet.newBuilder(thisFunction)
+							.setHash(ByteString.copyFromUtf8("h1"))
 							.setPosition(2))
-					.setThatSnippetLocation(SnippetLocation.newBuilder()
+					.setThatSnippetLocation(Snippet.newBuilder()
 							.setFunction(ByteString.copyFromUtf8("fun2"))
-							.setSnippet(ByteString.copyFromUtf8("h1"))
+							.setHash(ByteString.copyFromUtf8("h1"))
 							.setPosition(2))
 					.build(),
 
 					SnippetMatch.newBuilder()
-					.setThisSnippetLocation(SnippetLocation.newBuilder(thisFunction)
-							.setSnippet(ByteString.copyFromUtf8("h2"))
+					.setThisSnippetLocation(Snippet.newBuilder(thisFunction)
+							.setHash(ByteString.copyFromUtf8("h2"))
 							.setPosition(5))
-					.setThatSnippetLocation(SnippetLocation.newBuilder()
+					.setThatSnippetLocation(Snippet.newBuilder()
 							.setFunction(ByteString.copyFromUtf8("fun2"))
-							.setSnippet(ByteString.copyFromUtf8("h2"))
+							.setHash(ByteString.copyFromUtf8("h2"))
 							.setPosition(5))
 					.build(),
 
 					SnippetMatch.newBuilder()
-					.setThisSnippetLocation(SnippetLocation.newBuilder(thisFunction)
-							.setSnippet(ByteString.copyFromUtf8("h3"))
+					.setThisSnippetLocation(Snippet.newBuilder(thisFunction)
+							.setHash(ByteString.copyFromUtf8("h3"))
 							.setPosition(1))
-					.setThatSnippetLocation(SnippetLocation.newBuilder()
+					.setThatSnippetLocation(Snippet.newBuilder()
 							.setFunction(ByteString.copyFromUtf8("fun3"))
-							.setSnippet(ByteString.copyFromUtf8("h3"))
+							.setHash(ByteString.copyFromUtf8("h3"))
 							.setPosition(1))
 					.build(),
 
 					SnippetMatch.newBuilder()
-					.setThisSnippetLocation(SnippetLocation.newBuilder(thisFunction)
-							.setSnippet(ByteString.copyFromUtf8("h4"))
+					.setThisSnippetLocation(Snippet.newBuilder(thisFunction)
+							.setHash(ByteString.copyFromUtf8("h4"))
 							.setPosition(7))
-					.setThatSnippetLocation(SnippetLocation.newBuilder()
+					.setThatSnippetLocation(Snippet.newBuilder()
 							.setFunction(ByteString.copyFromUtf8("fun3"))
-							.setSnippet(ByteString.copyFromUtf8("h1"))
+							.setHash(ByteString.copyFromUtf8("h1"))
 							.setPosition(7))
 					.build());
 
 		// Construct maps for one popular snippet h7 that occurs in two places: fun2@6, fun1@2
-		final SnippetLocation fun2Loc = SnippetLocation.newBuilder()
-				.setSnippet(ByteString.copyFromUtf8("h7"))
+		final Snippet fun2Loc = Snippet.newBuilder()
+				.setHash(ByteString.copyFromUtf8("h7"))
 				.setPosition(6)
 				.setFunction(ByteString.copyFromUtf8("fun2")).build();
-		final SnippetLocation fun1Loc = SnippetLocation.newBuilder()
-				.setSnippet(ByteString.copyFromUtf8("h7"))
+		final Snippet fun1Loc = Snippet.newBuilder()
+				.setHash(ByteString.copyFromUtf8("h7"))
 				.setPosition(1)
 				.setFunction(ByteString.copyFromUtf8("fun1")).build();
-		final ImmutableListMultimap<ByteBuffer, SnippetLocation> snippet2Popular = ImmutableListMultimap.of(
-				fun1Loc.getSnippet().asReadOnlyByteBuffer(), fun1Loc,
-				fun2Loc.getSnippet().asReadOnlyByteBuffer(), fun2Loc);
-		final ImmutableListMultimap<ByteBuffer, SnippetLocation> function2Popular = ImmutableListMultimap.of(
+		final ImmutableListMultimap<ByteBuffer, Snippet> snippet2Popular = ImmutableListMultimap.of(
+				fun1Loc.getHash().asReadOnlyByteBuffer(), fun1Loc,
+				fun2Loc.getHash().asReadOnlyByteBuffer(), fun2Loc);
+		final ImmutableListMultimap<ByteBuffer, Snippet> function2Popular = ImmutableListMultimap.of(
 				fun1Loc.getFunction().asReadOnlyByteBuffer(), fun1Loc,
 				fun2Loc.getFunction().asReadOnlyByteBuffer(), fun2Loc);
 

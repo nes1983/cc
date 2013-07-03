@@ -14,7 +14,7 @@ import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 
 import ch.unibe.scg.cc.PopularSnippetMaps;
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.collect.ImmutableMultimap;
@@ -39,10 +39,8 @@ class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 	public PopularSnippetMaps get() {
 		synchronized (PopularSnippetMaps.class) {
 			if (popularSnippetMaps == null) {
-				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> function2PopularSnippets = ImmutableMultimap
-						.builder();
-				ImmutableMultimap.Builder<ByteBuffer, SnippetLocation> snippet2PopularSnippets = ImmutableMultimap
-						.builder();
+				ImmutableMultimap.Builder<ByteBuffer, Snippet> function2PopularSnippets = ImmutableMultimap.builder();
+				ImmutableMultimap.Builder<ByteBuffer, Snippet> snippet2PopularSnippets = ImmutableMultimap.builder();
 
 				Scan scan = scanProvider.get();
 				scan.addFamily(Constants.FAMILY);
@@ -53,10 +51,10 @@ class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 						for (Entry<byte[], byte[]> cell : fm.entrySet()) {
 							// To save space we didn't store a protobuffer object.
 							// We create the object now with the information we have.
-							SnippetLocation snippetLocation = PopularSnippetsCodec
+							Snippet snippetLocation = PopularSnippetsCodec
 									.decodeSnippetLocation(r.getRow(), cell.getKey(), cell.getValue());
 							function2PopularSnippets.put(snippetLocation.getFunction().asReadOnlyByteBuffer(), snippetLocation);
-							snippet2PopularSnippets.put(snippetLocation.getSnippet().asReadOnlyByteBuffer(), snippetLocation);
+							snippet2PopularSnippets.put(snippetLocation.getHash().asReadOnlyByteBuffer(), snippetLocation);
 						}
 					}
 				} catch (IOException e) {

@@ -72,7 +72,7 @@ public class ShingleHasher implements Hasher {
 				if ((hashedShingle[0] & mask) != mask) {
 					continue;
 				}
-				xor(hash, hashedShingle);
+				Utils.xor(hash, hashedShingle);
 			}
 			if (!isZero(hash)) {
 				return hash;
@@ -84,16 +84,6 @@ public class ShingleHasher implements Hasher {
 	@Override
 	public byte[] hash(String doc) throws CannotBeHashedException {
 		return sketchFromHashedShingles(hashedShingles(shingles(doc)), doc);
-	}
-
-	/**
-	 * Performs hash = hash XOR otherHash. Changes hash in place.
-	 */
-	private void xor(byte[] hash, byte[] otherHash) {
-		assert hash.length == SHA1_LENGTH;
-		for (int i = 0; i < hash.length; i++) {
-			hash[i] ^= otherHash[i];
-		}
 	}
 
 	private boolean isZero(byte[] ary) {

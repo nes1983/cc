@@ -2,118 +2,233 @@ package ch.unibe.scg.cc;
 
 import java.io.Closeable;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.inject.Inject;
 
-import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.CodeFileFactory;
-import ch.unibe.scg.cc.activerecord.Function;
-import ch.unibe.scg.cc.activerecord.Project;
-import ch.unibe.scg.cc.activerecord.Version;
+import ch.unibe.scg.cc.Protos.CloneType;
+import ch.unibe.scg.cc.Protos.CodeFile;
+import ch.unibe.scg.cc.Protos.Function;
+import ch.unibe.scg.cc.Protos.Project;
+import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
+import com.google.common.cache.Cache;
+import com.google.common.cache.CacheBuilder;
+import com.google.common.collect.Iterables;
+import com.google.protobuf.ByteString;
+
 public class Frontend implements Closeable {
-	final private StandardHasher standardHasher;
-	final private ShingleHasher shingleHasher;
+	static final int MINIMUM_LINES = 5;
+	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
+
 	final private PhaseFrontend type1;
 	final private PhaseFrontend type2;
-	final private StringOfLinesFactory stringOfLinesFactory;
-	final private Backend backend;
 	final private Tokenizer tokenizer;
-	final private CodeFileFactory codeFileFactory;
-	final private Function.FunctionFactory functionFactory;
+	final private StandardHasher standardHasher;
+	final private Hasher shingleHasher;
+	final private StringOfLinesFactory stringOfLinesFactory;
+	final private CellCodec codec;
+	final private CellSink sink;
+
+	private static final int CACHE_SIZE = 1000000;
+	/** Functions that were successfully written to DB in this mapper */
+	final Cache<ByteString, Boolean> writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+	/** Files that were successfully written to DB in this mapper */
+	final Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 
 	@Inject
 	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
-			@Type2 PhaseFrontend type2, StringOfLinesFactory stringOfLinesFactory, Backend backend,
-			Tokenizer tokenizer, CodeFileFactory codeFileFactory, Function.FunctionFactory functionFactory) {
+			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
+			CellCodec codec, CellSink sink) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
 		this.type2 = type2;
-		this.stringOfLinesFactory = stringOfLinesFactory;
-		this.backend = backend;
 		this.tokenizer = tokenizer;
-		this.codeFileFactory = codeFileFactory;
-		this.functionFactory = functionFactory;
+		this.stringOfLinesFactory = stringOfLinesFactory;
+		this.codec = codec;
+		this.sink = sink;
 	}
 
-	@ForTestingOnly
-	public void type1Normalize(StringBuilder fileContents) {
-		type1.normalize(fileContents);
-	}
+	public class ProjectRegistrar implements AutoCloseable {
+		final private Project.Builder project;
+		/** Separate from project, because we're keeping builders */
+		final private Collection<Version.Builder> versions = new ArrayList<>();
 
-	@ForTestingOnly
-	public void type2Normalize(StringBuilder fileContents) {
-		type2.normalize(fileContents);
-	}
-
-	@ForTestingOnly
-	public String type1NormalForm(CharSequence fileContents) {
-		StringBuilder file = new StringBuilder(fileContents);
-		type1.normalize(file);
-		return file.toString();
-	}
-
-	@ForTestingOnly
-	public String type2NormalForm(CharSequence fileContents) {
-		StringBuilder file = new StringBuilder(fileContents);
-		type1.normalize(file);
-		type2.normalize(file);
-		return file.toString();
-	}
-
-	public void register(Project project) {
-		backend.register(project);
-	}
-
-	public void register(Version version) {
-		backend.register(version);
-	}
-
-	public CodeFile register(String fileContent) throws IOException {
-		CodeFile codeFile = codeFileFactory.create(fileContent);
-		for (SnippetWithBaseline function : tokenizer.tokenize(fileContent)) {
-			// type-1
-			StringBuilder normalized = new StringBuilder(function.getSnippet());
-			type1.normalize(normalized);
-			StringOfLines normalizedSOL = stringOfLinesFactory.make(normalized.toString());
-			if (normalizedSOL.getNumberOfLines() < Backend.MINIMUM_LINES) {
-				continue;
-			}
-
-			Function functionType1 = functionFactory.makeFunction(
-					standardHasher, function.getBaseLine(), normalized.toString(), function.getSnippet());
-			backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType1, Main.TYPE_1_CLONE);
-			codeFile.addFunction(functionType1);
-
-			// type-2
-			type2.normalize(normalized);
-			Function functionType2 = functionFactory.makeFunction(shingleHasher, function.getBaseLine(),
-					normalized.toString(), function.getSnippet());
-			normalizedSOL = stringOfLinesFactory.make(normalized.toString());
-			backend.registerConsecutiveLinesOfCode(normalizedSOL, functionType2, Main.TYPE_2_CLONE);
-			codeFile.addFunction(functionType2);
-
-			// type-3
-			Function functionType3 = functionFactory.makeFunction(
-					shingleHasher, functionType2.getBaseLine(),	normalized.toString(), function.getSnippet());
-			assert !Arrays.equals(functionType3.getHash(), new byte[20]);
-			backend.shingleRegisterFunction(normalizedSOL, functionType3);
-			codeFile.addFunction(functionType3);
+		ProjectRegistrar(String projectName) {
+			project = Project.newBuilder().setName(projectName);
 		}
 
-		backend.register(codeFile);
+		@Override
+		public void close() {
+			if (versions.size() == 0) {
+				return;
+			}
+			Set<ByteString> hs = new HashSet<>();
+			for (Version.Builder v : versions) {
+				hs.add(v.getHash());
+			}
+			project.setHash(xor(hs));
+			sink.write(codec.encodeProject(project.build()));
 
-		return codeFile;
+			for (Version.Builder v : versions) {
+				v.setProject(project.getHash());
+				sink.write(codec.encodeVersion(v.build()));
+			}
+		}
+
+		public VersionRegistrar makeVersionRegistrar(String versionName) {
+			return new VersionRegistrar(this, versionName);
+		}
+
+		void register(Version.Builder v) {
+			versions.add(v);
+		}
+	}
+
+	public class VersionRegistrar implements AutoCloseable {
+		final private ProjectRegistrar projectRegistrar;
+		/** Separate from version because we're storing the builders. */
+		final private Collection<CodeFile.Builder> files = new ArrayList<>();
+		final private Version.Builder version;
+
+		VersionRegistrar(ProjectRegistrar projectRegistrar, String versionName) {
+			this.projectRegistrar = projectRegistrar;
+			version = Version.newBuilder().setName(versionName);
+		}
+
+		@Override
+		public void close() {
+			if (files.size() == 0) {
+				return;
+			}
+
+			Set<ByteString> hs = new HashSet<>();
+			for (CodeFile.Builder fil : files) {
+				hs.add(fil.getHash());
+			}
+			version.setHash(xor(hs));
+			projectRegistrar.register(version);
+
+			for (CodeFile.Builder fil : files) {
+				fil.setVersion(version.getHash());
+				sink.write(codec.encodeCodeFile(fil.build()));
+			}
+
+			sink.write(codec.encodeVersion(version.build()));
+		}
+
+		public FileRegistrar makeFileRegistrar() {
+			return new FileRegistrar(this);
+		}
+
+		void register(CodeFile.Builder fil) {
+			files.add(fil);
+		}
+	}
+
+	public class FileRegistrar {
+		final private VersionRegistrar versionRegistrar;
+
+		FileRegistrar(VersionRegistrar versionRegistrar) {
+			this.versionRegistrar = versionRegistrar;
+		}
+
+		public void register(String path, String contents) {
+			CodeFile.Builder fil = CodeFile.newBuilder()
+					.setPath(path)
+					.setContents(contents)
+					.setHash(ByteString.copyFrom(standardHasher.hash(contents)));
+
+			versionRegistrar.register(fil);
+
+			if (writtenFiles.getIfPresent(fil.getHash()) == null) {
+				return;
+			}
+
+			for (Function fun : tokenizer.tokenize(contents)) {
+				// type-1
+				StringBuilder c = new StringBuilder(fun.getContents());
+				type1.normalize(c);
+				String normalized = c.toString();
+
+				// TODO: Should this be part of the tokenizer?
+				fun = Function.newBuilder(fun).setHash(ByteString.copyFrom(standardHasher.hash(fun.getContents()))).build();
+
+				if (Utils.countLines(normalized) < MINIMUM_LINES) {
+					continue;
+				}
+
+				sink.write(codec.encodeFunction(fun));
+
+				if (writtenFunctions.getIfPresent(fun.getHash()) == null) {
+					return;
+				}
+
+				registerSnippets(fun, normalized, CloneType.LITERAL);
+
+				// type-2
+				type2.normalize(c);
+				normalized = c.toString();
+				registerSnippets(fun, normalized, CloneType.RENAMED);
+
+				// type-3
+				registerSnippets(fun, normalized, CloneType.GAPPED);
+			}
+		}
+	}
+
+	public ProjectRegistrar makeProjectRegistrar(String projectName) {
+		return new ProjectRegistrar(projectName);
 	}
 
 	@Override
 	public void close() throws IOException {
-		if (backend != null) {
-			backend.close();
+		if (sink != null) {
+			sink.close();
 		}
+	}
+
+	private void registerSnippets(Protos.Function fun, String normalized, CloneType type) {
+		StringOfLines s = stringOfLinesFactory.make(normalized);
+		Hasher hasher = standardHasher;
+		if (type.equals(CloneType.GAPPED)) {
+			hasher = shingleHasher;
+		}
+		for (int frameStart = 0; frameStart + MINIMUM_LINES <= s.getNumberOfLines(); frameStart++) {
+			String snippet = s.getLines(frameStart, MINIMUM_LINES);
+			byte[] hash;
+			try {
+				hash = hasher.hash(snippet);
+			} catch (CannotBeHashedException e) {
+				// cannotBeHashedCounter.increment(1);
+				continue;
+			}
+
+			sink.write(codec.encodeSnippet(
+					Protos.Snippet.newBuilder()
+					.setFunction(fun.getHash())
+					.setLength(MINIMUM_LINES)
+					.setPosition(frameStart)
+					.setHash(ByteString.copyFrom(hash))
+					.build()));
+		}
+	}
+
+	static ByteString xor(Iterable<ByteString> hashes) {
+		assert !Iterables.isEmpty(hashes) : "You asked me to xor an empty iterable.";
+
+		byte[] ret = new byte[Iterables.getFirst(hashes, null).size()];
+
+		for (ByteString h : hashes) {
+			Utils.xor(ret, h.toByteArray());
+		}
+
+		return ByteString.copyFrom(ret);
 	}
 }

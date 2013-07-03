@@ -5,7 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Protos.SnippetLocation;
+import ch.unibe.scg.cc.Protos.Snippet;
 
 import com.google.protobuf.ByteString;
 
@@ -14,14 +14,14 @@ import com.google.protobuf.ByteString;
 public final class PopularSnippetsTest {
 	@Test
 	public void testInShouldBeOut() {
-		SnippetLocation loc = SnippetLocation
+		Snippet loc = Snippet
 				.newBuilder()
 				.setPosition(10)
 				.setLength(5)
 				.setFunction(
 						ByteString.copyFrom(new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
 								19, 20 }))
-				.setSnippet(
+				.setHash(
 						ByteString.copyFrom(new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
 								19, 20, 21 })).build();
 
