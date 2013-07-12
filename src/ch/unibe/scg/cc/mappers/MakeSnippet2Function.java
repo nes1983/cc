@@ -20,9 +20,9 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
+import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.CloneOrBuilder;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.Protos.SnippetMatch;
-import ch.unibe.scg.cc.Protos.SnippetMatchOrBuilder;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
@@ -46,10 +46,10 @@ public class MakeSnippet2Function implements Runnable {
 	}
 
 	static class Function2RoughClonesCodec {
-		static byte[] encodeColumnKey(SnippetMatchOrBuilder m) {
-			return Bytes.add(m.getThatSnippetLocation().getFunction().toByteArray(),
-					Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
-					Bytes.toBytes(m.getThisSnippetLocation().getLength()));
+		static byte[] encodeColumnKey(CloneOrBuilder m) {
+			return Bytes.add(m.getThatSnippet().getFunction().toByteArray(),
+					Bytes.toBytes(m.getThisSnippet().getPosition()),
+					Bytes.toBytes(m.getThisSnippet().getLength()));
 		}
 	}
 
@@ -96,38 +96,38 @@ public class MakeSnippet2Function implements Runnable {
 				InterruptedException {
 			logger.finer("reduce " + BaseEncoding.base16().encode(snippetKey.get()).substring(0, 6));
 
-			Collection<Snippet> locs = new ArrayList<>();
+			Collection<Snippet> snippets = new ArrayList<>();
 			for (ImmutableBytesWritable in : functionHashesPlusLocations) {
-				locs.add(Snippet.newBuilder().setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
+				snippets.add(Snippet.newBuilder().setFunction(ByteString.copyFrom(Bytes.head(in.get(), 20)))
 						.setPosition(Bytes.toInt(Bytes.head(in.get(), 4)))
 						.setLength(Bytes.toInt(Bytes.tail(in.get(), 4)))
 						.setHash(ByteString.copyFrom(snippetKey.get())).build());
 			}
 
-			if (locs.size() <= 1) {
+			if (snippets.size() <= 1) {
 				return; // prevent processing non-recurring hashes
 			}
 
 			// special handling of popular snippets
-			if (locs.size() > POPULAR_SNIPPET_THRESHOLD) {
+			if (snippets.size() > POPULAR_SNIPPET_THRESHOLD) {
 				// fill popularSnippets table
-				for (Snippet loc : locs) {
-					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(loc));
-					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(loc), 0l,
-							PopularSnippetsCodec.encodeColumnKey(loc));
+				for (Snippet snippet : snippets) {
+					Put put = putFactory.create(PopularSnippetsCodec.encodeRowKey(snippet));
+					put.add(Constants.FAMILY, PopularSnippetsCodec.encodeColumnKey(snippet), 0l,
+							PopularSnippetsCodec.encodeColumnKey(snippet));
 					write(put);
 				}
 				// we're done, don't go any further!
 				return;
 			}
 
-			for (Snippet thisLoc : locs) {
-				for (Snippet thatLoc : locs) {
+			for (Snippet thisSnippet : snippets) {
+				for (Snippet thatSnippet : snippets) {
 					// save only half of the functions as row-key
 					// full table gets reconstructed in MakeSnippet2FineClones
 					// This *must* be the same as in CloneExpander.
-					if (thisLoc.getFunction().asReadOnlyByteBuffer()
-							.compareTo(thatLoc.getFunction().asReadOnlyByteBuffer()) >= 0) {
+					if (thisSnippet.getFunction().asReadOnlyByteBuffer()
+							.compareTo(thatSnippet.getFunction().asReadOnlyByteBuffer()) >= 0) {
 						continue;
 					}
 
@@ -135,13 +135,13 @@ public class MakeSnippet2Function implements Runnable {
 					//	already passed to the reducer as key. REMARK 2: we don't
 					//	set thatSnippet because it gets already stored in
 					//	thisSnippet
-					SnippetMatch snippetMatch = SnippetMatch.newBuilder().setThisSnippetLocation(thisLoc)
-							.setThatSnippetLocation(thatLoc).build();
+					Clone clone = Clone.newBuilder().setThisSnippet(thisSnippet)
+							.setThatSnippet(thatSnippet).build();
 
-					byte[] columnKey = Function2RoughClonesCodec.encodeColumnKey(snippetMatch);
-					Put put = putFactory.create(thisLoc.getFunction().toByteArray());
-					put.add(Constants.FAMILY, columnKey, 0l, snippetMatch.toByteArray());
-					context.write(new ImmutableBytesWritable(thisLoc.getFunction().toByteArray()), put);
+					byte[] columnKey = Function2RoughClonesCodec.encodeColumnKey(clone);
+					Put put = putFactory.create(thisSnippet.getFunction().toByteArray());
+					put.add(Constants.FAMILY, columnKey, 0l, clone.toByteArray());
+					context.write(new ImmutableBytesWritable(thisSnippet.getFunction().toByteArray()), put);
 				}
 			}
 		}

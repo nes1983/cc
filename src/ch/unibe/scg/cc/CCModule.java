@@ -6,7 +6,7 @@ import java.util.Comparator;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 
 import com.google.inject.AbstractModule;
@@ -20,7 +20,7 @@ public class CCModule extends AbstractModule {
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class);
 		bind(Configuration.class).toProvider(ConfigurationProvider.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
-		bind(new TypeLiteral<Comparator<SnippetMatch>>() {}).to(SnippetMatchComparator.class);
+		bind(new TypeLiteral<Comparator<Clone>>() {}).to(CloneComparator.class);
 
 		bind(Boolean.class).annotatedWith(Names.named("writeToWalEnabled")).toInstance(Boolean.FALSE);
 	}

@@ -39,7 +39,6 @@ import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
 import ch.unibe.scg.cc.Protos.Occurrence;
-import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
@@ -103,16 +102,16 @@ public class MakeFunction2FineClones implements Runnable {
 		 * Filter clones down to the clones that aren't spam. In case an
 		 * IOException occurs, abort. Otherwise, try on and log error.
 		 */
-		Iterable<Clone> transform(Iterable<SnippetMatch> matches) throws IOException {
+		Iterable<Clone> transform(Iterable<Clone> matches) throws IOException {
 			Collection<Clone> clones = cloneExpander.expandClones(matches);
 			Collection<Clone> ret = new ArrayList<>();
 			for (Clone clone : clones) {
 				try {
 					if (!spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
-							stringOfLinesFactory.make(cloneLoader.get(clone.getThisFunction().toByteArray())).getLines(
-									clone.getThisFromPosition(), clone.getThisLength()),
-							stringOfLinesFactory.make(cloneLoader.get(clone.getThatFunction().toByteArray())).getLines(
-									clone.getThatFromPosition(), clone.getThatLength())))) {
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThisSnippet().getFunction().toByteArray())).getLines(
+									clone.getThisSnippet().getPosition(), clone.getThisSnippet().getLength()),
+							stringOfLinesFactory.make(cloneLoader.get(clone.getThatSnippet().getFunction().toByteArray())).getLines(
+									clone.getThatSnippet().getPosition(), clone.getThatSnippet().getLength())))) {
 						ret.add(clone);
 					}
 				} catch (ExecutionException e) {
@@ -144,10 +143,10 @@ public class MakeFunction2FineClones implements Runnable {
 				InterruptedException {
 			context.getCounter(Counters.FUNCTIONS).increment(1);
 
-			Collection<SnippetMatch> matches = new ArrayList<>();
+			Collection<Clone> matches = new ArrayList<>();
 			for (Entry<byte[], byte[]> col : value.getFamilyMap(Constants.FAMILY).entrySet()) {
 				try {
-					matches.add(SnippetMatch.parseFrom(col.getValue()));
+					matches.add(Clone.parseFrom(col.getValue()));
 				} catch (InvalidProtocolBufferException e) {
 					throw new RuntimeException("Could not decode " + Arrays.toString(col.getValue()), e);
 				}
@@ -157,7 +156,7 @@ public class MakeFunction2FineClones implements Runnable {
 			// after matching procedure we expand to full clones
 			Iterable<Clone> transformed = function2FineClones.transform(matches);
 			for (Clone clone : transformed) {
-				context.write(new ImmutableBytesWritable(clone.getThisFunction().toByteArray()),
+				context.write(new ImmutableBytesWritable(clone.getThisSnippet().getFunction().toByteArray()),
 						new ImmutableBytesWritable(clone.toByteArray()));
 			}
 		}
@@ -209,23 +208,23 @@ public class MakeFunction2FineClones implements Runnable {
 
 			for (ImmutableBytesWritable cloneProtobuf : cloneProtobufs) {
 				final Clone clone = Clone.parseFrom(cloneProtobuf.get());
-				checkState(Arrays.equals(clone.getThisFunction().toByteArray(), functionHashKey.get()),
+				checkState(Arrays.equals(clone.getThisSnippet().getFunction().toByteArray(), functionHashKey.get()),
 						"The function hash key did not match one of the clones. Clone says: "
-								+ BaseEncoding.base16().encode(clone.getThisFunction().toByteArray())
+								+ BaseEncoding.base16().encode(clone.getThisSnippet().getFunction().toByteArray())
 								+ " reduce key: " + BaseEncoding.base16().encode(functionHashKey.get()));
 
-				if (!clone.getThisFunction().equals(ByteString.copyFrom(functionHashKey.get()))) {
+				if (!clone.getThisSnippet().getFunction().equals(ByteString.copyFrom(functionHashKey.get()))) {
 					throw new AssertionError(
 							"There is a clone in cloneProtobufs that doesn't match the input function "
 									+ BaseEncoding.base16().encode(functionHashKey.get()));
 				}
 
-				Collection<Occurrence> occ = findOccurrences(clone.getThatFunction().asReadOnlyByteBuffer());
+				Collection<Occurrence> occ = findOccurrences(clone.getThatSnippet().getFunction().asReadOnlyByteBuffer());
 				context.getCounter(Counters.OCCURRENCES).increment(occ.size());
 				cloneGroupBuilder.addAllOccurrences(occ);
 
-				from = Math.min(from, clone.getThisFromPosition());
-				to = Math.max(to, clone.getThisFromPosition() + clone.getThisLength());
+				from = Math.min(from, clone.getThisSnippet().getPosition());
+				to = Math.max(to, clone.getThisSnippet().getPosition() + clone.getThisSnippet().getLength());
 				commonness++;
 			}
 

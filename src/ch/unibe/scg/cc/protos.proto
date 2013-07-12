@@ -40,9 +40,9 @@ message Function {
 	optional int32 base_line = 4;
 }
 
-message SnippetMatch {
-	optional Snippet thisSnippetLocation = 1;
-	optional Snippet thatSnippetLocation = 2;
+message Clone {
+	optional Snippet thisSnippet = 1;
+	optional Snippet thatSnippet = 2;
 }
 
 message Snippet {
@@ -54,16 +54,6 @@ message Snippet {
 	optional CloneType clone_type = 4;
 	// Hash of the contents.
 	optional int32 length = 5;
-}
-
-// TODO: delete.
-message Clone {
-	optional bytes this_function = 1;
-	optional bytes that_function = 2;
-	optional int32 this_from_position = 3;
-	optional int32 that_from_position = 4;
-	optional int32 this_length = 5;
-	optional int32 that_length = 6;
 }
 
 message CloneGroup {

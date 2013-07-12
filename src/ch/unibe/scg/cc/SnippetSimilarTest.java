@@ -17,7 +17,6 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.Protos.SnippetMatch;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
@@ -44,7 +43,7 @@ public final class SnippetSimilarTest {
 		}
 	}
 
-	final Comparator<SnippetMatch> snippetMatchComparator = new SnippetMatchComparator();
+	final Comparator<Clone> cloneComparator = new CloneComparator();
 	final Comparator<Snippet> snippetLocationComparator = new SnippetLocationComparator();
 
 	@Test
@@ -77,22 +76,22 @@ public final class SnippetSimilarTest {
 
 		table = filterCollisions(table);
 
-		final List<List<SnippetMatch>> matches = new ArrayList<>();
+		final List<List<Clone>> matches = new ArrayList<>();
 		for (int i = 0; i < table.size(); i++) {
-			matches.add(new ArrayList<SnippetMatch>());
+			matches.add(new ArrayList<Clone>());
 			// only look at j > i to avoid outputting the same match twice.
 			for (int j = i + 1; j < table.size(); j++) {
 				for (final Snippet e : table.get(i)) {
 					final int pos = Collections.binarySearch(table.get(j), e, snippetLocationComparator);
 					if (pos >= 0) {
-						matches.get(i).add(SnippetMatch.newBuilder()
-								.setThisSnippetLocation(e)
-								.setThatSnippetLocation(table.get(j).get(pos))
+						matches.get(i).add(Clone.newBuilder()
+								.setThisSnippet(e)
+								.setThatSnippet(table.get(j).get(pos))
 								.build());
 					}
 				}
 			}
-			Collections.sort(matches.get(matches.size() - 1), snippetMatchComparator);
+			Collections.sort(matches.get(matches.size() - 1), cloneComparator);
 		}
 
 		assertThat(matches.size(), is(3));
@@ -115,14 +114,14 @@ public final class SnippetSimilarTest {
 				}, null);
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
 		assertThat(builtClones.toString(),
-				is("[this_function: \"\\001\"\nthat_function: \"\\002\"\n" +
-						"this_from_position: 5\nthat_from_position: 3\nthis_length: 14\nthat_length: 15\n," +
-						" this_function: \"\\001\"\nthat_function: \"\\003\"\n" +
-						"this_from_position: 13\nthat_from_position: 9\nthis_length: 6\nthat_length: 6\n]"));
+				is("[thisSnippet {\n  function: \"\\001\"\n  position: 5\n  length: 14\n}\n" +
+					"thatSnippet {\n  function: \"\\002\"\n  position: 3\n  length: 15\n}\n, " +
+					"thisSnippet {\n  function: \"\\001\"\n  position: 13\n  length: 6\n}\n" +
+					"thatSnippet {\n  function: \"\\003\"\n  position: 9\n  length: 6\n}\n]"));
 		builtClones = expanderWithoutLongRows.expandClones(matches.get(1));
 		assertThat(builtClones.toString(),
-				is("[this_function: \"\\002\"\nthat_function: \"\\003\"\n"
-				+ "this_from_position: 0\nthat_from_position: 0\nthis_length: 22\nthat_length: 19\n]"));
+				is("[thisSnippet {\n  function: \"\\002\"\n  position: 0\n  length: 22\n}\n" +
+					"thatSnippet {\n  function: \"\\003\"\n  position: 0\n  length: 19\n}\n]"));
 		builtClones = expanderWithoutLongRows.expandClones(matches.get(2));
 		assertThat(builtClones.toString(), is("[]"));
 	}
@@ -262,16 +261,15 @@ public final class SnippetSimilarTest {
 				+ "	}");
 	}
 
-	private String printString(Iterable<SnippetMatch> matches) {
+	private String printString(Iterable<Clone> matches) {
 		final StringBuilder ret = new StringBuilder("(");
-			for (final SnippetMatch e : matches) {
-				final ByteBuffer hash = e.getThisSnippetLocation().getHash().asReadOnlyByteBuffer();
+			for (final Clone e : matches) {
+				final ByteBuffer hash = e.getThisSnippet().getHash().asReadOnlyByteBuffer();
 				ret.append(String.format("%d-%d|%d$%02x%02x@%d, ",
-						e.getThisSnippetLocation().getFunction().asReadOnlyByteBuffer().get(0),
-						e.getThatSnippetLocation().getFunction().asReadOnlyByteBuffer().get(0),
-						e.getThisSnippetLocation().getPosition(),
-						hash.get(0), hash.get(1),
-						e.getThatSnippetLocation().getPosition()));
+						e.getThisSnippet().getFunction().asReadOnlyByteBuffer().get(0),
+						e.getThatSnippet().getFunction().asReadOnlyByteBuffer().get(0),
+						e.getThisSnippet().getPosition(), hash.get(0), hash.get(1),
+						e.getThatSnippet().getPosition()));
 			}
 			ret.append(')');
 		return ret.toString();

@@ -4,21 +4,21 @@ import java.io.IOException;
 
 import org.apache.hadoop.hbase.util.Bytes;
 
-import ch.unibe.scg.cc.Protos.SnippetMatch;
+import ch.unibe.scg.cc.Protos.Clone;
 
 import com.google.protobuf.ByteString;
 
-class Function2RoughClonesCodec implements Codec<SnippetMatch> {
+class Function2RoughClonesCodec implements Codec<Clone> {
 	@Override
-	public Cell<SnippetMatch> encode(SnippetMatch m) {
-		ByteString colKey = ByteString.copyFrom(Bytes.add(m.getThatSnippetLocation().getFunction().toByteArray(),
-				Bytes.toBytes(m.getThisSnippetLocation().getPosition()),
-				Bytes.toBytes(m.getThisSnippetLocation().getLength())));
-		return new Cell<>(m.getThisSnippetLocation().getFunction(), colKey, m.toByteString());
+	public Cell<Clone> encode(Clone m) {
+		ByteString colKey = ByteString.copyFrom(Bytes.add(m.getThatSnippet().getFunction().toByteArray(),
+				Bytes.toBytes(m.getThisSnippet().getPosition()),
+				Bytes.toBytes(m.getThisSnippet().getLength())));
+		return new Cell<>(m.getThisSnippet().getFunction(), colKey, m.toByteString());
 	}
 
 	@Override
-	public SnippetMatch decode(Cell<SnippetMatch> encoded) throws IOException {
-		return SnippetMatch.parseFrom(encoded.cellContents);
+	public Clone decode(Cell<Clone> encoded) throws IOException {
+		return Clone.parseFrom(encoded.cellContents);
 	}
 }

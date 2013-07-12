@@ -10,21 +10,21 @@ import javax.inject.Inject;
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.Function2Snippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
+import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.Protos.SnippetMatch;
 
 import com.google.common.collect.Iterables;
 import com.google.common.io.BaseEncoding;
 
 /** Filter phase of the pipeline */
-class Function2RoughCloner implements Mapper<Snippet, SnippetMatch>{
+class Function2RoughCloner implements Mapper<Snippet, Clone>{
 	private static final int POPULAR_SNIPPET_THRESHOLD = 500;
 
 	final private CellSink<Snippet> popularSnippets;
 
 	final private Codec<Snippet> function2SnippetsCodec;
 	final private Codec<Snippet> popularSnippetsCodec;
-	final private Codec<SnippetMatch> function2RoughClonesCodec;
+	final private Codec<Clone> function2RoughClonesCodec;
 
 	final private Logger logger;
 
@@ -32,7 +32,7 @@ class Function2RoughCloner implements Mapper<Snippet, SnippetMatch>{
 	Function2RoughCloner(@PopularSnippets CellSink<Snippet> popularSnippets,
 			@Function2Snippets Codec<Snippet> function2SnippetsCodec,
 			@PopularSnippets Codec<Snippet> popularSnippetsCodec,
-			@Function2RoughClones Codec<SnippetMatch> function2RoughClonesCodec, Logger logger) {
+			@Function2RoughClones Codec<Clone> function2RoughClonesCodec, Logger logger) {
 		this.popularSnippets = popularSnippets;
 		this.function2SnippetsCodec = function2SnippetsCodec;
 		this.popularSnippetsCodec = popularSnippetsCodec;
@@ -41,7 +41,7 @@ class Function2RoughCloner implements Mapper<Snippet, SnippetMatch>{
 	}
 
 	@Override
-	public void map(Iterable<Cell<Snippet>> row, CellSink<SnippetMatch> function2RoughClones) throws IOException {
+	public void map(Iterable<Cell<Snippet>> row, CellSink<Clone> function2RoughClones) throws IOException {
 		logger.finer("Make rough clone "
 				+ BaseEncoding.base16().encode(Iterables.get(row, 0).rowKey.toByteArray()).substring(0, 6));
 
@@ -76,8 +76,8 @@ class Function2RoughCloner implements Mapper<Snippet, SnippetMatch>{
 				//	already passed to the reducer as key. REMARK 2: we don't
 				//	set thatSnippet because it gets already stored in
 				//	thisSnippet
-				function2RoughClones.write(function2RoughClonesCodec.encode(SnippetMatch.newBuilder()
-						.setThisSnippetLocation(thisLoc).setThatSnippetLocation(thatLoc).build()));
+				function2RoughClones.write(function2RoughClonesCodec.encode(Clone.newBuilder()
+						.setThisSnippet(thisLoc).setThatSnippet(thatLoc).build()));
 			}
 		}
 	}
