@@ -384,8 +384,8 @@
       <ClassStats class="ch.unibe.scg.cc.lines.StringOfLinesTest" sourceFile="StringOfLinesTest.java" interface="false" size="15" bugs="0"/>
     </PackageStats>
     <PackageStats package="ch.unibe.scg.cc.mappers" total_bugs="3" total_types="86" total_size="1802" priority_2="3">
-      <ClassStats class="ch.unibe.scg.cc.mappers.CharsetDetector" sourceFile="CharsetDetector.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="ch.unibe.scg.cc.mappers.CharsetTest" sourceFile="CharsetTest.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CharsetDetector" sourceFile="CharsetDetector.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.CharsetTest" sourceFile="CharsetTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider" sourceFile="CloneLoaderProvider.java" interface="false" size="9" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider$1" sourceFile="CloneLoaderProvider.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.CloneLoaderProvider$CloneLoader" sourceFile="CloneLoaderProvider.java" interface="true" size="1" bugs="0"/>
@@ -403,7 +403,7 @@
       <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulator$GitTablePopulatorMapper" sourceFile="GitTablePopulator.java" interface="false" size="95" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulator$PackedRef" sourceFile="GitTablePopulator.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulator$PackedRefParser" sourceFile="GitTablePopulator.java" interface="false" size="28" bugs="0"/>
-      <ClassStats class="ch.unibe.scg.cc.mappers.GitTablePopulatorTest" sourceFile="GitTablePopulatorTest.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.GitTablePopulatorTest" sourceFile="GitTablePopulatorTest.java" interface="false" size="34" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.GuiceMapper" sourceFile="GuiceMapper.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.GuiceReducer" sourceFile="GuiceReducer.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.mappers.GuiceTableMapper" sourceFile="GuiceTableMapper.java" interface="false" size="20" bugs="0"/>

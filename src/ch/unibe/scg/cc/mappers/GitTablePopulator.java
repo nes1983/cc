@@ -1,17 +1,11 @@
 package ch.unibe.scg.cc.mappers;
 
-import static com.google.common.base.Preconditions.checkNotNull;
-
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -32,27 +26,16 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
-import org.eclipse.jgit.errors.MissingObjectException;
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.revwalk.RevWalk;
-import org.eclipse.jgit.storage.file.FileRepository;
-import org.eclipse.jgit.transport.PackParser;
-import org.eclipse.jgit.treewalk.TreeWalk;
-import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
 
-import ch.unibe.scg.cc.Frontend;
+import ch.unibe.scg.cc.GitWalker;
 import ch.unibe.scg.cc.Java;
+import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.activerecord.CodeFile;
-import ch.unibe.scg.cc.activerecord.ProjectFactory;
-import ch.unibe.scg.cc.activerecord.Version;
-import ch.unibe.scg.cc.activerecord.VersionFactory;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
-import com.google.common.io.Files;
 import com.google.inject.Inject;
 
 /** Load in Har file of git repositories and populate our tables. */
@@ -69,57 +52,6 @@ public class GitTablePopulator implements Runnable {
 	@Inject
 	GitTablePopulator(MapReduceLauncher launcher) {
 		this.launcher = launcher;
-	}
-
-	private static  class PackedRefParser {
-		final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs\\/(?:tags|heads)\\/(.+)");
-
-		public List<PackedRef> parse(InputStream ins) throws IOException {
-			int ch;
-			StringBuilder content = new StringBuilder();
-			while ((ch = ins.read()) != -1) {
-				content.append((char) ch);
-			}
-
-			return parse(content.toString());
-		}
-
-		private List<PackedRef> parse(String content) {
-			List<PackedRef> list = new ArrayList<>();
-			try (Scanner s = new Scanner(content)) {
-				while (s.hasNextLine()) {
-					String line = s.nextLine();
-					Matcher m = pattern.matcher(line);
-					if (m.matches()) {
-						String sha = m.group(1);
-						assert sha.length() == 40;
-						ObjectId key = ObjectId.fromString(sha);
-						String name = m.group(2);
-						PackedRef pr = new PackedRef(key, name);
-						list.add(pr);
-					}
-				}
-			}
-			return list;
-		}
-	}
-
-	static class PackedRef {
-		final ObjectId key;
-		final String name;
-
-		PackedRef(ObjectId key, String name) {
-			this.key = key;
-			this.name = name;
-		}
-
-		public ObjectId getKey() {
-			return key;
-		}
-
-		public String getName() {
-			return name;
-		}
 	}
 
 	@Override
@@ -199,32 +131,25 @@ public class GitTablePopulator implements Runnable {
 
 	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
+		private static final String PACK_PATH_REGEX = "(.+)objects/pack/pack-[a-f0-9]{40}.pack";
+
+		FileSystem fileSystem;
+
+		final private Populator populator;
+		final private GitWalker gitWalker;
 
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
 		// available.
 		@Inject(optional = true)
 		@Named(Constants.COUNTER_PROCESSED_FILES)
-		Counter processedFilesCounter;
+		private Counter processedFilesCounter;
 
 		@Inject
-		GitTablePopulatorMapper(@Java Frontend javaFrontend,
-				ProjectFactory projectFactory, VersionFactory versionFactory, CharsetDetector charsetDetector) {
-			this.javaFrontend = javaFrontend;
-			this.projectFactory = projectFactory;
-			this.versionFactory = versionFactory;
-			this.charsetDetector = charsetDetector;
+		GitTablePopulatorMapper(@Java Populator populator, GitWalker gitWalker) {
+			this.populator = populator;
+			this.gitWalker = gitWalker;
 		}
-
-		final Frontend javaFrontend;
-		final ProjectFactory projectFactory;
-		final VersionFactory versionFactory;
-		final CharsetDetector charsetDetector;
-		final Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
-		final Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
-
-		FileSystem fileSystem;
-
 
 		@Override
 		public void setup(Context context) throws IOException {
@@ -238,99 +163,25 @@ public class GitTablePopulator implements Runnable {
 		public void map(Text key, BytesWritable value, Context context) throws IOException, InterruptedException {
 			logger.info("Received: " + key);
 
-			Matcher matcher = Pattern.compile("(.+)objects/pack/pack-[a-f0-9]{40}.pack").matcher(key.toString());
+			Matcher matcher = Pattern.compile(PACK_PATH_REGEX).matcher(key.toString());
 			if (!matcher.matches()) {
 				throw new RuntimeException("Something seems to be wrong with this input path: " + key);
 			}
 			String gitDirPath = matcher.group(1);
 			// Sorted alphabetically. This means: old to new.
 
-			String projectName = getProjName(key.toString());
+			String projectName = gitWalker.extractProjectName(key.toString());
 			logger.info("Processing " + projectName);
 
-			mapRepo(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
+			gitWalker.walk(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
 					new ByteArrayInputStream(value.getBytes()), projectName);
-		}
-
-		void mapRepo(InputStream packedRefs, InputStream packFile, String projectName) throws IOException {
-			List<PackedRef> tags = new PackedRefParser().parse(packedRefs);
-
-			File tdir = null;
-			try {
-				tdir = Files.createTempDir();
-				FileRepository r = new FileRepository(tdir);
-				r.create(true);
-				PackParser pp = r.newObjectInserter().newPackParser(packFile);
-				// ProgressMonitor set to null, so NullProgressMonitor will be used.
-				pp.parse(null);
-
-				for (PackedRef paref : tags) {
-					logger.info("WALK TAG: " + paref.getName());
-
-					try {
-						TreeWalk treeWalk = new TreeWalk(r);
-						treeWalk.addTree(new RevWalk(r).parseCommit(paref.getKey()).getTree());
-						treeWalk.setRecursive(true);
-						treeWalk.setFilter(PathSuffixFilter.create(".java"));
-
-						while (treeWalk.next()) {
-							ObjectId objectId = treeWalk.getObjectId(0); // There's only one tree; it has index 0.
-							byte[] bytes = treeWalk.getObjectReader().open(objectId).getBytes();
-							String content = new String(bytes, charsetDetector.charsetOf(bytes));
-							CodeFile codeFile = javaFrontend.register(content);
-							Version version = register(treeWalk.getPathString(), codeFile);
-							register(projectName, version, paref.getName());
-							processedFilesCounter.increment(1);
-						}
-					} catch (MissingObjectException moe) {
-						logger.warning("MissingObjectException in " + projectName + " : " + moe);
-					}
-				}
-			} finally {
-				if (tdir != null) {
-					boolean ok = tdir.delete();
-					if (!ok) {
-						logger.warning("Failed to delete " + tdir);
-					}
-				}
-			}
-			logger.info("Finished processing: " + projectName);
-		}
-
-		String getProjName(String packFilePath) {
-			Matcher m = projectNameRegexNonBare.matcher(packFilePath);
-			if (m.matches()) {
-				return m.group(1);
-			}
-
-			m = projectNameRegexBare.matcher(packFilePath);
-			if (m.matches()) {
-				return m.group(1);
-			}
-
-			logger.warning("Could not simplify project name " + packFilePath);
-			// Use URI as project name.
-			return packFilePath;
-		}
-
-		private Version register(String filePath, CodeFile codeFile) {
-			checkNotNull(filePath);
-			checkNotNull(codeFile);
-
-			Version version = versionFactory.create(filePath, codeFile);
-			javaFrontend.register(version);
-			return version;
-		}
-
-		private void register(String projectName, Version version, String tag) {
-			javaFrontend.register(projectFactory.create(projectName, version, tag));
 		}
 
 		@Override
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
-			if (javaFrontend != null) {
-				javaFrontend.close();
+			if (populator != null) {
+				populator.close();
 			}
 		}
 	}

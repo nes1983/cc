@@ -13,6 +13,7 @@ import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
+import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
@@ -20,9 +21,11 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.Iterables;
+import com.google.common.io.Closer;
 import com.google.protobuf.ByteString;
 
-public class Frontend implements Closeable {
+/** Populator populates the persistent tables of all code. It is used from a project tree walk. */
+public class Populator implements Closeable {
 	static final int MINIMUM_LINES = 5;
 	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 
@@ -33,18 +36,24 @@ public class Frontend implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private CellCodec codec;
-	final private CellSink sink;
+
+	final private CellSink<Project> projectSink;
+	final private CellSink<Version> versionSink;
+	final private CellSink<CodeFile> codeFileSink;
+	final private CellSink<Function> functionSink;
+	final private CellSink<Snippet> snippetSink;
 
 	private static final int CACHE_SIZE = 1000000;
 	/** Functions that were successfully written to DB in this mapper */
-	final Cache<ByteString, Boolean> writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+	final private Cache<ByteString, Boolean> writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 	/** Files that were successfully written to DB in this mapper */
-	final Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+	final private Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 
 	@Inject
-	Frontend(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
+	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
 			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
-			CellCodec codec, CellSink sink) {
+			CellCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
+			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -52,9 +61,14 @@ public class Frontend implements Closeable {
 		this.tokenizer = tokenizer;
 		this.stringOfLinesFactory = stringOfLinesFactory;
 		this.codec = codec;
-		this.sink = sink;
+		this.projectSink = projectSink;
+		this.versionSink = versionSink;
+		this.codeFileSink = codeFileSink;
+		this.functionSink = functionSink;
+		this.snippetSink = snippetSink;
 	}
 
+	/** Register all Versions of a Project */
 	public class ProjectRegistrar implements AutoCloseable {
 		final private Project.Builder project;
 		/** Separate from project, because we're keeping builders */
@@ -74,14 +88,15 @@ public class Frontend implements Closeable {
 				hs.add(v.getHash());
 			}
 			project.setHash(xor(hs));
-			sink.write(codec.encodeProject(project.build()));
+			projectSink.write(codec.encodeProject(project.build()));
 
 			for (Version.Builder v : versions) {
 				v.setProject(project.getHash());
-				sink.write(codec.encodeVersion(v.build()));
+				versionSink.write(codec.encodeVersion(v.build()));
 			}
 		}
 
+		/** @return a new VersionRegistrar. */
 		public VersionRegistrar makeVersionRegistrar(String versionName) {
 			return new VersionRegistrar(this, versionName);
 		}
@@ -91,6 +106,7 @@ public class Frontend implements Closeable {
 		}
 	}
 
+	/** Register all CodeFiles of a Version */
 	public class VersionRegistrar implements AutoCloseable {
 		final private ProjectRegistrar projectRegistrar;
 		/** Separate from version because we're storing the builders. */
@@ -108,21 +124,20 @@ public class Frontend implements Closeable {
 				return;
 			}
 
-			Set<ByteString> hs = new HashSet<>();
+			Set<ByteString> fileHashes = new HashSet<>();
 			for (CodeFile.Builder fil : files) {
-				hs.add(fil.getHash());
+				fileHashes.add(fil.getHash());
 			}
-			version.setHash(xor(hs));
+			version.setHash(xor(fileHashes));
 			projectRegistrar.register(version);
 
 			for (CodeFile.Builder fil : files) {
 				fil.setVersion(version.getHash());
-				sink.write(codec.encodeCodeFile(fil.build()));
+				codeFileSink.write(codec.encodeCodeFile(fil.build()));
 			}
-
-			sink.write(codec.encodeVersion(version.build()));
 		}
 
+		/** @return a new FileRegistrar. */
 		public FileRegistrar makeFileRegistrar() {
 			return new FileRegistrar(this);
 		}
@@ -132,6 +147,7 @@ public class Frontend implements Closeable {
 		}
 	}
 
+	/** Register all Functions of a CodeFile */
 	public class FileRegistrar {
 		final private VersionRegistrar versionRegistrar;
 
@@ -139,6 +155,7 @@ public class Frontend implements Closeable {
 			this.versionRegistrar = versionRegistrar;
 		}
 
+		/** Registers all functions and snippets in {@code contents}. */
 		public void register(String path, String contents) {
 			CodeFile.Builder fil = CodeFile.newBuilder()
 					.setPath(path)
@@ -147,7 +164,7 @@ public class Frontend implements Closeable {
 
 			versionRegistrar.register(fil);
 
-			if (writtenFiles.getIfPresent(fil.getHash()) == null) {
+			if (writtenFiles.getIfPresent(fil.getHash()) != null) {
 				return;
 			}
 
@@ -158,15 +175,16 @@ public class Frontend implements Closeable {
 				String normalized = c.toString();
 
 				// TODO: Should this be part of the tokenizer?
-				fun = Function.newBuilder(fun).setHash(ByteString.copyFrom(standardHasher.hash(fun.getContents()))).build();
+				fun = Function.newBuilder(fun).setHash(ByteString.copyFrom(standardHasher.hash(fun.getContents())))
+						.setCodeFile(fil.getHash()).build();
 
 				if (Utils.countLines(normalized) < MINIMUM_LINES) {
 					continue;
 				}
 
-				sink.write(codec.encodeFunction(fun));
+				functionSink.write(codec.encodeFunction(fun));
 
-				if (writtenFunctions.getIfPresent(fun.getHash()) == null) {
+				if (writtenFunctions.getIfPresent(fun.getHash()) != null) {
 					return;
 				}
 
@@ -183,14 +201,20 @@ public class Frontend implements Closeable {
 		}
 	}
 
+	/** @return a new ProjectRegistrar. */
 	public ProjectRegistrar makeProjectRegistrar(String projectName) {
 		return new ProjectRegistrar(projectName);
 	}
 
 	@Override
 	public void close() throws IOException {
-		if (sink != null) {
-			sink.close();
+		try(Closer closer = Closer.create()) {
+			closer.register(snippetSink);
+			closer.register(functionSink);
+			closer.register(codeFileSink);
+			closer.register(versionSink);
+			closer.register(projectSink);
+			closer.close();
 		}
 	}
 
@@ -210,7 +234,7 @@ public class Frontend implements Closeable {
 				continue;
 			}
 
-			sink.write(codec.encodeSnippet(
+			snippetSink.write(codec.encodeSnippet(
 					Protos.Snippet.newBuilder()
 					.setFunction(fun.getHash())
 					.setLength(MINIMUM_LINES)

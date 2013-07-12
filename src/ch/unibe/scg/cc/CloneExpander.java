@@ -176,8 +176,8 @@ public class CloneExpander {
 	}
 
 	private Clone finalizeClone(final Clone.Builder clone) {
-		clone.setThisLength(clone.getThisLength() + Frontend.MINIMUM_LINES - 1);
-		clone.setThatLength(clone.getThatLength() + Frontend.MINIMUM_LINES - 1);
+		clone.setThisLength(clone.getThisLength() + Populator.MINIMUM_LINES - 1);
+		clone.setThatLength(clone.getThatLength() + Populator.MINIMUM_LINES - 1);
 		return clone.build();
 	}
 

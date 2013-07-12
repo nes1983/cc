@@ -25,7 +25,7 @@ public class ShingleHasherTest {
 	@SuppressWarnings({ "rawtypes", "unchecked" }) // Technically, collection and list aren't comparable.
 	@Test
 	public ShingleHasher test() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);
+		ShingleHasher ss = Guice.createInjector(new CCModule(), new InMemoryModule(), new JavaModule()).getInstance(ShingleHasher.class);
 
 		Collection<String> shingles = ss.shingles("one two three four five six seven eight nine");
 		assertThat(shingles, (Matcher) is(Arrays.asList("one two three four", "five six seven eight", "two three four five",
@@ -45,7 +45,7 @@ public class ShingleHasherTest {
 
 	@Test
 	public void testStrangeInput() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule()).getInstance(ShingleHasher.class);
+		ShingleHasher ss = Guice.createInjector(new CCModule(), new InMemoryModule(), new JavaModule()).getInstance(ShingleHasher.class);
 		ss.hash("} t (t t) { t. t(); t. t(1); } } }");
 		ss.hash("t t; t t; t t; t t; t t;");
 		ss.hash("} t t(t t) { t (t. t()) {");

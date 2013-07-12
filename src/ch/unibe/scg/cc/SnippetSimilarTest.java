@@ -53,7 +53,7 @@ public final class SnippetSimilarTest {
 		// to make an example for the paper.
 		final Normalizer n1 = new Normalizer(new JavaType1ReplacerFactory().get());
 		final Normalizer n2 = new Normalizer(new Type2ReplacerFactory().get());
-		final ShingleHasher ss = Guice.createInjector(new CCModule(), new JavaModule())
+		final ShingleHasher ss = Guice.createInjector(new CCModule(), new InMemoryModule(), new JavaModule())
 				.getInstance(ShingleHasher.class);
 
 		final StringBuilder s1 = snippet1();
@@ -172,9 +172,9 @@ public final class SnippetSimilarTest {
 			throws CannotBeHashedException {
 		final List<Snippet> ret = new ArrayList<>();
 
-		for (int frameStart = 0; frameStart + Frontend.MINIMUM_LINES
+		for (int frameStart = 0; frameStart + Populator.MINIMUM_LINES
 				< sol.getNumberOfLines(); frameStart++) {
-			final String value = sol.getLines(frameStart, Frontend.MINIMUM_LINES);
+			final String value = sol.getLines(frameStart, Populator.MINIMUM_LINES);
 			final ByteBuffer newHash = ByteBuffer.wrap(hasher.hash(value));
 			ret.add(Snippet.newBuilder()
 					.setHash(ByteString.copyFrom(newHash))
