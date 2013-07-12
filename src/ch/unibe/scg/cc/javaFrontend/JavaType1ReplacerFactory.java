@@ -4,6 +4,7 @@ import jregex.Pattern;
 import ch.unibe.scg.cc.ReplacerProvider;
 import ch.unibe.scg.cc.regex.Replace;
 
+// TODO: Should not be public. It's only public because a silly test depends on it.
 public class JavaType1ReplacerFactory extends ReplacerProvider {
 	/**
 	 * 0

@@ -8,13 +8,10 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.inject.Singleton;
-
 import ch.unibe.scg.cc.regex.Replace;
 
 import com.google.inject.Provider;
 
-@Singleton
 public abstract class ReplacerProvider implements Provider<Replace[]> {
 	final private Replace[] type = new Replace[] {};
 	final private MethodComparator methodComparator = new MethodComparator();

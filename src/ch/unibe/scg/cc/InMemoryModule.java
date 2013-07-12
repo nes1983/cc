@@ -23,6 +23,7 @@ class InMemoryModule extends AbstractModule {
 		TypeLiteral<InMemoryShuffler<Function>> functionShuffler = new TypeLiteral<InMemoryShuffler<Function>>() {};
 		TypeLiteral<InMemoryShuffler<Snippet>> snippetShuffler = new TypeLiteral<InMemoryShuffler<Snippet>>() {};
 
+		// These must all be singletons, to make sure that the shuffler can serve as both sink and source.
 		bind(projectShuffler).annotatedWith(Populator.class).to(projectShuffler).in(Singleton.class);
 		bind(versionShuffler).annotatedWith(Populator.class).to(versionShuffler).in(Singleton.class);
 		bind(codeFileShuffler).annotatedWith(Populator.class).to(codeFileShuffler).in(Singleton.class);

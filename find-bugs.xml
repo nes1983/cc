@@ -983,7 +983,7 @@
       <ClassStats class="ch.unibe.scg.cc.Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.MessageDigestProvider" sourceFile="MessageDigestProvider.java" interface="false" size="9" bugs="1" priority_1="1"/>
       <ClassStats class="ch.unibe.scg.cc.Normalizer" sourceFile="Normalizer.java" interface="false" size="10" bugs="0"/>
-      <ClassStats class="ch.unibe.scg.cc.NormalizerTest" sourceFile="NormalizerTest.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cc.javaFrontend.NormalizerTest" sourceFile="NormalizerTest.java" interface="false" size="15" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.PhaseFrontend" sourceFile="PhaseFrontend.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.PopularSnippetMaps" sourceFile="PopularSnippetMaps.java" interface="false" size="12" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.Populator" sourceFile="Populator.java" interface="false" size="97" bugs="1" priority_2="1"/>

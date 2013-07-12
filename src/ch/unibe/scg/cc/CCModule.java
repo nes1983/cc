@@ -3,8 +3,6 @@ package ch.unibe.scg.cc;
 import java.security.MessageDigest;
 import java.util.Comparator;
 
-import javax.inject.Singleton;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.util.Bytes;
 
@@ -19,8 +17,8 @@ import com.google.inject.name.Names;
 public class CCModule extends AbstractModule {
 	@Override
 	protected void configure() {
-		bind(MessageDigest.class).toProvider(MessageDigestProvider.class).in(Singleton.class);
-		bind(Configuration.class).toProvider(ConfigurationProvider.class).in(Singleton.class);
+		bind(MessageDigest.class).toProvider(MessageDigestProvider.class);
+		bind(Configuration.class).toProvider(ConfigurationProvider.class);
 		bind(new TypeLiteral<Comparator<byte[]>>() {}).toInstance(Bytes.BYTES_COMPARATOR);
 		bind(new TypeLiteral<Comparator<SnippetMatch>>() {}).to(SnippetMatchComparator.class);
 
