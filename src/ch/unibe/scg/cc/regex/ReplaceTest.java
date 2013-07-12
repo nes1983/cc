@@ -1,74 +1,57 @@
 package ch.unibe.scg.cc.regex;
 
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.isA;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
 import jregex.Pattern;
 
-import org.hamcrest.Matcher;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import ch.unibe.jexample.Given;
-import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.regex.ReplacementString.LiteralSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.PlaceHolderSegment;
 import ch.unibe.scg.cc.regex.ReplacementString.Segment;
 
 @SuppressWarnings("javadoc")
-@RunWith(JExample.class)
-public class ReplaceTest {
+public final class ReplaceTest {
 	@Test
-	public Replace testMakeReplace() {
+	public void testMakeReplace() {
 		Replace r = new Replace(new Pattern("x"), "y");
 		assertThat(r.replacementString.contents.size(), is(1));
-		return r;
 
-	}
-
-	@Given("testMakeReplace")
-	public Replace testReplace(Replace r) {
 		StringBuilder sb = new StringBuilder("123x123");
-
 		r.replaceAll(sb);
 		assertThat(sb.toString(), is("123y123"));
-		return r;
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Test
-	public Replace makePatternReplace() {
+	public void makePatternReplace() {
 		Replace r = new Replace(new Pattern("x"), "<$0>");
 		List<Segment> contents = r.replacementString.contents;
 		assertThat(contents.size(), is(3));
-		assertThat(contents.get(0), ((Matcher) isA(LiteralSegment.class)));
-		assertThat(contents.get(1), ((Matcher) isA(PlaceHolderSegment.class)));
-		assertThat(contents.get(2), ((Matcher) isA(LiteralSegment.class)));
-		assertThat(((LiteralSegment) contents.get(2)).s, is(">"));
-		return r;
-	}
 
-	@Given("makePatternReplace")
-	public Replace useReplacePattern(Replace r) {
+		assertEquals(LiteralSegment.class, contents.get(0).getClass());
+		assertEquals(PlaceHolderSegment.class, contents.get(1).getClass());
+		assertEquals(LiteralSegment.class, contents.get(2).getClass());
+
+		assertThat(((LiteralSegment) contents.get(2)).s, is(">"));
+
 		StringBuilder sb = new StringBuilder("xxyxx");
 		r.replaceAll(sb);
 		assertThat(sb.toString(), is("<x><x>y<x><x>"));
-		return r;
 	}
 
 	@Test
-	public Replace simpleSelfReplace() {
+	public void simpleSelfReplace() {
 		Replace r = new Replace(new Pattern("(x)"), "$0");
 		String selfReplaced = r.allReplaced("xxx");
 		assertThat(selfReplaced, is("xxx"));
-		return r;
 	}
 
 	@Test
-	public Replace reverseThings() {
+	public void reverseThings() {
 		Replace r = new Replace(new Pattern("(\\d*)(bla)"), "$2$1");
 
 		List<Segment> contents = r.replacementString.contents;
@@ -76,7 +59,5 @@ public class ReplaceTest {
 
 		String reversed = r.allReplaced("123bla");
 		assertThat(reversed, is("bla123"));
-		return r;
 	}
-
 }

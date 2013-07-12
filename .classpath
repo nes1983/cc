@@ -52,7 +52,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/javax.inject.jar"/>
-	<classpathentry kind="lib" path="libs/jexample-4.5-391.jar"/>
 	<classpathentry kind="lib" path="libs/automaton.jar" sourcepath="libs/automaton-src.zip">
 		<attributes>
 			<attribute name="javadoc_location" value="http://www.brics.dk/automaton/doc"/>

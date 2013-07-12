@@ -1,46 +1,33 @@
 package ch.unibe.scg.cc;
 
-import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.hamcrest.Matcher;
+import org.hamcrest.core.Is;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import ch.unibe.jexample.Given;
-import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.common.collect.Iterables;
 import com.google.inject.Guice;
 
 @SuppressWarnings("javadoc")
-@RunWith(JExample.class)
 public class ShingleHasherTest {
-
-	@SuppressWarnings({ "rawtypes", "unchecked" }) // Technically, collection and list aren't comparable.
 	@Test
-	public ShingleHasher test() throws CannotBeHashedException {
+	public void test() throws CannotBeHashedException {
 		ShingleHasher ss = Guice.createInjector(new CCModule(), new InMemoryModule(), new JavaModule()).getInstance(ShingleHasher.class);
 
 		Collection<String> shingles = ss.shingles("one two three four five six seven eight nine");
-		assertThat(shingles, (Matcher) is(Arrays.asList("one two three four", "five six seven eight", "two three four five",
+		assertThat(shingles, Is.<Collection<String>>is(Arrays.asList("one two three four", "five six seven eight", "two three four five",
 				"six seven eight nine", "three four five six", "four five six seven")));
 
 		assertThat(Iterables.size(ss.hashedShingles(shingles)), is(6));
 
-		return ss;
-	}
-
-	@Given("test")
-	public ShingleHasher testEntireSketch(ShingleHasher ss) throws CannotBeHashedException {
-		byte[] sketch = ss.hash("one two three four five six");
-		assertThat(Arrays.toString(sketch), startsWith("[68, -114,"));
-		return ss;
+		assertThat(Arrays.toString(ss.hash("one two three four five six")), startsWith("[68, -114,"));
 	}
 
 	@Test

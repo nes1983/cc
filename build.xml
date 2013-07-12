@@ -41,7 +41,6 @@
 		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar"/>
 		<pathelement location="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
 		<pathelement location="libs/javax.inject.jar"/>
-		<pathelement location="libs/jexample-4.5-391.jar"/>
 		<pathelement location="libs/jregex1.2_01.jar"/>
 		<pathelement location="libs/jsch-0.1.48.jar"/>
 		<pathelement location="libs/junit-4.11.jar"/>
@@ -95,7 +94,6 @@
 			<zipfileset src="libs/guice-persist-3.0.jar"/>
 			<zipfileset src="libs/guice-throwingproviders-3.0.jar"/>
 			<zipfileset src="libs/javax.inject.jar"/>
-			<zipfileset src="libs/jexample-4.5-391.jar"/>
 			<zipfileset src="libs/jregex1.2_01.jar"/>
 			<zipfileset src="libs/jsch-0.1.48.jar"/>
 			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>

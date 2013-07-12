@@ -6,23 +6,24 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
 
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import ch.unibe.jexample.Given;
-import ch.unibe.jexample.JExample;
 import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.regex.Replace;
 
 //@formatter:off
 @SuppressWarnings("javadoc")
-@RunWith(JExample.class)
 public class JavaType1ReplacerFactoryTest {
+	private Replace[] replacers;
+
+	@Before
+	public void setUp() {
+		replacers = new JavaType1ReplacerFactory().get();
+	}
 
 	@Test
-	public Replace[] checkWhiteSpaces() {
-		final JavaType1ReplacerFactory factory = new JavaType1ReplacerFactory();
-		final Replace[] replacers = factory.get();
+	public void checkWhiteSpaces() {
 		assertThat(replacers.length, greaterThan(2));
 		final Replace whiteSpaceA = replacers[0];
 		final Replace whiteSpaceB = replacers[1];
@@ -31,22 +32,20 @@ public class JavaType1ReplacerFactoryTest {
 						"import java.util.*;\n" +
 						"import static System.out;\n" +
 						"public class Rod {\n"));
-		return replacers;
 	}
 
-	@Given("checkWhiteSpaces")
-	public Replace[] checkVisibility(Replace[] replaces) {
+	@Test
+	public void checkVisibility() {
 		final StringBuilder sb = new StringBuilder("\nprotected static void doIt() {\n");
-		replaces[5].replaceAll(sb);
+		replacers[5].replaceAll(sb);
 		assertThat(sb.toString(), is("\nstatic void doIt() {\n"));
-		return replaces;
 	}
 
-	@Given("checkWhiteSpaces")
-	public Normalizer checkAll(Replace[] replaces) {
+	@Test
+	public void checkAll() {
 		final StringBuilder sb = new StringBuilder(sampleClass());
-		assertThat(replaces, is(arrayWithSize(9)));
-		final Normalizer n = new Normalizer(replaces);
+		assertThat(replacers, is(arrayWithSize(9)));
+		final Normalizer n = new Normalizer(replacers);
 		n.normalize(sb);
 		assertThat(
 				sb.toString(),
@@ -61,21 +60,17 @@ public class JavaType1ReplacerFactoryTest {
 						"out.println(1337);\nmain(null);\n" +
 						"}\n}\n" +
 						""));
-
-		return n;
 	}
 
-	@Given("checkWhiteSpaces")
-	public Normalizer checkAllOnMethod(Replace[] replaces) {
+	@Test
+	public void checkAllOnMethod() {
 		final StringBuilder sb = new StringBuilder(sampleMethod());
-		assertThat(replaces, is(arrayWithSize(9)));
-		final Normalizer n = new Normalizer(replaces);
+		assertThat(replacers, is(arrayWithSize(9)));
+		final Normalizer n = new Normalizer(replacers);
 		n.normalize(sb);
 		assertThat(sb.toString(), is("static int log10Floor(int x) {" + "\n"
 				+ "int y = MAX_LOG_10_FOR_LEADING_ZEROS[Integer.numberOfLeadingZeros(x)];" + "\n"
 				+ "int sgn = (x - POWERS_OF_10[y]) >>> (Integer.SIZE - 1);" + "\n" + "return y - sgn;" + "\n" + "}"));
-
-		return n;
 	}
 
 	String sampleClass() {
