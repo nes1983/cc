@@ -27,8 +27,8 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
+import ch.unibe.scg.cc.Annotations.Java;
 import ch.unibe.scg.cc.GitWalker;
-import ch.unibe.scg.cc.Java;
 import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;

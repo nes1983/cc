@@ -2,10 +2,10 @@ package ch.unibe.scg.cc.javaFrontend;
 
 import javax.inject.Singleton;
 
-import ch.unibe.scg.cc.Populator;
-import ch.unibe.scg.cc.Java;
+import ch.unibe.scg.cc.Annotations.Java;
 import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.PhaseFrontend;
+import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.Type1;
 import ch.unibe.scg.cc.Type2;
