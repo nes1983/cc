@@ -69,7 +69,7 @@ public final class GitWalkerTest {
 		Iterable<Cell<Project>> partition = Iterables.getOnlyElement(partitions);
 		assertThat(Iterables.size(partition), is(1));
 
-		CellCodec cellCodec = i.getInstance(CellCodec.class);
+		PopulationCodec cellCodec = i.getInstance(PopulationCodec.class);
 		Project p = cellCodec.decodeProject(Iterables.getOnlyElement(partition));
 		assertThat(p.getName(), is("Captain Hook"));
 
