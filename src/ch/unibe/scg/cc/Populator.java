@@ -80,7 +80,7 @@ public class Populator implements Closeable {
 
 		@Override
 		public void close() {
-			if (versions.size() == 0) {
+			if (versions.isEmpty()) {
 				return;
 			}
 			Set<ByteString> hs = new HashSet<>();
@@ -120,7 +120,7 @@ public class Populator implements Closeable {
 
 		@Override
 		public void close() {
-			if (files.size() == 0) {
+			if (files.isEmpty()) {
 				return;
 			}
 
