@@ -24,4 +24,11 @@ public class Annotations {
 	static @interface Function2Snippets {
 
 	}
+
+	@BindingAnnotation
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface Populator {
+
+	}
 }

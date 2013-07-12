@@ -9,6 +9,7 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
+import ch.unibe.scg.cc.Annotations.Function2Snippets;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
@@ -36,12 +37,13 @@ public class Populator implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
-
+	final private Function2SnippetsCodec function2SnippetsCodec;
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
 	final private CellSink<Snippet> snippetSink;
+	final private CellSink<Snippet> function2Snippet;
 
 	private static final int CACHE_SIZE = 1000000;
 	/** Functions that were successfully written to DB in this mapper */
@@ -53,7 +55,10 @@ public class Populator implements Closeable {
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
 			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
-			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink) {
+			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
+			@Function2Snippets CellSink<Snippet> function2Snippet, Function2SnippetsCodec function2SnippetsCodec) {
+		assert function2Snippet != snippetSink;
+
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -66,6 +71,8 @@ public class Populator implements Closeable {
 		this.codeFileSink = codeFileSink;
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
+		this.function2Snippet = function2Snippet;
+		this.function2SnippetsCodec = function2SnippetsCodec;
 	}
 
 	/** Register all Versions of a Project */
@@ -220,27 +227,29 @@ public class Populator implements Closeable {
 
 	private void registerSnippets(Protos.Function fun, String normalized, CloneType type) {
 		StringOfLines s = stringOfLinesFactory.make(normalized);
+
 		Hasher hasher = standardHasher;
 		if (type.equals(CloneType.GAPPED)) {
 			hasher = shingleHasher;
 		}
+
 		for (int frameStart = 0; frameStart + MINIMUM_LINES <= s.getNumberOfLines(); frameStart++) {
-			String snippet = s.getLines(frameStart, MINIMUM_LINES);
 			byte[] hash;
 			try {
-				hash = hasher.hash(snippet);
+				hash = hasher.hash(s.getLines(frameStart, MINIMUM_LINES));
 			} catch (CannotBeHashedException e) {
-				// cannotBeHashedCounter.increment(1);
+				// TODO: cannotBeHashedCounter.increment(1);
 				continue;
 			}
 
-			snippetSink.write(codec.encodeSnippet(
-					Protos.Snippet.newBuilder()
+			Snippet snip = Protos.Snippet.newBuilder()
 					.setFunction(fun.getHash())
 					.setLength(MINIMUM_LINES)
 					.setPosition(frameStart)
 					.setHash(ByteString.copyFrom(hash))
-					.build()));
+					.build();
+			snippetSink.write(codec.encodeSnippet(snip));
+			function2Snippet.write(function2SnippetsCodec.encodeCodeFile(snip));
 		}
 	}
 
