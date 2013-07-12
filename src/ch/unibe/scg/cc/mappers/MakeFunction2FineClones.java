@@ -99,15 +99,12 @@ public class MakeFunction2FineClones implements Runnable {
 			this.stringOfLinesFactory = stringOfLinesFactory;
 		}
 
-		Iterable<Clone> transform(Iterable<SnippetMatch> matches) throws IOException {
-			return filter(cloneExpander.expandClones(matches));
-		}
-
 		/**
 		 * Filter clones down to the clones that aren't spam. In case an
 		 * IOException occurs, abort. Otherwise, try on and log error.
 		 */
-		private Collection<Clone> filter(Collection<Clone> clones) throws IOException {
+		Iterable<Clone> transform(Iterable<SnippetMatch> matches) throws IOException {
+			Collection<Clone> clones = cloneExpander.expandClones(matches);
 			Collection<Clone> ret = new ArrayList<>();
 			for (Clone clone : clones) {
 				try {
@@ -158,7 +155,8 @@ public class MakeFunction2FineClones implements Runnable {
 
 			// matching is symmetrical - so we do only half of it here
 			// after matching procedure we expand to full clones
-			for (Clone clone : function2FineClones.transform(matches)) {
+			Iterable<Clone> transformed = function2FineClones.transform(matches);
+			for (Clone clone : transformed) {
 				context.write(new ImmutableBytesWritable(clone.getThisFunction().toByteArray()),
 						new ImmutableBytesWritable(clone.toByteArray()));
 			}
