@@ -39,7 +39,7 @@ public class Populator implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
-	final private Function2SnippetsCodec function2SnippetsCodec;
+	final private Codec<Snippet> function2SnippetsCodec;
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
@@ -58,7 +58,8 @@ public class Populator implements Closeable {
 			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
 			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
-			@Function2Snippets CellSink<Snippet> function2Snippet, Function2SnippetsCodec function2SnippetsCodec) {
+			@Function2Snippets CellSink<Snippet> function2Snippet,
+			@Function2Snippets Codec<Snippet> function2SnippetsCodec) {
 		assert function2Snippet != snippetSink;
 
 		this.standardHasher = standardHasher;
