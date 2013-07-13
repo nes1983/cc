@@ -42,7 +42,6 @@ class Type2Module extends PrivateModule {
 		expose(PhaseFrontend.class).annotatedWith(Type2.class);
 
 		// Private:
-		bind(new TypeLiteral<Replace[]>() {
-		}).toProvider(Type2ReplacerFactory.class);
+		bind(new TypeLiteral<Replace[]>() {}).toProvider(Type2ReplacerFactory.class);
 	}
 }
