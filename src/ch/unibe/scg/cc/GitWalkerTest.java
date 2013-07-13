@@ -63,14 +63,14 @@ public final class GitWalkerTest {
 			gitWalker.walk(packedRefs, packFile, "Captain Hook");
 		}
 
-		Iterable<Iterable<Cell<Project>>> partitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Project>>() {})).partitions();
-		assertThat(Iterables.size(partitions), is(1));
+		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Project>>() {})).partitions();
+		assertThat(Iterables.size(projectPartitions), is(1));
 
-		Iterable<Cell<Project>> partition = Iterables.getOnlyElement(partitions);
-		assertThat(Iterables.size(partition), is(1));
+		Iterable<Cell<Project>> projects = Iterables.getOnlyElement(projectPartitions);
+		assertThat(Iterables.size(projects), is(1));
 
 		PopulatorCodec cellCodec = i.getInstance(PopulatorCodec.class);
-		Project p = cellCodec.decodeProject(Iterables.getOnlyElement(partition));
+		Project p = cellCodec.decodeProject(Iterables.getOnlyElement(projects));
 		assertThat(p.getName(), is("Captain Hook"));
 
 		Iterable<Iterable<Cell<Version>>> versionPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Version>>() {})).partitions();
