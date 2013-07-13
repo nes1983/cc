@@ -21,7 +21,6 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.InputFormat;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -71,8 +70,8 @@ public class GitTablePopulator implements Runnable {
 			config.set(MRJobConfig.MAP_JAVA_OPTS, MAPRED_CHILD_JAVA_OPTS);
 			// don't abort the whole job if a pack file is corrupt:
 			config.set(MRJobConfig.MAP_FAILURES_MAX_PERCENT, "99");
-			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
-			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
+			config.setClass(MRJobConfig.INPUT_FORMAT_CLASS_ATTR, GitPathInputFormat.class, InputFormat.class);
+			config.setClass(MRJobConfig.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 			String inputPaths = getInputPaths();
 			config.set(FileInputFormat.INPUT_DIR, inputPaths);
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());

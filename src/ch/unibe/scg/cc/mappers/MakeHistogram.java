@@ -14,7 +14,6 @@ import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -101,8 +100,8 @@ public class MakeHistogram implements Runnable {
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "3072");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
-			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
+			config.setClass(MRJobConfig.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
+			config.setClass(MRJobConfig.COMBINE_CLASS_ATTR, MakeHistogramReducer.class, Reducer.class);
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			launcher.launchMapReduceJob(MakeHistogram.class.getName() + " Job", config,

@@ -14,13 +14,11 @@ import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.Counter;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
 import ch.unibe.scg.cc.WrappedRuntimeException;
-import ch.unibe.scg.cc.activerecord.Function;
 
 import com.google.common.base.Optional;
 import com.google.inject.Inject;
@@ -47,7 +45,7 @@ public class CountLOC implements Runnable {
 			config.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1000m");
 			config.set(MRJobConfig.REDUCE_MEMORY_MB, "1500");
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1000m");
-			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
+			config.setClass(MRJobConfig.OUTPUT_FORMAT_CLASS_ATTR, NullOutputFormat.class, OutputFormat.class);
 
 			launcher.launchMapReduceJob(CountLOC.class.getName() + " Job", config, Optional.of("strings"),
 					Optional.<String> absent(), Optional.of(scan), CountLOCMapper.class.getName(),

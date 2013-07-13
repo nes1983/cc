@@ -28,7 +28,6 @@ import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.Counter;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -341,9 +340,9 @@ public class MakeFunction2FineClones implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1000M");
 			config.setInt(MultithreadedTableMapper.NUMBER_OF_THREADS, 20);
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
-			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, SequenceFileOutputFormat.class, OutputFormat.class);
-			config.setClass(Job.OUTPUT_KEY_CLASS, BytesWritable.class, Object.class);
-			config.setClass(Job.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
+			config.setClass(MRJobConfig.OUTPUT_FORMAT_CLASS_ATTR, SequenceFileOutputFormat.class, OutputFormat.class);
+			config.setClass(MRJobConfig.OUTPUT_KEY_CLASS, BytesWritable.class, Object.class);
+			config.setClass(MRJobConfig.OUTPUT_VALUE_CLASS, NullWritable.class, Object.class);
 			config.set(Constants.GUICE_CUSTOM_MODULES_ANNOTATION_STRING, HBaseModule.class.getName());
 
 			Scan scan = scanProvider.get();

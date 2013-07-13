@@ -12,7 +12,6 @@ import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.InputFormat;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -68,8 +67,8 @@ public class Function2FineClonesSorter implements Runnable {
 			config.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx2560M");
 			config.set(FileInputFormat.INPUT_DIR, "hdfs://haddock/" + MakeFunction2FineClones.OUT_DIR);
 			config.set(FileOutputFormat.OUTDIR, OUT_DIR);
-			config.setClass(Job.INPUT_FORMAT_CLASS_ATTR, SequenceFileInputFormat.class, InputFormat.class);
-			config.setClass(Job.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
+			config.setClass(MRJobConfig.INPUT_FORMAT_CLASS_ATTR, SequenceFileInputFormat.class, InputFormat.class);
+			config.setClass(MRJobConfig.OUTPUT_FORMAT_CLASS_ATTR, TextOutputFormat.class, OutputFormat.class);
 
 			launcher.launchMapReduceJob(Function2FineClonesSorter.class.getName() + " Job", config,
 					Optional.<String> absent(), Optional.<String> absent(), Optional.<Scan> absent(),
