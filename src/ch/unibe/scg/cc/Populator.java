@@ -251,7 +251,7 @@ public class Populator implements Closeable {
 					.setHash(ByteString.copyFrom(hash))
 					.build();
 			snippetSink.write(codec.encodeSnippet(snip));
-			function2Snippet.write(function2SnippetsCodec.encodeCodeFile(snip));
+			function2Snippet.write(function2SnippetsCodec.encode(snip));
 		}
 	}
 
