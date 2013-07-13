@@ -22,6 +22,6 @@ public class CCModule extends AbstractModule {
 		bind(new TypeLiteral<Codec<Snippet>>() {}).annotatedWith(PopularSnippets.class)
 				.to(PopularSnippetsCodec.class);
 		bind(new TypeLiteral<Codec<Snippet>>() {}).annotatedWith(Function2Snippets.class)
-			.to(Function2SnippetsCodec.class);
+				.to(Function2SnippetsCodec.class);
 	}
 }
