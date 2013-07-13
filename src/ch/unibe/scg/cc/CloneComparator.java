@@ -7,7 +7,7 @@ import ch.unibe.scg.cc.Protos.Clone;
 
 import com.google.common.collect.ComparisonChain;
 
-public class CloneComparator implements Comparator<Clone>, Serializable {
+class CloneComparator implements Comparator<Clone>, Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Override
