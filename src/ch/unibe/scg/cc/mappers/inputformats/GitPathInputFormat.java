@@ -33,7 +33,6 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 	}
 
 	private static class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
-		static Logger logger = Logger.getLogger(GitPathRecordReader.class.getName());
 		private static final int BYTE_BUFFER_SIZE = 8192;
 		private FSDataInputStream fsin;
 		private Text currentKey;

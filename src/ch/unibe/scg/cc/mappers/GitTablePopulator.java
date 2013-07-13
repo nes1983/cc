@@ -129,7 +129,6 @@ public class GitTablePopulator implements Runnable {
 	}
 
 	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
-		private static final Logger logger = Logger.getLogger(GitTablePopulator.class.getName());
 		private static final String PACK_PATH_REGEX = "(.+)objects/pack/pack-[a-f0-9]{40}.pack";
 
 		FileSystem fileSystem;
