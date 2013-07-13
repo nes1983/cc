@@ -85,7 +85,7 @@ public final class CloneExpanderTest {
 			public PopularSnippetMaps get() {
 				return new PopularSnippetMaps(function2Popular, snippet2Popular);
 			}
-		}, new CloneComparator());
+		});
 		assertThat(expander.expandClones(toExpand).toString(), is(
 				"[thisSnippet {\n  function: \"fun1\"\n  position: 1\n  length: 9\n}\n" +
 				"thatSnippet {\n  function: \"fun2\"\n  position: 2\n  length: 8\n}\n, " +

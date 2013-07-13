@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Serializable;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -18,6 +19,7 @@ import ch.unibe.scg.cc.Protos.CloneOrBuilder;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Snippet.Builder;
 
+import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Lists;
@@ -45,15 +47,30 @@ public class CloneExpander {
 	/** Maps from snippet hash to popular snippet locations. */
 	private final ImmutableMultimap<ByteBuffer, Snippet> snippet2PopularSnippet;
 
-	private final Comparator<Clone> cloneComparator;
+	private final Comparator<Clone> cloneComparator = new CloneComparator();
 
 	@Inject
-	CloneExpander(Provider<PopularSnippetMaps> popularSnippetMapsProvider,
-			Comparator<Clone> cloneComparator) {
+	CloneExpander(Provider<PopularSnippetMaps> popularSnippetMapsProvider) {
 		PopularSnippetMaps popularSnippetMaps = popularSnippetMapsProvider.get();
 		this.function2PopularSnippets = popularSnippetMaps.getFunction2PopularSnippets();
 		this.snippet2PopularSnippet = popularSnippetMaps.getSnippet2PopularSnippets();
-		this.cloneComparator = cloneComparator;
+	}
+
+	static class CloneComparator implements Comparator<Clone>, Serializable {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public int compare(Clone o1, Clone o2) {
+			return ComparisonChain
+					.start()
+					.compare(
+							o1.getThatSnippet().getFunction().asReadOnlyByteBuffer(),
+							o2.getThatSnippet().getFunction().asReadOnlyByteBuffer())
+					.compare(
+							o1.getThisSnippet().getPosition(),
+							o2.getThisSnippet().getPosition())
+					.result();
+		}
 	}
 
 	/**

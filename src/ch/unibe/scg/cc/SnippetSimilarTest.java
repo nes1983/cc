@@ -43,7 +43,7 @@ public final class SnippetSimilarTest {
 		}
 	}
 
-	final Comparator<Clone> cloneComparator = new CloneComparator();
+	final Comparator<Clone> cloneComparator = new CloneExpander.CloneComparator();
 	final Comparator<Snippet> snippetLocationComparator = new SnippetLocationComparator();
 
 	@Test
@@ -111,7 +111,7 @@ public final class SnippetSimilarTest {
 								ImmutableListMultimap.<ByteBuffer, Snippet>of(),
 								ImmutableListMultimap.<ByteBuffer, Snippet>of());
 					}
-				}, null);
+				});
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
 		assertThat(builtClones.toString(),
 				is("[thisSnippet {\n  function: \"\\001\"\n  position: 5\n  length: 14\n}\n" +
