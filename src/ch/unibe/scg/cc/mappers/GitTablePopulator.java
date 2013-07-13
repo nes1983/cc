@@ -131,7 +131,7 @@ public class GitTablePopulator implements Runnable {
 	static class GitTablePopulatorMapper extends GuiceMapper<Text, BytesWritable, Text, IntWritable> {
 		private static final String PACK_PATH_REGEX = "(.+)objects/pack/pack-[a-f0-9]{40}.pack";
 
-		FileSystem fileSystem;
+		FileSystem fileSystem; // Set in setup.
 
 		final private Populator populator;
 		final private GitWalker gitWalker;
