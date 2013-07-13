@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
 
 import javax.inject.Named;
 import javax.inject.Provider;
+import javax.inject.Qualifier;
 
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
@@ -21,7 +22,6 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.io.BaseEncoding;
-import com.google.inject.BindingAnnotation;
 import com.google.inject.Inject;
 
 /** key is a functionhash, value is the complete functionstring */
@@ -55,7 +55,7 @@ class CloneLoaderProvider implements Provider<LoadingCache<byte[], String>> {
 		}
 	}
 
-	@BindingAnnotation
+	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	public static @interface CloneLoader {

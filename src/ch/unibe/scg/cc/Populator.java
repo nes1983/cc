@@ -10,6 +10,8 @@ import java.util.Set;
 import javax.inject.Inject;
 
 import ch.unibe.scg.cc.Annotations.Function2Snippets;
+import ch.unibe.scg.cc.Annotations.Type1;
+import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;

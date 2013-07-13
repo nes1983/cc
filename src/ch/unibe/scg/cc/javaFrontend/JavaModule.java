@@ -1,12 +1,12 @@
 package ch.unibe.scg.cc.javaFrontend;
 
 import ch.unibe.scg.cc.Annotations.Java;
+import ch.unibe.scg.cc.Annotations.Type1;
+import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.PhaseFrontend;
 import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.Tokenizer;
-import ch.unibe.scg.cc.Type1;
-import ch.unibe.scg.cc.Type2;
 import ch.unibe.scg.cc.Type2ReplacerFactory;
 import ch.unibe.scg.cc.regex.Replace;
 

@@ -8,27 +8,42 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
-import com.google.inject.BindingAnnotation;
+import javax.inject.Qualifier;
 
 public class Annotations {
-	@BindingAnnotation
+	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	public static @interface Java {
-
 	}
 
-	@BindingAnnotation
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	public static @interface Type1 {
+	}
+
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	public @interface Type2 {
+	}
+
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	public @interface Type3 {
+	}
+
+	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	static @interface Function2Snippets {
-
 	}
 
-	@BindingAnnotation
+	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	static @interface Populator {
-
 	}
 }
