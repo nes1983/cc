@@ -29,8 +29,6 @@ public class ShingleHasher implements Hasher {
 		this.md = md;
 	}
 
-	final String[] stringArrayType = new String[] {};
-
 	Collection<String> shingles(String doc) throws CannotBeHashedException {
 		Collection<String> ret = new ArrayList<>();
 		int start = 0;
@@ -60,7 +58,7 @@ public class ShingleHasher implements Hasher {
 	/**
 	 * Use a quarter of all hashes.
 	 */
-	byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
+	private byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
 		Preconditions.checkArgument(hashedShingles.iterator().hasNext(),
 				"There was nothing to make a sketch from. Input:\n" + doc);
 		final byte[] hash = new byte[SHA1_LENGTH];
