@@ -40,12 +40,15 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 	/** Cells are sorted first by row key, then column key. cellContents are not inspected! */
 	@Override
 	public int compareTo(Cell<T> o) {
+		if (this == o) {
+			return 0;
+		}
+
 		final Comparator<ByteString> cmp = new Comparator<ByteString>() {
 			@Override public int compare(ByteString o1, ByteString o2) {
 				return o1.asReadOnlyByteBuffer().compareTo(o2.asReadOnlyByteBuffer());
 			}
 		};
-
 		return ComparisonChain.start()
 				.compare(rowKey, o.rowKey, cmp)
 				.compare(columnKey, o.columnKey, cmp)
