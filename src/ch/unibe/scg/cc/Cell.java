@@ -34,16 +34,13 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 	@SuppressWarnings("unchecked") // Unavoidable. We cannot test if obj really is instanceof generic.
 	@Override
 	public boolean equals(Object obj) {
-		return (!(obj instanceof Cell)) && compareTo((Cell<T>) obj) == 0;
+		return (obj == this)
+				|| ((!(obj instanceof Cell)) && compareTo((Cell<T>) obj) == 0);
 	}
 
 	/** Cells are sorted first by row key, then column key. cellContents are not inspected! */
 	@Override
 	public int compareTo(Cell<T> o) {
-		if (this == o) {
-			return 0;
-		}
-
 		final Comparator<ByteString> cmp = new Comparator<ByteString>() {
 			@Override public int compare(ByteString o1, ByteString o2) {
 				return o1.asReadOnlyByteBuffer().compareTo(o2.asReadOnlyByteBuffer());
