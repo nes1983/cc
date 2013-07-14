@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Objects;
@@ -7,16 +9,16 @@ import java.util.Objects;
 import com.google.common.collect.ComparisonChain;
 import com.google.protobuf.ByteString;
 
-/** Cell of an HTable. Two cells are equal if they agree on row key and column key. */
+/** Cell of an HTable. */
 public final class Cell<T> implements Comparable<Cell<T>>{
 	final ByteString rowKey;
 	final ByteString columnKey;
 	final ByteString cellContents;
 
 	Cell(ByteString rowKey, ByteString columnKey, ByteString cellContents) {
-		this.rowKey = rowKey;
-		this.columnKey = columnKey;
-		this.cellContents = cellContents;
+		this.rowKey = checkNotNull(rowKey);
+		this.columnKey = checkNotNull(columnKey);
+		this.cellContents = checkNotNull(cellContents);
 	}
 
 	@Override
@@ -28,12 +30,14 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 		return result;
 	}
 
+	/** Two cells are equal if they agree on row key and column key. cellContents are not inspected! */
 	@SuppressWarnings("unchecked") // Unavoidable. We cannot test if obj really is instanceof generic.
 	@Override
 	public boolean equals(Object obj) {
 		return (!(obj instanceof Cell)) && compareTo((Cell<T>) obj) == 0;
 	}
 
+	/** Cells are sorted first by row key, then column key. cellContents are not inspected! */
 	@Override
 	public int compareTo(Cell<T> o) {
 		final Comparator<ByteString> cmp = new Comparator<ByteString>() {
