@@ -28,14 +28,10 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 		return result;
 	}
 
+	@SuppressWarnings("unchecked") // Unavoidable. We cannot test if obj really is instanceof generic.
 	@Override
 	public boolean equals(Object obj) {
-		if (!(obj instanceof Cell)) {
-			return false;
-		}
-		@SuppressWarnings("unchecked") // Since we never really use type T, this will never fail.
-		Cell<T> other = (Cell<T>) obj;
-		return compareTo(other) == 0;
+		return (!(obj instanceof Cell)) && compareTo((Cell<T>) obj) == 0;
 	}
 
 	@Override
