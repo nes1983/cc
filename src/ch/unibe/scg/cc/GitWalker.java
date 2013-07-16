@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +27,7 @@ import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import com.google.common.io.Files;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
-public class GitWalker {
+public class GitWalker implements Closeable {
 	final static Logger logger = Logger.getLogger(GitWalker.class.getName());
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
@@ -157,5 +158,10 @@ public class GitWalker {
 		logger.warning("Could not simplify project name " + packFilePath);
 		// Use URI as project name.
 		return packFilePath;
+	}
+
+	@Override
+	public void close() throws IOException {
+		populator.close();
 	}
 }
