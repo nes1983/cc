@@ -7,6 +7,7 @@ import javax.inject.Singleton;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Scan;
 
+import ch.unibe.scg.cc.Annotations.CloneLoader;
 import ch.unibe.scg.cc.PopularSnippetMaps;
 import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
@@ -45,7 +46,7 @@ public final class HBaseModule extends AbstractModule {
 		bind(Scan.class).toProvider(ScanProvider.class);
 
 		bind(new TypeLiteral<LoadingCache<byte[], String>>() {})
-			.annotatedWith(CloneLoaderProvider.CloneLoader.class)
+			.annotatedWith(CloneLoader.class)
 			.toProvider(CloneLoaderProvider.class)
 			.in(Singleton.class);
 
