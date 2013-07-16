@@ -11,7 +11,7 @@ import java.util.zip.ZipInputStream;
 import org.junit.Assert;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Annotations.Function2Snippets;
+import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
@@ -47,23 +47,9 @@ public final class GitWalkerTest {
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		GitWalker gitWalker = i.getInstance(GitWalker.class);
-
-		try (ZipInputStream packFile = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(TESTREPO));
-				ZipInputStream packedRefs = new ZipInputStream(
-						GitWalkerTest.class.getResourceAsStream(TESTREPO))) {
-			for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
-				if (entry.getName().endsWith(".pack")) {
-					break;
-				}
-			}
-
-			for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null;) {
-				if (entry.getName().endsWith("packed-refs")) {
-					break;
-				}
-			}
-
-			gitWalker.walk(packedRefs, packFile, "Captain Hook");
+		
+		try(ZippedGit testRepo = parseZippedGit(TESTREPO)) {
+			gitWalker.walk(testRepo.packedRefs, testRepo.packFile, "Captain Hook");
 		}
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
@@ -73,8 +59,8 @@ public final class GitWalkerTest {
 		Iterable<Cell<Project>> projects = Iterables.getOnlyElement(projectPartitions);
 		assertThat(Iterables.size(projects), is(1));
 
-		PopulatorCodec cellCodec = i.getInstance(PopulatorCodec.class);
-		Project p = cellCodec.decodeProject(Iterables.getOnlyElement(projects));
+		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
+		Project p = codec.project.decode(Iterables.getOnlyElement(projects));
 		assertThat(p.getName(), is("Captain Hook"));
 
 		Iterable<Iterable<Cell<Version>>> versionPartitions = i.getInstance(
@@ -83,7 +69,7 @@ public final class GitWalkerTest {
 
 		Iterable<Cell<Version>> versions = Iterables.getOnlyElement(versionPartitions);
 		assertThat(Iterables.size(versions), is(1));
-		Version v = cellCodec.decodeVersion(Iterables.getOnlyElement(versions));
+		Version v = codec.version.decode(Iterables.getOnlyElement(versions));
 		assertThat(v.getName(), is("master"));
 		assertThat(v.getProject(), is(p.getHash()));
 
@@ -93,7 +79,7 @@ public final class GitWalkerTest {
 
 		Iterable<Cell<CodeFile>> files = Iterables.getOnlyElement(filePartitions);
 		assertThat(Iterables.size(files), is(1));
-		CodeFile cf = cellCodec.decodeCodeFile(Iterables.getOnlyElement(files));
+		CodeFile cf = codec.codeFile.decode(Iterables.getOnlyElement(files));
 		assertThat(cf.getPath(), is("GitTablePopulatorTest.java"));
 		assertThat(cf.getVersion(), is(v.getHash()));
 
@@ -106,20 +92,20 @@ public final class GitWalkerTest {
 		Iterable<Cell<Function>> functions = Iterables.getOnlyElement(functionPartitions);
 		assertThat(Iterables.size(functions), is(1));
 
-		Function fn = cellCodec.decodeFunction(Iterables.getOnlyElement(functions));
+		Function fn = codec.function.decode(Iterables.getOnlyElement(functions));
 		assertThat(fn.getCodeFile(), is(cf.getHash()));
 		assertThat(fn.getBaseLine(), is(10));
 		assertThat(fn.getContents().indexOf("public void testProjname"), is(1));
 
 		Iterable<Iterable<Cell<Snippet>>> snippetPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {})).partitions();
-		assertThat(Iterables.size(snippetPartitions), is(1));
+		assertThat(Iterables.size(snippetPartitions), is(1)); // means we have only one function
 
 		Iterable<Cell<Snippet>> snippets = Iterables.getOnlyElement(snippetPartitions);
 		assertThat(Iterables.size(snippets), is(24));
-		Snippet s0 = cellCodec.decodeSnippet(Iterables.get(snippets, 0));
-		Snippet s1 = cellCodec.decodeSnippet(Iterables.get(snippets, 1));
-		Snippet s7 = cellCodec.decodeSnippet(Iterables.get(snippets, 7));
+		Snippet s0 = codec.snippet.decode(Iterables.get(snippets, 0));
+		Snippet s1 = codec.snippet.decode(Iterables.get(snippets, 1));
+		Snippet s7 = codec.snippet.decode(Iterables.get(snippets, 7));
 
 		assertThat(s0.getFunction(), is(fn.getHash()));
 		assertThat(s0.getLength(), is(5));
@@ -129,16 +115,37 @@ public final class GitWalkerTest {
 		assertThat(s7.getPosition(), is(7));
 		assertThat(s7.getFunction(), is(fn.getHash()));
 
-		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.getOnlyElement(i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Function2Snippets.class)).partitions());
-		assertThat(Iterables.size(snippets2Funcs), is(24));
-		assertThat(Iterables.get(snippets2Funcs, 0).rowKey, is(fn.getHash()));
+		Iterable<Iterable<Cell<Snippet>>> snippet2FuncsPartitions = i.getInstance(
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)).partitions();
+		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
+		
+		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
+		assertThat(Iterables.size(snippets2Funcs), is(1));
+		assertThat(Iterables.get(snippets2Funcs, 0).columnKey, is(fn.getHash()));
 
-		ByteString snippetHash = Iterables.get(snippets2Funcs, 0).columnKey;
+		ByteString snippetHash = Iterables.get(snippets2Funcs, 0).rowKey;
 		boolean found = false;
 		for (Cell<Snippet> cs : snippets) {
-			found |= cellCodec.decodeSnippet(cs).getHash().equals(snippetHash);
+			found |= codec.snippet.decode(cs).getHash().equals(snippetHash);
 		}
 		assertTrue("Expected the column key of function2snippet to be a snippet hash, but wasn't.", found);
+	}
+	
+	static ZippedGit parseZippedGit(String pathToZip) throws IOException {
+		ZipInputStream packFile = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));
+		ZipInputStream packedRefs = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));
+		for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
+			if (entry.getName().endsWith(".pack")) {
+				break;
+			}
+		}
+
+		for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null;) {
+			if (entry.getName().endsWith("packed-refs")) {
+				break;
+			}
+		}
+
+		return new ZippedGit(packedRefs, packFile);
 	}
 }
