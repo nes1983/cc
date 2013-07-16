@@ -71,6 +71,8 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 
 	@Override
 	public void close() throws IOException {
-		popularSnippets.close();
+		if (popularSnippets != null) {
+			popularSnippets.close();
+		}
 	}
 }

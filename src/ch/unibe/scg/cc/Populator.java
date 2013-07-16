@@ -226,7 +226,6 @@ public class Populator implements Closeable {
 			closer.register(versionSink);
 			closer.register(projectSink);
 			closer.register(snippet2Functions);
-			closer.close();
 		}
 	}
 

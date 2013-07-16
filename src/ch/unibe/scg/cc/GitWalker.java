@@ -162,6 +162,8 @@ public class GitWalker implements Closeable {
 
 	@Override
 	public void close() throws IOException {
-		populator.close();
+		if (populator != null) {
+			populator.close();
+		}
 	}
 }
