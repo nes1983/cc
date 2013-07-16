@@ -27,18 +27,24 @@ class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 
 		ImmutableList.Builder<Iterable<Cell<T>>> ret = ImmutableList.builder();
 
-		ImmutableList.Builder<Cell<T>> cur = ImmutableList.builder();
+		ImmutableList.Builder<Cell<T>> partition = ImmutableList.builder();
 		Cell<T> last = null;
 
 		for (Cell<T> c : store) {
 			if ((last != null) && (!c.rowKey.equals(last.rowKey))) {
-				ret.add(cur.build());
-				cur = ImmutableList.builder();
+				ret.add(partition.build());
+				partition = ImmutableList.builder();
+				last = null;
 			}
-			cur.add(c);
+
+			if (!c.equals(last)) {
+				partition.add(c);
+			}
+
 			last = c;
 		}
-		ret.add(cur.build());
+
+		ret.add(partition.build());
 
 		return ret.build();
 	}
