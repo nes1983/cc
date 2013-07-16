@@ -95,7 +95,9 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 
 		@Override
 		public void close() throws IOException {
-			fsin.close();
+			if(fsin != null) {
+				fsin.close();
+			}
 		}
 	}
 }
