@@ -44,7 +44,7 @@ public class Annotations {
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface Function2Snippets {
+	static @interface Snippet2Functions {
 	}
 
 	@Qualifier

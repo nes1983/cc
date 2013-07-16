@@ -2,8 +2,8 @@ package ch.unibe.scg.cc;
 
 import javax.inject.Singleton;
 
-import ch.unibe.scg.cc.Annotations.Function2Snippets;
 import ch.unibe.scg.cc.Annotations.Populator;
+import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
@@ -24,12 +24,12 @@ class InMemoryModule extends AbstractModule {
 		TypeLiteral<InMemoryShuffler<Snippet>> snippetShuffler = new TypeLiteral<InMemoryShuffler<Snippet>>() {};
 
 		// These must all be singletons, to make sure that the shuffler can serve as both sink and source.
-		bind(projectShuffler).annotatedWith(Populator.class).to(projectShuffler).in(Singleton.class);
-		bind(versionShuffler).annotatedWith(Populator.class).to(versionShuffler).in(Singleton.class);
-		bind(codeFileShuffler).annotatedWith(Populator.class).to(codeFileShuffler).in(Singleton.class);
-		bind(functionShuffler).annotatedWith(Populator.class).to(functionShuffler).in(Singleton.class);
-		bind(snippetShuffler).annotatedWith(Populator.class).to(snippetShuffler).in(Singleton.class);
-		bind(snippetShuffler).annotatedWith(Function2Snippets.class).to(snippetShuffler).in(Singleton.class);
+		bind(Key.get(projectShuffler, Populator.class)).to(projectShuffler).in(Singleton.class);
+		bind(Key.get(versionShuffler, Populator.class)).to(versionShuffler).in(Singleton.class);
+		bind(Key.get(codeFileShuffler, Populator.class)).to(codeFileShuffler).in(Singleton.class);
+		bind(Key.get(functionShuffler, Populator.class)).to(functionShuffler).in(Singleton.class);
+		bind(Key.get(snippetShuffler, Populator.class)).to(snippetShuffler).in(Singleton.class);
+		bind(Key.get(snippetShuffler, Snippet2Functions.class)).to(snippetShuffler).in(Singleton.class);
 
 		bind(new TypeLiteral<CellSink<Project>>() {}).to(Key.get(projectShuffler, Populator.class));
 		bind(new TypeLiteral<CellSource<Project>>() {}).to(Key.get(projectShuffler, Populator.class));
@@ -41,10 +41,10 @@ class InMemoryModule extends AbstractModule {
 		bind(new TypeLiteral<CellSource<Function>>() {}).to(Key.get(functionShuffler, Populator.class));
 		bind(new TypeLiteral<CellSink<Snippet>>() {}).to(Key.get(snippetShuffler, Populator.class));
 		bind(new TypeLiteral<CellSource<Snippet>>() {}).to(Key.get(snippetShuffler, Populator.class));
-
-		bind(new TypeLiteral<CellSink<Snippet>>() {}).annotatedWith(Function2Snippets.class)
-			.to(Key.get(snippetShuffler, Function2Snippets.class));
-		bind(new TypeLiteral<CellSource<Snippet>>() {}).annotatedWith(Function2Snippets.class)
-			.to(Key.get(snippetShuffler, Function2Snippets.class));
+		
+		bind(new TypeLiteral<CellSink<Snippet>>() {}).annotatedWith(Snippet2Functions.class)
+			.to(Key.get(snippetShuffler, Snippet2Functions.class));
+		bind(new TypeLiteral<CellSource<Snippet>>() {}).annotatedWith(Snippet2Functions.class)
+			.to(Key.get(snippetShuffler, Snippet2Functions.class));
 	}
 }

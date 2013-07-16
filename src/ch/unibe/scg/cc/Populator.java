@@ -9,7 +9,7 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-import ch.unibe.scg.cc.Annotations.Function2Snippets;
+import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -39,13 +39,14 @@ public class Populator implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
-	final private Codec<Snippet> function2SnippetsCodec;
+	final private Codec<Snippet> snippet2FunctionsCodec;
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
+	/** Function2Snippet */
 	final private CellSink<Snippet> snippetSink;
-	final private CellSink<Snippet> function2Snippet;
+	final private CellSink<Snippet> snippet2Functions;
 
 	private static final int CACHE_SIZE = 1000000;
 	/** Functions that were successfully written to DB in this mapper */
@@ -58,9 +59,9 @@ public class Populator implements Closeable {
 			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
 			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
-			@Function2Snippets CellSink<Snippet> function2Snippet,
-			@Function2Snippets Codec<Snippet> function2SnippetsCodec) {
-		assert function2Snippet != snippetSink;
+			@Snippet2Functions CellSink<Snippet> snippet2Functions,
+			@Snippet2Functions Codec<Snippet> snippet2FunctionsCodec) {
+		assert snippet2Functions != snippetSink;
 
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
@@ -74,8 +75,8 @@ public class Populator implements Closeable {
 		this.codeFileSink = codeFileSink;
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
-		this.function2Snippet = function2Snippet;
-		this.function2SnippetsCodec = function2SnippetsCodec;
+		this.snippet2Functions = snippet2Functions;
+		this.snippet2FunctionsCodec = snippet2FunctionsCodec;
 	}
 
 	/** Register all Versions of a Project */
@@ -98,11 +99,11 @@ public class Populator implements Closeable {
 				hs.add(v.getHash());
 			}
 			project.setHash(xor(hs));
-			projectSink.write(codec.encodeProject(project.build()));
+			projectSink.write(codec.project.encode(project.build()));
 
 			for (Version.Builder v : versions) {
 				v.setProject(project.getHash());
-				versionSink.write(codec.encodeVersion(v.build()));
+				versionSink.write(codec.version.encode(v.build()));
 			}
 		}
 
@@ -143,7 +144,7 @@ public class Populator implements Closeable {
 
 			for (CodeFile.Builder fil : files) {
 				fil.setVersion(version.getHash());
-				codeFileSink.write(codec.encodeCodeFile(fil.build()));
+				codeFileSink.write(codec.codeFile.encode(fil.build()));
 			}
 		}
 
@@ -192,7 +193,7 @@ public class Populator implements Closeable {
 					continue;
 				}
 
-				functionSink.write(codec.encodeFunction(fun));
+				functionSink.write(codec.function.encode(fun));
 
 				if (writtenFunctions.getIfPresent(fun.getHash()) != null) {
 					return;
@@ -251,8 +252,8 @@ public class Populator implements Closeable {
 					.setPosition(frameStart)
 					.setHash(ByteString.copyFrom(hash))
 					.build();
-			snippetSink.write(codec.encodeSnippet(snip));
-			function2Snippet.write(function2SnippetsCodec.encode(snip));
+			snippetSink.write(codec.snippet.encode(snip));
+			snippet2Functions.write(snippet2FunctionsCodec.encode(snip));
 		}
 	}
 

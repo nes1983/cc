@@ -4,10 +4,11 @@ import ch.unibe.scg.cc.Protos.Snippet;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 
-class Function2SnippetsCodec implements Codec<Snippet> {
+class Snippet2FunctionsCodec implements Codec<Snippet> {
 	@Override
 	public Cell<Snippet> encode(Snippet s) {
-		return new Cell<>(s.getFunction(), s.getHash(), s.toByteString());
+		// We assume only one occurrence of a snippet inside a single function
+		return new Cell<>(s.getHash(), s.getFunction(), s.toByteString());
 	}
 
 	@Override
