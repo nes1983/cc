@@ -22,6 +22,7 @@ import ch.unibe.scg.cc.Protos.Snippet.Builder;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
 /**
@@ -86,7 +87,7 @@ public class CloneExpander {
 	 * @return The matches, stitched together.
 	 */
 	public Collection<Clone> expandClones(final Iterable<Clone> matches) {
-		if (!matches.iterator().hasNext()) {
+		if (Iterables.isEmpty(matches)) {
 			return Collections.emptyList();
 		}
 		Clone first = matches.iterator().next();
