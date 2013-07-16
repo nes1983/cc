@@ -33,6 +33,7 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 
+import ch.unibe.scg.cc.Annotations.CloneLoader;
 import ch.unibe.scg.cc.CloneExpander;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
@@ -41,7 +42,6 @@ import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.SpamDetector;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cc.mappers.CloneLoaderProvider.CloneLoader;
 
 import com.google.common.base.Optional;
 import com.google.common.base.Throwables;

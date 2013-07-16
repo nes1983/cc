@@ -1,17 +1,9 @@
 package ch.unibe.scg.cc.mappers;
 
-import static java.lang.annotation.ElementType.FIELD;
-import static java.lang.annotation.ElementType.METHOD;
-import static java.lang.annotation.ElementType.PARAMETER;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
 import java.io.IOException;
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
 
 import javax.inject.Named;
 import javax.inject.Provider;
-import javax.inject.Qualifier;
 
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;
@@ -53,11 +45,5 @@ class CloneLoaderProvider implements Provider<LoadingCache<byte[], String>> {
 			this.thisString = thisString;
 			this.thatString = thatString;
 		}
-	}
-
-	@Qualifier
-	@Target({ FIELD, PARAMETER, METHOD })
-	@Retention(RUNTIME)
-	public static @interface CloneLoader {
 	}
 }

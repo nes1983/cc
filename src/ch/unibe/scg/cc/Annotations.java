@@ -26,6 +26,12 @@ public class Annotations {
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
+	public static @interface CloneLoader {
+	}
+
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
 	public @interface Type2 {
 	}
 
