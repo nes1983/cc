@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Closeable;
 import java.io.IOException;
 
 /**
@@ -18,7 +19,7 @@ import java.io.IOException;
  * @param <OUT>
  *            Type of the output cells.
  */
-interface Mapper<IN, OUT> {
+interface Mapper<IN, OUT> extends Closeable {
 	/** Map one input row, and write the main output to {@code sink} */
-	void map(Iterable<Cell<IN>> row, CellSink<OUT> sink) throws IOException;
+	void map(Iterable<IN> row, Sink<OUT> sink) throws IOException;
 }

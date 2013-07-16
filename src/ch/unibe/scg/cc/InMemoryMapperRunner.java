@@ -7,10 +7,14 @@ import javax.inject.Provider;
 // TODO: Run multithreaded
 class InMemoryMapperRunner implements MapperRunner {
 	@Override
-	public <IN, OUT> void run(Provider<Mapper<IN, OUT>> mapperProvider, CellSource<IN> src, CellSink<OUT> sink) throws IOException {
-		Mapper<IN, OUT> mapper = mapperProvider.get();
-		for (Iterable<Cell<IN>> part : src.partitions()) {
-			mapper.map(part, sink);
+	public <IN, OUT> void run(Provider<Mapper<IN, OUT>> mapperProvider, CellSource<IN> src, CellSink<OUT> sink,
+			Codec<IN> srcCodec, Codec<OUT> sinkCodec) throws IOException {
+		try (Mapper<IN, OUT> mapper = mapperProvider.get()) {
+			for (Iterable<Cell<IN>> part : src.partitions()) {
+				mapper.map(Codecs.decode(part, srcCodec), Codecs.encode(sink, sinkCodec));
+			}
+		} catch (EncodingException e) {
+			throw e.getIOException();
 		}
 	}
 }
