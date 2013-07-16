@@ -36,7 +36,7 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 	@Override
 	public boolean equals(Object obj) {
 		return (obj == this)
-				|| ((!(obj instanceof Cell)) && compareTo((Cell<T>) obj) == 0);
+				|| ((obj instanceof Cell) && compareTo((Cell<T>) obj) == 0);
 	}
 
 	/** Cells are sorted first by row key, then column key. cellContents are not inspected! */
