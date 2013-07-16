@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import javax.inject.Provider;
 
+import com.google.common.collect.Iterables;
+
 // TODO: Run multithreaded
 class InMemoryMapperRunner implements MapperRunner {
 	@Override
@@ -11,7 +13,9 @@ class InMemoryMapperRunner implements MapperRunner {
 			Codec<IN> srcCodec, Codec<OUT> sinkCodec) throws IOException {
 		try (Mapper<IN, OUT> mapper = mapperProvider.get()) {
 			for (Iterable<Cell<IN>> part : src.partitions()) {
-				mapper.map(Codecs.decode(part, srcCodec), Codecs.encode(sink, sinkCodec));
+				Iterable<IN> decoded = Codecs.decode(part, srcCodec);
+				// In memory, since all iterables are backed by arrays, this is safe.
+				mapper.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}
 		} catch (EncodingException e) {
 			throw e.getIOException();

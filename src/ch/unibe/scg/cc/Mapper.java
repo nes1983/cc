@@ -20,6 +20,16 @@ import java.io.IOException;
  *            Type of the output cells.
  */
 interface Mapper<IN, OUT> extends Closeable {
-	/** Map one input row, and write the main output to {@code sink} */
-	void map(Iterable<IN> row, Sink<OUT> sink) throws IOException;
+	/**
+	 * Map one input row, and write the main output to {@code sink}. <strong>The
+	 * row is iterable only once.</strong>
+	 *
+	 * @param first
+	 *            The first element of the row. This is useful to peek at an
+	 *            element outside of iterating the row.
+	 * @param row
+	 *            Iterable only once. The first iterated element is
+	 *            {@code first}.
+	 */
+	void map(IN first, Iterable<IN> row, Sink<OUT> sink) throws IOException;
 }

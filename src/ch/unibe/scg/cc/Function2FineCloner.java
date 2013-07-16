@@ -32,7 +32,7 @@ class Function2FineCloner implements Mapper<Clone, Clone> {
 	}
 
 	@Override
-	public void map(Iterable<Clone> row, Sink<Clone> sink) throws IOException {
+	public void map(Clone first, Iterable<Clone> row, Sink<Clone> sink) throws IOException {
 		Collection<Clone> clones = cloneExpander.expandClones(row);
 		for (Clone c : clones) {
 			try {
