@@ -28,7 +28,7 @@ public class StringOfLines {
 	public String getLines(int from, int length) {
 		Preconditions.checkArgument(from >= 0, "From was negative! " + from);
 		Preconditions.checkArgument(length >= 0, "length was negative! " + length);
-		Preconditions.checkArgument(from + length < separators.length, 
+		Preconditions.checkArgument(from + length < separators.length,
 				String.format("You're trying to access line %s (length %s), " +
 						"but there are only %s lines", from+length, length, getNumberOfLines()));
 		return string.substring(separators[from], separators[from + length] + 1);

@@ -27,6 +27,7 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 		int result = 1;
 		result = prime * result + Objects.hashCode(rowKey);
 		result = prime * result + Objects.hashCode(columnKey);
+
 		return result;
 	}
 
