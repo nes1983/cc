@@ -54,6 +54,8 @@ message Snippet {
 	optional CloneType clone_type = 4;
 	// Hash of the contents.
 	optional int32 length = 5;
+	// Number of functions that this snippet occurs in.
+	optional int64 commonness = 6;
 }
 
 message CloneGroup {
