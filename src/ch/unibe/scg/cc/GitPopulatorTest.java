@@ -29,7 +29,7 @@ import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
 @SuppressWarnings("javadoc")
-public final class GitWalkerTest {
+public final class GitPopulatorTest {
 	private static final String TESTREPO = "testrepo.zip";
 
 	@Test
@@ -143,8 +143,8 @@ public final class GitWalkerTest {
 	}
 
 	static ZippedGit parseZippedGit(String pathToZip) throws IOException {
-		ZipInputStream packFile = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));
-		ZipInputStream packedRefs = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));
+		ZipInputStream packFile = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));
+		ZipInputStream packedRefs = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));
 		for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
 			if (entry.getName().endsWith(".pack")) {
 				break;
