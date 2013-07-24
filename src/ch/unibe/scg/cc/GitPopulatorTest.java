@@ -6,6 +6,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -49,18 +51,8 @@ public final class GitPopulatorTest {
 	@Test
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		GitPopulator gitWalker = i.getInstance(GitPopulator.class);
-
-		try(CellSink<Snippet> snippetCellSink = i.getInstance(
-					Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
-				ZippedGit testRepo = parseZippedGit(TESTREPO)) {
-			Sink<Snippet> snippetSink = Codecs.encode(snippetCellSink, i.getInstance(
-					Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
-			GitRepo repo = GitRepo.newBuilder()
-					.setProjectName("Captain Hook")
-					.setPackFile(ByteString.readFrom(testRepo.packFile))
-					.setPackRefs(ByteString.readFrom(testRepo.packedRefs)).build();
-			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
+		try(ZippedGit testRepo = parseZippedGit(TESTREPO)) {
+			walkRepo(i, testRepo);
 		}
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
@@ -113,7 +105,7 @@ public final class GitPopulatorTest {
 		assertThat(Iterables.size(snippetPartitions), is(1)); // means we have only one function
 
 		Iterable<Cell<Snippet>> snippets = Iterables.getOnlyElement(snippetPartitions);
-		assertThat(Iterables.size(snippets), is(24));
+		assertThat(Iterables.size(snippets), is(8));
 		Snippet s0 = codec.snippet.decode(Iterables.get(snippets, 0));
 		Snippet s1 = codec.snippet.decode(Iterables.get(snippets, 1));
 		Snippet s7 = codec.snippet.decode(Iterables.get(snippets, 7));
@@ -140,6 +132,70 @@ public final class GitPopulatorTest {
 			found |= codec.snippet.decode(cs).getHash().equals(snippetHash);
 		}
 		assertTrue("Expected the column key of function2snippet to be a snippet hash, but wasn't.", found);
+	}
+
+	@Test
+	public void testPaperExampleFunction2Snippets() throws IOException {
+		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
+		try(ZippedGit testRepo = GitPopulatorTest.parseZippedGit("paperExample.zip")) {
+			walkRepo(i, testRepo);
+		}
+
+		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
+		Iterable<Cell<Function>> funCells = Iterables.concat(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})).partitions());
+		assertThat(Iterables.size(funCells), is(15));
+		Iterable<Function> funs = Codecs.decode(funCells, codec.function);
+
+		Set<ByteString> funHashes = new HashSet<>();
+		for (Function fun : funs) {
+			funHashes.add(fun.getHash());
+		}
+		assertThat(funHashes.size(), is(9));
+	}
+
+	@Test
+	public void testPaperExampleSnippet2Functions() throws IOException {
+		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
+		try(ZippedGit testRepo = GitPopulatorTest.parseZippedGit("paperExample.zip")) {
+			walkRepo(i, testRepo);
+		}
+
+		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {})).partitions();
+		// Num partitions is the number of functions. As per populator test, that's 9.
+		assertThat(Iterables.size(function2snippetsPartitions), is(9));
+
+		Iterable<Iterable<Cell<Snippet>>> snippet2FunctionsPartitions = i.getInstance(
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)).partitions();
+		assertThat(Iterables.size(snippet2FunctionsPartitions), is(145));
+
+		// Numbers are taken from paper. See table II.
+		ByteString row03D8 = ByteString.copyFrom(new byte[] {0x03, (byte) 0xd8});
+		Iterable<Cell<Snippet>> partition03D8 = null;
+		for(Iterable<Cell<Snippet>> s2fPartition : snippet2FunctionsPartitions) {
+			if(Iterables.get(s2fPartition, 0).rowKey.startsWith(row03D8)) {
+				partition03D8 = s2fPartition;
+				break;
+			}
+		}
+		assertThat(Iterables.size(partition03D8), is(2));
+		Codec<Snippet> s2fCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class));
+		Iterable<Snippet> s2fs = Codecs.decode(partition03D8, s2fCodec);
+		assertThat(Math.abs(Iterables.get(s2fs, 0).getPosition() - Iterables.get(s2fs, 1).getPosition()), is(3));
+	}
+
+	static void walkRepo(Injector i, ZippedGit testRepo) throws IOException {
+		try(CellSink<Snippet> snippetCellSink = i.getInstance(
+				Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
+				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
+			Sink<Snippet> snippetSink = Codecs.encode(snippetCellSink, i.getInstance(
+					Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
+			GitRepo repo = GitRepo.newBuilder()
+					.setProjectName("Captain Hook")
+					.setPackFile(ByteString.readFrom(testRepo.packFile))
+					.setPackRefs(ByteString.readFrom(testRepo.packedRefs)).build();
+			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
+		}
 	}
 
 	static ZippedGit parseZippedGit(String pathToZip) throws IOException {
