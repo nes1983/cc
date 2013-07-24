@@ -24,9 +24,7 @@ public final class Function2RoughClonerTest {
 	@Test
 	public void testMap() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		try(ZippedGit testRepo = GitPopulatorTest.parseZippedGit("paperExample.zip")) {
-			GitPopulatorTest.walkRepo(i, testRepo);
-		}
+		GitPopulatorTest.walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		MapperRunner mr = i.getInstance(MapperRunner.class);
 		try (CellSink<Clone> f2rcSink =

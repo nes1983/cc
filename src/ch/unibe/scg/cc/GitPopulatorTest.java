@@ -51,9 +51,7 @@ public final class GitPopulatorTest {
 	@Test
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		try(ZippedGit testRepo = parseZippedGit(TESTREPO)) {
-			walkRepo(i, testRepo);
-		}
+		walkRepo(i, parseZippedGit(TESTREPO));
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Project>>() {})).partitions();
@@ -64,7 +62,7 @@ public final class GitPopulatorTest {
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
 		Project p = codec.project.decode(Iterables.getOnlyElement(projects));
-		assertThat(p.getName(), is("Captain Hook"));
+		assertThat(p.getName(), is("testrepo.zip"));
 
 		Iterable<Iterable<Cell<Version>>> versionPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Version>>() {})).partitions();
@@ -137,9 +135,7 @@ public final class GitPopulatorTest {
 	@Test
 	public void testPaperExampleFunction2Snippets() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		try(ZippedGit testRepo = GitPopulatorTest.parseZippedGit("paperExample.zip")) {
-			walkRepo(i, testRepo);
-		}
+		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
 		Iterable<Cell<Function>> funCells = Iterables.concat(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})).partitions());
@@ -156,9 +152,7 @@ public final class GitPopulatorTest {
 	@Test
 	public void testPaperExampleSnippet2Functions() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		try(ZippedGit testRepo = GitPopulatorTest.parseZippedGit("paperExample.zip")) {
-			walkRepo(i, testRepo);
-		}
+		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {})).partitions();
@@ -184,35 +178,35 @@ public final class GitPopulatorTest {
 		assertThat(Math.abs(Iterables.get(s2fs, 0).getPosition() - Iterables.get(s2fs, 1).getPosition()), is(3));
 	}
 
-	static void walkRepo(Injector i, ZippedGit testRepo) throws IOException {
+	static void walkRepo(Injector i, GitRepo repo) throws IOException {
 		try(CellSink<Snippet> snippetCellSink = i.getInstance(
 				Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
 				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
 			Sink<Snippet> snippetSink = Codecs.encode(snippetCellSink, i.getInstance(
 					Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
-			GitRepo repo = GitRepo.newBuilder()
-					.setProjectName("Captain Hook")
-					.setPackFile(ByteString.readFrom(testRepo.packFile))
-					.setPackRefs(ByteString.readFrom(testRepo.packedRefs)).build();
 			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
 		}
 	}
 
-	static ZippedGit parseZippedGit(String pathToZip) throws IOException {
-		ZipInputStream packFile = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));
-		ZipInputStream packedRefs = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));
-		for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
-			if (entry.getName().endsWith(".pack")) {
-				break;
+	static GitRepo parseZippedGit(String pathToZip) throws IOException {
+		try(ZipInputStream packFile = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));
+				ZipInputStream packedRefs = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip))) {
+			for (ZipEntry entry; (entry = packFile.getNextEntry()) != null;) {
+				if (entry.getName().endsWith(".pack")) {
+					break;
+				}
 			}
-		}
 
-		for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null;) {
-			if (entry.getName().endsWith("packed-refs")) {
-				break;
+			for (ZipEntry entry; (entry = packedRefs.getNextEntry()) != null;) {
+				if (entry.getName().endsWith("packed-refs")) {
+					break;
+				}
 			}
+			return GitRepo.newBuilder()
+					.setProjectName(pathToZip)
+					.setPackFile(ByteString.readFrom(packFile))
+					.setPackRefs(ByteString.readFrom(packedRefs))
+					.build();
 		}
-
-		return new ZippedGit(packedRefs, packFile);
 	}
 }
