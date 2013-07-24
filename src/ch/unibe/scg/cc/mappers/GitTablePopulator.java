@@ -27,7 +27,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
 import ch.unibe.scg.cc.Annotations.Java;
-import ch.unibe.scg.cc.GitWalker;
+import ch.unibe.scg.cc.GitPopulator;
 import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
@@ -134,7 +134,7 @@ public class GitTablePopulator implements Runnable {
 		FileSystem fileSystem; // Set in setup.
 
 		final private Populator populator;
-		final private GitWalker gitWalker;
+		final private GitPopulator gitWalker;
 
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
@@ -144,7 +144,7 @@ public class GitTablePopulator implements Runnable {
 		private Counter processedFilesCounter;
 
 		@Inject
-		GitTablePopulatorMapper(@Java Populator populator, GitWalker gitWalker) {
+		GitTablePopulatorMapper(@Java Populator populator, GitPopulator gitWalker) {
 			this.populator = populator;
 			this.gitWalker = gitWalker;
 		}

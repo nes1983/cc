@@ -27,8 +27,8 @@ import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import com.google.common.io.Files;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
-public class GitWalker implements Closeable {
-	final static Logger logger = Logger.getLogger(GitWalker.class.getName());
+public class GitPopulator implements Closeable {
+	final static Logger logger = Logger.getLogger(GitPopulator.class.getName());
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
 
@@ -36,7 +36,7 @@ public class GitWalker implements Closeable {
 	final private Populator populator;
 
 	@Inject
-	GitWalker(CharsetDetector charsetDetector, Populator populator) {
+	GitPopulator(CharsetDetector charsetDetector, Populator populator) {
 		this.charsetDetector = charsetDetector;
 		this.populator = populator;
 	}
