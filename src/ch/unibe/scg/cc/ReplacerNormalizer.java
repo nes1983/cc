@@ -8,8 +8,9 @@ import ch.unibe.scg.cc.regex.Replace;
 public class ReplacerNormalizer implements Normalizer {
 	final private Replace[] replacers;
 
+	/** Visible for testing only. */
 	@Inject
-	ReplacerNormalizer(Replace[] replaces) {
+	public ReplacerNormalizer(Replace[] replaces) {
 		this.replacers = replaces;
 	}
 
