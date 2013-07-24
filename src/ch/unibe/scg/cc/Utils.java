@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.io.LineNumberReader;
 import java.io.StringReader;
 
-public class Utils {
+enum Utils {
+	; // Don't instantiate
+
 	public static int countLines(String str) {
 		LineNumberReader lnr = new LineNumberReader(new StringReader(checkNotNull(str)));
 		try {
