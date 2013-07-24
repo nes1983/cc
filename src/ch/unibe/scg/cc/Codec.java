@@ -9,7 +9,9 @@ import java.io.IOException;
  *
  * @param <T> The user-defined data type. Often a proto buffer.
  */
-interface Codec<T> {
+public interface Codec<T> {
+	/** Encode {@code s} into a cell.*/
 	Cell<T> encode(T s);
+	/** Decode cell {@encoded}. */
 	T decode(Cell<T> encoded) throws IOException;
 }
