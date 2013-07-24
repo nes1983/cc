@@ -22,4 +22,12 @@ public final class Type2ReplacerFactoryTest {
 		phase.normalize(sb);
 		assertThat(sb.toString(), is("\t\tt. t. t. t(t t[] { 1, 1 ,1 });\n\t}\n"));
 	}
+
+	@Test
+	public void testNormalize2() {
+		Normalizer n = new Normalizer(new Type2ReplacerFactory().get());
+		StringBuilder sb = new StringBuilder("\npublic    static void doIt(char[] arg) {\n");
+		n.normalize(sb);
+		assertThat(sb.toString(), is("\nt    t t t(t[] t) {\n"));
+	}
 }
