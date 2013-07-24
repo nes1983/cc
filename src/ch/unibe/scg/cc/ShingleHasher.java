@@ -16,7 +16,7 @@ import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
-public class ShingleHasher implements Hasher {
+class ShingleHasher implements Hasher {
 	private final MessageDigest md;
 
 	final private static int SHINGLE_LENGTH = 4;
