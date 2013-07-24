@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -14,6 +15,7 @@ import org.junit.Test;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
+import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
@@ -37,7 +39,7 @@ public final class GitWalkerTest {
 					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 			String projName = gitWalker.extractProjectName(fullPathString);
 			Assert.assertEquals("apfel", projName);
-	
+
 			fullPathString = "har://hdfs-haddock.unibe.ch/projects/dataset.har/dataset/sensei/objects/pack/pack-a33a3daca1573e82c6fbbc95846a47be4690bbe4.pack";
 			projName = gitWalker.extractProjectName(fullPathString);
 			Assert.assertEquals("sensei", projName);
@@ -48,9 +50,17 @@ public final class GitWalkerTest {
 	public void testPopulate() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		GitPopulator gitWalker = i.getInstance(GitPopulator.class);
-		
-		try(ZippedGit testRepo = parseZippedGit(TESTREPO)) {
-			gitWalker.walk(testRepo.packedRefs, testRepo.packFile, "Captain Hook");
+
+		try(CellSink<Snippet> snippetCellSink = i.getInstance(
+					Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
+				ZippedGit testRepo = parseZippedGit(TESTREPO)) {
+			Sink<Snippet> snippetSink = Codecs.encode(snippetCellSink, i.getInstance(
+					Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
+			GitRepo repo = GitRepo.newBuilder()
+					.setProjectName("Captain Hook")
+					.setPackFile(ByteString.readFrom(testRepo.packFile))
+					.setPackRefs(ByteString.readFrom(testRepo.packedRefs)).build();
+			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
 		}
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
@@ -119,7 +129,7 @@ public final class GitWalkerTest {
 		Iterable<Iterable<Cell<Snippet>>> snippet2FuncsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)).partitions();
 		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
-		
+
 		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
 		assertThat(Iterables.size(snippets2Funcs), is(1));
 		assertThat(Iterables.get(snippets2Funcs, 0).columnKey, is(fn.getHash()));
@@ -131,7 +141,7 @@ public final class GitWalkerTest {
 		}
 		assertTrue("Expected the column key of function2snippet to be a snippet hash, but wasn't.", found);
 	}
-	
+
 	static ZippedGit parseZippedGit(String pathToZip) throws IOException {
 		ZipInputStream packFile = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));
 		ZipInputStream packedRefs = new ZipInputStream(GitWalkerTest.class.getResourceAsStream(pathToZip));

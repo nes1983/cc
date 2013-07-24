@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc;
 
-import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,11 +22,13 @@ import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
 
 import ch.unibe.scg.cc.Populator.ProjectRegistrar;
 import ch.unibe.scg.cc.Populator.VersionRegistrar;
+import ch.unibe.scg.cc.Protos.GitRepo;
+import ch.unibe.scg.cc.Protos.Snippet;
 
 import com.google.common.io.Files;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
-public class GitPopulator implements Closeable {
+public class GitPopulator implements Mapper<GitRepo, Snippet> {
 	final static Logger logger = Logger.getLogger(GitPopulator.class.getName());
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
@@ -93,15 +94,16 @@ public class GitPopulator implements Closeable {
 	}
 
 	/** Processes the Git repository and hands the files to the {@link Populator}. */
-	public void walk(InputStream packedRefs, InputStream packFile, String projectName) throws IOException {
-		List<PackedRef> tags = new PackedRefParser().parse(packedRefs);
+	@Override
+	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException {
+		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
 		File tdir = null;
-		try(ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(projectName)) {
+		try(ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(repo.getProjectName(), sink)) {
 			tdir = Files.createTempDir();
 			FileRepository r = new FileRepository(tdir);
 			r.create(true);
-			PackParser pp = r.newObjectInserter().newPackParser(packFile);
+			PackParser pp = r.newObjectInserter().newPackParser(repo.getPackFile().newInput());
 			// ProgressMonitor set to null, so NullProgressMonitor will be used.
 			pp.parse(null);
 
@@ -123,7 +125,7 @@ public class GitPopulator implements Closeable {
 						// TODO processedFilesCounter.increment();
 					}
 				} catch (MissingObjectException moe) {
-					logger.warning("MissingObjectException in " + projectName + " : " + moe);
+					logger.warning("MissingObjectException in " + repo.getProjectName() + " : " + moe);
 				}
 			}
 		} finally {
@@ -134,7 +136,7 @@ public class GitPopulator implements Closeable {
 				}
 			}
 		}
-		logger.info("Finished processing: " + projectName);
+		logger.info("Finished processing: " + repo.getProjectName());
 	}
 
 	/**

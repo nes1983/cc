@@ -1,10 +1,10 @@
 package ch.unibe.scg.cc.mappers;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -27,6 +27,9 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
 import ch.unibe.scg.cc.GitPopulator;
+import ch.unibe.scg.cc.Protos.GitRepo;
+import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cc.Sink;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
@@ -34,6 +37,7 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Optional;
 import com.google.inject.Inject;
+import com.google.protobuf.ByteString;
 
 /** Load in Har file of git repositories and populate our tables. */
 public class GitTablePopulator implements Runnable {
@@ -132,6 +136,8 @@ public class GitTablePopulator implements Runnable {
 		FileSystem fileSystem; // Set in setup.
 
 		final private GitPopulator gitPopulator;
+		// This should probably be automated somewhere.
+		final private Sink<Snippet> snippetSink;
 
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
@@ -140,9 +146,11 @@ public class GitTablePopulator implements Runnable {
 		@Named(Constants.COUNTER_PROCESSED_FILES)
 		private Counter processedFilesCounter;
 
+		// TODO: This doesn't really work. Who's responsible for the encoding  of the snippetSink here?
 		@Inject
-		GitTablePopulatorMapper(GitPopulator gitPopulator) {
+		public GitTablePopulatorMapper(GitPopulator gitPopulator, Sink<Snippet> snippetSink) {
 			this.gitPopulator = gitPopulator;
+			this.snippetSink = snippetSink;
 		}
 
 		@Override
@@ -167,8 +175,11 @@ public class GitTablePopulator implements Runnable {
 			String projectName = gitPopulator.extractProjectName(key.toString());
 			logger.info("Processing " + projectName);
 
-			gitPopulator.walk(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
-					new ByteArrayInputStream(value.getBytes()), projectName);
+			GitRepo repo = GitRepo.newBuilder()
+					.setProjectName(projectName)
+					.setPackRefs(ByteString.readFrom(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS))))
+					.setPackFile(ByteString.copyFrom(value.getBytes())).build();
+			gitPopulator.map(repo, Arrays.asList(repo), snippetSink);
 		}
 
 		@Override

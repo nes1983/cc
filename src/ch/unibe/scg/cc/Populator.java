@@ -9,7 +9,6 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -27,7 +26,11 @@ import com.google.common.collect.Iterables;
 import com.google.common.io.Closer;
 import com.google.protobuf.ByteString;
 
-/** Populator populates the persistent tables of all code. It is used from a project tree walk. */
+/**
+ * Populator populates the persistent tables of all code. It is used from a project tree walk.
+ *
+ * <b>NOT THREADSAFE.</b>
+ */
 public class Populator implements Closeable {
 	static final int MINIMUM_LINES = 5;
 	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
@@ -39,14 +42,15 @@ public class Populator implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
-	final private Codec<Snippet> snippet2FunctionsCodec;
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
 	/** Function2Snippet */
 	final private CellSink<Snippet> snippetSink;
-	final private CellSink<Snippet> snippet2Functions;
+
+	/** Changes for every project */
+	private Sink<Snippet> snippet2Functions;
 
 	private static final int CACHE_SIZE = 1000000;
 	/** Functions that were successfully written to DB in this mapper */
@@ -58,11 +62,7 @@ public class Populator implements Closeable {
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
 			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
-			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
-			@Snippet2Functions CellSink<Snippet> snippet2Functions,
-			@Snippet2Functions Codec<Snippet> snippet2FunctionsCodec) {
-		assert snippet2Functions != snippetSink;
-
+			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -75,8 +75,6 @@ public class Populator implements Closeable {
 		this.codeFileSink = codeFileSink;
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
-		this.snippet2Functions = snippet2Functions;
-		this.snippet2FunctionsCodec = snippet2FunctionsCodec;
 	}
 
 	/** Register all Versions of a Project */
@@ -91,9 +89,12 @@ public class Populator implements Closeable {
 
 		@Override
 		public void close() {
+			snippet2Functions = null;
+
 			if (versions.isEmpty()) {
 				return;
 			}
+
 			Set<ByteString> hs = new HashSet<>();
 			for (Version.Builder v : versions) {
 				hs.add(v.getHash());
@@ -212,8 +213,14 @@ public class Populator implements Closeable {
 		}
 	}
 
-	/** @return a new ProjectRegistrar. */
-	public ProjectRegistrar makeProjectRegistrar(String projectName) {
+	/**
+	 * @param newSnippet2Functions
+	 *            The sink for snippet2Function to be used while this
+	 *            projectRegistrar is active.
+	 * @return a new ProjectRegistrar.
+	 */
+	public ProjectRegistrar makeProjectRegistrar(String projectName, Sink<Snippet> newSnippet2Functions) {
+		this.snippet2Functions = newSnippet2Functions;
 		return new ProjectRegistrar(projectName);
 	}
 
@@ -225,7 +232,6 @@ public class Populator implements Closeable {
 			closer.register(codeFileSink);
 			closer.register(versionSink);
 			closer.register(projectSink);
-			closer.register(snippet2Functions);
 		}
 	}
 
@@ -253,7 +259,7 @@ public class Populator implements Closeable {
 					.setHash(ByteString.copyFrom(hash))
 					.build();
 			snippetSink.write(codec.snippet.encode(snip));
-			snippet2Functions.write(snippet2FunctionsCodec.encode(snip));
+			snippet2Functions.write(snip);
 		}
 	}
 

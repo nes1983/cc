@@ -92,3 +92,8 @@ message Occurrence {
 	optional int32 length = 11;
 }
 
+message GitRepo {
+	optional string project_name = 1;
+	optional bytes pack_refs = 2;
+	optional bytes pack_file = 3;
+}
