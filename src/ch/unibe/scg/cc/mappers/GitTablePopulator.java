@@ -26,9 +26,7 @@ import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
-import ch.unibe.scg.cc.Annotations.Java;
 import ch.unibe.scg.cc.GitPopulator;
-import ch.unibe.scg.cc.Populator;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 
@@ -133,8 +131,7 @@ public class GitTablePopulator implements Runnable {
 
 		FileSystem fileSystem; // Set in setup.
 
-		final private Populator populator;
-		final private GitPopulator gitWalker;
+		final private GitPopulator gitPopulator;
 
 		// Optional because in MRMain, we have an injector that does not set
 		// this property, and can't, because it doesn't have the counter
@@ -144,9 +141,8 @@ public class GitTablePopulator implements Runnable {
 		private Counter processedFilesCounter;
 
 		@Inject
-		GitTablePopulatorMapper(@Java Populator populator, GitPopulator gitWalker) {
-			this.populator = populator;
-			this.gitWalker = gitWalker;
+		GitTablePopulatorMapper(GitPopulator gitPopulator) {
+			this.gitPopulator = gitPopulator;
 		}
 
 		@Override
@@ -168,18 +164,18 @@ public class GitTablePopulator implements Runnable {
 			String gitDirPath = matcher.group(1);
 			// Sorted alphabetically. This means: old to new.
 
-			String projectName = gitWalker.extractProjectName(key.toString());
+			String projectName = gitPopulator.extractProjectName(key.toString());
 			logger.info("Processing " + projectName);
 
-			gitWalker.walk(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
+			gitPopulator.walk(fileSystem.open(new Path(gitDirPath + org.eclipse.jgit.lib.Constants.PACKED_REFS)),
 					new ByteArrayInputStream(value.getBytes()), projectName);
 		}
 
 		@Override
 		public void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
-			if (populator != null) {
-				populator.close();
+			if (gitPopulator != null) {
+				gitPopulator.close();
 			}
 		}
 	}
