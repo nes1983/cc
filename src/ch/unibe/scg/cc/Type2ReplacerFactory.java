@@ -3,7 +3,7 @@ package ch.unibe.scg.cc;
 import jregex.Pattern;
 import ch.unibe.scg.cc.regex.Replace;
 
-public class Type2ReplacerFactory extends ReplacerProvider {
+class Type2ReplacerFactory extends ReplacerProvider {
 	public Replace make00WordsIntoTs() {
 		Pattern word = new Pattern("[a-zA-Z]+");
 		return new Replace(word, "t");
