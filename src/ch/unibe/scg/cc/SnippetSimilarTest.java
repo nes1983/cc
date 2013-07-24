@@ -50,8 +50,8 @@ public final class SnippetSimilarTest {
 	public void testAreSimilar() throws CannotBeHashedException {
 		// Not fully refactored, so we easily add println statements
 		// to make an example for the paper.
-		final Normalizer n1 = new Normalizer(new JavaType1ReplacerFactory().get());
-		final Normalizer n2 = new Normalizer(new Type2ReplacerFactory().get());
+		final ReplacerNormalizer n1 = new ReplacerNormalizer(new JavaType1ReplacerFactory().get());
+		final ReplacerNormalizer n2 = new ReplacerNormalizer(new Type2ReplacerFactory().get());
 		final ShingleHasher ss = Guice.createInjector(new CCModule(), new InMemoryModule(), new JavaModule())
 				.getInstance(ShingleHasher.class);
 

@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Normalizer;
+import ch.unibe.scg.cc.ReplacerNormalizer;
 import ch.unibe.scg.cc.regex.Replace;
 
 //@formatter:off
@@ -45,7 +45,7 @@ public class JavaType1ReplacerFactoryTest {
 	public void checkAll() {
 		final StringBuilder sb = new StringBuilder(sampleClass());
 		assertThat(replacers, is(arrayWithSize(9)));
-		final Normalizer n = new Normalizer(replacers);
+		final ReplacerNormalizer n = new ReplacerNormalizer(replacers);
 		n.normalize(sb);
 		assertThat(
 				sb.toString(),
@@ -66,7 +66,7 @@ public class JavaType1ReplacerFactoryTest {
 	public void checkAllOnMethod() {
 		final StringBuilder sb = new StringBuilder(sampleMethod());
 		assertThat(replacers, is(arrayWithSize(9)));
-		final Normalizer n = new Normalizer(replacers);
+		final ReplacerNormalizer n = new ReplacerNormalizer(replacers);
 		n.normalize(sb);
 		assertThat(sb.toString(), is("static int log10Floor(int x) {" + "\n"
 				+ "int y = MAX_LOG_10_FOR_LEADING_ZEROS[Integer.numberOfLeadingZeros(x)];" + "\n"

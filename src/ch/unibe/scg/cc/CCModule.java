@@ -33,8 +33,8 @@ public class CCModule extends AbstractModule {
 	private static class Type2Module extends PrivateModule {
 		@Override
 		protected void configure() {
-			bind(PhaseFrontend.class).annotatedWith(Type2.class).to(Normalizer.class);
-			expose(PhaseFrontend.class).annotatedWith(Type2.class);
+			bind(Normalizer.class).annotatedWith(Type2.class).to(ReplacerNormalizer.class);
+			expose(Normalizer.class).annotatedWith(Type2.class);
 
 			// Private:
 			bind(new TypeLiteral<Replace[]>() {}).toProvider(Type2ReplacerFactory.class);

@@ -16,7 +16,7 @@ public final class Type2ReplacerFactoryTest {
 		Replace[] replaces = factory.get();
 		assertThat(replaces, is(arrayWithSize(4)));
 
-		Normalizer phase = new Normalizer(replaces);
+		ReplacerNormalizer phase = new ReplacerNormalizer(replaces);
 
 		StringBuilder sb = new StringBuilder("\t\tfish.stink.Rod.doIt(new int[] { 1, 2 ,3 });\n" + "	}\n");
 		phase.normalize(sb);
@@ -25,7 +25,7 @@ public final class Type2ReplacerFactoryTest {
 
 	@Test
 	public void testNormalize2() {
-		Normalizer n = new Normalizer(new Type2ReplacerFactory().get());
+		ReplacerNormalizer n = new ReplacerNormalizer(new Type2ReplacerFactory().get());
 		StringBuilder sb = new StringBuilder("\npublic    static void doIt(char[] arg) {\n");
 		n.normalize(sb);
 		assertThat(sb.toString(), is("\nt    t t t(t[] t) {\n"));

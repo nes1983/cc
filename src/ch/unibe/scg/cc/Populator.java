@@ -35,8 +35,8 @@ public class Populator implements Closeable {
 	static final int MINIMUM_LINES = 5;
 	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 
-	final private PhaseFrontend type1;
-	final private PhaseFrontend type2;
+	final private Normalizer type1;
+	final private Normalizer type2;
 	final private Tokenizer tokenizer;
 	final private StandardHasher standardHasher;
 	final private Hasher shingleHasher;
@@ -59,8 +59,8 @@ public class Populator implements Closeable {
 	final private Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 
 	@Inject
-	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 PhaseFrontend type1,
-			@Type2 PhaseFrontend type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
+	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
+			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
 			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink) {
 		this.standardHasher = standardHasher;
