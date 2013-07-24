@@ -29,17 +29,18 @@ import com.google.common.io.Files;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {
-	final static Logger logger = Logger.getLogger(GitPopulator.class.getName());
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
 
+	final private Logger logger;
 	final private CharsetDetector charsetDetector;
 	final private Populator populator;
 
 	@Inject
-	GitPopulator(CharsetDetector charsetDetector, Populator populator) {
+	GitPopulator(CharsetDetector charsetDetector, Populator populator, Logger logger) {
 		this.charsetDetector = charsetDetector;
 		this.populator = populator;
+		this.logger = logger;
 	}
 
 	private static  class PackedRefParser {

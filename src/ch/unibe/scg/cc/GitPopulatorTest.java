@@ -34,7 +34,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testProjnameRegex() throws IOException {
-		try(GitPopulator gitWalker = new GitPopulator(null, null)) {
+		try(GitPopulator gitWalker = new GitPopulator(null, null, null)) {
 			String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
 					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 			String projName = gitWalker.extractProjectName(fullPathString);
