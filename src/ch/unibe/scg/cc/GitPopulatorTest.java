@@ -54,7 +54,7 @@ public final class GitPopulatorTest {
 		walkRepo(i, parseZippedGit(TESTREPO));
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Project>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<Project>>() {}));
 		assertThat(Iterables.size(projectPartitions), is(1));
 
 		Iterable<Cell<Project>> projects = Iterables.getOnlyElement(projectPartitions);
@@ -65,7 +65,7 @@ public final class GitPopulatorTest {
 		assertThat(p.getName(), is("testrepo.zip"));
 
 		Iterable<Iterable<Cell<Version>>> versionPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Version>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<Version>>() {}));
 		assertThat(Iterables.size(versionPartitions), is(1));
 
 		Iterable<Cell<Version>> versions = Iterables.getOnlyElement(versionPartitions);
@@ -75,7 +75,7 @@ public final class GitPopulatorTest {
 		assertThat(v.getProject(), is(p.getHash()));
 
 		Iterable<Iterable<Cell<CodeFile>>> filePartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<CodeFile>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<CodeFile>>() {}));
 		assertThat(Iterables.size(filePartitions), is(1));
 
 		Iterable<Cell<CodeFile>> files = Iterables.getOnlyElement(filePartitions);
@@ -87,7 +87,7 @@ public final class GitPopulatorTest {
 		assertThat(cf.getContents().indexOf("package ch.unibe.scg.cc.mappers;"), is(0));
 
 		Iterable<Iterable<Cell<Function>>> functionPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Function>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<Function>>() {}));
 		assertThat(Iterables.size(functionPartitions), is(1));
 
 		Iterable<Cell<Function>> functions = Iterables.getOnlyElement(functionPartitions);
@@ -99,7 +99,7 @@ public final class GitPopulatorTest {
 		assertThat(fn.getContents().indexOf("public void testProjname"), is(1));
 
 		Iterable<Iterable<Cell<Snippet>>> snippetPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
 		assertThat(Iterables.size(snippetPartitions), is(1)); // means we have only one function
 
 		Iterable<Cell<Snippet>> snippets = Iterables.getOnlyElement(snippetPartitions);
@@ -117,7 +117,7 @@ public final class GitPopulatorTest {
 		assertThat(s7.getFunction(), is(fn.getHash()));
 
 		Iterable<Iterable<Cell<Snippet>>> snippet2FuncsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)).partitions();
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
 		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
 
 		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
@@ -138,7 +138,7 @@ public final class GitPopulatorTest {
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
-		Iterable<Cell<Function>> funCells = Iterables.concat(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})).partitions());
+		Iterable<Cell<Function>> funCells = Iterables.concat(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})));
 		assertThat(Iterables.size(funCells), is(15));
 		Iterable<Function> funs = Codecs.decode(funCells, codec.function);
 
@@ -155,12 +155,12 @@ public final class GitPopulatorTest {
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {})).partitions();
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
 		// Num partitions is the number of functions. As per populator test, that's 9.
 		assertThat(Iterables.size(function2snippetsPartitions), is(9));
 
 		Iterable<Iterable<Cell<Snippet>>> snippet2FunctionsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)).partitions();
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
 		assertThat(Iterables.size(snippet2FunctionsPartitions), is(145));
 
 		// Numbers are taken from paper. See table II.

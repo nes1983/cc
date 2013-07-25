@@ -2,9 +2,11 @@ package ch.unibe.scg.cc;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Iterators;
 
 class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 	final private List<Cell<T>> store = new ArrayList<>();
@@ -20,9 +22,9 @@ class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 	}
 
 	@Override
-	public Iterable<Iterable<Cell<T>>> partitions() {
+	public Iterator<Iterable<Cell<T>>> iterator() {
 		if (store.isEmpty()) {
-			return Collections.emptyList();
+			return Iterators.emptyIterator();
 		}
 
 		ImmutableList.Builder<Iterable<Cell<T>>> ret = ImmutableList.builder();
@@ -46,6 +48,6 @@ class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 
 		ret.add(partition.build());
 
-		return ret.build();
+		return ret.build().iterator();
 	}
 }

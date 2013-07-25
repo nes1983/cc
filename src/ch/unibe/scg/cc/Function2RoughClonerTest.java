@@ -40,9 +40,9 @@ public final class Function2RoughClonerTest {
 		CellSource<Clone> f2rcSource = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Clone>>() {}, Function2RoughClones.class));
 		// See paper: Table III
-		assertThat(Iterables.size(f2rcSource.partitions()), is(2));
+		assertThat(Iterables.size(f2rcSource), is(2));
 
-		Iterable<Cell<Clone>> clonesFun1 = Iterables.get(f2rcSource.partitions(), 0);
+		Iterable<Cell<Clone>> clonesFun1 = Iterables.get(f2rcSource, 0);
 		assertThat(Iterables.size(clonesFun1), is(5));
 
 		// TODO continue paper example
