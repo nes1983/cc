@@ -1,8 +1,12 @@
 package ch.unibe.scg.cc;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -24,8 +28,6 @@ import ch.unibe.scg.cc.Populator.ProjectRegistrar;
 import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
-
-import com.google.common.io.Files;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {
@@ -99,10 +101,10 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException {
 		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
-		File tdir = null;
+		Path tdir = null;
 		try(ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(repo.getProjectName(), sink)) {
-			tdir = Files.createTempDir();
-			FileRepository r = new FileRepository(tdir);
+			tdir = Files.createTempDirectory(null);
+			FileRepository r = new FileRepository(tdir.toFile());
 			r.create(true);
 			PackParser pp = r.newObjectInserter().newPackParser(repo.getPackFile().newInput());
 			// ProgressMonitor set to null, so NullProgressMonitor will be used.
@@ -131,13 +133,40 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 			}
 		} finally {
 			if (tdir != null) {
-				boolean ok = tdir.delete();
-				if (!ok) {
-					logger.warning("Failed to delete " + tdir);
+				try {
+					removeRecursive(tdir);
+				} catch(IOException e) {
+					logger.warning("Failed to delete " + tdir + " because " + e);
 				}
 			}
 		}
 		logger.info("Finished processing: " + repo.getProjectName());
+	}
+
+	/** Taken from http://stackoverflow.com/questions/779519/delete-files-recursively-in-java/8685959#8685959 */
+	private static void removeRecursive(Path path) throws IOException {
+		Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
+			@Override public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+				Files.delete(file);
+				return FileVisitResult.CONTINUE;
+			}
+
+			@Override public FileVisitResult visitFileFailed(Path file, IOException e) throws IOException {
+				// try to delete the file anyway, even if its attributes
+				// could not be read, since delete-only access is
+				// theoretically possible
+				Files.delete(file);
+				return FileVisitResult.CONTINUE;
+			}
+
+			@Override public FileVisitResult postVisitDirectory(Path dir, IOException e) throws IOException {
+				if (e == null) {
+					Files.delete(dir);
+					return FileVisitResult.CONTINUE;
+				}
+				throw e;
+			}
+		});
 	}
 
 	/**
