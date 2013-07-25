@@ -14,29 +14,24 @@ import javax.inject.Provider;
  *  		.influx(codec1)
  *  		.mapper(m1)
  *  		.shuffle(codec2)
- *  		.mapper(m2)
- *  		.efflux(codec3)
- *  		.run()}
+ *  		.efflux(m2, codec3)
+ * }
  */
-public interface Pipeline {
+public interface Pipeline<IN, EFF> {
 	/** Return a new pipeline segment, ready for mapping. */
-	<I> MappablePipeline<I> influx(Codec<I> c);
+	MappablePipeline<IN, EFF> influx(Codec<IN> c);
 
 	/** A segment that is shuffled and ready for mapping.  */
-	public static interface MappablePipeline<I> {
+	public static interface MappablePipeline<I, EFF> {
 		/** Set the mapper of influx {@code I} and efflux {@code E} */
-		public <E> ShuffleablePipeline<E> mapper(Provider<Mapper<I, E>> m);
+		<E> ShuffleablePipeline<E, EFF> mapper(Provider<? extends Mapper<I, E>> m);
+		/** Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.*/
+		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec);
 	}
 
 	/** A segment that was just mapped and now needs shuffling or an efflux. */
-	public static interface ShuffleablePipeline<I> {
+	public interface ShuffleablePipeline<I, EFF> {
 		/** Shuffle the efflux. This will also execute the previous mapper. */
-		MappablePipeline<I> shuffle(Codec<I> codec);
-
-		/** Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.*/
-		RunnablePipeline efflux(Codec<I> codec);
+		MappablePipeline<I, EFF> shuffle(Codec<I> codec);
 	}
-
-	/** Run the pipeline after construction */
-	public static interface RunnablePipeline extends Runnable {}
 }

@@ -26,14 +26,15 @@ public final class Function2RoughClonerTest {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		GitPopulatorTest.walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
-		MapperRunner mr = i.getInstance(MapperRunner.class);
 		try (CellSink<Clone> f2rcSink =
 				i.getInstance(Key.get(new TypeLiteral<CellSink<Clone>>() {}, Function2RoughClones.class))) {
-			mr.run(i.getProvider(Function2RoughCloner.class),
+			new InMemoryPipeline<>(
 					i.getInstance(Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class)),
-					f2rcSink,
-					i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)),
-					i.getInstance(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)));
+					f2rcSink)
+				.influx(i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)))
+				.efflux(
+						i.getProvider(Function2RoughCloner.class),
+						i.getInstance(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)));
 		}
 
 		CellSource<Clone> f2rcSource = i.getInstance(
