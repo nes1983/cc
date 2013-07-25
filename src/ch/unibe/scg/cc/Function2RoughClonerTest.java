@@ -31,25 +31,21 @@ public final class Function2RoughClonerTest {
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
-		try (CellSink<Clone> f2rcSink =
-				i.getInstance(Key.get(new TypeLiteral<CellSink<Clone>>() {}, Function2RoughClones.class))) {
-			new InMemoryPipeline<>(src, f2rcSink)
+		try (InMemoryShuffler<Clone> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
+			new InMemoryPipeline<>(src, sink)
 				.influx(repoCodec)
 				.mapper(i.getProvider(GitPopulator.class))
 				.shuffle(i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)))
 				.efflux(
 						i.getProvider(Function2RoughCloner.class),
 						i.getInstance(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)));
+
+			// See paper: Table III
+			assertThat(Iterables.size(sink), is(2));
+
+			Iterable<Cell<Clone>> clonesFun1 = Iterables.get(sink, 0);
+			assertThat(Iterables.size(clonesFun1), is(5));
 		}
-
-		CellSource<Clone> f2rcSource = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Clone>>() {}, Function2RoughClones.class));
-		// See paper: Table III
-		assertThat(Iterables.size(f2rcSource), is(2));
-
-		Iterable<Cell<Clone>> clonesFun1 = Iterables.get(f2rcSource, 0);
-		assertThat(Iterables.size(clonesFun1), is(5));
-
 		// TODO continue paper example
 	}
 
