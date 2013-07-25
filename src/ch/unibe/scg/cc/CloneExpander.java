@@ -34,7 +34,6 @@ import com.google.common.collect.Lists;
  * match's {@link Clone#getThisSnippet()} as an input to
  * {@link #expandClones(Iterable)}.
  */
-// TODO(simon): make it so!
 public class CloneExpander {
 	private static final int MAX_GAP = 10;
 	// TODO: this should not be a constant here.
