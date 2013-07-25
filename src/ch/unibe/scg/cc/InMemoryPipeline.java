@@ -60,6 +60,7 @@ class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 	}
 
+	/** Run the mapper and close the sink. */
 	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
 			CellSink<E> sink, Codec<E> sinkCodec) {
 		try (Mapper<I, E> m = mapper.get()) {
@@ -68,6 +69,7 @@ class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				// In memory, since all iterables are backed by arrays, this is safe.
 				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}
+			sink.close();
 			// In memory, there's very little we should do. We certainly won't restart maps.
 		} catch (EncodingException e) {
 			throw new RuntimeException("Mapper " + mapper + " failed", e.getCause());
