@@ -12,6 +12,13 @@ import com.google.common.collect.Iterators;
 public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 	final private List<Cell<T>> store = new ArrayList<>();
 
+	InMemoryShuffler() {} // Don't subclass
+
+	/** Return an instance of a shuffler */
+	public static <T> InMemoryShuffler<T> getInstance() {
+		return new InMemoryShuffler<>();
+	}
+
 	@Override
 	public void close() {
 		Collections.sort(store);

@@ -14,7 +14,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 
-	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
+	private InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) { // Don't subclass.
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
 	}
