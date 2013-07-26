@@ -257,6 +257,7 @@ public class Populator implements Closeable {
 					.setLength(MINIMUM_LINES)
 					.setPosition(frameStart)
 					.setHash(ByteString.copyFrom(hash))
+					.setCloneType(type)
 					.build();
 			snippetSink.write(codec.snippet.encode(snip));
 			snippet2Functions.write(snip);

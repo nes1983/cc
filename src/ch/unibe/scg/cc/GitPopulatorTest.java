@@ -106,7 +106,7 @@ public final class GitPopulatorTest {
 		assertThat(Iterables.size(snippetPartitions), is(1)); // means we have only one function
 
 		Iterable<Cell<Snippet>> snippets = Iterables.getOnlyElement(snippetPartitions);
-		assertThat(Iterables.size(snippets), is(8));
+		assertThat(Iterables.size(snippets), is(24));
 		Snippet s0 = codec.snippet.decode(Iterables.get(snippets, 0));
 		Snippet s1 = codec.snippet.decode(Iterables.get(snippets, 1));
 		Snippet s7 = codec.snippet.decode(Iterables.get(snippets, 7));
