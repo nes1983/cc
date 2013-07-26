@@ -173,11 +173,6 @@ public final class GitPopulatorTest {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
-		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
-		// Num partitions is the number of functions. As per populator test, that's 9.
-		assertThat(Iterables.size(function2snippetsPartitions), is(9));
-
 		Iterable<Iterable<Cell<Snippet>>> snippet2FunctionsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
 		assertThat(Iterables.size(snippet2FunctionsPartitions), is(145));
@@ -199,7 +194,18 @@ public final class GitPopulatorTest {
 		assertThat(Math.abs(Iterables.get(s2fs, 0).getPosition() - Iterables.get(s2fs, 1).getPosition()), is(3));
 	}
 
-	static void walkRepo(Injector i, GitRepo repo) throws IOException {
+	@Test
+	public void testPaperExampleFunction2Snippets() throws IOException {
+		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
+		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
+
+		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
+		// Num partitions is the number of functions. As per populator test, that's 9.
+		assertThat(Iterables.size(function2snippetsPartitions), is(9));
+	}
+
+	private static void walkRepo(Injector i, GitRepo repo) throws IOException {
 		try(CellSink<Snippet> snippetCellSink = i.getInstance(
 				Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
 				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
