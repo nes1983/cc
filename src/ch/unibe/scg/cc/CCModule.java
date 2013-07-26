@@ -3,6 +3,7 @@ package ch.unibe.scg.cc;
 import java.security.MessageDigest;
 
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
+import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Annotations.Type2;
@@ -28,6 +29,8 @@ public class CCModule extends AbstractModule {
 		bind(new TypeLiteral<Codec<Snippet>>() {}).annotatedWith(Snippet2Functions.class)
 				.to(Snippet2FunctionsCodec.class);
 		bind(new TypeLiteral<Codec<GitRepo>>() {}).to(GitRepoCodec.class);
+
+		bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(500);
 
 		install(new Type2Module());
 	}

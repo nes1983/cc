@@ -1,32 +1,44 @@
 package ch.unibe.scg.cc;
 
+import static com.google.common.io.BaseEncoding.base16;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
+import ch.unibe.scg.cc.Annotations.PopularSnippets;
+import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.common.collect.Iterables;
+import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
+import com.google.inject.util.Modules;
 
 @SuppressWarnings("javadoc")
 public final class Function2RoughClonerTest {
 	@Test
 	public void testMap() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
+		Injector i = Guice.createInjector(
+				Modules.override(new CCModule(), new JavaModule(), new InMemoryModule()).with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(Key.get(new TypeLiteral<Codec<GitRepo>>() {}));
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
@@ -43,8 +55,33 @@ public final class Function2RoughClonerTest {
 			// See paper: Table III
 			assertThat(Iterables.size(sink), is(2));
 
-			Iterable<Cell<Clone>> clonesFun1 = Iterables.get(sink, 0);
-			assertThat(Iterables.size(clonesFun1), is(5));
+			CellSource<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Snippet>>() {}, PopularSnippets.class));
+
+			List<Iterable<Snippet>> decodedRows = new ArrayList<>();
+			for (Iterable<Cell<Snippet>> popularPartition : popularPartitions) {
+			 	decodedRows.add(Codecs.decode(popularPartition, i.getInstance(
+			 			Key.get((new TypeLiteral<Codec<Snippet>>() {}), PopularSnippets.class))));
+			}
+
+			Iterable<Snippet> d618 = null;
+			for (Iterable<Snippet> row : decodedRows) {
+				if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("D618")) {
+					d618 = row;
+					break;
+				}
+			}
+			assertNotNull(d618);
+			assert d618 != null; // Null analysis insists.
+
+			Set<String> snippetHashes = new HashSet<>();
+			for (Snippet s : d618) {
+				if (s.getCloneType().equals(CloneType.GAPPED)) {
+					snippetHashes.add(base16().encode(s.getHash().toByteArray()));
+				}
+			}
+
+			assertThat(snippetHashes.toString(),
+					new HashSet<>(GitPopulatorTest.d618SnippetHashes()).containsAll(snippetHashes), is(true));
 		}
 		// TODO continue paper example
 	}
@@ -60,6 +97,13 @@ public final class Function2RoughClonerTest {
 		@Override
 		public Iterator<Iterable<Cell<T>>> iterator() {
 			return collection.iterator();
+		}
+	}
+
+	private static class TestModule extends AbstractModule {
+		@Override
+		protected void configure() {
+			bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(3);
 		}
 	}
 }

@@ -55,4 +55,10 @@ public class Annotations {
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	static @interface Function2RoughClones {}
+
+	/** Constant */
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface PopularSnippetsThreshold {}
 }
