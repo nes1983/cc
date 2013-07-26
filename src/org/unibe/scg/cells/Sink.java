@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 /** The output of a mapper is written into a sink */
 // TODO: Should this be closeable?

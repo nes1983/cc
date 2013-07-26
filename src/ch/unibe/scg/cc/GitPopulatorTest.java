@@ -23,6 +23,7 @@ import org.unibe.scg.cells.CellSink;
 import org.unibe.scg.cells.CellSource;
 import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Codecs;
+import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CloneType;

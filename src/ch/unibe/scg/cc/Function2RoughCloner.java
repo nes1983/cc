@@ -9,6 +9,7 @@ import javax.inject.Inject;
 import org.unibe.scg.cells.CellSink;
 import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Mapper;
+import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;

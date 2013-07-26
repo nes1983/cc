@@ -24,6 +24,7 @@ import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
 import org.unibe.scg.cells.Mapper;
+import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Populator.ProjectRegistrar;
 import ch.unibe.scg.cc.Populator.VersionRegistrar;

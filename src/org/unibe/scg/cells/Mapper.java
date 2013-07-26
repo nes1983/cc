@@ -3,7 +3,6 @@ package org.unibe.scg.cells;
 import java.io.Closeable;
 import java.io.IOException;
 
-import ch.unibe.scg.cc.Sink;
 
 /**
  * Mapper is a stage of the pipeline. In standard Map/reduce terminology, this

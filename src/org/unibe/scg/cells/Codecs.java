@@ -2,7 +2,6 @@ package org.unibe.scg.cells;
 
 import java.io.IOException;
 
-import ch.unibe.scg.cc.Sink;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
