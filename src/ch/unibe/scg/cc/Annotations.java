@@ -14,54 +14,44 @@ public class Annotations {
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	public static @interface Java {
-	}
+	public static @interface Java {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	public static @interface Type1 {
-	}
+	public static @interface Type1 {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	public static @interface CloneLoader {
-	}
+	public static @interface CloneLoader {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	public @interface Type2 {
-	}
+	public @interface Type2 {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	public @interface Type3 {
-	}
+	public @interface Type3 {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface Snippet2Functions {
-	}
+	static @interface Snippet2Functions {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface Populator {
-	}
+	static @interface Populator {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface PopularSnippets {
-	}
+	static @interface PopularSnippets {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface Function2RoughClones {
-	}
 }
