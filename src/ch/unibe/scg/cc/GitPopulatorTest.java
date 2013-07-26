@@ -5,8 +5,10 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -24,6 +26,7 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.common.collect.Iterables;
+import com.google.common.io.BaseEncoding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
@@ -133,20 +136,36 @@ public final class GitPopulatorTest {
 	}
 
 	@Test
-	public void testPaperExampleFunction2Snippets() throws IOException {
+	public void testPaperExampleFile2Function() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
-		Iterable<Cell<Function>> funCells = Iterables.concat(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})));
-		assertThat(Iterables.size(funCells), is(15));
-		Iterable<Function> funs = Codecs.decode(funCells, codec.function);
+		List<Iterable<Function>> decodedPartitions = new ArrayList<>();
+		for (Iterable<Cell<Function>> partition : i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {}))) {
+			decodedPartitions.add(Codecs.decode(partition, codec.function));
+		}
+
+		Iterable<Function> funs = Iterables.concat(decodedPartitions);
+		assertThat(Iterables.size(funs), is(15));
 
 		Set<ByteString> funHashes = new HashSet<>();
 		for (Function fun : funs) {
 			funHashes.add(fun.getHash());
 		}
 		assertThat(funHashes.size(), is(9));
+
+		Set<String> fileHashes = new HashSet<>();
+		for (Iterable<Function> partition : decodedPartitions) {
+			String cur = BaseEncoding.base16().encode(Iterables.get(partition, 0).getCodeFile().toByteArray());
+			Assert.assertFalse(cur + fileHashes, fileHashes.contains(cur));
+			fileHashes.add(cur);
+			// Check that every partition shares the same file.
+			for (Function f : partition) {
+				assertThat(BaseEncoding.base16().encode(f.getCodeFile().toByteArray()), is(cur));
+			}
+		}
+		assertThat(fileHashes.size(), is(3));
 	}
 
 	@Test
