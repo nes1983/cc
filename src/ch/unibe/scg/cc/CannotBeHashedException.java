@@ -1,6 +1,6 @@
 package ch.unibe.scg.cc;
 
 /** Hashers can refuse to hash a snippet. In that case, the snippet should not be used. */
-class CannotBeHashedException extends Exception {
+public class CannotBeHashedException extends Exception {
 	private static final long serialVersionUID = 1L;
 }
