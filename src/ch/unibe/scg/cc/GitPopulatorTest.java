@@ -228,8 +228,8 @@ public final class GitPopulatorTest {
 				break;
 			}
 		}
-		assertNotNull(d618);
 		assert d618 != null; // Null analysis insists ...
+		assertNotNull(d618);
 
 		List<String> snippetHashes = new ArrayList<>();
 		for (Snippet s : d618) {

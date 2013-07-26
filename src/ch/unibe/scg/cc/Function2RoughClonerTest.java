@@ -76,8 +76,8 @@ public final class Function2RoughClonerTest {
 					break;
 				}
 			}
-			assertNotNull(d618);
 			assert d618 != null; // Null analysis insists.
+			assertNotNull(d618);
 
 			Set<String> snippetHashes = new HashSet<>();
 			for (Snippet s : d618) {
