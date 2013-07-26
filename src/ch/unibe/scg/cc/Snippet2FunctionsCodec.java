@@ -13,6 +13,6 @@ class Snippet2FunctionsCodec implements Codec<Snippet> {
 
 	@Override
 	public Snippet decode(Cell<Snippet> encoded) throws InvalidProtocolBufferException {
-		return Snippet.parseFrom(encoded.cellContents);
+		return Snippet.parseFrom(encoded.getCellContents());
 	}
 }

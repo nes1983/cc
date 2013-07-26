@@ -28,7 +28,7 @@ class PopulatorCodec {
 
 		@Override
 		public CodeFile decode(Cell<CodeFile> encoded) throws InvalidProtocolBufferException {
-			return CodeFile.parseFrom(encoded.cellContents);
+			return CodeFile.parseFrom(encoded.getCellContents());
 		}
 	}
 
@@ -43,7 +43,7 @@ class PopulatorCodec {
 
 		@Override
 		public Snippet decode(Cell<Snippet> encoded) throws InvalidProtocolBufferException {
-			return Snippet.parseFrom(encoded.cellContents);
+			return Snippet.parseFrom(encoded.getCellContents());
 		}
 
 	}
@@ -56,7 +56,7 @@ class PopulatorCodec {
 
 		@Override
 		public Version decode(Cell<Version> encoded) throws InvalidProtocolBufferException {
-			return Version.parseFrom(encoded.cellContents);
+			return Version.parseFrom(encoded.getCellContents());
 		}
 	}
 
@@ -70,7 +70,7 @@ class PopulatorCodec {
 
 		@Override
 		public Function decode(Cell<Function> encoded) throws InvalidProtocolBufferException {
-			return Function.parseFrom(encoded.cellContents);
+			return Function.parseFrom(encoded.getCellContents());
 		}
 	}
 
@@ -82,7 +82,7 @@ class PopulatorCodec {
 
 		@Override
 		public Project decode(Cell<Project> encoded) throws InvalidProtocolBufferException {
-			return Project.parseFrom(encoded.cellContents);
+			return Project.parseFrom(encoded.getCellContents());
 		}
 	}
 }

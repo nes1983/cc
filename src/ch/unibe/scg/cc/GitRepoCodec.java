@@ -14,6 +14,6 @@ class GitRepoCodec implements Codec<GitRepo> {
 
 	@Override
 	public GitRepo decode(Cell<GitRepo> encoded) throws IOException {
-		return GitRepo.parseFrom(encoded.cellContents);
+		return GitRepo.parseFrom(encoded.getCellContents());
 	}
 }

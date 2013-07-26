@@ -19,6 +19,6 @@ class Function2RoughClonesCodec implements Codec<Clone> {
 
 	@Override
 	public Clone decode(Cell<Clone> encoded) throws IOException {
-		return Clone.parseFrom(encoded.cellContents);
+		return Clone.parseFrom(encoded.getCellContents());
 	}
 }

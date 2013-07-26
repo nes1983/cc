@@ -128,9 +128,9 @@ public final class GitPopulatorTest {
 
 		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
 		assertThat(Iterables.size(snippets2Funcs), is(1));
-		assertThat(Iterables.get(snippets2Funcs, 0).columnKey, is(fn.getHash()));
+		assertThat(Iterables.get(snippets2Funcs, 0).getColumnKey(), is(fn.getHash()));
 
-		ByteString snippetHash = Iterables.get(snippets2Funcs, 0).rowKey;
+		ByteString snippetHash = Iterables.get(snippets2Funcs, 0).getRowKey();
 		boolean found = false;
 		for (Cell<Snippet> cs : snippets) {
 			found |= codec.snippet.decode(cs).getHash().equals(snippetHash);
@@ -184,7 +184,7 @@ public final class GitPopulatorTest {
 		ByteString row03D8 = ByteString.copyFrom(new byte[] {0x03, (byte) 0xd8});
 		Iterable<Cell<Snippet>> partition03D8 = null;
 		for(Iterable<Cell<Snippet>> s2fPartition : snippet2FunctionsPartitions) {
-			if(Iterables.get(s2fPartition, 0).rowKey.startsWith(row03D8)) {
+			if(Iterables.get(s2fPartition, 0).getRowKey().startsWith(row03D8)) {
 				partition03D8 = s2fPartition;
 				break;
 			}

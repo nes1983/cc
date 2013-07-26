@@ -11,9 +11,9 @@ import com.google.protobuf.ByteString;
 
 /** Cell of an HTable. */
 public final class Cell<T> implements Comparable<Cell<T>>{
-	final ByteString rowKey;
-	final ByteString columnKey;
-	final ByteString cellContents;
+	final private ByteString rowKey;
+	final private ByteString columnKey;
+	final private ByteString cellContents;
 
 	Cell(ByteString rowKey, ByteString columnKey, ByteString cellContents) {
 		this.rowKey = checkNotNull(rowKey);
@@ -56,5 +56,20 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 	@Override
 	public String toString() {
 		return "[" + Arrays.toString(rowKey.toByteArray()) + "]{" + Arrays.toString(columnKey.toByteArray()) + "}";
+	}
+
+	/** Forms the key of the cell together with column key. */
+	public ByteString getRowKey() {
+		return rowKey;
+	}
+
+	/** Forms the key of the cell together with row key. */
+	public ByteString getColumnKey() {
+		return columnKey;
+	}
+
+	/** Payload of the cell */
+	public ByteString getCellContents() {
+		return cellContents;
 	}
 }

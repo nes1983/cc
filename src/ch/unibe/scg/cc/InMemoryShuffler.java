@@ -33,7 +33,7 @@ class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 		Cell<T> last = null;
 
 		for (Cell<T> c : store) {
-			if ((last != null) && (!c.rowKey.equals(last.rowKey))) {
+			if ((last != null) && (!c.getRowKey().equals(last.getRowKey()))) {
 				ret.add(partition.build());
 				partition = ImmutableList.builder();
 				last = null;
