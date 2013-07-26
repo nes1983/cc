@@ -6,6 +6,10 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.unibe.scg.cells.CellSink;
+import org.unibe.scg.cells.Codec;
+import org.unibe.scg.cells.Mapper;
+
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Protos.Clone;

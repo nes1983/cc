@@ -14,6 +14,12 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
+import org.unibe.scg.cells.Cell;
+import org.unibe.scg.cells.CellSource;
+import org.unibe.scg.cells.Codec;
+import org.unibe.scg.cells.Codecs;
+import org.unibe.scg.cells.InMemoryPipeline;
+import org.unibe.scg.cells.InMemoryShuffler;
 
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
@@ -44,7 +50,7 @@ public final class Function2RoughClonerTest {
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
 		try (InMemoryShuffler<Clone> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
-			new InMemoryPipeline<>(src, sink)
+			InMemoryPipeline.make(src, sink)
 				.influx(repoCodec)
 				.mapper(i.getProvider(GitPopulator.class))
 				.shuffle(i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)))

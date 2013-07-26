@@ -1,6 +1,7 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import javax.inject.Provider;
+
 
 /**
  * Pipeline is the API that should be used to specify the control flow of a map reduce job.

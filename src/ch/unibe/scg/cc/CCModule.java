@@ -2,6 +2,8 @@ package ch.unibe.scg.cc;
 
 import java.security.MessageDigest;
 
+import org.unibe.scg.cells.Codec;
+
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;

@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -19,6 +19,11 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 		this.rowKey = checkNotNull(rowKey);
 		this.columnKey = checkNotNull(columnKey);
 		this.cellContents = checkNotNull(cellContents);
+	}
+
+	/** None of the parameters may be null */
+	public static <T> Cell<T> make(ByteString row, ByteString column, ByteString cell) {
+		return new Cell<>(row, column, cell);
 	}
 
 	@Override

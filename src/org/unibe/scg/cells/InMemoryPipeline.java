@@ -1,4 +1,6 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
+
+import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
 
@@ -7,13 +9,21 @@ import javax.inject.Provider;
 import com.google.common.collect.Iterables;
 
 // TODO: Run multithreaded
-class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
+/** Implementation of a {@link Pipeline} meant to run in memory. */
+public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 
 	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
+	}
+
+	/** Create a pipeline. No parameters are allowed to be null. */
+	public static <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
+		checkNotNull(pipeSrc);
+		checkNotNull(pipeSink);
+		return new InMemoryPipeline<>(pipeSrc, pipeSink);
 	}
 
 	@Override
@@ -71,8 +81,6 @@ class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			}
 			sink.close();
 			// In memory, there's very little we should do. We certainly won't restart maps.
-		} catch (EncodingException e) {
-			throw new RuntimeException("Mapper " + mapper + " failed", e.getCause());
 		} catch (IOException e) {
 			throw new RuntimeException("Mapper " + mapper + " failed", e);
 		}

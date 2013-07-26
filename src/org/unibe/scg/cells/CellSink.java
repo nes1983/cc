@@ -1,6 +1,8 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import java.io.Closeable;
+
+import ch.unibe.scg.cc.Sink;
 
 /** All mappers write their outputs into {@link Sink}s, are ultimately owned by a CellSink */
 public interface CellSink<T> extends Closeable {

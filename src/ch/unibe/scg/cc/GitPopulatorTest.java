@@ -18,6 +18,11 @@ import java.util.zip.ZipInputStream;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.unibe.scg.cells.Cell;
+import org.unibe.scg.cells.CellSink;
+import org.unibe.scg.cells.CellSource;
+import org.unibe.scg.cells.Codec;
+import org.unibe.scg.cells.Codecs;
 
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CloneType;

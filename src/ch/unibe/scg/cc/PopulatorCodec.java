@@ -1,6 +1,8 @@
 package ch.unibe.scg.cc;
 
 import org.apache.hadoop.hbase.util.Bytes;
+import org.unibe.scg.cells.Cell;
+import org.unibe.scg.cells.Codec;
 
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
@@ -23,7 +25,7 @@ class PopulatorCodec {
 	private static class CodeFileCodec implements Codec<CodeFile> {
 		@Override
 		public Cell<CodeFile> encode(CodeFile fil) {
-			return new Cell<>(fil.getVersion(), fil.getPathBytes(), fil.toByteString());
+			return Cell.make(fil.getVersion(), fil.getPathBytes(), fil.toByteString());
 		}
 
 		@Override
@@ -38,7 +40,7 @@ class PopulatorCodec {
 			byte[] colKey = Bytes.add(Bytes.toBytes((byte) snip.getCloneType().getNumber()),
 					Bytes.toBytes(snip.getPosition()));
 
-			return new Cell<>(snip.getFunction(), ByteString.copyFrom(colKey), snip.toByteString());
+			return Cell.make(snip.getFunction(), ByteString.copyFrom(colKey), snip.toByteString());
 		}
 
 		@Override
@@ -51,7 +53,7 @@ class PopulatorCodec {
 	private static class VersionCodec implements Codec<Version> {
 		@Override
 		public Cell<Version> encode(Version v) {
-			return new Cell<>(v.getProject(), v.getNameBytes(), v.toByteString());
+			return Cell.make(v.getProject(), v.getNameBytes(), v.toByteString());
 		}
 
 		@Override
@@ -65,7 +67,7 @@ class PopulatorCodec {
 		public Cell<Function> encode(Function fun) {
 			ByteString colKey = ByteString.copyFrom(Bytes.toBytes(fun.getBaseLine()));
 
-			return new Cell<>(fun.getCodeFile(), colKey, fun.toByteString());
+			return Cell.make(fun.getCodeFile(), colKey, fun.toByteString());
 		}
 
 		@Override
@@ -77,7 +79,7 @@ class PopulatorCodec {
 	private static class ProjectCodec implements Codec<Project> {
 		@Override
 		public Cell<Project> encode(Project project) {
-			return new Cell<>(project.getHash(), ByteString.EMPTY, project.toByteString());
+			return Cell.make(project.getHash(), ByteString.EMPTY, project.toByteString());
 		}
 
 		@Override

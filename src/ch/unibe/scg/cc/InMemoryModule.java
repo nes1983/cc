@@ -2,6 +2,11 @@ package ch.unibe.scg.cc;
 
 import javax.inject.Singleton;
 
+import org.unibe.scg.cells.CellSink;
+import org.unibe.scg.cells.CellSource;
+import org.unibe.scg.cells.Codec;
+import org.unibe.scg.cells.InMemoryShuffler;
+
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Populator;

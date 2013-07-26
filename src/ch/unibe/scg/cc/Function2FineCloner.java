@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
 
+import org.unibe.scg.cells.Mapper;
+
 import ch.unibe.scg.cc.Annotations.CloneLoader;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;

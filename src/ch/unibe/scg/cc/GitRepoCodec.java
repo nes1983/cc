@@ -2,6 +2,9 @@ package ch.unibe.scg.cc;
 
 import java.io.IOException;
 
+import org.unibe.scg.cells.Cell;
+import org.unibe.scg.cells.Codec;
+
 import ch.unibe.scg.cc.Protos.GitRepo;
 
 import com.google.protobuf.ByteString;
@@ -9,7 +12,7 @@ import com.google.protobuf.ByteString;
 class GitRepoCodec implements Codec<GitRepo> {
 	@Override
 	public Cell<GitRepo> encode(GitRepo s) {
-		return new Cell<>(ByteString.copyFromUtf8(s.getProjectName()), ByteString.EMPTY, s.toByteString());
+		return Cell.make(ByteString.copyFromUtf8(s.getProjectName()), ByteString.EMPTY, s.toByteString());
 	}
 
 	@Override

@@ -1,7 +1,9 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import java.io.Closeable;
 import java.io.IOException;
+
+import ch.unibe.scg.cc.Sink;
 
 /**
  * Mapper is a stage of the pipeline. In standard Map/reduce terminology, this
@@ -10,7 +12,7 @@ import java.io.IOException;
  * <p>
  * Instances are NOT guaranteed to be thread-safe. It is permissible to write to
  * CellSinks that are instance variables. However, the main output is expected
- * to be written to the sink parameter of {@link #map()}.
+ * to be written to the sink parameter of {@link #map(Object, Iterable, Sink)}.
  *
  * @author Niko Schwarz
  *
@@ -19,7 +21,7 @@ import java.io.IOException;
  * @param <OUT>
  *            Type of the output cells.
  */
-interface Mapper<IN, OUT> extends Closeable {
+public interface Mapper<IN, OUT> extends Closeable {
 	/**
 	 * Map one input row, and write the main output to {@code sink}. <strong>The
 	 * row is iterable only once.</strong>

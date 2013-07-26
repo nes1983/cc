@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import java.io.IOException;
 

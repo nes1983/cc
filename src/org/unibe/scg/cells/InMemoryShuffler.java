@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,8 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterators;
 
-class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
+/** For running in memory, acts as both as sink and source */
+public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T> {
 	final private List<Cell<T>> store = new ArrayList<>();
 
 	@Override

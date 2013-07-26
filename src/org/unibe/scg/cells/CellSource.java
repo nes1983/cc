@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package org.unibe.scg.cells;
 
 /** iterator() returns all partitions. Neither iterable is guaranteed to be able to return more than one iterator. */
-interface CellSource<T> extends Iterable<Iterable<Cell<T>>> {}
+public interface CellSource<T> extends Iterable<Iterable<Cell<T>>> {}
