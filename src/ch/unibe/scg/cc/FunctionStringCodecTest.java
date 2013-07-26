@@ -7,7 +7,6 @@ import java.io.IOException;
 import org.junit.Test;
 import org.unibe.scg.cells.Codec;
 
-import ch.unibe.scg.cc.Annotations.FunctionString;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
@@ -15,12 +14,13 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
+import com.google.protobuf.ByteString;
 
 public class FunctionStringCodecTest {
 	@Test
 	public void testFunctionStringCodec() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		Codec<Function> fsCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Function>>() {}, FunctionString.class));
+		Codec<Str<Function>> fsCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Str<Function>>>() {}));
 		String input = "" +
 				"public final class GitTablePopulatorTest {\n"
 				+ "	@Test\n"
@@ -38,7 +38,7 @@ public class FunctionStringCodecTest {
 				+ "		Assert.assertEquals(\"sensei\", projName);\n"
 				+ "	}\n"
 				+ "};";
-		Function f = Function.newBuilder().setContents(input).build();
-		assertEquals(fsCodec.decode(fsCodec.encode(f)).getContents(), input);
+		Str<Function> f = new Str<>(ByteString.copyFromUtf8("bb"), input);
+		assertEquals(fsCodec.decode(fsCodec.encode(f)).contents, input);
 	}
 }

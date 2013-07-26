@@ -8,19 +8,17 @@ import ch.unibe.scg.cc.Protos.Function;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
-class FunctionStringCodec implements Codec<Function> {	
+class FunctionStringCodec implements Codec<Str<Function>> {
 	@Override
-	public Cell<Function> encode(Function function) {
+	public Cell<Str<Function>> encode(Str<Function> s) {
 		return Cell.make(
-				function.getHash(), 
-				ByteString.EMPTY, 
-				ByteString.copyFromUtf8(function.getContents()));
+				s.hash,
+				ByteString.EMPTY,
+				ByteString.copyFromUtf8(s.contents));
 	}
 
 	@Override
-	public Function decode(Cell<Function> encoded) throws InvalidProtocolBufferException {
-		return Function.newBuilder()
-				.setContents(encoded.getCellContents().toStringUtf8())
-				.build();
+	public Str<Function> decode(Cell<Str<Function>> encoded) throws InvalidProtocolBufferException {
+		return new Str<>(encoded.getRowKey(), encoded.getCellContents().toStringUtf8());
 	}
 }

@@ -25,7 +25,6 @@ import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Codecs;
 import org.unibe.scg.cells.Sink;
 
-import ch.unibe.scg.cc.Annotations.FunctionString;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
@@ -129,16 +128,15 @@ public final class GitPopulatorTest {
 		assertThat(s7.getPosition(), is(7));
 		assertThat(s7.getFunction(), is(fn.getHash()));
 
-		// FunctionString START 
-		Iterable<Iterable<Cell<Function>>> functionStringPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Function>>() {}, FunctionString.class));		
-		Iterable<Cell<Function>> functionStringRow = Iterables.getOnlyElement(functionStringPartitions);
-		Codec<Function> functionStringCodec = i.getInstance(
-				Key.get(new TypeLiteral<Codec<Function>>() {}, FunctionString.class));
-		Function functionString = functionStringCodec.decode(Iterables.getOnlyElement(functionStringRow));
-		assertThat(functionString.getContents().indexOf("public void testProjnameRegex"), is(1));
-		// FunctionString END 
-		
+		// Check FunctionString
+		Iterable<Iterable<Cell<Str<Function>>>> functionStringPartitions = i.getInstance(
+				Key.get(new TypeLiteral<CellSource<Str<Function>>>() {}));
+		Iterable<Cell<Str<Function>>> functionStringRow = Iterables.getOnlyElement(functionStringPartitions);
+		Codec<Str<Function>> functionStringCodec = i.getInstance(
+				Key.get(new TypeLiteral<Codec<Str<Function>>>() {}));
+		Str<Function> functionString = functionStringCodec.decode(Iterables.getOnlyElement(functionStringRow));
+		assertThat(functionString.contents.indexOf("public void testProjnameRegex"), is(1));
+
 		Iterable<Iterable<Cell<Snippet>>> snippet2FuncsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
 		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions

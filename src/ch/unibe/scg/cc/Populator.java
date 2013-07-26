@@ -13,7 +13,6 @@ import org.unibe.scg.cells.CellSink;
 import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Sink;
 
-import ch.unibe.scg.cc.Annotations.FunctionString;
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -51,8 +50,8 @@ public class Populator implements Closeable {
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
-	final private CellSink<Function> functionStringSink;
-	final private Codec<Function> functionStringCodec;
+	final private CellSink<Str<Function>> functionStringSink;
+	final private Codec<Str<Function>> functionStringCodec;
 	/** Function2Snippet */
 	final private CellSink<Snippet> snippetSink;
 
@@ -69,8 +68,8 @@ public class Populator implements Closeable {
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
 			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
-			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink, 
-			@FunctionString CellSink<Function> functionStringSink, @FunctionString Codec<Function> functionStringCodec) {
+			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
+			CellSink<Str<Function>> functionStringSink, Codec<Str<Function>> functionStringCodec) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -203,9 +202,9 @@ public class Populator implements Closeable {
 				if (Utils.countLines(normalized) < MINIMUM_LINES) {
 					continue;
 				}
-				
-				// store function content
-				functionStringSink.write(functionStringCodec.encode(fun));
+
+				functionStringSink
+						.write(functionStringCodec.encode(new Str<Function>(fun.getHash(), fun.getContents())));
 
 				functionSink.write(codec.function.encode(fun));
 
