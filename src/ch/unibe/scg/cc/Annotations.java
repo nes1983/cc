@@ -61,4 +61,9 @@ public class Annotations {
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	static @interface PopularSnippetsThreshold {}
+
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface FunctionString {}
 }

@@ -8,6 +8,7 @@ import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.InMemoryShuffler;
 
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
+import ch.unibe.scg.cc.Annotations.FunctionString;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Populator;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
@@ -37,6 +38,7 @@ class InMemoryModule extends AbstractModule {
 		bind(Key.get(codeFileShuffler, Populator.class)).to(codeFileShuffler).in(Singleton.class);
 		bind(Key.get(functionShuffler, Populator.class)).to(functionShuffler).in(Singleton.class);
 		bind(Key.get(snippetShuffler, Populator.class)).to(snippetShuffler).in(Singleton.class);
+		bind(Key.get(functionShuffler, FunctionString.class)).to(functionShuffler).in(Singleton.class);
 		bind(Key.get(snippetShuffler, Snippet2Functions.class)).to(snippetShuffler).in(Singleton.class);
 		bind(Key.get(snippetShuffler, PopularSnippets.class)).to(snippetShuffler).in(Singleton.class);
 
@@ -50,6 +52,10 @@ class InMemoryModule extends AbstractModule {
 		bind(new TypeLiteral<CellSource<Function>>() {}).to(Key.get(functionShuffler, Populator.class));
 		bind(new TypeLiteral<CellSink<Snippet>>() {}).to(Key.get(snippetShuffler, Populator.class));
 		bind(new TypeLiteral<CellSource<Snippet>>() {}).to(Key.get(snippetShuffler, Populator.class));
+		bind(new TypeLiteral<CellSink<Function>>() {}).annotatedWith(FunctionString.class)
+			.to(Key.get(functionShuffler, FunctionString.class));
+		bind(new TypeLiteral<CellSource<Function>>() {}).annotatedWith(FunctionString.class)
+			.to(Key.get(functionShuffler, FunctionString.class));
 
 		bind(new TypeLiteral<CellSink<Snippet>>() {}).annotatedWith(Snippet2Functions.class)
 			.to(Key.get(snippetShuffler, Snippet2Functions.class));
@@ -62,5 +68,6 @@ class InMemoryModule extends AbstractModule {
 
 		bind(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)).to(Snippet2FunctionsCodec.class);
 		bind(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)).to(Function2RoughClonesCodec.class);
+		bind(Key.get(new TypeLiteral<Codec<Function>>() {}, FunctionString.class)).to(FunctionStringCodec.class);
 	}
 }

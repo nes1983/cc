@@ -10,8 +10,10 @@ import java.util.Set;
 import javax.inject.Inject;
 
 import org.unibe.scg.cells.CellSink;
+import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Sink;
 
+import ch.unibe.scg.cc.Annotations.FunctionString;
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -49,6 +51,8 @@ public class Populator implements Closeable {
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
+	final private CellSink<Function> functionStringSink;
+	final private Codec<Function> functionStringCodec;
 	/** Function2Snippet */
 	final private CellSink<Snippet> snippetSink;
 
@@ -65,7 +69,8 @@ public class Populator implements Closeable {
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
 			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
-			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink) {
+			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink, 
+			@FunctionString CellSink<Function> functionStringSink, @FunctionString Codec<Function> functionStringCodec) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
@@ -78,6 +83,8 @@ public class Populator implements Closeable {
 		this.codeFileSink = codeFileSink;
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
+		this.functionStringSink = functionStringSink;
+		this.functionStringCodec = functionStringCodec;
 	}
 
 	/** Register all Versions of a Project */
@@ -196,6 +203,9 @@ public class Populator implements Closeable {
 				if (Utils.countLines(normalized) < MINIMUM_LINES) {
 					continue;
 				}
+				
+				// store function content
+				functionStringSink.write(functionStringCodec.encode(fun));
 
 				functionSink.write(codec.function.encode(fun));
 
