@@ -233,7 +233,7 @@ public final class GitPopulatorTest {
 
 		List<String> snippetHashes = new ArrayList<>();
 		for (Snippet s : d618) {
-			if (s.getCloneType().equals(CloneType.GAPPED)) {
+			if (s.getCloneType() == CloneType.GAPPED) {
 				snippetHashes.add(base16().encode(s.getHash().toByteArray()));
 			}
 		}
