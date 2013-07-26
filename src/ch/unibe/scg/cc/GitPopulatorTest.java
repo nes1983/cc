@@ -1,12 +1,15 @@
 package ch.unibe.scg.cc;
 
+import static com.google.common.io.BaseEncoding.base16;
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -17,6 +20,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
+import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.GitRepo;
@@ -26,7 +30,6 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.common.collect.Iterables;
-import com.google.common.io.BaseEncoding;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
@@ -157,12 +160,12 @@ public final class GitPopulatorTest {
 
 		Set<String> fileHashes = new HashSet<>();
 		for (Iterable<Function> partition : decodedPartitions) {
-			String cur = BaseEncoding.base16().encode(Iterables.get(partition, 0).getCodeFile().toByteArray());
+			String cur = base16().encode(Iterables.get(partition, 0).getCodeFile().toByteArray());
 			Assert.assertFalse(cur + fileHashes, fileHashes.contains(cur));
 			fileHashes.add(cur);
 			// Check that every partition shares the same file.
 			for (Function f : partition) {
-				assertThat(BaseEncoding.base16().encode(f.getCodeFile().toByteArray()), is(cur));
+				assertThat(base16().encode(f.getCodeFile().toByteArray()), is(cur));
 			}
 		}
 		assertThat(fileHashes.size(), is(3));
@@ -201,8 +204,49 @@ public final class GitPopulatorTest {
 
 		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
+
+		List<Iterable<Snippet>> decodedRows = new ArrayList<>();
+		Codec<Snippet> codec = i.getInstance(PopulatorCodec.class).snippet;
+		for (Iterable<Cell<Snippet>> partition : function2snippetsPartitions) {
+			decodedRows.add(Codecs.decode(partition, codec));
+		}
+
 		// Num partitions is the number of functions. As per populator test, that's 9.
 		assertThat(Iterables.size(function2snippetsPartitions), is(9));
+
+		// We'll examine this row further in Function2RoughClones
+		Iterable<Snippet> d618 = null;
+		for (Iterable<Snippet> row : decodedRows) {
+			if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("D618")) {
+				d618 = row;
+				break;
+			}
+		}
+		assertNotNull(d618);
+		assert d618 != null; // Null analysis insists ...
+
+		List<String> snippetHashes = new ArrayList<>();
+		for (Snippet s : d618) {
+			if (s.getCloneType().equals(CloneType.GAPPED)) {
+				snippetHashes.add(base16().encode(s.getHash().toByteArray()));
+			}
+		}
+
+		// These snippets were only partially checked.
+		assertThat(snippetHashes, is(d618SnippetHashes()));
+	}
+
+	static Collection<String> d618SnippetHashes() {
+		return Arrays.asList("9721D2E18CFB9E67DD3787FA16426FF15FA4DDC3", "88895703E487880901E8A65520240A9242A329E2",
+				"1FF04CEAED39AEEB97E965622549D309CC449082", "BB3E14556ABA10796131584A07979C50470B4DBA",
+				"54F44DF1B74E5C820084644F002628098403C3F5", "ECBBB50DB74FB3CEA92496B0A8EBDD00CB026477",
+				"E4449FB81BF8157AB4A4EA29B70F626C299571E3", "A0371539D00B078FE5EC14FEECF5D03E387C0995",
+				"FC065CF873BF61F22B363F08D9CDC20726659250", "03D8952065410DFEB6F65F83EBA3AD70A1B9F3B3",
+				"4FE1D1D7D18223F94D13CEB4A2DB2E30DF5CAE8D", "4FE1D1D7D18223F94D13CEB4A2DB2E30DF5CAE8D",
+				"20A4E2A38A590E7D29978E7A3FF308EE15B6DC63", "6F4533745BDB2D84648440CE9D2826DECAEA72EE",
+				"BFEA4FB989E4BB732B2D3C1DB4D2B522389D93A7", "ABB06C63965C7AFEFB98F464BB628AA84C6BAE50",
+				"D0AF7CCDD23F96F74FA97CD329FA93FCF277E149", "C7511FD22F9017C9188B65BF5FC50CB53812FA18",
+				"C46C6B63797890F241C4C722182213F9FD1D1C7B");
 	}
 
 	private static void walkRepo(Injector i, GitRepo repo) throws IOException {
