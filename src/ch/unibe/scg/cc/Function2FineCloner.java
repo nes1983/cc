@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.logging.Logger;
 
 import org.unibe.scg.cells.LookupTable;
 import org.unibe.scg.cells.Mapper;
@@ -22,7 +21,7 @@ class Function2FineCloner implements Mapper<Clone, Clone> {
 	final private StringOfLinesFactory stringOfLinesFactory;
 	@Inject
 	Function2FineCloner(CloneExpander cloneExpander, LookupTable<Str<Clone>> cloneLoader,
-			SpamDetector spamDetector, StringOfLinesFactory stringOfLinesFactory, Logger logger) {
+			SpamDetector spamDetector, StringOfLinesFactory stringOfLinesFactory) {
 		this.cloneExpander = cloneExpander;
 		this.cloneLoader = cloneLoader;
 		this.spamDetector = spamDetector;
