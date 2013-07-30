@@ -2,9 +2,9 @@ package org.unibe.scg.cells;
 
 import java.io.IOException;
 
-
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
+import com.google.protobuf.ByteString;
 
 /** Methods to help dealing with codecs */
 public enum Codecs {
@@ -28,6 +28,15 @@ public enum Codecs {
 		return new Sink<T>() {
 			@Override public void write(T obj) {
 				sink.write(codec.encode(obj));
+			}
+		};
+	}
+
+	/** Wrapper of {@code cellTable} that returns decoded rows */
+	public static <T> LookupTable<T> decodedTable(final CellLookupTable<T> cellTable, final Codec<T> codec) {
+		return new LookupTable<T>() {
+			@Override public Iterable<T> readRow(ByteString rowKey) {
+				return decode(cellTable.readRow(rowKey), codec);
 			}
 		};
 	}
