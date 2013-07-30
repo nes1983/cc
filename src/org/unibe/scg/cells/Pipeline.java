@@ -1,5 +1,7 @@
 package org.unibe.scg.cells;
 
+import java.io.IOException;
+
 import javax.inject.Provider;
 
 
@@ -26,13 +28,19 @@ public interface Pipeline<IN, EFF> {
 	public static interface MappablePipeline<I, EFF> {
 		/** Set the mapper of influx {@code I} and efflux {@code E} */
 		<E> ShuffleablePipeline<E, EFF> mapper(Provider<? extends Mapper<I, E>> m);
-		/** Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.*/
-		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec);
+		/**
+		 * Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.
+		 * @throws IOException If several exceptions occur, any may be reported.
+		 */
+		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException;
 	}
 
 	/** A segment that was just mapped and now needs shuffling or an efflux. */
 	public interface ShuffleablePipeline<I, EFF> {
-		/** Shuffle the efflux. This will also execute the previous mapper. */
-		MappablePipeline<I, EFF> shuffle(Codec<I> codec);
+		/**
+		 * Shuffle the efflux. This will also execute the previous mapper.
+		 * @throws IOException  If several exceptions occur, any may be reported.
+		 */
+		MappablePipeline<I, EFF> shuffle(Codec<I> codec) throws IOException;
 	}
 }

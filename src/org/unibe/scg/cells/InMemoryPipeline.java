@@ -46,8 +46,9 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public void efflux(Provider<? extends Mapper<I, OUT>> m, Codec<OUT> sinkCodec) {
+		public void efflux(Provider<? extends Mapper<I, OUT>> m, Codec<OUT> sinkCodec) throws IOException {
 			run(src, srcCodec, m, pipeSink, sinkCodec);
+			pipeSink.close();
 		}
 	}
 
@@ -63,26 +64,24 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public MappablePipeline<E, OUT> shuffle(Codec<E> sinkCodec) {
-			InMemoryShuffler<E> shuffler = new InMemoryShuffler<>();
-			run(src, srcCodec, mapper, shuffler, sinkCodec);
-			return new InMemoryMappablePipeline<>(shuffler, sinkCodec);
+		public MappablePipeline<E, OUT> shuffle(Codec<E> sinkCodec) throws IOException {
+			try (InMemoryShuffler<E> shuffler = new InMemoryShuffler<>()) {
+				run(src, srcCodec, mapper, shuffler, sinkCodec);
+				return new InMemoryMappablePipeline<>(shuffler, sinkCodec);
+			}
 		}
 	}
 
 	/** Run the mapper and close the sink. */
 	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
-			CellSink<E> sink, Codec<E> sinkCodec) {
+			CellSink<E> sink, Codec<E> sinkCodec) throws IOException {
 		try (Mapper<I, E> m = mapper.get()) {
 			for (Iterable<Cell<I>> part : src) {
 				Iterable<I> decoded = Codecs.decode(part, srcCodec);
 				// In memory, since all iterables are backed by arrays, this is safe.
 				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}
-			sink.close();
 			// In memory, there's very little we should do. We certainly won't restart maps.
-		} catch (IOException e) {
-			throw new RuntimeException("Mapper " + mapper + " failed", e);
 		}
 	}
 }
