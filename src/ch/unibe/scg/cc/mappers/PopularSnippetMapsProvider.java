@@ -23,9 +23,9 @@ import com.google.inject.Inject;
 class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
 	@Inject(optional = true)
 	@Named("popularSnippets")
-	HTable popularSnippets;
+	private HTable popularSnippets;
 
-	final Provider<Scan> scanProvider;
+	final private Provider<Scan> scanProvider;
 
 	@Inject
 	PopularSnippetMapsProvider(Provider<Scan> scanProvider) {
