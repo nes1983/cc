@@ -80,7 +80,6 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				// In memory, since all iterables are backed by arrays, this is safe.
 				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}
-			// In memory, there's very little we should do. We certainly won't restart maps.
 		}
 	}
 }
