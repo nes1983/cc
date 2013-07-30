@@ -11,7 +11,7 @@ public enum Codecs {
 	; // Don't instantiate
 
 	/** In case of a IOException, the iterator will throw an unchecked {@link EncodingException} */
-	public static <T> Iterable<T> decode(Iterable<Cell<T>> row, final Codec<T> codec) {
+	public static <T> Iterable<T> decodeRow(Iterable<Cell<T>> row, final Codec<T> codec) {
 		return Iterables.transform(row, new Function<Cell<T>, T>() {
 			@Override public T apply(Cell<T> cell) {
 				try {
@@ -36,7 +36,7 @@ public enum Codecs {
 	public static <T> LookupTable<T> decodedTable(final CellLookupTable<T> cellTable, final Codec<T> codec) {
 		return new LookupTable<T>() {
 			@Override public Iterable<T> readRow(ByteString rowKey) {
-				return decode(cellTable.readRow(rowKey), codec);
+				return decodeRow(cellTable.readRow(rowKey), codec);
 			}
 		};
 	}

@@ -65,7 +65,7 @@ public final class Function2RoughClonerTest {
 
 			List<Iterable<Snippet>> decodedRows = new ArrayList<>();
 			for (Iterable<Cell<Snippet>> popularPartition : popularPartitions) {
-			 	decodedRows.add(Codecs.decode(popularPartition, i.getInstance(
+			 	decodedRows.add(Codecs.decodeRow(popularPartition, i.getInstance(
 			 			Key.get((new TypeLiteral<Codec<Snippet>>() {}), PopularSnippets.class))));
 			}
 

@@ -77,7 +77,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			CellSink<E> sink, Codec<E> sinkCodec) throws IOException {
 		try (Mapper<I, E> m = mapper.get()) {
 			for (Iterable<Cell<I>> part : src) {
-				Iterable<I> decoded = Codecs.decode(part, srcCodec);
+				Iterable<I> decoded = Codecs.decodeRow(part, srcCodec);
 				// In memory, since all iterables are backed by arrays, this is safe.
 				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}

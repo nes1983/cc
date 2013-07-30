@@ -161,7 +161,7 @@ public final class GitPopulatorTest {
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
 		List<Iterable<Function>> decodedPartitions = new ArrayList<>();
 		for (Iterable<Cell<Function>> partition : i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {}))) {
-			decodedPartitions.add(Codecs.decode(partition, codec.function));
+			decodedPartitions.add(Codecs.decodeRow(partition, codec.function));
 		}
 
 		Iterable<Function> funs = Iterables.concat(decodedPartitions);
@@ -208,7 +208,7 @@ public final class GitPopulatorTest {
 		assertThat(Iterables.size(partition03D8), is(2));
 
 		Codec<Snippet> s2fCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class));
-		Iterable<Snippet> s2fs = Codecs.decode(partition03D8, s2fCodec);
+		Iterable<Snippet> s2fs = Codecs.decodeRow(partition03D8, s2fCodec);
 		assertThat(Math.abs(Iterables.get(s2fs, 0).getPosition() - Iterables.get(s2fs, 1).getPosition()), is(3));
 	}
 
@@ -223,7 +223,7 @@ public final class GitPopulatorTest {
 		List<Iterable<Snippet>> decodedRows = new ArrayList<>();
 		Codec<Snippet> codec = i.getInstance(PopulatorCodec.class).snippet;
 		for (Iterable<Cell<Snippet>> partition : function2snippetsPartitions) {
-			decodedRows.add(Codecs.decode(partition, codec));
+			decodedRows.add(Codecs.decodeRow(partition, codec));
 		}
 
 		// Num partitions is the number of functions. As per populator test, that's 9.
