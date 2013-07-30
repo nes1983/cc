@@ -46,15 +46,17 @@ public class Populator implements Closeable {
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
+
+	// If you add a cellSink - REMEMBER TO ADD IT TO CLOSE!
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
 	final private CellSink<CodeFile> codeFileSink;
 	final private CellSink<Function> functionSink;
 	final private CellSink<Str<Function>> functionStringSink;
-	final private Codec<Str<Function>> functionStringCodec;
-	/** Function2Snippet */
+		/** Function2Snippet */
 	final private CellSink<Snippet> snippetSink;
 
+	final private Codec<Str<Function>> functionStringCodec;
 	/** Changes for every project */
 	private Sink<Snippet> snippet2Functions;
 
@@ -244,6 +246,7 @@ public class Populator implements Closeable {
 			closer.register(codeFileSink);
 			closer.register(versionSink);
 			closer.register(projectSink);
+			closer.register(functionStringSink);
 		}
 	}
 
