@@ -5,14 +5,11 @@ import javax.inject.Singleton;
 import org.unibe.scg.cells.CellLookupTable;
 import org.unibe.scg.cells.CellSink;
 import org.unibe.scg.cells.CellSource;
-import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.InMemoryShuffler;
 
-import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Populator;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
-import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
@@ -65,10 +62,6 @@ class InMemoryModule extends AbstractModule {
 			.to(Key.get(snippetShuffler, PopularSnippets.class));
 		bind(new TypeLiteral<CellSource<Snippet>>() {}).annotatedWith(PopularSnippets.class)
 			.to(Key.get(snippetShuffler, PopularSnippets.class));
-
-		bind(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)).to(Snippet2FunctionsCodec.class);
-		bind(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)).to(Function2RoughClonesCodec.class);
-		bind(Key.get(new TypeLiteral<Codec<Str<Function>>>() {})).to(FunctionStringCodec.class);
 
 		bind(new TypeLiteral<CellLookupTable<Str<Function>>>() {}).to(functionStrShuffler);
 	}
