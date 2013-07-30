@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc;
 
-import org.apache.hadoop.hbase.util.Bytes;
 import org.unibe.scg.cells.Cell;
 import org.unibe.scg.cells.Codec;
 
@@ -10,6 +9,8 @@ import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 
+import com.google.common.primitives.Bytes;
+import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
@@ -37,8 +38,8 @@ class PopulatorCodec {
 	private static class Function2SnippetCodec implements Codec<Snippet> {
 		@Override
 		public Cell<Snippet> encode(Snippet snip) {
-			byte[] colKey = Bytes.add(Bytes.toBytes((byte) snip.getCloneType().getNumber()),
-					Bytes.toBytes(snip.getPosition()));
+			byte[] colKey = Bytes.concat(new byte[] {(byte) snip.getCloneType().getNumber()},
+					Ints.toByteArray(snip.getPosition()));
 
 			return Cell.make(snip.getFunction(), ByteString.copyFrom(colKey), snip.toByteString());
 		}
@@ -65,7 +66,7 @@ class PopulatorCodec {
 	private static class FunctionCodec implements Codec<Function> {
 		@Override
 		public Cell<Function> encode(Function fun) {
-			ByteString colKey = ByteString.copyFrom(Bytes.toBytes(fun.getBaseLine()));
+			ByteString colKey = ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine()));
 
 			return Cell.make(fun.getCodeFile(), colKey, fun.toByteString());
 		}
