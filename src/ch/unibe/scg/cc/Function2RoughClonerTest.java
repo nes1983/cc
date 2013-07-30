@@ -93,7 +93,7 @@ public final class Function2RoughClonerTest {
 	}
 
 	/** Bridge between Collections and CellSource */
-	private static class CollectionCellSource<T> implements CellSource<T> {
+	static class CollectionCellSource<T> implements CellSource<T> {
 		final private Iterable<Iterable<Cell<T>>> collection;
 
 		CollectionCellSource(Iterable<Iterable<Cell<T>>> collection) {
@@ -106,7 +106,7 @@ public final class Function2RoughClonerTest {
 		}
 	}
 
-	private static class TestModule extends AbstractModule {
+	static class TestModule extends AbstractModule {
 		@Override
 		protected void configure() {
 			bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(3);
