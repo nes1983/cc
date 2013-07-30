@@ -11,7 +11,7 @@ import ch.unibe.scg.cc.SpamDetector.FeatureVector;
 
 /** Test {@link SpamDetector} */
 public class SpamDetectorTest {
-	SpamDetector spamDetector;
+	private SpamDetector spamDetector;
 
 	/** Setup */
 	@Before
