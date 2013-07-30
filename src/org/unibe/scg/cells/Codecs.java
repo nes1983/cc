@@ -47,6 +47,10 @@ public enum Codecs {
 			@Override public void write(T obj) {
 				sink.write(codec.encode(obj));
 			}
+
+			@Override public void close() throws IOException {
+				sink.close();
+			}
 		};
 	}
 
@@ -55,6 +59,10 @@ public enum Codecs {
 		return new LookupTable<T>() {
 			@Override public Iterable<T> readRow(ByteString rowKey) {
 				return decodeRow(cellTable.readRow(rowKey), codec);
+			}
+
+			@Override public void close() throws IOException {
+				cellTable.close();
 			}
 		};
 	}
