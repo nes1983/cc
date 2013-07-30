@@ -3,13 +3,15 @@ package ch.unibe.scg.cc;
 import java.security.MessageDigest;
 
 import org.unibe.scg.cells.Codec;
+import org.unibe.scg.cells.LookupTable;
 
 import ch.unibe.scg.cc.Annotations.Function2RoughClones;
-import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
+import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.regex.Replace;
@@ -23,6 +25,9 @@ public class CCModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		bind(MessageDigest.class).toProvider(MessageDigestProvider.class);
+
+		bind(new TypeLiteral<LookupTable<Str<Function>>>() {})
+				.toProvider(new TypeLiteral<LookupTableProvider<Str<Function>>>() {});
 
 		bind(new TypeLiteral<Codec<Clone>>() {}).annotatedWith(Function2RoughClones.class)
 				.to(Function2RoughClonesCodec.class);

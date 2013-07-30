@@ -56,6 +56,11 @@ public class Annotations {
 	@Retention(RUNTIME)
 	static @interface Function2RoughClones {}
 
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface Function2FineClones {}
+
 	/** Constant */
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })

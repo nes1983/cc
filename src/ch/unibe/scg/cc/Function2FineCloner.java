@@ -8,6 +8,7 @@ import org.unibe.scg.cells.Mapper;
 import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 import com.google.common.collect.Iterables;
@@ -16,11 +17,11 @@ import com.google.inject.Inject;
 /** Expand clones and filter clones down to the clones that aren't spam. */
 class Function2FineCloner implements Mapper<Clone, Clone> {
 	final private CloneExpander cloneExpander;
-	final private LookupTable<Str<Clone>> cloneLoader;
+	final private LookupTable<Str<Function>> cloneLoader;
 	final private SpamDetector spamDetector;
 	final private StringOfLinesFactory stringOfLinesFactory;
 	@Inject
-	Function2FineCloner(CloneExpander cloneExpander, LookupTable<Str<Clone>> cloneLoader,
+	Function2FineCloner(CloneExpander cloneExpander, LookupTable<Str<Function>> cloneLoader,
 			SpamDetector spamDetector, StringOfLinesFactory stringOfLinesFactory) {
 		this.cloneExpander = cloneExpander;
 		this.cloneLoader = cloneLoader;
