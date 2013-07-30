@@ -66,22 +66,10 @@ message CloneGroup {
 }
 
 message Occurrence {
-	// the project name (url-encoded)
-	optional string project_name = 1;
-	// the project name hash
-	optional bytes project_name_hash = 2;
-	// the project tag
-	optional string tag = 3;
-	// 20 byte hash of the version
-	optional bytes version_hash = 4;
-	// 20 byte hash of the file
-	optional bytes file_hash = 5;
-	// Path of the file.
-	optional string file_name = 6;
-	// 20 byte hash of the file name
-	optional bytes file_name_hash = 7;
-	// 20 byte hash of the function.
-	optional bytes function_hash = 8;
+	optional Project project = 1;
+	optional Version version = 2;
+	optional CodeFile codeFile = 3;
+	optional Function function = 4;
 	// Relative to the function.
 	// Not the file.
 	optional int32 position = 9;

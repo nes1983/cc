@@ -247,7 +247,9 @@ public class Populator implements Closeable {
 			closer.register(versionSink);
 			closer.register(projectSink);
 			closer.register(functionStringSink);
-			closer.register(snippet2Functions);
+			if (snippet2Functions != null) {
+				closer.register(snippet2Functions);
+			}
 		}
 	}
 

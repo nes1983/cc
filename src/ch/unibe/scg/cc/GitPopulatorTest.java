@@ -261,11 +261,10 @@ public final class GitPopulatorTest {
 	}
 
 	private static void walkRepo(Injector i, GitRepo repo) throws IOException {
-		try(CellSink<Snippet> snippetCellSink = i.getInstance(
-				Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class));
+		try(Sink<Snippet> snippetSink =
+				Codecs.encode(i.getInstance(Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class)),
+					i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
 				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
-			Sink<Snippet> snippetSink = Codecs.encode(snippetCellSink, i.getInstance(
-					Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
 			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
 		}
 	}

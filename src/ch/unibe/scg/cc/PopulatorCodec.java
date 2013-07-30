@@ -26,7 +26,7 @@ class PopulatorCodec {
 	private static class CodeFileCodec implements Codec<CodeFile> {
 		@Override
 		public Cell<CodeFile> encode(CodeFile fil) {
-			return Cell.make(fil.getVersion(), fil.getPathBytes(), fil.toByteString());
+			return Cell.make(fil.getVersion(), fil.getHash().concat(fil.getPathBytes()), fil.toByteString());
 		}
 
 		@Override
@@ -54,7 +54,7 @@ class PopulatorCodec {
 	private static class VersionCodec implements Codec<Version> {
 		@Override
 		public Cell<Version> encode(Version v) {
-			return Cell.make(v.getProject(), v.getNameBytes(), v.toByteString());
+			return Cell.make(v.getProject(), v.getHash().concat(v.getNameBytes()), v.toByteString());
 		}
 
 		@Override
@@ -66,7 +66,7 @@ class PopulatorCodec {
 	private static class FunctionCodec implements Codec<Function> {
 		@Override
 		public Cell<Function> encode(Function fun) {
-			ByteString colKey = ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine()));
+			ByteString colKey = fun.getHash().concat(ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine())));
 
 			return Cell.make(fun.getCodeFile(), colKey, fun.toByteString());
 		}
