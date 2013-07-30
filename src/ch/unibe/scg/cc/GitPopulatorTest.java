@@ -159,10 +159,8 @@ public final class GitPopulatorTest {
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
-		List<Iterable<Function>> decodedPartitions = new ArrayList<>();
-		for (Iterable<Cell<Function>> partition : i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {}))) {
-			decodedPartitions.add(Codecs.decodeRow(partition, codec.function));
-		}
+		Iterable<Iterable<Function>> decodedPartitions =
+				Codecs.decode(i.getInstance(Key.get(new TypeLiteral<CellSource<Function>>() {})), codec.function);
 
 		Iterable<Function> funs = Iterables.concat(decodedPartitions);
 		assertThat(Iterables.size(funs), is(15));
@@ -217,14 +215,12 @@ public final class GitPopulatorTest {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
 		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
-		Iterable<Iterable<Cell<Snippet>>> function2snippetsPartitions = i.getInstance(
+		CellSource<Snippet> function2snippetsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
 
-		List<Iterable<Snippet>> decodedRows = new ArrayList<>();
+
 		Codec<Snippet> codec = i.getInstance(PopulatorCodec.class).snippet;
-		for (Iterable<Cell<Snippet>> partition : function2snippetsPartitions) {
-			decodedRows.add(Codecs.decodeRow(partition, codec));
-		}
+		Iterable<Iterable<Snippet>> decodedRows = Codecs.decode(function2snippetsPartitions, codec);
 
 		// Num partitions is the number of functions. As per populator test, that's 9.
 		assertThat(Iterables.size(function2snippetsPartitions), is(9));

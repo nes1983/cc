@@ -6,11 +6,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
@@ -63,11 +61,8 @@ public final class Function2RoughClonerTest {
 
 			CellSource<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Snippet>>() {}, PopularSnippets.class));
 
-			List<Iterable<Snippet>> decodedRows = new ArrayList<>();
-			for (Iterable<Cell<Snippet>> popularPartition : popularPartitions) {
-			 	decodedRows.add(Codecs.decodeRow(popularPartition, i.getInstance(
-			 			Key.get((new TypeLiteral<Codec<Snippet>>() {}), PopularSnippets.class))));
-			}
+			Iterable<Iterable<Snippet>> decodedRows = Codecs.decode(popularPartitions, i.getInstance(
+		 			Key.get((new TypeLiteral<Codec<Snippet>>() {}), PopularSnippets.class)));
 
 			Iterable<Snippet> d618 = null;
 			for (Iterable<Snippet> row : decodedRows) {
