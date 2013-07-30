@@ -16,7 +16,9 @@ import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
+/** Test {@link FunctionStringCodec}. */
 public class FunctionStringCodecTest {
+	/** Test {@link FunctionStringCodec#encode} */
 	@Test
 	public void testFunctionStringCodec() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
