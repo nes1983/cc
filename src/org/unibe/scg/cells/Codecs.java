@@ -25,7 +25,10 @@ public enum Codecs {
 		});
 	}
 
-	/** Decode source using codec. */
+	/**
+	 * Decode source using codec.
+	 * In case of a IOException, the iterator will throw an unchecked {@link EncodingException}
+	 */
 	public static <T> Source<T> decode(final CellSource<T> source, final Codec<T> codec) {
 		return new Source<T>() {
 			@Override public Iterator<Iterable<T>> iterator() {
