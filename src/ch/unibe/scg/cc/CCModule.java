@@ -13,9 +13,12 @@ import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.GitRepo;
+import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.regex.Replace;
 
 import com.google.inject.AbstractModule;
@@ -31,6 +34,12 @@ public class CCModule extends AbstractModule {
 
 		bind(new TypeLiteral<LookupTable<Str<Function>>>() {})
 				.toProvider(new TypeLiteral<LookupTableProvider<Str<Function>>>() {});
+		bind(new TypeLiteral<LookupTable<CodeFile>>() {})
+				.toProvider(new TypeLiteral<LookupTableProvider<CodeFile>>() {});
+		bind(new TypeLiteral<LookupTable<Version>>() {})
+				.toProvider(new TypeLiteral<LookupTableProvider<Version>>() {});
+		bind(new TypeLiteral<LookupTable<Project>>() {})
+				.toProvider(new TypeLiteral<LookupTableProvider<Project>>() {});
 
 		bind(new TypeLiteral<Source<Snippet>>() {}).annotatedWith(PopularSnippets.class)
 				.toProvider(PopularSnippetSourceProvider.class);
@@ -45,6 +54,11 @@ public class CCModule extends AbstractModule {
 		bind(new TypeLiteral<Codec<Clone>>() {}).annotatedWith(Function2FineClones.class)
 				.to(Function2FineClonesCodec.class);
 		bind(new TypeLiteral<Codec<GitRepo>>() {}).to(GitRepoCodec.class);
+
+		// Populator codecs:
+		bind(new TypeLiteral<Codec<CodeFile>>() {}).to(PopulatorCodec.CodeFileCodec.class);
+		bind(new TypeLiteral<Codec<Version>>() {}).to(PopulatorCodec.VersionCodec.class);
+		bind(new TypeLiteral<Codec<Project>>() {}).to(PopulatorCodec.ProjectCodec.class);
 
 
 		bind(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)).to(Snippet2FunctionsCodec.class);
