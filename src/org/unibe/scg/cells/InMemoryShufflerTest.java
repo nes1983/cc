@@ -52,7 +52,6 @@ public final class InMemoryShufflerTest {
 		assertThat(Iterables.size(s.readColumn(ByteString.EMPTY)), is(4));
 
 		Iterable<Cell<Byte>> col0 = s.readColumn(ByteString.copyFromUtf8("0"));
-
 		assertThat(Iterables.get(col0, 0).getRowKey().toStringUtf8(), is("aaab"));
 		assertThat(Iterables.get(col0, 1).getRowKey().toStringUtf8(), is("aaad"));
 		assertThat(col0.toString(), Iterables.size(col0), is(2));
