@@ -51,19 +51,18 @@ public class MakeHistogram implements Runnable {
 	 * 2 --> 1
 	 * </pre>
 	 */
-	static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
+	private static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
 		/** receives rows from htable snippet2function */
-		@SuppressWarnings("unchecked")
 		@Override
 		public void map(ImmutableBytesWritable uselessKey, Result value,
-				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+				org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
 				InterruptedException {
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			context.write(new IntWritable(familyMap.size()), new LongWritable(1L));
 		}
 	}
 
-	static class MakeHistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
+	private static class MakeHistogramReducer extends GuiceReducer<IntWritable, LongWritable, IntWritable, LongWritable> {
 		@Override
 		public void reduce(IntWritable columnCount, Iterable<LongWritable> values, Context context) throws IOException,
 				InterruptedException {
