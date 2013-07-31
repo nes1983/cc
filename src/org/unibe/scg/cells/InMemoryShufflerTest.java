@@ -35,6 +35,8 @@ public final class InMemoryShufflerTest {
 
 			assertTrue(Iterables.isEmpty(s.readRow(ByteString.copyFromUtf8("aaaa"))));
 			assertTrue(Iterables.isEmpty(s.readRow(ByteString.copyFromUtf8("aaae"))));
+
+			assertThat(Iterables.size(s.readRow(ByteString.EMPTY)), is(4));
 		}
 	}
 }

@@ -99,12 +99,16 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 		int startPos = rowStartPos(rowKey);
 		// end position is binary search for rowKey + 1
-		int endPos = rowStartPos(keyPlusOne(rowKey));
+		int endPos = store.size();
+		if (!rowKey.isEmpty()) {
+			endPos = rowStartPos(keyPlusOne(rowKey));
+		}
 
 		return store.subList(startPos, endPos);
 	}
 
 	private ByteString keyPlusOne(ByteString rowKey) {
+		assert !rowKey.isEmpty() : "This case needs special treatment on caller level.";
 		return ByteString.copyFrom(new BigInteger(rowKey.toByteArray()).add(BigInteger.ONE)
 				.toByteArray());
 	}
@@ -121,7 +125,10 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 	@Override
 	public Iterable<Cell<T>> readColumn(ByteString columnKey) {
 		int startPos = indexStartPos(columnKey);
-		int endPos = indexStartPos(keyPlusOne(columnKey));
+		int endPos = colIndex.size();
+		if (!columnKey.isEmpty()) {
+			endPos = indexStartPos(keyPlusOne(columnKey));
+		}
 		List<RowPointer> rows = colIndex.subList(startPos, endPos);
 
 		List<Cell<T>> ret = new ArrayList<>();
