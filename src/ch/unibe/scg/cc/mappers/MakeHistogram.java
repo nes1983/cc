@@ -54,8 +54,7 @@ public class MakeHistogram implements Runnable {
 	private static class MakeHistogramMapper extends GuiceTableMapper<IntWritable, LongWritable> {
 		/** receives rows from htable snippet2function */
 		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value,
-				org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			NavigableMap<byte[], byte[]> familyMap = value.getFamilyMap(Constants.FAMILY);
 			context.write(new IntWritable(familyMap.size()), new LongWritable(1L));
