@@ -8,4 +8,7 @@ import com.google.protobuf.ByteString;
 public interface LookupTable<T> extends Closeable {
 	/** Return a table row. */
 	Iterable<T> readRow(ByteString rowKey);
+
+	/** @return a decoded table column. */
+	Iterable<T> readColumn(ByteString columnKey);
 }
