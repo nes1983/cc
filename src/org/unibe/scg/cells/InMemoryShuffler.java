@@ -133,8 +133,9 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 		List<Cell<T>> ret = new ArrayList<>();
 		for (RowPointer r : rows) {
-			int p = Collections.binarySearch(store, new Cell<T>(r.rowKey, columnKey, ByteString.EMPTY));
-			assert p >= 0 : "Index contained incorrect information for column " + columnKey;
+			int p = Collections.binarySearch(store, new Cell<T>(r.rowKey, r.colKey, ByteString.EMPTY));
+			assert p >= 0 : "Index contained incorrect information for row " + r.rowKey.toStringUtf8() + " col: "
+					+ columnKey.toStringUtf8() + store;
 			ret.add(store.get(p));
 		}
 
