@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc;
 
-import static org.junit.Assert.assertEquals;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
 
@@ -41,6 +42,6 @@ public class FunctionStringCodecTest {
 				+ "	}\n"
 				+ "};";
 		Str<Function> f = new Str<>(ByteString.copyFromUtf8("bb"), input);
-		assertEquals(fsCodec.decode(fsCodec.encode(f)).contents, input);
+		assertThat(input, is(fsCodec.decode(fsCodec.encode(f)).contents));
 	}
 }
