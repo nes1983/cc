@@ -206,8 +206,9 @@ public final class GitPopulatorTest {
 		assertThat(Iterables.size(partition03D8), is(2));
 
 		Codec<Snippet> s2fCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class));
-		Iterable<Snippet> s2fs = Codecs.decodeRow(partition03D8, s2fCodec);
-		assertThat(Math.abs(Iterables.get(s2fs, 0).getPosition() - Iterables.get(s2fs, 1).getPosition()), is(3));
+		assertThat(
+				Math.abs(s2fCodec.decode(Iterables.get(partition03D8, 0)).getPosition()
+						- s2fCodec.decode(Iterables.get(partition03D8, 1)).getPosition()), is(3));
 	}
 
 	@Test

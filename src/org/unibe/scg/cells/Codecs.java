@@ -11,9 +11,8 @@ import com.google.protobuf.ByteString;
 public enum Codecs {
 	; // Don't instantiate
 
-	@Deprecated // Use decode instead.
 	/** In case of a IOException, the iterator will throw an unchecked {@link EncodingException} */
-	public static <T> Iterable<T> decodeRow(Iterable<Cell<T>> row, final Codec<T> codec) {
+	private static <T> Iterable<T> decodeRow(Iterable<Cell<T>> row, final Codec<T> codec) {
 		return Iterables.transform(row, new Function<Cell<T>, T>() {
 			@Override public T apply(Cell<T> cell) {
 				try {
@@ -63,6 +62,10 @@ public enum Codecs {
 
 			@Override public void close() throws IOException {
 				cellTable.close();
+			}
+
+			@Override public Iterable<T> readColumn(ByteString columnKey) {
+				return decodeRow(cellTable.readColumn(columnKey), codec);
 			}
 		};
 	}
