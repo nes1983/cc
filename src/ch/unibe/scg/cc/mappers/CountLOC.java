@@ -71,8 +71,7 @@ public class CountLOC implements Runnable {
 
 		/** receives rows from htable strings */
 		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value,
-				@SuppressWarnings("rawtypes") org.apache.hadoop.mapreduce.Mapper.Context context) throws IOException,
+		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			String functionSnippet = Bytes.toString(value.getColumnLatest(Constants.FAMILY,
 					Function.FUNCTION_SNIPPET).getValue());
