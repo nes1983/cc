@@ -103,10 +103,10 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException {
 		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
-		Path tdir = null;
+		Path unpackDir = null;
 		try(ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(repo.getProjectName(), sink)) {
-			tdir = Files.createTempDirectory(null);
-			FileRepository r = new FileRepository(tdir.toFile());
+			unpackDir = Files.createTempDirectory(null);
+			FileRepository r = new FileRepository(unpackDir.toFile());
 			r.create(true);
 			PackParser pp = r.newObjectInserter().newPackParser(repo.getPackFile().newInput());
 			// ProgressMonitor set to null, so NullProgressMonitor will be used.
@@ -134,11 +134,11 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 				}
 			}
 		} finally {
-			if (tdir != null) {
+			if (unpackDir != null) {
 				try {
-					removeRecursive(tdir);
+					removeRecursive(unpackDir);
 				} catch(IOException e) {
-					logger.warning("Failed to delete " + tdir + " because " + e);
+					logger.warning("Failed to delete " + unpackDir + " because " + e);
 				}
 			}
 		}
