@@ -19,10 +19,8 @@ import org.unibe.scg.cells.Codecs;
 import org.unibe.scg.cells.InMemoryPipeline;
 import org.unibe.scg.cells.InMemoryShuffler;
 
-import ch.unibe.scg.cc.Annotations.Function2RoughClones;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
-import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;
@@ -43,7 +41,7 @@ public final class Function2RoughClonerTest {
 	public void testMap() throws IOException {
 		Injector i = Guice.createInjector(
 				Modules.override(new CCModule(), new JavaModule(), new InMemoryModule()).with(new TestModule()));
-		Codec<GitRepo> repoCodec = i.getInstance(Key.get(new TypeLiteral<Codec<GitRepo>>() {}));
+		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
@@ -51,18 +49,18 @@ public final class Function2RoughClonerTest {
 			InMemoryPipeline.make(src, sink)
 				.influx(repoCodec)
 				.mapper(i.getProvider(GitPopulator.class))
-				.shuffle(i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)))
+				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
 				.efflux(
 						i.getProvider(Function2RoughCloner.class),
-						i.getInstance(Key.get(new TypeLiteral<Codec<Clone>>() {}, Function2RoughClones.class)));
+						i.getInstance(Function2RoughClonesCodec.class));
 
 			// See paper: Table III
 			assertThat(Iterables.size(sink), is(2));
 
 			CellSource<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Snippet>>() {}, PopularSnippets.class));
 
-			Iterable<Iterable<Snippet>> decodedRows = Codecs.decode(popularPartitions, i.getInstance(
-		 			Key.get((new TypeLiteral<Codec<Snippet>>() {}), PopularSnippets.class)));
+			Iterable<Iterable<Snippet>> decodedRows = Codecs.decode(popularPartitions,
+					i.getInstance(PopularSnippetsCodec.class));
 
 			Iterable<Snippet> d618 = null;
 			for (Iterable<Snippet> row : decodedRows) {

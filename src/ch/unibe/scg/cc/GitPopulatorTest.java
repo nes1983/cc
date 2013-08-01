@@ -132,8 +132,7 @@ public final class GitPopulatorTest {
 		Iterable<Iterable<Cell<Str<Function>>>> functionStringPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Str<Function>>>() {}));
 		Iterable<Cell<Str<Function>>> functionStringRow = Iterables.getOnlyElement(functionStringPartitions);
-		Codec<Str<Function>> functionStringCodec = i.getInstance(
-				Key.get(new TypeLiteral<Codec<Str<Function>>>() {}));
+		Codec<Str<Function>> functionStringCodec = i.getInstance(FunctionStringCodec.class);
 		Str<Function> functionString = functionStringCodec.decode(Iterables.getOnlyElement(functionStringRow));
 		assertThat(functionString.contents.indexOf("public void testProjnameRegex"), is(1));
 
@@ -205,7 +204,7 @@ public final class GitPopulatorTest {
 		Assert.assertNotNull(partition03D8);
 		assertThat(Iterables.size(partition03D8), is(2));
 
-		Codec<Snippet> s2fCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class));
+		Codec<Snippet> s2fCodec = i.getInstance(Snippet2FunctionsCodec.class);
 		assertThat(
 				Math.abs(s2fCodec.decode(Iterables.get(partition03D8, 0)).getPosition()
 						- s2fCodec.decode(Iterables.get(partition03D8, 1)).getPosition()), is(3));
@@ -263,8 +262,9 @@ public final class GitPopulatorTest {
 
 	private static void walkRepo(Injector i, GitRepo repo) throws IOException {
 		try(Sink<Snippet> snippetSink =
-				Codecs.encode(i.getInstance(Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class)),
-					i.getInstance(Key.get(new TypeLiteral<Codec<Snippet>>() {}, Snippet2Functions.class)));
+				Codecs.encode(
+						i.getInstance(Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class)),
+						i.getInstance(Snippet2FunctionsCodec.class));
 				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
 			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
 		}

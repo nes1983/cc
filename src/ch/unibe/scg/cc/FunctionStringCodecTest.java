@@ -13,8 +13,6 @@ import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Key;
-import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
 /** Test {@link FunctionStringCodec}. */
@@ -23,7 +21,7 @@ public class FunctionStringCodecTest {
 	@Test
 	public void testFunctionStringCodec() throws IOException {
 		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		Codec<Str<Function>> fsCodec = i.getInstance(Key.get(new TypeLiteral<Codec<Str<Function>>>() {}));
+		Codec<Str<Function>> fsCodec = i.getInstance(FunctionStringCodec.class);
 		String input = "" +
 				"public final class GitTablePopulatorTest {\n"
 				+ "	@Test\n"

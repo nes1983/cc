@@ -8,9 +8,6 @@ import javax.inject.Provider;
 import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Pipeline;
 
-import ch.unibe.scg.cc.Annotations.Function2FineClones;
-import ch.unibe.scg.cc.Annotations.Function2RoughClones;
-import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;
@@ -28,8 +25,9 @@ public class ClonePipelineRunner {
 
 	@Inject
 	ClonePipelineRunner(Provider<GitPopulator> gitPopulator, Provider<Function2RoughCloner> function2RoughCloner,
-			Provider<Function2FineCloner> function2FineCloner, Codec<GitRepo> repoCodec, @Snippet2Functions Codec<Snippet> snippet2FunctionsCodec,
-			@Function2RoughClones Codec<Clone> function2RoughClonesCodec, @Function2FineClones Codec<CloneGroup> function2FineClonesCodec) {
+			Provider<Function2FineCloner> function2FineCloner, GitRepoCodec repoCodec,
+			Snippet2FunctionsCodec snippet2FunctionsCodec, Function2RoughClonesCodec function2RoughClonesCodec,
+			Function2FineClonesCodec function2FineClonesCodec) {
 		this.gitPopulator = gitPopulator;
 		this.function2RoughCloner = function2RoughCloner;
 		this.function2FineCloner = function2FineCloner;

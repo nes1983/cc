@@ -8,12 +8,12 @@ import org.unibe.scg.cells.Codec;
 import org.unibe.scg.cells.Codecs;
 import org.unibe.scg.cells.LookupTable;
 
-class LookupTableProvider<T> implements Provider<LookupTable<T>> {
+class LookupTableProvider<T, S extends Codec<T>> implements Provider<LookupTable<T>> {
 	final private Provider<CellLookupTable<T>> cellTable;
-	final private Provider<Codec<T>> codec;
+	final private Provider<? extends Codec<T>> codec;
 
 	@Inject
-	LookupTableProvider(Provider<CellLookupTable<T>> cellTable, Provider<Codec<T>> codec) {
+	LookupTableProvider(Provider<CellLookupTable<T>> cellTable, Provider<S> codec) {
 		this.cellTable = cellTable;
 		this.codec = codec;
 	}

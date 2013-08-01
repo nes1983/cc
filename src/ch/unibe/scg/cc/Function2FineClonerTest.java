@@ -28,15 +28,16 @@ public class Function2FineClonerTest {
 	public void testMap() throws IOException {
 		Injector i = Guice.createInjector(Modules.override(new CCModule(), new JavaModule(), new InMemoryModule())
 				.with(new TestModule()));
-		Codec<GitRepo> repoCodec = i.getInstance(Key.get(new TypeLiteral<Codec<GitRepo>>() {}));
+		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
 		ClonePipelineRunner runner = i.getInstance(ClonePipelineRunner.class);
-		try (InMemoryShuffler<CloneGroup> sink =
+		try (InMemoryShuffler<CloneGroup> shuffler =
 				i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<CloneGroup>>() {}))) {
-			InMemoryPipeline<GitRepo, CloneGroup> pipe = InMemoryPipeline.make(src, sink);
+			InMemoryPipeline<GitRepo, CloneGroup> pipe = InMemoryPipeline.make(src, shuffler);
 			runner.run(pipe);
+			shuffler.close();
 		}
 	}
 }

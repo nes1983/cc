@@ -47,6 +47,7 @@ public class Populator implements Closeable {
 	final private StringOfLinesFactory stringOfLinesFactory;
 	final private PopulatorCodec codec;
 
+	// TODO: Replace by encoded Sinks.
 	// If you add a cellSink - REMEMBER TO ADD IT TO CLOSE!
 	final private CellSink<Project> projectSink;
 	final private CellSink<Version> versionSink;
@@ -71,7 +72,7 @@ public class Populator implements Closeable {
 			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
 			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
 			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
-			CellSink<Str<Function>> functionStringSink, Codec<Str<Function>> functionStringCodec) {
+			CellSink<Str<Function>> functionStringSink, FunctionStringCodec functionStringCodec) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;

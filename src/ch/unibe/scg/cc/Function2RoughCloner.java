@@ -29,7 +29,7 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 
 	@Inject
 	Function2RoughCloner(@PopularSnippets CellSink<Snippet> popularSnippets,
-			@PopularSnippets Codec<Snippet> popularSnippetsCodec, Logger logger,
+			PopularSnippetsCodec popularSnippetsCodec, Logger logger,
 			@PopularSnippetsThreshold int popularSnippetThreshold) {
 		this.popularSnippets = popularSnippets;
 		this.popularSnippetsCodec = popularSnippetsCodec;
