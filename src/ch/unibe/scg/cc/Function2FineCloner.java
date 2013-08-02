@@ -116,16 +116,13 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 	private Collection<Occurrence> findOccurrences(ByteString functionKey, Occurrence template) {
 		// TODO: Cacheing needed/?
 		Collection<Occurrence> ret = new ArrayList<>();
-		Iterable<CodeFile> files = filesTab.readColumn(functionKey);
-		checkNotEmpty(files, functionKey, "files");
+		Iterable<CodeFile> files = readColumn(filesTab, functionKey, "files");
 
 		for (CodeFile file : files) {
-			Iterable<Version> versions = versionsTab.readColumn(file.getVersion());
-			checkNotEmpty(versions, file.getVersion(), "versions");
+			Iterable<Version> versions = readColumn(versionsTab, file.getVersion(), "versions");
 
 			for (Version version : versions) {
-				Iterable<Project> projects = projectsTab.readColumn(version.getProject());
-				checkNotEmpty(projects, version.getProject(), "projects");
+				Iterable<Project> projects = readColumn(projectsTab, version.getProject(), "projects");
 
 				for (Project project : projects) {
 					ret.add(Occurrence.newBuilder(template).setVersion(version).setCodeFile(file).setProject(project)
@@ -137,11 +134,13 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 		return ret;
 	}
 
-	private void checkNotEmpty(Iterable<?> i, ByteString hash, String table) {
-		if (Iterables.isEmpty(i)) {
+	private <T> Iterable<T> readColumn(LookupTable<T> tab, ByteString hash, String table) {
+		Iterable<T> ret = tab.readColumn(hash);
+		if (Iterables.isEmpty(ret)) {
 			logger.severe("Found no " + table + " for hash "
 					+ BaseEncoding.base16().encode(hash.toByteArray()).substring(0, 6));
 		}
+		return ret;
 	}
 
 	@Override
