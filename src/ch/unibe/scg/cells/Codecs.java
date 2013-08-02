@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.Iterators;
 import com.google.protobuf.ByteString;
 
 /** Methods to help dealing with codecs */
@@ -36,6 +37,10 @@ public enum Codecs {
 						return decodeRow(encodedRow, codec);
 					}
 				}).iterator();
+			}
+
+			@Override public String toString() {
+				return Iterators.toString(iterator());
 			}
 		};
 	}
