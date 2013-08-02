@@ -1,4 +1,4 @@
-package org.unibe.scg.cells;
+package ch.unibe.scg.cells;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

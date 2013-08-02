@@ -3,10 +3,10 @@ package ch.unibe.scg.cc;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import org.unibe.scg.cells.CellSource;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Codecs;
-import org.unibe.scg.cells.Source;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.Source;
 
 class SourceProvider<T, S extends Codec<T>> implements Provider<Source<T>> {
 	final private Provider<CellSource<T>> cellSrc;

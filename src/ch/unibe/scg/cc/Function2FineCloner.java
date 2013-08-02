@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Logger;
 
-import org.unibe.scg.cells.LookupTable;
-import org.unibe.scg.cells.Mapper;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
@@ -20,6 +17,9 @@ import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cells.LookupTable;
+import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.Iterables;
 import com.google.common.io.BaseEncoding;

@@ -3,10 +3,10 @@ package ch.unibe.scg.cc;
 import java.io.IOException;
 
 import org.apache.hadoop.hbase.util.Bytes;
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.Codec;
 
 import ch.unibe.scg.cc.Protos.Clone;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Codec;
 
 import com.google.protobuf.ByteString;
 

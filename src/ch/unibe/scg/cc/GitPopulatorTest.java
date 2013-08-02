@@ -18,12 +18,6 @@ import java.util.zip.ZipInputStream;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.CellSink;
-import org.unibe.scg.cells.CellSource;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Codecs;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -34,6 +28,12 @@ import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.Iterables;
 import com.google.inject.Guice;

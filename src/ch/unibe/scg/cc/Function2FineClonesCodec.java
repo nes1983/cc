@@ -2,10 +2,10 @@ package ch.unibe.scg.cc;
 
 import java.io.IOException;
 
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.Codec;
 
 import ch.unibe.scg.cc.Protos.CloneGroup;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Codec;
 
 import com.google.common.hash.Hashing;
 import com.google.protobuf.ByteString;

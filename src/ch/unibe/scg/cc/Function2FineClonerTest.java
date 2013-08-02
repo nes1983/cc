@@ -4,16 +4,18 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import org.junit.Test;
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.InMemoryPipeline;
-import org.unibe.scg.cells.InMemoryShuffler;
 
 import ch.unibe.scg.cc.Function2RoughClonerTest.CollectionCellSource;
 import ch.unibe.scg.cc.Function2RoughClonerTest.TestModule;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryPipeline;
+import ch.unibe.scg.cells.InMemoryShuffler;
+import ch.unibe.scg.cells.Source;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -38,6 +40,13 @@ public class Function2FineClonerTest {
 			InMemoryPipeline<GitRepo, CloneGroup> pipe = InMemoryPipeline.make(src, shuffler);
 			runner.run(pipe);
 			shuffler.close();
+
+			Source<CloneGroup> groups = Codecs.decode(shuffler, i.getInstance(Function2FineClonesCodec.class));
+			for (Iterable<CloneGroup> row : groups) {
+				for (CloneGroup cg : row) {
+					System.out.println(cg.getText());
+				}
+			}
 		}
 	}
 }

@@ -2,10 +2,6 @@ package ch.unibe.scg.cc;
 
 import javax.inject.Singleton;
 
-import org.unibe.scg.cells.CellLookupTable;
-import org.unibe.scg.cells.CellSink;
-import org.unibe.scg.cells.CellSource;
-import org.unibe.scg.cells.InMemoryShuffler;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Populator;
@@ -15,6 +11,10 @@ import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
+import ch.unibe.scg.cells.CellLookupTable;
+import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.InMemoryShuffler;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Key;

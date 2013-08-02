@@ -5,13 +5,13 @@ import java.io.IOException;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Pipeline;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Pipeline;
 
 /** Run the clone detector. */
 public class ClonePipelineRunner {

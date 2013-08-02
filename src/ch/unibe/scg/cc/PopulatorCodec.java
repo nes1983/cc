@@ -1,13 +1,13 @@
 package ch.unibe.scg.cc;
 
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.Codec;
 
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Codec;
 
 import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;

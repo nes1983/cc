@@ -2,8 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.security.MessageDigest;
 
-import org.unibe.scg.cells.LookupTable;
-import org.unibe.scg.cells.Source;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
@@ -14,6 +12,8 @@ import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.regex.Replace;
+import ch.unibe.scg.cells.LookupTable;
+import ch.unibe.scg.cells.Source;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;

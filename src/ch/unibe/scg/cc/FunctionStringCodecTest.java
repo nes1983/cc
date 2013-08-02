@@ -6,10 +6,10 @@ import static org.junit.Assert.assertThat;
 import java.io.IOException;
 
 import org.junit.Test;
-import org.unibe.scg.cells.Codec;
 
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
+import ch.unibe.scg.cells.Codec;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

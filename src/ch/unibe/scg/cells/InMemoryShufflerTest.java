@@ -1,4 +1,4 @@
-package org.unibe.scg.cells;
+package ch.unibe.scg.cells;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

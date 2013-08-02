@@ -4,10 +4,10 @@ import java.nio.ByteBuffer;
 
 import javax.inject.Provider;
 
-import org.unibe.scg.cells.Source;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cells.Source;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;

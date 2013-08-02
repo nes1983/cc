@@ -1,4 +1,4 @@
-package org.unibe.scg.cells;
+package ch.unibe.scg.cells;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

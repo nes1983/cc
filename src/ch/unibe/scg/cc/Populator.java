@@ -9,9 +9,6 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-import org.unibe.scg.cells.CellSink;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
@@ -23,6 +20,9 @@ import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
+import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Sink;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;

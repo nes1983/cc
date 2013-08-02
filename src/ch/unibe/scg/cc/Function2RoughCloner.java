@@ -6,15 +6,15 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
-import org.unibe.scg.cells.CellSink;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Mapper;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;

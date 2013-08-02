@@ -25,13 +25,13 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.GitPopulator;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
+import ch.unibe.scg.cells.Sink;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;

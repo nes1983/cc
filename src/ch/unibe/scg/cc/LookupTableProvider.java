@@ -3,10 +3,10 @@ package ch.unibe.scg.cc;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import org.unibe.scg.cells.CellLookupTable;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Codecs;
-import org.unibe.scg.cells.LookupTable;
+import ch.unibe.scg.cells.CellLookupTable;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.LookupTable;
 
 class LookupTableProvider<T, S extends Codec<T>> implements Provider<LookupTable<T>> {
 	final private Provider<CellLookupTable<T>> cellTable;

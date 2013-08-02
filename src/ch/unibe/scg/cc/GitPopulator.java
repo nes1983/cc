@@ -23,13 +23,13 @@ import org.eclipse.jgit.storage.file.FileRepository;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
-import org.unibe.scg.cells.Mapper;
-import org.unibe.scg.cells.Sink;
 
 import ch.unibe.scg.cc.Populator.ProjectRegistrar;
 import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.Sink;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {

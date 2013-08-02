@@ -12,12 +12,6 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.junit.Test;
-import org.unibe.scg.cells.Cell;
-import org.unibe.scg.cells.CellSource;
-import org.unibe.scg.cells.Codec;
-import org.unibe.scg.cells.Codecs;
-import org.unibe.scg.cells.InMemoryPipeline;
-import org.unibe.scg.cells.InMemoryShuffler;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
@@ -26,6 +20,12 @@ import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
+import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryPipeline;
+import ch.unibe.scg.cells.InMemoryShuffler;
 
 import com.google.common.collect.Iterables;
 import com.google.inject.AbstractModule;
