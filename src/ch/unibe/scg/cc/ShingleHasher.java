@@ -22,8 +22,6 @@ class ShingleHasher implements Hasher {
 	final private static int SHINGLE_LENGTH = 4;
 	final private RunAutomaton shingleRegex =  new RunAutomaton(new RegExp("[^\\ ]+\\ [^\\ ]+\\ [^\\ ]+\\ [^\\ ]+").toAutomaton());
 
-	final int SHA1_LENGTH = 20;
-
 	@Inject
 	ShingleHasher(MessageDigest md) {
 		this.md = md;
@@ -61,7 +59,7 @@ class ShingleHasher implements Hasher {
 	private byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
 		Preconditions.checkArgument(hashedShingles.iterator().hasNext(),
 				"There was nothing to make a sketch from. Input:\n" + doc);
-		final byte[] hash = new byte[SHA1_LENGTH];
+		final byte[] hash = new byte[md.getDigestLength()];
 		int mask = 0x7; // After the first shift, that'll give binary pattern 11.
 		do {
 			mask >>= 1;
