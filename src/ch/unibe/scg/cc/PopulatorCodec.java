@@ -35,7 +35,7 @@ class PopulatorCodec {
 		}
 	}
 
-	private static class Function2SnippetCodec implements Codec<Snippet> {
+	static class Function2SnippetCodec implements Codec<Snippet> {
 		@Override
 		public Cell<Snippet> encode(Snippet snip) {
 			byte[] colKey = Bytes.concat(new byte[] {(byte) snip.getCloneType().getNumber()},

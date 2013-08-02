@@ -12,6 +12,7 @@ import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.regex.Replace;
 import ch.unibe.scg.cells.LookupTable;
+import ch.unibe.scg.cells.Sink;
 import ch.unibe.scg.cells.Source;
 
 import com.google.inject.AbstractModule;
@@ -35,6 +36,19 @@ public class CCModule extends AbstractModule {
 		bind(new TypeLiteral<LookupTable<Project>>() {})
 				.toProvider(new TypeLiteral<LookupTableProvider<Project, PopulatorCodec.ProjectCodec>>() {});
 
+		bind(new TypeLiteral<Sink<Project>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<Project, PopulatorCodec.ProjectCodec>>() {});
+		bind(new TypeLiteral<Sink<Version>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<Version, PopulatorCodec.VersionCodec>>() {});
+		bind(new TypeLiteral<Sink<CodeFile>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<CodeFile, PopulatorCodec.CodeFileCodec>>() {});
+		bind(new TypeLiteral<Sink<Function>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<Function, PopulatorCodec.FunctionCodec>>() {});
+		bind(new TypeLiteral<Sink<Snippet>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<Snippet, PopulatorCodec.Function2SnippetCodec>>() {});
+		bind(new TypeLiteral<Sink<Str<Function>>>() {})
+				.toProvider(new TypeLiteral<SinkProvider<Str<Function>, FunctionStringCodec>>() {});
+		
 		bind(new TypeLiteral<Source<Snippet>>() {}).annotatedWith(PopularSnippets.class)
 				.toProvider(new TypeLiteral<SourceProvider<Snippet, PopularSnippetsCodec>>() {});
 		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class);

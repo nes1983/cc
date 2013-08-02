@@ -9,7 +9,6 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-
 import ch.unibe.scg.cc.Annotations.Type1;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CloneType;
@@ -20,8 +19,6 @@ import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
-import ch.unibe.scg.cells.CellSink;
-import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Sink;
 
 import com.google.common.cache.Cache;
@@ -45,19 +42,16 @@ public class Populator implements Closeable {
 	final private StandardHasher standardHasher;
 	final private Hasher shingleHasher;
 	final private StringOfLinesFactory stringOfLinesFactory;
-	final private PopulatorCodec codec;
 
-	// TODO: Replace by encoded Sinks.
 	// If you add a cellSink - REMEMBER TO ADD IT TO CLOSE!
-	final private CellSink<Project> projectSink;
-	final private CellSink<Version> versionSink;
-	final private CellSink<CodeFile> codeFileSink;
-	final private CellSink<Function> functionSink;
-	final private CellSink<Str<Function>> functionStringSink;
+	final private Sink<Project> projectSink;
+	final private Sink<Version> versionSink;
+	final private Sink<CodeFile> codeFileSink;
+	final private Sink<Function> functionSink;
+	final private Sink<Str<Function>> functionStringSink;
 		/** Function2Snippet */
-	final private CellSink<Snippet> snippetSink;
+	final private Sink<Snippet> snippetSink;
 
-	final private Codec<Str<Function>> functionStringCodec;
 	/** Changes for every project */
 	private Sink<Snippet> snippet2Functions;
 
@@ -70,23 +64,20 @@ public class Populator implements Closeable {
 	@Inject
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
 			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
-			PopulatorCodec codec, CellSink<Project> projectSink, CellSink<Version> versionSink,
-			CellSink<CodeFile> codeFileSink, CellSink<Function> functionSink, CellSink<Snippet> snippetSink,
-			CellSink<Str<Function>> functionStringSink, FunctionStringCodec functionStringCodec) {
+			Sink<Project> projectSink, Sink<Version> versionSink, Sink<CodeFile> codeFileSink,
+			Sink<Function> functionSink, Sink<Snippet> snippetSink, Sink<Str<Function>> functionStringSink) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;
 		this.type2 = type2;
 		this.tokenizer = tokenizer;
 		this.stringOfLinesFactory = stringOfLinesFactory;
-		this.codec = codec;
 		this.projectSink = projectSink;
 		this.versionSink = versionSink;
 		this.codeFileSink = codeFileSink;
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
 		this.functionStringSink = functionStringSink;
-		this.functionStringCodec = functionStringCodec;
 	}
 
 	/** Register all Versions of a Project */
@@ -112,11 +103,11 @@ public class Populator implements Closeable {
 				hs.add(v.getHash());
 			}
 			project.setHash(xor(hs));
-			projectSink.write(codec.project.encode(project.build()));
+			projectSink.write(project.build());
 
 			for (Version.Builder v : versions) {
 				v.setProject(project.getHash());
-				versionSink.write(codec.version.encode(v.build()));
+				versionSink.write(v.build());
 			}
 		}
 
@@ -157,7 +148,7 @@ public class Populator implements Closeable {
 
 			for (CodeFile.Builder fil : files) {
 				fil.setVersion(version.getHash());
-				codeFileSink.write(codec.codeFile.encode(fil.build()));
+				codeFileSink.write(fil.build());
 			}
 		}
 
@@ -206,10 +197,9 @@ public class Populator implements Closeable {
 					continue;
 				}
 
-				functionStringSink
-						.write(functionStringCodec.encode(new Str<Function>(fun.getHash(), fun.getContents())));
+				functionStringSink.write(new Str<Function>(fun.getHash(), fun.getContents()));
 
-				functionSink.write(codec.function.encode(fun));
+				functionSink.write(fun);
 
 				if (writtenFunctions.getIfPresent(fun.getHash()) != null) {
 					return;
@@ -278,7 +268,7 @@ public class Populator implements Closeable {
 					.setHash(ByteString.copyFrom(hash))
 					.setCloneType(type)
 					.build();
-			snippetSink.write(codec.snippet.encode(snip));
+			snippetSink.write(snip);
 			snippet2Functions.write(snip);
 		}
 	}
