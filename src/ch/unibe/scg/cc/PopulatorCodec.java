@@ -63,7 +63,7 @@ class PopulatorCodec {
 		}
 	}
 
-	private static class FunctionCodec implements Codec<Function> {
+	static class FunctionCodec implements Codec<Function> {
 		@Override
 		public Cell<Function> encode(Function fun) {
 			ByteString colKey = fun.getHash().concat(ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine())));
@@ -80,7 +80,7 @@ class PopulatorCodec {
 	static class ProjectCodec implements Codec<Project> {
 		@Override
 		public Cell<Project> encode(Project project) {
-			return Cell.make(project.getHash(), ByteString.EMPTY, project.toByteString());
+			return Cell.make(project.getHash(), project.getHash(), project.toByteString());
 		}
 
 		@Override

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Logger;
 
-
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
@@ -38,13 +37,14 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 	final private LookupTable<CodeFile> filesTab;
 	final private LookupTable<Version> versionsTab;
 	final private LookupTable<Project> projectsTab;
+	final private LookupTable<Function> functionsTab;
 	final private LookupTable<Str<Function>> funStringsTab;
 
 	@Inject
 	Function2FineCloner(StringOfLinesFactory stringOfLinesFactory, LookupTable<CodeFile> filesTab,
 			LookupTable<Version> versionsTab, LookupTable<Project> projectsTab,
 			LookupTable<Str<Function>> funStringsTab, Logger logger, CloneExpander cloneExpander,
-			LookupTable<Str<Function>> cloneLoader, SpamDetector spamDetector) {
+			LookupTable<Str<Function>> cloneLoader, SpamDetector spamDetector, LookupTable<Function> functionsTab) {
 		this.stringOfLinesFactory = stringOfLinesFactory;
 		this.filesTab = filesTab;
 		this.versionsTab = versionsTab;
@@ -54,6 +54,7 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 		this.cloneLoader = cloneLoader;
 		this.spamDetector = spamDetector;
 		this.logger = logger;
+		this.functionsTab = functionsTab;
 	}
 
 	@Override
@@ -116,17 +117,21 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 	private Collection<Occurrence> findOccurrences(ByteString functionKey, Occurrence template) {
 		// TODO: Cacheing needed/?
 		Collection<Occurrence> ret = new ArrayList<>();
-		Iterable<CodeFile> files = readColumn(filesTab, functionKey, "files");
+		Iterable<Function> funs = readColumn(functionsTab, functionKey, "functions");
 
-		for (CodeFile file : files) {
-			Iterable<Version> versions = readColumn(versionsTab, file.getVersion(), "versions");
+		for (Function fun : funs) {
+			Iterable<CodeFile> files = readColumn(filesTab, fun.getCodeFile(), "files");
 
-			for (Version version : versions) {
-				Iterable<Project> projects = readColumn(projectsTab, version.getProject(), "projects");
+			for (CodeFile file : files) {
+				Iterable<Version> versions = readColumn(versionsTab, file.getVersion(), "versions");
 
-				for (Project project : projects) {
-					ret.add(Occurrence.newBuilder(template).setVersion(version).setCodeFile(file).setProject(project)
-							.build());
+				for (Version version : versions) {
+					Iterable<Project> projects = readColumn(projectsTab, version.getProject(), "projects");
+
+					for (Project project : projects) {
+						ret.add(Occurrence.newBuilder(template).setVersion(version).setCodeFile(file)
+								.setProject(project).build());
+					}
 				}
 			}
 		}
@@ -152,6 +157,4 @@ class Function2FineCloner implements Mapper<Clone, CloneGroup> {
 			closer.register(cloneLoader);
 		}
 	}
-
-
 }

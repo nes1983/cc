@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import javax.inject.Singleton;
 
-
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.Populator;
 import ch.unibe.scg.cc.Annotations.Snippet2Functions;
@@ -64,6 +63,7 @@ class InMemoryModule extends AbstractModule {
 			.to(Key.get(snippetShuffler, PopularSnippets.class));
 
 		bind(new TypeLiteral<CellLookupTable<Str<Function>>>() {}).to(functionStrShuffler);
+		bind(new TypeLiteral<CellLookupTable<Function>>() {}).to(Key.get(functionShuffler, Populator.class));
 		bind(new TypeLiteral<CellLookupTable<CodeFile>>() {}).to(Key.get(codeFileShuffler, Populator.class));
 		bind(new TypeLiteral<CellLookupTable<Version>>() {}).to(Key.get(versionShuffler, Populator.class));
 		bind(new TypeLiteral<CellLookupTable<Project>>() {}).to(Key.get(projectShuffler, Populator.class));

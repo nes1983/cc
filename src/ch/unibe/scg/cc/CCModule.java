@@ -2,7 +2,6 @@ package ch.unibe.scg.cc;
 
 import java.security.MessageDigest;
 
-
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Type2;
@@ -27,6 +26,8 @@ public class CCModule extends AbstractModule {
 
 		bind(new TypeLiteral<LookupTable<Str<Function>>>() {})
 				.toProvider(new TypeLiteral<LookupTableProvider<Str<Function>, FunctionStringCodec>>() {});
+		bind(new TypeLiteral<LookupTable<Function>>() {})
+				.toProvider(new TypeLiteral<LookupTableProvider<Function, PopulatorCodec.FunctionCodec>>() {});
 		bind(new TypeLiteral<LookupTable<CodeFile>>() {})
 				.toProvider(new TypeLiteral<LookupTableProvider<CodeFile, PopulatorCodec.CodeFileCodec>>() {});
 		bind(new TypeLiteral<LookupTable<Version>>() {})
