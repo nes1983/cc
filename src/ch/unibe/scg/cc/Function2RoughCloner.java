@@ -6,13 +6,10 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
-
-import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
+import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cells.CellSink;
-import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.Sink;
 
@@ -22,17 +19,14 @@ import com.google.common.io.BaseEncoding;
 
 /** Filter phase of the pipeline */
 class Function2RoughCloner implements Mapper<Snippet, Clone> {
-	final private CellSink<Snippet> popularSnippets;
+	final private Sink<Snippet> popularSnippets;
 	final private int popularSnippetThreshold;
-	final private Codec<Snippet> popularSnippetsCodec;
 	final private Logger logger;
 
 	@Inject
-	Function2RoughCloner(@PopularSnippets CellSink<Snippet> popularSnippets,
-			PopularSnippetsCodec popularSnippetsCodec, Logger logger,
+	Function2RoughCloner(@PopularSnippets Sink<Snippet> popularSnippets, Logger logger,
 			@PopularSnippetsThreshold int popularSnippetThreshold) {
 		this.popularSnippets = popularSnippets;
-		this.popularSnippetsCodec = popularSnippetsCodec;
 		this.logger = logger;
 		this.popularSnippetThreshold = popularSnippetThreshold;
 	}
@@ -54,7 +48,7 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 		// special handling of popular snippets
 		if (row.size() >= popularSnippetThreshold) {
 			for (Snippet loc : row) {
-				popularSnippets.write(popularSnippetsCodec.encode(loc));
+				popularSnippets.write(loc);
 			}
 			return;
 		}

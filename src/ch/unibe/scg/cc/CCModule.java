@@ -51,6 +51,8 @@ public class CCModule extends AbstractModule {
 		
 		bind(new TypeLiteral<Source<Snippet>>() {}).annotatedWith(PopularSnippets.class)
 				.toProvider(new TypeLiteral<SourceProvider<Snippet, PopularSnippetsCodec>>() {});
+		bind(new TypeLiteral<Sink<Snippet>>() {}).annotatedWith(PopularSnippets.class)
+				.toProvider(PopularSnippetSinkProvider.class);
 		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class);
 
 		bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(500);
