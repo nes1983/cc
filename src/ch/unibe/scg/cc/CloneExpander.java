@@ -34,7 +34,7 @@ import com.google.common.collect.Lists;
  * match's {@link Clone#getThisSnippet()} as an input to
  * {@link #expandClones(Iterable)}.
  */
-public class CloneExpander {
+class CloneExpander {
 	private static final int MAX_GAP = 10;
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippets, they should contain their length.
@@ -85,7 +85,7 @@ public class CloneExpander {
 	 *            be constant for the entire list.
 	 * @return The matches, stitched together.
 	 */
-	public Collection<Clone> expandClones(final Iterable<Clone> matches) {
+	Collection<Clone> expandClones(final Iterable<Clone> matches) {
 		if (Iterables.isEmpty(matches)) {
 			return Collections.emptyList();
 		}
