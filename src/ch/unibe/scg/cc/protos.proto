@@ -70,14 +70,7 @@ message Occurrence {
 	optional Version version = 2;
 	optional CodeFile codeFile = 3;
 	optional Function function = 4;
-	// Relative to the function.
-	// Not the file.
-	optional int32 position = 9;
-	// The position of this occurrence in the file
-	// is at position + function_baseline
-	optional int32 function_baseline = 10;
-	// Number of lines of the clone
-	optional int32 length = 11;
+	optional Snippet snippet = 5;
 }
 
 message GitRepo {
