@@ -33,6 +33,9 @@ public interface Pipeline<IN, EFF> {
 		 * @throws IOException If several exceptions occur, any may be reported.
 		 */
 		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException;
+		/** Run the entire pipeline, and run {@code offlineMapper} locally. */
+		void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, EFF>> offlineMapper, Codec<EFF> codec)
+				throws IOException;
 	}
 
 	/** A segment that was just mapped and now needs shuffling or an efflux. */

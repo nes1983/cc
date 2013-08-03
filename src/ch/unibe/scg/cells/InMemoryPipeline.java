@@ -50,6 +50,14 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			run(src, srcCodec, m, pipeSink, sinkCodec);
 			pipeSink.close();
 		}
+
+		@Override
+		public void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, OUT>> offlineMapper, Codec<OUT> codec) throws IOException {
+			try(OfflineMapper<I, OUT> m = offlineMapper.get()) {
+				// Rather than close the sinks, we close the underlying CellSink directly.
+				m.map(Codecs.decode(src, srcCodec), Codecs.encode(pipeSink, codec));
+			}
+		}
 	}
 
 	private class InMemoryShuffleablePipeline<I, E> implements ShuffleablePipeline<E, OUT> {
@@ -76,8 +84,10 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
 			CellSink<E> sink, Codec<E> sinkCodec) throws IOException {
 		try (Mapper<I, E> m = mapper.get()) {
-			for (Iterable<I> decoded : Codecs.decode(src, srcCodec)) {
-				// In memory, since all iterables are backed by arrays, this is safe.
+			// Rather than close the sinks, we close the underlying CellSink directly.
+			Source<I> decodedSrc = Codecs.decode(src, srcCodec);
+			for (Iterable<I> decoded : decodedSrc) {
+				// In memory, since all iterables are backed by arrays, Iterables.get is safe.
 				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
 			}
 		}
