@@ -8,7 +8,7 @@ import javax.inject.Provider;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
-import ch.unibe.scg.cells.hadoop.Annotations.TableName;
+import ch.unibe.scg.cells.TableName;
 
 class HTableProvider implements Provider<HTable> {
 	final private Configuration hbaseConfig;

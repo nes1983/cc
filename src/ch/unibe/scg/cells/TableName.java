@@ -1,4 +1,4 @@
-package ch.unibe.scg.cells.hadoop;
+package ch.unibe.scg.cells;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
@@ -10,9 +10,8 @@ import java.lang.annotation.Target;
 
 import javax.inject.Qualifier;
 
-class Annotations {
-	@Qualifier
-	@Target({ FIELD, PARAMETER, METHOD })
-	@Retention(RUNTIME)
-	static @interface WriteToWalEnabled {}
-}
+/** The name of a table underlying a source or sink. */
+@Qualifier
+@Target({ FIELD, PARAMETER, METHOD })
+@Retention(RUNTIME)
+public @interface TableName {}
