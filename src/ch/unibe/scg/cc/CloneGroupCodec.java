@@ -10,7 +10,7 @@ import ch.unibe.scg.cells.Codec;
 import com.google.common.hash.Hashing;
 import com.google.protobuf.ByteString;
 
-class Function2FineClonesCodec implements Codec<CloneGroup> {
+class CloneGroupCodec implements Codec<CloneGroup> {
 	@Override
 	public Cell<CloneGroup> encode(CloneGroup cg) {
 		return Cell.make(ByteString.copyFrom(Hashing.sha1().hashString(cg.getText()).asBytes()),
