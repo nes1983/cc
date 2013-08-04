@@ -8,7 +8,7 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Iterators;
 import com.google.protobuf.ByteString;
 
-/** Methods to help dealing with codecs */
+/** Methods to help dealing with codecs. */
 public enum Codecs {
 	; // Don't instantiate
 
