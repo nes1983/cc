@@ -2,20 +2,27 @@ package ch.unibe.scg.cells.hadoop;
 
 import java.io.IOException;
 
+import javax.inject.Inject;
+
 import org.apache.hadoop.hbase.client.Put;
 
+import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.hadoop.Annotations.WriteToWalEnabled;
+
+import com.google.protobuf.ByteString;
 
 class HBaseCellSink<T> implements CellSink<T> {
 	final private HTableWriteBuffer hTable;
-	final private PutFactory putFactory;
 	final private byte[] family;
+	final boolean writeToWalEnabled;
 
-	HBaseCellSink(HTableWriteBuffer hTable, PutFactory putFactory, byte[] family) {
+	@Inject
+	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family, @WriteToWalEnabled boolean writeToWalEnabled) {
 		this.hTable = hTable;
-		this.putFactory = putFactory;
-		this.family = family;
+		this.family = family.toByteArray();
+		this.writeToWalEnabled = writeToWalEnabled;
 	}
 
 	@Override
@@ -25,7 +32,8 @@ class HBaseCellSink<T> implements CellSink<T> {
 
 	@Override
 	public void write(Cell<T> cell) {
-		Put put = putFactory.create(cell.getRowKey().toByteArray());
+		Put put = new Put(cell.getRowKey().toByteArray());
+		put.setWriteToWAL(writeToWalEnabled);
 		put.add(family, cell.getColumnKey().toByteArray(), cell.getCellContents().toByteArray());
 	}
 }

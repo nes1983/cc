@@ -8,18 +8,18 @@ import javax.inject.Provider;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.HTable;
 
-import ch.unibe.scg.cells.TableName;
+import ch.unibe.scg.cells.Annotations.TableName;
 
+/** Assumes that CellsModule is also installed. Sets default values on the table. */
 class HTableProvider implements Provider<HTable> {
 	final private Configuration hbaseConfig;
+	final private String tableName;
 
 	@Inject
 	HTableProvider(Configuration hbaseConfig, @TableName String tableName) {
 		this.hbaseConfig = hbaseConfig;
 		this.tableName = tableName;
 	}
-
-	final private String tableName;
 
 	@Override
 	public HTable get() {

@@ -1,5 +1,7 @@
 package ch.unibe.scg.cells.hadoop;
 
+import org.apache.hadoop.hbase.client.HTable;
+
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.hadoop.Annotations.WriteToWalEnabled;
 
@@ -12,5 +14,6 @@ public class HadoopModule extends AbstractModule {
 	protected void configure() {
 		bind(new TypeLiteral<CellSink<?>>() {}).to(new TypeLiteral<HBaseCellSink<?>>() {});
 		bindConstant().annotatedWith(WriteToWalEnabled.class).to(false);
+		bind(HTable.class).toProvider(HTableProvider.class);
 	}
 }

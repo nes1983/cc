@@ -10,9 +10,9 @@ import java.lang.annotation.Target;
 
 import javax.inject.Qualifier;
 
-class Annotations {
+public class Annotations {
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface WriteToWalEnabled {}
+	public static @interface WriteToWalEnabled {}
 }
