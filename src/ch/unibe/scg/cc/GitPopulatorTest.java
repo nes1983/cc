@@ -17,9 +17,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import org.junit.Assert;
-import org.junit.Test;
 
-import ch.unibe.scg.cc.Annotations.Snippet2Functions;
+import ch.unibe.scg.cc.Annotations.Populator;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
@@ -29,11 +28,13 @@ import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
-import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.Sink;
+import ch.unibe.scg.cells.Source;
 
 import com.google.common.collect.Iterables;
 import com.google.inject.Guice;
@@ -62,8 +63,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testPopulate() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		walkRepo(i, parseZippedGit(TESTREPO));
+		Injector i = walkRepo(parseZippedGit(TESTREPO));
 
 		Iterable<Iterable<Cell<Project>>> projectPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Project>>() {}));
@@ -137,7 +137,7 @@ public final class GitPopulatorTest {
 		assertThat(functionString.contents.indexOf("public void testProjnameRegex"), is(1));
 
 		Iterable<Iterable<Cell<Snippet>>> snippet2FuncsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
+				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Populator.class));
 		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
 
 		Iterable<Cell<Snippet>> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
@@ -154,8 +154,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testPaperExampleFile2Function() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
+		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		PopulatorCodec codec = i.getInstance(PopulatorCodec.class);
 		Iterable<Iterable<Function>> decodedPartitions =
@@ -185,12 +184,9 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testPaperExampleSnippet2Functions() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
-
-		Iterable<Iterable<Cell<Snippet>>> snippet2FunctionsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Snippet>>() {}, Snippet2Functions.class));
-		assertThat(Iterables.size(snippet2FunctionsPartitions), is(145));
+		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
+		Source<Snippet> snippet2Function = i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, Test.class));
+		assertThat(Iterables.size(snippet2Function), is(145));
 
 		// Numbers are taken from paper. See table II.
 		ByteString row03D8 = ByteString.copyFrom(new byte[] {0x03, (byte) 0xd8});
@@ -212,8 +208,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testPaperExampleFunction2Snippets() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule(), new InMemoryModule());
-		walkRepo(i, GitPopulatorTest.parseZippedGit("paperExample.zip"));
+		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		CellSource<Snippet> function2snippetsPartitions = i.getInstance(
 				Key.get(new TypeLiteral<CellSource<Snippet>>() {}));
@@ -260,15 +255,22 @@ public final class GitPopulatorTest {
 				"C46C6B63797890F241C4C722182213F9FD1D1C7B");
 	}
 
-	private static void walkRepo(Injector i, GitRepo repo) throws IOException {
-		try(Sink<Snippet> snippetSink =
-				Codecs.encode(
-						i.getInstance(Key.get(new TypeLiteral<CellSink<Snippet>>() {}, Snippet2Functions.class)),
-						i.getInstance(Snippet2FunctionsCodec.class));
-				GitPopulator gitWalker = i.getInstance(GitPopulator.class)) {
-			gitWalker.map(repo, Arrays.asList(repo), snippetSink);
+	private static Injector walkRepo(GitRepo repo) throws IOException {
+		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule(), new CellsModule() {
+			@Override protected void configure() {
+				installTable("rofl", ByteString.EMPTY, Test.class, new TypeLiteral<Snippet>() {},
+						Snippet2FunctionsCodec.class, new InMemoryStorage());
+			}
+		});
+
+		try (GitPopulator gitPopulator = i.getInstance(GitPopulator.class);
+				Sink<Snippet> snippetSink = i.getInstance(Key.get(new TypeLiteral<Sink<Snippet>>() {}, Test.class))) {
+			gitPopulator.map(repo, Arrays.asList(repo), snippetSink);
 		}
+		return i;
 	}
+
+	private static @interface Test {}
 
 	static GitRepo parseZippedGit(String pathToZip) throws IOException {
 		try(ZipInputStream packFile = new ZipInputStream(GitPopulatorTest.class.getResourceAsStream(pathToZip));

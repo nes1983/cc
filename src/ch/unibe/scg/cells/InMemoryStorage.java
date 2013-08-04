@@ -6,7 +6,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 
 /** A {@link StorageModule} that runs completely in memory. No files are touched. */
-public final class InMemoryModule extends AbstractModule implements StorageModule {
+public final class InMemoryStorage extends AbstractModule implements StorageModule {
 	@Override
 	protected void configure() {
 		bind(new TypeLiteral<InMemoryShuffler<?>>() {}).in(Singleton.class);

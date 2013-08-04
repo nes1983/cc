@@ -27,13 +27,13 @@ public final class CellsModuleTest {
 						TableName.class,
 						new TypeLiteral<Integer>() {},
 						IntCodec.class,
-						new InMemoryModule());
+						new InMemoryStorage());
 				installTable("blub",
 						ByteString.EMPTY,
 						FamilyName.class,
 						new TypeLiteral<Integer>() {},
 						IntCodec.class,
-						new InMemoryModule());
+						new InMemoryStorage());
 			}
 		});
 
