@@ -41,9 +41,12 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 	final private Map<ByteString, Collection<Occurrence>> functionOccurrences = new HashMap<>();
 
 	@Inject
-	CloneGroupClusterer(LookupTable<CodeFile> filesTab, LookupTable<Version> versionsTab,
-			LookupTable<Project> projectsTab, LookupTable<Function> functionsTab,
-			LookupTable<Str<Function>> funStringsTab, StringOfLinesFactory stringOfLinesFactory) {
+	CloneGroupClusterer(@Annotations.Populator LookupTable<CodeFile> filesTab,
+			@Annotations.Populator LookupTable<Version> versionsTab,
+			@Annotations.Populator LookupTable<Project> projectsTab,
+			@Annotations.Populator LookupTable<Function> functionsTab,
+			@Annotations.Populator LookupTable<Str<Function>> funStringsTab,
+			StringOfLinesFactory stringOfLinesFactory) {
 		this.filesTab = filesTab;
 		this.versionsTab = versionsTab;
 		this.projectsTab = projectsTab;

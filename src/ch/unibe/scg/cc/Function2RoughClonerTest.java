@@ -23,9 +23,10 @@ import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryModule;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
+import ch.unibe.scg.cells.Source;
 
 import com.google.common.collect.Iterables;
 import com.google.inject.AbstractModule;
@@ -40,7 +41,7 @@ public final class Function2RoughClonerTest {
 	@Test
 	public void testMap() throws IOException {
 		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(), new JavaModule(), new InMemoryModule()).with(new TestModule()));
+				Modules.override(new CCModule(new InMemoryModule()), new JavaModule()).with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
@@ -57,13 +58,10 @@ public final class Function2RoughClonerTest {
 			// See paper: Table III
 			assertThat(Iterables.size(sink), is(2));
 
-			CellSource<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<CellSource<Snippet>>() {}, PopularSnippets.class));
-
-			Iterable<Iterable<Snippet>> decodedRows = Codecs.decode(popularPartitions,
-					i.getInstance(PopularSnippetsCodec.class));
+			Source<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, PopularSnippets.class));
 
 			Iterable<Snippet> d618 = null;
-			for (Iterable<Snippet> row : decodedRows) {
+			for (Iterable<Snippet> row : popularPartitions) {
 				if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("D618")) {
 					d618 = row;
 					break;

@@ -39,17 +39,12 @@ public class Annotations {
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface Snippet2Functions {}
-
-	@Qualifier
-	@Target({ FIELD, PARAMETER, METHOD })
-	@Retention(RUNTIME)
 	static @interface Populator {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	static @interface PopularSnippets {}
+	public static @interface PopularSnippets {}
 
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })

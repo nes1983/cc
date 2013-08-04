@@ -22,7 +22,7 @@ class Function2FineCloner implements Mapper<Clone, Clone> {
 
 	@Inject
 	Function2FineCloner(StringOfLinesFactory stringOfLinesFactory, CloneExpander cloneExpander,
-			LookupTable<Str<Function>> cloneLoader, SpamDetector spamDetector) {
+			@Annotations.Populator LookupTable<Str<Function>> cloneLoader, SpamDetector spamDetector) {
 		this.stringOfLinesFactory = stringOfLinesFactory;
 		this.cloneExpander = cloneExpander;
 		this.cloneLoader = cloneLoader;

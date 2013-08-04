@@ -64,8 +64,12 @@ public class Populator implements Closeable {
 	@Inject
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
 			@Type2 Normalizer type2, Tokenizer tokenizer, StringOfLinesFactory stringOfLinesFactory,
-			Sink<Project> projectSink, Sink<Version> versionSink, Sink<CodeFile> codeFileSink,
-			Sink<Function> functionSink, Sink<Snippet> snippetSink, Sink<Str<Function>> functionStringSink) {
+			@Annotations.Populator Sink<Project> projectSink,
+			@Annotations.Populator Sink<Version> versionSink,
+			@Annotations.Populator Sink<CodeFile> codeFileSink,
+			@Annotations.Populator Sink<Function> functionSink,
+			@Annotations.Populator Sink<Snippet> snippetSink,
+			@Annotations.Populator Sink<Str<Function>> functionStringSink) {
 		this.standardHasher = standardHasher;
 		this.shingleHasher = shingleHasher;
 		this.type1 = type1;

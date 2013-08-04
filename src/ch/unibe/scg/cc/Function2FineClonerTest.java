@@ -16,6 +16,7 @@ import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryModule;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.Source;
@@ -31,8 +32,8 @@ public class Function2FineClonerTest {
 	/** Test {@link Function2FineCloner#map}. */
 	@Test
 	public void testMap() throws IOException {
-		Injector i = Guice.createInjector(Modules.override(new CCModule(), new JavaModule(), new InMemoryModule())
-				.with(new TestModule()));
+		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryModule()),
+				new JavaModule()).with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
