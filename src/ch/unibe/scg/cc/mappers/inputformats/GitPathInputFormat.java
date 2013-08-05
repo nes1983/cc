@@ -3,7 +3,6 @@ package ch.unibe.scg.cc.mappers.inputformats;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -45,10 +44,8 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 		public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException,
 				InterruptedException {
 			FileSplit split = (FileSplit) inputSplit;
-			Configuration conf = taskAttemptContext.getConfiguration();
-			Path path = split.getPath();
-			fs = path.getFileSystem(conf);
-			this.packFilePath = split.getPath();
+			fs = split.getPath().getFileSystem(taskAttemptContext.getConfiguration());
+			packFilePath = split.getPath();
 		}
 
 		@Override
