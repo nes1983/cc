@@ -72,7 +72,8 @@ class HBaseCellSink<T> implements CellSink<T> {
 	}
 
 	@Inject
-	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family, @WriteToWalEnabled boolean writeToWalEnabled) {
+	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family,
+			@WriteToWalEnabled boolean writeToWalEnabled) {
 		this.hTable = hTable;
 		this.family = family.toByteArray();
 		this.writeToWalEnabled = writeToWalEnabled;

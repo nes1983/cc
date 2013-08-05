@@ -41,8 +41,8 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 		private FileSystem fs;
 
 		@Override
-		public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext) throws IOException,
-				InterruptedException {
+		public void initialize(InputSplit inputSplit, TaskAttemptContext taskAttemptContext)
+				throws IOException,	InterruptedException {
 			FileSplit split = (FileSplit) inputSplit;
 			fs = split.getPath().getFileSystem(taskAttemptContext.getConfiguration());
 			packFilePath = split.getPath();
