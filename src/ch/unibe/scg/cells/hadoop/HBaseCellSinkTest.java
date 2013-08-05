@@ -63,7 +63,7 @@ public final class HBaseCellSinkTest {
 		}
 	}
 
-	/** Testing the {@link HBaseCellSink#write(Cell)} */
+	/** Testing {@link HBaseCellSink#write(Cell)}. */
 	@Test
 	public void writeSmokeTest() throws IOException {
 		try (HBaseCellSink<Void> cellSink =
