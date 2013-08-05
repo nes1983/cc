@@ -16,7 +16,6 @@ import ch.unibe.scg.cc.StandardHasher;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.activerecord.PutFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 
 import com.google.common.collect.Maps;

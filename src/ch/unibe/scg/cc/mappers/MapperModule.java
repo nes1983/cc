@@ -3,7 +3,6 @@ package ch.unibe.scg.cc.mappers;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Scan;
 
-import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.HTableWriteBuffer.BufferFactory;
 
 import com.google.inject.AbstractModule;

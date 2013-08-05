@@ -20,7 +20,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.CCModule;
-import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.common.base.Stopwatch;

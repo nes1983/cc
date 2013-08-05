@@ -18,7 +18,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
-	static Logger logger = Logger.getLogger(GitPathInputFormat.class.getName());
+	static final private Logger logger = Logger.getLogger(GitPathInputFormat.class.getName());
 
 	@Override
 	protected boolean isSplitable(JobContext context, Path filename) {

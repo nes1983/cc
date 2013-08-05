@@ -16,7 +16,6 @@ import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
-import ch.unibe.scg.cc.activerecord.ConfigurationProvider;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainMapper;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainReducer;
 import ch.unibe.scg.cc.mappers.MRMain.MRMainTableMapper;
