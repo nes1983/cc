@@ -18,8 +18,6 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.OutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 
-import ch.unibe.scg.cc.WrappedRuntimeException;
-
 import com.google.common.base.Optional;
 import com.google.inject.Inject;
 

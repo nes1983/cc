@@ -20,8 +20,6 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import ch.unibe.scg.cc.WrappedRuntimeException;
-
 import com.google.common.base.Optional;
 
 /** Compute distribution of commonness of snippets. */

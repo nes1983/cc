@@ -15,7 +15,6 @@ import org.apache.hadoop.hbase.client.Scan;
 
 import ch.unibe.scg.cc.PopularSnippetMaps;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.WrappedRuntimeException;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;

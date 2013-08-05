@@ -19,7 +19,6 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 import ch.unibe.scg.cc.CCModule;
-import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 
 import com.google.inject.Guice;

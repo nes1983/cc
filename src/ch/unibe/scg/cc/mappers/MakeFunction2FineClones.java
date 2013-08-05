@@ -40,7 +40,6 @@ import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
 import ch.unibe.scg.cc.Protos.Occurrence;
 import ch.unibe.scg.cc.SpamDetector;
-import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 
 import com.google.common.base.Optional;

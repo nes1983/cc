@@ -23,7 +23,6 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneOrBuilder;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.activerecord.PutFactory;
 
 import com.google.common.base.Optional;

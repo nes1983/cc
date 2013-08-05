@@ -1,4 +1,4 @@
-package ch.unibe.scg.cc;
+package ch.unibe.scg.cc.mappers;
 
 public class WrappedRuntimeException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

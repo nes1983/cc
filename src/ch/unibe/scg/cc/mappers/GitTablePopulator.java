@@ -29,7 +29,6 @@ import org.apache.hadoop.mapreduce.lib.output.NullOutputFormat;
 import ch.unibe.scg.cc.GitPopulator;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.inputformats.GitPathInputFormat;
 import ch.unibe.scg.cells.Sink;
 

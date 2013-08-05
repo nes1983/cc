@@ -19,7 +19,6 @@ import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
-import ch.unibe.scg.cc.WrappedRuntimeException;
 import ch.unibe.scg.cc.mappers.MakeFunction2FineClones.ColumnKeyCodec;
 
 import com.google.common.base.Optional;
