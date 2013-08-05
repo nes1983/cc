@@ -139,9 +139,9 @@ public final class GitPopulatorTest {
 		assertThat(functionString.contents.indexOf("public void testProjnameRegex"), is(1));
 
 		Source<Snippet> snippet2FuncsPartitions = i.getInstance(
-				Key.get(new TypeLiteral<Source<Snippet>>() {}, Populator.class));
+				Key.get(new TypeLiteral<Source<Snippet>>() {}, TestSink.class));
 
-		assertThat(Iterables.size(Iterables.concat(snippet2FuncsPartitions)), is(24 - 2)); // 2 collisions
+		assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
 
 		Iterable<Snippet> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);
 		assertThat(Iterables.size(snippets2Funcs), is(1));
