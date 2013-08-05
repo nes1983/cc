@@ -17,6 +17,8 @@ import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
+import com.google.common.io.ByteStreams;
+
 public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 	static final private Logger logger = Logger.getLogger(GitPathInputFormat.class.getName());
 
@@ -33,7 +35,6 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 	}
 
 	private static class GitPathRecordReader extends RecordReader<Text, BytesWritable> {
-		private static final int BYTE_BUFFER_SIZE = 8192;
 		private FSDataInputStream fsin;
 		private Text currentKey;
 		private BytesWritable currentValue;
@@ -61,15 +62,7 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 
 			fsin = fs.open(packFilePath);
 			ByteArrayOutputStream bos = new ByteArrayOutputStream();
-			byte[] temp = new byte[BYTE_BUFFER_SIZE];
-
-			int bytesRead;
-			do {
-				bytesRead = fsin.read(temp, 0, BYTE_BUFFER_SIZE);
-				if (bytesRead > 0) {
-					bos.write(temp, 0, bytesRead);
-				}
-			} while (bytesRead > 0);
+			ByteStreams.copy(fsin, bos);
 
 			currentValue = new BytesWritable(bos.toByteArray());
 			currentKey = new Text(packFilePath.toString());
