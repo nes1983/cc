@@ -56,7 +56,7 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 	}
 
 	@Override
-	public void map(Source<Clone> in, Sink<CloneGroup> out) {
+	public void map(Source<Clone> in, Sink<CloneGroup> out) throws IOException {
 		Multimap<ByteString, Clone> hashToClone = HashMultimap.create();
 		for (Iterable<Clone> row : in) {
 			for (Clone c : row) {

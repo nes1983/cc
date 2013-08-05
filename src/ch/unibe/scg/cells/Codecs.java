@@ -48,7 +48,7 @@ public enum Codecs {
 	/** Encode sink using codec */
 	public static <T> Sink<T> encode(final CellSink<T> sink, final Codec<T> codec) {
 		return new Sink<T>() {
-			@Override public void write(T obj) {
+			@Override public void write(T obj) throws IOException {
 				sink.write(codec.encode(obj));
 			}
 

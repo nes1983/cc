@@ -16,7 +16,7 @@ import com.google.protobuf.ByteString;
 class HBaseCellSink<T> implements CellSink<T> {
 	final private HTableWriteBuffer hTable;
 	final private byte[] family;
-	final boolean writeToWalEnabled;
+	final private boolean writeToWalEnabled;
 
 	@Inject
 	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family, @WriteToWalEnabled boolean writeToWalEnabled) {
@@ -31,9 +31,10 @@ class HBaseCellSink<T> implements CellSink<T> {
 	}
 
 	@Override
-	public void write(Cell<T> cell) {
+	public void write(Cell<T> cell) throws IOException {
 		Put put = new Put(cell.getRowKey().toByteArray());
 		put.setWriteToWAL(writeToWalEnabled);
 		put.add(family, cell.getColumnKey().toByteArray(), cell.getCellContents().toByteArray());
+		hTable.write(put);
 	}
 }
