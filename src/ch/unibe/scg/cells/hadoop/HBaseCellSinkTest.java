@@ -70,8 +70,7 @@ public final class HBaseCellSinkTest {
 				Guice.createInjector(new HadoopModule(), new TestModule()).getInstance(HBaseCellSink.class)) {
 			ByteString key = ByteString.copyFromUtf8("123");
 			// TODO check that the table is empty.
-			Cell<Void> cell = Cell.make(key, key, ByteString.EMPTY);
-			cellSink.write(cell);
+			cellSink.write(Cell.<Void>make(key, key, ByteString.EMPTY));
 		}
 		// TODO check that the row is not empty.
 	}
