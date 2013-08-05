@@ -67,6 +67,8 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 	@Override
 	public Iterator<Iterable<Cell<T>>> iterator() {
+		assert Ordering.natural().isOrdered(store) : "Someone forgot to close the sink.";
+
 		if (store.isEmpty()) {
 			return Iterators.emptyIterator();
 		}
