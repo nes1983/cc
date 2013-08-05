@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.mappers.inputformats;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.logging.Logger;
 
@@ -61,10 +60,7 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 			logger.finer("yyy opening " + packFilePath);
 
 			fsin = fs.open(packFilePath);
-			ByteArrayOutputStream bos = new ByteArrayOutputStream();
-			ByteStreams.copy(fsin, bos);
-
-			currentValue = new BytesWritable(bos.toByteArray());
+			currentValue = new BytesWritable(ByteStreams.toByteArray(fsin));
 			currentKey = new Text(packFilePath.toString());
 
 			isFinished = true;
@@ -73,7 +69,11 @@ public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
 
 		@Override
 		public float getProgress() throws IOException, InterruptedException {
-			return isFinished ? 1 : 0;
+			if (isFinished) {
+				return 1.0f;
+			}
+
+			return 0.0f;
 		}
 
 		@Override
