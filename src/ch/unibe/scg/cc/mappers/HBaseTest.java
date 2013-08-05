@@ -19,26 +19,19 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.CCModule;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
-
 import com.google.common.base.Stopwatch;
 import com.google.inject.Guice;
-import com.google.inject.Injector;
 
 @SuppressWarnings("javadoc")
 @Ignore // Modifies the database.
 public final class HBaseTest {
 	private static final String TEST_TABLE_NAME = "hbasetesttable";
-	private final Configuration conf;
-
-	public HBaseTest() {
-		Injector i = Guice.createInjector(new CCModule(), new JavaModule());
-		conf = i.getInstance(ConfigurationProvider.class).get();
-	}
+	private Configuration conf;
 
 	@Before
 	public void createTable() throws IOException {
+		conf = Guice.createInjector().getInstance(ConfigurationProvider.class).get();
+
 		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
 			HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
 			HColumnDescriptor family = new HColumnDescriptor(Constants.FAMILY);
