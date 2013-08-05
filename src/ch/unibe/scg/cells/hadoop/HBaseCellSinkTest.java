@@ -23,6 +23,7 @@ import com.google.protobuf.ByteString;
 public final class HBaseCellSinkTest {
 	private static final String TEST_TABLE_NAME = "hbasetesttable";
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
+
 	private Configuration conf;
 
 	private class TestModule extends AbstractModule {
