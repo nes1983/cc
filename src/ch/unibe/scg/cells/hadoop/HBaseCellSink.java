@@ -65,6 +65,8 @@ class HBaseCellSink<T> implements CellSink<T> {
 		@Override
 		public void close() throws IOException {
 			writeRemainingPuts();
+			htable.close();
+
 			assert invariant();
 		}
 	}
