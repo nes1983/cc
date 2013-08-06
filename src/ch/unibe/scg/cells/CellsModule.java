@@ -26,15 +26,15 @@ import com.google.protobuf.ByteString;
  *
  * <p>
  * For this module to work, there need to be bound providers for these exact types: <br>
- * {@code CellSource<?>, CellSink<?>, CellLookupTable<?>}.
+ * {@code CellSource<Void>, CellSink<Void>, CellLookupTable<Void>}.
  */
 public abstract class CellsModule extends AbstractModule {
 	private static class SourceProvider<T> implements Provider<Source<T>> {
-		final private Provider<CellSource<?>> cellSrc;
+		final private Provider<CellSource<Void>> cellSrc;
 		final private Provider<Codec<T>> codec;
 
 		@Inject
-		SourceProvider(Provider<CellSource<?>> cellSrc, Provider<Codec<T>> codec) {
+		SourceProvider(Provider<CellSource<Void>> cellSrc, Provider<Codec<T>> codec) {
 			this.codec = codec;
 			this.cellSrc = cellSrc;
 		}
@@ -46,11 +46,11 @@ public abstract class CellsModule extends AbstractModule {
 	}
 
 	private static class SinkProvider<T> implements Provider<Sink<T>> {
-		final private Provider<CellSink<?>> sink;
+		final private Provider<CellSink<Void>> sink;
 		final private Provider<Codec<T>> codec;
 
 		@Inject
-		SinkProvider(Provider<CellSink<?>> sink, Provider<Codec<T>> codec) {
+		SinkProvider(Provider<CellSink<Void>> sink, Provider<Codec<T>> codec) {
 			this.codec = codec;
 			this.sink = sink;
 		}
@@ -62,11 +62,11 @@ public abstract class CellsModule extends AbstractModule {
 	}
 
 	private static class LookupTableProvider<T> implements Provider<LookupTable<T>> {
-		final private Provider<CellLookupTable<?>> rawCellTable;
+		final private Provider<CellLookupTable<Void>> rawCellTable;
 		final private Provider<Codec<T>> codec;
 
 		@Inject
-		LookupTableProvider(Provider<CellLookupTable<?>> rawCellTable, Provider<Codec<T>> codec) {
+		LookupTableProvider(Provider<CellLookupTable<Void>> rawCellTable, Provider<Codec<T>> codec) {
 			this.rawCellTable = rawCellTable;
 			this.codec = codec;
 		}

@@ -9,10 +9,10 @@ import com.google.inject.TypeLiteral;
 public final class InMemoryStorage extends AbstractModule implements StorageModule {
 	@Override
 	protected void configure() {
-		bind(new TypeLiteral<InMemoryShuffler<?>>() {}).in(Singleton.class);
+		bind(new TypeLiteral<InMemoryShuffler<Void>>() {}).in(Singleton.class);
 
-		bind(new TypeLiteral<CellSource<?>>() {}).to(new TypeLiteral<InMemoryShuffler<?>>() {});
-		bind(new TypeLiteral<CellSink<?>>() {}).to(new TypeLiteral<InMemoryShuffler<?>>() {});
-		bind(new TypeLiteral<CellLookupTable<?>>() {}).to(new TypeLiteral<InMemoryShuffler<?>>() {});
+		bind(new TypeLiteral<CellSource<Void>>() {}).to(new TypeLiteral<InMemoryShuffler<Void>>() {});
+		bind(new TypeLiteral<CellSink<Void>>() {}).to(new TypeLiteral<InMemoryShuffler<Void>>() {});
+		bind(new TypeLiteral<CellLookupTable<Void>>() {}).to(new TypeLiteral<InMemoryShuffler<Void>>() {});
 	}
 }
