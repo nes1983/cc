@@ -17,4 +17,9 @@ public class Annotations {
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	public static @interface WriteToWalEnabled {}
+
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface IndexFamily {}
 }

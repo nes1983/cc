@@ -20,6 +20,7 @@ import ch.unibe.scg.cells.Annotations.TableName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
@@ -49,12 +50,15 @@ public final class HBaseCellSinkTest {
 	@SuppressWarnings("javadoc")
 	@Before
 	public void createTable() throws IOException {
-		conf = Guice.createInjector().getInstance(ConfigurationProvider.class).get();
+		conf = new ConfigurationProvider().get();
 
 		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
 			HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
-			HColumnDescriptor family = new HColumnDescriptor(FAMILY.toByteArray());
-			td.addFamily(family);
+			td.addFamily(new HColumnDescriptor(FAMILY.toByteArray()));
+			ByteString indexFamily = Guice.createInjector(new TestModule(), new HadoopModule()).getInstance(
+					Key.get(ByteString.class, IndexFamily.class));
+			td.addFamily(new HColumnDescriptor(indexFamily.toByteArray()));
+
 			if (admin.isTableAvailable(TEST_TABLE_NAME)) {
 				if (admin.isTableEnabled(TEST_TABLE_NAME)) {
 					admin.disableTable(TEST_TABLE_NAME);

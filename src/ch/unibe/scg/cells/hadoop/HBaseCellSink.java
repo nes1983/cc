@@ -1,5 +1,6 @@
 package ch.unibe.scg.cells.hadoop;
 
+import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.Closeable;
@@ -17,20 +18,30 @@ import org.apache.hadoop.hbase.client.Row;
 import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 import ch.unibe.scg.cells.hadoop.Annotations.WriteToWalEnabled;
 
 import com.google.protobuf.ByteString;
 
 class HBaseCellSink<T> implements CellSink<T> {
+	static final private byte[] EMPTY_BYTES = new byte[] {};
+
 	final private HTableWriteBuffer hTable;
+	/** Do not modify. */
 	final private byte[] family;
+	/** Do not modify. */
+	final private byte[] indexFamily;
 	final private boolean writeToWalEnabled;
 
 	@Inject
 	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family,
-			@WriteToWalEnabled boolean writeToWalEnabled) {
+			@WriteToWalEnabled boolean writeToWalEnabled, @IndexFamily ByteString indexFamily) {
+		checkArgument(!family.equals(indexFamily), "Family names may not be " + indexFamily
+				+ ". It's reserved for the index.");
+
 		this.hTable = hTable;
 		this.family = family.toByteArray();
+		this.indexFamily = indexFamily.toByteArray();
 		this.writeToWalEnabled = writeToWalEnabled;
 	}
 
@@ -86,9 +97,17 @@ class HBaseCellSink<T> implements CellSink<T> {
 
 	@Override
 	public void write(Cell<T> cell) throws IOException {
-		Put put = new Put(cell.getRowKey().toByteArray());
-		put.setWriteToWAL(writeToWalEnabled);
-		put.add(family, cell.getColumnKey().toByteArray(), cell.getCellContents().toByteArray());
-		hTable.write(put);
+		final byte[] rowKey = cell.getRowKey().toByteArray();
+		final byte[] columnKey = cell.getColumnKey().toByteArray();
+
+		Put cellPut = new Put(rowKey);
+		cellPut.setWriteToWAL(writeToWalEnabled);
+		cellPut.add(family, columnKey, cell.getCellContents().toByteArray());
+		hTable.write(cellPut);
+
+		Put indexPut = new Put(columnKey);
+		indexPut.setWriteToWAL(writeToWalEnabled);
+		indexPut.add(indexFamily, rowKey, EMPTY_BYTES);
+		hTable.write(indexPut);
 	}
 }
