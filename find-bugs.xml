@@ -52,13 +52,13 @@
     <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
   </Project>
   <BugInstance type="USBR_UNNECESSARY_STORE_BEFORE_RETURN" priority="2" abbrev="USBR" category="STYLE" first="1">
-    <Class classname="org.unibe.scg.cells.Cell">
-      <SourceLine classname="org.unibe.scg.cells.Cell" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
+    <Class classname="ch.unibe.scg.cells.Cell">
+      <SourceLine classname="ch.unibe.scg.cells.Cell" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
     </Class>
-    <Method classname="org.unibe.scg.cells.Cell" name="hashCode" signature="()I" isStatic="false">
-      <SourceLine classname="org.unibe.scg.cells.Cell" start="24" end="28" startBytecode="0" endBytecode="128" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
+    <Method classname="ch.unibe.scg.cells.Cell" name="hashCode" signature="()I" isStatic="false">
+      <SourceLine classname="ch.unibe.scg.cells.Cell" start="24" end="28" startBytecode="0" endBytecode="128" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
     </Method>
-    <SourceLine classname="org.unibe.scg.cells.Cell" start="28" end="28" startBytecode="32" endBytecode="32" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
+    <SourceLine classname="ch.unibe.scg.cells.Cell" start="28" end="28" startBytecode="32" endBytecode="32" sourcefile="Cell.java" sourcepath="ch/unibe/scg/cc/Cell.java"/>
   </BugInstance>
   <BugInstance type="FCBL_FIELD_COULD_BE_LOCAL" priority="2" abbrev="FCBL" category="CORRECTNESS" first="1">
     <Class classname="ch.unibe.scg.cc.DuplicateSnippetsPerFunctionRegistry">
@@ -938,11 +938,11 @@
       <ClassStats class="ch.unibe.scg.cc.CCModule$1" sourceFile="CCModule.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CCModule$2" sourceFile="CCModule.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CannotBeHashedException" sourceFile="CannotBeHashedException.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="org.unibe.scg.cells.Cell" sourceFile="Cell.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="ch.unibe.scg.cells.Cell" sourceFile="Cell.java" interface="false" size="31" bugs="1" priority_2="1"/>
       <ClassStats class="ch.unibe.scg.cc.Cell$1" sourceFile="Cell.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CellCodec" sourceFile="CellCodec.java" interface="false" size="26" bugs="0"/>
-      <ClassStats class="org.unibe.scg.cells.CellSink" sourceFile="CellSink.java" interface="true" size="2" bugs="0"/>
-      <ClassStats class="org.unibe.scg.cells.CellSource" sourceFile="CellSource.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cells.CellSink" sourceFile="CellSink.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cells.CellSource" sourceFile="CellSource.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CharsetDetector" sourceFile="CharsetDetector.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CharsetTest" sourceFile="CharsetTest.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.CloneExpander" sourceFile="CloneExpander.java" interface="false" size="91" bugs="0"/>
@@ -978,7 +978,7 @@
       <ClassStats class="ch.unibe.scg.cc.InMemoryModule$7" sourceFile="InMemoryModule.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.InMemoryModule$8" sourceFile="InMemoryModule.java" interface="false" size="5" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.InMemoryModule$9" sourceFile="InMemoryModule.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="org.unibe.scg.cells.InMemoryShuffler" sourceFile="InMemoryShuffler.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ch.unibe.scg.cells.InMemoryShuffler" sourceFile="InMemoryShuffler.java" interface="false" size="25" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.Java" sourceFile="Java.java" interface="true" size="1" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.Main" sourceFile="Main.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="ch.unibe.scg.cc.MessageDigestProvider" sourceFile="MessageDigestProvider.java" interface="false" size="9" bugs="1" priority_1="1"/>
