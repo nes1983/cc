@@ -83,14 +83,15 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 		}
 	}
 
-	private String extractText(Clone anyClone) {
+	private String extractText(Clone anyClone) throws IOException {
 		String functionString = Iterables
 				.getOnlyElement(funStringsTab.readRow(anyClone.getThisSnippet().getFunction())).contents;
 		return stringOfLinesFactory.make(functionString, '\n').getLines(anyClone.getThisSnippet().getPosition(),
 				anyClone.getThatSnippet().getLength());
 	}
 
-	private void extractConnectedComponent(Multimap<ByteString, Clone> hashToClone, Clone c, Set<Occurrence> out) {
+	private void extractConnectedComponent(Multimap<ByteString, Clone> hashToClone, Clone c, Set<Occurrence> out)
+			throws IOException {
 		out.addAll(findOccurrences(c.getThatSnippet().getFunction()));
 		out.addAll(findOccurrences(c.getThisSnippet().getFunction()));
 		Collection<Clone> left = hashToClone.get(c.getThisSnippet().getFunction());
@@ -124,7 +125,7 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 	}
 
 	/** @return all occurrences of {@code functionKey} */
-	private Collection<Occurrence> findOccurrences(ByteString functionKey) {
+	private Collection<Occurrence> findOccurrences(ByteString functionKey) throws IOException {
 		if (!functionOccurrences.containsKey(functionKey)) {
 			ImmutableList.Builder<Occurrence> ret = ImmutableList.builder();
 
@@ -152,7 +153,7 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 		return functionOccurrences.get(functionKey);
 	}
 
-	private <T> Iterable<T> readColumn(LookupTable<T> tab, ByteString hash, String table) {
+	private <T> Iterable<T> readColumn(LookupTable<T> tab, ByteString hash, String table) throws IOException {
 		Iterable<T> ret = tab.readColumn(hash);
 		if (Iterables.isEmpty(ret)) {
 			throw new RuntimeException("Found no " + table + " for hash "

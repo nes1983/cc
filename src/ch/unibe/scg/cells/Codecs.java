@@ -61,7 +61,7 @@ public enum Codecs {
 	/** Wrapper of {@code cellTable} that returns decoded rows */
 	public static <T> LookupTable<T> decodedTable(final CellLookupTable<T> cellTable, final Codec<T> codec) {
 		return new LookupTable<T>() {
-			@Override public Iterable<T> readRow(ByteString rowKey) {
+			@Override public Iterable<T> readRow(ByteString rowKey) throws IOException {
 				return decodeRow(cellTable.readRow(rowKey), codec);
 			}
 
@@ -69,7 +69,7 @@ public enum Codecs {
 				cellTable.close();
 			}
 
-			@Override public Iterable<T> readColumn(ByteString columnKey) {
+			@Override public Iterable<T> readColumn(ByteString columnKey) throws IOException {
 				return decodeRow(cellTable.readColumn(columnKey), codec);
 			}
 		};
