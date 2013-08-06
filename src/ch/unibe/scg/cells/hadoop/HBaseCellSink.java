@@ -26,6 +26,14 @@ class HBaseCellSink<T> implements CellSink<T> {
 	final private byte[] family;
 	final private boolean writeToWalEnabled;
 
+	@Inject
+	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family,
+			@WriteToWalEnabled boolean writeToWalEnabled) {
+		this.hTable = hTable;
+		this.family = family.toByteArray();
+		this.writeToWalEnabled = writeToWalEnabled;
+	}
+
 	/**
 	 * Collects the puts in the buffer and writes them to HBase as soon as
 	 * {@link #MAX_SIZE} is reached. Ensure to call {@link #close()} after the last
@@ -69,14 +77,6 @@ class HBaseCellSink<T> implements CellSink<T> {
 
 			assert invariant();
 		}
-	}
-
-	@Inject
-	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family,
-			@WriteToWalEnabled boolean writeToWalEnabled) {
-		this.hTable = hTable;
-		this.family = family.toByteArray();
-		this.writeToWalEnabled = writeToWalEnabled;
 	}
 
 	@Override
