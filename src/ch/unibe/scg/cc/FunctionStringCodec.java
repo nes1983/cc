@@ -9,11 +9,13 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 class FunctionStringCodec implements Codec<Str<Function>> {
+	final private ByteString columnName = ByteString.copyFromUtf8("function");
+
 	@Override
 	public Cell<Str<Function>> encode(Str<Function> s) {
 		return Cell.make(
 				s.hash,
-				ByteString.EMPTY,
+				columnName,
 				ByteString.copyFromUtf8(s.contents));
 	}
 
