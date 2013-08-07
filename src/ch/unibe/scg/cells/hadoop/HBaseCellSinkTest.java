@@ -1,6 +1,8 @@
 package ch.unibe.scg.cells.hadoop;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -20,6 +22,7 @@ import ch.unibe.scg.cells.Annotations.TableName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 
 import com.google.common.base.Stopwatch;
@@ -83,17 +86,24 @@ public final class HBaseCellSinkTest {
 	public void writeSmokeTest() throws IOException {
 		Injector i = Guice.createInjector(new HadoopModule(), new TestModule());
 		ByteString key = ByteString.copyFromUtf8("123");
+		Cell<Void> cell = Cell.<Void> make(key, key, ByteString.EMPTY);
 
 		try (HBaseCellLookupTable<Void> lookup = i.getInstance(HBaseCellLookupTable.class)) {
 			Iterable<Cell<Void>> rowBeforeWrite = lookup.readRow(key);
 			assertTrue(rowBeforeWrite.toString(), Iterables.isEmpty(rowBeforeWrite));
 
 			try (HBaseCellSink<Void> cellSink = i.getInstance(HBaseCellSink.class)) {
-				cellSink.write(Cell.<Void> make(key, key, ByteString.EMPTY));
+				cellSink.write(cell);
 			}
 
 			Iterable<Cell<Void>> rowAfterWrite = lookup.readRow(key);
 			assertFalse(rowAfterWrite.toString(), Iterables.isEmpty(rowAfterWrite));
+		}
+
+		try(CellSource<Void> src = i.getInstance(HBaseCellSource.class)) {
+			Iterable<Cell<Void>> row = Iterables.getOnlyElement(src);
+			Cell<Void> actual = Iterables.getOnlyElement(row);
+			assertThat(actual, is(cell));
 		}
 	}
 
