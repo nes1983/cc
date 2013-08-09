@@ -13,7 +13,6 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
-import org.apache.log4j.Logger;
 
 import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
@@ -22,32 +21,35 @@ import ch.unibe.scg.cells.CellSource;
 import com.google.common.collect.UnmodifiableIterator;
 import com.google.protobuf.ByteString;
 
-/** A cell source reading from a HTable. */
+/** A cell source reading from a HTable. Don't forget to close it when you're done. Can be iterated only once! */
 public class HBaseCellSource<T> implements CellSource<T> {
-	static final private Logger logger = Logger.getLogger(HBaseCellSource.class);
-
 	final private ByteString family;
 	final private HTable hTable;
-
+	final private ResultScanner scanner;
+	boolean iterated = false;
 
 	@Inject
 	HBaseCellSource(@FamilyName ByteString family, HTable hTable) {
 		this.family = family;
 		this.hTable = hTable;
+
+		// Doing this in the object and not in the provider drastically simplifies serialization.
+		try {
+			scanner = openScanner(hTable, family);
+		} catch (IOException e) {
+			// TODO: Choose better exception.
+			throw new RuntimeException(e);
+		}
 	}
 
-	/** Holds on to a closeable ResultScanner. Closes it at the end of iteration, and in finalizer. */
 	class ResultScannerIterator extends UnmodifiableIterator<Iterable<Cell<T>>> {
 		/** The current row's column keys and cell contents. Null if the iterator is empty. */
 		Iterable<Entry<byte[], byte[]>> curRow;
 		/** The current row's key. */
 		ByteString rowKey;
-		/** The source for the current iterator. */
-		final ResultScanner scanner;
 
 		/** {@code next} may be null. */
-		ResultScannerIterator(ResultScanner scanner) {
-			this.scanner = scanner;
+		ResultScannerIterator() {
 			forward();
 		}
 
@@ -89,26 +91,10 @@ public class HBaseCellSource<T> implements CellSource<T> {
 				curRow = r.getFamilyMap(family.toByteArray()).entrySet();
 			}
 		}
-
-		@Override
-		protected void finalize() throws Throwable {
-			if (rowKey == null) {
-				// We terminated normally.
-				return;
-			}
-			try {
-				scanner.close();
-			} catch (Exception e) {
-				logger.warn(e);
-				throw e; // Will just be ignored.
-			} finally {
-				super.finalize();
-			}
-		}
 	}
 
 	/** Provides scans appropriate for reading tables sequentially, as in a Mapper. */
-	private Scan makeScan() {
+	private static Scan makeScan() {
 		Scan scan = new Scan();
 		// HBase book says 500, see chapter 12.9.1. Hbase Book
 		// This is 10 times faster than the default value.
@@ -118,23 +104,25 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		return scan;
 	}
 
-	@SuppressWarnings("resource") // Ressource closes itself on finalize (sorry ...)
-	@Override
-	public Iterator<Iterable<Cell<T>>> iterator() {
+	private static ResultScanner openScanner(HTable tab, ByteString family) throws IOException {
 		Scan scan = makeScan();
 		scan.addFamily(family.toByteArray());
-		ResultScanner scanner;
-		try {
-			scanner = hTable.getScanner(scan);
-		} catch (IOException e) {
-			// Choose better exception.
-			throw new RuntimeException(e);
+		return tab.getScanner(scan);
+	}
+
+	@Override
+	public Iterator<Iterable<Cell<T>>> iterator() {
+		if (iterated) {
+			throw new IllegalStateException("This source has been iterated before.");
 		}
-		return new ResultScannerIterator(scanner);
+		iterated = true;
+
+		return new ResultScannerIterator();
 	}
 
 	@Override
 	public void close() throws IOException {
 		hTable.close();
+		scanner.close();
 	}
 }
