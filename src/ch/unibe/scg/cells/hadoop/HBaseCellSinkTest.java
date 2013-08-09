@@ -9,9 +9,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.HColumnDescriptor;
-import org.apache.hadoop.hbase.HTableDescriptor;
-import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,8 +20,9 @@ import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.CellSource;
-import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
+import ch.unibe.scg.cells.hadoop.TableAdmin.TemporaryTable;
 
+import com.google.common.base.Charsets;
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
 import com.google.inject.AbstractModule;
@@ -32,52 +30,42 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.TypeLiteral;
+import com.google.inject.util.Providers;
 import com.google.protobuf.ByteString;
 
 /** Testing {@link HBaseCellSink} */
 @SuppressWarnings("javadoc")
 public final class HBaseCellSinkTest {
-	private static final String TEST_TABLE_NAME = "hbasetesttable";
+	private TemporaryTable testTable;
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
 
-	private Configuration conf;
+	final private TableAdmin admin
+			= Guice.createInjector(new HadoopModule(), new TestModule()).getInstance(TableAdmin.class);
 
 	private class TestModule extends AbstractModule {
 		@Override
 		protected void configure() {
-			bind(Configuration.class).toInstance(conf);
-			bindConstant().annotatedWith(TableName.class).to(TEST_TABLE_NAME);
+			bind(Configuration.class).toProvider(ConfigurationProvider.class);
+			if (testTable != null) {
+				bindConstant().annotatedWith(TableName.class)
+					.to(new String(testTable.table.getTableName(), Charsets.UTF_8));
+			} else {
+				// HadoopModule requires it, and it's only a test, so ...
+				bind(String.class).annotatedWith(TableName.class).toProvider(Providers.<String> of(null));
+			}
+			// TODO: Fix family globally?
 			bind(ByteString.class).annotatedWith(FamilyName.class).toInstance(FAMILY);
 		}
 	}
 
 	@Before
 	public void createTable() throws IOException {
-		conf = new ConfigurationProvider().get();
-
-		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
-			HTableDescriptor td = new HTableDescriptor(TEST_TABLE_NAME);
-			td.addFamily(new HColumnDescriptor(FAMILY.toByteArray()));
-			ByteString indexFamily = Guice.createInjector(new TestModule(), new HadoopModule()).getInstance(
-					Key.get(ByteString.class, IndexFamily.class));
-			td.addFamily(new HColumnDescriptor(indexFamily.toByteArray()));
-
-			if (admin.isTableAvailable(TEST_TABLE_NAME)) {
-				if (admin.isTableEnabled(TEST_TABLE_NAME)) {
-					admin.disableTable(TEST_TABLE_NAME);
-				}
-				admin.deleteTable(TEST_TABLE_NAME);
-			}
-			admin.createTable(td);
-		}
+		testTable = admin.createTemporaryTable();
 	}
 
 	@After
 	public void deleteTable() throws IOException {
-		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
-			admin.disableTable(TEST_TABLE_NAME);
-			admin.deleteTable(TEST_TABLE_NAME);
-		}
+		testTable.close();
 	}
 
 	/** Testing {@link HBaseCellSink#write(Cell)}. */
