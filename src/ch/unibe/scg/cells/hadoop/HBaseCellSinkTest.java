@@ -35,6 +35,7 @@ import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
 /** Testing {@link HBaseCellSink} */
+@SuppressWarnings("javadoc")
 public final class HBaseCellSinkTest {
 	private static final String TEST_TABLE_NAME = "hbasetesttable";
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
@@ -50,7 +51,6 @@ public final class HBaseCellSinkTest {
 		}
 	}
 
-	@SuppressWarnings("javadoc")
 	@Before
 	public void createTable() throws IOException {
 		conf = new ConfigurationProvider().get();
@@ -72,7 +72,6 @@ public final class HBaseCellSinkTest {
 		}
 	}
 
-	@SuppressWarnings("javadoc")
 	@After
 	public void deleteTable() throws IOException {
 		try (HBaseAdmin admin = new HBaseAdmin(conf)) {
