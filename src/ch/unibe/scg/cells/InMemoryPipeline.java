@@ -3,6 +3,8 @@ package ch.unibe.scg.cells;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Iterator;
 
 import javax.inject.Provider;
 
@@ -80,15 +82,36 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 	}
 
+	private static class OneShotIterable<T> implements Iterable<T> {
+		final private Iterator<T> underlying;
+		private boolean iterated = false;
+
+		OneShotIterable(Iterator<T> underlying) {
+			this.underlying = underlying;
+		}
+
+		@Override
+		public Iterator<T> iterator() {
+			if (iterated) {
+				throw new IllegalStateException("Don't iterate a OneShotIterable twice.");
+			}
+			iterated = true;
+
+			return underlying;
+		}
+	}
+
 	/** Run the mapper and close the sink. */
-	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
+	public static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
 			CellSink<E> sink, Codec<E> sinkCodec) throws IOException {
 		try (Mapper<I, E> m = mapper.get()) {
 			// Rather than close the sinks, we close the underlying CellSink directly.
 			Source<I> decodedSrc = Codecs.decode(src, srcCodec);
 			for (Iterable<I> decoded : decodedSrc) {
-				// In memory, since all iterables are backed by arrays, Iterables.get is safe.
-				m.map(Iterables.get(decoded, 0), decoded, Codecs.encode(sink, sinkCodec));
+				Iterator<I> iter = decoded.iterator();
+				I first = iter.next();
+				Iterable<I> row = Iterables.concat(Arrays.asList(first), new OneShotIterable<>(iter));
+				m.map(first, row, Codecs.encode(sink, sinkCodec));
 			}
 		}
 	}

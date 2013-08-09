@@ -85,7 +85,9 @@ class CloneExpander {
 	 *            be constant for the entire list.
 	 * @return The matches, stitched together.
 	 */
-	Collection<Clone> expandClones(final Iterable<Clone> matches) {
+	Collection<Clone> expandClones(Iterable<Clone> matches) {
+		matches = ImmutableList.copyOf(matches); // Give us a chance to walk thru twice.
+
 		if (Iterables.isEmpty(matches)) {
 			return Collections.emptyList();
 		}
