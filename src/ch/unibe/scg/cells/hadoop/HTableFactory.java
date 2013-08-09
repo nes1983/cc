@@ -16,16 +16,15 @@ class HTableFactory {
 		this.hbaseConfig = hbaseConfig;
 	}
 
-	public HTable make(String tableName) {
-		HTable htable;
+	HTable make(String tableName) {
 		try {
-			htable = new HTable(hbaseConfig, tableName);
+			HTable htable = new HTable(hbaseConfig, tableName);
 			htable.setAutoFlush(false);
 			htable.setWriteBufferSize(1024 * 1024 * 12);
 			htable.getTableDescriptor().setDeferredLogFlush(true);
+			return htable;
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
-		return htable;
 	}
 }
