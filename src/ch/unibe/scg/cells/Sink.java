@@ -6,5 +6,5 @@ import java.io.IOException;
 /** The output of a mapper is written into a sink. Closing closes the underlying CellSink. */
 public interface Sink<T> extends Closeable {
 	/** Write {@code object} into the sink. */
-	void write(T object) throws IOException;
+	void write(T object) throws IOException, InterruptedException;
 }

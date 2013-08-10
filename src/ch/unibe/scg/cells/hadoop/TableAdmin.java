@@ -33,7 +33,11 @@ class TableAdmin {
 		this.hTableFactory = hTableFactory;
 	}
 
-	class TemporaryTable implements Closeable {
+	static interface Table<T> extends Closeable {
+		byte[] getTableName();
+	}
+
+	class TemporaryTable implements Table {
 		final HTable table;
 
 		TemporaryTable(HTable table) {
@@ -44,7 +48,7 @@ class TableAdmin {
 		public void close() throws IOException {
 			table.close();
 
-			byte[] tableName = table.getTableName();
+			byte[] tableName = getTableName();
 			try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
 				if (admin.isTableAvailable(tableName)) {
 					if (admin.isTableEnabled(tableName)) {
@@ -53,6 +57,11 @@ class TableAdmin {
 					admin.deleteTable(tableName);
 				}
 			}
+		}
+
+		@Override
+		public byte[] getTableName() {
+			return table.getTableName();
 		}
 	}
 

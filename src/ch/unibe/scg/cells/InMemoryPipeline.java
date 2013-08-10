@@ -48,13 +48,15 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public void efflux(Provider<? extends Mapper<I, OUT>> m, Codec<OUT> sinkCodec) throws IOException {
+		public void efflux(Provider<? extends Mapper<I, OUT>> m, Codec<OUT> sinkCodec)
+				throws IOException, InterruptedException {
 			run(src, srcCodec, m, pipeSink, sinkCodec);
 			pipeSink.close();
 		}
 
 		@Override
-		public void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, OUT>> offlineMapper, Codec<OUT> codec) throws IOException {
+		public void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, OUT>> offlineMapper, Codec<OUT> codec)
+				throws IOException, InterruptedException {
 			try(OfflineMapper<I, OUT> m = offlineMapper.get()) {
 				// Rather than close the sinks, we close the underlying CellSink directly.
 				m.map(Codecs.decode(src, srcCodec), Codecs.encode(pipeSink, codec));
@@ -74,7 +76,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public MappablePipeline<E, OUT> shuffle(Codec<E> sinkCodec) throws IOException {
+		public MappablePipeline<E, OUT> shuffle(Codec<E> sinkCodec) throws IOException, InterruptedException {
 			try (InMemoryShuffler<E> shuffler = new InMemoryShuffler<>()) {
 				run(src, srcCodec, mapper, shuffler, sinkCodec);
 				return new InMemoryMappablePipeline<>(shuffler, sinkCodec);
@@ -82,28 +84,10 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 	}
 
-	private static class OneShotIterable<T> implements Iterable<T> {
-		final private Iterator<T> underlying;
-		private boolean iterated = false;
-
-		OneShotIterable(Iterator<T> underlying) {
-			this.underlying = underlying;
-		}
-
-		@Override
-		public Iterator<T> iterator() {
-			if (iterated) {
-				throw new IllegalStateException("Don't iterate a OneShotIterable twice.");
-			}
-			iterated = true;
-
-			return underlying;
-		}
-	}
-
-	/** Run the mapper and close the sink. */
+	/** Run the mapper and close the sink.
+	 * @throws InterruptedException */
 	public static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Provider<? extends Mapper<I, E>> mapper,
-			CellSink<E> sink, Codec<E> sinkCodec) throws IOException {
+			CellSink<E> sink, Codec<E> sinkCodec) throws IOException, InterruptedException {
 		try (Mapper<I, E> m = mapper.get()) {
 			// Rather than close the sinks, we close the underlying CellSink directly.
 			Source<I> decodedSrc = Codecs.decode(src, srcCodec);

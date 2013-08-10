@@ -66,7 +66,7 @@ public final class GitPopulatorTest {
 	}
 
 	@Test
-	public void testPopulate() throws IOException {
+	public void testPopulate() throws IOException, InterruptedException {
 		Injector i = walkRepo(parseZippedGit(TESTREPO));
 
 		Iterable<Iterable<Project>> projectPartitions = i.getInstance(
@@ -148,7 +148,7 @@ public final class GitPopulatorTest {
 	}
 
 	@Test
-	public void testPaperExampleFile2Function() throws IOException {
+	public void testPaperExampleFile2Function() throws IOException, InterruptedException {
 		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		Iterable<Iterable<Function>> decodedPartitions =
@@ -177,7 +177,7 @@ public final class GitPopulatorTest {
 	}
 
 	@Test
-	public void testPaperExampleSnippet2Functions() throws IOException {
+	public void testPaperExampleSnippet2Functions() throws IOException, InterruptedException {
 		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
 		Source<Snippet> snippet2Function = i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, TestSink.class));
 		assertThat(Iterables.size(snippet2Function), is(145));
@@ -200,7 +200,7 @@ public final class GitPopulatorTest {
 	}
 
 	@Test
-	public void testPaperExampleFunction2Snippets() throws IOException {
+	public void testPaperExampleFunction2Snippets() throws IOException, InterruptedException {
 		Injector i = walkRepo(GitPopulatorTest.parseZippedGit("paperExample.zip"));
 
 		Source<Snippet> function2snippetsPartitions = i.getInstance(
@@ -244,7 +244,7 @@ public final class GitPopulatorTest {
 				"C46C6B63797890F241C4C722182213F9FD1D1C7B");
 	}
 
-	private static Injector walkRepo(GitRepo repo) throws IOException {
+	private static Injector walkRepo(GitRepo repo) throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule(), new CellsModule() {
 			@Override protected void configure() {
 				installTable("rofl", ByteString.EMPTY, TestSink.class, new TypeLiteral<Snippet>() {},

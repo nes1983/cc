@@ -23,9 +23,9 @@ import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
+import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.Source;
 
 import com.google.common.collect.Iterables;
@@ -39,7 +39,7 @@ import com.google.inject.util.Modules;
 @SuppressWarnings("javadoc")
 public final class Function2RoughClonerTest {
 	@Test
-	public void testMap() throws IOException {
+	public void testMap() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(
 				Modules.override(new CCModule(new InMemoryStorage()), new JavaModule()).with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
@@ -94,6 +94,11 @@ public final class Function2RoughClonerTest {
 		@Override
 		public Iterator<Iterable<Cell<T>>> iterator() {
 			return collection.iterator();
+		}
+
+		@Override
+		public void close() throws IOException {
+			// Nothing to do.
 		}
 	}
 

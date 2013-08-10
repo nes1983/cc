@@ -33,7 +33,7 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 
 	/** Input encoding: snippet2function */
 	@Override
-	public void map(Snippet first, Iterable<Snippet> rowIterable, Sink<Clone> function2RoughClones) throws IOException {
+	public void map(Snippet first, Iterable<Snippet> rowIterable, Sink<Clone> function2RoughClones) throws IOException, InterruptedException {
 		// rowIterable is not guaranteed to be iterable more than once, so copy.
 		Collection<Snippet> row = ImmutableList.copyOf(rowIterable);
 		rowIterable = null; // Don't touch!

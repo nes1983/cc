@@ -95,7 +95,7 @@ public class Populator implements Closeable {
 		}
 
 		@Override
-		public void close() throws IOException {
+		public void close() throws IOException, InterruptedException {
 			snippet2Functions = null;
 
 			if (versions.isEmpty()) {
@@ -138,7 +138,7 @@ public class Populator implements Closeable {
 		}
 
 		@Override
-		public void close() throws IOException {
+		public void close() throws IOException, InterruptedException {
 			if (files.isEmpty()) {
 				return;
 			}
@@ -175,7 +175,7 @@ public class Populator implements Closeable {
 		}
 
 		/** Registers all functions and snippets in {@code contents}. */
-		public void register(String path, String contents) throws IOException {
+		public void register(String path, String contents) throws IOException, InterruptedException {
 			CodeFile.Builder fil = CodeFile.newBuilder()
 					.setPath(path)
 					.setContents(contents)
@@ -248,7 +248,7 @@ public class Populator implements Closeable {
 		}
 	}
 
-	private void registerSnippets(Protos.Function fun, String normalized, CloneType type) throws IOException {
+	private void registerSnippets(Protos.Function fun, String normalized, CloneType type) throws IOException, InterruptedException {
 		StringOfLines s = stringOfLinesFactory.make(normalized);
 
 		Hasher hasher = standardHasher;

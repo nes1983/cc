@@ -32,7 +32,7 @@ public class ClonePipelineRunner {
 	}
 
 	/** Run the clone detector. */
-	public void run(Pipeline<GitRepo, Clone> pipe) throws IOException {
+	public void run(Pipeline<GitRepo, Clone> pipe) throws IOException, InterruptedException {
 		pipe
 			.influx(repoCodec)
 			.mapper(gitPopulator)

@@ -100,7 +100,7 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 
 	/** Processes the Git repository and hands the files to the {@link Populator}. */
 	@Override
-	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException {
+	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException, InterruptedException {
 		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
 		Path unpackDir = null;

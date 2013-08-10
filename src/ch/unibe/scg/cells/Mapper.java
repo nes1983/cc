@@ -32,5 +32,5 @@ public interface Mapper<IN, OUT> extends Closeable {
 	 *            Iterable only once. The first iterated element is
 	 *            {@code first}.
 	 */
-	void map(IN first, Iterable<IN> row, Sink<OUT> sink) throws IOException;
+	void map(IN first, Iterable<IN> row, Sink<OUT> sink) throws IOException, InterruptedException;
 }

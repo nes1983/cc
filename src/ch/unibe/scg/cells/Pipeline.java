@@ -32,10 +32,11 @@ public interface Pipeline<IN, EFF> {
 		 * Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.
 		 * @throws IOException If several exceptions occur, any may be reported.
 		 */
-		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException;
+		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException, InterruptedException;
+
 		/** Run the entire pipeline, and run {@code offlineMapper} locally. */
 		void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, EFF>> offlineMapper, Codec<EFF> codec)
-				throws IOException;
+				throws IOException, InterruptedException;
 	}
 
 	/** A segment that was just mapped and now needs shuffling or an efflux. */
@@ -44,6 +45,6 @@ public interface Pipeline<IN, EFF> {
 		 * Shuffle the efflux. This will also execute the previous mapper.
 		 * @throws IOException  If several exceptions occur, any may be reported.
 		 */
-		MappablePipeline<I, EFF> shuffle(Codec<I> codec) throws IOException;
+		MappablePipeline<I, EFF> shuffle(Codec<I> codec) throws IOException, InterruptedException;
 	}
 }

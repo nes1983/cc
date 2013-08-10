@@ -24,22 +24,22 @@ import com.google.protobuf.ByteString;
 /** A cell source reading from a HTable. Don't forget to close it when you're done. Can be iterated only once! */
 public class HBaseCellSource<T> implements CellSource<T> {
 	final private ByteString family;
+	/** May be null! */
 	final private HTable hTable;
 	final private ResultScanner scanner;
 	boolean iterated = false;
 
 	@Inject
 	HBaseCellSource(@FamilyName ByteString family, HTable hTable) {
-		this.family = family;
-		this.hTable = hTable;
+		// Doing openScanner in the object and not in the provider drastically
+		// simplifies serialization.
+		this(family, openScanner(hTable, family), hTable);
+	}
 
-		// Doing this in the object and not in the provider drastically simplifies serialization.
-		try {
-			scanner = openScanner(hTable, family);
-		} catch (IOException e) {
-			// TODO: Choose better exception.
-			throw new RuntimeException(e);
-		}
+	HBaseCellSource(@FamilyName ByteString family, ResultScanner scanner, HTable hTable) {
+		this.family = family;
+		this.scanner = scanner;
+		this.hTable = hTable;
 	}
 
 	class ResultScannerIterator extends UnmodifiableIterator<Iterable<Cell<T>>> {
@@ -94,7 +94,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 	}
 
 	/** Provides scans appropriate for reading tables sequentially, as in a Mapper. */
-	private static Scan makeScan() {
+	static Scan makeScan() {
 		Scan scan = new Scan();
 		// HBase book says 500, see chapter 12.9.1. Hbase Book
 		// This is 10 times faster than the default value.
@@ -104,10 +104,14 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		return scan;
 	}
 
-	private static ResultScanner openScanner(HTable tab, ByteString family) throws IOException {
+	private static ResultScanner openScanner(HTable tab, ByteString family) {
 		Scan scan = makeScan();
 		scan.addFamily(family.toByteArray());
-		return tab.getScanner(scan);
+		try {
+			return tab.getScanner(scan);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	@Override
@@ -122,7 +126,9 @@ public class HBaseCellSource<T> implements CellSource<T> {
 
 	@Override
 	public void close() throws IOException {
-		hTable.close();
+		if (hTable != null) {
+			hTable.close();
+		}
 		scanner.close();
 	}
 }

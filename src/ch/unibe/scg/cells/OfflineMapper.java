@@ -9,5 +9,5 @@ import java.io.IOException;
  */
 public interface OfflineMapper<IN, OUT> extends Closeable {
 	/** map the entire output from {@code in} into {@code out}. */
-	void map(Source<IN> in, Sink<OUT> out) throws IOException;
+	void map(Source<IN> in, Sink<OUT> out) throws IOException, InterruptedException;
 }
