@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.mappers.inputformats;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.logging.Logger;
 
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -17,8 +18,9 @@ import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 import com.google.common.io.ByteStreams;
 
-public class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> {
-	static final private Logger logger = Logger.getLogger(GitPathInputFormat.class.getName());
+public final class GitPathInputFormat extends FileInputFormat<Text, BytesWritable> implements Serializable {
+	final private static long serialVersionUID = 1L;
+	final private static Logger logger = Logger.getLogger(GitPathInputFormat.class.getName());
 
 	@Override
 	protected boolean isSplitable(JobContext context, Path filename) {

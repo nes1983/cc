@@ -1,9 +1,13 @@
 package ch.unibe.scg.cc.lines;
 
-import com.google.common.base.Preconditions;
+import static com.google.common.base.Preconditions.checkArgument;
+
+import java.io.Serializable;
 
 /** A string with efficient access into individual lines. First line has position 0. */
-public class StringOfLines {
+public class StringOfLines implements Serializable {
+	final private static long serialVersionUID = 1L;
+
 	final String string;
 	final int[] separators;
 
@@ -26,9 +30,9 @@ public class StringOfLines {
 	 *            Index of first returned line. Counting starts with 0.
 	 */
 	public String getLines(int from, int length) {
-		Preconditions.checkArgument(from >= 0, "From was negative! " + from);
-		Preconditions.checkArgument(length >= 0, "length was negative! " + length);
-		Preconditions.checkArgument(from + length < separators.length,
+		checkArgument(from >= 0, "From was negative! " + from);
+		checkArgument(length >= 0, "length was negative! " + length);
+		checkArgument(from + length < separators.length,
 				String.format("You're trying to access line %s (length %s), " +
 						"but there are only %s lines", from+length, length, getNumberOfLines()));
 		return string.substring(separators[from], separators[from + length] + 1);

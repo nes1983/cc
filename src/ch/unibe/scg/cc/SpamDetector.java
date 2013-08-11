@@ -19,6 +19,7 @@ import com.google.common.collect.Sets;
 // TODO(niko): Use all features from doi://10.1109/CSMR.2012.37
 public final class SpamDetector implements Serializable {
 	private static final long serialVersionUID = 1L;
+
 	final private Pattern identifier = Pattern.compile("\\p{Alpha}\\p{Alnum}*");
 
     /** Feature vector for classifying a cloning result as spam or not */

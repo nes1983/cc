@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc;
 
 import java.io.IOException;
+import java.io.Serializable;
 
 import javax.inject.Inject;
 
@@ -11,7 +12,9 @@ import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Pipeline;
 
 /** Run the clone detector. */
-public class ClonePipelineRunner {
+public class ClonePipelineRunner implements Serializable {
+	final private static long serialVersionUID = 1L;
+
 	final private GitPopulator gitPopulator;
 	final private Function2RoughCloner function2RoughCloner;
 	final private Function2FineCloner function2FineCloner;

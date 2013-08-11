@@ -18,12 +18,12 @@ class ShingleHasher implements Hasher {
 	final static private long serialVersionUID = 1L;
 	final private static int SHINGLE_LENGTH = 4;
 
-	final private StandardHasher md;
+	final private StandardHasher standardHasher;
 	final private RunAutomaton shingleRegex =  new RunAutomaton(new RegExp("[^\\ ]+\\ [^\\ ]+\\ [^\\ ]+\\ [^\\ ]+").toAutomaton());
 
 	@Inject
 	ShingleHasher(StandardHasher md) {
-		this.md = md;
+		this.standardHasher = md;
 	}
 
 	Collection<String> shingles(String doc) throws CannotBeHashedException {
@@ -47,7 +47,7 @@ class ShingleHasher implements Hasher {
 		// LinkedHashSet maintains order, but deletes duplicates.
 		LinkedHashSet<ByteBuffer> hashed = Sets.newLinkedHashSetWithExpectedSize(shingles.size());
 		for (String shingle : shingles) {
-			hashed.add(ByteBuffer.wrap(md.hash(shingle)));
+			hashed.add(ByteBuffer.wrap(standardHasher.hash(shingle)));
 		}
 		return hashed;
 	}
@@ -58,7 +58,7 @@ class ShingleHasher implements Hasher {
 	private byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
 		Preconditions.checkArgument(hashedShingles.iterator().hasNext(),
 				"There was nothing to make a sketch from. Input:\n" + doc);
-		final byte[] hash = new byte[md.md.getDigestLength()];
+		final byte[] hash = new byte[standardHasher.md.getDigestLength()];
 		int mask = 0x7; // After the first shift, that'll give binary pattern 11.
 		do {
 			mask >>= 1;

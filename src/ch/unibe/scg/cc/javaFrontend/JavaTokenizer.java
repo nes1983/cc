@@ -1,6 +1,5 @@
 package ch.unibe.scg.cc.javaFrontend;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.regex.Pattern;
@@ -12,7 +11,7 @@ import dk.brics.automaton.AutomatonMatcher;
 import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
-class JavaTokenizer implements Tokenizer, Serializable {
+class JavaTokenizer implements Tokenizer {
 	final private static long serialVersionUID = 1L;
 
 	// TODO: the last function in a class always catches one closing curly

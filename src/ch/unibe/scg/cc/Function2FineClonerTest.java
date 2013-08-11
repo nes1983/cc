@@ -2,10 +2,15 @@ package ch.unibe.scg.cc;
 
 import static org.junit.Assert.assertTrue;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Function2RoughClonerTest.CollectionCellSource;
@@ -28,7 +33,7 @@ import com.google.inject.TypeLiteral;
 import com.google.inject.util.Modules;
 
 /** Test {@link Function2FineCloner}. */
-public class Function2FineClonerTest {
+public final class Function2FineClonerTest {
 	/** Test {@link Function2FineCloner#map}.*/
 	@Test
 	public void testMap() throws IOException, InterruptedException {
@@ -79,5 +84,19 @@ public class Function2FineClonerTest {
 					"\\}\n" +
 					"\\]\\]", rows.toString()));
 		}
+	}
+
+	/** Just check if you can serialize a pipeline runner, including all mappers and codecs. */
+	@Test
+	public void testSerialization() throws IOException, ClassNotFoundException {
+		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
+				new JavaModule()).with(new Function2RoughClonerTest.TestModule()));
+		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
+		try (ObjectOutputStream out = new ObjectOutputStream(bOut)) {
+			ClonePipelineRunner runnerWithAllMappers = i.getInstance(ClonePipelineRunner.class);
+			out.writeObject(runnerWithAllMappers);
+		}
+		Assert.assertTrue(new ObjectInputStream(new ByteArrayInputStream(bOut.toByteArray())).readObject()
+				instanceof ClonePipelineRunner);
 	}
 }

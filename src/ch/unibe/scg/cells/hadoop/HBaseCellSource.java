@@ -32,7 +32,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 	/** May be null! */
 	final private SerializableHTable hTable;
 	private transient ResultScanner scanner;
-	boolean iterated = false;
+	private boolean iterated = false;
 
 	@Inject
 	HBaseCellSource(@FamilyName ByteString family, SerializableHTable hTable) {
@@ -52,7 +52,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		scanner = openScanner(hTable.hTable, family);
 	}
 
-	class ResultScannerIterator extends UnmodifiableIterator<Iterable<Cell<T>>> {
+	private class ResultScannerIterator extends UnmodifiableIterator<Iterable<Cell<T>>> {
 		/** The current row's column keys and cell contents. Null if the iterator is empty. */
 		Iterable<Entry<byte[], byte[]>> curRow;
 		/** The current row's key. */

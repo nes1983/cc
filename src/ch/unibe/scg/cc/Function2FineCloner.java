@@ -16,6 +16,7 @@ import com.google.inject.Inject;
 /** Expand clones and filter clones down to the clones that aren't spam. */
 class Function2FineCloner implements Mapper<Clone, Clone> {
 	private static final long serialVersionUID = 1L;
+
 	final private CloneExpander cloneExpander;
 	final private LookupTable<Str<Function>> cloneLoader;
 	final private SpamDetector spamDetector;

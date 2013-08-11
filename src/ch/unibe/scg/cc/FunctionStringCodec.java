@@ -10,13 +10,15 @@ import com.google.protobuf.InvalidProtocolBufferException;
 
 class FunctionStringCodec implements Codec<Str<Function>> {
 	final static private long serialVersionUID = 1L;
-	final static private ByteString columnName = ByteString.copyFromUtf8("function");
+
+	/** Don't modify. */
+	final static private byte[] columnName = ByteString.copyFromUtf8("function").toByteArray();
 
 	@Override
 	public Cell<Str<Function>> encode(Str<Function> s) {
 		return Cell.make(
 				s.hash,
-				columnName,
+				ByteString.copyFrom(columnName),
 				ByteString.copyFromUtf8(s.contents));
 	}
 

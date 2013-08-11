@@ -10,13 +10,15 @@ import com.google.common.hash.Hashing;
 import com.google.protobuf.ByteString;
 
 class CloneGroupCodec implements Codec<CloneGroup> {
-	private static final long serialVersionUID = 1L;
-	final private ByteString columnName = ByteString.copyFromUtf8("cloneGroup");
+	final private static long serialVersionUID = 1L;
+
+	/** Don't modify. */
+	final private byte[] columnName = ByteString.copyFromUtf8("cloneGroup").toByteArray();
 
 	@Override
 	public Cell<CloneGroup> encode(CloneGroup cg) {
 		return Cell.make(ByteString.copyFrom(Hashing.sha1().hashString(cg.getText()).asBytes()),
-				columnName,
+				ByteString.copyFrom(columnName),
 				cg.toByteString());
 	}
 

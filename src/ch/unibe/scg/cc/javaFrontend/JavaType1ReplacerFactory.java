@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc.javaFrontend;
 
-import jregex.Pattern;
+import java.util.regex.Pattern;
+
 import ch.unibe.scg.cc.ReplacerProvider;
 import ch.unibe.scg.cc.regex.Replace;
 
@@ -12,7 +13,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 0
 	 */
 	public Replace make00WhitespaceA() {
-		Pattern whiteSpace = new Pattern("\\s*\\n\\s*");
+		Pattern whiteSpace = Pattern.compile("\\s*\\n\\s*");
 		return new Replace(whiteSpace, "\n");
 	}
 
@@ -20,7 +21,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 1
 	 */
 	public Replace make01WhitespaceB() {
-		Pattern whiteSpace = new Pattern("[ \f\r\t]+");
+		Pattern whiteSpace = Pattern.compile("[ \f\r\t]+");
 		return new Replace(whiteSpace, " ");
 	}
 
@@ -31,7 +32,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * "int a = java.util.Math.sqrt(1);" gets "int a = Math.sqrt(1);"</code>
 	 */
 	public Replace make02Rj1() {
-		final Pattern packagesGo = new Pattern("\\b[a-z]+[a-z.]*\\.([A-Z])");
+		final Pattern packagesGo = Pattern.compile("\\b[a-z]+[a-z.]*\\.([A-Z])");
 		final String replaceWith = "$1";
 		return new Replace(packagesGo, replaceWith);
 	}
@@ -40,7 +41,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 3
 	 */
 	public Replace make03Rj3a() {
-		Pattern initializationList = new Pattern("=\\s?\\{.*?\\}");
+		Pattern initializationList = Pattern.compile("=\\s?\\{.*?\\}");
 		return new Replace(initializationList, "= { }");
 	}
 
@@ -48,7 +49,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 4
 	 */
 	public Replace make04Rj3b() {
-		Pattern initializationList = new Pattern("\\]\\s?\\{.*?\\}");
+		Pattern initializationList = Pattern.compile("\\]\\s?\\{.*?\\}");
 		return new Replace(initializationList, "] { }");
 	}
 
@@ -56,7 +57,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 5
 	 */
 	public Replace make05Rj5() {
-		Pattern visibility = new Pattern("(\\s)(?:private\\s|public\\s|protected\\s)");
+		Pattern visibility = Pattern.compile("(\\s)(?:private\\s|public\\s|protected\\s)");
 		return new Replace(visibility, "$1");
 	}
 
@@ -64,13 +65,13 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * 6
 	 */
 	public Replace make06Rj6() {
-		Pattern ifPattern = new Pattern("\\sif\\s*\\((?:.*)\\)\\s*(\\n[^\\n\\{\\}]*)$");
+		Pattern ifPattern = Pattern.compile("\\sif\\s*\\((?:.*)\\)\\s*(\\n[^\\n\\{\\}]*)$");
 		return new Replace(ifPattern, " {\\n$1\\n}\\n");
 	}
 
 	/** 7. This is necessary for tokenization. while statements look a lot like function definitions. */
 	public Replace make07RenameWhile() {
-		Pattern ifPattern = new Pattern("while");
+		Pattern ifPattern = Pattern.compile("while");
 		return new Replace(ifPattern, ";while");
 	}
 
@@ -79,7 +80,7 @@ public class JavaType1ReplacerFactory extends ReplacerProvider {
 	 * "	 public void a() {" gets "public void a() {"
 	 */
 	public Replace make08RemoveLeadingWhitespace() {
-		Pattern leadingWhiteSpace = new Pattern("^[ \f\r\t]*");
+		Pattern leadingWhiteSpace = Pattern.compile("^[ \f\r\t]*");
 		return new Replace(leadingWhiteSpace, "");
 	}
 }

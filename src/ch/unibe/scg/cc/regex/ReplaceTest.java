@@ -5,8 +5,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 import java.util.List;
-
-import jregex.Pattern;
+import java.util.regex.Pattern;
 
 import org.junit.Test;
 
@@ -18,7 +17,7 @@ import ch.unibe.scg.cc.regex.ReplacementString.Segment;
 public final class ReplaceTest {
 	@Test
 	public void testMakeReplace() {
-		Replace r = new Replace(new Pattern("x"), "y");
+		Replace r = new Replace(Pattern.compile("x"), "y");
 		assertThat(r.replacementString.contents.size(), is(1));
 
 		StringBuilder sb = new StringBuilder("123x123");
@@ -28,7 +27,7 @@ public final class ReplaceTest {
 
 	@Test
 	public void makePatternReplace() {
-		Replace r = new Replace(new Pattern("x"), "<$0>");
+		Replace r = new Replace(Pattern.compile("x"), "<$0>");
 		List<Segment> contents = r.replacementString.contents;
 		assertThat(contents.size(), is(3));
 
@@ -45,14 +44,14 @@ public final class ReplaceTest {
 
 	@Test
 	public void simpleSelfReplace() {
-		Replace r = new Replace(new Pattern("(x)"), "$0");
+		Replace r = new Replace(Pattern.compile("(x)"), "$0");
 		String selfReplaced = r.allReplaced("xxx");
 		assertThat(selfReplaced, is("xxx"));
 	}
 
 	@Test
 	public void reverseThings() {
-		Replace r = new Replace(new Pattern("(\\d*)(bla)"), "$2$1");
+		Replace r = new Replace(Pattern.compile("(\\d*)(bla)"), "$2$1");
 
 		List<Segment> contents = r.replacementString.contents;
 		assertThat(contents.size(), is(2));

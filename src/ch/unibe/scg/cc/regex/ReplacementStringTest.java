@@ -7,8 +7,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import java.util.List;
-
-import jregex.MatchResult;
+import java.util.regex.MatchResult;
 
 import org.junit.Test;
 

@@ -3,16 +3,16 @@ package ch.unibe.scg.cc.regex;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.MatchResult;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import jregex.MatchResult;
-import jregex.Matcher;
-import jregex.Pattern;
 
 class ReplacementString implements Serializable {
 	final private static long serialVersionUID = 1L;
 
 	final List<Segment> contents = new ArrayList<>();
-	private static final Pattern p = new Pattern("\\$(\\d+)");
+	private static final Pattern p = Pattern.compile("\\$(\\d+)");
 
 	public ReplacementString(String with) {
 		Matcher m = p.matcher(with);

@@ -33,6 +33,9 @@ import com.google.protobuf.ByteString;
  */
 @SuppressWarnings("javadoc")
 public final class SnippetSimilarTest {
+	final Comparator<Clone> cloneComparator = new CloneExpander.CloneComparator();
+	final Comparator<Snippet> snippetLocationComparator = new SnippetLocationComparator();
+
 	static class SnippetLocationComparator implements Comparator<Snippet>, Serializable {
 		private static final long serialVersionUID = 1L;
 
@@ -41,9 +44,6 @@ public final class SnippetSimilarTest {
 					o2.getHash().asReadOnlyByteBuffer());
 		}
 	}
-
-	final Comparator<Clone> cloneComparator = new CloneExpander.CloneComparator();
-	final Comparator<Snippet> snippetLocationComparator = new SnippetLocationComparator();
 
 	@Test
 	public void testAreSimilar() throws CannotBeHashedException {

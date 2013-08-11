@@ -20,16 +20,16 @@ public class StandardHasher implements Hasher {
 	@Inject
 	StandardHasher() {}
 
+	private void readObject(java.io.ObjectInputStream stream) throws IOException, ClassNotFoundException {
+		stream.defaultReadObject();
+		md = makeDigest();
+	}
+
 	@Override
 	public byte[] hash(String document) {
 		checkNotNull(document);
 
 		return md.digest(document.getBytes(Charsets.UTF_8));
-	}
-
-	private void readObject(java.io.ObjectInputStream stream) throws IOException, ClassNotFoundException {
-		stream.defaultReadObject();
-		md = makeDigest();
 	}
 
 	private static MessageDigest makeDigest() {

@@ -35,6 +35,7 @@ import com.google.protobuf.ByteString;
  */
 public class Populator implements Closeable, Serializable {
 	final static private long serialVersionUID = 1L;
+	private static final int CACHE_SIZE = 1000000;
 
 	static final int MINIMUM_LINES = 5;
 	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
@@ -58,11 +59,10 @@ public class Populator implements Closeable, Serializable {
 	/** Changes for every project */
 	private Sink<Snippet> snippet2Functions;
 
-	private static final int CACHE_SIZE = 1000000;
 	/** Functions that were successfully written to DB in this mapper */
-	final private Cache<ByteString, Boolean> writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+	private transient Cache<ByteString, Boolean> writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 	/** Files that were successfully written to DB in this mapper */
-	final private Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+	private transient Cache<ByteString, Boolean> writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 
 	@Inject
 	Populator(StandardHasher standardHasher, ShingleHasher shingleHasher, @Type1 Normalizer type1,
@@ -85,6 +85,12 @@ public class Populator implements Closeable, Serializable {
 		this.functionSink = functionSink;
 		this.snippetSink = snippetSink;
 		this.functionStringSink = functionStringSink;
+	}
+
+	private void readObject(java.io.ObjectInputStream stream) throws IOException, ClassNotFoundException {
+		stream.defaultReadObject();
+		writtenFunctions = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
+		writtenFiles = CacheBuilder.newBuilder().maximumSize(CACHE_SIZE).build();
 	}
 
 	/** Register all Versions of a Project */

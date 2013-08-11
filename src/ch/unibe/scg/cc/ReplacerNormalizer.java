@@ -6,6 +6,8 @@ import ch.unibe.scg.cc.regex.Replace;
 
 /** Normalize a string by applying a series of Replaces. */
 public class ReplacerNormalizer implements Normalizer {
+	final private static long serialVersionUID = 1L;
+
 	final private Replace[] replacers;
 
 	/** Visible for testing only. */

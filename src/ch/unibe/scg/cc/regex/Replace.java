@@ -1,9 +1,9 @@
 package ch.unibe.scg.cc.regex;
 
 import java.io.Serializable;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import jregex.Matcher;
-import jregex.Pattern;
 
 /** Replace is a command (as in command pattern) to replace a regex in a string for a substitution string. */
 public final class Replace implements Serializable {

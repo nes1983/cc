@@ -19,6 +19,7 @@ import com.google.protobuf.InvalidProtocolBufferException;
 /** Translates from Cell to our protobufs and back */
 class PopulatorCodec implements Serializable {
 	private static final long serialVersionUID = 1L;
+
 	final Codec<CodeFile> codeFile = new CodeFileCodec();
 	/** Maps from functions to snippets. */
 	final Codec<Snippet> snippet = new Function2SnippetCodec();

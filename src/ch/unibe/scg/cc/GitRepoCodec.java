@@ -10,11 +10,13 @@ import com.google.protobuf.ByteString;
 
 class GitRepoCodec implements Codec<GitRepo> {
 	final static private long serialVersionUID = 1L;
-	final static private ByteString colKey = ByteString.copyFromUtf8("project");
+
+	/** Don't modify. */
+	final static private byte[] colKey = ByteString.copyFromUtf8("project").toByteArray();
 
 	@Override
 	public Cell<GitRepo> encode(GitRepo s) {
-		return Cell.make(ByteString.copyFromUtf8(s.getProjectName()), colKey, s.toByteString());
+		return Cell.make(ByteString.copyFromUtf8(s.getProjectName()), ByteString.copyFrom(colKey), s.toByteString());
 	}
 
 	@Override

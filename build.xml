@@ -8,7 +8,7 @@
 	<property name="source" value="1.7"/>
 	<path id=".classpath">
 		<pathelement location="bin"/>
-		<!-- 
+		<!--
 			reproduce using
 			ls libs/*.jar | ruby -ne 'puts "<pathelement location=\"#{$_.gsub("\n","")}\"/>"'
 			This is necessary, because ant is FOS.
@@ -41,7 +41,6 @@
 		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar"/>
 		<pathelement location="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
 		<pathelement location="libs/javax.inject.jar"/>
-		<pathelement location="libs/jregex1.2_01.jar"/>
 		<pathelement location="libs/jsch-0.1.48.jar"/>
 		<pathelement location="libs/junit-4.11.jar"/>
 		<pathelement location="libs/juniversalchardet-1.0.3.jar"/>
@@ -94,7 +93,6 @@
 			<zipfileset src="libs/guice-persist-3.0.jar"/>
 			<zipfileset src="libs/guice-throwingproviders-3.0.jar"/>
 			<zipfileset src="libs/javax.inject.jar"/>
-			<zipfileset src="libs/jregex1.2_01.jar"/>
 			<zipfileset src="libs/jsch-0.1.48.jar"/>
 			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>
 			<zipfileset src="libs/org.eclipse.jgit-2.3.1.201302201838-r.jar"/>
@@ -107,7 +105,7 @@
 	<target name="uploadJar">
 		<!--
 		 TODO: As long as we provide the hbase-jar in the cc.jar (with jarjar, see above),
-		 we can provide an empty libjars property. When jarjar gets removed from the 
+		 we can provide an empty libjars property. When jarjar gets removed from the
 		 build process, we need to set the libjars value again to something like this:
 		 "-libjars /tmp/hbase-0.94.6-cdh4.3.0-security.jar"
 		-->
@@ -213,7 +211,7 @@
 	<target name="build-subprojects"/>
 	<target depends="init" name="build-project">
 		<exec logError="yes" executable="./run-protoc.sh"/>
-		<javac includeantruntime="false"  debug="true" debuglevel="${debuglevel}" 
+		<javac includeantruntime="false"  debug="true" debuglevel="${debuglevel}"
 			destdir="bin" source="${source}" target="${target}">
 			<src path="src"/>
 			<src path="src-gen"/>
