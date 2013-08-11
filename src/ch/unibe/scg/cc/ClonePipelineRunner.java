@@ -3,7 +3,6 @@ package ch.unibe.scg.cc;
 import java.io.IOException;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.GitRepo;
@@ -13,15 +12,16 @@ import ch.unibe.scg.cells.Pipeline;
 
 /** Run the clone detector. */
 public class ClonePipelineRunner {
-	final private Provider<GitPopulator> gitPopulator;
-	final private Provider<Function2RoughCloner> function2RoughCloner;
-	final private Provider<Function2FineCloner> function2FineCloner;
+	final private GitPopulator gitPopulator;
+	final private Function2RoughCloner function2RoughCloner;
+	final private Function2FineCloner function2FineCloner;
 	final private Codec<GitRepo> repoCodec;
 	final private Codec<Snippet> snippet2FunctionsCodec;
 	final private Codec<Clone> function2RoughClonesCodec;
+
 	@Inject
-	ClonePipelineRunner(Provider<GitPopulator> gitPopulator, Provider<Function2RoughCloner> function2RoughCloner,
-			Provider<Function2FineCloner> function2FineCloner, GitRepoCodec repoCodec,
+	ClonePipelineRunner(GitPopulator gitPopulator, Function2RoughCloner function2RoughCloner,
+			Function2FineCloner function2FineCloner, GitRepoCodec repoCodec,
 			Snippet2FunctionsCodec snippet2FunctionsCodec, Function2RoughClonesCodec function2RoughClonesCodec) {
 		this.gitPopulator = gitPopulator;
 		this.function2RoughCloner = function2RoughCloner;

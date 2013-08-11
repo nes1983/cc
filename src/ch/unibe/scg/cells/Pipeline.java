@@ -2,9 +2,6 @@ package ch.unibe.scg.cells;
 
 import java.io.IOException;
 
-import javax.inject.Provider;
-
-
 /**
  * Pipeline is the API that should be used to specify the control flow of a map reduce job.
  * Side outputs are currently unsupported, but will soon be added.
@@ -27,15 +24,15 @@ public interface Pipeline<IN, EFF> {
 	/** A segment that is shuffled and ready for mapping.  */
 	public static interface MappablePipeline<I, EFF> {
 		/** Set the mapper of influx {@code I} and efflux {@code E} */
-		<E> ShuffleablePipeline<E, EFF> mapper(Provider<? extends Mapper<I, E>> m);
+		<E> ShuffleablePipeline<E, EFF> mapper(Mapper<I, E> m);
 		/**
 		 * Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.
 		 * @throws IOException If several exceptions occur, any may be reported.
 		 */
-		void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException, InterruptedException;
+		void efflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException;
 
 		/** Run the entire pipeline, and run {@code offlineMapper} locally. */
-		void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, EFF>> offlineMapper, Codec<EFF> codec)
+		void effluxWithOfflineMapper(OfflineMapper<I, EFF> offlineMapper, Codec<EFF> codec)
 				throws IOException, InterruptedException;
 	}
 

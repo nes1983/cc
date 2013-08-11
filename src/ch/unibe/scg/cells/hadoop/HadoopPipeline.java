@@ -16,8 +16,6 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.NavigableMap;
 
-import javax.inject.Provider;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
@@ -81,17 +79,17 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public <E> ShuffleablePipeline<E, EFF> mapper(Provider<? extends Mapper<I, E>> m) {
+		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<I, E> m) {
 			return new HadoopShuffleablePipelineAfterMap<>(src, srcCodec, m);
 		}
 
 		@Override
-		public void efflux(Provider<? extends Mapper<I, EFF>> m, Codec<EFF> codec) throws IOException {
+		public void efflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException {
 			throw new UnsupportedOperationException("I'll think about this case later :)");
 		}
 
 		@Override
-		public void effluxWithOfflineMapper(Provider<? extends OfflineMapper<I, EFF>> offlineMapper, Codec<EFF> codec)
+		public void effluxWithOfflineMapper(OfflineMapper<I, EFF> offlineMapper, Codec<EFF> codec)
 				throws IOException {
 			throw new UnsupportedOperationException("I'll think about this case later :)");
 		}
@@ -100,12 +98,12 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	private class HadoopReducablePipeline<MAP_IN, MAP_OUT> implements MappablePipeline<MAP_OUT, EFF> {
 		final private Table<MAP_IN> src;
 		final private Codec<MAP_IN> mapSrcCodec;
-		final private Provider<? extends Mapper<MAP_IN, MAP_OUT>> map;
+		final private Mapper<MAP_IN, MAP_OUT> map;
 
 		final private Codec<MAP_OUT> reduceSrcCodec;
 
 		HadoopReducablePipeline(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
-				Provider<? extends Mapper<MAP_IN, MAP_OUT>> map, Codec<MAP_OUT> reduceSrcCodec) {
+				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec) {
 			this.src = src;
 			this.mapSrcCodec = mapSrcCodec;
 			this.map = map;
@@ -113,18 +111,18 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public <E> ShuffleablePipeline<E, EFF> mapper(Provider<? extends Mapper<MAP_OUT, E>> m) {
+		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<MAP_OUT, E> m) {
 			return new HadoopShuffleablePipelineAfterReduce<>(src, mapSrcCodec, map, reduceSrcCodec, m);
 		}
 
 		@Override
-		public void efflux(Provider<? extends Mapper<MAP_OUT, EFF>> m, Codec<EFF> codec) throws IOException, InterruptedException {
+		public void efflux(Mapper<MAP_OUT, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException {
 			run(src, mapSrcCodec, map, reduceSrcCodec, m, codec, efflux);
 			src.close();
 		}
 
 		@Override
-		public void effluxWithOfflineMapper(Provider<? extends OfflineMapper<MAP_OUT, EFF>> offlineMapper, Codec<EFF> codec)
+		public void effluxWithOfflineMapper(OfflineMapper<MAP_OUT, EFF> offlineMapper, Codec<EFF> codec)
 				throws IOException {
 			throw new RuntimeException("Not implemented");
 		}
@@ -133,10 +131,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	private class HadoopShuffleablePipelineAfterMap<I, E> implements ShuffleablePipeline<E, EFF> {
 		final private Table<I> src;
 		final private Codec<I> srcCodec;
-		final private Provider<? extends Mapper<I, E>> mapper;
+		final private Mapper<I, E> mapper;
 
-		HadoopShuffleablePipelineAfterMap(Table<I> src, Codec<I> srcCodec,
-				Provider<? extends Mapper<I, E>> mapper) {
+		HadoopShuffleablePipelineAfterMap(Table<I> src, Codec<I> srcCodec, Mapper<I, E> mapper) {
 			this.src = src;
 			this.srcCodec = srcCodec;
 			this.mapper = mapper;
@@ -151,14 +148,14 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	private class HadoopShuffleablePipelineAfterReduce<MAP_IN, MAP_OUT, E> implements ShuffleablePipeline<E, EFF> {
 		final private Table<MAP_IN> src;
 		final private Codec<MAP_IN> mapSrcCodec;
-		final private Provider<? extends Mapper<MAP_IN, MAP_OUT>> map;
+		final private Mapper<MAP_IN, MAP_OUT> map;
 
 		final private Codec<MAP_OUT> reduceSrcCodec;
-		final private Provider<? extends Mapper<MAP_OUT, E>> reduce;
+		final private Mapper<MAP_OUT, E> reduce;
 
 		HadoopShuffleablePipelineAfterReduce(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
-				Provider<? extends Mapper<MAP_IN, MAP_OUT>> map, Codec<MAP_OUT> reduceSrcCodec,
-				Provider<? extends Mapper<MAP_OUT, E>> reduce) {
+				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
+				Mapper<MAP_OUT, E> reduce) {
 			this.src = src;
 			this.mapSrcCodec = mapSrcCodec;
 			this.map = map;
@@ -180,15 +177,15 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	private <E, MAP_IN, MAP_OUT> void run(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
-			Provider<? extends Mapper<MAP_IN, MAP_OUT>> map, Codec<MAP_OUT> reduceSrcCodec,
-			Provider<? extends Mapper<MAP_OUT, E>> reduce, Codec<E> codec, Table<E> target)
+			Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
+			Mapper<MAP_OUT, E> reduce, Codec<E> codec, Table<E> target)
 			throws IOException,	InterruptedException {
 		Job job = Job.getInstance();
 
-		HadoopMapper<MAP_IN, MAP_OUT> hMapper = new HadoopMapper<>(map.get(), mapSrcCodec, reduceSrcCodec, family);
+		HadoopMapper<MAP_IN, MAP_OUT> hMapper = new HadoopMapper<>(map, mapSrcCodec, reduceSrcCodec, family);
 		writeObjectToConf(job.getConfiguration(), hMapper);
 
-		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce.get(), reduceSrcCodec, codec);
+		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce, reduceSrcCodec, codec);
 		writeObjectToConf(job.getConfiguration(), hReducer);
 
 		Scan scan = HBaseCellSource.makeScan();
