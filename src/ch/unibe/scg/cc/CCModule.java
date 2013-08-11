@@ -14,6 +14,7 @@ import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.StorageModule;
 
 import com.google.inject.PrivateModule;
+import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
@@ -54,7 +55,7 @@ public final class CCModule extends CellsModule {
 		installTable("PopularSnippets", defaultFamily, PopularSnippets.class,
 				new TypeLiteral<Snippet>() {}, PopularSnippetsCodec.class, storageModule);
 
-		bind(PopularSnippetMaps.class).toProvider(PopularSnippetMapsProvider.class);
+		bind(PopularSnippetMaps.class).in(Singleton.class);
 
 		bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(500);
 

@@ -5,8 +5,6 @@ import static org.junit.Assert.assertThat;
 
 import java.nio.ByteBuffer;
 
-import javax.inject.Provider;
-
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
@@ -14,6 +12,7 @@ import ch.unibe.scg.cc.Protos.Snippet;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableListMultimap;
+import com.google.common.collect.ImmutableMultimap;
 import com.google.protobuf.ByteString;
 
 /** Test {@link CloneExpander} */
@@ -80,10 +79,15 @@ public final class CloneExpanderTest {
 				fun1Loc.getFunction().asReadOnlyByteBuffer(), fun1Loc,
 				fun2Loc.getFunction().asReadOnlyByteBuffer(), fun2Loc);
 
-		CloneExpander expander = new CloneExpander(new Provider<PopularSnippetMaps>() {
-			@Override
-			public PopularSnippetMaps get() {
-				return new PopularSnippetMaps(function2Popular, snippet2Popular);
+		CloneExpander expander = new CloneExpander(new PopularSnippetMaps(null) {
+			final private static long serialVersionUID = 1L;
+
+			@Override public ImmutableMultimap<ByteBuffer, Snippet> getFunction2PopularSnippets() {
+				return function2Popular;
+			}
+
+			@Override public ImmutableMultimap<ByteBuffer, Snippet> getSnippet2PopularSnippets() {
+				return snippet2Popular;
 			}
 		});
 		assertThat(expander.expandClones(toExpand).toString(), is(

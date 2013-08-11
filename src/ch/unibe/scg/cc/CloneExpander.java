@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.ListIterator;
 
 import javax.inject.Inject;
-import javax.inject.Provider;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneOrBuilder;
@@ -21,7 +20,6 @@ import ch.unibe.scg.cc.Protos.Snippet.Builder;
 
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
@@ -42,21 +40,14 @@ class CloneExpander implements Serializable {
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippets, they should contain their length.
 
-	/**
-	 * Maps from functions hashes to all of their popular snippet. See the
-	 * popularsnippets Htable definition for details.
-	 */
-	private final ImmutableMultimap<ByteBuffer, Snippet> function2PopularSnippets;
-	/** Maps from snippet hash to popular snippet locations. */
-	private final ImmutableMultimap<ByteBuffer, Snippet> snippet2PopularSnippet;
+	/** Maps from functions hashes to all of their popular snippet, and from snippets to functions. */
+	private final PopularSnippetMaps popularSnippetMaps;
 
 	private final Comparator<Clone> cloneComparator = new CloneComparator();
 
 	@Inject
-	CloneExpander(Provider<PopularSnippetMaps> popularSnippetMapsProvider) {
-		PopularSnippetMaps popularSnippetMaps = popularSnippetMapsProvider.get();
-		this.function2PopularSnippets = popularSnippetMaps.getFunction2PopularSnippets();
-		this.snippet2PopularSnippet = popularSnippetMaps.getSnippet2PopularSnippets();
+	CloneExpander(PopularSnippetMaps popularSnippetMaps) {
+		this.popularSnippetMaps = popularSnippetMaps;
 	}
 
 	static class CloneComparator implements Comparator<Clone>, Serializable {
@@ -155,15 +146,15 @@ class CloneExpander implements Serializable {
 		final ByteBuffer thisFunction = unprocessedMatches.get(0).getThisSnippet().getFunction()
 				.asReadOnlyByteBuffer();
 
-		if (!function2PopularSnippets.containsKey(thisFunction)) {
+		if (!popularSnippetMaps.getFunction2PopularSnippets().containsKey(thisFunction)) {
 			// Nothing to weave in.
 			return;
 		}
 
 		List<Clone> toBeWeavedIns = new ArrayList<>();
-		for (Snippet thisLocation : function2PopularSnippets.get(thisFunction)) {
-			assert snippet2PopularSnippet.containsKey(thisLocation.getHash().asReadOnlyByteBuffer());
-			for (Snippet thatLocation : snippet2PopularSnippet.get(thisLocation.getHash()
+		for (Snippet thisLocation : popularSnippetMaps.getFunction2PopularSnippets().get(thisFunction)) {
+			assert popularSnippetMaps.getSnippet2PopularSnippets().containsKey(thisLocation.getHash().asReadOnlyByteBuffer());
+			for (Snippet thatLocation : popularSnippetMaps.getSnippet2PopularSnippets().get(thisLocation.getHash()
 					.asReadOnlyByteBuffer())) {
 				// The following three lines *must* match the test in
 				// MakeFunction2RoughClones.java

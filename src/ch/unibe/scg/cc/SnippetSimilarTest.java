@@ -11,8 +11,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.inject.Provider;
-
 import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
@@ -24,7 +22,7 @@ import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cells.InMemoryStorage;
 
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableListMultimap;
+import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Guice;
 import com.google.protobuf.ByteString;
 
@@ -105,12 +103,15 @@ public final class SnippetSimilarTest {
 
 		// Extract matches
 		final CloneExpander expanderWithoutLongRows = new CloneExpander(
-				new Provider<PopularSnippetMaps>() {
-					@Override
-					public PopularSnippetMaps get() {
-						return new PopularSnippetMaps(
-								ImmutableListMultimap.<ByteBuffer, Snippet>of(),
-								ImmutableListMultimap.<ByteBuffer, Snippet>of());
+				new PopularSnippetMaps(null) {
+					final private static long serialVersionUID = 1L;
+
+					@Override public ImmutableMultimap<ByteBuffer, Snippet> getFunction2PopularSnippets() {
+						return ImmutableMultimap.of();
+					}
+
+					@Override public ImmutableMultimap<ByteBuffer, Snippet> getSnippet2PopularSnippets() {
+						return ImmutableMultimap.of();
 					}
 				});
 		Collection<Clone> builtClones = expanderWithoutLongRows.expandClones(matches.get(0));
