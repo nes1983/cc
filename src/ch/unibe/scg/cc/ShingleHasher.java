@@ -1,14 +1,12 @@
 package ch.unibe.scg.cc;
 
 import java.nio.ByteBuffer;
-import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
 
 import javax.inject.Inject;
 
-import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Sets;
 
@@ -17,13 +15,14 @@ import dk.brics.automaton.RegExp;
 import dk.brics.automaton.RunAutomaton;
 
 class ShingleHasher implements Hasher {
-	private final MessageDigest md;
-
+	final static private long serialVersionUID = 1L;
 	final private static int SHINGLE_LENGTH = 4;
+
+	final private StandardHasher md;
 	final private RunAutomaton shingleRegex =  new RunAutomaton(new RegExp("[^\\ ]+\\ [^\\ ]+\\ [^\\ ]+\\ [^\\ ]+").toAutomaton());
 
 	@Inject
-	ShingleHasher(MessageDigest md) {
+	ShingleHasher(StandardHasher md) {
 		this.md = md;
 	}
 
@@ -48,7 +47,7 @@ class ShingleHasher implements Hasher {
 		// LinkedHashSet maintains order, but deletes duplicates.
 		LinkedHashSet<ByteBuffer> hashed = Sets.newLinkedHashSetWithExpectedSize(shingles.size());
 		for (String shingle : shingles) {
-			hashed.add(ByteBuffer.wrap(md.digest(shingle.getBytes(Charsets.UTF_8))));
+			hashed.add(ByteBuffer.wrap(md.hash(shingle)));
 		}
 		return hashed;
 	}
@@ -59,7 +58,7 @@ class ShingleHasher implements Hasher {
 	private byte[] sketchFromHashedShingles(Iterable<ByteBuffer> hashedShingles, String doc) {
 		Preconditions.checkArgument(hashedShingles.iterator().hasNext(),
 				"There was nothing to make a sketch from. Input:\n" + doc);
-		final byte[] hash = new byte[md.getDigestLength()];
+		final byte[] hash = new byte[md.md.getDigestLength()];
 		int mask = 0x7; // After the first shift, that'll give binary pattern 11.
 		do {
 			mask >>= 1;

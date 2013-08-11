@@ -1,6 +1,8 @@
 package ch.unibe.scg.cc;
 
 
+import java.io.Serializable;
+
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
@@ -15,7 +17,8 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 /** Translates from Cell to our protobufs and back */
-class PopulatorCodec {
+class PopulatorCodec implements Serializable {
+	private static final long serialVersionUID = 1L;
 	final Codec<CodeFile> codeFile = new CodeFileCodec();
 	/** Maps from functions to snippets. */
 	final Codec<Snippet> snippet = new Function2SnippetCodec();
@@ -24,6 +27,8 @@ class PopulatorCodec {
 	final Codec<Project> project = new ProjectCodec();
 
 	static class CodeFileCodec implements Codec<CodeFile> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<CodeFile> encode(CodeFile fil) {
 			return Cell.make(fil.getVersion(), fil.getHash().concat(fil.getPathBytes()), fil.toByteString());
@@ -36,6 +41,8 @@ class PopulatorCodec {
 	}
 
 	static class Function2SnippetCodec implements Codec<Snippet> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<Snippet> encode(Snippet snip) {
 			byte[] colKey = Bytes.concat(new byte[] {(byte) snip.getCloneType().getNumber()},
@@ -52,6 +59,8 @@ class PopulatorCodec {
 	}
 
 	static class VersionCodec implements Codec<Version> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<Version> encode(Version v) {
 			return Cell.make(v.getProject(), v.getHash().concat(v.getNameBytes()), v.toByteString());
@@ -64,6 +73,8 @@ class PopulatorCodec {
 	}
 
 	static class FunctionCodec implements Codec<Function> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<Function> encode(Function fun) {
 			ByteString colKey = fun.getHash().concat(ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine())));
@@ -78,6 +89,8 @@ class PopulatorCodec {
 	}
 
 	static class ProjectCodec implements Codec<Project> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<Project> encode(Project project) {
 			return Cell.make(project.getHash(), project.getHash(), project.toByteString());

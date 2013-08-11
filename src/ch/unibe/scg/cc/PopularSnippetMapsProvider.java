@@ -1,9 +1,9 @@
 package ch.unibe.scg.cc;
 
+import java.io.Serializable;
 import java.nio.ByteBuffer;
 
 import javax.inject.Provider;
-
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Protos.Snippet;
@@ -12,7 +12,9 @@ import ch.unibe.scg.cells.Source;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.inject.Inject;
 
-class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps> {
+class PopularSnippetMapsProvider implements Provider<PopularSnippetMaps>, Serializable {
+	final private static long serialVersionUID = 1L;
+
 	final private Source<Snippet> src;
 
 	@Inject

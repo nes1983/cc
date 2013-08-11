@@ -9,7 +9,8 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 class FunctionStringCodec implements Codec<Str<Function>> {
-	final private ByteString columnName = ByteString.copyFromUtf8("function");
+	final static private long serialVersionUID = 1L;
+	final static private ByteString columnName = ByteString.copyFromUtf8("function");
 
 	@Override
 	public Cell<Str<Function>> encode(Str<Function> s) {

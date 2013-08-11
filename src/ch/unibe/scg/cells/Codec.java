@@ -1,6 +1,7 @@
 package ch.unibe.scg.cells;
 
 import java.io.IOException;
+import java.io.Serializable;
 
 
 /**
@@ -10,7 +11,7 @@ import java.io.IOException;
  *
  * @param <T> The user-defined data type. Often a proto buffer.
  */
-public interface Codec<T> {
+public interface Codec<T> extends Serializable {
 	/** Encode {@code s} into a cell.*/
 	Cell<T> encode(T s);
 	/** Decode cell {@encoded}. */

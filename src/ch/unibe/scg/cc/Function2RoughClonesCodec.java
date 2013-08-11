@@ -11,6 +11,8 @@ import ch.unibe.scg.cells.Codec;
 import com.google.protobuf.ByteString;
 
 class Function2RoughClonesCodec implements Codec<Clone> {
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public Cell<Clone> encode(Clone m) {
 		ByteString colKey = ByteString.copyFrom(Bytes.add(m.getThatSnippet().getFunction().toByteArray(),

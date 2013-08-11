@@ -9,7 +9,8 @@ import ch.unibe.scg.cells.Codec;
 import com.google.protobuf.ByteString;
 
 class GitRepoCodec implements Codec<GitRepo> {
-	final private ByteString colKey = ByteString.copyFromUtf8("project");
+	final static private long serialVersionUID = 1L;
+	final static private ByteString colKey = ByteString.copyFromUtf8("project");
 
 	@Override
 	public Cell<GitRepo> encode(GitRepo s) {

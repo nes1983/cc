@@ -1,10 +1,10 @@
 package ch.unibe.scg.cc;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.regex.Pattern;
 
 import org.junit.Test;
 
@@ -47,37 +47,37 @@ public class Function2FineClonerTest {
 
 			Source<Clone> rows = Codecs.decode(shuffler, i.getInstance(Function2RoughClonesCodec.class));
 
-			assertThat(rows.toString(), is("[[thisSnippet {\n" +
-					"  function: \"\\325\\'\\365A\\244\\317\\220\\232\\257\\361\\024(\\032\\313C\\260<n\\253\\251\"\n" +
+			assertTrue(rows.toString(), Pattern.matches("(?s)\\[\\[thisSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 5\n" +
 					"  length: 14\n" +
-					"}\n" +
-					"thatSnippet {\n" +
-					"  function: \"\\326\\030\\3332,\\363\\333.\\266n\\214#x\\332_\\315\\021\\001l\\332\"\n" +
+					"\\}\n" +
+					"thatSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 3\n" +
 					"  length: 15\n" +
-					"}\n" +
-					", thisSnippet {\n" +
-					"  function: \"\\325\\'\\365A\\244\\317\\220\\232\\257\\361\\024(\\032\\313C\\260<n\\253\\251\"\n" +
+					"\\}\n" +
+					", thisSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 13\n" +
 					"  length: 6\n" +
-					"}\n" +
-					"thatSnippet {\n" +
-					"  function: \"*\\277\\025\\333\\022C\\000\\273b\\302\\303\\273\\016X\\\"\\365\\304.\\205u\"\n" +
+					"\\}\n" +
+					"thatSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 9\n" +
 					"  length: 6\n" +
-					"}\n" +
-					"], [thisSnippet {\n" +
-					"  function: \"\\326\\030\\3332,\\363\\333.\\266n\\214#x\\332_\\315\\021\\001l\\332\"\n" +
+					"\\}\n" +
+					"\\], \\[thisSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 0\n" +
 					"  length: 23\n" +
-					"}\n" +
-					"thatSnippet {\n" +
-					"  function: \"*\\277\\025\\333\\022C\\000\\273b\\302\\303\\273\\016X\\\"\\365\\304.\\205u\"\n" +
+					"\\}\n" +
+					"thatSnippet \\{\n" +
+					"  function: \".*?\"\n" +
 					"  position: 0\n" +
 					"  length: 20\n" +
-					"}\n" +
-					"]]"));
+					"\\}\n" +
+					"\\]\\]", rows.toString()));
 		}
 	}
 }

@@ -53,7 +53,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testProjnameRegex() throws IOException {
-		try(GitPopulator gitWalker = new GitPopulator(null, null, null)) {
+		try(GitPopulator gitWalker = new GitPopulator(null, null)) {
 			String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
 					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 			String projName = gitWalker.extractProjectName(fullPathString);
@@ -210,18 +210,18 @@ public final class GitPopulatorTest {
 		assertThat(Iterables.size(function2snippetsPartitions), is(9));
 
 		// We'll examine this row further in Function2RoughClones
-		Iterable<Snippet> d618 = null;
+		Iterable<Snippet> aaa0 = null;
 		for (Iterable<Snippet> row : function2snippetsPartitions) {
-			if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("D618")) {
-				d618 = row;
+			if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("AAA0")) {
+				aaa0 = row;
 				break;
 			}
 		}
-		assert d618 != null; // Null analysis insists ...
-		assertNotNull(d618);
+		assert aaa0 != null; // Null analysis insists ...
+		assertNotNull(aaa0);
 
 		List<String> snippetHashes = new ArrayList<>();
-		for (Snippet s : d618) {
+		for (Snippet s : aaa0) {
 			if (s.getCloneType() == CloneType.GAPPED) {
 				snippetHashes.add(base16().encode(s.getHash().toByteArray()));
 			}
@@ -232,16 +232,16 @@ public final class GitPopulatorTest {
 	}
 
 	static Collection<String> d618SnippetHashes() {
-		return Arrays.asList("9721D2E18CFB9E67DD3787FA16426FF15FA4DDC3", "88895703E487880901E8A65520240A9242A329E2",
-				"1FF04CEAED39AEEB97E965622549D309CC449082", "BB3E14556ABA10796131584A07979C50470B4DBA",
-				"54F44DF1B74E5C820084644F002628098403C3F5", "ECBBB50DB74FB3CEA92496B0A8EBDD00CB026477",
-				"E4449FB81BF8157AB4A4EA29B70F626C299571E3", "A0371539D00B078FE5EC14FEECF5D03E387C0995",
-				"FC065CF873BF61F22B363F08D9CDC20726659250", "03D8952065410DFEB6F65F83EBA3AD70A1B9F3B3",
-				"4FE1D1D7D18223F94D13CEB4A2DB2E30DF5CAE8D", "4FE1D1D7D18223F94D13CEB4A2DB2E30DF5CAE8D",
-				"20A4E2A38A590E7D29978E7A3FF308EE15B6DC63", "6F4533745BDB2D84648440CE9D2826DECAEA72EE",
-				"BFEA4FB989E4BB732B2D3C1DB4D2B522389D93A7", "ABB06C63965C7AFEFB98F464BB628AA84C6BAE50",
-				"D0AF7CCDD23F96F74FA97CD329FA93FCF277E149", "C7511FD22F9017C9188B65BF5FC50CB53812FA18",
-				"C46C6B63797890F241C4C722182213F9FD1D1C7B");
+		return Arrays.asList("58BA4690385740B2C9F8FCBF890A1ECF3BDC17C4", "0FA256C80C3AF5E1AC1FE54F5F0AF85D8752F474",
+				"0FA256C80C3AF5E1AC1FE54F5F0AF85D8752F474", "A9BBB1B13ECC261749436CAF9DC5DC20E9C2F68B",
+				"98DB4D210584D3033A1E26785A6721C609B54D14", "BB3E14556ABA10796131584A07979C50470B4DBA",
+				"38C303121D329190DA79CE955F0E790569D168D3", "598571B72AE83C72E299F3747B9C025848C45014",
+				"301729FB42E326C3CE1130994C16BD4C9DF14A79", "A4A8B82E4ABE99EBF67D12A1FF190B61FF6E6520",
+				"5F72E12E161EF9991A85572864F5FBE6C3DF72EB", "9C628251AE1C7A39F3265D1AACA3630B69DA3655",
+				"1474378C2B8FDE56C8A835AFD8F7DFB46F1E59DC", "20A4E2A38A590E7D29978E7A3FF308EE15B6DC63",
+				"6F4533745BDB2D84648440CE9D2826DECAEA72EE", "278629562C3404A50795A832EE4E81722319D775",
+				"48C31A2277EF29216311E8FC7366A7ACE9F3A59B", "48C31A2277EF29216311E8FC7366A7ACE9F3A59B",
+				"24D6FB97266FFFCC409DD4F57CDC938EE6423C5F");
 	}
 
 	private static Injector walkRepo(GitRepo repo) throws IOException, InterruptedException {

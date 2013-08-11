@@ -10,6 +10,7 @@ import com.google.common.hash.Hashing;
 import com.google.protobuf.ByteString;
 
 class CloneGroupCodec implements Codec<CloneGroup> {
+	private static final long serialVersionUID = 1L;
 	final private ByteString columnName = ByteString.copyFromUtf8("cloneGroup");
 
 	@Override

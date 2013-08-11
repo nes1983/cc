@@ -60,18 +60,18 @@ public final class Function2RoughClonerTest {
 
 			Source<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, PopularSnippets.class));
 
-			Iterable<Snippet> d618 = null;
+			Iterable<Snippet> aaa0 = null;
 			for (Iterable<Snippet> row : popularPartitions) {
-				if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("D618")) {
-					d618 = row;
+				if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("AAA0")) {
+					aaa0 = row;
 					break;
 				}
 			}
-			assert d618 != null; // Null analysis insists.
-			assertNotNull(d618);
+			assert aaa0 != null; // Null analysis insists.
+			assertNotNull(aaa0);
 
 			Set<String> snippetHashes = new HashSet<>();
-			for (Snippet s : d618) {
+			for (Snippet s : aaa0) {
 				if (s.getCloneType() == CloneType.GAPPED) {
 					snippetHashes.add(base16().encode(s.getHash().toByteArray()));
 				}

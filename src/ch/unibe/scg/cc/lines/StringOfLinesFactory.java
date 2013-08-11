@@ -1,7 +1,11 @@
 package ch.unibe.scg.cc.lines;
 
+import java.io.Serializable;
 
-public class StringOfLinesFactory {
+
+public class StringOfLinesFactory implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 	public StringOfLines make(String string, char separator) {
 		String stringEndingInNewline = string;
 		if (!string.endsWith(String.valueOf(separator))) {

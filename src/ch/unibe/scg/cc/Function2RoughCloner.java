@@ -19,15 +19,16 @@ import com.google.common.io.BaseEncoding;
 
 /** Filter phase of the pipeline */
 class Function2RoughCloner implements Mapper<Snippet, Clone> {
+	final static private long serialVersionUID = 1L;
+	final static private Logger logger = Logger.getLogger(Function2RoughCloner.class.getName());
+
 	final private Sink<Snippet> popularSnippets;
 	final private int popularSnippetThreshold;
-	final private Logger logger;
 
 	@Inject
-	Function2RoughCloner(@PopularSnippets Sink<Snippet> popularSnippets, Logger logger,
+	Function2RoughCloner(@PopularSnippets Sink<Snippet> popularSnippets,
 			@PopularSnippetsThreshold int popularSnippetThreshold) {
 		this.popularSnippets = popularSnippets;
-		this.logger = logger;
 		this.popularSnippetThreshold = popularSnippetThreshold;
 	}
 

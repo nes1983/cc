@@ -34,7 +34,10 @@ import com.google.common.collect.Lists;
  * match's {@link Clone#getThisSnippet()} as an input to
  * {@link #expandClones(Iterable)}.
  */
-class CloneExpander {
+class CloneExpander implements Serializable {
+	// TODO: Needs work to load maps on deserialization. ByteBuffer is not serializable. Neither is snippet.
+	private static final long serialVersionUID = 1L;
+
 	private static final int MAX_GAP = 10;
 	// TODO: this should not be a constant here.
 	// Instead, look at the snippets, they should contain their length.

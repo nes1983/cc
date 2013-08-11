@@ -48,6 +48,8 @@ public final class CellsModuleTest {
 	}
 
 	private static class IntCodec implements Codec<Integer> {
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public Cell<Integer> encode(Integer s) {
 			throw new UnsupportedOperationException();

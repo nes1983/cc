@@ -2,6 +2,7 @@ package ch.unibe.scg.cc;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -32,7 +33,9 @@ import com.google.protobuf.ByteString;
  *
  * <b>NOT THREADSAFE.</b>
  */
-public class Populator implements Closeable {
+public class Populator implements Closeable, Serializable {
+	final static private long serialVersionUID = 1L;
+
 	static final int MINIMUM_LINES = 5;
 	static final int MINIMUM_FRAME_SIZE = MINIMUM_LINES;
 

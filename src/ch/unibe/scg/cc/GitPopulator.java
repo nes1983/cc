@@ -33,18 +33,18 @@ import ch.unibe.scg.cells.Sink;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {
+	final static private long serialVersionUID = 1L;
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
+	final static private Logger logger = Logger.getLogger(GitPopulator.class.getName());
 
-	final private Logger logger;
 	final private CharsetDetector charsetDetector;
 	final private Populator populator;
 
 	@Inject
-	GitPopulator(CharsetDetector charsetDetector, Populator populator, Logger logger) {
+	GitPopulator(CharsetDetector charsetDetector, Populator populator) {
 		this.charsetDetector = charsetDetector;
 		this.populator = populator;
-		this.logger = logger;
 	}
 
 	private static  class PackedRefParser {

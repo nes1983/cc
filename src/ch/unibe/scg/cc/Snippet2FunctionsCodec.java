@@ -8,6 +8,8 @@ import ch.unibe.scg.cells.Codec;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 class Snippet2FunctionsCodec implements Codec<Snippet> {
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	public Cell<Snippet> encode(Snippet s) {
 		// We assume only one occurrence of a snippet inside a single function

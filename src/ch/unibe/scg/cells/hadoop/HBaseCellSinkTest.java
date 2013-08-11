@@ -98,7 +98,7 @@ public final class HBaseCellSinkTest {
 	public void checkTimes() throws IOException, InterruptedException {
 		final Injector injector = Guice.createInjector(new HadoopModule(), new TestModule());
 		final ByteString key = ByteString.copyFromUtf8("123");
-		final int rounds = 500;
+		final int rounds = 50;
 
 		final Stopwatch writeStopWatch = new Stopwatch();
 		try (CellSink<Void> sink = injector.getInstance(Key.get(new TypeLiteral<CellSink<Void>>() {}))) {

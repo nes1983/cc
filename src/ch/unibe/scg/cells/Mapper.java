@@ -2,6 +2,7 @@ package ch.unibe.scg.cells;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.io.Serializable;
 
 
 /**
@@ -20,7 +21,7 @@ import java.io.IOException;
  * @param <OUT>
  *            Type of the output cells.
  */
-public interface Mapper<IN, OUT> extends Closeable {
+public interface Mapper<IN, OUT> extends Closeable, Serializable {
 	/**
 	 * Map one input row, and write the main output to {@code sink}. <strong>The
 	 * row is iterable only once.</strong>

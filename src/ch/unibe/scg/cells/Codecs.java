@@ -48,6 +48,8 @@ public enum Codecs {
 	/** Encode sink using codec */
 	public static <T> Sink<T> encode(final CellSink<T> sink, final Codec<T> codec) {
 		return new Sink<T>() {
+			final static private long serialVersionUID = 1L;
+
 			@Override public void write(T obj) throws IOException, InterruptedException {
 				sink.write(codec.encode(obj));
 			}
@@ -61,6 +63,8 @@ public enum Codecs {
 	/** Wrapper of {@code cellTable} that returns decoded rows */
 	public static <T> LookupTable<T> decodedTable(final CellLookupTable<T> cellTable, final Codec<T> codec) {
 		return new LookupTable<T>() {
+			final static private long serialVersionUID = 1L;
+
 			@Override public Iterable<T> readRow(ByteString rowKey) throws IOException {
 				return decodeRow(cellTable.readRow(rowKey), codec);
 			}
