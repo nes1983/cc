@@ -29,9 +29,9 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
-import org.apache.hadoop.mapred.lib.BinaryPartitioner;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Partitioner;
+import org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner;
 
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
