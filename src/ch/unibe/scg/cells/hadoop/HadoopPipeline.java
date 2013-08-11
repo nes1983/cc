@@ -19,6 +19,7 @@ import java.util.NavigableMap;
 import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
@@ -51,6 +52,8 @@ import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
 
 public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
+	final private static byte[] fam = ByteString.copyFromUtf8("f").toByteArray();
+
 	final private Table<IN> in;
 	final private Table<EFF> efflux;
 	final private ByteString family;
@@ -278,12 +281,10 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 				@Override
 				public void write(Cell<E> cell) throws IOException, InterruptedException {
-					byte[] rowKey = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
-							(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
-
-					// TODO: Shouldn't this be a Put?
-					context.write(new ImmutableBytesWritable(rowKey),
-							new ImmutableBytesWritable(cell.getCellContents().toByteArray()));
+					byte[] rowKey = cell.getRowKey().toByteArray();
+					Put put = new Put(rowKey);
+					put.add(fam, cell.getColumnKey().toByteArray(), cell.getCellContents().toByteArray());
+					context.write(new ImmutableBytesWritable(rowKey), put);
 				}
 			};
 		}
@@ -401,6 +402,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 				@Override
 				public void write(Cell<E> cell) throws IOException, InterruptedException {
+					// Format: rowKeyLen | rowKey | colKey.
 					byte[] rowKey = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
 							(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
 
