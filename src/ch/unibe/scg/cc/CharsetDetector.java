@@ -1,6 +1,7 @@
 package ch.unibe.scg.cc;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 
@@ -25,7 +26,7 @@ class CharsetDetector implements Serializable {
 		return Charset.forName(encoding);
 	}
 
-	private void readObject(java.io.ObjectInputStream stream) throws IOException, ClassNotFoundException {
+	private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
 		stream.defaultReadObject();
 		detector = new UniversalDetector(null);
 	}

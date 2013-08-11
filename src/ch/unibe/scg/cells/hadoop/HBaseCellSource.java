@@ -1,6 +1,7 @@
 package ch.unibe.scg.cells.hadoop;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -23,23 +24,31 @@ import com.google.protobuf.ByteString;
 
 /** A cell source reading from a HTable. Don't forget to close it when you're done. Can be iterated only once! */
 public class HBaseCellSource<T> implements CellSource<T> {
-	final private ByteString family;
+	final private static long serialVersionUID = 1L;
+
+	/** Do not modify. */
+	final private byte[] family;
 	/** May be null! */
-	final private HTable hTable;
-	final private ResultScanner scanner;
+	final private SerializableHTable hTable;
+	private transient ResultScanner scanner;
 	boolean iterated = false;
 
 	@Inject
-	HBaseCellSource(@FamilyName ByteString family, HTable hTable) {
+	HBaseCellSource(@FamilyName ByteString family, SerializableHTable hTable) {
 		// Doing openScanner in the object and not in the provider drastically
 		// simplifies serialization.
-		this(family, openScanner(hTable, family), hTable);
+		this(family, openScanner(hTable.hTable, family.toByteArray()), hTable);
 	}
 
-	HBaseCellSource(@FamilyName ByteString family, ResultScanner scanner, HTable hTable) {
-		this.family = family;
+	HBaseCellSource(@FamilyName ByteString family, ResultScanner scanner, SerializableHTable hTable) {
+		this.family = family.toByteArray();
 		this.scanner = scanner;
 		this.hTable = hTable;
+	}
+
+	private void readObject(ObjectInputStream in) throws ClassNotFoundException, IOException {
+		in.defaultReadObject();
+		scanner = openScanner(hTable.hTable, family);
 	}
 
 	class ResultScannerIterator extends UnmodifiableIterator<Iterable<Cell<T>>> {
@@ -88,7 +97,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 				scanner.close();
 			} else {
 				rowKey = ByteString.copyFrom(r.getRow());
-				curRow = r.getFamilyMap(family.toByteArray()).entrySet();
+				curRow = r.getFamilyMap(family).entrySet();
 			}
 		}
 	}
@@ -104,9 +113,9 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		return scan;
 	}
 
-	private static ResultScanner openScanner(HTable tab, ByteString family) {
+	private static ResultScanner openScanner(HTable tab, byte[] family) {
 		Scan scan = makeScan();
-		scan.addFamily(family.toByteArray());
+		scan.addFamily(family);
 		try {
 			return tab.getScanner(scan);
 		} catch (IOException e) {
@@ -127,7 +136,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 	@Override
 	public void close() throws IOException {
 		if (hTable != null) {
-			hTable.close();
+			hTable.hTable.close();
 		}
 		scanner.close();
 	}

@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc;
 
+import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -12,7 +13,9 @@ import ch.unibe.scg.cc.regex.Replace;
 import com.google.inject.Provider;
 
 /** Extend this class and implement parameterless arguments starting with "make" to add more replaces */
-public abstract class ReplacerProvider implements Provider<Replace[]> {
+public abstract class ReplacerProvider implements Provider<Replace[]>, Serializable {
+	final private static long serialVersionUID = 1L;
+
 	final private Replace[] type = new Replace[] {};
 
 	@Override

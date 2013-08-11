@@ -4,6 +4,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import javax.inject.Inject;
 
@@ -13,12 +14,11 @@ import com.google.common.base.Charsets;
 public class StandardHasher implements Hasher {
 	final private static long serialVersionUID = 1L;
 
-	transient MessageDigest md;
+	/** Package private so that ShingleHasher can learn num of bytes. */
+	transient MessageDigest md = makeDigest();
 
 	@Inject
-	StandardHasher(MessageDigest md) {
-		this.md = md;
-	}
+	StandardHasher() {}
 
 	@Override
 	public byte[] hash(String document) {
@@ -29,6 +29,14 @@ public class StandardHasher implements Hasher {
 
 	private void readObject(java.io.ObjectInputStream stream) throws IOException, ClassNotFoundException {
 		stream.defaultReadObject();
-		md = new MessageDigestProvider().get();
+		md = makeDigest();
+	}
+
+	private static MessageDigest makeDigest() {
+		try {
+			return MessageDigest.getInstance("SHA1");
+		} catch (NoSuchAlgorithmException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }

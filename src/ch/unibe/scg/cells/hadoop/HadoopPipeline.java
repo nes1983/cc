@@ -240,6 +240,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	static class HadoopReducer<I, E> extends TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable>
 			implements Serializable {
 		static final private long serialVersionUID = 1L;
+
 		final private Mapper<I, E> mapper;
 		final private Codec<I> inCodec;
 		final private Codec<E> outCodec;
@@ -269,6 +270,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		/** Format has to match {@link #readCell} below. */
 		private CellSink<E> makeSink(final Context context) {
 			return new CellSink<E>() {
+				final private static long serialVersionUID = 1L;
+
 				@Override
 				public void close() throws IOException {
 					// Nothing to close.
@@ -343,24 +346,26 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 	static class HadoopMapper<I, E> extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>
 			implements Serializable {
-		private static final long serialVersionUID = -2072901786625586464L;
+		private static final long serialVersionUID = 1L;
+
 		private final Mapper<I, E> mapper;
 		private final Codec<I> inCodec;
 		private final Codec<E> outCodec;
-		private final ByteString family;
+		/** Do not modify. */
+		private final byte[] family;
 
 		HadoopMapper(Mapper<I, E> mapper, Codec<I> inCodec, Codec<E> outCodec, ByteString family) {
 			this.mapper = mapper;
 			this.inCodec = inCodec;
 			this.outCodec = outCodec;
-			this.family = family;
+			this.family = family.toByteArray();
 		}
 
 		@Override
 		protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
 			try (CellSink<E> cellSink = makeSink(context)) {
 				Iterable<Cell<I>> cellRow = toCellRow(ByteString.copyFrom(key.get()),
-						value.getFamilyMap(family.toByteArray()));
+						value.getFamilyMap(family));
 				runRow(Codecs.encode(cellSink, outCodec), Codecs.decodeRow(cellRow, inCodec), mapper);
 			}
 		}
@@ -387,6 +392,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		/** Format has to match {@link #readCell} below. */
 		private CellSink<E> makeSink(final Context context) {
 			return new CellSink<E>() {
+				final private static long serialVersionUID = 1L;
+
 				@Override
 				public void close() throws IOException {
 					// Nothing to close.

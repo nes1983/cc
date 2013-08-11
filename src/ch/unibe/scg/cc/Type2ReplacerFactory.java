@@ -4,6 +4,8 @@ import jregex.Pattern;
 import ch.unibe.scg.cc.regex.Replace;
 
 class Type2ReplacerFactory extends ReplacerProvider {
+	final private static long serialVersionUID = 1L;
+
 	public Replace make00WordsIntoTs() {
 		Pattern word = new Pattern("[a-zA-Z]+");
 		return new Replace(word, "t");

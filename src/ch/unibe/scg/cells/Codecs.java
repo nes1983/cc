@@ -31,6 +31,8 @@ public enum Codecs {
 	 */
 	public static <T> Source<T> decode(final CellSource<T> source, final Codec<T> codec) {
 		return new Source<T>() {
+			final private static long serialVersionUID = 1L;
+
 			@Override public Iterator<Iterable<T>> iterator() {
 				return Iterables.transform(source, new Function<Iterable<Cell<T>>, Iterable<T>>() {
 					@Override public Iterable<T> apply(Iterable<Cell<T>> encodedRow) {

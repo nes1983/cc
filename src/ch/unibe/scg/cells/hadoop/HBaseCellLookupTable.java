@@ -5,7 +5,6 @@ import java.util.Map.Entry;
 
 import javax.inject.Inject;
 
-import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 
@@ -19,22 +18,25 @@ import com.google.protobuf.ByteString;
 
 /** Optimized for small row reads. */
 class HBaseCellLookupTable<T> implements CellLookupTable<T> {
-	final private HTable hTable;
-	final private ByteString family;
+	final private static long serialVersionUID = 1L;
+
+	final private SerializableHTable hTable;
+	/** Do not modify. */
+	final private byte[] family;
 
 	@Inject
-	HBaseCellLookupTable(HTable hTable, @FamilyName ByteString family) {
+	HBaseCellLookupTable(SerializableHTable hTable, @FamilyName ByteString family) {
 		this.hTable = hTable;
-		this.family = family;
+		this.family = family.toByteArray();
 	}
 
 	@Override
 	public Iterable<Cell<T>> readRow(ByteString rowPrefix) throws IOException {
 		Builder<Cell<T>> ret = ImmutableList.builder();
-		try(ResultScanner scanner = hTable.getScanner(family.toByteArray(), rowPrefix.toByteArray())) {
+		try(ResultScanner scanner = hTable.hTable.getScanner(family, rowPrefix.toByteArray())) {
 			for (Result result = scanner.next(); result != null; result = scanner.next()) {
 				ByteString rowKey = ByteString.copyFrom(result.getRow());
-				for (Entry<byte[], byte[]> hbaseCell : result.getFamilyMap(family.toByteArray()).entrySet()) {
+				for (Entry<byte[], byte[]> hbaseCell : result.getFamilyMap(family).entrySet()) {
 					ret.add(Cell.<T>make(
 							rowKey,
 							ByteString.copyFrom(hbaseCell.getKey()),
@@ -53,6 +55,6 @@ class HBaseCellLookupTable<T> implements CellLookupTable<T> {
 
 	@Override
 	public void close() throws IOException {
-		hTable.close();
+		hTable.hTable.close();
 	}
 }

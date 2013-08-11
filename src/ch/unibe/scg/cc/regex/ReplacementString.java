@@ -1,5 +1,6 @@
 package ch.unibe.scg.cc.regex;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,9 @@ import jregex.MatchResult;
 import jregex.Matcher;
 import jregex.Pattern;
 
-class ReplacementString {
+class ReplacementString implements Serializable {
+	final private static long serialVersionUID = 1L;
+
 	final List<Segment> contents = new ArrayList<>();
 	private static final Pattern p = new Pattern("\\$(\\d+)");
 
@@ -40,11 +43,14 @@ class ReplacementString {
 		return sb.toString();
 	}
 
-	static abstract class Segment {
+	static abstract class Segment implements Serializable {
+		final private static long serialVersionUID = 1L;
+
 		abstract String fillIn(MatchResult matchResult);
 	}
 
 	static class PlaceHolderSegment extends Segment {
+		final private static long serialVersionUID = 1L;
 		final int placeHolderNumber;
 
 		public PlaceHolderSegment(int placeHolderNumber) {
@@ -58,6 +64,8 @@ class ReplacementString {
 	}
 
 	static class LiteralSegment extends Segment {
+		final private static long serialVersionUID = 1L;
+
 		final String s;
 
 		public LiteralSegment(String s) {

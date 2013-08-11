@@ -1,7 +1,5 @@
 package ch.unibe.scg.cc;
 
-import java.security.MessageDigest;
-
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Populator;
@@ -40,8 +38,6 @@ public final class CCModule extends CellsModule {
 
 	@Override
 	protected void configure() {
-		bind(MessageDigest.class).toProvider(MessageDigestProvider.class);
-
 		ByteString defaultFamily = ByteString.copyFromUtf8("f");
 		installTable("Snippets", defaultFamily, Populator.class,
 				new TypeLiteral<Snippet>() {},  PopulatorCodec.Function2SnippetCodec.class, storageModule);

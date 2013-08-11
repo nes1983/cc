@@ -5,6 +5,8 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.Closeable;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,29 +23,44 @@ import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 import ch.unibe.scg.cells.hadoop.Annotations.WriteToWalEnabled;
 
+import com.google.common.base.Charsets;
 import com.google.protobuf.ByteString;
 
 class HBaseCellSink<T> implements CellSink<T> {
-	static final private byte[] EMPTY_BYTES = new byte[] {};
+	final static private long serialVersionUID = 1L;
+	final static private byte[] EMPTY_BYTES = new byte[] {};
 
-	final private HTableWriteBuffer hTable;
+	private transient HTableWriteBuffer hTable;
 	/** Do not modify. */
 	final private byte[] family;
 	/** Do not modify. */
 	final private byte[] indexFamily;
 	final private boolean writeToWalEnabled;
+	final private HTableFactory tableFactory;
 
 	@Inject
-	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family,
+	HBaseCellSink(HTableWriteBuffer hTable, @FamilyName ByteString family, HTableFactory tableFactory,
 			@WriteToWalEnabled boolean writeToWalEnabled, @IndexFamily ByteString indexFamily) {
 		checkArgument(!family.equals(indexFamily), "Family names may not be " + indexFamily
 				+ ". It's reserved for the index.");
 
 		this.hTable = hTable;
+		this.tableFactory = tableFactory;
 		this.family = family.toByteArray();
 		this.indexFamily = indexFamily.toByteArray();
 		this.writeToWalEnabled = writeToWalEnabled;
 	}
+
+	private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+		stream.defaultReadObject();
+		String tableName = stream.readUTF();
+		hTable = new HTableWriteBuffer(tableFactory.make(tableName));
+	}
+
+	 private void writeObject(ObjectOutputStream out) throws IOException {
+		 out.defaultWriteObject();
+		 out.writeUTF(new String(hTable.htable.getTableName(), Charsets.UTF_8));
+	 }
 
 	/**
 	 * Collects the puts in the buffer and writes them to HBase as soon as
@@ -53,7 +70,7 @@ class HBaseCellSink<T> implements CellSink<T> {
 	private static class HTableWriteBuffer implements Closeable {
 		private static final int MAX_SIZE = 10000;
 		final private List<Row> puts = new ArrayList<>();
-		final private HTable htable;
+		final HTable htable;
 
 		@Inject
 		HTableWriteBuffer(HTable htable) {

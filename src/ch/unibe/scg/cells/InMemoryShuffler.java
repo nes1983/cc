@@ -15,6 +15,8 @@ import com.google.protobuf.ByteString;
 
 /** For running in memory, acts as both as sink and source */
 public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T> {
+	final private static long serialVersionUID = 1L;
+
 	/** The backing store. When used as a sink, this is mutable. Closing the sink makes the field immutable. */
 	private List<Cell<T>> store = new ArrayList<>();
 	/** Becomes available upon close */

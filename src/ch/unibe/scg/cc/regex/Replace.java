@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc.regex;
 
+import java.io.Serializable;
+
 import jregex.Matcher;
 import jregex.Pattern;
 
@@ -10,7 +12,9 @@ import jregex.Pattern;
  * @author nes
  *
  */
-public class Replace {
+public class Replace implements Serializable {
+	final private static long serialVersionUID = 1L;
+
 	private final Pattern pattern;
 	final ReplacementString replacementString;
 

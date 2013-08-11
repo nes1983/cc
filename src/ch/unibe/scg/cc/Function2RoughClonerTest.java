@@ -85,6 +85,8 @@ public final class Function2RoughClonerTest {
 
 	/** Bridge between Collections and CellSource */
 	static class CollectionCellSource<T> implements CellSource<T> {
+		final private static long serialVersionUID = 1L;
+
 		final private Iterable<Iterable<Cell<T>>> collection;
 
 		CollectionCellSource(Iterable<Iterable<Cell<T>>> collection) {
