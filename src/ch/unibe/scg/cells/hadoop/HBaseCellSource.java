@@ -19,6 +19,7 @@ import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
 
+import com.google.common.base.Charsets;
 import com.google.common.collect.UnmodifiableIterator;
 import com.google.protobuf.ByteString;
 
@@ -119,7 +120,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		try {
 			return tab.getScanner(scan);
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("Couldn't open table " + new String(tab.getTableName(), Charsets.UTF_8), e);
 		}
 	}
 

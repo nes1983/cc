@@ -19,6 +19,7 @@ public enum Codecs {
 				try {
 					return codec.decode(cell);
 				} catch (IOException e) {
+					// TODO: Choose better exception.
 					throw new EncodingException(e);
 				}
 			}

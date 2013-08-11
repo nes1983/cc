@@ -36,7 +36,7 @@ public class StandardHasher implements Hasher {
 		try {
 			return MessageDigest.getInstance("SHA1");
 		} catch (NoSuchAlgorithmException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("Couldn't find SHA1 digest. ", e);
 		}
 	}
 }
