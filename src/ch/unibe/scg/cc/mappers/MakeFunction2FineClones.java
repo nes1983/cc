@@ -34,7 +34,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 
 import ch.unibe.scg.cc.Annotations.CloneLoader;
-import ch.unibe.scg.cc.CloneExpander;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.CloneGroup.Builder;
@@ -137,7 +136,7 @@ public class MakeFunction2FineClones implements Runnable {
 
 		/** receives rows from htable function2roughclones */
 		@Override
-		public void map(ImmutableBytesWritable uselessKey, Result value, Context context) throws IOException,
+		public void map(ImmutableBytesWritable rowKey, Result value, Context context) throws IOException,
 				InterruptedException {
 			context.getCounter(Counters.FUNCTIONS).increment(1);
 

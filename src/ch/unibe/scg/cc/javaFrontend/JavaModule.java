@@ -2,9 +2,9 @@ package ch.unibe.scg.cc.javaFrontend;
 
 import ch.unibe.scg.cc.Annotations.Java;
 import ch.unibe.scg.cc.Annotations.Type1;
-import ch.unibe.scg.cc.ReplacerNormalizer;
 import ch.unibe.scg.cc.Normalizer;
 import ch.unibe.scg.cc.Populator;
+import ch.unibe.scg.cc.ReplacerNormalizer;
 import ch.unibe.scg.cc.Tokenizer;
 import ch.unibe.scg.cc.regex.Replace;
 
@@ -12,6 +12,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 
+/** Bindings for a normalizer in the Java programming language. */
 public class JavaModule extends AbstractModule {
 	@Override
 	protected void configure() {

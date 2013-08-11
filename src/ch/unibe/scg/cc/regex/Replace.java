@@ -5,24 +5,20 @@ import java.io.Serializable;
 import jregex.Matcher;
 import jregex.Pattern;
 
-/**
- * Replace is a command (as in command pattern) to high-speed replaces a regex
- * in a string for substitution string.
- *
- * @author nes
- *
- */
-public class Replace implements Serializable {
+/** Replace is a command (as in command pattern) to replace a regex in a string for a substitution string. */
+public final class Replace implements Serializable {
 	final private static long serialVersionUID = 1L;
 
 	private final Pattern pattern;
 	final ReplacementString replacementString;
 
+	/** New Replace that replaces all matches of {@code pattern} with replacement {@code with}. */
 	public Replace(Pattern pattern, String with) {
 		this.pattern = pattern;
 		replacementString = new ReplacementString(with);
 	}
 
+	/** Replace all occurrences in {@code sb}, in place. */
 	public void replaceAll(StringBuilder sb) {
 		int offset = 0;
 		Matcher matcher = pattern.matcher(sb.toString());
@@ -36,6 +32,7 @@ public class Replace implements Serializable {
 		}
 	}
 
+	// TODO: Too trivial to export. Should not be public.
 	public String allReplaced(CharSequence cs) {
 		StringBuilder sb = new StringBuilder(cs);
 		replaceAll(sb);
