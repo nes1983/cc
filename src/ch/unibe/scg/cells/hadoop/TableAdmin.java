@@ -11,6 +11,7 @@ import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.io.hfile.Compression.Algorithm;
 
 import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
@@ -77,7 +78,7 @@ class TableAdmin {
 
 		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
 			HTableDescriptor td = new HTableDescriptor(tableName);
-			td.addFamily(new HColumnDescriptor(family.toByteArray()));
+			td.addFamily(new HColumnDescriptor(family.toByteArray()).setCompressionType(Algorithm.SNAPPY));
 			td.addFamily(new HColumnDescriptor(indexFamily.toByteArray()));
 
 			admin.createTable(td);
