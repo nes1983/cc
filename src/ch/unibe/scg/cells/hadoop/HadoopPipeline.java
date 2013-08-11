@@ -192,7 +192,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		 Scan scan = HBaseCellSource.makeScan();
 		 scan.addFamily(family.toByteArray());
 
-		 // TODO: Set dependency jar.
+		 TableMapReduceUtil.addDependencyJars(job); // TODO: Will this suffice?
 
 	     TableMapReduceUtil.initTableMapperJob(
 	    			src.getTableName(), // input table
