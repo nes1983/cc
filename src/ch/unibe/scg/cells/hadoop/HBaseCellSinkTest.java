@@ -36,7 +36,7 @@ import com.google.protobuf.ByteString;
 /** Testing {@link HBaseCellSink} */
 @SuppressWarnings("javadoc")
 public final class HBaseCellSinkTest {
-	private TemporaryTable testTable;
+	private TemporaryTable<Void> testTable;
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
 
 	final private TableAdmin admin

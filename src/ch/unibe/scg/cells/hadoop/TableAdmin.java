@@ -38,7 +38,7 @@ class TableAdmin {
 		byte[] getTableName();
 	}
 
-	class TemporaryTable implements Table {
+	class TemporaryTable<T> implements Table<T> {
 		final HTable table;
 
 		TemporaryTable(HTable table) {
@@ -70,7 +70,7 @@ class TableAdmin {
 	 * Create a temporary hbase table.
 	 * @return a Temporary table, containing an HTable. Don't forget to close it!
 	 */
-	TemporaryTable createTemporaryTable() throws IOException {
+	<T> TemporaryTable<T> createTemporaryTable() throws IOException {
 		SecureRandom random = new SecureRandom();
 		byte bytes[] = new byte[20];
 		random.nextBytes(bytes);
@@ -84,6 +84,6 @@ class TableAdmin {
 			admin.createTable(td);
 		}
 
-		return new TemporaryTable(hTableFactory.make(tableName));
+		return new TemporaryTable<>(hTableFactory.make(tableName));
 	}
 }
