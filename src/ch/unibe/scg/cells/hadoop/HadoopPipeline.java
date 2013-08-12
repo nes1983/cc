@@ -14,7 +14,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.NavigableMap;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Put;
@@ -180,6 +179,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
 			Mapper<MAP_OUT, E> reduce, Codec<E> codec, Table<E> target)
 			throws IOException,	InterruptedException {
+		// TODO: This needs to be split into mapper and reducer.
+		// Both parts need to be configurable.
+
 		Job job = Job.getInstance();
 
 		HadoopMapper<MAP_IN, MAP_OUT> hMapper = new HadoopMapper<>(map, mapSrcCodec, reduceSrcCodec, family);
@@ -252,14 +254,26 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			this.outCodec = outCodec;
 		}
 
+		/** Format of input: key = len(rowKey) | rowKey | first colKey. value = len(colKey) | colKey | contents. */
 		@Override
 		protected void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context)
 				throws IOException, InterruptedException {
-			final ByteString rowKey = ByteString.copyFrom(key.get());
+			// Extract rowKey from key.
+			ByteBuffer rawKey = ByteBuffer.wrap(key.get());
+			byte[] lenBytes = new byte[Ints.BYTES];
+			rawKey.get(lenBytes);
+			int keyLen = Ints.fromByteArray(lenBytes);
+			final ByteString rowKey = ByteString.copyFrom(rawKey, keyLen);
 
 			Iterable<Cell<I>> row = Iterables.transform(values, new Function<ImmutableBytesWritable, Cell<I>>() {
-				@Override public Cell<I> apply(ImmutableBytesWritable cellContent) {
-					return Cell.<I> make(rowKey, ByteString.EMPTY, ByteString.copyFrom(cellContent.get()));
+				@Override public Cell<I> apply(ImmutableBytesWritable value) {
+					ByteBuffer rawContent = ByteBuffer.wrap(value.get());
+					byte[] colKeyLenBytes = new byte[Ints.BYTES];
+					rawContent.get(colKeyLenBytes);
+					int colKeyLen = Ints.fromByteArray(colKeyLenBytes);
+					ByteString colKey = ByteString.copyFrom(rawContent, colKeyLen);
+					ByteString cellContent = ByteString.copyFrom(rawContent);
+					return Cell.<I> make(rowKey, colKey, cellContent);
 				}
 			});
 
@@ -362,8 +376,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
 			try (CellSink<E> cellSink = makeSink(context)) {
-				Iterable<Cell<I>> cellRow = toCellRow(ByteString.copyFrom(key.get()),
-						value.getFamilyMap(family));
+				List<Cell<I>> cellRow = new ArrayList<>();
+				for (Entry<byte[], byte[]> kv : value.getFamilyMap(family).entrySet()) {
+					cellRow.add(Cell.<I> make(
+							ByteString.copyFrom(key.get()),
+							ByteString.copyFrom(kv.getKey()),
+							ByteString.copyFrom(kv.getValue())));
+	}
 				runRow(Codecs.encode(cellSink, outCodec), Codecs.decodeRow(cellRow, inCodec), mapper);
 			}
 		}
@@ -379,14 +398,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			mapper.close();
 		}
 
-		private Iterable<Cell<I>> toCellRow(ByteString rowKey, NavigableMap<byte[], byte[]> familyMap) {
-			List<Cell<I>> ret = new ArrayList<>();
-			for (Entry<byte[], byte[]> kv : familyMap.entrySet()) {
-				ret.add(Cell.<I>make(rowKey, ByteString.copyFrom(kv.getKey()), ByteString.copyFrom(kv.getValue())));
-			}
-			return ret;
-		}
-
 		/** Format has to match {@link #readCell} below. */
 		private CellSink<E> makeSink(final Context context) {
 			return new CellSink<E>() {
@@ -399,12 +410,14 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 				@Override
 				public void write(Cell<E> cell) throws IOException, InterruptedException {
-					// Format: rowKeyLen | rowKey | colKey.
-					byte[] rowKey = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
+					// Format: key = rowKeyLen | rowKey | colKey.
+					//         value = colKeyLen | colKey | contents
+					byte[] key = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
 							(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
+					byte[] value = Bytes.concat(Ints.toByteArray(cell.getColumnKey().size()),
+							(cell.getColumnKey().concat(cell.getCellContents()).toByteArray()));
 
-					context.write(new ImmutableBytesWritable(rowKey),
-							new ImmutableBytesWritable(cell.getCellContents().toByteArray()));
+					context.write(new ImmutableBytesWritable(key), new ImmutableBytesWritable(value));
 				}
 			};
 		}
@@ -416,7 +429,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		public int getPartition(ImmutableBytesWritable key, ImmutableBytesWritable value, int parts) {
 			return defaultPartitioner
-					.getPartition(new BytesWritable(readCell(key, ByteString.EMPTY).getRowKey().toByteArray()), value, parts);
+					.getPartition(new BytesWritable(readEmptyCell(key).getRowKey().toByteArray()), value, parts);
 		}
 	}
 
@@ -427,8 +440,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		@Override
 		public int compare(WritableComparable a, WritableComparable b) {
-			Cell<Void> l = readCell((ImmutableBytesWritable) a, ByteString.EMPTY);
-			Cell<Void> r = readCell((ImmutableBytesWritable) b, ByteString.EMPTY);
+			Cell<Void> l = readEmptyCell((ImmutableBytesWritable) a);
+			Cell<Void> r = readEmptyCell((ImmutableBytesWritable) b);
 			return l.getRowKey().asReadOnlyByteBuffer().compareTo(r.getRowKey().asReadOnlyByteBuffer());
 		}
 	}
@@ -440,30 +453,25 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		@Override
 		public int compare(WritableComparable a, WritableComparable b) {
-			Cell<Void> l = readCell((ImmutableBytesWritable) a, ByteString.EMPTY);
-			Cell<Void> r = readCell((ImmutableBytesWritable) b, ByteString.EMPTY);
+			Cell<Void> l = readEmptyCell((ImmutableBytesWritable) a);
+			Cell<Void> r = readEmptyCell((ImmutableBytesWritable) b);
 			return l.compareTo(r);
 		}
 	}
 
-	private static Cell<Void> readCell(ImmutableBytesWritable rawWritable, ByteString cellContents) {
-		// TODO: write column key twice.
-
+	/** Read cell as written from mapper output. Leave cell contents empty. Used for sorting. */
+	private static Cell<Void> readEmptyCell(ImmutableBytesWritable rawWritable) {
 		ByteBuffer raw = ByteBuffer.wrap(rawWritable.get());
 		// Read len
-		byte[] rawLen = new byte[4];
+		byte[] rawLen = new byte[Ints.BYTES];
 		raw.get(rawLen);
 		int len = Ints.fromByteArray(rawLen);
 
-		// Read row key
-		byte[] rowKey = new byte[len];
-		raw.get(rowKey);
+		ByteString rowKey = ByteString.copyFrom(raw, len);
 
-		// Read column key.
-		byte[] colKey = new byte[raw.remaining()];
-		raw.get(colKey);
+		ByteString colKey = ByteString.copyFrom(raw);
 
-		return Cell.make(ByteString.copyFrom(rowKey), ByteString.copyFrom(colKey), cellContents);
+		return Cell.make(rowKey, colKey, ByteString.EMPTY);
 	}
 
 	private static <I, E> void runRow(Sink<E> sink, Iterable<I> row, Mapper<I, E> mapper) throws IOException, InterruptedException {
