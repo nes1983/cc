@@ -1,5 +1,7 @@
 package ch.unibe.scg.cc;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.FileVisitResult;
@@ -30,6 +32,8 @@ import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.Sink;
+
+import com.google.common.collect.Iterables;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {
@@ -101,6 +105,8 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 	/** Processes the Git repository and hands the files to the {@link Populator}. */
 	@Override
 	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException, InterruptedException {
+		checkArgument(Iterables.size(row) == 1);
+
 		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
 		Path unpackDir = null;
