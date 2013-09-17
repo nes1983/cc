@@ -1,5 +1,6 @@
 package ch.unibe.scg.cells.hadoop;
 
+import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.io.BaseEncoding.base64;
 
 import java.io.ByteArrayInputStream;
@@ -77,11 +78,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		return new HadoopMappablePipeline<>(firstMapConfigurer, c);
 	}
 
+	/** Configure the map part of the job to run from a table, or from HDFS, as the case may be. */
 	private interface MapConfigurer<MAP_IN> extends Closeable {
 		<MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
 				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException;
 	}
 
+	/** MapConfigurer for the case of table input. */
 	class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Table<MAP_IN> src;
 
@@ -112,6 +115,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
+	/** MapConfigurer for teh case of HDFS input. */
 	class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Class<? extends WritableComparable<?>> outputKey;
 		final private Class<? extends Writable> outputValue;
@@ -217,7 +221,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		final private MapConfigurer<MAP_IN> mapConfigurer;
 		final private Codec<MAP_IN> mapSrcCodec;
 		final private Mapper<MAP_IN, MAP_OUT> map;
-
 		final private Codec<MAP_OUT> reduceSrcCodec;
 
 		HadoopReducablePipeline(MapConfigurer<MAP_IN> mapConfigurer, Codec<MAP_IN> mapSrcCodec,
@@ -242,7 +245,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		public void effluxWithOfflineMapper(OfflineMapper<MAP_OUT, EFF> offlineMapper, Codec<EFF> codec)
 				throws IOException {
-			throw new RuntimeException("Not implemented");
+			throw new UnsupportedOperationException("I'll think about this case later :)");
 		}
 	}
 
@@ -306,20 +309,15 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce, reduceSrcCodec, codec);
 		writeObjectToConf(job.getConfiguration(), hReducer);
-
-
-		TableMapReduceUtil.addDependencyJars(job); // TODO: Will this suffice?
-
-
-		job.setGroupingComparatorClass(KeyGroupingComparator.class);
-		job.setSortComparatorClass(KeySortingComparator.class);
-		job.setPartitionerClass(KeyGroupingPartitioner.class);
-
-
 		TableMapReduceUtil.initTableReducerJob(
 				new String(target.getTableName(), Charsets.UTF_8), // output table
 				DecoratorHadoopReducer.class, // reducer class
 				job);
+
+		TableMapReduceUtil.addDependencyJars(job); // TODO: Will this suffice?
+		job.setGroupingComparatorClass(KeyGroupingComparator.class);
+		job.setSortComparatorClass(KeySortingComparator.class);
+		job.setPartitionerClass(KeyGroupingPartitioner.class);
 
 	     // Submit the job, then poll for progress until the job is complete
 	     try {
@@ -329,6 +327,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
+	/** Loads the configured HadoopReducer and runs it.  */
 	private static class DecoratorHadoopReducer<I, E> extends TableReducer<ImmutableBytesWritable, ImmutableBytesWritable, ImmutableBytesWritable> {
 		private HadoopReducer<I, E> decorated;
 
@@ -518,7 +517,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			final private static long serialVersionUID = 1L;
 
 			@Override
-			public void close() throws IOException {
+			public void close() {
 				// Nothing to close.
 			}
 
@@ -587,7 +586,11 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		return Cell.make(rowKey, colKey, ByteString.EMPTY);
 	}
 
-	private static <I, E> void runRow(Sink<E> sink, Iterable<I> row, Mapper<I, E> mapper) throws IOException, InterruptedException {
+	/** Don't call for empty rows. */
+	private static <I, E> void runRow(Sink<E> sink, Iterable<I> row, Mapper<I, E> mapper)
+			throws IOException, InterruptedException {
+		checkArgument(!Iterables.isEmpty(row));
+
 		Iterator<I> iter = row.iterator();
 		I first = iter.next();
 		Iterable<I> gluedRow = Iterables.concat(Arrays.asList(first), new OneShotIterable<>(iter));

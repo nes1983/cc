@@ -104,26 +104,22 @@ public class GitTablePopulator implements Runnable {
 
 		Collection<Path> packFilePaths = new ArrayList<>();
 
-		try(BufferedReader br = new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
-				Charsets.UTF_8))) {
+		try(BufferedReader br =
+				new BufferedReader(new InputStreamReader(FileSystem.get(conf).open(new Path("/tmp/index")),
+						Charsets.UTF_8))) {
 			for (String line; (line = br.readLine()) != null;) {
 				if (line.equals("")) {
 					continue; // TODO: Delete this guard as soon as a sane HAR is uploaded.
 				}
 
-				// @formatter:off
 				// sample line:
 				// 5	repos/maven/objects/pack/pack-621f44a9430e5b6303c3580582160a3e53634553.pack
-				// @formatter:on
 				String[] record = line.split("\\s+");
 				// see: Hadoop: The Definitive Guide, p. 78
-				// @formatter:off
 				// hadoop fs -lsr har://hdfs-localhost:8020/my/files.har/my/files/dir
-				// @formatter:on
 
 				// TODO: Delete the "substring" as soon as a sane HAR is uploaded.
-				Path packPath = new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length()));
-				packFilePaths.add(packPath);
+				packFilePaths.add(new Path(PROJECTS_HAR_PATH + "/" + record[1].substring("/tmp".length())));
 			}
 		}
 		return Joiner.on(",").join(packFilePaths);
