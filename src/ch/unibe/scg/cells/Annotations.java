@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 
 import javax.inject.Qualifier;
 
+/** Annotations used for controlling the injections in {@link StorageModule} */
 public class Annotations {
 	/** The name of a table underlying a source or sink. */
 	@Qualifier
