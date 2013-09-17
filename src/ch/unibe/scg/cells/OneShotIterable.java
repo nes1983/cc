@@ -2,6 +2,7 @@ package ch.unibe.scg.cells;
 
 import java.util.Iterator;
 
+// TODO: Is this a good idea?
 public class OneShotIterable<T> implements Iterable<T> {
 	final private Iterator<T> underlying;
 	private boolean iterated = false;

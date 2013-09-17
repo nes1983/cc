@@ -12,7 +12,7 @@ import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Pipeline;
 
 /** Run the clone detector. */
-public class ClonePipelineRunner implements Serializable {
+public class PipelineRunner implements Serializable {
 	final private static long serialVersionUID = 1L;
 
 	final private GitPopulator gitPopulator;
@@ -23,7 +23,7 @@ public class ClonePipelineRunner implements Serializable {
 	final private Codec<Clone> function2RoughClonesCodec;
 
 	@Inject
-	ClonePipelineRunner(GitPopulator gitPopulator, Function2RoughCloner function2RoughCloner,
+	PipelineRunner(GitPopulator gitPopulator, Function2RoughCloner function2RoughCloner,
 			Function2FineCloner function2FineCloner, GitRepoCodec repoCodec,
 			Snippet2FunctionsCodec snippet2FunctionsCodec, Function2RoughClonesCodec function2RoughClonesCodec) {
 		this.gitPopulator = gitPopulator;

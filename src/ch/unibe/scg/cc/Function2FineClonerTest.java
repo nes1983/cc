@@ -43,7 +43,7 @@ public final class Function2FineClonerTest {
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
-		ClonePipelineRunner runner = i.getInstance(ClonePipelineRunner.class);
+		PipelineRunner runner = i.getInstance(PipelineRunner.class);
 		try (InMemoryShuffler<Clone> shuffler =
 				i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
 			InMemoryPipeline<GitRepo, Clone> pipe = InMemoryPipeline.make(src, shuffler);
@@ -93,10 +93,10 @@ public final class Function2FineClonerTest {
 				new JavaModule()).with(new Function2RoughClonerTest.TestModule()));
 		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
 		try (ObjectOutputStream out = new ObjectOutputStream(bOut)) {
-			ClonePipelineRunner runnerWithAllMappers = i.getInstance(ClonePipelineRunner.class);
+			PipelineRunner runnerWithAllMappers = i.getInstance(PipelineRunner.class);
 			out.writeObject(runnerWithAllMappers);
 		}
 		Assert.assertTrue(new ObjectInputStream(new ByteArrayInputStream(bOut.toByteArray())).readObject()
-				instanceof ClonePipelineRunner);
+				instanceof PipelineRunner);
 	}
 }

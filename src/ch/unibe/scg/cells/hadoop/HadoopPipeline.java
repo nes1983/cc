@@ -4,6 +4,8 @@ import static com.google.common.io.BaseEncoding.base64;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.Closeable;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -16,6 +18,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.Scan;
@@ -24,10 +27,12 @@ import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.BytesWritable;
+import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Partitioner;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner;
 
 import ch.unibe.scg.cells.Cell;
@@ -43,6 +48,7 @@ import ch.unibe.scg.cells.hadoop.TableAdmin.Table;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Function;
+import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;
@@ -51,13 +57,16 @@ import com.google.protobuf.ByteString;
 public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	final private static byte[] fam = ByteString.copyFromUtf8("f").toByteArray();
 
-	final private Table<IN> in;
+	final private Configuration baseConfiguration;
+	final private MapConfigurer<IN> firstMapConfigurer;
 	final private Table<EFF> efflux;
 	final private ByteString family;
 	final private TableAdmin admin;
 
-	HadoopPipeline(Table<IN> in, Table<EFF> efflux, ByteString family, TableAdmin admin) {
-		this.in = in;
+	HadoopPipeline(Configuration baseConfiguration, MapConfigurer<IN> firstMapConfigurer, Table<EFF> efflux,
+			ByteString family, TableAdmin admin) {
+		this.baseConfiguration = baseConfiguration;
+		this.firstMapConfigurer = firstMapConfigurer;
 		this.efflux = efflux;
 		this.family = family;
 		this.admin = admin;
@@ -65,21 +74,131 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 	@Override
 	public MappablePipeline<IN, EFF> influx(Codec<IN> c) {
-		return new HadoopMappablePipeline<>(in, c);
+		return new HadoopMappablePipeline<>(firstMapConfigurer, c);
+	}
+
+	private interface MapConfigurer<MAP_IN> extends Closeable {
+		<MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
+				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException;
+	}
+
+	class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+		final private Table<MAP_IN> src;
+
+		TableInputConfigurer(Table<MAP_IN> src) {
+			this.src = src;
+		}
+
+		@Override
+		public <MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
+				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException {
+			HadoopTableMapper<MAP_IN, MAP_OUT> hMapper = new HadoopTableMapper<>(map, mapSrcCodec, outCodec, family);
+			writeObjectToConf(job.getConfiguration(), hMapper);
+
+			Scan scan = HBaseCellSource.makeScan();
+			scan.addFamily(family.toByteArray());
+
+			TableMapReduceUtil.initTableMapperJob(src.getTableName(), // input table
+					scan, // Scan instance to control CF and attribute selection
+					DecoratorHadoopTableMapper.class, // mapper class
+					ImmutableBytesWritable.class, // mapper output key
+					ImmutableBytesWritable.class, // mapper output value
+					job);
+		}
+
+		@Override
+		public void close() throws IOException {
+			src.close();
+		}
+	}
+
+	class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+		final private Class<? extends WritableComparable<?>> outputKey;
+		final private Class<? extends Writable> outputValue;
+		final private Class<? extends FileInputFormat<ImmutableBytesWritable, ImmutableBytesWritable>> inputFormat;
+		final private Path inputPath;
+
+		HadoopInputConfigurer(Class<? extends WritableComparable<?>> outputKey,
+				Class<? extends Writable> outputValue,
+				Class<? extends FileInputFormat<ImmutableBytesWritable, ImmutableBytesWritable>> inputFormat,
+				Path inputPath) {
+			this.outputKey = outputKey;
+			this.outputValue = outputValue;
+			this.inputFormat = inputFormat;
+			this.inputPath = inputPath;
+		}
+
+		@Override
+		public <MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec, Mapper<MAP_IN, MAP_OUT> map,
+				Codec<MAP_OUT> outCodec) throws IOException {
+			job.setInputFormatClass(inputFormat);
+			job.setMapperClass(HadoopMapper.class);
+
+			job.setMapOutputKeyClass(outputKey);
+			job.setMapOutputValueClass(outputValue);
+			FileInputFormat.addInputPath(job, inputPath);
+		}
+
+		@Override
+		public void close() throws IOException {
+			// Nothing to do.
+		}
+	}
+
+	/** Hadoop mapper for jobs that don't read from a table. For table reading jobs, see {@link HadoopTableMapper} */
+	static class HadoopMapper<KEYIN extends Writable, VALUEIN extends Writable, I, E>
+			extends org.apache.hadoop.mapreduce.Mapper<KEYIN, VALUEIN, ImmutableBytesWritable, ImmutableBytesWritable> {
+		final private Mapper<I, E> underlying;
+		final private Codec<I> inputCodec;
+		final private Codec<E> outputCodec;
+
+		HadoopMapper(Mapper<I, E> underlying, Codec<I> inputCodec, Codec<E> outputCodec) {
+			this.underlying = underlying;
+			this.inputCodec = inputCodec;
+			this.outputCodec = outputCodec;
+		}
+
+		@Override
+		protected void map(KEYIN key, VALUEIN value, Context context) throws IOException, InterruptedException {
+			ByteArrayOutputStream keyStream = new ByteArrayOutputStream();
+			key.write(new DataOutputStream(keyStream));
+			ByteString cellKey = ByteString.copyFrom(keyStream.toByteArray());
+
+			ByteArrayOutputStream valueStream = new ByteArrayOutputStream();
+			key.write(new DataOutputStream(valueStream));
+			ByteString cellValue = ByteString.copyFrom(valueStream.toByteArray());
+
+			I decoded = inputCodec.decode(Cell.<I> make(cellKey, cellKey, cellValue));
+			try (Sink<E> sink = Codecs.encode(HadoopPipeline.<E, KEYIN, VALUEIN> makeMapperSink(context),
+					outputCodec)) {
+				underlying.map(decoded, ImmutableList.of(decoded), sink);
+			}
+		}
+
+		/** Overwritten to escalate visibility */
+		@Override
+		protected void setup(Context context) throws IOException, InterruptedException {
+			// Do nothing.
+		}
+
+		@Override
+		protected void cleanup(Context context) throws IOException, InterruptedException {
+			underlying.close();
+		}
 	}
 
 	private class HadoopMappablePipeline<I> implements MappablePipeline<I, EFF> {
 		final private Codec<I> srcCodec;
-		final private Table<I> src;
+		final private MapConfigurer<I> mapConfigurer;
 
-		HadoopMappablePipeline(Table<I> src, Codec<I> srcCodec) {
-			this.src = src;
+		HadoopMappablePipeline(MapConfigurer<I> mapConfigurer, Codec<I> srcCodec) {
+			this.mapConfigurer = mapConfigurer;
 			this.srcCodec = srcCodec;
 		}
 
 		@Override
 		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<I, E> m) {
-			return new HadoopShuffleablePipelineAfterMap<>(src, srcCodec, m);
+			return new HadoopShuffleablePipelineAfterMap<>(mapConfigurer, srcCodec, m);
 		}
 
 		@Override
@@ -95,15 +214,15 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	private class HadoopReducablePipeline<MAP_IN, MAP_OUT> implements MappablePipeline<MAP_OUT, EFF> {
-		final private Table<MAP_IN> src;
+		final private MapConfigurer<MAP_IN> mapConfigurer;
 		final private Codec<MAP_IN> mapSrcCodec;
 		final private Mapper<MAP_IN, MAP_OUT> map;
 
 		final private Codec<MAP_OUT> reduceSrcCodec;
 
-		HadoopReducablePipeline(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
+		HadoopReducablePipeline(MapConfigurer<MAP_IN> mapConfigurer, Codec<MAP_IN> mapSrcCodec,
 				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec) {
-			this.src = src;
+			this.mapConfigurer = mapConfigurer;
 			this.mapSrcCodec = mapSrcCodec;
 			this.map = map;
 			this.reduceSrcCodec = reduceSrcCodec;
@@ -111,13 +230,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		@Override
 		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<MAP_OUT, E> m) {
-			return new HadoopShuffleablePipelineAfterReduce<>(src, mapSrcCodec, map, reduceSrcCodec, m);
+			return new HadoopShuffleablePipelineAfterReduce<>(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, m);
 		}
 
 		@Override
 		public void efflux(Mapper<MAP_OUT, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException {
-			run(src, mapSrcCodec, map, reduceSrcCodec, m, codec, efflux);
-			src.close();
+			run(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, m, codec, efflux);
+			mapConfigurer.close();
 		}
 
 		@Override
@@ -128,34 +247,34 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	private class HadoopShuffleablePipelineAfterMap<I, E> implements ShuffleablePipeline<E, EFF> {
-		final private Table<I> src;
+		final private MapConfigurer<I> mapConfigurer;
 		final private Codec<I> srcCodec;
 		final private Mapper<I, E> mapper;
 
-		HadoopShuffleablePipelineAfterMap(Table<I> src, Codec<I> srcCodec, Mapper<I, E> mapper) {
-			this.src = src;
+		HadoopShuffleablePipelineAfterMap(MapConfigurer<I> mapConfigurer, Codec<I> srcCodec, Mapper<I, E> mapper) {
+			this.mapConfigurer = mapConfigurer;
 			this.srcCodec = srcCodec;
 			this.mapper = mapper;
 		}
 
 		@Override
 		public MappablePipeline<E, EFF> shuffle(Codec<E> codec) throws IOException {
-			return new HadoopReducablePipeline<>(src, srcCodec, mapper, codec);
+			return new HadoopReducablePipeline<>(mapConfigurer, srcCodec, mapper, codec);
 		}
 	}
 
 	private class HadoopShuffleablePipelineAfterReduce<MAP_IN, MAP_OUT, E> implements ShuffleablePipeline<E, EFF> {
-		final private Table<MAP_IN> src;
+		final private MapConfigurer<MAP_IN> mapConfigurer;
 		final private Codec<MAP_IN> mapSrcCodec;
 		final private Mapper<MAP_IN, MAP_OUT> map;
 
 		final private Codec<MAP_OUT> reduceSrcCodec;
 		final private Mapper<MAP_OUT, E> reduce;
 
-		HadoopShuffleablePipelineAfterReduce(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
+		HadoopShuffleablePipelineAfterReduce(MapConfigurer<MAP_IN> mapConfigurer, Codec<MAP_IN> mapSrcCodec,
 				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
 				Mapper<MAP_OUT, E> reduce) {
-			this.src = src;
+			this.mapConfigurer = mapConfigurer;
 			this.mapSrcCodec = mapSrcCodec;
 			this.map = map;
 			this.reduceSrcCodec = reduceSrcCodec;
@@ -166,45 +285,37 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		public MappablePipeline<E, EFF> shuffle(Codec<E> codec) throws IOException, InterruptedException {
 			Table<E> target = admin.createTemporaryTable();
 
-			run(src, mapSrcCodec, map, reduceSrcCodec, reduce, codec, target);
+			run(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, reduce, codec, target);
 
 			// This will delete temporary tables if needed.
-			src.close();
+			mapConfigurer.close();
 
-			return new HadoopMappablePipeline<>(target, codec);
+			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target), codec);
 		}
 	}
 
-	private <E, MAP_IN, MAP_OUT> void run(Table<MAP_IN> src, Codec<MAP_IN> mapSrcCodec,
+	private <E, MAP_IN, MAP_OUT> void run(MapConfigurer<MAP_IN> mapConfigurer, Codec<MAP_IN> mapSrcCodec,
 			Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
 			Mapper<MAP_OUT, E> reduce, Codec<E> codec, Table<E> target)
 			throws IOException,	InterruptedException {
 		// TODO: This needs to be split into mapper and reducer.
 		// Both parts need to be configurable.
 
-		Job job = Job.getInstance();
-
-		HadoopMapper<MAP_IN, MAP_OUT> hMapper = new HadoopMapper<>(map, mapSrcCodec, reduceSrcCodec, family);
-		writeObjectToConf(job.getConfiguration(), hMapper);
+		Job job = Job.getInstance(baseConfiguration);
+		mapConfigurer.configure(job, mapSrcCodec, map, reduceSrcCodec);
 
 		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce, reduceSrcCodec, codec);
 		writeObjectToConf(job.getConfiguration(), hReducer);
 
-		Scan scan = HBaseCellSource.makeScan();
-		scan.addFamily(family.toByteArray());
 
 		TableMapReduceUtil.addDependencyJars(job); // TODO: Will this suffice?
+
 
 		job.setGroupingComparatorClass(KeyGroupingComparator.class);
 		job.setSortComparatorClass(KeySortingComparator.class);
 		job.setPartitionerClass(KeyGroupingPartitioner.class);
 
-		TableMapReduceUtil.initTableMapperJob(src.getTableName(), // input table
-				scan, // Scan instance to control CF and attribute selection
-				DecoratorHadoopMapper.class, // mapper class
-				ImmutableBytesWritable.class, // mapper output key
-				ImmutableBytesWritable.class, // mapper output value
-				job);
+
 		TableMapReduceUtil.initTableReducerJob(
 				new String(target.getTableName(), Charsets.UTF_8), // output table
 				DecoratorHadoopReducer.class, // reducer class
@@ -313,9 +424,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
-	/** Loads the configured HadoopMapper and runs it. */
-	private static class DecoratorHadoopMapper<I, E> extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
-		private HadoopMapper<I, E> decorated;
+	/** Loads the configured HadoopTableMapper and runs it. */
+	private static class DecoratorHadoopTableMapper<I, E> extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable> {
+		private HadoopTableMapper<I, E> decorated;
 
 		@Override
 		protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
@@ -325,7 +436,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@SuppressWarnings("unchecked") // Unavoidable, since class literals cannot be generically typed.
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			decorated = readObjectFromConf(context.getConfiguration(), HadoopMapper.class);
+			decorated = readObjectFromConf(context.getConfiguration(), HadoopTableMapper.class);
 			decorated.setup(context);
 		}
 
@@ -356,7 +467,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		conf.set(obj.getClass().getName(), base64().encode(serialized));
 	}
 
-	private static class HadoopMapper<I, E> extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>
+	private static class HadoopTableMapper<I, E> extends TableMapper<ImmutableBytesWritable, ImmutableBytesWritable>
 			implements Serializable {
 		private static final long serialVersionUID = 1L;
 
@@ -365,8 +476,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		private final Codec<E> outCodec;
 		/** Do not modify. */
 		private final byte[] family;
+		// TODO: hang on to sink.
 
-		HadoopMapper(Mapper<I, E> mapper, Codec<I> inCodec, Codec<E> outCodec, ByteString family) {
+		HadoopTableMapper(Mapper<I, E> mapper, Codec<I> inCodec, Codec<E> outCodec, ByteString family) {
 			this.mapper = mapper;
 			this.inCodec = inCodec;
 			this.outCodec = outCodec;
@@ -375,14 +487,14 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		@Override
 		protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
-			try (CellSink<E> cellSink = makeSink(context)) {
+			try (CellSink<E> cellSink = makeMapperSink(context)) {
 				List<Cell<I>> cellRow = new ArrayList<>();
 				for (Entry<byte[], byte[]> kv : value.getFamilyMap(family).entrySet()) {
 					cellRow.add(Cell.<I> make(
 							ByteString.copyFrom(key.get()),
 							ByteString.copyFrom(kv.getKey()),
 							ByteString.copyFrom(kv.getValue())));
-	}
+				}
 				runRow(Codecs.encode(cellSink, outCodec), Codecs.decodeRow(cellRow, inCodec), mapper);
 			}
 		}
@@ -397,30 +509,31 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		protected void cleanup(Context context) throws IOException, InterruptedException {
 			mapper.close();
 		}
+	}
 
-		/** Format has to match {@link #readCell} below. */
-		private CellSink<E> makeSink(final Context context) {
-			return new CellSink<E>() {
-				final private static long serialVersionUID = 1L;
+	/** Format has to match {@link #readCell} below. */
+	private static <E, KEYIN, KEYOUT> CellSink<E> makeMapperSink(
+			final org.apache.hadoop.mapreduce.Mapper<KEYIN, KEYOUT, ImmutableBytesWritable, ImmutableBytesWritable>.Context context) {
+		return new CellSink<E>() {
+			final private static long serialVersionUID = 1L;
 
-				@Override
-				public void close() throws IOException {
-					// Nothing to close.
-				}
+			@Override
+			public void close() throws IOException {
+				// Nothing to close.
+			}
 
-				@Override
-				public void write(Cell<E> cell) throws IOException, InterruptedException {
-					// Format: key = rowKeyLen | rowKey | colKey.
-					//         value = colKeyLen | colKey | contents
-					byte[] key = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
-							(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
-					byte[] value = Bytes.concat(Ints.toByteArray(cell.getColumnKey().size()),
-							(cell.getColumnKey().concat(cell.getCellContents()).toByteArray()));
+			@Override
+			public void write(Cell<E> cell) throws IOException, InterruptedException {
+				// Format: key = rowKeyLen | rowKey | colKey.
+				//         value = colKeyLen | colKey | contents
+				byte[] key = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
+						(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
+				byte[] value = Bytes.concat(Ints.toByteArray(cell.getColumnKey().size()),
+						(cell.getColumnKey().concat(cell.getCellContents()).toByteArray()));
 
-					context.write(new ImmutableBytesWritable(key), new ImmutableBytesWritable(value));
-				}
-			};
-		}
+				context.write(new ImmutableBytesWritable(key), new ImmutableBytesWritable(value));
+			}
+		};
 	}
 
 	private static class KeyGroupingPartitioner extends Partitioner<ImmutableBytesWritable, ImmutableBytesWritable>  {
