@@ -55,6 +55,7 @@ import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
 
+/** The Hadoop version of a {@link Pipeline}. */
 public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	final private static byte[] fam = ByteString.copyFromUtf8("f").toByteArray();
 
@@ -122,7 +123,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
-	/** MapConfigurer for teh case of HDFS input. */
+	/** MapConfigurer for the case of HDFS input. */
 	class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Class<? extends WritableComparable<?>> outputKey;
 		final private Class<? extends Writable> outputValue;
@@ -308,9 +309,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> reduceSrcCodec,
 			Mapper<MAP_OUT, E> reduce, Codec<E> codec, Table<E> target)
 			throws IOException,	InterruptedException {
-		// TODO: This needs to be split into mapper and reducer.
-		// Both parts need to be configurable.
-
+		// TODO: The map configuration is split into a separate object, but the reduce part isn't.
+		// That's a strange symmetry break that should be fixed.
 		Job job = Job.getInstance(baseConfiguration);
 		mapConfigurer.configure(job, mapSrcCodec, map, reduceSrcCodec);
 
