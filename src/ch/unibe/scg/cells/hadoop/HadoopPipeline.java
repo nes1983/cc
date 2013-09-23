@@ -61,16 +61,21 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	final private Configuration baseConfiguration;
 	final private MapConfigurer<IN> firstMapConfigurer;
 	final private Table<EFF> efflux;
-	final private ByteString family;
 	final private TableAdmin admin;
 
 	HadoopPipeline(Configuration baseConfiguration, MapConfigurer<IN> firstMapConfigurer, Table<EFF> efflux,
-			ByteString family, TableAdmin admin) {
+			TableAdmin admin) {
 		this.baseConfiguration = baseConfiguration;
 		this.firstMapConfigurer = firstMapConfigurer;
 		this.efflux = efflux;
-		this.family = family;
 		this.admin = admin;
+	}
+
+	/** @return a Pipeline that will run map/reduce jobs in the cluster. */
+	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration,
+			ByteString family, Table<IN> in, Table<EFF> eff) {
+		return new HadoopPipeline<>(configuration, new TableInputConfigurer<>(in, family), eff,
+				new TableAdmin(configuration, family, HadoopModule.INDEX_FAMILY, new HTableFactory(configuration)));
 	}
 
 	@Override
@@ -80,16 +85,18 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 	/** Configure the map part of the job to run from a table, or from HDFS, as the case may be. */
 	private interface MapConfigurer<MAP_IN> extends Closeable {
-		<MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
-				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException;
+		<MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec, Mapper<MAP_IN, MAP_OUT> map,
+				Codec<MAP_OUT> outCodec) throws IOException;
 	}
 
 	/** MapConfigurer for the case of table input. */
-	class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+	static class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Table<MAP_IN> src;
+		final private ByteString family;
 
-		TableInputConfigurer(Table<MAP_IN> src) {
+		TableInputConfigurer(Table<MAP_IN> src, ByteString family) {
 			this.src = src;
+			this.family = family;
 		}
 
 		@Override
@@ -293,7 +300,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			// This will delete temporary tables if needed.
 			mapConfigurer.close();
 
-			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target), codec);
+			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target, HadoopModule.INDEX_FAMILY), codec);
 		}
 	}
 

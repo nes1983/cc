@@ -15,6 +15,9 @@ import com.google.protobuf.ByteString;
 
 /** Bindings that expose the cell interfaces */
 public class HadoopModule extends AbstractModule implements StorageModule {
+	/** The column family for indexes. */
+	static ByteString INDEX_FAMILY = ByteString.copyFromUtf8("i");
+
 	@Override
 	protected void configure() {
 		bind(new TypeLiteral<CellSink<Void>>() {}).to(new TypeLiteral<HBaseCellSink<Void>>() {});
@@ -22,6 +25,6 @@ public class HadoopModule extends AbstractModule implements StorageModule {
 		bind(new TypeLiteral<CellLookupTable<Void>>() {}).to(new TypeLiteral<HBaseCellLookupTable<Void>>() {});
 		bindConstant().annotatedWith(WriteToWalEnabled.class).to(false);
 		bind(HTable.class).toProvider(HTableProvider.class);
-		bind(ByteString.class).annotatedWith(IndexFamily.class).toInstance(ByteString.copyFromUtf8("i"));
+		bind(ByteString.class).annotatedWith(IndexFamily.class).toInstance(INDEX_FAMILY);
 	}
 }
