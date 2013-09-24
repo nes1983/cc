@@ -45,9 +45,7 @@ import ch.unibe.scg.cells.OfflineMapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
-import ch.unibe.scg.cells.hadoop.TableAdmin.Table;
 
-import com.google.common.base.Charsets;
 import com.google.common.base.Function;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
@@ -73,9 +71,11 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** @return a Pipeline that will run map/reduce jobs in the cluster. */
-	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration,
-			ByteString family, Table<IN> in, Table<EFF> eff) {
-		return new HadoopPipeline<>(configuration, new TableInputConfigurer<>(in, family), eff,
+	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration, ByteString family,
+			Table<IN> influx, Table<EFF> efflux) {
+		return new HadoopPipeline<>(configuration,
+				new TableInputConfigurer<>(influx, family),
+				efflux,
 				new TableAdmin(configuration, family, HadoopModule.INDEX_FAMILY, new HTableFactory(configuration)));
 	}
 

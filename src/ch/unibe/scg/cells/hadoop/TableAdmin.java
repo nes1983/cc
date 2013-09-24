@@ -1,6 +1,5 @@
 package ch.unibe.scg.cells.hadoop;
 
-import java.io.Closeable;
 import java.io.IOException;
 import java.security.SecureRandom;
 
@@ -16,6 +15,7 @@ import org.apache.hadoop.hbase.io.hfile.Compression.Algorithm;
 import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 
+import com.google.common.base.Charsets;
 import com.google.common.io.BaseEncoding;
 import com.google.protobuf.ByteString;
 
@@ -34,10 +34,6 @@ class TableAdmin {
 		this.hTableFactory = hTableFactory;
 	}
 
-	static interface Table<T> extends Closeable {
-		byte[] getTableName();
-	}
-
 	class TemporaryTable<T> implements Table<T> {
 		final HTable table;
 
@@ -48,21 +44,23 @@ class TableAdmin {
 		@Override
 		public void close() throws IOException {
 			table.close();
-
-			byte[] tableName = getTableName();
-			try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
-				if (admin.isTableAvailable(tableName)) {
-					if (admin.isTableEnabled(tableName)) {
-						admin.disableTable(tableName);
-					}
-					admin.deleteTable(tableName);
-				}
-			}
+			deleteTable(getTableName());
 		}
 
 		@Override
-		public byte[] getTableName() {
-			return table.getTableName();
+		public String getTableName() {
+			return new String(table.getTableName(), Charsets.UTF_8);
+		}
+	}
+
+	void deleteTable(String tableName) throws IOException {
+		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
+			if (admin.isTableAvailable(tableName)) {
+				if (admin.isTableEnabled(tableName)) {
+					admin.disableTable(tableName);
+				}
+				admin.deleteTable(tableName);
+			}
 		}
 	}
 
@@ -76,6 +74,10 @@ class TableAdmin {
 		random.nextBytes(bytes);
 		String tableName = "tmp" + BaseEncoding.base16().encode(bytes);
 
+		return createTable(tableName);
+	}
+
+	<T> TemporaryTable<T> createTable(String tableName) throws IOException {
 		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
 			HTableDescriptor td = new HTableDescriptor(tableName);
 			td.addFamily(new HColumnDescriptor(family.toByteArray()).setCompressionType(Algorithm.SNAPPY));
