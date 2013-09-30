@@ -317,7 +317,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce, reduceSrcCodec, codec);
 		writeObjectToConf(job.getConfiguration(), hReducer);
 		TableMapReduceUtil.initTableReducerJob(
-				new String(target.getTableName(), Charsets.UTF_8), // output table
+				target.getTableName(), // output table
 				DecoratorHadoopReducer.class, // reducer class
 				job);
 
