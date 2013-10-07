@@ -4,11 +4,14 @@ import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+import java.nio.ByteBuffer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,6 +23,9 @@ import org.junit.Test;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
+import ch.unibe.scg.cells.Codecs;
+import ch.unibe.scg.cells.InMemoryPipeline;
+import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
@@ -28,6 +34,7 @@ import ch.unibe.scg.cells.Source;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.Iterables;
 import com.google.common.io.CharStreams;
 import com.google.common.primitives.Ints;
 import com.google.common.primitives.Longs;
@@ -95,7 +102,25 @@ public final class HadoopPipelineTest {
 			try(Source<WordCount> src = injector.getInstance(Key.get(new TypeLiteral<Source<WordCount>>() {}, Eff.class))) {
 				for (Iterable<WordCount> wcs : src) {
 					for (WordCount wc : wcs) {
-						System.out.println(wc.word + " " + wc.count);
+						if (wc.word.equals("your")) {
+							assertThat(wc.count, is(239L));
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@Test
+	public void testInMemoryWordCount() throws IOException, InterruptedException {
+		try(InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance()) {
+			InMemoryPipeline<Act, WordCount> pipe
+					= InMemoryPipeline.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()), eff);
+			run(pipe);
+			for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
+				for (WordCount wc : wcs) {
+					if (wc.word.equals("your")) {
+						assertThat(wc.count, is(239L));
 					}
 				}
 			}
@@ -105,8 +130,8 @@ public final class HadoopPipelineTest {
 	void run(Pipeline<Act, WordCount> pipeline) throws IOException, InterruptedException {
 		pipeline.influx(new ActCodec())
 			.mapper(new WordParseMapper())
-			.shuffle(new WordCountCodec())
-			.efflux(new WordAdderMapper(), new WordCountCodec()); // TODO: Rename efflux to mapAndEfflux
+			.shuffle(new WordCodec())
+			.mapAndEfflux(new WordAdderMapper(), new WordCountCodec());
 	}
 
 	@Qualifier
@@ -145,6 +170,18 @@ public final class HadoopPipelineTest {
 		}
 	}
 
+	private static class Word {
+		final String word;
+		final int act;
+		final int pos;
+
+		Word(String word, int act, int pos) {
+			this.word = word;
+			this.act = act;
+			this.pos = pos;
+		}
+	}
+
 	private static class WordCount {
 		final String word;
 		final long count;
@@ -152,6 +189,11 @@ public final class HadoopPipelineTest {
 		WordCount(String word, long count) {
 			this.word = word;
 			this.count = count;
+		}
+
+		@Override
+		public String toString() {
+			return word + " " + count;
 		}
 	}
 
@@ -172,39 +214,60 @@ public final class HadoopPipelineTest {
 		}
 	}
 
-	static class WordParseMapper implements Mapper<Act, WordCount> {
+	static class WordCodec implements Codec<Word> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public Cell<Word> encode(Word s) {
+			ByteBuffer col = ByteBuffer.allocate(2 * Ints.BYTES);
+			col.mark();
+			col.putInt(s.act);
+			col.putInt(s.pos);
+			col.reset();
+			return Cell.make(
+					ByteString.copyFromUtf8(s.word),
+					ByteString.copyFrom(col),
+					ByteString.EMPTY);
+		}
+
+		@Override
+		public Word decode(Cell<Word> encoded) throws IOException {
+			ByteBuffer col = encoded.getColumnKey().asReadOnlyByteBuffer();
+			int nAct = col.getInt();
+			int pos = col.getInt();
+			return new Word(encoded.getRowKey().toStringUtf8(), nAct, pos);
+		}
+	}
+
+	static class WordParseMapper implements Mapper<Act, Word> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void close() { }
 
 		@Override
-		public void map(Act first, OneShotIterable<Act> row, Sink<WordCount> sink) throws IOException,
+		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink) throws IOException,
 				InterruptedException {
 			for(Act act : row) {
 				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
 				while (matcher.find()) {
-					sink.write(new WordCount(matcher.group(), 1L));
+					sink.write(new Word(matcher.group(), first.number, matcher.start()));
 				}
 			}
 		}
 	}
 
-	static class WordAdderMapper implements Mapper<WordCount, WordCount> {
+	static class WordAdderMapper implements Mapper<Word, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void close() { }
 
 		@Override
-		public void map(WordCount first, OneShotIterable<WordCount> row, Sink<WordCount> sink)
+		public void map(Word first, OneShotIterable<Word> row, Sink<WordCount> sink)
 				throws IOException, InterruptedException {
-			long total = 0L;
-			for (WordCount wc : row) {
-				total += wc.count;
-			}
-
-			sink.write(new WordCount(first.word, total));
+			int len = Iterables.size(row);
+			sink.write(new WordCount(first.word, len));
 		}
 	}
 }
