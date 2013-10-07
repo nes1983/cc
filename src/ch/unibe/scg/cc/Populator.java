@@ -258,7 +258,7 @@ public class Populator implements Closeable, Serializable {
 	}
 
 	private void registerSnippets(Protos.Function fun, String normalized, CloneType type) throws IOException, InterruptedException {
-		StringOfLines s = stringOfLinesFactory.make(normalized);
+		StringOfLines s = stringOfLinesFactory.make(normalized, '\n');
 
 		Hasher hasher = standardHasher;
 		if (type.equals(CloneType.GAPPED)) {

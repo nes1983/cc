@@ -67,11 +67,11 @@ public final class SnippetSimilarTest {
 		n2.normalize(s2);
 		n2.normalize(s3);
 
-		final StringOfLinesFactory solFactory = new StringOfLinesFactory();
+		final StringOfLinesFactory solFactory = StringOfLinesFactory.getInstance();
 		List<List<Snippet>> table = ImmutableList.of(
-				allSnippets(solFactory.make(s1.toString()), ss, new byte[] { 1 }),
-				allSnippets(solFactory.make(s2.toString()), ss, new byte[] { 2 }),
-				allSnippets(solFactory.make(s3.toString()), ss, new byte[] { 3 }));
+				allSnippets(solFactory.make(s1.toString(), '\n'), ss, new byte[] { 1 }),
+				allSnippets(solFactory.make(s2.toString(), '\n'), ss, new byte[] { 2 }),
+				allSnippets(solFactory.make(s3.toString(), '\n'), ss, new byte[] { 3 }));
 
 		table = filterCollisions(table);
 

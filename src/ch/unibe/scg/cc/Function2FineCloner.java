@@ -41,10 +41,10 @@ class Function2FineCloner implements Mapper<Clone, Clone> {
 			// TODO: Counters are missing.
 			if (spamDetector.isSpamByParameters(spamDetector.extractFeatureVector(
 					stringOfLinesFactory.make(
-							Iterables.getOnlyElement(cloneLoader.readRow(c.getThisSnippet().getFunction())).contents)
+							Iterables.getOnlyElement(cloneLoader.readRow(c.getThisSnippet().getFunction())).contents, '\n')
 							.getLines(c.getThisSnippet().getPosition(), c.getThisSnippet().getLength()),
 					stringOfLinesFactory.make(
-							Iterables.getOnlyElement(cloneLoader.readRow(c.getThatSnippet().getFunction())).contents)
+							Iterables.getOnlyElement(cloneLoader.readRow(c.getThatSnippet().getFunction())).contents, '\n')
 							.getLines(c.getThatSnippet().getPosition(), c.getThatSnippet().getLength())))) {
 				return;
 			}
