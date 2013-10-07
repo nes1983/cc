@@ -46,7 +46,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public void efflux(Mapper<I, OUT> m, Codec<OUT> sinkCodec)
+		public void mapAndEfflux(Mapper<I, OUT> m, Codec<OUT> sinkCodec)
 				throws IOException, InterruptedException {
 			run(src, srcCodec, m, pipeSink, sinkCodec);
 			pipeSink.close();

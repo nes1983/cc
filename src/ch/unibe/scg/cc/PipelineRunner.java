@@ -42,6 +42,6 @@ public class PipelineRunner implements Serializable {
 			.shuffle(snippet2FunctionsCodec)
 			.mapper(function2RoughCloner)
 			.shuffle(function2RoughClonesCodec)
-			.efflux(function2FineCloner, function2RoughClonesCodec);
+			.mapAndEfflux(function2FineCloner, function2RoughClonesCodec);
 	}
 }

@@ -213,7 +213,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public void efflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException {
+		public void mapAndEfflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException {
 			throw new UnsupportedOperationException("I'll think about this case later :)");
 		}
 
@@ -244,7 +244,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public void efflux(Mapper<MAP_OUT, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException {
+		public void mapAndEfflux(Mapper<MAP_OUT, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException {
 			run(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, m, codec, efflux);
 			mapConfigurer.close();
 		}

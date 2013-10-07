@@ -51,7 +51,7 @@ public final class Function2RoughClonerTest {
 			.influx(repoCodec)
 			.mapper(i.getInstance(GitPopulator.class))
 			.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
-			.efflux(
+			.mapAndEfflux(
 					i.getInstance(Function2RoughCloner.class),
 					i.getInstance(Function2RoughClonesCodec.class));
 

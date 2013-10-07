@@ -31,7 +31,7 @@ public interface Pipeline<IN, EFF> {
 		 * Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.
 		 * @throws IOException If several exceptions occur, any may be reported.
 		 */
-		void efflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException;
+		void mapAndEfflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException;
 
 		/** Run the entire pipeline, and run {@code offlineMapper} locally. */
 		void effluxWithOfflineMapper(OfflineMapper<I, EFF> offlineMapper, Codec<EFF> codec)
