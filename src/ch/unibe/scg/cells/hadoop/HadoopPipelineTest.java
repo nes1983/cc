@@ -253,9 +253,9 @@ public final class HadoopPipelineTest {
 	@Retention(RUNTIME)
 	public static @interface Eff {}
 
-	Iterable<Act> readActsFromDisk() throws IOException {
+	static Iterable<Act> readActsFromDisk() throws IOException {
 		ImmutableList.Builder<Act> ret = ImmutableList.builder();
-		String richard = CharStreams.toString(new InputStreamReader(this.getClass().getResourceAsStream(
+		String richard = CharStreams.toString(new InputStreamReader(HadoopPipelineTest.class.getResourceAsStream(
 				"richard-iii.txt"), Charsets.UTF_8));
 
 		String[] actStrings = richard.split("\\bACT\\s[IVX]+");
