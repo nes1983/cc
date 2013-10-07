@@ -32,6 +32,7 @@ public final class Replace implements Serializable {
 		}
 	}
 
+	/** @return cs with all replacings applied. */
 	// TODO: Too trivial to export. Should not be public.
 	public String allReplaced(CharSequence cs) {
 		StringBuilder sb = new StringBuilder(cs);
