@@ -143,7 +143,6 @@ public final class GitPopulatorTest {
 			Str<Function> functionString = Iterables.getOnlyElement(functionStringRow);
 			assertThat(functionString.contents.indexOf("public void testProjnameRegex"), is(1));
 
-
 			assertThat(Iterables.size(snippet2FuncsPartitions), is(24 - 2)); // 2 collisions
 
 			Iterable<Snippet> snippets2Funcs = Iterables.get(snippet2FuncsPartitions, 0);

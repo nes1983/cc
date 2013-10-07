@@ -107,7 +107,9 @@ public final class HadoopPipelineTest {
 			}
 		}
 
-		tableAdmin.deleteTable(in.getTableName());
+		if (in != null) {
+			tableAdmin.deleteTable(in.getTableName());
+		}
 		if (eff != null) {
 			tableAdmin.deleteTable(eff.getTableName());
 		}
