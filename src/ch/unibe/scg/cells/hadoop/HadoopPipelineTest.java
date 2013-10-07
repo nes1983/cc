@@ -17,7 +17,6 @@ import javax.inject.Qualifier;
 import org.apache.hadoop.conf.Configuration;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.mappers.ConfigurationProvider;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
@@ -60,7 +59,7 @@ public final class HadoopPipelineTest {
 	public void testHadoopWordcount() throws IOException, InterruptedException {
 		final Module configurationModule = new AbstractModule() {
 			@Override protected void configure() {
-				bind(Configuration.class).toProvider(ConfigurationProvider.class);
+				bind(Configuration.class).toProvider(UnibeConfigurationProvider.class);
 			}
 		};
 		TableAdmin tableAdmin = Guice.createInjector(configurationModule).getInstance(TableAdmin.class);

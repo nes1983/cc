@@ -13,7 +13,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.mappers.ConfigurationProvider;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
@@ -37,7 +36,7 @@ public final class HBaseCellSinkTest {
 
 	private final Module configurationModule = new AbstractModule() {
 		@Override protected void configure() {
-			bind(Configuration.class).toProvider(ConfigurationProvider.class);
+			bind(Configuration.class).toProvider(UnibeConfigurationProvider.class);
 		}
 	};
 

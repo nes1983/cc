@@ -1,11 +1,11 @@
-package ch.unibe.scg.cc.mappers;
+package ch.unibe.scg.cells.hadoop;
 
 import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 
-public class ConfigurationProvider implements Provider<Configuration> {
+class UnibeConfigurationProvider implements Provider<Configuration> {
 	@Override
 	public Configuration get() {
 		Configuration hConf = HBaseConfiguration.create();
