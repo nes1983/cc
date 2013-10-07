@@ -59,7 +59,7 @@ public final class HadoopPipelineTest {
 		}
 	}
 
-	private static class ActCodec implements Codec<Act> {
+	static class ActCodec implements Codec<Act> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -127,7 +127,7 @@ public final class HadoopPipelineTest {
 		}
 	}
 
-	static class WordCountCodec implements Codec<WordCount> {
+	private static class WordCountCodec implements Codec<WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -144,7 +144,7 @@ public final class HadoopPipelineTest {
 		}
 	}
 
-	static class WordParseMapper implements Mapper<Act, Word> {
+	private static class WordParseMapper implements Mapper<Act, Word> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -162,7 +162,7 @@ public final class HadoopPipelineTest {
 		}
 	}
 
-	static class WordAdderMapper implements Mapper<Word, WordCount> {
+	private static class WordAdderMapper implements Mapper<Word, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
