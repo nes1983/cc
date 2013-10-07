@@ -41,10 +41,11 @@ import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.Sink;
 import ch.unibe.scg.cells.Source;
-import ch.unibe.scg.cells.TableModule.DefaultTableModule;
+import ch.unibe.scg.cells.TableModule;
 
 import com.google.common.collect.Iterables;
 import com.google.common.io.ByteStreams;
+import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
@@ -250,11 +251,20 @@ public final class GitPopulatorTest {
 				"24D6FB97266FFFCC409DD4F57CDC938EE6423C5F");
 	}
 
+	private static TableModule nullModule() {
+		return new TableModule() {
+			@Override public void configure(Binder binder) {
+				// Do nothing.
+			}
+		};
+	}
+
 	private static Injector walkRepo(GitRepo repo) throws IOException, InterruptedException {
+
 		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule(), new CellsModule() {
 			@Override protected void configure() {
 				installTable(TestSink.class, new TypeLiteral<Snippet>() {},
-						Snippet2FunctionsCodec.class, new InMemoryStorage(), new DefaultTableModule("rofl", ByteString.EMPTY));
+						Snippet2FunctionsCodec.class, new InMemoryStorage(), nullModule());
 			}
 		});
 
