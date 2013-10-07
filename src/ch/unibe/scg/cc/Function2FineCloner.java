@@ -8,6 +8,7 @@ import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
 import ch.unibe.scg.cells.LookupTable;
 import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.Iterables;
@@ -32,7 +33,7 @@ class Function2FineCloner implements Mapper<Clone, Clone> {
 	}
 
 	@Override
-	public void map(Clone first, Iterable<Clone> row, Sink<Clone> sink) throws IOException, InterruptedException {
+	public void map(Clone first, OneShotIterable<Clone> row, Sink<Clone> sink) throws IOException, InterruptedException {
 		first.getThisSnippet().getFunction();
 
 		Collection<Clone> clones = cloneExpander.expandClones(row);

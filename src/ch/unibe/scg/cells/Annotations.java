@@ -12,6 +12,8 @@ import javax.inject.Qualifier;
 
 /** Annotations used for controlling the injections in {@link StorageModule} */
 public class Annotations {
+	// TODO: None of this may be public.
+
 	/** The name of a table underlying a source or sink. */
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })

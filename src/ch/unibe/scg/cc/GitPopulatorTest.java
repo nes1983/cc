@@ -36,6 +36,7 @@ import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
+import ch.unibe.scg.cells.AdapterOneShotIterable;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.Sink;
@@ -259,7 +260,7 @@ public final class GitPopulatorTest {
 
 		try (GitPopulator gitPopulator = i.getInstance(GitPopulator.class);
 				Sink<Snippet> snippetSink = i.getInstance(Key.get(new TypeLiteral<Sink<Snippet>>() {}, TestSink.class))) {
-			gitPopulator.map(repo, Arrays.asList(repo), snippetSink);
+			gitPopulator.map(repo, new AdapterOneShotIterable<>(Arrays.asList(repo)), snippetSink);
 		}
 		return i;
 	}

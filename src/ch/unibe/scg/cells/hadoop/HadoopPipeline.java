@@ -36,18 +36,17 @@ import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner;
 
+import ch.unibe.scg.cells.AdapterOneShotIterable;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OfflineMapper;
-import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
 
 import com.google.common.base.Function;
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;
@@ -183,7 +182,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			I decoded = inputCodec.decode(Cell.<I> make(cellKey, cellKey, cellValue));
 			try (Sink<E> sink = Codecs.encode(HadoopPipeline.<E, KEYIN, VALUEIN> makeMapperSink(context),
 					outputCodec)) {
-				underlying.map(decoded, ImmutableList.of(decoded), sink);
+				underlying.map(decoded, new AdapterOneShotIterable<>(Arrays.asList(decoded)), sink);
 			}
 		}
 
@@ -602,7 +601,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		Iterator<I> iter = row.iterator();
 		I first = iter.next();
-		Iterable<I> gluedRow = Iterables.concat(Arrays.asList(first), new OneShotIterable<>(iter));
-		mapper.map(first, gluedRow, sink);
+		Iterable<I> gluedRow = Iterables.concat(Arrays.asList(first), new AdapterOneShotIterable<>(iter));
+		mapper.map(first, new AdapterOneShotIterable<>(gluedRow), sink);
 	}
 }

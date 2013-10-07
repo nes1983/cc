@@ -12,7 +12,7 @@ import java.io.Serializable;
  * <p>
  * Instances are NOT guaranteed to be thread-safe. It is permissible to write to
  * CellSinks that are instance variables. However, the main output is expected
- * to be written to the sink parameter of {@link #map(Object, Iterable, Sink)}.
+ * to be written to the sink parameter of {@link #map(Object, OneShotIterable, Sink)}.
  *
  * @author Niko Schwarz
  *
@@ -33,5 +33,5 @@ public interface Mapper<IN, OUT> extends Closeable, Serializable {
 	 *            Iterable only once. The first iterated element is
 	 *            {@code first}.
 	 */
-	void map(IN first, Iterable<IN> row, Sink<OUT> sink) throws IOException, InterruptedException;
+	void map(IN first, OneShotIterable<IN> row, Sink<OUT> sink) throws IOException, InterruptedException;
 }

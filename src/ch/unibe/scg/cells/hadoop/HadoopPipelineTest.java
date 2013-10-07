@@ -24,6 +24,7 @@ import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
 import ch.unibe.scg.cells.Source;
@@ -204,7 +205,7 @@ public final class HadoopPipelineTest {
 		public void close() { }
 
 		@Override
-		public void map(Act first, Iterable<Act> row, Sink<WordCount> sink) throws IOException,
+		public void map(Act first, OneShotIterable<Act> row, Sink<WordCount> sink) throws IOException,
 				InterruptedException {
 			for(Act act : row) {
 				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
@@ -222,7 +223,7 @@ public final class HadoopPipelineTest {
 		public void close() { }
 
 		@Override
-		public void map(WordCount first, Iterable<WordCount> row, Sink<WordCount> sink)
+		public void map(WordCount first, OneShotIterable<WordCount> row, Sink<WordCount> sink)
 				throws IOException, InterruptedException {
 			long total = 0L;
 			for (WordCount wc : row) {

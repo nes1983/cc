@@ -89,8 +89,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			for (Iterable<I> decoded : Codecs.decode(src, srcCodec)) {
 				Iterator<I> iter = decoded.iterator();
 				I first = iter.next();
-				Iterable<I> row = Iterables.concat(Arrays.asList(first), new OneShotIterable<>(iter));
-				m.map(first, row, Codecs.encode(sink, sinkCodec));
+				Iterable<I> row = Iterables.concat(Arrays.asList(first), new AdapterOneShotIterable<>(iter));
+				m.map(first, new AdapterOneShotIterable<>(row), Codecs.encode(sink, sinkCodec));
 			}
 		}
 	}

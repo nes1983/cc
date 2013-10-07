@@ -31,6 +31,7 @@ import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.Iterables;
@@ -104,7 +105,7 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 
 	/** Processes the Git repository and hands the files to the {@link Populator}. */
 	@Override
-	public void map(GitRepo repo, Iterable<GitRepo> row, Sink<Snippet> sink) throws IOException, InterruptedException {
+	public void map(GitRepo repo, OneShotIterable<GitRepo> row, Sink<Snippet> sink) throws IOException, InterruptedException {
 		checkArgument(Iterables.size(row) == 1);
 
 		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());

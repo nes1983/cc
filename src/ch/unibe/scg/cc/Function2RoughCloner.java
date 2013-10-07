@@ -11,6 +11,7 @@ import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cells.Mapper;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Sink;
 
 import com.google.common.collect.ImmutableList;
@@ -34,7 +35,7 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 
 	/** Input encoding: snippet2function */
 	@Override
-	public void map(Snippet first, Iterable<Snippet> rowIterable, Sink<Clone> function2RoughClones) throws IOException, InterruptedException {
+	public void map(Snippet first, OneShotIterable<Snippet> rowIterable, Sink<Clone> function2RoughClones) throws IOException, InterruptedException {
 		// rowIterable is not guaranteed to be iterable more than once, so copy.
 		Collection<Snippet> row = ImmutableList.copyOf(rowIterable);
 		rowIterable = null; // Don't touch!
