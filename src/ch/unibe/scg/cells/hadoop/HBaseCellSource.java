@@ -15,9 +15,9 @@ import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.hadoop.HBaseStorage.FamilyName;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.UnmodifiableIterator;

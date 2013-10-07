@@ -73,7 +73,37 @@ public abstract class CellsModule extends AbstractModule {
 		}
 	}
 
-	// TODO: Use builder pattern for 6 parameters.
+	/**
+	 * Example:
+	 * <pre>
+	 * {@code
+		Module tab = new CellsModule() {
+			@Override
+			protected void configure() {
+				installTable(
+						In.class,
+						new TypeLiteral<Act>() {},
+						ActCodec.class,
+						new HBaseStorage(), new HBaseTableModule(TABLE_NAME_IN,	fam));
+				installTable(
+						Eff.class,
+						new TypeLiteral<WordCount>() {},
+						WordCountCodec.class,
+						new HBaseStorage(), new HBaseTableModule(TABLE_NAME_EFF, fam));
+			}
+		};
+	 *}
+	 *</pre>
+	 *
+	 * @param tableModule The information needed to initialize this specific table.
+	 * 	That's things like table name and column family, for the case of HBase tables.
+	 *  In memory tables don't really need this, so for in memory tables, just pass an empty TableModule.
+	 *  If you don't know what you want, pass in an HBaseTableModule. Then, you can create both
+	 *  in memory tables, and HBase tables.
+	 *
+	 */
+	@SuppressWarnings("javadoc") // Yea, fuck that. For javadoc to be happy, I have to escape "@", "{", "}", "<", ">".
+                                 // That makes copy-pasting from code impossible.
 	protected final <T> void installTable(
 			final Class<? extends Annotation> annotation, final TypeLiteral<T> lit,
 			final Class<? extends Codec<T>> codec, final StorageModule storageModule,

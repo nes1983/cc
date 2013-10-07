@@ -8,9 +8,9 @@ import javax.inject.Inject;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
+import ch.unibe.scg.cells.hadoop.HBaseStorage.FamilyName;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableList.Builder;

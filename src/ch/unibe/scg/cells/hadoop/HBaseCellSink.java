@@ -17,11 +17,11 @@ import org.apache.hadoop.hbase.client.HTableUtil;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.client.Row;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
 import ch.unibe.scg.cells.hadoop.Annotations.WriteToWalEnabled;
+import ch.unibe.scg.cells.hadoop.HBaseStorage.FamilyName;
 
 import com.google.common.base.Charsets;
 import com.google.protobuf.ByteString;

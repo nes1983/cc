@@ -12,7 +12,7 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.regex.Replace;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.StorageModule;
-import ch.unibe.scg.cells.TableModule.DefaultTableModule;
+import ch.unibe.scg.cells.hadoop.HBaseTableModule;
 
 import com.google.inject.PrivateModule;
 import com.google.inject.Singleton;
@@ -45,19 +45,19 @@ public final class CCModule extends CellsModule {
 		ByteString defaultFamily = ByteString.copyFromUtf8("f");
 
 		installTable(Populator.class, new TypeLiteral<Snippet>() {}, PopulatorCodec.Function2SnippetCodec.class,
-				storageModule, new DefaultTableModule("Snippets", defaultFamily));
+				storageModule, new HBaseTableModule<>("Snippets", defaultFamily));
 		installTable(Populator.class, new TypeLiteral<Function>() {}, PopulatorCodec.FunctionCodec.class,
-				storageModule, new DefaultTableModule("Functions", defaultFamily));
+				storageModule, new HBaseTableModule<>("Functions", defaultFamily));
 		installTable(Populator.class, new TypeLiteral<CodeFile>() {}, PopulatorCodec.CodeFileCodec.class,
-				storageModule, new DefaultTableModule("CodeFiles", defaultFamily));
+				storageModule, new HBaseTableModule<>("CodeFiles", defaultFamily));
 		installTable(Populator.class, new TypeLiteral<Version>() {}, PopulatorCodec.VersionCodec.class,
-				storageModule, new DefaultTableModule("Versions", defaultFamily));
+				storageModule, new HBaseTableModule<>("Versions", defaultFamily));
 		installTable(Populator.class, new TypeLiteral<Project>() {}, PopulatorCodec.ProjectCodec.class,
-				storageModule, new DefaultTableModule("Projects", defaultFamily));
+				storageModule, new HBaseTableModule<>("Projects", defaultFamily));
 		installTable(Populator.class, new TypeLiteral<Str<Function>>() {}, FunctionStringCodec.class,
-				storageModule, new DefaultTableModule("FunctionStrings", defaultFamily));
+				storageModule, new HBaseTableModule<>("FunctionStrings", defaultFamily));
 		installTable(PopularSnippets.class, new TypeLiteral<Snippet>() {}, PopularSnippetsCodec.class,
-				storageModule, new DefaultTableModule("PopularSnippets", defaultFamily));
+				storageModule, new HBaseTableModule<>("PopularSnippets", defaultFamily));
 
 		bind(PopularSnippetMaps.class).in(Singleton.class);
 

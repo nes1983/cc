@@ -5,7 +5,8 @@ import javax.inject.Provider;
 
 import org.apache.hadoop.hbase.client.HTable;
 
-import ch.unibe.scg.cells.Annotations.TableName;
+import ch.unibe.scg.cells.hadoop.HBaseStorage.TableName;
+
 
 /** Assumes that CellsModule is also installed. Sets default values on the table. */
 class HTableProvider implements Provider<HTable> {

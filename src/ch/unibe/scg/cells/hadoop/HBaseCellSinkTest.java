@@ -18,7 +18,6 @@ import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.CellSource;
-import ch.unibe.scg.cells.TableModule.DefaultTableModule;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
@@ -59,7 +58,7 @@ public final class HBaseCellSinkTest {
 	@Test
 	public void writeSmokeTest() throws IOException {
 		final Injector i = Guice.createInjector(configurationModule,
-				new HBaseStorage(), new DefaultTableModule(testTable.getTableName(), FAMILY));
+				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
 		ByteString key = ByteString.copyFromUtf8("123");
 		Cell<Void> cell = Cell.<Void> make(key, key, ByteString.EMPTY);
 
@@ -85,7 +84,7 @@ public final class HBaseCellSinkTest {
 	@Test
 	public void checkTimes() throws IOException, InterruptedException {
 		final Injector injector = Guice.createInjector(configurationModule,
-				new HBaseStorage(), new DefaultTableModule(testTable.getTableName(), FAMILY));
+				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
 		final ByteString key = ByteString.copyFromUtf8("123");
 		final int rounds = 50;
 
