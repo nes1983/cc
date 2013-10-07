@@ -49,6 +49,21 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		return new InMemoryShuffler<>();
 	}
 
+	/**
+	 * Serialize all elements. When the returned shuffler will be read, the elements are
+	 * re-deserialized.
+	 *
+	 * @return a new InMemoryShuffler that will, when read, read all elements.
+	 */
+	public static <T> InMemoryShuffler<T> copyFrom(Iterable<T> elements, Codec<T> codec) {
+		InMemoryShuffler<T> ret = getInstance();
+		for (T e : elements) {
+			ret.write(codec.encode(e));
+		}
+		ret.close();
+		return ret;
+	}
+
 	@Override
 	public void close() {
 		// Sort store, discard duplicates, and make immutable.
