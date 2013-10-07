@@ -49,16 +49,131 @@ import com.google.protobuf.ByteString;
 public final class HadoopPipelineTest {
 	private final static ByteString FAMILY = ByteString.copyFromUtf8("f");
 
-	private Iterable<Act> readActsFromDisk() throws IOException {
-		ImmutableList.Builder<Act> ret = ImmutableList.builder();
-		String richard = CharStreams.toString(new InputStreamReader(this.getClass().getResourceAsStream(
-				"richard-iii.txt"), Charsets.UTF_8));
+	static class Act {
+		final int number;
+		final String content;
 
-		String[] actStrings = richard.split("\\bACT\\s[IVX]+");
-		for (int i = 0; i < actStrings.length; i++) {
-			ret.add(new Act(i, actStrings[i]));
+		Act(int number, String content) {
+			this.number = number;
+			this.content = content;
 		}
-		return ret.build();
+	}
+
+	private static class ActCodec implements Codec<Act> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public Cell<Act> encode(Act act) {
+			return Cell.make(ByteString.copyFrom(Ints.toByteArray(act.number)), ByteString.copyFromUtf8("t"),
+					ByteString.copyFromUtf8(act.content));
+		}
+
+		@Override
+		public Act decode(Cell<Act> encoded) throws IOException {
+			return new Act(Ints.fromByteArray(encoded.getRowKey().toByteArray()), encoded.getCellContents()
+					.toStringUtf8());
+		}
+	}
+
+	private static class Word {
+		final String word;
+		final int act;
+		final int pos;
+
+		Word(String word, int act, int pos) {
+			this.word = word;
+			this.act = act;
+			this.pos = pos;
+		}
+	}
+
+	private static class WordCodec implements Codec<Word> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public Cell<Word> encode(Word s) {
+			ByteBuffer col = ByteBuffer.allocate(2 * Ints.BYTES);
+			col.mark();
+			col.putInt(s.act);
+			col.putInt(s.pos);
+			col.reset();
+			return Cell.make(
+					ByteString.copyFromUtf8(s.word),
+					ByteString.copyFrom(col),
+					ByteString.EMPTY);
+		}
+
+		@Override
+		public Word decode(Cell<Word> encoded) throws IOException {
+			ByteBuffer col = encoded.getColumnKey().asReadOnlyByteBuffer();
+			int nAct = col.getInt();
+			int pos = col.getInt();
+			return new Word(encoded.getRowKey().toStringUtf8(), nAct, pos);
+		}
+	}
+
+	private static class WordCount {
+		final String word;
+		final long count;
+
+		WordCount(String word, long count) {
+			this.word = word;
+			this.count = count;
+		}
+
+		@Override
+		public String toString() {
+			return word + " " + count;
+		}
+	}
+
+	static class WordCountCodec implements Codec<WordCount> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public Cell<WordCount> encode(WordCount s) {
+			return Cell.make(ByteString.copyFromUtf8(s.word),
+					ByteString.copyFromUtf8("1"),
+					ByteString.copyFrom(Longs.toByteArray(s.count)));
+		}
+
+		@Override
+		public WordCount decode(Cell<WordCount> encoded) throws IOException {
+			return new WordCount(encoded.getRowKey().toStringUtf8(),
+					Longs.fromByteArray(encoded.getCellContents().toByteArray()));
+		}
+	}
+
+	static class WordParseMapper implements Mapper<Act, Word> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public void close() { }
+
+		@Override
+		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink) throws IOException,
+				InterruptedException {
+			for(Act act : row) {
+				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
+				while (matcher.find()) {
+					sink.write(new Word(matcher.group(), first.number, matcher.start()));
+				}
+			}
+		}
+	}
+
+	static class WordAdderMapper implements Mapper<Word, WordCount> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public void close() { }
+
+		@Override
+		public void map(Word first, OneShotIterable<Word> row, Sink<WordCount> sink)
+				throws IOException, InterruptedException {
+			int len = Iterables.size(row);
+			sink.write(new WordCount(first.word, len));
+		}
 	}
 
 	@Test
@@ -138,130 +253,15 @@ public final class HadoopPipelineTest {
 	@Retention(RUNTIME)
 	public static @interface Eff {}
 
-	static class Act {
-		final int number;
-		final String content;
+	Iterable<Act> readActsFromDisk() throws IOException {
+		ImmutableList.Builder<Act> ret = ImmutableList.builder();
+		String richard = CharStreams.toString(new InputStreamReader(this.getClass().getResourceAsStream(
+				"richard-iii.txt"), Charsets.UTF_8));
 
-		Act(int number, String content) {
-			this.number = number;
-			this.content = content;
+		String[] actStrings = richard.split("\\bACT\\s[IVX]+");
+		for (int i = 0; i < actStrings.length; i++) {
+			ret.add(new Act(i, actStrings[i]));
 		}
-	}
-
-	private static class ActCodec implements Codec<Act> {
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public Cell<Act> encode(Act act) {
-			return Cell.make(ByteString.copyFrom(Ints.toByteArray(act.number)), ByteString.copyFromUtf8("t"),
-					ByteString.copyFromUtf8(act.content));
-		}
-
-		@Override
-		public Act decode(Cell<Act> encoded) throws IOException {
-			return new Act(Ints.fromByteArray(encoded.getRowKey().toByteArray()), encoded.getCellContents()
-					.toStringUtf8());
-		}
-	}
-
-	private static class Word {
-		final String word;
-		final int act;
-		final int pos;
-
-		Word(String word, int act, int pos) {
-			this.word = word;
-			this.act = act;
-			this.pos = pos;
-		}
-	}
-
-	private static class WordCount {
-		final String word;
-		final long count;
-
-		WordCount(String word, long count) {
-			this.word = word;
-			this.count = count;
-		}
-
-		@Override
-		public String toString() {
-			return word + " " + count;
-		}
-	}
-
-	static class WordCountCodec implements Codec<WordCount> {
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public Cell<WordCount> encode(WordCount s) {
-			return Cell.make(ByteString.copyFromUtf8(s.word),
-					ByteString.copyFromUtf8("1"),
-					ByteString.copyFrom(Longs.toByteArray(s.count)));
-		}
-
-		@Override
-		public WordCount decode(Cell<WordCount> encoded) throws IOException {
-			return new WordCount(encoded.getRowKey().toStringUtf8(),
-					Longs.fromByteArray(encoded.getCellContents().toByteArray()));
-		}
-	}
-
-	static class WordCodec implements Codec<Word> {
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public Cell<Word> encode(Word s) {
-			ByteBuffer col = ByteBuffer.allocate(2 * Ints.BYTES);
-			col.mark();
-			col.putInt(s.act);
-			col.putInt(s.pos);
-			col.reset();
-			return Cell.make(
-					ByteString.copyFromUtf8(s.word),
-					ByteString.copyFrom(col),
-					ByteString.EMPTY);
-		}
-
-		@Override
-		public Word decode(Cell<Word> encoded) throws IOException {
-			ByteBuffer col = encoded.getColumnKey().asReadOnlyByteBuffer();
-			int nAct = col.getInt();
-			int pos = col.getInt();
-			return new Word(encoded.getRowKey().toStringUtf8(), nAct, pos);
-		}
-	}
-
-	static class WordParseMapper implements Mapper<Act, Word> {
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public void close() { }
-
-		@Override
-		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink) throws IOException,
-				InterruptedException {
-			for(Act act : row) {
-				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
-				while (matcher.find()) {
-					sink.write(new Word(matcher.group(), first.number, matcher.start()));
-				}
-			}
-		}
-	}
-
-	static class WordAdderMapper implements Mapper<Word, WordCount> {
-		private static final long serialVersionUID = 1L;
-
-		@Override
-		public void close() { }
-
-		@Override
-		public void map(Word first, OneShotIterable<Word> row, Sink<WordCount> sink)
-				throws IOException, InterruptedException {
-			int len = Iterables.size(row);
-			sink.write(new WordCount(first.word, len));
-		}
+		return ret.build();
 	}
 }
