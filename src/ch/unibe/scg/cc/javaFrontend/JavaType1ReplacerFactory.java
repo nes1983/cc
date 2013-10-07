@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 import ch.unibe.scg.cc.ReplacerProvider;
 import ch.unibe.scg.cc.regex.Replace;
 
+/** Makes all the replacers for type 1 replacing, as described in the CCFinder paper. */
 // TODO: Should not be public. It's only public because a silly test depends on it.
 public class JavaType1ReplacerFactory extends ReplacerProvider {
 	final private static long serialVersionUID = 1L;
