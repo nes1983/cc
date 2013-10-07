@@ -107,4 +107,23 @@ public class TableAdmin {
 
 		return hTableFactory.make(tableName);
 	}
+
+	static <T> Table<T> existing(final String tabName, final ByteString famName) {
+		// TODO: Check if table exists.
+		return new Table<T>() {
+			@Override public void close() throws IOException {
+				// Nothing to do.
+			}
+
+			@Override
+			public String getTableName() {
+				return tabName;
+			}
+
+			@Override
+			public ByteString getFamilyName() {
+				return famName;
+			}
+		};
+	}
 }
