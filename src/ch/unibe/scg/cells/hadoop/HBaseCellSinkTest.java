@@ -8,7 +8,6 @@ import static org.junit.Assert.assertTrue;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.hadoop.conf.Configuration;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,11 +19,9 @@ import ch.unibe.scg.cells.CellSource;
 
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
-import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
-import com.google.inject.Module;
 import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
@@ -34,13 +31,7 @@ public final class HBaseCellSinkTest {
 	private Table<Void> testTable;
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
 
-	private final Module configurationModule = new AbstractModule() {
-		@Override protected void configure() {
-			bind(Configuration.class).toProvider(UnibeConfigurationProvider.class);
-		}
-	};
-
-	final private TableAdmin admin = Guice.createInjector(configurationModule).getInstance(
+	final private TableAdmin admin = Guice.createInjector(new UnibeModule()).getInstance(
 			TableAdmin.class);
 
 	@Before
@@ -56,7 +47,7 @@ public final class HBaseCellSinkTest {
 	/** Testing {@link HBaseCellSink#write(Cell)}. */
 	@Test
 	public void writeSmokeTest() throws IOException {
-		final Injector i = Guice.createInjector(configurationModule,
+		final Injector i = Guice.createInjector(new UnibeModule(),
 				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
 		ByteString key = ByteString.copyFromUtf8("123");
 		Cell<Void> cell = Cell.<Void> make(key, key, ByteString.EMPTY);
@@ -82,7 +73,7 @@ public final class HBaseCellSinkTest {
 
 	@Test
 	public void checkTimes() throws IOException, InterruptedException {
-		final Injector injector = Guice.createInjector(configurationModule,
+		final Injector injector = Guice.createInjector(new UnibeModule(),
 				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
 		final ByteString key = ByteString.copyFromUtf8("123");
 		final int rounds = 50;

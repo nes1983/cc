@@ -38,7 +38,6 @@ import com.google.common.collect.Iterables;
 import com.google.common.io.CharStreams;
 import com.google.common.primitives.Ints;
 import com.google.common.primitives.Longs;
-import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
@@ -64,12 +63,7 @@ public final class HadoopPipelineTest {
 
 	@Test
 	public void testHadoopWordcount() throws IOException, InterruptedException {
-		final Module configurationModule = new AbstractModule() {
-			@Override protected void configure() {
-				bind(Configuration.class).toProvider(UnibeConfigurationProvider.class);
-			}
-		};
-		TableAdmin tableAdmin = Guice.createInjector(configurationModule).getInstance(TableAdmin.class);
+		TableAdmin tableAdmin = Guice.createInjector(new UnibeModule()).getInstance(TableAdmin.class);
 
 		try(Table<Act> in = tableAdmin.createTemporaryTable(FAMILY);
 				Table<WordCount> eff = tableAdmin.createTemporaryTable(FAMILY)) {
@@ -89,7 +83,7 @@ public final class HadoopPipelineTest {
 				}
 			};
 
-			Injector injector = Guice.createInjector(tab, configurationModule);
+			Injector injector = Guice.createInjector(tab, new UnibeModule());
 			try (Sink<Act> sink = injector.getInstance(Key.get(new TypeLiteral<Sink<Act>>() {}, In.class))) {
 				Iterable<Act> acts = readActsFromDisk();
 				for (Act act : acts) {
