@@ -11,6 +11,7 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.Codec;
 
+import com.google.common.base.Charsets;
 import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
@@ -32,7 +33,9 @@ class PopulatorCodec implements Serializable {
 
 		@Override
 		public Cell<CodeFile> encode(CodeFile fil) {
-			return Cell.make(fil.getVersion(), fil.getHash().concat(fil.getPathBytes()), fil.toByteString());
+			return Cell.make(fil.getVersion(),
+					ByteString.copyFrom(Bytes.concat(fil.getHash().toByteArray(), fil.getPath().getBytes(Charsets.UTF_8))),
+					fil.toByteString());
 		}
 
 		@Override
@@ -64,7 +67,10 @@ class PopulatorCodec implements Serializable {
 
 		@Override
 		public Cell<Version> encode(Version v) {
-			return Cell.make(v.getProject(), v.getHash().concat(v.getNameBytes()), v.toByteString());
+			return Cell.make(v.getProject(),
+					ByteString.copyFrom(Bytes.concat(v.getHash().toByteArray(), v.getName().getBytes(Charsets.UTF_8))),
+					v.toByteString());
+
 		}
 
 		@Override
@@ -78,7 +84,8 @@ class PopulatorCodec implements Serializable {
 
 		@Override
 		public Cell<Function> encode(Function fun) {
-			ByteString colKey = fun.getHash().concat(ByteString.copyFrom(Ints.toByteArray(fun.getBaseLine())));
+			ByteString colKey = ByteString.copyFrom(Bytes.concat(fun.getHash().toByteArray(),
+					Ints.toByteArray(fun.getBaseLine())));
 
 			return Cell.make(fun.getCodeFile(), colKey, fun.toByteString());
 		}

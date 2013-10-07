@@ -53,10 +53,10 @@ public final class CloneGroupClustererTest {
 
 			sink.close();
 
-			Source<CloneGroup> source = Codecs.decode(sink, i.getInstance(CloneGroupCodec.class));
-
-			// three identical matches in two tags
-			assertThat(Iterables.get(Iterables.get(source, 0), 0).getOccurrencesList().size(), is(2*3));
+			try(Source<CloneGroup> source = Codecs.decode(sink, i.getInstance(CloneGroupCodec.class))) {
+				// three identical matches in two tags
+				assertThat(Iterables.get(Iterables.get(source, 0), 0).getOccurrencesList().size(), is(2*3));
+			}
 		}
 	}
 }

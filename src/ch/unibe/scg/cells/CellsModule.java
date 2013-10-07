@@ -10,15 +10,11 @@ import java.lang.reflect.ParameterizedType;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
-import ch.unibe.scg.cells.Annotations.TableName;
-
 import com.google.inject.AbstractModule;
 import com.google.inject.Key;
 import com.google.inject.PrivateModule;
 import com.google.inject.TypeLiteral;
 import com.google.inject.util.Types;
-import com.google.protobuf.ByteString;
 
 /**
  * Default bindings for use with cells. binds Sources to encoded CellSources, and sinks
@@ -78,11 +74,10 @@ public abstract class CellsModule extends AbstractModule {
 	}
 
 	// TODO: Use builder pattern for 6 parameters.
-	protected final <T> void installTable(final String tableName, final ByteString family,
+	protected final <T> void installTable(
 			final Class<? extends Annotation> annotation, final TypeLiteral<T> lit,
-			final Class<? extends Codec<T>> codec, final StorageModule storageModule) {
-		checkNotNull(tableName);
-		checkNotNull(family);
+			final Class<? extends Codec<T>> codec, final StorageModule storageModule,
+					final TableModule tableModule) {
 		checkNotNull(annotation);
 		checkNotNull(lit);
 		checkNotNull(codec);
@@ -91,11 +86,9 @@ public abstract class CellsModule extends AbstractModule {
 		install(new PrivateModule() {
 			@Override protected void configure() {
 				install(storageModule);
+				install(tableModule);
 
 				bind((Key<Codec<T>>) Key.get(Types.newParameterizedType(Codec.class, lit.getType()))).to(codec);
-				bindConstant().annotatedWith(TableName.class).to(tableName);
-
-				bind(ByteString.class).annotatedWith(FamilyName.class).toInstance(family);
 
 				bind((Key<Source<T>>) Key.get(newParameterizedType(Source.class, lit.getType()))).toProvider(
 						(Key<Provider<Source<T>>>) Key.get(newParameterizedTypeWithOwner(CellsModule.class,

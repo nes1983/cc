@@ -67,7 +67,7 @@ class HBaseCellSink<T> implements CellSink<T> {
 	 * {@link #MAX_SIZE} is reached. Ensure to call {@link #close()} after the last
 	 * Put got passed to the Buffer.
 	 */
-	private static class HTableWriteBuffer implements Closeable {
+	static class HTableWriteBuffer implements Closeable {
 		private static final int MAX_SIZE = 10000;
 		final private List<Row> puts = new ArrayList<>();
 		final HTable htable;

@@ -14,53 +14,40 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.mappers.ConfigurationProvider;
-import ch.unibe.scg.cells.Annotations.FamilyName;
-import ch.unibe.scg.cells.Annotations.TableName;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
 import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.CellSource;
-import ch.unibe.scg.cells.hadoop.TableAdmin.TemporaryTable;
+import ch.unibe.scg.cells.TableModule.DefaultTableModule;
 
-import com.google.common.base.Charsets;
 import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
+import com.google.inject.Module;
 import com.google.inject.TypeLiteral;
-import com.google.inject.util.Providers;
 import com.google.protobuf.ByteString;
 
 /** Testing {@link HBaseCellSink} */
 @SuppressWarnings("javadoc")
 public final class HBaseCellSinkTest {
-	private TemporaryTable<Void> testTable;
+	private Table<Void> testTable;
 	private static final ByteString FAMILY = ByteString.copyFromUtf8("d");
 
-	final private TableAdmin admin
-			= Guice.createInjector(new HadoopModule(), new TestModule()).getInstance(TableAdmin.class);
-
-	private class TestModule extends AbstractModule {
-		@Override
-		protected void configure() {
+	private final Module configurationModule = new AbstractModule() {
+		@Override protected void configure() {
 			bind(Configuration.class).toProvider(ConfigurationProvider.class);
-			if (testTable != null) {
-				bindConstant().annotatedWith(TableName.class)
-					.to(new String(testTable.table.getTableName(), Charsets.UTF_8));
-			} else {
-				// HadoopModule requires it, and it's only a test, so ...
-				bind(String.class).annotatedWith(TableName.class).toProvider(Providers.<String> of(null));
-			}
-			// TODO: Fix family globally?
-			bind(ByteString.class).annotatedWith(FamilyName.class).toInstance(FAMILY);
 		}
-	}
+	};
+
+	final private TableAdmin admin = Guice.createInjector(configurationModule).getInstance(
+			TableAdmin.class);
 
 	@Before
 	public void createTable() throws IOException {
-		testTable = admin.createTemporaryTable();
+		testTable = admin.createTemporaryTable(FAMILY);
 	}
 
 	@After
@@ -71,7 +58,8 @@ public final class HBaseCellSinkTest {
 	/** Testing {@link HBaseCellSink#write(Cell)}. */
 	@Test
 	public void writeSmokeTest() throws IOException {
-		Injector i = Guice.createInjector(new HadoopModule(), new TestModule());
+		final Injector i = Guice.createInjector(configurationModule,
+				new HBaseStorage(), new DefaultTableModule(testTable.getTableName(), FAMILY));
 		ByteString key = ByteString.copyFromUtf8("123");
 		Cell<Void> cell = Cell.<Void> make(key, key, ByteString.EMPTY);
 
@@ -96,7 +84,8 @@ public final class HBaseCellSinkTest {
 
 	@Test
 	public void checkTimes() throws IOException, InterruptedException {
-		final Injector injector = Guice.createInjector(new HadoopModule(), new TestModule());
+		final Injector injector = Guice.createInjector(configurationModule,
+				new HBaseStorage(), new DefaultTableModule(testTable.getTableName(), FAMILY));
 		final ByteString key = ByteString.copyFromUtf8("123");
 		final int rounds = 50;
 

@@ -17,6 +17,8 @@ import java.io.IOException;
  *  		.efflux(m2, codec3)
  * }
  */
+// TODO: Give a longer example.
+
 public interface Pipeline<IN, EFF> {
 	/** Return a new pipeline segment, ready for mapping. */
 	MappablePipeline<IN, EFF> influx(Codec<IN> c);

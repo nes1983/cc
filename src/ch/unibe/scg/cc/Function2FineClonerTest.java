@@ -50,39 +50,39 @@ public final class Function2FineClonerTest {
 			runner.run(pipe);
 			shuffler.close();
 
-			Source<Clone> rows = Codecs.decode(shuffler, i.getInstance(Function2RoughClonesCodec.class));
-
-			assertTrue(rows.toString(), Pattern.matches("(?s)\\[\\[thisSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 5\n" +
-					"  length: 14\n" +
-					"\\}\n" +
-					"thatSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 3\n" +
-					"  length: 15\n" +
-					"\\}\n" +
-					", thisSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 13\n" +
-					"  length: 6\n" +
-					"\\}\n" +
-					"thatSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 9\n" +
-					"  length: 6\n" +
-					"\\}\n" +
-					"\\], \\[thisSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 0\n" +
-					"  length: 23\n" +
-					"\\}\n" +
-					"thatSnippet \\{\n" +
-					"  function: \".*?\"\n" +
-					"  position: 0\n" +
-					"  length: 20\n" +
-					"\\}\n" +
-					"\\]\\]", rows.toString()));
+			try(Source<Clone> rows = Codecs.decode(shuffler, i.getInstance(Function2RoughClonesCodec.class))) {
+				assertTrue(rows.toString(), Pattern.matches("(?s)\\[\\[thisSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 5\n" +
+						"  length: 14\n" +
+						"\\}\n" +
+						"thatSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 3\n" +
+						"  length: 15\n" +
+						"\\}\n" +
+						", thisSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 13\n" +
+						"  length: 6\n" +
+						"\\}\n" +
+						"thatSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 9\n" +
+						"  length: 6\n" +
+						"\\}\n" +
+						"\\], \\[thisSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 0\n" +
+						"  length: 23\n" +
+						"\\}\n" +
+						"thatSnippet \\{\n" +
+						"  function: \".*?\"\n" +
+						"  position: 0\n" +
+						"  length: 20\n" +
+						"\\}\n" +
+						"\\]\\]", rows.toString()));
+			}
 		}
 	}
 

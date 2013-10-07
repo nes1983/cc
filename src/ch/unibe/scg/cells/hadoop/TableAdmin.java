@@ -12,45 +12,18 @@ import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.io.hfile.Compression.Algorithm;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
-import ch.unibe.scg.cells.hadoop.Annotations.IndexFamily;
-
 import com.google.common.base.Charsets;
 import com.google.common.io.BaseEncoding;
 import com.google.protobuf.ByteString;
 
 class TableAdmin {
 	final private Configuration configuration;
-	final private ByteString family;
-	final private ByteString indexFamily;
 	final private HTableFactory hTableFactory;
 
 	@Inject
-	TableAdmin(Configuration configuration, @FamilyName ByteString family, @IndexFamily ByteString indexFamily,
-			HTableFactory hTableFactory) {
+	TableAdmin(Configuration configuration, HTableFactory hTableFactory) {
 		this.configuration = configuration;
-		this.family = family;
-		this.indexFamily = indexFamily;
 		this.hTableFactory = hTableFactory;
-	}
-
-	class TemporaryTable<T> implements Table<T> {
-		final HTable table;
-
-		TemporaryTable(HTable table) {
-			this.table = table;
-		}
-
-		@Override
-		public void close() throws IOException {
-			table.close();
-			deleteTable(getTableName());
-		}
-
-		@Override
-		public String getTableName() {
-			return new String(table.getTableName(), Charsets.UTF_8);
-		}
 	}
 
 	void deleteTable(String tableName) throws IOException {
@@ -64,28 +37,57 @@ class TableAdmin {
 		}
 	}
 
-	/**
-	 * Create a temporary hbase table.
-	 * @return a Temporary table, containing an HTable. Don't forget to close it!
-	 */
-	<T> TemporaryTable<T> createTemporaryTable() throws IOException {
+	/** Create a temporary hbase table. On close, The temporary table gets deleted from HBase. */
+	@SuppressWarnings("resource") // Tab gets closed properly in close of return value.
+	<T> Table<T> createTemporaryTable(ByteString family) throws IOException {
 		SecureRandom random = new SecureRandom();
 		byte bytes[] = new byte[20];
 		random.nextBytes(bytes);
 		String tableName = "tmp" + BaseEncoding.base16().encode(bytes);
 
-		return createTable(tableName);
+
+		final HTable tab = createHTable(tableName, family);
+		return new Table<T>() {
+			@Override
+			public void close() throws IOException {
+				tab.close();
+				deleteTable(getTableName());
+			}
+
+			@Override
+			public String getTableName() {
+				return new String(tab.getTableName(), Charsets.UTF_8);
+			}
+		};
 	}
 
-	<T> TemporaryTable<T> createTable(String tableName) throws IOException {
+	/** Create a non-temporary table. On close, the table will NOT be deleted. */
+	@SuppressWarnings("resource") // Tab will be properly closed in the return value's close.
+	<T> Table<T> createTable(String tableName, ByteString family) throws IOException {
+		final HTable tab = createHTable(tableName, family);
+
+		return new Table<T>() {
+			@Override
+			public void close() throws IOException {
+				tab.close();
+			}
+
+			@Override
+			public String getTableName() {
+				return new String(tab.getTableName(), Charsets.UTF_8);
+			}
+		};
+	}
+
+	private HTable createHTable(String tableName, ByteString family) throws IOException {
 		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
 			HTableDescriptor td = new HTableDescriptor(tableName);
 			td.addFamily(new HColumnDescriptor(family.toByteArray()).setCompressionType(Algorithm.SNAPPY));
-			td.addFamily(new HColumnDescriptor(indexFamily.toByteArray()));
+			td.addFamily(new HColumnDescriptor(HBaseStorage.INDEX_FAMILY.toByteArray()));
 
 			admin.createTable(td);
 		}
 
-		return new TemporaryTable<>(hTableFactory.make(tableName));
+		return hTableFactory.make(tableName);
 	}
 }

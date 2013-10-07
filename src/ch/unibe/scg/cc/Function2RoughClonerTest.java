@@ -48,37 +48,39 @@ public final class Function2RoughClonerTest {
 
 		try (InMemoryShuffler<Clone> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
 			InMemoryPipeline.make(src, sink)
-				.influx(repoCodec)
-				.mapper(i.getInstance(GitPopulator.class))
-				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
-				.efflux(
-						i.getInstance(Function2RoughCloner.class),
-						i.getInstance(Function2RoughClonesCodec.class));
+			.influx(repoCodec)
+			.mapper(i.getInstance(GitPopulator.class))
+			.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
+			.efflux(
+					i.getInstance(Function2RoughCloner.class),
+					i.getInstance(Function2RoughClonesCodec.class));
 
 			// See paper: Table III
 			assertThat(Iterables.size(sink), is(2));
 
-			Source<Snippet> popularPartitions = i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, PopularSnippets.class));
+			try(Source<Snippet> popularPartitions =
+					i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, PopularSnippets.class))) {
 
-			Iterable<Snippet> aaa0 = null;
-			for (Iterable<Snippet> row : popularPartitions) {
-				if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("AAA0")) {
-					aaa0 = row;
-					break;
+				Iterable<Snippet> aaa0 = null;
+				for (Iterable<Snippet> row : popularPartitions) {
+					if (base16().encode(Iterables.get(row, 0).getFunction().toByteArray()).startsWith("AAA0")) {
+						aaa0 = row;
+						break;
+					}
 				}
-			}
-			assert aaa0 != null; // Null analysis insists.
-			assertNotNull(aaa0);
+				assert aaa0 != null; // Null analysis insists.
+				assertNotNull(aaa0);
 
-			Set<String> snippetHashes = new HashSet<>();
-			for (Snippet s : aaa0) {
-				if (s.getCloneType() == CloneType.GAPPED) {
-					snippetHashes.add(base16().encode(s.getHash().toByteArray()));
+				Set<String> snippetHashes = new HashSet<>();
+				for (Snippet s : aaa0) {
+					if (s.getCloneType() == CloneType.GAPPED) {
+						snippetHashes.add(base16().encode(s.getHash().toByteArray()));
+					}
 				}
-			}
 
-			assertThat(snippetHashes.toString(),
-					new HashSet<>(GitPopulatorTest.d618SnippetHashes()).containsAll(snippetHashes), is(true));
+				assertThat(snippetHashes.toString(),
+						new HashSet<>(GitPopulatorTest.d618SnippetHashes()).containsAll(snippetHashes), is(true));
+			}
 		}
 		// TODO continue paper example
 	}

@@ -45,6 +45,11 @@ public enum Codecs {
 			@Override public String toString() {
 				return Iterators.toString(iterator());
 			}
+
+			@Override
+			public void close() throws IOException {
+				source.close();
+			}
 		};
 	}
 

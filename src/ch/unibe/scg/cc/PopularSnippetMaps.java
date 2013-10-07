@@ -14,7 +14,7 @@ import com.google.inject.Inject;
  * Loads the maps lazily. Lazy loading is useful when used from a serialized
  * class. It makes sure that loading only happens in the cluster.
  */
-public class PopularSnippetMaps implements Serializable {
+class PopularSnippetMaps implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	final private Source<Snippet> src;

@@ -6,34 +6,40 @@ import javax.inject.Inject;
 
 import org.junit.Test;
 
-import ch.unibe.scg.cells.Annotations.FamilyName;
-import ch.unibe.scg.cells.Annotations.TableName;
+import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.Eff;
+import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.In;
 
+import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.TypeLiteral;
-import com.google.protobuf.ByteString;
 
 /** Check {@link CellsModule}. */
 public final class CellsModuleTest {
 	/** Simple smoke test that checks if injection of tables falls apart by itself. */
 	@Test
 	public void testTableInjection() {
+		final TableModule nullTableModule = new TableModule() {
+			@Override public void configure(Binder binder) {
+				// Do nothing.
+			}
+		};
+
 		Injector i = Guice.createInjector(new CellsModule() {
 			@Override
 			protected void configure() {
-				installTable("bla",
-						ByteString.EMPTY,
-						TableName.class,
+				installTable(
+						In.class,
 						new TypeLiteral<Integer>() {},
 						IntCodec.class,
-						new InMemoryStorage());
-				installTable("blub",
-						ByteString.EMPTY,
-						FamilyName.class,
+						new InMemoryStorage(),
+						nullTableModule);
+				installTable(
+						Eff.class,
 						new TypeLiteral<Integer>() {},
 						IntCodec.class,
-						new InMemoryStorage());
+						new InMemoryStorage(),
+						nullTableModule);
 			}
 		});
 
@@ -42,9 +48,9 @@ public final class CellsModuleTest {
 	}
 
 	private static class InjectMe {
-		@SuppressWarnings("unused") // Unavoidable. We're checking if the dependencies can be injected.
+		@SuppressWarnings("unused") // We just check if Guice could inject at all.
 		@Inject
-		InjectMe(@TableName Source<Integer> srcBla, @FamilyName Source<Integer> srcBli) {}
+		InjectMe(@In Source<Integer> srcBla, @Eff Source<Integer> srcBli) {}
 	}
 
 	private static class IntCodec implements Codec<Integer> {

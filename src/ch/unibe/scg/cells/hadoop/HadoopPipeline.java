@@ -76,7 +76,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		return new HadoopPipeline<>(configuration,
 				new TableInputConfigurer<>(influx, family),
 				efflux,
-				new TableAdmin(configuration, family, HadoopModule.INDEX_FAMILY, new HTableFactory(configuration)));
+				new TableAdmin(configuration, new HTableFactory(configuration)));
 	}
 
 	@Override
@@ -292,16 +292,18 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			this.reduce = reduce;
 		}
 
+		@SuppressWarnings("resource") // target gets closed in TableInputConfigurer.close, at the end of the MR.
+		// TODO: Is there a more robust way to enforce that table gets closed?
 		@Override
 		public MappablePipeline<E, EFF> shuffle(Codec<E> codec) throws IOException, InterruptedException {
-			Table<E> target = admin.createTemporaryTable();
+			Table<E> target = admin.createTemporaryTable(ByteString.copyFrom(fam));
 
 			run(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, reduce, codec, target);
 
 			// This will delete temporary tables if needed.
 			mapConfigurer.close();
 
-			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target, HadoopModule.INDEX_FAMILY), codec);
+			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target, HBaseStorage.INDEX_FAMILY), codec);
 		}
 	}
 
@@ -533,9 +535,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				// Format: key = rowKeyLen | rowKey | colKey.
 				//         value = colKeyLen | colKey | contents
 				byte[] key = Bytes.concat(Ints.toByteArray(cell.getRowKey().size()),
-						(cell.getRowKey().concat(cell.getColumnKey()).toByteArray()));
+						cell.getRowKey().toByteArray(), cell.getColumnKey().toByteArray());
 				byte[] value = Bytes.concat(Ints.toByteArray(cell.getColumnKey().size()),
-						(cell.getColumnKey().concat(cell.getCellContents()).toByteArray()));
+						cell.getColumnKey().toByteArray(), cell.getCellContents().toByteArray());
 
 				context.write(new ImmutableBytesWritable(key), new ImmutableBytesWritable(value));
 			}
@@ -554,7 +556,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 	private static class KeyGroupingComparator extends WritableComparator {
 		KeyGroupingComparator() {
-			super(ImmutableBytesWritable.class);
+			super(ImmutableBytesWritable.class, true);
 		}
 
 		@Override
@@ -567,7 +569,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 	private static class KeySortingComparator extends WritableComparator {
 		KeySortingComparator() {
-			super(ImmutableBytesWritable.class);
+			super(ImmutableBytesWritable.class, true);
 		}
 
 		@Override

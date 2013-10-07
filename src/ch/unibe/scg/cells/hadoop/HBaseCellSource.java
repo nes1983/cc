@@ -21,6 +21,7 @@ import ch.unibe.scg.cells.CellSource;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.UnmodifiableIterator;
+import com.google.common.io.Closer;
 import com.google.protobuf.ByteString;
 
 /** A cell source reading from a HTable. Don't forget to close it when you're done. Can be iterated only once! */
@@ -136,9 +137,11 @@ public class HBaseCellSource<T> implements CellSource<T> {
 
 	@Override
 	public void close() throws IOException {
-		if (hTable != null) {
-			hTable.hTable.close();
+		try (Closer closer = Closer.create()) {
+			if (hTable != null) {
+				closer.register(hTable.hTable);
+			}
+			closer.register(scanner);
 		}
-		scanner.close();
 	}
 }
