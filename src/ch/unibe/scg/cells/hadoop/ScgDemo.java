@@ -64,7 +64,7 @@ public final class ScgDemo {
 		final int act;
 		final int pos;
 
-		public Word(String word, int act, int pos) {
+		Word(String word, int act, int pos) {
 			this.word = word;
 			this.act = act;
 			this.pos = pos;
