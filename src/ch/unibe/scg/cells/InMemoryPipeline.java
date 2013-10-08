@@ -83,7 +83,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	}
 
 	/** Run the mapper. Neither source nor sink are closed. However, the mapper does get closed.*/
-	public static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Mapper<I, E> mapper,
+	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, Mapper<I, E> mapper,
 			CellSink<E> sink, Codec<E> sinkCodec) throws IOException, InterruptedException {
 		try (Mapper<I, E> m = mapper) {
 			for (Iterable<I> decoded : Codecs.decode(src, srcCodec)) {
