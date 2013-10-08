@@ -17,6 +17,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.NoSuchElementException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -48,6 +49,7 @@ import ch.unibe.scg.cells.Sink;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.UnmodifiableIterator;
 import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Ints;
 import com.google.protobuf.ByteString;
@@ -341,6 +343,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		protected void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context)
 				throws IOException, InterruptedException {
+			values = new AdapterOneShotIterable<>(values); // values doesn't behave well when quizzed twice, so check.
 			decorated.reduce(key, values, context);
 		}
 
@@ -371,7 +374,10 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			this.outCodec = outCodec;
 		}
 
-		/** Format of input: key = len(rowKey) | rowKey | first colKey. value = len(colKey) | colKey | contents. */
+		/**
+		 * Format of input: key = len(rowKey) | rowKey | first colKey. value = len(colKey) | colKey | contents.
+		 * <p> Careful! values is iterable only once!
+		 */
 		@Override
 		protected void reduce(ImmutableBytesWritable key, Iterable<ImmutableBytesWritable> values, Context context)
 				throws IOException, InterruptedException {
@@ -382,7 +388,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			int keyLen = Ints.fromByteArray(lenBytes);
 			final ByteString rowKey = ByteString.copyFrom(rawKey, keyLen);
 
-			Iterable<Cell<I>> row = Iterables.transform(values, new Function<ImmutableBytesWritable, Cell<I>>() {
+			Iterable<Cell<I>> transformedRow = Iterables.transform(values, new Function<ImmutableBytesWritable, Cell<I>>() {
 				@Override public Cell<I> apply(ImmutableBytesWritable value) {
 					ByteBuffer rawContent = ByteBuffer.wrap(value.get());
 					byte[] colKeyLenBytes = new byte[Ints.BYTES];
@@ -393,6 +399,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 					return Cell.<I> make(rowKey, colKey, cellContent);
 				}
 			});
+
+			final Iterator<Cell<I>> rowIterator = new FilteringIterator<>(transformedRow.iterator());
+			Iterable<Cell<I>> row = new Iterable<Cell<I>>() {
+				@Override public Iterator<Cell<I>> iterator() {
+					return rowIterator;
+				}
+			};
 
 			runRow(Codecs.encode(makeSink(context), outCodec), Codecs.decodeRow(row, inCodec), mapper);
 		}
@@ -427,6 +440,55 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		protected void cleanup(Context context) throws IOException, InterruptedException {
 			super.cleanup(context);
 			mapper.close();
+		}
+	}
+
+	/**
+	 * Takes an Iterator and modifies it such that consecutive cells that are
+	 * equal are suppressed. Specifically, if two consecutive cells are equal to
+	 * each other, only the first is in the FilteringIterator.
+	 *
+	 * <p>
+	 * The underlying iterator never serves nulls.
+	 */
+	private static class FilteringIterator<T> extends UnmodifiableIterator<Cell<T>> {
+		private final Iterator<Cell<T>> underlying;
+		private Cell<T> next;
+
+		FilteringIterator(Iterator<Cell<T>> underlying) {
+			// set the underlying data provider, get the first value if present
+			this.underlying = underlying;
+			if (underlying.hasNext()) {
+				next = underlying.next();
+			}
+		}
+
+		@Override
+		public boolean hasNext() {
+			return next != null;
+		}
+
+		@Override
+		public Cell<T> next() {
+			if (!hasNext()) {
+				// As per Iterator interface.
+				throw new NoSuchElementException();
+			}
+
+			Cell<T> ret = next;
+
+			// Move next to next valid return value, or null if there is none.
+			while (underlying.hasNext()) {
+				Cell<T> cand = underlying.next();
+				if (!cand.equals(next)) {
+					next = cand;
+					return ret;
+				}
+			}
+
+			// We didn’t return early, there’s nothing to return next time around.
+			next = null;
+			return ret;
 		}
 	}
 
