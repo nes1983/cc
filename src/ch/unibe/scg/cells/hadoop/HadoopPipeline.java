@@ -452,7 +452,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	 * The underlying iterator never serves nulls.
 	 */
 	private static class FilteringIterator<T> extends UnmodifiableIterator<Cell<T>> {
-		private final Iterator<Cell<T>> underlying;
+		final private Iterator<Cell<T>> underlying;
+		/** The next element to be returned. If there is no next element that could be returned, null. */
 		private Cell<T> next;
 
 		FilteringIterator(Iterator<Cell<T>> underlying) {
