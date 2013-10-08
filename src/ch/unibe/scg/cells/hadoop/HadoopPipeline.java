@@ -1,6 +1,5 @@
 package ch.unibe.scg.cells.hadoop;
 
-import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.io.BaseEncoding.base64;
 
 import java.io.ByteArrayInputStream;
@@ -388,7 +387,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			int keyLen = Ints.fromByteArray(lenBytes);
 			final ByteString rowKey = ByteString.copyFrom(rawKey, keyLen);
 
-			Iterable<Cell<I>> transformedRow = Iterables.transform(values, new Function<ImmutableBytesWritable, Cell<I>>() {
+			final Iterable<Cell<I>> transformedRow = Iterables.transform(values, new Function<ImmutableBytesWritable, Cell<I>>() {
 				@Override public Cell<I> apply(ImmutableBytesWritable value) {
 					ByteBuffer rawContent = ByteBuffer.wrap(value.get());
 					byte[] colKeyLenBytes = new byte[Ints.BYTES];
@@ -400,13 +399,11 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				}
 			});
 
-			final Iterator<Cell<I>> rowIterator = new FilteringIterator<>(transformedRow.iterator());
-			Iterable<Cell<I>> row = new Iterable<Cell<I>>() {
+			final Iterable<Cell<I>> row = new Iterable<Cell<I>>() {
 				@Override public Iterator<Cell<I>> iterator() {
-					return rowIterator;
+					return new FilteringIterator<>(transformedRow.iterator());
 				}
 			};
-
 			runRow(Codecs.encode(makeSink(context), outCodec), Codecs.decodeRow(row, inCodec), mapper);
 		}
 
@@ -659,8 +656,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	/** Don't call for empty rows. */
 	private static <I, E> void runRow(Sink<E> sink, Iterable<I> row, Mapper<I, E> mapper)
 			throws IOException, InterruptedException {
-		checkArgument(!Iterables.isEmpty(row));
-
 		Iterator<I> iter = row.iterator();
 		I first = iter.next();
 		Iterable<I> gluedRow = Iterables.concat(Arrays.asList(first), new AdapterOneShotIterable<>(iter));
