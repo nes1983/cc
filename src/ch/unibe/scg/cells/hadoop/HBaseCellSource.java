@@ -115,7 +115,7 @@ public class HBaseCellSource<T> implements CellSource<T> {
 		return scan;
 	}
 
-	private static ResultScanner openScanner(HTable tab, byte[] family) {
+	private final static ResultScanner openScanner(HTable tab, byte[] family) {
 		Scan scan = makeScan();
 		scan.addFamily(family);
 		try {
