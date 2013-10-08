@@ -10,7 +10,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
-import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
@@ -60,57 +59,12 @@ public final class ScgDemo {
 		}
 	}
 
-	@Test
-	public void countWords() throws IOException, InterruptedException {
-		Module tab = new CellsModule() {
-			@Override protected void configure() {
-				installTable(
-						In.class,
-						new TypeLiteral<Act>() {},
-						ActCodec.class,
-						new HBaseStorage(),
-						new HBaseTableModule<>("richard-iii", ByteString.copyFromUtf8("f")));
-			}
-		};
-		Injector i = Guice.createInjector(new UnibeModule(), tab);
-
-		InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance();
-		Pipeline<Act, WordCount> pipe = InMemoryPipeline.make(i.getInstance(
-				Key.get(new TypeLiteral<CellSource<Act>>() {}, In.class)), eff);
-		run(pipe);
-
-		for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
-			for (WordCount wc : wcs) {
-				System.out.println(wc);
-			}
-		}
-	}
-
-	@Test
-	public void countInHadoop() throws IOException, InterruptedException {
-		Injector i = Guice.createInjector(new UnibeModule());
-		TableAdmin admin = i.getInstance(TableAdmin.class);
-		ByteString fam = ByteString.copyFromUtf8("f");
-		try(Table<Act> in = admin.existing("richard-iii", fam);
-				Table<WordCount> eff = admin.existing("richard-wordcount", fam)) {
-			run(HadoopPipeline.fromTableToTable(i.getInstance(Configuration.class), ByteString.copyFromUtf8("f"), in, eff));
-		}
-	}
-
-	void run(Pipeline<Act, WordCount> pipe) throws IOException, InterruptedException {
-		pipe
-			.influx(new ActCodec())
-			.mapper(new WordExtractor())
-			.shuffle(new WordCodec())
-			.mapAndEfflux(new Counter(), new WordCountCodec());
-	}
-
 	static class Word {
 		final String word;
 		final int act;
 		final int pos;
 
-		Word(String word, int act, int pos) {
+		public Word(String word, int act, int pos) {
 			this.word = word;
 			this.act = act;
 			this.pos = pos;
@@ -121,14 +75,13 @@ public final class ScgDemo {
 		private static final long serialVersionUID = 1L;
 
 		@Override
-		public Cell<Word> encode(Word decoded) {
+		public Cell<Word> encode(Word s) {
 			ByteBuffer col = ByteBuffer.allocate(2 * Ints.BYTES);
-			col.putInt(decoded.act);
-			col.putInt(decoded.pos);
+			col.putInt(s.act);
+			col.putInt(s.pos);
 			col.rewind();
 
-			return Cell.make(
-					ByteString.copyFromUtf8(decoded.word),
+			return Cell.make(ByteString.copyFromUtf8(s.word),
 					ByteString.copyFrom(col),
 					ByteString.EMPTY);
 		}
@@ -142,33 +95,35 @@ public final class ScgDemo {
 		}
 	}
 
-	static class WordExtractor implements Mapper<Act, Word> {
+	static class WordParser implements Mapper<Act, Word> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
-		public void close() throws IOException {}
+		public void close() throws IOException { }
 
 		@Override
-		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink) throws IOException, InterruptedException {
-			for (Act a : row) {
-				Matcher m = Pattern.compile("\\w+").matcher(a.content);
-				while (m.find()) {
-					sink.write(new Word(m.group(), first.number, m.start()));
+		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink)
+				throws IOException, InterruptedException {
+			for (Act act : row) {
+				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
+				while (matcher.find()) {
+					sink.write(new Word(matcher.group(), first.number, matcher.start()));
 				}
 			}
 		}
 	}
 
-	static class Counter implements Mapper<Word, WordCount> {
+	static class WordCounter implements Mapper<Word, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
-		public void close() throws IOException {}
+		public void close() throws IOException { }
 
 		@Override
+		// TODO: think of better name for first?!
 		public void map(Word first, OneShotIterable<Word> row, Sink<WordCount> sink) throws IOException,
 				InterruptedException {
-			int count = Iterables.size(row);
+			long count = Iterables.size(row);
 			sink.write(new WordCount(count, first.word));
 		}
 	}
@@ -193,12 +148,51 @@ public final class ScgDemo {
 
 		@Override
 		public Cell<WordCount> encode(WordCount s) {
-			return Cell.make(ByteString.copyFromUtf8(s.word), ByteString.copyFrom(Longs.toByteArray(s.count)), ByteString.EMPTY);
+			return Cell.make(ByteString.copyFromUtf8(s.word),
+					ByteString.copyFrom(Longs.toByteArray(s.count)),
+					ByteString.EMPTY);
 		}
 
 		@Override
 		public WordCount decode(Cell<WordCount> encoded) throws IOException {
-			return new WordCount(Longs.fromByteArray(encoded.getColumnKey().toByteArray()), encoded.getRowKey().toStringUtf8());
+			return new WordCount(Longs.fromByteArray(encoded.getColumnKey().toByteArray()),
+					encoded.getRowKey().toStringUtf8());
+		}
+	}
+
+	@Test
+	public void runInHadoop() throws IOException {
+		Injector i = Guice.createInjector(new UnibeModule());
+		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
+		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
+				Table<WordCount> eff = tableAdmin.existing("richard-wordcount", ByteString.copyFromUtf8("f"))) {
+			HadoopPipeline.fromTableToTable(i.getInstance(Configuration.class), in, eff);
+		}
+	}
+
+	void run(Pipeline<Act, WordCount> pipe) throws IOException, InterruptedException {
+		pipe
+			.influx(new ActCodec())
+			.map(new WordParser())
+			.shuffle(new WordCodec())
+			.mapAndEfflux(new WordCounter(), new WordCountCodec());
+	}
+
+	@Test
+	public void countWords() throws IOException, InterruptedException {
+		Injector i = Guice.createInjector(new UnibeModule());
+		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
+
+		InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance();
+		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"))) {
+			Pipeline<Act, WordCount> pipe = InMemoryPipeline.make(in.asCellSource(), eff);
+			run(pipe);
+		}
+
+		for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
+			for (WordCount wc : wcs) {
+				System.out.println(wc);
+			}
 		}
 	}
 }
