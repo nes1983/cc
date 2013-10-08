@@ -162,11 +162,10 @@ public final class ScgDemo {
 
 	@Test
 	public void runInHadoop() throws IOException {
-		Injector i = Guice.createInjector(new UnibeModule());
-		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
+		TableAdmin tableAdmin = Guice.createInjector(new UnibeModule()).getInstance(TableAdmin.class);
 		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
 				Table<WordCount> eff = tableAdmin.existing("richard-wordcount", ByteString.copyFromUtf8("f"))) {
-			HadoopPipeline.fromTableToTable(i.getInstance(Configuration.class), in, eff);
+			HadoopPipeline.fromTableToTable(Guice.createInjector(new UnibeModule()).getInstance(Configuration.class), in, eff);
 		}
 	}
 
