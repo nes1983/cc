@@ -38,9 +38,9 @@ public class PipelineRunner implements Serializable {
 	public void run(Pipeline<GitRepo, Clone> pipe) throws IOException, InterruptedException {
 		pipe
 			.influx(repoCodec)
-			.mapper(gitPopulator)
+			.map(gitPopulator)
 			.shuffle(snippet2FunctionsCodec)
-			.mapper(function2RoughCloner)
+			.map(function2RoughCloner)
 			.shuffle(function2RoughClonesCodec)
 			.mapAndEfflux(function2FineCloner, function2RoughClonesCodec);
 	}

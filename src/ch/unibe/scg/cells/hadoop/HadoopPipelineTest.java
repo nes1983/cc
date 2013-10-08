@@ -206,7 +206,7 @@ public final class HadoopPipelineTest {
 				}
 			}
 
-			run(HadoopPipeline.fromTableToTable(injector.getInstance(Configuration.class), FAMILY, in, eff));
+			run(HadoopPipeline.fromTableToTable(injector.getInstance(Configuration.class), in, eff));
 
 			try(Source<WordCount> src = injector.getInstance(Key.get(new TypeLiteral<Source<WordCount>>() {}, Eff.class))) {
 				for (Iterable<WordCount> wcs : src) {
@@ -238,7 +238,7 @@ public final class HadoopPipelineTest {
 
 	void run(Pipeline<Act, WordCount> pipeline) throws IOException, InterruptedException {
 		pipeline.influx(new ActCodec())
-			.mapper(new WordParseMapper())
+			.map(new WordParseMapper())
 			.shuffle(new WordCodec())
 			.mapAndEfflux(new WordAdderMapper(), new WordCountCodec());
 	}

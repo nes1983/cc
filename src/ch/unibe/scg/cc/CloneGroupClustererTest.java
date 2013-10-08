@@ -42,11 +42,11 @@ public final class CloneGroupClustererTest {
 		try (InMemoryShuffler<CloneGroup> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<CloneGroup>>() {}))) {
 			InMemoryPipeline.make(src, sink)
 				.influx(repoCodec)
-				.mapper(i.getInstance(GitPopulator.class))
+				.map(i.getInstance(GitPopulator.class))
 				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
-				.mapper(i.getInstance(Function2RoughCloner.class))
+				.map(i.getInstance(Function2RoughCloner.class))
 				.shuffle(i.getInstance(Function2RoughClonesCodec.class))
-				.mapper(i.getInstance(Function2FineCloner.class))
+				.map(i.getInstance(Function2FineCloner.class))
 				.shuffle(i.getInstance(Function2RoughClonesCodec.class))
 				.effluxWithOfflineMapper(i.getInstance(CloneGroupClusterer.class),
 						i.getInstance(CloneGroupCodec.class));

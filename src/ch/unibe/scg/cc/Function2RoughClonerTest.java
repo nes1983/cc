@@ -49,7 +49,7 @@ public final class Function2RoughClonerTest {
 		try (InMemoryShuffler<Clone> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
 			InMemoryPipeline.make(src, sink)
 			.influx(repoCodec)
-			.mapper(i.getInstance(GitPopulator.class))
+			.map(i.getInstance(GitPopulator.class))
 			.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
 			.mapAndEfflux(
 					i.getInstance(Function2RoughCloner.class),

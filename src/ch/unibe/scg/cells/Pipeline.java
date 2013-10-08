@@ -26,7 +26,7 @@ public interface Pipeline<IN, EFF> {
 	/** A segment that is shuffled and ready for mapping.  */
 	public static interface MappablePipeline<I, EFF> {
 		/** Set the mapper of influx {@code I} and efflux {@code E} */
-		<E> ShuffleablePipeline<E, EFF> mapper(Mapper<I, E> m);
+		<E> ShuffleablePipeline<E, EFF> map(Mapper<I, E> m);
 		/**
 		 * Run the entire pipeline, with efflux encoding {@code codec}. This ends the pipeline.
 		 * @throws IOException If several exceptions occur, any may be reported.

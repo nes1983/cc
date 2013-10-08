@@ -41,7 +41,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 		}
 
 		@Override
-		public <E> ShuffleablePipeline<E, OUT> mapper(Mapper<I, E> mapper) {
+		public <E> ShuffleablePipeline<E, OUT> map(Mapper<I, E> mapper) {
 			return new InMemoryShuffleablePipeline<>(src, srcCodec, mapper);
 		}
 

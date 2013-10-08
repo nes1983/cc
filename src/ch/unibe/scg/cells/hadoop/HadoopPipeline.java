@@ -69,11 +69,12 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		this.admin = admin;
 	}
 
+	// TODO: Delete family!!!1
 	/** @return a Pipeline that will run map/reduce jobs in the cluster. */
-	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration, ByteString family,
+	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration,
 			Table<IN> influx, Table<EFF> efflux) {
 		return new HadoopPipeline<>(configuration,
-				new TableInputConfigurer<>(influx, family),
+				new TableInputConfigurer<>(influx),
 				efflux,
 				new TableAdmin(configuration, new HTableFactory(configuration)));
 	}
@@ -92,21 +93,20 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	/** MapConfigurer for the case of table input. */
 	static class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Table<MAP_IN> src;
-		final private ByteString family;
 
-		TableInputConfigurer(Table<MAP_IN> src, ByteString family) {
+		TableInputConfigurer(Table<MAP_IN> src) {
 			this.src = src;
-			this.family = family;
 		}
 
 		@Override
 		public <MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
 				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException {
-			HadoopTableMapper<MAP_IN, MAP_OUT> hMapper = new HadoopTableMapper<>(map, mapSrcCodec, outCodec, family);
+			HadoopTableMapper<MAP_IN, MAP_OUT> hMapper
+					= new HadoopTableMapper<>(map, mapSrcCodec, outCodec, src.getFamilyName());
 			writeObjectToConf(job.getConfiguration(), hMapper);
 
 			Scan scan = HBaseCellSource.makeScan();
-			scan.addFamily(family.toByteArray());
+			scan.addFamily(src.getFamilyName().toByteArray());
 
 			TableMapReduceUtil.initTableMapperJob(src.getTableName(), // input table
 					scan, // Scan instance to control CF and attribute selection
@@ -208,7 +208,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<I, E> m) {
+		public <E> ShuffleablePipeline<E, EFF> map(Mapper<I, E> m) {
 			return new HadoopShuffleablePipelineAfterMap<>(mapConfigurer, srcCodec, m);
 		}
 
@@ -239,7 +239,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public <E> ShuffleablePipeline<E, EFF> mapper(Mapper<MAP_OUT, E> m) {
+		public <E> ShuffleablePipeline<E, EFF> map(Mapper<MAP_OUT, E> m) {
 			return new HadoopShuffleablePipelineAfterReduce<>(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, m);
 		}
 
@@ -302,7 +302,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 			// This will delete temporary tables if needed.
 			mapConfigurer.close();
 
-			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target, HBaseStorage.INDEX_FAMILY), codec);
+			return new HadoopMappablePipeline<>(new TableInputConfigurer<>(target), codec);
 		}
 	}
 
