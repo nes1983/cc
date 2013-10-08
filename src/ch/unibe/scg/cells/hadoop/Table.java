@@ -2,6 +2,8 @@ package ch.unibe.scg.cells.hadoop;
 
 import java.io.Closeable;
 
+import ch.unibe.scg.cells.CellSource;
+
 import com.google.protobuf.ByteString;
 
 /**
@@ -18,4 +20,7 @@ public interface Table<T> extends Closeable {
 	 * modeled as two cells tables.
 	 */
 	ByteString getFamilyName();
+
+	/** @return a CellSource that reads all rows from this table. */
+	CellSource<T> asCellSource();
 }

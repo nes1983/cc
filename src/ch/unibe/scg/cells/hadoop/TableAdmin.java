@@ -12,6 +12,8 @@ import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.io.hfile.Compression.Algorithm;
 
+import ch.unibe.scg.cells.CellSource;
+
 import com.google.common.base.Charsets;
 import com.google.common.io.BaseEncoding;
 import com.google.protobuf.ByteString;
@@ -68,6 +70,11 @@ public class TableAdmin {
 			public ByteString getFamilyName() {
 				return family;
 			}
+
+			@Override
+			public CellSource<T> asCellSource() {
+				return cellSourceToTable(this);
+			}
 		};
 	}
 
@@ -93,19 +100,12 @@ public class TableAdmin {
 			@Override public ByteString getFamilyName() {
 				return family;
 			}
+
+			@Override
+			public CellSource<T> asCellSource() {
+				return cellSourceToTable(this);
+			}
 		};
-	}
-
-	private HTable createHTable(String tableName, ByteString family) throws IOException {
-		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
-			HTableDescriptor td = new HTableDescriptor(tableName);
-			td.addFamily(new HColumnDescriptor(family.toByteArray()).setCompressionType(Algorithm.SNAPPY));
-			td.addFamily(new HColumnDescriptor(HBaseStorage.INDEX_FAMILY.toByteArray()));
-
-			admin.createTable(td);
-		}
-
-		return hTableFactory.make(tableName);
 	}
 
 	<T> Table<T> existing(final String tabName, final ByteString famName) {
@@ -124,6 +124,29 @@ public class TableAdmin {
 			public ByteString getFamilyName() {
 				return famName;
 			}
+
+			@Override
+			public CellSource<T> asCellSource() {
+				return cellSourceToTable(this);
+			}
 		};
+	}
+
+	private HTable createHTable(String tableName, ByteString family) throws IOException {
+		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
+			HTableDescriptor td = new HTableDescriptor(tableName);
+			td.addFamily(new HColumnDescriptor(family.toByteArray()).setCompressionType(Algorithm.SNAPPY));
+			td.addFamily(new HColumnDescriptor(HBaseStorage.INDEX_FAMILY.toByteArray()));
+
+			admin.createTable(td);
+		}
+
+		return hTableFactory.make(tableName);
+	}
+
+	private <T> CellSource<T> cellSourceToTable(Table<T> tab) {
+		SerializableHTable hTable
+				= new SerializableHTable(hTableFactory.make(tab.getTableName()), hTableFactory);
+		return new HBaseCellSource<>(tab.getFamilyName(), hTable);
 	}
 }
