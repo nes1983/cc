@@ -1,4 +1,4 @@
-Note: we are currently using protobuf 2.5.0
+Note: we are currently using protobuf 2.4.0a
 
 # Setup (on a recentish OSX) #
 
@@ -11,7 +11,7 @@ Note: we are currently using protobuf 2.5.0
 
  # Setup (on MS Windows) #
 
- 1. Install the Google's protocol buffers binaries: https://protobuf.googlecode.com/files/protoc-2.5.0-win32.zip
+ 1. Install the Google's protocol buffers binaries: https://protobuf.googlecode.com
  2. Unpack the archive and put protoc.exe somewhere in PATH
  3. Run run-protoc-win.sh to generate protobuf's classes
  Steps 4-6 are the same as for OSX
