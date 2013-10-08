@@ -61,7 +61,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	final private Table<EFF> efflux;
 	final private TableAdmin admin;
 
-	HadoopPipeline(Configuration baseConfiguration, MapConfigurer<IN> firstMapConfigurer, Table<EFF> efflux,
+	private HadoopPipeline(Configuration baseConfiguration, MapConfigurer<IN> firstMapConfigurer, Table<EFF> efflux,
 			TableAdmin admin) {
 		this.baseConfiguration = baseConfiguration;
 		this.firstMapConfigurer = firstMapConfigurer;
@@ -69,7 +69,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		this.admin = admin;
 	}
 
-	// TODO: Delete family!!!1
 	/** @return a Pipeline that will run map/reduce jobs in the cluster. */
 	public static <IN, EFF> HadoopPipeline<IN, EFF> fromTableToTable(Configuration configuration,
 			Table<IN> influx, Table<EFF> efflux) {
