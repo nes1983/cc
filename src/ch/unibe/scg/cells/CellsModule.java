@@ -144,13 +144,6 @@ public abstract class CellsModule extends AbstractModule {
 				Key<LookupTable<T>> exposedLookup = (Key<LookupTable<T>>) Key.get(lookup, annotation);
 				bind(exposedLookup).to((Key<? extends LookupTable<T>>) Key.get(lookup));
 				expose(exposedLookup);
-
-				Key<CellSource<T>> cellSource = (Key<CellSource<T>>)
-						Key.get(Types.newParameterizedType(CellSource.class, lit.getType()), annotation);
-				bind(cellSource).to((TypeLiteral) new TypeLiteral<CellSource<Void>>() {}); // TODO: dirty hack.
-				expose(cellSource);
-
-				// TODO: Expose CellSink, CellLookup.
 			}
 		});
 	}
