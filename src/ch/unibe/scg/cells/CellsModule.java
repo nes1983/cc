@@ -98,13 +98,12 @@ public abstract class CellsModule extends AbstractModule {
 	 * <p>
 	 * Once you've got that, you can simply ask for the proper Sink, Source, or LookupTable
 	 * to be injected. Example:
-	 * <pre>
-	 * {@code
+	 * <pre> {@code
 	 * @Inject
 	 * MyConstructor(@In LookupTable<Act> actLookup, @Eff Sink<WordCount>) {
 	 *    …
 	 * }
-	 * </pre>
+	 * } </pre>
 	 *
 	 * @param tableModule The information needed to initialize this specific table.
 	 * 	That's things like table name and column family, for the case of HBase tables.
