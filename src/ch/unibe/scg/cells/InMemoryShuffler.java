@@ -13,7 +13,26 @@ import com.google.common.collect.Iterators;
 import com.google.common.collect.Ordering;
 import com.google.protobuf.ByteString;
 
-/** For running in memory, acts as both as sink and source */
+/**
+ * For running in memory, acts as both as sink and source.
+ *
+ * <p>
+ * A shuffler naturally has three states:
+ * <ol>
+ * <li>Writable (initially)
+ * <li>Closing (during execution of close)
+ * <li>Readable (after close completes)
+ * </ol>
+ *
+ * <p>
+ * It is never a good idea or safe to read from a shuffler while it is still writable.
+ * This is especially true in a multi-threading environment.
+ *
+ * <p>
+ * This class is thread-safe in the sense that while it is writable, concurrent
+ * writes are legal. However, during Closing, it may neither be read nor written to.
+ * During Readable, writes are forbidden. Concurrent reads are safe.
+ */
 public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T> {
 	final private static long serialVersionUID = 1L;
 
@@ -64,6 +83,7 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		return ret;
 	}
 
+	/** This operation is NOT threadsafe. */
 	@Override
 	public void close() {
 		// Sort store, discard duplicates, and make immutable.
@@ -77,11 +97,16 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		colIndex = Ordering.natural().immutableSortedCopy(colIndexBuilder);
 	}
 
+	/**
+	 * Should be called only in state Writable. Concurrent writes are allowed,
+	 * but may not be interspersed with reads or closes. See class comment.
+	 */
 	@Override
-	public void write(Cell<T> cell) {
+	public synchronized void write(Cell<T> cell) {
 		store.add(cell);
 	}
 
+	/** May only be called in state Readable. This is thread-safe with other reads. See class comment. */
 	@Override
 	public Iterator<Iterable<Cell<T>>> iterator() {
 		assert Ordering.natural().isOrdered(store) : "Someone forgot to close the sink.";
@@ -112,6 +137,7 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		return ret.build().iterator();
 	}
 
+	/** Only available in state Readable. This operation is threadsafe -- but not during writes. See class comment. */
 	@Override
 	public Iterable<Cell<T>> readRow(ByteString rowKey) {
 		assert Ordering.natural().isOrdered(store) : "Someone forgot to close the sink.";
@@ -141,6 +167,7 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 				ByteString.EMPTY)));
 	}
 
+	/** This operation is threadsafe -- but not during writes. See class comment. */
 	@Override
 	public Iterable<Cell<T>> readColumn(ByteString columnKey) {
 		int startPos = indexStartPos(columnKey);
