@@ -1,9 +1,18 @@
 package ch.unibe.scg.cells;
 
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
 import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 import javax.inject.Inject;
+import javax.inject.Qualifier;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.Eff;
@@ -46,7 +55,32 @@ public final class CellsModuleTest {
 		i.getInstance(InjectMe.class);
 		// TODO: Check if the right table name was injected.
 	}
+	
+	/** Checks, if counter injection works at all **/
+	@Test
+	@Ignore
+	// TODO: Make pass
+	public void testCounterInjection() {	
+		Injector i = Guice.createInjector(new CellsModule() {
+			@Override protected void configure() {
+				installCounter(IOExceptions.class);
+			}
+		});
+		
+		i.getInstance(InjectMeWithCounter.class);
+	}
 
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	private static @interface IOExceptions {}
+	
+	private static class InjectMeWithCounter {
+		@SuppressWarnings("unused") // We just check if Guice could inject at all.
+		@Inject
+		InjectMeWithCounter(@IOExceptions Counter counter) {}
+	}
+	
 	private static class InjectMe {
 		@SuppressWarnings("unused") // We just check if Guice could inject at all.
 		@Inject
