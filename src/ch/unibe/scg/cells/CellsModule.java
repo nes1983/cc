@@ -157,4 +157,20 @@ public abstract class CellsModule extends AbstractModule {
 			}
 		});
 	}
+
+	/** Installs a counter into the module, so that the following will work for an annotation @IOExceptions:
+	 *
+	 * <pre> {@code
+	 * @Inject
+	 * MyConstructor(@IOExceptions Counter ioExceptionsCounter) {
+	 *   …
+	 * }
+	 * }</pre>
+	 *
+	 * @param annotation
+	 */
+	@SuppressWarnings("javadoc") // See above.
+	protected final void installCounter(final Class<? extends Annotation> annotation) {
+		throw new RuntimeException("Not yet implemented.");
+	}
 }
