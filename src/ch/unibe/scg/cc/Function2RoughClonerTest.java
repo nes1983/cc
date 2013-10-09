@@ -68,7 +68,7 @@ public final class Function2RoughClonerTest {
 						break;
 					}
 				}
-				assert aaa0 != null; // Null analysis insists.
+				assert aaa0 != null : popularPartitions.toString(); // Null analysis insists.
 				assertNotNull(aaa0);
 
 				Set<String> snippetHashes = new HashSet<>();
