@@ -166,8 +166,6 @@ public abstract class CellsModule extends AbstractModule {
 	 *   …
 	 * }
 	 * }</pre>
-	 *
-	 * @param annotation
 	 */
 	@SuppressWarnings("javadoc") // See above.
 	protected final void installCounter(final Class<? extends Annotation> annotation) {
