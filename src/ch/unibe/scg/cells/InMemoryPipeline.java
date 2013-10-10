@@ -2,11 +2,7 @@ package ch.unibe.scg.cells;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.concurrent.ExecutorService;
@@ -120,7 +116,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				@Override protected Mapper<I, E> initialValue() {
 					Mapper<I, E> cloned;
 					try {
-						cloned = cloneMapper(mapper);
+						cloned = ShallowSerializingCopy.clone(mapper);
 					} catch (IOException e) {
 						exceptionHolder.e = e;
 						System.err.println("Suppressed exception:");
@@ -177,19 +173,6 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 
 				Thread.sleep(70);
 			}
-		}
-	}
-
-	/** Use serialization to clone a mapper. */
-	private static <I, E> Mapper<I, E> cloneMapper(Mapper<I, E> in) throws IOException {
-		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
-		try (ObjectOutputStream out = new ObjectOutputStream(bOut)) {
-			out.writeObject(in);
-		}
-		try {
-			return (Mapper<I, E>) new ObjectInputStream(new ByteArrayInputStream(bOut.toByteArray())).readObject();
-		} catch (ClassNotFoundException e) {
-			throw new AssertionError("We just serialized this object a minute ago. The class cannot be missing", e);
 		}
 	}
 }

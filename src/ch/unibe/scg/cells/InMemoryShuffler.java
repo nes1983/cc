@@ -32,6 +32,18 @@ import com.google.protobuf.ByteString;
  * This class is thread-safe in the sense that while it is writable, concurrent
  * writes are legal. However, during Closing, it may neither be read nor written to.
  * During Readable, writes are forbidden. Concurrent reads are safe.
+ *
+ * <p>
+ * This class is {@link java.io.Serializable}, but there's a caveat.
+ * Since an InMemoryShuffler is meant to be used locally and in memory, it cannot meaningfully
+ * be shipped from one machine to another.
+ * It is legal for a Mapper to hold on to a InMemoryShuffler -- so long as that mapper
+ * is used locally only.
+ *
+ * <p>
+ * Cells then serializes this classes using {@link ShallowSerializingCopy}.
+ * However, if serialization is attempted using a classical {@link java.io.ObjectOutputStream},
+ * it will throw a {@link UnsupportedOperationException}.
  */
 public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T> {
 	final private static long serialVersionUID = 1L;
@@ -81,6 +93,10 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		}
 		ret.close();
 		return ret;
+	}
+
+	private Object writeReplace() {
+		return new ShallowSerializingCopy.SerializableLiveObject(this);
 	}
 
 	/** This operation is NOT threadsafe. */
