@@ -63,7 +63,7 @@ public final class CellsModuleTest {
 	public void testCounterInjection() {	
 		Injector i = Guice.createInjector(new CellsModule() {
 			@Override protected void configure() {
-				installCounter(IOExceptions.class);
+				installCounter(IOExceptions.class, new LocalCounterModule());
 			}
 		});
 		

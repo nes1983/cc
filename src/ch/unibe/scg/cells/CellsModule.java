@@ -10,6 +10,8 @@ import java.lang.reflect.ParameterizedType;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
+import ch.unibe.scg.cells.CounterModule.CounterName;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.Key;
 import com.google.inject.PrivateModule;
@@ -168,7 +170,17 @@ public abstract class CellsModule extends AbstractModule {
 	 * }</pre>
 	 */
 	@SuppressWarnings("javadoc") // See above.
-	protected final void installCounter(final Class<? extends Annotation> annotation) {
-		throw new RuntimeException("Not yet implemented.");
+	protected final void installCounter(final Class<? extends Annotation> annotation, final  CounterModule pipelineModule) {
+		checkNotNull(annotation);
+		checkNotNull(pipelineModule);
+
+		install(new PrivateModule() {
+			@Override protected void configure() {
+				install(pipelineModule);
+
+				bindConstant().annotatedWith(CounterName.class).to(annotation.getName());
+				bind(Counter.class).annotatedWith(annotation).to(Counter.class);
+			}
+		});
 	}
 }
