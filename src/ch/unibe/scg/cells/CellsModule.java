@@ -180,6 +180,7 @@ public abstract class CellsModule extends AbstractModule {
 
 				bindConstant().annotatedWith(CounterName.class).to(annotation.getName());
 				bind(Counter.class).annotatedWith(annotation).to(Counter.class);
+				expose(Counter.class).annotatedWith(annotation);
 			}
 		});
 	}
