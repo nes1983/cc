@@ -8,9 +8,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
-import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * An ObjectOutputStream that allows making shallow copies of objects.
@@ -70,7 +70,7 @@ class ShallowSerializingCopy {
 	}
 
 	private static class LiveObjectOutputStream extends ObjectOutputStream {
-		final private SecureRandom random = new SecureRandom();
+		final private static AtomicLong nextId = new AtomicLong();
 		final private Map<Long, Object> liveObjects;
 
 
@@ -80,7 +80,7 @@ class ShallowSerializingCopy {
 		}
 
 		void writeLiveObject(Object o) throws IOException {
-			long key = random.nextLong();
+			long key = nextId.incrementAndGet();
 			writeLong(key);
 			liveObjects.put(key, o);
 		}
