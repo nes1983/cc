@@ -4,8 +4,9 @@ import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.junit.Assert.assertThat;
 
 import java.io.IOException;
 import java.lang.annotation.Retention;
@@ -66,10 +67,11 @@ public final class CellsModuleTest {
 			}
 		});
 
-		InjectedCounterHolder counterSource = i.getInstance(InjectedCounterHolder.class);
-		Counter c = counterSource.counter;
-		assertThat(c, instanceOf(LocalCounter.class));
-		// TODO: increment & check value with toString();
+		Counter counter = i.getInstance(InjectedCounterHolder.class).counter;
+		counter.increment(42L);
+
+		assertThat(counter, instanceOf(LocalCounter.class));
+		assertThat(counter.toString(), equalTo("ch.unibe.scg.cells.CellsModuleTest$IOExceptions: 42"));
 	}
 
 	@Qualifier
