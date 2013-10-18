@@ -61,7 +61,7 @@ public final class CellsModuleTest {
 	/** Checks, if counter injection works at all **/
 	@Test
 	public void testCounterInjection() {
-		Injector i = Guice.createInjector(new CellsModule() {
+		Injector i = Guice.createInjector(new LocalExecutionModule(), new CellsModule() {
 			@Override protected void configure() {
 				installCounter(IOExceptions.class, new LocalCounterModule());
 			}

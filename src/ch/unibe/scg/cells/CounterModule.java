@@ -23,4 +23,10 @@ public interface CounterModule extends Module {
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	public static @interface CounterName {}
+
+	/** The backing AtomicLong to be used in {@link Counter}s. */
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface CounterLong {}
 }

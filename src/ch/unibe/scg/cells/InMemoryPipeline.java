@@ -10,6 +10,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import javax.inject.Inject;
+
 import com.google.common.base.Throwables;
 import com.google.common.collect.Iterables;
 import com.google.common.io.Closer;
@@ -18,6 +20,10 @@ import com.google.common.io.Closer;
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
+
+	// TODO: Unacceptable. Use constructor injection.
+	@Inject
+	PipelineStageScope scope;
 
 	/** Incredibly hacky way of moving an exception from one thread to another. */
 	private static class ExceptionHolder {
@@ -99,7 +105,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	 * The threadpool gets shut down on exceptions, too.
 	 */
 	// TODO: Perhaps report all exceptions as suppressed?
-	private static <I, E> void run(CellSource<I> src, Codec<I> srcCodec, final Mapper<I, E> mapper,
+	private <I, E> void run(CellSource<I> src, Codec<I> srcCodec, final Mapper<I, E> mapper,
 			final CellSink<E> sink, final Codec<E> sinkCodec) throws IOException, InterruptedException {
 
 		try(final Closer mapperCloser = Closer.create()) {
@@ -172,6 +178,10 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				}
 
 				Thread.sleep(70);
+			}
+		} finally {
+			if (scope != null) {
+				scope.exit();
 			}
 		}
 	}
