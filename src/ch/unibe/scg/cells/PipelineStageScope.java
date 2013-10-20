@@ -24,6 +24,7 @@ class PipelineStageScope implements Scope {
 		}
 	}
 
+	/** The produced providers are threadsafe. */
 	@Override
 	public <T> Provider<T> scope(Key<T> key, Provider<T> unscoped) {
 		ScopedProvider<T> ret = new ScopedProvider<>(key, unscoped);
