@@ -110,17 +110,20 @@ public final class LocalCounterTest {
 
 		try(InMemoryShuffler<Integer> eff = InMemoryShuffler.getInstance()) {
 			InMemoryPipeline<Integer, Integer> pipe
-					= InMemoryPipeline.make(InMemoryShuffler.copyFrom(generateSequence(1000), new IntegerCodec()), eff);
-			// TODO: Fix next line.
-			inj.injectMembers(pipe);
+					= inj.getInstance(InMemoryPipeline.Builder.class)
+							.make(InMemoryShuffler.copyFrom(generateSequence(1000),
+									new IntegerCodec()), eff);
+
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
 			pipe.influx(new IntegerCodec())
 					.map(mapper)
 					.shuffle(new IntegerCodec())
 					.mapAndEfflux(mapper, new IntegerCodec());
 
-			assertThat(mapper.finalIoCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
-			assertThat(mapper.finalUsrCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
+			assertThat(mapper.finalIoCount,
+					equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
+			assertThat(mapper.finalUsrCount,
+					equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
 		}
 	}
 

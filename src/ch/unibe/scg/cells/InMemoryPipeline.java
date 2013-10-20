@@ -20,26 +20,35 @@ import com.google.common.io.Closer;
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
-
-	// TODO: Unacceptable. Use constructor injection.
-	@Inject
-	PipelineStageScope scope;
+	final private PipelineStageScope scope;
 
 	/** Incredibly hacky way of moving an exception from one thread to another. */
 	private static class ExceptionHolder {
 		volatile Exception e; // volatile because it can be written and read from different threads.
 	}
 
-	private InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) { // Don't subclass.
+	@Inject
+	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink, PipelineStageScope scope) { // Don't subclass.
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
+		this.scope = scope;
 	}
 
-	/** Create a pipeline. No parameters are allowed to be null. */
-	public static <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
-		checkNotNull(pipeSrc);
-		checkNotNull(pipeSink);
-		return new InMemoryPipeline<>(pipeSrc, pipeSink);
+	/** A builder for a {@link InMemoryPipeline}. */
+	public static class Builder {
+		final private PipelineStageScope scope;
+
+		@Inject
+		Builder(PipelineStageScope scope) {
+			this.scope = scope;
+		}
+
+		/** Create a pipeline. No parameters are allowed to be null. */
+		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
+			checkNotNull(pipeSrc);
+			checkNotNull(pipeSink);
+			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope);
+		}
 	}
 
 	@Override

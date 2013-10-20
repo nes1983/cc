@@ -26,6 +26,7 @@ import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
+import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
@@ -224,7 +225,9 @@ public final class HadoopPipelineTest {
 	public void testInMemoryWordCount() throws IOException, InterruptedException {
 		try(InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance()) {
 			InMemoryPipeline<Act, WordCount> pipe
-					= InMemoryPipeline.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()), eff);
+					= Guice.createInjector(new LocalExecutionModule())
+							.getInstance(InMemoryPipeline.Builder.class)
+						.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()), eff);
 			run(pipe);
 			for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
 				for (WordCount wc : wcs) {

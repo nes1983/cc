@@ -19,6 +19,7 @@ import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Source;
 
 import com.google.common.collect.Iterables;
@@ -33,14 +34,15 @@ public final class CloneGroupClustererTest {
 	/** Test {@link CloneGroupClusterer#map} */
 	@Test
 	public void testMap() throws IOException, InterruptedException {
-		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(new InMemoryStorage()), new JavaModule()).with(new TestModule()));
+		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
+				new JavaModule()).with(new TestModule()), new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
-		try (InMemoryShuffler<CloneGroup> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<CloneGroup>>() {}))) {
-			InMemoryPipeline.make(src, sink)
+		try (InMemoryShuffler<CloneGroup> sink = i.getInstance(
+				Key.get(new TypeLiteral<InMemoryShuffler<CloneGroup>>() {}))) {
+			i.getInstance(InMemoryPipeline.Builder.class).make(src, sink)
 				.influx(repoCodec)
 				.map(i.getInstance(GitPopulator.class))
 				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))

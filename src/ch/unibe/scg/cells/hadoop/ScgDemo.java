@@ -15,6 +15,7 @@ import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
+import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
@@ -179,12 +180,13 @@ public final class ScgDemo {
 
 	@Test
 	public void countWords() throws IOException, InterruptedException {
-		Injector i = Guice.createInjector(new UnibeModule());
+		Injector i = Guice.createInjector(new UnibeModule(), new LocalExecutionModule());
 		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
 
 		InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance();
 		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"))) {
-			Pipeline<Act, WordCount> pipe = InMemoryPipeline.make(in.asCellSource(), eff);
+			Pipeline<Act, WordCount> pipe
+					= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource(), eff);
 			run(pipe);
 		}
 

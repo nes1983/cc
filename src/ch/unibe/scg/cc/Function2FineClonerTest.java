@@ -25,6 +25,7 @@ import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Source;
 
 import com.google.inject.Guice;
@@ -39,7 +40,7 @@ public final class Function2FineClonerTest {
 	@Test
 	public void testMap() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
-				new JavaModule()).with(new TestModule()));
+				new JavaModule()).with(new TestModule()), new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
@@ -47,7 +48,8 @@ public final class Function2FineClonerTest {
 		PipelineRunner runner = i.getInstance(PipelineRunner.class);
 		try (InMemoryShuffler<Clone> shuffler =
 				i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
-			InMemoryPipeline<GitRepo, Clone> pipe = InMemoryPipeline.make(src, shuffler);
+			InMemoryPipeline<GitRepo, Clone> pipe
+					= i.getInstance(InMemoryPipeline.Builder.class).make(src, shuffler);
 			runner.run(pipe);
 			shuffler.close();
 
