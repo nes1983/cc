@@ -5,7 +5,6 @@ import static com.google.common.io.BaseEncoding.base64;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.Closeable;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -28,7 +27,6 @@ import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.hbase.mapreduce.TableMapper;
 import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.BytesWritable;
-import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 import org.apache.hadoop.mapreduce.Job;
@@ -79,6 +77,18 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				new TableAdmin(configuration, new HTableFactory(configuration)));
 	}
 
+	/** @return a Pipeline that reads from HDFS, but writes to an HBase table. */
+	public static <IN, EFF> HadoopPipeline<IN, EFF> fromHadoopToTable(Configuration configuration,
+			Class<? extends FileInputFormat<ImmutableBytesWritable,
+					ImmutableBytesWritable>> inputFormat,
+			Path inputPath,
+			Table<EFF> efflux) {
+		return new HadoopPipeline<>(configuration,
+				new HadoopInputConfigurer<IN>(inputFormat, inputPath),
+				efflux,
+				new TableAdmin(configuration, new HTableFactory(configuration)));
+	}
+
 	@Override
 	public MappablePipeline<IN, EFF> influx(Codec<IN> c) {
 		return new HadoopMappablePipeline<>(firstMapConfigurer, c);
@@ -91,7 +101,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** MapConfigurer for the case of table input. */
-	static class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+	private static class TableInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Table<MAP_IN> src;
 
 		TableInputConfigurer(Table<MAP_IN> src) {
@@ -123,18 +133,15 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** MapConfigurer for the case of HDFS input. */
-	class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
-		final private Class<? extends WritableComparable<?>> outputKey;
-		final private Class<? extends Writable> outputValue;
-		final private Class<? extends FileInputFormat<ImmutableBytesWritable, ImmutableBytesWritable>> inputFormat;
+	private static class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+		final private Class<? extends FileInputFormat<ImmutableBytesWritable,
+				ImmutableBytesWritable>> inputFormat;
 		final private Path inputPath;
 
-		HadoopInputConfigurer(Class<? extends WritableComparable<?>> outputKey,
-				Class<? extends Writable> outputValue,
-				Class<? extends FileInputFormat<ImmutableBytesWritable, ImmutableBytesWritable>> inputFormat,
+		HadoopInputConfigurer(
+				Class<? extends FileInputFormat<ImmutableBytesWritable,
+						ImmutableBytesWritable>> inputFormat,
 				Path inputPath) {
-			this.outputKey = outputKey;
-			this.outputValue = outputValue;
 			this.inputFormat = inputFormat;
 			this.inputPath = inputPath;
 		}
@@ -142,11 +149,14 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		public <MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec, Mapper<MAP_IN, MAP_OUT> map,
 				Codec<MAP_OUT> outCodec) throws IOException {
-			job.setInputFormatClass(inputFormat);
-			job.setMapperClass(HadoopMapper.class);
+			HadoopMapper<MAP_IN, MAP_OUT> hMapper = new HadoopMapper<>(map, mapSrcCodec, outCodec);
+			writeObjectToConf(job.getConfiguration(), hMapper);
 
-			job.setMapOutputKeyClass(outputKey);
-			job.setMapOutputValueClass(outputValue);
+			job.setInputFormatClass(inputFormat);
+			job.setMapperClass(DecoratorHadoopMapper.class);
+
+			job.setMapOutputKeyClass(ImmutableBytesWritable.class);
+			job.setMapOutputValueClass(ImmutableBytesWritable.class);
 			FileInputFormat.addInputPath(job, inputPath);
 		}
 
@@ -157,8 +167,12 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** Hadoop mapper for jobs that don't read from a table. For table reading jobs, see {@link HadoopTableMapper} */
-	static class HadoopMapper<KEYIN extends Writable, VALUEIN extends Writable, I, E>
-			extends org.apache.hadoop.mapreduce.Mapper<KEYIN, VALUEIN, ImmutableBytesWritable, ImmutableBytesWritable> {
+	private static class HadoopMapper<I, E> extends org.apache.hadoop.mapreduce.Mapper<
+			ImmutableBytesWritable, ImmutableBytesWritable, // KEYIN, KEYOUT
+			ImmutableBytesWritable, ImmutableBytesWritable>  // VALUEIN, VALUEOUT
+			implements Serializable {
+		private static final long serialVersionUID = 1L;
+
 		final private Mapper<I, E> underlying;
 		final private Codec<I> inputCodec;
 		final private Codec<E> outputCodec;
@@ -170,18 +184,16 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		protected void map(KEYIN key, VALUEIN value, Context context) throws IOException, InterruptedException {
-			ByteArrayOutputStream keyStream = new ByteArrayOutputStream();
-			key.write(new DataOutputStream(keyStream));
-			ByteString cellKey = ByteString.copyFrom(keyStream.toByteArray());
-
-			ByteArrayOutputStream valueStream = new ByteArrayOutputStream();
-			key.write(new DataOutputStream(valueStream));
-			ByteString cellValue = ByteString.copyFrom(valueStream.toByteArray());
-
-			I decoded = inputCodec.decode(Cell.<I> make(cellKey, cellKey, cellValue));
-			try (Sink<E> sink = Codecs.encode(HadoopPipeline.<E, KEYIN, VALUEIN> makeMapperSink(context),
+		protected void map(ImmutableBytesWritable key, ImmutableBytesWritable value,
+				Context context) throws IOException, InterruptedException {
+			Cell<I> cell = Cell.<I> make(ByteString.copyFrom(key.get()),
+					ByteString.copyFrom(key.get()),
+					ByteString.copyFrom(value.get()));
+			I decoded = inputCodec.decode(cell);
+			try (Sink<E> sink = Codecs.encode(
+					HadoopPipeline.<E, ImmutableBytesWritable, ImmutableBytesWritable> makeMapperSink(context),
 					outputCodec)) {
+				// TODO: maybe use a specific oneshotiterable?
 				underlying.map(decoded, new AdapterOneShotIterable<>(Arrays.asList(decoded)), sink);
 			}
 		}
@@ -195,6 +207,30 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		protected void cleanup(Context context) throws IOException, InterruptedException {
 			underlying.close();
+		}
+	}
+
+	private static class DecoratorHadoopMapper<I, E> extends org.apache.hadoop.mapreduce.Mapper<
+			ImmutableBytesWritable, ImmutableBytesWritable, // KEYIN, VALUEIN
+			ImmutableBytesWritable, ImmutableBytesWritable> { //KEYOUT, VALUEOUT
+		private HadoopMapper<I, E> decorated;
+
+		@Override
+		protected void map(ImmutableBytesWritable key, ImmutableBytesWritable value,
+				Context context) throws IOException, InterruptedException {
+			decorated.map(key, value, context);
+		}
+
+		@SuppressWarnings("unchecked") // Unavoidable, since class literals cannot be generically typed.
+		@Override
+		protected void setup(Context context) throws IOException, InterruptedException {
+			decorated = readObjectFromConf(context.getConfiguration(), HadoopMapper.class);
+			decorated.setup(context);
+		}
+
+		@Override
+		protected void cleanup(Context context) throws IOException, InterruptedException {
+			decorated.cleanup(context);
 		}
 	}
 
