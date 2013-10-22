@@ -133,7 +133,7 @@ public final class HadoopPipelineHDFSInputTest {
 	}
 
 	@Test
-	public void test() throws IOException, InterruptedException {
+	public void testReadBigSCript() throws IOException, InterruptedException {
 		Injector injector = Guice.createInjector(new UnibeModule());
 
 		int cnt = 0;
