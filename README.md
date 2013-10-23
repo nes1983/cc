@@ -9,7 +9,7 @@ Note: we are currently using protobuf 2.4.0a
  5. Run the DataFetchPipeline.rb in scripts/
  6. Look at build.xml or the pipeline stages available.
 
- # Setup (on MS Windows) #
+# Setup (on MS Windows) #
 
  1. Install the Google's protocol buffers binaries: https://protobuf.googlecode.com
  2. Unpack the archive and put protoc.exe somewhere in PATH
@@ -24,15 +24,27 @@ To check what's inside the generated HAR file:
 - [Hadoop Cluster](http://haddock:8088)
 - [DFS Health](http://haddock:50070)
 - [HBase Master](http://leela:60010)
-	
+
+# Running hadoop tests with junit outside the unibe network #
+
+ 1. Make sure that you have a public ssh key. If you don't, follow this guide: https://help.github.com/articles/generating-ssh-keys
+ 2. Append your public ssh key to `deploy@haddock.unibe.ch ~/.ssh/authorized_keys`
+ 3. Make sure that you can `ssh haddock.unibe.ch -l deploy` without being asked a password.
+ 4. Create a class with main method that calls a desired test.
+ 5. Execute `ant jar -DmainClass="YourClassName"`
+ 6. Run your test with `./ant.sh uploadJar -DclassArgument=""`\. In case of unsuccessful run you will get junit assertion in a console.
+
+# To kill a hang job #
+	hadoop job -kill job_<your_job_id>
+
 # To download the data #
 
 Copy the local scripts across the cluster:
-	
+
 	./scripts/deploy_scripts.sh
 
 Run the DataFetchPipeline:
-	
+
 	ssh leela ./scripts/ohloh/DataFetchPipeline.rb
 
 Or locally, for testing.:

@@ -210,13 +210,16 @@
 	<target depends="build-subprojects,build-project" name="build"/>
 	<target name="build-subprojects"/>
 	<target depends="init" name="build-project">
+		<!--
+		If you are on Windows, comment the next line. 
+		Before running this script run ./run-protoc-win.sh manually 
+		-->
 		<exec logError="yes" executable="./run-protoc.sh"/>
 		<javac includeantruntime="false"  debug="true" debuglevel="${debuglevel}"
 			destdir="bin" source="${source}" target="${target}">
 			<src path="src"/>
 			<src path="src-gen"/>
 			<classpath refid=".classpath"/>
-			<exclude name="**/*Test.java"/>
 		</javac>
 	</target>
 
