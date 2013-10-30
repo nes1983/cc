@@ -6,12 +6,10 @@ import static com.google.inject.util.Types.newParameterizedTypeWithOwner;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.ParameterizedType;
-import java.util.concurrent.atomic.AtomicLong;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import ch.unibe.scg.cells.CounterModule.CounterLong;
 import ch.unibe.scg.cells.CounterModule.CounterName;
 
 import com.google.inject.AbstractModule;
@@ -182,10 +180,6 @@ public abstract class CellsModule extends AbstractModule {
 
 				bindConstant().annotatedWith(CounterName.class).to(annotation.getName());
 				bind(Counter.class).annotatedWith(annotation).to(Counter.class);
-				bind(AtomicLong.class)
-						.annotatedWith(CounterLong.class)
-						.to(AtomicLong.class)
-						.in(PipelineStageScoped.class);
 				expose(Counter.class).annotatedWith(annotation);
 			}
 		});
