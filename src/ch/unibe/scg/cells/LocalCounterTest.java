@@ -28,7 +28,8 @@ import com.google.protobuf.ByteString;
 
 /** Check {@link LocalCounter}. */
 public final class LocalCounterTest {
-	private static class IntegerCodec implements Codec<Integer> {
+	/** A codec for integers. */
+	public static class IntegerCodec implements Codec<Integer> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -43,17 +44,20 @@ public final class LocalCounterTest {
 		}
 	}
 
+	/** A counter for io exceptions. */
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	private static @interface IOExceptions {}
+	public static @interface IOExceptions {}
 
+	/** A counter for user exceptions. */
 	@Qualifier
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
-	private static @interface UsrExceptions {}
+	public static @interface UsrExceptions {}
 
-	private static class IdentityMapper implements Mapper<Integer, Integer> {
+	/** A simple mapper, that maps integers exactly to themselves. */
+	public static class IdentityMapper implements Mapper<Integer, Integer> {
 		private static final long serialVersionUID = 1L;
 
 		final Counter ioCounter;
@@ -115,10 +119,8 @@ public final class LocalCounterTest {
 									new IntegerCodec()), eff);
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
-			pipe.influx(new IntegerCodec())
-					.map(mapper)
-					.shuffle(new IntegerCodec())
-					.mapAndEfflux(mapper, new IntegerCodec());
+
+			run(pipe, mapper);
 
 			assertThat(mapper.finalIoCount,
 					equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
@@ -127,7 +129,17 @@ public final class LocalCounterTest {
 		}
 	}
 
-	private static Iterable<Integer> generateSequence(int number) {
+	/** Runs a pipeline that maps ints to ints. */
+	public static void run(Pipeline<Integer, Integer> pipe,
+			Mapper<Integer, Integer> mapper) throws IOException, InterruptedException {
+		pipe.influx(new IntegerCodec())
+			.map(mapper)
+			.shuffle(new IntegerCodec())
+			.mapAndEfflux(mapper, new IntegerCodec());
+	}
+
+	/** Generates a sequence of integers of specified length. */
+	public static Iterable<Integer> generateSequence(int number) {
 		List<Integer> ret = new ArrayList<>(number);
 
 		for(int i = 0; i < number; i++) {
