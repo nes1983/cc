@@ -6,6 +6,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.Closeable;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -29,8 +30,10 @@ import org.apache.hadoop.hbase.mapreduce.TableReducer;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
+import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Partitioner;
+import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner;
 
@@ -201,7 +204,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		/** Overwritten to escalate visibility */
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			// Do nothing.
+			// Nothing to do.
 		}
 
 		@Override
@@ -224,13 +227,32 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@SuppressWarnings("unchecked") // Unavoidable, since class literals cannot be generically typed.
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			decorated = readObjectFromConf(context.getConfiguration(), HadoopMapper.class);
+			decorated = readObjectFromConf(context, HadoopMapper.class);
 			decorated.setup(context);
 		}
 
 		@Override
 		protected void cleanup(Context context) throws IOException, InterruptedException {
 			decorated.cleanup(context);
+		}
+	}
+
+	/**
+	 * A special input stream, which is aware about hadoop's contexts.
+	 * Supports both mapper and reducer contexts. Used to deserialize context-dependent objects
+	 * across different machines.
+	 */
+	static class HadoopContextObjectInputStream extends ObjectInputStream {
+		// TaskAttemptContext is the most base class of hadoop Context hierarchy that has no generic parameters.
+		final private TaskAttemptContext context;
+
+		HadoopContextObjectInputStream(InputStream decorated, TaskAttemptContext context) throws IOException {
+			super(decorated);
+			this.context = context;
+		}
+
+		Counter getCounter(String name) {
+			return context.getCounter("cells", name);
 		}
 	}
 
@@ -385,7 +407,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@SuppressWarnings("unchecked") // Unavoidable, since class literals cannot be generically typed.
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			decorated = readObjectFromConf(context.getConfiguration(), HadoopReducer.class);
+			decorated = readObjectFromConf(context, HadoopReducer.class);
 			decorated.setup(context);
 		}
 
@@ -466,7 +488,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		/** Redefined to escalate visibility. */
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			// Do nothing.
+			// Nothing to do.
 		}
 
 		@Override
@@ -538,7 +560,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@SuppressWarnings("unchecked") // Unavoidable, since class literals cannot be generically typed.
 		@Override
 		protected void setup(Context context) throws IOException, InterruptedException {
-			decorated = readObjectFromConf(context.getConfiguration(), HadoopTableMapper.class);
+			decorated = readObjectFromConf(context, HadoopTableMapper.class);
 			decorated.setup(context);
 		}
 
@@ -548,11 +570,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
+
+
 	/** Read obj from conf from key obj.getClassName(), in base64 encoding of its java serialization. */
-	private static <T> T readObjectFromConf(Configuration conf, Class<T> clazz) throws IOException {
+	private static <T> T readObjectFromConf(TaskAttemptContext context, Class<T> clazz) throws IOException {
 		try {
-			return (T) new ObjectInputStream(new ByteArrayInputStream(base64().decode(
-					conf.getRaw(clazz.getName())))).readObject();
+			return (T) new HadoopContextObjectInputStream(new ByteArrayInputStream(base64().decode(
+					context.getConfiguration().getRaw(clazz.getName()))), context).readObject();
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException("Couldn't load " + clazz
 					+ ". You probably didn't ship the JAR properly to the server. See the README", e);

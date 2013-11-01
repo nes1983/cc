@@ -8,11 +8,10 @@ import com.google.inject.AbstractModule;
 /**
  * Counters that are shared across machines.
  * Hadoop counter service is used to display information to user.
- **/
+ */
 public final class HadoopCounterModule extends AbstractModule implements CounterModule {
 	@Override
 	protected void configure() {
 		bind(Counter.class).to(HadoopCounter.class);
-		// TODO: Implement some sort of registry so that hadoop counters can know their context.
 	}
 }
