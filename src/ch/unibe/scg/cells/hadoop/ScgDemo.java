@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.hadoop.conf.Configuration;
-import org.junit.Ignore;
+import org.junit.Before;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
@@ -36,23 +36,27 @@ import com.google.protobuf.ByteString;
 
 @SuppressWarnings("javadoc")
 public final class ScgDemo {
-	/** Not part of the demo. It's just how the data gets there beforehand. */
-	@Test
-	@Ignore
+	final private ByteString FAMILY = ByteString.copyFromUtf8("f");
+
+	/**  Generates data before executing tests. */
+	@Before
 	public void createRichard() throws IOException, InterruptedException  {
 		final String tableName = "richard-iii";
-		final ByteString family = ByteString.copyFromUtf8("f");
+
 		Module tab = new CellsModule() {
 			@Override protected void configure() {
 				installTable(
 						In.class,
 						new TypeLiteral<Act>() {},
 						ActCodec.class,
-						new HBaseStorage(), new HBaseTableModule<>(tableName, family));
+						new HBaseStorage(), new HBaseTableModule<>(tableName, FAMILY));
 			}
 		};
+
 		Injector i = Guice.createInjector(new UnibeModule(), tab);
-		i.getInstance(TableAdmin.class).createTable("richard-iii", family);
+		i.getInstance(TableAdmin.class).deleteTable("richard-iii");
+		i.getInstance(TableAdmin.class).createTable("richard-iii", FAMILY);
+
 		try (Sink<Act> s = i.getInstance(Key.get(new TypeLiteral<Sink<Act>>() {}, In.class))) {
 			for (Act act : HadoopPipelineTest.readActsFromDisk()) {
 				s.write(act);
@@ -123,7 +127,7 @@ public final class ScgDemo {
 		@Override
 		// TODO: think of better name for first?!
 		public void map(Word first, OneShotIterable<Word> row, Sink<WordCount> sink) throws IOException,
-				InterruptedException {
+		InterruptedException {
 			long count = Iterables.size(row);
 			sink.write(new WordCount(count, first.word));
 		}
@@ -162,31 +166,33 @@ public final class ScgDemo {
 	}
 
 	@Test
-	public void runInHadoop() throws IOException {
-		TableAdmin tableAdmin = Guice.createInjector(new UnibeModule()).getInstance(TableAdmin.class);
-		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
-				Table<WordCount> eff = tableAdmin.existing("richard-wordcount", ByteString.copyFromUtf8("f"))) {
-			HadoopPipeline.fromTableToTable(Guice.createInjector(new UnibeModule()).getInstance(Configuration.class), in, eff);
-		}
-	}
+	public void runInHadoop() throws IOException, InterruptedException {
+		Injector i = Guice.createInjector(new UnibeModule());
+		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
 
-	void run(Pipeline<Act, WordCount> pipe) throws IOException, InterruptedException {
-		pipe
-			.influx(new ActCodec())
-			.map(new WordParser())
-			.shuffle(new WordCodec())
-			.mapAndEfflux(new WordCounter(), new WordCountCodec());
+		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
+				Table<WordCount> eff = tableAdmin.createTemporaryTable(ByteString.copyFromUtf8("f"))) {
+			HadoopPipeline<Act, WordCount> pipe
+				= HadoopPipeline.fromTableToTable(i.getInstance(Configuration.class), in, eff);
+			run(pipe);
+
+			for (Iterable<WordCount> wcs : Codecs.decode(eff.asCellSource(), new WordCountCodec())) {
+				for (WordCount wc : wcs) {
+					System.out.println(wc);
+				}
+			}
+		}
 	}
 
 	@Test
 	public void countWords() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(new UnibeModule(), new LocalExecutionModule());
 		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
-
 		InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance();
+
 		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"))) {
 			Pipeline<Act, WordCount> pipe
-					= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource(), eff);
+				= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource(), eff);
 			run(pipe);
 		}
 
@@ -195,5 +201,12 @@ public final class ScgDemo {
 				System.out.println(wc);
 			}
 		}
+	}
+
+	void run(Pipeline<Act, WordCount> pipe) throws IOException, InterruptedException {
+		pipe.influx(new ActCodec())
+			.map(new WordParser())
+			.shuffle(new WordCodec())
+			.mapAndEfflux(new WordCounter(), new WordCountCodec());
 	}
 }
