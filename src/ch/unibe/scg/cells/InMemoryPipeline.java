@@ -54,20 +54,12 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			this.registry = registry;
 		}
 
-		/** Create a pipeline. No parameters are allowed to be null. */
+		/** Create a pipeline that uses stderr for diagnostic print. No parameters are allowed to be null. */
 		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
-			// counter info is diagnostic information, not actual output.
-			return make(pipeSrc, pipeSink, System.err);
-		}
-
-		/** Create a pipeline with a specified stream for diagnostic print. No parameters are allowed to be null. */
-		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc,
-				CellSink<OUT> pipeSink, PrintStream out) {
 			checkNotNull(pipeSrc);
 			checkNotNull(pipeSink);
-			checkNotNull(out);
 			// counter info is diagnostic information, not actual output.
-			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope, registry, out);
+			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope, registry, System.err);
 		}
 	}
 

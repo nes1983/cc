@@ -7,7 +7,9 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import java.util.ArrayList;
@@ -15,21 +17,26 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.regex.Pattern;
 
 import javax.inject.Inject;
 import javax.inject.Qualifier;
 
 import org.junit.Test;
 
+import com.google.common.base.Charsets;
 import com.google.common.primitives.Ints;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Key;
 import com.google.inject.Module;
+import com.google.inject.TypeLiteral;
 import com.google.inject.util.Providers;
 import com.google.protobuf.ByteString;
 
 /** Check {@link LocalCounter}. */
 public final class LocalCounterTest {
+
 	/** A codec for integers. */
 	public static class IntegerCodec implements Codec<Integer> {
 		private static final long serialVersionUID = 1L;
@@ -91,7 +98,7 @@ public final class LocalCounterTest {
 		}
 	}
 
-	/**Checks that counter stays alive after being serialized */
+	/** Checks that counter stays alive after being serialized. */
 	@Test
 	public void testCounterSerializationIsLive() throws IOException {
 		Set<LocalCounter> registry = new LinkedHashSet<>();
@@ -105,15 +112,10 @@ public final class LocalCounterTest {
 		assertThat(registry.toString(), equalTo("[cnt1: 1]"));
 	}
 
-	/**Checks that counters do not carry their values between pipeline stages*/
+	/** Checks that counters do not carry their values between pipeline stages. */
 	@Test
 	public void testCounterResetsAcrossStages() throws IOException, InterruptedException {
-		Module m = new CellsModule() {
-			@Override protected void configure() {
-				installCounter(IOExceptions.class, new LocalCounterModule());
-				installCounter(UsrExceptions.class, new LocalCounterModule());
-			}
-		};
+		Module m = makeCellsModule();
 
 		Injector inj = Guice.createInjector(m, new LocalExecutionModule());
 
@@ -124,13 +126,45 @@ public final class LocalCounterTest {
 									new IntegerCodec()), eff);
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
-
 			run(pipe, mapper);
 
-			assertThat(mapper.finalIoCount,
-					equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
-			assertThat(mapper.finalUsrCount,
-					equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
+			assertThat(mapper.finalIoCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
+			assertThat(mapper.finalUsrCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
+		}
+	}
+
+	/** Checks counters being printed as pipeline progresses. */
+	@Test
+	public void testCounterProgressIsPrinted() throws IOException, InterruptedException {
+		Module m = makeCellsModule();
+
+		Injector inj = Guice.createInjector(m, new LocalExecutionModule());
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		PrintStream out = new PrintStream(bos, true); // flush after each write.
+
+		try(InMemoryShuffler<Integer> eff = InMemoryShuffler.getInstance()) {
+			InMemoryPipeline<Integer, Integer> pipe
+					= new InMemoryPipeline<>(InMemoryShuffler.copyFrom(generateSequence(1000),
+							new IntegerCodec()), eff, inj.getInstance(PipelineStageScope.class),
+									inj.getInstance(Key.get(new TypeLiteral<Set<LocalCounter>>(){})),
+											out);
+
+			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
+			run(pipe, mapper);
+
+			String log = bos.toString(Charsets.UTF_8.toString());
+
+			// each line in the log should be of following format: <some name>: <number>.
+			Pattern linePattern = Pattern.compile("\\S+: \\d+");
+			for(String logLine: log.split(System.lineSeparator())) {
+				assertThat(linePattern.matcher(logLine).matches(), equalTo(true));
+			}
+
+			// these final lines should occur once per pipeline stage. In the test we have 2 stages.
+			assertThat(countMatches(log, "ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"), equalTo(2));
+			assertThat(countMatches(log, "ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"), equalTo(2));
+
+			// TODO: this test will print 0 counters for large total number. The implementation should be fixed.
 		}
 	}
 
@@ -148,8 +182,32 @@ public final class LocalCounterTest {
 		List<Integer> ret = new ArrayList<>(number);
 
 		for(int i = 0; i < number; i++) {
-		    ret.add(i);
+			ret.add(i);
 		}
 		return ret;
+	}
+
+	private static int countMatches(String str, String sub) {
+		int lastIndex = 0;
+		int count = 0;
+
+		while(lastIndex != -1) {
+			lastIndex = str.indexOf(sub, lastIndex);
+			if( lastIndex != -1) {
+				count++;
+				lastIndex += sub.length();
+			}
+		}
+
+		return count;
+	}
+
+	private static Module makeCellsModule() {
+		return new CellsModule() {
+			@Override protected void configure() {
+				installCounter(IOExceptions.class, new LocalCounterModule());
+				installCounter(UsrExceptions.class, new LocalCounterModule());
+			}
+		};
 	}
 }
