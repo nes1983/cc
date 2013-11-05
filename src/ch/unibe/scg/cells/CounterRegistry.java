@@ -11,12 +11,12 @@ import java.lang.annotation.Target;
 import javax.inject.Scope;
 
 /**
- * The scope of the lifetime of a mapper in a pipeline. That is, a pipeline of three
- * mappers will have three different scopes, one for each mapper stage.
- * Further, {@link Mapper}s are guaranteed to run inside the scope. This is true
- * even for the {@link Mapper#close} method, which is still in scope.
+ * The collection that contains all counters. Threadsafe over adding and removing,
+ * but needs explicit synchronization for iteration, as described in
+ * {@link java.util.Collections#synchronizedSet(java.util.Set)}.
+ * This is a set, so re-adding an existing counter again has no effect.
  */
 @Target({ FIELD, PARAMETER, METHOD })
 @Retention(RUNTIME)
 @Scope
-@interface PipelineStageScoped { }
+@interface CounterRegistry { }

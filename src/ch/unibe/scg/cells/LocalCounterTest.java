@@ -11,7 +11,9 @@ import java.io.IOException;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
 
 import javax.inject.Inject;
@@ -92,12 +94,15 @@ public final class LocalCounterTest {
 	/**Checks that counter stays alive after being serialized */
 	@Test
 	public void testCounterSerializationIsLive() throws IOException {
-		LocalCounter  cnt = new LocalCounter("cnt1", Providers.of(new AtomicLong()));
+		Set<LocalCounter> registry = new LinkedHashSet<>();
+		LocalCounter  cnt = new LocalCounter("cnt1", Providers.of(new AtomicLong()),
+				Providers.of(registry));
 		LocalCounter cntCopy = ShallowSerializingCopy.clone(cnt);
 		cntCopy.increment(1L);
 
 		assertThat(cntCopy.toString(), equalTo("cnt1: 1"));
 		assertThat(cnt.toString(), equalTo("cnt1: 1"));
+		assertThat(registry.toString(), equalTo("[cnt1: 1]"));
 	}
 
 	/**Checks that counters do not carry their values between pipeline stages*/
