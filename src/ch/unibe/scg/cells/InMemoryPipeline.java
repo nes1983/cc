@@ -3,6 +3,7 @@ package ch.unibe.scg.cells;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Set;
@@ -26,6 +27,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;
 	final private Set<LocalCounter> registry;
+	final private PrintStream out;
 
 	/** Incredibly hacky way of moving an exception from one thread to another. */
 	private static class ExceptionHolder {
@@ -33,11 +35,12 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	}
 
 	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink, PipelineStageScope scope,
-			Set<LocalCounter> counterRegistry) { // Don't subclass.
+			Set<LocalCounter> counterRegistry, PrintStream out) { // Don't subclass.
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
 		this.scope = scope;
 		this.registry = counterRegistry;
+		this.out = out;
 	}
 
 	/** A builder for a {@link InMemoryPipeline}. */
@@ -53,9 +56,18 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 
 		/** Create a pipeline. No parameters are allowed to be null. */
 		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
+			// counter info is diagnostic information, not actual output.
+			return make(pipeSrc, pipeSink, System.err);
+		}
+
+		/** Create a pipeline with a specified stream for diagnostic print. No parameters are allowed to be null. */
+		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc,
+				CellSink<OUT> pipeSink, PrintStream out) {
 			checkNotNull(pipeSrc);
 			checkNotNull(pipeSink);
-			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope, registry);
+			checkNotNull(out);
+			// counter info is diagnostic information, not actual output.
+			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope, registry, out);
 		}
 	}
 
@@ -226,8 +238,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 					break;
 				}
 
-				// counter info is diagnostic information, not actual output.
-				System.err.println(c.toString());
+				out.println(c.toString());
 			}
 		}
 	}
