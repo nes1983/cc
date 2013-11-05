@@ -5,8 +5,10 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -18,36 +20,42 @@ import com.google.common.io.Closer;
 
 /** Implementation of a {@link Pipeline} meant to run in memory. */
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
+	final private int PRINT_INTERVAL = 1; // in seconds.
+	final private int SHUTDOWN_TIMEOUT = 20; // in seconds.
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;
+	final private Set<LocalCounter> registry;
 
 	/** Incredibly hacky way of moving an exception from one thread to another. */
 	private static class ExceptionHolder {
 		volatile Exception e; // volatile because it can be written and read from different threads.
 	}
 
-	@Inject
-	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink, PipelineStageScope scope) { // Don't subclass.
+	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink, PipelineStageScope scope,
+			Set<LocalCounter> counterRegistry) { // Don't subclass.
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
 		this.scope = scope;
+		this.registry = counterRegistry;
 	}
 
 	/** A builder for a {@link InMemoryPipeline}. */
 	public static class Builder {
 		final private PipelineStageScope scope;
+		final private Set<LocalCounter> registry;
 
 		@Inject
-		Builder(PipelineStageScope scope) {
+		Builder(PipelineStageScope scope, @CounterRegistry Set<LocalCounter> registry) {
 			this.scope = scope;
+			this.registry = registry;
 		}
 
 		/** Create a pipeline. No parameters are allowed to be null. */
 		public <IN, OUT> InMemoryPipeline<IN, OUT> make(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink) {
 			checkNotNull(pipeSrc);
 			checkNotNull(pipeSink);
-			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope);
+			return new InMemoryPipeline<>(pipeSrc, pipeSink, scope, registry);
 		}
 	}
 
@@ -145,6 +153,15 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				}
 			};
 
+			Runnable run = new Runnable() {
+			    @Override public void run() {
+			         printCounters();
+			   }
+			};
+
+			ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+			scheduler.scheduleAtFixedRate(run, PRINT_INTERVAL, PRINT_INTERVAL, TimeUnit.SECONDS);
+
 			ExecutorService threadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 			final AtomicInteger waitGroup = new AtomicInteger();
 			// TODO: move decoding into worker thread.
@@ -177,7 +194,10 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				if (exceptionHolder.e != null) {
 					Exception cause = exceptionHolder.e; // Don't let anybody overwrite the exception while handling.
 					threadPool.shutdownNow();
-					threadPool.awaitTermination(20, TimeUnit.SECONDS);
+					threadPool.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
+
+					scheduler.shutdownNow();
+					scheduler.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
 					Throwables.propagateIfPossible(cause, IOException.class, InterruptedException.class);
 					throw new RuntimeException(cause);
 				}
@@ -190,7 +210,24 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			}
 		} finally {
 			if (scope != null) {
+				// to ensure counters will be printed upon completion.
+				printCounters();
 				scope.exit();
+			}
+		}
+	}
+
+	private void printCounters() {
+		synchronized (registry) {
+			for(LocalCounter c: registry) {
+				if(Thread.interrupted()) {
+					// restoring interrupted flag, as this method could be called outside of executor's pool.
+					Thread.currentThread().interrupt();
+					break;
+				}
+
+				// counter info is diagnostic information, not actual output.
+				System.err.println(c.toString());
 			}
 		}
 	}
