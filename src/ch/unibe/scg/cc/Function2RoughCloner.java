@@ -33,9 +33,9 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 		this.popularSnippetThreshold = popularSnippetThreshold;
 	}
 
-	/** Input encoding: snippet2function */
 	@Override
-	public void map(Snippet first, OneShotIterable<Snippet> rowIterable, Sink<Clone> function2RoughClones) throws IOException, InterruptedException {
+	public void map(Snippet first, OneShotIterable<Snippet> rowIterable, Sink<Clone> function2RoughClones)
+			throws IOException, InterruptedException {
 		// rowIterable is not guaranteed to be iterable more than once, so copy.
 		Collection<Snippet> row = ImmutableList.copyOf(rowIterable);
 		rowIterable = null; // Don't touch!
@@ -61,12 +61,10 @@ class Function2RoughCloner implements Mapper<Snippet, Clone> {
 				// full table gets reconstructed in MakeSnippet2FineClones
 				// This *must* be the same as in CloneExpander.
 				if (thisSnip.getFunction().asReadOnlyByteBuffer()
-						.compareTo(thatSnip.getFunction().asReadOnlyByteBuffer()) >= 0) {
-					continue;
+							.compareTo(thatSnip.getFunction().asReadOnlyByteBuffer()) < 0) {
+					function2RoughClones.write(
+						Clone.newBuilder().setThisSnippet(thisSnip).setThatSnippet(thatSnip).build());
 				}
-
-				function2RoughClones
-						.write(Clone.newBuilder().setThisSnippet(thisSnip).setThatSnippet(thatSnip).build());
 			}
 		}
 	}
