@@ -60,7 +60,7 @@ class CloneGroupClusterer implements OfflineMapper<Clone, CloneGroup> {
 		Multimap<ByteString, Clone> hashToClone = HashMultimap.create();
 		for (Iterable<Clone> row : in) {
 			for (Clone c : row) {
-				hashToClone.put(c.getThatSnippet().getFunction(), c);
+				hashToClone.put(c.getThisSnippet().getFunction(), c);
 				hashToClone.put(c.getThatSnippet().getFunction(), c);
 			}
 		}

@@ -45,12 +45,19 @@ public final class Function2FineClonerTest {
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
-		PipelineRunner runner = i.getInstance(PipelineRunner.class);
 		try (InMemoryShuffler<Clone> shuffler =
 				i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
 			InMemoryPipeline<GitRepo, Clone> pipe
 					= i.getInstance(InMemoryPipeline.Builder.class).make(src, shuffler);
-			runner.run(pipe);
+			pipe
+				.influx(repoCodec)
+				.map(i.getInstance(GitPopulator.class))
+				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
+				.map(i.getInstance(Function2RoughCloner.class))
+				.shuffle(i.getInstance(Function2RoughClonesCodec.class))
+				.mapAndEfflux(i.getInstance(Function2FineCloner.class),
+						i.getInstance(Function2RoughClonesCodec.class));
+
 			shuffler.close();
 
 			try(Source<Clone> rows = Codecs.decode(shuffler, i.getInstance(Function2RoughClonesCodec.class))) {
