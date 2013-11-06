@@ -25,26 +25,31 @@ class LocalCounter implements Counter {
 
 	final private String counterName;
 	final private Provider<AtomicLong> count;
-	final private Provider<Set<LocalCounter>> counterRegistry; // Provider for scoping.
+	final private Provider<Set<LocalCounter>> registry; // Provider for scoping.
 
-	/** False if we've never registered this to counterRegistry; true otherwise. */
-	private volatile boolean registered;
+	/**
+	 * A snapshot of registry at the moment counter registered itself. Used to determine, when
+	 * the current registration becomes invalid.
+	 */
+	private Set<LocalCounter> registeredAt;
 
 	@Inject
 	LocalCounter(@CounterName String counterName, @CounterLong Provider<AtomicLong> count,
-		@CounterRegistry Provider<Set<LocalCounter>> counterRegistry) {
+		@CounterRegistry Provider<Set<LocalCounter>> registry) {
 		this.counterName = checkNotNull(counterName);
 		this.count = checkNotNull(count);
-		this.counterRegistry = checkNotNull(counterRegistry);
+		this.registry = checkNotNull(registry);
 	}
 
 	@Override
 	public void increment(long cnt) {
 		// In a multi-threading situation, this could be executed multiply.
-		// However, the counterRegistry is a synchronized set. It isn't incorrect or expensive.
-		if (!registered) {
-			registered = true;
-			counterRegistry.get().add(this);
+		// However, the registry is a synchronized set. It isn't incorrect or expensive:
+		// Counter MAY register itself in the stale registry, but that will be fixed on next increment.
+		Set<LocalCounter> curRegistry = registry.get();
+		if (!curRegistry.equals(registeredAt)) { // the old registration is invalid - need to update.
+		    curRegistry.add(this);
+		    registeredAt = curRegistry;
 		}
 
 		count.get().addAndGet(cnt);

@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 
 import com.google.common.base.Throwables;
 import com.google.common.collect.Iterables;
@@ -26,7 +27,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;
-	final private Set<LocalCounter> registry;
+	final private Provider<Set<LocalCounter>> registry;
 	final private PrintStream out;
 
 	/** Incredibly hacky way of moving an exception from one thread to another. */
@@ -35,7 +36,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	}
 
 	InMemoryPipeline(CellSource<IN> pipeSrc, CellSink<OUT> pipeSink, PipelineStageScope scope,
-			Set<LocalCounter> counterRegistry, PrintStream out) { // Don't subclass.
+			Provider<Set<LocalCounter>> counterRegistry, PrintStream out) { // Don't subclass.
 		this.pipeSrc = pipeSrc;
 		this.pipeSink = pipeSink;
 		this.scope = scope;
@@ -46,10 +47,10 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	/** A builder for a {@link InMemoryPipeline}. */
 	public static class Builder {
 		final private PipelineStageScope scope;
-		final private Set<LocalCounter> registry;
+		final private Provider<Set<LocalCounter>> registry;
 
 		@Inject
-		Builder(PipelineStageScope scope, @CounterRegistry Set<LocalCounter> registry) {
+		Builder(PipelineStageScope scope, @CounterRegistry Provider<Set<LocalCounter>> registry) {
 			this.scope = scope;
 			this.registry = registry;
 		}
@@ -223,7 +224,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 
 	private void printCounters() {
 		synchronized (registry) {
-			for(LocalCounter c: registry) {
+			for(LocalCounter c : registry.get()) {
 				if(Thread.interrupted()) {
 					// restoring interrupted flag, as this method could be called outside of executor's pool.
 					Thread.currentThread().interrupt();

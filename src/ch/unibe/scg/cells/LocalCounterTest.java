@@ -20,6 +20,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Pattern;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 import javax.inject.Qualifier;
 
 import org.junit.Test;
@@ -146,7 +147,7 @@ public final class LocalCounterTest {
 			InMemoryPipeline<Integer, Integer> pipe
 					= new InMemoryPipeline<>(InMemoryShuffler.copyFrom(generateSequence(1000),
 							new IntegerCodec()), eff, inj.getInstance(PipelineStageScope.class),
-									inj.getInstance(Key.get(new TypeLiteral<Set<LocalCounter>>(){})),
+									inj.getInstance(Key.get(new TypeLiteral<Provider<Set<LocalCounter>>>(){})),
 											out);
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
