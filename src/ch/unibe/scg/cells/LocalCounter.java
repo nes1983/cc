@@ -47,7 +47,7 @@ class LocalCounter implements Counter {
 		// However, the registry is a synchronized set. It isn't incorrect or expensive:
 		// Counter MAY register itself in the stale registry, but that will be fixed on next increment.
 		Set<LocalCounter> curRegistry = registry.get();
-		if (!curRegistry.equals(registeredAt)) { // the old registration is invalid - need to update.
+		if (curRegistry != registeredAt) { // the old registration is invalid - need to update.
 		    curRegistry.add(this);
 		    registeredAt = curRegistry;
 		}
