@@ -5,6 +5,7 @@ import java.io.Serializable;
 
 import javax.inject.Inject;
 
+import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;

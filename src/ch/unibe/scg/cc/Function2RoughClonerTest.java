@@ -15,6 +15,7 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
+import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;

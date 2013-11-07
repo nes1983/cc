@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Function2RoughClonerTest.CollectionCellSource;
 import ch.unibe.scg.cc.Function2RoughClonerTest.TestModule;
+import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
