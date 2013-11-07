@@ -129,6 +129,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	// TODO: Perhaps report all exceptions as suppressed?
 	private <I, E> void run(CellSource<I> src, Codec<I> srcCodec, final Mapper<I, E> mapper,
 			final CellSink<E> sink, final Codec<E> sinkCodec) throws IOException, InterruptedException {
+		ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+		ExecutorService threadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
 		try(final Closer mapperCloser = Closer.create()) {
 			mapperCloser.register(mapper);
@@ -164,10 +166,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 			   }
 			};
 
-			ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 			scheduler.scheduleAtFixedRate(run, PRINT_INTERVAL, PRINT_INTERVAL, TimeUnit.SECONDS);
-
-			ExecutorService threadPool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 			final AtomicInteger waitGroup = new AtomicInteger();
 			// TODO: move decoding into worker thread.
 			for (Iterable<I> decoded : Codecs.decode(src, srcCodec)) {
@@ -218,6 +217,13 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				// to ensure counters will be printed upon completion.
 				printCounters();
 				scope.exit();
+
+				// shutdown executors: their threads will prevent application shutdown.
+				threadPool.shutdownNow();
+				threadPool.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
+
+				scheduler.shutdownNow();
+				scheduler.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
 			}
 		}
 	}
