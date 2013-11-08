@@ -380,13 +380,14 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				DecoratorHadoopReducer.class, // reducer class
 				job);
 
-		TableMapReduceUtil.addDependencyJars(job); // TODO: Will this suffice?
+		TableMapReduceUtil.addDependencyJars(job);
 		job.setGroupingComparatorClass(KeyGroupingComparator.class);
 		job.setSortComparatorClass(KeySortingComparator.class);
 		job.setPartitionerClass(KeyGroupingPartitioner.class);
+		job.setJarByClass(getClass());
 
-	     // Submit the job, then poll for progress until the job is complete
-	     try {
+	    // Submit the job, then poll for progress until the job is complete
+	    try {
 			job.waitForCompletion(true);
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException("Loading of your job failed. ", e);

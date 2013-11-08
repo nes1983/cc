@@ -30,9 +30,8 @@ To check what's inside the generated HAR file:
  1. Make sure that you have a public ssh key. If you don't, follow this guide: https://help.github.com/articles/generating-ssh-keys
  2. Append your public ssh key to `deploy@haddock.unibe.ch ~/.ssh/authorized_keys`
  3. Make sure that you can `ssh haddock.unibe.ch -l deploy` without being asked a password.
- 4. Create a class with main method that calls a desired test.
- 5. Execute `ant jar -DmainClass="YourClassName"`
- 6. Run your test with `./ant.sh uploadJar -DclassArgument=""`\. In case of unsuccessful run you will get junit assertion in a console.
+ 4. Run your test with `./ant.sh uploadJar -DclassArgument="ch.unibe.scg.cells.hadoop.HadoopPipelineTest"`.
+    In case of an unsuccessful run you, you will get the errors in the console.
 
 # To kill a hang job #
 	hadoop job -kill job_<your_job_id>
