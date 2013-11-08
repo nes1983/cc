@@ -70,12 +70,12 @@
 		<taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask"
 				classpath="jarjar-1.4.jar"/>
 		<manifestclasspath jarfile="cc.jar" property="manifest.class.path">
-			<classpath refid=".classpath" />
+			<classpath refid=".classpath"/>
 		</manifestclasspath>
 		<jarjar destfile="cc.jar" basedir="bin">
 			<manifest>
-				<attribute name="Class-Path" value="${manifest.class.path}" />
-				<attribute name="Main-Class" value="${mainClass}" />
+				<attribute name="Class-Path" value="${manifest.class.path}"/>
+				<attribute name="Main-Class" value="${mainClass}"/>
 			</manifest>
 			<!-- produce using
 			find libs -name '*.jar' -prune -type f | ruby -n -e 'puts "<zipfileset src=\"" + $_.gsub(/\n/,"") + "\"/>" \
@@ -122,89 +122,89 @@
 
 	<target name="indexCreator">
 		<antcall target="jar">
-			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MRMain" />
+			<param name="mainClass" value="ch.unibe.scg.cc.mappers.MRMain"/>
 		</antcall>
 		<antcall target="uploadJar">
-			<param name="classArgument" value="${classArgument}" />
+			<param name="classArgument" value="${classArgument}"/>
 		</antcall>
 	</target>
 
 	<target name="gitTablePopulate">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.GitTablePopulator"/>
 		</antcall>
 	</target>
 
 	<target name="makeHistogram">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeHistogram" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeHistogram"/>
 		</antcall>
 	</target>
 
 	<target name="countLOC">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.CountLOC" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.CountLOC"/>
 		</antcall>
 	</target>
 
 	<target name="makeSnippet2Function">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeSnippet2Function" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeSnippet2Function"/>
 		</antcall>
 	</target>
 
 	<target name="makeFunction2RoughClones">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2RoughClones"/>
 		</antcall>
 	</target>
 
 	<target name="makeFunction2FineClones">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2FineClones" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeFunction2FineClones"/>
 		</antcall>
 	</target>
 
 	<target name="function2FineClonesSorter">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.Function2FineClonesSorter" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.Function2FineClonesSorter"/>
 		</antcall>
 	</target>
 
 	<target name="makeColumnIndexProject2Version">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Project2Version" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Project2Version"/>
 		</antcall>
 	</target>
 
 	<target name="makeColumnIndexVersion2File">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Version2File" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Version2File"/>
 		</antcall>
 	</target>
 
 	<target name="makeColumnIndexFile2Function">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$File2Function" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$File2Function"/>
 		</antcall>
 	</target>
 
 	<target name="makeColumnIndexFunction2Snippet">
 		<antcall target="indexCreator">
-			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Function2Snippet" />
+			<param name="classArgument" value="ch.unibe.scg.cc.mappers.MakeColumnIndex\$Function2Snippet"/>
 		</antcall>
 	</target>
 
 	<target name="mrPipeline">
-		<antcall target="gitTablePopulate" />
-		<antcall target="makeColumnIndexFunction2Snippet" />
-		<antcall target="makeColumnIndexFile2Function" />
-		<antcall target="makeColumnIndexVersion2File" />
-		<antcall target="makeColumnIndexProject2Version" />
-		<antcall target="makeSnippet2Function" />
-		<antcall target="makeFunction2RoughClones" />
-		<antcall target="makeFunction2FineClones" />
-		<antcall target="function2FineClonesSorter" />
+		<antcall target="gitTablePopulate"/>
+		<antcall target="makeColumnIndexFunction2Snippet"/>
+		<antcall target="makeColumnIndexFile2Function"/>
+		<antcall target="makeColumnIndexVersion2File"/>
+		<antcall target="makeColumnIndexProject2Version"/>
+		<antcall target="makeSnippet2Function"/>
+		<antcall target="makeFunction2RoughClones"/>
+		<antcall target="makeFunction2FineClones"/>
+		<antcall target="function2FineClonesSorter"/>
 	</target>
 
 	<target name="executeJar" depends="jar">
