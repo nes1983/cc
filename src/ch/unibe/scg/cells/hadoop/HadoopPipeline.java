@@ -44,6 +44,7 @@ import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OfflineMapper;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
 
@@ -256,6 +257,21 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 	}
 
+	private static class IdentityMapper<T> implements Mapper<T, T> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public void close() throws IOException { }
+
+		@Override
+		public void map(T first, OneShotIterable<T> row, Sink<T> sink)
+				throws IOException, InterruptedException {
+			for (T e : row) {
+				sink.write(e);
+			}
+		}
+	}
+
 	private class HadoopMappablePipeline<I> implements MappablePipeline<I, EFF> {
 		final private Codec<I> srcCodec;
 		final private MapConfigurer<I> mapConfigurer;
@@ -271,8 +287,9 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		}
 
 		@Override
-		public void mapAndEfflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException {
-			throw new UnsupportedOperationException("I'll think about this case later :)");
+		public void mapAndEfflux(Mapper<I, EFF> m, Codec<EFF> codec)
+				throws IOException, InterruptedException {
+			run(mapConfigurer, srcCodec, m, codec, new IdentityMapper<EFF>(), codec, efflux);
 		}
 
 		@Override

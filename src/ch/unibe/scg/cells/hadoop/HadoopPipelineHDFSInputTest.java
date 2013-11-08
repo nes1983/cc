@@ -145,8 +145,6 @@ public final class HadoopPipelineHDFSInputTest {
 					tab);
 			pipe
 				.influx(new FileCodec())
-				.map(new IdentityMapper())
-				.shuffle(new FileCodec())
 				.mapAndEfflux(new IdentityMapper(), new FileCodec());
 
 			try(Source<File> files = Codecs.decode(tab.asCellSource(), new FileCodec())) {
