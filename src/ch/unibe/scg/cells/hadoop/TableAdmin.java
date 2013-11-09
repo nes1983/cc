@@ -29,7 +29,8 @@ public class TableAdmin {
 		this.hTableFactory = hTableFactory;
 	}
 
-	void deleteTable(String tableName) throws IOException {
+	/** Drop table if it exists. Silent otherwise. */
+	public void deleteTable(String tableName) throws IOException {
 		try (HBaseAdmin admin = new HBaseAdmin(configuration)) {
 			if (admin.isTableAvailable(tableName)) {
 				if (admin.isTableEnabled(tableName)) {
@@ -80,7 +81,7 @@ public class TableAdmin {
 
 	/** Create a non-temporary table. On close, the table will NOT be deleted. */
 	@SuppressWarnings("resource") // Tab will be properly closed in the return value's close.
-	<T> Table<T> createTable(final String tableName, final ByteString family) throws IOException {
+	public <T> Table<T> createTable(final String tableName, final ByteString family) throws IOException {
 		final HTable tab = createHTable(tableName, family);
 		String decoded = new String(tab.getTableName(), Charsets.UTF_8);
 		if (!decoded.equals(tableName)) {
@@ -108,7 +109,8 @@ public class TableAdmin {
 		};
 	}
 
-	<T> Table<T> existing(final String tabName, final ByteString famName) {
+	/** @return the handle to an existing named table. Does NOT immediately check if the table exists. */
+	public <T> Table<T> existing(final String tabName, final ByteString famName) {
 		// TODO: Check if table exists.
 		return new Table<T>() {
 			@Override public void close() throws IOException {

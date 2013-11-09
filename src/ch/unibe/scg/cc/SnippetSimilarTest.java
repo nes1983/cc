@@ -15,7 +15,6 @@ import org.junit.Test;
 
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.javaFrontend.JavaType1ReplacerFactory;
 import ch.unibe.scg.cc.lines.StringOfLines;
 import ch.unibe.scg.cc.lines.StringOfLinesFactory;
@@ -51,7 +50,7 @@ public final class SnippetSimilarTest {
 		// to make an example for the paper.
 		final ReplacerNormalizer n1 = new ReplacerNormalizer(new JavaType1ReplacerFactory().get());
 		final ReplacerNormalizer n2 = new ReplacerNormalizer(new Type2ReplacerFactory().get());
-		final ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule())
+		final ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage()))
 				.getInstance(ShingleHasher.class);
 
 		final StringBuilder s1 = snippet1();

@@ -19,7 +19,6 @@ import ch.unibe.scg.cc.Function2RoughClonerTest.TestModule;
 import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.GitRepo;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
@@ -40,8 +39,10 @@ public final class Function2FineClonerTest {
 	/** Test {@link Function2FineCloner#map}.*/
 	@Test
 	public void testMap() throws IOException, InterruptedException {
-		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
-				new JavaModule()).with(new TestModule()), new LocalExecutionModule());
+		Injector i = Guice.createInjector(
+				Modules.override(new CCModule(new InMemoryStorage()))
+						.with(new TestModule()),
+				new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
@@ -101,8 +102,9 @@ public final class Function2FineClonerTest {
 	@Test
 	@Ignore // TODO: InMemoryTables should actually not serialize. Test currently broken. Needs fix.
 	public void testSerialization() throws IOException, ClassNotFoundException {
-		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
-				new JavaModule()).with(new Function2RoughClonerTest.TestModule()));
+		Injector i = Guice.createInjector(
+				Modules.override(new CCModule(new InMemoryStorage()))
+				.with(new Function2RoughClonerTest.TestModule()));
 		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
 		try (ObjectOutputStream out = new ObjectOutputStream(bOut)) {
 			PipelineRunner runnerWithAllMappers = i.getInstance(PipelineRunner.class);

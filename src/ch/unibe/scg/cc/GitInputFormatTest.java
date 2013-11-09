@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.mapreduce.MRJobConfig;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import ch.unibe.scg.cc.GitPopulator.PackedRef;
@@ -73,6 +74,7 @@ public final class GitInputFormatTest {
 	}
 
 	@Test
+	@Ignore // Much too slow, atm. We need something to take only the top 10 files.
 	public void test() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(new UnibeModule());
 

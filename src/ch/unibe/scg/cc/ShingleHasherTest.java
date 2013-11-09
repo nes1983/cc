@@ -10,7 +10,6 @@ import java.util.Collection;
 import org.hamcrest.core.Is;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.InMemoryStorage;
 
 import com.google.common.collect.Iterables;
@@ -20,7 +19,7 @@ import com.google.inject.Guice;
 public class ShingleHasherTest {
 	@Test
 	public void test() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule()).getInstance(ShingleHasher.class);
+		ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage())).getInstance(ShingleHasher.class);
 
 		Collection<String> shingles = ss.shingles("one two three four five six seven eight nine");
 		assertThat(shingles, Is.<Collection<String>>is(Arrays.asList("one two three four", "five six seven eight", "two three four five",
@@ -33,7 +32,8 @@ public class ShingleHasherTest {
 
 	@Test
 	public void testStrangeInput() throws CannotBeHashedException {
-		ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule()).getInstance(ShingleHasher.class);
+		ShingleHasher ss = Guice.createInjector(new CCModule(new InMemoryStorage()))
+				.getInstance(ShingleHasher.class);
 		ss.hash("} t (t t) { t. t(); t. t(1); } } }");
 		ss.hash("t t; t t; t t; t t; t t;");
 		ss.hash("} t t(t t) { t (t. t()) {");

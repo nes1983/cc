@@ -35,7 +35,6 @@ import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.AdapterOneShotIterable;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.InMemoryStorage;
@@ -261,7 +260,7 @@ public final class GitPopulatorTest {
 
 	private static Injector walkRepo(GitRepo repo) throws IOException, InterruptedException {
 
-		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new JavaModule(), new CellsModule() {
+		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new CellsModule() {
 			@Override protected void configure() {
 				installTable(TestSink.class, new TypeLiteral<Snippet>() {},
 						Snippet2FunctionsCodec.class, new InMemoryStorage(), nullModule());

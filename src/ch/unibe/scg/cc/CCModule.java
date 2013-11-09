@@ -9,6 +9,7 @@ import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cc.Protos.Project;
 import ch.unibe.scg.cc.Protos.Snippet;
 import ch.unibe.scg.cc.Protos.Version;
+import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.regex.Replace;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.StorageModule;
@@ -64,5 +65,7 @@ public final class CCModule extends CellsModule {
 		bindConstant().annotatedWith(PopularSnippetsThreshold.class).to(500);
 
 		install(new Type2Module());
+
+		install(new JavaModule());
 	}
 }

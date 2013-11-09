@@ -20,7 +20,6 @@ import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.Codec;
@@ -43,8 +42,8 @@ public final class Function2RoughClonerTest {
 	@Test
 	public void testMap() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(new LocalExecutionModule(),
-				Modules.override(new CCModule(new InMemoryStorage()),
-				new JavaModule()).with(new TestModule()));
+				Modules.override(new CCModule(new InMemoryStorage()))
+						.with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));

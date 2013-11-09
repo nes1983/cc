@@ -13,7 +13,6 @@ import ch.unibe.scg.cc.Function2RoughClonerTest.TestModule;
 import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.CloneGroup;
 import ch.unibe.scg.cc.Protos.GitRepo;
-import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.Codecs;
@@ -35,8 +34,9 @@ public final class CloneGroupClustererTest {
 	/** Test {@link CloneGroupClusterer#map} */
 	@Test
 	public void testMap() throws IOException, InterruptedException {
-		Injector i = Guice.createInjector(Modules.override(new CCModule(new InMemoryStorage()),
-				new JavaModule()).with(new TestModule()), new LocalExecutionModule());
+		Injector i = Guice.createInjector(
+				Modules.override(new CCModule(new InMemoryStorage()))
+						.with(new TestModule()), new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
 				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
