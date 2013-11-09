@@ -32,7 +32,7 @@ public final class Main {
 		Configuration conf = i.getInstance(Configuration.class);
 		conf.set(MRJobConfig.MAP_MEMORY_MB, "4000");
 		conf.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx3300m");
-		conf.setInt(MRJobConfig.NUM_REDUCES, 27);
+		conf.setInt(MRJobConfig.NUM_REDUCES, 300);
 		conf.setInt(MRJobConfig.MAP_FAILURES_MAX_PERCENT, 99);
 		conf.setBoolean(MRJobConfig.MAP_SPECULATIVE, false);
 		conf.setInt(MRJobConfig.JVM_NUMTASKS_TORUN, -1);
