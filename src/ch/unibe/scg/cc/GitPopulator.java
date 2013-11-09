@@ -52,7 +52,7 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 		this.populator = populator;
 	}
 
-	private static class PackedRefParser {
+	static class PackedRefParser {
 		final static Pattern pattern = Pattern.compile("([a-f0-9]{40}) refs\\/(?:tags|heads)\\/(.+)");
 
 		public List<PackedRef> parse(InputStream ins) throws IOException {
@@ -85,7 +85,7 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 		}
 	}
 
-	private static class PackedRef {
+	static class PackedRef {
 		final ObjectId key;
 		final String name;
 

@@ -42,7 +42,7 @@ public class TableAdmin {
 
 	/** Create a temporary hbase table. On close, The temporary table gets deleted from HBase. */
 	@SuppressWarnings("resource") // Tab gets closed properly in close of return value.
-	<T> Table<T> createTemporaryTable(final ByteString family) throws IOException {
+	public <T> Table<T> createTemporaryTable(final ByteString family) throws IOException {
 		SecureRandom random = new SecureRandom();
 		byte bytes[] = new byte[20];
 		random.nextBytes(bytes);

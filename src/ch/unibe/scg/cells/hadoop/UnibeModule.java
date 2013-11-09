@@ -7,7 +7,8 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 
 import com.google.inject.AbstractModule;
 
-class UnibeModule extends AbstractModule {
+/** Internal testing. Don't use. */
+public final class UnibeModule extends AbstractModule {
 	static class UnibeConfigurationProvider implements Provider<Configuration> {
 		@Override
 		public Configuration get() {

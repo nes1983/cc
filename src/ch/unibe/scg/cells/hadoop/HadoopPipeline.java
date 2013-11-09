@@ -397,7 +397,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				DecoratorHadoopReducer.class, // reducer class
 				job);
 
-		TableMapReduceUtil.addDependencyJars(job);
 		job.setGroupingComparatorClass(KeyGroupingComparator.class);
 		job.setSortComparatorClass(KeySortingComparator.class);
 		job.setPartitionerClass(KeyGroupingPartitioner.class);

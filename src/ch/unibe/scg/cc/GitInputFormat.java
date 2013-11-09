@@ -4,10 +4,9 @@ import java.io.IOException;
 import java.io.Serializable;
 
 import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.LocatedFileStatus;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.fs.RemoteIterator;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
 import org.apache.hadoop.mapreduce.InputSplit;
 import org.apache.hadoop.mapreduce.JobContext;
@@ -64,6 +63,7 @@ class GitInputFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableBy
 			split = (FileSplit) inputSplit; // Cast will always hold for FileInputFormats.
 											// Taken from SequenceFileRecordReader#initialize.
 			fs = split.getPath().getFileSystem(taskAttemptContext.getConfiguration());
+											// Again, this line is stolen from SequenceFileRecordReader.
 		}
 
 		@Override
@@ -72,12 +72,17 @@ class GitInputFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableBy
 				return false;
 			}
 
+			// TODO: Delete this crutch.
+			// It's here because there's an irrelevant file in the input …
+			if (split.getPath().getName().equals("index")) {
+				return false;
+			}
+
 			// Find packFilePath.
-			RemoteIterator<LocatedFileStatus> potentialPackFiles
-				= fs.listFiles(new Path(split.getPath(), "objects/pack/"), false); // non-recursive.
+			FileStatus[] potentialPackFiles = fs.listStatus(new Path(split.getPath(), "objects/pack/"));
+
 			Path packFilePath = null;
-			while (potentialPackFiles.hasNext()) {
-				LocatedFileStatus f = potentialPackFiles.next();
+			for (FileStatus f : potentialPackFiles) {
 				if (f.getPath().getName().endsWith(".pack")) {
 					// Found pack file.
 					if (packFilePath != null) {
