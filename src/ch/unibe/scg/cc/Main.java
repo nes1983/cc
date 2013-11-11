@@ -36,6 +36,13 @@ public final class Main {
 		conf.setInt(MRJobConfig.MAP_FAILURES_MAX_PERCENT, 99);
 		conf.setBoolean(MRJobConfig.MAP_SPECULATIVE, false);
 		conf.setInt(MRJobConfig.JVM_NUMTASKS_TORUN, -1);
+		conf.setBoolean(MRJobConfig.MAP_OUTPUT_COMPRESS, true);
+		conf.set(MRJobConfig.MAP_SORT_SPILL_PERCENT, "0.8");
+		conf.setInt(MRJobConfig.IO_SORT_MB, 512);
+		conf.setInt(MRJobConfig.IO_SORT_FACTOR, 50);
+		// as suggested on p. 27: http://www.slideshare.net/cloudera/mr-perf
+		conf.setInt(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, 0);
+		conf.setBoolean(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, true);
 
 		TableAdmin admin = i.getInstance(TableAdmin.class);
 
