@@ -1,5 +1,11 @@
 bin/**/*
 bin/*
+benchmarks/cells/bin
+benchmarks/PLINQ/bin
+benchmarks/PLINQ/obj
+benchmarks/PLINQ/*.suo
+benchmarks/PLINQ/*.user
+benchmarks/PLINQ/*.DotSettings
 tmp/**/*
 tmp/*
 *.tmp
@@ -23,3 +29,4 @@ sshuser
 
 eclipse-ant
 bedrock_log.log
+/bin
