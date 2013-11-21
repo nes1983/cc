@@ -19,12 +19,8 @@ import com.google.inject.TypeLiteral;
 import com.google.inject.util.Types;
 
 /**
- * Default bindings for use with cells. binds Sources to encoded CellSources, and sinks
- * to encoded CellSinks.
- *
- * <p>
- * For this module to work, there need to be bound providers for these exact types: <br>
- * {@code CellSource<Void>, CellSink<Void>, CellLookupTable<Void>}.
+ * An API that helps configure Cells jobs. Helps configure tables, sources, sinks, and counters.
+ * To configure your cells job, just subclass CellsModule, and use helper methods.
  */
 public abstract class CellsModule extends AbstractModule {
 	private static class SourceProvider<T> implements Provider<Source<T>> {
@@ -170,7 +166,7 @@ public abstract class CellsModule extends AbstractModule {
 	 * }</pre>
 	 */
 	@SuppressWarnings("javadoc") // See above.
-	protected final void installCounter(final Class<? extends Annotation> annotation, final  CounterModule pipelineModule) {
+	protected final void installCounter(final Class<? extends Annotation> annotation, final CounterModule pipelineModule) {
 		checkNotNull(annotation);
 		checkNotNull(pipelineModule);
 
