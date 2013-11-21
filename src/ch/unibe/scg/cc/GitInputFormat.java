@@ -51,6 +51,7 @@ class GitInputFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableBy
 
 	private static class GitPathRecordReader
 			extends RecordReader<ImmutableBytesWritable, ImmutableBytesWritable> {
+		private static final long MAX_PACKFILE_SIZE_MB = 500;
 		private ImmutableBytesWritable currentKey;
 		private ImmutableBytesWritable currentValue;
 		private boolean isFinished;
@@ -94,6 +95,11 @@ class GitInputFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableBy
 			}
 			if (packFilePath == null) {
 				throw new IOException("There was no pack file in the repo!");
+			}
+			
+			// Check pack file size because with protobuf 2.4.0a the pack file gets copied 3 times in memory.
+			if (fs.getStatus(packFilePath).getUsed() / 1048576l > MAX_PACKFILE_SIZE_MB) {
+				throw new IOException("Pack file exceeded size limit of " + MAX_PACKFILE_SIZE_MB + " MB.");
 			}
 
 			byte[] packFile;
