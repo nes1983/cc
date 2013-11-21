@@ -1,7 +1,0 @@
-compiler.compileProtoFiles=true
-compiler.enableProjectSettings=true
-compiler.javaCodeGenerationEnabled=true
-compiler.protocFilePath=/usr/local/Cellar/protobuf/2.5.0/bin/protoc
-compiler.useProtocInCustomPath=true
-compiler.useProtocInSystemPath=false
-eclipse.preferences.version=1
