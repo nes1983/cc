@@ -22,8 +22,8 @@ import com.google.common.io.Closer;
 
 /** Implementation of a {@link Pipeline} meant to run in memory. */
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
-	final private int PRINT_INTERVAL = 1; // in seconds.
-	final private int SHUTDOWN_TIMEOUT = 20; // in seconds.
+	final private static int PRINT_INTERVAL = 1; // in seconds.
+	final private static int SHUTDOWN_TIMEOUT = 20; // in seconds.
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;

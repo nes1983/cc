@@ -156,7 +156,9 @@ public abstract class CellsModule extends AbstractModule {
 		});
 	}
 
-	/** Installs a counter into the module, so that the following will work for an annotation @IOExceptions:
+	/**
+	 * Installs a counter into the module, so that the following will work for an
+	 * annotation {@code @IOExceptions}:
 	 *
 	 * <pre> {@code
 	 * @Inject
