@@ -21,6 +21,7 @@ src-gen/**/*
 *.lyx~
 sshuser
 .settings/com.google.eclipse.protobuf.Protobuf.prefs
+doc/*
 
 *.class
 
