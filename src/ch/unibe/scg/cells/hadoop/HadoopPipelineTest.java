@@ -177,6 +177,23 @@ public final class HadoopPipelineTest {
 		}
 	}
 
+	private static class WordFilter implements Mapper<WordCount, WordCount> {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public void close() throws IOException { }
+
+		@Override
+		public void map(WordCount first, OneShotIterable<WordCount> row, Sink<WordCount> sink) throws IOException,
+				InterruptedException {
+			for (WordCount wc : row) {
+				if (wc.word.equals("your")) {
+					sink.write(wc);
+				}
+			}
+		}
+	}
+
 	@Test
 	public void testHadoopWordcount() throws IOException, InterruptedException {
 		TableAdmin tableAdmin = Guice.createInjector(new UnibeModule()).getInstance(TableAdmin.class);
@@ -210,13 +227,9 @@ public final class HadoopPipelineTest {
 			run(HadoopPipeline.fromTableToTable(injector.getInstance(Configuration.class), in, eff));
 
 			try(Source<WordCount> src = injector.getInstance(Key.get(new TypeLiteral<Source<WordCount>>() {}, Eff.class))) {
-				for (Iterable<WordCount> wcs : src) {
-					for (WordCount wc : wcs) {
-						if (wc.word.equals("your")) {
-							assertThat(wc.count, is(239L));
-						}
-					}
-				}
+				WordCount wc = Iterables.getOnlyElement(Iterables.getOnlyElement(src));
+				assertThat(wc.word, is("your"));
+				assertThat(wc.count, is(239L));
 			}
 		}
 	}
@@ -243,7 +256,9 @@ public final class HadoopPipelineTest {
 		pipeline.influx(new ActCodec())
 			.map(new WordParseMapper())
 			.shuffle(new WordCodec())
-			.mapAndEfflux(new WordAdderMapper(), new WordCountCodec());
+			.map(new WordAdderMapper())
+			.shuffle(new WordCountCodec())
+			.mapAndEfflux(new WordFilter(), new WordCountCodec());
 	}
 
 	@Qualifier
