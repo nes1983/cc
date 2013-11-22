@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.NoSuchElementException;
+import java.util.logging.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -58,6 +59,7 @@ import com.google.protobuf.ByteString;
 /** The Hadoop version of a {@link Pipeline}. */
 public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	final private static byte[] fam = ByteString.copyFromUtf8("f").toByteArray();
+	final static private Logger logger = Logger.getLogger(HadoopPipeline.class.getName());
 
 	final private Configuration baseConfiguration;
 	final private MapConfigurer<IN> firstMapConfigurer;
@@ -115,6 +117,8 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		@Override
 		public <MAP_OUT> void configure(Job job, Codec<MAP_IN> mapSrcCodec,
 				Mapper<MAP_IN, MAP_OUT> map, Codec<MAP_OUT> outCodec) throws IOException {
+			logger.fine("Input table: " + src.getTableName());
+
 			HadoopTableMapper<MAP_IN, MAP_OUT> hMapper
 					= new HadoopTableMapper<>(map, mapSrcCodec, outCodec, src.getFamilyName());
 			writeObjectToConf(job.getConfiguration(), hMapper);
@@ -392,10 +396,12 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 
 		HadoopReducer<MAP_OUT, E> hReducer = new HadoopReducer<>(reduce, reduceSrcCodec, codec);
 		writeObjectToConf(job.getConfiguration(), hReducer);
+
 		TableMapReduceUtil.initTableReducerJob(
 				target.getTableName(), // output table
 				DecoratorHadoopReducer.class, // reducer class
 				job);
+		logger.fine("Output table: " + target.getTableName());
 
 		job.setGroupingComparatorClass(KeyGroupingComparator.class);
 		job.setSortComparatorClass(KeySortingComparator.class);
