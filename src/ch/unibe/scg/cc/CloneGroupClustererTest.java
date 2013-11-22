@@ -19,6 +19,7 @@ import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalCounterModule;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Source;
 
@@ -35,7 +36,7 @@ public final class CloneGroupClustererTest {
 	@Test
 	public void testMap() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(new InMemoryStorage()))
+				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()))
 						.with(new TestModule()), new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
 		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays

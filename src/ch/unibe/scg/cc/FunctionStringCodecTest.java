@@ -10,6 +10,8 @@ import org.junit.Test;
 import ch.unibe.scg.cc.Protos.Function;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalCounterModule;
+import ch.unibe.scg.cells.LocalExecutionModule;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -20,7 +22,8 @@ public class FunctionStringCodecTest {
 	/** Test {@link FunctionStringCodec#encode} */
 	@Test
 	public void testFunctionStringCodec() throws IOException {
-		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()));
+		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage(), new LocalCounterModule()),
+				new LocalExecutionModule());
 		Codec<Str<Function>> fsCodec = i.getInstance(FunctionStringCodec.class);
 		String input = "" +
 				"public final class GitTablePopulatorTest {\n"

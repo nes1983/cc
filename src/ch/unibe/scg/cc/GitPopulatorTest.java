@@ -38,6 +38,8 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cells.AdapterOneShotIterable;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalCounterModule;
+import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Sink;
 import ch.unibe.scg.cells.Source;
 import ch.unibe.scg.cells.TableModule;
@@ -57,7 +59,7 @@ public final class GitPopulatorTest {
 
 	@Test
 	public void testProjnameRegex() throws IOException {
-		try(GitPopulator gitWalker = new GitPopulator(null, null)) {
+		try (GitPopulator gitWalker = new GitPopulator(null, null, null, null, null)) {
 			String fullPathString = "har://hdfs-haddock.unibe.ch/projects/testdata.har"
 					+ "/apfel/.git/objects/pack/pack-b017c4f4e226868d8ccf4782b53dd56b5187738f.pack";
 			String projName = gitWalker.extractProjectName(fullPathString);
@@ -260,7 +262,8 @@ public final class GitPopulatorTest {
 
 	private static Injector walkRepo(GitRepo repo) throws IOException, InterruptedException {
 
-		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage()), new CellsModule() {
+		Injector i = Guice.createInjector(new CCModule(new InMemoryStorage(), new LocalCounterModule()),
+				new LocalExecutionModule(), new CellsModule() {
 			@Override protected void configure() {
 				installTable(TestSink.class, new TypeLiteral<Snippet>() {},
 						Snippet2FunctionsCodec.class, new InMemoryStorage(), nullModule());

@@ -12,6 +12,7 @@ import org.apache.hadoop.mapreduce.MRJobConfig;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cells.hadoop.HBaseStorage;
+import ch.unibe.scg.cells.hadoop.HadoopCounterModule;
 import ch.unibe.scg.cells.hadoop.HadoopPipeline;
 import ch.unibe.scg.cells.hadoop.Table;
 import ch.unibe.scg.cells.hadoop.TableAdmin;
@@ -27,8 +28,8 @@ public final class Main {
 
 	/** Run in cluster. */
 	public static void main(String[] args) throws IOException, InterruptedException {
-
-		Injector i = Guice.createInjector(new UnibeModule(), new CCModule(new HBaseStorage()));
+		Injector i = Guice.createInjector(new UnibeModule(),
+				new CCModule(new HBaseStorage(), new HadoopCounterModule()));
 
 		Configuration conf = i.getInstance(Configuration.class);
 		conf.set(MRJobConfig.MAP_MEMORY_MB, "4000");

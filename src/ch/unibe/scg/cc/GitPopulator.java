@@ -12,6 +12,8 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,15 +28,21 @@ import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathSuffixFilter;
 
+import ch.unibe.scg.cc.Annotations.MapsKilledDueToTimeout;
+import ch.unibe.scg.cc.Annotations.MissingObjectExceptions;
+import ch.unibe.scg.cc.Annotations.ProcessedFiles;
 import ch.unibe.scg.cc.Populator.ProjectRegistrar;
 import ch.unibe.scg.cc.Populator.VersionRegistrar;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
+import ch.unibe.scg.cells.Counter;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Sink;
 
+import com.google.common.base.Throwables;
 import com.google.common.collect.Iterables;
+import com.google.common.util.concurrent.SimpleTimeLimiter;
 
 /** GitWalker walks Git repositories and hands their files to the {@link Populator}. */
 public class GitPopulator implements Mapper<GitRepo, Snippet> {
@@ -42,14 +50,25 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 	final static private Pattern projectNameRegexNonBare = Pattern.compile(".+?/([^/]+)/.git/.*");
 	final static private Pattern projectNameRegexBare = Pattern.compile(".+?/([^/]+)/objects/.*");
 	final static private Logger logger = Logger.getLogger(GitPopulator.class.getName());
+	final static private long THREAD_TIMEOUT_IN_MINUTES = 15L;
 
 	final private CharsetDetector charsetDetector;
 	final private Populator populator;
 
+	final private Counter killedMapCounter;
+	final private Counter processedFilesCounter;
+	final private Counter missingObjectCounter;
+
 	@Inject
-	GitPopulator(CharsetDetector charsetDetector, Populator populator) {
+	GitPopulator(CharsetDetector charsetDetector, Populator populator,
+			@MapsKilledDueToTimeout Counter killedMapCounter,
+			@ProcessedFiles Counter processedFilesCounter,
+			@MissingObjectExceptions Counter missingObjectCounter) {
 		this.charsetDetector = charsetDetector;
 		this.populator = populator;
+		this.killedMapCounter = killedMapCounter;
+		this.processedFilesCounter = processedFilesCounter;
+		this.missingObjectCounter = missingObjectCounter;
 	}
 
 	static class PackedRefParser {
@@ -105,51 +124,71 @@ public class GitPopulator implements Mapper<GitRepo, Snippet> {
 
 	/** Processes the Git repository and hands the files to the {@link Populator}. */
 	@Override
-	public void map(GitRepo repo, OneShotIterable<GitRepo> row, Sink<Snippet> sink) throws IOException, InterruptedException {
+	public void map(final GitRepo repo, final OneShotIterable<GitRepo> row, final Sink<Snippet> sink) throws IOException, InterruptedException {
 		checkArgument(Iterables.size(row) == 1);
+		SimpleTimeLimiter stl = new SimpleTimeLimiter();
+		try {
+			stl.callWithTimeout(new Callable<Void>() {
+				@Override public Void call() throws IOException, InterruptedException {
+					List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
 
-		List<PackedRef> tags = new PackedRefParser().parse(repo.getPackRefs().newInput());
+					long processedFiles = 0L;
+					Path unpackDir = null;
+					try (ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(repo.getProjectName(), sink)) {
+						unpackDir = Files.createTempDirectory(null);
+						FileRepository r = new FileRepository(unpackDir.toFile());
+						r.create(true);
+						PackParser pp = r.newObjectInserter().newPackParser(repo.getPackFile().newInput());
+						// ProgressMonitor set to null, so NullProgressMonitor will be used.
+						pp.parse(null);
 
-		Path unpackDir = null;
-		try(ProjectRegistrar projectRegistrar = populator.makeProjectRegistrar(repo.getProjectName(), sink)) {
-			unpackDir = Files.createTempDirectory(null);
-			FileRepository r = new FileRepository(unpackDir.toFile());
-			r.create(true);
-			PackParser pp = r.newObjectInserter().newPackParser(repo.getPackFile().newInput());
-			// ProgressMonitor set to null, so NullProgressMonitor will be used.
-			pp.parse(null);
+						for (PackedRef paref : tags) {
+							logger.info("WALK TAG: " + paref.getName());
 
-			for (PackedRef paref : tags) {
-				logger.info("WALK TAG: " + paref.getName());
+							try (VersionRegistrar vr = projectRegistrar.makeVersionRegistrar(paref.getName())) {
+								TreeWalk treeWalk = new TreeWalk(r);
+								treeWalk.addTree(new RevWalk(r).parseCommit(paref.getKey()).getTree());
+								treeWalk.setRecursive(true);
+								treeWalk.setFilter(PathSuffixFilter.create(".java"));
 
-				try(VersionRegistrar vr = projectRegistrar.makeVersionRegistrar(paref.getName())) {
-					TreeWalk treeWalk = new TreeWalk(r);
-					treeWalk.addTree(new RevWalk(r).parseCommit(paref.getKey()).getTree());
-					treeWalk.setRecursive(true);
-					treeWalk.setFilter(PathSuffixFilter.create(".java"));
+								while (treeWalk.next()) {
+									// There's only one tree; it has index 0.
+									ObjectId objectId = treeWalk.getObjectId(0);
+									byte[] fileContents = treeWalk.getObjectReader().open(objectId).getBytes();
+									vr.makeFileRegistrar().register(treeWalk.getPathString(),
+											new String(fileContents, charsetDetector.charsetOf(fileContents)));
+									// We can't just increment the Hadoop counter directly here because otherwise
+									// processed files of timeouted map tasks would get counted too.
+									processedFiles++;
 
-					while (treeWalk.next()) {
-						// There's only one tree; it has index 0.
-						ObjectId objectId = treeWalk.getObjectId(0);
-						byte[] fileContents = treeWalk.getObjectReader().open(objectId).getBytes();
-						vr.makeFileRegistrar().register(treeWalk.getPathString(),
-								new String(fileContents, charsetDetector.charsetOf(fileContents)));
-						// TODO processedFilesCounter.increment();
+									if (Thread.currentThread().isInterrupted()) {
+										// We just return here because counters only count with successful map tasks.
+										killedMapCounter.increment(1L);
+										return null;
+									}
+								}
+							} catch (MissingObjectException moe) {
+								missingObjectCounter.increment(1L);
+							}
+						}
+						processedFilesCounter.increment(processedFiles);
+					} finally {
+						if (unpackDir != null) {
+							try {
+								removeRecursive(unpackDir);
+							} catch (IOException e) {
+								logger.warning("Failed to delete " + unpackDir + " because " + e);
+							}
+						}
 					}
-				} catch (MissingObjectException moe) {
-					logger.warning("MissingObjectException in " + repo.getProjectName() + " : " + moe);
+					logger.info("Finished processing: " + repo.getProjectName());
+					return null;
 				}
-			}
-		} finally {
-			if (unpackDir != null) {
-				try {
-					removeRecursive(unpackDir);
-				} catch(IOException e) {
-					logger.warning("Failed to delete " + unpackDir + " because " + e);
-				}
-			}
+			}, THREAD_TIMEOUT_IN_MINUTES, TimeUnit.MINUTES, true);
+		} catch (Exception e) {
+			Throwables.propagateIfPossible(e, IOException.class, InterruptedException.class);
+			throw new RuntimeException("This shouldn't happen. Exception is neither IOException or InterruptedException.");
 		}
-		logger.info("Finished processing: " + repo.getProjectName());
 	}
 
 	/** Taken from http://stackoverflow.com/questions/779519/delete-files-recursively-in-java/8685959#8685959 */

@@ -1,8 +1,11 @@
 package ch.unibe.scg.cc;
 
+import ch.unibe.scg.cc.Annotations.MapsKilledDueToTimeout;
+import ch.unibe.scg.cc.Annotations.MissingObjectExceptions;
 import ch.unibe.scg.cc.Annotations.PopularSnippets;
 import ch.unibe.scg.cc.Annotations.PopularSnippetsThreshold;
 import ch.unibe.scg.cc.Annotations.Populator;
+import ch.unibe.scg.cc.Annotations.ProcessedFiles;
 import ch.unibe.scg.cc.Annotations.Type2;
 import ch.unibe.scg.cc.Protos.CodeFile;
 import ch.unibe.scg.cc.Protos.Function;
@@ -12,6 +15,7 @@ import ch.unibe.scg.cc.Protos.Version;
 import ch.unibe.scg.cc.javaFrontend.JavaModule;
 import ch.unibe.scg.cc.regex.Replace;
 import ch.unibe.scg.cells.CellsModule;
+import ch.unibe.scg.cells.CounterModule;
 import ch.unibe.scg.cells.StorageModule;
 import ch.unibe.scg.cells.hadoop.HBaseTableModule;
 
@@ -24,10 +28,15 @@ import com.google.protobuf.ByteString;
 /** Configuration that gets all of the CC package configured. */
 public final class CCModule extends CellsModule {
 	final private StorageModule storageModule;
+	final private CounterModule counterModule;
 
-	/** HBase and InMemory both work as storageModules. */
-	public CCModule(StorageModule storageModule) {
+	/**
+	 * HBase and InMemory both work as storageModules.
+	 * Local and Hadoop both work as counterModules.
+	 */
+	public CCModule(StorageModule storageModule, CounterModule counterModule) {
 		this.storageModule = storageModule;
+		this.counterModule = counterModule;
 	}
 
 	private static class Type2Module extends PrivateModule {
@@ -67,5 +76,9 @@ public final class CCModule extends CellsModule {
 		install(new Type2Module());
 
 		install(new JavaModule());
+
+		installCounter(MapsKilledDueToTimeout.class, counterModule);
+		installCounter(ProcessedFiles.class, counterModule);
+		installCounter(MissingObjectExceptions.class, counterModule);
 	}
 }

@@ -61,4 +61,22 @@ public class Annotations {
 	@Target({ FIELD, PARAMETER, METHOD })
 	@Retention(RUNTIME)
 	static @interface PopularSnippetsThreshold {}
+
+	/** A counter for killed maps due to timeout. */
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface MapsKilledDueToTimeout {}
+
+	/** A counter for processed source files. */
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface ProcessedFiles {}
+
+	/** A counter for MissingObjectExceptions. */
+	@Qualifier
+	@Target({ FIELD, PARAMETER, METHOD })
+	@Retention(RUNTIME)
+	static @interface MissingObjectExceptions {}
 }

@@ -25,6 +25,7 @@ import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
+import ch.unibe.scg.cells.LocalCounterModule;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Source;
 
@@ -40,7 +41,7 @@ public final class Function2FineClonerTest {
 	@Test
 	public void testMap() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(new InMemoryStorage()))
+				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()))
 						.with(new TestModule()),
 				new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
@@ -103,7 +104,8 @@ public final class Function2FineClonerTest {
 	@Ignore // TODO: InMemoryTables should actually not serialize. Test currently broken. Needs fix.
 	public void testSerialization() throws IOException, ClassNotFoundException {
 		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(new InMemoryStorage()))
+				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()), 
+						new LocalExecutionModule())
 				.with(new Function2RoughClonerTest.TestModule()));
 		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
 		try (ObjectOutputStream out = new ObjectOutputStream(bOut)) {
