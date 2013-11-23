@@ -9,7 +9,7 @@ import java.io.StringReader;
 enum Utils {
 	; // Don't instantiate
 
-	public static int countLines(String str) {
+	static int countLines(String str) {
 		LineNumberReader lnr = new LineNumberReader(new StringReader(checkNotNull(str)));
 		try {
 			lnr.skip(Long.MAX_VALUE);
@@ -25,7 +25,7 @@ enum Utils {
 	/**
 	 * Performs hash = hash XOR otherHash. Changes hash in place.
 	 */
-	public static void xor(byte[] hash, byte[] otherHash) {
+	static void xor(byte[] hash, byte[] otherHash) {
 		for (int i = 0; i < hash.length; i++) {
 			hash[i] ^= otherHash[i]; // Beware of the implicit narrowing cast here. But it works out.
 		}
