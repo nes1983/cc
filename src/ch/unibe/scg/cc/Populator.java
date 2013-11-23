@@ -202,13 +202,13 @@ public class Populator implements Closeable, Serializable {
 				type1.normalize(c);
 				String normalized = c.toString();
 
-				// TODO: Should this be part of the tokenizer?
-				fun = Function.newBuilder(fun).setHash(ByteString.copyFrom(standardHasher.hash(fun.getContents())))
-						.setCodeFile(fil.getHash()).build();
-
 				if (Utils.countLines(normalized) < MINIMUM_LINES) {
 					continue;
 				}
+
+				// TODO: Should this be part of the tokenizer?
+				fun = Function.newBuilder(fun).setHash(ByteString.copyFrom(standardHasher.hash(fun.getContents())))
+						.setCodeFile(fil.getHash()).build();
 
 				functionStringSink.write(new Str<Function>(fun.getHash(), fun.getContents()));
 
