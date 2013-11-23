@@ -120,10 +120,7 @@
 			keyfile="${user.home}/.ssh/id_rsa" command="hadoop jar cc.jar ${libjars} ${classArgument}"/>
 	</target>
 
-	<target depends="clean" name="cleanall"/>
-	<target depends="build-subprojects,build-project" name="build"/>
-	<target name="build-subprojects"/>
-	<target depends="init" name="build-project">
+	<target depends="init" name="build">
 		<!--
 		If you are on Windows, comment the next line. 
 		Before running this script run ./run-protoc-win.sh manually 
@@ -135,23 +132,6 @@
 			<src path="src-gen"/>
 			<classpath refid=".classpath"/>
 		</javac>
-	</target>
-
-	<target description="Build all projects which reference this project. Useful to propagate changes."
-		name="build-refprojects"/>
-	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-		<copy todir="${ant.library.dir}">
-			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-		</copy>
-		<unzip dest="${ant.library.dir}">
-			<patternset includes="jdtCompilerAdapter.jar"/>
-			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-		</unzip>
-	</target>
-
-	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-		<antcall target="build"/>
 	</target>
 
 	<target name="CC">
