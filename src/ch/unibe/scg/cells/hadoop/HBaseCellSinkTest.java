@@ -6,23 +6,17 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
-import ch.unibe.scg.cells.CellLookupTable;
-import ch.unibe.scg.cells.CellSink;
 import ch.unibe.scg.cells.CellSource;
 
-import com.google.common.base.Stopwatch;
 import com.google.common.collect.Iterables;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Key;
-import com.google.inject.TypeLiteral;
 import com.google.protobuf.ByteString;
 
 /** Testing {@link HBaseCellSink} */
@@ -46,11 +40,12 @@ public final class HBaseCellSinkTest {
 
 	/** Testing {@link HBaseCellSink#write(Cell)}. */
 	@Test
-	public void writeSmokeTest() throws IOException {
+	public void writeTest() throws IOException {
 		final Injector i = Guice.createInjector(new UnibeModule(),
 				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
 		ByteString key = ByteString.copyFromUtf8("123");
-		Cell<Void> cell = Cell.<Void> make(key, key, ByteString.EMPTY);
+		ByteString col = ByteString.copyFromUtf8("abc");
+		Cell<Void> cell = Cell.<Void> make(key, col, ByteString.EMPTY);
 
 		try (HBaseCellLookupTable<Void> lookup = i.getInstance(HBaseCellLookupTable.class)) {
 			Iterable<Cell<Void>> rowBeforeWrite = lookup.readRow(key);
@@ -64,39 +59,10 @@ public final class HBaseCellSinkTest {
 			assertFalse(rowAfterWrite.toString(), Iterables.isEmpty(rowAfterWrite));
 		}
 
-		try(CellSource<Void> src = i.getInstance(HBaseCellSource.class)) {
+		try (CellSource<Void> src = i.getInstance(HBaseCellSource.class)) {
 			Iterable<Cell<Void>> row = Iterables.getOnlyElement(src);
 			Cell<Void> actual = Iterables.getOnlyElement(row);
 			assertThat(actual, is(cell));
 		}
-	}
-
-	@Test
-	public void checkTimes() throws IOException, InterruptedException {
-		final Injector injector = Guice.createInjector(new UnibeModule(),
-				new HBaseStorage(), new HBaseTableModule<>(testTable.getTableName(), FAMILY));
-		final ByteString key = ByteString.copyFromUtf8("123");
-		final int rounds = 50;
-
-		final Stopwatch writeStopWatch = new Stopwatch();
-		try (CellSink<Void> sink = injector.getInstance(Key.get(new TypeLiteral<CellSink<Void>>() {}))) {
-			writeStopWatch.start();
-			for (int i = 0; i < rounds; i++) {
-				sink.write(Cell.<Void> make(key, key, ByteString.EMPTY));
-			}
-		}
-		writeStopWatch.stop();
-		final long time2Write = writeStopWatch.elapsed(TimeUnit.MILLISECONDS);
-
-		final Stopwatch readStopWatch = new Stopwatch();
-		try (CellLookupTable<Void> lookup = injector.getInstance(HBaseCellLookupTable.class)) {
-			readStopWatch.start();
-			for (int i = 0; i < rounds; i++) {
-				assertFalse(String.valueOf(i), Iterables.isEmpty(lookup.readRow(key)));
-			}
-		}
-		readStopWatch.stop();
-		final long time2Read = readStopWatch.elapsed(TimeUnit.MILLISECONDS);
-		assertTrue(time2Write < time2Read);
 	}
 }

@@ -7,6 +7,7 @@ import javax.inject.Inject;
 
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
+import org.apache.hadoop.hbase.client.Scan;
 
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellLookupTable;
@@ -32,8 +33,30 @@ class HBaseCellLookupTable<T> implements CellLookupTable<T> {
 
 	@Override
 	public Iterable<Cell<T>> readRow(ByteString rowPrefix) throws IOException {
+		byte[] from = rowPrefix.toByteArray();
+
+		// `To` is minimally greater than from, if possible.
+		byte[] to = rowPrefix.toByteArray();
+		boolean toGreaterThanFrom = false;
+		for (int i = from.length - 1; i >= 0; i--) {
+			if (to[i] != Byte.MAX_VALUE) {
+				to[i]++;
+				toGreaterThanFrom = true;
+				break;
+			}
+		}
+
+		Scan scan;
+		if (toGreaterThanFrom) {
+			scan = new Scan(from, to); // Range: [from, to)
+		} else {
+			scan = new Scan(from); // Range: [from, inf)
+		}
+		scan.addFamily(family);
+
+
 		Builder<Cell<T>> ret = ImmutableList.builder();
-		try(ResultScanner scanner = hTable.hTable.getScanner(family, rowPrefix.toByteArray())) {
+		try (ResultScanner scanner = hTable.hTable.getScanner(scan)) {
 			for (Result result = scanner.next(); result != null; result = scanner.next()) {
 				ByteString rowKey = ByteString.copyFrom(result.getRow());
 				for (Entry<byte[], byte[]> hbaseCell : result.getFamilyMap(family).entrySet()) {
