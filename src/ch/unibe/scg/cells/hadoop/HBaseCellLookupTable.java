@@ -39,17 +39,15 @@ class HBaseCellLookupTable<T> implements CellLookupTable<T> {
 		byte[] to = rowPrefix.toByteArray();
 		boolean toGreaterThanFrom = false;
 		for (int i = from.length - 1; i >= 0; i--) {
-			if (to[i] != Byte.MAX_VALUE) {
+			if (to[i] != -1) { // -1 is the *lexicographically* highest byte.
 				to[i]++;
 				toGreaterThanFrom = true;
 				break;
 			}
 		}
 
-		Scan scan;
-		if (toGreaterThanFrom) {
-			scan = new Scan(from, to); // Range: [from, to)
-		} else {
+		Scan scan = new Scan(from, to); // Range: [from, to)
+		if (!toGreaterThanFrom) {
 			scan = new Scan(from); // Range: [from, inf)
 		}
 		scan.addFamily(family);
