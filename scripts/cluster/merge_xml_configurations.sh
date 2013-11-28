@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# merges two files of property settings together and returns them integrated in a xml configuration file
-# first argument is the cluster properties file, second argument the node specific properties file
+# Merges two files of property settings together and returns them integrated in a single .xml configuration file.
+# First argument is the cluster properties file, second argument the node specific properties file.
 
 CLUSTER_PROPS=$1
 NODE_PROPS=$2
