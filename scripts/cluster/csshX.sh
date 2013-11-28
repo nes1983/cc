@@ -1,2 +1,2 @@
 #!/bin/bash
-csshX haddock leela pinocchio bender
+csshX haddock leela pinocchio
