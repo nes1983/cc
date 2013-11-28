@@ -17,6 +17,11 @@
 	<value>1073741824</value>
 </property>
 <property>
+	<!-- MemStore will be flushed to disk if size of the memstore exceeds this number of bytes (default: 134217728). -->
+	<name>hbase.hregion.memstore.flush.size</name>
+	<value>134217728</value>
+</property>
+<property>
 	<name>hfile.block.index.cacheonwrite</name>
 	<value>true</value>
 </property>

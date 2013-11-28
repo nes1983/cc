@@ -1,0 +1,15 @@
+<property>
+	<!-- Relax on number of StoreFiles in a Store and avoid blockings during bulk load (default: 7). -->
+	<name>hbase.hstore.blockingStoreFiles</name>
+	<value>20</value>
+</property>
+<property>
+	<!-- Allow MemStore size up to x times hbase.hregion.memstore.flush.size before blocking region (default: 2). -->
+	<name>hbase.hregion.memstore.block.multiplier</name>
+	<value>75</value>
+</property>
+<property>
+	<!-- Increase handler count so that the region server can handle more concurrent requests (default: 10). -->
+	<name>hbase.regionserver.handler.count</name>
+	<value>75</value>
+</property>
