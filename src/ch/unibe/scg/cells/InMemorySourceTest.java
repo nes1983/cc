@@ -87,4 +87,19 @@ public final class InMemorySourceTest {
 		row = s.readRow(ByteString.copyFromUtf8("aa0b"));
 		assertThat(Iterables.toString(row), is("[[[97, 97, 48, 98]]{[49]}]"));
 	}
+
+	@Test
+	public void testAbsent() {
+		Iterable<Cell<Void>> row = s.readRow(ByteString.copyFromUtf8("aa0ba"));
+		assertThat(Iterables.isEmpty(row), is(true));
+
+		row = s.readRow(ByteString.copyFromUtf8("qq"));
+		assertThat(Iterables.isEmpty(row), is(true));
+
+		row = s.readRow(ByteString.copyFromUtf8("00"));
+		assertThat(Iterables.isEmpty(row), is(true));
+
+		row = s.readRow(ByteString.copyFromUtf8("aaba"));
+		assertThat(Iterables.isEmpty(row), is(true));
+	}
 }
