@@ -11,6 +11,8 @@ import com.google.protobuf.ByteString;
 
 /** Cell of an HTable. */
 public final class Cell<T> implements Comparable<Cell<T>>{
+	final private static Comparator<ByteString> byteStringCmp = new LexicographicalComparator();
+
 	final private ByteString rowKey;
 	final private ByteString columnKey;
 	final private ByteString cellContents;
@@ -51,14 +53,9 @@ public final class Cell<T> implements Comparable<Cell<T>>{
 	/** Cells are sorted first by row key, then column key. cellContents are not inspected! */
 	@Override
 	public int compareTo(Cell<T> o) {
-		final Comparator<ByteString> cmp = new Comparator<ByteString>() {
-			@Override public int compare(ByteString o1, ByteString o2) {
-				return o1.asReadOnlyByteBuffer().compareTo(o2.asReadOnlyByteBuffer());
-			}
-		};
 		return ComparisonChain.start()
-				.compare(rowKey, o.rowKey, cmp)
-				.compare(columnKey, o.columnKey, cmp)
+				.compare(rowKey, o.rowKey, byteStringCmp)
+				.compare(columnKey, o.columnKey, byteStringCmp)
 				.result();
 	}
 
