@@ -7,12 +7,11 @@ import java.io.Serializable;
 import com.google.protobuf.ByteString;
 
 /** A lookup table is a generalized bigtable, allowing access by row and column. */
-// TODO: Missing features: lookup by prefix, mixes of row and column lookup.
+// TODO: Missing feature: exact row lookup, column lookup.
 public interface CellLookupTable<T> extends Closeable, Serializable {
-	/** @return an undecoded row of cells.
-	 * @throws IOException */
-	Iterable<Cell<T>> readRow(ByteString rowKey) throws IOException;
+	/** @return an undecoded row of cells. */
+	Iterable<Cell<T>> readRow(ByteString rowKeyPrefix) throws IOException;
 
 	/** @return an undecoded column of cells. */
-	Iterable<Cell<T>> readColumn(ByteString columnKey) throws IOException;
+	Iterable<Cell<T>> readColumn(ByteString columnKeyPrefix) throws IOException;
 }
