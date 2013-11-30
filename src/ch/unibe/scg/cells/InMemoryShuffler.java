@@ -168,21 +168,6 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		return store.subList(startPos, endPos);
 	}
 
-	private ByteString keyPlusOne(ByteString rowKey) {
-		assert !rowKey.isEmpty() : "This case needs special treatment on caller level.";
-		return ByteString.copyFrom(new BigInteger(rowKey.toByteArray()).add(BigInteger.ONE)
-				.toByteArray());
-	}
-
-	/**
-	 * @return startPos of the row. If there is no such row, The insertion point is
-	 *         returned. The returned value is nonnegative.
-	 */
-	private int rowStartPos(ByteString rowKey) {
-		return retrieveInsertionPoint(Collections.binarySearch(store, new Cell<T>(rowKey, ByteString.EMPTY,
-				ByteString.EMPTY)));
-	}
-
 	/** This operation is threadsafe -- but not during writes. See class comment. */
 	@Override
 	public Iterable<Cell<T>> readColumn(ByteString columnKey) {
@@ -204,12 +189,27 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 		return ret;
 	}
 
+	private ByteString keyPlusOne(ByteString rowKey) {
+		assert !rowKey.isEmpty() : "This case needs special treatment on caller level.";
+		return ByteString.copyFrom(new BigInteger(rowKey.toByteArray()).add(BigInteger.ONE)
+				.toByteArray());
+	}
+
+	/**
+	 * @return startPos of the row >= 0. If there is no such row, The insertion point is
+	 *         returned.
+	 */
+	private int rowStartPos(ByteString rowKey) {
+		return retrieveInsertionPoint(Collections.binarySearch(store, new Cell<T>(rowKey, ByteString.EMPTY,
+				ByteString.EMPTY)));
+	}
+
 	private int indexStartPos(ByteString colKey) {
 		return retrieveInsertionPoint(Collections.binarySearch(colIndex, new RowPointer(colKey, ByteString.EMPTY)));
 	}
 
 	private int retrieveInsertionPoint(int pos) {
-		if (pos < 0) { // Retrieve insertion point.
+		if (pos < 0) {
 			pos = -pos - 1;
 		}
 
