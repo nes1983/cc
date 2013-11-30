@@ -30,17 +30,27 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
 			}
 		}
 
-		List<Cell<T>> prev = null;
+		List<Cell<T>> prevShard = null;
 		for (List<Cell<T>> cur : store) {
 			if (cur.isEmpty()) {
 				continue;
 			}
 
-			if (prev != null && prev.get(prev.size() - 1).compareTo(cur.get(0)) >= 0) {
+			if (prevShard != null && prevShard.get(prevShard.size() - 1).compareTo(cur.get(0)) >= 0) {
 				return false;
 			}
 
-			prev = cur;
+			prevShard = cur;
+		}
+
+		Iterable<Cell<T>> flatStore = Iterables.concat(store);
+
+		Cell<T> prevCell = null;
+		for (Cell<T> c : flatStore) {
+			if (c.equals(prevCell)) {
+				return false;
+			}
+			prevCell = c;
 		}
 
 		return true;
