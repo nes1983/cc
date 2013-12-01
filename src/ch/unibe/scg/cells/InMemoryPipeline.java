@@ -34,6 +34,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;
+	/** Synchronized set. */
 	final private Provider<Set<LocalCounter>> registry;
 	final private PrintStream out;
 
@@ -322,14 +323,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	}
 
 	private void printCounters() {
-		synchronized (registry) {
+		synchronized (registry.get()) { // Needed for iterating over a synchronized set.
 			for(LocalCounter c : registry.get()) {
-				if(Thread.interrupted()) {
-					// restoring interrupted flag, as this method could be called outside of executor's pool.
-					Thread.currentThread().interrupt();
-					break;
-				}
-
 				out.println(c.toString());
 			}
 		}

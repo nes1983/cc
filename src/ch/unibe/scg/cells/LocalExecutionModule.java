@@ -11,6 +11,10 @@ import com.google.inject.TypeLiteral;
 
 /** A module that configures a {@link Pipeline} for local (non-distributed) execution. */
 public final class LocalExecutionModule extends AbstractModule {
+	/**
+	 * Note that the counter registry is a synchronized set, and thus iterated as described in
+	 * {@link Collections#synchronizedSet(Set)}.
+	 */
 	private static class CounterRegistryProvider implements Provider<Set<LocalCounter>> {
 		@Override
 		public Set<LocalCounter> get() {
