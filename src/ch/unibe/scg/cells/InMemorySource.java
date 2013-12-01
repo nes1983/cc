@@ -16,7 +16,7 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
 
 	/** Immutable. */
 	final private List<List<Cell<T>>> store;
-	final Comparator<ByteString> cmp = new LexicographicalComparator();
+	final private Comparator<ByteString> cmp = new LexicographicalComparator();
 
 	InMemorySource(List<List<Cell<T>>> store) {
 		assert isStoreOk(store);

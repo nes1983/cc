@@ -4,8 +4,12 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,12 +22,15 @@ import javax.inject.Provider;
 
 import com.google.common.base.Throwables;
 import com.google.common.collect.Iterables;
+import com.google.common.collect.Ordering;
 import com.google.common.io.Closer;
+import com.google.protobuf.ByteString;
 
 /** Implementation of a {@link Pipeline} meant to run in memory. */
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 	final private static int PRINT_INTERVAL = 1; // in seconds.
 	final private static int SHUTDOWN_TIMEOUT = 20; // in seconds.
+	final private static int SAMPLE_SIZE = 100; // How much to sample from each shard to get splitters.
 	final private CellSource<IN> pipeSrc;
 	final private CellSink<OUT> pipeSink;
 	final private PipelineStageScope scope;
@@ -226,6 +233,92 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT> {
 				scheduler.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
 			}
 		}
+	}
+
+	/**
+	 * @return the sorted list of all entries in {@code sources} between {@code from} and {@code to}.
+	 * @param sources collection of individually sorted lists.
+	 * @param from first row key to be included, inclusive.
+	 * @param to last row key to be included, exclusive.
+	 */
+	static <T> List<Cell<T>> merge(Iterable<List<Cell<T>>> sources, ByteString from, ByteString to) {
+		assert shardsOrdered(sources);
+
+		Cell<T> fromProbe = Cell.make(from, ByteString.EMPTY, ByteString.EMPTY);
+		Cell<T> toProbe = Cell.make(to, ByteString.EMPTY, ByteString.EMPTY);
+
+		Set<Cell<T>> ret = new HashSet<>();
+		for (List<Cell<T>> src : sources) {
+			int fromPos = insertionPoint(fromProbe, src);
+			int toPos = insertionPoint(toProbe, src);
+
+			ret.addAll(src.subList(fromPos, toPos));
+		}
+
+		return Ordering.natural().immutableSortedCopy(ret);
+	}
+
+	/** Same as {@link #merge}, but assuming parameter {@code to} as infinite. */
+	static <T> List<Cell<T>> mergeUnbounded(Iterable<List<Cell<T>>> sources, ByteString from) {
+		assert shardsOrdered(sources);
+
+		Cell<T> fromProbe = Cell.make(from, ByteString.EMPTY, ByteString.EMPTY);
+
+		Set<Cell<T>> ret = new HashSet<>();
+		for (List<Cell<T>> src : sources) {
+			int fromPos = insertionPoint(fromProbe, src);
+			ret.addAll(src.subList(fromPos, src.size()));
+		}
+
+		return Ordering.natural().immutableSortedCopy(ret);
+	}
+
+	/** @return the position {@code needle} in {@code needle}, or the insertion point, if absent. */
+	private static <T> int insertionPoint(Cell<T> needle, List<Cell<T>> haystack) {
+		int pos = Collections.binarySearch(haystack, needle);
+		if (pos < 0) {
+			pos = ~pos;
+		}
+		return pos;
+	}
+
+	/**
+	 * @return row keys of the start of each partiton, inclusive, such that all partitions are equal size.
+	 * @param sources each source should be sorted.
+	 */
+	static <T> List<ByteString> splitters(Iterable<List<Cell<T>>> sources, int nPartitions) {
+		assert nPartitions > 0;
+		assert shardsOrdered(sources);
+
+		// Grab a sample of SAMPLE_SIZE elements from each source.
+		List<Cell<T>> sample = new ArrayList<>();
+		for (List<Cell<T>> src : sources) {
+			// step is src.size / SAMPLE_SIZE, rounded up to ensure step > 0
+			int step = (src.size() + SAMPLE_SIZE - 1) / SAMPLE_SIZE;
+			for (int i = 0; i < src.size(); i += step) {
+				sample.add(src.get(i));
+			}
+		}
+
+		Collections.sort(sample);
+
+		List<ByteString> ret = new ArrayList<>();
+		// Rounded up, to ensure step > 0
+		int step = sample.size() + nPartitions - 1 / nPartitions;
+		for (int i = 0; i < sample.size(); i += step) {
+			ret.add(sample.get(i).getRowKey());
+		}
+		return ret;
+	}
+
+	private static <T> boolean shardsOrdered(Iterable<List<Cell<T>>> shards) {
+		for (List<Cell<T>> s : shards) {
+			if (!Ordering.natural().isOrdered(s)) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 	private void printCounters() {
