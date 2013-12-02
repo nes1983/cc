@@ -14,7 +14,7 @@ import java.io.IOException;
  *  		.influx(codec1)
  *  		.mapper(m1)
  *  		.shuffle(codec2)
- *  		.efflux(m2, codec3)
+ *  		.mapAndEfflux(m2, codec3) 
  * }
  */
 // TODO: Give a longer example.
