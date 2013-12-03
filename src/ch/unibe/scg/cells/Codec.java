@@ -5,15 +5,17 @@ import java.io.Serializable;
 
 
 /**
- * A codec converts user-defined data types to and from cells.
+ * A codec converts objects of type {@code T} to and from cells.
  *
- * @author Niko Schwarz
+ * <p>There can be more than one Codec for the same type {@code T}.
+ * However, a cell should be decoded by the same codec that encoded it.
  *
- * @param <T> The user-defined data type. Often a proto buffer.
+ * @param <T> The user-defined data type.
+ * @see Cell
  */
 public interface Codec<T> extends Serializable {
-	/** Encode {@code s} into a cell.*/
-	Cell<T> encode(T s);
-	/** Decode cell {@encoded}. */
-	T decode(Cell<T> encoded) throws IOException;
+	/** Encode {@code obj} into a cell.*/
+	Cell<T> encode(T obj);
+	/** Decode cell. */
+	T decode(Cell<T> cell) throws IOException;
 }

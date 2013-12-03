@@ -9,7 +9,15 @@ import java.util.Comparator;
 import com.google.common.collect.ComparisonChain;
 import com.google.protobuf.ByteString;
 
-/** Cell of an HTable. */
+/**
+ * An encoded cell of data, modeled after bigtable cells.
+ * A cell encodes an object of type {@code T}.
+ * By convention, the encoding defines a grouping, and an ordering of cells.
+ * Cells of the same row key are grouped into one row.
+ * Inside of a row, cells are ordered by column key, in lexicographic order.
+ *
+ * @see Codec
+ */
 public final class Cell<T> implements Comparable<Cell<T>>{
 	final private static Comparator<ByteString> byteStringCmp = new LexicographicalComparator();
 
