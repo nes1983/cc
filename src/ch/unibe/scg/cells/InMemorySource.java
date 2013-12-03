@@ -17,9 +17,11 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 	private static final long serialVersionUID = 1L;
 	private static final Comparator<ByteString> cmp = new LexicographicalComparator();
 
-	/** Immutable. */
+	/** Shards are immutable. Does not contain empty shards. */
 	final private List<List<Cell<T>>> store;
-	/** lazily initialized column index. */
+	/** A sorted index of row keys at the end of shards, to enable fast shard retrieving by row key. */
+	final private List<ByteString> splitIndex;
+	/** Lazily initialized column index. */
 	final private ColIndexSupplier colIndex = new ColIndexSupplier();
 
 	/** To look up a row, get a RowPointer, then look up its row in the store */
@@ -69,14 +71,37 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 		}
 	}
 
-	InMemorySource(List<List<Cell<T>>> store) {
-		assert isStoreOk(store);
+	private InMemorySource(List<List<Cell<T>>> store, List<ByteString> splitIndex) {
 		this.store = store;
+		this.splitIndex = splitIndex;
 	}
 
 	private Object writeReplace() {
 		return new ShallowSerializingCopy.SerializableLiveObject(this);
 	}
+
+	static <T> InMemorySource<T> make(List<List<Cell<T>>> store) {
+		assert isStoreOk(store);
+		List<List<Cell<T>>> nonEmptyStore = new ArrayList<>(store.size());
+		List<ByteString> splitIndex = new ArrayList<>(store.size());
+
+		for (int i = 0; i < store.size(); i++) {
+			List<Cell<T>> shard = store.get(i);
+			if (!shard.isEmpty()) {
+				nonEmptyStore.add(shard);
+				splitIndex.add(shard.get(shard.size() - 1).getRowKey());
+			}
+		}
+
+		return new InMemorySource<>(nonEmptyStore, splitIndex);
+	}
+
+	private static <T> boolean isStoreOk(List<List<Cell<T>>> store) {
+		for (List<Cell<T>> shard : store) {
+			if (!Ordering.<Cell<T>> natural().isOrdered(shard)) {
+				return false;
+			}
+		}
 
 	@Override
 	public Iterator<Cell<T>> iterator() {
@@ -187,14 +212,16 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 
 	/** @return the index of shard that could contain the key prefix. -1 if there's none. */
 	private int findShard(ByteString needle) {
-		// TODO: Replace linear scan with binary search.
-		for (int i = 0; i < store.size(); i++) {
-			List<Cell<T>> shard = store.get(i);
-			if (!shard.isEmpty() && cmp.compare(needle, shard.get(shard.size() - 1).getRowKey()) <= 0) {
-				return i;
-			}
+		if (splitIndex.isEmpty() || cmp.compare(needle, splitIndex.get(splitIndex.size() -1)) > 0) {
+			return -1;
 		}
-		return -1;
+
+		int ret = Collections.binarySearch(splitIndex, needle, cmp);
+		if (ret < 0) {
+			return ~ret;
+		}
+
+		return ret;
 	}
 
 	private static <T> boolean isStoreOk(List<List<Cell<T>>> store) {

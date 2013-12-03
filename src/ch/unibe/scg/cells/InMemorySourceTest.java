@@ -20,7 +20,7 @@ public final class InMemorySourceTest {
 
 	@Before
 	public void setUp() {
-		s = new InMemorySource<>(Arrays.asList(
+		s =  InMemorySource.make(Arrays.asList(
 			Arrays.asList(
 				new Cell<Void>(ByteString.copyFromUtf8("aa0b"), ByteString.copyFromUtf8("1"), ByteString.EMPTY),
 				new Cell<Void>(ByteString.copyFromUtf8("aaab"), ByteString.copyFromUtf8("1"), ByteString.EMPTY),
@@ -76,11 +76,11 @@ public final class InMemorySourceTest {
 
 	@Test
 	public void emptyStore() {
-		InMemorySource<Void> source = new InMemorySource<>(Collections.<List<Cell<Void>>> emptyList());
+		InMemorySource<Void> source = InMemorySource.make(Collections.<List<Cell<Void>>> emptyList());
 		assertThat(Iterables.isEmpty(source), is(true));
 		assertThat(Iterables.isEmpty(source.readRow(ByteString.copyFromUtf8("bla"))), is(true));
 
-		source = new InMemorySource<>(Arrays.<List<Cell<Void>>> asList(
+		source = InMemorySource.make(Arrays.<List<Cell<Void>>> asList(
 				Collections.<Cell<Void>> emptyList(), Collections.<Cell<Void>> emptyList()));
 		assertThat(Iterables.isEmpty(source), is(true));
 		assertThat(Iterables.isEmpty(source.readRow(ByteString.copyFromUtf8("bla"))), is(true));
