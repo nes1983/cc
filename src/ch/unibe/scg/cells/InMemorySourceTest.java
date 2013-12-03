@@ -2,6 +2,7 @@ package ch.unibe.scg.cells;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -107,5 +108,22 @@ public final class InMemorySourceTest {
 
 		row = s.readRow(ByteString.copyFromUtf8("aaba"));
 		assertThat(Iterables.isEmpty(row), is(true));
+	}
+
+	@Test
+	public void testReadColumn() {
+		assertThat(Iterables.getOnlyElement(s.readColumn(ByteString.copyFromUtf8("2"))).getRowKey().toStringUtf8(),
+				is("aaac"));
+		assertThat(Iterables.size(s.readColumn(ByteString.EMPTY)), is(8));
+
+		Iterable<Cell<Void>> col0 = s.readColumn(ByteString.copyFromUtf8("0"));
+		assertThat(Iterables.get(col0, 0).getRowKey().toStringUtf8(), is("aaad"));
+		assertThat(Iterables.get(col0, 1).getRowKey().toStringUtf8(), is("aaae"));
+		assertThat(Iterables.get(col0, 2).getRowKey().toStringUtf8(), is("aab"));
+		assertThat(Iterables.get(col0, 3).getRowKey(), is(ByteString.copyFrom(new byte[] {-1, 'a', 'd'})));
+		assertThat(col0.toString(), Iterables.size(col0), is(4));
+
+		assertTrue(Iterables.isEmpty(s.readColumn(ByteString.copyFromUtf8("3"))));
+		assertTrue(Iterables.isEmpty(s.readColumn(ByteString.copyFromUtf8("/"))));
 	}
 }
