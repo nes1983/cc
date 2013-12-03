@@ -1,7 +1,6 @@
 package ch.unibe.scg.cells;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -11,11 +10,12 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Ordering;
 import com.google.protobuf.ByteString;
 
-class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
+
+class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<Cell<T>> {
 	private static final long serialVersionUID = 1L;
 
 	/** Immutable. */
-	final private List<List<Cell<T>>> store;
+	final List<List<Cell<T>>> store;
 	final private Comparator<ByteString> cmp = new LexicographicalComparator();
 
 	InMemorySource(List<List<Cell<T>>> store) {
@@ -23,70 +23,28 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
 		this.store = store;
 	}
 
-	private static <T> boolean isStoreOk(List<List<Cell<T>>> store) {
-		for (List<Cell<T>> shard : store) {
-			if (!Ordering.<Cell<T>> natural().isOrdered(shard)) {
-				return false;
-			}
-		}
-
-		List<Cell<T>> prevShard = null;
-		for (List<Cell<T>> cur : store) {
-			if (cur.isEmpty()) {
-				continue;
-			}
-
-			if (prevShard != null && prevShard.get(prevShard.size() - 1).compareTo(cur.get(0)) >= 0) {
-				return false;
-			}
-
-			prevShard = cur;
-		}
-
-		Iterable<Cell<T>> flatStore = Iterables.concat(store);
-
-		Cell<T> prevCell = null;
-		for (Cell<T> c : flatStore) {
-			if (c.equals(prevCell)) {
-				return false;
-			}
-			prevCell = c;
-		}
-
-		return true;
+	private Object writeReplace() {
+		return new ShallowSerializingCopy.SerializableLiveObject(this);
 	}
 
 	@Override
-	public Iterator<Iterable<Cell<T>>> iterator() {
-		Iterable<Cell<T>> flatStore = Iterables.concat(store);
+	public Iterator<Cell<T>> iterator() {
+		return Iterables.concat(store).iterator();
+	}
 
-		if (Iterables.isEmpty(flatStore)) {
-			return Collections.<Iterable<Cell<T>>> emptyList().iterator();
-		}
-
-		List<Iterable<Cell<T>>> ret = new ArrayList<>();
-		List<Cell<T>> partition = new ArrayList<>();
-		Cell<T> last = null;
-		for (Cell<T> c : flatStore) {
-			if ((last != null) && (!c.getRowKey().equals(last.getRowKey()))) {
-				ret.add(partition);
-				partition = new ArrayList<>();
-				last = null;
-			}
-
-			partition.add(c);
-
-			last = c;
-		}
-
-		ret.add(partition);
-
-		return ret.iterator();
+	@Override
+	public int nShards() {
+		return store.size();
 	}
 
 	@Override
 	public void close() {
 		// Nothing to do.
+	}
+
+	@Override
+	public OneShotIterable<Cell<T>> getShard(int shard) {
+		return new AdapterOneShotIterable<>(store.get(shard));
 	}
 
 	@Override
@@ -155,6 +113,7 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
 
 	/** @return the index of shard that could contain the key prefix. -1 if there's none. */
 	private int findShard(ByteString needle) {
+		// TODO: Replace linear scan with binary search.
 		for (int i = 0; i < store.size(); i++) {
 			List<Cell<T>> shard = store.get(i);
 			if (!shard.isEmpty() && cmp.compare(needle, shard.get(shard.size() - 1).getRowKey()) <= 0) {
@@ -162,5 +121,38 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T> {
 			}
 		}
 		return -1;
+	}
+
+	private static <T> boolean isStoreOk(List<List<Cell<T>>> store) {
+		for (List<Cell<T>> shard : store) {
+			if (!Ordering.<Cell<T>> natural().isOrdered(shard)) {
+				return false;
+			}
+		}
+
+		List<Cell<T>> prevShard = null;
+		for (List<Cell<T>> cur : store) {
+			if (cur.isEmpty()) {
+				continue;
+			}
+
+			if (prevShard != null && prevShard.get(prevShard.size() - 1).compareTo(cur.get(0)) >= 0) {
+				return false;
+			}
+
+			prevShard = cur;
+		}
+
+		Iterable<Cell<T>> flatStore = Iterables.concat(store);
+
+		Cell<T> prevCell = null;
+		for (Cell<T> c : flatStore) {
+			if (c.equals(prevCell)) {
+				return false;
+			}
+			prevCell = c;
+		}
+
+		return true;
 	}
 }

@@ -45,7 +45,7 @@ import com.google.protobuf.ByteString;
  * However, if serialization is attempted using a classical {@link java.io.ObjectOutputStream},
  * it will throw a {@link UnsupportedOperationException}.
  */
-public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T> {
+public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T>, Iterable<Iterable<Cell<T>>> {
 	final private static long serialVersionUID = 1L;
 
 	/** The backing store. When used as a sink, this is mutable. Closing the sink makes the field immutable. */
@@ -215,5 +215,15 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 		assert pos >= 0;
 		return pos;
+	}
+
+	@Override
+	public int nShards() {
+		throw new RuntimeException("Not implemented");
+	}
+
+	@Override
+	public OneShotIterable<Cell<T>> getShard(int shard) {
+		throw new RuntimeException("Not implemented");
 	}
 }

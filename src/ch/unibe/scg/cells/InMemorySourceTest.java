@@ -37,7 +37,13 @@ public final class InMemorySourceTest {
 
 	@Test
 	public void testIterator() {
-		assertThat(Iterables.toString(s),
+		Iterable<OneShotIterable<Cell<Void>>> rows = Cells.breakIntoRows(s);
+		StringBuilder b = new StringBuilder();
+		for (OneShotIterable<Cell<Void>> row : rows) {
+			b.append(Iterables.toString(row));
+			b.append(", ");
+		}
+		assertThat(b.toString(),
 				is("[[[[97, 97, 48, 98]]{[49]}], "
 					+ "[[[97, 97, 97, 98]]{[49]}], "
 					+ "[[[97, 97, 97, 99]]{[49]}, [[97, 97, 97, 99]]{[50]}], "

@@ -32,10 +32,6 @@ public interface Pipeline<IN, EFF> {
 		 * @throws IOException If several exceptions occur, any may be reported.
 		 */
 		void mapAndEfflux(Mapper<I, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException;
-
-		/** Run the entire pipeline, and run {@code offlineMapper} locally. */
-		void effluxWithOfflineMapper(OfflineMapper<I, EFF> offlineMapper, Codec<EFF> codec)
-				throws IOException, InterruptedException;
 	}
 
 	/** A segment that was just mapped and now needs shuffling or an efflux. */

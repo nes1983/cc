@@ -91,7 +91,7 @@ public final class LocalCounterTest {
 		@Override
 		public void map(Integer first, OneShotIterable<Integer> row, Sink<Integer> sink) throws IOException,
 				InterruptedException {
-			for(Integer i : row) {
+			for (Integer i : row) {
 				sink.write(i);
 				ioCounter.increment(1L);
 				usrCounter.increment(2L);
@@ -120,11 +120,9 @@ public final class LocalCounterTest {
 
 		Injector inj = Guice.createInjector(m, new LocalExecutionModule());
 
-		try(InMemoryShuffler<Integer> eff = InMemoryShuffler.getInstance()) {
-			InMemoryPipeline<Integer, Integer> pipe
-					= inj.getInstance(InMemoryPipeline.Builder.class)
-							.make(InMemoryShuffler.copyFrom(generateSequence(1000),
-									new IntegerCodec()), eff);
+		try (InMemoryPipeline<Integer, Integer> pipe
+				= inj.getInstance(InMemoryPipeline.Builder.class)
+					.make(InMemoryShuffler.copyFrom(generateSequence(1000),	new IntegerCodec()))) {
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
 			run(pipe, mapper);
@@ -143,12 +141,12 @@ public final class LocalCounterTest {
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		PrintStream out = new PrintStream(bos, true); // flush after each write.
 
-		try(InMemoryShuffler<Integer> eff = InMemoryShuffler.getInstance()) {
-			InMemoryPipeline<Integer, Integer> pipe
-					= new InMemoryPipeline<>(InMemoryShuffler.copyFrom(generateSequence(1000),
-							new IntegerCodec()), eff, inj.getInstance(PipelineStageScope.class),
-									inj.getInstance(Key.get(new TypeLiteral<Provider<Set<LocalCounter>>>(){})),
-											out);
+		try (InMemoryPipeline<Integer, Integer> pipe
+				= new InMemoryPipeline<>(
+						Codecs.shard(Codecs.encode(generateSequence(1000), new IntegerCodec())),
+						inj.getInstance(PipelineStageScope.class),
+						inj.getInstance(Key.get(new TypeLiteral<Provider<Set<LocalCounter>>>(){})),
+						out)) {
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
 			run(pipe, mapper);
@@ -157,7 +155,7 @@ public final class LocalCounterTest {
 
 			// each line in the log should be of following format: <some name>: <number>.
 			Pattern linePattern = Pattern.compile("\\S+: \\d+");
-			for(String logLine: log.split(System.lineSeparator())) {
+			for (String logLine: log.split(System.lineSeparator())) {
 				assertThat(linePattern.matcher(logLine).matches(), equalTo(true));
 			}
 
@@ -182,7 +180,7 @@ public final class LocalCounterTest {
 	public static Iterable<Integer> generateSequence(int number) {
 		List<Integer> ret = new ArrayList<>(number);
 
-		for(int i = 0; i < number; i++) {
+		for (int i = 0; i < number; i++) {
 			ret.add(i);
 		}
 		return ret;
@@ -192,9 +190,9 @@ public final class LocalCounterTest {
 		int lastIndex = 0;
 		int count = 0;
 
-		while(lastIndex != -1) {
+		while (lastIndex != -1) {
 			lastIndex = str.indexOf(sub, lastIndex);
-			if( lastIndex != -1) {
+			if (lastIndex != -1) {
 				count++;
 				lastIndex += sub.length();
 			}
