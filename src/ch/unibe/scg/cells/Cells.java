@@ -43,7 +43,7 @@ enum Cells {
 		}
 
 		/** Assume next is set. Read in a row. Move `next` *past* row `cur`. */
-		void forward() {
+		final void forward() { // final because it's called by constructor.
 			cur = null;
 			if (next == null) {
 				return;

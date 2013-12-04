@@ -159,9 +159,7 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 		for (int i = fromShard + 1; i < toShard; i++) {
 			ret = Iterables.concat(ret, store.get(i));
 		}
-		ret = Iterables.concat(ret, store.get(toShard).subList(0, to));
-
-		return ret;
+		return Iterables.concat(ret, store.get(toShard).subList(0, to));
 	}
 
 	@Override
