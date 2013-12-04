@@ -40,10 +40,13 @@ public final class InMemorySourceTest {
 	public void testIterator() {
 		Iterable<OneShotIterable<Cell<Void>>> rows = Cells.breakIntoRows(s);
 		StringBuilder b = new StringBuilder();
+		b.append("[");
 		for (OneShotIterable<Cell<Void>> row : rows) {
 			b.append(Iterables.toString(row));
 			b.append(", ");
 		}
+		b.replace(b.length() - 2, b.length(), ""); // to remove a trailing space
+		b.append("]");
 		assertThat(b.toString(),
 				is("[[[[97, 97, 48, 98]]{[49]}], "
 					+ "[[[97, 97, 97, 98]]{[49]}], "
