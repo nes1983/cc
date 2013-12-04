@@ -1,6 +1,7 @@
 package ch.unibe.scg.cells;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -95,13 +96,6 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 
 		return new InMemorySource<>(nonEmptyStore, splitIndex);
 	}
-
-	private static <T> boolean isStoreOk(List<List<Cell<T>>> store) {
-		for (List<Cell<T>> shard : store) {
-			if (!Ordering.<Cell<T>> natural().isOrdered(shard)) {
-				return false;
-			}
-		}
 
 	@Override
 	public Iterator<Cell<T>> iterator() {
@@ -240,23 +234,6 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 			if (prevShard != null && prevShard.get(prevShard.size() - 1).compareTo(cur.get(0)) >= 0) {
 				return false;
 			}
-
-			prevShard = cur;
-		}
-
-		Iterable<Cell<T>> flatStore = Iterables.concat(store);
-
-		Cell<T> prevCell = null;
-		for (Cell<T> c : flatStore) {
-			if (c.equals(prevCell)) {
-				return false;
-			}
-			prevCell = c;
-		}
-
-		return true;
-	}
-}
 
 			prevShard = cur;
 		}

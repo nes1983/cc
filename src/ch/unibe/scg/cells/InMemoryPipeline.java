@@ -250,7 +250,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 			});
 		}
 
-		return new InMemorySource<>(ret);
+		return InMemorySource.make(ret);
 	}
 
 	private static <T> Sink<T> encode(final Collection<Cell<T>> cellSink, final Codec<T> codec) {
