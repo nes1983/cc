@@ -244,19 +244,23 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		for (int s = 0; s < filteredSinks.size(); s++) {
 			ret.add(null); // Multithreaded `add` is forbidden, so grow beforehand.
 		}
-		System.out.println("---" + suckCnt.getCount());
-		for (int s = 0; s < filteredSinks.size(); s++) {
+		for (int s = 0; s < filteredSinks.size() - 1; s++) { // All shards but last.
 			final int shard = s;
 			threadPool.execute(new Runnable() {
 				@Override public void run() {
-					List<Cell<E>> merged;
-					if (shard < filteredSinks.size() - 1) {
-						merged = merge(filteredSinks, splitters.get(shard), splitters.get(shard + 1));
-					} else {
-						assert shard == filteredSinks.size() - 1;
-						merged = mergeUnbounded(filteredSinks, splitters.get(shard));
-					}
+					List<Cell<E>> merged
+						= merge(filteredSinks, splitters.get(shard), splitters.get(shard + 1));
 					ret.set(shard, merged);
+					suckCnt.countDown();
+				}
+			});
+		}
+		if (filteredSinks.size() > 0) { // Add last shard.
+			threadPool.execute(new Runnable() {
+				@Override public void run() {
+					int lastShard = filteredSinks.size() - 1;
+					List<Cell<E>> merged = mergeUnbounded(filteredSinks, splitters.get(lastShard));
+					ret.set(lastShard, merged);
 					suckCnt.countDown();
 				}
 			});
