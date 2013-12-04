@@ -25,7 +25,6 @@ import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.InMemoryPipeline;
-import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
@@ -239,7 +238,7 @@ public final class HadoopPipelineTest {
 			try (InMemoryPipeline<Act, WordCount> pipe
 					= Guice.createInjector(new LocalExecutionModule())
 							.getInstance(InMemoryPipeline.Builder.class)
-						.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()))) {
+						.make(Cells.shard(Cells.encode(readActsFromDisk(), new ActCodec())))) {
 			run(pipe);
 			for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
 				for (WordCount wc : wcs) {
