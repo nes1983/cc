@@ -189,11 +189,11 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 								exceptionHolder.e = e;
 								out.println("Suppressed exception:");
 								e.printStackTrace(out);
-								return;
-							} finally {
 								mapCnt.countDown();
+								return;
 							}
 						}
+						mapCnt.countDown();
 					}
 				});
 			}
@@ -229,6 +229,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		sortCnt.await();
 
 		// Suck sinks into next source
+		final CountDownLatch suckCnt = new CountDownLatch(src.nShards());
 		final List<ByteString> splitters = splitters(sinks);
 		final List<List<Cell<E>>> ret = new ArrayList<>(src.nShards());
 		for (int s = 0; s < src.nShards(); s++) {
@@ -246,9 +247,11 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 						merged = mergeUnbounded(sinks, splitters.get(shard));
 					}
 					ret.set(shard, merged);
+					suckCnt.countDown();
 				}
 			});
 		}
+		suckCnt.await();
 
 		return InMemorySource.make(ret);
 	}
@@ -278,8 +281,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 	private static <T> List<Cell<T>> merge(Iterable<List<Cell<T>>> sources, ByteString from, ByteString to) {
 		assert shardsOrdered(sources);
 
-		Cell<T> fromProbe = Cell.make(from, ByteString.EMPTY, ByteString.EMPTY);
-		Cell<T> toProbe = Cell.make(to, ByteString.EMPTY, ByteString.EMPTY);
+		Cell<T> fromProbe = new Cell<>(from, ByteString.EMPTY, ByteString.EMPTY);
+		Cell<T> toProbe = new Cell<>(to, ByteString.EMPTY, ByteString.EMPTY);
 
 		Set<Cell<T>> ret = new HashSet<>();
 		for (List<Cell<T>> src : sources) {
@@ -296,7 +299,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 	private static <T> List<Cell<T>> mergeUnbounded(Iterable<List<Cell<T>>> sources, ByteString from) {
 		assert shardsOrdered(sources);
 
-		Cell<T> fromProbe = Cell.make(from, ByteString.EMPTY, ByteString.EMPTY);
+		Cell<T> fromProbe = new Cell<>(from, ByteString.EMPTY, ByteString.EMPTY);
 
 		Set<Cell<T>> ret = new HashSet<>();
 		for (List<Cell<T>> src : sources) {
@@ -339,10 +342,11 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		List<ByteString> ret = new ArrayList<>();
 		int nPartitions = sources.size();
 		// Rounded up, to ensure step > 0
-		int step = sample.size() + nPartitions - 1 / nPartitions;
+		int step = (sample.size() + nPartitions - 1) / nPartitions;
 		for (int i = 0; i < sample.size(); i += step) {
 			ret.add(sample.get(i).getRowKey());
 		}
+		assert ret.size() == sources.size();
 		return ret;
 	}
 
