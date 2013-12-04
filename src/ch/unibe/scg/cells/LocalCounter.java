@@ -31,7 +31,7 @@ class LocalCounter implements Counter {
 	 * A snapshot of registry at the moment counter registered itself. Used to determine, when
 	 * the current registration becomes invalid.
 	 */
-	private Set<LocalCounter> registeredAt;
+	private volatile Set<LocalCounter> registeredAt;
 
 	@Inject
 	LocalCounter(@CounterName String counterName, @CounterLong Provider<AtomicLong> count,
