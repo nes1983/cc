@@ -60,8 +60,7 @@ public final class HBaseCellSinkTest {
 		}
 
 		try (CellSource<Void> src = i.getInstance(HBaseCellSource.class)) {
-			Iterable<Cell<Void>> row = Iterables.getOnlyElement(src);
-			Cell<Void> actual = Iterables.getOnlyElement(row);
+			Cell<Void> actual = Iterables.getOnlyElement(src.getShard(0));
 			assertThat(actual, is(cell));
 		}
 	}

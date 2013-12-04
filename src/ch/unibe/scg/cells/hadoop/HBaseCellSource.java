@@ -17,6 +17,7 @@ import org.apache.hadoop.hbase.client.Scan;
 
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.hadoop.HBaseStorage.FamilyName;
 
 import com.google.common.base.Charsets;
@@ -25,7 +26,7 @@ import com.google.common.io.Closer;
 import com.google.protobuf.ByteString;
 
 /** A cell source reading from a HTable. Don't forget to close it when you're done. Can be iterated only once! */
-public class HBaseCellSource<T> implements CellSource<T> {
+public class HBaseCellSource<T> implements CellSource<T>, Iterable<Iterable<Cell<T>>> {
 	final private static long serialVersionUID = 1L;
 
 	/** Do not modify. */
@@ -143,5 +144,15 @@ public class HBaseCellSource<T> implements CellSource<T> {
 			}
 			closer.register(scanner);
 		}
+	}
+
+	@Override
+	public int nShards() {
+		throw new RuntimeException("Not implemented");
+	}
+
+	@Override
+	public OneShotIterable<Cell<T>> getShard(int shard) {
+		throw new RuntimeException("Not implemented");
 	}
 }

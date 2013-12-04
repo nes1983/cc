@@ -46,7 +46,7 @@ public abstract class CellsModule extends AbstractModule {
 
 		@Override
 		public Sink<T> get() {
-			return Codecs.encode(((CellSink<T>) sink.get()), codec.get());
+			return Cells.encode(((CellSink<T>) sink.get()), codec.get());
 		}
 	}
 
@@ -62,7 +62,7 @@ public abstract class CellsModule extends AbstractModule {
 
 		@Override
 		public LookupTable<T> get() {
-			return Codecs.decodedTable((CellLookupTable<T>) rawCellTable.get(), codec.get());
+			return Cells.decodedTable((CellLookupTable<T>) rawCellTable.get(), codec.get());
 		}
 	}
 

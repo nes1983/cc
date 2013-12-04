@@ -173,7 +173,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 				threadPool.execute(new Runnable() {
 					@Override public void run() {
 						for (Iterable<Cell<I>> rawRow : Cells.breakIntoRows(src.getShard(shard))) {
-							Iterable<I> decoded = Codecs.decode(rawRow, srcCodec);
+							Iterable<I> decoded = Cells.decode(rawRow, srcCodec);
 							Iterator<I> iter = decoded.iterator();
 							final I first = iter.next();
 							final Iterable<I> row = Iterables.concat(

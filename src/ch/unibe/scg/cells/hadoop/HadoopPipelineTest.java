@@ -21,9 +21,9 @@ import org.apache.hadoop.conf.Configuration;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.LocalExecutionModule;
@@ -236,13 +236,12 @@ public final class HadoopPipelineTest {
 
 	@Test
 	public void testInMemoryWordCount() throws IOException, InterruptedException {
-		try(InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance()) {
-			InMemoryPipeline<Act, WordCount> pipe
+			try (InMemoryPipeline<Act, WordCount> pipe
 					= Guice.createInjector(new LocalExecutionModule())
 							.getInstance(InMemoryPipeline.Builder.class)
-						.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()), eff);
+						.make(InMemoryShuffler.copyFrom(readActsFromDisk(), new ActCodec()))) {
 			run(pipe);
-			for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
+			for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
 				for (WordCount wc : wcs) {
 					if (wc.word.equals("your")) {
 						assertThat(wc.count, is(239L));

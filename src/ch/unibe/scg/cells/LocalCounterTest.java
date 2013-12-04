@@ -122,7 +122,7 @@ public final class LocalCounterTest {
 
 		try (InMemoryPipeline<Integer, Integer> pipe
 				= inj.getInstance(InMemoryPipeline.Builder.class)
-					.make(Codecs.shard(Codecs.encode(generateSequence(1000), new IntegerCodec())))) {
+					.make(Cells.shard(Cells.encode(generateSequence(1000), new IntegerCodec())))) {
 
 			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
 			run(pipe, mapper);
@@ -143,7 +143,7 @@ public final class LocalCounterTest {
 
 		try (InMemoryPipeline<Integer, Integer> pipe
 				= new InMemoryPipeline<>(
-						Codecs.shard(Codecs.encode(generateSequence(1000), new IntegerCodec())),
+						Cells.shard(Cells.encode(generateSequence(1000), new IntegerCodec())),
 						inj.getInstance(PipelineStageScope.class),
 						inj.getInstance(Key.get(new TypeLiteral<Provider<Set<LocalCounter>>>(){})),
 						out)) {

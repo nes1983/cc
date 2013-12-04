@@ -18,8 +18,8 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Sink;
@@ -137,7 +137,7 @@ public final class HadoopPipelineHDFSInputTest {
 		Injector injector = Guice.createInjector(new UnibeModule());
 
 		int cnt = 0;
-		try(Table<File> tab = injector.getInstance(TableAdmin.class).createTemporaryTable(family)) {
+		try (Table<File> tab = injector.getInstance(TableAdmin.class).createTemporaryTable(family)) {
 			HadoopPipeline<File, File> pipe = HadoopPipeline.fromHadoopToTable(
 					injector.getInstance(Configuration.class),
 					RawTextFileFormat.class,
@@ -147,7 +147,7 @@ public final class HadoopPipelineHDFSInputTest {
 				.influx(new FileCodec())
 				.mapAndEfflux(new IdentityMapper(), new FileCodec());
 
-			try(Source<File> files = Codecs.decode(tab.asCellSource(), new FileCodec())) {
+			try (Source<File> files = Cells.decodeSource(tab.asCellSource(), new FileCodec())) {
 				for (Iterable<File> row : files) {
 					cnt += Iterables.size(row);
 				}

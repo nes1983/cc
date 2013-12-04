@@ -41,10 +41,9 @@ import org.apache.hadoop.mapreduce.lib.partition.BinaryPartitioner;
 import ch.unibe.scg.cells.AdapterOneShotIterable;
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSink;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.Mapper;
-import ch.unibe.scg.cells.OfflineMapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
@@ -198,7 +197,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 					ByteString.copyFrom(key.get()),
 					ByteString.copyFrom(value.get()));
 			I decoded = inputCodec.decode(cell);
-			try (Sink<E> sink = Codecs.encode(
+			try (Sink<E> sink = Cells.encode(
 					HadoopPipeline.<E, ImmutableBytesWritable, ImmutableBytesWritable> makeMapperSink(context),
 					outputCodec)) {
 				// TODO: maybe use a specific oneshotiterable?
@@ -295,12 +294,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 				throws IOException, InterruptedException {
 			run(mapConfigurer, srcCodec, m, codec, new IdentityMapper<EFF>(), codec, efflux);
 		}
-
-		@Override
-		public void effluxWithOfflineMapper(OfflineMapper<I, EFF> offlineMapper, Codec<EFF> codec)
-				throws IOException {
-			throw new UnsupportedOperationException("I'll think about this case later :)");
-		}
 	}
 
 	private class HadoopReducablePipeline<MAP_IN, MAP_OUT> implements MappablePipeline<MAP_OUT, EFF> {
@@ -326,12 +319,6 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		public void mapAndEfflux(Mapper<MAP_OUT, EFF> m, Codec<EFF> codec) throws IOException, InterruptedException {
 			run(mapConfigurer, mapSrcCodec, map, reduceSrcCodec, m, codec, efflux);
 			mapConfigurer.close();
-		}
-
-		@Override
-		public void effluxWithOfflineMapper(OfflineMapper<MAP_OUT, EFF> offlineMapper, Codec<EFF> codec)
-				throws IOException {
-			throw new UnsupportedOperationException("I'll think about this case later :)");
 		}
 	}
 
@@ -485,7 +472,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 					return new FilteringIterator<>(transformedRow.iterator());
 				}
 			};
-			runRow(Codecs.encode(makeSink(context), outCodec), Codecs.decodeRow(row, inCodec), mapper);
+			runRow(Cells.encode(makeSink(context), outCodec), Cells.decode(row, inCodec), mapper);
 		}
 
 		/** Format has to match {@link #readCell} below. */
@@ -644,7 +631,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 							ByteString.copyFrom(kv.getKey()),
 							ByteString.copyFrom(kv.getValue())));
 				}
-				runRow(Codecs.encode(cellSink, outCodec), Codecs.decodeRow(cellRow, inCodec), mapper);
+				runRow(Cells.encode(cellSink, outCodec), Cells.decode(cellRow, inCodec), mapper);
 			}
 		}
 
