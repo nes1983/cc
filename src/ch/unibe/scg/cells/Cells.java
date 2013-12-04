@@ -188,7 +188,7 @@ public enum Cells {
 	 *
 	 * @return a sink that closes the wrapped sink on close.
 	 */
-	public static <T> Sink<T> encode(final CellSink<T> sink, final Codec<T> codec) {
+	public static <T> Sink<T> encodeSink(final CellSink<T> sink, final Codec<T> codec) {
 		return new Sink<T>() {
 			final static private long serialVersionUID = 1L;
 

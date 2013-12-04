@@ -197,7 +197,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 					ByteString.copyFrom(key.get()),
 					ByteString.copyFrom(value.get()));
 			I decoded = inputCodec.decode(cell);
-			try (Sink<E> sink = Cells.encode(
+			try (Sink<E> sink = Cells.encodeSink(
 					HadoopPipeline.<E, ImmutableBytesWritable, ImmutableBytesWritable> makeMapperSink(context),
 					outputCodec)) {
 				// TODO: maybe use a specific oneshotiterable?
@@ -472,7 +472,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 					return new FilteringIterator<>(transformedRow.iterator());
 				}
 			};
-			runRow(Cells.encode(makeSink(context), outCodec), Cells.decode(row, inCodec), mapper);
+			runRow(Cells.encodeSink(makeSink(context), outCodec), Cells.decode(row, inCodec), mapper);
 		}
 
 		/** Format has to match {@link #readCell} below. */
@@ -631,7 +631,7 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 							ByteString.copyFrom(kv.getKey()),
 							ByteString.copyFrom(kv.getValue())));
 				}
-				runRow(Cells.encode(cellSink, outCodec), Cells.decode(cellRow, inCodec), mapper);
+				runRow(Cells.encodeSink(cellSink, outCodec), Cells.decode(cellRow, inCodec), mapper);
 			}
 		}
 

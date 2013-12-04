@@ -46,7 +46,7 @@ public abstract class CellsModule extends AbstractModule {
 
 		@Override
 		public Sink<T> get() {
-			return Cells.encode(((CellSink<T>) sink.get()), codec.get());
+			return Cells.encodeSink(((CellSink<T>) sink.get()), codec.get());
 		}
 	}
 
