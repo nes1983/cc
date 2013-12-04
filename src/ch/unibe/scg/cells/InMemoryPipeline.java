@@ -145,14 +145,16 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		};
 		scheduler.scheduleAtFixedRate(printer, PRINT_INTERVAL, PRINT_INTERVAL, TimeUnit.SECONDS);
 
+		// Run mappers and close source.
 		final List<List<Cell<E>>> sinks = new ArrayList<>(src.nShards());
 		for (int i = 0; i < src.nShards(); i++) {
 			sinks.add(new ArrayList<Cell<E>>());
 		}
 		// If an exception occurs, write it in here.
 		final ExceptionHolder exceptionHolder = new ExceptionHolder();
-		try(final Closer mapperCloser = Closer.create()) {
-			mapperCloser.register(mapper);
+		try (final Closer closer = Closer.create()) {
+			closer.register(mapper);
+			closer.register(src);
 
 			// Clone as many mappers as we have threads.
 			final BlockingQueue<Mapper<I, E>> mappers = new ArrayBlockingQueue<>(
@@ -160,7 +162,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 			for (int i = 0; i < Runtime.getRuntime().availableProcessors(); i++) {
 				@SuppressWarnings("resource") // It's getting registered for closing right here.
 				Mapper<I, E> cloned = ShallowSerializingCopy.clone(mapper);
-				mapperCloser.register(cloned);
+				closer.register(cloned);
 				mappers.add(cloned);
 			}
 
@@ -219,8 +221,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		for (int s = 0; s < src.nShards(); s++) {
 			final int shard = s;
 			threadPool.execute(new Runnable() {
-				@Override
-				public void run() {
+				@Override public void run() {
 					Collections.sort(sinks.get(shard));
 					sortCnt.countDown();
 				}
@@ -363,7 +364,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 	private void printCounters() {
 		Set<LocalCounter> counters = registry.get();
 		synchronized (counters) { // Needed for iterating over a synchronized set.
-			for(LocalCounter c : counters) {
+			for (LocalCounter c : counters) {
 				out.println(c.toString());
 			}
 		}
