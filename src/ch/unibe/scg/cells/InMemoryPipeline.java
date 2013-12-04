@@ -167,7 +167,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 			}
 
 			// Run all rows in current shard through mapper.
-			final CountDownLatch mapCnt = new CountDownLatch(pipeSrc.nShards());
+			final CountDownLatch mapCnt = new CountDownLatch(src.nShards());
 			for (int s = 0; s < src.nShards(); s++) {
 				final int shard = s;
 				threadPool.execute(new Runnable() {
@@ -216,36 +216,45 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 			scheduler.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
 		}
 
+		// Filter out empty shards.
+		final List<List<Cell<E>>> filteredSinks = new ArrayList<>();
+		for (int shard = 0; shard < sinks.size(); shard++) {
+			if (!sinks.get(shard).isEmpty()) {
+				filteredSinks.add(sinks.get(shard));
+			}
+		}
+
 		// Sort output shards
-		final CountDownLatch sortCnt = new CountDownLatch(src.nShards());
-		for (int s = 0; s < src.nShards(); s++) {
+		final CountDownLatch sortCnt = new CountDownLatch(filteredSinks.size());
+		for (int s = 0; s < filteredSinks.size(); s++) {
 			final int shard = s;
 			threadPool.execute(new Runnable() {
 				@Override public void run() {
-					Collections.sort(sinks.get(shard));
+					Collections.sort(filteredSinks.get(shard));
 					sortCnt.countDown();
 				}
 			});
 		}
 		sortCnt.await();
 
-		// Suck sinks into next source
-		final CountDownLatch suckCnt = new CountDownLatch(src.nShards());
-		final List<ByteString> splitters = splitters(sinks);
-		final List<List<Cell<E>>> ret = new ArrayList<>(src.nShards());
-		for (int s = 0; s < src.nShards(); s++) {
+		// Suck filteredSinks into next source
+		final CountDownLatch suckCnt = new CountDownLatch(filteredSinks.size());
+		final List<ByteString> splitters = splitters(filteredSinks);
+		final List<List<Cell<E>>> ret = new ArrayList<>(filteredSinks.size());
+		for (int s = 0; s < filteredSinks.size(); s++) {
 			ret.add(null); // Multithreaded `add` is forbidden, so grow beforehand.
 		}
-		for (int s = 0; s < src.nShards(); s++) {
+		System.out.println("---" + suckCnt.getCount());
+		for (int s = 0; s < filteredSinks.size(); s++) {
 			final int shard = s;
 			threadPool.execute(new Runnable() {
 				@Override public void run() {
 					List<Cell<E>> merged;
-					if (shard < src.nShards() - 1) {
-						merged = merge(sinks, splitters.get(shard), splitters.get(shard + 1));
+					if (shard < filteredSinks.size() - 1) {
+						merged = merge(filteredSinks, splitters.get(shard), splitters.get(shard + 1));
 					} else {
-						assert shard == src.nShards() -1;
-						merged = mergeUnbounded(sinks, splitters.get(shard));
+						assert shard == filteredSinks.size() - 1;
+						merged = mergeUnbounded(filteredSinks, splitters.get(shard));
 					}
 					ret.set(shard, merged);
 					suckCnt.countDown();
@@ -322,6 +331,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 
 	/**
 	 * @return row keys of the start of each partiton, inclusive, such that all partitions are equal size.
+	 * 		The returned list has the same size as {@code sources}.
 	 * @param sources each source should be sorted.
 	 */
 	private static <T> List<ByteString> splitters(Collection<List<Cell<T>>> sources) {
@@ -347,7 +357,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		for (int i = 0; i < sample.size(); i += step) {
 			ret.add(sample.get(i).getRowKey());
 		}
-		assert ret.size() == sources.size();
+		assert ret.size() == sources.size() : "Should be " + sources.size() + " but was " + ret.size()
+				+ " sample was " + sample.size();
 		return ret;
 	}
 
