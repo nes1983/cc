@@ -109,6 +109,7 @@ class InMemorySource<T> implements CellSource<T>, CellLookupTable<T>, Iterable<C
 
 	@Override
 	public void close() {
+		// TODO: disallow getting more shards to follow the contract in comments.
 		// Nothing to do.
 	}
 

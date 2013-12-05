@@ -13,6 +13,9 @@ import java.io.Serializable;
  *
  * <p> Shard are not allowed to be empty; thus nShards() can result zero, in case if there no data.
  *
+ * <p> After source is closed, it is no longer possible to get shards from it and
+ * all shards obtained from it can no longer be iterated.
+ *
  * <p>Implementers should choose the size of each shard big enough so scheduling shards
  * does not become the bottle-neck during parallel processing. On the other hand,
  * it should be small enough to have enough shards to distribute evenly over all processors.
