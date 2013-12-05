@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.TreeSet;
 
 import com.google.common.collect.ComparisonChain;
@@ -219,11 +220,19 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 	@Override
 	public int nShards() {
-		throw new RuntimeException("Not implemented");
+		if (store.isEmpty()) {
+			return 0;
+		}
+
+		return 1;
 	}
 
 	@Override
 	public OneShotIterable<Cell<T>> getShard(int shard) {
-		throw new RuntimeException("Not implemented");
+		if (store.isEmpty() || shard != 1) {
+			throw new NoSuchElementException();
+		}
+
+		return new AdapterOneShotIterable<>(store);
 	}
 }
