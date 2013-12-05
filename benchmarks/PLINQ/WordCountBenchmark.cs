@@ -10,128 +10,148 @@ using System.Threading.Tasks;
 
 namespace PLINQ
 {
-    /// <summary>
-    /// Performs a wordcount benchmark with PLINQ means. 
-    /// Data is ~250mb of textbooks from Project Gutenberg - http://www.gutenberg.org/
-    /// </summary>
-    public static class WordCountBenchmark
-    {
-        private const int TIMES = 5;
+	/// <summary>
+	/// Performs a wordcount benchmark with PLINQ means. 
+	/// Data is ~250mb of textbooks from Project Gutenberg - http://www.gutenberg.org/
+	/// </summary>
+	public static class WordCountBenchmark
+	{
+		private const int TIMES = 5;
 
-        private sealed class WordCount
-        {
-            internal WordCount(string word, int count)
-            {
-                Word = word;
-                Count = count;
-            }
+		private sealed class WordCount : IEquatable<WordCount>
+		{
+			internal WordCount(string word, int count)
+			{
+				Word = word;
+				Count = count;
+			}
 
-            public string Word { get; private set; }
-            public int Count { get; private set; }
+			public string Word { get; private set; }
+			public int Count { get; private set; }
 
-            public override string ToString()
-            {
-                return string.Format("{0}: {1}", Word, Count);
-            }
-        }
+			public override bool Equals(object obj)
+			{
+				return Equals(obj as WordCount);
+			}
 
-        static void Main(string[] args)
-        {
-            const string input = @"..\data\";
-            const int iterations = 1;
+			public override int GetHashCode()
+			{
+				unchecked
+				{
+					return ((Word != null ? Word.GetHashCode() : 0) * 397) ^ Count;
+				}
+			}
 
-            var stopwatch = new Stopwatch();
-            var timings = new double[TIMES];
-            
-            for (int i = 0; i < timings.Length; i++)
-            {
-                stopwatch.Reset();
-                stopwatch.Start();
+			public bool Equals(WordCount other)
+			{
+				if (ReferenceEquals(null, other)) return false;
+				if (ReferenceEquals(this, other)) return true;
+				return string.Equals(Word, other.Word) && Count == other.Count;
+			}
 
-                for (int j = 0; j < iterations; j++)
-                {
-                    var wordCounts = TestWordCount(input);
-                    WordCount[] materialized = wordCounts.ToArray();
-                    if (materialized.Length == 0)
-                    {
-                        Console.WriteLine();
-                    }
-                }
+			public override string ToString()
+			{
+				return string.Format("{0}: {1}", Word, Count);
+			}
+		}
 
-                stopwatch.Stop();
-                timings[i] = stopwatch.Elapsed.TotalMilliseconds;
-                Console.WriteLine(timings[i]);
-            }
-            Console.WriteLine("Median: {0}", Median(timings));
-            Console.WriteLine("Min: {0}", Min(timings));
-            Console.ReadLine();
-        }
+		static void Main(string[] args)
+		{
+			const string input = @"..\data\";
+			const int iterations = 1;
 
-        private static IEnumerable<WordCount> TestWordCount(string dir)
-        {
-            var books = Directory.EnumerateFiles(dir).Select(File.ReadAllText).AsParallel(); // PLINQ entry point.
-            return books
-                .SelectMany(WordParser)
-                .GroupBy(word => word)
-                .SelectMany(WordCounter);
-        }
+			var stopwatch = new Stopwatch();
+			var timings = new double[TIMES];
+			
+			for (int i = 0; i < timings.Length; i++)
+			{
+				stopwatch.Reset();
+				stopwatch.Start();
 
-        private static IEnumerable<WordCount> WordParser(string book)
-        {
-            var wordCountHash = new Dictionary<string, int>();
+				for (int j = 0; j < iterations; j++)
+				{
+					var wordCounts = TestWordCount(input);
+					WordCount[] materialized = wordCounts.ToArray();
+					if (materialized.Length == 0) // to avoid too eager clr optimizations
+					{
+						Console.WriteLine();
+					}
+				}
 
-            foreach (string word in Regex.Split(book, @"\s"))
-            {
-                if (wordCountHash.ContainsKey(word))
-                {
-                    wordCountHash[word]++;
-                }
-                else
-                {
-                    wordCountHash.Add(word, 1);
-                }
-            }
+				stopwatch.Stop();
+				timings[i] = stopwatch.Elapsed.TotalMilliseconds;
+				Console.WriteLine(timings[i]);
+			}
+			Console.WriteLine("Median: {0}", Median(timings));
+			Console.WriteLine("Min: {0}", Min(timings));
+			Console.ReadLine();
+		}
 
-            return wordCountHash.Select(kv => new WordCount(kv.Key, kv.Value));
-        }
+		private static IEnumerable<WordCount> TestWordCount(string dir)
+		{
+			var books = Directory.EnumerateFiles(dir).Select(File.ReadAllText).AsParallel(); // PLINQ entry point.
+			return books
+				.SelectMany(WordParser)
+				.GroupBy(word => word.Word)
+				.SelectMany(WordCounter);
+		}
 
-        private static IEnumerable<WordCount> WordCounter(IGrouping<WordCount, WordCount> group)
-        {
-            var ret = new List<WordCount>();
-            int count = 0;
+		private static IEnumerable<WordCount> WordParser(string book)
+		{
+			var wordCountHash = new Dictionary<string, int>();
 
-            foreach (var wc in group)
-            {
-                count += wc.Count;
-            }
+			foreach (string word in Regex.Split(book, @"\s+"))
+			{
+				if (wordCountHash.ContainsKey(word))
+				{
+					wordCountHash[word]++;
+				}
+				else
+				{
+					wordCountHash.Add(word, 1);
+				}
+			}
 
-            ret.Add(new WordCount(group.Key.Word, count));
-            return ret;
-        }
+			return wordCountHash.Select(kv => new WordCount(kv.Key, kv.Value));
+		}
 
-        private static double Median(double[] d)
-        {
-            Array.Sort(d);
-            return d[d.Length / 2];
-        }
+		private static IEnumerable<WordCount> WordCounter(IGrouping<String, WordCount> group)
+		{
+			var ret = new List<WordCount>();
+			int count = 0;
 
-        private static double Min(double[] d)
-        {
-            if (d == null || d.Length == 0)
-            {
-                throw new ArgumentException();
-            }
+			foreach (var wc in group)
+			{
+				count += wc.Count;
+			}
 
-            double min = d[0];
-            for (int i = 1; i < d.Length; i++)
-            {
-                if (d[i] < min)
-                {
-                    min = d[i];
-                }
-            }
+			ret.Add(new WordCount(group.Key, count));
+			return ret;
+		}
 
-            return min;
-        }
-    }
+		private static double Median(double[] d)
+		{
+			Array.Sort(d);
+			return d[d.Length / 2];
+		}
+
+		private static double Min(double[] d)
+		{
+			if (d == null || d.Length == 0)
+			{
+				throw new ArgumentException();
+			}
+
+			double min = d[0];
+			for (int i = 1; i < d.Length; i++)
+			{
+				if (d[i] < min)
+				{
+					min = d[i];
+				}
+			}
+
+			return min;
+		}
+	}
 }

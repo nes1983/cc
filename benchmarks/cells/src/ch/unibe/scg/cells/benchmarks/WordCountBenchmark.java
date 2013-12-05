@@ -9,11 +9,11 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
 import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
-import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
@@ -159,11 +159,9 @@ public class WordCountBenchmark {
 		for (int i = 0; i < TIMES; i++) {
 			long startTime = System.nanoTime();
 
-			try (InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance()) {
-				InMemoryPipeline<Book, WordCount> pipe
+			try (InMemoryPipeline<Book, WordCount> pipe
 						= inj.getInstance(InMemoryPipeline.Builder.class)
-								.make(InMemoryShuffler.copyFrom(readBooksFromDisk(input),
-										new BookCodec()), eff);
+								.make(Cells.shard(Cells.encode(readBooksFromDisk(input), new BookCodec())))) {
 
 				pipe.influx(new BookCodec())
 					.map(inj.getInstance(WordParser.class))
@@ -171,7 +169,7 @@ public class WordCountBenchmark {
 					.mapAndEfflux(inj.getInstance(WordCounter.class), new WordCountCodec());
 
 				int dummy = 0;
-				for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
+				for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
 					dummy += Iterables.size(wcs);
 				}
 
