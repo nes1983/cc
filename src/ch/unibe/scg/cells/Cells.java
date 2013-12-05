@@ -119,19 +119,18 @@ public enum Cells {
 	 */
 	// TODO: delete.
 	public static <T> Source<T> decodeSource(final CellSource<T> source, final Codec<T> codec) {
-		Iterable<Cell<T>> flatSource = Collections.emptyList();
-		for (int i = 0; i < source.nShards(); i++) {
-			flatSource = Iterables.concat(flatSource, source.getShard(i));
-		}
-
-		final Iterable<OneShotIterable<Cell<T>>> rows = Cells.breakIntoRows(flatSource);
-
 		return new Source<T>() {
 			final private static long serialVersionUID = 1L;
 
 			@Override
 			public Iterator<Iterable<T>> iterator() {
-				return Iterables.transform(rows, new Function<Iterable<Cell<T>>, Iterable<T>>() {
+				Iterable<Cell<T>> flatSource = Collections.emptyList();
+				for (int i = 0; i < source.nShards(); i++) {
+					flatSource = Iterables.concat(flatSource, source.getShard(i));
+				}
+
+				return Iterables.transform(Cells.breakIntoRows(flatSource),
+						new Function<Iterable<Cell<T>>, Iterable<T>>() {
 					@Override public Iterable<T> apply(Iterable<Cell<T>> encodedRow) {
 						return decode(encodedRow, codec);
 					}
