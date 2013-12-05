@@ -154,8 +154,9 @@ public class HBaseCellSource<T> implements CellSource<T>{
 	@SuppressWarnings("resource") // scanner will get closed upon closing the source.
 	@Override
 	public OneShotIterable<Cell<T>> getShard(int shard) {
-		if( shard < 0 || shard >= nShards()) {
-			throw new IndexOutOfBoundsException(String.format("Shard should be non-negative and less than %", nShards()));
+		if (shard < 0 || nShards() <= shard) {
+			throw new IndexOutOfBoundsException(
+					String.format("You asked for shard %s, but there are only %s.", shard, nShards()));
 		}
 
 		return new AdapterOneShotIterable<>(new ResultScannerIterator(openScanner()));

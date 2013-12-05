@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.TreeSet;
 
 import com.google.common.collect.ComparisonChain;
@@ -215,8 +214,9 @@ class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable
 
 	@Override
 	public OneShotIterable<Cell<T>> getShard(int shard) {
-		if (store.isEmpty() || shard != 1) {
-			throw new NoSuchElementException();
+		if (shard < 0 || nShards() <= shard) {
+			throw new IndexOutOfBoundsException(
+					String.format("You asked for shard %s, but there are only %s.", shard, nShards()));
 		}
 
 		return new AdapterOneShotIterable<>(store);
