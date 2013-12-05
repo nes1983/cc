@@ -235,17 +235,19 @@ public final class HadoopPipelineTest {
 
 	@Test
 	public void testInMemoryWordCount() throws IOException, InterruptedException {
-			try (InMemoryPipeline<Act, WordCount> pipe
-					= Guice.createInjector(new LocalExecutionModule())
-							.getInstance(InMemoryPipeline.Builder.class)
+		try (InMemoryPipeline<Act, WordCount> pipe
+				= Guice.createInjector(new LocalExecutionModule())
+					.getInstance(InMemoryPipeline.Builder.class)
 						.make(Cells.shard(Cells.encode(readActsFromDisk(), new ActCodec())))) {
 			run(pipe);
+			long cnt = -1;
 			for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
 				for (WordCount wc : wcs) {
 					if (wc.word.equals("your")) {
-						assertThat(wc.count, is(239L));
+						cnt = wc.count;
 					}
 				}
+				assertThat(cnt, is(239L));
 			}
 		}
 	}

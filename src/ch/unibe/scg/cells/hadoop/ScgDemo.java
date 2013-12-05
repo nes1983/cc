@@ -1,5 +1,8 @@
 package ch.unibe.scg.cells.hadoop;
 
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.regex.Matcher;
@@ -10,11 +13,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
-import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
@@ -170,36 +173,45 @@ public final class ScgDemo {
 		Injector i = Guice.createInjector(new UnibeModule());
 		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
 
+		long cnt = -1L;
 		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
 				Table<WordCount> eff = tableAdmin.createTemporaryTable(ByteString.copyFromUtf8("f"))) {
 			HadoopPipeline<Act, WordCount> pipe
 				= HadoopPipeline.fromTableToTable(i.getInstance(Configuration.class), in, eff);
 			run(pipe);
 
-			for (Iterable<WordCount> wcs : Codecs.decode(eff.asCellSource(), new WordCountCodec())) {
+
+			for (Iterable<WordCount> wcs : Cells.decodeSource(eff.asCellSource(), new WordCountCodec())) {
 				for (WordCount wc : wcs) {
-					System.out.println(wc);
+					if (wc.word.equals("your")) {
+						cnt = wc.count;
+					}
 				}
 			}
 		}
+		assertThat(cnt, is(239L));
 	}
 
 	@Test
 	public void countWords() throws IOException, InterruptedException {
 		Injector i = Guice.createInjector(new UnibeModule(), new LocalExecutionModule());
 		TableAdmin tableAdmin = i.getInstance(TableAdmin.class);
-		InMemoryShuffler<WordCount> eff = InMemoryShuffler.getInstance();
 
-		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"))) {
-			Pipeline<Act, WordCount> pipe
-				= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource(), eff);
+		try (Table<Act> in = tableAdmin.existing("richard-iii", ByteString.copyFromUtf8("f"));
+				InMemoryPipeline<Act, WordCount> pipe
+				= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource())) {
 			run(pipe);
-		}
-
-		for (Iterable<WordCount> wcs : Codecs.decode(eff, new WordCountCodec())) {
-			for (WordCount wc : wcs) {
-				System.out.println(wc);
+			long cnt = -1L;
+			try (CellSource<WordCount> eff = pipe.lastEfflux()) {
+				for (Iterable<WordCount> wcs : Cells.decodeSource(eff, new WordCountCodec())) {
+					for (WordCount wc : wcs) {
+						if (wc.word.equals("your")) {
+							cnt = wc.count;
+						}
+					}
+				}
 			}
+			assertThat(cnt, is(239L));
 		}
 	}
 
