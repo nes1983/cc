@@ -11,6 +11,8 @@ import java.io.Serializable;
  * may not split rows in two, that is: all elements of a row must always be in the same
  * same shard.
  *
+ * <p> Shard are not allowed to be empty; thus nShards() can result zero, in case if there no data.
+ *
  * <p>Implementers should choose the size of each shard big enough so scheduling shards
  * does not become the bottle-neck during parallel processing. On the other hand,
  * it should be small enough to have enough shards to distribute evenly over all processors.
