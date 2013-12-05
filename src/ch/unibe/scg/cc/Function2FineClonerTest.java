@@ -14,16 +14,14 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import ch.unibe.scg.cc.Function2RoughClonerTest.CollectionCellSource;
 import ch.unibe.scg.cc.Function2RoughClonerTest.TestModule;
 import ch.unibe.scg.cc.GitInputFormat.GitRepoCodec;
 import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.GitRepo;
-import ch.unibe.scg.cells.Cell;
+import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
-import ch.unibe.scg.cells.Codecs;
 import ch.unibe.scg.cells.InMemoryPipeline;
-import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.LocalCounterModule;
 import ch.unibe.scg.cells.LocalExecutionModule;
@@ -31,8 +29,6 @@ import ch.unibe.scg.cells.Source;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import com.google.inject.Key;
-import com.google.inject.TypeLiteral;
 import com.google.inject.util.Modules;
 
 /** Test {@link Function2FineCloner}. */
@@ -45,13 +41,12 @@ public final class Function2FineClonerTest {
 						.with(new TestModule()),
 				new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
-		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
-				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
-
-		try (InMemoryShuffler<Clone> shuffler =
-				i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
-			InMemoryPipeline<GitRepo, Clone> pipe
-					= i.getInstance(InMemoryPipeline.Builder.class).make(src, shuffler);
+		try (CellSource<GitRepo> src
+				= Cells.shard(Cells.encode(
+						Arrays.asList(GitPopulatorTest.parseZippedGit("paperExample.zip")),
+						repoCodec));
+				InMemoryPipeline<GitRepo, Clone> pipe
+					= i.getInstance(InMemoryPipeline.Builder.class).make(src)) {
 			pipe
 				.influx(repoCodec)
 				.map(i.getInstance(GitPopulator.class))
@@ -61,9 +56,8 @@ public final class Function2FineClonerTest {
 				.mapAndEfflux(i.getInstance(Function2FineCloner.class),
 						i.getInstance(Function2RoughClonesCodec.class));
 
-			shuffler.close();
-
-			try(Source<Clone> rows = Codecs.decode(shuffler, i.getInstance(Function2RoughClonesCodec.class))) {
+			try(Source<Clone> rows = Cells.decodeSource(pipe.lastEfflux(),
+					i.getInstance(Function2RoughClonesCodec.class))) {
 				assertTrue(rows.toString(), Pattern.matches("(?s)\\[\\[thisSnippet \\{\n" +
 						"  function: \".*?\"\n" +
 						"  position: 5\n" +
@@ -104,7 +98,7 @@ public final class Function2FineClonerTest {
 	@Ignore // TODO: InMemoryTables should actually not serialize. Test currently broken. Needs fix.
 	public void testSerialization() throws IOException, ClassNotFoundException {
 		Injector i = Guice.createInjector(
-				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()), 
+				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()),
 						new LocalExecutionModule())
 				.with(new Function2RoughClonerTest.TestModule()));
 		ByteArrayOutputStream bOut = new ByteArrayOutputStream();

@@ -35,10 +35,12 @@ public final class CloneGroupClustererTest {
 				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()))
 						.with(new TestModule()), new LocalExecutionModule());
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
-		CellSource<GitRepo> src
-			= Cells.shard(Cells.encode(Arrays.asList(GitPopulatorTest.parseZippedGit("paperExample.zip")), repoCodec));
 
-		try (InMemoryPipeline<GitRepo, Clone> pipe = i.getInstance(InMemoryPipeline.Builder.class).make(src)) {
+		try (CellSource<GitRepo> src
+					= Cells.shard(Cells.encode(
+							Arrays.asList(GitPopulatorTest.parseZippedGit("paperExample.zip")),
+							repoCodec));
+				InMemoryPipeline<GitRepo, Clone> pipe = i.getInstance(InMemoryPipeline.Builder.class).make(src)) {
 			pipe
 				.influx(repoCodec)
 				.map(i.getInstance(GitPopulator.class))
@@ -49,7 +51,6 @@ public final class CloneGroupClustererTest {
 						i.getInstance(Function2RoughClonesCodec.class));
 
 			// TODO: run: .effluxWithOfflineMapper(i.getInstance(CloneGroupClusterer.class),
-
 
 			try(Source<Clone> source
 					= Cells.decodeSource(pipe.lastEfflux(), i.getInstance(Function2RoughClonesCodec.class))) {

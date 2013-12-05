@@ -8,7 +8,6 @@ import static org.junit.Assert.assertThat;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 import org.junit.Test;
@@ -20,11 +19,10 @@ import ch.unibe.scg.cc.Protos.Clone;
 import ch.unibe.scg.cc.Protos.CloneType;
 import ch.unibe.scg.cc.Protos.GitRepo;
 import ch.unibe.scg.cc.Protos.Snippet;
-import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.CellSource;
+import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
 import ch.unibe.scg.cells.InMemoryPipeline;
-import ch.unibe.scg.cells.InMemoryShuffler;
 import ch.unibe.scg.cells.InMemoryStorage;
 import ch.unibe.scg.cells.LocalCounterModule;
 import ch.unibe.scg.cells.LocalExecutionModule;
@@ -46,20 +44,22 @@ public final class Function2RoughClonerTest {
 				Modules.override(new CCModule(new InMemoryStorage(), new LocalCounterModule()))
 						.with(new TestModule()));
 		Codec<GitRepo> repoCodec = i.getInstance(GitRepoCodec.class);
-		CollectionCellSource<GitRepo> src = new CollectionCellSource<>(Arrays.<Iterable<Cell<GitRepo>>> asList(Arrays
-				.asList(repoCodec.encode(GitPopulatorTest.parseZippedGit("paperExample.zip")))));
 
-		try (InMemoryShuffler<Clone> sink = i.getInstance(Key.get(new TypeLiteral<InMemoryShuffler<Clone>>() {}))) {
-			i.getInstance(InMemoryPipeline.Builder.class).make(src, sink)
-					.influx(repoCodec)
-					.map(i.getInstance(GitPopulator.class))
-					.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
-					.mapAndEfflux(
-							i.getInstance(Function2RoughCloner.class),
-							i.getInstance(Function2RoughClonesCodec.class));
+		try (CellSource<GitRepo> src
+				= Cells.shard(Cells.encode(Arrays.asList(GitPopulatorTest.parseZippedGit("paperExample.zip")), repoCodec));
+				InMemoryPipeline<GitRepo, Clone> pipe = i.getInstance(InMemoryPipeline.Builder.class).make(src)) {
+			pipe
+				.influx(repoCodec)
+				.map(i.getInstance(GitPopulator.class))
+				.shuffle(i.getInstance(Snippet2FunctionsCodec.class))
+				.mapAndEfflux(
+						i.getInstance(Function2RoughCloner.class),
+						i.getInstance(Function2RoughClonesCodec.class));
 
 			// See paper: Table III
-			assertThat(Iterables.size(sink), is(2));
+			assertThat(
+					Iterables.size(Cells.decodeSource(pipe.lastEfflux(), i.getInstance(Function2RoughClonesCodec.class))),
+					is(2));
 
 			try(Source<Snippet> popularPartitions =
 					i.getInstance(Key.get(new TypeLiteral<Source<Snippet>>() {}, PopularSnippets.class))) {
@@ -86,27 +86,6 @@ public final class Function2RoughClonerTest {
 			}
 		}
 		// TODO continue paper example
-	}
-
-	/** Bridge between Collections and CellSource */
-	static class CollectionCellSource<T> implements CellSource<T> {
-		final private static long serialVersionUID = 1L;
-
-		final private Iterable<Iterable<Cell<T>>> collection;
-
-		CollectionCellSource(Iterable<Iterable<Cell<T>>> collection) {
-			this.collection = collection;
-		}
-
-		@Override
-		public Iterator<Iterable<Cell<T>>> iterator() {
-			return collection.iterator();
-		}
-
-		@Override
-		public void close() throws IOException {
-			// Nothing to do.
-		}
 	}
 
 	static class TestModule extends AbstractModule {
