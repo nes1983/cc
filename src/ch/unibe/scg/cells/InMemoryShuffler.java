@@ -10,8 +10,8 @@ import java.util.TreeSet;
 
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.Iterators;
 import com.google.common.collect.Ordering;
+import com.google.common.collect.UnmodifiableIterator;
 import com.google.protobuf.ByteString;
 
 /**
@@ -46,7 +46,7 @@ import com.google.protobuf.ByteString;
  * However, if serialization is attempted using a classical {@link java.io.ObjectOutputStream},
  * it will throw a {@link UnsupportedOperationException}.
  */
-public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T>, Iterable<Iterable<Cell<T>>> {
+class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLookupTable<T>, Iterable<Cell<T>> {
 	final private static long serialVersionUID = 1L;
 
 	/** The backing store. When used as a sink, this is mutable. Closing the sink makes the field immutable. */
@@ -125,33 +125,19 @@ public class InMemoryShuffler<T> implements CellSink<T>, CellSource<T>, CellLook
 
 	/** May only be called in state Readable. This is thread-safe with other reads. See class comment. */
 	@Override
-	public Iterator<Iterable<Cell<T>>> iterator() {
+	public Iterator<Cell<T>> iterator() {
 		assert Ordering.natural().isOrdered(store) : "Someone forgot to close the sink.";
 
-		if (store.isEmpty()) {
-			return Iterators.emptyIterator();
-		}
-
-		ImmutableList.Builder<Iterable<Cell<T>>> ret = ImmutableList.builder();
-
-		ImmutableList.Builder<Cell<T>> partition = ImmutableList.builder();
-		Cell<T> last = null;
-
-		for (Cell<T> c : store) {
-			if ((last != null) && (!c.getRowKey().equals(last.getRowKey()))) {
-				ret.add(partition.build());
-				partition = ImmutableList.builder();
-				last = null;
+		final Iterator<Cell<T>> ret = store.iterator();
+		return new UnmodifiableIterator<Cell<T>>() {
+			@Override public boolean hasNext() {
+				return ret.hasNext();
 			}
 
-			partition.add(c);
-
-			last = c;
-		}
-
-		ret.add(partition.build());
-
-		return ret.build().iterator();
+			@Override public Cell<T> next() {
+				return ret.next();
+			}
+		};
 	}
 
 	/** Only available in state Readable. This operation is threadsafe -- but not during writes. See class comment. */

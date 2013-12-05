@@ -24,13 +24,18 @@ import com.google.inject.util.Types;
  */
 public abstract class CellsModule extends AbstractModule {
 	private static class SourceProvider<T> implements Provider<Source<T>> {
+		final private Provider<CellSource<Void>> src;
+		final private Provider<Codec<T>> codec;
 
 		@Inject
-		SourceProvider() { }
+		SourceProvider(Provider<CellSource<Void>> src, Provider<Codec<T>> codec) {
+			this.src = src;
+			this.codec = codec;
+		}
 
 		@Override
 		public Source<T> get() {
-			throw new RuntimeException("We're intending to delete sources.");
+			return Cells.decodeSource((CellSource<T>) src.get(), codec.get());
 		}
 	}
 
