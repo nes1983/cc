@@ -153,7 +153,7 @@ public final class HadoopPipelineTest {
 		@Override
 		public void map(Act first, OneShotIterable<Act> row, Sink<Word> sink) throws IOException,
 				InterruptedException {
-			for(Act act : row) {
+			for (Act act : row) {
 				Matcher matcher = Pattern.compile("\\w+").matcher(act.content);
 				while (matcher.find()) {
 					sink.write(new Word(matcher.group(), first.number, matcher.start()));
@@ -197,7 +197,7 @@ public final class HadoopPipelineTest {
 	public void testHadoopWordcount() throws IOException, InterruptedException {
 		TableAdmin tableAdmin = Guice.createInjector(new UnibeModule()).getInstance(TableAdmin.class);
 
-		try(Table<Act> in = tableAdmin.createTemporaryTable(FAMILY);
+		try (Table<Act> in = tableAdmin.createTemporaryTable(FAMILY);
 				Table<WordCount> eff = tableAdmin.createTemporaryTable(FAMILY)) {
 			Module tab = new CellsModule() {
 				@Override
@@ -225,7 +225,7 @@ public final class HadoopPipelineTest {
 
 			run(HadoopPipeline.fromTableToTable(injector.getInstance(Configuration.class), in, eff));
 
-			try(Source<WordCount> src = injector.getInstance(Key.get(new TypeLiteral<Source<WordCount>>() {}, Eff.class))) {
+			try (Source<WordCount> src = injector.getInstance(Key.get(new TypeLiteral<Source<WordCount>>() {}, Eff.class))) {
 				WordCount wc = Iterables.getOnlyElement(Iterables.getOnlyElement(src));
 				assertThat(wc.word, is("your"));
 				assertThat(wc.count, is(239L));
