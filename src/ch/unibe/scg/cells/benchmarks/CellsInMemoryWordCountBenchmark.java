@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -17,8 +16,8 @@ import ch.unibe.scg.cells.InMemoryPipeline;
 import ch.unibe.scg.cells.LocalExecutionModule;
 import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
+import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
-
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
@@ -32,10 +31,10 @@ import com.google.protobuf.ByteString;
  * Benchmarks cells performance on a local machine with wordcount problem.
  * Input folder can be specified via command line argument.
  */
-public class WordCountBenchmark {
-	private final static int TIMES = 10;
+public class CellsInMemoryWordCountBenchmark {
+	private final static int TIMES = 50;
 
-	private final static class WordCount {
+	final static class WordCount {
 		int count;
 		final String word;
 		final String fileName;
@@ -52,7 +51,7 @@ public class WordCountBenchmark {
 		}
 	}
 
-	private final static class WordCountCodec implements Codec<WordCount> {
+	final static class WordCountCodec implements Codec<WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -70,7 +69,7 @@ public class WordCountBenchmark {
 		}
 	}
 
-	private final static class Book {
+	final static class Book {
 		final String fileName;
 		final String content;
 
@@ -80,7 +79,7 @@ public class WordCountBenchmark {
 		}
 	}
 
-	static class BookCodec implements Codec<Book> {
+	final static class BookCodec implements Codec<Book> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -95,7 +94,7 @@ public class WordCountBenchmark {
 		}
 	}
 
-	private static class WordParser implements Mapper<Book, WordCount> {
+	final static class WordParser implements Mapper<Book, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -123,7 +122,7 @@ public class WordCountBenchmark {
 		}
 	}
 
-	private static class WordCounter implements Mapper<WordCount, WordCount> {
+	final static class WordCounter implements Mapper<WordCount, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -143,30 +142,26 @@ public class WordCountBenchmark {
 
 	/**
 	 * Runs a wordcount benchmark. You can specify input folder with first argument.
-	 * The default input folder is "../data"
+	 * The default input folder is "benchmarks/data"
 	 */
 	public static void main(String[] args) throws IOException, InterruptedException {
-		String input = "..//data";
+		String input = "benchmarks/data";
 		if (args.length > 0) {
 			input = args[0];
 		}
 
-		Injector inj = Guice.createInjector(new LocalExecutionModule());
 		double[] timings = new double[TIMES];
-		NumberFormat f = DecimalFormat.getInstance();
+		NumberFormat f = NumberFormat.getInstance();
 		f.setMaximumFractionDigits(2);
 
 		for (int i = 0; i < TIMES; i++) {
 			long startTime = System.nanoTime();
 
 			try (InMemoryPipeline<Book, WordCount> pipe
-						= inj.getInstance(InMemoryPipeline.Builder.class)
+						= Guice.createInjector(new LocalExecutionModule()).getInstance(InMemoryPipeline.Builder.class)
 								.make(Cells.shard(Cells.encode(readBooksFromDisk(input), new BookCodec())))) {
 
-				pipe.influx(new BookCodec())
-					.map(inj.getInstance(WordParser.class))
-					.shuffle(new WordCountCodec())
-					.mapAndEfflux(inj.getInstance(WordCounter.class), new WordCountCodec());
+				run(pipe);
 
 				int dummy = 0;
 				for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
@@ -188,7 +183,14 @@ public class WordCountBenchmark {
 
 	}
 
-	private static Iterable<Book> readBooksFromDisk(String path) throws IOException, InterruptedException {
+	static void run(Pipeline<Book, WordCount> pipe) throws IOException, InterruptedException {
+		pipe.influx(new BookCodec())
+			.map(new WordParser())
+			.shuffle(new WordCountCodec())
+			.mapAndEfflux(new WordCounter(), new WordCountCodec());
+	}
+
+	private static Iterable<Book> readBooksFromDisk(String path) {
 		final ImmutableList.Builder<Book> ret = ImmutableList.builder();
 		for (File f : new File(path).listFiles()) {
 			try {
