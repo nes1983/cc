@@ -18,13 +18,13 @@ public final class JUnitRunner {
 		}
 		Result res = JUnitCore.runClasses(junitArgs);
 		System.err.println("Tests ran for " + res.getRunTime());
-		System.err.println("Ignored " + res.getIgnoreCount() + "tests.");
+		System.err.println("Ignored " + res.getIgnoreCount() + " tests.");
 
 		if (res.wasSuccessful()) {
 			return;
 		}
 
-		System.err.println("There were failures.");
+		System.err.println("There were " + res.getFailureCount() + " failures.");
 		for (Failure f : res.getFailures()) {
 			System.err.println(f);
 			System.err.println(f.getTrace());
