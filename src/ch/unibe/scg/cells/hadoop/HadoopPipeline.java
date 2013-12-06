@@ -83,13 +83,13 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** @return a Pipeline that reads from HDFS, but writes to an HBase table. */
-	public static <IN, EFF> HadoopPipeline<IN, EFF> fromHadoopToTable(Configuration configuration,
+	public static <IN, EFF> HadoopPipeline<IN, EFF> fromHDFSToTable(Configuration configuration,
 			Class<? extends FileInputFormat<ImmutableBytesWritable,
 					ImmutableBytesWritable>> inputFormat,
 			Path inputPath,
 			Table<EFF> efflux) {
 		return new HadoopPipeline<>(configuration,
-				new HadoopInputConfigurer<IN>(inputFormat, inputPath),
+				new HDFSInputConfigurer<IN>(inputFormat, inputPath),
 				efflux,
 				new TableAdmin(configuration, new HTableFactory(configuration)));
 	}
@@ -140,12 +140,12 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 	}
 
 	/** MapConfigurer for the case of HDFS input. */
-	private static class HadoopInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
+	private static class HDFSInputConfigurer<MAP_IN> implements MapConfigurer<MAP_IN> {
 		final private Class<? extends FileInputFormat<ImmutableBytesWritable,
 				ImmutableBytesWritable>> inputFormat;
 		final private Path inputPath;
 
-		HadoopInputConfigurer(
+		HDFSInputConfigurer(
 				Class<? extends FileInputFormat<ImmutableBytesWritable,
 						ImmutableBytesWritable>> inputFormat,
 				Path inputPath) {

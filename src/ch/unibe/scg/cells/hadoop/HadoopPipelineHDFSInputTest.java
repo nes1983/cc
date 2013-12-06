@@ -138,7 +138,7 @@ public final class HadoopPipelineHDFSInputTest {
 
 		int cnt = 0;
 		try (Table<File> tab = injector.getInstance(TableAdmin.class).createTemporaryTable(family)) {
-			HadoopPipeline<File, File> pipe = HadoopPipeline.fromHadoopToTable(
+			HadoopPipeline<File, File> pipe = HadoopPipeline.fromHDFSToTable(
 					injector.getInstance(Configuration.class),
 					RawTextFileFormat.class,
 					new Path("hdfs://haddock.unibe.ch/user/nes/upgrade-squeezestep.script"),

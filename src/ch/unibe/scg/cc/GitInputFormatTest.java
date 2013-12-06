@@ -85,7 +85,7 @@ public final class GitInputFormatTest {
 
 		try(Table<RefCount> tab
 				= i.getInstance(TableAdmin.class).createTemporaryTable(ByteString.copyFromUtf8("f"))) {
-			HadoopPipeline<GitRepo, RefCount> pipe = HadoopPipeline.fromHadoopToTable(conf,
+			HadoopPipeline<GitRepo, RefCount> pipe = HadoopPipeline.fromHDFSToTable(conf,
 					GitInputFormat.class,
 					new Path("har://hdfs-haddock.unibe.ch:/projects/datasetbackup.har/repos/"),
 					tab);

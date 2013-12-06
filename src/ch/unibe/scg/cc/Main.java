@@ -66,7 +66,7 @@ public final class Main {
 		}
 
 		try (Table<Clone> tab = admin.existing(OUT_TABLE, fam)) {
-			HadoopPipeline<GitRepo, Clone> pipe = HadoopPipeline.fromHadoopToTable(conf,
+			HadoopPipeline<GitRepo, Clone> pipe = HadoopPipeline.fromHDFSToTable(conf,
 					GitInputFormat.class,
 					new Path("har://hdfs-haddock.unibe.ch:/projects/dataset-141.har/repos/"),
 					tab);
