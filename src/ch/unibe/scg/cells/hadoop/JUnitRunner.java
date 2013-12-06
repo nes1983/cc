@@ -1,6 +1,8 @@
 package ch.unibe.scg.cells.hadoop;
 
 import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
 /**
  * Hadoop has its own JUnit in its classpath, whose class loader cannot find our classes.
@@ -14,6 +16,20 @@ public final class JUnitRunner {
 		for (int i = 0; i < args.length; i++) {
 			junitArgs[i] = Class.forName(args[i]);
 		}
-		JUnitCore.runClasses(junitArgs);
+		Result res = JUnitCore.runClasses(junitArgs);
+		System.err.println("Tests ran for " + res.getRunTime());
+		System.err.println("Ignored " + res.getIgnoreCount() + "tests.");
+
+		if (res.wasSuccessful()) {
+			return;
+		}
+
+		System.err.println("There were failures.");
+		for (Failure f : res.getFailures()) {
+			System.err.println(f);
+			System.err.println(f.getTrace());
+		}
+
+		System.exit(-1);
 	}
 }
