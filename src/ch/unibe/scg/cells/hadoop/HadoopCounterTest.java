@@ -8,7 +8,6 @@ import org.junit.Test;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.LocalCounterTest;
 import ch.unibe.scg.cells.LocalCounterTest.IOExceptions;
-import ch.unibe.scg.cells.LocalCounterTest.IdentityMapper;
 import ch.unibe.scg.cells.LocalCounterTest.IntegerCodec;
 import ch.unibe.scg.cells.LocalCounterTest.UsrExceptions;
 import ch.unibe.scg.cells.Sink;
@@ -53,9 +52,8 @@ public final class HadoopCounterTest {
 
 			HadoopPipeline<Integer, Integer> pipe
 				= HadoopPipeline.fromTableToTable(inj.getInstance(Configuration.class), in, eff);
-			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
 
-			LocalCounterTest.run(pipe, mapper);
+			inj.getInstance(LocalCounterTest.Runner.class).run(pipe);
 			// TODO: add assertions.
 		}
 	}

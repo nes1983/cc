@@ -124,11 +124,11 @@ public final class LocalCounterTest {
 				= inj.getInstance(InMemoryPipeline.Builder.class)
 					.make(Cells.shard(Cells.encode(generateSequence(1000), new IntegerCodec())))) {
 
-			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
-			run(pipe, mapper);
+			Runner r = inj.getInstance(Runner.class);
+			r.run(pipe);
 
-			assertThat(mapper.finalIoCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
-			assertThat(mapper.finalUsrCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
+			assertThat(r.mapper.finalIoCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$IOExceptions: 1000"));
+			assertThat(r.mapper.finalUsrCount, equalTo("ch.unibe.scg.cells.LocalCounterTest$UsrExceptions: 2000"));
 		}
 	}
 
@@ -148,8 +148,7 @@ public final class LocalCounterTest {
 						inj.getInstance(Key.get(new TypeLiteral<Provider<Set<LocalCounter>>>(){})),
 						out)) {
 
-			IdentityMapper mapper = inj.getInstance(IdentityMapper.class);
-			run(pipe, mapper);
+			inj.getInstance(Runner.class).run(pipe);
 
 			String log = bos.toString(Charsets.UTF_8.toString());
 
@@ -167,13 +166,22 @@ public final class LocalCounterTest {
 		}
 	}
 
-	/** Runs a pipeline that maps ints to ints. */
-	public static void run(Pipeline<Integer, Integer> pipe,
-			Mapper<Integer, Integer> mapper) throws IOException, InterruptedException {
-		pipe.influx(new IntegerCodec())
-			.map(mapper)
-			.shuffle(new IntegerCodec())
-			.mapAndEfflux(mapper, new IntegerCodec());
+	@SuppressWarnings("javadoc")
+	public static class Runner {
+		final IdentityMapper mapper;
+
+		@Inject
+		Runner(IdentityMapper mapper) {
+			this.mapper = mapper;
+		}
+
+		/** Runs a pipeline that maps ints to ints. */
+		public void run(Pipeline<Integer, Integer> pipe) throws IOException, InterruptedException {
+			pipe.influx(new IntegerCodec())
+				.map(mapper)
+				.shuffle(new IntegerCodec())
+				.mapAndEfflux(mapper, new IntegerCodec());
+		}
 	}
 
 	/** Generates a sequence of integers of specified length. */
