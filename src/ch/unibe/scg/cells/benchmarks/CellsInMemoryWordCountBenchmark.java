@@ -24,7 +24,6 @@ import com.google.common.collect.Iterables;
 import com.google.common.io.CharStreams;
 import com.google.common.primitives.Ints;
 import com.google.inject.Guice;
-import com.google.inject.Injector;
 import com.google.protobuf.ByteString;
 
 /**
