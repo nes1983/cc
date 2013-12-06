@@ -172,14 +172,14 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 				final int shard = s;
 				threadPool.execute(new Runnable() {
 					@Override public void run() {
-						for (Iterable<Cell<I>> rawRow : Cells.breakIntoRows(src.getShard(shard))) {
-							Iterable<I> decoded = Cells.decode(rawRow, srcCodec);
-							Iterator<I> iter = decoded.iterator();
-							final I first = iter.next();
-							final Iterable<I> row = Iterables.concat(
-									singletonList(first),
-									new AdapterOneShotIterable<>(iter));
-							try {
+						try {
+							for (Iterable<Cell<I>> rawRow : Cells.breakIntoRows(src.getShard(shard))) {
+								Iterable<I> decoded = Cells.decode(rawRow, srcCodec);
+								Iterator<I> iter = decoded.iterator();
+								final I first = iter.next();
+								final Iterable<I> row = Iterables.concat(
+										singletonList(first),
+										new AdapterOneShotIterable<>(iter));
 								@SuppressWarnings("resource") // Closed by mapperCloser.
 								Mapper<I, E> m = mappers.take();
 								m.map(
@@ -187,13 +187,14 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 										new AdapterOneShotIterable<>(row),
 										encode(sinks.get(shard), sinkCodec));
 								mappers.put(m);
-							} catch (Exception e) {
-								exceptionHolder.e = e;
-								out.println("Suppressed exception:");
-								e.printStackTrace(out);
-								mapCnt.countDown();
-								return;
+
 							}
+						} catch (Exception e) {
+							exceptionHolder.e = e;
+							out.println("Suppressed exception:");
+							e.printStackTrace(out);
+							mapCnt.countDown();
+							return;
 						}
 						mapCnt.countDown();
 					}

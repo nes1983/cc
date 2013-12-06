@@ -1,6 +1,7 @@
 package ch.unibe.scg.cells;
 
 import java.io.Closeable;
+import java.io.IOException;
 import java.io.Serializable;
 
 /**
@@ -25,7 +26,7 @@ import java.io.Serializable;
  */
 public interface CellSource<T> extends Closeable, Serializable {
 	/** @return number of shards. */
-	int nShards();
+	int nShards() throws IOException;
 	/** @return the <i>i</i>th shard. */
-	OneShotIterable<Cell<T>> getShard(int shard);
+	OneShotIterable<Cell<T>> getShard(int shard) throws IOException;
 }

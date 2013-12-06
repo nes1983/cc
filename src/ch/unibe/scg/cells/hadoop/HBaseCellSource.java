@@ -1,8 +1,8 @@
 package ch.unibe.scg.cells.hadoop;
 
-import java.io.Closeable;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.NoSuchElementException;
 
@@ -29,71 +29,8 @@ public class HBaseCellSource<T> implements CellSource<T>{
 
 	/** Do not modify. */
 	final private byte[] family;
-	/** May be null! */
 	final private SerializableHTable hTable;
 	private transient Closer closer = Closer.create();
-
-	private class ResultScannerIterator extends UnmodifiableIterator<Cell<T>> implements Closeable {
-		final private ResultScanner scanner;
-
-		/** The current row's column keys and cell contents. Null if the iterator is empty. */
-		private Iterable<Entry<byte[], byte[]>> curRow;
-		/** The current row's key. */
-		private ByteString rowKey;
-
-		/** {@code next} may be null. */
-		ResultScannerIterator(ResultScanner scanner) {
-			this.scanner = scanner;
-			readNextRow();
-		}
-
-		@Override public boolean hasNext() {
-			return curRow != null;
-		}
-
-		@Override public Cell<T> next() {
-			if (!hasNext()) { // Demanded by Iterator contract.
-				throw new NoSuchElementException();
-			}
-
-			Entry<byte[], byte[]> c = curRow.iterator().next();
-			Cell<T> ret = Cell.<T> make(rowKey,
-					ByteString.copyFrom(c.getKey()), ByteString.copyFrom(c.getValue()));
-
-			if (nextRowNeeded()) {
-				readNextRow();
-			}
-
-			return ret;
-		}
-
-		@Override public void close() {
-			scanner.close();
-		}
-
-		/** Advance curRow and rowKey to point to the row to be returned next. */
-		private void readNextRow() {
-			Result r;
-			try {
-				r = scanner.next();
-			} catch (IOException e1) {
-				// TODO: Choose a better exception.
-				throw new RuntimeException(e1); // unchecked because iterator cannot throw
-			}
-			if (r == null) {
-				rowKey = null;
-				curRow = null;
-				close(); // closing here because iterator is exhausted. Faster than relying on source's close.
-			} else {
-				rowKey = ByteString.copyFrom(r.getRow());
-				curRow = r.getFamilyMap(family).entrySet();
-			}
-		}
-
-		private boolean nextRowNeeded() {
-			return curRow == null || !curRow.iterator().hasNext();
-		}
-	}
 
 	@Inject
 	HBaseCellSource(@FamilyName ByteString family, SerializableHTable hTable) {
@@ -104,6 +41,51 @@ public class HBaseCellSource<T> implements CellSource<T>{
 	private void readObject(ObjectInputStream in) throws ClassNotFoundException, IOException {
 		in.defaultReadObject();
 		closer = Closer.create();
+	}
+
+	private class ResultScannerIterator extends UnmodifiableIterator<Cell<T>> {
+		/** The current row's column keys and cell contents. */
+		private Iterator<Entry<byte[], byte[]>> curRow;
+
+		/** The current row's key. */
+		private ByteString curRowKey;
+
+		final private Iterator<Result> nextRows;
+
+
+		/** {@code next} may be null. */
+		ResultScannerIterator(Iterator<Result> nextRows) {
+			this.nextRows = nextRows;
+		}
+
+		@Override
+		public boolean hasNext() {
+			if (curRow != null && curRow.hasNext()) {
+				return true;
+			}
+
+			return nextRows.hasNext();
+		}
+
+		@Override
+		public Cell<T> next() {
+			if (!hasNext()) { // Demanded by Iterator contract.
+				throw new NoSuchElementException();
+			}
+
+			if (curRow == null || !curRow.hasNext()) {
+				// Read next row.
+				Result r = nextRows.next();
+				curRowKey = ByteString.copyFrom(r.getRow());
+				curRow = r.getFamilyMap(family).entrySet().iterator();
+			}
+
+			Entry<byte[], byte[]> c = curRow.next();
+
+			return Cell.<T> make(curRowKey,
+					ByteString.copyFrom(c.getKey()),
+					ByteString.copyFrom(c.getValue()));
+		}
 	}
 
 	/** Provides scans appropriate for reading tables sequentially, as in a Mapper. */
@@ -117,15 +99,14 @@ public class HBaseCellSource<T> implements CellSource<T>{
 		return scan;
 	}
 
-	private final ResultScanner openScanner() {
+	private ResultScanner openScanner() throws IOException {
 		Scan scan = makeScan();
 		scan.addFamily(family);
 		try {
-			ResultScanner ret = hTable.hTable.getScanner(scan);
-			closer.register(ret);
-			return ret;
+			return hTable.hTable.getScanner(scan);
 		} catch (IOException e) {
-			throw new RuntimeException("Couldn't open table " + new String(hTable.hTable.getTableName(), Charsets.UTF_8), e);
+			throw new IOException("Couldn't open table "
+					+ new String(hTable.hTable.getTableName(), Charsets.UTF_8), e);
 		}
 	}
 
@@ -139,26 +120,27 @@ public class HBaseCellSource<T> implements CellSource<T>{
 	}
 
 	@Override
-	public int nShards() {
-		try (ResultScanner sc = openScanner();
-				ResultScannerIterator r = new ResultScannerIterator(sc)) {
-			boolean isEmpty = r.hasNext();
-			if (isEmpty) {
-				return 0;
+	public int nShards() throws IOException {
+		try (ResultScanner scan = openScanner()) {
+			if (scan.iterator().hasNext()) {
+				return 1;
 			}
 
-			return 1;
+			return 0;
 		}
 	}
 
-	@SuppressWarnings("resource") // scanner will get closed upon closing the source.
+	@SuppressWarnings("resource") // scan is added to the closer, and therefore closed.
 	@Override
-	public OneShotIterable<Cell<T>> getShard(int shard) {
+	public OneShotIterable<Cell<T>> getShard(int shard) throws IOException {
 		if (shard < 0 || nShards() <= shard) {
 			throw new IndexOutOfBoundsException(
 					String.format("You asked for shard %s, but there are only %s.", shard, nShards()));
 		}
 
-		return new AdapterOneShotIterable<>(new ResultScannerIterator(openScanner()));
+		ResultScanner scan = openScanner();
+		closer.register(scan);
+
+		return new AdapterOneShotIterable<>(new ResultScannerIterator(scan.iterator()));
 	}
 }

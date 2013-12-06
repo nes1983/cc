@@ -117,7 +117,6 @@ public enum Cells {
 	 * Decode source using codec.
 	 * In case of a IOException, the iterator will throw an unchecked {@link EncodingException}.
 	 */
-	// TODO: delete.
 	public static <T> Source<T> decodeSource(final CellSource<T> source, final Codec<T> codec) {
 		return new Source<T>() {
 			final private static long serialVersionUID = 1L;
@@ -125,8 +124,13 @@ public enum Cells {
 			@Override
 			public Iterator<Iterable<T>> iterator() {
 				Iterable<Cell<T>> flatSource = Collections.emptyList();
-				for (int i = 0; i < source.nShards(); i++) {
-					flatSource = Iterables.concat(flatSource, source.getShard(i));
+				try {
+					for (int i = 0; i < source.nShards(); i++) {
+						flatSource = Iterables.concat(flatSource, source.getShard(i));
+					}
+				} catch (IOException e) {
+					// Unchecked because iterables can't throw.
+					throw new RuntimeException("Error decoding " + source, e);
 				}
 
 				return Iterables.transform(Cells.breakIntoRows(flatSource),
