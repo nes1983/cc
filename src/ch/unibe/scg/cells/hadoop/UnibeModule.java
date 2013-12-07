@@ -4,7 +4,6 @@ import javax.inject.Provider;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
-import org.apache.hadoop.io.compress.SnappyCodec;
 import org.apache.hadoop.mapreduce.MRJobConfig;
 
 import com.google.inject.AbstractModule;
@@ -19,6 +18,8 @@ public final class UnibeModule extends AbstractModule {
 			ret.set("hbase.zookeeper.quorum", "leela.unibe.ch");
 			ret.setInt("hbase.zookeeper.property.clientPort", 2181);
 			ret.setBoolean("fs.automatic.close", false);
+
+			// Performance settings.
 			ret.setLong(MRJobConfig.MAP_MEMORY_MB, 4000L);
 			ret.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx3500m");
 			ret.setLong(MRJobConfig.REDUCE_MEMORY_MB, 4000L);
@@ -28,7 +29,6 @@ public final class UnibeModule extends AbstractModule {
 			ret.setBoolean(MRJobConfig.MAP_SPECULATIVE, false);
 			ret.setInt(MRJobConfig.JVM_NUMTASKS_TORUN, -1);
 			ret.setBoolean(MRJobConfig.MAP_OUTPUT_COMPRESS, true);
-			ret.set(MRJobConfig.MAP_OUTPUT_COMPRESS_CODEC, SnappyCodec.class.getName());
 			ret.setInt(MRJobConfig.IO_SORT_MB, 500);
 			ret.setInt(MRJobConfig.IO_SORT_FACTOR, 50);
 			ret.setFloat(MRJobConfig.MAP_SORT_SPILL_PERCENT, 0.9f);

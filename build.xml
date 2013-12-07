@@ -13,10 +13,10 @@
 			ls libs/*.jar | ruby -ne 'puts "<pathelement location=\"#{$_.gsub("\n","")}\"/>"'
 			This is necessary, because ant is FOS.
 		-->
-		<pathelement location="libs/aopalliance.jar"/>
+		<pathelement location="libs/aopalliance-1.0.jar"/>
 		<pathelement location="libs/automaton.jar"/>
 		<pathelement location="libs/commons-cli-1.2.jar"/>
-		<pathelement location="libs/commons-configuration-1.8.jar"/>
+		<pathelement location="libs/commons-configuration-1.6.jar"/>
 		<pathelement location="libs/commons-logging-1.1.1.jar"/>
 		<pathelement location="libs/guava-14.0.1.jar"/>
 		<pathelement location="libs/guice-3.0.jar"/>
@@ -27,23 +27,23 @@
 		<pathelement location="libs/guice-multibindings-3.0.jar"/>
 		<pathelement location="libs/guice-persist-3.0.jar"/>
 		<pathelement location="libs/guice-throwingproviders-3.0.jar"/>
-		<pathelement location="libs/hadoop-auth-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-common-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.3.0.jar"/>
-		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.3.0.jar"/>
+		<pathelement location="libs/hadoop-auth-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-common-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-hdfs-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-app-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-common-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-core-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-jobclient-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-mapreduce-client-shuffle-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-api-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-client-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-common-2.0.0-cdh4.5.0.jar"/>
+		<pathelement location="libs/hadoop-yarn-server-common-2.0.0-cdh4.5.0.jar"/>
 		<pathelement location="libs/hamcrest-all-1.3.0RC2.jar"/>
-		<pathelement location="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
-		<pathelement location="libs/javax.inject.jar"/>
-		<pathelement location="libs/jsch-0.1.48.jar"/>
-		<pathelement location="libs/junit-4.11.jar"/>
+		<pathelement location="libs/junit-4.8.2.jar"/>
+		<pathelement location="libs/hbase-0.94.6-cdh4.5.0-security.jar"/>
+		<pathelement location="libs/javax.inject-1.jar"/>
+		<pathelement location="libs/jsch-0.1.42.jar"/>
 		<pathelement location="libs/juniversalchardet-1.0.3.jar"/>
 		<pathelement location="libs/mockito-all-1.9.0-rc1.jar"/>
 		<pathelement location="libs/org.eclipse.jgit-2.3.1.201302201838-r.jar"/>
@@ -81,10 +81,10 @@
 			find libs -name '*.jar' -prune -type f | ruby -n -e 'puts "<zipfileset src=\"" + $_.gsub(/\n/,"") + "\"/>" \
 				unless /libs\/(dev-only|hbasetest-only|hadoop).*/ =~ $_'
 			-->
-			<zipfileset src="libs/aopalliance.jar"/>
+			<zipfileset src="libs/aopalliance-1.0.jar"/>
 			<zipfileset src="libs/automaton.jar"/>
 			<zipfileset src="libs/commons-cli-1.2.jar"/>
-			<zipfileset src="libs/commons-configuration-1.8.jar"/>
+			<zipfileset src="libs/commons-configuration-1.6.jar"/>
 			<zipfileset src="libs/commons-logging-1.1.1.jar"/>
 			<zipfileset src="libs/guava-14.0.1.jar"/>
 			<zipfileset src="libs/guice-3.0.jar"/>
@@ -96,9 +96,9 @@
 			<zipfileset src="libs/guice-persist-3.0.jar"/>
 			<zipfileset src="libs/guice-throwingproviders-3.0.jar"/>
 			<zipfileset src="libs/hamcrest-all-1.3.0RC2.jar"/>
-			<zipfileset src="libs/hbase-0.94.6-cdh4.3.0-security.jar"/>
-			<zipfileset src="libs/javax.inject.jar"/>
-			<zipfileset src="libs/jsch-0.1.48.jar"/>
+			<zipfileset src="libs/hbase-0.94.6-cdh4.5.0-security.jar"/>
+			<zipfileset src="libs/javax.inject-1.jar"/>
+			<zipfileset src="libs/jsch-0.1.42.jar"/>
 			<zipfileset src="libs/juniversalchardet-1.0.3.jar"/>
 			<zipfileset src="libs/mockito-all-1.9.0-rc1.jar"/>
 			<zipfileset src="libs/org.eclipse.jgit-2.3.1.201302201838-r.jar"/>
@@ -112,7 +112,7 @@
 		 TODO: As long as we provide the hbase-jar in the cc.jar (with jarjar, see above),
 		 we can provide an empty libjars property. When jarjar gets removed from the
 		 build process, we need to set the libjars value again to something like this:
-		 "-libjars /tmp/hbase-0.94.6-cdh4.3.0-security.jar"
+		 "-libjars /tmp/hbase-0.94.6-cdh4.5.0-security.jar"
 		-->
 		<property name="libjars" value=""/>
 		<scp file="cc.jar" todir="deploy@haddock.unibe.ch:" password="" keyfile="${user.home}/.ssh/id_rsa"/>
