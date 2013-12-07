@@ -22,6 +22,6 @@ import ch.unibe.scg.cells.LocalCounterTest;
    InMemorySourceTest.class,
    LocalCounterTest.class,
 })
-public class HadoopTestSuite {
+public class CellsTestSuite {
 	// nothing to do.
 }
