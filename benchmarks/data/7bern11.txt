@@ -1,0 +1,4606 @@
+The Project Gutenberg Etext of Agnes Bernauer, by Friedrich Hebbel
+#2 in our series by Friedrich Hebbel
+
+This Etext is provided in German.
+
+We are releasing two versions of this Etext, one in 7-bit format,
+known as Plain Vanilla ASCII, which can be sent via plain email--
+and one in 8-bit format, which includes higher order characters--
+which requires a binary transfer, or sent as email attachment and
+may require more specialized programs to display the accents.
+This is the 7-bit version.
+
+This book content was graciously contributed by the Gutenberg Projekt-DE.
+That project is reachable at the web site http://gutenberg.aol.de.
+
+Dieses Buch wurde uns freundlicherweise vom "Gutenberg Projekt-DE"
+zur Verfuegung gestellt.  Das Projekt ist unter der Internet-Adresse
+http://gutenberg.aol.de erreichbar.
+
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Are Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below, including for donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+
+
+Title: Agnes Bernauer
+
+Author: Friedrich Hebbel
+
+Release Date: May 2003  [Etext #4079]
+[Yes, we are about one year ahead of schedule]
+[The actual date this file first posted = December 11, 2001]
+
+Edition: 1.1
+
+Language: German
+
+The Project Gutenberg Etext of Agnes Bernauer, by Friedrich Hebbel
+*******This file should be named 7bern11.txt or 7bern11.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7bern12.txt
+VERSIONS based on separate sources get new LETTER, 7bern11a.txt
+
+This etext was produced by Michael Pullen, globaltraveler5565@yahoo.com
+with proofreading assistance by Dr. Mary Cicora, mcicora@yahoo.com.
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 4,000 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of June 1, 2001 contributions are only being solicited from people 
+in:
+Arkansas, Colorado, Connecticut, Delaware, Hawaii, Idaho, Indiana,
+Iowa, Kansas, Louisiana, Maine, Massachusetts, Minnesota, Missouri,
+Montana, Nebraska, Nevada, New Jersey, New York, Ohio, Oklahoma,
+Oregon, Rhode Island, South Carolina, South Dakota, Tennessee,
+Texas, Vermont, Virginia, Washington, West Virginia, and Wyoming.
+
+We have filed in about 45 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork
+to legally request donations in all 50 states.  If
+your state is not listed and you would like to know
+if we have added it since the list you have, just ask.
+
+While we cannot solicit donations from people in
+states where we are not yet registered, we know
+of no prohibition against accepting donations
+from donors in these states who approach us with
+an offer to donate.
+
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+All donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541,
+and has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the maximum
+extent permitted by law.  As the requirements for other states are 
+met,
+additions to this list will be made and fund raising will begin in 
+the
+additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., 
+GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm 
+etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States 
+copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may 
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the 
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.  
+
+The Project gratefully accepts contributions of money, time, 
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.06/12/01*END*
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these Etexts are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg Etexts or other materials be they hardware or
+software or any other related product without express permission.]
+
+
+
+
+
+This etext was produced by Michael Pullen.
+
+
+
+
+
+
+Agnes Bernauer
+
+Ein deutsches Trauerspiel in fuenf Aufzuegen
+
+Friedrich Hebbel
+
+
+
+Personen:
+
+
+Ernst, regierender Herzog zu Muenchen-Bayern
+
+Albrecht, sein Sohn
+
+Hans von Preising, sein Kanzler
+
+Marschall von Pappenheim,
+Ignaz von Seyboltstorf,
+Wolfram von Pienzenau und
+Otto von Bern, Ritter auf der Seite des Herzogs Ernst
+
+Graf Toerring,
+Nothhafft von Wernberg und
+Rolf von Frauenhoven, Ritter auf der Seite des Herzogs Albrecht
+
+Hans von Laeubelfing, ein Ritter von Ingolstadt
+
+Emeran Nusperger zu Kalmperg, Richter zu Straubing
+
+Caspar Bernauer, Bader und Chirurgus zu Augsburg
+
+Agnes, seine Tochter
+
+Theobald, sein Geselle
+
+Knippeldollinger, sein Gevatter
+
+Hermann Noerdlinger, Buergermeister zu Augsburg
+
+Barbara und
+Martha, Buergermaedchen
+
+Stachus, ein Diener
+
+Der Kastellan auf Vohburg und Straubing
+
+Ein Herold des Reichs
+
+Ein Legat der Kirche
+
+Volk, Ritter und Reisige in grossen Massen
+
+
+Die Handlung ereignet sich zwischen 1420 und 1430.
+
+
+Erster Akt
+Zweiter Akt
+Dritter Akt
+Vierter Akt
+Fuenfter Akt
+
+
+
+
+
+Erster Akt
+
+Augsburg.
+
+
+
+Erste Szene
+
+Baderstube.
+
+Theobald (allein, einen Blumenstrauss in der Hand).  Ich weiss nicht,
+was ich tun soll.  (Er haelt den Blumenstrauss empor.)  Zertret ich
+dich?  Um die schoenen Rosen waer's schade, die sind unschuldig!  Oder
+ueberreich ich dich?  Nein, gewiss nicht, und das haett' ich ihm gleich
+gesagt, dem Herrn Ungetreu, der zu glauben scheint, dass ich keine
+Augen habe, und kein Herz, und kein Blut, wenn--ja, das war's ja!
+Ich wollte sie pruefen!  Da kommt sie!  Mit dem Morgensueppchen des
+Vaters!  Oh, wie das schmecken muss!  Wenn die fuer mich einmal kochte,
+ich--(Verbirgt den Strauss.)
+
+
+
+Zweite Szene
+
+Agnes (tritt ein mit einer Suppe).  Guten Morgen, Theobald!
+
+Theobald.  Danke schoen, Jungfer, danke schoen!  Wohl geschlafen?
+
+Agnes.  So sollt' ich Euch fragen!  Ihr werdet oft herausgeklopft,
+wenn sie gerauft haben, und ein Pflaster brauchen.
+
+Theobald.  Das bemerkt Ihr?  (Fuer sich.)  Ich geb ihr den Strauss und
+bestelle alles!  Wenn sie dann ein Gesicht macht und pfui sagt und
+mich anfaehrt: dazu gibst du dich her-
+
+Agnes.  Was verbergt Ihr denn hinter dem Ruecken?
+
+Theobald (zeigt den Strauss).  Ja so, das haett' ich bald vergessen!
+
+Agnes.  Ah, der ist schoen!  Gebt ihn mal her!  (Sie riecht.)  Wenn wir
+doch auch einen Garten haetten!  Wessen Namensfest ist denn heute?
+(Sie will ihn zurueckgeben.)
+
+Theobald.  Behuete, er gehoert Euch!
+
+Agnes.  Mir?  Oh, da dank ich!  Aber da geht's mit Eurem alten Ohm
+wohl bald zu Ende?
+
+Theobald.  Mit meinem Ohm?
+
+Agnes.  Nun ja, weil er seine Blumen zu verschenken anfaengt, das
+pflegt ein Gaertner nicht zu tun, und gekauft habt Ihr sie doch gewiss
+nicht?
+
+Theobald.  Er ist nicht von mir!
+
+Agnes.  Nicht von Euch?  Von wem denn?
+
+Theobald.  Ratet!
+
+Agnes.  Von--Nein, Barbara kann's nicht sein, die sieht mich nicht
+mehr an, ich weiss zwar nicht, warum.
+
+Theobald.  Es ist keine Sie!
+
+Agnes.  Keine Sie?  Und Ihr seid's auch nicht?  (Sie legt den Strauss
+auf den Tisch.)
+
+Theobald.  Gottlob, ihr faellt sonst niemand ein!
+
+Agnes.  Aber, da muss ich Euch doch fragen-
+
+Theobald.  Scheltet nur!  Ich wollt's bloss wissen!
+
+Agnes.  Was?
+
+Theobald.  Ob Ihr vielleicht in der Kirche nach ihm geblinzelt, oder
+ihm wohl gar bei einem Tanze die Hand gedrueckt haettet!
+
+Agnes.  Wem denn?
+
+Theobald.  Es ist schon gut, wenn Ihr nicht von selbst auf ihn kommt!
+(Er nimmt den Strauss.)  Ha, unserer alten Gertrud will ich ihn jetzt
+verehren, die soll ihn an die platte Brust stecken, wenn sie auf den
+Markt humpelt, und sich mit einem Knicks bedanken, wenn sie sich an
+dem Hause vorbeischiebt!  (Er springt.)  Ich koennte jetzt--(Er singt.)
+
+Wenn zwei sich die Haende geben-
+Jungfer, es ist ein schoenes Lied!
+(Singt wieder.)
+
+
+Und wer ein guter Geselle ist,
+Der wird wohl auch ein Meister!
+
+
+Oder ist das nicht wahr?
+
+Agnes.  Ihr seid zu frueh lustig!  Spaet am Abend ist besser, als frueh
+am Morgen.
+
+Theobald.  Und doch singen die Voegel, wenn sie erwachen, und nicht,
+wenn sie einschlafen.  (Er fasst ihre Hand.)
+
+Agnes (zieht sie zurueck).  Was wollt Ihr?
+
+Theobald.  Bloss nachsehen, ob--Ihr habt sie mir einmal gelassen!
+
+Agnes.  Als Ihr mir eine Ader oeffnen solltet!
+
+Theobald.  Nun freilich!  (Er nimmt die Hand wieder.)  Liess mein
+Schnepper keine Spur?  Ich machte es ungeschickt!
+
+Agnes.  Zittert Ihr immer so dabei, wie damals?
+
+Theobald.  O nein! mir ward nur so wunderlich, als ich Euch weh tun
+sollte.  Aber wie rot Euer Blut ist!  (Fuer sich.)  Aus meinen Lippen
+haett' ich gern den Verband gemacht, wenn der Vater nicht
+dabeigestanden waere!
+
+
+
+Dritte Szene
+
+Knippeldollinger (ruft ins Fenster).  Guten Morgen, Patchen!
+
+Agnes.  Guten Morgen, Herr Gevatter!
+
+Theobald.  Ist der alte Geck auch schon da?
+
+Knippeldollinger.  Ich habe von Euch getraeumt!
+
+Agnes.  Danke der Ehre.
+
+Theobald.  Von deinem Begraebnis haett'st traeumen sollen!  Das haett'
+sich besser geschickt.
+
+Knippeldollinger.  Kirschen gab ich Euch, von den grossen, fremden,
+die ich an der Mauer aufziehe!
+
+Agnes.  Sind die schon so weit?
+
+Knippeldollinger.  O ja, es kommt heut abend ein Korb voll davon aufs
+Tanzhaus!
+
+Theobald.  Da werden sie gut bezahlt!
+
+Knippeldollinger.  Und waehrend Ihr sie verzehrtet, fuehrte ich Euch
+spazieren!
+
+Theobald (laut).  Auf den Kirchhof, jawohl, ich war mit dabei!
+
+Knippeldollinger.  Spassvogel, ist Er auch da?
+
+Theobald.  Ihr tratet auf einen Totenkopf, und der schnappte nach
+Euch, es war der von Eurer letzten Frau!
+
+Agnes.  Pfui!
+
+Knippeldollinger.  Nicht doch, nicht doch, Patchen, ein Bader muss
+spassig sein, man will doch was hoeren, wenn man sich den Bart oder das
+Haar scheren laesst.  Der Theobald taugt zum Geschaeft!  Nur in die
+Ohren muss er niemanden schneiden, wie neulich mir!  Nun, geh ich
+heute leer aus, bekomm ich das Patschchen nicht?
+
+Agnes.  Ich habe wieder die Blattern!
+
+Knippeldollinger.  Halt mir das nicht immer vor!  Nun, ich werde dich
+nachher noch sehen, denn die Muhme wird dich zum Turnier abholen, ich
+habe fuer Plaetze gesorgt.  Das wollt' ich dir eigentlich sagen!
+
+Agnes.  Danke!  Zwar weiss ich nicht-
+
+Knippeldollinger.  Ei, es kommt nicht alle Tage.  Ritter, Grafen und
+Barone sind schon hier in Augsburg selten, nun gar ein Herzog von
+Bayern--der Tausend, da wird niemand, als der Scharfrichter mit seinen
+Freiknechten fehlen, der freilich gute Gruende hat, nicht unter
+ehrlichen Christenmenschen zu erscheinen!
+
+
+
+Vierte Szene
+
+Theobald.  Da humpelt er hin auf seinen drei Beinen.  Ihr steht doch
+in seinem Testament?  Nun, recht hat er, es wird lustig zugehen, ich
+freu mich auch!  (Es wird etwas durchs Fenster geworfen.)  Was ist
+denn das?  Es klirrt ja!
+
+Agnes.  Schluessel!
+
+
+
+Fuenfte Szene
+
+Barbara (tritt in die Tuer).  Darf ich sie wiederholen?
+
+Agnes.  Barbara!
+
+Barbara.  Agnes?
+
+Agnes.  Du kamst lange nicht!
+
+Barbara (nimmt die Schluessel auf).  Und jetzt hab ich hier etwas zu
+tun!  Siehst du?
+
+Agnes.  Wir waren immer so gut miteinander: was hast du jetzt gegen
+mich?
+
+Barbara.  Oh, das bin ich nicht allein!
+
+Agnes.  Heilige Mutter Gottes, was sagst du da?
+
+Barbara.  Du siehst deine Gespielinnen wohl gar nicht mehr an, dass du
+nicht weisst, wie sie dich ansehen?
+
+Agnes.  Es ist wahr, ich erhalte meinen Gruss nicht immer so
+freundlich zurueck, wie ich ihn biete!
+
+Barbara.  Glaub's!
+
+Agnes.  Aber bei Gott, wenn mir das mit einer begegnete, so dacht'
+ich: Sie hat schlecht getraeumt oder sie ist von der Mutter gescholten
+oder sie hat ihren Ring verloren-
+
+Barbara.  Dabei kamst du denn freilich gut weg.
+
+Agnes.  Was tu ich denn?  Sag's!
+
+Barbara.  Tun!  Was tun!  Wenn's schon so weit gekommen waere, so
+wuerde man leicht mit dir fertig!
+
+Agnes.  Barbara!
+
+Barbara.  Sag doch einmal, warum--(Sie zeigt auf Theobald.)  Nun, da
+steht ja gleich wieder einer und gafft!  (Zu Theobald.)  Nicht wahr,
+ich bin gar nicht da!  (Zu Agnes.)  Gehst du heute?  Zum Turnier, mein
+ich!  Ja?  Nun, da will ich's allen ansagen, damit sie zu Hause
+bleiben, ich zuerst!
+
+Agnes.  Das ist zu arg, das muss mein Vater wissen.
+
+Barbara.  Bewahre!  Niemand red't dir was uebles nach!
+
+Agnes.  Und doch flieht man mich?  Doch will man mich ausstossen?
+
+Barbara.  Agnes, sieh mich mal an!
+
+Agnes.  Nun?
+
+Barbara.  Wie waer' dir wohl zumute, wenn--lass uns hinaufgehen in
+deine Kammer!
+
+Theobald.  Ich will nicht im Wege sein, wenn gebeichtet werden soll!
+(Ab.)
+
+Barbara.  Ja, wie waer' dir zumute, wenn du, wie sag ich, nun, wenn du
+einen gern haettest, und der haette nur Augen fuer mich?
+
+Agnes.  Wie soll ich das wissen!
+
+Barbara.  So will ich's dir sagen!  Du wuerdest--Doch ich will mich
+nicht laecherlich machen, du weisst es selbst recht gut!  Und meinst du,
+dass es anderen besser geht?  (Bemerkt den Strauss.)  Woher kommt der?
+
+Agnes.  Das weiss ich nicht!
+
+Barbara.  Nicht?  Kommen so viele?  Wenn er von meinem Wolfram kaeme,
+ich--Und es ist gern moeglich, gerade die Blumen stehen in seinem
+Garten!  Gestern den ganzen Tag sah ich nach seinem Vetter, zwang
+mich, dem gleichgueltigen Menschen verliebte Blicke zuzuwerfen und
+dachte, er wuerde rasen.  Abends, als wir zu Hause gingen, strich er
+den Burschen selbst gegen mich heraus, es war ihm recht gewesen, ich
+hatte ihm einen Gefallen damit getan!
+
+Agnes.  Arme!
+
+Barbara.  Daran bist du schuld, niemand schuld, als du!  Als er dich
+noch nicht kannte, hing er an mir, wie eine Klette.  In den
+Baerenzwinger waer' er fuer mich hinabgestiegen und haette meinen
+Handschuh heraufgeholt.  Und nun--pfui!
+
+Agnes.  Du schiltst mich, und ich weiss nicht einmal, wovon du
+sprichst!
+
+Barbara (nimmt den Strauss).  Ich will schon dahinterkommen, ich nehm
+ihn mit!
+
+Agnes.  Mir gleich!
+
+Barbara.  Allen machst du abspenstig, was ihnen gehoert!  Ich wuerde
+mich schaemen!
+
+Agnes.  Kannst du sagen, dass ich auch nur einen ansehe?
+
+Barbara.  Das ist's vielleicht eben!  Nonne und doch keine!  Heilige,
+aber noch nicht im Himmel!  Die muss man Gott abjagen!  Da muss man
+alles daransetzen!  Ei, sei, wie wir, kuck auf, sprich, und es wird
+sich geben!
+
+Agnes.  Taet' ich's, so wuerdest du wieder schmaelen!
+
+Barbara.  So geh ins Kloster, wirf den Schleier ueber, den niemand
+heben darf!  Ich dich um Vergebung bitten?  In Ewigkeit nicht!
+
+Agnes.  Wer verlangt's denn?
+
+Barbara.  Mein Beichtvater!  Glaubst du, ich kam von selbst?  Aber
+nein, lieber auf Erbsen knien!  (Haelt den Strauss in die Hoehe.)  Den
+werd ich ihm jetzt schenken!  Kennt er ihn nicht, so schick ich dir
+einen doppelt so schoenen!  (Ab.)
+
+Agnes.  Sie tut mir leid!  Aber kann ich's aendern?
+
+
+
+Sechste Szene
+
+Theobald (tritt wieder ein).  Die hat die arme Gertrud ja beraubt!
+
+Agnes.  Sie scheint den Verstand verloren zu haben!
+
+Theobald.  Das moecht' ich doch nicht sagen!
+
+Agnes.  So haette sie recht?
+
+Theobald.  Ich glaube fast!  Jungfer, ich koennt' Euch alle Morgen-
+
+
+
+Siebente Szene
+
+Caspar Bernauer (tritt mit einem Buch ein, das in ein rotes Tuch
+gewickelt ist; zu Agnes).  Ja, ja, ja!  Wenn ich nur nicht mit soll!
+Nun geh hinauf und lege dein Kettlein an.  Sie blasen schon am
+Fronhof.
+
+Agnes.  Nein, Vater, ich bleibe zu Hause!
+
+Caspar Bernauer.  Wie?  Was?  Warum wartest du hier denn auf mich?
+(Zu Theobald.)  An den Destillierkolben!  Das Feuer wird zu schueren
+sein!
+
+Theobald (geht ab).
+
+Caspar Bernauer.  Nun?
+
+Agnes.  Vater, all die Augen--es ist mir, als ob mich geradesoviel
+Bienen staechen!  Und Er weiss ja, sie sehen alle nach mir!
+
+Theobald (tritt wieder ein).
+
+Caspar Bernauer.  Sieh du sie wieder an!  Nun, wenn du lieber deinen
+Rosenkranz abbetest, meinetwegen!  (Sieht sich um, zu Theobald.)  Noch
+keine Salben abgeruehrt?  Hat der Hahn heut morgen nicht gekraeht?
+
+Theobald (geht ans Geschaeft).
+
+Agnes.  Barbara war hier, alle hassen mich, ich verderb ihnen den Tag,
+wenn ich komme.
+
+Caspar Bernauer.  Und darum willst du ausbleiben?  Nichts da!  Dann
+duerfte der beste Ritter ja auch nicht kommen, denn der verdirbt den
+uebrigen ja auch den Tag.  Und der naechstbeste ebensowenig, und wer
+noch, bis auf den letzten, der nur zum Umpurzeln da ist!  Torheit und
+kein Ende!  Hinauf!  (Zu Theobald.)  Und du hole die Flasche mit dem
+Wundwasser herunter!
+
+Beide (ab).
+
+
+
+Achte Szene
+
+Caspar Bernauer.  Die Suppe ist kalt geworden!  Ich nehm's fuer
+genossen!  (Legt das Buch auf den Tisch.)  Bischoefliche Gnaden haben
+recht, wenig bring ich heraus und gerade die Hauptsachen nicht, die
+vom Hippokrates, denn die sind griechisch.  Ich muss es so
+zuruecktragen.
+
+
+
+Neunte Szene
+
+Knippeldollinger (tritt herein).  Guten Morgen, Gevatter!  Ah!  Das
+ist wohl ein Buch?  Ja?
+
+Caspar Bernauer.  Und das ist wohl ein funkelnagelneues Wams?
+
+Knippeldollinger.  Nun, wenn alte Leute nichts mehr machen liessen,
+wuerde mancher Schneider hungern!  (Sieht ins Buch.)  Herrje, wie kraus
+und bunt!  Und das versteht Ihr, wie der Bischof?
+
+Theobald (tritt mit der Flasche ein und macht sich wieder zu tun).
+
+Caspar Bernauer.  Ihr muesst immer fragen!
+
+Knippeldollinger.  Wie alt das wohl ist?
+
+Caspar Bernauer.  Seit der Kreuzigung unseres Herrn und Heilandes
+Jesu Christi sind jetzt verflossen
+eintausendvierhundertsechsundzwanzig Jahre, aber der Autor dieses
+Buches, das ist zu sagen der Urheber, naemlich der Mann, der es
+gemacht hat, war schon ueber vierhundert Jahre tot, bevor der Herr auf
+Erden im Fleisch unter uns erschien.
+
+Knippeldollinger.  Macht an die zweitausend Jahre!  Sollte man's
+glauben, dass es Leute gibt, die solche Buecher so lange aufheben?  Es
+ist doch kein Gold!  Denkt nur an all die Feuersbruenste und
+UEberschwemmungen, an Pestilenz und Seuchen!  Sieh, sieh!
+
+Caspar Bernauer.  Es gab immer gelehrte Maenner!
+
+Knippeldollinger.  Freilich, freilich!  Was gab's nicht!  Wenn man
+das so erwaegt, Gevatter, und gehoerig bedenkt--Ja, ja!  Nicht wahr?
+Sagt selbst!
+
+Caspar Bernauer.  Ich weiss nicht, was Ihr meint!
+
+Knippeldollinger.  Ho, ho!  Besser, als ich!  Damit kommt Ihr mir
+nicht durch.  Nun, wie Ihr wollt!  Wo bleibt denn mein Patchen?  Die
+Muhme wird schon warten!
+
+Caspar Bernauer.  Ja, die hatte Grillen!  (Zu Theobald.)  Spring
+einmal zu ihr hinauf!  Bring gleich das Besteck mit!  Wir werden's
+brauchen.
+
+Theobald (ab).
+
+Knippeldollinger.  Ihr geht nicht auch?  Wir koennten zusammenruecken!
+
+Caspar Bernauer.  Mich kuemmern bei einem Turnier nur die Beulen und
+Wunden, und die krieg ich hier schon zu sehen, denn man traegt mir die
+Krueppel her!
+
+Knippeldollinger.  Aber der Herzog, der Herzog von Bayern-
+
+Caspar Bernauer.  Mich luestet nicht nach seiner Bekanntschaft, und ich
+will ihm wuenschen, dass er auch die meinige nicht suchen muss, denn dazu
+fuehrt nur ein Rippenbruch!  Heut abend ist das was anders.
+
+Knippeldollinger.  Denkt Euch, hinter der alten Klostermauer, wo mein
+Vetter wohnt, hat man letzte Nacht einen Toten gefunden!
+
+Caspar Bernauer.  Da ist viel zu wundern!  Kommen jemals
+Reichsknechte nach Augsburg, ohne dass es etwas gibt?
+
+Knippeldollinger.  Wohl!  Aber dieser ist so entstellt, dass man ihn
+gar nicht mehr erkennen kann!
+
+Caspar Bernauer.  So soll man drei Tropfen seines Blutes nehmen und
+sie um Mitternacht, mit einem gewissen Liquor vermischt, auf eine
+gluehende Eibenkohle traeufeln.  Dann wird der Verstorbene im Dampf
+erscheinen, wie er leibte und lebte, aber in durchsichtiger Gestalt,
+gleich einer Wasserblase, mit einem dunkelroten Punkt in der Mitte,
+der das Herz vorstellt.
+
+Knippeldollinger.  Ei!  Ei!  Habt Ihr den Liquor?
+
+Caspar Bernauer.  Wenn Ihr ihn haettet, so liesset Ihr's durch den
+Ratsweibel ausrufen!
+
+
+
+Zehnte Szene
+
+Agnes (kommt im Putz.  Theobald folgt).
+
+Knippeldollinger.  Sieh da!  (Fasst ihre Hand.)  Nun bekomm ich sie
+doch?
+
+Caspar Bernauer (zu Agnes).  Soll ich dir jetzt mit dem Korkstoepsel
+ein neues Gesicht machen, wie zum Schoenbartlaufen, da du das alte
+nicht gern mehr herumtraegst?
+
+Agnes.  Kommt, Gevatter!
+
+Knippeldollinger (fuehrt sie ab, in der Tuer).  Wisst Ihr, dass der
+Syndikus sich wieder verheiratet?  Er ist zehn Jahr aelter, wie ich!
+
+Caspar Bernauer.  Ihr irrt, nur fuenf!  Viel Vergnuegen!  Wenig
+Rippenstoesse!
+
+Knippeldollinger (mit Agnes ab).
+
+
+
+Elfte Szene
+
+Caspar Bernauer.  Alter schuetzt vor Torheit nicht!  Nun, Caspar,
+nicht hochmuetig, du hast wohl auch deinen Sparren!  (Zu Theobald.)
+Geh nur auch, aber sei zur rechten Zeit wieder da!  Du siehst's ja
+schon!  Wenn sie einen forttragen!
+
+Theobald (ab).
+
+
+
+Zwoelfte Szene
+
+Caspar Bernauer (nimmt das Buch wieder).  Ich will's noch einmal
+versuchen!  Ich schaem mich doch, es so wiederzubringen!  Wahrhaftig,
+mich aergert der babylonische Turmbau weit mehr, als der Suendenfall,
+denn ohne den spraechen wir mit unserer einen Zunge doch auch nur eine
+Sprache, und verstaenden uns nicht bloss, wenn wir schreien.  Das hat
+mich schon in meiner Jugend verdrossen.  Wie gern waer' ich als
+Geselle in die weite Welt gegangen, ob ich das Einhorntier, den Vogel
+Phoenix, die Menschen, die auf Baeumen wachsen, irgendwo zu sehen
+bekaeme, oder gar in der Tuerkei, wo sie doch gewiss viele unschuldig
+haengen, ein Alraeunchen erwischte!  Aber dann dacht' ich immer: du
+verstehst die Leute ja nicht und sie dich auch nicht! und blieb
+daheim!  (Ab.)
+
+
+
+
+Herberge.
+
+
+
+Dreizehnte Szene
+
+Herzog Albrecht, Freiherr von Toerring, Nothhafft von Wernberg und
+Ritter Frauenhoven, vom Turnier kommend, nebst Knappen und Dienern.
+Buergermeister Noerdlinger.
+
+Albrecht.  Ich danke jetzt, Herr Buergermeister, ich danke fuer das
+Geleite!
+
+Buergermeister.  Gestrenger Herr, ich kenne meine Pflicht!  (Ruft.)
+Wein her!
+
+Nothhafft von Wernberg (zum Herzog).  Ihr koennt ihn nicht vor dem
+Trunk verabschieden.
+
+Albrecht.  Frauenhoven!
+
+Frauenhoven.  Was ist's?
+
+Albrecht.  Hast du das Maedchen gesehen--Aber, du musst ja, du musst ja!
+
+Frauenhoven.  Welche denn?
+
+Albrecht.  Welche!  Ich bitte dich, geh, ihr nach!  Vom Pferd haett'
+ich mich geworfen und waere ihr gefolgt, wenn nicht (er zeigt auf den
+Buergermeister) der da-
+
+Buergermeister (mit einem Pokal).  Gestrenger Herr, die reichsfreie
+Stadt Augsburg heisst Euch nach ruhmvoll bestandenem Turnier in Eurer
+Herberge willkommen, und dankt Euch, dass Ihr ihre Patrizier einer
+Lanze gewuerdigt habt.
+
+Albrecht (trinkt).  Sie lebe hoch, denn sie verdient's!  Ha, wo solch
+ein wunderbares Licht der Schoenheit leuchtet--(streift sich mit der
+Hand ueber die Stirn) ja, sie verdient's!  (Wendet sich.)  Frauenhoven,
+du bist noch da?
+
+Frauenhoven.  Aber-
+
+Buergermeister.  Verhoffe demnach-Albrecht.  Heute abend auf dem
+Tanzhaus--das versteht sich!  Nichts kann mich zurueckhalten,
+vorausgesetzt, dass auch sie--Verzeiht, ich bin ganz verwirrt!  Ein
+Bote von meinem Vater-Buergermeister.  Ich hatte die Einladung nach
+Amtspflicht zu wiederholen, muss jedoch als Patrizier bemerken: es
+ist nicht bloss Geschlechter-Tanz.  Auch die Zuenfte kommen!
+
+Albrecht.  Ich wollte, die ganze Stadt waere da!
+
+Buergermeister.  Empfehle mich zu Gnaden!  (Ab.)
+
+
+
+Vierzehnte Szene
+
+Albrecht (zu Frauenhoven).  Und nun, du lieber, lieber Herzensfreund,
+schnell, schnell!  Oder besser: ihr alle!  Du die eine Strasse
+hinunter, du die andere, du die dritte!
+
+Frauenhoven.  Ihr gabt mir heut morgen den Auftrag, dem Werdenberg
+nachzureiten!  Er hat Euch Eure Braut, die Graefin von Wuerttemberg,
+entfuehrt, wisst Ihr's noch?
+
+Albrecht.  Nenne sie nicht mehr!
+
+Nothhafft von Wernberg.  Ja, und ich sollte dem Wuerttemberger die
+Schluessel von Goeppingen abfordern, weil die Heirat durch die Flucht
+seiner Tochter unmoeglich geworden sei, und also das Reugeld
+herausgezahlt werden muesse!
+
+Toerring.  Und ich sollte nach Muenchen zu Hof und Eurem Vater beides
+melden!
+
+Albrecht.  Das ist vorbei, das ist, als ob's nie gewesen waere!  Ich
+jauchze, dass Elisabeth eine Kette zerbrochen hat, die ich sonst
+selbst zerbrochen haben wuerde.  Ich will nicht einen Dachziegel von
+Goeppingen oder einen Pfenning zur Ausloesung, denn ich koennte mir das
+Leben, das Atemholen, ebensogut bezahlen lassen, wie meine neue
+Freiheit, und was meinen Vater betrifft, so steht mir seit lange eine
+Bitte an ihn zu, und das soll die sein: dass er es ganz so verhalten
+moege, wie ich!
+
+Toerring.  Dieser Wechsel ist rasch!
+
+Nothhafft von Wernberg.  Und kostet Bayern fuenfundzwanzigtausend
+Gulden!
+
+Albrecht.  Ich kenn euch nicht mehr!  Knapp', schael mich ab, ich will
+selbst fort, und in diesem Aufzug schlepp ich einen Schweif von
+Hunderten hinter mir her.
+
+Ein Knappe (entkleidet den Herzog des Panzerhemdes usw.).
+
+Albrecht.  Da liegt der Herzog!--Habt ihr Augen?  (Schnallt sein
+Schwert ab.)  Und da der Ritter!  Blumen her, dass ich sie vor ihr
+ausstreuen kann, wo ich sie finde!  (Setzt ein Barett auf.)  Wird mich
+nun noch jemand erkennen?
+
+Toerring.  Ohne Schwert?  Jeder wird sich zu taeuschen glauben!
+
+Albrecht (indem er abgeht).  Freunde, habt Geduld mit mir!  (Ab.)
+
+Toerring.  Begreift ihr das?
+
+Nothhafft von Wernberg.  Herzog Ernst wird Augen machen!  Der besinnt
+sich etwas laenger, wenn sich's um den Verlust von
+fuenfundzwanzigtausend Gulden handelt.
+
+Frauenhoven.  Brueder, richten wir nicht, dass wir nicht gerichtet
+werden!  Das haben wir alle entweder hinter uns oder vor uns.  Wenn
+ihr's noch nicht wisst, so seht ihr's jetzt, warum unsre Altvordern
+fuer das Weib den Namen Mannrausch erfanden!  Doch diesen Rausch
+vertreibt man durchs Trinken, wie den andern durch Enthaltsamkeit; je
+tiefer der Zug, je rascher die Nuechternheit!  Darum muessen wir ihm
+beistehen!
+
+Nothhafft von Wernberg.  Aber die absonderlichen Reden wollen wir uns
+merken, wir koennen sie einmal wieder ausspielen, sei's auch nur, um
+uns selbst unsrer Haut gegen ihn zu wehren.  "Habt ihr Augen?--Blumen
+her!--Ich kenn euch nicht mehr!" Damit belad ich meinen Esel.
+Sammelt ihr auf, was heut abend abfaellt, denn ohne Zweifel trifft der
+neue Adam seine Eva beim Tanz.  Vielleicht ist's der Engel von
+Augsburg!
+
+Toerring.  Der Engel von Augsburg?
+
+Nothhafft von Wernberg.  So nennt man hier eine Baderstochter, Agnes
+Bernauer, deren Schoenheit die halbe Stadt verrueckt machen soll.
+Wollen wir die Bude ihres Vaters einmal aufsuchen?  Wir koennen uns
+die Baerte stutzen lassen, und wer weiss, ob wir das Wunder bei dieser
+Gelegenheit nicht zu sehen bekommen.
+
+Frauenhoven.  Topp!
+
+(Alle ab.)
+
+
+
+
+Grosser Saal im Tanzhause der Stadt.
+Festlich geschmueckt mit den Panieren der Zuenfte und den Wappen der
+Geschlechter.
+Abend.  Die Gaeste versammeln sich rasch, die Zunftmeister empfangen.
+
+
+
+Fuenfzehnte Szene
+
+Buergermeister Hermann Noerdlinger kommt mit Nothhafft von Wernberg.
+
+Buergermeister.  Ja, Herr Ritter, so laeuft nun alles seit jenem
+unseligen Katharinen-Abend, wo wir den Poebel mit in den Rat aufnehmen
+mussten, bei uns durcheinander!  Perlen und Erbsen in einem Sack, der
+Herzog wird das Ausklauben muehsam finden, mich wundert, dass er kommt!
+
+Nothhafft von Wernberg.  Ihr habt Euch noch immer nicht gewoehnt?  Es
+ist doch schon lange her.
+
+Buergermeister.  Noch nicht lange genug, dass die Hoffnung auf die
+Rueckkehr der guten alten Zeit schon ganz erstickt sein sollte.  Seht
+den Dicken da, das ist der Zunftmeister der Baecker, der macht die
+Ehre der Stadt.  Seht doch hin!  Wenn er dem ankommenden Gast, den er
+zu begruessen hat, nicht mit seinem Stierkopf den Brustkasten einstoesst,
+so zerschmettert er einem schon anwesenden ganz sicher durch den
+Kratzfuss das Schienbein!  Was sagt Ihr?  Ist's nicht, als wenn ein
+Pferd ausschluege?  Und das sollte man gewoehnen!
+
+Nothhafft von Wernberg.  Ihr haettet Euch besser wehren sollen!
+
+Buergermeister.  Wir wurden ueberrumpelt!  Kaiser und Reich haetten uns
+besser beistehen sollen!  Was noetigte die Majestaet, den vermaledeiten
+Zunftbrief, der uns abgezwungen wurde, hinterher mit Ihrem Siegel zu
+versehen?  Wir hatten genug zu tun, dass wir uns nur nicht selbst
+unter die Metzger und Handschuhmacher aufnehmen lassen und unsere
+alten Namen mit neuen vertauschen mussten.  Denn das wurde verlangt.
+
+
+
+Sechzehnte Szene
+
+Frauenhoven und Toerring kommen.
+
+Frauenhoven.  Da steht der Buergermeister, der kann es uns sagen!
+(Tritt zum Buergermeister heran.)  Ist es wahr, wie man im Reich
+erzaehlt, dass der Boden von Augsburg keine Ratten duldet?
+
+Buergermeister.  Gewiss ist es wahr, man trifft dies Ungeziefer nimmer!
+Das war schon so zu den Zeiten des Drusus.
+
+Toerring.  Kurios!
+
+
+
+Siebzehnte Szene
+
+Trompeten.
+
+Buergermeister.  Seine Gnaden der Herzog!  (Eilt zum Eingang und
+begruesst den eintretenden Herzog Albrecht.)
+
+Albrecht (tritt zu Frauenhoven, Toerring und Nothhafft von Wernberg
+heran).  Da seid ihr!
+
+Frauenhoven.  Wir haben den ganzen Nachmittag gesucht-
+
+Albrecht.  Und gefunden-Nothhafft von Wernberg.  Eben jetzt!
+
+Albrecht.  Mich, meinst du!  Oh, koestlicher Fund!  Ich bedanke mich!
+
+Frauenhoven.  Ich strich allein und-
+
+Albrecht.  Es ging dir besser, wie mir?  Du entdecktest ihre Spur!
+
+Frauenhoven.  Ja!
+
+Albrecht.  Warum treff ich dich erst jetzt!
+
+Frauenhoven.  Dies Maedchen--Oh!  Wohl hattet Ihr recht, uns zu fragen,
+ob wir Augen haetten!
+
+Albrecht.  Du liebst sie auch?
+
+Frauenhoven.  Koennt' ich anders?
+
+Albrecht.  Frauenhoven, das ist ein grosses Unglueck!  Ich glaub's dir,
+dass du nicht anders kannst, es waere Wahnsinn von mir, wenn ich
+verlangte, dass du entsagen solltest, hier hoert die Lehnspflicht auf.
+Aber wahrlich, auch die Freundschaft, hier beginnt der Kampf um Leben
+und Tod, hier fragt sich's, in wessen Adern ein Tropfen Bluts
+uebrigbleiben soll!  Du laechelst?  Laechle nicht!  Wenn du das nicht
+fuehlst, wie ich, so bist du nicht wert, sie anzusehen!
+
+Frauenhoven.  Diese pechschwarzen Augen--und wie sie den Hals traegt,
+recht, um sich daran aufzuhaengen und vor allem diese kastanienbraunen
+Haare-
+
+Albrecht.  Faselst du?  Goldne Locken sind's, die sich um ihre
+Stirn ringeln--demuetiger ward nie ein Nacken gesenkt und ihre Augen
+koennen nicht schwarz sein!  Nein, nein, wie Meeresleuchten traf mich
+ihr Strahl, wie Meeresleuchten, das ploetzlich fremd und wunderbar aus
+dem sanften blauen Element aufzuckt und ebenso ploetzlich wieder
+erlischt!
+
+Frauenhoven.  Gnaediger Herr, ich weiss nichts von ihr, es war ein
+Scherz, den Ihr dem lustigen Ort, wo wir uns befinden, verzeihen moegt!
+
+Albrecht.  So flieh! flieht alle, dass nicht Ernst daraus wird,
+fuerchterlicher Ernst, denn ich sage euch, die sieht keiner, ohne die
+hoechste Gefahr!
+
+
+
+Achtzehnte Szene
+
+Agnes (erscheint, von Caspar Bernauer und Knippeldollinger begleitet).
+
+Albrecht (ausbrechend).  Da ist sie!
+
+Nothhafft von Wernberg und Frauenhoven. (zugleich).  Wunderschoen, das
+ist wahr!
+
+Toerring.  Und der Engel von Augsburg, das ist auch wahr!  Dort steht
+ja der Vater!
+
+Albrecht.  Kennst du sie?
+
+Toerring.  Man nennt sie hier allgemein den Engel von Augsburg.  Sie
+ist die Tochter eines Baders, gnaediger Herr!  Wir liessen uns vorhin
+die Baerte bei ihm stutzen.  (Er zeigt auf seinen Bart.)  Seht Ihr?
+Der Mann ist geschickt, nicht wahr?  Es koennte dem Eurigen auch nicht
+schaden!  (Er tritt auf die Gruppe zu.)  Guten Abend, Meister, da
+sehen wir uns schon wieder!
+
+Caspar Bernauer.  Viel Ehre fuer mich!
+
+Albrecht (folgt, zu Agnes).  Jungfrau, warum erteilt Ihr auf den
+Turnieren nicht den Dank?  Was durch Eure Haende geht, ist edler, als
+Gold, und koestlicher, als Edelstein, waer's auch nur ein gruener Zweig,
+vom naechsten Busch gebrochen!
+
+Caspar Bernauer.  Meine Tochter ist an solche Reden nicht gewoehnt,
+gnaediger Herr; fragt sie aus den sieben Hauptstuecken unseres
+allerheiligsten Glaubens, und sie wird nicht verstummen!
+
+Agnes.  Nicht doch, Vater, der Herzog von Bayern will seine Braut so
+anreden und macht bei der Buergerstochter von Augsburg nur die Probe!
+
+Caspar Bernauer.  Wohl gesprochen, Agnes, aber zum Antworten hast du
+keine Vollmacht, darum danke Seiner Fuerstlichen Gnaden fuer die
+Herablassung und komm!
+
+Albrecht.  Warum, stoerriger Alter?  Noch habe ich ja kaum den Ton
+ihrer Stimme gehoert, noch kamen die vierundzwanzig Buchstaben nicht
+alle ueber ihre Lippen!  (Abgewandt.)  Ha, ich koennt' sie bitten:
+sprich dies Wort aus, oder das, oder jenes, nicht des Sinns wegen,
+nur damit ich erfahre, mit wieviel Musik dein Mund es beschenkt!  (Zu
+Caspar Bernauer.)  Ihr geht doch?  So muesst Ihr mir gestatten, Euch zu
+begleiten!  Euer Schatten weicht eher von Euren Schritten, als ich!
+
+Caspar Bernauer.  Euresgleichen wuerde neidisch werden!
+
+Toerring (fasst Caspar Bernauer unter dem Arm).  Bayerns Herzog hat
+hier seinesgleichen nicht!
+
+(Er fuehrt ihn ab, Nothhafft von Wernberg gesellt sich zu
+Knippeldollinger und folgt.)
+
+Albrecht (zu Agnes, die ebenfalls folgt und sich ihrem Vater zu
+naehern sucht).  Maedchen, ich taeuschte mich nicht, du hast heut morgen
+nach mir gesehen.  Galt der Blick mir oder meinem venezianischen
+Helmbusch?
+
+Agnes.  Ich zitterte fuer Euch, gnaediger Herr, Ihr schautet zu mir
+herueber und rittet gegen den Feind, ich dachte, Ihr muesstet Schaden
+nehmen!
+
+Albrecht.  Und das war dir nicht gleichgueltig?
+
+(Sie verlieren sich, nebst den andern, im Gewimmel.)
+
+Barbara (mit Martha und andern Maedchen hervortretend).  Ha, ha, ha!
+Sagt' ich's euch nicht, dass es besser sei, zu Hause zu bleiben?  Nun
+freut euch, wenn ihr koennt!
+
+Martha.  Ei, dies ist ja gut!  Wenn der Herzog sie mitnimmt, steht
+sie uns ebensowenig mehr im Wege, als wenn sie gen Himmel faehrt!
+
+Barbara.  Mitnimmt!  Wo denkt ihr hin!  Er wird sie schon hier lassen!
+Aber sie wird noch im Wert steigen, nun auch er genickt hat!  Seht
+euch nur um, wie alles kuckt und fluestert!
+
+(Gehen vorueber.)
+
+Nothhafft von Wernberg (kommt mit Knippeldollinger, ihm tritt
+entgegen:)
+
+Buergermeister Noerdlinger (mit einem Fraeulein).  Herr Ritter--meine
+Base, Juliana Peutinger--sie hat des Kaisers Majestaet schon als
+vierjaehriges Jungfraeulein im Namen des Rats mit einer kleinen
+lateinischen Rede begruesst!  Ich moechte sie Seiner Gnaden gern
+auffuehren!
+
+Nothhafft von Wernberg (mit ihm weitergehend).  Nachher, Herr
+Buergermeister, nachher!  (Leise.)  Der Herzog ist von den Buergern so
+warm empfangen worden, sie haben sich die Kehle fast abgeschrien, Ihr
+seht, er bezeugt sich dankbar!
+
+(Gehen vorueber.)
+
+Albrecht (kommt mit Agnes).  Nun sprich auch du!  Was sagst du dazu?
+
+Agnes.  Mir ist, als hoert' ich eine Geige mehr, suess klingt's, auch
+traeumt sich's schoen dabei.
+
+Albrecht.  Ich frage dich, ob du mich lieben kannst!
+
+Agnes.  Das fragt eine Fuerstentochter, doch nicht mich!
+
+Albrecht.  O sprich!
+
+Agnes.  Schont mich, oder fragt mich, wie man ein armes Menschenkind
+fragt, von dem man glaubt, dass ein ungeheures Unglueck es treffen
+koenne!
+
+Albrecht.  Dies Wort-
+
+Agnes.  Legt's nicht aus, ich bitt Euch, zieht niemanden die Hand weg,
+wenn er sie ueber die Brust haelt.
+
+Caspar Bernauer (der mit Toerring gefolgt ist und sich Agnes zu naehern
+sucht).  Morgen, Herr Graf, morgen!
+
+Knippeldollinger (der mit Nothhafft von Wernberg neben den beiden
+geht, zu Toerring).  Einen, der das Blut besprach, habe ich selbst
+gekannt.
+
+Albrecht.  Agnes, du verkennst mich!  Ich liebe dich!
+
+Caspar Bernauer (tritt zwischen beide).  Komm, mein Kind!  Auch du
+hast Ehre zu verlieren!  (Er will sie abfuehren.)
+
+Albrecht (vertritt ihm den Weg).  Ich liebe sie, aber ich wuerd's ihr
+nimmer gesagt haben, wenn ich nicht hinzufuegen wollte: ich werb um
+sie!
+
+Nothhafft von Wernberg.  Gnaediger Herr!
+
+Frauenhoven.  Albrecht!  Kennst du deinen Vater?
+
+Toerring.  Denkt an Kaiser und Reich!  Ihr seid ein Wittelsbach!  Es
+ist nur zur Erinnerung.
+
+Albrecht.  Nun, Alter, fuerchtest du noch fuer ihre Ehre?
+
+Caspar Bernauer.  Nein, gnaediger Herr, aber--Vor funfzig Jahren haette
+sie bei einem Turnier nicht einmal erscheinen duerfen, ohne gestaeupt
+zu werden, denn damals wurde die Tochter des Mannes, der dem Ritter
+die Knochen wieder einrenkt und die Wunden heilt, noch zu den
+Unehrlichen gezaehlt.  Es ist nur zur Erinnerung!
+
+Albrecht.  Und nach funfzig Jahren soll jeder Engel, der ihr gleicht,
+auf Erden einen Thron finden, und haette ihn einer ins Leben gerufen,
+der dir noch die Hand kuessen muss.  Dafuer soll mein Beispiel sorgen!
+
+Frauenhoven.  Er ist verrueckt!  (Zu Albrecht.)  Nur hier nicht weiter,
+nur heute nicht!  Alles wird aufmerksam und auf jeden Fall muss die
+Sache geheimbleiben!
+
+Albrecht (zu Caspar Bernauer).  Darf ich morgen kommen?
+
+Caspar Bernauer.  Wenn ich auch nein sagte, was huelfe es mir?
+
+Albrecht.  Agnes?
+
+Agnes.  Wer rief mir doch heute morgen zu: geh ins Kloster?  Mir
+daeucht, ich sehe jetzt einen Finger, der mich hineinweist!
+
+Albrecht.  Dir schwindelt!  Halt dich an mich!  Und ob die Welt sich
+dreht, du wirst fest stehen!
+
+Caspar Bernauer.  Gnaediger Herr, wir beurlauben uns!  Die faellt mir
+sonst um!
+
+(Ab mit Agnes und Knippeldollinger.)
+
+Albrecht.  Ich muss--(Will folgen.)
+
+Frauenhoven.  Keinen Schritt!  Ihretwegen, wenn nicht deinetwegen.
+
+Albrecht.  Du kannst recht haben!
+
+Frauenhoven.  Sprich jetzt auch mit anderen!  Sprich mit allen!  Und
+lange, ich bitte dich, lange!
+
+Albrecht.  Ich haette so gerne noch meinen Namen von ihren Lippen
+gehoert!  Doch--wer will denn auch Weihnacht, Ostern und Pfingsten auf
+einmal feiern!--(Er mischt sich unter die uebrigen Gaeste.  Ihm tritt
+Buergermeister Noerdlinger mit dem Fraeulein entgegen.)
+
+
+
+
+Zweiter Akt
+
+Augsburg.
+
+
+
+Erste Szene
+
+Herberge.  Frueher Morgen.
+
+Nothhafft von Wernberg.  Die Sache wird ernst.
+
+Toerring.  Sehr ernst!  Die Linie steht auf zwei Augen-
+
+Frauenhoven.  Das doch nicht!  Auch Herzog Wilhelm hat einen Sohn!
+
+Toerring.  Der schwach und siech ist und kaum vier Jahre alt.  Habt
+ihr das Jammerbild nie gesehen?  Ich weiss, was ich sage.  Die
+Muenchner Linie steht so gut, wie auf zwei Augen, und wenn es uns
+nicht gelingt, Albrecht von seinem tollen Vorhaben abzubringen, so
+zeugt er Kinder, die nicht einmal den unsrigen ebenbuertig sind!  Was
+wird dann?  Schon jetzt ist Bayern in drei Teile zerrissen, wie ein
+Pfannkuchen, um den drei Hungrige sich schlugen, soll's ganz zugrunde
+gehen?  Und das wird geschehen, wenn wir dies Unglueck nicht
+verhindern koennen.
+
+Nothhafft von Wernberg.  Das ist wahr!  Von allen Seiten wuerden sie
+heranruecken, vergilbte Pfandbriefe auf der Lanzenspitze und
+vermoderte Vertraege auf der Fahnenstange, und wenn sie sich lange
+genug gezankt und gerauft haetten, wuerde nach seiner Weise der Kaiser
+zugreifen, denn waehrend die Baeren sich zerreissen, schnappt der Adler
+die Beute weg.
+
+Toerring.  Also lasst uns vorbeugen!
+
+Frauenhoven.  Aber wie?  Vergesst nicht, dass er ebensoviel welsches
+Blut im Leibe hat, als deutsches, und vielleicht noch einige Tropfen
+mehr!  Ich sage euch, wenn ihr's noch nicht wisst, die Mutter ist
+maechtig in ihm, und wenn ihr ihm nicht neue Augen einsetzen koennt,
+dass ihm das Schoene haesslich vorkommt und das Haessliche schoen, so
+richtet ihr nichts bei ihm aus.  Ihr haettet ihn diese Nacht auf dem
+Heimgang hoeren sollen!  Und ist es denn nicht auch wahr?  Wer kann
+sich ruehmen, einen solchen Engel gesehen zu haben, eh' er nach
+Augsburg kam?
+
+Toerring.  Glaubt ihr denn, ich bin der Narr, der das Feuer besprechen
+will?  Das faellt mir nicht ein!  Mag's brennen, bis er Asche ist, was
+kuemmert's mich.  Aber ich denke, die Nahrung wird diesem Feuer etwas
+billiger zu kaufen sein, als mit Thronen und Kronen!  Zum Teufel, ist
+denn Albrecht nicht auch so ein Weib wert?  Lasst mich nur machen!
+Ich sage euch, es sind wackre Menschen, vernuenftige Leute!  Stand der
+Alte nicht gestern abend da, als ob sich ihm der Erzengel Michael zum
+Eidam antruege?  Und das Maedchen--schaute sie nicht drein, als ob sie
+zum Fliegen aufgefordert wuerde, anstatt zum Tanzen?  Gebt nur acht,
+ich bringe alles ins gleiche!  (Ab.)
+
+Frauenhoven.  Der irrt sich!  In Vater und Tochter, wie im Herzog!
+
+Nothhafft von Wernberg.  Aber ins Gewissen muessen wir ihm reden!
+
+Frauenhoven.  Warum?  Um es getan zu haben, nicht wahr, wenn wir
+dereinst zur Rechenschaft gezogen werden!  Borg dir die Posaune des
+Juengsten Gerichts und versuch's, ob du Gehoer bei ihm findest.  Ich
+bin zufrieden, wenn's nur einstweilen geheimbleibt.  Er ist beim
+faulen Wenzel in Prag auferzogen worden, und was der bei Geigen--und
+Floetenklang in ihn hineingesaet hat, das bringt Gott selbst nicht
+wieder heraus!
+
+
+
+Zweite Szene
+
+Albrecht (tritt ein).  Nun, Freunde?  Was sagt ihr zu diesem Morgen,
+der die ganze Welt vergoldet?  Nicht wahr, den haett' man nicht
+schoener bestellen koennen?  Aber, wie steht ihr denn da?  Als ob ihr
+augenblicklich ins Gefecht solltet und euern Letzten Willen noch
+ueberdaechtet!
+
+Nothhafft von Wernberg.  Da hoff ich anders auszusehen, obgleich ich
+keinen Vater mehr habe, der mich wieder heraushaut, wenn's zu arg
+wird, wie Ihr!
+
+Albrecht.  Ja, das ist wahr, da hab ich einen Vorzug vor euch.  Ich
+darf dem Tode keck in den Rachen springen, wie die Maus dem Loewen.
+Noch zwischen Kauen und Schlucken reisst mich der wieder heraus, der
+mich gemacht hat.
+
+Nothhafft von Wernberg.  Das habt Ihr bei Alling erfahren!  Waere er
+nicht gewesen-
+
+Albrecht.  So wuerde mein erster Kampf auch mein letzter geblieben
+sein, und ich haette nie gehoert, wie suess die Siegstrompete toent; was
+red ich, ich haette Agnes nie erblickt!
+
+Nothhafft von Wernberg.  Agnes!
+
+Albrecht.  Oh, ich bin ihm Dank schuldig, unendlichen Dank, mehr Dank,
+wie irgendein anderer Sohn dem seinigen!
+
+Nothhafft von Wernberg.  Fuehlt Ihr's?
+
+Albrecht.  Erst seit gestern ganz!  Dies Auge, das ich jetzt
+freiwillig schliessen moechte, wie den Mund, wenn er seine Kirsche
+hat--gebrochen und mit Sand verschuettet wuerde es ohne ihn ja laengst
+daliegen, ein Spiegel, der zerschlagen ward, bevor er das Bild noch
+auffangen konnte, das er festhalten sollte, und dies Herz--die Stunde
+wird kommen, wo ihr mich verstehen koennt, dann mehr!  Seht, wenn euch
+auch einmal wird, als ob sich Millionen Lippen in euch auftaeten, und
+alle saugen wollten--wenn ihr nicht mehr wisst, ob's Lust oder Schmerz
+ist, was euch die Seele im Wirbel herumjagt--wenn euch die Brust
+zerspringen will und ihr, von Frost und Hitze zugleich geschuettelt,
+zweifelnd ausruft: doch wohl Lust, ja, wohl Lust, Wollust! und dies
+dunkle Wort, wie ich, nun auf einmal begreift, indem ihr's,
+schwindelnd zwischen Leben und Tod, mit eurem letzten Atemzug
+nachschafft--dann--dann!  Eher nicht!
+
+Nothhafft von Wernberg.  Gnaediger Herr--eine Bitte!
+
+Albrecht.  Was ist's?
+
+Nothhafft von Wernberg.  Stellt Euch Euren Vater einmal vor!
+
+Albrecht.  Nun?
+
+Nothhafft von Wernberg.  Aber recht deutlich, mit dem Gesicht, das er
+hat, wenn er einem einen Wunsch nicht bloss abschlagen, sondern in den
+Hals zurueckjagen will, so dass man ihn, wenn man um Honigbirnen
+gekommen ist, um Stockpruegel anspricht!
+
+Albrecht.  Gut!
+
+Nothhafft von Wernberg.  Seht Ihr ihn?  So fragt Euch, ob Ihr das vom
+Spiegel und vom Wirbel und von Lust und Schmerz, und von Leben und
+Tod vor ihm wiederholen moechtet!
+
+Albrecht.  Vor ihm?  Ja!  Ich habe eine Mutter gehabt!  Vor euch?
+Nicht um die Welt!
+
+Nothhafft von Wernberg.  Eure Mutter war eine Prinzessin von Mailand!
+
+Albrecht.  Und sollte sie meine Mutter nicht auch geworden sein, wenn
+sie keine Prinzessin von Mailand gewesen waere?  Sie war das Muster
+eines Weibes--haette das nicht genuegt?
+
+Nothhafft von Wernberg.  Ich zweifle!  Wenn aber--so wuerde Euch jetzt
+nichts mehr hindern, Euch mit dem Engel von Augsburg zu verbinden,
+denn Ihr wuerdet Bayerns Thron nie besteigen!
+
+Albrecht.  Nicht, Herr Ritter?  Wer weiss!  Wer weiss, was geschaehe,
+wenn ich mein Volk zum Spruch aufriefe, wenn ich sagte: Seht, ich
+soll nicht wuerdig sein, euch zu beherrschen, weil mein Vater eine
+eurer Toechter zu sich erhoben hat, eine, die ihm am besten ins Ohr
+sagen konnte, was euch fehlt!  Ich soll nicht wuerdig sein, euch zu
+beherrschen, weil die Teilnahme fuer euch mir von der Mutter her
+angeboren ist, weil ich euch verstehe, ehe ihr noch den Mund auftut,
+weil mir's im Blut liegt, euch beizuspringen!  Ich soll nicht wuerdig
+sein, euch zu beherrschen, weil ich euer Bruder bin!  Wer weiss, was
+sie tun werden, die alten treuen Bavaren, wenn mein Sohn sie dereinst
+nach Urvaeter-Weise in einem Eichenhain zusammenruft und so zu ihnen
+spricht; wer weiss, ob sich dann nicht der letzte Bauer in einen
+Ritter verwandelt und ob die Sense nicht gegen das Schwert schlaegt,
+dass das ganze deutsche Reich zu wackeln anfaengt, und der grosse Karl
+zu Aachen in seinem Sarg erschrocken nach der Krone greift!
+
+Nothhafft von Wernberg.  Gnaediger Herr, verkennt mich nicht!
+Nothhafft von Wernberg kann Euch nicht raten, in den Abgrund zu
+springen, aber er springt nach, wenn Ihr's tut!
+
+Albrecht.  Das ist ein Wort!  So kommt!
+
+(Alle ab.)
+
+
+
+
+Baderstube.
+
+
+
+Dritte Szene
+
+Agnes.  Hier, mein Vater?
+
+Caspar Bernauer.  Hier, meine Tochter, hier erwarten wir ihn,
+nirgends sonst.  Wie ist dir denn zumute?  Etwas anders, wie
+gewoehnlich, wenn du die Augen aufmachst, nicht wahr?  Nun ja, das ist
+natuerlich.  Die Maedchen zoegern gern aus Angst oder Neckerei noch eine
+Weile vor der Tuer, wenn sie auch wirklich schon hinein wollen und
+wissen, dass der Braeutigam ihnen laengst die Arme entgegenstreckt.  Du
+armes Ding hast nun nicht einmal Kranzwindens-Zeit.
+
+Agnes.  Also, Euer Entschluss ist gefasst?
+
+Caspar Bernauer.  Es gibt nur ein Mittel!  Und wenn du nur bereit
+bist: Fuer ihn moecht' ich stehen!
+
+Agnes.  Ja?
+
+Caspar Bernauer.  Ich kenn's, wenn's auch lange her ist, dass ich
+selbst an dem Fieber litt!  Eine treue, redliche Seele!  (Er zieht
+etwas aus der Tasche.)  Was hab ich da?
+
+Agnes.  Mein Kettlein!  Aber, das hab ich ja gestern abend gleich
+wieder weggelegt!
+
+Caspar Bernauer.  Kann doch wohl nicht sein, denn Theobald hat's auf
+der Strasse gefunden, als er hinter uns herschritt!
+
+Agnes.  Theobald?
+
+Caspar Bernauer.  Ja, den hast du ebensowenig gesehen, wie ich!  Was
+sagst du?  Der naerrische Junge ist uns, solange die Reichsknechte
+hier sind, jeden Abend heimlich gefolgt, wenn wir das Haus noch
+verliessen, und hat auf uns gewartet, bis wir wieder heimgingen.  Nie
+hat er sich etwas davon merken lassen, und wenn ich's jetzt weiss, so
+kommt das daher, dass er deine Kette fand!  Ist das einer?
+
+Agnes.  Es freut mich, dass er so an Euch haengt!
+
+Caspar Bernauer.  Nun daecht' ich, es waer' die beste Antwort fuer den
+tollkoepfigen Herzog, wenn du dem Theobald rasch, noch heute morgen,
+ja augenblicklich die Hand reichtest!  Du bist ihm ja doch den
+Finderlohn schuldig!
+
+Agnes.  Wie?
+
+Caspar Bernauer.  Ihr beide traetet ihm dann Hand in Hand entgegen,
+ich aber staende segnend hinter euch und riefe ihm zu: So war's im
+Himmel beschlossen, und was Gott zusammengefuegt hat, das soll der
+Mensch nicht scheiden!
+
+Agnes.  Vater!
+
+Caspar Bernauer.  Fuerchte keine Gewalttat!  Auch hier stehen wir auf
+roter Erde, auch in Augsburg ist Westfalen, ja--doch, wozu das!  Nun,
+Jungfer Tochter, was sagt Ihr?  Der Braeutigam ist, wie ich hoffe,
+bereit und sogar der Priester nicht weit!  Sprich, soll's so sein?
+
+Agnes.  Nie!  In Ewigkeit nicht!
+
+Caspar Bernauer.  Das heisst: heute nicht!
+
+Agnes (gluehend).  Es heisst-
+
+Caspar Bernauer (unterbricht sie).  Morgen!  Morgen!  Morgen!
+
+
+
+Vierte Szene
+
+Theobald (tritt hinter einem Schrank hervor).  Wozu, Meister?  Ich
+kann's auch heute hoeren!
+
+Caspar Bernauer (zu Agnes).  Da siehst du jetzt!
+
+Theobald.  Scheltet sie nicht!  Ich selbst bin schuld!  Ich haette
+Euch nicht folgen sollen!  Diesmal nicht!
+
+Agnes.  Theobald, es tut mir weh!
+
+Theobald.  Ich weiss, Jungfer, ich weiss!  Und ich fuehl's ja auch, dass
+ich--Du mein Gott, ich darf ja nicht einmal von Unglueck sprechen, Ihr
+koennt mir ja gar nicht beschieden sein, ich brauche Euch ja nur
+anzusehen, um das zu erkennen.  Meister--darf ich ein wenig
+fortgehen?  In einer Stunde bin ich wieder da, um diese Zeit kommen
+so nicht viele!  (Er fasst Agnes Hand.)  Agnes, ich wollte, ich koennt'
+einem andern meine Liebe zu Euch abtreten, nicht um mein Herz zu
+erleichtern, o Gott, nein, es waere das groesste Opfer, das ich bringen
+koennte, und ich braechte es nur, um Euch gluecklich zu machen, aber
+gluecklich wuerdet Ihr, das glaubt mir, wenn das, was (er schlaegt sich
+auf die Brust) hier glueht, eine bessere Brust schwellte!  (Ab.)
+
+
+
+Fuenfte Szene
+
+Caspar Bernauer.  Ich glaub's auch!
+
+Agnes.  Zuernt mir nicht, Vater!  Haett' ich geahnt-
+
+Caspar Bernauer.  Kein Wort mehr davon!  Es ist nun, wie's ist!  Wer
+kann gegen die Sterne!  Aber mich graust, Agnes, wenn ich an deine
+Zukunft denke, denn (er zeigt auf ein Barbierbecken) so ein Ding und
+eine Krone--es geht nimmermehr gut!
+
+Agnes.  Ihr liesst mich vorhin nicht ausreden!  Nicht Theobald, nicht
+irgendeinem koennt' ich meine Hand reichen-
+
+Caspar Bernauer.  Und warum nicht?
+
+Agnes.  Weil ich--Ich duerfte nicht!
+
+Caspar Bernauer.  So sitzt er dir schon im Herzen?  Verflucht sei
+dies Turnier!
+
+Agnes.  Aber--Zu der Mutter aller Gnaden koennt' ich mich
+fluechten--ins Kloster koennt' ich gehen!
+
+Caspar Bernauer.  Und deinen Herzog draussen lassen?
+
+Agnes.  Nein!
+
+Caspar Bernauer.  Was haett'st du dann im Kloster zu tun?
+
+
+
+Sechste Szene
+
+Toerring (tritt ein).  Guten Morgen, Meister!  Auch schon da, Jungfer?
+Die Hand her, wackrer Alter!  Ich hab Euch gestern abend
+liebgewonnen.  Schoene Agnes, waere des Toerrings Schaedel fuer die
+Honigreime und Schmeichelsprueche des Heinrichs von Ofterdingen und
+Wulframs von Eschenbach nicht immer zu hart gewesen: jetzt gaebe er
+alles wieder von sich, was er je verschluckt haette!  Aber der hat
+nichts behalten, als das Eia popeia von der Ammenstube her, darum
+kann ich Euch nur sagen: Ihr seid's wert, dass Ihr einem Herzog
+gefallt!
+
+Agnes.  Schon das ist zu viel, Herr Graf!
+
+Toerring.  Bewahre!  Wenn Kaiser Wenzels Bademaedchen Euch geglichen
+hat, so will ich's ihm verzeihen, dass er eine Weile glaubte, er sei
+mit ihr allein auf der Welt.  Nur das verzeih ich ihm nicht, dass er's
+zu weit trieb und sich gar nicht wieder zur Besinnung bringen liess,
+denn sie musst' es buessen, und das haett' er vorher wissen koennen!  (Er
+sieht Agnes scharf an.)  Arme Susanna, junges, schoenes Kind, wie
+bleich magst du gewesen sein, als die starren, grimmigen Boehmen dich
+verbrannten und von ihren eignen Bischoefen und Erzbischoefen dabei
+angefuehrt wurden, als ob's ein heilig Werk waere!  Du warst gewiss
+keine Zauberin, oder es steht auch hier eine vor mir!
+
+Caspar Bernauer.  Das geschah im froehlichen Lande der Geigen?
+
+Toerring.  Es sollte mich wundern, wenn man noch keinen Reim darauf
+gemacht haette!  So etwas singen die Leute gern, wenn sie lustig sind!
+
+Caspar Bernauer.  Was sagst du, meine Tochter?
+
+Agnes.  Pfui ueber den Kaiser, dass er's geschehen liess!
+
+Toerring.  Er lag im Turm, und sein Adel stand zornig mit blankem
+Schwert vor der Pforte, er wusste nicht, wer zunaechst bei ihm anpochen
+wuerde, ob der Henker oder der Befreier!
+
+Agnes.  So war's ihr Schicksal, und sie wird schon einmal erfahren,
+warum.
+
+Toerring.  Bernauer, ein Wort mit Euch!
+
+Caspar Bernauer.  Geh, Agnes, und lege dein Kettlein weg!
+
+Agnes (ab).
+
+
+
+Siebente Szene
+
+Caspar Bernauer.  Wir sind allein!
+
+Toerring.  Nun, Alter, was denkt Ihr eigentlich?  Sagt an!
+
+Caspar Bernauer.  Ich weiss nicht, was Ihr meint!
+
+Toerring.  Nun, ich glaube, der Herzog wird heute morgen geradeso
+aufgestanden sein, wie er sich gestern abend niedergelegt hat.
+
+Caspar Bernauer.  Acht Stunden sind allerdings nur acht Stunden!
+
+Toerring.  Der Meinung bin ich auch, darum muessen wir beizeiten einig
+werden!  Also--(nimmt ein Rasiermesser, wie spielend) Euer Schwert,
+nicht wahr?
+
+Caspar Bernauer.  Wie es Euch gefaellt!
+
+Toerring.  Meins ist etwas laenger!  (Schlaegt an sein Schwert.)  Ja, was
+ich sagen wollte!  Der Herzog liebt Eure Tochter--er liebt sie--wenn
+jedes Eheweib so geliebt wuerde, sie haetten den Himmel auf Erden!
+
+Caspar Bernauer.  Vor dem Trunk und nach dem Trunk, es ist ein
+Unterschied und muss auch sein!
+
+Toerring.  Ihr seid verheiratet gewesen oder noch, und wollt Euch
+entschuldigen!  Ja, ja, das kann ich Euch beteuern, er brennt, wie
+ein Johannisfeuer, wenn der Wind gut blaest, aber (Nimmt das
+Barbierbecken.)  Euer Helm?
+
+Caspar Bernauer.  Ist man in Bayern so spassig?
+
+Toerring.  Nein, nein, es ginge, seht!  (Er macht, als ob er Caspar
+Bernauer das Becken aufsetzen wollte.)  Habt Ihr das noch nicht
+versucht?  Ich versichre Euch, der Herzog lodert, dass die Kastanien
+gar werden, wenn er sie nur ansieht, doch was das Werben betrifft,
+das Heimfuehren--(Er nimmt den Schnepper.)  Dies Ding da, Zick Zack,
+Trick Track, fuehrt Ihr wohl im Wappen, oder ist's ein nackter Arm mit
+einer sprudelnden Ader, wie ich's draussen an der Tuer gemalt sah?
+
+Caspar Bernauer.  Keins von beidem, Herr Graf!
+
+Toerring.  Nicht?  Nun also, kurz weg, wenn's ueberhaupt noch noetig ist!
+Die Liebe des Herzogs stammt aus dem Herzen, die Werbung nun, das
+war, Ihr habt's ja selbst gesehen, ein Rausch vielleicht sogar, was
+weiss ich's, ein Weinrausch!
+
+Caspar Bernauer.  Das freut mich!  Aber, diese Botschaft ist nicht
+fuer mich allein!  (Ruft.)  Agnes!
+
+Toerring.  Freut Euch?  Ich hab mich nicht in Euch geirrt, als ich
+Euch fuer verstaendig hielt!  Gebt mir noch einmal die Hand!
+
+Caspar Bernauer (haelt seine Hand zurueck).  Ihr habt mich schon
+geadelt!
+
+
+
+Achte Szene
+
+Agnes (tritt ein).
+
+Toerring.  Nicht wahr, ein maessiges Glueck, aber gesichert fuer
+immer--unter uns--der Herzog hat schoene Gueter von seiner Mutter her!
+
+Caspar Bernauer.  Merk wohl auf, mein Kind!  (Zu Toerring.)  Nun?
+
+Toerring.  Ei, da Ihr sie rieft, so sprecht selbst weiter!
+
+Caspar Bernauer.  Wohl!  (Zu Agnes.)  Der Herzog nimmt seine Bewerbung
+zurueck!
+
+Toerring.  Nicht doch!
+
+Caspar Bernauer.  Er nimmt seine Bewerbung um deine Hand zurueck, die
+laesst er dir, er ist nicht unverschaemt!  Das uebrige, nun ja, das
+moecht' er, ich weiss nicht, ob fuer immer oder auch nur fuer einige Zeit!
+
+Agnes (setzt sich nieder).
+
+Caspar Bernauer (zeigt auf sie).  Da habt Ihr ihre Antwort!  Jetzt
+die meinige!  Zuerst!  (Mit gefaltnen Haenden gen Himmel.)  Ich danke
+Dir, Vater im Himmel, dass es so kam!  Schick mir nun, welches Leid Du
+willst, es kann mich nicht aerger treffen, als dies Glueck mit seinem
+schrecklichen doppelten Gesicht mich traf!  (Zu Toerring.)  Ihr seht,
+wie mir ist, damit erklaert's Euch, dass ich Euch so ruhig anhoerte!
+Ihr wart mir ein Freudenbote, denn dass meine Tochter in keine Schmach
+willigen wuerde, wusst' ich, also gab Euer Antrag mir sie wieder, sonst
+war sie fuer mich verloren.  Nun aber zur Abrechnung!  Ihr erkundigtet
+Euch nach meinem Schwerte, wir Reichsbuerger fuehren wirklich eins,
+wenn's auch gewoehnlich hinterm Schornstein haengt, und mit dem
+meinigen habe ich frueher manchen Ruecken ausgeklopft, der dem Eurigen,
+das glaubt nur, voellig glich.
+
+Toerring.  Bernauer!
+
+Agnes (springt auf und stellt sich neben Caspar).  Recht, Vater,
+redet!
+
+Caspar Bernauer.  Den Helm mit dem bunten Federbusch habt Ihr vor mir
+voraus, ich begnuegte mich immer, wie wir alle, die wir nicht
+furnieren, nur streiten, wenn es gilt, unser Hab und Gut zu
+verteidigen, mit einer simpeln Sturmhaube.  Doch auch die genuegte
+zuweilen, aus einer guten Klinge eine noch bessre Saege zu machen, wenn
+sie sich daran versuchte.  Was aber mein Wappen betrifft, so werdet
+Ihr's schon hie und da frueh morgens an Burgtoren gesehen haben,
+einige aus meiner Familie fuehren einen Strick und einen Dolch im
+roten Felde, und sie wissen sich Respekt zu verschaffen, selbst bei
+Kaiser und Reich.
+
+Toerring.  Das ist das Zeichen der Feme!
+
+Caspar Bernauer.  Kennt Ihr sie?  Auch Jungfrauen stehen unter ihrem
+Schutz, und wenn die Gerechtigkeit ihren Weg auch in diesen betruebten
+Zeiten, wie ein Maulwurf, unter der Erde suchen muss: sie ist immer
+zur rechten Stunde da!
+
+Agnes.  Ich kann mich selbst schuetzen, mein Vater!  Was mir gestern
+abend widerfuhr, das raubte mir Sprache und Besinnung; was mir jetzt
+widerfaehrt, gibt mir beides wieder!  Das eine haett' ich nicht fuer
+moeglich gehalten, aber, bei Gott! das andere noch viel weniger!  (Zu
+Toerring.)  Dies sagt dem Herzog von mir!
+
+Caspar Bernauer.  Da ist er selbst!
+
+
+
+Neunte Szene
+
+Albrecht (tritt ein).  Ja, da ist er!  (Zu Agnes.)  Ward er erwartet?
+
+Agnes (wendet sich ab).
+
+Albrecht.  Agnes--wenn auf dem Wege zu dir ein Himmelswagen flammend
+vor mir niedergefahren waere, jeder Radnagel ein Stern, ich waere nicht
+eingestiegen, und du-
+
+Agnes.  Gnaediger Herr--gestern fehlte mir der Mut Euch anzusehen,
+heute, daecht' ich, sollte er Euch fehlen!
+
+Albrecht.  Was hab ich dir denn getan?
+
+Agnes.  Nichts?  Also das waere nichts?  Gnaediger Herr, so viel Ehre
+koennt Ihr mir gar nicht bieten, und wenn Ihr mir die Krone aufsetztet,
+dass sie diese Schmach wiederaufwoege!
+
+Albrecht.  Schmach?
+
+Agnes.  Waer's keine?  Waer' das an mir keine Schmach, was, einem
+Fraeulein zugefuegt, die Klingen aller ihrer Verwandten, bis zum
+zehnten Glied herab, aus der Scheide reissen und gegen Euch kehren
+wuerde?  Gnaediger Herr, auch mich hat Gott gemacht!
+
+Albrecht.  Toerring!  Ihr da?  Was heisst das?
+
+Agnes.  Auch mich hat Gott gemacht, auch aus mir kann er mehr machen,
+wenn es sein heiliger Wille ist, auch aus Euch weniger, denn alles
+auf Erden ist nur zur Probe, und Hoch und Niedrig muessen einmal
+wechseln, wenn sie nicht vor ihm bestehen!  Gnaediger Herr, tut keinem
+wieder so weh, wie mir, man erwartet's nicht von Euch, darum ist's
+doppelt bitter!  (Zu Caspar Bernauer.)  Mein Vater, jetzt ins Kloster!
+Nun nehme ich von der Welt nichts mehr mit ueber die Schwelle, als
+einen ewigen Schauder!
+
+Albrecht.  Maedchen, gestern warb ich um dich, heute komm ich um die
+Antwort, waehrend meine Freunde schon den Priester suchen, der uns
+verbinden soll: ist das Schmach?
+
+Toerring (tritt vor).  Der Herzog weiss von nichts, auf Ritterwort, ich
+sprach nur aus mir selbst!  Ich glaubte--nun, Irren soll menschlich
+sein!
+
+Albrecht.  Du beschimpftest sie?  Du beschimpftest meine Braut?
+Dafuer--(Er will ziehen.)
+
+Toerring.  Nein!  Dafuer--(Er tritt zu Agnes heran und kuesst ihr
+ritterlich die Hand.)  Ihr wisst, ich bin nicht feig, aber es waere
+nicht wohlgetan, die Zahl ihrer Freunde zu mindern, und nun ich sie
+kenne, bin ich ihr Freund, ja, ich werde ihr dienen bis zum letzten
+Atemzug, und mir ist, glaubt's mir und denkt darueber nach, als fasste
+der Tod mich schon jetzt bei der Hand!  (Zu Agnes.)  Das sprach ein
+Edler von Bayern, der nicht der Geringste ist, und nennt mich einen
+ehrvergessenen Mann, wenn Euch nun etwas widerfaehrt, solange ich's
+hindern kann.  (Zu Albrecht.)  Ihr aber, gnaediger Herr, grollt nicht
+laenger, dass ich ihr den Schleier etwas unsanft abnahm, es gereicht
+Euch, wie ihr, zum Vorteil, dass ich ihr ins Gesicht sah!  (Tritt
+zurueck.)
+
+Albrecht.  Sie schweigt!  Das Vergeben ist an ihr, nicht an mir!
+Folgt mir!  Wenn sie sieht, wie ich sie raeche, wird sie wissen, wie
+ich sie liebe!
+
+Agnes.  Um Gott nicht!  Nur von Euch war's mir, wie Todesstich!
+Jetzt--jetzt--Vater!
+
+Caspar Bernauer.  Ihre harten Worte tun ihr leid, gnaediger Herr, sie
+haette sie gern zurueck, Ihr seht's wohl, sie erstickt ja fast!
+
+Albrecht.  Und nicht um die Welt moecht' ich sie missen!  Alter, zwei
+Kinder sind ausgewechselt worden, die Tochter des Kaisers wurde in
+deine Wiege gelegt, und der Kaiser zieht die deinige auf!  Schau hin,
+erkennst du sie noch?  Agnes, davon hat dir in frueher Jugendzeit
+schon ein Maerchen erzaehlt, doch damals ahntest du's noch nicht, dass
+du ueber deine eigne Geschichte weintest, erst in dieser Stunde hast
+du dich wieder auf dich selbst besonnen!  Aber nun weisst du endlich,
+wer du bist, das zeigt die edle Glut, die dir aus dem Auge blitzt und
+von der Wange flammt, nun denkst du nicht mehr daran, dass du bisher
+nicht im Purpur gingst und nicht aus goldenem Becher trankst; so komm
+denn auch zu mir herueber, eh' dir das wieder einfaellt!
+
+Caspar Bernauer.  Agnes!
+
+Agnes.  Vater, kein Wort von Gefahr!  Erinnert mich nicht, dass Mut
+dazu gehoert!  Sonst koennt' ich-
+
+Albrecht (breitet die Arme gegen sie aus).  Was?  Was?
+
+Agnes (sinkt hinein).  Und muesst' ich's mit dem Tode bezahlen--das
+taete nichts!
+
+Albrecht (umschliesst sie).  Agnes!
+
+Agnes (macht sich wieder los).  Aber dazu berechtigt mich kein Mut!
+--Ihr seid ein Fuerst-
+
+Albrecht.  Und darf als solcher von vorn anfangen, so gut wie
+irgendeiner meiner Vorgaenger!
+
+Agnes.  Ihr habt einen Vater-
+
+Albrecht.  Und bin sein Sohn, nicht sein Knecht!
+
+Agnes.  Und wenn Euer Volk murrt?
+
+Albrecht.  So murrt es, bis es wieder jubelt.  Ja, wenn sie sich
+zusammenrotteten und sich offen wider mich empoerten: ich schickte
+dein Bild, statt eines Heers, und sie kehrten schamrot zum Pfluge
+zurueck!
+
+Agnes.  Und wenn Euer Vater flucht?
+
+Albrecht.  So segnet Gott!
+
+Agnes.  Und wenn er das Schwert zieht?
+
+Albrecht.  So gibt er mir das Recht, auch nach dem meinigen zu
+greifen!
+
+Agnes.  Und dabei sollten wir--dabei koenntet Ihr gluecklich sein?
+
+Albrecht.  Viel gluecklicher, als wenn ich dir entsagen muesste!  Das
+eine waer' Kampf, und zum Kampf gehoert's, dass man den Ausgang nicht
+vorher weiss; das andere waere Tod, Tod ohne Wunde und Ehre, feiger
+Erstickungstod durch eigne Hand, und den sollt' ich waehlen?  Nach der
+Kehle greifen, statt nach dem Schwert?  O pfui!  Da waer' ich doch
+gewiss der Erste und der Letzte!  Maedchen, ich kenne jetzt dein Herz,
+her zu mir, (er drueckt sie an sich) so, nun hast du alles getan, das
+uebrige ist meine Sache!  Worauf sollte Gott die Welt gebaut haben,
+wenn nicht auf das Gefuehl, was mich zu dir zieht und dich zu mir?
+Die Wuerttembergerin, die man zwischen dich und mich gestellt hatte,
+wuerde in diesem Augenblick tot umfallen, wenn sie nicht geflohen waere!
+Das fuehl ich!  Darum zittre nicht!
+
+
+
+Zehnte Szene
+
+Frauenhoven und Nothhafft von Wernberg (treten ein).
+
+Albrecht.  Ist alles bereit?
+
+Frauenhoven.  Ein Priester ist gefunden, der's mit dem jungen Herzog
+gegen den alten wagen will!
+
+Nothhafft von Wernberg.  Aber nur unter der Bedingung, dass es so
+lange als moeglich Geheimnis bleibt!
+
+Albrecht.  Was sagst du dazu, Agnes?
+
+Agnes.  So lange nur Gott es weiss, wird keine meiner Ahnungen in
+Erfuellung gehen!
+
+Albrecht.  Also!  Wo und wann?
+
+Frauenhoven.  Heut abend, Schlag zehn, in der Kapelle der heiligen
+Maria Magdalena.  Aber wir muessen alle vermummt kommen, wie zum
+Totendienst!
+
+Albrecht.  Gut!  Und morgen nach Vohburg!  Agnes, das ist ein rotes
+Schloss an der gruenen Donau, womit meine Mutter--sie ruhe sanft und
+stehe froehlich auf--mich fuer meine erste Schlacht belohnte!  Gib acht,
+dort wirst du ueber dich selbst lachen, sooft du an diesen Morgen
+zurueckdenkst, da gibt's mehr Lerchen, wie anderswo Spatzen, und in
+jedem Baum fast sitzt eine Nachtigall.  Ich schenk es dir zum
+Leibgeding, nimm den lustigen Vogelkaefig unbesehens an, ich bitte
+dich, er wird dir gefallen, der Himmel schaut immer blau auf ihn
+herab, und wenn du dich ueber eine Gabe, die du noch nicht kennst, auf
+alle Gefahr hin dankbar bezeigen willst, so nenne mich zum ersten Mal
+du!
+
+Agnes.  Mein Albrecht!
+
+Albrecht (sie in den Armen haltend).  Du weinst dabei?
+
+Agnes.  Sollte es nicht nachbrennen?  Euch--dir konnt' ich--Aber es
+schmerzte mich mehr um deinet-, als um meinetwillen, mir war, als
+waere der funkelndste Stern ueber meinem Haupt auf einmal aus seiner
+Bahn gewichen, und ich haette ihn in der Schaudergestalt, in der man
+sie hier unten zuweilen verloeschen sieht, zu meinen Fuessen wieder
+getroffen!  Nun ist mir dafuer zumut', als haett' ich schon jetzt mehr
+vom Leben, als mir gebuehrt!--Mein Vater!
+
+Caspar Bernauer (tritt hervor).  Sie sollen Vater und Mutter
+verlassen und aneinanderhangen!  Mein Kind, ich muss dich segnen, du
+tust nach Gottes Gebot!  So sei er mit dir!  (Er legt ihr die Haende
+aufs Haupt.)
+
+Albrecht.  Auch mich!
+
+Caspar Bernauer.  Ihr fuerchtet, dass Ihr sonst nicht dazu kommt!  (Er
+legt auch ihm die Haende aufs Haupt.)
+
+
+
+
+Dritter Akt
+
+Muenchen.
+
+
+
+Erste Szene
+
+Das Herzogliche Kabinett.  Man sieht an der einen Wand zwei Karten.
+Die andern Waende sind mit Bildern bayerischer Fuersten behaengt.
+
+Ernst (steht vor den Karten).  Ich kann's nicht lassen, und es aergert
+mich doch immer wieder von neuem.  Das war Bayern einst, und das ist
+Bayern jetzt!  Wie Vollmond und Neumond haengen sie da nebeneinander!
+Und wenn noch ein halbes Jahrtausend dazwischenlaege!  Aber wie
+mancher alte Mann muss noch leben, der der Zeit noch recht gut gedenkt,
+wo Tirol und Brandenburg und das fette Holland, und was nicht noch
+sonst, unser war, ja, der obendrein auch die ganze Reihe von
+Torheiten aufzaehlen kann, durch die das alles verlorenging!  (Er
+tritt vor die Bilder.)  Nein, wie ihr gewirtschaftet habt!
+Vierundzwanzig Stunden vorm Juengsten Tag waer's noch zu arg gewesen!
+Und ihr hattet das kluge Vorbild im benachbarten OEsterreich so nah!
+Rudolph von Habsburg haette ein Sandkorn durch geschicktes Wenden und
+Drehen und unablaessiges Umkehren auf klebrigtem Boden zum Erdball
+aufgeschwemmt, ihr den Erdball zum magersten Sandkorn heruntergeteilt!
+(Er geht weiter.)  Kaiser Ludwig, wackrer Kaempfer, der du jeden
+Feind bestandst, ausgenommen den letzten, heimlichen ohne Namen und
+Gesicht, du blickst finster auf deinen Enkel herab.  Ich versteh dich,
+und du hast recht, das Schelten ist fuer die Weiber, das Bessermachen
+fuer die Maenner.  Nun, ich stueckle und flicke ja auch schon ein Leben
+lang, ob ich nicht wenigstens den alten Kurfuersten-Mantel wieder
+zusammenbringe, und ich denke, du sollst mir die Hand geben, wenn wir
+uns einmal sehen.  Du haettest mir gewiss die Arbeit erspart, wenn der
+Giftmischer sich nicht mit Wein und Brot gegen dich verschworen und
+dich vor der Zeit ausgetan haette!  Aber deine Soehne--Nun!  Sie sind
+tot!
+
+
+
+Zweite Szene
+
+Stachus (tritt ein).
+
+Ernst.  Was gibt's?
+
+Stachus.  Der Meister aus Koeln ist da, der geschickte Mann mit dem
+wunderlichen Namen.  Er sagt, er sei bestellt.
+
+Ernst.  Er hat was bei sich!  Das bring mir!
+
+Stachus (ab).
+
+
+
+Dritte Szene
+
+Ernst.  Der Zierat fuer die Totenkapelle, wo die jetzt in Staub
+zerfaellt, die mir mit Schmerzen meinen Sohn gebar!
+
+
+
+Vierte Szene
+
+Stachus (bringt einen Bogen).
+
+Ernst (nachdem er ihn betrachtet hat).  Das ist mir viel zu kraus!
+Komm mal her!  Bringst du heraus, was es bedeuten soll?
+
+Stachus.  Ach, Herr, ich bin ein gar einfaeltiger Mensch!
+
+Ernst.  Tut nichts, du gehoerst auch mit dazu, Graeber sollen
+stillschweigen, oder so reden, dass auch der Geringste sie versteht!
+Genauso soll er's machen, wie ich's ihm angab: den Heiland, unsern
+allbarmherzigen Erloeser, mit ausgebreiteten Armen, die Abgeschiedene
+zu seinen Fuessen, wie man die heilige Martha malt, aber mit verhuelltem
+Gesicht, da doch niemand wissen kann, wie sie jetzt aussieht, und
+ganz unten ich und mein Sohn Albrecht, wie wir fuer ihre arme Seele
+beten!  Das sag ihm, dies da kann er auf sein eignes Grab setzen, ich
+bedank mich dafuer, ich haett' mir aus der Koelner Bauhuette etwas andres
+erwartet, das ist die Reisekosten nicht wert!
+
+Stachus (mit dem Bogen ab).
+
+
+
+Fuenfte Szene
+
+Ernst.  Die haetten schoen zu deinem demuetigen, frommen Sinn gepasst, du
+stille Elisabeth, all diese Engel mit Fluegeln und Trompeten, die
+blasen, als ob die Himmelskoenigin zum zweiten Mal ihre Auferstehung
+feierte!  Und ich hatt' ihm alles so deutlich angegeben!  Aber, das
+muss immer scharwenzeln, immer, es waer' kein Wunder, wenn man's am
+Ende gar vergaesse, dass man von der Erde genommen ist und wieder zur
+Erde werden soll, und es scheint doch vielen zu gefallen, sonst
+wuerden's diese Leute ja wohl nicht bei jedermann versuchen!
+
+
+
+Sechste Szene
+
+Der Kanzler Preising (tritt ein).
+
+Ernst.  Schon da, Preising?  Gut!  Wisst Ihr was?  Wir wollen von heut
+an immer eine Stunde frueher anfangen!  Niemand weiss, ob er nicht
+Feierabend machen muss, ehe er muede ist!  Wieviel hatte die Herzogin
+noch vor, nun liegt sie da!  Was bringt Ihr?
+
+Preising.  Zuvoerderst!  Die Klagen ueber den Wucher der Juden mehren
+sich!
+
+Ernst.  Man soll sich so einrichten, dass man die Juden nicht braucht!
+Wer nicht von ihnen borgt, wird nicht arm durch sie, und ob sie
+funfzig vom Hundert nehmen!
+
+Preising.  Es ist der Juden selbst wegen, dass ich darauf zurueckkomme.
+In Nuernberg schlaegt man sie schon tot, wie die Hunde, und boese
+Beispiele stecken eher an, als gute!
+
+Ernst.  Meine Juden sollen's so treiben, dass sie das Totschlagen
+nicht verdienen, dann wird's wohl unterbleiben.  Ich mische mich in
+diese Haendel nicht hinein.  Fragt bei meinem Bruder an, ob er will!
+
+Preising.  Das waer' wohl das erste Mal, dass Herzog Wilhelm etwas
+wollte, was Ew.  Gnaden nicht wollen!
+
+Ernst.  Ebendarum soll man ihn nie vorbeigehen!  Weiter!
+
+Preising.  In Sachen des strittigen Kurhuts hat der boehmische Hof
+endlich-
+
+Ernst.  Nichts davon!  Das hat Kaiser Rudolph durch seinen doppelten
+Spruch so verwickelt, dass nur das Schwert noch helfen kann, und das
+Schwert koennen wir erst dann ziehen, wenn Muenchen, Ingolstadt und
+Landshut einmal wieder zusammengehen.  Dazu ist bis jetzt wenig
+Hoffnung, denn meine teuren Vettern Ludwig und Heinrich moechten mich
+freilich gern umarmen, wenn sie mir nur zugleich auch den Ruecken
+kehren koennten.  Also weiter!  Doch halt, halt, erst dies!  Wir sind
+ja unverhofft zu Geld gekommen, der Wuerttemberger muss das wieder
+herausgeben, was er bei Erziehung seiner Tochter an Birkenreisern
+erspart hat, und obendrein schwere Zinsen zahlen.  Mit seinen
+fuenfundzwanzig Tausend Gulden koennen wir allerlei machen!
+
+Preising.  Wenn wir sie erst haben, ja!
+
+Ernst.  Haltet Ihr den Grafen fuer keinen ehrlichen Mann?
+
+Preising.  Fuer den ehrlichsten Mann von der Welt!
+
+Ernst.  Nun denn!  Ein Bettler ist er doch gewiss auch nicht!  Wir
+koennten eine unsrer verpfaendeten Staedte dafuer ausloesen, und ich weiss
+schon, wo man sich am billigsten finden lassen wird, weil man unser
+Geld am noetigsten braucht.
+
+Preising.  Das waere freilich ein Gewinn!
+
+Ernst.  Ja, da gaeb's doch einen Fleck weniger im Lande, wo wir unsern
+Herzogsstab nicht wieder aufheben duerften, wenn er uns einmal aus der
+Hand glitte.  Wir koennten dem Lech aber auch fuer ewige Zeiten einen
+Freipass damit erkaufen, dass er uns von den Augsburgern nicht wieder
+auf einen Wink des Kaisers versperrt werden kann, wie Anno neunzehn
+bei den Bischofhaendeln!
+
+Preising.  Dazu werden die Kaufherren raten!
+
+Ernst.  Und Ihr?
+
+Preising.  Gnaediger Herr, der Wuerttemberger wird nicht aufknoepfen,
+ich sag's Euch!
+
+Ernst.  Nicht aufknoepfen?  Ei!  Ei!  Hab ich nicht mein Pfand?  Sind
+mir nicht Geiseln gestellt?  Was kann er denn einwenden?
+
+Preising.  Er legt's uebel aus, dass Herzog Albrecht sich gar keine
+Muehe gab, seine Braut wiederzubekommen, dass er in Augsburg aufs
+Tanzhaus ging, statt den Entfuehrer verfolgen zu helfen!
+
+Ernst.  Was war denn an der noch wiederzubekommen?  Sie war ja schon
+das Weib eines andern, eh' wir hier noch die Flucht erfuhren!  Der
+Wuerttemberger soll sich in acht nehmen!  Ich besetz ihm Goeppingen,
+eh' er's denkt, es kommt mir auf einen Ritt noch nicht an!
+
+Preising.  Ich sage Euch, und bitt Euch, nicht unwirsch zu werden,
+ueber den Sieger von Alling ist nie so viel geredet worden, wie ueber
+den Taenzer von Augsburg!
+
+Ernst.  Ich weiss, ich weiss, und es verdriesst mich genug!  Preising,
+es ist die Strafe unsrer eignen Jugendsuenden, dass wir gegen die
+unserer Kinder nachsichtig sein muessen.  Ihr wisst, was ich auf
+Andechs verwende, glaubt's mir, man baut niemals Kapellen ohne Grund!
+Aber es ist schon dafuer gesorgt, dass ein Ende wird.  Erich von
+Braunschweig sagte schon vor zwei Jahren zu mir: es ist schade, Ernst,
+dass du nur den einen Sohn hast und dass der versprochen ist!  Dies
+Wort blieb mir im Kopf haengen, und noch denselben Tag, wo ich die
+Flucht der Wuettembergerin erfuhr, liess ich um die Braunschweigerin
+anhalten!  Nun, gestern zur Nacht lief das Jawort ein!
+
+Preising.  Und Albrecht?  Wird er einverstanden sein?
+
+Ernst.  Einverstanden?  Wie kommt Ihr mir vor?  Darnach hab ich
+wahrhaftig noch nicht gefragt, das, denk ich, versteht sich von
+selbst!
+
+Preising.  Ihr habt ihm einen Boten geschickt!
+
+Ernst.  Einen?  Drei, vier hab ich ihm geschickt, mit Ermahnungen und
+Warnungen, dem letzten hab ich sogar einen Brief mitgegeben!
+
+Preising.  Nun, der ist wieder da, er steigt eben vom Pferd!
+
+Ernst.  Er hat lange genug gemacht!
+
+Preising.  Und ist doch nicht langsam geritten, denn er kommt nicht
+von Augsburg, sondern von Vohburg, der Herzog hatte die Reichsstadt
+verlassen, bevor er eintraf!
+
+Ernst.  So ist der Handel mit der Dirne vorbei, und ich haette mir den
+dummen Brief sparen koennen!
+
+Preising.  Nichtsweniger, als das, er hat die Dirne mitgenommen!
+
+Ernst.  Das ist viel!  Das wuerde ich bei Lebzeiten meines Vaters nie
+gewagt haben!  Bringt das der Bote?
+
+Preising.  Ja--Und-
+
+Ernst.  Was noch?  Warum stockt Ihr?  Das kenn ich ja gar nicht an Euch!
+
+Preising.  Das Geruecht--wissen muesst Ihr's--geht sogar noch weiter,
+viel weiter!
+
+Ernst.  Das Geruecht hat tausend Zungen, und nur mit einer spricht es
+die Wahrheit; wer will die herausfinden?  Aber wie weit geht's denn?
+Ich bin doch neugierig!
+
+Preising.  Man munkelt von einer heimlichen Heirat!  Die Dirne haett's
+nicht anders getan!
+
+Ernst.  Und das koennt Ihr mir mit einem ernsthaften Gesicht sagen?
+Preising!  Bringt das auch der Bote?
+
+Preising.  Ich habe ihm augenblicklich das strengste Stillschweigen
+auferlegt.
+
+Ernst.  Nicht doch!  Er soll reden!  Aber er soll hinzufuegen, dass der
+Dirne ganz Bayern zum Leibgeding verschrieben ist!  (Er lacht.)  Meint
+Ihr nicht?  Auch der Teil, der nicht uns gehoert, der solle apart fuer
+sie erobert werden!  Durch mich, versteht Ihr?
+
+Preising.  Und Ihr seid gewiss, dass nichts dahintersteckt?  Gar nichts?
+
+Ernst.  Preising!  (Er hebt seine drei Finger in die Hoehe.)  Das
+solltet Ihr doch auch koennen, und ob Ihr auf dem Todbett laegt!  So
+viel Respekt fuer mein Blut verlang ich!  Die Sippschaft der Dirne
+hat's in Umlauf gesetzt, um ihre Schande zu verbraemen!  Das liegt ja
+auf der Hand!  Aber daraus folgt nicht, dass wir ruhig zusehen wollen,
+bis es im ganzen Reich herum ist, bewahre!  Es freut mich jetzt
+doppelt, dass der Braunschweiger endlich gesprochen hat, nun koennen
+wir dem Kot gleich einen Platzregen nachschicken, und wir wollen uns
+ruehren, dass er sich nicht vorher festsetzt!  Also!  Ihr steigt
+augenblicklich zu Pferd und meldet's meinem Sohn-
+
+Preising.  Wenn er's nun aber doch nicht aufnimmt, wie Ihr denkt?
+
+Ernst.  Haltet Euch doch nicht bei Unmoeglichkeiten auf!  Das sind ja
+ganz verschiedene Dinge!  Er sagt ja; ob gern oder ungern, schnell
+oder langsam, das kuemmert nicht mich und nicht Euch.  Es gibt zwar
+eine Person, der das nicht so gleichgueltig sein kann, wie uns beiden,
+aber auch um die ist mir nicht bange, sie wird's schon durchsetzen,
+wenn sie nur einmal da ist!  In Braunschweig ist ja alles schoen, bis
+auf das Hexenvolk, das sich zu Walpurgis bei Nebel und Nacht auf dem
+Blocksberg versammelt, und Erichs Anna soll noch maechtig
+hervorleuchten!  Ihr kennt das schnurrige Wort ja wohl, das auf dem
+letzten Fuerstentag ueber sie umging.  Der Burggraf von Nuernberg, der
+kleine Bucklichte, der immer so twatsche Einfaelle hat, sagte, als die
+Rede auf ihr schlichtes Wesen in Gang und Kleidertracht kam, sie sei
+ein Licht, das ungeputzt noch heller brenne, als geputzt, und die
+Juengeren unter uns schwuren mit grossem Laerm, das sei wahr, waehrend
+wir AElteren lachten.  Zum Teufel, die wird's doch mit der Baderin
+aufnehmen koennen?
+
+Preising.  Gut denn!
+
+Ernst.  Weiter entbietet ihn zum Turnier, nach Regensburg, denk ich!
+Ja, ja, nach Regensburg!  Ich bin's denen schuldig!  Er soll nicht
+laenger dastehen, wie ein Knabe, dem der eine Vogel davongeflogen ist,
+und der keinen andern fangen kann, auch soll's die Ritterschaft
+gleich wissen, dass Welf und Wittelsbach sich endlich einmal wieder
+kuessen wollen, und das will ich feierlich auf dem Turnier verkuenden!
+Es muss so rasch, als moeglich, zustande gebracht werden, mein Bruder
+soll die Ausschreibungen auf der Stelle erlassen, ich will gleich zu
+ihm, er wird's gern tun, das ist ein Geschaeft fuer ihn!  Wisst Ihr,
+wie's mit seinem Sohne steht?  Ich sah ihn lange nicht, sie
+verstecken ihn vor mir, wie's scheint, als ob sie sich schaemten, ich
+mag kaum nach ihm fragen!
+
+Preising.  Besser, wie ich hoere, etwas besser, seit das alte
+Kraeuterweib ihn pflegt!
+
+Ernst.  Das freut mich, obgleich es wohl nicht viel heisst!  Denn mit
+diesem Knaben spielen alle Gebresten Fangball, ich haette gar nicht
+gedacht, dass es so viele uebel gibt, als er schon gehabt hat, es ist
+ein Elend!  Preising, der arme Adolph wird gewiss keine tolle Streiche
+machen, hoechstens den, dass er ins Kloster geht, und daran tut er am
+Ende sogar recht!
+
+Preising.  Oft werden schwache Kinder doch noch starke Maenner!
+
+Ernst.  Gott geb's, ich wuensch es von Herzen!  Aber--was trieb mein
+Albrecht schon alles, als er vier Jahr' alt war!  Da kam kein Bart
+ungerupft vom Schloss, und kein Fenster blieb ganz, wo er
+herumhantierte.  Freilich, jetzt ist's weit mit ihm gekommen, er hat
+sein Nest beschmutzt, und das haett' ich nie gedacht, ich hielt ihn
+fuer einen bessern Vogel.  Nun, es soll schon wieder rein werden, und
+spaeter kann ich dafuer auch um so mehr von ihm fordern, denn alle zehn
+Gebote zusammen peitschen den Mann nicht so vorwaerts, wie die
+Jugend-Torheiten, die ihm rechts und links ueber die Schultern kucken,
+wenn er den Kopf einmal dreht.  Nur darum, glaub ich, laesst Gott, der
+Herr, sie zu!  (Wendet sich zum Abgehen.)
+
+Preising.  Und wenn--Gnaediger Herr, in einem solchen Fall ward das ja
+gewiss noch niemals schnell gesagt!  Wenn er es mir nicht gleich auf
+den Weg mitgibt: lad ich ihn dann auch zum Turnier?
+
+Ernst.  Dann erst recht!  Dann will ich ihn vor gesamter
+Ritterschaft--Torheit!  Zu Pferd, Preising, zu Pferd!  (Rasch ab.)
+
+
+
+
+Vohburg.
+
+
+
+Siebente Szene
+
+Erkerzimmer.  Albrecht tritt mit Agnes ein.  Der Kastellan folgt.
+
+Albrecht (zu Agnes, die einzutreten zaudert).  Nun?  (Zum Kastellan.)
+Also dies ist das Zimmer?
+
+Kastellan.  Dies ist das Zimmer!
+
+Albrecht.  Ein wahrer Lug ins Land!
+
+Kastellan.  Ja, von hier aus sieht man die Feinde zuerst, aber auch
+die Freunde.  Das sagte die Hochselige, als sie's zum ersten Mal
+betrat und geradeso, wie Ew.  Gnaden jetzt, aufs Fenster zuging!
+
+Albrecht.  Wir haetten frueher kommen sollen, nicht wahr, Alter, gleich
+nach der Ankunft?  Denn ich merk's wohl, dass meine Mutter dich ins
+Vertrauen gezogen hat!
+
+Kastellan.  Ei, ich brauch's nicht zu erfahren, warum das fuenf Tage
+spaeter geschieht, als sie erwartete!  Ich weiss ohne das, was ich dem
+Burgwart und dem Kellermeister zu antworten hab, wenn sie die Koepfe
+noch einmal zusammenstecken sollten, denn Ew.  Gnaden stehen jetzt
+darin, und also auch meine erlauchte Gebieterin Elisabeth von
+Wuerttemberg, nunmehr von Bayern!
+
+Albrecht.  Deine Gebieterin gewiss, wenn auch nicht Elisabeth von
+Wuerttemberg!
+
+Kastellan.  Nicht?  Ich meinte doch!  Anders freilich haett' ich's mir
+vorgestellt!  Wenn Fuerstinnen im Heiligen Roemischen Reich sonst ihren
+Brautzug hielten, meldete es ein Glockenturm dem andern durch
+froehlich Gelaeut, die Fahnen flogen, die Trompeten schmetterten und
+bunte Herolde sprengten hin und her!  Davon hat man diesmal nichts
+gemerkt: nun, Gott segne die Herzogin dieser Lande und die
+rechtmaessige Gemahlin meines Herrn!  (Ab.)
+
+
+
+Achte Szene
+
+Albrecht.  Ein wunderlicher Alter!  Ganz wie ein welkes Blatt unter
+gruenem Laub, das der Wind haengenliess!
+
+Agnes.  Er erinnert mich an meinen Vater!  So wird der einmal
+aussehen!
+
+Albrecht.  Nun sind wir denn hier!  Wie trieb er!  Soviel ich ihm
+auch zugute halte, es verdross mich fast, dies ewige
+Sich-in-den-Weg-Stellen und Klirren mit dem Schluesselbund!
+
+Agnes.  Und ich schaemte mich!  Aber es ruehrte mich doch!  Er kann
+keinen Flecken an seinem Herzog dulden, und er hielt mich fuer deinen
+Flecken!
+
+Albrecht.  Nun, ihr Waende?  Wenn ihr Zungen habt, so braucht sie,
+damit ich endlich erfahre, warum wir gerade hierher zuerst kommen
+sollten!  Ich glaubte, dieser sei eine ueberraschung zugedacht, aber
+ich sehe ja nichts!
+
+Agnes.  Schoen ist es hier!  Dies braune Getaefel ist so blank, dass es
+uns abspiegelt!  Das ist gewiss Regensburger Arbeit!  Und die bunten
+Glasfenster mit den vielen, vielen Bildern darin!
+
+Albrecht.  Ja, das machen sie jetzt am Rhein, seit sie in Koeln den
+Dom bauen!  Lauter Legenden!  Man wird heilig, wenn man durch solche
+Scheiben sieht!  Aber ich kann mir doch nicht denken, dass wir hierher
+gerufen sind, um uns die zu erklaeren!
+
+Agnes.  Und die Aussicht!  Oh!
+
+Albrecht.  Das alles ist jetzt dein!  Aber freu dich nicht zu sehr!
+Du musst auch manches mit in den Kauf nehmen.  Zum Exempel den alten
+kruepplichten Baum da, und dort die Huette ohne Dach!
+
+Agnes.  Mein Albrecht, du bist so froehlich, das ist mein groesstes
+Glueck!
+
+Albrecht.  Oh, ich bin heute ein Maulhaenger gegen das, was ich morgen
+sein werde, und so fort und fort!  Ja, Agnes, so ist's!  Ein
+Entzuecken ist bei mir immer nur der Herold des anderen, groesseren, und
+jetzt erst weiss ich's, warum wir Menschen unsterblich sind.
+
+Agnes.  Nicht mehr!  Ich halt's nicht aus!  Die Brust zerspringt mir!
+(Sie erblickt den Betschemel.)  Da!  Da!  (Sie wirft sich hin und
+betet.)
+
+Albrecht (mit einem Blick nach oben).  Nun segnest Du!  Und ich weiss
+auch, durch wen!
+
+Agnes (steht wieder auf, an dem Betschemel oeffnet sich, wo sie kniete,
+ein geheimes Fach, sie bemerkt es nicht).
+
+Albrecht.  Jetzt ist meine Mutter nicht mehr im Himmel, sondern
+wieder auf Erden und hier bei uns, aber ihre Seligkeit ist gleich
+gross!
+
+Agnes.  Ach, auf mich war sie nicht gefasst!
+
+Albrecht (bemerkt das geheime Fach).  Aber, was ist das?
+
+Agnes.  Perlen und Kleinodien!  Oh, welche Pracht!
+
+Albrecht.  Ihr Schmuck!  Das denk ich wenigstens, denn getragen hat
+sie ihn wohl nur, eh' ich geboren wurde!  Und ein Brief!  (Er nimmt
+den Brief.)  An dasjenige meiner Kinder, das hier zuerst nach mir
+betet!  (Reicht ihn Agnes.)  Also an dich!  Da ist das Geheimnis!
+Sieh! sieh!  Da hatte dieser Gang doch einen Zweck!  Das haette dir
+bei der Trauung praechtig gestanden!  Freilich, wir hatten sie hinter
+uns, eh' wir kamen!--Nun?
+
+Agnes (reicht ihm den Brief).
+
+Albrecht (nachdem er ihn gelesen hat).  Waer' ich's gewesen, so haett'
+ich dich damit schmuecken duerfen, nun sollst du's selbst tun.  Das ist
+auch besser!
+
+Agnes.  Nicht dies, nicht das!
+
+Albrecht.  Und was darunterliegt, ist fuer den, der nicht betete.  Das
+wird nicht so glaenzen und funkeln!  Gute Mutter, du hast vorausgewusst,
+wer das sein wuerde; ich seh dich, wie du den Zeigefinger gegen mich
+erhebst!  (Zu Agnes.)  Aber nun mach doch!  Wie lange soll ich um den
+letzten Tannenbaum, den sie mir aufrichtete, herumhuepfen, eh' ich ihn
+pluendern darf?  Nimm rasch das Deinige weg, dass ich zum Meinigen komm!
+
+Agnes.  Wie sollt' ich!
+
+Albrecht.  Du bist ihr freilich keinen Gehorsam schuldig, aber ich,
+und wahrlich, ich will ihn der Toten am wenigsten weigern.  Du wirst
+mich nicht hindern wollen, ein frommer Sohn zu sein!  Also!  (Er
+nimmt die Perlen und will sie schmuecken.)
+
+Agnes (tritt zurueck).  Nicht doch!  Was bliebe noch fuer eine
+Prinzessin!
+
+Albrecht.  Willst du trennen, was zusammengehoert?  Da gaebst du meinem
+Vater, den du so fuerchtest, ein boeses Beispiel!  Mach's schnell
+wieder gut, dass er sich nicht darauf berufe!  Komm!  Gleiches zu
+Gleichem!  (Er schuettelt die Perlen, dass sie klappern.)  Das heisst
+hier: Hagel zu Schnee!  (Er haengt sie ihr um.)  Nun moegen sie sich
+streiten, wer weisser ist!
+
+Agnes.  Schmeichler!
+
+Albrecht.  Agnes, hat man's dir schon gesagt, dass der rote Wein, wenn
+du ihn trinkst, durch den Alabaster deines Halses hindurchleuchtet,
+als ob man ihn aus einem Kristall in den andern goesse?  Aber, was
+schwatz ich!  (Er nimmt das goldene Diadem.)  Ich habe ja noch ein
+Paar zu vereinigen!  (Er will es ihr aufsetzen.)
+
+Agnes.  Es wuerde mich druecken!
+
+Albrecht.  Du hast recht, dass du dich jetzt noch mehr straeubst, wie
+vorher, denn hier ist die Ebenbuertigkeit noch mehr zweifelhaft!  Dies
+Gold und das (er deutet auf ihre Locken), der Abstand ist zu gross!
+Dies ist der Sonnenstrahl, wie er erst durch die Erde hindurchging
+und an ihre Millionen Gewaechse sein Bestes abgab, dann verdichtete
+sich der grobe Rest zum schweren toten Korn!  Das ist der
+Sonnenstrahl, der die Erde niemals beruehrte, er haette eine
+Wunderblume erzeugt, vor der sich selbst Rosen und Lilien geneigt
+haben wuerden, doch er zog es vor, sich kosend als schimmerndes Netz
+um dein Haupt zu legen!  (Er setzt ihr das Diadem auf.)  Aber nimm's
+nicht so genau, wir finden nichts Bessres.
+
+Agnes.  Nur, um zu sehen, wie's ihr gestanden hat!
+
+Albrecht.  Das Auge ist so edel, dass es nicht geschmueckt werden kann,
+noch diesen Ring an den Finger--er ging lange genug nackt!--noch
+dieses Armband, und (er fuehrt sie ritterlich vor) die Kaiserin ist
+fertig!  Denn, das ahntest du nicht, eine Kaiserin wollt' ich machen,
+und sie steht da, setz dich auf den ersten Thron der Welt, und in
+tausend Jahren wird nicht kommen, die sagen darf: erhebe dich!  Nun
+will ich aber auch mein Teil sehen!  (Er nimmt eine Menge welker
+Blumen usw. aus dem Fach.)  Welke Blumen und Blaetter, die fast
+zerstaeuben, wenn man sie anruehrt?  Was mag sich so ankuendigen?
+Heraus!  (Er erblickt einen Totenkopf und erhebt ihn.)  Ah, du bist's,
+stummer Prediger?  Du redest noch besser, wie Salomo, aber mir sagst
+du nichts Neues; wer, wie ich, auf Schlachtfeldern aufwuchs, der weiss
+es auch ohne dich, dass er sterben muss!  Doch erst will ich leben!  Im
+Himmel gibt's Halbselige, sie blicken nach der Erde zurueck, und
+wissen nicht, warum!  Ich weiss es, sie haben ihren Kelch nicht
+geleert, sie haben nicht geliebt!  Ja, Agnes-
+
+
+
+Neunte Szene
+
+Der Kastellan (tritt ein).
+
+Albrecht (zum Kastellan).  Halt!  Noch kein Wort, und ob die Welt
+unterginge!  Ja, Agnes, wenn ich bei Gott aufhoeren soll, muss ich bei
+dir anfangen, es gibt fuer mich keinen anderen Weg zu ihm!  Geht es
+dir nicht auch so?
+
+Agnes.  Und kaeme jetzt der Tod, ich duerfte nicht mehr sagen: Du
+kommst zu frueh!
+
+Albrecht (presst sie an sich).  All unsre Wollust muendet in Gott, was
+unsre enge Brust nicht fasst, das flutet in die seinige hinueber, er
+ist nur gluecklich, wenn wir selig sind, soll er nicht gluecklich sein?
+(Er kuesst sie.)  Und zuweilen stoesst er die Welle zurueck, dann
+ueberstroemt sie den Menschen, und er ist auf einmal dahin, wandelt im
+Paradiese und spuert keine Veraenderung!  Wenn das jetzt kaeme!
+
+Agnes.  Nicht weiter, nicht weiter!
+
+Albrecht (laesst sie los).  Das war eine Stunde!  Nun komme die zweite!
+--Was gibt's?
+
+Kastellan.  Botschaft von Eurem Herrn Vater!  Ritter Preising!
+
+Albrecht.  Hierher!
+
+(Kastellan ab.)
+
+Agnes (will gehen).
+
+Albrecht.  Nein!  So ist's nicht gemeint, dass ich dich verleugnen
+will!  Bleib!  Wie der dich ansieht, sieht mein Vater dich auch an.
+Da wissen wir gleich, wie's steht!
+
+Agnes.  Lass mich, mein Albrecht!  Es treibt mich fort!  Dies (sie
+deutet auf das Diadem) waere Herausforderung!
+
+Albrecht.  So geh da hinein, da ist ja auch noch ein Gemach, nicht
+wahr?  Dann bist du mit drei Schritten wieder bei mir!
+
+Agnes (ab).
+
+Albrecht.  Kommt nur, ich lasse mich finden!
+
+
+
+Zehnte Szene
+
+Preising tritt ein, von Toerring, Frauenhoven und Nothhafft von
+Wernberg begleitet.
+
+Albrecht.  Was bringt Ihr, Kanzler?
+
+Preising.  Froehliche Botschaft!
+
+Albrecht.  Wirklich?  Da kaeme Freude zur Freude!
+
+Preising.  Eine Botschaft, die mein gnaediger Herr eigentlich dem
+Ritter Haydeck, und nicht mir, haette uebertragen sollen!
+
+Albrecht.  So!  Ich versteh schon!
+
+Preising.  Er musste Euch die Flucht Eurer ersten Braut
+melden-
+
+Albrecht.  Ich habe vergessen, ihn dafuer zu belohnen, es soll geschehen,
+sobald ich ihn wiederseh!
+
+Preising.  Er sollte Euch billig auch das Jawort der zweiten
+ueberbringen!
+
+Albrecht.  Preising, geradeheraus!  Ich versteh mich schlecht aufs
+Raetselloesen, aber gut aufs Nussknacken!  Was ist's?
+
+Preising.  Euer Vater hat um die schoenste Fuerstin Deutschlands fuer
+Euch angehalten-
+
+Albrecht.  Das bedaur' ich sehr!
+
+Preising.  Erich von Braunschweig hat eingewilligt!
+
+Albrecht.  Das bedaur' ich noch mehr!
+
+Preising.  Und ich-
+
+Albrecht.  Ihr sollt mich zum Nicken bringen, wie einen Nuernberger
+Hampelmann, den man von hinten ziehen kann!  Es wird Euch nicht
+gelingen, und das bedaur' ich am meisten, denn Euer Ansehen wird
+darunter leiden!
+
+Preising.  Euer Vater wuerde erstaunt sein, das kann ich Euch
+versichern, wenn Ihr Euch nur einen Augenblick gegen eine Verbindung
+straeuben koenntet, die seit der AEchtung Heinrichs des Loewen nicht
+zustande gebracht werden konnte, sooft es auch versucht wurde, und
+die eine uralte, zuweilen hoechst gefaehrliche Feindschaft fuer ewige
+Zeiten ersticken wird!  Hier nicht mit beiden Haenden zugreifen, heisst
+nicht bloss das Glueck mit Fuessen treten; es heisst auch die endlich
+eingeschlafene Feindschaft zwischen Welf und Wittelsbach wieder
+aufwecken, ja verdoppeln; es heisst den ungerechten Hass in einen
+gerechten verwandeln; es heisst die Rache herausfordern und ihr selbst
+die Waffen reichen!
+
+Albrecht.  Das weiss ich, oh, das weiss ich, mich sollt's wundern,
+wenn's anders waer'!  Man kann die Plaene meines Vaters nie kreuzen,
+ohne zugleich der halben Welt ins Gesicht zu schlagen, mit ihm allein
+hat's noch keiner zu tun gehabt!  Aber so gross die Kunst auch sein
+mag, den Faden so zu spinnen unfehlbar ist sie nicht, und diesmal
+reisst er ab!
+
+Preising.  Und Euer Grund?
+
+Albrecht.  Ihr kennt ihn!
+
+Preising.  Ich hoffe, nein!
+
+Albrecht.  Nicht?  Nun, Ihr braucht ihn nicht weit zu suchen!  Ich
+bin ein Mensch, ich soll dem Weibe, mit dem ich vor den Altar trete,
+so gut, wie ein andrer, Liebe und Treue zuschwoeren, darum muss ich's
+so gut, wie ein andrer, selbst waehlen duerfen!
+
+Preising.  Ihr seid ein Fuerst, Ihr sollt ueber Millionen herrschen,
+die fuer Euch heute ihren Schweiss vergiessen, morgen ihr Blut
+verspritzen und uebermorgen ihr Leben aushauchen muessen: wollt Ihr das
+alles ganz umsonst?  So hat Gott die Welt nicht eingerichtet, dann
+waere sie nimmer rund geworden, einmal muesst Ihr auch ihnen ein Opfer
+bringen, und Ihr werdet nicht der erste Eures ruhmwuerdigen
+Geschlechts sein wollen, der es verweigert!
+
+Albrecht.  Einmal?  Einmal mit jedem Atemzuge, meint Ihr!  Wisst Ihr
+auch, was Ihr verlangt?  Gewiss nicht, denn sonst wuerdet Ihr die Augen
+wenigstens niederschlagen und nicht dastehen, als ob alle zehn Gebote
+mit feurigen Buchstaben auf Eurer Stirn geschrieben staenden.  Was tut
+Ihr, wenn der Tag Euch ein finstres Gesicht zeigt, wenn Euch alles
+misslingt, und Ihr Euch selbst fehlt?  Ihr werft beiseite, was Euch
+quaelt, und eilt zu Eurem Weibe, sie ist vielleicht gerade doppelt von
+Gott gesegnet und kann Euch abgeben, wenn das aber auch einmal nicht
+zutrifft, so koennt Ihr sie ja gar nicht ansehen, ohne aller Eurer
+gluecklichen Stunden zu gedenken, und wem die wieder lebendig werden,
+der hat eine mehr!  Was waer' mein Los?  Koennt' ich auch zu meinem
+Weibe eilen?  Unmoeglich, ich muesste eher eine Wache vor meine Tuer
+stellen, damit die Unselige in ihrer Unschuld nur nicht von selbst
+komme und mich ganz verrueckt mache, denn sie waere ja mein AErgster
+Fluch!  Doch nein, das waere schlecht von mir, das duerft' ich nicht,
+ich muesste ihr entgegengehen und sie in meine Arme schliessen, waehrend
+ich sie lieber von mir schleudern moechte, wie einen ankriechenden
+Kaefer, denn das haett' ich vor Gott gelobt.  Graust Euch?  Wisst Ihr
+jetzt, was Ihr verlangt?  Nicht bloss auf mein Glueck soll ich Verzicht
+leisten, ich soll mein Unglueck liebkosen, ich soll's herzen und
+kuessen, ja ich soll dafuer beten, aber nein, nein, in alle Ewigkeit
+nein!
+
+Preising.  Herzog Ludwig, Euer Vorfahr, nahm eine Gemahlin, die
+keiner erblickte, ohne ihr zu dem Namen, den sie in der heiligen
+Taufe empfangen hatte, unwillkuerlich noch einen zweiten zu geben; es
+war Margaretha von Kaernten, die im Volksmund noch heutzutage die
+Maultasche heisst.  Er war jung, wie Ihr, und man hoert nicht, dass er
+blind gewesen ist, aber sie brachte die Grafschaft Tirol an Bayern
+zurueck, und wenn er sich ueber ihre Schoenheit nicht freuen konnte, so
+wird der Gedanke ihn getroestet haben, dass seine armen Untertanen
+unter seiner Regierung das Salz noch einmal so billig kauften, wie
+zuvor, und ihn mit froehlichen Gesichtern morgens, mittags und abends
+dafuer segneten!
+
+Albrecht.  Wisst Ihr, ob er ihnen nicht jedesmal eine Bitte abschlug,
+wenn er sein Weib gesehen hatte?
+
+Preising.  Ich weiss nur, dass er vier Kinder hinterliess.  Gnaediger
+Herr, ich habe meine Botschaft ausgerichtet und werde Eurem Vater
+melden, dass Ihr zu mir nicht ja gesagt habt.  Wollt Ihr etwas
+hinzufuegen, so tut's, wenn Ihr ihn seht!  Mein Auftrag ist noch nicht
+zu Ende, ich soll Euch noch zu dem Turnier laden, das er in
+Regensburg zu halten gedenkt, und Ihr werdet seinen Unwillen nicht
+dadurch noch erhoehen wollen, dass Ihr ausbleibt!
+
+Albrecht.  Gewiss nicht, ich habe das Fechten nicht verlernt, auch in
+Augsburg nicht, und gebe gern den Beweis!
+
+Preising.  Da muesst Ihr denn noch heute aufsitzen!
+
+Albrecht.  Noch heute?
+
+Preising. UEbermorgen findet's statt!
+
+Albrecht.  Das kommt ja rascher zustande, wie eine Bauern-Schlaegerei!
+Was gibt's denn?  Ist dem Kaiser in seinem Alter eine Prinzessin
+geboren?
+
+Preising.  Wahrscheinlich sollte Eure neue Verlobung der Ritterschaft
+verkuendigt werden, denn Euer Vater haelt Eure Weigerung fuer unmoeglich
+und ist stolz darauf, dass ihm gelang, was seinen Vorfahren drei
+Jahrhunderte hindurch missglueckte.  Nun wird's wohl auf ein blosses
+Lanzenspiel hinauslaufen!
+
+Albrecht.  Gleichviel!  Ich bin in billigen Dingen sein gehorsamer
+Sohn und will um eine Erbsenschote turnieren, wenn er's verlangt!
+
+Preising.  Also, Ihr erscheint, ich hab Euer Wort!
+
+(Ab, von Toerring, Frauenhoven und Nothhafft von Wernberg
+zurueckbegleitet.)
+
+
+
+Elfte Szene
+
+Albrecht.  Da ist's!  Und ich kann nicht sagen, dass mich's verdriesst!
+Ich bin nicht gemacht, mein Glueck zu geniessen, wie ein Knabe die
+Kirschen nascht, die er gestohlen hat!  Und wenn der Sturmwind mir
+die Tarnkappe abreisst, so kann der Augsburger Priester doch gewiss
+nicht sagen, ich selbst haette das Geheimnis verraten!
+
+
+
+Zwoelfte Szene
+
+Agnes (tritt wieder ein, aber ohne die Kleinodien).  Nun, mein
+Albrecht?
+
+Albrecht.  Ja, Agnes, nun werd ich's bald sehen, ob du von deinem
+Vater was gelernt hast, ich werde bloss, um dich auf die Probe zu
+stellen, ein Paar Beulen von Regensburg mitbringen!  Aber, was hast
+du gemacht?  Mein Werk wieder zerstoert?  Nein, wirst du sagen, Gottes
+Werk wiederhergestellt!  Und es ist wahr, ich hatte es nur verdorben,
+wie der Knabe die Lilie, die er mit Nelkenblaettern bestreut!  Du
+tatest wohl, den bunten ueberfluss abzuschuetteln.
+
+Agnes.  Ich habe alles gehoert, alles!  Ich musste!
+
+Albrecht.  Alles, nur meine letzte Antwort nicht!  Fuerchte nichts von
+meinem Ungestuem, ich halte sie zurueck, solange ich kann, auch jetzt
+noch!  Aber im aeussersten Fall: Hier ist sie!  (Er umarmt sie.)  Wir
+sind vereint, nur der Tod kann uns noch trennen, und der ist sein
+eigner Herr!  Auch gibt's auf der ganzen Welt keinen Mann, der sich
+schneller in etwas ergibt, wie mein Vater, wenn er sieht, dass nichts
+mehr zu aendern ist!  Nun in die Ruestkammer!  Nothhafft und Toerring
+nehm ich mit, Frauenhoven bleibt hier zu deinem Schutz!
+
+Agnes.  Es ist nicht Furcht, was mich bewegt!  Den Schwindel hab ich
+ueberwunden!  Aber--Sieh, mein Albrecht, es tut mir weh, wenn ich mir
+denke, dass ganz Augsburg mich fuer etwas anderes, als fuer deine
+Gemahlin haelt; und der Trost, vor Gott rein dazustehen, reicht nicht
+immer aus, kaum, lass mich's bekennen, das Gefuehl, mein Glueck damit zu
+bezahlen.  Doch ich will es gern mein ganzes Leben lang ertragen,
+wenn's nur zwischen dir und deinem Vater Friede bleibt.  Wie
+fuerchterlich war's mir frueher schon immer, wenn sich Freunde und
+Brueder meinetwegen entzweiten, und von wie manchem Tanz blieb ich weg,
+um's nur nicht zu sehen!  Und was war das gegen dies!
+
+Albrecht.  Diesmal ist gar nichts zu besorgen!  Auch ein Fuerstensohn
+darf sagen: ich will die nicht! und wenigstens: ich will noch nicht!
+Aber zusammenhauen will ich sie--Hei! wer mich bisher schon einen
+guten Fechter genannt hat, der soll sich schaemen, und ein jeder soll
+sich's im stillen zuschwoeren, mir nie wieder in den Weg zu treten,
+auch wer selbst nichts abbekommt!
+
+(Beide ab.)
+
+
+
+
+Regensburg.
+
+
+
+Dreizehnte Szene
+
+Turnierplatz.  Die Zuschauer sind auf ihren Tribuenen schon versammelt.
+Der Marschall steht vor den Schranken, ein Buch unterm Arm.  Grosser
+Zug; Fahnen, Trophaeen, Trompeten.
+
+Ernst (tritt auf, von seinen Rittern begleitet.  Unter diesen
+befinden sich Wolfram von Pienzenau, Otto von Bern, Ignaz von
+Seyboltstorff und Hans von Preising.  Preising geht ihm zur Seite.
+Die Ritter stellen sich bis auf Preising rechts vom Marschall auf).
+
+Preising.  Gnaediger Herr, missdeutet's nicht, dass ich noch einmal
+anklopfe, aber die Stunde ist ernst, was Ihr zu tun gedenkt, kann
+vielleicht nicht mehr zurueckgetan werden, und Ihr pflegt ja doch
+sonst meinen geringen Rat nicht zu verschmaehen!
+
+Ernst.  Gegen jedermann kann ich Euch schuetzen, nur nicht gegen
+meinen Nachfolger, darum rat ich mir diesmal allein!
+
+Marschall (ruft).  Wolfram von Pienzenau!  Otto von Bern!
+
+Pienzenau und Bern.  Hier!
+
+Marschall (laesst sie ein).
+
+Preising.  Ich fuerchte zu erraten, was Ihr vorhabt, der Marschall hat
+das Buch gewiss nicht umsonst unterm Arm! ueberlegt's noch, ich bitt
+Euch, und seht in der raschen Antwort, die er Euch vorhin gab, nicht
+den Trotz eines Sohns, sondern die Hartnaeckigkeit eines Verliebten,
+der sein Gefuehl fuer eine Agnes nicht sogleich auf eine Anna
+uebertragen kann!
+
+Ernst.  Ihr werdet augenblicklich aufgerufen werden!
+
+Preising (geht zu den Rittern).
+
+Ernst.  Ein Schnitt ins Fleisch tut not.  Wirkt's nicht gleich, so
+wirkt's spaeter!  Ei, ei, wer haette das gedacht!  Einer Dirne wegen!
+
+Albrecht (tritt mit Nothhafft von Wernberg und Toerring auf).
+
+Ernst (an Albrecht vorbeischreitend).  Noch einmal!  Darf ich der
+Ritterschaft Eure Verlobung mit Anna von Braunschweig ankuendigen
+lassen?
+
+Albrecht.  Ich habe zu viel von Euch im Leibe, um auf eine und
+dieselbe Frage an einem und demselben Morgen zwei Antworten zu geben!
+--Mein Gott, lag ich denn ganz umsonst auf den Knien vor Euch?
+
+Ernst.  Gut!  (Er geht weiter.)  Marschall, ich habe Euch nichts zu
+sagen!  (Er besteigt seine Tribune.)  Nur fort!
+
+Marschall (ruft).  Hans von Preising!  Ignaz von Seyboltstorff!
+
+Preising und Seyboltstorff.  Hier!  (Treten an die Schranken.)
+
+Albrecht.  Preising!  Seyboltstorff!  Zurueck!  Wittelsbach ist da!
+(Tritt an die Schranken.)
+
+Marschall.  Halt!
+
+Albrecht.  Marschall von Pappenheim, aufgeschaut!  Den Blinden, dem
+ich den Star stechen muss, bedien ich mit der Lanze!
+
+Ernst.  Artikel zehn!
+
+Marschall (oeffnet das Buch und liest).  Weiter wurde zu Heilbronn fuer
+ewige Zeiten beschlossen und geordnet. welcher vom Adel geboren und
+herkommen ist und Frauen und Jungfrauen schwaechte-
+
+Albrecht (schlaegt ihm das Buch aus der Hand).  Der darf nicht turnieren!
+Werden hier Krippenreiter zugelassen, die das nicht wissen?
+
+Marschall.  Ihr seid angeklagt, auf Eurem Schloss Vohburg mit einem
+Schwabenmaedchen in Unehren zu leben!
+
+Albrecht.  Mein Klaeger?
+
+Ernst (erhebt sich).
+
+Albrecht.  Herzog von Muenchen-Bayern, lass deine Spaeher peitschen, sie
+haben deine Schwieger verunglimpft!  Die ehr--und tugendsam
+Augsburger Buergertochter, Jungfer Agnes Bernauer, ist meine Gemahlin,
+und niemand, als sie, befindet sich auf Vohburg!  Hier stehen meine
+Zeugen!
+
+Ernst.  Preising!  Das ist ja zum--Wiederjungwerden!
+
+Albrecht.  Da man nun mit seinem angetrauten Weibe nicht in Unehren
+leben kann, so--Schildknapp', zeig dem Mann mit dem Buch da, wie man
+oeffnet!
+
+Schildknapp' (oeffnet rasch).
+
+Albrecht (tritt ein).  Nun, Ihr Herren?  Man pflegt: ich wuensch Euch
+Glueck! zu sagen!
+
+Ernst (greift zum Schwert und will hinunterstuerzen).  Ich komm schon!
+
+Preising (wirft sich ihm entgegen).  Gnaediger Herr, erst muesst Ihr
+mich durchstossen!
+
+Ernst.  Ei, ich will's ja nur als Knuettel brauchen, ich will nur fuer
+die ueberraschung danken!  Doch, Ihr habt recht, es ist auch so gut,
+was erhitzt der Vater sich, der Herzog genuegt.  (Er ruft.)  Edle von
+Bayern, Grafen, Freiherren und Ritter, auch Wilhelm, mein Bruder, hat
+einen Sohn-
+
+Albrecht.  Was soll das?
+
+Ernst.  Wer den Weg zur Schlafkammer seiner ehr--und tugendsamen
+Jungfer--allen Respekt vor ihr, es muss eine gescheite Person sein!
+--durch die Kirche nehmen musste, der nimmt die Benediktion mit und
+die Gnade aller Heiligen obendrein, aber Krone und Herzogsmantel laesst
+er am Altar zurueck!  (Er faehrt fort.)  Dieser Sohn heisst Adolph und
+ihn erklaer ich-
+
+Albrecht.  Bei meiner Mutter, nein!
+
+Hans von Laeubelfing.  Albrecht von Wittelsbach, Ingolstadt steht
+hinter Euch, fuerchtet nicht fuer Euer Recht, Ludwig der Baertige zieht!
+
+Ernst.  Ludwig von Ingolstadt, oder wer hier fuer ihn spricht, das
+Reich steht hinter mir mit Acht und Aberacht, weh dem, der seine
+Ordnung stoert!
+
+Marschall (nebst vielen andern Rittern, mit den Schwertern klirrend).
+Ja, weh dem!
+
+Ernst.  Buerger von Augsburg, Eidam des Vaters, empfangt jetzt Segen
+und Hochzeitsgabe zugleich!  (Faehrt fort.)  Es lebe mein Nachfolger!
+(Er steigt von der Tribune herunter.)  Wer ein guter Bayer ist, stimmt
+mit ein: es lebe Adolph, das Kind!
+
+Marschall (mit vielen andern Rittern um Ernst sich scharend).  Es
+lebe Adolph, das Kind!
+
+Albrecht (zieht und dringt auf den Marschall ein, auch um ihn scharen
+sich einige Ritter).  Otto, mein Ahnherr, fuer Treu!
+
+Ernst (schlaegt ihm mit der Faust aufs Schwert).  Das Turnier ist aus!
+
+Albrecht.  Nein, es beginnt!  Die Ritterschaft verlaesst mich!  Buerger
+und Bauern, heran!
+
+(Er schwingt sein Schwert gegen die Zuschauer.  Grosses Getuemmel.)
+
+
+
+
+Vierter Akt
+
+
+
+
+Muenchen.
+
+
+
+Erste Szene
+
+Das Herzogliche Kabinett.  Preising sitzt an einem Tisch, ein
+versiegeltes Dokument in der Hand.
+
+Preising.  Dies soll ich oeffnen und pruefen!  Und gerade heut, an
+diesem Tage des Jammers!  (Er besieht das Dokument.)  Keine Aufschrift,
+bis auf ein Kreuz!  Aber sieben Siegel von seiner eignen Hand!  Dazu
+lag's, dreifach verschlossen, in einer ehernen Truhe!  Der Inhalt muss
+ernst und wichtig sein!  Auch neu ist es nicht!  Das beweist der
+Staub, der sich mir an die Finger setzt!  (Er faengt an, die Siegel zu
+erbrechen.)  Offenbar ein Geheimnis, das er lange vor mir verbarg!
+Mir wird fast beklommen!
+
+
+
+Zweite Szene
+
+Stachus (tritt ein).  Ein Bauer ist da, mit einer ungeheuer grossen
+AEhre, die er dem Herzog zeigen will!
+
+Preising.  Nur heute nicht!  Er wird vom Sterbebett keine Augen dafuer
+mitbringen!
+
+Stachus.  Das hab ich ihm schon gesagt!  Aber er laesst sich nicht
+bedeuten, und Ihr wisst's ja, dass wir mit den gemeinen Leuten nicht
+unsanft verfahren duerfen!
+
+Preising.  So lass ihn stehen, bis er von selbst geht!  Hoert man denn
+nichts von dem armen Prinzen?  Wird's nicht doch ein wenig besser?
+Bei Gott ist ja kein Ding unmoeglich!
+
+Stachus.  Besser!  Vor einer halben Stunde ward er versehen!  Herr
+Kanzler, die Augsburger Hexe passt schon auf, und der Teufel laesst sie
+nicht im Stich, wie sollt's besser werden!
+
+Preising.  Was redst du da wieder, Stachus!
+
+Stachus.  Was sie alle reden!  In der Burg, auf der Strasse, an der
+Schranne, im Klosterhof, wo man auch hinkommt, alle, alle!  Ein
+hochwuerdiger Pater Franziskaner hat diese Bernauerin schon von der
+Kanzel herab verflucht, er hat gesagt, sie sei wert, bei lebendigem
+Leibe verbrannt zu werden, da wird's doch wohl wahr sein!  Und wie
+sollt's auch nicht!  Erst stirbt der Vater, der gute, gute Herzog
+Wilhelm; dies Wams hab ich von ihm!  Dann folgt seine Gemahlin!
+Heute rot, morgen tot; wir mussten sie beweinen, eh' sie ihn noch
+beweinen konnte.  Nun der Prinz, der freundliche kleine Adolph!  Hoert
+Ihr?  Das Sterbegloecklein!  Es ist aus!  Aus!  (Er ballt die Haende,
+wie zum Fluchen.)  Und ich sollte nicht!?--(Er sinkt auf die Knie und
+betet.)
+
+Preising (sinkt gleichfalls auf die Knie).
+
+Stachus (aufstehend).  Selbst in Brand stecken moecht' ich den
+Scheiterhaufen!  Die faende so viele Henker, als es treue Bayern gibt.
+Nun geht's an den Herzog, den regierenden Herrn, gebt nur acht!  (Ab.)
+
+
+
+Dritte Szene
+
+Preising (der sich zugleich mit Stachus erhebt).  Ja, es ist aus!
+Das Gloecklein verstummt, das Kind tat seinen letzten Atemzug, und
+Ernst hat keinen Erben mehr, da er seinen Sohn verstiess.  Dies ist
+eine schwere Stunde fuers Land!  Gott schaue gnaedig auf uns herab!
+(Er ergreift das Dokument wieder.)  Nun wird er wohl gleich hiersein!
+Die ganze Nacht war er drueben!  (Er nimmt es aus dem Umschlag und
+entfaltet's.)  Was ist das?  (Er liest.)  "Rechtlicher Beweis,
+geschoepft aus den Ordnungen des Reichs und anderen lauteren Quellen,
+dass die Agnes Bernauer oder Pernauer aus Augsburg wegen
+verbrecherischer Verleitung des jungen Herzogs Albrecht zu
+unrechtmaessiger Ehe, ja sogar, falls sich nichts Weiteres erhaerten
+liesse, wegen blosser Eingebung einer solchen im aeussersten Falle gar
+wohl, zur Abwendung schweren Unheils, auf welche Weise es immer sei,
+vom Leben zum Tode gebracht werden duerfe!" (Er setzt ab.)  Oh, nun
+begreif ich alles!  Dieser Tote wird wieder toeten, dieser Knabe, der
+nicht einmal seine Nuernberger Klapperbuechse mehr schuetteln kann, wird
+das Maedchen nachholen!  Schrecklich!  (Er sieht wieder hinein.)  Des
+jungen Herzogs!  Er ist fuenf Jahre aelter, als sie, und hat vielleicht
+schon seine erste Schlacht gewonnen, bevor sie noch ihre letzte Puppe
+in den Winkel warf! aermste, welch ein Schicksal ereilt dich!  (Er
+blaettert um.)  Wer hat sich denn unterschrieben?  Adlzreiter!
+Kraitmayr!  Emeran Nusperger zu Kalmperg!  Grosse Juristen, wuerdig, zu
+Justinians Fuessen zu sitzen und die Welt zu richten, wer wagte ihnen
+zu widersprechen!  Sie ist verloren!  (Er sieht wieder hinein.)  Und
+gleich nach dem Regensburger Turnier abgefasst!  Ja, da trafen sie
+alle drei hier in Muenchen zusammen, ich hielt's fuer Zufall, nun seh
+ich wohl, dass sie gerufen waren!  Das sind schon dritthalb Jahre!
+Wie wenig mag sie's noch erwarten!  (Er blaettert noch einmal um.)
+Unten das foermliche Todesurteil, dem nur noch der Name des Herzogs
+fehlt!  Der wird nun wohl bald hinzukommen!  Mich graust!  Manch
+aehnliches Blatt hielt ich schon in der Hand, aber da ging dem
+strengen Spruch jedesmal eine Reihe schnoeder Gewalttaten voran, man
+las viel von Raub, Mord, Brand und Friedensbruch, ehe man an die
+Strafe kam.  Hier koennte hoechstens stehen: sie trug keinen Schleier
+und schnitt sich die Haare nicht ab!  Ich weiss jetzt ja recht gut,
+wie's zugegangen ist!  Und dennoch--(Er liest wieder.)  Durchs Beil,
+durchs Wasser, ja durch einen Schuss aus dem Busch--(Er setzt ab.)
+Gibt's denn gar kein anderes Mittel mehr?
+
+
+
+Vierte Szene
+
+Ernst (tritt ein).  Ich liess Euch warten, Preising!  Aber ich musste
+selbst warten!
+
+Preising.  Gnaediger Herr!
+
+Ernst.  Lasst, lasst!  Die Erde kann schon mit gebrochenen Augen
+gepflastert werden!  Es kam ein Paar hinzu!  Habt Ihr gelesen!
+
+Preising.  Ich wollte just, da hoert' ich das Gloecklein!
+
+Ernst.  So lest jetzt!  (Er wendet sich.)  Es hat mich angegriffen!
+Wie schwer stirbt ein Kind!  Zwoelf Stunden Todeskampf fuer ein so
+kurzes Leben!  Mein Gott!  Nun, es ist vorbei!  (Er macht ein paar
+Schritte.)  Die grosse Glocke!  Endlich!  Mir fehlte noch was!  Die
+verkuendigt's der Stadt!  Nun geht's von Ort zu Ort, von Haus zu Haus,
+von Mund zu Mund.  Ja, betet, betet, betet!  Wir koennen's brauchen!
+(Wendet sich wieder zu Preising.)  Nun?
+
+Preising (legt das Dokument auf den Tisch).  Was soll ich noch sagen!
+
+Ernst.  Was Ihr koennt!  Prueft Punkt fuer Punkt, ich steh Euch Rede,
+diesmal, wie allemal!  Habt Ihr etwas gegen die Maenner einzuwenden,
+die das Gutachten abgaben und den Spruch faellten?
+
+Preising.  Gegen die Maenner!  Wenn der Schwabenspiegel noch nicht
+zusammengestellt waere, diesen dreien wuerde ich an Kaisers Statt den
+Auftrag geben, es zu tun!
+
+Ernst.  Sind sie bestechlich?  Trifft einen unter ihnen der Verdacht
+der hohlen Hand?
+
+Preising.  Gewiss nicht!  Wenn aber auch: Herzog Ernst hat keinem
+etwas hineingedrueckt!
+
+Ernst.  Ihr erweist mir nur Gerechtigkeit!  Nicht einmal den
+Schweisspfenning, der ihnen gebuehrt haette, und das ist die einzige
+Schuld, die ich nie bezahlen will!
+
+Preising.  Ich schwoere fuer Euch!  Aber auch fuer sie!
+
+Ernst.  Nun, solche Maenner, so beschaffen, legten vor dritthalb
+Jahren nach gewissenhaftester Erwaegung des Falls dies Blatt bei mir
+nieder, und erst jetzt zieh ich's hervor.  Kann man mich der
+UEbereilung zeihen?
+
+Preising.  Nicht Euer Feind!
+
+Ernst.  Wenn ich's vollstrecken lasse: kann man behaupten, es sei
+nicht der Herzog, der seine Pflicht erfuellen, sondern der Ritter, der
+einen Flecken abwaschen, oder der Vater, der sich raechen will?
+
+Preising.  Auch das nicht!
+
+Ernst (ergreift die Feder).  Wohlan denn!
+
+Preising.  Gnaediger Herr, haltet noch ein!
+
+Ernst.  Ja?  Gut! (legt die Feder nieder) Ich bin kein Tyrann, und
+denke keiner zu werden.  Aber man soll von mir auch nicht sagen: er
+trug das Schwert umsonst!  Wer's unnuetz zieht, dem wird's aus der
+Hand genommen, aber wer's nicht braucht, wenn's Zeit ist, der ruft
+alle zehn Plagen AEgyptens auf sein Volk herab, und die treffen dann
+Gerechte und Ungerechte zugleich, denn unser Herrgott jaetet nicht,
+wenn er selbst strafen muss, er maeht nur!  Das erwaegt und nun sprecht!
+(Er setzt sich.)
+
+Preising.  Ich kann dies Blatt nicht widerlegen!  Es ist wahr: wenn
+die Erbfolge gestoert wird oder auch nur zweifelhaft bleibt, so bricht
+frueher oder spaeter der Buergerkrieg mit allen seinen Schrecken herein,
+und niemand weiss, wann er endet!
+
+Ernst.  Er bricht herein, wenn sie Kinder bekommen, er bricht herein,
+wenn sie keine bekommen!  In dem einen Fall wollen die sich behaupten,
+in dem andern koennen Ingolstadt und Landshut sich nicht vereinigen,
+weil jedes den Loewenteil verlangt!  Ja, es ist die Frage, ob die auch
+nur bis zu seinem Tode ruhig bleiben!  Denn, wenn sie jetzt mit ihm
+liebaeugeln, so geschieht's, um mich zu aergern!
+
+Preising.  Aber es ist doch auch entsetzlich, dass sie sterben soll,
+bloss weil sie schoen und sittsam war!
+
+Ernst.  Das ist es auch!  Ja!  Darum stellt' ich's Gott anheim.  Er
+hat gesprochen.  Ich warf mein eignes Junges aus dem Nest und legte
+ein fremdes hinein.  Es ist tot!
+
+Preising.  Und gaebe es wirklich keinen anderen Ausweg?  Gar keinen?
+
+Ernst.  Ihr greift mich hart an, Ihr meint, ich koennte noch mehr tun!
+Und wahr ist's: in den Adern Ludwigs von Ingolstadt und Heinrichs
+von Landshut fliesst das Blut des Geschlechts ebenso rein, wie in
+meinem eignen!
+
+Preising.  Daran hab ich noch nicht gedacht!
+
+Ernst.  Aber ich!  Zwar waer's so arg, dass wohl auch ein Heiliger
+fragen wuerde: Herr, warum das mir?  Doch, wenn's nun waer'?  Der
+letzte Hohenstaufe starb durch Henkers Hand, mit Gottes dunklem
+Ratschluss kann viel bestehen, was der Mensch nicht fasst.  Aber dies
+kann Gottes Ratschluss nicht sein, denn es haelfe nichts, und das ist
+mein Trost!  Spraeche ich zu Heinrich: Komm, Fuchs, du hast mir mein
+ganzes Leben lang Fallstricke gelegt und Gruben gegraben, nimm mein
+Herzogtum zum Lohn! so fuehre Ludwig dazwischen.  Spraeche ich zu
+Ludwig: Ich bin dir noch den Dank fuer so manchen Schlag schuldig, der
+von hinten kam, hier ist er! so griffe Heinrich mit zu, und einer
+koennt's doch nur sein!  Oder ist's nicht so?
+
+Preising.  Gewiss!
+
+Ernst.  Es bliebe also immer dasselbe, alles ginge drunter und drueber,
+und die Tausende, die im Vertrauen auf mich ins Land kamen und meine
+Maerkte zu Staedten erhoben, meine Staedte so weit emporbrachten, dass
+selbst die stolze Hansa ihnen nicht mehr ungestraft den Ruecken kehren
+darf, wuerden mich und mein Andenken verfluchen!
+
+Preising.  Ich meinte nicht das!  Lasst sie entfuehren und dann
+verschwinden!  Das geht jetzt leichter, wie sonst, er laesst sie nicht
+mehr so aengstlich bewachen.
+
+Ernst.  Was waer' damit gewonnen?  Er wuerde sie suchen bis an seinen
+Tod!  Ihr wart ein schlechter Prophet in Regensburg!
+
+Preising.  Man breitet aus, dass sie gestorben ist.  Er fand den
+Priester, der ihn mit ihr verband: kann Euch der Priester fehlen, der
+einen Totenschein ausstellt?
+
+Ernst.  Und ich sollte ihm das zweite Weib geben, solange das erste
+noch lebte?  Nein, Preising, das Sakrament ist mir heilig, er soll
+nicht am Tage des Zorns wider mich zeugen und sagen: Herr, wenn ich
+mich mit Greueln befleckte, so wusste ich nichts davon.  Hier hilft
+kein Kloster, nur der Tod!
+
+Preising.  Doch auch wohl der Papst, und wenn der sich weigert, der
+Kaiser!  Friedrich Barbarossa schied sich selbst, Ludwig der Bayer
+schied seinen Sohn!
+
+Ernst.  Wie soll man scheiden, wenn keins von beiden will?  Preising,
+ich hatte dritthalb Jahre Zeit, und das Kind, fuer das jetzt die
+Glocken gehen, war oft genug krank!  (Er greift wieder zur Feder.)
+Nein, Gott will es so und nicht anders!  Und gerade jetzt geht es
+leicht.  Er reitet heut oder morgen nach Ingolstadt zum Turnier hinab.
+Dort soll er, ich moechte sagen, wieder ehrlich gesprochen werden,
+und dies wird gluecken, denn Ludwig hat alles zusammengerufen, was mir
+feind ist, er denkt: je weiter der Riss zwischen uns beiden, je besser
+fuer ihn!  Nun, waehrend sie die Fahne ueber ihn schwenken, will ich
+dafuer sorgen, dass sie sich hintendrein nicht zu schaemen brauchen.
+Nichts hat mich so verdrossen, als das Gepraenge, mit dem er sie
+gleich nach dem Regensburger Tag, einer Herzogin gleich, von Vohburg
+nach Straubing fuehrte.  Jetzt ist das gut!  Emeran Nusperger zu
+Kalmperg ist Richter in Straubing, und Pappenheim kann mit hundert
+Reitern in vierundzwanzig Stunden dort sein!
+
+Preising.  Und nachher?  Gnaediger Herr, Ihr habt recht, ich war in
+Regensburg ein schlechter Prophet!  Wird er's tragen?  Wird er nicht
+rasen und Hand an sich legen oder sich offen wider Euch empoeren?
+
+Ernst.  Das eine vielleicht, das andre gewiss, ich tu, was ich muss,
+der Ausgang ist Gottes.  Ich setz ihn daran, wie Abraham den Isaak,
+geht er in der ersten Verzweiflung unter, und es ist sehr moeglich,
+dass er's tut, so lasse ich ihn begraben, wie sie, tritt er mir im
+Felde entgegen, so werf ich ihn oder halte ihn auf, bis der Kaiser
+kommt.  Dem meld ich's, noch eh' es geschieht, und er wird nicht
+saeumen, denn wie ich Ordnung im Hause will, so will er Ordnung im
+Reich.  Es ist ein Unglueck fuer sie und kein Glueck fuer mich, aber im
+Namen der Witwen und Waisen, die der Krieg machen wuerde, im Namen der
+Staedte, die er in Asche legte, der Doerfer, die er zerstoerte: Agnes
+Bernauer, fahr hin!  (Er unterschreibt und geht, dann wendet er sich
+und winkt.)  Kanzler!
+
+(Ab, Preising folgt mit dem Blatt.)
+
+
+
+
+Straubing.
+
+
+
+Fuenfte Szene
+
+Burghof und daranstossender Garten.  Toerring, Frauenhoven und
+Nothhafft von Wernberg, alle geruestet, an einem steinernen Tisch, auf
+dem Wein steht.  Der Kastellan geht vorueber.
+
+Nothhafft von Wernberg.  Nun, Alter, schon wieder in die Kapelle?
+(Er erhebt seinen Becher.)  Komm, versuch einmal, damit du siehst, dass
+die Frommen noch immer nicht umsonst beten!
+
+Kastellan.  Ich stoss dich um, sagte der Ritter zum Becher, und tat's,
+siebenmal hintereinander.  Aber der Becher stiess ihn wieder um, und
+da fiel er dem Teufel in die Arme, der schon laengst hinter ihm stand!
+Huetet Euch und spottet nicht!  (Ab.)
+
+
+
+Sechste Szene
+
+Frauenhoven.  Wo bleibt der Herzog?  Die Pferde werden ungeduldig!
+
+Toerring.  Er wird die Totengruft besehen, die sie sich bauen liess.
+Sie ist gestern oder heut fertig geworden.  Ich sah sie beide zu den
+Karmelitern hinuebergehen.
+
+Nothhafft von Wernberg.  Doch ein seltsamer Gedanke fuer ein junges
+Weib!  Eine Totengruft!
+
+Toerring.  Nun, im Anfang gerade so seltsam nicht!  Da mag ihr
+beklommen genug gewesen sein, und mit Recht.  Jetzt freilich sieht's
+anders aus!  Und doch kann man noch nicht wissen, wie's kommt!  Das
+schwache Kind in Muenchen ist nicht stark dadurch geworden, dass der
+alte Herzog ihm die Krone aufsetzte.  Ja, er hat's vielleicht nur
+getan, weil er sich darauf verliess, dass sie schon von selbst wieder
+herunterfallen wuerde!
+
+Frauenhoven.  Da irrt ihr!  Wie oft hat er Albrecht durch seinen
+Bruder die foermliche Entsagung abzudraengen gesucht!
+
+Toerring.  Das war immer nur ein Stich, eine verkappte Anfrage, ob er
+ihrer noch nicht satt sei!  Wenn Ernst keinen Hintergedanken hatte,
+warum stellte er sich zwischen ihn und den Kaiser, als dieser wegen
+der Regensburger Haendel Rechenschaft forderte?  Der alte Sigmund
+meinte es sehr ernsthaft, das Podagra hat einen wackern Reichsvogt
+aus ihm gemacht, und seine Kommissarien, wir duerfen's uns wohl
+bekennen, haetten nicht einmal Brillen aufzusetzen gebraucht, um einen
+offenen Aufruhr zu entdecken.  Warum kehrten sie so ploetzlich in
+Muenchen um?
+
+Frauenhoven.  Ihr seht immer schwarz!
+
+Nothhafft von Wernberg.  Sie kommen!  Steigen wir zu Pferde, dass wir
+den Abschied abkuerzen!  Aber vorher--(Er ergreift den Becher.)
+
+Toerring.  Auf guten Ausgang!
+
+(Sie stossen an und geben ab.)
+
+
+
+Siebente Szene
+
+Albrecht und Agnes treten auf.  Albrecht ist ebenfalls geruestet.
+
+Agnes.  Also, die Ampel, die noch fehlt, bringst du mir mit, nicht
+wahr?  Eine eherne, mit einer langen Kette, dass sie hoch vom Gewoelb
+niederschweben kann.
+
+Albrecht.  Lieber etwas andres, ich gesteh's dir offen.  Doch ich
+hab's versprochen, und ich tu's!
+
+Agnes.  Zuernst du mir?
+
+Albrecht.  Wie koennt' ich!  Aber es aengstigt mich, dass dir dies so am
+Herzen liegt!  Hast du eine boese Ahnung?  Ich wuesste zwar nicht, woher
+die dir jetzt noch kommen sollte, und dennoch muss es so sein!
+
+Agnes.  Gewiss nicht!  Ei, da wuerd' ich von meinem Sarg reden, von den
+Fackeln, dem Glockengelaeut und allem, was ich mir sonst noch wuenschte!
+Und wenn ich fuerchtete, dir weh zu tun, wuerd' ich sagen: Denke dir,
+mir hat getraeumt, ich wuerde begraben, und darueber musst du dich freuen,
+denn es bedeutet langes Leben, aber das Leichenbegaengnis war so
+schoen, dass ich's dereinst geradeso und nicht anders haben moechte.
+Und dann wuerde ich's dir beschreiben!
+
+Albrecht.  So will ich dir die Ampel nach dreissig Jahren schenken!
+
+Agnes.  Wenn du nicht anders willst!  Angezuendet soll sie ja noch
+nicht werden!  Aber, mein Albrecht, du kennst uns nicht, du weisst
+nicht, wie wir sind!  Ein buergerliches Maedchen macht sich das
+Totenhemd gleich nach dem Hochzeitkleid, und sie tut wohl daran, denn
+sie kann nicht wissen, wie sie's sonst in ihrem Alter bekommt!  Nun,
+das liegt mir in der Art, und so lange bin ich noch nicht die
+Gemahlin eines Herzogs, dass sich schon alles an mir veraendert haette!
+Aber, du siehst, die Demut ist schon entwichen, denn ich habe nicht,
+wie meine Gespielinnen, die eigenen Finger geplagt und mir das
+Sterbegewand genaeht, ich habe den Maurer und den Zimmermann gequaelt
+und mir eine Totenkapelle erbaut!  Nun steht sie, und es ist mir eine
+Freude, dass ich die Staette, wo ich meinen laengsten Schlaf halten soll,
+jetzt schon kenne, ja dass ich sie betreten und dort im voraus fuer
+mich beten kann!  Darum moecht' ich auch die Ampel gleich aufhaengen,
+sonst waer' mir da in der letzten Stunde ja doch noch etwas fremd!
+
+Albrecht.  Wenn es nur das ist!
+
+Agnes.  Was sonst?  Ich seh schon bei Tage einmal nach meinem Bett,
+weiter nichts!  Ei, merkst du denn noch etwas von jener Angst und
+Beklommenheit an mir, die mich ergriff, als du so ungestuem von
+Regensburg zurueckkehrtest und mich hierher fuehrtest?  Damals zitterte
+ich fuer mich und dich!  Noch hatte ich mich an Vohburg nicht gewoehnt,
+noch lief ich, wie ein Kind, von Gemach zu Gemach und konnte keins
+finden, das mir eng genug war, und schon musst' ich das kleine Schloss
+mit diesem grossen vertauschen, neben dem es sich ausnahm, wie mein
+armes Vaterhaus sich neben ihm ausgenommen hatte!  Ach, die Musik
+unterwegs, das wilde Lebehoch der Bauern, die sich mit ihren Sensen
+und Pflugeisen um uns zusammenrotteten, die Blumen, die man uns
+streute, alles entsetzte mich.  Du selbst kamst mir ganz fremd vor,
+weil du's littest und dich darueber freutest; ich erschrak zu Tode,
+als du hier sogar die Glocken laeuten lassen wolltest!  Aber das ist
+vorbei, laengst vorbei!  Du hoerst ja, ich selbst nenne Vohburg jetzt
+klein, ich wundere mich gar nicht mehr, wenn sich die Armen und
+Bittenden des Morgens um mich draengen, ich kann fragen, wie eine
+geborne Herzogin, ich kann den Kopf schuetteln und fast abschlagen,
+ich sollte mich schaemen!
+
+Albrecht.  So will ich dich!
+
+Agnes.  Nur in meinen Traeumen geht's anders her, sonst wuerd' ich
+gewiss zu stolz!  Da kehrt die alte Zeit wieder, wo ich die Brotkrumen
+sorgfaeltig auflesen musste, die zu Boden fielen, und wo mein
+Geburtstagsgeschenk meistens darin bestand, dass ich nicht gescholten
+wurde, wenn ich etwas tat, was nicht ganz recht war.  Noch in der
+letzten Nacht, du mit deiner immer offnen Hand wirst lachen, bat ich
+meinen Vater gluehend und stotternd um irgendeine Kleinigkeit, und er
+sagte, was er gewoehnlich zu sagen pflegte, wenn er eine Bitte nicht
+zweimal hoeren wollte: gut, es sei, aber dann kann ich ein halbes Jahr
+lang keinen Tropfen Wein mehr trinken!  Ich war noch recht unwillig
+auf ihn, als ich erwachte, aber nun--Ich hab ihn doch wenigstens
+einmal wiedergesehen!
+
+Albrecht.  Du wirst ihn--(Er unterbricht sich.)  Da hab ich dich um
+die ueberraschung gebracht!
+
+Agnes.  Nein, mein Albrecht!  Ich hab's recht gut gemerkt, aber wenn
+er kommen wollte, waer' er laengst dagewesen!  Ich kann mir auch denken,
+was ihn abhaelt, und du musst ihn darum ehren!
+
+Albrecht.  Ich glaube doch, er wird diesmal nachgeben!  Sonst gehen
+wir im Winter nach Augsburg zum Mummenschanz.
+
+
+
+Achte Szene
+
+Toerring (tritt ein).  Verzeiht!
+
+Albrecht.  Ich bleib Euch zu lange!
+
+Toerring.  Wenn Ihr ueberhaupt noch fort wollt-
+
+Albrecht.  Wenn ich ueberhaupt noch fort will?  Ei, ich werde die Ritter
+und Herren, die Herzog Ludwig so muehsam zusammenbrachte, nun doch nicht
+zum Narren halten?
+
+Toerring.  Hoert Ihr die Domglocke nicht?
+
+Albrecht.  Laengst, aber, was kuemmert sie mich?
+
+Toerring.  Mehr, als Ihr denkt: Euer Vetter Adolph ist tot!
+
+Albrecht.  Tot?
+
+Toerring.  Eben trifft die Trauerbotschaft aus Muenchen ein!
+
+Albrecht.  Friede mit ihm!  Er lebte sich selbst nur zur Last und
+keinem zur Freude!
+
+Agnes.  Gott im Himmel!  Das ist nun in sechs Monaten der dritte!
+
+Toerring.  Ja, ja, edle Frau, Ihr versteht's!
+
+Agnes.  So bin ich wieder schuld?  O freilich! freilich!  Wer sonst
+wohl!
+
+Albrecht.  Gott weiss, dass ich mich nicht freue!  Wie sollt' ich auch?
+Fuer mich war er nie da!  Aber weinen kann ich ebensowenig!  Ich denk
+nur an eins!  Nun kann mein Vater mit Ehren zurueck!
+
+Toerring.  Ich darf absatteln lassen?
+
+Albrecht.  Was faellt Euch ein?  Zwar, ich moechte nicht, dass jetzt aus
+dem Turnier noch etwas wuerde.  Aber ich bin doch wohl der letzte, der
+ausbleiben darf!  Fort muss ich, und das gleich, doch gewiss werd ich
+nun viel frueher wieder hiersein, als ich dachte!  Agnes, jetzt--(Er
+sagt ihr etwas ins Ohr, dann haelt er seine Hand auf ihre Wange.)  Au,
+ich brenne mich!
+
+Agnes.  Verzeih dir's Gott, dass dir das in den Sinn kommt!
+
+Albrecht.  Amen!  Ich sag's mit!  Aber es wird sich zeigen!  Ich
+hatte immer das Gefuehl, mein letzter Wunsch koenne nicht eher gekroent
+werden.  Ei, unser Sohn musste doch auch einen Grossvater haben!  Und
+nun--(Er umarmt sie.)  Siehst du, dass du mir nicht aufrichtig zuernst?
+Du haeltst mich fest!  Oh, ich weiss es ja laengst, dass du erst dann an
+Gottes Segen glauben wirst!  Darin bist du aberglaeubisch.  Aber aendre
+dich ja nicht, ich lieb auch das an dir!  (Er kuesst sie.)  Mein Leben,
+auf Wiedersehen!  (Er laesst sie los und entfernt sich ein paar
+Schritte von ihr.)  Seht Ihr, Toerring, dass man von seinem Leben
+scheiden kann, und darum doch nicht gleich zu sterben braucht?  Also!
+Werdet kein Hagestolz!  Aber freilich, man muss das Beste erst
+abkuessen!  (Er umarmt und kuesst sie noch einmal.)  So!  Nun bin ich in
+Ingolstadt und du in Straubing!  Siehst du mich noch?  Ja?  Ich dich
+nicht mehr!  (Ab.)
+
+Toerring (folgt).
+
+
+
+Neunte Szene
+
+Agnes (eilt in den Garten).  Da kann ich ihn zu Pferd steigen sehen!
+(Sie kehrt wieder um.)  Ja, wenn er selbst mich in die Hoehe hoebe und
+ueber die Mauer kucken liesse, wie damals, als die schwarzbraunen
+aegypter mit Zimbeln und Schellen vorueberzogen.  Aber hoeren muss ich
+ihn koennen!  (Sie eilt wieder fort.)  Still, still mit euren Trompeten!
+Horch!  Das ist er!  "Ihr seid brav, Toerring!" Gewiss, aber warum
+sagst du ihm das gerade jetzt?  Ach, da geht's schon fort!  Leb wohl,
+mein--Halt!  Der Trab stockt!  Es ist doch nichts geschehen?  Da
+redet einer!  Schwach, undeutlich--schweig du!  Nun noch einmal er!
+"Fuehrt ihn gleich zu ihr!" Zu mir?  Wen denn?  "Es wird ihr lieb sein!"
+Mir lieb?  Nein, Albrecht, da kennst du mich nicht!  Ich wollte, es
+wuerde augenblicklich Nacht und erst in dreimal vierundzwanzig Stunden
+wieder Tag!  Oder waer's mein Vater?  (Sie jauchzt auf.)  Mein Vater!
+Gewiss nicht!  Ach nein! jetzt sprengen sie weiter.  Hui!  Recht, ihr
+Rosse, holt aus!  Um so eher seid ihr wieder mit ihm da.  (Sie horcht
+auf.)  Ich hoere nichts mehr.  (Sie horcht wieder.)  Doch!  (Sie pflueckt
+waehrenddem gedankenlos eine Blume.)  Was soll's noch!  (Sie laesst die
+Blume fallen.)  Hab ich da was gepflueckt?  Das tut mir leid!  Es ist
+keine Zeit, Blumen vor die Brust zu stecken!  (Sie wandelt langsam
+wieder herauf.)  Nun ist's denn so gekommen, wie sie alle vorhersagten!
+Tot!  Ob das uns wirklich was Gutes bedeutet?  Was tu ich jetzt?
+Zieh ich mich schwarz an?  Da bin ich wieder hochmuetig und rechne
+mich mit zur Familie, wie dieser unheimliche Mensch mit den kalten
+Augen, der Richter, gespoettelt haben soll.  Unterlass ich's?  Da freu
+ich mich ueber das Unglueck!  Ich folg meinem Herzen und das sagt:
+traure mit den Traurenden!  Lacht nicht, Herr Emeran!  Man ist
+manchem Dank schuldig, ohne dass man's weiss!  Es ist gut fuer Euch, dass
+dies Herz so weich ist, wenn Ihr es auch nicht ahnt!
+
+
+
+Zehnte Szene
+
+Toerring (tritt auf).
+
+Agnes.  Ihr noch hier?
+
+Toerring.  Ich bleibe, edle Frau!  Es ist einer aus Augsburg da, ich
+darf ihn wohl schicken?
+
+Agnes.  Aus Augsburg?
+
+Toerring (geht ab, gleich darauf erscheint Theobald).
+
+Agnes (ruft ihm entgegen).  Theobald!
+
+Theobald.  Agnes--Frau Herzogin, wollt' ich sagen--Nicht?  So ist's
+recht?
+
+Agnes.  Lasst das!  Kommt mein Vater auch?  Doch, was frag ich!  Wie
+koenntet Ihr Euch alle beide zugleich entfernen!
+
+Theobald.  Nun, das--Aber Ihr wisst, wie er ist!  Er meint, Ihr
+solltet Gott danken, wenn Euch der Vater endlich vergeben und
+vergessen sei, und ihm keine Boten weiter senden, es helfe doch
+nichts, denn er seinerseits kenne seine Schuldigkeit und werde den
+alten Bartkratzer hier nicht in Erinnerung bringen!  Es freue ihn
+zwar von Herzen--und das tut's auch, ich weiss es, darum kehrt Euch
+nicht an ihn--dass Ihr noch an ihn daechtet, und dass auch Euer Herr
+sich seiner nicht schaeme, aber er verstehe das besser, und Ihr
+moechtet aufhoeren, ihn zu quaelen!
+
+Agnes.  Und das ist alles, was Ihr mir von ihm melden sollt?  Nur, um
+mir das zu sagen, habt Ihr die weite Reise gemacht?
+
+Theobald.  Nun, das gerade nicht!  Ich hatte wohl auch noch einen
+anderen Grund!
+
+Agnes.  Und der--muss er mir Geheimnis bleiben?
+
+Theobald.  Ach, warum auch!  Wir hoeren nun seit Jahren so allerlei,
+und da wollt' ich, da sollt' ich doch einmal sehen-
+
+Agnes.  Ob ich auch wirklich gluecklich sei?  Oh, waert Ihr doch eine
+Stunde frueher gekommen!  Dann haettet Ihr mit eigenen Augen--Doch nein,
+nein, es ist besser so!  Und Ihr?  In Augsburg?
+
+Theobald.  Wegen des Vaters braucht Ihr Euch nicht zu aengstigen!
+Gleich nachdem Ihr fort wart, baute er sich den neuen Ofen, an den er
+frueher nie die Kosten wagen wollte, und das hat sich ihm belohnt.
+
+Agnes.  Ich danke Gott dafuer!
+
+Theobald.  Er hat allerlei entdeckt, mehr als er zeigen darf, wenn er
+nicht noch aerger als Hexenmeister ins Geschrei kommen will.  Dinge,
+sag ich Euch--es ist schade, dass Ihr sie nicht sehen koennt.  Das wird
+nun so wieder mit ihm untergehen.  Doch, es ist auch manches darunter,
+was er nicht zu verbergen braucht, und dabei steht er sich schon gut
+genug.  Er koennte sich nun gern ein Gaertlein kaufen, wie Ihr es immer
+wuenschtet.
+
+Agnes.  Und Ihr selbst, Theobald?
+
+Theobald.  Mir gibt er jetzt doppelten Lohn!
+
+Agnes.  Ach, das will ich nicht wissen!
+
+Theobald.  Nun, ich lache noch zuweilen ueber mich!  Und das recht von
+Herzen, Ihr koennt mir's glauben!  Noch vorhin, als ich den Herzog,
+Euren Gemahl, zu Pferd daherkommen sah.  Freilich, das ist ein Mann!
+Und wie er Euch lieben muss, kann man schon daran sehen, dass er seine
+Leute so warten laesst, was doch gar nicht Ritterart ist!  An denen kam
+ich bereits vor einer Stunde vorbei, und sie mussten schon lange
+stehen, denn sie waren hoechst ungeduldig.
+
+Agnes.  Das ist ja nicht moeglich!  Er hat sie ja bei sich!
+
+Theobald.  Zehn oder Zwoelf!  Ich meine die uebrigen!
+
+Agnes.  Die uebrigen?  Ei, er reitet ja nur zum Turnier und nimmt
+nicht einen Mann mehr mit!
+
+Theobald.  Und doch sah ich eine Stunde von hier hinter dem
+Foehrenwald, wo die Huegel sich senken, einhundertundfunfzig oder
+zweihundert Gewappnete, den Fuss im Buegel, die Lanze in der Hand und
+das Gesicht gen Straubing gekehrt, als ob sie ihren Fuehrer oder sonst
+etwas von dort erwarteten!
+
+Agnes.  Ich erschrecke.  Wo?
+
+Theobald.  Ei, an der Muenchner Strasse!
+
+Agnes.  An der Muenchner Strasse?  Er reitet nach Ingolstadt.
+
+Theobald.  Auch sprengte ein Geharnischter, der von hier kam, in
+wilder Hast an mir vorbei. Ich dachte, der sagte ihn an.  Jetzt
+faellt's mir ein, dass er verkappt war!
+
+Agnes.  Das ist hoechst verdaechtig, das muss Toerring wissen, das--Mein
+Gott, hoert, der Burgwart stoesst ins Horn, dass es
+zerspringt--Trompetengeschmetter von allen Seiten--ganz nah--immer
+naeher--das ist nichts Gutes--das ist Herzog Ernst!
+
+(Man hoert das alles.)
+
+Theobald.  Es ist nichts Gutes!  Geschrei!  Waffengeklirr!  Gilt das
+denn Euch?  Kein Zweifel, man stuermt!  Und sie sind schon aneinander.
+
+(Man hoert das alles.)
+
+Agnes.  Das ist nicht moeglich!  Das Schloss hat Mauern und Graeben.
+
+
+
+Elfte Szene
+
+Der Kastellan (stuerzt herein).  Edle Frau--folgt mir in die
+Totengruft--mich schickt der Toerring!
+
+Agnes.  Ich hoffe, er wird mich verteidigen.
+
+Der Kastellan.  Die Bruecke--ein Verraeter hat die Bruecke
+niedergelassen oder gar nicht wiederaufgezogen, denn die Dummheit
+kann nicht so weit gehen.  Die Feinde sind gleich hier!  Wie soll er
+sie aufhalten!
+
+Agnes.  Nun, so sind's keine Moerder, und ich, was bin denn ich?
+
+(Das Getoese kommt immer naeher.)
+
+Der Kastellan.  Kommt, kommt, ich beschwoer Euch!  Wer weiss, ob sie
+Euch dort suchen!
+
+Agnes.  Theobald, geht Ihr mit ihm!
+
+Theobald.  Um eine Waffe zu holen, meint Ihr!  Es waechst wohl auch
+eine auf'm Baum!  (Er reisst einen Ast ab.)
+
+
+
+Zwoelfte Szene
+
+Toerring und Pappenheim treten kaempfend auf.  Im Hintergrunde kaempfen
+Reisige und Burgknechte.  Auch Preising wird sichtbar, aber ohne das
+Schwert zu ziehen.
+
+Pappenheim.  Ergebt Euch, Toerring!
+
+Toerring.  Ho!
+
+Pappenheim.  So nehmt!  Ich hab Euch lange genug geschont!
+
+Toerring.  Pah!
+
+Pappenheim.  War's nicht vom Besten?
+
+Toerring.  Ei was!  (Er holt aus, faellt aber in die Knie.)  Doch!  (Zu
+Agnes hinueber.)  Edle Frau, Ihr seht--Was hilft's Euch?
+
+Pappenheim (beugt sich auf ihn nieder).  Ihr habt's nicht anders
+gewollt!
+
+Toerring (faellt um).  Macht's Kreuz ueber mich!  Freund oder--(Er
+stirbt.)
+
+Theobald (wirft den Ast weg, und stuerzt auf Toerring zu.)  Da erb ich
+was!
+
+Agnes.  Theobald!
+
+Theobald.  Weiss wohl, es ist ein Hochmut von mir!  Aber--(Er nimmt
+Toerrings Schwert.)
+
+Pappenheim (sich wendend).  Wo ist die Hexe, um die ich dies edle
+Blut vergoss?
+
+Agnes (schreitet ihm entgegen).  Wen sucht Ihr?
+
+Pappenheim (senkt unwillkuerlich sein Schwert und greift an den Helm,
+dann schlaegt er sich vor die Stirn).  Teufel, was mach ich!
+
+Theobald.  Ihr Knechte, schart euch um eure Gebieterin!  Sie hat
+gewiss jedem von euch Gutes getan!
+
+Die Knechte (scharen sich).
+
+Pappenheim (zu den Seinigen).  Ergreift sie!  Die ist's!
+
+Theobald (tritt vor Agnes).  Solange ich lebe, geht's nicht!
+
+Pappenheim.  Was willst du?
+
+Theobald.  Es ist die Tochter meines Meisters!
+
+Pappenheim.  Badergesell, kannst du zaehlen?  Nieder mit ihm, wenn er
+nicht weichen will, und fort mit ihr!
+
+Die Reisigen (draengen sich um Agnes herum, aber mit Scheu, und ohne
+sie anzuruehren, weil sie von ihrer Schoenheit geblendet sind).  Ha!
+Ei!  Die!
+
+Pappenheim.  Nun, was gafft ihr?  Hat sie's euch schon angetan, wie
+dem armen Herzog, oder wollt ihr warten, bis ihr's weghabt?  Lasst ihr
+nur Zeit, kuckt ihr nur in die gefaehrlichen schoenen Augen, so laesst
+sie euch Borsten wachsen, statt der Haare, und Klauen, statt der
+Naegel!  Ich daechte, ihr haettet genug von ihren Kuensten gehoert.  Muss
+ich selbst den Schergendienst verrichten?  (Er dringt auf Agnes ein
+und will sie ergreifen.)
+
+Theobald (schwingt das Schwert, wie ein Rad, um den Kopf herum, so
+dass Pappenheim sich nicht naehern kann).
+
+Pappenheim.  Ei, dich soll ja--(Er will Theobald durchstossen.)
+
+Agnes (wirft sich zwischen beide).  Schont ihn!  Er denkt an meinen
+alten Vater!  Ich folg Euch!  Aber vergesst nicht, es ist Herzog
+Albrechts Gemahlin, die Ihr in seinem eigenen Schloss ueberfallt!
+
+Pappenheim (will wieder auf Theobald eindringen).  Der Bursch hat
+mich-
+
+Preising (rasch hervortretend).  Im Namen des Herzogs, meines Herrn,
+jedes Schwert in die Scheide!
+
+Pappenheim (indem er sein Schwert einsteckt).  Warum auch nicht!  Ich
+soll sie nur fangen!
+
+Agnes.  Theobald, kehrt noch nicht nach Augsburg zurueck!  Dies kann
+das Ende nicht sein!  (Sie geht voran.)
+
+Pappenheim (folgt ihr mit den Reisigen).
+
+Theobald (will gleichfalls folgen, schlaegt sich dann aber vor die
+Stirn).  Nein!  Nach Ingolstadt!  Zu ihm!  Das erste Pferd, das ich
+unterwegs treffe, ist mein!  (Stuerzt fort.)
+
+Preising.  Gott gebe, dass sie jetzt auf mich hoere!  Noch kann ich sie
+vom Tode retten, und ich will's.  (Ab.)
+
+
+
+
+Fuenfter Akt
+
+
+Straubing
+
+
+
+Erste Szene
+
+Kerker.
+
+Agnes.  "Ingolstadt ist weit!" Es koennte mich verrueckt machen, das
+schreckliche Wort!  Ingolstadt ist keine vierundzwanzig Stunden von
+hier, und als Theobald eben vorbeistuerzt, und der Marschall ihn mit
+vorgestreckter Lanze aufhaelt, sagt dieser Richter mit einem Blick auf
+mich: lasst ihn doch laufen, wohin er will, Ingolstadt ist weit!
+Waeren keine vierundzwanzig Stunden mehr mein?  Herr, mein Gott, so
+kannst Du mich nicht verlassen!
+
+
+
+Zweite Szene
+
+Preising (tritt ein).
+
+Agnes (ihm entgegen).  Was bringt Ihr mir?
+
+Preising.  Was Ihr selbst wollt!
+
+Agnes.  Was ich selbst will?  Oh, spottet meiner nicht!  Ihr werdet
+mir die duestre Pforte nicht wieder oeffnen, die man so fest hinter mir
+verriegelt hat!
+
+Preising.  Ich werde, wenn Ihr Euch fuegt!
+
+Agnes.  Und was verlangt Ihr von mir?
+
+Preising.  Ich stehe hier fuer den Herzog von Bayern.
+
+Agnes (macht eine zurueckweichende Bewegung).
+
+Preising.  Aber ich meine es redlich mit Euch, und auch mein
+erlauchter Gebieter ist nicht Euer Feind!
+
+Agnes.  Nicht mein Feind?  Wie komm ich denn hieher?
+
+Preising.  Ihr wisst, wie's steht!  Herzog Ernst ist alt, und sein
+Thron bleibt unbesetzt, wenn Gott ihn abruft, oder sein einziger Sohn
+muss ihn besteigen.  Nun, Albrecht kann Euch nimmermehr mit
+hinaufnehmen, und da er sich von Euch nicht trennen will, so muesst Ihr
+Euch von ihm trennen!
+
+Agnes.  Ich mich von ihm!  Eher von mir selbst!
+
+Preising.  Ihr muesst!  Glaubt's mir, glaubt's einem Mann, der Euer
+Schicksal schon kennt, wie Gott, und es gern noch wenden moechte!  Ihr
+koennt kein Misstrauen in mich setzen; warum waer' ich gekommen, wenn
+Euer Los mir nicht am Herzen laege?  Meines Arms bedurfte es doch
+gewiss nicht; Ihr habt's ja gesehen, wie ueberfluessig ich war, und
+welchen Gebrauch ich von meinem Schwert machte.  Ich zog mit, weil
+Ihr mich erbarmtet; ich suche Euch jetzt im Kerker, im Vorhof des
+Todes, auf, weil ich allein noch helfen kann, doch ich wiederhol's
+Euch: Ihr muesst!
+
+Agnes.  Ihr habt den armen Menschen gerettet, der vorhin sein Leben
+fuer mich wagte, ich muss glauben, dass Ihr's aufrichtig meint, aber Ihr
+seid ein Mann und wisst nicht, was Ihr fordert!  Nein, nein!  Das in
+Ewigkeit nicht!
+
+Preising.  Nicht zu rasch, ich beschwoer Euch!  Wohl mag's ein
+schweres Opfer fuer Euch sein, doch wenn Ihr's verweigert, so wird
+man--koennt Ihr noch zweifeln nach allem, was heute geschah?--aus Euch
+selbst ein Opfer machen!  Ja, ich gehe vielleicht schon weiter, als
+ich darf, indem ich Euch ueberhaupt noch eine Bedingung stelle, und
+tu's auf meine eigne Gefahr!
+
+Agnes.  Ihr wollt mich erschrecken, aber es wird Euch nicht gelingen!
+(Sie haelt sich an einem Tisch.)  So leicht fuerchte ich mich nicht,
+dies Zittern meiner Knie kommt noch von dem ueberfall!  Mein Gott,
+erst die Trompeten, dann die blutigen Schwerter und die Toten!  Aber
+fuer mich besorg ich nichts, ich bin ja nicht in Raeuberhaenden, und
+Herzog Ernst ist ebenso gerecht, als streng!  (Sie setzt sich.)  Seht
+mich nicht so an, mir ward jetzt so wunderlich, weil der tote Toerring
+mir auf einmal vor die Seele trat, es ist schon wieder vorueber.  (Sie
+erhebt sich wieder.)  Was koennte mir auch wohl widerfahren!  Ist doch
+selbst ein Missetaeter, solange der Richter ihn noch nicht verurteilt
+hat, in seinem Kerker so sicher, als ob die Engel Gottes ihn
+bewachten, und ich habe den meinigen noch nicht einmal erblickt!
+Nein, nein, so hat mein Gemahl nicht von seinem Vater gesprochen, dass
+ich dies glauben duerfte!  Doch, wenn's auch so waere, wenn der Tod--es
+ist unmoeglich, ich weiss es, ganz unmoeglich--aber wenn er wirklich
+schon vor der Tuer staende und meine Worte zaehlte: ich koennte
+nimmermehr anders!
+
+Preising.  Der Tod steht vor der Tuer, er kommt, wenn ich gehe, ja er
+wird anklopfen, wenn ich zu lange saeume!  Schaut einmal durchs Gitter
+zur Bruecke hinueber!  Was seht Ihr?
+
+Agnes.  Das Volk draengt sich, einige heben die Haende zum Himmel empor,
+andere starren in die Donau hinab, es liegt doch keiner darin?
+
+Preising (mit einem Blick auf sie).  Noch nicht!
+
+Agnes.  Allmaechtiger Gott!  Versteh ich Euch?
+
+Preising (nickt).
+
+Agnes.  Und was hab ich verbrochen?
+
+Preising (hebt das Todesurteil in die Hoehe).  Die Ordnung der Welt
+gestoert, Vater und Sohn entzweit, dem Volk seinen Fuersten entfremdet,
+einen Zustand herbeigefuehrt, in dem nicht mehr nach Schuld und
+Unschuld, nur noch nach Ursach' und Wirkung gefragt werden kann!  So
+sprechen Eure Richter, denn das Schicksal, das Euch bevorsteht, wurde
+schon vor Jahren von Maennern ohne Furcht und ohne Tadel ueber Euch
+verhaengt, und Gott selbst hat den harten Spruch bestaetigt, da er den
+jungen Prinzen zu sich rief, der die Vollziehung allein aufhielt.
+Ihr schaudert, sucht Euch nicht laenger zu taeuschen, so ist's!  Und
+wenn's einen Edelstein gaebe, kostbarer, wie sie alle zusammen, die in
+den Kronen der Koenige funkeln und in den Schachten der Berge ruhen,
+aber ebendarum auch ringsum die wildesten Leidenschaften entzuendend
+und Gute, wie Boese, zu Raub, Mord und Totschlag verlockend: duerfte
+der einzige, der noch ungeblendet blieb, ihn nicht mit fester Hand
+ergreifen und ins Meer hinunterschleudern, um den allgemeinen
+Untergang abzuwenden?  Das ist Euer Fall, erwaegt's und bedenkt Euch,
+ich frage zum letzten Mal!
+
+Agnes.  Erwaegt auch Ihr, ob Ihr nicht verlangt, was mehr als Tod ist!
+Ich entsage meinem Gemahl nicht, ich kann's und darf's nicht.  Bin
+ich denn selbst noch, die ich war?  Hab ich bloss empfangen?  Hab ich
+nicht auch gegeben?  Sind wir nicht eins, unzertrennlich eins durch
+Geben und Nehmen, wie Leib und Seele?  Aber ich verbuerge mich fuer ihn,
+dass er dem Thron entsagt!  Fuerchtet nicht, dass ich verspreche, was
+er nicht halten wird!  Ich hab's aus seinem eignen Munde, wie ein
+Zauberwort fuer die hoechste Gefahr!  Zwar glaubte ich laengst nicht
+mehr, dass ich's noch brauchen wuerde, aber diese Stunde hat's mir
+entrissen, und nun braucht's, wie Ihr wollt!
+
+Preising.  Das rettet Euch nicht mehr!  Herzog Albrecht kann die
+angestammte Majestaet sowenig ablegen, als Euch damit bekleiden, sie
+ist unzertrennlich mit ihm verbunden, wie die Schoenheit, die ihn
+fesselt, mit Euch.  Will er's nicht seinen Segen nennen, so nenne
+er's seinen Fluch, aber er gehoert seinem Volk und muss auf den Thron
+steigen, wie Ihr ins Grab.  Euch rettet's nur noch, wenn Ihr Eure Ehe
+fuer eine suendliche erklaert und augenblicklich den Schleier nehmt.
+
+Agnes.  Wie mild ist Herzog Ernst!  Der will doch nur mein Leben!
+Ihr wollt mehr!  Ja, ja, das braucht' ich bloss zu tun, so waer' ich
+fuer ihn, wie nie dagewesen; ich selbst haette mein Andenken in seiner
+Seele ausgeloescht, und er muesste erroeten, mich je geliebt zu haben!
+Mein Albrecht, deine Agnes dich abschwoeren!  O Gott, wie reich komm
+ich mir in meiner Armut jetzt auf einmal wieder vor, wie stark in
+meiner Ohnmacht!  Diesen Schmerz kann ich doch noch von ihm abwenden!
+Das kann mir doch kein Herzog gebieten!  Nun zittre ich wirklich
+nicht mehr!
+
+Preising.  Oh, dass Euer alter Vater neben mir staende und mich
+unterstuetzte!  Dass er spraeche: mein Kind, warum willst du einen Platz
+nicht freiwillig wiederaufgeben, den du doch nur gezwungen einnahmst?
+Denn ich weiss ja, dass dies Euer Fall war!
+
+Agnes.  Gezwungen?  So also wird meine Angst, mein Zittern und Zagen
+ausgelegt?  Oh, wenn Ihr mir Euer Mitleid geschenkt habt, weil Ihr
+das glaubt, so nehmt's zurueck und quaelt mich nicht laenger, ich habe
+keinen Anspruch darauf.  Nein, nein, ich wurde nicht gezwungen!  So
+gewiss ich ihn eher erblickt habe, als er mich, so gewiss habe ich ihn
+auch eher geliebt, und das war gleich, als ob's immer gewesen waere
+und in alle Ewigkeit nicht wiederaufhoeren koenne.  Darum keine Anklage
+gegen ihn, ich war frueher schuldig, als er!  Nie zwar haett' ich's
+verraten, ich haette vielleicht nicht zum zweiten Mal zu ihm
+hinuebergeschaut, sondern im stillen mein Herz zerdrueckt und unter
+Lachen und Weinen ein Geluebde getan.  Ach, ich schaemte mich vor Gott
+und vor mir selbst, mir war, als ob mein eignes Blut mir ueber den
+Kopf liefe, ich erwiderte ein Laecheln des armen Theobald, um mir
+recht weh zu tun.  Doch, als er nun am Abend zu mir herantrat, da
+wandte ich mich zuerst freilich auch noch ab, aber nur, wie ein
+Mensch, der in den Himmel eintreten soll und weiss, dass er dem Tode
+die Schuld noch nicht bezahlt hat!  Wenn ein Engel den mit sanfter
+Gewalt ueber die Schwelle noetigt: hat er ihn gezwungen?
+
+Preising.  So ist es Euer letztes Wort?
+
+
+
+Dritte Szene
+
+Die Tuere wird geoeffnet, man erblickt Haescher und Reisige, die jedoch
+draussen bleiben, es tritt ein: Emeran Nusperger zu Kalmperg und
+bleibt am Eingang stehen.
+
+Agnes (ihm entgegen).  Herr Emeran, haette mein Gemahl je erfahren,
+was ich von Euch wusste, Ihr lebtet nicht, um mich zu verderben!  Er
+hasste Euch schon ohne Grund, wie keinen auf der Welt, ich haett' ihm
+wohl einen Grund angeben koennen, aber ich tat's nicht!  Sinnt nach,
+und wenn Ihr ein Mensch seid, so muss sich in Eurer Brust jetzt etwas
+fuer mich regen!
+
+Emeran Nusperger zu Kalmperg (schweigt).
+
+Agnes.  Herr Emeran, hin ich auf ehrliche Weise in Eure Hand
+gefallen?  Bedenkt wohin Ihr mich ohne Vorbereitung schickt, lasst mir
+noch etwas Zeit, und Gott soll's Euch verzeihen, dass Ihr einen Judas
+mehr gemacht habt, ich will selbst fuer Euch bitten!
+
+Emeran Nusperger zu Kalmperg (schweigt).
+
+Agnes.  Herr Emeran, wie ich in diesem Augenblick zu Euch, so werdet
+ihr dereinst zu Gott um eine kurze Frist flehen, und er wird Euch
+antworten, wie Ihr mir!  Seht mich an, wie jung ich noch bin, und
+gebt mir von jedem Jahr, das Ihr mir raubt, nur eine Minute zurueck!
+Koennt Ihr mir's weigern?  Ich will ja nur von mir selbst Abschied
+nehmen!
+
+Preising.  Ihr verlangt von ihm, was er nicht gewaehren kann!  Er weiss
+von Eurem Knecht, dass Ihr gestern zur Nacht erst gebeichtet habt, und
+die Stunde draengt!  Auch ist die eine ebenso schwarz, wie die andere,
+glaubt's mir!  Aber willigt ein und-
+
+Agnes.  Hebe Dich von mir, Versucher!
+
+Emeran Nusperger zu Kalmperg (winkt einem Haescher).
+
+Ein Haescher (tritt herein und naehert sich Agnes).
+
+Agnes.  Fort, Mensch!  Willst du deine Hand an die legen, die noch
+keiner, als dein Herzog, beruehrt hat?  Nur dem Totengraeber kann ich's
+nicht mehr wehren!  (Sie schreitet zur Tuer, bleibt dann aber stehen).
+Albrecht, Albrecht, was wirst du empfinden!
+
+Preising.  Ja!  Ja!  Und Ihr wollt diesen Stachel lieber in seine
+Seele druecken, als--Noch ist's Zeit!
+
+Agnes.  Fragt ihn, wenn ich dahin bin, ob er lieber eine Unwuerdige
+verfluchen, als eine Tote beweinen moechte!  Ich kenne seine Antwort!
+Nein, nein, Ihr bringt Euer Opfer nicht so weit, dass es sich selbst
+befleckt.  Rein war mein erster Hauch, rein soll auch mein letzter
+sein!  Tut mir, wie Ihr muesst und duerft, ich will's leiden!  Bald weiss
+ich, ob's mit Recht geschah!
+
+(Sie schreitet durch die Haescher hindurch, Preising und Emeran
+Nusperger zu Kalmperg folgen.)
+
+
+
+
+Offenes Feld.
+
+
+
+Vierte Szene
+
+Herzog Ernst mit seinen Rittern und Reisigen, die man ziehen und sich
+ausbreiten sieht.  Bauerhuetten, wovon eine ganz in der Naehe ist.
+
+Ernst (tritt mit Wolfram von Pienzenau, Ignaz von Seyboltstorff und
+Otto von Bern hervor).
+
+Ernst.  Ihr, Pienzenau, reitet zu Haydeck!  Er soll so weit
+vorwaertsgehen, als er kann!  Ich muss hier haltmachen und auf den
+Kanzler warten.
+
+Wolfram von Pienzenau (ab).
+
+Ernst.  Ihr, Seyboltstorff, schwenkt Euch gegen Straubing, und
+besetzt die Huegelkette!
+
+Ignaz von Seyboltstorff (ab).
+
+Ernst.  Ihr, Bern, seht nach Euren Reitern und bleibt nuechtern, damit
+die auch nuechtern bleiben.  (Wie Bern sprechen will.)  Ich weiss wohl,
+dass Ihr behauptet, des Morgens immer benebelt aufzustehen und Euch
+den Verstand erst nach und nach anzutrinken, wie andere Leute den
+Rausch, aber ich halte nichts davon, und ich muss Euch heute zur Hand
+haben, wie mein Schwert!
+
+Otto von Bern (ab).
+
+
+
+Fuenfte Szene
+
+Ernst.  Eine Bauerhuette!  Ich will doch einmal sehen, wie die Leute
+leben!  (Er geht auf die Huette zu, findet sie aber verschlossen.)  Zu!
+Alles auf'm Felde bei der Arbeit.  Wer kocht denn Essen?  Oder hab
+ich sie schon verjagt?  (Er kommt zurueck.)  Wenn's geglueckt ist, muss
+die Nachricht jeden Augenblick kommen!  Dies ist das erste Mal, dass
+mir die Zeit lang wird.--Ernst, frevle nicht!  Wer weiss, welcher
+Schatten jetzt schon zwischen Himmel und Erde umherirrt!
+
+
+
+Sechste Szene
+
+Preising (tritt mit Pappenheim auf).  Hier soll er sein!
+
+Ernst (ihnen entgegen).  Ihr Preising?  Nun?
+
+Preising.  Tot!
+
+Ernst.  So sei Gott ihr gnaedig!--Pappenheim, Ihr muesst gleich wieder
+aufsitzen und Euch mit Pienzenau vereinigen, um Haydeck zu staerken.
+Der hat den ersten Stoss zu erwarten, wenn's was gibt!
+
+Pappenheim (ab).
+
+Ernst.  Wie starb sie?
+
+Preising.  Hat sie sich Euch um die elfte Stunde nicht angezeigt?
+
+Ernst.  Das versteh ich nicht!
+
+Preising.  Da war's!  Der Henker versagte den Dienst, Herr Emeran
+musste einen seiner Hoerigen entlassen, der stuerzte sie von der Bruecke
+herab.  Erst schien's, als ob sie aus Angst vor der Befleckung durch
+seine Haende freiwillig hinunterspringen wollte, doch dann kam die
+Furcht des Todes ueber sie, ihr schwindelte, und er musste sie packen.
+Das Volk haette ihn gern gesteinigt, und doch wusste jeder, dass der
+jaemmerliche Mensch es nur fuer seine Freiheit tat.  Nicht um die Welt
+moecht' ich's zum zweiten Mal sehen.
+
+Ernst.  Genug, Preising!  Es gibt Dinge, die man, wie im Schlaf tun
+muss.  Dies gehoert dazu.  Das grosse Rad ging ueber sie weg--nun ist sie
+bei dem, der's dreht.  Jetzt handelt sich's denn um ihn!
+
+Preising.  Oh, er wird's schon wissen!  Es war gerade einer aus
+Augsburg auf dem Schloss, als Pappenheim eindrang, ein braver Bursch,
+der sich wacker hielt.  Der eilte fort, als sie in den Kerker gefuehrt
+wurde, und gewiss nach Ingolstadt.  Es war ein Bote ihres Vaters!
+
+Ernst.  Armer, alter Mann!  Nun ich setzte mein eigen Fleisch und
+Blut ebensogut ein, wie das deine!  Wer weiss, ob unser Los nicht
+schon gleich ist!
+
+Preising.  Und dann?
+
+Ernst.  Dann werde, was will!  Ich habe das Meinige getan und sorge
+fuer die Graeber.  Aber es kann auch anders kommen.  Der Fuerst schlief
+nur in ihm, er war nicht tot.  Warum haett' er sonst nicht entsagt?
+Warum so auf dies Turnier gedrungen?  Vielleicht erwacht er wieder,
+und dann--Es ist toericht, mit den gemeinen Leuten von Zauberei zu
+reden, wo ein Gesicht, das unser Herrgott zweimal angestrichen hat,
+alles erklaert, aber es aendert sich viel, wenn Himmel und Erde sich
+erst einmal wieder in solch ein Blendwerk von Maedchen geteilt haben,
+und nur noch ein Leichnam daliegt, der nicht mehr durch rote Lippen
+und frische Wangen an die Eitelkeiten der Welt, nur noch durch
+gebrochene Augen an die letzten Dinge mahnt!
+
+Preising.  Da brennt's!  Oder nicht?  Ja! ja!
+
+(Man sieht in der Ferne ein Dorf in Flammen stehen.)
+
+Ernst.  Das ist er!  So hat die Wut den Schmerz besiegt!  Nun wird
+alles gut!  (Rufend.)  Nur zu, mein Sohn, nur zu!  Je aerger, je besser!
+
+Preising.  Aber das wolltet Ihr ja eben verhueten!
+
+Ernst.  Ei, jetzt ist's ein Tag!  Was in dem zerstoert wird, bau ich
+schon wieder auf!  Und verlasst Euch darauf, der Kaiser hat seinen
+Adler schon fliegen lassen, und der wird ihm die Krallen zeigen, eh'
+er's denkt!  Und dann--(Er erhebt seinen Herzogsstab.)  Preising, Ihr
+werdet heut noch ueberrascht!  (Da Preising sprechen will.)  Kommt,
+kommt, zu Pferde!  (Er ruft.)  Otto von Bern!
+
+(Ab mit Preising.)
+
+
+
+Siebente Szene
+
+Bauern, Maenner, Weiber und Kinder tumultuarisch durcheinander rennend
+und schreiend.
+
+Einige.  Der Boehme!  Der Boehme!
+
+Andere.  Der Kaiser!
+
+Andere.  Ingolstadt und Landshut!
+
+Alle.  Alle zusammen!  Alle zusammen!  Weh uns!  Wohin?
+
+
+
+Achte Szene
+
+Albrecht erscheint mit vielen Kaempfenden, worunter sich auch Theobald
+befindet.
+
+Albrecht (er tut bei jedem Ausruf einen Streich).  Agnes Bernauer!
+Agnes Bernauer!  Hei, dass ihr's wisst, eh' ihr umfallt, der Tod heisst
+heute Agnes Bernauer und kennt kein Erbarmen!  Kein Geschlecht in
+Bayern, hoch oder niedrig, das morgen nicht weinen soll!  Da liegt
+ein Haydeck, da ein Pienzenau, da ein Seyboltstorff!  Aber noch immer
+lebt Pappenheim!  Pappenheim, wo bist du?  Raeuber, Verraeter, Schurke,
+versteckst du dich?  Ihr alle, ruft mit mir, dass es ueber die ganze
+Erde schallt: Pappenheim, Raeuber, Verraeter, Schurke, hervor!
+
+Pappenheim (tritt auf).  Wer sucht mich?
+
+Albrecht.  Ich und der Teufel, wir beide zugleich!  Aber erst komm
+ich!  Zieh und lass sehen, ob ein ehrlich Eisen dir noch dient!  (Er
+wirft Pappenheim zurueck.)
+
+Theobald (tritt hervor).  Und ich?  Ha, ha, ha!  Ich glaube, ich
+fuerchte mich, es wird mir ganz schwarz vor den Augen.  Ei, ich mach
+sie zu und steche darauf los!  Bring ich keinen um, so reiz ich doch
+wohl einen, dass er mich umbringt!
+
+Albrecht (tritt wieder auf).  Abgetan!  Was nun?  Oh, dass man mir ihn
+wieder lebendig machte, und dass ich ihn mit jedem Atemzug einmal
+niederhauen duerfte, von heute an bis zum Anbruch des Juengsten
+Gerichts.
+
+Theobald (tritt vor Albrecht hin.).  Haut mich nieder!
+
+Albrecht.  Dich?  Wofuer?  Ei, du bist's?  Was faellt dir ein!
+
+Theobald.  Meint Ihr, dass ich mit einer solchen Nachlebt nach
+Augsburg zurueck will?
+
+Albrecht.  Guter, treuer Mensch, bleib bei mir!
+
+Theobald.  Bei Euch?  Bei Euch!  Ha!  Wenn Ihr nicht gewesen waert--Da!
+(Er sticht nach Albrecht.)  Der kommt auch von Agnes Bernauer!  Und
+der!  Und der!
+
+Albrecht (wehrt ab).  Bist du verrueckt?  Gib mir lieber die Hand!  Du
+bringst mich nicht so weit, dass ich dir ein Leid zufuege!
+
+Theobald (sticht wieder nach ihm).  Ihr sollt aber!
+
+Albrecht.  So muss ich schon tun, was ich noch nie tat!  (Er wendet
+ihm den Ruecken.)  Wem gehoert denn das rote Gesicht?  Das ist ein
+Degenberg, und an dem fehlt's noch!  (Stuerzt fort.)
+
+Theobald.  Alles soll sterben, alles, Freund und Feind!  (Er wirft
+sich seinem eignen Trupp entgegen, der Albrecht folgen will.)  Wohin?
+Halt!  (Er wird durchbohrt.)  So!  Nun ist's genug!  (Faellt und stirbt.
+)
+
+Nothhafft von Wernberg (tritt auf).  Sieg!  Sieg!  Wo ist der Herzog?
+Albrecht, sie laufen vor uns, als ob wir mehr als Menschen waeren!
+
+Albrecht.  Aber sie sollen liegen!  Ich will die Donau, die sie
+erstickt hat, mit Leichen wieder ersticken!
+
+Nothhafft von Wernberg.  Der im Bart wirft sich auf Straubing, Ihr
+sollt's betrachten, als ob er's schon haette!
+
+Albrecht.  Dass er mir den Richter bloss faengt, und ihm kein Leid
+zufuegt!  In dessen Blut will ich mir den letzten Rausch trinken!
+
+Rolf von Frauenhoven (tritt auf).  Hurra!  Hurra!  Nun ist's aus!
+Wir haben ihn!  (Zu Albrecht, wie er ihn bemerkt.)  Wir haben Euren
+Vater, Ihr koennt ihm gleich guten Tag sagen!  Eben ward er gepackt!
+
+Albrecht.  Wer hat das befohlen?
+
+Frauenhoven.  Wer hat's verboten?  Seine eignen Leute rannten ihn
+ueber den Haufen, als er sich ihrer Flucht in den Weg stellte, und
+Hans von Laeubelfing--Da bringt er ihn mit dem Kanzler!  Seht!
+
+Albrecht (wendet sich nach der entgegengesetzten Seite).  Er soll ihn
+freilassen!  Gleich!
+
+Nothhafft von Wernberg.  Ei, das kommt wohl morgen auch frueh genug!
+
+Albrecht.  Gleich! sage ich.  Mensch, fuehlst du's denn nicht auch?
+
+Nothhafft von Wernberg.  Eh' er Urfehde geschworen und uns wenigstens
+die Koepfe gesichert hat?
+
+Albrecht (stampft mit dem Fuss).  Gleich!  Gleich!  Gleich!
+
+Nothhafft von Wernberg.  So sagt's ihm selbst!
+
+
+
+Neunte Szene
+
+Ernst tritt mit Preising auf, von Hans von Laeubelfing und seiner
+Schar begleitet.
+
+Ernst.  Da steht mein Sohn!  Wenn der den Degen seines Vaters will,
+hier ist er!
+
+Albrecht.  Ihr habt mir bei Alling das Leben gerettet!  (Mit einer
+Handbewegung.)  Fort!  Fort!
+
+Ernst.  Ich tat bei Alling, was ich schuldig war, und begehre keinen
+Dank dafuer!
+
+Albrecht (indem er sich umkehrt).  So komme diese Stunde ueber Euer
+Haupt!  (Er bemerkt Preising.)  Ha, da ist noch einer!  Herr Kanzler,
+Ihr seid frei, Ihr moegt wollen oder nicht!  Aber nur, um Eurem
+Gefaehrten, dem Marschall, gleich in die Hoelle nachgeschickt zu werden!
+(Er zieht gegen Preising.)  Oh, waer' auch der dritte da!
+
+Ernst.  Pfui!  Willst du dich am Diener raechen, statt am Herrn?  Mein
+Kanzler vollzog nur meinen Befehl, und ich musste ihn zweimal geben,
+eh' er's tat!
+
+Albrecht.  So seid Ihr's wirklich allein?  Ganz allein?  So kann ich
+mich an niemanden halten, als an Euch?  Und Ihr tretet mir noch in
+den Weg?  Ihr weicht mir nicht aus?
+
+Ernst.  Warum sollt' ich?  Ich habe meine Pflicht getan, in Straubing,
+wie in Alling, oder in Regensburg!
+
+Albrecht.  Eure Pflicht!  Gott hat Euch in meine Hand gegeben!  Zeugt
+er so fuer den, der seine Pflicht tat?
+
+Ernst.  Gott will dich versuchen!  Hab wohl acht, dass du vor ihm
+bestehst!  Er hat noch nie auf zwei Menschen herabgeschaut, wie jetzt
+auf dich und mich!  (Er tritt Albrecht naeher.)  Mein Sohn, du hast
+dich mit meinem aergsten Feind verbunden, mit deinem falschen Ohm, der
+dir zwar gern die Brandfackel vorantrug, als es galt, mein
+unschuldiges Land zu verheeren, der dir aber nicht das Schwert aus
+der Hand gerissen haben wuerde, wenn du es gegen dich selbst gezueckt
+haettest!  Kehre zu mir zurueck, es ist besser.  Ich musste tun, was ich
+tat, du wirst es selbst dereinst begreifen, und waer's erst in deiner
+letzten Stunde, aber ich kann auch mit dir weinen, denn ich fasse
+deinen Schmerz!
+
+Albrecht.  Oh, sprecht nicht so!  Lasst mich glauben, dass Ihr nicht
+mehr davon wisst, als der kalte Fluss, der sie verschlungen hat.  Wenn
+ich Euch nicht fluchen soll, muss ich mir denken: ein neuer Tod ist in
+die Welt gekommen, um den alten abzuloesen, und das ist dein eigner
+Vater!  Ein Mensch konnte ihr kein Leid zufuegen; nicht bei Tage, denn
+er haette sie gesehen, nicht bei Nacht, denn er haette sie gehoert, und
+nur eins von beidem war noetig, um jeden zu entwaffnen!  Sagt: ich bin
+kein Mensch und schickte auch keine Menschen, dann will ich mich vor
+Euch bekreuzen und fliehn!
+
+Ernst.  Ich bin ein Mensch, und haett's wohl verdient, dass es mir
+erspart worden waere.  Aber wenn du dich wider goettliche und
+menschliche Ordnung empoerst: ich bin gesetzt, sie aufrechtzuerhalten,
+und darf nicht fragen, was es mich kostet!
+
+Albrecht.  Goettliche und menschliche Ordnung!  Ha, ha!  Als ob's zwei
+Regenbogen waeren, die man zusammengefuegt und als funkelnden
+Zauberring um die Welt gelegt haette!  Aber die goettliche Ordnung rief
+sie ins Leben und liess sie aus dem Staube hervorgehen, damit sie
+wieder erhoehe, was sich selbst erniedrigt, und erniedrigen was sich
+selbst erhoeht hatte.  Die menschliche--(Er tritt Ernst naeher.)  Die
+menschliche--(Er wendet sich rasch um gegen die Seinigen.)  Vorwaerts,
+Ihr Freunde, vorwaerts, wer wird schon am Mittag feiern!  Herzog Ernst
+ist frei, niemand kruemme ihm ein Haar, er kann keine Agnes mehr toeten,
+aber rasten wollen wir erst, wenn sein Muenchen in Flammen steht!
+(Will fort.)
+
+Ernst.  Recht so!  Dann wird der Bayer sie doch gewiss verfluchen,
+sonst haett' er sie vielleicht beweint.  Ihre Brueder sind's, die du
+erwuergst, nicht die meinigen, und ob du die ganze Menschheit
+abschlachtest: in ihren Adern wird nicht ein Blutstropfe wieder warm
+davon!  Aber dahin kannst du's bringen, dass ihr eigener Vater die
+Stunde vermaledeit, in der sie ihm geboren ward, und dass sie selbst
+sich aus dem Paradies, wenn sie's schon betreten hat, schaudernd und
+schamrot wieder hinausstiehlt, die erste und letzte, die's tut, ohne
+verdammt zu sein!
+
+Albrecht (haelt inne und senkt sein Schwert).
+
+(Man hoert Trompeten in der Ferne.)
+
+Ernst.  Das ist Ludwig von Ingolstadt!  Der Wuergengel wird ungeduldig!
+Folgt ihm doch, niemand kann besser zerstoeren, was ein andrer baute,
+als er!  Aber lasst euch alle mahnen: es ist einer ueber euch im
+Himmel und auch auf Erden, und beide werden furchtbar mit euch ins
+Gericht gehen!
+
+(Die Trompeten naehern sich.)
+
+Stimmen.  Platz!  Platz dem Banner des Reichs!
+
+Andere Stimmen.  Ein Herold!
+
+
+
+Zehnte Szene
+
+Der Herold des Reichs tritt mit Gefolge auf, das Banner wird vor ihm
+hergetragen.
+
+Der Herold (schwingt nach allen Weltgegenden sein Schwert).  Bei Acht
+und Bann, kein blankes Schwert, als dies!
+
+Alle Ritter (bis auf Albrecht stecken die Schwerter ein).
+
+Der Herold.  Albrecht von Wittelsbach, Herzog von Bayern, erscheint
+vor Kaiser und Reich!
+
+Albrecht (tritt zoegernd heran und steckt langsam sein Schwert ein).
+Ist hier die Schranke?
+
+Der Herold.  Sie ist ueberall, wo die Acht verkuendet werden soll!
+
+Nothhafft von Wernberg und Frauenhoven.  Die Acht!  Ist's schon so
+weit!
+
+(Posaunenstoesse.)
+
+Preising (zu Ernst).  Was ist das noch?
+
+Ernst.  Mehr, als ich verlangte, fuercht ich!
+
+Stimmen.  Ein Legat!  Ein Legat des Heiligen Stuhls!
+
+Der Herold.  Und mit ihm der Bann der Kirche!
+
+Viele Stimmen (von Rittern und Reisigen).  Acht und Bann zugleich!
+Da ist's Zeit!  (Sie werfen die Waffen von sich.)
+
+Der Legat (tritt mit Gefolge auf, eine brennende Kerze wird vor ihm
+hergetragen, er stellt sich zur rechten Hand des Herolds).
+
+Der Herold (entfaltet die Achterklaerung).  Wir Sigismund, von Gottes
+Gnaden erwaehlter roemischer Kaiser, Koenig von Ungarn, Boeheim,
+Dalmatien, Slawonien und Bosnien, Markgraf von Maehren und Schlesien,
+Kurfuerst von Brandenburg usw., Schirmvogt der Kirche, hoechster
+Schiedsrichter auf Erden, tun kund hiemit: Nachdem Du, Albrecht von
+Wittelsbach, allbereits vor dritthalb Jahren zu Regensburg in offenem
+Aufstand den Frieden des Reichs gebrochen und schwere Acht auf Dein
+Haupt herabgezogen hast, die Wir damals, obgleich schon verhaengt, auf
+Fuerbitte Deines fuerstlichen Herrn und Vaters noch zurueckhielten;
+nachdem Du weiter, unwuerdig solcher Fuerbitte und Unserer Gnade, in
+Deinem Trotz wider menschliche und goettliche Ordnung beharrtest,
+anstatt, Unserer gerechten Erwartung gemaess, in reuiger
+Unterwuerfigkeit Versoehnung und Vergebung zu suchen; nachdem Du
+endlich, um das Mass Deiner Frevel zu haeufen, Unsere Langmut aber bis
+auf den Grund zu erschoepfen, zum zweiten Mal mit blanker Waffe
+rebellisch im Felde erschienen bist: So gebieten Wir Dir durch diesen
+Unseren offenen Brief, dass Du angesichts desselben Dein Schwert auf
+der Stelle zu den Fuessen Deines Herrn und Vaters niederlegen und als
+sein freiwilliger Gefangener Unseren letzten Spruch in Demut abwarten
+sollst.--(Er setzt ab und sieht Albrecht an.)
+
+Albrecht (bohrt sein Schwert in die Erde und stuetzt sich darauf).
+
+Der Herold (faehrt fort).  Widrigenfalls setzen Wir Dich nunmehr aus
+Kaiserlicher Machtvollkommenheit aus dem Frieden in den Unfrieden,
+weisen Dich hinaus auf die vier Strassen der Welt und erklaeren Dich
+fuer vogelfrei-
+
+Ernst.  Willst du noch mehr hoeren, mein Sohn?  Sag nein, und ich
+erhebe meinen Herzogsstab!
+
+Frauenhoven.  Jetzt kommt das von den Tieren des Waldes und den
+Voegeln unter dem Himmel und den Fischen im Wasser!
+
+Nothhafft von Wernberg.  Schau dich um!  Sie gehen alle hinter sich!
+Keiner wird's mit dir tragen, als wir!
+
+Albrecht.  Wie sollten sie auch!  Fangen doch die Berge zu wandeln an,
+um mich zu bedecken!
+
+Ernst.  Soll auch die Kirche den Mund noch oeffnen?  Soll die Kerze
+ausgeloescht, soll deine Seele dem ewigen Fluch uebergeben, dein Name
+im Buch des Lebens getilgt werden?
+
+Albrecht (zu Nothhafft von Wernberg und Frauenhoven).  Geht von mir,
+dass ich antworten kann!
+
+Frauenhoven.  Haben wir das um Euch verdient?  Teufel, es brennt!
+
+Albrecht.  Soll ich mich vor der Gewalt demuetigen, weil ihr neben mir
+steht?  Mich mag sie noch heute zermalmen!
+
+Ernst.  Gewalt?  Wenn das Gewalt ist, was du erleidest, so ist es
+eine Gewalt, die alle deine Vaeter dir antun, eine Gewalt, die sie
+selbst sich aufgeladen und ein halbes Jahrtausend lang ohne Murren
+ertragen haben, und das ist die Gewalt des Rechts!  Weh dem, der
+einen Stein wider sie schleudert, er zerschmettert nicht sie, sondern
+sich selbst, denn der prallt ab und auf ihn zurueck.  Oder bin ich's,
+der zu dir redet, ist's nicht das ganze deutsche Reich?
+
+Albrecht.  Sei's so!  Ich wusste nicht, dass der Tod darauf steht, eine
+Perle aufzuheben, statt sie zu zertreten, aber ich hab's getan und
+will's buessen.  Heran, Baer und Wolf, schiesst auf mich herab, Adler und
+Geier, und zerfleischt mich!  Nicht mit der Hand will ich mich wehren,
+wenn ihr tut nach des Kaisers Gebot!
+
+Ernst.  Hast du solche Eil, vor deinem Richter zu erscheinen?  Noch
+hat er diese Toten und ihre Wunden nicht gezaehlt, und du weisst so
+gewiss, wie er dich empfangen wird?
+
+Albrecht.  Oh, ihn fuercht ich nicht, er wird's schon vergeben, dass
+ich sein liebstes Kind bei der Hand gefasst habe, er weiss ja, wie
+schoen und edel er's gemacht hatte!
+
+Ernst.  Mein Sohn, geh in dich!  Es ist wahr, du kannst deine Schuld
+vergroessern, du kannst dir den Tod ertrotzen, oder dich, wer will's
+hindern, hinterruecks aus der Welt wegstehlen, du kannst aber auch
+alles wiedergutmachen!  Tu's, o tu's, fasse einen Entschluss, dass du
+vor deinen Ahnen nicht zu erroeten brauchst, fuege dich!  Dies
+Schlachtfeld wird einst furchtbar wider dich zeugen, sie alle, die
+hier blutig und zerfetzt herumliegen, werden dich verklagen und
+sprechen: wir fielen, weil Herzog Albrecht raste!  Weh Dir, wenn sich
+dann nicht eine viel groessere Schar fuer dich erhebt und deine Anklaeger
+zum Verstummen bringt, wenn nicht Millionen ausrufen: aber wir
+starben in Frieden, weil er sich selbst ueberwand!  Denn das haengt
+davon ab, dass du lebst, davon ganz allein!
+
+Albrecht.  Die Unschuldige sollte modern, und ich--Welch ein Schurke
+waer' ich, wenn ich auf Euch hoerte!
+
+Ernst.  Du bist nicht, wie ein anderer, der die Gerechtigkeit dadurch
+versoehnen kann, dass er ihrem Schwert reuig den Hals darbietet, von
+dir verlangt sie das Gegenteil!  Schau dies Banner an, es ist dein
+Bild und kann dich's lehren!  Es ward aus demselben Faden gesponnen,
+woraus der letzte Reiter, der ihm folgt, sein Wams traegt, es wird
+einst zerfallen und im Wind zerstaeuben, wie dies!  Aber das deutsche
+Volk hat in tausend Schlachten unter ihm gesiegt, und wird noch in
+tausend Schlachten unter ihm siegen, darum kann nur ein Bube es
+zerzupfen, nur ein Narr es flicken wollen, statt sein Blut dafuer zu
+verspritzen und jeden Fetzen heiligzuhalten!  So ist's auch mit dem
+Fuersten, der es traegt.  Wir Menschen in unsrer Beduerftigkeit koennen
+keinen Stern vom Himmel herunterreissen, um ihn auf die Standarte zu
+nageln, und der Cherub mit dem Flammenschwert, der uns aus dem
+Paradies in die Wueste hinausstiess, ist nicht bei uns geblieben, um
+ueber uns zu richten.  Wir muessen das an sich Wertlose stempeln und
+ihm einen Wert beilegen, wir muessen den Staub ueber den Staub erhoehen,
+bis wir wieder vor dem stehen, der nicht Koenige und Bettler, nur Gute
+und Boese kennt, und der seine Stellvertreter am strengsten zur
+Rechenschaft zieht.  Weh dem, der diese uebereinkunft der Voelker nicht
+versteht, Fluch dem, der sie nicht ehrt!  So greife dann endlich auch
+in deine Brust, sprich: Vater, ich habe gesuendigt im Himmel und vor
+dir, aber ich will's buessen, ich will leben!
+
+Albrecht.  Haengt das von mir ab?
+
+Ernst.  Dies Wort ist mir genug!  Gott wird dich staerken, und deine
+Witwe selbst wird fuer dich beten!
+
+Albrecht.  Meine Witwe!?
+
+Ernst.  Was ich ihr im Leben versagen musste, kann ich ihr im Tode
+gewaehren, und ich tu es gern, denn ich weiss, dass sie's verdient!
+Deine Gemahlin konnte ich nicht anerkennen, deine Witwe will ich
+selbst bestatten und fuer ewige Zeiten an ihrem Grabe einen
+feierlichen Totendienst stiften, damit das reinste Opfer, das der
+Notwendigkeit im Lauf aller Jahrhunderte gefallen ist, nie im
+Andenken der Menschen erloesche!
+
+Albrecht.  Ich will--Ich will, was ich noch kann!  (Gegen den Herold.)
+Kaiserlicher Majestaet meinen Respekt!  (Zu Ernst.)  Euch, mein Herr
+und Vater--(Er will ihm das Schwert ueberreichen.)  Euch-
+
+Ernst (oeffnet die Arme und streitet ihm entgegen).
+
+Albrecht (weicht zurueck, und zieht).  Nein, nein!  Die Hoelle ueber
+mich, aber Blut fuer Blut!
+
+Ernst.  Halt!  Erst nimm den da!  (Er reicht ihm den Herzogsstab, den
+Albrecht unwillkuerlich fasst.)  Der macht dich zum Richter deines
+Vaters!  Warum willst du sein Moerder werden!
+
+Preising.  Herzog!
+
+Ernst.  So war's beschlossen!  Und nicht bloss des Feierabends wegen!
+Ich brauch sein Ja!  Kann er's mir in seinem Gewissen weigern, so
+steht's schlimm um mich!
+
+Albrecht.  Mich schwindelt!  Nimm ihn zurueck!  Er brennt mir in der
+Hand.
+
+Ernst.  Trag ihn ein Jahr in der Furcht des Herrn, wie ich!  Kannst
+du mich dann nicht lossprechen, so ruf mich, und ich selbst will mich
+strafen, wie du's gebeutst!  Im Kloster zu Andechs bin ich zu finden!
+
+Albrecht (will niederknien).  Vater, nicht vor Kaiser und Reich, aber
+vor dir!
+
+Ernst.  Wart! wart!  Mein Tagewerk war schwer, aber vielleicht leb
+ich noch uebers Jahr!  (Geht; zu Preising, als er folgen will.)  Bleibt!
+An einem Moench ist's genug!
+
+
+Ende dieses Project Gutenberg Etextes "Agnes Bernauer" von Friedrich
+Hebbel.
+
+

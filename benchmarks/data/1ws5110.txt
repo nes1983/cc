@@ -1,0 +1,4532 @@
+Project Gutenberg's The Puritain Widow, attributed in part to Shakespeare
+PG has multiple editions of William Shakespeare's Complete Works
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before distributing this or any other
+Project Gutenberg file.
+
+We encourage you to keep this file, exactly as it is, on your
+own disk, thereby keeping an electronic path open for future
+readers.  Please do not remove this.
+
+This header should be the first thing seen when anyone starts to
+view the etext. Do not change or edit it without written permission.
+The words are carefully chosen to provide users with the
+information they need to understand what they may and may not
+do with the etext.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Are Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get etexts, and
+further information, is included below.  We need your donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+
+
+Title: The Puritain Widow
+
+Author: William Shakespeare [Apocrypha]
+
+Release Date: July, 2003 [Etext# 4214]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on December 11, 2001]
+
+Edition: 10
+
+Language: English
+
+Character set encoding: ASCII
+
+Project Gutenberg's The Puritain Widow, by William Shakespeare [Apocrypha]
+***********This file should be named 1ws5110.txt or 1ws5110.zip***********
+
+Corrected EDITIONS of our etexts get a new NUMBER, 1ws5111.txt
+VERSIONS based on separate sources get new LETTER, 1ws5110a.txt
+
+This etext was produced by Tony Adam <anthony-adam@tamu.edu>
+
+
+Project Gutenberg Etexts are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep etexts in compliance with any particular paper edition.
+
+We are now trying to release all our etexts one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+etexts, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any Etext before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2001 as we release over 50 new Etext
+files per month, or 500 more Etexts in 2000 for a total of 4000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 4,000 Etexts.  We need
+funding, as well as continued efforts by volunteers, to maintain
+or increase our production and reach our goals.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of November, 2001, contributions are being solicited from people
+and organizations in: Alabama, Arkansas, Connecticut, Delaware,
+Florida, Georgia, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky,
+Louisiana, Maine, Michigan, Missouri, Montana, Nebraska, Nevada, New
+Jersey, New Mexico, New York, North Carolina, Oklahoma, Oregon,
+Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee,
+Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin,
+and Wyoming.
+
+*In Progress
+
+We have filed in about 45 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+All donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fundraising
+requirements for other states are met, additions to this list will be
+made and fundraising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these Etexts are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg Etexts or other materials be they hardware or
+software or any other related product without express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.10/04/01*END*
+
+
+
+
+
+
+This etext was produced by Tony Adam <anthony-adam@tamu.edu>
+
+
+
+
+THE PURITAINE WIDDOW
+
+THE
+ACTORS
+NAME
+In the Play Intitled
+The Puritan Widow.
+
+The Scene London.
+
+Lady Plus, a Citizens Widow.
+Frances,
+Moll, her two Daughters.
+Sir Godfrey, Brother-in-Law to the Widow Plus.
+Master Edmond, Son to the Widow Plus.
+George Pye-boord, a Scholar and a Citizen.
+Peter Skirmish, an old Soldier.
+Captain Idle, a Highway-man.
+Corporal Oath, a vain-glorious Fellow.
+Nichols St. Antlings,
+Simon St. Mary Overies,
+Frailty, Serving-men to the Lady Plus.
+Sir Oliver Muck-hill, a Suitor to the Lady Plus.
+Sir John Penny-Dub, a Suitor to Moll.
+Sir Andrew Tipstaff, a Suitor to Frances.
+The Sheriff of London.
+Puttock,
+Ravenshaw, Two of the Sheriffs Sergeants.
+Dogson, a Yeoman.
+A Noble-man.
+A Gentleman Citizen.
+Officers.
+
+
+ACTUS PRIMUS.
+
+Scene I.  A Garden behind the widow's house.
+
+[Enter the Lady Widdow-Plus, her two daughters Frank and Moll,
+her husband's Brother an old Knight Sir Godfrey, with her Son
+and heir Master Edmond, all in mourning apparel, Edmond in a
+Cyrpess Hat.  The Widdow wringing her hands, and bursting out
+Into passion, as newly come from the Burial of her husband.
+
+
+WIDOW.
+Oh, that ever I was borne, that ever I was borne!
+
+SIR GODFREY.
+Nay, good Sister, dear sister, sweet sister, be of good
+comfort; show your self a woman, now or never.
+
+WIDOW.
+Oh, I have lost the dearest man, I have buried the sweetest
+husband that ever lay by woman.
+
+SIR GODFREY.
+Nay, give him his due, he was indeed an honest, virtuous,
+Discreet, wise man,--he was my Brother, as right as right.
+
+WIDOW.
+O, I shall never forget him, never forget him; he was a man
+so well given to a woman--oh!
+
+SIR GODFREY.
+Nay, but, kind Sister, I could weep as much as any woman,
+but, alas, our tears cannot call him again:  me thinks you
+are well read, Sister, and know that death is as common as
+Homo, a common name to all men:--a man shall be taken when
+he's making water.--Nay, did not the learned Parson, Master
+Pigman, tell us e'en now, that all Flesh is frail, we are
+borne to die, Man ha's but a time:  with such like deep and
+profound persuasions, as he is a rare fellow, you know, and
+an excellent Reader:  and for example, (as there are
+examples aboundance,) did not Sir Humfrey Bubble die tother
+day?  There's a lusty Widdow; why, she cried not above half
+an hour--for shame, for shame! Then followed him old Master
+Fulsome, the Usurer:  there's a wise Widdow; why, she cried
+ne'er a whit at all.
+
+WIDOW.
+O, rank not me with those wicked women:  I had a husband
+Out-shined 'em all.
+
+SIR GODFREY.
+Aye, that he did, yfaith:  he out-shined 'em all.
+
+WIDOW.
+Doost thou stand there and see us all weep, and not once
+shed a tear for thy father's death? oh, thou ungratious son
+and heir, thou!
+
+EDMOND.
+Troth, Mother, I should not weep, I'm sure; I am past a
+child, I hope, to make all my old School fellows laugh at
+me; I should be mocked, so I should.  Pray, let one of my
+Sisters weep for me.  I'll laugh as much for her another
+time.
+
+WIDOW.
+Oh, thou past-Grace, thou! out of my sight, thou graceless
+imp, thou grievest me more than the death of thy Father! oh,
+thou stubborn only son! hadst thou such an honest man to thy
+Father--that would deceive all the world to get riches for
+thee--and canst thou not afford a little salt water? he that
+so wisely did quite over-throw the right heir of those lands,
+which now you respect not:  up every morning betwixt four
+and five; so duly at Westminster Hall every Term-Time, with
+all his Cards and writings, for thee, thou wicked Absolon--
+oh, dear husband!
+
+EDMOND.
+Weep, quotha?  I protest I am glad he's Churched; for now
+he's gone, I shall spend in quiet.
+
+FRANCES.
+Dear mother, pray cease; half your Tears suffice.
+Tis time for you to take truce with your eyes;
+Let me weep now.
+
+WIDOW.
+Oh, such a dear knight! such a sweet husband have I lost,
+have I lost!--If Blessed be the coarse the rain rains upon,
+he had it pouring down.
+
+SIR GODFREY.
+Sister, be of good cheer, we are all mortal our selves.  I
+come upon you freshly.  I near speak without comfort, hear
+me what I shall say:--my brother ha's left you wealthy,
+y'are rich.
+
+WIDOW.
+Oh!
+
+SIR GODFREY.
+I say y'are rich:  you are also fair.
+
+WIDOW.
+Oh!
+
+SIR GODFREY.
+Go to, y'are fair, you cannot smother it; beauty will come
+to light; nor are your years so far enter'd with you, but
+that you will be sought after, and may very well answer
+another husband; the world is full of fine Gallants, choice
+enow, Sister,--for what should we do with  all our Knights,
+I pray, but to marry rich widows, wealthy Citizens' widows,
+lusty fair-browed Ladies? go to, be of good comfort, I say:
+leave snobbing and weeping--Yet my Brother was a kind hearted
+man--I would not have the Elf see me now!--Come, pluck up a
+woman's heart--here stands your Daughters, who be well
+estated, and at maturity will also be enquir'd after with
+good husbands, so all these tears shall be soon dried up and
+a better world than ever--What, Woman? you must not weep
+still; he's dead, he's buried--yet I cannot choose but weep
+for him!
+
+WIDOW.
+Marry again! no! let me be buried quick then!
+And that same part of Quire whereon I tread
+To such intent, O may it be my grave;
+And that the priest may turn his wedding prayers,
+E'en with a breath, to funeral dust and ashes!
+Oh, out of a million of millions, I should ne'er find such
+a husband; he was unmatchable,--unmatchable! nothing was
+too hot, nor too dear for me, I could not speak of that
+one thing, that I had not:  beside I had keys of all, kept
+all, receiv'd all, had money in my purse, spent what I would,
+came home when I would, and did all what I would.  Oh, my
+sweet husband!  I shall never have the like.
+
+SIR GODFREY.
+Sister, ne'er say so; he was an honest brother of mine, and
+so, and you may light upon one as honest again, or one as
+honest again may light upon you:  that's the properer
+phrase, indeed.
+
+WIDOW.
+Never! Oh, if you love me, urge it not.
+
+[Kneels.]
+
+Oh may I be the by-word of the world,
+The common talk at Table in the mouth
+Of every Groom and Waiter, if e'er more
+I entertain the carnal suite of Man!
+
+MOLL.
+I must kneel down for fashion too.
+
+FRANCES.
+And I, whom never man as yet hath scald,
+E'ev in this depth of general sorrow, vow
+Never to marry, to sustain such loss
+As a dear husband seems to be, once dead.
+
+MOLL.
+I lov'd my father well, too; but to say,
+Nay, vow, I would not marry for his death--
+Sure, I should speak false Latin, should I not?
+I'd as soon vow never to come in Bed.
+Tut!  Women must live by th' quick, and not by th' dead.
+
+WIDOW.
+Dar Copy of my husband, oh let me kiss thee.
+How like is this Model! This brief Picture
+
+[Drawing out her husband's Picture.]
+
+Quickens my tears:  my sorrows are renew'd
+At this fresh sight.
+
+SIR GODFREY.
+Sister--
+
+WIDOW.
+Away,
+All honesty with him is turn'd to clay.
+Oh my sweet husband, oh--
+
+FRANCES.
+My dear father!
+
+[Exeunt mother and Frances.]
+
+MOLL.
+Here's a pulling, indeed!  I think my Mother weeps for all
+the women that ever buried husbands; for if from time to
+time all the Widowers' tears in England had been bottled
+up, I do not think all would have filled a three-half-penny
+Bottle.  Alas, a small matter bucks a hand-kercher,--and
+sometimes the spittle stands to nie Saint Thomas a Watrings.
+Well, I can mourn in good sober sort as well as another;
+but where I spend one tear for a dead Father, I could give
+twenty kisses for a quick husband.
+
+[Exit Moll.]
+
+SIR GODFREY.
+Well, go thy ways, old Sir Godfrey, and thou mayest be
+proud on't, thou hast a kind loving sister-in-law; how
+constant! how passionate! how full of April the poor soul's
+eyes are!  Well, I would my Brother knew on't, he would
+then know what a kind wife he had left behind him:  truth,
+and twere not for shame that the Neighbours at th' next
+garden should hear me, between joy and grief I should e'en
+cry out-right!
+
+[Exit Sir Godfrey.]
+
+EDMOND.
+So, a fair riddance!  My father's laid in dust; his Coffin
+and he is like a whole-meat-pye, and the worms will cut
+him up shortly.  Farewell, old Dad, farewell.  I'll be
+curb'd in no more.  I perceived a son and heir may quickly
+be made a fool, and he will be one, but I'll take another
+order.--Now she would have me weep for him, for-sooth, and
+why? because he cozn'd the right heir, being a fool, and
+bestow'd those Lands upon me his eldest Son; and therefore
+I must weep for him, ha, ha.  Why, all the world knows, as
+long as twas his pleasure to get me, twas his duty to get
+for me:  I know the law in that point; no Attorney can
+gull me.  Well, my Uncle is an old Ass, and an Admirable
+Cockscomb.  I'll rule the Roast my self.  I'll be kept
+under no more; I know what I may do well enough by my
+Father's Copy:  the Law's in mine own hands now:  nay, now
+I know my strength, I'll be strong enough for my Mother,
+I warrant you.
+
+[Exit.]
+
+
+SCENE II.  A street.
+
+[Enter George Pye-board, a scholar and a Citizen, and unto
+him an old soldier, Peter Skirmish.]
+
+PYE.
+What's to be done now, old Lad of War? thou that wert wont
+to be as hot as a turn-spit, as nimble as a fencer, and as
+lousy as a school-master; now thou art put to silence like
+a Sectary.--War sits now like a Justice of peace, and does
+nothing.  Where be your Muskets, Caleiuers and Hotshots? in
+Long-lane, at Pawn, at Pawn.--Now keys are your only Guns,
+Key-guns, Key-guns, and Bawds the Gunners, who are your
+Sentinels in peace, and stand ready charg'd to give warning,
+with hems, hums, and pockey-coffs; only your Chambers are
+licenc'st to play upon you, and Drabs enow to give fire to 'em.
+
+SKIRMISH.
+Well, I cannot tell, but I am sure it goes wrong with me, for
+since the cessure of the wars, I have spent above a hundred
+crowns out a purse.  I have been a soldier any time this
+forty years, and now I perceive an old soldier and an old
+Courtier have both one destiny, and in the end turn both into
+hob-nails.
+
+PYE.
+Pretty mystery for a begger, for indeed a hob-nail is the true
+emblem of a begger's shoe-sole.
+
+SKIRMISH.
+I will not say but that war is a blood-sucker, and so; but,
+in my conscience, (as there is no soldier but has a piece of
+one, though it be full of holes like a shot Antient; no matter,
+twill serve to swear by) in my conscience, I think some kind
+of Peace has more hidden oppressions, and violent heady sins,
+(though looking of a gentle nature) then a profest war.
+
+PYE.
+Troth, and for mine own part, I am a poor Gentleman, and a
+Scholar:  I have been matriculated in the University, wore
+out six Gowns there, seen some fools, and some Scholars, some
+of the City, and some of the Country, kept order, went bare-
+headed over the Quadrangle, eat my Commons with a good
+stomach, and Battled with Discretion; at last, having done
+many slights and tricks to maintain my wit in use (as my brain
+would never endure me to be idle,) I was expeld the University,
+only for stealing a Cheese out of Jesus College.
+
+SKIRMISH.
+Ist possible?
+
+PYE.
+Oh! there was one Welshman (God forgive him) pursued it hard;
+and never left, till I turned my staff toward London, where
+when I came, all my friends were pitt-hold, gone to Graves,
+(as indeed there was but a few left before.)  Then was I turned
+to my wits, to shift in the world, to tower among Sons and
+Heirs, and Fools, and Gulls, and Lady's eldest Sons, to work
+upon nothing, to feed out of Flint, and ever since has my
+belly been much beholding to my brain.  But, now, to return
+to you, old Skirmish:  I say as you say, and for my part wish
+a Turbulency in the world, for I have nothing to lose but my
+wits, and I think they are as mad as they will be:  and to
+strengthen your Argument the more, I say an honest war is
+better than a bawdy peace, as touching my profession.  The
+multiplicity of Scholars, hatcht and nourisht in the idle
+Calms of peace, makes 'em like Fishes one devour another; and
+the community of Learning has so played upon affections, and
+thereby almost Religion is come about to Phantasy, and
+discredited by being too much spoken off-in so many and mean
+mouths, I my self, being a Scholar and a Graduate, have no
+other comfort by my learning, but the Affection of my words,
+to know how Scholar-like to name what I want, and can call my
+self a Begger both in Greek and Latin:  and therefore, not to
+cog with Peace, I'll not be afraid to say, 'tis a great
+Breeder, but a barren Nourisher:  a great getter of Children,
+which mus either be Thieves or Rich-men, Knaves or Beggers.
+
+SKIRMISH.
+Well, would I had been born a Knave then, when I was born
+a Begger; for if the truth were known, I think I was begot
+when my Father had never a penny in his purse.
+
+PYE.
+Puh, faint not, old Skirmish; let this warrant thee, Facilis
+Descensus Averni, 'tis an easy journey to a Knave; thou
+mayest be a Knave when thou wilt; and Peace is a good Madam
+to all other professions, and an arrant Drab to us, let us
+handle her accordingly, and by our wits thrive in despite of
+her; for since the law lives by quarrels, the Courtier by
+smooth God-morrows; and every profession makes it self
+greater by imperfections, why not we then by shifts, wiles,
+and forgeries? and seeing our brains are our only Patrimonies,
+let's spend with judgment, not like a desperate son and heir,
+but like a sober and discreet Templar,--one that will never
+march beyond the bounds of his allowance.  And for our
+thriving means, thus:  I my self will put on the Deceit of a
+Fortune-teller.
+
+SKIRMISH.
+A Fortune-teller?  Very proper.
+
+PYE.
+And you of a figure-caster, or a Conjurer.
+
+SKIRMISH.
+A Conjurer?
+
+PYE.
+Let me alone; I'll instruct you, and teach you to deceive all
+eyes, but the Devil's.
+
+SKIRMISH.
+Oh aye, for I would not deceive him, and I could choose, of
+all others.
+
+PYE.
+Fear not, I warrant you; and so by those means we shall help
+one another to Patients, as the condition of the age affords
+creatures enow for cunning to work upon.
+
+SKIRMISH.
+Oh wondrous! new fools and fresh Asses.
+
+PYE.
+Oh, fit, fit! excellent.
+
+SKIRMISH.
+What, in the name of Conjuring?
+
+PYE.
+My memory greets me happily with an admirable subject to
+gaze upon:  The Lady-Widdow, who of late I saw weeping in
+her Garden for the death of her Husband; sure she 'as but a
+watrish soul, and half on't by this time is dropt out of her
+Eyes:  device well managed may do good upon her:  it stands
+firm, my first practise shall be there.
+
+SKIRMISH.
+You have my voice, George.
+
+PYE.
+Sh'as a gray Gull to her Brother, a fool to her only son,
+and an Ape to her youngest Daughter.--I overheard 'em
+severally, and from their words I'll derive my device; and
+thou, old Peter Skirmish, shall be my second in all slights.
+
+SKIRMISH.
+Ne'er doubt me, George Pye-board,--only you must teach me
+to conjure.
+
+[Enter Captain Idle, pinioned, and with a guard of Officers
+passeth over the Stage.]
+
+PYE.
+Puh, I'll perfect thee, Peter.--How now? what's he?
+
+SKIRMISH.
+Oh George! this sight kills me.  Tis my sworn Brother,
+Captain Idle.
+
+PYE.
+Captain Idle!
+
+SKIRMISH.
+Apprehended for some felonious act or other.  He has started
+out, h'as made a Night on't, lackt silver.  I cannot but
+commend his resolution; he would not pawn his Buff-Jerkin.
+I would either some of us were employed, or might pitch our
+Tents at Usurers' doors, to kill the slaves as they peep out
+at the Wicket.
+
+PYE.
+Indeed, those are our ancient Enemies; they keep our money
+in their hands, and make us to be hangd for robbing of 'em.
+But, come, let's follow after to the Prison, and know the
+Nature of his offence; and what we can steed him in, he
+shall be sure of; and I'll uphold it still, that a charitable
+Knave is better then a soothing Puritain.
+
+[Exeunt.]
+
+
+SCENE III.  A Street.
+
+[Enter at one door Corporal Oath, a Vain-glorious fellow;
+and at the other, three of the Widdow Puritain's Servingmen,
+Nicholas Saint-Tantlings, Simon Saint-Mary-Overaries, and
+Frailty, in black scurvy mourning coats, and Books at their
+Girdles, as coming from Church.  They meet.]
+
+
+NICHOLAS.
+What, Corporal Oath?  I am sorry we have met with you,
+next our hearts; you are the man that we are forbidden to
+keep company withall.  We must not swear I can tell you,
+and you have the name for swearing.
+
+SIMON.
+Aye, Corporal Oath, I would you would do so much as forsake
+us, sir; we cannot abide you, we must not be seen in your
+company.
+
+FRAILTY.
+There is none of us, I can tell you, but shall be soundly
+whipt for swearing.
+
+CORPORAL.
+Why, how now, we three?  Puritanical Scrape-shoes, Flesh
+a good Fridays! a hand.
+
+ALL.
+Oh!
+
+CORPORAL.
+Why, Nicholas Saint-Tantlings, Simon Saint Mary Ovaries,
+ha's the De'el possest you, that you swear no better? you
+half-Christned Catomites, you ungod-mothered Varlets, do's
+the first lesson teach you to be proud, and the second to
+be Cocks-combs? proud Cocks-combs! not once to do duty to
+a man of Mark!
+
+FRAILTY.
+A man of Mark, quatha!  I do not think he can shew a Begger's
+Noble.
+
+CORPORAL.
+A Corporal, a Commander, one of spirit, that is able to blow
+you up all dry with your Books at your Girdles.
+
+SIMON.
+We are not taught to believe that, sir, for we know the
+breath of man is weak.
+
+[Corporal breathes upon Frailty.]
+
+FRAILTY.
+Foh, you lie, Nicholas; for here's one strong enough.  Blow
+us up, quatha:  he may well blow me above twelve-score off
+an him.  I warrant, if the wind stood right, a man might
+smell him from the top of Newgate, to the Leads of Ludgate.
+
+CORPORAL.
+Sirrah, thou Hollow-Book of Max-candle--
+
+NICHOLAS.
+Aye, you may say what you will, so you swear not.
+
+CORPORAL.
+I swear by the--
+
+NICHOLAS.
+Hold, hold, good Corporal Oath; for if you swear once, we
+shall all fall down in a swoon presently.
+
+CORPORAL.
+I must and will swear: you quivering Cocks-combs, my Captain
+is imprisoned, and by Vulcan's Leather Cod-piece point--
+
+NICHOLAS.
+O Simon, what an oath was there.
+
+FRAILTY.
+If he should chance to break it, the poor man's Breeches
+would fall down about his heels, for Venus allows him but
+one point to his hose.
+
+CORPORAL.
+With these my Bully-Feet I will thump ope the Prison doors,
+and brain the Keeper with the begging Box, but I'll see my
+honest sweet Captain Idle at liberty.
+
+NICHOLAS.
+How, Captain Idle? my old Aunt's son, my dear Kinsman, in
+Capadochio?
+
+CORPORAL.
+Aye, thou Church-peeling, thou Holy-paring, religious outside,
+thou! if thou hadst any grace in thee, thou would'st visit
+him, relieve him, swear to get him out.
+
+NICHOLAS.
+Assure you, Corporal, indeed-lam tis the first time I heard
+on't.
+
+CORPORAL.
+Why do't now, then, Marmaset:  bring forth thy yearly-wages,
+let not a Commander perish!
+
+SIMON.
+But, if he be one of the wicked, he shall perish.
+
+NICHOLAS.
+Well, Corporal, I'll e'en them along with you, to visit my
+Kinsman:  if I can do him any good, I will,--but I have
+nothing for him.  Simon Saint Mary Ovaries and Frailty, pray
+make a lie for me to the Knight my Master, old Sir Godfrey.
+
+CORPORAL.
+A lie? may you lie then?
+
+FRAILTY.
+O, aye, we may lie, but we must not swear.
+
+SIMON.
+True, we may lie with our Neighbor's wife, but we must not
+swear wedid so.
+
+CORPORAL.
+Oh, an excellent Tag of religion!
+
+NICHOLAS.
+Oh Simon, I have thought upon a sound excuse; it will go
+currant:  say that I am gone to a Fast.
+
+SIMON.
+To a Fast? very good.
+
+NICHOLAS.
+Aye, to a Fast, say, with Master Fullbelly the Minister.
+
+SIMON.
+Master Fullbelly? an honest man:  he feeds the flock well,
+for he's an excellent feeder.
+
+[Exit Corporal, Nicholas.]
+
+FRAILTY.
+Oh, aye, I have seen him eat up a whole Pig, and afterward
+fall to the pittitoes.
+
+[Exit Simon and Frailty.]
+
+
+SCENE IV.
+
+
+The Prison, Marshalsea.
+
+[Enter Captain Idle at one door, and later Pye-board and old
+soldier at the other.  George Pye-board, speaking within.]
+
+
+PYE.
+Pray turn the key.
+
+SKIRMISH.
+Turn the key, I pray.
+
+CAPTAIN.
+Who should those be?  I almost know their voices.--
+O my friends!
+
+[Entering.]
+
+Ya're welcome to a smelling Room here.  You newly took leave
+of the air; ist not a strange savour?
+
+PYE.
+As all prisons have:  smells of sundry wretches,
+Who, tho departed, leave their scents behind 'em.
+By Gold, Captain, I am sincerely sorry for thee.
+
+CAPTAIN.
+By my troth, George, I thank thee; but pish,--what must be,
+must be.
+
+SKIRMISH.
+Captain, what do you lie in for? ist great? what's your
+offence?
+
+CAPTAIN.
+Faith, my offence is ordinary,--common:  A High-way; and I
+fear me my penalty will be ordinary and common too: a halter.
+
+PYE.
+Nay, prophecy not so ill; it shall go heard,
+But I'll shift for thy life.
+
+CAPTAIN.
+Whether I live or die, thou'art an honest George.  I'll tell
+you--silver flowed not with me, as it had done, (for now the
+tide runs to Bawds and flatterers.)  I had a start out, and
+by chance set upon a fat steward, thinking his purse had been
+as pursey as his body; and the slave had about him but the
+poor purchase of ten groats:  notwithstanding, being descried,
+pursued, and taken, I know the Law is so grim, in respect of
+many desperate, unsettled soldiers, that I fear me I shall
+dance after their pipe for't.
+
+SKIRMISH.
+I am twice sorry for you, Captain:  first that your purchase
+was so small, and now that your danger is so great.
+
+CAPTAIN.
+Push, the worst is but death,--ha you a pipe of Tobacco
+about you?
+
+SKIRMISH.
+I think I have there abouts about me.
+
+[Captain blows a pipe.]
+
+CAPTAIN.
+Here's a clean Gentleman, too, to receive.
+
+PYE.
+Well, I must cast about some happy slight.
+Work brain, that ever didst thy Master right!
+
+CAPTAIN.
+Keeper! let the key be turn'd!
+
+[Corporal and Nicholas within.]
+
+NICHOLAS.
+Aye, I pray, Master keeper, give's a cast of your office.
+
+CAPTAIN.
+How now? more Visitants?--what, Corporal Oath?
+
+PYE.
+Corporal?
+
+SKIRMISH.
+Corporal?
+
+CORPORAL.
+In prison, honest Captain? this must not be.
+
+NICHOLAS.
+How do you, Captain Kinsman>
+
+CAPTAIN.
+Good Cocks-comb! what makes that pure, starch'd fool here?
+
+NICHOLAS.
+You see, Kinsman, I am somewhat bold to call in, and see how
+you do.  I heard you were safe enough, and I was very glad
+on't that it was no worse.
+
+CAPTAIN.
+This is a double torture now,--this fool by'th book
+Do's vex me more than my imprisonment.
+What meant you, Corporal, to hook him hither?
+
+CORPORAL.
+Who, he? he shall relieve thee, and supply thee;
+I'll make him do 't.
+
+CAPTAIN.
+[Aside, to Oath.]  Fie, what vain breath you spend! he supply?
+I'll sooner expect mercy from a Usurer when my bond's
+Forfeited, sooner kindness from a Layer when my money's spent:
+Nay, sooner charity from the devil, than good from a Puritan!
+I'll look for relief from him, when Lucifer is restor'd to
+his blood, and in Heaven again.
+
+NICHOLAS.
+I warrant, my Kinsman's talking of me, for my left ear burns
+most tyrannically.
+
+PYE.
+Captain Idle, what's he there? he looks like a Monkey upward,
+and a Crane down-ward.
+
+CAPTAIN.
+Pshaw, a foolish Cousin of mine; I must thank God for him.
+
+PYE.
+Why, the better subject to work a scape upon; thou shalt
+o'en change clothes with him, and leave him here, and so--
+
+CAPTAIN.
+Push, I publish't him e'en now to my Corporal:  he will be
+damned, ere he do me so much good; why, I know a more proper,
+a more handsome device than that, if the slave would be
+sociable.  Now, goodman Fleer-face.
+
+NICHOLAS.
+Oh, my Cousin begins to speak to me now:  I shall be
+acquainted with him again, I hope.
+
+SKIRMISH.
+Look what ridiculous Raptures take hold of his wrinkles.
+
+PYE.
+Then, what say you to this device? a happy one, Captain?
+
+CAPTAIN.
+Speak low, George; Prison Rats have wider ears than those
+in Malt-lofts.
+
+NICHOLAS.
+Cousin, if it lay in my power, as they say--to--do--
+
+CAPTAIN.
+Twould do me an exceeding pleasure, indeed, that, but ne'er
+talk forder on't:  the fool will be hang'd, ere he do't.
+
+[To the Corporal.]
+
+CORPORAL.
+Pax, I'll thump 'im to't.
+
+PYE.
+Why, do but try the Fopster, and break it to him bluntly.
+
+CAPTAIN.
+And so my disgrace will dwell in his Jaws, and the slave
+slaver out our purpose to his Master, for would I were but
+as sure on't as I am sure he will deny to do't.
+
+NICHOLAS.
+I would be heartily glad, Cousin, if any of my friendships,
+as they say, might--stand--ah--
+
+PYE.
+Why, you see he offers his friendship foolishly to you
+already.
+
+CAPTAIN.
+Aye, that's the hell on't, I would he would offer it wisely.
+
+NICHOLAS.
+Verily, and indeed la, Cousin--
+
+CAPTAIN.
+I have took note of thy fleers a good while:  if thou art
+minded to do me good--as thou gapst upon me comfortably,
+and giv'st me charitable faces, which indeed is but a
+fashion in you all that are Puritains--wilt soon at night
+steal me thy Master's chain?
+
+NICHOLAS.
+Oh, I shall swoon!
+
+PYE.
+Corporal, he starts already.
+
+CAPTAIN.
+I know it to be worth three hundred Crowns, and with the
+half of that I can buy my life at a Brokers, at second hand,
+which now lies in pawn to th' Law:  if this thou refuse to
+do, being easy and nothing dangerous, in that thou art held
+in good opinion of thy Master, why tis a palpable Argument
+thou holdst my life at no price, and these thy broken and
+unioynted offers are but only created in thy lip, now borne,
+and now buried, foolish breath only.  What, woult do't? shall
+I look for happiness in thy answer?
+
+NICHOLAS.
+Steal my Master's chain, qu'the? no, it shall ne'er be said,
+that Nicholas Saint Tantlings committed Bird-lime!
+
+CAPTAIN.
+Nay, I told you as much; did I not? tho he be a Puritain, yet
+he will be a true man.
+
+NICHOLAS.
+Why, Cousin, you know tis written, thou shalt not steal.
+
+CAPTAIN.
+Why, and fool, thou shalt love thy Neighbour, and help him in
+extremities.
+
+NICHOLAS.
+Mass, I think it be, indeed:  in what Chapter's that, Cousin?
+
+CAPTAIN.
+Why, in the first of Charity, the 2. Verse.
+
+NICHOLAS.
+The first of Charity, quatha! that's a good jest; there's no
+such Chapter in my book!
+
+CAPTAIN.
+No, I knew twas torn out of thy Book, and that makes so little
+in thy heart.
+
+PYE.
+Come, let me tell you, ya're too unkind a Kinsman, yfaith;
+the Captain loving you so dearly, aye, like the Pomwater of
+his eye, and you to be so uncomfortable:  fie, fie.
+
+NICHOLAS.
+Pray, do not wish me to be hangd:  any thing else that I can
+do, had it been to rob, I would ha don't; but I must not
+steal:  that's the word, the literal, thou shalt not steal;
+and would you wish me to steal, then?
+
+PYE.
+No, faith, that were too much, to speak truth:  why, woult
+thou nim it from him?
+
+NICHOLAS.
+That I will!
+
+PYE.
+Why, ynough, bully; he shall be content with that, or he
+shall ha none; let me alone with him now!  Captain, I ha
+dealt with your Kins-man in a Corner; a good, kind-natured
+fellow, me thinks:  go to, you shall not have all your own
+asking, you shall bate somewhat on't: he is not contented
+absolutely, as you would say, to steal the chain from him,--
+but to do you a pleasure, he will nim it from him.
+
+NICHOLAS.
+Aye, that I will, Cousin.
+
+CAPTAIN.
+Well, seeing he will do no more, as far as I see, I must be
+contented with that.
+
+CORPORAL.
+Here's no notable gullery!
+
+PYE.
+Nay, I'll come nearer to you, Gentleman:  because we'll have
+only but a help and a mirth on't, the knight shall not lose
+his chain neither, but it shall be only laid out of the way
+some one or two days.
+
+NICHOLAS.
+Aye, that would be good indeed, Kinsman.
+
+PYE.
+For I have a farder reach to profit us better by the missing
+on't only, than if we had it out-right, as my discourse shall
+make it known to you.--When thou hast the chain, do but
+convey it out at back-door into the Garden, and there hang it
+close in the Rosemary bank but for a small season; and by that
+harmless device, I know how to wind Captain Idle out of prison:
+the Knight thy Master shall get his pardon and release him,
+and he satisfy thy Master with his own chain, and wondrous
+thanks on both hands.
+
+NICHOLAS.
+That were rare indeed, la:  pray, let me know how.
+
+PYE.
+Nay, tis very necessary thou shouldst know, because thou
+must be employed as an Actor.
+
+NICHOLAS.
+An Actor?  O no, that's a Player; and our Parson rails again
+Players mightily, I can tell you, because they brought him
+drunk up'oth Stage once,--as he will be horribly drunk.
+
+CORPORAL.
+Mass, I cannot blame him then, poor Church-spout.
+
+PYE.
+Why, as an Intermedler, then?
+
+NICHOLAS.
+Aye, that, that.
+
+PYE.
+Give me Audience, then: when the old Knight thy Master has
+raged his fill for the loss of the chain, tell him thou hast
+a Kinsman in prison, of such exquisite Art, that the devil
+himself is French Lackey to him, and runs bare-headed by his
+horse-belly (when he has one) whom he will cause with most
+Irish Dexterity to fetch his chain, tho twere hid under a
+mine of sea-coal, and ne'er make Spade or Pickaxe his
+instruments: tell him but this, with farder instructions thou
+shalt receive from me, and thou shoust thy self a Kinsman
+indeed.
+
+CORPORAL.
+A dainty Bully.
+
+SKIRMISH.
+An honest Book-keeper.
+
+CAPTAIN.
+And my three times thrice honey Cousin.
+
+NICHOLAS.
+Nay, grace of God, I'll rob him on't suddenly, and hang it in
+the Rosemary bank; but I bear that mind, Cousin, I would not
+steal any thing, me thinks, for mine own Father.
+
+SKIRMISH.
+He bears a good mind in that, Captain!
+
+PYE.
+Why, well said; he begins to be an honest felow, faith.
+
+CORPORAL.
+In troth, he does.
+
+NICHOLAS.
+You see, Cousin, I am willing to do you any kindness, always
+saving my self harmless.
+
+[Exit Nicholas.]
+
+CAPTAIN.
+Why, I thank thee; fare thee well, I shall requite it.
+
+CORPORAL.
+Twill be good for thee, Captain, that thou has such an
+egregious Ass to thy Cousin.
+
+CAPTAIN.
+Aye, is he not a fine fool, Corporal?  But, George, thou
+talkst of Art and Conjuring; How shall that be?
+
+PYE.
+Puh, be't not in your care:
+Leave that to me and my directions.
+Well, Captain, doubt not thy delivery now,
+E'en with the vantage, man, to gain by prison,
+As my thoughts prompt me: hold on, brain and plot!
+I aim at many cunning far events,
+All which I doubt not but to hit at length.
+I'll to the Widdow with a quaint assault.
+Captain, be merry.
+
+CAPTAIN.
+Who, I?  Kerrie, merry, Buff-Jerkin.
+
+PYE.
+Oh, I am happy in more slights, and one will knit strong in
+another.--Corporal Oath.
+
+CORPORAL.
+Hoh, Bully?
+
+PYE.
+And thou, old Peter Skirmish; I have a necessary task for you
+Both.
+
+SKIRMISH.
+Lay't upon, George Pye-board.
+
+CORPORAL.
+What ere it be, we'll manage it.
+
+PYE.
+I would have you two maintain a quarrel before the Lady Widdow's
+door, and draw your swords i'th edge of the Evening; clash a
+little, clash, clash.
+
+CORPORAL.
+Fuh!
+Let us alone to make our Blades ring noon,
+Tho it be after Supper.
+
+PYE.
+I know you can.  And out of that false fire, I doubt not but to
+raise strange belief--And, Captain, to countenance my device
+the better, and grace my words to the Widdow, I have a good
+plain Satin suit, that I had of a young Reveller t'other night:
+for words pass not regarded now a days, unless they come from
+a good suit of clothes, which the Fates and my wits have
+bestowed upon me.  Well, Captain Idle, if I did not highly
+love thee, I would ne'er be seen within twelve score of a
+prison, for I protest at this instant, I walk in great danger
+of small debts; I owe money to several Hostesses, and you know
+such Jills will quickly be upon a man's Jack.
+
+CAPTAIN.
+True, George.
+
+PYE.
+Fare thee well, Captain.  Come, Corporal and Ancient! thou
+Shalt hear more news next time we greet thee.
+
+CORPORAL.
+More news!  Aye, by yon Bear at Bridge-Foot in heaven shalt
+thou.
+
+[Exeunt Pye-board, Skirmish, and Oath.]
+
+CAPTAIN.
+Enough:  my friends, farewell.
+This prison shows as if Ghosts did part in Hell.
+
+
+ACT II.
+
+SCENE I.  A room in the widow's house.
+
+[Enter Moll youngest Daughter to the Widdow: alone.]
+
+MOLL.
+Not Marry? forswear Marriage? why, all women know 'tis as
+honorable a thing as to lie with a man; and I to spite my
+Sisters vow the more, have entertained a suitor already,
+a fine gallant Knight of the last Feather:  he says he will
+Coach me too, and well appoint me, allow me money to Dice
+with-all, and many such pleasing protestations he sticks
+upon my lips; indeed, his short-winded Father ith' Country
+is wondrous wealthy, a most abominable Farmer, and therefore
+he may doote in time:  troth, I'll venture upon him.  Women
+are not without ways enow to help them-selves:  if he prove
+wise and good as his word, why, I shall love him, and use
+him kindly:  and if he prove an Ass, why, in a quarter of
+an hour's warning I can transform him into an Ox;--there
+comes in my Relief again.
+
+[Enter Frailty.]
+
+FRAILTY.
+O, Mistress Moll, Mistress Moll.
+
+MOLL.
+How now? what's the news?
+
+FRAILTY.
+The Knight your suitor, sir John Penny-Dub--
+
+MOLL.
+Sir John Penny-Dub? where? where?
+
+FRAILTY.
+He's walking in the Gallery.
+
+MOLL.
+Has my Mother seen him yet?
+
+FRAILTY.
+O no, she's--spitting in the Kitchen.
+
+MOLL.
+Direct him hither softly, good Frailty,--
+I'll meet him half way.
+
+FRAILTY.
+That's just like running a Tilt; but I hope he'll break
+nothing this time.
+
+[Exit.]
+
+[Enter Sir John Penny-Dub.]
+
+MOLL.
+'Tis happiness my Mother saw him not:
+O welcome, good Sir John.
+
+PENNY-DUB.
+I thank you, faith.--Nay, you must stand me, till I kiss
+you:  'tis the fashion every where, I-faith, and I came
+from Court enow.
+
+MOLL.
+Nay, the Fates forfend that I should anger the fashion!
+
+PENNY-DUB.
+Then, not forgetting the sweet of new ceremonies, I first
+fall back, then recovering my self, make my honour to your
+lip thus:  and then accost it.
+
+MOLL.
+Trust me, very pretty, and moving; y'are worthy on't, sir.
+
+[Kissing:  Enter Widdow and Sir Godfrey.]
+
+O, my Mother, my Mother! now she's here, we'll steal into
+the Gallery.
+
+[Exeunt.]
+
+SIR GODFREY.
+Nay, Sister, let Reason rule you, do not play the fool;
+stand not in your own light.  You have wealthy offers, large
+tendrings; do not with-stand your good fortune:  who comes a
+wooing to you, I pray? no small fool; a rich Knight ath City,
+Sir Oliver Muck-Hill--no small fool I can tell you:  and
+Furthermore, as I heard late by your Maid-servants, (as your
+Maid-servants will say to me any thing, I thank 'em) both your
+Daughters are not without Suitors, aye, and worthy ones too!
+one a Brisk Courtier, Sir Andrew Tip-Staff, suitor a far off
+to your eldest Daughter, and the third a huge-wealthy Farmer's
+son, a fine young Country Knight, they call him Sir John
+Penny-Dub:  a good name, marry; he may have it coined when
+he lacks money.  What blessings are these, Sister!
+
+WIDDOW.
+Tempt me not, Satan.
+
+SIR GODFREY.
+Satan? do I look like Satan?  I hope the Devil's not so old
+as I, I tro.
+
+WIDDOW.
+You wound my senses, Brother, when you name
+A suitor to me:--oh, I cannot abide it,
+I take in poison, when I hear one nam'd.
+
+[Enter Simon.]
+
+How now, Simon? where's my son Edmund?
+
+SIMON.
+Verily Madame, he is at vain Exercise, dripping in the
+Tennis-court.
+
+WIDDOW.
+At Tennis-court? oh, now his father's gone, I shall have no
+rule with him; oh, wicked Edmond, I might well compare this
+with the Prophecy in the Chronicle, tho far inferior:  as
+Harry of Monmouth won all, and Harry of Windsor lost all;
+so Edmund of Bristow, that was the Father, got all, and
+Edmond of London, that's his son now, will spend all.
+
+SIR GODFREY.
+Peace, Sister, we'll have him reformed, there's hope on him
+yet, tho it be but a little.
+
+[Enter Frailty.]
+
+FRAILTY.
+Forsooth, Madam, there are two or three Archers at door
+would very gladly speak with your Ladyship.
+
+WIDDOW.
+Archers?
+
+SIR GODFREY.
+Your husband's Fletcher, I warrant.
+
+WIDDOW.
+Oh!
+Let them come near, they bring home things of his.
+Troth, I should ha forgot 'em.  How now, Villain?
+Which be those Archers?
+
+[Enter the suitors Sir Andrew Tip-staff, Sir Oliver Muck-hill,
+and Penny-dub.]
+
+FRAILTY.
+Why, do you not see 'em before you? are not these Archers?
+what do you call 'em?  Shooters:  Shooters and Archers are
+all one, I hope.
+
+WIDDOW.
+Out, ignorant slave.
+
+MUCK-HILL.
+Nay, pray be patient, Lady,
+We come in way of honorable love.
+
+TIP-STAFF.
+We do.
+
+PENNY-DUB.
+We do.
+
+MUCK-HILL.
+To you.
+
+TIP-STAFF.
+And to your Daughters.
+
+PENNY-DUB.
+And to your Daughters.
+
+WIDDOW.
+O, why will you offer me this Gentlemen? indeed I will not
+look upon you--when the Tears are scarce out of mine Eyes,
+not yet washt off from my Cheeks, and my deer husband's body
+scarce so cold as the Coffin, what reason have you to offer
+it?  I am not like some of your Widdows that will bury one
+in the Evening, and be sure to another ere morning.  Pray,
+away; pray, take your answers, good Knights, and you be sweet
+Knights.  I have vow'd never to marry;--and so have my
+daughters too!
+
+PENNY-DUB.
+Aye, two of you have, but the third's a good wench!
+
+MUCK-HILL.
+Lady, a shrewd answer, marry; the best is, tis but the first,
+and he's a blunt wooer, that will leave for one sharp answer.
+
+TIP-STAFF.
+Where be your daughters, Lady?  I hope they'll give us better
+encouragements.
+
+WIDDOW.
+Indeed, they'll answer you so; tak't a my word, they'll give
+you the very same answer Verbatim, truly la.
+
+PENNY-DUB.
+Mum:  Moll's a good wench still, I know what she'll do.
+
+MUCK-HILL.
+Well, Lady, for this time we'll take our leaves, hoping for
+better comfort.
+
+WIDDOW.
+O never, never! and I live these thousand years! and you be
+good Knights, do not hope; twill be all Vain, Vain,--look
+you, put off all your suits, and you come to me again.
+
+[Exeunt Sir John and Sir Andrew.]
+
+FRAILTY.
+Put off all their suits, quatha?  Aye, that's the best
+wooing of a Widdow, indeed, when a man's Nonsuited; that is,
+when he's a bed with her.
+
+[Going out, Muck-hill and Sir Godfrey.]
+
+MUCK-HILL.
+Sir Godfrey, here's twenty Angels more: work hard for me;
+there's life int yet.
+
+[Exit Muck-hill.]
+
+SIR GODFREY.
+Fear not, Sir Oliver Muck-hill, I'll stick close for you;
+leave all with me.
+
+[Enter George Pye-board, the scholar.]
+
+PYE.
+By your leave, Lady Widdow.
+
+WIDDOW.
+What, another suitor now?
+
+PYE.
+A suitor! no, I protest, Lady, if you'd give me your self,
+I'd not be troubled with you.
+
+WIDDOW.
+Say you so, Sir? then you're the better welcome, sir.
+
+PYE.
+Nay, Heaven bless me from a Widdow, unless I were sure to
+bury her speedily!
+
+WIDDOW.
+Good bluntness:  well, your business, sir?
+
+PYE.
+Very needful; if you were in private once.
+
+WIDDOW.
+Needful? brother, pray leave us; and you, sir.
+
+FRAILTY.
+I should laugh now, if this blunt fellow should put 'em all
+by side the stirrup, and vault into the saddle himself.  I
+have seen as mad a trick.
+
+[Exit Frailty.]
+
+[Enter Daughters.]
+
+WIDDOW.
+Now Sir?--here's none but we--Daughters, forbear.
+
+PYE.
+O no, pray, let 'em stay, for what I have to speak importeth
+equally to them as to you.
+
+WIDDOW.
+Then you may stay.
+
+PYE.
+I pray bestow on me a serious ear,
+For what I speak is full of weight and fear.
+
+WIDDOW.
+Fear?
+
+PYE.
+Aye, ift pass unregarded, and uneffected; Else peace and
+joy:--I pray, Attention.  Widdow, I have been a mere
+stranger for these parts that you live in, nor did I ever
+know the Husband of you, and Father of them, but I truly
+know by certain spiritual Intelligence, that he is in
+Purgatory.
+
+WIDDOW.
+Purgatory? tuh; that word deserves to be spit upon.  I
+wonder that a man of sober tongue, as you seem to be, should
+have the folly to believe there's such a place.
+
+PYE.
+Well, Lady, in cold blood I speak it; I assure you that
+there is a Purgatory, in which place I know your husband to
+reside, and wherein he is like to remain, till the dissolution
+of the world, till the last general Bon-fire, when all the
+earth shall melt into nothing and the Seas scald their finny
+labourers; so long is his abidance, unless you alter the
+property of your purpose, together with each of your Daughters
+theirs; that is, the purpose of single life in your self and
+your eldest Daughter, and the speedy determination of marriage
+in your youngest.
+
+MOLL.
+How knows he that? what, has some Devil told him?
+
+WIDDOW.
+Strange he should know our thoughts:--Why, but, Daughter, have
+you purposed speedy Marriage?
+
+PYE.
+You see she tells you aye, for she says nothing.  Nay, give me
+credit as you please.  I am a stranger to you, and yet you see I
+know your determinations, which must come to me Metaphysically,
+and by a super-natural intelligence.
+
+WIDDOW.
+This puts Amazement on me.
+
+FRANCES.
+Know our secrets!
+
+MOLL.
+I'd thought to steal a marriage: would his tongue
+Had dropt out when be blabbed it!
+
+WIDDOW.
+But, sir, my husband was too honest a dealing man to be now
+in any purgatories--
+
+PYE.
+O, Do not load your conscience with untruths;
+Tis but mere folly now to gild him o'er,
+That has past but for Copper.  Praises here
+Cannot unbind him there:  confess but truth.
+I know he got his wealth with a hard grip:
+Oh hardly, hardly.
+
+WIDDOW.
+This is most strange of all:  how knows he that?
+
+PYE.
+He would eat fools and ignorant heirs clean up;
+And had his drink from many a poor man's brow,
+E'en as their labour brewed it.
+He would scrape riches to him most unjustly;
+The very dirt between his nails was Ill-got,
+And not his own,--oh, I groan to speak on't,
+The thought makes me shudder--shudder!
+
+WIDDOW.
+It quakes me too, now I think on't.--Sir, I am much grieved,
+that you, a stranger, should so deeply wrong my dead husband!
+
+PYE.
+Oh!
+
+WIDDOW.
+A man that would keep Church so duly; rise early, before his
+servants, and e'en for Religious hast, go ungartered,
+unbuttoned, nay, sir Reverence, untrust, to Morning Prayer.
+
+PYE.
+Oh, uff.
+
+WIDDOW.
+Dine quickly upon high-days, and when I had great guests,
+would e'en shame me and rise from the Table, to get a good
+seat at an after-noon Sermon.
+
+PYE.
+There's the devil, there's the devil! true, he thought it
+Sactity enough, if he had killed a man, so tad been done in
+a Pew, or undone his Neighbour, so ta'd been near enough to
+th' Preacher.  Oh,--a Sermon's a fine short cloak of an hour
+long, and will hide the upper-part of a dissembler.--Church!
+Aye, he seemed all Church, and his conscience was as hard as
+the Pulpit!
+
+WIDDOW.
+I can no more endure this.
+
+PYE.
+Nor I, widdow, endure to flatter.
+
+WIDDOW.
+Is this all your business with me?
+
+PYE.
+No, Lady, tis but the induction too'te.  You may believe my
+strains, I strike all true, And if your conscience would leap
+up to your tongue, your self would affirm it:  and that you
+shall perceive I know of things to come as well as I do of
+what is present, a Brother of your husband's shall shortly
+have a loss.
+
+WIDDOW.
+A loss; marry, heaven for-fend!  Sir Godfrey, my brother?
+
+PYE.
+Nay, keep in your wonders, will I have told you the fortunes
+of you all; which are more fearful, if not happily prevented:
+--for your part and your daughters, if there be not once this
+day some blood-shed before your door, whereof the human
+creature dies, two of you--the elder--shall run mad.
+
+MOTHER AND FRANCES.
+Oh!
+
+MOLL.
+That's not I yet!
+
+PYE.
+And with most impudent prostitution show your naked bodies
+to the view of all beholders.
+
+WIDDOW.
+Our naked bodies? fie, for shame!
+
+PYE.
+Attend me: and your younger daughter be strocken dumb.
+
+MOLL.
+Dumb? out, alas:  tis the worst pain of all for a Woman.  I'd
+rather be mad, or run naked, or any thing:  dumb?
+
+PYE.
+Give ear:  ere the evening fall upon Hill, Bog, and Meadow,
+this my speech shall have past probation, and then shall I be
+believed accordingly.
+
+WIDDOW.
+If this be true, we are all shamed, all undone.
+
+MOLL.
+Dumb?  I'll speak as much as ever I can possible before
+evening!
+
+PYE.
+But if it so come to pass (as for your fair sakes I wish it
+may) that this presage of your strange fortunes be prevented
+by that accident of death and blood-shedding which I before
+told you of:  take heed upon your lives that two of you, which
+have vow'd never to marry, seek you out husbands with all
+present speed, and you, the third, that have such a desire to
+out-strip chastity, look you meddle not with a husband.
+
+MOLL.
+A double torment.
+
+PYE.
+The breach of this keeps your father in Purgatory, and the
+punishments that shall follow you in this world would with
+horror kill the Ear should hear 'em related.
+
+WIDDOW.
+Marry? why I vowed never to marry.
+
+FRANCES.
+And so did I.
+
+MOLL.
+And I vowed never to be such an Ass, but to marry:  what a
+cross Fortune's this!
+
+PYE.
+Ladies, tho I be a Fortune-teller, I cannot better Fortunes;
+you have 'em from me as they are revealed to me: I would they
+were to your tempers, and fellows with your bloods, that's
+all the bitterness I would you.
+
+WIDDOW.
+Oh, 'tis a just vengeance for my husband's hard purchases.
+
+PYE.
+I wish you to be-think your selves, and leave 'em.
+
+WIDDOW.
+I'll to Sir Godfrey, my Brother, and acquaint him with these
+fearful presages.
+
+FRANCES.
+For, Mother, they portend losses to him.
+
+WIDDOW.
+Oh, aye, they do, they do.
+If any happy issue crown thy words,
+I will reward thy cunning.
+
+PYE.
+'Tis enough Lady; I wish no higher.
+
+[Exit Widdow and Frances.]
+
+MOLL.
+Dumb! and not marry, worse!
+Neither to speak, nor kiss, a double curse.
+
+[Exit.]
+
+PYE.
+So all this comes well about yet.  I play the Fortune-teller
+as well as if I had had a Witch to my Grannam:  for by good
+happiness, being in my Hostesses' Garden, which neighbours
+the Orchard o the Widdow, I laid the hole of mine ear to a
+hole in the wall, and heard 'em make these vows, and speak
+those words upon which I wrought these advantages; and to
+encourage my forgery the more, I may now perceive in 'em a
+natural simplicity which will easily swallow an abuse, if
+any covering be over it:  and to confirm my former presage
+to the Widdow, I have advised old Peter Skirmish, the Soldier,
+to hurt Corporal Oath upon the Leg; and in that hurry I'll
+rush amongst 'em, and in stead of giving the Corporal some
+Cordial to comfort him, I'll power into his mouth a potion
+of a sleepy Nature, to make him seem as dead; for the which
+the old soldier being apprehended, and ready to be born to
+execution, I'll step in, and take upon me the cure of the
+dead man, upon pain of dying the condemned's death:  the
+Corporal will wake at his minute, when the sleepy force has
+wrought it self, and so shall I get my self into a most
+admired opinion, and under the pretext of that cunning,
+beguile as I see occasion:  and if that foolish Nicholas
+Saint Tantlings keep true time with the chain, my plot will
+be sound, the Captain delivered, and my wits applauded among
+scholars and soldiers for ever.
+
+[Exit Pye-board.]
+
+
+SCENE II.  A Garden.
+
+[Enter Nicholas Saint Tantlings with the chain.]
+
+NICHOLAS.
+Oh, I have found an excellent advantage to take away the
+chain:  my Master put it off e'en now to say on a new
+Doublet, and I sneak't it away by little and little most
+Puritanically.  We shall have good sport anon when ha's
+missed it about my Cousin the Conjurer.  The world shall
+see I'm an honest man of my word, for now I'm going to hang
+it between Heaven and Earth among the Rosemary branches.
+
+[Exit Nicholas.]
+
+
+ACTUS 3.
+
+
+SCENE I.  The street before the Widow's house.
+
+[Enter Simon Saint Mary-Ovaries and Frailty.]
+
+
+FRAILTY.
+Sirrah Simon Saint Mary-Ovaries, my Mistress sends away all
+her suitors and puts fleas in their ears.
+
+SIMON.
+Frailty, she does like an honest, chaste, and virtuous woman;
+for widdows ought not to wallow in the puddle of iniquity.
+
+FRAILTY.
+Yet, Simon, many widdows will do't, what so comes on't.
+
+SIMON.
+True, Frailty, their filthy flesh desires a Conjunction
+Copulative.  What strangers are within, Frailty?
+
+FRAILTY.
+There's none, Simon, but Master Pilfer the Tailor:  he's
+above with Sir Godfrey praising of a Doublet:  and I must
+trudge anon to fetch Master Suds, the Barber.
+
+SIMON.
+Master Suds,--a good man; he washes the sins of the Beard
+clean.
+
+[Enter old Skirmish the soldier.]
+
+SKIRMISH.
+How now, creatures? what's a clock?
+
+FRAILTY.
+Why, do you take us to be Jack ath' Clock-house?
+
+SKIRMISH.
+I say again to you what's a clock.
+
+SIMON.
+Truly la, we go by the clock our conscience:  all worldly
+Clocks, we know, go false, and are set by drunken Sextons.
+
+SKIRMISH.
+Then what's a clock in your conscience?--oh, I must break
+off, here comes the corporal--hum, hum!--what's a clock?
+
+[Enter Corporal.]
+
+CORPORAL.
+A clock? why, past seventeen.
+
+FRAILTY.
+Past seventeen? nay, ha's met with his match now, Corporal
+Oath will fit him.
+
+SKIRMISH.
+Thou doost not bawk or baffle me, doost thou?  I am a
+Soldier--past seventeen!
+
+CORPORAL.
+Aye, thou art not angry with the figures, art thou?  I will
+prove it unto thee:  12. and 1. is thirteen, I hope, 2.
+fourteen, 3. fifteen, 4. sixteen, and 5. Seventeen; then past
+seventeen:  I will take the Dials part in a just cause.
+
+SKIRMISH.
+I say 'tis but past five, then.
+
+CORPORAL.
+I'll swear 'tis past seventeen, then:  doost thou not know
+numbers? Canst thou not cast?
+
+SKIRMISH.
+Cast? dost thou speak of my casting ith' street?
+
+CORPORAL.
+Aye, and in the Market place.
+
+SIMON.
+Clubs, clubs, clubs!
+
+[Simon runs in.]
+
+FRAILTY.
+Aye, I knew by their shuffling, Clubs would be Trump; mass,
+here's the Knave, and he can do any good upon 'em:  Clubs,
+clubs, clubs.
+
+[Enter Pye-board.]
+
+CORPORAL.
+O villain, thou hast opened a vein in my leg.
+
+PYE.
+How no! for shame, for shame; put up, put up.
+
+CORPORAL.
+By yon blue Welkin, 'twas out of my part, George, to be hurt
+on the leg.
+
+[Enter Officers.]
+
+PYE.
+Oh peace now--I have a Cordial here to comfort thee.
+
+OFFICER.
+Down with 'em, down with em; lay hands upon the villain.
+
+SKIRMISH.
+Lay hands on me?
+
+PYE.
+I'll not be seen among em now.
+
+[Exit Pye-board.]
+
+CORPORAL.
+I'm hurt, and had more need have Surgeons
+Lay hands upon me then rough Officers.
+
+OFFICER.
+Go, carry him to be dressed then.
+
+[Exeunt some of the Sheriff's Officers with Corporal Oath.]
+
+This mutinous Soldier shall along with me to prison.
+
+SKIRMISH.
+To prison? where's George?
+
+OFFICER.
+Away with him.
+
+[Exeunt with Skirmish.]
+
+[Re-enter Pye-board.]
+
+PYE.
+So.
+All lights as I would wish.  The amazed widdow
+Will plant me strongly now in her belief,
+And wonder at the virtue of my words:
+For the event turns those presages from em
+Of being mad and dumb, and begets joy
+Mingled with admiration.  These empty creatures,
+Soldier and Corporal, were but ordained
+As instruments for me to work upon.
+Now to my patient; here's his potion.
+
+[Exit Pye-board.]
+
+
+SCENE II.  An apartment in the Widow's house.]
+
+
+[Enter the Widdow with her two Daughters.]
+
+WIDDOW.
+O wondrous happiness, beyond our thoughts:
+O lucky fair event!  I think our fortunes,
+Were blest e'en in our Cradles:  we are quitted
+Of all those shameful violent presages
+By this rash bleeding chance.  Go, Frailty, run, and know,
+Whether he be yet living, or yet dead,
+That here before my door received his hurt.
+
+FRAILTY.
+Madam, he was carried to the superiour, but if he had no
+money when he came there, I warrant he's dead by this time.
+
+[Exit Frailty.]
+
+FRANCES.
+Sure, that man is a rare fortune-teller; never looked upon
+our hands, nor upon any mark about us:  a wondrous fellow,
+surely.
+
+MOLL.
+I am glad, I have the use of my tongue yet:  tho of nothing
+else.  I shall find the way to marry too, I hope, shortly.
+
+WIDDOW.
+O where's my Brother, Sir Godfrey?  I would he were here,
+that I might relate to him how prophetically the cunning
+Gentleman spoke in all things.
+
+[Enter Sir Godfrey in a rage.]
+
+SIR GODFREY.
+O my Chain, my Chain!  I have lost my Chain.  Where be these
+Villains, Varlets?
+
+WIDDOW.
+Oh! has lost his Chain.
+
+SIR GODFREY.
+My Chain, my chain!
+
+WIDDOW.
+Brother, be patient, hear me speak:  you know I told you
+that a cunning man told me that you should have a loss, and
+he has prophecied so true.
+
+SIR GODFREY.
+Out, he's a villain, to prophecy of the loss of my chain:
+twas worth above three hundred Crowns,--besides, twas my
+Fathers, my fathers fathers, my Grand-fathers huge grant-
+fathers.  I had as lieve ha lost my Neck, as the chain that
+hung about it.  O, my chain, my chain!
+
+WIDDOW.
+Oh, brother, who can be against a misfortune! tis happy twas
+no more.
+
+SIR GODFREY.
+No, more!  O goodly godly sister, would you had me lost more?
+my best gown, too, with the cloth of gold-lace? my holiday
+Gascoines, and my Jerkin set with pearl? No more!
+
+WIDDOW.
+Oh, Brother! you can read--
+
+SIR GODFREY.
+But I cannot read where my chain is.--What strangers have
+been here? you let in strangers, Thieves, and Catch-poles;
+how comes it gone? there was none above with me but my Tailor;
+and my Tailor will not--steal, I hope?
+
+MOLL.
+No, he's afraid of a chain!
+
+[Enter Frailty.]
+
+WIDDOW.
+How now, sirrah? the news?
+
+FRAILTY.
+O Mistress, he may well be called a Corporal now, for his
+corps are as dead as a cole Capons.
+
+WIDDOW.
+More happiness.
+
+SIR GODFREY.
+Sirrah, what's this to my chain? where's my chain, knave?
+
+FRAILTY.
+Your chain, sir?
+
+SIR GODFREY.
+My chain is lost, villain.
+
+FRAILTY.
+I would he were hang'd in chains that has it then for me.
+Alas, sir, I saw none of your chain, since you were hung
+with it your self.
+
+SIR GODFREY.
+Out, varlet! it had full three thousand Links.
+I have oft told it over at my prayers:
+Over and over, full three thousand Links.
+
+FRAILTY.
+Had it so, sir:  sure, it cannot be lost then; I'll put you
+in that comfort.
+
+SIR GODFREY.
+Why, why?
+
+FRAILTY.
+Why, if your chain had so many Links, it cannot choose but
+come to light.
+
+[Enter Nicholas.]
+
+SIR GODFREY.
+Delusion! now, long Nicholas, where's my chain?
+
+NICHOLAS.
+Why, about your Neck, ist not, sir?
+
+SIR GODFREY.
+About my neck, Varlet!  My chain is lost.
+Tis stole away, I'm robbed.
+
+WIDDOW.
+Nay, Brother, show your self a man.
+
+NICHOLAS.
+Aye, if it be lost or stole, if he would be patient, Mistress,
+I could bring him to a Cunning Kinsman of mine that would
+fetcht again with a Sesarara.
+
+SIR GODFREY.
+Canst thou? I will be patient: say, where dwells he?
+
+NICHOLAS.
+Marry, he dwells now, Sir, where he would not dwell, and he
+could choose:  in the Marshalsea, sir; but he's a exlent
+fellow if he were out; has traveled all the world o'er, he,
+and been in the seven and twenty Provinces; why, he would
+make it be fetcht, Sir, if twere rid a thousand mile out of
+town.
+
+SIR GODFREY.
+An admirable fellow: what lies he for?
+
+NICHOLAS.
+Why, he did but rob a Steward of ten groats tother Night, as
+any man would ha done, and there he lies fort.
+
+SIR GODFREY.
+I'll make his peace:  a Trifle!  I'll get his pardon,
+Beside a bountiful reward.  I'll about it.
+But see the Clerks, the Justice will do much.
+I will about it straight:  good sister, pardon me.
+All will be well, I hope, and turn to good,
+The name of Conjurer has laid my blood.
+
+[Exeunt.]
+
+
+SCENE III.  A street.
+
+[Enter two servants with Yeoman Dogson to arrest the Scholar,
+George Pye-board.]
+
+
+PUT.
+His Hostess where he lies will trust him no longer: she
+has feed me to arrest him; and if you will accompany me,
+because I know not of what Nature the Scholar is, whether
+desperate or swift, you shall share with me, Servant Raven-
+shaw.  I have the good Angell to arrest him.
+
+RAVEN.
+Troth, I'll take part with thee, then, Sergeant, not for the
+sake of the money so much, as for the hate I bear to a
+Scholar:  why, Sergeant, tis Natural in us, you know, to
+hate Scholars, natural:  besides, the will publish our
+imperfections, Knaveries, and Convayances upon Scaffolds
+and Stages.
+
+PUT.
+Aye, and spitefully, too; troth, I have wondered how the
+slaves could see into our breasts so much, when our doublets
+are buttoned with Pewter.
+
+RAVEN.
+Aye, and so close without yielding; oh, they're parlous
+fellows, they will search more with their wits than a
+Constable with all his officers.
+
+PUT.
+Whist, whist, whist!  Yeoman Dogson Yeoman Dogson.
+
+DOGSON.
+Ha, what says Sergeant?
+
+PUT.
+Is he in the Pothecaries shop still?
+
+DOGSON.
+Aye, aye.
+
+PUT.
+Have an eye, have an eye.
+
+RAVEN.
+The best is, Sergeant, if he be a true Scholar, he wears no
+weapon, I think.
+
+PUT.
+No, no, he wears no weapon.
+
+RAVEN.
+Mass, I am right glad of that:  'tas put me in better heart.
+Nay, if I clutch him once, let me alone to drag him if he be
+stiff-necked.  I have been one of the six my self, that has
+dragged as tall men of their hands, when their weapons have
+been gone, as ever bastinadoed a Sergeant--I have done, I can
+tell you.
+
+DOGSON.
+Sergeant Puttock, Sergeant Puttock.
+
+PUT.
+Hoh.
+
+DOGSON.
+He's coming out single.
+
+PUT.
+Peace, peace, be not too greedy; let him play a little, let
+him play a litle:  we'll jerk him up of a sudden.  I ha
+fished in my time.
+
+RAVEN.
+Aye, and caught many a fool, Sergeant.
+
+[Enter Pye-board.]
+
+PYE.
+I parted now from Nicholas: the chain's couched,
+And the old Knight has spent his rage upont;
+The widdow holds me in great Admiration
+For cunning Art:  mongst joys I am 'een lost,
+For my device can no way now be crossed.
+And now I must to prison to the captain,
+And there--
+
+PUT.
+I arrest you, sir.
+
+PYE.
+Oh--I spoke truer then I was a ware, I must to prison
+indeed.
+
+PUT.
+They say you're a scholar:  nay, sir--Yeoman Dogson, have
+care to his arms--you'll rail again Sergeants, and stage
+'em! you tickle their vices!
+
+PYE.
+Nay, use me like a Gentleman, I'm little less.
+
+PUT.
+You a Gentleman? That's a good Jest, ifaith; can a Scholar
+be a Gentleman,--when a Gentleman will not be a Scholar?
+look upon your wealthy Citizen's sons, whether they be
+Scholars or no, that are Gentlemen by their father's trades:
+a Scholar a Gentleman!
+
+PYE.
+Nay, let Fortune drive all her stings into me, she cannot
+hurt that in me:  a Gentleman is Accidens Inseperable to my
+blood.
+
+RAVEN.
+A rablement, nay, you shall have a bloody rablement upon you,
+I warrant you.
+
+PUT.
+Go, Yeoman Dogson, before, and Enter the Action 'ith Counter.
+
+PYE.
+Pray do not hand me Cruelly, I'll go,
+
+[Exit Dogson.]
+
+Whether you please to have me.
+
+PUT.
+Oh, he's tame; let him loose, sergeant.
+
+PYE.
+Pray, at whose suit is this?
+
+PUT.
+Why at your Hostesses suit where you lie, Mistress Cunnyburrow,
+for bed and board, the sum four pound five shillings and five
+pence.
+
+PYE.
+I know the sum too true, yet I presumed
+Upon a farder day; well, tis my stars
+And I must bear it now, tho never harder.
+I swear now, my device is crossed indeed.
+Captain must lie bite: this is Deceit's seed.
+
+PUT.
+Come, come away.
+
+PYE.
+Pray, give me so much time as to knit my garter, and I'll
+a way with you.
+
+PUT.
+Well, we must be paid for this waiting upon you, this is no
+pains to attend thus.
+
+[Pye-board making to tie his garter.]
+
+PYE.
+I am now wretched and miserable.  I shall ne'er recover
+of this disease: hot Iron gnaw their fists! they have struck
+a Fever into my shoulder, which I shall ne'er shake out
+again, I fear me, till with a true Habeas Corpus the Sexton
+remove me.  Oh, if I take prison once, I shall be pressed
+to death with Actions, but not so happy as speedily; perhaps
+I may be forty year a pressing, till I be a thin old man;
+That, looking through the grates, men may look through me.
+All my means is confounded: what shall I do? has my wits
+served me so long, and now give me the slip (like a Trained
+servant) when I have most need of 'em? no device to keep my
+poor carcass fro these Puttocks?--yes, happiness! have I
+a paper about me now? yes, too!  I'll try it, it may hit:
+Extremity is Touch-stone unto wit.  Aye, aye.
+
+PUT.
+Sfoot, how many yards are in thy Garters, that thou art so
+long a tying on them? come away, sir.
+
+PYE.
+Troth, Sergeant, I protest, you could never ha took me at
+a worse time; for now at this instant I have no lawful
+picture about me.
+
+PUT.
+Slid, how shall we come by our fees then?
+
+RAVEN.
+We must have fees, Sirra.
+
+PYE.
+I could ha wisht, ifaith, that you had took me half an hour
+hence for your own sake; for I protest, if you had not crossed
+me, I was going in great joy to receive five pound of a
+Gentleman, for the Device of a Mask here, drawn in this paper.
+But now, come, I must be contented:  tis but so much lost, and
+answerable to the rest of my fortunes.
+
+PUT.
+Why, how far hence dwells that Gentleman?
+
+RAVEN.
+Aye, well said, sergeant, tis good to cast about for money.
+
+PUT.
+Speak; if it be not far--
+
+PYE.
+We are but a little past it, the next street behind us.
+
+PUT.
+Slid, w have waited upon you grievously already:  if you'll
+say you'll be liberal when you hate, give us double fees,
+and spend upon's, why we'll show you that kindness, and go
+along with you to the Gentleman.
+
+RAVEN.
+Aye, well said still, sergeant, urge that.
+
+PYE.
+Troth, if it will suffice, it shall be all among you; for
+my part I'll not pocket a penny:  my hostess shall have her
+four pound five shillings, and bate me the five pence, and
+the other fifteen shillings I'll spend upon you.
+
+RAVEN.
+Why, now thou art a good Scholar.
+
+PUT.
+An excellent Scholar, ifaith; has proceeded very well alate;
+come, we'll along with you.
+
+[Exeunt with him: passing in they knock at the door with a
+Knocker withinside.]
+
+
+SCENE IV.  A gallery in a gentleman's house.
+
+[Enter a servant.]
+
+SERVANT.
+Who knocks? who's at door? we had need of a Porter.
+
+PYE.
+A few friends here:--pray, is the Gentleman your master within?
+
+SERVANT.
+Yes, is your business to him?
+
+PYE.
+Aye, he knows it, when he see's me:  I pray you, have you
+forgot me?
+
+SERVANT.
+Aye, by my troth, sir.  Pray come near; I'll in and tell him
+of you:  please you to walk here in the Gallery till he comes.
+
+PYE.
+We will attend his worship.--Worship, I think, for so much
+the Posts at his door should signify, and the fair coming
+in, and the wicket; else I neither knew him nor his worship,
+but 'tis happiness he is within doors, what so ere he be;
+if he be not too much a formal Citizen, he may do me good.--
+Sergeant and Yeoman, how do you like this house? ist not
+most wholesomely plotted?
+
+RAVEN.
+Troth, prisoner, an exceeding fine house.
+
+PYE.
+Yet I wonder how he should forget me,--for he ne'er knew
+me.--No matter, what is forgot in you will be remembered
+in your Master.  A pretty comfortable room this, me thinks:
+You have no such rooms in prison now?
+
+PUT.
+Oh, dog-holes toote.
+
+PYE.
+Dog-holes, indeed.  I can tell you, I have great hope to
+have my Chamber here shortly, nay, and diet too, for he's
+the most free-heartedst Gentleman where he takes:  you would
+little think it! and what a fine Gallery were here for me to
+walk and study, and make verses.
+
+PUT.
+O, it stands very pleasantly for a Scholar.
+
+[Enter Gentleman.]
+
+PYE.
+Look what maps, and pictures, and devices, and things:
+neatly, delicately--mass, here he comes:  he should be a
+Gentleman; I like his Beard well.--All happiness to your
+worship.
+
+GENTLEMAN.
+You're kindly welcome, sir.
+
+PUT.
+A simple salutation.
+
+RAVEN.
+Mass, it seems the Gentleman makes great account of him.
+
+PYE.
+I have the thing here for you, sir.  I beseech you conceal
+me, sir, I'm undone else,--I have the Mask here for you,
+sir, Look you, sir.--I beseech your worship first to pardon
+my rudeness, for my extremes makes me bolder than I would
+be.  I am a poor Gentleman and a Scholar, and now most
+unfortunately fallen into the Fangs of unmerciful officers,
+arrested for debt, which tho small, I am not able to
+compass, by reason I'm destitute of lands, money, and
+friends; so that if I fall into the hungry swallow of the
+prison, I am like utterly to perish, and with fees and
+extortions be pincht clean to the bone.  Now, if ever pity
+had interest in the blood of a Gentleman, I beseech you
+vouchsafe but to favour that means of my escape, which I
+have already thought upon.
+
+GENTLEMAN.
+Go forward.
+
+PUT.
+I warrant he likes it rarely.
+
+PYE.
+In the plundge of my extremities, being giddy, and doubtful
+what to do, at least it was put into my labouring thoughts,
+to make happy use of this paper; and to blear their unlettered
+eyes, I told them there was a Device for a Mask drawn int',
+and that (but for their interception,) I was going to a
+Gentleman to receive my reward for't: they, greedy at this
+word, and hoping to make purchase of me, offered their
+attendance, to go along with me.  My hap was to make bold
+with your door, Sir, which my thoughts showed me the most
+fairest and comfortablest entrance, and I hope I have
+happened right upon understanding and pity: may it please
+your good Worship, then, but to uphold my Device, which is
+to let one of your men put me out at back-door, and I shall
+be bound to your worship for ever.
+
+GENTLEMAN.
+By my troth, an excellent device.
+
+PUT.
+An excellent device, he says; he likes it wonderfully.
+
+GENTLEMAN.
+A my faith, I never heard a better.
+
+RAVEN.
+Hark, he swears he never heard a better, Sergeant.
+
+PUT.
+O, there's no talk on't, he's an excellent Scholar, and
+especially for a Mask.
+
+GENTLEMAN.
+Give me your Paper, your Device; I was never better pleased
+in all my life:  good wit, brave wit, finely wrought! come
+in, sir, and receive your money, sir.
+
+PYE.
+I'll follow your good Worship.--
+You heard how he liked it now?
+
+PUT.
+Puh, we know he could not choose but like it: go thy ways;
+thou art a witty fine fellow, ifaith, thou shalt discourse
+it to us at Tavern anon, wilt thou?
+
+pye.
+Aye, aye, that I will.  Look, Sergeants, here are Maps, and
+pretty toys:  be doing in the mean time.  I shall quickly
+have told out the money, you know.
+
+PUT.
+Go, go, little villain, fetch thy chinck.  I begin to love
+thee; I'll be drunk to night in thy company.
+
+PYE.
+[Aside.]  This Gentleman I may well call a part
+Of my salvation, in these earthly evils,
+For he has saved me from three hungry Devils.
+
+[Exit George.]
+
+PUT.
+Sirrah Sergeant, these Maps are pretty painted things, but
+I could ne'er fancy 'em yet:  me thinks they're too busy,
+and full of Circles and Conjurations; they say all the
+world's in one of them, but I could ne'er find the Counter
+in the Poultry.
+
+RAVEN.
+I think so:  how could you find it? for you know, it stands
+behind the houses.
+
+DOGSON.
+Mass, that's true; then we must look ath' back-side fort.
+Sfoot, here's nothing, all's bare.
+
+RAVEN.
+I warrant thee, that stands for the Counter, for you know
+there's a company of bare fellows there.
+
+PUT.
+Faith, like enough, Sergeant; I never marked so much before.
+Sirrah Sergeant, and Yeoman, I should love these Maps out
+a cry now, if we could see men peep out of door in em: oh,
+we might have em in a morning to our Break-fast so finely,
+and ne'er knock our heels to the ground a whole day for em.
+
+RAVEN.
+Aye, marry, sir, I'd buy one then my self.  But this talk is
+by the way:  where shall's sup to night?  Five pound
+receiv'd! let's talk of that.  I have a trick worth all:
+you two shall bear him to 'th Tavern, whilst I go close with
+his Hostess, and work out of her.  I know she would be glad
+of the sum to finger money, because she knows tis but a
+desperate debt, and full of hazard.  What will you say, if
+I bring it to pass that the Hostess shall be contented with
+one half for all; and we to share tother fifty-shillings,
+bullies?
+
+PUT.
+Why, I would call thee King of Sergeants, and thou shouldst
+be Chronicled in the Counter book for ever.
+
+RAVEN.
+Well, put it to me, we'll make a Night on't, yfaith.
+
+DOGSON.
+Sfoot, I think he receives a more money, he stays so long.
+
+PUT.
+He tarries long, indeed:  may be, I can tell you, upon the
+good liking ont the Gentleman may prove more bountiful.
+
+RAVEN.
+That would be rare; we'll search him.
+
+PUT.
+Nay, be sure of it, we'll search him! and make him light
+enough.
+
+[Enter the Gentleman.]
+
+RAVEN.
+Oh, here comes the Gentleman.  By your leave, sir.
+
+GENTLEMAN.
+God you god den, sirs,--would you speak with me?
+
+PUT.
+No, not with your worship, sir; only we are bold to stay for
+a friend of ours that went in with your worship.
+
+GENTLEMAN.
+Who? not the scholar?
+
+PUT.
+Yes, e'en he, and it please your worship.
+
+GENTLEMAN.
+Did he make you stay for him? he did you wrong, then: why,
+I can assure you he's gone above an hour ago.
+
+RAVEN.
+How, sir?
+
+GENTLEMAN.
+I paid him his money, and my man told me he went out at
+back-door.
+
+PUT.
+Back-door?
+
+GENTLEMAN.
+Why, what's the matter?
+
+PUT.
+He was our prisoner, sir; we did arrest him.
+
+GENTLEMAN.
+What! he was not! you the Sheriff's Officers!  You were to
+blame then.  Why did you no make known to me as much?  I
+could have kept him for you:  I protest he received all of
+me in Britain Gold of the last coining.
+
+RAVEN.
+Vengeance dog him with't!
+
+PUT.
+Sfott, has he guiled us so?
+
+DOGSON.
+Where shall we sup now Sergeant?
+
+PUT.
+Sup, Simon, now! eat Porridge for a month.  Well, we cannot
+impute it to any lack of good-will in your Worship,--you did
+but as another would have done: twas our hard fortunes to
+miss the purchase, but if e'er we clutch him again, the
+Counter shall charm him.
+
+RAVEN.
+The hole shall rot him.
+
+DOGSON.
+Amen
+
+[Exeunt.]
+
+GENTLEMAN.
+So,
+Vex out your Lungs without doors.  I am proud,
+It was my hap to help him; it fell fit.
+He went not empty neither for his wit.
+Alas, poor wretch, I could not blame his brain
+To labour his delivery, to be free
+From their unpitying fangs--I'm glad it stood
+Within my power to do a Scholar good.
+
+[Exit.]
+
+
+SCENE V.  A room in the Marshalsea prison.
+
+[Enter in the Prison, meeting, George and Captain, George
+coming in muffled.]
+
+CAPTAIN.
+How now, who's that? what are you?
+
+PYE.
+The same that I should be, Captain.
+
+CAPTAIN.
+George Pye-board, honest George? why camst thou in half
+fac'd, muffled so?
+
+PYE.
+Oh, Captain, I thought we should ne'er ha laught again,
+never spent frolick hour again.
+
+CAPTAIN.
+Why? why?
+
+PYE.
+I coming to prepare thee, and with news
+As happy as thy quick delivery,
+Was trac'd out by the sent, arrested, Captain.
+
+CAPTAIN.
+Arrested, George!
+
+PYE.
+Arrested:  gesse, gesse; how many Dogs do you think I'd
+upon me?
+
+CAPTAIN.
+Dogs? I say? I know not.
+
+PYE.
+Almost as many as George Stone the Bear:
+Three at once, three at once.
+
+CAPTAIN.
+How didst thou shake 'em off, then?
+
+PYE.
+The time is busy, and calls upon out wits.
+Let it suffice,
+Here I stand safe, and scapt by miracle.
+Some other hour shall tell thee, when we'll steep
+Our eyes in laughter.  Captain, my device
+Leans to thy happiness, for ere the day
+Be spent toth' Girdle, thou shalt be set free.
+The Corporal's in his first sleep, the Chain is missed,
+Thy Kinsman has exprest thee, and the old Knight
+With Palsey-hams now labours thy release:
+What rests is all in thee, to Conjure, Captain.
+
+CAPTAIN.
+Conjure! sfoot, George, you know the devil a conjuring I
+can conjure.
+
+PYE.
+The Devil of conjuring? Nay, by my fay, I'd not have thee
+do so much, Captain, as the Devil a conjuring: look here,
+I ha brought thee a circle ready charactered and all.
+
+CAPTAIN.
+Sfoot, George, art in thy right wits? doost know what
+thou sayest? why doost talk to a Captain of conjuring?
+didst thou ever hear of a Captain conjure in thy life?
+doost cal't a Circle? tis too wide a thing, me thinks:
+had it been a lesser Circle, then I knew what to have done.
+
+PYE.
+Why, every fool knows that, Captain:  nay, then, I'll not
+cog with you, Captain; if you'll stay and hang the next
+Sessions, you may.
+
+CAPTAIN.
+No, by my faith, George: come, come, let's to conjuring,
+let's to conjuring.
+
+PYE.
+But if you look to be released--as my wits have took
+pain to work it, and all means wrought to farther it--
+besides to put crowns in your purse, to make you a man
+of better hopes, and whereas before you were a Captain
+or poor Soldier, to make you now a Commander of rich fools,
+(which is truly the only best purchase peace can allow
+you) safer then High-ways, Heath, or Cunny-groves, and
+yet a far better booty; for your greatest thieves are
+never hangd, never hangd, for, why, they're wise, and
+cheat within doors: and we geld fools of more money in
+one night, then your false tailed Gelding will purchase
+in a twelve-month's running; which confirms the old Beldam
+saying, he's wisest, that keeps himself warmest; that is,
+he that robs by a good fire--
+
+CAPTAIN.
+Well opened, yfaith, George; thou has pulled that saying
+out of the husk.
+
+PYE.
+Captain Idle, tis no time now to delude or delay: the old
+Knight will be here suddenly.  I'll perfect you, direct
+you, tell you the trick on't: tis nothing.
+
+CAPTAIN.
+Sfoot, George, I know not what to say toot:  conjure? I
+shall be hand ere I conjure.
+
+PYE.
+Nay, tell not me of that, Captain; you'll ne'er conjure
+after you're hangd, I warrant you. Look you, sir, a parlous
+matter, sure! First, to spread your circle upon the ground,
+then, with a little conjuring ceremony, as I'll have an
+Hackney-man's wand silvered ore a purpose for you,--then
+arriving in the circle, with a huge word, and a great
+trample, as for instance:--have you never seen a stalking-
+stamping Player, that will raise a tempest with his tongue,
+and thunder with his heels?
+
+CAPTAIN.
+O yes, yes, yes: often, often.
+
+PYE.
+Why, be like such a one, for any thing will blear the old
+Knight's eyes: for you must note that he'll ne'er dare to
+venture into the room, only perhaps peep fearfully through
+the Key hold, to see how the Play goes forward.
+
+CAPTAIN.
+Well, I may go about it when I will, but mark the end ont:
+I shall but shame my self, ifaith, George.  Speak big words,
+and stamp and stare, and he look in at Key-hold! why, the
+very thought of that would make me laugh out-right, and
+spoil all:  nay, I'll tell thee, George, when I apprehend
+a thing once, I am of such a laxative laughter, that if the
+Devil him-self stood by, I should laugh in his face.
+
+PYE.
+Puh, that's but the babe of a man, and may easily be husht;
+as to think upon some disaster, some sad misfortune, as the
+death of thy Father ithe Country!
+
+CAPTAIN.
+Sfoot, that would be the more to drive me into such an
+extasy, that I should ne'er lin laughing.
+
+PYE.
+Why, then, think upon going to hanging else.
+
+CAPTAIN.
+Mass, that's well remembred; now I'll do well, I warrant
+thee, ne'er fear me now: but how shall I do, George, for
+boisterous words, and horrible names?
+
+PYE.
+Puh, any fustian invocations, Captain, will serve as well
+as the best, so you rant them out well; or you may go to a
+Pothecaries shop, and take all the words from the Boxes.
+
+CAPTAIN.
+Troth, and you say true, George; there's strange words
+enow to raise a hundred Quack-salvers, tho they be ne'er
+so poor when they begin.  But here lies the fear on't, how
+if in this false conjuration, a true Devil should pop up
+indeed?
+
+PYE.
+A true Devil, Captain? why there was ne'er such a one: nay,
+faith, he that has this place is as false a Knave as our
+last Church-warden.
+
+CAPTAIN.
+Then he's false enough a conscience, ifaith, George.
+
+[The Crie at Marshalsea.]
+
+CRIE PRISONERS.
+Good Gentlemen over the way, send your relief.  Good
+Gentlemen over the way,--Good sir Godfrey!
+
+PYE.
+He's come, he's come.
+
+NICHOLAS.
+Master, that's my Kinsman yonder in the Buff-jerkin--Kinsman,
+that's my Master yonder ith' Taffetie Hat--pray salute him
+entirely!
+
+[They salute: and Pye-board salutes Master Edmond.]
+
+SIR GODFREY.
+Now, my friend.
+
+PYE.
+May I pertake your name, sir?
+
+EDMOND.
+My name is Master Edmond.
+
+PYE.
+Master Edmond?--are you not a Welshman, sir?
+
+EDMOND.
+A Welshman? why?
+
+PYE.
+Because Master is your Christian name, and Edmond your
+sir name.
+
+EDMOND.
+O no; I have more names at home: Master Edmond Plus is my
+full name at length.
+
+PYE.
+O, cry you mercy, sir.  [Whispering]
+
+CAPTAIN.
+I understand that you are my Kinsman's good Master, and in
+regard of that, the best of my skill is at your service:
+but had you fortuned a mere stranger, and made no means to
+me by acquaintance, I should have utterly denied to have
+been the man; both by reason of the act past in Parliament
+against Conjurers and Witches, as also, because I would not
+have my Art vulgar, trite, and common.
+
+SIR GODFREY.
+I much commend your care therein, good Captain Conjurer,
+and that I will be sure to have it private enough, you
+shall doot in my Sister's house,--mine own house, I may
+call it, for both our charges therein are proportioned.
+
+CAPTAIN.
+Very good, sir--what may I call your loss, sir?
+
+SIR GODFREY.
+O you may call't a great loss, sir, a grievous loss, sir;
+as goodly a Chain of gold, tho I say it, that wore it: how
+sayest thou, Nicholas?
+
+NICHOLAS.
+O 'twas as delicious a Chain a Gold!  Kinsman, you know,--
+
+SIR GODFREY.
+You know? did you know't, Captain?
+
+CAPTAIN.
+Trust a fool with secrets!--Sir, he may say I know: his
+meaning is, because my Art is such, that by it I may gather
+a knowledge of all things.
+
+SIR GODFREY.
+Aye, very true.
+
+CAPTAIN.
+A pax of all fools--the excuse struck upon my tongue like
+Ship-pitch upon a Mariner's gown, not to come off in haste--
+Ber-lady, Knight, to loose such a fair Chain a gold were a
+foul loss.  Well, I can put you in this good comfort on't:
+if it be between Heaven and Earth, Knight, I'll ha't for you.
+
+SIR GODFREY.
+A wonderful Conjurer!--O, aye, tis between heaven and earth,
+I warrant you; it cannot go out of the realm.--I know tis
+some-where above the earth.
+
+CAPTAIN.
+Aye, nigher the earth then thou wotst on.
+
+SIR GODFREY.
+For, first, my Chain was rich, and no rich thing shall
+enter into heaven, you know.
+
+NICHOLAS.
+And as for the Devil, Master, he has no need on't, for you
+know he ha's a great chain of his own.
+
+SIR GODFREY.
+Thou sayest true, Nicholas, but he has put off that now;
+that lies by him.
+
+CAPTAIN.
+Faith, Knight, in few words, I presume so much upon the
+power of my Art; that I could warrant your Chain again.
+
+SIR GODFREY.
+O dainty Captain!
+
+CAPTAIN.
+Marry, it will cost me much sweat; I were better go to
+sixteen whot-houses.
+
+SIR GODFREY.
+Aye, good man, I warrant thee.
+
+CAPTAIN.
+Beside great vexation of Kidney and Liver.
+
+NICHOLAS.
+O, twill tickle you here-abouts, Coozen, because you have
+not been used toot.
+
+SIR GODFREY.
+No? have you not been used too't, Captain?
+
+CAPTAIN.
+Plague of all fools still!--Indeed, Knight, I have not used
+it a good while, and therefore twill strain me so much the
+more, you know.
+
+SIR GODFREY.
+Oh, it will, it will.
+
+CAPTAIN.
+What plunges he puts me to! were not this Knight a fool,
+I had been twice spoiled now; that Captain's worse than
+accurst that has an ass to his Kinsman.  Sfoot, I fear he
+will drivell't out before I come toot.--Now, sir--to come
+to the point in deed--you see I stick here in the jaw of
+the Marshalsea, and cannot doo't.
+
+SIR GODFREY.
+Tut, tut, I know thy meaning; thou wouldst say thou'rt a
+prisoner.  I tell thee thou'rt none.
+
+CAPTAIN.
+How none? why, is not this the Marshallsea?
+
+SIR GODFREY.
+Woult hear me speak? I hard of thy rare conjuring;
+My chain was lost; I sweat for thy release,
+As thou shalt do the like at home for me.
+Keeper.
+
+[Enter Keeper.]
+
+KEEPER.
+Sir.
+
+SIR GODFREY.
+Speak, is not this man free?
+
+KEEPER.
+Yes, at his pleasure, sir, the fee's discharged.
+
+SIR GODFREY.
+Go, go, I'll discharge them I.
+
+KEEPER.
+I thank your worship.
+
+[Exit Keeper.]
+
+CAPTAIN.
+Now, trust me, yar a dear Knight.  Kindness unexpected!
+oh, there's nothing to a free Gentle man.--I will conjure
+for you, sir, till Froth come through my Buff-jerkin!
+
+SIR GODFREY,
+Nay, then thou shalt not pass with so little a bounty, for
+at the first sight of my chain again, Forty fine Angells
+shall appear unto thee.
+
+CAPTAIN.
+Twil be a glorious show, ifaith, Knight, a very fine show;
+but are all these of your own house? are you sure of that,
+sir?
+
+SIR GODFREY.
+Aye, aye--no, no, what's he yonder, talking with my wild
+Nephew? pray heaven, he give him good counsel.
+
+CAPTAIN.
+Who, he? he's a rare friend of mine, an admirable fellow,
+Knight, the finest fortune-teller.
+
+SIR GODFREY.
+Oh, tis he indeed that came to my Lady sister, and foretold
+the loss of my chain.  I am not angry with him now, for I
+see twas my fortune to loose it.--By your leave, Master
+Fortune-teller, I had a glimpse on you at home at my
+Sisters the Widdows, there you prophesied of the loss of a
+chain:--simply tho I stand here, I was he that lost it.
+
+PYE.
+Was it you, sir?
+
+EDMOND.
+A my troth, Nuckle, he's the rarest fellow: has told me my
+fortune so right; I find it so right to my nature.
+
+SIR GODFREY.
+What ist?  God send it a good one!
+
+EDMOND.
+O, tis a passing good one, Nuncle: for he says I shall prove
+such an excellent gamester in my time, that I shall spend
+all faster then my father got it.
+
+SIR GODFREY.
+There's a fortune, in deed!
+
+EDMOND.
+Nay, it hits my humour so pat.
+
+SIR GODFREY.
+Aye, that will be the end ont: will the Curse of the beggar
+prevail so much, that the son shall consume that foolishly,
+which the father got craftily?  Aye, aye, aye; twill, twill,
+twill.
+
+PYE.
+Stay, stay, stay.
+
+[Pye-board with an Almanack and the Captain.]
+
+CAPTAIN.
+Turn over, George.
+
+PYE.
+June--July:  here, July; that's this month.  Sunday thirteen,
+yester day forteen, to day fifteen.
+
+CAPTAIN.
+Look quickly for the fifteen day:--if within the compass of
+these two days there would be some Boystrous storm or other,
+it would be the best, I'd defer him off till then: some
+tempest, and it be thy will.
+
+PYE.
+Here's the fifteen day--hot and fair.
+
+CAPTAIN.
+Puh, would t'ad been hot and foul.
+
+PYE.
+The sixteen day; that's to morrow: the morning for the most
+part fair and pleasant--
+
+CAPTAIN.
+No luck.
+
+PYE.
+But about high-noon, lightning and thunder.
+
+CAPTAIN.
+Lightning and thunder! admirable, best of all: I'll conjure
+to morrow just at high noon, George.
+
+PYE.
+Happen but true to morrow, Almanack, and I'll give thee
+leave to lie all the year after.
+
+CAPTAIN.
+Sir, I must crave your patience, to bestow this day upon
+me, that I may furnish my self strongly.  I sent a spirit
+into Lancashire tother day, to fetch back a knave Drover,
+and I look for his return this evening.  To morrow morning
+my friend here and I will come and break-fast with you.
+
+SIR GODFREY.
+Oh, you shall be both most welcome.
+
+CAPTAIN.
+And about Noon, without fail, I purpose to conjure.
+
+SIR GODFREY.
+Mid noon will be a fine time for you.
+
+EDMOND.
+Conjuring! do you mean to conjure at our house to morrow,
+sir?
+
+CAPTAIN.
+Marry, do I, sir: tis my intent, young Gentleman.
+
+EDMOND.
+By my troth, I'll love you while I live fort.  O rare,
+Nicholas, we shall have conjuring to morrow.
+
+NICHOLAS.
+Puh!  Aye, I could ha told you of that.
+
+CAPTAIN.
+Law, he could ha told him of that! fool, cockscomb, could
+ye?
+
+EDMOND.
+Do you hear me, sir?  I desire more acquaintance on you:
+you shall earn some money of me, now I know you can conjure;
+but can you fetch any that is lost?
+
+CAPTAIN.
+Oh, any thing that's lost.
+
+EDMOND.
+Why, look you, sir, I tel't you as a friend and a Conjurer,
+I should marry a Poticaries daughter, and twas told me she
+lost her maidenhead at Stonie-stratford; now if you'll do
+but so much as conjure fort, and make all whole again--
+
+CAPTAIN.
+That I will, sir.
+
+EDMOND.
+By my troth, I thanks you, la.
+
+CAPTAIN.
+A little merry with your sister's son, sir.
+
+SIR GODFREY.
+Oh, a simple young man, very simple: come, Captain, and you,
+sir, we'll e'en part with a gallon of wine till to morrow
+break-fast.
+
+PYE AND CAPTAIN.
+Troth, agreed, sir.
+
+NICHOLAS.
+Kinsman--Scholar?
+
+PYE.
+Why, now thou art a good Knave, worth a hundred Brownists.
+
+NICHOLAS.
+Am I indeed, la? I thank you truly, la.
+
+[Exeunt.]
+
+
+ACTUS 4.
+
+SCENE I.  An apartment in the Widow's house.
+
+[Enter Moll, and Sir John Penny-dub.]
+
+
+PENNY.
+But I hope you will not serve a Knight so, Gentlewoman, will
+you? to cashier him, and cast him off at your pleasure? what,
+do you thiunk I was dubbed for nothing? no, by my faith,
+Ladies daughter.
+
+MOLL.
+Pray, Sir John Pennydub, let it be deferred awhile.  I have
+as big a heart to marry as you can have; but as the Fortune-
+teller told me--
+
+PENNY.
+Pax a'th Fortune-teller! would Derecke had been his fortune
+seven year ago, to cross my love thus! did he know what case
+I was in? why, this is able to make a man drown himself in's
+Father's fish-pond.
+
+MOLL.
+And then he told me more-over, Sir John, that the breach of
+it kept my Father in Purgatory.
+
+PENNY.
+In Purgatory? why let him purge out his heart there, what
+have we to do with that? there's Philistions enow there to
+cast his water: is that any matter to us? how can he hinder
+our love? why, let him be hangd now he's dead!--Well, have I
+rid my post day and night, to bring you merry news of my
+father's death, and now--
+
+MOLL.
+Thy Father's death? is the old Faarmer dead?
+
+PENNY.
+As dead as his Barn door, Moll.
+
+MOLL.
+And you'll keep your word with me now, Sir John, that I shall
+have my Coach and my Coach-man?
+
+PENNY.
+Aye, faith.
+
+MOLL.
+And two white Horses with black Feathers to draw it?
+
+PENNY.
+Too.
+
+MOLL.
+A guarded Lackey to run befor't, and pied liveries to come
+trashing after't.
+
+PENNY.
+Thou shalt, Moll.
+
+MOLL.
+And to let me have money in my purse to go whether I will.
+
+PENNY.
+All this.
+
+MOLL.
+Then come what so ere comes on't, we'll be made sure
+together before the Maids a' the Kitchen.
+
+[Exeunt.]
+
+
+SCENE II.  A room in the Widow's house, with a door at the
+side, leading to another apartment.
+
+[Enter Widdow, with her eldest Daughter Frances and Frailty.]
+
+
+WIDOW.
+How now? where's my Brother, Sir Godfrey? went he forth this
+morning?
+
+FRAILTY.
+O no, Madame, he's above at break-fast, with, sir reverence,
+a Conjurer.
+
+WIDOW.
+A Conjurer? what manner a fellow is he?
+
+FRAILTY.
+Oh, a wondrous rare fellow, Mistress, very strongly made
+upward, for he goes in a Buff-jerkin: he says he will fetch
+Sir Godfrey's Chain again, if it hang between heaven and
+earth.
+
+WIDOW.
+What, he will not? then he's an exlent fellow, I warrant.
+How happy were that woman to be blest with such a Husband!
+a man a cunning! how do's he look, Frailty? very swartly,
+I warrant, with black beard, scorcht cheeks, and smoky
+eyebrows.
+
+FRAILTY.
+Fooh, he's neither smoke-dried, nor scorcht, nor black, nor
+nothing. I tell you, Madame, he looks as fair to see to, as
+one of us; I do not think but if you saw him once, you'd
+take him to be a Christian.
+
+FRANCES.
+So fair, and yet so cunning: that's to be wonderd at,
+Mother.
+
+[Enter Sir Oliver Muck-hill, and Sir Andrew Tip-staff.]
+
+MUCK.
+Bless you, sweet Lady.
+
+TIP.
+And you, fair Mistress.
+
+[Exit Frailty.]
+
+WIDOW.
+Coades? what do you mean, Gentlemen? fie, did I not give
+you your answers?
+
+MUCK.
+Sweet Lady.
+
+WIDOW.
+Well, I will not stick with you now for a kiss.
+Daughter, kiss the Gentleman for once.
+
+FRANCES.
+Yes, forsooth.
+
+TIP.
+I'm proud of such a favour.
+
+WIDOW.
+Truly la, sir Oliver, y'are much to blame to come again,
+when you know my mind, so well deliverd as a Widdow could
+deliver a thing.
+
+MUCK.
+But I expect a farther comfort, Lady.
+
+WIDOW.
+Why la you now, did I not desire you to put off your suit
+quite and clean, when you came to me again? how say you?
+did I not?
+
+MUCK.
+But the sincere love which my heart bears you--
+
+WIDOW.
+Go to, I'll cut you off: and Sir Oliver, to put you in
+comfort a far off, my fortune is read me: I must marry
+again.
+
+MUCK.
+O blest fortune!
+
+WIDOW.
+But not as long as I can choose;--nay, I'll hold out well.
+
+MUCK.
+Yet are my hopes now fairer.
+
+[Enter Frailty.]
+
+FRAILTY.
+O Madam, Madam.
+
+WIDOW.
+How now, what's the haste?
+
+[In her ear.]
+
+TIP.
+Faith, Mistress Frances, I'll maintain you gallantly.  I'll
+bring you to Court, wean you among the fair society of
+ladies, poor Kinswomen of mine, in cloth of silver: beside,
+you shall have your Monkey, your Parrot, your Muskrat, and
+your pisse, pisse, pisse.
+
+FRANCES.
+It will do very well.
+
+WIDOW.
+What, dos he mean to conjure here then? how shall I do be
+rid of these Knights?--Please you, Gentlemen, to walk a
+while ith Garden: go gather a pink, or a Lily-flower.
+
+BOTH.
+With all our hearts, Lady, and court us favourd.
+
+[Exit.  Within Sir Godfrey.]
+
+SIR GODFREY.
+Step in, Nicholas; look, is the coast clear.
+
+NICHOLAS.
+Oh, as clear as a Cat's eye, sir.
+
+SIR GODFREY.
+Then enter, Captain Conjurer:--now--how like you your Room,
+sir?
+
+[Enter Sir Godfrey, Captain Pye-board, Edmond, Nicholas.]
+
+CAPTAIN.
+O, wonderful convenient.
+
+EDMOND.
+I can tell you, Captain, simply tho it lies here, tis the
+fairest Room in my Mother's house: as dainty a Room to
+Conjure in, me thinks--why, you may bid, I cannot tell how
+many devils welcome in't; my Father has had twenty here at
+once.
+
+PYE.
+What, devils?
+
+EDMOND.
+Devils? no, Deputies, and the wealthiest men he could get.
+
+SIR GODFREY.
+Nay, put by your chats now, fall to your business roundly:
+the feskewe of the Dial is upon the Chrisse-crosse of Noon,
+but oh, hear me, Captain, a qualm comes ore my stomach.
+
+CAPTAIN.
+Why, what's the matter, sir?
+
+SIR GODFREY.
+Oh, how if the devil should prove a knave, and tear the
+hangings?
+
+CAPTAIN.
+Fuh, I warrant you, Sir Godfrey.
+
+EDMOND.
+Aye, Nuncle, or spit fire up'oth ceiling!
+
+SIR GODFREY.
+Very true, too, for tis but thin plastered, and twill
+quickly take hold a the laths, and if he chance to spit
+downward too, he will burn all the boards.
+
+CAPTAIN.
+My life for yours, Sir Godfrey.
+
+SIR GODFREY.
+My Sister is very curious and dainty ore this Room, I can
+tell, and therefore if he must needs spit, I pray desire
+him to spit ith Chimney.
+
+PYE.
+Why, assure you, Sir Godfrey, he shall not be brought up
+with so little manners to spit and spaul a'th flower.
+
+SIR GODFREY.
+Why, I thank you, good Captain; pray have a care.  Aye, fall
+to your Circle; we'll not trouble you, I warrant you: come,
+we'll in to the next Room, and be cause we'll be sure to
+keep him out there, we'll bar up the door with some of the
+Godlies zealous work.
+
+EDMOND.
+That will be a find device, Nuncle, and because the ground
+shall be as holy as the door, I'll tear two or three
+rosaries in pieces, and strew the leaves about the Chamber.
+
+[Thunders.]
+
+Oh, the devil already.
+
+[Runs in.]
+
+PYE.
+Sfoot, Captain, speak somewhat for shame; it lightens and
+thunders before thou wilt begin: why, when?
+
+CAPTAIN.
+Pray, peace, George,--thou'lt make me laugh anon and spoil
+all.
+
+PYE.
+Oh, now it begins again: now, now, now, Captain.
+
+CAPTAIN.
+Rumbos--ragdayon, pur, pur, colucundrion, Hois-Plois.
+
+SIR GODFREY.
+Oh admirable Conurer! has fetcht Thunder already:
+
+[Sir Godfrey through the keyhole; within.]
+
+PYE.
+Hark, hark! again, Captain!
+
+CAPTAIN.
+Benjamino,--gaspois--kay--gosgothoteron--umbrois.
+
+SIR GODFREY.
+Oh, I would the devil would come away quickly, he has no
+conscience to put a man to such pain.
+
+PYE.
+Again!
+
+CAPTAIN.
+Floste--Kakopumpos--dragone--Leloomenos--hodge--podge.
+
+PYE.
+Well said, Captain.
+
+SIR GODFREY.
+So long a coming? oh, would I had ne'er begun't now, for I
+fear me these roaring tempests will destroy all the fruits
+of the earth, and tread upon my corn--oh!--ith Country.
+
+CAPTAIN.
+Gog de gog, hobgoblin, huncks, hounslow, hockley te coome
+parke.
+
+WIDOW.
+[At the door.]  O brother, brother, what a tempests ith
+Garden: sure there's some conjuration abroad.
+
+SIR GODFREY.
+Tis at home, sister!
+
+PYE.
+By and by, I'll step in, Captain.
+
+CAPTAIN.
+Nunck--Nunck--Rip--Gascoynes, Ipis, Drip--Dropite.
+
+SIR GODFREY.
+He drips and drops, poor man! alas, alas.
+
+PYE.
+Now I come.
+
+CAPTAIN.
+O Sulphure Sooteface--
+
+PYE.
+Arch-conjurer, what wouldst thou with me?
+
+SIR GODFREY.
+O the devil, sister, ith dining Chamber! sing, Sister, I
+warrant you that will keep him out: quickly, quickly, quickly.
+
+[Goes in.]
+
+PYE.
+So, so, so, I'll release thee: ynough, Captain, ynough; allow
+us some time to laugh a little: they're shuddering and shaking
+by this time, as if an Earth-quake were in their kidneys.
+
+CAPTAIN.
+Sirrah, Goerge, how wast, how wast? did I doo't well ynough?
+
+PYE.
+Woult believe me, Captain? better then any Conjurer, for here
+was no harm in this, and yet their horrible expectation
+satisfied well.  You were much beholding to thunder and lightning
+at this time: it gracst you well I can tell you.
+
+CAPTAIN.
+I must needs say so, George.  Sirrah, if we could ha convoid
+hither cleanly a cracker or a fire-wheel t'ad been admirable.
+
+PYE.
+Blurt, blurt! there's nothing remains to put thee to pain now,
+Captain.
+
+CAPTAIN.
+Pain?  I protest, George, my heels are sorer, then a Whitson
+Morris-dancer.
+
+PYE.
+All's past now,--only to reveal that the chains ith Garden
+where thou knowst it has lain these two days.
+
+CAPTAIN.
+But I fear that fox Nicholas has revealed it already.
+
+PYE.
+Fear not, Captain, you must put it to'th venture now.  Nay,
+tis time: call upon e'm, take pity on e'm, for I believe some
+of 'em are in a pitiful case by this time.
+
+CAPTAIN.
+Sir Godfrey?  Nicholas, Kinsman--Sfoot, they're fast at it
+still, George.  Sir Godfrey!
+
+SIR GODFREY.
+Oh, is that the devil's voice? how comes he to know my name?
+
+CAPTAIN.
+Fear not, Sir Godfrey, all's quieted.
+
+SIR GODFREY.
+What, is he laid?
+
+CAPTAIN.
+Laid; and has newly dropt your chain ith Garden.
+
+SIR GODFREY.
+Ith Garden! in our Garden?
+
+CAPTAIN.
+Your Garden.
+
+SIR GODFREY.
+O sweet Conjurer! where abouts there?
+
+CAPTAIN.
+Look well about a bank of Rosemary.
+
+SIR GODFREY.
+Sister, the Rosemary bank! come, come, there's my chain, he
+says.
+
+WIDOW.
+Oh happiness! run, run.
+
+[Supposed to go.]
+
+EDMOND.
+Captain Conjurer?
+
+[Edmond at keyhole.]
+
+CAPTAIN.
+Who?  Master Edmond?
+
+EDMOND.
+Aye, Master Edmond: may I come in safely, without danger,
+think you?
+
+CAPTAIN.
+Fuh, long ago:  tis all as twas at first.  Fear nothing, pray
+come near--how now, man?
+
+EDMOND.
+Oh this Room's mightily hot, ifaith: slid, my shirt sticks to
+my Belly already.  What a steam the Rogue has left behind him!
+foh, this room must be aired, Gentlemen; it smells horribly of
+Brimstone--let's open the windows.
+
+PYE.
+Faith, master Edmond, tis but your conceit.
+
+EDMOND.
+I would you could make me believe that, ifaith.  Why, do you
+think I cannot smell his savour from another? yet I take it
+kindly from you, because you would not put me in a fear,
+ifaith; a my troth, I shall love you for this the longest day
+of my life.
+
+CAPTAIN.
+Puh, tis nothing, sir: love me when you see more.
+
+EDMOND.
+Mass, now I remember, I'll look whether he has singed the
+hangings or no.
+
+PYE.
+Captain, to entertain a little sport till they come, make him
+believe you'll charm him invisible:  he's apt to admire any
+thing, you see. Let him alone to give force too'te.
+
+CAPTAIN.
+Go, retire to yonder end then.
+
+EDMOND.
+I protest you are a rare fellow, are you not?
+
+CAPTAIN.
+O master Edmond, you know but the least part of me yet: why,
+now at this instant I could but florish my wand thrice o'er
+your head, and charm you invisible.
+
+EDMOND.
+What, you could not? make me walk invisible, man!  I should
+laugh at that, ifaith; troth, I'll requite your kindness and
+you'll do't, good Captain conjurer.
+
+CAPTAIN.
+Nay, I should hardly deny you such a small kindness, Master
+Edmond Plus: why, look you, sir, tis no more but this and thus
+and again, and now yar invisible!
+
+EDMOND.
+Am I, ifaith? who would think it?
+
+CAPTAIN.
+You see the fortune-teller yonder at farder end ath chamber:
+go toward him, do what you will with him; he shall ne'er find
+you.
+
+EDMOND.
+Say you so? I'll try that, ifaith,--
+
+[Justles him.]
+
+PYE.
+How now?  Captain, who's that justled me?
+
+CAPTAIN.
+Justled you?  I saw no body.
+
+EDMOND.
+Ha, ha, ha!--say twas a spirit.
+
+CAPTAIN.
+Shall I?--may be some spirit that haunts the circle.
+
+[Edmond pulls him by the Nose.]
+
+PYE.
+O my nose again! pray conjure then, Captain.
+
+EDMOND.
+Troth, this is exlent; I may do any knavery now and never be
+Seen,--and now I remember me, Sir Godfrey my Uncle abused me
+Tother day, and told tales of me to my Mother--Troth, now I'm
+Invisible, I'll hit him a sound wherrit ath' ear, when he
+comes out ath' garden.--I may be revengd on him now finely.
+
+[Enter Sir Godfrey, Widdow, Frances, Nicholas with the Chain.]
+
+SIR GODFREY.
+I have my Chain again, my Chain's found again.  O sweet
+Captain, O admirable Conjurer.  [Edmond strikes him.]  Oh!
+what mean you by that, Nephew?
+
+EDMOND.
+Nephew?  I hope you do not know me, Uncle?
+
+WIDOW.
+Why did you strike your Uncle, sir?
+
+EDMOND.
+Why, Captain, am I not invisible?
+
+CAPTAIN.
+A good jest, George!--not now you are not, Sir.
+Why, did you not see me when I did uncharm you?
+
+EDMOND.
+Not I by my troth, Captain.  Then pray you pardon me, Uncle;
+I thought I'd been invisible when I struck you.
+
+SIR GODFREY.
+So, you would doo't? go,--y'are a foolish Boy,
+And were I not o'er-come with greater joy,
+I'd make you taste correction.
+
+EDMOND.
+Correction, push!--no, neither you nor my Mother shall think
+to whip me as you have done.
+
+SIR GODFREY.
+Captain, my joy is such, I know not how to thank you: let me
+embrace you, hug you.  O my sweet Chain!  Gladness 'een makes
+me giddy.  Rare man! twas as just ith' Rosemary bank, as if
+one should ha' laid it there--oh, cunning, cunning!
+
+WIDOW.
+Well, seeing my fortune tells me I must marry, let me marry
+a man of wit, a man of parts.  Here's a worthy Captain, and
+'tis a fine Title truly la to be a Captain's Wife.  A Captain's
+Wife, it goes very finely; beside all the world knows that a
+worthy Captain is a fit Companion to any Lord, then why not a
+sweet bed-fellow for any Lady,--I'll have it so--
+
+[Enter Frailty.]
+
+FRAILTY.
+O Mistress, Gentlemen, there's the bravest sight coming along
+this way.
+
+WIDOW.
+What brave sight?
+
+FRAILTY.
+Oh, one going to burying, & another going to hanging.
+
+WIDOW.
+A rueful sight.
+
+PYE.
+Sfoot, Captain, I'll pawn my life the Corporal's confined,
+and old Skirmish the soldier going to execution, and 'tis
+now full about the time of his waking; hold out a little
+longer, sleepy potion, and we shall have exlent admiration;
+for I'll take upon me the cure of him.
+
+
+SCENE III.  The street before the Widow's house.
+
+[Enter the Coffin of the Corporal, the soldier bound, and
+lead by Officers, the Sheriff there.  From the house, Sir
+Godfrey, the Widow, Idle, Pyeboard, Edmond, Frailty, and
+Nicholas.]
+
+
+FRAILTY.
+Oh here they come, here they come!
+
+PYE.
+Now must I close secretly with the Soldier, prevent his
+impatience, or else all's discovered.
+
+WIDOW.
+O lamentable seeing! these were those Brothers, that fought
+and bled before our door.
+
+SIR GODFREY.
+What, they were not, Sister?
+
+SKIRMISH.
+George, look toot, I'll peach at Tyburn else.
+
+PYE.
+Mum,--Gentles all, vouchsafe me audience, and you especially,
+Master Sheriff:
+Yon man is bound to execution,
+Because he wounded this that now lies coffined?
+
+SHERIFF.
+True, true; he shall have the law,--and I know the law.
+
+PYE.
+But under favour, Master Sheriff, if this man had been cured
+and safe again, he should have been released then?
+
+SHERIFF.
+Why make you question of that, Sir?
+
+PYE.
+Then I release him freely, and will take upon me the death
+that he should die, if within a little season, I do not cure
+him to his proper health again.
+
+SHERIFF.
+How Sir? recover a dead man?
+That were most strange of all.
+
+[Frances comes to him.]
+
+FRANCES.
+Sweet Sir, I love you dearly, and could wish my best part
+yours,--oh do not undertake such an impossible venture.
+
+PYE.
+Love you me? then for your sweet sake I'll doo't:
+Let me entreat the corpse to be set down.
+
+SHERIFF.
+Bearers, set down the Coffin.--This were wonderful, and
+worthy Stoes Chronicle.
+
+PYE.
+I pray bestow the freedom of the air upon our wholesome Art.--
+Mass, his cheeks begin to receive natural warmth: nay, good
+Corporal, wake betime, or I shall have a longer sleep then
+you.--Sfoot, if he should prove dead indeed now, he were fully
+revenged upon me for making a property on him, yet I had
+rather run upon the Ropes, then have the Rope like a Tetter
+run upon me.  Oh--he stirs--he stirs again--look, Gentlemen,
+he recovers, he starts, he rises.
+
+SHERIFF.
+Oh, oh, defend us!--out, alas.
+
+PYE.
+Nay, pray be still; you'll make him more giddy else:--he knows
+no body yet.
+
+CORPORAL.
+Zounes:  where am I? covered with Snow? I marvel.
+
+PYE.
+Nay, I knew he would swear the first thing he did, as soon as
+ever he came to life again.
+
+CORPORAL.
+Sfoot, Hostess, some hot Porridge,--oh, oh, lay on a dozen
+of Fagots in the Moon parlor, there.
+
+PYE.
+Lady, you must needs take a little pity of him, yfaith, and
+send him in to your Kitchen fire.
+
+WIDOW.
+Oh, with all my heart, sir.  Nicholas and Frailty, help to
+bear him in.
+
+NICHOLAS.
+Bear him in, quatha? pray call out the Maids, I shall ne'er
+have the heart to doo't, indeed la.
+
+FRAILTY.
+Nor I neither, I cannot abide to handle a Ghost of all men.
+
+CORPORAL.
+Sblood, let me see: where was I drunk last night, heh--
+
+WIDOW.
+Oh, shall I bid you once again take him away?
+
+FRAILTY.
+Why, we're as fearful as you, I warrant you--oh--
+
+WIDOW.
+Away, villains; bid the Maids make him a Cawdle presently to
+settle his brain,--or a Posset of Sack; quickly, quickly.
+
+[Exeunt Frailty and Nicholas, pushing in the corpses.]
+
+SHERIFF.
+Sir, what so ere you are, I do more then admire you.
+
+WIDOW.
+O, aye, if you knew all, Master Sheriff, as you shall do, you
+would say then, that here were two of the rarest men within
+the walls of Christendome.
+
+SHERIFF.
+Two of 'em?  O wonderful.  Officers, I discharge you, set
+him free, all's in tune.
+
+SIR GODFREY.
+Aye, and a banquet ready by this time, Master Sheriff, to
+which I most cheerfully invite you, and your late prisoner
+there.  see you this goodly chain, sir? mun, no more words,
+twas lost, and is found again; come, my inestimable bullies,
+we'll talk of your noble Acts in sparkling Charnico, and in
+stead of a Jester, we'll ha the ghost ith white sheet sit
+at upper end a'th Table.
+
+SHERIFF.
+Exlent merry, man, yfaith.
+
+[Exeunt all but Frances.]
+
+FRANCES.
+Well, seeing I am enjoined to love and marry,
+My foolish vow thus I cashier to Air
+Which first begot it.--Now, love, play thy part;
+The scholar reads his lecture in my heart.
+
+[Exit.]
+
+
+ACTUS 5
+
+SCEN. I.  The street before the Widow's house.
+
+[Enter in haste Master Edmond and Frailty.]
+
+
+EDMOND.
+This is the marriage morning for my mother and my sister.
+
+FRAILTY.
+O me, Master Edmund; we shall ha rare doings.
+
+EDMOND.
+Nay, go, Frailty, run to the Sexton; you know my mother
+will be married at Saint Antlings.  Hie thee, tis past
+five; bid them open the Church door; my sister is almost
+ready.
+
+FRAILTY.
+What, all ready, Master Edmond?
+
+EDMOND.
+Nay, go, hie thee:  first run to the Sexton, and run to the
+Clarke, and then run to Master Pigman the Parson, and then
+run to the Milliner, and then run home again.
+
+FRAILTY.
+Here's run, run, run--
+
+EDMOND.
+But hark, Frailty.
+
+FRAILTY.
+What, more yet?
+
+EDMOND.
+Has the maids remembered to strew the way to the Church.
+
+FRAILTY.
+Fagh, an hour ago; I helpt 'em my self.
+
+EDMOND.
+Away, away, away, away then.
+
+FRAILTY.
+Away, away, away then.
+
+[Exit Frailty.]
+
+EDMOND.
+I shall have a simple Father inlaw, a brave Captain able to
+beat all our street: Captain Idle.  Now my Lady Mother will
+be fitted for a delicate name: my Lady Idle, my Lady Idle,
+the finest name that can be for a woman; and then the Scholar,
+Master Pye-board, for my sister Frances, that will be Mistress
+Frances Pye-board.--Mistress Frances Pye-board! they'll keep
+a good table I warrant you.  Now all the knights' noses are
+put out of joint; they may go to a bone setters now.
+
+[Enter Captain and Pye-board.]
+
+Hark, hark! oh who comes here with two Torches before 'em?
+my sweet Captain, and my fine Scholar! oh, how bravely they
+are shot up in one night; they look like fine Brittains now,
+me thinks.  Here's a gallant change, ifaith:  slid, they have
+hir'd men and all by the clock.
+
+CAPTAIN.
+Master Edmond, kind, honest, dainty Master Edmond.
+
+EDMOND.
+Fogh, sweet Captain Father inlaw, a rare perfume, ifaith.
+
+PYE.
+What, are the Brides stirring? may we steal upon 'em,
+thinkst thou, Master Edmond?
+
+EDMOND.
+Faw, there e'en upon readiness, I can assure you, for they
+were at their Torch e'en now: by the same token I tumbled
+down the stairs.
+
+PYE.
+Alas, poor Master Edmond.
+
+[Enter musicians.]
+
+CAPTAIN.
+O, the musicians!  I pray thee, Master Edmond, call 'em in
+and liquor 'em a little.
+
+EDMOND.
+That I will, sweet Captain father in law, and make each of
+them as drunk as a common fiddler.
+
+[Exeunt omnes.]
+
+
+SCENE II.  The same.
+
+[Enter Sir John Pennydub, and Moll above lacing of her
+clothes.]
+
+
+PENNYDUB.
+Whewh, Mistress Moll, Mistress Moll.
+
+MOLL.
+Who's there?
+
+PENNYDUB.
+Tis I.
+
+MOLL.
+Who?  Sir John Pennydub?  O you're an early cock, ifaith:
+who would have thought you to be so rare a stirrer?
+
+PENNYDUB.
+Preethe, Moll, let me come up.
+
+MOLL.
+No, by my faith, Sir John, I'll keep you down, for you
+Knights are very dangerous in once you get above.
+
+PENNYDUB.
+I'll not stay, ifaith.
+
+MOLL.
+Ifaith, you shall stay, for, Sir John, you must note the
+nature of the Climates:  your Northern wench in her own
+Country may well hold out till she be fifteen, but if she
+touch the South once, and come up to London, here the Chimes
+go presently after twelve.
+
+PENNYDUB.
+O th'art a mad wench, Moll, but I pree thee make haste, for
+the priest is gone before.
+
+MOLL.
+Do you follow him, I'll not be long after.
+
+[Exeunt.]
+
+
+SCENE III.  A room in Sir Oliver Muckhill's house.
+
+[Enter Sir Oliver Muckhill, Sir Andrew Tipstaff, and old
+Skirmish talking.]
+
+
+MUCK.
+O monstrous, un-heard of forgery.
+
+TIP.
+Knight, I never heard of such villainy in our own country
+in my life.
+
+MUCH.
+Why, 'tis impossible; dare you maintain your words?
+
+SKIRMISH.
+Dare we? een to their wezen pipes.  We know all their plots,
+they cannot squander with us; they have knavishly abused us,
+made only properties on's to advance their selves upon our
+shoulders, but they shall rue their abuses.  This morning
+they are to be married.
+
+MUCK.
+Tis too true; yet if the Widdow be not too much besotted on
+slights and forgeries, the revelation of their villainies will
+make 'em loathsome: and to that end, be it in private to you,
+I sent late last night to an honorable personage, to whom I
+am much indebted in kindness, as he is to me, and therefore
+presume upon the payment of his tongue, and that he will lay
+out good words for me:  and to speak truth, for such needful
+occasions, I only preserve him in bond, and some-times he may
+do me more good here in the City by a free word of his mouth,
+then if he had paid one half in hand, and took Doomesday for
+t'other.
+
+TIP.
+In troth, Sir, without soothing be it spoken, you have publisht
+much judgment in these few words.
+
+MUCK.
+For you know, what such a man utters will be though effectual
+and to weighty purpose, and therefore into his mouth we'll put
+the approved theme of their forgeries.
+
+SKIRMISH.
+And I'll maintain it, Knight, if ye'll be true.
+
+[Enter a servant.]
+
+MUCK.
+How now, fellow?
+
+SERVANT.
+May it please you, Sir, my Lord is newly lighted from his
+Coach.
+
+MUCK.
+Is my Lord come already? His honor's early.
+You see he loves me well:  up before seven!
+Trust me, I have found his night capt at eleven.
+There's good hope yet; come, I'll relate all to him.
+
+[Exeunt.]
+
+
+SCENE IV.  A street; a church appearing.
+
+[Enter the two Bridegrooms, Captain and Scholar; after them,
+Sir Godfrey and Edmond, Widdow changed in apparel, Mistress
+Frances led between two Knights, Sir John Pennydub and Moll:
+there meets them a Noble man, Sir Oliver Muckhill, and Sir
+Andrew Tipstaff.]
+
+NOBLE.
+By your leave, Lady.
+
+WIDOW.
+My Lord, your honour is most chastely welcome.
+
+NOBLE.
+Madam, tho I came now from court, I come now from court, I
+come not to flatter you:  upon whom can I justly cast this
+blot, but upon your own forehead, that know not ink from
+milk? such is the blind besotting in the state of an unheaded
+woman that's a widdow.  For it is the property of all you that
+are widdowes (a hand full excepted) to hate those that honestly
+and carefully love you, to the maintenance of credit, state,
+and posterity, and strongly to dote on those, that only love
+you to undo you:  who regard you least are best regarded, who
+hate you most are best beloved.  And if there be but one man
+amongst ten thousand millions of men that is accurst,
+disastrous, and evilly planeted, whom Fortune beats most,
+whom God hates most, and all Societies esteem least, that man
+is sure to be a husband.--Such is the peevish Moon that rules
+your bloods.  An Impudent fellow best woes you, a flattering
+lip best wins you, or in a mirth who talks roughliest is most
+sweetest; nor can you distinguish truth from forgeries, mists
+from Simplicity:  witness those two deceitful monsters that
+you have entertaind for bride-grooms.
+
+WIDOW.
+Deceitful!
+
+PYE.
+All will out.
+
+CAPTAIN.
+Sfoot, who has blabd, George? that foolish Nicholas?
+
+NOBLE.
+For what they have besotted your easy blood withall wear
+nought but forgeries: the fortune telling for husbands, the
+conjuring for the chain Sir Godfrey heard the falshod of:
+all mere knavery, deceit, and coozenage.
+
+WIDOW.
+O wonderful! Indeed I wondred that my husband with all his
+Craft could not keep himself out of purgatory.
+
+SIR GODFREY.
+And I more wonder that my chain should be gone and my Tailor
+had none of it.
+
+MOLL.
+And I wondred most of all that I should be tied from marriage,
+having such a mind too't.  Come, Sir John Pennydub, fair
+weather on our side; the moon has changed since yester night.
+
+PYE.
+The Sting of every evil is with-in me.
+
+NOBLE.
+And that you may perceive I fain not with you, behold their
+fellow actor in those forgeries; who, full of Spleen and
+envy at their so sudden advancements, revealed all their plot
+in anger.
+
+PYE.
+Base Soldier, to reveal us/
+
+WIDOW.
+Ist possible we should be blinded so, and our eye open?
+
+NOBLE.
+Widdow, will you now believe that false, which too soon you
+believed true?
+
+WIDOW.
+O, to my shame I do.
+
+SIR GODFREY.
+But under favour, my Lord, my chain was truly lost and
+strangely found again.
+
+NOBLE.
+Resolve him of that, Soldier.
+
+SKIRMISH.
+In few words, Knight, then, thou were the arch-gull of all.
+
+SIR GODFREY.
+How, Sir?
+
+SKIRMISH.
+Nay, I'll prove it: for the chain was but hid in the rosemary
+bank all this while, and thou gotst him out of prison to
+Conjure for it, who did it admirably fustianly; for indeed
+what need any others when he knew where it was?
+
+SIR GODFREY.
+O villainy of villainies! But how came my chain there?
+
+SKIRMISH.
+Where's truly la, in deed la, he that will not swear, but lie,
+He that will not steal, But rob: pure Nicholas Saint Antlings?
+
+SIR GODFREY.
+O Villain! one of our society,
+Deemd always holy, pure, religious.
+A Puritan a thief, when wast ever heard?
+Sooner we'll kill a man then Steal, thou knowst.
+Out, slave! I'll rend my lion from thy back
+With mine own hands.
+
+NICHOLAS.
+Dear Master, oh.
+
+NOBLE.
+Nay, Knight, dwell in patience.  And now, widdow, being so
+near the Church, twer great pity, nay uncharity, to send you
+home again without a husband: draw nearer you of true worship,
+state and credit, that should not stand so far off from a
+widdow, and suffer forged shapes to come between you.  Not
+that in these I blemish the true Title of a Captain, or blot
+the fair margent of a Scholar; For I honor worthy and deserving
+parts in the one, and cherish fruitful Vertues in the other.
+Come Lady, and you, Virgin; bestow your eyes and your purest
+affections upon men of estimation both in Court and City, that
+hath long wooed you, and both with there hearts and wealth
+sincerely love you.
+
+SIR GODFREY.
+Good Sister, do:  Sweet little Franke, these are men of
+reputation; you shall be welcome at Court: a great credit for
+a Citizen, sweet Sister.
+
+NOBLE.
+Come, her silence does consent too't.
+
+WIDDOW.
+I know not with what face--
+
+NOBLE.
+Pah, pah! why, with your own face; they desire no other.
+
+WIDDOW.
+Pardon me, worthy Sirs; I and my daughter have wrongd your
+loves.
+
+MUCK.
+Tis easily pardon'd, Lady,
+If you vouchsafe it now.
+
+WIDDOW.
+With all my soul.
+
+FRANCES.
+And I with all my heart.
+
+MOLL.
+And I, Sir John, with soul, heart, lights and all.
+
+SIR JOHN.
+They are all mine, Moll.
+
+NOBLE.
+Now, Lady,
+What honest Spirit but will applaud your choice,
+And gladly furnish you with hand and voice?
+A happy change which makes e'en heaven rejoice.
+Come, enter into your Joys, you shall not want
+For fathers now; I doubt it not, believe me,
+But that you shall have hands enough to give ye.
+
+[Exeunt omnes.]
+
+Deus dedit his quoque finem.
+
+
+FINIS
+
+
+
+End of the Project Gutenberg Etext of The Puritain Widow, 
+attributed in part to Shakespeare
+

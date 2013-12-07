@@ -1,0 +1,1863 @@
+Project Gutenberg's The Complete Works of Artemus Ward, Part 5
+#5 of this seven part series by Charles Farrar Browne
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+As of 12/12/00 contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Title: The Complete Works of Artemus Ward, Part 5
+
+Author: Charles Farrar Browne
+
+Release Date: June, 2002  [Etext #3275]
+[Yes, we are over one year ahead of schedule]
+[The actual date this file first posted = 03/09/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg's The Complete Works of Artemus Ward, Part 5
+*****This file should be named 5ward10.txt or 5ward10.zip*****
+
+Corrected EDITIONS of our etexts get a new NUMBER, 5ward11.txt
+VERSIONS based on separate sources get new LETTER, 5ward10a.txt
+
+This etext was produced by anonymous Project Gutenberg volunteers
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext02
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext02
+
+Or /etext01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Project Gutenberg Literary Archive Foundation,
+EIN [Employee Identification Number] 64-6221541,
+has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the extent
+permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation.  Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655-4109  [USA]
+
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may 
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the 
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.  
+
+The Project gratefully accepts contributions of money, time, 
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.03.09.01*END*
+[Portions of this header are copyright (C) 2001 by Michael Hart]
+
+
+
+
+
+This etext was produced by anonymous Project Gutenberg Volunteers
+
+
+
+
+
+The Project Gutenberg Etext of The Complete Works of
+Artemus Ward (Charles Farrar Browne) Part 5
+
+THE COMPLETE WORKS OF ARTEMUS WARD PART 5, THE LONDON PUNCH
+LETTERS
+
+(CHARLES FARRAR BROWNE)
+
+With a biographical sketch by Melville D. Landon, "Eli Perkins"
+
+PART V.
+
+The London Punch Letters.
+
+5.1.  Arrival in London.
+
+5.2.  Personal Recollections.
+
+5.3.  The Green Lion and Oliver Cromwell.
+
+5.4.  At the Tomb of Shakespeare.
+
+5.5.  Introduction to the Club.
+
+5.6.  The Tower of London.
+
+5.7.  Science and Natural History.
+
+5.8.  A Visit to the British Museum.
+
+PART V.  THE LONDON PUNCH LETTERS.
+
+P.S.--June 16th.--Artemus Ward really arrived in London yesterday.
+He has come to England at last, though, like "La Belle Helene at
+the Adelphi Theatre, he "has been some time in preparation."
+
+JOHN CAMDEN HOTTEN, Piccadilly, W.  Jan. 30, 1865.
+
+5.1.  ARRIVAL IN LONDON.
+
+MR. PUNCH:  My dear Sir,--You prob'ly didn't meet my uncle Wilyim
+when he was on these shores.  I jedge so from the fack that his
+pursoots wasn't litrary.  Commerce, which it has been trooly
+observed by a statesman, or somebody, is the foundation stone
+onto which a nation's greatness rests, glorious Commerce was
+Uncle Wilyim's fort.  He sold soap.  It smelt pretty, and redily
+commanded two pents a cake.  I'm the only litrary man in our
+fam'ly.  It is troo, I once had a dear cuzzun who wrote 22 verses
+onto "A Child who nearly Died of the Measles, O!" but as he
+injoodiciously introjudiced a chorious at the end of each stansy,
+the parrents didn't like it at all.  The father in particler wept
+afresh, assaulted my cuzzun, and said he never felt so ridicklus
+in his intire life.  The onhappy result was that my cuzzun
+abandined poetry forever, and went back to shoemakin, a shattered
+man.
+
+My Uncle Wilyim disposed of his soap, and returned to his nativ
+land with a very exolted opinyon of the British public.  "It is a
+edycated community," said he; "they're a intellectooal peple.  In
+one small village alone I sold 50 cakes of soap, incloodin
+barronial halls, where they offered me a ducal coronet, but I
+said no--give it to the poor."  This was the way Uncle Wilyim
+went on.  He told us, however, some stories that was rather too
+much to be easily swallerd.  In fack, my Uncle Wilyim was not a
+emblem of trooth.  He retired some years ago on a hansum
+comptency derived from the insurance-money he received on a
+rather shaky skooner he owned, and which turned up while lyin at
+a wharf one night, the cargo havin fortnitly been removed the day
+afore the disastriss calamty occurd.  Uncle Wilyim said it was
+one of the most sing'ler things he ever heard of; and, after
+collectin the insurance money, he bust into a flood of tears, and
+retired to his farm in Pennsylvany.  He was my uncle by marriage
+only.  I do not say that he wasn't a honest man.  I simply say
+that if you have a uncle, and bitter experunce tells you it is
+more profitable in a pecoonery pint of view to put pewter spoons
+instid of silver ones onto the table when that uncle dines with
+you in a frenly way--I simply say, there is sumthun wrong in our
+social sistim, which calls loudly for reform.
+
+I 'rived on these shores at Liverpool, and proceeded at once to
+London.  I stopt at the Washington Hotel in Liverpool, because it
+was named after a countryman of mine who didn't get his living by
+makin' mistakes, and whose mem'ry is dear to civilized peple all
+over the world, because he was gentle and good as well as trooly
+great.  We read in Histry of any number of great individooals,
+but how few of 'em, alars! should we want to take home to supper
+with us!  Among others, I would call your attention to Alexander
+the Great, who conkerd the world, and wept because he couldn't do
+it sum more, and then took to gin-and-seltzer, gettin' tight
+every day afore dinner with the most disgustin' reg'larity,
+causin' his parunts to regret they hadn't 'prenticed him in his
+early youth to a biskit-baker, or some other occupation of a
+peaceful and quiet character.  I say, therefore, to the great men
+now livin; (you could put 'em all into Hyde Park, by the way, and
+still leave room for a large and respectable concourse of
+rioters)--be good.  I say to that gifted but bald-heded Prooshun,
+Bismarck, be good and gentle in your hour of triump.  _I_ always
+am.  I admit that our lines is different, Bismarck's and mine;
+but the same glo'rus principle is involved, I am a exhibiter of
+startlin' curiositys, wax works, snaix, etsetry ("either of
+whom," as a American statesman whose name I ain't at liberty to
+mention for perlitical resins, as he expecks to be a candidate
+for a prom'nent offiss, and hence doesn't wish to excite the rage
+and jelisy of other showmen--"either of whom is wuth dubble the
+price of admission"); I say I am an exhibiter of startlin
+curiositys, and I also have my hours of triump, but I try to be
+good in 'em.  If you say, "Ah, yes, but also your hours of grief
+and misfortin;" I answer, it is troo, and you prob'ly refer to
+the circumstans of my hirin' a young man of dissypated habits to
+fix hisself up as A real Cannibal from New Zeelan, and when I was
+simply tellin the audience that he was the most feroshos Cannibal
+of his tribe, and that, alone and unassisted, he had et sev'ril
+of our fellow countrymen, and that he had at one time even
+contemplated eatin his Uncle Thomas on his mother's side, as well
+as other near and dear relatives,--when I was makin' these simple
+statements the mis'ble young man said I was a lyer, and knockt me
+off the platform.  Not quite satisfied with this, he cum and trod
+hevly on me, and as he was a very muscular person and wore
+remarkable thick boots, I knew at once that a canary bird wasn't
+walkin' over me.
+
+I admit that my ambition overlept herself in this instuns, and
+I've been very careful ever since to deal square with the public.
+If I was the public I should insist on squareness, tho' I
+shouldn't do as a portion of my audience did on the occasion jest
+mentioned, which they was employed in sum naberin' coal mines.
+
+"As you hain't got no more Cannybals to show us, old man," said
+one of 'em, who seemed to be a kind of leader among 'em--a tall
+dis'greeble skoundril--"as you seem to be out of Cannybals, we'll
+sorter look round here and fix things.  Them wax figgers of yours
+want washin'.  There's Napoleon Bonyparte and Julius Caesar--they
+must have a bath," with which coarse and brutal remark he
+imitated the shrill war-hoop of the western savige, and, assisted
+by his infamus coal-heavin companyins, he threw all my wax-work
+into the river, and let my wild bears loose to pray on a peaceful
+and inoffensive agricultooral community.
+
+Leavin Liverpool (I'm goin' back there, tho--I want to see the
+Docks, which I heard spoken of at least once while I was there) I
+cum to London in a 1st class car, passin' the time very agreeable
+in discussin, with a countryman of mine, the celebrated
+Schleswig-Holstein question.  We took that int'resting question
+up and carefully traced it from the time it commenced being so,
+down to the present day, when my countryman, at the close of a
+four hours' annymated debate, said he didn't know anything about
+it himself, and he wanted to know if I did.  I told him that I
+did not.  He's at Ramsgate now, and I am to write him when I feel
+like givin him two days in which to discuss the question of negro
+slavery in America.  But now I do not feel like it.
+
+London at last, and I'm stoppin at the Greenlion tavern.  I like
+the lan'lord very much indeed.  He had fallen into a few triflin
+errers in regard to America--he was under the impression, for
+instance, that we et hay over there, and had horns growin out of
+the back part of our heads--but his chops and beer is ekal to any
+I ever pertook.  You must cum and see me and bring the boys.  I'm
+told that Garrick used to cum here, but I'm growin skeptycal
+about Garrick's favorit taverns.  I've had over 500 public-houses
+pinted out to me where Garrick went.  I was indooced one night,
+by a seleck comp'ny of Britons, to visit sum 25 public-houses,
+and they confidentially told me that Garrick used to go to each
+one of 'em.  Also, Dr. Johnson.  This won't do, you know.
+
+May be I've rambled a bit in this communycation.  I'll try and be
+more collected in my next, and meanwhile, b'lieve me,
+
+                                   Trooly Yours,
+                                                Artemus Ward.
+
+5.2.  PERSONAL RECOLLECTIONS.
+
+You'll be glad to learn that I've made a good impression onto the
+mind of the lan'lord of the Green Lion tavern.  He made a speech
+about me last night.  Risin' in the bar he spoke as follers,
+there bein over 20 individooals present:
+
+"This North American has been a inmate of my 'ouse over two
+weeks, yit he hasn't made no attempt to scalp any member of my
+fam'ly.  He hasn't broke no cups or sassers, or furnitur of any
+kind.  ("Hear, hear.")  I find I can trust him with lited
+candles.  He eats his wittles with a knife and a fork.  People of
+this kind should be encurridged.  I purpose 'is 'elth!"  ("Loud
+'plaws.")
+
+What could I do but modestly get up and express a fervint hope
+that the Atlantic Cable would bind the two countries still more
+closely together?  The lan'lord said my speech was full of
+orig'nality, but his idee was the old stage coach was more safer,
+and he tho't peple would indors that opinyin in doo time.
+
+I'm gettin' on exceedin' well in London.  I see now, however,
+that I made a mistake in orderin' my close afore I left home.
+The trooth is the taler in our little villige owed me for a pig
+and I didn't see any other way of gettin' my pay.  Ten years ago
+these close would no doubt have been fash'n'ble, and perhaps they
+would be ekally sim'lar ten years hens.  But now they're
+diff'rently.  The taler said he know'd they was all right,
+because he had a brother in Wales who kept him informed about
+London fashins reg'lar.  This was a infamus falsehood.  But as
+the ballud says (which I heard a gen'l'man in a new soot of black
+close and white kid gloves sing t'other night), Never don't let
+us Despise a Man because he wears a Raggid Coat!  I don't know as
+we do, by the way, tho' we gen'rally get out of his way pretty
+rapid; prob'ly on account of the pity which tears our boosums for
+his onhappy condition.
+
+This last remark is a sirkastic and witherin' thrust at them
+blotid peple who live in gilded saloons.  I tho't I'd explain my
+meanin' to you.  I frekently have to explain the meanin' of my
+remarks.  I know one man--and he's a man of varid 'complishments
+--who often reads my articles over 20 times afore he can make
+anything of 'em at all.  Our skoolmaster to home says this is a
+pecoolerarity of geneyus.  My wife says it is a pecoolerarity of
+infernal nonsens.  She's a exceedin' practycal woman.  I luv her
+muchly, however, and humer her little ways.  It's a recklis
+falshood that she henpecks me, and the young man in our
+neighborhood who said to me one evenin', as I was mistenin' my
+diafram with a gentle cocktail at the villige tavun--who said to
+me in these very langwidge, "Go home, old man, onless you desires
+to have another teapot throwd at you by B.J.," probly regrets
+havin said so.
+
+I said, "Betsy Jane is my wife's front name, gentle yooth, and I
+permits no person to alood to her as B.J. outside of the family
+circle, of which I am it principally myself.  Your other
+observations I scorn and disgust, and I must pollish you off."
+
+He was a able-bodied young man, and, remoovin his coat, he
+enquired if I wanted to be ground to powder?  I said, Yes:  if
+there was a Powder-grindist handy, nothin would 'ford me greater
+pleasure, when he struck me a painful blow into my right eye,
+causin' me to make a rapid retreat into the fireplace.  I hadn't
+no idee that the enemy was so well organized.  But I rallied and
+went for him, in a rayther vigris style for my time of life.  His
+parunts lived near by, and I will simply state 15 minits had only
+elapst after the first act when he was carried home on a shutter.
+His mama met the sollum procession at the door, and after
+keerfully looking her orfspring over, she said:
+
+"My son, I see how it is distinctually.  You've been foolin'
+round a Trashin Masheen.  You went in at the place where they put
+the grain in, cum out with the straw, and you got up into the
+thingamyjig, and let the horses tred on you, didn't you, my son?"
+
+The pen of no liven Orthur could describe that disfortnit young
+man's sittywation more clearer.  But I was sorry for him, and I
+went and nussed him till he got well.  His reg'lar original
+father being absent to the war, I told him I'd be a father to him
+myself.  He smilt a sickly smile, and said I'd already been wus
+than two fathers to him.
+
+I will here obsarve that fitin orter be allus avided, excep in
+extreem cases.  My principle is, if a man smites me on the right
+cheek I'll turn my left to him, prob'ly; but if he insinooates
+that my gran'mother wasn't all right, I'll punch his hed.  But
+fitin is mis'ble bisniss, gen'rally speakin, and whenever any
+enterprisin countryman of mine cums over here to scoop up a
+Briton in the prize ring I'm allus excessively tickled when he
+gets scooped hisself, which it is a sad fack has thus far been
+the case--my only sorrer bein' that t'other feller wasn't scooped
+likewise.  It's diff'rently with scullin boats, which is a manly
+sport, and I can only explain Mr. Hamil's resunt defeat in this
+country on the grounds that he wasn't used to British water.  I
+hope this explanation will be entirely satisfact'ry to all.
+
+As I remarked afore, I'm gettin' on well.  I'm aware that I'm in
+the great metrop'lis of the world, and it doesn't make me onhappy
+to admit the fack. A man is a ass who dispoots it.  That's all
+that ails HIM.  I know there is sum peple who cum over here and
+snap and snarl 'bout this and that:  I know one man who says it
+is a shame and a disgrace that St. Paul's Church isn't a older
+edifiss; he says it should be years and even ages older than it
+is; but I decline to hold myself responsible for the conduck of
+this idyit simply because he's my countryman.  I spose every
+civ'lised land is endowed with its full share of gibberin'
+idyits, and it can't be helpt--leastways I can't think of any
+effectooal plan of helpin' it.
+
+I'm a little sorry you've got politics over here, but I shall not
+diskuss 'em with nobody.  Tear me to pieces with wild omnibus
+hosses, and I won't diskuss 'em.  I've had quite enuff of 'em at
+home, thank you.  I was at Birmingham t'other night, and went to
+the great meetin' for a few minits.  I hadn't been in the hall
+long when a stern-lookin' artisan said to me:
+
+"You ar from Wales!"
+
+No, I told him I didn't think I was.  A hidgyis tho't flasht over
+me.  It was of that onprincipled taler, and I said, "Has my
+clothin' a Welchy appearance?"
+
+"Not by no means," he answered, and then he said, "And what is
+your opinyin of the present crisis?"
+
+I said, "I don't zackly know.  Have you got it very bad?"
+
+He replied, "Sir, it is sweepin' England like the Cymoon of the
+Desert!"
+
+"Wall," I said, "let it sweep!"
+
+He ceased me by the arm and said, "Let us glance at hist'ry.  It
+is now some two thousand years--"
+
+"Is it, indeed?" I replied.
+
+"Listin!" he fiercely cried; "it is only a little over two
+thousand years since--"
+
+"Oh, bother!" I remarkt, "let us go out and git some beer."
+
+"No, Sir.  I want no gross and sensual beer.  I'll not move from
+this spot till I can vote.  Who ar you?"
+
+I handed him my card, which in addition to my name, contains a
+elabrit description of my show.  "Now, Sir," I proudly said, "you
+know me?"
+
+"I sollumly swear," he sternly replied, "that I never heard of
+you, or your show, in my life!"
+
+"And this man," I cried bitterly, "calls hisself a intelligent
+man, and thinks he orter be allowed to vote!  What a holler
+mockery!"
+
+I've no objection to ev'ry intelligent man votin' if he wants to.
+It's a pleasant amoosement, no doubt; but there is those whose
+igrance is so dense and loathsum that they shouldn't be trustid
+with a ballit any more'n one of my trained serpunts should be
+trusted with a child to play with.
+
+I went to the station with a view of returnin' to town on the
+cars.
+
+"This way, Sir," said the guard; "here you ar," and he pinted to
+a first-class carriage, the sole ockepant of which was a rayther
+prepossessin' female of about 30 summers.
+
+"No, I thank you," I earnestly replied, "I prefer to walk."
+
+I am, dear Sir,
+                    Very respectivly yours,
+                                            Artemus WArd.
+
+5.3.  THE GREEN LION AND OLIVER CROMWELL.
+
+MR. PUNCH:  My Dear Sir,--It is now two weeks since a rayther
+strange lookin man engaged 'partments at the Green Lion.  He
+stated he was from the celebrated United States, but beyond this
+he said nothin.  He seem'd to prefer sollytood.  He remained
+mostly in his room, and whenever he did show hisself he walkt in
+a moody and morose manner in the garding, with his hed bowed down
+and his arms foldid across his brest.  He reminded me sumwhat of
+the celebrated but onhappy "Mr. Haller," in the cheerful play of
+"The Stranger."  This man puzzled me.  I'd been puzzled afore
+several times, but never so severally as now.  Mine Ost of the
+Greenlion said I must interregate this strange bein, who claimed
+to be my countryman.
+
+"He hasn't called for a drop of beer since he's been in this ere
+Ouse," said the landlord.  "I look to you," he added, "to clear
+up this dark, this orful mistry!"
+
+I wringed the lan'lord's honest hand, and told him to consider
+the mistry cleared up.
+
+I gained axes to the misterus bein's room, and by talkin sweet to
+him for a few minits, I found out who he was.  Then returnin to
+the lan'lord, who was nervisly pacin up and down the bar, I said,
+
+"Sweet ROLANDO, don't tremble no more!  I've torn the marsk from
+the hawty stranger's face, and dived into the recesses of his
+inmost sole!  He's a Trans-Mejim."
+
+I'd been to the Beefanham theatre the previs evenin, and probly
+the drammer I saw affected me, because I'm not in the habit of
+goin on as per above.  I like the Beefanham theatre very much
+indeed, because there a enthoosiastic lover of the theatre like
+myself can unite the legitermit drammer with fish.  Thus, while
+your enrapterd soul drinks in the lorfty and noble sentences of
+the gifted artists, you can eat a biled mack'ril jest as
+comfor'bly as in your own house.  I felt constrained, however, to
+tell a fond mother who sot immegitly behind me, and who was
+accompanied by a gin bottle, and a young infant--I felt
+constrained to tell that mother, when her infant playfully
+mingled a rayther oily mack'ril with the little hair which is
+left on my vener'ble hed, that I had a bottle of scented hair oil
+at home, which on the whole I tho't I preferred to that which her
+orfspring was greasin me with.  This riled the excellent feamale,
+and she said:
+
+"Git out!  You never was a infank yourself, I spose!  Oh no!  You
+was too good to be a infank, you was!  You slid into the world
+all ready grow'd, didn't you?  Git out!"
+
+"No, Madam," I replied, "I too was once a infant!  I was a luvly
+child.  People used to come in large and enthoosiastic crowds
+from all parts of the country to see me, I was such a sweet and
+intel'gent infant.  The excitement was so intens, in fack, that a
+extra hotel was startid in the town to accomodate the peple who
+thronged to my cradle."  Havin finished these troothful
+statemints, I smilt sweetly on the worthy female.  She said:
+
+"Drat you, what do you come a-chaffin me for?" and the estymible
+woman was really gettin furis, when I mollyfied her by praisin
+her child, and by axin pardin for all I'd said.
+
+"This little gal," I observed, "this surprisingly lively gal
+when--" the mother said,
+
+"It's t'other sect is he, Sir:  it's a boy."
+
+"Wall," I said, "then this little boy, whose eye is like a eagle
+a-soaring proudly in the azure sky, will some day be a man, if he
+don't choke hisself to death in childhood's sunny hours with a
+smelt or a bloater, or some other drefful calamity.  How surblime
+the tho't, my dear Madam, that this infant as you fondle on your
+knee on this night, may grow up into a free and independent
+citizen, whose vote will be worth from ten to fifteen pounds,
+accordin as suffrage may range at that joyous perid!"
+
+Let us now return, jentle reader, to the lan'lord of the Green
+Lion, who we left in the bar in a state of anxiety and perspire.
+Rubbin his hot face with a red handkercher, he said, "Is the
+strange bein a American?"
+
+"He is."
+
+"A Gen'ral?"
+
+"No."
+
+"A Colonial?"
+
+"No."
+
+"A Majer?"
+
+"Not a Majer."
+
+"A Capting?"
+
+"He is not."
+
+"A leftenant?"
+
+"Not even that."
+
+"Then," said the lan'lord of the Green Lion, "you ar deceeved!
+He is no countryman of yours."
+
+"Why not?" I said.
+
+"I will tell you, Sir," said the lan'lord.  "My son-in-law is
+employed in a bankin house where ev'ry American as comes to these
+shores goes to git his drafts casht, and he says that not one has
+arrived on these shores during the last 18 months as wasn't a
+Gen'ral, a Colonial, a Majer, a Capting, or a leftenant!  This
+man, as I said afore, has deceeved you!  He's a imposture!"
+
+I reeled into a chair.  For a minit I was speechlis.  At length I
+murmured, "Alars!  I fear it is too troo!  Even I was a Capting
+of the Home Gards."
+
+"To be sure," said the lan'lord; "you all do it over there."
+
+"Wall," I said, "whatever nation this person belongs to, we may
+as well go and hear him lectur this evenin.  He is one of these
+spirit fellers--he is a Trans-Mejim, and when he slings himself
+into a trans-state he says the sperits of departed great men talk
+through him.  He says that to-night sev'ril em'nent persons will
+speak through him--among others, Cromwell."
+
+"And this Mr. Cromwell--is he dead?" said the lan'lord.
+
+I told him that Oliver was no more.
+
+"It's a umbug," said the lan'lord; to which I replied that we'd
+best go and see, and we went.  We was late, on account of the
+lan'lord's extensiv acquaintans with the public house keepers
+along the road, and the hall was some two miles distant, but we
+got there at last.  The hall was about half full, and the Mejim
+was just then assumin' to be Benjamin Franklin, who was speakin
+about the Atlantic Cable.
+
+He said the Cable was really a merrytorious affair, and that
+messiges could be sent to America, and there was no doubt about
+their gettin there in the course of a week or two, which he said
+was a beautiful idear, and much quicker than by steamer or
+canal-boat.  It struck me that if this was Franklin a spiritooal
+life hadn't improved the old gentleman's intellecks particly.
+
+The audiens was mostly composed of rayther pale peple, whose eyes
+I tho't rolled round in a somewhat wild manner.  But they was
+well-behaved, and the females kept saying, "How beautiful!  What
+a surblime thing it is," et cetry, et cetry.  Among the females
+was one who was a fair and rosy young woman.  She sot on the same
+seat we did, and the lan'lord of the Green Lion, whose frekent
+intervoos with other lan'lords that evenin had been too much for
+him, fastened his left eye on the fair and rosy young person, and
+smilin lovinly upon her, said:
+
+"You may give me, my dear, four-penny-worth of gin--cold gin.  I
+take it cold, because--"
+
+There was cries of "Silence!  Shame!  Put him out!  The Skoffer!"
+
+"Ain't we at the Spotted Boar?" the lan'lord hoarsely whispered.
+
+"No," I answered.  "It's another kind of bore.  Lis'en.  Cromwell
+is goin' to speak through our inspired fren', now."
+
+"Is he?" said the lan'lord--"is he?  Wall, I've suthin to say,
+also.  Was this Cromwell a licensed vittler?"
+
+"Not that I ever heard," I anserd.
+
+"I'm sorry for that," said the lan'lord with a sigh, "but you
+think he was a man who would wish to see licensed vittlers
+respected in their rights?"
+
+"No doubt."
+
+"Wall," said the lan'lord, "jest you keep a eye on me."  Then
+risin to his feet he said, in somewhat husky yet tol'bly distink
+voice, "Mr. Crumbwell!"
+
+"Cromwell!" I cried.
+
+"Yes, Mr. Cromwell:  that's the man I mean, Mr. Cromble! won't
+you please advise that gen'l'man who you're talkin through; won't
+you advise'im during your elekant speech to settle his bill at my
+'ouse tonight, Mr. Crumbles," said the lan'lord, glarin' savigely
+round on the peple, "because if he don't there'll be a punched
+'ed to be seen at the Green Lion, where I don't want no more of
+this everlastin nonsens.  I'LL talk through 'im!  Here's a
+sperrit," said the lan'lord, a smile once more beamin on his
+face, "which will talk through him like a Dutch father!  I'm the
+sperrit for you, young feller!"
+
+"You're a helthy old sperret," I remarkt; and then I saw the
+necessity of gettin him out of the hall.  The wimin was yellin
+and screaming, and the men was hollerin' perlice.  A perliceman
+really came and collerd my fat fren.
+
+"It's only a fit, Sir Richard," I said.  I always call the
+perlice Sir Richard.  It pleases them to think I'm the victim of
+a deloosion; and they always treat me perlitely.  This one did,
+certainly, for he let us go.  We saw no more of the Trans-Mejim.
+
+It's diffikilt, of course, to say how long these noosances will
+be allowed to prowl round.  I should say, however, if pressed for
+a answer that they will prob'ly continner on jest about as long
+as they can find peple to lis'en to 'em.  Am I right?
+
+                                   Yours, faithfull,
+                                                   Artemus Ward.
+
+5.4.  AT THE TOMB OF SHAKSPEARE.
+
+Mr. Punch, My dear Sir,--I've been lingerin by the Tomb of the
+lamentid Shakspeare.
+
+It is a success.
+
+I do not hes'tate to pronounce it as such.
+
+You may make any use of this opinion that you see fit.  If you
+think its publication will subswerve the cause of litteraoor, you
+may publicate it.
+
+I told my wife Betsy when I left home that I should go to the
+birthplace of the orthur of "Otheller" and other Plays.  She said
+that as long as I kept out of Newgate she didn't care where I
+went.
+
+"But," I said, "don't you know he was the greatest Poit that ever
+lived?  Not one of these common poits, like that young idyit who
+writes verses to our daughter, about the Roses as growses, and
+the Breezes as blowses--but a Boss Poit--also a philosopher, also
+a man who knew a great deal about everything."
+
+She was packing my things at the time, and the only answer she
+made was to ask me if I was goin to carry both of my red flannel
+night-caps.
+
+Yes.  I've been to Stratford onto the Avon, the Birthplace of
+Shakspeare. Mr. S. is now no more.  He's been dead over three
+hundred (300) years.  The peple of his native town are justly
+proud of him.  They cherish his mem'ry, and them as sell pictures
+of his birthplace, &c., make it prof'tible cherishin it.  Almost
+everybody buys a pictur to put into their Albiom.
+
+As I stood gazing on the spot where Shakspeare is s'posed to have
+fell down on the ice and hurt hisself when a boy, (this spot
+cannot be bought--the town authorities say it shall never be
+taken from Stratford), I wondered if three hundred years hence
+picturs of MY birthplace will be in demand?  Will the peple of my
+native town be proud of me in three hundred years?  I guess they
+won't short of that time because they say the fat man weighing
+1000 pounds which I exhibited there was stuffed out with pillers
+and cushions, which he said one very hot day in July, "Oh bother,
+I can't stand this," and commenced pullin the pillers out from
+under his weskit, and heavin 'em at the audience.  I never saw a
+man lose flesh so fast in my life.  The audience said I was a
+pretty man to come chiselin my own townsmen in that way.  I said,
+"Do not be angry, feller-citizens.  I exhibited him simply as a
+work of art.  I simply wished to show you that a man could grow
+fat without the aid of cod-liver oil."  But they wouldn't listen
+to me.  They are a low and grovelin set of peple, who excite a
+feelin of loathin in every brest where lorfty emotions and
+original idees have a bidin place.
+
+I stopped at Leamington a few minits on my way to Stratford onto
+the Avon, and a very beautiful town it is.  I went into a shoe
+shop to make a purchis, and as I entered I saw over the door
+those dear familiar words, "By Appintment:  H.R.H.;" and I said
+to the man, "Squire, excuse me, but this is too much.  I have
+seen in London four hundred boot and shoe shops by Appintment:
+H.R.H.; and now YOU'RE at it.  It is simply onpossible that the
+Prince can wear 400 pairs of boots.  Don't tell me," I said, in a
+voice choked with emotion--"Oh, do not tell me that you also make
+boots for him.  Say slippers--say that you mend a boot now and
+then for him; but do not tell me that you make 'em reg'lar for
+him."
+
+The man smilt, and said I didn't understand these things.  He
+said I perhaps had not noticed in London that dealers in all
+sorts of articles was By Appintment.  I said, "Oh, HADN'T I?"
+Then a sudden thought flasht over me.  "I have it!" I said.
+"When the Prince walks through a street, he no doubt looks at the
+shop windows."
+
+The man said, "No doubt."
+
+"And the enterprisin tradesman," I continnerd, "the moment the
+Prince gets out of sight, rushes frantically and has a tin sign
+painted, By Appintment, H.R.H.!  It is a beautiful, a great
+idee!"
+
+I then bought a pair of shoe strings, and wringin the shopman's
+honest hand, I started for the Tomb of Shakspeare in a hired fly.
+It look't however more like a spider.
+
+"And this," I said, as I stood in the old church-yard at
+Stratford, beside a Tombstone, "this marks the spot where lies
+William W. Shakspeare.  Alars! and this is the spot where--"
+
+"You've got the wrong grave," said a man--a worthy villager:
+"Shakspeare is buried inside the church."
+
+"Oh," I said, "a boy told me this was it."  The boy larfed and
+put the shillin I'd given him onto his left eye in a inglorious
+manner, and commenced moving backwards towards the street.
+
+I pursood and captered him, and after talking to him a spell in a
+skarcastic stile, I let him went.
+
+The old church was damp and chill.  It was rainin.  The only
+persons there when I entered was a fine bluff old gentleman who
+was talking in a excited manner to a fashnibly dressed young man.
+
+"No, Earnest Montresser," the old gentleman said, "it is idle to
+pursoo this subjeck no further.  You can never marry my daughter.
+You were seen last Monday in Piccadilly without a umbreller!  I
+said then, as I say now, any young man as venturs out in a
+uncertain climit like this without a umbreller, lacks foresight,
+caution, strength of mind and stability; and he is not a proper
+person to intrust a daughter's happiness to."
+
+I slapt the old gentleman on the shoulder, and I said:  "You're
+right!  You're one of those kind of men, you are--"
+
+He wheeled suddenly round, and in a indignant voice, said, "Go
+way--go way! This is a privit intervoo."
+
+I didn't stop to enrich the old gentleman's mind with my
+conversation.  I sort of inferred that he wasn't inclined to
+listen to me, and so I went on. But he was right about the
+umbreller.  I'm really delighted with this grand old country,
+"Mr. Punch," but you must admit that it does rain rayther
+numerously here.  Whether this is owing to a monerkal form of
+gov'ment or not I leave all candid and onprejudiced persons to
+say.
+
+William Shakspeare was born in Stratford in 1564.  All the
+commentaters, Shaksperian scholars, etsetry, are agreed on this,
+which is about the only thing they are agreed on in regard to
+him, except that his mantle hasn't fallen onto any poet or
+dramatist hard enough to hurt said poet or dramatist MUCH.  And
+there is no doubt if these commentaters and persons continner
+investigating Shakspeare's career, we shall not, in doo time,
+know anything about it at all.
+
+When a mere lad little William attended the Grammar School,
+because, as he said, the Grammar School wouldn't attend him.
+This remarkable remark, comin from one so young and inexperunced,
+set peple to thinkin there might be somethin in this lad.  He
+subsequently wrote "Hamlet" and "George Barnwell."  When his kind
+teacher went to London to accept a position in the offices of the
+Metropolitan Railway, little William was chosen by his fellow
+pupils to deliver a farewell address.
+
+"Go on, Sir," he said, "in a glorus career.  Be like a eagle, and
+soar and the soarer you get the more we shall all be gratified!
+That's so."
+
+My young readers, who wish to know about Shakspeare, better get
+these vallyable remarks framed.
+
+I returned to the hotel.  Meetin a young married couple, they
+asked me if I could direct them to the hotel which Washington
+Irving used to keep?
+
+"I've understood that he was onsuccessful as a lan'lord," said
+the lady.
+
+"We've understood," said the young man, "that he busted up."
+
+I told 'em I was a stranger, and hurried away.  They were from my
+country, and ondoubtedly represented a thrifty Ile well somewhere
+in Pennsylvany. It's a common thing, by the way, for a old farmer
+in Pennsylvany to wake up some mornin' and find ile squirtin all
+around his back yard.  He sells out for 'normous price, and his
+children put on gorgeous harness and start on a tower to astonish
+people.  They succeed in doin it.  Meantime the Ile squirts and
+squirts, and Time rolls on.  Let it roll.
+
+A very nice old town is Stratford, and a capital inn is the Red
+Horse.  Every admirer of the great S. must go there once
+certinly; and to say one isn't a admirer of him, is equv'lent to
+sayin one has jest about brains enough to become a efficient
+tinker.
+
+Some kind person has sent me Chawcer's "poems."  Mr. C. had
+talent, but he couldn't spel.  No man has a right to be a
+lit'rary man onless he knows how to spel.  It is a pity that
+Chawcer, who had geneyus, was so unedicated.  He's the wuss
+speller I know of.
+
+I guess I'm through, and so I lay down the pen, which is more
+mightier than the sword, but which I'm fraid would stand a
+rayther slim chance beside the needle gun.
+
+                                Adoo!  Adoo!
+                                             Artemus Ward.
+
+5.5.  IS INTRODUCED AT THE CLUB.
+
+
+MR. PUNCH, My dear Sir,--It is seldim that the Commercial
+relations between Great Britain and the United States is mar'd
+by Games.
+
+It is Commerce after all, which will keep the two countries
+friendly to'ards each other rather than statesmen.
+
+I look at your last Parliament, and I can't see that a single
+speech was encored during the entire session.
+
+Look at Congress--but no, I'd rather not look at Congress.
+
+Entertainin this great regard for Commerce, "whose sales whiten
+every sea," as everybody happily observes every chance he gets, I
+learn with disgust and surprise that a British subjeck bo't a
+Barril of Apple Sass in America recently, and when he arrove home
+he found under a few deloosiv layers of sass nothin but sawdust.
+I should have instintly gone into the City and called a meetin of
+the leadin commercial men to condemn and repudiate, as a
+American, this gross frawd, if I hadn't learned at the same time
+that the draft given by the British subjeck in payment for this
+frawdylent sass was drawed onto a Bankin House in London which
+doesn't have a existance, but far otherwise, and never did.
+
+There is those who larf at these things, but to me they merit
+rebooks and frowns.
+
+With the exception of my Uncle Wilyim--who, as I've before
+stated, is a uncle by marrige only, who is a low cuss and filled
+his coat pockets with pies and biled eggs at his weddin
+breakfast, given to him by my father, and made the clergyman as
+united him a present of my father's new overcoat, and when my
+father on discoverin' it got in a rage and denounced him, Uncle
+Wilyim said the old man (meanin my parent) hadn't any idee of
+first class Humer!--with the exception of this wretched Uncle the
+escutchin of my fam'ly has never been stained by Games.  The
+little harmless deceptions I resort to in my perfeshion I do not
+call Games.  They are sacrifisses to Art.
+
+I come of a very clever fam'ly.
+
+The Wards is a very clever fam'ly indeed.
+
+I believe we are descendid from the Puritins, who nobly fled from
+a land of despitism to a land of freedim, where they could not
+only enjoy their own religion, but prevent everybody else from
+enjoyin HIS.
+
+As I said before, we are a very clever fam'ly.
+
+I was strolling up Regent Street the other day, thinkin what a
+clever fam'ly I come of, and looking at the gay shop-winders.
+I've got some new close since you last saw me.  I saw them others
+wouldn't do.  They carrid the observer too far back into the dim
+vister of the past, and I gave 'em to a Orfun Asylum.  The close
+I wear now I bo't of Mr. Moses, in the Commercial Road.  They was
+expressly made, Mr. Moses inforemd me, for a nobleman, but as
+they fitted him too muchly, partic'ly the trows'rs (which is
+blue, with large red and white checks) he had said:
+
+"My dear feller, make me some more, only mind--be sure you sell
+these to some genteel old feller."
+
+I like to saunter thro' Regent Street.  The shops are pretty, and
+it does the old man's hart good to see the troops of fine healthy
+girls which one may always see there at certain hours in the
+afternoon, who don't spile their beauty by devourin cakes and
+sugar things, as too many of the American and French lasses do.
+It's a mistake about everybody being out of town, I guess.
+Regent Street is full.  I'm here; and as I said before, I come of
+a very clever fam'ly.
+
+As I was walkin along, amoosin myself by stickin my penknife into
+the calves of the footmen who stood waitin by the swell-coaches
+(not one of whom howled with angwish), I was accosted by a man of
+about thirty-five summers, who said, "I have seen that face
+somewheres afore!"
+
+He was a little shabby in his wearin apparil.  His coat was one
+of those black, shiny garments, which you can always tell have
+been burnished by adversity; but he was very gentlemanly.
+
+"Was it in the Crimea, comrade?  Yes, it was.  It was at the
+stormin of Sebastopol, where I had a narrow escape from death,
+that we met."
+
+I said, "No, I wasn't at Sebastopol; I escaped a fatal wound by
+not bein there.  It was a healthy old fortress," I added.
+
+"It was.  But it fell.  It came down with a crash."
+
+"And plucky boys they was who brought her down," I added; "and
+hurrah for 'em!"
+
+The man graspt me warmly by the hand, and said he had been in
+America, Upper Canada, Africa, Asia Minor, and other towns, and
+he'd never met a man he liked as much as he did me.
+
+"Let us," he added, "let us to the shrine of Bachus!"
+
+And he dragged me into a public house.  I was determined to pay,
+so I said, "Mr. Bachus, giv this gen'l'man what he calls for."
+
+We conversed there in a very pleasant manner till my dinner-time
+arrove, when the agreeable gentleman insisted that I should dine
+with him.  "We'll have a banquet, Sir, fit for the gods!"
+
+I told him good plain vittles would soot me.  If the gods wanted
+to have the dispepsy, they was welcome to it.
+
+We had soop and fish, and a hot jint, and growsis, and wines of
+rare and costly vintige.  We had ices, and we had froots from
+Greenland's icy mountins and Injy's coral strands; and when the
+sumptoous reparst was over, the agree'ble man said he'd
+unfortnitly left his pocket-book at home on the marble centre-
+table.
+
+"But, by Jove!" he said, "it was a feast fit for the gods!"
+
+I said, "Oh, never mind," and drew out my puss; tho' I in'ardly
+wished the gods, as the dinner was fit for 'em, was there to pay
+for it.
+
+I come of a very clever fam'ly.
+
+The agree'ble gentleman then said, "Now, I will show you our
+Club.  It dates back to the time of William the Conquerer."
+
+"Did Bill belong to it?" I inquired.
+
+"He did."
+
+"Wall," I said, "if Billy was one of 'em, I need no other
+endorsement as to its respectfulness, and I'll go with you, my
+gay trooper boy!"  And we went off arm-in-arm.
+
+On the way the agree'ble man told me that the Club was called the
+Sloshers.  He said I would notice that none of 'em appeared in
+evenin dress.  He said it was agin the rools of the club.  In
+fack, if any member appeared there in evenin dress he'd be
+instantly expeld.  "And yit," he added, "there's geneyus there,
+and lorfty emotions, and intelleck.  You'll be surprised at the
+quantities of intelleck you'll see there."
+
+We reached the Sloshers in due time, and I must say they was a
+shaky-looking lot, and the public house where they convened was
+certingly none of the best.
+
+The Sloshers crowded round me, and said I was welcome.
+
+"What a beautiful brest-pin you've got," said one of 'em.
+"Permit me," and he took it out of my neckercher.  "Isn't it
+luvly," he said, parsin it to another, who parsed it to another.
+
+It was given me by my Aunt, on my promisin her I'd never swear
+profanely; and I never have, except on very special occasions.  I
+see that beautiful boosum pin a parsin from one Slosher to
+another, and I'm reminded of them sad words of the poit, "parsin
+away! parsin away!"  I never saw it no more.
+
+Then in comes a athletic female, who no sooner sees me than she
+utters a wild yell, and cries:
+
+"At larst! at larst!  My Wilyim, from the seas!"
+
+I said, "not at all, Marm.  Not on no account.  I have heard the
+boatswain pipe to quarters--but a voice in my heart didn't
+whisper Seu-zan!  I've belayed the marlin-spikes on the upper
+jibpoop, but Seu-zan's eye wasn't on me, much.  Young woman, I
+am not you're Saler boy.  Far different."
+
+"Oh yes, you are!" she howled, seizin me round the neck.  "Oh,
+how I've lookt forwards to this meetin!"
+
+"And you'll presently," I said, "have a opportunity of lookin
+backwards to it, because I'm on the point of leavin this
+institution."
+
+I will here observe that I come of a very clever family.  A very
+clever fam'ly, indeed.
+
+"Where," I cried, as I struggled in vain to release myself from
+the eccentric female's claws, "where is the Capting--the man who
+was into the Crimea, amidst the cannon's thunder?  I want him."
+
+He came forward, and cried, "What do I see?  Me Sister! me sweet
+Adulaide! and in teers!  Willin!" he screamed, "and you're the
+serpent I took to my boosum, and borrowed money of, and went
+round with, and was cheerful with, are you?--You ought to be
+ashamed of yourself."
+
+Somehow my coat was jerked off, the brest-pocket of which
+contained my pocket-book, and it parsed away like the brest pin.
+Then they sorter quietly hustled me into the street.
+
+It was about 12 at night when I reached the Green Lion.
+
+"Ha! ha! you sly old rascal, you've been up to larks!" said the
+lan'lord, larfin loudly, and digging his fist into my ribs.
+
+I said, "Bigsby, if you do that agin, I shall hit you!  Much as I
+respect you and your excellent faml'y, I shall disfiger your
+beneverlent countenance for life!"
+
+"What has ruffled your spirits, friend?" said the lan'lord.
+
+"My spirits has been ruffled," I ansered in a bittur voice, "by a
+viper who was into the Crimea.  What good was it," I cried, "for
+Sebastopol to fall down without enwelopin in its ruins that
+viper?"
+
+I then went to bed.  I come of a very clever fam'ly.
+
+                                                  Artemus Ward.
+
+5.6.  THE TOWER OF LONDON.
+
+MR. PUNCH, My dear Sir,--I skurcely need inform you that your
+excellent Tower is very pop'lar with peple from the agricultooral
+districks, and it was chiefly them class which I found waitin at
+the gates the other mornin.
+
+I saw at once that the Tower was established on a firm basis.  In
+the entire history of firm basisis I don't find a basis more
+firmer than this one.
+
+"You have no Tower in America?" said a man in the crowd, who had
+somehow detected my denomination.
+
+"Alars! no," I ansered; "we boste of our enterprise and
+improvements, and yit we are devoid of a Tower.  America, oh my
+onhappy country! thou hast not got no Tower!  It's a sweet Boon."
+
+The gates was opened after awhile, and we all purchist tickets
+and went into a waitin-room.
+
+"My frens," said a pale-faced little man, in black close, "this
+is a sad day."
+
+"Inasmuch as to how?" I said.
+
+"I mean it is sad to think that so many peple have been killed
+within these gloomy walls.  My frens, let us drop a tear!"
+
+"No," I said, "you must excuse me.  Others may drop one if they
+feel like it; but as for me, I decline.  The early managers of
+this institootion were a bad lot, and their crimes were trooly
+orful; but I can't sob for those who died four or five hundred
+years ago.  If they was my own relations I couldn't.  It's absurd
+to shed sobs over things which occurd during the rain of Henry
+the Three.  Let us be cheerful," I continnerd "Look at the festiv
+Warders, in their red flannil jackets.  They are cheerful, and
+why should it not be thusly with us?"
+
+A Warder now took us in charge, and showed us the Trater's Gate,
+the armers, and things.  The Trater's Gate is wide enuff to admit
+about twenty trater's abrest, I should jedge; but beyond this, I
+couldn't see that it was superior to gates in gen'ral.
+
+Traters, I will here remark, are a onfortnit class of peple.  If
+they wasn't, they wouldn't be traters.  They conspire to bust up
+a country--they fail, and they're traters.  They bust her, and
+they become statesmen and heroes.
+
+Take the case of Gloster, afterwards Old Dick the Three, who may
+be seen at the Tower, on horseback, in a heavy tin overcoat--take
+Mr. Gloster's case. Mr. G. was a conspirater of the basist dye,
+and if he'd failed, he would have been hung on a sour apple tree.
+But Mr. G. succeeded, and became great.  He was slewd by Col.
+Richmond, but he lives in histry, and his equestrian figger may
+be seen daily for a sixpence, in conjunction with other em'nent
+persons, and no extra charge for the Warder's able and bootiful
+lectur.
+
+There's one king in the room who is mounted onto a foamin steed,
+his right hand graspin a barber's pole.  I didn't learn his name.
+
+The room where the daggers and pistils and other weppins is kept
+is interestin.  Among this collection of choice cutlery I notist
+the bow and arrer which those hot-heded old chaps used to conduct
+battles with.  It is quite like the bow and arrer used at this
+day by certin tribes of American Injuns, and they shoot 'em off
+with such a excellent precision that I almost sigh'd to be a
+Injun, when I was in the Rocky Mountain regin.  They are a
+pleasant lot them Injuns.  Mr. Cooper and Dr. Catlin have told us
+of the red man's wonerful eloquence, and I found it so.  Our
+party was stopt on the plains of Utah by a band of Shoshones,
+whose chief said:
+
+ "Brothers! the pale-face is welcome.  Brothers! the sun is
+sinkin in the West, and Wa-na-bucky-she will soon cease speakin.
+Brothers! the poor red man belongs to a race which is fast
+becomin extink."
+
+He then whooped in a shrill manner, stole all our blankets and
+whisky, and fled to the primeval forest to conceal his emotions.
+
+I will remark here, while on the subjeck of Injuns, that they are
+in the main a very shaky set, with even less sense than the
+Fenians, and when I hear philanthropists bewailin the fack that
+every year "carries the noble red man nearer the settin sun," I
+simply have to say I'm glad of it, tho' it is rough on the settin
+sun.  They call you by the sweet name of Brother one minit, and
+the next they scalp you with their Thomashawks.  But I wander.
+Let us return to the Tower.
+
+At one end of the room where the weppins is kept, is a wax figger
+of Queen Elizabeth, mounted on a fiery stuffed hoss, whose glass
+eye flashes with pride, and whose red morocker nostril dilates
+hawtily, as if conscious of the royal burden he bears.  I have
+associated Elizabeth with the Spanish Armady.  She's mixed up
+with it at the Surry Theatre, where "Troo to the Core" is bein
+acted, and in which a full bally core is introjooced on board the
+Spanish Admiral's ship, givin the audiens the idee that he
+intends openin a moosic-hall in Plymouth the moment he conkers
+that town.  But a very interesting drammer is "Troo to the Core,"
+notwithstandin the eccentric conduck of the Spanish Admiral; and
+very nice it is in Queen Elizabeth to make Martin Truegold a
+baronet.
+
+The Warder shows us some instrooments of tortur, such as
+thumbscrews, throat-collars, etc., statin that these was conkerd
+from the Spanish Armady, and addin what a crooil peple the
+Spaniards was in them days--which elissited from a bright eyed
+little girl of about twelve summers the remark that she tho't it
+WAS rich to talk about the crooilty of the Spaniards usin
+thumbscrews, when we was in a Tower where so many poor pepl's
+heads had been cut off.  This made the Warder stammer and turn
+red.
+
+I was so blessed with the little girl's brightness that I could
+have kissed the dear child, and I would if she'd been six years
+older.
+
+I think my companions intended makin a day of it, for they all
+had sandwiches, sassiges, etc.  The sad-lookin man, who had
+wanted us to drop a tear afore we started to go round, fling'd
+such quantities of sassige into his mouth, that I expected to see
+him choke hisself to death.  He said to me, in the Beauchamp
+Tower, where the poor prisoners writ their onhappy names on the
+cold walls, "This is a sad sight."
+
+"It is, indeed," I anserd.  "You're black in the face.  You
+shouldn't eat sassige in public without some rehearsals
+beforehand.  You manage it orkwardly."
+
+"No," he said, "I mean this sad room."
+
+Indeed, he was quite right.  Tho' so long ago all these drefful
+things happened, I was very glad to git away from this gloomy
+room, and go where the rich and sparklin Crown Jewils is kept.  I
+was so pleased with the Queen's Crown, that it occurd to me what
+a agree'ble surprise it would be to send a sim'lar one home to my
+wife; and I asked the Warder what was the vally of a good,
+well-constructed Crown like that.  He told me, but on cypherin up
+with a pencil the amount of funs I have in the Jint Stock Bank, I
+conclooded I'd send her a genteel silver watch instid.
+
+And so I left the Tower.  It is a solid and commandin edifis, but
+I deny that it is cheerful.  I bid it adoo without a pang.
+
+I was droven to my hotel by the most melancholly driver of a
+four-wheeler that I ever saw.  He heaved a deep sigh as I gave
+him two shillings.
+
+"I'll give you six d.'s more," I said, "if it hurts you so."
+
+"It isn't that," he said, with a hart-rendin groan, "it's only a
+way I have.  My mind's upset to-day.  I at one time tho't I'd
+drive you into the Thames.  I've been readin in all the daily
+papers to try and understand about Governor Ayre, and my mind is
+totterin.  It's really wonderful I didn't drive you into the
+Thames."
+
+I asked the onhappy man what his number was, so I could redily
+find him in case I should want him agin, and bad him good-bye.
+And then I tho't what a frollicksome day I'd made of it.
+
+                              Respectably, &c.
+                                               Artemus Ward.
+
+5.7.  SCIENCE AND NATURAL HISTORY.
+
+MR. PUNCH, My dear Sir,--I was a little disapinted in not
+receivin a invitation to jine in the meetins of the Social
+Science Congress.
+
+I don't exackly see how they go on without me.
+
+I hope it wasn't the intentions of the Sciencers to exclood me
+from their deliberations.
+
+Let it pars.  I do not repine.  Let us remember Homer.  Twenty
+cities claim Homer dead, thro' which the livin Mr. Homer couldn't
+have got trusted for a sandwich and a glass of bitter beer, or
+words to that effect.
+
+But perhaps it was a oversight.  Certinly I have been hospitably
+rec'd in this country.  Hospitality has been pored all over me.
+At Liverpool I was asked to walk all over the docks, which are
+nine miles along; and I don't remember a instance since my 'rival
+in London of my gettin into a cab without a Briton comin and
+perlitly shuttin the door for me, and then extendin his open hand
+to'ards me, in the most frenly manner possible.  Does he not, by
+this simple yit tuchin gesture, welcum me to England?  Doesn't
+he?  Oh yes--I guess he doesn't he.  And it's quite right among
+two great countries which speak the same langwidge, except as
+regards H's.  And I've been allowed to walk round all the
+streets.  Even at Buckinham Pallis, I told a guard I wanted to
+walk round there, and he said I could walk round there.  I
+ascertained subsequent that he referd to the sidewalk instid of
+the Pallis--but I couldn't doubt his hospital feelins.
+
+I prepared a Essy on Animals to read before the Social Science
+meetins.  It is a subjeck I may troothfully say I have
+successfully wrastled with.  I tackled it when only nineteen
+years old.  At that tender age I writ a Essy for a lit'ry
+Institoot entitled, "Is Cats to be Trusted?"  Of the merits of
+that Essy it doesn't becum me to speak, but I may be excoos'd for
+mentionin that the Institoot parsed a resolution that "whether we
+look upon the length of this Essy, or the manner in which it is
+written, we feel that we will not express any opinion of it, and
+we hope it will be read in other towns."
+
+Of course the Essy I writ for the Social Science Society is a
+more finisheder production than the one on Cats, which was wroten
+when my mind was crood, and afore I had masterd a graceful and
+ellygant stile of composition.  I could not even punctooate my
+sentences proper at that time, and I observe with pane, on lookin
+over this effort of my yooth, that its beauty is in one or two
+instances mar'd by ingrammaticisms.  This was unexcusable, and
+I'm surprised I did it.  A writer who can't write in a grammerly
+manner better shut up shop.
+
+You shall hear this Essy on Animals.  Some day when you have four
+hours to spare, I'll read it to you.  I think you'll enjoy it.
+Or, what will be much better, if I may suggest--omit all picturs
+in next week's "Punch," and do not let your contributors write
+enything whatever (let them have a holiday; they can go to the
+British Mooseum;) and publish my Essy intire.  It will fill all
+your collumes full, and create comment.  Does this proposition
+strike you?  Is it a go?"
+
+In case I had read the Essy to the Social Sciencers, I had
+intended it should be the closin attraction.  I had intended it
+should finish the proceedins.  I think it would have finished
+them.  I understand animals better than any other class of human
+creatures.  I have a very animal mind, and I've been identified
+with 'em doorin my entire professional career as a showman, more
+especial bears, wolves, leopards and serpunts.
+
+The leopard is as lively a animal as I ever came into contack
+with.  It is troo he cannot change his spots, but you can change
+'em for him with a paint-brush, as I once did in the case of a
+leopard who wasn't nat'rally spotted in a attractive manner.  In
+exhibitin him I used to stir him up in his cage with a protracted
+pole, and for the purpuss of making him yell and kick up in a
+leopardy manner, I used to casionally whack him over the head.
+This would make the children inside the booth scream with fright,
+which would make fathers of families outside the booth very
+anxious to come in--because there is a large class of parents who
+have a uncontrollable passion for takin their children to places
+where they will stand a chance of being frightened to death.
+
+One day I whacked this leopard more than ushil, which elissited a
+remonstrance from a tall gentleman in spectacles, who said, "My
+good man, do not beat the poor caged animal.  Rather fondle him."
+
+"I'll fondle him with a club," I anserd, hitting him another
+whack.
+
+"I prythy desist," said the gentleman; "stand aside, and see the
+effeck of kindness.  I understand the idiosyncracies of these
+creeturs better than you do."
+
+With that he went up to the cage, and thrustin his face in
+between the iron bars, he said, soothinly, "Come hither, pretty
+creetur."
+
+The pretty creetur come-hithered rayther speedy, and seized the
+gentleman by the whiskers, which he tore off about enuff to stuff
+a small cushion with.
+
+He said, "You vagabone, I'll have you indicted for exhibitin
+dangerous and immoral animals."
+
+I replied, "Gentle Sir, there isn't a animal here that hasn't a
+beautiful moral, but you mustn't fondle 'em.  You mustn't meddle
+with their idiotsyncracies."
+
+The gentleman was a dramatic cricket, and he wrote a article for
+a paper, in which he said my entertainment was a decided failure.
+
+As regards Bears, you can teach 'em to do interesting things, but
+they're onreliable.  I had a very large grizzly bear once, who
+would dance, and larf, and lay down, and bow his head in grief,
+and give a mournful wale, etsetry.  But he often annoyed me.  It
+will be remembered that on the occasion of the first battle of
+Bull Run, it suddenly occurd to the Fed'ral soldiers that they
+had business in Washington which ought not to be neglected, and
+they all started for that beautiful and romantic city,
+maintaining a rate of speed durin the entire distance that would
+have done credit to the celebrated French steed "Gladiateur."
+Very nat'rally our Gov'ment was deeply grieved at this defeat;
+and I said to my Bear, shortly after, as I was givin a exhibition
+in Ohio--I said, "Brewin, are you not sorry the National arms has
+sustained a defeat?"  His business was to wale dismal, and bow
+his head down, the band (a barrel organ and a wiolin) playin slow
+and melancholly moosic.  What did the grizzly old cuss do,
+however, but commence darncin and larfin in the most joyous
+manner?  I had a narrer escape from being imprisoned for
+disloyalty.
+
+I will relate another incident in the career of this retchid
+Bear.  I used to present what I called in the bills a Beautiful
+living Pictur--showing the Bear's fondness for his Master:  in
+which I'd lay down on a piece of carpeting, and the Bear would
+come and lay down beside me, restin his right paw on my breast,
+the Band playing "Home, Sweet Home," very soft and slow.  Altho'
+I say it, it was a tuchin thing to see.  I've seen Tax-Collectors
+weep over that performance.
+
+Well, one day I said, "Ladies and Gentlemen, we will show you the
+Bear's fondness for his master," and I went and laid down.  I
+tho't I observed a pecooliar expression into his eyes, as he
+rolled clumsily to'ards me, but I didn't dream of the scene which
+follered.  He laid down, and put his paw on my breast.
+"Affection of the Bear for his Master," I repeated.  "You see the
+Monarch of the Western Wilds in a subjugated state.  Fierce as
+these animals naturally are, we now see that they have hearts and
+can love.  This Bear, the largest in the world, and measurin
+seventeen feet round the body, loves me as a mer-ther loves her
+che-ild!"  But what was my horror when the grizzly and infamus
+Bear threw his other paw UNDER me, and riz with me to his feet.
+Then claspin me in a close embrace he waltzed up and down the
+platform in a frightful manner, I yellin with fear and anguish.
+To make matters wuss, a low scurrilus young man in the audiens
+hollered out:
+
+"Playfulness of the Bear!  Quick moosic!"
+
+I jest 'scaped with my life.  The Bear met with a wiolent death
+the next day, by bein in the way when a hevily loaded gun was
+fired off by one of my men.
+
+But you should hear my Essy which I wrote for the Social Science
+Meetins.  It would have had a movin effeck on them.
+
+I feel that I must now conclood.
+
+I have read Earl Bright's speech at Leeds, and I hope we shall
+now hear from John Derby.  I trust that not only they, but Wm. E.
+Stanley and Lord Gladstone will cling inflexibly to those great
+fundamental principles, which they understand far better than I
+do, and I will add that I do not understand anything about any of
+them whatever in the least--and let us all be happy, and live
+within our means, even if we have to borrer money to do it with.
+
+                           Very respectfully yours,
+                                                Artemus Ward.
+
+5.8.  A VISIT TO THE BRITISH MUSEUM.
+
+MR. PUNCH, My dear Sir,--You didn't get a instructiv article from
+my pen last week on account of my nervus sistim havin underwent a
+dreffle shock.  I got caught in a brief shine of sun, and it
+utterly upsot me.  I was walkin in Regent Street one day last
+week, enjoyin your rich black fog and bracing rains, when all at
+once the Sun bust out and actooally shone for nearly half an hour
+steady.  I acted promptly.  I called a cab and told the driver to
+run his hoss at a friteful rate of speed to my lodgins, but it
+wasn't of no avale.  I had orful cramps, and my appytite left me,
+and my pults went down to 10 degrees below zero.  But by careful
+nussin I shall no doubt recover speedy, if the present sparklin
+and exileratin weather continners.
+
+[All of the foregoin is sarcasum.]
+
+It's a sing'lar fack, but I never sot eyes on your excellent
+British Mooseum till the other day.  I've sent a great many peple
+there, as also to your genial Tower of London, however.  It
+happened thusly:  When one of my excellent countrymen jest
+arrived in London would come and see me, and display a
+inclination to cling to me too lengthy, thus showing a respect
+for me which I feel I do not deserve, I would sugjest a visit to
+the Mooseum and Tower.  The Mooseum would ockepy him a day at
+leest, and the Tower another.  Thus I've derived considerable
+peace and comfort from them noble edifisses, and I hope they will
+long continner to grace your metroplis.  There's my fren Col.
+Larkins, from Wisconsin, who I regret to say understands the
+Jamaica question, and wants to talk with me about it; I sent him
+to the Tower four days ago, and he hasn't got throogh with it
+yit.  He likes it very much, and he writes me that he can't never
+thank me sufficient for directin him to so interestin a bildin.
+I writ him not to mention it.  The Col. says it is fortnit we
+live in a intellectooal age which wouldn't countenance such
+infamus things as occurd in this Tower.  I'm aware that it is
+fashin'ble to compliment this age, but I ain't so clear that the
+Col. is altogether right.  This is a very respectable age, but
+it's pretty easily riled; and considerin upon how slight a
+provycation we who live in it go to cuttin each other's throats,
+it may perhaps be doubted whether our intellecks is so much
+massiver than our ancestors' intellecks was, after all.
+
+I allus ride outside with the cabman.  I am of humble parentage,
+but I have (if you will permit me to say so) the spirit of the
+eagle, which chafes when shut up in a four-wheeler, and I feel
+much eagler when I'm in the open air.  So on the mornin on which
+I went to the Mooseum I lit a pipe, and callin a cab, I told the
+driver to take me there as quick as his Arabian charger could go.
+The driver was under the inflooence of beer and narrerly escaped
+runnin over a aged female in the match trade, whereupon I
+remonstratid with him.  I said, "That poor old woman may be the
+only mother of a young man like you."  Then throwing considerable
+pathos into my voice, I said:
+
+"That poor old woman may be the only mother of a young man like
+you.  Then throwing considerable pathos into my voice I said,
+"You have a mother?"
+
+He said, "You lie!"  I got down and called another cab, but said
+nothin to this driver about his parents.
+
+The British Mooseum is a magnificent free show for the people.
+It is kept open for the benefit of all.
+
+The humble costymonger, who traverses the busy streets with a
+cart containin all kinds of vegetables, such as carrots, turnips,
+etc, and drawn by a spirited jackass--he can go to the Mooseum
+and reap benefits therefrom as well as the lord of high degree.
+
+"And this," I said, "is the British Mooseum!  "These noble
+walls," I continnerd, punching them with my umbreller to see if
+the masonry was all right--but I wasn't allowd to finish my
+enthoosiastic remarks, for a man with a gold band on his hat
+said, in a hash voice, that I must stop pokin the walls.  I told
+him I would do so by all means.  "You see," I said, taking hold
+of the tassel which waved from the man's belt, and drawin him
+close to me in a confidential way, "You see, I'm lookin round
+this Mooseum, and if I like it I shall buy it."
+
+Instid of larfin hartily at these remarks, which was made in a
+goakin spirit, the man frowned darkly and walked away.
+
+I first visited the stuffed animals, of which the gorillers
+interested me most.  These simple-minded monsters live in Afriky,
+and are believed to be human beins to a slight extent, altho'
+they are not allowed to vote.  In this department is one or two
+superior giraffes.  I never woulded I were a bird, but I've
+sometimes wished I was a giraffe, on account of the long distance
+from his mouth to his stummuck.  Hence, if he loved beer, one
+mugful would give him as much enjoyment while goin down, as forty
+mugfuls would ordinary persons.  And he wouldn't get intoxicated,
+which is a beastly way of amusin oneself, I must say.  I like a
+little beer now and then, and when the teetotallers inform us, as
+they frekently do, that it is vile stuff, and that even the swine
+shrink from it, I say it only shows that the swine is a ass who
+don't know what's good; but to pour gin and brandy down one's
+throat as freely as though it were fresh milk, is the most
+idiotic way of goin' to the devil that I know of.
+
+I enjoyed myself very much lookin at the Egyptian mummays, the
+Greek vasis, etc, but it occurd to me there was rayther too many
+"Roman antiquitys of a uncertin date."  Now, I like the British
+Mooseum, as I said afore, but when I see a lot of erthen jugs and
+pots stuck up on shelves, and all "of a uncertin date," I'm at a
+loss to 'zackly determin whether they are a thousand years old or
+was bought recent.  I can cry like a child over a jug one
+thousand years of age, especially if it is a Roman jug; but a jug
+of a uncertin date doesn't overwhelm me with emotions.  Jugs and
+pots of a uncertin age is doubtles vallyable property, but, like
+the debentures of the London, Chatham, and Dover Railway, a man
+doesn't want too many of them.
+
+I was debarred out of the great readin-room.  A man told me I
+must apply by letter for admission, and that I must get somebody
+to testify that I was respectable.  I'm a little 'fraid I
+shan't get in there.  Seein a elderly gentleman, with a
+beneverlent-lookin face near by, I venturd to ask him if he would
+certifythat I was respectable.  He said he certainly would not,
+but he would put me in charge of a policeman, if that would do me
+any good.  A thought struck me.  "I refer you to 'Mr. Punch'," I
+said.
+
+"Well," said a man, who had listened to my application, "you HAVE
+done it now!  You stood some chance before."
+
+I will get this infamus wretch's name before you go to press, so
+you can denounce him in the present number of your excellent
+journal.
+
+The statute of Apollo is a pretty slick statute.  A young yeoman
+seemed deeply imprest with it.  He viewd it with silent
+admiration.  At home, in the beautiful rural districks where the
+daisy sweetly blooms, he would be swearin in a horrible manner at
+his bullocks, and whacking 'em over the head with a hayfork; but
+here, in the presence of Art, he is a changed bein.
+
+I told the attendant that if the British nation would stand the
+expens of a marble bust of myself, I would willingly sit to some
+talented sculpist.
+
+"I feel," I said, "that this is a dooty I owe to posterity."
+
+He said it was hily prob'l, but he was inclined to think that the
+British nation wouldn't care to enrich the Mooseum with a bust of
+me, altho' he venturd to think that if I paid for one myself it
+would be accepted cheerfully by Madam Tussaud, who would give it
+a prom'nent position in her Chamber of Horrers. The young man was
+very polite, and I thankt him kindly.
+
+After visitin the Refreshment room and partakin of half a chicken
+"of a uncertin age," like the Roman antiquitys I have previsly
+spoken of, I prepared to leave.  As I passed through the animal
+room I observed with pane that a benevolint person was urgin the
+stufft elephant to accept a cold muffin, but I did not feel
+called on to remostrate with him, any more than I did with two
+young persons of diff'rent sexes who had retired behind the
+Rynosserhoss to squeeze each other's hands.  In fack, I rayther
+approved of the latter proceedin, for it carrid me back to the
+sunny spring-time of MY life.  I'm in the shear and yeller leaf
+now, but I don't forgit the time when to squeeze my Betsy's hand
+sent a thrill through me like fellin off the roof of a two-story
+house; and I never squozed that gentle hand without wantin to do
+so some more, and feelin that it did me good.
+
+                                         Trooly yours,
+                                                    Artemus Ward.
+
+
+
+
+
+End of Project Gutenberg's The Complete Works of Artemus Ward, Part 5
+

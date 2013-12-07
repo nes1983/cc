@@ -1,0 +1,2236 @@
+Project Gutenberg's Etext History of Friedrich II of Prussia V 1
+#7 in our series by Thomas Carlyle
+V1 of 21
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+History of Friedrich II of Prussia V 1
+
+by Thomas Carlyle
+
+March, 2000  [Etext #2101]
+[Date last updated: September 15, 2003]
+
+
+Project Gutenberg's Etext History of Friedrich II of Prussia V 1
+*******This file should be named 01frd10.txt or 01frd10.zip*******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 01frd11.txt
+VERSIONS based on separate sources get new LETTER, 01frd10a.txt
+
+
+Prepared by D.R. Thompson <drthom@ihug.co.nz>
+
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, leaving time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-six text
+files per month, or 432 more Etexts in 1999 for a total of 2000+
+If these reach just 10% of the computerized population, then the
+total should reach over 200 billion Etexts given away this year.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only ~5% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding; currently our funding is mostly
+from Michael Hart's salary at Carnegie-Mellon University, and an
+assortment of sporadic gifts; this salary is only good for a few
+more years, so we are looking for something to replace it, as we
+don't want Project Gutenberg to be so dependent on one person.
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg/CMU": and are
+tax deductible to the extent allowable by law.  (CMU = Carnegie-
+Mellon University).
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails. . .try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+We would prefer to send you this information by email.
+
+******
+
+To access Project Gutenberg etexts, use any Web browser
+to view http://promo.net/pg.  This site lists Etexts by
+author and by title, and includes information about how
+to get involved with Project Gutenberg.  You could also
+download our past Newsletters, or subscribe here.  This
+is one of our major sites, please email hart@pobox.com,
+for a more complete list of our various sites.
+
+To go directly to the etext collections, use FTP or any
+Web browser to visit a Project Gutenberg mirror (mirror
+sites are available on 7 continents; mirrors are listed
+at http://promo.net/pg).
+
+Mac users, do NOT point and click, typing works better.
+
+Example FTP session:
+
+ftp sunsite.unc.edu
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+***
+
+**Information prepared by the Project Gutenberg legal advisor**
+
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg Association at
+Carnegie-Mellon University (the "Project").  Among other
+things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association/Carnegie-Mellon
+     University" within the 60 days following each
+     date you prepare (or were legally required to prepare)
+     your annual (or equivalent periodic) tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association / Carnegie-Mellon University".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+Prepared by D.R. Thompson <drthom@ihug.co.nz>
+
+
+
+
+
+HISTORY OF FRIEDRICH II. OF PRUSSIA
+
+FREDERICK THE GREAT
+
+by THOMAS CARLYLE
+
+
+
+FREDERICK THE GREAT.
+
+Book I.
+BIRTH AND PARENTAGE.
+1712.
+
+Chapter I.
+
+PROEM: FRIEDRICH'S HISTORY FROM THE DISTANCE WE ARE AT.
+
+About fourscore years ago, there used to be seen sauntering on the
+terraces of Sans Souci, for a short time in the afternoon, or you
+might have met him elsewhere at an earlier hour, riding or driving
+in a rapid business manner on the open roads or through the
+scraggy woods and avenues of that intricate amphibious Potsdam
+region, a highly interesting lean little old man, of alert though
+slightly stooping figure; whose name among strangers was King
+FRIEDRICH THE SECOND, or Frederick the Great of Prussia, and at
+home among the common people, who much loved and esteemed him,
+was VATER FRITZ,--Father Fred,--a name of familiarity which had
+not bred contempt in that instance. He is a King every inch of
+him, though without the trappings of a King. Presents himself in
+a Spartan simplicity of vesture: no crown but an old military
+cocked-hat,--generally old, or trampled and kneaded into absolute
+SOFTNESS, if new;--no sceptre but one like Agamemnon's, a walking-
+stick cut from the woods, which serves also as a riding-stick
+(with which he hits the horse "between the ears," say authors);--
+and for royal robes, a mere soldier's blue coat with red facings,
+coat likely to be old, and sure to have a good deal of Spanish
+snuff on the breast of it; rest of the apparel dim, unobtrusive in
+color or out, ending in high over-knee military boots, which may
+be brushed (and, I hope, kept soft with an underhand suspicion of
+oil), but are not permitted to be blackened or varnished; Day and
+Martin with their soot-pots forbidden to approach.
+
+The man is not of godlike physiognomy, any more than of imposing
+stature or costume: close-shut mouth with thin lips, prominent
+jaws and nose, receding brow, by no means of Olympian height;
+head, however, is of long form, and has superlative gray eyes in
+it. Not what is called a beautiful man; nor yet, by all
+appearance, what is called a happy. On the contrary, the face
+bears evidence of many sorrows, as they are termed, of much hard
+labor done in this world; and seems to anticipate nothing but more
+still coming. Quiet stoicism, capable enough of what joy there
+were, but not expecting any worth mention; great unconscious and
+some conscious pride, well tempered with a cheery mockery of
+humor,--are written on that old face; which carries its chin well
+forward, in spite of the slight stoop about the neck; snuffy nose
+rather flung into the air, under its old cocked-hat,--like an old
+snuffy lion on the watch; and such a pair of eyes as no man or
+lion or lynx of that Century bore elsewhere, according to all the
+testimony we have. "Those eyes," says Mirabeau, "which, at the
+bidding of his great soul, fascinated you with seduction or with
+terror <French>(portaient, au gre de son ame heroique, la
+seduction ou la terreur)<end French>." [Mirabeau, <French>
+Histoire Secrete de la Cour de Berlin, <end French> Lettre 28??
+(24 September, 1786) p. 128 (in edition of Paris, 1821)].
+Most excellent potent brilliant eyes, swift-darting as the stars,
+steadfast as the sun; gray, we said, of the azure-gray color;
+large enough, not of glaring size; the habitual expression of them
+vigilance and penetrating sense, rapidity resting on depth.
+Which is an excellent combination; and gives us the notion of a
+lambent outer radiance springing from some great inner sea of
+light and fire in the man. The voice, if he speak to you, is of
+similar physiognomy: clear, melodious and sonorous; all tones are
+in it, from that of ingenuous inquiry, graceful sociality, light-
+flowing banter (rather prickly for most part), up to definite word
+of command, up to desolating word of rebuke and reprobation;
+a voice "the clearest and most agreeable in conversation I ever
+heard," says witty Dr. Moore. [Moore, View of Society and Manners
+in France, Switzerland and Germany (London, 1779), ii. 246.]
+"He speaks a great deal," continues the doctor; "yet those who
+hear him, regret that he does not speak a good deal more.
+His observations are always lively, very often just; and few men
+possess the talent of repartee in greater perfection."
+
+Just about threescore and ten years ago, [A.D. 1856,--17th August,
+1786] his speakings and his workings came to finis in this World
+of Time; and he vanished from all eyes into other worlds, leaving
+much inquiry about him in the minds of men;--which, as my readers
+and I may feel too well, is yet by no means satisfied. As to his
+speech, indeed, though it had the worth just ascribed to it and
+more, and though masses of it were deliberately put on paper by
+himself, in prose and verse, and continue to be printed and kept
+legible, what he spoke has pretty much vanished into the inane;
+and except as record or document of what he did, hardly now
+concerns mankind. But the things he did were extremely remarkable;
+and cannot be forgotten by mankind. Indeed, they bear such fruit
+to the present hour as all the Newspapers are obliged to be taking
+note of, sometimes to an unpleasant degree. Editors vaguely
+account this man the "Creator of the Prussian Monarchy;" which
+has since grown so large in the world, and troublesome to the
+Editorial mind in this and other countries. He was indeed the
+first who, in a highly public manner, notified its creation;
+announced to all men that it was, in very deed, created; standing
+on its feet there, and would go a great way, on the impulse
+it had got from him and others. As it has accordingly done;
+and may still keep doing to lengths little dreamt of by the
+British Editor in our time; whose prophesyings upon Prussia,
+and insights into Prussia, in its past, or present or future,
+are truly as yet inconsiderable, in proportion to the noise he
+makes with them! The more is the pity for him,--and for myself
+too in the Enterprise now on hand.
+
+It is of this Figure, whom we see by the mind's eye in those
+Potsdam regions, visible for the last time seventy years ago,
+that we are now to treat, in the way of solacing ingenuous human
+curiosity. We are to try for some Historical Conception of this
+Man and King; some answer to the questions, "What was he, then?
+Whence, how? And what did he achieve and suffer in the world?"--
+such answer as may prove admissible to ingenuous mankind,
+especially such as may correspond to the Fact (which stands there,
+abstruse indeed, but actual and unalterable), and so be sure of
+admissibility one day.
+
+An Enterprise which turns out to be, the longer one looks at it,
+the more of a formidable, not to say unmanageable nature!
+Concerning which, on one or two points, it were good, if
+conveniently possible, to come to some preliminary understanding
+with the reader. Here, flying on loose leaves, are certain
+incidental utterances, of various date: these, as the topic is
+difficult, I will merely label and insert, instead of a formal
+Discourse, which were too apt to slide into something of a
+Lamentation, or otherwise take an unpleasant turn.
+
+
+1. FRIEDRICH THEN, AND FRIEDRICH NOW.
+
+This was a man of infinite mark to his contemporaries; who had
+witnessed surprising feats from him in the world; very
+questionable notions and ways, which he had contrived to maintain
+against the world and its criticisms. As an original man has
+always to do; much more an original ruler of men. The world,
+in fact, had tried hard to put him down, as it does, unconsciously
+or, consciously, with all such; and after the most conscious
+exertions, and at one time a dead-lift spasm of all its energies
+for Seven Years, had not been able. Principalities and powers,
+Imperial, Royal, Czarish, Papal, enemies innumerable as the
+seasand, had risen against him, only one helper left among the
+world's Potentates (and that one only while there should be help
+rendered in return); and he led them all such a dance as had
+astonished mankind and them.
+
+No wonder they thought him worthy of notice. Every original man of
+any magnitude is;--nay, in the long-run, who or what else is?
+But how much more if your original man was a king over men;
+whose movements were polar, and carried from day to day those of
+the world along with them. The Samson Agonistes,--were his life
+passed like that of Samuel Johnson in dirty garrets, and the
+produce of it only some bits of written paper,--the Agonistes,
+and how he will comport himself in the Philistine mill; this is
+always a spectacle of truly epic and tragic nature. The rather,
+if your Samson, royal or other, is not yet blinded or subdued to
+the wheel; much more if he vanquish his enemies, not by suicidal
+methods, but march out at last flourishing his miraculous fighting
+implement, and leaving their mill and them in quite ruinous
+circumstances. As this King Friedrich fairly managed to do.
+
+For he left the world all bankrupt, we may say; fallen into
+bottomless abysses of destruction; he still in a paying condition,
+and with footing capable to carry his affairs and him. When he
+died, in 1786, the enormous Phenomenon since called FRENCH
+REVOLUTION was already growling audibly in the depths of the
+world; meteoric-electric coruscations heralding it, all round the
+horizon. Strange enough to note, one of Friedrich's last visitors
+was Gabriel Honore Riquetti, Comte de Mirabeau. These two saw one
+another; twice, for half an hour each time. The last of the old
+Gods and the first of the modern Titans;--before Pelion leapt on
+Ossa; and the foul Earth taking fire at last, its vile mephitic
+elements went up in volcanic thunder. This also is one of the
+peculiarities of Friedrich, that he is hitherto the last of the
+Kings; that he ushers in the French Revolution, and closes an
+Epoch of World-History. Finishing off forever the trade of King,
+think many; who have grown profoundly dark as to Kingship and him.
+
+The French Revolution may be said to have, for about half a
+century, quite submerged Friedrich, abolished him from the
+memories of men; and now on coming to light again, he is found
+defaced under strange mud-incrustations, and the eyes of mankind
+look at him from a singularly changed, what we must call oblique
+and perverse point of vision. This is one of the difficulties in
+dealing with his History;--especially if you happen to believe
+both in the French Revolution and in him; that is to say, both
+that Real Kingship is eternally indispensable, and also that the
+destruction of Sham Kingship (a frightful process) is occasionally
+so. On the breaking-out of that formidable Explosion, and Suicide
+of his Century, Friedrich sank into comparative obscurity;
+eclipsed amid the ruins of that universal earthquake, the very
+dust of which darkened all the air, and made of day a disastrous
+midnight. Black midnight, broken only by the blaze of
+conflagrations;--wherein, to our terrified imaginations,
+were seen, not men, French and other, but ghastly portents,
+stalking wrathful, and shapes of avenging gods. It must be owned
+the figure of Napoleon was titanic; especially to the generation
+that looked on him, and that waited shuddering to be devoured by
+him. In general, in that French Revolution, all was on a huge
+scale; if not greater than anything in human experience, at least
+more grandiose. All was recorded in bulletins, too, addressed to
+the shilling-gallery; and there were fellows on the stage with
+such a breadth of sabre, extent of whiskerage, strength of
+windpipe, and command of men and gunpowder, as had never been seen
+before. How they bellowed, stalked and flourished about;
+counterfeiting Jove's thunder to an amazing degree! Terrific
+Drawcansir figures, of enormous whiskerage, unlimited command of
+gunpowder; not without sufficient ferocity, and even a certain
+heroism, stage-heroism, in them; compared with whom, to the
+shilling-gallery, and frightened excited theatre at large,
+it seemed as if there had been no generals or sovereigns before;
+as if Friedrich, Gustavus, Cromwell, William Conqueror and
+Alexander the Great were not worth speaking of henceforth.
+
+All this, however, in half a century is considerably altered.
+The Drawcansir equipments getting gradually torn off, the
+natural size is seen better; translated from the bulletin style
+into that of fact and history, miracles, even to the shilling-
+gallery, are not so miraculous. It begins to be apparent that
+there lived great men before the era of bulletins and Agamemnon.
+Austerlitz and Wagram shot away more gunpowder,--gunpowder
+probably in the proportion of ten to one, or a hundred to one;
+but neither of them was tenth-part such a beating to your enemy as
+that of Rossbach, brought about by strategic art, human ingenuity
+and intrepidity, and the loss of 165 men. Leuthen, too, the battle
+of Leuthen (though so few English readers ever heard of it) may
+very well hold up its head beside any victory gained by Napoleon
+or another. For the odds were not far from three to one; the
+soldiers were of not far from equal quality; and only the
+General was consummately superior, and the defeat a destruction.
+Napoleon did indeed, by immense expenditure of men, and gunpowder,
+overrun Europe for a time: but Napoleon never, by husbanding and
+wisely expending his men and gunpowder, defended a little Prussia
+against all Europe, year after year for seven years long, till
+Europe had enough, and gave up the enterprise as one it could not
+manage. So soon as the Drawcansir equipments are well torn off,
+and the shilling-gallery got to silence, it will be found that
+there were great kings before Napoleon,--and likewise an Art of
+War, grounded on veracity and human courage and insight, not upon
+Drawcansir rodomontade, grandiose Dick-Turpinism, revolutionary
+madness, and unlimited expenditure of men and gunpowder. "You may
+paint with a very big brush, and yet not be a great painter,"
+says a satirical friend of mine! This is becoming more and more
+apparent, as the dust-whirlwind, and huge uproar of the last
+generation, gradually dies away again.
+
+
+2. EIGHTEENTH CENTURY.
+
+One of the grand difficulties in a History of Friedrich is, all
+along, this same, That he lived in a Century which has no History
+and can have little or none. A Century so opulent in accumulated
+falsities,--sad opulence descending on it by inheritance, always
+at compound interest, and always largely increased by fresh
+acquirement on such immensity of standing capital;--opulent in
+that bad way as never Century before was! Which had no longer the
+consciousness of being false, so false had it grown; and was so
+steeped in falsity, and impregnated with it to the very bone,
+that--in fact the measure of the thing was full, and a French
+Revolution had to end it. To maintain much veracity in such an
+element, especially for a king, was no doubt doubly remarkable.
+But now, how extricate the man from his Century? How show the
+man, who is a Reality worthy of being seen, and yet keep his
+Century, as a Hypocrisy worthy of being hidden and forgotten,
+in the due abeyance?
+
+To resuscitate the Eighteenth Century, or call into men's view,
+beyond what is necessary, the poor and sordid personages and
+transactions of an epoch so related to us, can be no purpose of
+mine on this occasion. The Eighteenth Century, it is well known,
+does not figure to me as a lovely one; needing to be kept in mind,
+or spoken of unnecessarily. To me the Eighteenth Century has
+nothing grand in it, except that grand universal Suicide, named
+French Revolution, by which it terminated its otherwise most
+worthless existence with at least one worthy act;--setting fire
+to its old home and self; and going up in flames and volcanic
+explosions, in a truly memorable and important manner. A very
+fit termination, as I thankfully feel, for such a Century.
+Century spendthrift, fraudulent-bankrupt; gone at length utterly
+insolvent, without real MONEY of performance in its pocket,
+and the shops declining to take hypocrisies and speciosities any
+farther:--what could the poor Century do, but at length admit,
+"Well, it is so. I am a swindler-century, and have long been,--
+having learned the trick of it from my father and grandfather;
+knowing hardly any trade but that in false bills, which I
+thought foolishly might last forever, and still bring at least
+beef and pudding to the favored of mankind. And behold it ends;
+and I am a detected swindler, and have nothing even to eat.
+What remains but that I blow my brains out, and do at length one
+true action?" Which the poor Century did; many thanks to it,
+in the circumstances.
+
+For there was need once more of a Divine Revelation to the torpid
+frivolous children of men, if they were not to sink altogether
+into the ape condition. And in that whirlwind of the Universe,--
+lights obliterated, and the torn wrecks of Earth and Hell hurled
+aloft into the Empyrean; black whirlwind, which made even apes
+serious, and drove most of them mad,--there was, to men, a voice
+audible; voice from the heart of things once more, as if to say:
+"Lying is not permitted in this Universe. The wages of lying,
+you behold, are death. Lying means damnation in this Universe;
+and Beelzebub, never so elaborately decked in crowns and mitres,
+is NOT God!" This was a revelation truly to be named of the
+Eternal, in our poor Eighteenth Century; and has greatly altered
+the complexion of said Century to the Historian ever since.
+
+Whereby, in short, that Century is quite confiscate, fallen
+bankrupt, given up to the auctioneers;--Jew-brokers sorting out of
+it at this moment, in a confused distressing manner, what is still
+valuable or salable. And, in fact, it lies massed up in our minds
+as a disastrous wrecked inanity, not useful to dwell upon; a kind
+of dusky chaotic background, on which the figures that had some
+veracity in them--a small company, and ever growing smaller as
+our demands rise in strictness--are delineated for us.--"And yet
+it is the Century of our own Grandfathers?" cries the reader.
+Yes, reader! truly. It is the ground out of which we ourselves
+have sprung; whereon now we have our immediate footing, and first
+of all strike down our roots for nourishment;--and, alas, in large
+sections of the practical world, it (what we specially mean by IT)
+still continues flourishing all round us! To forget it quite is
+not yet possible, nor would be profitable. What to do with it,
+and its forgotten fooleries and "Histories," worthy only of
+forgetting?--Well; so much of it as by nature ADHERES; what of
+it cannot be disengaged from our Hero and his operations:
+approximately so much, and no more! Let that be our bargain in
+regard to it.
+
+
+3. ENGLISH PREPOSSESSIONS.
+
+With such wagon-loads of Books and Printed Records as exist
+on the subject of Friedrich, it has always seemed possible,
+even for a stranger, to acquire some real understanding of him;--
+though practically, here and now, I have to own, it proves
+difficult beyond conception. Alas, the Books are not cosmic,
+they are chaotic; and turn out unexpectedly void of instruction
+to us. Small use in a talent of writing, if there be not first
+of all the talent of discerning, of loyally recognizing;
+of discriminating what is to be written! Books born mostly of
+Chaos--which want all things, even an INDEX--are a painful object.
+In sorrow and disgust, you wander over those multitudinous Books:
+you dwell in endless regions of the superficial, of the nugatory:
+to your bewildered sense it is as if no insight into the real
+heart of Friedrich and his affairs were anywhere to be had.
+Truth is, the Prussian Dryasdust, otherwise an honest fellow,
+and not afraid of labor, excels all other Dryasdusts yet known;
+I have often sorrowfully felt as if there were not in Nature,
+for darkness, dreariness, immethodic platitude, anything
+comparable to him. He writes big Books wanting in almost every
+quality; and does not even give an INDEX to them. He has made of
+Friedrich's History a wide-spread, inorganic, trackless matter;
+dismal to your mind, and barren as a continent of Brandenburg
+sand!--Enough, he could do no other: I have striven to forgive
+him. Let the reader now forgive me; and think sometimes what
+probably my raw-material was!--
+
+Curious enough, Friedrich lived in the Writing Era,--morning of
+that strange Era which has grown to such a noon for us;--and his
+favorite society, all his reign, was with the literary or writing
+sort. Nor have they failed to write about him, they among the
+others, about him and about him; and it is notable how little real
+light, on any point of his existence or environment, they have
+managed to communicate. Dim indeed, for most part a mere
+epigrammatic sputter of darkness visible, is the "picture" they
+have fashioned to themselves of Friedrich and his Country and his
+Century. Men not "of genius," apparently? Alas, no; men fatally
+destitute of true eyesight, and of loyal heart first of all.
+So far as I have noticed, there was not, with the single exception
+of Mirabeau for one hour, any man to be called of genius, or with
+an adequate power of human discernment, that ever personally
+looked on Friedrich. Had many such men looked successively on his
+History and him, we had not found it now in such a condition.
+Still altogether chaotic as a History; fatally destitute even of
+the Indexes and mechanical appliances: Friedrich's self, and
+his Country, and his Century, still undeciphered; very dark
+phenomena, all three, to the intelligent part of mankind.
+
+In Prussia there has long been a certain stubborn though planless
+diligence in digging for the outward details of Friedrich's Life-
+History; though as to organizing them, assorting them, or even
+putting labels on them; much more as to the least interpretation
+or human delineation of the man and his affairs,--you need not
+inquire in Prussia. In France, in England, it is still worse.
+There an immense ignorance prevails even as to the outward facts
+and phenomena of Friedrich's life; and instead of the Prussian
+no-interpretation, you find, in these vacant circumstances,
+a great promptitude to interpret. Whereby judgments and
+prepossessions exist among us on that subject, especially on
+Friedrich's character, which are very ignorant indeed.
+
+To Englishmen, the sources of knowledge or conviction about
+Friedrich, I have observed, are mainly these two. FIRST, for his
+Public Character: it was an all-important fact, not to IT, but to
+this country in regard to it, That George II., seeing good to
+plunge head-foremost into German Politics, and to take Maria
+Theresa's side in the Austrian-Succession War of 1740-1748,
+needed to begin by assuring his Parliament and Newspapers,
+profoundly dark on the matter, that Friedrich was a robber and
+villain for taking the other side. Which assurance, resting on
+what basis we shall see by and by, George's Parliament and
+Newspapers cheerfully accepted; nothing doubting. And they have
+re-echoed and reverberated it, they and the rest of us, ever
+since, to all lengths, down to the present day; as a fact quite
+agreed upon, and the preliminary item in Friedrich's character.
+Robber and villain to begin with; that was one settled point.
+
+Afterwards when George and Friedrich came to be allies, and the
+grand fightings of the Seven-Years War took place, George's
+Parliament and Newspapers settled a second point, in regard to
+Friedrich: "One of the greatest soldiers ever born." This second
+item the British Writer fully admits ever since: but he still adds
+to it the quality of robber, in a loose way;--and images to
+himself a royal Dick Turpin, of the kind known in Review-Articles,
+and disquisitions on Progress of the Species, and labels it
+FREDERICK; very anxious to collect new babblement of lying
+Anecdotes, false Criticisms, hungry French Memoirs, which will
+confirm him in that impossible idea. Had such proved, on survey,
+to be the character of Friedrich, there is one British Writer
+whose curiosity concerning him would pretty soon have died away;
+nor could any amount of unwise desire to satisfy that feeling in
+fellow-creatures less seriously disposed have sustained him alive,
+in those baleful Historic Acherons and Stygian Fens, where he has
+had to dig and to fish so long, far away from the upper light!--
+Let me request all readers to blow that sorry chaff entirely out
+of their minds; and to believe nothing on the subject except what
+they get some evidence for.
+
+SECOND English source relates to the Private Character.
+Friedrich's Biography or Private Character, the English, like
+the French, have gathered chiefly from a scandalous libel by
+Voltaire, which used to be called <italic> Vie Privee du Roi de
+Prusse <end italic> (Private Life of the King of Prussia) [First
+printed, from a stolen copy, at Geneva, 1784; first proved to be
+Voltaire's (which some of his admirers had striven to doubt),
+Paris, 1788; stands avowed ever since, in all the Editions of his
+Works (ii. 9-113 of the Edition by Bandouin Freres, 97 vols.,
+Paris, 1825-1834), under the title <italic> Memoires pour servir a
+Vie de M. de Voltaire, <end italic>--with patches of repetition in
+the thing called (italic) Commentaire Historique, <end italic>
+which follows ibid. at great length.] libel undoubtedly written by
+Voltaire, in a kind of fury; but not intended to be published by
+him; nay burnt and annihilated, as he afterwards imagined; No line
+of which, that cannot be otherwise proved, has a right to be
+believed; and large portions of which can be proved to be wild
+exaggerations and perversions, or even downright lies,--written in
+a mood analogous to the Frenzy of John Dennis. This serves for the
+Biography or Private Character of Friedrich; imputing all crimes
+to him, natural and unnatural;--offering indeed, if combined with
+facts otherwise known, or even if well considered by itself,
+a thoroughly flimsy, incredible and impossible image. Like that of
+some flaming Devil's Head, done in phosphorus on the walls of the
+black-hole, by an Artist whom you had locked up there (not quite
+without reason) overnight.
+
+Poor Voltaire wrote that <italic> Vie Privee <end italic> in a
+state little inferior to the Frenzy of John Dennis,--how brought
+about we shall see by and by. And this is the Document which
+English readers are surest to have read, and tried to credit as
+far as possible. Our counsel is, Out of window with it, he that
+would know Friedrich of Prussia! Keep it awhile, he that would
+know Francois Arouet de Voltaire, and a certain numerous
+unfortunate class of mortals, whom Voltaire is sometimes
+capable of sinking to be spokesman for, in this world!--Alas,
+go where you will, especially in these irreverent ages,
+the noteworthy Dead is sure to be found lying under infinite dung,
+no end of calumnies and stupidities accumulated upon him. For the
+class we speak of, class of "flunkies doing <italic> saturnalia
+<end italic> below stairs," is numerous, is innumerable; and can
+well remunerate a "vocal flunky" that will serve their purposes on
+such an occasion!--
+
+Friedrich is by no means one of the perfect demigods; and there
+are various things to be said against him with good ground. To the
+last, a questionable hero; with much in him which one could have
+wished not there, and much wanting which one could have wished.
+But there is one feature which strikes you at an early period of
+the inquiry, That in his way he is a Reality; that he always means
+what he speaks; grounds his actions, too, on what he recognizes
+for the truth; and, in short, has nothing whatever of the
+Hypocrite or Phantasm. Which some readers will admit to be an
+extremely rare phenomenon. We perceive that this man was far
+indeed from trying to deal swindler-like with the facts around
+him; that he honestly recognized said facts wherever they
+disclosed themselves, and was very anxious also to ascertain their
+existence where still hidden or dubious. For he knew well, to a
+quite uncommon degree, and with a merit all the higher as it was
+an unconscious one, how entirely inexorable is the nature of
+facts, whether recognized or not, ascertained or not; how vain all
+cunning of diplomacy, management and sophistry, to save any mortal
+who does not stand on the truth of things, from sinking, in the
+long-run. Sinking to the very mud-gods, with all his diplomacies,
+possessions, achievements; and becoming an unnamable object,
+hidden deep in the Cesspools of the Universe. This I hope to make
+manifest; this which I long ago discerned for myself, with
+pleasure, in the physiognomy of Friedrich and his life.
+Which indeed was the first real sanction, and has all along been
+my inducement and encouragement, to study his life and him.
+How this man, officially a King withal, comported himself in the
+Eighteenth Century, and managed not to be a Liar and Charlatan as
+his Century was, deserves to be seen a little by men and kings,
+and may silently have didactic meanings in it.
+
+He that was honest with his existence has always meaning for us,
+be he king or peasant. He that merely shammed and grimaced with
+it, however much, and with whatever noise and trumpet-blowing,
+he may have cooked and eaten in this world, cannot long have any.
+Some men do COOK enormously (let us call it COOKING, what a man
+does in obedience to his HUNGER merely, to his desires and
+passions merely),--roasting whole continents and populations,
+in the flames of war or other discord;--witness the Napoleon above
+spoken of. For the appetite of man in that respect is unlimited;
+in truth, infinite; and the smallest of us could eat the entire
+Solar System, had we the chance given, and then cry, like
+Alexander of Macedon, because we had no more Solar Systems to cook
+and eat. It is not the extent of the man's cookery that can much
+attach me to him; but only the man himself, and what of strength
+he had to wrestle with the mud-elements, and what of victory he
+got for his own benefit and mine.
+
+
+4. ENCOURAGEMENTS, DISCOURAGEMENTS.
+
+French Revolution having spent itself, or sunk in France and
+elsewhere to what we see, a certain curiosity reawakens as to what
+of great or manful we can discover on the other side of that still
+troubled atmosphere of the Present and immediate Past. Curiosity
+quickened, or which should be quickened, by the great and all-
+absorbing question, How is that same exploded Past ever to settle
+down again? Not lost forever, it would appear: the New Era has not
+annihilated the old eras: New Era could by no means manage that;--
+never meant that, had it known its own mind (which it did not):
+its meaning was and is, to get its own well out of them;
+to readapt, in a purified shape, the old eras, and appropriate
+whatever was true and NOT combustible in them: that was the poor
+New Era's meaning, in the frightful explosion it made of itself
+and its possessions, to begin with!
+
+And the question of questions now is: What part of that exploded
+Past, the ruins and dust of which still darken all the air,
+will continually gravitate back to us; be reshaped, transformed,
+readapted, that so, in new figures, under new conditions, it may
+enrich and nourish us again? What part of it, not being
+incombustible, has actually gone to flame and gas in the huge
+world-conflagration, and is now GASEOUS, mounting aloft; and will
+know no beneficence of gravitation, but mount, and roam upon the
+waste winds forever,--Nature so ordering it, in spite of any
+industry of Art? This is the universal question of afflicted
+mankind at present; and sure enough it will be long to settle.
+
+On one point we can answer: Only what of the Past was TRUE will
+come back to us. That is the one ASBESTOS which survives all fire,
+and comes out purified; that is still ours, blessed be Heaven,
+and only that. By the law of Nature nothing more than that;
+and also, by the same law, nothing less than that. Let Art,
+struggle how it may, for or against,--as foolish Art is seen
+extensively doing in our time,--there is where the limits of it
+will be. In which point of view, may not Friedrich, if he was a
+true man and King, justly excite some curiosity again; nay some
+quite peculiar curiosity, as the lost Crowned Reality there was
+antecedent to that general outbreak and abolition? To many it
+appears certain there are to be no Kings of any sort, no
+Government more; less and less need of them henceforth, New Era
+having come. Which is a very wonderful notion; important if true;
+perhaps still more important, just at present, if untrue! My hopes
+of presenting, in this Last of the Kings, an exemplar to my
+contemporaries, I confess, are not high.
+
+On the whole, it is evident the difficulties to a History of
+Friedrich are great and many: and the sad certainty is at last
+forced upon me that no good Book can, at this time, especially in
+this country, be written on the subject. Wherefore let the reader
+put up with an indifferent or bad one; he little knows how much
+worse it could easily have been!--Alas, the Ideal of history,
+as my friend Sauerteig knows, is very high; and it is not one
+serious man, but many successions of such, and whole serious
+generations of such, that can ever again build up History towards
+its old dignity. We must renounce ideals. We must sadly take up
+with the mournfulest barren realities;--dismal continents of
+Brandenburg sand, as in this instance; mere tumbled mountains of
+marine-stores, without so much as an Index to them!
+
+Has the reader heard of Sauerteig's last batch of <italic>
+Springwurzeln, <end italic> a rather curious valedictory Piece?
+"All History is an imprisoned Epic, nay an imprisoned Psalm and
+Prophecy," says Sauerteig there. I wish, from my soul, he had
+DISimprisoned it in this instance! But he only says, in
+magniloquent language, how grand it would be if disimprisoned;--
+and hurls out, accidentally striking on this subject, the
+following rough sentences, suggestive though unpractical, with
+which I shall conclude:--
+
+"Schiller, it appears, at one time thought of writing an <italic>
+Epic Poem upon Friedrich the Great, <end italic> 'upon some action
+of Friedrich's,' Schiller says. Happily Schiller did not do it.
+By oversetting fact, disregarding reality, and tumbling time and
+space topsy-turvy, Schiller with his fine gifts might no doubt
+have written a temporary 'epic poem,' of the kind read an
+admired by many simple persons. But that would have helped little,
+and could not have lasted long. It is not the untrue imaginary
+Picture of a man and his life that I want from my Schiller,
+but the actual natural Likeness, true as the face itself,
+nay TRUER, in a sense. Which the Artist, if there is one,
+might help to give, and the Botcher <italic> (Pfuscher) <end
+italic> never can! Alas, and the Artist does not even try it;
+leaves it altogether to the Botcher, being busy otherwise!--
+
+"Men surely will at length discover again, emerging from these
+dismal bewilderments in which the modern Ages reel and stagger
+this long while, that to them also, as to the most ancient men,
+all Pictures that cannot be credited are--Pictures of an idle
+nature; to be mostly swept out of doors. Such veritably, were it
+never so forgotten, is the law! Mistakes enough, lies enough will
+insinuate themselves into our most earnest portrayings of the
+True: but that we should, deliberately and of forethought,
+rake together what we know to be not true, and introduce that in
+the hope of doing good with it? I tell you, such practice was
+unknown in the ancient earnest times; and ought again to become
+unknown except to the more foolish classes!" That is Sauerteig's
+strange notion, not now of yesterday, as readers know:--and he
+goes then into "Homer's Iliad," the "Hebrew Bible," "terrible
+Hebrew VERACITY of every line of it;" discovers an alarming
+"kinship of Fiction to lying;" and asks, If anybody can compute
+"the damage we poor moderns have got from our practices of fiction
+in Literature itself, not to speak of awfully higher provinces?
+Men will either see into all this by and by," continues he;
+"or plunge head foremost, in neglect of all this, whither they
+little dream as yet!--
+
+"But I think all real Poets, to this hour, are Psalmists and
+Iliadists after their sort; and have in them a divine impatience
+of lies, a divine incapacity of living among lies. Likewise, which
+is a corollary, that the highest Shakspeare producible is properly
+the fittest Historian producible;--and that it is frightful to
+see the <italic> Gelehrte Dummkopf <end italic> [what we here may
+translate, DRYASDUST] doing the function of History, and the
+Shakspeare and the Goethe neglecting it. 'Interpreting events;'
+interpreting the universally visible, entirely INdubitable
+Revelation of the Author of this Universe: how can Dryasdust
+interpret such things, the dark chaotic dullard, who knows the
+meaning of nothing cosmic or noble, nor ever will know?
+Poor wretch, one sees what kind of meaning HE educes from Man's
+History, this long while past, and has got all the world to
+believe of it along with him. Unhappy Dryasdust, thrice-unhappy
+world that takes Dryasdust's reading of the ways of God!
+But what else was possible? They that could have taught better
+were engaged in fiddling; for which there are good wages going.
+And our damage therefrom, our DAMAGE,--yes, if thou be still human
+and not cormorant,--perhaps it will transcend all Californias,
+English National Debts, and show itself incomputable in continents
+of Bullion!--
+
+"Believing that mankind are not doomed wholly to dog-like
+annihilation, I believe that much of this will mend. I believe
+that the world will not always waste its inspired men in mere
+fiddling to it. That the man of rhythmic nature will feel more and
+more his vocation towards the Interpretation of Fact; since only
+in the vital centre of that, could we once get thither, lies all
+real melody; and that he will become, he, once again the Historian
+of Events,--bewildered Dryasdust having at last the happiness to
+be his servant, and to have some guidance from him. Which will be
+blessed indeed. For the present, Dryasdust strikes me like a
+hapless Nigger gone masterless: Nigger totally unfit for self-
+guidance; yet without master good or bad; and whose feats in that
+capacity no god or man can rejoice in.
+
+"History, with faithful Genius at the top and faithful Industry at
+the bottom, will then be capable of being written. History will
+then actually BE written,--the inspired gift of God employing
+itself to illuminate the dark ways of God. A thing thrice-
+pressingly needful to be done!--Whereby the modern Nations may
+again become a little less godless, and again have their 'epics'
+(of a different from the Schiller sort), and again have several
+things they are still more fatally in want of at present!"--
+
+So that, it would seem, there WILL gradually among mankind,
+if Friedrich last some centuries, be a real Epic made of his
+History? That is to say (presumably), it will become a perfected
+Melodious Truth, and duly significant and duly beautiful bit of
+Belief, to mankind; the essence of it fairly evolved from all the
+chaff, the portrait of it actually given, and its real harmonies
+with the laws of this Universe brought out, in bright and dark,
+according to the God's Fact as it was; which poor Dryasdust
+and the Newspapers never could get sight of, but were always
+far from!--
+
+Well, if so,--and even if not quite so,--it is a comfort to
+reflect that every true worker (who has blown away chaff &c.),
+were his contribution no bigger than my own, may have brought the
+good result NEARER by a hand-breadth or two. And so we will end
+these preludings, and proceed upon our Problem, courteous reader.
+
+
+
+Chapter II.
+
+FRIEDRICH'S BIRTH.
+
+Friedrich of Brandenburg-Hohenzollern, who came by course of
+natural succession to be Friedrich II. of Prussia, and is known in
+these ages as Frederick the Great, was born in the palace of
+Berlin, about noon, on the 24th of January, 1712. A small infant,
+but of great promise or possibility; and thrice and four times
+welcome to all sovereign and other persons in the Prussian Court,
+and Prussian realms, in those cold winter days. His Father,
+they say, was like to have stifled him with his caresses,
+so overjoyed was the man; or at least to have scorched him in the
+blaze of the fire; when happily some much suitabler female nurse
+snatched this little creature from the rough paternal paws,--and
+saved it for the benefit of Prussia and mankind. If Heaven will
+but please to grant it length of life! For there have already been
+two little Princekins, who are both dead; this Friedrich is the
+fourth child; and only one little girl, wise Wilhelmina, of almost
+too sharp wits, and not too vivacious aspect, is otherwise yet
+here of royal progeny. It is feared the Hohenzollern lineage,
+which has flourished here with such beneficent effect for three
+centuries now, and been in truth the very making of the Prussian
+Nation, may be about to fail, or pass into some side branch.
+Which change, or any change in that respect, is questionable,
+and a thing desired by nobody.
+
+Five years ago, on the death of the first little Prince, there
+had surmises risen, obscure rumors and hints, that the Princess
+Royal, mother of the lost baby, never would have healthy children,
+or even never have a child more: upon which, as there was but one
+other resource,--a widowed Grandfather, namely, and except the
+Prince Royal no son to him,--said Grandfather, still only about
+fifty, did take the necessary steps: but they have been entirely
+unsuccessful; no new son or child, only new affliction,
+new disaster has resulted from that third marriage of his.
+And though the Princess Royal has had another little Prince,
+that too has died within the year;--killed, some say on the other
+hand, by the noise of the cannon firing for joy over it! [Forster,
+<italic> Friedrich Wilhelm I., Konig von Preussen <end italic>
+(Potsdam, 1834), i. 126 (who quotes Morgenstern, a contemporary
+reporter). But see also Preuss, <italic> Friedrich der Grosse mit
+seinen Verwandten und Freunden <end italic> (Berlin, 1838),
+pp. 379-380] Yes; and the first baby Prince, these same parties
+farther say, was crushed to death by the weighty dress you put
+upon it at christening time, especially by the little crown it
+wore, which had left a visible black mark upon the poor soft
+infant's brow! In short, it is a questionable case; undoubtedly a
+questionable outlook for Prussian mankind; and the appearance of
+this little Prince, a third trump-card in the Hohenzollern game,
+is an unusually interesting event. The joy over him, not in Berlin
+Palace only, but in Berlin City, and over the Prussian Nation, was
+very great and universal;--still testified in manifold dull,
+unreadable old pamphlets, records official and volunteer,--which
+were then all ablaze like the bonfires, and are now fallen dark
+enough, and hardly credible even to the fancy of this new Time.
+
+The poor old Grandfather, Friedrich I. (the first King of
+Prussia),--for, as we intimate, he was still alive, and not very
+old, though now infirm enough, and laden beyond his strength with
+sad reminiscences, disappointments and chagrins,--had taken much
+to Wilhelmina, as she tells us; [<italic> Memoires de Frederique
+Sophie Wilhelmine de Prusse, Margrave de Bareith, Soeur d
+Frederic-le-Grand <end italic> (London, 1812), i. 5.] and would
+amuse himself whole days with the pranks and prattle of the little
+child. Good old man: he, we need not doubt, brightened up into
+unusual vitality at sight of this invaluable little Brother of
+hers; through whom he can look once more into the waste dim future
+with a flicker of new hope. Poor old man: he got his own back
+half-broken by a careless nurse letting him fall; and has slightly
+stooped ever since, some fifty and odd years now: much against his
+will; for he would fain have been beautiful; and has struggled all
+his days, very hard if not very wisely, to make his existence
+beautiful,--to make it magnificent at least, and regardless of
+expense;--and it threatens to come to little. Courage, poor
+Grandfather: here is a new second edition of a Friedrich, the
+first having gone off with so little effect: this one's back is
+still unbroken, his life's seedfield not yet filled with tares and
+thorns: who knows but Heaven will be kinder to this one?
+Heaven was much kinder to this one. Him Heaven had kneaded of
+more potent stuff: a mighty fellow this one, and a strange;
+related not only to the Upholsteries and Heralds' Colleges,
+but to the Sphere-harmonies and the divine and demonic powers;
+of a swift far-darting nature this one, like an Apollo clad in
+sunbeams and in lightnings (after his sort); and with a back which
+all the world could not succeed in breaking!--Yes, if, by most
+rare chance, this were indeed a new man of genius, born into the
+purblind rotting Century, in the acknowledged rank of a king
+there,--man of genius, that is to say, man of originality and
+veracity; capable of seeing with his eyes, and incapable of not
+believing what he sees;--then truly!--But as yet none knows;
+the poor old Grandfather never knew.
+
+Meanwhile they christened the little fellow, with immense
+magnificence and pomp of apparatus; Kaiser Karl, and the very
+Swiss Republic being there (by proxy), among the gossips;
+and spared no cannon-volleyings, kettle-drummings, metal crown,
+heavy cloth-of-silver, for the poor soft creature's sake; all of
+which, however, he survived. The name given him was Karl Friedrich
+(Charles Frederick); Karl perhaps, and perhaps also not, in
+delicate compliment to the chief gossip, the above-mentioned.
+Kaiser, Karl or Charles VI.? At any rate, the KARL, gradually or
+from the first, dropped altogether out of practice, and went as
+nothing: he himself, or those about him, never used it; nor,
+except in some dim English pamphlet here and there, have I met
+with any trace of it. Friedrich (RICH-in-PEACE, a name of old
+prevalence in the Hohenzollern kindred), which he himself wrote
+FREDERIC in his French way, and at last even FEDERIC (with a very
+singular sense of euphony), is throughout, and was, his sole
+designation. Sunday 31st January, 1712, age then precisely one
+week: then, and in this manner, was he ushered on the scene,
+and labelled among his fellow-creatures. We must now look round
+a little; and see, if possible by any method or exertion, what
+kind of scene it was.
+
+
+
+Chapter III.
+
+FATHER AND MOTHER: THE HANOVERIAN CONNECTION.
+
+Friedrich Wilhelm, Crown-Prince of Prussia, son of Friedrich I.
+and Father of this little infant who will one day be Friedrich
+II., did himself make some noise in the world as second King of
+Prussia; notable not as Friedrich's father alone; and will much
+concern us during the rest of his life. He is, at this date,
+in his twenty-fourth year: a thick-set, sturdy, florid, brisk
+young fellow; with a jovial laugh in him, yet of solid grave ways,
+occasionally somewhat volcanic; much given to soldiering, and
+out-of-door exercises, having little else to do at present. He has
+been manager, or, as it were, Vice-King, on an occasional absence
+of his Father; he knows practically what the state of business is;
+and greatly disapproves of it, as is thought. But being bound to
+silence on that head, he keeps silence, and meddles with nothing
+political. He addicts himself chiefly to mustering, drilling and
+practical military duties, while here at Berlin; runs out, often
+enough, wife and perhaps a comrade or two along with him, to hunt,
+and take his ease, at Wusterhausen (some fifteen or twenty miles
+[English miles,--as always unless the contrary be stated.
+The German MEILE is about five miles English; German STUNDE about
+three.] southeast of Berlin), where he has a residence amid the
+woody moorlands.
+
+But soldiering is his grand concern. Six years ago, summer 1706,
+[Forster, i. 116] at a very early age, he went to the wars,--grand
+Spanish-Succession War, which was then becoming very fierce in the
+Netherlands; Prussian troops always active on the Marlborough-
+Eugene side. He had just been betrothed, was not yet wedded;
+thought good to turn the interim to advantage in that way.
+Then again, spring 1709, after his marriage and after his Father's
+marriage, "the Court being full of intrigues," and nothing but
+silence recommendable there, a certain renowned friend of his,
+Leopold, Prince of Anhalt-Dessau, of whom we shall yet hear a
+great deal,--who, still only about thirty, had already covered
+himself with laurels in those wars (Blenheim, Bridge of Casano,
+Lines of Turin, and other glories), but had now got into
+intricacies with the weaker sort, and was out of command,--agreed
+with Friedrich Wilhelm that it would be well to go and serve there
+as volunteers, since not otherwises. [Varnhagen von Ense, <italic>
+Furst Leopold von Anhalt-Dessau <end italic> (in <italic>
+Biographische Denkmale, <end italic> 2d edition, Berlin, 1845),
+p. 185. <italic> Thaten und Leben des weltberuhmten Furstens
+Leopoldi von Anhalt-Dessau <end italic> (Leipzig, 1742), p. 73.
+Forster, i. 129.] A Crown-Prince of Prussia, ought he not to learn
+soldiering, of all things; by every opportunity? Which Friedrich
+Wilhelm did, with industry; serving zealous apprenticeship under
+Marlborough and Eugene, in this manner; plucking knowledge, as the
+bubble reputation, and all else in that field has to be plucked,
+from the cannon's mouth. Friedrich Wilhelm kept by Marlborough,
+now as formerly; friend Leopold being commonly in Eugene's
+quarter, who well knew the worth of him, ever since Blenheim and
+earlier. Friedrich Wilhelm saw hot service, that campaign of 1709;
+siege of Tournay, and far more;--stood, among other things,
+the fiery Battle of Malplaquet, one of the terriblest and
+deadliest feats of war ever done. No want of intrepidity and
+rugged soldier-virtue in the Prussian troops or their Crown-
+Prince; least of all on that terrible day, 11th September, 1709;--
+of which he keeps the anniversary ever since, and will do all his
+life, the doomsday of Malplaquet always a memorable day to him.
+[Forster, i. 138.] He is more and more intimate with Leopold,
+and loves good soldiering beyond all things. Here at Berlin he has
+already got a regiment of his own, tallish fine men; and strives
+to make it in all points a very pattern of a regiment.
+
+For the rest, much here is out of joint, and far from satisfactory
+to him. Seven years ago [1st February, 1705.] he lost his own
+brave Mother and her love; of which we must speak farther by and
+by. In her stead he has got a fantastic, melancholic, ill-natured
+Stepmother, with whom there was never any good to be done; who in
+fact is now fairly mad, and kept to her own apartments. He has to
+see here, and say little, a chagrined heart-worn Father flickering
+painfully amid a scene much filled with expensive futile persons,
+and their extremely pitiful cabals and mutual rages; scene chiefly
+of pompous inanity, and the art of solemnly and with great labor
+doing nothing. Such waste of labor and of means: what can one do
+but be silent? The other year, Preussen (PRUSSIA Proper, province
+lying far eastward, out of sight) was sinking under pestilence
+and black ruin and despair: the Crown-Prince, contrary to wont,
+broke silence, and begged some dole or subvention for these poor
+people; but there was nothing to be had. Nothing in the treasury,
+your Royal Highness:--Preussen will shift for itself; sublime
+dramaturgy, which we call his Majesty's Government, costs so much!
+And Preussen, mown away by death, lies much of it vacant ever
+since; which has completed the Crown-Prince's disgust; and,
+I believe, did produce some change of ministry, or other
+ineffectual expedient, on the old Father's part. Upon which the
+Crown-Prince locks up his thoughts again. He has confused
+whirlpools, of Court intrigues, ceremonials, and troublesome
+fantasticalities, to steer amongst; which he much dislikes, no man
+more; having an eye and heart set on the practical only, and being
+in mind as in body something of the genus ROBUSTUM, of the genus
+FEROX withal. He has been wedded six years; lost two children,
+as we saw; and now again he has two living.
+
+His wife, Sophie Dorothee of Hanover, is his cousin as well.
+She is brother's-daughter of his Mother, Sophie Charlotte:
+let the reader learn to discriminate these two names.
+Sophie Charlotte, late Queen of Prussia, was also of Hanover:
+she probably had sometimes, in her quiet motherly thought,
+anticipated this connection for him, while she yet lived. It is
+certain Friedrich Wilhelm was carried to Hanover in early
+childhood: his Mother,--that Sophie Charlotte, a famed Queen and
+lady in her day, Daughter of Electress Sophie, and Sister of the
+George who became George I. of England by and by,--took him
+thither; some time about the beginning of 1693, his age then five;
+and left him there on trial; alleging, and expecting, he might
+have a better breeding there. And this, in a Court where Electress
+Sophie was chief lady, and Elector Ernst, fit to be called
+Gentleman Ernst, ["Her Highness (the Electress Sophie) has the
+character of the merry debonnaire Princess of Germany; a lady of
+extraordinary virtues and accomplishments; mistress of the
+Italian, French, High and Low Dutch, and English languages,
+which she speaks to perfection. Her husband (Elector Ernst) has
+the title of the Gentleman of Germany; a graceful and," &c. &c.
+W. Carr, <italic> Remarks of the Governments of the severall Parts
+of Germanie, Denmark, Sweedland <end italic> (Amsterdam, 1688),
+p. 147. See also <italic> Ker of Kersland <end italic> (still more
+emphatic on this point, <italic> soepius <end italic>)] the
+politest of men, was chief lord,--and where Leibnitz, to say
+nothing of lighter notabilities, was flourishing,--seemed a
+reasonable expectation. Nevertheless, it came to nothing,
+this articulate purpose of the visit; though perhaps the deeper
+silent purposes of it might not be quite unfulfilled.
+
+Gentleman Ernst had lately been made "Elector" (<italic> Kurfurst,
+<end italic> instead of <italic> Herzog <end italic>),--his
+Hanover no longer a mere Sovereign Duchy, but an Electorate
+henceforth, new "NINTH Electorate," by Ernst's life-long exertion
+and good luck ;--which has spread a fine radiance, for the time,
+over court and people in those parts; and made Ernst a happier man
+than ever, in his old age. Gentleman Ernst and Electress Sophie,
+we need not doubt, were glad to see their burly Prussian grandson,
+--a robust, rather mischievous boy of five years old;--and
+anything that brought her Daughter oftener about her (an only
+Daughter too, and one so gifted) was sure to be welcome to the
+cheery old Electress, and her Leibnitz and her circle. For Sophie
+Charlotte was a bright presence, and a favorite with sage and gay.
+
+Uncle George again, "<italic> Kurprinz <end italic> Georg Ludwig"
+(Electoral Prince and Heir-Apparent), who became George I. of
+England; he, always a taciturn, saturnine, somewhat grim-visaged
+man, not without thoughts of his own but mostly inarticulate
+thoughts, was, just at this time, in a deep domestic intricacy.
+Uncle George the Kurprinz was painfully detecting, in these very
+months, that his august Spouse and cousin, a brilliant not
+uninjured lady, had become an indignant injuring one; that she had
+gone, and was going, far astray in her walk of life! Thus all is
+not radiance at Hanover either, Ninth Elector though we are;
+but, in the soft sunlight, there quivers a streak of the blackness
+of very Erebus withal. Kurprinz George, I think, though he too is
+said to have been good to the boy, could not take much interest in
+this burly Nephew of his just now!
+
+Sure enough, it was in this year 1693, that the famed Konigsmark
+tragedy came ripening fast towards a crisis in Hanover; and next
+year the catastrophe arrived. A most tragic business; of which the
+little Boy, now here, will know more one day. Perhaps it was on
+this very visit, on one visit it credibly was, that Sophie
+Charlotte witnessed a sad scene in the Schloss of Hanover
+high words rising, where low cooings had been more appropriate;
+harsh words, mutually recriminative, rising ever higher; ending,
+it is thought, in THINGS, or menaces and motions towards things
+(actual box on the ear, some call it),--never to be forgotten or
+forgiven! And on Sunday 1st of July, 1694, Colonel Count Philip
+Konigsmark, Colonel in the Hanover Dragoons, was seen for the last
+time in this world. From that date, he has vanished suddenly
+underground, in an inscrutable manner: never more shall the light
+of the sun, or any human eye behold that handsome blackguard man.
+Not for a hundred and fifty years shall human creatures know,
+or guess with the smallest certainty, what has become of him.
+
+And shortly after Konigsmark's disappearance, there is this sad
+phenomenon visible: A once very radiant Princess (witty, haughty-
+minded, beautiful, not wise or fortunate) now gone all ablaze into
+angry tragic conflagration; getting locked into the old Castle of
+Ahlden, in the moory solitudes of Luneburg Heath: to stay there
+till she die,--thirty years as it proved,--and go into ashes and
+angry darkness as she may. Old peasants, late in the next century,
+will remember that they used to see her sometimes driving on the
+Heath,--beautiful lady, long black hair, and the glitter of
+diamonds in it; sometimes the reins in her own hand, but always
+with a party of cavalry round her, and their swords drawn.
+[<italic> Die Herzogin von Ahlden <end italic> (Leipzig, 1852),
+p. 22. Divorce was, 28th December, 1694; death, 13th November,
+1726,--age then 60.] "Duchess of Ahlden," that was her title in
+the eclipsed state. Born Princess of Zelle; by marriage, Princess
+of Hanover (<italic> Kurprinzessin <end italic>); would have been
+Queen of England, too, had matters gone otherwise than they did.--
+Her name, like that of a little Daughter she had, is Sophie
+Dorothee: she is Cousin and Divorced Wife of Kurprinz George;
+divorced, and as it were abolished alive, in this manner. She is
+little Friedrich Wilhelm's Aunt-in-law; and her little Daughter
+comes to be his Wife in process of time. Of him, or of those
+belonging to him, she took small notice, I suppose, in her then
+mood, the crisis coming on so fast. In her happier innocent days
+she had two children, a King that is to be, and a Queen;
+George II. of England, Sophie Dorothee of Prussia; but must not
+now call them hers, or ever see them again.
+
+This was the Konigsmark tragedy at Hanover; fast ripening towards
+its catastrophe while little Friedrich Wilhelm was there. It has
+been, ever since, a rumor and dubious frightful mystery to
+mankind: but within these few years, by curious accidents (thefts,
+discoveries of written documents, in various countries, and
+diligent study of them), it has at length become a certainty and
+clear fact, to those who are curious about it. Fact surely of a
+rather horrible sort;--yet better, I must say, than was suspected:
+not quite so bad in the state of fact as in that of rumor.
+Crime enough is in it, sin and folly on both sides; there is
+killing too, but NOT assassination (as it turns out); on the whole
+there is nothing of atrocity, or nothing that was not accidental,
+unavoidable;--and there is a certain greatness of DECORUM on the
+part of those Hanover Princes and official gentlemen, a depth of
+silence, of polite stoicism, which deserves more praise than it
+will get in our times. Enough now of the Konigsmark tragedy;
+[A considerable dreary mass of books, pamphlets, lucubrations,
+false all and of no worth or of less, have accumulated on this
+dark subject, during the last hundred and fifty years; nor has the
+process yet stopped,--as it now well might. For there have now two
+things occurred in regard to it FIRST: In the year 1847, a Swedish
+Professor, named Palmblad, groping about for other objects in the
+College Library of Lund (which is in the country of the Konigsmark
+connections), came upon a Box of Old Letters,--Letters undated,
+signed only with initials, and very enigmatic till well searched
+into,--which have turned out to be the very Autographs of the
+Princess and her Konigsmark; throwing of course a henceforth
+indisputable light on their relation. SECOND THING: A cautious
+exact old gentleman, of diplomatic habits (understood to be "Count
+Von Schulenburg-Klosterrode of Dresden"), has, since that event,
+unweariedly gone into the whole matter; and has brayed it
+everywhere, and pounded it small; sifting, with sublime patience,
+not only those Swedish Autographs, but the whole mass of lying
+books, pamphlets, hints and notices, old and recent; and bringing
+out (truly in an intricate and thrice-wearisome, but for the first
+time in an authentic way) what real evidence there is. In which
+evidence the facts, or essential fact, lie at last indisputable
+enough. His Book, thick Pamphlet rather, is that same <italic>
+Herzogin von Ahlden <end italic> (Leipzig, 1852) cited above.
+The dreary wheelbarrowful of others I had rather not mention again;
+but leave Count von Schulenburg to mention and describe them,--
+which he does abundantly, so many as had accumulated up to that
+date of 1852, to the affliction more or less of sane mankind.]
+contemporaneous with Friedrich Wilhelm's stay at Hanover, but not
+otherwise much related to him or his doings there.
+
+He got no improvement in breeding, as we intimated; none at all;
+fought, on the contrary, with his young Cousin (afterwards our
+George II.), a boy twice his age, though of weaker bone; and gave
+him a bloody nose. To the scandal and consternation of the French
+Protestant gentlewomen and court-dames in their stiff silks:
+"Ahee, your Electoral Highness!" This had been a rough unruly boy
+from the first discovery of him. At a very early stage, he, one
+morning while the nurses were dressing him, took to investigating
+one of his shoe buckles; would, in spite of remonstrances, slobber
+it about in his mouth; and at length swallowed it down,--beyond
+mistake; and the whole world cannot get it up! Whereupon, wild
+wail of nurses; and his "Mother came screaming," poor mother:--
+It is the same small shoe-buckle which is still shown, with a
+ticket and date to it, "31 December, 1692," in the Berlin <italic>
+Kunstkammer <end italic>; for it turned out harmless, after all
+the screaming; and a few grains of rhubarb restored it safely
+to the light of day; henceforth a thrice-memorable shoe-buckle.
+[Forster, i. 74. Erman, <italic> Memoires de Sophie Charlotte
+<end italic> (Berlin, 1801), p. 130.]
+
+Another time, it is recorded, though with less precision of
+detail, his Governess the Dame Montbail having ordered him to do
+something which was intolerable to the princely mind, the princely
+mind resisted in a very strange way: the princely body, namely,
+flung itself suddenly out of a third-story window, nothing but the
+hands left within; and hanging on there by the sill, and fixedly
+resolute to obey gravitation rather than Montbail, soon brought
+the poor lady to terms. Upon which, indeed, he had been taken from
+her, and from the women altogether, as evidently now needing
+rougher government. Always an unruly fellow, and dangerous to
+trust among crockery. At Hanover he could do no good in the way of
+breeding: sage Leibnitz himself, with his big black periwig and
+large patient nose, could have put no metaphysics into such a boy.
+Sublime <italic> Theodicee <end italic> (Leibnitzian
+"justification of the ways of God") was not an article this
+individual had the least need of, nor at any time the least value
+for. "Justify? What doomed dog questions it, then? Are you for
+Bedlam, then?"--and in maturer years his rattan might have been
+dangerous! For this was a singular individual of his day;
+human soul still in robust health, and not given to spin its
+bowels into cobwebs. He is known only to have quarrelled much with
+Cousin George, during the year or so he spent in those parts.
+
+But there was another Cousin at Hanover, just one other, little
+Sophie Dorothee (called after her mother), a few months older than
+himself; by all accounts, a really pretty little child, whom he
+liked a great deal better. She, I imagine, was his main resource,
+while on this Hanover visit; with her were laid the foundations of
+an intimacy which ripened well afterwards. Some say it was already
+settled by the parents that there was to be a marriage in due
+time. Settled it could hardly be; for Wilhelmina tells us,
+[<italic> Memoires de la Margrave de Bareith, <end italic> i. l.]
+her Father had a "choice of three" allowed him, on coming to wed;
+and it is otherwise discernible there had been eclipses and
+uncertainties, in the interim, on his part. Settled, no; but hoped
+and vaguely pre-figured, we may well suppose. And at all events,
+it has actually come to pass; "Father being ardently in love with
+the Hanover Princess," says our Margravine, "and much preferring
+her to the other two," or to any and all others. Wedded, with
+great pomp, 28th November, 1706; [Forster, i. 117.]--and Sophie
+Dorothee, the same that was his pretty little Cousin at Hanover
+twenty years ago, she is mother of the little Boy now born
+and christened, whom men are to call Frederick the Great in
+coming generations.
+
+Sophie Dorothee is described to us by courtier contemporaries
+as "one of the most beautiful princesses of her day:"
+Wilhelmina, on the other hand, testifies that she was never
+strictly to be called beautiful, but had a pleasant attractive
+physiognomy; which may be considered better than strict beauty.
+Uncommon grace of figure and look, testifies Wilhelmina; much
+dignity and soft dexterity, on social occasions; perfect in all
+the arts of deportment; and left an impression on you at once
+kindly and royal. Portraits of her, as Queen at a later age,
+are frequent in the Prussian Galleries; she is painted sitting,
+where I best remember her. A serious, comely, rather plump,
+maternal-looking Lady; something thoughtful in those gray still
+eyes of hers, in the turn of her face and carriage of her head,
+as she sits there, considerately gazing out upon a world which
+would never conform to her will. Decidedly a handsome, wholesome
+and affectionate aspect of face. Hanoverian in type, that is to
+say, blond, florid, slightly PROFUSE;--yet the better kind of
+Hanoverian, little or nothing of the worse or at least the worst
+kind. The eyes, as I say, are gray, and quiet, almost sad;
+expressive of reticence and reflection, of slow constancy rather
+than of SPEED in any kind. One expects, could the picture speak,
+the querulous sound of maternal and other solicitude; of a temper
+tending towards the obstinate, the quietly unchangeable;--loyal
+patience not wanting, yet in still larger measure royal impatience
+well concealed, and long and carefully cherished. This is what I
+read in Sophie Dorothee's Portraits,--probably remembering what
+I had otherwise read, and come to know of her. She too will not a
+little concern us in the first part of this History. I find, for
+one thing, she had given much of her physiognomy to the Friedrich
+now born. In his Portraits as Prince-Royal, he strongly resembles
+her; it is his mother's face informed with youth and new fire,
+and translated into the masculine gender: in his later Portraits,
+one less and less recognizes the mother.
+
+Friedrich Wilhelm, now in the sixth year of wedlock, is still very
+fond of his Sophie Dorothee,--<italic> "Fiechen" (Feekin <end
+italic> diminutive of <italic> Sophie <end italic>), as he calls
+her; she also having, and continuing to have, the due wife's
+regard for her solid, honest, if somewhat explosive bear.
+He troubles her a little now and then, it is said, with whiffs of
+jealousy; but they are whiffs only, the product of accidental
+moodinesses in him, or of transient aspects, misinterpreted,
+in the court-life of a young and pretty woman. As the general
+rule, he is beautifully good-humored, kind even, for a bear;
+and, on the whole, they have begun their partnership under good
+omens. And indeed we may say, in spite of sad tempests that arose,
+they continued it under such. She brought him gradually no fewer
+than fourteen children, of whom ten survived him and came to
+maturity: and it is to be admitted their conjugal relation,
+though a royal, was always a human one; the main elements of it
+strictly observed on both sides; all quarrels in it capable of
+being healed again, and the feeling on both sides true, however
+troublous. A rare fact among royal wedlocks, and perhaps a unique
+one in that epoch.
+
+The young couple, as is natural in their present position, have
+many eyes upon them, and not quite a paved path in this confused
+court of Friedrich I. But they are true to one another; they seem
+indeed to have held well aloof from all public business or private
+cabal; and go along silently expecting, and perhaps silently
+resolving this and that in the future tense; but with moderate
+immunity from paternal or other criticisms, for the present.
+The Crown-Prince drills or hunts, with his Grumkows, Anhalt-
+Dessaus: these are harmless employments;--and a man may have
+within his own head what thoughts he pleases, without offence so
+long as he keeps them there. Friedrich the old Grandfather lived
+only thirteen months after the birth of his grandson: Friedrich
+Wilhelm was then King; thoughts then, to any length, could become
+actions on the part of Friedrich Wilhelm.
+
+
+
+Chapter IV.
+
+FATHER'S MOTHER.
+
+Friedrich Wilhelm's Mother, as we hinted, did not live to see this
+marriage which she had forecast in her maternal heart. She died,
+rather suddenly, in 1705, [1st February (Erman, p. 241; Forster,
+i. 114): born, 20th October, 1666; wedded, 28th September 1684;
+died, 1st February, 1705.] at Hanover, whither she had gone on a
+visit; shortly after parting with this her one boy and child,
+Friedrich Wilhelm, who is then about seventeen; whom she had with
+effort forced herself to send abroad, that he might see the world
+a little, for the first time. Her sorrow on this occasion has in
+it something beautiful, in so bright and gay a woman: shows us the
+mother strong in her, to a touching degree. The rough cub, in whom
+she noticed rugged perverse elements, "tendencies to avarice," and
+a want of princely graces, and the more brilliant qualities in
+mind and manner, had given her many thoughts and some uneasy ones.
+But he was evidently all she had to love in the world; a rugged
+creature inexpressibly precious to her. For days after his
+departure, she had kept solitary; busied with little; indulging in
+her own sad reflections without stint. Among the papers she had
+been scribbling, there was found one slip with a HEART sketched on
+it, and round the heart "PARTI" (Gone): My heart is gone!--poor
+lady, and after what a jewel! But Nature is very kind to all
+children and to all mothers that are true to her.
+
+Sophie Charlotte's deep sorrow and dejection on this parting was
+the secret herald of fate to herself. It had meant ill health
+withal, and the gloom of broken nerves. All autumn and into winter
+she had felt herself indefinitely unwell; she determined, however,
+on seeing Hanover and her good old Mother at the usual time.
+The gloomy sorrow over Friedrich Wilhelm had been the premonition
+of a sudden illness which seized her on the road to Hanover, some
+five months afterwards, and which ended fatally in that city.
+Her death was not in the light style Friedrich her grandson
+ascribes to it; [<italic> Memoires de Brandebourg <end italic>
+(Preuss's Edition of <italic> OEuvres, <end italic> Berlin, 1847
+et seqq.), i. 112.] she died without epigram, and though in
+perfect simple courage, with the reverse of levity.
+
+Here, at first hand, is the specific account of that event;
+which, as it is brief and indisputable, we may as well fish from
+the imbroglios, and render legible, to counteract such notions,
+and illuminate for moments an old scene of things. The writing,
+apparently a quite private piece, is by "M. de la Bergerie, Pastor
+of the French Church at Hanover," respectable Edict-of-Nantes
+gentleman, who had been called in on the occasion;--gives an
+authentic momentary picture, though a feeble and vacant one, of a
+locality at that time very interesting to Englishmen. M. de la
+Bergerie privately records:--
+
+"The night between the last of January and the first of February,
+1705, between one and two o'clock in the morning, I was called to
+the Queen of Prussia, who was then dangerously ill.
+
+"Entering the room, I threw myself at the foot of her bed,
+testifying to her in words my profound grief to see her in this
+state. After which I took occasion to say, 'She might know now
+that Kings and Queens are mortal equally with all other men;
+and that they are obliged to appear before the throne of the
+majesty of God, to give an account of their deeds done, no less
+than the meanest of their subjects.' To which her Majesty replied,
+'I know it well (<italic> Je le sais bien <end italic>).'--I went
+on to say to her, 'Madam, your Majesty must also recognize in this
+hour the vanity and nothingness of the things here below, for
+which, it may be, you have had too much interest; and the
+importance of the things of Heaven, which perhaps you have
+neglected and contemned.' Thereupon the Queen answered, 'True
+(<italic> Cela est vrai <end italic>)!' 'Nevertheless, Madam,'
+said I, 'does not your Majesty place really your trust in God?
+Do you not very earnestly (<italic> bien serieusement <end
+italic>) crave pardon of Him for all the sins you have committed?
+Do not you fly (<italic> n'a-t-elle pas recours <end italic>) to
+the blood and merits of Jesus Christ, without which it is
+impossible for us to stand before God?' The Queen answered,
+'<italic> Oui <end italic> (Yes).'--While this was going on,
+her Brother, Duke Ernst August, came into the Queen's room,"--
+perhaps with his eye upon me and my motions? "As they wished to
+speak together, I withdrew by order."
+
+This Duke Ernst August, age now 31, is the youngest Brother of the
+family; there never was any Sister but this dying one, who is four
+years older. Ernst August has some tincture of soldiership at this
+time (Marlborough Wars, and the like), as all his kindred had; but
+ultimately he got the Bishopric of Osnabruck, that singular
+spiritual heirloom, or HALF-heirloom of the family; and there
+lived or vegetated without noise. Poor soul, he is the same Bishop
+of Osnabruck, to whose house, twenty-two years hence, George I.,
+struck by apoplexy, was breathlessly galloping in the summer
+midnight, one wish now left in him, to be with his brother;--and
+arrived dead, or in the article of death. That was another scene
+Ernst August had to witness in his life. I suspect him at present
+of a thought that M. de la Bergerie, with his pious commonplaces,
+is likely to do no good. Other trait of Ernst August's life; or of
+the Schloss of Hanover that night,--or where the sorrowing old
+Mother sat, invincible though weeping, in some neighboring room,--
+I cannot give. M. de la Bergerie continues his narrative:--
+
+"Some time after, I again presented myself before the Queen's bed,
+to see if I could have occasion to speak to her on the matter of
+her salvation. But Monseigneur the Duke Ernst August then said to
+me, That it was not necessary; that the Queen was at peace with
+her God (<italic> etait bien avec son Dieu <end italic>)."--Which
+will mean also that M. de la Bergerie may go home? However, he
+still writes:--
+
+"Next day the Prince told me, That observing I was come near the
+Queen's bed, he had asked her if she wished I should still speak
+to her; but she had replied, that it was not necessary in any way
+(<italic> nullement <end italic>), that she already knew all that
+could be said to her on such an occasion; that she had said it to
+herself, that she was still saying it, and that she hoped to be
+well with her God.
+
+"In the end a faint coming upon the Queen, which was what
+terminated her life, I threw myself on my knees at the other side
+of her bed, the curtains of which were open; and I called to God
+with a loud voice, 'That He would rank his angels round this great
+Princess, to guard her from the insults of Satan; that He would
+have pity on her soul; that He would wash her with the blood of
+Jesus Christ her heavenly Spouse; that, having forgiven her all
+her sins, He would receive her to his glory.' And in that moment
+she expired." [Erman, p. 242.]--Age thirty-six and some months.
+Only Daughter of Electress Sophie; and Father's Mother of
+Frederick the Great.
+
+She was, in her time, a highly distinguished woman; and has left,
+one may say, something of her likeness still traceable in the
+Prussian Nation, and its form of culture, to this day.
+Charlottenburg (Charlotte's-town, so called by the sorrowing
+Widower), where she lived, shone with a much-admired French light
+under her presidency,--French essentially, Versaillese, Sceptico-
+Calvinistic, reflex and direct,--illuminating the dark North;
+and indeed has never been so bright since. The light was not what
+we can call inspired; lunar rather, not of the genial or solar
+kind: but, in good truth, it was the best then going; and Sophie
+Charlotte, who was her Mother's daughter in this as in other
+respects, had made it her own. They were deep in literature, these
+two Royal Ladies; especially deep in French theological polemics,
+with a strong leaning to the rationalist side.
+
+They had stopped in Rotterdam once, on a certain journey homewards
+from Flanders and the Baths of Aix-la-Chapelle, to see that
+admirable sage, the doubter Bayle. Their sublime messenger roused
+the poor man, in his garret there, in the Bompies,--after dark:
+but he had a headache that night; was in bed, and could not come.
+He followed them next day; leaving his paper imbroglios, his
+historical, philosophical, anti-theological marine-stores;
+and suspended his neverending scribble, on their behalf;--but
+would not accept a pension, and give it up. [Erman, pp. 111, 112.
+Date is 1700 (late in the autumn probably).]
+
+They were shrewd, noticing, intelligent and lively women;
+persuaded that there was some nobleness for man beyond what the
+tailor imparts to him; and even very eager to discover it,
+had they known how. In these very days, while our little Friedrich
+at Berlin lies in his cradle, sleeping most of his time,
+sage Leibnitz, a rather weak but hugely ingenious old gentleman,
+with bright eyes and long nose, with vast black peruke and bandy
+legs, is seen daily in the Linden Avenue at Hanover (famed Linden
+Alley, leading from Town Palace to Country one, a couple of miles
+long, rather disappointing when one sees it), daily driving or
+walking towards Herrenhausen, where the Court, where the old
+Electress is, who will have a touch of dialogue with him to
+diversify her day. Not very edifying dialogue, we may fear;
+yet once more, the best that can be had in present circumstances.
+Here is some lunar reflex of Versailles, which is a polite court;
+direct rays there are from the oldest written Gospels and the
+newest; from the great unwritten Gospel of the Universe itself;
+and from one's own real effort, more or less devout, to read all
+these aright. Let us not condemn that poor French element of
+Eclecticism, Scepticism, Tolerance, Theodicea, and Bayle of the
+Bompies versus the College of Saumur. Let us admit that it was
+profitable, at least that it was inevitable; let us pity it,
+and be thankful for it, and rejoice that we are well out of it.
+Scepticism, which is there beginning at the very top of the world-
+tree, and has to descend through all the boughs with terrible
+results to mankind, is as yet pleasant, tinting the leaves with
+fine autumnal red.
+
+Sophie Charlotte partook of her Mother's tendencies; and carried
+them with her to Berlin, there to be expanded in many ways into
+ampler fulfilment. She too had the sage Leibnitz often with her,
+at Berlin; no end to her questionings of him; eagerly desirous to
+draw water from that deep well,--a wet rope, with cobwebs sticking
+to it, too often all she got; endless rope, and the bucket never
+coming to view. Which, however, she took patiently, as a thing
+according to Nature. She had her learned Beausobres and other
+Reverend Edict-of-Nantes gentlemen, famed Berlin divines; whom,
+if any Papist notability, Jesuit ambassador or the like, happened
+to be there, she would set disputing with him, in the Soiree at
+Charlottenburg. She could right well preside over such a battle of
+the Cloud-Titans, and conduct the lightnings softly, without
+explosions. There is a pretty and very characteristic Letter of
+hers, still pleasant to read, though turning on theologies now
+fallen dim enough; addressed to Father Vota, the famous Jesuit,
+King's-confessor, and diplomatist, from Warsaw, who had been doing
+his best in one such rencontre before her Majesty (date March,
+1703),--seemingly on a series of evenings, in the intervals of his
+diplomatic business; the Beausobre champions being introduced to
+him successively, one each evening, by Queen Sophie Charlotte.
+To all appearance the fencing had been keen; the lightnings in
+need of some dexterous conductor. Vota, on his way homeward,
+had written to apologize for the sputterings of fire struck out of
+him in certain pinches of the combat; says, It was the rough
+handling the Primitive Fathers got from these Beausobre gentlemen,
+who indeed to me, Vota in person, under your Majesty's fine
+presidency, were politeness itself, though they treated the
+Fathers so ill. Her Majesty, with beautiful art, in this Letter,
+smooths the raven plumage of Vota;--and, at the same time, throws
+into him, as with invisible needle-points, an excellent dose of
+acupuncturation, on the subject of the Primitive Fathers and the
+Ecumenic Councils, on her own score. Let us give some Excerpt,
+in condensed state:--
+
+"How can St. Jerome, for example, be a key to Scripture?" she
+insinuates; citing from Jerome this remarkable avowal of his
+method of composing books; "especially of his method in that Book,
+<italic> Commentary on the Galatians, <end italic> where he
+accuses both Peter and Paul of simulation and even of hypocrisy.
+The great St. Augustine has been charging him with this sad fact,"
+says her Majesty, who gives chapter and verse; ["Epist. 28*, edit.
+Paris." And Jerome's answer, "Ibid. Epist. 76*."] "and Jerome
+answers: 'I followed the Commentaries of Origen, of'"--five or six
+different persons, who turned out mostly to be heretics before
+Jerome had quite done with them in coming years!--"'And to confess
+the honest truth to you,' continues Jerome, 'I read all that;
+and after having crammed my head with a great many things, I sent
+for my amanuensis, and dictated to him now my own thoughts,
+now those of others, without much recollecting the order,
+nor sometimes the words, nor even the sense.' In another place (in
+the Book itself farther on [<italic> "Commentary on the Galatians,
+<end italic> chap. iii."]), he says: 'I do not myself write;
+I have an amanuensis, and I dictate to him what comes into my
+mouth. If I wish to reflect a little, to say the thing better or a
+better thing, he knits his brows, and the whole look of him tells
+me sufficiently that he cannot endure to wait.'"--Here is a sacred
+old gentleman, whom it is not safe to depend on for interpreting
+the Scriptures, thinks her Majesty; but does not say so, leaving
+Father Vota to his reflections.
+
+Then again, coming to Councils, she quotes St. Gregory Nazianzen
+upon him; who is truly dreadful in regard to Ecumenic Councils of
+the Church,--and indeed may awaken thoughts of Deliberative
+Assemblies generally, in the modern constitutional mind. "He says,
+[<italic> "Greg. Nazian. de Vita sua." <end italic>] No Council
+ever was successful; so many mean human passions getting into
+conflagration there; with noise, with violence and uproar, 'more
+like those of a tavern or still worse place,'--these are his
+words. He, for his own share, had resolved to avoid all such
+'rendezvousing of the Geese and Cranes, flocking together to
+throttle and tatter one another in that sad manner.' Nor had
+St. Theodoret much opinion of the Council of Nice, except as a
+kind of miracle. 'Nothing good to be expected from Councils,'
+says he, 'except when God is pleased to interpose, and destroy the
+machinery of the Devil.'"
+
+--With more of the like sort; all delicate, as invisible needle-
+points, in her Majesty's hand. [Letter undated (datable
+"Lutzelburg, March, 1708,") is to be found entire, with all its
+adjuncts, in <italic> Erman, <end italic> pp. 246-255. It was
+subsequently translated by Toland, and published here, as an
+excellent Polemical Piece,--entirely forgotten in our time
+(<italic> A Letter against Popery by Sophia Charlotte, the late
+Queen of Prussia: Being, <end italic> &c. &c. London, 1712).
+But the finest Duel of all was probably that between Beausobre and
+Toland himself (reported by Beausobre, in something of a crowing
+manner, in <italic> Erman, <end italic> pp. 203-241, "October,
+1701"), of which Toland makes no mention anywhere.] What is Father
+Vota to say?--The modern reader looks through these chinks into a
+strange old scene, the stuff of it fallen obsolete, the spirit of
+it not, nor worthy to fall.
+
+These were Sophie Charlotte's reunions; very charming in their
+time. At which how joyful for Irish Toland to be present, as was
+several times his luck. Toland, a mere broken heretic in his own
+country, who went thither once as Secretary to some Embassy
+(Embassy of Macclesfield's, 1701, announcing that the English
+Crown had fallen Hanover-wards), and was no doubt glad, poor
+headlong soul, to find himself a gentleman and Christian again,
+for the time being,--admires Hanover and Berlin very much;
+and looks upon Sophie Charlotte in particular as the pink of
+women. Something between an earthly Queen and a divine Egeria;
+"Serena" he calls her; and, in his high-flown fashion, is very
+laudatory. "The most beautiful Princess of her time," says he,--
+meaning one of the most beautiful: her features are extremely
+regular, and full of vivacity; copious dark hair, blue eyes,
+complexion excellently fair;--"not very tall, and somewhat too
+plump," he admits elsewhere. And then her mind,--for gifts, for
+graces, culture, where will you find such a mind? "Her reading is
+infinite, and she is conversant in all manner of subjects;"
+"knows the abstrusest problems of Philosophy;" says admiring
+Toland: much knowledge everywhere exact, and handled as by an
+artist and queen; for "her wit is inimitable," "her justness of
+thought, her delicacy of expression," her felicity of utterance
+and management, are great. Foreign courtiers call her "the
+Republican Queen." She detects you a sophistry at one glance;
+pierces down direct upon the weak point of an opinion: never
+in my whole life did I, Toland, come upon a swifter or sharper
+intellect. And then she is so good withal, so bright and cheerful;
+and "has the art of uniting what to the rest of the world are
+antagonisms, mirth and learning,"--say even, mirth and good sense.
+Is deep in music, too; plays daily on her harpsichord, and
+fantasies, and even composes, in an eminent manner. [<italic> An
+Account of the Courts of Prussia and Hanover, sent to a Minister
+of State in Holland, <end italic> by Mr. Toland (London, 1705),
+p. 322. Toland's other Book, which has reference to her, is of
+didactic nature ("immortality of the soul," "origin of idolatry,"
+&c.), but with much fine panegyric direct and oblique: <italic>
+Letters to Serena <end italic> ("Serena" being <italic> Queen
+<end italic>), a thin 8vo, London, 1704.] Toland's admiration,
+deducting the high-flown temper and manner of the man, is sincere
+and great.
+
+Beyond doubt a bright airy lady, shining in mild radiance in those
+Northern parts; very graceful, very witty and ingenious; skilled
+to speak, skilled to hold her tongue,--which latter art also was
+frequently in requisition with her. She did not much venerate her
+Husband, nor the Court population, male or female, whom he chose
+to have about him: his and their ways were by no means hers,
+if she had cared to publish her thoughts. Friedrich I., it is
+admitted on all hands, was "an expensive Herr;" much given to
+magnificent ceremonies, etiquettes and solemnities; making no
+great way any-whither, and that always with noise enough, and with
+a dust vortex of courtier intrigues and cabals encircling him,--
+from which it is better to stand quite to windward. Moreover,
+he was slightly crooked; most sensitive, thin of skin and liable
+to sudden flaws of temper, though at heart very kind and good.
+Sophie Charlotte is she who wrote once, "Leibnitz talked to me of
+the infinitely little (<italic> de l'infiniment petit): mon Dieu,
+<end italic> as if I did not know enough of that!" Besides, it is
+whispered she was once near marrying to Louis XIV.'s Dauphin; her
+Mother Sophie, and her Cousin the Dowager Duchess of Orleans,
+cunning women both, had brought her to Paris in her girlhood,
+with that secret object; and had very nearly managed it. Queen of
+France that might have been; and now it is but Brandenburg, and
+the dice have fallen somewhat wrong for us! She had Friedrich
+Wilhelm, the rough boy; and perhaps nothing more of very precious
+property. Her first child, likewise a boy, had soon died, and
+there came no third: tedious ceremonials, and the infinitely
+little, were mainly her lot in this world.
+
+All which, however, she had the art to take up not in the tragic
+way, but in the mildly comic,--often not to take up at all, but
+leave lying there;--and thus to manage in a handsome and softly
+victorious manner. With delicate female tact, with fine female
+stoicism too; keeping all things within limits. She was much
+respected by her Husband, much loved indeed; and greatly mourned
+for by the poor man: the village Lutzelburg (Little-town), close
+by Berlin, where she had built a mansion for herself, he fondly
+named <italic> Charlottenburg <end italic> (Charlotte's-town),
+after her death, which name both House and Village still bear.
+Leibnitz found her of an almost troublesome sharpness of
+intellect; "wants to know the why even of the why," says Leibnitz.
+That is the way of female intellects when they are good; nothing
+equals their acuteness, and their rapidity is almost excessive.
+Samuel Johnson, too, had a young-lady friend once "with the
+acutest intellect I have ever known."
+
+On the whole, we may pronounce her clearly a superior woman, this
+Sophie Charlotte; notable not for her Grandson alone, though now
+pretty much forgotten by the world,--as indeed all things and
+persons have, one day or other, to be! A LIFE of her, in feeble
+watery style, and distracted arrangement, by one <italic> Erman,
+<end italic [Monsieur Erman, Historiographe de Brandebourg,
+<italic> Memoires pour servir a l'Histoire de Sophie Charlotte,
+Reine de Preusse, las dans les Seances, &c. <end italic> (1 vol.
+8vo, Berlin, 1801.)] a Berlin Frenchman, is in existence, and will
+repay a cursory perusal; curious traits of her, in still looser
+form, are also to be found in <italic> Pollnitz: <end italic>[Carl
+Ludwig Freiherr von Pollnitz, <italic> Memoiren zur Lebens- und
+Regierungs-Geschichte der vier letzten Regenten des Preussischen
+Staats <end italic> (was published in French also), 2 vols. 12mo,
+Berlin, 1791.] but for our purposes here is enough, and more
+than enough.
+
+
+
+Chapter V.
+
+KING FRIEDRICH I.
+
+The Prussian royalty is now in its twelfth year when this little
+Friedrich, who is to carry it to such a height, comes into the
+world. Old Friedrich the Grandfather achieved this dignity, after
+long and intricate negotiations, in the first year of the Century;
+16th November, 1700, his ambassador returned triumphant from
+Vienna; the Kaiser had at last consented: We are to wear a crown
+royal on the top of our periwig; the old Electorate of Brandenburg
+is to become the Kingdom of Prussia; and the Family of
+Hohenzollern, slowly mounting these many centuries, has reached
+the uppermost round of the ladder.
+
+Friedrich, the old Gentleman who now looks upon his little
+Grandson (destined to be Third King of Prussia) with such
+interest,--is not a very memorable man; but he has had his
+adventures too, his losses and his gains: and surely among the
+latter, the gain of a crown royal into his House gives him,
+if only as a chronological milestone, some place in History.
+He was son of him they call the Great Elector, Friedrich Wilhelm
+by name; of whom the Prussians speak much, in an eagerly
+celebrating manner, and whose strenuous toilsome work in this
+world, celebrated or not, is still deeply legible in the actual
+life and affairs of Germany. A man of whom we must yet find some
+opportunity to say a word. From him and a beautiful and excellent
+Princess Luise, Princess of Orange,--Dutch William, OUR Dutch
+William's aunt,--this, crooked royal Friedrich came.
+
+He was not born crooked; straight enough once, and a fine little
+boy of six months old or so; there being an elder Prince now in
+his third year, also full of hope. But in a rough journey to
+Konigsberg and back (winter of 1657, as is guessed), one of the
+many rough jolting journeys this faithful Electress made with her
+Husband, a careless or unlucky nurse, who had charge of pretty
+little Fritzchen, was not sufficiently attentive to her duties on
+the worst of roads. The ever-jolting carriage gave some bigger
+jolt, the child fell backwards in her arms; [Johann Wegfuhrer,
+<italic> Leben der Kurfurstin Luise, gebornen Prinzessin von
+Nassau-Oranien, Gemahlin Friedrich Wilhelm des Grossen <end
+italic> (Leipzig, 1838), p. 107.] did not quite break his back,
+but injured it for life:--and with his back, one may perceive,
+injured his soul and history to an almost corresponding degree.
+For the weak crooked boy, with keen and fine perceptions, and an
+inadequate case to put them in, grew up with too thin a skin:--
+that may be considered as the summary of his misfortunes; and, on
+the whole, there is no other heavy sin to be charged against him.
+
+He had other loads laid upon him, poor youth: his kind pious
+Mother died, his elder Brother died, he at the age of seventeen
+saw himself Heir-Apparent;--and had got a Stepmother with new
+heirs, if he should disappear. Sorrows enough in that one fact,
+with the venomous whisperings, commentaries and suspicions,
+which a Court population, female and male, in little Berlin Town,
+can contrive to tack to it. Does not the new Sovereign Lady,
+in her heart, wish YOU were dead, my Prince? Hope it perhaps?
+Health, at any rate, weak; and, by the aid of a little pharmacy--
+ye Heavens!
+
+Such suspicions are now understood to have had no basis except in
+the waste brains of courtier men and women; but their existence
+there can become tragical enough. Add to which, the Great Elector,
+like all the Hohenzollerns, was a choleric man; capable of blazing
+into volcanic explosions, when affronted by idle masses of cobwebs
+in the midst of his serious businesses! It is certain, the young
+Prince Friedrich had at one time got into quite high, shrill and
+mutually minatory terms with his Stepmother; so that once, after
+some such shrill dialogue between them, ending with "You shall
+repent this, Sir!"--he found it good to fly off in the night, with
+only his Tutor or Secretary and a valet, to Hessen-Cassel to an
+Aunt; who stoutly protected him in this emergency; and whose
+Daughter, after the difficult readjustment of matters, became his
+Wife, but did not live long. And it is farther certain the same
+Prince, during this his first wedded time, dining one day with his
+Stepmother, was taken suddenly ill. Felt ill, after his cup of
+coffee; retired into another room in violent spasms, evidently in
+an alarming state, and secretly in a most alarmed one: his Tutor
+or Secretary, one Dankelmann, attended him thither; and as the
+Doctor took some time to arrive, and the symptoms were instant and
+urgent, Secretary Dankelmann produced "from a pocket-book some
+drug of his own, or of the Hessen-Cassel Aunt," emetic I suppose,
+and gave it to the poor Prince;--who said often, and felt ever
+after, with or without notion of poison, That Dankelmann had saved
+his life. In consequence of which adventure he again quitted Court
+without leave; and begged to be permitted to remain safe in the
+country, if Papa would be so good. [Pollnitz, <italic> Memoiren,
+<end italic> i. 191-198.]
+
+Fancy the Great Elector's humor on such an occurrence; and what a
+furtherance to him in his heavy continual labors, and strenuous
+swimming for life, these beautiful humors and transactions must
+have been! A crook-backed boy, dear to the Great Elector, pukes,
+one afternoon; and there arises such an opening of the Nether
+Floodgates of this Universe; in and round your poor workshop,
+nothing but sudden darkness, smell of sulphur; hissing of forked
+serpents here, and the universal alleleu of female hysterics
+there;--to help a man forward with his work! O reader, we will
+pity the crowned head, as well as the hatted and even hatless one.
+Human creatures will not GO quite accurately together, any more
+than clocks will; and when their dissonance once rises fairly
+high, and they cannot readily kill one another, any Great Elector
+who is third party will have a terrible time of it.
+
+Electress Dorothee, the Stepmother, was herself somewhat of a hard
+lady; not easy to live with, though so far above poisoning as to
+have "despised even the suspicion of it." She was much given to
+practical economics, dairy-farming, market-gardening, and
+industrial and commercial operations such as offered; and was
+thought to be a very strict reckoner of money. She founded the
+<italic> Dorotheenstadt, <end italic> now oftener called the
+<italic> Neustadt, <end italic> chief quarter of Berlin; and
+planted, just about the time of this unlucky dinner, "A.D. 1680
+or so," [Nicolai, <italic> Beschreibung der koniglichen
+Residenzstadte Berlin und Potsdam <end italic> (Berlin, 1786),
+i. 172.] the first of the celebrated Lindens, which (or the
+successors of which, in a stunted ambition) are still growing
+there. <italic> Unter-den-Linden: <end italic> it is now the
+gayest quarter of Berlin, full of really fine edifices: it was
+then a sandy outskirt of Electress Dorothee's dairy-farm; good for
+nothing but building upon, thought Electress Dorothee. She did
+much dairy-and-vegetable trade on the great scale;--was thought
+even to have, underhand, a commercial interest in the principal
+Beer-house of the city? [Horn, <italic> Leben Friedrich Wilhelms
+des Grossen Kurfursten von Brandenburg <end italic> (Berlin,
+1814).] People did not love her: to the Great Elector, who guided
+with a steady bridle-hand, she complied not amiss; though in him
+too there rose sad recollections and comparisons now and then: but
+with a Stepson of unsteady nerves it became evident to him there
+could never be soft neighborhood. Prince Friedrich and his Father
+came gradually to some understanding, tacit or express, on that
+sad matter; Prince Friedrich was allowed to live, on his separate
+allowance, mainly remote from Court. Which he did, for perhaps six
+or eight years, till the Great Elector's death; henceforth in a
+peaceful manner, or at least without open explosions.
+
+His young Hessen-Cassel Wife died suddenly in 1683; and again
+there was mad rumor of poisoning; which Electress Dorothee
+disregarded as below her, and of no consequence to her, and
+attended to industrial operations that would pay. That poor young
+Wife, when dying, exacted a promise from Prince Friedrich that he
+would not wed again, but be content with the Daughter she had left
+him: which promise, if ever seriously given, could not be kept,
+as we have seen. Prince Friedrich brought his Sophie Charlotte
+home about fifteen months after. With the Stepmother and with the
+Court there was armed neutrality under tolerable forms, and no
+open explosion farther.
+
+In a secret way, however, there continued to be difficulties.
+And such difficulties had already been, that the poor young man,
+not yet come to his Heritages, and having, with probably some turn
+for expense, a covetous unamiable Stepmother, had fallen into the
+usual difficulties; and taken the methods too usual. Namely, had
+given ear to the Austrian Court, which offered him assistance,--
+somewhat as an aged Jew will to a young Christian gentleman in
+quarrel with papa,--upon condition of his signing a certain bond:
+bond which much surprised Prince Friedrich when he came to
+understand it! Of which we shall hear more, and even much more,
+in the course of time!--
+
+Neither after his accession (year 1688; his Cousin Dutch William,
+of the glorious and immortal memory, just lifting anchor towards
+these shores) was the new Elector's life an easy one. We may say,
+it was replete with troubles rather; and unhappily not so much
+with great troubles, which could call forth antagonistic greatness
+of mind or of result, as with never-ending shoals of small
+troubles, the antagonism to which is apt to become itself of
+smallish character. Do not search into his history; you will
+remember almost nothing of it (I hope) after never so many
+readings! Garrulous Pollnitz and others have written enough about
+him; but it all runs off from you again, as a thing that has no
+affinity with the human skin. He had a court <italic> "rempli
+d'intrigues, <end italic> full of never-ending cabals," [Forster,
+i. 74 (quoting <italic> Memoires du Comte de Dohna); <end italic>
+&c. &c.]--about what?
+
+One question only are we a little interested in: How he came by
+the Kingship? How did the like of him contrive to achieve
+Kingship? We may answer: It was not he that achieved it; it was
+those that went before him, who had gradually got it,--as is very
+usual in such cases. All that he did was to knock at the gate (the
+Kaiser's gate and the world's), and ask, "IS it achieved, then?"
+Is Brandenburg grown ripe for having a crown? Will it be needful
+for you to grant Brandenburg a crown? Which question, after
+knocking as loud as possible, they at last took the trouble to
+answer, "Yes, it will be needful."--
+
+Elector Friedrich's turn for ostentation--or as we may interpret
+it, the high spirit of a Hohenzollern working through weak nerves
+and a crooked back--had early set him a-thinking of the Kingship;
+and no doubt, the exaltation of rival Saxony, which had attained
+that envied dignity (in a very unenviable manner, in the person of
+Elector August made King of Poland) in 1697, operated as a new
+spur on his activities. Then also Duke Ernst of Hanover, his
+father-in-law, was struggling to become Elector Ernst; Hanover to
+be the Ninth Electorate, which it actually attained in 1698;
+not to speak of England, and quite endless prospects there for
+Ernst and Hanover. These my lucky neighbors are all rising;
+all this the Kaiser has granted to my lucky neighbors: why is
+there no promotion he should grant me, among them!--
+
+Elector Friedrich had 30,000 excellent troops; Kaiser Leopold,
+the "little man in red stockings," had no end of Wars. Wars in
+Turkey, wars in Italy; all Dutch William's wars and more, on our
+side of Europe;--and here is a Spanish-Succession War, coming
+dubiously on, which may prove greater than all the rest together.
+Elector Friedrich sometimes in his own high person (a courageous
+and high though thin-skinned man), otherwise by skilful deputy,
+had done the Kaiser service, often signal service, in all these
+wars; and was never wanting in the time of need, in the post of
+difficulty with those famed Prussian Troops of his. A loyal
+gallant Elector this, it must be owned; capable withal of doing
+signal damage if we irritated him too far! Why not give him this
+promotion; since it costs us absolutely nothing real, not even the
+price of a yard of ribbon with metal cross at the end of it?
+Kaiser Leopold himself, it is said, had no particular objection;
+but certain of his ministers had; and the little man in red
+stockings--much occupied in hunting, for one thing--let them
+have their way, at the risk of angering Elector Friedrich.
+Even Dutch William, anxious for it, in sight of the future,
+had not yet prevailed.
+
+The negotiation had lasted some seven years, without result.
+There is no doubt but the Succession War, and Marlborough, would
+have brought it to a happy issue: in the mean while, it is said to
+have succeeded at last, somewhat on the sudden, by a kind of
+accident. This is the curious mythical account; incorrect in some
+unessential particulars, but in the main and singular part of it
+well-founded. Elector Friedrich, according to Pollnitz and others,
+after failing in many methods, had sent 100,000 <italic> thalers
+<end italic> (say 15,000 pounds) to give, by way of--bribe we must
+call it,--to the chief opposing Hofrath at Vienna. The money was
+offered, accordingly; and was refused by the opposing Hofrath:
+upon which the Brandenburg Ambassador wrote that it was all labor
+lost; and even hurried off homewards in despair, leaving a
+Secretary in his place. The Brandenburg Court, nothing despairing,
+orders in the mean while, Try another with it,--some other
+Hofrath, whose name they wrote in cipher, which the blundering
+Secretary took to mean no Hofrath, but the Kaiser's Confessor and
+Chief Jesuit, Pater Wolf. To him accordingly he hastened with the
+cash, to him with the respectful Electoral request; who received
+both, it is said, especially the 15,000 pounds, with a <italic>
+Gloria in excelsis; <end italic> and went forthwith and persuaded
+the Kaiser. [Pollnitz, <italic> Memoiren, <end italic> i. 310.]--
+Now here is the inexactitude, say Modern Doctors of History;
+an error no less than threefold. 1. Elector Friedrich was indeed
+advised, in cipher, by his agent at Vienna, to write in person
+to--"Who is that cipher, then?" asks Elector Friedrich, rather
+puzzled. At Vienna that cipher was meant for the Kaiser; but at
+Berlin they take it for Pater Wolf; and write accordingly, and are
+answered with readiness and animation. 2. Pater Wolf was not
+official Confessor, but was a Jesuit in extreme favor with the
+Kaiser, and by birth a nobleman, sensible to human decorations.
+3. He accepted no bribe, nor was any sent; his bribe was the
+pleasure of obliging a high gentleman who condescended to ask,
+and possibly the hope of smoothing roads for St. Ignatius and the
+Black Militia, in time coming. And THUS at last, and not otherwise
+than thus, say exact Doctors, did Pater Wolf do the thing.
+[G. A. H. Stenzel, <italic> Geschichte des Preussischen Staats
+<end italic> (Hamburg, 1841), iii. 104 <italic> (Berliner
+Monatschrift, <end italic> year 1799); &c.] Or might not the
+actual death of poor King Carlos II. at Madrid, 1st November,
+1700, for whose heritages all the world stood watching with swords
+half drawn, considerably assist Pater Wolf? Done sure enough the
+thing was; and before November ended, Friedrich's messenger
+returned with "Yes" for answer, and a Treaty signed on the 16th of
+that month. [Pollnitz (i. 318) gives the Treaty (date corrected by
+his Editor, ii.589).]
+
+To the huge joy of Elector Friedrich and his Court, almost the
+very nation thinking itself glad. Which joyful Potentate decided
+to set out straightway and have the coronation done; though it was
+midwinter; and Konigsberg (for Prussia is to be our title, "King
+in Prussia," and Konigsberg is Capital City there) lies 450 miles
+off, through tangled shaggy forests, boggy wildernesses, and in
+many parts only corduroy roads. We order "30,000 post-horses,"
+besides all our own large stud, to be got ready at the various
+stations: our boy Friedrich Wilhelm, rugged boy of twelve, rough
+and brisk, yet much "given to blush" withal (which is a feature of
+him), shall go with us; much more, Sophie Charlotte our august
+Electress-Queen that is to be: and we set out, on the 17th of
+December, 1700, last year of the Century; "in 1800 carriages:"
+such a cavalcade as never crossed those wintry wildernesses
+before. Friedrich Wilhelm went in the third division of carriages
+(for 1800 of them could not go quite together); our noble Sophie
+Charlotte in the second; a Margraf of Brandenburg-Schwedt, chief
+Margraf, our eldest Half-Brother, Dorothee's eldest Son, sitting
+on the coach-box, in correct insignia, as similitude of Driver.
+So strict are we in etiquette; etiquette indeed being now upon its
+apotheosis, and after such efforts. Six or seven years of efforts
+on Elector Friedrich's part; and six or seven hundred years,
+unconsciously, on that of his ancestors.
+
+The magnificence of Friedrich's processionings into Konigsberg,
+and through it or in it, to be crowned, and of his coronation
+ceremonials there: what pen can describe it, what pen need!
+Folio volumes with copper-plates have been written on it;
+and are not yet all pasted in bandboxes, or slit into spills.
+[British Museum, short of very many necessary Books on this
+subject, offers the due Coronation Folio, with its prints,
+upholstery catalogues, and official harangues upon nothing,
+to ingenuous human curiosity.] "The diamond buttons of his
+Majesty's coat [snuff-colored or purple, I cannot recollect] cost
+1,500 pounds apiece;" by this one feature judge what an expensive
+Herr. Streets were hung with cloth, carpeted with cloth, no end of
+draperies and cloth; your oppressed imagination feels as if there
+was cloth enough, of scarlet and other bright colors, to thatch
+the Arctic Zone. With illuminations, cannon-salvos, fountains
+running wine. Friedrich had made two Bishops for the nonce.
+Two of his natural Church-Superintendents made into Quasi-Bishops,
+on the Anglican model,--which was always a favorite with him,
+and a pious wish of his;--but they remained mere cut branches,
+these two, and did not, after their haranguing and anointing
+functions, take root in the country. He himself put the crown on
+his head: "King here in my own right, after all!"--and looked his
+royalest, we may fancy; the kind eyes of him almost partly fierce
+for moments, and "the cheerfulness of pride" well blending with
+something of awful.
+
+In all which sublimities, the one thing that remains for human
+memory is not in these Folios at all, but is considered to be a
+fact not the less: Electress Charlotte's, now Queen Charlotte's,
+very strange conduct on the occasion. For she cared not much about
+crowns, or upholstery magnificences of any kind; but had meditated
+from of old on the infinitely little; and under these
+genuflections, risings, sittings, shiftings, grimacings on all
+parts, and the endless droning eloquence of Bishops invoking
+Heaven, her ennui, not ill-humored or offensively ostensible,
+was heartfelt and transcendent. At one turn of the proceedings,
+Bishop This and Chancellor That droning their empty
+grandiloquences at discretion, Sophie Charlotte was distinctly
+seen to smuggle out her snuff-box, being addicted to that rakish
+practice, and fairly solace herself with a delicate little pinch
+of snuff. Rasped tobacco, <italic> tabac rape, <end italic> called
+by mortals <italic> rape <end italic> or rappee: there is no doubt
+about it; and the new King himself noticed her, and hurled back a
+look of due fulminancy, which could not help the matter, and was
+only lost in air. A memorable little action, and almost symbolic
+in the first Prussian Coronation. "Yes, we are Kings, and are got
+SO near the stars, not nearer; and you invoke the gods, in that
+tremendously long-winded manner; and I--Heavens, I have my snuff-
+box by me, at least!" Thou wearied patient Heroine; cognizant of
+the infinitely little!--This symbolic pinch of snuff is fragrant
+all along in Prussian History. A fragrancy of humble verity in the
+middle of all royal or other ostentations; inexorable, quiet
+protest against cant, done with such simplicity: Sophie
+Charlotte's symbolic pinch of snuff. She was always considered
+something of a Republican Queen.
+
+Thus Brandenburg Electorate has become Kingdom of Prussia;
+and the Hohenzollerns have put a crown upon their head.
+Of Brandenburg, what it was, and what Prussia was; and of the
+Hohenzollerns and what they were, and how they rose thither, a few
+details, to such as are dark about these matters, cannot well be
+dispensed with here.
+
+
+END OF BOOK I
+
+
+
+
+
+End of Project Gutenberg's Etext History of Friedrich II of Prussia V 1
+
+

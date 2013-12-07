@@ -1,0 +1,3750 @@
+The Project Gutenberg EBook of The Blunderer, by Moliere
+#11 in our series by Moliere
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: The Blunderer
+
+Author: Moliere
+
+Release Date: September, 2004 [EBook #6563]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on December 28, 2002]
+
+Edition: 10
+
+Language: English
+
+Character set encoding: ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK THE BLUNDERER ***
+
+
+
+
+Produced by David Moynihan, D Garcia, Charles Franks
+and the Online Distributed Proofreading Team.
+
+
+
+
+L'ETOURDI, OU LES CONTRE-TEMPS.
+
+COMEDIE.
+
+THE BLUNDERER: OR, THE COUNTERPLOTS.
+
+A COMEDY IN FIVE ACTS.
+
+(_THE ORIGINAL IN VERSE_.)
+
+1653. (?)
+
+
+
+
+INTRODUCTORY NOTICE.
+
+
+_The Blunderer_ is generally believed to have been first acted at
+Lyons in 1653, whilst Moliere and his troupe were in the provinces. In
+the month of November 1658 it was played for the first time in Paris,
+where it obtained a great and well-deserved success. It is chiefly based
+on an Italian comedy, written by Nicolo Barbieri, known as Beltrame, and
+called _L'Inavvertito_, from which the character of Mascarille, the
+servant, is taken, but differs in the ending, which is superior in the
+Italian play. An imitation of the classical boasting soldier, Captain
+Bellorofonte, Martelione, and a great number of _concetti_, have
+also not been copied by Moliere. The fourth scene of the fourth act of
+_l'Etourdi_ contains some passages taken from the _Angelica_,
+a comedy by Fabritio de Fornaris, a Neapolitan, who calls himself on the
+title-page of his play "il Capitano Coccodrillo, comico confidente." A
+few remarks are borrowed from _la Emilia_, a comedy by Luigi
+Grotto, whilst here and there we find a reminiscence from Plautus, and
+one scene, possibly suggested by the sixteenth of the _Contes et
+Discours d'Eutrapel_, written by Noeel du Fail, Lord of la Herissaye.
+Some of the scenes remind us of passages in several Italian _Commedia
+del' arte_ between _Arlecchino_ and _Pantaleone_ the
+personifications of impudence and ingenuity, as opposed to meekness and
+stupidity; they rouse the hilarity of the spectators, who laugh at the
+ready invention of the knave as well as at the gullibility of the old
+man, Before this comedy appeared the French stage was chiefly filled
+with plays full of intrigue, but with scarcely any attempt to delineate
+character or manners. In this piece the plot is carried on, partly in
+imitation of the Spanish taste, by a servant, Mascarille, who is the
+first original personage Moliere has created; he is not a mere imitation
+of the valets of the Italian or classical comedy; he has not the
+coarseness and base feelings of the servants of his contemporaries, but
+he is a lineal descendant of Villon, a free and easy fellow, not over
+nice in the choice or execution of his plans, but inventing new ones
+after each failure, simply to keep in his hand; not too valiant, except
+perhaps when in his cups, rather jovial and chaffy, making fun of
+himself and everybody else besides, no respecter of persons or things,
+and doomed probably not to die in his bed. Moliere must have encountered
+many such a man whilst the wars of the Fronde were raging, during his
+perigrinations in the provinces. Even at the present time, a Mascarille
+is no impossibility; for, "like master like man." There are also in
+_The Blunderer_ too many incidents, which take place successively,
+without necessarily arising one from another. Some of the characters are
+not distinctly brought out, the style has often been found fault with,
+by Voltaire and other competent judges, [Footnote: Victor Hugo appears
+to be of another opinion. M. Paul Stapfer, in his _les Artistes juges
+et parties_ (2nd Causerie, the Grammarian of Hauteville House, p. 55),
+states:--"the opinion of Victor Hugo about Moliere is very peculiar.
+According to him, the best written of all the plays of our great comic
+author is his first work, _l'Etourdi_. It possesses a brilliancy
+and freshness of style which still shine in _le Depit amoureux_,
+but which gradually fade, because Moliere, yielding unfortunately to
+other inspirations than his own, enters more and more upon a new way."]
+but these defects are partly covered by a variety and vivacity which are
+only fully displayed when heard on the stage.
+
+In the third volume of the "Select Comedies of M. de Moliere, London,
+1732." _The Blunderer_ is dedicated to the Right Honorable Philip,
+Earl of Chesterfield, in the following words:--
+
+"MY LORD,--The translation of _L'Etourdi_, which, in company with
+the original, throws itself at your lordship's feet, is a part of a
+design form'd by some gentlemen, of exhibiting to the public a _Select
+Collection of Moliere's Plays_, in _French_ and _English_.
+This author, my lord, was truly a genius, caress'd by the greatest men
+of his own time, and honoured with the patronage of princes. When the
+translator, therefore, of this piece was to introduce him in an
+_English_ dress in justice he owed him an _English_ patron,
+and was readily determined to your lordship, whom all the world allows
+to be a genius of the first rank. But he is too sensible of the beauties
+of his author, and the refined taste your lordship is universally known
+to have in polite literature, to plead anything but your candour and
+goodness, for your acceptance of this performance. He persuades himself
+that your lordship, who best knows how difficult it is to speak like
+_Moliere_, even when we have his sentiments to inspire us, will be
+readiest to forgive the imperfections of this attempt. He is the rather
+encouraged, my lord, to hope for a candid reception from your lordship,
+on account of the usefulness of this design, which he flatters himself
+will have your approbation. 'Tis to spirit greater numbers of our
+countrymen to read this author, who wou'd otherwise not have attempted
+it, or, being foil'd in their attempts, wou'd throw him by in despair.
+And however generally the _French_ language may be read, or spoke
+in England, there will be still very great numbers, even of those who
+are said to understand _French_, who, to master this comic writer,
+will want the help of a translation; and glad wou'd the publishers of
+this work be to guide the feebler steps of some such persons, not only
+till they should want no translation, but till some of them should be
+able to make a much better than the present. The great advantage of
+understanding _Moliere_ your Lordship best knows. What is it, but
+almost to understand mankind? He has shown such a compass of knowledge
+in human nature, as scarce to leave it in the power of succeeding
+writers in comedy to be originals; whence it has, in fact, appear'd,
+that they who, since his time, have most excelled in the _Comic_
+way, have copied _Moliere_, and therein were sure of copying
+nature. In this author, my lord, our youth will find the strongest
+sense, the purest moral, and the keenest satyr, accompany'd with the
+utmost politeness; so that our countrymen may take a _French_
+polish, without danger of commencing fops and apes, as they sometimes do
+by an affectation of the dress and manners of that people; for no man
+has better pourtray'd, or in a finer manner expos'd fopperies of all
+kinds, than this our author hath, in one or other of his pieces. And
+now,'tis not doubted, my lord, but your lordship is under some
+apprehensions, and the reader under some expectation, that the
+translator should attempt your character, in right of a dedicator, as a
+refin'd wit, and consummate statesman. But, my lord, speaking the truth
+to a person of your lordship's accomplishments, would have the
+appearance of flattery, especially to those who have not the honour of
+knowing you; and those who have, conceive greater ideas of you than the
+translator will pretend to express. Permit him, then, my lord, to crave
+your lordship's acceptance of this piece, which appears to you with a
+fair and correct copy of the original; but with a translation which can
+be of no manner of consequence to your lordship, only as it may be of
+consequence to those who _would_ understand Moliere if they
+_could_. Your lordship's countenance to recommend it to such will
+infinitely oblige, my lord, your lordship's most devoted, and most
+obedient, humble servant, THE TRANSLATOR."
+
+To recommend to Lord Chesterfield an author on account of "the purest
+moral," or because "no man has ... in a finer manner exposed fopperies
+of all kinds," appears to us now a bitter piece of satire; it may
+however, be doubted if it seemed so to his contemporaries. [Footnote:
+Lord Chesterfield appeared not so black to those who lived in his own
+time as he does to us, for Bishop Warburton dedicated to him his
+_Necessity and Equity of an Established Religion and a Test-Law
+Demonstrated_, and says in his preface: "It is an uncommon happiness
+when an honest man can congratulate a patriot on his becoming minister,"
+and expresses the hope, that "the temper of the times will suffer your
+Lordship to be instrumental in saving your country by a reformation of
+the general manners."]
+
+Dryden has imitated _The Blunderer_ in _Sir Martin Mar-all; or
+the Feigned Innocence_, first translated by William Cavendish, Duke
+of Newcastle, and afterwards adapted for the stage by "glorious John."
+It must have been very successful, for it ran no less than thirty-three
+nights, and was four times acted at court. It was performed at Lincoln's
+Inn Fields by the Duke of York's servants, probably at the desire of the
+Duke of Newcastle, as Dryden was engaged to write for the King's
+Company. It seems to have been acted in 1667, and was published, without
+the author's name, in 1668. But it cannot be fairly called a
+translation, for Dryden has made several alterations, generally not for
+the better, and changed _double entendres_ into single ones. The
+heroine in the English play, Mrs. Millisent, (Celia), marries the
+roguish servant, Warner (Mascarille), who takes all his master's
+blunders upon himself, is bribed by nearly everybody, pockets insults
+and money with the same equanimity, and when married, is at last proved
+a gentleman, by the disgusting Lord Dartmouth, who "cannot refuse to own
+him for my (his) kinsman." With a fine stroke of irony Millisent's
+father becomes reconciled to his daughter having married a serving-man
+as soon as he hears that the latter has an estate of eight hundred a
+year. Sir Martin Mar-all is far more conceited and foolish than Lelio;
+Trufaldin becomes Mr. Moody, a swashbuckler; a compound of Leander and
+Andres, Sir John Swallow, a Kentish knight; whilst of the filthy
+characters of Lord Dartmouth, Lady Dupe, Mrs. Christian, and Mrs.
+Preparation, no counterparts are found in Moliere's play. But the scene
+in which Warner plays the lute, whilst his master pretends to do so, and
+which is at last discovered by Sir Martin continuing to play after the
+servant has finished, is very clever. [Footnote: According to Geneste,
+_Some Accounts of the English Stage_, 10 vols., 1832, vol. i., p.
+76, Bishop Warburton, in his _Alliance of Church and State_ (the
+same work is mentioned in Note 2), and Porson in his _Letters to
+Travis_ alludes to this scene.] Dryden is also said to have consulted
+_l'Amant indiscret_ of Quinault, in order to furbish forth the Duke
+of Newcastle's labours. Sir Walter Scott states in his introduction: "in
+that part of the play, which occasions its second title of 'the feigned
+Innocence,' the reader will hardly find wit enough to counterbalance the
+want of delicacy." Murphy has borrowed from _The Blunderer_ some
+incidents of the second act of his _School for Guardians_, played
+for the first time in 1767.
+
+
+
+
+DRAMATIS PERSONAE
+
+[Footnote: Moliere, Racine, and Corneille always call the dramatis
+personae _acteurs_, and not _personnages_.]
+
+LELIO, _son to_ PANDOLPHUS.
+
+LEANDER, _a young gentleman of good birth_.
+
+ANSELMO, _an old man_.
+
+PANDOLPHUS, _an old man_.
+
+TRUFALDIN, _an old man_.
+
+ANDRES, _a supposed gipsy_.
+
+MASCARILLE, _servant to Lelio_.
+
+[Footnote: _Mascarille_ is a name invented by Moliere, and a
+diminutive of the Spanish _mascara_, a mask. Some commentators of
+Moliere think that the author, who acted this part, may sometimes have
+played it in a mask, but this is now generally contradicted. He seems,
+however, to have performed it habitually, for after his death there was
+taken an inventory of all his dresses, and amongst these, according to
+M. Eudore Soulie, _Recherches sur Moliere_, 1863, p. 278, was:
+"a ... dress for _l'Etourdi_, consisting in doublet, knee-breeches,
+and cloak of satin." Before his time the usual name of the intriguing
+man-servant was _Philipin_.]
+
+ERGASTE, _a servant_.
+
+A MESSENGER.
+
+_Two Troops of Masqueraders_.
+
+CELIA, _slave to_ TRUFALDIN.
+
+HIPPOLYTA, _daughter to_ ANSELMO.
+
+_Scene_.--MESSINA.
+
+
+
+
+THE BLUNDERER: OR, THE COUNTERPLOTS.
+
+(_L'ETOURDI, ou LES CONTRE-TEMPS_.)
+
+
+
+
+ACT I.
+
+
+
+
+SCENE I.--LELIO, _alone_.
+
+
+LEL. Very well! Leander, very well! we must quarrel then,--we shall see
+which of us two will gain the day; and which, in our mutual pursuit
+after this young miracle of beauty, will thwart the most his rival's
+addresses. Do whatever you can, defend yourself well, for depend upon
+it, on my side no pains shall be spared.
+
+
+
+
+SCENE II.--LELIO, MASCARILLE.
+
+
+LEL. Ah! Mascarille!
+
+MASC. What's the matter?
+
+LEL. A great deal is the matter. Everything crosses my love. Leander is
+enamoured of Celia. The Fates have willed it, that though I have changed
+the object of my passion, he still remains my rival.
+
+MASC. Leander enamoured of Celia!
+
+LEL. He adores her, I tell you.
+
+[Footnote: In French, _tu, toi_, thee, thou, denote either social
+superiority or familiarity. The same phraseology was also employed in
+many English comedies of that time, but sounds so stiff at present, that
+the translator has everywhere used "you."]
+
+MASC. So much the worse.
+
+LEL. Yes, so much the worse, and that's what annoys me. However, I
+should be wrong to despair, for since you aid me, I ought to take
+courage. I know that your mind can plan many intrigues, and never finds
+anything too difficult; that you should be called the prince of
+servants, and that throughout the whole world....
+
+MASC. A truce to these compliments; when people have need of us poor
+servants, we are darlings, and incomparable creatures; but at other
+times, at the least fit of anger, we are scoundrels, and ought to be
+soundly thrashed.
+
+LEL. Nay, upon my word, you wrong me by this remark. But let us talk a
+little about the captive. Tell me, is there a heart so cruel, so
+unfeeling, as to be proof against such charming features? For my part,
+in her conversation as well as in her countenance, I see evidence of her
+noble birth. I believe that Heaven has concealed a lofty origin beneath
+such a lowly station.
+
+MASC. You are very romantic with all your fancies. But what will
+Pandolphus do in this case? He is your father, at least he says so. You
+know very well that his bile is pretty often stirred up; that he can
+rage against you finely, when your behaviour offends him. He is now in
+treaty with Anselmo about your marriage with his daughter, Hippolyta;
+imagining that it is marriage alone that mayhap can steady you: now,
+should he discover that you reject his choice, and that you entertain a
+passion for a person nobody knows anything about; that the fatal power
+of this foolish love causes you to forget your duty and disobey him;
+Heaven knows what a storm will then burst forth, and what fine lectures
+you will be treated to.
+
+LEL. A truce, I pray, to your rhetoric.
+
+MASC. Rather a truce to your manner of loving, it is none of the best,
+and you ought to endeavour.
+
+LEL. Don't you know, that nothing is gained by making me angry, that
+remonstrances are badly rewarded by me, and that a servant who counsels
+me acts against his own interest?
+
+MASC. (_Aside_). He is in a passion now. (_Aloud_). All that I
+said was but in jest, and to try you. Do I look so very much like a
+censor, and is Mascarille an enemy to pleasure? You know the contrary,
+and that it is only too certain people can tax me with nothing but being
+too good-natured. Laugh at the preachings of an old grey-beard of a
+father; go on, I tell you, and mind them not. Upon my word, I am of
+opinion that these old, effete and grumpy libertines come to stupify us
+with their silly stories, and being virtuous, out of necessity, hope
+through sheer envy to deprive young people of all the pleasures of life!
+You know my talents; I am at your service.
+
+LEL. Now, this is talking in a manner I like. Moreover, when I first
+declared my passion, it was not ill received by the lovely object who
+inspired it; but, just now, Leander has declared to me that he is
+preparing to deprive me of Celia; therefore let us make haste; ransack
+your brain for the speediest means to secure me possession of her; plan
+any tricks, stratagems, rogueries, inventions, to frustrate my rival's
+pretensions.
+
+MASC. Let me think a little upon this matter. (_Aside_). What can I
+invent upon this urgent occasion?
+
+LEL. Well, the stratagem?
+
+MASC. What a hurry you are in! My brain must always move slowly. I have
+found what you want; you must... No, that's not it; but if you would
+go...
+
+LEL. Whither?
+
+MASC. No, that's a flimsy trick. I thought that...
+
+LEL. What is it?
+
+MASC. That will not do either. But could you not...?
+
+LEL. Could I not what?
+
+MASC. No, you could not do anything. Speak to Anselmo.
+
+LEL. And what can I say to him?
+
+MASC. That is true; that would be falling out of the frying-pan into the
+fire. Something must be done however. Go to Trufaldin.
+
+LEL. What to do?
+
+MASC. I don't know.
+
+LEL. Zounds! this is too much. You drive me mad with this idle talk.
+
+MASC. Sir, if you could lay your hand on plenty of pistoles, [Footnote:
+The pistole is a Spanish gold coin worth about four dollars; formerly
+the French pistole was worth in France ten _livres_--about ten
+francs--they were struck in Franche-Comte.] we should have no need now
+to think of and try to find out what means we must employ in compassing
+our wishes; we might, by purchasing this slave quickly, prevent your
+rival from forestalling and thwarting you. Trufaldin, who takes charge
+of her, is rather uneasy about these gipsies, who placed her with him.
+If he could get back his money, which they have made him wait for too
+long, I am quite sure he would be delighted to sell her; for he always
+lived like the veriest curmudgeon; he would allow himself to be whipped
+for the smallest coin of the realm. Money is the God he worships above
+everything, but the worst of it is that...
+
+LEL. What is the worst of it?...
+
+MASC. That your father is just as covetous an old hunk, who does not
+allow you to handle his ducats, as you would like; that there is no way
+by which we could now open ever so small a purse, in order to help you.
+But let us endeavour to speak to Celia for a moment, to know what she
+thinks about this affair; this is her window.
+
+LEL. But Trufaldin watches her closely night and day; Take care.
+
+MASC. Let us keep quiet in this corner. What luck! Here she is coming
+just in the nick of time.
+
+
+
+
+SCENE III.--CELIA, LELIO, MASCARILLE.
+
+
+LEL. Ah! madam, what obligations do I owe to Heaven for allowing me to
+behold those celestial charms you are blest with! Whatever sufferings
+your eyes may have caused me, I cannot but take delight in gazing on
+them in this place.
+
+CEL. My heart, which has good reason to be astonished at your speech,
+does not wish my eyes to injure any one; if they have offended you in
+anything, I can assure you I did not intend it.
+
+LEL. Oh! no, their glances are too pleasing to do me an injury. I count
+it my chief glory to cherish the wounds they give me; and...
+
+MASC. You are soaring rather too high; this style is by no means what we
+want now; let us make better use of our time; let us know of her quickly
+what...
+
+TRUF. (_Within_). Celia!
+
+MASC. (_To Lelio_). Well, what do you think now?
+
+LEL. O cruel mischance! What business has this wretched old man to
+interrupt us!
+
+MASC. Go, withdraw, I'll find something to say to him.
+
+
+
+
+SCENE IV.--TRUFALDIN, CELIA, MASCARILLE, _and_ LELIO _in a
+corner_.
+
+
+TRUF. (_To Celia_). What are you doing out of doors? And what
+induces you to go out,--you, whom I have forbidden to speak to any one?
+
+CEL. I was formerly acquainted with this respectable young man; you have
+no occasion to be suspicious of him.
+
+MASC. Is this Signor Trufaldin?
+
+CEL. Yes, it is himself.
+
+MASC. Sir, I am wholly yours; it gives me extreme pleasure to have this
+opportunity of paying my most humble respects to a gentleman who is
+everywhere so highly spoken of.
+
+TRUF. Your most humble servant.
+
+MASC. Perhaps I am troublesome, but I have been acquainted with this
+young woman elsewhere; and as I heard about the great skill she has in
+predicting the future, I wished to consult her about a certain affair.
+
+TRUF. What! Do you dabble in the black art?
+
+CEL. No, sir, my skill lies entirely in the white.
+
+[Footnote: The white art (_magie blanche_) only dealt with
+beneficent spirits, and wished to do good to mankind; the black art
+(_magie noire_) invoked evil spirits.]
+
+MASC. The case is this. The master whom I serve languishes for a fair
+lady who has captivated him. He would gladly disclose the passion which
+burns within him to the beauteous object whom he adores, but a dragon
+that guards this rare treasure, in spite of all his attempts, has
+hitherto prevented him. And what torments him still more and makes him
+miserable, is that he has just discovered a formidable rival; so that I
+have come to consult you to know whether his love is likely to meet with
+any success, being well assured that from your mouth I may learn truly
+the secret which concerns us.
+
+CEL. Under what planet was your master born?
+
+MASC. Under that planet which never alters his love.
+
+CEL. Without asking you to name the object he sighs for, the science
+which I possess gives me sufficient information. This young woman is
+high-spirited, and knows how to preserve a noble pride in the midst of
+adversity; she is not inclined to declare too freely the secret
+sentiments of her heart. But I know them as well as herself, and am
+going with a more composed mind to unfold them all to you, in a few
+words.
+
+MASC. O wonderful power of magic virtue!
+
+CEL. If your master is really constant in his affections, and if virtue
+alone prompts him, let him be under no apprehension of sighing in vain:
+he has reason to hope, the fortress he wishes to take is not averse to
+capitulation, but rather inclined to surrender.
+
+MASC. That's something, but then the fortress depends upon a governor
+whom it is hard to gain over.
+
+CEL. There lies the difficulty.
+
+MASC. (_Aside, looking at Lelio_). The deuce take this troublesome
+fellow, who is always watching us.
+
+CEL. I am going to teach you what you ought to do.
+
+LEL. (_Joining them_). Mr. Trufaldin, give yourself no farther
+uneasiness; it was purely in obedience to my orders that this trusty
+servant came to visit you; I dispatched him to offer you my services,
+and to speak to you concerning this young lady, whose liberty I am
+willing to purchase before long, provided we two can agree about the
+terms.
+
+MASC. (_Aside_). Plague take the ass!
+
+TRUF. Ho! ho! Which of the two am I to believe? This story contradicts
+the former very much.
+
+MASC. Sir, this gentleman is a little bit wrong in the upper story: did
+you not know it?
+
+TRUF. I know what I know, and begin to smell a rat. Get you in (_to
+Celia_), and never take such a liberty again. As for you two, arrant
+rogues, or I am much mistaken, if you wish to deceive me again, let your
+stories be a little more in harmony.
+
+
+
+
+SCENE V.--LELIO, MASCARILLE.
+
+
+MASC. He is quite right. To speak plainly, I wish he had given us both a
+sound cudgelling. What was the good of showing yourself, and, like a
+Blunderer, coming and giving the lie to all that I had been saying?
+
+LEL. I thought I did right.
+
+MASC. To be sure. But this action ought not to surprise me. You possess
+so many counterplots that your freaks no longer astonish anybody.
+
+LEL. Good Heavens! How I am scolded for nothing! Is the harm so great
+that it cannot be remedied? However, if you cannot place Celia in my
+hands, you may at least contrive to frustrate all Leander's schemes, so
+that he cannot purchase this fair one before me. But lest my presence
+should be further mischievous, I leave you.
+
+MASC. (_Alone_). Very well. To say the truth, money would be a sure
+and staunch agent in our cause; but as this mainspring is lacking, we
+must employ some other means.
+
+
+
+
+SCENE VI.--ANSELMO, MASCARILLE.
+
+
+ANS. Upon my word, this is a strange age we live in; I am ashamed of it;
+there was never such a fondness for money, and never so much difficulty
+in getting one's own. Notwithstanding all the care a person may take,
+debts now-a-days are like children, begot with pleasure, but brought
+forth with pain. It is pleasant for money to come into our purse; but
+when the time comes that we have to give it back, then the pangs of
+labour seize us. Enough of this, it is no trifle to receive at last two
+thousand francs which have been owing upwards of two years. What luck!
+
+MASC. (_Aside_). Good Heavens! What fine game to shoot flying!
+Hist, let me see if I cannot wheedle him a little. I know with what
+speeches to soothe him. (_Joining him_). Anselmo I have just
+seen....
+
+ANS. Who, prithee?
+
+MASC. Your Nerina.
+
+ANS. What does the cruel fair one say about me?
+
+MASC. Say? that she is passionately fond of you.
+
+ANS. Is she?
+
+MASC. She loves you so that I very much pity her.
+
+ANS. How happy you make me!
+
+MASC. The poor thing is nearly dying with love. "Oh, my dearest
+Anselmo," she cries every minute, "when shall marriage unite our two
+hearts? When will you vouchsafe to extinguish my flames?"
+
+ANS. But why has she hitherto concealed this from me? Girls, in troth,
+are great dissemblers! Mascarille, what do you say, really? Though in
+years, yet I look still well enough to please the eye.
+
+MASC. Yes, truly, that face of yours is still very passable; if it is
+not of the handsomest in the world, it is very agreeable. [Footnote: The
+original has a play on words which cannot be translated, as, _ce
+visage est encore fort mettable....,s'il n'est pas des plus beaux, il
+est des agreables_; which two last words, according to pronunciation,
+can also mean disagreeable. This has been often imitated in French.
+After the Legion of Honour was instituted in France in 1804, some of the
+wits of the time asked the Imperialists: _etes-vous des honores?_]
+
+ANS. So that...
+
+MASC. (_Endeavouring to take the purse_). So that she dotes on you;
+and regards you no longer...
+
+ANS. What?
+
+MASC. But as a husband: and fully intends...
+
+ANS. And fully intends...?
+
+MASC. And fully intends, whatever may happen, to steal your purse....
+
+ANS. To steal...?
+
+MASC. (_Taking the purse, and letting it fall to the ground_). To
+steal a kiss from your mouth.
+
+[Footnote: There is here again, in the original, a play on the words
+_bourse_, purse, and _bouche_, mouth, which cannot be rendered
+in English.]
+
+ANS. Ah! I understand you. Come hither! The next time you see her, be
+sure to say as many fine things of me as possible.
+
+MASC. Let me alone.
+
+ANS. Farewell.
+
+MASC. May Heaven guide you!
+
+ANS. (_Returning_). Hold! I really should have committed a strange
+piece of folly; and you might justly have accused me of neglect. I
+engage you to assist me in serving my passion. You bring good tidings,
+and I do not give you the smallest present to reward your zeal. Here, be
+sure to remember....
+
+MASC. O, pray, don't.
+
+[Footnote: Compare in Shakspeare's _Winter's Tale_ Autolyeus'
+answer to Camillo (Act IV., Scene 3), who gives him money, "I am a poor
+fellow, sir, ... I cannot with conscience take it."]
+
+ANS. Permit me....
+
+MASC. I won't, indeed: I do not act thus for the sake of money.
+
+ANS. I know you do not. But however...
+
+MASC. No, Anselmo, I will not. I am a man of honour; this offends me.
+
+ANS. Farewell then, Mascarille.
+
+MASC. (_Aside_). How long-winded he is!
+
+ANS. (_Coming back_). I wish you to carry a present to the fair
+object of my desires. I will give you some money to buy her a ring, or
+any other trifle, as you may think will please her most.
+
+MASC. No, there is no need of your money; without troubling yourself, I
+will make her a present; a fashionable ring has been left in my hands,
+which you may pay for afterwards, if it fits her.
+
+ANS. Be it so; give it her in my name; but above all, manage matters in
+such a manner that she may still desire to make me her own.
+
+
+
+
+SCENE VII.--LELIO, ANSELMO, MASCARILLE.
+
+
+LEL. (_Taking up the purse_). Whose purse is this?
+
+[Footnote: During the whole of the preceding scene Mascarille has
+quietly kicked the purse away, so as to be out of sight of Anselmo,
+intending to pick it up when the latter has gone.]
+
+ANS. Oh Heavens! I dropt it, and might have afterwards believed somebody
+had picked my pocket. I am very much obliged to you for your kindness,
+which saves me a great deal of vexation, and restores me my money. I
+shall go home this minute and get rid of it.
+
+
+
+
+SCENE VIII.--LELIO, MASCARILLE.
+
+
+MASC. Od's death! You have been very obliging, very much so.
+
+LEL. Upon my word! if it had not been for me he would have lost his
+money.
+
+MASC. Certainly, you do wonders, and show to-day a most exquisite
+judgment and supreme good fortune. We shall prosper greatly; go on as
+you have begun.
+
+LEL. What is the matter now? What have I done?
+
+MASC. To speak plainly as you wish me to do, and as I ought, you have
+acted like a fool. You know very well that your father leaves you
+without money; that a formidable rival follows us closely; yet for all
+this, when to oblige you I venture on a trick of which I take all the
+shame and danger upon myself...
+
+LEL. What? was this...?
+
+MASC. Yes, ninny; it was to release the captive that I was getting the
+money, whereof your officiousness took care to deprive us.
+
+LEL. If that is the case, I am in the wrong. But who could have imagined
+it?
+
+MASC. It really required a great deal of discernment.
+
+LEL. You should have made some signs to warn me of what was going on.
+
+MASC. Yes, indeed; I ought to have eyes in my back. By Jove, be quiet,
+and let us hear no more of your nonsensical excuses. Another, after all
+this, would perhaps abandon everything; but I have planned just now a
+master-stroke, which I will immediately put into execution, on condition
+that if...
+
+[Footnote: The play is supposed to be in Sicily; hence Pagan oaths are
+not out of place. Even at the present time Italians say, _per Jove!
+per Bacco!_]
+
+LEL. No, I promise you henceforth not to interfere either in word or
+deed.
+
+MASC. Go away, then, the very sight of you kindles my wrath.
+
+LEL. Above all, don't delay, for fear that in this business...
+
+MASC. Once more, I tell you, begone! I will set about it. (_Exit
+Lelio_). Let us manage this well; it will be a most exquisite piece
+of roguery; if it succeeds, as I think it must. We'll try....But here
+comes the very man I want.
+
+
+
+
+SCENE IX.--PANDOLPHUS, MASCARILLE.
+
+
+PAND. Mascarille!
+
+MASC. Sir?
+
+PAND. To tell you the truth, I am very dissatisfied with my son.
+
+MASC. With my master? You are not the only one who complains of him. His
+bad conduct which has grown unbearable in everything, puts me each
+moment out of patience.
+
+PAND. I thought, however, you and he understood one another pretty well.
+
+MASC. I? Believe it not, sir. I am always trying to put him in mind of
+his duty: we are perpetually at daggers drawn. Just now we had a quarrel
+again about his engagement with Hippolyta, which, I find he is very
+averse to. By a most disgraceful refusal he violates all the respect due
+to a father.
+
+PAND. A quarrel?
+
+MASC. Yes, a quarrel, and a desperate one too.
+
+PAND. I was very much deceived then, for I thought you supported him in
+all he did.
+
+MASC. I? See what this world is come to! How is innocence always
+oppressed! If you knew but my integrity, you would give me the
+additional salary of a tutor, whereas I am only paid as his servant.
+Yes, you yourself could not say more to him than I do in order to make
+him behave better. "For goodness' sake, sir," I say to him very often,
+"cease to be driven hither and thither with every wind that
+blows,--reform; look what a worthy father Heaven has given you, what a
+reputation he has. Forbear to stab him thus to the heart, and live, as
+he does, as a man of honour."
+
+PAND. That was well said; and what answer could he make to this?
+
+MASC. Answer? Why only nonsense, with which he almost drives me mad. Not
+but that at the bottom of his heart he retains those principles of
+honour which he derives from you; but reason, at present, does not sway
+him. If I might be allowed to speak freely, you should soon see him
+submissive without much trouble.
+
+PAND. Speak out.
+
+MASC. It is a secret which would have serious consequences for me,
+should it be discovered; but I am quite sure I can confide it to your
+prudence.
+
+PAND. You are right.
+
+MASC. Know then that your wishes are sacrificed to the love your son has
+for a certain slave.
+
+PAND. I have been told so before; but to hear it from your mouth pleases
+me.
+
+MASC. I leave you to judge whether I am his secret confidant...
+
+PAND. I am truly glad of it.
+
+MASC. However, do you wish to bring him back to his duty, without any
+public scandal? You must... (I am in perpetual fear lest anybody should
+surprise us. Should he learn what I have told you, I should be a dead
+man.) You must, as I was saying, to break off this business, secretly
+purchase this slave, whom he so much idolizes, and send her into another
+country. Anselmo is very intimate with Trufaldin; let him go and buy her
+for you this very morning. Then, if you put her into my hands, I know
+some merchants, and promise you to sell her for the money she costs you,
+and to send her out of the way in spite of your son. For, if you would
+have him disposed for matrimony, we must divert this growing passion.
+Moreover, even if he were resolved to wear the yoke you design for him,
+yet this other girl might revive his foolish fancy, and prejudice him
+anew against matrimony.
+
+PAND. Very well argued. I like this advice much. Here comes Anselmo; go,
+I will do my utmost quickly to obtain possession of this troublesome
+slave, when I will put her into your hands to finish the rest.
+
+MASC. (_Alone_). Bravo, I will go and tell my master of this. Long
+live all knavery, and knaves also!
+
+
+
+
+SCENE X.--HIPPOLYTA, MASCARILLE.
+
+
+HIPP. Ay, traitor, is it thus that you serve me? I overheard all, and
+have myself been a witness of your treachery. Had I not, could I have
+suspected this? You are an arrant rogue, and you have deceived me. You
+promised me, you miscreant, and I expected, that you would assist me in
+my passion for Leander, that your skill and your management should find
+means to break off my match with Lelio; that you would free me from my
+father's project; and yet you are doing quite the contrary. But you will
+find yourself mistaken. I know a sure method of breaking off the
+purchase you have been urging Pandolphus to make, and I will go
+immediately....
+
+MASC. How impetuous you are! You fly into a passion in a moment; without
+inquiring whether you are right or wrong, you fall foul of me. I am in
+the wrong, and I ought to make your words true, without finishing what I
+began, since you abuse me so outrageously.
+
+HIPP. By what illusion do you think to dazzle my eyes, traitor? Can you
+deny what I have just now heard?
+
+MASC. No; but you must know that all this plotting was only contrived to
+serve you; that this cunning advice, which appeared so sincere, tends to
+make both old men fall into the snare; that all the pains I have taken
+for getting Celia into my hands, through their means, was to secure her
+for Lelio, and to arrange matters so that Anselmo, in the very height of
+passion, and finding himself disappointed of his son-in-law, might make
+choice of Leander.
+
+HIPP. What! This admirable scheme, which has angered me so much, was all
+for my sake, Mascarille?
+
+MASC. Yes, for your sake; but since I find my good offices meet with so
+bad a return,--since I have thus to bear your caprices, and as a reward
+for my services, you come here with a haughty air, and call me knave,
+cur, and cheat, I shall presently go, correct the mistake I have
+committed, and undo what I had undertaken to perform.
+
+HIPP. (_Holding him_.) Nay, do not be so severe upon me, and
+forgive these outbursts of a sudden passion.
+
+MASC. No, no; let me go. I have it yet in my power to set aside the
+scheme which offends you so much. Henceforth you shall have no occasion
+to complain of my zeal. Yes, you shall have my master, I promise you.
+
+HIPP. My good Mascarille, be not in such a passion. I judged you ill; I
+was wrong; I confess I was. (_Pulls out her purse_). But I intend
+to atone for my fault with this. Could you find it in your heart to
+abandon me thus?
+
+MASC. No, I cannot, do what I will. But your impetuosity was very
+shocking. Let me tell you that nothing offends a noble mind so much as
+the smallest imputation upon its honour.
+
+HIPP. It is true; I treated you to some very harsh language, but here
+are two louis to heal your wounds.
+
+MASC. Oh! all this is nothing. I am very sensitive on this point; but my
+passion begins to cool a little already. We must bear with the failings
+of our friends.
+
+HIPP. Can you, then, bring about what I so earnestly wish for? Do you
+believe your daring projects will be as favourable to my passion as you
+imagine?
+
+MASC. Do not make yourself uneasy on that account. I have several irons
+in the fire, and though this stratagem should fail us, what this cannot
+do, another shall.
+
+HIPP. Depend upon it, Hippolyta will at least not be ungrateful.
+
+MASC. It is not the hope of gain that makes me act.
+
+HIPP. Your master beckons and wishes to speak with you. I will leave
+you, but remember to do what you can for me.
+
+
+
+
+SCENE XI.--LELIO, MASCARILLE.
+
+
+LEL. What the deuce are you doing there? You promised to perform
+wonders, but I am sure your dilatory ways are unparalleled. Had not my
+good genius inspired me, my happiness had been already wholly
+overthrown. There was an end to my good fortune, my joy. I should have
+been a prey to eternal grief; in short, had I not gone to this place in
+the very nick of time, Anselmo would have got possession of the captive,
+and I should have been deprived of her. He was carrying her home, but I
+parried the thrust, warded off the blow, and so worked upon Trufaldin's
+fears as to make him keep the girl.
+
+MASC. This is the third time! When we come to ten we will score. It was
+by my contrivance, incorrigible scatterbrains, that Anselmo undertook
+this desirable purchase; she should have been placed into my own hands,
+but your cursed officiousness knocks everything on the head again. Do
+you think I shall still labour to serve your love? I would sooner a
+hundred times become a fat old woman, a dolt, a cabbage, a lantern, a
+wehrwolf, and that Satan should twist your neck!
+
+LEL. (_Alone_.) I must take him to some tavern and let him vent his
+passion on the bottles and glasses.
+
+
+
+
+ACT II.
+
+
+
+
+SCENE I.--LELIO, MASCARILLE.
+
+
+MASC. I have at length yielded to your desires. In spite of all my
+protestations I could hold out no longer; I am going to venture upon new
+dangers, to promote your interest, which I intended to abandon. So
+tender-hearted am I! If dame nature had made a girl of Mascarille, I
+leave you to guess what would have happened. However, after this
+assurance, do not deal a back stroke to the project I am about to
+undertake; do not make a blunder and frustrate my expectations. Then, as
+to Anselmo, we shall anew present your excuses to him, in order to get
+what we desire. But should your imprudence burst forth again hereafter,
+then you may bid farewell to all the trouble I take for the object of
+your passion.
+
+LEL. No, I shall be careful, I tell you; never fear; you shall see....
+
+MASC. Well, mind that you keep your word. I have planned a bold
+stratagem for your sake. Your father is very backward in satisfying all
+your wishes by his death. I have just killed him (in words, I mean); I
+have spread a report that the good man, being suddenly smitten by a fit
+of apoplexy, has departed this life. But first, so that I might the
+better pretend he was dead, I so managed that he went to his barn. I had
+a person ready to come and tell him that the workmen employed on his
+house accidentally discovered a treasure, in digging the foundations. He
+set out in an instant, and as all his people, except us two, have gone
+with him into the country, I shall kill him to-day in everybody's
+imagination and produce some image which I shall bury under his name. I
+have already told you what I wish you to do; play your part well; and as
+to the character I have to keep up, if you perceive that I miss one word
+of it, tell me plainly I am nothing but a fool.
+
+
+
+
+SCENE II.--LELIO, _alone_.
+
+
+It is true, he has found out a strange way to accomplish my wishes
+fully; but when we are very much in love with a fair lady, what would we
+not do to be made happy? If love is said to be an excuse for a crime, it
+may well serve for a slight piece of imposture, which love's ardour
+to-day compels me to comply with, in expectation of the happy
+consequences that may result from it. Bless me! How expeditious they
+are. I see them already talking together about it; let us prepare to act
+our part.
+
+
+
+
+SCENE III.--MASCARILLE, ANSELMO.
+
+
+MASC. The news may well surprise you.
+
+ANS. To die in such a manner!
+
+MASC. He was certainly much to blame. I can never forgive him for such a
+freak.
+
+ANS. Not even to take time to be ill.
+
+MASC. No, never was a man in such a hurry to die.
+
+ANS. And how does Lelio behave?
+
+MASC. He raves, and has lost all command over his temper; he has beaten
+himself till he is black and blue in several places, and wishes to
+follow his father into the grave. In short, to make an end of this, the
+excess of his grief has made me with the utmost speed wrap the corpse in
+a shroud, for fear the sight, which fed his melancholy, should tempt him
+to commit some rash act.
+
+ANS. No matter, you ought to have waited until evening. Besides, I
+should have liked to see Pandolphus once more. He who puts a shroud on a
+man too hastily very often commits murder; for a man is frequently
+thought dead when he only seems to be so.
+
+MASC. I warrant him as dead as dead can be. But now, to return to what
+we were talking about, Lelio has, resolved (and it will do him good) to
+give his father a fine funeral, and to comfort the deceased a little for
+his hard fate, by the pleasure of seeing that we pay him such honours
+after his death. My master inherits a goodly estate, but as he is only a
+novice in business, and does not see his way clearly in his affairs,
+since the greater part of his property lies in another part of the
+country, or what he has here consists in paper, he would beg of you,
+after having entreated you to excuse the too great violence which he has
+shewn of late, to lend him for this last duty at least....
+
+ANS. You have told me so already, and I will go and see him.
+
+MASC. (_Alone_). Hitherto, at least, everything goes on swimmingly;
+let us endeavour to make the rest answer as well; and lest we should be
+wrecked in the very harbour, let us steer the ship carefully and keep a
+sharp look out.
+
+
+
+
+SCENE IV.--ANSELMO, LELIO, MASCARILLE.
+
+
+ANS. (_Coming out of Pandolphus' house_). Let us leave the house. I
+cannot, without great sorrow, see him wrapped up in this strange manner.
+Alas! in so short a time! He was alive this morning.
+
+MASC. We go sometimes over a good deal of ground in a short time.
+
+LEL. (_Weeping_). Oh!
+
+ANS. Dear Lelio, he was but a man after all; even Rome can grant no
+dispensation from death.
+
+LEL. Oh!
+
+ANS. Death smites men without giving warning, and always has bad designs
+against them.
+
+LEL. Oh!
+
+ANS. That merciless foe would not loosen one grip of his murderous
+teeth, however we may entreat him. Everybody must feel them.
+
+LEL. Oh!
+
+MASC. Your preaching will all be in vain; this sorrow is too deep-rooted
+to be plucked up.
+
+ANS. If, notwithstanding all these arguments, you will not cast aside
+your grief, at least, my dear Lelio, endeavour to moderate it.
+
+LEL. Oh!
+
+MASC. He will not moderate it; I know his temper.
+
+ANS. However, according to your servant's message, I have brought you
+the money you want, so that you might celebrate your father's funeral
+obsequies!
+
+LEL. Oh! oh!
+
+MASC. How his grief increases at these words! It will kill him to think
+of his misfortune.
+
+ANS. I know you will find by the good man's books that I owe him a much
+larger sum, but even if I should not owe anything, you could freely
+command my purse. Here it is; I am entirely at your service, and will
+show it.
+
+LEL. (_Going away_). Oh!
+
+MASC. How full of grief is my master!
+
+ANS. Mascarille, I think it right he should give me some kind of receipt
+under his hand.
+
+MASC. Oh!
+
+ANS. Nothing in this world is certain.
+
+MASC. Oh! oh!
+
+ANS. Get him to sign me the receipt I require.
+
+MASC. Alas! How can he comply with your desire in the condition he now
+is? Give him but time to get rid of his sorrow; and, when his troubles
+abate a little, I shall take care immediately to get you your security.
+Your servant, sir, my heart is over full of grief, and I shall go to
+take my fill of weeping with him. Hi! Hi!
+
+ANS. (_Alone_). This world is full of crosses; we meet with them
+every day in different shapes, and never here below...
+
+
+
+
+SCENE V.--PANDOLPHUS, ANSELMO.
+
+
+ANS. Oh Heavens! how I tremble! It is Pandolphus who has returned to the
+earth! God grant nothing disturbed his repose! How wan his face is grown
+since his death! Do not come any nearer. I beseech you; I very much
+detest to jostle a ghost.
+
+PAND. What can be the reason of this whimsical terror?
+
+ANS. Keep your distance, and tell me what business brings you here. If
+you have taken all this trouble to bid me farewell, you do me too much
+honour; I could really have done very well without your compliment. If
+your soul is restless, and stands in need of prayers. I promise you you
+shall have them, but do not frighten me. Upon the word of a terrified
+man, I will immediately set prayers agoing for you, to your very heart's
+content.
+
+  "Oh, dead worship, please to go!
+    Heaven, if now you disappear,
+  Will grant you joy down there below,
+    And health as well, for many a year."
+
+
+[Footnote: This seems to be an imitation of a spell, charm, or
+incantation to lay the supposed ghost, which Anselmo says kneeling and
+hardly able to speak for terror.]
+
+PAND. (_Laughing_). In spite of my indignation, I cannot help
+laughing.
+
+ANS. It is strange, but you are very merry for a dead man.
+
+PAND. Is this a joke, pray tell me, or is it downright madness to treat
+a living man as if he were dead?
+
+ANS. Alas! you must be dead; I myself just now saw you.
+
+PAND. What? Could I die without knowing it?
+
+ANS. As soon as Mascarille told me the news, I was ready to die of
+grief.
+
+PAND. But, really, are you asleep or awake? Don't you know me?
+
+ANS. You are clothed in an aerial body which imitates your own, but
+which may take another shape at any moment. I am mightily afraid to see
+you swell up to the size of a giant, and your countenance become
+frightfully distorted. For the love of God, do not assume any hideous
+form; you have scared me sufficiently for the nonce.
+
+PAND. At any other time, Anselmo, I should have considered the
+simplicity which accompanies your credulity an excellent joke, and I
+should have carried on the pleasant conceit a little longer; but this
+story of my death, and the news of the supposed treasure, which I was
+told upon the road had not been found at all, raises in my mind a strong
+suspicion that Mascarille is a rogue, and an arrant rogue, who is proof
+against fear or remorse, and who invents extraordinary stratagems to
+compass his ends.
+
+ANS. What! Am I tricked and made a fool of? Really, this would be a
+compliment to my good sense! Let me touch him and be satisfied. This is,
+indeed, the very man. What an ass I am! Pray, do not spread this story
+about, for they will write a farce about it, and shame me for ever. But,
+Pandolphus, help me to get the money back which I lent them to bury you.
+
+PAND. Money, do you say? Oh! that is where the shoe pinches; that is the
+secret of the whole affair! So much the worse for you. For my part, I
+shall not trouble myself about it, but will go and lay an information
+against this Mascarille, and if he can be caught he shall be hanged,
+whatever the cost may be.
+
+ANS. (_Alone_). And I, like a ninny, believe a scoundrel, and must
+in one day lose both my senses and my money. Upon my word, it well
+becomes me to have these gray hairs and to commit an act of folly so
+readily, without examining into the truth of the first story I hear...!
+But I see....
+
+
+
+
+SCENE VI.--LELIO, ANSELMO.
+
+
+LEL. Now, with this master-key, I can easily pay Trufaldin a visit.
+
+ANS. As far as I can see, your grief has subsided.
+
+LEL. What do you say? No; it can never leave a heart which shall ever
+cherish it dearly.
+
+ANS. I came back to tell you frankly of a mistake I made in the money I
+gave you just now; amongst these louis-d'or, though they look very good,
+I carelessly put some which I think are bad. I have brought some money
+with me to change them. The intolerable audacity of our coiners is grown
+to such a height in this state, that no one can receive any money now
+without danger of his being imposed upon. It would be doing good service
+to hang them all!
+
+LEL. I am very much obliged to you for being willing to take them back,
+but I saw none among them that were bad, as I thought.
+
+ANS. Let me see the money; let me see it; I shall know them again. Is
+this all?
+
+LEL. Yes.
+
+ANS. So much the better. Are you back again? my dear money! get into my
+pocket. As for you, my gallant sharper, you have no longer got a penny
+of it. You kill people who are in good health, do ye? And what would you
+have done, then, with me, a poor infirm father-in-law? Upon my word, I
+was going to get a nice addition to my family, a most discreet
+son-in-law. Go, go, and hang yourself for shame and vexation.
+
+LEL. (_Alone_). I really must admit I have been bit this time. What
+a surprise this is! How can he have discovered our stratagem so soon?
+
+
+
+
+SCENE VII.--LELIO, MASCARILLE.
+
+
+MASC. What, you were out? I have been hunting for you everywhere. Well,
+have we succeeded at last? I will give the greatest rogue six trials to
+do the like. Come, give me the money that I may go and buy the slave;
+your rival will be very much astonished at this.
+
+LEL. Ah! my dear boy, our luck has changed. Can you imagine how ill
+fortune has served me?
+
+MASC. What? What can it be?
+
+LEL. Anselmo having found out the trick, just now got back every sou he
+lent us, pretending some of the gold-pieces were bad, and that he was
+going to change them.
+
+MASC. You do but joke, I suppose?
+
+LEL. It is but too true.
+
+MASC. In good earnest?
+
+LEL. In good earnest; I am very much grieved about it. It will put you
+into a furious passion.
+
+MASC. Me, sir! A fool might, but not I! Anger hurts, and I am going to
+take care of myself, come what will. After all, whether Celia be captive
+or free, whether Leander purchases her or whether she remains where she
+is, I do not care one stiver about it.
+
+LEL. Ah! do not show such indifference, but be a little more indulgent
+to my slight imprudence. Had this last misfortune not happened, you
+would have confessed that I did wonders, and that in this pretended
+decease I deceived everybody, and counterfeited grief so admirably that
+the most sharp-sighted would have been taken in.
+
+MASC. Truly you have great reason to boast.
+
+LEL. Oh! I am to blame, and I am willing to acknowledge it; but if ever
+you cared for my happiness, repair this mishap, and help me.
+
+MASC. I kiss your hands, I cannot spare the time.
+
+LEL. Mascarille, my dear boy!
+
+MASC. No.
+
+LEL. Do me this favour.
+
+MASC. No, I will not.
+
+LEL. If you are inflexible, I shall kill myself.
+
+MASC. Do so--you may.
+
+LEL. Can I not soften your hard heart?
+
+MASC. No.
+
+LEL. Do you see my sword ready drawn?
+
+MASC. Yes.
+
+LEL. I am going to stab myself.
+
+MASC. Do just what you please.
+
+LEL. Would you not regret to be the cause of my death?
+
+MASC. No.
+
+LEL. Farewell, Mascarille.
+
+MASC. Good bye, Master Lelio.
+
+LEL. What...?
+
+MASC. Kill yourself quick. You are a long while about it.
+
+LEL. Upon my word, you would like me to play the fool and kill myself,
+so that you might get hold of my clothes.
+
+MASC. I knew all this was nothing but a sham; whatever people may swear
+they will do, they are not so hasty now-a-days in killing themselves.
+
+
+
+
+SCENE VIII.--TRUFALDIN, LEANDER, LELIO, MASCARILLE.
+
+
+(_Trufaldin taking Leander aside and whispering to him_).
+
+LEL. What do I see? my rival and Trufaldin together! He is going to buy
+Celia. Oh! I tremble for fear.
+
+MASC. There is no doubt that he will do all he can; and if he has money,
+he can do all he will. For my part I am delighted. This is a just reward
+for your blunders, your impatience.
+
+LEL. What must I do? Advise me.
+
+MASC. I don't know.
+
+LEL. Stay, I will go and pick a quarrel with him.
+
+MASC. What good will that do?
+
+LEL. What would you have me do to ward off this blow?
+
+MASC. Well, I pardon you; I will yet cast an eye of pity on you. Leave
+me to watch them; I believe I shall discover what he intends to do by
+fairer means. (_Exit Lelio_).
+
+TRUF. (_To Leander_). When you send by and by, it shall be done.
+
+MASC. (_Aside and going out_). I must trap him and become his
+confidant, in order to baffle his designs the more easily.
+
+LEAND. (_Alone_). Thanks to Heaven, my happiness is complete. I
+have found the way to secure it, and fear nothing more. Whatever my
+rival may henceforth attempt, it is no longer in his power to do me any
+harm.
+
+
+
+
+SCENE IX.--LEANDER, MASCARILLE.
+
+
+MASC. (_Speaking these words within, and then coming on the
+stage_). Oh! oh! Help! Murder! Help! They are killing me! Oh! oh! oh!
+oh! Traitor! Barbarian!
+
+LEAND. Whence comes that noise? What is the matter? What are they doing
+to you?
+
+MASC. He has just given me two hundred blows with a cudgel.
+
+LEAND. Who?
+
+MASC. Lelio.
+
+LEAND. And for what reason?
+
+MASC. For a mere trifle he has turned me away and beats me most
+unmercifully.
+
+LEAND. He is really much to blame.
+
+MASC. But, I swear, if ever it lies in my power I will be revenged on
+him. I will let you know, Mr. Thrasher, with a vengeance, that people's
+bones are not to be broken for nothing! Though I am but a servant, yet I
+am a man of honour. After having been in your service for four years you
+shall not pay me with a switch, nor affront me in so sensible a part as
+my shoulders! I tell you once more, I shall find a way to be revenged!
+You are in love with a certain slave, you would fain induce me to get
+her for you, but I will manage matters so that somebody else shall carry
+her off; the deuce take me if I don't!
+
+LEAND. Hear me, Mascarille, and moderate your passion. I always liked
+you, and often wished that a young fellow, faithful and clever like you,
+might one day or other take a fancy to enter my service. In a word, if
+you think my offer worthy of acceptance, and if you have a mind to serve
+me, from this moment I engage you.
+
+MASC. With all my heart, sir, and so much the rather because good
+fortune in serving you offers me an opportunity of being revenged, and
+because in my endeavours to please you I shall at the same time punish
+that wretch. In a word, by my dexterity, I hope to get Celia for...
+
+LEAND. My love has provided already for that. Smitten by a faultless
+fair one, I have just now bought her for less than her value.
+
+MASC. What! Celia belongs to you, then?
+
+LEAND. You should see her this minute, if I were the master of my own
+actions. But alas! it is my father who is so; since he is resolved, as I
+understand by a letter brought me, to make me marry Hippolyta. I would
+not have this affair come to his knowledge lest it should exasperate
+him. Therefore in my arrangement with Trufaldin (from whom I just now
+parted), I acted purposely in the name of another. When the affair was
+settled, my ring was chosen as the token, on the sight of which
+Trufaldin is to deliver Celia. But I must first arrange the ways and
+means to conceal from the eyes of others the girl who so much charms my
+own, and then find some retired place where this lovely captive may be
+secreted.
+
+MASC. A little way out of town lives an old relative of mine, whose
+house I can take the freedom to offer you; there you may safely lodge
+her, and not a creature know anything of the matter.
+
+LEAND. Indeed! so I can: you have delighted me with the very thing I
+wanted. Here, take this, and go and get possession of the fair one. As
+soon as ever Trufaldin sees my ring, my girl will be immediately
+delivered into your hands. You can then take her to that house, when...
+But hist! here comes Hippolyta.
+
+
+
+
+SCENE X.--HIPPOLYTA, LEANDER, MASCARILLE.
+
+
+HIPP. I have some news for you, Leander, but will you be pleased or
+displeased with it?
+
+LEAND. To judge of that, and make answer off-hand, I should know it.
+
+HIPP. Give me your hand, then, as far as the church, and I will tell it
+you as we go.
+
+[Footnote: Generally it was thought preferable, during Moliere's
+lifetime, to use the word _temple_ for "church," instead of
+_eglise_.]
+
+LEAND. (_To Mascarille_). Go, make haste, and serve me in that
+business without delay.
+
+
+
+
+SCENE XI.--MASCARILLE, _alone_.
+
+
+Yes, I will serve you up a dish of my own dressing. Was there ever in
+the world so lucky a fellow. How delighted Lelio will be soon! His
+mistress to fall into our hands by these means! To derive his whole
+happiness from the man he would have expected to ruin him! To become
+happy by the hands of a rival! After this great exploit, I desire that
+due preparations be made to paint me as a hero crowned with laurel, and
+that underneath the portrait be inscribed in letters of gold: _Vivat
+Mascarillus, rogum imperator_.
+
+
+
+
+SCENE XII.--TRUFALDIN, MASCARILLE.
+
+
+MASC. Soho, there!
+
+TRUF. What do you want?
+
+MASC. This ring, which you know, will inform you what business brings me
+hither.
+
+TRUF. Yes, I recognise that ring perfectly; stay a little, I will fetch
+you the slave.
+
+
+
+
+SCENE XIII.--TRUFALDIN, A MESSENGER, MASCARILLE.
+
+
+MESS. (_To Trufaldin_). Do me the favor, sir, to tell me where
+lives a gentleman....
+
+TRUF. What gentleman?
+
+MESS. I think his name is Trufaldin.
+
+TRUF. And what is your business with him, pray? I am he.
+
+MESS. Only to deliver this letter to him.
+
+TRUF. (_Reads_). "_Providence, whose goodness watches over my
+life, has just brought to my ears a most welcome report, that my
+daughter, who was stolen from me by some robbers when she was four years
+old, is now a slave at your house, under the name of Celia. If ever you
+knew what it was to be a father, and if natural affection makes an
+impression on your heart, then keep in your house this child so dear to
+me, and treat her as if she were your own flesh and blood. I am
+preparing to set out myself in order to fetch her. You shall be so well
+rewarded for your trouble, that in everything that relates to your
+happiness (which I am determined to advance) you shall have reason to
+bless the day in which you caused mine_."
+
+                  DON PEDRO DE GUSMAN,
+  From Madrid.      Marquess of MONTALCANA
+
+
+
+Though the gipsies can be seldom believed, yet they who sold her to me
+told me she would soon be fetched by somebody, and that I should have no
+reason to complain. Yet here I was going, all through my impatience, to
+lose the fruits of a great expectation. (_To the Messenger_). Had
+you come but one moment later, your journey would have been in vain; I
+was going, this very instant, to give the girl up into this gentleman's
+hands; but it is well, I shall take great care of her. (_Exit
+Messenger_). (_To Mascarille_). You yourself have heard what
+this letter says, so you may tell the person who sent you that I cannot
+keep my word, and that he had better come and receive his money back.
+
+MASC. But the way you insult him...
+
+TRUF. Go about your business, and no more words.
+
+MASC. (_Alone_). Oh, what a curse that this letter came now! Fate is
+indeed against me. What bad luck for this messenger to come from Spain
+when he was not wanted! May thunder and hail go with him! Never,
+certainly, had so happy a beginning such a sad ending in so short a
+time.
+
+
+
+
+SCENE XIV.--LELIO _laughing_, MASCARILLE.
+
+
+MASC. What may be the cause of all this mirth?
+
+LEL. Let me have my laugh out before I tell you.
+
+MASC. Let us laugh then heartily, we have abundant cause so to do.
+
+LEL. Oh! I shall no longer be the object of your expostulations: you who
+always reproach me shall no longer say that I am marrying all your
+schemes, like a busy-body as I am. I myself have played one of the
+cleverest tricks in the world. It is true I am quick-tempered, and now
+and then rather too hasty; but yet, when I have a mind to it, I can plan
+as many tricks as any man alive; even you shall own that what I have
+done shows an amount of sharpness rarely to be met with.
+
+MASC. Let us hear what tricks you have invented.
+
+LEL. Just now, being terribly frightened on seeing Trufaldin along with
+my rival, I was casting about to find a remedy for that mischief, when,
+calling all my invention to my aid, I conceived, digested, and perfected
+a stratagem, before which all yours, however vain you may be of them,
+ought undoubtedly to lower their colours.
+
+MASC. But what may this be?
+
+LEL. May it please you to have a little patience. Without much delay I
+invented a letter, written by an imaginary nobleman to Trufaldin,
+setting forth that, having fortunately heard that a certain slave, who
+lives in the latter's house, and is named Celia, was this grandee's
+daughter formerly kidnapped by thieves, it was his intention to come and
+fetch her; and he entreats him at least to keep her and take great care
+of her; for, that on her account he was setting out from Spain, and
+would acknowledge his civility by such handsome presents, that he should
+never regret being the means of making him happy.
+
+MASC. Mighty well.
+
+LEL. Hear me out; here is something much cleverer still. The letter I
+speak of was delivered to him, but can you imagine how? Only just in
+time, for the messenger told me, had it not been for this droll device,
+a fellow, who looked very foolish, was waiting to carry her off that
+identical moment.
+
+MASC. And you did all this without the help of the devil?
+
+LEL. Yes. Would you have believed me capable of such a subtle piece of
+wit? At least praise my skill, and the dexterity with which I have
+utterly disconcerted the scheme of my rival.
+
+MASC. To praise you as you deserve, I lack eloquence; and feel unequal
+to the task. Yes, sufficiently to commend this lofty effort, this fine
+stratagem of war achieved before our eyes, this grand and rare effect of
+a mind which plans as many tricks as any man, which for smartness yields
+to none alive, my tongue wants words. I wish I had the abilities of the
+most refined scholars, so that I might tell you in the noblest verse, or
+else in learned prose, that you will always be, in spite of everything
+that may be done, the very same you have been all your life; that is to
+say, a scatter-brain, a man of distempered reason, always perplexed,
+wanting common sense, a man of left-handed judgment, a meddler, an ass,
+a blundering, hare-brained, giddy fellow,--what can I think of? A... a
+hundred times worse than anything I can say. This is only an abridgement
+of your panegyric.
+
+LEL. Tell me, what puts you in such a passion with me? Have I done
+anything? Clear up this matter.
+
+MASC. No, you have done nothing at all; but do not come after me.
+
+LEL. I will follow you all over the world to find out this mystery.
+
+MASC. Do so. Come on, then; get your legs in order, I shall give you an
+opportunity to exercise them.
+
+LEL. (_Alone_). He has got away from me! O misfortune which cannot
+be allayed! What am I to understand by his discourse? And what harm can
+I possibly have done to myself?
+
+
+
+
+ACT III.
+
+
+
+
+SCENE I.--MASCARILLE, _alone_
+
+
+[Footnote: Compare Launcelot Gobbo's speech about his conscience in
+Shakspeare's _Merchant of Venice_ (ii. 2).]
+
+Silence, my good nature, and plead no more; you are a fool, and I am
+determined not to do it. Yes, my anger, you are right, I confess it! To
+be for ever doing what a meddler undoes, is showing too much patience,
+and I ought to give it up after the glorious attempts he has marred. But
+let us argue the matter a little without passion; if I should now give
+way to my just impatience the world will say I sank under difficulties,
+that my cunning was completely exhausted. What then becomes of that
+public esteem, which extols you everywhere as a first-rate rogue, and
+which you have acquired upon so many occasions, because you never yet
+were found wanting in inventions? Honour, Mascarille, is a fine thing;
+do not pause in your noble labours; and whatever a master may have done
+to incense you, complete your work, for your own glory, and not to
+oblige him. But what success can you expect, if you are thus continually
+crossed by your evil genius? You see he compels you every moment to
+change your tone; you may as well hold water in a sieve as try to stop
+that resistless torrent, which in a moment overturns the most beautiful
+structures raised by your art. Well, once more, out of kindness, and
+whatever may happen, let us take some pains, even if they are in vain;
+yet, if he still persists in baffling my designs, then I shall withdraw
+all assistance. After all, our affairs are not going on badly, if we
+could but supplant our rival, and if Leander, at last weary of his
+pursuit, would leave us one whole day for my intended operations. Yes, I
+have a most ingenious plot in my head, from which I expect a glorious
+success, if I had no longer that obstacle in my way. Well, let us see if
+he still persists in his love.
+
+
+
+
+SCENE II.--LEANDER, MASCARILLE.
+
+
+MASC. Sir, I have lost my labour; Trufaldin will not keep his word.
+
+LEAND. He himself has told me the whole affair; but, what is more, I
+have discovered that all this pretty rigmarole about Celia being carried
+off by gypsies, and having a great nobleman for her father, who is
+setting out from Spain to come hither, is nothing but a mere stratagem,
+a merry trick, a made-up story, a tale raised by Lelio to prevent my
+buying Celia.
+
+MASC. Here is roguery for you!
+
+LEAND. And yet this ridiculous story has produced such an impression on
+Trufaldin, and he has swallowed the bait of this shallow device so
+greedily, that he will not allow himself to be undeceived.
+
+MASC. So that henceforth he will watch her carefully. I do not see we
+can do anything more.
+
+LEAND. If at first I thought this girl amiable, I now find her
+absolutely adorable, and I am in doubt whether I ought not to employ
+extreme measures to make her my own, thwart her ill fortune by plighting
+her my troth, and turn her present chains into matrimonial ones.
+
+MASC. Would you marry her?
+
+LEAND. I am not yet determined, but if her origin is somewhat obscure,
+her charms and her virtue are gentle attractions, which have incredible
+force to allure every heart.
+
+MASC. Did you not mention her virtue?
+
+LEAND. Ha! what is that you mutter? Out with it; explain what you mean
+by repeating that word "virtue."
+
+MASC. Sir, your countenance changes all of a sudden; perhaps I had much
+better hold my tongue.
+
+LEAND. No, no, speak out.
+
+MASC. Well, then, out of charity I will cure you of your blindness. That
+girl....
+
+LEAND. Proceed.
+
+MASC. So far from being merciless, makes no difficulty in obliging some
+people in private; you may believe me, after all she is not
+stony-hearted, to any one who knows how to take her in the right mood.
+She looks demure, and would fain pass for a prude; but I can speak of
+her on sure grounds. You know I understand something of the craft, and
+ought to know that kind of cattle.
+
+LEAND. What! Celia?...
+
+MASC. Yes, her modesty is nothing but a mere sham, the semblance of a
+virtue which will never hold out, but vanishes, as any one may discover,
+before the shining rays emitted from a purse.
+
+[Footnote: This is an allusion to the rays of the sun, placed above the
+crown, and stamped on all golden crown-pieces, struck in France from
+Louis XI. (November 2, 1475) until the end of the reign of Louis XIII.
+These crowns were called _ecus au soleil_. Louis XIV. took much
+later for his device the sun shining in full, with the motto, _Nec
+pluribus impar_.]
+
+LEAND. Heavens! What do you tell me? Can I believe such words?
+
+MASC. Sir, there is no compulsion; what does it matter to me? No, pray
+do not believe me, follow your own inclination, take the sly girl and
+marry her; the whole city, in a body, will acknowledge this favour; you
+marry the public good in her.
+
+LEAND. What a strange surprise!
+
+MASC. (_Aside_). He has taken the bait. Courage, my lad; if he does
+but swallow it in good earnest, we shall have got rid of a very awkward
+obstruction on our path.
+
+LEAND. This astonishing account nearly kills me.
+
+MASC. What! Can you...
+
+LEAND. Go to the post-office, and see if there is a letter for me.
+(_Alone, and for a while lost in thought_). Who would not have been
+imposed upon? If what he says be true then there never was any
+countenance more deceiving.
+
+
+
+
+SCENE III.--LELIO, LEANDER.
+
+
+LEL. What may be the cause of your looking so sad?
+
+LEAND. Who, I?
+
+LEL. Yes, yourself.
+
+LEAND. I have, however, no occasion to be so.
+
+LEL. I see well enough what it is; Celia is the cause of it.
+
+LEAND. My mind does not run upon such trifles.
+
+LEL. And yet you had formed some grand scheme to get her into your
+hands; but you must speak thus, as your stratagem has miscarried.
+
+LEAND. Were I fool enough to be enamoured of her, I should laugh at all
+your finesse.
+
+LEL. What finesse, pray?
+
+LEAND. Good Heavens! sir, we know all.
+
+LEL. All what?
+
+LEAND. All your actions, from beginning to end.
+
+LEL. This is all Greek to me; I do not understand one word of it.
+
+LEAND. Pretend, if you please, not to understand me; but believe me, do
+not apprehend that I shall take a property which I should be sorry to
+dispute with you. I adore a beauty who has not been sullied, and do not
+wish to love a depraved woman.
+
+LEL. Gently, gently, Leander.
+
+LEAND. Oh! how credulous you are! I tell you once more, you may attend
+on her now without suspecting anybody. You may call yourself a
+lady-killer. It is true, her beauty is very uncommon, but, to make
+amends for that, the rest is common enough.
+
+LEL. Leander, no more of this provoking language. Strive against me as
+much as you like in order to obtain her; but, above all things, do not
+traduce her so vilely. I should consider myself a great coward if I
+could tamely submit to hear my earthly deity slandered. I can much
+better bear your rivalry than listen to any speech that touches her
+character.
+
+LEAND. What I state here I have from very good authority.
+
+LEL. Whoever told you so is a scoundrel and a rascal. Nobody can
+discover the least blemish in this young lady; I know her heart well.
+
+LEAND. But yet Mascarille is a very competent judge in such a cause; he
+thinks her guilty.
+
+LEL. He?
+
+LEAND. He himself.
+
+LEL. Does he pretend impudently to slander a most respectable young
+lady, thinking, perhaps, I should only laugh at it? I will lay you a
+wager he eats his words.
+
+LEAND. I will lay you a wager he does not.
+
+LEL. 'Sdeath! I would break every bone in his body should he dare to
+assert such lies to me,
+
+LEAND. And I will crop his ears, if he does not prove every syllable he
+has told me.
+
+
+
+
+SCENE IV.--LELIO, LEANDER, MASCARILLE.
+
+
+LEL. Oh! that's lucky; there he is. Come hither, cursed hangdog!
+
+MASC. What is the matter?
+
+LEL. You serpent's tongue! so full of lies! dare you fasten your stings
+on Celia, and slander the most consummate virtue that ever added lustre
+to misfortune?
+
+MASC. (_In a whisper to Lelio_). Gently; I told him so on purpose.
+
+LEL. No, no; none of your winking, and none of your jokes. I am blind
+and deaf to all you do or say. If it were my own brother he should pay
+dear for it; for to dare defame her whom I adore is to wound me in the
+most tender part. You make all these signs in vain. What was it you said
+to him?
+
+MASC. Good Heavens! do not quarrel, or I shall leave you.
+
+LEL. You shall not stir a step.
+
+MASC. Oh!
+
+LEL. Speak then; confess.
+
+MASC. (_Whispering to Lelio_). Let me alone. I tell you it is a
+stratagem.
+
+LEL. Make haste; what was it you said? Clear up this dispute between us.
+
+MASC. (_In a whisper to Lelio_). I said what I said. Pray do not
+put yourself in a passion.
+
+LEL. (_Drawing his sword_). I shall make you talk in another
+strain.
+
+LEAND. (_Stopping him_). Stay your hand a little; moderate your
+ardour.
+
+MASC. (_Aside_). Was there ever in the world a creature so dull of
+understanding?
+
+LEL. Allow me to wreak my just vengeance on him.
+
+LEAND. It is rather too much to wish to chastise him in my presence.
+
+LEL. What! have I no right, then, to chastise my own servant?
+
+LEAND. What do you mean by saying "your servant?"
+
+MASC. (_Aside_). He is at it again! He will discover all.
+
+LEL. Suppose I had a mind to thrash him within an inch of his life, what
+then? He is my own servant.
+
+LEAND. At present he is mine.
+
+LEL. That is an admirable joke. How comes he to be yours? Surely...
+
+MASC. (_In a whisper_). Gently.
+
+LEL. What are you whispering?
+
+MASC. (_Aside_). Oh! the confounded blockhead. He is going to spoil
+everything, He understands not one of my signs.
+
+LEL. You are dreaming, Leander. You are telling me a pretty story! Is he
+not my servant?
+
+LEAND. Did you not discharge him from your service for some fault?
+
+LEL. I do not know what this means.
+
+LEAND. And did you not, in the violence of your passion, make his back
+smart most unmercifully?
+
+LEL. No such thing. I discharge him! cudgel him! Either you make a jest
+of me, Leander, or he has been making a jest of you.
+
+MASC. (_Aside_). Go on, go on, numskull; you will do your own
+business effectually.
+
+LEAND. (_To Mascarille_). Then all this cudgelling is purely
+imaginary?
+
+MASC. He does not know what he says; his memory...
+
+LEAND. No, no; all these signs do not look well for you. I suspect some
+prettily contrived trick here; but for the ingenuity of the invention,
+go your ways, I forgive you. It is quite enough that I am undeceived,
+and see now why you imposed upon me. I come off cheap, because I trusted
+myself to your hypocritical zeal. A word to the wise is enough.
+Farewell, Lelio, farewell; your most obedient servant.
+
+
+
+
+SCENE V.--LELIO, MASCARILLE.
+
+
+MASC. Take courage, my boy, may fortune ever attend us I Let us draw and
+bravely take the field; let us act _Olibrius, the slayer of the
+innocents_.
+
+[Footnote: Olibrius was, according to ancient legends, a Roman governor
+of Gaul, in the time of the Emperor Decius, very cruel, and a great
+boaster.]
+
+LEL. He accused you of slandering...
+
+MASC. And you could not let the artifice pass, nor let him remain in his
+error, which did you good service, and which pretty nearly extinguished
+his passion. No, honest soul, he cannot bear dissimulation. I cunningly
+get a footing at his rival's, who, like a dolt, was going to place his
+mistress in my hands, but he, Lelio, prevents me getting hold of her by
+a fictitious letter; I try to abate the passion of his rival, my hero
+presently comes and undeceives him. In vain I make signs to him, and
+show him it was all a contrivance of mine; it signifies nothing; he
+continues to the end, and never rests satisfied till he has discovered
+all. Grand and sublime effect of a mind which is not inferior to any man
+living! It is an exquisite piece, and worthy, in troth, to be made a
+present of to the king's private museum.
+
+LEL. I am not surprised that I do not come up to your expectations; if I
+am not acquainted with the designs you are setting on foot, I shall be
+for ever making mistakes.
+
+MASC. So much the worse.
+
+LEL. At least, if you would be justly angry with me, give me a little
+insight into your plan; but if I am kept ignorant of every contrivance,
+I must always be caught napping.
+
+[Footnote: The original is, _je suis pris sans vert_, "I am taken
+without green," because in the month of May, in some parts of France,
+there is a game which binds him or her who is taken without a green leaf
+about them to pay a forfeit.]
+
+MASC. I believe you would make a very good fencing-master, because you
+are so skilful at making feints, and at parrying of a thrust.
+
+[Footnote: In the original we find _prendre les contretemps_, and
+_rompre les mesures_. In a little and very curious book, "The Scots
+Fencing Master, or Compleat Smal-Sword Man," printed in Edinburgh 1687,
+and written by Sir William Hope of Kirkliston, the _contre-temps_
+is said to be: "When a man thrusts without having a good opportunity, or
+when he thrusts at the same time his adversarie thrusts, and that each
+of them at that time receive a thrust." _Breaking of measure_ is,
+according to the same booklet, done thus: "When you perceive your
+adversary thrusting at you, and you are not very certain of the
+_parade_, then _break his measure_, or make his thrust short
+of you, by either stepping a foot or half a foot back, with the
+_single stepp_, for if you judge your adversary's _distance or
+measure_ well, half a foot will _break his measure_ as well as
+ten ells."]
+
+LEL. Since the thing is done, let us think no more about it. My rival,
+however, will not have it in his power to cross me, and provided you
+will but exert your skill, in which I trust...
+
+MASC. Let us drop this discourse, and talk of something else; I am not
+so easily pacified, not I; I am in too great a passion for that. In the
+first place, you must do me a service, and then we shall see whether I
+ought to undertake the management of your amours.
+
+LEL. If it only depends on that, I will do it! Tell me, have you need of
+my blood, of my sword?
+
+MASC. How crack-brained he is! You are just like those swashbucklers who
+are always more ready to draw their sword than to produce a tester, if
+it were necessary to give it.
+
+LEL. What can I do, then, for you?
+
+MASC. You must, without delay, endeavour to appease your father's anger.
+
+LEL. We have become reconciled already.
+
+MASC. Yes, but I am not; I killed him this morning for your sake; the
+very idea of it shocks him. Those sorts of jokes are severely felt by
+such old fellows as he, which, much against their will, make them
+reflect sadly on the near approach of death. The good sire,
+notwithstanding his age, is very fond of life, and cannot bear jesting
+upon that subject; he is alarmed at the prognostication, and so very
+angry that I hear he has lodged a complaint against me. I am afraid that
+if I am once housed at the expense of the king, I may like it so well
+after the first quarter of an hour, that I shall find it very difficult
+afterwards to get away. There have been several warrants out against me
+this good while; for virtue is always envied and persecuted in this
+abominable age. Therefore go and make my peace with your father.
+
+LEL. Yes, I shall soften his anger, but you must promise me then...
+
+MASC. We shall see what there is to be done. (_Exit Lelio_). Now,
+let us take a little breath after so many fatigues; let us stop for a
+while the current of our intrigues, and not move about hither and
+thither as if we were hobgoblins. Leander cannot hurt us now, and Celia
+cannot be removed, through the contrivance of...
+
+
+
+
+SCENE VI.--ERGASTE, MASCARILLE.
+
+
+ERG. I was looking for you everywhere to render you a service. I have a
+secret of importance to disclose.
+
+MASC. What may that be?
+
+ERG. Can no one overhear us?
+
+MASC. Not a soul.
+
+ERG. We are as intimate as two people can be; I am acquainted with all
+your projects, and the love of your master. Mind what you are about by
+and by; Leander has formed a plot to carry off Celia; I have been told
+he has arranged everything, and designs to get into Trufaldin's house in
+disguise, having heard that at this time of the year some ladies of the
+neighbourhood often visit him in the evening in masks.
+
+MASC. Ay, well! He has not yet reached the height of his happiness; I
+may perhaps be beforehand with him; and as to this thrust, I know how to
+give him a counter-thrust, by which he may run himself through. He is
+not aware with what gifts I am endowed. Farewell, we shall take a cup
+together next time we meet.
+
+
+
+
+SCENE VII.--MASCARILLE, alone.
+
+
+We must, we must reap all possible benefit from this amorous scheme, and
+by a dexterous and uncommon counterplot endeavour to make the success
+our own, without any danger. If I put on a mask and be beforehand with
+Leander, he will certainly not laugh at us; if we take the prize ere he
+comes up, he will have paid for us the expenses of the expedition; for,
+as his project has already become known, suspicion will fall upon him;
+and we, being safe from all pursuit, need not fear the consequences of
+that dangerous enterprise. Thus we shall not show ourselves, but use a
+cat's paw to take the chesnuts out of the fire. Now, then, let us go and
+disguise ourselves with some good fellows; we must not delay if we wish
+to be beforehand with our gentry. I love to strike while the iron is
+hot, and can, without much difficulty, provide in one moment men and
+dresses. Depend upon it, I do not let my skill lie dormant. If Heaven
+has endowed me with the gift of knavery, I am not one of those
+degenerate minds who hide the talents they have received.
+
+
+
+
+SCENE VIII.--LELIO, ERGASTE.
+
+
+LEL. He intends to carry her off during a masquerade!
+
+ERG. There is nothing more certain; one of his band informed me of his
+design, upon which I instantly ran to Mascarille and told him the whole
+affair; he said he would spoil their sport by some counter-scheme which
+he planned in an instant; so meeting with you by chance, I thought I
+ought to let you know the whole.
+
+LEL. I am very much obliged to you for this piece of news; go, I shall
+not forget this faithful service.
+
+                                           [_Exit Ergaste_.]
+
+
+
+
+
+SCENE IX.--LELIO, alone.
+
+
+My rascal will certainly play them some trick or other; but I, too, have
+a mind to assist him in his project. It shall never be said that, in a
+business which so nearly concerns me, I stirred no more than a post;
+this is the time; they will be surprised at the sight of me. Why did I
+not take my blunderbuss with me? But let anybody attack me who likes, I
+have two good pistols and a trusty sword. So ho! within there; a word
+with you.
+
+
+
+
+SCENE X.--TRUFALDIN _at his window_, LELIO.
+
+
+TRUF. What is the matter? Who comes to pay me a visit?
+
+LEL. Keep your door carefully shut to-night.
+
+TRUF. Why?
+
+LEL. There are certain people coming masked to give you a sorry kind of
+serenade; they intend to carry off Celia.
+
+TRUF. Good Heavens!
+
+LEL. No doubt they will soon be here. Keep where you are, you may see
+everything from your window. Hey! Did I not tell you so? Do you not see
+them already? Hist! I will affront them before your face. We shall see
+some fine fun, if they do not give way.
+
+[Footnote: This is one of the passages of Moliere about which
+commentators do not agree; the original is, _nous allons voir beau
+jeu, si la corde ne rompt_. Some maintain that _corde_ refers to
+the tight rope of a rope dancer; others that _corde_ means the
+string of a bow, as in the phrase _avoir deux cordes a son arc_, to
+have two strings (resources) to one's bow. Mons. Eugene Despois, in his
+carefully edited edition of Moliere, (i., 187), defends the latter
+reading, and I agree with him.]
+
+
+
+
+SCENE XI.--LELIO, TRUFALDIN, MASCARILLE, _and his company masked_.
+
+
+TRUF. Oh, the funny blades, who think to surprise me.
+
+LEL. Maskers, whither so fast? Will you let me into the secret?
+Trufaldin, pray open the door to these gentry, that they may challenge
+us for a throw with the dice.
+
+[Footnote: The original has _jouer un momon_. Guy Miege, in his
+Dictionary of barbarous French. London, 1679 has "_Mommon_, a
+mummer, also a company of mummers; also a visard, or mask; also a let by
+a mummer at dice."]
+
+(_To Mascarille, disguised as a woman_). Good Heavens! What a
+pretty creature! What a darling she looks! How now! What are you
+mumbling? Without offence, may I remove your mask and see your face.
+
+TRUF. Hence! ye wicked rogues; begone, ye ragamuffins! And you, sir,
+good night, and many thanks.
+
+
+
+
+SCENE XII.--LELIO, MASCARILLE.
+
+
+LEL. (_After having taken the mask from Mascarille's face_).
+Mascarille, is it you?
+
+MASC. No, not at all; it is somebody else.
+
+LEL. Alas! How astonished I am! How adverse is our fate! Could I
+possibly have guessed this, as you did not secretly inform me that you
+were going to disguise yourself? Wretch that I am, thoughtlessly to play
+you such a trick, while you wore this mask. I am in an awful passion
+with myself, and have a good mind to give myself a sound beating.
+
+MASC. Farewell, most refined wit, unparalleled inventive genius.
+
+LEL. Alas! If your anger deprives me of your assistance, what saint
+shall I invoke?
+
+MASC. Beelzebub.
+
+LEL. Ah! If your heart is not made of stone or iron, do once more at
+least forgive my imprudence; if it is necessary to be pardoned that I
+should kneel before you, behold...
+
+MASC. Fiddlesticks! Come, my boys, let us away; I hear some other people
+coming closely behind us.
+
+
+
+
+SCENE XIII.--LEANDER _and his company masked;_ TRUFALDIN _at the
+window_.
+
+
+LEAND. Softly, let us do nothing but in the gentlest manner.
+
+TRUF. (_At the window_). How is this? What! mummers besieging my
+door all night. Gentlemen, do not catch a cold gratuitously; every one
+who is catching it here must have plenty of time to lose. It is rather a
+little too late to take Celia along with you; she begs you will excuse
+her to-night; the girl is in bed and cannot speak to you; I am very
+sorry; but to repay you for all the trouble you have taken for her sake,
+she begs you will be pleased to accept this pot of perfume.
+
+LEAND. Faugh! That does not smell nicely. My clothes are all spoiled; we
+are discovered; let us be gone this way.
+
+
+
+
+ACT IV.
+
+
+
+
+SCENE I.--LELIO, _disguised as an Armenian;_ MASCARILLE.
+
+
+MASC. You are dressed in a most comical fashion.
+
+LEL. I had abandoned all hope, but you have revived it again by this
+contrivance.
+
+MASC. My anger is always too soon over; it is vain to swear and curse, I
+can never keep to my oaths.
+
+LEL. Be assured that if ever it lies in my power you shall be satisfied
+with the proofs of my gratitude, and though I had but one piece of
+bread...
+
+MASC. Enough: Study well this new project; for if you commit now any
+blunder, you cannot lay the blame upon ignorance of the plot; you ought
+to know your part in the play perfectly by heart.
+
+LEL. But how did Trufaldin receive you?
+
+MASC. I cozened the good fellow with a pretended zeal for his interests.
+I went with alacrity to tell him that, unless he took very great care,
+some people would come and surprise him; that from different quarters
+they had designs upon her of whose origin a letter had given a false
+account; that they would have liked to draw me in for a share in the
+business, but that I kept well out of it; and that, being full of zeal
+for what so nearly concerned him, I came to give him timely notice that
+he might take his precautions. Then, moralizing, I discoursed solemnly
+about the many rogueries one sees every day here below; that, as for me,
+being tired with the world and its infamies, I wished to work out my
+soul's salvation, retire from all its noise, and live with some worthy
+honest man, with whom I could spend the rest of my days in peace; that,
+if he had no objection, I should desire nothing more than to pass the
+remainder of my life with him; that I had taken such a liking to him,
+that, without asking for any wages to serve him, I was ready to place in
+his hands, knowing it to be safe there, some property my father had left
+me, as well as my savings, which I was fully determined to leave to him
+alone, if it pleased Heaven to take me hence. That was the right way to
+gain his affection. You and your beloved should decide what means to use
+to attain your wishes. I was anxious to arrange a secret interview
+between you two; he himself has contrived to show me a most excellent
+method, by which you may fairly and openly stay in her house. Happening
+to talk to me about a son he had lost, and whom he dreamt last night had
+come to life again, he told me the following story, upon which, just
+now, I founded my stratagem.
+
+LEL. Enough; I know it all; you have told it me twice already.
+
+[Footnote: Though Lelio says to Mascarille, "Enough, I know it all," he
+has not been listening to the speech of his servant, but, in the
+meanwhile, is arranging his dress, and smoothing his ruffles, and making
+it clear to the spectator that he knows nothing, and that he will be a
+bad performer of the part assigned to him. This explains the blunders he
+makes afterwards in the second and fifth scenes of the same act.]
+
+MASC. Yes, yes; but even if I should tell it thrice, it may happen
+still, that with all your conceit, you might break down in some minor
+detail.
+
+LEL. I long to be at it already.
+
+MASC. Pray, not quite so fast, for fear we might stumble. Your skull is
+rather thick, therefore you should be perfectly well instructed in your
+part. Some time ago Trufaldin left Naples; his name was then Zanobio
+Ruberti. Being suspected in his native town of having participated in a
+certain rebellion, raised by some political faction (though really he is
+not a man to disturb any state), he was obliged to quit it stealthily by
+night, leaving behind him his daughter, who was very young, and his
+wife. Some time afterwards he received the news that they were both
+dead, and in this perplexity, wishing to take with him to some other
+town, not only his property, but also the only one who was left of all
+his family, his young son, a schoolboy, called Horatio, he wrote to
+Bologna, where a certain tutor, named Alberto, had taken the boy when
+very young, to finish there his education; but though for two whole
+years he appointed several times to meet them, they never made their
+appearance. Believing them to be dead, after so long a time, he came to
+this city, where he took the name he now bears, without for twelve years
+ever having discovered any traces of this Alberto, or of his son
+Horatio. This is the substance of the story, which I have repeated so
+that you may better remember the groundwork of the plot. Now, you are to
+personate an Armenian merchant, who has seen them both safe and sound in
+Turkey. If I have invented this scheme, in preference to any other, of
+bringing them to life again according to his dream, it is because it is
+very common in adventures for people to be taken at sea by some Turkish
+pirate, and afterwards restored to their families in the very nick of
+time, when thought lost for fifteen or twenty years. For my part, I have
+heard a hundred of that kind of stories. Without giving ourselves the
+trouble of inventing something fresh, let us make use of this one; what
+does it matter? You must say you heard the story of their being made
+slaves from their own mouths, and also that you lent them money to pay
+their ransom; but that as urgent business obliged you to set out before
+them, Horatio asked you to go and visit his father here, whose
+adventures he was acquainted with, and with whom you were to stay a few
+days till their arrival. I have given you a long lesson now.
+
+LEL. These repetitions are superfluous. From the very beginning I
+understood it all.
+
+MASC. I shall go in and prepare the way.
+
+LEL. Listen, Mascarille, there is only one thing that troubles me;
+suppose he should ask me to describe his son's countenance?
+
+MASC. There is no difficulty in answering that! You know he was very
+little when he saw him last. Besides it is very likely that increase of
+years and slavery have completely changed him.
+
+LEL. That is true. But pray, if he should remember my face, what must I
+do then?
+
+MASC. Have you no memory at all? I told you just now, that he has merely
+seen you for a minute, that therefore you could only have produced a
+very transient impression on his mind; besides, your beard and dress
+disguise you completely.
+
+LEL. Very well. But, now I think of it, what part of Turkey...?
+
+MASC. It is all the same, I tell you, Turkey or Barbary.
+
+LEL. But what is the name of the town I saw them in?
+
+MASC. Tunis. I think he will keep me till night. He tells me it is
+useless to repeat that name so often, and I have already mentioned it a
+dozen times.
+
+LEL. Go, go in and prepare matters; I want nothing more.
+
+MASC. Be cautious at least, and act wisely. Let us have none of your
+inventions here.
+
+LEL. Let me alone! Trust to me, I say, once more.
+
+MASC. Observe, Horatio, a schoolboy in Bologna; Trufaldin, his true name
+Zanobio Ruberti, a citizen of Naples; the tutor was called Alberto...
+
+LEL. You make me blush by preaching so much to me; do you think I am a
+fool?
+
+MASC. No, not completely, but something very like it.
+
+
+
+
+SCENE II.--LELIO, _alone_.
+
+
+When I do not stand in need of him he cringes, but now, because he very
+well knows of how much use he is to me, his familiarity indulges in such
+remarks as he just now made. I shall bask in the sunshine of those
+beautiful eyes, which hold me in so sweet a captivity, and, without
+hindrance, depict in the most glaring colours the tortures I feel. I
+shall then know my fate.... But here they are.
+
+
+
+
+SCENE III.--TRUFALDIN, LELIO, MASCARILLE.
+
+
+TRUF. Thanks, righteous heaven, for this favourable turn of my fortune!
+
+MASC. You are the man to see visions and dream dreams, since you prove
+how untrue is the saying that dreams are falsehoods.
+
+[Footnote: In French there is a play on words between _songes_,
+dreams, and _mensonges_, falsehoods, which cannot be rendered into
+English.]
+
+TRUF. How can I thank you? what returns can I make you, sir? You, whom I
+ought to style the messenger sent from Heaven to announce my happiness!
+
+LEL. These compliments are superfluous; I can dispense with them.
+
+TRUF. (_To Mascarille_). I have seen somebody like this Armenian,
+but I do not know where.
+
+MASC. That is what I was saying, but one sees surprising likenesses
+sometimes.
+
+TRUF. You have seen that son of mine, in whom all my hopes are centred?
+
+LEL. Yes, Signor Trufaldin, and he was as well as well can be.
+
+TRUF. He related to you his life and spoke much about me, did he not?
+
+LEL. More than ten thousand times.
+
+MASC. (_Aside to Lelio_). Not quite so much, I should say.
+
+LEL. He described you just as I see you, your face, your gait.
+
+TRUF. Is that possible? He has not seen me since he was seven years old.
+And even his tutor, after so long a time, would scarcely know my face
+again.
+
+MASC. One's own flesh and blood never forget the image of one's
+relations; this likeness is imprinted so deeply, that my father...
+
+TRUF. Hold your tongue. Where was it you left him?
+
+LEL. In Turkey, at Turin.
+
+TRUF. Turin! but I thought that town was in Piedmont.
+
+MASC. (_Aside_). Oh the dunce! (_To Trufaldin_). You do not
+understand him; he means Tunis; it was in reality there he left your
+son; but the Armenians always have a certain vicious pronunciation,
+which seems very harsh to us; the reason of it is because in all their
+words they change _nis_ into _rin_; and so, instead of saying
+_Tunis_, they pronounce _Turin_.
+
+TRUF. I ought to know this in order to understand him. Did he tell you
+in what way you could meet with his father?
+
+MASC. (_Aside_). What answer will he give?
+
+[Footnote: Trufaldin having found out that Mascarille makes signs to his
+master, the servant pretends to fence.]
+
+(_To Trufaldin, after pretending to fence_). I was just practising
+some passes; I have handled the foils in many a fencing school.
+
+TRUF. (_To Mascarille_). That is not the thing I wish to know now.
+(_To Lelio_). What other name did he say I went by?
+
+MASC. Ah, Signor Zanobio Ruberti. How glad you ought to be for what
+Heaven sends you!
+
+LEL. That is your real name; the other is assumed.
+
+TRUF. But where did he tell you he first saw the light?
+
+MASC. Naples seems a very nice place, but you must feel a decided
+aversion to it.
+
+TRUF. Can you not let us go on with our conversation, without
+interrupting us?
+
+LEL. Naples is the place where he first drew his breath.
+
+TRUF. Whither did I send him in his infancy, and under whose care?
+
+MASC. That poor Albert behaved very well, for having accompanied your
+son from Bologna, whom you committed to his care.
+
+TRUF. Pshaw!
+
+MASC. (_Aside_). We are undone if this conversation lasts long.
+
+TRUF. I should very much like to know their adventures; aboard what ship
+did my adverse fate...?
+
+MASC. I do not know what is the matter with me, I do nothing but yawn.
+But, Signor Trufaldin, perhaps this stranger may want some refreshment;
+besides, it grows late.
+
+LEL. No refreshment for me.
+
+MASC. Oh sir, you are more hungry than you imagine.
+
+TRUF. Please to walk in then.
+
+LEL. After you, sir.
+
+[Footnote: It shows that Lelio knows not what he is about when he does
+the honours of the house to the master of the house himself, and forgets
+that as a stranger he ought to go in first.]
+
+MASC. (_To Trufaldin_). Sir, in Armenia, the masters of the house
+use no ceremony. (_To Lelio, after Trufaldin has gone in_). Poor
+fellow, have you not a word to say for yourself?
+
+LEL. He surprised me at first; but never fear, I have rallied my
+spirits, and am going to rattle away boldly..
+
+MASC. Here comes our rival, who knows nothing of our plot. (_They go
+into Trufaldin's house_).
+
+
+
+
+SCENE IV.--ANSELMO, LEANDER.
+
+
+ANS. Stay, Leander, and allow me to tell you something which concerns
+your peace and reputation. I do not speak to you as the father of
+Hippolyta, as a man interested for my own family, but as your father,
+anxious for your welfare, without wishing to flatter you or to disguise
+anything; in short, openly and honestly, as I would wish a child of mine
+to be treated upon the like occasion. Do you know how everybody regards
+this amour of yours, which in one night has burst forth? How your
+yesterday's undertaking is everywhere talked of and ridiculed? What
+people think of the whim which, they say, has made you select for a wife
+a gipsy outcast, a strolling wench, whose noble occupation was only
+begging? I really blushed for you, even more than I did for myself, who
+am also compromised by this public scandal. Yes, I am compromised, I
+say, I whose daughter, being engaged to you, cannot bear to see her
+slighted, without taking offence at it. For shame, Leander; arise from
+your humiliation; consider well your infatuation; if none of us are wise
+at all times, yet the shortest errors are always the best. When a man
+receives no dowry with his wife, but beauty only, repentance follows
+soon after wedlock; and the handsomest woman in the world can hardly
+defend herself against a lukewarmness caused by possession. I repeat it,
+those fervent raptures, those youthful ardours and ecstacies, may make
+us pass a few agreeable nights, but this bliss is not at all lasting,
+and as our passions grow cool, very unpleasant days follow those
+pleasant nights; hence proceed cares, anxieties, miseries, sons
+disinherited through their fathers' wrath.
+
+LEAND. All that I now hear from you is no more than what my own reason
+has already suggested to me. I know how much I am obliged to you for the
+great honour you are inclined to pay me, and of which I am unworthy. In
+spite of the passion which sways me, I have ever retained a just sense
+of your daughter's merit and virtue: therefore I will endeavour...
+
+ANS. Somebody is opening this door; let us retire to a distance, lest
+some contagion spreads from it, which may attack you suddenly.
+
+
+
+
+SCENE V.--LELIO, MASCARILLE.
+
+
+MASC. We shall soon see our roguery miscarry if you persist in such
+palpable blunders.
+
+LEL. Must I always hear your reprimands? What can you complain of? Have
+I not done admirably since...?
+
+MASC. Only middling; for example, you called the Turks heretics, and you
+affirmed, on your corporal oath, that they worshipped the sun and moon
+as their gods. Let that pass. What vexes me most is that, when you are
+with Celia, you strangely forget yourself; your love is like porridge,
+which by too fierce a fire swells, mounts up to the brim, and runs over
+everywhere.
+
+LEL. Could any one be more reserved? As yet I have hardly spoken to her.
+
+MASC. You are right! but it is not enough to be silent; you had not been
+a moment at table till your gestures roused more suspicion than other
+people would have excited in a whole twelvemonth.
+
+LEL. How so?
+
+MASC. How so? Everybody might have seen it. At table, where Trufaldin
+made her sit down, you never kept your eyes off her, blushed, looked
+quite silly, cast sheep's eyes at her, without ever minding what you
+were helped to; you were never thirsty but when she drank, and took the
+glass eagerly from her hands; and without rinsing it, or throwing a drop
+of it away, you drank what she left in it, and seemed to choose in
+preference that side of the glass which her lips had touched; upon every
+piece which her slender hand had touched, or which she had bit, you laid
+your paw as quickly as a cat does upon a mouse, and you swallowed it as
+glibly as if you were a regular glutton. Then, besides all this, you
+made an intolerable noise, shuffling with your feet under the table, for
+which Trufaldin, who received two lusty kicks, twice punished a couple
+of innocent dogs, who would have growled at you if they dared; and yet,
+in spite of all this, you say you behaved finely! For my part I sat upon
+thorns all the time; notwithstanding the cold, I feel even now in a
+perspiration. I hung over you just as a bowler does over his bowl after
+he has thrown it, and thought to restrain your actions by contorting my
+body ever so many times.
+
+LEL. Lack-a day! how easy it is for you to condemn things of which you
+do not feel the enchanting cause. In order to humour you for once I
+have, nevertheless, a good mind to put a restraint upon that love which
+sways me. Henceforth...
+
+
+
+
+SCENE VI.--TRUFALDIN, LELIO, MASCARILLE.
+
+
+MASC. We were speaking about your son's adventures.
+
+TRUF. (_To Lelio_). You did quite right. Will you do me the favour
+of letting me have one word in private with him?
+
+LEL. I should be very rude if I did not. (_Lelio goes into Trufaldin's
+House_).
+
+
+
+
+SCENE VII.--TRUFALDIN, MASCARILLE.
+
+
+TRUF. Hark ye! do you know what I have just been doing?
+
+MASC. No, but if you think it proper, I shall certainly not remain long
+in ignorance.
+
+TRUF. I have just now cut off from a large and sturdy oak, of about two
+hundred years old, an admirable branch, selected on purpose, of
+tolerable thickness, of which immediately, upon the spot, I made a
+cudgel, about ... yes, of this size (_showing his arm_); not so
+thick at one end as at the other, but fitter, I imagine, than thirty
+switches to belabour the shoulders withal; for it is well poised, green,
+knotty, and heavy.
+
+MASC. But, pray, for whom is all this preparation?
+
+TRUF. For yourself, first of all; then, secondly, for that fellow, who
+wishes to palm one person upon me, and trick me out of another; for this
+Armenian, this merchant in disguise, introduced by a lying and pretended
+story.
+
+MASC. What! you do not believe...?
+
+TRUF. Do not try to find an excuse; he himself, fortunately, discovered
+his own stratagem, by telling Celia, whilst he squeezed her hand at the
+same time, that it was for her sake alone he came disguised in this
+manner. He did not perceive Jeannette, my little god-daughter, who
+overheard every word he said. Though your name was not mentioned, I do
+not doubt but you are a cursed accomplice in all this.
+
+MASC. Indeed, you wrong me. If you are really deceived, believe me I was
+the first imposed upon with his story.
+
+TRUF. Would you convince me you speak the truth? Assist me in giving him
+a sound drubbing, and in driving him away; let us give it the rascal
+well, and then I will acquit you of all participation in this piece of
+rascality.
+
+MASC. Ay, ay, with all my soul. I will dust his jacket for him so
+soundly, that you shall see I had no hand in this matter.
+(_Aside_). Ah! you shall have a good licking, Mister Armenian, who
+always spoil everything.
+
+
+
+
+SCENE VIII.--LELIO, TRUFALDIN, MASCARILLE.
+
+
+TRUF. (_Knocks at his door, and then addresses Lelio_). A word with
+you, if you please. So, Mr. Cheat, you have the assurance to fool a
+respectable man, and make game of him?
+
+MASC. To pretend to have seen his son abroad, in order to get the more
+easily into his house!
+
+TRUF. (_Beating Lelio_). Go away, go away immediately.
+
+LEL. (_To Mascarille, who beats him likewise_). Oh! you scoundrel!
+
+MASC. It is thus that rogues...
+
+LEL. Villain!
+
+MASC. Are served here. Keep that for my sake!
+
+LEL. What? Is a gentleman...?
+
+MASC. (_Beating him and driving him off). March off, begone, I tell
+you, or I shall break all the bones in your body.
+
+TRUF. I am delighted with this; come in, I am satisfied. (_Mascarille
+follows Trufaldin into his house_).
+
+LEL. (_Returning_). This to me! To be thus affronted by a servant!
+Could I have thought the wretch would have dared thus to ill-treat his
+master?
+
+MASC. (_From Trufaldin's window_). May I take the liberty to ask
+how your shoulders are?
+
+LEL. What! Have you the impudence still to address me?
+
+MASC. Now see what it is not to have perceived Jeannette, and to have
+always a blabbing tongue in your head! However, this time I am not angry
+with you, I have done cursing and swearing at you; though you behaved
+very imprudently, yet my hand has made your shoulders pay for your
+fault.
+
+LEL. Ha! I shall be revenged on you for your treacherous behaviour.
+
+MASC. You yourself were the cause of all this mischief.
+
+LEL. I?
+
+MASC. If you had had a grain of sense when you were talking to your idol
+you would have perceived Jeannette at your heels, whose sharp ears
+overheard the whole affair.
+
+LEL. Could anybody possibly catch one word I spoke to Celia?
+
+MASC. And what else was the cause why you were suddenly turned out of
+doors? Yes, you are shut out by your own tittle-tattle. I do not know
+whether you play often at piquet, but you at least throw your cards away
+in an admirable manner.
+
+LEL. Oh! I am the most unhappy of all men. But why did you drive me away
+also?
+
+MASC. I never did better than in acting thus. By these means, at least,
+I prevent all suspicion of my being the inventor or an accomplice of
+this stratagem.
+
+LEL. But you should have laid it on more gently.
+
+MASC. I was no such fool! Trufaldin watched me most narrowly; besides, I
+must tell you, under the pretence of being of use to you, I was not at
+all displeased to vent my spleen. However, the thing is done, and if you
+will give me your word of honour, never, directly or indirectly, to be
+revenged on me for the blows on the back I so heartily gave you, I
+promise you, by the help of my present station, to satisfy your wishes
+within these two nights.
+
+LEL. Though you have treated me very harshly, yet what would not such a
+promise prevail upon me to do?
+
+MASC. You promise, then?
+
+LEL. Yes, I do.
+
+MASC. But that is not all; promise never to meddle in anything I take in
+hand.
+
+LEL. I do.
+
+MASC. If you break your word may you get the cold shivers!
+
+LEL. Then keep it with me, and do not forget my uneasiness.
+
+MASC. Go and change your dress, and rub something on your back.
+
+LEL. (_Alone_). Will ill-luck always follow me, and heap upon me
+one misfortune after another?
+
+MASC. (_Coming out of Trufaldin's house_). What! Not gone yet?
+Hence immediately; but, above all, be sure you don't trouble your head
+about any thing. Be satisfied, that I am on your side; do not make the
+least attempt to assist me; remain quiet.
+
+LEL. (_Going_). Yes, to be sure, I will remain quiet.
+
+MASC. (_Alone_). Now let me see what course I am to steer.
+
+
+
+
+SCENE IX.--ERGASTE, MASCARILLE.
+
+
+ERG. Mascarille, I come to tell you a piece of news, which will give a
+cruel blow to your projects. At the very moment I am talking to you, a
+young gipsy, who nevertheless is no black, and looks like a gentleman,
+has arrived with a very wan-looking old woman, and is to call upon
+Trufaldin to purchase the slave you wished to redeem. He seems to be
+very anxious to get possession of her.
+
+MASC. Doubtless it is the lover Celia spoke about. Were ever fortunes so
+tangled as ours? No sooner have we got rid of one trouble than we fall
+into another. In vain do we hear that Leander intends to abandon his
+pursuit, and to give us no further trouble; that the unexpected arrival
+of his father has turned the scales in favour of Hippolyta; that the old
+gentleman has employed his parental authority to make a thorough change,
+and that the marriage contract is going to be signed this very day; as
+soon as one rival withdraws, another and a more dangerous one starts up
+to destroy what little hope there was left. However, by a wonderful
+stratagem, I believe I shall be able to delay their departure and gain
+what time I want to put the finishing stroke to this famous affair. A
+great robbery has lately been committed, by whom, nobody knows. These
+gipsies have not generally the reputation of being very honest; upon
+this slight suspicion, I will cleverly get the fellow imprisoned for a
+few days. I know some officers of justice, open to a bribe, who will not
+hesitate on such an occasion; greedy and expecting some present, there
+is nothing they will not attempt with their eyes shut; be the accused
+ever so innocent, the purse is always criminal, and must pay for the
+offence.
+
+
+
+
+ACT V.
+
+
+
+
+SCENE I.--MASCARILLE, ERGASTE.
+
+
+MASC. Ah blockhead! numskull! idiot! Will you never leave off
+persecuting me?
+
+ERG. The constable took great care everything was going on smoothly; the
+fellow would have been in jail, had not your master come up that very
+moment, and, like a madman spoiled your plot. "I cannot suffer," says he
+in a loud voice, "that a respectable man should be dragged to prison in
+this disgraceful manner; I will be responsible for him, from his very
+looks, and will be his bail." And as they refused to let him go, he
+immediately and so vigorously attacked the officers, who are a kind of
+people much afraid of their carcasses, that, even at this very moment,
+they are running, and every man thinks he has got a Lelio at his heels.
+
+MASC. The fool does not know that this gipsy is in the house already to
+carry off his treasure.
+
+ERG. Good-bye, business obliges me to leave you.
+
+
+
+
+SCENE II.--MASCARILLE, _alone_.
+
+
+Yes, this last marvellous accident quite stuns me. One would think, and
+I have no doubt of it, that this bungling devil which possesses Lelio
+takes delight in defying me, and leads him into every place where his
+presence can do mischief. Yet I shall go on, and notwithstanding all
+these buffets of fortune, try who will carry the day. Celia has no
+aversion to him, and looks upon her departure with great regret. I must
+endeavour to improve this opportunity. But here they come; let me
+consider how I shall execute my plan. Yonder furnished house is at my
+disposal, and I can do what I like with it; if fortune but favours us,
+all will go well; nobody lives there but myself, and I keep the key.
+Good Heavens! what a great many adventures have befallen us in so short
+a time, and what numerous disguises a rogue is obliged to put on.
+
+
+
+
+SCENE III.--CELIA, ANDRES.
+
+
+AND. You know it, Celia, I have left nothing undone to prove the depth
+of my passion. When I was but very young, my courage in the wars gained
+me some consideration among the Venetians, and one time or other, and
+without having too great an opinion of myself, I might, had I continued
+in their service, have risen to some employment of distinction; but, for
+your sake, I abandoned everything; the sudden change you produced in my
+heart, was quickly followed by your lover joining the gipsies. Neither a
+great many adventures nor your indifference have been able to make me
+abandon my pursuit. Since that time, being by an accident separated from
+you much longer than I could have foreseen, I spared neither time nor
+pains to meet with you again. At last I discovered the old gipsy-woman,
+and heard from her that for a certain sum of money, which was then of
+great consequence to the gipsies, and prevented the dissolution of the
+whole band, you were left in pledge in this neighbourhood. Full of
+impatience, I flew hither immediately to break these mercenary chains,
+and to receive from you whatever commands you might be pleased to give.
+But, when I thought to see joy sparkle in your eyes, I find you pensive
+and melancholy; if quietness has charms for you, I have sufficient means
+at Venice, of the spoils taken in war, for us both to live there; but if
+I must still follow you as before, I will do so, and my heart shall have
+no other ambition than to serve you in whatever manner you please.
+
+CEL. You openly display your affection for me. I should be ungrateful
+not to be sensible of it. Besides, just now, my countenance does not
+bear the impress of the feelings of my heart; my looks show that I have
+a violent headache. If I have the least influence over you, you will
+delay our voyage for at least three or four days, until my indisposition
+has passed away.
+
+AND. I shall stay as long as you like; I only wish to please you; let us
+look for a house where you may be comfortable. Ho! here is a bill up
+just at the right time.
+
+
+
+
+SCENE IV.--CELIA, ANDRES, MASCARILLE, _disguised as a Swiss_.
+
+
+AND. Monsieur Swiss, are you the master of the house?
+
+MASC. I am at your service.
+
+[Footnote: In the original, Mascarille speaks a kind of gibberish, which
+is only amusing when the play is acted; but it can serve no purpose to
+translate "_moi, pour serfir a fous_," "_Oui, moi pour
+d'estrancher chappon champre garni, mais che non point locher te gent te
+mechant vi_," etc., by "me be at your serfice," "yes. me have de very
+goot shambers, ready furnish for stranger, but me no loge de people
+scandaluse," etc. A provincial pronunciation, an Irish brogue, or a
+Scotch tongue, are no equivalent for this mock Swiss German-French.]
+
+AND. Can we lodge here?
+
+MASC. Yes, I let furnished lodgings to strangers, but only to
+respectable people.
+
+AND. I suppose your house has a very good reputation?
+
+MASC. I see by your face you are a stranger in this town.
+
+AND. I am.
+
+MASC. Are you the husband of this lady?
+
+AND. Sir?
+
+MASC. Is she your wife or your sister?
+
+AND. Neither.
+
+MASC. Upon my word, she is very pretty! Do you come on business, or have
+you a lawsuit going on before the court? A lawsuit is a very bad thing,
+it costs so much money; a solicitor is a thief, and a barrister a rogue.
+
+AND. I do not come for either of these.
+
+MASC. You have brought this young lady then to walk about and to see the
+town?
+
+AND. What is that to you? (_To Celia_). I shall be with you again
+in one moment; I am going to fetch the old woman presently, and tell
+them not to send the travelling-carriage which was ready.
+
+MASC. Is the lady not quite well?
+
+AND. She has a headache.
+
+MASC. I have some good wine and cheese within; walk in, go into my small
+house. (_Celia, Andres and Mascarille go into the house_).
+
+
+
+
+SCENE V.--LELIO, _alone_.
+
+
+However impatient and excited I may feel, yet I have pledged my word to
+do nothing but wait quietly, to let another work for me, and to see,
+without daring to stir, in what manner Heaven will change my destiny.
+
+
+
+
+SCENE VI.--ANDRES, LELIO.
+
+
+LEL. (_Addressing Andres, who is coming out of the house_). Do you
+want to see anybody in this house?
+
+AND. I have just taken some furnished apartments there.
+
+LEL. The house belongs to my father, and my servant sleeps there every
+night to take care of it.
+
+AND. I know nothing of that; the bill, at least, shows it is to be let;
+read it.
+
+LEL. Truly this surprises me, I confess. Who the deuce can have put that
+bill up, and why...? Ho, faith, I can guess, pretty near, what it means;
+this cannot possibly proceed but from the quarter I surmise.
+
+AND. May I ask what affair this may be?
+
+LEL. I would keep it carefully from anybody else, but it can be of no
+consequence to you, and you will not mention it to any one. Without
+doubt, that bill can be nothing else but an invention of the servant I
+spoke of; nothing but some cunning plot he has hatched to place into my
+hands a certain gipsy girl, with whom I am smitten, and of whom I wish
+to obtain possession. I have already attempted this several times, but
+until now in vain.
+
+AND. What is her name?
+
+LEL. Celia.
+
+AND. What do you say? Had you but mentioned this, no doubt I should have
+saved you all the trouble this project costs you.
+
+LEL. How so? Do you know her?
+
+AND. It is I who just now bought her from her master.
+
+LEL. You surprise me!
+
+AND. As the state of her health did not allow her to leave this town, I
+just took these apartments for her; and I am very glad that on this
+occasion you have acquainted me with your intentions.
+
+LEL. What! shall I obtain the happiness I hope for by your means? Could
+you...?
+
+AND. (_Knocks at the door_). You shall be satisfied immediately.
+
+LEL. What can I say to you? And what thanks...?
+
+AND. No, give me none; I will have none.
+
+
+
+
+SCENE VII.--LELIO, ANDRES, MASCARILLE.
+
+
+MASC. (_Aside_). Hallo! Is this not my mad-cap master? He will make
+another blunder.
+
+LEL. Who would have known him in this grotesque dress? Come hither,
+Mascarille, you are welcome.
+
+MASC. I am a man of honour; I am not Mascarille, I never debauched any
+married or unmarried woman.
+
+[Footnote: Mascarille answers in his gibberish, "Moi non point
+_Masquerille_," an allusion to _maquerelle_ a female pander;
+hence his further remarks.]
+
+LEL. What funny gibberish! It is really very good!
+
+MASC. Go about your business, and do not laugh at me.
+
+LEL. You can take off your dress; recognise your master.
+
+MASC. Upon my word! by all the saints, I never knew you!
+
+LEL. Everything is settled, disguise yourself no longer.
+
+MASC. If you do not go away I will give you a slap in the face.
+
+LEL. Your Swiss jargon is needless, I tell you, for we are agreed, and
+his generosity lays me under an obligation. I have all I can wish for;
+you have no reason to be under any farther apprehension.
+
+MASC. If you are agreed, by great good luck, I will no longer play the
+Swiss, and become myself again.
+
+AND. This valet of yours serves you with much zeal; stay a little; I
+will return presently.
+
+
+
+
+SCENE VIII.--LELIO, MASCARILLE.
+
+
+LEL. Well, what do you say now?
+
+MASC. That I am delighted to see our labours crowned with success.
+
+LEL. You were hesitating to doff your disguise, and could hardly believe
+me.
+
+MASC. As I know you I was rather afraid, and still find the adventure
+very astonishing.
+
+LEL. But confess, however, that I have done great things--at least I
+have now made amends for all my blunders--mine will be the honour of
+having finished the work.
+
+MASC. Be it so; you have been much more lucky than wise.
+
+
+
+
+SCENE IX.--CELIA, ANDRES, LELIO, MASCARILLE.
+
+
+AND. Is not this the lady you were speaking of to me?
+
+LEL. Heavens! what happiness can be equal to mine!
+
+AND. It is true; I am indebted to you for the kindness you have shown
+me; I should be much to blame if I did not acknowledge it; but this
+kindness would be too dearly bought were I to repay it at the expense of
+my heart. Judge, by the rapture her beauty causes me, whether I ought to
+discharge my debt to you at such a price. You are generous, and would
+not have me act thus. Farewell. Let us return whence we came, and stay
+there for a few days. (_He leads Celia away_).
+
+
+
+
+SCENE X.--LELIO, MASCARILLE.
+
+
+MASC. I am laughing, and yet I have little inclination to it. You two
+are quite of the same mind; he gives Celia to you. Hem! ... You
+understand me, sir?
+
+LEL. This is too much. I am determined no longer to ask you to assist
+me; it is useless; I am a puppy, a wretch, a detestable blockhead, not
+worthy of any one taking any trouble for me, incapable of doing
+anything. Abandon all endeavours to aid an unfortunate wretch, who will
+not allow himself to be made happy; after so many misfortunes, after all
+my imprudent actions, death alone should aid me.
+
+
+
+
+SCENE XI.--MASCARILLE, _alone_.
+
+
+That is the true way of putting the finishing stroke to his fate; he
+wants nothing now but to die, to crown all his follies. But in vain his
+indignation, for all the faults he has committed urges him to renounce
+my aid and my support. I intend, happen what will, to serve him in spite
+of himself, and vanquish the very devil that possesses him. The greater
+the obstacle, the greater the glory; and the difficulties which beset us
+are but a kind of tire-women who deck and adorn virtue.
+
+
+
+
+SCENE XII.--CELIA, MASCARILLE.
+
+
+CELIA. (_To Mascarille, who has been whispering to her_). Whatever
+you may say, and whatever they intend doing, I have no great expectation
+from this delay. What we have seen hitherto may indeed convince us that
+they are not as yet likely to agree. I have already told you that a
+heart like mine will not for the sake of one do an injustice to another,
+and that I find myself strongly attached to both, though by different
+ties. If Lelio has love and its power on his side, Andres has gratitude
+pleading for him, which will not permit even my most secret thoughts
+ever to harbour anything against his interests. Yes; if he has no longer
+a place in my heart, if the gift of my hand must not crown his love, I
+ought at least to reward that which he has done for me, by not choosing
+another, in contempt of his flame, and suppress my own inclinations in
+the same manner as I do his. You have heard the difficulties which duty
+throws in my way, and you can judge now whether your expectations will
+be realized.
+
+MASC. To speak the truth, they are very formidable obstacles in our way,
+and I have not the knack of working miracles; but I will do my utmost,
+move Heaven and earth, leave no stone unturned to try and discover some
+happy expedient. I shall soon let you know what can be done.
+
+
+
+
+SCENE XIII.--HIPPOLYTA, CELIA.
+
+
+HIPP. Ever since you came among us, the ladies of this neighbourhood may
+well complain of the havoc caused by your eyes, since you deprive them
+of the greatest part of their conquests, and make all their lovers
+faithless. There is not a heart which can escape the darts with which
+you pierce them as soon as they see you; many thousands load themselves
+with your chains, and seem to enrich you daily at our expense. However,
+as regards myself, I should make no complaints of the irresistible sway
+of your exquisite charms, had they left me one of all my lovers to
+console me for the loss of the others; but it is inhuman in you that
+without mercy you deprive me of all; I cannot forbear complaining to
+you.
+
+CEL. You rally in a charming manner, but I beseech you to spare me a
+little. Those eyes, those very eyes of yours, know their own power too
+well ever to dread anything that I am able to do; they are too conscious
+of their own charms, and will never entertain similar feelings of fear.
+
+HIPP. Yet I advance nothing in what I have said which has not already
+entered the mind of every one, and without mentioning anything else, it
+is well known that Celia has made a deep impression on Leander and on
+Lelio.
+
+CEL. I believe you will easily console yourself about their loss, since
+they have become so infatuated; nor can you regret a lover who could
+make so ill a choice.
+
+HIPP. On the contrary, I am of quite a different opinion, and discover
+such great merits in your beauty, and see in it so many reasons
+sufficient to excuse the inconstancy of those who allow themselves to be
+attracted by it, that I cannot blame Leander for having changed his love
+and broken his plighted troth. In a short time, and without either
+hatred or anger, I shall see him again brought under my sway, when his
+father shall have exercised his authority.
+
+
+
+
+SCENE XIV.--CELIA, HIPPOLYTA, MASCARILLE.
+
+
+MASC. Great news! great news! a wonderful event which I am now going to
+tell you!
+
+CEL. What means this?
+
+MASC. Listen. This is, without any compliments...
+
+CEL. What?
+
+MASC. The last scene of a true and genuine comedy. The old gipsy-woman
+was, but this very moment...
+
+CEL. Well?
+
+MASC. Crossing the market-place, thinking about nothing at all, when
+another old woman, very haggard-looking, after having closely stared at
+her for some time, hoarsely broke out in a torrent of abusive language,
+and thus gave the signal for a furious combat, in which, instead of
+swords, muskets, daggers, or arrows, nothing was seen but four withered
+paws, brandished in the air, with which these two combatants endeavoured
+to tear off the little flesh old age had left on their bones. Not a word
+was heard but drab, wretch, trull. Their caps, to begin with, were
+flying about, and left a couple of bald pates exposed to view, which
+rendered the battle ridiculously horrible. At the noise and hubbub,
+Andres and Trufaldin, as well as many others, ran to see what was the
+matter, and had much ado to part them, so excited were they by passion.
+Meanwhile each of them, when the storm was abated, endeavoured to hide
+her head with shame. Everybody wished to know the cause of this
+ridiculous fray. She who first began it having, notwithstanding the
+warmth of her passion, looked for some time at Trufaldin, said in a loud
+voice,--"It is you, unless my sight misgives me, who, I was informed,
+lived privately in this town; most happy meeting! Yes, Signor Zanobio
+Ruberti, fortune made me find you out at the very moment I was giving
+myself so much trouble for your sake. When you left your family at
+Naples, your daughter, as you know, remained under my care. I brought
+her up from her youth. When she was only four years old she showed
+already in a thousand different ways what charms and beauty she would
+have. That woman you see there--that infamous hag--who had become
+rather intimate with us, robbed me of that treasure. Your good lady,
+alas! felt so much grief at this misfortune, that, as I have reason to
+believe it shortened her days; so that, fearing your severe reproaches
+because your daughter had been stolen from me, I sent you word that both
+were dead; but now, as I have found out the thief, she must tell us what
+has become of your child." At the name of Zanobio Ruberti, which she
+repeated several times throughout the story, Andres, after changing
+colour often, addressed to the surprised Trufaldin these words: "What!
+has Heaven most happily brought me to him whom I have hitherto sought in
+vain! Can I possibly have beheld my father, the author of my being,
+without knowing him? Yes, father, I am Horatio, your son; my tutor,
+Albert, having died, I felt anew certain uneasiness in my mind, left
+Bologna, and abandoning my studies, wandered about for six years in
+different places, according as my curiosity led me. However, after the
+expiration of that time, a secret impulse drove me to revisit my kindred
+and my native country; but in Naples, alas! I could no longer find you,
+and could only hear vague reports concerning you; so that having in vain
+tried to meet with you, I ceased to roam about idly, and stopped for a
+while in Venice. From that time to this I have lived without receiving
+any other information about my family, except knowing its name." You may
+judge whether Trufaldin was not more than ordinarily moved all this
+while; in one word (to tell you shortly that which you will have an
+opportunity of learning afterwards more at your leisure, from the
+confession of the old gipsy-woman), Trufaldin owns you (_to Celia_)
+now for his daughter; Andres is your brother; and as he can no longer
+think of marrying his sister, and as he acknowledges he is under some
+obligation to my master, Lelio, he has obtained for him your hand.
+Pandolphus being present at this discovery, gives his full consent to
+the marriage; and to complete the happiness of the family, proposes that
+the newly-found Horatio should marry his daughter. See how many
+incidents are produced at one and the same time!
+
+CEL. Such tidings perfectly amaze me.
+
+MASC. The whole company follow me, except the two female champions, who
+are adjusting their toilet after the fray. Leander and your father are
+also coming. I shall go and inform my master of this, and let him know
+that when we thought obstacles were increasing, Heaven almost wrought a
+miracle in his favour. (_Exit Mascarille_).
+
+HIPP. This fortunate event fills me with as much as joy as if it were my
+own case. But here they come.
+
+
+
+
+SCENE XV.--TRUFALDIN, ANSELMO, ANDRES, CELIA, HIPPOLYTA, LEANDER.
+
+
+TRUF. My child!
+
+CEL. Father!
+
+TRUF. Do you already know how Heaven has blest us?
+
+CEL. I have just now heard this wonderful event.
+
+HIPP. (_To Leander_). You need not find excuses for your past
+infidelity. The cause of it, which I have before my eyes, is a
+sufficient excuse.
+
+LEAND. I crave nothing but a generous pardon. I call Heaven to witness
+that, though I return to my duty suddenly, my father's authority has
+influenced me less than my own inclination.
+
+AND. (_To Celia_). Who could ever have supposed that so chaste a
+love would one day be condemned by nature? However, honour swayed it
+always so much, that with a little alteration it may still continue.
+
+CEL. As for me, I blamed myself, and thought I was wrong, because I felt
+nothing but a very sincere esteem for you. I could not tell what
+powerful obstacle stopped me in a path so agreeable and so dangerous,
+and diverted my heart from acknowledging a love which my senses
+endeavoured to communicate to my soul.
+
+TRUF. (_To Celia_). But what would you say of me if, as soon as I
+have found you, I should be thinking of parting with you? I promised
+your hand to this gentleman's son.
+
+CEL. I know no will but yours.
+
+
+
+
+SCENE XVI.--TRUFALDIN, ANSELMO, PANDOLPHUS, CELIA, HIPPOLYTA, LELIO,
+LEANDER, ANDRES, MASCARILLE.
+
+
+MASC. Now, let us see whether this devil of yours will have the power to
+destroy so solid a foundation as this; and whether your inventive powers
+will again strive against this great good luck that befalls you. Through
+a most unexpected favourable turn of fortune your desires are crowned
+with success, and Celia is yours.
+
+LEL. Am I to believe that the omnipotence of Heaven...?
+
+TRUF. Yes, son-in-law, it is really so.
+
+PAND. The matter is settled.
+
+AND. (_To Lelio_). By this I repay the obligation you lay me under.
+
+LEL. (_To Mascarille_). I must embrace you ever so many times in
+this great joy...
+
+MASC. Oh! oh! gently, I beseech you; he has almost choked me. I am very
+much afraid for Celia if you embrace her so forcibly. One can do very
+well without such proofs of affection.
+
+TRUF. (_To Lelio_). You know the happiness with which Heaven has
+blessed me; but since the same day has caused us all to rejoice, let us
+not part until it is ended, and let Leander's father also be sent for
+quickly.
+
+MASC. You are all provided for. Is there not some girl who might suit
+poor Mascarille? As I see, every Jack has his Gill, I also want to be
+married.
+
+ANS. I have a wife for you.
+
+MASC. Let us go, then; and may propitious Heaven give us children, whose
+fathers we really are.
+
+
+
+
+
+
+
+
+
+
+
+
+End of the Project Gutenberg EBook of The Blunderer, by Moliere
+
+*** END OF THE PROJECT GUTENBERG EBOOK THE BLUNDERER ***
+
+This file should be named 7blnd10.txt or 7blnd10.zip
+Corrected EDITIONS of our eBooks get a new NUMBER, 7blnd11.txt
+VERSIONS based on separate sources get new LETTER, 7blnd10a.txt
+
+Produced by David Moynihan, D Garcia, Charles Franks
+and the Online Distributed Proofreading Team.
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+

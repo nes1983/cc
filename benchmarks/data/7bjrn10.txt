@@ -1,0 +1,2021 @@
+The Project Gutenberg Etext of Bjornstjerne Bjornson
+by William Morton Payne
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg file.
+
+Please do not remove this header information.
+
+This header should be the first thing seen when anyone starts to
+view the eBook. Do not change or edit it without written permission.
+The words are carefully chosen to provide users with the information
+needed to understand what they may and may not do with the eBook.
+To encourage this, we have moved most of the information to the end,
+rather than having it all here at the beginning.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get eBooks, and
+further information, is included below.  We need your donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+Find out about how to make a donation at the bottom of this file.
+
+
+Title: Bjornstjerne Bjornson
+
+Author: William Morton Payne
+
+Release Date: October, 2003  [Etext #4582]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on February 11, 2002]
+
+Edition: 10
+
+Language: English
+
+Character set encoding: ISO8859-1
+
+The Project Gutenberg Etext of Bjornstjerne Bjornson
+by William Morton Payne
+******This file should be named 7bjrn10.txt or 7bjrn10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7bjrn11.txt
+VERSIONS based on separate sources get new LETTER, 7bjrn10a.txt
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+The "legal small print" and other information about this book
+may now be found at the end of this file.  Please read this
+important information, as it gives you specific rights and
+tells you about restrictions in how the file may be used.
+
+***
+This etext was produced by Nicole Apostola.
+
+Bjornstjerne Bjornson
+1832-1910
+by William Morton Payne, LL.D.
+Translator of Bjornson's "Sigurd Slembe" and Jaeger's "Ibsen," Author of "Little Leaders," Etc.
+
+To Mary
+
+
+INTRODUCTORY NOTE
+
+When the date of Bjornson's seventieth birthday drew near 
+at the close of 1902, the present writer, who had been from 
+boyhood a devoted admirer of the great Norwegian, wished to 
+make an American contribution to the world-wide tribute of 
+gratitude and affection which the then approaching anniversary 
+was sure to evoke.  The outcome of that wish was an essay, 
+summarizing Bjornson's life and work, published in "The 
+International Quarterly," March, 1903.  The essay then written 
+forms the substance of the present publication, although several 
+additions have been made in the way of translation, anecdote, 
+and the consideration of Bjornson's later productions.  So 
+small a book as this is, of course, hopelessly inadequate to 
+make more than the most superficial sort of survey of the 
+life work of that masterful personality whose recent death is 
+so heavy a loss to all mankind.
+
+W. M. P. 
+Chicago, May, 1910.
+
+
+
+BJORNSTJERNE BJORNSON
+1832-1910
+
+Eight years ago, taking a bird's-eye view of the mountain 
+peaks of contemporary literature, and writing with particular 
+reference to Bjornson's seventieth birthday, it seemed 
+proper to make the following remarks about the most famous 
+European authors then numbered among living men.  If one 
+were asked for the name of the greatest man of letters still 
+living in the world, the possible claimants to the distinction 
+would hardly be more than five in number.  If it were a 
+question of poetry alone, Swinburne would have to be named 
+first, with Carducci for a fairly close second.  But if we 
+take literature in its larger sense, as including all the 
+manifestations of creative activity in language, and if we 
+insist, furthermore, that the man singled out for this 
+preeminence shall stand in some vital relation to the 
+intellectual life of his time, and exert a forceful influence 
+upon the thought of the present day, the choice must rather 
+be made among the three giants of the north of Europe, falling, 
+as it may be, upon the great-hearted Russian emotionalist 
+who has given us such deeply moving portrayals of the life 
+of the modern world; or upon the passionate Norwegian idealist 
+whose finger has so unerringly pointed out the diseased spots 
+in the social organism, earning by his moral surgery the name 
+of pessimist, despite his declared faith in the redemption of 
+mankind through truth and freedom and love; or, perchance, 
+upon that other great Norwegian, equally fervent in his devotion 
+to the same ideals, and far more sympathetic in his manner of 
+inculcating them upon his readers, who has just rounded out 
+his scriptural tale of three score years and ten, and, in 
+commemoration of the anniversary, is now made the recipient 
+of such a tribute of grateful and whole-souled admiration 
+as few men have ever won, and none have better deserved.  
+It would be certainly invidious, and probably futile, to 
+attempt a nice, comparative estimate of the services of these 
+three men to the common cause of humanity; let us be content 
+with the admission that Bjornstjerne Bjornson is _primus inter 
+pares_, and make no attempt to exalt him at the expense of his 
+great contemporaries.  Writing now eight years later, at the 
+time when Bjornson's death has plunged his country and the 
+world in mourning, it is impressive to note that of the five men 
+constituting the group above designated, Tolstoy alone survives 
+to carry on the great literary tradition of the nineteenth century.
+
+It will be well, however, to make certain distinctions between 
+the life work of Bjornson and that of the two men whom a common 
+age and common aims bring into inevitable association with him.  
+These distinctions are chiefly two,--one of them is that while 
+Tolstoy and Ibsen grew to be largely cosmopolitan in their outlook, 
+Bjornson has much more closely maintained throughout his career the 
+national, or, at any rate, the racial standpoint.  The other is 
+that while Tolstoy and Ibsen presently became, the one indifferent 
+to artistic expression, and the other baldly prosaic where he was 
+once deeply poetical, Bjornson preserved the poetic impulse of his 
+youth, and continued to give it play even in his envisagement of 
+the most practical modern problems.  Let us enlarge a little upon 
+these two themes.  Ernest Renan, speaking at the funeral of 
+Tourguenieff, described the deceased novelist as "the incarnation 
+of a whole people."  Even more fittingly might the phrase be applied 
+to Bjornson, for it would be difficult to find anywhere else in 
+modern literature a figure so completely and profoundly representative 
+of his race.  In the frequently quoted words of Dr. Brandes, to speak 
+the name of Bjornson in any assembly of his countrymen is like 
+"hoisting the Norwegian flag."  It has been maliciously added that 
+mention of his name is also like flaunting a red flag in the sight 
+of a considerable proportion of the assembly, for Bjornson has always 
+been a fighter as well as an artist, and it has been his self-imposed 
+mission to arouse his fellow countrymen from their mental sluggishness 
+no less than to give creative embodiment to their types of character 
+and their ideal aspirations.  But whatever the opposition aroused by 
+his political and social radicalism, even his opponents have been 
+constrained to feel that he was the mouthpiece of their race as no 
+other Norwegian before him had been, and that he has voiced whatever 
+is deepest and most enduring in the Norwegian temper.  Powerful as 
+has been his appeal to the intellect and conscience of the modern 
+world at large, it has always had a special note of admonition or 
+of cheer for his own people.  With reference to the second of our 
+two themes, it is sufficient to say that, although the form of verse 
+was almost wholly abandoned by him during the latter half of his life, 
+the breath of poetry never ceased to exhale from his work, and the 
+lyric exuberance of his later prose still recalls to us the singer 
+of the sixties.
+
+Few productions of modern literature have proved as epoch-
+making as the modest little volume called "Synnove Solbakken," 
+which appeared in the book shops of Christiania and Copenhagen 
+in 1857.  It was a simple tale of peasant life, an idyl of the 
+love of a boy and a girl, but it was absolutely new in its 
+style, and in its intimate revelation of the Norwegian character.  
+It must be remembered that until the year 1814, Norway had 
+for centuries been politically united with Denmark, and that 
+Copenhagen had been the common literary centre of the two 
+countries.  To that city Norwegian writers had gravitated as 
+naturally as French writers gravitate to Paris.  There had 
+resulted from this condition of things a literature which, 
+although it owed much to men of Norwegian birth, was essentially 
+a Danish literature, and must properly be so styled.  That 
+literature could boast, at the beginning of the nineteenth 
+century, an interesting history comparable in its antiquity 
+with the greater literatures of Europe, and a brilliant history 
+for at least a hundred years past.  But old literatures are 
+sure to become more or less sophisticated and trammelled by 
+traditon, and to this rule Danish literature was no exception.  
+When the constitution of Eidsvold, in 1814, separated Norway 
+from Denmark, and made it into an independent kingdom (save for 
+the forced Swedish partnership), the country had practically 
+no literary tradition save that which centred about the Danish 
+capital.  She might claim to have been the native country of 
+many Danish writers, even of Ludvig Holberg, the greatest 
+writer that the Scandinavian peoples have yet produced, but she 
+could point to nothing that might fairly be called a Norwegian 
+literature.  The young men of the rising generation were 
+naturally much concerned about this, and a sharp divergence of 
+opinion arose as to the means whereby the interests of Norwegian 
+literature might be furthered, and the aims which it should have 
+in view.  One party urged that the literature should break loose 
+from its traditional past, and aim at the cultivation of an 
+exclusively national spirit.  The other party declared such a 
+course to be folly, contending that literature must be a 
+product of gradual development rather than of set volition, 
+and that, despite the shifting of the political kaleidoscope, 
+the national literature was so firmly rooted in its Danish past 
+that its natural evolution must be an outgrowth from all that 
+had gone before.
+
+Each of these parties found a vigorous leader, the cause of 
+ultra-Norwegianism being championed by Wergeland, an erratic 
+person in whom the spark of genius burned, but who never found 
+himself, artistically speaking.  The champion of the conservatives 
+was Welhaven, a polished writer of singular charm and much force, 
+philosophical in temper, whose graceful verse and acute criticism 
+upheld by both precept and practice the traditional standards 
+of culture.  Each of these men had his followers, who proved in 
+many cases more zealous than their leaders.  The period of the 
+thirties and forties was dominated by this Wergeland-Welhaven 
+controversy, which engendered much bitterness of feeling, and 
+which constitutes the capital fact in Norwegian literary history 
+before the appearance of Ibsen and Bjornson upon the scene.  A 
+sort of parallel might be drawn for American readers by taking 
+two such men as Whitman and Longfellow, opposing them to one 
+another in the most outspoken fashion, assuming for both a 
+sharply polemic manner, and ranging among their respective 
+followers all the other writers of their time.  Then imagine the 
+issue between them to be drawn not only in the field of letters, 
+but also in the pulpit, the theatre, and the political arena, and 
+some slight notion may be obtained of the condition of affairs 
+which preceded the advent of Bjornson and the true birth of 
+Norwegian literature with "Synnove Solbakken."
+
+The work which was thus destined to mark the opening of a new 
+era in Norwegian letters was written in the twenty-fifth year of 
+its author's life.  The son of a country pastor, Bjornstjerne 
+Bjornson was born at Kvikne, December 8, 1832.  At the age of 
+six, his father was transferred to a new parish in the Romsdal, 
+one of the most picturesque regions in Norway.  The impression 
+made upon his sensitive nature by these surroundings was deep 
+and enduring.  Looking back upon his boyhood he speaks with strong 
+emotion of the evenings when "I stood and watched the sunlight 
+play upon mountain and fiord, until I wept, as if I had done 
+something wrong, and when, borne down upon my ski into one valley 
+or another I could stand as if spellbound by a beauty, by a longing 
+that I could not explain, but that was so great that along with 
+the highest joy I had, also, the deepest sense of imprisonment 
+and sorrow."  This is the mood which was to be given utterance in 
+that wonderful lyric, "Over the Lofty Mountains," in which all the 
+ardor and the longings of passionate and impatient youth find the 
+most appealing expression. The song is found in "Arne," and may be 
+thus reproduced, after a fashion, in the English language.
+
+"Often I wonder what there may be
+  Over the lofty mountains.
+Here the snow is all I see,
+Spread at the foot of the dark green tree;
+  Sadly I often ponder,
+  Would I were over yonder.
+"Strong of wing soars the eagle high
+  Over the lofty mountains,
+Glad of the new day soars to the sky,
+Wild in pursuit of his prey doth fly;
+  Pauses, and, fearless of danger,
+  Scans the far coasts of the stranger.
+"The apple-tree, whose thoughts ne'er fly
+  Over the lofty mountains,
+Leaves, when the summer days draw nigh,
+Patiently waits for the time when high
+  The birds in its boughs shall be swinging,
+  Yet will know not what they are singing.
+"He who has yearned so long to go
+  Over the lofty mountains--
+He whose visions and fond hopes grow
+Dim, with the years that so restless flow--
+  Knows what the birds are singing,
+  Glad in the tree-tops swinging.
+"Why, oh bird, dost thou hither fare
+  Over the lofty mountains?
+Surely it must be better there,
+Broader the view and freer the air;
+  Com'st thou these longings to bring me;
+  These only, and nothing to wing me?
+"Oh, shall I never, never go
+  Over the lofty mountains!
+Must all my thoughts and wishes so
+Held in these walls of ice and snow
+  Here be imprisoned forever?
+  Till death shall I flee them never?
+"Hence!  I will hence!  Oh, so far from here,
+  Over the lofty mountains!
+Here 't is so dull, so unspeakably drear;
+Young is my heart and free from fear--
+  Better the walls to be scaling
+  Than here in my prison lie wailing.
+"One day, I know, shall my soul free roam
+  Over the lofty mountains.
+Oh, my God, fair is thy home,
+Ajar is the door for all who come;
+  Guard it for me yet longer,
+  Till my soul through striving grows stronger."
+
+At the age of eleven Bjornson's school days began at Molde, 
+and were continued at Christiania in a famous preparatory 
+school, where he had Ibsen for a comrade.  He entered the 
+university in his twentieth year, but his career was not 
+brilliant from a scholastic point of view, and he was too much 
+occupied with his own intellectual concerns to be a model student.  
+From his matriculation in 1852, to the appearance of his first 
+book in 1857, he was occupied with many sorts of literary 
+experiments, and became actively engaged in journalism.  The 
+theatre, in particular, attracted him, for the theatre was one 
+of the chief foci of the intellectual life of his country (as 
+it should be in every country), and he plunged into dramatic 
+criticism as the avowed partisan of Norwegian ideals, holding 
+himself, in some sort, the successor of Wergeland, Who had died 
+about ten years earlier.  Before becoming a dramatic critic, he 
+had essayed dramatic authorship, and the acceptance by the theatre 
+of his juvenile play, "Valborg," had led to a somewhat unusual 
+result.  He was given a free ticket of admission, and a few 
+weeks of theatre-going opened his eyes to the defects of his own 
+accepted work, which he withdrew before it had been inflicted 
+upon the public.  The full consciousness of his poetical calling 
+came to him upon his return from a student gathering at the 
+university town of Upsala, whither he had gone as a special 
+correspondent.  "When I came home from the journey," 'he says, 
+"I slept three whole days with a few brief intervals for eating and 
+conversation. Then I wrote down my impressions of the journey, 
+but just because I had first lived and then written, the account 
+got style and color; it attracted attention, and made me all the 
+more certain that the hour had come. I packed up, went home, 
+thought it all over, wrote and rewrote `Between the Battles' in 
+a fortnight, and travelled to Copenhagen with the completed piece 
+in my trunk; I would be a poet."  He then set to writing "Synnove 
+Solbakken," published it in part as a newspaper serial, and then 
+in book form, in the autumn of 1857.  He had "commenced author" 
+in good earnest.
+
+The next fifteen years of Bjornson's life were richly productive.  
+Within a single year he had published "Arne," the second of his 
+peasant idyls and perhaps the most remarkable of them all, and had 
+also published two brief dramas, "Halte-Hulda" and the one already 
+mentioned as the achievement of fourteen feverish days.  The 
+remaining product of the fifteen years includes two more prose 
+idyls, "A Happy Boy" and "The Fisher Maiden" (with a considerable 
+number of small pieces similar in character); three more plays 
+drawn from the treasury of old Norse history, "King Sverre," 
+"Sigurd Slembe," and "Sigurd Jorsalfar"; a dramatic setting of 
+the story of "Mary Stuart in Scotland"; a little social comedy, 
+"The Newly Married Couple," which offers a foretaste of his later 
+exclusive preoccupation with modern life; "Arnljot Gelline," his 
+only long poem, a wild narrative of the clash between heathendom 
+and the Christian faith in the days of Olaf the Holy; and, last 
+but by no means least, the collection of his "Poems and Songs."  
+Thus at the age of forty, Bjornson found himself with a dozen 
+books to his credit books which had stirred his fellow countrymen 
+as no other books had ever stirred them, arousing them to the 
+full consciousness of their own nature and of its roots in their 
+own heroic past.  He had become the voice of his people as no 
+one had been before him, the singer of all that was noble in 
+Norwegian aspiration, the sympathetic delineator of all that 
+was essential in Norwegian Character.  He had, in short, created 
+a national literature where none had before existed, and he was 
+still in his early prime.
+
+The collected edition of Bjornson's "Tales," published in 1872, 
+together with "The Bridal March," separately published in the 
+following year, gives us a complete representation of that phase 
+of his genius which is best known to the world at large.  Here 
+are five stories of considerable length, and a number of 
+slighter sketches, in which the Norwegian peasant is portrayed 
+with intimate and loving knowledge.  The peasant tale was no 
+new thing in European literature, for the names of Auerbach 
+and George Sand, to say nothing of many others, at once come 
+to the mind.  In Scandinavian literature, its chief representative 
+had been the Danish novelist, Blicher, who had written with 
+insight and charm of the peasantry of Jutland.  But in the 
+treatment of peasant life by most of Bjornson's predecessors 
+there had been too much of the _de haut en bas_ attitude; the 
+peasant had been drawn from the outside, viewed philosophically, 
+and invested with artificial sentiment.  Bjornson was too near 
+to his own country folk to commit such faults as these; he was 
+himself of peasant stock, and all his boyhood life had been 
+spent in close association with men who wrested a scanty 
+living from an ungrateful soil.  Although a poet by instinct, 
+he was not afraid of realism, and did not shrink from giving 
+the brutal aspects of peasant life a place upon his canvas.  In 
+emphasizing the characteristics of reticence and _naivete_ he 
+really discovered the Norwegian peasant for literary purposes.  
+Beneath the words spoken by his characters we are constantly 
+made to realize that there are depths of feeling that remain 
+unexpressed; whether from native pride or from a sense of the 
+inadequacy of mere words to set forth a critical moment of 
+life, his men and women are distinguished by the most laconic 
+utterance, yet their speech always has dramatic fitness and 
+bears the stamp of sincerity.  Jaeger speaks of the manifold 
+possibilities of this laconic method in the following words:--
+
+"It is as if the author purposely set in motion the reader's 
+fancy and feeling that they might do their own work.  The 
+greatest poet is he who understands how to awaken fancy and 
+feeling to their highest degree of self-activity.  And this 
+is Bjornson's greatness in his peasant novels, that he has 
+poured from his horn of plenty a wealth of situations and 
+motives that hold the reader's mind and burn themselves into 
+it, that become his personal possession just because the author 
+has known how to suggest so much in so few words."
+
+In some respects, the little sketch called "The Father" is 
+the supreme example of Bjornson's artistry in this kind.  There 
+are only a few pages in all, but they embody the tragedy of a 
+lifetime.  The little work is a literary gem of the purest water, 
+and it reveals the whole secret of the author's genius , as 
+displayed in his early tales.  It is by these tales of peasant 
+life that Bjornson is best known outside of his own country; one 
+may almost say that it is by them alone that he is really familiar 
+to English readers.  A free translation of "Synnove Solbakken" 
+was made as early as 1858, by Mary Howitt, and published under 
+the title of "Trust and Trial."  Translations of the other tales 
+were made soon after their original appearance, and in some 
+instances have been multiplied.  It is thus a noteworthy fact 
+that Bjornson, although four years the junior of Ibsen, enjoyed 
+a vogue among English readers for a score of years during which 
+the name of Ibsen was absolutely unknown to them.  The whirligig 
+of time has brought in its revenges of late years, and the long 
+neglected older author has had more than the proportional share 
+of our attention than is fairly his due.
+
+In his delineation of the Norwegian peasant character, Bjornson 
+was greatly aided by the study of the sagas, which he had read 
+with enthusiasm from his earliest boyhood.  Upon them his style 
+was largely formed, and their vivid dramatic representation 
+of the life of the early Norsemen impressed him profoundly, 
+shaping both his ideals and the form of their expression.  The 
+modern Scandinavian may well be envied for his literary 
+inheritance from the heroic past.  No other European has 
+anything to compare with it for clean-cut vigor and wealth of 
+romantic material.  The literature which blossomed in Iceland 
+and flourished for two or three centuries wherever Norsemen 
+made homes for themselves offers a unique intellectual phenomenon, 
+for nothing like their record remains to us from any other 
+primitive people. This
+
+     "Tale of the Northland of old
+   And the undying glory of dreams,"
+
+proved a lasting stimulus to Bjornson's genius, and, during the 
+early period of his career, which is now under review, it made 
+its influence felt alike in his tales, his dramas, and his 
+songs.  "To see the peasant in the light of the sagas and the 
+sagas in the light of the peasant" he declared to be the 
+fundamental principle of his literary method.
+
+It has been seen that during the fifteen years which made 
+Bjornson in so peculiar a sense the spokesman of his race, he 
+wrote no less than five saga dramas.  The first two of these 
+works, "Between the Battles" and "Halte-Hulda," are rather 
+slight performances, and the third, "King Sverre," although a 
+more extended work, is not particularly noteworthy.  The 
+grimness of the Viking life is softened by romantic coloring, 
+and the poet has not freed himself from the influence of 
+Oehlenschlaeger.  But in "Sigurd Slembe" he found a subject 
+entirely worthy of his genius, and produced one of the noblest 
+masterpieces of all modern literature.  This largely planned 
+and magnificently executed dramatic trilogy was written in 
+Munich, and published in 1862.  The material is found in the 
+"Heimskringla," but the author has used the prerogative of the 
+artist to simplify the historical outline thus offered into a 
+superb imaginative creation, rich in human interest, and 
+powerful in dramatic presentation.  The story is concerned 
+with the efforts of Sigurd, nicknamed "Slembe," to obtain 
+the succession to the throne of Norway during the first half 
+of the twelfth century.  He was a son of King Magnus Barfod, 
+and, although of illegitimate birth, might legally make this 
+claim.  The secret of his birth has been kept from him until 
+he has come to manhood, and the revelation of this secret by 
+his mother is made in the first section of the trilogy, which 
+is a single act, written in blank verse.  Recognizing the futility 
+of urging his birthright at this time, he starts off to win 
+fame as a crusader, the sort of fame that haloed Sigurd 
+Jorsalfar, then king of Norway.  The remainder of the work is 
+in prose, and was, in fact, written before this poetical prologue.  
+The second section, in three acts, deals with an episode in the 
+Orkneys, five years later.  Sigurd has not even then journeyed 
+to the Holy Land, but he has wandered elsewhere afar, thwarted 
+ambition and the sense of injustice ever gnawing at his heart.  
+He becomes entangled in a feudal quarrel concerning the rule of 
+the islands.  Both parties seek to use him for their purposes, 
+but in the end, although leadership is in his grasp, he tears 
+himself away, appalled by the revelation of crime and treachery 
+in his surroundings.  In this section of the work we have the 
+subtly conceived and Hamlet-like figure of Earl Harald, in 
+whose interest Frakark, a Norse Lady Macbeth, plots the murder 
+of Earl Paul, only to bring upon Harald himself the terrible 
+death that she has planned for his brother.  Here, also, we 
+have the gracious maiden figure of Audhild, perhaps the 
+loveliest of all Bjornson's delineations of womanhood, a figure
+worthy to be ranked with the heroines of Shakespeare and Goethe, 
+who remains sweet and fragrant in our memory forever after.  
+With the mutual love of Sigurd and Audhild comes the one hour 
+of sunshine in both their lives, but the love is destined to 
+end in a noble renunciation and to leave only a hallowed memory 
+in token of its brief existence.
+
+Ten more years as a crusader and a wanderer over the face of 
+the earth pass by before we meet with Sigurd again in the 
+third section of the trilogy.  But his resolution is taken.  
+He has returned to his native land, and will claim his own.  
+The land is now ruled by Harald Gille, who is, like Sigurd 
+Slembe, an illegitimate son of Magnus Barfod, and who, during 
+the last senile years of Sigurd Jorsalfar's life, had won the 
+recognition that Sigurd Slembe might have won had he not missed 
+the chance, and been acknowledged as the king's brother.  When 
+the king died, he left a son named Magnus, who should have been 
+his successor, but whom Harald Gille seized, blinded, and 
+imprisoned that he might himself occupy the throne.  The five 
+acts of this third section of the trilogy cover the last two 
+years of Sigurd Slembe's life, years during which he seeks to 
+gain his end, first by conciliation, and afterwards, maddened 
+by the base treachery of the king and his followers, by 
+assassination and violence.  He has become a hard man, but, 
+however wild his schemes of revenge, and however desperate 
+his measures, he retains our sympathy to the end because we 
+feel that circumstances have made him the ravager of his country, 
+and that his underlying motive all along has not been a merely 
+personal ambition, but an immense longing to serve his people, 
+and to rule them with justice and wisdom.  The final scene 
+of all has a strange and solemn beauty.  It is on the eve of 
+the battle in which Sigurd is to be captured and put to death 
+by his enemies.  The actual manner of his death was too horrible 
+even for the purposes of tragedy; and the poet has chosen the 
+better part in ending the play with a foreshadowing of the outcome.  
+Sigurd has made his last stand, his Danish allies have deserted 
+him, and he well knows what will be the next day's issue.  
+And here we have one of the noblest illustrations in all 
+literature of that _Versohnung_ which is the last word of 
+tragic art.  For in this supreme hour the peace of mind which 
+he has sought for so many years comes to him when least expected, 
+and all the tempests of life are stilled.  That reconciliation 
+which the hour of approaching death brings to men whose lives 
+have been set at tragic pitch, has come to him also; he now 
+sees that this was the inevitable end, and the recognition 
+of the fitness with which events have shaped themselves brings 
+with it an exaltation of soul in which life is seen revealed 
+in its true aspect.  No longer veiled in the mists which have 
+hitherto hidden it from his passionate gaze, he takes note of 
+what it really is, and casts it from him.  In this hour of 
+passionless contemplation such a renunciation is not a thing 
+torn from the reluctant soul, but the clear solution, so long 
+sought, of the problem so long blindly attempted.  That which 
+his passion enslaved self has so struggled to avert, his 
+higher self, at last set free, calmly and gladly accepts.  
+
+"What miracle is this? for in the hour I prayed, the prayer 
+was granted!  Peace, perfect peace!  Then I will go to-morrow 
+to my last battle as to the altar; peace shall at last be mine 
+for all my longings.
+"How this autumn evening brings reconciliation to my soul!  
+Sun and wave and shore and sea flow all together, as in the 
+thought of God all others; never yet has it seemed so fair to 
+me.  But it is not mine to rule over this lovely land.  How 
+greatly I have done it ill!  But how has it all so come to 
+pass? for in my wanderings I saw thy mountains in every sky, 
+I yearned for home as a child longs for Christmas, yet I 
+came no sooner, and when at last I came, I gave thee wound 
+upon wound.
+"But now, in contemplative mood, thou gazest upon me, and 
+givest me at parting this fairest autumn night of thine; 
+I will ascend yonder rock and take a long farewell."
+
+The action of "Sigurd Slembe," is interspersed with several 
+lyrics, the most striking of which is herd translated in 
+exact reproduction of the original form:
+
+"Sin and Death, at break of day,
+Day, day,
+Spoke together with bated breath;
+'Marry thee, sister, that I may stay,
+Stay, stay,
+In thy house,' quoth Death.
+"Death laughed aloud when Sin was wed,
+Wed, wed,
+And danced on the bridal day:
+But bore that night from the bridal bed,
+Bed, bed,
+The groom in a shroud away.
+"Death came to her sister at break of day,
+Day, day,
+And Sin drew a weary breath;
+'He whom thou lovest is mine for aye,
+Aye, aye,
+Mine he is,' quoth Death."
+
+One more saga drama was to be written by Bjornson, but 
+"Sigurd Slembe" remains his greatest achievement in this 
+field of activity.  Its single successor, "Sigurd Jorsalfar," 
+was not published until ten years later, and may not be 
+compared with it for either strength or poetic inspiration.  
+The author called it a "folkplay," and announced the intention, 
+which was never fulfilled, of making several similar experiments 
+with scenes from the sagas, "which should appeal to every eye 
+and every stage of culture, to each in its own way, and at 
+the performance of which all, for the time being, would 
+experience the joy of fellow feeling."  The experiment proves 
+interesting, and is carried out without didacticism or straining 
+after sensational effects; the play is vigorous and well 
+planned, but for the reader it has little of the dramatic 
+impressiveness of its predecessor, although as an acting drama 
+it is better fitted for the requirements of the stage.
+
+The two volumes which contain the greater part of Bjornson's 
+poetry not dramatic in form were both published in 1870.  One 
+of them was the collection of his "Poems and Songs," the other 
+was the epic cycle, "Arnljot Gelline," the only long poem 
+that he has written.  The volume of lyrics includes many pieces 
+of imperfect quality and slight value,--personal tributes and 
+occasional productions,--but it includes also those national 
+songs that every Norwegian knows by heart, that are sung upon 
+all national occasions by the author's friends and foes alike, 
+and that have made him the greatest of Norway's lyric poets.  
+No translation can ever quite reproduce their cadence or their 
+feeling; they illustrate the one aspect of Bjornson's many-sided 
+genius that must be taken on trust by those who cannot read his 
+language.  A friend once asked him upon what occasion he had 
+felt most fully the joy of being a poet. His reply was as follows:--
+
+"It was when a party from the Right in Christiania came to my 
+house and smashed all my windows.  For when they had finished 
+their assault, and were starting home again, they felt that 
+they had to sing something, and so they began to sing, 'Yes, we 
+love this land of ours'--they couldn't help it. They had to sing
+ the song of the man they had attacked."
+
+Into this collection were gathered the lyrics scattered through 
+the peasant tales and the saga dramas, thus making it completely 
+representative of his quality as a singer.  A revised and 
+somewhat extended edition of this volume was published about 
+ten years later.  Bjornson has had the rare fortune of having 
+his lyrics set to music by three composers--Nordraak, Kjerulf, 
+and Grieg--as intensely national in spirit as himself, and no 
+festal occasion among Norwegians is celebrated without singing 
+the national hymn, "Yes, We Love This Land of Ours," or the 
+noble choral setting of "Olaf Trygvason."  The best folk-singer 
+is he who stands in the whirling round of life, says the poet, 
+and he reveals the very secret of his power when he tells us 
+that life was ever more to him than song, and that existence, 
+where it was worth while, in the thick of the human fray, 
+always had for him a deeper meaning than anything he had written.  
+The longest poem in Bjornson's collection is called "Bergliot," 
+and is a dramatic monologue in which the foul slaying of her 
+husband Ejnar Tambarskelve and their son Ejndride is mourned 
+by the bereaved wife and mother.  The story is from the saga 
+of Harald Haardraada, and is treated with the deepest tragic 
+impressiveness.
+
+"Odin in Valhal I dare not seek
+For him I forsook in my childhood.
+And the new God in Gimle?
+He took all that I had!
+  Revenge:--Who says revenge?--
+Can revenge awaken my dead
+Or shelter me from the cold?
+Has it comfort for a widow's home
+Or for a childless mother?
+  Away with your revenge: Let be!
+Lay him on the litter, him and the son.
+Come, we will follow them home.
+The new God in Gimle, the terrible, who took all,
+Let him also take revenge, for he understands it!
+Drive slowly: Thus drove Ejnar ever;
+  --Soon enough shall we reach home."
+
+It was also to the "Heimskringla" that Bjornson turned for 
+the subject of his epic cycle, "Arnljot Gelline."  Here we 
+read in various rhythms of Arnljot the outlaw, how the hands 
+of all men are against him; how he offers to stay his wrath 
+and end the blood feud if the fair Ingigerd, Trand's daughter, 
+may be bestowed upon him; how, being refused, he sets fire 
+to Trand's house and bears Ingigerd away captive; how her 
+tears prevail upon him to release her, and how she seeks 
+refuge in a southern cloister; how Arnljot wanders restless 
+over sea and land until he comes to King Olaf, on the eve 
+of the great battle, receives the Christian faith, fights 
+fiercely in the vanguard against the hosts of the heathen, 
+and, smiling, falls with his king on the field of Stiklestad.  
+One song from this cycle, "The Cloister in the South" is 
+here reproduced in an exact copy of the original metre, in 
+the hope that even this imperfect representation of the poem 
+may be better than none at all.
+
+"Who would enter so late the cloister in?"
+  "A maid forlorn from the land of snow."
+"What sorrow is thine, and what thy sin?"
+  "The deepest sorrow the heart can know.
+   I have nothing done
+     Yet must still endeavor,
+   Though my strength be none,
+     To wander ever.
+Let me in, to seek for my pain surcease,
+     I can find no peace."
+
+"From what far-off land hast thou taken flight?"
+  "From the land of the North, a weary way."
+"What stayed thy feet at our gate this night?"
+  "The chant of the nuns, for I heard them pray,
+   And the song gave peace
+     To my soul, and blessed me;
+   It offered release
+     From the grief that oppressed me.
+   Let me in, so if peace to give be thine,
+     I may make it mine."
+
+"Name me the grief that thy life hath crossed."
+  "Rest may I never, never know."
+"Thy father, thy lover, thou hast then lost?"
+  "I lost them both at a single blow,
+   And all I held dear
+     In my deepest affection;
+   Aye, all that was near
+     To my heart's recollection.
+   Let me in, I am failing, I beg, I implore,
+     I can bear no more."
+
+"How was it that thou thy father lost?"
+  "He was slain, and I saw the deed."
+"How was it that thou thy lover lost?"
+  "My father he slew, and I saw the deed.
+   I wept so bitterly
+     When he roughly would woo me,
+   He at last set me free,
+     And forbore to pursue me.
+   Let me in, for the horror my soul doth fill.
+     That I love him still."
+
+_Chorus of nuns within the Church._
+      "Come child, come bride,
+      To God's own side,
+      From grief find rest
+      On Jesus' breast.
+      Rest thy burden of sorrow.
+          On Horeb's height;
+      Like the lark, with to-morrow
+          Shall thy soul take flight.
+
+      Here stilled is all yearning,
+      No passion returning;
+      No terror come near thee
+      When the Saviour can hear thee.
+      For He, if in need be
+          Thy storm-beaten soul,
+      Though it bruised as a reed be,
+          Shall raise it up whole."
+
+Despite the power and beauty of an occasional manifestation 
+of his genius during the late sixties and early seventies, 
+the poetic impulse that had made Bjornson the most famous of 
+Norwegian authors seemed, toward the close of the fifteen-year 
+period just now under review, to be well nigh exhausted.  Even 
+among those who had followed his career most closely there were 
+few who could anticipate the splendid new outburst of activity 
+for which he was preparing.  These years seemed to be a dead 
+time, not only in Bjornson's life, but also in the general 
+intellectual life of the Scandinavian countries.  Dr. Brandes 
+thus describes the feelings of a thoughtful observer during 
+that period of stagnation.  "In the North one had the feeling 
+of being shut off from the intellectual life of the time.  
+We were sitting with closed doors, a few brains struggling 
+fruitlessly with the problem of how to get them opened... With 
+whole schools of foreign literature the cultivated Dane had 
+almost no acquaintance; and when, finally, as a consequence 
+of political animosity, intellectual intercourse with Germany 
+was broken off, the main channel was closed through which 
+the intellectual developments of the day had been communicated 
+to Norway as well as Denmark.  French influence was dreaded 
+as immoral, and there was but little understanding of either 
+the English language or spirit."  But an intellectual renaissance 
+was at hand, an intellectual reawakening with a cosmopolitan 
+outlook, and, Bjornson was destined to become its leader, much 
+as he had been the leader of the national movement of an earlier 
+decade.  During these years of seeming inactivity, comparatively 
+speaking, he had read and thought much, and the new thought of 
+the age had fecundated his mind.  Historical and religious criticism, 
+educational and social problems, had taken possession of his 
+thought, and the philosophy of evolution had transformed the 
+whole tenor of his ideas, shaping them to, deeper issues and 
+more practical purposes than had hitherto engaged them.  He had 
+read widely and variously in Darwin, Spencer, Mill, Muller, and 
+Taine; he had, in short, scaled the "lofty mountains" that had so 
+hemmed in his early view, and made his way into the intellectual 
+kingdoms of the modern world that lay beyond.  The _Weltgeist_ 
+had appealed to him with its irresistible behest, just as it 
+appealed at about the same time to Ibsen and Tolstoy and Ruskin, 
+and had made him a man of new interests and ideals.
+
+One might have found foreshadowings of this transformation in 
+certain of his earlier works,--in "The Newly Married Couple," 
+for example, with its delicate analysis, of a common domestic 
+relation, or in "The Fisher Maiden," with its touch of modernity,
+--but from these suggestions one could hardly have prophesied 
+the enthusiasm and the genial force with which Bjornson was to 
+project his personality into the controversial arena of modern life.  
+The series of works which have come from his pen during the past 
+thirty-five years have dealt with most of the graver problems 
+which concern society as a whole,--politics, religion, education, 
+the status of women, the license of the press, the demand of the 
+socialist for a reconstruction of the old order.  They have also 
+dealt with many of the delicate questions of individual ethics,
+--the relations of husband and wife, of parent and child, the 
+responsibility of the merchant to his creditors and of the employer 
+to his dependants, the double standard of morality for men and 
+women, and the duty devolving upon both to transmit a vigorous 
+strain to their offspring.  These are some of the themes that 
+have engaged the novelist and dramatist; they have also engaged 
+the public speaker and lay preacher of enlightenment, as well 
+as themes of a more strictly political character, such as the 
+separation of Norway from the Dual Monarchy, the renewal of 
+the ancient bond between Norway and Iceland, the free development 
+of parliamentary government, the cause of Pangermanism, and the 
+furtherance of peace between the nations.  An extensive 
+programme, surely, even in this summary enumeration of its 
+more salient features, but one to which his capacity has not 
+proved unequal, and which he has carried out by the force of 
+his immense energy and superabundant vitality.  The burden of 
+all this tendencious matter has caused his art to suffer at times,
+ no doubt, but his inspiration has retained throughout much 
+of the marvellous freshness of the earlier years, and the 
+genius of the poet still flashes upon us from a prosaic 
+environment, sometimes in a lovely lyric, more frequently, 
+however, in the turn of a phrase or the psychological 
+envisagement of some supreme moment in the action of the story 
+or the drama.
+
+The great transformation in Bjornson's literary manner and 
+choice of subjects was marked by his sending home from abroad, 
+in the season of 1874-75, two plays, "The Editor" and "A 
+Bankruptcy."  It was two years later that Ibsen sent home from 
+abroad "The Pillars of Society," which marked a similar turning 
+point in his artistic career.  It is a curious coincidence that 
+the plays of modern life produced during this second period by 
+these two men are the same in number, an even dozen in each case.  
+Besides the two above named, these modern plays of Bjornson are, 
+with their dates, the following: "The King" (1877), "Leonarda" (1879), 
+"The New System" (1879), "A Glove" (1883), "Beyond the 
+Strength I." (1883), "Geography and Love" (1885), "Beyond the 
+Strength II." (1895), "Paul Lange and Tora Parsberg" (1898), 
+"Laboremus" (1901), and "At Storhove" (1902).  Since the 
+cessation of Ibsen's activity, Bjornson has outrun him in 
+the race, adding "Daglannet" (1904), and "When the New Wine 
+Blooms" (1909) to the list above given.  Besides these 
+fourteen plays, however, he has published seven important 
+volumes of prose fiction during the last thirty-five years.  
+The titles and dates are as follows: "Magnhild" (1877), 
+"Captain Mansana" (1879), "Dust" (1882), "Flags Are Flying 
+in City and Harbor" (1884), "In God's Ways," (1889), 
+"New Tales" (1894), (of which collection "Absalom's Hair" 
+is the longest and most important), and "Mary" (1906).  The 
+achievement represented by this list is all the more 
+extraordinary when we consider the fact that for the greater 
+part of the thirty-five years which these plays and novels 
+cover, their author has been, both as a public speaker and 
+as a writer for the periodical press, an active participant 
+in the political and social life of his country.
+
+Most of these books must be dismissed with a few words in 
+order that our remaining space may be given to the four or 
+five that are of the greatest power and significance. "The 
+Editor," the first of the modern plays, offers a fierce 
+satire upon modern journalism, its dishonesty, its corrupt 
+and malicious power, its personal and partisan prejudice.  
+The character of the editor in this play was unmistakeably 
+drawn, in its leading characteristics, from the figure of a 
+well known conservative journalist in Christiania, although 
+Bjornson vigorously maintained that the protraiture was typical 
+rather than personal.
+
+"In various other countries than my own, I have observed 
+the type of journalist who is here depicted.  It is characterized 
+by acting upon a basis of sheer egotism, passionate and 
+boundless, and by terrorism in such fashion that it frightens 
+honest people away from every liberal movement, and visits 
+upon the individual an unscrupulous persecution."
+
+This play was not particularly successful upon the stage, 
+but the book was widely read, and occasioned much excited 
+personal controversy.  "A Bankruptcy," on the other hand, 
+proved a brilliant stage success.  Its matter was less 
+contentious, and its technical execution was effective and 
+brilliant.  It was not in vain that Bjornson had at different 
+times been the director of three theatres.  This play has 
+for its theme the ethics of business life, and more 
+especially the question of the extent to which a man whose 
+finances are embarrassed is justified in continued speculation 
+for the ultimate protection of himself and his creditors.  
+Despite its treatment of this serious problem, the play is 
+lighter and more genial in vein than the author's plays 
+are wont to be, and the element of humor is unusually 
+conspicuous.  Jaeger remarks that "A Bankruptcy" did two 
+new things for Norwegian dramatic literature. It made money 
+affairs a legitimate subject for literary treatment, and 
+it raised the curtain upon the Norwegian home. "It was with 
+'A Bankruptcy' that the home made its first appearance upon 
+the stage, the home with its joys and sorrows, with its 
+conflicts and its tenderness."
+
+Two years later appeared "The King, which is in many 
+respects Bjornson's greatest modern masterpiece in dramatic 
+form.  He had by this time become a convinced republican, 
+but he was also an evolutionist, and he knew that republics 
+are not created by fiat.  He believed the tendency toward 
+republicanism to be irresistible, but he believed also that 
+there must be intermediate stages in the transition from 
+monarchy.  Absolutism is succeeded by constitutionalism, 
+and that by parliamentarism, and that in the end must 
+be succeeded by a republicanism that will free itself from 
+all the traditional forms of symbol and ceremonial.  He had 
+also a special belief that the smaller peoples were better 
+fitted for development in this direction than the larger and 
+more complex societies, although, on the other hand, he thought 
+that the process of growth into full self-government was likely 
+to be slower among the Germanic than among the Latin races.  
+In the deeply moving play now to be considered, we have, in 
+the character of the titular king, an extraordinary piece of 
+psychological analysis.  The king, is young, physically 
+delicate, and of highly sensitive organization.  When he 
+comes to the throne he realizes the hollowness and the 
+hypocrisy of the existence that prescription has marked 
+out for him; he realizes also that the very ideal of 
+monarchy, under the conditions of modern European 
+civilization, is a gigantic falsehood. For a time after his 
+accession, he leads a life of pleasure seeking and revelry,
+hoping that he may dull his sense of the sharp contrast that 
+exists between his station and his ideals.  But his conscience 
+will give him no peace, and he turns to deliberate contemplation 
+of the thought, not indeed of abdicating his, false position, 
+but of transforming it into something more consonant with 
+truth and the demands of the age.  He will become a citizen 
+king, and take for wife a daughter of the people; he will do 
+away with the pomp and circumstance of his court, and attempt 
+to lead a simple and natural life, in which the interests of 
+the people shall be paramount in his attention.  But in this 
+attempt he is thwarted at every step.  All the forces of 
+selfishness and prejudice and ignorance combine against him; 
+even the people whom he seeks to benefit are so wedded to their 
+idols that their attitude is one of suspicion rather than 
+of sympathy.  He loves a young woman of strong and noble 
+character, and wins her love in return, but she dies on the 
+very eve of their union.  His oldest and most confidential 
+friend, the wealthiest man in the kingdom, but a republican, 
+is murdered by a radical associate of the _intransigeant_ type, 
+and the king is left utterly bereaved by his twofold loss.  
+This brings us to the closing scene of the drama, in which the 
+king, his nerves strained to the breaking point, confronts the 
+group of officials and others who bring to him the empty phrases 
+of a conventional condolence:--
+
+The King.  Hush!  Have a little respect for the truth that 
+should follow death!  Understand me rightly: I do not mean 
+that any of you would lie.  But the very air about a king 
+is infected.  It was of that-a word or two.  My time is short.  
+But a testament. ...
+
+The Priest.  Testament.
+
+The King.  Neither the Old nor the New!  Greet what is 
+called Christianity here in this land-greet it from me!  
+I have thought much about Christian folk of late.
+
+The Priest.  That rejoices me.
+
+The King.  How your tone cuts me!  Greet it from me, 
+what is called Christianity here in this land.  Nay, 
+do not crane your necks and bend your backs as if the 
+wisdom of the ages were now forthcoming. (_aside_)  Can 
+there be any use in saying something seriously? (_aloud_)  
+You are Christians?
+
+The General.  God forbid the doubt!  Faith is exceedingly 
+useful. ...
+
+The King.  For discipline. (_to the Sheriff_)  And you?
+
+The Sheriff.  From my blessed ancestors I received the faith.
+
+The King.  So _they_ are blessed also.  Why not?'
+
+The Sheriff.  They brought me strictly up to fear 
+God, to honor the king.
+
+The King.  And love your fellowmen.  You are a State 
+individual, sheriff.  And such are Christians nowadays.  
+(_to the Merchant_)  And you?
+
+The Merchant.  I have not been able to go to church very 
+much of late because of my cough.  And in the foul air. ...
+
+The King.  You go to sleep.  But are you a Christian?
+
+The. Merchant.  That goes without saying.
+
+The King. (_to the Priest._)  And you are naturally one?
+
+The Priest.  By the grace of Jesus I hope that I am.
+
+The King.  That is the formula, boys, that is the 
+accepted thing to say.  Therefore, you are a Christian 
+community, and it is no fault of mine if such a community 
+will not deal seriously with what concerns Christianity.  
+Greet it from me, and say that it must have an eye to the 
+institution of monarchy.
+
+The Priest.  Christianity has nothing to do with such 
+matters.  It searches _the inner man_.
+
+The King.  That tone!  I know it--it does not search the 
+air in which the patient lives, but the lungs.  There you 
+have it!  Nevertheless, Christianity must have an eye to 
+the monarchy--must pluck the lie from it--must not follow 
+it to its coronation in the church, as an ape follows a 
+peacock.  I know what I felt in that situation.  I had gone 
+through with a rehearsal the day before--ho, ho!  Ask the 
+Christianity in this land, if it be not time to concern 
+itself with the monarchy.  It should hardly any longer, it 
+seems to me, let the monarchy play the part of the 
+seductive wanton -who turns the thoughts of all citizens 
+to war--which is much against the message of Christianity
+--and to class distinctions, to luxury, to show and vanity.  
+The monarchy is now so great a lie that it compels the 
+most upright man to share in its falsehood."
+
+The conversation that follows is in a vein of bitterness on 
+the one side, and of obtuse smugness on the other; the tragic 
+irony of the action grows deeper and deeper, until in the end 
+the king, completely disheartened and despairing, goes into 
+an adjoining room, and dies by his own hand, to the 
+consternation of the men from whom he has just parted.  They 
+give utterance to a few polite phrases, charitably accounting 
+for the deed by the easy attribution of insanity to the king, 
+and the curtain falls.
+
+It may well be imagined that "The King" made a stir in 
+literary and social circles, and quite noticeably fluttered the 
+dovecotes of conventionality and conservatism.  Such plain 
+speaking and such deadly earnestness of conviction were indeed 
+far removed from the idyllic simplicity of the peasant tales 
+and from the poetical reconstructions of the legendary past.  
+Eight years later, Bjornson prefaced a new edition of this 
+work with a series of reflections upon "Intellectual Freedom" 
+that constitute one of the most vigorous and remarkable examples 
+of his serious prose. The central ideas of his political faith 
+are embodied in the following sentences from this preface:--
+
+"Intellectual Freedom. Why is not attention called over and 
+over again to the fact that for the great peoples, who have so 
+many compensating interests, the free commerce of ideas is one 
+condition of life among many others; while for us, the small 
+peoples, it is absolutely indispensable.  A people numerically 
+large may attain to ways of thought and enterprise that no 
+political censure can reduce to a minimum; but under narrower 
+conditions it may easily come about that the whole people will 
+fall asleep.  A powerful propaganda of enlightenment under the 
+conditions of free speech is for us of the first and the last 
+importance.  When I wrote this piece it was my chief aim to 
+enlarge the bounds of free thought.  I have later made the 
+same attempt in matters of religion and morals.  When my 
+opponents seek to sum up my character in a few words, they 
+are apt to say: 'He attacks the throne and the altar.'  It 
+seems to me that I have served the freedom of the spirit, 
+and in the interests of that cause I now beg leave to reply.  
+(1) _Concerning the attack on Christianity._  It may be worth 
+while in a country with a state church to recall now and 
+then the meaning of Christianity.  It is not an institution, 
+still less a book, and least of all it is a house or a seminary.  
+It is the godly life according to the precepts and example of 
+Jesus.  There may be men who think they are attacking 
+Christianity when they investigate the historical origin or 
+the morality of some dogma; I do not think so.  Honest 
+investigation can result only in growth.  Christianity, with 
+or without its whole apparatus of dogma, will endure in its 
+essence for thousands of years after us; there will always 
+be spiritually-minded people who will be ennobled by it, and 
+some made great.  I honor all the noble.  I have friends among 
+the Christians, whom I love, and never for a moment have I 
+thought of attacking their Christianity.  I have no higher 
+wish than to see them by its help transform certain aspects 
+of our society into seriousness.  (2)  _Concerning the attack 
+on monarchy._  Monarchy is, on the other hand, an institution, 
+here the circumstances are naturally different.  I have 
+attacked monarchy, and I will attack it.  But--and to 
+this 'but' I call the closest attention.  Shortly before 
+the July Revolution, when its first signs were declared, 
+Chateaubriand was talking with the King, who asked what 
+it all meant.  'It is monarchy that is done with,' replied 
+the royalist, for he was also a seer.  Certainly there have 
+been in France both kingdom and empire since that day.  If 
+there should be no more hereafter, they still exist in other 
+lands, and will endure for generations after us.  But 'done 
+with' are they none the less; notice was given them by the 
+French Revolution.  It does not concern them all simultaneously; 
+it fixes terms, different for the different kingdoms, and far 
+removed for the kingdoms based upon conquest.  But the face of 
+civilization is now turned toward the republic, and every 
+people has reached the first, second, or third stage of the way.
+"If a work of the mind is born of Norse conditions and stands 
+before the ethical judgment seat--let it have its full action; 
+otherwise it will not produce its full reaction.  If the faith 
+that gave shape to the piece is not the strongest force in the 
+society that gave it birth, it will evoke an opposing force of 
+greater strength.  Thereby all will gain.  But to ignore it, or 
+seek to crush it--that in a large society may not greatly matter, 
+so rich are the possibilities of other work taking its place; 
+but in a small society it may be equivalent to destroying the 
+sight of its only eye."
+
+In the clean-cut phrases and moral earnestness of this _apologia 
+pro vita sua_, which deserves to be reproduced at greater length, 
+we have the modern Bjornson, no longer poet alone, but poet and 
+prophet at once, the champion of sincere thinking and worthy 
+living, the Sigurd Slembe of our own day, happier than his 
+prototype in the consciousness that the ambition to serve his 
+people has not been; altogether thwarted, and that his 
+beneficent activity is not made sterile even by the bitterest 
+opposition.
+
+Only a rapid glance may be taken at the books of the five 
+years following upon the publication of "The King."  The 
+story of "Magnhild," planned several years earlier, represents 
+Bjornson's return to fiction after a long dramatic interlude.  
+There are still peasants in this story, but they are different 
+from the figures of the early tales, and the atmosphere of the 
+work is modern.  It turns upon the question of the mutual duties 
+of husband and wife, when love no longer unites them.  The 
+solution seems to lie in separation when union has thus become 
+essentially immoral.  "Captain Mansana" is a story of Italian 
+life, based, so the author assures us, on actual characters and 
+happenings that had come within the range of his observation during
+his stay abroad.  Its interest does not lie in any particular 
+problem, but rather in the delineation of the titular figure, 
+a strong and impetuous person whose character suggests that of 
+Ferdinand Lassalle, as the author himself points out to us in a 
+prefatory note.  "Dust" is a pathetic little story having for 
+its central idea what seems like a pale reflection of the idea 
+of Ibsen's "Ghosts," which had appeared a few months before.  
+It is the dust of the past that settles upon our souls, and clogs 
+their free action. The special application of this thought is to 
+the religious training of children:--
+
+"When you teach children that the life here below is nothing to 
+the life above, that to be visible is nothing in comparison with 
+being invisible, that to be a human being is nothing in comparison 
+with being dead, that is not the way to teach them to view life 
+properly, or to love life, to gain courage, strength for work, 
+and love of country."
+
+In the play, "Leonarda," and again in the play, "A Glove," the 
+author recurs to the woman question; in the one case, his theme 
+is the attitude of society toward the woman of blemished 
+reputation; in the other, its attitude toward the man who in his 
+relation with women has violated the moral law.  "Leonarda" is a 
+somewhat inconclusive work, because the issue is not clearly 
+defined, but in "A Glove" (at least in the acting version of the 
+play, which differs from the book in its ending) there is no lack 
+of definiteness.  This play inexorably demands the enforcement of 
+the same standard of morality for both sexes, and declares the 
+unchaste man to be as unfit for honorable marriage as the unchaste 
+woman.  Upon the theme thus presented a long and violent discussion 
+raged; but if there be such a thing as an immutable moral law in 
+this matter, it must be that upon which Bjornson has so squarely 
+and uncompromisingly planted his feet.  The other remaining work 
+of this five-year period is the play called "The New System."  The 
+new system in question is a system of railway management, and it is 
+a wasteful one.  But the young engineer who demonstrates this fact 
+has a hard time in opening the eyes of the public.  He succeeds 
+eventually, but not until he has encountered every sort of 
+contemptible opposition and hypocritical evasion of the plain truth.  
+The social satire of the piece is subtle and sharp; what the author 
+really aims at is to illustrate, by a specific example, the 
+repressive forces that dominate the life of a small people, and 
+make it almost impossible for any sort of truth to triumph 
+over prejudice.
+
+Since the production of "A Glove," twenty years ago, eight more 
+plays have come from Bjornson's prolific pen.  Of these by far 
+the most important are the two that are linked by the common 
+title, "Beyond the Strength."  The translation of this title is 
+hopelessly inadequate, because the original word means much more 
+than strength; it means talent, faculty, capability, the sum total 
+of a man's endowment for some particular purpose.  The two pieces 
+bearing this name are quite different in theme, but certain 
+characters appear in both, and both express the same thought,
+--the thought that it is vain for men to strive after the 
+unattainable, for in so doing they lose sight of the actual 
+possibilities of human life; the thought that much of the best 
+human energy goes to waste because it is devoted to the pursuit 
+of ideals that are indeed beyond the strength of man to realize.  
+In the first of the two plays, this superhuman ideal is religious, 
+it is that of the enthusiast who accepts literally the teaching 
+that to faith all things are possible; in the second, the ideal is 
+social, it is that of the reformer who is deluded to believe that 
+one resounding deed of terror and self-immolation for the cause of 
+the people will suffice to overthrow the selfish existing order, 
+and create for the toiling masses a new heaven upon earth.  No 
+deeper tragedies have been conceived by Bjornson than these two, 
+the tragedy of the saintlike Pastor Sang, who believes that the 
+miracle of his wife's restoration to health has at last in very 
+truth been wrought by his fervent prayer, and finds only that 
+the ardor of his faith and hers has brought death instead of life 
+to them both,--the tragedy of his son Elias, who dies like Samson 
+with his foes for an equally impossible faith, and by the very 
+violence of his fanaticism removes the goal of socialist endeavor 
+farther than ever into the dim future.  Bjornson has written 
+nothing more profoundly moving than these plays, with their 
+twofold treatment of essentially the same theme, nor has he 
+written anything which offers a clearer revelation of his own 
+rich personality, with its unfailing poetic vision, its deep 
+tenderness, and its boundless love for all humankind. The play, 
+"Geography and Love," which came between the two just described, 
+is an amusing piece, in the vein of light and graceful comedy, 
+which satirizes the man with a hobby, showing how he unconsciously 
+comes to neglect his wife and family through absorption in his 
+work.  The author was, in a way, taking genial aim at himself 
+in this piece, a fact which his son Bjorn, who played the principal 
+part, did not hesitate to emphasize. "Paul Lange and Tora 
+Parsberg," the next play, deals with the passions engendered 
+by political controversy, and made much unpleasant stir in 
+Norwegian society because certain of the characters and situations
+were unmistakeably taken from real life.  After these plays 
+came "Laboremus" and "At Storhove," both concerned with 
+substantially the same theme, which is that of the malign 
+influence exerted by an evil-minded and reckless woman upon the 
+lives of others. From a different point of view, we may say that 
+the subject of these plays is the consecration of the home.  
+This has always been a favorite theme with Bjornson, and he has 
+no clearer title to our gratitude than that which he has earned 
+by his unfailing insistence upon the sanctity of family life, 
+its mutual confidences, and its common joys.  Completing the 
+list, we have "Daglannet," another domestic drama of simple 
+structure, and "When the New Wine Blooms," a study of modernity 
+as exemplified in the young woman of to-day, of the estrangement 
+that too often creeps into married life, and of the stirrings 
+that prompt men of middle age to seek to renew the joys of youth.
+
+During the years that have passed since the publication of 
+"Dust," Bjornson has produced four volumes of fiction,--his two 
+great novels, a third novel of less didactic mission, and a 
+second collection of short stories.  The first of the novels, 
+"Flags Are Flying in City and Harbor," saw the light during 
+the year following the publication of "A Glove," and the 
+teaching of that play is again enforced with uncompromising 
+logic in the development of the story.  The work has two other 
+main themes, and these are heredity and education.  So much 
+didactic matter as this is a heavy burden for any novel to 
+carry, and a lesser man than Bjornson would have found the 
+task a hopeless one.  That he should have succeeded even in 
+making a fairly readable book out of this material would have 
+been remarkable, and it is a pronounced artistic triumph that 
+the book should prove of such absorbing interest.  For 
+absorbingly interesting it is, to any reader who is willing 
+that a novel should provide something more than entertainment; 
+and who is not afraid of a work of fiction that compels him to 
+think as he reads.  The principal character is a man descended 
+from a line of ancestors whose lives have been wild and lawless, 
+and who have wallowed in almost every form of brutality and vice.  
+The four preceding generations of the race are depicted for us 
+in a series of brief but masterly characterizations, in which 
+every stroke tells, and we witness the gradual weakening of the 
+family stock.  But with the generation just preceding the main 
+action of the novel, there has been introduced a vigorous strain 
+of peasant blood, and the process of regeneration has begun.  
+It is this process that goes on before our eyes.  It does not 
+become a completed process, but the prospect is bright for the 
+future, and the flags that fly over town and harbor in the closing 
+chapter have a symbolical significance, for they announce a victory 
+of spirit over sense, not only in the cases of certain among the 
+individual participants in the action, but also in the case of 
+the whole community to which they belong.  So much for the book 
+as a study in heredity.  As an educational tract, it has the 
+conspicuous virtue of remaining in close touch with life while 
+embodying the spirit of modern scientific pedagogy.  The hero 
+of the book,--the last descendant of a race struggling for 
+moral and physical rehabilitation,--throws himself into the 
+work of education with an energy equal to that which his 
+forbears had turned into various perverse channels.  He 
+organizes a school, more than half of the book, in fact, is 
+about this school and its work,--and seeks to introduce a 
+system of training which shall shape the whole character 
+of the child, a school in which truth and clean living shall 
+be inculcated with thoroughness and absolute sincerity, a school 
+which shall be the microcosm of the world outside, or rather 
+of what that world ought to be.  Bjornson's interest in 
+education has been life-long; for many years it had gone 
+astray in a sort of Grundtvigian fog, but at the time when 
+this book came to be written, it had worked its way out into 
+the clear light of reason.  If the future should cease to 
+care for this work as a piece of literature, it will still 
+look back to it as to a sort of nineteenth century "Emile," 
+and take renewed heart from its inspiring message.
+
+"In God's Ways," the second of the two great novels, is a 
+work of which it is difficult to speak in terms of measured 
+praise.  With its delicate and vital delineations of character, 
+its rich sympathy and depth of tragic pathos, its plea for 
+the sacredness of human life, and its protest against the 
+religious and social prejudice by which life is so often 
+misshapen, this book is an epitome of all the ideas and 
+feelings that have gone to the making of the author's 
+personality, and have received such manifold expression in 
+his works.  It is a simple story, concerned mainly with four 
+people, in no way outwardly conspicuous, yet here united 
+by the poet's art into a relationship from which issue 
+some of the deepest of social questions, and which 
+enforces in the most appealing terms the fundamental 
+teaching of all the work of his mature years.  First of 
+all, we have the boyhood of the two friends who are 
+afterwards to grow apart in their sympathies; the one alert 
+of mind, imaginative, open to every intellectual influence, 
+also impetuous and hot-blooded; the other shy and 
+intellectually stolid, but good to the very core, and moved 
+by the strongest of altruistic impulses.  In accordance with 
+their respective characters, the first of these youths becomes 
+a physician, and the other a clergyman.  Then we have the 
+sister of the physician, who becomes the wife of the 
+clergyman, a noble, proud, self-centred nature, finely 
+strung to the inmost fibre of her being.  Then we have a 
+woman of the other sort, clinging, abnormally sensitive, a 
+child when the years of childhood are over, and made the 
+victim of a shocking child-marriage to a crippled old man.  
+She it is whom the physician loves, and persuades to a 
+legal dissolution of her immoral union.  After some years, 
+he makes her his wife, and their happiness would be complete 
+were it not for the social and religious prejudice aroused.  
+The clergyman, whom years of service in the state church 
+have hardened into bigotry, is officially, as it were, 
+compelled to condemn the friend of his boyhood, and even the 
+sister, for a time grown untrue to her own generous nature, 
+shares in the estrangement.  In vain does the physician seek 
+to shelter his wife from the chill of her environment.  She 
+droops, pines away, and finally dies, gracious, lovable, and 
+even forgiving to the last.  Then the death angel comes close 
+to the clergyman and his wife, hovering over their only child, 
+and at last the barrier of formalism and prejudice and 
+religious bigotry is swept away from their minds.  Their 
+natural sympathies, long repressed, resume full sway, and they 
+realize how deeply they, have sinned toward the dead woman.  
+The sister seeks a reconciliation with her brother, but he 
+repulses her, and gives her his wife's private diary to read.  
+In this _journal intime_ she finds the full revelation of the 
+gentle spirit that has been done to death, and she feels that 
+the very salvation of her life and soul depend upon winning her 
+brother's forgiveness.  The closing chapter, in which the final 
+reconciliation occurs, is one of the most wonderful in all 
+fiction; its pathos is of the deepest and the most moving, and 
+he must be callous of soul, indeed, who can read it with dry eyes.
+
+If we were to search the whole of Bjornson's writings for the 
+single passage which should most completely typify his message 
+to his fellowmen,--not Norwegians alone, but all mankind,--the 
+choice would have to rest upon the words spoken from the pulpit 
+by the clergyman of this novel, on the Sunday following the 
+certainty of his child's recovery.
+
+"To-day a man spoke from the pulpit of the church about what he 
+had learned.
+"Namely, about what first concerns us all.
+"One forgets it in his strenuous endeavor, a second in his zeal 
+for conflict, a third in his backward vision, a fourth in the 
+conceit of his own wisdom, a fifth in his daily routine, and we 
+have all learned it more or less ill.  For should I ask you who 
+hear me now, you would all reply thoughtlessly, and just because 
+I ask you from this place, 'Faith is first.'
+"No, in very truth, it is not.  Watch over your child, as it 
+struggles for breath on the outermost verge of life, or see 
+your wife follow the child to that outermost verge, beside 
+herself for anxiety and sleeplessness,--then love will teach 
+you that _life comes first_.  And never from this day on will 
+I seek God or God's will in any form of words, in any sacrament, 
+or in any book or any place, as if He were first and foremost to 
+be found there; no, life is first and foremost--life as we win 
+it from the depths of despair, in the victory of the light, in 
+the grace of self-devotion, in our intercourse with living 
+human kind.  God's supreme word to us is life, our highest 
+worship of Him is love for the living.  This lesson, self-evident 
+as it is, was needed by me more than by most others.  This it 
+is that in various ways and upon many grounds I have hitherto 
+rejected,--and of late most of all.  But never more shall 
+words be the highest for me, nor symbols, but the eternal 
+revelation of life.  Never more will I freeze fast in doctrine, 
+but let the warmth of life melt my will.  Never will I condemn 
+men by the dogmas of old time justice, unless they fit with our 
+own time's gospel of love.  Never, for God's sake!  And this 
+because I believe in Him, the God of Life, and His never 
+ending revelation in life itself."
+
+Here is a gospel, indeed, one that needs no church for its 
+promulgation, and no ceremonial for the enhancement of its 
+impressiveness.  It is a gospel, moreover, that is based upon no 
+foundation of precarious logic, but finds its premises in the 
+healthy instincts of the natural man.  It is no small thing to 
+have thus found the way, and to have helped others likewise to 
+find the way, out of the mists of superstition, through the 
+valleys of doubt and despondency, athwart the thickets of 
+prejudice and bigotry with all their furtive foemen, up to 
+these sunlit heights of serenity.
+
+"Mary" is less explicit in its teaching than the two great 
+novels just summarized, but what it misses in didacticism it 
+more than gains in art. The radiant creature who gives her 
+name to the book is one of Bjornson's most exquisite figures.  
+She is the very embodiment of youthful womanhood, filled with 
+the joy of life, and bringing sunshine wherever she goes.  Yet 
+this temperament leads to her undoing, or what would be the 
+undoing of any woman less splendid in character.  But the 
+strength that impels her to the misstep that comes so near to 
+having tragic consequences is also the strength that saves her 
+when chastened by suffering.  In her the author "gives us the 
+common stuff of life," says an English critic, "gives it us 
+simple and direct.  There is nothing here of Ibsen's pathology.  
+We are in the sun.  Her most hideous blunder cannot undo a 
+woman's soul.  Bjornson knows that the deed is nothing at all.  
+It is the soul behind the deed that he sees.  Not everything 
+that cometh out of a man defileth a man.  At all events, so it 
+is here: triumph and joy built upon an act that--as the 
+Philistines would say--has defiled forever."  As a triumph of 
+sheer creation, this figure is hardly overmatched anywhere in 
+the author's portrait gallery of women.
+
+If Bjornson's essential teaching may be found in a single 
+page, as has above been suggested, his personality evades all 
+such summarizing.  In the present essay, he has been considered 
+as a writer merely,--poet, dramatist, novelist,--but the man 
+is vastly more than that.  His other activities have been 
+hinted at, indeed, but nothing adequate has been said about 
+them.  The director of three theatres, the editor of three 
+newspapers and the contributor to many others, the promoter 
+of schools and patriotic organizations, the participant in 
+many political campaigns, the lay preacher of private and 
+public morals, the chosen orator of his nation for all great 
+occasions,--these are some of the characters in which we must 
+view him to form anything like a complete conception of his 
+many-sided individuality.  Take the matter of oratory alone, 
+and it is perhaps true that he has influenced as many people 
+by the living word as he has by the printed page.  He has 
+addressed hundreds of audiences in the three Scandinavian 
+countries and in Finland, he has spoken to more than twenty 
+thousand at a time, and his winged speech has gone straight 
+home to his hearers.  All who ever heard him will agree that 
+his oratory was of the most persuasive and vital impressiveness.  
+Jaeger attempts to describe it in the following words:--
+
+"It is eloquence of a very distinctive type; its most 
+characteristic quality is its wealth of color; it finds 
+expression for every mood, from the lightest to the most serious, 
+from the most vigorous to the most delicate and tender.  Now 
+his words ring like the voice of doom, filled with thunder and 
+lightning, now they become soft and persuasive with smiling mien.  
+With a single cadence, or a play of the facial muscles, or a 
+slight gesture, he can portray a person, a situation, or an 
+object, so that it appears living in the sight of his hearers.  
+And what the word alone cannot do, is accomplished in the most 
+brilliant manner by the virtuosity of his delivery.  He does 
+not speak his words, he presents them; they take bodily form 
+and seem alive."
+
+In his more intimate relationships, on the other hand, in 
+face to face conversation or in the home circle, the man 
+takes on a quite different aspect; the prophet has become 
+the friend, the impassioned preacher has become the genial 
+story teller, and shares the gladsome or mirthful mood of 
+the hour.  Such a personality as this may be analyzed; it 
+defies any concise synthesis.  One resorts to figures of 
+speech, and they were abundantly resorted to by those who 
+paid him the tribute of their admiration and love upon the 
+occasion of his seventieth anniversary.  Let us take an 
+instance at random from one of these tributes.
+
+"The cataract that roars down to the free foaming sea.  
+The mountain with its snowclad peaks towering up into the 
+immensity of the starry heavens.  The rustling of the 
+woodland above the blossom-spangled and smiling meadows, 
+the steep uptowering, the widely growing, and the joyously 
+smiling.  At once the soft melody that stirs the heart and 
+the strong wind that sweeps over the Northern lands."
+
+This concourse of metaphors gives some slight idea of the 
+way in which Bjornson's personality affected those who came 
+into contact with it.  The description may be supplemented 
+by a few bits of anecdote and reminiscence.  The composer 
+Grieg contributes the following incident of the old days 
+in Norway:--
+
+"It was Christmas eve of 1868 at the Bjornsons in Christiania.  
+They lived then in the Rosenkrantzgade.  My wife and I were, 
+as far as I can remember, the only guests.  The children were 
+very boisterous in their glee.  In the middle of the floor 
+an immense Christmas tree was enthroned and brightly lighted.  
+All the servant-folk came in, and Bjornson spoke, beautifully and 
+warmly, as he well knows how to do.  'Now you shall play a hymn, 
+Grieg,' he said, and although I did not quite like the notion 
+of doing organist's work, I naturally complied without a murmur.  
+It was one of Grundtvig's hymns in 32--thirty-two verses.  I 
+resigned myself to my fate with stoicism.  At the beginning I 
+kept myself awake, but the endless repetitions had a soporific 
+effect.  Little by little I became as stupid as a medium.  When 
+we had at last got through with all the verses, Bjornson said: 
+'Isn't that fine.  Now I will read it for you!'  And so we got 
+all thirty-two verses once more.  I was completely overawed."
+
+When the poet purchased his country estate which was his home 
+from the late seventies to the end of his life, his coming was 
+looked forward to with mingled feelings by the good country folk 
+of the neighborhood.  Kristofer Janson thus tells the story of 
+his arrival:
+
+"His coming was anticipated with a certain anxiety and 
+apprehension, for was he not a 'horrid radical'?  The dean in 
+particular thought that he might be a menace to the safe 
+spiritual slumber of the village.  As the dean one day was 
+driving through the village in his carriole, just where the 
+road turns sharply by the bridge below Aulestad, he met another 
+carriole which was rapidly driving that way and in it a man who, 
+without respect for the clerical vehicle, shouted with all the 
+strength of his lungs: 'Half the road!'  The dean turned aside, 
+saying with a sigh: 'Has Bjornson come to the Gausdal at last?'
+"It was indeed so, and he showed his colors at the start.  
+The same dean and Bjornson became the best of friends afterwards, 
+and found much sport in interchanging genial jests whenever they met."
+
+Frits Thaulow, the painter, thus wrote to Bjornson reminding him 
+of a festive gathering of students:
+
+"The manager came in and announced with a loud voice that it was 
+past twelve.  Then you sprang up.
+"'Bring champagne!  Now I will speak of what comes after twelve 
+o'clock! of all that lies beyond the respectable hour for 
+retiring!  For the hour when fancy awakens and fills us with 
+longings for the world of wonderland; then the painter sees only 
+the dim outline in the moonlight, then the musician hears the 
+silence, then the poet after his thoughtful day feels sprouting 
+the first shoots of the next.  After twelve freedom begins.  The 
+day's tumult is stilled, and the voice within becomes audible.'
+"Thus you spoke, and 'after twelve' became a watchword with us.
+"Many a spark has been kindled in your soul by the quiet evening 
+time.  But later in life, when you become a chieftain in the 
+battle, broad daylight also made its demands upon you.  Like 
+the sun you shone upon us and made the best that was in us 
+to grow, but I shall always keep a deep artistic affection for 
+what comes 'after twelve.'"
+
+Henrik Cavling tells the following story of the poet in Paris:
+
+"It was one of Bjornson's peculiarities to go out as a rule 
+without any money in his pocket.  He neither owned a purse 
+nor knew the French coins.  His personal expenditures were 
+restricted to the books he bought, and now and then a theatre 
+ticket.  One day he carne excitedly into the sitting-room, 
+and asked:
+"'Who took my five franc piece?'  It was a five franc piece 
+that he had got somewhere or other and had stuck in his pocket 
+to buy a theatre ticket with.  It turned out that the maid had 
+found it and given it to Fru Bjornson.  For it seemed quite 
+unthinkable to her that the master should have any money to 
+take out with him.
+"This complete indifference of Bjornson to small matters 
+sometimes proved annoying.  In this connection I may tell 
+of a little trip he once took with Jonas Lie.
+"The two poets, who did not live far apart, had long counted 
+with pleasure upon a trip to Pere Lachaise, where they wished 
+to visit Alfred de Musset's grave.  At last the day came, 
+and with big soft hats on their heads, and engaged earnestly 
+in conversation, they drove away through Paris.
+"When they came to Pere Lachaise, and wanted to enter the 
+cemetery, the driver stopped them and asked for his pay.  
+Then it appeared that neither had any money, which they 
+smilingly explained, and asked him in bad French to wait 
+and drive them home again.  But the two gentlemen with the big 
+soft hats had not inspired the driver with any marked degree 
+of confidence.  He made a scene, and attracted a great crowd 
+of the boys, loafers, and well-dressed Frenchmen who always 
+collect on critical occasions.  The end of the affair was that 
+the poets had to get into their cab again and drive all the long 
+way back without having had a glimpse of the grave.  When they 
+reached Lie's lodgings, Lie went in to get some money, while 
+Bjornson sat in the cab as a hostage.  Nevertheless, both poets 
+maintained that they had had a pleasant expedition.  A Norwegian 
+question, which had accidentally come up between them, had 
+made them forget all about Alfred de Musset."
+
+Finally, a story may be given that is told by Bjornson himself.
+
+"I had a pair of old boots that I wanted to give to a beggar.  
+But just as I was going to give them to him, I began to wonder 
+whether Karoline had not some use for them, since she usually 
+gave such things to beggars.  So I took the boots in my hand, 
+and went downstairs to ask her, but on the way I got a little 
+worked up because I did not quite dare to give them to the beggar 
+myself.  And the further I went down the steps, the more wrathful 
+I got, until I stood over her.  And then I was so angry that I had 
+to bluster at her as if she had done me a grievous wrong.  But 
+she could not understand a word of what I said, and looked at me 
+with such amazement, that I could not keep from bursting into laughter."
+
+From his early years, Bjornson kept in touch with the modern 
+intellectual movement by mingling with the people of other lands 
+than his own.  Besides his visits to Denmark, Sweden, and Finland, 
+he made many lengthy sojourns in the chief continental centres 
+of civilization, in Munich, Rome, and Paris.  The longest of 
+his foreign journeys was that which brought him to the United 
+States in the winter of 1880-81, for the purpose of addressing 
+his fellow countrymen in the Northwest.  His home for the last 
+thirty years and more has been his estate of Aulestad in the 
+Gausdal, a region of Southern Norway.  Here he has been a 
+model farmer, and here, surrounded by his family,--wife, 
+children, and grandchildren,--his patriarchal presence has 
+given dignity to the household, and united its members in a 
+common bond of love.  Hither have come streams of guests, 
+friends old and new, to enjoy his generous hospitality.  There 
+has been provision for all, both bed and board, and the heartiest 
+of welcomes from the host.  And the stranger from abroad has 
+been greeted, as like as not, by the sight of his own country's 
+flag streaming from a staff before the house, and foreshadowing 
+the personal greeting that awaited him upon the threshold.
+
+Bjornson died in Paris (where he had been spending the 
+winter, as was his custom for many years past), April 26, 1910.  
+He had been ill for several months, and only an extraordinarily 
+robust constitution enabled him to make a partial recovery from 
+the crisis of the preceding February, when his death had been 
+hourly expected.  The news of his death occasioned demonstrations 
+of grief not only in his own country, but also throughout the 
+civilized world.  Every honor that a nation can bestow upon 
+its illustrious dead was decreed him by King and Storthing; 
+a warship was despatched to bear his remains to Christiania, 
+and the pomp and circumstance of a state funeral acclaimed the 
+sense of the nation's loss.
+
+
+
+
+LIST OF WORKS.
+
+SYNNOVE SOLBAKKEN.  Fortaelling, 1857 
+MELLEM SLAGENE.  Drama, 1858
+ARNE.  Fortaelling, 1858
+HALTE-HULDA.  Drama, 1858
+EN GLAD GUT.  Fortaelling, 1860
+KONG SVERRE.  1861
+SIGURD SLEMBE.  1862
+MARIA STUART I SKOTLAND.  Skuespil, 1864
+DE NYGIFTE.  Komedie, 1865
+FISKERJENTEN.  Fortaelling, 1868
+DIGTE OG SANGE.  1870
+ARNLJOT GELLINE.  1870
+SIGURD JORSALFAR.  Skuespil, 1872
+FORTAELLINGER I-II,  1872
+BRUDE-SLAATTEN.  Fortaelling, 1873
+REDAKTOREN.  Skuespil, 1874
+EN FALLIT.  Skuespil, 1874
+KONGEN.  1877
+MAGNHILD.  Fortaelling, 1877
+KAPTEJN MANSANA.  Fortaelling fra Italien, 1879
+LEONARDA.  Skuespil, 1879
+DET NY SYSTEM.  Skuespil, 1879
+EN HANDSKE.  Skuespil, 1883
+OVER AEVNE.  Forste Stykke, 1883
+DET FLAGER I BYEN OG PAA HAVNEN,  1884
+GEOGRAFI OG KJAERLIGHED.  1885
+PAA GUDS VEJE.  1889
+NYE FORTAELLINGER.  1894
+LYSET.  En Universitetskantate, 1895
+OVER AEVNE.  Andet Stykke, 1895
+PAUL LANGE OG TORA PARSBERG.  1898
+LABOREMUS.  1901
+TO FORTAELLINGER.  1901
+PAA STORHOVE.  Drama, 1904
+DAGLANNET.  1904
+TO TALER.  1906.
+MARY.  Fortaelling, 1906
+VORT SPROG.  1907
+NAAR DEN NY VIN BLOMSTRER.  1909
+
+The Project Gutenberg Etext of Bjornstjerne Bjornson
+by William Morton Payne
+******This file should be named 7bjrn10.txt or 7bjrn10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7bjrn11.txt
+VERSIONS based on separate sources get new LETTER, 7bjrn10a.txt
+
+This etext was produced by Nicole Apostola.
+
+***
+
+More information about this book is at the top of this file.
+
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/eBook03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/eBook03
+
+Or /eBook02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+The most recent list of states, along with all methods for donations
+(including credit card donations and international donations), may be
+found online at http://www.gutenberg.net/donation.html
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these eBooks are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg eBooks or other materials be they hardware or
+software or any other related product without express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+
+
+
+End of The Project Gutenberg Etext of Bjornstjerne Bjornson
+by William Morton Payne
+

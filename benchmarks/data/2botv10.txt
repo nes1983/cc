@@ -1,0 +1,1052 @@
+The Project Gutenberg Etext of Satirical Prose, by Hristo Botev
+#2 in our series by Hristo Botev.
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below. We need your donations.
+
+Presently, contributions are only being solicted from people in:
+Texas, Nevada, Idaho, Montana, Wyoming, Colorado, South Dakota,
+Iowa, Indiana, and Vermont. As the requirements for other states
+are met, additions to this list will be made and fund raising will
+begin in the additional states. These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655
+
+
+Title:  Short stories
+Contains
+O, tempora! O, mores!
+The Writers' and Jourmalists' Duties
+Political Winter
+Ridiculous Cry
+The People: Yesterday, Today and Tomorrow
+Petrushan
+         
+
+Author:  Hristo Botev
+
+Release Date:  November, 2001  [Etext #2894]
+[Yes, we are about one year ahead of schedule]
+
+Edition:  10
+
+The Project Gutenberg Etext of Satirical Prose, by Hristo Botev
+*****This file should be named 2botv10.txt or 2botv10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER,2botv11.txt
+VERSIONS based on separate sources get new LETTER, 2botv10a.txt
+
+This file was prepared by Victor Kirilov Liubenov, Sofia, Bulgaria
+victor@mbx.isoc.bg 
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://metalab.unc.edu/pub/docs/books/gutenberg/etext01
+or
+ftp://metalab.unc.edu/pub/docs/books/gutenberg/etext01
+
+Or /etext00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+Something is needed to create a future for Project Gutenberg for
+the next 100 years.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicted from people in:
+Texas, Nevada, Idaho, Montana, Wyoming, Colorado, South Dakota,
+Iowa, Indiana, and Vermont. As the requirements for other states
+are met, additions to this list will be made and fund raising will
+begin in the additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation and will be tax deductible to the extent
+permitted by law.
+
+Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655  [USA]
+
+We are working with the Project Gutenberg Literary Archive
+Foundation to build more stable support and ensure the
+future of Project Gutenberg.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+You can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+We would prefer to send you this information by email.
+
+
+Example command-line FTP session:
+
+ftp metalab.unc.edu
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext01, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States 
+copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions of money, time,
+public domain etexts, and royalty free copyright licenses.
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.07.00*END*
+
+
+
+
+
+This file was prepared by Victor Kirilov Liubenov, Sofia, Bulgaria
+victor@mbx.isoc.bg 
+Thank you, Victor! 
+
+
+
+
+
+This text was written using the Windows Cyrillic 1251 character set.  
+
+
+Този текст е подготвен от Виктор Кирилов Любенов, София, България, victor@mbx.isoc.bg
+Хиляди благодарности, Виктор!
+
+
+
+O, TEMPORA! O, MORES!
+
+
+O, tempora! О, mores! Седя и се чудя, защо човек се сърди, кога му речеш:
+магаре, свиня или вол; и не се сърди - дору още се радва, кога му речеш:
+пиленце, гълъбче, славейче, дори още котенце и теленце? Дали славеят
+принася повече полза в обществото на човеците, отколкото благородната
+свиня, тази производителна сила в природата на животните, на която само
+като погледне човек, наумява му нещо аристократическо, нещо възпитано и на
+дължина, и на широчина? Дали пилето има повече мозък, повече ум, отколкото
+почтеното магаре, този философ не само между животните, но и между
+човеците? Или пък гълъбът е по-непорочен и по-достоен в нещо от скопения
+вол, туй подобие на нашия търпелив народ? Но иди и речи такава дума на
+нашите, например (ний се с примери ще говорим) литератори, поети,
+вестникари, чорбаджии, учители и прочиe раби божии, та виж какво ще ти се
+струпа на главата от сичките тези труженици в полето на глупостта.
+Музикословеснейшият господин Пишурка, за честта на музите и на неговата
+"госпожица правда" и "мадам кудкудячка" ще те повика на дуел или,
+поетически да кажа, на полето на честта.
+Мудроглупейшите и изряднейшите последователи на нашия Сумароков (нека се
+не сърди г-н Войников, че му дадохме това име. Сумароков е малко по-долен
+поет от великия Тредяковски) - почтените господа Пърличев, Сапунов,
+Пискюллиев, Оджаков, Станчов, Фингов, Деребеев (уху!), щурците на
+Блъсковото училище за мишките и сички нищи духом и богати глупостию, -
+сичките ще те потеглят, щеш не щеш, на съд пред парнаските богове, дето,
+разбира се, председателствува философът с дългите уши; а други, за кои
+истината не е тъй тежка и горчива, сир. онез табан суратларъ, на които и в
+очите да плюеш, те ще казват, че е божа росица - каквито са благородните
+напр. х. Иванчо Пенчович ефенди, Христо Арнаудов ефенди, Никола Генович
+ефенди, сладкото перо Михайловски, учителската фабрика Груев, синът на
+Мита Патката - Павлов, сиамските братя Балабанов и Овчов, букурещката
+"Добродетелна дружина" за обиране на умрелите и все и вся дебелокожа
+породица и чорбаджийска - всички ще кажат: "Оставете тоз чапкънин; човек
+без работа, заловил се да ни гложде цървулите и да маскари пречистите ни
+лица, създадени по образу и подобию божию. "А! Незлобливи пиленца,
+гълъбчета, славейчета и теленца! "Будилникът" не ще бъде тъй глупав,
+защото не му е изпила още кукувица ума като на "Звънчатий Глумча" (Глупчо
+трябвало да се каже), и тъй безбожен като покойния "Тъпан", та да унижава
+умните, полезните и трудолюбивите животни с вас, подвижници на
+пищеварението. "Тъпанът" беше омаскарил веднъж една магарица, като
+казваше, че тази почтена майка родила букурещките български нотабили; но
+затуй и господ го наказа, та нема рахат и на оня свят. "Будилникът", който
+знае, че страхът от бога е начало на премъдростта, а почетта към старите
+начало на добродетелта, ще се пази като от огън от такива неща - да
+унижава животните. Неговата програма ще бъде: да гуди сяко нещо на мястото
+му и сичко да краси с боите му. А ако има нещо общо между споменатите в
+тая молитва раби божии и животни, то българският зоолог и доктор (ъ-хъ!
+доктор ами?) Начо Планински, който беше написал едно време -Зоология за
+българите", нека се потруди да реши тази велика задача, този всемирен
+вопрос, та на Куковден, когато се напечати тази книга, да види ученият
+свят какво ще рече: "Зоология за българите". Дотогава ний ще се препираме,
+че нито Генович, нито Найденов имат нещо общо с животните и с човека. И
+наистина какво общо напр. между занятията на магарето и работата на
+ефендето и черибашият? Философът с дългите уши носи на гърба си: дърва,
+вода, брашно, хора, и с това принася голяма полза, а ефендето издава
+органа на шпионите "Турция", а черибашият - органа на идиотите "Правото" и
+с това приносят вреда; философът върши само онова, що може, а черибашият
+сичко, що не може; магарето никога не лъже, а ефендето го е срам да каже
+някога право; магарето пости и затова ще отиде в християнския рай, Генович
+яде пилаф и ще отиде в кочината на Мохамеда - а черибашият, който в турско
+село държи рамазан, а в българско яде сланина, той на оня свят ще яде от
+коритото на Гилдебранда.
+
+А-ха, има едно нещо, за кое, ако се улови българският зоолог, ще може да
+обори мнението ни. То не е тъй важно, та можехме да го премълчим, но
+"понеже обаче сърцето ми плаче за моя народ", както казва г-н Великсин в
+едно стихотворение, ще го кажем: юларят! Юларят и самарят! -Звънчатий
+Глумчо", вместо да говори глупости, добре би сторил да прикачи юларя на
+ефендето, а самаря на черибашият, па хайде като сюрюджия на изложбата във
+Виена, та да видят и европейците какви стоки има българският народ, когото
+едни наричат "немци на юг", други - "английци на восток", а той не е друго
+освен вол в хомот, роб на бръснатата глава и на калимавката, роб и сам на
+себе си.
+
+
+ДЛЪЖНОСТИТЕ НА ПИСАТЕЛИТЕ И НА ЖУРНАЛИСТИТЕ
+
+
+Послушайте, мои мили гълъбчета, моите старешки съвети и възползувайте се
+от обстоятелствата. Който от вас остане без работа и няма с какво да
+живее, който от вас изпадне и не може да прехрани жената си и децата си и
+който от вас има намерение да стане "благороден" просяк и да живее по-лесно
+от "неблагородните" просяци, ние го съветоваме или да стане учител, или да
+пише различни книжки, или да издава вестник. Тия три занятия са и лесни, и
+полезни, и честни, и сити. А нашата публика? - Не грижете се за тая
+публика. За тая публика между ахтоподът и шопските цървули в Мраморно
+море, между кокошката и гаргата и между Мемиш паша и Нютона не съществува
+никакво различие. И така, купете си пера и мастило и захванете своите
+занятия, колкото се може по-скоро, защото днешнйото развитие на българския
+народ е най-благоприятно за врабците.
+
+Слушайте и това. Ако някой се осмели да ви каже, че сте бездарни, че сте
+луди, че не знаете какво говорите и че мозъкът ви се намира в петите, то
+го изпсувайте с хамалски виражения, наречете го шпионин и народопродавец,
+кажете му, че той е продал совестта си и перото си на японците, на
+абисинците - това е се едно, - и помолете публиката да го не слуша и да не
+принимава думите му за факти. Разбира се, че публиката има свои слабости,
+следователно вие, ако искате да попаднат вашите думи на здраво място, сте
+длъжни да похвалите по-млечните крави и да им дадете титли: "сахарчица",
+"халвица", "високоблагородия" и пр.
+
+Слушайте, братя врабци и цанцугери! Аз мога да ви уверя, че ако послушате
+съветите ми и ако се възползувате от обстоятелствата, то вашата прехрана е
+обезпечена и вашето име ще да се почита и уважава от восток до запад. Но
+тежко ви и горко ви, ако похвалите някой сиромах, някой хъш или някой
+западнал търговец! Ако направите подобно престъпление, то работата ви е
+спукана. Чорбаджиите не обичат оние писатели, които турят имената им на
+един ред със сиромасите. Вардете се. Слушайте още и това. Ако някой
+чорбаджия ви помоли да го не хвалите във вестника си и да го не срамите
+пред ония, които познават неговите "несъществующи" благодеяния, то вие го
+не слушайте. Маслото не разваля яденето, а похвалата не произвежда пагуба
+за кесията. "Кроткото агне от две майки суче" - говори българската
+пословица, а в пословиците се заключават стари истини.
+Хвалете и не бойте се. Хваленето не иска хляб и топли обуща, а за лъжите
+не вземат нито гюмрюк, нито бедел-парасъ. Вашата стока ще се продава без
+акциз и без полицейски надзор, следователно - вие и вашето домочадие
+можете да бъдете съвсем спокойни. Ако някой от вашите граждани направи
+някое беззаконие и ако тоя гражданин ви плаща акуратно за годишното
+течение на вестника, то и в такъв случай вие сте обязани да премълчите и
+да не говорите за това беззаконие.
+Ако премълчите, то няма да ви се отяде от езика, а ако не премълчите, то
+няма кой да ви каже "аферим". Секи човек има свои грехове и сяка душа се
+бои от адските духове, следователно мълчанието е една от ония добродетели,
+които се похваляват от сяко пъповъзвишение и от сяко щастливо
+миропомазание. "Ох, агне мое, мълчанието е голяма добродетел" - говорят
+калугерите на своите неопитни почитатели, които се приготовляват да бъдат
+техни ублажители. "Ах, чедо мое, мълчанието е Христова добродетел" -
+говорят духовниците на елеокожите вдовици, които се приготовляват да
+живеят "о господе". "Ех, мой синко, мълчанието е една от най-главните
+комерчески добродетели" - говори пъповъзвишеното величество на своите
+подчинени, които му помагат да се кълне пред купувачите си и да лъже и с
+ушите си. Идете после това и не говорете, че мълчанието е голяма
+добродетел!
+
+После мълчанието върви смирението. Ако желаете да ви хвалят хората и ако
+ви се иска да живеете наготово, то свивайте полите си даже и пред ония
+свои благодетели, които ви хранят само с мазни обещания. Пословицата,
+която казва, че "по-добре днес попарник, нежели до неделя тутманик", няма
+никакво значение за журналистите. Кой знае из коя дупка ще да изскокне
+заец? С една дума, вие сте длъжни в това отношение да бъдете много по-
+чисти и много по-кротки христиени, нежели Дорчо ефенди. "Ако някой (богат
+човек) ви удари плесница по едната страна, то вие му обърнете и другата";
+а ако някой (богат човек) ви каже, че сте глупави и че не знаете какво
+бръщолевите, то идете на другия ден и помолете го да ви даде добър и умен
+съвет за това или за онова ваше предприятие. Ако направите така, то бъдете
+уверени, че след няколко недели вашето име ще да се прослави по сичкия
+град и вие ще да бъдете наречени благонадежден и разумен човек.
+
+Третята длъжност на писателите и на журналистите е да просят деликатно и
+да подмамят своите благодетели с особено изкуство. Ако имате намерение да
+издавате "Напредок" или "Хитър Петър", то отваряйте ушите си и не лапайте
+мухите. Когато чуете, че някой базергянин е получил наследство или че е
+спечелил 20-30 хиляди гроша с някоя леснина, то идете на другия ден при
+него (в това време той тряба да има кеф), разкажете му своето незавидно
+положение, обвинете времето и скъпията (и скъпията е богоугодна на
+пъпестите базергяни) и явете му умилително и сладкозвучно, че вашата най-
+голяма дъщеря е порасла вече и че възрастта й ви задава големи грижи (N.B.
+Даже и женените сърца биват нежни към порасналите дъщери). Когато
+извършите сичкото това, то повдигнете малко страните си, захлупете отчасти
+очите си, поухилнете се кисело и помолете великия патриотин да запише
+няколко екземпляра от вестника ви и да ги хариже на сиромашките деца.
+Слушайте и това: ако тоя благодетел на човеческия род ви каже, че той няма
+време да чете и че вашият вестник му се не харесва, то и в такъв случай не
+губете куража си. "Не четете, а сичко знаете" - му кажете вие и вашият
+успех ще да влезе сам в джеба ви. А какво трябва да пишете в своите книги
+и вестници и какви идеи сте длъжни да проповядате? О, за това не трябва ни
+да мислите. Земете пример от "Хитър Петър", поучете се из "Гражданин",
+възползувайте се от програмата на "Напредок", приемете направлението на
+"Източно време", усвойте клисурските идеи на отец "Век", изучете
+премъдростите на "Дунав", оженете се за "Училището", нахрапайте се из
+"Читалището", и вашата работа е свършена. Ние не живеем вече в оние темни
+времена, когато нашите писатели и журналисти ходеха да търсят душевна
+храна по гръцките купища и по турските кавенета. Днес царува XIX век.
+Разбира се, че ние говорим тук не за Балабановия "Век". Тоя "Век" не
+прилича даже и на своя брат "Напредок", когото самата природа е създала
+отличително от сичките други живи същества. В нашия деветнайсети век
+българската литература се е обогатила даже и с такива съчинения, които ще
+да научат Паничката да слуша, г-на Ангелаки Савича да мисли, Найденова да
+блее, г-на Геновича да сънува, отца Балабанова да преде, а дяда Блъскова
+да плете чорапи.
+
+И така, падайте на колене и поблагодарете, мои мили врабци и цанцугери,
+бача си Добря Войникова, който се е постарал да ви напише "Теория на
+словесността" и който се е завзел да ви направи хора. Нам отдавна вече е
+нужен такъв човек и такава книга. Същото говори и остроумният критик във
+в. "Напредок". Досега хората са се учили в различни училища и изучавали са
+всевъзможни книги и науки, а отсега работите ще да се опростят и улеснят.
+Земете книгата на Войникова, прекръстете се, прочетете я и станете разумен
+човек и остроумен писател. Разбира се, че ако отец Марко Балабанов да би
+се родил после г-на Войникова, той не би ходил в Париж да изучава
+Ламартина и не би се върнал без мозък. Но историческите съдби са
+необясними. Боже мой, кой дявол се е надеял, че из главата на г-на
+Войникова ще да се роди такава нравствена сила, която ще да захлупи под
+калпака си даже и г-на Оджакова и неговата "Наука за песнотворството"!
+Както щете, а на г-на Войникова тряба да се окачи голямото петало.
+(Букурещките чорбаджии завиждат.) Ако г-на Оджаков ни учи само да пеем
+"Чам-чам дибинде", то Войников ще да ни научи да мислиме (радвай се, г.
+Сапунов!), да пишеме (радвай се, г.Найденов!), да разсъждаваме (радвай се
+г. Савич!), да философствуваме (радвай се, Мемиш паша!), да
+дипломатизираме (радвай се, дядо Блъсков!) и да мъдрословиме (радвай се,
+г. Войников!). Из последния брой на "Хитър Петър" се види, че влиянието на
+г-на Войникова се разпространява необикновено бързо. Боже мой, и г.
+Паничков е захванал вече да блее, а ние сме имали слабост да мислиме, че
+това словесно животинче е способно само за клисарин или за "червочист" по
+касапниците. Идете после това и не радвайте се г-ну Войникову! Но г.
+Паничков си има и врожден талант. Секи от вас знае, че зимно време в
+Калофер остават само жените, селските терзии, копачите и поповете, защото
+мъжкото население отива в Цариград да шие на Амбарът. В това време в
+Калофер дошел нов ага. А кой ще да го посрещне? Жените и поповете решили
+да изпроводят г-на Паничкова да се поклони на забитина и да му каже "добре
+дошел", защото г. Паничкова още в онова време се считал за "окумушин". Г.
+Паничков отишел в конака, поклонил се на агата и рекъл му смирено:
+"Сен сън пезевенк, аго!"
+Разбира се, че на агата се не харесало това приветствие и той захванал да
+бие калоферския "окумушин". Тряба да ви кажа и това, че из къщата на г-на
+Паничкова се видел конашкият двор, а сестрата на окумушина стояла на
+прозореца и гледала как ще да бъде посрещнат брат й от агата. Когато тя
+видяла, че бият "окумушина", то извикала: "Мамо, а, мамо, бият Димитърча!"
+- "А защо го бият?" - попитала майката. - "Димитърчо наддума агата" -
+отговорила дъщерята. Из сичкото това вие видите твърде ясно, че редакторът
+на "Хитър Петър" е бил знаменит още в онова време, когато е мислил с
+мозъка си, когато е слушал с ушите си и когато е говорил с устата си.
+
+Но както и да е, а българската журналистика напредва. Ние сме твърдо
+уверени, че ако се появят още един "Хитър Петър", още един "Гражданин" и
+още един "Напредок", то българският народ ще да отнеме "Баламук" и лудите
+ще да останат без столнина. Токвил говори, че сяко едно правителство
+прилича на народа си, а аз ще да кажа, че българската журналистика прилича
+на нас с вазе. Когато публиката няма нужда за здрава храна, то за
+шарлатаните се открива широко поле. Нека ни дава господ бог повече разум и
+по-малки пъпове!
+
+
+ПОЛИТИЧЕСКА ЗИМА
+
+
+"Дали се зора довърши, или се две нощи смесиха?"
+
+
+Приятно нещо е да има човек топла соба, самун хляб, парче сланина и
+няколко глави праз лук, пък да легне и да мисли или да спи и да сънува.
+Приятно е, но да има и една от тие две болести: или млада жена, или стар
+ревматизъм; лежиш, лежиш, а мисълта ти като у немец, пълна и богата като
+готварница, дълга и безконечна като суджук - суджук, с който във виенския
+райхстаг немците и маджарите бият по главата славянските депутати; а
+въображението ти като у арапин, силно и остро като тюмбекия - тюмбекия,
+която е крайно полезна за краставите народи, - пламенно и възвишено като
+дим. Дим, дим! Под който ние българите така сладко спим. Мислиш, мислиш,
+пък се попротегнеш като философ, прозевнеш се като дипломатин, почешеш се
+в тила като политик и ако ти позволи жената или ревматизмът да заспиш, то
+спиш като Крали Марка.
+
+Заспиш и сънуваш... Но какво сънуваш? - Сънуваш, че светът прилича на
+кръчма и че гладните, дрипавите и измръзналите народи са се събрали в нея
+и на колене въздават хвала Бакхусу. Г-н Бисмарк възседнал земното кълбо и
+точи из него пелин за здравието на Германия; дядо Горчаков раздава коливо
+за "бог да прости" славяните, майстор Андрашия свири чардаш и кани чехите,
+сърбите и хърватите да попеят и да поиграят на гладно сърце; Мак Махон
+плете кошница за яйцата, които Франция ще да снесе през немските велики
+пости на Елзас и на Лотарингия; лорд Дерби си точи севастополската
+костурка, за да надроби прясно сирене за европейската търговия на возток и
+за да отреже от бутовете на някое диво африканско или азиатско племе
+бюфтек за английското човеколюбие; испанските "братовчеди" са застъпили
+тялото на майка си, бозаят кръв из нейните гърди и плюят един другиму в
+очите; владетелят на чизмата се наговаря с човека от Капрера да изчистят
+блатото на Рим (не папата, който ще да се изчисти сам) и наместо хляб и
+макарони, да дадат чист въздух на Мациниевите дечица; безбрадото пръчле на
+солените възседнало буцефала на Александра Македонски и исторически иска
+да докаже, че само немецът може да бъде пастир на козите; босфорският
+пилафчия подсмърча до вратата на кръчмата, яде червата на раята, пие
+дипломатическа боза и вика: "Аман от пиени хора." Множество малки и големи
+господа духат на своите измръзнали ръце, гледат с особено равнодушие на
+просяците, молят се богу за плодородието на човеческият род и за
+изобилието на хорската глупост и слушат как вият вълците в гъстата
+литературна и финансиялна мъгла и как плачат децата на Европа за лятото на
+науката и на цивилизацията.
+
+А ти, българин и патриотин, гледаш на сичкото това с особено недоверие и
+думаш: "Суета сует и всяческая суета." Светът е кръчма, а ти тряба да
+плачеш със смях, да се смееш със сълзи и насън да виждаш лятото на
+Балканския полуостров. "Щастлив е, думаш, българският народ, щастливи са
+грешните в мъката, щастлив съм и аз в своята топла соба." Лежиш на гърбът
+си и благодариш всевишния таван, че по неговата непостижима милост ти имаш
+барем покрив над главата си; снегът те не вали, мухите те не безпокоят, в
+червата ти не произхожда никаква революция, ревматизмът те не безпокои,
+жената ти те не мъчи, парите ти се не губят; а на четирите стени на стаята
+ти мухите ти оставили в наследство цели томове списания на български език.
+Наместо икона над главата ти виси портретът на н. в. султана, покрит с
+тънко едно було от лионската фабрика на паяците; под портрета е залепен
+ферманът с 11-те точки на българското щастие, а във ферманът волята на
+негово императорско величество, небесният представител на влашките
+българи, г. Пандурски, и горещите желания и надежди на нашите цариградски
+патриоти. Земи си един комат хляб, малко сланина и една глава лук, пък
+чети: "Моята царска воля е, щото сичките животни по държавата и верни мухи
+поданици да могат да помагат, доколкото им се пада на гърбовете, на
+ежедневните ми царски подаяния, които полагам за достигане до по-висока
+степен на моето затлъстявание и за благоденствието на моята обширна
+кочина." А по-надоле следва рахатлъкът на екзархията, правдините на
+българския народ и кефът на босфорският Саул. "Но какво [по] дяволите!
+Животни ли сме ние, животни ли са нашите владици, учители и вестникари?
+Протестуваме!" Не бойте се, господа, аз сънувам. Дайте ми да прочета
+цариградските български вестници и аз ще да си зема думите назад, т.е. ще
+да се уверя, че по сичките краища на паяжината е тихо и мирно и че сичко
+блаженствува под дебелата сянка на паякът. Само - църррр! Там на една муха
+изпили кръвта, тука на друга светили маслото; там вързали 50-60 души за
+рогата и ги карат на място злачно и на място покойно, т.е. в Диарбекир и в
+Акия; тука връзват други и им четат баснята за вълка и агнето; там окачили
+едного на въже да се поизсуши. "Но ние имаме училища, читалища, екзархия,
+литература, журнали, правдини - имаме младо поколение..." Да, да! Имате!
+Кой ви казва, че нямате! Но ако е работата да се хвалиме, то и ние имаме
+тука, в Румъния. Откогато г-н Пандурски остави своята знаменита
+политическа и литературна кариера и откогато на хоризонта на българската
+литература се появи съзвездието "Блъсков" и "Дружеството за
+разпространение полезни знания"оттогава науката, поезията, педагогията и
+литературата потекоха из крачолите на българския народ и на неговото
+книжевно щастие захванаха да завиждат даже и манджурите; откакто
+цариградските ханъмки родиха литературно-политическо списание "Ден", то
+Милош Милоевич престана вече да разпространява сърбизмът из България;
+откакто "Училище" роди богобоязливият редактор на "Градинка", то нашите
+учени младежи престанаха вече да псуват света Богородица; откакто отец
+Марко цанцугерът турна на своите глупости заглавие "Век", то великите
+български пости станаха 365 дена в годината; откогато "Право" се кръсти на
+"Напредок", то българският поет Славейков зави чалма и захвана да пее
+"аман, аман", а откогато "Levant Times" се преведе на български, то нашите
+патриоти захванаха да плетат мрежа, за да покрият народът от политическия
+студ, от литературната мъгла, от революционната виелица, от индустриалния
+сняг, от економическото пиянство и от белите, черните и сивите цариградски
+вълци; а откогато, най-после, "Читалище" се обеща, че от Нова година (т.е.
+от първи януари на деветнадесетия век) ще да се оправи и няма вече да
+печати гениалните глупости на нашите литературни телци, то колата на
+европейската цивилизация останаха без катран и заскърцаха въз баирът на
+българския напредък; умствените чакръчета на нашето младо поколение
+замръзнаха и пуснаха вощеници за "упокой" на грешните и живоумрелите
+политически и литературни души; а в пияцата (т.е. по бит-пазар) на нашето
+умствено развитие произлязоха такива важни операции и такива чудни
+метаморфози, щото при броениците на нашето калугерско щастие се притуриха
+още няколко стотина зърна, с които ние няма никога да изчетеме своите
+навечерки и никога няма да дочакаме "светлото Христово возкресение".
+
+И наистина, погледнете със слепите си очи на главите на нашите
+мудрословеснейши патки и вие тутакси ще да видите, че по тях отдавна вече
+са захванали да растат различни литературни зеленчуци, сякакви политически
+бурени и всевъзможни научни билки; а нощта се не свършва, зимата се не
+изминува и патриотите лежат в свойте топли стаи, сънуват
+настрадинходжовски сънища и чакат да съмне, за да ги разкажат на своята
+революционна Пенелопа и на нейните сополиви любовници.
+Но и аз съм патриот, господа! Топлата соба, изпросеният хляб, харизаната
+сланина и краденият лук довождат стомаха ми до такова поетическо
+настроение, щото и аз сънувам, че скоро ще да дойде равноправното лято.
+Облаците ще да произведат революцията, политическите дъждове ще да пометат
+гюбрето из моя двор, пред вратата ми ще да огрее слънце, народите ще да
+изпъплят из кръчмата и ще да се запощят на припек; а аз ще да изляза из
+своят палат да се порадвам на ясното небе, на миризливите цветя и ще да
+запея: "Гледайте, очи, ненагледайте се!"
+И да се ненагледаш! Пред вратата ти се събрало на конгрес племето, което
+едно време е избавило Рим, и с патриотически крякания се приготовлява да
+направи преврат в историята на гастрономията; почтените и важните кокоши
+физиономии се разхождат по двора и правят археологически открития по
+купището, за да снесат яйцето на общото южнославянско щастие;
+коронясаните венценосци се борят помежду си, земат стратегически позиции и
+кукурикат за близкото решение на возточния вопрос; а младото поколение
+изникнало покрай дуварите и чака да го огрее слънцето откъм запад, за да
+каже своята последня дума за живота, за характера и за стремленията на
+гъбите. А ти... О! Ти си българин и патриотин! Запей песента "Гъби, мои
+гъби", пък легни и сънувай, че си предводител на гъските, цар на кокошките
+и защитник на българския народ. Но преди сичко попитай жената си или своя
+мозъчни ревматизъм, изминала ли се е зимата, превалила ли се е нощта? Ако
+ти каже, че не е, то ти спи, както си спиш и сега, завивай се в своята
+мрежа и извикай сам: "Дали се две нощи смесиха, или се зора довърши?
+Кукурику! - Ето петлите! Джав, джав! - Ето кучетата! Зимата се свърши и
+нощта се измина."
+
+
+СМЕШЕН ПЛАЧ
+
+
+Плачете за Париж, столицата на разврата, на цивилизацията, школата на
+шпионството и робството; плачете, филантропи, за палатите на страшните
+вампири, на великите тирани - за паметниците на глупостта, на
+варварството, изградени с отсечените глави на толкова Предтечи, на толкова
+велики мислители и поети, с оглозганите кости на толкова мъченици за
+насущния хляб, - плачете! - лудите не може никой утеши, бесните не може
+никой укроти!
+Кълнете комунистите, че съсипаха столицата ви и измряха с разбойническите
+за вас думи: свобода или смърт, хляб или куршум! Плюйте на техните трупове
+и на труповете на онези жертви на цивилизацията, кои сте прегръщали и
+прегръщате в лицето на жените си, на сестрите си, на майките си и днес
+наричате бесни блудници, защото имаха още сила да се хванат за оръжие и
+избавят от вертепа на разврата! Хвъргайте кал и камъни връх гроба на
+Домбровски, защото не стана слуга на някоя коронясана глава, а поборник на
+велика идея, на висока цел и с гърди твърди се опря на предателите на
+Франция и виновниците на толкова злочестини в човещината.
+Цял свят оплака Париж, цял свят прокле комунистите, и нашата бедна
+журналистика и тя не остана надире, и тя заплака за бездушното и прокле
+разумното.Смешен плач! Като че от Нимврода до Наполеона, от Камбиза до
+Вилхелма войната не представя едни и същите зрелища, една и същата цел с
+едни и същите средства. Като че Наполеон, в името на цивилизацията и
+Вилхелм, в името на божия промисъл, не направиха повече зло, повече
+варварство в 19-ий век, отколкото напр. Александър Македонски с походите
+си преди толкова векове. Но там е варварството, там са укорите и
+проклятията, дето робът, човекът, като не чуят думите му, разума му, улавя
+се за крайност и се бори на живот и смърт, доколкото му позволяват
+средствата, които са низки, защото са малки, а малки само затуй, защото им
+са ги отнели господарите. Тогава човекът наричат разбойник, развратник,
+низък и варварин! Такива бяха и комунистите.
+Християнството има своите мъченици, доде нарече роба "син божий, син
+человеческий"; има ги и революцията, за да "направи скитника гражданин";
+има ги и ще ги има и социализмът, който "иска да направи човека повече от
+син божий и гражданин - не идеал, а същ човек, и от него да зависи градът,
+а не той от града". Християнството, революцията и социализмът -
+монархията, конституцията и републиката - те са си фактове и епохи
+исторически, кои ще отрече само тоя ум, който не признава прогреса в
+человечеството.
+Училището и само училището, казва баба Македония, ще избави Европа от
+социален преврат - училището и само училището, повтаряме ний, ще я
+приготви за тоя преврат; но не училището на Златоуста и Лойола, на
+Вилхелма и Наполеона, а онова на Фурие и Прудона, на Кювие и Нютона - и
+училището житейско.
+Комунистите са мъченици, защото не са важни средствата в борбата им за
+свобода, а идеята на тази борба. "И свободата ще има свойте езуити", казва
+Гейне. Нека сега нашата журналистика задържи сълзите си, както ще ги
+задържи в европейската - за да оплаче други столици, други варварства и
+страдания, кога робът извика на господаря си: кой си ти, що плачеш? Мъж ли
+си, жена ли, или хермафродит - звяр или риба?... И ще бъде ден - ден
+първий.
+
+
+НАРОДЪТ ВЧЕРА, ДНЕС И УТРЕ
+
+
+Мрачна и жалостна е нашата история от подпаданието ни под турците дору до
+днешните времена, тежък и възмутителен е животът на свободолюбивия някога
+български народ! Страшен хомот, какъвто тежи и до днес на врата му,
+гъбясал от векове и запрегнат с ятаган вместо жегли;
+тежки вериги, ръждясали от кърви и сълзи, вериги, в кои са заковани и ръце
+и нозе, и ум и воля, и в кои и до днес пъшкат бащи и майки, братя и
+сестри, дядове и синове - злодейства, безчестия, колове, бесила, мъки,
+тъмница, - най-после даалийци и кърджалии, фанариоти и чорбаджии, черкези
+и татари, - с една дума, зло, варварско зло, кое само едно азиатско
+въображение може обхвана, зло от завоевателя Мурада до читашкия реформатор
+Азиса - това са страниците на тази история, на това наше в ч е р а.
+Кървави страници, горчиво преминало! Но д н е с, днес не е ли пак същото
+черно тегло, същият хомот, същите вериги?
+Освен тези, що нямат талант да търпят, освен няколко хиляди волнодумни
+изгнаници, всеки раб божий с християнско смирение ще ни отговори: "Не,
+днес си добре живеем с турците, те се образоваха и нам олекна." И
+наистина, сега кого убиват, кого бесят, кого набиват на кол, кой плаща
+диш-хакъ и развожда вместо кон цървула на краставия гаджелин, кой? ... Но
+да казва разорения и добития народ, да кажем и ний по совест: днес не
+убиват никого беззаконно, а законно, не набиват на кол, а като кол всякого
+н а б и в а т, не бесят вкъщи по стрехи и по черници, а на отредени места
+за гявурски касапници; днес никой не развожда цървула на читака, а сякого
+като цървул развождат по ангарии и тъмници, никой не плаща диш-хакъ, а
+сякому и зъбите вадят за данъци и сякакви законни кражби, имдадиета и
+севдадиета; днес няма даалийци, няма кърджалии, няма фанариоти, кои да
+палят пленят села и градища, едни да убиват, а други да земат
+д у ш е д я л и к е в ш п а р а с ъ за вината на умрелия и убития - днес
+има правителство, което само изпълнява тези длъжности към раята и държи за
+това чиновници, рязани и кръстени, с чалми и калимавки, с дълги и къси
+пискюли, чиновници, кои от вълчия везир Али паша до мечкарина жандарм Кел
+Мехмед ага, сир. от скиптъра до сопата - всичките притежават най-високите
+добродетели, дори и човещината, с коя се отличават братята им черкези и
+татари. И всичко това в Турция е реформи, и реформи здрави и трайни,
+основани на дълбоката любов между турчин и българин, между господари и
+роби.
+При тези радикални реформи, ако и да се случва да нападнат някои
+правоверни къщата на гявурина, да го убият или удушат, да обезчестят жена
+му или дъщеря му, а сина му да извлекат и жив на огъня опекат, то това са
+изключения и случайности, защото не стават всяка неделя в една и същата
+къща, всяка нощ в едно и същото село. И освен това правосъдното
+правителство с голяма строгост наказва виновниците, като им отнеме
+половината и повече печала и ги гуди на най-тежка работа - кърардари или
+заптиета, за да гонят виновните на други още по-маловажни случайности, кои
+стават аллахън кърънда - думи, кои на езика на нашите аги имат туй
+преносно значение, че престъпника на къра тряба да се остави на
+правосъдието божие. От туй нашите баби и майки, кога оплакват мъжете си и
+синовете си, утешават се с тази - не знаем как да кажем - клетва или
+молитва: "От бога да намери душманинът!" Иди сега при тоя прогрес в
+правосъдието, та думай, че в Корана няма ни логика, ни психология, а в
+Наполеонова кодекс здрав смисъл; иди и повярвай англиеца г-на Монсела,
+който преди десетина години, във време на сирийските ужаси, изрече в
+палатата на общините и в лицето на приснопометения лорд Палмерстона, този
+неразкаян грешник в работите на Изток, следните тежки думи: "Колкото и да
+желае благородния лорд да поддържа трона на султана, тряба да се надеем,
+че той не ще поиска както и да е да забраня такава система, при коя са
+възможни подобни ужаси. С чувство от дълбока скръб си припомням за
+участието, кое приемах в 1855-56 с повечето от палатата в парламентските
+усилия да поддържам Турция. Сега видя, че националният характер на турците
+е неизправим."
+Тука ний бихме утешили благородния джентълмен, бихме опровергали мненията
+и острите съждения на много недоброжелатели на нашите пилафчии с фактове и
+примери, кои пълнят домашната хроника на всяко село, на всеки град, и то
+не отдавна, а от времето на Къбразли Мехмедпашовите ревизии, откога в
+Турция се въведе някакъв си ред и равенство в кражбите и пълна система в
+напрешните убийства, злодейства и всякакъв род притеснения - ала що щяха
+да значат нашите думи при онези на Лонгворта и подобните нему шарлатани
+чиновници и продадени журналисти, кои тръбят по света и искат и нас дору
+да уверят, както и увериха някои си извеяни и слепи глави, че Турция, този
+европейски Китай, този присмех на человечеството и укор на съвременна
+Европа, ще се преобрази скоро на азиатска Белгия и ще пролее благодатта на
+европейската образованост по всичките краища на Азия! O, tempora, o,
+mores! Намерете изкуството на Медея и влейте в жилите на това варварско
+племе нова, човешка кръв, тогава ще се поколебаем и ний във вярата си, че
+Турция няма живот, няма бъдеще; но доде турчинът е с този характер, с този
+фанатизъм, с тази варварска кръв, ни един красноречив туркофил, ни един
+дълбокомислящ дуалист или ренегат не може ни увери, че турчинът ще бъде
+някога способен да влезе в пътя към онази нравственополитическа цел, към
+коя се стреми умът човешки, отрешен от всяко опекунство на духови йерархии
+и политически мандаринства. Дотогаз най-красноречиви ще бъдат живите рани,
+що зеят по тялото на народа и по гърдите на неговата емиграция, рани, на
+кои, като гледаме, напомнят ни всичко, що трябва да влезе в сметка за
+народно мщение.
+
+Повтаряме - Турция няма живот, няма бъдеще, тя е труп на смъртния одър,
+когото никакви дервишки баяния на нейните мандарини, никакви
+дипломатически молитви на западните доктринери няма да я спасят от
+анатомическия нож. Лекувана по стара метода, с политически кръвопускания и
+операции, с дипломатически хлороформ, тя изгуби ръце и нозе, провинция
+след провинция, и отслабна дотолкоз, щото даде място на оназ страшна
+болест, коя обхвана сърцето й, влезе в дихателните й органи и
+кръвообращението; тъй щото никаква операция е невъзможна вече.
+Самите лекари и те забележиха това и след критския шербет, който се даде
+на Турция от Парижкия консилиум в 1868 г., приписаха й за спокойна смърт и
+последния рецепт: дуализма. Ще се найдат ли в народната фармакопия на
+Балканския полуостров елементи за подобен рецепт, ще може ли той възроди
+Турция, а главното ще може ли го тя прие, като й са захванати уста и гърло
+- това и сам Али паша не ще знае, ако ще би живял и до Матусалови години и
+не изучи българския народ, негова социален живот, негова твърд характер и
+волска упорност. Инак той и днес щеше да чете между редовете на черковния
+ни устав други редове, други думи, кои да му казват: "Али, тоя народ е
+болестта на Турция, а дуализмът е пътникът за нейната смърт!" Ала Али паша
+е турчин - фанатик и фаталист; той се надей само на кучешката животна сила
+на племето си и като приима за бъл[гарски] народ тези, що коленичат и
+скимучат отпреде му, пее и дума: "Жив е аллах, жива е Турция! Много са и
+робите..." Тъй мислят и нашите чорбаджии и калимавки, тези амфибии, кои в
+блатото на дуализма намират своя живот, и онез гладички умовце, кои внасят
+у нас ръждата на западните предразсъдъци и сметта на гнилата вече
+европейска цивилизация - без да виждат новите явления на живота нито там,
+дето са се учили, нито тук, дето учат. Не тъй обаче мисли здравата част на
+наша народ и неговата емиграция, не тъй мисли всеки свесен и искрен
+славянин, всеки съвременен човек, в главата на кого се не вие паужина, а
+стяга мозък, и в гърдите не плакне жабина, а тупа сърце. За нас
+преобразованията в Турско, обещанията, дуализмът, те са думи без никакъв
+смисъл, призраци и утопии, кои може да се осъществяват нейде си в Китай
+или Япония, а не на Балкан[ския]полуостров между турци и българи, две
+племена с противоположни характери, нрави и обичаи, с противоположни
+миросъзерцания. Изход от туй тежко и гнусно положение не са новите окови,
+новото разделение на тиранството, а народната революция, радикалният
+преврат, които са триумфални врата за всеки народ, особено за нашия, който
+няма преминало, няма настояще, а има едно само бъдеще, и бъдеще светло,
+защото с другите славяни той ще има що да каже в света, що да внесе в
+човещината.
+Метнете поглед връх историята на българското царство от Бориса дору до
+подпаданието му под турците, и ще видите, че всичкото историко-политическо
+преминало на наша народ е било току-речи чисто византийско, и в него са
+живели само царе, боляри и духовни, а той сам всякога е бил отделен с
+дълбока обществена нравственост от разврата на правителството си, който
+разврат заедно с християнството се вмъкна в по-горнята част на народа.
+Наистина, неведнъж народът е явявал твърдата воля на характера си с
+въстания против царете си, против духовенството си, както във времето на
+Богомила и Самуила; но всичко това е ставало само тогава, кога властта или
+се едно насилието е допирало до къщата му, в коя той сякога е бил
+нравствено свободен, до семейството му, до понятието му за честта - с една
+дума, до негова дълбок социален живот, с който се отличават общо
+славянските народи и частно нашия народ.
+Отделен, както казахме, нравствено от правителството си, народът много
+пъти го е оставял само да се бори с Византия, само да си вади очите за
+престолонаследие; тъй щото тука и бяха главните причини, дето гърците
+можаха да завладеят навреме България, а варварските турски орди съвсем да
+я разорят и тъй с твърд крак да стъпят на врата на народа.
+Но и при тия страдания, при това страшно насилие, в кое и камъкът би се
+стопил, българинът се затвори от турчина вкъщи с челядта си и, както и
+днес, пял е и слушал е вместо византийската литургия свойта елегическа
+юнашка песен, вместо стрелата и сабята, хвана ралото и сърпа, ходил е по
+сборове и по седенки, по тлаки и по черковища - и щом варваринът е
+погазвал огнището му, кое, както и днес, е било обиколено със снахи и
+дъщери, със синове и унуци - той е оставял ралото и сърпа, гегата и
+кавала, хващал е бащина сабя, братова пушка и с "дружина вярна и сговорна"
+отивал е в Стара планина да мъсти за обиди от турци и чорбаджии, да им
+отнима грабено имане и да пази село и сиромаси.
+Такъв е бил българският народ, и ето го и днес пак чист от всяко чуждо
+влияние, пак с тоя патриархален живот, пак с тази първобитност - след
+толкова и при такива страдания, пред зори, той се провиква от вратата на
+къщата си: пее отходня молитва на Турция, на робството; проклина свойто
+преминало, което е мрачно и той го мрази; свойто настояще, което е тежко и
+горчиво, та лесно ще го забрави, и вика: бъдещето ми, бъдещето ми! Турция
+и незваните му водители поднасят му на блюдо преобразования, дуализми,
+йерархии, но той се туй дума и ще дума: бъдещето ми, бъдещето ми!
+Но какво е неговото бъдеще?
+Нашият народ има свой особен живот, особен характер, особна физиономия,
+коя го отлича като народ - дайте му да се развива по народните си начала,
+и ще видите каква част от обществения живот ще развие той, дайте му или
+поне не бъркайте му да се освободи от това варварско племе, с кое той няма
+нищо общо, и ще видите как ще той да се устрои. Или не видите семето,
+зародиша в неговите общини без всяка централизация, в неговите еснафи,
+дружества мъжки, женски и детински? Или не видите в него и това, що
+казахме по-горе?...
+Всичко това са въпроси и въпроси, важни, затуй ний ще се повърнем да ги
+разгледаме по-отблизо в след[ващите] броеве на "Думата".
+
+
+ПЕТРУШАН
+
+
+Нам казваха, че те са разбойници,
+излезли из своите вертепи, но те нищо не
+зеха, нито даже парче хляб; и ний чухме
+от тях само едно : Дошли сме да измрем
+за земята си.
+
+Л. Меркантини
+
+
+Пълни три години са днес от оня героически подвиг, подобни на който
+виждаме само в историята на Италианската революция; пълни три години са от
+онуй славно събитие, кое направи епоха както в историята на нашата
+емиграция, тъй и в историята на нашето политическо и умствено възраждание.
+Какъв спомен за потомството! Какъв урок, какъв пример за нас, братя
+емигранти! Шепа решителни млади момци, без никаква революционна
+организация, без никакви средства, презрени и гонени - момци, кои
+претърпяха сичко за една благородна свята цел, - минаха Дунава и с живо
+свидетелство показаха какви съкровища се крият в душата на българина...
+Наистина, голяма душевна сила трябва да има човек, за да може каза: "Ние
+си достигнахме целта, защото измираме, а вие още не сте, защото сте
+живи!..." А това трябва да го каже всеки, който мре за свободата на
+човечеството, това им казаха с примера си нашите въстаници в 1868 г. под
+войводите Хаджи Димитра и Стефан Караджа.
+Тези мъченици на свободата, що измряха с усмивка на уста, бяха наши
+приятели, наши братя; с тях деляхме скръб и радост, смях и сълзи; с тях
+сядахме на бедна и богата трапеза и разговаряхме за съдбата на нашето
+потъпкано отечество...; с тях деляхме сичко, само смъртта и свободата не
+можахме с тях да разделим! Затова елате, братя, да ги споменем с добра и
+свята памят за нази и славна за нашия злочестен народ!
+След четите на 1867 г. под войводството на Панайота, Дяда Желя и Филип
+Тотя, чети, които бяха само за явление на знаменития М е м о а р, който
+като галванически ток мина през сърцето на народа и възбуди нервите му, а
+Турция накара да мисли за положението си - съвсем последователно на
+другата година трябваше да се начне движението със сичка сериозност и
+сички средства, що можеха да се разполагат в онова благоприятно време,
+кога Кандия тънеше в кърви и със секи куршум хвърляше и залъка от устата
+си, а Гърция точеше сабя, Румъния и Сръбско запретнаха ръкави... Тогава
+ний имахме първия Таен комитет, на позива на когото бяхме се стекли да
+решим съдбата на народа като ратници славната борба за освобождение. Ала
+тоя комитет, когото турците по глупост, но праведно нарекоха "комита",
+като комета наистина показа само свойта бляскава опашка на хоризонта, а
+кога да покаже ядрото си и се срещне с безжизнения месец, без никаква
+физическа причина свърна от орбитата си, пръсна се и угасна. - Ний
+останахме сами да решим и съдбата на отечеството си, и свойта. Нашите
+астрономи, на кои очите са се въз небето, за да има с какво да се утешават
+и занимават, обърнаха на "комита" всяко българско сърце и без да виждат що
+се вършеше по земята и в самите тези сърца, заловиха се за бабини деветини
+и станаха един на други органи на онзи патриотизъм, който вчера викаше
+народа на въстание, а днес презря и нарече вагабонти онези, що бяха се
+събрали да мрат за негова свобода!
+Но поврага тоя патриотизъм и тези бездушни "астрономи"! "Не разум, не
+логика води народите, а магнетизмът на вярването и одушевлението", казва
+един списател във физиологията на народите - и ако нашите "комети",
+"астрономи", литератори не знаеха това, то видяха поне, че не лиги като у
+тях, а кръв течеше в жилите на онез мъченици, за избиването на кои те бяха
+причина, като, от една страна, измамиха Панайота да за държи толкова
+опитни и приготвени юнаци, а, от друга, възпротивиха се на приготовленията
+на Дяда Желя и Филип Тотя - и с това оставиха онез юнаци отвъд без сяка
+помощ и средства да вдигнат народа...
+Дойде пролетта 1868 и на хиляди юнаци закипя кръвта, хиляди бяха готови да
+идат да измрат за свобода и в две недели да вдигнат сичкия народ на
+оръжие! Всеки продаваше мило за драго, всеки забравяше бедност и възраст,
+родители и роднини и всеки думаше: на Балкана, на Балкана! Но де бяха
+нашите патриоти да разберат туй тупане на сърцето, туй сътресение на
+нервите? Де бяха да отговорят и те с каква-годе жертва на олтаря за
+освобождение? Де беше Тайният комитет да хване жиците на психическия
+телеграф и направи съобщение с всичката емиграция; де беше да даде
+средства и направление на тази жива народна сила? Патриотите бяха там,
+дето са и днес, Комитетът мина като комета, а тези, що викаха: на Балкана,
+на Балкана - едни се отчаяха, други със затаена злоба сложиха ръце и се
+заловиха за работа, а трети, кои можаха да намерят средства, отидоха и
+измряха!
+Повече от 200 души излъгани и оголели оставиха още пролетта името на
+българската легия в Белград и с Караджата събраха се окол Хаджи Димитър.
+При всичките гонения и преследвания от "старите" (с презрение споменуваме
+туй име) те найдоха истинни патриоти, добиха средства и минаха, та
+измряха.
+Но само туй ли? Те измряха, но тяхната смърт беше громен удар за Турция,
+громен и за нашето отечество-на първата извести падането, на второто
+възраждането. Сънливият тиранин залитна на трона от думите. "Болгаристан
+калктъ" и окачи мъртвия Черковен въпрос на галваническа кука, с кое, без
+да иска, призна името на робите си - призна борбата. Будният народ стресна
+се силно, огледа се и като не можа да скочи на оръжие, със сълзи
+благослови великия подвиг на синовете си.
+Той видя и усети силата си.
+И ето и до днес кръвта на тези мъченици не е още засъхнала по бащините ни
+полета; сенките им бродят денем и нощем и чакат онези, кои от Петрушан им
+пожелаха "добър час и добра стига!" -
+чакат нази, братя емигранти, да откопаем костите им и избършем сълзите на
+техните клети майки, които са вече майки и нам!...
+
+
+"Болгаристан калктъ" - България въстана.
+
+
+
+
+
+End of The Project Gutenberg Etext of Satirical Prose, by Hristo Botev
+

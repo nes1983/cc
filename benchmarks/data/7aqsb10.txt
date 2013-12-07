@@ -1,0 +1,3284 @@
+The Project Gutenberg EBook of Aquis Submersus, by Theodor Storm
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: Aquis Submersus
+
+Author: Theodor Storm
+
+Release Date: September, 2005  [EBook #8889]
+[This file was first posted on August 21, 2003]
+
+Edition: 10
+
+Language: German
+
+Character set encoding: US-ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK, AQUIS SUBMERSUS ***
+
+
+
+
+This Etext is in German.
+
+We are releasing two versions of this Etext, one in 7-bit format,
+known as Plain Vanilla ASCII, which can be sent via plain email--
+and one in 8-bit format, which includes higher order characters--
+which requires a binary transfer, or sent as email attachment and
+may require more specialized programs to display the accents.
+This is the 7-bit version.
+
+This book content was graciously contributed by the Gutenberg Projekt-DE.
+That project is reachable at the web site http://gutenberg.spiegel.de/.
+
+Dieses Buch wurde uns freundlicherweise vom "Gutenberg Projekt-DE"
+zur Verfuegung gestellt.  Das Projekt ist unter der Internet-Adresse
+http://gutenberg.spiegel.de/ erreichbar.
+
+
+
+
+Aquis submersus
+
+Theodor Storm
+
+Novelle (1876)
+
+
+In unserem zu dem frueher herzoglichen Schlosse gehoerigen, seit
+Menschengedenken aber ganz vernachlaessigten "Schlossgarten" waren
+schon in meiner Knabenzeit die einst im altfranzoesischen Stile
+angelegten Hagebuchenhecken zu duennen, gespenstischen Alleen
+ausgewachsen; da sie indessen immerhin noch einige Blaetter tragen,
+so wissen wir Hiesigen, durch Laub der Baeume nicht verwoehnt, sie
+gleichwohl auch in dieser Form zu schaetzen; und zumal von uns
+nachdenklichen Leuten wird immer der eine oder andre dort zu
+treffen sein.  Wir pflegen dann unter dem duerftigen Schatten nach
+dem sogenannten "Berg" zu wandern, einer kleinen Anhoehe in der
+nordwestlichen Ecke des Gartens oberhalb dem ausgetrockneten Bette
+eines Fischteiches, von wo aus der weitesten Aussicht nichts im
+Wege steht.
+
+Die meisten moegen wohl nach Westen blicken, um sich an dem lichten
+Gruen der Marschen und darueberhin an der Silberflut des Meeres zu
+ergoetzen, auf welcher das Schattenspiel der langgestreckten Insel
+schwimmt; meine Augen wenden unwillkuerlich sich nach Norden, wo,
+kaum eine Meile fern, der graue spitze Kirchturm aus dem hoeher
+belegenen, aber oeden Kuestenlande aufsteigt; denn dort liegt eine
+von den Staetten meiner Jugend.
+
+Der Pastorssohn aus jenem Dorfe besuchte mit mir die
+"Gelehrtenschule" meiner Vaterstadt, und unzaehlige Male sind wir am
+Sonnabendnachmittage zusammen dahinaus gewandert, um dann am
+Sonntagabend oder montags frueh zu unserem Nepos oder spaeter zu
+unserem Cicero nach der Stadt zurueckzukehren.  Es war damals auf
+der Mitte des Weges noch ein gut Stueck ungebrochener Heide uebrig,
+wie sie sich einst nach der einen Seite bis fast zur Stadt, nach
+der anderen ebenso gegen das Dorf erstreckt hatte.  Hier summten
+auf den Blueten des duftenden Heidekrauts die Immen und weissgrauen
+Hummeln und rannte unter den duerren Stengeln desselben der schoene
+goldgruene Laufkaefer; hier in den Duftwolken der Eriken und des
+harzigen Gagelstrauches schwebten Schmetterlinge, die nirgends
+sonst zu finden waren.  Mein ungeduldig dem Elternhause
+zustrebender Freund hatte oft seine liebe Not, seinen traeumerischen
+Genossen durch all die Herrlichkeiten mit sich fortzubringen;
+hatten wir jedoch das angebaute Feld erreicht, dann ging es auch um
+desto munterer vorwaerts, und bald, wenn wir nur erst den langen
+Sandweg hinaufwateten, erblickten wir auch schon ueber dem
+dunkeln Gruen einer Fliederhecke den Giebel des Pastorhauses,
+aus dem das Studierzimmer des Pastors mit seinen kleinen blinden
+Fensterscheiben auf die bekannten Gaeste hinabgruesste.
+
+Bei den Pastorsleuten, deren einziges Kind mein Freund war, hatten
+wir allezeit, wie wir hier zu sagen pflegen, fuenf Quartier auf der
+Elle, ganz abgesehen von der wunderbaren Naturalverpflegung.  Nur
+die Silberpappel, der einzig hohe und also auch einzig verlockende
+Baum des Dorfes, welche ihre Zweige ein gut Stueck oberhalb des
+bemoosten Strohdaches rauschen liess, war gleich dem Apfelbaum des
+Paradieses uns verboten und wurde daher nur heimlich von uns
+erklettert; sonst war, soviel ich mich entsinne, alles erlaubt und
+wurde ja nach unserer Altersstufe bestens von uns ausgenutzt.
+
+Der Hauptschauplatz unserer Taten war die grosse "Priesterkoppel",
+zu der ein Pfoertchen aus dem Garten fuehrte.  Hier wussten wir mit
+dem den Buben angebotenen Instinkte die Nester der Lerchen und der
+Grauammern aufzuspueren, denen wir dann die wiederholtesten Besuche
+abstatteten, um nachzusehen, wie weit in den letzten zwei Stunden
+die Eier oder die Jungen nun gediehen seien; hier auf einer
+tiefen und, wie ich jetzt meine, nicht weniger als jene Pappel
+gefaehrlichen Wassergrube, deren Rand mit alten Weidenstuempfen dicht
+umstanden war, fingen wir die flinken schwarzen Kaefer, die wir
+"Wasserfranzosen" nannten, oder liessen wir ein andermal unsere
+auf einer eigens angelegten Werft erbaute Kriegsflotte aus
+Walnussschalen und Schachteldeckeln schwimmen.  Im Spaetsommer
+geschah es dann auch wohl, dass wir aus unserer Koppel einen Raubzug
+nach des Kuesters Garten machten, welcher gegenueber dem des
+Pastorates an der anderen Seite der Wassergrube lag; denn
+wir hatten dort von zwei verkrueppelten Apfelbaeumen unseren
+Zehnten einzuheimsen, wofuer uns freilich gelegentlich eine
+freundschaftliche Drohung von dem gutmuetigen alten Manne zuteil
+wurde.--So viele Jugendfreuden wuchsen auf dieser Priesterkoppel,
+in deren duerrem Sandboden andere Blumen nicht gedeihen wollten; nur
+den scharfen Duft der goldknopfigen Rainfarren, die hier haufenweis
+auf allen Waellen standen, spuere ich noch heute in der Erinnerung,
+wenn jene Zeiten mir lebendig werden.
+
+Doch alles dieses beschaeftigte uns nur voruebergehend; meine
+dauernde Teilnahme dagegen erregte ein anderes, dem wir selbst in
+der Stadt nichts an die Seite zu setzen hatten.--Ich meine damit
+nicht etwa die Roehrenbauten der Lehmwespen, die ueberall aus den
+Mauerfugen des Stalles hervorragten, obschon es anmutig genug war,
+in beschaulicher Mittagsstunde das Aus- und Einfliegen der emsigen
+Tierchen zu beobachten; ich meine den viel groesseren Bau der alten
+und ungewoehnlich stattlichen Dorfkirche.  Bis an das Schindeldach
+des hohen Turmes war sie von Grund auf aus Granitquadern aufgebaut
+und beherrschte, auf dem hoechsten Punkt des Dorfes sich erhebend,
+die weite Schau ueber Heide, Strand und Marschen.--Die meiste
+Anziehungskraft fuer mich hatte indes das Innere der Kirche; schon
+der ungeheure Schluessel, der von dem Apostel Petrus selbst zu
+stammen schien, erregte meine Phantasie.  Und in der Tat erschloss
+er auch, wenn wir ihn gluecklich dem alten Kuester abgewonnen hatten,
+die Pforte zu manchen wunderbaren Dingen, aus denen eine laengst
+vergangene Zeit hier wie mit finstern, dort mit kindlich frommen
+Augen, aber immer in geheimnisvollem Schweigen zu uns Lebenden
+aufblickte.  Da hing mitten in die Kirche hinab ein schrecklich
+uebermenschlicher Crucifixus, dessen hagere Glieder und verzerrtes
+Antlitz mit Blute ueberrieselt waren; dem zur Seite an einem
+Mauerpfeiler haftete gleich einem Nest die braungeschnitzte Kanzel,
+an der aus Frucht- und Blattgewinden allerlei Tier- und
+Teufelsfratzen sich hervorzudraengen schienen.  Besondere Anziehung
+aber uebte der grosse geschnitzte Altarschrank im Chor der Kirche,
+auf dem in bemalten Figuren die Leidensgeschichte Christi
+dargestellt war; so seltsam wilde Gesichter, wie das des Kaiphas
+oder die der Kriegsknechte, welche in ihren goldenen Harnischen um
+des Gekreuzigten Mantel wuerfelten, bekam man draussen im
+Alltagsleben nicht zu sehen; troestlich damit kontrastierte nur das
+holde Antlitz der am Kreuze hingesunkenen Maria; ja, sie haette
+leicht mein Knabenherz mit einer phantastischen Neigung bestricken
+koennen, wenn nicht ein anderes mit noch staerkerem Reize des
+Geheimnisvollen mich immer wieder von ihr abgezogen haette.
+
+Unter all diesen seltsamen oder wohl gar unheimlichen Dingen hing
+im Schiff der Kirche das unschuldige Bildnis eines toten Kindes,
+eines schoenen, etwa fuenfjaehrigen Knaben, der, auf einem mit Spitzen
+besetzten Kissen ruhend, eine weisse Wasserlilie in seiner kleinen
+bleichen Hand hielt.  Aus dem zarten Antlitz sprach neben dem
+Grauen des Todes, wie huelfeflehend, noch eine letzte holde Spur des
+Lebens; ein unwiderstehliches Mitleid befiel mich, wenn ich vor
+diesem Bilde stand.
+
+Aber es hing nicht allein hier; dicht daneben schaute aus dunklem
+Holzrahmen ein finsterer, schwarzbaertiger Mann in Priesterkragen
+und Sammar.  Mein Freund sagte mir, es sei der Vater jenes schoenen
+Knaben; dieser selbst, so gehe noch heute die Sage, solle einst in
+der Wassergrube unserer Priesterkoppel seinen Tod gefunden haben.
+Auf dem Rahmen lasen wir die Jahreszahl 1666; das war lange
+her. Immer wieder zog es mich zu diesen beiden Bildern; ein
+phantastisches Verlangen ergriff mich, von dem Leben und Sterben
+des Kindes eine naehere, wenn auch noch so karge Kunde zu erhalten;
+selbst aus dem duesteren Antlitz des Vaters, das trotz des
+Priesterkragens mich fast an die Kriegsknechte des Altarschranks
+gemahnen wollte, suchte ich sie herauszulesen.
+
+--Nach solchen Studien in dem Daemmerlicht der alten Kirche
+erschien dann das Haus der guten Pastorsleute nur um so gastlicher.
+Freilich war es gleichfalls hoch zu Jahren, und der Vater meines
+Freundes hoffte, so lange ich denken konnte, auf einen Neubau; da
+aber die Kuesterei an derselben Altersschwaeche litt, so wurde
+weder hier noch dort gebaut.--Und doch, wie freundlich waren
+trotzdem die Raeume des alten Hauses; im Winter die kleine Stube
+rechts, im Sommer die groessere links vom Hausflur, wo die
+aus den Reformationsalmanachen herausgeschnittenen Bilder in
+Mahagoniraehmchen an der weissgetuenchten Wand hingen, wo man aus dem
+westlichen Fenster nur eine ferne Windmuehle, ausserdem aber den
+ganzen weiten Himmel vor sich hatte, der sich abends in rosenrotem
+Schein verklaerte und dann das ganze Zimmer ueberglaenzte!  Die lieben
+Pastorsleute, die Lehnstuehle mit den roten Plueschkissen, das alte
+tiefe Sofa, auf dem Tisch beim Abendbrot der traulich sausende
+Teekessel--es war alles helle, freundliche Gegenwart.  Nur eines
+Abends--wir waren derzeit schon Sekundaner--kam mir der Gedanke,
+welch eine Vergangenheit an diesen Raeumen hafte, ob nicht
+gar jener tote Knabe einst mit frischen Wangen hier leibhaftig
+umhergesprungen sei, dessen Bildnis jetzt wie mit einer wehmuetig
+holden Sage den duesteren Kirchenraum erfuellte.
+
+Veranlassung zu solcher Nachdenklichkeit mochte geben, dass ich am
+Nachmittage, wo wir auf meinen Antrieb wieder einmal die Kirche
+besucht hatten, unten in einer dunkeln Ecke des Bildes vier mit
+roter Farbe geschriebene Buchstaben entdeckt hatte, die mir bis
+jetzt entgangen waren.
+
+"Sie lauten C.  P.  A.  S.", sagte ich zu dem Vater meines Freundes;
+"aber wir koennen sie nicht entraetseln."
+
+"Nun", erwiderte dieser, "die Inschrift ist mir wohl bekannt; und
+nimmt man das Geruecht zu Huelfe, so moechten die beiden letzten
+Buchstaben wohl mit Aquis submersus, also mit 'Ertrunken' oder
+woertlich 'Im Wasser versunken' zu deuten sein; nur mit dem
+vorangehenden C.  P.  waere man dann noch immer in Verlegenheit!
+Der junge Adjunktus unseres Kuesters, der einmal die Quarta
+passiert ist, meint zwar, es koenne Casu periculoso--'Durch
+gefaehrlichen Zufall'--heissen; aber die alten Herren jener Zeit
+dachten logischer; wenn der Knabe dabei ertrank, so war der Zufall
+nicht nur bloss gefaehrlich."
+
+Ich hatte begierig zugehoert.  "Casu" sagte ich; "es koennte auch
+wohl 'Culpa' heissen?"
+
+"Culpa?" wiederholte der Pastor.  "Durch Schuld?--aber durch wessen
+Schuld?"
+
+Da trat das finstere Bild des alten Predigers mir vor die Seele,
+und ohne viel Besinnen rief ich: "Warum nicht: Culpa patris?"
+
+Der gute Pastor war fast erschrocken.  "Ei, ei, mein junger Freund",
+sagte er und erhob warnend den Finger gegen mich.  "Durch Schuld
+des Vaters?--So wollen wir trotz seines duesteren Ansehens meinen
+seligen Amtsbruder doch nicht beschuldigen.  Auch wuerde er
+dergleichen wohl schwerlich von sich haben schreiben lassen."
+
+Dies letztere wollte auch meinem jugendlichen Verstande einleuchten;
+und so blieb denn der eigentliche Sinn der Inschrift nach wie vor
+ein Geheimnis der Vergangenheit.
+
+Dass uebrigens jene beiden Bilder sich auch in der Malerei wesentlich
+vor einigen alten Predigerbildnissen auszeichneten, welche
+gleich daneben hingen, war mir selbst schon klargeworden; dass
+aber Sachverstaendige in dem Maler einen tuechtigen Schueler
+althollaendischer Meister erkennen wollten, erfuhr ich freilich
+jetzt erst durch den Vater meines Freundes.  Wie jedoch ein solcher
+in dieses arme Dorf verschlagen worden oder woher er gekommen und
+wie er geheissen habe, darueber wusste auch er mir nichts zu sagen.
+Die Bilder selbst enthielten weder einen Namen noch ein
+Malerzeichen.
+
+Die Jahre gingen hin.  Waehrend wir die Universitaet besuchten, starb
+der gute Pastor, und die Mutter meines Schulgenossen folgte spaeter
+ihrem Sohne auf dessen inzwischen anderswo erreichte Pfarrstelle;
+ich hatte keine Veranlassung mehr, nach jenem Dorfe zu wandern.--Da,
+als ich selbst schon in meiner Vaterstadt wohnhaft war, geschah es,
+dass ich fuer den Sohn eines Verwandten ein Schuelerquartier bei
+guten Buergersleuten zu besorgen hatte.  Der eigenen Jugendzeit
+gedenkend, schlenderte ich im Nachmittagssonnenscheine durch die
+Strassen, als mir an der Ecke des Marktes ueber der Tuer eines alten
+hochgegiebelten Hauses eine plattdeutsche Inschrift in die Augen
+fiel, die verhochdeutscht etwa lauten wuerde:
+
+Gleich so wie Rauch und Staub verschwindt,
+Also sind auch die Menschenkind.
+
+Die Worte mochten fuer jugendliche Augen wohl nicht sichtbar sein;
+denn ich hatte sie nie bemerkt, sooft ich auch in meiner Schulzeit
+mir einen Heissewecken bei dem dort wohnenden Baecker geholt hatte.
+Fast unwillkuerlich trat ich in das Haus; und in der Tat, es fand
+sich hier ein Unterkommen fuer den jungen Vetter.  Die Stube ihrer
+alten "Moeddersch" (Mutterschwester)--so sagte mir der freundliche
+Meister--, von der sie Haus und Betrieb geerbt haetten, habe seit
+Jahren leer gestanden; schon lange haetten sie sich einen jungen
+Gast dafuer gewuenscht.
+
+Ich wurde eine Treppe hinaufgefuehrt, und wir betraten dann ein
+ziemlich niedriges, altertuemlich ausgestattetes Zimmer, dessen
+beide Fenster mit ihren kleinen Scheiben auf den geraeumigen
+Marktplatz hinausgingen.  Frueher, erzaehlte der Meister, seien zwei
+uralte Linden vor der Tuer gewesen; aber er habe sie schlagen lassen,
+da sie allzusehr ins Haus gedunkelt und auch hier die schoene
+Aussicht ganz verdeckt haetten.
+
+Ueber die Bedingungen wurden wir bald in allen Teilen einig; waehrend
+wir dann aber noch ueber die jetzt zu treffende Einrichtung des
+Zimmers sprachen, war mein Blick auf ein im Schatten eines
+Schrankes haengendes Oelgemaelde gefallen, das ploetzlich meine ganze
+Aufmerksamkeit hinwegnahm.  Es war noch wohlerhalten und stellte
+einen aelteren, ernst und milde blickenden Mann dar, in einer
+dunklen Tracht, wie in der Mitte des siebzehnten Jahrhunderts sie
+diejenigen aus den vornehmeren Staenden zu tragen pflegten, welche
+sich mehr mit Staatssachen oder gelehrten Dingen als mit dem
+Kriegshandwerke beschaeftigten.
+
+Der Kopf des alten Herrn, so schoen und anziehend und so trefflich
+gemalt er immer sein mochte, hatte indessen nicht diese Erregung in
+mir hervorgebracht; aber der Maler hatte ihm einen blassen Knaben
+in den Arm gelegt, der in seiner kleinen, schlaff herabhaengenden
+Hand eine weisse Wasserlilie hielt; und diesen Knaben kannte ich ja
+laengst.  Auch hier war es wohl der Tod, der ihm die Augen
+zugedrueckt hatte.
+
+"Woher ist dieses Bild?" frug ich endlich, da mir ploetzlich
+bewusst wurde, dass der vor mir stehende Meister mit seiner
+Auseinandersetzung innegehalten hatte.
+
+Er sah mich verwundert an.  "Das alte Bild?  Das ist von unserer
+Moeddersch", erwiderte er; "es stammt von ihrem Urgrossonkel, der ein
+Maler gewesen und vor mehr als hundert Jahren hier gewohnt hat.  Es
+sind noch andre Siebensachen von ihm da."
+
+Bei diesen Worten zeigte er nach einer kleinen Lade von Eichenholz,
+auf welcher allerlei geometrische Figuren recht zierlich
+eingeschnitten waren.
+
+Als ich sie von dem Schranke, auf dem sie stand, herunternahm, fiel
+der Deckel zurueck, und es zeigten sich mir als Inhalt einige stark
+vergilbte Papierblaetter mit sehr alten Schriftzuegen.
+
+"Darf ich die Blaetter lesen?" frug ich.
+
+"Wenn's Ihnen Plaesier macht", erwiderte der Meister, "so moegen Sie
+die ganze Sache mit nach Hause nehmen; es sind so alte Schriften;
+Wert steckt nicht darin."
+
+Ich aber erbat mir und erhielt auch die Erlaubnis, diese wertlosen
+Schriften hier an Ort und Stelle lesen zu duerfen; und waehrend ich
+mich dem alten Bilde gegenueber in einen maechtigen Ohrenlehnstuhl
+setzte, verliess der Meister das Zimmer, zwar immer noch erstaunt,
+doch gleichwohl die freundliche Verheissung zuruecklassend, dass seine
+Frau mich bald mit einer guten Tasse Kaffee regulieren werde.
+
+Ich aber las und hatte im Lesen bald alles um mich her vergessen.
+
+
+So war ich denn wieder daheim in unserm Holstenlande; am Sonntage
+Cantate war es Anno 1661!--Mein Malgeraeth und sonstiges Gepaecke
+hatte ich in der Stadt zurueckgelassen und wanderte nun froehlich
+fuerbass, die Strasse durch den maiengruenen Buchenwald, der von der
+See ins Land hinaufsteigt.  Vor mir her flogen ab und zu ein paar
+Waldvoeglein und letzeten ihren Durst an dem Wasser, so in den
+tiefen Radgeleisen stund; denn ein linder Regen war gefallen ueber
+Nacht und noch gar frueh am Vormittage, so dass die Sonne den
+Waldesschatten noch nicht ueberstiegen hatte.
+
+Der helle Drosselschlag, der von den Lichtungen zu mir scholl, fand
+seinen Widerhall in meinem Herzen.  Durch die Bestellungen, so mein
+theurer Meister van der Helst im letzten Jahre meines Amsterdamer
+Aufenthalts mir zugewendet, war ich aller Sorge quitt geworden;
+einen guten Zehrpfennig und einen Wechsel auf Hamburg trug ich noch
+itzt in meiner Taschen; dazu war ich stattlich angethan: mein Haar
+fiel auf mein Maentelchen mit feinem Grauwerk, und der Luetticher
+Degen fehlte nicht an meiner Huefte.
+
+Meine Gedanken aber eilten mir voraus; immer sah ich Herrn
+Gerhardus, meinen edlen grossguenstigen Protector, wie er von der
+Schwelle seines Zimmers mir die Haende wuerd' entgegenstrecken, mit
+seinem milden Grusse: "So segne Gott deinen Eingang, mein Johannes!"
+
+Er hatte einst mit meinem lieben, ach, gar zu frueh in die ewige
+Herrlichkeit genommenen Vater zu Jena die Rechte studiret und war
+auch nachmals den Kuensten und Wissenschaften mit Fleisse obgelegen,
+so dass er dem Hochseligen Herzog Friederich bei seinem edlen,
+wiewohl wegen der Kriegslaeufte vergeblichen Bestreben um Errichtung
+einer Landesuniversitaet ein einsichtiger und eifriger Berather
+gewesen.  Obschon ein adeliger Mann, war er meinem lieben Vater
+doch stets in Treuen zugethan blieben, hatte auch nach dessen
+seligem Hintritt sich meiner verwaiseten Jugend mehr, als zu
+verhoffen, angenommen und nicht allein meine sparsamen Mittel
+aufgebessert, sondern auch durch seine fuernehme Bekanntschaft unter
+dem Hollaendischen Adel es dahin gebracht, dass mein theuerer Meister
+van der Helst mich zu seinem Schueler angenommen.
+
+Meinte ich doch zu wissen, dass der verehrte Mann unversehrt auf
+seinem Herrenhofe sitze, wofuer dem Allmaechtigen nicht genug zu
+danken; denn, derweilen ich in der Fremde mich der Kunst beflissen,
+war daheim die Kriegsgreuel ueber das Land gekommen; so zwar, dass
+die Truppen, die gegen den kriegswuethigen Schweden dem Koenige zum
+Beistand hergezogen, fast aerger als die Feinde selbst gehauset, ja
+selbst der Diener Gottes mehrere in jaemmerlichen Tod gebracht.
+Durch den ploetzlichen Hintritt des Schwedischen Carolus war nun
+zwar Friede; aber die grausamen Stapfen des Krieges lagen ueberall;
+manch Bauern- oder Kaethnerhaus, wo man mich als Knaben mit einem
+Trunke suesser Milch bewirthet, hatte ich auf meiner Morgenwanderung
+niedergesenget am Wege liegen sehen und manches Feld in oedem
+Unkraut, darauf sonst um diese Zeit der Roggen seine gruenen Spitzen
+trieb.
+
+Aber solches beschwerete mich heut nicht allzu sehr; ich hatte nur
+Verlangen, wie ich dem edlen Herrn durch meine Kunst beweisen
+moechte, dass er Gab und Gunst an keinen Unwuerdigen verschwendet habe;
+dachte auch nicht an Strolche und verlaufen Gesindel, das vom
+Kriege her noch in den Waeldern Umtrieb halten sollte.  Wohl aber
+tueckete mich ein anderes, und das war der Gedanke an den Junker
+Wulf.  Er war mir nimmer hold gewesen, hatte wohl gar, was sein
+edler Vater an mir gethan, als einen Diebstahl an ihm selber
+angesehen; und manches Mal, wenn ich, wie oefters nach meines lieben
+Vaters Tode, im Sommer die Vacanz auf dem Gute zubrachte, hatte er
+mir die schoenen Tage vergaellet und versalzen.  Ob er anitzt in
+seines Vaters Hause sei, war mir nicht kund geworden, hatte nur
+vernommen, dass er noch vor dem Friedensschlusse bei Spiel und
+Becher mit den Schwedischen Offiziers Verkehr gehalten, was mit
+rechter Holstentreue nicht zu reimen ist.
+
+Indem ich diess bei mir erwog, war ich aus dem Buchenwalde in den
+Richtsteig durch das Tannenhoelzchen geschritten, das schon dem Hofe
+nahe liegt.  Wie liebliche Erinnerung umhauchte mich der Wuerzeduft
+des Harzes; aber bald trat ich aus dem Schatten in den vollen
+Sonnenschein hinaus; da lagen zu beiden Seiten die mit Haselbueschen
+eingehegten Wiesen, und nicht lange, so wanderte ich zwischen den
+zwo Reihen gewaltiger Eichbaeume, die zum Herrensitz hinauffuehren.
+
+Ich weiss nicht, was fuer ein bang Gefuehl mich ploetzlich ueberkam, ohn
+alle Ursach, wie ich derzeit dachte; denn es war eitel Sonnenschein
+umher, und vom Himmel herab klang ein gar herzlich und ermunternd
+Lerchensingen.  Und siehe, dort auf der Koppel, wo der Hofmann
+seinen Immenhof hat, stand ja auch noch der alte Holzbirnenbaum und
+fluesterte mit seinen jungen Blaettern in der blauen Luft.
+
+"Gruess dich Gott!" sagte ich leis, gedachte dabei aber weniger des
+Baumes, als vielmehr des holden Gottesgeschoepfes, in dem, wie es
+sich nachmals fuegen musste, all Glueck und Leid und auch all nagende
+Busse meines Lebens beschlossen sein sollte, fuer jetzt und alle Zeit.
+Das war des edlen Herrn Gerhardus Toechterlein, des Junkers Wulfen
+einzig Geschwister.
+
+Item, es war bald nach meines lieben Vaters Tode, als ich zum
+ersten Mal die ganze Vacanz hier verbrachte; sie war derzeit ein
+neunjaehrig Dirnlein, die ihre braunen Zoepfe lustig fliegen liess;
+ich zaehlte um ein paar Jahre weiter.  So trat ich eines Morgens
+aus dem Thorhaus; der alte Hofmann Dieterich, der ober der
+Einfahrt wohnt und neben dem als einem getreuen Mann mir mein
+Schlafkaemmerlein eingeraeumt war, hatte mir einen Eschenbogen
+zugerichtet, mir auch die Bolzen von tuechtigem Blei dazu gegossen,
+und ich wollte nun auf die Raubvoegel, deren genug bei dem
+Herrenhaus umherschrien; da kam sie vom Hofe auf mich zugesprungen.
+
+"Weisst du, Johannes", sagte sie; "ich zeig dir ein Vogelnest; dort
+in dem hohlen Birnbaum; aber das sind Rotschwaenzchen, die darfst du
+ja nicht schiessen!"
+
+Damit war sie schon wieder vorausgesprungen; doch eh sie noch dem
+Baum auf zwanzig Schritte nah gekommen, sah ich sie jaehlings stille
+stehn.  "Der Buhz, der Buhz!" schrie sie und schuettelte wie
+entsetzt ihre beiden Haendlein in der Luft.
+
+Es war aber ein grosser Waldkauz, der ober dem Loche des hohlen
+Baumes sass und hinabschauete, ob er ein ausfliegend Voegelein
+erhaschen moege.  "Der Buhz, der Buhz!" schrie die Kleine wieder.
+"Schiess, Johannes, schiess!"--Der Kauz aber, den die Fressgier taub
+gemacht, sass noch immer und stierete in die Hoehlung.  Da spannte
+ich meinen Eschenbogen und schoss, dass das Raubthier zappelnd auf
+dem Boden lag; aus dem Baume aber schwang sich ein zwitschernd
+Voeglein in die Luft.
+
+Seit der Zeit waren Katharina und ich zwei gute Gesellen mit
+einander; in Wald und Garten, wo das Maegdlein war, da war auch ich.
+Darob aber musste mir gar bald ein Feind erstehen; das war der Kurt
+von der Risch, dessen Vater eine Stunde davon auf seinem reichen
+Hofe sass.  In Begleitung seines gelahrten Hofmeisters, mit dem Herr
+Gerhardus gern der Unterhaltung pflag, kam er oftmals auf Besuch;
+und da er juenger war als Junker Wulf, so war er wohl auf mich und
+Katharinen angewiesen; insonders aber schien das braune
+Herrentoechterlein ihm zu gefallen.  Doch war das schier umsonst;
+sie lachte nur ueber seine krumme Vogelnase, die ihm, wie bei fast
+allen des Geschlechtes, unter buschigem Haupthaar zwischen zwei
+merklich runden Augen sass.  Ja, wenn sie seiner nur von fern
+gewahrte, so reckte sie wohl ihr Koepfchen vor und rief.  "Johannes,
+der Buhz, der Buhz!" Dann versteckten wir uns hinter den Scheunen
+oder rannten wohl auch spornstreichs in den Wald hinein, der sich
+in einem Bogen um die Felder und danach wieder dicht an die Mauern
+des Gartens hinanzieht.
+
+Darob, als der von der Risch dess inne wurde, kam es oftmals
+zwischen uns zum Haarraufen, wobei jedoch, da er mehr hitzig denn
+stark war, der Vortheil meist in meinen Haenden blieb.
+
+Als ich, um von Herrn Gerhardus Urlaub zu nehmen, vor meiner
+Ausfahrt in die Fremde zum letzten Mal, jedoch nur kurze Tage, hier
+verweilte, war Katharina schon fast wie eine Jungfrau; ihr braunes
+Haar lag itzt in einem goldnen Netz gefangen; in ihren Augen, wenn
+sie die Wimpern hob, war oft ein spielend Leuchten, das mich schier
+beklommen machte.  Auch war ein alt gebrechlich Fraeulein ihr zur
+Obhut beigegeben, so man im Hause nur "Bas' Ursel" nannte; sie liess
+das Kind nicht aus den Augen und ging ueberall mit einer langen
+Tricotage neben ihr.
+
+Als ich so eines Octobernachmittags im Schatten der Gartenhecken
+mit beiden auf und ab wandelte, kam ein lang aufgeschossener Gesell,
+mit spitzenbesetztem Lederwams und Federhut ganz alamode gekleidet,
+den Gang zu uns herauf; und siehe da, es war der Junker Kurt, mein
+alter Widersacher.  Ich merkte allsogleich, dass er noch immer bei
+seiner schoenen Nachbarin zu Hofe ging; auch dass insonders dem alten
+Fraeulein solches zu gefallen schien.  Das war ein "Herr Baron" auf
+alle Frag' und Antwort; dabei lachte sie hoechst obligeant mit einer
+widrig feinen Stimme und hob die Nase unmaessig in die Luft; mich
+aber, wenn ich ja ein Wort dazwischen gab, nannte sie stetig "Er"
+oder kurzweg auch "Johannes", worauf der Junker dann seine runden
+Augen einkniff und im Gegentheile that, als saehe er auf mich herab,
+obschon ich ihn um halben Kopfes Laenge ueberragte.
+
+Ich blickte auf Katharinen; die aber kuemmerte sich nicht um mich,
+sondern ging sittig neben dem Junker, ihm manierlich Red und
+Antwort gebend; den kleinen rothen Mund aber verzog mitunter ein
+spoettisch stolzes Laecheln, so dass ich dachte: 'Getroeste dich,
+Johannes; der Herrensohn schnellt itzo deine Waage in die Luft!'
+Trotzig blieb ich zurueck und liess die andern dreie vor mir
+gehen.  Als aber diese in das Haus getreten waren und ich davor
+noch an Herrn Gerhardus' Blumenbeeten stand, darueber bruetend, wie
+ich, gleich wie vormals, mit dem von der Risch ein tuechtig
+Haarraufen beginnen moechte, kam ploetzlich Katharina wieder
+zurueckgelaufen, riss neben mir eine Aster von den Beeten und
+fluesterte mir zu: "Johannes, weisst du was?  Der Buhz sieht einem
+jungen Adler gleich; Bas' Ursel hat's gesagt!" Und fort war sie
+wieder, eh ich mich's versah.  Mir aber war auf einmal all Trotz
+und Zorn wie weggeblasen.  Was kuemmerte mich itzund der Herr Baron!
+Ich lachte hell und froehlich in den gueldnen Tag hinaus; denn bei
+den uebermuethigen Worten war wieder jenes suesse Augenspiel gewesen.
+Aber diesmal hatte es mir gerad ins Herz geleuchtet.
+
+Bald danach liess mich Herr Gerhardus auf sein Zimmer rufen; er
+zeigte mir auf einer Karte noch einmal, wie ich die weite Reise
+nach Amsterdam zu machen habe, uebergab mir Briefe an seine Freunde
+dort und sprach dann lange mit mir, als meines lieben seligen
+Vaters Freund.  Denn noch selbigen Abends hatte ich zur Stadt zu
+gehen, von wo ein Buerger mich auf seinem Wagen mit nach Hamburg
+nehmen wollte.
+
+Als nun der Tag hinabging, nahm ich Abschied.  Unten im Zimmer sass
+Katharina an einem Stickrahmen; ich musste der Griechischen Helena
+gedenken, wie ich sie juengst in einem Kupferwerk gesehen; so schoen
+erschien mir der junge Nacken, den das Maedchen eben ueber ihre
+Arbeit neigte.  Aber sie war nicht allein; ihr gegenueber sass Bas'
+Ursel und las laut aus einem franzoesischen Geschichtenbuche.  Da
+ich naeher trat, hob sie die Nase nach mir zu.  "Nun, Johannes",
+sagte sie, "Er will mir wohl Ade sagen?  So kann Er auch dem
+Fraeulein gleich Seine Reverenze machen!"--Da war schon Katharina
+von ihrer Arbeit aufgestanden; aber indem sie mir die Hand reichte,
+traten die Junker Wulf und Kurt mit grossem Geraeusch ins Zimmer; und
+sie sagte nur: "Leb wohl, Johannes!" Und so ging ich fort.
+
+
+Im Thorhaus drueckte ich dem alten Dieterich die Hand, der Stab und
+Ranzen schon fuer mich bereit hielt; dann wanderte ich zwischen den
+Eichbaeumen auf die Waldstrasse zu.  Aber mir war dabei, als koenne
+ich nicht recht fort, als haett ich einen Abschied noch zu Gute, und
+stand oft still und schaute hinter mich.  Ich war auch nicht den
+Richtweg durch die Tannen, sondern, wie von selber, den viel
+weiteren auf der grossen Fahrstrasse hingewandert.  Aber schon kam
+vor mir das Abendroth ueberm Wald herauf, und ich musste eilen, wenn
+mich die Nacht nicht ueberfallen sollte.  "Ade, Katharina, ade!"
+sagte ich leise und setzte ruestig meinen Wanderstab in Gang.
+
+Da, an der Stelle, wo der Fusssteig in die Strasse muendet--in
+stuermender Freude stund das Herz mir still--, ploetzlich aus dem
+Tannendunkel war sie selber da; mit gluehenden Wangen kam sie
+hergelaufen, sie sprang ueber den trocknen Weggraben, dass die Fluth
+des seidenbraunen Haars dem gueldnen Netz entstuerzete; und so fing
+ich sie in meinen Armen auf.  Mit glaenzenden Augen, noch mit dem
+Odem ringend, schaute sie mich an.  "Ich--ich bin ihnen
+fortgelaufen!" stammelte sie endlich; und dann, ein Paeckchen in
+meine Hand drueckend, fuegte sie leis hinzu: "Von mir, Johannes!  Und
+du sollst es nicht verachten!" Auf einmal aber wurde ihr
+Gesichtchen truebe; der kleine schwellende Mund wollte noch was
+reden, aber da brach ein Thraenenquell aus ihren Augen, und
+wehmuethig ihr Koepfchen schuettelnd, riss sie sich hastig los.  Ich
+sah ihr Kleid im finstern Tannensteig verschwinden; dann in der
+Ferne hoerte ich noch die Zweige rauschen, und dann stand ich allein.
+Es war so still, die Blaetter konnte man fallen hoeren.  Als ich
+das Paeckchen aus einander faltete, da war's ihr gueldner
+Pathenpfennig, so sie mir oft gezeigt hatte; ein Zettlein lag dabei,
+das las ich nun beim Schein des Abendrothes.  "Damit du nicht in
+Noth gerathest", stund darauf geschrieben.--Da streckt ich meine
+Arme in die leere Luft: "Ade, Katharina ade, ade!"--wohl hundertmal
+rief ich es in den stillen Wald hinein;--und erst mit sinkender
+Nacht erreichte ich die Stadt.
+
+--Seitdem waren fast fuenf Jahre dahingegangen.--Wie wuerd ich heute
+alles wiederfinden?
+
+Und schon war ich am Thorhaus und sah drunten im Hof die alten
+Linden, hinter deren lichtgruenem Laub die beiden Zackengiebel des
+Herrenhauses itzt verborgen lagen.  Als ich aber durch den Thorweg
+gehen wollte, jagten vom Hofe her zwei fahlgraue Bullenbeisser mit
+Stachelhalsbaendern gar wild gegen mich heran; sie erhuben ein
+erschreckliches Geheul, der eine sprang auf mich und fletschete
+seine weissen Zaehne dicht vor meinem Antlitz.  Solch einen
+Willkommen hatte ich noch niemalen hier empfangen.  Da, zu meinem
+Glueck, rief aus den Kammern ober dem Thore eine rauhe, aber mir gar
+traute Stimme.  "Hallo!" rief sie; "Tartar, Tuerk!" Die Hunde liessen
+von mir ab, ich hoerte es die Stiege herabkommen, und aus der Thuer,
+so unter dem Thorgang war, trat der alte Dieterich.
+
+Als ich ihn anschaute, sahe ich wohl, dass ich lang in der Fremde
+gewesen sei; denn sein Haar war schlohweiss geworden, und seine
+sonst so lustigen Augen blickten gar matt und betruebsam auf mich
+hin.  "Herr Johannes!" sagte er endlich und reichte mir seine
+beiden Haende.
+
+"Gruess Ihn Gott, Dieterich!" entgegnete ich.  "Aber seit wann haltet
+Ihr solche Bluthunde auf dem Hof, die die Gaeste anfallen gleich den
+Woelfen?"
+
+"Ja, Herr Johannes", sagte der Alte, "die hat der Junker
+hergebracht."
+
+"Ist denn der daheim?" Der Alte nickte.
+
+"Nun", sagte ich, "die Hunde moegen schon vonnoethen sein; vom Krieg
+her ist noch viel verlaufen Volk zurueckgeblieben."
+
+"Ach, Herr Johannes!" Und der alte Mann stund immer noch, als wolle
+er mich nicht zum Hof hinauf lassen.  "Ihr seid in schlimmer Zeit
+gekommen!"
+
+Ich sah ihn an, sagte aber nur: "Freilich, Dieterich; aus mancher
+Fensterhoehlung schaut statt des Bauern itzt der Wolf heraus; hab
+dergleichen auch gesehen; aber es ist ja Frieden worden, und der
+gute Herr im Schloss wird helfen, seine Hand ist offen."
+
+Mit diesen Worten wollte ich, obschon die Hunde mich wieder
+anknurreten, auf den Hof hinausgehen; aber der Greis trat mir in
+den Weg.  "Herr Johannes", rief er, "ehe Ihr weiter gehet, hoeret
+mich an!  Euer Brieflein ist zwar richtig mit der Koeniglichen Post
+von Hamburg kommen; aber den rechten Leser hat es nicht mehr finden
+koennen."
+
+"Dieterich!" schrie ich.  "Dieterich!"
+
+"--Ja, ja, Herr Johannes!  Hier ist die gute Zeit vorbei; denn
+unser theurer Herr Gerhardus liegt aufgebahret dort in der Kapellen,
+und die Gueridons brennen an seinem Sarge.  Es wird nun anders
+werden auf dem Hofe; aber--ich bin ein hoeriger Mann, mir ziemet
+Schweigen."
+
+Ich wollte fragen: "Ist das Fraeulein, ist Katharina noch im Hause!"
+Aber das Wort wollte nicht ueber meine Zunge.
+
+Drueben, in einem hinteren Seitenbau des Herrenhauses, war eine
+kleine Kapelle, die aber, wie ich wusste, seit lange nicht benutzt
+war.  Dort also sollte ich Herrn Gerhardus suchen.
+
+Ich fragte den alten Hofmann: "Ist die Kapelle offen?", und als er
+es bejahete, bat ich ihn, die Hunde anzuhalten; dann ging ich ueber
+den Hof, wo niemand mir begegnete; nur einer Grasmuecke Singen kam
+oben aus den Lindenwipfeln.
+
+Die Thuer zur Kapellen war nur angelehnt, und leis und gar beklommen
+trat ich ein.  Da stand der offene Sarg, und die rothe Flamme der
+Kerzen warf ihr flackernd Licht auf das edle Antlitz des geliebten
+Herrn; die Fremdheit des Todes, so darauf lag, sagte mir, dass er
+itzt eines andern Lands Genosse sei.  Indem ich aber neben dem
+Leichnam zum Gebete hinknien wollte, erhub sich ueber den Rand des
+Sarges mir gegenueber ein junges blasses Antlitz, das aus schwarzen
+Schleiern fast erschrocken auf mich schaute.
+
+Aber nur, wie ein Hauch verweht, so blickten die braunen Augen
+herzlich zu mir auf, und es war fast wie ein Freudenruf.  "O
+Johannes, seid Ihr's denn?  Ach, Ihr seid zu spaet gekommen!" Und
+ueber dem Sarge hatten unsere Haende sich zum Gruss gefasst; denn es
+war Katharina, und sie war so schoen geworden, dass hier im Angesicht
+des Todes ein heisser Puls des Lebens mich durchfuhr.  Zwar, das
+spielende Licht der Augen lag itzt zurueckgeschrecket in der Tiefe;
+aber aus dem schwarzen Haeubchen draengten sich die braunen Loecklein,
+und der schwellende Mund war um so roether in dem blassen Antlitz.
+
+Und fast verwirret auf den Todten schauend, sprach ich: "Wohl kam
+ich in der Hoffnung, an seinem lebenden Bilde ihm mit meiner Kunst
+zu danken, ihm manche Stunde genueber zu sitzen und sein mild und
+lehrreich Wort zu hoeren.  Lasst mich denn nun die bald vergehenden
+Zuege festzuhalten suchen."
+
+Und als sie unter Thraenen, die ueber ihre Wangen stroemten, stumm zu
+mir hinuebernickte, setzte ich mich in ein Gestuehlte und begann auf
+einem von den Blaettchen, die ich bei mir fuehrte, des Todten Antlitz
+nachzubilden.  Aber meine Hand zitterte; ich weiss nicht, ob alleine
+vor der Majestaet des Todes.
+
+Waehrend dem vernahm ich draussen vom Hofe her eine Stimme, die ich
+fuer die des Junker Wulf erkannte; gleich danach schrie ein Hund wie
+nach einem Fusstritt oder Peitschenhiebe; und dann ein Lachen und
+einen Fluch von einer andern Stimme, die mir gleicherweise bekannt
+deuchte.
+
+Als ich auf Katharinen blickte, sah ich sie mit schier entsetzten
+Augen nach dem Fenster starren; aber die Stimmen und die Schritte
+gingen vorueber.  Da erhub sie sich, kam an meine Seite und sahe zu,
+wie des Vaters Antlitz unter meinem Stift entstund.  Nicht lange,
+so kam draussen ein einzelner Schritt zurueck; in demselben
+Augenblick legte Katharina die Hand auf meine Schulter, und ich
+fuehlte, wie ihr junger Koerper bebte.
+
+Sogleich auch wurde die Kapellenthuer aufgerissen; und ich erkannte
+den Junker Wulf, obschon sein sonsten bleiches Angesicht itzt roth
+und aufgedunsen schien.
+
+"Was huckst du allfort an dem Sarge!" rief er zu der Schwester.
+"Der Junker von der Risch ist da gewesen, uns seine Condolenze zu
+bezeigen; du haettest ihm wohl den Trunk kredenzen moegen!"
+
+Zugleich hatte er meiner wahrgenommen und bohrete mich mit seinen
+kleinen Augen an.  "Wulf", sagte Katharina, indem sie mit mir zu
+ihm trat; "es ist Johannes, Wulf"
+
+Der Junker fand nicht vonnoethen, mir die Hand zu reichen; er
+musterte nur mein violenfarben Wams und meinte: "Du traegst da
+einen bunten Federbalg; man wird dich 'Sieur' nun tituliren
+muessen!"
+
+"Nennt mich, wie's Euch gefaellt!" sagte ich, indem wir auf den Hof
+hinaustreten.  "Obschon mir dorten, von wo ich komme, das 'Herr'
+vor meinem Namen nicht gefehlet--Ihr wisst wohl, Eueres Vaters Sohn
+hat grosses Recht an mir."
+
+Er sah mich was verwundert an, sagte dann aber nur: "Nun wohl, so
+magst du zeigen, was du fuer meines Vaters Gold erlernet hast; und
+soll dazu der Lohn fuer deine Arbeit dir nicht verhalten sein."
+
+Ich meinete, was den Lohn anginge, den haette ich laengst
+vorausbekommen; da aber der Junker entgegnete, er werd es halten,
+wie sich's fuer einen Edelmann gezieme, so fragte ich, was fuer
+Arbeit er mir aufzutragen haette.
+
+"Du weisst doch", sagte er und hielt dann inne, indem er scharf auf
+seine Schwester blickte--"wenn eine adelige Tochter das Haus
+verlaesst, so muss ihr Bild darin zurueckbleiben."
+
+Ich fuehlte, dass bei diesen Worten Katharina, die an meiner Seite
+ging, gleich einer Taumelnden nach meinem Mantel haschte; aber ich
+entgegnete ruhig: "Der Brauch ist mir bekannt; doch, wie meinet Ihr
+denn, Junker Wulf?"
+
+"Ich meine", sagte er hart, als ob er einen Gegenspruch erwarte,
+"dass du das Bildniss der Tochter dieses Hauses malen sollst!"
+
+Mich durchfuhr's fast wie ein Schrecken; weiss nicht, ob mehr ueber
+den Ton oder die Deutung dieser Worte; dachte auch, zu solchem
+Beginnen sei itzt kaum die rechte Zeit.
+
+Da Katharina schwieg, aus ihren Augen aber ein flehentlicher Blick
+mir zuflog, so antwortete ich: "Wenn Eure edle Schwester es mir
+vergoennen will, so hoffe ich Eueres Vaters Protection und meines
+Meisters Lehre keine Schande anzuthun.  Raeumet mir nur wieder mein
+Kaemmerlein ober dem Thorweg bei dem alten Dieterich, so soll
+geschehen, was Ihr wuenschet."
+
+Der Junker war das zufrieden und sagte auch seiner Schwester, sie
+moege einen Imbiss fuer mich richten lassen.
+
+Ich wollte ueber den Beginn meiner Arbeit noch eine Frage thun; aber
+ich verstummte wieder, denn ueber den empfangenen Auftrag war
+ploetzlich eine Entzueckung in mir aufgestiegen, dass ich fuerchtete,
+sie koenne mit jedem Wort hervorbrechen.  So war ich auch der zwo
+grimmen Koeter nicht gewahr worden, die dort am Brunnen sich auf den
+heissen Steinen sonnten.  Da wir aber naeher kamen, sprangen sie auf
+und fuhren mit offenem Rachen gegen mich, dass Katharina einen
+Schrei that, der Junker aber einen schrillen Pfiff, worauf sie
+heulend ihm zu Fuessen krochen.  "Beim Hoellenelemente", rief er
+lachend, "zwo tolle Kerle; gilt ihnen gleich, ein Sauschwanz oder
+Flandrisch Tuch!"
+
+"Nun, Junker Wulf"--ich konnte der Rede mich nicht wohl enthalten--,
+"soll ich noch einmal Gast in Eueres Vaters Hause sein, so moeget
+Ihr Euere Thiere bessere Sitte lehren!"
+
+Er blitzte mich mit seinen kleinen Augen an und riss sich ein paar
+Mal in seinen Zwickelbart.  "Das ist nur so ihr Willkommensgruss,
+Sieur Johannes!" sagte er dann, indem er sich bueckte, um die
+Bestien zu streicheln.  "Damit jedweder wisse, dass ein ander
+Regiment allhier begonnen; denn--wer mir in die Quere kommt, den
+hetz ich in des Teufels Rachen!"
+
+Bei den letzten Worten, die er heftig ausgestossen, hatte er sich
+hoch aufgerichtet; dann pfiff er seinen Hunden und schritt ueber den
+Hof dem Thore zu.
+
+Ein Weilchen schaute ich hintendrein; dann folgte ich Katharinen,
+die unter dem Lindenschatten stumm und gesenkten Hauptes die
+Freitreppe zu dem Herrenhaus emporstieg; ebenso schweigend gingen
+wir mitsammen die breiten Stufen in das Oberhaus hinauf, allwo wir
+in des seligen Herrn Gerhardus Zimmer traten.--Hier war noch alles,
+wie ich es vordem gesehen; die goldgebluemten Ledertapeten, die
+Karten an der Wand, die saubern Pergamentbaende auf den Regalen,
+ueber dem Arbeitstische der schoene Waldgrund von dem aelteren
+Ruisdael--und dann davor der leere Sessel.  Meine Blicke blieben
+daran haften; gleichwie drunten in der Kapellen der Leib des
+Entschlafenen, so schien auch dies Gemach mir itzt entseelet und,
+obschon vom Walde draussen der junge Lenz durchs Fenster leuchtete,
+doch gleichsam von der Stille des Todes wie erfuellet.
+
+Ich hatte auf Katharinen in diesem Augenblicke fast vergessen.  Da
+ich mich umwandte, stand sie schier reglos mitten in dem Zimmer,
+und ich sah, wie unter den kleinen Haenden, die sie daraufgepresst
+hielt, ihre Brust in ungestuemer Arbeit ging.  "Nicht wahr", sagte
+sie leise, "hier ist itzt niemand mehr; niemand als mein Bruder und
+seine grimmen Hunde?"
+
+"Katharina!" rief ich; "was ist Euch?  Was ist das hier in Eueres
+Vaters Haus?"
+
+"Was es ist, Johannes?" Und fast wild ergriff sie meine beiden
+Haende, und ihre jungen Augen spruehten wie in Zorn und Schmerz.
+"Nein, nein; lass erst den Vater in seiner Gruft zur Ruhe kommen!
+Aber dann--du sollst mein Bild ja malen, du wirst eine Zeitlang
+hier verweilen--dann, Johannes, hilf mir; um des Todten willen,
+hilf mir!"
+
+Auf solche Worte, von Mitleid und von Liebe ganz bezwungen, fiel
+ich vor der Schoenen, Suessen nieder und schwur ihr mich und alle
+meine Kraefte zu.  Da loesete sich ein sanfter Thraenenquell aus ihren
+Augen, und wir sassen neben einander und sprachen lange zu des
+Entschlafenen Gedaechtniss.
+
+Als wir sodann wieder in das Unterhaus hinabgingen, fragte ich auch
+dem alten Fraeulein nach.
+
+"Oh", sagte Katharina, "Bas' Ursel!  Wollt Ihr sie begruessen?  Ja,
+die ist auch noch da; sie hat hier unten ihr Gemach, denn die
+Treppen sind ihr schon laengsthin zu beschwerlich."
+
+Wir traten also in ein Stuebchen, das gegen den Garten lag, wo auf
+den Beeten vor den gruenen Heckenwaenden soeben die Tulpen aus der
+Erde brachen.  Bas' Ursel sass, in der schwarzen Tracht und
+Krepphaube nur wie ein schwindend Haeufchen anzuschauen, in einem
+hohen Sessel und hatte ein Nonnenspielchen vor sich, das, wie sie
+nachmals mir erzaehlte, der Herr Baron--nach seines Vaters Ableben
+war er solches itzund wirklich--ihr aus Luebeck zur Verehrung
+mitgebracht.
+
+"So", sagte sie, da Katharina mich genannt hatte, indess sie
+behutsam die helfenbeinern Pfloecklein um einander steckte, "ist Er
+wieder da, Johannes?  Nein, es geht nicht aus!  O, c'est un jeu
+tres-complique!"
+
+Dann warf sie die Pfloecklein ueber einander und schauete mich an.
+"Ei", meinte sie, "Er ist gar stattlich angethan; aber weiss Er denn
+nicht, dass Er in ein Trauerhaus getreten ist?"
+
+"Ich weiss es, Fraeulein", entgegnete ich; "aber da ich in das Thor
+trat, wusste ich es nicht."
+
+"Nun", sagte sie und nickte gar beguetigend; "so eigentlich gehoeret
+Er ja auch nicht zur Dienerschaft."
+
+Ueber Katharinens blasses Antlitz flog ein Laecheln, wodurch ich mich
+jeder Antwort wohl enthoben halten mochte.  Vielmehr ruehmte ich der
+alten Dame die Anmuth ihres Wohngemaches; denn auch der Epheu von
+dem Thuermchen, das draussen an der Mauer aufstieg, hatte sich nach
+dem Fenster hingesponnen und wiegete seine gruenen Ranken vor den
+Scheiben.
+
+Aber Bas' Ursel meinete, ja, wenn nur nicht die Nachtigallen waeren,
+die itzt schon wieder anhueben mit ihrer Nachtunruhe; sie koenne
+ohnedem den Schlaf nicht finden; und dann auch sei es schier zu
+abgelegen; das Gesinde sei von hier aus nicht im Aug zu halten; im
+Garten draussen aber passire eben nichts, als etwan, wann der
+Gaertnerbursche an den Hecken oder Buchsrabatten putze.
+
+--Und damit hatte der Besuch seine Endschaft; denn Katharina mahnte,
+es sei nachgerade an der Zeit, meinen wegemueden Leib zu staerken.
+
+Ich war nun in meinem Kaemmerchen ober dem Hofthor einlogiret, dem
+alten Dieterich zur sondern Freude; denn am Feierabend sassen wir
+auf seiner Tragkist, und liess ich mir, gleich wie in der Knabenzeit,
+von ihm erzaehlen.  Er rauchte dann wohl eine Pfeife Tabak, welche
+Sitte durch das Kriegsvolk auch hier in Gang gekommen war, und
+holete allerlei Geschichten aus den Drangsalen, so sie durch die
+fremden Truppen auf dem Hof und unten in dem Dorf hatten erleiden
+muessen; einmal aber, da ich seine Rede auf das gute Froelen
+Katharina gebracht und er erst nicht hatt ein Ende finden koennen,
+brach er gleichwohl ploetzlich ab und schauete mich an.
+
+"Wisset Ihr, Herr Johannes", sagte er, "'s ist grausam schad, dass
+Ihr nicht auch ein Wappen habet gleich dem von der Risch da drueben!"
+
+Und da solche Rede mir das Blut ins Gesicht jagete, klopfte er mit
+seiner harten Hand mir auf die Schulter, meinend: "Nun, nun, Herr
+Johannes; 's war ein dummes Wort von mir; wir muessen freilich
+bleiben, wo uns der Herrgott hingesetzet."
+
+Weiss nicht, ob ich derzeit mit solchem einverstanden gewesen,
+fragete aber nur, was der von der Risch denn itzund fuer ein Mann
+geworden.
+
+Der Alte sah mich gar pfiffig an und paffte aus seinem kurzen
+Pfeiflein, als ob das theure Kraut am Feldrain wuechse.  "Wollet
+Ihr's wissen, Herr Johannes?" begann er dann.  "Er gehoeret zu denen
+muntern Junkern, die im Kieler Umschlag den Buergersleuten die
+Knoepfe von den Haeusern schiessen; Ihr moeget glauben, er hat
+treffliche Pistolen!  Auf der Geigen weiss er nicht so gut zu
+spielen; da er aber ein lustig Stuecklein liebt, so hat er letzthin
+den Rathsmusikanten, der ueberm Holstenthore wohnt, um Mitternacht
+mit seinem Degen aufgeklopfet, ihm auch nicht Zeit gelassen, sich
+Wams und Hosen anzuthun.  Statt der Sonnen stand aber der Mond am
+Himmel, es war octavis trium regum und fror Pickelsteine; und hat
+also der Musikante, den Junker mit dem Degen hinter sich, im
+blanken Hemde vor ihm durch die Gassen geigen muessen!--Wollet Ihr
+mehr noch wissen, Herr Johannes?--Zu Haus bei ihm freuen sich die
+Bauern, wenn der Herrgott sie nicht mit Toechtern gesegnet; und
+dennoch--aber nach seines Vaters Tode hat er Geld, und unser Junker,
+Ihr wisset's wohl, hat schon vorher von seinem Erbe aufgezehrt."
+
+Ich wusste freilich nun genug; auch hatte der alte Dieterich schon
+mit seinem Spruche: "Aber ich bin nur ein hoeriger Mann", seiner
+Rede Schluss gemacht.
+
+--Mit meinem Malgeraeth war auch meine Kleidung aus der Stadt
+gekommen, wo ich im Goldenen Loewen alles abgeleget, so dass ich
+anitzt, wie es sich ziemete, in dunkler Tracht einherging.  Die
+Tagesstunden aber wandte ich zunaechst in meinen Nutzen.  Naemlich,
+es befand sich oben im Herrenhause neben des seligen Herrn Gemach
+ein Saal, raeumlich und hoch, dessen Waende fast voellig von
+lebensgrossen Bildern verhaenget waren, so dass nur noch neben dem
+Kamin ein Platz zu zweien offen stund.  Es waren das die Voreltern
+des Herrn Gerhardus, meist ernst und sicher blickende Maenner und
+Frauen, mit einem Antlitz, dem man wohl vertrauen konnte; er
+selbsten in kraeftigem Mannesalter und Katharinens frueh verstorbene
+Mutter machten dann den Schluss.  Die, beiden letzten Bilder waren
+gar trefflich von unserem Landsmanne, dem Eiderstedter Georg Ovens,
+in seiner kraeftigen Art gemalet; und ich suchte nun mit meinem
+Pinsel die Zuege meines edlen Beschuetzers nachzuschaffen; zwar in
+verengtem Massstabe und nur mir selber zum Genuegen; doch hat es
+spaeter zu einem groesseren Bildniss mir gedienet, das noch itzt hier
+in meiner einsamen Kammer die theuerste Gesellschaft meines Alters
+ist.  Das Bildniss seiner Tochter aber lebt mit mir in meinem Innern.
+
+Oft, wenn ich die Palette hingelegt, stand ich noch lange vor den
+schoenen Bildern.  Katharinens Antlitz fand ich in dem der beiden
+Eltern wieder: des Vaters Stirn, der Mutter Liebreiz um die Lippen;
+wo aber war hier der harte Mundwinkel, das kleine Auge des Junker
+Wulf?--Das musste tiefer aus der Vergangenheit heraufgekommen sein!
+Langsam ging ich die Reih der aelteren Bildnisse entlang, bis ueber
+hundert Jahre weit hinab.  Und siehe, da hing im schwarzen, von den
+Wuermern schon zerfressenen Holzrahmen ein Bild, vor dem ich schon
+als Knabe, als ob's mich hielte, still gestanden war.  Es stellete
+eine Edelfrau von etwa vierzig Jahren vor; die kleinen grauen Augen
+sahen kalt und stechend aus dem harten Antlitz, das nur zur Haelfte
+zwischen dem Weissen Kinntuch und der Schleierhaube sichtbar
+wurde. Ein leiser Schauer ueberfuhr mich vor der so lang schon
+heimgegangenen Seele; und ich sprach zu mir: 'Hier, diese
+ist's!  Wie raethselhafte Wege gehet die Natur!  Ein saeculum und
+drueber rinnt es heimlich wie unter einer Decke im Blute der
+Geschlechter fort; dann, laengst vergessen, taucht es ploetzlich
+wieder auf, den Lebenden zum Unheil.  Nicht vor dem Sohn des edlen
+Gerhardus; vor dieser hier und ihres Blutes nachgeborenem Sproessling
+soll ich Katharinen schuetzen.' Und wieder trat ich vor die
+beiden juengsten Bilder, an denen mein Gemuethe sich erquickte.
+
+So weilte ich derzeit in dem stillen Saale, wo um mich nur die
+Sonnenstaeublein spielten, unter den Schatten der Gewesenen.
+
+Katharinen sah ich nur beim Mittagstische, das alte Fraeulein und
+den Junker Wulf zur Seiten; aber wofern Bas' Ursel nicht in ihren
+hohen Toenen redete, so war es stets ein stumm und betruebsam Mahl,
+so dass mir oft der Bissen im Munde quoll.  Nicht die Trauer um den
+Abgeschiedenen war dess Ursach, sondern es lag zwischen Bruder und
+Schwester, als sei das Tischtuch durchgeschnitten zwischen ihnen.
+Katharina, nachdem sie fast die Speisen nicht beruehrt, entfernte
+sich allzeit bald, mich kaum nur mit den Augen gruessend; der Junker
+aber, wenn ihm die Laune stund, suchte mich dann beim Trunke
+festzuhalten; hatte mich also hiegegen und, so ich nicht hinaus
+wollte ueber mein gestecktes Mass, ueberdem wider allerart Flosculn zu
+wehren, welche gegen mich gespitzet wurden.
+
+Inzwischen, nachdem der Sarg schon mehrere Tage geschlossen gewesen,
+geschahe die Beisetzung des Herrn Gerhardus drunten in der Kirche
+des Dorfes, allwo das Erbbegraebniss ist und wo itzt seine Gebeine
+bei denen seiner Voreltern ruhen, mit denen der Hoechste ihnen
+dereinst eine froehliche Urstaend wolle bescheren!
+
+Es waren aber zu solcher Trauerfestlichkeit zwar mancherlei Leute
+aus der Stadt und den umliegenden Guetern gekommen, von Angehoerigen
+aber fast wenige und auch diese nur entfernte, massen der Junker
+Wulf der Letzte seines Stammes war und des Herrn Gerhardus Ehgemahl
+nicht hiesigen Geschlechts gewesen; darum es auch geschahe, dass in
+der Kuerze alle wieder abgezogen sind.
+
+Der Junker draengte nun selbst, dass ich mein aufgetragen Werk
+begoenne, wozu ich droben in dem Bildersaale an einem nach Norden zu
+belegenen Fenster mir schon den Platz erwaehlet hatte.  Zwar kam
+Bas' Ursel, die wegen ihrer Gicht die Treppen nicht hinauf konnte,
+und meinete, es moege am besten in ihrer Stuben oder im Gemach daran
+geschehen, so sei es uns beiderseits zur Unterhaltung; ich aber,
+solcher Gevatterschaft gar gern entrathend, hatte an der dortigen
+Westsonne einen rechten Malergrund dagegen, und konnte alles Reden
+ihr nicht nuetzen.  Vielmehr war ich am andern Morgen schon dabei,
+die Nebenfenster des Saales zu verhaengen und die hohe Staffelei zu
+stellen, so ich mit Huelfe Dieterichs mir selber in den letzten
+Tagen angefertigt.
+
+
+Als ich eben den Blendrahmen mit der Leinewand darauf gelegt,
+oeffnete sich die Thuer aus Herrn Gerhardus' Zimmer, und Katharina
+trat herein.  Aus was fuer Ursach, waere schwer zu sagen; aber ich
+empfand, dass wir uns diessmal fast erschrocken gegenueber standen;
+aus der schwarzen Kleidung, die sie nicht abgeleget, schaute das
+junge Antlitz in gar suesser Verwirrung zu mir auf.
+
+"Katharina", sagte ich, "Ihr wisset, ich soll Euer Bildniss malen;
+duldet Ihr's auch gern?"
+
+Da zog ein Schleier ueber ihre braunen Augensterne, und sie sagte
+leise: "Warum doch fragt Ihr so, Johannes?"
+
+Wie ein Thau des Glueckes sank es in mein Herz.  "Nein, nein,
+Katharina!  Aber sagt, was ist, worin kann ich Euch dienen?--Setzet
+Euch, damit wir nicht so muessig ueberrascht werden, und dann sprecht!
+Oder vielmehr, ich weiss es schon.  Ihr braucht mir's nicht zu
+sagen!"
+
+Aber sie setzte sich nicht, sie trat zu mir heran.  "Denket Ihr
+noch, Johannes, wie Ihr einst den Buhz mit Euerem Bogen
+niederschosset?  Das thut diessmal nicht noth, obschon er wieder ob
+dem Neste lauert; denn ich bin kein Voeglein, das sich von ihm
+zerreissen laesst.  Aber, Johannes--ich habe einen Blutsfreund--, hilf
+mir wider den!"
+
+"Ihr meinet Eueren Bruder, Katharina!"
+
+--"Ich habe keinen andern.--Dem Manne, den ich hasse, will er mich
+zum Weibe geben!  Waehrend unseres Vaters langem Siechbett habe ich
+den schaendlichen Kampf mit ihm gestritten, und erst an seinem Sarg
+hab ich's ihm abgetrotzt, dass ich in Ruhe um den Vater trauern mag;
+aber ich weiss, auch das wird er nicht halten."
+
+Ich gedachte eines Stiftsfraeuleins zu Preetz, Herrn Gerhardus'
+einzigen Geschwisters, und meinete, ob die nicht um Schutz und
+Zuflucht anzugehen sei.
+
+Katharina nickte.  "Wollt Ihr mein Bote sein, Johannes?--
+Geschrieben habe ich ihr schon, aber in Wulfs Haende kam die Antwort,
+und auch erfahren habe ich sie nicht, nur die ausbrechende Wuth
+meines Bruders, die selbst das Ohr des Sterbenden erfuellet haette,
+wenn es noch offen gewesen waere fuer den Schall der Welt; aber der
+gnaedige Gott hatte das geliebte Haupt schon mit dem letzten
+Erdenschlummer zugedecket."
+
+Katharina hatte sich nun doch auf meine Bitte mir genueber gesetzet,
+und ich begann die Umrisse auf die Leinewand zu zeichnen.  So kamen
+wir zu ruhiger Berathung; und da ich, wenn die Arbeit weiter
+vorgeschritten, nach Hamburg musste, um bei dem Holzschnitzer einen
+Rahmen zu bestellen, so stelleten wir fest, dass ich alsdann den
+Umweg ueber Preetz naehme und also meine Botschaft ausrichtete.
+Zunaechst jedoch sei emsig an dem Werk zu foerdern.
+
+Es ist gar oft ein seltsam Widerspiel im Menschenherzen.  Der
+Junker musste es schon wissen, dass ich zu seiner Schwester stand;
+gleichwohl--hiess nun sein Stolz ihn, mich gering zu schaetzen, oder
+glaubte er mit seiner ersten Drohung mich genug geschrecket--, was
+ich besorget, traf nicht ein; Katharina und ich waren am ersten wie
+an den andern Tagen von ihm ungestoeret.  Einmal zwar trat er ein
+und schalt mit Katharinen wegen ihrer Trauerkleidung, warf aber
+dann die Thuer hinter sich, und wir hoerten ihn bald auf dem Hofe ein
+Reiterstuecklein pfeifen.  Ein ander Mal noch hatte er den von der
+Risch an seiner Seite.  Da Katharina eine heftige Bewegung machte,
+bat ich sie, auf ihrem Platz zu bleiben, und malete ruhig weiter.
+Seit dem Begraebnisstage, wo ich einen fremden Gruss mit ihm
+getauschet, hatte der Junker Kurt sich auf dem Hofe nicht gezeigt;
+nun trat er naeher und beschauete das Bild und redete gar schoene
+Worte, meinete aber auch, weshalb das Fraeulein sich so sehr vermummt
+und nicht vielmehr ihr seidig Haar in freien Locken auf den Nacken
+habe wallen lassen; wie es ein Engellaendischer Poet so trefflich
+ausgedruecket, "rueckwaerts den Winden leichte Kuesse werfend."
+Katharina aber, die bisher geschwiegen, wies auf Herrn Gerhardus'
+Bild und sagte: "Ihr wisset wohl nicht mehr, dass das mein Vater
+war!"
+
+Was Junker Kurt hierauf entgegnete, ist mir nicht mehr erinnerlich;
+meine Person aber schien ihm ganz nicht gegenwaertig oder doch nur
+gleich einer Maschine, wodurch ein Bild sich auf die Leinewand
+malete.  Von letzterem begann er ueber meinen Kopf hin diess und
+jenes noch zu reden; da aber Katharina nicht mehr Antwort gab, so
+nahm er alsbald seinen Urlaub, der Dame angenehme Kurzweil
+wuenschend.
+
+Bei diesem Wort jedennoch sah ich aus seinen Augen einen raschen
+Blick gleich einer Messerspitze nach mir zuecken.
+
+--Wir hatten nun weitere Stoerniss nicht zu leiden, und mit der
+Jahreszeit rueckte auch die Arbeit vor.  Schon stand auf den
+Waldkoppeln draussen der Roggen in silbergrauem Blust, und unten im
+Garten brachen schon die Rosen auf; wir beide aber--ich mag es heut
+wohl niederschreiben--, wir haetten itzund die Zeit gern stille
+stehen lassen; an meine Botenreise wagten, auch nur mit einem
+Woertlein, weder sie noch ich zu ruehren.  Was wir gesprochen, wuesste
+ich kaum zu sagen; nur dass ich von meinem Leben in der Fremde ihr
+erzaehlte und wie ich immer heim gedacht; auch dass ihr gueldner
+Pfennig mich in Krankheit einst vor Noth bewahrt, wie sie in ihrem
+Kinderherzen es damals fuergesorget, und wie ich spaeter dann
+gestrebt und mich geaengstet, bis ich das Kleinod aus dem Leihhaus
+mir zurueckgewonnen hatte.  Dann laechelte sie gluecklich; und dabei
+bluehete aus dem dunkeln Grund des Bildes immer suesser das holde
+Antlitz auf, mir schien's, als sei es kaum mein eigenes Werk.--
+Mitunter war's, als schaue mich etwas heiss aus ihren Augen an; doch
+wollte ich es dann fassen, so floh es scheu zurueck; und dennoch
+floss es durch den Pinsel heimlich auf die Leinewand, so dass mir
+selber kaum bewusst ein sinnberueckend Bild entstand, wie nie zuvor
+und nie nachher ein solches aus meiner Hand gegangen ist.--Und
+endlich war's doch an der Zeit und festgesetzet, am andern Morgen
+sollte ich meine Reise antreten.
+
+Als Katharina mir den Brief an ihre Base eingehaendigt, sass sie noch
+einmal mir gegenueber.  Es wurde heute mit Worten nicht gespielet;
+wir sprachen ernst und sorgenvoll mitsammen; indessen setzete ich
+noch hie und da den Pinsel an, mitunter meine Blicke auf die
+schweigende Gesellschaft an den Waenden werfend, deren ich in
+Katharinens Gegenwart sonst kaum gedacht hatte.
+
+Da, unter dem Malen, fiel mein Auge auch auf jenes alte
+Frauenbildniss, das mir zur Seite hing und aus den weissen
+Schleiertuechern die stechend grauen Augen auf mich gerichtet hielt.
+Mich froestelte, ich haette nahezu den Stuhl verruecket.
+
+Aber Katharinens suesse Stimme drang mir in das Ohr: "Ihr seid ja
+fast erbleichet; was flog Euch uebers Herz, Johannes?"
+
+Ich zeigte mit dem Pinsel auf das Bild.  "Kennet Ihr die,
+Katharina?  Diese Augen haben hier all die Tage auf uns hingesehen."
+
+"Die da?--Vor der hab ich schon als Kind eine Furcht gehabt, und
+gar bei Tage bin ich oft wie blind hier durchgelaufen.  Es ist die
+Gemahlin eines frueheren Gerhardus; vor weit ueber hundert Jahren hat
+sie hier gehauset."
+
+"Sie gleicht nicht Euerer schoenen Mutter", entgegnete ich; "dies
+Antlitz hat wohl vermocht, einer jeden Bitte nein zu sagen."
+
+Katharina sah gar ernst zu mir herueber.  "So heisst's auch", sagte
+sie, "sie soll ihr einzig Kind verfluchet haben; am andern Morgen
+aber hat man das blasse Fraeulein aus einem Gartenteich gezogen, der
+nachmals zugedaemmet ist.  Hinter den Hecken, dem Walde zu, soll es
+gewesen sein."
+
+"Ich weiss, Katharina; es wachsen heut noch Schachtelhalm und Binsen
+aus dem Boden."
+
+"Wisset Ihr denn auch, Johannes, dass eine unseres Geschlechtes sich
+noch immer zeigen soll, sobald dem Hause Unheil droht?  Man sieht
+sie erst hier an den Fenstern gleiten, dann draussen in dem
+Gartensumpf verschwinden."
+
+Ohnwillens wandten meine Augen sich wieder auf die unbeweglichen
+des Bildes.  "Und weshalb", fragte ich, "verfluchete sie ihr Kind?"
+
+"Weshalb?"--Katharina zoegerte ein Weilchen und blickte mich fast
+verwirret an mit allem ihrem Liebreiz.  "Ich glaub, sie wollte den
+Vetter ihrer Mutter nicht zum Ehgemahl."
+
+--"War es denn ein gar so uebler Mann?"
+
+Ein Blick fast wie ein Flehen flog zu mir herueber, und tiefes
+Rosenroth bedeckte ihr Antlitz.  "Ich weiss nicht", sagte sie
+beklommen; und leiser, dass ich's kaum vernehmen mochte, setzte sie
+hinzu: "Es heisst, sie hab einen andern lieb gehabt; der war nicht
+ihres Standes."
+
+Ich hatte den Pinsel sinken lassen; denn sie sass vor mir mit
+gesenkten Blicken; wenn nicht die kleine Hand sich leis aus ihrem
+Schosse auf ihr Herz geleget, so waere sie selber wie ein leblos Bild
+gewesen.
+
+So hold es war, ich sprach doch endlich: "So kann ich ja nicht
+malen; wollet Ihr mich nicht ansehen, Katharina?"
+
+Und als sie nun die Wimpern von den braunen Augensternen hob, da
+war kein Hehlens mehr; heiss und offen ging der Strahl zu meinem
+Herzen.  "Katharina!" Ich war aufgesprungen.  "Haette jene Frau auch
+dich verflucht?"
+
+Sie athmete tief auf "Auch mich, Johannes!"--Da lag ihr Haupt an
+meiner Brust, und fest umschlossen standen wir vor dem Bild der
+Ahnfrau, die kalt und feindlich auf uns niederschauete.
+
+Aber Katharina zog mich leise fort.  "Lass uns nicht trotzen, mein
+Johannes!" sagte sie.--Mit Selbigem hoerte ich im Treppenhause ein
+Geraeusch, und war es, als wenn etwas mit dreien Beinen sich
+muehselig die Stiegen heraufarbeitete.  Als Katharina und ich uns
+deshalb wieder an unsern Platz gesetzet und ich Pinsel und Palette
+zur Hand genommen hatte, oeffnete sich die Thuer, und Bas' Ursel, die
+wir wohl zuletzt erwartet haetten, kam an ihrem Stock hereingehustet.
+"Ich hoere", sagte sie, "Er will nach Hamburg, um den Rahmen zu
+besorgen; da muss ich mir nachgerade doch Sein Werk besehen!"
+
+Es ist wohl maenniglich bekannt, dass alte Jungfrauen in Liebessachen
+die allerfeinsten Sinne haben und so der jungen Welt gar oft
+Bedrang und Truebsal bringen.  Als Bas' Ursel auf Katharinens Bild,
+das sie bislang noch nicht gesehen, kaum einen Blick geworfen hatte,
+zuckte sie gar stolz empor mit ihrem runzeligen Angesicht und frug
+mich allsogleich: "Hat denn das Fraeulein Ihn so angesehen, als wie
+sie da im Bilde sitzet?"
+
+Ich entgegnete, es sei ja eben die Kunst der edlen Malerei, nicht
+bloss die Abschrift des Gesichts zu geben.  Aber schon musste an
+unsern Augen oder Wangen ihr Sonderliches aufgefallen sein, denn
+ihre Blicke gingen spaehend hin und wider.  "Die Arbeit ist wohl
+bald am Ende?" sagte sie dann mit ihrer hoechsten Stimme.  "Deine
+Augen haben kranken Glanz, Katharina; das lange Sitzen hat dir
+nicht wohl gedienet."
+
+Ich entgegnete, das Bild sei bald vollendet, nur an dem Gewande sei
+noch hie und da zu schaffen.
+
+"Nun, da braucht Er wohl des Fraeuleins Gegenwart nicht mehr dazu!--
+Komm, Katharina, dein Arm ist besser als der dumme Stecken hier!"
+
+Und so musst ich von der duerren Alten meines Herzens holdselig
+Kleinod mir entfuehren sehen, da ich es eben mir gewonnen glaubte;
+kaum dass die braunen Augen mir noch einen stummen Abschied senden
+konnten.
+
+Am andern Morgen, am Montage vor Johannis, trat ich meine Reise an.
+Auf einem Gaule, den Dieterich mir besorget, trabte ich in der
+Fruehe aus dem Thorweg; als ich durch die Tannen ritt, brach einer
+von des Junkers Hunden herfuer und fuhr meinem Thiere nach den
+Flechsen, wannschon selbiges aus ihrem eigenen Stalle war; aber der
+oben im Sattel sass, schien ihnen allzeit noch verdaechtig.  Kamen
+gleichwohl ohne Blessur davon, ich und der Gaul, und langeten
+abends bei guter Zeit in Hamburg an.
+
+Am andern Vormittage machte ich mich auf und befand auch bald einen
+Schnitzer, so der Bilderleisten viele fertig hatte, dass man sie nur
+zusammenzustellen und in den Ecken die Zierathen daraufzuthun
+brauchte.  Wurden also handelseinig, und versprach der Meister, mir
+das alles wohl verpacket nachzusenden.
+
+Nun war zwar in der beruehmten Stadt vor einen Neubegierigen gar
+vieles zu beschauen, so in der Schiffergesellschaft des Seeraeubers
+Stoertebeker silberner Becher, welcher das zweite Wahrzeichen der
+Stadt genennet wird, und ohne den gesehen zu haben, wie es in einem
+Buche heisser, niemand sagen duerfe, dass er in Hamburg sei gewesen;
+sodann auch der Wunderfisch mit eines Adlers richtigen Krallen und
+Fluchten, so eben um diese Zeit in der Elbe war gefangen worden und
+den die Hamburger, wie ich nachmalen hoerete, auf einen Seesieg
+wider die tuerkischen Piraten deuteten; allein, obschon ein rechter
+Reisender solcherlei Seltsamkeiten nicht vorbeigehen soll, so war
+doch mein Gemuethe, beides, von Sorge und von Herzenssehnen, allzu
+sehr beschweret.  Derohalben, nachdem ich bei einem Kaufherrn noch
+meinen Wechsel umgesetzet und in meiner Nachtherbergen Richtigkeit
+getroffen hatte, bestieg ich um Mittage wieder meinen Gaul und
+hatte allsobald allen Laermen des grossen Hamburg hinter mir.
+
+Am Nachmittage danach langete ich in Preetz an, meldete mich im
+Stifte bei der hochwuerdigen Dame und wurde auch alsbald vorgelassen.
+Ich erkannte in ihrer stattlichen Person allsogleich die
+Schwester meines theueren seligen Herrn Gerhardus; nur, wie es sich
+an unverehelichten Frauen oftmals zeiget, waren die Zuege des
+Antlitzes gleichwohl strenger als die des Bruders.  Ich hatte,
+selbst nachdem ich Katharinens Schreiben ueberreichet, ein lang und
+hart Examen zu bestehen; dann aber verhiess sie ihren Beistand und
+setzete sich zu ihrem Schreibgeraethe, indess die Magd mich in ein
+ander Zimmer fuehren musste, allwo man mich gar wohl bewirthete.
+
+Es war schon spaet am Nachmittage, da ich wieder fortritt; doch
+rechnete ich, obschon mein Gaul die vielen Meilen hinter uns
+bereits verspuerete, noch gegen Mitternacht beim alten Dieterich
+anzuklopfen.--Das Schreiben, das die alte Dame mir fuer Katharinen
+mitgegeben, trug ich wohl verwahret in einem Ledertaeschlein unterm
+Wamse auf der Brust.  So ritt ich fuerbass in die aufsteigende
+Daemmerung hinein; gar bald an sie, die eine, nur gedenkend und
+immer wieder mein Herz mit neuen lieblichen Gedanken schreckend.
+
+Es war aber eine lauwarme Juninacht; von den dunkelen Feldern erhub
+sich der Ruch der Wiesenblumen, aus den Knicken duftete das
+Geissblatt; in Luft und Laub schwebete ungesehen das kleine
+Nachtgeziefer oder flog auch wohl surrend meinem schnaubenden Gaule
+an die Nuestern; droben aber an der blauschwarzen ungeheueren
+Himmelsglocke ueber mir strahlte im Suedost das Sternenbild des
+Schwanes in seiner unberuehrten Herrlichkeit.
+
+Da ich endlich wieder auf Herrn Gerhardus' Grund und Boden war,
+resolvirte ich mich sofort, noch nach dem Dorfe hinueberzureiten,
+welches seitwaerts von der Fahrstrassen hinterm Wald belegen ist.
+Denn ich gedachte, dass der Krueger Hans Ottsen einen passlichen
+Handwagen habe; mit dem solle er morgen einen Boten in die Stadt
+schicken, um die Hamburger Kiste fuer mich abzuholen; ich aber
+wollte nur an sein Kammerfenster klopfen, um ihm solches zu
+bestellen.
+
+Also ritte ich am Waldesrande hin, die Augen fast verwirret von den
+gruenlichen Johannisfuenkchen, die mit ihren spielerischen Lichtern
+mich hier umflogen.  Und schon ragete gross und finster die Kirche
+vor mir auf, in deren Mauern Herr Gerhardus bei den Seinen ruhte;
+ich hoerte, wie im Thurm soeben der Hammer ausholete, und von
+der Glocken scholl die Mitternacht ins Dorf hinunter.  'Aber
+sie schlafen alle', sprach ich bei mir selber, 'die Todten
+in der Kirchen oder unter dem hohen Sternenhimmel hieneben auf
+dem Kirchhof, die Lebenden noch unter den niedern Daechern, die
+dort stumm und dunkel vor dir liegen.' So ritt ich weiter.  Als
+ich jedoch an den Teich kam, von wo aus man Hans Ottsens Krug
+gewahren kann, sahe ich von dorten einen dunstigen Lichtschein auf
+den Weg hinausbrechen, und Fiedeln und Klarinetten schalleten mir
+entgegen.
+
+Da ich gleichwohl mit dem Wirthe reden wollte, so ritt ich herzu
+und brachte meinen Gaul im Stalle unter.  Als ich danach auf die
+Tenne trat, war es gedrang voll von Menschen, Maennern und Weibern,
+und ein Geschrei und wuest Getreibe, wie ich solches, auch
+beim Tanz, in frueheren Jahren nicht vermerket.  Der Schein der
+Unschlittkerzen, so unter einem Balken auf einem Kreuzholz
+schwebten, hob manch baertig und verhauen Antlitz aus dem Dunkel,
+dem man lieber nicht allein im Wald begegnet waere.--Aber nicht nur
+Strolche und Bauerbursche schienen hier sich zu vergnuegen; bei den
+Musikanten, die drueben vor der Doens auf ihren Tonnen sassen, stund
+der Junker von der Risch; er hatte seinen Mantel ueber dem einen Arm,
+an dem andern hing ihm eine derbe Dirne.  Aber das Stuecklein
+schien ihm nicht zu gefallen; denn er riss dem Fiedler seine Geigen
+aus den Haenden, warf eine Handvoll Muenzen auf seine Tonne und
+verlangte, dass sie ihm den neumodischen Zweitritt aufspielen
+sollten.  Als dann die Musikanten ihm gar rasch gehorchten und wie
+toll die neue Weise klingen liessen, schrie er nach Platz und
+schwang sich in den dichten Haufen; und die Bauerburschen glotzten
+drauf hin, wie ihm die Dirne im Arme lag, gleich einer Tauben vor
+dem Geier.
+
+Ich aber wandte mich ab und trat hinten in die Stube, um mit dem
+Wirth zu reden.  Da sass der Junker Wulf beim Kruge Wein und hatte
+den alten Ottsen neben sich, welchen er mit allerhand Spaessen in
+Bedraengniss brachte; so drohete er, ihm seinen Zins zu steigern, und
+schuettelte sich vor Lachen, wenn der geaengstete Mann gar jaemmerlich
+um Gnad und Nachsicht supplicirte.--Da er mich gewahr worden, liess
+er nicht ab, bis ich selbdritt mich an den Tisch gesetzet; frug
+nach meiner Reise, und ob ich in Hamburg mich auch wohl vergnueget;
+ich aber antwortete nur, ich kaeme eben von dort zurueck, und werde
+der Rahmen in Kuerze in der Stadt eintreffen, von wo Hans Ottsen ihn
+mit seinem Handwaeglein leichtlich moege holen lassen.
+
+Indess ich mit letzterem solches nun verhandelte, kam auch der von
+der Risch hereingestuermet und schrie dem Wirthe zu, ihm einen
+kuehlen Trunk zu schaffen.  Der Junker Wulf aber, dem bereits die
+Zunge schwer im Munde wuehlete, fasste ihn am Arm und riss ihn auf den
+leeren Stuhl hernieder.
+
+"Nun, Kurt!" rief er.  "Bist du noch nicht satt von deinen Dirnen!
+Was soll die Katharina dazu sagen?  Komm, machen wir alamode ein
+ehrbar hazard mitsammen!" Dabei hatte er ein Kartenspiel unterm
+Wams hervorgezogen.  "Allons donc!--Dix et dame!--Dame et valet!"
+
+Ich stand noch und sah dem Spiele zu, so dermalen eben Mode worden;
+nur wuenschend, dass die Nacht vergehen und der Morgen kommen moechte.--
+Der Trunkene schien aber dieses Mal des Nuechternen Uebermann; dem
+von der Risch schlug nach einander jede Karte fehl.
+
+"Troeste dich, Kurt!" sagte der Junker Wulf, indess er schmunzelnd
+die Speciesthaler auf einen Haufen scharrte:
+
+"Glueck in der Lieb
+Und Glueck im Spiel,
+Bedenk, fuer einen
+Ist's zu viel!
+
+"Lass den Maler dir hier von deiner schoenen Braut erzaehlen!  Der weiss
+sie auswendig; da kriegst du's nach der Kunst zu wissen."
+
+Dem andern, wie mir am besten kund war, mochte aber noch nicht viel
+von Liebesglueck bewusst sein; denn er schlug fluchend auf den Tisch
+und sah gar grimmig auf mich her.
+
+"Ei, du bist eifersuechtig, Kurt!" sagte der Junker Wulf vergnueglich,
+als ob er jedes Wort auf seiner schweren Zunge schmeckete; "aber
+getroeste dich, der Rahmen ist schon fertig zu dem Bilde; dein
+Freund, der Maler, kommt eben erst von Hamburg."
+
+Bei diesem Worte sah ich den von der Risch aufzucken gleich einem
+Spuerhund bei der Witterung.  "Von Hamburg heut?--So muss er Fausti
+Mantel sich bedienet haben; denn mein Reitknecht sah ihn heut zu
+Mittag noch in Preetz!  Im Stift, bei deiner Base ist er auf Besuch
+gewesen."
+
+Meine Hand fuhr unversehens nach der Brust, wo ich das Taeschlein
+mit dem Brief verwahret hatte; denn die trunkenen Augen des Junkers
+Wulf lagen auf mir; und war mir's nicht anders, als saehe er damit
+mein ganz Geheimniss offen vor sich liegen.  Es waehrete auch nicht
+lange, so flogen die Karten klatschend auf den Tisch.  "Oho!"
+schrie er.  "Im Stift, bei meiner Base!  Du treibst wohl gar
+doppelt Handwerk, Bursch!  Wer hat dich auf den Botengang
+geschickt?"
+
+"Ihr nicht, Junker Wulf!" entgegnet ich; "und das muss Euch genug
+sein!"--Ich wollt nach meinem Degen greifen, aber er war nicht da;
+fiel mir auch bei nun, dass ich ihn an den Sattelknopf gehaenget, da
+ich vorhin den Gaul zu Stalle brachte.
+
+Und schon schrie der Junker wieder zu seinem juengeren Kumpan: "Reiss
+ihm das Wams auf, Kurt!  Es gilt den blanken Haufen hier; du
+findest eine saubere Briefschaft, die du ungern moechtst bestellet
+sehen!"
+
+Im selbigen Augenblick fuehlte ich auch schon die Haende des von der
+Risch an meinem Leibe, und ein wuethend Ringen zwischen uns begann.
+Ich fuehlte wohl, dass ich so leicht, wie in der Bubenzeit, ihm nicht
+mehr ueber wuerde; da aber fuegete es sich zu meinem Gluecke, dass ich
+ihm beide Handgelenke packte und er also wie gefesselt vor mir
+stund.  Es hatte keiner von uns ein Wort dabei verlauten lassen;
+als wir uns aber itzund in die Augen sahen, da wusste jeder wohl,
+dass er's mit seinem Todfeind vor sich habe.
+
+Solches schien auch der Junker Wulf zu meinen; er strebte von
+seinem Stuhl empor, als wolle er dem von der Risch zu Huelfe kommen;
+mochte aber zu viel des Weins genossen haben, denn er taumelte auf
+seinen Platz zurueck.  Da schrie er, so laut seine lallende Zunge es
+noch vermochte: "He, Tartar!  Tuerk!  Wo steckt ihr!  Tartar, Tuerk!"
+Und ich wusste nun, dass die zwo grimmen Koeter, so ich vorhin auf der
+Tenne an dem Ausschank hatte lungern sehen, mir an die nackte Kehle
+springen sollten.  Schon hoerete ich sie durch das Getuemmel der
+Tanzenden daherschnaufen, da riss ich mit einem Rucke jaehlings
+meinen Feind zu Boden, sprang dann durch eine Seitenthuer aus dem
+Zimmer, die ich schmetternd hinter mir zuwarf, und gewann also das
+Freie.
+
+Und um mich her war ploetzlich wieder die stille Nacht und Mond- und
+Sternenschimmer.  In den Stall zu meinem Gaul wagt ich nicht erst
+zu gehen, sondern sprang flugs ueber einen Wall und lief ueber das
+Feld dem Walde zu.  Da ich ihn bald erreichet, suchte ich die
+Richtung nach dem Herrenhofe einzuhalten; denn es zieht sich die
+Holzung bis hart zur Gartenmauer.  Zwar war die Helle der
+Himmelslichter hier durch das Laub der Baeume ausgeschlossen, aber
+meine Augen wurden der Dunkelheit gar bald gewohnt, und da ich das
+Taeschlein sicher unter meinem Wamse fuehlte, so tappte ich ruestig
+vorwaerts; denn ich gedachte den Rest der Nacht noch einmal in
+meiner Kammer auszuruhen, dann aber mit dem alten Dieterich zu
+berathen, was allfort geschehen solle; massen ich wohl sahe, dass
+meines Bleibens hier nicht fuerder sei.
+
+Bisweilen stund ich auch und horchte; aber ich mochte bei meinem
+Abgang wohl die Thuer ins Schloss geworfen und so einen guten
+Vorsprung mir gewonnen haben: von den Hunden war kein Laut
+vernehmbar.  Wohl aber, da ich eben aus dem Schatten auf eine vom
+Mond erhellete Lichtung trat, hoerete ich nicht gar fern die
+Nachtigallen schlagen; und von wo ich ihren Schall hoerte, dahin
+richtete ich meine Schritte, denn mir war wohl bewusst, sie hatten
+hier herum nur in den Hecken des Herrengartens ihre Nester;
+erkannte nun auch, wo ich mich befand, und dass ich bis zum Hofe
+nicht gar weit mehr hatte.
+
+Ging also dem lieblichen Schallen nach, das immer heller vor mir
+aus dem Dunkel drang.  Da ploetzlich schlug was anderes an mein Ohr,
+das jaehlings naeher kam und mir das Blut erstarren machte.  Nicht
+zweifeln konnt ich mehr, die Hunde brachen durch das Unterholz; sie
+hielten fest auf meiner Spur, und schon hoerete ich deutlich hinter
+mir ihr Schnaufen und ihre gewaltigen Saetze in dem duerren Laub des
+Waldbodens.  Aber Gott gab mir seinen gnaedigen Schutz; aus dem
+Schatten der Baeume stuerzte ich gegen die Gartenmauer, und an eines
+Fliederbaums Geaeste schwang ich mich hinueber.  Da sangen hier im
+Garten immer noch die Nachtigallen; die Buchenhecken warfen tiefe
+Schatten.  In solcher Mondnacht war ich einst vor meiner Ausfahrt
+in die Welt mit Herrn Gerhardus hier gewandelt.  "Sieh dir's noch
+einmal an, Johannes!" hatte dermalen er gesprochen; "es koennt
+geschehen, dass du bei deiner Heimkehr mich nicht daheim mehr
+faendest, und dass alsdann ein Willkomm nicht fuer dich am Thor
+geschrieben stuende;--ich aber moecht nicht, dass du diese Staette hier
+vergaessest."
+
+Das flog mir itzund durch den Sinn, und ich musste bitter lachen;
+denn nun war ich hier als ein gehetzet Wild; und schon hoerete ich
+die Hunde des Junker Wulf gar grimmig draussen an der Gartenmauer
+rennen.  Selbige aber war, wie ich noch tags zuvor gesehen, nicht
+ueberall so hoch, dass nicht das wuethige Gethier hinueber konnte; und
+rings im Garten war kein Baum, nichts als die dichten Hecken und
+drueben gegen das Haus die Blumenbeete des seligen Herrn.  Da, als
+eben das Bellen der Hunde wie ein Triumphgeheule innerhalb der
+Gartenmauer scholl, ersahe ich in meiner Noth den alten Epheubaum,
+der sich mit starkem Stamme an dem Thurm hinaufreckt; und da dann
+die Hunde aus den Hecken auf den mondhellen Platz hinaus raseten,
+war ich schon hoch genug, dass sie mit ihrem Anspringen mich nicht
+mehr erreichen konnten; nur meinen Mantel, so von der Schulter
+geglitten, hatten sie mit ihren Zaehnen mir herabgerissen.
+
+Ich aber, also angeklammert und fuerchtend, es werde das nach oben
+schwaechere Geaeste mich auf die Dauer nicht ertragen, blickte
+suchend um mich, ob ich nicht irgend besseren Halt gewinnen moechte;
+aber es war nichts zu sehen als die dunklen Epheublaetter um mich
+her.--Da, in solcher Noth, hoerete ich ober mir ein Fenster oeffnen,
+und eine Stimme scholl zu mir herab--moechte ich sie wieder hoeren,
+wenn du, mein Gott, mich bald nun rufen laesst aus diesem Erdenthal!--
+"Johannes!" rief sie; leis, doch deutlich hoerete ich meinen Namen,
+und ich kletterte hoeher an dem immer schwaecheren Gezweige, indess
+die schlafenden Voegel um mich auffuhren und die Hunde von unten ein
+Geheul heraufstiessen.--"Katharina!  Bist du es wirklich, Katharina?"
+
+Aber schon kam ein zitternd Haendlein zu mir herab und zog mich
+gegen das offene Fenster; und ich sah in ihre Augen, die voll
+Entsetzen in die Tiefe starrten.
+
+"Komm!" sagte sie.  "Sie werden dich zerreissen." Da schwang ich
+mich in ihre Kammer.--Doch als ich drinnen war, liess mich das
+Haendlein los, und Katharina sank auf einen Sessel, so am Fenster
+stund, und hatte ihre Augen dicht geschlossen.  Die dicken Flechten
+ihres Haares lagen ueber dem weissen Nachtgewand bis in den Schoss
+hinab; der Mond, der draussen die Gartenhecken ueberstiegen hatte,
+schien voll herein und zeigete mir alles.  Ich stund wie fest
+gezaubert vor ihr; so lieblich fremde und doch so ganz mein eigen
+schien sie mir; nur meine Augen tranken sich satt an all der
+Schoenheit.  Erst als ein Seufzen ihre Brust erhob, sprach ich zu
+ihr: "Katharina, liebe Katharina, traeumet Ihr denn?"
+
+Da flog ein schmerzlich Laecheln ueber ihr Gesicht: "Ich glaub wohl
+fast, Johannes!--Das Leben ist so hart; der Traum ist suess!"
+
+Als aber von unten aus dem Garten das Geheul aufs Neu heraufkam,
+fuhr sie erschreckt empor.  "Die Hunde, Johannes!" rief sie.  "Was
+ist das mit den Hunden?"
+
+"Katharina", sagte ich, "wenn ich Euch dienen soll, so glaub ich,
+es muss bald geschehen; denn es fehlt viel, dass ich noch einmal
+durch die Thuer in dieses Haus gelangen sollte." Dabei hatte ich den
+Brief aus meinem Taeschlein hervorgezogen und erzaehlete auch, wie
+ich im Kruge drunten mit den Junkern sei in Streit gerathen.
+
+Sie hielt das Schreiben in den hellen Mondenschein und las; dann
+schaute sie mich voll und herzlich an, und wir beredeten, wie wir
+uns morgen in dem Tannenwalde treffen wollten; denn Katharina
+sollte noch zuvor erkunden, auf welchen Tag des Junker Wulfen
+Abreise zum Kieler Johannismarkte festgesetzet sei.
+
+"Und nun, Katharina", sprach ich, "habt Ihr nicht etwas, das einer
+Waffe gleich sieht, ein eisern Ellenmass oder so dergleichen, damit
+ich der beiden Thiere drunten mich erwehren koenne?"
+
+Sie aber schrak jaeh wie aus einem Traum empor.  "Was sprichst du,
+Johannes!" rief sie; und ihre Haende, so bislang in ihrem Schoss
+geruhet, griffen nach den meinen.  "Nein, nicht fort, nicht fort!
+Da drunten ist der Tod; und gehst du, so ist auch hier der Tod!"
+
+Da war ich vor ihr hingeknieet und lag an ihrer jungen Brust, und
+wir umfingen uns in grosser Herzensnoth.  "Ach, Kaethe", sprach ich,
+"was vermag die arme Liebe denn!  Wenn auch dein Bruder Wulf nicht
+waere; ich bin kein Edelmann und darf nicht um dich werben."
+
+Sehr suess und sorglich schauete sie mich an; dann aber kam es wie
+Schelmerei aus ihrem Munde: "Kein Edelmann, Johannes?--Ich daechte,
+du seiest auch das!  Aber--ach nein!  Dein Vater war nur der Freund
+des meinen--das gilt der Welt wohl nicht!"
+
+"Nein, Kaethe; nicht das, und sicherlich nicht hier", entgegnete ich
+und umfasste fester ihren jungfraeulichen Leib; "aber drueben in
+Holland, dort gilt ein tuechtiger Maler wohl einen deutschen
+Edelmann; die Schwelle von Mynherr van Dycks Palaste zu Amsterdam
+ist wohl dem Hoechsten ehrenvoll zu ueberschreiten.  Man hat mich
+drueben halten wollen, mein Meister van der Helst und andre!  Wenn
+ich dorthin zurueckginge, ein Jahr noch oder zwei; dann--wir kommen
+dann schon von hier fort; bleib mir nur feste gegen euere wuesten
+Junker!"
+
+Katharinens weisse Haende strichen ueber meine Locken; sie herzete
+mich und sagte leise: "Da ich in meine Kammer dich gelassen, so
+werd ich doch dein Weib auch werden muessen."
+
+--Ihr ahnete wohl nicht, welch einen Feuerstrom dies Wort in meine
+Adern goss, darin ohnedies das Blut in heissen Pulsen ging.--Von
+dreien furchtbaren Daemonen, von Zorn und Todesangst und Liebe ein
+verfolgter Mann, lag nun mein Haupt in des viel geliebten Weibes
+Schoss.
+
+Da schrillte ein geller Pfiff, die Hunde drunten wurden jaehlings
+stille, und da es noch einmal gellte, hoerete ich sie wie toll und
+wild davon rennen.
+
+Vom Hofe her wurden Schritte laut; wir horchten auf, dass uns der
+Athem stille stund.  Bald aber wurde dorten eine Thuer erst auf-,
+dann zugeschlagen und dann ein Riegel vorgeschoben.  "Das ist Wulf",
+sagte Katharina leise; "er hat die beiden Hunde in den Stall
+gesperrt."--Bald hoerten wir auch unter uns die Thuer des Hausflurs
+gehen, den Schluessel drehen und danach Schritte in dem untern
+Corridor, die sich verloren, wo der Junker seine Kammer hatte.
+Dann wurde alles still.
+
+Es war nun endlich sicher, ganz sicher; aber mit unserem Plaudern
+war es mit einem Male schier zu Ende.  Katharina hatte den Kopf
+zurueckgelehnt; nur unser beider Herzen hoerete ich klopfen.--"Soll
+ich nun gehen, Katharina?" sprach ich endlich.
+
+Aber die jungen Arme zogen mich stumm zu ihrem Mund empor; und ich
+ging nicht.
+
+Kein Laut war mehr, als aus des Gartens Tiefe das Schlagen der
+Nachtigallen und von fern das Rauschen des Waesserleins, das hinten
+um die Hecken fliesst.--
+
+
+Wenn, wie es in den Liedern heisst, mitunter noch in Naechten die
+schoene heidnische Frau Venus aufersteht und umgeht, um die armen
+Menschenherzen zu verwirren, so war es dazumalen eine solche Nacht.
+Der Mondschein war am Himmel ausgethan, ein schwueler Ruch von
+Blumen hauchte durch das Fenster, und dorten ueberm Walde spielete
+die Nacht in stummen Blitzen.--O Hueter, Hueter, war dein Ruf so fern?
+
+--Wohl weiss ich noch, dass vom Hofe her ploetzlich scharf die Haehne
+kraehten, und dass ich ein blass und weinend Weib in meinen Armen
+hielt, die mich nicht lassen wollte, unachtend, dass ueberm Garten
+der Morgen daemmerte und rothen Schein in unsre Kammer warf.  Dann
+aber, da sie dess inne wurde, trieb sie, wie von Todesangst
+geschreckt, mich fort.
+
+Noch einen Kuss, noch hundert; ein fluechtig Wort noch: wann fuer das
+Gesind zu Mittage gelaeutet wuerde, dann wollten wir im Tannenwald
+uns treffen; und dann--ich wusste selber kaum, wie mir's geschehen--
+stund ich im Garten, unten in der kuehlen Morgenluft.
+
+Noch einmal, indem ich meinen von den Hunden zerfetzten Mantel
+aufhob, schaute ich empor und sah ein blasses Haendlein mir zum
+Abschied winken.  Nahezu erschrocken aber wurd ich, da meine Augen
+bei einem Rueckblick aus dem Gartensteig von ungefaehr die unteren
+Fenster neben dem Thurme streiften; denn mir war, als saehe hinter
+einem derselbigen ich gleichfalls eine Hand; aber sie drohete nach
+mir mit aufgehobenem Finger und schien mir farblos und knoechern
+gleich der Hand des Todes.  Doch war's nur wie im Husch, dass
+solches ueber meine Augen ging; dachte zwar erstlich des Maerleins
+von der wieder gehenden Urahne; redete mir dann aber ein, es seien
+nur meine eigenen aufgestoerten Sinne, die solch Spiel mir
+vorgegaukelt haetten.
+
+So, dess nicht weiter achtend, schritt ich eilends durch den Garten,
+merkete aber bald, dass in der Hast ich auf den Binsensumpf gerathen;
+sank auch der eine Fuss bis uebers Aenkel ein, gleichsam, als
+ob ihn was hinunterziehen wollte.  'Ei', dachte ich, 'fasst das
+Hausgespenste doch nach dir!' Machte mich aber auf und sprang ueber
+die Mauer in den Wald hinab.
+
+Die Finsterniss der dichten Baeume sagte meinem traeumenden Gemuethe zu;
+hier um mich her war noch die selige Nacht, von welcher meine
+Sinne sich nicht loesen mochten.--Erst da ich nach geraumer Zeit vom
+Waldesrande in das offene Feld hinaustrat, wurd ich voellig wach.
+Ein Haeuflein Rehe stund nicht fern im silbergrauen Thau, und ueber
+mir vom Himmel scholl das Tageslied der Lerche.  Da schuettelte ich
+all muessig Traeumen von mir ab; im selbigen Augenblick stieg aber
+auch wie heisse Noth die Frage mir ins Hirn: 'Was weiter nun,
+Johannes?  Du hast ein theures Leben an dich rissen; nun wisse, dass
+dein Leben nichts gilt als nur das ihre!'
+
+Doch was ich sinnen mochte, es deuchte mir allfort das beste, wenn
+Katharina im Stifte sichern Unterschlupf gefunden, dass ich dann
+zurueck nach Holland ginge, mich dort der Freundeshuelf versicherte
+und allsobald zurueckkaem, um sie nachzuholen.  Vielleicht, dass sie
+gar der alten Base Herz erweichet'; und schlimmsten Falles--es
+musste auch gehen ohne das!
+
+Schon sahe ich uns auf einem froehlichen Barkschiff die Wellen des
+gruenen Zuidersees befahren, schon hoerete ich das Glockenspiel vom
+Rathhausthurme Amsterdams und sah am Hafen meine Freunde aus dem
+Gewuehl hervorbrechen und mich und meine schoene Frau mit hellem
+Zuruf gruessen und im Triumph nach unserem kleinen, aber trauten Heim
+geleiten.  Mein Herz war voll von Muth und Hoffnung; und kraeftiger
+und rascher schritt ich aus, als koennte ich baelder so das Glueck
+erreichen.
+
+--Es ist doch anders kommen.
+
+In meinen Gedanken war ich allmaehlich in das Dorf hinabgelanget und
+trat hier in Hans Ottsens Krug, von wo ich in der Nacht so jaehlings
+hatte fluechten muessen.--"Ei, Meister Johannes", rief der Alte auf
+der Tenne mir entgegen, "was hattet Ihr doch gestern mit unseren
+gestrengen Junkern?  Ich war just draussen bei dem Ausschank; aber
+da ich wieder eintrat, flucheten sie schier grausam gegen Euch; und
+auch die Hunde raseten an der Thuer, die Ihr hinter Euch ins Schloss
+geworfen hattet."
+
+Da ich aus solchen Worten abnahm, dass der Alte den Handel nicht
+wohl begriffen habe, so entgegnete ich nur: "Ihr wisset, der von
+der Risch und ich, wir haben uns schon als Jungen oft einmal
+gezauset; da musst's denn gestern noch so einen Nachschmack geben."
+
+"Ich weiss, ich weiss!" meinte der Alte; "aber der Junker sitzt heut
+auf seines Vaters Hof; Ihr solltet Euch hueten, Herr Johannes; mit
+solchen Herren ist nicht sauber Kirschen essen."
+
+Dem zu widersprechen, hatte ich nicht Ursach, sondern liess mir Brot
+und Fruehtrunk geben und ging dann in den Stall, wo ich mir meinen
+Degen holete, auch Stift und Skizzenbuechlein aus dem Ranzen nahm.
+
+Aber es war noch lange bis zum Mittaglaeuten.  Also bat ich Hans
+Ottsen, dass er den Gaul mit seinem Jungen moeg zum Hofe bringen
+lassen; und als er mir solches zugesaget, schritt ich wieder hinaus
+zum Wald.  Ich ging aber bis zu der Stelle auf dem Heidenhuegel, von
+wo man die beiden Giebel des Herrenhauses ueber die Gartenhecken
+ragen sieht, wie ich solches schon fuer den Hintergrund zu
+Katharinens Bildniss ausgewaehlet hatte.  Nun gedachte ich, dass, wann
+in zu verhoffender Zeit sie selber in der Fremde leben und wohl das
+Vaterhaus nicht mehr betreten wuerde, sie seines Anblicks doch nicht
+ganz entrathen solle; zog also meinen Stift herfuer und begann zu
+zeichnen, gar sorgsam jedes Winkelchen, woran ihr Auge einmal mocht
+gehaftet haben.  Als farbig Schilderei sollt es dann in Amsterdam
+gefertigt werden, damit es ihr sofort entgegen gruesse, wann ich sie
+dort in unsre Kammer fuehren wuerde.
+
+Nach ein paar Stunden war die Zeichnung fertig.  Ich liess noch wie
+zum Gruss ein zwitschernd Voegelein darueber fliegen; dann suchte ich
+die Lichtung auf, wo wir uns finden wollten, und streckte mich
+nebenan im Schatten einer dichten Buche, sehnlich verlangend, dass
+die Zeit vergehe.
+
+Ich musste gleichwohl darob eingeschlummert sein; denn ich erwachte
+von einem fernen Schall und wurd dess inne, dass es das Mittaglaeuten
+von dem Hofe sei.  Die Sonne gluehte schon heiss hernieder und
+verbreitete den Ruch der Himbeeren, womit die Lichtung ueberdeckt
+war.  Es fiel mir bei, wie einst Katharina und ich uns hier bei
+unseren Waldgaengen suesse Wegzehrung geholet hatten; und nun begann
+ein seltsam Spiel der Phantasie; bald sahe ich drueben zwischen den
+Straeuchern ihre zarte Kindsgestalt, bald stund sie vor mir, mich
+anschauend mit den seligen Frauenaugen, wie ich sie letzlich erst
+gesehen, wie ich sie nun gleich, im naechsten Augenblicke, schon
+leibhaftig an mein klopfend Herze schliessen wuerde.
+
+Da ploetzlich ueberfiel mich's wie ein Schrecken.  Wo blieb sie denn?
+Es war schon lang, dass es gelaeutet hatte.  Ich war aufgesprungen,
+ich ging umher, ich stund und spaehete scharf nach aller Richtung
+durch die Baeume; die Angst kroch mir zum Herzen; aber Katharina kam
+nicht; kein Schritt im Laube raschelte; nur oben in den
+Buchenwipfeln rauschte ab und zu der Sommerwind.
+
+Boeser Ahnung voll ging ich endlich fort und nahm einen Umweg nach
+dem Hofe zu.  Da ich unweit dem Thore zwischen die Eichen kam,
+begegnete mir Dieterich.  "Herr Johannes", sagte er und trat hastig
+auf mich zu, "Ihr seid die Nacht schon in Hans Ottsens Krug gewesen;
+sein Junge brachte mir Euren Gaul zurueck;--was habet Ihr mit
+unsern Junkern vorgehabt?"
+
+"Warum fragst du, Dieterich?"
+
+--"Warum, Herr Johannes?--Weil ich Unheil zwischen euch verhueten
+moecht."
+
+"Was soll das heissen, Dieterich?" frug ich wieder; aber mir war
+beklommen, als sollte das Wort mir in der Kehle sticken.
+
+"Ihr werdet's schon selber wissen, Herr Johannes!" entgegnete der
+Alte.  "Mir hat der Wind nur so einen Schall davon gebracht, vor
+einer Stund mag's gewesen sein; ich wollte den Burschen rufen, der
+im Garten an den Hecken putzte.  Da ich an den Thurm kam, wo droben
+unser Fraeulein ihre Kammer hat, sah ich dorten die alte Bas' Ursel
+mit unserem Junker dicht beisammen stehen.  Er hatte die Arme
+unterschlagen und sprach kein einzig Woertlein; die Alte aber redete
+einen um so groesseren Haufen und jammerte ordentlich mit ihrer
+feinen Stimme.  Dabei wies sie bald nieder auf den Boden, bald
+hinauf in den Epheu, der am Turm hinaufwaechst.--Verstanden, Herr
+Johannes, hab ich von dem allem nichts; dann aber, und nun merket
+wohl auf, hielt sie mit ihrer knoechern Hand, als ob sie damit
+drohete, dem Junker was vor Augen; und da ich naeher hinsah, war's
+ein Fetzen Grauwerk, just wie Ihr's da an Euerem Mantel traget."
+
+"Weiter, Dieterich!" sagte ich; denn der Alte hatte die Augen auf
+meinen zerrissenen Mantel, den ich auf dem Arme trug.
+
+"Es ist nicht viel mehr uebrig", erwiderte er; "denn der Junker
+wandte sich jaehlings nach mir zu und frug mich, wo Ihr anzutreffen
+waeret.  Ihr moeget mir es glauben, waere er in Wirklichkeit ein Wolf
+gewesen, die Augen haetten blutiger nicht funkeln koennen."
+
+Da frug ich: "Ist der Junker im Hause, Dieterich?"
+
+--"Im Haus?  Ich denke wohl; doch was sinnet ihr, Herr Johannes?"
+
+"Ich sinne, Dieterich, dass ich allsogleich mit ihm zu reden habe."
+
+Aber Dieterich hatte bei beiden Haenden mich ergriffen.  "Gehet
+nicht, Johannes", sagte er dringend; "erzaehlet mir zum wenigsten,
+was geschehen ist; der Alte hat Euch ja sonst wohl guten Rath
+gewusst!"
+
+"Hernach, Dieterich, hernach!" entgegnete ich.  Und also mit diesen
+Worten riss ich meine Haende aus den seinen.
+
+Der Alte schuettelte den Kopf.  "Hernach, Johannes", sagte er, "das
+weiss nur unser Herrgott!"
+
+Ich aber schritt nun ueber den Hof dem Hause zu.  Der Junker sei
+eben in seinem Zimmer, sagte eine Magd, so ich im Hausflur drum
+befragte.
+
+Ich hatte dieses Zimmer, das im Unterhause lag, nur einmal erst
+betreten.  Statt wie bei seinem Vater sel.  Buecher und Karten, war
+hier vielerlei Gewaffen, Handroehre und Arkebusen, auch allerart
+Jagdgeraethe an den Waenden angebracht; sonst war es ohne Zier und
+zeigete an ihm selber, dass niemand auf die Dauer und mit seinen
+ganzen Sinnen hier verweile.
+
+Fast waer ich an der Schwelle noch zurueckgewichen, da ich auf des
+Junkers "Herein" die Thuer geoeffnet; denn als er sich vom Fenster zu
+mir wandte, sah ich eine Reiterpistole in seiner Hand, an deren
+Radschloss er hantirete.  Er schauete mich an, als ob ich von den
+Tollen kaeme.  "So?" sagte er gedehnet; "wahrhaftig, Sieur Johannes,
+wenn's nicht schon sein Gespenste ist!"
+
+"Ihr dachtet, Junker Wulf", entgegnet ich, indem ich naeher zu ihm
+trat, "es moecht der Strassen noch andre fuer mich geben, als die in
+Euere Kammer fahren!"
+
+--"So dachte ich, Sieur Johannes!  Wie Ihr gut rathen koennt!  Doch
+immerhin, Ihr kommt mir eben recht; ich hab Euch suchen lassen!"
+
+In seiner Stimme bebte was, das wie ein lauernd Raubthier auf dem
+Sprunge lag, so dass die Hand mir unversehens nach dem Degen fuhr.
+Jedennoch sprach ich: "Hoerer mich und goennet mir ein ruhig Wort,
+Herr Junker!"
+
+Er aber unterbrach meine Rede: "Du wirst gewogen sein, mich
+erstlich auszuhoeren!  Sieur Johannes"--und seine Worte, die erst
+langsam waren, wurden allmaehlich gleichwie ein Gebruell--, "vor ein
+paar Stunden, da ich mit schwerem Kopf erwachte, da fiel's mir bei
+und reuete mich gleich einem Narren, dass ich im Rausch die wilden
+Hunde dir auf die Fersen gesetzet hatte;--seit aber Bas' Ursel mir
+den Fetzen vorgehalten, den sie dir aus deinem Federbalg gerissen,--
+beim Hoellenelement!  mich reut's nur noch, dass mir die Bestien
+solch Stueck Arbeit nachgelassen!"
+
+Noch einmal suchte ich zu Worte zu kommen; und da der Junker
+schwieg, so dachte ich, dass er auch hoeren wuerde.  "Junker Wulf",
+sagte ich, "es ist schon wahr, ich bin kein Edelmann; aber ich bin
+kein geringer Mann in meiner Kunst und hoffe, es auch wohl noch
+einmal den Groesseren gleichzuthun; so bitte ich Euch geziementlich,
+gehet Euere Schwester Katharina mir zum Ehgemahl--"
+
+Da stockte mir das Wort im Munde.  Aus seinem bleichen Antlitz
+starrten mich die Augen des alten Bildes an; ein gellend Lachen
+schlug mir in das Ohr, ein Schuss--dann brach ich zusammen und
+hoerete nur noch, wie mir der Degen, den ich ohn Gedanken fast
+gezogen hatte, klirrend aus der Hand zu Boden fiel.
+
+Es war manche Woche danach, dass ich in dem schon bleicheren
+Sonnenschein auf einem Baenkchen vor dem letzten Haus des Dorfes sass,
+mit matten Blicken nach dem Wald hinueberschauend, an dessen
+jenseitigem Rande das Herrenhaus belegen war.  Meine thoerichten
+Augen suchten stets aufs Neue den Punkt, wo, wie ich mir
+vorstellete, Katharinens Kaemmerlein von drueben auf die schon
+herbstlich gelben Wipfel schaue; denn von ihr selber hatte ich
+keine Kunde.
+
+Man hatte mich mit meiner Wunde in dies Haus gebracht, das von des
+Junkers Waldhueter bewohnt wurde; und ausser diesem Mann und seinem
+Weibe und einem mir unbekannten Chirurgus war waehrend meines langen
+Lagers niemand zu mir gekommen.--Von wannen ich den Schuss in meine
+Brust erhalten, darueber hat mich niemand befragt, und ich habe
+niemandem Kunde gegeben; des Herzogs Gerichte gegen Herrn
+Gerhardus' Sohn und Katharinens Bruder anzurufen, konnte nimmer mir
+zu Sinnen kommen.  Er mochte sich dessen auch wohl getroesten; noch
+glaubhafter jedoch, dass er allen diesen Dingen trotzete.
+
+Nur einmal war mein guter Dieterich da gewesen; er hatte mir in des
+Junkers Auftrage zwei Rollen Ungarischer Dukaten ueberbracht als
+Lohn fuer Katharinens Bild, und ich hatte das Gold genommen, in
+Gedanken, es sei ein Theil von deren Erbe, von dem sie als mein
+Weib wohl spaeter nicht zu viel empfahen wuerde.  Zu einem traulichen
+Gespraech mit Dieterich, nach dem mich sehr verlangete, hatte es mir
+nicht gerathen wollen, massen das gelbe Fuchsgesicht meines Wirthes
+allaugenblicks in meine Kammer schaute; doch wurde so viel mir kund,
+dass der Junker nicht nach Kiel gereiset und Katharina seither von
+niemandem weder in Hof noch Garten war gesehen worden; kaum konnte
+ich noch den Alten bitten, dass er dem Fraeulein, wenn sich's treffen
+moechte, meine Gruesse sage, und dass ich bald nach Holland zu reisen,
+aber baelder noch zurueckzukommen daechte, was alles in Treuen
+auszurichten er mir dann gelobete.
+
+Ueberfiel mich aber danach die allergroesseste Ungeduld, so dass ich,
+gegen den Willen des Chirurgus und bevor im Walde drueben noch die
+letzten Blaetter von den Baeumen fielen, meine Reise ins Werk setzete;
+langete auch schon nach kurzer Frist wohlbehalten in der
+hollaendischen Hauptstadt an, allwo ich von meinen Freunden gar
+liebreich empfangen wurde, und mochte es auch ferner vor ein
+gluecklich Zeichen wohl erkennen, dass zwo Bilder, so ich dort
+zurueckgelassen, durch die hilfsbereite Vermittelung meines theueren
+Meisters van der Helst beide zu ansehnlichen Preisen verkaufet
+waren.  Ja, es war dessen noch nicht genug: ein mir schon frueher
+wohl gewogener Kaufherr liess mir sagen, er habe nur auf mich
+gewartet, dass ich fuer sein nach dem Haag verheirathetes Toechterlein
+sein Bildniss malen moege; und wurde mir auch sofort ein reicher Lohn
+dafuer versprochen.  Da dachte ich, wenn ich solches noch vollendete,
+dass dann genug des helfenden Metalles in meinen Haenden waere, um
+auch ohne andere Mittel Katharinen in ein wohl bestellet Heimwesen
+einzufahren.
+
+Machte mich also, da mein freundlicher Goenner desselbigen Sinnes
+war, mit allem Eifer an die Arbeit, so dass ich bald den Tag meiner
+Abreise gar froehlich nah und naeher ruecken sahe, unachtend, mit was
+vor ueblen Anstaenden ich drueben noch zu kaempfen haette.
+
+Aber des Menschen Augen sehen das Dunkel nicht, das vor ihm ist.--
+Als nun das Bild vollendet war und reichlich Lob und Gold um dessen
+willen mir zu Theil geworden, da konnte ich nicht fort.  Ich hatte
+in der Arbeit meiner Schwaeche nicht geachtet, die schlecht geheilte
+Wunde warf mich wiederum danieder.  Eben wurden zum Weihnachtsfeste
+auf allen Strassenplaetzen die Waffelbuden aufgeschlagen, da begann
+mein Siechthum und hielt mich laenger als das erste Mal gefesselt.
+Zwar der besten Arzteskunst und liebreicher Freundespflege war kein
+Mangel, aber in Aengsten sahe ich Tag um Tag vergehen, und keine
+Kunde konnte von ihr, keine zu ihr kommen.
+
+Endlich nach harter Winterzeit, da der Zuidersee wieder seine
+gruenen Wellen schlug, geleiteten die Freunde mich zum Hafen; aber
+statt des frohen Muthes nahm ich itzt schwere Herzensorge mit an
+Bord.  Doch ging die Reise rasch und gut von Statten.
+
+Von Hamburg aus fuhr ich mit der koeniglichen Post; dann, wie vor
+nun fast einem Jahre hiebevor, wanderte ich zu Fusse durch den Wald,
+an dem noch kaum die ersten Spitzen grueneten.  Zwar probten schon
+die Finken und die Ammern ihren Lenzgesang; doch was kuemmerten sie
+mich heute!--Ich ging aber nicht nach Herrn Gerhardus' Herrengut;
+sondern, so stark mein Herz auch klopfete, ich bog seitwaerts ab und
+schritt am Waldesrand entlang dem Dorfe zu.  Da stund ich bald in
+Hans Ottsens Krug und ihm gar selber gegenueber.
+
+Der Alte sah mich seltsam an, meinete aber dann, ich lasse ja recht
+munter.  "Nur", fuegte er bei, "mit den Schiessbuechsen muesset Ihr
+nicht wieder spielen; die machen aergere Flecken als so ein
+Malerpinsel."
+
+Ich liess ihn gern bei solcher Meinung, so, wie ich wohl merkete,
+hier allgemein verbreitet war, und that vors erste eine Frage nach
+dem alten Dieterich.
+
+Da musste ich vernehmen, dass er noch vor dem ersten Winterschnee,
+wie es so starken Leuten wohl passiret, eines ploetzlichen, wenn
+auch gelinden Todes verfahren sei.  "Der freuet sich", sagte Hans
+Ottsen, "dass er zu seinem alten Herrn da droben kommen; und ist fuer
+ihn auch besser so."
+
+"Amen!" sagte ich; "mein herzlieber alter Dieterich!"
+
+Indess aber mein Herz nur, und immer banger, nach einer Kundschaft
+von Katharinen seufzete, nahm meine furchtsam Zunge einen Umweg,
+und ich sprach beklommen: "Was machet denn Euer Nachbar, der von
+der Risch?"
+
+"Oho", lachte der Alte; "der hat ein Weib genommen, und eine, die
+ihn schon zu Richte setzen wird."
+
+Nur im ersten Augenblick erschrak ich, denn ich sagte mir sogleich,
+dass er nicht so von Katharinen reden wuerde; und da er dann den
+Namen nannte, so war's ein aeltlich, aber reiches Fraeulein aus der
+Nachbarschaft; forschete also muthig weiter, wie's drueben in Herrn
+Gerhardus' Haus bestellet sei, und wie das Fraeulein und der Junker
+mit einander hauseten.
+
+Da warf der Alte mir wieder seine seltsamen Blicke zu.  "Ihr meinet
+wohl", sagte er, "dass alte Thuerm' und Mauern nicht auch plaudern
+koennten!"
+
+"Was soll's der Rede?" rief ich; aber sie fiel mir centnerschwer
+aufs Herz.
+
+"Nun, Herr Johannes", und der Alte sahe mir gar zuversichtlich in
+die Augen, "wo das Fraeulein hinkommen, das werdet doch Ihr am
+besten wissen!  Ihr seid derzeit im Herbst ja nicht zum letzten
+hier gewesen; nur wundert's mich, dass Ihr noch einmal wiederkommen;
+denn Junker Wulf wird, denk ich, nicht eben gute Mien zum boesen
+Spiel gemachet haben."
+
+Ich sah den alten Menschen an, als sei ich selber hintersinnig
+worden; dann aber kam mir ploetzlich ein Gedanke.  "Ungluecksmann!"
+schrie ich, "Ihr glaubet doch nicht etwan, das Fraeulein Katharina
+sei mein Eheweib geworden?"
+
+"Nun, lasset mich nur los!" entgegnete der Alte--denn ich
+schuettelte ihn an beiden Schultern.--"Was geht's mich an!  Es geht
+die Rede so!  Auf alle Faell'; seit Neujahr ist das Fraeulein im
+Schloss nicht mehr gesehen worden."
+
+Ich schwur ihm zu, derzeit sei ich in Holland krank gelegen; ich
+wisse nichts von alledem.
+
+Ob er's geglaubet, weiss ich nicht zu sagen; allein er gab mir kund,
+es sollte dermalen ein unbekannter Geistlicher zur Nachtzeit und in
+grosser Heimlichkeit auf den Herrenhof gekommen sein; zwar habe Bas'
+Ursel das Gesinde schon zeitig in ihre Kammern getrieben; aber der
+Maegde eine, so durch die Thuerspalt gelauschet, wolle auch mich ueber
+den Flur nach der Treppe haben gehen sehen; dann spaeter haetten sie
+deutlich einen Wagen aus dem Thorhaus fahren hoeren, und seien seit
+jener Nacht nur noch Bas' Ursel und der Junker in dem Schloss
+gewesen.
+
+--Was ich von nun an alles und immer doch vergebens unternommen, um
+Katharinen oder auch nur eine Spur von ihr zu finden, das soll
+nicht hier verzeichnet werden.  Im Dorf war nur das thoerichte
+Geschwaetz, davon Hans Ottsen mich die Probe schmecken lassen; darum
+machete ich mich auf nach dem Stifte zu Herrn Gerhardus' Schwester;
+aber die Dame wollte mich nicht vor sich lassen; wurde im uebrigen
+mir auch berichtet, dass keinerlei junges Frauenzimmer bei ihr
+gesehen worden.  Da reisete ich wieder zurueck und demuethigte mich
+also, dass ich nach dem Hause des von der Risch ging und als ein
+Bittender vor meinen alten Widersacher hintrat.  Der sagte hoehnisch,
+es moege wohl der Buhz das Voeglein sich geholet haben; er habe dem
+nicht nachgeschaut; auch halte er keinen Aufschlag mehr mit denen
+von Herrn Gerhardus' Hofe.
+
+Der Junker Wulf gar, der davon vernommen haben mochte, liess nach
+Hans Ottsens Kruge sagen, so ich mich unterstuende, auch zu ihm zu
+dringen, er wuerde mich noch einmal mit den Hunden hetzen lassen.--
+Da bin ich in den Wald gegangen und hab gleich einem Strauchdieb am
+Weg auf ihn gelauert; die Eisen sind von der Scheide bloss geworden;
+wir haben gefochten, bis ich die Hand ihm wund gehauen und sein
+Degen in die Buesche flog.  Aber er sahe mich nur mit seinen boesen
+Augen an; gesprochen hat er nicht.--Zuletzt bin ich zu laengerem
+Verbleiben nach Hamburg kommen, von wo aus ich ohne Anstand und mit
+groesserer Umsicht meine Nachforschungen zu betreiben dachte.
+
+Es ist alles doch umsonst gewesen.
+
+
+Aber ich will vors erste nun die Feder ruhen lassen.  Denn vor mir
+liegt dein Brief, mein lieber Josias; ich soll dein Toechterlein,
+meiner Schwester sel.  Enkelin, aus der Taufe heben.--Ich werde auf
+meiner Reise dem Walde vorbeifahren, so hinter Herrn Gerhardus' Hof
+belegen ist.  Aber das alles gehoert ja der Vergangenheit.
+
+Hier schliesst das erste Heft der Handschrift.  Hoffen wir, dass der
+Schreiber ein froehliches Tauffest gefeiert und inmitten seiner
+Freundschaft an frischer Gegenwart sein Herz erquickt habe.
+
+Meine Augen ruhten auf dem alten Bild mir gegenueber; ich konnte
+nicht zweifeln, der schoene ernste Mann war Herr Gerhardus.  Wer
+aber war jener tote Knabe, den ihm Meister Johannes hier so sanft
+in seinen Arm gebettet hatte?--Sinnend nahm ich das zweite und
+zugleich letzte Heft, dessen Schriftzuege um ein weniges unsicherer
+erschienen.  Es lautete wie folgt:
+
+Geliek as Rook un Stoof verswindt,
+Also sind ock de Minschenkind.
+
+Der Stein, darauf diese Worte eingehauen stehen, sass ob dem
+Thuersims eines alten Hauses.  Wenn ich daran vorbeiging, musste ich
+allzeit meine Augen dahin wenden, und auf meinen einsamen
+Wanderungen ist dann selbiger Spruch oft lange mein Begleiter
+blieben.  Da sie im letzten Herbste das alte Haus abbrachen, habe
+ich aus den Truemmern diesen Stein erstanden, und ist er heute
+gleicherweise ob der Thuere meines Hauses eingemauert worden, wo er
+nach mir noch manchen, der voruebergeht, an die Nichtigkeit des
+Irdischen erinnern moege.  Mir aber soll er eine Mahnung sein,
+ehbevor auch an meiner Uhr der Weiser stille steht, mit der
+Aufzeichnung meines Lebens fortzufahren.  Denn du, meiner lieben
+Schwester Sohn, der du nun bald mein Erbe sein wirst, moegest mit
+meinem kleinen Erdengute dann auch mein Erdenleid dahinnehmen, so
+ich bei meiner Lebzeit niemandem, auch, aller Liebe ohnerachtet,
+dir nicht habe anvertrauen moegen.
+
+Item: anno 1666 kam ich zum ersten Mal in diese Stadt an der
+Nordsee; massen von einer reichen Branntweinbrenner-Witwen mir der
+Auftrag worden, die Auferweckung Lazari zu malen, welches Bild sie
+zum schuldigen und freundlichen Gedaechtniss ihres Seligen, der
+hiesigen Kirchen aber zum Zierath zu stiften gedachte, allwo es
+denn auch noch heute ueber dem Taufsteine mit den vier Aposteln zu
+schauen ist.  Daneben wuenschte auch der Buergermeister, Herr Titus
+Axen, so frueher in Hamburg Thumherr und mir von dort bekannt war,
+sein Conterfey von mir gemalet, so dass ich fuer eine lange Zeit
+allhier zu schaffen hatte.--Mein Losament aber hatte ich bei meinem
+einzigen und aelteren Bruder, der seit lange schon das Secretariat
+der Stadt bekleidete; das Haus, darin er als unbeweibter Mann lebte,
+war hoch und raeumlich, und war es dasselbig Haus mit den zwo
+Linden an der Ecken von Markt und Kraemerstrasse, worin ich,
+nachdem es durch meines lieben Bruders Hintritt mir angestorben,
+anitzt als alter Mann noch lebe und der Wiedervereinigung mit den
+vorangegangenen Lieben in Demuth entgegenharre.
+
+Meine Werkstaette hatte ich mir in dem grossen Pesel der Witwe
+eingerichtet; es war dorten ein gutes Oberlicht zur Arbeit, und
+bekam alles gemacht und gestellet, wie ich es verlangen mochte.
+Nur dass die gute Frau selber gar zu gegenwaertig war; denn
+allaugenblicklich kam sie draussen von ihrem Schanktisch zu mir
+hergetrottet mit ihren Blechgemaessen in der Hand; draengte mit ihrer
+Wohlbeleibtheit mir auf den Malstock und roch an meinem Bild herum;
+gar eines Vormittages, da ich soeben den Kopf des Lazarus
+untermalet hatte, verlangte sie mit viel ueberfluessigen Worten, der
+auferweckte Mann solle das Antlitz ihres Seligen zur Schau stellen,
+obschon ich diesen Seligen doch niemalen zu Gesicht bekommen, von
+meinem Bruder auch vernommen hatte, dass selbiger, wie es die
+Brenner pflegen, das Zeichen seines Gewerbes als eine blaurothe
+Nasen im Gesicht herumgetragen; da habe ich denn, wie man glauben
+mag, dem unvernuenftigen Weibe gar hart den Daumen gegenhalten
+muessen.  Als dann von der Aussendiele her wieder neue Kundschaft
+nach ihr gerufen und mit den Gemaessen auf den Schank geklopfet, und
+sie endlich von mir lassen muessen, da sank mir die Hand mit dem
+Pinsel in den Schoss, und ich musste ploetzlich des Tages gedenken, da
+ich eines gar andern Seligen Antlitz mit dem Stifte nachgebildet,
+und wer da in der kleinen Kapelle so still bei mir gestanden sei.--
+Und also rueckwaerts sinnend, setzete ich meinen Pinsel wieder an;
+als aber selbiger eine gute Weile hin und wider gegangen, musste ich
+zu eigener Verwunderung gewahren, dass ich die Zuege des edlen Herrn
+Gerhardus in des Lazari Angesicht hineingetragen hatte.  Aus seinem
+Leilach blickte des Todten Antlitz gleichwie in stummer Klage gegen
+mich, und ich gedachte: So wird er dir einstmals in der Ewigkeit
+entgegentreten!
+
+Ich konnte heut nicht weiter malen, sondern ging fort und schlich
+auf meine Kammer ober der Hausthuer, allwo ich mich ans Fenster
+setzte und durch den Ausschnitt der Lindenbaeume auf den Markt
+hinabsah.  Es gab aber gross Gewuehl dort, und war bis drueben an die
+Rathswaage und weiter bis zur Kirchen alles voll von Wagen und
+Menschen; denn es war ein Donnerstag und noch zur Stunde, dass Gast
+mit Gaste handeln durfte, also dass der Stadtknecht mit dem Griper
+muessig auf unseres Nachbaren Beischlag sass, massen es vor der Hand
+keine Bruechen zu erhaschen gab.  Die Ostenfelder Weiber mit ihren
+rothen Jacken, die Maedchen von den Inseln mit ihren Kopftuechern und
+feinem Silberschmuck, dazwischen die hochgethuermeten Getreidewagen
+und darauf die Bauern in ihren gelben Lederhosen--dies alles mochte
+wohl ein Bild fuer eines Malers Auge geben, zumal wenn selbiger, wie
+ich, bei den Hollaendern in die Schule gegangen war; aber die
+Schwere meines Gemuethes machte das bunte Bild mir truebe.  Doch war
+es keine Reu, wie ich vorhin an mir erfahren hatte; ein sehnend
+Leid kam immer gewaltiger ueber mich; es zerfleischete mich mit
+wilden Krallen und sah mich gleichwohl mit holden Augen an.
+Drunten lag der helle Mittag auf dem wimmelnden Markte; vor meinen
+Augen aber daemmerte silberne Mondnacht, wie Schatten stiegen ein
+paar Zackengiebel auf, ein Fenster klirrte, und gleich wie aus
+Traeumen schlugen leis und fern die Nachtigallen.  O du mein Gott
+und mein Erloeser, der du die Barmherzigkeit bist, wo war sie in
+dieser Stunde, wo hatte meine Seele sie zu suchen?--
+
+
+Da hoerete ich draussen unter dem Fenster von einer harten Stimme
+meinen Namen nennen, und als ich hinausschaute, ersahe ich einen
+grossen hageren Mann in der ueblichen Tracht eines Predigers, obschon
+sein herrisch und finster Antlitz mit dem schwarzen Haupthaar und
+dem tiefen Einschnitt ob der Nase wohl eher einem Kriegsmann
+angestanden waere.  Er wies soeben einem andern, untersetzten Manne
+von baeuerischem Aussehen, aber gleich ihm in schwarzwollenen
+Struempfen und Schnallenschuhen, mit seinem Handstocke nach unserer
+Hausthuer zu, indem er selbst zumal durch das Marktgewuehle von
+dannen schritt.
+
+Da ich dann gleich darauf die Thuerglocke schellen hoerte, ging ich
+hinab und lud den Fremden in das Wohngemach, wo er von dem Stuhle,
+darauf ich ihn genoethigt, mich gar genau und aufmerksam betrachtete.
+
+Also war selbiger der Kuester aus dem Dorfe norden der Stadt, und
+erfuhr ich bald, dass man dort einen Maler brauche, da man des
+Pastors Bildniss in die Kirche stiften wolle.  Ich forschete ein
+wenig, was fuer Verdienst um die Gemeine dieser sich erworben haette,
+dass sie solche Ehr ihm anzuthun gedaechten, da er doch seines Alters
+halben noch nicht gar lang im Amte stehen koenne; der Kuester aber
+meinete, es habe der Pastor freilich wegen eines Stueck Ackergrundes
+einmal einen Process gegen die Gemeine angestrenget, sonst wisse er
+eben nicht, was Sondres koenne vorgefallen sein; allein es hingen
+allbereits die drei Amtsvorweser in der Kirchen, und da sie, wie er
+sagen muesse, vernommen haetten, ich verstuende das Ding gar wohl zu
+machen, so sollte der guten Gelegenheit wegen nun auch der vierte
+Pastor mit hinein; dieser selber freilich kuemmere sich nicht eben
+viel darum.
+
+Ich hoerete dem allen zu; und da ich mit meinem Lazarus am liebsten
+auf eine Zeit pausiren mochte, das Bildniss des Herrn Titus Axen
+aber wegen eingetretenen Siechthums desselbigen nicht beginnen
+konnte, so hub ich an, dem Auftrage naeher nachzufragen.
+
+Was mir an Preis fuer solche Arbeit nun geboten wurde, war zwar
+gering, so dass ich erstlich dachte: sie nehmen dich fuer einen
+Pfennigmaler, wie sie im Kriegstrosse mitziehen, um die Soldaten
+fuer ihre heimgebliebenen Dirnen abzumalen; aber es muthete mich
+ploetzlich an, auf eine Zeit allmorgendlich in der goldnen
+Herbstessonne ueber die Heide nach dem Dorf hinauszuwandern, das nur
+eine Wegstunde von unserer Stadt belegen ist.  Sagete also zu, nur
+mit dem Beding, dass die Malerei draussen auf dem Dorfe vor sich
+ginge, da hier in meines Bruders Hause passliche Gelegenheit nicht
+befindlich sei.
+
+Dess schien der Kuester gar vergnuegt, meinend, das sei alles hiebevor
+schon fuergesorget; der Pastor habe sich solches gleichfalls
+ausbedungen; item, es sei dazu die Schulstube in seiner Kuesterei
+erwaehlet; selbige sei das zweite Haus im Dorfe und liege nahe am
+Pastorate, nur hintenaus durch die Priesterkoppel davon geschieden,
+so dass also auch der Pastor leicht hinuebertreten koenne.  Die Kinder,
+die im Sommer doch nichts lernten, wuerden dann nach Haus
+geschicket.
+
+Also schuettelten wir uns die Haende, und da der Kuester auch die
+Masse des Bildes fuersorglich mitgebracht, so konnte alles Malgeraeth,
+dess ich bedurfte, schon Nachmittages mit der Priesterfuhr
+hinausbefoerdert werden.
+
+Als mein Bruder dann nach Hause kam--erst spaet am Nachmittage; denn
+ein Ehrsamer Rath hatte dermalen viel Bedraengniss von einer
+Schinderleichen, so die ehrlichen Leute nicht zu Grabe tragen
+wollten--, meinete er, ich bekaeme da einen Kopf zu malen, wie er
+nicht oft auf einem Priesterkragen sitze, und moechte mich mit
+Schwarz und Braunroth wohl versehen; erzaehlete mir auch, es sei der
+Pastor als Feldcapellan mit den Brandenburgern hier ins Land
+gekommen, als welcher er's fast wilder denn die Offiziers getrieben
+haben solle; sei uebrigens itzt ein scharfer Streiter vor dem Herrn,
+der seine Bauern gar meisterlich zu packen wisse.--Noch merkete
+mein Bruder an, dass bei desselbigen Amtseintritt in unserer Gegend
+adelige Fuersprach eingewirket haben solle, wie es heisse, von drueben
+aus dem Holsteinischen her; der Archidiaconus habe bei der
+Klosterrechnung ein Woertlein davon fallen lassen.  War jedoch
+Weiteres meinem Bruder darob nicht kund geworden.
+
+
+So sahe mich denn die Morgensonne des naechsten Tages ruestig ueber
+die Heide schreiten, und war mir nur leid, dass letztere allbereits
+ihr rothes Kleid und ihren Wuerzeduft verbrauchet und also diese
+Landschaft ihren ganzen Sommerschmuck verloren hatte; denn von
+gruenen Baeumen war weithin nichts zu ersehen; nur der spitze
+Kirchthurm des Dorfes, dem ich zustrebte--wie ich bereits erkennen
+mochte, ganz von Granitquadern auferbauet--, stieg immer hoeher vor
+mir in den dunkelblauen Octoberhimmel.  Zwischen den schwarzen
+Strohdaechern, die an seinem Fusse lagen, krueppelte nur niedrig Busch-
+und Baumwerk; denn der Nordwestwind, so hier frisch von der See
+heraufkommt, will freien Weg zu fahren haben.
+
+Als ich das Dorf erreichet und auch alsbald mich nach der Kuesterei
+gefunden hatte, stuerzete mir sofort mit lustigem Geschrei die ganze
+Schul entgegen; der Kuester aber hiess an seiner Hausthuer mich
+willkommen.  "Merket Ihr wohl, wie gern sie von der Fibel laufen!"
+sagte er.  "Der eine Bengel hatte Euch schon durchs Fenster kommen
+sehen."
+
+In dem Prediger, der gleich danach ins Haus trat, erkannte ich
+denselbigen Mann, den ich schon tags zuvor gesehen hatte.  Aber auf
+seine finstere Erscheinung war heute gleichsam ein Licht gesetzet;
+das war ein schoener blasser Knabe, den er an der Hand mit sich
+fuehrete; das Kind mochte etwan vier Jahre zaehlen und sahe fast
+winzig aus gegen des Mannes hohe knochige Gestalt.
+
+Da ich die Bildnisse der frueheren Prediger zu sehen wuenschte, so
+gingen wir mitsammen in die Kirche, welche also hoch belegen ist,
+dass man nach den anderen Seiten ueber Marschen und Heide, nach
+Westen aber auf den nicht gar fernen Meeresstrand hinunterschauen
+kann.  Es musste eben Fluth sein; denn die Watten waren ueberstroemet,
+und das Meer stund wie ein lichtes Silber.  Da ich anmerkete, wie
+oberhalb desselben die Spitze des Festlandes und von der andern
+Seite diejenige der Insel sich gegen einander strecketen, wies der
+Kuester auf die Wasserflaeche, so dazwischen liegt.  "Dort", sagte er,
+"hat einst meiner Eltern Haus gestanden; aber anno 34 bei der
+grossen Fluth trieb es gleich hundert anderen in den grimmen Wassern;
+auf der einen Haelfte des Daches ward ich an diesen Strand geworfen,
+auf der anderen fuhren Vater und Bruder in die Ewigkeit hinaus."
+
+Ich dachte: 'So stehet die Kirche wohl am rechten Ort; auch
+ohne den Pastor wird hier vernehmentlich Gottes Wort geprediget.'
+
+Der Knabe, welchen letzterer auf den Arm genommen hatte, hielt
+dessen Nacken mit beiden Aermchen fest umschlungen und drueckte die
+zarte Wange an das schwarze baertige Gesicht des Mannes, als finde
+er so den Schutz vor der ihn schreckenden Unendlichkeit, die dort
+vor unseren Augen ausgebreitet lag.
+
+Als wir in das Schiff der Kirche eingetreten waren, betrachtete ich
+mir die alten Bildnisse und sahe auch einen Kopf darunter, der wohl
+eines guten Pinsels werth gewesen waere; jedennoch war es alles eben
+Pfennigmalerei, und sollte demnach der Schueler van der Helsts hier
+in gar sondere Gesellschaft kommen.
+
+Da ich solches eben in meiner Eitelkeit bedachte, sprach die harte
+Stimme des Pastors neben mir: "Es ist nicht meines Sinnes, dass der
+Schein des Staubes dauere, wenn der Odem Gottes ihn verlassen; aber
+ich habe der Gemeine Wunsch nicht widerstreben moegen; nur, Meister,
+machet es kurz; ich habe besseren Gebrauch fuer meine Zeit."
+
+Nachdem ich dem finsteren Manne, an dessen Antlitz ich gleichwohl
+fuer meine Kunst Gefallen fand, meine beste Bemuehung zugesaget,
+fragete ich einem geschnitzten Bilde der Maria nach, so von meinem
+Bruder mir war geruehmet worden.
+
+Ein fast verachtend Laecheln ging ueber des Predigers Angesicht.  "Da
+kommet ihr zu spaet", sagte er, "es ging in Truemmer, da ich's aus
+der Kirche schaffen liess."
+
+Ich sah ihn fast erschrocken an.  "Und wolltet Ihr des Heilands
+Mutter nicht in Euerer Kirche dulden?"
+
+"Die Zuege von des Heilands Mutter", entgegnete er, "sind nicht
+ueberliefert worden."
+
+--"Aber wollet Ihr's der Kunst missgoennen, sie in frommem Sinn zu
+suchen?"
+
+Er blickte eine Welle finster auf mich herab; denn, obschon ich zu
+den Kleinen nicht zu zaehlen, so ueberragte er mich doch um eines
+halben Kopfes Hoehe;--dann sprach er heftig: "Hat nicht der Koenig
+die hollaendischen Papisten dort auf die zerrissene Insel herberufen;
+nur um durch das Menschenwerk der Deiche des Hoechsten Strafgericht
+zu trotzen?  Haben nicht noch letzlich die Kirchenvorsteher drueben
+in der Stadt sich zwei der Heiligen in ihr Gestuehlte schnitzen
+lassen?  Betet und wachet!  Denn auch hier geht Satan noch von Haus
+zu Haus!  Diese Marienbilder sind nichts als Saeugammen der
+Sinnenlust und des Papismus; die Kunst hat allzeit mit der Welt
+gebuhlt!"
+
+Ein dunkles Feuer gluehte in seinen Augen, aber seine Hand lag
+liebkosend auf dem Kopf des blassen Knaben, der sich an seine Knie
+schmiegte.
+
+Ich vergass darob, des Pastors Worte zu erwidern; mahnete aber
+danach, dass wir in die Kuesterei zurueckgingen, wo ich alsdann meine
+edle Kunst an ihrem Widersacher selber zu erproben anhub.
+
+
+Also wanderte ich fast einen Morgen um den andern ueber die Heide
+nach dem Dorfe, wo ich allzeit den Pastor schon meiner harrend
+antraf Geredet wurde wenig zwischen uns; aber das Bild nahm desto
+rascheren Fortgang.  Gemeiniglich sass der Kuester neben uns und
+schnitzete allerlei Geraethe gar saeuberlich aus Eichenholz,
+dergleichen als eine Hauskunst hier ueberall betrieben wird; auch
+habe ich das Kaestlein, woran er derzeit arbeitete, von ihm
+erstanden und darin vor Jahren die ersten Blaetter dieser
+Niederschrift hinterleget, alswie denn auch mit Gottes Willen diese
+letzten darin sollen beschlossen sein.--
+
+In des Predigers Wohnung wurde ich nicht geladen und betrat selbige
+auch nicht; der Knabe aber war allzeit mit ihm in der Kuesterei; er
+stand an seinen Knien, oder er spielte mit Kieselsteinchen in der
+Ecke des Zimmers.  Da ich selbigen einmal fragte, wie er heisse,
+antwortete er: "Johannes!"--"Johannes?" entgegnete ich, "so heisse
+ich ja auch!"--Er sah mich gross an, sagte aber weiter nichts.
+
+Weshalb ruehreten diese Augen so an meine Seele?--Einmal gar
+ueberraschete mich ein finsterer Blick des Pastors, da ich den
+Pinsel muessig auf der Leinewand ruhen liess.  Es war etwas in dieses
+Kindes Antlitz, das nicht aus seinem kurzen Leben kommen konnte;
+aber es war kein froher Zug.  So, dachte ich, sieht ein Kind, das
+unter einem kummerschweren Herzen ausgewachsen.  Ich haette oft
+die Arme nach ihm breiten moegen; aber ich scheuete mich vor dem
+harten Manne, der es gleich einem Kleinod zu behueten schien.
+Wohl dachte ich oft: 'Welch eine Frau mag dieses Knaben Mutter
+sein?'--
+
+Des Kuesters alte Magd hatte ich einmal nach des Predigers Frau
+befraget; aber sie hatte mir kurzen Bescheid gegeben: "Die kennt
+man nicht; in die Bauernhaeuser kommt sie kaum, wenn Kindelbier
+und Hochzeit ist."--Der Pastor selbst sprach nicht von ihr.
+Aus dem Garten der Kuesterei, welcher in eine dichte Gruppe von
+Fliederbueschen auslaeuft, sahe ich sie einmal langsam ueber die
+Priesterkoppel nach ihrem Hause gehen; aber sie hatte mir den
+Ruecken zugewendet, so dass ich nur ihre schlanke, jugendliche
+Gestalt gewahren konnte, und ausserdem ein paar gekraeuselte Loeckchen,
+in der Art, wie sie sonst nur von den Vornehmeren getragen werden
+und die der Wind von ihren Schlaefen wehte.  Das Bild ihres
+finsteren Ehgesponsen trat mir vor die Seele, und mir schien, es
+passe dieses Paar nicht wohl zusammen.
+
+--An den Tagen, wo ich nicht da draussen war, hatte ich auch die
+Arbeit an meinem Lazarus wieder aufgenommen, so dass nach einiger
+Zeit diese Bilder mit einander nahezu vollendet waren.
+
+So sass ich eines Abends nach vollbrachtem Tagewerke mit meinem
+Bruder unten in unserem Wohngemache.  Auf dem Tisch am Ofen war die
+Kerze fast herabgebrannt, und die hollaendische Schlaguhr hatte
+schon auf Eilf gewarnt; wir aber sassen am Fenster und hatten der
+Gegenwart vergessen; denn wir gedachten der kurzen Zeit, die wir
+mitsammen in unserer Eltern Haus verlebet hatten; auch unseres
+einzigen lieben Schwesterleins gedachten wir, das im ersten
+Kindbette verstorben und nun seit lange schon mit Vater und Mutter
+einer froehlichen Auferstehung entgegenharrete.--Wir hatten die
+Laeden nicht vorgeschlagen; denn es that uns wohl, durch das Dunkel,
+so draussen auf den Erdenwohnungen der Stadt lag, in das
+Sternenlicht des ewigen Himmels hinauszublicken.
+
+Am Ende verstummten wir beide in uns selber, und wie auf einem
+dunkeln Strome trieben meine Gedanken zu ihr, bei der sie allzeit
+Rast und Unrast fanden.--Da, gleich einem Stern aus unsichtbaren
+Hoehen, fiel es mir jaehlings in die Brust: Die Augen des schoenen
+blassen Knaben, es waren ja ihre Augen!  Wo hatte ich meine Sinne
+denn gehabt!--Aber dann, wenn sie es war, wenn ich sie selber schon
+gesehen?--Welch schreckbare Gedanken stuermten auf mich ein!
+
+Indem legte sich die eine Hand meines Bruders mir auf die Schulter,
+mit der andern wies er auf den dunkeln Markt hinaus, von wannen
+aber itzt ein heller Schein zu uns herueberschwankte.  "Sieh nur!"
+sagte er.  "Wie gut, dass wir das Pflaster mit Sand und Heide
+ausgestopfet haben!  Die kommen von des Glockengiessers Hochzeit;
+aber an ihren Stockleuchten sieht man, dass sie gleichwohl hin und
+wider stolpern."
+
+Mein Bruder hatte recht.  Die tanzenden Leuchten zeugeten deutlich
+von der Trefflichkeit des Hochzeitschmauses; sie kamen uns so nahe,
+dass die zwei gemalten Scheiben, so letzlich von meinem Bruder als
+eines Glasers Meisterstueck erstanden waren, in ihren satten Farben
+wie in Feuer gluehten.  Als aber dann die Gesellschaft an unserem
+Hause laut redend in die Kraemerstrasse einbog, hoerete ich einen
+unter ihnen sagen: "Ei freilich; das hat der Teufel uns verpurret!
+Hatte mich leblang darauf gespitzet, einmal eine richtige Hex so in
+der Flammen singen zu hoeren!"
+
+Die Leuchten und die lustigen Leute gingen weiter, und draussen die
+Stadt lag wieder still und dunkel.
+
+"O weh!" sprach mein Bruder; "den truebet, was mich troestet."
+
+Da fiel es mir erst wieder bei, dass am naechsten Morgen die Stadt
+ein grausam Spectacul vor sich habe.  Zwar war die junge Person, so
+wegen einbekannten Buendnisses mit dem Satan zu Aschen sollte
+verbrannt werden, am heutigen Morgen vom Frone todt in ihrem Kerker
+aufgefunden worden; aber dem todten Leibe musste gleichwohl sein
+peinlich Recht geschehen.
+
+Das war nun vielen Leuten gleich einer kalt gestellten Suppen.
+Hatte doch auch die Buchfuehrer-Witwe Liebernickel, so unter dem
+Thurm der Kirche den gruenen Buecherschranken hat, mir am Mittage, da
+ich wegen der Zeitung bei ihr eingetreten, aufs heftigste geklaget,
+dass nun das Lied, so sie im voraus darueber habe anfertigen und
+drucken lassen, nur kaum noch passen werde wie die Faust aufs Auge.
+Ich aber, und mit mir mein viellieber Bruder, hatte so meine
+eigenen Gedanken von dem Hexenwesen und freuete mich, dass unser
+Herrgott--denn der war es doch wohl gewesen--das arme junge Mensch
+so gnaediglich in seinen Schoss genommen hatte.
+
+Mein Bruder, welcher weichen Herzens war, begann gleichwohl der
+Pflichten seines Amts sich zu beklagen; denn er hatte drueben von
+der Rathhaustreppe das Urthel zu verlesen, sobald der Racker den
+todten Leichnam davor aufgefahren, und hernach auch der
+Justification selber zu assistiren.  "Es schneidet mir schon itzund
+in das Herz", sagte er, "das greuelhafte Gejohle, wenn sie mit dem
+Karren die Strasse herabkommen; denn die Schulen werden ihre Buben
+und die Zunftmeister ihre Lehrburschen loslassen.--An deiner Statt",
+fuegete er bei, "der du ein freier Vogel bist, wuerde ich aufs Dorf
+hinausmachen und an dem Conterfey des schwarzen Pastors weiter
+malen!"
+
+Nun war zwar festgesetzet worden, dass ich am naechstfolgenden Tage
+erst wieder hinauskaeme; aber mein Bruder redete mir zu, unwissend,
+wie er die Ungeduld in meinem Herzen schuerete; und so geschah es,
+dass alles sich erfuellen musste, was ich getreulich in diesen
+Blaettern niederschreiben werde.
+
+Am andern Morgen, als drueben vor meinem Kammerfenster nur kaum der
+Kirchthurmhahn in rothem Fruehlicht blinkte, war ich schon von
+meinem Lager aufgesprungen; und bald schritt ich ueber den Markt,
+allwo die Baecker, vieler Kaeufer harrend, ihre Brotschragen schon
+geoeffnet hatten; auch sahe ich, wie an dem Rathhause der
+Wachtmeister und die Fussknechte in Bewegung waren, und hatte Einer
+bereits einen schwarzen Teppich ueber das Gelaender der grossen Treppe
+aufgehangen; ich aber ging durch den Schwibbogen, so unter dem
+Rathause ist, eilends zur Stadt hinaus.
+
+Als ich hinter dem Schlossgarten auf dem Steige war, sahe ich drueben
+bei der Lehmkuhle, wo sie den neuen Galgen hingesetzet, einen
+maechtigen Holzstoss aufgeschichtet.  Ein paar Leute hantirten noch
+daran herum, und mochten das der Fron und seine Knechte sein, die
+leichten Brennstoff zwischen die Hoelzer thaten; von der Stadt her
+aber kamen schon die ersten Buben ueber die Felder ihnen zugelaufen.
+Ich achtete dess nicht weiter, sondern wanderte ruestig fuerbass, und
+da ich hinter den Baeumen hervortrat, sahe ich mir zur Linken das
+Meer im ersten Sonnenstrahl entbrennen, der im Osten ueber die Heide
+emporstieg.  Da musste ich meine Haende falten:
+
+O Herr, mein Gott und Christ,
+Sei gnaedig mit uns allen,
+Die wir in Suend gefallen,
+Der du die Liebe bist!--
+
+Als ich draussen war, wo die breite Landstrasse durch die Heide
+fuehrte, begegneten mir viele Zuege von Bauern; sie hatten ihre
+kleinen Jungen und Dirnen an den Haenden und zogen sie mit sich fort.
+
+"Wohin strebet ihr denn so eifrig?" fragte ich den einen Haufen;
+"es ist ja doch kein Markttag heute in der Stadt."
+
+Nun, wie ich's wohl zum voraus wusste, sie wollten die Hexe, das
+junge Satansmensch, verbrennen sehen.
+
+--"Aber die Hexe ist ja todt!"
+
+"Freilich, das ist ein Verdruss", meineten sie; "aber es ist unserer
+Hebamme, der alten Mutter Siebenzig, ihre Schwestertochter; da
+koennen wir nicht aussen bleiben und muessen mit dem Reste schon
+fuerlieb nehmen."--
+
+--Und immer neue Scharen kamen daher; und itzund taucheten auch
+schon Wagen aus dem Morgennebel, die statt mit Kornfrucht heut mit
+Menschen voll geladen waren.--Da ging ich abseits ueber die Heide,
+obwohl noch der Nachtthau von dem Kraute rann; denn mein Gemueth
+verlangte nach der Einsamkeit; und ich sahe von fern, wie es den
+Anschein hatte, das ganze Dorf des Weges nach der Stadt ziehen.
+Als ich auf dem Huenenhuegel stund, der hier inmitten der Heide liegt,
+ueberfiel es mich, als muesse auch ich zur Stadt zurueckkehren oder
+etwan nach links hinab an die See gehen, oder nach dem kleinen
+Dorfe, das dort unten hart am Strande liegt; aber vor mir in der
+Luft schwebete etwas wie ein Glueck, wie eine rasende Hoffnung, und
+es schuettelte mein Gebein, und meine Zaehne schlugen an einander.
+'Wenn sie es wirklich war, so letzlich mit meinen eigenen
+Augen ich erblicket, und wenn dann heute--' Ich fuehlte mein
+Herz gleich einem Hammer an den Rippen; ich ging weit um durch die
+Heide; ich wollte nicht sehen, ob auf der Wagen einem auch der
+Prediger nach der Stadt fahre.--Aber ich ging dennoch endlich
+seinem Dorfe zu.
+
+Als ich es erreichet hatte, schritt ich eilends nach der Thuer des
+Kuesterhauses.  Sie war verschlossen.  Eine Weile stund ich
+unschluessig; dann hub ich mit der Faust zu klopfen an.  Drinnen
+blieb alles ruhig; als ich aber staerker klopfte, kam des Kuesters
+alte halb blinde Trienke aus einem Nachbarhause.
+
+"Wo ist der Kuester?" fragte ich.
+
+--"Der Kuester?  Mit dem Priester in die Stadt gefahren."
+
+Ich starrete die Alte an; mir war, als sei ein Blitz durch mich
+dahin geschlagen.
+
+"Fehler Euch etwas, Herr Maler?" frug sie.
+
+Ich schuettelte den Kopf und sagte nur: "So ist wohl heute keine
+Schule, Trienke?"
+
+--"Bewahre!  Die Hexe wird ja verbrannt!"
+
+Ich liess mir von der Alten das Haus aufschliessen, holte mein
+Malergeraethe und das fast vollendete Bildniss aus des Kuesters
+Schlafkammer und richtete, wie gewoehnlich, meine Staffelei in dem
+leeren Schulzimmer.  Ich pinselte etwas an der Gewandung; aber ich
+suchte damit nur mich selber zu beluegen; ich hatte keinen Sinn zum
+Malen; war ja um dessen willen auch nicht hieher gekommen.
+
+Die Alte kam hereingelaufen, stoehnte ueber die arge Zeit und redete
+ueber Bauern- und Dorfsachen, die ich nicht verstund; mich selber
+draengete es, sie wieder einmal nach des Predigers Frau zu fragen,
+ob selbige alt oder jung, und auch, woher sie gekommen sei; allein
+ich brachte das Wort nicht ueber meine Zungen.  Dagegen begann die
+Alte ein lang Gespinste von der Hex und ihrer Sippschaft hier im
+Dorfe und von der Mutter Siebenzig, so mit Vorspuksehen behaftet
+sei; erzaehlete auch, wie selbige zur Nacht, da die Gicht dem alten
+Weibe keine Ruh gelassen, drei Leichlaken ueber des Pastors Hausdach
+habe fliegen sehen: es gehe aber solch Gesichte allzeit richtig aus,
+und Hoffart komme vor dem Falle; denn sei die Frau Pastorin bei
+aller ihrer Vornehmheit doch nur eine blasse und schwaechliche
+Kreatur.
+
+Ich mochte solch Geschwaetz nicht fuerder hoeren; ging daher aus dem
+Hause und auf dem Wege herum, da wo das Pastorat mit seiner Fronte
+gegen die Dorfstrasse liegt; wandte auch unter bangem Sehnen meine
+Augen nach den weissen Fenstern, konnte aber hinter den blinden
+Scheiben nichts gewahren als ein paar Blumenscherben, wie sie
+ueberall zu sehen sind.--Ich haette nun wohl umkehren moegen; aber ich
+ging dennoch weiter.  Als ich auf den Kirchhof kam, trug von der
+Stadtseite der Wind ein wimmernd Glockenlaeuten an mein Ohr; ich
+aber wandte mich und blickte hinab nach Westen, wo wiederum das
+Meer wie lichtes Silber am Himmelssaume hinfloss, und war doch ein
+tobend Unheil dort gewesen, worin in einer Nacht des Hoechsten Hand
+viel tausend Menschenleben hingeworfen hatte.  Was kruemmete denn
+ich mich so gleich einem Wurme?--Wir sehen nicht, wie seine Wege
+fuehren!
+
+Ich weiss nicht mehr, wohin mich damals meine Fuesse noch getragen
+haben; ich weiss nur, dass ich in einem Kreis gegangen bin; denn da
+die Sonne fast zur Mittagshoehe war, langete ich wieder bei der
+Kuesterei an.  Ich ging aber nicht in das Schulzimmer an meine
+Staffelei, sondern durch das Hinterpfoertlein wieder zum Hause
+hinaus.--
+
+
+Das aermliche Gaertlein ist mir unvergessen, obschon seit jenem Tage
+meine Augen es nicht mehr gesehen.--Gleich dem des Predigerhauses
+von der anderen Seite, trat es als ein breiter Streifen in die
+Priesterkoppel; inmitten zwischen beiden aber war eine Gruppe
+dichter Weidenbuesche, welche zur Einfassung einer Wassergrube
+dienen mochten; denn ich hatte einmal eine Magd mit vollem Eimer
+wie aus einer Tiefe daraus hervorsteigen sehen.
+
+Als ich ohne viel Gedanken, nur mein Gemuethe erfuellet von nicht zu
+zwingender Unrast, an des Kuesters abgeheimseten Bohnenbeeten
+hinging, hoerete ich von der Koppel draussen eine Frauenstimme von
+gar holdem Klang, und wie sie liebreich einem Kinde zusprach.
+
+Unwillens schritt ich solchem Schalle nach; so mochte einst
+der griechische Heidengott mit seinem Stabe die Todten nach
+sich gezogen haben.  Schon war ich am jenseitigen Rande des
+Holundergebuesches, das hier ohne Verzaeunung in die Koppel auslaeuft,
+da sahe ich den kleinen Johannes mit einem Aermchen voll Moos, wie
+es hier in dem kuemmerlichen Grase waechst, gegenueber hinter die
+Weiden gehen; er mochte sich dort damit nach Kinderart ein Gaertchen
+angeleget haben.  Und wieder kam die holde Stimme an mein Ohr: "Nun
+heb nur an; nun hast du einen ganzen Haufen!  Ja, ja; ich such
+derweil noch mehr; dort am Holunder waechst genug!"
+
+Und dann trat sie selber hinter den Weiden hervor; ich hatte ja
+laengst schon nicht gezweifelt.--Mit den Augen auf dem Boden suchend,
+schritt sie zu mir her, so dass ich ungestoeret sie betrachten
+durfte; und mir war, als gliche sie nun gar seltsam dem Kinde
+wieder, das sie einst gewesen war, fuer das ich den "Buhz" einst von
+dem Baum herabgeschossen hatte; aber dieses Kinderantlitz von heute
+war bleich und weder Glueck noch Muth darin zu lesen.
+
+So war sie maehlich naeher kommen, ohne meiner zu gewahren; dann
+kniete sie nieder an einem Streifen Moos, der unter den Bueschen
+hinlief; doch ihre Haende pflueckten nicht davon; sie liess das Haupt
+auf ihre Brust sinken, und es war, als wolle sie nur ungesehen vor
+dem Kinde in ihrem Leide ausruhen.
+
+Da rief ich leise: "Katharina!"
+
+Sie blickte auf, ich aber ergriff ihre Hand und zog sie gleich
+einer Willenlosen zu mir unter den Schatten der Buesche.  Doch als
+ich sie endlich also nun gefunden hatte und keines Wortes maechtig
+vor ihr stund, da sahen ihre Augen weg von mir, und mit fast einer
+fremden Stimme sagte sie: "Es ist nun einmal so, Johannes!  Ich
+wusste wohl, du seiest der fremde Maler; ich dachte nur nicht, dass
+du heute kommen wuerdest."
+
+Ich hoerete das, und dann sprach ich es aus: "Katharina,--so bist du
+des Predigers Eheweib?"
+
+Sie nickte nicht; sie sah mich starr und schmerzlich an.  "Er hat
+das Amt dafuer bekommen", sagte sie, "und dein Kind den ehrlichen
+Namen."
+
+--"Mein Kind, Katharina?"
+
+"Und fuehltest du das nicht?  Er hat ja doch auf deinem Schoss
+gesessen; einmal doch, er selbst hat es mir erzaehlet."
+
+--Moege keines Menschen Brust ein solches Weh zerfleischen!--"Und du,
+du und mein Kind, ihr solltet mir verloren sein!"
+
+Sie sah mich an, sie weinte nicht, sie war nur gaenzlich
+todtenbleich.
+
+"Ich will das nicht!" schrie ich; "ich will ..." Und eine wilde
+Gedankenjagd rasete mir durchs Hirn.
+
+Aber ihre kleine Hand hatte gleich einem kuehlen Blatte sich auf
+meine Stirn gelegt, und ihre braunen Augensterne auf dem blassen
+Antlitz sahen mich flehend an.  "Du, Johannes", sagte sie, "du
+wirst es nicht sein, der mich noch elender machen will."
+
+--"Und kannst denn du so leben, Katharina?"
+
+"Leben?--Es ist ja doch ein Glueck dabei; er liebt das Kind;--was
+ist denn mehr noch zu verlangen?"
+
+--"Und von uns, von dem, was einst gewesen ist, weiss er davon?"
+
+"Nein, nein!" rief sie heftig.  "Er nahm die Suenderin zum Weibe:
+mehr nicht.  O Gott, ist's denn nicht genug, dass jeder neue Tag ihm
+angehoert!"
+
+In diesem Augenblicke toenete ein zarter Gesang zu uns herueber.--
+"Das Kind", sagte sie.  "Ich muss zu dem Kinde; es koennte ihm ein
+Leids geschehen!"
+
+Aber meine Sinne zieleten nur auf das Weib, das sie begehrten.
+"Bleib doch", sagte ich, "es spielet ja froehlich dort mit seinem
+Moose."
+
+Sie war an den Rand des Gebuesches getreten und horchete hinaus.
+Die goldene Herbstsonne schien so warm hernieder, nur leichter
+Hauch kam von der See herauf Da hoerten wir von jenseits durch die
+Weiden das Stimmlein unseres Kindes singen:
+
+Zwei Englein, die mich decken,
+Zwei Englein, die mich strecken,
+Und zweie, so mich weisen
+In das himmlische Paradeisen.
+
+Katharina war zurueckgetreten, und ihre Augen sahen gross und
+geisterhaft mich an.  "Und nun leb wohl, Johannes", sprach sie
+leise; "auf Nimmerwiedersehen hier auf Erden!"
+
+Ich wollte sie an mich reissen; ich streckte beide Arme nach ihr aus;
+doch sie wehrete mich ab und sagte sanft: "Ich bin des anderen
+Mannes Weib; vergiss das nicht."
+
+Mich aber hatte auf diese Worte ein fast wilder Zorn ergriffen.
+"Und wessen, Katharina", sprach ich hart, "bist du gewesen, ehe
+bevor du sein geworden?"
+
+Ein weher Klaglaut brach aus ihrer Brust; sie schlug die Haende vor
+ihr Angesicht und rief.  "Weh mir!  O wehe, mein entweihter armer
+Leib!"
+
+Da wurd ich meiner schier unmaechtig; ich riss sie jaeh an meine Brust,
+ich hielt sie wie mit Eisenklammern und hatte sie endlich, endlich
+wieder!  Und ihre Augen sanken in die meinen, und ihre rothen
+Lippen duldeten die meinen; wir umschlangen uns inbruenstiglich; ich
+haette sie toedten moegen, wenn wir also mit einander haetten sterben
+koennen.  Und als dann meine Blicke voll Seligkeit auf ihrem Antlitz
+weideten, da sprach sie, fast erstickt von meinen Kuessen: "Es ist
+ein langes, banges Leben!  O Jesu Christ, vergib mir diese Stunde!"
+
+--Es kam eine Antwort; aber es war die harte Stimme jenes Mannes,
+aus dessen Munde ich itzt zum ersten Male ihren Namen hoerte.  Der
+Ruf kam von drueben aus dem Predigergarten, und noch einmal und
+haerter rief es: "Katharina!"
+
+Da war das Glueck vorbei; mit einem Blicke der Verzweiflung sahe sie
+mich an; dann stille wie ein Schatten war sie fort.
+
+--Als ich in die Kuesterei trat, war auch schon der Kuester wieder da.
+Er begann sofort von der Justification der armen Hexe auf mich
+einzureden.  "Ihr haltet wohl nicht viel davon", sagte er; "sonst
+waeret Ihr heute nicht aufs Dorf gegangen, wo der Herr Pastor gar
+die Bauern und ihre Weiber in die Stadt getrieben."
+
+Ich hatte nicht die Zeit zur Antwort; ein gellender Schrei
+durchschnitt die Luft; ich werde ihn leblang in den Ohren haben.
+
+"Was war das, Kuester?" rief ich.
+
+Der Mann riss ein Fenster auf und horchete hinaus, aber es geschah
+nichts weiter.  "So mir Gott", sagte er, "es war ein Weib, das so
+geschrien hat; und drueben von der Priesterkoppel kam's."
+
+Indem war auch die alte Trienke in die Thuer gekommen.  "Nun, Herr?"
+rief sie mir zu.  "Die Leichlaken sind auf des Pastors Dach
+gefallen!"
+
+--"Was soll das heissen, Trienke?"
+
+"Das soll heissen, dass sie des Pastors kleinen Johannes soeben aus
+dem Wasser ziehen."
+
+Ich stuerzete aus dem Zimmer und durch den Garten auf die
+Priesterkoppel; aber unter den Weiden fand ich nur das dunkle
+Wasser und Spuren feuchten Schlammes daneben auf dem Grase.--Ich
+bedachte mich nicht, es war ganz wie von selber, dass ich durch das
+weisse Pfoertchen in des Pastors Garten ging.  Da ich eben ins Haus
+wollte, trat er selber mir entgegen.
+
+Der grosse knochige Mann sah gar wueste aus; seine Augen waren
+geroethet, und das schwarze Haar hing wirr ihm ins Gesicht.  "Was
+wollt Ihr?" sagte er.
+
+Ich starrete ihn an; denn mir fehlete das Wort.  Ja, was wollte ich
+denn eigentlich?
+
+"Ich kenne Euch!" fuhr er fort.  "Das Weib hat endlich alles
+ausgeredet."
+
+Das machte mir die Zunge frei.  "Wo ist mein Kind!" rief ich.
+
+Er sagte: "Die beiden Eltern haben es ertrinken lassen."
+
+--"So lasst mich zu meinem todten Kinde!"
+
+Allein, da ich an ihm vorbei in den Hausflur wollte, draengete er
+mich zurueck.  "Das Weib", sprach er, "liegt bei dem Leichnam und
+schreit zu Gott aus ihren Suenden.  Ihr sollt nicht hin, um ihrer
+armen Seelen Seligkeit!"
+
+Was dermalen selber ich gesprochen, ist mir schier vergessen; aber
+des Predigers Worte gruben sich in mein Gedaechtniss.  "Hoeret mich!"
+sprach er.  "So von Herzen ich Euch hasse, wofuer dereinst mich Gott
+in seiner Gnade wolle buessen lassen, und Ihr vermuthendlich auch
+mich--noch ist Eines uns gemeinsam.--Geht itzo heim und bereitet
+eine Tafel oder Leinewand!  Mit solcher kommet morgen in der Fruehe
+wieder und malet darauf des todten Knaben Antlitz.  Nicht mir oder
+meinem Hause; der Kirchen hier, wo er sein kurz unschuldig Leben
+ausgelebet, moeget Ihr das Bildniss stiften.  Moeg es dort die
+Menschen mahnen, dass vor der knoechern Hand des Todes alles Staub
+ist!"
+
+Ich blickte auf den Mann, der kurz vordem die edle Malerkunst ein
+Buhlweib mit der Welt gescholten; aber ich sagte zu, dass alles so
+geschehen moege.
+
+--Daheim indessen wartete meiner eine Kunde, so meines Lebens
+Schuld und Busse gleich einem Blitze jaehlings aus dem Dunkel hob, so
+dass ich Glied um Glied die ganze Kette vor mir leuchten sahe.
+
+Mein Bruder, dessen schwache Constitution von dem abscheulichen
+Spectacul, dem er heute assistiren muessen, hart ergriffen war,
+hatte sein Bette aufgesucht.  Da ich zu ihm eintrat, richtete er
+sich auf "Ich muss noch eine Weile ruhen", sagte er, indem er ein
+Blatt der Wochenzeitung in meine Hand gab; "aber lies doch dieses!
+Da wirst du sehen, dass Herrn Gerhardus' Hof in fremde Haende kommen,
+massen Junker Wulf ohn Weib und Kind durch eines tollen Hundes Biss
+gar jaemmerlichen Todes verfahren ist."
+
+Ich griff nach dem Blatte, das mein Bruder mir entgegenhielt; aber
+es fehlte nicht viel, dass ich getaumelt waere.  Mir war's bei dieser
+Schreckenspost, als spraengen des Paradieses Pforten vor mir auf;
+aber schon sahe ich am Eingange den Engel mit dem Feuerschwerte
+stehen, und aus meinem Herzen schrie es wieder: O Hueter, Hueter, war
+dein Ruf so fern!--Dieser Tod haette uns das Leben werden koennen;
+nun war's nur ein Entsetzen zu den andern.
+
+Ich sass oben auf meiner Kammer.  Es wurde Daemmerung, es wurde Nacht;
+ich schaute in die ewigen Gestirne, und endlich suchte auch ich
+mein Lager.  Aber die Erquickung des Schlafes ward mir nicht zu
+Theil.  In meinen erregten Sinnen war es mir gar seltsamlich, als
+sei der Kirchthurm drueben meinem Fenster nah gerueckt; ich fuehlte
+die Glockenschlaege durch das Holz der Bettstatt droehnen, und ich
+zaehlete sie alle die ganze Nacht entlang.  Doch endlich daemmerte
+der Morgen.  Die Balken an der Decke hingen noch wie Schatten ueber
+mir, da sprang ich auf, und ehbevor die erste Lerche aus den
+Stoppelfeldern stieg, hatte ich allbereits die Stadt im Ruecken.
+
+Aber so fruehe ich auch ausgegangen, ich traf den Prediger schon auf
+der Schwelle seines Hauses stehen.  Er geleitete mich auf den Flur
+und sagte, dass die Holztafel richtig angelanget, auch meine
+Staffelei und sonstiges Malergeraeth aus dem Kuesterhause
+heruebergeschaffet sei.  Dann legte er seine Hand auf die Klinke
+einer Stubenthuer.
+
+Ich jedoch hielt ihn zurueck und sagte: "Wenn es in diesem Zimmer
+ist, so wollet mir vergoennen, bei meinem schweren Werke allein zu
+sein!"
+
+"Es wird Euch niemand stoeren", entgegnete er und zog die Hand
+zurueck.  "Was Ihr zur Staerkung Eueres Leibes beduerfet, werdet Ihr
+drueben in jenem Zimmer finden." Er wies auf eine Thuer an der
+anderen Seite des Flures; dann verliess er mich.
+
+Meine Hand lag itzund statt der des Predigers auf der Klinke.  Es
+war todtenstill im Hause; eine Weile musste ich mich sammeln, bevor
+ich oeffnete.
+
+
+Es war ein grosses, fast leeres Gemach, wohl fuer den
+Confirmandenunterricht bestimmt, mit kahlen weissgetuenchten Waenden;
+die Fenster sahen ueber oede Felder nach dem fernen Strand hinaus.
+Inmitten des Zimmers aber stund ein weisses Lager aufgebahret.  Auf
+dem Kissen lag ein bleiches Kinderangesicht; die Augen zu; die
+kleinen Zaehne schimmerten gleich Perlen aus den blassen Lippen.
+
+Ich fiel an meines Kindes Leiche nieder und sprach ein bruenstiglich
+Gebet.  Dann ruestete ich alles, wie es zu der Arbeit noethig war;
+und dann malte ich--rasch, wie man die Todten malen muss, die nicht
+zum zweitenmal dasselbig Antlitz zeigen.  Mitunter wurd ich wie von
+der andauernden grossen Stille aufgeschrecket; doch wenn ich inne
+hielt und horchte, so wusste ich bald, es sei nichts da gewesen.
+Einmal auch war es, als draengen leise Odemzuege an mein Ohr.--Ich
+trat an das Bette des Todten, aber da ich mich zu dem bleichen
+Muendlein niederbeugete, beruehrte nur die Todeskaelte meine Wangen.
+
+Ich sahe um mich; es war noch eine Thuer im Zimmer; sie mochte zu
+einer Schlafkammer fuehren, vielleicht dass es von dort gekommen war!
+Allein so scharf ich lauschte, ich vernahm nichts wieder; meine
+eigenen Sinne hatten wohl ein Spiel mit mir getrieben.
+
+So setzete ich mich denn wieder, sahe auf den kleinen Leichnam
+und malete weiter; und da ich die leeren Haendchen ansahe, wie
+sie auf dem Linnen lagen, so dachte ich: 'Ein klein Geschenk
+doch musst du deinem Kinde geben!' Und ich malete auf seinem
+Bildniss ihm eine weisse Wasserlilie in die Hand, als sei es spielend
+damit eingeschlafen.  Solcher Art Blumen gab es selten in der
+Gegend hier, und mocht es also ein erwuenschet Angebinde sein.
+
+Endlich trieb mich der Hunger von der Arbeit auf, mein ermuedeter
+Leib verlangte Staerkung.  Legete sonach den Pinsel und die Palette
+fort und ging ueber den Flur nach dem Zimmer, so der Prediger mir
+angewiesen hatte.  Indem ich aber eintrat, waere ich vor
+Ueberraschung bald zurueckgewichen; denn Katharina stund mir
+gegenueber, zwar in schwarzen Trauerkleidern und doch in all dem
+Zauberschein, so Glueck und Liebe in eines Weibes Antlitz wirken
+moegen.
+
+Ach, ich wusste es nur zu bald; was ich hier sahe, war nur ihr
+Bildniss, das ich selber einst gemalet.  Auch fuer dieses war also
+nicht mehr Raum in ihres Vaters Haus gewesen.--Aber wo war sie
+selber denn?  Hatte man sie fortgebracht, oder hielt man sie auch
+hier gefangen?--Lang, gar lange sahe ich das Bildniss an; die alte
+Zeit stieg auf und quaelete mein Herz.  Endlich, da ich musste, brach
+ich einen Bissen Brot und stuerzete ein paar Glaeser Wein hinab; dann
+ging ich zurueck zu unserem todten Kinde.
+
+Als ich drueben eingetreten und mich an die Arbeit setzen wollte,
+zeigete es sich, dass in dem kleinen Angesicht die Augenlider um ein
+weniges sich gehoben hatten.  Da bueckete ich mich hinab, im Wahne,
+ich moechte noch einmal meines Kindes Blick gewinnen; als aber die
+kalten Augensterne vor mir lagen, ueberlief mich Grausen; mir war,
+als saehe ich die Augen jener Ahne des Geschlechtes, als wollten sie
+noch hier aus unseres Kindes Leichenantlitz kuenden: "Mein Fluch hat
+doch euch beide eingeholet!" Aber zugleich--ich haette es um alle
+Welt nicht lassen koennen--umfing ich mit beiden Armen den kleinen
+blassen Leichnam und hob ihn auf an meine Brust und herzete unter
+bitteren Thraenen zum ersten Male mein geliebtes Kind.  "Nein, nein,
+mein armer Knabe, deine Seele, die gar den finstern Mann zur Liebe
+zwang, die blickte nicht aus solchen Augen; was hier herausschaut,
+ist alleine noch der Tod.  Nicht aus der Tiefe schreckbarer
+Vergangenheit ist es heraufgekommen; nichts anderes ist da als
+deines Vaters Schuld; sie hat uns alle in die schwarze Fluth
+hinabgerissen."
+
+Sorgsam legte ich dann wieder mein Kind in seine Kissen und drueckte
+ihm sanft die beiden Augen zu.  Dann tauchete ich meinen Pinsel in
+ein dunkles Roth und schrieb unten in den Schatten des Bildes die
+Buchstaben: C.  P.  A.  S.  Das sollte heissen: Culpa Patris Aquis
+Submersus, "Durch Vaters Schuld in der Fluth versunken".--Und mit
+dem Schalle dieser Worte in meinem Ohre, die wie ein schneidend
+Schwert durch meine Seele fuhren, malete ich das Bild zu Ende.
+
+Waehrend meiner Arbeit hatte wiederum die Stille im Hause
+fortgedauert, nur in der letzten Stunde war abermalen durch die
+Thuer, hinter welcher ich eine Schlafkammer vermuthet hatte, ein
+leises Geraeusch hereingedrungen.--War Katharina dort, um ungesehen
+bei meinem schweren Werk mir nah zu sein?  Ich konnte es nicht
+entraethseln.
+
+Es war schon spaet.  Mein Bild war fertig, und ich wollte mich zum
+Gehen wenden; aber mir war, als muesse ich noch einen Abschied
+nehmen, ohne den ich nicht von hinnen koenne.
+
+So stand ich zoegernd und schaute durch das Fenster auf die oeden
+Felder draussen, wo schon die Daemmerung begunnte sich zu breiten; da
+oeffnete sich vom Flure her die Thuer und der Prediger trat zu mir
+herein.
+
+Er gruesste schweigend; dann mit gefalteten Haenden blieb er stehen
+und betrachtete wechselnd das Antlitz auf dem Bilde und das des
+kleinen Leichnams vor ihm, als ob er sorgsame Vergleichung halte.
+Als aber seine Augen auf die Lilie in der gemalten Hand des Kindes
+fielen, hub er wie im Schmerze seine beiden Haende auf, und ich sahe,
+wie seinen Augen jaehlings ein reicher Thraenenquell entstuerzete.
+
+Da streckte auch ich meine Arme nach dem Todten und rief ueberlaut:
+"Leb wohl, mein Kind!  O mein Johannes, lebe wohl!"
+
+Doch in demselben Augenblicke vernahm ich leise Schritte in der
+Nebenkammer; es tastete wie mit kleinen Haenden an der Thuer; ich
+hoerte deutlich meinen Namen rufen--oder war es der des todten
+Kindes?--Dann rauschte es wie von Frauenkleidern hinter der Thuere
+nieder, und das Geraeusch vom Falle eines Koerpers wurde hoerbar.
+
+"Katharina!" rief ich.  Und schon war ich hinzugesprungen und
+ruettelte an der Klinke der fest verschlossenen Thuer; da legte die
+Hand des Pastors sich auf meinen Arm: "Das ist meines Amtes!" sagte
+er.  "Gehet itzo!  Aber gehet in Frieden; und moege Gott uns allen
+gnaedig sein!"
+
+--Ich bin dann wirklich fortgegangen; ehe ich es selbst begriff,
+wanderte ich schon draussen auf der Heide auf dem Weg zur Stadt.
+
+Noch einmal wandte ich mich um und schaute nach dem Dorf zurueck,
+das nur noch wie Schatten aus dem Abenddunkel ragte.  Dort lag mein
+todtes Kind--Katharina--alles, alles!--Meine alte Wunde brannte mir
+in meiner Brust; und seltsam, was ich niemals hier vernommen, ich
+wurde ploetzlich mir bewusst, dass ich vom fernen Strand die Brandung
+toesen hoerete.  Kein Mensch begegnete mir, keines Vogels Ruf vernahm
+ich; aber aus dem dumpfen Brausen des Meeres toenete es mir
+immerfort, gleich einem finsteren Wiegenliede: Aquis submersus
+aquis submersus!
+
+
+Hier endete die Handschrift.
+
+Dessen Herr Johannes sich einstens im Vollgefuehl seiner Kraft
+vermessen, dass er's wohl auch einmal in seiner Kunst den Groesseren
+gleichzutun verhoffe, das sollten Worte bleiben, in die leere Luft
+gesprochen.
+
+Sein Name gehoert nicht zu denen, die genannt werden; kaum duerfte er
+in einem Kuenstlerlexikon zu finden sein; ja selbst in seiner
+engeren Heimat weiss niemand von einem Maler seines Namens.  Des
+grossen Lazarusbildes tut zwar noch die Chronik unserer Stadt
+Erwaehnung, das Bild selbst aber ist zu Anfang dieses Jahrhunderts
+nach dem Abbruch unserer alten Kirche gleich den anderen
+Kunstschaetzen derselben verschleudert und verschwunden.
+Aquis submersus
+
+
+Ende dieses Projekt Gutenberg Etextes Aquis submersus, von Theodor Storm.
+
+
+
+
+
+
+*** END OF THE PROJECT GUTENBERG EBOOK, AQUIS SUBMERSUS ***
+
+This file should be named 7aqsb10.txt or 7aqsb10.zip
+Corrected EDITIONS of our eBooks get a new NUMBER, 7aqsb11.txt
+VERSIONS based on separate sources get new LETTER, 7aqsb10a.txt
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext05 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext05
+
+Or /etext04, 03, 02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92,
+91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+ PROJECT GUTENBERG LITERARY ARCHIVE FOUNDATION
+ 809 North 1500 West
+ Salt Lake City, UT 84116
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+

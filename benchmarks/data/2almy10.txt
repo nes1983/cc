@@ -1,0 +1,2412 @@
+Project Gutenberg Etext of Flower of the Mind, by Alice Meynell
+The Project Gutenberg Etext of Later Poems, by Alice Meynell
+#9 and #10 in our series by Alice Meynell
+
+This file contains two complete Alice Meynell books.
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+Flower of the Mind
+and
+Later Poems
+
+by Alice Meynell
+
+February, 2000 [Etext #2080]
+
+
+Project Gutenberg Etext of Flower of the Mind, by Alice Meynell
+The Project Gutenberg Etext of Later Poems, by Alice Meynell
+******This file should be named 2almy10.txt or 2almy10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 2almy11.txt
+VERSIONS based on separate sources get new LETTER, 2almy10a.txt
+
+
+This etext was prepared by David Price, email ccx074@coventry.ac.uk
+from the 1893 Grant Richards edition of The Flower of the Mind and
+the 1902 John Lane edition of Later Poems.
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we do usually do NOT! keep
+these books in compliance with any particular paper edition.
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, leaving time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-six text
+files per month, or 432 more Etexts in 1999 for a total of 2000+
+If these reach just 10% of the computerized population, then the
+total should reach over 200 billion Etexts given away this year.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only ~5% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding; currently our funding is mostly
+from Michael Hart's salary at Carnegie-Mellon University, and an
+assortment of sporadic gifts; this salary is only good for a few
+more years, so we are looking for something to replace it, as we
+don't want Project Gutenberg to be so dependent on one person.
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg/CMU": and are
+tax deductible to the extent allowable by law.  (CMU = Carnegie-
+Mellon University).
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails. . .try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+We would prefer to send you this information by email.
+
+******
+
+To access Project Gutenberg etexts, use any Web browser
+to view http://promo.net/pg.  This site lists Etexts by
+author and by title, and includes information about how
+to get involved with Project Gutenberg.  You could also
+download our past Newsletters, or subscribe here.  This
+is one of our major sites, please email hart@pobox.com,
+for a more complete list of our various sites.
+
+To go directly to the etext collections, use FTP or any
+Web browser to visit a Project Gutenberg mirror (mirror
+sites are available on 7 continents; mirrors are listed
+at http://promo.net/pg).
+
+Mac users, do NOT point and click, typing works better.
+
+Example FTP session:
+
+ftp sunsite.unc.edu
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+***
+
+**Information prepared by the Project Gutenberg legal advisor**
+
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg Association at
+Carnegie-Mellon University (the "Project").  Among other
+things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association/Carnegie-Mellon
+     University" within the 60 days following each
+     date you prepare (or were legally required to prepare)
+     your annual (or equivalent periodic) tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association / Carnegie-Mellon University".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+This etext was prepared by David Price, email ccx074@coventry.ac.uk
+from the 1893 Grant Richards edition of The Flower of the Mind and
+the 1902 John Lane edition of Later Poems.
+
+
+
+
+
+THE FLOWER OF THE MIND
+
+
+
+
+INTRODUCTION
+
+
+
+Partial collections of English poems, decided by a common subject
+or bounded by narrow dates and periods of literary history, are
+made at very short intervals, and the makers are safe from the
+reproach of proposing their own personal taste as a guide for the
+reading of others.  But a general Anthology gathered from the whole
+of English literature--the whole from Chaucer to Wordsworth--by a
+gatherer intent upon nothing except the quality of poetry, is a
+more rare enterprise.  It is hardly to be made without tempting the
+suspicion--nay, hardly without seeming to hazard the confession--of
+some measure of self-confidence.  Nor can even the desire to enter
+upon that labour be a frequent one--the desire of the heart of one
+for whom poetry is veritably "the complementary life" to set up a
+pale for inclusion and exclusion, to add honours, to multiply
+homage, to cherish, to restore, to protest, to proclaim, to depose;
+and to gain the consent of a multitude of readers to all those
+acts.  Many years, then--some part of a century--may easily pass
+between the publication of one general anthology and the making of
+another.
+
+The enterprise would be a sorry one if it were really arbitrary,
+and if an anthologist should give effect to passionate preferences
+without authority.  An anthology that shall have any value must be
+made on the responsibility of one but on the authority of many.
+There is no caprice; the mind of the maker has been formed for
+decision by the wisdom of many instructors.  It is the very study
+of criticism, and the grateful and profitable study, that gives the
+justification to work done upon the strongest personal impulse, and
+done, finally, in the mental solitude that cannot be escaped at the
+last.  In another order, moral education would be best crowned if
+it proved to have quick and profound control over the first
+impulses; its finished work would be to set the soul in a state of
+law, delivered from the delays of self-distrust; not action only,
+but the desires would be in an old security, and a wish would come
+to light already justified.  This would be the second--if it were
+not the only--liberty.  Even so an intellectual education might
+assuredly confer freedom upon first and solitary thoughts, and
+confidence and composure upon the sallies of impetuous courage.  In
+a word, it should make a studious anthologist quite sure about
+genius.  And all who have bestowed, or helped in bestowing, the
+liberating education have given their student the authority to be
+free.  Personal and singular the choice in such a book must be, not
+without right.
+
+Claiming and disclaiming so much, the gatherers may follow one
+another to harvest, and glean in the same fields in different
+seasons, for the repetition of the work can never be altogether a
+repetition.  The general consent of criticism does not stand still;
+and moreover, a mere accident has until now left a poet of genius
+of the past here and there to neglect or obscurity.  This is not
+very likely to befall again; the time has come when there is little
+or nothing left to discover or rediscover in the sixteenth century
+or the seventeenth; we know that there does not lurk another
+Crashaw contemned, or another Henry Vaughan disregarded, or another
+George Herbert misplaced.  There is now something like finality of
+knowledge at least; and therefore not a little error in the past is
+ready to be repaired.  This is the result of time.  Of the slow
+actions and reactions of critical taste there might be something to
+say, but nothing important.  No loyal anthologist perhaps will
+consent to acknowledge these tides; he will hardly do his work well
+unless he believe it to be stable and perfect; nor, by the way,
+will he judge worthily in the name of others unless he be resolved
+to judge intrepidly for himself.
+
+Inasmuch as even the best of all poems are the best upon
+innumerable degrees, the size of most anthologies has gone far to
+decide what degrees are to be gathered in and what left without.
+The best might make a very small volume, and be indeed the best, or
+a very large volume, and be still indeed the best.  But my labour
+has been to do somewhat differently--to gather nothing that did not
+overpass a certain boundary-line of genius.  Gray's Elegy, for
+instance, would rightly be placed at the head of everything below
+that mark.  It is, in fact, so near to the work of genius as to be
+most directly, closely, and immediately rebuked by genius; it meets
+genius at close quarters and almost deserves that Shakespeare
+himself should defeat it.  Mediocrity said its own true word in the
+Elegy:
+
+
+"Full many a flower is born to blush unseen,
+And waste its sweetness on the desert air."
+
+
+But greatness had said its own word also in a sonnet:
+
+
+"The summer flower is to the summer sweet
+Though to itself it only live and die."
+
+
+The reproof here is too sure; not always does it touch so quick,
+but it is not seldom manifest, and it makes exclusion a simple
+task.  Inclusion, on the other hand, cannot be so completely
+fulfilled.  The impossibility of taking in poems of great length,
+however purely lyrical, is a mechanical barrier, even on the plan
+of the present volume; in the case of Spenser's Prothalamion, the
+unmanageably autobiographical and local passage makes it
+inappropriate; some exquisite things of Landor's are lyrics in
+blank verse, and the necessary rule against blank verse shuts them
+out.  No extracts have been made from any poem, but in a very few
+instances a stanza or a passage has been dropped out.  No poem has
+been put in for the sake of a single perfectly fine passage; it
+would be too much to say that no poem has been put in for the sake
+of two splendid passages or so.  The Scottish ballad poetry is
+represented by examples that are to my mind finer than anything
+left out; still, it is but represented; and as the song of this
+multitude of unknown poets overflows by its quantity a collection
+of lyrics of genius, so does severally the song of Wordsworth,
+Crashaw, and Shelley.  It has been necessary, in considering
+traditional songs of evidently mingled authorship, to reject some
+one invaluable stanza or burden--the original and ancient surviving
+matter of a spoilt song--because it was necessary to reject the
+sequel that has cumbered it since some sentimentalist took it for
+his own.  An example, which makes the heart ache, is that burden of
+keen and remote poetry:
+
+
+"O the broom, the bonnie, bonnie broom,
+The broom of Cowdenknowes!"
+
+
+Perhaps some hand will gather all such precious fragments as these
+together one day, freed from what is alien in the work of the
+restorer.  It is inexplicable that a generation resolved to forbid
+the restoration of ancient buildings should approve the eighteenth
+century restoration of ancient poems; nay, the architectural
+"restorer" is immeasurably the more respectful.  In order to give
+us again the ancient fragments, it is happily not necessary to
+break up the composite songs which, since the time of Burns, have
+gained a national love.  Let them be, but let the old verses be
+also; and let them have, for those who desire it, the solitariness
+of their state of ruin.  Even in the cases--and they are not few--
+where Burns is proved to have given beauty and music to the ancient
+fragment itself, his work upon the old stanza is immeasurably finer
+than his work in his own new stanzas following, and it would be
+less than impiety to part the two.
+
+I have obeyed a profound conviction which I have reason to hope
+will be more commended in the future than perhaps it can be now, in
+leaving aside a multitude of composite songs--anachronisms, and
+worse than mere anachronisms, as I think them to be, for they patch
+wild feeling with sentiment of the sentimentalist.  There are some
+exceptions.  The one fine stanza of a song which both Sir Walter
+Scott and Burns restored is given with the restorations of both,
+those restorations being severally beautiful; and the burden,
+"Hame, hame, hame," is printed with the Jacobite song that carries
+it; this song seems so mingled and various in date and origin that
+no apology is needed for placing it amongst the bundle of Scottish
+ballads of days before the Jacobites.  Sir Patrick Spens is treated
+here as an ancient song.  It is to be noted that the modern, or
+comparatively modern, additions to old songs full of quantitative
+metre--"Hame, hame, hame," is one of these--full of long notes,
+rests, and interlinear pauses, are almost always written in
+anapaests.  The later writer has slipped away from the fine,
+various, and subtle metre of the older.  Assuredly the popularity
+of the metre which, for want of a term suiting the English rules of
+verse, must be called anapaestic, has done more than any other
+thing to vulgarise the national sense of rhythm and to silence the
+finer rhythms.  Anapaests came quite suddenly into English poetry
+and brought coarseness, glibness, volubility, dapper and fatuous
+effects.  A master may use it well, but as a popular measure it has
+been disastrous.  I would be bound to find the modern stanzas in an
+old song by this very habit of anapaests and this very
+misunderstanding of the long words and interlinear pauses of the
+older stanzas.  This, for instance, is the old metre:
+
+
+"Hame, hame, hame!  O hame fain wad I be!"
+
+
+and this the lamentable anapaestic line (from the same song):
+
+
+"Yet the sun through the mirk seems to promise to me -."
+
+
+It has been difficult to refuse myself the delight of including A
+Divine Love of Carew, but it seemed too bold to leave out four
+stanzas of a poem of seven, and the last four are of the poorest
+argument.  This passage at least shall speak for the first three:
+
+
+"Thou didst appear
+A glorious mystery, so dark, so clear,
+As Nature did intend
+All should confess, but none might comprehend."
+
+
+From Christ's Victory in Heaven of Giles Fletcher (out of reach for
+its length) it is a happiness to extract here at least the passage
+upon "Justice," who looks "as the eagle
+
+
+"that hath so oft compared
+Her eye with heaven's";
+
+
+from Marlowe's poem, also unmanageable, that in which Love ran to
+the priestess
+
+
+"And laid his childish head upon her breast";
+
+
+with that which tells how Night,
+
+
+"deep-drenched in misty Acheron,
+Heaved up her head, and half the world upon
+Breathed darkness forth";
+
+
+from Robert Greene two lines of a lovely passage:
+
+
+"Cupid abroad was lated in the night,
+His wings were wet with ranging in the rain";
+
+
+from Ben Jonson's Hue and Cry (not throughout fine) the stanza:
+
+
+"Beauties, have ye seen a toy,
+Called Love, a little boy,
+Almost naked, wanton, blind;
+Cruel now, and then as kind?
+If he be amongst ye, say;
+He is Venus' run-away";
+
+
+from Francis Davison:
+
+
+"Her angry eyes are great with tears";
+
+
+from George Wither:
+
+
+"I can go rest
+On her sweet breast
+That is the pride of Cynthia's train";
+
+
+from Cowley:
+
+
+"Return, return, gay planet of mine east"!
+
+
+The poems in which these are cannot make part of the volume, but
+the citation of the fragments is a relieving act of love.
+
+At the very beginning, Skelton's song to "Mistress Margery
+Wentworth" had almost taken a place; but its charm is hardly fine
+enough.
+
+If it is necessary to answer the inevitable question in regard to
+Byron, let me say that in another Anthology, a secondary Anthology,
+the one in which Gray's Elegy would have an honourable place, some
+more of Byron's lyrics would certainly be found; and except this
+there is no apology.  If the last stanza of the "Dying Gladiator"
+passage, or the last stanza on the cascade rainbow at Terni,
+
+
+"Love watching madness with unalterable mien,"
+
+
+had been separate poems instead of parts of Childe Harold, they
+would have been amongst the poems that are here collected in no
+spirit of arrogance, or of caprice, of diffidence or doubt.
+
+The volume closes some time before the middle of the century and
+the death of Wordsworth.
+
+A. M.
+
+[As there would be considerable overlap between the poems in this
+book and those already released by Project Gutenberg the text of
+the poems is not included in this eText.  The poems that Alice
+selected are shown below and are followed by her comments on them.-
+-DP]
+
+
+Anonymous.
+    The first carol
+Sir Walter Raleigh (1552-1618)
+    Verses before death
+Edmund Spenser (1553-1599)
+    Easter
+    Fresh spring
+    Like as a ship
+    Epithalamion
+John Lyly (1554?-1606)
+    The Spring
+Sir Philip Sidney (1554-1586)
+    True love
+    The moon
+    Kiss
+    Sweet judge
+    Sleep
+    Wat'red was my wine
+Thomas Lodge (1556-1625)
+    Rosalynd's madrigal
+    Rosaline
+    The solitary shepherd's song
+Anonymous
+    I saw my lady weep
+George Peele (1558?-1597)
+    Farewell to arms
+Robert Greene (1560?-1592)
+    Fawnia
+    Sephestia's song to her child
+Christopher Marlowe (1562-1593)
+    The passionate shepherd to his love
+Samuel Daniel (1562-1619)
+    Sleep
+    My spotless love
+Michael Drayton (1563-1631)
+    Since there's no help
+Joshua Sylvester (1563-1618)
+    Were I as base
+William Shakespeare (1564-1616)
+    Poor soul, the centre of my sinful earth
+    O me!  What eyes hath love put in my head
+    Shall I compare thee to a summer's day?
+    When in the chronicle of wasted time
+    That time of year thou may'st in me behold
+    How like a winter hath my absence been
+    Being your slave, what should I do but tend
+    When in disgrace with fortune and men's eyes
+    They that have power to hurt, and will do
+    Farewell! thou art too dear for my possessing
+    When to the sessions of sweet silent thought
+    Did not the heavenly rhetoric of thine eye
+    The forward violet thus did I chide
+    O lest the world should task you to recite
+    Let me not to the marriage of true minds
+    How oft, when thou, my music, music play'st
+    Full many a glorious morning have I seen
+    The expense of spirit in a waste of shame
+    Fancy
+    Fairies
+    Come away
+    Full fathom five
+    Dirge (Fear no more the heat o' the sun)
+    Song (Take, O take those lips away)
+    Song (How should I your true love know)
+Anonymous
+    Tom o' Bedlam
+Thomas Campion (circa 1567-1620)
+    Kind are her answers
+    Laura
+    Her sacred bower
+    Follow
+    When thou must home
+    Western wind
+    Follow your saint
+    Cherry-ripe
+Thomas Nash (1567-1601?)
+    Spring
+John Donne (1573-1631)
+    This happy dream
+    Death
+    Hymn to God the father
+    The funeral
+Richard Barnefield (1574?-?)
+    The nightingale
+Ben Jonson (1574-1637)
+    Charis' triumph
+    Jealousy
+    Epitaph on Elizabeth L. H.
+    Hymn to Diana
+    On my first daughter
+    Echo's lament for Narcissus
+    An epitaph on Salathiel Pavy, a child of Queen Elizabeth's
+Chapel
+John Fletcher (1579-1625)
+    Invocation to sleep, from Valentinian
+    To Bacchus
+John Webster (-?1625)
+    Song from the Duchess of Malfi
+    Song from the Devil's Law-case
+    In Earth, dirge from Vittoria Corombona
+William Drummond of Hawthornden (1585-1649)
+    Song (Phoebus, arise!)
+    Sleep, Silence' child
+    To the nightingale
+    Madrigal I
+    Madrigal II
+Beaumont and Fletcher (1586-1616)-(1579-1625)
+    I died true
+Francis Beaumont (1586-1616)
+    On the tombs in Westminster Abbey
+Sir Francis Kynaston (1587-1642)
+    To Cynthia, on concealment of her beauty
+Nathaniel Field (1587-1638)
+    Matin song
+George Wither (1588-1667)
+    Sleep, baby, sleep!
+Thomas Carew (1589-1639)
+    Song (Ask me no more where Jove bestows)
+    To my inconstant mistress
+    An hymeneal dialogue
+    Ingrateful beauty threatened
+Thomas Dekker (-1638?)
+    Lullaby
+    Sweet content
+Thomas Heywood (-1649?)
+    Good-morrow
+Robert Herrick (1591-1674?)
+    To Dianeme
+    To meadows
+    To blossoms
+    To daffodils
+    To violets
+    To primroses
+    To daisies, not to shut so soon
+    To the virgins, to make much of time
+    Dress
+    In silks
+    Corinna's going a-maying
+    Grace for a child
+    Ben Jonson
+George Herbert (1593-1632)
+    Holy baptism
+    Virtue
+    Unkindness
+    Love
+    The pulley
+    The collar
+    Life
+    Misery
+James Shirley (1596-1666)
+    Equality
+Anonymous (circa 1603)
+    Lullaby (Weep you no more, sad fountains)
+Sir William Davenant (1605-1668)
+    Morning
+Edmund Waller (1605-1687)
+    The rose
+Thomas Randolph (1606-1634?)
+    His mistress
+Charles Best (-?)
+    A sonnet of the moon
+John Milton (1608-1674)
+    Hymn on Christ's nativity
+    L'allegro
+    Il penseroso
+    Lycidas
+    On his blindness
+    On his deceased wife
+    On Shakespeare
+    Song on May morning
+    Invocation to Sabrina, from Comus
+    Invocation to Echo, from Comus
+    The attendant spirit, from Comus
+James Graham, Marquis of Montrose (1612-1650)
+    The vigil of death
+Richard Crashaw (1615?-1652)
+    On a prayer-book sent to Mrs. M. R.
+    To the morning
+    Love's horoscope
+    On Mr. G. Herbert's book
+    Wishes to his supposed mistress
+    Quem Vidistis Pastores etc.
+    Music's duel
+    The flaming heart
+Abraham Cowley (1618-1667)
+    On the death of Mr. Crashaw
+    Hymn to the light
+Richard Lovelace (1618-1658)
+    To Lucasta on going to the wars
+    To Amarantha
+    Lucasta
+    To Althea, from prison
+    A guiltless lady imprisoned:  after penanced
+    The rose
+Andrew Marvell (1620-1678)
+    A Horatian ode upon Cromwell's return from Ireland
+    The picture of T. C. in a prospect of flowers
+    The nymph complaining of death of her fawn
+    The definition of love
+    The garden
+Henry Vaughan (1621-1695)
+    The dawning
+    Childhood
+    Corruption
+    The night
+    The eclipse
+    The retreat
+    The world of light
+Scottish Ballads
+    Helen of Kirconnell
+    The wife of Usher's well
+    The dowie dens of Yarrow
+    Sweet William and May Margaret
+    Sir Patrick Spens
+    Hame, hame, hame
+Border Ballad
+    A lyke-wake dirge
+John Dryden (1631-1700)
+    Ode (Thou youngest virgin-daughter of the skies)
+Aphre Behn (1640-1689)
+    Song, from Abdelazar
+Joseph Addison (1672-1719)
+    Hymn (The spacious firmament on high)
+Alexander Pope (1688-1744)
+    Elegy
+William Cowper (1731-1800)
+    Lines on receiving his mother's picture
+Anna Laetitia Barbauld (1743-1825)
+    Life
+William Blake (1757-1828)
+    The land of dreams
+    The piper
+    Holy Thursday
+    The tiger
+    To the muses
+    Love's secret
+Robert Burns (1759-1796)
+    To a mouse
+    The farewell
+William Wordsworth (1770-1850)
+    Why art thou silent?
+    Thoughts of a Briton on the subjugation of Switzerland
+    It is a beauteous evening, calm and free
+    On the extinction of the Venetian Republic
+    O friend! I know not
+    Surprised by joy
+    To Toussaint L'ouverture
+    With ships the sea was sprinkled
+    The world
+    Upon Westminster bridge, Sept. 3, 1802
+    When I have borne in memory
+    Three years she grew
+    The daffodils
+    The solitary reaper
+    Elegiac stanzas
+    To H. C.
+    'Tis said that some have died for love
+    The pet lamb
+    Stepping westward
+    The childless father
+    Ode on intimations of immortality
+Sir Walter Scott (1771-1832)
+    Proud Maisie
+    A weary lot is thine
+    The Maid of Neidpath
+Samuel Taylor Coleridge (1772-1834)
+    Kubla Khan
+    Youth and age
+    The rime of the ancient mariner
+Walter Savage Landor (1775-1864)
+    Rose Aylmer
+    Epitaph
+    Child of a day
+Thomas Campbell (1767-1844)
+    Hohenlinden
+    Earl March
+Charles Lamb (1775-1835)
+    Hester
+Allan Cunningham (1784-1842)
+    A wet sheet and a flowing sea
+George Noel Gordon, Lord Byron (1788-1823)
+    The Isles of Greece
+Percy Bysshe Shelley (1792-1822)
+    Hellas
+    Wild with weeping
+    To the night
+    To a skylark
+    To the moon
+    The question
+    The waning moon
+    Ode to the west wind
+    Rarely, rarely comest thou
+    The invitation, to Jane
+    The recollection
+    Ode to heaven
+    Life of life
+    Autumn
+    Stanzas written in dejection near Naples
+    Dirge for the year
+    A widow bird
+    The two spirits
+John Keats (1795-1821)
+    La Belle Dame sans merci
+    On first looking into Chapman's Homer
+    To sleep
+    The gentle south
+    Last sonnet
+    Ode to a nightingale
+    Ode on a Grecian urn
+    Ode to Autumn
+    Ode to Psyche
+    Ode to Melancholy
+Hartley Coleridge (1796-1849)
+    She is not fair
+
+
+
+ALICE MEYNELL'S COMMENTS/NOTES
+
+
+
+EPITHALAMION
+
+Written by Spensor on his marriage in Ireland, Elizabeth Boyle of
+Kilcoran, who survived him, married one Roger Seckerstone, and was
+again a widow.  Dr. Grosart seems to have finally decided the
+identity of the heroine of this great poem.  It is worth while to
+explain, once for all, that I do not use the accented e for the
+longer pronunciation of the past participle.  The accent is not an
+English sign, and, to my mind, disfigures the verse; neither do I
+think it necessary to cut off the e with an apostrophe when the
+participle is shortened.  The reader knows at a glance how the word
+is to be numbered; besides, he may have his preferences where
+choice is allowed.  In reading such a line as Tennyson's
+
+"Dear as remembered kisses after death,"
+
+one man likes the familiar sound of the word "remembered" as we all
+speak it now; another takes pleasure in the four light syllables
+filling the line so full.  Tennyson uses the apostrophe as a rule,
+but neither he nor any other author is quite consistent.
+
+
+ROSALYND'S MADRIGAL
+
+
+It may please the reader to think that this frolic, rich, and
+delicate singer was Shakespeare's very Rosalind.  From Dr. Thomas
+Lodge's novel, Euphues' Golden Legacy, was taken much of the story,
+with some of the characters, and some few of the passages, of As
+You Like It.
+
+
+ROSALINE
+
+
+This splendid poem (from the same romance), written on the poet's
+voyage to the Islands of Terceras and the Canaries, has the fire
+and freshness of the south and the sea; all its colours are clear.
+The reader's ear will at once teach him to read the sigh "heigh ho"
+so as to give the first syllable the time of two (long and short).
+
+
+FAREWELL TO ARMS
+
+
+George Peele's four fine stanzas (which must be mentioned as
+dedicated to Queen Elizabeth, but are better without that
+dedication) exist in another form, in the first person, and with
+some archaisms smoothed.  But the third person seems to be far more
+touching, the old man himself having done with verse.
+
+
+THE PASSIONATE SHEPHERD
+
+
+The sixth stanza is perhaps by Izaak Walton.
+
+
+TAKE, O TAKE THOSE LIPS AWAY
+
+
+The author of this exquisite song is by no means certain.  The
+second stanza is not with the first in Shakespeare, but it is in
+Beaumont and Fletcher.
+
+
+KIND ARE HER ANSWERS
+
+
+These verses are a more subtle experiment in metre by the musician
+and poet, Campion, than even the following, Laura, which he himself
+sweetly commended as "voluble, and fit to express any amorous
+conceit."  In Kind are her Answers the long syllables and the
+trochaic movement of the short lines meet the contrary movement of
+the rest, with an exquisite effect of flux and reflux.  The
+"dancers" whose time they sang must have danced (with Perdita) like
+"a wave of the sea."
+
+
+DIRGE
+
+
+I have followed the usual practice in omitting the last and less
+beautiful stanza.
+
+
+FOLLOW
+
+
+Campion's "airs," for which he wrote his words, laid rules too
+urgent upon what would have been a delicate genius in poetry.  The
+airs demanded so many stanzas; but they gave his imagination leave
+to be away, and they depressed and even confused his metrical play,
+hurting thus the two vital spots of poetry.  Many of the stanzas
+for music make an unlucky repeating pattern with the poor variety
+that a repeating wall-paper does not attempt.  And yet Campion
+began again and again with the onset of a true poet.  Take, for
+example, the poem beginning with the vitality of this line,
+"touching in its majesty"-
+
+"Awake, thou spring of speaking grace; mute rest becomes not thee!"
+
+Who would have guessed that the piece was to close in a jogging
+stanza containing a reflection on the fact that brutes are
+speechless, with these two final lines -
+
+"If speech be then the best of graces,
+Doe it not in slumber smother!"
+
+Campion yields a curious collection of beautiful first lines.
+
+"Sleep, angry beauty, sleep and fear not me"
+
+is far finer than anything that follows.  So is there a single
+gloom in this -
+
+"Follow thy fair sun, unhappy shadow!"
+
+And a single joy in this -
+
+"Oh, what unhoped-for sweet supply!"
+
+Another solitary line is one that by its splendour proves Campion
+the author of Cherry Ripe -
+
+"A thousand cherubim fly in her looks."
+
+And yet "a thousand cherubim" is a line of a poem full of the
+dullest kind of reasoning--curious matter for music--and of the
+intricate knotting of what is a very simple thread of thought.  It
+was therefore no easy matter to choose something of Campion's for a
+collection of the finest work.  For an historical book of
+representative poetry the question would be easy enough, for there
+Campion should appear by his glorious lyric, Cherry Ripe, by one or
+two poems of profounder imagination (however imperfect), and by a
+madrigal written for the music (however the stanzas may flag in
+their quibbling).  But the work of choosing among his lyrics for
+the sake of beauty shows too clearly the inequality, the brevity of
+the inspiration, and the poet's absolute disregard of the moment of
+its flight and departure.  A few splendid lines may be reason
+enough for extracting a short poem, but must not be made to bear
+too great a burden.
+
+
+WHEN THOU MUST HOME
+
+
+Of the quality of this imaginative lyric there is no doubt.  It is
+fine throughout, as we confess even after the greatness of the
+opening:-
+
+"When thou must home to shades of underground,
+And there arrived, a new admired guest--"
+
+It is as solemn and fantastic at the close as at this dark and
+splendid opening, and throughout, past description, Elizabethan.
+This single poem must bind Campion to that period without question;
+and as he lived thirty-six years in the actual reign of Elizabeth,
+and printed his Book of Airs with Rosseter two years before her
+death, it is by no violence that we give him the name that covers
+our earlier poets of the great age.  When thou must Home is of the
+day of Marlowe.  It has the qualities of great poetry, and
+especially the quality of keeping its simplicity; and it has a
+quality of great simplicity not at all child-like, but adult,
+large, gay, credulous, tragic, sombre, and amorous.
+
+
+THE FUNERAL
+
+
+Donne, too, is a poet of fine onsets.  It was with some hesitation
+that I admitted a poem having the middle stanza of this Funeral;
+but the earlier lines of the last are fine.
+
+
+CHARIS' TRIUMPH
+
+
+The freshest of Ben Jonson's lyrics have been chosen.  Obviously it
+is freshness that he generally lacks, for all his vigour, his
+emphatic initiative, and his overbearing and impulsive voice in
+verse.  There is a stale breath in that hearty shout.  Doubtless it
+is to the credit of his honesty that he did not adopt the country-
+phrases in vogue; but when he takes landscape as a task the effect
+is ill enough.  I have already had the temerity to find fault for a
+blunder of meaning, with the passage of a most famous lyric, where
+it says the contrary of what it would say -
+
+"But might I of Jove's nectar sup
+I would not change for thine;"
+
+and for doing so have encountered the anger rather than the
+argument of those who cannot admire a pretty lyric but they must
+hold reason itself to be in error rather than allow that a line of
+it has chanced to get turned in the rhyming.
+
+
+IN EARTH
+
+
+"I ever saw anything," says Charles Lamb, "like this funeral dirge,
+except the ditty which reminds Ferdinand of his drowned father in
+the Tempest.  As that is of the water, watery; so this is of the
+earth, earthy.  Both have that intentness of feeling which seems to
+resolve itself into the element which it contemplates."
+
+
+SONG (Phoebus, arise!)
+
+
+All Drummond's poems seem to be minor poems, even at their finest,
+except only this.  He must have known, for the creation of that
+poem, some more impassioned and less restless hour.  It is, from
+the outset to the close, the sigh of a profound expectation.  There
+is no division into stanzas, because its metre is the breath of
+life.  One might wish that the English ode (roughly called
+"Pindaric") had never been written but with passion, for so written
+it is the most immediate of all metres; the shock of the heart and
+the breath of elation or grief are the law of the lines.  It has
+passed out of the gates of the garden of stanzas, and walks (not
+astray) in the further freedom where all is interior law.  Cowley,
+long afterwards, wrote this Pindaric ode, and wrote it coldly.  But
+Drummond's (he calls it a song) can never again be forgotten.  With
+admirable judgment it was set up at the very gate of that Golden
+Treasury we all know so well; and, therefore, generation after
+generation of readers, who have never opened Drummond's poems, know
+this fine ode as well as they know any single poem in the whole of
+English literature.  There was a generation that had not been
+taught by the Golden Treasury, and Cardinal Newman was of it.
+Writing to Coventry Patmore of his great odes, he called them
+beautiful but fragmentary; was inclined to wish that they might
+some day be made complete.  There is nothing in all poetry more
+complete.  Seldom is a poem in stanzas so complete but that another
+stanza might have made a final close; but a master's ode has the
+unity of life, and when it ends it ends for ever.
+
+A poem of Drummond's has this auroral image of a blush:  Anthea has
+blushed to hear her eyes likened to stars (habit might have caused
+her, one would think, to bear the flattery with a front as cool as
+the very daybreak), and the lover tells her that the sudden
+increase of her beauty is futile, for he cannot admire more:  "For
+naught thy cheeks that morn do raise."  What sweet, nay, what
+solemn roses!
+
+Again:
+
+"Me here she first perceived, and here a morn
+Of bright carnations overspread her face."
+
+The seventeenth century has possession of that "morn" caught once
+upon its uplands; nor can any custom of aftertime touch its
+freshness to wither it.
+
+
+TO MY INCONSTANT MISTRESS
+
+
+The solemn vengeance of this poem has a strange tone--not unique,
+for it had sounded somewhere in mediaeval poetry in Italy--but in a
+dreadful sense divine.  At the first reading, this sentence against
+inconstancy, spoken by one more than inconstant, moves something
+like indignation; nevertheless, it is menacingly and obscurely
+justified, on a ground as it were beyond the common region of
+tolerance and pardon.
+
+
+THE PULLEY
+
+
+An editor is greatly tempted to mend a word in these exquisite
+verses.  George Herbert was maladroit in using the word "rest" in
+two senses.  "Peace" is not quite so characteristic a word, but it
+ought to take the place of "rest" in the last line of the second
+stanza; so then the first line of the last stanza would not have
+this rather distressing ambiguity.  The poem is otherwise perfect
+beyond description.
+
+
+MISERY
+
+
+George Herbert's work is so perfectly a box where thoughts
+"compacted lie," that no one is moved, in reading his rich poetry,
+to detach a line, so fine and so significant are its neighbours;
+nevertheless, it may be well to stop the reader at such a lovely
+passage as this -
+
+"He was a garden in a Paradise."
+
+
+THE ROSE
+
+
+There is nothing else of Waller's fine enough to be admitted here;
+and even this, though unquestionably a beautiful poem, elastic in
+words and fresh in feeling, despite its wearied argument, is of the
+third-class.  Greatness seems generally, in the arts, to be of two
+kinds, and the third rank is less than great.  The wearied argument
+of The Rose is the almost squalid plea of all the poets, from
+Ronsard to Herrick:  "Time is short; they make the better bargain
+who make haste to love."  This thrifty business and essentially
+cold impatience was--time out of mind--unknown to the truer love;
+it is larger, illiberal, untender, and without all dignity.  The
+poets were wrong to give their verses the message of so sorry a
+warning.  There is only one thing that persuades you to forgive the
+paltry plea of the poet that time is brief--and that is the
+charming reflex glimpse it gives of her to whom the rose and the
+verse were sent, and who had not thought that time was brief.
+
+
+L'ALLEGRO
+
+
+The sock represents the stage, in L'Allegro, for comedy, and the
+buskin, in Il Penseroso, for tragedy.  Milton seems to think the
+comic drama in England needs no apology, but he hesitates at the
+tragic.  The poet of King Lear is named for his sweetness and his
+wood-notes wild.
+
+
+IL PENSEROSO
+
+
+It is too late to protest against Milton's display of weak Italian.
+Pensieroso is, of course, what he should have written.
+
+
+LYCIDAS
+
+
+Most of the allusions in Lycidas need no explaining to readers of
+poetry.  The geography is that of the western coasts from furthest
+north to Cornwall.  Deva is the Dee; "the great vision" means the
+apparition of the Archangel, St. Michael, at St. Michael's Mount;
+Namancos and Bayona face the mount from the continental coast;
+Bellerus stands for Belerium, the Land's End.
+
+Arethusa and Mincius--Sicilian and Italian streams--represent the
+pastoral poetry of Theocritus and Virgil.
+
+
+ON A PRAYER-BOOK
+
+
+"Fair and flagrant things"--Crashaw's own phrase--might serve for a
+brilliant and fantastic praise and protest in description of his
+own verses.  In the last century, despite the opinion of a few, and
+despite the fact that Pope took possession of Crashaw's line -
+
+"Obedient slumbers that can wake and weep,"
+
+and for some time of the present century, the critics had a wintry
+word to blame him with.  They said of George Herbert, of Lovelace,
+of Crashaw, and of other light hearts of the seventeenth century--
+not so much that their inspiration was in bad taste, as that no
+reader of taste could suffer them.  A better opinion on that
+company of poets is that they had a taste extraordinarily liberal,
+generous, and elastic, but not essentially lax:  taste that gave
+now and then too much room to play, but anon closed with the purest
+and exactest laws of temperance and measure.  The extravagance of
+Crashaw is a far more lawful thing than the extravagance of
+Addison, whom some believe to have committed none; moreover, Pope
+and all the politer poets nursed something they were pleased to
+call a "rage," and this expatiated (to use another word of their
+own) beyond all bounds.  Of sheer voluntary extremes it is not in
+the seventeenth century conceit that we should seek examples, but
+in an eighteenth century "rage."  A "noble rage," properly
+provoked, could be backed to write more trash than fancy ever
+tempted the half-incredulous sweet poet of the older time to run
+upon.  He was fancy's child, and the bard of the eighteenth century
+was the child of common sense with straws in his hair--vainly
+arranged there.  The eighteenth century was never content with a
+moderate mind; it invented "rage"; it matched rage with a flagrant
+diction mingled of Latin words and simple English words made vacant
+and ridiculous, and these were the worst; it was resolved to be
+behind no century in passion--nay, to show the way, to fire the
+nations.  Addison taught himself, as his hero taught the battle,
+"where to rage"; and in the later years of the same literary age,
+Johnson summoned the lapsed and absent fury, with no kind of
+misgiving as to the resulting verse.  Take such a phrase as "the
+madded land"; there, indeed, is a word coined by the noble rage as
+the last century evoked it.  "The madded land" is a phrase intended
+to prove that the law-giver of taste, Johnson himself, could lodge
+the fury in his breast when opportunity occurred.  "And dubious
+title shakes the madded land."  It would be hard to find anything,
+even in Addison, more flagrant and less fair.
+
+Take The Weeper of Crashaw--his most flagrant poem.  Its follies
+are all sweet-humoured, they smile.  Its beauties are a quick and
+abundant shower.  The delicate phrases are so mingled with the
+flagrant that it is difficult to quote them without rousing that
+general sense of humour of which any one may make a boast; and I am
+therefore shy even of citing the "brisk cherub" who has early
+sipped the Saint's tear:  "Then to his music," in Crashaw's
+divinely simple phrase; and his singing "tastes of this breakfast
+all day long."  Sorrow is a queen, he cries to the Weeper, and when
+sorrow would be seen in state, "then is she drest by none but
+thee."  Then you come upon the fancy, "Fountain and garden in one
+face."  All places, times, and objects are "Thy tears' sweet
+opportunity."  If these charming passages lurk in his worst poems,
+the reader of this anthology will not be able to count them in his
+best.  In the Epiphany Hymn the heavens have found means
+
+'To disinherit the sun's rise,
+Delicately to displace
+The day, and plant it fairer in thy face."
+
+To the Morning:  Satisfaction for Sleep, is, all through, luminous.
+It would be difficult to find, even in the orient poetry of that
+time, more daylight or more spirit.  True, an Elizabethan would not
+have had poetry so rich as in Love's Horoscope, but yet an
+Elizabethan would have had it no fresher.  The Hymn to St. Teresa
+has the brevities which this poet--reproached with his longueurs--
+masters so well.  He tells how the Spanish girl, six years old, set
+out in search of death:  "She's for the Moors and Martyrdom.
+Sweet, not so fast!"  Of many contemporary songs in pursuit of a
+fugitive Cupid, Crashaw's Cupid's Cryer:  out of the Greek, is the
+most dainty.  But if readers should be a little vexed with the
+poet's light heart and perpetual pleasure, with the late ripeness
+of his sweetness, here, for their satisfaction, is a passage
+capable of the great age that had lately closed when Crashaw wrote.
+It is in his summons to nature and art:
+
+"Come, and come strong,
+To the conspiracy of our spacious song!"
+
+I have been obliged to take courage to alter the reading of the
+seventeenth and nineteenth lines of the Prayer-Book, so as to make
+them intelligible; they had been obviously misprinted.  I have also
+found it necessary to re-punctuate generally.
+
+
+WISHES TO HIS SUPPOSED MISTRESS
+
+
+This beautiful and famous poem has its stanzas so carelessly thrown
+together that editors have allowed themselves a certain freedom
+with it.  I have done the least I could, by separating two stanzas
+that repeated the rhyme, and by suppressing one that grew tedious.
+
+
+ON THE DEATH OF MR. CRASHAW
+
+
+This ode has been chosen as more nobly representative than that,
+better known, On the Death of Mr. William Harvey.  In the Crashaw
+ode, and in the Hymn to the Light, Cowley is, at last, tender.  But
+it cannot be said that his love-poems had tenderness.  Be wrote in
+a gay language, but added nothing to its gaiety.  He wrote the
+language of love, and left it cooler than he found it.  What the
+conceits of Lovelace and the rest-- flagrant, not frigid--did not
+do was done by Cowley's quenching breath; the language of love
+began to lose by him.  But even then, even then, who could have
+foretold what the loss at a later day would be!
+
+
+HYMN TO THE LIGHT
+
+
+It is somewhat to be regretted that this splendid poem should show
+Cowley as the writer of the alexandrine that divides into two
+lines.  For he it was who first used (or first conspicuously used)
+the alexandrine that is organic, integral, and itself a separate
+unit of metre.  He first passed beyond the heroic line, or at least
+he first used the alexandrine freely, at his pleasure, amid heroic
+verse; and after him Dryden took possession and then Pope.  But
+both these masters, when they wrote alexandrines, wrote them in the
+French manner, divided.  Cowley, however, with admirable art, is
+able to prevent even an accidental pause, making the middle of his
+line fall upon the middle of some word that is rapid in the
+speaking and therefore indivisible by pause or even by any
+lingering.  Take this one instance -
+
+"Like some fair pine o'erlooking all the ignobler wood."
+
+If Cowley's delicate example had ruled in English poetry (and he
+surely had authority on this one point, at least), this alexandrine
+would have taken its own place as an important line of English
+metre, more mobile than the heroic, less fitted to epic or dramatic
+poetry, but a line liberally lyrical.  It would have been the
+light, pursuing wave that runs suddenly, outrunning twenty, further
+up the sands than these, a swift traveller, unspent, of longer
+impulse, of more impetuous foot, of fuller and of hastier breath,
+more eager to speak, and yet more reluctant to have done.  Cowley
+left the line with all this lyrical promise within it, and if his
+example had been followed, English prosody would have had in this a
+valuable bequest.
+
+Cowley probably was two or three years younger than Richard
+Crashaw, and the alexandrine is to be found--to be found by
+searching--in Crashaw; and he took precisely the same care as
+Cowley that the long wand of that line should not give way in the
+middle--should be strong and supple and should last.  Here are four
+of his alexandrines -
+
+"Or you, more noble architects of intellectual noise."
+"Of sweets you have, and murmur that you have no more."
+"And everlasting series of a deathless song."
+"To all the dear-bought nations this redeeming name."
+
+A later poet--Coventry Patmore--wrote a far longer line than even
+these--a line not only speeding further, but speeding with a more
+celestial movement than Cowley or Crashaw heard with the ear of
+dreams.
+
+"He unhappily adopted," says Dr. Johnson as to Cowley's diction,
+"that which was predominant."  "That which was predominant" was as
+good a vintage of English language as the cycles of history have
+ever brought to pass.
+
+
+TO LUCASTA
+
+
+Colonel Richard Lovelace, an enchanting poet, is hardly read,
+except for two poems which are as famous as any in our language.
+Perhaps the rumour of his conceits has frightened his reader.  It
+must be granted they are now and then daunting; there is a poem on
+"Princess Louisa Drawing" which is a very maze; the little paths of
+verse and fancy turn in upon one another, and the turns are pointed
+with artificial shouts of joy and surprise.  But, again, what a
+reader unused to a certain living symbolism will be apt to take for
+a careful and cold conceit is, in truth, a rapture--none graver,
+none more fiery or more luminous.  But even to name the poem where
+these occur might be to deliver delicate and ardent poetry over to
+the general sense of humour, which one distrusts.  Nor is Lovelace
+easy reading at any time (the two or three famous poems excepted).
+The age he adorned lived in constant readiness for the fiddler.
+Eleven o'clock in the morning was as good an hour as another for a
+dance, and poetry, too, was gay betimes, but intricate with
+figures.  It is the very order, the perspective, as it were, of the
+movement that seems to baffle the eye, but the game was a free
+impulse.  Since the first day danced with the first night, no
+dancing was more natural--at least to a dancer of genius.  True,
+the dance could be tyrannous.  It was an importunate fashion.  When
+the Bishop of Hereford, compelled by Robin Hood, in merry
+Barnsdale, danced in his boots ("and glad he could so get away"),
+he was hardly in worse heart or trim than a seventeenth century
+author here and there whose original seriousness or work-a-day
+piety would have been content to go plodding flat-foot or halting,
+as the muse might naturally incline with him, but whom the tune,
+the grace, and gallantry of the time beckoned to tread a perpetual
+measure.  Lovelace was a dancer of genius; nay, he danced to rest
+his wings, for he was winged, cap and heel.  The fiction of flight
+has lost its charm long since.  Modern art grew tired of the idea,
+now turned to commonplace, and painting took leave of the buoyant
+urchins--naughty cherub and Cupid together; but the seventeenth
+century was in love with that old fancy--more in love, perhaps,
+than any century in the past.  Its late painters, whose human
+figures had no lack of weight upon the comfortable ground, yet kept
+a sense of buoyancy for this hovering childhood, and kept the
+angels and the loves aloft, as though they shook a tree to make a
+flock of birds flutter up.
+
+Fine is the fantastic and infrequent landscape in Lovelace's
+poetry:
+
+"This is the palace of the wood,
+And court o' the royal oak, where stood
+The whole nobility."
+
+In more than one place Lucasta's, or Amarantha's, or Laura's hair
+is sprinkled with dew or rain almost as freshly and wildly as in
+Wordsworth's line.
+
+Lovelace, who loved freedom, seems to be enclosed in so narrow a
+book; yet it is but a "hermitage."  To shake out the light and
+spirit of its leaves is to give a glimpse of liberty not to him,
+but to the world.
+
+In To Lucasta I have been bold to alter, at the close, "you" to
+"thou."  Lovelace sent his verses out unrevised, and the
+inconsistency of pronouns is common with him, but nowhere else so
+distressing as in this brief and otherwise perfect poem.  The fault
+is easily set right, and it seems even an unkindness not to lend
+him this redress, offered him here as an act of comradeship.
+
+
+LUCASTA PAYING HER OBSEQUIES
+
+
+That errors should abound in the text of Lovelace is the more
+lamentable because he was apt to make a play of phrases that depend
+upon the precision of a comma--nay, upon the precision of the voice
+in reading.  Lucasta Paying her Obsequies is a poem that makes a
+kind of dainty confusion between the two vestals--the living and
+the dead; they are "equal virgins," and you must assign the
+pronouns carefully to either as you read.  This, read twice, must
+surely be placed amongst the loveliest of his lovely writings.  It
+is a joy to meet such a phrase as "her brave eyes."
+
+
+TO ALTHEA, FROM PRISON
+
+
+This is a poem that takes the winds with an answering flight.
+Should they be "birds" or "gods" that wanton in the air in the
+first of these gallant stanzas?  Bishop Percy shied at "gods," and
+with admirable judgment suggested "birds," an amendment adopted by
+the greater number of succeeding editors, until one or two wished
+for the other phrase again, as an audacity fit for Lovelace.  But
+the Bishop's misgiving was after all justified by one of the Mss.
+of the poem, in which the "gods" proved to be "birds" long before
+he changed them.  The reader may ask, what is there to choose
+between birds so divine and gods so light?  But to begin with
+"gods" would be to make an anticlimax of the close.  Lovelace led
+from birds and fishes to winds, and from winds to angels.
+
+"When linnet-like confined" is another modern reading.  "When, like
+committed linnets," daunted the eighteenth century.  Nevertheless,
+it is right seventeenth century, and is now happily restored;
+happily, because Lovelace would not have the word "confined" twice
+in this little poem.
+
+
+A HORATIAN ODE
+
+
+"He earned the glorious name," says a biographer of Andrew Marvell
+(editing an issue of that poet's works which certainly has its
+faults), "of the British Aristides."  The portly dulness of the
+mind that could make such a phrase, and having made, award it, is
+not, in fairness, to affect a reader's thought of Marvell himself
+nor even of his time.  Under correction, I should think that the
+award was not made in his own age; he did but live on the eve of
+the day that cumbered its mouth with phrases of such foolish burden
+and made literature stiff with them.  Andrew Marvell's political
+rectitude, it is true, seems to have been of a robustious kind; but
+his poetry, at its rare best, has a "wild civility," which might
+puzzle the triumph of him, whoever he was, who made a success of
+this phrase of the "British Aristides."  Nay, it is difficult not
+to think that Marvell too, who was "of middling stature, roundish-
+faced, cherry-cheeked," a healthy and active rather than a
+spiritual Aristides, might himself have been somewhat taken by
+surprise at the encounters of so subtle a muse.  He, as a garden-
+poet, expected the accustomed Muse to lurk about the fountain-
+heads, within the caves, and by the walks and the statues of the
+gods, keeping the tryst of a seventeenth century convention in
+which there were certainly no surprises.  And for fear of the
+commonplaces of those visits, Marvell sometimes outdoes the whole
+company of garden-poets in the difficult labours of the fancy.  The
+reader treads with him a "maze" most resolutely intricate, and is
+more than once obliged to turn back, having been too much puzzled
+on the way to a small, visible, plain, and obvious goal of thought.
+
+And yet this poet two or three times did meet a Muse he had hardly
+looked for among the trodden paths; a spiritual creature had been
+waiting behind a laurel or an apple-tree.  You find him coming away
+from such a divine ambush a wilder and a simpler man.  All his
+garden had been made ready for poetry, and poetry was indeed there,
+but in unexpected hiding and in a strange form, looking rather like
+a fugitive, shy of the poet who was conscious of having her rules
+by heart, yet sweetly willing to be seen, for all her haste.
+
+The political poems, needless to say, have an excellence of a
+different character and a higher degree.  They have so much
+authentic dignity that "the glorious name of the British Aristides"
+really seems duller when it is conferred as the earnings of the
+Horatian Ode upon Cromwell's Return from Ireland than when it
+inappropriately clings to Andrew Marvell, cherry-cheeked, caught in
+the tendrils of his vines and melons.  He shall be, therefore, the
+British Aristides in those moments of midsummer solitude; at least,
+the heavy phrase shall then have the smile it never sought.
+
+The Satires are, of course, out of reach for their inordinate
+length.  The celebrated Satire on Holland certainly makes the
+utmost of the fun to be easily found in the physical facts of the
+country whose people "with mad labour fished the land to shore."
+The Satire on "Flecno" makes the utmost of another joke we know of-
+-that of famine.  Flecno, it will be remembered, was a poet, and
+poor; but the joke of his bad verses was hardly needed, so fine
+does Marvell find that of his hunger.  Perhaps there is no age of
+English satire that does not give forth the sound of that laughter
+unknown to savages--that craven laughter.
+
+
+THE PICTURE OF T. C. IN A PROSPECT OF FLOWERS
+
+
+The presence of a furtive irony of the sweetest kind is the sure
+sign of the visit of that unlooked-for muse.  With all spirit and
+subtlety does Marvell pretend to offer the little girl T. C. (the
+future "virtuous enemy of man") the prophetic homage of the
+habitual poets.  The poem closes with an impassioned tenderness not
+to be found elsewhere in Marvell.
+
+
+THE DEFINITION OF LOVE
+
+
+The noble phrase of the Horatian Ode is not recovered again, high
+or low, throughout Marvell's book, it we except one single splendid
+and surpassing passage from The Definition of Love -
+
+"Magnanimous despair alone
+Could show me so divine a thing."
+
+
+CHILDHOOD
+
+
+One of our true poets, and the first who looked at nature with the
+full spiritual intellect, Henry Vaughan was known to few but
+students until Mr. E. K. Chambers gave us his excellent edition.
+The tender wit and grave play of Herbert, Crashaw's lovely rapture,
+are all unlike this meditation of a soul condemned and banished
+into life.  Vaughan's imagination suddenly opens a new window
+towards the east.  The age seems to change with him, and it is one
+of the most incredible of all facts that there should be more than
+a century--and such a century!--from him to Wordsworth.  The
+passing of time between them is strange enough, but the passing of
+Pope, Prior, and Gray--of the world, the world, whether reasonable
+or flippant or rhetorical--is more strange.  Vaughan's phrase and
+diction seem to carry the light.  Il vous semble que cette femme
+degage de la lumiere en marchant?  Vous l'aimez! says Marius in Les
+Miserables (I quote from memory), and it seems to be by a sense of
+light that we know the muse we are to love.
+
+
+SCOTTISH BALLADS
+
+
+It was no easy matter to choose a group of representative ballads
+from among so many almost equally fine and equally damaged with
+thin places.  Finally, it seemed best to take, from among the
+finest, those that had passages of genius--a line here and there of
+surpassing imagination and poetry--rare in even the best folk-
+songs.  Such passages do not occur but in ballads that are
+throughout on the level of the highest of their kind.  "None but my
+foe to be my guide" so distinguishes Helen of Kirconnell; the
+exquisite stanza about the hats of birk, The Wife of Usher's Well;
+its varied refrain, The Dowie Dens of Yarrow; the stanza spoken by
+Margaret asking for room in the grave, Sweet William and Margaret;
+and a number of passages, Sir Patrick Spens, such as that
+beginning, "I saw the new moon late yestreen," the stanza beginning
+"O laith, laith were our gude Scots lords," and almost all the
+stanzas following.  A Lyke Wake Dirge is of surpassing quality
+throughout.  I am sorry to have no room for Jamieson's version of
+Fair Annie, for Edom o' Gordon, for The Daemon Lover, for Edward,
+Edward, and for the Scottish edition of The Battle of Otterbourne.
+
+
+MRS. ANNE KILLIGREW
+
+
+This most majestic ode--one of the few greatest of its kind--is a
+model of noble rhythm and especially of cadence.  To print it whole
+would be impossible, and one of the very few excisions in this book
+is made in the midst of it.  Dryden, so adult and so far from
+simplicity, bears himself like a child who, having said something
+fine, caps it with something foolish.  The suppressed part of the
+ode is silly with a silliness which Dryden's age chose to dodder in
+when it would.  The deplorable "rattling bones" of the closing
+section has a touch of it.
+
+
+SONG, FROM ABDELAZAR
+
+
+It is a futile thing--and the cause of a train of futilities--to
+hail "style" as though it were a separable quality in literature,
+and it is not in that illusion that the style of the opening of
+Aphra Behn's resounding song is to be praised.  But it IS the
+style--implying the reckless and majestic heart--that first takes
+the reader of these great verses.
+
+
+HYMN (The spacious firmament on high)
+
+
+Whether Addison wrote the whole of this or not,--and it seems that
+the inspired passages are none of his--it is to me a poem of
+genius, magical in spite of the limited diction.
+
+
+ELEGY TO THE MEMORY OF AN UNFORTUNATE LADY
+
+
+Also in spite of limited diction--the sign of thought closing in,
+as it did fast close in during those years--are Pope's tenderness
+and passion communicated in this beautiful elegy.  It would not be
+too much to say that all his passion, all his tenderness, and
+certainly all his mystery, are in the few lines at the opening and
+close.  The Epistle of Eloisa is (artistically speaking) but a
+counterfeit.  Yet Pope's Elegy begins by stealing and translating
+into the false elegance of altered taste that lovely and poetic
+opening of Ben Jonson's -
+
+"What beckoning ghost, besprent with April dew,
+Hails me so solemnly to yonder yew?"
+
+All the gravity, all the sweetness, one might fear, must be lost in
+such a change as Pope makes -
+
+"What beckoning ghost along the moonlight shade
+Invites my steps, and points to yonder glade?"
+
+Yet they are not lost.  Pope's awe and ardour are authentic, and
+they prevail; the succeeding couplet--inimitably modulated, and of
+tragic dignity--proves, without delay, the quality of the poem.
+The poverty and coldness of the passage (towards the end), in which
+the roses and the angels are somewhat trivially sung, cannot mar so
+veritable an utterance.  The four final couplets are the very glory
+of the English couplet.
+
+
+LINE ON RECEIVING HIS MOTHER'S PICTURE
+
+
+Cowper, again, by the very directness of human feeling makes his
+narrowing English a means of absolutely direct communication.  Of
+all his works (and this is my own mere and unshared opinion) this
+single one deserves immortality.
+
+
+LIFE
+
+
+This fragment (the only fragment, properly so called, in the
+present collection) so pleased Wordsworth that he wished he had
+written the lines.  They are very gently touched.
+
+
+THE LAND OF DREAMS
+
+
+When Blake writes of sleep and dreams he writes under the very
+influence of the hours of sleep--with a waking consciousness of the
+wilder emotion of the dream.  Corot painted so, when at summer dawn
+he went out and saw landscape in the hours of sleep.
+
+
+SURPRISED BY JOY
+
+
+It is not necessary to write notes on Wordsworth's sonnets--the
+greatest sonnets in our literature; but it would be well to warn
+editors how they print this one sonnet; "I wished to share the
+transport" is by no means an uncommon reading.  Into the history of
+the variant I have not looked.  It is enough that all the
+suddenness, all the clash and recoil of these impassioned lines are
+lost by that "wished" in the place of "turned."  The loss would be
+the less tolerable in as much as perhaps only here and in that
+heart-moving poem, 'Tis said that some have died for love, is
+Wordsworth to be confessed as an impassioned poet.
+
+
+STEPPING WESTWARD
+
+
+This and the preceding two exquisite poems of sympathy are far more
+justified, more recollected and sincere than is that more
+monumental composition, the famous poem of sympathy, Hartleap Well.
+The most beautiful stanzas of this poem last-named are so rebuked
+by the truths of nature that they must ever stand as obstacles to
+the straightforward view of sensitive eyes upon the natural world.
+Wordsworth shows us the ruins of an aspen-wood, a blighted hollow,
+a dreary place forlorn because an innocent creature, hunted, had
+there broken its heart in a leap from the rocks above; grass would
+not grow, nor shade linger there -
+
+"This beast not unobserved by Nature fell,
+His death was mourned by sympathy divine."
+
+And the signs of that sympathy are cruelly asserted to be these
+arid woodland ruins--cruelly, because the common sight of the day
+blossoming over the agonies of animals and birds is made less
+tolerable by such fictions.  We have to shut our ears to the benign
+beauty of this stanza especially -
+
+"The Being that is in the clouds and air,
+That is in the green leaves among the groves,
+Maintains a deep and reverential care
+For the unoffending creature whom He loves."
+
+We must shut our ears because the poet offers us, as a proof of
+that "reverential care," the visible alteration of nature at the
+scene of suffering--an alteration we are obliged to dispense with
+every day we pass in the woods.  We are tempted to ask whether
+Wordsworth himself believed in a sympathy he asks us--upon such
+grounds!--to believe in?  Did he think his faith to be worthy of no
+more than a fictitious sign or a false proof?
+
+To choose from Wordsworth is to draw close a net with very large
+meshes--so that the lovely things that escape must doubtless cause
+the reader to protest; but the poems gathered here are not only
+supremely beautiful but exceedingly Wordsworthian.
+
+
+YOUTH AND AGE
+
+
+Close to the marvellous Kubla Khan--a poem that wrests the secret
+of dreams and brings it to the light of verse--I place Youth and
+Age as the best specimen of Coleridge's poetry that is quite
+undelirious--to my mind the only fine specimen.  I do not rate his
+undelirious poems highly, and even this, charming and nimble as it
+is, seems to me rather lean in thought and image.  The tenderness
+of some of the images comes to a rather lamentable close; the
+likeness to "some poor nigh-related guest" with the three lines
+that follow is too squalid for poetry, or prose, or thought.
+
+
+THE RIME OF THE ANCIENT MARINER
+
+
+This poem is surely more full of a certain quality of extreme
+poetry--the simplest "flower of the mind," the most single magic--
+than any other in our language.  But the reader must be permitted
+to call the story silly.
+
+Page 265 (Are those her ribs through which the Sun)
+
+Coleridge used the sun, moon, and stars as a great dream uses them
+when the sleeping imagination is obscurely threatened with illness.
+All through The Ancient Mariner we see them like apparitions.  It
+is a pity that he followed the pranks also of a dream when he
+impossibly placed a star WITHIN the tip of the crescent.
+
+Page 266 (I feer thee, ancient Mariner!)
+
+The likeness of "the ribbed sea sand" is said to be the one passage
+actually composed by Wordsworth,--who according to the first plan
+should have written The Ancient Mariner with Coleridge--"and
+perhaps the most beautiful passage in the poem," adds one critic
+after another.  It is no more than a good likeness, and has nothing
+whatever of the indescribable Coleridge quality.
+
+Coleridge reveals, throughout this poem, an exaltation of the
+senses, which is the most poetical thing that can befall a simple
+poet.  It is necessary only to refer, for sight, to the stanza on
+"the moving Moon" at the bottom of page 267; for hearing, to the
+supernatural stanzas on page 271; and, for touch, to the line -
+
+"And still my body drank."
+
+
+ROSE AYLMER
+
+
+Never was a human name more exquisitely sung than in these perfect
+stanzas.
+
+
+THE ISLES OF GREECE
+
+
+One really fine and poetic stanza--of course, the third; three
+stanzas that are good eloquence--the fourth, fifth, and seventh;
+and one that is a fair bit of argument--the tenth--may together
+perhaps carry the rest.
+
+
+HELLAS
+
+
+The profounder spirit of Shelley's poem yet leaves it a careless
+piece of work in comparison with Byron's.  The two false rhymes at
+the outset may not be of great importance, but there is something
+annoying in the dissyllabic rhymes of the second stanza.
+Dissyllabic rhymes are beautiful and enriching when they fall in
+the right place; that is, where there is a pause for the second
+little syllable to stand.  For example, they could not be better
+placed than they would have been at the end of the shorter lines of
+this same stanza, where they would have dropped into a part of the
+pause.  Another sin of sheer heedlessness--the lapse of grammar in
+The Skylark, at the top of page 296 (With thy clear keen joyance)--
+will remind the reader of the special habitual error of Drummond of
+Hawthornden.
+
+
+THE WANING MOON
+
+
+In these few lines the Shelley spirit seems to be more intense than
+in any other passage as brief.
+
+
+ODE TO THE WEST WIND
+
+
+This magnificent poem is surely the greatest of a great poses
+writings, and one of the most splendid poems on nature and on
+poetry in a literature resounding with odes on these enormous
+themes.
+
+
+THE INVITATION
+
+
+No need to point to a poem that so shines as does this lucent
+verse.
+
+
+LA BELLE DAME SANS MERCI
+
+
+Keats is here the magical poet, as he is the intellectual poet in
+the great sonnet following; and it is his possession or promise of
+both imaginations that proves him greater than Coleridge.  In his
+day they seem to have found Coleridge to be a thinker in his
+poetry.  To me he seems to have had nothing but senses, magic, and
+simplicity, and these he had to the utmost yet known to man.  Keats
+was to have been a great intellectual poet, besides all that in
+fact he was.
+
+
+ODE TO A NIGHTINGALE
+
+
+Of the five odes of Keats, the Nightingale is perhaps the most
+perfect, and certainly the most imaginative.  But the Grecian Urn
+is the finest, even though it has fancy rather than imagination,
+for never was fancy more exquisite.  The most conspicuous idea--the
+emptying of the town because its folk are away at play in the tale
+of the antique urn--is merely a fancy, and a most antic fancy--a
+prank; it is an irony of man, a rallying of art, a mockery of time,
+a burlesque of poetry, divine with tenderness.  The six lines in
+which this fancy sports are amongst the loveliest in all
+literature:  the "little town," the "peaceful citadel,"--were ever
+simple adjectives more happy?  But John Keats's final moral here is
+undeniably a failure; it says so much and means so little.  The Ode
+to Autumn is an exterior ode, and not in so high a rank, but lovely
+and perfect.  The Psyche I love the least, because its fancy is
+rather weak and its sentiment effusive.  It has a touch of the
+deadly sickliness of Endymion.  None the less does it remain just
+within the group of the really fine odes of English poets.  The
+eloquent Melancholy more narrowly escapes exclusion from that
+group.
+
+
+
+
+
+End of Project Gutenberg Etext of Flower of the Mind, by Alice Meynell
+More below. . .
+
+
+
+
+LATER POEMS
+
+
+
+
+Contents:
+
+
+The Shepherdess
+"I am the Way"
+Via, et Veritas, et Vita
+Why wilt Thou Chide?
+The Lady Poverty
+The Fold
+Cradle-song at Twilight
+The Roaring Frost
+Parentage
+The Modern Mother
+West Wind in Winter
+November Blue
+Chimes
+Unto us a Son is given
+A Dead Harvest
+The Two Poets
+A Poet's Wife
+Veneration of Images
+At Night
+
+
+
+THE SHEPHERDESS
+
+
+
+She walks--the lady of my delight -
+A shepherdess of sheep.
+Her flocks are thoughts.  She keeps them white;
+She guards them from the steep.
+She feeds them on the fragrant height,
+And folds them in for sleep.
+
+She roams maternal hills and bright,
+Dark valleys safe and deep.
+Into that tender breast at night
+The chastest stars may peep.
+She walks--the lady of my delight -
+A shepherdess of sheep.
+
+She holds her little thoughts in sight,
+Though gay they run and leap.
+She is so circumspect and right;
+She has her soul to keep.
+She walks--the lady of my delight -
+A shepherdess of sheep.
+
+
+
+"I AM THE WAY"
+
+
+
+Thou art the Way.
+Hadst Thou been nothing but the goal,
+I cannot say
+If Thou hadst ever met my soul.
+
+I cannot see -
+I, child of process--if there lies
+An end for me,
+Full of repose, full of replies.
+
+I'll not reproach
+The way that goes, my feet that stir.
+Access, approach,
+Art Thou, time, way, and wayfarer.
+
+
+
+VIA, ET VERITAS, ET VITA
+
+
+
+"You never attained to Him?"  "If to attain
+Be to abide, then that may be."
+"Endless the way, followed with how much pain!"
+"The way was He."
+
+
+
+"WHY WILT THOU CHIDE?"
+
+
+
+Why wilt thou chide,
+Who hast attained to be denied?
+Oh learn, above
+All price is my refusal, Love.
+My sacred Nay
+Was never cheapened by the way.
+Thy single sorrow crowns thee lord
+Of an unpurchasable word.
+
+Oh strong, Oh pure!
+As Yea makes happier loves secure,
+I vow thee this
+Unique rejection of a kiss.
+I guard for thee
+This jealous sad monopoly.
+I seal this honour thine.  None dare
+Hope for a part in thy despair.
+
+
+
+THE LADY POVERTY
+
+
+
+The Lady Poverty was fair:
+But she has lost her looks of late,
+With change of times and change of air.
+Ah slattern, she neglects her hair,
+Her gown, her shoes.  She keeps no state
+As once when her pure feet were bare.
+
+Or--almost worse, if worse can be -
+She scolds in parlours; dusts and trims,
+Watches and counts.  Oh, is this she
+Whom Francis met, whose step was free,
+Who with Obedience carolled hymns,
+In Umbria walked with Chastity?
+
+Where is her ladyhood?  Not here,
+Not among modern kinds of men;
+But in the stony fields, where clear
+Through the thin trees the skies appear;
+In delicate spare soil and fen,
+And slender landscape and austere.
+
+
+
+THE FOLD
+
+
+
+BEHOLD,
+The time is now!  Bring back, bring back
+Thy flocks of fancies, wild of whim.
+Oh lead them from the mountain-track -
+Thy frolic thoughts untold.
+Oh bring them in--the fields grow dim -
+And let me be the fold.
+
+Behold,
+The time is now!  Call in, O call
+Thy posturing kisses gone astray
+For scattered sweets.  Gather them all
+To shelter from the cold.
+Throng them together, close and gay,
+And let me be the fold!
+
+
+
+CRADLE-SONG AT TWILIGHT
+
+
+
+The child not yet is lulled to rest.
+Too young a nurse, the slender Night
+So laxly holds him to her breast
+That throbs with flight.
+
+He plays with her and will not sleep.
+For other playfellows she sighs;
+An unmaternal fondness keep
+Her alien eyes.
+
+
+
+THE ROARING FROST
+
+
+
+A flock of winds came winging from the North,
+Strong birds with fighting pinions driving forth
+With a resounding call!
+
+Where will they close their wings and cease their cries -
+Between what warming seas and conquering skies -
+And fold, and fall?
+
+
+
+PARENTAGE
+
+
+
+"When Augustus Caesar legislated against the unmarried citizens of
+Rome, he declared them to be, in some sort, slayers of the people."
+
+Ah no, not these!
+These, who were childless, are not they who gave
+So many dead unto the journeying wave,
+The helpless nurslings of the cradling seas;
+Not they who doomed by infallible decrees
+Unnumbered man to the innumerable grave.
+But those who slay
+Are fathers.  Theirs are armies.  Death is theirs,
+The death of innocences and despairs;
+The dying of the golden and the grey.
+The sentence, when these speak it, has no Nay.
+And she who slays is she who bears, who bears.
+
+
+
+THE MODERN MOTHER
+
+
+
+Oh what a kiss
+With filial passion overcharged is this!
+To this misgiving breast
+The child runs, as a child ne'er ran to rest
+Upon the light heart and the unoppressed.
+
+Unhoped, unsought!
+A little tenderness, this mother thought
+The utmost of her meed
+She looked for gratitude; content indeed
+With thus much that her nine years' love had bought.
+
+Nay, even with less.
+This mother, giver of life, death, peace, distress,
+Desired ah! not so much
+Thanks as forgiveness; and the passing touch
+Expected, and the slight, the brief caress.
+
+Oh filial light
+Strong in these childish eyes, these new, these bright
+Intelligible stars!  Their rays
+Are near the constant earth, guides in the maze,
+Natural, true, keen in this dusk of days.
+
+
+
+WEST WIND IN WINTER
+
+
+
+Another day awakes.  And who -
+Changing the world--is this?
+He comes at whiles, the Winter through,
+West Wind!  I would not miss
+His sudden tryst:  the long, the new
+Surprises of his kiss.
+
+Vigilant, I make haste to close
+With him who comes my way.
+I go to meet him as he goes;
+I know his note, his lay,
+His colour and his morning rose;
+And I confess his day.
+
+My window waits; at dawn I hark
+His call; at morn I meet
+His haste around the tossing park
+And down the softened street;
+The gentler light is his; the dark,
+The grey--he turns it sweet.
+
+So too, so too, do I confess
+My poet when he sings.
+He rushes on my mortal guess
+With his immortal things.
+I feel, I know him.  On I press -
+He finds me 'twixt his wings.
+
+
+
+NOVEMBER BLUE
+
+
+
+The colour of the electric lights has a strange effect in giving a
+complementary tint to the air in the early evening.--ESSAY ON
+LONDON.
+
+O, Heavenly colour!  London town
+Has blurred it from her skies;
+And hooded in an earthly brown,
+Unheaven'd the city lies.
+No longer standard-like this hue
+Above the broad road flies;
+Nor does the narrow street the blue
+Wear, slender pennon-wise.
+
+But when the gold and silver lamps
+Colour the London dew,
+And, misted by the winter damps,
+The shops shine bright anew -
+Blue comes to earth, it walks the street,
+It dyes the wide air through;
+A mimic sky about their feet,
+The throng go crowned with blue.
+
+
+
+CHIMES
+
+
+
+Brief, on a flying night,
+From the shaken tower,
+A flock of bells take flight,
+And go with the hour.
+
+Like birds from the cote to the gales,
+Abrupt--O hark!
+A fleet of bells set sails,
+And go to the dark.
+
+Sudden the cold airs swing.
+Alone, aloud,
+A verse of bells takes wing
+And flies with the cloud.
+
+
+
+UNTO US A SON IS GIVEN
+
+
+
+Given, not lent,
+And not withdrawn--once sent -
+This Infant of mankind, this One,
+Is still the little welcome Son.
+
+New every year,
+New-born and newly dear,
+He comes with tidings and a song,
+The ages long, the ages long.
+
+Even as the cold
+Keen winter grows not old;
+As childhood is so fresh, foreseen,
+And spring in the familiar green;
+
+Sudden as sweet
+Come the expected feet.
+All joy is young, and new all art,
+And He, too, Whom we have by heart.
+
+
+
+A DEAD HARVEST [IN KENSINGTON GARDENS]
+
+
+
+Along the graceless grass of town
+They rake the rows of red and brown,
+Dead leaves, unlike the rows of hay,
+Delicate, neither gold nor grey,
+Raked long ago and far away.
+
+A narrow silence in the park;
+Between the lights a narrow dark.
+One street rolls on the north, and one,
+Muffled, upon the south doth run.
+Amid the mist the work is done.
+
+A futile crop; for it the fire
+Smoulders, and, for a stack, a pyre.
+So go the town's lives on the breeze,
+Even as the sheddings of the trees;
+Bosom nor barn is filled with these.
+
+
+
+THE TWO POETS
+
+
+
+Whose is the speech
+That moves the voices of this lonely beech?
+Out of the long West did this wild wind come -
+Oh strong and silent!  And the tree was dumb,
+Ready and dumb, until
+The dumb gale struck it on the darkened hill.
+
+Two memories,
+Two powers, two promises, two silences
+Closed in this cry, closed in these thousand leaves
+Articulate.  This sudden hour retrieves
+The purpose of the past,
+Separate, apart--embraced, embraced at last.
+
+"Whose is the word?
+Is it I that spake?  Is it thou?  Is it I that heard?"
+"Thine earth was solitary; yet I found thee!"
+"Thy sky was pathless, but I caught, I bound thee,
+Thou visitant divine."
+"O thou my Voice, the word was thine."
+"Was thine."
+
+
+
+A POET'S WIFE
+
+
+
+I saw a tract of ocean locked in-land
+Within a field's embrace -
+The very sea!  Afar it fled the strand
+And gave the seasons chase,
+And met the night alone, the tempest spanned,
+Saw sunrise face to face.
+
+O Poet, more than ocean, lonelier!
+In inaccessible rest
+And storm remote, thou, sea of thoughts, dost stir,
+Scattered through east to west, -
+Now, while thou closest with the kiss of her
+Who locks thee to her breast.
+
+
+
+VENERATION OF IMAGES
+
+
+
+Thou man, first-comer, whose wide arms entreat,
+Gather, clasp, welcome, bind,
+Lack, or remember! whose warm pulses beat
+With love of thine own kind;
+
+Unlifted for a blessing on yon sea,
+Unshrined on this high-way,
+O flesh, O grief, thou too shalt have our knee,
+Thou rood of every day!
+
+
+
+AT NIGHT
+
+
+
+Home, home from the horizon far and clear,
+Hither the soft wings sweep;
+Flocks of the memories of the day draw near
+The dovecote doors of sleep.
+
+O which are they that come through sweetest light
+Of all these homing birds?
+Which with the straightest and the swiftest flight?
+Your words to me, your words!
+
+
+
+
+
+End of The Project Gutenberg Etext of Later Poems, by Alice Meynell
+

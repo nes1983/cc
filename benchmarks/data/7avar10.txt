@@ -1,0 +1,7149 @@
+The Project Gutenberg EBook of L'Avare, by Jean-Baptiste Poquelin
+[AKA Moliere]
+(#9 in our series by Jean-Baptiste Poquelin [AKA Moliere])
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: L'Avare
+
+Author: Jean-Baptiste Poquelin [AKA Moliere]
+
+Release Date: August, 2004  [EBook #6318]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on November 25, 2002]
+
+Edition: 10
+
+Language: French
+
+Character set encoding: ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK, L'AVARE ***
+
+
+
+
+Produced by Laurent Le Guillou <leguillou.laurent@free.fr>
+
+
+
+
+
+
+
+
+Title: L'Avare
+
+Language: French
+
+Encoding: ISO-8859-1
+
+
+
+Source:
+
+Jean-Baptiste Poquelin (1620-1673), alias Moliere,
+"Oeuvres de Moliere, avec des notes de tous les commentateurs",
+Tome Second,
+Paris, Librarie de Firmin-Didot et Cie,
+Imprimeurs de l'Institut, rue Jacob, 56,
+1890.
+
+Pages 148-229.
+
+[Spelling of the 1890 edition. Footnotes have been retained because
+they provide the meanings of old French words or expressions.
+Footnote are indicated by numbers in brackets, and are grouped
+at the end of the Etext. Text encoding is iso-8859-1.]
+
+
+
+
+
+L'AVARE
+
+
+
+
+Comedie (1667)
+
+
+
+PERSONNAGES                                        ACTEURS
+
+Harpagon, pere de Cleante et d'Elise, 
+et amoureux de Mariane.                            Moliere.
+Cleante, fils d'Harpagon, amant de Mariane.        La Grange.
+Elise, fille d'Harpagon, amante de Valere.         Mlle Moliere.
+Valere, fils d'Anselme et amant d'Elise.           Du Croisy.
+Mariane, amante de Cleante et aimee d'Harpagon.    Mlle De Brie.
+Anselme, pere de Valere et de Mariane.
+Frosine, femme d'intrigue.                         Magd. Bejart.
+Maitre Simon, courtier.
+Maitre Jacques, cuisinier et cocher d'Harpagon.    Hubert.
+La Fleche, valet de Cleante.                       Bejart cadet.
+Dame Claude, servante d'Harpagon.
+Brindavoine, 
+La Merluche, laquais d'Harpagon.
+Un commissaire et son clerc.
+
+
+
+La scene est a Paris, dans la maison d'Harpagon.
+
+
+ACTE PREMIER.
+-------------
+
+
+Scene premiere. - Valere, Elise.
+
+
+
+- Valere -
+
+He quoi ! charmante Elise, vous devenez melancolique, apres les
+obligeantes assurances que vous avez eu la bonte de me donner de votre
+foi ? Je vous vois soupirer, helas ! au milieu de ma joie ! Est-ce du
+regret, dites-moi, de m'avoir fait heureux ? et vous repentez-vous de
+cet engagement ou mes feux ont pu vous contraindre ?
+
+
+- Elise -
+
+Non, Valere, je ne puis pas me repentir de tout ce que je fais pour
+vous. Je m'y sens entrainer par une trop douce puissance, et je n'ai
+pas meme la force de souhaiter que les choses ne fussent pas. Mais, a
+vous dire vrai, le succes me donne de l'inquietude ; et je crains fort
+de vous aimer un peu plus que je ne devrais.
+
+
+- Valere -
+
+Eh ! que pouvez-vous craindre, Elise, dans les bontes que vous avez
+pour moi ?
+
+
+- Elise -
+
+Helas ! cent choses a la fois : l'emportement d'un pere, les reproches
+d'une famille, les censures du monde ; mais plus que tout, Valere, le
+changement de votre coeur, et cette froideur criminelle dont ceux de
+votre sexe payent le plus souvent les temoignages trop ardents d'un
+innocent amour.
+
+
+- Valere -
+
+Ah ! ne me faites pas ce tort, de juger de moi par les autres !
+Soupconnez-moi de tout, Elise, plutot que de manquer a ce que je vous
+dois. Je vous aime trop pour cela ; et mon amour pour vous durera
+autant que ma vie.
+
+
+- Elise -
+
+Ah ! Valere, chacun tient les memes discours ! Tous les hommes sont
+semblables par les paroles ; et ce n'est que les actions qui les
+decouvrent differents.
+
+
+- Valere -
+
+Puisque les seules actions font connaitre ce que nous sommes, attendez
+donc, au moins, a juger de mon coeur par elles, et ne me cherchez point
+des crimes dans les injustes craintes d'une facheuse prevoyance. Ne
+m'assassinez point, je vous prie, par les sensibles coups d'un soupcon
+outrageux ; et donnez-moi le temps de vous convaincre, par mille et
+mille preuves, de l'honnetete de mes feux.
+
+
+- Elise -
+
+Helas ! qu'avec facilite on se laisse persuader par les personnes que
+l'on aime ! Oui, Valere, je tiens votre coeur incapable de m'abuser.
+Je crois que vous m'aimez d'un veritable amour, et que vous me serez
+fidele : je n'en veux point du tout douter, et je retranche mon
+chagrin aux apprehensions du blame qu'on pourra me donner.
+
+
+- Valere -
+
+Mais pourquoi cette inquietude ?
+
+
+- Elise -
+
+Je n'aurais rien a craindre si tout le monde vous voyait des yeux dont
+je vous vois ; et je trouve en votre personne de quoi avoir raison aux
+choses que je fais pour vous. Mon coeur, pour sa defense, a tout votre
+merite, appuye du secours d'une reconnaissance ou le ciel m'engage
+envers vous. Je me represente a toute heure ce peril etonnant qui
+commenca de nous offrir aux regards l'un de l'autre ; cette generosite
+surprenante qui vous fit risquer votre vie, pour derober la mienne a la
+fureur des ondes ; ces soins pleins de tendresse que vous me fites
+eclater apres m'avoir tiree de l'eau, et les hommages assidus de cet
+ardent amour que ni le temps ni les difficultes n'ont rebute, et qui,
+vous faisant negliger et parents et patrie, arrete vos pas en ces
+lieux, y tient en ma faveur votre fortune deguisee, et vous a reduit,
+pour me voir, a vous revetir de l'emploi de domestique de mon pere.
+Tout cela fait chez moi, sans doute, un merveilleux effet ; et c'en est
+assez, a mes yeux, pour me justifier l'engagement ou j'ai pu consentir ; 
+mais ce n'est pas assez peut-etre pour le justifier aux autres, et je 
+ne suis pas sure qu'on entre dans mes sentiments.
+
+
+- Valere -
+
+De tout ce que vous avez dit, ce n'est que par mon seul amour que je
+pretends aupres de vous meriter quelque chose ; et quant aux
+scrupules que vous avez, votre pere lui-meme ne prend que trop de soin
+de vous justifier a tout le monde, et l'exces de son avarice, et la
+maniere austere dont il vit avec ses enfants, pourraient autoriser des
+choses plus etranges. Pardonnez-moi, charmante Elise, si j'en parle
+ainsi devant vous. Vous savez que, sur ce chapitre, on n'en peut pas
+dire de bien. Mais enfin, si je puis, comme je l'espere, retrouver mes
+parents, nous n'aurons pas beaucoup de peine a nous les rendre
+favorables. J'en attends des nouvelles avec impatience, et j'en irai
+chercher moi-meme, si elles tardent a venir.
+
+
+- Elise -
+
+Ah! Valere, ne bougez d'ici, je vous prie, et songez seulement a vous
+bien mettre dans l'esprit de mon pere.
+
+
+- Valere -
+
+Vous voyez comme je m'y prends, et les adroites complaisances qu'il
+m'a fallu mettre en usage pour m'introduire a son service ; sous quel
+masque de sympathie et de rapports de sentiments je me deguise pour
+lui plaire, et quel personnage je joue tous les jours avec lui, afin
+d'acquerir sa tendresse. J'y fais des progres admirables ; et j'eprouve
+que, pour gagner les hommes, il n'est point de meilleure voie que de se
+parer a leurs yeux de leurs inclinations, que de donner dans leurs
+maximes, encenser leurs defauts, et applaudir a ce qu'ils font. On n'a
+que faire d'avoir peur de trop charger la complaisance ; et la maniere
+dont on les joue a beau etre visible, les plus fins toujours sont de
+grandes dupes du cote de la flatterie, et il n'y a rien de si
+impertinent et de si ridicule qu'on ne fasse avaler, lorsqu'on
+l'assaisonne en louanges. La sincerite souffre un peu au metier que je
+fais ; mais, quand on a besoin des hommes, il faut bien s'ajuster a
+eux, et puisqu'on ne saurait les gagner que par la, ce n'est pas la
+faute de ceux qui flattent, mais de ceux qui veulent etre flattes.
+
+
+- Elise -
+
+Mais que ne tachez-vous aussi de gagner l'appui de mon frere, en cas
+que la servante s'avisat de reveler notre secret ?
+
+
+- Valere -
+
+On ne peut pas menager l'un et l'autre ; et l'esprit du pere et celui
+du fils sont des choses si opposees, qu'il est difficile d'accommoder
+ces deux confidences ensemble. Mais vous, de votre part, agissez
+aupres de votre frere, et servez-vous de l'amitie qui est entre vous
+deux pour le jeter dans nos interets. Il vient. Je me retire. Prenez
+ce temps pour lui parler, et ne lui decouvrez de notre affaire que ce
+que vous jugerez a propos.
+
+
+- Elise -
+
+Je ne sais si j'aurai la force de lui faire cette confidence.
+
+
+-----------
+
+Scene II. - Cleante, Elise.
+
+
+
+- Cleante -
+
+Je suis bien aise de vous trouver seule, ma soeur ; et je brulais de
+vous parler, pour m'ouvrir a vous d'un secret.
+
+
+- Elise -
+
+Me voila prete a vous ouir, mon frere. Qu'avez-vous a me dire ?
+
+
+- Cleante -
+
+Bien des choses, ma soeur, enveloppees dans un mot. J'aime.
+
+
+- Elise -
+
+Vous aimez ?
+
+
+- Cleante -
+
+Oui, j'aime. Mais, avant que d'aller plus loin, je sais que je depends
+d'un pere, et que le nom de fils me soumet a ses volontes ; que nous
+ne devons point engager notre foi sans le consentement de ceux dont
+nous tenons le jour ; que le ciel les a faits les maitres de nos
+voeux, et qu'il nous est enjoint de n'en disposer que par leur
+conduite ; que, n'etant prevenus d'aucune folle ardeur, ils sont en
+etat de se tromper bien moins que nous et de voir beaucoup mieux ce
+qui nous est propre ; qu'il en faut plutot croire les lumieres de leur
+prudence que l'aveuglement de notre passion ; et que l'emportement de
+la jeunesse nous entraine le plus souvent dans des precipices
+facheux. Je vous dis tout cela, ma soeur, afin que vous ne vous
+donniez pas la peine de me le dire ? car enfin mon amour ne veut rien
+ecouter, et je vous prie de ne me point faire de remontrances.
+
+
+- Elise -
+
+Vous etes-vous engage, mon frere, avec celle que vous aimez ?
+
+
+- Cleante -
+
+Non ; mais j'y suis resolu, et je vous conjure encore une fois de ne
+me point apporter de raisons pour m'en dissuader.
+
+
+- Elise -
+
+Suis-je, mon frere, une si etrange personne ?
+
+
+- Cleante -
+
+Non, ma soeur ; mais vous n'aimez pas ; vous ignorez la douce violence
+qu'un tendre amour fait sur nos coeurs, et j'apprehende votre sagesse.
+
+
+- Elise -
+
+Helas ! mon frere, ne parlons point de ma sagesse : il n'est personne
+qui n'en manque, du moins une fois en sa vie ; et, si je vous ouvre mon
+coeur, peut-etre serai-je a vos yeux bien moins sage que vous.
+
+
+- Cleante -
+
+Ah ! plut au ciel que votre ame, comme la mienne... !
+
+
+- Elise -
+
+Finissons auparavant votre affaire, et me dites qui est celle que vous
+aimez.
+
+
+- Cleante -
+
+Une jeune personne qui loge depuis peu en ces quartiers, et qui semble
+etre faite pour donner de l'amour a tous ceux qui la voient. La
+nature, ma soeur, n'a rien forme de plus aimable ; et je me sentis
+transporte des le moment que je la vis. Elle se nomme Mariane, et vit
+sous la conduite d'une bonne femme de mere qui est presque toujours
+malade, et pour qui cette aimable fille a des sentiments d'amitie qui
+ne sont pas imaginables. Elle la sert, la plaint et la console, avec
+une tendresse qui vous toucherait l'ame. Elle se prend d'un air le
+plus charmant du monde aux choses qu'elle fait ; et l'on voit briller
+mille graces en toutes ses actions, une douceur pleine d'attraits,
+une bonte toute engageante, une honnetete adorable, une... Ah ! ma
+soeur, je voudrais que vous l'eussiez vue !
+
+
+- Elise -
+
+J'en vois beaucoup, mon frere, dans les choses que vous me dites ; et,
+pour comprendre ce qu'elle est, il me suffit que vous l'aimez.
+
+
+- Cleante -
+
+J'ai decouvert sous main qu'elles ne sont pas fort accommodees (1), et
+que leur discrete conduite a de la peine a etendre a tous leurs
+besoins le bien qu'elles peuvent avoir. Figurez-vous, ma soeur, quelle
+joie ce peut etre que de relever la fortune d'une personne que l'on
+aime ; que de donner adroitement quelques petits secours aux modestes
+necessites d'une vertueuse famille ; et concevez quel deplaisir ce
+m'est de voir que, par l'avarice d'un pere, je sois dans l'impuissance
+de gouter cette joie, et de faire eclater a cette belle aucun
+temoignage de mon amour.
+
+
+- Elise -
+
+Oui, je concois assez, mon frere, quel doit etre votre chagrin.
+
+
+- Cleante -
+
+Ah ! ma soeur, il est plus grand qu'on ne peut croire. Car, enfin,
+peut-on rien voir de plus cruel que cette rigoureuse epargne qu'on
+exerce sur nous, que cette secheresse etrange ou l'on nous fait
+languir ? He ! que nous servira d'avoir du bien, s'il ne nous vient que
+dans le temps que nous ne serons plus dans le bel age d'en jouir, et
+si, pour m'entretenir meme, il faut que maintenant je m'engage de tous
+cotes ; si je suis reduit avec vous a chercher tous les jours le
+secours des marchands, pour avoir moyen de porter des habits
+raisonnables ? Enfin, j'ai voulu vous parler pour m'aider a sonder mon
+pere sur les sentiments ou je suis ; et, si je l'y trouve contraire,
+j'ai resolu d'aller en d'autres lieux, avec cette aimable personne,
+jouir de la fortune que le ciel voudra nous offrir. Je fais chercher
+partout, pour ce dessein, de l'argent a emprunter ; et, si vos affaires,
+ma soeur, sont semblables aux miennes, et qu'il faille que notre pere
+s'oppose a nos desirs, nous le quitterons la tous deux, et nous
+affranchirons de cette tyrannie ou nous tient depuis si longtemps son
+avarice insupportable.
+
+
+- Elise -
+
+Il est bien vrai que tous les jours il nous donne de plus en plus
+sujet de regretter la mort de notre mere, et que...
+
+
+- Cleante -
+
+J'entends sa voix. Eloignons-nous un peu pour achever notre confidence ; 
+et nous joindrons apres nos forces pour venir attaquer la durete de
+son humeur.
+
+
+-----------
+
+Scene III. - Harpagon, La Fleche.
+
+
+
+- Harpagon -
+
+Hors d'ici tout a l'heure, et qu'on ne replique pas. Allons, que
+l'on detale de chez moi, maitre jure filou, vrai gibier de potence !
+
+
+- La Fleche -
+
+        (a part.)
+
+Je n'ai jamais rien vu de si mechant que ce maudit vieillard, et je
+pense, sauf correction, qu'il a le diable au corps.
+
+
+- Harpagon -
+
+Tu murmures entre tes dents ?
+
+
+- La Fleche -
+
+Pourquoi me chassez-vous ?
+
+
+- Harpagon -
+
+C'est bien a toi, pendard, a me demander des raisons ! Sors vite, que
+je ne t'assomme.
+
+
+- La Fleche -
+
+Qu'est-ce que je vous ai fait ?
+
+
+- Harpagon -
+
+Tu m'as fait que je veux que tu sortes.
+
+
+- La Fleche -
+
+Mon maitre, votre fils, m'a donne ordre de l'attendre.
+
+
+- Harpagon -
+
+Va-t'en l'attendre dans la rue, et ne sois point dans ma maison,
+plante tout droit comme un piquet a observer ce qui se passe, et faire
+ton profit de tout. Je ne veux point avoir sans cesse devant moi un
+espion de mes affaires, un traitre dont les yeux maudits assiegent
+toutes mes actions, devorent ce que je possede, et furettent de tous
+cotes pour voir s'il n'y a rien a voler.
+
+
+- La Fleche -
+
+Comment diantre voulez-vous qu'on fasse pour vous voler ? Etes-vous
+un homme volable, quand vous renfermez toutes choses, et faites
+sentinelle jour et nuit ?
+
+
+- Harpagon -
+
+Je veux renfermer ce que bon me semble, et faire sentinelle comme il me
+plait. Ne voila pas de mes mouchards (2), qui prennent garde a ce qu'on
+fait ?
+
+        (Bas, a part.) 
+
+Je tremble qu'il n'ait soupconne quelque chose de mon argent.
+
+        (Haut.) 
+
+Ne serais-tu point homme a aller faire courir le bruit que j'ai chez
+moi de l'argent cache ?
+
+
+- La Fleche -
+
+Vous avez de l'argent cache ?
+
+
+- Harpagon -
+
+Non, coquin, je ne dis pas cela. 
+
+        (Bas.) 
+
+J'enrage !
+
+        (Haut.) 
+
+Je demande si, malicieusement, tu n'irais point faire courir le bruit
+que j'en ai.
+
+
+- La Fleche -
+
+He ! que nous importe que vous en ayez, ou que vous n'en ayez pas, si
+c'est pour nous la meme chose ?
+
+
+- Harpagon -
+
+        (levant la main pour donner un soufflet a la Fleche.) 
+
+Tu fais le raisonneur ! Je te baillerai de ce raisonnement-ci par les
+oreilles. Sors d'ici, encore une fois.
+
+
+- La Fleche -
+
+Eh bien, je sors.
+
+
+- Harpagon -
+
+Attends : ne m'emportes-tu rien ?
+
+
+- La Fleche -
+
+Que vous emporterais-je ?
+
+
+- Harpagon -
+
+Tiens, viens ca, que je voie. Montre-moi tes mains.
+
+
+- La Fleche -
+
+Les voila.
+
+
+- Harpagon -
+
+Les autres.
+
+
+- La Fleche -
+
+Les autres ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- La Fleche -
+
+Les voila.
+
+
+- Harpagon -
+
+        (montrant les hauts-de-chausses de la Fleche.)
+
+N'as-tu rien mis ici dedans ?
+
+
+- La Fleche -
+
+Voyez vous-meme.
+
+
+- Harpagon -
+
+        (tatant le bas des hauts-de-chausses de la Fleche.)
+
+Ces grands hauts-de-chausses sont propres a devenir les receleurs des
+choses qu'on derobe ; et je voudrais qu'on en eut fait pendre
+quelqu'un.
+
+
+- La Fleche -
+
+        (a part.)
+
+Ah ! qu'un homme comme cela meriterait bien ce qu'il craint ! Et que
+j'aurais de joie a la voler !
+
+
+- Harpagon -
+
+Euh ?
+
+
+- La Fleche -
+
+Quoi ?
+
+
+- Harpagon -
+
+Qu'est-ce que tu parles de voler ?
+
+
+- La Fleche -
+
+Je vous dis que vous fouillez bien partout, pour voir si je vous ai vole.
+
+
+- Harpagon -
+
+C'est ce que je veux faire. 
+
+        (Harpagon fouille dans les poches de La Fleche.)
+
+
+- La Fleche -
+
+        (a part.)
+
+La peste soit de l'avarice et des avaricieux !
+
+
+- Harpagon -
+
+Comment ? que dis-tu ?
+
+
+- La Fleche -
+
+Ce que je dis ?
+
+
+- Harpagon -
+
+Oui. Qu'est-ce que tu dis d'avarice et d'avaricieux ?
+
+
+- La Fleche -
+
+Je dis que la peste soit de l'avarice et des avaricieux !
+
+
+- Harpagon -
+
+De qui veux-tu parler ?
+
+
+- La Fleche -
+
+Des avaricieux.
+
+
+- Harpagon -
+
+Et qui sont-ils, ces avaricieux ?
+
+
+- La Fleche -
+
+Des vilains et des ladres.
+
+
+- Harpagon -
+
+Mais qui est-ce que tu entends par la ?
+
+
+- La Fleche -
+
+De quoi vous mettez-vous en peine ?
+
+
+- Harpagon -
+
+Je me mets en peine de ce qu'il faut.
+
+
+- La Fleche -
+
+Est-ce que vous croyez que je veux parler de vous ?
+
+
+- Harpagon -
+
+Je crois ce que je crois ; mais je veux que tu me dises a qui tu
+parles quand tu dis cela.
+
+
+- La Fleche -
+
+Je parle... je parle a mon bonnet.
+
+
+- Harpagon -
+
+Et moi, je pourrais bien parler a ta barrette (3).
+
+
+- La Fleche -
+
+M'empecherez-vous de maudire les avaricieux ?
+
+
+- Harpagon -
+
+Non ; mais je t'empecherai de jaser et d'etre insolent. Tais-toi.
+
+
+- La Fleche -
+
+Je ne nomme personne.
+
+
+- Harpagon -
+
+Je te rosserai si tu parles.
+
+
+- La Fleche -
+
+Qui se sent morveux, qu'il se mouche.
+
+
+- Harpagon -
+
+Te tairas-tu ?
+
+
+- La Fleche -
+
+Oui, malgre moi.
+
+
+- Harpagon -
+
+Ah ! Ah !
+
+
+- La Fleche -
+
+        (montrant a Harpagon une poches de son justaucorps.)
+
+Tenez, voila encore une poche : etes-vous satisfait ?
+
+
+- Harpagon -
+
+Allons, rends-le-moi sans te fouiller.
+
+
+- La Fleche -
+
+Quoi ?
+
+
+- Harpagon -
+
+Ce que tu m'as pris.
+
+
+- La Fleche -
+
+Je ne vous ai rien pris du tout.
+
+
+- Harpagon -
+
+Assurement ?
+
+
+- La Fleche -
+
+Assurement.
+
+
+- Harpagon -
+
+Adieu. Va-t-en a tous les diables !
+
+
+- La Fleche -
+
+Me voila fort bien congedie.
+
+
+- Harpagon -
+
+Je te le mets sur ta conscience, au moins.
+
+
+-----------
+
+Scene IV. - Harpagon.
+
+
+
+- Harpagon -
+
+Voila un pendard de valet qui m'incommode fort ; et je ne me plais
+point a voir ce chien de boiteux-la. Certes, ce n'est pas une petite
+peine que de garder chez soi une grande somme d'argent ; et
+bienheureux qui a tout son fait bien place, et ne conserve seulement
+que ce qu'il faut pour sa depense ! On n'est pas peu embarrasse a
+inventer, dans toute une maison, une cache fidele ; car pour moi, les
+coffres-forts me sont suspects, et je ne veux jamais m'y fier. Je les
+tiens justement une franche amorce a voleurs, et c'est toujours la
+premiere chose que l'on va attaquer.
+
+
+-----------
+
+Scene V. - Harpagon ; Elise et Cleante, parlant ensemble, et restant
+	   dans le fond du theatre.
+
+
+
+- Harpagon -
+
+        (se croyant seul.) 
+
+Cependant, je ne sais si j'aurai bien fait d'avoir enterre, dans mon
+jardin, dix mille ecus qu'on me rendit hier. Dix mille ecus en or, chez
+soi, est une somme assez...
+
+        (A part, apercevant Elise et Cleante.) 
+
+O ciel ! je me serai trahi moi-meme ! la chaleur m'aura emporte, et je
+crois que j'ai parle haut, en raisonnant tout seul.
+
+        (A Cleante et Elise.) 
+
+Qu'est-ce ?
+
+
+- Cleante -
+
+Rien, mon pere.
+
+
+- Harpagon -
+
+Y a-t-il longtemps que vous etes la ?
+
+
+- Elise -
+
+Nous ne venons que d'arriver.
+
+
+- Harpagon -
+
+Vous avez entendu...
+
+
+- Cleante -
+
+Quoi, mon pere ?
+
+
+- Harpagon -
+
+La...
+
+
+- Elise -
+
+Quoi ?
+
+
+- Harpagon -
+
+Ce que je viens de dire.
+
+
+- Cleante -
+
+Non.
+
+
+- Harpagon -
+
+Si fait, si fait.
+
+
+- Elise -
+
+Pardonnez-moi.
+
+
+- Harpagon -
+
+Je vois bien que vous en avez oui quelques mots. C'est que je
+m'entretenais en moi-meme de la peine qu'il y a aujourd'hui a trouver
+de l'argent, et je disais qu'il est bien heureux qui peut avoir dix
+mille ecus chez soi.
+
+
+- Cleante -
+
+Nous feignions a vous aborder, de peur de vous interrompre.
+
+
+- Harpagon -
+
+Je suis bien aise de vous dire cela, afin que vous n'alliez pas
+prendre les choses de travers, et vous imaginer que je dise que c'est
+moi qui ai dix mille ecus.
+
+
+- Cleante -
+
+Nous n'entrons point dans vos affaires.
+
+
+- Harpagon -
+
+Plut a Dieu que je les eusse, dix mille ecus !
+
+
+- Cleante -
+
+Je ne crois pas...
+
+
+- Harpagon -
+
+Ce serait une bonne affaire pour moi.
+
+
+- Elise -
+
+Ces sont des choses...
+
+
+- Harpagon -
+
+J'en aurais bon besoin.
+
+
+- Cleante -
+
+Je pense que...
+
+
+- Harpagon -
+
+Cela m'accommoderait fort.
+
+
+- Elise -
+
+Vous etes...
+
+
+- Harpagon -
+
+Et je ne me plaindrais pas, comme je le fais, que le temps est
+miserable.
+
+
+- Cleante -
+
+Mon Dieu ! mon pere, vous n'avez pas lieu de vous plaindre et l'on
+sait que vous avez assez de bien.
+
+
+- Harpagon -
+
+Comment, j'ai assez de bien ! Ceux qui le disent en ont menti. Il n'y
+a rien de plus faux ; et ce sont des coquins qui font courir tous ces
+bruits-la.
+
+
+- Elise -
+
+Ne vous mettez point en colere.
+
+
+- Harpagon -
+
+Cela est etrange que mes propres enfants me trahissent et deviennent
+mes ennemis.
+
+
+- Cleante -
+
+Est-ce etre votre ennemi que de dire que vous avez du bien ?
+
+
+- Harpagon -
+
+Oui. De pareils discours, et les depenses que vous faites, seront
+cause qu'un de ces jours on me viendra chez moi couper la gorge, dans
+la pensee que je suis tout cousu de pistoles.
+
+
+- Cleante -
+
+Quelle grande depense est-ce que je fais ?
+
+
+- Harpagon -
+
+Quelle ? Est-il rien de plus scandaleux que ce somptueux equipage que
+vous promenez par la ville ? Je querellais hier votre soeur ; mais
+c'est encore pis. Voila qui crie vengeance au ciel ; et, a vous
+prendre depuis les pieds jusqu'a la tete, il y aurait la de quoi faire
+une bonne constitution. Je vous l'ai dit vingt fois, mon fils, toutes
+vos manieres me deplaisent fort ; vous donnez furieusement dans le
+marquis ; et, pour aller ainsi vetu, il faut bien que vous me derobiez.
+
+
+- Cleante -
+
+He ! comment vous derober ?
+
+
+- Harpagon -
+
+Que sais-je ? Ou pouvez-vous donc prendre de quoi entretenir l'etat
+que vous portez ?
+
+
+- Cleante -
+
+Moi, mon pere ? C'est que je joue ; et, comme je suis fort heureux, je
+mets sur moi tout l'argent que je gagne.
+
+
+- Harpagon -
+
+C'est fort mal fait. Si vous etes heureux au jeu, vous en devriez
+profiter, et mettre a honnete interet l'argent que vous gagnez, afin
+de le trouver un jour. Je voudrais bien savoir, sans parler du reste,
+a quoi servent tous ces rubans dont vous voila larde depuis les pieds
+jusqu'a la tete, et si une demi-douzaine d'aiguillettes ne suffit pas
+pour attacher un haut-de-chausses. Il est bien necessaire d'employer
+de l'argent a des perruques, lorsque l'on peut porter des cheveux de
+son cru, qui ne coutent rien ! Je vais gager qu'en perruques et rubans
+il y a du moins vingt pistoles ; et vingt pistoles rapportent par
+annee dix-huit livres six sols huit deniers, a ne les placer qu'au
+denier douze (4).
+
+
+- Cleante -
+
+Vous avez raison.
+
+
+- Harpagon -
+
+Laissons cela, et parlons d'autre affaire. Euh ? 
+
+        (Apercevant Cleante et Elise qui se font des signes.) 
+
+He !
+
+        (Bas, a part.)
+
+Je crois qu'ils se font signe l'un a l'autre de me voler ma bourse.
+
+        (Haut.) 
+
+Que veulent dire ces gestes-la ?
+
+
+- Elise -
+
+Nous marchandons, mon frere et moi, a qui parlera le premier, et nous
+avons tous deux quelque chose a vous dire.
+
+
+- Harpagon -
+
+Et moi, j'ai quelque chose aussi a vous dire a tous deux.
+
+
+- Cleante -
+
+C'est de mariage, mon pere, que nous desirons vous parler.
+
+
+- Harpagon -
+
+Et c'est de mariage aussi que je veux vous entretenir.
+
+
+- Elise -
+
+Ah ! mon pere !
+
+
+- Harpagon -
+
+Pourquoi ce cri ? Est-ce le mot, ma fille, ou la chose, qui vous fait
+peur ?
+
+
+- Cleante -
+
+Le mariage peut nous faire peur a tous deux, de la facon que vous
+pouvez l'entendre ; et nous craignons que nos sentiments ne soient pas
+d'accord avec votre choix.
+
+
+- Harpagon -
+
+Un peu de patience ; ne vous alarmez point. Je sais ce qu'il faut a
+tous deux, et vous n'aurez, ni l'un ni l'autre, aucun lieu de vous
+plaindre de tout ce que je pretends faire ; et, pour commencer par un
+bout,
+
+        (A Cleante.) 
+
+avez-vous vu, dites-moi, une jeune personne appelee Mariane, qui
+ne loge pas loin d'ici ?
+
+
+- Cleante -
+
+Oui, mon pere.
+
+
+- Harpagon- 
+
+Et vous ?
+
+
+- Elise -
+
+J'en ai oui parler.
+
+
+- Harpagon -
+
+Comment, mon fils, trouvez-vous cette fille ?
+
+
+- Cleante -
+
+Une fort charmante personne.
+
+
+- Harpagon -
+
+Sa physionomie ?
+
+
+- Cleante -
+
+Tout honnete et pleine d'esprit.
+
+
+- Harpagon -
+
+Son air et sa maniere ?
+
+
+- Cleante -
+
+Admirables, sans doute.
+
+
+- Harpagon -
+
+Ne croyez-vous pas qu'une fille comme cela meriterait assez que l'on
+songeat a elle ?
+
+
+- Cleante -
+
+Oui, mon pere.
+
+
+- Harpagon -
+
+Que ce serait un parti souhaitable ?
+
+
+- Cleante -
+
+Tres souhaitable.
+
+
+- Harpagon -
+
+Qu'elle a toute la mine de faire un bon menage ?
+
+
+- Cleante -
+
+Sans doute.
+
+
+- Harpagon -
+
+Et qu'un mari aurait satisfaction avec elle ?
+
+
+- Cleante -
+
+Assurement.
+
+
+- Harpagon -
+
+Il y a une petite difficulte : c'est que j'ai peur qu'il n'y ait pas,
+avec elle, tout le bien qu'on pourrait pretendre.
+
+
+- Cleante -
+
+Ah ! mon pere, le bien n'est pas considerable, lorsqu'il est question
+d'epouser une honnete personne.
+
+
+- Harpagon -
+
+Pardonnez-moi, pardonnez-moi. Mais ce qu'il y a a dire, c'est que, si
+l'on n'y trouve pas tout le bien qu'on souhaite, on peut tacher de
+regagner cela sur autre chose.
+
+
+- Cleante -
+
+Cela s'entend.
+
+
+- Harpagon -
+
+Enfin je suis bien aise de vous voir dans mes sentiments ; car son
+maintien honnete et sa douceur m'ont gagne l'ame, et je suis resolu de
+l'epouser, pourvu que j'y trouve quelque bien.
+
+
+- Cleante -
+
+Euh ?
+
+
+- Harpagon -
+
+Comment ?
+
+
+- Cleante -
+
+Vous etes resolu, dites-vous... ?
+
+
+- Harpagon -
+
+D'epouser Mariane.
+
+
+- Cleante -
+
+Qui ? Vous, vous ?
+
+
+- Harpagon -
+
+Oui, moi, moi, moi. Que veut dire cela ?
+
+
+- Cleante -
+
+Il m'a pris tout a coup un eblouissement, et je me retire d'ici.
+
+
+- Harpagon -
+
+Cela ne sera rien. Allez vite boire dans la cuisine un grand verre
+d'eau claire. 
+
+
+-----------
+
+Scene VI. - Harpagon, Elise.
+
+
+
+- Harpagon -
+
+Voila de mes damoiseaux flouets (5), qui n'ont non plus de vigueur que
+des poules. C'est la, ma fille, ce que j'ai resolu pour moi. Quant a
+ton frere, je lui destine une certaine veuve dont, ce matin, on m'est
+venu parler ; et, pour toi, je te donne au seigneur Anselme.
+
+
+- Elise -
+
+Au seigneur Anselme ?
+
+
+- Harpagon -
+
+Oui, Un homme mur, prudent et sage, qui n'a pas plus de cinquante ans,
+et dont on vante les grands biens.
+
+
+- Elise -
+
+        (faisant une reverence.)
+
+Je ne veux point me marier, mon pere, s'il vous plait.
+
+
+- Harpagon -
+
+        (contrefaisant Elise.)
+
+Et moi, ma petite fille, ma mie, je veux que vous vous mariiez, s'il
+vous plait.
+
+
+- Elise -
+
+        (faisant encore la reverence.)
+
+Je vous demande pardon, mon pere.
+
+
+- Harpagon -
+
+        (contrefaisant Elise.)
+
+Je vous demande pardon, ma fille.
+
+
+- Elise -
+
+Je suis tres humble servante au seigneur Anselme ; mais, 
+
+        (Faisant encore la reverence.)
+
+avec votre permission, je ne l'epouserai point.
+
+
+- Harpagon -
+
+Je suis votre tres humble valet ; mais, 
+
+        (Contrefaisant Elise.)
+
+avec votre permission, vous l'epouserez des ce soir.
+
+
+- Elise -
+
+Des ce soir ?
+
+
+- Harpagon -
+
+Des ce soir.
+
+
+- Elise -
+
+        (faisant encore la reverence.)
+
+Cela ne sera pas, mon pere.
+
+
+- Harpagon -
+
+        (contrefaisant encore Elise.)
+
+Cela sera, ma fille.
+
+
+- Elise -
+
+Non.
+
+
+- Harpagon -
+
+Si.
+
+
+- Elise -
+
+Non, vous dis-je.
+
+
+- Harpagon -
+
+Si, vous dis-je.
+
+
+- Elise -
+
+C'est une chose ou vous ne me reduirez point.
+
+
+- Harpagon -
+
+C'est une chose ou je te reduirai.
+
+
+- Elise -
+
+Je me tuerai plutot que d'epouser un tel mari.
+
+
+- Harpagon -
+
+Tu ne te tueras point, et tu l'epouseras. Mais voyez quelle audace !
+A-t-on jamais vu une fille parler de la sorte a son pere ?
+
+
+- Elise -
+
+Mais a-t-on jamais vu un pere marier sa fille de la sorte ?
+
+
+- Harpagon -
+
+C'est un parti ou il n'y a rien a redire ! et je gage que tout le monde
+approuvera mon choix.
+
+
+- Elise -
+
+Et moi, je gage qu'il ne saurait etre approuve d'aucune personne
+raisonnable.
+
+
+- Harpagon -
+
+        (apercevant Valere de loin.)
+
+Voila Valere. Veux-tu qu'entre nous deux nous le fassions juge de
+cette affaire ?
+
+
+- Elise -
+
+J'y consens.
+
+
+- Harpagon -
+
+Te rendras-tu a son jugement ?
+
+
+- Elise -
+
+Oui. J'en passerai par ce qu'il dira.
+
+
+- Harpagon -
+
+Voila qui est fait.
+
+
+-----------
+
+Scene VII. - Valere, Harpagon, Elise.
+
+
+
+- Harpagon -
+
+Ici, Valere. Nous t'avons elu pour nous dire qui a raison de ma fille
+ou de moi.
+
+
+- Valere -
+
+C'est vous, monsieur, sans contredit.
+
+
+- Harpagon -
+
+Sais-tu bien de quoi nous parlons ?
+
+
+- Valere -
+
+Non ; mais vous ne sauriez avoir tort, et vous etes toute raison.
+
+
+- Harpagon -
+
+Je veux ce soir lui donner pour epoux un homme aussi riche que sage ;
+et la coquine me dit au nez qu'elle se moque de le prendre. Que
+dis-tu de cela ?
+
+
+- Valere -
+
+Ce que j'en dis ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- Valere -
+
+He ! he !
+
+
+- Harpagon -
+
+Quoi !
+
+
+- Valere -
+
+Je dis que, dans le fond, je suis de votre sentiment ; et vous ne
+pouvez pas que vous n'ayez raison (6). mais aussi n'a-t-elle pas tort
+tout a fait, et...
+
+
+- Harpagon -
+
+Comment ? Le seigneur Anselme est un parti considerable ; c'est un
+gentilhomme qui est noble, doux, pose, sage et fort accommode, et
+auquel il ne reste aucun enfant de son premier mariage. Saurait-elle
+mieux rencontrer ?
+
+
+- Valere -
+
+Cela est vrai. Mais elle pourrait vous dire que c'est un peu
+precipiter les choses, et qu'il faudrait au moins quelque temps pour
+voir si son inclination pourra s'accommoder avec...
+
+
+- Harpagon -
+
+C'est une occasion qu'il faut prendre vite aux cheveux. Je trouve ici
+un avantage qu'ailleurs je ne trouverais pas ; et il s'engage a la
+prendre sans dot.
+
+
+- Valere -
+
+Sans dot ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- Valere -
+
+Ah ! je ne dis plus rien. Voyez-vous ? voila une raison tout a fait
+convaincante ; il se faut rendre a cela.
+
+
+- Harpagon -
+
+C'est pour moi une epargne considerable.
+
+
+- Valere -
+
+Assurement ; cela ne recoit point de contradiction. Il est vrai que
+votre fille vous peut representer que le mariage est une plus grande
+affaire qu'on ne peut croire ; qu'il y va d'etre heureux ou malheureux
+toute sa vie ; et qu'un engagement qui doit durer jusqu'a la mort ne se
+doit jamais faire qu'avec de grandes precautions.
+
+
+- Harpagon -
+
+Sans dot !
+
+
+- Valere -
+
+Vous avez raison ! voila qui decide tout ; cela s'entend. Il y a des
+gens qui pourraient vous dire qu'en de telles occasions l'inclination
+d'une fille est une chose, sans doute, ou l'on doit avoir de l'egard ;
+et que cette grande inegalite d'age, d'humeur et de sentiments, rend
+un mariage sujet a des accidents facheux.
+
+
+- Harpagon -
+
+Sans dot !
+
+
+- Valere -
+
+Ah ! il n'y a pas de replique a cela ; on le sait bien ! Qui diantre
+peut aller la contre ? Ce n'est pas qu'il n'y ait quantite de peres
+qui aimeraient mieux menager la satisfaction de leurs filles que
+l'argent qu'ils pourraient donner ; qui ne les voudraient point
+sacrifier a l'interet, et chercheraient, plus que toute autre chose, a
+mettre dans un mariage cette douce conformite qui sans cesse y
+maintient l'honneur, la tranquillite et la joie ; et que...
+
+
+- Harpagon -
+
+Sans dot !
+
+
+- Valere -
+
+Il est vrai ; cela ferme la bouche a tout. Sans dot ! Le moyen de
+resister a une raison comme celle-la !
+
+
+- Harpagon -
+
+        (a part, regardant du cote le jardin.)
+
+Ouais ! Il me semble que j'entends un chien qui aboie. N'est-ce point
+qu'on en voudrait a mon argent ?
+
+        (A Valere.) 
+
+Ne bougez, je reviens tout a l'heure. 
+
+
+-----------
+
+Scene VIII. - Elise, Valere.
+
+
+
+- Elise -
+
+Vous moquez-vous, Valere, de lui parler comme vous faites ?
+
+
+- Valere -
+
+C'est pour ne point l'aigrir, et pour en venir mieux a bout. Heurter
+de front ses sentiments est le moyen de tout gater ; et il y a de
+certains esprits qu'il ne faut prendre qu'en biaisant ; des
+temperaments ennemis de toute resistance ; des naturels retifs, que la
+verite fait cabrer, qui toujours se raidissent contre le droit chemin
+de la raison, et qu'on ne mene qu'en tournant ou l'on veut les
+conduire. Faites semblant de consentir a ce qu'il veut, vous en
+viendrez mieux a vos fins, et...
+
+
+- Elise -
+
+Mais ce mariage, Valere !
+
+
+- Valere -
+
+On cherchera des biais pour le rompre.
+
+
+- Elise -
+
+Mais quelle invention trouver, s'il se doit conclure ce soir ?
+
+
+- Valere -
+
+Il faut demander un delai, et feindre quelque maladie.
+
+
+- Elise -
+
+Mais on decouvrira la feinte, si l'on appelle des medecins.
+
+
+- Valere -
+
+Vous moquez-vous ? Y connaissent-ils quelque chose ? Allez, allez,
+vous pourrez avec eux avoir quel mal il vous plaira, ils vous
+trouveront des raisons pour vous dire d'ou cela vient.
+
+
+-----------
+
+Scene IX. - Harpagon, Valere, Elise.
+
+
+
+- Harpagon -
+
+        (a part, dans le fond du theatre.)
+
+Ce n'est rien, Dieu merci.
+
+
+- Valere -
+
+        (sans voir Harpagon.)
+
+Enfin notre dernier recours, c'est que la fuite nous peut mettre a
+couvert de tout ; et, si votre amour, belle Elise, est capable d'une
+fermete...
+
+        (Apercevant Harpagon.) 
+
+Oui, il faut qu'une fille obeisse a son pere. Il ne faut point qu'elle
+regarde comme un mari est fait ; et lorsque la grande raison de "sans
+dot" s'y rencontre, elle doit etre prete a prendre tout ce qu'on lui
+donne.
+
+
+- Harpagon -
+
+Bon : voila bien parle, cela !
+
+
+- Valere -
+
+Monsieur, je vous demande pardon si je m'emporte un peu, et prends la
+hardiesse de lui parler comme je fais.
+
+
+- Harpagon -
+
+Comment ! j'en suis ravi, et je veux que tu prennes sur elle un
+pouvoir absolu.
+
+        (A Elise.)
+
+Oui, tu as beau fuir, je lui donne l'autorite que le ciel me donne sur
+toi, et j'entends que tu fasses tout ce qu'il te dira.
+
+
+- Valere -
+
+        (A Elise.)
+
+Apres cela, resistez a mes remontrances.
+
+
+-----------
+
+Scene X. -  Harpagon, Valere.
+
+
+
+- Valere -
+
+Monsieur, je vais la suivre, pour continuer les lecons que je lui
+faisais.
+
+
+- Harpagon -
+
+Oui, tu m'obligeras. Certes...
+
+
+- Valere -
+
+Il est bon de lui tenir un peu la bride haute.
+
+
+- Harpagon -
+
+Cela est vrai. Il faut...
+
+
+- Valere -
+
+Ne vous mettez pas en peine, je crois que j'en viendrai a bout.
+
+
+- Harpagon -
+
+Fais, fais. Je m'en vais faire un petit tour en ville, et reviens tout
+a l'heure.
+
+
+- Valere -
+
+        (adressant la parole a Elise, en s'en allant du cote 
+         par ou elle est sortie.)
+
+Oui, l'argent est plus precieux que toutes les choses du monde, et
+vous devez rendre grace au ciel de l'honnete homme de pere qu'il vous
+a donne. Il sait ce que c'est que de vivre. Lorsqu'on s'offre de
+prendre une fille sans dot, on ne doit point regarder plus avant. Tout
+est renferme la-dedans ; et "sans dot" tient lieu de beaute, de
+jeunesse, de naissance, d'honneur, de sagesse, et de probite.
+
+
+- Harpagon -
+
+Ah ! le brave garcon ! Voila parle comme un oracle. Heureux qui peut
+avoir un domestique de la sorte !
+
+
+
+ACTE SECOND.
+------------
+
+
+
+Scene premiere. - Cleante, La Fleche.
+
+
+
+- Cleante -
+
+Ah ! traitre que tu es ! ou t'es-tu donc alle fourrer ? Ne t'avais-je
+pas donne ordre... ?
+
+
+- La Fleche -
+
+Oui, Monsieur ; et je m'etais rendu ici pour vous attendre de pied
+ferme : mais monsieur votre pere, le plus malgracieux des hommes, m'a
+chasse dehors malgre moi, et j'ai couru le risque d'etre battu.
+
+
+- Cleante -
+
+Comment va notre affaire ? Les choses pressent plus que jamais ; et,
+depuis que je t'ai vu, j'ai decouvert que mon pere est mon rival.
+
+
+- La Fleche -
+
+Votre pere amoureux ?
+
+
+- Cleante -
+
+Oui ; et j'ai eu toutes les peines du monde a lui cacher le trouble ou
+cette nouvelle m'a mis.
+
+
+- La Fleche -
+
+Lui, se meler d'aimer ! De quoi diable s'avise-t-il ? Se moque-t-il du
+monde ? Et l'amour a-t-il ete fait pour des gens batis comme lui ?
+
+
+- Cleante -
+
+Il a fallu, pour mes peches, que cette passion lui soit venue en tete.
+
+
+- La Fleche -
+
+Mais par quelle raison lui faire un mystere de votre amour ?
+
+
+- Cleante -
+
+Pour lui donner moins de soupcon, et me conserver, au besoin, des
+ouvertures plus aisees pour detourner ce mariage. Quelle reponse
+t'a-t-on faite ?
+
+
+- La Fleche -
+
+Ma foi, Monsieur, ceux qui empruntent sont bien malheureux ; et il faut
+essuyer d'etranges choses, lorsqu'on en est reduit a passer, comme
+vous, par les mains des fesse-matthieux (7).
+
+
+- Cleante -
+
+L'affaire ne se fera point ?
+
+
+- La Fleche -
+
+Pardonnez-moi. Notre maitre Simon, le courtier qu'on nous a donne,
+homme agissant et plein de zele, dit qu'il a fait rage pour vous, et
+il assure que votre seule physionomie lui a gagne le coeur.
+
+
+- Cleante -
+
+J'aurai les quinze mille francs que je demande ?
+
+
+- La Fleche -
+
+Oui ; mais a quelques petites conditions qu'il faudra que vous
+acceptiez, si vous avez dessein que les choses se fassent.
+
+
+- Cleante -
+
+T'a-t-il fait parler a celui qui doit preter l'argent ?
+
+
+- La Fleche -
+
+Ah ! vraiment, cela ne va pas de la sorte. Il apporte encore plus de
+soin a se cacher que vous ; et ce sont des mysteres bien plus grands
+que vous ne pensez. On ne veut point du tout dire son nom ; et l'on
+doit aujourd'hui l'aboucher avec vous dans une maison empruntee, pour
+etre instruit par votre bouche de votre bien et de votre famille ; et
+je ne doute point que le seul nom de votre pere ne rende les choses
+faciles.
+
+
+- Cleante -
+
+Et principalement notre mere etant morte, dont on ne peut m'oter le
+bien.
+
+
+- La Fleche -
+
+Voici quelques articles qu'il a dictes lui-meme a notre entremetteur,
+pour vous etre montres avant que de rien faire :
+
+        "Suppose que le preteur voie toutes ses suretes, et que 
+         l'emprunteur soit majeur et d'une famille ou le bien soit 
+         ample, solide, assure, clair, et net de tout embarras, on 
+         fera une bonne et exacte obligation par-devant un notaire, 
+         le plus honnete homme qu'il se pourra, et qui, pour cet 
+         effet sera choisi par le preteur, auquel il importe le 
+         plus que l'acte soit dument dresse."
+
+
+- Cleante -
+
+Il n'y a rien a dire a cela.
+
+
+- La Fleche -
+
+        "Le preteur, pour ne charger Sa conscience d'aucun scrupule, 
+         pretend ne donner son argent qu'au denier dix-huit. (8)"
+
+
+- Cleante -
+
+Au denier dix-huit ? Parbleu, voila qui est honnete ! Il n'y a pas
+lieu de se plaindre.
+
+
+- La Fleche -
+
+Cela est vrai. 
+
+        "Mais, comme ledit preteur n'a pas chez lui la somme dont il 
+         est question, et que, pour faire plaisir a l'emprunteur il 
+         est contraint lui-meme de l'emprunter d'un autre sur le pied 
+         du denier cinq (9), il conviendra que ledit premier emprunteur 
+         paye cet interet, sans prejudice du reste, attendu que ce 
+         n'est que pour l'obliger que ledit preteur s'engage a cet 
+         emprunt."
+
+
+- Cleante -
+
+Comment diable ! Quel Juif, quel Arabe est-ce la ? C'est plus qu'au
+denier quatre (10).
+
+
+- La Fleche -
+
+Il est vrai ; c'est ce que j'ai dit. Vous avez a voir la-dessus.
+
+
+- Cleante -
+
+Que veux-tu que je voie ? J'ai besoin d'argent, et il faut bien que je
+consente a tout.
+
+
+- La Fleche -
+
+C'est la reponse que j'ai faite.
+
+
+- Cleante -
+
+Il y a encore quelque chose ?
+
+
+- La Fleche -
+
+Ce n'est plus qu'un petit article. 
+
+        "Des quinze mille francs qu'on demande, le preteur ne 
+         pourra compter en argent que douze mille livres ; et, 
+         pour les mille ecus restants, il faudra que l'emprunteur 
+         prenne les hardes, nippes, bijoux, dont s'ensuit le
+         memoire, et que ledit preteur a mis, de bonne foi, au 
+         plus modique prix qu'il lui a ete possible."
+
+
+- Cleante -
+
+Que veut dire cela ?
+
+
+- La Fleche -
+
+Ecoutez le memoire :
+
+        "Premierement, un lit de quatre pieds a bandes de point 
+         de Hongrie, appliquees fort proprement sur un drap de
+         couleur d'olive, avec six chaises et la courte-pointe 
+         de meme : le tout bien conditionne, et double d'un petit 
+         taffetas changeant rouge et bleu. 
+         Plus, un pavillon a queue, d'une bonne serge d'Aumale 
+         rose seche, avec le mollet et les franges de soie."
+
+
+- Cleante -
+
+Que veut-il que je fasse de cela ?
+
+
+- La Fleche -
+
+Attendez. 
+
+        "Plus une tenture de tapisserie des Amours de Gombaud
+         et de Macee. 
+         Plus, une grande table de bois de noyer, a douze colonnes 
+         ou piliers tournes, qui se tire par les deux bouts, et 
+         garnie par le dessous de ses six escabelles."
+
+
+- Cleante -
+
+Qu'ai-je affaire, morbleu... ?
+
+
+- La Fleche -
+
+Donnez-vous patience. 
+
+        "Plus trois gros mousquets tout garnis de nacre de perle, 
+         avec les trois fourchettes assortissantes (11).
+         Plus un fourneau de brique, avec deux cornues et trois 
+         recipients, fort utiles a ceux qui sont curieux de 
+         distiller."
+
+
+- Cleante -
+
+J'enrage !
+
+
+- La Fleche -
+
+Doucement. 
+
+        "Plus, un luth de Bologne, garni de toutes ses cordes, 
+         ou peu s'en faut. 
+         Plus, un trou-madame et un damier, avec un jeu de l'oie,
+         renouvele des Grecs, fort propres a passer le temps
+         lorsque l'on n'a que faire. 
+         Plus, une peau d'un lezard de trois pieds et demi, remplie 
+         de foin ; curiosite agreable pour pendre au plancher d'une 
+         chambre. 
+         Le tout, ci-dessus mentionne, valant loyalement plus de
+         quatre mille cinq cents livres, et rabaisse a la valeur 
+         de mille ecus par la discretion du preteur."
+
+
+- Cleante -
+
+Que la peste l'etouffe avec sa discretion, le traitre, le bourreau
+qu'il est ! A-t-on jamais parle d'une usure semblable, et n'est-il
+pas content du furieux interet qu'il exige, sans vouloir encore
+m'obliger a prendre pour trois mille livres les vieux rogatons qu'il
+ramasse ? Je n'aurai pas deux cents ecus de tout cela ; et cependant
+il faut bien me resoudre a consentir a ce qu'il veut : car il est en
+etat de me faire tout accepter, et il me tient, le scelerat, le
+poignard sur la gorge.
+
+
+- La Fleche -
+
+Je vous vois, Monsieur, ne vous en deplaise, dans le grand chemin
+justement que tenait Panurge pour se ruiner, prenant argent d'avance,
+achetant cher, vendant a bon marche et mangeant son ble en herbe.
+
+
+- Cleante -
+
+Que veux-tu que j'y fasse ? Voila ou les jeunes gens sont reduits par
+la maudite avarice des peres ; et on s'etonne, apres cela, que les
+fils souhaitent qu'ils meurent !
+
+
+- La Fleche -
+
+Il faut convenir que le votre animerait contre sa vilenie le plus pose
+homme du monde. Je n'ai pas, Dieu merci, les inclinations fort
+patibulaires ; et, parmi mes confreres que je vois se meler de
+beaucoup de petits commerces, je sais tirer adroitement mon epingle du
+jeu, et me demeler prudemment de toutes les galanteries qui sentent
+tant soit peu l'echelle ; mais, a vous dire vrai, il me donnerait, par
+ses procedes, des tentations de le voler ; et je croirais, en le
+volant, faire une action meritoire.
+
+
+- Cleante -
+
+Donne-moi un peu ce memoire, que je le voie encore.
+
+
+-----------
+
+Scene II. -  Harpagon, Maitre Simon ; Cleante et La Fleche dans le fond
+             du theatre.
+
+
+
+- Maitre Simon -
+
+Oui, Monsieur, c'est un jeune homme qui a besoin d'argent ; ses
+affaires le pressent d'en trouver, et il en passera par tout ce que
+vous en prescrirez.
+
+
+- Harpagon -
+
+Mais croyez-vous, maitre Simon, qu'il n'y ait rien a pericliter ? et
+savez-vous le nom, les biens et la famille de celui pour qui vous
+parlez ?
+
+
+- Maitre Simon -
+
+Non. Je ne puis pas bien vous en instruire a fond ; et ce n'est que par
+aventure que l'on m'a adresse a lui ; mais vous serez de toutes choses
+eclairci par lui-meme, et son homme m'a assure que vous serez content
+quand vous le connaitrez. Tout ce que je saurais vous dire, c'est que
+sa famille est fort riche, qu'il n'a plus de mere deja, et qu'il
+s'obligera, si vous voulez, que son pere mourra avant qu'il soit huit
+mois.
+
+
+- Harpagon -
+
+C'est quelque chose que cela. La charite, maitre Simon, nous oblige a
+faire plaisir aux personnes, lorsque nous le pouvons.
+
+
+- Maitre Simon -
+
+Cela s'entend.
+
+
+- La Fleche -
+
+        (bas, a Cleante, reconnaissant maitre Simon.)
+
+Que veut dire ceci ? Notre maitre Simon qui parle a votre pere !
+
+
+- Cleante -
+
+        (bas, a La Fleche.)
+
+Lui aurait-on appris qui je suis ? et serais-tu pour nous trahir ?
+
+
+- Maitre Simon -
+
+        (a Cleante et a La Fleche.)
+
+Ah ! ah ! vous etes bien presses ! Qui vous a dit que c'etait ceans ?
+
+        (A Harpagon.) 
+
+Ce n'est pas moi, Monsieur, au moins, qui leur ai decouvert votre nom
+et votre logis ; mais, a mon avis, il n'y a pas grand mal a cela : ce
+sont des personnes discretes, et vous pouvez ici vous expliquer
+ensemble.
+
+
+- Harpagon -
+
+Comment ?
+
+
+- Maitre Simon -
+
+        (montrant Cleante.) 
+
+Monsieur est la personne qui veut vous emprunter les quinze mille
+livres dont je vous ai parle.
+
+
+- Harpagon -
+
+Comment, pendard ! c'est toi qui t'abandonnes a ces coupables
+extremites !
+
+
+- Cleante -
+
+Comment ! mon pere, c'est vous qui vous portez a ces honteuses actions !
+
+        (Maitre Simon s'enfuit, et La Fleche va se cacher.)
+
+
+-----------
+
+Scene III. -  Harpagon, Cleante.
+
+
+
+- Harpagon -
+
+C'est toi qui te veux ruiner par des emprunts si condamnables !
+
+
+- Cleante -
+
+C'est vous qui cherchez a vous enrichir par des usures si criminelles !
+
+
+- Harpagon -
+
+Oses-tu bien, apres cela, paraitre devant moi ?
+
+
+- Cleante -
+
+Osez-vous bien, apres cela, vous presenter aux yeux du monde ?
+
+
+- Harpagon -
+
+N'as-tu point de honte, dis-moi, d'en venir a ces debauches-la, de te
+precipiter dans des depenses effroyables, et de faire une honteuse
+dissipation du bien que tes parents t'ont amasse avec tant de sueurs ?
+
+
+- Cleante -
+
+Ne rougissez-vous point de deshonorer votre condition par les
+commerces que vous faites ; de sacrifier gloire et reputation au desir
+insatiable d'entasser ecu sur ecu, et de rencherir, en fait
+d'interets, sur les plus infames subtilites qu'aient jamais inventees
+les plus celebres usuriers ?
+
+
+- Harpagon -
+
+Ote-toi de mes yeux, coquin ! ote-toi de mes yeux !
+
+
+- Cleante -
+
+Qui est plus criminel, a votre avis, ou celui qui achete un argent
+dont il a besoin, ou bien celui qui vole un argent dont il n'a que
+faire ?
+
+
+- Harpagon -
+
+Retire-toi, te dis-je, et ne m'echauffe pas les oreilles.
+
+        (Seul.) 
+
+Je ne suis pas fache de cette aventure ; et ce m'est un avis de tenir
+l'oeil plus que jamais sur toutes ses actions.
+
+
+-----------
+
+Scene IV. -  Frosine, Harpagon.
+
+
+
+- Frosine -
+
+Monsieur...
+
+
+- Harpagon -
+
+Attendez un moment ; Je vais revenir vous parler. 
+
+        (A part.)
+
+Il est a propos que je fasse un petit tour a mon argent.
+
+
+-----------
+
+Scene V. -  La Fleche, Frosine.
+
+
+
+- La Fleche -
+
+        (sans voir Frosine.)
+
+L'aventure est tout a fait drole ! Il faut bien qu'il ait quelque part
+un ample magasin de hardes, car nous n'avons rien reconnu au memoire
+que nous avons.
+
+
+- Frosine -
+
+He ! c'est toi, mon pauvre la Fleche ! D'ou vient cette rencontre ?
+
+
+- La Fleche -
+
+Ah ! ah ! c'est toi, Frosine ! Que viens-tu faire ici ?
+
+
+- Frosine -
+
+Ce que je fais partout ailleurs : m'entremettre d'affaires, me rendre
+serviable aux gens, et profiter, du mieux qu'il m'est possible, des
+petits talents que je puis avoir. Tu sais que dans ce monde, il faut
+vivre d'adresse, et qu'aux personnes comme moi le ciel n'a donne
+d'autres rentes que l'intrigue et que l'industrie.
+
+
+- La Fleche -
+
+As-tu quelque negoce avec le patron du logis ?
+
+
+- Frosine -
+
+Oui, je traite pour lui quelque petite affaire dont j'espere
+recompense.
+
+
+- La Fleche -
+
+De lui ? Ah ! ma foi, tu seras bien fine si tu en tires quelque chose,
+et je te donne avis que l'argent ceans est fort cher.
+
+
+- Frosine -
+
+Il y a de certains services qui touchent merveilleusement.
+
+
+- La Fleche -
+
+Je suis votre valet ; et tu ne connais pas encore le seigneur
+Harpagon. Le seigneur Harpagon est de tous les humains l'humain le
+moins humain, le mortel de tous les mortels le plus dur et le plus
+serre. Il n'est point de service qui pousse sa reconnaissance jusqu'a
+lui faire ouvrir les mains. De la louange, de l'estime, de la
+bienveillance en paroles, et de l'amitie, tant qu'il vous plaira ;
+mais de l'argent, point d'affaires. Il n'est rien de plus sec et de
+plus aride que ses bonnes graces et ses caresses ; et "donner" est un
+mot pour qui il a tant d'aversion, qu'il ne dit jamais, "Je vous
+donne", mais "Je vous prete le bonjour".
+
+
+- Frosine -
+
+Mon Dieu ! je sais l'art de traire les hommes ; j'ai le secret de
+m'ouvrir leur tendresse, de chatouiller leurs coeurs, de trouver les
+endroits par ou ils sont sensibles.
+
+
+- La Fleche -
+
+Bagatelles ici. Je te defie d'attendrir du cote de l'argent l'homme
+dont il est question. Il est Turc la-dessus, mais d'une turquerie a
+desesperer tout le monde ; et l'on pourrait crever, qu'il n'en
+branlerait pas. En un mot, il aime l'argent plus que reputation,
+qu'honneur, et que vertu ; et la vue d'un demandeur lui donne des
+convulsions : c'est le frapper par son endroit mortel, c'est lui
+percer le coeur, c'est lui arracher les entrailles ; et si... Mais il
+revient : je me retire.
+
+
+-----------
+
+Scene VI. -  Harpagon, Frosine.
+
+
+
+- Harpagon -
+
+        (bas.)
+
+Tout va comme il faut. 
+
+        (Haut.) 
+
+He bien ! qu'est-ce, Frosine ?
+
+
+- Frosine -
+
+Ah ! mon Dieu, que vous vous portez bien, et que vous avez la un
+vrai visage de sante !
+
+
+- Harpagon -
+
+Qui ? moi ?
+
+
+- Frosine -
+
+Jamais je ne vous vis un teint si frais et si gaillard.
+
+
+- Harpagon -
+
+Tout de bon ?
+
+
+- Frosine -
+
+Comment ! vous n'avez de votre vie ete si jeune que vous etes ; et je
+vois des gens de vingt-cinq ans qui sont plus vieux que vous.
+
+
+- Harpagon -
+
+Cependant, Frosine, j'en ai soixante bien comptes.
+
+
+- Frosine -
+
+Eh bien, qu'est-ce que cela, soixante ans ? Voila bien de quoi ! C'est
+la fleur de l'age, cela, et vous entrez maintenant dans la belle
+saison de l'homme.
+
+
+- Harpagon -
+
+Il est vrai ; mais vingt annees de moins, pourtant, ne me feraient
+point de mal, que je crois.
+
+
+- Frosine -
+
+Vous moquez-vous ? Vous n'avez pas besoin de cela, et vous etes d'une
+pate a vivre jusques a cent ans.
+
+
+- Harpagon -
+
+Tu le crois ?
+
+
+- Frosine -
+
+Assurement. Vous en avez toutes les marques. Tenez-vous un peu. Oh !
+que voila bien la, entre vos deux yeux, un signe de longue vie !
+
+
+- Harpagon -
+
+Tu te connais a cela ?
+
+
+- Frosine -
+
+Sans doute. Montrez-moi votre main. Mon Dieu, quelle ligne de vie !
+
+
+- Harpagon -
+
+Comment ?
+
+
+- Frosine -
+
+Ne voyez-vous pas jusqu'ou va cette ligne-la ?
+
+
+- Harpagon -
+
+Eh bien ! qu'est-ce que cela veut dire ?
+
+
+- Frosine -
+
+Par ma foi, je disais cent ans ; mais vous passerez les six-vingts.
+
+
+- Harpagon -
+
+Est-il possible ?
+
+
+- Frosine -
+
+II faudra vous assommer, vous dis-je ; et vous mettrez en terre et vos
+enfants, et les enfants de vos enfants.
+
+
+- Harpagon -
+
+Tant mieux ! Comment va notre affaire ?
+
+
+- Frosine -
+
+Faut-il le demander ? et me voit-on meler de rien dont je ne vienne a
+bout ? J'ai, surtout pour les mariages, un talent merveilleux. Il
+n'est point de partis au monde que je ne trouve en peu de temps le
+moyen d'accoupler ; et je crois, si je me l'etais mis en tete, que je
+marierais le Grand Turc avec la Republique de Venise. Il n'y avait
+pas, sans doute, de si grandes difficultes a cette affaire-ci. Comme
+j'ai commerce chez elles, je les ai a fond l'une et l'autre
+entretenues de vous ; et j'ai dit a la mere le dessein que vous aviez
+concu pour Mariane, a la voir passer dans la rue et prendre l'air a sa
+fenetre.
+
+
+- Harpagon -
+
+Qui a fait reponse...
+
+
+- Frosine -
+
+Elle a recu la proposition avec joie ; et quand je lui ai temoigne que
+vous souhaitiez fort que sa fille assistat ce soir au contrat de
+mariage qui se doit faire de la votre, elle y a consenti sans peine,
+et me l'a confiee pour cela.
+
+
+- Harpagon -
+
+C'est que je suis oblige, Frosine, de donner a souper au seigneur
+Anselme ; et je serai bien aise qu'elle soit du regal.
+
+
+- Frosine -
+
+Vous avez raison. Elle doit, apres diner, rendre visite a votre fille,
+d'ou elle fait son compte d'aller faire un tour a la foire, pour venir
+ensuite au souper.
+
+
+- Harpagon -
+
+Eh bien, elles iront ensemble dans mon carrosse, que je leur preterai.
+
+
+- Frosine -
+
+Voila justement son affaire.
+
+
+- Harpagon -
+
+Mais, Frosine, as-tu entretenu la mere touchant le bien qu'elle peut
+donner a sa fille ? Lui as-tu dit qu'il fallait qu'elle s'aidat un
+peu, qu'elle fit quelque effort, qu'elle se saignat pour une occasion
+comme celle-ci ? Car encore n'epouse-t-on point une fille sans qu'elle
+apporte quelque chose.
+
+
+- Frosine -
+
+Comment ! C'est une fille qui vous apportera douze mille livres de
+rente.
+
+
+- Harpagon -
+
+Douze mille livres de rente ?
+
+
+- Frosine -
+
+Oui. Premierement, elle est nourrie et elevee dans une grande epargne
+de bouche. C'est une fille accoutumee a vivre de salade, de lait, de
+fromage et de pommes, et a laquelle, par consequent, il ne faudra ni
+table bien servie, ni consommes exquis, ni orges mondes perpetuels, ni
+les autres delicatesses qu'il faudrait pour une autre femme ; et cela
+ne va pas a si peu de chose, qu'il ne monte bien, tous les ans, a
+trois mille francs pour le moins. Outre cela, elle n'est curieuse que
+d'une proprete fort simple, et n'aime point les superbes habits, ni
+les riches bijoux, ni les meubles somptueux, ou donnent ses pareilles
+avec tant de chaleur ; et cet article-la vaut plus de quatre mille
+livres par an. De plus, elle a une aversion horrible pour le jeu, ce
+qui n'est pas commun aux femmes d'aujourd'hui ; et j'en sais une de
+nos quartiers qui a perdu, a trente et quarante, vingt mille francs
+cette annee. Mais n'en prenons rien que le quart. Cinq mille francs au
+jeu par an, et quatre mille francs en habits et bijoux, cela fait neuf
+mille livres, et mille ecus que nous mettons pour la nourriture: ne
+voila-t-il pas par annee vos douze mille francs bien comptes ?
+
+
+- Harpagon -
+
+Oui ; cela n'est pas mal ; mais ce compte-la n'est rien de reel.
+
+
+- Frosine -
+
+Pardonnez-moi. N'est-ce pas quelque chose de reel que de vous apporter
+en mariage une grande sobriete, l'heritage d'un grand amour de
+simplicite de parure, et l'acquisition d'un grand fonds de haine pour
+le jeu ?
+
+
+- Harpagon -
+
+C'est une raillerie que de vouloir me constituer sa dot de toutes les
+depenses qu'elle ne fera point. Je n'irai point donner quittance de ce
+que je ne recois pas ; et il faut bien que je touche quelque chose.
+
+
+- Frosine -
+
+Mon Dieu ! vous toucherez assez ; et elles m'ont parle d'un certain
+pays ou elles ont du bien, dont vous serez le maitre.
+
+
+- Harpagon -
+
+Il faudra voir cela. Mais Frosine, il y a encore une chose qui
+m'inquiete. La fille est jeune, comme tu vois, et les jeunes gens,
+d'ordinaire, n'aiment que leurs semblables, ne cherchent que leur
+compagnie : j'ai peur qu'un homme de mon age ne soit pas de son gout,
+et que cela ne vienne a produire chez moi certains petits desordres
+qui ne m'accommoderaient pas.
+
+
+- Frosine -
+
+Ah ! que vous la connaissez mal ! C'est encore une particularite que
+j'avais a vous dire. Elle a une aversion epouvantable pour tous les
+jeunes gens, et n'a de l'amour que pour les vieillards.
+
+
+- Harpagon -
+
+Elle ?
+
+
+- Frosine -
+
+Oui, elle. Je voudrais que vous l'eussiez entendue parler la-dessus.
+Elle ne peut souffrir du tout la vue d'un jeune homme ; mais elle
+n'est point plus ravie, dit-elle, que lorsqu'elle peut voir un beau
+vieillard avec une barbe majestueuse. Les plus vieux sont pour elle
+les plus charmants ; et je vous avertis de n'aller pas vous faire plus
+jeune que vous etes. Elle veut tout au moins qu'on soit sexagenaire ;
+et il n'y a pas quatre mois encore qu'etant prete d'etre mariee, elle
+rompit tout net le mariage, sur ce que son amant fit voir qu'il
+n'avait que cinquante-six ans, et qu'il ne prit point de lunettes pour
+signer le contrat.
+
+
+- Harpagon -
+
+Sur cela seulement ?
+
+
+- Frosine -
+
+Oui. Elle dit que ce n'est pas contentement pour elle que
+cinquante-six ans ; et surtout elle est pour les nez qui portent des
+lunettes.
+
+
+- Harpagon -
+
+Certes, tu me dis la une chose toute nouvelle.
+
+
+- Frosine -
+
+Cela va plus loin qu'on ne vous peut dire. On lui voit dans sa chambre
+quelques tableaux et quelques estampes ; mais que pensez-vous que ce
+soit ? Des Adonis, des Cephales, des Paris, et des Apollons ? Non : de
+beaux portraits de Saturne, du roi Priam, du vieux Nestor, et du bon
+pere Anchise, sur les epaules de son fils.
+
+
+- Harpagon -
+
+Cela est admirable. Voila ce que je n'aurais jamais pense, et je suis
+bien aise d'apprendre qu'elle est de cette humeur. En effet, si
+j'avais ete femme, je n'aurais point aime les jeunes hommes.
+
+
+- Frosine -
+
+Je le crois bien. Voila de belles drogues que des jeunes gens, pour
+les aimer ! Ce sont de beaux morveux, de beaux godelureaux, pour
+donner envie de leur peau ! et je voudrais bien savoir quel ragout il
+y a a eux !
+
+
+- Harpagon -
+
+Pour moi, je n'y en comprends point, et je ne sais pas comment il y a
+des femmes qui les aiment tant.
+
+
+- Frosine -
+
+Il faut etre folle fieffee. Trouver la jeunesse aimable, est-ce avoir
+le sens commun ? Sont-ce des hommes que de jeunes blondins, et peut-on
+s'attacher a ces animaux-la ?
+
+
+- Harpagon -
+
+C'est ce que je dis tous les jours : avec leur ton de poule laitee, et
+leurs trois petits brins de barbe releves en barbe de chat, leurs
+perruques d'etoupes, leurs hauts-de-chausses tombants et leurs
+estomacs debrailles !
+
+
+- Frosine -
+
+He ! cela est bien bati, aupres d'une personne comme vous ! Voila un
+homme, cela ; il y a la de quoi satisfaire a la vue, et c'est ainsi
+qu'il faut etre fait et vetu pour donner de l'amour.
+
+
+- Harpagon -
+
+Tu me trouves bien ?
+
+
+- Frosine -
+
+Comment ! vous etes a ravir, et votre figure est a peindre.
+Tournez-vous un peu, s'il vous plait. Il ne se peut pas mieux. Que je
+vous voie marcher. Voila un corps taille, libre, et degage comme il
+faut, et qui ne marque aucune incommodite.
+
+
+- Harpagon -
+
+Je n'en ai pas de grandes, Dieu merci. Il n'y a que ma fluxion qui me
+prend de temps en temps.
+
+
+- Frosine -
+
+Cela n'est rien. Votre fluxion ne vous sied point mal, et vous avez
+grace a tousser.
+
+
+- Harpagon -
+
+Dis-moi un peu : Mariane ne m'a-t-elle point encore vu ? N'a-t-elle
+point pris garde a moi en passant ?
+
+
+- Frosine -
+
+Non ; mais nous nous sommes fort entretenues de vous. Je lui ai fait
+un portrait de votre personne, et je n'ai pas manque de lui vanter
+votre merite et l'avantage que ce lui serait d'avoir un mari comme
+vous.
+
+
+- Harpagon -
+
+Tu as bien fait, et je t'en remercie.
+
+
+- Frosine -
+
+J'aurais, monsieur, une petite priere a vous faire.  J'ai un proces
+que je suis sur le point de perdre, faute d'un peu d'argent ;
+
+        (Harpagon prend un air serieux.) 
+
+et vous pourriez facilement me procurer le gain de ce proces si vous
+aviez quelque bonte pour moi. Vous ne sauriez croire le plaisir
+qu'elle aura de vous voir.
+
+        (Harpagon reprend un air gai.) 
+
+Ah ! que vous lui plairez, et que votre fraise a l'antique fera sur
+son esprit un effet admirable ! Mais surtout elle sera charmee de
+votre haut-de-chausses attache au pourpoint avec des aiguillettes.
+C'est pour la rendre folle de vous ; et un amant aiguillete sera pour
+elle un ragout merveilleux.
+
+
+- Harpagon -
+
+Certes, tu me ravis de me dire cela.
+
+
+- Frosine -
+
+En verite, Monsieur, ce proces m'est d'une consequence tout a fait
+grande.
+
+        (Harpagon reprend son air serieux.) 
+
+Je suis ruinee si je le perds, et quelque petite assistance me
+retablirait mes affaires... Je voudrais que vous eussiez vu le
+ravissement ou elle etait a m'entendre parler de vous.
+
+        (Harpagon reprend son air gai.) 
+
+La joie eclatait dans ses yeux au recit de vos qualites, et je l'ai
+mise enfin dans une impatience extreme de voir ce mariage entierement
+conclu.
+
+
+- Harpagon -
+
+Tu m'as fait grand plaisir, Frosine ; et je t'en ai, je te l'avoue,
+toutes les obligations du monde.
+
+
+- Frosine -
+
+Je vous prie, Monsieur, de me donner le petit secours que je vous
+demande.
+
+        (Harpagon reprend encore un air serieux.) 
+
+Cela me remettra sur pied, et je vous en serai eternellement obligee.
+
+
+- Harpagon -
+
+Adieu, je vais achever mes depeches.
+
+
+- Frosine -
+
+Je vous assure, Monsieur, que vous ne sauriez jamais me soulager dans
+un plus grand besoin.
+
+
+- Harpagon -
+
+Je mettrai ordre que mon carrosse soit tout pret pour vous mener a la
+foire.
+
+
+- Frosine -
+
+Je ne vous importunerais pas si je ne m'y voyais forcee par la
+necessite.
+
+
+- Harpagon -
+
+Et j'aurai soin qu'on soupe de bonne heure, pour ne vous point faire
+malades.
+
+
+- Frosine -
+
+Ne me refusez pas la grace dont je vous sollicite. Vous ne sauriez
+croire, Monsieur, le plaisir que...
+
+
+- Harpagon -
+
+Je m'en vais. Voila qu'on m'appelle. Jusqu'a tantot.
+
+
+- Frosine -
+
+        (seule.)
+
+Que la fievre te serre, chien de vilain, a tous les diables ! Le ladre
+a ete ferme a toutes mes attaques ; mais il ne me faut pas pourtant
+quitter la negociation ; et j'ai l'autre cote, en tout cas, d'ou je
+suis assuree de tirer bonne recompense.
+
+
+
+ACTE TROISIEME.
+---------------
+
+
+
+Scene premiere. - Harpagon, Cleante, Elise, Valere, Dame Claude, 
+                  tenant un balai ; Maitre Jacques, La Merluche,
+                  Brindavoine.
+
+
+
+- Harpagon -
+
+Allons, venez ca tous, que je vous distribue mes ordres pour tantot et
+regle a chacun son emploi. Approchez, dame Claude ; commencons par
+vous. Bon, vous voila les armes a la main. Je vous commets au soin de
+nettoyer partout ; et surtout prenez garde de ne point frotter les
+meubles trop fort, de peur de les user. Outre cela, je vous constitue,
+pendant le souper, au gouvernement des bouteilles ; et, s'il s'en
+ecarte quelqu'une, et qu'il se casse quelque chose, je m'en prendrai a
+vous et le rabattrai sur vos gages.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+Chatiment politique.
+
+
+- Harpagon -
+
+        (a Dame Claude.)
+
+Allez.
+
+
+-----------
+
+Scene II. -  Harpagon, Cleante, Elise, Valere, Maitre Jacques, 
+             Brindavoine, La Merluche.
+
+
+
+- Harpagon -
+
+Vous, Brindavoine, et vous, la Merluche, je vous etablis dans la
+charge de rincer les verres et de donner a boire, mais seulement
+lorsque l'on aura soif, et non pas selon la coutume de certains
+impertinents de laquais, qui viennent provoquer les gens, et les faire
+aviser de boire lorsqu'on n'y songe pas. Attendez qu'on vous en
+demande plus d'une fois, et vous ressouvenez de porter toujours
+beaucoup d'eau.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+Oui. Le vin pur monte a la tete.
+
+
+- La Merluche -
+
+Quitterons-nous nos souquenilles, monsieur ?
+
+
+- Harpagon -
+
+Oui, quand vous verrez venir les personnes ; et gardez bien de gater vos
+habits.
+
+
+- Brindavoine -
+
+Vous savez bien, Monsieur, qu'un des devants de mon pourpoint est
+couvert d'une grande tache de l'huile de la lampe.
+
+
+- La Merluche -
+
+Et, moi, Monsieur, que j'ai mon haut-de-chausses tout troue
+par-derriere, et qu'on me voit, reverence parler...
+
+
+- Harpagon -
+
+        (a la Merluche.)
+
+Paix ! Rangez cela adroitement du cote de la muraille, et presentez
+toujours le devant au monde. 
+
+        (A Brindavoine, en lui montrant comment il doit mettre 
+	 son chapeau au-devant de son pourpoint, pour cacher 
+         la tache d'huile.) 
+
+Et vous, tenez toujours votre chapeau ainsi, lorsque vous
+servirez. 
+
+
+-----------
+
+Scene III. -  Harpagon, Cleante, Elise, Valere, Maitre Jacques.
+
+
+
+- Harpagon -
+
+Pour vous, ma fille, vous aurez l'oeil sur ce que l'on desservira, et
+prendrez garde qu'il ne s'en fasse aucun degat : cela sied bien aux
+filles. Mais cependant preparez-vous a bien recevoir ma maitresse, qui
+vous doit venir visiter et vous mener avec elle a la foire.
+Entendez-vous ce que je vous dis ?
+
+
+- Elise -
+
+Oui, mon pere.
+
+
+- Harpagon -
+
+Oui, nigaude.
+
+
+-----------
+
+Scene IV. -  Harpagon, Cleante, Valere, Maitre Jacques.
+
+
+
+- Harpagon -
+
+Et vous, mon fils le damoiseau, a qui j'ai la bonte de pardonner
+l'histoire de tantot, ne vous allez pas aviser non plus de lui faire
+mauvais visage.
+
+
+- Cleante -
+
+Moi, mon pere ? mauvais visage ! Et par quelle raison ?
+
+
+- Harpagon -
+
+Mon Dieu, nous savons le train des enfants dont les peres se
+remarient, et de quel oeil ils ont coutume de regarder ce qu'on
+appelle belle-mere ; mais si vous souhaitez que je perde le souvenir de
+votre derniere fredaine, je vous recommande surtout de regaler d'un
+bon visage cette personne-la, et de lui faire enfin tout le meilleur
+accueil qu'il vous sera possible.
+
+
+- Cleante -
+
+A vous dire le vrai, mon pere, je ne puis pas vous promettre d'etre
+bien aise qu'elle devienne ma belle-mere : je mentirais si je vous le
+disais ; mais pour ce qui est de la bien recevoir et de lui faire bon
+visage, je vous promets de vous obeir ponctuellement sur ce chapitre.
+
+
+- Harpagon -
+
+Prenez-y garde au moins.
+
+
+- Cleante -
+
+Vous verrez que vous n'aurez pas sujet de vous en plaindre.
+
+
+- Harpagon -
+
+Vous ferez sagement. 
+
+
+-----------
+
+Scene V. -  Harpagon, Valere, Maitre Jacques.
+
+
+
+- Harpagon -
+
+Valere, aide-moi a ceci. Oh ca, maitre Jacques, approchez-vous ; je
+vous ai garde pour le dernier.
+
+
+- Maitre Jacques -
+
+Est-ce a votre cocher, Monsieur, ou bien a votre cuisinier, que vous
+voulez parler ? car je suis l'un et l'autre.
+
+
+- Harpagon -
+
+C'est a tous les deux.
+
+
+- Maitre Jacques -
+
+Mais a qui des deux le premier ?
+
+
+- Harpagon -
+
+Au cuisinier.
+
+
+- Maitre Jacques -
+
+Attendez donc, s'il vous plait. 
+
+        (Maitre Jacques ote sa casaque de cocher, et parait vetu en cuisinier.)
+
+
+- Harpagon -
+
+Quelle diantre de ceremonie est-ce la ?
+
+
+- Maitre Jacques -
+
+Vous n'avez qu'a parler.
+
+
+- Harpagon -
+
+Je me suis engage, maitre Jacques, a donner ce soir a souper.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+Grande merveille !
+
+
+- Harpagon -
+
+Dis-moi un peu : nous feras-tu bonne chere ?
+
+
+- Maitre Jacques -
+
+Oui, Si vous me donnez bien de l'argent.
+
+
+- Harpagon -
+
+Que diable, toujours de l'argent ! Il semble qu'ils n'aient autre
+chose a dire : De l'argent, de l'argent, de l'argent ! Ah ! ils n'ont
+que ce mot a la bouche, de l'argent ! toujours parler d'argent ! Voila
+leur epee de chevet (12), de l'argent !
+
+
+- Valere -
+
+Je n'ai jamais vu de reponse plus impertinente que celle-la. Voila
+une belle merveille que de faire bonne chere avec bien de l'argent !
+C'est une chose la plus aisee du monde, et il n'y a si pauvre esprit
+qui n'en fit bien autant ; mais, pour agir en habile homme, il faut
+parler de faire bonne chere avec peu d'argent.
+
+
+- Maitre Jacques -
+
+Bonne chere avec peu d'argent !
+
+
+- Valere -
+
+Oui.
+
+
+- Maitre Jacques -
+
+        (a Valere.)
+
+Par ma foi, Monsieur l'intendant, vous nous obligerez de nous faire
+voir ce secret, et de prendre mon office de cuisinier ; aussi bien
+vous melez-vous ceans d'etre le factotum.
+
+
+- Harpagon -
+
+Taisez-vous. Qu'est-ce qu'il nous faudra ?
+
+
+- Maitre Jacques -
+
+Voila monsieur votre intendant qui vous fera bonne chere pour peu
+d'argent.
+
+
+- Harpagon -
+
+Haye ! Je veux que tu me repondes.
+
+
+- Maitre Jacques -
+
+Combien serez-vous de gens a table ?
+
+
+- Harpagon -
+
+Nous serons huit ou dix ; mais il ne faut prendre que huit :
+quand il y a a manger pour huit, il y en a bien pour dix.
+
+
+- Valere -
+
+Cela s'entend.
+
+
+- Maitre Jacques -
+
+Eh bien ! il faudra quatre grands potages et cinq assiettes...
+Potages... Entrees.
+
+
+- Harpagon -
+
+Que diable ! voila pour traiter toute une ville entiere.
+
+
+- Maitre Jacques -
+
+Rot...
+
+
+- Harpagon -
+
+        (mettant la main sur la bouche de maitre Jacques.)
+
+Ah ! traitre, tu manges tout mon bien.
+
+
+- Maitre Jacques -
+
+Entremets...
+
+
+- Harpagon -
+
+        (mettant encore la main sur la bouche de maitre Jacques.)
+
+Encore ?
+
+
+- Valere -
+
+        (a maitre Jacques.)
+
+Est-ce que vous avez envie de faire crever tout le monde ? et Monsieur
+a-t-il invite des gens pour les assassiner a force de mangeaille ?
+Allez-vous-en lire un peu les preceptes de la sante, et demander aux
+medecins s'il y a rien de plus prejudiciable a l'homme que de manger
+avec exces.
+
+
+- Harpagon -
+
+Il a raison.
+
+
+- Valere -
+
+Apprenez, maitre Jacques, vous et vos pareils, que c'est un
+coupe-gorge qu'une table remplie de trop de viandes ; que pour se
+bien montrer ami de ceux que l'on invite, il faut que la frugalite
+regne dans les repas qu'on donne ; et que, suivant le dire d'un ancien,
+"il faut manger pour vivre, et non pas vivre pour manger" (13).
+
+
+- Harpagon -
+
+Ah ! que cela est bien dit ! Approche, que je t'embrasse pour ce
+mot. Voila la plus belle sentence que j'aie entendue de ma vie : "Il
+faut vivre pour manger, et non pas manger pour vi..." Non, ce n'est
+pas cela. Comment est-ce que tu dis ?
+
+
+- Valere -
+
+Qu'"il faut manger pour vivre, et non pas vivre pour manger."
+
+
+- Harpagon -
+
+        (a maitre Jacques.)
+
+Oui. Entends-tu ? 
+
+        (A Valere.)
+
+Qui est le grand homme qui a dit cela ?
+
+
+- Valere -
+
+Je ne me souviens pas maintenant de son nom.
+
+
+- Harpagon -
+
+Souviens-toi de m'ecrire ces mots : je les veux faire graver en
+lettres d'or sur la cheminee de ma salle.
+
+
+- Valere -
+
+Je n'y manquerai pas. Et, pour votre souper, vous n'avez qu'a me
+laisser faire : je reglerai tout cela comme il faut.
+
+
+- Harpagon -
+
+Fais donc.
+
+
+- Maitre Jacques -
+
+Tant mieux ! j'en aurai moins de peine.
+
+
+- Harpagon -
+
+        (a Valere.)
+
+Il faudra de ces choses dont on ne mange guere, et qui rassasient
+d'abord : quelque bon haricot bien gras, avec quelque pate en pot bien
+garni de marrons. 
+
+
+- Valere -
+
+Reposez-vous sur moi.
+
+
+- Harpagon -
+
+Maintenant, maitre Jacques, il faut nettoyer mon carrosse.
+
+
+- Maitre Jacques -
+
+Attendez. Ceci s'adresse au cocher. 
+
+        (Il remet sa casaque.) 
+
+Vous dites...
+
+
+- Harpagon -
+
+Qu'il faut nettoyer mon carrosse, et tenir mes chevaux tout prets pour
+conduire a la foire...
+
+
+- Maitre Jacques -
+
+Vos chevaux, Monsieur ? Ma foi ! ils ne sont point du tout en etat de
+marcher. Je ne vous dirai point qu'ils sont sur la litiere : les
+pauvres betes n'en ont point, et ce serait fort mal parler ; mais vous
+leur faites observer des jeunes si austeres, que ce ne sont plus rien
+que des idees ou des fantomes, des facons de chevaux.
+
+
+- Harpagon -
+
+Les voila bien malades ! ils ne font rien.
+
+
+- Maitre Jacques -
+
+Et, pour ne faire rien, Monsieur, est-ce qu'il ne faut rien manger ?
+Il leur vaudrait bien mieux, les pauvres animaux, de travailler
+beaucoup, de manger de meme. Cela me fend le coeur de les voir ainsi
+extenues ; car, enfin, j'ai une tendresse pour mes chevaux, qu'il me
+semble que c'est moi-meme, quand je les vois patir. Je m'ote tous les
+jours pour eux les choses de la bouche, et c'est etre, Monsieur, d'un
+naturel trop dur, que de n'avoir nulle pitie de son prochain.
+
+
+- Harpagon -
+
+Le travail ne sera pas grand d'aller jusqu'a la foire.
+
+
+- Maitre Jacques -
+
+Non, je n'ai pas le courage de les mener ; et je ferais conscience de
+leur donner des coups de fouet, en l'etat ou ils sont. Comment
+voudriez-vous qu'ils trainassent un carrosse, qu'ils ne peuvent pas se
+trainer eux-memes.
+
+
+- Valere -
+
+Monsieur, j'obligerai le voisin le Picard a se charger de les conduire : 
+aussi bien nous fera-t-il ici besoin pour appreter le souper.
+
+
+- Maitre Jacques -
+
+Soit. J'aime mieux encore qu'ils meurent sous la main d'un autre que
+sous la mienne.
+
+
+- Valere -
+
+Maitre Jacques fait bien le raisonnable !
+
+
+- Maitre Jacques -
+
+Monsieur l'intendant fait bien le necessaire !
+
+
+- Harpagon -
+
+Paix !
+
+
+- Maitre Jacques -
+
+Monsieur, je ne saurais souffrir les flatteurs ; et je vois que ce
+qu'il en fait, que ses controles perpetuels sur le pain et le vin, le
+bois, le sel et la chandelle, ne sont rien que pour vous gratter et
+vous faire sa cour. J'enrage de cela, et je suis fache tous les jours
+d'entendre ce qu'on dit de vous : car, enfin, je me sens pour vous de
+la tendresse, en depit que j'en aie ; et, apres mes chevaux, vous etes
+la personne que j'aime le plus.
+
+
+- Harpagon -
+
+Pourrais-je savoir de vous, maitre Jacques, ce que l'on dit de moi ?
+
+
+- Maitre Jacques -
+
+Oui, monsieur, si j'etais assure que cela ne vous fachat point.
+
+
+- Harpagon -
+
+Non, en aucune facon.
+
+
+- Maitre Jacques -
+
+Pardonnez-moi ; je sais fort bien que je vous mettrais en colere.
+
+
+- Harpagon -
+
+Point du tout ; au contraire, c'est me faire plaisir, et je suis bien
+aise d'apprendre comme on parle de moi.
+
+
+- Maitre Jacques -
+
+Monsieur, puisque vous le voulez, je vous dirai franchement qu'on se
+moque partout de vous, qu'on nous jette de tous cotes cent brocards a
+votre sujet, et que l'on n'est point plus ravi que de vous tenir au
+cul et aux chausses, et de faire sans cesse des contes de votre
+lesine. L'un dit que vous faites imprimer des almanachs particuliers,
+ou vous faites doubler les quatre-temps et les vigiles, afin de
+profiter des jeunes ou vous obligez votre monde ; l'autre, que vous
+avez toujours une querelle toute prete a faire a vos valets dans le
+temps des etrennes ou de leur sortie d'avec vous, pour vous trouver
+une raison de ne leur donner rien. Celui-la conte qu'une fois vous
+fites assigner le chat d'un de vos voisins, pour vous avoir mange un
+reste d'un gigot de mouton ; celui-ci, que l'on vous surprit, une
+nuit, en venant derober vous-meme l'avoine de vos chevaux ; et que
+votre cocher, qui etait celui d'avant moi, vous donna, dans
+l'obscurite, je ne sais combien de coups de baton, dont vous ne
+voulutes rien dire.  Enfin, voulez-vous que je vous dise ? On ne
+saurait aller nulle part ou l'on ne vous entende accommoder de toutes
+pieces. Vous etes la fable et la risee de tout le monde ; et jamais on
+ne parle de vous que sous les noms d'avare, de ladre, de vilain et de
+fesse-mathieu.
+
+
+- Harpagon -
+
+        (en battant maitre Jacques.)
+
+Vous etes un sot, un maraud, un coquin, et un impudent.
+
+
+- Maitre Jacques -
+
+Eh bien, ne l'avais-je pas devine ? Vous ne m'avez pas voulu croire.
+Je vous l'avais bien dit que je vous facherais de vous dire la verite.
+
+
+- Harpagon -
+
+Apprenez a parler.
+
+
+-----------
+
+Scene VI. -  Valere, Maitre Jacques.
+
+
+
+- Valere -
+
+        (riant.)
+
+A ce que je puis voir, maitre Jacques, on paie mal votre franchise.
+
+
+- Maitre Jacques -
+
+Morbleu ! Monsieur le nouveau venu, qui faites l'homme d'importance,
+ce n'est pas votre affaire. Riez de vos coups de baton quand on vous
+on donnera, et ne venez point rire des miens.
+
+
+- Valere -
+
+Ah ! Monsieur maitre Jacques, ne vous fachez pas, je vous prie.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+II file doux. Je veux faire le brave, et, s'il est assez sot pour me
+craindre, le frotter quelque peu. 
+
+        (Haut.)  
+
+Savez-vous bien, Monsieur le rieur, que je ne ris pas, moi, et que si
+vous m'echauffez la tete, je vous ferai rire d'une autre sorte ?
+
+        (Maitre Jacques pousse Valere jusqu'au bout du theatre 
+         en le menacant.)
+
+
+- Valere -
+
+He ! doucement.
+
+
+- Maitre Jacques -
+
+Comment, doucement ? Il ne me plait pas, moi.
+
+
+- Valere -
+
+De grace !
+
+
+- Maitre Jacques -
+
+Vous etes un impertinent.
+
+
+- Valere -
+
+Monsieur maitre Jacques !
+
+
+- Maitre Jacques -
+
+II n'y a point de monsieur maitre Jacques pour un double (14). Si je
+prends un baton, je vous rosserai d'importance.
+
+
+- Valere -
+
+Comment ! un baton ? 
+
+        (Valere le fait reculer autant qu'il l'a fait.)
+
+
+- Maitre Jacques -
+
+He ! je ne parle pas de cela.
+
+
+- Valere -
+
+Savez-vous bien, Monsieur le fat, que je suis homme a vous rosser
+vous-meme ?
+
+
+- Maitre Jacques -
+
+Je n'en doute pas.
+
+
+- Valere -
+
+Que vous n'etes, pour tout potage, qu'un faquin de cuisinier ?
+
+
+- Maitre Jacques -
+
+Je le sais bien.
+
+
+- Valere -
+
+Et que vous ne me connaissez pas encore ?
+
+
+- Maitre Jacques -
+
+Pardonnez-moi.
+
+
+- Valere -
+
+Vous me rosserez, dites-vous ?
+
+
+- Maitre Jacques -
+
+Je le disais en raillant.
+
+
+- Valere -
+
+Et moi, je ne prends point de gout a votre raillerie. 
+
+        (Donnant des coups de baton a maitre Jacques.)
+
+Apprenez que vous etes un mauvais railleur.
+
+
+- Maitre Jacques -
+
+        (seul.)
+
+Peste soit la sincerite ! c'est un mauvais metier : desormais j'y
+renonce, et je ne veux plus dire vrai. Passe encore pour mon maitre,
+il a quelque droit de me battre ; mais, pour ce monsieur l'intendant,
+je m'en vengerai si je le puis.
+
+
+-----------
+
+Scene VII. -  Mariane, Frosine, Maitre Jacques.
+
+
+
+- Frosine -
+
+Savez-vous, maitre Jacques, si votre maitre est au logis ?
+
+
+- Maitre Jacques -
+
+Oui, vraiment il y est : je ne le sais que trop.
+
+
+- Frosine -
+
+Dites-lui, je vous prie, que nous sommes ici.
+
+
+- Maitre Jacques -
+
+Ah ! nous voila pas mal !
+
+
+-----------
+
+Scene VIII. -  Mariane, Frosine.
+
+
+
+- Mariane -
+
+Ah ! que je suis, Frosine, dans un etrange etat ! et, s'il faut dire
+ce que je sens, que j'apprehende cette vue !
+
+
+- Frosine -
+
+Mais pourquoi, et quelle est votre inquietude ?
+
+
+- Mariane -
+
+Helas ! me le demandez-vous ? et ne vous figurez-vous point les
+alarmes d'une personne toute prete a voir le supplice ou l'on veut
+l'attacher ?
+
+
+- Frosine -
+
+Je vois bien que, pour mourir agreablement, Harpagon n'est pas le
+supplice que vous voudriez embrasser ; et je connais, a votre mine,
+que le jeune blondin dont vous m'avez parle vous revient un peu dans
+l'esprit.
+
+
+- Mariane -
+
+Oui. C'est une chose, Frosine, dont je ne veux pas me defendre ; et
+les visites respectueuses qu'il a rendues chez nous ont fait, je vous
+l'avoue, quelque effet dans mon ame.
+
+
+- Frosine -
+
+Mais avez-vous su quel il est ?
+
+
+- Mariane -
+
+Non, je ne sais point quel il est. Mais je sais qu'il est fait d'un
+air a se faire aimer ; que, si l'on pouvait mettre les choses a mon
+choix, je le prendrais plutot qu'un autre, et qu'il ne contribue pas
+peu a me faire trouver un tourment effroyable dans l'epoux qu'on veut
+me donner.
+
+
+- Frosine -
+
+Mon Dieu, tous ces blondins sont agreables, et debitent fort bien leur
+fait ; mais la plupart sont gueux comme des rats : il vaut mieux, pour
+vous, de prendre un vieux mari qui vous donne beaucoup de bien. Je
+vous avoue que les sens ne trouvent pas si bien leur compte du cote
+que je dis, et qu'il y a quelques petits degouts a essuyer avec un tel
+epoux ; mais cela n'est pas pour durer ; et sa mort, croyez-moi, vous
+mettra bientot en etat d'en prendre un plus aimable, qui reparera
+toutes choses.
+
+
+- Mariane -
+
+Mon Dieu ! Frosine, c'est une etrange affaire, lorsque pour etre
+heureuse, il faut souhaiter ou attendre le trepas de quelqu'un ; et la
+mort ne suit pas tous les projets que nous faisons.
+
+
+- Frosine -
+
+Vous moquez-vous ? Vous ne l'epousez qu'aux conditions de vous laisser
+veuve bientot ; et ce doit etre la un des articles du contrat. Il
+serait bien impertinent de ne pas mourir dans trois mois ! Le voici
+en propre personne.
+
+
+- Mariane -
+
+Ah ! Frosine, quelle figure !
+
+
+-----------
+
+Scene IX. -  Harpagon, Mariane, Frosine.
+
+
+
+- Harpagon -
+
+        (a Mariane.)
+
+Ne vous offensez pas, ma belle, si je viens a vous avec des
+lunettes. Je sais que vos appas frappent assez les yeux, sont assez
+visibles d'eux-memes, et qu'il n'est pas besoin de lunettes pour les
+apercevoir ; mais enfin, c'est avec des lunettes qu'on observe les
+astres, et je maintiens et garantis que vous etes un astre, mais un
+astre, le plus bel astre qui soit dans le pays des astres. Frosine,
+elle ne repond mot et ne temoigne, ce me semble, aucune joie de me
+voir.
+
+
+- Frosine -
+
+C'est qu'elle est encore toute surprise ; et, puis les filles
+ont toujours honte a temoigner d'abord ce qu'elles ont dans l'ame.
+
+
+- Harpagon -
+
+        (a Frosine.)
+
+Tu as raison. 
+
+        (A Mariane.) 
+
+Voila, belle mignonne, ma fille qui vient vous saluer.
+
+
+-----------
+
+Scene X. -  Harpagon, Elise, Mariane, Frosine.
+
+
+
+- Mariane -
+
+Je m'acquitte bien tard, Madame, d'une telle visite.
+
+
+- Elise -
+
+Vous avez fait, Madame, ce que je devais faire, et c'etait a moi de
+vous prevenir.
+
+
+- Harpagon -
+
+Vous voyez qu'elle est grande ; mais mauvaise herbe croit toujours.
+
+
+- Mariane -
+
+        (bas, a Frosine.)
+
+Oh ! l'homme deplaisant !
+
+
+- Harpagon -
+
+        (bas, a Frosine.)
+
+Que dit la belle ?
+
+
+- Frosine -
+
+Qu'elle vous trouve admirable.
+
+
+- Harpagon -
+
+C'est trop d'honneur que vous me faites, adorable mignonne.
+
+
+- Mariane -
+
+        (a part.)
+
+Quel animal !
+
+
+- Harpagon -
+
+Je vous suis trop oblige de ces sentiments.
+
+
+- Mariane -
+
+        (a part.)
+
+Je n'y puis plus tenir.
+
+
+-----------
+
+Scene XI. -  Harpagon, Mariane, Elise, Cleante, Valere, Frosine,
+             Brindavoine.
+
+
+
+- Harpagon -
+
+Voici mon fils aussi qui vous vient faire la reverence.
+
+
+- Mariane -
+
+        (bas, a Frosine.)
+
+Ah ! Frosine, quelle rencontre ! C'est justement celui dont je t'ai
+parle.
+
+
+- Frosine -
+
+        (a Mariane.)
+
+L'aventure est merveilleuse.
+
+
+- Harpagon -
+
+Je vois que vous vous etonnez de me voir de si grands enfants ; mais
+je serai bientot defait et de l'un et de l'autre.
+
+
+- Cleante -
+
+        (a Mariane.)
+
+Madame, a vous dire le vrai, c'est ici une aventure ou, sans doute, je
+ne m'attendais pas ; et mon pere ne m'a pas peu surpris lorsqu'il m'a
+dit tantot le dessein qu'il avait forme.
+
+
+- Mariane -
+
+Je puis dire la meme chose. C'est une rencontre imprevue, qui m'a
+surprise autant que vous ; et je n'etais point preparee a une pareille
+aventure.
+
+
+- Cleante -
+
+Il est vrai que mon pere, Madame, ne peut pas faire un plus beau
+choix, et que ce m'est une sensible joie que l'honneur de vous voir ;
+mais, avec tout cela, je ne vous assurerai point que je me rejouis du
+dessein ou vous pourriez etre de devenir ma belle-mere. Le compliment,
+je vous l'avoue, est trop difficile pour moi, et c'est un titre, s'il
+vous plait, que je ne vous souhaite point. Ce discours paraitra brutal
+aux yeux de quelques-uns ; mais je suis assure que vous serez personne
+a le prendre comme il faudra ; que c'est un mariage, Madame, ou vous
+vous imaginez bien que je dois avoir de la repugnance ; que vous
+n'ignorez pas, sachant ce que je suis, comme il choque mes interets,
+et que vous voulez bien enfin que je vous dise, avec la permission de
+mon pere, que, si les choses dependaient de moi, cet hymen ne se
+ferait point.
+
+
+- Harpagon -
+
+Voila un compliment bien impertinent ! Quelle belle confession a lui
+faire !
+
+
+- Mariane -
+
+Et moi, pour vous repondre, j'ai a vous dire que les choses sont fort
+egales ; et que si vous auriez de la repugnance a me voir votre
+belle-mere, je n'en aurais pas moins, sans doute, a vous voir mon
+beau-fils. Ne croyez pas, je vous prie, que ce soit moi qui cherche a
+vous donner cette inquietude. Je serais fort fachee de vous causer du
+deplaisir ; et si je ne m'y vois forcee par une puissance absolue, je
+vous donne ma parole que je ne consentirai point au mariage qui vous
+chagrine.
+
+
+- Harpagon -
+
+Elle a raison. A sot compliment, il faut une reponse de meme. Je vous
+demande pardon, ma belle, de l'impertinence de mon fils : c'est un
+jeune sot qui ne sait pas encore la consequence des paroles qu'il dit.
+
+
+- Mariane -
+
+Je vous promets que ce qu'il m'a dit ne m'a point du tout offensee ;
+au contraire, il m'a fait plaisir de m'expliquer ainsi ses veritables
+sentiments. J'aime de lui un aveu de la sorte ; et s'il avait parle
+d'autre facon, je l'en estimerais bien moins.
+
+
+- Harpagon -
+
+C'est beaucoup de bonte a vous de vouloir ainsi excuser ses fautes.
+Le temps le rendra plus sage, et vous verrez qu'il changera de
+sentiments.
+
+
+- Cleante -
+
+Non, mon pere, je ne suis pas capable d'en changer, et je prie
+instamment Madame de le croire.
+
+
+- Harpagon -
+
+Mais voyez quelle extravagance ! il continue encore plus fort.
+
+
+- Cleante -
+
+Voulez-vous que je trahisse mon coeur ?
+
+
+- Harpagon -
+
+Encore ! Avez-vous envie de changer de discours ?
+
+
+- Cleante -
+
+Eh bien, puisque vous voulez que je parle d'autre facon, souffrez,
+Madame, que je me mette ici a la place de mon pere, et que je vous
+avoue que je n'ai rien vu dans le monde de si charmant que vous ; que
+je ne concois rien d'egal au bonheur de vous plaire, et que le titre
+de votre epoux est une gloire, une felicite que je prefererais aux
+destinees des plus grands princes de la terre. Oui, Madame, le bonheur
+de vous posseder est, a mes regards, la plus belle de toutes les
+fortunes ; c'est ou j'attache toute mon ambition. Il n'y a rien que je
+ne sois capable de faire pour une conquete si precieuse ; et les
+obstacles les plus puissants...
+
+
+- Harpagon -
+
+Doucement, mon fils, s'il vous plait.
+
+
+- Cleante -
+
+C'est un compliment que je fais pour vous a Madame.
+
+
+- Harpagon -
+
+Mon Dieu, j'ai une langue pour m'expliquer moi-meme, et je n'ai pas
+besoin d'un interprete comme vous. Allons, donnez des sieges.
+
+
+- Frosine -
+
+Non ; il vaut mieux que de ce pas nous allions a la foire, afin d'en
+revenir plus tot et d'avoir tout le temps ensuite de nous entretenir.
+
+
+- Harpagon -
+
+        (a Brindavoine.)
+
+Qu'on mette donc les chevaux au carrosse. 
+
+
+-----------
+
+Scene XII. -  Harpagon, Mariane, Elise, Cleante, Valere, Frosine.
+
+
+
+- Harpagon -
+
+        (a Mariane.)
+
+Je vous prie de m'excuser, ma belle, si je n'ai pas songe a vous
+donner un peu de collation avant que de partir.
+
+
+- Cleante -
+
+J'y ai pourvu, mon pere, et j'ai fait apporter ici quelques bassins
+d'oranges de la Chine, de citrons doux, et de confitures, que j'ai
+envoye querir de votre part.
+
+
+- Harpagon -
+
+        (bas, a Valere.)
+
+Valere !
+
+
+- Valere -
+
+        (a Harpagon.)
+
+Il a perdu le sens.
+
+
+- Cleante -
+
+Est-ce que vous trouvez, mon pere, que ce ne soit pas assez ? Madame
+aura la bonte d'excuser cela, s'il vous plait.
+
+
+- Mariane -
+
+C'est une chose qui n'etait pas necessaire.
+
+
+- Cleante -
+
+Avez-vous jamais vu, madame, un diamant plus vif que celui que vous
+voyez que mon pere a au doigt ?
+
+
+- Mariane -
+
+Il est vrai qu'il brille beaucoup.
+
+
+- Cleante -
+
+        (otant du doigt de son pere le diamant, et le donnant a Mariane)
+
+Il faut que vous le voyiez de pres.
+
+
+- Mariane -
+
+Il est fort beau, sans doute, et jette quantite de feux.
+
+
+- Cleante -
+
+        (se mettant au-devant de Mariane, qui veut rendre le diamant.)
+
+Nenni. Madame, il est en de trop belles mains. C'est un present que
+mon pere vous fait.
+
+
+- Harpagon -
+
+Moi !
+
+
+- Cleante -
+
+N'est-il pas vrai, mon pere, que vous voulez que Madame le garde pour
+l'amour de vous ?
+
+
+- Harpagon -
+
+        (bas, a son fils.)
+
+Comment ?
+
+
+- Cleante -
+
+        (a Mariane.)
+
+Belle demande ! Il me fait signe de vous le faire accepter.
+
+
+- Mariane -
+
+Je ne veux point...
+
+
+- Cleante -
+
+        (a Mariane.)
+
+Vous moquez-vous ? Il n'a garde de le reprendre.
+
+
+- Harpagon -
+
+        (a part.)
+
+J'enrage !
+
+
+- Mariane -
+
+Ce serait...
+
+
+- Cleante -
+
+        (empechant toujours Mariane de rendre la bague.)
+
+Non, vous dis-je, c'est l'offenser.
+
+
+- Mariane -
+
+De grace...
+
+
+- Cleante -
+
+Point du tout.
+
+
+- Harpagon -
+
+        (a part.)
+
+Peste soit...
+
+
+- Cleante -
+
+Le voila qui se scandalise de votre refus.
+
+
+- Harpagon -
+
+         (bas, a son fils.)
+
+Ah ! traitre !
+
+
+- Cleante -
+
+        (a Mariane.)
+
+Vous voyez qu'il se desespere.
+
+
+- Harpagon -
+
+        (bas, a son fils, en le menacant.)
+
+Bourreau que tu es !
+
+
+- Cleante -
+
+Mon pere, ce n'est pas ma faute. Je fais ce que je puis pour l'obliger
+a la garder ; mais elle est obstinee.
+
+
+- Harpagon -
+
+        (bas, a son fils en le menacant.)
+
+Pendard !
+
+
+- Cleante -
+
+Vous etes cause, Madame, que mon pere me querelle.
+
+
+- Harpagon -
+
+        (bas, a son fils, avec les memes gestes.)
+
+Le coquin !
+
+
+- Cleante -
+
+Vous le ferez tomber malade. De grace, Madame, ne resistez point
+davantage.
+
+
+- Frosine -
+
+        (a Mariane.)
+
+Mon Dieu ! que de facons ! Gardez la bague, puisque monsieur le veut.
+
+
+- Mariane -
+
+        (a Harpagon.)
+
+Pour ne vous point mettre en colere, je la garde maintenant, et je
+prendrai un autre temps pour vous la rendre.
+
+
+-----------
+
+Scene XIII. -  Harpagon, Mariane, Elise, Cleante, Valere, Frosine,
+               Brindavoine.
+
+
+
+- Brindavoine -
+
+Monsieur, il y a la un homme qui veut vous parler.
+
+
+- Harpagon -
+
+Dis-lui que je suis empeche, et qu'il revienne une autre fois.
+
+
+- Brindavoine -
+
+Il dit qu'il vous apporte de l'argent.
+
+
+- Harpagon -
+
+Je vous demande pardon. Je reviens tout a l'heure.
+
+
+-----------
+
+Scene XIV. -  Harpagon, Mariane, Elise, Cleante, Valere, Frosine,
+              La Merluche.
+
+
+
+- La Merluche -
+
+        (courant et faisant tomber Harpagon.)
+
+Monsieur...
+
+
+- Harpagon -
+
+Ah ! je suis mort.
+
+
+- Cleante -
+
+Qu'est-ce, mon pere ? Vous etes-vous fait mal ?
+
+
+- Harpagon -
+
+Le traitre assurement a recu de l'argent de mes debiteurs pour me
+faire rompre le cou.
+
+
+- Valere -
+
+        (a Harpagon.)
+
+Cela ne sera rien.
+
+
+- La Merluche -
+
+        (a Harpagon.)
+
+Monsieur, je vous demande pardon ; je croyais bien faire d'accourir
+vite.
+
+
+- Harpagon -
+
+Que viens-tu faire ici, bourreau ?
+
+
+- La Merluche -
+
+Vous dire que vos deux chevaux sont deferres.
+
+
+- Harpagon -
+
+Qu'on les mene promptement chez le marechal.
+
+
+- Cleante -
+
+En attendant qu'ils soient ferres, je vais faire pour vous, mon pere,
+les honneurs de votre logis, et conduire madame dans le jardin ou je
+ferai porter la collation.
+
+
+-----------
+
+Scene XV. -  Harpagon, Valere.
+
+
+
+- Harpagon -
+
+Valere, aie un peu l'oeil a tout cela, et prends soin, je te prie, de
+m'en sauver le plus que tu pourras, pour le renvoyer au marchand.
+
+
+- Valere -
+
+C'est assez.
+
+
+- Harpagon -
+
+        (seul.)
+
+O fils impertinent ! as-tu envie de me ruiner ?
+
+
+
+ACTE QUATRIEME.
+---------------
+
+
+
+Scene premiere. - Cleante, Mariane, Elise, Frosine.
+
+
+
+- Cleante -
+
+Rentrons ici ; nous serons beaucoup mieux. Il n'y a plus autour de
+nous personne de suspect, et nous pouvons parler librement.
+
+
+- Elise -
+
+Oui, Madame, mon frere m'a fait confidence de la passion qu'il a pour
+vous. Je sais les chagrins et les deplaisirs que sont capables de
+causer de pareilles traverses ; et c'est, je vous assure, avec une
+tendresse extreme, que je m'interesse a votre aventure.
+
+
+- Mariane -
+
+C'est une douce consolation que de voir dans ses interets une personne
+comme vous ; et je vous conjure, Madame, de me garder toujours cette
+genereuse amitie, si capable de m'adoucir les cruautes de la fortune.
+
+
+- Frosine -
+
+Vous etes, par ma foi, de malheureuses gens l'un et l'autre, de ne
+m'avoir point, avant tout ceci, avertie de votre affaire. Je vous
+aurais, sans doute, detourne cette inquietude, et n'aurais point amene
+les choses ou l'on voit qu'elles sont.
+
+
+- Cleante -
+
+Que veux-tu ? c'est ma mauvaise destinee qui l'a voulu ainsi. Mais,
+belle Mariane, quelles resolutions sont les votres ?
+
+
+- Mariane -
+
+Helas ! suis-je en pouvoir de faire des resolutions ? et, dans
+la dependance ou je me vois, puis-je former que des souhaits ?
+
+
+- Cleante -
+
+Point d'autre appui pour moi dans votre coeur que de simples souhaits ? 
+Point de pitie officieuse ? Point de secourable bonte ? Point
+d'affection agissante ?
+
+
+- Mariane -
+
+Que saurais-je vous dire ? Mettez-vous en ma place, et voyez ce que je
+puis faire. Avisez, ordonnez vous-meme : je m'en remets a vous, et je
+vous crois trop raisonnable pour vouloir exiger de moi que ce qui peut
+m'etre permis par l'honneur et la bienseance.
+
+
+- Cleante -
+
+Helas ! ou me reduisez-vous que de me renvoyer a ce que voudront me
+permettre les facheux sentiments d'un rigoureux honneur et d'une
+scrupuleuse bienseance ?
+
+
+- Mariane -
+
+Mais que voulez-vous que je fasse ? Quand je pourrais passer sur
+quantite d'egards ou notre sexe est oblige, j'ai de la consideration
+pour ma mere. Elle m'a toujours elevee avec une tendresse extreme, et
+je ne saurais me resoudre a lui donner du deplaisir. Faites, agissez
+aupres d'elle ; employez tous vos soins a gagner son esprit. Vous
+pouvez faire et dire tout ce que vous voudrez ; je vous en donne la
+licence ; et, s'il ne tient qu'a me declarer en votre faveur, je veux
+bien consentir a lui faire un aveu, moi-meme, de tout ce que je sens
+pour vous.
+
+
+- Cleante -
+
+Frosine, ma pauvre Frosine, voudrais-tu nous servir ?
+
+
+- Frosine -
+
+Par ma foi, faut-il le demander ? Je le voudrais de tout mon coeur.
+Vous savez que, de mon naturel, je suis assez humaine. Le ciel ne m'a
+point fait l'ame de bronze, et je n'ai que trop de tendresse a rendre
+de petits services, quand je vois des gens qui s'entr'aiment en tout
+bien et en tout honneur. Que pourrions-nous faire a ceci ?
+
+
+- Cleante -
+
+Songe un peu, je te prie.
+
+
+- Mariane -
+
+Ouvre-nous des lumieres.
+
+
+- Elise -
+
+Trouve quelque invention pour rompre ce que tu as fait.
+
+
+- Frosine -
+
+Ceci est assez difficile. 
+
+        (A Mariane.) 
+
+Pour votre mere, elle n'est pas tout a fait deraisonnable, et peut-etre
+pourrait-on la gagner et la resoudre a transporter au fils le don
+qu'elle veut faire au pere.
+
+        (A Cleante.) 
+
+Mais le mal que j'y trouve, c'est que votre pere est votre pere.
+
+
+- Cleante -
+
+Cela s'entend.
+
+
+- Frosine -
+
+Je veux dire qu'il conservera du depit si l'on montre qu'on le refuse,
+et qu'il ne sera point d'humeur ensuite a donner son consentement a
+votre mariage. Il faudrait, pour bien faire, que le refus vint de
+lui-meme, et tacher, par quelque moyen, de le degouter de votre personne.
+
+
+- Cleante -
+
+Tu as raison.
+
+
+- Frosine -
+
+Oui, j'ai raison, je le sais bien. C'est la ce qu'il faudrait ; mais
+le diantre (15) est d'en pouvoir trouver les moyens. Attendez : si
+nous avions quelque femme un peu sur l'age qui fut de mon talent, et
+jouat assez bien pour contrefaire une dame de qualite, par le moyen
+d'un train fait a la hate, et d'un bizarre nom de marquise ou de
+vicomtesse que nous supposerions de la Basse-Bretagne, j'aurais assez
+d'adresse pour faire accroire a votre pere que ce serait une personne
+riche, outre ses maisons, de cent mille ecus en argent comptant ;
+qu'elle serait eperdument amoureuse de lui et souhaiterait de se voir
+sa femme, jusqu'a lui donner tout son bien par contrat de mariage ; et
+je ne doute point qu'il ne pretat l'oreille a la proposition. Car
+enfin il vous aime fort, je le sais, mais il aime un peu plus l'argent ; 
+et quand, ebloui de ce leurre, il aurait une fois consenti a ce qui
+vous touche, il importerait peu ensuite qu'il se desabusat, en venant
+a vouloir voir clair aux effets de notre marquise.
+
+
+- Cleante -
+
+Tout cela est fort bien pense.
+
+
+- Frosine -
+
+Laissez-moi faire. Je viens de me ressouvenir d'une de mes amies qui
+sera notre fait.
+
+
+- Cleante -
+
+Sois assuree, Frosine, de ma reconnaissance, si tu viens a bout de la
+chose. Mais, charmante Mariane, commencons, je vous prie, par gagner
+votre mere ; c'est toujours beaucoup faire que de rompre ce mariage.
+Faites-y de votre part, je vous en conjure, tous les efforts qu'il
+vous sera possible. Servez-vous de tout le pouvoir que vous donne sur
+elle cette amitie qu'elle a pour vous. Deployez sans reserve les
+graces eloquentes, les charmes tout-puissants que le ciel a places
+dans vos yeux et dans votre bouche ; et n'oubliez rien, s'il vous
+plait, de ces tendres paroles, de ces douces prieres et de ces
+caresses touchantes a qui je suis persuade qu'on ne saurait rien
+refuser.
+
+
+- Mariane -
+
+J'y ferai tout ce que je puis, et n'oublierai aucune chose.
+
+
+-----------
+
+Scene II. -  Harpagon, Cleante, Mariane, Elise, Frosine.
+
+
+
+- Harpagon -
+
+        (a part, sans etre apercu.)
+
+Ouais ! mon fils baise la main de sa pretendue belle-mere ; et sa
+pretendue belle-mere ne s'en defend pas fort ! Y aurait-il quelque
+mystere la-dessous ?
+
+
+- Elise -
+
+Voila mon pere.
+
+
+- Harpagon -
+
+Le carrosse est tout pret ; vous pouvez partir quand il vous plaira.
+
+
+- Cleante -
+
+Puisque vous n'y allez pas, mon pere, je m'en vais les conduire.
+
+
+- Harpagon -
+
+Non : demeurez. Elles iront bien toutes seules, et j'ai besoin de vous.
+
+
+-----------
+
+Scene III. -  Harpagon, Cleante.
+
+
+
+- Harpagon -
+
+Oh ca, interet de belle-mere a part, que te semble, a toi, de cette
+personne ?
+
+
+- Cleante -
+
+Ce qui m'en semble ?
+
+
+- Harpagon -
+
+Oui de son air, de sa taille, de sa beaute, de son esprit.
+
+
+- Cleante -
+
+La, la !
+
+
+- Harpagon -
+
+Mais encore ?
+
+
+- Cleante -
+
+A vous en parler franchement, je ne l'ai pas trouvee ici ce que je
+l'avais crue. Son air est de franche coquette, sa taille est assez
+gauche, sa beaute tres mediocre, et son esprit des plus communs. Ne
+croyez pas que ce soit, mon pere, pour vous en degouter ; car,
+belle-mere pour belle-mere, j'aime autant celle-la qu'une autre.
+
+
+- Harpagon -
+
+Tu lui disais tantot pourtant...
+
+
+- Cleante -
+
+Je lui ai dit quelques douceurs en votre nom, mais c'etait pour vous
+plaire.
+
+
+- Harpagon -
+
+Si bien donc que tu n'aurais pas d'inclination pour elle ?
+
+
+- Cleante -
+
+Moi ? point du tout.
+
+
+- Harpagon - 
+
+J'en suis fache, car cela rompt une pensee qui m'etait venue dans
+l'esprit. J'ai fait, en la voyant ici, reflexion sur mon age ; et j'ai
+songe qu'on pourra trouver a redire de me voir marier a une si jeune
+personne. Cette consideration m'en faisait quitter le dessein ; et
+comme je l'ai fait demander, et que je suis pour elle engage de parole,
+je te l'aurais donnee, sans l'aversion que tu temoignes.
+
+
+- Cleante -
+
+A moi ?
+
+
+- Harpagon -
+
+A toi.
+
+
+- Cleante -
+
+En mariage ?
+
+
+- Harpagon -
+
+En mariage.
+
+
+- Cleante -
+
+Ecoutez. Il est vrai qu'elle n'est pas fort a mon gout ; mais, pour
+vous faire plaisir, mon pere, je me resoudrai a l'epouser, si vous
+voulez.
+
+
+- Harpagon -
+
+Moi, je suis plus raisonnable que tu ne penses. Je ne veux point
+forcer ton inclination.
+
+
+- Cleante -
+
+Pardonnez-moi ; je me ferai cet effort pour l'amour de vous.
+
+
+- Harpagon -
+
+Non, non. Un mariage ne saurait etre heureux ou l'inclination n'est
+pas.
+
+
+- Cleante -
+
+C'est une chose, mon pere, qui peut-etre viendra ensuite ; et l'on dit
+que l'amour est souvent un fruit du mariage.
+
+
+- Harpagon -
+
+Non. Du cote de l'homme, on ne doit point risquer l'affaire ; et ce sont
+des suites facheuses, ou je n'ai garde de me commettre. Si tu avais
+senti quelque inclination pour elle, a la bonne heure ; je te l'aurais
+fait epouser au lieu de moi ; mais, cela n'etant pas, je suivrai mon
+premier dessein, et je l'epouserai moi-meme.
+
+
+- Cleante -
+
+Eh bien ! mon pere, puisque les choses sont ainsi, il faut vous
+decouvrir mon coeur ; il faut vous reveler notre secret. La verite est
+que je l'aime depuis un jour que je la vis dans une promenade ; que mon
+dessein etait tantot de vous la demander pour femme ; et que rien ne
+m'a retenu que la declaration de vos sentiments, et la crainte de vous
+deplaire.
+
+
+- Harpagon -
+
+Lui avez-vous rendu visite ?
+
+
+- Cleante -
+
+Oui, mon pere.
+
+
+- Harpagon -
+
+Beaucoup de fois ?
+
+
+- Cleante -
+
+Assez pour le temps qu'il y a.
+
+
+- Harpagon -
+
+Vous a-t-on bien recu ?
+
+
+- Cleante -
+
+Fort bien, mais sans savoir qui j'etais ; et c'est ce qui a fait tantot
+la surprise de Mariane.
+
+
+- Harpagon -
+
+Lui avez-vous declare votre passion et le dessein ou vous etiez de
+l'epouser ?
+
+
+- Cleante -
+
+Sans doute, et meme j'en avais fait a sa mere quelque peu d'ouverture.
+
+
+- Harpagon -
+
+A-t-elle ecoute, pour sa fille, votre proposition ?
+
+
+- Cleante -
+
+Oui, fort civilement.
+
+
+- Harpagon -
+
+Et la fille correspond-elle fort a votre amour ?
+
+
+- Cleante -
+
+Si j'en dois croire les apparences, je me persuade, mon pere, qu'elle
+a quelque bonte pour moi.
+
+- Harpagon -
+
+        (bas, a part.)
+
+Je suis bien aise d'avoir appris un tel secret ; et voila justement ce
+que je demandais.
+
+        (Haut.) 
+
+Or sus, mon fils, savez-vous ce qu'il y a ? C'est qu'il faut songer,
+s'il vous plait, a vous defaire de votre amour, a cesser toutes vos
+poursuites aupres d'une personne que je pretends pour moi, et a vous
+marier dans peu avec celle qu'on vous destine.
+
+
+- Cleante -
+
+Oui, mon pere ; c'est ainsi que vous me jouez ! Eh bien !  puisque les
+choses en sont venues la, je vous declare, moi, que je ne quitterai
+point la passion que j'ai pour Mariane ; qu'il n'y a point d'extremite
+ou je ne m'abandonne pour vous disputer sa conquete, et que si vous
+avez pour vous le consentement d'une mere, j'aurai d'autres secours,
+peut-etre, qui combattront pour moi.
+
+
+- Harpagon -
+
+Comment, pendard ! tu as l'audace d'aller sur mes brisees !
+
+
+- Cleante -
+
+C'est vous qui allez sur les miennes, et je suis le premier en date.
+
+
+- Harpagon -
+
+Ne suis-je pas ton pere ? et ne me dois-tu pas respect ?
+
+
+- Cleante -
+
+Ce ne sont point ici des choses ou les enfants soient obliges de
+deferer aux peres, et l'amour ne connait personne.
+
+
+- Harpagon -
+
+Je te ferai bien me connaitre avec de bons coups de baton.
+
+
+- Cleante -
+
+Toutes vos menaces ne feront rien.
+
+
+- Harpagon -
+
+Tu renonceras a Mariane.
+
+
+- Cleante -
+
+Point du tout.
+
+
+- Harpagon -
+
+Donnez-moi un baton tout a l'heure.
+
+
+-----------
+
+Scene IV. -  Harpagon, Cleante, Maitre Jacques.
+
+
+
+- Maitre Jacques -
+
+He ! he ! he ! Messieurs, qu'est-ce ci ? a quoi songez-vous ?
+
+
+- Cleante -
+
+Je me moque de cela.
+
+
+- Maitre Jacques -
+
+        (a Cleante.)
+
+Ah ! Monsieur, doucement.
+
+
+- Harpagon -
+
+Me parler avec cette impudence !
+
+
+- Maitre Jacques -
+
+        (a Harpagon.)
+
+
+Ah ! monsieur, de grace !
+
+
+- Cleante -
+
+Je n'en demordrai point.
+
+
+- Maitre Jacques -
+
+        (a Cleante.)
+
+He quoi ! a votre pere ?
+
+
+- Harpagon -
+
+Laisse-moi faire.
+
+
+- Maitre Jacques -
+
+        (a Harpagon.)
+
+He quoi ! a votre fils ? Encore passe pour moi.
+
+
+- Harpagon -
+
+Je te veux faire toi-meme, maitre Jacques, juge de cette affaire, pour
+montrer comme j'ai raison.
+
+
+- Maitre Jacques -
+
+J'y consens. 
+
+        (A Cleante.) 
+
+Eloignez-vous un peu.
+
+
+- Harpagon -
+
+J'aime une fille que je veux epouser ; et le pendard a l'insolence de
+l'aimer avec moi, et d'y pretendre malgre mes ordres.
+
+
+- Maitre Jacques -
+
+Ah ! il a tort.
+
+
+- Harpagon -
+
+N'est-ce pas une chose epouvantable, qu'un fils qui veut entrer en
+concurrence avec son pere ? et ne doit-il pas, par respect, s'abstenir
+de toucher a mes inclinations ?
+
+
+- Maitre Jacques -
+
+Vous avez raison. Laissez-moi lui parler, et demeurez la.
+
+
+- Cleante -
+
+        (a maitre Jacques, qui s'approche de lui.)
+
+Eh bien, oui, puisqu'il veut te choisir pour juge, je n'y recule point ; 
+il ne m'importe qui ce soit ; et je veux bien aussi me rapporter a toi, 
+maitre Jacques, de notre differend.
+
+
+- Maitre Jacques -
+
+C'est beaucoup d'honneur que vous me faites.
+
+
+- Cleante -
+
+Je suis epris d'une jeune personne qui repond a mes voeux et recoit
+tendrement les offres de ma foi, et mon pere s'avise de venir troubler
+notre amour, par la demande qu'il en fait faire.
+
+
+- Maitre Jacques -
+
+Il a tort assurement.
+
+
+- Cleante -
+
+N'a-t-il point de honte, a son age, de songer a se marier ?  Lui
+sied-il bien d'etre encore amoureux ? et ne devrait-il pas laisser
+cette occupation aux jeunes gens ?
+
+
+- Maitre Jacques -
+
+Vous avez raison, il se moque. Laissez-moi lui dire deux mots. 
+
+        (A Harpagon.) 
+
+Eh bien ! votre fils n'est pas si etrange que vous le dites, et il se
+met a la raison. Il dit qu'il sait le respect qu'il vous doit ; qu'il
+ne s'est emporte que dans la premiere chaleur, et qu'il ne fera point
+refus de se soumettre a ce qu'il vous plaira, pourvu que vous vouliez
+le traiter mieux que vous ne faites, et lui donner quelque personne en
+mariage, dont il ait lieu d'etre content.
+
+
+- Harpagon -
+
+Ah ! dis-lui, maitre Jacques, que moyennant cela, il pourra esperer
+toutes choses de moi, et que, hors Mariane, je lui laisse la liberte
+de choisir celle qu'il voudra.
+
+
+- Maitre Jacques -
+
+Laissez-moi faire. 
+
+        (A Cleante.) 
+
+Eh bien ! votre pere n'est pas si deraisonnable que vous le faites, et
+il m'a temoigne que ce sont vos emportements qui l'ont mis en colere ;
+qu'il n'en veut seulement qu'a votre maniere d'agir, et qu'il sera
+fort dispose a vous accorder ce que vous souhaitez, pourvu que vous
+vouliez vous y prendre par la douceur, et lui rendre les deferences,
+les respects et les soumissions qu'un fils doit a son pere.
+
+
+- Cleante -
+
+Ah ! maitre Jacques, tu lui peux assurer que, s'il m'accorde Mariane,
+il me verra toujours le plus soumis de tous les hommes, et que jamais
+je ne ferai aucune chose que par ses volontes.
+
+
+- Maitre Jacques -
+
+        (a Harpagon.)
+
+Cela est fait. Il consent ce que vous dites.
+
+
+- Harpagon -
+
+Voila qui va le mieux du monde.
+
+
+- Maitre Jacques -
+
+        (a Cleante.)
+
+Tout est conclu ; il est content de vos promesses.
+
+
+- Cleante -
+
+Le ciel en soit loue !
+
+- Maitre Jacques -
+
+Messieurs, vous n'avez qu'a parler ensemble ; vous voila d'accord
+maintenant ; et vous alliez vous quereller, faute de vous entendre.
+
+
+- Cleante -
+
+Mon pauvre maitre Jacques, je te serai oblige toute ma vie.
+
+
+- Maitre Jacques -
+
+Il n'y a pas de quoi, monsieur.
+
+
+- Harpagon -
+
+Tu m'as fait plaisir, maitre Jacques ; et cela merite une
+recompense. 
+
+        (Harpagon fouille dans sa poche ; maitre Jacques tend la main ;
+         mais Harpagon ne tire que son mouchoir, en disant :)
+
+Va, je m'en souviendrai, je t'assure.
+
+
+- Maitre Jacques -
+
+Je vous baise les mains.
+
+
+-----------
+
+Scene V. -  Harpagon, Cleante.
+
+
+
+- Cleante -
+
+Je vous demande pardon, mon pere, de l'emportement que j'ai fait
+paraitre.
+
+
+- Harpagon -
+
+Cela n'est rien.
+
+
+- Cleante -
+
+Je vous assure que j'en ai tous les regrets du monde.
+
+
+- Harpagon -
+
+Et moi, j'ai toutes les joies du monde de te voir raisonnable.
+
+
+- Cleante -
+
+Quelle bonte a vous d'oublier si vite ma faute !
+
+
+- Harpagon -
+
+On oublie aisement les fautes des enfants lorsqu'ils rentrent dans
+leur devoir.
+
+
+- Cleante -
+
+Quoi ! ne garder aucun ressentiment de toutes mes extravagances ?
+
+
+- Harpagon -
+
+C'est une chose ou tu m'obliges, par la soumission et le respect ou tu
+te ranges.
+
+
+- Cleante -
+
+Je vous promets, mon pere, que jusques au tombeau je conserverai dans
+mon coeur le souvenir de vos bontes.
+
+
+- Harpagon -
+
+Et moi, je te promets qu'il n'y aura aucune chose que tu n'obtiennes
+de moi.
+
+
+- Cleante -
+
+Ah ! mon pere, je ne vous demande plus rien ; et c'est m'avoir assez
+donne que de me donner Mariane.
+
+
+- Harpagon -
+
+Comment ?
+
+
+- Cleante -
+
+Je dis, mon pere, que je suis trop content de vous, et que je trouve
+toutes choses dans la bonte que vous ayez de m'accorder Mariane.
+
+
+- Harpagon -
+
+Qui est-ce qui parle de t'accorder Mariane ?
+
+
+- Cleante -
+
+Vous, mon pere.
+
+
+- Harpagon -
+
+Moi ?
+
+
+- Cleante -
+
+Sans doute.
+
+
+- Harpagon -
+
+Comment ! c'est toi qui as promis d'y renoncer.
+
+
+- Cleante -
+
+Moi, y renoncer ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- Cleante -
+
+Point du tout.
+
+
+- Harpagon -
+
+Tu ne t'es pas departi d'y pretendre ?
+
+
+- Cleante -
+
+Au contraire, j'y suis porte plus que jamais.
+
+
+- Harpagon -
+
+Quoi, pendard ! derechef ?
+
+
+- Cleante -
+
+Rien ne peut me changer.
+
+
+- Harpagon -
+
+Laisse-moi faire, traitre.
+
+
+- Cleante -
+
+Faites tout ce qu'il vous plaira.
+
+
+- Harpagon -
+
+Je te defends de me jamais voir.
+
+
+- Cleante -
+
+A la bonne heure.
+
+
+- Harpagon -
+
+Je t'abandonne.
+
+
+- Cleante -
+
+Abandonnez.
+
+
+- Harpagon -
+
+Je te renonce pour mon fils.
+
+
+- Cleante -
+
+Soit.
+
+
+- Harpagon -
+
+Je te desherite.
+
+
+- Cleante -
+
+Tout ce que vous voudrez.
+
+
+- Harpagon -
+
+Et je te donne ma malediction.
+
+
+- Cleante -
+
+Je n'ai que faire de vos dons.
+
+
+-----------
+
+Scene VI. -  Cleante, La Fleche.
+
+
+
+- La Fleche -
+
+        (sortant du jardin avec une cassette.)
+
+Ah ! Monsieur, que je vous trouve a propos ! Suivez-moi vite.
+
+
+- Cleante -
+
+Qu'y a-t-il ?
+
+
+- La Fleche -
+
+Suivez-moi, vous dis-je ; nous sommes bien.
+
+
+- Cleante -
+
+Comment ?
+
+
+- La Fleche -
+
+Voici votre affaire.
+
+
+- Cleante -
+
+Quoi ?
+
+
+- La Fleche -
+
+J'ai guigne ceci tout le jour.
+
+
+- Cleante -
+
+Qu'est-ce que c'est ?
+
+
+- La Fleche -
+
+Le tresor de votre pere, que j'ai attrape.
+
+
+- Cleante -
+
+Comment as-tu fait ?
+
+
+- La Fleche -
+
+Vous saurez tout. Sauvons-nous ; je l'entends crier.
+
+
+-----------
+
+Scene VII. -  Harpagon.
+
+
+
+- Harpagon -
+
+        (criant au voleur des le jardin, et venant sans chapeau.)
+
+Au voleur ! au voleur ! a l'assassin ! au meurtrier ! Justice, juste
+ciel ! Je suis perdu, je suis assassine ; on m'a coupe la gorge : on
+m'a derobe mon argent. Qui peut-ce etre ? Qu'est-il devenu ? Ou
+est-il ? Ou se cache-t-il ? Que ferai-je pour le trouver ? Ou courir ? 
+Ou ne pas courir ? N'est-il point la ? n'est-il point ici ? Qui
+est-ce ? Arrete.
+
+        (A lui-meme, se prenant par le bras.)
+
+Rends-moi mon argent, coquin... Ah ! c'est moi ! Mon esprit est
+trouble, et j'ignore ou je suis, qui je suis, et ce que je fais. 
+Helas ! mon pauvre argent ! mon pauvre argent ! mon cher ami ! 
+on m'a prive de toi ; et puisque tu m'es enleve, j'ai perdu mon
+support, ma consolation, ma joie : tout est fini pour moi, et 
+je n'ai plus que faire au monde. Sans toi, il m'est impossible 
+de vivre. C'en est fait ; je n'en puis plus ; je me meurs ; je 
+suis mort ; je suis enterre. N'y a-t-il personne qui veuille me 
+ressusciter, en me rendant mon cher argent, ou en m'apprenant qui 
+l'a pris. Euh ! que dites-vous ? Ce n'est personne. Il faut, qui 
+que ce soit qui ait fait le coup, qu'avec beaucoup de soin on ait 
+epie l'heure ; et l'on a choisi justement le temps que je parlais 
+a mon traitre de fils. Sortons. Je veux aller querir la justice, 
+et faire donner la question a toute ma maison ; a servantes, a 
+valets, a fils, a fille, et a moi aussi. Que de gens assembles ! 
+Je ne jette mes regards sur personne qui ne me donne des soupcons, 
+et tout me semble mon voleur. He ! de quoi est-ce qu'on parle la ? 
+de celui qui m'a derobe ? Quel bruit fait-on la-haut ? Est-ce mon 
+voleur qui y est ? De grace, si l'on sait des nouvelles de mon 
+voleur, je supplie que l'on m'en dise. N'est-il point cache la
+parmi vous ? Ils me regardent tous, et se mettent a rire. Vous 
+verrez qu'ils ont part, sans doute, au vol que l'on m'a fait. 
+Allons, vite, des commissaires, des archers, des prevots, des juges, 
+des genes, des potences, et des bourreaux ! Je veux faire pendre 
+tout le monde ; et si je ne retrouve mon argent, je me pendrai 
+moi-meme apres.
+
+
+
+ACTE CINQUIEME.
+---------------
+
+
+
+Scene premiere. - Harpagon, un commissaire.
+
+
+
+- Le commissaire -
+
+Laissez-moi faire, je sais mon metier, Dieu merci. Ce n'est pas
+d'aujourd'hui que je me mele de decouvrir des vols, et je voudrais
+avoir autant de sacs de mille francs que j'ai fait pendre de
+personnes.
+
+
+- Harpagon -
+
+Tous les magistrats sont interesses a prendre cette affaire en main ;
+et, si l'on ne me fait retrouver mon argent, je demanderai justice de
+la justice.
+
+
+- Le commissaire -
+
+Il faut faire toutes les poursuites requises. Vous dites qu'il y avait
+dans cette cassette ?
+
+
+- Harpagon -
+
+Dix mille ecus bien comptes.
+
+
+- Le commissaire -
+
+Dix mille ecus !
+
+
+- Harpagon -
+
+Dix mille ecus.
+
+
+- Le commissaire -
+
+Le vol est considerable.
+
+
+- Harpagon -
+
+Il n'y a point de supplice assez grand pour l'enormite de ce crime ;
+et, s'il demeure impuni, les choses les plus sacrees ne sont plus en
+surete.
+
+
+- Le commissaire -
+
+En quelles especes etait cette somme ?
+
+
+- Harpagon -
+
+En bons louis d'or et pistoles bien trebuchantes.
+
+
+- Le commissaire -
+
+Qui soupconnez-vous de ce vol ?
+
+
+- Harpagon -
+
+Tout le monde, et je veux que vous arretiez prisonniers la ville et
+les faubourgs.
+
+
+- Le commissaire -
+
+Il faut, si vous m'en croyez, n'effaroucher personne et tacher
+doucement d'attraper quelques preuves afin de proceder apres, par la
+rigueur, au recouvrement des deniers qui vous ont ete pris.
+
+
+-----------
+
+Scene II. -  Harpagon, un commissaire, Maitre Jacques.
+
+
+
+- Maitre Jacques -
+
+        (dans le fond du theatre, en se retournant du cote par lequel
+         il est entre.)
+
+Je m'en vais revenir. Qu'on me l'egorge tout a l'heure ; qu'on me lui
+fasse griller les pieds, qu'on me le mette dans l'eau bouillante, et
+qu'on me le pende au plancher.
+
+
+- Harpagon -
+
+        (a maitre Jacques.)
+
+Qui ? celui qui m'a derobe ?
+
+
+- Maitre Jacques - 
+
+Je parle d'un cochon de lait que votre intendant me vient d'envoyer,
+et je veux vous l'accommoder a ma fantaisie.
+
+
+- Harpagon -
+
+Il n'est pas question de cela ; et voila Monsieur a qui il faut parler
+d'autre chose.
+
+
+- Le commissaire -
+
+        (a maitre Jacques.)
+
+Ne vous epouvantez point. Je suis homme a ne vous point scandaliser (16),
+et les choses iront dans la douceur.
+
+
+- Maitre Jacques -
+
+Monsieur est de votre souper ?
+
+
+- Le commissaire -
+
+Il faut ici, mon cher ami, ne rien cacher a votre maitre.
+
+
+- Maitre Jacques -
+
+Ma foi, Monsieur, je montrerai tout ce que je sais faire, et je vous
+traiterai du mieux qu'il me sera possible.
+
+
+- Harpagon -
+
+Ce n'est pas la l'affaire.
+
+
+- Maitre Jacques -
+
+Si je ne vous fais pas aussi bonne chere que je voudrais, c'est la
+faute de monsieur notre intendant, qui m'a rogne les ailes avec les
+ciseaux de son economie.
+
+
+- Harpagon -
+
+Traitre ! il s'agit d'autre chose que de souper ; et je veux que tu me
+dises des nouvelles de l'argent qu'on m'a pris.
+
+
+- Maitre Jacques -
+
+On vous a pris de l'argent ?
+
+
+- Harpagon -
+
+Oui, coquin ; et je m'en vais te faire pendre, si tu ne me le rends.
+
+
+- Le commissaire -
+
+        (a Harpagon.)
+
+Mon Dieu ! ne le maltraitez point. Je vois a sa mine qu'il est honnete
+homme, et que, sans se faire mettre en prison, il vous decouvrira ce
+que vous voulez savoir. Oui, mon ami, si vous nous confessez la chose,
+il ne vous sera fait aucun mal et vous serez recompense comme il faut
+par votre maitre. On lui a pris aujourd'hui son argent, et il n'est pas
+que vous ne sachiez quelques nouvelles de cette affaire.
+
+
+- Maitre Jacques -
+
+        (bas, a part.)
+
+Voici justement ce qu'il me faut pour me venger de notre intendant.
+Depuis qu'il est entre ceans il est le favori, on n'ecoute que ses
+conseils, et j'ai aussi sur le coeur les coups de baton de tantot.
+
+
+- Harpagon -
+
+Qu'as-tu a ruminer ?
+
+
+- Le commissaire -
+
+        (a Harpagon.)
+
+Laissez-le faire. Il se prepare a vous contenter ; et je vous ai bien
+dit qu'il etait honnete homme.
+
+
+- Maitre Jacques -
+
+Monsieur, si vous voulez que je vous dise les choses, je crois que
+c'est monsieur votre cher intendant qui a fait le coup.
+
+
+- Harpagon -
+
+Valere !
+
+
+- Maitre Jacques -
+
+Oui.
+
+
+- Harpagon -
+
+Lui ! qui me parait si fidele ?
+
+
+- Maitre Jacques -
+
+Lui-meme. Je crois que c'est lui qui vous a derobe.
+
+
+- Harpagon -
+
+Et sur quoi le crois-tu ?
+
+
+- Maitre Jacques -
+
+Sur quoi ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- Maitre Jacques -
+
+Je le crois... sur ce que je le crois.
+
+
+- Le commissaire -
+
+Mais il est necessaire de dire les indices que vous avez.
+
+
+- Harpagon -
+
+L'as-tu vu roder autour du lieu ou j'avais mis mon argent ?
+
+
+- Maitre Jacques -
+
+Oui, vraiment. Ou etait-il votre argent ?
+
+
+- Harpagon -
+
+Dans le jardin.
+
+
+- Maitre Jacques -
+
+Justement ; je l'ai vu roder dans le jardin. Et dans quoi est-ce que
+cet argent etait ?
+
+
+- Harpagon -
+
+Dans une cassette.
+
+
+- Maitre Jacques -
+
+Voila l'affaire. Je lui ai vu une cassette.
+
+
+- Harpagon -
+
+Et cette cassette, comme est-elle faite ? Je verrai bien si c'est la
+mienne.
+
+
+- Maitre Jacques -
+
+Comment elle est faite ?
+
+
+- Harpagon -
+
+Oui.
+
+
+- Maitre Jacques -
+
+Elle est faite... elle est faite comme une cassette.
+
+
+- Le commissaire -
+
+Cela s'entend. Mais depeignez-la un peu, pour voir.
+
+
+- Maitre Jacques -
+
+C'est une grande cassette.
+
+
+- Harpagon -
+
+Celle qu'on m'a volee est petite.
+
+
+- Maitre Jacques -
+
+He ! oui, elle est petite, si on le veut prendre par la ; mais je
+l'appelle grande pour ce qu'elle contient.
+
+
+- Le commissaire -
+
+Et de quelle couleur est-elle ?
+
+
+- Maitre Jacques -
+
+De quelle couleur ?
+
+
+- Le commissaire -
+
+Oui.
+
+
+- Maitre Jacques -
+
+Elle est de couleur... la, d'une certaine couleur...  Ne sauriez-vous
+m'aider a dire ?
+
+
+- Harpagon -
+
+Euh !
+
+
+- Maitre Jacques -
+
+N'est-elle pas rouge ?
+
+
+- Harpagon -
+
+Non, grise.
+
+
+- Maitre Jacques -
+
+He ! oui, gris-rouge ; c'est ce que je voulais dire.
+
+
+- Harpagon -
+
+Il n'y a point de doute ; c'est elle assurement. Ecrivez, Monsieur,
+ecrivez sa deposition. Ciel ! a qui desormais se fier ! Il ne faut
+plus jurer de rien ; et je crois, apres cela, que je suis homme a me
+voler moi-meme.
+
+
+- Maitre Jacques -
+
+        (a Harpagon.)
+
+Monsieur, le voici qui revient. Ne lui allez pas dire, au moins, que
+c'est moi qui vous ai decouvert cela.
+
+
+-----------
+
+Scene III. -  Harpagon, un commissaire, Valere, Maitre Jacques.
+
+
+
+- Harpagon -
+
+Approche, viens confesser l'action la plus noire, l'attentat le plus
+horrible qui jamais ait ete commis.
+
+
+- Valere -
+
+Que voulez-vous, monsieur ?
+
+
+- Harpagon -
+
+Comment, traitre, tu ne rougis pas de ton crime ?
+
+
+- Valere -
+
+De quel crime voulez-vous donc parler ?
+
+
+- Harpagon -
+
+De quel crime je veux parler, infame ? comme si tu ne savais pas ce
+que je veux dire ! C'est en vain que tu pretendrais de le deguiser :
+l'affaire est decouverte, et l'on vient de m'apprendre tout. Comment
+abuser ainsi de ma bonte, et s'introduire expres chez moi pour me
+trahir, pour me jouer un tour de cette nature ?
+
+
+- Valere -
+
+Monsieur, puisqu'on vous a decouvert tout, je ne veux point chercher
+de detours et vous nier la chose.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+Oh ! oh ! Aurais-je devine sans y penser ?
+
+
+- Valere -
+
+C'etait mon dessein de vous en parler, et je voulais attendre, pour
+cela, des conjonctures favorables ; mais puisqu'il est ainsi, je vous
+conjure de ne vous point facher, et de vouloir entendre mes raisons.
+
+
+- Harpagon -
+
+Et quelles belles raisons peux-tu me donner, voleur infame ?
+
+
+- Valere -
+
+Ah ! Monsieur, je n'ai pas merite ces noms. Il est vrai que j'ai
+commis une offense envers vous ; mais, apres tout, ma faute est
+pardonnable.
+
+
+- Harpagon -
+
+Comment ! pardonnable ? Un guet-apens, un assassinat de la sorte ?
+
+
+- Valere -
+
+De grace, ne vous mettez point en colere. Quand vous m'aurez oui, vous
+verrez que le mal n'est pas si grand que vous le faites.
+
+
+- Harpagon -
+
+Le mal n'est pas si grand que je le fais ! Quoi ! mon sang, mes
+entrailles, pendard !
+
+
+- Valere -
+
+Votre sang, Monsieur, n'est pas tombe dans de mauvaises mains. Je suis
+d'une condition a ne lui point faire de tort ; et il n'y a rien, en
+tout ceci, que je ne puisse bien reparer.
+
+
+- Harpagon -
+
+C'est bien mon intention, et que tu me restitues ce que tu m'as ravi.
+
+
+- Valere -
+
+Votre honneur, Monsieur, sera pleinement satisfait.
+
+
+- Harpagon -
+
+Il n'est pas question d'honneur la-dedans. Mais, dis-moi, qui t'a
+porte a cette action ?
+
+
+- Valere -
+
+Helas ! me le demandez-vous ?
+
+
+- Harpagon -
+
+Oui, vraiment, je te le demande.
+
+
+- Valere -
+
+Un dieu qui porte les excuses de tout ce qu'il fait faire, l'Amour.
+
+
+- Harpagon -
+
+L'Amour ?
+
+
+- Valere -
+
+Oui.
+
+
+- Harpagon -
+
+Bel amour, bel amour, ma foi ! l'amour de mes louis d'or !
+
+
+- Valere -
+
+Non, Monsieur, ce ne sont point vos richesses qui m'ont tente, ce
+n'est pas cela qui m'a ebloui ; et je proteste de ne pretendre rien a
+tous vos biens, pourvu que vous me laissiez celui que j'ai.
+
+
+- Harpagon -
+
+Non ferai, de par tous les diables ! je ne te le laisserai pas. Mais
+voyez quelle insolence, de vouloir retenir le vol qu'il m'a fait !
+
+
+- Valere -
+
+Appelez-vous cela un vol ?
+
+
+- Harpagon -
+
+Si je l'appelle un vol ? un tresor comme celui-la !
+
+
+- Valere -
+
+C'est un tresor, il est vrai, et le plus precieux que vous ayez, sans
+doute ; mais ce ne sera pas le perdre que de me le laisser. Je vous
+le demande a genoux, ce tresor plein de charmes ; et, pour bien faire,
+il faut que vous me l'accordiez.
+
+
+- Harpagon -
+
+Je n'en ferai rien. Qu'est-ce a dire cela ?
+
+
+- Valere -
+
+Nous nous sommes promis une foi mutuelle, et avons fait serment de ne
+nous point abandonner.
+
+
+- Harpagon -
+
+Le serment est admirable, et la promesse plaisante.
+
+
+- Valere -
+
+Oui, nous nous sommes engages d'etre l'un a l'autre a jamais.
+
+
+- Harpagon -
+
+Je vous en empecherai bien, je vous assure.
+
+
+- Valere -
+
+Rien que la mort ne nous peut separer.
+
+
+- Harpagon -
+
+C'est etre bien endiable apres mon argent !
+
+
+- Valere -
+
+Je vous ai deja dit, Monsieur, que ce n'etait point l'interet qui
+m'avait pousse a faire ce que j'ai fait. Mon coeur n'a point agi par
+les ressorts que vous pensez, et un motif plus noble m'a inspire cette
+resolution.
+
+
+- Harpagon -
+
+Vous verrez que c'est par charite chretienne qu'il veut avoir mon bien ! 
+Mais j'y donnerai bon ordre, et la justice, pendard effronte, me va
+faire raison de tout.
+
+
+- Valere -
+
+Vous en userez comme vous voudrez, et me voila pret a souffrir toutes
+les violences qu'il vous plaira ; mais je vous prie de croire au moins
+que, s'il y a du mal, ce n'est que moi qu'il en faut accuser, et que
+votre fille, en tout ceci, n'est aucunement coupable.
+
+
+- Harpagon -
+
+Je le crois bien, vraiment ! Il serait fort etrange que ma fille eut
+trempe dans ce crime. Mais je veux ravoir mon affaire, et que tu me
+confesses en quel endroit tu me l'as enlevee.
+
+
+- Valere -
+
+Moi ? Je ne l'ai point enlevee ; et elle est encore chez vous.
+
+
+- Harpagon -
+
+        (a part.)
+
+O ma chere cassette ! 
+
+        (Haut.) 
+
+Elle n'est point sortie de ma maison ?
+
+
+- Valere -
+
+Non, Monsieur.
+
+
+- Harpagon -
+
+He ! dis-moi donc un peu : tu n'y as point touche ?
+
+
+- Valere -
+
+Moi, y toucher ! Ah ! vous lui faites tort, aussi bien qu'a moi ; et
+c'est d'une ardeur toute pure et respectueuse que j'ai brule pour
+elle.
+
+
+- Harpagon -
+
+        (a part.)
+
+Brule pour ma cassette !
+
+
+- Valere -
+
+J'aimerais mieux mourir que de lui avoir fait paraitre aucune pensee
+offensante : elle est trop sage et trop honnete pour cela.
+
+
+- Harpagon -
+
+        (a part.)
+
+Ma cassette trop honnete !
+
+
+- Valere -
+
+Tous mes desirs se sont bornes a jouir de sa vue ; et rien de criminel
+n'a profane la passion que ses beaux yeux m'ont inspiree.
+
+
+- Harpagon -
+
+        (a part.)
+
+Les beaux yeux de ma cassette ! Il parle d'elle comme un amant d'une
+maitresse.
+
+
+- Valere -
+
+Dame Claude, Monsieur, sait la verite de cette aventure ; et elle vous
+peut rendre temoignage...
+
+
+- Harpagon -
+
+Quoi ! ma servante est complice de l'affaire ?
+
+
+- Valere -
+
+Oui, Monsieur : elle a ete temoin de notre engagement ; et c'est apres
+avoir connu l'honnetete de ma flamme, qu'elle m'a aide a persuader
+votre fille de me donner sa foi, et recevoir la mienne.
+
+
+- Harpagon -
+
+        (a part.)
+
+He ! Est-ce que la peur de la justice le fait extravaguer ?
+
+        (A Valere.) 
+
+Que nous brouilles-tu ici de ma fille ?
+
+
+- Valere -
+
+Je dis, Monsieur, que j'ai eu toutes les peines du monde a faire
+consentir sa pudeur a ce que voulait mon amour.
+
+
+- Harpagon -
+
+La pudeur de qui ?
+
+
+- Valere -
+
+De votre fille ; et c'est seulement depuis hier qu'elle a pu se
+resoudre a nous signer mutuellement une promesse de mariage.
+
+
+- Harpagon -
+
+Ma fille t'a signe une promesse de mariage ?
+
+
+- Valere -
+
+Oui, Monsieur, comme de ma part, je lui en ai signe une.
+
+
+- Harpagon -
+
+O ciel ! autre disgrace !
+
+
+- Maitre Jacques -
+
+        (au commissaire.)
+
+Ecrivez, Monsieur, ecrivez.
+
+
+- Harpagon -
+
+Rengregement de mal ! surcroit de desespoir ! 
+
+        (au commissaire.)
+
+Allons, Monsieur, faites le du de votre charge, et dressez-lui-moi son
+proces comme larron et comme suborneur.
+
+
+- Valere -
+
+Ce sont des noms qui ne me sont point dus ; et quand on saura
+qui je suis...
+
+
+-----------
+
+Scene IV. -  Harpagon, Elise, Mariane, Valere, Frosine, Maitre Jacques,
+             un commissaire.
+
+
+
+- Harpagon -
+
+Ah ! fille scelerate ! fille indigne d'un pere comme moi ! c'est ainsi
+que tu pratiques les lecons que je t'ai donnees ? Tu te laisses
+prendre d'amour pour un voleur infame, et tu lui engages ta foi sans
+mon consentement ! Mais vous serez trompes l'un et l'autre. 
+
+        (A Elise.)
+
+Quatre bonnes murailles me repondront de ta conduite ; 
+
+        (a Valere) 
+
+et une bonne potence, pendard effronte, me fera raison de ton audace.
+
+
+- Valere -
+
+Ce ne sera point votre passion qui jugera l'affaire ; et l'on
+m'ecoutera, au moins, avant que de me condamner.
+
+
+- Harpagon -
+
+Je me suis abuse de dire une potence ; et tu seras roue tout vif.
+
+
+- Elise -
+
+        (aux genoux d'Harpagon.)
+
+Ah ! mon pere, prenez des sentiments un peu plus humains, je vous
+prie, et n'allez point pousser les choses dans les dernieres violences
+du pouvoir paternel. Ne vous laissez point entrainer aux premiers
+mouvements de votre passion, et donnez-vous le temps de considerer ce
+que vous voulez faire. Prenez la peine de mieux voir celui dont vous
+vous offensez (17) ; il est tout autre que vos yeux ne le jugent, et vous
+trouverez moins etrange que je me sois donnee a lui, lorsque vous
+saurez que, sans lui, vous ne m'auriez plus il y a longtemps. Oui, mon
+pere, c'est celui qui me sauva de ce grand peril que vous savez que je
+courus dans l'eau, et a qui vous devez la vie de cette meme fille
+dont...
+
+
+- Harpagon -
+
+Tout cela n'est rien ; et il valait bien mieux pour moi qu'il te
+laissat noyer que de faire ce qu'il a fait.
+
+
+- Elise -
+
+Mon pere, je vous conjure par l'amour paternel, de me...
+
+
+- Harpagon -
+
+Non, non ; je ne veux rien entendre, et il faut que la justice fasse
+son devoir.
+
+
+- Maitre Jacques -
+
+        (a part.)
+
+Tu me payeras mes coups de baton !
+
+
+- Frosine -
+
+        (a part.)
+
+Voici un etrange embarras !
+
+
+-----------
+
+Scene V. -  Anselme, Harpagon, Elise, Mariane, Frosine, Valere,
+            un commissaire, Maitre Jacques.
+
+
+
+- Anselme -
+
+Qu'est-ce, seigneur Harpagon ? je vous vois tout emu.
+
+
+- Harpagon -
+
+Ah ! seigneur Anselme, vous me voyez le plus infortune de tous les
+hommes ; et voici bien du trouble et du desordre au contrat que vous
+venez faire ! On m'assassine dans le bien, on m'assassine dans
+l'honneur ; et voila un traitre, un scelerat qui a viole tous les
+droits les plus saints, qui s'est coule chez moi sous le titre de
+domestique, pour me derober mon argent et pour me suborner ma fille.
+
+
+- Valere -
+
+Qui songe a votre argent, dont vous me faites un galimatias ?
+
+
+- Harpagon -
+
+Oui, ils se sont donne l'un a l'autre une promesse de mariage. Cet
+affront vous regarde, seigneur Anselme ; et c'est vous qui devez vous
+rendre partie contre lui, et faire toutes les poursuites de la justice
+a vos depends, pour vous venger de son insolence.
+
+
+- Anselme -
+
+Ce n'est pas mon dessein de me faire epouser par force, et de rien
+pretendre a un coeur qui se serait donne ; mais, pour vos interets, je
+suis pret a les embrasser ainsi que les miens propres.
+
+
+- Harpagon -
+
+Voila monsieur qui est un honnete commissaire, qui n'oubliera rien,
+a ce qu'il m'a dit, de la fonction de son office. 
+
+        (Au commissaire, montrant Valere.)
+
+Chargez-le comme il faut, Monsieur, et rendez les choses bien
+criminelles.
+
+
+- Valere -
+
+Je ne vois pas quel crime on me peut faire de la passion que j'ai pour
+votre fille, et le supplice ou vous croyez que je puisse etre condamne
+pour notre engagement, lorsqu'on saura ce que je suis...
+
+
+- Harpagon -
+
+Je me moque de tous ces contes ; et le monde aujourd'hui n'est plein
+que de ces larrons de noblesse, que de ces imposteurs qui tirent
+avantage de leur obscurite et s'habillent insolemment du premier nom
+illustre qu'ils s'avisent de prendre.
+
+
+- Valere -
+
+Sachez que j'ai le coeur trop bon pour me parer de quelque chose qui
+ne soit point a moi, et que tout Naples peut rendre temoignage de ma
+naissance.
+
+
+- Anselme -
+
+Tout beau ! Prenez garde a ce que vous allez dire. Vous risquez ici
+plus que vous ne pensez, et vous parlez devant un homme a qui tout
+Naples est connu et qui peut aisement voir clair dans l'histoire que
+vous ferez.
+
+
+- Valere -
+
+         (mettant fierement son chapeau.)
+
+Je ne suis point homme a rien craindre, et si Naples vous est connu,
+vous savez qui etait don Thomas d'Alburci.
+
+
+- Anselme -
+
+Sans doute, je le sais ; et peu de gens l'ont connu mieux que moi.
+
+
+- Harpagon -
+
+Je ne me soucie ni de dom Thomas ni dom Martin.
+
+        (Harpagon voyant deux chandelles allumees en souffle une.)
+
+- Anselme -
+
+De grace, laissez-le parler ; nous verrons ce qu'il en veut dire.
+
+
+- Valere -
+
+Je veux dire que c'est lui qui m'a donne jour.
+
+
+- Anselme -
+
+Lui ?
+
+
+- Valere -
+
+Oui.
+
+
+- Anselme -
+
+Allez. Vous vous moquez. Cherchez quelque autre histoire qui vous
+puisse mieux reussir, et ne pretendez pas vous sauver sous cette
+imposture.
+
+
+- Valere -
+
+Songez a mieux parler. Ce n'est point une imposture, et je n'avance
+rien qu'il ne me soit aise de justifier.
+
+
+- Anselme -
+
+Quoi ! vous osez vous dire fils de don Thomas d'Alburci ?
+
+
+- Valere -
+
+Oui, je l'ose ; et je suis pret de soutenir cette verite contre qui que
+ce soit.
+
+
+- Anselme -
+
+L'audace est merveilleuse ! Apprenez, pour vous confondre, qu'il y a
+seize ans, pour le moins, que l'homme dont vous nous parlez perit sur
+mer avec ses enfants et sa femme, en voulant derober leur vie aux
+cruelles persecutions qui ont accompagne les desordres de Naples, et
+qui en firent exiler plusieurs nobles familles.
+
+
+- Valere -
+
+Oui ; mais apprenez, pour vous confondre, vous, que son fils, age de
+sept ans, avec un domestique, fut sauve de ce naufrage par un vaisseau
+espagnol ; et que ce fils sauve est celui qui vous parle.  Apprenez que
+le capitaine de ce vaisseau, touche de ma fortune, prit amitie pour
+moi ; qu'il me fit elever comme son propre fils, et que les armes
+furent mon emploi des que je m'en trouvai capable ; que j'ai su depuis
+peu que mon pere n'etait point mort, comme je l'avais toujours cru ;
+que, passant ici pour l'aller chercher, une aventure, par le ciel
+concertee, me fit voir la charmante Elise ; que cette vue me rendit
+esclave de ses beautes, et que la violence de mon amour et les
+severites de son pere me firent prendre la resolution de m'introduire
+dans son logis, et d'envoyer un autre a la quete de mes parents.
+
+
+- Anselme -
+
+Mais quels temoignages encore, autres que vos paroles, nous peuvent
+assurer que ce ne soit point une fable que vous ayez batie sur une
+verite ?
+
+
+- Valere -
+
+Le capitaine espagnol, un cachet de rubis qui etait a mon pere ; un
+bracelet d'agate que ma mere m'avait mis au bras ; le vieux Pedro, ce
+domestique qui se sauva avec moi du naufrage.
+
+
+- Mariane -
+
+Helas ! a vos paroles, je puis ici repondre, moi, que vous n'imposez
+point ; et tout ce que vous dites me fait connaitre clairement que
+vous etes mon frere.
+
+
+- Valere -
+
+Vous, ma soeur ?
+
+
+- Mariane -
+
+Oui, mon coeur s'est emu des le moment que vous avez ouvert la bouche ;
+et notre mere, que vous allez ravir, m'a mille fois entretenue des
+disgraces de notre famille. Le ciel ne nous fit point aussi perir dans
+ce triste naufrage ; mais il ne nous sauva la vie que par la perte de
+notre liberte, et ce furent des corsaires qui nous recueillirent, ma
+mere et moi, sur un debris de notre vaisseau. Apres dix ans
+d'esclavage, une heureuse fortune nous rendit notre liberte ; et nous
+retournames dans Naples, ou nous trouvames tout notre bien vendu, sans
+y pouvoir trouver des nouvelles de notre pere. Nous passames a Genes,
+ou ma mere alla ramasser quelques malheureux restes d'une succession
+qu'on avait dechiree ; et de la, fuyant la barbare injustice de ses
+parents, elle vint en ces lieux, ou elle n'a presque vecu que d'une
+vie languissante.
+
+
+- Anselme -
+
+O ciel ! quels sont les traits de ta puissance ! et que tu fais bien
+voir qu'il n'appartient qu'a toi de faire des miracles !
+Embrassez-moi, mes enfants, et melez tous deux vos transports a ceux
+de votre pere.
+
+
+- Valere -
+
+Vous etes notre pere ?
+
+
+- Mariane -
+
+C'est vous que ma mere a tant pleure ?
+
+
+- Anselme -
+
+Oui, ma fille ; oui, mon fils ; je suis dom Thomas d'Alburci que le
+ciel garantit des ondes avec tout l'argent qu'il portait, et qui, vous
+ayant tous crus morts durant plus de seize ans, se preparait, apres de
+longs voyages, a chercher, dans l'hymen d'une douce et sage personne, la
+consolation de quelque nouvelle famille. Le peu de surete que j'ai vu
+pour ma vie a retourner a Naples m'a fait y renoncer pour toujours ;
+et ayant su trouver moyen d'y faire vendre ce que j'avais, je me suis
+habitue ici, ou, sous le nom d'Anselme, j'ai voulu m'eloigner les
+chagrins de cet autre nom qui m'a cause tant de traverses.
+
+
+- Harpagon -
+
+         (a Anselme.)
+
+C'est la votre fils ?
+
+
+- Anselme -
+
+Oui.
+
+
+- Harpagon -
+
+Je vous prends a partie pour me payer dix mille ecus qu'il m'a voles.
+
+
+- Anselme -
+
+Lui, vous avoir vole ?
+
+
+- Harpagon -
+
+Lui-meme.
+
+
+- Valere -
+
+Qui vous dit cela ?
+
+
+- Harpagon -
+
+Maitre Jacques.
+
+
+- Valere -
+
+        (a maitre Jacques.)
+
+C'est toi qui le dis ?
+
+
+- Maitre Jacques -
+
+Vous voyez que je ne dis rien.
+
+
+- Harpagon -
+
+Oui. Voila monsieur le commissaire qui a recu sa deposition.
+
+
+- Valere -
+
+Pouvez-vous me croire capable d'une action si lache ?
+
+
+- Harpagon -
+
+Capable ou non capable, je veux ravoir mon argent.
+
+
+-----------
+
+Scene VI. -  Harpagon, Anselme, Elise, Mariane, Cleante, Valere, 
+             Frosine, un commissaire, Maitre Jacques, La Fleche.
+
+
+
+- Cleante -
+
+Ne vous tourmentez point, mon pere, et n'accusez personne. J'ai
+decouvert des nouvelles de votre affaire, et je viens ici pour vous
+dire que, si vous voulez vous resoudre a me laisser epouser Mariane,
+votre argent vous sera rendu.
+
+
+- Harpagon -
+
+Ou est-il ?
+
+
+- Cleante -
+
+Ne vous mettez point en peine. Il est en lieu dont je reponds, et tout
+ne depend que de moi. C'est a vous de me dire a quoi vous vous
+determinez ; et vous pouvez choisir, ou de me donner Mariane, ou de
+perdre votre cassette.
+
+
+- Harpagon -
+
+N'en a-t-on rien ote ?
+
+
+- Cleante -
+
+Rien du tout. Voyez si c'est votre dessein de souscrire a ce mariage,
+et de joindre votre consentement a celui de sa mere, qui lui laisse la
+liberte de faire un choix entre nous deux.
+
+
+- Mariane -
+
+         (a Cleante.)
+
+Mais vous ne savez pas que ce n'est pas assez que ce consentement et
+que le ciel, 
+
+         (montrant Valere.)
+
+avec un frere que vous voyez, vient de me rendre un pere
+
+         (montrant Anselme.)
+
+dont vous avez a m'obtenir.
+
+
+- Anselme -
+
+Le ciel, mes enfants, ne me redonne point a vous pour etre contraire a
+vos voeux. Seigneur Harpagon, vous jugez bien que le choix d'une jeune
+personne tombera sur le fils plutot que sur le pere : allons, ne vous
+faites point dire ce qu'il n'est pas necessaire d'entendre ; et consentez, 
+ainsi que moi, a ce double hymenee.
+
+
+- Harpagon -
+
+Il faut, pour me donner conseil, que je voie ma cassette.
+
+
+- Cleante -
+
+Vous la verrez saine et entiere.
+
+
+- Harpagon -
+
+Je n'ai point d'argent a donner en mariage a mes enfants.
+
+
+- Anselme -
+
+Eh bien ! j'en ai pour eux ; que cela ne vous inquiete point.
+
+
+- Harpagon -
+
+Vous obligerez-vous a faire tous les frais de ces deux mariages ?
+
+
+- Anselme -
+
+Oui, je m'y oblige. Etes-vous satisfait ?
+
+
+- Harpagon -
+
+Oui, pourvu que pour les noces, vous me fassiez faire un habit.
+
+
+- Anselme -
+
+D'accord. Allons jouir de l'allegresse que cet heureux jour nous
+presente.
+
+
+- Le commissaire -
+
+Hola ! messieurs, hola ! Tout doucement, s'il vous plait. Qui me
+payera mes ecritures ?
+
+
+- Harpagon -
+
+Nous n'avons que faire de vos ecritures.
+
+
+- Le commissaire -
+
+Oui ! Mais je ne pretends pas, moi, les avoir faites pour rien.
+
+
+- Harpagon -
+
+        (montrant maitre Jacques.)
+
+Pour votre payement, voila un homme que je vous donne a pendre.
+
+
+- Maitre Jacques -
+
+Helas ! comment faut-il donc faire ? On me donne des coups de baton
+pour dire vrai, et on me veut pendre pour mentir !
+
+
+- Anselme -
+
+Seigneur Harpagon, il faut lui pardonner cette imposture.
+
+
+- Harpagon -
+
+Vous payerez donc le commissaire ?
+
+
+- Anselme -
+
+Soit. Allons vite faire part de notre joie a votre mere.
+
+
+- Harpagon -
+
+Et moi, voir ma chere cassette.
+
+
+-------------------------------------------------------------------------
+
+Notes [from 1890 edition]
+
+-----------
+(1) C'est-a-dire, elles ne sont pas fort "accommodees des biens
+de la fortune". Cette expression est encore d'usage aujourd'hui, et
+l'Academie cite cet exemple : Je l'ai vu pauvre, "mais il s'est bien
+accommode."
+----------- 
+(2) On trouve pour la premiere fois le mot "moucher" pour "epier",
+dans la legende de Faifeu, imprimee en 1532. Le mot "mouchard" n'est
+donc pas ancien dans notre langue. 
+----------- 
+(3) On dit proverbialement "parler a la barette de quelqu'un", pour
+lui parler sans menagement, porter la main sur lui, le frapper a la
+tete.
+-----------
+(4) Un denier d'interet pour douze pretes, c'est-a-dire un peu plus
+de huit pour cent.
+-----------
+(5) "Fluet". On disait autrefois "flouet" et "flou", dont "flouet"
+est le diminutif.
+-----------
+(6) Ce tour de phrase est latin. Boileau a dit dans la "Satire sur
+les Femmes" :
+
+         Je ne puis cette fois que je ne les excuse.
+
+Ni Boileau ni Moliere n'ont pu faire adopter ce latinisme.
+-----------
+(7) Avant sa conversion, saint Mathieu etait receveur des tributs, et
+la malignite lui attribuait des prets usuraires. De la l'ancienne
+expression proverbiale, "fester saint Matthieu", pour preter a usure,
+et, par corruption, "fesse-Matthieu".
+-----------
+(8) C'est-a-dire un denier d'interet pour dix-huit pretes, ce qui
+equivaut a un peu plus de cinq et demi pour cent.
+-----------
+(9) A vingt pour cent.
+-----------
+(10) A vingt-cinq pour cent.
+-----------
+(11) Les soldats portaient autrefois un baton termine d'un bout par
+une pointe qu'ils enfoncaient en terre, et de l'autre, par un fer
+fourchu sur lequel ils appuyaient leur mousquet, pour tirer plus
+juste. C'est ce qu'on appelait "la fourchette d'un mousquet".
+-----------
+(12) Expression proverbiale : "L'epee de chevet", l'epee qui ne nous
+quitte jamais. Au figure, "l'expression qu'on a sans cesse a la bouche".
+-----------
+(13) C'etait une formule ancienne de sante et d'economie qu'on trouve
+quelquefois chez les Latins, enoncee par les seules lettres initiales
+de chaque mot E.V.V.N.V.V.E. : "ede ut vivas, ne vivas ut edas.",
+"Mange pour vivre, et ne vis pas pour manger."
+-----------
+(14) Expression proverbiale : "Il n'y a pas meme pour un double", 
+c'est-a-dire "il n'y en a point". Le double etait une petite piece
+de monnaie qui valait deux deniers.
+-----------
+(15) Suivant Menage, cette expression a ete imaginee pour eviter de 
+se servir du mot "diable". Moliere n'est pas le seul qui ait employe
+ce mot dans ce sens : longtemps avant lui, Rabelais avait dit : 
+"Creature du grand vilain diantre d'enfer" (liv. III, ch. III).
+-----------
+(16) Du temps de Moliere, le mot "scandaliser" se prenait quelquefois
+dans le sens de "decrier", "diffamer". (Voyez le dictionnaire de
+l'Academie, edition de 1694).
+-----------
+(17) "Offenser" est la traduction litteraire d'"offendere", mot dont
+le sens est beaucoup moins restreint en latin qu'en francais. Il 
+signifie ici, "celui dont vous avez a vous plaindre". L'exemple de
+Moliere n'a pu le faire adopter avec cette acception.
+-----------
+
+
+
+
+
+
+*** END OF THE PROJECT GUTENBERG EBOOK, L'AVARE ***
+
+This file should be named 7avar10.txt or 7avar10.zip
+Corrected EDITIONS of our eBooks get a new NUMBER, 7avar11.txt
+VERSIONS based on separate sources get new LETTER, 7avar10a.txt
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext04 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext04
+
+Or /etext03, 02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+

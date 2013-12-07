@@ -1,0 +1,3710 @@
+The Project Gutenberg EBook of Candida, by George Bernard Shaw
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: Candida
+
+Author: George Bernard Shaw
+
+Release Date: December, 2005  [EBook #9491]
+[This file was first posted on October 5, 2003]
+
+Edition: 10
+
+Language: German
+
+Character set encoding: US-ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK, CANDIDA ***
+
+
+
+
+E-text prepared by Michalina Makowska
+
+
+
+
+
+
+
+This Etext is in German.
+
+We are releasing two versions of this Etext, one in 7-bit format,
+known as Plain Vanilla ASCII, which can be sent via plain email--
+and one in 8-bit format, which includes higher order characters--
+which requires a binary transfer, or sent as email attachment and
+may require more specialized programs to display the accents.
+This is the 7-bit version.
+
+
+
+
+
+CANDIDA
+
+Ein Mysterium in drei Akten
+
+George Bernard Shaw
+
+Uebersetzt von Siegfried Trabitsch
+
+
+
+
+
+
+
+PERSONEN
+
+Pastor Jakob Morell
+Candida, seine Frau
+Burgess, ihr Vater
+Alexander Mill, Unterpfarrer
+Proserpina Garnett, Maschinenschreiberin
+Eugen Marchbanks, ein junger Dichter
+
+Ort der Handlung: Die St. Dominikpfarre, Viktoriapark, London E.
+
+Zeit: Oktober 1894.
+
+
+
+
+ERSTER AKT
+
+(Ein schoener Oktobermorgen im nordoestlichen Viertel Londons.  In
+diesem ausgedehnten Bezirk sind die Seitengaesschen viel weniger schmal,
+schmutzig, uebelriechend und stickig als in dem viele Meilen
+entfernten London von Mayfair und St. James.  Hier spielt sich
+besonders das unelegante Leben der Mittelklassen ab.  Die breiten,
+dichtbevoelkerten Strassen sind mit haesslichen eisernen
+Beduerfnisanstalten, radikalen Klubs und Trambahnlinien, auf denen
+Ketten von gelben Wagen endlos einziehen, reichlich versehn.  Doch
+sind die Hauptverkehrsadern mit grasbewachsenen Vorgaertchen verziert,
+von denen man nur den kleinen Streifen betritt, der vom Pfoertchen zur
+Haustuer fuehrt.  Jene Strassen werden durch die stumm geduldete
+Eintoenigkeit sich meilenweit erstreckender haesslicher Ziegelbauten,
+schwarzer Eisengitter, Steinpflaster und Schieferdaecher arg entstellt.
+Anstaendig aber unmodern oder gemein und aermlicb gekleidete Leute, die
+an dieses Viertel gewoehnt sind und sich zumeist in aufreibender Weise
+fuer andere plagen muessen, ohne sich fuer ihre Arbeit zu interessieren,
+bilden ihre Bewohner.  Das bisschen ihnen gebliebene Energie und Eifer
+gipfelt in der Habgier des Londoner Cockneys und in der Begierde, ihr
+Geschaeft vorwaerts zu bringen.  Selbst die Schutzleute und die Kapellen
+sind nicht selten genug, die Eintoenigkeit zu unterbrechen.  Die Sonne
+scheint klar, es ist nicht neblig, und obgleich der Rauch sowohl die
+Gesichter und Haende als auch die Mauern aus Ziegelstein und Moertel
+verhindert, frisch und rein zu sein, so ist er doch nicht schwarz und
+schwer genug, um einen Londoner zu belaestigen.)
+
+(Diese reizlose Wueste hat ihre Oase.  Am aeussersten Ende der
+Hackneystrasse ist ein durch ein hoelzernes Pfahlwerk abgeschlossener
+Park von 270 Morgen angelegt.  Er enthaelt Rasenplaetze, Baeume, einen
+Teich zum Baden, Blumenbeete, die Triumphe der vielbewunderten
+Cockney-Kunst der Teppichgaertnerei sind, und eine Sandgrube, die
+urspruenglich zur Belustigung der Kinder vom Meeresufer importiert,
+aber schleunigst verlassen wurde, als sie sich in eine natuerliche
+Ungezieferbrutstaette fuer die ganz kleine Fauna von Kingsland, Hackney
+und Hoxton verwandelte.  Ein Orchester, ein kleines Forum fuer
+religioese, antireligioese und politische Redner, Cricketplaetze,
+ein Turnplatz und ein altmodischer Steinkiosk bilden die
+Hauptanziehungspunkte.  Wo die Aussicht von Baeumen oder gruenen Anhoehen
+begrenzt wird, ist es ein huebscher Aufenthaltsort.  Wo sich aber der
+Boden flach bis zu dem grauen Lattenzaun hinzieht und man Ziegel und
+Moertel, Reklameschilder, zusammengedraengte Schornsteine und Rauch
+gewahrt muss die Gegend (im Jahre 1894), trostlos und haesslich genannt
+werden.)
+
+(Die beste Aussicht auf den Viktoriapark gewinnt man von den
+Frontfenstern der St. Dominikpfarre; von dort sieht man auf keinerlei
+Mauerwerk.  Das Pfarrhaus steht halb frei, mit einem Vorgarten und
+einer Vorhalle.  Besucher benuetzen die Stufen, die auf die Veranda
+fuehren, Geschaeftsleute und Familienmitglieder geben durch eine Tuer
+unterhalb der Treppe in das Erdgeschoss, wo ein Fruehstueckszimmer nach
+vorne liegt, das zu allen Mahlzeiten dient; die Kueche liegt hinten.
+Oben, auf einem Niveau mit der Flurtuer, befindet sich das
+Empfangszimmer mit seinem breiten Fenster aus geschliffenem Glas, das
+auf den Park hinausfuehrt.)
+
+(Hier, in dem einzigen Raume, der von den Familienmahlzeiten und den
+Kindern verschont bleibt, vollbringt der Pfarrer, Reverend Jakob Mavor
+Morell, sein Tagewerk.  Er sitzt in einem starken drehbaren Stuhl mit
+runder Lehne am Ende eines langen Tisches, der dem Fenster
+gegenuebersteht, so dass er sich durch einen Blick ueber die linke
+Schulter an der Aussicht auf den Park erfreuen kann.  Am Ende des
+Tisches, an diesen anstossend, befindet sich ein zweiter Tisch, der nur
+halb so breit ist und eine Schreibmaschine traegt.--Seine Schreiberin
+sitzt davor mit dem Ruecken gegen das Fenster.  Der grosse Tisch ist
+unordentlich mit Zeitungen, Broschueren, Briefen, Schubladeeinsaetzen,
+einem Notizheft, einer Briefwage und aehnlichen Dingen bedeckt.  In der
+Mitte steht ein uebriger Stuhl fuer die Besucher, die mit dem Pfarrer
+geschaeftlich zu tun haben.  Seiner Hand erreichbar steht eine
+Papierkassette und eine Photographie in einem Rahmen.  Die Wand hinter
+ihm ist mit Buecherregalen zugestellt.  Die theologische Richtung des
+Pfarrers kann ein Sachverstaendiger an: Maurices "Theologischen Essays"
+und einer vollstaendigen Ausgabe der Browningschen Gedichte erkennen,
+seine politischen Reformideen an einem gelbrueckigen Band "Fortschritt
+und Armut", den "Essays der Fabier", dem "Traum John Bulls" von
+William Morris, dem "Kapital" von Marx und einem halben Dutzend
+anderer grundlegender sozialistischer Buecher.  Dem Pfarrer gegenueber,
+auf der andern Seite des Zimmers in der Naehe der Schreibmaschine, ist
+die Tuer.  Weiter hinten, dem Kamin gegenueber, steht ein Buecherbrett
+auf einem Spind, daneben ein Sofa.  Ein starkes Feuer brennt im Kamin
+und davor steht ein bequemer Lehnstuhl, ferner ein schwarz lackierter,
+blumenbemalter Kohleneimer auf der einen Seite und ein Kindersessel
+fuer einen Knaben oder ein Maedchen auf der anderen.  Der hoelzerne
+Kaminsims ist lackiert, und in den kleinen Feldern der nett geformten
+Faecher sind winzige Spiegelglaeser eingelegt, und eine Reiseuhr in
+einem Lederetui (das unvermeidliche Hochzeitsgeschenk) steht darauf.
+An der Wand darueber haengt eine grosse Autotypie der Hauptfigur aus
+Tizians Assunta.  So sieht der Kamin sehr einladend aus.  Im ganzen
+gesehen ist es das Zimmer einer guten Hausfrau, die, was des Pastors
+Arbeitstisch betrifft, an etwas Unordnung gewoehnt ist, aber trotzdem
+die Situation vollkommen beherrscht.  Die Einrichtung verraet in ihrem
+ornamentalen Aussehen den Stil der in den Zeitungen annoncierten
+"Saloneinrichtung" des unternehmenden Vorstadtmoebelhaendlers; aber es
+ist nichts Zweckloses oder Aufdringliches in dem Zimmer.  Die Tapeten
+und die Taefelung sind dunkel und lassen das grosse helle Fenster und
+den Park draussen kraeftig hervortreten.)
+
+(Hochwuerden Jakob Mavor Morell ist ein christlich-sozialer Geistlicher
+der anglikanischen Kirche und ein aktives Mitglied der Gilde von
+"Sankt Matthaeus" und der "Christlich Socialen Union".  Ein starker,
+freundlicher, allgemein geachteter Mann von vierzig fahren, kraeftig
+und huebsch, voll Energie und mit liebenswuerdigen, herzlichen,
+ruecksichtsvollen Manieren, mit einer gesunden, natuerlichen Stimme, die
+er mit der wirkungsvollen Betonung eines geuebten Redners benutzt.  Er
+verfuegt ueber einen grossen Wortschatz, den er vollkommen beherrscht.
+Er ist ein vorzueglicher Geistlicher, faehig, was er will zu wem er will
+zu sagen und die Leute abzukanzeln, ohne sich ueber sie zu aergern,
+ihnen seine Autoritaet aufzudraengen, ohne sie zu demuetigen und, wenn es
+sein muss, sich in ihre Angelegenheiten zu mischen, ohne dabei zu
+verletzen.  Die Quelle seiner Begeisterung und seines Mitgefuehls
+versiegt niemals auch nur fuer einen Augenblick; er isst und schlaeft
+noch immer ausgiebig genug, um die taegliche Schlacht zwischen
+Erschoepfung und Erholung glaenzend zu gewinnen.  Dabei ist er ein
+grosses Kind, verzeihlicherweise eitel auf seine Faehigkeiten und
+unbewust selbstgefaellig.  Er hat eine gesunde Gesichtsfarbe, eine
+schoene Stirn mit etwas plumpen Augenbrauen, glaenzende und lebhafte
+Augen, einen energischen Mund, der nicht besonders schoen geschnitten
+ist, und eine kraeftige Nase mit den beweglichen, sich blaehenden
+Nasenfluegeln des dramatischen Redners, die aber wie alle seine Zuege
+der Feinheit entbehrt.)
+
+(Die Maschinenschreiberin, Fraeulein Proserpina Garnett, ist eine flinke
+kleine Person von ungefaehr dreissig Jahren, sie gehoert der unteren
+Mittelklasse an, ist nett, aber billig mit einem schwarzen Wollrock
+und einer Bluse bekleidet, ziemlich vorlaut und naseweis und nicht
+sehr hoeflich in ihrem Benehmen, aber empfindungsfaehig und
+teilnahmsvoll.  Sie klappert emsig auf ihrer Maschine drauf los,
+waehrend Morell den letzten Brief seiner Morgenpost oeffnet.  Er
+durchfliegt seinen Inhalt mit einem komischen Stoehnen der Verzweiflung.)
+
+(Proserpina.)  Wieder ein Vortrag?
+
+(Morell.)  Ja.  Ich soll naechsten Sonntagvormittag fuer die
+Freiheitsgruppe von Hoxton sprechen.  (Er betont mit grosser
+Wichtigkeit "Sonntag", weil das der unvernuenftige Teil des Verlangens
+ist.)  Was sind das fuer Leute?
+
+(Proserpina.)  Ich glaube, kommunistische Anarchisten.
+
+(Morell.)  Es sieht den Anarchisten aehnlich, nicht zu wissen, dass sie
+am Sonntag keinen Pastor haben koennen.  Schreiben Sie ihnen, sie
+sollen in die Kirche kommen, wenn sie mich hoeren wollen, das kann
+ihnen nicht schaden!  Und fuegen Sie hinzu, dass ich nur Montags und
+Donnerstags frei bin.  Haben Sie das Vormerkbuch da?
+
+(Proserpina hebt das Vormerkbuch auf:)  Ja!
+
+(Morell.)  Ist irgendeine Vorlesung fuer naechsten Montag angesetzt?
+
+(Proserpina im Vormerkbuch nachschlagend:)  Der radikale Klub von Tower
+Hamlet.
+
+(Morell) Nun, und Donnerstag?
+
+(Proserpina.)  Die englische Bodenreform-Liga.
+
+(Morell.)  Was dann?
+
+(Proserpina.)  In der Gilde von Sankt Matthaeus am Montag.  In der
+unabhaengigen Arbeitervereinigung, Abteilung Greenwich, am Donnerstag;
+am Montag darauf in der soziademokratischen Foederation, Abteilung Mile
+End; am folgenden Donnerstag ist die erste Konfirmationsklasse.
+(Ungeduldig:)  Ach, ich will lieber schreiben, dass Sie ueberhaupt nicht
+kommen koennen; es sind doch nur ein halbes Dutzend unwissende und
+eingebildete Hausierer, die miteinander keine fuenf Schilling haben.
+
+(Morell belustigt:)  Ah, aber bedenken Sie, es sind nahe Verwandte von
+mir, Fraeulein Garnett.
+
+(Proserpina ihn anstarrend:)  Verwandte von Ihnen?
+
+(Morell.)  Ja!  Wir haben denselben Vater--im Himmel.
+
+(Proserpina erleichtert:)  Oh, weiter nichts?
+
+(Morell mit einer Melancholie, die einem Manne Genuss ist, dessen
+Stimme sie schon so schoen auszudruecken vermag:)  Ah, Sie glauben das
+auch nicht,--jedermann sagt es, niemand glaubt es, niemand!  (Schnell
+zu seinem Gegenstande zurueckkehrend:)  Gut, gut!  Na, Fraeulein
+Proserpina, koennen Sie keinen Tag fuer die Hausierer finden, wie ist's
+mit dem fuenfundzwanzigsten,--der war noch vorgestern frei.
+
+(Proserpina aus dem Vormerkbuch:)  Auch vergeben--an die Fabier.
+
+(Morell.)  Hol' der Geier die Fabier!  Ist der achtundzwanzigste
+gleichfalls vergeben?
+
+(Proserpina.)  Bankett in der City.  Sie sind von den Huettenbesitzern
+zum Speisen eingeladen.
+
+(Morell.)  Das geht, ich werde eben statt dessen nach Hoxton gehen.
+(Sie traegt diese Verpflichtung schweigend ein, mit unerschuetterlicher
+Verachtung gegen diese Hoxtoner Anarchisten, die sich in jeder Linie
+ihres Gesichtes spiegelt.  Morell reisst das Streifband eines Exemplars
+des "Church Reformer" ab, das mit der Post angekommen ist, und
+ueberfliegt den Leitartikel Stewart Hedlams und die Mitteilungen der
+Gilde von Sankt Matthaeus.  Diese Vorgaenge werden alsbald durch das
+Erscheinen des Unterpfarrers Morells, Alexander Mill, unterbrochen.
+Er ist ein junger Mensch, den Morell von der naechsten Missionstelle
+der Universitaet bezogen hat, wohin er von Oxford gekommen war, um dem
+East-End von London die Wohltat seiner akademischen Bildung angedeihen
+zu lassen.  Er ist ein eingebildeter, gutgesinnter, unreifer Mann, von
+enthusiastischer Natur.  Nichts absolut Unausstehliches ist in seinem
+Wesen ausser der Gewohnheit, um eine gezierte Sprache zu erzielen, mit
+sorgsam geschlossenen Lippen zu reden und eine Menge Vokale schlecht
+auszusprechen, als ob dies das Hauptmittel waere, die Bildung Oxfords
+unter den Poebel Hackneys zu tragen.)
+
+(Morell, den er durch eine huendische Unterwuerfigkeit fuer sich gewann,
+blickt nachsichtig von seiner Lektuere im "Church Reformer" auf und
+bemerkt:)  Nun, Lexi, wieder verschlafen, wie gewoehnlich?
+
+(Mill.)  Leider ja.  Ich wollte, ich koennte des Morgens leichter
+aufstehen.
+
+(Morell freut sich der eigenen Energie:)  Ha, ha! (launig:)  "Wache und
+bete", Lexi, "wache und bete".
+
+(Mill.)  Ich weiss.  (Er benuetzt diese Gelegenheit sofort, um einen Witz
+zu machen.)  Aber wie kann ich wachen und beten, wenn ich schlafe;
+--hab' ich nicht recht, Fraeulein Prossi?
+
+(Proserpina scharf:)  Fraeulein Garnett, wenn ich bitten darf.
+
+(Mill.)  Entschuldigen Sie, Fraeulein Garnett.
+
+(Proserpina.)  Sie muessen heute alle Arbeit allein erledigen.  (Mill.)
+Warum?
+
+(Proserpina.)  Fragen Sie nicht, warum.  Es wird Ihnen wohl bekommen,
+Ihr Abendbrot einmal zu verdienen, bevor Sie es essen, wie ich es
+taeglich tue.  Los, troedeln Sie nicht.  Sie sollten schon seit einer
+halben Stunde unterwegs sein.
+
+(Mill starr:)  Spricht sie im Ernst, Herr Pastor?
+
+(Morell in bester Laune--seine Augen glaenzen:)  Ja.  Heute werd' ich
+einmal bummeln.
+
+(Mill.)  Sie?  Sie wissen ja nicht, wie man das macht.
+
+(Morell herzlich:)  Ha, ha!  Weissichdasnicht?  Diesen Tag will ich ganz
+fuer mich haben, oder doch wenigstens den Vormittag!  Meine Frau kommt
+naemlich zurueck, um elf Uhr fuenfundvierzig soll sie hier eintreffen.
+
+(Mill erstaunt:)  Schon zurueck--mit den Kindern?  Ich dachte, sie
+wollte bis Ende des Monats fortbleiben.
+
+(Morell.)  So ist es.  Sie kommt nur fuer zwei Tage her, um fuer Jimmy
+etwas Flanellwaesche einzukaufen und um zu sehen, wie wir hier ohne sie
+fertig werden.
+
+(Mill aengstlich:)  Aber lieber Herr Morell, wenn das, was Jimmy und
+Flussy gefehlt hat, wirklich Scharlach war, halten Sie es fuer klug?--
+
+(Morell.)  Unsinn, Scharlach!  Masern waren es, ich habe sie selbst von
+der Pycroftstrasse aus der Schule nach Hause gebracht; ein Pastor ist
+wie ein Arzt, mein Lieber, er muss der Ansteckung ins Auge sehen koennen
+wie ein Soldat den Kugeln.  (Er erbebt sich und schlaegt Mill auf die
+Schultern.)  Trachten Sie, Masern zu bekommen, wenn Sie koennen; Candida
+wird Sie dann pflegen, und was fuer ein Gluecksfall waere das fuer Sie,
+--was?
+
+(Mill unsicher laechelnd:)  Es ist schwer, Sie zu verstehen, wenn Sie
+ueber Frau Morell sprechen.--
+
+(Morell weich:)  Mein lieber Junge, seien Sie erst verheiratet!
+Verheiratet mit einer guten Frau, und dann werden Sie mich verstehen.
+Es ist ein Vorgeschmack von dem Besten, was uns in dem himmlischen
+Reich erwartet, das wir uns auf Erden zu gruenden versuchen.  Dann
+werden Sie sich schon das Bummeln abgewoehnen!  Ein braver Mann fuehlt,
+dass er dem Himmel fuer jede Stunde des Gluecks ein hartes Stueck
+selbstloser Arbeit zum Wohle seiner Mitmenschen schuldig ist.  Wir
+haben ebensowenig das Recht, Glueck zu verbrauchen, ohne es zu erzeugen,
+als Reichtum zu verbrauchen, ohne ihn zu erwerben.  Suchen Sie sich
+eine Frau wie meine Candida, und Sie werden immer Schuldner sein,
+wieviel Sie auch abzahlen.  (Er klopft Mill liebevoll auf den Ruecken
+und ist im Begriff, das Zimmer zu verlassen, als Mill ihn zurueckruft.)
+
+(Mill.)  Oh, warten Sie einen Augenblick, ich vergass...  (Morell bleibt
+stehen und wendet sich um, die Tuerklinke in der Hand.)  Ihr Herr
+Schwiegervater wird hierherkommen, er hat mit Ihnen zu sprechen.
+(Morell schliesst die Tuer wieder, mit vollkommen veraendertem Wesen.)
+
+(Morell ueberrascht und nicht erfreut:)  Burgess?
+
+(Mill.)  Ja!  Ich traf ihn mit jemandem im Park, in eifrigem Gespraech.
+Er sprach mich an und bat mich, Sie wissen zu lassen, dass er
+hierherkommt.
+
+(Moroll halb unglaeubig:)  Aber er ist seit Jahren nicht hier gewesen.
+Sind Sie sicher, Lexi?  Sie scherzen doch nicht etwa?--
+
+(Mill ernst:)  Nein, Herr Pastor, ganz bestimmt nicht!
+
+(Morell nachdenklich:)  Hm, hm, er haelt es an der Zeit, sich wieder
+einmal nach Candida umzusehen, ehe sie gaenzlich aus seinem Gedaechtnis
+verschwindet.  (Er fuegt sich in das Unvermeidliche und geht hinaus;
+Mill sieht ihm mit begeisterter, naerrischer Verehrung nach.  Fraeulein
+Garnett, die Mill nicht schuetteln kann, wie sie moechte, laesst ihre
+Gefuehle an der Schreibmaschine aus.)
+
+(Mill.)  Was fuer ein vortrefflicher Mann, welch ein tiefes liebevolles
+Gemuet!  (Er nimmt Morells Platz am Tisch ein und macht es sich bequem,
+indem er eine Zigarette hervorzieht.)
+
+
+(Proserpina ungeduldig, nimmt den Brief, den sie auf der Maschine
+geschrieben hat, und faltet ihn zusammen:)  Ach! ein Mann sollte seine
+Frau lieben koennen, ohne einen Narren aus sich zu machen.
+
+(Mill erregt:)  Aber Fraeulein Proserpina!
+
+(Proserpina geschaeftig aufstehend, holt ein Kuvert aus dem Pulte, in
+das sie, waehrend sie spricht, den Brief hineinlegt:)  Candida hin und
+Candida her und Candida ueberall.  (Sie leckt das Kuvert.)  Es kann
+einen ausser Rand und Band bringen!  (Haemmert das Kuvert, um es fest zu
+schliessen.)  Hoeren zu muessen, wie eine ganz gewoehnliche Frau in dieser
+laecherlichen Weise vergoettert wird, bloss weil sie schoenes Haar und
+eine leidliche Figur hat.
+
+(Mill mit vorwurfsvollem Ernst:)  Ich finde sie ungewoehnlich schoen,
+Fraeulein Garnett.  (Er nimmt die Photographie zur Hand betrachtet sie
+und fuegt mit noch tieferem Ausdruck hinzu:)  Wunderbar schoen,--was fuer
+herrliche Augen sie hat!
+
+(Proserpina.)  Candidas Augen sind durchaus nicht schoener als meine,
+(Mill stellt die Photograpbie fort und sieht sie strenge an,) und ich
+weiss ganz gut, dass Sie mich fuer ein gewoehnliches und untergeordnetes
+Geschoepf halten.
+
+(Mill erbebt sich majestaetisch:)  Gott behuete, dass ich von irgendeinem
+Geschoepf Gottes in dieser Weise daechte.  (Er geht steif von ihr fort
+bis in die Naehe des Buecherschranks.)
+
+(Proserpina mit bitterem Spott:)  Ich danke Ihnen, das ist sehr nett
+und troestlich.
+
+(Mill traurig ueber ihre Verstocktheit:)  Ich hatte keine Ahnung, dass
+Sie etwas gegen Frau Morell haben.
+
+(Proserpina entruestet:)  Ich habe durchaus nichts gegen sie.  Sie ist
+sehr liebenswuerdig und sehr gutherzig, ich habe sie sehr gern und weiss
+ihre wirklich guten Eigenschaften weit besser zu wuerdigen, als
+irgendein Mann es koennte.  (Mill schuettelt traurig den Kopf, wendet
+sich zum Buecherschrank und sucht die Reihen entlang nach einem Bande.
+Sie folgt ihm mit heftiger Leidenschaftlichkeit.)  Sie glauben mir
+nicht?  (Er wendet sich um und blickt ihr ins Gesicht.  Sie faellt ihn
+mit Heftigkeit an:)  Sie halten mich fuer eifersuechtig?  Was fuer eine
+tiefe Kenntnis des menschlichen Herzens Sie haben, Herr Alexander Mill!
+Wie gut Sie die Schwaechen der Frauen kennen, nicht wahr?  Wie schoen
+es sein muss, ein Mann zu sein und einen scharfen durchdringenden
+Verstand zu haben, statt blosse Gefuehle, wie wir Frauen, und zu wissen,
+dass die Ursache, warum wir ihr Vernarrtsein in eine Frau nicht teilen,
+nur in gegenseitiger Eifersucht zu suchen sein kann.  (Sie wendet sich
+mit einer Bewegung ihrer Schultern von ihm ab und geht an das Feuer,
+ihre Haende zu waermen.)
+
+(Mill.)  Ach, wenn Ihr Frauen nur ebenso leicht den Schluessel zur
+Staerke des Mannes faendet wie zu seiner Schwaeche, es gaebe keine
+Frauenfrage.
+
+(Proserpina ueber ihre Schulter, waehrend sie die Haende vor die Flammen
+haelt:)  Wo haben Sie das von Herrn Morell gehoert?  Sie selbst haben es
+nicht erfunden,--Sie sind dazu nicht gescheit genug.
+
+(Mill.)  Das ist ganz richtig.  Ich schaeme mich durchaus nicht, ihm
+diesen Ausspruch zu verdanken, wo ich ihm schon so viele andere
+geistige Wahrheiten verdanke!  Er tat ihn bei der Jahresversammlung
+der freien Frauenvereinigung.  Erlauben Sie mir hinzuzufuegen, dass ich,
+obwohl bloss ein Mann, im Gegensatz zu jenen Frauen diesen Ausspruch zu
+schaetzen wusste!  (Er wendet sich wieder an den Buecherschrank in der
+Hoffnung, dass diese Worte sie vernichtet haben.)
+
+(Proserpina ordnet ihr Haar vor den kleinen Spiegeln des Kamins:)  Wenn
+Sie mit mir sprechen, sagen Sie mir gefaelligst Ihre eigenen Gedanken,
+soviel sie eben wert sind, und nicht die Pastor Morells.  Sie geben
+niemals eine traurigere Figur ab, als wenn Sie versuchen, ihn
+nachzumachen.
+
+(Mill gekraenkt:)  Ich versuche seinem Beispiel zu folgen, aber nicht,
+ihn nachzumachen.
+
+(Proserpina kommt wieder an ihn heran auf dem Rueckwege zu ihrer Arbeit:)
+Jawohl, Sie machen ihn nach.  Warum stecken Sie Ihren Schirm unter
+den linken Arm, statt ihn in der Hand zu tragen wie jeder andere?
+Warum gehen Sie mit vorgeschobenem Kinn und warum eilen Sie vorwaerts
+mit diesem eifrigen Ausdruck in den Augen,--Sie, der Sie nie vor halb
+zehn Uhr morgens aufstehen?  Warum sagen Sie in der Kirche "Aandacht",
+obwohl Sie im Leben "Andacht" sagen?  Bah--glauben Sie, ich weiss das
+nicht?  (Geht zurueck zur Schreibmaschine.)  Da kommen Sie her und
+machen Sie sich endlich an Ihre Arbeit; wir haben heute Morgen genug
+Zeit verloren.  Hier ist eine Abschrift der Tageseinteilung fuer heute.
+(Sie reicht ihm ein Memorandum.  Mill schwer beleidigt:)  Ich danke
+Ihnen.  (Er nimmt das Papier und steht mit dem Ruecken gegen sie an den
+Tisch gelehnt und liest.)  Sie faengt an, auf der Schreibmaschine ihre
+stenographischen Aufzeichnungen zu uebertragen, ohne auf Mills Gefuehle
+zu achten.
+
+(Burgess tritt unangemeldet ein.)  Er ist ein Mann von sechzig Jahren,
+derb und filzig geworden durch die notwendige Selbstsucht des kleinen
+Kraemers, die sich spaeter durch Ueberfuetterung und geschaeftlichen Erfolg
+zu traeger Aufgeblasenheit milderte.  Ein gemeiner, unwissender,
+unmaessiger Mensch, beleidigend und hochnasig Leuten gegenueber, deren
+Arbeit wohlfeil ist, ehrfuerchtig gegen Menschen von Reichtum und Rang,
+aber beiden gegenueber ganz aufrichtig und ohne Groll oder Neid.  Da
+sie ihn ohne besondere Faehigkeiten sah, hat ihm die Welt keine andere
+gut bezahlte Arbeit zu bieten gewusst, als unnoble Arbeit, und er wurde
+infolgedessen etwas erbaermlich, hat aber keine Ahnung, dass er so
+beschaffen ist, und betrachtet seinen kommerziellen Wohlstand ganz
+ehrlich als den unvermeidlichen und sozial berechtigten Triumph der
+Geschicklichkeit, Tuechtigkeit, Faehigkeit und Erfahrung eines Mannes,
+der im Privatleben uebertrieben, leichtsinnig, liebenswuerdig und
+leutselig ist.  Koerperlich ist er kurz und dick, mit einer
+schnauzenaehnlichen Nase in der Mitte eines flachen, breiten Gesichtes;
+unter dem Kinn ein staubfarbener Bart mit einem grauen Fleck in der
+Mitte; er hat waesserige blaue Augen mit klagend sentimentalem Ausdruck,
+der sich durch die Gewohnheit, seine Saetze wichtigtuend zu singen,
+auch leicht auf seine Stimme uebertraegt.
+
+(Burgess bleibt an der Schwelle stehen und blickt umher:)  Man sagte
+mir, Herr Morell sei hier.
+
+(Proserpina sich erhebend:)  Er ist oben, ich will ihn holen.
+
+(Burgess sie frech anstarrend:)  Sie sind nicht dieselbe junge Dame,
+die sonst fuer ihn schrieb.
+
+(Proserpina.)  Nein.
+
+(Burgess beistimmend:)  Nein, die war juenger.  (Fraeulein Garnett starrt
+ihn an, dann gebt sie mit grosser Wuerde hinaus.  Er nimmt dies
+gleichgueltig entgegen und geht an den Kaminteppich, wo er sich
+umwendet und sich breitspurig aufpflanzt, den Ruecken dem Feuer
+zugekehrt.)
+
+(Burgess.)  Sind Sie im Begriff Ihren Rundgang zu machen, Herr Mill?
+
+(Mill faltet sein Papier und steckt es in die Tasche:)  Jawohl, ich muss
+gleich fort.
+
+(Burgess wichtig:)  Lassen Sie sich nicht aufhalten; was ich mit Herrn
+Morell zu besprechen habe, ist ganz privater Natur.
+
+(Mill aufgeblasen:)  Ich habe durchaus nicht die Absicht, mich
+einzumengen, verlassen Sie sich darauf, Herr Burgess.  Guten Morgen!
+
+(Burgess herablassend:)  Guten Morgen, guten Morgen!
+
+(Morell kommt zurueck, waehrend Mill sich zur Tuer wendet.)
+
+(Morell zu Mill:)  Sie gehen an die Arbeit?
+
+(Mill.)  Jawohl, Herr Pastor.
+
+(Morell klopft ihn liebenswuerdig auf die Schulter:)  Da, nehmen Sie
+mein Seidentuch um den Hals, es geht ein kalter Wind draussen.  Aber
+jetzt machen Sie, dass Sie fortkommen.  (Mill, mehr als getroestet ueber
+Burgess' Schroffheit, freut sich und geht hinaus.)
+
+(Burgess.)  Guten Morgen, Jakob.  Sie verwoehnen Ihren Unterpfarrer wie
+immer.  Wenn ich einen Mann bezahle und einer auf meine Kosten lebt,
+dann weise ich ihm gehoerig seinen Platz an.
+
+(Morell etwas kurz angebunden:)  Ich weise meinem Unterpfarrer immer
+seinen Platz an, naemlich an meiner Seite als meinem Helfer und
+Kameraden.  Wenn es Ihnen gelingt, so viel Arbeit aus Ihren Kommis und
+Angestellten herauszukriegen wie ich aus meinem Unterpfarrer, dann
+muessen Sie ziemlich rasch reich werden.  Bitte, setzen Sie sich in
+Ihren gewohnten Stuhl.  (Er weist mit trockener Autoritaet auf den
+Armstuhl neben dem Kamin, dann ergreift er einen freien Stuhl und
+setzt sich in zurueckhaltender Entfernung von seinem Besucher.)
+
+(Burgess ohne sich zu ruehren:)  Sie sind ganz der alte, Jakob.
+
+(Morell.)  Als Sie mich das letztemal besuchten--ich glaube, es war vor
+drei Jahren--da sagten Sie genau dasselbe.  Nur etwas aufrichtiger.
+Ihr woertlicher Ausspruch war damals: "Derselbe Narr wie immer, Jakob."
+
+(Burgess sich rechtfertigend:)  Vielleicht sagte ich das, aber (mit
+versoehnender Heiterkeit:)  ich meinte nichts Beleidigendes damit.  Ein
+Geistlicher hat das Privilegium, ein wenig naerrisch sein zu
+duerfen--wissen Sie, das liegt schon in seinem Beruf.  Einerlei, ich
+bin nicht hergekommen, um alte Meinungsverschiedenheiten aufzuwaermen,
+sondern um die Vergangenheit vergessen sein zu lassen.  (Er wird
+ploetzlich sehr feierlich und naehert sich Morell.)  Jakob, vor drei
+Jahren haben Sie mir uebel mitgespielt.  Sie haben mich um meine
+Lieferungen gebracht, und als ich Ihnen in meiner erklaerlichen
+Verzweiflung boese Worte gab, brachten Sie meine Tochter gegen mich auf.
+Nun, ich bin gekommen, um Ihnen zu zeigen, dass ich ein guter Christ
+bin.  (Ihm seine Hand darreichend:)  Ich verzeihe Ihnen, Jakob.
+
+(Morell auffahrend:)  Verdammt frech!
+
+(Burgess weicht zurueck mit fast schluchzendem Vorwurf ueber diese
+Behandlung:)  Ziemt diese Sprache einem Pastor, Jakob?  Und besonders
+Ihnen?
+
+(Morell bitzig:)  Nein, sie ziemt ihm nicht, ich habe das falsche Wort
+gebraucht,--ich haette sagen sollen: "Der Teufel soll Ihre Frechheit
+holen!" Das wuerde Ihnen der heilige Paulus und jeder andere brave
+Priester gesagt haben.  Glauben Sie, ich habe Ihr Anerbieten vergessen,
+als Sie fuer das Armenhaus vertragsmaessig Kleider liefern sollten?
+
+(Burgess in hoechster Erbitterung, weil ihm seine Forderung nur recht
+und billig erscheint:)  Ich habe im Interesse der Steuerzahler
+gehandelt, Jakob,--es war das niedrigste Angebot, das koennen Sie nicht
+leugnen.
+
+(Morell.)  Jawohl, das niedrigste, weil Sie schlechtere Loehne zahlten
+als irgendein anderer Unternehmer--Hungerloehne,--ach, aerger als
+Hungerloehne war die Bezahlung, die Sie den Frauen fuer ihre Naeharbeit
+geboten haben.  Ihre Loehne haetten die Armen auf die Strasse getrieben,
+um Leib und Seele zu verkaufen.  (Immer wuetender werdend:)  Jene Frauen
+waren aus meinem Kirchsprengel, ich habe die Armenpfleger dazu
+gebracht, dass sie sich schaemten, Ihr Angebot anzunehmen, ich habe die
+Steuerzahler dazu gebracht, dass sie sich schaemten, es zuzulassen, ich
+habe jeden bis auf Sie dazu gebracht, sich deswegen zu schaemen.
+(Ueberschaeumend vor Wut:)  Wie koennen Sie es wagen, Herr,
+hierherzukommen und mir etwas vergeben zu wollen und ueber Ihre Tochter
+zu sprechen und...
+
+(Burgess.)  Beruhigen Sie sich, Jakob,--still, still, regen Sie sich
+nicht fuer nichts und wieder nichts so auf.  Ich habe ja zugegeben, dass
+ich unrecht hatte.
+
+(Morell wuetend:)  Haben Sie das?  Ich habe nichts davon bemerkt!
+
+(Burgess.)  Natuerlich gab ich's zu, so wie ich's noch jetzt zugebe.  Na,
+ich bitte Sie um Verzeihung wegen des Briefes, den ich Ihnen
+geschrieben habe,--genuegt Ihnen das?
+
+(Morell mit den Fingern schnalzend:)  Ganz und gar nicht!  Haben Sie
+die Loehne erhoeht?
+
+(Burgess triumphierend:)  Ja!
+
+(Morell verbluefft innehaltend:)  Was?
+
+(Burgess salbungsvoll:)  Ich bin das Muster eines Arbeitgebers geworden.
+Ich beschaeftige keine Frauen mehr, sie haben alle den Laufpass
+bekommen, und die Arbeit wird jetzt durch Maschinen verrichtet.  Nicht
+ein Mann verdient jetzt weniger als sechs Pence die Stunde, und die
+alten geuebten Arbeiter bekommen die von den Gewerkschaften
+festgesetzten Loehne.  (Stolz:)  Was sagen Sie jetzt?
+
+(Morell ueberwaeltigt:)  Ist das moeglich?  Na, es ist mehr Freude im
+Himmel ueber einen Suender, der Busse tut--(Er geht auf Burgess zu mit
+einem Ausbruch entschuldigender Herzlichkeit.)  Mein lieber Burgess,
+ich bitte Sie herzlichst um Verzeihung wegen der schlechten Meinung,
+die ich von Ihnen hatte.  (Seine Hand fassend:)  Und fuehlen Sie sich
+nicht wohler nach dieser Veraenderung?  Gestehen Sie es!  Sie sind
+gluecklicher, Sie sehen gluecklicher aus.
+
+(Burgess klaeglich:)  Na ja, vielleicht fuehle ich mich jetzt gluecklicher,
+ich muss wohl, da Sie es bemerken.  Tatsache ist, dass mein Angebot von
+der Behoerde angenommen wurde.  (Wild:)  Sie wollte nichts mit mir zu
+schaffen haben, ehe ich anstaendige Loehne zahlte--der Teufel soll
+diese verdammten Narren holen, die ihre Nase in alles stecken muessen!
+
+(Morell laesst seine Hand fahren, aufs tiefste entmutigt:)  Das ist also
+der Grund, warum Sie die Loehne erhoeht haben!  (Er setzt sich
+niedergeschlagen.)
+
+(Burgess streng, anmassend, lauter werdend:)  Weswegen sollt' ich es
+sonst getan haben?  Wohin anders fuehrt es, als zu Trunksucht und
+Ausschweifungen?  (Er setzt sich wie ein Richter in den grossen
+Lehnstuhl.)  Das ist alles sehr schoen und gut fuer Sie: es bringt Sie in
+die Zeitungen und macht Sie zu einem beruehmten Manne; aber Sie denken
+nie an den Schaden, den Sie anrichten, indem Sie die Taschen der
+Arbeiter mit Geld anfuellen, das sie doch nicht vernuenftig auszugeben
+verstehen, waehrend Sie es Leuten fortnehmen, die gute Verwendung dafuer
+haetten.
+
+(Morell nach einem schweren Seufzer, mit kalter Hoeflichkeit:)  Was
+wollen Sie also heute von mir?  Ich bilde mir nicht ein, dass nur
+verwandtschaftliche Gefuehle Sie herfuehren.
+
+(Burgess hartnaeckig:)  Doch--gerade verwandtschaftliche Gefuehle und
+nichts anderes!
+
+(Morell mit mueder Ruhe:)  Das glaub' ich Ihnen nicht.
+
+(Burgess springt drohend auf:)  Sagen Sie mir das nicht ein zweites Mal,
+Jakob Morell!
+
+(Morell unerschuetterlich:)  Ich werde es genau so oft sagen, als es
+noetig ist, Sie davon zu ueberzeugen.--Das glaub' ich Ihnen nicht.
+
+(Burgess versinkt in einen Zustand von tief verwundetem Gefuehl:)  Nun
+gut, wenn Sie durchaus unfreundlich sein wollen, dann ist es wohl am
+besten, ich gehe.  (Er bewegt sich zoegernd gegen die Tuer, Morell gibt
+kein Zeichen.  Burgess zoegert noch.)  Ich habe nicht erwartet, Sie
+unversoehnlich zu finden, Jakob.  (Da Morell noch immer nicht antwortet,
+macht er noch einige zoegernde Schritte nach der Tuer, dann kommt er
+zurueck, jammernd:)  Wir haben uns doch immer ganz gut vertragen, trotz
+unserer verschiedenen Anschauungen, warum sind Sie mir gegenueber jetzt
+so veraendert?  Ich gebe Ihnen mein Wort, dass ich bloss aus Freundschaft
+hergekommen bin und nicht, um mich mit dem Manne meiner eigenen
+Tochter auf schlechten Fuss zu stellen.  Seien Sie doch ein Christ,
+Jakob, reichen Sie mir Ihre Hand.  (Er legt seine Hand sentimental auf
+Morells Schulter.)
+
+(Morell blickt nachdenklich zu ihm auf.)  Schauen Sie, Burgess, wollen
+Sie hier ebenso willkommen sein, wie Sie es waren, ehe Sie Ihren
+Vertrag verloren?
+
+(Burgess.)  Jawohl, Jakob, das moechte ich wirklich.
+
+(Morell.)  Warum benehmen Sie sich dann nicht wie damals?
+
+(Burgess nimmt seine Hand behutsam weg:)  Wie meinen Sie das?
+
+(Morell.)  Das will ich Ihnen sagen.  Damals hielten Sie mich fuer einen
+jungen Dummkopf!
+
+(Burgess schmeichelnd:)  Nein, dafuer habe ich Sie nicht gehalten, ich--
+
+(Morell ihn unterbrechend:)  Ja, dafuer hielten Sie mich!  Und ich hielt
+Sie fuer einen alten Schurken.
+
+(Burgess will diese schwere Selbstanklage Morells heftig abwehren:)
+Nein, das haben Sie nicht getan, Jakob.  Jetzt tun Sie sich selbst
+unrecht.
+
+(Morell.)  Doch, das tat ich.  Na, das hat aber nicht gehindert, dass
+wir ganz gut miteinander ausgekommen sind.  Gott hat aus Ihnen das
+gemacht, was ich einen Schurken nenne, und aus mir das, was Sie eben
+einen Dummkopf nennen.  (Diese Bemerkung erschuettert die Grundfesten
+von Burgess' Moral.  Ihm wird schwach, und waehrend er Morell hilflos
+anblickt, streckt er die Hand aengstlich aus, um sein Gleichgewicht zu
+bewahren, als ob der Boden unter ihm wankte.  Morell faehrt im selben
+Tone ruhiger Ueberzeugung fort:)  Es ist in beiden Faellen nicht meine
+Sache, mit Gott darueber zu rechten.  Solange Sie offen als ein sich
+selbst achtender, echter, ueberzeugter Schurke hierherkommen und, stolz
+darauf, Ihre Schurkereien zu rechtfertigen versuchen, sind Sie
+willkommen.  Aber (und nun wird Morells Ton furchtbar; er erhebt sich
+und stuetzt sich zur Bekraeftigung mit der Faust auf die Rueckenlehne des
+Stuhles:)  ich mag Sie hier nicht herumschnueffeln haben, wenn Sie so
+tun, als ob Sie das Muster eines Arbeitgebers waeren und ein bekehrter
+Mann dazu, waehrend Sie nur ein Abtruenniger sind, der seinen Rock nach
+dem Winde traegt, um einen Vertrag mit der Behoerde zustande zu bringen.
+(Er nickt ihm zu, um seiner Rede Nachdruck zu verleihen, dann geht er
+zum Kamin, wo er in bequemer Kommandostellung, mit dem Ruecken gegen
+das Feuer gekehrt, lehnt und fortfaehrt:)  Nein, ich liebe es, wenn ein
+Mensch wenigstens sich selber treu bleibt, selbst im Boesen!  Also,
+nehmen Sie jetzt entweder Ihren Hut und gehen Sie, oder setzen Sie
+sich und geben Sie mir einen guten, schurkischen Grund dafuer an, warum
+Sie mein Freund sein wollen.  (Burgess, dessen Erregung sich genuegend
+gelegt hat, um in einem Grinsen ausgedrueckt werden zu koennen, fuehlt
+sich durch diesen konkreten Vorschlag sichtlich erleichtert.  Er
+ueberlegt einen Augenblick, und dann setzt er sich langsam und sehr
+bescheiden in den Stuhl, den Morell eben verlassen hat.)  So ist's
+recht,--nun heraus damit.
+
+(Burgess kichernd gegen seinen Willen:)  Nein, Sie sind wirklich ein
+sonderbarer Kauz, Jakob!  (Beinahe enthusiastisch:)  Aber man muss Sie
+gern haben, ob man will oder nicht.  Ausserdem nimmt man, wie ich schon
+sagte, nicht jedes Wort eines Geistlichen fuer bare Muenze, sonst muesste
+die Welt untergehn.  Habe ich nicht recht?  (Er fasst sich, um einen
+ernsteren Ton anzuschlagen, und die Augen auf Morell gerichtet, faehrt
+er mit eintoenigem Ernste fort:)  Nun, meinetwegen, da Sie es wuenschen,
+dass wir gegeneinander ehrlich sind, will ich Ihnen zugeben, dass ich
+Sie--ein wenig--fuer einen Narren hielt; aber ich fange an zu glauben,
+dass ich damals etwas hinter meiner Zeit zurueckgeblieben war.
+
+(Morell frohlockend:)  Aha, haben Sie das endlich herausgefunden?
+
+(Burgess bedeutungsvoll:)  Ja, die Zeiten haben sich mehr veraendert,
+als man glauben sollte!  Vor fuenf Jahren noch haette sich kein
+vernuenftiger Mensch mit Ihren Ideen abgegeben.  Ich wunderte mich
+sogar, dass man Sie auf Ihrem Posten als Pastor beliess.  Ich kenne
+einen Geistlichen, der durch den Bischof von London auf Jahre hinaus
+seiner Funktionen enthoben wurde, obwohl der arme Teufel nicht einen
+Funken mehr religioes war als Sie.  Aber wenn heute jemand mit mir um
+tausend Pfund wetten wollte, dass Sie selbst noch einmal als Bischof
+enden werden, ich wuerde die Wette nicht anzunehmen wagen.  (Sehr
+eindrucksvoll:)  Sie und Ihre Sippschaft werden taeglich einflussreicher,
+wie ich ueberall merke.  Man wird Sie einmal irgendwie befoerdern muessen,
+und waere es bloss, um Ihnen den Mund zu stopfen.  Sie haben doch den
+richtigen Instinkt gehabt, Jakob!  Der Weg, den Sie eingeschlagen
+haben, ist der eintraeglichste fuer einen Mann Ihres Schlages.
+
+(Morell reicht ihm jetzt die Hand mit fester Entschlossenheit:)  Hier
+meine Hand, Burgess, jetzt reden Sie ehrlich.  Ich glaube nicht, dass
+man mich zum Bischof ernennen wird; aber wenn es geschieht, dann will
+ich Sie mit den groessten Spekulanten bekannt machen, die ich zu meinen
+Diners bekommen kann.
+
+(Burgess der sich mit einem verschmitzten Grinsen erhoben und die
+Freundschaftshand ergriffen hat:)  Sie bleiben nun mal bei Ihrem Witz,
+Jakob.  Unser Streit ist jetzt beigelegt, nicht wahr?
+
+(Die Stimme einer Frau.)  Sag "Ja", Jakob!
+
+(Erstaunt wenden sie sich um und bemerken, dass Candida eben
+eingetreten ist und sie mit jener belustigten, muetterlichen Nachsicht
+betrachtet, die ihr charakteristischer Gesichtsausdruck ist.  Sie ist
+eine Frau von dreiunddreissig Jahren, schoen gewachsen, gut genaehrt.
+Man erraet, dass sie spaeter eine Matrone sein wird, aber jetzt steht sie
+noch in ihrer Bluete, mit dem Doppelreiz der Jugend und der
+Mutterschaft.  Ihr Benehmen ist das einer Frau, die erfahren hat, dass
+sie die Menschen immer lenken kann, wenn sie ihre Neigung gewinnt, und
+die dies unbekuemmert offen und instinktiv tut.  In diesem Punkte ist
+sie wie jede andere huebsche Frau, die gerade klug genug ist, aus ihrer
+weiblichen Anziehungskraft zu alltaeglich selbsttuechtigen Zwecken so
+viel Kapital wie moeglich zu schlagen.  Aber Candidas heitere Stirn und
+ihre mutigen Augen, der schoen geformte Mund und ihr Kinn kennzeichnen
+umfassenden Geist und Wuerde des Charakters, der ihre Schlauheit im
+Gewinnen von Neigungen adelt.  Ein kluger Beobachter wuerde, sie
+betrachtend, sofort erraten, dass wer das Bild der Assunta auch ueber
+ihren Kamin gehaengt haben mochte, ein seelisches Band zwischen den
+beiden Frauengestalten geahnt hatte, obwohl er weder ihrem Manne, noch
+ihr selbst den Gedanken zutraute, sie mit der Kunst Tizians irgendwie
+in Zusammenhang zu bringen.--Sie ist in Hut und Mantel und hat eine
+zusammengeschnuerte Reisedecke, durch die ihr Schirm gesteckt ist, eine
+Handtasche und eine Menge illustrierter Zeitungen in den Haenden.)
+
+(Morell ueber seine Nachlaessigkeit erschrocken:)  Candida!  Ei nun!--(Er
+sieht auf seine Uhr und ist entsetzt, dass es schon so spaet ist.)  Mein
+Schatz!  (Er eilt ihr entgegen und nimmt ihr die Reisedecke ab, indem
+er fortfaehrt, sein reumuetiges Bedauern hervorzusprudeln:)  Ich hatte
+die Absicht, dich von der Bahn abzuholen, aber ich bemerkte nicht, dass
+die Zeit schon um war, (die Reisedecke aufs Sofa werfend:)  ich war so
+sehr in Anspruch genommen--(Wieder zu ihr kommend:)  dass ich das
+vergass--oh!  (Er umarmt sie mit reumuetiger Ergriffenheit.)
+
+(Burgess etwas beschaemt und ungewiss, wie er von seiner Tochter
+empfangen werden wird:) Wie geht es dir, Candy?  (Candida, noch in
+Morells Armen, bietet ihm ihre Wange, die er kuesst:)  Jakob und ich sind
+zu einer Verstaendigung gekommen--zu einer ehrenvollen Verstaendigung.
+Nicht wahr, Jakob?
+
+(Morell heftig:)  Reden Sie nicht von unserer Verstaendigung!
+Ihretwegen habe ich versaeumt, Candida abzuholen.
+
+(Teilnahmsvoll:)  Du arme Liebe, wie bist du nur mit deinem Gepaeck
+fertig geworden?  Wie--
+
+(Candida unterbricht ihn und macht sich los:)  Na, na, na! ich war
+nicht allein.  Eugen ist mit uns gekommen--wir sind zusammen
+hergefahren.
+
+(Morell erfreut:)  Eugen?!
+
+(Candida.)  Ja.  Er plagt sich eben mit meinem Gepaeck ab, der arme
+Junge.  Ich bitte dich, lieber Jakob, geh gleich hinunter, sonst
+bezahlt er den Wagen, und das moechte ich nicht.  (Morell eilt hinaus.
+Candida stellt ihre Handtasche nieder, nimmt dann ihren Mantel und Hut
+ab und legt sie auf das Sofa neben die Decke und plaudert inzwischen.)
+Nun, Papa, wie geht's zu Hause?
+
+(Burgess.)  Es lohnt sich nicht mehr, dort zu leben, seit du uns
+verlassen hast, Candy.  Ich wollte, du kaemst einmal, um nachzusehn und
+mit dem Maedchen zu sprechen.--Wer ist dieser Eugen, der dich begleitet
+hat?
+
+(Candida.)  Oh, Eugen ist eine von Jakobs Entdeckungen.  Er fand ihn im
+verflossenen Juni schlafend auf dem Kai.  Hast du unser neues Bild
+nicht bemerkt?  (Ruf das Bild der Assunta zeigend:)  Das haben wir von
+ihm.
+
+(Burgess unglaeubig:)  Was soll das heissen?  Willst du mir, deinem
+eigenen Vater, etwa einreden, dass ein Landstreicher, den man schlafend
+auf dem Kai findet, solche Bilder schenkt?  (Strenge:)  Betrueg mich
+nicht, Candy; es ist ein katholisches Bild, und Jakob hat es selbst
+gekauft.
+
+(Candida.)  Du irrst.  Eugen ist kein Landstreicher.
+
+(Burgess.)  Was ist er denn?  (Sarkastisch:)  Ein Edelmann
+wahrscheinlich?
+
+(Candida nickt belustigt:)  Jawohl, sein Onkel ist ein Pair--ein
+wirklicher, leibhaftiger Graf.
+
+(Burgess wagt es nicht, so eine gute Nachricht zu glauben:)  Nein!
+
+(Candida.)  Ja!  Er trug einen Wechsel auf fuenfundfuenfzig
+Pfund--zahlbar in acht Tagen--in der Tasche, als Jakob ihn am Kai fand.
+Er dachte, dass er dafuer kein Geld bekommen koennte, bevor die acht
+Tage um waeren, und er war zu schuechtern, Kredit zu verlangen.  Oh, er
+ist ein lieber Junge, wir haben ihn sehr gern.
+
+(Burgess der so tut, als verachte er die Aristokraten, aber mit
+glaenzenden Augen:)  Hm, ich dachte mir's, dass der Neffe eines Pairs
+nicht bei euch im Viktoriapark zu Besuch sein wuerde, wenn er nicht ein
+bisschen verrueckt waere.  (Er blickt wieder auf das Bild.)  Ich bin
+natuerlich mit dem Vorwurf dieses Bildes, als strengglaeubiger
+Protestant, nicht einverstanden, Candy; aber dass es ein erstklassiges,
+grosses Kunstwerk ist, das habe ich sofort erkannt.  Nicht wahr, du
+stellst mich ihm vor, Candy?  (Er sieht aengstlich auf seine Uhr.)  Ich
+kann aber hoechstens noch zwei Minuten bleiben.
+
+(Morell kommt mit Eugen zurueck, den Burgess mit feuchten Augen
+begeistert anstarrt.  Eugen ist ein seltsamer, scheuer Juengling von
+achtzehn Jahren, schlank, weibisch, mit einer zarten, kindlichen
+Stimme, einem gehetzten, gequaelten Ausdruck und mit einem Benehmen,
+das die schmerzliche Empfindlichkeit sehr schnell und ploetzlich
+gereifter Knaben kennzeichnet, bevor ihr Charakter volle Festigkeit
+erreicht hat.  Erbaermlich unentschlossen, weiss er nie, wo er stehen
+und was er tun soll.  Burgess erschreckt ihn, und er moechte am
+liebsten fort von ihm in die Einsamkeit laufen, wenn er es wagte.
+Aber die Intensitaet, mit der er eine so ganz gewoehnliche Lage
+empfindet, zeugt doch nur von seiner uebergrossen nervoesen Kraft; und
+seine Nasenfluegel, sein Mund und seine Augen verraten einen
+leidenschaftlich ungestuemen Eigensinn, ueber dessen aeussersten Grad
+seine Stirne, die schon vom Mitleid gefurcht ist, wieder beruhigt.  Er
+sieht absonderlich aus, beinahe wie nicht von dieser Welt--und
+prosaische Leute sehen etwas Ungesundes in dieser ueberirdischen Art,
+so wie poetische Menschen darin etwas Engelgleiches sehen.  Seine
+Kleidung ist ganz frei; er traegt ein altes Jakett aus blauem Serge,
+aufgeknoepft, ueber einem wollenen Lawn-Tennis-Hemd, mit einem seidenen
+Halstuch als Krawatte, zu dem Jackett passende Beinkleider und braune
+Schuhe aus Segeltuch.  In diesem Aufzuge hat er augenscheinlich im
+Heidekraut gelegen und ist durch das Wasser gewatet; es ist auch nicht
+ersichtlich, dass er die Kleider jemals abgebuerstet hat.  Da er beim
+Eintritt einen Fremden sieht, haelt er inne und drueckt sich laengs der
+Wand nach der entgegengesetzten Seite des Zimmers weiter.)
+
+(Morell beim Eintreten:)  Kommen Sie.  Sie haben sicher doch eine
+Viertelstunde fuer uns uebrig.  Das ist mein Schwiegervater, Herr
+Burgess--Herr Marchbanks.
+
+(Marchbanks weicht geaengstigt gegen den Buecherschrank zurueck:)  Sehr
+angenehm--
+
+(Burgess geht mit grosser Herzlichkeit auf ihn zu, waehrend Morell vor
+den Kamin zu Candida tritt:)  Es freut mich sehr, Sie kennen zu lernen,
+Herr Marchbanks.  (Noetigt ihn, ihm die Hand zu geben.)  Wie geht es
+Ihnen bei diesem Wetter?  Ich hoffe, Jakob versucht nicht, Ihnen
+verrueckte Ideen in den Kopf zu setzen.
+
+(Marchbanks.)  Verrueckte Ideen?  Ach, Sie meinen sozialistische?  Nein,
+o nein!
+
+(Burgess.)  Das ist recht.  (Sieht wieder auf seine Uhr.)  Na, jetzt muss
+ich aber gehen, da ist nichts zu machen.  Haben Sie vielleicht
+denselben Weg, Herr Marchbanks?
+
+(Marchbanks.)  Nach welcher Richtung gehen Sie?
+
+(Burgess.)  Station Viktoriapark.  Um zwoelf Uhr fuenfundzwanzig geht ein
+Zug nach der City.
+
+(Morell.)  Unsinn, Eugen, Sie fruehstuecken doch hoffentlich mit uns!
+
+(Marchbanks sich aengstlich entschuldigend:)  Nein, ich--ich--
+
+(Burgess.)  Nun, ich will Ihnen nicht zureden.  Ich wette, dass Sie es
+vorziehen, mit Candy zu fruehstuecken.  Ich hoffe aber, dafuer werden Sie
+eines Abends im Buergerklub in Norton Folgate mit mir dinieren,--bitte,
+sagen Sie zu!
+
+(Marchbanks.)  Ich danke Ihnen, Herr Burgess.  Wo ist Norton
+Folgate?--Unten in Surrey, nicht wahr?
+
+(Burgess, unaussprechlich belustigt, faengt zu lachen an.)
+
+(Candida zu Hilfe kommend:)  Du wirst deinen Zug versaeumen, Papa, wenn
+du nicht sofort gehst; komm am Nachmittag wieder und erklaere Herrn
+Marchbanks dann, wie man nach dem Klub gelangt.
+
+(Burgess mit schallendem Gelaechter:)  In Surrey, ha ha, das ist nicht
+schlecht!  Nun, ich habe noch nie einen Menschen getroffen, der nicht
+Norton Folgate gekannt haette.
+
+(Betroffen ueber den Laerm seiner eigenen Stimme:)  Leben Sie wohl, Herr
+Marchbanks; ich weiss, Sie sind zu vornehm, um meinen Scherz schlecht
+aufzufassen.  (Er reicht ihm abermals die Hand.)
+
+(Marchbanks erfasst sie mit nervoesem Griff.)  O bitte, bitte!
+
+(Burgess.)  Adieu, adieu, Candy.  Ich werde spaeter wiederkommen--auf
+Wiedersehen, Jakob.
+
+(Morell.)  Muessen Sie wirklich gehen?
+
+(Burgess.)  Lasst euch nicht stoeren.  (Er gebt mit unverminderter
+Herzlichkeit hinaus.)
+
+(Morelt.)  Ich werde Sie hinausbegleiten.  (Er folgt ihm, Eugen starrt
+ihnen aengstlich nach und haelt seinen Atem an, bis Burgess verschwunden
+ist.)
+
+(Candida lachend:)  Nun, Eugen?  (Er wendet sich mit einem Ruck um und
+kommt heftig auf sie zu, haelt aber unschluessig inne, als er ihren
+belustigten Blick bemerkt.)  Wie gefaellt Ihnen mein Vater?
+
+(Marchbanks.)  Ich--ich kenne ihn doch kaum,--er scheint ein sehr
+lieber alter Herr zu sein.
+
+(Candida mit leiser Ironie:)  Und Sie werden seine Einladung in den
+Buergerklub annehmen, nicht wahr?
+
+(Marchbanks ungluecklich, es fuer Ernst nehmend:)  Gerne, wenn Sie es
+wuenschen.
+
+(Candida geruehrt:)  Wissen Sie, dass Sie ein sehr lieber Junge sind,
+Eugen, trotz all Ihrer Sonderlichkeiten.  Wenn Sie meinen Vater
+ausgelacht haetten, so waere nichts dabei gewesen, aber es gefaellt mir
+um so besser von Ihnen, dass Sie nett zu ihm waren.
+
+(Marchbanks.)  Haette ich lachen sollen?  Mir war, als ob er etwas
+scherzhaftes sagte, aber ich fuehle mich Fremden gegenueber so bedrueckt,
+und ich kann Witze nie verstehen.  Es tut mir sehr leid.  (Er setzt
+sich auf das Sofa, die Ellbogen auf den Knien und die Schlaefen
+zwischen den Faeusten, mit dem Ausdruck hoffnungslosen Leidens.)
+
+(Candida heitert ihn gutmuetig auf:)  Oh, Sie grosses Kind,--Sie sind
+heute noch aerger als sonst.  Warum waren Sie auf der Fahrt in der
+Droschke so melancholisch?
+
+(Marchbanks.)  Oh, das war nichts.  Ich dachte darueber nach, wieviel
+ich dem Kutscher geben sollte.  Ich weiss, es ist aeusserst dumm, aber
+Sie wissen nicht, wie schrecklich mir solche Dinge sind,--wie ich mich
+davor scheue, mit fremden Leuten zu unterhandeln.  (Frisch und
+beruhigend:)  Aber jetzt ist alles gut.  Er lachte mit dem ganzen
+Gesicht und beruehrte seinen Hut, als Ihr Mann ihm zwei Schilling gab;
+ich war im Begriff, ihm zehn zu bieten.  (Candida lacht herzlich,
+Morell kommt mit einigen Briefen und Zeitungen zurueck, die mit der
+Mittagspost gekommen sind.)
+
+(Candida.)  Oh, lieber Jakob, denke nur, er wollte dem Kutscher zehn
+Schilling geben,--zehn Schilling fuer eine Fahrt von drei Minuten, was
+sagst du?
+
+(Morell vor dem Tisch die Briefe ueberfliegend:)  Machen Sie sich nichts
+daraus, Marchbanks.  Der Trieb, zuviel zu bezahlen, ist ein Beweis von
+Grossmut und viel besser als der entgegengesetzte, und nicht so
+gewoehnlich.
+
+(Marchbanks wieder in Niedergeschlagenheit verfallend:)  Nein, Feigheit,
+Untauglichkeit ist das.  Frau Morell hat ganz recht.
+
+(Candida.)  Gewiss hat sie recht.  (Sie nimmt ihre Handtasche auf.)  Und
+nun muss ich Sie Jakob ueberlassen.  Ich nehme an, Sie sind zu sehr Poet,
+um sich den Zustand vorstellen zu koennen, in dem eine Frau ihr Haus
+wiederfindet, wenn sie drei Wochen fortgewesen ist.  Geben Sie mir
+meine Decke.  (Eugen nimmt die eingeschnallte Decke vom Sofa und gibt
+sie ihr; sie nimmt sie in die linke Hand, da sie ihre Tasche in der
+rechten haelt.)  Nun, bitte, haengen Sie mir den Mantel ueber den Arm.
+(Er gehorcht.)  Nun meinen Hut.  (Er gibt ihn ihr in die Hand, die das
+Gepaeck haelt.)  Nun oeffnen sie mir die Tuer.--(Er laeuft ihr voraus und
+oeffnet die Tuer.)   Danke.  (Sie geht hinaus, und Marchbanks schliesst sie
+hinter ihr wieder.)
+
+(Morell noch am Tisch beschaeftigt:)  Sie bleiben selbstverstaendlich zum
+Fruehstueck bei uns, Marchbanks.
+
+(Marchbanks erschreckt:)  Ach, ich darf nicht.  (Er sieht rasch nach
+Morell hin, weicht aber ploetzlich seinem vollen Blick aus und fuegt mit
+sichtlicher Unaufrichtigkeit hinzu:)  Ich meine, ich kann nicht.
+
+(Morell.)  Sie meinen, Sie wollen nicht.
+
+(Marchbanks ernst:)  Nein, ich moechte wirklich gerne, ich danke Ihnen
+sehr, aber--aber--
+
+(Morell leichthin, beendigt seinen Brief und tritt dicht an Eugen
+heran:)  Aber--aber--aber--aber!  Unsinn!  Wenn Sie bleiben wollen,
+dann bleiben Sie,--Sie werden mich doch nicht ueberzeugen wollen, dass
+Sie irgend etwas anderes zu tun haben?  Wenn Sie schuechtern sind,
+machen Sie einen Spaziergang durch den Park und schreiben bis halb
+zwei Uhr Gedichte, und dann kommen Sie wieder und essen tuechtig.
+
+(Marchbanks.)  Ich danke Ihnen.  Ich wuerde das sehr gern tun, aber ich
+darf wirklich nicht.  Die Wahrheit ist, dass mir Frau Morell gesagt hat,
+dass ich's lieber nicht tun sollte.  Sie sagte, sie glaube nicht, dass
+Sie mich zum Fruehstueck einladen wuerden, aber wenn Sie es taeten, dann
+wuenschten Sie es doch nicht ernstlich.  (Schmerzlich:)  Sie sagte, ich
+wuerde das schon verstehen, aber ich verstehe es nicht.--Bitte, sagen
+Sie ihr nichts davon, dass ich es Ihnen wiedererzaehlt habe.
+
+(Morell belustigt:)  Oh, ist das alles?  Was halten Sie von meinem
+Vorschlag, in den Park zu gehen und diese Frage damit zu erledigen?
+
+(Marchbanks.)  Wie?
+
+(Morell in guter Laune herausplatzend:)  Na, Sie Dummkopf.  (Aber dies
+geraeuschvolle Wesen verletzt sowohl ihn selbst als auch Eugen.  Er
+haelt inne und faehrt mit liebevollem Ernst fort:)  Nein, Scherz beiseite,
+mein lieber Junge! in einer gluecklichen Ehe wie die unsere ist die
+Rueckkehr der Frau in ihr Haus etwas sehr Heiliges.  (Marchbanks sieht
+ihn rasch an, und erraet beinahe im voraus, was er sagen will.)  Aber
+ein lieber Freund, eine wirklich vornehme, sympathische Seele ist bei
+einer solchen Gelegenheit nicht im Wege,--der erstbeste Besucher waere
+es allerdings.  (Der gehetzte, erschreckte Ausdruck kommt ploetzlich
+und lebhaft in Eugens Gesicht, sowie er begreift.  Morell, mit seinen
+eigenen Gedanken beschaeftigt, faehrt, ohne es zu bemerken, fort:)
+Candida dachte, ich wuerde Sie vielleicht lieber nicht hier haben, aber
+sie hatte unrecht.  Ich habe Sie sehr lieb, Eugen; und ich moechte es
+auch Ihretwegen, dass Sie sehen, wie schoen es ist, so gluecklich
+verheiratet zu sein wie ich.
+
+(Marchbanks.)  Gluecklich?  Ihre Ehe?  Das meinen Sie, das glauben Sie
+wirklich?
+
+(Morell heiter:)  Ich weiss es, mein Junge.  Laroche-foucauld behauptet
+zwar, dass es hoechstens passende, aber keine gluecklichen Ehen gaebe.
+Sie koennen sich nicht vorstellen, wie wohl es tut, einen so
+abgefeimten Luegner und verderbten Zyniker zu durchschauen!  Ha, ha!
+Nun aber fort in den Park und schreiben Sie Ihr Gedicht! und vergessen
+Sie nicht: Punkt halb zwei Uhr!  Wir warten niemals mit dem Essen auf
+jemand.
+
+(Marchbanks wild:)  Nein, halten Sie ein, Sie sollen es auch nicht!
+Ich will alles ans Licht bringen.
+
+(Morell verwundert:)  Wie?  Was wollen Sie ans Licht bringen?
+
+(Marchbanks.)  Ich muss mit Ihnen sprechen.  Es gibt etwas, das zwischen
+uns erledigt werden muss.
+
+(Morell mit einem belustigten Blick nach der Uhr:)  Jetzt?
+
+(Marchbanks leidenschaftlich:)  Jawohl, jetzt.  Ehe Sie dieses Zimmer
+verlassen.  (Er weicht ein paar Schritte zurueck und steht so, als ob
+er Morell den Weg zur Tuer versperren wollte.)
+
+(Morell ernst, ohne sich zu ruehren, da er begreift, dass es sich um
+etwas Ernstes handelt:)  Ich will es gar nicht verlassen.  Ich dachte,
+Sie wollten gehen.--(Eugen ist von seinem sicheren Ton verwirrt und
+wendet ihm, sich kruemmend vor Verdruss, den Ruecken zu.  Morell geht zu
+ihm hin und legt die Haende auf seine Schultern, fest und guetig, ohne
+Marchbanks Versuche, ihn abzuschuetteln, zu beachten.)  Na--setzen Sie
+sich ruhig und erzaehlen Sie mir, was los ist.  Und bedenken Sie eines:
+wir sind Freunde und brauchen nicht zu fuerchten, dass einer von uns
+anders als geduldig und guetig zu dem andern sein werde, was wir
+einander auch moegen zu sagen haben.
+
+(Marchbanks windet sich hin und her:)  Oh, ich werde mich nicht
+vergessen, ich bin nur (bedeckt sein Gesicht verzweifelt mit den
+Haenden:)  ausser mir vor Entsetzen!  (Dann laesst er die Haende fallen,
+und sich mutig vorwaerts gegen Morell wendend, faehrt er drohend fort:)
+Sie werden ja sehen, ob Geduld und Guete da am Platz sind.  (Morell,
+unerschuetterlich wie ein Felsen, sieht ihn nachsichtig an.)  Betrachten
+Sie mich nicht so selbstgefaellig!  Sie halten sich zwar fuer staerker
+als mich, aber ich werde Sie aufruetteln, wenn Sie ein Herz im Leibe
+haben.
+
+(Morell mit maechtigem Vertrauen:)  Mich aufruetteln, mein Junge?  Nur zu!
+Nur zu!  Heraus damit!
+
+(Marchbanks.)  Zuerst--
+
+(Morell.)  Zuerst?
+
+(Marchbanks.)  Ich liebe Ihre Frau!  (Morell faehrt zurueck, und nachdem
+er Eugen einen Augenblick aeusserst erstaunt angestarrt hat, bricht er
+in heftiges Lachen aus.  Eugen wird stutzig, verliert aber seine
+Fassung nicht und steht empoert und verachtungsvoll da.)
+
+(Morell setzt sich, um sich auszulachen:)  Aber, mein liebes Kind,
+natuerlich lieben Sie Candida.  Jeder liebt sie, man kann nicht anders;
+das freut mich nur, aber (er sieht seltsam zu ihm auf:)  halten Sie
+Ihren Fall fuer etwas, ueber das man auch nur zu sprechen braucht?  Sie
+sind unter zwanzig und Candida ist ueber dreissig,--sieht das nicht
+einer Dummenjungenliebe aehnlich?
+
+(Marchbanks heftig:)  Sie wagen, so von ihr zu sprechen!  Sie glauben,
+dass Ihre Frau diese Art Liebe einfloessen kann!--Das ist eine
+Beleidigung gegen sie!
+
+(Morell erhebt sich rasch und veraendert den Ton:)  Gegen sie?  Nehmen
+Sie sich in acht, Eugen.  Ich war geduldig.  Ich hoffe, geduldig zu
+bleiben.  Aber es gibt Dinge, die ich mir verbitten muss.  Zwingen Sie
+mich nicht, Ihnen die Nachsicht zu zeigen, die ich einem Kinde
+gegenueber haben wuerde.  Seien Sie ein Mann.
+
+(Marchbanks mit einer Bewegung, als wuerfe er etwas hinter sich:)  Oh,
+lassen Sie dieses Geschwaetz beiseite.  Ich bin entsetzt, wenn ich
+denke, wieviel die Arme davon hat anhoeren muessen in den langen Jahren,
+in denen Sie Candida selbstsuechtig und blind Ihrem Duenkel geopfert
+haben!  (Sich nach ihm umwendend:)  Sie, der Sie nicht einen Gedanken,
+nicht ein Gefuehl mit ihr gemeinsam haben.
+
+(Morell mit philosophischer Ruhe:)  Ihr scheint das alles aber recht
+gut zu bekommen.  (Ihm gerade ins Gesicht blickend:)  Eugen, Sie machen
+sich zum Narren--zu einem sehr grossen Narren.  Es ist zu Ihrem eigenen
+Besten, wenn man Ihnen das offen und ehrlich sagt.
+
+(Marchbanks.)  Oh, glauben Sie, ich wuesste das alles nicht?  Glauben Sie,
+dass die Dinge, ueber die Leute zu Narren werden, weniger wirklich und
+wahr sind, als die, bei denen sie vernuenftig bleiben?  (Morells Blick
+wird zum ersten Male unsicher, er wendet instinktiv sein Gesicht ab
+und steht horchend, bestuerzt und nachdenklich da.)  Diese Dinge sind
+noch viel wahrer, sie sind ueberhaupt die einzigen Dinge, die wahr sind.
+Sie sind sehr ruhig und massvoll und ruecksichtsvoll gegen mich, weil
+Sie sehen koennen, dass ich, was Ihre Frau betrifft, ein Narr bin.  So
+wie der alte Mann, der eben hier war, zweifellos sehr weise ueber Ihren
+Sozialismus denkt, weil er sieht, dass Sie sich dabei zum Narren machen.
+(Morell wird sichtlich immer bestuerzter, und Eugen nuetzt seinen
+Vorteil aus, ihn heftig mit Fragen bedraengend:)  Beweist dies, dass Sie
+unrecht haben?  Beweist Ihre sichere Ueberlegenheit mir gegenueber, dass
+ich unrecht habe?
+
+(Morell sich zu Eugen wendend, der seinen Platz behauptet:)  Marchbanks,
+irgendein Teufel hat Ihnen diese Worte in den Mund gelegt.  Es ist
+leicht, fuerchterlich leicht, in einem Menschen den Glauben an sich
+selbst zu erschuettern.  Dies auszunuetzen, um eines Menschen Seele zu
+verwirren, ist Teufelswerk.  Hueten Sie sich davor!
+
+(Marchbanks unbarmherzig:)  Das weiss ich!  Es geschieht absichtlich.
+Ich sagte Ihnen ja, ich wuerde Sie aufruetteln.  (Sie sehen einander
+einen Augenblick drohend in die Augen, dann findet Morell seine Wuerde
+wieder.)
+
+(Morell mit edler Guete:)  Eugen, hoeren Sie mich an.  Ich hoffe und baue
+darauf, dass Sie eines Tages ein gluecklicher Mensch sein werden, wie
+ich.  (Eugen gibt durch eine zornige, ungeduldige Gebaerde zu verstehen,
+dass er an den Wert dieses Glueckes nicht glaubt.  Morell, tief
+beleidigt, beherrscht sich mit aller Nachsicht und faehrt mit grosser
+kuenstlerischer Beredsamkeit fort:)  Sie werden verheiratet sein und mit
+aller Macht und Ihrem besten Koennen daran arbeiten, jeden Erdenfleck,
+den Sie betreten, so gluecklich zu machen, wie Ihr eigenes Heim es sein
+wird.  Sie werden einer von denen sein, die das Himmelreich auf Erden
+bereiten wollen, und--wer weiss?--Sie moegen ein Pionier oder ein
+Baumeister werden, wo ich nur ein demuetiger Arbeiter bin.  Sie duerfen
+nicht glauben, Eugen, dass ich in Ihnen, so jung Sie auch sind, nicht
+jene Keime sehe, die Groesseres versprechen, als ich jemals von mir
+erwarten darf.  Ich weiss ganz gut, dass der Geist, der in einem Dichter
+wohnt, heilig--dass er geradezu goettlich ist.  Sie sollten bei dem
+Gedanken daran zittern, bei dem Gedanken, dass die schwere
+Verpflichtung und die grossen Gaben eines Dichters vielleicht einst auf
+Ihren Schultern ruhen werden.
+
+(Marchbanks unberuehrt und reuelos; die knabenhafte Knappheit seiner
+Worte sticht scharf gegen Morells Beredsamkeit ab:)  Nicht davor
+zittere ich!  Der Mangel dieser Gaben bei anderen, der macht mich
+zittern.
+
+(Morell verdoppelt die Kraft seiner Rede unter dem Einfluss seines
+echten Gefuehls und der Verstocktheit Eugens:)  Dann tragen Sie dazu bei,
+jene Gaben in andere und in mich zu pflanzen--und nicht, sie
+auszurotten.  Spaeter einmal, wenn Sie so gluecklich sein werden, wie
+ich es bin, dann will ich Ihr treuer Glaubensbruder werden.  Ich will
+Sie zu dem Glauben fuehren, dass Gott uns eine Welt geschenkt hat, die
+nur unserer eigenen Unvernunft wegen kein Paradies ist, und dass jeder
+Federstrich Ihrer Arbeit Glueck aussaet fuer die grosse Ernte, die
+alle--selbst die Geringsten--eines Tages einfuehren werden.  Und
+endlich will ich Ihnen nicht zum wenigsten zu dem Glauben verhelfen,
+dass Ihre Frau Sie liebt und in ihrem Heim gluecklich ist.  Wir brauchen
+solche Hilfe, Marchbanks, wir haben sie immer sehr noetig.  Es gibt so
+viele Dinge, die in uns Zweifel wecken, wenn wir uns erst einmal haben
+unsern Glauben trueben lassen.  Selbst zu Hause sitzen wir wie in einem
+Kriegslager, umgeben von einer feindlichen Armee von Zweifeln.  Wollen
+Sie den Verraeter spielen und sie zu mir einlassen?
+
+(Marchbanks sich umblickend:)  Ist es fuer sie hier immer so gewesen?
+Dass eine Frau mit einer grossen Seele, die nach Wahrheit, Wirklichkeit
+und Freiheit duerstet, bloss mit Metaphern, Predigten und abgedroschenen
+Redensarten abgespeist wird?  Glauben Sie, dass die Seele einer Frau
+von Ihrem Predigertalent leben kann?
+
+(Morell tief verwundet:)  Marchbanks, Sie machen es mir schwer, mich zu
+beherrschen.  Mein Talent gleicht dem Ihren, sofern es ueberhaupt einen
+echten Wert besitzt: es ist die Gabe, goettliche Wahrheit in Worte zu
+kleiden.
+
+(Marchbanks ungestuem:)  Es ist die Gabe des Mundwerks, nicht mehr und
+nicht weniger.  Was hat Ihre Fertigkeit, schoene Reden zu halten, mit
+der Wahrheit zu schaffen?--so wenig, wie das Orgelspiel mit ihr zu
+schaffen hat.  Ich war niemals in Ihrer Kirche, aber ich war in Ihren
+politischen Versammlungen und habe Sie dort das tun sehen, was man die
+Menge zum Enthusiasmus hinreissen nennt.  Das heisst: die Leute regten
+sich auf und benahmen sich, als ob sie betrunken waeren.  Ihre Frauen
+sahen zu und merkten, was fuer Narren sie zu Maennern hatten.  Oh, das
+ist eine alte Geschichte, Sie koennen sie schon in der Bibel finden.
+--Mir scheint, Koenig David in seinem Enthusiasmus war Ihnen sehr
+aehnlich.  (Ihm die Worte in die Seele hohrend:)  "Aber sein Weib
+verachtete ihn in ihrem Herzen!"
+
+(Morell wuetend:)  Verlassen Sie mein Haus!  Hoeren Sie?  (Er gebt
+drohend auf ihn los.)
+
+(Marchbanks gegen das Sofa zurueckweichend:)  Lassen Sie mich in Frieden,
+ruehren Sie mich nicht an!
+
+(Morell fasst ihn kraeftig am Aufschlag seines Rockes; er duckt sich auf
+das Sofa nieder.)
+
+(Marchbanks schreit leidenschaftlich:)  Halten Sie ein; wenn Sie mich
+schlagen, so toete ich mich, ich wuerde es nicht ertragen!  (Beinahe
+hysterisch:)  Lassen Sie mich los: nehmen Sie Ihre Hand fort!
+
+(Morell langsam, mit nachdruecklicher Geringschaetzung:)  Sie kleiner,
+winselnder, feiger Hund!  (Er laesst ihn los:)  Gehen Sie, sonst fallen
+Sie aus Angst in Ohnmacht.
+
+(Marchbanks auf dem Sofa nach Luft schnappend, aber befreit durch das
+Zurueckziehen von Morells Hand:)  Ich fuerchte mich nicht vor Ihnen, Sie
+fuerchten sich vor mir!
+
+(Modell ruhig, ueber ihn gebeugt:)  Es sieht mir ganz danach aus!
+
+(Marchbanks mit dreister Heftigkeit:)  Ja; es sieht so aus.  (Morell
+wendet sich verachtungsvoll ab, Eugen steht hastig auf und folgt ihm.)
+Weil ich vor einer brutalen Behandlung zurueckschrecke, weil (mit
+Traenen in der Stimmt:)  ich nichts anderes tun kann, als heulen vor Wut,
+wenn mir Gewalt angetan wird--weil ich keinen schweren Koffer vom
+Kutscherbock herabheben kann wie Sie--weil ich mit Ihnen nicht um Ihre
+Frau raufen kann wie ein Arbeiter--deshalb glauben Sie, ich haette
+Angst vor Ihnen!  Aber Sie irren.  Besitze ich auch nicht Ihren
+beruehmten britischen Mut, so besitze ich doch auch nicht die britische
+Feigheit.  Ich fuerchte mich vor den Ansichten eines Pastors nicht.
+Ich will kaempfen gegen Ihre Ansichten.  Ich will Candida von der
+Sklaverei dieser Ansichten befreien, ich will meine eigenen Ansichten
+den Ihren entgegenstellen.  Sie jagen mich aus dem Hause, weil Sie es
+nicht wagen, Candida zwischen meinen und Ihren Ansichten waehlen zu
+lassen!  Sie fuerchten sich vor einem Wiedersehen zwischen Ihrer Frau
+und mir.  (Morell wendet sich ploetzlich zornig zu ihm; er fluechtet
+nach der Tuer in unfreiwilliger Angst:)  Lassen Sie mich in Ruhe.  Ich
+gehe.
+
+(Morell mit kalter Verachtung:)  Warten Sie einen Augenblick: ich werde
+Sie nicht beruehren, fuerchten Sie sich nicht.  Wenn meine Frau
+zurueckkommt, duerfte sie wissen wollen, warum Sie fortgegangen sind;
+und wenn sie erfaehrt, dass Sie unsere Schwelle nie wieder ueberschreiten
+werden, dann wird sie darueber Aufklaerung verlangen.  Nun moechte ich
+sie nicht betrueben und ihr sagen, dass Sie sich wie ein Schuft benommen
+haben.
+
+(Marchbanks kehrt mit erneuter Heftigkeit um:)  Sie sollen es--Sie
+muessen!  Wenn Sie irgendeine andere Aufklaerung als die wahre geben, so
+sind Sie ein Luegner und ein Feigling.  Sagen Sie ihr, was ich gesagt
+habe, und wie Sie stark und maennlich waren und mich zerzaust haben wie
+ein Hund eine Ratte, und wie ich zurueckwich und entsetzt war, und wie
+Sie mich einen winselnden kleinen Hund nannten und mich aus dem Hause
+jagten!  Wenn Sie ihr das alles nicht sagen werden, so werde ich es
+tun!  Ich werd' es ihr schreiben.
+
+(Morell verbluefft:)  Warum wollen Sie, dass sie das alles erfahren soll?
+
+(Marchbanks mit lyrischer Begeisterung:)  Weil sie mich dann verstehen
+und wissen wird, dass ich sie verstehe.  Wenn Sie nur ein Wort von
+alledem vor ihr verheimlichen--wenn Sie nicht bereit sind, ihr die
+reine Wahrheit zu Fuessen zu legen--wie ich--dann werden Sie bis an das
+Ende Ihrer Tage wissen, dass sie in Wirklichkeit mir gehoert und nicht
+Ihnen.  Leben Sie wohl.  (Er wendet sich zum Geben.)
+
+(Morell in furchtbarer Unrube:)  Halt! ich werde ihr das alles nicht
+erzaehlen.
+
+(Marchbanks wieder nach der Tuer, wendet sich um:)  Sie muessen ihr
+entweder die Wahrheit sagen, wenn ich gehe, oder eine Luege.
+
+(Morell zoegernd:)  Marchbanks, es ist manchmal entschuldbar--
+
+(Marchbanks ihn unterbrechend:)  Zu luegen--ich weiss!  Diesmal wird es
+aber vergeblich sein!  Leben Sie wohl, Herr Pfarrer!  (Wie er sich
+endlich zur Tuer wendet, geht diese auf und Candida tritt in ibrem
+Hauskleid ein.)
+
+(Candida.)  Sie verlassen uns, Eugen?  (Sieht ihn genauer an:)  Aber,
+Sie werden doch nicht in diesem Zustand auf die Strasse gehen.  Sie
+sind ein Dichter, sicherlich!  Sieh' ihn nur an, Jakob!  (Sie fasst
+Eugen am Rock und zieht ihn nach vorne, ihn Morell zeigend.)  Sieh
+diesen Kragen an und diese Krawatte und dieses Haar.  (Zu Eugen:)  Man
+moechte glauben, dass jemand Sie hat erdrosseln wollen!  (Die beiden
+bueten sich, ihr schlechtes Gewissen zu verraten.)  Da,--halten Sie
+still.  (Sie knoepft ihm seinen Kragen, bindet sein Halstuch zu einer
+Schleife und ordnet sein Haar.)  So, so!  Nun sehen Sie so nett aus,
+dass ich es doch fuer besser hielte, Sie fruehstueckten mit uns, obwohl
+Sie es eigentlich nicht sollten, wie ich Ihnen schon gesagt habe.  In
+einer halben Stunde wird das Essen bereit sein.  (Sie glaettet sein
+Halstuch noch mit einer letzten Beruebrung; er kuesst ihr die Hand.)
+Nicht dumm sein.
+
+(Marchbanks.)  Ich moechte schon bleiben, gewiss--falls Ihr verehrter
+Herr Gemahl, der Herr Pastor, nichts dagegen einzuwenden hat.
+
+(Candida.)  Soll er bleiben, Jakob, wenn er verspricht, ein braver
+Junge zu sein und mir beim Tischdecken zu helfen?  (Marchbanks wendet
+den Kopf und sieht Morell ueber die Schulter fest an, seine Antwort
+herausfordernd.)
+
+(Morell kurz angebunden:)  O ja, gewiss; es waere mir lieb.  (Er geht an
+den Tisch und tut, als ob er mit den Papieren beschaeftigt waere.)
+
+(Marchbanks bietet Candida den Arm:)  Decken wir den Tisch.  (Sie nimmt
+seinen Arm, dann wenden sie sich zusammen nach der Tuer, im Hinausgehen.)
+Nun bin ich der gluecklichste Mensch von der Welt!
+
+(Morell.)  Das war ich auch--vor einer Stunde.
+
+(Vorhang)
+
+
+
+
+ZWEITER AKT
+
+(An demselben Tage, dasselbe Zimmer spaet nachmittags.  Der Stuhl fuer
+Morells Besucher steht wieder an dem Tisch, der womoeglich noch
+unordentlicher aussiebt als vorhin. Marchbanks, allein und muessig,
+versucht herauszukriegen, wie die Schreibmaschine arbeitet.  Er hoert
+jemanden kommen und stiehlt sich schuldbewusst fort an das Fenster
+und tut so, als ob er in die Aussiebt versunken waere.  Proserpina
+Garnett tritt mit ihrem Notizblock ein, der das Stenogramm von
+Morells Briefen enthaelt.  Sie setzt sich an die Schreibmaschine
+und will mit der Abschrift beginnen.  Sie ist viel zu sehr
+beschaeftigt, um Eugen zu bemerken.  Ungluecklicherweise versagt
+die erste Taste, auf die sie schlaegt.)
+
+(Proserpina.)  Himmel!  Sie haben sich mit der Maschine zu schaffen
+gemacht, Herr Marchbanks, und es hilft Ihnen nichts, wenn Sie auch
+noch so ein unschuldiges Gesicht aufsetzen.
+
+(Marchbanks schuechtern:)  Es tut mir sehr leid, Fraeulein Garnett.  Ich
+wollte nur zu schreiben versuchen.
+
+(Proserpina.)  Und dabei haben Sie diese Taste verdorben.
+
+(Marchbanks ernst:)  Ich versichere Ihnen, dass ich die Tasten nicht
+beruehrt habe.  Wahrhaftig nicht.  Ich habe nur ein kleines Rad gedreht.
+(Er zeigt unschluessig auf die Kurbel.)
+
+(Proserpina.)  Oh, nun verstehe ich.  (Sie bringt die Maschine in
+Ordnung und schwatzt dabei ununterbrochen:)  Mir scheint, Sie dachten,
+es waere eine Art Drehorgel.  Man braucht nur die Kurbel da zu drehen,
+und die Maschine schreibt einem den schoensten Liebesbrief glatt aufs
+Papier, he?
+
+(Marchbanks ernst:)  Ich kann mir vorstellen, dass eine Maschine
+erfunden werden koennte, die Liebesbriefe schreibt.--Es sind ja immer
+dieselben, nicht wahr?
+
+(Proserpina etwas aufgebracht, da jede derartige Unterhaltung--ausser
+scherzweise einmal--ihren Umgangsformen fernliegt:)  Woher soll ich das
+wissen?  Warum fragen Sie mich?
+
+(Marchbanks.)  Entschuldigen Sie.  Ich dachte, dass gescheite
+Leute--Leute, die Geschaefte besorgen, Briefe schreiben und aehnliche
+Dinge verrichten koennen--auch immer Liebesangelegenheiten haben.
+
+(Proserpina erbebt sich beleidigt:)  Herr Marchbanks!  (Sie siebt ihn
+strenge an und gebt sehr wuerdevoll zum Buecherschrank.)
+
+(Marchbanks naehert sich ihr demuetig:)  Ich hoffe, dass ich Sie nicht
+beleidigt habe.  Ich haette vielleicht auf Ihre Liebesangelegenheiten
+nicht anspielen sollen.
+
+(Proserpina nimmt ein blaues Buch aus einem Fach und wendet sich
+scharf nach ihm um:)  Ich habe keine Liebesangelegenheiten!  Wie koennen
+Sie es wagen, mir so etwas zu sagen?
+
+(Marchbanks naiv:)  Wirklich?  Oh, dann sind Sie auch schuechtern, wie
+ich, nicht wahr?
+
+(Proserpina.)  Ich bin gewiss nicht schuechtern: was meinen Sie damit?
+
+(Marchbanks geheimnisvoll:)  Sie muessen es sein.  Das ist der Grund,
+warum es so wenig echte Liebesgeschichten in der Welt gibt.  Wir gehen
+alle umher und sehnen uns nach Liebe, sie ist die erste
+Naturnotwendigkeit, das heisseste Gebet unseres Herzens, aber wir wagen
+es nicht, unsere Wuensche zu aeussern, wir sind zu schuechtern.  (Sehr
+ernst:)  Oh, Fraeulein Garnett, was wuerden Sie nicht darum geben, ohne
+Furcht zu sein,--ohne Scham--
+
+(Proserpina empoert:)  Nein, meiner Treu, das ist stark!
+
+(Marchbanks trotzig und ungeduldig:)  Sagen Sie mir nicht solche
+Albernheiten.  Sie taeuschen mich doch nicht.  Wozu soll das sein?
+Warum scheuen Sie sich, sich mir gegenueber so zu zeigen, wie Sie sind?
+Ich bin ja selbst genau so wie Sie.
+
+(Proserpina.)  Wie ich?  Bitte, ich weiss nicht recht, wollen Sie damit
+mir oder sich schmeicheln?  (Sie wendet sich ab, um zur
+Schreibmaschine zurueckzugeben.)
+
+(Marchbanks tritt ihr geheimnisvoll in den Weg:)  Still!  Ich bin auf
+der Suche nach Liebe, und ich finde sie in unermesslichen Schaetzen in
+den Herzen anderer aufgespeichert.  Aber ich wage es nicht, darum zu
+bitten,--eine fuerchterliche Schuechternheit schnuert mir die Kehle zu,
+und ich stehe da, stumm, aerger als stumm, und rede sinnloses Zeug und
+stammle toerichte Luegen.  Und ich sehe die Liebe, nach der ich
+verschmachte, an Katzen und Hunde und verhaetschelte Voegel vergeudet,
+weil die kommen und darum bitten.  (Beinahe fluesternd:)  Man muss Liebe
+verlangen,--sie ist wie ein Geist, sie kann nicht sprechen, bevor
+nicht zu ihr gesprochen wird.  (Mit seiner gewohnten Stimme, aber mit
+tiefer Melancholie:)  Alle Liebe in der Welt ringt nach Worten, aber
+sie wagt es nicht, zu sprechen, weil sie zu schuechtern ist, zu
+schuechtern, zu schuechtern!  Das ist die Tragik des Lebens!  (Mit einem
+tiefen Seufzer setzt er sieb in den Besuchsstuhl und vergraebt sein
+Gesicht in den Haenden.)
+
+(Proserpina verwundert, aber ohne ihren gesunden Menschenverstand zu
+verlieren,--ein Ehrenpunkt fuer sie im Verkehr mit fremden jungen
+Maennern:)  Es gibt aber schlechte Menschen, die diese Schuechternheit
+gelegentlich ueberwinden, nicht wahr?
+
+(Marchbanks faehrt beinahe wuetend auf:)  Schlechte Menschen!  Das heisst
+Menschen, die ohne Liebe sind, deshalb sind sie auch ohne Scham!  Sie
+haben den Mut, Liebe zu verlangen, weil sie keine brauchen; sie haben
+den Mut, sie anzubieten, weil sie keine zu geben haben!  (Er sinkt in
+seinen Stuhl und fuegt traurig hinzu:)  Aber wir, die wir Liebe haben
+und danach brennen, sie mit anderen auszutauschen, wir koennen kein
+Wort ueber die Lippen bringen.  (Schuechtern:)  Finden Sie das nicht auch?
+
+(Proserpina.)  Nehmen Sie sich in acht.  Wenn Sie nicht aufhoeren, so zu
+reden, werde ich das Zimmer verlassen, Herr Marchbanks.  Ich tue es
+wirklich!  Das gehoert sich nicht.  (Sie nimmt ihren Sitz vor der
+Schreibmaschine wieder ein, oeffnet das blaue Buch und macht sich
+bereit, daraus etwas zu kopieren.)
+
+(Marchbanks hilflos:)  Nichts gehoert sich, was wert ist, dass man
+darueber spricht!  (Er erhebt sich und wandert verloren im Zimmer umher:
+) Ich kann Sie nicht begreifen, Fraeulein Garnett.  Worueber soll ich
+denn sprechen?
+
+(Proserpina fertigt ihn kurz ab:)  Sprechen Sie ueber gleichgueltige
+Dinge.  Sprechen Sie ueber das Wetter.
+
+(Marchbanks.)  Wuerden Sie es ertragen, ueber gleichgueltige Dinge zu
+sprechen, wenn ein Kind neben Ihnen stuende, das vor Hunger bitterlich
+weinte?
+
+(Proserpina.)  Vermutlich nicht.
+
+(Marchbanks.)  Nun, ich kann auch nicht ueber gleichgueltige Dinge
+sprechen, waehrend mein Herz in seinem Hunger bitterlich weint.
+
+(Proserpina.)  Dann--schweigen Sie.
+
+(Marchbanks.)  Jawohl, darauf laeuft's immer hinaus, wir schweigen.
+Unterdrueckt das den Schrei Ihres Herzens--denn es schreit, nicht wahr?
+Es muss, wenn Sie ueberhaupt ein Herz haben.
+
+(Proserpina erhebt sich ploetzlich und presst ihre Hand aufs Herz.)  Oh,
+es ist vergeblich, arbeiten zu wollen, waehrend Sie so reden.  (Sie
+verlaesst ihren kleinen Tisch und setzt sich auf das Sofa.  Ihre Gefuehle
+sind heftig aufgewuehlt.)  Es kuemmert Sie gar nichts, ob mein Herz
+schreit oder nicht, aber es ist mir so, als muesste ich nun doch ueber
+all das zu Ihnen sprechen.
+
+(Marchbanks.)  Das brauchen Sie nicht; ich weiss doch, dass es so ist.
+
+(Proserpina.)  Merken Sie sich: wenn Sie jemals behaupten sollten, dass
+ich derlei gesagt habe, dann werde ich es leugnen.
+
+(Marchbanks mitleidig:)  Ja, das weiss ich.  Deshalb finden Sie auch
+nicht den Mut, es ihm zu sagen.
+
+(Proserpina aufspringend:)  Ihm?!  Wem?!
+
+(Marchbanks.)  Wem es auch sei.  Dem Manne, den Sie lieben.  Irgend
+jemandem.  Dem Unterpfarrer Herrn Mill vielleicht.
+
+(Proserpina verachtungsvoll:)  Herrn Mill?  Wahrhaftig, das ist der
+rechte Mann, mir das Herz zu brechen.  Da waeren Sie mir noch lieber.
+
+(Marchbanks zurueckweichend:)  Nein, wirklich!  Es tut mit leid, aber
+daran duerfen Sie nicht denken.  Ich--
+
+(Proserpina scharf, geht ans Feuer und bleibt davor stehen, ihm den
+Ruecken zuwendend:)  Oh, fuerchten Sie nichts, Sie sind es nicht.  Es ist
+gar keine bestimmte Person.
+
+(Marchbanks.)  Ich verstehe.  Sie fuehlen, dass Sie jeden Mann lieben
+koennten, der Ihnen sein Herz anboete--
+
+(Proserpina ausser sich:)  Nein, das koennte ich nicht!  Jeden, der mir
+sein Herz anboete!  Fuer was halten Sie mich?
+
+(Marchbanks entmutigt:)  Es ist vergebens, Sie wollen mir keine
+wirklichen Antworten geben, nur diese leeren Worte, die jedermann sagt.
+(Er geht nach dem Sofa und setzt sich trostlos nieder.)
+
+(Proserpina die es wurmt, in den Augen eines Aristokraten manierlos zu
+erscheinen:)  Wenn Sie originelle Unterhaltung wuenschen, dann ist es
+besser, Sie sprechen mit sich selbst.
+
+(Marchbanks.)  Das tun alle Dichter; sie sprechen laut mit sich selbst;
+und die Welt ueberhoert sie.  Aber es ist furchtbar einsam, nicht
+manchmal auch jemand anders sprechen zu hoeren.
+
+(Proserpina.)  Warten Sie, bis Herr Morell kommt.  Der wird schon mit
+Ihnen reden.  (Marchbanks schaudert.)  Oh, Sie brauchen die Nase nicht
+zu ruempfen, er kann besser sprechen als Sie.  (Lebhaft:)  Er wird Ihnen
+den kleinen Kopf schon zurechtsetzen.  (Sie ist im Begriff aergerlich
+an ihren Platz zurueckzugeben, als er, ploetzlich erleuchtet, aufspringt
+und sie anhaelt.)
+
+(Marchbanks.)  Ah, jetzt begreife ich!
+
+(Proserpina erroetend:)  Was begreifen Sie?
+
+(Marchbanks.)  Ihr Geheimnis!  Sagen Sie mir, ist es wirklich und
+wahrhaftig moeglich, dass eine Frau ihn liebt?
+
+(Proserpina als ob dies ihr ueber den Spass ginge:)  Genug!
+
+(Marchbanks leidenschaftlich:)  Nein, antworten Sie mir!  Ich will es
+wissen, ich muss es wissen, ich kann es nicht begreifen.  Ich kann an
+ihm nichts finden als Worte, fromme Vorsaetze, was die Leute Guete
+nennen!  Sie koennen ihn deswegen doch nicht lieben!
+
+(Proserpina versucht, ihn durch ihr kuehles Wesen stutzig zu machen:)
+Ich weiss ganz einfach nicht, wovon Sie sprechen--ich verstehe Sie
+nicht.
+
+(Marchbanks heftig:)  Sie verstehen mich ganz gut.  Sie luegen!
+
+(Proserpina.)  Oh!
+
+(Marchbanks.)  Sie verstehen, und Sie wissen.  (Entschlossen, eine
+Antwort zu bekommen:)  Ist es moeglich, dass eine Frau ihn lieben kann?
+Ja oder nein!
+
+(Proserpina ihm gerade ins Gesicht blickend:)  Ja!  (Er bedeckt sein
+Gesicht mit den Haenden.)  Was in aller Welt fehlt Ihnen denn?  (Er
+nimmt die Haende herab und sieht sie an.  Erschreckt ueber das traurige
+Gesicht, das sich ihr darbietet, eilt sie so weit wie moeglich von ihm
+fort, behaelt aber ihre Augen auf ihn gerichtet, bis er sich von ihr
+abwendet und nach dem Kinderstuhl am Kamin geht, wo er sich in
+tiefster Trostlosigkeit niederlaesst.  Proserpina eilt zur Tuer, die Tuer
+geht auf und Burgess tritt ein.  Als sie ihn erblickt, ruft sie aus:)
+Gott sei Dank, es kommt jemand!  (Setzt sich wieder beruhigt an ihren
+Tisch.  Sie legt einen neuen Bogen in die Maschine, waehrend Burgess zu
+Eugen hinuebergebt.)
+
+(Burgess beflissen, sich um den vornehmen Besucher zu kuemmern:)  Na,
+gehoert sich das, wie man Sie hier sich selbst ueberlaesst, Herr
+Marchbanks?  Ich bin gekommen, Ihnen Gesellschaft zu leisten.
+(Marchbanks siebt zu ihm mit einer Bestuerzung auf, die Burgess aber
+gar nicht merkt.)  Jakob empfaengt eine Deputation im Speisezimmer, und
+Candy ist oben und unterrichtet eine junge Naeherin, fuer die sie sich
+interessiert.  Sie sitzt bei ihr und lehrt sie lesen, in einem frommen
+Buche: die himmlischen Zwillinge.  (Teilnahmsvoll:)  Sie muessen es hier
+recht langweilig finden, so ohne einen Menschen, mit dem Sie reden
+koennen, ausser der Schreiberin.
+
+(Proserpina aeusserst erbittert:)  Er wird sich jetzt ganz wohl fuehlen,
+da er das Glueck hat, Ihre gebildete Unterhaltung zu geniessen,--das ist
+schon ein Trost.  (Sie beginnt mit heftigem Geraeusch zu schreiben.)
+
+(Burgess erstaunt ueber ihre Kuehnheit:)  Mit Ihnen hab' ich nicht
+gesprochen, soviel ich weiss, Sie junges Ding!
+
+(Proserpina scharf zu Marchbanks:)  Haben Sie jemals solche Manieren
+gesehen, Herr Marchbanks?
+
+(Burgess mit wichtigtuendem Ernst:)  Herr Marchbanks ist ein Edelmann,
+der seine Stellung kennt; das ist mehr, als manche Leute von sich
+sagen koennen.
+
+(Proserpina zornig:)  Gluecklicherweise gehoeren Sie und ich nicht zu den
+"Damen" und "Herren"; ich wuerde Ihnen schon meine Meinung sagen, wenn
+Herr Marchbanks nicht zugegen waere.  (Sie zieht den Brief so heftig
+aus der Maschine heraus, dass er zerreisst.)  So! nun habe ich den Brief
+verdorben, jetzt kann ich noch mal von vorne anfangen.  Oh, ich kann
+mich nicht beherrschen.--Sie dummer alter Schafskopf, Sie!
+
+(Burgess erhebt sich, atemlos vor Entruestung:)  Was, ein dummer alter
+Schafskopf bin ich?!  Das ist stark!  (Ausser Atem:)  Gut, gut!  Warten
+Sie nur, das werde ich Ihrem Prinzipal sagen--ich will Sie lehren--Sie
+sollen es sehen!
+
+(Proserpina.)  Ich--
+
+(Burgess sie unterbrechend:)  Genug, Ihr Reden nuetzt Ihnen nun nichts
+mehr, Sie sollen mich kennen lernen! (Proserpina schiebt ihre Walze
+mit einem zornigen Stoss herum und setzt verachtungsvoll ihre Arbeit
+fort.)  Nehmen Sie keine Notiz von ihr, Herr Marchbanks, sie ist es
+nicht wert.  (Er setzt sich stolz wieder hin.)
+
+(Marchbanks fuerchterlich nervoes und verlegen:)  Waere es nicht besser,
+wir wuerden von etwas anderem sprechen.  Ich--ich glaube nicht, dass
+Fraeulein Garnett es boese gemeint hat.
+
+(Proserpina mit fester Ueberzeugung:)  Ob ich es boese gemeint habe!
+Doch!
+
+(Burgess.)  Ich will mich nicht so weit erniedrigen, von ihr ueberhaupt
+noch Notiz zu nehmen.  (Eine elektrische Klingel laeutet zweimal.)
+
+(Proserpina rafft Notizhlock und Papier zusammen:)  Das gilt mir!  (Sie
+eilt hinaus.)
+
+(Burgess ihr nachrufend:)  Oh, wir koennen Sie entbehren.  (Er freut
+sich ueber den Triumph, das letzte Wort behalten zu haben, und doch
+halb und halb geneigt, noch mehr zu sagen, sieht er ihr einen
+Augenblick lang nach, dann laesst er sich auf seinen Platz neben Eugen
+nieder und spricht sehr vertraulich zu ihm:)  Jetzt, wo wir allein sind,
+Herr Marchbanks, lassen Sie mich Ihnen einen freundlichen Wink geben,
+den ich nicht jedermann geben wuerde.  Wie lange kennen Sie meinen
+Schwiegersohn Jakob schon?
+
+(Marchbanks.)  Ich weiss nicht.  Ich kann mir Daten niemals merken,
+--vielleicht einige Monate.
+
+(Burgess.)  Haben Sie nie etwas Sonderbares an ihm bemerkt?
+
+(Marchbanks.)  Nicht dass ich wuesste.
+
+(Burgess ausdrucksvoll:)  Das werden Sie auch schwerlich.  Darin liegt
+eben die Gefahr.  Nun--er ist verrueckt.
+
+(Marchbanks.)  Verrueckt?!
+
+(Burgess.)  Total verrueckt.  Beobachten Sie ihn nur, und Sie werden es
+selbst finden.
+
+(Marchbanks aengstlich:)  Aber das scheint Ihnen gewiss nur so, weil
+seine Ansichten--
+
+(Burgess beruehrt Eugens Knie mit dem Zeigefinger und drueckt es, um
+seine Aufmerksamkeit zu erregen:)  Genau dasselbe habe ich frueher
+gedacht, Heir Marchbanks.  Ich glaubte lange genug, es waeren nur seine
+Ansichten, obwohl Ansichten zu sehr ernsten Angelegenheiten werden,
+sobald Leute danach handeln, wie er; aber danach habe ich nicht
+geurteilt.  (Er siebt umher, um sich zu ueberzeugen, dass sie allein
+sind, und neigt sich zu Eugens Ohr.)  Was, glauben Sie, hat er heute
+morgen in diesem Zimmer zu mir gesagt?
+
+(Marchbanks.)  Was denn?
+
+(Burgess.)  Er sagte mir, dass ich--so wahr, als wir hier sitzen--er
+sagte ganz ruhig: "Ich bin ein Narr und Sie sind ein Schurke"...  Ich
+ein Schurke--bedenken Sie nur--und dann schuettelte er mir die Hand
+dazu, als ob seine Meinung schmeichelhaft fuer mich waere.  Wollen Sie
+behaupten, dass so ein Mensch nicht verrueckt ist?
+
+(Morell von aussen "Proserpina" rufend, waehrend er die Tuer oeffnet:)
+Schreiben Sie alle Namen und Adressen auf, Fraeulein Garnett.
+
+(Proserpina aus der Entfernung:)  Jawohl, Herr Pastor!  (Morell tritt
+ein, mit den Dokumenten der Deputation in der Hand.)
+
+(Burgess beiseite zu Marchbanks:)  Oh, da ist er.  Beobachten Sie ihn
+nur, Sie werden schon sehen.  (Erhebt sich mit wichtiger Miene:)  Ich
+bedaure, Jakob, mich bei Ihnen beklagen zu muessen.  Ich tue es nicht
+gerne, aber ich fuehle, dass es meine Pflicht und mein Recht ist.
+
+(Morell.)  Was ist denn geschehen?
+
+(Burgess.)  Herr Marchbanks wird es bestaetigen, er war Zeuge.  (Sehr
+feierlich:)  Ihre Schreiberin vergass sich so weit, mich einen dummen
+alten Schafskopf zu nennen.
+
+(Morell mit groesster Herzlichkeit:)  Oh, sieht das Prossi nicht ganz
+aehnlich?  Sie ist so aufrichtig, sie kann sich nicht beherrschen.
+Arme Prossi, ha, ha!
+
+(Burgess zitternd vor Wut:)  Und erwarten Sie, dass ich mir das von
+ihresgleichen ruhig gefallen lasse?
+
+(Morell.)  Bah, Unsinn.  Nehmen Sie keine Notiz davon, lassen Sie's gut
+sein.  (Er geht an das Schreibpult und legt die Papiere in eines der
+Schubfaecher.)
+
+(Burgess.)  Oh, ich mache mir nichts daraus.  Ich bin ueber derlei
+erhaben.  Aber war es recht?  Das ist es, was ich zu wissen wuensche!
+--war es recht?
+
+(Morell.)  Das ist eine Frage fuer die Kirche und nicht fuer Laien.
+Wurde Ihnen dadurch irgendein Schaden zugefuegt? danach muessen Sie
+fragen--selbstverstaendlich "nein".  Also denken Sie nicht mehr daran.
+(Er laesst den Gegenstand fallen, geht nach seinem Platz an den Tisch
+und beginnt an seiner Korrespondenz zu arbeiten.)
+
+(Burgess beiseite zu Marchbanks:)  Was habe ich Ihnen gesagt?  Total
+verrueckt!  (Er geht an den Tisch und fragt mit der Hoeflichkeit eines
+Hungrigen:)  Wann wird zu Tisch gegangen, Jakob?
+
+(Morell.)  Erst nach einigen Stunden.
+
+(Burgess mit klagender Entsagung:)  Dann geben Sie mir, bitte, ein
+huebsches Buch, am Kamin zu lesen--sein Sie so gut, Jakob.
+
+(Morell.)  Was fuer ein Buch,--ein gutes?
+
+(Burgess beinahe mit einem Aufschrei des Widerwillens:)  Nein.  Irgend
+was Lustiges, womit man die Zeit totschlagen kann.
+
+(Morell nimmt eine illustrierte Zeitschrift vom Tisch und bietet sie
+ihm an, er ergreift sie demuetig:)  Ich danke Ihnen, Jakob.  (Er geht
+zurueck zum Kamin, laesst sich bequem in den grossen Stuhl nieder und
+liest.)
+
+(Morell waehrend er schreibt:)  Candida wird gleich kommen und Ihnen
+Gesellschaft leisten.  Sie ist jetzt fertig mit ihrer Schuelerin und
+fuellt die Lampen.
+
+(Marchbanks faehrt empor in wildem Entsetzen:)  Aber das wird ihre Haende
+beschmutzen,--das kann ich nicht dulden, Herr Pastor, das ist eine
+Schande; ich werde die Lampen fuellen.  (Er wendet sich nach der Tuer.)
+
+(Morell.)  Lassen Sie es lieber sein.  (Marchbanks bleibt unschluessig
+stehen: ) Sie wuerde Ihnen hoechstens meine Schuhe zu putzen geben, um
+mir die Arbeit zu ersparen, es morgen frueh selbst zu tun.
+
+(Burgess mit grosser Missbilligung:)  Halten Sie kein Maedchen mehr, Jakob?
+
+(Morell.)  Ja, aber es ist keine Sklavin, und das Haus sieht aus, als
+ob ich drei hielte.  Daraus folgt, dass jeder mithelfen muss.  Das geht
+ganz gut.  Prossi und ich koennen nach dem Fruehstueck, waehrend wir
+abwaschen, ueber unsere Geschaefte sprechen; das Abwaschen macht keine
+Muehe, wenn es zwei besorgen.
+
+(Marchbanks gequaelt:)  Glauben Sie, dass jede Frau so grobkoernig ist wie
+Fraeulein Garnett?
+
+(Burgess pathetisch:)  Sie haben ganz recht, Herr Marchbanks,
+vollkommen recht,--die ist grobkoernig!
+
+(Morell ruhig und bedeutungsvoll:)  Marchbanks!
+
+(Marchbanks.)  Ja.
+
+(Morell.)  Wie viele Dienstboten haelt Ihr Vater?
+
+(Marchbanks.)  Oh, ich weiss nicht.  (Er gebt unbehaglich an das Sofa
+zurueck, als ob er sich so weit fort wie moeglich vor Morells Fragen
+retten moechte, setzt sich in grosser Verstoertheit und denkt an das
+Petroleum.)
+
+(Morell sehr ernst:)  So viele, dass Sie es nicht einmal wissen.
+(angriffsbereit:)  Immerhin, wenn irgendeine grobkoernige Arbeit zu
+verrichten ist, dann klingeln Sie und halsen sie jemand anders
+auf--das ist eine der grossen Tatsachen in Ihrem Dasein, nicht wahr?
+
+(Marchbanks.)  Oh, quaelen Sie mich nicht.  Die eine grosse Tatsache hier
+ist jetzt, dass die wundervollen Finger Ihrer Frau mit Petroleum
+beschmutzt werden, waehrend Sie bequem hier sitzen und darueber Reden
+halten--endlose Reden und Predigten--Worte--Worte--nichts als Worte!
+
+(Burgess dem diese Erwiderung sehr gelegen kommt:)  Hoert, hoert!  Besser
+konnte er's ihm nicht geben!  (Strahlend:)  Da haben Sie es, Jakob!
+Ganz so ist es.  (Candida trat ein, in einer reinen Schuerze, mit einer
+geputzten und gefuellten, zum Anzuenden fertigen Arbeitslampe.  Sie
+stellt sie auf den Tisch neben Morell, damit er sie zur Hand hat.)
+
+(Candida reibt ihre Fingerspitzen gegeneinander, mit einem leichten
+Krausziehen ihrer Nase:)  Wenn Sie bei uns bleiben, Eugen, ich glaube,
+dann werde ich Ihnen das Fuellen der Lampe uebertragen.
+
+(Marchbanks.)  Ich werde ueberhaupt nur unter der Bedingung bleiben, dass
+Sie mir alle grobe Arbeit uebertragen.
+
+(Candida.)  Das ist zwar sehr galant, aber ich moechte doch vorher
+wissen, wie Sie sie machen.  (Wendet sich zu Morell:)  Jakob, du hast
+in meiner Abwesenheit nicht gehoerig nach dem Rechten gesehen.
+
+(Morell.)  Was habe ich denn getan oder nicht getan, meine Liebe?
+
+(Candida ernstlich aergerlich:)  Meine eigene kleine
+Lieblingsnagelbuerste wurde zum Stiefelputzen verwendet.  (Ein
+herzzerreissender Klagelaut entringt sich Marchbanks' Brust.  Burgess
+sieht sich erstaunt um, Candida eilt ans Sofa:)  Was ist los?  Sind Sie
+krank, Eugen?
+
+(Marchbanks.)  Nein, nicht krank.  Nur Jammer erfasst mich, Jammer,
+Jammer!  (Er schlaegt die Haende vor das Gesicht.)
+
+(Burgess erschreckt:)  Was haben Sie, Herr Marchbanks?  Oh, das ist
+schlimm in Ihrem Alter; Sie muessen trachten, sich das Trinken nach und
+nach abzugewoehnen.
+
+(Candida beruhigt:)  Unsinn, Papa.  Das ist nur poetischer Jammer.
+Nicht wahr, Eugen?  (Streichelt ihn.)
+
+(Burgess verlegen:)  Oh, poetischen Jammer hat er,--verzeihen Sie, das
+wusste ich nicht.  (Er wendet sich wieder nach dem Feuer, seine
+Unueberlegtheit bereuend.)
+
+(Candida.)  Was ist's denn, Eugen?  Wegen der Nagelbuerste?  (Er
+schaudert.)  Es ist ja nichts dabei, lassen Sie's gut sein.  (Sie setzt
+sich neben ihn.)  Wollen Sie mir eine huebsche neue schenken, mit
+Elfenbeinruecken und eingelegtem Perlmutter?
+
+(Marchbanks sanft und melodisch, aber traurig und schmachtend:)  Nein,
+keine Nagelbuerste, aber ein Boot, eine kleine Schaluppe, um darin
+fortzusegeln, weit fort von der Welt, dorthin, wo Marmorboeden vom
+Regen gewaschen und von der Sonne getrocknet werden, und wo der
+Suedwind die wundervoll gruenen und purpurnen Teppiche fegt.  Oder einen
+Wagen moechte ich Ihnen schenken; uns hinaufzutragen in den Himmel, wo
+die Lampen Sterne sind und nicht taeglich mit Petroleum gefuellt werden
+muessen.
+
+(Morell barsch:)  Und wo es nichts anderes zu tun gibt, als faul,
+selbstsuechtig und unnuetz zu sein.
+
+(Candida unangenehm beruehrt:)  Oh, Jakob, wie kannst du nur alles so
+verderben!
+
+(Marchbanks feurig:)  Ja: faul, selbstsuechtig und unnuetz, das heisst
+schoen, frei und gluecklich sein.  Hat das nicht jeder Mann mit seiner
+ganzen Seele fuer die Frau gewuenscht, die er liebte?  Das ist auch mein
+Ideal.  Was ist das Ihre und das all der entsetzlichen Menschen, die
+in diesen fuerchterlichen Haeuserreihen wohnen?  Predigten und
+Schuhbuersten!  Fuer Sie die Predigten und fuer Ihre Frau die Buerste!
+
+(Candida drollig:)  Er putzt die Schuhe, Eugen.  Morgen werden Sie sie
+putzen muessen, weil Sie das von ihm gesagt haben.
+
+(Marchbanks.)  Oh, sprechen Sie nicht von Schuhen; Ihre Fuesse wuerden
+auch in einer Wildnis schoen bleiben.
+
+(Candida.)  Meine Fuesse wuerden auf der Hackneystrasse ohne Schuhe nicht
+sehr schoen aussehn.
+
+(Burgess daran Anstoss nehmend:)  Geh, Candy, sei nicht ordinaer.  Herr
+Marchbanks ist daran nicht gewoehnt.  Du hast ihm schon wieder Jammer
+eingefloesst,--ich meine poetischen Jammer.  (Morell schweigt, scheinbar
+ist er mit seinen Briefen beschaeftigt.  Tatsaechlich ist er aber ueber
+seine neue und beunruhigende Erfahrung in sorgenvolle Gedanken
+vertieft: je sicherer er seiner moralischen Ausfaelle ist, desto
+sicherer und wirkungsvoller pariert sie Eugen.  Es schmerzt Morell
+sehr, dass er einen Menschen zu fuerchten anfaengt, den er nicht achten
+kann.  Fraeulein Garnett kommt mit einem Telegramm herein.)
+
+(Proserpina haendigt das Telegramm Morell ein:)  Rueckantwort bezahlt,
+der Bote wartet.  (Zu Candida, waehrend sie zu ihrer Maschine geht und
+sich setzt:)  Marie wartet auf Sie in der Kueche, Frau Morell.  (Candida
+erhebt sich:)  Die Zwiebeln sind gekommen.
+
+(Marchbanks krampfhaft:)  Zwiebeln!?
+
+(Candida.)  Ja, Zwiebeln, und nicht einmal spanische! garstige, kleine
+rote Zwiebeln!  Sie koennen mir helfen, sie zu zerschneiden; kommen Sie.
+(Sie nimmt ihn am Handgelenk und laeuft, ihn nachziehend, hinaus.
+Burgess erhebt sich verbluefft und starrt ihnen, auf dem Kaminteppich
+stehend, nach.)
+
+(Burgess.)  Candy sollte den Neffen eines Pairs nicht so behandeln.
+Das geht doch zu weit, Jakob.  Hat er oefters solche komischen Anfaelle?
+
+(Morell kurz, ein Telegramm schreibend:)  Ich weiss nicht.
+
+(Burgess sentimental:)  Er spricht sehr nett.  Ich habe immer etwas
+Sinn fuer Poesie gehabt.  Candy schlaegt mir darin nach.  Ich musste ihr
+immer Maerchen erzaehlen, als sie noch ein so kleines Maedchen war.  (Er
+haelt die Hand ungefaehr zwei Fuss hoch ueber den Fussboden.)
+
+(Morell beschaeftigt:)  So, wirklich?  (Er loescht das Telegramm ab und
+geht hinaus.)
+
+(Proserpina.)  Haben Sie die Maerchen, die Sie Ihrer Tochter erzaehlten,
+selbst erfunden?
+
+(Burgess wuerdigt sie keiner Antwort und nimmt vor dem Kamin die
+Stellung tiefster Verachtung gegen sie ein.)
+
+(Proserpina sehr ruhig:)  Ich haette nie gedacht, dass Sie derlei koennten.
+Uebrigens moechte ich Sie doch warnen, da Sie so grosses Interesse
+an Herrn Marchbanks nehmen.  Er ist verrueckt.
+
+(Burgess.)  Verrueckt!  Was?  Der auch?
+
+(Proserpina.)  Total verrueckt!  Ich kann Ihnen gar nicht sagen, wie
+sehr er mich vorhin erschreckte--das kann ich Ihnen versichern,
+gerade bevor Sie kamen.--Haben Sie das merkwuerdige Zeug, das er sprach,
+nicht gehoert?
+
+(Burgess.)  So, das ist also der poetische Jammer?  Potztausend, es ist
+mir selbst schon ein oder zweimal aufgefallen, dass es nicht ganz
+richtig mit ihm ist.  (Er durchschreitet das Zimmer und hebt seine
+Stimme, waehrend er geht:)  Na, das ist ein huebsches Irrenhaus fuer einen
+Menschen, der ausser Ihnen niemanden hat, sich um ihn zu kuemmern.
+
+(Proserpina waehrend er bei ihr vorbeikommt:)  Ja, wie fuerchterlich waere
+es, wenn Ihnen da etwas zustiesse.
+
+(Burgess hochmuetig:)  Erlauben Sie sich keine Bemerkungen!  Sagen Sie
+Ihrem Prinzipal, dass ich in den Garten gegangen bin, meine Pfeife zu
+rauchen.
+
+(Proserpina spottend:)  Oh!--(Ehe Burgess erwidern kann, kehrt Morell
+zurueck.)
+
+(Burgess gefuehlvoll:)  Ich gehe in den Garten, meine Pfeife zu rauchen,
+Jakob.
+
+(Morell kurz angebunden:)  Schon gut, schon gut!  (Burgess geht
+wuerdevoll hinaus, wie ein mueder alter Mann.  Morell steht vor dem
+Tisch, wendet seine Papiere um und spricht zu Proserpina hinueber, halb
+humorvoll, halb geistesabwesend.)
+
+(Morell.)  Nun, Prossi, warum haben Sie meinen Schwiegervater mit
+Schimpfnamen belegt?
+
+(Proserpina wird feuerrot und sieht rasch zu ihm auf, halb
+vorwurfsvoll, halb erschrocken:)  Ich--(Sie bricht in Traenen aus.)
+
+(Morell lehnt sich mit leisem Humor zu ihr hinueber und troestet sie:)
+Oh, lassen Sie, lassen Sie nur! es ist ja nichts dabei: er ist ein
+alter Schafskopf, nicht wahr?  (Mit einem krampfhaften Schluchzen
+stuerzt sie nach der Tuer und verschwindet, die Tuer zuschlagend.  Morell
+schuettelt resigniert den Kopf, seufzt und geht muede an seinen Stuhl,
+wo er sich an die Arbeit setzt.  Er sieht alt und vergraemt aus.
+Candida kommt herein; sie hat ihre haeusliche Arbeit beendet und die
+Schuerze abgenommen.  Sie bemerkt sofort Morells niedergeschlagenes
+Aussehen, setzt sich ruhig auf den Besuchsstuhl und betrachtet ihn
+aufmerksam.  Sie schweigt.)
+
+(Morell sieht auf, die Feder einen Moment absetzend:)  Nun, wo ist
+Eugen?
+
+(Candida.)  Er waescht sich die Haende in der Waschkueche--unter der
+Wasserleitung.  Er wird ein ausgezeichneter Koch werden, wenn er nur
+erst seine Furcht vor Marie ueberwunden hat.
+
+(Morell kurz:)  Gewiss, zweifellos.  (Er faengt wieder zu schreiben an.)
+
+(Candida geht naeher und legt ihre Haende sanft auf die seinen, um ihn
+aufzuhalten, und sagt:)  Komm zu mir, mein Lieber.  Lass dich anschauen.
+(Er legt seine Feder weg und stellt sich ihr zur Verfuegung; sie lasst
+ihn aufstehen, zieht ihn ein wenig vom Tisch fort und betrachtet ihn
+mit kritischen Blicken.)  Wende dein Gesicht einmal gegen das Licht.
+(Sie stellt ihn mit dem Gesicht gegen das Fenster.)  Mein alter Junge
+sieht nicht gut aus,--hat er sich ueberanstrengt?
+
+(Morell.)  Nicht mehr als gewoehnlich.
+
+(Candida.)  Er sieht sehr bleich und grau, runzelig und alt aus.
+(Seine Melancholie nimmt zu und Candida fasst sie geflissentlich lustig
+an.)  Komm her.  (Sie zieht ihn zum Lehnstuhl:)  Du hast fuer heute genug
+geschrieben.  Ueberlass Prossi alles Weitere, und wir wollen ein
+bisschen plaudern.
+
+(Morell.)  Aber--
+
+(Candida nachdruecklich:)  Ja, du musst mit mir plaudern.  (Sie zwingt
+ihn, Platz zu nehmen, und setzt sich auf den Teppich zu seinen Fuessen.)
+Nun (seine Haende streichelnd:)  faengst du schon an, besser auszusehen.
+Warum gibst du alle diese ermuedenden Extraarbeiten nicht auf?  Jeden
+Abend gehst du aus, um zu predigen und zu reden.  Freilich, was du
+sagst, ist alles schoen und gut; aber es nuetzt ja nichts: sie geben
+nicht das geringste darauf.  Sie sind natuerlich deiner Ansicht--aber
+was hat man davon, wenn Leute mit einem einverstanden sind und dann
+hingehen und das Gegenteil von allem tun, sobald man den Ruecken kehrt?
+Denke nur an unsere Gemeinde in St. Dominik?  Warum wollen sie dich
+jeden Sonntag ueber Christentum reden hoeren?  Nur weil sie mit ihren
+Geschaeften und Geldangelegenheiten sechs Tage lang so sehr beschaeftigt
+waren, dass sie am siebenten Tage nichts davon hoeren moegen.  Da wollen
+sie ruhen und sich erbauen, damit sie frisch zurueckkehren und besser
+als je dem Gelde nachjagen koennen.  Du hilfst ihnen nur noch dabei,
+anstatt sie daran zu hindern.
+
+(Morell mit energischem Ernst:)  Du weisst sehr gut, Candida, dass ich
+sie deswegen oft tuechtig ausschelte.  Aber wenn ihr Kirchgang ihnen
+nichts anderes bedeutet als Ruhe und Zerstreuung, warum waehlen sie
+dann nichts Lustigeres, Angenehmeres?  Es muss doch etwas Gutes in der
+Tatsache liegen, dass sie die Kirche am Sonntag schlimmeren Orten
+vorziehen.
+
+(Candida.)  Oh, die schlimmen Orte sind eben nicht offen, und selbst
+wenn sie es waeren, sie wuerden sich nicht trauen hinzugehen, aus Angst
+gesehn zu werden.  Ueberdies, lieber Jakob, predigst du so
+wundervoll, dass es fuer sie so gut wie ein Schauspiel ist.  Warum,
+glaubst du, sind die Frauen alle so begeistert?
+
+(Morell verletzt:)  Candida!
+
+(Candida.)  Oh, ich weiss.  Du Ahnungsloser, du glaubst, dein
+Sozialismus und deine Religion machen es,--doch wenn's bloss das waere,
+dann wuerden sie tun, was du ihnen sagst, anstatt nur hinzugehen und
+dich anzustarren;--sie haben alle Prossis Leiden.
+
+(Morell.)  Prossis Leiden?  Was meinst du damit, Candida?
+
+(Candida.)  Ja, Prossis und das all der anderen Sekretaerinnen, die du
+hattest.  Warum, meinst du, laesst sich Prossi herbei, abzuwaschen,
+Kartoffeln zu schaelen und sich auf alle moegliche Art zu erniedrigen,
+da sie bei dir doch sechs Schillinge in der Woche weniger verdient,
+als sie in einem Bureau in der City bekaeme?  Sie ist verliebt in dich,
+das ist der Grund,--sie sind alle in dich verliebt.  Und du bist ins
+Predigen verliebt, weil du das so wundervoll kannst.  Und du glaubst,
+es sei alles Enthusiasmus fuer das Himmelreich auf Erden--und sie
+glauben es auch--o du lieber Dummkopf, du!
+
+(Morell.)  Candida, was ist das fuer ein schrecklicher, seelenmordender
+Zynismus?  Scherzest du oder--ist es moeglich--bist du eifersuechtig?
+
+(Candida seltsam gedankenvoll:)  Ja, manchmal bin ich etwas
+eifersuechtig.
+
+(Morell unglaeubig:)  Auf Prossi?
+
+(Candida lachend:)  Nein, nein, nein.  Nicht eifersuechtig a u f
+jemanden.  Eifersuechtig f ue r jemanden, der n i c h t so geliebt wird,
+wie er sollte.
+
+(Morell.)  Bin ich das?
+
+(Candida.)  Du?  Nein.  Du bist verwoehnt durch Liebe und Verehrung,
+mehr, als fuer dich gut ist.--Nein, ich meine Eugen.
+
+(Morell betroffen:)  Eugen?
+
+(Candida.)  Es scheint mir ungerecht, dass du alle Liebe besitzen sollst
+und er keine, obgleich er sie so viel noetiger hat als du.  (Eine
+krampfhafte Bewegung schuettelt ihn gegen seinen Willen.)  Was ist dir,
+quaele ich dich?
+
+(Morell rasch:)  Durchaus nicht.  (Er sieht sie mit unruhiger Spannung
+an.)  Du weisst, dass ich dir blindlings vertraue, Candida.
+
+(Candida.)  Du eitler Mann.  Bist du deiner Unwiderstehlichkeit so
+sicher?
+
+(Morell.)  Candida, du verletzest mich.  Ich habe an
+Unwiderstehlichkeit nie gedacht.  Deiner Froemmigkeit, deiner Reinheit
+vertraue ich.
+
+(Candida.)  Was fuer haessliche, ungemuetliche Dinge du mir da sagst,--oh,
+du bist wirklich ein Pastor, Jakob, ein Pastor durch und durch!
+
+(Morell ins Herz getroffen, sich von ihr abwendend:)  Das sagt Eugen
+auch.
+
+(Candida neigt sich mit lebhaftem Interesse zu ihm, die Arme auf
+seinen Knien:)  Eugen hat immer recht.  Er ist ein wundervoller Junge,
+ich habe ihn lieber und lieber gewonnen waehrend der ganzen Zeit, wo
+ich fort war.  Weisst du, Jakob, dass er, obwohl er selbst nicht die
+leiseste Ahnung davon hat, im Begriff steht, sich wahnsinnig in mich
+zu verlieben?
+
+(Morell grimmig:)  Oh, er selbst hat nicht die leiseste Ahnung davon,
+wirklich?
+
+(Candida.)   Nicht die geringste.  (Sie nimmt ihre Arme von seinen Knien
+und wendet sich gedankenvoll ab, wobei sie eine bequeme Stellung
+einnimmt, die Haende im Schoss.)   Eines Tages wird er es wissen,--wenn er
+erwachsen und erfahren sein wird wie du--da wird er erkannt haben, dass
+ich es wissen musste!--Ich bin neugierig, was er dann von mir denken
+wird.
+
+(Morell.)   Nichts Boeses, Candida.  Ich hoffe und vertraue, nichts Boeses.
+
+(Candida zweifelnd:)  Das wird davon abhaengen...
+
+(Morell erschreckt:)  Abhaengen!
+
+(Candida ihn ansehend:)  Ja, es wird davon abhaengen, was er bis dahin
+erleben wird.  Er sieht sie verstaendnislos an.  Begreifst du das
+nicht?  Es haengt ganz davon ab, wie und durch wen ihm bewusst wird, was
+die Liebe eigentlich ist.  Ich meine, es kommt auf die Frau an, die
+ihn die Liebe lehren wird.
+
+(Morell ganz verwirrt:)  Nein,--ja,--ich weiss nicht, was du meinst.
+
+(Candida erklaerend:)  Wenn eine gute Frau sie ihn lehrt, dann wird
+alles gut und schoen sein, dann wird er mir verzeihen.
+
+(Morell.)   Verzeihen?!
+
+(Candida fortfahrend:)  Aber gesetzt den Fall, dass eine schlechte Frau
+sie ihn lehrt, wie dies vielen Maennern, ganz besonders dichterisch
+veranlagten, geschieht, die alle Frauen fuer Engel halten,--gesetzt den
+Fall, sage ich, dass er den Wert der Liebe erst dann entdeckt, wenn er
+sie fortgeworfen und sich in seiner Unwissenheit selbst erniedrigt hat,
+--glaubst du, dass er mir dann auch verzeihen wird?
+
+(Morell.)   Dir verzeihen?  Weswegen?
+
+(Candida bemerkt, wie beschraenkt er ist, faehrt etwas enttaeuscht, aber
+sanft fort:)  Verstehst du das nicht?  (Er schuettelt den Kopf; sie
+wendet sich wieder zu ihm, um es ihm mit zartester Vertraulichkeit zu
+erklaeren.)   Ich meine: wird er mir verzeihen, dass ich selbst ihn die
+Liebe nicht gelehrt, sondern ihn schlechten Frauen ueberlassen habe?
+meiner Froemmigkeit--meiner Reinheit wegen, wie du es nennst!  Oh,
+Jakob, wie wenig du mich doch verstehst, dass du nur immer von deinem
+Vertrauen in meine Froemmigkeit und Reinheit sprichst.  Ich wuerde sie
+beide dem armen Eugen so gerne geben, wie einem frierenden Bettler
+meinen Schal, wenn nichts anderes mich davon abhielte.  Vertraue auf
+meine Liebe zu dir; denn wenn die nicht waere, aus deinen Predigten
+wuerde ich mir sehr wenig machen--das sind bloss leere Phrasen, mit
+denen du andere und dich selbst jeden Tag beluegst.  (Sie ist im
+Begriff aufzustehen.)
+
+(Morell.)  Seine Worte!
+
+(Candida schnell innehaltend, indem sie aufsteht:)  Wessen Worte?
+
+(Morell.)  Eugens!
+
+(Candida entzueckt:)  Er hat immer recht.  Er versteht dich, er versteht
+mich, er versteht Prossi; und du, Jakob, du verstehst nichts.  (Sie
+lacht und kuesst ihn, um ihn zu troesten; er weicht wie gestochen zurueck
+und springt auf.)
+
+(Morell.)  Wie kannst du mich kuessen, waehrend du--oh, Candida!  (Mit
+Schmerz in der Stimme:)  Ich haette vorgezogen, dass du mir einen
+Widerhaken ins Herz gestossen haettest, statt mir diesen Kuss zu geben.
+
+(Candida erhebt sich beunruhigt:)  Mein Lieber, was ist denn mit dir?
+
+(Morell schuettelt sie wild ab:)  Beruehre mich nicht!
+
+(Candida erstaunt:)  Jakob!  Sie werden durch den Eintritt Marchbanks'
+und Burgess' unterbrochen, der in der Naehe der Tuer stehen bleibt und
+sie anstarrt, waehrend Eugen sich zwischen sie nach vorwaerts draengt.
+
+(Marchbanks.)  Ist etwas vorgefallen?
+
+(Morell totenbleich, mit eiserner Selbstbeherrschung:)  Nichts, als dass
+entweder Sie heute morgen recht hatten, oder dass Candida verrueckt ist!
+
+(Burgess laut protestierend:)  Was?  Candy auch verrueckt?  Das ist
+zuviel!  (Er durchschreitet das Zimmer bis zum Kamin, protestiert
+waehrend des Gehens und klopft dort seine Pfeifenasche aus.  Morell
+setzt sich verzweifelt nieder, lehnt sich nach vorne, um sein Gesicht
+zu verbergen, und verschlingt seine Finger krampfhaft, damit sie ruhig
+bleiben.)
+
+(Candida zu Morell, erleichtert und lachend:)  Oh, du bist nur
+verletzt--ist das alles?  Wie konventionell ihr unkonventionellen
+Leute doch alle seid!
+
+(Burgess.)  Benimm dich anstaendig, Candy.  Was wird Herr Marchbanks von
+dir denken?
+
+(Candida.)  Das kommt davon, weil Jakob mir immer predigt, nur mir
+selbst Rechenschaft abzulegen und nie darauf zu achten, was andere
+Leute ueber mich denken koennten.  Das ist ausserordentlich schoen und gut,
+solange ich derselben Meinung bin wie er.  Aber jetzt--weil ich
+gerade etwas anderer Meinung war jetzt schau ihn dir an, schau nur!
+(Sie weist auf Morell, hoechst belustigt.  Eugen beobachtet ihn und
+presst seine Hand heftig ans Herz, als wenn ihn irgendein Schmerz
+getroffen haette; er setzt sich auf das Sofa wie ein Mensch, der einer
+Tragoedie beiwohnt.  Burgess auf dem Kaminteppich:)  Sie hat recht,
+Jakob, Sie sehen wirklich nicht so wuerdig aus wie gewoehnlich.
+
+(Morell mit einem Lachen, das ein halbes Schluchzen ist:)  Das kann
+schon sein, verzeiht mir alle,--ich wusste nicht, dass ich eine Stoerung
+verursache.  (Sich zusammenraffend:)  Es ist schon gut, schon gut,
+schon gut.  (Er geht zurueck nach seinem Platz am Tisch und setzt sich,
+um an seinen Papieren wieder mit entschlossener Heiterkeit
+weiterzuarbeiten.)
+
+(Candida geht nach dem Sofa und setzt sich neben Marchbanks, noch in
+heiterster Stimmung:)  Nun, Eugen, warum sind Sie traurig?  Haben Sie
+vom Zwiebelschaelen geweint?  (Morell kann sich nicht enthalten, sie zu
+beobachten.)
+
+(Marchbanks beiseite zu ihr:)  Ihre Grausamkeit ist es, die mich
+traurig macht.--Ich hasse Grausamkeit.  Es ist entsetzlich,
+mitanzusehen, wie ein Mensch einem andern weh tut.
+
+(Candida ihn streichelnd, ironisch:)  Armer Junge, war ich grausam?
+Habe ich ihn kleine, rote, haessliche Zwiebel schaelen lassen?
+
+(Marchbanks ernst:)  Oh, halten Sie ein, halten Sie ein: ich meine
+nicht mich!  Er hat Ihretwegen furchtbar gelitten.  Ich fuehle seinen
+Schmerz in meinem eigenen Herzen.  Ich weiss, dass Sie nicht schuld
+daran sind,--es ist etwas geschehen, was geschehen musste; aber nehmen
+Sie es nicht so leicht.  Mich schaudert, wenn Sie ihn quaelen und dabei
+lachen.
+
+(Candida unglaeubig:)  Ich Jakob quaelen?!  Unsinn, Eugen; wie Sie
+uebertreiben!  Torheit!  (Sie blickt hinueber zu Jakob, der seine
+Schreiberei hastig fortsetzt; sie gebt zu ihm und steht hinter seinem
+Stuhl, sich ueber ihn beugend.)  Arbeite nicht laenger, mein Lieber, komm
+und plaudere mit uns.
+
+(Morell liebevoll, aber bitter:)  Ach nein: ich kann nicht plaudern,
+ich kann nur predigen.
+
+(Candida ihn streichelnd:)  Nun, dann komm und predige!
+
+(Burgess heftig widersprechend:)  Ach nein, Candy! zum Henker mit dem
+Predigen!  (Alexander Mill kommt herein und sieht aengstlich und
+wichtig aus.)
+
+(Mill beeilt sich, Candida zu begruessen:)  Wie geht es Ihnen, Frau
+Morell?  Wie freue ich mich, dass Sie wieder zurueck sind.
+
+(Candida.)  Ich danke Ihnen, Herr Mill.  Sie kennen Eugen, nicht wahr?
+
+(Mill.)  O ja!  Wie geht es Ihnen, Marchbanks?
+
+(Marchbanks.)  Danke, gut!
+
+(Mill zu Morell:)  Ich komme eben aus der Gilde von Sankt Matthaeus.
+Die Leute sind furchtbar bestuerzt ueber Ihr Telegramm.  Es ist doch
+hoffentlich nichts geschehen?
+
+(Candida.)  Was hast du denn telegraphiert, Jakob?
+
+(Mill zu Candida:)  Es war vereinbart, dass er heute abend dort sprechen
+sollte, sie haben den grossen Saal in der Marestrasse gemietet und eine
+Menge Geld fuer Plakate ausgegeben.  Der Herr Pastor telegraphierte nun,
+dass er nicht kommen koennte!  Es traf sie wie ein Blitz aus heiterem
+Himmel.
+
+(Candida ueberrascht, beginnt zu wittern, dass etwas nicht in Ordnung
+ist:)  Eine Gelegenheit, oeffentlich zu sprechen, hast du ausgeschlagen?
+
+(Burgess.)  Zum erstenmal in seinem Leben, das moechte ich wetten;
+--nicht wahr, Candy?
+
+(Mill zu Morell:)  Man hat beschlossen, Ihnen ein dringendes Telegramm
+zu schicken, mit der Bitte, Ihren Entschluss zu aendern.  Haben Sie es
+erhalten?
+
+(Morell mit muehsam verhaltener Ungeduld:)  Ja, ja, ich bekam es.
+
+(Mill.)  Es war mit bezahlter Rueckantwort.
+
+(Morell.)  Ja, ich weiss.  Ich habe es beantwortet.  Ich kann nicht
+kommen.
+
+(Candida.)  Aber warum nicht, Jakob?
+
+(Morell beinahe heftig:)  Weil ich nicht mag!  Diese Leute vergessen,
+dass ich auch ein Mensch bin; sie halten mich fuer eine Redemaschine,
+die man jeden Abend zu seinem Vergnuegen aufziehen kann.  Darf ich
+nicht auch einmal einen Abend zu Hause haben, mit meiner Frau und
+meinen Freunden?  (Sie sind alle ueber diesen Ausbruch erstaunt mit
+Ausnahme von Eugen,--sein Ausdruck bleibt unveraendert.)
+
+(Candida.)  Oh, Jakob, du weisst es selbst: morgen wirst du dann
+Gewissensbisse haben, und ich werde darunter leiden muessen.
+
+(Mill eingeschuechtert, aber dringend:)  Ich weiss natuerlich, dass diese
+Menschen die unvernuenftigsten Anforderungen an Sie stellen; aber sie
+haben ueberallhin um einen anderen Redner telegraphiert und koennen
+niemanden mehr bekommen als den Praesidenten des Agnostikerbundes.
+
+(Morell rasch:)  Nun, das ist ein ausgezeichneter Mann,--was wollen sie
+denn noch mehr?
+
+(Mill.)  Aber er besteht immer so fest auf der Scheidung des
+Sozialismus vom Christentum.  Er wird all das Gute, das wir gestiftet
+haben, zunichte machen,--natuerlich, Sie muessen ja am besten wissen,
+aber...
+
+(Er zoegert.)
+
+(Candida schmeichelnd:)  O bitte, geh' doch hin, Jakob.  Wir kommen
+alle mit.
+
+(Burgess brummend:)  Schau, Candy, lass uns lieber gemuetlich zu Hause am
+Kamin sitzen.  Er braucht ja nicht laenger als zwei Stunden
+wegzubleiben.
+
+(Candida.)  Du wirst dich in der Versammlung genau so behaglich fuehlen.
+Wir werden alle auf dem Podium sitzen und wichtige Leute sein.
+
+(Marchbanks entsetzt:)  Oh, bitte, nicht auf dem Podium; nein!  Jeder
+wird uns anstarren,--das hielte ich nicht aus.  Ich werde im
+Hintergrund des Saales bleiben.
+
+(Candida.)  Fuerchten Sie sich nicht.  Man wird viel zu sehr damit
+beschaeftigt sein, Jakob anzustarren als dass man Sie bemerkte.
+
+(Morell wendet den Kopf und sieht Candida vielsagend ueber die Schulter
+an:)  Prossis Leiden, Candida,--nicht?
+
+(Candida lustig:)  Jawohl.
+
+(Burgess neugierig:) Prossis Leiden?  Was reden Sie da, Jakob?
+
+(Morell beachtet ihn nicht, erhebt sich, geht nach der Tuer, oeffnet und
+ruft in befehlendem Ton hinaus:)  Fraeulein Garnett!
+
+(Proserpina aus der Entfernung:)  Ja, Herr Pastor, ich komme schon.
+(Sie warten alle mit Ausnahme von Burgess, der verstohlen zu Mill geht
+und ihn beiseite zieht.)
+
+(Burgess.)  Hoeren Sie, Herr Mill: worin besteht Prossis Leiden?  Was
+fehlt ihr?
+
+(Mill vertraulich:)  Ja, ich weiss es nicht genau; aber sie sprach recht
+seltsame Dinge heute frueh;--ich fuerchte, es ist manchmal nicht ganz
+richtig mit ihr.
+
+(Burgess ueberwaeltigt:)  Nein,--vier in demselben Haus!  Es muss
+ansteckend sein.  (Er geht zurueck an den Kamin, ganz in Gedanken
+versunken ueber die Veraenderlichkeit des menschlichen Verstandes in der
+Umgebung eines Geistlichen.)
+
+(Proserpina erscheint auf der Schwelle:)  Was wuenschen Sie, Herr Pastor?
+
+(Morell.)  Telegraphieren Sie nach der Gilde von Sankt Matthaeus, dass
+ich kommen werde.
+
+(Proserpina ueberrascht:)  Werden Sie denn nicht erwartet?
+
+(Morell gebieterisch:)  Tun Sie, wie ich Ihnen gesagt habe.
+(Proserpina setzt sich erschrocken an die Schreibmaschine und gehorcht.)
+
+(Morell geht hinueber zu Burgess.  Candida beobachtet seine Bewegungen
+die ganze Zeit ueber mit wachsender Verwunderung und Besorgnis.)
+Burgess, Sie moechten lieber nicht mitkommen?
+
+(Burgess sich entschuldigend:)  Oh, so duerfen Sie das nicht
+auffassen--ich meine nur, wissen Sie--weil heute nicht Sonntag ist.
+
+(Morell.)  Das ist schade, ich dachte, Sie wuerden gerne mit dem
+Vorsitzenden bekannt werden.  Er ist im Provinzialarbeitsausschuss und
+hat einigen Einfluss bei Abschluessen von Lieferungen.  (Burgess wird
+mit einem Male lebendig; Morell, der das erwartet hat, haelt einen
+Augenblick inne und sagt:)  Sie wollen also doch mitkommen?
+
+(Burgess mit Enthusiasmus:)  Das will ich meinen,--ob ich mitkomme,
+Jakob!  Es ist ja stets ein Genuss, Sie predigen zu hoeren!
+
+(Morell wendet sich zu Proserpina:)  Ich werde Sie noetig haben, damit
+Sie in der Versammlung einige Notizen machen koennen, Fraeulein Garnett,
+falls Sie nicht schon vergeben sind.  (Sie nickt, aus Angst, sprechen
+zu muessen.)  Sie kommen doch auch mit, Lexi?
+
+(Mill.)  Selbstverstaendlich.
+
+(Candida.)  Wir kommen alle mit, Jakob.
+
+(Morell.)  Nein!  Du kommst nicht mit, und Eugen kommt nicht mit.  Du
+wirst zu Hause bleiben und dich mit ihm unterhalten, zur Feier deiner
+Rueckkehr.  (Eugen erhebt sich atemlos.)
+
+(Candida.)  Aber Jakob--
+
+(Morell gebieterisch:)  Ich bestehe darauf; Ihr habt beide keine Lust
+zu kommen, weder er, noch du!  (Candida will sich dagegen verwahren.)
+Oh, denkt nicht an mich, ich werde auch ohne euch eine Menge Menschen
+um mich versammelt sehen.  Eure Stuehle werden von unbekehrten Leuten
+besetzt sein, die mich noch nie gehoert haben.
+
+(Candida beunruhigt:)  Eugen, moechten Sie nicht hingehen?
+
+(Morell.)  Ich wuerde mich fuerchten, mich vor Eugen hoeren zu lassen; er
+ist Predigten gegenueber sehr kritisch.  (Sieht ihn an.)  Er weiss, dass
+ich mich vor ihm fuerchte, er hat mir's heute frueh selbst gesagt.  Nun
+will ich ihm zeigen, wie sehr ich mich fuerchte, indem ich ihn hier
+allein in deiner Hut lasse, Candida.
+
+(Marchbanks zu sich selbst, mit lebhaftem Gefuehl:)  Das ist tapfer; das
+ist schoen.  (Er setzt sich wieder und hoert mit geoeffneten Lippen zu.)
+
+(Candida mit aengstlicher Beunruhigung:)  Aber, aber--Ist irgend etwas
+geschehen, Jakob?  (Sehr verwirrt:)  Ich kann dich nicht begreifen.
+
+(Morell.)  Ah, ich dachte, ich sei es, der nichts begreifen kann, meine
+Liebe.  (Er schliesst sie zaertlich in die Arme und kuesst sie auf die
+Stirn, dann blickt er ruhig auf Marchbanks.)
+
+(Vorhang)
+
+
+
+
+DRITTER AKT
+
+(Es ist nach zehn Uhr abends; die Vorhaenge sind zugezogen und die
+Lampe brennt.  Die Schreibmaschine steht in ihrem Kasten.  Der breite
+Tisch ist geordnet worden; alles zeugt davon, dass das Tagewerk
+vollbracht ist.  Candida und Marchbanks sitzen am Feuer; die Leselampe
+steht auf dem Kaminsims ueber Marchbanks, der in dem kleinen Stuhl
+sitzt und laut liest.  Auf dem Teppich neben ihm liegt ein kleiner
+Haufen von Manuskripten und ein paar Baende Gedichte.  Candida sitzt im
+grossen Stuhl und haelt einen leichten Schuerhaken aus Messing aufrecht
+in der Hand; sie sitzt zurueckgelehnt und sieht versonnen auf die
+funkelnde Messingspitze.  Sie hat die Fuesse gegen das Feuer hin
+ausgestreckt und laesst ihre Fersen auf dem Kamingitter ruhen, sich
+ihrer Erscheinung und ihrer Umgebung tief unbewusst.)
+
+(Marchbanks seine Vorlesung unterbrechend:)  Jeder Dichter, der je
+gelebt hat, hat aus diesem Gedanken ein Sonett gemacht.  Er muss es, ob
+er will oder nicht.  (Er sieht Candida an, ob sie ihm zustimmt, und
+bemerkt, dass sie auf den Schuerhaken starrt.)  Haben Sie nicht zugehoert?
+(Keine Antwort:)  Frau Morell!
+
+(Candida auffahrend.)  Wie!?
+
+(Marchbanks.)  Haben Sie nicht zugehoert?
+
+(Candida schuldbewusst, mit uebertriebener Hoeflichkeit:)  O ja.  Es ist
+sehr huebsch.  Fahren Sie fort, Eugen.  Ich bin begierig, zu hoeren, was
+dem Engel passiert ist.
+
+(Marchbanks laesst das Manuskript aus der Hand auf den Boden fallen:)
+Verzeihen Sie, dass ich Sie langweile!
+
+(Candida.)  Aber Sie langweilen mich durchaus nicht, wirklich nicht.
+Bitte, fahren Sie fort--bitte, Eugen.
+
+(Marchbanks.)  Ich habe das Gedicht ueber den Engel vor einer
+Viertelstunde beendet.  Ich habe Ihnen seitdem schon verschiedenes
+vorgelesen.
+
+(Candida reuevoll:)  Das tut mir wirklich leid, Eugen.  Mir scheint,
+der Schuerhaken hat mich behext.  (Sie legt ihn nieder.)
+
+(Marchbanks.)  Er hat mich fuerchterlich gestoert.
+
+(Candida.)  Warum haben Sie mir das nicht gesagt?  Ich haette ihn sofort
+weggelegt.
+
+(Marchbanks.)  Ich fuerchtete, Sie auch zu stoeren; er glich einer Waffe.
+Wenn ich ein Held aus alten Tagen waere, wuerde ich mein gezogenes
+Schwert zwischen uns gelegt haben.  Wenn Morell gekommen waere, haette
+er geglaubt, dass Sie den Schuerhaken ergriffen haben, weil kein Schwert
+zwischen uns liegt.
+
+(Candida verwundert:)  Was?  (Sie sieht ihn mit verwirrten Blicken an:)
+Das kann ich nicht recht verstehen.  Ihre Sonette haben mich so sehr
+verwirrt!  Warum sollte ein Schwert zwischen uns sein?
+
+(Marchbanks ausweichend:)  Oh, lassen wir das.  (Er bueckt sich, das
+Manuskript aufzuheben.)
+
+(Candida.)  Legen Sie das wieder hin, Eugen.  Mein Hunger nach Poesie
+hat Grenzen, selbst nach Ihrer Poesie.  Sie haben mir laenger als zwei
+Stunden vorgelesen--seit mein Mann fort ist--, ich moechte lieber
+plaudern.
+
+(Marchbanks erhebt sich, furchtsam:)  Nein, ich darf nicht reden.  (Er
+sieht in seiner verlorenen Weise um sich und fuegt ploetzlich hinzu:)
+Ich glaube, ich mache einen Spaziergang im Park.  (Er will nach der
+Tuer.)
+
+(Candida.)  Unsinn! er ist laengst geschlossen.  Setzen Sie sich auf den
+Kaminteppich und plaudern wir, wie Sie es gewoehnlich tun!  Ich will
+unterhalten werden,--wollen Sie nicht?
+
+(Marchbanks halb entsetzt, halb hingerissen:)  Ja.
+
+(Candida.)  Dann kommen Sie her.  (Sie rueckt ihren Stuhl etwas zurueck,
+um Platz zu machen; er zoegert, dann kauert er sich schuechtern hin vor
+den Kamin, das Gesicht nach oben gekehrt, wirft seinen Kopf zurueck auf
+ihre Knie und sieht zu ihr empor.)
+
+(Marchbanks.)  Oh, ich habe mich den ganzen Tag so ungluecklich gefuehlt,
+weil ich getan habe, was recht war; und nun, wo ich unrecht tue, bin
+ich so gluecklich.
+
+(Candida zart, belustigt ueber ihn:)  Ja; ich bin ueberzeugt, nun fuehlen
+Sie sich wie ein grosser, erwachsener, boeser Verfuehrer--ganz stolz auf
+sich, nicht wahr?
+
+(Marchbanks erhebt seinen Kopf rasch und wendet sich ein wenig, um sie
+anzublicken:)  Nehmen Sie sich in acht.  Ich bin sogar um vieles
+aelter als Sie, Sie wissen es nur nicht.  (Er wendet sich auf seinen
+Knien ganz herum; mit gefalteten Haenden und die Arme in ihrem Schoss,
+spricht er mit wachsender Erregung--sein Blut faengt an zu wallen:)
+Darf ich Ihnen ein paar schlimme Dinge sagen?
+
+(Candida ohne die leiseste Angst oder Kaelte und mit vollkommener
+Achtung vor seiner Leidenschaft, aber mit einem Schimmer ihres
+klugkerzigen muetterlichen Humors:)  Nein.  Aber Sie duerfen alles
+sagen, was Sie wirklich und wahrhaftig fuehlen, was es auch sei, alles!
+Ich fuerchte mich nicht, solange Ihr wirkliches "Selbst" zu mir
+spricht und nicht eine blosse Pose--eine galante oder eine gottlose,
+oder selbst eine dichterische Pose.  Das verlange ich von Ihnen, bei
+Ihrer Ehre und Wahrhaftigkeit!--Nun sagen Sie, was Sie wollen.
+
+(Marchbanks der heisse Ausdruck verschwindet vollkommen von seinen
+Lippen und Nasenfluegeln, seine Augen flammen auf in begeistertem Feuer.)
+Oh, jetzt kann ich nicht mehr alles sagen; denn alle Worte, die ich
+weiss, gehoeren mehr oder weniger irgendeiner Pose an, alle--bis auf
+eines.
+
+(Candida.)  Welches Wort ist das?
+
+(Marchbanks sanft, sich dem melodischen Klang des Namens hingebend:)
+"Candida, Candida, Candida, Candida, Candida"--das muss ich jetzt sagen,
+da Sie mich bei meiner Ehre und Wahrhaftigkeit fragen, denn ich denke
+und fuehle niemals "Frau Morell", immer nur "Candida".
+
+(Candida.)  Selbstverstaendlich!  Und was haben Sie Candida zu sagen?
+
+(Marchbanks.)  Nichts als Ihren Namen tausendmal zu wiederholen.
+Fuehlen Sie nicht, dass es jedesmal ein Gebet zu Ihnen ist?
+
+(Candida.)  Macht es Sie nicht gluecklich, dass Sie beten koennen?
+
+(Marchbanks.)  Ja, sehr gluecklich.
+
+(Candida.)  Nun, dieses Glueck ist die Antwort auf Ihr Gebet.--Wuenschen
+Sie sich etwas Besseres?
+
+(Marchbanks selig:)  Nein, ich bin im Himmel, wo man wunschlos ist.
+(Morell tritt ein; er bleibt an der Schwelle stehen und ueberschaut mit
+einem Blick die ganze Szene.)
+
+(Morell ernst und mit Selbstbeherrschung:)  Hoffentlich stoere ich nicht.
+(Candida faehrt heftig auf, aber ohne die leiseste Verlegenheit.  Sie
+lacht ueber sich selbst.  Eugen, noch auf den Knien, schuetzt sieh vor
+dem Fallen dadurch, dass er seine Haende auf den Stuhlsitz legt; Morell
+mit offenem Munde anstarrend, bleibt er in dieser Stellung.)
+
+(Candida im Aufstehen:)  Oh, Jakob, wie du mich erschreckt hast; ich
+war so mit Eugen beschaeftigt, dass ich deinen Schluessel nicht gehoert
+habe.  Wie ist die Versammlung verlaufen?  Hast du gut gesprochen?
+
+(Morell.)  Ich habe in meinem ganzen Leben nicht besser gesprochen.
+
+(Candida.)  Das ist ausgezeichnet!  Wieviel ist eingegangen?
+
+(Morell.)  Ich vergass zu fragen.
+
+(Candida zu Eugen:)  Er muss wundervoll gesprochen haben oder er haette
+das nicht vergessen.  (Zu Morell:)  Wo sind die andern?
+
+(Morell.)  Sie verliessen den Saal lange ehe ich fortkommen konnte; ich
+glaube, sie essen irgendwo zur Nacht.
+
+(Candida in ihrer hausmuetterlichen Art:)  Oh, dann kann Marie zu Bette
+gehn; ich will es ihr sagen.  (Sie geht hinaus in die Kueche.)
+
+(Morell blickt strenge auf Marchbanks nieder:)  Nun?
+
+(Marchbanks laesst sich mit gekreuzten Beinen auf den Kaminteppich
+nieder und fuehlt sich Morell gegenueber ganz sicher, sogar voll
+verschmitzten Humors:)  Nun?
+
+(Morell.)  Haben Sie mir etwas zu sagen?
+
+(Marchbanks.)  Nur, dass ich mich hier heimlich zum Narren gemacht habe,
+waehrend Sie oeffentlich dasselbe getan haben.
+
+(Morell.)  Ich glaube, kaum auf dieselbe Art.
+
+(Marchbanks springt auf, eifrig:)  Ganz genau auf dieselbe Art.  Ich
+habe eben ganz so wie Sie den braven Mann gespielt! ganz so wie Sie.
+Als Sie Ihr Heldentum, mich hier mit Candida allein zu lassen,
+begannen--
+
+(Morell unwillkuerlich:)  Candida?
+
+(Marchbanks.)  Ja, so weit bin ich schon.  Heldentum ist ansteckend,
+ich bekam die Krankheit von Ihnen und habe mir geschworen, Candida in
+Ihrer Abwesenheit nichts zu sagen, was ich nicht schon vor einem Monat
+in Ihrer Gegenwart gesagt haette.
+
+(Morell.)  Und haben Sie dieses Geluebde gehalten?
+
+(Marchbanks setzt sich ploetzlich in grotesker Weise in den Lehnstuhl:)
+Ich bin bis vor etwa zehn Minuten dumm genug gewesen, es zu halten.
+Bis dahin habe ich ihr verzweifelt vorgelesen, meine eigenen
+Gedichte--und andere--um einer Unterhaltung auszuweichen.  Ich sah
+das Himmelstor offen und weigerte mich, einzutreten....  Sie koennen
+sich nicht vorstellen, wie heldenhaft das war und wie ungemuetlich....
+Dann--
+
+(Morell seine Ungeduld bezaehmend:)  Dann?
+
+(Marchbanks geht prosaisch in eine ganz gewoehnliche Stellung im
+Lehnstuhl ueber:)  Dann konnte sie das Vorlesen nicht mehr vertragen.
+
+(Morell.)  Und da haben Sie sich dem Himmelstor schliesslich genaehert?
+
+(Marchbanks.)  Ja.
+
+(Morell.)  Und dann?  (Wild:)  Sprechen Sie, Mensch!  Haben Sie denn
+kein Gefuehl fuer mich!
+
+(Marchbanks sanft und melodisch:)  Dann wurde sie ein Engel, und ein
+Flammenschwert erschien, das mir jeden Zugang versperrte, so dass ich
+nicht eintreten konnte und nun begriff, dass dieses Tor in Wahrheit das
+Tor der Hoelle war.
+
+(Morell triumphierend:)  Sie hat Sie zurueckgestossen!
+
+(Marchbanks erhebt sich mit grimmigem Hohn:)  Nein, Sie Narr!  Wenn sie
+das getan haette, wuerde ich gar nicht gefuehlt haben, dass ich schon im
+Himmel war.  Mich zurueckgestossen... glauben Sie, dass mich das gerettet
+haette?--Tugendhafte Entruestung!  Oh, Sie sind nicht wert, in einer
+Welt mit ihr zu leben.  (Er wendet sich verachtungsvoll von ihm ab
+nach der anderen Seite des Zimmers.)
+
+(Morell der ihn ruhig beobachtet hat, ohne seinen Platz zu wechseln:)
+Glauben Sie, dass Sie dadurch an Wert gewinnen, wenn Sie mich
+beschimpfen, Eugen?
+
+(Marchbanks.)  Hier endet der tausendunderste Text.  Morell: ich halte
+doch nicht viel von Ihrem Predigen.  Ich glaube sogar, ich selbst
+koennte das besser.  Der Mann, den ich jetzt vor mir haben moechte, ist
+der Mann, den Candida geheiratet hat.
+
+(Morell.)  Der Mann, den... meinen Sie mich?
+
+(Marchbanks.)  Ich meine nicht Hochwuerden Jakob Mavor Morell, Moralist
+und Schwaetzer.  Ich meine den wirklichen Menschen, den Hochwuerden
+Jakob irgendwo in seiner schwarzen Kutte versteckt haben muss, den Mann,
+den Candida geliebt hat.  Sie koennen die Liebe einer Frau wie Candida
+nicht dadurch erreicht haben, dass Sie bloss Ihren Kragen hinten statt
+vorne knoepfen.
+
+(Morell kuehn und standhaft:)  Als Candida einwilligte, mich zu heiraten,
+da war ich derselbe Moralist und Schwaetzer, den Sie jetzt vor sich
+sehen.  Ich trug meinen schwarzen Rock, und meinen Kragen knoepfte ich
+hinten statt vorne.  Glauben Sie, dass sie mich mehr geliebt haette,
+wenn ich unaufrichtig in meinem Beruf gewesen waere?
+
+(Marchbanks auf dem Sofa, seine Knoechel umfassend:)  Oh, sie hat Ihnen
+vergeben, so wie sie mir vergibt, dass ich ein Feigling bin und ein
+Schwaechling, und was Sie einen kleinen winselnden Hund--und so
+weiter--nennen.  (Vertraeumt:)  Eine Frau wie diese hat goettlichen
+Einblick: sie liebt unsere Seele und nicht unsere Narrheiten und
+Eitelkeiten und Illusionen, oder unsere Kragen und Roecke, oder die
+andern Fetzen und Lappen, in die wir gehuellt sind.  (Er denkt darueber
+einen Augenblick nach, dann wendet er sich mit gespannter Erwartung um,
+Morell zu befragen:)  Was ich wissen moechte, ist, wie Sie an dem
+Flammenschwerte, das mich zurueckgeschreckt hat, vorbeigekommen sind!
+
+(Morell bedeutungsvoll:)  Vielleicht weil ich nicht nach zehn Minuten
+unterbrochen wurde.
+
+(Marchbanks verbluefft:)  Was?
+
+(Morell.)  Der Mensch kann auf die hoechsten Gipfel steigen; aber er
+kann nicht lange dort verweilen.
+
+(Marchbanks.)  Das ist falsch.  Dort kann er ewig verweilen! nur dort!
+Anderswo findet er keine Ruhe und hat keinen Sinn fuer die stille
+Schoenheit des Lebens.  Wo sollte ich meine seligsten Minuten verleben,
+wenn nicht auf den Hoehen?
+
+(Morell.)  In der Kueche, Zwiebeln schneidend und Lampen fuellend.
+
+(Marchbanks.)  Oder auf der Kanzel, Seelen scheuernd die aus billigem
+Ton sind.
+
+(Morell.)  Ja, das auch!  Dort habe ich meinen goldenen Augenblick
+geerntet und mit ihm das Recht, um Candidas Liebe zu werben.  Ich habe
+mir diese Stunde nicht erborgt, noch habe ich sie benuetzt, um das
+Glueck eines andern zu stehlen.
+
+(Marchbanks schreitet ziemlich angewidert dem Kamin zu:)  Ich zweifle
+nicht daran, dass Sie Ihre Verrichtungen so ehrenhaft erfuellt haben,
+als ob Sie ein Pfund Kaese abgewogen haetten.  (Er haelt vor dem Kamin
+inne und fuegt nachdenklich zu sich selbst, Morell den Ruecken kehrend,
+hinzu:)  Ich konnte zu ihr nur als Bettler kommen.
+
+(Morell auffabrend:)  Als ein frierender Bettler, der sie um ihren
+Schal bat, nicht wahr?
+
+(Marchbanks wendet sich ueberrascht um:)  Ich danke Ihnen, dass Sie sich
+auf mein Gedicht beziehen.  Ja, wenn Sie wollen: als ein frierender
+Bettler, der sie um ihren Schal bat.
+
+(Morell erregt:)  Und sie verweigerte ihn.  Soll ich Ihnen sagen, warum
+sie ihn verweigert hat?  Ich kann es Ihnen sagen, mit ihrer eigenen
+Erlaubnis: weil...
+
+(Marchbanks.)  Sie hat ihn nicht verweigert!
+
+(Morell.)  Nicht?
+
+(Marchbanks.)  Sie bot mir alles, worum ich bat: ihren Schal, ihre
+Fluegel, den Sternenkranz aus ihrem Haar, die Lilien in ihrer Hand, den
+aufgehenden Mond zu ihren Fuessen.
+
+(Morell ihn anpackend:)  Heraus mit der Wahrheit, Mensch!  Meine Frau
+ist meine Frau: ich habe genug von Ihrem poetischen Flitterkram,--ich
+weiss ganz gut, dass kein Gesetz Candida an mich binden wuerde, wenn ich
+ihre Liebe an Sie verloren haette!
+
+(Marchbanks bizarr, ohne Furcht oder Widerstand:)  Packen Sie mich nur
+beim Kragen: sie wird ihn dann wieder in Ordnung bringen wie heute
+morgen.  (Mit stiller Begeisterung:)  Ich werde wieder die Beruehrung
+ihrer Haende fuehlen.
+
+(Morell:)  Sie junger Fant, fuehlen Sie nicht, wie gefaehrlich es ist,
+mir das zu sagen!  Oder (mit ploetzilicher Befuerchtung:)  hat Sie irgend
+etwas kuehn gemacht?
+
+(Marchbanks.)  Ich fuerchte mich jetzt nicht mehr!  Ich habe Sie bisher
+nie leiden moegen, deshalb bin ich bei Ihren Beruehrung zusammengezuckt.
+Aber heute erkannte ich--als Candida Sie quaelites--dass Sie sie lieben.
+Seitdem bin ich Ihr Freund!  Jetzt koennen sie mich erwuergen, wenn
+Sie wollen!
+
+(Morell ihn loslassend:)  Eugen, wenn das keine herzlose Luege ist--wenn
+Sie noch einen Funken menschlichen Fuehlens haben--so werden Sie mir
+sagen, was im meiner Abwesenheit vergefallen ist!
+
+(Marchbanks:)  Was vorgefallen ist?  Nun, das Flamenmenschwere...
+(Morell stampft ungeduldig mit dem Fusse;),--also im ganz einfacher
+Prosa: ich liebte sie so unendlich, dass ich nichts weiter wuenschte als
+das Glueck, so lieben zu fuer ich und bevor ich--Zote fang vom hoechsten
+Grafen der Gefuer herunterzutaumente--traten Sie ein.
+
+(Morell (scowen leidend:)) Leidenschaftlichem immer nicht erduldig--
+immer bleibt ihr noch die ehblines Zweifzig.
+
+(Marchbanks.)  Quall und wuensche jetzt nichts mehr als Candidas
+Glueck.  (Mit leidenschaftlichem Gefuehl:)  Oh, Morell, geben wir sie
+beide auf!  Warum soll sie waehlen muessen zwischen einem elenden,
+nervoesen kleinen Kranken, wie ich es bin, und einem starrkoepfigen
+Pfarrer wie Sie?  Gehen wir auf Pilgerschaft, Sie nach Osten und ich
+nach Westen, auf der Suche nach einem wuerdigeren Liebhaber, einem
+schoenen Erzengel mit purpurnen Fluegeln.
+
+(Morell.)  Papperlapapp, dummes Zeug!  Oh, wenn sie verrueckt genug waere,
+mich Ihretwegen zu verlassen, wer sollte sie beschuetzen, wer sollte
+ihr helfen, wer sollte fuer sie arbeiten, wer ihren Kindern ein Vater
+sein!  (Er setzt sich verstoert auf das Sofa, seine Ellbogen auf die
+Knie gestuetzt und den Kopf zwischen den geballten Faeusten.)
+
+(Marchbanks schnappt wild mit den Fingern:)  Sie stellt nicht solche
+toerichte Fragen: sie braucht jemanden, den sie schuetzen und behueten,
+fuer den sie arbeiten kann, jemanden, der ihr Kinder anvertraut, um sie
+zu beschuetzen, ihnen zu helfen und fuer sie zu arbeiten, einen
+erwachsenen Menschen, der wieder wie ein kleines Kind geworden ist.
+Oh, Sie Narr, Sie Narr, Sie dreifacher Narr!  Ich bin der Mann, Morell,
+ich bin der Mann!  (Er tanzt aufgeregt herum und schreit:)  Sie
+verstehen nicht, was eine Frau ist,--schicken Sie nach ihr, Morell,
+schicken Sie nach ihr und lassen Sie sie waehlen zwischen--(Die Tuer
+oeffnet sich und Candida tritt ein; er haelt wie versteinert inne.)
+
+(Candida erstaunt an der Schwelle:)  Was um alles in der Welt machen
+Sie da, Eugen?
+
+(Marchbanks drollig:)  Ihr Mann und ich haben ein Wettpredigen
+veranstaltet, und er verliert dabei.  (Candida sieht rasch nach Morell,
+und als sie bemerkt, dass er traurig ist, eilt sie hin zu ihm und
+spricht sehr aergerlich mit heftigem Vorwurf zu Marchbanks.)
+
+(Candida.)  Sie haben ihn geaergert.  Nein, das dulde ich nicht, Eugen,
+hoeren Sie!  (Sie legt ihre Hand auf Morells Schulter und vergisst in
+ihrem Aerger ganz ihren weiblichen Takt:)  Mein Liebling soll nicht
+geaergert werden, ich werde ihn beschuetzen.
+
+(Morell sich stolz erhebend:)  Beschuetzen?
+
+(Candida nicht auf ihn achtend, zu Eugen:)  Was haben Sie ihm gesagt?
+
+(Marchbanks erschreckt:)  Nichts.  Ich--
+
+(Candida.)  Eugen, nichts?
+
+(Marchbanks jaemmerlich:)  Ich meine--ich--es tut mir sehr leid, ich
+werde es nicht wieder tun, gewiss nicht, ich werde ihn in Ruhe lassen.
+
+(Morell empoert mit einer angreifenden Bewegung gegen Eugen:)  Mich in
+Ruhe lassen!  Sie junger--
+
+(Candida ihm ins Wort fallend:)  Sch, nicht doch! lass mich mit ihm
+reden, Jakob.
+
+(Marchbanks.)  Oh, Sie sind mir doch nicht boese?
+
+(Candida strenge:)  O ja, ich bin--sehr boese.  Ich haette nicht uebel
+Lust, Sie aus dem Hause zu jagen.
+
+(Morell von Candidas Heftigkeit ueberrascht und durchaus nicht willens,
+sich vor einem andern Mann durch sie retten zu lassen:)  Sachte,
+Candida, sachte.  Ich kann mich schon selbst beschuetzen.
+
+(Candida ihn streichelnd:)  Ja, Lieber, natuerlich kannst du das.  Aber
+man darf dich nicht aergern und quaelen.
+
+(Marchbanks beinahe in Traenen, sich nach der Tuere wendend:)  Ich will
+gehen.
+
+(Candida.)  Oh, Sie brauchen nicht zu gehen, so spaet kann ich Sie nicht
+fortschicken.  (Heftig:)  Aber schaemen Sie sich, schaemen Sie sich!
+
+(Marchbanks verzweifelt:)  Was habe ich denn getan?
+
+(Candida.)  Ich weiss, was Sie getan haben, so genau, als ob ich die
+ganze Zeit hier gewesen waere.--Oh, es war unwuerdig.  Sie sind wie ein
+kleines Kind, Sie koennen Ihren Mund nicht halten.
+
+(Marchbanks.)  Ich wuerde lieber zehnfachen Tod erleiden, als Ihnen
+einen Augenblick Kummer bereiten.
+
+(Candida mit groesster Geringschaetzung gegen diese Kinderei:)  Ihr Tod
+wuerde mir viel nuetzen!
+
+(Morell.)  Liebste Candida, dieser Wortwechsel ist kaum am Platz.  Es
+handelt sich um eine Angelegenheit zwischen zwei Maennern, und ich bin
+dazu da, sie beizulegen.
+
+(Candida.)  Zwei Maenner?  Nennst du das einen Mann?  (Zu Eugen:)  Sie
+schlimmer junge, Sie!
+
+(Marchbanks wird wunderlich liebevoll und mutig, da er ausgezankt
+wird:)  Wenn ich mich auszanken lassen soll wie ein kleiner Junge, muss
+ich mich auch wie ein kleiner Junge verteidigen duerfen.  Er hat
+angefangen und er ist groesser als ich.
+
+(Candida verliert ein wenig ihre Sicherheit, da sie Morells Wuerde
+bedroht sieht:)  Das kann nicht wahr sein.  (Zu Morell:)  Du hast doch
+nicht angefangen, Jakob, nicht wahr, nein?
+
+(Morell verachtungsvoll:)  Nein.
+
+(Marchbanks entruestet:)  Oh!
+
+(Morell zu Eugen:)  Sie haben angefangen,--heute frueh.  (Candida bringt
+dies sofort in Zusammenhang mit der geheimnisvollen Bemerkung, die
+Jakob nachmittag machte, als er ihr sagte, dass ihm Eugen am Morgen
+etwas mitgeteilt habe.  Sie sieht ihn mit raschem Verdachte forschend
+an.  Morell faehrt fort mit dem Pathos der beleidigten Ueberlegenheit:)
+Aber Ihre andere Bemerkung ist richtig.  Ich bin gewiss der Groessere von
+uns beiden und, wie ich hoffe, Candida, auch der Staerkere!  Es waere
+daher besser, du ueberliessest die Sache mir.
+
+(Candida ihn wieder besaenftigend:)  Ja, Lieber--aber (verwirrt:)  ich
+verstehe das nicht wegen heute morgen.
+
+(Morell ein wenig auffahrend:)  Das brauchst du auch nicht zu verstehen,
+meine Liebe.
+
+(Candida.)  Aber, Jakob, ich--(Die Hausglocke laeutet:)  Oh, wie dumm.
+Da kommen sie alle!  (Sie geht hinaus, sie einzulassen.)
+
+(Marchbanks laeuft zu Morell:)  Oh, Morell, ist das nicht schrecklich?
+Sie ist boese auf uns, sie hasst mich,--was soll ich tun?
+
+(Morell in seltsamer Verzweiflung, sich in die Haare fahrend:)  Eugen,
+es dreht sich mir alles im Kopf, ich werde gleich zu lachen anfangen.
+(Er geht in der Mitte des Zimmers auf und ab.)
+
+(Marchbanks folgt ihm aengstlich:)  Nein, nein!  Dann wird sie glauben,
+ich haette Sie hysterisch gemacht.  Lachen Sie nicht!  (Man hoert
+heftiges Stimmengewirr und Gelaechter, das immer naeher kommt.
+Alexander Mill, dessen glaenzende Augen und dessen ganzes Benehmen eine
+ungewohnte angeregte Stimmung verraten, tritt mit Burgess ein, der
+einen schmierigen und selbstgefaelligen Eindruck macht, aber
+vollstaendig Herr seiner Sinne ist.  Fraeulein Garnett folgt ihm mit
+ihrem schoensten Hut und ihrer besten Jacke, aber obwohl ihre Augen
+glaenzender sind als frueher, ist sie sichtlich in besorgter Stimmung.
+Sie stellt sich mit dem Ruecken gegen ihren Schreibmaschinentisch, mit
+einer Hand sich darauf stuetzend, mit der anderen sich ueber die Stirne
+fahrend, als ob sie etwas muede und schwindlig waere.  Marchbanks
+verfaellt wieder in Schuechternheit und schleicht weg in die Naehe des
+Fensters, wo Morells Buecher sind.)
+
+(Mill begeistert:)  Herr Pastor, ich *muss* Ihnen gratulieren, (seine
+Hand fassend:)--was fuer eine edle, herrliche, von Gott eingehauchte
+Ansprache Sie gehalten haben!  Sie haben sich selbst uebertroffen.
+
+(Burgess.)  Ja, das haben Sie, Jakob.  Ich bin bis zum letzten Worte
+wach geblieben,--nicht wahr, Fraeulein Garnett?
+
+(Proserpina ungeduldig:)  Oh, ich habe Sie nicht beachtet, ich habe
+mich bemueht, Notizen zu machen.  (Sie nimmt ihre Notizen heraus,
+blickt auf ihr Stenogramm und faengt beinahe zu weinen an.)
+
+(Morell.)  Habe ich zu schnell gesprochen, Prossi?
+
+(Proserpina.)  Viel zu schnell.--Sie wissen, ich kann nicht mehr als
+neunzig Worte in der Minute schreiben.  (Sie macht ihren Gefuehlen Luft,
+indem sie ihr Notizbuch aergerlich neben die Maschine wirft, wo sie es
+am naechsten Morgen bereit haben will.)
+
+(Morell besaenftigend:)  Nun, nun, das macht ja nichts.  Habt ihr alle
+schon zur Nacht gegessen?
+
+(Mill.)  Herr Burgess war so liebenswuerdig, uns in's Belgrave
+Restaurant zu einem geradezu glaenzenden Abendessen einzuladen.
+
+(Burgess mit ueberschwenglicher Grossmut:)  O bitte, bitte, Herr Mill.
+(Bescheiden:)  Sie waren mir bei meinem bescheidenen Feste herzlich
+willkommen.
+
+(Proserpina.)  Wir haben Champagner getrunken!  Ich hatte noch niemals
+welchen gekostet.  Ich bin ganz schwindlig.
+
+(Morell ueberrascht:)  Ein Champagnersouper!  Das war sehr huebsch von
+Ihnen.  Ist meine Beredsamkeit schuld an dieser Verschwendung?
+
+(Mill mit Pathos:)  Ihre Beredsamkeit und Herrn Burgess' Herzensguete.
+(Mit erneutem Gefuehlsausbruch:)  Was fuer ein herrlicher Mensch der
+Vorsitzende war, Herr Morell; er hat auch mit uns gespeist.
+
+(Morell bedeutungsvoll Burgess anblickend:)  So, so, der Vorsitzende!
+--*jetzt* verstehe ich!  (Burgess verbirgt hinter einem Huesteln ein
+Laecheln der Zufriedenheit ueber seine diplomatische Geschicklichkeit
+und setzt sich an den Kamin.  Mill verschraenkt die Arme und lehnt sich
+neben das Buechergestell in einer Stellung, die seine Begeisterung zum
+Ausdruck bringt.  Candida kommt mit Glaesern, Zitronen und heissem
+Wasser auf einem Tablett herein.)
+
+(Candida.)  Wer wuenscht etwas Limonade?  Sie kennen unsere Hausregel:
+vollkommene Abstinenz!  (Sie stellt das Tablett auf den Tisch, nimmt
+den Zitronenpresser zur Hand und blickt fragend umher.)
+
+(Morell.)  Du bemuehst dich umsonst, meine Liebe, sie haben alle
+Champagner getrunken, Prossi hat ihr Geluebde gebrochen.
+
+(Candida zu Proserpina:)  Sie wollen doch nicht behaupten, dass Sie auch
+Champagner getrunken haben?
+
+(Proserpina verstockt:)  Ja, das hab' ich; ich bin nur eine Bier-,
+keine Champagnerabstinenzlerin.  Ich mag kein Bier.--Sind Briefe fuer
+mich zur Beantwortung da, Herr Pastor?
+
+(Morell.)  Nichts mehr fuer heute.
+
+(Proserpina.)  Dann gute Nacht allerseits.
+
+(Mill galant:)  Waere es nicht geraten, dass ich Sie nach Hause begleite,
+Fraeulein Garnett?
+
+(Proserpina.)  Nein, ich danke.  Ich wuerde mich heute nacht niemandem
+anvertrauen wollen!  Haette ich nur nichts von diesem Zeug getrunken!
+Sie geht rasch hinaus.
+
+(Burgess empoert:)  Zeug!  Dieses Maedel weiss nicht, was Champagner ist.
+Pommery und Greno, zwoelf Schilling sechs Pence die Flasche.  Zwei
+Glaeser nacheinander hat sie geleert.
+
+(Morell etwas besorgt:)  Gehen Sie, Lexi, und sehen Sie nach ihr!
+
+(Mill beunruhigt:)  Aber wenn sie wirklich... bedenken Sie, wenn sie in
+den Strassen zu singen anfaengt oder dergleichen!
+
+(Morell.)  Eben darum waere es besser, Sie braechten sie sicher nach
+Hause.
+
+(Candida.)  Tun Sie es, Lexi, als guter Kamerad!  (Sie reicht ihm die
+Hand und schiebt ihn sanft nach der Tuer.)
+
+(Mill.)  Es ist selbstverstaendlich meine Pflicht, mit ihr zu gehen.
+Ich hoffe aber, es wird nicht noetig gewesen sein.  Gute Nacht, Frau
+Morell.  (Zu den uebrigen:)  Gute Nacht.  (Er geht, Candida schliesst die
+Tuer hinter ihm.)
+
+(Burgess.)  Er war selbst ganz aus dem Haeuschen in lauter Froemmigkeit
+nach dem zweiten Glas.  Heutzutage koennen die Leute nicht mehr trinken
+wie frueher.  (Den Gegenstand fallen lassend, geht er vom Kamin fort.)
+Nun, Jakob, es ist Zeit, das Haus zu schliessen.  Herr Marchbanks,
+werden Sie mir auf dem Heimwege ein Stueckchen das Vergnuegen Ihrer
+Gesellschaft schenken?
+
+(Marchbanks erschrocken:)  Ja, es ist besser, ich gehe.  (Er eilt nach
+der Tuer, aber Candida stellt sich ihm in den Weg.)
+
+(Candida mit ruhiger Wuerde:)  Sie setzen sich noch, Sie werden noch
+nicht gehen!
+
+(Marchbanks eingeschuechtert:)  Nein,--ich--ich wollte ja auch nicht.
+(Er kommt zurueck in das Zimmer und setzt sich gehorsam auf das Sofa.)
+
+(Candida.)  Herr Marchbanks bleibt heute nacht bei uns, Papa.
+
+(Burgess.)  Na, dann sage ich gute Nacht.  Auf Wiedersehn, Jakob.  (Er
+schuettelt Morell die Hand und geht hinueber zu Eugen.)  Lassen Sie sich
+ein Nachtlicht an Ihr Bett stellen, Herr Marchbanks, es wird Sie
+beruhigen, falls Sie in der Nacht einen Anfall Ihres Leidens bekommen
+sollten!  Gute Nacht.
+
+(Marchbanks.)  Ich danke Ihnen, es soll geschehn.  Gute Nacht, Herr
+Burgess.  (Sie geben einander die Haende, Burgess geht zur Tuer.)
+
+(Candida haelt Morell zurueck, der Burgess begleiten will:)  Bleib' hier,
+mein Lieber, ich werde Papa seinen Rock anziehen helfen.  (Sie geht
+mit Burgess hinaus.)
+
+
+(Marchbanks.)  Herr Pastor, es wird eine schreckliche Szene geben.
+Haben Sie keine Angst?
+
+(Morell.)  Nicht die geringste.
+
+(Marchbanks.)  Ich habe Sie bisher nie um Ihren Mut beneidet.  (Er
+erhebt sich schuechtern und beruehrt mit seiner Hand flehend Morells
+Unterarm:)  Stehen Sie mir bei,--wollen Sie?
+
+(Morell schuettelt ihn sanft, aber entschieden ab:)  Jeder fuer sich,
+Eugen!  Sie--muss nun zwischen uns waehlen.  (Er gebt beim Eintritt
+Candidas auf die andere Seite des Zimmers, Eugen setzt sich mit seinem
+besten Benehmen wie ein schuldbewusster Schulknabe auf das Sofa.)
+
+(Candida zwischen den beiden, sich zu Eugen wendend:)  Tut es Ihnen
+leid?
+
+(Marchbanks ernst:)  Ja, unendlich.
+
+(Candida.)  Gut, dann ist Ihnen verziehen.  Nun gehen Sie wie ein
+braver kleiner Junge zu Bett, ich moechte mit Jakob ueber Sie sprechen.
+
+(Marchbanks erhebt sich mit groesster Bestuerzung:)  Oh, das kann ich
+nicht.--Herr Pastor, ich muss hierbleiben.  Ich will nicht fortgehen.
+Sagen Sie es ihr!
+
+(Candida die ihren Verdacht bestaetigt sieht:)  Was soll er mir sagen?
+(Seine Augen vermeiden die ihrigen, sie wendet sich um und uebertraegt
+ihre Frage stumm auf Morell.)
+
+(Morell wappnet sich fuer die Katastrophe:)  Ich habe ihr nichts zu
+sagen, ausgenommen--(dabei sinkt seine Stimme zu massvoller, trauriger
+Zaertlichkeit herab:)  dass sie mein groesster Schatz auf Erden ist--wenn
+sie mir wirklich gehoert.
+
+(Candida kalt, verletzt, dass er seinem Rednerinstinkt nachgibt und sie
+behandelt, als ob sie sich unter den Zuhoerern der Gilde von St.
+Matthaeus befaende:)  Ich bin ueberzeugt, dass Eugen nicht weniger sagen
+kann, wenn das alles ist.
+
+(Marchbanks entmutigt:)  Morell, sie lacht uns aus.
+
+(Morell auffahrend:)  Es gibt da nichts zu lachen.  Lachst du uns aus,
+Candida?
+
+(Candida mit stillem Aerger:)  Eugen ist sehr witzig, ich hoffe, dass ich
+lachen werde--aber vorlaeufig fuerchte ich, mich aergern zu muessen.  (Sie
+geht an den Kamin und bleibt dort stehen, ihren Arm auf dem Gesims und
+ihren Fuss auf dem Gitter, waehrend Eugen sich zu Morell hinstiehlt und
+ihn beim Arm fasst.)
+
+(Marchbanks fluesternd:)  Halten Sie ein, Herr Pastor; sagen wir nichts
+mehr.
+
+(Morell stoesst Eugen fort, ohne ihn eines Blickes zu wuerdigen:)  Ich
+hoffe, dass du mir nicht drohen willst, Candida.
+
+(Candida mit feierlicher Warnung:)  Nimm dich in acht, Jakob!--Eugen,
+ich habe gewuenscht, dass Sie gehen sollen,--gehen Sie oder nicht?
+
+(Morell mit dem Fusse stampfend:)  Er wird nicht gehen; ich wuensche, dass
+er bleibt.
+
+(Marchbanks.)  Ich will gehen.  Ich tue, was Sie wollen.  (Er wendet
+sich zur Tuer.)
+
+(Candida.)  Bleiben Sie.  (Er gehorcht.)  Haben Sie nicht gehoert, dass
+Jakob wuenscht, dass Sie bleiben sollen?  Jakob ist hier der Herr,
+wissen Sie das nicht?
+
+(Marchbanks erroetend, mit der Wut eines jungen Dichters gegen Tyrannei:)
+Was gibt ihm das Recht dazu?
+
+(Candida ruhig:)  Sag es ihm, Jakob.
+
+(Morell bestuerzt:)  Meine Liebe, ich bin mir keines Rechtes bewusst, das
+mich zum Herrn macht; ich bestehe auf keinem solchen Rechte.
+
+(Candida mit schwerem Vorwurf:)  Du weisst es nicht?  O Jakob, Jakob!
+(Zu Eugen nachdenklich:)  Ich wuesste gern, ob Sie das verstehen, Eugen...
+Nein, Sie sind zu jung.  Nun, ich erlaube Ihnen, zu bleiben und zu
+lernen.  (Sie geht von Kamin fort und stellt sich zwischen die beiden.)
+Also, Jakob, was ist's?  Komm und sag' es mir.
+
+(Marchbanks fluestert ihm aengstlich zu:)  Sagen Sie ihr lieber nichts.
+
+(Candida.)  Bitte!--Heraus damit!
+
+(Morell langsam:)  Ich wollte dich sorgfaeltig vorbereiten, Candida, um
+jedes Missverstaendnis zu vermeiden.
+
+(Candida.)  Ja, Lieber, das wolltest du gewiss; aber sei unbesorgt, ich
+werde nichts missverstehen.
+
+(Morell.)  Nun denn, es--(Er zoegert, unfaehig, die lange Erklaerung zu
+finden, die er fuer noetig haelt.)
+
+(Candida.)  Nun?
+
+(Morell klipp und klar:)  Eugen behauptet, dass du ihn liebst.
+
+(Marchbanks ausser sich:)  Nein, nein, nein, nein, niemals, das habe ich
+nicht behauptet, Frau Morell, es ist nicht wahr!  Ich sagte, dass ich
+Sie liebe und er nicht.  Ich sagte, dass ich Sie verstehe und dass er es
+nicht kann.  Und nicht infolgedessen, was sich hier am Kamin
+zugetragen hat, habe ich das gesagt,--ganz gewiss nicht, auf mein Wort!
+schon heute morgen hab' ich es ihm gesagt!
+
+(Candida erleuchtet:)  Heute morgen?!
+
+(Marchbanks.)  Ja!  (Er siebt sie um Glauben bittend an und fuegt dann
+einfach hinzu:)  Das war auch der Grund, warum mein Kragen in Unordnung
+geriet.
+
+(Candida nach einer Pause, weil sie nicht gleich begreift, was er
+meint:)  Ihr Kragen!  (Sie wendet sich erschrocken zu Morell, verletzt:)
+O Jakob, hast du ihn--?  (Sie haelt inne.)
+
+(Morell beschaemt:)  Du weisst, Candida, dass ich mit meinem Temperament
+zu kaempfen habe, und er sagte, (schauernd:)  dass du mich verachtest in
+deinem Herzen.
+
+(Candida wendet sich rasch zu Eugen:)  Haben Sie das gesagt?
+
+(Marchbanks geaengstigt:)  Nein!
+
+(Candida strenge:)  Dann hat mich also Jakob eben angelogen.  Wollen
+Sie das behaupten?
+
+(Marchbanks.)  Nein, nein: ich--ich... (herausplatzend mit der
+verzweifelten Erklaerung:)--es war die Rede von Davids Frau, nicht bei
+ihm zu Hause, sondern als sie ihn tanzen sah vor allen Leuten.
+
+(Morell nimmt diesen Fingerzeig mit der Geschicklichkeit eines
+Wortkaempfers auf:)  Ja, als er vor dem ganzen Volke tanzte, Candida, in
+der Meinung, dass er ihre Herzen dadurch ruehrte, waehrend sie nur an
+Prossis Leiden litten.  (Sie ist im Begriff zu protestieren, er winkt
+ihr mit der Hand, um sie zum Schweigen zu bringen, und faehrt fort:)
+Tue nicht als ob du entruestet waerest, Candida.
+
+(Candida.)  Tun als ob?!
+
+(Morell fortfahrend:)  Eugen hatte recht!  Wie du mir einige Stunden
+spaeter klarmachtest, hat er immer recht.  Er sagte nichts, was du
+nicht viel besser selbst gesagt haettest.  Er ist der Dichter, der
+alles sieht; und ich bin der arme Pastor, der nichts versteht.
+
+(Candida reuevoll:)  Aergert dich, was ein naerrischer junge gesagt hat,
+weil ich im Scherz etwas Aehnliches sagte?
+
+(Morell.)  Der naerrische Junge kann mit der Begeisterung eines Kindes
+und mit der Verschlagenheit einer Schlange sprechen.  Er hat behauptet,
+dass du ihm gehoerst und nicht mir, und, ob mit Recht oder Unrecht, ich
+beginne zu fuerchten, dass es wahr sein koennte.  Ich will nicht
+umhergehen von Zweifeln und Verdaechtigungen gequaelt.  Ich will nicht
+mit dir leben und ein Geheimnis vor dir haben.  Ich will nicht die
+entwuerdigende Qual der Eifersucht erdulden.  Deshalb haben wir
+beschlossen--er und ich--dass du jetzt zwischen uns waehlen sollst!  Ich
+erwarte deine Entscheidung.
+
+(Candida weicht langsam einen Schritt zurueck, verletzt ueber sein
+Pathos, trotz des aufrichtigen Gefuehls, das sie heraushoert:)  Oh, ich
+muss also waehlen?  Ich nehme an, dass eines vollkommen feststeht: dass
+ich einem o d e r dem andern gehoeren muss.
+
+(Morell entschlossen:)  Vollkommen; du musst endgueltig waehlen.
+
+(Marchbanks aengstlich:)  Herr Pastor,--Sie verstehen nicht: sie meint,
+dass sie sich selbst gehoert.
+
+(Candida sich zu ihm wendend:)  ja, das meine ich, Junker Eugen, und
+noch sehr viel mehr, wie Ihr beide sofort herausfinden werdet.  Und
+ich frage, meine Herren und Gebieter, was habt Ihr fuer meine Wahl zu
+geben?  Es scheint, dass ich versteigert werden soll.  Wieviel bietest
+du, Jakob?
+
+(Modell vorwurfsvoll:)  Cand....  (Er bricht zusammen, seine Augen
+fuellen sich mit Traenen, und seine Kehle schnuert sich zu, der Redner
+wird zu einem verwundeten Tier.)  Ich kann nicht sprechen.
+
+(Candida geht impulsiv zu ihm hin:)  O Liebster!
+
+(Marchbanks in wildem Aufruhr:)  Halten Sie ein, das ist nicht gerecht.
+Sie duerfen ihr nicht zeigen, dass Sie leiden, Morell.--Ich bin auch
+auf der Folter, aber ich weine nicht.
+
+(Morell nimmt seine ganze Kraft zusammen:)  Ja, Sie haben recht.  Es
+ist nicht Mitleid, worum ich bitte.  (Er befreit sich von Candida.)
+
+(Candida zieht sich frostig zurueck:)  Entschuldige, Jakob, ich hatte
+nicht die Absicht, dich zu beruehren.  Ich warte auf dein Angebot.
+
+(Morell mit stolzer Demut:)  Ich habe dir nichts zu bieten als meine
+Kraft zu deinem Schutze, mein ehrliches Wollen fuer deine Ruhe, meine
+Tuechtigkeit und Arbeit fuer deinen Unterhalt und mein Ansehen und meine
+Stellung fuer deine Wuerde.  Das ist alles, was einem Manne ansteht,
+einer Frau zu bieten.
+
+(Candida ganz ruhig:)  Und Sie, Eugen, was bieten Sie?
+
+(Marchbanks.)  Meine Schwaeche! meine Trostlosigkeit! meine Herzensnot!
+
+(Candida geruehrt:)  Das ist ein gutes Angebot, Eugen; nun weiss ich, wie
+ich meine Wahl zu treffen habe.  (Sie haelt inne und blickt seltsam von
+einem zum andern, als ob sie beide abschaetzte.  Morell, dessen
+hochtmuetiges Zutrauen sich in herzzerreissende Angst bei Eugens Gebot
+verwandelt hat, verliert alle Beherrschung, und kann seine Angst nicht
+verbergen.  Eugen dagegen, mit aeusserst angespannter Kraft, zuckt mit
+keiner Wimper.)
+
+(Morell mit halb erstickter Stimme--ein Hilferuf entringt sich den
+Tiefen seiner Verzweiflung:)  Candida!
+
+(Marchbanks beiseite mit einem Aufwallen der Verachtung:)  Feigling!
+
+(Candida bedeutsam:)  Ich gebe mich dem Schwaecheren von beiden.  (Eugen
+erraet ihre Meinung sofort; sein Gesicht wird weiss wie scbmelzender
+Stahl.)
+
+(Morell neigt seinen Kopf mit der Ruhe der Gebrochenheit:)  Ich nehme
+deine Entscheidung an, Candida.
+
+(Candida.)  Verstehen Sie, Eugen?
+
+(Marchbanks.)  Oh, ich fuehle, ich bin verloren.  Er koennte die Last
+nicht ertragen!
+
+(Morell unglaeubig, hebt seinen Kopf empor, mit prosaischer Stumpfheit:)
+Meinst du mich, Candida?
+
+(Candida laechelt ein wenig:)  Setzen wir uns und plaudern wir gemuetlich
+darueber wie drei Freunde.  (Zu Morell:)  Setze dich, mein Lieber.
+(Morell nimmt den Stuhl vom Kamin--den Kindersessel.)  Bringen Sie mir
+diesen Stuhl, Eugen.  (Sie weist auf den Lehnstuhl, er holt ihn
+schweigend, sogar mit etwas wie kuehler Beherrschung und setzt ihn
+neben Morell, etwas hinter ihn.  Sie setzt sich, er geht an das Sofa
+und laesst sich dort nieder, noch immer schweigsam und unergruendlich.
+Als sie alle sitzen, beginnt Candida,--einen Hauch von Ruhe um sich
+breitend, mit ihrer sanften, gesunden, zaertlichen Stimme:)  Sie
+erinnern sich doch, was Sie mir ueber sich selbst erzaehlten, Eugen: wie
+sich niemand um Sie gekuemmert hat, seit Ihre alte Amme starb.  Wie
+Ihre gescheiten, vornehmen Schwestern und erfolgreichen Brueder die
+Lieblinge Ihrer Eltern waren, wie elend es Ihnen in Eton erging, wie
+Ihr Vater Sie durch Entbehrungen zwingen will, nach Oxford
+zurueckzukehren, wie Sie leben mussten ohne Behaglichkeit oder
+Willkommen, ohne Zufluchtsstaette, immer einsam und fast immer ungern
+gesehen und missverstanden!  Sie armer Junge!
+
+(Marchbanks der Groesse seines Schicksals wuerdig:)  Ich hatte meine
+Buecher.  Ich hatte die Natur.  Und endlich bin ich Ihnen begegnet.
+
+(Candida.)  Lassen wir das im Augenblick beiseite.  Nun moechte ich, dass
+Sie sich diesen andern Jungen hier betrachten,--meinen verwoehnten
+Jungen,--verwoehnt von seiner Wiege an.  Einmal alle vierzehn Tage
+besuchen wir seine Eltern.  Da sollten Sie mit uns kommen, Eugen, und
+die Bilder des Helden dieser Familie sehen.  Jakob als Baby, das
+wundervollste aller Babys!  Jakob, als er seinen ersten Schulpreis
+erhielt, gewonnen im reifen Alter von acht Jahren!  Jakob als der
+Fuehrer seiner Mitschueler beim Cricketspiel!  Jakob in seinem ersten
+schwarzen Anzug!  Jakob in allen moeglichen ruhmvollen Posen.  Sie
+wissen, wie stark er ist--ich hoffe, er hat Ihnen nicht weh getan--wie
+gescheit er ist--wie gluecklich!  (Mit wachsendem Ernst:)  Fragen Sie
+Jakobs Mutter und seine drei Schwestern, was es sie gekostet hat,
+Jakob die Muehe zu ersparen, irgend etwas zu tun, als stark, gescheit
+und gluecklich zu sein.  Fragen Sie mich, was es mich kostet, Jakobs
+Mutter und seine drei Schwestern und seine Frau und Mutter seiner
+Kinder--alles in einer Person--zu sein!  Fragen Sie Prossi und Marie,
+wieviel Arbeit das Haus gibt, selbst wenn wir keine Besucher haben,
+die uns helfen Zwiebeln schneiden.  Fragen Sie die Geschaeftsleute, die
+Jakob stoeren und seine prachtvollen Predigten gefaehrden wollen, wer es
+ist, der sie abschuettelt!  Wenn Geld zu geben ist, so gibt er es; wenn
+Geld zu verweigern ist, so verweigere ich es.  Ich habe ihm ein Schloss
+von Behaglichkeit, Nachsicht und Liebe erbaut und stehe immer
+Schildwache davor, um all den taeglichen kleinen Lebenssorgen den
+Eintritt zu verwehren.  Ich mache ihn hier zum Herrn, obwohl er es
+nicht weiss und Ihnen vor einem Augenblicke nicht sagen konnte, wie er
+dazu gekommen ist, es zu sein.  (Mit suesser Ironie:)  Und als er dachte,
+ich koennte mit Ihnen fortgehen, da war seine einzige Sorge, was aus
+mir werden wuerde; und um mich zum Bleiben zu bewegen, bot er mir--
+(sie neigt sich vor und streicht ihm bei jedem Satze ueber das Haar)
+seine Kraft zu meinem Schutze, seine Arbeit fuer meinen Unterhalt,
+seine Stellung fuer meine Wuerde, seine (zoegernd:)  ah, ich
+verwechsle deine wunderschoenen Saetze und verderbe sie, nicht wahr,
+Liebling?
+
+(Morell kniet ganz ueberwaeltigt neben ihren Stuhl und umschlingt sie
+mit knabenhafter Leidenschaft:)  Alles ist wahr, jedes Wort.  Was ich
+bin, hast du aus mir gemacht, durch die Arbeit deiner Haende und die
+Liebe deines Herzens.  Du bist mein Weib, meine Mutter, meine
+Schwester,--du bist die Summe aller Liebessorgen fuer mich.
+
+(Candida in seinen Armen, laechelnd zu Marchbanks:)  Bin ich Ihnen auch
+Mutter und Schwester, Eugen?
+
+(Marchbanks erhebt sich mit einer heftigen Bewegung des Ekels:)  Oh,
+niemals!  Hinaus denn in die Nacht mit mir!
+
+(Candida erhebt sich rasch und unterbricht ihn:)  sie werden nicht so
+von uns gehn, Eugen!
+
+(Marchbanks mit dem Tonfall eines entschlossenen Mannes, nicht mit der
+Stimme eines Knaben:)  Ich weiss, wann die Stunde geschlagen hat.  Ich
+bin ungeduldig zu tun, was getan werden muss.
+
+(Morell erhebt sich von seinen Knien, beunruhigt:)  Candida, lass ihn
+nichts Uebereiltes begehen!
+
+(Candida laechelt Eugen vertrauensvoll an:)  Oh, sei unbesorgt, er hat
+gelernt, ohne Glueck zu leben.
+
+(Marchbanks.)  Ich ersehne nicht mehr Glueck; das Leben kann Hoeheres
+bieten.  Pastor Jakob, ich gebe Ihnen mein Glueck mit beiden Haenden hin;
+ich liebe Sie, weil Sie das Herz der Frau, ganz ausgefuellt haben, die
+ich liebte.  Leben Sie wohl!  (Er geht zur Tuer.)
+
+(Candida.)  Ein letztes Wort.  (Er haelt inne, aber ohne sich nach ihr
+umzuwenden.)  Wie alt sind Sie, Eugen?
+
+(Marchbanks.)  Jetzt bin ich so alt wie die Welt.  Heute morgen war ich
+achtzehn Jahre!
+
+(Candida geht zu ihm hin und steht hinter ihm, eine Hand liebkosend
+auf seiner Schulter:)  Achtzehn...  Wollen Sie mir zuliebe ein kleines
+Gedicht aus zwei Zeilen machen, die ich Ihnen sagen will?  Und wollen
+Sie mir versprechen, sich's immer vorzusagen, so oft Sie an mich
+denken.
+
+(Marchbanks ohne sich zu ruehren:)  Sagen Sie die beiden Zeilen.
+
+(Candida.)  Wenn ich dreissig sein werde, dann wird sie fuenfundvierzig
+sein; wenn ich sechzig sein werde, dann wird sie fuenfundsiebzig sein.
+
+(Marchbanks wendet sich nach ihr um:)  In hundert Jahren werden wir
+gleich alt sein!  Aber ich trage ein besseres Geheimnis als das in
+meinem Herzen!  Lassen Sie mich jetzt gehen, die Nacht waechst draussen
+ungeduldig.
+
+(Candida.)  Leben Sie wohl!  (Sie nimmt sein Gesicht in die Haende, und
+da er ihre Absicht erraet und sein Knie beugt, kuesst sie ihn auf die
+Stirne, dann flieht er hinaus in die Nacht.--Sie wendet sich zu Morell,
+mit ausgebreiteten Armen:)  O Jakob!  (Sie umarmen einander.  Aber das
+Geheimnis in des Dichters Herzen, das kennen sie nicht.)
+
+(Vorhang)
+
+
+Ende dieses Projekt Gutenberg Etextes CANDIDA, von George Bernard Shaw.
+
+
+
+
+*** END OF THE PROJECT GUTENBERG EBOOK, CANDIDA ***
+
+This file should be named 7cndg10.txt or 7cndg10.zip
+Corrected EDITIONS of our eBooks get a new NUMBER, 7cndg11.txt
+VERSIONS based on separate sources get new LETTER, 7cndg10a.txt
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext05 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext05
+
+Or /etext04, 03, 02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92,
+91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+ PROJECT GUTENBERG LITERARY ARCHIVE FOUNDATION
+ 809 North 1500 West
+ Salt Lake City, UT 84116
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+

@@ -1,0 +1,4089 @@
+Project Gutenberg's Catalogue of British Columbia Birds, by Francis Kermode
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: Catalogue of British Columbia Birds
+
+Author: Francis Kermode
+
+Release Date: August, 2004 [EBook #6329]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on November 27, 2002]
+
+Edition: 10
+
+Language: English
+
+Character set encoding: ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK BRITISH COLUMBIA BIRDS ***
+
+
+
+
+Produced by Karen Fabrizius, David Starner
+and the Online Distributed Proofreading Team
+
+
+
+
+
+Catalogue of British Columbia Birds.
+
+PROVINCIAL MUSEUM, VICTORIA B. C.
+
+
+
+
+PREFACE.
+
+
+The present list is intended to include all birds which have been so
+far proven to occur in British Columbia.
+
+I am fully aware of its incompleteness, and very much regret much of
+its lack of more definite information regarding the distribution of
+certain species, and with regard to that portion of the Province in
+north and northeastern interior, which, I have no doubt, is a valuable
+field for work.
+
+Since the publication of the list of British Columbia birds in 1898 by
+the late John Fannin, which contained 339 species and sub-species, and
+with the information to hand, enables me to add to this 24.
+
+I wish to extend my thanks especially to the following constant
+observers for more or less extended local lists, notes and
+specimens:--A. C. Brooks, Chilliwhack, Okanagan and Cariboo; Rev.
+J. H. Keen, Queen Charlotte Islands and Metlakatla; Thos. Kermode,
+William Head Quarantine Station; E. P. Venables, Yernon; Chas. de
+Blois Green, Fairview and Keremeos.
+
+I have also obtained valuable information from the check-list
+published by the late John Fannin.
+
+  FRANCIS KERMODE,
+  _Curator Provincial Museum_.
+
+_Victoria, B. C., August, 1904_.
+
+
+
+
+Order PYGOPODES. Diving birds.
+
+Family PODICIPEDIDAE. Grebes.
+
+AECHMOPHORUS Coues.
+
+1. Western Grebe.
+
+  _AEchmophorus occidentalis_ (Lawr.).
+
+A common winter resident along the coast of Vancouver Island and
+Mainland. Mr. Brooks says a few remain all winter at Okanagan Lake.
+
+COLYMBUS Linnaeus.
+
+2. American Red-necked Grebe. "Holboell's Grebe."
+
+  _Colymbus holboelli_ (Reinh.).
+
+A common winter resident along the coast of Vancouver Island and
+Mainland. Winter resident on Okanagan Lake. (_Brooks_.) Not common at
+Metlakatla. (_Rev. J. H. Keen_.) Breeds on many of the lakes along the
+Cariboo Road above Clinton. (_Fannin_.)
+
+3. Horned Grebe.
+
+  _Colymbus auritus_ (Linn.).
+
+A common winter resident on the coast, and very common in the straits
+near Victoria, in April. Brooks reports it at Okanagan Lake all winter.
+Breeds on the lakes from Okanagan to Dense Lake. (_Fannin_.) Rare at
+Metlakatla. (_Rev. J. H. Keen_.)
+
+4. American Eared Grebe.
+
+  _Colymbus nigricollis californicus_ (Heerm.).
+
+Taken at Kamloops, June, 1889. (_Spreadborough_.) Found breeding on
+lakes at Kamloops; Catalogue of Canadian Birds. (_Macoun_.)
+
+PODILYMBUS Lesson.
+
+5. Pied-billed Grebe.
+
+  _Podilymbus podiceps_ (Linn.).
+
+Common resident on Vancouver Island; it breeds on lakes close to
+Victoria. Common resident on Island and Mainland; breeds throughout
+its range. (_Fannin_.)
+
+
+Family GAVIIDAE Loons.
+
+GAVIA Forster.
+
+6. Great Northern Diver. Loon.
+
+  _Gavia imber_ (Gunn.).
+
+Common resident throughout the Province; breeds on Vancouver Island
+and Mainland.
+
+7. Black-throated Loon.
+
+  _Gavia arcticus_ (Linn.).
+
+Taken at Burrard Inlet (_Fannin_), and at Dease Lake, Cassiar, by
+James Porter.
+
+8. Pacific Loon.
+
+  _Gavia pacificus_ (Lawr.).
+
+Not common; one specimen taken at Comox by W. B. Anderson, and at
+Chilliwhack by Brooks; Victoria, May 13th, 1904, by Fred. Foster.
+
+9. Red-throated Loon.
+
+  _Gavia lumme_ (Gunn.).
+
+I found this species quite common on Barkley Sound, V. I., April 19th,
+1894, and fairly common near Esquimalt. Mr. Brooks reports it at
+Chilliwhack.
+
+
+Family ALCIDAE. Auks, Murres and Puffins.
+
+LUNDA Pallas.
+
+10. Tufted Puffin.
+
+  _Lunda cirrhata_ (Pall.).
+
+Common along the coast of Vancouver Island, Queen Charlotte Islands
+and Mainland; breeds on Bare Island, near Sidney, B. C.
+
+FRATERCULA Brisson.
+
+11. Horned Puffin.
+
+  _Fratercula corniculata_ (Naum.).
+
+Rare at Massett, Queen Charlotte Islands. (_Rev. J. H. Keen_.)
+
+CERORHINCA Bonaparte.
+
+12. Rhinoceros Auklet.
+
+  _Cerorhinca monocerata_ (Pall.).
+
+Coasts of Vancouver Island and Mainland. Breeds on islands in Gulf of
+Georgia.
+
+PTYCHORAMPHUS Brandt.
+
+13. Cassin's Auklet.
+
+  _Ptychorampus aleuticus_ (Pall.).
+
+The entire coast line of the Province and West Coast of Vancouver
+Island. (_Fannin_.) This species was seen in the Gulf of
+Georgia, between Salt Spring Island and Nanaimo, May 7th, 1887.
+(_Macoun_.)
+
+SYNTHLIBORAMPUS Brandt.
+
+14. Ancient Murrelet.
+
+  _Synthliborampus antiquus_ (Gmel.).
+
+Not common. West Coast of Vancouver Island and taken in the Straits,
+near Victoria. Rev. J. H. Keen reports it rare on Queen Charlotte
+Islands.
+
+BRACHYRAMPHUS Brandt.
+
+15. Marbled Murrelet.
+
+  _Brachyramphus marmoratus_ (Gmel.).
+
+An abundant resident along the coast of British Columbia; have taken
+it at Skidegate, Queen Charlotte Islands, in August, 1895. Rare at
+Metlakatla. (_Rev. J. H. Keen_.) Breeds on Vancouver Island, and
+on some of the smaller islands in the Gulf of Georgia, and along many
+of the inlets of the Mainland. (_Fannin_.)
+
+CEPPHUS Pallas.
+
+16. Pigeon Guillemot.
+
+  _Cepphus columba_ (Pall.).
+
+An abundant resident along the coast from Race Rocks to Alaska, and
+quite common in Skidegate Inlet, Q. C. I., August, 1895. Breeds
+throughout its range.
+
+URIA Brisson.
+
+17. California Murre, Guillemot.
+
+  _Uria troile californica_ (Bryant).
+
+A resident along the coast of Vancouver Island and Mainland. Breeds on
+West Coast of Vancouver Island.
+
+
+
+
+Order LONGIPENNES. Long-winged Swimmers.
+
+Family STERCORARIIDAE. Skuas and Jaegers.
+
+STERCORARIUS Brisson.
+
+18. Pomarine Jaeger.
+
+  _Stercorarius pomariuus_ (Temm.).
+
+One specimen taken near Victoria, October 22nd, 1898.
+
+19. Parasitic Jaeger.
+
+  _Stercorarius parasiticus_ (Linn.).
+
+One specimen taken at Victoria by Wm. L. Gilchrist, November, 1897.
+Another specimen was taken at Comox by A. C. Brooks, September 12th,
+1903.
+
+20. Long-tailed Jaeger.
+
+  _Stercorarius longicaudus_ (Vieill.).
+
+Once shot and several times seen at Sumas Lake, September, 1890.
+(_Brooks_).
+
+
+Family LARIDAE. The Gulls and Terns.
+
+PAGOPHILA Kaup.
+
+21. Ivory Gull. Snow Gull.
+
+  _Pagophila alba_ (Gunn.).
+
+One specimen shot at Dease Lake, Cassiar, by James Porter, September,
+1889. Another specimen was shot at Okanagan Lake in November, 1897, by
+Mr. J. T. Studley, and presented to the Museum. Mr. A. C. Brooks also
+reports it from Okanagan.
+
+RISSA Stephens.
+
+22. Pacific Kittiwake.
+
+  _Rissa tridactyla pollicaris_ (Ridgw.).
+
+Taken near Discovery Island, January, 1896, by W. Lindley, and at
+Queen Charlotte Islands by Dr. C. F. Newcombe, September, 1895.
+
+LARUS Linnaeus.
+
+23. Glaucous-winged Gull.
+
+  _Larus glaucesceus_ (Naum.).
+
+An abundant resident on the coast; breeds on some of the islands in
+the Gulf of Georgia. Mr. Brooks reports it from Okanagan Lake.
+
+24. Western Gull.
+
+  _Larus occidentalis_ (Aud.).
+
+An abundant resident on the coast during the winter months. Taken at
+Chilliwhack. (_A. C. Brooks_.) Breeds in Similkameen Valley.
+(_Fannin_.)
+
+25. American Herring Gull.
+
+  _Larus argentatus smithsonianus_ (Coues.).
+
+An abundant resident on the coast. It breeds on the coast and in the
+interior of Mainland. Common at Metlakatla. (_Rev. J. H. Keen_.)
+Chilliwhack and Okanagan. (_Brooks_.)
+
+26. California Gull.
+
+  _Larus californicus_ (Lawr.).
+
+A common winter resident on the coast. Common in the Lower Fraser
+Valley and on the Okanagan Lake in winter. (_Brooks_.)
+
+27. Ring-billed Gull.
+
+  _Larus delawarensis_ (Ord.).
+
+Common along the coast of Vancouver Island and Mainland. Common in
+winter at Okanagan Lake and Chilliwhack. (_Brooks_.) Breeds in
+the Interior, especially to the northward. (_Fannin_.)
+
+28. Short-billed Gull.
+
+  _Larus brachyrhynchus_ (Rich.).
+
+Common winter resident along the coast of Vancouver Island and
+Mainland. Common in Lower Fraser Valley. (_Brooks_.) During the
+early part of May, 1891, I saw quite a number on the lakes of the
+Cariboo District, where it probably breeds. (_Fannin_.)
+
+29. Heermann's Gull. White-headed Gull.
+
+  _Larus heermanni_ (Cass.).
+
+Common along the southern coast of Vancouver Island during July and
+August. Taken at William Head in full plumage, June 28th, 1904, by
+Thos. Kermode.
+
+30. Bonaparte's Gull.
+
+  _Larus philadelphia_ (Ord.).
+
+An abundant resident throughout the Province, and found in great
+numbers about the inlets and rivers in March and April; it breeds in
+the interior of the Province. I have also seen it on the coast in June
+and July.
+
+XEMA Leach.
+
+31. Sabine's Gull.
+
+  _Xema sabinii_ (Sab.).
+
+Taken at Okanagan Lake, September 9th, 1897. (_Brooks_.)
+
+STERNA Linnaeus.
+
+32. Common Tern.
+
+  _Sterna hirundo_ (Linn.).
+
+One specimen shot at Cowichan Gap by R. D. McClure, September 15th,
+1896, and presented to the Museum.
+
+33. Arctic Tern.
+
+  _Sterna paradisaea_ (Brunn.).
+
+From Dease Lake south, through the interior of the Mainland to
+Okanagan Lake. Two specimens--one taken at Dease Lake by James Porter,
+and another shot at Okanagan Lake by A. C. Brooks, September, 1807.
+
+HYDROCHELIDON Boie.
+
+34. Black Tern.
+
+  _Hydrochelidon nigra surinamensis_ (Gmel.).
+
+Not common. I observed it at Okanagan, June, 1895. Taken at Sumas and
+Okanagan Lake by A. C. Brooks, Burrard Inlet, Eraser River and
+interior of Mainland. (_Fannin_.)
+
+
+
+
+Order TUBINARES. Tube-nosed Swimmers.
+
+Family DIOMEDEIDAE. Albatrosses.
+
+DIOMEDEA Linnaeus.
+
+35. Black-footed Albatross.
+
+  _Diomedea nigripes_ (Aud.).
+
+West Coast of Vancouver Island. (_Fannin_.) Rare at Queen
+Charlotte Islands. (_Rev. J. H. Keen_.) One specimen taken near
+Nanaimo, June 3th, 1904.
+
+36. Short-tailed Albatross.
+
+  _Diomedea albatrus_ (Pall.)
+
+In April, 1894, I found this species quite common in the Pacific
+Ocean, near Cape Beale.
+
+Tolerably common on both coasts of Vancouver Island, but more abundant
+on the West Coast; a few have been taken in the straits off Victoria
+Harbour. (_Fannin_.)
+
+
+Family PROCELLARIIDAE. Fulmars & Shearwaters.
+
+FULMARUS Stephens.
+
+37. Pacific Fulmar.
+
+  _Fulmarus glacialis glupischa_ (Stejn.).
+
+One specimen taken at Chemainus, Vancouver Island, November, 1895.
+(_Fannin_.)
+
+PUFFINUS Brisson.
+
+38. Black-vented Shearwater.
+
+  _Puffinus opisthomelas_ (Coues).
+
+Not common; four specimens taken off Albert Head, October 24th, 1891.
+
+39. Dark-bodied Shearwater.
+
+  _Puffinus griseus_ (Gmel.).
+
+During the fall of 1895 Dr. C. F. Newcombe found this species common
+on the West Coast of Queen Charlotte Islands. Since then one was
+picked up dead on the beach near Victoria.
+
+40. Slender-billed Shearwater.
+
+  _Puffinus tenuirostris_ (Temm.).
+
+Not common; one specimen shot at William Head and presented to the
+Museum by T. Kermode, February 23rd, 1904.
+
+OCEANODROMA Reichenbach.
+
+41. Gray Fork-tailed Petrel.
+
+  _Oceanodroma furcata_ (Gmel.).
+
+Found along both coasts of Vancouver Island, but more common on the
+Pacific Coast; a few have been taken in the Straits near Victoria.
+Very rare at Metlakatla; one picked up exhausted.
+(_Rev. J. H. Keen_.)
+
+42. Leach's Fork-tailed Petrel. White-rumped Petrel.
+
+  _Oceanodroma leucorrhoa_ (Vieill.) Coues.
+
+West Coast of Vancouver Island. Four specimens taken in Hecate Strait,
+July, 1904. One specimen found dead on beach off Beacon Hill,
+Victoria, November, 1893.
+
+
+
+
+Order STEGANOPODES. Totipalmate Swimmers.
+
+Family PHALACROCORACIDAE. Cormorants.
+
+PHALACROCORAX Brisson.
+
+43. White-crested Cormorant.
+
+  _Phalacrocorax dilophus cincinnatus_ (Brandt).
+
+Common on both coasts of Vancouver Island and coast of Mainland, from
+Race Rocks to Alaska.
+
+44. Brandt's Cormorant. Pencilled Cormorant.
+
+  _Phalacrocorax penicillatus_ (Brandt).
+
+Two specimens were killed in the Straits, near Victoria, by D. E.
+Campbell, April 19th, 1897. Later in the month another specimen was
+found on the beach at Beacon Hill.
+
+45. Violet-green Cormorant.
+
+  _Phalacrocorax pelagicus robustus_ (Ridgw.).
+
+This is the most abundant Cormorant in the Province, and is found
+along both coasts of the Island, and has been taken as far north as
+Port Simpson. Breeds on islands close to Sidney Island. Common at
+Metlakatla. (_Rev. J. H. Keen_.)
+
+
+Family PELECANIDAE. Pelicans.
+
+PELECANUS Linnaeus.
+
+46. American White Pelican.
+
+  _Pelecanus erythrorhynchos_ (Gmel.).
+
+Not common. Four specimens taken--Sicamous, October, 1890; Alexandria
+Bridge, September, 1895; Tranquille, August, 1897; Comox, September
+8th, 1900. Mr. Brooks reports it from Chilliwhack and Okanagan. Said
+to breed in the Chilcotin country. (_Fannin_.)
+
+47. California Brown Pelican.
+
+  _Pelecanus californicus_ (Ridgw.).
+
+Not common. One specimen in the Museum killed at Race Rocks, January,
+1897. Seen at Sumas Lake. (_Brooks_.)
+
+
+
+
+Order ANSERES. Lamellirostral Swimmers.
+
+Family ANATIDAE. Mergansers, Ducks, Geese and Swans.
+
+MERGANSER Brisson.
+
+48. American Merganser.
+
+  _Merganser americanus_ (Cass.).
+
+Found throughout the Province, have taken it on West Coast of
+Vancouver Island in May; also on Queen Charlotte Islands in July,
+1895, I took four young birds. Brooks reports it found on Okanagan
+Lake all winter.
+
+49. Red-breasted Merganser.
+
+  _Menganser serrator_ (Linn.).
+
+Found distributed throughout the Province. I saw them at Sumas Lake
+May 17th, 1904. Rev. J. H. Keen says common at Metlakahtla,
+Chilliwhack and Okanagan. (_Brooks_.)
+
+LOPHODYTES Reichenbach.
+
+50. Hooded Merganser.
+
+  _Lophodytes cucullatus_ (Linn.).
+
+This species is common throughout the Province and on the Pacific
+Coast. Brooks has taken it at Chilliwhack and Okanagan.
+
+ANAS Linnaeus.
+
+51. Mallard.
+
+  _Anas boschas_ (Linn.).
+
+An abundant resident throughout the Province; breeds in suitable
+localities throughout its range.
+
+CHAULELASMUS Bonaparte.
+
+52. Gadwall. Gray Duck.
+
+  _Chaulelasmus strepera_ (Linn.).
+
+Not common; a few have been taken near Victoria. Mr. Brooks reports it
+from Chilliwhack and Okanagan.
+
+MARECA Stephens.
+
+53. European Widgeon.
+
+  _Mareca penelope_ (Linn.).
+
+Rare. Two specimens, one taken near Victoria February 9th, 1899, and
+another near Saanich.
+
+54. American Widgeon. Baldpate.
+
+  _Mareca americana_ (Gmel.).
+
+A common winter resident on the coast. Brooks reports it from
+Chilliwhack and Okanagan. Breeds on lakes on Cariboo Road above
+Clinton. (_Fannin_.)
+
+NETTION Kaup.
+
+55. Green-winged Teal.
+
+  _Nettion carolinensis_ (Gmel.).
+
+An abundant resident, Breeds in the interior of the Mainland. Common
+on the coast throughout the winter. Rare on Queen Charlotte Islands.
+(_Rev. J. H. Keen_.)
+
+QUERQUEDULA Stephens.
+
+56. Blue-winged Teal.
+
+  _Querquedula discors_ (Linn.).
+
+Not common on the coast; a few are taken every year. Taken at
+Chilliwhack. (_Brooks_.)
+
+57. Cinnamon Teal.
+
+  _Querquedula cyanoptera_ (Vieill.).
+
+A summer visitor in the interior of the Province. Brooks has taken it
+at Chilliwhack and Okanagan.
+
+SPATULA Boie.
+
+58. Shoveller. Spoon-bill.
+
+  _Spatula clypeata_ (Linn.).
+
+A common resident on the Mainland, rarely met with on Vancouver
+Island. Brooks says common resident in Lower Fraser Valley about
+Sumas Lake, has also taken it on Okanagan.
+
+DAFILA Stephens.
+
+59. Pintail. Sprigtail.
+
+  _Dafila acuta_ (Linn.).
+
+An abundant winter resident on the coast. Breeds in the interior of
+the Mainland.
+
+AIX Boie.
+
+60. Wood Duck.
+
+  _Aix spona_ (Linn.).
+
+Not common. A summer resident on Island and Mainland. Brooks has taken
+it at Chilliwhack and Okanagan.
+
+AYTHYA Boie.
+
+61. Red-head. Pochard.
+
+  _Aythya americana_ (Eyt.).
+
+A winter resident on the coast, but nowhere common; a few are taken
+every season. Fannin found it breeding on the lakes along the Cariboo
+Road.
+
+62. Canvas-back Duck.
+
+  _Aythya vallisneria_ (Wils.).
+
+A winter resident on the coast. Brooks has taken it on Okanagan Lake.
+I found them in pairs on the lakes near 108-Mile House, Cariboo Road,
+in April and May, 1891, where I was told they breed. (_Fannin_).
+
+63. American Scaup Duck. Blue-bill.
+
+  _Aythya marila_ (Linn.).
+
+An abundant winter resident on the coast. Breeds in the interior of
+Mainland.
+
+64. Lesser Scaup Duck.
+
+  _Aythya affinis_ (Eyt.).
+
+Not common on the coast. Fannin has taken it in May near Ashcroft, and
+Brooks has seen it all winter at Okanagan.
+
+65. Ring-necked Duck.
+
+  _Aythya collaris_ (Donov.).
+
+Not common. A few have been taken on Vancouver Island. Mr. Brooks says
+common in Lower Fraser Valley, and is found all winter on Okanagan
+Lake.
+
+CLANGULA Leach.
+
+66. American Golden-eye. Whistler.
+
+  _Clangula clangula americana_ (Faxon.)
+
+A common winter resident on the coast. Fannin says breeds in interior.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+67. Barrow's Golden-eye.
+
+  _Clangula islandica_ (Gmel.).
+
+Not common. It winters on the coast; a few have been taken on
+Vancouver Island. Brooks has taken it at Okanagan. Fannin found it
+plentiful on the lakes along the Cariboo Road, May, 1891.
+
+CHARITONETTA Stejneger.
+
+68. Buffle-head. Butter-ball.
+
+  _Charitonetta albeola_ (Linn.).
+
+An abundant winter resident on the coast. Breeds in the interior of
+the Mainland. Common at Metlakatla. (_Rev. J. H. Keen_.)
+
+HARELDA Stephens.
+
+69. Long-tailed Duck. Old Squaw.
+
+  _Harelda hyemalis_ (Linn.).
+
+Common; the coasts of Vancouver Island and Mainland. Brooks has taken
+it at Chilliwhack. Rev. J. H. Keen reports it common at Metlakatla.
+
+HISTRIONICUS Lesson.
+
+70. Harlequin Duck.
+
+  _Histrionicus histrionicus_ (Linn.).
+
+A common resident on the coast. I found it breeding at Bear River,
+Vancouver Island, May, 1894. Brooks has taken it at Chilliwhack. Rare
+at Queen Charlotte Islands. (_Rev. J. H. Keen_.)
+
+OIDEMIA Fleming.
+
+71. American Black Scoter.
+
+  _Oidemia americana_ (Swains.).
+
+Not common; has been taken at Victoria and Port Simpson. Fannin saw a
+small flock on a lake near 108-Mile House, Cariboo Road, 10th May,
+1891. Fairly common at Matlakatla. (_Rev. J. H. Keen_.)
+
+72. White-winged Scoter.
+
+  _Oidemia deglandi_ (Bonap.).
+
+An abundant resident, and is found on the coast throughout the year.
+Brooks reports it from Chilliwhack and Okanagan. Rev. J. H. Keen says
+is common at Metlakatla.
+
+73. Surf Scoter. Sea Coot.
+
+  _Oidemia perspicillata_ (Linn.).
+
+Abundant resident along the coasts of Vancouver Island and Mainland.
+Found at Chilliwhack and Okanagan. (_Brooks_.) Common at
+Metlakatla. (_Rev. J. H. Keen_.)
+
+ERISMATURA Bonaparte.
+
+74. Ruddy Duck.
+
+  _Erismatura jamaicensis_ (Gmel.).
+
+Not common on the Coast; a few are taken in the winter. Fannin found
+it breeding in the lakes along the Cariboo Road, May, 1891. Brooks has
+seen it at Chilliwhack and Okanagan.
+
+CHEN Boie.
+
+75. Lesser Snow Goose.
+
+  _Chen hyperborea_ (Pall.).
+
+A winter resident on the Coast. Brooks has seen it at Chilliwhack.
+During some winters large numbers congregate off the mouth of Fraser
+River. (_Fannin_.)
+
+76. Ross's Snow Goose.
+
+  _Chen rossii_ (Cassin.).
+
+This is a rare bird in B. C. One specimen taken at Comox, January,
+1894; another was taken at Kuper Island, April, 1895.
+
+ANSER Brisson.
+
+77. American White-fronted Goose.
+
+  _Anser albifrons gambeli_ (Hartl.).
+
+Abundant on the Coast in winter. Breeds both on Island and Mainland.
+The young have been taken on Cowichan Lake. (_Fannin_.) Brooks
+has taken it at Sumas and Okanagan Lakes. Common at Metlakatla.
+(_Rev. J. H. Keen_.)
+
+BRANTA Scopoli.
+
+78. Canada Goose.
+
+  _Branta canadensis_ (Linn.).
+
+An abundant winter resident on the Coast. Breeds in the interior of
+the Mainland; the eggs have been taken at Penticton by C. DeBlois
+Green.
+
+79. Hutchin's Goose.
+
+  _Branta canadensis hutchinsii_ (Rich.).
+
+Abundant in the spring and fall migrations, and winters on the Coast.
+
+80. White-cheeked Goose.
+
+  _Branta canadensis occidentalis_ (Baird).
+
+Taken at Chilliwhack by A. C. Brooks.
+
+81. Cackling Goose.
+
+  _Branta canadensis minima_ (Ridgw.).
+
+Winter resident on the Coast; has been taken at Elk Lake, near
+Victoria. Brooks reports it from Chilliwhack and Okanagan.
+
+82. Brant.
+
+  _Branta bernicla glaucogastra_ (Brehm.).
+
+Two specimens shot at Comox by A. C. Brooks, January 10th, 1904.
+
+83. Black Brant.
+
+  _Branta nigricans_ (Lawr.).
+
+An abundant winter resident on the Coast. In April, 1894. I saw them
+in great numbers off Barkley Sound migrating north.
+
+PHILACTE.
+
+84. Emperor Goose.
+
+  _Philacate canagica_ (Sevast.).
+
+One specimen shot at Chemainus, December, 1894.
+
+OLOR Wagler.
+
+85. Whistling Swan.
+
+  _Olor columbianus_ (Ord.).
+
+A winter resident on Vancouver Island and southern Mainland. Mr.
+Brooks records it from Chilliwhack and Okanagan.
+
+86. Trumpeter Swan.
+
+  _Olor buccinator_ (Rich.).
+
+I have only seen this bird at Deaso Lake, Cassiar. (_Fannin_.)
+Mr. Brooks has found it at Sumas and Okanagan.
+
+
+
+
+Order HERODIONES. Herons, Ibises, etc.
+
+Family IBIDIDAE. Ibises.
+
+PLEGADIS Kaup.
+
+87. White-faced Glossy Ibis.
+
+  _Plegadis guarauna_ (Linn.).
+
+Only two specimens known to be taken in the Province, one on Salt
+Spring Island, the other at mouth of Fraser River. Check List of
+B. C. Birds, 1891. (_Fannin_.)
+
+
+Family ARDEIDAE. Herons and Bitterns.
+
+BOTAURUS Hermann.
+
+88. American Bittern.
+
+  _Botaurus lentiginosus_ (Montag.).
+
+Common throughout the greater portion of the Province. Breeds both
+east and west of Cascades.
+
+ARDEA Linnaeus.
+
+89. Great Blue Heron.
+
+  _Ardea herodias_ (Linn.).
+
+A common resident on the coast, and is quite common at Sumas Lake and
+Okanagan. Breeds throughout its range.
+
+90. Northwest Coast Heron.
+
+  _Ardea herodias fannini_ (Chapman).
+
+In August, 1895, I found this form, now named after the late John
+Fannin by Frank M. Chapman, quite common at Skidegate, Queen Charlotte
+Islands.
+
+EGRETTA Forester.
+
+91. Snowy Heron.
+
+  _Egretta candidissima_ (Gmel.).
+
+Rare in British Columbia. Two specimens collected at Burrard Inlet,
+May, 1879. (_Fannin_.) One specimen is in the Museum.
+
+
+
+
+Order PALUDICOLAE. Cranes, Rails, etc.
+
+Family GRUIDAE. Cranes.
+
+GRUS Pallas.
+
+92. Little Brown Crane.
+
+  _Grus canadensis_ (Linn.).
+
+Common, during migrations, throughout the Province.
+
+93. Sandhill Crane.
+
+  _Grus mexicana_ (Mull.).
+
+Common throughout the Province; it breeds in the interior of Mainland;
+numbers pass over Victoria in the spring and autumn migrations.
+
+
+Family RALLIDAE. Rails and Coots.
+
+RALLUS Linnaeus.
+
+94. Virginia Rail.
+
+  _Rallus virginianus_ (Linn.).
+
+Tolerably common on Island and Mainland; breeds close to Victoria.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+PORZANA Vieillot.
+
+95. Carolina Rail. Sora.
+
+  _Porzana Carolina_ (Linn.).
+
+Found on Vancouver Island and Mainland. Rev. J. H. Keen reports it
+very rare on Queen Charlotte Islands. Common east of Cascades.
+(_Fannin_.)
+
+FULICA Linnaeus.
+
+96. American Coot. Mud-hen.
+
+  _Fulica americana_ (Gmel.).
+
+A common resident on Island and Mainland; breeds throughout its range.
+
+
+
+
+Order LIMICIOLAE. Shore Birds.
+
+Family PHALAROPODIDAE. Phalaropes.
+
+CRYMOPHILUS Vieillot.
+
+97. Red Phalarope.
+
+  _Crymophilus fulicarius_ (Linn.).
+
+Taken at Clover Point, near Victoria, during migration.
+
+PHALAROPUS Brisson.
+
+98. Northern Phalarope.
+
+  _Phalaropus lobatus_ (Linn.).
+
+Abundant along the coast of Island and Mainland in the spring and
+autumn. Brooks has taken it at Chilliwhack and Okanagan. Fannin has
+taken it at Burrard Inlet in July.
+
+STEGANOPUS. Vieillot.
+
+99. Wilson's Phalarope.
+
+  _Steganopus tricolor_ (Vieill.).
+
+Taken at Chilliwhack by A. C. Brooks.
+
+
+Family SCOLOPACIDAE. Snipes, Sand-pipers, Etc.
+
+GALLINAGO Leach.
+
+100. Wilson's Snipe.
+
+  _Gallinago delicata_ (Ord.)
+
+Common throughout the Province on Island and Mainland; breeds in the
+interior. Rev. J. H. Keen reports it common at Metlakatla.
+
+MACRORHAMPHUS Leach.
+
+101. Long-billed Dowitcher. Red-breasted Snipe.
+
+  _Macrorhamphus scolopaceus_ (Say.).
+
+Tolerably abundant throughout the Province. I found it quite common at
+Clayoquot, West Coast Vancouver Island, in May, 1894. Fannin says
+breeds in the interior. Brooks has taken it at Chilliwhack. Fairly
+common at Metlakatla. (_Rev. J. H. Keen_.)
+
+MICROPALAMA Baird.
+
+102. STILT SANDPIPER.
+
+  _Micropalama himantopus_ (Bonap.).
+
+Taken at Chilliwhack, August 19th, 1899, by A. C. Brooks.
+
+TRINGA Linnaeus.
+
+103. KNOT. ROBIN SNIPE.
+
+  _Tringa canutus_ (Linn.).
+
+Abundant during migrations, chiefly along the coast. (_Fannin_.)
+Taken at Chilliwhack. (_Brooks_.)
+
+ACTODROMAS Kaup.
+
+104. SHARP-TAILED SANDPIPER.
+
+  _Actodromas acuminata_ (Horsf.).
+
+Two specimens taken at Massett, Queen Charlotte Islands, December
+27th, 1897, by Rev. J. H. Keen.
+
+105. PECTORAL SANDPIPER.
+
+  _Actodromas maculata_ (Vieill.).
+
+Not common; taken along the coast during migrations. Brooks has taken
+it at Chillihwack and Okanagan.
+
+106. BAIRD'S SANDPIPER.
+
+  _Actodromas bairdii_ (Coues.).
+
+Distributed along the coast of Island and Mainland, Rev. J. H. Keen
+reports it rare at Metlakatla. Taken at Chilliwhack and Okanagan
+(_Brooks_); and at Clover Point, Victoria
+(_E. M. Anderson_).
+
+107. LEAST SANDPIPER.
+
+  _Actodromas minutilla_ (Vieill.).
+
+Common along the coast of Island and Mainland. I found it common at
+Clayoquot in May, 1894; I have also taken it near Victoria in July.
+Brooks has taken it at Chilliwhack and Okanagan. Fannin has taken it
+at 108-Mile House, Cariboo Road, in May.
+
+PELIDNA Cuvier.
+
+108. RED-BACKED SANDPIPER.
+
+  _Pelidna alpina sakhalina_ (Vieillot).
+
+Common in the spring and autumn migration along the coast of Island
+and Mainland. Brooks has taken it at Chilliwhack.
+
+EREUNETES Illiger.
+
+109. SEMIPALMATED SANDPIPER.
+
+  _Ereunetes pusillus_ (Linn.).
+
+Not uncommon in migration along the Coast. Chilliwhack and Okanagan.
+(_Brooks_.) Common at Metlakatla. (_Rev. J. H. Keen_.)
+
+110. WESTERN SEMIPALMATED SANDPIPER.
+
+  _Ereunetes pusillus occidenlcdis_ (Lawr.).
+
+Abundant in the fall along the Coast. I also found it very common at
+Clayoquot, May, 1894, and have taken it near Victoria in July. Brooks
+has taken it at Chilliwhack.
+
+CALIDRIS Cuvier.
+
+111. SANDERLING.
+
+  _Calidris arenaria_ (Linn.).
+
+Not common; several have been taken near Victoria by A. H. Maynard.
+Brooks has taken it at Chilliwhack. Fairly common at Metlakatla.
+(_Rev J. H. Keen_.)
+
+LIMOSA Brisson.
+
+112. MARBLED GODWIT.
+
+  _Limosa fedoa_ (Linn.).
+
+The whole of British Columbia; breeds chiefy east of Cascades.
+(_Fannin_.) Port Simpson. (_W. B. Anderson_.)
+
+TOTANUS Bechstein.
+
+113. GREATER YELLOW-LEGS.
+
+  _Totanus melanoleucus_ (Gmel.).
+
+Common along the coast in winter; have taken it at Clayoquot in May.
+Brooks has taken it at Chilliwhack and Okanagan. I found it breeding
+around the lakes at Clinton, May, 1891. (_Fannin_.)
+
+114. LESSER YELLOW-LEGS.
+
+  _Totanus flavipes_ (Gmel.).
+
+Tolerably common through the Province; winters on the coast. Brooks
+has taken it at Chilliwhack and Okanagan.
+
+HELODROMAS Kaup.
+
+115. SOLITARY SANDPIPER.
+
+  _Helodromas solitarius_ (Wils.).
+
+Found throughout the Province. Taken at Chilliwhack and Okanagan.
+(_Brooks_).
+
+116. WESTERN SOLITARY SANDPIPER.
+
+  _Helodromas solitarius cinnamomeus_ (Brewster).
+
+Taken at Chilliwhack and Okanagan. (_Brooks_).
+
+SYMPHEMIA Rafinesque.
+
+117. WESTERN WILLET.
+
+  _Symphemia semipalmata inornata_ (Brewster).
+
+One specimen shot at Clover Point, near Victoria, August 18th, 1898,
+by Mr. J. Henley.
+
+HETERACTITIS Stejneger.
+
+118. WANDERING TATLER.
+
+  _Heteractitis incanus_ (Gmel.).
+
+Tolerably common along the coast of Island and Mainland. I took it at
+Clayoquot, May, 1894, and at Skidegate, Queen Charlotte Islands,
+August 5th, 1895.
+
+BARTRAMIA Lesson.
+
+119. BARTRAMIAN SANDPIPER.
+
+  _Bartramia longicauda_ (Bechst.).
+
+One specimen shot at Comox, August 20th, 1895, by W. B. Anderson.
+Another was taken at l50-Mile House, Cariboo Road, May 16th, 1901, by
+A. C. Brooks.
+
+TRYNGITES Cabanis.
+
+120. BUFF-BREASTED SANDPIPER.
+
+  _Tryngites subruficollis_ (Vieill.).
+
+Not common. Taken at Chilliwhack by A. C. Brooks.
+
+ACTITIS Illiger.
+
+121. SPOTTED SANDPIPER.
+
+  _Actitis macularia_ (Linn.).
+
+This bird is found along the entire coast; I have taken it at
+Clayoquot Vancouver Island, and at Skidegate, Queen Charlotte Islands,
+July 26th, 1895. Brooks has taken it at Chilliwhack and Okanagan.
+
+NUMENIUS Brisson.
+
+122. LONG-BILLED CURLEW.
+
+  _Numenius longirostris_ (Wils.).
+
+A few specimens have been taken on the coast, but is to be more
+frequently met with in the interior of the Mainland, south through the
+Okanagan.
+
+123. HUDSONIAN CURLEW.
+
+  _Numenius hudsonicus_ (Lath.).
+
+Not common, but distributed along the coast of Island and Mainland. I
+have taken it at Clayoquot in May, 1894. W. B. Andersen has taken it
+at Port Simpson, and J. Maynard at Cadboro Bay, near Victoria.
+
+
+Family CHARADRIIDAE. Plovers, Etc.
+
+CHARADRIUS Linnaeus.
+
+124. BLACK-BELLIED PLOVER.
+
+  _Charadrius squatarola_ (Linn.).
+
+Abundant during migrations along the coast. Brooks has taken it at
+Chilliwhack and Okanagan.
+
+125. AMERICAN GOLDEN PLOVER.
+
+  _Charadrius dominicus_ (Mull.).
+
+Common on the coast during migrations. Brooks has taken it at
+Chilliwhack and Okanagan. Rev. J. H. Keen reports it common at
+Metlakatla. W. B. Anderson has taken it at Port Simpson.
+
+AEGIALITIS Boie.
+
+126. KILLDEER PLOVER.
+
+  _AEgialitis vocifera_ (Linn.).
+
+Found throughout the Province; occasionally on the coast in winter.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+127. SEMIPALMATED PLOVER.
+
+  _AEgialitis semipalmata_ (Bonap.).
+
+Not common. I took two specimens on the West Coast, Vancouver
+Island--one at Ucluelet, April 28th, 1894, the other at Clayoquot,
+May, 1894. A. H. Maynard shot one at Cadboro Bay, Victoria.
+
+
+Family APHRIZIDAE. Surf-birds and Turnstones.
+
+APHRIZA Audubon.
+
+128. SURF-BIRD.
+
+  _Aphriza virgata_ (Gmel.).
+
+Not uncommon along the entire coast line of the Province. I found it
+quite common at Clayoquot, May, 1894. It has been taken at Port
+Simpson by W. B. Anderson.
+
+ARENARIA Brisson.
+
+129. TURNSTONE.
+
+  _Arenaria interpres_ (Linn.).
+
+Along the entire coast line, but not common. It has been taken at Port
+Simpson and Sidney Island. Brooks has taken it at Sumas Lake.
+
+130. BLACK TURNSTONE.
+
+  _Arenaria melanocephala_ (Vig.).
+
+Common along the entire coast of the Province. I have taken it at
+Clayquot in May, 1894, and I found it very common at Skidegate, Queen
+Charlotte Islands, in July, 1895, and it is found near Victoria
+throughout the winter.
+
+
+Family HAEMATOPODIDAE. Oyster-Catchers.
+
+HAEMATOPUS Linnaeus.
+
+131. BLACK OYSTER-CATCHER.
+
+  _Haematopus bachmani_ (Aud.).
+
+Abundant along the entire coast of Island and Mainland. Breeds
+throughout its range. Common on Queen Charlotte Islands, at Skidegate.
+
+
+
+
+Order GALLINAE. Gallinaceous Birds.
+
+Family TETRAONIDAE. Grouse, Partridges, Etc.
+
+OREORTYX Baird.
+
+132. MOUNTAIN PARTRIDGE.
+
+  _Oreortyx pictus_ (Dougl.).
+
+Common on Vancouver Island. Introduced from California.
+
+LOPHORTYX Bonaparte.
+
+133. CALIFORNIA PARTRIDGE.
+
+  _Lophortyx californicus_ (Shaw.).
+
+Common on Vancouver Island. Introduced from California.
+
+DENDRAGAPUS Elliot.
+
+134. SOOTY GROUSE.
+
+  _Dendragapus obscurus fuliginosus_ (Ridgw.).
+
+Abundant west of Cascade Mountains, including Vancouver Island, Queen
+Charlotte Islands, and all the larger islands along the coast.
+
+135. RICHARDSON'S GROUSE.
+
+  _Dendragapus obscurus richardsonii_ (Dougl.).
+
+An abundant resident east of Cascade Mountains to Rocky Mountains.
+
+CANACHITES Stejneger.
+
+136. FRANKLIN'S GROUSE.
+
+  _Canachites franklinii_ (Dougl.).
+
+An abundant resident throughout the wooded portion of the interior
+east of the Cascade Mountains, from Okanagan to Cassiar.
+
+BONASA Stephens.
+
+137. CANADIAN RUFFED GROUSE.
+
+  _Bonasa umbellus togata_ (Linn.).
+
+An abundant resident east of and including the Cascade Mountains.
+Taken at Chilliwhack by A. C. Brooks.
+
+138. GRAY RUFFED GROUSE.
+
+  _Bonasa umbellus umbelloides_ (Dougl.).
+
+Rocky Mountain District, Soda Creek and Beaver Pass. Check List of
+B. C. Birds, 1898. (_Fannin_.) Okanagan, A. C. Brooks.
+
+139. OREGON RUFFED GROUSE.
+
+  _Bonasa umbellus sabini_ (Dougl.).
+
+An abundant resident on Vancouver Island and all the larger islands of
+the coast, and on the Mainland west of Cascade Mountains.
+
+LAGOPUS Brisson.
+
+140. WILLOW PTARMIGAN.
+
+  _Lagopus lagopus_ (Linn.).
+
+Northern portion of British Columbia, Dease Lake, Cassiar. (_James
+Porter_.) Log Cabin, Atlin. (_Fletcher_ and
+_Englehardt_.).
+
+141. ROCK PTARMIGAN.
+
+  _Lagopus rupestris_ (Gmel.).
+
+Common on the summit of most of the mountains on the Mainland and
+Vancouver Island. (_Fannin_.) Quite common at Atlin.
+
+142. WHITE-TAILED PTARMIGAN.
+
+  _Lagopus leucurus_ (Swains. & Rich.).
+
+Found on the summit of most mountains on the Mainland except the Coast
+Range. Taken at Okanagan. (_Brooks_.) Cassiar. (_James
+Porter_.)
+
+PEDIOECETES Baird.
+
+143. COLUMBIAN SHARP-TAILED GROUSE. PRAIRIE CHICKEN.
+
+  _Pedioecetes phasianellus columbianus_ (Ord.).
+
+An abundant resident east of Cascade Range through the southern
+portions of the Province. E. P. Venables reports it common near
+Vernon.
+
+CENTROCERCUS Swainson.
+
+144. SAGE GROUSE.
+
+  _Centrocercus urophasianus_ (Bonap.).
+
+Three specimens taken by Mr. G. B. Martin at Osoyoos Lake in October,
+1864. (Check List of B. C. Birds, 1891. _Fannin_.)
+
+
+Family PHASIANIDAE. Pheasants.
+
+PHASIANUS Linnaeus.
+
+145. RING-NECKED PHEASANT.
+
+  _Phasianus torquatus_ (Linn.).
+
+Abundant on Vancouver Island and in the Lower Fraser River Valley and
+other portions of the Mainland. Introduced from China; now thoroughly
+naturalised.
+
+
+
+
+Order COLUMBAE. Pigeons.
+
+Family COLUMBIDAE. Pigeons.
+
+COLUMBA Linnaeus.
+
+146. BAND-TAILED PIGEON.
+
+  _Columba fasciata_ (Say.).
+
+A common summer resident in the south-western portions of the Province
+including Vancouver Island.
+
+ECTOPISTES Swainson.
+
+147. PASSENGER PIGEON.
+
+  _Ectopistes migratorius_ (Linn.).
+
+Mentioned in John Keast Lord's "Naturalist in British Columbia"
+(1866). If it ever did occur here, it is now, without doubt,
+extinct. (_Fannin_.)
+
+ZENAIDURA Bonaparte.
+
+148. MOURNING DOVE.
+
+  _Zenaidura macroura_ (Linn.).
+
+Not common on Vancouver Island. I found it quite common in the
+Okanagan in June, 1895. Brooks has taken it at Chilliwhack. Rev. J. H.
+Keen reports it rare at Metlakatla.
+
+
+
+
+Order RAPTORES. Birds of Prey.
+
+Family CATHARTIDAE. American Vultures.
+
+GYMNOGYPS Lesson.
+
+149. CALIFORNIA VULTURE.
+
+  _Gymnogyps californianus_ (Shaw.).
+
+In September, 1880, I saw two of these birds at Burrard Inlet. It is
+more than probable they are accidental visitants here. Lord says:
+Mouth of Fraser River; seldom visits the Interior. (_Fannin_.)
+
+CATHARTES Illeger.
+
+150. TURKEY VULTURE.
+
+  _Cathartes aura_ (Linn.).
+
+Tolerably common on Vancouver Island and portions of the Mainland.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+
+Family FALCONIDAE. Falcons, Hawks, Eagles, etc.
+
+CIRCUS Lacepede.
+
+151. MARSH HAWK.
+
+  _Circus hudsonius_ (Linn.).
+
+Common on Vancouver Island and Mainland. Abundant on the Mainland.
+Partially migratory; a few are found throughout the winter at
+Ladners. (_Fannin_.) Chilliwhack and Okanagan. (_Brooks_.)
+
+ACCIPITER Brisson.
+
+152. SHARP-SHINNED HAWK.
+
+  _Accipiter velox_ (Wils.).
+
+Abundant on Vancouver Island and portions of the Mainland. Brooks has
+taken it at Chilliwhack and Okanagan.
+
+153. COOPER'S HAWK.
+
+  _Accipiter cooperii_ (Bonap.).
+
+Found on Vancouver Island and Mainland; have taken it at Sicamous.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+154. AMERICAN GOSHAWK.
+
+  _Accipiter atricapillus_ (Wils.).
+
+Rather common in interior of Province. A few have been taken on
+Vancouver Island. Brooks has taken it at Chilliwhack and Okanagan.
+
+155. WESTERN GOSHAWK.
+
+  _Accipiter atricapillus striatulus_ (Ridgw.).
+
+Common throughout the Province. I found it very common at Skidegate,
+Queen Charlotte Islands, in August, 1895.
+
+BUTEO Cuvier.
+
+156. WESTERN RED-TAILED HAWK.
+
+  _Buteo borealis calurus_ (Cass.).
+
+An abundant resident on Vancouver Island and coast of Mainland. Taken
+at Chilliwhack and Okanagan. (_Brooks_.) Rare at Massett, Queen
+Charlotte Islands. (_Rev. J. H. Keen_.)
+
+157. RED-BELLIED HAWK.
+
+  _Buteo lineatus elegans_ (Cass.).
+
+Not common. I have no record of it on Vancouver Island. It has been
+taken at Burrard Inlet by J. Fannin, and at Chilliwhack by
+A. C. Brooks.
+
+158. SWAINSON'S HAWK.
+
+  _Buteo swainsoni_ (Bonap.).
+
+Not common on Vancouver Island; it has been taken at Victoria and
+Union. Brooks has taken it at Chilliwhack and Okanagan.
+
+ARCHIBUTEO Brehm.
+
+159. AMERICAN ROUGH-LEGGED HAWK.
+
+  _Archibuteo lagopus sancti-johannis_ (Gmel.).
+
+Not common. Found on both Vancouver Island and Mainland. Brooks has
+taken it at Chilliwhack and Okanagan.
+
+AQUILA Brisson.
+
+160. GOLDEN EAGLE.
+
+  _Aquila chrysaetos_ (Linn.).
+
+Found throughout the entire Province. Rare on Vancouver Island. A
+resident.
+
+HALIAEETUS Savigny.
+
+161. BALD EAGLE.
+
+  _Haliaeetus leucocephalus alascanus_ (C. H. Townsend).
+
+An abundant resident throughout the entire Province, on Island and
+Mainland. Breeds throughout its range. Common on Queen Charlotte
+Islands.
+
+FALCO Linnaeus.
+
+162. GYRFALCON.
+
+  _Falco rusticolus gyrfalco_ (Linn.).
+
+One specimen shot at Comox, October, 1894, by W. Harvey. Brooks has
+taken it at Chilliwhack.
+
+163. PRAIRIE FALCON.
+
+  _Falco mexicanus _(Schleg.).
+
+Taken at Chilliwhack by A. C. Brooks, and at Kamloops, November, 1894,
+by W. Fortune.
+
+164. DUCK HAWK.
+
+  _Falco peregrinus anatum_ (Bonap.).
+
+Apparently more common on the Mainland than Vancouver Island. Several
+have been taken in the Okanagan Country.
+
+165. PEALE'S FALCON.
+
+  _Falco peregrinus pealei_ (Ridgw.).
+
+Found chiefly along the coasts of Mainland and Vancouver
+Island. Several specimens have been taken at Cadbora Bay, near
+Victoria. Mr. Brooks has taken it at Chilliwhack. Rare at
+Metlakatla. (_Rev. J. H. Keen_.)
+
+166. PIGEON HAWK.
+
+  _Falco columbarius_ (Linn.).
+
+Apparently more common east of the Coast Range. A few have been taken
+on the Coast. Brooks has taken it at Chilliwhack and Okanagan.
+
+167. BLACK MERLIN.
+
+  _Falco columbarius suckleyi_ (Ridgw.).
+
+Abundant; summer resident on Vancouver Island and portions of
+Mainland. Mr. Brooks has taken it at Chilliwhack and Okanagan.
+
+168. RICHARDSON'S MERLIN.
+
+  _Falco richardsonii_ (Ridgw.).
+
+Not common on Vancouver Island; a few specimens have been taken near
+Victoria. Brooks has taken it at Chilliwhack and Okanagan.
+
+169. DESERT SPARROW HAWK.
+
+  _Falco spaverius phaloena_ (Lesson).
+
+Abundant throughout the southern portion of Mainland, including
+Vancouver Island, from the coast to Rocky Mountains.
+
+PANDION Savigny.
+
+170. AMERICAN OSPREY. FISH HAWK.
+
+  _Pandion halioetus carolinensis_ (Gmel.).
+
+Common throughout the Province, on Mainland and Island, including
+Queen Charlotte Islands. Their nest is a huge heap of sticks, usually
+on the broken top of a tree.
+
+
+Family BUBONIDAE. Horned Owls, etc.
+
+ASIO Brisson.
+
+171. AMERICAN LONG-EARED OWL.
+
+  _Asio wilsonianus_ (Less.).
+
+Not common; a few have been taken on Vancouver Island. Mr. Brooks has
+taken it at Chilliwhack and Okanagan.
+
+172. SHORT-EARED OWL.
+
+  _Asio accipitrinus_ (Pall.).
+
+Common throughout the Province, on Island and Mainland; rather common
+near Victoria throughout the winter.
+
+SYRNIUM Sanigny.
+
+173. NORTHERN SPOTTED OWL.
+
+  _Syrnium occidentale caurinum_ (Merriam).
+
+Rare resident at Chilliwhack and Mount Lehman (_Brooks_.) The
+late John Fannin had this bird on his first list of B. C. birds, he
+having taken it at Burrard Inlet some years ago, but in his lists of
+1891 and 1898 he dropped it.
+
+SCOTIAPTEX Swainson.
+
+174. GREAT GREY OWL.
+
+  _Scotiaptex nebulosa_ (Forster).
+
+A rare bird in this Province; it has been taken at Vernon and
+Stewart's Lake. Brooks has taken it at Chilliwhack.
+
+CRYPTOGLAUX Richmond.
+
+175. RICHARDSON'S OWL.
+
+  _Cryptoglaux tengmalmi richardsoni_ (Bonaparte).
+
+Taken at Okanagan by A. C. Brooks.
+
+176. SAW-WHET OWL.
+
+  _Cryptoglaux acadica_ (Gmel.).
+
+Not common on Vancouver Island; several have been taken near this
+city. Tolerably at Chilliwhack and common in winter at Okanagan.
+(_Brooks_.)
+
+176A. NORTH-WEST SAW-WHET OWL.
+
+  _Cryptoglaux acadica scotaea_ (Osgood).
+
+Queen Charlotte Islands.
+
+MEGASCOPS Kaup.
+
+177. KENNICOTT'S SCREECH OWL.
+
+  _Megascops asio kennicottii_ (Elliot).
+
+An abundant resident throughout the Province. Breeds in the
+neighbourhood of Victoria.
+
+178. MACFARLANE'S SCREECH OWL.
+
+  _Megascops asio macfarlanei_ (Brewst.).
+
+Southern portion of the Province, east of Cascade Mountains.
+
+BUBO Dumeril.
+
+179. GREAT HORNED OWL.
+
+  _Bubo virginianus_ (Gmel.).
+
+Taken at Chilliwhack by A. C. Brooks, and near Victoria by John Hall,
+November, 1896.
+
+180. WESTERN HORNED OWL.
+
+  _Bubo virginianus pallescens_ (Stone).
+
+Common on Vancouver Island and Mainland. Taken at Chilliwhack and
+Okanagan. (_Brooks_.)
+
+181. ARCTIC HORNED OWL.
+
+  _Bubo virginianus arcticus_ (Swains.).
+
+One speciman taken near Victoria, November, 1896, by A. H. Maynard,
+and at Chilliwhack by A. C. Brooks.
+
+182. DUSKY HORNED OWL.
+
+  _Bubo virginianus saturatus_ (Ridgw.).
+
+An abundant resident in this Province; common on Vancouver Island.
+Brooks has taken it at Chilliwhack and Okanagan.
+
+NYCTEA Stephens.
+
+183. SNOWY OWL.
+
+  _Nyctea nyctea_ (Linn.).
+
+A resident in the northern portions of the Province, south in winter
+to mouth of Fraser River, Chilliwhack and Okanagan, occasionally to
+Vancouver Island. Rev. J. H. Keen reports it rare at Metlakahtla.
+
+SURNIA Dumeril.
+
+184. American Hawk Owl.
+
+  _Surnia ulula caparoch_ (Mull.).
+
+Not common, but found throughout the southern part of the Province
+from the Coast to Okanagan. Rare on Vancouver Island. It has been
+taken at Victoria, Sardis, Grand Prairie and Vernon.
+
+SPEOTYTO Gloger.
+
+185. Burrowing Owl.
+
+  _Speotyto cunicularia hypogaea_ (Bonap.).
+
+Not common, but is found in suitable localities in the southern
+portions of the Province from Chilliwhack to Okanagan. Mr. Brooks has
+taken three specimens at Chilliwhack. Rare at Vernon.
+(_E. P. Venables_.)
+
+GLAUCIDIUM Boie.
+
+186. Pygmy Owl.
+
+  _Glaucidium gnoma_ (Wagl.).
+
+Common throughout the Province. (_Fannin_.)
+
+187. California Pygmy Owl.
+
+  _Glaucidium gnoma californicum_ (Scl.).
+
+Common throughout the southern portions of the Province, including
+Vancouver Island.
+
+
+
+
+Order COCCYGES. Cuckoos and Kingfishers.
+
+Family CUCULIDAE. Cuckoos.
+
+COCCYZUS Vieillot.
+
+188. Western Yellow-billed Cuckoo. California Cuckoo.
+
+  _Coccyzus americanus occidentalis_ (Ridgw.).
+
+A regular summer resident in the southwestern portions of the
+Province. It breeds on Vancouver Island near Victoria. Mr. Brooks has
+taken it at Chilliwhack.
+
+
+Family ALCEDINIDAE. Kingfishers.
+
+CERYLE Boie.
+
+189. Belted Kingfisher.
+
+  _Ceryle alcyon_ (LINN.).
+
+An abundant resident throughout the Province, breeds throughout its
+range.
+
+
+
+
+Order PICI. Woodpeckers, Wrynecks, etc.
+
+Family PICIDAE. Woodpeckers.
+
+DRYOBATES Boie.
+
+190. Northern Hairy Woodpecker.
+
+  _Dryobates villosus leucomelas_ (Bodd.).
+
+Common resident on the Mainland east of Cascade Mountains. I found it
+quite common at Sicamous, May, 1895. Mr. Brooks reports having taken
+it several times at Chilliwhack.
+
+191. Harris's Woodpecker.
+
+  _Dryobates villosus harrisii_ (Aud.).
+
+A common resident west of Coast Range, including Vancouver Island.
+
+192. Cabanis's Woodpecker.
+
+  _Dryobates villosus hyloscopus_ (Cab.).
+
+Rocky Mountain district. Taken at Okanagan by A. C. Brooks.
+
+193. Queen Charlotte Woodpecker.
+
+  _Dryobates villosus picoideus_ (Osgood).
+
+Queen Charlotte Islands.
+
+194. Gairdner's Woodpecker.
+
+  _Dryobates pubescens gairdneri_ (Aud.).
+
+A very common resident on Vancouver Island, Coast of Mainland and
+Lower Fraser Valley.
+
+195. Batchelder's Woodpecker.
+
+  _Dryobates pubescens homorus_ (Cab.).
+
+Common throughout the interior of the Province, along the C. P. R., at
+Ducks, and at Vernon. Mr. Brooks has taken it at Chilliwhack and
+Okanagan.
+
+XENOPICUS Baird.
+
+196. White-headed Woodpecker.
+
+  _Xenopicus albolarvatus_ (Cass.).
+
+A rare bird in this Province, found east of the Coast Range. Museum
+specimen from Similkameen Valley, collected by R. V. Griffin.
+
+PICOIDES Lacepede.
+
+197. Black-backed Three-toed Woodpecker.
+
+  _Picoides arcticus_ (Swains.).
+
+Found only east of Coast Range, where in some localities it is quite
+common. Mr. Brooks reports it from Okanagan.
+
+198. Alaskan Three-toed Woodpecker.
+
+  _Picoides americanus fasciatus_ (Bird).
+
+West of Cascade Mountains common. Rare on Vancouver Island. Brooks
+says common resident in the spruce zone on the Coast Range.
+
+199. Alpine Three-toed Woodpecker.
+
+  _Picoides americanus dorsalis_ (Baird).
+
+Mountains east of Cascade Mountains, north to Cassiar.
+(_Fannin_.)
+
+SPHYRAPICUS Baird.
+
+200. Red-naped Sapsucker.
+
+  _Sphyrapicus varius nuchalis_ (Baird).
+
+Generally distributed east of Cascade Mountains throughout the
+Province. It was quite common at Duck's, May, 1895.
+
+201. Red-breasted Sapsucker.
+
+  _Sphyrapicus ruber notkensis_ (Suckow.).
+
+Generally distributed along the Coast. Not uncommon on Vancouver
+Island. Mr. Brooks has taken it at Chilliwhack.
+
+202. Williamson's Sapsucker.
+
+  _Sphyrapicus thyroideus_ (Cass.).
+
+Taken at Similkameen, B. C., by R. V. Griffin, June, 1882, (Check List
+of B. C. Birds, 1891--_Fannin_.)
+
+CEOPHLOEUS Cabanis.
+
+203. Northern Pileated Woodpecker.
+
+  _Ceophloeus pileatus abieticola_ (Bangs.).
+
+Common resident throughout the Province, on Vancouver Island and
+Mainland through the interior to Okanagan. Mr. Brooks found it scarce
+in the Cariboo District.
+
+ASYNDESMUS (Wils.) Coues.
+
+204. Lewis's Woodpecker.
+
+  _Asyndesmus torquatus_ (Wils.).
+
+Abundant through the interior of the Province, at Vernon and Grand
+Prairie. I found it quite common at Chilliwhack this year. A summer
+resident on Vancouver Island.
+
+COLAPTES Swainson.
+
+205. Northern Flicker.
+
+  _Colaptes auratus luteus_ (Bangs.).
+
+A rare bird of this Province, but is found on Vancouver Island and
+east to the Rocky Mountains.
+
+206. Red-shafted Flicker.
+
+  _Colaptes cafer collaris_ (Vigors).
+
+Common east of Cascade Mountains through the interior, at Duck's,
+Sicamous and Okanagan.
+
+207. North-western Flicker.
+
+  _Colaptes cafer saturatior_ (Ridgew.).
+
+Abundant resident west of Cascade Mountains; very common on Vancouver
+Island.
+
+
+
+
+Order MACROCHIRES. Goatsuckers, Swifts, etc.
+
+Family CAPRIMULGIDAE. Goatsuckers.
+
+PHALAENOPTILUS Ridgway.
+
+208. Poor-will.
+
+  _Phalaenoptilis nuttallii_ (Aud.).
+
+Southern interior portions of Province from Kamloops through the
+Okanagan. Summer resident.
+
+CHORDEILES Swainson.
+
+209. Nighthawk.
+
+  _Chordeiles virginianus_ (Gmel.).
+
+An abundant summer resident east of Cascade Mountains. Mr. Brooks has
+taken it at Chilliwhack.
+
+210. Western Nighthawk.
+
+  _Chordeiles virginianus henryi_ (Cass.).
+
+A summer resident west of Cascade Mountains. Abundant on Vancouver
+Island.
+
+
+Family MICROPODIDAE. Swifts.
+
+CYPSELOIDES Streubel.
+
+211. Black Swift.
+
+  _Cypseloides niger borealis_ (Ridgw.).
+
+Common near Victoria during migration. Rev. J. H. Keen says only pass
+over at Metlakatla. Said to breed in mountains back of Chilliwhack and
+in the neighbourhood of Comox. (_Fannin_.) Taken at Chilliwhack
+and Okanagan. (_Brooks_.)
+
+CHAETURA Stephens.
+
+212. Vaux's Swift.
+
+  _Chaetura vauxii_ (Towns.).
+
+A summer resident on Vancouver Island and Mainland. I found it very
+common near Sicamous, May 28th, 1895.
+
+
+Family TROCHILIDAE. Hummingbirds.
+
+TROCHILUS Linnaeus.
+
+213. Black-chinned Hummingbird.
+
+  _Trochilus alexandri_ (Bourc. & Muls.).
+
+Confined to the Mainland. I have never seen it on Vancouver Island.
+Mr. Brooks has taken it at Chilliwhack and Okanagan.
+
+SELASPHORUS Swainson.
+
+214. Red-backed Rufous Hummingbird.
+
+  _Selasphorus rufus_ (Gmel.).
+
+An abundant summer resident west of Cascade Mountains, including
+Vancouver Island. Mr. Brooks has taken it at Okanagan. Common at
+Metlakatla (_Rev. J. H. Keen_.)
+
+215. Green-backed Rufous Hummingbird. Allen's Hummingbird.
+
+  _Selasphorus alleni_ (Hensh.).
+
+Eastern Cascade and Rocky Mountain districts. (_Fannin_.)
+
+STELLULA Gould.
+
+216. Calliope Hummingbird.
+
+  _Stellula calliope_ (Gould).
+
+East and west of Cascade Mountains. (_Fannin_.)
+
+
+
+
+Order PASSERES. Perching Birds.
+
+Family TYRANNIDAE. Tyrant Flycatchers.
+
+TYRANNUS Cuvier.
+
+217. Kingbird.
+
+  _Tyrannus tyrannus_ (Linn.).
+
+A common summer resident on the Mainland at Chilliwhack, Sardis, Ducks
+and Vernon, and has been taken as far north as Port Simpson. Rare on
+Vancouver Island.
+
+218. Gray Kingbird.
+
+  _Tyrannus dominicensis_ (Gmel.).
+
+Accidentally in B. C. One specimen taken at Cape Beale, October 9,
+1889, by Miss Cox, and presented to the Museum.
+
+219. Arkansas Kingbird.
+
+  _Tyrannus verticalis_ (Say).
+
+A common summer resident on the Mainland. I have found it quite common
+at Chilliwhack, Ducks and Okanagan, rarely west to Vancouver Island.
+
+SAYORNIS Bonaparte.
+
+220. Say's Phoebe.
+
+  _Sayornis saya_ (Bonap.).
+
+A summer resident. Not common on Vancouver Island, chiefly on Mainland
+in the interior. Mr. Brooks has taken it at Chilliwhack and Okanagan.
+
+CONTOPUS Cabanis.
+
+221. Olive-sided Flycatcher.
+
+  _Contopus borealis_ (Swains.).
+
+A summer resident on Vancouver Island and Mainland. Mr. Brooks has
+taken it at Chilliwhack and Okanagan.
+
+222. Western Wood Pewee.
+
+  _Contopus richardsonii_ (Swains.).
+
+A common summer resident on Vancouver Island and Mainland. Very common
+at Sicamous, May, 1895.
+
+EMPIDONAX Cabanis.
+
+223. Western Flycatcher.
+
+  _Empidonax difficilis_ (Baird).
+
+A common summer resident west of Cascade Mountains on Mainland and
+Vancouver Island. I also found it quite common at Skidegate, Queen
+Charlotte Islands, July, 1895.
+
+224. Traill's Flycatcher.
+
+  _Empidonax trailli_ (Aud.).
+
+A summer resident. I have found it quite common on Vancouver Island
+and the Mainland at Sicamous and Vernon. Mr. Brooks has taken it at
+Chilliwhack and Okanagan.
+
+225. Hammond's Flycatcher.
+
+  _Empidonax hammondi_ (Xantus.).
+
+Summer resident. Chiefly on the Mainland, east and west of Cascade
+Mountains. A few have been taken on Vancouver Island.
+
+226. Wright's Flycatcher.
+
+  _Empidonax wrightii_ (Baird).
+
+Summer resident. Taken at Chilliwhack and Okanagan. (_Brooks_.)
+
+
+Family ALAUDIDAE. Larks.
+
+OTOCORIS Bonaparte.
+
+227. Pallid Horned Lark.
+
+  _Otocoris alpestris leucoloema_ (Coues.).
+
+Common in spring and autumn on Vancouver Island. Have taken it at
+Clover Point near Victoria. Mr. Brooks has taken it at Chilliwhack and
+Okanagan.
+
+228. Streaked Horned Lark.
+
+  _Otocoris alpestris strigata_ (Hensh.).
+
+Spring and autumn migrant on Vancouver Island. Have taken it near
+Victoria in September. Mr. Brooks has taken it at Chilliwhack. West of
+Cascades; taken at Burrard Inlet and Vancouver Island (_Fannin_).
+Fort Simpson by W. B. Anderson.
+
+229. Dusky Horned Lark.
+
+  _Otocoris alpestris merrilli_ (Dwight).
+
+Chiefly east of Cascades. I have never known it to be taken on
+Vancouver Island. Mr. Brooks has taken it at Chilliwhack and
+Okanagan. Chas. de B. Green has taken it at Osoyoos.
+
+
+Family CORVIDAE. Crows, Jays, Magpies.
+
+PICA Brisson.
+
+230. American Magpie.
+
+  _Pica pica hudsonica_ (Sab.).
+
+A common resident on the Mainland, rarely west to Vancouver Island.
+Breeds in the interior of the Mainland, east of Cascade Mountains.
+
+CYANOCITTA Strickland.
+
+231. Steller's Jay.
+
+  _Cyanocitta stelleri_ (Gmel.).
+
+An abundant resident west of Coast Range on Mainland and Vancouver
+Island throughout the year.
+
+232. Black-headed Jay.
+
+  _Cyanocitta stelleri annectens_ (Baird).
+
+This form is quite common in the interior from the Cascades east down
+through the Okanagan. Mr. Brooks has taken it at Chilliwhack.
+
+233. Queen Charlotte Jay.
+
+  _Cyanocitta stelleri carlottae_ (Osgood).
+
+Queen Charlotte Islands; not uncommon at Skidegate, August, 1895.
+
+PERISOREUS Bonaparte.
+
+234. Rocky Mountain Jay.
+
+  _Perisoreus canadensis capitalis_ (Ridgw.).
+
+East of Cascade Mountains. Taken at Okanagan and in the Caribou
+District by A. C. Brooks.
+
+235. Oregon Jay.
+
+  _Perisoreus obscurus_ (Ridgw.).
+
+An abundant resident west of Cascades, on the Mainland, but not so
+numerous on Vancouver Island.
+
+236. Gray Jay.
+
+  _Perisoreus obscurus griseus_ (Ridgw.).
+
+California to British Columbia, east of the Coast and Cascade Ranges.
+(_Ridgway_.)
+
+CORVUS Linnaeus.
+
+237. Northern Raven.
+
+  _Corvus corax principalis_ (Ridgw.).
+
+A resident throughout the Province; more common on the Coast. I have
+seen it quite common at Clayoquot, V. I., and in August, 1895, it was
+very common at Skidegate, Queen Charlotte Islands. Mr. Brooks has
+taken it at Chilliwhack and Okanagan. Common at Metlakatla.
+(_Rev. J. H. Keen_.)
+
+238. American Crow.
+
+  _Corvus brachyrhynchos_ (Brehm.)
+
+Common east of Coast Range; common at Sicamous, May, 1895. Mr. Brooks
+has taken it at Chilliwhack and Okanagan.
+
+239. Northwest Crow.
+
+  _Corvus caurinus_ (Baird).
+
+An abundant resident west of Cascade Mountains, on Mainland and
+Vancouver Island, and fairly common at Skidegate, Queen Charlotte
+Islands, July, 1895.
+
+NUCIFRAGA Brisson.
+
+240. Clarke's Nutcracker.
+
+  _Nucifraga columbiana_ (Wils.).
+
+A common resident on the Mainland, chiefly east of the Coast Range.
+Rare on Vancouver Island.
+
+CYANOCEPHALUS Bonaparte.
+
+241. Blue Crow. Pinon Jay.
+
+  _Cyanocephalus cyanocephalus_ (Wied.).
+
+Rocky Mountain region to the Pacific Coast Ranges, but rather more
+southerly; north to British Columbia; south to Lower California.--"Key
+to N. A. Birds (Coues), Fifth Edition."
+
+
+Family ICTERIDAE. Blackbirds, Orioles, Etc.
+
+DOLICHONYX Swainson.
+
+242. Bobolink.
+
+  _Dolichonyx oryzivorus_ (Linn.)
+
+East and west of Cascade Mountains. Taken at Chilliwhack by A. C.
+Brooks.
+
+MOLOTHRUS Swainson.
+
+243. Cowbird.
+
+  _Molothrus ater_ (Bodd.).
+
+A summer resident. I have found it fairly common in the neighbourhood
+of Ducks, on C. P. R., and Okanagan. It is a rare straggler on
+Vancouver Island; it has been taken near Victoria. Mr. Brooks has
+taken it at Chilliwhack. Rev. J. H. Keen reports it rare at
+Metlakatla.
+
+XANTHOCEPHALUS Bonaparte.
+
+244. Yellow-headed Blackbird.
+
+  _Xanthocephalus xanthocephalus_ (Bonap.).
+
+A rare summer resident on the Mainland. I have heard of it at Vernon.
+Fannin has found it above Clinton, on the Cariboo Road. Brooks has
+taken it at Chilliwhack.
+
+AGELAIUS Vieillot.
+
+245. San Diego Redwing.
+
+  _Agelaius phoeniceus neutralis_ (Ridgw.).
+
+Breeding range north, to eastern British Columbia. (_Ridgway_.)
+East of Cascades I found this form quite common near Vernon, June,
+1895.
+
+246. Northwestern Red-wing.
+
+  _Agelaius phoeniceus caurinus_ (Ridgw.).
+
+Common west of Cascades, on Mainland and Vancouver Island; it is found
+throughout the year near Victoria.
+
+STURNELLA Vieillot.
+
+247. Western Meadowlark.
+
+  _Sturnella magna neglecta_ (Aud.).
+
+Abundant resident on Mainland and Vancouver Island, east and west of
+Cascades.
+
+ICTERUS Brisson.
+
+248. Bullock's Oriole.
+
+  _Icterus bullocki_ (Swains.).
+
+A fairly common summer resident, chiefly east of Cascades. I found it
+breeding along the valley of the Thompson and in the Okanagan, near
+Vernon, May and June, 1895. Mr. Brooks has found it breeding at
+Chilliwhack.
+
+EUPHAGUS Cassin.
+
+249. Rusty Blackbird.
+
+  _Euphagus carolinus_ (Muller).
+
+Rare. One specimen shot at Metlakatla by Rev. J. H. Keen, November,
+26th, 1901, and presented by him to the Museum.
+
+250. Brewer's Blackbird.
+
+  _Euphagus cyanocephalus_ (Wagler.).
+
+Common, and generally distributed on the Mainland; quite common in the
+Lower Fraser Valley, Grand Prairie, south side of Thompson River, down
+into the Okanagan country. Breeding in suitable localities. Not common
+on Vancouver Island; a few have been taken near Victoria.
+
+
+Family FRINGILLIDAE. Finches, Sparrows, Etc.
+
+HESPERIPHONA Bonaparte.
+
+251. Western Evening Grosbeak.
+
+  _Hesperiphona vespertina montana_ (Ridgw.).
+
+Chiefly on the Mainland. West in winter to Vancouver Island and Lower
+Fraser Valley. Taken at Chilliwhack and Okaiiagan by A. C. B.
+
+PINICOLA Vieillot.
+
+252. Alaskan Pine Grosbeak.
+
+  _Pinicola enucleator alascensis_ (Ridgw.).
+
+Mainland east and west of Cascade Mountains. Common in winter in the
+neighbourhood of Clinton. Mr. Brooks reports it from Chilliwhack and
+Okanagan. Rare at Metlakatla. (_Rev. J. H. Keen_.)
+
+CARPODACUS Kaup.
+
+253. California Purple Finch.
+
+  _Carpodacus purpureus californicus_ (Baird).
+
+An abundant summer resident west of Cascades. Quite a number winter on
+Vancouver Island.
+
+254. Cassin's Purple Finch.
+
+  _Carpodacus cassini_ (Baird).
+
+East of Cascades to Rocky Mountains. Tolerably common.
+
+LOXIA Linnaeus.
+
+255. American Crossbill.
+
+  _Loxia curvirostra minor_ (Brehm.).
+
+An abundant resident throughout the Province, Island and Mainland.
+
+256. White-winged Crossbill.
+
+  _Loxia leucoptera_ (Gmel.).
+
+An abundant resident chiefly on the Mainland, occasionally west to
+Vancouver Island.
+
+LEUCOSTICTE Swainson.
+
+257. Gray-crowned Leucosticte.
+
+  _Leucosticte tephrocotis_ (Swains.).
+
+Rocky Mountain district. In winter, occasionally west to Cascades.
+Mr. Brooks has taken it as far west as Chilliwhack.
+
+258. Hepburn's Leucosticte.
+
+  _Leucosticte tephrocotis littoralis_ (Baird).
+
+Common on the Mainland from the Coast to Rocky Mountains. Breeds above
+timber line in the interior.
+
+ACANTHIS Bechstein.
+
+259. Hoary Redpoll.
+
+  _Acanthis hornemannii exilipes_ (Coues.).
+
+Mouth of Quesnelle, S. Williams. Chilliwhack, A. C. Brooks.
+
+260. Redpoll.
+
+  _Acanthis linaria_ (Linn.).
+
+The Province at large, but more abundant in the Rocky Mountain
+district. West in winter to Vancouver Island.
+
+ASTRAGALINUS Cabanis.
+
+261. American Goldfinch.
+
+  _Astragalinus tristis_ (Linn.).
+
+Both slopes of Cascades to Rocky Mountains on the Mainland. Taken at
+Okanagan by A. C. Brooks.
+
+262. Willow Goldfinch.
+
+  _Astragalinus tristis salicamans_ (Grinnell).
+
+Taken at Okanagan by A. C. Brooks.
+
+SPINUS Koch.
+
+263. Pine Siskin.
+
+  _Spinus pinus_ (Wils.).
+
+An abundant resident throughout the Province. Breeds throughout its
+range.
+
+PASSER Brisson.
+
+264. House Sparrow.
+
+  _Passer domesticus_ (Linn.).
+
+This bird has now become quite common in the cities along the Coast.
+
+PASSERINA (Vieill).
+
+265. Snowflake.
+
+  _Passerina nivalis_ (Linn.).
+
+Not common on Vancouver Island. More abundant east of Cascades on the
+Mainland.
+
+CALCARIUS Bechstein.
+
+266. Lapland Longspur.
+
+  _Calcarius lapponicus_ (Linn.).
+
+The Province at large, but nowhere common. It has been taken a
+Victoria, Chilliwhack, Burrard Inlet, Okanagan, Fort Simpson and
+Metlakatla.
+
+RHYNCHOPHANES Baird.
+
+267. McCown's Longspur.
+
+  _Rhynchophanes mccownii_ (Lawr.).
+
+Taken at Chilliwhack by A. C. Brooks.
+
+POOECETES Baird.
+
+268. Western Vesper Sparrow.
+
+  _Pooecetes gramineus confinis_ (Baird).
+
+Interior portions of the Mainland east of Cascades, and in the
+Okanagan.
+
+269. Oregon Vesper Sparrow.
+
+  _Pooecetes gramineus affinis_ (Miller).
+
+West of Cascades, including Vancouver Island.
+
+PASSERCULUS Bonaparte.
+
+270. Sandwich Sparrow.
+
+  _Passerculus sandwichensis_ (Gmel.).
+
+An abundant summer resident west of Cascades on the Mainland,
+including Vancouver Island. Mr. Brooks has taken it at Okanagan.
+
+271. Western Savanna Sparrow.
+
+  _Passerculus sandwichensis alaudinus_ (Bonaparte).
+
+A common summer resident on the Coast, including Vancouver Island.
+
+COTURNICULUS Bonaparte.
+
+272. Western Grasshopper Sparrow.
+
+  _Coturniculus savannarum bimaculatus_ (Swainson).
+
+A summer resident in the Okanagan, near Vernon. (_Brooks_.)
+
+CHONDESTES Swainson.
+
+273. Western Lark Sparrow.
+
+  _Chondestes grammacus strigatus_ (Swains.).
+
+Interior southern portions of the Mainland, from Chilliwhack east
+through the Okanagan.
+
+ZONOTRICHIA Swainson.
+
+274. Harris's Sparrow.
+
+  _Zonotrichia querula_ (Nutt.).
+
+Cadbora Bay, near Victoria, October, 1894, A. H. Maynard; Comox,
+November, 1894, W. B. Anderson; Sumas (Lower Fraser), 10th January,
+1895, A. C. Brooks.
+
+275. Gambel's Sparrow.
+
+  _Zonotrichia leucophrys gambelii_ (Nutt.).
+
+Mainland, east of Coast Range, east to Okanagan. Common.
+
+276. Nuttall's Sparrow.
+
+  _Zonotrichia leucophrys nuttalli_ (Ridgw.).
+
+An abundant summer resident on Vancouver Island and Mainland, west
+of Cascades.
+
+277. Golden-crowned Sparrow.
+
+  _Zonotrichia coronata_ (Pallas.).
+
+Abundant during migrations on the Coast; have also taken it at
+Chilliwhack and Okanagan.
+
+SPIZELLA Bonaparte.
+
+278. Western Tree Sparrow.
+
+  _Spizella monticola ochracea_ (Brewst.).
+
+Chilliwhack and Okanagan, A. C. Brooks; Victoria, A. H. Maynard.
+
+279. Western Chipping Sparrow.
+
+  _Spizella socialis arizonae_ (Coues.).
+
+An abundant summer resident east and west of Cascades. Breeds in the
+neighbourhood of this City. Also a number remain throughout the
+winter.
+
+280. Clay-coloured Sparrow.
+
+  _Spizella pallida_ (Swains.).
+
+Carpenter's Mountain, 150-Mile House, Cariboo, July 3rd,
+1901. (_Brooks_.)
+
+281. Brewer's Sparrow.
+
+  _Spizella breweri_ (Cass.).
+
+Eastern Cascades and Rocky Mountains districts. Similkameen, R. V.
+Griffin; Okanagan, A. C. Brooks.
+
+JUNCO Wagler.
+
+282. Slate-coloured Junco.
+
+  _Junco hyemalis_ (Linn.).
+
+Taken at Chilliwhack by A. C. Brooks.
+
+283. Oregon Junco.
+
+  _Junco hyemalis oreganus_ (Townsend).
+
+Abundant resident west of Cascades, including Vancouver Island.
+
+284. Shufeldt's Junco.
+
+  _Junco hyemalis shufeldti_ (Coale).
+
+Breeding from interior British Columbia (Stuarts Lake) east to Rocky
+Mountains, south to Vancouver Island.
+
+MELOSIPZA Baird.
+
+285. Rusty Song Sparrow.
+
+  _Melosipza cinerea morphna_ (Oberh.).
+
+An abundant resident throughout the Province. Breeds on Vancouver
+Island and Mainland.
+
+286. Sooty Song Sparrow.
+
+  _Melosipza cinerea rufina_ (Bonap.).
+
+An abundant resident, chiefly along the coast of Mainland and
+Vancouver Island. I found it quite common at Skidegate, Queen
+Charlotte Islands, August, 1895.
+
+287. Lincoln's Sparrow.
+
+  _Melosipza lincolnii_ (Aud.).
+
+Not common. East and west of Cascades; a few have been taken near
+Victoria. Mr. Brooks has taken it at Okanagan.
+
+288. Forbush's Sparrow.
+
+  _Melosipza lincolnii striata_ (Brewst.).
+
+Collected at Comox, September, 1888, by E. H. Forbush. Taken at
+Chilliwhack by A. C. Brooks.
+
+PASSERELLA Swainson.
+
+289. Townsend's Sparrow.
+
+  _Passerella iliaca unalaschcensis_ (Gmel.).
+
+A common summer resident west of Cascades. A few remain throughout the
+winter on Vancouver Island; I have taken it in November and January.
+
+290. Slate-coloured Sparrow.
+
+  _Passerella iliaca schistacea_ (Baird).
+
+Southern portions of Mainland, east of Cascades. Sicamous, J. Fannin,
+Okanagan, A. C. Brooks.
+
+PIPILO Vieillot.
+
+291. Spurred Towhee.
+
+  _Pipilo maculatus megalonyx_ (Baird).
+
+East of Cascades, south through the Okanagan.
+
+292. Oregon Towhee.
+
+  _Pipilo maculatus oregonus_ (Bell.).
+
+An abundant resident west of Cascades. Breeds on Vancouver Island and
+Mainland.
+
+ZAMELODIA Coues.
+
+293. Black-headed Grosbeak.
+
+  _Zamelodia melanocephala_ (Swains).
+
+A summer resident on Vancouver Island. Taken at Chilliwhack.
+(_Brooks_.) A summer resident east and west of Cascades.
+(_Fannin_.)
+
+CYANOSPIZA Baird.
+
+294. Lazuli Bunting.
+
+  _Cyanospiza amoena_ (Say.).
+
+A summer resident chiefly east of Cascades. I have seen it at
+Chilliwhack and near Vernon. Rare on Vancouver Island.
+
+
+Family TANAGRIDAE. Tanagers.
+
+PIRANGA Vieillot.
+
+295. Louisiana Tanager.
+
+  _Piranga ludoviciana_ (Wils.).
+
+An abundant summer resident throughout the Province. Vancouver Island
+and Mainland.
+
+
+Family HIRUNDINIDAE. Swallows.
+
+PROGNE Boie.
+
+296. Purple Martin.
+
+  _Progne subis_ (Linn.).
+
+A common summer resident chiefly in the cities along the Coast. West
+of Cascades.
+
+PETROCHELIDON Cabanis.
+
+297. Cliff Swallow.
+
+  _Petrochelidon lunifrons_ (Say.).
+
+Common summer resident on the Mainland east and west of Cascades,
+Chilliwhack, Okanagan and Cariboo Road.
+
+HIRUNDO Linn.
+
+298. Barn Swallow.
+
+  _Hirundo erythrogastra_ (Bodd).
+
+An abundant summer resident throughout the Province, including
+Vancouver Island and Queen Charlotte Islands.
+
+TACHYCINETA Cabanis.
+
+299. White-bellied Swallow.
+
+  _Tachycineta bicolor_ (Vieill.).
+
+An abundant summer resident east and west of Cascades.
+
+300. Northern Violet-green Swallow.
+
+  _Tachycineta thalassina lepida_ (Mearns).
+
+An abundant summer resident throughout the Province, east and west of
+Cascades.
+
+RIPARIA Forester.
+
+301. Bank Swallow.
+
+  _Riparia riparia_ (Linn.).
+
+An abundant summer resident, chiefly east of Cascades, north to
+Cariboo District. Very common from Sicamous down through the Okanagan.
+Taken at Chilliwhack by A. C. Brooks.
+
+STELGIDOPTERYX Baird.
+
+302. Rough-winged Swallow.
+
+  _Stelgidopteryx serripennis_ (Aud.).
+
+A common summer resident throughout the Province. Vancouver Island and
+Mainland.
+
+
+Family AMPELIDAE. Waxwings.
+
+AMPELIS Linnaeus.
+
+303. Bohemian Waxwing.
+
+  _Ampelis garrulus_ (Linn.).
+
+An abundant resident chiefly east of Cascades. A winter visitant to
+the Coast and Vancouver Island.
+
+304. Cedar Bird.
+
+  _Ampelis cedrorum_ (Vieill.).
+
+A common summer resident throughout the Province. Vancouver Island and
+Mainland.
+
+
+Family LANIIDAE. Shrikes.
+
+LANIUS Linnaeus.
+
+305. Northern Shrike. Butcher-bird.
+
+  _Lanius borealis_ (Vieill.).
+
+Not common, but found distributed throughout the Province. Found
+throughout the winter on the Coast.
+
+306. White-rumped Shrike.
+
+  _Lanis ludovicianus excubitorides_ (Swains.).
+
+Chilliwhack, A. C. Brooks. Victoria, A. H. Maynard.
+
+
+Family VIREONIDAE. Vireos.
+
+VIREO Vieillot.
+
+307. Red-eyed Vireo.
+
+  _Vireo olivaceus_ (Linn.).
+
+Distributed over the southern portions of the Province, including
+Vancouver Island. A summer resident. Chilliwhack and Okanagan, A. C.
+Brooks.
+
+308. Western Warbling Vireo.
+
+  _Vireo gilvus swainsonii_ (Baird).
+
+Common summer resident, west of Rocky Mountains to Pacific. Mainland
+and Vancouver Island.
+
+309. Cassin's Vireo.
+
+  _Vireo solitarius cassinii_ (Xantus.).
+
+A summer resident east and west of Cascades, including Vancouver
+Island.
+
+310. Anthony's Vireo.
+
+  _Vireo huttoni obscurus_ (Anthony).
+
+A summer resident on Vancouver Island.
+
+
+Family MNIOTILTIDAE. Wood Warblers.
+
+HELMINTHOPHILA Ridgway.
+
+311. Calaveras Warbler.
+
+  _Helminthophila ruficapilla gutturalis_ (Ridgw.).
+
+Rocky Mountains to Pacific. A summer resident. Common in the
+Okanagan. (_Brooks_.)
+
+312. Orange-crowned Warbler.
+
+  _Helminthophila celata_ (Say.).
+
+A common summer resident east and west of Cascades.
+
+313. Lutescent Warbler.
+
+  _Helminthophila celata lutescens_ (Ridgw.).
+
+An abundant summer resident, chiefly west of Cascades, along the coast
+of Mainland and Vancouver Island.
+
+314. Tennessee Warbler.
+
+  _Helminthophila peregrina_ (Wils.).
+
+Taken at 150-Mile House, Cariboo, by A. C. Brooks.
+
+DENDROICA Gray.
+
+315. Alaskan Yellow Warbler.
+
+  _Dendroica aestiva rubiginosa_ (Pallas).
+
+An abundant summer resident throughout the Province, from Rocky
+Mountains to the Pacific.
+
+316. Myrtle Warbler.
+
+  _Dendroica coronata_ (Linn.).
+
+An abundant summer resident on Vancouver Island and Mainland, chiefly
+west of Cascades. Rare at Metlakatla. (_Rev. J. H. Keen_.)
+Okanagan. (_Brooks_).
+
+317. Audubon's Warbler.
+
+  _Dendroica auduboni_ (Towns.).
+
+An abundant summer resident throughout the Province, Vancouver Island
+and Mainland east to Rocky Mountains.
+
+318. Magnolia Warbler.
+
+  _Dendroica maculosa_ (Gmel.).
+
+Okanagan, 1898 (_Rhoads_).
+
+319. Black-throated Gray Warbler.
+
+  _Dendroica nigrescens_ (Towns.).
+
+Not common. A summer resident west of Cascades, but chiefly along the
+Coast. Taken at Chilliwhack (_Brooks_).
+
+320. Townsend's Warbler.
+
+  _Dendroica townsendi_ (Townsend.).
+
+Not common, but found distributed throughout the Province, chiefly
+west of Cascades, including Vancouver Island and Queen Charlotte
+Islands.
+
+321. Hermit Warbler. Western Warbler.
+
+  _Dendroica occidentalis_ (Townsend).
+
+A summer resident, chiefly west of Cascade Range.
+
+SEIURUS Swainson.
+
+322. Grinnell's Water-thrush.
+
+  _Seiurus noveboracensis notabilis_ (Ridgw.).
+
+Taken at Ducks, C. P. R., by Clark P. Streator, August 7th, 1889.
+Taken at Quesnel, August 30th, 1900, by A. C. Brooks.
+
+GEOTHLYPIS Cabanis.
+
+323. Macgillivray's Warbler.
+
+  _Geothlypis tolmiei_ (Towns.).
+
+A common summer resident throughout the Province, Vancouver Island and
+Mainland.
+
+324. Western Yellow-throat.
+
+  _Geothlypis trichas occidentalis_ (Brewst.).
+
+A common summer resident throughout the Province.
+
+325. Pacific Yellow-throat.
+
+  _Geothlypis trichas arizela_ (Oberh.)
+
+Summer resident in the southern portion of Mainland and Vancouver
+Island.
+
+ICTERIA Vieillot.
+
+326. Long-tailed Chat.
+
+  _Icteria virens longicauda_ (Lawr.).
+
+Summer resident in the southern portions of the Province, from Sumas
+east to Okanagan, south of Ashcroft.
+
+WILSONIA Bonaparte.
+
+327. Wilson's Warbler.
+
+  _Wilsonia pusilla_ (Wils.).
+
+Vancouver Island and Mainland, east and west of Cascades. S. N.
+Rhoads, 1892 (_Fannin_.)
+
+328. Pileolated Warbler.
+
+  _Wilsonia pusilla pileolata_ (Pall.).
+
+A common summer resident on Vancouver Island and Mainland.
+
+329. Golden Pileolated Warbler.
+
+  _Wilsonia pusilla chryseola_ (Ridgw.).
+
+A summer resident, New Westminster and Mount Lehman.
+
+SETOPHAGA Swainson.
+
+330. American Redstart.
+
+  _Setophaga ruticilla_ (Linn.).
+
+Found through the interior of the Province, from Barkerville south to
+Okanagan, chiefly east of, and accidentally west of, Cascades. Taken
+at Chilliwhack by A. C. Brooks.
+
+
+Family MOTACILLIDAE. Wagtails and Pipits.
+
+ANTHUS Bechstein.
+
+331. American Pipit.
+
+  _Anthus pensilvanicus_ (Lath.).
+
+Very abundant during migration, east and west of Cascades. Found
+throughout some winters on Vancouver Island.
+
+
+Family CINCLIDAE. Dippers.
+
+CINCLUS Bechstein.
+
+332. American Dipper.
+
+  _Cinclus mexicanus_ (Swains.).
+
+Common throughout the Province in suitable localities.
+
+
+Family TROGLODYTIDAE. Wrens.
+
+GALEOSCOPTES Cabanis.
+
+333. Catbird.
+
+  _Galeoscoptes carolinensis_ (Linn.).
+
+A common summer resident east and west of Cascades. Rare on Vancouver
+Island.
+
+SALPINCTES Cabanis.
+
+334. Rock Wren.
+
+  _Salpinctes obsoletus_ (Say.).
+
+Common east of Cascades, rarely west to the Coast.
+Chilliwhack. (_Brooks_.) Burrard Inlet. (_Fannin_.)
+
+THRYOMANES Sclater.
+
+335. Vigor's Wren.
+
+  _Thryomanes bewickii spilurus_ (Vig.).
+
+A common summer resident west of Cascades. Found throughout the winter
+on Vancouver Island.
+
+TROGLODYTES Vieillot.
+
+336. Parkman's Wren.
+
+  _Troglodytes aedon parkmanii_ (Aud.).
+
+A common summer resident east and west of Cascades, including
+Vancouver Island.
+
+OLBIORCHILUS Oberholser.
+
+337. Western Winter Wren.
+
+  _Olbiorchilus hiemalis pacificus_ (Baird).
+
+An abundant resident east and west of Cascades, including Vancouver
+Island.
+
+TELMATODYTES Cabanis.
+
+338. Tule Wren.
+
+  _Telmatodytes palustris paludicola_ (Baird).
+
+Abundant east of Cascades, from the lakes along the Cariboo Road,
+south through the Okanagan. Taken at Chilliwhack by A. C. Brooks.
+
+
+Family CERTHIIDAE. Creepers.
+
+CERTHIA Linnaeus.
+
+339. Rocky Mountain Creeper.
+
+  _Certhia familiaris montana_ (Ridgw.).
+
+Southern portion of east of Cascades. Okanagan.
+
+340. California Creeper.
+
+  _Certhia familiaris occidentalis_ (Ridgw.).
+
+Common on Vancouver Island. East and west of Cascades on the Mainland.
+
+
+Family SITTIDAE. Nuthatches.
+
+SITTA Linnaeus.
+
+341. Slender-billed Nuthatch.
+
+  _Sitta carolinensis aculeata_ (Cass.).
+
+Common east of Cascades, from Ashcroft south through the Okanagan. I
+found it quite common near Shuswap, May, 1895.
+
+342. Red-breasted Nuthatch.
+
+  _Sitta canadensis_ (Linn.).
+
+Common east and west of Cascades. Found throughout the winter on
+Vancouver Island.
+
+343. Pygmy Nuthatch.
+
+  _Sitta pygmaea_ (Vig.).
+
+East of Cascades, in the south-eastern portions of the Province. I
+found it fairly common at Grand Prairie, May, 1895.
+
+
+Family PARIDAE. Titmice or Chickadees.
+
+PARUS Linnaeus.
+
+344. Long-tailed Chickadee.
+
+  _Parus atricapillus septentrionalis_ (Harris.).
+
+Common east of Cascades, from Cornwall's south to Okanagan.
+
+345. Oregon Chickadee.
+
+  _Parus atricapillus occidentalis_ (Baird.).
+
+A common resident west of Cascades.
+
+346. Mountain Chickadee.
+
+  _Parus gambeli_ (Ridgw.).
+
+East of Cascades to Rocky Mountains, and south through Okanagan.
+
+347. Columbia Chickadee.
+
+  _Parus hudsonicus columbianus_ (Rhoads).
+
+East of Cascades to Rocky Mountains, from Cassiar District south to
+Okanagan.
+
+348. Chestnut-backed Chickadee.
+
+  _Parus rufescens_ (Towns.).
+
+An abundant resident chiefly west of Cascades. Vancouver Island and
+Queen Charlotte Islands. Taken at Arrow Lake by A. C. Brooks.
+
+
+Family CHAMAEIDAE. Wren, Tits and Bush-Tits.
+
+PSALTRIPARUS Bonaparte.
+
+349. Least Bush-tit.
+
+  _Psaltriparus minimus_ (Towns.).
+
+Rare. Taken at Sumas, November 25, 1899, by A. C. Brooks.
+
+
+Family SYLVIIDAE. Warblers. Kinglets.
+
+REGULUS Cuvier.
+
+350. Western Golden-crowned Kinglet.
+
+  _Regulus satrapa olivaceus_ (Baird).
+
+Abundant throughout the Province.
+
+351. Ruby-crowned Kinglet.
+
+  _Regulus calendula_ (Linn.).
+
+Abundant throughout the Province.
+
+
+Family TURDIDAE. Thrushes, Solitaires and Bluebirds.
+
+MYADESTES Swainson.
+
+352. Townsend's Solitaire.
+
+  _Myadestes townsendii_ (Aud.).
+
+Not common. Found east and west of Cascades, including Vancouver
+Island.
+
+HYLOCICHLA Baird.
+
+353. Willow Thrush.
+
+  _Hylocichla fuscescens salicicola_ (Ridgw.).
+
+A common summer resident east of Cascades.
+
+354. Russet-backed Thrush.
+
+  _Hylocichla ustulata_ (Nutt.).
+
+A common summer resident west of Cascades. Very common on Queen
+Charlotte Islands, July, 1895.
+
+355. Olive-backed Thrush.
+  _Hylocichla ustulata swainsoni_ (Cab.).
+
+Southern portion of Mainland east of Cascades.
+
+356. Alaska Hermit Thrush.
+
+  _Hylocichla guttata_ (Pallas).
+
+West of Cascades, chiefly coastwise. Common at Skidegate, Queen
+Charlotte Islands, August, 1895.
+
+357. Audubon's Hermit Thrush.
+
+  _Hylocichla guttata auduboni_ (Baird).
+
+Southern portions of the Province, east of Cascades to Rocky
+Mountains.
+
+MERULA Leach.
+
+358. American Robin.
+
+  _Merula migratoria_ (Linn.).
+
+Both forms are to be found on Vancouver Island. Taken at Chilliwhack
+by A. C. Brooks.
+
+359. Western Robin.
+
+  _Merula migratoria propinqua_ (Ridgw.).
+
+An abundant resident throughout the Province.
+
+IXOREUS Bonaparte.
+
+360. Varied Thrush.
+
+  _Ixoreus naevius_ (Gmel.).
+
+Common throughout the Province, east and west of Cascades.
+
+SIALIA Swainson.
+
+361. Western Bluebird.
+
+  _Sialia mexicana occidentalis_ (Towns.).
+
+A common summer resident east and west of Cascades. A few winter on
+Vancouver Island.
+
+362. Mountain Bluebird.
+
+  _Sialia arctica_ (Swains.).
+
+A summer resident east and west of Cascades, including Vancouver
+Island.
+
+
+
+
+INDEX.
+
+
+A.
+                                        No.
+Albatross, Black-footed                  35
+Albatross, Short-tailed                  36
+Auklet, Rhinoceros                       12
+Auklet, Cassin's                         13
+
+B.
+
+Bittern, American                        88
+Blackbird, Yellow-headed                244
+Blackbird, San Diego Redwing            245
+Blackbird, North-western                246
+Blackbird, Rusty                        249
+Blackbird, Brewer's                     250
+Bluebird, Western                       361
+Bluebird, Mountain                      362
+Bobolink                                242
+Brant                                    82
+Brant, Black                             83
+Bunting, Lazuli                         294
+Bush-tit, Least                         349
+
+C.
+
+Catbird                                 333
+Chat, Long-tailed                       326
+Chickadee, Long-tailed                  344
+Chickadee, Oregon                       345
+Chickadee, Mountain                     346
+Chickadee, Columbia                     347
+Chickadee, Chestnut-backed              348
+Cormorant, White-crested                 43
+Cormorant, Brandt's                      44
+Cormorant, Violet-green                  45
+Cowbird                                 243
+Coot, American                           96
+Crane, Little Brown                      92
+Crane, Sandhill                          93
+Creeper, Rocky Mountain                 339
+Creeper, California                     340
+Crow, American                          238
+Crow, Northwest                         239
+Crossbill, American                     255
+Crossbill, White-winged                 256
+Cuckoo, Western Yellow-billed           188
+Curlew, Long-billed                     122
+Curlew, Hudsonian                       123
+
+D.
+
+Dipper, American                        332
+Dove, Mourning                          148
+Dowitcher, Long-billed                  101
+Duck, Mallard                            51
+Duck, Gadwall                            52
+Duck, European Widgeon                   53
+Duck, American Widgeon                   54
+Duck, Green-winged Teal                  55
+Duck, Blue-winged Teal                   56
+Duck, Cinnamon Teal                      57
+Duck, Shoveller                          58
+Duck, Pintail                            59
+Duck, Wood                               60
+Duck, Red-head                           61
+Duck, Canvas-back                        62
+Duck, American Scaup                     63
+Duck, Lesser Scaup                       64
+Duck, Ring-necked                        65
+Duck, American Golden-eye                66
+Duck, Barrow's Golden-rye                67
+Duck, Buffle-head                        68
+Duck, Long-tailed                        69
+Duck, Harlequin                          70
+Duck, American Black Scoter              71
+Duck, White-winged Scoter                72
+Duck, Surf Scoter                        73
+Duck, Ruddy                              74
+
+E.
+
+Eagle, Golden                           160
+Eagle, Bald                             161
+
+F.
+
+Falcon, Prairie                         163
+Falcon, Peale's                         165
+Finch, California Purple                253
+Finch, Cassin's Purple                  254
+Flycatcher, Olive-sided                 221
+Flycatcher, Western                     223
+Flycatcher, Traill's                    224
+Flycatcher, Hammond's                   225
+Flycatcher, Wright's                    226
+Flicker, Northern                       205
+Flicker, Red-shafted                    206
+Flicker, North-western                  207
+Fulmar, Pacific                          37
+
+G.
+
+Godwit, Marbled                         112
+Goose, Lesser Snow                       75
+Goose, Ross's Snow                       76
+Goose, American White-fronted            77
+Goose, Canada                            78
+Goose, Hutchin's                         79
+Goose, White-cheeked                     80
+Goose, Cackling                          81
+Goose, Emperor                           84
+Goldfinch, American                     261
+Goldfinch, Willow                       262
+Grebe, Western                            1
+Grebe, American Red-necked                2
+Grebe, Horned                             3
+Grebe, American Eared                     4
+Grebe, Pied-billed                        5
+Grouse, Sooty                           134
+Grouse, Richardson's                    135
+Grouse, Franklin's                      136
+Grouse, Canadian Ruffed                 137
+Grouse, Gray Ruffed                     138
+Grouse, Oregon Ruffed                   139
+Grouse, Columbian Sharp-tailed          143
+Grouse, Sage                            144
+Grosbeak, Western Evening               251
+Grosbeak, Alaskan Pine                  252
+Grosbeak, Black-headed                  293
+Guillemot, Pigeon                        16
+Gull, Ivory                              21
+Gull, Glaucous-winged                    23
+Gull, Western                            24
+Gull, American                           25
+Gull, California                         26
+Gull, Ring-billed                        27
+Gull, Short-billed                       28
+Gull, Heermann's                         29
+Gull, Bonaparte's                        30
+Gull, Sabine's                           31
+Gyrfalcon                               162
+
+H.
+
+Hawk, Marsh                             151
+Hawk, Sharp-shinned                     152
+Hawk, Cooper's                          153
+Hawk, American Goshawk                  154
+Hawk, Western Goshawk                   155
+Hawk, Western Red-tailed                156
+Hawk, Red-bellied                       157
+Hawk, Swainson's                        158
+Hawk, American Rough-legged             159
+Hawk, Duck                              164
+Hawk, Pigeon                            166
+Hawk, Desert Sparrow                    169
+Heron, Great Blue                        89
+Heron, North-west Coast                  90
+Heron, Snowy                             91
+Hummingbird, Black-chinned              213
+Hummingbird, Red-backed Rufous          214
+Hummingbird, Green-backed Rufous        215
+Hummingbird, Calliope                   216
+
+I.
+
+Ibis, White-faced Glossy                 87
+
+J.
+
+Jaeger, Parasitic                        19
+Jaeger, Pomarine                         18
+Jaeger, Long-tailed                      20
+Jay, Steller's                          231
+Jay, Black-headed                       232
+Jay, Queen Charlotte                    233
+Jay, Rocky Mountain                     234
+Jay, Oregon                             235
+Jay, Gray                               236
+Jay, Pinon                              241
+Junco, Slate-colored                    282
+Junco, Oregon                           283
+Junco, Shufeldt's                       284
+
+K.
+
+Kittiwake, Pacific                       22
+Kingfisher, Belted                      189
+Kingbird                                217
+Kingbird, Gray                          218
+Kingbird, Arkansas                      219
+Kinglet, Western Golden-crowned         350
+Kinglet, Ruby-crowned                   351
+Knot                                    103
+
+L.
+
+Lark, Pallid Horned                     227
+Lark, Streaked Horned                   228
+Lark, Dusky Horned                      229
+Lencosticte, Gray-crowned               257
+Lencosticte, Hepburn's                  258
+Longspur, Lapland                       266
+Longspur, McCown's                      267
+Loon, Great Northern Diver                6
+Loon, Black-throated                      7
+Loon, Pacific                             8
+Loon, Red-throated                        9
+
+M.
+
+Martin, Purple                          296
+Magpie, American                        230
+Meadowlark, Western                     247
+Merlin, Black                           167
+Merlin, Richardson's                    168
+Merganser, American                      48
+Merganser, Red-breasted                  49
+Merganser, Hooded                        50
+Murrelet, Ancient                        14
+Murrelet, Marbled                        15
+Murre, California                        17
+
+N.
+
+Nighthawk                               207
+Nighthawk, Western                      208
+Nutcracker, Clarke's                    240
+Nuthatch, Slender-billed                341
+Nuthatch, Red-breasted                  342
+Nuthatch, Pygmy                         343
+
+O.
+
+Oriele, Bullock's                       248
+Osprey, American                        170
+Owl, American Long-eared                171
+Owl, Short-eared                        172
+Owl, Northern Spotted                   173
+Owl, Great Gray                         174
+Owl, Richardson's                       175
+Owl, Saw-whet                           176
+Owl, North-West Saw-whet                176A
+Owl, Kennicott's Screech                177
+Owl, Macfarlane's Screech               178
+Owl, Great Horned                       179
+Owl, Western Horned                     180
+Owl, Arctic Horned                      181
+Owl, Dusky Horned                       182
+Owl, Snowy                              183
+Owl, American Hawk                      184
+Owl, Burrowing                          185
+Owl, Pygmy                              186
+Owl, California Pygmy                   187
+Oyster-catcher, Black                   131
+
+P.
+
+Partridge, Mountain                     132
+Partridge, California                   133
+Pelican, American White                  46
+Pelican, California Brown                47
+Petrel, Gray Fork-tailed                 41
+Petrel, Leach's                          42
+Pewee, Western Wood                     222
+Phalarope, Red                           97
+Phalarope, Northern                      98
+Phalarope, Wilson's                      99
+Pheasant, Ring-necked                   145
+Phoebe, Say's                           220
+Pigeon, Band-tailed                     146
+Pigeon, Passenger                       147
+Pipit, American                         331
+Plover, American Golden                 125
+Plover, Black-bellied                   124
+Plover, Killdeer                        126
+Plover, Semipalmated                    127
+Poor-Will                               208
+Ptarmigan, Willow                       140
+Ptarmigan, Rock                         141
+Ptarmigan, White-tailed                 142
+Puffin, Tufted                           10
+Puffin, Horned                           11
+
+R.
+
+Rail, Virginia                           94
+Rail, Carolina                           95
+Raven, Northern                         237
+Redpoll, Hoary                          259
+Redpoll                                 260
+Redstart, American                      330
+Robin, American                         358
+Robin, Western                          359
+
+S.
+
+Sanderling                              111
+Sandpiper, Stilt                        102
+Sandpiper, Sharp-tailed                 104
+Sandpiper, Pectoral                     105
+Sandpiper, Baird's                      106
+Sandpiper, Least                        107
+Sandpiper, Red-backed                   108
+Sandpiper, Semipal mated                109
+Sandpiper, Western Semipalmated         110
+Sandpiper, Solitary                     115
+Sandpiper, Western Solitary             116
+Sandpiper, Bartramian                   119
+Sandpiper, Buff-breasted                120
+Sandpiper, Spotted                      121
+Sapsucker, Red-naped                    200
+Sapsucker, Red-breasted                 201
+Sapsucker, Williamson's                 202
+Shrike, Northern                        305
+Shrike, White-rumped                    306
+Shearwater, Black-vented                 38
+Shearwater, Dark-bodied                  39
+Shearwater, Slender-billed               40
+Siskin, Pine                            263
+Snipe, Wilson's                         100
+Snowflake                               265
+Solitaire, Townsend's                   352
+Sparrow, House                          264
+Sparrow, Western Vesper                 268
+Sparrow, Oregon Vesper                  269
+Sparrow, Sandwick                       270
+Sparrow, Western Savanna                271
+Sparrow, Western Grasshopper            272
+Sparrow, Western Lark                   273
+Sparrow, Harris's                       274
+Sparrow, Gambel's                       275
+Sparrow, Nuttall's                      276
+Sparrow, Golden-crowned                 277
+Sparrow, Western Tree                   278
+Sparrow, Western Chipping               279
+Sparrow, Clay-colored                   280
+Sparrow, Brewer's                       281
+Sparrow, Rusty Song                     285
+Sparrow, Sooty Song                     286
+Sparrow, Lincoln's                      287
+Sparrow, Forbush's                      288
+Sparrow, Townsend's                     289
+Sparrow, Slate-coloured                 290
+Surf-bird                               128
+Swan, Whistling                          85
+Swan, Trumpeter                          86
+Swallow, Cliff                          297
+Swallow, Barn                           298
+Swallow, White-bellied                  299
+Swallow, Northern violet-green          300
+Swallow, Bank                           301
+Swallow, Rough-winged                   302
+Swift, Black                            211
+Swift, Vaux                             212
+
+T.
+
+Tanager, Louisaria                      295
+Tatler, Wandering                       118
+Tern, Common                             32
+Tern, Arctic                             33
+Tern, Black                              34
+Thrush, Willow                          353
+Thrush, Russet-backed                   354
+Thrush, Olive-backed                    355
+Thrush, Alaska Hermit                   356
+Thrush, Audubon's                       357
+Thrush, Varied                          360
+Towhee, Spurred                         291
+Towhee, Oregon                          292
+Turnstone                               129
+Turnstone, Black                        130
+
+V.
+
+Vireo, Red-eyed                         307
+Vireo, Western Warbling                 308
+Vireo, Cassin's                         309
+Vireo, Anthony's                        310
+Vulture, California                     149
+Vulture, Turkey                         150
+
+W.
+
+Warbler, Calaver's                      311
+Warbler, Orange-crowned                 312
+Warbler, Lutescent                      313
+Warbler, Tennessee                      314
+Warbler, Alaskan Yellow                 315
+Warbler, Myrtle                         316
+Warbler, Audubon's                      317
+Warbler, Magnolia                       318
+Warbler, Black-throated Gray            319
+Warbler, Townsend's                     320
+Warbler, Macgillivray's                 323
+Warbler, Hermit                         321
+Warbler, Western Yellow-throat          324
+Warbler, Pacific Yellow-throat          325
+Warbler, Wilson's                       327
+Warbler, Pileolated                     328
+Warbler, Golden Pileolated              329
+Water-thrush, Grinnell's                322
+Waxwing, Bohemian                       303
+Waxwing, Cedar                          304
+Willett, Western                        117
+Woodpecker, Northern Hairy              190
+Woodpecker, Harris's                    191
+Woodpecker, Cabanis's                   192
+Woodpecker, Queen Charlotte             193
+Woodpecker, Gairdner's                  194
+Woodpecker, Batchelder's                195
+Woodpecker, White-headed                196
+Woodpecker, Black-backed Three-toed     197
+Woodpecker, Alaskan Three-toed          198
+Woodpecker, Alpine Three-toed           199
+Woodpecker, Northern Pileated           203
+Woodpecker, Lewis's                     204
+Wren, Rock                              334
+Wren, Vigor's                           335
+Wren, Parkman's                         336
+Wren, Western Winter                    337
+Wren, Tule                              338
+
+Y.
+
+Yellow-legs, Greater                    113
+Yellow-legs, Lesser                     114
+
+
+
+End of the Project Gutenberg EBook of Catalogue of British Columbia Birds
+by Francis Kermode
+
+*** END OF THE PROJECT GUTENBERG EBOOK BRITISH COLUMBIA BIRDS ***
+
+This file should be named 8cbcb10.txt or 8cbcb10.zip
+Corrected EDITIONS of our eBooks get a new NUMBER, 7cbcb11.txt
+VERSIONS based on separate sources get new LETTER, 7cbcb10a.txt
+
+Produced by Karen Fabrizius, David Starner
+and the Online Distributed Proofreading Team
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+
+

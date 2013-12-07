@@ -1,0 +1,1747 @@
+The Project Gutenberg Etext of A Yorkshire Tragedy
+(#52 in our series by Shakespeare and Shakespeare Apocrypha)
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before distributing this or any other
+Project Gutenberg file.
+
+We encourage you to keep this file, exactly as it is, on your
+own disk, thereby keeping an electronic path open for future
+readers.  Please do not remove this.
+
+This header should be the first thing seen when anyone starts to
+view the etext. Do not change or edit it without written permission.
+The words are carefully chosen to provide users with the
+information they need to understand what they may and may not
+do with the etext.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Are Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get etexts, and
+further information, is included below.  We need your donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+
+
+Title: A Yorkshire Tragedy
+
+Author: William Shakespeare (Apocrypha)
+
+Release Date: July, 2003  [Etext #4255]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on December 19, 2001]
+
+Edition: 10
+
+Language: English
+
+Character set encoding: ASCII
+
+The Project Gutenberg Etext of A Yorkshire Tragedy
+******This file should be named 1ws5210.txt or 1ws5210.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 1ws5211.txt
+VERSIONS based on separate sources get new LETTER, 1ws5210a.txt
+
+This etext was produced by Tony Adam.
+
+Project Gutenberg Etexts are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep etexts in compliance with any particular paper edition.
+
+We are now trying to release all our etexts one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+etexts, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any Etext before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2001 as we release over 50 new Etext
+files per month, or 500 more Etexts in 2000 for a total of 4000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 4,000 Etexts.  We need
+funding, as well as continued efforts by volunteers, to maintain
+or increase our production and reach our goals.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of November, 2001, contributions are being solicited from people
+and organizations in: Alabama, Arkansas, Connecticut, Delaware,
+Florida, Georgia, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky,
+Louisiana, Maine, Michigan, Missouri, Montana, Nebraska, Nevada, New
+Jersey, New Mexico, New York, North Carolina, Oklahoma, Oregon,
+Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee,
+Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin,
+and Wyoming.
+
+*In Progress
+
+We have filed in about 45 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+All donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fundraising
+requirements for other states are met, additions to this list will be
+made and fundraising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these Etexts are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg Etexts or other materials be they hardware or
+software or any other related product without express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.10/04/01*END*
+
+
+
+
+This etext was produced by Tony Adam.
+
+Shakespeare, William.  A Yorkshire Tragedy.  Not So New as Lamentable
+and True.  In C.F. Tucker Brooke, ed., The Shakespeare Apocrypha
+(Oxford, 1918).
+
+
+
+ALL'S ONE,
+OR, ONE OF THE FOUR PLAYS IN ONE, CALLED
+A YORK-SHIRE TRAGEDY
+AS IT WAS PLAYED BY THE KING'S MAJESTY'S PLAYERS.
+
+
+
+Dramatis Personae.
+
+Husband.
+Master of a College.
+Knight, a Justice of Peace.
+Oliver,
+Ralph,
+Samuel, serving-men.
+Other Servants, and Officers.
+Wife.
+Maid-servant.
+A little Boy.
+
+
+
+SCENE I.  A room in Calverly Hall.
+
+[Enter Oliver and Ralph, two servingmen.]
+
+
+OLIVER.
+Sirrah Ralph, my young Mistress is in such a pitiful passionate
+humor for the long absence of her love--
+
+RALPH.
+Why, can you blame her? why, apples hanging longer on the tree
+then when they are ripe makes so many fallings; viz., Mad
+wenches, because they are not gathered in time, are fain to
+drop of them selves, and then tis Common you know for every
+man to take em up.
+
+OLIVER.
+Mass, thou sayest true, Tis common indeed: but, sirrah, is
+neither our young master returned, nor our fellow Sam come
+from London?
+
+RALPH.
+Neither of either, as the Puritan bawd says.  Slidd, I hear
+Sam: Sam's come, her's!  Tarry! come, yfaith, now my nose
+itches for news.
+
+OLIVER.
+And so does mine elbow.
+
+[Sam calls within.  Where are you there?]
+
+SAM.
+Boy, look you walk my horse with discretion; I have rid him
+simply.  I warrant his skin sticks to his back with very heat:
+if a should catch cold and get the Cough of the Lungs I were
+well served, were I not?
+
+[Enter Sam.  Furnisht with things from London.]
+
+What, Ralph and Oliver.
+
+AMBO.
+Honest fellow Sam, welcome, yfaith! what tricks hast thou
+brought from London?
+
+SAM.
+You see I am hangd after the truest fashion: three hats, and
+two glasses, bobbing upon em, two rebato wires upon my breast,
+a capcase by my side, a brush at my back, an Almanack in my
+pocket, and three ballats in my Codpiece:  nay, I am the true
+picture of a Common servingman.
+
+OLIVER.
+I'll swear thou art.  Thou mayest set up when thou wilt.
+There's many a one begins with less, I can tell thee, that
+proves a rich man ere he dies.  But what's the news from
+London, Sam?
+
+RALPH.
+Aye, that's well said; what's the news from London, Sirrah?
+My young mistress keeps such a puling for her love.
+
+SAM.
+Why, the more fool she; aye, the more ninny hammer she.
+
+OLIVER.
+Why, Sam, why?
+
+SAM.
+Why, he's married to another Long ago.
+
+AMBO.
+Yfaith, ye jest.
+
+SAM.
+Why, did you not know that till now? why, he's married, beats
+his wife, and has two or three children by her: for you must
+note that any woman bears the more when she is beaten.
+
+RALPH.
+Aye, that's true, for she bears the blows.
+
+OLIVER.
+Sirrah Sam, I would not for two years wages, my young mistress
+knew so much; she'd run upon the left hand of her wit, and
+ne'er be her own woman again.
+
+SAM.
+And I think she was blest in her Cradle, that he never came
+in her bed; why, he has consumed all, pawnd his lands, and
+made his university brother stand in wax for him--There's a
+fine phrase for a scrivener! puh, he owes more then his skin's
+worth.
+
+OLIVER.
+Is't possible?
+
+SAM.
+Nay, I'll tell you moreover, he calls his wife whore as
+familiarly as one would call Mal and Dol, and his children
+bastards as naturally as can be.--But what have we here?  I
+thought twas somewhat puld down my breeches: I quite forgot
+my two potingsticks.  These came from London; now any thing
+is good here that comes from London.
+
+OLIVER.
+Aye, far fetcht you know.
+
+SAM.
+But speak in your conscience, yfaith, have not we as good
+Potingsticks ith Country as need to be put ith fire.  The mind
+of a thing's all, and as thou saidst e'en now, far fetcht is
+the best things for Ladies.
+
+OLIVER.
+Aye, and for waiting gentle women too.
+
+SAM.
+But, Ralph, what, is our beer sower this thunder?
+
+OLIVER.
+No, no, it holds countenance yet.
+
+SAM.
+Why, then, follow me; I'll teach you the finest humor to be
+drunk in't; they call it knighting in London, when they drink
+upon their knees.
+
+AMBO.
+Faith, that's excellent.  Come, follow me:  I'll give you all
+the degrees ont in order.
+
+[Exeunt.]
+
+
+SCENE II.  Another apartment in the same.
+
+WIFE.
+What will become of us? all will away.
+My husband never ceases in expense,
+Both to consume his credit and his house;
+And tis set down by heaven's just decree,
+That Riot's child must needs be beggery.
+Are these the vertues that his you did promise?
+Dice, and voluptuous meetings, midnight Revels,
+Taking his bed with surfetts: Ill beseeming
+The ancient honor of his house and name!
+And this not all: but that which kills me most,
+When he recounts his Losses and false fortunes,
+The weakness of his state so much dejected,
+Not as a man repentant, but half mad,
+His fortunes cannot answer his expense:
+He sits and sullenly locks up his Arms,
+Forgetting heaven looks downward, which makes him
+Appear so dreadful that he frights my heart,
+Walks heavily, as if his soul were earth:
+Not penitent for those his sins are past,
+But vext his money cannot make them last:--
+A fearful melancholy, ungodly sorrow.
+Oh yonder he comes, now in despite of ills
+I'll speak to him, and I will hear him speak,
+And do my best to drive it from his heart.
+
+[Enter Husband.]
+
+HUSBAND.
+Pox oth Last throw! it made
+Five hundred Angels vanish from my sight.
+I'm damnd, I'm damnd: the Angels have forsook me.
+Nay, tis certainly true: for he that has
+No coin is damnd in this world: he's gone, he's gone.
+
+WIFE.
+Dear husband.
+
+HUSBAND.
+Oh! most punishment of all, I have a wife.
+
+WIFE.
+I do intreat you as you love your soul,
+Tell me the cause of this your discontent.
+
+HUSBAND.
+A vengeance strip thee naked! thou art cause,
+Effect, quality, property, thou, thou, thou!
+
+[Exit.]
+
+WIFE.
+Bad, turnd to worse! both beggery of the soul,
+As of the body.  And so much unlike
+Him self at first, as if some vexed spirit
+Had got his form upon him.--
+
+[Enter Husband again.]
+
+He comes again.
+He says I am the cause; I never yet
+Spoke less then words of duty, and of love.
+
+HUSBAND.
+If marriage be honourable, then Cuckolds are honourable, for
+they cannot be made without marriage.  Fool! what meant I to
+marry to get beggars? now must my eldest son be a knave or
+nothing; he cannot live uppot'h fool, for he will have no
+land to maintain him: that mortgage sits like a snaffle upon
+mine inheritance, and makes me chaw upon Iron.  My second
+son must be a promoter, and my third a thief, or an underputter,
+a slave pander.
+Oh beggery, beggery, to what base uses dost thou put a man!
+I think the Devil scorns to be a bawd.  He bears himself more
+proudly, has more care on's credit.  Base, slavish, abject,
+filthy poverty!
+
+WIFE.
+Good sir, by all our vows I do beseech you,
+Show me the true cause of your discontent.
+
+HUSBAND.
+Money, money, money, and thou must supply me.
+
+WIFE.
+Alas, I am the lest cause of your discontent,
+Yet what is mine, either in rings or Jewels,
+Use to your own desire, but I beseech you,
+As y'are a gentleman by many bloods,
+Though I my self be out of your respect,
+Think on the state of these three lovely boys
+You have been father to.
+
+HUSBAND.
+Puh!  Bastards, bastards, bastards; begot in tricks, begot
+in tricks.
+
+WIFE.
+Heaven knows how those words wrong me, but I may
+Endure these griefs among a thousand more.
+Oh, call to mind your lands already mortgage,
+Your self wound with debts, your hopeful brother
+At the university in bonds for you,
+Like to be ceasd upon; And--
+
+HUSBAND.
+Ha done, thou harlot,
+Whom, though for fashion sake I married,
+I never could abide; thinkst thou thy words
+Shall kill my pleasures?  Fall off to thy friends,
+Thou and thy bastards beg: I will not bate
+A whit in humor! midnight, still I love you,
+And revel in your Company.  Curbd in,
+Shall it be said in all societies,
+That I broke custom, that I flagd in money?
+No, those thy jewels I will play as freely
+As when my state was fullest.
+
+WIFE.
+Be it so.
+
+HUSBAND.
+Nay I protest, and take that for an earnest,
+
+[spurns her]
+
+I will for ever hold thee in contempt,
+And never touch the sheets that cover thee,
+But be divorst in bed till thou consent,
+Thy dowry shall be sold to give new life
+Unto those pleasures which I most affect.
+
+WIFE.
+Sir, do but turn a gentle eye on me,
+And what the law shall give me leave to do
+You shall command.
+
+HUSBAND.
+Look it be done:  shall I want dust and like a slave
+Wear nothing in my pockets but my hands
+To fill them up with nails?
+
+[holding his hands in his pockets]
+
+Oh much against my blood!  Let it be done.
+I was never made to be a looker on,
+A bawd to dice; I'll shake the drabs my self
+And made em yield.  I say, look it be done.
+
+WIFE.
+I take my leave: it shall.
+
+[Exit.]
+
+HUSBAND.
+Speedily, speedily.  I hate the very hour I chose a wife: a
+trouble, trouble! three children like three evils hang upon
+me.  Fie, fie, fie, strumpet and bastards, strumpet and
+bastards!
+
+[Enter three Gentlemen hearing him.]
+
+1 GENTLEMAN.
+Still do those loathsome thoughts
+Jar on your tongue?
+Your self to stain the honour of your wife,
+Nobly descended!  Those whom men call mad
+Endanger others; but he's more than mad
+That wounds himself, whose own words do proclaim
+Scandals unjust, to soil his better name:
+It is not fit; I pray, forsake it.
+
+2 GENTLEMAN.
+Good sir, let modesty reprove you.
+
+3 GENTLEMAN.
+Let honest kindness sway so much with you.
+
+HUSBAND.
+God den, I thank you, sir, how do you? adieu!  I'm glad to
+see you.  Farewell
+Instructions, Admonitions.
+
+[Exeunt Gentlemen.]
+
+[Enter a servant.]
+
+HUSBAND.
+How now, sirra; what would you?
+
+SERVANT.
+Only to certify you, sir, that my mistress was met by the way,
+by them who were sent for her up to London by her honorable
+uncle, your worships late guardian.
+
+HUSBAND.
+So, sir, then she is gone and so may you be:  But let her look
+that the thing be done she wots of: or hell will stand more
+pleasant then her house at home.
+
+[Exit servant.]
+
+[Enter a Gentleman.]
+
+GENTLEMAN.
+Well or ill met, I care not.
+
+HUSBAND.
+No, nor I.
+
+GENTLEMAN.
+I am come with confidence to chide you.
+
+HUSBAND.
+Who? me?
+Chide me?  Doo't finely then: let it not move me,
+For if thou chidst me angry, I shall strike.
+
+GENTLEMAN.
+Strike thine own follies, for it is they deserve
+To be well beaten.  We are now in private:
+There's none but thou and I.  Thou'rt fond and peevish,
+An unclean rioter: thy lands and Credit
+Lie now both sick of a consumption.
+I am sorry for thee: that man spends with shame
+That with his riches does consume his name:
+And such thou art.
+
+HUSBAND.
+Peace.
+
+GENTLEMAN.
+No, thou shalt hear me further:
+Thy fathers and forefathers worthy honors,
+Which were our country monuments, our grace,
+Follies in thee begin now to deface.
+The spring time of thy youth did fairly promise
+Such a most fruitful summer to thy friends
+It scarce can enter into mens beliefs,
+Such dearth should hang on thee.  We that see it,
+Are sorry to believe it: in thy change,
+This voice into all places will be hurld:
+Thou and the devil has deceived the world.
+
+HUSBAND.
+I'll not indure thee.
+
+GENTLEMAN.
+But of all the worst:
+Thy vertuous wife, right honourably allied,
+Thou hast proclaimed a strumpet.
+
+HUSBAND.
+Nay, the, I know thee.
+Thou art her champion, thou, her private friend,
+The party you wot on.
+
+GENTLEMAN.
+Oh ignoble thought.
+I am past my patient blood: shall I stand idle
+And see my reputation toucht to death?
+
+HUSBAND.
+Ta's galde you, this, has it?
+
+GENTLEMAN.
+No, monster, I will prove
+My thoughts did only tend to vertuous love.
+
+HUSBAND.
+Love of her vertues? there it goes.
+
+GENTLEMEN.
+Base spirit,
+To lay thy hate upon the fruitful Honor
+Of thine own bed.
+
+[They fight and the Husband's hurt.]
+
+HUSBAND.
+Oh!
+
+GENTLEMAN.
+Woult thou yield it yet?
+
+HUSBAND.
+Sir, Sir, I have not done with you.
+
+GENTLEMAN.
+I hope nor nere shall do.
+
+[Fight again.]
+
+HUSBAND.
+Have you got tricks? are you in cunning with me?
+
+GENTLEMAN.
+No, plain and right.
+He needs no cunning that for truth doth fight.
+
+[Husband falls down.]
+
+HUSBAND.
+Hard fortune, am I leveld with the ground?
+
+GENTLEMAN.
+Now, sir, you lie at mercy.
+
+HUSBAND.
+Aye, you slave.
+
+GENTLEMAN.
+Alas, that hate should bring us to our grave.
+You see my sword's not thirsty for your life,
+I am sorrier for your wound then your self.
+Y'are of a vertuous house, show vertuous deeds;
+Tis not your honour, tis your folly bleeds;
+Much good has been expected in your life,
+Cancel not all men's hopes: you have a wife
+Kind and obedient: heap not wrongful shame
+On her and your posterity, nor blame
+Your overthrow; let only sin be sore,
+And by this fall, rise never to fall more.
+And so I leave you.
+
+[Exit.]
+
+HUSBAND
+Has the dog left me, then,
+After his tooth hath left me? oh, my heart
+Would fain leap after him.  Revenge, I say,
+I'm mad to be reveng'd.  My strumpet wife,
+It is thy quarrel that rips thus my flesh,
+And makes my breast spit blood, but thou shalt bleed.
+Vanquisht? got down? unable e'en to speak?
+Surely tis want of money makes men weak.
+Aye, twas that orethrew me; I'd nere been down else.
+
+[Exit.]
+
+
+SCENE III.  The same.
+
+[Enter wife in a riding suit with a servingman.]
+
+
+SERVINGMAN.
+Faith, mistress, If it might not be presumption
+In me to tell you so, for his excuse
+You had small reason, knowing his abuse.
+
+WIFE.
+I grant I had; but, alas,
+Why should our faults at home be spread abroad?
+Tis grief enough within doors.  At first sight
+Mine Uncle could run o'er his prodigal life
+As perfectly, as if his serious eye
+Had numbered all his follies:
+Knew of his mortgaged lands, his friends in bonds,
+Himself withered with debts:  And in that minute
+Had I added his usage and unkindness,
+Twould have confounded every thought of good:
+Where now, fathering his riots on his youth,
+Which time and tame experience will shake off,
+Guessing his kindness to me (as I smoothd him
+With all the skill I had) though his deserts
+Are in form uglier then an unshaped Bear,
+He's ready to prefer him to some office
+And place at Court, A good and sure relief
+To all his stooping fortunes: twill be a means, I hope
+To make new league between us, and redeem
+His vertues with his lands.
+
+SERVINGMAN.
+I should think so, mistress.  If he should not now be kind
+to you and love you, and cherish you up, I should think the
+devil himself kept open house in him.
+
+WIFE.
+I doubt not but he will now:  prethe, leave me; I think I
+hear him coming.
+
+SERVINGMAN.
+I am gone.
+
+[Exit.]
+
+WIFE.
+By this good means I shall preserve my lands,
+And free my husband out of usurers hands:
+Now there is no need of sale, my Uncle's kind,
+I hope, if ought, this will content his mind.--
+Here comes my husband.
+
+[Enter Husband.]
+
+HUSBAND.
+Now, are you come? where's the money? let's see the money.
+Is the rubbish sold, those wiseakers your lands? why, when?
+the money! where ist? powr't down, down with it, down with it:
+I say powr't oth ground! lets see't, lets see't.
+
+WIFE.
+Good sir, keep but in patience and I hope
+My words shall like you well:  I bring you better
+Comfort then the sale of my Dowrie.
+
+HUSBAND.
+Ha, whats that?
+
+WIFE.
+Pray, do not fright me, sir, but vouchsafe me hearing: my
+Uncle, glad of your kindness to me and mild usage--for so I
+made it to him--has in pity of your declining fortunes,
+provided a place for you at Court of worth and credit, which
+so much overjoyed me--
+
+HUSBAND.
+Out on thee, filth! over and over-joyed, [spurns her] when I'm
+in torments?  Thou pollitick whore, subtiller then nine Devils,
+was this thy journey to Nuncke, to set down the history of me,
+of my state and fortunes?  Shall I that Dedicated my self to
+pleasure, be now confind in service to crouch and stand like
+an old man ith hams, my hat off?  I that never could abide to
+uncover my head ith Church? base slut! this fruit bears thy
+complaints.
+
+WIFE.
+Oh, heaven knows
+That my complaints were praises, and best words
+Of you and your estate: only my friends
+Knew of our mortgaged Lands, and were possest
+Of every accident before I came.
+If thou suspect it but a plot in me
+To keep my dowrie, or for mine own good
+Or my poor childrens:  (though it suits a mother
+To show a natural care in their reliefs)
+Yet I'll forget my self to calm your blood:
+Consume it, as your pleasure counsels you,
+And all I wish e'en Clemency affords:
+Give me but comely looks and modest words.
+
+HUSBAND.
+Money, hore, money, or I'll--
+
+[Draws his dagger.]
+
+[Enters a servant very hastily.]
+
+What the devil? how now? thy hasty news?
+
+[To his man.]
+
+SERVINGMAN.
+May it please you, sir--
+
+[Servant in a fear.]
+
+HUSBAND.
+What? May I not look upon my dagger? Speak villain, or I will
+execute the point on thee:  quick, short.
+
+SERVINGMAN.
+Why, sir, a gentleman from the University stays below to speak
+with you.
+
+HUSBAND.
+From the University? so! University--
+That long word runs through me.
+
+[Exit.]
+
+WIFE.
+Was ever wife so wretchedly beset?
+
+[Wife alone.]
+
+Had not this news stept in between, the point
+Had offered violence unto my breast.
+That which some women call great misery
+Would show but little here:  would scarce be seen
+Amongst my miseries.  I may Compare
+For wretched fortunes with all wives that are.
+Nothing will please him, until all be nothing.
+He calls it slavery to be preferd,
+A place of credit a base servitude.
+What shall become of me, and my poor children,
+Two here, and one at nurse, my pretty beggers?
+I see how ruin with a palsy hand
+Begins to shake the auncient seat to dust:
+The heavy weight of sorrow draws my lids
+Over my dankish eyes: I can scarce see:
+Thus grief will last; it wakes and sleeps with me.
+
+[Exit.]
+
+
+SCENE IV.  Another apartment in the same.
+
+[Enter the Husband with the master of the College.]
+
+
+HUSBAND.
+Please you draw near, sir, y'are exceeding welcome.
+
+MASTER.
+Thats my doubt; I fear, I come not to be welcome.
+
+HUSBAND.
+Yes, howsoever.
+
+MASTER.
+Tis not my fashion, Sir, to dwell in long circumstance, but
+to be plain, and effectual; therefore, to the purpose.  The
+cause of my setting forth was piteous and lamentable: that
+hopeful young gentleman, your brother, whose vertues we all
+love dearly, through your default and unnatural negligence,
+lies in bond executed for your debt, a prisoner, all his
+studies amazed, his hope struck dead, and the pride of his
+youth muffled in these dark clouds of oppression.
+
+HUSBAND.
+Hum, um, um.
+
+MASTER.
+Oh, you have kild the towardest hope of all our university:
+Wherefore, without repentance and ameds, expect pondrous and
+sudden Judgements to fall grievously upon you.  Your brother,
+a man who profited in his divine Imployments, might have made
+ten thousand souls fit for heaven, now by your careless courses
+cast in prison, which you must answer for, and assure your
+spirit it will come home at length.
+
+HUSBAND.
+Oh god! oh!
+
+MASTER.
+Wise men think ill of you, others speak ill of you, no man
+loves you, nay, even those whom honesty condemns, condemn
+you:  and take this from the vertuous affection I bear your
+brother; never look for prosperous hour, good thought, quiet
+sleeps, contented walks, nor any thing that makes man perfect
+til you redeem him.  What is your answer? how will you bestow
+him? upon desperate misery, or better hopes?  I suffer, till I
+have your answer.
+
+HUSBAND.
+Sir, you have much wrought with me.  I feel you in my soul,
+you are your arts master.  I never had sense til now; your
+syllables have cleft me.  Both for your words and pains I
+thank you:  I cannot but acknowledge grievous wrongs done to
+my brother, mighty, mighty, mighty wrongs.--Within there!
+
+[Enter a servingman.]
+
+HUSBAND.
+Sir, Fill me a bowl of wine.  Alas, poor brother,
+Brus'd with an execution for my sake.
+
+[Exit servant for wine.]
+
+MASTER.
+A bruse indeed makes many a moral sore
+Till the grave cure em.
+
+[Enter with wine.]
+
+HUSBAND.
+Sir, I begin to you, y'ave chide your welcome.
+
+MASTER.
+I could have wisht it better for your sake.
+I pledge you, sir, to the kind man in prison.
+
+HUSBAND.
+Let it be so.  Now, Sir, if you so please.
+
+[Drink both.]
+
+To spend but a few minutes in a walk
+About my grounds below, my man here shall
+Attend you.
+I doubt not but by that time to be furnisht
+Of a sufficient answer, and therein
+My brother fully satisfied.
+
+MASTER.
+Good sir, in that the Angells would be pleased,
+And the worlds murmurs calmd, and I should say
+I set forth then upon a lucky day.
+
+[Exit.]
+
+HUSBAND.
+Oh thou confused man! thy pleasant sins have undone thee, thy
+damnation has beggerd thee!  That heaven should say we must
+not sin, and yet made women! gives our senses way to find
+pleasure, which being found confounds us.  Why should we know
+those things so much misuse us?--oh, would vertue had been
+forbidden! we should then have proved all vertuous, for tis our
+blood to love that were forbidden.  Had not drunkenness been
+forbidden, what man would have been fool to a beast, and Zany
+to a swine, to show tricks in the mire? what is there in three
+dice to make a man draw thrice three thousand acres into the
+compass of a round little table, and with the gentlemans
+palsy in the hand shake out his posterity thieves or beggars?
+Tis done!  I ha dont, yfaith: terrible, horrible misery.--
+How well was I left! very well, very well.  My Lands shewed
+like a full moon about me, but now the moon's ith last
+quarter, waning, waning:  And I am mad to think that moon
+was mine; Mine and my fathers, and my forefathers--generations,
+generations: down goes the house of us, down, down it sinks.
+Now is the name a beggar, begs in me! that name, which
+hundreds of years has made this shiere famous, in me, and my
+posterity, runs out.
+  In my seed five are made miserable besides my self: my riot
+is now my brothers jailer, my wives sighing, my three boys
+penury, and mine own confusion.
+
+[Tears his hair.]
+
+Why sit my hairs upon my cursed head?
+Will not this poison scatter them? oh my brother's
+In execution among devils that
+Stretch him and make him give.  And I in want,
+Not able for to live, nor to redeem him.
+Divines and dying men may talk of hell,
+But in my heart her several torments dwell.
+Slavery and misery!  Who in this case
+Would not take up money upon his soul,
+Pawn his salvation, live at interest?
+I, that did ever in abundance dwell,
+For me to want, exceeds the throws of hell.
+
+[Enter his little son with a top and a scourge.]
+
+SON.
+What, ail you father? are you not well?  I cannot scourge my
+top as long as you stand so: you take up all the room with
+your wide legs. Puh, you cannot make me afeard with this; I
+fear no vizards, nor bugbears.
+
+[Husband takes up the child by the skirts of his long coat in
+one hand and draws his dagger with th' other.]
+
+HUSBAND.
+Up, sir, for here thou hast no inheritance left.
+
+SON.
+Oh, what will you do, father?  I am your white boy.
+
+HUSBAND.
+Thou shalt be my red boy: take that.
+
+[Strikes him.]
+
+SON.
+Oh, you hurt me, father.
+
+HUSBAND.
+My eldest beggar! thou shalt not live to ask an usurer bread,
+to cry at a great mans gate, or follow, good your honour, by
+a Couch; no, nor your brother; tis charity to brain you.
+
+SON.
+How shall I learn now my heads broke?
+
+HUSBAND.
+Bleed, bleed rather than beg, beg!
+
+[Stabs him.]
+
+Be not thy names disgrace:
+Spurn thou thy fortunes first if they be base:
+Come view thy second brother.--Fates,
+My childrens blood
+Shall spin into your faces, you shall see
+How Confidently we scorn beggery!
+
+[Exit with his Son.]
+
+
+SCENE V.  A bed-room in the same.
+
+[Enter a maid with a child in her arms, the mother by her a
+step.]
+
+
+MAID.
+Sleep, sweet babe; sorrow makes thy mother sleep:
+It bodes small good when heaviness falls so deep.
+Hush, pretty boy, thy hopes might have been better.
+Tis lost at Dice what ancient honour won:
+Hard when the father plays away the son!
+No thing but misery serves in this house.
+Ruin and desolation, oh!
+
+[Enter husband with the boy bleeding.]
+
+HUSBAND.
+Whore, give me that boy.
+
+[Strives with her for the child.]
+
+MAID.
+Oh help, help! out alas, murder, murder!
+
+HUSBAND.
+Are you gossiping, prating, sturdy queane?
+I'll break your clamor with your neck: down stairs!
+Tumble, tumble, headlong!
+
+[Throws her down.]
+
+So!
+The surest way to charm a womans tongue
+Is break her neck: a politician did it.
+
+SON.
+Mother, mother; I am kild, mother.
+
+WIFE WAKES.
+Ha, whose that cried? oh me, my children!
+Both, both, both; bloody, bloody.
+
+[Catches up the youngest.]
+
+HUSBAND.
+Strumpet, let go the boy, let go the beggar.
+
+WIFE.
+Oh my sweet husband!
+
+HUSBAND.
+Filth, harlot.
+
+WIFE.
+Oh what will you do, dear husband?
+
+HUSBAND.
+Give me the bastard.
+
+WIFE.
+Your own sweet boy!
+
+HUSBAND.
+There are too many beggars.
+
+WIFE.
+Good my husband--
+
+HUSBAND.
+Doest thou prevent me still?
+
+WIFE.
+Oh god!
+
+HUSBAND.
+Have at his heart!
+
+[Stabs at the child in her arms.]
+
+WIFE.
+Oh my dear boy!
+
+[Gets it from her.]
+
+HUSBAND.
+Brat, thou shalt not live to shame thy house!
+
+WIFE.
+Oh heaven!
+
+[She's hurt and sinks down.]
+
+HUSBAND.
+And perish! now begone:
+There's whores enow, and want would make thee one.
+
+[Enter a lusty servant.]
+
+SERVANT.
+Oh Sir, what deeds are these?
+
+HUSBAND.
+Base slave, my vassail:
+Comst thou between my fury to question me?
+
+SERVANT.
+Were you the Devil, I would hold you, sir.
+
+HUSBAND.
+Hold me? presumption!  I'll undo thee for't.
+
+SERVANT.
+Sblood, you have undone us all, sir.
+
+HUSBAND.
+Tug at thy master!
+
+SERVANT.
+Tug at a Monster.
+
+HUSBAND.
+Have I no power? shall my slave fetter me?
+
+SERVANT.
+Nay, then, the Devil wrestles, I am thrown.
+
+HUSBAND.
+Oh, villain, now I'll tug thee,
+
+[Overthrows him]
+
+now I'll tear thee;
+Set quick spurs to my vassail, bruize him, trample him.
+So! I think thou wilt not follow me in haste.
+My horse stands ready saddled.  Away, away;
+Now to my brat at nurse, my suckling begger.
+Fates, I'll not leave you one to trample on.
+
+
+SCENE VI.  Court before the house.
+
+[The Master meets him.]
+
+
+MASTER.
+How ist with you, sir? me thinks you look
+Of a distracted colour.
+
+HUSBAND.
+Who?  I, sir? tis but your fancy.
+Please you walk in, Sir, and I'll soon resolve you:
+I want one small part to make up the sum,
+And then my brother shall rest satisfied.
+
+MASTER.
+I shall be glad to see it: sir, I'll attend you.
+
+[Exeunt.]
+
+
+SCENE VII.  The same as Scene V.
+
+SERVANT.
+Oh I am scarce able to heave up my self:
+Ha's so bruizd me with his devilish weight,
+And torn my flesh with his blood-hasty spur,
+A man before of easy constitution
+Till now hell's power supplied, to his soul's wrong.
+Oh, how damnation can make weak men strong.
+
+[Enter Master, and two servants.]
+
+SERVANT.
+Oh, the most piteous deed, sir, since you came.
+
+MASTER.
+A deadly greeting! has he somde up these
+To satisfy his brother? here's an other:
+And by the bleeding infants, the dead mother.
+
+WIFE.
+Oh, oh.
+
+MASTER.
+Surgeons, Surgeons! she recovers life.
+One of his men all faint and bloodied.
+
+1 SERVANT.
+Follow, our murderous master has took horse
+To kill his child at nurse: oh, follow quickly.
+
+MASTER.
+I am the readiest, it shall be my charge
+To raise the town upon him.
+
+[Exit Master and servants.]
+
+1 SERVANT.
+Good sir, do follow him.
+
+WIFE.
+Oh my children.
+
+1 SERVANT.
+How is it with my most afflicted Mistress?
+
+WIFE.
+Why do I now recover? Why half live?
+To see my children bleed before mine eyes?
+A sight able to kill a mothers breast
+Without an executioner! what, art thou
+Mangled too?
+
+1 SERVANT.
+I, thinking to prevent what his quick mischiefs
+Had so soon acted, came and rusht upon him.
+We struggled, but a fouler strength then his
+O'er threw me with his arms; then did me bruize me
+And rent my flesh, and robd me of my hair,
+Like a man mad in execution;
+Made me unfit to rise and follow him.
+
+WIFE.
+What is it has beguild him of all grace
+And stole away humanity from his breast?
+To slay his children, purpose to kill his wife,
+And spoil his servants.
+
+[Enter two guards.]
+
+AMBO.
+Sir, please you leave this most accursed place,
+A surgeon waits within.
+
+WIFE.
+Willing to leave it!
+Tis guilty of sweet blood, innocent blood:
+Murder has took this chamaber with full hands,
+And will ne'er out as long as the house stands.
+
+[Exeunt.]
+
+
+SCENE VIII.  A high road.
+
+[Enter Husband as being thrown off his horse,
+And falls.]
+
+
+HUSBAND.
+Oh stumbling Jade, the spavin overtake thee,
+The fifty disease stop thee!
+Oh, I am sorely bruisde; plague founder thee:
+Thou runst at ease and pleasure.  Hart of chance!
+To Throw me now within a flight oth Town,
+In such plain even ground, sfoot, a man
+May dice up on't, and throw away the Meadows.
+Filthy beast.
+
+CRY WITHIN.
+Follow, follow, follow.
+
+HUSBAND.
+Ha!  I hear sounds of men, like hew and cry:
+Up, up, and struggle to thy horse, make on;
+Dispatch that little begger and all's done.
+
+KNIGHT.
+Here, this way, this way!
+
+HUSBAND.
+At my back? Oh,
+What fate have I? my limbs deny me go,
+My will is bated: beggery claims a part.
+Oh, could I here reach to the infants heart.
+
+[Enter Master of the College, 3. Gentlemen, and others with
+Holberds.]
+
+[Find him.]
+
+ALL.
+Here, here:  yonder, yonder.
+
+MASTER.
+Unnatural, flinty, more than barbarous:
+The Scythians or the marble hearted fates
+Could not have acted more remorseless deeds
+In their relentless natures, then these of thine:
+Was this the answer I long waited on,
+The satisfaction for thy prisoned brother?
+
+HUSBAND.
+Why, he can have no more on's then our skins,
+And some of em want but fleaing.
+
+1 GENTLEMAN.
+Great sins have made him imprudent.
+
+MASTER.
+H'as shed so much blood that he cannot blush.
+
+2 GENTLEMAN.
+Away with him, bear him a long to the Justices;
+A gentleman of worship dwells at hand;
+There shall his deeds be blazed.
+
+HUSBAND.
+Why, all the better.
+My glory tis to have my action known:
+I grieve for nothing, but I mist of one.
+
+MASTER.
+There's little of a father in that grief:
+Bear him away.
+
+[Exeunt.]
+
+
+SCENE IX.  A room in the house of a Magistrate.
+
+[Enter a knight with two or three Gentlemen.]
+
+
+KNIGHT.
+Endangered so his wife? murdered his children?
+
+1 GENTLEMAN.
+So the Cry comes.
+
+Knight.
+I am sorry I ere knew him,
+That ever he took life and natural being
+From such an honoured stock, and faira descent;
+Til this black minute without stain or blemish.
+
+1 GENTLEMAN.
+Here come the men.
+
+[Enter the master of the college and the rest, with the
+prisoner.]
+
+KNIGHT.
+The serpent of his house!  I'm sorry
+For this time that I am in place of justice.
+
+MASTER.
+Please you, Sir.
+
+KNIGHT.
+Do not repeat it twice I know too much,
+Would it had ne'er been thought on:
+Sir, I bleed for you.
+
+1 GENTLEMAN.
+Your fathers sorrows are alive in me:
+What made you shew such monstrous cruelty?
+
+HUSBAND.
+In a word, Sir, I have consumd all, played away long acre,
+and I thought it the charitablest deed I could do to cussen
+beggery and knock my house oth head.
+
+KNIGHT.
+Oh, in a cooler blood you will repent it.
+
+HUSBAND.
+I repent now, that ones left unkild,
+My brat at nurse.  Oh, I would full fain have weand him.
+
+KNIGHT.
+Well, I do not think but in to morrows judgement,
+The terror will sit closer to your soul,
+When the dread thought of death remembers you;
+To further which, take this sad voice from me:
+Never was act played more unnaturally.
+
+HUSBAND.
+Thank you, Sir.
+
+KNIGHT.
+Go, lead him to the Jail:
+Where justice claims all, there must pity fail.
+
+HUSBAND.
+Come, come, away with me.
+
+[Exit prisoner.]
+
+MASTER.
+Sir, you deserve the worship of your place.
+Would all did so: in you the law is grace.
+
+KNIGHT.
+It is my wish it should be so.--Ruinous man,
+The desolation of his house, the blot
+Upon his predecessors honord name!
+That man is nearest shame that is past shame.
+
+[Exit.]
+
+
+SCENE X.  Before Calverly Hall.
+
+[Enter Husband with the officers, The Master and gentlemen,
+as going by his house.]
+
+
+HUSBAND.
+I am right against my house, seat of my Ancestors: I hear my
+wife's alive; but much endangered. Let me intreat to speak
+with her, before the prison gripe me.
+
+[Enter his wife, brought in a chair.]
+
+GENTLEMAN.
+See here she comes of her self.
+
+WIFE.
+Oh my sweet Husband, my dear distressed husband,
+Now in the hands of unrelenting laws!
+My greatest sorrow, my extremest bleeding,
+Now my soul bleeds.
+
+HUSBAND.
+How now? kind to me? did I not wound thee, left thee for dead?
+
+WIFE.
+Tut, far greater wounds did my breast feel:
+Unkindness strikes a deeper wound than steel;
+You have been still unkind to me.
+
+HUSBAND.
+Faith, and so I think I have:
+I did my murthers roughly, out of hand,
+Desperate and sudden, but thou hast deviz'd
+A fine way now to kill me, thou hast given mine eyes
+Seven wounds a piece; now glides the devil from me,
+Departs at every joint, heaves up my nails.
+Oh catch him new torments, that were near invented,
+Bind him one thousand more, you blessed Angels,
+In that pit bottomless; let him not rise
+To make men act unnatural tragedies,
+To spread into a father, and in fury,
+Makes him his childrens executioners:
+Murder his wife, his servants, and who not?
+For that man's dark, where heaven is quite forgot.
+
+WIFE.
+Oh my repentant husband.
+
+HUSBAND.
+My dear soul, whom I too much have wrongd,
+For death I die, and for this have I longd.
+
+WIFE.
+Thou sholdst not (be assurde) for these faults die,
+I ft he law could forgive as soon as I.
+
+HUSBAND.
+What sight is yonder?
+
+[Children laid out.]
+
+WIFE.
+Oh, our two bleeding boys
+Laid forth upon the thresholds.
+
+HUSBAND.
+Here's weight enough to make a heart-string crack.
+Oh, were it lawful that your pretty souls
+Might look from heaven into your fathers eyes,
+Then should you see the penitent glasses melt,
+And both your murthers shoot upon my cheeks;
+But you are playing in the Angels laps,
+And will not look on me,
+Who void of grace, kild you in beggery.
+Oh that I might my wishes now attain,
+I should then wish you living were again,
+Though I did beg with you, which thing I feard:
+Oh, twas the enemy my eyes so bleard.
+Oh, would you could pray heaven me to forgive,
+That will unto my end repentant live.
+
+WIFE.
+It makes me e'en forget all other sorrows
+And live apart with this.
+
+OFFICER.
+Come will you go?
+
+HUSBAND.
+I'll kiss the blood I spilt and then I go:
+My soul is bloodied, well may my lips be so.
+Farewell, dear wife, now thou and I must part,
+I of thy wrongs repent me with my heart.
+
+WIFE.
+Oh stay, thou shalt not go.
+
+HUSBAND.
+That's but in vain, you see it must be so.
+Farewell, ye bloody ashes of my boys!
+My punishments are their eternal joys.
+Let every father look into my deeds,
+And then their heirs may prosper, while mine bleeds.
+
+WIFE.
+More wretched am I now in this distress,
+
+[Exeunt Husband with holberds.]
+
+Then former sorrows made me.
+
+MASTER.
+Oh kind wife,
+Be comforted.  One joy is yet unmurdered:
+You have a boy at nurse; your joy's in him.
+
+WIFE.
+Dearer then all is my poor husbands life:
+Heaven give my body strength, which yet is faint
+With much expence of blood, and I will kneel,
+Sue for his life, number up all my friends,
+To plead for pardon for my dear husbands life.
+
+MASTER.
+Was it in man to wound so kind a creature?
+I'll ever praise a woman for thy sake.
+I must return with grief; my answer's set:
+I shall bring news ways heavier then the debt.--
+Two brothers: one in bond lies overthrown,
+This on a deadlier execution.
+
+
+FINIS.
+
+
+End of The Project Gutenberg Etext of A Yorkshire Tragedy
+by Shakespeare Apocrypha
+

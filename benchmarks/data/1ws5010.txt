@@ -1,0 +1,4096 @@
+Project Gutenberg's The London Prodigal, attributed in part to Shakespeare
+PG has multiple editions of William Shakespeare's Complete Works
+
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Are Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below, including for donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+
+
+Title: The London Prodigal
+
+Author: William Shakespeare [Apocrypha]
+
+Release Date: May, 2003  [Etext #4031]
+[Yes, we are about one year ahead of schedule]
+[The actual date this file first posted = 10/15/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg's The London Prodigal, attributed in part to Skakespeare
+***********This file should be named 1ws5010.txt or 1ws5010.zip***********
+
+Corrected EDITIONS of our etexts get a new NUMBER, 1ws5011.txt
+VERSIONS based on separate sources get new LETTER, 1ws5010a.txt
+
+This etext was produced by Tony Adam <anthony-adam@tamu.edu>
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 4,000 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of July 12, 2001 contributions are only being solicited from people in:
+Arkansas, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho,
+Illinois, Indiana, Iowa, Kansas, Louisiana, Maine, Massachusetts, Minnesota,
+Missouri, Montana, Nebraska, New Mexico, Nevada, New Jersey, New York, North
+Carolina, Ohio, Oklahoma, Oregon, Rhode Island, South Carolina*, South Dakota,
+Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia,
+Wisconsin, and Wyoming.
+
+*In Progress
+
+We have filed in about 45 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork
+to legally request donations in all 50 states.  If
+your state is not listed and you would like to know
+if we have added it since the list you have, just ask.
+
+While we cannot solicit donations from people in
+states where we are not yet registered, we know
+of no prohibition against accepting donations
+from donors in these states who approach us with
+an offer to donate.
+
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+All donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541,
+and has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the maximum
+extent permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these Etexts are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg Etexts or other materials be they hardware or
+software or any other related product without express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.10/04/01*END*
+
+
+
+
+
+This etext was produced by Tony Adam <anthony-adam@tamu.edu>
+
+
+
+
+
+THE LONDON PRODIGAL, As it was played by the King's Majesties
+servants.
+
+
+
+The Actor's Names in the London Prodigal.
+
+M. FLOWERDALE (Senior), a Merchant trading at Venice.
+MATTH. FLOWERDALE, his Prodigal Son.
+M. FLOWERDALE (Junior), Brother to the Merchant.
+SIR LANCELOT SPURCOCK, of Lewsome in Kent.
+FRANCES, LUCY, DELIA, Daughters to Sir Lancelot Spurcock.
+DAFFODIL, ARTICHOKE, Servants to Sir Lancelot Spurcock.
+SIR ARTHUR GREENSHOOD, a Commander, in love with Lucy.
+OLIVER, a Devonshire Clothier, in love with Lucy.
+WEATHERCOCK, a Parasite to Sir Lancelot Spurcock.
+TOM CIVET, in love with Frances.
+DICK and RALPH, two cheating Gamesters.
+RUFFIAN, a Pander to Mistress Apricot a Bawd.
+SHERIFF and OFFICERS.
+A CITIZEN and his wife.
+Drawers.
+
+The Scene:  London (and the Parts adjacent).
+
+
+
+ACT I.
+
+SCENE I.  London.  A room in Flowerdale Junior's house.
+
+[Enter old Flowerdale and his brother.]
+
+FATHER.
+Brother, from Venice, being thus disguised,
+I come to prove the humours of my son.
+How hath he borne himself since my departure,
+I leaving you his patron and his guide?
+
+UNCLE.
+Ifaith, brother, so, as you will grieve to hear,
+And I almost ashamed to report it.
+
+
+FATHER.
+Why, how ist, brother? what, doth he spend beyond
+the allowance I left him?
+
+UNCLE.
+How! beyond that? and far more:  why, your exhibition
+is nothing.  He hath spent that, and since hath borrowed; 
+protested with oaths, alleged kindred to wring money 
+from me,--by the love I bore his father, by the fortunes
+might fall upon himself, to furnish his wants:  that done,
+I have had since his bond, his friend and friend's bond.
+Although I know that he spends is yours; yet it grieves 
+me to see the unbridled wildness that reins over him.
+
+FATHER.
+Brother, what is the manner of his life? how is the name
+of his offences?  If they do not relish altogether of
+damnation, his youth may privilege his wantonness:  I
+myself ran an unbridled course till thirty, nay, almost 
+till forty;--well, you see how I am:  for vice, once looked
+into with the eyes of discretion, and well-balanced with
+the weights of reason, the course past seems so abominable,
+that the Landlord of himself, which is the heart of the body,
+will rather entomb himself in the earth, or seek a new 
+Tenant to remain in him:--which once settled, how much
+better are they that in their youth have known all these
+vices, and left it, than those that knew little, and in their
+age runs into it?  Believe me, brother, they that die most
+virtuous hath in their youth lived most vicious, and none
+knows the danger of the fire more than he that falls into
+it.  But say, how is the course of his life? let's hear his
+particulars.
+
+UNCLE.
+Why, I'll tell you, brother; he is a continual swearer, and
+a breaker of his oaths, which is bad.
+
+FATHER.
+I grant indeed to swear is bad, but not in keeping those
+oaths is better:  for who will set by a bad thing?  Nay, by
+my faith, I hold this rather a virtue than a vice.  Well, I pray,
+proceed.
+
+UNCLE.
+He is a mighty brawler, and comes commonly by the worst.
+
+FATHER.
+By my faith, this is none of the worst neither, for if he brawl 
+and be beaten for it, it will in time make him shun it:  For 
+what brings man or child more to virtue than correction?
+What reigns over him else?
+
+UNCLE.
+He is a great drinker, and one that will forget himself.
+
+FATHER.
+O best of all! vice should be forgotten; let him drink on,
+so he drink not churches.  Nay, and this be the worst, I
+hold it rather a happiness in him, than any iniquity.  Hath
+he any more attendants?
+
+UNCLE.
+Brother, he is one that will borrow of any man.
+
+FATHER.
+Why, you see, so doth the sea:  it borrows of all the small
+currents in the world, to increase himself.
+
+UNCLE.
+Aye, but the sea pales it again, and so will never your son.
+
+FATHER.
+No more would the sea neither, if it were as dry as my son.
+
+UNCLE.
+Then, brother, I see you rather like these vices in your son, 
+than any way condemn them.
+
+FATHER.
+Nay, mistake me not, brother, for tho I slur them over now, 
+as things slight and nothing, his crimes being in the bud, it
+would gall my heart, they should ever reign in him.
+
+FLOWERDALE.
+Ho! who's within? ho!
+
+[Flowerdale knocks within.]
+
+UNCLE.
+That's your son, he is come to borrow more money.
+
+FATHER.
+For Godsake give it out I am dead; see how he'll take it.
+Say I have brought you news from his father.  I have here
+drawn a formal will, as it were from my self, which I'll
+deliver him.
+
+UNCLE.
+Go to, brother, no more:  I will.
+
+FLOWERDALE.
+[Within.]  Uncle, where are you, Uncle?
+
+UNCLE.
+Let my cousin in there.
+
+FATHER.
+I am a sailor come from Venice, and my name is Christopher.
+
+[Enter Flowerdale.]
+
+FLOWERDALE.
+By the Lord, in truth, Uncle--
+
+UNCLE.
+In truth would a served, cousin, without the Lord.
+
+FLOWERDALE.
+By your leave, Uncle, the Lord is the Lord of truth.  A couple
+of rascals at the gate set upon me for my purse.
+
+UNCLE.
+You never come, but you bring a brawl in your mouth.
+
+FLOWERDALE.
+By my truth, Uncle, you must needs lend me ten pound.
+
+UNCLE.
+Give my cousin some small beer here.
+
+FLOWERDALE.
+Nay, look you, you turn it to a jest now:  by this light, I
+should ride to Croyden fair, to meet Sir Lancelot Spurcock.
+I should have his daughter Lucy, and for scurvy ten pound, 
+a man shall lose nine hundred three-score and odd pounds,
+and a daily friend beside.  By this hand, Uncle, tis true.
+
+UNCLE.
+Why, any thing is true for ought I know.
+
+FLOWERDALE.
+To see now! why, you shall have my bond, Uncle, or Tom 
+White's, James Brock's, or Nick Hall's:  as good rapier and
+dagger men, as any be in England.  Let's be damned if we do
+not pay you:  the worst of us all will not damn ourselves for
+ten pound.  A pox of ten pound!
+
+UNCLE.
+Cousin, this is not the first time I have believed you.
+
+FLOWERDALE.
+Why, trust me now, you know not what may fall.  If one
+thing were but true, I would not greatly care, I should not
+need ten pound, but when a man cannot be believed,--there's
+it.
+
+UNCLE.
+Why, what is it, cousin?
+
+FLOWERDALE.
+Marry, this, Uncle:  can you tell me if the Katern-hue be
+come home or no?
+
+UNCLE.
+Aye, marry, ist.
+
+FLOWERDALE.
+By God I thank you for that news.  What, ist in the pool, can
+you tell?
+
+UNCLE.
+It is; what of that?
+
+FLOWERDALE.
+What? why then I have six pieces of velvet sent me; I'll give
+you a piece, Uncle:  for thus said the letter,--a piece of 
+Ashcolour, a three piled black, a colour de roi, a crimson, a
+sad green, and a purple:  yes, yfaith.
+
+UNCLE.
+From whom should you receive this?
+
+FLOWERDALE.
+From who? why, from my father; with commendations to you,
+Uncle, and thus he writes:  I know, said he, thou hast much
+troubled thy kind Uncle, whom God-willing at my return I
+will see amply satisfied.  Amply, I remember was the very word,
+so God help me.
+
+UNCLE.
+Have you the letter here?
+
+FLOWERDALE.
+Yes, I have the letter here, here is the letter:  no, yes, no;--let me
+see, what breeches wore I a Saturday? let me see:  a Tuesday my
+Salamanca; a Wednesday my peach colour Satin; a Thursday my
+Vellour; a Friday my Salamanca again; a Saturday--let me see--a
+Saturday,--for in those breeches I wore a Saturday is the letter:  O,
+my riding breeches, Uncle, those that you thought been velvet; in
+those very breeches is the letter.
+
+UNCLE.
+When should it be dated?
+
+FLOWERDALE.
+Marry, Decimo tertio septembris--no, no--decimo tertio Octobris;
+Aye, Octobris, so it is.
+
+UNCLE.
+Decimo tertio Octobris! and here receive I a letter that your father
+died in June:  how say you, Kester?
+
+FATHER.
+Yes, truly, sir, your father is dead, these hands of mine holp to
+wind him.
+
+FLOWERDALE.
+Dead?
+
+FATHER.
+Aye, sir, dead.
+
+FLOWERDALE.
+Sblood, how should my father come dead?
+
+FATHER.
+Yfaith, sir, according to the old Proverb:
+The child was born and cried, became man,
+After fell sick, and died.
+
+UNCLE.
+Nay, cousin, do not take it so heavily.
+
+FLOWERDALE.
+Nay, I cannot weep you extempore:  marry, some
+two or three days hence, I shall weep without any
+stintance.  But I hope he died in good memory.
+
+FATHER.
+Very well, sir, and set down every thing in good
+order; and the Katherine and Hue you talked of, I
+came over in:  and I saw all the bills of lading, and
+the velvet that you talked of, there is no such aboard.
+
+FLOWERDALE.
+By God, I assure you, then, there is knavery abroad.
+
+FATHER.
+I'll be sworn of that:  there's knavery abroad,
+Although there were never a piece of velvet in Venice.
+
+FLOWERDALE.
+I hope he died in good estate.
+
+FATHER.
+To the report of the world he did, and made his will,
+Of which I am an unworthy bearer.
+
+FLOWERDALE.
+His will! have you his will?
+
+FATHER.
+Yes, sir, and in the presence of your Uncle
+I was willed to deliver it.
+
+UNCLE.
+I hope, cousin, now God hath blessed you with wealth,
+you will not be unmindful of me.
+
+FLOWERDALE.
+I'll do reason, Uncle, yet, yfaith, I take the denial of 
+this ten pound very hardly.
+
+UNCLE.
+Nay, I denied you not.
+
+FLOWERDALE.
+By God, you denied me directly.
+
+UNCLE.
+I'll be judged by this good fellow.
+
+FATHER.
+Not directly, sir.
+
+FLOWERDALE.
+Why, he said he would lend me none, and that had wont to be a 
+direct denial, if the old phrase hold.  Well, Uncle, come, we'll
+fall to the Legacies:  (reads)  'In the name of God, Amen.  Item,
+I bequeath to my brother Flowerdale three hundred pounds, to pay
+such trivial debts as I owe in London.  Item, to my son Matt
+Flowerdale, I bequeath two bale of false dice; Videlicet, high 
+men and low men, fullomes, stop cater traies, and other bones of 
+function.'  
+Sblood, what doth he mean by this?
+
+UNCLE.
+Proceed, cousin.
+
+FLOWERDALE.
+"These precepts I leave him:  let him borrow of his
+oath, for of his word no body will trust him.  Let him
+by no means marry an honest woman, for the other
+will keep her self.  Let him steal as much as he can,
+that a guilty conscience may bring him to his destinate
+repentance."--I think he means hanging.  And this were
+his last will and Testament, the Devil stood laughing at 
+his bed's feet while he made it.  Sblood, what, doth he 
+think to fop of his posterity with Paradoxes?
+
+FATHER.
+This he made, sir, with his own hands.
+
+FLOWERDALE.
+Aye, well; nay, come, good Uncle, let me have this ten
+pound.  Imagine you have lost it, or been robbed of it, or
+misreckoned your self so much:  any way to make it come
+easily off, good Uncle.
+
+UNCLE.
+Not a penny.
+
+FATHER.
+Yfaith, lend it him, sir.  I my self have an estate in the
+City worth twenty pound:  all that I'll engage for him; he
+saith it concerns him in a marriage.
+
+FLOWERDALE.
+Aye, marry, it doth.  This is a fellow of some sense, this:
+Come, good Uncle.
+
+UNCLE.
+Will you give your word for it, Kester?
+
+FATHER.
+I will, sir, willingly.
+
+UNCLE.
+Well, cousin, come to me some hour hence, you shall
+have it ready.
+
+FLOWERDALE.
+Shall I not fail?
+
+UNCLE.
+You shall not, come or send.
+
+FLOWERDALE.
+Nay, I'll come my self.
+
+FATHER.
+By my troth, would I were your worship's man.
+
+FLOWERDALE.
+What, wouldst thou serve?
+
+FATHER.
+Very willingly, sir.
+
+FLOWERDALE.
+Why, I'll tell thee what thou shalt do:  thou saith thou
+hast twenty pound:  go into Burchin Lane, put thy self
+into clothes; thou shalt ride with me to Croyden fair.
+
+FATHER.
+I thank you, sir; I will attend you.
+
+FLOWERDALE.
+Well, Uncle, you will not fail me an hour hence?
+
+UNCLE.
+I will not, cousin.
+
+FLOWERDALE.
+What's thy name?  Kester?
+
+FATHER.
+Aye, sir.
+
+FLOWERDALE.
+Well, provide thy self:  Uncle, farewell till anon.
+
+[Exit Flowerdale.]
+
+UNCLE.
+Brother, how do you like your son?
+
+FATHER.
+Yfaith, brother, like a mad unbridled colt,
+Or as a Hawk, that never stooped to lure:
+The one must be tamed with an iron bit,
+The other must be watched, or still she is wild.
+Such is my son; awhile let him be so:
+For counsel still is folly's deadly foe.
+I'll serve his youth, for youth must have his course,
+For being restrained, it makes him ten times worse;
+His pride, his riot, all that may be named,
+Time may recall, and all his madness tamed.
+
+[Exeunt.]
+
+
+SCENE II.  The high street in Croydon.  An inn
+appearing, with an open drinking booth before it.
+
+[Enter Sir Lancelot, Master Weathercock, Daffodil, 
+Artichoke, Lucy, and Frances.]
+
+LANCELOT.
+Sirrah Artichoke, get you home before,
+And as you proved yourself a calf in buying,
+Drive home your fellow calves that you have bought.
+
+ARTICHOKE.
+Yes, forsooth; shall not my fellow Daffodil go along
+with me?
+
+LANCELOT.
+No, sir, no; I must have one to wait on me.
+
+ARTICHOKE.
+Daffodil, farewell, good fellow Daffodil.
+You may see, mistress, I am set up by the halves;
+Instead of waiting on you, I am sent to drive home calves.
+
+LANCELOT.
+Yfaith, Frances, I must turn away this Daffodil,
+He's grown a very foolish saucy fellow.
+
+FRANCES.  
+Indeed law, father, he was so since I had him:
+Before he was wise enough for a foolish serving-man.
+
+WEATHERCOCK.
+But what say you to me, Sir Lancelot?
+
+LANCELOT.
+O, about my daughters? well, I will go forward.
+Here's two of them, God save them:  but the third,
+O she's a stranger in her course of life.
+She hath refused you, Master Weathercock.
+
+WEATHERCOCK.
+Aye, by the Rood, Sir Lancelot, that she hath,
+But had she tried me,
+She should a found a man of me indeed.
+
+LANCELOT.
+Nay be not angry, sir, at her denial.
+She hath refused seven of the worshipfulest
+And worthiest housekeepers this day in Kent:
+Indeed she will not marry, I suppose.
+
+WEATHERCOCK.
+The more fool she.
+
+LANCELOT.
+What, is it folly to love Chastity?
+
+WEATHERCOCK.
+No, mistake me not, Sir Lancelot,
+But tis an old proverb, and you know it well,
+That women dying maids lead apes in hell.
+
+LANCELOT.
+That's a foolish proverb, and a false.
+
+WEATHERCOCK.
+By the mass I think it be, and therefore let it go:
+But who shall marry with mistress Frances?
+
+FRANCES.
+By my troth, they are talking of marrying me, sister.
+
+LUCY.
+Peace, let them talk;
+Fools may have leave to prattle as they walk.
+
+DAFFODIL.
+Sentesses still, sweet mistress;
+You have a wit, and it were your Alliblaster.
+
+LUCY.
+Yfaith, and thy tongue trips trenchmore.
+
+LANCELOT.
+No, of my knighthood, not a suitor yet:
+Alas, God help her, silly girl, a fool, a very fool:
+But there's the other black-brows, a shrewd girlie,
+She hath wit at will, and suitors two or three:
+Sir Arthur Greenshield one, a gallant knight,
+A valiant soldier, but his power but poor.
+Then there's young Oliver, the Devonshire lad,
+A wary fellow, marry, full of wit,
+And rich by the rood: but there's a third all air,
+Light as a feather, changing as the wind:
+Young Flowerdale.
+
+WEATHERCOCK.
+O he, sir, he's a desperate dick indeed.
+Bar him you house.
+
+LANCELOT.
+Fie, not so, he's of good parentage.
+
+WEATHERCOCK.
+By my fai' and so he is, and a proper man.
+
+LANCELOT.
+Aye, proper, enough, had he good qualities.
+
+WEATHERCOCK.
+Aye, marry, there's the point, Sir Lancelot,
+For there's an old saying:
+Be he rich, or be he poor,
+Be he high, or be he low:
+Be he born in barn or hall,
+Tis manners makes the man and all.
+
+LANCELOT.
+You are in the right, Master Weathercock.
+
+[Enter Monsieur Civet.]
+
+CIVET.
+Soul, I think I am sure crossed, or witched with an
+owl.  I have haunted them, Inn after Inn, booth after
+booth, yet cannot find them:  ha, yonder they are;
+that's she.  I hope to God tis she! nay, I know tis she
+now, for she treads her shoe a little awry.
+
+LANCELOT.
+Where is this Inn? we are past it, Daffodil.
+
+DAFFODIL.
+The good sign is here, sir, but the back gate is before.
+
+CIVET.
+Save you, sir.  I pray, may I borrow a piece of a word
+with you?
+
+DAFFODIL.
+No pieces, sir.
+
+CIVET.
+Why, then, the whole.  I pray, sir, what may yonder
+gentlewomen be?
+
+DAFFODIL.
+They may be ladies, sir, if the destinies and mortalities
+work.
+
+CIVET.
+What's her name, sir?
+
+DAFFODIL.
+Mistress Frances Spurcock, Sir Lancelot Spurcock's 
+daughter.
+
+CIVET.
+Is she a maid, sir?
+
+DAFFODIL.
+You may ask Pluto, and dame Proserpine that:  I would
+be loath to be riddled, sir.
+
+CIVET.
+Is she married, I mean, sir?
+
+DAFFODIL.
+The Fates knows not yet what shoemaker shall make her
+wedding shoes.
+
+CIVET.
+I pray, where Inn you sir?  I would be very glad to bestow
+the wine of that gentlewoman.
+
+DAFFODIL.
+At the George, sir.
+
+CIVET.
+God save you, sir.
+
+DAFFODIL.
+I pray your name, sir?
+
+CIVET.
+My name is Master Civet, sir.
+
+DAFFODIL.
+A sweet name.  God be with you, good Master Civet.
+
+[Exit Civet.]
+
+LANCELOT.
+Aye, have we spied you, stout Sir George?
+For all your dragon, you had best sells good wine,
+That needs no yule-bush:  well, we'll not sit by it,
+As you do on your horse.  This room shall serve:
+Drawer, let me have sack for us old men:
+For these girls and knaves small wines are best.
+A pint of sack, no more.
+
+DRAWER.
+A quart of sack in the three Tuns.
+
+LANCELOT.
+A pint, draw but a pint.--Daffodil, call for wine to
+make your selves drink.
+
+FRANCES.
+And a cup of small beer, and a cake, good Daffodil.
+
+[Enter young Flowerdale.]
+
+FLOWERDALE.
+How now? fie, sit in the open room? now, good Sir 
+Lancelot, & my kind friend worshipful Master
+Weathercock!  What, at your pint? a quart for shame.
+
+LANCELOT.
+Nay, Royster, by your leave we will away.
+
+FLOWERDALE.
+Come, give's some Music, we'll go dance.  Begone,
+Sir Lancelot? what, and fair day too?
+
+LUCY.
+Twere foully done, to dance within the fair.
+
+FLOWERDALE.
+Nay, if you say so, fairest of all fairs, then I'll not dance.
+A pox upon my tailor, he hath spoiled me a peach colour
+satin shirt, cut upon cloth of silver, but if ever the rascal
+serve me such another trick, I'll give him leave, yfaith, to 
+put me in the calendar of fools:  and you, and you, Sir
+Lancelot and Master Weathercock.  My goldsmith too, on
+tother side--I bespoke thee, Lucy, a carkenet of gold, and
+thought thou shouldst a had it for a fairing, and the rogue
+puts me in rearages for Orient Pearl:  but thou shalt have it
+by Sunday night, wench.
+
+[Enter the Drawer.]
+
+DRAWER.
+Sir, here is one hath sent you a pottle of rennish wine, brewed
+with rosewater.
+
+FLOWERDALE.
+To me?
+
+DRAWER.
+No, sir, to the knight; and desires his more acquaintance.
+
+LANCELOT.
+To me? what's he that proves so kind?
+
+DAFFODIL.
+I have a trick to know his name, sir.  He hath a month's
+mind here to mistress Frances, his name is Master Civet.
+
+LANCELOT.
+Call him in, Daffodil.
+
+FLOWERDALE.
+O I know him, sir, he is a fool, but reasonable rich; his
+father was one of these lease-mongers, these corn-mongers, 
+these money-mongers, but he never had the wit to be a
+whore-monger.
+
+[Enter Master Civet.]
+
+LANCELOT.
+I promise you, sir, you are at too much charge.
+
+CIVET.
+The charge is small charge, sir; I thank God my father left
+me wherewithal:  if it please you, sir, I have a great mind 
+to this gentlewoman here, in the way of marriage.
+
+LANCELOT.
+I thank you, sir:  please you come to Lewsome,
+To my poor house, you shall be kindly welcome:
+I knew your father, he was a wary husband.--
+To pale here, Drawer.
+
+DRAWER.
+All is paid, sir:  this gentleman hath paid all.
+
+
+LANCELOT.
+Yfaith, you do us wrong,
+But we shall live to make amends ere long:
+Master Flowerdale, is that your man?
+
+FLOWERDALE.
+Yes, faith, a good old knave.
+
+LANCELOT.
+Nay, then I think
+You will turn wise, now you take such a servant:
+Come, you'll ride with us to Lewsome; let's away.
+Tis scarce two hours to the end of day.
+
+[Exit Omnes.]
+
+
+ACT II.
+
+SCENE I.  A road near Sir Lancelot Spurcock's
+house, in Kent.
+
+[Enter Sir Arthur Greenshood, Oliver, Lieutenant
+and Soldiers.]
+
+ARTHUR.
+Lieutenant, lead your soldiers to the ships,
+There let them have their coats, at their arrival
+They shall have pay:  farewell, look to your charge.
+
+SOLDIER.
+Aye, we are now sent away, and cannot so much as speak 
+with our friends.
+
+OLIVER.
+No, man; what, ere you used a zutch a fashion, thick you 
+cannot take your leave of your vrens?
+
+ARTHUR.
+Fellow, no more.  Lieutenant, lead them off.
+
+SOLDIER.
+Well, if I have not my pay and my clothes, I'll venture a
+running away tho I hang for't.
+
+ARTHUR.
+Away, sirrah, charm your tongue.
+
+[Exit Soldiers.]
+
+OLIVER.
+Been you a presser, sir?
+
+ARTHUR.
+I am a commander, sir, under the King.
+
+OLIVER.
+Sfoot, man, and you be ne'er zutch a commander,
+should a spoke with my vrens before I should agone,
+so should.
+
+ARTHUR.
+Content yourself, man, my authority will stretch to
+press so good a man as you.
+
+OLIVER.
+Press me?  I deuve ye, press scoundrels, and thy messels:
+Press me! chee scorns thee, yfaith:  For seest thee, here's
+a worshipful knight knows cham not to be pressed by thee.
+
+[Enter Sir Lancelot, Weathercock, young Flowerdale, old
+Flowerdale, Lucy, Frances.]
+
+LANCELOT.
+Sir Arthur, welcome to Lewsome, welcome by my troth.
+What's the matter, man? why are you vexed?
+
+OLIVER.
+Why, man, he would press me.
+
+LANCELOT.
+O fie, Sir Arthur, press him? he is a man of reckoning.
+
+WEATHERCOCK.
+Aye, that he is, Sir Arthur, he hath the nobles,
+The golden ruddocks he.
+
+ARTHUR.
+The fitter for the wars:  and were he not
+In favour with your worships, he should see,
+That I have power to press so good as he.
+
+OLIVER.
+Chill stand to the trial, so chill.
+
+FLOWERDALE.
+Aye, marry, shall he, press-cloth and karsie,
+white pot and drowsen broth:  tut, tut, he cannot.
+
+OLIVER.
+Well, sir, tho you see vlouten cloth and karsie,
+chee a zeen zutch a karsie coat wear out the town
+sick a zilken jacket, as thick a one you wear.
+
+FLOWERDALE.
+Well said, vlitan vlattan.
+
+OLIVER.
+Aye, and well said, cocknell, and bo-bell too:  what,
+doest think cham a veard of thy zilken coat? nefer 
+vere thee.
+
+LANCELOT.
+Nay, come, no more, be all lovers and friends.
+
+WEATHERCOCK.
+Aye, tis best so, good master Oliver.
+
+FLOWERDALE.
+Is your name master Oliver, I pray you?
+
+OLIVER.
+What tit and be tit, and grieve you.
+
+FLOWERDALE.
+No, but I'd gladly know if a man might not have
+a foolish plot out of master Oliver to work upon.
+
+OLIVER.
+Work thy plots upon me! stand aside:--work thy 
+foolish plots upon me! chill so use thee, thou weart
+never so used since thy dame bound thy head.  Work
+upon me?
+
+FLOWERDALE.
+Let him come, let him come.
+
+OLIVER.
+Zirrah, zirrah, if it were not vor shame, chee would a
+given thee zutch a whisterpoop under the ear, chee 
+would a made thee a vanged an other at my feet:  stand
+aside, let me loose, cham all of a vlaming fire-brand;
+Stand aside.
+
+FLOWERDALE.
+Well, I forbear you for your friend's sake.
+
+OLIVER.
+A vig for all my vrens! doest thou tell me of my vrens?
+
+LANCELOT.
+No more, good master Oliver; no more,
+Sir Arthur.  And, maiden, here in the sight
+Of all your suitors, every man of worth,
+I'll tell you whom I fainest would prefer
+To the hard bargain of your marriage bed.--
+Shall I be plain among you, gentlemen?
+
+ARTHUR.
+Aye, sir, tis best.
+
+LANCELOT.
+Then, sir, first to you:--
+I do confess you a most gallant knight,
+A worthy soldier, and an honest man:
+But honesty maintains not a french-hood,
+Goes very seldom in a chain of gold,
+Keeps a small train of servants:  hath few friends.--
+And for this wild oats here, young Flowerdale,
+I will not judge:  God can work miracles,
+But he were better make a hundred new,
+Then thee a thrifty and an honest one.
+
+WEATHERCOCK.
+Believe me, he hath bit you there, he hath
+touched you to the quick, that hath he.
+
+FLOWERDALE.
+Woodcock a my side! why, master Weathercock,
+you know I am honest, however trifles--
+
+WEATHERCOCK.
+Now, by my troth, I know no otherwise.
+O your old mother was a dame indeed:
+Heaven hath her soul, and my wives too, I trust:
+And your good father, honest gentleman,
+He is gone a Journey, as I hear, far hence.
+
+FLOWERDALE.
+Aye, God be praised, he is far enough.
+He is gone a pilgrimage to Paradice,
+And left me to cut a caper against care.
+Lucy, look on me that am as light as air.
+
+LUCY.
+Yfaith, I like not shadows, bubbles, breath
+I hate a light a love, as I hate death.
+
+LANCELOT.
+Girl, hold thee there:  look on this Devonshire lad:
+Fat, fair, and lovely, both in purse and person.
+
+OLIVER.
+Well, sir, cham as the Lord hath made me.  You
+know me well, uyine:  cha have three-score pack a 
+karsie, and black-em hal, and chief credit beside,
+and my fortunes may be so good as an others, zo
+it may.
+
+LUCY.
+[Aside to Arthur.]  Tis you I love, whatsoever
+others say.
+
+ARTHUR.
+Thanks, fairest.
+
+FLOWERDALE.
+[Aside to Father.]  What, wouldnst thou have me
+quarrel with him?
+
+FATHER.
+Do but say he shall hear from you.
+
+LANCELOT.
+Yet, gentleman, howsoever I prefer
+This Devonshire suitor, I'll enforce no love;
+My daughter shall have liberty to choose
+Whom she likes best; in your love suit proceed:
+Not all of you, but only one must speed.
+
+WEATHERCOCK.
+You have said well:  indeed, right well.
+
+[Enter Artichoke.]
+
+ARTICHOKE.
+Mistress, here's one would speak with you.  My
+fellow Daffodil hath him in the cellar already:  he
+knows him; he met him at Croyden fair.
+
+LANCELOT.
+O, I remember, a little man.
+
+ARTICHOKE.
+Aye, a very little man.
+
+LANCELOT.
+And yet a proper man.
+
+ARTICHOKE.
+A very proper, very little man.
+
+LANCELOT .
+His name is Monsieur Civet.
+
+ARTICHOKE.
+The same, sir.
+
+LANCELOT.
+Come, Gentlemen, if other suitors come,
+My foolish daughter will be fitted too:
+But Delia my saint, no man dare move.
+
+[Exeunt all but young Flowerdale and Oliver,
+and old Flowerdale.]
+
+FLOWERDALE.
+Hark you, sir, a word.
+
+OLIVER.
+What haan you to say to me now?
+
+FLOWERDALE.
+Ye shall hear from me, and that very shortly.
+
+OLIVER.
+Is that all? vare thee well, chee vere thee not
+a vig.
+
+[Exit Oliver.]
+
+FLOWERDALE.
+What if he should come now?  I am fairly dressed.
+
+FATHER.
+I do not mean that you shall meet with him,
+But presently we'll go and draw a will:
+Where we'll set down land that we never saw,
+And we will have it of so large a sum,
+Sir Lancelot shall entreat you take his daughter:
+This being formed, give it Master Weathercock,
+And make Sir Lancelot's daughter heir of all:
+And make him swear never to show the will
+To any one, until that you be dead.
+This done, the foolish changing Weathercock
+Will straight discourse unto Sir Lancelot
+The form and tenor of your Testament.
+Nor stand to pause of it, be ruled by me:
+What will ensue, that shall you quickly see.
+
+FLOWERDALE.
+Come, let's about it:  if that a will, sweet Kit,
+Can get the wench, I shall renown thy wit.
+
+[Exit Omnes.]
+
+
+SCENE II.  A room in Sir Lancelot's house.
+
+[Enter Daffodil.]
+
+DAFFODIL.
+Mistress, still froward?  No kind looks
+Unto your Daffodil? now by the Gods--
+
+LUCY.
+Away, you foolish knave, let my hand go.
+
+DAFFODIL.
+There is your hand, but this shall go with me:
+My heart is thine, this is my true love's fee.
+
+LUCY.
+I'll have your coat stripped o'er your ears for this,
+You saucy rascal.
+
+[Enter Lancelot and Weathercock.]
+
+LANCELOT.
+How now, maid, what is the news with you?
+
+LUCY.
+Your man is something saucy.
+
+[Exit Lucy.]
+
+LANCELOT.
+Go to, sirrah, I'll talk with you anon.
+
+DAFFODIL.
+Sir, I am a man to be talked withal, 
+I am no horse, I tro:
+I know my strength, then no more than so.
+
+WEATHERCOCK.
+Aye, by the matkins, good Sir Lancelot,
+I saw him the other day hold up the bucklers,
+Like an Hercules.  Yfaith, God a mercy, lad,
+I like thee well.
+
+LANCELOT.
+Aye, I like him well:  go, sirrah, fetch me a
+  cup of wine,
+That ere I part with Master Weathercock,
+We may drink down our farewell in French wine.
+
+WEATHERCOCK.
+I thank you, sir, I thank you, friendly knight,
+I'll come and visit you, by the mouse-foot I will:
+In the meantime, take heed of cutting Flowerdale.
+He is a desperate dick, I warrant you.
+
+LANCELOT.
+He is, he is:  fill, Daffodil, fill me some wine.  Ha,
+what wears he on his arm?  My daughter Lucy's
+bracelet.  Aye, tis the same.--Ha to you, Master 
+Weathercock.
+
+WEATHERCOCK.
+I thank you, sir:  Here, Daffodil, an honest fellow
+and a tall thou art.  Well, I'll take my leave, good 
+knight, and hope to have you and all your daughters
+at my poor house; in good sooth I must.
+
+LANCELOT.
+Thanks, Master Weathercock, I shall be bold to
+trouble you, be sure.
+
+WEATHERCOCK.
+And welcome heartily; farewell.
+
+[Exit Weathercock.]
+
+LANCELOT.
+Sirrah, I saw my daughter's wrong, and withal her
+bracelet on your arm:  off with it, and with it my
+livery too.  have I care to see my daughter matched 
+with men of worship, and are you grown so bold?  Go,
+sirrah, from my house, or I'll whip you hence.
+
+DAFFODIL.
+I'll not be whipped, sir, there's your livery.
+This is a servingman's reward:  what care I?
+I have means to trust to:  I scorn service, I.
+
+[Exit Daffodil.]
+
+LANCELOT.
+Aye, a lusty knave, but I must let him go,
+Our servants must be taught what they should know.
+
+[Exit.]
+
+
+SCENE III.  The same.
+
+[Enter Sir Arthur and Lucy.]
+
+LUCY.
+Sir, as I am a maid, I do affect
+You above any suitor that I have,
+Although that soldiers scarce knows how to love.
+
+ARTHUR.
+I am a soldier, and a gentleman,
+Knows what belongs to war, what to a lady:
+What man offends me, that my sword shall right:
+What woman loves me, I am her faithful knight.
+
+LUCY.
+I neither doubt your valour, nor your love,
+But there be some that bares a soldier's form,
+That swears by him they never think upon,
+Goes swaggering up and down from house to house,
+Crying God peace:  and--
+
+ARTHUR.
+Yfaith, Lady, I'll discry you such a man,
+of them there be many which you have spoke of,
+That bear the name and shape of soldiers,
+Yet God knows very seldom saw the war:
+That haunt your taverns, and your ordinaries,
+Your ale-houses sometimes, for all a-like
+To uphold the brutish humour of their minds,
+Being marked down, for the bondmen of despair:
+Their mirth begins in wine, but ends in blood,
+Their drink is clear, but their conceits are mud.
+
+LUCY.
+Yet these are great gentlemen soldiers.
+
+ARTHUR.
+No, they are wretched slaves,
+Whose desperate lives doth bring them timeless graves.
+
+LUCY.
+Both for your self, and for your form of life,
+If I may choose, I'll be a soldier's wife.
+
+[Exeunt.]
+
+
+SCENE IV.  The same.
+
+[Enter Sir Lancelot and Oliver.]
+
+OLIVER.
+And tyt trust to it, so then.
+
+LANCELOT.
+Assure your self,
+You shall be married with all speed we may:
+One day shall serve for Frances and for Lucy.
+
+OLIVER.
+Why che would vain know the time, for providing
+wedding raiments.
+
+LANCELOT.
+Why, no more but this:  first get your assurance made,
+touching my daughter's jointer; that dispatched, we will
+in two days make provision.
+
+OLIVER.
+Why, man, chil have the writings made by tomorrow.
+
+LANCELOT.
+Tomorrow be it then:  let's meet at the king's head in
+fish street.
+
+OLIVER.
+No, fie, man, no, let's meet at the Rose at Temple-Bar,
+That will be nearer your counsellor and mine.
+
+LANCELOT.
+At the Rose be it then, the hour nine:
+He that comes last forfeits a pint of wine.
+
+OLIVER.
+A pint is no payment, let it be a whole quart or nothing.
+
+[Enter Artichoke.]
+
+ARTICHOKE.
+Master, here is a man would speak with Master Oliver:  he
+comes from young Master Flowerdale.
+
+OLIVER.
+Why, chill speak with him, chill speak with him.
+
+LANCELOT.
+Nay, son Oliver, I'll surely see what young Flowerdale hath
+sent to you.  I pray God it be no quarrel.
+
+OLIVER.
+Why, man, if he quarrel with me, chill give him, his hands full.
+
+[Enter old Flowerdale.]
+
+FATHER.
+God save you, good Sir Lancelot.
+
+LANCELOT.
+Welcome, honest friend.
+
+FATHER.
+To you and yours my master wisheth health,
+But unto you, sir, this, and this he sends:
+There is the length, sir, of his rapier,
+And in that paper shall you know his mind.
+
+OLIVER.
+Here, chill meet him, my vrend, chill meet him.
+
+LANCELOT.
+Meet him! you shall not meet the ruffian, fie.
+
+OLIVER.
+And I do not meet him, chill give you leave to call me cut;
+where ist, sirrah, where ist? where ist?
+
+FATHER.
+The letter shows both the time and place,
+And if you be a man, then keep your word.
+
+LANCELOT.
+Sir, he shall not keep his word, he shall not meet.
+
+FATHER.
+Why, let him choose, he'll be the better known
+For a base rascal, and reputed so.
+
+OLIVER.
+Zirrah, zirrah:  and tweare not an old fellow, and sent after
+an arrant, chid give thee something, but chud be no money:
+But hold thee, for I see thou art somewhat testorne; hold thee,
+there's vorty shillings:  bring thy master a veeld, chil give
+thee vorty more; look thou bring him:  chil mall him, tell
+him, chill mar his dauncing tressels, chil use him, he was ne'er
+so used since his dam bound his head; chill make him for 
+capyring any more, chy vor thee.
+
+FATHER.
+You seem a man, stout and resolute,
+And I will so report, what ere befall.
+
+LANCELOT.
+And fall out ill, assure your master this,
+I'll make him fly the land, or use him worse.
+
+FATHER.
+My master, sir, deserves not this of you,
+And that you'll shortly find.
+
+LANCELOT.
+Thy master is an unthrift, you a knave,
+And I'll attach you first, next clap him up
+Or have him bound unto his good behavior.
+
+OLIVER.
+I would you were a sprite, if you do him any harm for
+this.  And you do, chill ne'er see you, nor any of yours, 
+while chill have eyes open:  what, do you think, chil be
+abaffled up and down the town for a messell and a 
+scoundrel? no, chy vor you:  zirrah, chil come; zay no
+more, chil come, tell him.
+
+FATHER.
+Well, sir, my Master deserves not this of you,
+And that you'll shortly find.
+
+[Exit.]
+
+LANCELOT.
+No matter, he's an unthrift; I defy him.
+Now, gentle son, let me know the place. 
+
+OLIVER.
+No, chy vore you.
+
+LANCELOT.
+Let me see the note.
+
+OLIVER.
+Nay, chill watch you for zutch a trick.  But if che meet
+him, zoe, if not, zoe:  chill make him know me, or chill
+know why I shall not, chill vare the worse.
+
+LANCELOT.
+What, will you then neglect my daughter's love?
+Venture your state and hers, for a loose brawl?
+
+OLIVER.
+Why, man, chill not kill him; marry, chill veze him too,
+and again; and zoe God be with you, vather.  What, man,
+we shall meet tomorrow.
+
+[Exit.]
+
+LANCELOT.
+Who would a thought he had been so desperate.
+Come forth, my honest servant Artichoke.
+
+[Enter Artichoke.]
+
+ARTICHOKE.
+Now, what's the matter? some brawl toward, I warrant you.
+
+LANCELOT.
+Go get me thy sword bright scoured, thy buckler mended.
+O for that knave, that villain Daffodil would have done
+good service.  But to thee.
+
+ARTICHOKE.
+Aye, this is the tricks of all you gentlemen, when you
+stand in need of a good fellow.  O for that Daffodil, O 
+where is he? but if you be angry, and it be but for the
+wagging of a straw, then:  out a doors with the knave,
+turn the coat over his ears.  This is the humour of you all.
+
+LANCELOT.
+O for that knave, that lusty Daffodil.
+
+ARTICHOKE.
+Why, there tis now:  our year's wages and our vails will
+scarce pay for broken swords and bucklers that we use in
+our quarrels.  But I'll not fight if Daffodil be a tother side,
+that's flat.
+
+LANCELOT.
+Tis no such matter, man.  Get weapons ready, and be at
+London ere the break of day:  watch near the lodging of
+the Devonshire youth, but be unseen:  and as he goes out,
+as he will go out, and that very early without doubt--
+
+ARTICHOKE.
+What, would you have me draw upon him, as he goes in
+the street?
+
+LANCELOT.
+Not for a world, man:  into the fields; for to the field he
+goes, there to meet the desperate Flowerdale.  Take thou
+the part of Oliver my son, for he shall be my son, and marry
+Lucy.  Doest understand me, knave?
+
+ARTICHOKE.
+Aye, sir, I do understand you, but my young mistress might
+be better provided in matching with my fellow Daffodil.
+
+LANCELOT.
+No more; Daffodil is a knave:
+That Daffodil is a most notorious knave.
+
+[Exit Artichoke.]
+
+[Enter Weathercock.]
+
+Master Weathercock, you come in happy time.  The
+desperate Flowerdale hath writ a challenge:  And who think
+you must answer it, but the Devonshire man, my son Oliver?
+
+WEATHERCOCK.
+Marry, I am sorry for it, good Sir Lancelot,
+But if you will be ruled by me, we'll stay the fury.
+
+LANCELOT.
+As how, I pray?
+
+WEATHERCOCK.
+Marry, I'll tell you:  by promising young Flowerdale the
+red lipped Lucy.
+
+LANCELOT.
+I'll rather follow her unto her grave.
+
+WEATHERCOCK.
+Aye, Sir Lancelot, I would have thought so too, but you
+and I have been deceived in him:  come read this will, or
+deed, or what you call it, I know not.  Come, come, your
+spectacles I pray.
+
+LANCELOT.
+Nay, I thank God, I see very well.
+
+WEATHERCOCK.
+Marry, bless your eyes, mine hath been dim almost this
+thirty years.
+
+LANCELOT.
+Ha, what is this? what is this?
+
+WEATHERCOCK.
+Nay, there is true love, indeed:
+He gave it to me but this very morn,
+And bid me keep it unseen from any one.
+Good youth, to see how men may be deceived!
+
+LANCELOT.
+Passion of me, what a wretch am I
+To hate this loving youth:  he hath made me,
+Together with my Lucy he loves so dear,
+Executors of all his wealth.
+
+WEATHERCOCK.
+All, all, good man; he hath given you all.
+
+LANCELOT.
+Three ships now in the straits & homeward bound,
+Two Lordships of two hundred pound a year,
+The one in Wales, the other in Glostershire:
+Debts and accounts are thirty thousand pound;
+Plate, money, jewels, 16 thousand more;
+Two housen furnished well in Cole-man street:
+Beside whatsoever his Uncle leaves to him,
+Being of great demeans and wealth at Peckham.
+
+WEATHERCOCK.
+How like you this, good knight? how like you this?
+
+LANCELOT.
+I have done him wrong, but now I'll make amends,
+The Devonshire man shall whistle for a wife:
+He marry Lucy!  Lucy shall be Flowerdale's.
+
+WEATHERCOCK.
+Why, that is friendly said.
+Let's ride to London and prevent their match,
+By promising your daughter to that lovely lad.
+
+LANCELOT.
+We'll ride to London:--or it shall not need,
+We'll cross to Dedfort-strand, and take a boat.
+Where be these knaves? what, Artichoke? what, Fop?
+
+[Enter Artichoke.]
+
+ARTICHOKE.
+Here be the very knaves, but not the merry knaves.
+
+LANCELOT.
+Here, take my cloak, I'll have a walk to Dedford.
+
+ARTICHOKE.
+Sir, we have been scouring of our swords and bucklers
+in your defence.
+
+LANCELOT.
+Defence me no defence! let your swords rust, I'll have no 
+fighting:  Aye, let blows alone; bid Delia see all things be
+in readiness against the wedding.  We'll have two at once,
+and that will save charges, Master Weathercock.
+
+ARTICHOKE.
+Well, we will do it, sir.
+
+[Exit Omnes.]
+
+
+ACT III.
+
+SCENE I.  A walk before Sir Lancelot's house.
+
+[Enter Civet, Frances, and Delia.]
+
+CIVET.
+By my truth, this is good luck, I thank God for this.  In
+good sooth, I have even my heart's desire:  sister Delia,
+now I may boldly call you so, for your father hath frank 
+and freely given me his daughter Frances.
+
+FRANCES.
+Aye, by my troth, Tom; thou hast my good will too, for
+I thank God I longed for a husband, and, would I might
+never stir, for one his name was Tom.
+
+DELIA.
+Why, sister, now you have your wish.
+
+CIVET.
+You say very true, sister Delia:  and I prithee call me
+nothing but Tom and I'll call thee sweetheart, and Frances:
+will it not do well, sister Delia?
+
+DELIA.
+It will do very well with both of you.
+
+FRANCES.
+But, Tom, must I go as I do now when I am married?
+
+CIVET.
+No, Frances, I'll have thee go like a Citizen
+In a garded gown, and a French-hood.
+
+FRANCES.
+By my troth, that will be excellent indeed.
+
+DELIA.
+Brother, maintain your wife to your estate:
+Apparel you yourself like to your father,
+And let her go like to your ancient mother.
+He sparing got his wealth, left it to you;
+Brother, take heed of pride, it soon bids thrift adieu.
+
+CIVET.
+So as my father and my mother went! that's a jest
+indeed:  why she went in a fringed gown, a single 
+ruffle, and a white cap; and my father in a mocado
+coat, a pair of red satin sleeves, and a canvas back.
+
+DELIA.
+And yet his wealth was all as much as yours,
+
+CIVET.
+My estate, my estate, I thank God, is forty pound a
+year, in good leases and tenements, besides twenty
+mark a year at cuckolds-haven, and that comes to us
+all by inheritance.
+
+DELIA.
+That may, indeed, tis very fitly plied.
+I know not how it comes, but so it falls out,
+That those whose fathers have died wondrous rich,
+And took no pleasure but to gather wealth,
+Thinking of little that they leave behind
+For them, they hope, will be of their like mind,--
+But it falls out contrary:  forty years sparing
+Is scarce three seven years spending,--never caring
+What will ensue, when all their coin is gone,
+And all too late, then thrift is thought upon:
+Oft have I heard, that pride and riot kissed,
+And then repentence cries, 'for had I wist.'
+
+CIVET.
+You say well, sister Delia, you say well:  but I mean 
+to live within my bounds:  for look you, I have set
+down my rest thus far, but to maintain my wife in her
+French-hood, and her coach, keep a couple of geldings,
+and a brace of gray hounds, and this is all I'll do.
+
+DELIA.
+And you'll do this with forty pound a year?
+
+CIVET.
+Aye, and a better penny, sister.
+
+FRANCES.
+Sister, you forget that at cuckolds-haven.
+
+CIVET.
+By my troth, well remembered, Frances;
+I'll give thee that to buy thee pins.
+
+DELIA.
+Keep you the rest for points:  alas the day.
+Fools shall have wealth, tho all the world say nay:
+Come, brother, will you in? dinner stays for us.
+
+CIVET.
+Aye, good sister, with all my heart.
+
+FRANCES.
+Aye, by my troth, Tom, for I have a good stomach.
+
+CIVET.
+And I the like, sweet Frances.  No, sister, do not think
+I'll go beyond my bounds.
+
+DELIA.
+God grant you may not.
+
+[Exit Omnes.]
+
+
+SCENE II.  London.  The street before young
+Flowerdale's house.
+
+[Enter young Flowerdale and his father, with foils in
+their hands.]
+
+FLOWERDALE.
+Sirrah Kit, tarry thou there, I have spied Sir Lancelot,
+and old Weathercock coming this way; they are hard at
+hand.  I will by no means be spoken withal.
+
+FATHER.
+I'll warrant you; go, get you in.
+
+[Enter Lancelot and Weathercock.]
+
+LANCELOT.
+Now, my honest friend, thou doest belong to Master
+Flowerdale.
+
+FATHER.
+I do, sir.
+
+LANCELOT.
+Is he within, my good fellow?
+
+FATHER.
+No, sir, he is not within.
+
+LANCELOT.
+I prithee, if he be within, let my speak with him.
+
+FATHER.
+Sir, to tell you true, my master is within, but indeed
+would not be spoke withal:  there be some terms that
+stands upon his reputation, therefore he will not admit
+any conference till he hath shook them off.
+
+LANCELOT.
+I prithee tell him his very good friend, Sir Lancelot
+Spurcock, entreats to speak with him.
+
+FATHER.
+By my troth, sir, if you come to take up the matter 
+between my master and the Devonshire man, you do
+not but beguile your hopes, and lose your labour.
+
+LANCELOT.
+Honest friend, I have not any such thing to him; I come
+to speak with him about other matters.
+
+FATHER.
+For my master, sir, hath set down his resolution, either
+to redeem his honour, or leave his life behind him.
+
+LANCELOT.
+My friend, I do not know any quarrel touching thy
+master or any other person:  my business is of a different
+nature to him, and I prithee so tell him.
+
+FATHER.
+For howsoever the Devonshire man is, my master's mind
+is bloody:  that's a round o,
+And therefore, sir, entreat is but vain:
+
+LANCELOT.
+I have no such thing to him, I tell thee once again.
+
+FATHER.
+I will then so signify to him.
+
+[Exit Father.]
+
+LANCELOT.
+Aye, sirrah, I see this matter is hotly carried,
+But I'll labour to dissuade him from it.--
+
+[Enter Flowerdale.]
+
+Good morrow, Master Flowerdale.
+
+FLOWERDALE.
+Good morrow, good Sir Lancelot; good morrow,
+Master Weathercock.  By my troth, gentlemen, I have
+been a reading over Nick Matchivill; I find him good
+to be known, not to be followed:  a pestilent humane
+fellow.  I have made certain annotations of him such 
+as they be.--And how ist Sir Lancelot? ha? how ist?
+A mad world, men cannot live quiet in it.
+
+LANCELOT.
+Master Flowerdale, I do understand there is
+Some jar between the Devonshire man and you.
+
+FATHER.
+They, sir? they are good friends as can be.
+
+FLOWERDALE.
+Who? Master Oliver and I? as good friends as can be.
+
+LANCELOT.
+It is a kind of safety in you to deny it, and a generous
+silence, which too few are indued withal:  But, sir, such
+a thing I hear, and I could wish it otherwise.
+
+FLOWERDALE.
+No such thing, Sir Lancelot, a my reputation, as I am an
+honest man.
+
+LANCELOT.
+Now I do believe you, then, if you do
+Engage your reputation there is none.
+
+FLOWERDALE.
+Nay, I do not engage my reputation there is not.  You
+shall not bind me to any condition of hardness:  but if
+there be anything between us, then there is; if there be
+not, then there is not:  be or be not, all is one.
+
+LANCELOT.
+I do perceive by this, that there is something between
+you, and I am very sorry for it.
+
+FLOWERDALE.
+You may be deceived, Sir Lancelot.  The Italian hath a
+pretty paying, Questo--I have forgot it too, tis out of my
+head, but in my translation, ift hold, thus:  If thou hast a
+friend, keep him; if a foe, trip him.
+
+
+LANCELOT.
+Come, I do see by this there is somewhat between you,
+and, before God, I could wish it other wise.
+
+FLOWERDALE.
+Well what is between us can hardly be altered.  Sir
+Lancelot, I am to ride forth tomorrow.  That way which I
+must ride, no man must deny me the sun; I would not by
+any particular man be denied common and general passage.
+If any one saith, Flowerdale, thou passest not this way:  my
+answer is, I must either on or return, but return is not my
+word, I must on:  if I cannot, then, make my way, nature
+hath done the last for me, and there's the fine.
+
+LANCELOT.
+Master Flowerdale, every man hath one tongue, and two
+ears:  nature, in her building, is a most curious work-master.
+
+FLOWERDALE.
+That is as much as to say, a man should hear more than he
+should speak.
+
+LANCELOT.
+You say true, and indeed I have heard more than at this
+time I will speak.
+
+FLOWERDALE.
+You say well.
+
+LANCELOT.
+Slanders are more common than truths, Master Flowerdale:
+but proof is the rule for both.
+
+FLOWERDALE.
+You say true; what do you call him hath it there in his
+third canton.
+
+LANCELOT.
+I have heard you have been wild:  I have believed it.
+
+FLOWERDALE.
+Twas fit, twas necessary.
+
+LANCELOT.
+But I have seen somewhat of late in you, that hath
+confirmed in my an opinion of goodness toward you.
+
+FLOWERDALE.
+Yfaith, sir, I am sure I never did you harm:  some good
+I have done, either to you or yours, I am sure you know
+not; neither is it my will you should.
+
+LANCELOT.
+Aye, your will, sir.
+
+FLOWERDALE.
+Aye, my will, sir? sfoot, do you know ought of my will?
+Begod, and you do, sir, I am abused.
+
+LANCELOT.
+Go, Master Flowerdale; what I know, I know:  and know
+you thus much out of my knowledge, that I truly love you.
+For my daughter, she's yours.  And if you like a marriage
+better than a brawl, all quirks of reputation set aside, go
+with me presently:  And where you should fight a bloody
+battle, you shall be married to a lovely lady.
+
+FLOWERDALE.
+Nay but, Sir Lancelot--
+
+LANCELOT.
+If you will not embrace my offer, yet assure your self thus
+much, I will have order to hinder your encounter.
+
+FLOWERDALE.
+Nay, but hear me, Sir Lancelot.
+
+LANCELOT.
+Nay, stand not you upon imputative honour.  Tis merely
+unsound, unprofitable, and idle inferences:  your business
+is to wed my daughter, therefore give me your present word
+to do it.  I'll go and provide the maid, therefore give me your
+present resolution, either now or never.
+
+FLOWERDALE.
+Will you so put me to it?
+
+LANCELOT.
+Aye, afore God, either take me now, or take me never.  Else
+what I thought should be our match, shall be our parting; so
+fare you well forever.
+
+FLOWERDALE.
+Stay:  fall out what may fall, my love is above all:  I will come.
+
+LANCELOT.
+I expect you, and so fare you well.
+
+[Exit Sir Lancelot.]
+
+FATHER.
+Now, sir, how shall we do for wedding apparel?
+
+FLOWERDALE.
+By the mass, that's true:  now help, Kit;
+The marriage ended, we'll make amends for all.
+
+FATHER.
+Well, no more, prepare you for your bride,
+We will not want for clothes, what so ere betide.
+
+FLOWERDALE.
+And thou shalt see, when once I have my dower,
+In mirth we'll spend full many a merry hour:
+As for this wench I not regard a pin,
+It is her gold must bring my pleasures in.
+
+[Exit.]
+
+FATHER.
+Ist possible, he hath his second living,
+Forsaking God, himself to the devil giving?
+But that I knew his mother firm and chaste,
+My heart would say my head she had disgraced:
+Else would I swear he never was my son,
+But her fair mind so foul a deed did shun.
+
+[Enter Uncle.]
+
+UNCLE.
+How now, brother, how do you find your son?
+
+FATHER.
+O brother, heedless as a libertine,
+Even grown a master in the school of vice,
+One that doth nothing but invent deceit:
+For all the day he humours up and down,
+How he the next day might deceive his friend.
+He thinks of nothing but the present time:
+For one groat ready down, he'll pay a shilling,
+But then the lender must needs stay for it.
+When I was young, I had the scope of youth,
+Both wild, and wanton, careless and desperate:
+But such made strains as he's possessed withal,
+I thought it wonder for to dream upon.
+
+UNCLE.
+I told you so, but you would not believe it.
+
+FATHER.
+Well, I have found it, but one thing comforts me:
+Brother, tomorrow he's to be married
+To beauteous Lucy, Sir Lancelot Spurcock's daughter.
+
+UNCLE.
+Ist possible?
+
+FATHER.
+Tis true, and thus I mean to curb him.
+This day, brother, I will you shall arrest him:
+If any thing will tame him, it must be that,
+For he is ranked in mischief, chained to a life,
+That will increase his shame, and kill his wife.
+
+UNCLE.
+What, arrest him on his wedding day?
+That were unchristian, and an unhumane part:
+How many couple even for that very day
+Hath purchased 7 year's sorrow afterward?
+Forbear him then today, do it tomorrow,
+And this day mingle not his joy with sorrow.
+
+FATHER.
+Brother, I'll have it done this very day,
+And in the view of all, as he comes from Church:
+Do but observe the course that he will take.
+Upon my life he will forswear the debt:
+And for we'll have the sum shall not be slight,
+Say that he owes you near three thousand pound:
+Good brother, let it be done immediately.
+
+UNCLE.
+Well, seeing you will have it so,
+Brother, I'll do it, and straight provide the Sheriff.
+
+FATHER.
+So, brother, by this means shall we perceive
+What Sir Lancelot in this pinch will do:
+And how his wife doth stand affected to him--
+Her love will then be tried to the uttermost--
+And all the rest of them.  Brother, what I will do,
+Shall harm him much, and much avail him too.
+
+[Exit.]
+
+
+SCENE III.  A high road near London.
+
+[Enter Oliver: afterwards Sir Arthur Greenshood.]
+
+OLIVER.
+Cham assured thick be the place, that the scoundrel
+appointed to meet me:  if a come, zo:  if a come not,
+zo.  And che war avise, he should make a coystrell
+an us, ched vese him, and che vang him in hand; che 
+would hoist him, and give it him to and again, zo chud:
+Who bin a there? Sir Arthur! chil stay aside.
+
+ARTHUR.
+I have dogged the Devonshire man into the field,
+For fear of any harm that should befall him:
+I had an inkling of that yesternight,
+That Flowerdale and he should meet this morning:
+Tho, of my soul, Oliver fears him not,
+Yet for I'd see fair play on either side,
+Made me to come, to see their valours tried.
+God morrow to Master Oliver.
+
+OLIVER.
+God an good morrow.
+
+ARTHUR.  
+What, Master Oliver, are you angry?
+
+OLIVER.
+Why an it be, tit and grieven you?
+
+ARTHUR.
+Not me at all, sir, but I imagine by
+Your being here thus armed, you stay for some
+That you should fight withall.
+
+OLIVER.
+Why, and he do, che would not dezire you to take
+his part.
+
+ARTHUR.
+No, by my troth, I think you need it not,
+For he you look for, I think means not to come.
+
+OLIVER.
+No, and che war assur a that, ched avese him in 
+another place.
+
+[Enter Daffodil.]
+
+DAFFODIL.
+O Sir Arthur, Master Oliver, aye me!
+Your love, and yours, and mine, sweet mistress Lucy,
+This morn is married to young Flowerdale.
+
+ARTHUR.
+Married to Flowerdale! tis impossible.
+
+OLIVER.
+Married, man, che hope thou doest but jest,
+To make an a volowten merriment of it.
+
+DAFFODIL.
+O, tis too true.  Here comes his Uncle.
+
+[Enter Flowerdale, Sheriff, Officers.]
+
+UNCLE.
+God morrow, Sir Arthur, good morrow, master Oliver.
+
+OLIVER.
+God and good morn, Master Flowerdale.  I pray you tellen us,
+Is your scoundrel kinsman married?
+
+UNCLE.
+Master Oliver, call him what you will, but he is married
+to Sir Lancelot's daughter here.
+
+ARTHUR.
+Unto her?
+
+OLIVER.
+Aye, ha the old yellow zarved me thick trick?
+Why, man, he was a promise, chil chud a had her.
+Is a zitch a vox? chil look to his water, che vor him.
+
+UNCLE.
+The music plays, they are coming from the Church.
+Sheriff, do your Office:  fellows, stand stoutly to it.
+
+[Enter all to the Wedding.]
+
+OLIVER.
+God give you joy, as the old zaid Proverb is, and some
+zorrow among.  You met us well, did you not?
+
+LANCELOT.
+Nay, be not angry, sir, the fault is in me.  I have done
+all the wrong, kept him from coming to the field to you,
+as I might, sir, for I am a Justice, and sworn to keep the 
+peace.
+
+WEATHERCOCK.
+Aye, marry, is he, sir, a very Justice, and sworn to keep
+the peace:  you must not disturb the wedding.
+
+LANCELOT.
+Nay, never frown nor storm, sir; if you do,
+I'll have an order taken for you.
+
+OLIVER.
+Well, well, chill be quiet.
+
+WEATHERCOCK.
+Master Flowerdale! Sir Lancelot, look you who here is.
+Master Flowerdale.
+
+LANCELOT.
+Master Flowerdale, welcome with all my heart.
+
+FLOWERDALE.
+Uncle, this is she, yfaith:  master under-sheriff,
+Arrest me? at whose suit? draw, Kit.
+
+UNCLE.
+At my suit, sir.
+
+LANCELOT.
+Why, what's the matter, Master Flowerdale?
+
+UNCLE.
+This is the matter, sir:  this unthrift here hath 
+cozened you, and hath had of me, in several sums,
+three thousand pound.
+
+FLOWERDALE.
+Why, Uncle, Uncle.
+
+UNCLE.
+Cousin, cousin, you have uncled me, and if you be
+not staid, you'll prove a cozener unto all who know you.
+
+LANCELOT.
+Why, sir, suppose he be to you in debt
+Ten thousand pound, his state to me appears,
+To be at least three thousand a year.
+
+UNCLE.
+O sir, I was too late informed of that plot,
+How that he went about to cozen you:
+And formed a will, and sent it
+To your good friend here, Master Weathercock,
+In which was nothing true, but brags and lies.
+
+LANCELOT.
+Ha, hath he not such Lordships, lands, and ships?
+
+UNCLE.
+Not worth a groat, not worth a halfpenny, he.
+
+LANCELOT.
+I pray, tell us true, be plain, young Flowerdale?
+
+FLOWERDALE.
+My uncle here's mad, and disposed to do my wrong, 
+but here's my man, an honest fellow, by the lord, and
+of good credit, knows all is true.
+
+FATHER.
+Not I, sir.
+I am too old to lie, I rather know
+You forged a will, where every line you writ,
+You studied where to coat your lands might lie.
+
+WEATHERCOCK.
+And I prithee, where be they, honest friend?
+
+FATHER.
+Yfaith, no where, sir, for he hath none at all.
+
+WEATHERCOCK.
+Benedicite, we are o'er wretched, I believe.
+
+LANCELOT.
+I am cozened, and my hopefulst child undone.
+
+FLOWERDALE.
+You are not cozened, nor is she undone.  They
+slander me, by this light they slander me:  Look
+you, my uncle here's an usurer, and would undo me,
+but I'll stand in law; do you but bail me, you shall
+do no more:  you, brother Civet, and Master
+Weathercock, do but bail me, and let me have my 
+marriage money paid me, and we'll ride down, and
+there your own eyes shall see, how my poor tenants 
+there will welcome me.  You shall but bail me, you
+shall do no more, and, you greedy gnat, their bail 
+will serve.
+
+UNCLE.
+Aye, sir, I'll ask no better bail.
+
+LANCELOT.
+No, sir, you shall not take my bail, nor his,
+Nor my son Civet's; I'll not deal with him:
+Let's Uncle make false dice with his false bones,
+I will not have to do with him: mocked, gulled, & wronged!
+Come, girl, though it be late, it falls out well,
+Thou shalt not live with him in beggar's hell.
+
+LUCY.
+He is my husband, & high heaven doth know,
+With what unwillingness I went to Church.
+But you enforced me, you compelled me to it:
+The holy Church-man pronounced these words but now:
+I must not leave my husband in distress,
+Now I must comfort him, not go with you.
+
+LANCELOT.
+Comfort a cozener? on my curse, forsake him.
+
+LUCY.
+This day you caused me on your curse to take him:
+Do not, I pray, my grieved soul oppress,
+God knows my heart doth bleed at his distress.
+
+LANCELOT.
+O Master Weathercock,
+I must confess I forced her to this match,
+Led with opinion his false will was true.
+
+WEATHERCOCK.
+Aye, he hath over-reached me too.
+
+LANCELOT.
+She might have lived like Delia, in a happy virgin's
+state.
+
+DELIA.
+Father, be patient, sorrow comes too late.
+
+LANCELOT.
+And on her knees she begged & did entreat,
+If she must needs taste a sad marriage life,
+She craved to be Sir Arthur Greenshood's wife.
+
+ARTHUR.
+You have done her & me the greater wrong.
+
+LANCELOT.
+O, take her yet.
+
+ARTHUR.
+Not I.
+
+LANCELOT.
+Or, Master Oliver, accept my child,
+And half my wealth is yours.
+
+OLIVER.
+No, sir, chil break no laws.
+
+LUCY.
+Never fear, she will not trouble you.
+
+DELIA.
+Yet, sister, in this passion,
+Do not run headlong to confusion.
+You may affect him, though not follow him.
+
+FRANCES.
+Do, sister; hang him, let him go.
+
+WEATHERCOCK.
+Do, faith, Mistress Lucy, leave him.
+
+LUCY.
+You are three gross fools, let me alone.
+I swear I'll live with him in all his moan.
+
+OLIVER.
+But an he have his legs at liberty,
+Cham averd he will never live with you.
+
+ARTHUR.
+Aye, but he is now in hucksters handling for
+running away.
+
+LANCELOT.
+Huswife, you hear how you and I am wronged,
+And if you will redress it yet you may:
+But if you stand on terms to follow him,
+Never come near my sight nor look on me,
+Call me not father, look not for a groat,
+For all thy portion I will this day give
+Unto thy sister Frances.
+
+FRANCES.
+How say you to that, Tom, I shall have a good
+deal.  Besides I'll be a good wife:  and a good wife
+is a good thing, I can tell.
+
+CIVET.
+Peace Frances, I would be sorry to see thy sister
+cast away, as I am a gentleman.
+
+LANCELOT.
+What, are you yet resolved?
+
+LUCY.
+Yes, I am resolved.
+
+LANCELOT.
+Come then, away; or now, or never, come.
+
+LUCY.
+This way I turn, go you unto your feast,
+And I to weep, that am with grief oppressed.
+
+LANCELOT.
+For ever fly my sight:  come, gentlemen,
+Let's in, I'll help you to far better wives than her.
+Delia, upon my blessing talk not to her.
+Bace Baggage, in such hast to beggary?
+
+UNCLE.
+Sheriff, take your prisoner to your charge.
+
+FLOWERDALE.
+Uncle, be-god you have used me very hardly,
+By my troth, upon my wedding day.
+
+[Exit all but Lucy, young Flowerdale, his father,
+Uncle, Sheriff, and Officers.]
+
+LUCY.
+O Master Flowerdale, but hear me speak;
+Stay but a little while, good Master Sheriff,
+If not for him, for my sake pity him:
+Good sir, stop not your ears at my complaint,
+My voice grows weak, for women's words are faint.
+
+FLOWERDALE.
+Look you, Uncle, she kneels to you.
+
+UNCLE.
+Fair maid, for you, I love you with my heart,
+And grieve, sweet soul, thy fortune is so bad,
+That thou shouldst match with such a graceless youth.
+Go to thy father, think not upon him,
+Whom hell hath marked to be the son of shame.
+
+LUCY.
+Impute his wildness, sir, unto his youth,
+And think that now is the time he doth repent:
+Alas, what good or gain can you receive,
+To imprison him that nothing hath to pay?
+And where nought is, the king doth lose his due;
+O, pity him, as God shall pity you.
+
+UNCLE.
+Lady, I know his humours all too well,
+And nothing in the world can do him good,
+But misery it self to chain him with.
+
+LUCY.
+Say that your debts were paid, then is he free?
+
+UNCLE.
+Aye, virgin, that being answered, I have done,
+But to him that is all as impossible,
+As I to scale the high Pyramids.
+Sheriff, take your prisoner:  Maiden, fare thee well.
+
+LUCY.
+O go not yet, good Master Flowerdale:
+Take my word for the debt, my word, my bond.
+
+FLOWERDALE.
+Aye, by God, Uncle, and my bond too.
+
+LUCY.
+Alas, I ne'er ought nothing but I paid it,
+And I can work; alas, he can do nothing:
+I have some friends perhaps will pity me,
+His chiefest friends do seek his misery.
+All that I can or beg, get, or receive,
+Shall be for you:  O do not turn away;
+Methinks, within, a face so reverent,
+So well experienced in this tottering world,
+Should have some feeling of a maiden's grief:
+For my sake, his father's, and your brother's sake,
+Aye, for your soul's sake that doth hope for joy,
+Pity my state:  do not two souls destroy.
+
+UNCLE.
+Fair maid, stand up; not in regard of him,
+But in pity of thy hapless choice,
+I do release him.  Master Sheriff, I thank you:
+And, officers, there is for you to drink.
+Here, maid, take this money; there is a 100 angels:
+And for I will be sure he shall not have it,
+Here, Kester, take it you, and use it sparingly,
+But let not her have any want at all.
+Dry your eyes, niece, do not too much lament
+For him, whose life hath been in riot spent:
+If well he useth thee, he gets him friends,
+If ill, a shameful end on him depends.
+
+[Exit Uncle.]
+
+FLOWERDALE.
+A plague go with you for an old fornicator.
+Come, Kit, the money; come, honest Kit.
+
+FATHER.
+Nay, by my faith, sir, you shall pardon me.
+
+FLOWERDALE.
+And why, sir, pardon you? give me the money, you
+old rascal, or I shall make you.
+
+LUCY.
+Pray, hold your hands:  give it him, honest friend.
+
+FATHER.
+If you be so content, with all my heart.
+
+FLOWERDALE.
+Content, sir:  sblood, she shall be content, whether
+she will or no.  A rattle baby come to follow me!
+Go, get you gone to the greasy chuff your father,
+bring me your dowry, or never look on me.
+
+FATHER.
+Sir, she hath forsook her father and all her friends for you.
+
+FLOWERDALE.
+Hang thee, her friends and father altogether.
+
+FATHER.
+Yet part with something to provide her lodging.
+
+FLOWERDALE.
+Yes, I mean to part with her and you, but if I part with
+one angel, hang me at a post.  I'll rather throw them at
+a cast at dice, as I have done a thousand of their fellows.
+
+FATHER.
+Nay, then, I will be plain, degenerate boy.
+Thou hadst a father would have been ashamed.
+
+FLOWERDALE.
+My father was an ass, an old ass.
+
+FATHER.
+Thy father? proud, licentious villain!
+What, are you at your foils? I'll foil with you.
+
+LUCY.
+Good sir, forbear him.
+
+FATHER.
+Did not this whining woman hang on me,
+I'd teach thee what it was to abuse thy father:
+Go! hang, beg, starve, dice, game, that when all is gone,
+Thou mayest after despair and hang thyself.
+
+LUCY.
+O, do not curse him.
+
+FATHER.
+I do not curse him, and to pray for him were vain;
+It grieves me that he bears his father's name.
+
+FLOWERDALE.
+Well, you old rascal, I shall meet with you.  Sirrah,
+get you gone; I will not strip the livery over your ears,
+because you paid for it:  but do not use my name, sirrah,
+do you hear? look you do not use my name, you were best.
+
+FATHER.
+Pay me the twenty pound, then, that I lent you,
+Or give me security, when I may have it.
+
+FLOWERDALE.
+I'll pay thee not a penny, and for security, I'll give thee
+none.  Minckins, look you do not follow me, look you do
+not:  If you do, beggar, I shall slit your nose.
+
+LUCY.
+Alas, what shall I do?
+
+FLOWERDALE.
+Why, turn whose, that's a good trade,
+And so perhaps I'll see thee now and then.
+
+[Exit Flowerdale.]
+
+LUCY.
+Alas the day that ever I was born.
+
+FATHER.
+Sweet mistress, do not weep, I'll stick to you.
+
+LUCY.
+Alas, my friend, I know not what to do.
+My father and my friends, they have despised me:
+And I, a wretched maid, thus cast away,
+Knows neither where to go, nor what to say.
+
+FATHER.
+It grieves me at the soul, to see her tears
+Thus stain the crimson roses of her cheeks.--
+Lady, take comfort, do not mourn in vain.
+I have a little living in this town,
+The which I think comes to a hundred pound,
+All that and more shall be at your dispose.
+I'll straight go help you to some strange disguise,
+And place you in a service in this town,
+Where you shall know all, yet yourself unknown:
+Come, grieve no more, where no help can be had,
+Weep not for him that is more worse than bad.
+
+LUCY.
+I thank you, sir.
+
+[Exeunt.]
+
+
+ACT IV.
+
+SCENE I.  A room in Sir Lancelot Spurcock's house
+in Kent.
+
+[Enter Sir Lancelot, Master Weathercock and them.]
+
+OLIVER.
+Well, cha a bin zerved many a sluttish trick, but such
+a lerripoop as thick yeh was ne'er a sarved.
+
+LANCELOT.
+Son Civet, daughter Frances, bear with me,
+You see how I am pressed down with inward grief,
+About that luckless girl, your sister Lucy.
+But tis fallen out with me,
+As with many families beside,
+They are most unhappy, that are most beloved.
+
+CIVET.
+Father, tis so, tis even fallen out so, but what remedy?
+set hand to your heart, and let it pass.  Here is your
+daughter Frances and I, and we'll not say, we'll bring
+forth as witty children, but as pretty children as ever
+she was:  tho she had the prick and praise for a pretty
+wench.  But, father, done is the mouse:  you'll come?
+
+LANCELOT.
+Aye, son Civet, I'll come.
+
+CIVET.
+And you, Master Oliver?
+
+OLIVER.
+Aye, for che a vext out this veast, chill see if a gan make
+a better veast there.
+
+CIVET.
+And you, Sir Arthur?
+
+ARTHUR.
+Aye, sir, although my heart be full,
+I'll be a partner at your wedding feast.
+
+CIVET.
+And welcome all indeed, and welcome:  come, Frances
+are you ready?
+
+FRANCES.
+Jesu, how hasty these husbands are.  I pray, father, pray
+to God to bless me.
+
+LANCELOT.
+God bless thee, and I do:  God make thee wise,
+Send you both joy:  I wish it with wet eyes.
+
+FRANCES.
+But, Father, shall not my sister Delia go along with us?
+She is excellent good at cookery and such things.
+
+LANCELOT.
+Yes, marry, shall she:  Delia, make you ready.
+
+DELIA.
+I am ready, sir.  I will first go to Greenwich, from
+thence to my cousin Chesterfields, and so to London.
+
+CIVET.
+It shall suffice, good sister Delia, it shall suffice, but
+fail us not, good sister; give order to cooks, and others,
+for I would not have my sweet Frances to soil her
+fingers.
+
+FRANCES.
+No, by my troth, not I:  a gentlewoman, and a married
+gentlewoman too, to be companions to cooks and 
+kitchen-boys! not I, yfaith:  I scorn that.
+
+CIVET.
+Why, I do not mean thou shalt, sweet heart; thou seest
+I do not go about it:  well farewell to you.  God's pity,
+Master Weathercock, we shall have your company too?
+
+WEATHERCOCK.
+With all my heart, for I love good cheer.
+
+CIVET.
+Well, God be with you all.  Come, Frances.
+
+FRANCES.
+God be with you, father, God be with you, Sir Arthur,
+Master Oliver, and Master Weathercock, sister, God be
+with you all:  God be with you, father, God be with you
+every one.
+
+[Exeunt Civet and Frances.]
+
+WEATHERCOCK.
+Why, how now, Sir Arthur? all a mort? Master Oliver,
+how now man?
+Cheerly, Sir Lancelot, and merrily say,
+Who can hold that will away?
+
+LANCELOT.
+Aye, she is gone indeed, poor girl, undone.
+But when they'll be self-willed, children must smart.
+
+ARTHUR.
+But, sir, that she is wronged, you are the chiefest cause,
+Therefore tis reason, you redress her wrong.
+
+WEATHERCOCK.
+Indeed you must, Sir Lancelot, you must.
+
+LANCELOT.
+Must? who can compel me, Master Weathercock?
+I hope I may do what I list.
+
+WEATHERCOCK.
+I grant you may, you may do what you list.
+
+OLIVER.
+Nay, but and you be well evisen, it were not good by
+this vrampolness, and vrowardness, to cast away as
+pretty a dowsabell, as any chould chance to see in a
+Sommers day.  Chil tell you what chall do.  Chil go
+spy up and down the town, and see if I can hear any
+tale or tidings of her, and take her away from thick a
+messell, vor cham ashured, he'll but bring her to the
+spoil.  And so var you well; we shall meet at your
+son Civet's.
+
+LANCELOT.
+I thank you, sir, I take it very kindly.
+
+ARTHUR.
+To find her out, I'll spend my dearest blood:
+So well I loved her, to affect her good.
+
+[Exit both.]
+
+LANCELOT.
+O Master Weathercock,
+What hap had I, to force my daughter
+From Master Oliver, and this good knight
+To one that hath no goodness in his thought?
+
+WEATHERCOCK.
+Ill luck, but what remedy?
+
+LANCELOT.
+Yes, I have almost devised a remedy:
+Young Flowerdale is sure a prisoner.
+
+WEATHERCOCK.
+Sure, nothing more sure.
+
+LANCELOT.
+And yet perhaps his Uncle hath released him.
+
+WEATHERCOCK.
+It may be very like, no doubt he hath.
+
+LANCELOT.
+Well, if he be in prison, I'll have warrants
+To 'tach my daughter till the law be tried,
+For I will sue him upon cozenage.
+
+WEATHERCOCK.
+Marry, may you, and overthrow him too.
+
+LANCELOT.
+Nay, that's not so, I may chance be soft,
+And sentence past with him.
+
+WEATHERCOCK.
+Believe me, so he may, therefore take heed.
+
+LANCELOT.
+Well, howsoever, yet I will have warrants:
+In prison, or at liberty, all's one:
+You will help to serve them, Master Weathercock?
+
+[Exit Omnes.]
+
+
+SCENE II.  A street in London.
+
+[Enter Flowerdale.]
+
+FLOWERDALE.
+A plague of the devil! the devil take the dice!  The dice,
+and the devil, and his dam go together.  Of all my
+hundred golden angels, I have not left me one denier:
+A pox of come a five, what shall I do?  I can borrow
+no more of my credit: there's not any of my acquaintance,
+man, nor boy, but I have borrowed more or less off:  I
+would I knew where to take a good purse, and go clear
+away; by this light, I'll venture for it.  God's lid, my 
+sister Delia!  I'll rob her, by this hand.
+
+[Enter Delia, and Artichoke.]
+
+DELIA.
+I prithee, Artichoke, go not so fast:
+The weather is hot, and I am something weary.
+
+ARTICHOKE.
+Nay, I warrant you, mistress Delia, I'll not tire you with
+leading; we'll go a extreme moderate pace.
+
+FLOWERDALE.
+Stand, deliver your purse.
+
+ARTICHOKE.
+O lord, thieves, thieves!
+
+[Exit Artichoke.]
+
+FLOWERDALE.
+Come, come, your purse, lady, your purse.
+
+DELIA.
+That voice I have heard often before this time.
+What, brother Flowerdale become a thief?
+
+FLOWERDALE.
+Aye, a plague on't, I thank your father.  But, sister, come,
+your money, come!  What,
+The world must find me, I am borne to live,
+Tis not a sin to steal, when none will give.
+
+DELIA.
+O God, is all grace banished from they heart?
+Think of the shame that doth attend this fact.
+
+FLOWERDALE.
+Shame me no shame; come, give me your purse.
+I'll bind you, sister, least I fair the worse.
+
+DELIA.
+No, bind me not! hold, there is all I have,
+And would that money would redeem thy shame.
+
+[Enter Oliver, Sir Arthur, and Artichoke.]
+
+ARTICHOKE.
+Thieves, thieves, thieves!
+
+OLIVER.
+Thieves? where, man? why, how now mistress Delia?
+Ha you a liked to bin a robbed?
+
+DELIA.
+No, Master Oliver; tis Master Flowerdale, he did but
+jest with me.
+
+OLIVER.
+How, Flowerdale, that scoundrel? sirrah, you meeten us
+well:  vang thee that.
+
+FLOWERDALE.
+Well, sir, I'll not meddle with you, because I have a
+charge.
+
+DELIA.
+Here, brother Flowerdale, I'll lend you this same money.
+
+FLOWERDALE.
+I thank you, sister.
+
+OLIVER.
+I wad you were ysplit, and you let the mezell have a
+penny.  But since you cannot keep it, chil keep it myself.
+
+ARTHUR.
+Tis pity to relieve him in this sort,
+Who makes a triumphant life his daily sport.
+
+DELIA.
+Brother, you see how all men censure you,
+Farewell, and I pray God amend your life.
+
+OLIVER.
+Come, chill bring you along, and you safe enough from
+twenty such scoundrels as thick a one is.  Farewell and
+be hanged, zirrah, as I think so thou wilt be shortly.
+Come, Sir Arthur.
+
+[Exit all but Flowerdale.]
+
+FLOWERDALE.
+A plague go with you for a karsie rascal.
+This Devonshire man, I think, is made all of pork,
+His hands made only for to heave up packs:
+His heart as fat and big as his face;
+As differing far from all brave gallant minds
+As I to serve the hogs, and drink with hinds,
+As I am very near now.  Well, what remedy?
+When money, means, and friends do grow so small,
+Then farewell life, and there's an end of all.
+
+[Exit.]
+
+
+SCENE III.  Another street.  Before Civet's house.
+
+[Enter Father, Lucy like a Dutch Frau, Civet, and
+his wife mistress Frances.]
+
+CIVET.
+By my troth, god a mercy for this, good Christopher,
+I thank thee for my maid, I like her very well.  How
+doest thou like her, Frances?
+
+FRANCES.
+In good sadness, Tom, very well, excellent well; she
+speaks so prettily.--I pray what's your name?
+
+LUCY.
+My name, forsooth, be called Tanikin.
+
+FRANCES.
+By my troth, a fine name.  O Tanikin, you are excellent
+for dressing one's head a new fashion.
+
+LUCY.
+Me sall do every ting about da head.
+
+CIVET.
+What countrywoman is she, Kester?
+
+FATHER.
+A dutch woman, sir.
+
+CIVET.
+Why then she is outlandish, is she not?
+
+FATHER.
+I, sir, she is.
+
+FRANCES.
+O, then, thou canst tell how to help me to cheeks and
+ears?
+
+LUCY.
+Yes, mistress, very vell.
+
+FATHER.
+Cheeks and ears! why, mistress Frances, want you
+cheeks and ears? methinks you have very fair ones.
+
+FRANCES.
+Thou art a fool indeed.  Tom, thou knowest what I mean.
+
+CIVET.
+Aye, aye, Kester, tis such as they wear a their heads.  I
+prithee, Kit, have her in, and shew her my house.
+
+FATHER.
+I will, sir.  Come, Tanikin.
+
+FRANCES.
+O Tom, you have not bussed me today, Tom.
+
+CIVET.
+No, Frances, we must not kiss afore folks.  God save me,
+Frances,
+
+[Enter Delia, and Artichoke.]
+
+See yonder my sister Delia is come.  Welcome, good
+sister.
+
+FRANCES.
+Welcome, good sister, how do you like the tier of my
+head?
+
+DELIA.
+Very well, sister.
+
+CIVET.
+I am glad you're come, sister Delia, to give order for
+supper; they will be here soon.
+
+ARTICHOKE.
+Aye, but if good luck had not served, she had not been
+here now:  filching Flowerdale had like to peppered us;
+but for Master Oliver, we had been robbed.
+
+DELIA.
+Peace, sirrah, no more.
+
+FATHER.
+Robbed! by whom?
+
+ARTICHOKE.
+Marry, by none but by Flowerdale; he is turned thief.
+
+CIVET.
+By my faith, but that is not well; but God be praised 
+for your escape.  Will you draw near, sister?
+
+FATHER.
+Sirrah, come hither.  Would Flowerdale, he that was my
+master, a robbed you?  I prithee, tell me true.
+
+ARTICHOKE.
+Yes, yfaith, even that Flowerdale, that was thy master.
+
+FATHER.
+Hold thee, there is a French crown, and speak no more
+of this.
+
+ARTICHOKE.
+Not I, not a word.--Now do I smell knavery:
+In every purse Flowerdale takes, he is half:
+And gives me this to keep counsel.--No, not a word I.
+
+FATHER.
+Why, God a mercy.
+
+FRANCES.
+Sister, look here, I have a new Dutch maid, and she
+speaks so fine, it would do your heart good.
+
+CIVET.
+How do you like her, sister?
+
+DELIA.
+I like your maid well.
+
+CIVET.
+Well, dear sister, will you draw near, and give
+directions for supper? guests will be here presently.
+
+DELIA.
+Yes, brother; lead the way; I'll follow you.
+
+[Exit all but Delia and Lucy.]
+
+Hark you, Dutch frau, a word.
+
+LUCY.
+Vat is your vill wit me?
+
+DELIA.
+Sister Lucy, tis not your broken language,
+Nor this same habit, can disguise your face
+From I that know you:  pray tell me, what means this?
+
+LUCY.
+Sister, I see you know me; yet be secret.
+This borrowed shape, that I have ta'en upon me,
+Is but to keep myself a space unknown,
+Both from my father, and my nearest friends,
+Until I see how time will bring to pass
+The desperate course of Master Flowerdale.
+
+DELIA.
+O he is worse than bad, I prithee leave him,
+And let not once thy heart to think on him.
+
+LUCY.
+Do not persuade me once to such a thought.
+Imagine yet, that he is worse than naught:
+Yet one hour's time may all that ill undo,
+That all his former life did run into.
+Therefore kind sister do not disclose my estate:
+If ere his heart doth turn, tis nere too late.
+
+DELIA.
+Well, seeing no counsel can remove your mind,
+I'll not disclose you that art wilful blind.
+
+LUCY.
+Delia, I thank you.  I now must please her eyes,
+My sister Frances, neither fair nor wise.
+
+[Exit Omnes.]
+
+
+ACT V.
+
+SCENE I.  Scene before Civet's house.
+
+[Enter Flowerdale solus.]
+
+FLOWERDALE.
+On goes he that knows no end of his journey.  I have
+passed the very utmost bounds of shifting.  I have no
+course now but to hang myself:  I have lived since
+yesterday two a clock of a spice-cake I had at a burial:
+and for drink, I got it at an Ale-house among Porters,
+such as will bear out a man, if he have no money 
+indeed--I mean out of their companies, for they are 
+men of good carriage.  Who comes here?  The two 
+Conycatchers, that won all my money of me.  I'll try
+if they'll lend me any.
+
+[Enter Dick and Rafe.]
+
+What, Master Richard, how do you?  How doest thou,
+Rafe?  By God, gentlemen, the world grows bare with
+me:  will you do as much as lend me an angel between 
+you both.  You know you won a hundred of me the
+other day.
+
+RAFE.
+How, an angel?  God damn us, if we lost not every
+penny, within an hour after thou wert gone.
+
+FLOWERDALE.
+I prithee lend me so much as will pay for my supper.
+I'll pay you again, as I am a gentleman.
+
+RAFE.
+Yfaith, we have not a farthing, not a mite:
+I wonder at it, Master Flowerdale,
+You will so carelessly undo yourself.
+Why, you will lose more money in an hour,
+Than any honest man spend in a year.
+For shame, betake you to some honest Trade,
+And live not thus so like a Vagabond.
+
+[Exit both.] 
+
+FLOWERDALE.
+A Vagabond, indeed! more villains you:
+They gave me counsel that first cozened me:
+Those Devils first brought me to this I am,
+And being thus, the first that do me wrong.
+Well, yet I have one friend left in store:
+Not far from hence there dwells a Cockatrice,
+One that I first put in a satin gown,
+And not a tooth that dwells within her head,
+But stands me at the least in 20 pound:
+Her will I visit now my coin is gone,
+And, as I take it, here dwells the Gentlewoman.
+What ho, is Mistress Apricot within?
+
+[Enter Ruffian.]
+
+RUFFIAN.
+What saucy Rascal is that which knocks so boldly?
+O, is it you? old spend-thrift, are you here?
+One that is turned Cozener about this town:
+My Mistress saw you, and sends this word by me:
+Either be packing quickly from the door,
+Or you shall have such a greeting sent you straight,
+As you will little like on:  you had best be gone.
+
+FLOWERDALE.
+Why so, this is as it should be:  being poor,
+Thus art thou served by a vile painted whore.
+Well, since thy damned crew do so abuse thee,
+I'll try of honest men, how they will use me.
+
+[Enter an ancient Citizen.]
+
+Sir, I beseech you to take compassion of a man, one
+whose Fortunes have been better than at this 
+instant they seem to be:  but if I might crave of you
+some such little portion, as would bring me to my
+friends, I should rest thankful, until I had requited 
+so great a courtesy.
+
+CITIZEN.
+Fie, fie, young man, this course is very bad,
+Too many such have we about this City,
+Yet for I have not seen you in this sort,
+Nor noted you to be a common beggar:
+Hold, there's an angel, to bear your charges down.
+Go to your friends, do not on this depend:
+Such bad beginnings oft have worser ends.
+
+[Exit Citizen.]
+
+FLOWERDALE.
+Worser ends:  nay, if it fall out no worse than in old
+angels I care not.  Nay, now I have had such a 
+fortunate beginning, I'll not let a sixpenny-purse
+escape me.  By the mass, here comes another.
+
+[Enter a Citizen's wife with a torch before her.]
+
+God bless you, fair mistress.  Now would it please
+you, gentlewoman, to look into the wants of a poor
+Gentle-Man, a younger brother, I doubt not but God
+will treble restore it back again:  one that never before
+this time demanded penny, halfpenny, nor farthing.
+
+CITIZEN'S WIFE.
+Stay, Alexander.  Now, by my troth, a very proper
+man, and tis great pity:  hold, my friend, there's all
+the money I have about me, a couple of shillings, and
+God bless thee.
+
+FLOWERDALE.
+Now God thank you, sweet Lady:  if you have any
+friend, or Garden-house, where you may employ a
+poor gentleman as your friend, I am yours to command
+in all secret service.
+
+CITIZEN'S WIFE.
+I thank you, good friend.  I prithee let me see that again
+I gave thee:  there is one of them a brass shilling; give
+me them, and here is half a crown in gold.  [He gives it
+her.]  Now, out upon thee, Rascal! secret service! what
+doest thou make of me? it were a good deed to have thee
+whipped.  Now I have my money again, I'll see thee
+hanged before I give thee a penny.  Secret service!  On,
+good Alexander.
+
+[Exit both.]
+
+FLOWERDALE.
+This is villainous luck.  I perceive dishonesty will not
+thrive:  here comes more.  God forgive me, Sir Arthur,
+and Master Oliver:  afore God, I'll speak to them.
+
+[Enter Sir Arthur, and M. Oliver.]
+
+God save you, Sir Arthur:  God save you, Master Oliver.
+
+OLIVER.
+Byn you there, zirrah? come, will you ytaken yourself
+to your tools, Coystrell?
+
+FLOWERDALE.
+Nay, master Oliver, I'll not fight with you.
+Alas, sir, you know it was not my doings,
+It was only a plot to get Sir Lancelot's daughter:
+By God, I never meant you harm.
+
+OLIVER.
+And whore is the Gentle-woman thy wife, Mezell?
+Whore is shee, Zirrah, ha?
+
+FLOWERDALE.
+By my troth, Master Oliver, sick, very sick; and God
+is my judge, I know not what means to make for her,
+good Gentle-woman.
+
+OLIVER.
+Tell me true, is she sick? tell me true, itch vise thee.
+
+FLOWERDALE.
+Yes, faith, I tell you true:  Master Oliver, if you would
+do me the small kindness, but to lend me forty shillings:
+so God help me, I will pay you so soon as my ability
+shall make me able, as I am a gentleman.
+
+OLIVER.
+Well, thou zaist thy wife is zick:  hold, there's vorty
+shillings; give it to thy wife.  Look thou give it her, or I
+shall zo veze thee, thou wert not so vezed this zeven
+year; look to it.
+
+ARTHUR.
+Yfaith, Master Oliver, it is in vain 
+To give to him that never thinks of her.
+
+OLIVER.
+Well, would che could yvind it.
+
+FLOWERDALE.
+I tell you true, Sir Arthur, as I am a gentleman.
+
+OLIVER.
+Well fare you well, zirrah:  come, Sir Arthur.
+
+[Exit both.]
+
+FLOWERDALE.
+By the Lord, this is excellent.
+Five golden angels compassed in an hour!
+If this trade hold, I'll never seek a new.
+Welcome, sweet gold:  and beggary, adieu.
+
+[Enter Uncle and Father.]
+
+UNCLE.
+See, Kester, if you can find the house.
+
+FLOWERDALE.
+Who's here? my Uncle, and my man Kester?  By
+the mass, tis they.  How do you, Uncle, how dost
+thou, Kester?  By my troth, Uncle, you must needs
+lend me some money:  the poor gentlewoman my
+wife, so God help me, is very sick.  I was robbed of
+the hundred angels you gave me; they are gone.
+
+UNCLE.
+Aye, they are gone indeed; come, Kester, away.
+
+FLOWERDALE.
+Nay, Uncle, do you hear? good Uncle.
+
+UNCLE.
+Out, hypocrite, I will not hear thee speak;
+Come, leave him, Kester.
+
+FLOWERDALE.
+Kester, honest Kester.
+
+FATHER.
+Sir, I have nought to say to you.  Open the door,
+Tanikin:  thou hadst best lock it fast, for there's a
+false knave without.
+
+FLOWERDALE.
+You are an old lying Rascal, so you are.
+
+[Exit both.]
+
+[Enter Lucy.]
+
+LUCY.
+Vat is de matter?  Vat be you, yonker?
+
+FLOWERDALE.
+By this light, a Dutch Frau:  they say they are called
+kind.  By this light, I'll try her.
+
+LUCY.
+Vat bin you, yonker? why do you not speak?
+
+FLOWERDALE.
+By my troth, sweet heart, a poor gentleman that 
+would desire of you, if it stand with your liking, the
+bounty of your purse.
+
+[Enter Father.]
+
+LUCY.
+O here, God, so young an armine.
+
+FLOWERDALE.
+Armine, sweet-heart?  I know not what you mean by
+that, but I am almost a beggar.
+
+LUCY.
+Are you not a married man? vere bin your wife?  Here
+is all I have:  take dis.
+
+FLOWERDALE.
+What, gold, young Frau? this is brave.
+
+FATHER.
+--If he have any grace, he'll now repent.
+
+LUCY.
+Why speak you not? were be your vife?
+
+FLOWERDALE.
+Dead, dead, she's dead; tis she hath undone me:
+spent me all I had, and kept rascals under mine
+nose to brave me.
+
+LUCY.
+Did you use her vell?
+
+FLOWERDALE.
+Use her? there's never a gentle-woman in England
+could be better used than I did her.  I could but
+coach her; her diet stood me in forty pound a month,
+but she is dead and in her grave my care are buried.
+
+LUCY.
+Indeed, dat vas not scone.
+
+FATHER.
+--He is turned more devil than he was before.
+
+FLOWERDALE.
+Thou doest belong to Master Civet here, doest thou not?
+
+LUCY.
+Yes me do.
+
+FLOWERDALE.
+Why, there's it:  there's not a handful of plate but
+belongs to me, God's my judge:  if I had but such a wench
+as thou art, there's never a man in England would make
+more of her, than I would do, so she had any stock.
+
+[They call within:  O, why, Tanikin.]
+
+LUCY.
+Stay, one doth call; I shall come by and by again.
+
+FLOWERDALE.
+By this hand, this Dutch wench is in love with me.
+Were it not admiral to make her steal all Civet's
+plate, and run away.
+
+FATHER.
+Twere beastly.  O Master Flowerdale,
+Have you no fear of God, nor conscience?
+What do you mean by this wild course you take?
+
+FLOWERDALE.
+What do I mean? why, to live, that I mean.
+
+FATHER.
+To live in this sort? fie upon the course:
+Your life doth show, you are a very coward.
+
+FLOWERDALE.
+A coward?  I pray, in what?
+
+FATHER.
+Why, you will borrow sixpence of a boy.
+
+FLOWERDALE.
+Snails, is there such cowardice in that?  I dare
+borrow it of a man, I, and of the tallest man in
+England, if he will lend it me.  Let me borrow
+how I can, and let them come by it how they
+dare.  And it is well known, I might a rid out a 
+hundred times if I would:  so I might.
+
+FATHER.
+It was not want of will, but cowardice.
+There is none that lends to you, but know they gain:
+And what is that but only stealth in you?
+Delia might hang you now, did not her heart
+Take pity of you for her sister's sake.
+Go, get you hence, least, lingering where you stay,
+You fall into their hands you look not for.
+
+FLOWERDALE.
+I'll tarry here, till the Dutch Frau comes, if all the
+devils in hell were here.
+
+[Exit Father.]
+
+[Enter Sir Lancelot, Master Weathercock, and
+Artichoke.]
+
+LANCELOT.
+Where is the door? are we not past it, Artichoke?
+
+ARTICHOKE.
+Bith mass, here's one; I'll ask him.  Do you hear, sir?
+What, are you so proud? do you hear? which is the way
+to Master Civet's house? what will you not speak? O
+me, this is filching Flowerdale.
+
+LANCELOT.
+O wonderful, is this lewd villain here?
+O you cheating Rogue, you cut-purse coni-catcher,
+What ditch, you villain, is my daughter's grave?
+A cozening rascal, that must make a will,
+Take on him that strict habit--very that,
+When he should turn to angel--a dying grace.
+I'll father in law you, sir, I'll make a will!
+Speak, villain, where's my daughter?
+Poisoned, I warrant you, or knocked a the head
+And to abuse good Master Weathercock,
+With his forged will, and Master Weathercock
+To make my grounded resolution,
+Than to abuse the Devonshire gentleman:
+Go, away with him to prison.
+
+FLOWERDALE.
+Wherefore to prison? sir, I will not go.
+
+[Enter Master Civet, his wife, Oliver, Sir Arthur,
+Father, and Uncle, Delia.]
+
+LANCELOT.
+O here's his Uncle! welcome, gentlemen, welcome all.
+Such a cozener, gentlemen, a murderer too, for any 
+thing I know:  my daughter is missing:  hath been
+looked for, cannot be found.  A vild upon thee.
+
+UNCLE.
+He is my kinsman, although his life be wild;
+Therefore, in God's name, do with him what you will.
+
+LANCELOT.
+Marry, to prison.
+
+FLOWERDALE.
+Wherefore to prison? snick up, I owe you nothing.
+
+LANCELOT.
+Bring forth my daughter then:  away with him.
+
+FLOWERDALE.
+Go seek your daughter; what do you lay to my charge.
+
+LANCELOT.
+Suspicion of murder: go, away with him.
+
+FLOWERDALE.
+Murder, you dogs?   I murder your daughter!
+Come, Uncle, I know you'll bail me.
+
+UNCLE.
+Not I, were there no more, than I the Jailor, thou the
+prisoner.
+
+LANCELOT.
+Go; away with him.
+
+[Enter Lucy like a Frau.]
+
+LUCY.
+O my life, here; where will you ha de man?
+Vat ha de yonker done?
+
+WEATHERCOCK.
+Woman, he hath killed his wife.
+
+LUCY.
+His vife:  dat is not good, dat is not seen.
+
+LANCELOT.
+Hang not upon him, huswife; if you do, I'll lay you by him.
+
+LUCY.
+Have me no oder way dan you have him:
+He tell me dat he love me heartily.
+
+FRANCES.
+Lead away my maid to prison! why, Tom, will you suffer
+that?
+
+CIVET.
+No, by your leave, father, she is no vagrant:  she is my
+wife's chamber maid, & as true as the skin between any 
+man's brows here.
+
+LANCELOT.
+Go to, you're both fools:
+Son Civet, of my life, this is a plot,
+Some straggling counterfeit preferred to you,
+No doubt to rob you of your plate and jewels.
+I'll have you led away to prison, trull.
+
+LUCY.
+I am no trull, neither outlandish Frau.
+Nor he, nor I shall to the prison go:
+Know you me now? nay, never stand amazed.
+Father, I know I have offended you,
+And though that duty wills me bend my knees
+To you in duty and obedience:
+Yet this ways do I turn, and to him yield
+My love, my duty and my humbleness.
+
+LANCELOT.
+Bastard in nature! kneel to such a slave?
+
+LUCY.
+O Master Flowerdale, if too much grief
+Have not stopped up the organs of your voice,
+Then speak to her that is thy faithful wife:
+Or doth contempt of me thus tie thy tongue?
+Turn not away, I am no Aethiope,
+No wanton Cressida, nor a changing Helen:
+But rather one made wretched by thy loss.
+What, turnst thou still from me?  O then
+I guess thee woefulst among hapless men.
+
+FLOWERDALE.
+I am, indeed, wife, wonder among wives!
+Thy chastity and virtue hath infused
+Another soul in me, red with defame,
+For in my blushing cheeks is seen my shame.
+
+LANCELOT.
+Out, hypocrite.  I charge thee, trust him not.
+
+LUCY.
+Not trust him? by the hopes of after bliss,
+I know no sorrow can be compared to his.
+
+LANCELOT.
+Well, since thou wert ordained to beggary,
+Follow thy fortune; I defy thee, I.
+
+OLIVER.
+Ywood che were so well ydoussed as was ever
+white cloth in a tocking mill, and che ha not made
+me weep.
+
+FATHER.
+If he hath any grace, he'll now repent.
+
+ARTHUR.
+It moves my heart.
+
+WEATHERCOCK.
+By my troth, I must weep, I can not choose.
+
+UNCLE.
+None but a beast would such a maid misuse.
+
+FLOWERDALE.
+Content thy self, I hope to win his favour,
+And to redeem my reputation lost:
+And, gentlemen, believe me, I beseech you:
+I hope your eyes shall behold such change,
+As shall deceive your expectation.
+
+OLIVER.
+I would che were ysplit now, but che believe him.
+
+LANCELOT.
+How, believe him?
+
+WEATHERCOCK.
+By the mackins, I do.
+
+LANCELOT.
+What, do you think that ere he will have grace?
+
+WEATHERCOCK.
+By my faith, it will go hard.
+
+OLIVER.
+Well, che vor ye, he is changed:  and Master
+Flowerdale, in hope you been so, hold, there's
+vorty pound toward your zetting up:  what, be not
+ashamed; vang it, man, vang it:  be a good husband,
+loven your wife:  and you shall not want for vorty
+more, I che vor thee.
+
+ARTHUR.
+My means are little, but if you'll follow me,
+I will instruct my ablest power:
+But to your wife I give this diamond,
+And prove true diamond fair in all your life.
+
+FLOWERDALE.
+Thanks, good Sir Arthur, Master Oliver,
+You being my enemy, and grown so kind,
+Binds me in all endeavor to restore--
+
+OLIVER.
+What! restore me no restorings, man.  I have vorty
+pound more for Lucy; here, vang it:  Zouth, chil
+devie London else.  What, do not think me a Mezel
+or a Scoundrel to throw away my money:  che have 
+a hundred pound more to pace of any good spotation:
+I hope your vader and your uncle here wil vollow my
+examples.
+
+UNCLE.
+You have guessed right of me; if he leave of this
+course of life, he shall be mine heir.
+
+LANCELOT.
+But he shall never get a groat of me:
+A cozener, a deceiver, one that killed
+His painful father, honest gentleman
+That passed the fearful danger of the sea,
+To get him living and maintain him brave.
+
+WEATHERCOCK.
+What, hath he killed his father?
+
+LANCELOT.
+Aye, sir, with conceit of his wild courses.
+
+FATHER.
+Sir, you are misinformed.
+
+LANCELOT.
+Why, thou old knave, thou toldst me so thy self.
+
+FATHER.
+I wronged him then:  and toward my Master's stock,
+There's twenty nobles for to make amends.
+
+FLOWERDALE.
+No, Kester, I have troubled thee, and wronged thee more.
+What thou in love gives, I in love restore.
+
+FRANCES.
+Ha, ha, sister, there you played bo-peep with Tom.  What
+shall I give her toward household?  Sister Delia, shall I
+give her my fan?
+
+DELIA.
+You were best ask your husband.
+
+FRANCES.
+Shall I, Tom?
+
+CIVET.
+Aye, do, Frances; I'll buy thee a new one, with a longer
+handle.
+
+FRANCES.
+A russet one, Tom.
+
+CIVET.
+Aye, with russet feathers.
+
+FRANCES.
+Here, sister, there's my fan towad household, to keep
+you warm.
+
+LUCY.
+I thank you, sister.
+
+WEATHERCOCK.
+Why this is well, and toward fair Lucy's stock, here's
+forty shillings:  and forty good shillings more, I'll give
+her, marry.  Come, Sir Lancelot, I must have you friends.
+
+LANCELOT.
+Not I, all this is counterfeit;
+He will consume it, were it a million.
+
+FATHER.
+Sir, what is your daughter's dower worth?
+
+LANCELOT.
+Had she been married to an honest man,
+It had been better than a thousand pound.
+
+FATHER.
+Pay it him, and I'll give you my bond,
+To make her jointer better worth than three.
+
+LANCELOT.
+Your bond, sir? why, what are you?
+
+FATHER.
+One whose word in London, though I say it,
+Will pass there for as much as yours.
+
+LANCELOT.
+Wert not thou late that unthrift's serving-man?
+
+FATHER.
+Look on me better, now my scar is off.
+Ne'er muse, man, at this metamorphosis.
+
+LANCELOT.
+Master Flowerdale!
+
+FLOWERDALE.
+My father!  O, I shame to look on him.
+Pardon, dear father, the follies that are past.
+
+FATHER.
+Son, son, I do, and joy at this thy change,
+And applaud thy fortune in this virtuous maid,
+Whom heaven hath sent to thee to save thy soul
+
+LUCY.
+This addeth joy to joy, high heaven be praised.
+
+FATHER.
+I caused that rumour to be spread myself,
+Because I'd see the humours of my son,
+Which to relate the circumstance is needless:
+And, sirrah, see you run no more into
+That same disease:
+For he that's once cured of that malady,
+Of Riot, Swearing, Drunkenness, and Pride,
+And falls again into the like distress,
+That fever is deadly, doth till death endure:
+Such men die mad as of a callenture.
+
+FLOWERDALE.
+Heaven helping me, I'll hate the course as hell.
+
+UNCLE.
+Say it and do it, cousin, all is well.
+
+LANCELOT.
+Well, being in hope you'll prove an honest man,
+I take you to my favour.  Brother Flowerdale,
+Welcome with all my heart:  I see your care
+Hath brought these acts to this conclusion,
+And I am glad of it:  come, let's in and feast.
+
+OLIVER.
+Nay, zoft you awhile:  you promised to make Sir
+Arthur and me amends.  Here is your wisest daughter;
+see which ans she'll have.
+
+LANCELOT.
+A God's name, you have my good will, get hers.
+
+OLIVER.
+How say you then, damsel, tyters hate?
+
+DELIA.
+I, sir, am yours.
+
+OLIVER.
+Why, then, send for a Vicar, and chil have it dispatched
+in a trice, so chill.
+
+DELIA.
+Pardon me, sir, I mean I am yours,
+In love, in duty, and affection,
+But not to love as wife:  shall ne'er be said,
+Delia was buried married, but a maid.
+
+ARTHUR.
+Do not condemn yourself forever,
+Virtuous fair, you were born to love.
+
+OLIVER.
+Why, you say true, Sir Arthur, she was ybere to it 
+so well as her mother:  but I pray you shew us some
+zamples or reasons why you will not marry.
+
+DELIA.
+Not that I do condemn a married life,
+For tis no doubt a sanctimonious thing:
+But for the care and crosses of a wife,
+The trouble in that world that children bring;
+My vow is in heaven in earth to live alone,
+Husbands, howsoever good, I will have none.
+
+OLIVER.
+Why, then che will live Bachelor too.  Che zet not a
+vig by a wife, if a wife zet not a vig by me.  Come,
+shalls go to dinner?
+
+FATHER.
+Tomorrow I crave your companies in Mark-lane:
+Tonight we'll frolic in Master Civet's house,
+And to each health drink down a full carouse.
+
+
+FINIS
+
+
+
+End of Project Gutenberg's The London Prodigal, attributed in part 
+to Shakespeare
+

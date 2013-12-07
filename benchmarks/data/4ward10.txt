@@ -1,0 +1,2539 @@
+Project Gutenberg's The Complete Works of Artemus Ward, Part 4
+#4 of this seven part series by Charles Farrar Browne
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+As of 12/12/00 contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Title: The Complete Works of Artemus Ward, Part 4
+
+Author: Charles Farrar Browne
+
+Release Date: June, 2002  [Etext #3274]
+[Yes, we are over one year ahead of schedule]
+[The actual date this file first posted = 03/09/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg's The Complete Works of Artemus Ward, Part 4
+*****This file should be named 4ward10.txt or 4ward10.zip*****
+
+Corrected EDITIONS of our etexts get a new NUMBER, 4ward11.txt
+VERSIONS based on separate sources get new LETTER, 4ward10a.txt
+
+This etext was produced by anonymous Project Gutenberg volunteers
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext02
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext02
+
+Or /etext01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Project Gutenberg Literary Archive Foundation,
+EIN [Employee Identification Number] 64-6221541,
+has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the extent
+permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation.  Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655-4109  [USA]
+
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may 
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the 
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.  
+
+The Project gratefully accepts contributions of money, time, 
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.03.09.01*END*
+[Portions of this header are copyright (C) 2001 by Michael Hart]
+
+
+
+
+
+This etext was produced by anonymous Project Gutenberg Volunteers
+
+
+
+
+
+The Project Gutenberg Etext of The Complete Works of
+Artemus Ward (Charles Farrar Browne) Part 4
+
+THE COMPLETE WORKS OF ARTEMUS WARD PART 4, TO CALIFORNIA AND RETURN
+
+(CHARLES FARRAR BROWNE)
+
+With a biographical sketch by Melville D. Landon, "Eli Perkins"
+
+CONTENTS.
+
+PART IV.
+
+TO CALIFORNIA AND RETURN.
+
+4.1.  On the Steamer.
+
+4.2.  The Isthmus.
+
+4.3.  Mexico.
+
+4.4.  California.
+
+4.5.  Washoe.
+
+4.6.  Mr. Pepper.
+
+4.7.  Horace Greeley's Ride to Placerville.
+
+4.8.  To Reese River.
+
+4.9.  Great Salt Lake City.
+
+4.10.  The Mountain Fever.
+
+4.11.  "I am Here."
+
+4.12.  Brigham Young.
+
+4.13.  A Piece is Spoken.
+
+4.14.  The Ball.
+
+4.15.  Phelp's Almanac.
+
+4.16.  Hurrah for the Road.
+
+4.17.  Very Much Married.
+
+4.18.  The Revelation of Joseph Smith.
+
+PART IV.  TO CALIFORNIA AND RETURN.
+
+4.1.  ON THE STEAMER.
+
+                                        New York, Oct. 13, 1868.
+
+The steamer Ariel starts for California at noon.
+
+Her decks are crowded with excited passengers, who instantly
+undertake to "look after" their trunks and things; and what with
+our smashing against each other, and the yells of the porters, and
+the wails over lost baggage, and the crash of boxes, and the roar
+of the boilers, we are for the time being about as unhappy a lot of
+maniacs as was ever thrown together.
+
+I am one of them.  I am rushing around with a glaring eye in search
+of a box.
+
+Great jam, in which I find a sweet young lady, with golden hair,
+clinging to me fondly, and saying, "Dear George, farewell!"--
+Discovers her mistake, and disappears.
+
+I should like to be George some more.
+
+Confusion so great that I seek refuge in a stateroom which contains
+a single lady of forty-five summers, who says, "Base man! leave
+me!"  I leave her.
+
+By and by we cool down, and become somewhat regulated.
+
+NEXT DAY
+
+When the gong sounds for breakfast we are fairly out on the sea,
+which runs  roughly, and the Ariel rocks wildly.  Many of the
+passengers are sick, and a young naval officer establishes a
+reputation as a wit by carrying to one of the invalids a plate of
+raw salt pork, swimming in cheap molasses.  I am not sick; so I
+roll round the deck in the most cheerful sea-dog manner.
+
+                   .     .      .      .
+
+The next day and the next pass by in a serene manner.  The waves
+are smooth now, and we can all eat and sleep.  We might have
+enjoyed ourselves very well, I fancy, if the Ariel, whose capacity
+was about three hundred and fifty passengers, had not on this
+occasion carried nearly nine hundred, a hundred, at least of whom
+were children of an unpleasant age.  Captain Semmes captured the
+Ariel once, and it is to be deeply regretted that that thrifty
+buccaneer hadn't made mince-meat of her, because she is a miserable
+tub at best, and hasn't much more right to be afloat than a second-
+hand coffin has.  I do not know her proprietor, Mr. C. Vanderbilt.
+But I know of several excellent mill privileges in the State of
+Maine, and not one of them is so thoroughly "Dam'd" as he was all
+the way from New York to Aspinwall.
+
+I had far rather say a pleasant thing than a harsh one; but it is
+due to the large number of respectable ladies and gentleman who
+were on board the steamer Ariel with me that I state here that the
+accommodations on that steamer were very vile.  If I did not so
+state, my conscience would sting me through life, and I should have
+harried dreams like Richard III. Esq.
+
+The proprietor apparently thought we were undergoing transportation
+for life to some lonely island, and the very waiters who brought us
+meals, that any warden of any penitentiary would blush to offer
+convicts, seemed to think it was a glaring error our not being in
+chains.
+
+As a specimen of the liberal manner in which this steamer was
+managed I will mention that the purser (a very pleasant person, by
+the way) was made to unite the positions of purser, baggage clerk,
+and doctor; and I one day had a lurking suspicion that he was among
+the waiters in the dining-cabin, disguised in a white jacket and
+slipshod pumps.
+                   .     .      .      .
+
+I have spoken my Piece about the Ariel, and I hope Mr. Vanderbilt
+will reform ere it is too late.  Dr. Watts says the vilest sinner
+may return as long as the gas-meters work well, or words to that
+effect.
+                   .     .      .      .
+
+We were so densely crowded on board the Ariel that I cannot
+conscientiously say we were altogether happy.  And sea-voyages at
+best are a little stupid. On the whole I should prefer a voyage on
+the Erie Canal, where there isn't any danger, and where you can
+carry picturesque scenery along with you--so to speak.
+
+II.--THE ISTHMUS.
+
+On the ninth day we reach Aspinwall in the Republic of Granada.
+The President of New Granada is a Central American named Mosquero.
+I was told that he derived quite a portion of his income by
+carrying passengers' valises and things from the steamer to the
+hotels in Aspinwall.  It was an infamous falsehood.  Fancy A.
+Lincoln carrying carpet-bags and things! and indeed I should rather
+trust him with them than Mosquero, because the former gentleman, as
+I think some one has before observed, is "honest."
+
+I intrust my bag to a speckled native, who confidentially gives me
+to understand that he is the only strictly honest person in
+Aspinwall.  The rest, he says, are niggers--which the colored
+people of the Isthmus regard as about as scathing a thing as they
+can say of one another.
+
+I examine the New Grenadian flag, which waves from the
+chamber-window of the refreshment saloon.  It is of simple design.
+You can make one.
+
+Take half of a cotton shirt, that has been worn two months, and dip
+it in molasses of the Day & Martin brand.  Then let the flies
+gambol over it for a few days, and you have it.  It is an emblem of
+Sweet Liberty.
+
+At the Howard House the man of sin rubbeth the hair of the horse to
+the bowels of the cat, and our girls are waving their lily-white
+hoofs in the dazzling waltz.
+
+We have a quadrille, in which an English person slips up and jams
+his massive brow against my stomach.  He apologizes, and I say,
+"all right, my lord."  I subsequently ascertained that he
+superintended the shipping of coals for the British steamers, and
+owned fighting cocks.
+
+The ball stops suddenly.
+
+Great excitement.  One of our passengers intoxicated and riotous in
+the street.  Openly and avowedly desires the entire Republic of New
+Grenada to "come on."
+
+In case they do come on, agrees to make it lively for them.  Is
+quieted down at last, and marched off to prison, by a squad of
+Grenadian troops.  Is musical as he passes the hotel, and smiling
+sweetly upon the ladies and children on the balcony, expresses a
+distinct desire to be an Angel, and with the Angels stand.  After
+which he leaps nimbly into the air and imitates the war-cry of the
+red man.
+                   .     .      .      .
+
+The natives amass wealth by carrying valises, &c., then squander it
+for liquor.  My native comes to me as I sit on the veranda of the
+Howard House smoking a cigar, and solicits the job of taking my
+things to the cars next morning.  He is intoxicated, and has been
+fighting, to the palpable detriment of his wearing apparel; for he
+has only a pair of tattered pantaloons and a very small quantity of
+shirt left.
+
+We go to bed.  Eight of us are assigned to a small den upstairs,
+with only two lame apologies for beds.
+
+Mosquitoes and even rats annoy us fearfully.  One bold rat gnaws at
+the feet of a young Englishman in the party.  This was more than
+the young Englishman could stand, and rising from his bed he asked
+us if New Grenada wasn't a Republic?  We said it was.  "I thought
+so," he said.  "Of course I mean no disrespect to the United States
+of America in the remark, but I think I prefer a bloated monarchy!"
+He smiled sadly--then handing his purse and his mother's photograph
+to another English person, he whispered softly.  "If I am eaten up,
+give them to Me mother--tell her I died like a true Briton, with no
+faith whatever in the success of a republican form of government!"
+And then he crept back to bed again.
+
+                   .     .      .      .
+
+We start at seven the next morning for Panama.
+
+My native comes bright and early to transport my carpet sack to the
+railway station.  His clothes have suffered still more during the
+night, for he comes to me now dressed only in a small rag and one
+boot.
+
+At last we are off.  "Adios, Americanos!" the natives cry; to which
+I pleasantly reply, "ADOUS! and long may it be before you have a
+chance to Do us again."
+
+The cars are comfortable on the Panama railway, and the country
+through which we pass is very beautiful.  But it will not do to
+trust it much, because it breeds fevers and other unpleasant
+disorders, at all seasons of the year.  Like a girl we most all
+have known, the Isthmus is fair but false.
+
+There are mud huts all along the route, and half-naked savages gaze
+patronizingly upon us from their doorways.  An elderly lady in
+spectacles appears to be much scandalized by the scant dress of
+these people, and wants to know why the Select Men don't put a stop
+to it.  From this, and a remark she incidentally makes about her
+son, who has invented a washing machine which will wash, wring, and
+dry a shirt in ten minutes, I infer that she is from the hills of
+Old New England, like the Hutchinson family.
+
+                   .     .      .      .
+
+The Central American is lazy.  The only exercise he ever takes is
+to occasionally produce a Revolution.  When his feet begin to swell
+and there are premonitory symptoms of gout, he "revolushes" a
+spell, and then serenely returns to his cigarette and hammock under
+the palm-trees.
+
+These Central American Republics are queer concerns.  I do not of
+course precisely know what a last year's calf's ideas of immortal
+glory may be, but probably they are about as lucid as those of a
+Central American in regard to a republican form of government.
+
+And yet I am told they are a kindly people in the main.  I never
+met but one of them--a Costa-Rican; on board the Ariel.  He lay
+sick with fever, and I went to him and took his hot hand gently in
+mine.  I shall never forget his look of gratitude.  And the next
+day he borrowed five dollars of me, shedding tears as he put it in
+his pocket.
+                   .     .      .      .
+
+At Panama we lose several of our passengers, and among them three
+Peruvian ladies, who go to Lima, the city of volcanic eruptions and
+veiled black-eyed beauties.
+
+The Senoritas who leave us at Panama are splendid creatures.  They
+learned me Spanish, and in the soft moonlight we walked on deck and
+talked of the land of Pizarro.  (You know old Piz. conquered Peru!
+and although he was not educated at West Point, he had still some
+military talent.)  I feel as though I had lost all my relations,
+including my grandmother and the cooking stove when these gay young
+Senoritas go away.
+
+They do not go to Peru on a Peruvian bark, but on an English
+steamer.  Off to Acapulco.
+
+4.3.  MEXICO.
+
+We make Acapulco, a Mexican coast town of some importance, in a few
+days, and all go ashore.
+
+The pretty peasant girls peddle necklaces made of shells and
+oranges, in the streets of Acapulco, on steamer days.  They are
+quite naive about it.  Handing you a necklace they will say, "Me
+give you pres-ENT, Senor," and then retire with a low curtsey.
+Returning, however, in a few moments, they say quite sweetly, "You
+give me pres-ENT, Senor, of quarter dollar!" which you at once do
+unless you have a heart of stone.
+
+Acapulco was shelled by the French a year or so before our arrival
+there, and they effected a landing.  But the gay and gallant
+Mexicans peppered them so persisently and effectually from the
+mountains near by that they concluded to sell out and leave.
+
+Napoleon has no right in Mexico.  Mexico may deserve a licking.
+That is possible enough.  Most people do.  But nobody has any right
+to lick Mexico except the United States.  We have a right, I
+flatter myself, to lick this entire continent, including ourselves,
+any time we want to.
+
+The signal gun is fired at 11, and we go off to the steamer in
+small boats.
+
+In our boat is an inebriated United States official, who flings his
+spectacles overboard, and sings a flippant and absurd song about
+his grandmother's spotted calf, with his ri-fol-lol-tiddery-i-do.
+After which he crumbles, in an incomprehensible manner, into the
+bottom of the boat, and howls dismally.
+
+We reach Manzanillo, another coast place, twenty-four hours after
+leaving Acapulco.  Manzanillo is a little Mexican village, and
+looked very wretched indeed, sweltering away there on the hot
+sands.  But it is a port of some importance, nevertheless, because
+a great deal of merchandise finds its way to the interior from
+there.  The white and green flag of Mexico floats from a red
+steam-tug (the navy of Mexico, by the way, consists of two tugs,
+a disabled raft, and a basswood life-preserver), and the Captain
+of the Port comes off to us in his small boat, climbs up the side
+of the St. Louis, and folds the healthy form of Captain Hudson to
+his breast.  There is no wharf here, and we have to anchor off
+the town.
+
+There was a wharf, but the enterprising Mexican peasantry, who
+subsist by poling merchandise ashore in dug-outs, indignantly tore
+it up.  We take on here some young Mexicans, from Colima, who are
+going to California.  They are of the better class, and one young
+man (who was educated in Madrid) speaks English rather better than
+I write it.  Be careful not to admire any article of an educated
+Mexican's dress, because if you do he will take it right off and
+give it to you, and sometimes this might be awkward.
+
+I said:  "What a beautiful cravat you wear!"
+
+"It is yours!" he exclaimed, quickly unbuckling it; and I could not
+induce him to take it back again.
+
+I am glad I did not tell his sister, who was with him and with whom
+I was lucky enough to get acquainted, what a beautiful white hand
+she had.  She might have given it to me on the spot; and that, as
+she had soft eyes, a queenly form, and a half million or so in her
+own right, would have made me feel bad.
+
+Reports reach us here of high-handed robberies by the banditti all
+along the road to the City of Mexico.  They steal clothes as well
+as coin.  A few days since the mail coach entered the city with all
+the passengers stark-naked!  They must have felt mortified.
+
+4.4.  CALIFORNIA.
+
+We reach San Francisco one Sunday afternoon.  I am driven to the
+Occidental Hotel by a kind-hearted hackman, who states that
+inasmuch as I have come out there to amuse people, he will only
+charge me five dollars.  I pay it in gold, of course, because
+greenbacks are not current on the Pacific coast.
+
+Many of the citizens of San Francisco remember the Sabbath day to
+keep it jolly; and the theatres, the circus, the minstrels, and the
+music halls are all in full blast to-night.
+
+I "compromise," and go to the Chinese theatre, thinking perhaps
+there can be no great harm in listening to worldly sentiments when
+expressed in a language I don't understand.
+
+The Chinaman at the door takes my ticket with the remark, "Ki hi-hi
+ki!  Shoolah!"
+
+And I tell him that on the whole I think he is right.
+
+The Chinese play is "continued," like a Ledger story, from night to
+night. It commences with the birth of the hero or heroine, which
+interesting event occurs publicly on the stage; and then follows
+him or her down to the grave, where it cheerfully ends.
+
+Sometimes a Chinese play lasts six months.  The play I am speaking
+of had been going on for about two months.  The heroine had grown
+up into womanhood, and was on the point, as I inferred, of being
+married to a young Chinaman in spangled pantaloons and a long black
+tail.  The bride's father comes in with his arms full of tea-chests,
+and bestows them, with his blessing, upon the happy couple.  As
+this play is to run four months longer, however, and as my time
+is limited, I go away at the close of the second act, while the
+orchestra is performing an overture on gongs and one-stringed
+fiddles.
+
+The door-keeper again says, "Ki hi-hi ki!  Shoolah!" adding, this
+time however, "Chow-wow."  I agree with him in regard to the ki hi
+and hi ki, but tell him I don't feel altogether certain about the
+chow-wow.
+
+To Stockton from San Francisco.
+
+Stockton is a beautiful town, that has ceased to think of becoming
+a very large place, and has quietly settled down into a state of
+serene prosperity.  I have my boots repaired here by an artist who
+informs me that he studied in the penitentiary; and I visit the
+lunatic asylum, where I encounter a vivacious maniac who invites me
+to ride in a chariot drawn by eight lions and a rhinoceros.
+
+John Phoenix was once stationed at Stockton, and put his mother
+aboard the San Francisco boat one morning with the sparkling
+remark, "Dear mother, be virtuous and you will be happy!"
+
+                   .     .      .      .
+
+Forward to Sacramento--which is the capital of the State, and a
+very nice old town.
+
+They had a flood here some years ago, during which several blocks
+of buildings sailed out of town and had never been heard from
+since.  A Chinaman concluded to leave in a wash tub, and actually
+set sail in one of those fragile barks.  A drowning man hailed him
+piteously, thus:  "Throw me a rope, oh throw me a rope!"  To which
+the Chinaman excitedly cried, "No have got--how can do?" and went
+on, on with the howling current.  He was never seen more; but a few
+weeks after his tail was found by some Sabbath-school children in
+the north part of the State.
+
+                   .     .      .      .
+
+I go to the mountain towns.  The sensational mining days are over,
+but I find the people jolly and hospitable nevertheless.
+
+At Nevada I am called upon, shortly after my arrival, by an
+athletic scarlet-faced man, who politely says his name is Blaze.
+
+"I have a little bill against you, sir," he observes.
+
+"A bill--what for?"
+
+"For drinks."
+
+"Drinks?"
+
+"Yes, sir--at my bar, I keep the well known and highly respected
+coffee-house down the street."
+
+"But, my dear sir, there is a mistake--I never drank at your bar in
+my life."
+
+"I know it, sir.  That isn't the point.  The point is this:  I pay
+out money for good liquors, and it is people's own fault if they
+don't drink them.  There are the liquors--do as you please about
+drinking them, BUT YOU MUST PAY FOR THEM!  Isn't that fair?"
+
+His enormous body (which Puck wouldn't put a girdle around for
+forty dollars) shook gleefully while I read this eminently original
+bill.
+
+Years ago Mr. Blaze was an agent of the California Stage Company.
+There was a formidable and well-organized opposition to the
+California Stage Company at that time, and Mr. Blaze rendered them
+such signal service in his capacity of agent that they were very
+sorry when he tendered his resignation.
+
+"You are some sixteen hundred dollars behind in your accounts, Mr.
+Blaze," said the President, "but in view of your faithful and
+efficient services we shall throw off eight hundred dollars off
+that amount."
+
+Mr. Blaze seemed touched by this generosity.  A tear stood in his
+eye and his bosom throbbed audibly.
+
+"You WILL throw off eight hundred dollars--you WILL?" he at last
+cried, seizing the President's hand and pressing it passionately to
+his lips.
+
+"I will," returned the President.
+
+"Well, sir," said Mr. Blaze, "I'm a gentleman, I AM, you bet!  And
+I won't allow no Stage Company to surpass me in politeness.  I'LL
+THROW OFF THE OTHER EIGHT HUNDRED, AND WE'LL CALL IT SQUARE!  No
+gratitude, sir--no thanks; it is my duty."
+
+                   .     .      .      .
+
+I get back to San Francisco in a few weeks, and am to start home
+Overland from here.
+
+The distance from Sacramento to Atchison, Kansas, by the Overland
+stage route, is 2200 miles, but you can happily accomplish a part
+of the journey by railroad.  The Pacific Railroad id completed
+twelve miles to Folsom, leaving only 2188 miles to go by stage.
+This breaks the monotony; but as it is midwinter and as there are
+well substantiated reports of the Piute savages being in one of
+their sprightly moods when they scalp people, I do not I may say
+that I do not leave the Capital of California in a light-hearted
+and joyous manner.  But "leaves have their time to fall," and I
+have my time to leave, which is now.
+
+We ride all day and all night, and ascend and descend some of the
+most frightful hills I ever saw.  We make Johnson's Pass, which is
+6752 feet high, about two o'clock in the morning, and go down the
+great Kingsbury grade with locked wheels.  The driver, with whom I
+sit outside, informs me, as we slowly roll down this fearful
+mountain road, which looks down on either side into an appalling
+ravine, that he has met accidents in his time, and cost the
+California Stage Company a great deal of money; "because," he says,
+"juries is agin us on principle, and every man who sues us is sure
+to recover.  But it will never be so agin, not with ME, you bet."
+
+"How is that?" I said.
+
+It was frightfully dark.  It was snowing withal, and
+notwithstanding the brakes were kept hard down, the coach slewed
+wildly, often fairly touching the brink of the black precipice.
+
+"How is that?" I said.
+
+"Why, you see," he replied, "that corpses never sue for damages,
+but maimed people do.  And the next time I have a overturn I shall
+go round and keerfully examine the passengers.  Them as is dead I
+shall let alone; but them as is mutilated I shall finish with the
+king-bolt!  Dead folks don't sue.  They ain't on it."
+
+Thus with anecdote did this driver cheer me up.
+
+4.5.  WASHOE.
+
+We reach Carson City about nine o'clock in the morning.  It is the
+capital of the silver-producing territory of Nevada.
+
+They shoot folks here somewhat, and the law is rather partial than
+otherwise to first-class murderers.
+
+I visit the territorial Prison, and the Warden points out the
+prominent convicts to me thus:
+
+"This man's crime was horse-stealing.  He is here for life."
+
+"This man is in for murder.  He is here for three years."
+
+But shooting isn't as popular in Nevada as it once was.  A few
+years since they used to have a dead man for breakfast every
+morning.  A reformed desperado told my that he supposed he had
+killed men enough to stock a graveyard.  "A feeling of remorse,"
+he said, "sometimes comes over me!  But I'm an altered man now.
+I hain't killed a man for over two weeks!  What'll yer poison
+yourself with?" he added, dealing a resonant blow on the bar.
+
+There used to live near Carson City a notorious desperado, who
+never visited town without killing somebody.  He would call for
+liquor at some drinking-house, and if anybody declined joining him
+he would at once commence shooting.  But one day he shot a man too
+many.  Going into the St. Nicholas drinking-house he asked the
+company present to join him in a North American drink.  One
+individual was rash enough to refuse.  With a look of sorrow rather
+than anger the desperado revealed his revolver, and said, "Good
+God!  MUST I kill a man every time I come to Carson?" and so saying
+he fired and killed the individual on the spot.  But this was the
+last murder the bloodthirsty miscreant ever committed, for the
+aroused citizens pursued him with rifles and shot him down in his
+own dooryard.
+                   .     .      .      .
+
+I lecture in the theatre at Carson, which opens out of a drinking
+and gambling house.  On each side of the door where my ticket-taker
+stands there are monte-boards and sweat-cloths, but they are
+deserted to-night, the gamblers being evidently of a literary turn
+of mind.
+                   .     .      .      .
+
+Five years ago there was only a pony-path over the precipitous
+hills on which now stands the marvelous city of Virginia, with its
+population of twelve thousand persons, and perhaps more.  Virginia,
+with its stately warehouses and gay shops; its splendid streets,
+paved with silver ore; its banking houses and faro-banks; its
+attractive coffee-houses and elegant theatre, its music halls and
+its three daily newspapers.
+
+Virginia is very wild, but I believe it is now pretty generally
+believed that a mining city must go through with a certain amount
+of unadulterated cussedness before it can settle down and behave
+itself in a conservative and seemly manner.  Virginia has grown up
+in the heart of the richest silver regions in the world, the El
+Dorado of the hour; and of the immense numbers who are swarming
+thither not more than half carry their mother's Bible or any
+settled religion with them.  The gambler and the strange woman as
+naturally seek the new sensational town as ducks take to that
+element which is so useful for making cocktails and bathing one's
+feet; and these people make the new town rather warm for a while.
+But by and by the earnest and honest citizens get tired of this
+ungodly nonsense and organize a Vigilance Committee, which hangs
+the more vicious of the pestiferous crowd to a sour-apple tree; and
+then come good municipal laws, ministers, meeting-houses, and a
+tolerably sober police in blue coats with brass buttons.  About
+five thousand able-bodied men are in the mines underground, here;
+some as far down as five hundred feet.  The Gould and Curry Mine
+employs nine hundred men, and annually turns out about twenty
+million dollars' worth of "demnition gold and silver," as Mr.
+Mantalini might express it, though silver chiefly.
+
+There are many other mines here and at Gold Hill (another startling
+silver city, a mile from here), all of which do nearly as well.
+The silver is melted down into bricks of the size of common house
+bricks; then it is loaded into huge wagons, each drawn by eight and
+twelve mules, and sent off to San Francisco.  To a young person
+fresh from the land of greenbacks this careless manner of carting
+off solid silver is rather a startler.  It is related that a young
+man who came Overland from New Hampshire a few months before my
+arrival became so excited about it that he fell in a fit, with the
+name of his Uncle Amos on his lips!  The hardy miners supposed he
+wanted his uncle there to see the great sight, and faint with him.
+But this was pure conjecture, after all.
+
+                   .     .      .      .
+
+I visit several of the adjacent mining towns, but I do not go to
+Aurora.  No, I think not.  A lecturer on psychology was killed
+there the other night by the playful discharge of a horse-pistol in
+the hands of a degenerate and intoxicated Spaniard.  This
+circumstance, and a rumor that the citizens are "agin" literature,
+induce me to go back to Virginia.
+
+                   .     .      .      .
+
+I had pointed out to me at a restaurant a man who had killed four
+men in street broils, and who had that very day cut his own
+brother's breast open in a dangerous manner with a small supper
+knife.  He was a gentleman, however.  I heard him tell some men so.
+He admitted it himself.  And I don't think he would lie about a
+little thing like that.
+
+The theatre at Virginia will attract the attention of the stranger,
+because it is an unusually elegant affair of the kind, and would be
+so regarded anywhere.  It was built, of course, by Mr. Thomas
+Maguire, the Napoleonic manager of the Pacific, and who has built
+over twenty theatres in his time and will perhaps build as many
+more, unless somebody stops him--which, by the way, will not be a
+remarkably easy thing to do.
+
+As soon as a mining camp begins to assume the proportions of a
+city, at about the time the whiskey-vender draws his cork or the
+gambler spreads his green cloth, Maguire opens a theatre, and with
+a hastily-organized "Vigilance Committee" of actors, commences to
+execute Shakespeare.
+
+4.6.  MR. PEPPER.
+
+My arrival at Virginia City was signalized by the following
+incident:
+
+I had no sooner achieved my room in the garret of the International
+Hotel than I was called upon by an intoxicated man who said he was
+an Editor.  Knowing how rare it was for an Editor to be under the
+blighting influence of either spiritous or malt liquors, I received
+this statement doubtfully.  But I said:
+
+"What name?"
+
+"Wait!" he said, and went out.
+
+I heard him pacing unsteadily up and down the hall outside.  In ten
+minutes he returned, and said:
+
+"Pepper!"
+
+Pepper was indeed his name.  He had been out to see if he could
+remember it; and he was so flushed with his success that he
+repeated it joyously several times, and then, with a short laugh he
+went away.
+
+I had often heard of a man being "so drunk that he didn't know what
+town he lived in," but here was a man so hideously inebriated that
+he didn't know what his name was.
+
+I saw him no more, but I heard from him.  For he published a notice
+of my lecture, in which he said I had A DISSIPATED AIR!
+
+4.7.  HORACE GREELEY'S RIDE TO PLACERVILLE.
+
+When Mr. Greeley was in California ovations awaited him at every
+town.  He had written powerful leaders in the "Tribune" in favor of
+the Pacific railroad, which had greatly endeared him to the
+citizens of the Golden State.  And therefore they made much of him
+when he went to see them.
+
+At one town the enthusiastic populace tore his celebrated white
+coat to pieces, and carried the pieces home to remember him by.
+
+The citizens of Placerville prepared to fete the great journalist,
+and an extra coach, with extra relays of horses, was chartered to
+the California Stage Company to carry him from Folsom to
+Placerville--distance, forty miles.  The extra was in some way
+delayed, and did not leave Folsom until late in the afternoon.  Mr.
+Greeley was to be feted at 7 o'clock that evening by the citizens
+of Placerville, and it was altogether necessary that he should be
+there by that hour.  So the Stage Company said to Henry Monk, the
+driver of the extra:  "Henry, this great man must be there by 7
+to-night."  And Henry answered, "The great man shall be there."
+
+The roads were in an awful state, and during the first few miles
+out of Folsom slow progress was made.
+
+"Sir," said Mr. Greeley, "are you aware that I MUST be at
+Placerville at 7 o'clock to-night?"
+
+"I've got my orders!" laconically returned Henry Monk.
+
+Still the coach dragged slowly forward.
+
+"Sir," said Mr. Greeley, "this is not a trifling matter.  I MUST be
+there at 7!"
+
+Again came the answer, "I've got my orders!"
+
+But the speed was not increased, and Mr. Greeley chafed away
+another half hour; when, as he was again about to remonstrate with
+the driver, the horses suddenly started into a furious run, and all
+sorts of encouraging yells filled the air from the throat of Henry
+Monk.
+
+"That is right, my good fellow!" cried Mr. Greeley.  "I'll give you
+ten dollars when we get to Placerville.  Now we ARE going!"
+
+They were indeed, and at a terrible speed.
+
+Crack, crack! went the whip, and again "that voice" split the air.
+"Git up!  Hi yi!  G'long!  Yip--yip!"
+
+And on they tore over stones and ruts, up hill and down, at a rate
+of speed never before achieved by stage horses.
+
+Mr. Greeley, who had been bouncing from one end of the coach to the
+other like an india-rubber ball, managed to get his head out of the
+window, when he said:
+
+"Do--on't--on't--on't you-u-u think we-e-e-e shall get there by
+seven if we do--on't--on't go so fast?"
+
+"I've got my orders!"  That was all Henry Monk said.  And on tore
+the coach.
+
+It was becoming serious.  Already the journalist was extremely sore
+from the terrible jolting, and again his head "might have been
+seen" at the window.
+
+"Sir," he said, "I don't care--care--AIR, if we DON'T get there at
+seven!"
+
+"I've got my orders!"  Fresh horses.  Forward again, faster than
+before.  Over rocks and stumps, on one of which the coach narrowly
+escaped turning a summerset.
+
+"See here!" shrieked Mr. Greeley, "I don't care if we don't get
+there at all!"
+
+"I've got my orders!  I work for the California Stage Company, _I_
+do.  That's wot I WORK for.  They said, 'git this man through by
+seving.'  An' this man's goin' through.  You bet!  Gerlong!  Whoo-
+ep!"
+
+Another frightful jolt, and Mr. Greeley's bald head suddenly found
+its way through the roof of the coach, amidst the crash of small
+timbers and the ripping of strong canvas.
+
+"Stop, you ---- maniac!" he roared.
+
+Again answered Henry Monk:
+
+"I've got my orders!  KEEP YOUR SEAT, HORACE!"
+
+At Mud Springs, a village a few miles from Placerville, they met a
+large delegation of the citizens of Placerville, who had come out
+to meet the celebrated editor, and escort him into town.  There was
+a military company, a brass band, and a six-horse wagon load of
+beautiful damsels in milk-white dresses representing all the States
+in the Union.  It was nearly dark now, but the delegation were
+amply provided with torches, and bonfires blazed all along the road
+to Placerville.
+
+The citizens met the coach in the outskirts of Mud Springs, and Mr.
+Monk reined in his foam-covered steeds.
+
+"Is Mr. Greeley on board?" asked the chairman of the committee.
+
+"HE WAS, A FEW MILES BACK!" said Mr. Monk; "yes," he added, after
+looking down through the hole which the fearful jolting had made in
+the coach-roof--"yes, I can see him!  He is there!"
+
+"Mr. Greeley," said the Chairman of the Committee, presenting
+himself at the window of the coach, "Mr. Greeley, sir!  We are come
+to most cordially welcome you, sir--why, God bless me, sir, you are
+bleeding at the nose!"
+
+"I've got my orders!" cried Mr. Monk.  "My orders is as follers:
+Get him there by seving!  It wants a quarter to seving.  Stand out
+of the way!"
+
+"But, sir," exclaimed the Committee-man, seizing the off leader by
+the reins--"Mr Monk, we are come to escort him into town!  Look at
+the procession, sir, and the brass bands, and the people, and the
+young women, sir!"
+
+"I'VE GOT MY ORDERS!" screamed Mr. Monk.  "My orders don't say
+nothin' about no brass bands and young women.  My orders says, 'git
+him there by seving!'  Let go them lines!  Clear the way there!
+Whoo-ep!  KEEP YOUR SEAT, HORACE!" and the coach dashed wildly
+through the procession, upsetting a portion of the brass band, and
+violently grazing the wagon which contained the beautiful young
+women in white.
+
+Years hence, gray-haired men, who were little boys in this
+procession, will tell their grandchildren how this stage tore
+through Mud Springs, and how Horace Greeley's bald head ever and
+anon showed itself, like a wild apparition, above the coach-roof.
+
+Mr. Monk was on time.  There is a tradition that Mr. Greeley was
+very indignant for a while; then he laughed, and finally presented
+Mr. Monk with a brand new suit of clothes.
+
+Mr. Monk himself is still in the employ of the California Stage
+Company, and is rather fond of relating a story that has made him
+famous all over the Pacific coast.  But he says he yields to no man
+in his admiration for Horace Greeley.
+
+4.8.  TO REESE RIVER.
+
+I leave Virginia for Great Salt Lake City, via the Reese River
+Silver Diggings.
+
+There are eight passengers of us inside the coach--which, by the
+way, isn't a coach, but a Concord covered mud wagon.
+
+Among the passengers is a genial man of the name of Ryder, who has
+achieved a widespread reputation as a strangler of unpleasant bears
+in the mountain fastnesses of California, and who is now an eminent
+Reese River miner.
+
+We ride night and day, passing through the land of the Piute
+Indians.  Reports reach us that fifteen hundred of these savages
+are on the Rampage, under the command of a red usurper named
+Buffalo Jim, who seems to be a sort of Jeff Davis, inasmuch as he
+and his followers have seceded from the regular Piut organization.
+The seceding savages have announced that they shall kill and scalp
+all pale-faces [which makes our face pale, I reckon] found loose in
+that section.  We find the guard doubled at all the stations where
+we change horses, and our passengers nervously examine their
+pistols and readjust the long glittering knives in their belts.  I
+feel in my pockets to see if the key which unlocks the carpet-bag
+containing my revolvers is all right--for I had rather brilliantly
+locked my deadly weapons up in that article, which was strapped
+with the other baggage to the rack behind.  The passengers frown on
+me for this carelessness, but the kind-hearted Ryder gives me a
+small double-barrelled gun, with which I narrowly escape murdering
+my beloved friend Hingston in cold blood.  I am not used to guns
+and things, and in changing the position of this weapon I pulled
+the trigger rather harder than was necessary.
+
+When this wicked rebellion first broke out I was among the first--
+to stay at home--chiefly because of my utter ignorance of firearms.
+I should be valuable to the Army as a Brigadier-General only so far
+as the moral influence of--my name went.
+
+                   .     .      .      .
+
+When this wicked rebellion first broke out I was among the first to
+stay at home -chiefly because of my utter ignorance of firearms.  I
+should be valuable to the army as a Brigadier General only so far
+as the moral influence of my name went.
+
+                   .     .      .      .
+
+However, we pass safely through the land of the Piutes, unmolested
+by Buffalo James.  This celebrated savage can read and write, and
+is quite an orator, like Metamora, or the last of the Wampanoags.
+He went on to Washington a few years ago and called Mr. Buchanan
+his Great Father, and the members of the Cabinet his dear Brothers.
+They gave him a great many blankets, and he returned to his
+beautiful hunting grounds and went to killing stage drivers.  He
+made such a fine impression upon Mr. Buchanan during his sojourn in
+Washington that that statesman gave a young English tourist, who
+crossed the plain a few years since, a letter of introduction to
+him.  The great Indian chief read the English person's letter with
+considerable emotion, and then ordered him scalped, and stole his
+trunks.
+
+Mr. Ryder knows me only as "Mr. Brown," and he refreshes me during
+the journey by quotations from my books and lectures.
+
+"Never seen Ward?" he said.
+
+"Oh, no."
+
+"Ward says he likes little girls, but he likes large girls just as
+well.  Haw, haw, haw!  I should like to see the d--- fool!"
+
+He referred to me.
+
+He even woke me up in the middle of the night to tell me one of
+Ward's jokes.
+
+                   .     .      .      .
+
+I lecture at Big Creek.
+
+Big Creek is a straggling, wild, little village; and the house in
+which I had the honor of speaking a piece had no other floor than
+the bare earth. The roof was of sagebrush.  At one end of the
+building a huge wood fire blazed, which, with half-a-dozen
+tallow-candles, afforded all the illumination desired.  The
+lecturer spoke from behind the drinking bar.  Behind him long rows
+of decanters glistened; above him hung pictures of race-horses and
+prize-fighters; and beside him, in his shirt-sleeves and wearing
+a cheerful smile, stood the bar-keeper.  My speeches at the Bar
+before this had been of an elegant character, perhaps, but quite
+brief.  They never extended beyond "I don't care if I do," "No
+sugar in mine,"  And short gems of a like character.
+
+I had a good audience at Big Creek, who seemed to be pleased, the
+bar-keeper especially; for at the close of any "point" that I
+sought to make he would deal the counter a vigorous blow with his
+fist, and exclaim, "Good boy from the New England States! listen
+to William W. Shakespeare!"
+
+Back to Austin.  We lose our way, and hitching our horses to a
+tree, go in search of some human beings.  The night is very dark.
+We soon stumble upon a camp-fire, and an unpleasantly modulated
+voice asks us to say our prayers, adding that we are on the point
+of going to Glory with our boots on.  I think perhaps there may be
+some truth in this, as the mouth of a horse-pistol almost grazes my
+forehead, while immediately behind the butt of that death-dealing
+weapon I perceive a large man with black whiskers.  Other large men
+begin to assemble, also with horse-pistols.  Dr. Hingston hastily
+explains, while I go back to the carriage to say my prayers, where
+there is more room.  The men were miners on a prospecting tour, and
+as we advanced upon them without sending them word they took us for
+highway robbers.
+
+I must not forget to say that my brave and kind-hearted friend
+Ryder of the mail coach, who had so often alluded to "Ward" in our
+ride from Virginia to Austin, was among my hearers at Big Creek.
+He had discovered who I was, and informed me that he had debated
+whether to wollop me or give me some rich silver claims.
+
+4.9.  GREAT SALT LAKE CITY.
+
+How was I to be greeted by the Mormons?  That was rather an
+exciting question with me.  I had been told on the plains that a
+certain humorous sketch of mine (written some years before) had
+greatly incensed the Saints, and a copy of the Sacramento "Union"
+newspaper had a few days before fallen into my hands in which a
+Salt Lake correspondent quite clearly intimated that my reception
+at the new Zion might be unpleasantly warm.  I ate my dinner
+moodily and sent out for some cigars.  The venerable clerk brought
+me six.  They cost only two dollars.  They were procured at a store
+near by.  The Salt Lake House sells neither cigars nor liquors.
+
+I smoke in my room, having no heart to mingle with the people in
+the office.
+
+Dr. Hingston "thanks God he never wrote against the Mormons," and
+goes out in search of a brother Englishman.  Comes back at night
+and says there is a prejudice against me.  Advises me to keep in.
+Has heard that the Mormons thirst for my blood and are on the
+lookout for me.
+
+Under these circumstances I keep in.
+
+The next day is Sunday, and we go to the Tabernacle, in the
+morning.  The Tabernacle is located on -- street, and is a long
+rakish building of adobe, capable of seating some twenty-five
+hundred persons.  There is a wide platform and a rather large
+pulpit at one end of the building, and at the other end is another
+platform for the choir.  A young Irishman of the name of Sloan
+preaches a sensible sort of discourse, to which a Presbyterian
+could hardly have objected.  Last night this same Mr. Sloan enacted
+a character in a rollicking Irish farce at the theatre!  And he
+played it well, I was told; not so well, of course, as the great
+Dan Bryant could; but I fancy he was more at home in the Mormon
+pulpit than Daniel would have been.
+
+The Mormons, by the way, are preeminently an amusement-loving
+people, and the Elders pray for the success of their theatre with
+as much earnestness as they pray for anything else.  The
+congregation doesn't startle us.  It is known, I fancy, that the
+heads of the Church are to be absent to-day, and the attendance is
+slim.  There are no ravishingly beautiful women present, and no
+positively ugly ones.  The men are fair to middling.  They will
+never be slain in cold blood for their beauty, nor shut up in jail
+for their homeliness.
+
+There are some good voices in the choir to-day, but the orchestral
+accompaniment is unusually slight.  Sometimes they introduce a full
+brass and string band in Church.  Brigham Young says the devil has
+monopolized the good music long enough, and it is high time the
+Lord had a portion of it.  Therefore trombones are tooted on
+Sundays in Utah as well as on other days; and there are some
+splendid musicians there.  The Orchestra in Brigham Young's theatre
+is quite equal to any in Broadway.  There is a youth in Salt Lake
+City (I forget his name) who plays the cornet like a North American
+angel.
+
+Mr. Stenhouse relieves me of any anxiety I had felt in regard to
+having my swan-like throat cut by the Danites, but thinks my
+wholesale denunciation of a people I had never seen was rather
+hasty.  The following is the paragraph to which the Saints
+objected.  It occurs in an "Artemus Ward" paper on Brigham Young,
+written some years ago:
+
+"I girded up my Lions and fled the Seen.  I packt up my duds and
+left Salt Lake, which is a 2nd Soddum and Germorer, inhabited by as
+theavin' & onprincipled a set of retchis as ever drew Breth in eny
+spot on the Globe."
+
+I had forgotten all about this, and as Elder Stenhouse read it to
+me "my feelings may be better imagined than described," to use
+language I think I have heard before.  I pleaded, however, that it
+was a purely burlesque sketch, and that this strong paragraph
+should not be interpreted literally at all. The Elder didn't seem
+to see it in that light, but we parted pleasantly.
+
+4.10.  THE MOUNTAIN FEVER.
+
+I go back to my hotel and go to bed, and I do not get up again for
+two weary weeks.  I have the mountain fever (so called in Utah,
+though it closely resembles the old-style typhus) and my case is
+pronounced dangerous.  I don't regard it so.  I don't, in fact,
+regard anything.  I am all right, MYSELF.  My poor Hingston shakes
+his head sadly, and Dr. Williamson, from Camp Douglas, pours all
+kinds of bitter stuff down my throat.  I drink his health in a dose
+of the cheerful beverage known as jalap, and thresh the sheets with
+my hot hands.  I address large assemblages, who have somehow got
+into my room, and I charge Dr. Williamson with the murder of Luce,
+and Mr. Irwin, the actor, with the murder of Shakspeare.  I have a
+lucid spell now and then, in one of which James Townsend, the
+landlord, enters.  He whispers, but I hear what he says far too
+distinctly:  "This man can have anything and everything he wants;
+but I'm no hand for a sick room.  I NEVER COULD SEE ANYBODY DIE."
+
+That was cheering, I thought.  The noble Californian, Jerome
+Davis -he of the celebrated ranch- sticks by me like a twin
+brother, although I fear that in my hot frenzy I more than once
+anathematised his kindly eyes.  Nursers and watchers, Gentile and
+Mormon, volunteer their services in hoops and rare wines are sent
+to me from all over the city, which, if I can't drink, the
+venerable and excellent Thomas can, easy.
+
+I lay there in this wild, broiling way for nearly two weeks, when
+one morning I woke up with my head clear and an immense plaster on
+my stomach. The plaster had OPERATED.  I was so raw that I could by
+no means say to Dr. Williamson, "Well done, thou good and faithful
+servant".  I wished he had lathed me before he plastered me.  I was
+fearfully weak.  I was frightfully thin.  With either one of my
+legs you could have cleaned the stem of a meerschaum pipe.  My
+backbone had the appearance of a clothesline with a quantity of
+English walnuts strung upon it.  My face was almost gone.  My nose
+was so sharp that I didn't dare stick it into other people's
+business for fear it would stay there.  But by borrowing my agent's
+overcoat I succeeded in producing a shadow.
+
+                   .     .      .      .
+
+I have been looking at Zion all day, and my feet are sore and my
+legs are weary.  I go back to the Salt Lake House and have a talk
+with landlord Townsend about the State of Maine.  He came from that
+bleak region, having skinned his infantile eyes in York county.  He
+was at Nauvoo, and was forced to sell his entire property there for
+50 dollars.  He has thrived in Utah, however, and is much thought
+of by the Church.  He is an Elder, and preaches occasionally.  He
+has only two wives.  I hear lately that he has sold his property
+for 25,000 dollars to Brigham Young, and gone to England to make
+converts.  How impressive he may be as an expounder of the Mormon
+gospel, I don't know.  His beefsteaks and chicken-pies, however,
+were first-rate.  James and I talk about Maine, and cordially agree
+that so far as pine boards and horse-mackerel are concerned, it is
+equalled by few and excelled by none.  There is no place like home,
+as Clara, the Maid of Milan, very justly observes; and while J.
+Townsend would be unhappy in Maine, his heart evidently beats back
+there now and then.
+
+I heard the love of home oddly illustrated in Oregon, one night, in
+a country bar-room.  Some well-dressed men, in a state of strong
+drink, were boasting of their respective places of nativity.
+
+"I," said one, "was born in Mississippi, where the sun ever shines
+and the magnolias bloom all the happy year round."
+
+"And I," said another, "was born in Kentucky--Kentucky, the home of
+impassioned oratory:  the home of Clay, the State of splendid
+women, of gallant men!"
+
+"And I," said another, "was born in Virginia, the home of
+Washington:  the birthplace of statesmen:  the State of chivalric
+deeds and noble hospitality!"
+
+"And I," said a yellow-haired and sallow-faced man, who was not of
+this party at all, and who had been quietly smoking a short black
+pipe by the fire during their magnificent conversation--"and I was
+born in the garden-spot of America."
+
+"Where is that?" they said.
+
+"SKEOUHEGAN, MAINE!" he replied; "kin I sell you a razor strop?"
+
+4.11.  "I AM HERE."
+
+There is no mistake about that, and there is a good prospect of my
+staying here for some time to come.  The snow is deep on the
+ground, and more is falling.
+
+The Doctor looks glum, and speaks of his ill-starred countryman, of
+Sir. J. Franklin, who went to the Arctic once too much.
+
+A good thing happened down here the other day, said a miner from
+New Hampshire to me.  "A man of Boston dressin' went through there,
+and at one of the stations there wasn't any mules.  Says the man
+who was fixed out to kill in his Boston dressin', 'Where's them
+mules?'  Says the driver, 'Them mules is into the sage brush.  You
+go catch 'em--that's wot YOU do.'  Says the man of Boston dressin',
+'Oh no!'  Says the driver!  'Oh, yes!' and he took his long
+coach-whip and licked the man of Boston dressin' till he went and
+caught them mules.  How does that strike you for a joke?"
+
+It didn't strike me as much of a joke to pay a hundred and
+seventy-five dollars in gold fare, and then be horse-whipped by
+stage-drivers, for declining to chase mules.  But people's ideas
+of humor differ in regard to shrewdness which "reminds me of a
+little story."
+
+Sitting in a New England country store one day I overheard the
+following dialogue between two brothers:
+
+"Say, Bill, wot you done with that air sorrel mare of yourn?"
+
+"Sold her," said William, with a smile of satisfaction.
+
+"Wot'd you git?"
+
+"Hund'd an' fifty dollars, cash deown!"
+
+"Show!  Hund'd an' fifty for that kickin' spavin'd critter!  Who'd
+you sell her to?"
+
+"Sold her to mother!"
+
+"Wot!" exclaimed brother No. 1, "did you railly sell that kickin'
+spavin'd critter to mother?  Wall, you AIR a shrewd one!"
+
+A Sensation--Arrival by the Overland Stage of two Missouri girls,
+who had come unescorted all the way through.  They are going to
+Nevada territory to join their father.  They are pretty, but,
+merciful heavens! how they throw the meat and potatoes down their
+throats.  "This is the first squar' meal we've had since we left
+Rocky Thompson's," said the eldest.  Then addressing herself to me,
+she said:
+
+"Air you the literary man?"
+
+I politely replied that I was one of "them fellers."
+
+"Wall, don't make fun of our clothes in the papers.  We air goin'
+right through in these here clothes, WE air!  We ain't goin' to RAG
+OUT till we git to Nevady!  Pass them sassiges!"
+
+4.12.  BRIGHAM YOUNG.
+
+Brigham Young sends word I may see him tomorrow.  So I go to bed
+singing the popular Mormon hymn:
+
+         "Let the chorus still be sung,
+          Long live Brother Brigham Young,
+             And blessed be the vale of Desere't--ret--ret!
+             And blessed be the vale of Deseret."
+
+At two o'clock the next afternoon Mr. Hiram B. Clawson, Brigham
+Young's son-in-law and chief business manager, calls for me with
+the Prophet's private sleigh, and we start for that distinguished
+person's block.
+
+I am shown into the Prophet's chief office.  He comes forward,
+greets me cordially, and introduces me to several influential
+Mormons who are present.
+
+Brigham Young is 62 years old, of medium height, and with sandy
+hair and whiskers.  An active, iron man, with a clear sharp eye.
+A man of consummate shrewdness--of great executive ability.  He
+was born in the State of Vermont, and so by the way was Heber C.
+Kimball, who will wear the Mormon Belt when Brigham leaves the
+ring.
+
+Brigham Young is a man of great natural ability.  If you ask me,
+How pious is he?  I treat it as a conundrum, and give it up.
+Personally he treated me with marked kindness throughout my sojourn
+in Utah.
+
+His power in Utah is quite as absolute as that of any living
+sovereign, yet he uses it with such consummate shrewdness that his
+people are passionately devoted to him.
+
+He was an Elder at the first formal Mormon "stake" in this country,
+at Kirtland, Ohio, and went to Nauvoo with Joseph Smith.  That
+distinguished Mormon handed his mantle and the Prophet business
+over to Brigham when he died at Nauvoo.
+
+Smith did a more flourishing business in the Prophet line than B.Y.
+does. Smith used to have his little Revelation almost every day--
+sometimes two before dinner.  B.Y. only takes one once in a while.
+
+The gateway of his block is surmounted by a brass American eagle,
+and they say ("they say" here means anti-Mormons) that he receives
+his spiritual dispatches through this piece of patriotic poultry.
+They also say that he receives revelations from a stuffed white
+calf that is trimmed with red ribbons and kept in an iron box.  I
+don't suppose these things are true.  Rumor says that when the Lion
+House was ready to be shingled, Brigham received a message from the
+Lord stating that the carpenters must all take hold and shingle it,
+and not charge a red cent for their services. Such carpenters as
+refused to shingle would go to hell, and no postponement on account
+of the weather.  They say that Brigham, whenever a train of
+emigrants arrives in Salt Lake City, orders all the women to march
+up and down before his block, while he stands on the portico of the
+Lion House and gobbles up the prettiest ones.
+
+He is an immensely wealthy man.  His wealth is variously estimated
+at from ten to twenty millions of dollars.  He owns saw mills,
+grist mills, woollen factories, brass and iron foundries, farms,
+brick-yards, &c., and superintends them all in person.  A man in
+Utah individually owns what he grows and makes, with the exception
+of a one-tenth part: that must go to the Church; and Brigham Young,
+as the first President, is the Church's treasurer.  Gentiles, of
+course, say that he abuses this blind confidence of his people, and
+speculates with their money, and absorbs the interest if he doesn't
+the principle.  The Mormons deny this, and say that whatever of
+their money he does use is for the good of the Church; that he
+defrays the expenses of emigrants from far over the seas; that he
+is foremost in all local enterprises tending to develop the
+resources of the territory, an that, in short, he is incapable of
+wrong in any shape.
+
+Nobody seems to know how many wives Brigham Young has.  Some set
+the number as high as eighty, in which case his children must be
+too numerous to mention.  Each wife has a room to herself.  These
+rooms are large and airy, and I suppose they are supplied with all
+the modern improvements.  But never having been invited to visit
+them I can't speak very definitely about this.  When I left the
+Prophet he shook me cordially by the hand, and invited me to call
+again.  This was flattering, because if he dislikes a man at the
+first interview he never sees him again.  He made no allusion to
+the "letter" I had written about his community.  Outside guards
+were pacing up and down before the gateway, but they smiled upon me
+sweetly.  The veranda was crowded with Gentile miners, who seemed
+to be surprised that I didn't return in a wooden overcoat, with my
+throat neatly laid open from ear to ear.
+
+Nobody seems to know how many wives Brigham Young has.  Some set
+the number as high as eighty, in which case his children must be
+too numerous to mention.  Each wife has a room to herself, These
+rooms are large ans airy, and I suppose they are supplied with all
+the modern improvements.  But never having been invited to visit
+them, I can't speak very definitely about this.  When I left the
+Prophet he shook me cordially by the hand, and invited me to call
+again.  This was flattering, because if he dislikes a man at the
+first interview he never sees him again.  He made no allusion to
+the "letter" I had written about his community.  Outside guards
+were pacing up and down before the gateway, but they smiled upon me
+sweetly.  The verandah was crowded with Gentile miners, who seemed
+to be surprised that I didn't return in a wooden overcoat, with my
+throat neatly laid open from ear to ear.
+
+                   .     .      .      .
+
+I go to the Theatre to-night.  The play is Othello.  This is a
+really fine play and was a favourite of G. Washington, the father
+of his country.  On this stage, as upon all stages, the good old
+conventionalities are strictly adhered to.  The actors cross each
+other at oblique angles from L.U.E. to R. I. E. on the slightest
+provocation.  Othello howls, Iago scowls, and the boys all laugh
+when Roderigo dies.  I stay to see charming Mrs. Irwin (Desdemona)
+die, which she does very sweetly.
+
+                   .     .      .      .
+
+I was an actor once, myself.  I supported Edwin Forrest at a
+theatre in Philadelphia.  I played a pantomimic part.  I removed
+the chairs between scenes, and I did it so neatly that Mr. F. said
+I would make a cabinet-maker if I "applied" myself.
+
+                   .     .      .      .
+
+The parquette of the theatre is occupied exclusively by the Mormons
+and their wives and children.  They wouldn't let a Gentile in there
+any more than they would a serpent.  In the side seats are those of
+President Young's wives who go the play, and a large and varied
+assortment of children.  It is an odd sight to see a jovial old
+Mormon file down the parquette aisle with ten or twenty robust
+wives at his heels.  Yet this spectacle may be witnessed every
+night the theatre is opened.  The dress circle is chiefly occupied
+by the officers from Camp Douglas and the Gentile Merchants.  The
+upper circles are filled by the private soldiers and Mormon boys.
+I feel bound to say that a Mormon audience is quite as appreciative
+as any other kind of an audience.  They prefer comedy to tragedy.
+Sentimental plays, for obvious reasons, are unpopular with them. It
+will be remembered that when C. Melnotte, in the Lady of Lyons,
+comes home from the wars, he folds Pauline to his heaving heart and
+makes several remarks of an impassioned and slobbering character.
+One night when the Lady of Lyons was produced here, an aged Mormon
+arose and went out with his twenty-four wives, angrily stating that
+he wouldn't sit and see a play where a man made such a CUSSED FUSS
+OVER ONE WOMAN.  The prices of the theatre are: Parquette, 75
+cents; second and third upper circles, 25 cents.  In an audience of
+two thousand persons (and there are almost always that number
+present probably a thousand will pay in cash, and the other
+thousand in grain and a variety of articles; all of which will
+command money however.
+
+Brigham Young usually sits in the middle of the parquette, in a
+rocking-chair, and with his hat on.  He does not escort his wives
+to the theatre.  They go alone.  When the play drags he either
+falls into a tranquil sleep or walks out.  He wears in winter time
+a green wrapper, and his hat in the style introduced into this
+country by Louis Kossuth, Esq. the liberator of Hungaria.  I
+invested a dollar in the liberty of Hungaria nearly fifteen years
+ago.
+
+4.13.  A PIECE IS SPOKEN.
+
+A piece hath its victories no less than war.
+
+"Blessed are the Piece-makers."  That is Scripture.
+
+The night of the "comic oration" is come, and the speaker is
+arranging his back hair in the star dressing-room of the theatre.
+The orchestra is playing selections from the Gentile opera of "Un
+Ballo in Maschera," and the house is full.  Mr. John F. Caine, the
+excellent stage manager, has given me an elegant drawing-room scene
+in which to speak my little piece.
+
+[In Iowa, I once lectured in a theatre, and the heartless manager
+gave me a dungeon scene.]
+
+The curtain goes up, and I stand before a Salt Lake of upturned
+faces.
+
+I can only say that I was never listened to more attentively and
+kindly in my life than I was by this audience of Mormons.
+
+Among my receipts at the box-office this night were--
+
+20 bushels of wheat.
+5 bushels of corn.
+4 bushels of potatoes.
+2 bushels of oats.
+4 bushels of salt.
+2 hams.
+1 live pig (Dr. Hingston chained him in the box-office.)
+1 wolf-skin.
+5 pounds of honey in the comb.
+16 strings of sausages--2 pounds to the string.
+1 cat-skin.
+1 churn (two families went in on this; it is an ingenious churn,
+and fetches butter in five minutes by rapid grinding.)
+1 set of children's under-garments, embroidered.
+1 firkin of butter.
+1 keg of apple-sauce.
+
+One man undertook to pass a dog (a cross between a Scotch terrier
+and a Welsh rabbit) at the box-office, and another presented a
+German-silver coffin-plate, but the Doctor very justly repulsed
+them both.
+
+4.14.  THE BALL.
+
+The Mormons are fond of dancing.  Brigham and Heber C. dance.  So
+do Daniel H. Wells, and the other heads of the Church.  Balls are
+opened with prayer, and when they break up a benediction is
+pronounced.
+
+I am invited to a ball at Social Hall, and am escorted thither by
+Brothers Stenhouse and Clawson.
+
+Social Hall is a spacious and cheerful room.  The motto of "Our
+Mountain Home" in brilliant evergreen capitals adorns one end of
+the hall, while at the other a platform is erected for the
+musicians, behind whom there is room for those who don't dance to
+sit and look at the festivities.  Brother Stenhouse, at the request
+of President Young, formally introduces me to company from the
+platform.  There is a splendor of costumery about the dancers I had
+not expected to see.  Quadrilles only are danced.  The mazourka is
+considered sinful.  Even the old-time round waltz is tabooed.
+
+I dance.
+
+The Saints address each other here, as elsewhere, as Brother and
+Sister.  "This way, Sister!"  "Where are you going, Brother?" &c.,
+&c.  I am called Brother Ward.  This pleases me, and I dance with
+renewed vigor.
+
+The Prophet has some very charming daughters, several of whom are
+present to-night.
+
+I was told they spoke French and Spanish.
+
+The Prophet is more industrious than graceful as a dancer.  He
+exhibits, however, a spryness of legs quite remarkable in a man at
+his time of life. I didn't see Heber C. Kimball on the floor.  I am
+told he is a loose and reckless dancer, and that many a lily-white
+toe has felt the crushing weight of his cow-hide monitors.
+
+The old gentleman is present, however, with a large number of
+wives.  It is said he calls them his "heifers."
+
+"Ain't you goin' to dance with some of my wives?" said a Mormon to
+me.
+
+These things make a Mormon ball more spicy than a Gentile one.
+
+The supper is sumptuous, and bear and beaver adorn the bill of
+fare.
+
+I go away at the early hour of two in the morning.  The moon is
+shining brightly on the snow-covered streets.  The lamps are out,
+and the town is still as a graveyard.
+
+4.15.  PHELP'S ALMANAC.
+
+There is an eccentric Mormon at Salt Lake City of the name of W.W.
+Phelps. He is from Cortland, State of New York, and has been a
+Saint for a good many years.  It is said he enacts the character of
+the Devil, with a pea-green tail, in the Mormon initiation
+ceremonies.  He also published an almanac, in which he blends
+astronomy with short moral essays, and suggestions in regard to the
+proper management of hens.  He also contributes a poem, entitled
+"The Tombs," to his almanac for the current year, from which I
+quote the last verse:--
+
+           "Choose ye:  to rest with stately grooms;
+             Just such a place there is for sleeping;
+             Where everything, in common keeping,
+             Is free from want and worth and weeping;
+             There folly's harvest is a reaping.
+            Down in the grave among the tombs."
+
+Now, I know that poets and tin-pedlars are "licensed," but why does
+W.W.P. advise us to sleep in the barn with the ostlers?  These are
+the most dismal tombs on record, not except the Tomb of the
+Capulets, the Tombs of New York, or the Toombs of Georgia.
+
+Under the head of "OLD Sayings," Mr. P. publishes the following.
+There is a modesty about the last "saying" which will be pretty apt
+to strike the reader:--
+
+          "The Lord does good and Satan evil, said Moses.
+           Sun and moon, see me conquer, said Joshua.
+           Virtue exalts a woman, said David.
+           Fools and folly frolic, said Solomon.
+           Judgments belong to God, said Isaiah.
+           The path of the just is plain, said Jeremiah.
+           The soul that sins dies, said Ezekiel.
+           The wicked do wicked, said Daniel.
+           Ephraim fled and hid, said Hosea.
+           The Gentiles war and waste, said Joel.
+           The second reign is peace and plenty, said Amos.
+           Zion is the house of the gods, said Obadiah,
+           A fish saved me, said Jonah.
+           Our Lion will be terrible, said Micah.
+           Doctor, cure yourself, said the Saviour.
+           Live to live again, said W.W. Phelps."
+
+4.16.  HURRAH FOR THE ROAD!
+
+TIME, Wednesday afternoon, February 10.  The Overland Stage, Mr.
+William Glover on the box, stands before the veranda of the Salt
+Lake House.  The genial Nat Stein is arranging the waybill.  Our
+baggage (the Overland passenger is allowed twenty-five pounds) is
+being put aboard, and we are shaking hands, at a rate altogether
+furious, with Mormon and Gentile.  Among the former are Brothers
+Stenhouse, Caine, Clawson and Townsend; among the latter are Harry
+Riccard, the big-hearted English mountaineer (though once he wore
+white kids and swallow-tails in Regent Street, and in boyhood went
+to school with Miss Edgeworth, the novelist), the daring explorer
+Rood, from Wisconsin; th e Rev. James McCormick, missionary, who
+distributes pasteboard tracts among the Bannock miners; and the
+pleasing child of gore, Captain D. B. Stover, of the commissary
+department.
+
+We go away on wheels, but the deep snow compels us to substitute
+runners twelve miles out.
+
+There are four passengers of us.  We pierce the Wahsatch mountains
+by Parley's canyon.
+
+A snowstorm overtakes us as the night thickens, and the wind
+shrieks like a brigade of strong-lunged maniacs.  Never mind.  We
+are well covered up- our cigars are good.  I have on deerskin
+pantaloons, a deerskin overcoat, a beaver cap and buffalo
+overshoes; and so, as I tersely observed before, Never mind.  Let
+us laugh the winds to scorn, brave boys!  But why is William
+Glover, driver, lying flat on his back by the roadside; and why am
+I turning a handspring in the road; and why are the horses tearing
+wildly down the Wahsatch mountains?  It is because William Glover
+has been thrown from his seat, and the horses are running away.  I
+see him fall off and it occurs to me I had better get out.  In
+doing so, such is the velocity of the sleigh, I turn a handspring.
+
+Far ahead I hear the runners clash with the rocks, and I see Dr.
+Hingston's lantern (he always would have a lantern), bobbing about
+like the binnacle light of an oyster sloop, very loose in a choppy
+sea.  Therefore I do not laugh the winds to scorn as much as I did,
+brave boys.
+
+William G. is not hurt, and together we trudge on after the
+runaways in the hope of overtaking them, which we do some two miles
+off.  They are in a snowbank, and "nobody hurt".
+
+We are soon on the road again, all serene; though I believe the
+Doctor did observe that such a thing would not have occurred under
+a monarchial form of government.
+
+We reach Weber station, thirty miles from Salt Lake City and wildly
+situated at the foot of the grand Echo Canyon, at 3 o'clock the
+following morning.  We remain over a day here with James Bromley,
+agent of the Overland Stage line, and who is better known on the
+plains than Shakspeare is; although Shakspeare has done a good deal
+for the stage.  James Bromley has seen the Overland line grow up
+from its ponyicy; and as Fitz-Green Halleck happily observes, none
+know him BUT TO LIKE HIS STYLE.  He was intended for an agent.  In
+his infancy he used to lisp the refrain,
+
+                 "I want to be an agent,
+                  And with the agents stand."
+
+I part with this kind-hearted gentleman, to whose industry and
+ability the Overland line owes much of its success, with sincere
+regret; and I hope he will soon get rich enough to transplant his
+charming wife from the desert to the "White settlements".
+
+Forward to Fort Bridger, in an open sleigh.  Night clear, cold, and
+moonlit.  Driver Mr. Samuel Smart.  Through Echo Canyon to Hanging
+Rock Station.  The snow is very deep, there is no path, and we
+literally shovel our way to Robert Pollock's station, which we
+achieve in the Course of Time.  Mr. P. gets up and kindles a fire,
+and a snowy nightcap and a pair of very bright black eyes beam upon
+us from the bed.  That is Mrs. Robert Pollock.  The log cabin is a
+comfortable one.  I make coffee in my French coffee-pot, and let
+loose some of the roast chickens in my basket. (Tired of fried
+bacon saleratus bread--the principle bill of fare at the stations
+--we had supplied ourselves with chicken, boiled ham, onions,
+sausages, sea bread, canned butter, cheese, honey, &c. &c., an
+example all Overland traders would do well to follow.)  Mrs.
+Pollock tells me where I can find cream for the coffee, and cups
+and saucers for the same, and appears so kind, that I regret our
+stay is so limited that we can't see more of her.
+
+On to Yellow Creek Station.  Then Needle Rock--a desolate hut on
+the Desert, house and barn in one building.  The station-keeper is
+a miserable, toothless wretch, with shaggy yellow hair, but says
+he's going to get married.  I think I see him.
+
+To Bear River.  A pleasant Mormon named Myers this station, and he
+gives us a first-rate breakfast, Robert Curtis takes the reins from
+Mr. Smart here, and we get on to wheels again.  Begin to see groups
+of trees- a new sight to us.
+
+Pass Quaking Asp Springs and Muddy to Fort Bridger.  Here are a
+group of white buildings, built round a plaza, across the middle of
+which runs a creek.  There are a few hundred troops here under the
+command of Major Gallergher, a gallant officer and a gentleman,
+well worth knowing.  We stay here two days.
+
+We are on the road again, Sunday the 14th, with a driver of the
+highly floral name of Primrose.  At 7 the next morning we reach
+Green River Station, and enter Idaho Territory.  This is the Bitter
+Creek division of the Overland route, of which we had heard so many
+unfavorable stories.  The division is really well managed by Mr.
+Stewart, though the country through which it stretches is the most
+wretched I ever saw.  The water is liquid alkali, and the roads are
+soft sand.  The snow is gone now, and the dust is thick and
+blinding.  So drearily, wearily we drag onward.
+
+We reach the summit of the Rocky Mountains at midnight on the 17th.
+The climate changes suddenly, and the cold is intense.  We resume
+runners, have a breakdown, and are forced to walk four miles.
+
+I remember that one of the numerous reasons urged in favor of
+General Fremont's election to the Presidency in 1856 was his
+finding the path across the Rocky Mountains.  I wrung my
+frostbitten hands on that dreadful night, and declared that for me
+to deliberately go over that path in mid-winter was a sufficient
+reason for my election to any lunatic asylum, by an overwhelming
+vote.  Dr. Hingston made a similar remark, and wondered if he
+should ever clink glasses with his friend Lord Palmerston again.
+
+Another sensation.  Not comic this time.  One of our passengers, a
+fair-haired German boy, whose sweet ways had quite won us all, sank
+on the snow, and said--Let me sleep.  We knew only too well what
+that meant, and tried hard to rouse him.  It was in vain.  Let me
+sleep, he said.  And so in the cold starlight he died.  We took him
+up tenderly from the snow, and bore him to the sleigh that awaited
+us by the roadside, some two miles away.  The new moon was shining
+now, and the smile on the sweet white face told how painlessly the
+poor boy had died.  No one knew him.  He was from the Bannock
+mines, was ill-clad, had no baggage or money, and his fare was paid
+to Denver.  He had said that he was going back to Germany.  That
+was all we knew.  So at sunrise the next morning we buried him at
+the foot of the grand mountains that are snow-covered and icy all
+the year round, far away from the Faderland, where it may be, some
+poor mother is crying for her darling who will not come.
+
+                   .     .      .      .
+
+We strike the North Platte on the 18th.  The fare at the stations is
+daily improving, and we often have antelope steaks now.  They tell
+us of eggs not far off, and we encourage (by a process not wholly
+unconnected with bottles) the drivers to keep their mules in
+motion.
+
+Antelopes by the thousand can be seen racing the plains from the
+coach windows.
+
+At Elk Mountain we encounter a religious driver named Edward
+Whitney, who never swears at the mules.  This has made him
+distinguished all over the plains.  This pious driver tried to
+convert the Doctor, but I am mortified to say that his efforts were
+not crowned with success,  Fort Halleck is a mile from Elk, and
+here are some troops of the Ohio 11th regiment, under the command
+of Major Thomas L. Mackey.
+
+On the 20th we reach Rocky Thomas's justly celebrated station at 5
+in the morning, and have a breakfast of hashed black-tailed deer,
+antelope steaks, ham, boiled bear, honey, eggs, coffee, tea, and
+cream.  That was the squarest meal on the road except at Weber.
+Mr. Thomas is a Baltimore "slosher," he informed me.  I don't know
+what that is, but he is a good fellow, and gave us a breakfast fir
+for a lord, emperor, czar, count, &c.  A better couldn't be found
+at Delmonicp's or Parker's.  He pressed me to linger with him for a
+few days and shoot bears.  It was with several pangs that I
+declined the generous Baltimorean's invitation.
+
+To Virginia Dale.  Weather clear and bright.  Virginia Dale is a
+pretty spot, as it ought to be with such a pretty name; but I
+treated with no little scorn the advice of a hunter I met there,
+who told me to give up "literatoor," form a matrimonial alliance
+with some squaws, and "settle down thar."
+
+Bannock on the brain!  That is what is the matter now.  Wagon-load
+after wagon-load of emigrants, bound to the new Idaho gold regions,
+meet us every hour.  Canvas-covered and drawn for the most part by
+fine large mules, they make a pleasant panorama, as they stretch
+slowly over the plains and uplands.  We strike the South Platte
+Sunday, 21st, and breakfast at Latham, a station of one-horse
+proportions.  We are now in Colorado ("Pike's Peak"), and we
+diverge from the main route here and visit the flourishing and
+beautiful city of Denver.  Messrs, Langrish & Dougherty, who have
+so long and so admirably catered to the amusement lovers of the Far
+West, kindly withdrew their dramatic corps for a night, and allow
+me to use their pretty little theatre.
+
+We go to the mountains from Denver, visiting the celebrated
+gold-mining towns of Black Hawk and Central City.  I leave this
+queen of all the territories, quite firmly believing that its
+future is to be no less brilliant than its past has been.
+
+I had almost forgotten to mention that on the way from Latham to
+Denver Dr. Hingston and Dr. Seaton (late a highly admired physician
+and surgeon in Kentucky, and now a prosperous gold miner) had a
+learned discussion as to the formation of the membranes of the
+human stomach, in which they used words that were over a foot long
+by actual measurement.  I have never heard such splendid words in
+my life; but such were their grandiloquent profundity, and their
+far-reaching lucidity, that I understood rather less about it when
+they had finished than I did when they commenced.
+
+                   .     .      .      .
+
+Back to Latham again over a marshy road, and on to Nebraska by the
+main stage-line.
+
+I meet Col. Chivington, commander of the district of Colorado, at
+Latham.
+
+Col. Chivington is a Methodist clergyman, and was once a presiding
+elder.  A thoughtful, earnest man, an eloquent preacher, a sincere
+believer in the war, he, of course brings to his new position a
+great deal of enthusiasm.  This, with his natural military tact,
+makes him an officer of rare ability; and on more occasions than
+one he has led his troops against the enemy with resistless skill
+and gallantry.  I take the liberty of calling the President's
+attention to the fact that this brave man ought to have long ago
+been a brigadier-general.
+
+Col. Chivington vanquished the rebels with his brave Colorado
+troops, in New Mexico last year, as most people know.  At the
+commencement of the action, which was hotly contested, a shell from
+the enemy exploded near him, tearing up the ground, and causing
+Captain Rogers to swear in an awful manner.
+
+"Captain Rogers," said the Colonel, " gentlemen do not swear on a
+solemn occasion like this.  We may fall, but falling in a glorious
+cause, let us die as Christians, not as rowdies, with oaths upon
+our lips.  Captain Rogers, let us -"
+
+Another shell, a sprightlier one than its predecessor, tears the
+earth fearfully in the immediate vicinity of Col. Chivington,
+filling his eyes with dirt and knocking off his hat.
+
+"Why, G-   d-       Their souls to h-   ," he roared, "they've put
+my eyes out- AS CAPTAIN ROGERS WOULD SAY!"
+
+But the Colonel's eyes were not seriously damaged, and he went in.
+Went in, and came out victorious.
+
+                   .     .      .      .
+
+We reach Julesberg, Colorado, the 1st of March.  We are in the
+country of the Sioux Indians now, and encounter them by the
+hundred.  A Chief offers to sell me his daughter (a fair young
+Indian maiden) for six dollars and two quarts of whisky.  I decline
+to trade.
+
+Meals which have hitherto been 1 dol. Are now 75 cents.  Eggs
+appear on the table occasionally, and we hear of chickens farther
+on.  Nine miles from here we enter Nebraska territory.  Here is an
+occasionally fenced farm, and the ranches have bar-rooms.  Buffalo
+skins and buffalo tongues are on sale at most of the stations.  We
+reach South Platte on the 2d, and Fort Kearney on the 3d.  The 7th
+Iowa Calvary are here, under the command of Captain Wood.  At
+Cottonwood, a days ride back, we had taken aboard Major O'Brien,
+commanding the troops there, and a jovial warrior he is, too.
+
+Meals are now down to 50 cents, and a good deal better than when
+they were 1 dol.
+
+KANSAS, 105 miles from Atchison.  Atchison!  No traveller by sea
+ever longed to set his foot on shore as we longed to reach the end
+of our dreary coach-ride over the wildest part of the whole
+continent.  How we talked Atchison, and dreamed Atchison, for the
+next fifty hours!  Atchison, I shall always love you.  You were
+evidently mistaken, Atchison, when you told me that in case I
+"lectured" there, immense crowds would throng to the hall; but you
+are very dear to me.  Let me kiss you for your maternal parent!
+
+We are passing through the reservation of the Otoe Indians, who
+long ago washed the war-paint from their faces, buried the
+tomahawk, and settled down into quiet, prosperous farmers.
+
+                   .     .      .      .
+
+We rattle leisurely into Atchison on a Sunday evening.  Lights
+gleam in the windows of milk-white churches, and they tell us, far
+better than anything else could, that we are back to civilization
+again.
+
+An overland journey in winter is a better thing to have done than
+to do.  In the spring, however, when the grass is green on the
+great prairies, I fancy one might make the journey a pleasant one,
+with his own outfit and a few choice friends.
+
+4.17.  VERY MUCH MARRIED.
+
+Are the Mormon women happy?
+
+I give it up.  I don't know.
+
+It is at Great Salt Lake City as it is at Boston.  If I go out to
+tea at the Wilkinses in Boston, I'm pretty sure to find Mr. Wilkins
+all smiles and Sunshine, or Mrs. Wilkins all gentleness and
+politeness.  I am entertained delightfully, and after tea little
+Miss Wilkins shows me her photograph album, and plays the march
+from "Faust" on the piano for me.  I go away highly pleased with my
+visit; and yet the Wilkinses may fight like cats and dogs in
+private.  I may no sooner have struck the sidewalk than Mr. W. will
+be reaching for Mrs. W's throat.
+
+This is the City of Saints.  Apparently, the Mormon women are
+happy.  I saw them at their best, of course--at balls, tea-parties
+and the like.  They were like other women as far as my observation
+extended.  They were hooped, and furbelowed, and shod, and white-
+collard, and bejewelled; and like women all over the world, they
+were softer-eyed and kinder-hearted than men can ever hope to be.
+
+The Mormon girl is reared to believe that the plurality-wife system
+as it is delicately called here is strictly right; and in linking
+her destiny with a man who has twelve wives, she undoubtedly
+considers she is doing her duty.  She loves the man, probably, for
+I think it is not true, as so many writers have stated, that girls
+are forced to marry whomsoever "the Church" may dictate.  Some
+parents no doubt advise, connive, threaten, and in aggravated cases
+incarcerate here, as some parents have always done elsewhere, and
+always will do as long as petticoats continue to be an institution.
+
+How these dozen or twenty wives get along without heart-burnings
+and hairpullings I can't see.
+
+There are instances on record, you know, where a man don't live in
+a state of uninterrupted bliss with ONE wife.  And to say that a
+man can possess twenty wives without having his special favorite,
+or favorites, is to say that he is an angel in boots--which is
+something I have never been introduced to.  You never saw an angel
+with a Beard, although you may have seen the Bearded Woman.
+
+The Mormon woman is early taught that man, being created in the
+image of the Saviour, is far more godly than she can ever be, and
+that for her to seek to monopolize his affections is a species of
+rank sin.  So she shares his affections with five or six or twenty
+other women, as the case may be.
+
+A man must be amply able to support a number of wives before he can
+take them.  Hence, perhaps, it is that so many old chaps in Utah
+have young and blooming wives in their seraglios, and so many young
+men have only one.
+
+I had a man pointed out to me who married an entire family.  He had
+originally intended to marry Jane, but Jane did not want to leave
+her widowed mother.  The other three sisters were not in the
+matrimonial market for the same reason; so this gallant man married
+the whole crowd, including the girl's grandmother, who had lost all
+her teeth, and had to be fed with a spoon.  The family were in
+indigent circumstances, and they could not but congratulate
+themselves on securing a wealthy husband.  It seemed to affect the
+grandmother deeply, for the first words she said on reaching her
+new home were:  "Now, thank God!  I shall have my gruel reg'lar!"
+
+The name of Joseph Smith is worshipped in Utah; and, "they say,"
+that although he had been dead a good many years, he still keeps on
+marrying women by proxy.  He "reveals" who shall act as his earthly
+agent in this matter, and the agent faithfully executes the defunct
+Prophet's commands.
+
+A few years ago I read about a couple being married by telegraph--
+the young man was in Cincinatti and the young woman was in New
+Hampshire.  They did not see each other for a year afterwards.  I
+don't see what fun there is in this sort of thing.
+
+I have somewhere stated that Brigham Young is said to have eighty
+wives.  I hardly think he has so many.  Mr. Hyde, the backslider,
+says in his book that "Brigham always sleeps by himself, in a
+little chamber behind his office;" and if he has eighty wives I
+don't blame him.  He must be bewildered.  I know very well that if
+I had eighty wives of my bosom I should be confused, and shouldn't
+sleep anywhere.  I undertook to count the long stockings, on the
+clothes-line, in his back yard one day, and I used up the
+multiplication table in less than half an hour.  It made me dizzy--
+it did!
+
+In this book I am writing chiefly of what I saw.  I saw plurality
+at its best.  I have shown the silver lining of this great social
+cloud.  That back of this silver lining the cloud must be thick and
+black, I feel quite sure.  But to elaborately denounce, at this
+late day, a system we all know must be wildly wrong, would be
+simply to impeach the intelligence of the readers of this book.
+
+4.18.  THE REVELATION OF JOSEPH SMITH.
+
+I have not troubled the reader with extracts from Mormon documents.
+The Book of Mormon is ponderous, but gloomy, and at times
+incoherent; and I will not, by any means, quote from that.  But the
+Revelation of Joseph Smith in regard to the absorbing question of
+plurality or polygamy may be of sufficient interest to reproduce
+here.  The reader has my full consent to form his own opinion of
+it:--
+
+REVELATION GIVEN TO JOSEPH SMITH, NAUVOO, JULY, 12, 1843.
+
+Verily, thus saith the Lord unto you, my servant Joseph, that
+inasmuch as you have inquired of my hand to know and understand
+wherein I, the Lord, justified my servants, Abraham, Isaac, and
+Jacob; as also Moses, David, and Solomon, my servants, as touching
+the principle and doctrine of their having many wives and
+concubines:  Behold! and lo, I am the Lord thy God, and will answer
+thee as touching this matter:  therefore prepare thy heart to
+receive and obey the instructions which I am about to give unto
+you; for all those who have this law revealed unto them must obey
+the same; for behold!  I reveal unto you a new and an everlasting
+covenant, and if ye abide not that covenant, then are ye damned;
+for no one can reject this covenant and be permitted to enter into
+my glory; for all who will have a blessing at my hands shall abide
+the law which was appointed for that blessing, and the conditions
+thereof, as was instituted from before the foundations of the
+world; and as pertaining to the new and everlasting covenant, it
+was instituted for the fulness of my glory; and he that receiveth a
+fulness thereof, must and shall abide the law, or he shall be
+damned, saith the Lord God.
+
+And verily I say unto you, that the conditions of this law are
+these:  All covenants, contracts, bonds, obligations, oaths, vows,
+performances, connections, associations or expectations, that are
+not made, and entered into, and sealed, by the Holy Spirit of
+promise, of him who is anointed, both as well for time and for all
+eternity, and that, too, most holy, by revelation and commandment,
+through the medium of mine anointed, whom I have appointed on the
+earth to hold this power (and I have appointed unto my servant
+Joseph to hold this power in the last days, and there is never but
+one on the earth at a time on whom this power and the keys of this
+priesthood are conferred), are of no efficacy, virtue, or force in
+and after the resurrection from the dead; for all contracts that
+are not made unto this end have an end when men are dead.
+
+Behold!  Mine house is a house of order, saith the Lord God, and
+not a house of confusion.  Will I accept of an offering, saith the
+Lord, that is not made in my name?  Or will I receive at your hands
+that which I have not appointed?  And will I appoint unto you,
+saith the Lord, except it be by law, even as I and my Father
+ordained unto you, before the world was?  I am the Lord thy God,
+and I give unto you this commandment, that no man shall come unto
+the Father but by me, or by my word, which is my law, saith the
+Lord; and everything that is in the world, whether it be ordained
+of men, by thrones, or principalities, or powers, or things of
+name, whatsoever they may be, that are not by me, or by my word,
+saith the Lord, shall be thrown down, and shall not remain after
+men are dead, neither in nor after the resurrection, saith the Lord
+your God; for what soever things remaineth are by me, and
+whatsoever things are not by me, shall be shaken and destroyed.
+
+Therefore, if a man marry him a wife in the world, and he marry her
+not by me, nor by my word, and he covenant with her so long as he
+is in the world, and she with him, their covenant and marriage is
+not of force when they are dead, and when they are out of the
+world; therefore they are not bound by any law when they are out of
+the world:  therefore when they are out of the world, they neither
+marry nor are given in marriage, but are appointed angels in
+heaven, which angels are ministering servants, to minister for
+those who are worthy of a far more, and an exceeding, and an
+eternal weight of glory; for these angels did not abide my law,
+therefore they cannot be enlarged, but remain separately, and
+singly, without exaltation, in their saved condition, to all
+eternity, and from henceforth are not gods, but are angels of God
+for ever and ever.
+
+And again, verily I say unto you, if a man marry a wife, and make a
+covenant with her for time and for all eternity, if that covenant
+is not by me or by my word, which is my law, and is not sealed by
+the Holy Spirit of promise, through him whom I have anointed and
+appointed unto this power, then it is not valid, neither of force
+when they are out of the world, because they are not joined by me,
+saith the Lord, neither by my word; when they are out of the world,
+it cannot be received there, because the angels and the gods are
+appointed there, by whom they cannot pass; they cannot, therefore,
+inherit my glory, for my house is a house of order, saith the Lord
+God.
+
+And again, verily I say unto you, if a man marry a wife by my word,
+which is my law, and by the new and everlasting covenant, and it is
+sealed unto them by the Holy Spirit of promise, by him who is
+anointed, unto whom I have appointed this power and the keys of
+this priesthood, and it shall be said unto them, Ye shall come
+forth in the first resurrection; and if it be after the first
+resurrection, in the next resurrection; and shall inherit thrones,
+kingdoms, principalities, and powers, dominions, all heights and
+depths, then shall it be written in the Lamb's Book of Life that he
+shall commit no murder, whereby to shed innocent blood; and if ye
+abide in my covenant, and commit no murder whereby to shed innocent
+blood, it shall be done unto them in all things whatsoever my
+servant hath put upon them in time and through all eternity; and
+shall be of full force when they are out of the world, and they
+shall pass by the angels and the gods, which are set there, to
+their exaltation and glory in all things, as hath been sealed upon
+their heads, which glory shall be a fulness and a continuation of
+the seeds for ever and ever.
+
+Then shall they be gods, because they have no end; therefore shall
+they be from everlasting to everlasting, because they continue;
+then shall they be above all, because all things are subject unto
+them.  Then shall they be gods because they have all power, and the
+angels are subject unto them.
+
+Verily, verily, I say unto you, except ye abide my law, ye cannot
+attain to this glory; for straight is the gate, and narrow the way,
+that leadeth unto the exaltation and continuation of the lives, and
+few there be that find it, because ye receive me not in the world,
+neither do ye know me.  But if ye receive me in the world, then
+shall ye know me, and shall receive your exaltation, that where I
+am, ye shall be also.  This is eternal life to know the only wise
+and true God, and Jesus Christ whom he hath sent.  I am he.
+Receive ye, therefore, my law.  Broad is the gate, and wide the way
+that leadeth to the death, and many there are that go in thereat,
+because they receive me not, neither do they abide in my law.
+
+Verily, verily, I say unto you, if a man marry a wife according to
+my word, and they are sealed by the Holy Spirit of promise
+according to mine appointment, and he or she shall commit any sin
+or transgression of the new and everlasting covenant whatever, and
+all manner of blasphemies; and if they commit no murder, wherein
+they shed innocent blood, yet they shall come forth in the first
+resurrection, and enter into their exaltation; but they shall be
+destroyed in the flesh, and shall be delivered unto the buffetings
+of Satan, unto the day of redemption, saith the Lord God.
+
+The blasphemy against the Holy Ghost, which shall not be forgiven
+in the world nor out of the world, is in that ye commit murder,
+wherein ye shed innocent blood, and assent unto my death, after ye
+have received my new and everlasting covenant, saith the Lord God:
+and he that abideth not this law can in no wise enter into my
+glory, but shall be damned, saith the Lord.
+
+I am the Lord thy God, and will give unto thee the law of my holy
+priesthood, as was ordained by me and my Father before the world
+was.  Abraham received all things, whatsoever he received, by
+revelation and commandment, by my word, saith the Lord, and hath
+entered into his exaltation, and sitteth upon his throne.
+
+Abraham received promises concerning his seed, and of the fruit of
+his loins--from whose loins ye are, viz., my servant Joseph--which
+were to continue so long as they were in the world; and as touching
+Abraham and his seed out of the world, they should continue; both
+in the world and out of the world should they continue as
+innumerable as the stars; or, if ye were to count the sand upon the
+seashore, ye could not number them.  This promise is yours also
+because ye are of Abraham, and the promise was made unto Abraham,
+and by this law are the continuation of the works of my Father,
+wherein he glorifieth himself.  Go ye, therefore, and do the works
+of Abraham; enter ye into my law, and ye shall be saved.  But if ye
+enter not into my law, ye cannot receive the promises of my Father,
+which he made unto Abraham.
+
+God commanded Abraham, and Sarah gave Hagar to Abraham to wife.
+And why did she do it?  Because this was the law, and from Hagar
+sprang many people.  This, therefore, was fulfilling, among other
+things, the promises.  Was Abraham, therefore, under condemnation?
+Verily, I say unto you, NAY; for the Lord commanded it.  Abraham
+was commanded to offer his son Isaac; nevertheless it was written,
+Thou shalt not kill.  Abraham, however, did not refuse, and it was
+accounted unto him for righteousness.
+
+Abraham received concubines, and they bare him children, and it was
+accounted unto him for righteousness, because they were given unto
+him, and he abode in my law; as Isaac, also, and Jacob, did none
+other things than that which they were commanded; and because they
+did none other things than that which they were commanded, they
+have entered into their exaltation, according to the promises, and
+sit upon thrones; and are not angels, but are gods.  David also
+received many wives and concubines, as also Solomon and Moses my
+servant, as also many others of my servants, from the beginning of
+creation until this time, and in nothing did they sin, save in
+those things which they received not of me.
+
+David's wives and concubines were given unto him of me by the hand
+of Nathan my servant, and others of the prophets who had the keys
+of this power; and in none of these things did he sin against me,
+save in the case of Uriah and his wife; and, therefore, he hath
+fallen from his exaltation, and received his portion; and he shall
+not inherit them out of the world, for I gave them unto another,
+saith the Lord.
+
+I am the Lord thy God, and I gave unto thee, my servant Joseph, by
+appointment, and restore all things; ask what ye will, and it shall
+be given unto you, according to my word; and as ye have asked
+concerning adultery, verily, verily, I say unto you, if a man
+receiveth a wife in the new and everlasting covenant, and if she be
+with another man, and I have not appointed unto her by the holy
+anointing, she hath committed adultery, and shall be destroyed.  If
+she be not in the new and everlasting covenant, and she be with
+another man, she has committed adultery; and if her husband be with
+another woman, and he was under a vow, he hath broken his vow, and
+hath committed adultery; and if she hath not committed adultery,
+but is innocent, and hath not broken her vow, and knoweth it, and I
+reveal it unto you, my servant Joseph, then shall you have power,
+by the power of my holy priesthood, to take her, and give her unto
+him that hath not committed adultery, but hath been faithful; for
+he shall be made ruler over many; for I have conferred upon you the
+keys and power of the priesthood, wherein I restore all things and
+make own unto you all things in due time.
+
+And verily, verily, I say unto you, that whatsoever you seal on
+earth shall be sealed in heaven; and whatsoever you bind on earth,
+in my name and by my word, saith the Lord, it shall be eternally
+bound in the heavens; and whosesoever sins you remit on earth,
+shall be remitted eternally in the heavens; and whosesoever sins
+you retain on earth, shall be retained in heaven.
+
+And again, verily, I say, whomsoever you bless, I will bless, and
+whomsoever you curse, I will curse, saith the Lord; for I, the
+Lord, am thy God.
+
+And again, verily, I say unto you, my servant Joseph, that
+whatsoever you give on earth, and to whomsoever you give any one on
+earth, by my word and according to my law, it shall be visited with
+blessings and not cursings, and with my power, saith the Lord, and
+shall be without condemnation on earth and in heaven, for I am the
+Lord thy God, and will be with thee even unto the end of the world,
+and through all eternity; for verily I seal upon you your
+exaltation, and prepare a throne for you in the kingdom of my
+Father, with Abraham your father.  Behold! I have seen your
+sacrifices, and will forgive all your sin; I have seen your
+sacrifices, in obedience to that which I have told you; go,
+therefore, and I make a way for your escape, as I accepted the
+offering of Abraham of his son Isaac.
+
+Verily, I say unto you, a commandment I give unto mine handmaid,
+Emma Smith, your wife, whom I have given unto you, that she stay
+herself, and partake of that which I commanded you to offer unto
+her; for I did it, saith the Lord, to prove you all, as I did
+Abraham, and that I might require an offering at your hand by
+covenant and sacrifice; and let mine handmaid, Emma Smith, receive
+all those that have been given unto my servant Joseph, and who are
+virtuous and pure before me; and those who are not pure, and have
+said they were pure, shall be destroyed, saith the Lord God; for I
+am the Lord thy God, and ye shall obey my voice; and I give unto my
+servant Joseph, that he shall be made ruler over many things, for
+he hath been faithful over a few things, and from henceforth I will
+strengthen him.
+
+And I command mine handmaid, Emma Smith, to abide and cleave unto
+my servant Joseph and to none else.  But if she will not abide this
+commandment, she shall be destroyed, saith the Lord, for I am the
+Lord thy God, and will destroy her if she abide not in my law:  but
+if she will not abide this commandment, then shall my servant
+Joseph do all things for her, as he hath said; and I will bless
+him, and multiply him, and give unto him an hundredfold in this
+world, of fathers and mothers, brothers and sisters, houses and
+lands, wives and children, and crowns of eternal lives in the
+eternal worlds.  And again, verily I say, let mine handmaid forgive
+my servant Joseph his trespasses, and then shall she be forgiven
+her trespasses, wherein she hath trespassed against me; and I, the
+Lord thy God, will bless her, and multiply her, and make her heart
+to rejoice.
+
+And again, I say, let not my servant Joseph put his property out of
+his hands, lest an enemy come and destroy him--for Satan seeketh to
+destroy--for I am the Lord thy God, and he is my servant; and
+behold! and lo, I am with him, as I was with Abraham thy father,
+even unto his exaltation and glory.
+
+Now, as touching the law of the priesthood, there are many things
+pertaining thereunto.  Verily, if a man be called of my Father, as
+was Aaron, by mine own voice, and by the voice of him that sent me,
+and I have endowed him with the keys of the power of this
+priesthood, if he do anything in my name, and according to my law,
+and by my word, he will not commit sin, and I will justify him.
+Let no one, therefore, set on my servant Joseph, for I will justify
+him:  for he shall do the sacrifice which I require at his hands,
+for his transgressions, saith the Lord your God.
+
+And again, as pertaining to the law of the priesthood; if any man
+espouse a virgin, and desire to espouse another, and the first give
+her consent; and if he espouse the second, and they are virgins,
+and have vowed to no other man, then is he justified; he cannot
+commit adultery, for they are given unto him; for he cannot commit
+adultery with that that belongeth unto him, and to none else; and
+if he have ten virgins given unto him by this law, he cannot commit
+adultery, for they belong to him, and they are given unto him;
+therefore is he justified.  But if one or either of the ten
+virgins, after she is espoused, shall be with another man, she has
+committed adultery, and shall be destroyed; for they are given unto
+him to multiply and replenish the earth, according to my
+commandment, and to fulfil the promise which was given by my Father
+before the foundation of the world, and for their exaltation in the
+eternal worlds, that they may bear the souls of men; for herein is
+the work of my Father continued, that he may be glorified.
+
+And again, verily, verily, I say unto you, if any man have a wife
+who holds the keys of this power, and he teaches unto her the law
+of my priesthood as pertaining to these things, then shall she
+believe and administer unto him, or she shall be destroyed, saith
+the Lord your God; for I will destroy her; for I will magnify my
+name upon all those who receive and abide in my law.  Therefore it
+shall be lawful in me, if she receive not this law, for him to
+receive all things whatsoever I, the Lord his God, will give unto
+him, because she did not believe and administer unto him according
+to my word; and she then becomes the transgressor, and he is exempt
+from the law of Sarah, who administered unto Abraham according to
+the law, when I commanded Abraham to take Hagar to wife.  And, now
+as pertaining to this law, verily, verily, I say unto you I will
+reveal more unto you hereafter, therefore let this suffice for the
+present.  Behold!  I am Alpha and Omega.  AMEN.
+
+
+
+
+
+End of Project Gutenberg's The Complete Works of Artemus Ward, Part 4
+

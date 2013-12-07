@@ -1,0 +1,1015 @@
+Project Gutenberg Etext The Second-Story Man, by Upton Sinclair
+#6 in our series by Upton Sinclair
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+As of 12/12/00 contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Title: The Second-Story Man
+
+Author: Upton Sinclair
+
+Release Date: July, 2002  [Etext #3302]
+[Yes, we are about one year ahead of schedule]
+[The actual date this file first posted = 03/22/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg Etext The Second-Story Man, by Upton Sinclair
+*****This file should be named 2ndsm10.txt or 2ndsm10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 2ndsm11.txt
+VERSIONS based on separate sources get new LETTER, 2ndsm10a.txt
+
+This etext was produced by Charles Franks and the Online Distributed
+Proofreading team.
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext02
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext02
+
+Or /etext01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Nevada,
+Montana, Nevada, Oklahoma, South Carolina,
+South Dakota, Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Project Gutenberg Literary Archive Foundation,
+EIN [Employee Identification Number] 64-6221541,
+has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the extent
+permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation.  Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655-4109  [USA]
+
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm
+etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States
+copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.12.12.00*END*
+
+
+
+
+
+This etext was produced by Charles Franks and the Online Distributed
+Proofreading team.
+
+
+
+
+
+THE SECOND-STORY MAN
+
+by UPTON SINCLAIR
+
+
+
+
+CHARACTERS
+
+JIM FARADAY: the second-story man. HARVEY AUSTIN: a lawyer. HELEN
+AUSTIN: his wife.
+
+SCENE: Library of the Austin home.
+
+Time: 2 A.M.
+
+
+
+
+
+[The scene shows a luxuriously furnished room. In the centre is a
+table with a lamp. To the right is the entrance into the front hall,
+the front door of the house being visible. In the corner is a cabinet
+of curios. In the rear is a large window opening on the street. Open
+fire-place. There are two entrances at the left. There are book-
+shelves, several easy-chairs, etc., in the room.]
+
+[At rise: The stage is empty, and the room is darkened except for the
+fire in the grate. Sounds of breaking wood are heard at the window.]
+
+
+JIM. [A roughly-dressed young fellow with a patch over one eye, enters
+through window, stands gazing about nervously, looks into the hall,
+etc., then flashes a dark lantern.] This looks pretty good.
+
+[Goes to mantel, takes silver cup and puts it into bag which he
+carries; then exit left.]
+
+AUSTIN. [Enters at front door without much noise. Hangs up coat and
+hat, and then stands in entrance. He is a smooth-faced young man in
+evening dress.] All gone to bed, hey?
+
+[Takes out cigarette case and is about to light one, when a crash is
+heard off left, as of a vase falling. He starts, then runs to table,
+opens drawer, takes out revolver, and examines it, and steals off
+through the other entrance at left, saying, "That noise seemed to come
+from downstairs."]
+
+JIM. [Enters panic-stricken.] God! What a thing to do! [Gazes into
+hall and upstairs--long pause.] Don't seem to have waked them.
+
+[Proceeds to examine room, stopping now and then to listen. After
+placing several articles in bag, he goes to cabinet and tries to open
+it. This takes some time, and while he is crouching in the shadow,
+with his back to the entrance right, MRS. AUSTIN appears.]
+
+MRS. AUSTIN. [She is young and beautiful, and wears a night-robe and
+dressing- gown. She stands looking about anxiously, and then goes to
+centre of room, when she hears a sound from JIM, and starts wildly.]
+Oh!
+
+JIM. [Leaps to feet, lifting revolver.] Hold up your hands! [She
+starts back in terror.] Hold up your hands!
+
+MRS. AUSTIN. [Half complyingly.] I'm not armed.
+
+JIM. Never mind. [Long pause while they stare at each other.] I don't
+want to hurt you, lady.
+
+MRS. AUSTIN. [Calmly, after first shock.] No, I suppose not. You only
+want to get away.
+
+JIM. That's right!
+
+MRS. AUSTIN. Very well, you may go.
+
+JIM. And you yell for the police the moment I get out of the door,
+hey?
+
+MRS. AUSTIN. No, I don't want the police. I don't believe in sending
+men to jail.
+
+JIM. Humph!
+
+[Another pause.]
+
+MRS. AUSTIN. Why do you do this?
+
+JIM. It's the way I live.
+
+MRS. AUSTIN. Isn't it a rather trying kind of work?
+
+JIM. It ain't all play, ma'am.
+
+MRS. AUSTIN. [Smiling.] I should think it would be hard on the nerves.
+[After another pause.] Is there no honest way you can earn a living?
+
+JIM. I don't know. Maybe so. I got tired of looking for it.
+
+MRS. AUSTIN. I might help you if you would let me.
+
+JIM. I ain't asking any help.
+
+MRS. AUSTIN. No, but I'm offering it. [After a pause.] Have you been
+doing this sort of thing very long?
+
+JIM. No.
+
+MRS. AUSTIN. How long?
+
+JIM. [After hesitation.] This is my first job.
+
+MRS. AUSTIN. What! You don't mean that?
+
+JIM. It happens to be true, ma'am.
+
+MRS. AUSTIN. What made you do it?
+
+JIM. It's a long story.
+
+MRS. AUSTIN. Tell it to me.
+
+JIM. It ain't just a good time for story telling.
+
+MRS. AUSTIN. You are afraid of me? I have no quarrel with you. I don't
+care anything for the things you have in the bag; and, besides, I
+suppose you won't take them now. I'm only sorry to see a man going
+wrong, and I'd like to help if I could. I'll play fair, I give you my
+word of honor.
+
+JIM. There ain't much honor in this business.
+
+MRS. AUSTIN. No, I suppose not. But you can trust me. Put up that gun
+and talk to me.
+
+JIM. [Surlily.] It can't do any good.
+
+MRS. AUSTIN. It can't do any harm. Put up that revolver, and tell me
+what's the matter.
+
+JIM. You'll let me go when I want to? No tricks!
+
+MRS. AUSTIN. I give you my word.
+
+JIM. All right. I'm a fool, I guess, but I'll trust you. [Puts
+revolver in pocket.] Sit down, ma'am. It must be cold for you. This is
+a queer kind of layout for a burglar. [Sits opposite her.] You heard
+that racket I made in the other room?
+
+MRS. AUSTIN. Yes. What was it?
+
+JIM. Some kind of a jar.
+
+MRS. AUSTIN. Oh, my Greek vase. Well, never mind . . . it was an
+imitation. What were you doing?
+
+JIM. I was looking for something to eat.
+
+MRS. AUSTIN. Oh!
+
+JIM. It would have been the first thing I've had since the day before
+yesterday.
+
+MRS. AUSTIN. What's the matter?
+
+JIM. No work. [A pause.] I suppose you'll give me the old gag . . .
+there's plenty of work for a man that's willing.
+
+MRS. AUSTIN. No, I happen to have studied, and I know better than
+that. Else I should have fainted when I saw you . . . instead of
+sitting here talking to you . . . . Do you drink?
+
+JIM. Yes, but I didn't use to. Any man would drink . . . that went
+through what I did.
+
+MRS. AUSTIN. Are you married?
+
+JIM. Yes . . . I was married. My wife is dead.
+
+MRS. AUSTIN. Any children?
+
+JIM. Two. Both dead.
+
+MRS. AUSTIN. Oh!
+
+JIM. It ain't a pretty story, ma'am. It's a poor man's story.
+
+MRS. AUSTIN. Tell it to me.
+
+JIM. All right. It'll spoil your sleep for the rest of the night, I
+guess, but you can have it. [A pause.] A year ago I was what they call
+an honest working man. I had a home and a happy family; and I didn't
+drink any too much, and I did well . . . even if the work was hard. I
+was in the steel works here in town.
+
+MRS. AUSTIN. [Startled.] The Empire Steel Company?
+
+JIM. Yes. Why?
+
+MRS. AUSTIN. Nothing . . . only I happen to know some people there. Go
+on.
+
+JIM. It's no child's work there, ma'am. There's an awful lot of
+accidents . . . more than the world has any idea of. I've seen a man
+sent to hell in the snapping of a finger. And they don't treat them
+fair . . . they hush things up. There are things you wouldn't believe
+if I told them to you.
+
+MRS. AUSTIN. Tell them.
+
+JIM. I've seen a man there get caught in one of the cranes. They
+stopped the machinery, but they couldn't get him out. They'd have had
+to take the crane apart, and that would have cost several days, and it
+was rush time, and the man was only a poor Hunkie, and there was no
+one to know or care. So they started up the crane, and cut his leg
+off.
+
+MRS. AUSTIN. Oh, horrible!
+
+JIM. It's the sort of thing you couldn't believe unless you saw it.
+But I saw it. I didn't care, though. I was a fool. And then my time
+came.
+
+MRS. AUSTIN. How do you mean?
+
+JIM. A blast furnace blew out, and a piece of slag hit me here, where
+you see that patch. If it wasn't for the patch you'd see something
+that would make you sick. It was a pain you couldn't tell about . . .
+it was a couple of days before I knew where I was. And the first thing
+when I came to my senses . . . in the hospital, it was . . . there was
+a lawyer chap with a paper waiting for me.
+
+MRS. AUSTIN. [In agitation.] A lawyer?
+
+JIM. Yes, ma'am. Company representative, you know. And I was to sign
+the paper . . . it was a receipt for the hospital expenses . . . the
+operation and all that . . . you see they had to take out what was
+left of my eye. And of course I couldn't see . . . I had to sign where
+he told me to. And when I got well, I found they had trapped me into
+signing a release.
+
+MRS. AUSTIN. A release?
+
+JIM. I had accepted the hospital expenses as a release for all the
+company owed me. And I couldn't get any damages . . . and my eye was
+gone, and all the weeks without any wages.
+
+MRS. AUSTIN. My God!
+
+JIM. And they turned me out so weak I could hardly walk; and . . .
+
+MRS. AUSTIN. [Greatly excited.] Who was this man?
+
+JIM. Which?
+
+MRS. AUSTIN. This lawyer?
+
+JIM. I never heard his name. He was a young fellow . . . handsome . .
+. smooth- faced . . .
+
+MRS. AUSTIN. [Whispering.] Oh!
+
+JIM. Ah, they don't mind it . . . they're smooth. They do that all the
+time. It's what they get their pay for.
+
+MRS. AUSTIN. [Covering her face with her hands.] Oh, stop!
+
+JIM. What's the matter?
+
+MRS. AUSTIN. [Looking up with white face.] Nothing. Go on.
+
+JIM. It was two months before I could work at all. And the rent came
+due, and they turned us out . . . it was winter-time, and my wife
+caught a cold, and it turned to pneumonia, and she died. That's all of
+that.
+
+MRS. AUSTIN. Go on.
+
+JIM. And then, you see, the panic came . . . and the mills shut down .
+. . sudden as that. The lawyer told me the company would see I always
+had a job, but that was only to get me to sign.
+
+MRS. AUSTIN. [Feverishly.] Did you try him?
+
+JIM. I went to the office and tried; but they wouldn't even let me see
+him.
+
+MRS. AUSTIN. I see. And then?
+
+JIM. Then I went out to look for work. I had the two babies, you know
+. . . and God only knows how I loved those babies. I said I'd fight
+and win out for their sakes. But Amy . . . she was the little one . .
+. she never had been very strong. When you're a poor man, you can't
+get the best food, even if you know what it is. It ain't fit milk they
+sell for the children in this city; and the baby died . . . I never
+knew what was the matter exactly. And there was only one left . . .
+and me tramping the streets all day looking for a job. How was I to
+take care of him, lady? How could I have helped it? [His voice is
+breaking with emotion.] And oh, ma'am, he was the loveliest little
+fellow . . . with hair like gold. And so well and strong.
+
+MRS. AUSTIN. [Whispering.] What happened to him?
+
+JIM. A street car killed him.
+
+MRS. AUSTIN. Oh!
+
+JIM. Run over his chest, ma'am. I came home at night, and they told
+me, and I near went out of my mind. Can you think what it was to see
+him . . . with his eyes starting out of his head like, and his
+beautiful little body all mashed flat . . .
+
+MRS. AUSTIN. [Wildly.] Oh, spare me!
+
+JIM. I told you it wouldn't be a pretty story. Do you think maybe you
+wouldn't take to drink if you saw a sight like that? [Sinking back.]
+Since then I've looked for work, but I haven't cared much. Only
+sometimes I've thought I'd like to meet that young lawyer . . .
+
+MRS. AUSTIN. [Starting up.] Oh!
+
+JIM. Yes, it all began with him. But I don't know . . . they'd only
+jug me. Anyway, tonight I was sitting in a saloon with two fellows
+that I had met. One of them was a second-story man . . . a fellow that
+climbs up porches and fire- escapes. And I heard him telling about a
+haul he'd made, and I said to myself: "There's a job for me . . . I'll
+be a second-story man." And I tried it . . . but you see I didn't do
+very well. I'm not good for much, I guess, any more.
+
+AUSTIN. [Enters left, revolver in hand; stands watching, unobserved.]
+Good heavens!
+
+MRS. AUSTIN. You can't tell. You may have better success than you look
+for.
+
+JIM. No . . . there's nothing can help me. I'm for the scrap heap.
+
+MRS. AUSTIN. [Eagerly.] Wait and see. You are a man . . . you can be
+helped yet . . .
+
+AUSTIN. [Coming forward.] What does this mean?
+
+JIM. [Starts wildly and reaches for revolver.] Ha!
+
+AUSTIN. [Raising weapon.] Holdup your hands!
+
+MRS. AUSTIN. [Rushing forward.] No. Stop!
+
+AUSTIN. What do you mean?
+
+MRS. AUSTIN. I say stop! I promised him his freedom!
+
+AUSTIN. My dear . . .
+
+MRS. AUSTIN. Give me the weapon.
+
+AUSTIN. Why . . .
+
+MRS. AUSTIN. Give it to me. [Takes revolver.] Now sit down.
+
+JIM. [Has been staring wildly at AUSTIN.] My God, it's the lawyer
+fellow!
+
+MRS. AUSTIN. Yes, it is he.
+
+AUSTIN. What does all this mean?
+
+MRS. AUSTIN. Look at this man!
+
+AUSTIN. [Staring.] Why?
+
+MRS. AUSTIN. Don't you know him?
+
+AUSTIN. No.
+
+MRS. AUSTIN. Look carefully. [Turns up light.] Have you never seen him
+before?
+
+AUSTIN. Never that I can recall. What is his name?
+
+MRS. AUSTIN. I don't know. [To JIM.] What is it?
+
+JIM. Humph! [Hesitating.] He could find out, anyway. Jim Faraday.
+
+AUSTIN. Faraday . . . it sounds familiar.
+
+JIM. [Grimly.] You've served the trick on a good many, I guess.
+
+AUSTIN. [To Mrs. AUSTIN.] What does he mean?
+
+JIM. Don't you remember the Sisters' Hospital? The fellow that had his
+eye burned out in the big explosion?
+
+AUSTIN. [Startled.] Oh!
+
+JIM. [Sneeringly.] Ah, yes!
+
+AUSTIN. You are the man?
+
+JIM. I'm the man.
+
+MRS. AUSTIN. Harvey, you took this man some paper to sign.
+
+AUSTIN. Yes . . . I remember.
+
+MRS. AUSTIN. Did you tell him what was in it?
+
+AUSTIN. [Hesitates.] Why . . .
+
+MRS. AUSTIN. Answer me, please.
+
+AUSTIN. Why, my dear . . .
+
+MRS. AUSTIN. Did you tell him what was in it?
+
+AUSTIN. But, my dear, it wasn't my business to tell him.
+
+MRS. AUSTIN. Oh!
+
+AUSTIN. I was representing the company.
+
+MRS. AUSTIN, I see.
+
+AUSTIN. It was his place to see what was in it.
+
+MRS. AUSTIN. Harvey! This man with one eye burned out, and not yet
+over the accident?
+
+AUSTIN. My dear, you don't understand . . .
+
+JIM. [Wildly.] You didn't leave me to find out for myself. You lied to
+me!
+
+MRS. AUSTIN. At least you permitted him to be misled. You did not tell
+him the honest truth about the paper, and what would be the effect if
+he signed it.
+
+AUSTIN. My dear, you do not understand. I could not have done that. I
+was the representative of the interests of the company.
+
+MRS. AUSTIN. And that is the sort of work you do for them?
+
+AUSTIN. That is the sort of work that has to be done. I cannot help
+it, much as I would like to . . .
+
+MRS. AUSTIN. [Wildly.] You have done that sort of thing before. And
+you will do it again!
+
+AUSTIN. My dear . . .
+
+MRS. AUSTIN. And you take money for it! You bring that money home to
+me! And you never told me how you got it! You make me sharer in your
+guilt!
+
+AUSTIN. Helen!
+
+MRS. AUSTIN. This was how you earned your promotion! This was what you
+came to me and boasted about! This was what we married on. This money
+. . . blood money . . . that you get for cheating this helpless
+laborer out of his rights . . . out of everything he had in the world!
+
+AUSTIN. My dear, you are out of your mind. You do not understand
+business.
+
+MRS. AUSTIN. I understand it all . . . a child could understand! It is
+only you . . . the rising young lawyer . . . that doesn't understand!
+Harvey, Harvey! Do you know what you have done to this man . . . what
+you and I together have done to him? We have wrecked his life! We have
+driven him to hell! We have murdered his wife and his two children. We
+have turned him into a tramp and a criminal. We have climbed to
+success on top of him . . . we have made our fortune out of his blood!
+This house . . . this furniture . . . these pictures . . . all this
+beauty and comfort . . . all this we have coined out of his tears and
+agony . . . out of the lives of his sick wife and his two little
+babies! And you have done this for me . . . you have made me the cause
+of it . . . you have put the guilt of it upon my young life . . . a
+thing that I must carry through the world with me until I die!
+
+AUSTIN. [Starting toward her.] Helen!
+
+MRS. AUSTIN. No! Don't touch me! Speak to HIM! It is with him you have
+to do! What have you to say to him? Don't think about me!
+
+AUSTIN. My dear, be reasonable!
+
+MRS. AUSTIN. What have you to say to him? That is what I want to know!
+Harvey! Don't you understand it is your character that is up for
+judgment?
+
+AUSTIN. It can't be as bad as you say.
+
+MRS. AUSTIN. Why can't it? Find out.
+
+AUSTIN. [After a long pause, turns to Jim.] Faraday.
+
+JIM. Well?
+
+AUSTIN. Is what my wife says true?
+
+JIM. It's true.
+
+AUSTIN. You got no damages from the company?
+
+JIM. Didn't you fix it yourself? What do they pay you for?
+
+AUSTIN. And had you no money saved?
+
+JIM. My family had to live on it.
+
+AUSTIN. And didn't you get your job back?
+
+JIM. Until the shut-down, I did.
+
+AUSTIN. Oh, that's so. I forgot that.
+
+JIM. Humph!
+
+AUSTIN. That's too bad. I will have to do something for you.
+
+JIM. Will that bring my wife and babies back to life?
+
+AUSTIN. Oh, your family died! My God . . . that's terrible! [A pause.]
+Faraday, I can't help that. What can I do? Listen, man . . . you see
+how unhappy my wife is . . . you don't want to make the thing
+impossible for me, do you?
+
+JIM. I ain't doing anything.
+
+AUSTIN. Be reasonable, and let me atone for the mistake. We'll say
+nothing about this . . . about tonight. We'll start over, and I'll see
+that you get a good job, and a fair chance.
+
+Jim. Humph!
+
+AUSTIN. Will you do that? I'm honestly sorry about it. And perhaps if
+I can give you some money for a start. .
+
+[Takes out purse.]
+
+JIM. Put up your money. It ain't likely you've got as much there as
+I'd have got from the company.
+
+AUSTIN. Oh, is that it? Well, maybe that is fair. I'll fix it up with
+you on that basis.
+
+JIM. And what about the other fellows, hey?
+
+AUSTIN. The other fellows?
+
+JIM. That you've done out the same way you done me. What about Dan
+Kearney, that lost his life the day after . . and you and the rest of
+the company sharks fixed it up so that his widow couldn't prove how it
+was that he got hurt!
+
+MRS. AUSTIN. Harvey!
+
+JIM. Yes, ma'am, they done that. And it ain't the first time they done
+it, either . . . nor the last. And they've bought juries . . . and
+judges, too, I reckon . . . there ain't much work of a dirty sort that
+the Empire Steel Company ain't tried in this city . . . and you can
+bet their smart young lawyers know all the game! I'm sorry for you,
+lady . . . you're white, and I'd be glad to help you. But I've seen
+too much of the company and its ways, and I won't lie down and lick
+its hand . . . not for any money! I ain't so low I've got the value of
+my wife and two little babies figured out and ready to hand. I reckon
+I'll stay on the outside of the fence and take my chances. I'll wind
+up in jail, I suppose; but there's many a better man than me done the
+same. So I guess I'll go, and we'll call it off.
+
+[Starts away.]
+
+MRS. AUSTIN. Harvey!
+
+AUSTIN. My dear . . .
+
+MRS. AUSTIN. Is that all you can say to him? You will let him go? [To
+JIM.] Listen to me. You are right. We can never undo what we have
+done. We cannot repay you. But at least we must do what we can. We
+cannot let the evil go on. You yourself have no right to do it . . .
+you have no right to give up your life.
+
+JIM. I see what you mean, lady; and I'm sorry for you. I'd help you if
+I could. But it's too late . . . I know that. There can't anybody save
+me. I'm rotten . . . I'm a boozer. I couldn't stop if I wanted to. And
+I ain't got any reason to want to. I ain't in the running.
+
+MRS. AUSTIN. [Stretching out her arms.] But what can I do ?
+
+JIM. You can look after them that ain't down. Look after them that
+your husband and the rest of the company's sharks will do up tomorrow.
+
+MRS. AUSTIN. No!
+
+JIM. Oh, they'll do it! I know what you mean . . . you'll make him
+stop . . . but they'll have another man in his place. It's a machine .
+. . it goes right on. Yes, and you won't do as much as you think you
+will, either . . . you'll think it over, and you won't go as far as
+you mean to now.
+
+MRS. AUSTIN. No! No!
+
+JIM. Ah, but you can't help it . . . you're in the mill, too. It's the
+class you belong to. You can talk and feel sorry . . . but you ain't
+made to do things. You have to have your houses and your fine dresses
+. . . and you couldn't live without them, and there'd be no use your
+trying. And that means you have to live off my class . . . you have to
+ride on our backs. And it don't much matter which part you ride on, as
+far as I can see. You'll make your husband get a new job, maybe; but
+he'll do the same thing in another way . . . only you won't find it
+out. But any way he gets his money it'll come out of me and my kind.
+D'ye see? I do the work . . . I'm the man underneath. I make the good
+things, and you get them. [A pause.] Good luck to you.
+
+MRS. AUSTIN. You are cruel.
+
+JIM. Nothing of the kind. I've just told you the facts. I feel sorry
+for you. I'd do anything I could for you. [Stretching out his hands.]
+See what I've done! I've given you your husband's life.
+
+MRS. AUSTIN. Oh!
+
+JIM. Yes, just that. You've no idea how many times I swore it . . .
+that I'd kill him on sight . . . that I'd strangle the life out of
+him, if ever I laid eyes on him again. I used to sit when I was half
+drunk, and brood over it . . . my God, I even swore it by the body of
+my little boy! And I've got my gun, and you've taken his away from
+him. And I don't shoot him. [A pause.] I leave him to you. [Grimly.]
+You punish him.
+
+[Exit right.]
+
+[AUSTIN stretches out his arms to his wife. She sinks upon the table,
+burying her head.]
+
+CURTAIN
+
+
+
+
+
+End of Project Gutenberg Etext The Second-Story Man, by Upton Sinclair
+

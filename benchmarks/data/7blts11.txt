@@ -1,0 +1,4737 @@
+The Project Gutenberg Etext of Les chansons de Bilitis, by Pierre Louys
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg file.
+
+We encourage you to keep this file, exactly as it is, on your own disk,
+thereby keeping an electronic path open for future readers.
+
+Please do not remove this.
+
+This header should be the first thing seen when anyone starts to
+view the etext. Do not change or edit it without written permission.
+The words are carefully chosen to provide users with the information
+they need to understand what they may and may not do with the etext.
+To encourage this, we have moved most of the information to the end,
+rather than having it all here at the beginning.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Were Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get etexts, and
+further information, is included below.  We need your donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+Find out about how to make a donation at the bottom of this file.
+
+
+
+Title: Les chansons de Bilitis
+
+Author: Pierre Louys
+
+Release Date: December, 2003 [Etext #4708]
+[Yes, we are more than one year ahead of schedule]
+[Most recently updated: April 23, 2002]
+
+Edition: 10
+
+Language: French
+
+Character set encoding: ISO-8859-1
+
+The Project Gutenberg Etext of Les chansons de Bilitis, by Pierre Louys
+*********This file should be named 7blts11.txt or 7blts11.zip*********
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7blts12.txt
+VERSIONS based on separate sources get new LETTER, 7blts10a.txt
+
+Produced by Carlo Traverso, Robert Rowe, Charles Franks
+and the Online Distributed Proofreading Team.
+
+
+Project Gutenberg Etexts are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep etexts in compliance with any particular paper edition.
+
+The "legal small print" and other information about this book
+may now be found at the end of this file.  Please read this
+important information, as it gives you specific rights and
+tells you about restrictions in how the file may be used.
+
+
+
+
+
+
+
+
+
+
+
+<greek> translitteration: <a>lpha, <b>eta, <g>amma, <d>elta,
+<e>psilon, <z>eta, <_e>ta, <th>eta, <i>ota, <k>appa, <l>ambda,
+<m>u, <n>u, <x>i, <o>micron, <p>i, <rh>o, <s>igma, <t>au,
+<y>psilon (<u>psilon in diphthongs), <ph>i, <ch>i, <ps>i, <_o>mega,
+<*i>ota subscript, <`><'><^> accents (after the letter),
+<:> diaeresis (between the vocals), <;> question mark.
+<h> rough (before the letter except <rh>), (smooth is unmarked)
+
+
+
+
+We thank the Bibliotheque Nationale de France that has made available
+the image files at www://gallica.bnf.fr, authorizing the preparation
+of the etext through OCR.
+
+Nous remercions la Bibliotheque Nationale de France qui a mis a
+dispositions les images dans www://gallica.bnf.fr, et a donne
+l'authorisation a les utiliser pour preparer ce texte.
+
+
+
+
+
+                        Pierre Louys
+
+                  LES CHANSONS DE BILITIS
+                       roman lyrique
+
+
+
+
+               CE PETIT LIVRE D'AMOUR ANTIQUE
+        	 EST DEDIE RESPECTUEUSEMENT
+           AUX JEUNES FILLES DE LA SOCIETE FUTURE
+
+
+
+
+VIE DE BILITIS
+
+
+Bilitis naquit au commencement du sixieme siecle avant notre
+ere, dans un village de montagnes situe sur les bords du
+Melas, vers l'orient de la Pamphylie.  Ce pays est grave et
+triste, assombri par des forets profondes, domine par la
+masse enorme du Taurus; des sources petrifiantes sortent de
+la roche; de grands lacs sales sejournent sur les hauteurs,
+et les vallees sont pleines de silence.
+
+Elle etait fille d'un Grec et d'une  Phenicienne.  Elle
+semble n'avoir pas connu son pere, car il n'est mele nulle
+part aux souvenirs de son enfance.  Peut-etre meme etait-il
+mort avant qu'elle ne vint au monde.  Autrement on
+s'expliquerait mal comment elle porte un nom phenicien que
+sa mere seule lui put donner.
+
+Sur cette terre presque deserte, elle vivait d'une vie
+tranquille avec sa mere et ses soeurs.  D'autres jeunes
+filles, qui furent ses amies, habitaient non loin de la.
+Sur les pentes boisees du Taurus, des bergers paissaient
+leurs troupeaux.
+
+Le matin, des le chant du coq, elle se levait, allait a
+l'etable, menait boire les animaux et s'occupait de traire
+leur lait.  Dans la journee, s'il pleuvait, elle restait au
+gynecee et filait sa quenouille de laine.  Si le temps etait
+beau, elle courait dans les champs et faisait avec ses
+compagnes mille jeux dont elle nous parle.
+
+Bilitis avait a l'egard des Nymphes une piete tres ardente.
+Les sacrifices qu'elle offrait, presque toujours etaient
+pour leur fontaine.  Souvent meme elle leur parlait, mais il
+semble bien qu'elle ne les a jamais vues, tant elle rapporte
+avec veneration les souvenirs d'un vieillard qui autrefois
+les avait surprises.
+
+La fin de son existence pastorale fut attristee par un amour
+sur lequel nous savons peu de chose bien qu'elle en parle
+longuement.  Elle cessa de le chanter des qu'il devint
+malheureux.  Devenue mere d'un enfant qu'elle abandonna,
+Bilitis quitta la Pamphylie, d'une facon assez mysterieuse,
+et ne revit jamais le lieu de sa naissance.
+
+Nous la retrouvons ensuite a Mytilene ou elle etait venue
+par la route de mer en longeant les belles cotes d'Asie.
+Elle avait a peine seize ans, selon les conjectures de M.
+Heim qui etablit avec vraisemblance quelques dates dans la
+vie de Bilitis, d'apres un vers qui fait allusion a la mort
+de Pittakos.
+
+Lesbos etait alors le centre du monde.  A mi-chemin, entre
+la belle Attique et la fastueuse Lydie, elle avait pour
+capitale une cite plus eclairee qu'Athenes et plus corrompue
+que Sardes: Mytilene, batie sur une presqu'ile en vue des
+cotes d'Asie.  La mer bleue entourait la ville.  De la
+hauteur des temples on distinguait a l'horizon la ligne
+blanche d'Atarnee qui etait le port de Pergame.
+
+Les rues etroites et toujours encombrees par la foule
+resplendissaient d'etoffes bariolees, tuniques de pourpre et
+d'hyacinthe, cyclas de soies transparentes, bassaras
+trainantes dans la poussiere des chaussures jaunes.  Les
+femmes portaient aux oreilles de grands anneaux d'or enfiles
+de perles brutes, et aux bras des bracelets d'argent massif
+grossierement ciseles en relief.  Les hommes eux-memes
+avaient la chevelure brillante et parfumee d'huiles rares.
+Les chevilles des Grecques etaient nues dans le cliquetis
+des periscelis, larges serpents de metal clair qui tintaient
+sur les talons; celles des Asiatiques se mouvaient en des
+bottines molles et peintes.  Par groupes, les passants
+stationnaient devant des boutiques tout en facade et ou l'on
+ne vendait que l'etalage: tapis de couleurs sombres, housses
+brochees de fils d'or, bijoux d'ambre et d'ivoire, selon les
+quartiers.  L'animation de Mytilene ne cessait pas avec le
+jour; il n'y avait pas d'heure si tardive, ou l'on
+n'entendit, par les portes ouvertes, des sons joyeux
+d'instruments, des cris de femmes, et le bruit des danses.
+Pittakos meme, qui voulait donner un peu d'ordre a cette
+perpetuelle debauche, fit une loi qui defendait aux joueuses
+de flutes trop fatiguees de s'employer dans les festins
+nocturnes; mais cette loi ne fut jamais severe.
+
+Dans une societe ou les maris sont la nuit si occupes par le
+vin et les danseuses, les femmes devaient fatalement se
+rapprocher et trouver entre elles la consolation de leur
+solitude.  De la vint qu'elles s'attendrirent a ces amours
+delicates, auxquelles l'antiquite donnait deja leur nom, et
+qui entretiennent, quoi qu'en pensent les hommes, plus de
+passion vraie que de vicieuse recherche.
+
+Alors, Sappho etait encore belle.  Bilitis l'a connue, et
+elle nous parle d'elle sous le nom de Psappha quelle portait
+a Lesbos.  Sans doute ce fut cette femme admirable qui
+apprit a la petite Pamphylienne l'art de chanter en phrases
+rhythmees, et de conserver a la posterite le souvenir des
+etres chers.  Malheureusement Bilitis donne peu de details
+sur cette figure aujourd'hui si mal connue, et il y a lieu
+de le regretter, tant le moindre mot eut ete precieux
+touchant la grande Inspiratrice.  En revanche elle nous a
+laisse en une trentaine d'elegies l'histoire de son amitie
+avec une jeune fille de son age qui se nommait Mnasidika, et
+qui vecut avec elle.  Deja nous connaissions le nom de cette
+jeune fille par un vers de Sappho ou sa beaute est exaltee;
+mais ce nom meme etait douteux, et Bergk etait pres de
+penser qu'elle s'appelait simplement Mnais.  Les chansons
+qu'on lira plus loin prouvent que cette hypothese doit etre
+abandonnee.  Mnasidika semble avoir ete une petite fille
+tres douce et tres innocente, un de ces etres charmants qui
+ont pour mission de se laisser adorer, d'autant plus cheris
+qu'ils font moins d'efforts pour meriter ce qu'on leur
+donne.  Les amours sans motifs durent le plus longtemps:
+celui-ci dura dix annees.  On verra comment il se rompit par
+la faute de Bilitis, dont la jalousie excessive ne
+comprenait aucun eclectisme.
+
+Quand elle sentit que rien ne la retenait plus a Mytilene,
+sinon des souvenirs douloureux, Bilitis fit un second
+voyage: elle se rendit a Chypre, ile grecque et phenicienne
+comme la Pamphylie elle-meme et qui dut lui rappeler souvent
+l'aspect de son pays natal.
+
+Ce fut la que Bilitis recommenca pour la troisieme fois sa
+vie, et d'une facon qu'il me sera plus difficile de faire
+admettre si l'on na pas encore compris a quel point l'amour
+etait chose sainte chez les peuples antiques.  Les
+courtisanes d'Amathonte n'etaient pas comme les notres, des
+creatures en decheance exilees de toute societe mondaine;
+c'etaient des filles issues des meilleures familles de la
+cite, et qui remerciaient Aphrodite de la beaute qu'elle
+leur avait donnee, en consacrant au service de son culte
+cette beaute reconnaissante.  Toutes les villes qui
+possedaient comme celles de Chypre un temple riche en
+courtisanes avaient a l'egard de ces femmes les memes soins
+respectueux.
+
+L'incomparable histoire de Phryne, telle qu'Athenee nous l'a
+transmise, donnera quelque idee d'une telle veneration.  Il
+n'est pas vrai qu'Hyperide eut besoin de la mettre nue pour
+flechir l'Areopage, et pourtant le crime etait grand: elle
+avait assassine.  L'orateur ne dechira que le haut de sa
+tunique et revela seulement les seins.  Et il supplia les
+Juges << de ne pas mettre a mort la pretresse et _l'inspiree
+d'Aphrodite_ >> .  Au contraire des autres courtisanes qui
+sortaient vetues de cyclas transparentes a travers
+lesquelles paraissaient tous les details de leur corps,
+Phryne avait coutume de s'envelopper meme les cheveux dans
+un de ces grands vetements plisses dont les figurines de
+Tanagre nous ont conserve la grace.  Nul, s'il n'etait de
+ses amis, n'avait vu ses bras ni ses epaules, et jamais elle
+ne se montrait dans la piscine des bains publics.  Mais un
+jour il se passa une chose extraordinaire.  C'etait le jour
+des fetes d'Eleusis, vingt mule personnes, venues de tous
+les pays de la Grece, etaient assemblees sur la plage, quand
+Phryne s'avanca pres des vagues: elle ota son vetement, elle
+defit sa ceinture, elle ota meme sa tunique de dessous,
+<< elle deroula tous ses cheveux et elle entra dans la mer >>.
+Et dans cette foule il y avait Praxitele qui d'apres cette
+deesse vivante dessina l'_Aphrodite de Cnide_; et Apelle qui
+entrevit la forme de son _Anadyomene_.  Peuple admirable,
+devant qui la Beaute pouvait paraitre nue sans exciter le
+rire ni la fausse honte!
+
+Je voudrais que cette histoire fut celle de Bilitis, car, en
+traduisant ses Chansons, je me suis pris a aimer l'amie de
+Mnasidika.  Sans doute sa vie fut tout aussi merveilleuse.
+Je regrette seulement qu'on n'en ait pas parle davantage et
+que les auteurs anciens, ceux du moins qui ont survecu,
+soient si pauvres de renseignements sur sa personne.
+Philodeme, qui l'a pillee deux fois, ne mentionne pas meme
+son nom.  A defaut de belles anecdotes, je prie qu'on
+veuille bien se contenter des details qu'elle nous donne
+elle-meme sur sa vie de courtisane.  Elle fut courtisane,
+cela n'est pas niable; et meme ses dernieres chansons
+prouvent que si elle avait les vertus de sa vocation, elle
+en avait aussi les pires faiblesses.  Mais je ne veux
+connaitre que ses vertus.  Elle etait pieuse, et meme
+pratiquante.  Elle demeura fidele au temple, tant
+qu'Aphrodite consentit a prolonger la jeunesse de sa plus
+pure adoratrice.  Le jour ou elle cessa d'etre aimee, elle
+cessa d'ecrire, dit-elle.  Pourtant il est difficile
+d'admettre que les chansons de Pamphylie aient ete ecrites a
+l'epoque ou elles ont ete vecues.  Comment une petite
+bergere de montagnes eut-elle appris a scander ses vers
+selon les rythmes difficiles de la tradition eolienne?  On
+trouvera plus vraisemblable que, devenue vieille, elle se
+plut a chanter pour elle-meme les souvenirs de sa lointaine
+enfance.  Nous ne savons rien sur cette derniere periode de
+sa vie.  Nous ne savons meme pas a quel age elle mourut.
+
+Son tombeau a ete retrouve par M. G. Heim a Palaeo-Limisso,
+sur le bord d'une route antique, non loin des ruines
+d'Amathonte.  Ces ruines ont presque disparu depuis trente
+ans, et les pierres de la maison ou peut-etre vecut Bilitis
+pavent aujourd'hui les quais de Port-Said.  Mais le tombeau
+etait souterrain, selon la coutume phenicienne, et il avait
+echappe meme aux voleurs de tresors.
+
+M. Heim y penetra par un puits etroit comble de terre, au
+fond duquel il rencontra une porte muree qu'il fallut
+demolir.  Le caveau spacieux et bas, pave de dalles de
+calcaire, avait quatre murs recouverts par des plaques
+d'amphibolite noire, ou etaient gravees en capitales
+primitives toutes les chansons qu'on va lire, a part les
+trois epitaphes qui decoraient le sarcophage.
+
+C'etait la que reposait l'amie de Mnasidika, dans un grand
+cercueil de terre cuite, sous un couvercle modele par un
+statuaire delicat qui avait figure dans l'argile le visage
+de la morte : les cheveux etaient peints en noir, les yeux a
+demi fermes et prolonges au crayon comme si elle eut ete
+vivante, et la joue a peine attendrie par un sourire leger
+qui naissait des lignes de la bouche.  Rien ne dira jamais
+ce qu'etaient ces levres, a la fois nettes et rebordees,
+molles et fines, unies l'une a l'autre, et comme enivrees de
+se joindre.  Les traits celebres de Bilitis ont ete souvent
+reproduits par les artistes de l'Ionie, et le musee du
+Louvre possede une terre cuite de Rhodes qui en est le plus
+parfait monument, apres le buste de Larnaka.
+
+Quand on ouvrit la tombe, elle apparut dans l'etat ou une
+main pieuse l'avait rangee, vingt-quatre siecles auparavant.
+Des fioles de parfums pendaient aux chevilles de terre, et
+l'une d'elles, apres si longtemps, etait encore embaumee.
+Le miroir d'argent poli ou Bilitis s'etait vue, le stylet
+qui avait traine le fard bleu sur ses paupieres, furent
+retrouves a leur place.  Une petite Astarte nue, relique a
+jamais precieuse, veillait toujours sur le squelette orne de
+tous ses bijoux d'or et blanc comme une branche de neige,
+mais si doux et si fragile qu'au moment ou on l'effleura, il
+se confondit en poussiere.
+
+                                 PIERRE  LOUYS
+
+Constantine, Aout 1894.
+
+
+
+
+                               I
+
+                    BUCOLIQUES EN PAMPHYLIE
+
+    <Hady`de'moi to`me'lisma. kai` _e'n sy'rhiggi meli'sd_o
+    k_e'n aul_o*i lale'_o, k_e'n d_o'naki,  k_e'n plagiau'l_o*i.>
+
+                                                THEOCRITE.
+
+
+
+ 1 -- L'ARBRE
+
+
+ Je me suis devetue pour monter a un arbre;
+ mes cuisses nues embrassaient l'ecorce lisse
+ et humide; mes sandales marchaient sur les
+ branches.
+
+ Tout en haut, mais encore sous les feuilles
+ et a l'ombre de la chaleur, je me suis mise a
+ cheval sur une fourche ecartee en balancant
+ mes pieds dans le vide.
+
+ Il avait plu.  Des gouttes d'eau tombaient et
+ coulaient sur ma peau.  Mes mains etaient
+ tachees de mousse, et mes orteils etaient
+ rouges, a cause des fleurs ecrasees.
+
+ Je sentais le bel arbre vivre quand le vent
+ passait au travers; alors je serrais mes
+ jambes davantage et j'appliquais mes levres
+ ouvertes sur la nuque chevelue d'un rameau.
+
+
+
+ 2 -- CHANT PASTORAL
+
+
+ Il faut chanter un chant pastoral, invoquer
+ Pan, dieu du vent d'ete.  Je garde mon
+ troupeau et Selenis le sien, a l'ombre ronde
+ d'un olivier qui tremble.
+
+ Selenis est couchee sur le pre.  Elle se
+ leve et court, ou cherche des cigales, ou
+ cueille des fleurs avec des herbes, ou lave
+ son visage dans l'eau fraiche du ruisseau.
+
+ Moi, j'arrache la laine au dos blond des
+ moutons pour en garnir ma quenouille, et je
+ file.  Les heures sont lentes.  Un aigle
+ passe dans le ciel.
+
+ L'ombre tourne: changeons de place la corbeille
+ de figues et la jarre de lait.  Il faut chanter
+ un chant pastoral, invoquer Pan, dieu du vent d'ete.
+
+
+
+ 3 -- PAROLES MATERNELLES
+
+
+ Ma mere me baigne dans l'obscurite, elle
+ m'habille au grand soleil et me coiffe dans
+ la lumiere; mais si je sors au clair de lune,
+ elle serre ma ceinture et fait un double
+ noeud.
+
+ Elle me dit: << Joue avec les vierges, danse
+ avec les petits enfants; ne regarde pas par
+ la fenetre; fuis la parole des jeunes hommes
+ et redoute le conseil des veuves.
+
+ << Un soir, quelqu'un, comme pour toutes, te
+ viendra prendre sur le seuil au milieu d'un
+ grand cortege de tympanons sonores et de
+ flutes amoureuses.
+
+ << Ce soir-la, quand tu t'en iras, Bilito, tu
+ me laisseras trois gourdes de fiel: une pour
+ le matin, une pour le midi, et la troisieme,
+ la plus amere, la troisieme pour les jours de
+ fete. >>
+
+
+
+ 4 -- LES PIEDS NUS
+
+
+ J'ai les cheveux noirs, le long de mon dos,
+ et une petite calotte ronde.  Ma chemise est
+ de laine blanche.  Mes jambes fermes
+ brunissent au soleil.
+
+ Si j'habitais la ville, j'aurais des bijoux d'or,
+ et des chemises dorees et des souliers d'argent...
+ Je regarde mes pieds nus, dans leurs souliers
+ de poussiere.
+
+ Psophis! viens ici, petite pauvre! porte-moi
+ jusqu'aux sources, lave mes pieds dans tes
+ mains et presse des olives avec des violettes
+ pour les parfumer sur les fleurs.
+
+ Tu seras aujourd'hui mon esclave; tu me
+ suivras et tu me serviras, et a la fin de la
+ journee je te donnerai, pour ta mere, des
+ lentilles du jardin de la mienne.
+
+
+
+ 5 -- LE VIEILLARD ET LES NYMPHES
+
+
+ Un vieillard aveugle habite la montagne.
+ Pour avoir regarde les nymphes, ses yeux sont
+ morts, voila longtemps.  Et depuis, son
+ bonheur est un souvenir lointain.
+
+ << Oui, je les ai vues, m'a-t-il dit.
+ Helopsychria, Limnanthis; elles etaient
+ debout, pres du bord, dans l'etang vert de
+ Physos.  L'eau brillait plus haut que leurs
+ genoux.
+
+ << Leurs nuques se penchaient sous les
+ cheveux longs.  Leurs ongles etaient minces
+ comme des ailes de cigales.  Leurs mamelons
+ etaient creux comme des calices de jacinthes.
+
+ << Elles promenaient leurs doigts sur l'eau
+ et tiraient de la vase invisible les nenufars
+ a longue tige.  Autour de leurs cuisses separees,
+ des cercles lents s'elargissaient... >>
+
+
+
+ 6 -- CHANSON
+
+
+ << Torti-tortue, que fais-tu la au milieu?
+ -- Je devide la laine et le fil de Milet.
+ -- Helas Helas!  Que ne viens-tu danser?
+ -- J'ai beaucoup de chagrin.  J'ai beaucoup de chagrin.
+
+ -- Torti-tortue, que fais-tu la au milieu?
+ -- Je taille un roseau pour la flute funebre.
+ -- Helas!  Helas!  Qu'est-il arrive!
+ -- Je ne le dirai pas.  Je ne le dirai pas.
+
+ -- Torti-tortue, que fais-tu la au milieu?
+ -- Je presse les olives pour l'huile de la stele.
+ -- Helas!  Helas!  Et qui donc est mort?
+ -- Peux-tu le demander?  Peux-tu le demander?
+
+ -- Torti-tortue, que fais-tu la au milieu?
+ -- Il est tombe dans la mer...
+ -- Helas!  Helas! et comment cela?
+ -- Du haut des chevaux blancs.  Du haut des chevaux blancs. >>
+
+
+
+ 7 -- LE PASSANT
+
+
+ Comme j'etais assise le soir devant la porte
+ de la maison, un jeune homme est venu a
+ passer.  Il m'a regardee, j'ai tourne la
+ tete.  Il m'a parle, je n'ai pas repondu.
+
+ Il a voulu m'approcher.  J'ai pris une faulx
+ contre le mur et je lui aurais fendu la joue
+ s'il avait avance d'un pas.
+
+ Alors reculant un peu, il se mit a sourire et
+ souffla vers moi dans sa main, disant.  << Recois
+ le baiser. >>  Et j'ai crie et j'ai pleure.
+ Tant, que ma mere est accourue.
+
+ Inquiete, croyant que j'avais ete piquee par
+ un scorpion.  Je pleurais: << Il m'a embrassee. >>
+ Ma mere aussi m'a embrassee et m'a emportee
+ dans ses bras.
+
+
+
+ 8 -- LE REVEIL
+
+
+ Il fait deja grand jour.  Je devrais etre
+ levee.  Mais le sommeil du matin est doux et
+ la chaleur du lit me retient blottie.  Je
+ veux rester couchee encore.
+
+ Tout a l'heure j'irai dans l'etable.  Je
+ donnerai aux chevres de l'herbe et des
+ fleurs, et l'outre d'eau fraiche tiree du
+ puits, ou je boirai en meme temps qu'elles.
+
+ Puis je les attacherai au poteau pour traire
+ leurs douces mamelles tiedes; et si les
+ chevreaux n'en sont pas jaloux, je sucerai
+ avec eux les tettes assouplies.
+
+ Amaltheia n'a-t-elle pas nourri Dzeus?
+ J'irai donc.  Mais pas encore.  Le soleil
+ s'est leve trop tot et ma mere n'est pas
+ eveillee.
+
+
+
+ 9 -- LA PLUIE
+
+
+ La pluie fine a mouille toutes choses, tres
+ doucement, et en silence.  Il pleut encore un
+ peu.  Je vais sortir sous les arbres.  Pieds
+ nus, pour ne pas tacher mes chaussures.
+
+ La pluie au printemps est delicieuse.  Les
+ branches chargees de fleurs mouillees ont un
+ parfum qui m'etourdit.  On voit briller au
+ soleil la peau delicate des ecorces.
+
+ Helas! que de fleurs sur la terre!  Ayez
+ pitie des fleurs tombees.  Il ne faut pas les
+ balayer et les meler dans la boue; mais les
+ conserver aux abeilles.
+
+ Les scarabees et les limaces traversent le
+ chemin entre les flaques d'eau; je ne veux
+ pas marcher sur eux, ni effrayer ce lezard
+ dore qui s'etire et cligne des paupieres.
+
+
+
+ 10 -- LES FLEURS
+
+
+ Nymphes des bois et des fontaines, Amies
+ bienfaisantes, je suis la.  Ne vous cachez pas,
+ mais venez m'aider car je suis fort en peine
+ de tant de fleurs cueillies.
+
+ Je veux choisir dans toute la foret une
+ pauvre hamadryade aux bras leves, et dans
+ ses cheveux couleur de feuilles je piquerai
+ ma plus lourde rose.
+
+ Voyez: j'en ai tant pris aux champs que
+ je ne pourrai les rapporter si vous ne m'en
+ faites un bouquet.  Si vous refusez, prenez
+ garde:
+
+ Celle de vous qui a les cheveux oranges je
+ l'ai vue hier saillie comme une bete par le
+ satyre Lamprosathes, et je denoncerai
+ l'impudique.
+
+
+
+ 11 -- IMPATIENCE
+
+
+ Je me jetai dans ses bras en pleurant, et
+ longtemps elle sentit couler mes larmes
+ chaudes sur son epaule, avant que ma douleur
+ me laissat parler:
+
+ << Helas! je ne suis qu'une enfant; les
+ jeunes hommes ne me regardent pas.  Quand
+ aurai-je comme toi des seins de jeune fille
+ qui gonflent la robe et tentent le baiser?
+
+ << Nul n'a les yeux curieux si ma tunique
+ glisse; nul ne ramasse une fleur qui tombe
+ de mes cheveux; nul ne dit qu'il me tuera si
+ ma bouche se donne a un autre. >>
+
+ Elle m'a repondu tendrement: << Bilitis,
+ petite vierge, tu cries comme une chatte a
+ la lune et tu t'agites sans raison.  Les filles
+ les plus impatientes ne sont pas les plus tot
+ choisies. >>
+
+
+
+ 12 -- LES COMPARAISONS
+
+
+ Bergeronnette, oiseau de Kypris, chante
+ avec nos premiers desirs!  Le corps nouveau
+ des jeunes filles se couvre de fleurs comme
+ la terre.  La nuit de tous nos reves approche
+ et nous en parlons entre nous.
+
+ Parfois nous comparons ensemble nos beautes
+ si differentes, nos chevelures deja longues,
+ nos jeunes seins encore petits, nos pubertes
+ rondes comme des cailles et blotties sous la
+ plume naissante.
+
+ Hier je luttai de la sorte contre Melantho
+ mon ainee.  Elle etait fiere de sa poitrine qui
+ venait de croitre en un mois, et, montrant
+ ma tunique droite, elle m'avait appelee:
+ petite enfant.
+
+ Pas un homme ne pouvait nous voir, nous nous
+ mimes nues devant les filles, et, si elle
+ vainquit sur un point, je l'emportait de loin
+ sur les autres.  Bergeronnette, oiseau de
+ Kypris, chante avec nos premiers desirs!
+
+
+
+ 13 -- LA RIVIERE DE LA FORET
+
+
+ Je me suis baignee seule dans la riviere
+ de la foret.  Sans doute je faisais peur aux
+ naiades car je les devinais a peine et de
+ tres loin, sous l'eau obscure.
+
+ Je les ai appelees.  Pour leur ressembler
+ tout a fait, j'ai tresse derriere ma nuque
+ des iris noirs comme mes cheveux, avec des
+ grappes de giroflees jaunes.
+
+ D'une longue herbe flottante, je me suis
+ fait une ceinture verte, et pour la voir je
+ pressais mes seins en penchant un peu la
+ tete.
+
+ Et j'appelais: << Naiades! naiades! jouez
+ avec moi, soyez bonnes. >>  Mais les naiades
+ sont transparentes, et peut-etre, sans le
+ savoir, j'ai caresse leurs bras legers.
+
+
+
+ 14 -- PHITTA MELIAI
+
+
+ Des que le soleil sera moins brulant nous
+ irons jouer sur les bords du fleuve, nous
+ lutterons pour un crocos frele et pour une
+ jacinthe mouillee.
+
+ Nous ferons le collier de la ronde et la
+ guirlande de la course.  Nous nous prendrons
+ par la main et par la queue de nos tuniques.
+
+ Phitta Meliai! donnez-nous du miel.  Phitta
+ Naiades! baignez-nous avec vous.  Phitta
+ Meliades! donnez l'ombre douce a nos corps
+ en sueur.
+
+ Et nous vous offrirons, Nymphes bienfaisantes,
+ non le vin honteux, mais l'huile et le
+ lait et des chevres aux cornes courbes.
+
+
+
+ 15 -- LA BAGUE SYMBOLIQUE
+
+
+ Les voyageurs qui reviennent de Sardes
+ parlent des colliers et des pierres qui
+ chargent les femmes de Lydie, du sommet de
+ leurs cheveux jusqu'a leurs pieds fardes.
+
+ Les filles de mon pays n'ont ni bracelets
+ ni diademes, mais leur doigt porte une
+ bague d'argent, et sur le chaton est grave
+ le triangle de la deesse.
+
+ Quand elles tournent la pointe en dehors
+ cela veut dire: Psyche a prendre.  Quand
+ elles tournent la pointe en dedans, cela
+ veut dire: Psyche prise.
+
+ Les hommes y croient.  Les femmes non.
+ Pour moi je ne regarde guere de quel cote
+ la pointe se tourne, car Psyche se delivre
+ aisement.  Psyche est toujours a prendre.
+
+
+
+ 16 -- LES DANSES AU CLAIR DE LUNE
+
+
+ Sur l'herbe molle, dans la nuit, les jeunes
+ filles aux cheveux de violettes ont danse
+ toutes ensemble, et l'une de deux faisait les
+ reponses de l'amant.
+
+ Les vierges ont dit: << Nous ne sommes pas pour
+ vous. >>  Et comme si elles etaient honteuses
+ elles cachaient leur virginite.  Un aegipan
+ jouait de la flute sous les arbres.
+
+ Les autres ont dit: << Vous nous viendrez
+ chercher. >>  Elles avaient serre leurs robes
+ en tunique d'homme, et elles luttaient sans
+ energie en melant leurs jambes dansantes.
+
+ Puis chacune se disant vaincue, a pris son
+ amie par les oreilles comme une coupe par les
+ deux anses, et, la tete penchee, a bu le
+ baiser.
+
+
+
+ 17 -- LES PETITS ENFANTS
+
+
+ La riviere est presque a sec; les joncs
+ fletris meurent dans la fange; l'air brule,
+ et loin des berges creuses, un ruisseau clair
+ coule sur les graviers.
+
+ C'est la que du matin au soir les petits
+ enfants nus viennent jouer.  Ils se baignent,
+ pas plus haut que leurs mollets, tant la
+ riviere est basse.
+
+ Mais ils marchent dans le courant, et
+ glissent quelquefois sur les roches, et les
+ petits garcons jettent de l'eau sur les
+ petites filles qui rient.
+
+ Et quand une troupe de marchands qui passe,
+ mene boire au fleuve les enormes boeufs
+ blancs, ils croisent leurs mains derriere eux
+ et regardent les grandes betes.
+
+
+
+ 18 -- LES CONTES
+
+
+ Je suis aimee des petits enfants; des qu'ils
+ me voient, ils courent a moi, et s'accrochent
+ a ma tunique et prennent mes jambes dans
+ leurs petits bras.
+
+ S'ils ont cueilli des fleurs, ils me les donnent
+ toutes; s'ils ont pris un scarabee ils le
+ mettent dans ma main; s'ils n'ont rien ils me
+ caressent et me font asseoir devant eux.
+
+ Alors ils m'embrassent sur la joue, ils
+ posent leurs tetes sur mes seins; ils me
+ supplient avec les yeux.  Je sais bien ce que
+ cela veut dire.
+
+ Cela veut dire: << Bilitis cherie, dis-nous,
+ car nous sommes gentils, l'histoire du heros
+ Perseus ou la mort de la petite Helle. >>
+
+
+
+ 19 -- L'AMIE MARIEE
+
+
+ Nos meres etaient grosses en meme temps et ce
+ soir elle s'est mariee, Melissa, ma plus
+ chere amie.  Les roses sont encore sur la
+ route; les torches n'ont pas fini de bruler.
+
+ Et je reviens par le meme chemin, avec
+ maman, et je songe.  Ainsi, ce qu'elle est
+ aujourd'hui, moi aussi j'aurais pu l'etre.
+ Suis-je deja si grande fille?
+
+ Le cortege, les flutes, le chant nuptial et
+ le char fleuri de l'epoux, toutes ces fetes,
+ un autre soir, se derouleront autour de moi,
+ parmi les branches d'olivier.
+
+ Comme a cette heure-meme Melissa, je me
+ devoilerai devant un homme, je connaitrai
+ l'amour dans la nuit, et plus tard des petits
+ enfants se nourriront a mes seins gonfles...
+
+
+
+ 20 -- LES CONFIDENCES
+
+
+ Le lendemain, je suis allee chez elle, et
+ nous avons rougi des que nous nous sommes
+ vues.  Elle m'a fait entrer dans sa chambre
+ pour que nous fussions toutes seules.
+
+ J'avais beaucoup de choses a lui dire; mais
+ en la voyant j'oubliai.  Je n'osais pas meme
+ me jeter a son cou, je regardais sa ceinture
+ haute.
+
+ Je m'etonnais que rien n'eut change sur son
+ visage, qu'elle semblat encore mon amie et
+ que cependant, depuis la veille, elle eut
+ appris tant de choses qui m'effarouchaient.
+
+ Soudain je m'assis sur ses genoux, je la pris
+ dans mes bras, je lui parlai a l'oreille
+ vivement, anxieusement.  Alors elle mit sa
+ contre la mienne, et me dit tout.
+
+
+
+ 21 -- LA LUNE AUX YEUX BLEUS
+
+
+ La nuit, les chevelures des femmes et les
+ branches des saules se confondent.  Je
+ marchais au bord de l'eau.  Tout a coup,
+ j'entendis chanter: alors seulement je
+ reconnus qu'il y avait la des jeunes filles.
+
+ Je leur dis: << Que chantez-vous? >>  Elles
+ repondirent: << Ceux qui reviennent. >>  L'une
+ attendait son pere et l'autre son frere; mais
+ celle qui attendait son fiance etait la plus
+ impatiente.
+
+ Elles avaient tresse pour eux des couronnes
+ et des guirlandes, coupe des palmes aux
+ palmiers et tire des lotus de l'eau.  Elles
+ se tenaient par le cou et chantaient l'une
+ apres l'autre.
+
+ Je m'en allai le long du fleuve, tristement,
+ et toute seule, mais en regardant autour de
+ moi, je vis que derriere les grands arbres la
+ lune aux yeux bleus me reconduisait.
+
+
+
+ 22 -- REFLEXIONS (non traduite)
+
+
+
+ 23 -- CHANSON (Ombre du bois)
+
+
+ << Ombre du bois ou elle devait venir, dis-moi,
+ ou est allee ma maitresse?  -- Elle est
+ descendue dans la plaine.  -- Plaine, ou est
+ allee ma maitresse?  -- Elle a suivi les bords
+ du fleuve.
+
+ -- Beau fleuve qui l'a vue passer, dis-moi,
+ est-elle pres d'ici?  -- Elle m'a quitte pour le
+ chemin.  -- Chemin, la vois-tu encore?  --
+ Elle m'a laisse pour la route.
+
+ -- O route blanche, route de la ville, dis-moi,
+ ou l'as-tu conduite?  -- A la rue d'or
+ qui entre a Sardes.  -- O rue de lumiere,
+ touches-tu ses pieds nus?  -- Elle est entree
+ au palais du roi.
+
+ -- O palais, splendeur de la terre,
+ rends-la-moi!  -- Regarde, elle a des colliers
+ sur les seins et des houppes dans les
+ cheveux, cent perles le long des jambes,
+ deux bras autour de la taille. >>
+
+
+
+ 24 -- LYKAS
+
+
+ Venez, nous irons dans les champs, sous les
+ buissons de genevriers; nous mangerons du
+ miel dans les ruches, nous ferons des pieges
+ a sauterelles avec des tiges d'asphodele.
+
+ Venez; nous irons voir Lykas, qui garde
+ les troupeaux de son pere sur les pentes du
+ Tauros ombreux.  Surement il nous donnera
+ du lait.
+
+ J'entends deja le son de sa flute.  C'est un
+ joueur fort habile.  Voici les chiens et les
+ agneaux, et lui-meme, debout contre un arbre.
+ N'est-il pas beau comme Adonis!
+
+ O Lykas, donne-nous du lait.  Voici des
+ figues de nos figuiers.  Nous allons rester
+ avec toi.  Chevres barbues, ne sautez pas, de
+ peur d'exciter les boucs inquiets.
+
+
+
+ 25 -- L'OFFRANDE A LA DEESSE
+
+
+ Ce n'est pas pour l'Artemis qu'on adore a
+ Perga, cette guirlande tressee par mes mains,
+ bien que l'Artemis soit une bonne deesse qui
+ me gardera des couches difficiles.
+
+ Ce n'est pas pour l'Athena qu'on adore a
+ Side, bien qu'elle soit d'ivoire et d'or et
+ qu'elle porte dans la main une pomme de
+ grenade qui tente les oiseaux.
+
+ Non, c'est pour l'Aphrodite que j'adore
+ dans ma poitrine, car elle seule me donnera
+ ce qui manque a mes levres, si je suspends
+ a l'arbre-sacre ma guirlande de tendres roses.
+
+ Mais je ne dirai pas tout haut ce que je la
+ supplie de m'accorder.  Je me hausserai sur
+ la pointe des pieds et par la fente de
+ l'ecorce je lui confierai mon secret.
+
+
+
+ 26 -- L'AMIE COMPLAISANTE
+
+
+ L'orage a dure toute la nuit.  Selenis aux
+ beaux cheveux etait venue filer avec moi.  Elle
+ est restee de peur de la boue.  Nous avons
+ entendu les prieres et serrees l'une contre
+ l'autre nous avons empli mon petit lit.
+
+ Quand les filles couchent a deux, le sommeil
+ reste a la porte.  << Bilitis, dis-moi,
+ dis-moi, qui tu aimes. >>  Elle faisait glisser
+ sa jambe sur la mienne pour me caresser
+ doucement.
+
+ Et elle a dit, devant ma bouche: << Je sais,
+ Bilitis, qui tu aimes.  Ferme les yeux, je
+ suis Lykas. >>  Je repondis en la touchant: << Ne
+ vois-je pas bien que tu es fille?  Tu
+ plaisantes mal a propos. >>
+
+ Mais elle reprit: << En verite, je suis Lykas,
+ si tu fermes les paupieres.  Voila ses bras,
+ voila ses mains... >>  Et tendrement, dans le
+ silence, elle enchanta ma reverie d'une
+ illusion singuliere.
+
+
+
+ 27 -- PRIERE A PERSEPHONE
+
+
+ Purifiees par les ablutions rituelles, et
+ vetues de tuniques violettes, nous avons
+ baisse vers la terre nos mains chargees de
+ branches d'olivier.
+
+ << O Persephone souterraine, ou quel que soit
+ le nom que tu desires, si ce nom t'agree ,
+ ecoute-nous, o Chevelue-de-tenebres, Reine
+ sterile et sans sourire!
+
+ << Kokhlis, fille de Thrasymakhos, est malade,
+ et dangereusement.  Ne la rappelle pas
+ encore.  Tu sais qu'elle ne peut t'echapper:
+ un jour, plus tard, tu la prendras.
+
+ << Mais ne l'entraine pas si vite, o Dominatrice
+ invisible!  Car elle pleure sa virginite,
+ elle te supplie par nos prieres, et nous
+ donnerons pour la sauver trois brebis noires
+ non tondues. >>
+
+
+
+ 28 -- LA PARTIE D'OSSELETS
+
+
+ Comme nous l'aimions tous les deux, nous
+ l'avons joue aux osselets.  Et ce fut une
+ partie celebre.  Beaucoup de jeunes filles y
+ assistaient.
+
+ Elle amena d'abord le coup des Kyklopes, et
+ moi, le coup de Solon.  Mais elle le
+ Kallibolos, et moi, me sentant perdue, je
+ priais la deesse!
+
+ Je jouai, j'eus l'Epiphenon, elle le terrible
+ coup de Khios, moi l'Antiteukhos, elle le
+ Trikhias, et moi le coup d'Aphrodite qui
+ gagna l'amant dispute.
+
+ Mais la voyant palir, je la pris par le cou
+ et je lui dis tout pres de l'oreille (pour
+ qu'elle seule m'entendit): << Ne pleure pas,
+ petite amie, nous le laisserons choisir entre
+ nous. >>
+
+
+
+ 29 -- LA QUENOUILLE
+
+
+ Pour tout le jour ma mere m'a enfermee au
+ gynecee, avec mes soeurs que je n'aime pas et
+ qui parlent entre elles a voix basse.  Moi,
+ dans un petit coin, je file ma quenouille.
+
+ Quenouille, puisque je suis seule avec toi,
+ c'est a toi que je vais parler.  Avec la
+ perruque de laine blanche tu es comme une
+ vieille femme.  Ecoute-moi.
+
+ Si je le pouvais, je ne serais pas ici,
+ assise dans l'ombre du mur et filant avec
+ ennui: je serais couchee dans les violettes
+ sur les pentes du Tauros.
+
+ Comme il est plus pauvre que moi, ma mere ne
+ veut pas qu'il m'epouse.  Et pourtant, je te
+ le dis: ou je ne verrai pas le jour des
+ noces, ou ce sera lui qui me fera passer le
+ seuil.
+
+
+
+ 30 -- LA FLUTE DE PAN
+
+
+ Pour le jour des Hyacinthies, il m'a donne
+ une syrinx faite de roseaux bien tailles,
+ unis avec de la blanche cire qui est douce a
+ mes levres comme du miel.
+
+ Il m'apprend a jouer, assise sur ses genoux;
+ mais je suis un peu tremblante.  Il en joue
+ apres moi, si doucement que je l'entends a
+ peine.
+
+ Nous n'avons rien a nous dire, tant nous
+ sommes pres l'un de l'autre; mais nos chansons
+ veulent se repondre, et tour a tour nos
+ bouches s'unissent sur la flute.
+
+ Il est tard, voici le chant des grenouilles
+ vertes qui commence avec la nuit.  Ma mere ne
+ croira jamais que je suis restee si longtemps
+ a chercher ma ceinture perdue.
+
+
+
+ 31 -- LA CHEVELURE
+
+
+ Il m'a dit: << Cette nuit, j'ai reve.  J'avais
+ ta chevelure autour de mon cou.  J'avais tes
+ cheveux comme un collier noir autour de ma
+ nuque et sur ma poitrine.
+
+ << Je les caressais, et c'etaient les miens; et
+ nous etions lies pour toujours ainsi, par la
+ meme chevelure la bouche sur la bouche, ainsi
+ que deux lauriers n'ont souvent qu'une
+ racine.
+
+ << Et peu a peu, il m'a semble, tant nos
+ membres etaient confondus, que je devenais
+ toi-meme ou que tu entrais en moi comme mon
+ songe. >>
+
+ Quand il eut acheve, il mit doucement ses
+ mains sur mes epaules, et il me regarda d'un
+ regard si tendre, que je baissai les yeux
+ avec un frisson.
+
+
+
+ 32 -- LA COUPE
+
+
+ Lykas m'a vue arriver, seulement vetue d'une
+ exomis succincte, car les journees sont
+ accablantes; il a voulu mouler mon sein qui
+ restait a decouvert.
+
+ Il a pris de l'argile fine, petrie dans l'eau
+ fraiche et legere.  Quand il l'a serree sur
+ ma peau, j'ai pense defaillir tant cette
+ terre etait froide.
+
+ De mon sein moule, il a fait une coupe,
+ arrondie et ombiliquee.  Il l'a mise secher
+ au soleil et l'a peinte de pourpre et
+ d'ocre en pressant des fleurs tout autour.
+
+ Puis nous sommes alles jusqu'a la fontaine
+ qui est consacree aux nymphes, et nous
+ avons jete la coupe dans le courant, avec
+ des tiges de giroflees.
+
+
+
+ 33 -- ROSES DANS LA NUIT
+
+
+ Des que la nuit monte au ciel, le monde
+ est a nous, et aux dieux.  Nous allons des
+ champs a la source, des bois obscurs aux
+ clairieres, ou nous menent nos pieds nus.
+
+ Les petites etoiles brillent assez pour les
+ petites ombres que nous sommes.  Quelquefois,
+ sous les branches basses, nous trouvons
+ des biches endormies.
+
+ Mais plus charmant la nuit que toute autre
+ chose, il est un lieu connu de nous seuls et
+ qui nous attire a travers la foret: un buisson
+ de roses mysterieuses.
+
+ Car rien n'est divin sur la terre a l'egal
+ du parfum des roses dans la nuit.  Comment
+ se fait-il qu'au temps ou j'etais seule je
+ ne m'en sentais pas enivree?
+
+
+
+ 34 -- LES REMORDS
+
+
+ D'abord je n'ai pas repondu, et j'avais la
+ honte sur les joues, et les battements de
+ mon coeur faisaient mal a mes seins.
+
+ Puis j'ai resiste, j'ai dit: << Non.  Non. >>  J'ai
+ tourne la tete en arriere et le baiser n'a pas
+ franchi mes levres, ni l'amour mes genoux
+ serres.
+
+ Alors il m'a demande pardon, il m'a embrasse
+ les cheveux, j'ai senti son haleine brulante,
+ et il est parti...  Maintenant je suis seule.
+
+ Je regarde la place vide, le bois desert, la
+ terre foulee.  Et je mords mes poings jusqu'au
+ sang et j'etouffe mes cris dans l'herbe.
+
+
+
+ 35 -- LE SOMMEIL INTERROMPU
+
+
+ Toute seule je m'etais endormie, comme
+ une perdrix dans la bruyere.  Le vent leger,
+ le bruit des eaux, la douceur de la nuit
+ m'avaient retenue la.
+
+ Je me suis endormie, imprudente, et je me
+ suis reveillee en criant, et j'ai lutte, et
+ j'ai pleure; mais deja il etait trop tard.
+ Et que peuvent les bras d'une fille?
+
+ Il ne me quitta pas.  Au contraire, plus
+ tendrement dans ses bras, il me serra contre
+ lui et je ne vis plus au monde ni la terre ni
+ les arbres mais seulement la lueur de ses
+ yeux...
+
+ A toi, Kypris victorieuse, je consacre ces
+ offrandes encore mouillees de rosee, vestiges
+ des douleurs de la vierge, temoins de mon
+ sommeil et de ma resistance.
+
+
+
+ 36 -- AUX LAVEUSES
+
+
+ Laveuses, ne dites pas que vous m'avez vue!
+ Je me confie a vous; ne le repetez pas!
+ Entre ma tunique et mes seins je vous apporte
+ quelque chose.
+
+ Je suis comme une petite poule effrayee...
+ Je ne sais pas si j'oserai vous dire...  Mon
+ coeur bat comme si je mourais...  C'est un
+ voile que je vous apporte.
+
+ Un voile et les rubans de mes jambes.  Vous
+ voyez: il y a du sang.  Par l'Apollon c'est
+ malgre moi!  Je me suis bien defendue; mais
+ l'homme qui aime est plus fort que nous.
+
+ Lavez-les bien; n'epargnez ni le sel ni la
+ craie.  Je mettrai quatre oboles pour vous
+ aux pieds de l'Aphrodite; et meme une
+ drachme d'argent.
+
+
+
+ 37 -- CHANSON
+
+
+ Quand il est revenu, je me suis cache la
+ figure avec les deux mains.  Il m'a dit: << Ne
+ crains rien.  Qui a vu notre baiser?  --Qui
+ nous a vus? la nuit et la lune,
+
+ << Et les etoiles et la premiere aube.  La lune
+ s'est miree au lac et l'a dit a l'eau sous
+ les saules.  L'eau du lac l'a dit a la rame.
+
+ << Et la rame l'a dit a la barque et la barque
+ l'a dit au pecheur.  Helas, helas! si c'etait
+ tout!  Mais le pecheur l'a dit a une femme.
+
+ << Le pecheur l'a dit a une femme: mon pere et
+ ma mere et mes soeurs, et toute la Hellas le
+ saura. >>
+
+
+
+ 38 -- BILITIS
+
+
+ Une femme s'enveloppe de laine blanche.  Une
+ autre se vet de soie et d'or.  Une autre se
+ couvre de fleurs, de feuilles vertes et de
+ raisins.
+
+ Moi je ne saurais vivre que nue.  Mon amant,
+ prends-moi comme je suis: sans robe ni bijoux
+ ni sandales voici Bilitis toute seule.
+
+ Mes cheveux sont noirs de leur noir et mes
+ levres rouges de leur rouge.  Mes boucles
+ flottent autour de moi, libres et rondes
+ comme des plumes.
+
+ Prends moi telle que ma mere m'a faite dans
+ une nuit d'amour lointaine, et si je te plais
+ ainsi n'oublie pas de me le dire.
+
+
+
+ 39 -- LA PETITE MAISON
+
+
+ La petite maison ou est son lit est la plus
+ belle de la terre.  Elle est faite avec des
+ branches d'arbre, quatre murs de terre seche
+ et une chevelure de chaume.
+
+ Je l'aime, car nous y couchons depuis que les
+ nuits sont fraiches; et plus les nuits sont
+ fraiches, plus elles sont longues aussi.  Au
+ jour levant je me sens enfin lassee.
+
+ Le matelas est sur le sol; deux couvertures
+ de laine noire enferment nos corps qui se
+ rechauffent.  Sa poitrine refoule mes seins.
+ Mon coeur bat...
+
+ Il m'etreint si fort qu'il me brisera, pauvre
+ petite fille que je suis; mais des qu'il est
+ en moi je ne sais plus rien du monde, et on
+ me couperait les quatre membres sans me
+ reveiller de ma joie.
+
+
+
+ 40 -- LA JOIE (non traduite)
+
+
+
+ 41 -- LA LETTRE PERDUE
+
+
+ Helas sur moi!  j'ai perdu sa lettre.  Je
+ l'avais mise entre ma peau et mon strophion,
+ sous la chaleur de mon sein.  J'ai couru,
+ elle sera tombee.
+
+ Je vais retourner sur mes pas: si quelqu'un
+ la trouvait, on le dirait a ma mere et je
+ serais fouettee devant mes soeurs moqueuses.
+
+ Si c'est un homme qui l'a trouvee il me la
+ rendra; ou meme, s'il veut me parler en
+ secret je sais le moyen de la lui ravir.
+
+ Si c'est une femme qui l'a lue, o Dzeus
+ Gardien, protege-moi! car elle le dira a
+ tout le monde, ou elle me prendra mon amant.
+
+
+
+ 42 -- CHANSON
+
+
+ << La nuit est si profonde qu'elle entre dans
+ mes yeux.  -- Tu ne verras pas le chemin.  Tu te
+ perdras dans la foret.
+
+ -- Le bruit des chutes d'eau remplit mes
+ oreilles.  -- Tu n'entendrais pas la voix de
+ ton amant meme s'il etait a vingt pas.
+
+ -- L'odeur des fleurs est si forte que je
+ defaille et vais tomber.  -- Tu ne le sentirais
+ pas s'il croisait ton passage.
+
+ -- Ah! il est bien loin d'ici, de l'autre
+ cote de la montagne, mais je le vois et je
+ l'entends et je le sens comme s'il me touchait. >>
+
+
+
+ 43 -- LE SERMENT
+
+
+ << Lorsque l'eau des fleuves remontera
+ jusqu'aux sommets couverts de neiges;
+ lorsqu'on semera l'orge et le ble dans
+ les sillons mouvants de la mer;
+
+ << Lorsque les pins naitront des lacs et les
+ nenufars des rochers, lorsque le soleil
+ deviendra noir, lorsque la lune tombera sur
+ l'herbe.
+
+ << Alors, mais alors seulement, je prendrai
+ une autre femme, et je t'oublierai, Bilitis,
+ ame de ma vie, coeur de mon coeur. >>
+
+ Il me l'a dit, il me l'a dit!  Que m'importe
+ le reste du monde!  Ou es-tu, bonheur insense
+ qui te compares a mon bonheur!
+
+
+
+ 44 -- LA NUIT
+
+
+ C'est moi maintenant qui le recherche.
+ Chaque nuit, tres doucement, je quitte la
+ maison, et je vais par une longue route,
+ jusqu'a sa prairie, le regarder dormir.
+
+ Quelquefois je reste longtemps sans parler,
+ heureuse de le voir seulement, et j'approche
+ mes levres des siennes, pour ne baiser que
+ son haleine.
+
+ Puis tout a coup je m'etends sur lui.  Il se
+ reveille dans mes bras, et il ne peut plus se
+ relever car je lutte!  Il renonce, et rit, et
+ m'etreint.  Ainsi nous jouons dans la nuit.
+
+ ... Premiere aube, o clarte mechante, toi
+ deja!  En quel antre toujours nocturne, sur
+ quelle prairie souterraine pourrons-nous si
+ longtemps aimer, que nous perdions ton
+ souvenir...
+
+
+
+ 45 -- BERCEUSE
+
+
+ Dors: j'ai demande a Sardes tes jouets, et
+ tes vetements a Babylone.  Dors, tu es fille
+ de Bilitis et d'un roi du soleil levant.
+
+ Les bois, ce sont les palais qu'on batit pour
+ toi seule et que je t'ai donnes.  Les troncs
+ des pins, ce sont les colonnes; les hautes
+ branches, ce sont les voutes.
+
+ Dors.  Pour qu'il ne t'eveille pas, je vendrais
+ le soleil a la mer.  Le vent des ailes de
+ la colombe est moins leger que ton haleine.
+
+ Fille de moi, chair de ma chair, tu diras
+ quand tu ouvriras les yeux, si tu veux la
+ plaine ou la ville, ou la montagne ou la
+ lune, ou le cortege blanc des dieux.
+
+
+
+ 46 -- LE TOMBEAU DES NAIADES
+
+
+ Le long du bois couvert de givre, je
+ marchais; mes cheveux devant ma bouche se
+ fleurissaient de petits glacons, et mes
+ sandales etaient lourdes de neige fangeuse
+ et tassee.
+
+ Il me dit: << Que cherches-tu?  --Je suis la
+ trace du satyre.  Ses petits pas fourchus
+ alternent comme des trous dans un manteau
+ blanc. >>  Il me dit: << Les satyres sont morts.
+
+ << Les satyres et les nymphes aussi.  Depuis
+ trente ans il n'a pas fait un hiver aussi
+ terrible.  La trace que tu vois est celle
+ d'un bouc.  Mais restons ici, ou est leur
+ tombeau. >>
+
+ Et avec le fer de sa houe il cassa la glace
+ de la source ou jadis riaient les naiades.
+ Il prenait de grands morceaux froids, et, les
+ soulevant vers le ciel pale, il regardait au
+ travers.
+
+
+
+
+                               II
+
+                        ELEGIES A MYTILENE
+
+
+     <Eumorphote'rha Mnasidi'ka ta^s hapala^s Gyrhinn_o^s.>
+
+                                                SAPPHO
+
+
+
+ 47 -- AU VAISSEAU
+
+
+ Beau navire qui m'as menee ici, le long des
+ cotes de l'Ionie, je t'abandonne aux flots
+ brillants, et d'un pied leger je saute sur la
+ greve.
+
+ Tu vas retourner au pays ou la vierge est
+ l'amie des nymphes.  N'oublie pas de remercier
+ les conseilleres invisibles, et porte-leur
+ en offrande ce rameau cueilli par mes mains.
+
+ Tu fus pin, et sur les montagnes, le vaste
+ Notos enflamme agitait tes branches epineuses,
+ tes ecureuils et tes oiseaux.
+
+ Que le Boreus maintenant te guide, et te
+ pousse mollement vers le port, nef noire
+ escortee des dauphins au gre de la mer
+ bienveillante.
+
+
+
+ 48 -- PSAPPHA
+
+
+ Je me frotte les yeux...  Il fait deja jour,
+ je crois.  Ah! qui est aupres de moi?... une
+ femme?...  Par la Paphia, j'avais oublie...
+ O Charites! que je suis honteuse.
+
+ Dans quel pays suis-je venue, et quelle est
+ cette ile-ci ou l'on entend ainsi l'amour?
+ Si je n'etais pas ainsi lassee, je croirais a
+ quelque reve...  Est-il possible que ce soit
+ la Psappha!
+
+ Elle dort...  Elle est certainement belle,
+ bien que ses cheveux soient coupes comme ceux
+ d'un athlete.  Mais cet etrange visage, cette
+ poitrine virile et ces hanches etroites...
+
+ Je veux m'en aller avant qu'elle ne s'eveille.
+ Helas! je suis du cote du mur.  Il me faudra
+ l'enjamber.  J'ai peur de froler sa hanche et
+ qu'elle ne me reprenne au passage.
+
+
+
+ 49 -- LA DANSE DE GLOTTIS ET DE KYSE
+
+
+ Deux petites filles m'ont emmenee chez elles,
+ et des que la porte fut fermee, elles
+ allumerent au feu la meche de la lampe et
+ voulurent danser pour moi.
+
+ Leurs joues n'etaient pas fardees, aussi
+ brunes que leurs petits ventres.  Elles se
+ tiraient par les bras et parlaient en meme
+ temps, dans une agonie de gaiete.
+
+ Assises sur leur matelas que portaient deux
+ treteaux eleves, Glottis chantait a voix
+ aigue et frappait en mesure ses petites mains
+ sonores.
+
+ Kyse dansait par saccades, puis s'arretait,
+ essoufflee par le rire, et, prenant sa soeur
+ par les seins, la mordait a l'epaule et la
+ renversait, comme une chevre qui veut jouer.
+
+
+
+ 50 -- LES CONSEILS
+
+
+ Alors Syllikhmas est entree, et nous voyant
+ si familieres, elle s'est assise sur le banc.
+ Elle a pris Glottis sur son genou, Kyse sur
+ l'autre et elle a dit:
+
+ << Viens ici, petite. >>  Mais je restais loin.
+ Elle reprit: << As-tu peur de nous?
+ Approche-toi: ces enfants t'aiment.  Elles
+ t'apprendront ce que tu ignores: le miel des
+ caresses de la femme.
+
+ << L'homme est violent et paresseux.  Tu le
+ connais, sans doute.  Hais-le.  Il a la
+ poitrine plate, la peau rude, les cheveux
+ ras, les bras velus.  Mais les femmes sont
+ toutes belles.
+
+ << Les femmes seules savent aimer; reste avec
+ nous, Bilitis, reste.  Et si tu as une ame
+ ardente, tu verras ta beaute comme dans un
+ miroir sur le corps de tes amoureuses. >>
+
+
+
+ 51 -- L'INCERTITUDE
+
+
+ De Glottis ou de Kyse je ne sais qui
+ j'epouserai.  Comme elles ne se ressemblent
+ pas, l'une ne me consolerait pas de l'autre
+ et j'ai peur de mal choisir.
+
+ Chacune d'elles a l'une de mes mains,
+ l'une de mes mamelles aussi.  Mais a qui
+ donnerai-je ma bouche? a qui donnerai-je
+ mon coeur et tout ce qu'on ne peut partager?
+
+ Nous ne pouvons rester ainsi toutes les
+ trois dans la meme maison.  On en parle
+ dans Mytilene.  Hier, devant le temple d'Ares,
+ une femme ne m'a pas dit: << Salut! >>
+
+ C'est Glottis que je prefere; mais je ne
+ puis repudier Kyse.  Que deviendrait-elle
+ toute seule?  Les laisserai-je ensemble comme
+ elles etaient et prendrai-je une autre amie?
+
+
+
+ 52 -- LA RENCONTRE
+
+
+ Je l'ai trouvee comme un tresor, dans un
+ champ, sous un buisson de myrte, enveloppee
+ de la gorge aux pieds dans un peplos jaune
+ brode de bleu.
+
+ << Je n'ai pas d'amie, m'a-t-elle dit; car la
+ ville la plus proche est a quarante stades
+ d'ici.  Je vis seule avec ma mere qui est
+ veuve et toujours triste.  Si tu veux, je te
+ suivrai.
+
+ << Je te suivrai jusqu'a ta maison, fut-elle de
+ l'autre cote de l'ile et je vivrai chez toi
+ jusqu'a ce que tu me renvoies.  Ta main est
+ tendre, tes yeux sont bleus.
+
+ << Partons.  Je n'emporte rien avec moi, que
+ la petite Aphrodite qui est pendue a mon
+ collier.  Nous la mettrons pres de la tienne,
+ et nous leur donnerons des roses en
+ recompense de chaque nuit. >>
+
+
+
+ 53 -- LA PETITE APHRODITE DE TERRE CUITE
+
+
+ La petite Aphrodite gardienne qui protege
+ Mnasidika fut modelee a Camiros par un potier
+ fort habile.  Elle est grande comme le pouce,
+ et de terre fine et jaune.
+
+ Ses cheveux retombent et s'arrondissent sur
+ ses epaules etroites.  Ses yeux sont
+ longuement fendus et sa bouche est toute
+ petite.  Car elle est la Tres-Belle.
+
+ De la main droite, elle designe sa divinite,
+ qui est criblee de petits trous sur le
+ bas-ventre et le long des aines.  Car elle
+ est la Tres-Amoureuse.
+
+ Du bras gauche elle soutient ses mamelles
+ pesantes et rondes.  Entre ses hanches
+ elargies se gonfle un ventre feconde.  Car
+ elle est la Mere-de-toutes-choses.
+
+
+
+ 54 -- LE DESIR
+
+
+ Elle entra, et passionnement, les yeux
+ fermes a demi, elle unit ses levres aux
+ miennes et nos langues se connurent...
+ Jamais il n'y eut dans ma vie un baiser
+ comme celui-la.
+
+ Elle etait debout contre moi, toute en
+ amour et consentante.  Un de mes genoux,
+ peu a peu, montait entre ses cuisses chaudes
+ qui cedaient comme pour un amant.
+
+ Ma main rampante sur sa tunique cherchait a
+ deviner le corps derobe, qui tour a tour
+ onduleux se pliait, ou cambre se raidissait
+ avec des fremissements de la peau.
+
+ De ses yeux en delire elle designait le lit;
+ mais nous n'avions pas le droit d'aimer avant
+ la ceremonie des noces, et nous nous separames
+ brusquement.
+
+
+
+ 55 -- LES NOCES
+
+ Le matin, on fit le repas de noces, dans la
+ maison d'Acalanthis qu'elle avait adoptee
+ pour mere.  Mnasidika portait le voile blanc
+ et moi la tunique virile.
+
+ Et ensuite, au milieu de vingt femmes, elle a
+ mis ses robes de fete.  On l'a parfumee de
+ bakkaris, on l'a poudree de poudre d'or, on
+ lui a ote ses bijoux.
+
+ Dans sa chambre pleine de feuillages, elle
+ m'a attendue comme un epoux.  Et je l'ai
+ emmenee sur un char entre moi et la
+ nymphagogue, et les passants nous
+ acclamaient.
+
+ On a chante le chant nuptial; les flutes
+ ont chante aussi.  J'ai emporte Mnasidika
+ sous les epaules et sous les genoux, et nous
+ avons passe le seuil couvert de roses.
+
+
+
+ 56 -- LE LIT (non traduite)
+
+
+
+ 57 -- LE PASSE QUI SURVIT
+
+
+ Je laisserai le lit comme elle l'a laisse,
+ defait et rompu, les draps meles, afin que
+ la forme de son corps reste empreinte a cote
+ du mien.
+
+ Jusqu'a demain je n'irai pas au bain, je ne
+ porterai pas de vetements et je ne peignerai
+ pas mes cheveux, de peur d'effacer les
+ caresses.
+
+ Ce matin, je ne mangerai pas, ni ce soir,
+ et sur mes levres je ne mettrai ni rouge ni
+ poudre, afin que son baiser demeure.
+
+ Je laisserai les volets clos et je n'ouvrirai
+ pas la porte, de peur que le souvenir reste
+ ne s'en aille avec le vent.
+
+
+
+ 58 -- LA METAMORPHOSE
+
+
+ Je fus jadis amoureuse de la beaute des
+ jeunes hommes, et le souvenir de leurs
+ paroles, jadis, me tint eveillee.
+
+ Je me souviens d'avoir grave un nom dans
+ l'ecorce d'un platane.  Je me souviens
+ d'avoir laisse un morceau de ma tunique dans
+ un chemin ou passait quelqu'un.
+
+ Je me souviens d'avoir aime...  O Pannychis,
+ mon enfant, en quelles mains t'ai-je laissee?
+ comment, o malheureuse, t'ai-je abandonnee?
+
+ Aujourd'hui Mnasidika seule, et pour
+ toujours, me possede.  Qu'elle recoive en
+ sacrifice le bonheur de ceux que j'ai quittes
+ pour elle.
+
+
+
+ 59 -- LE TOMBEAU SANS NOM
+
+
+ Mnasidika m'ayant prise par la main me
+ mena hors des portes de la ville, jusqu'a un
+ petit champ inculte ou il y avait une stele de
+ marbre.  Et elle me dit: << Celle-ci fut l'amie
+ de ma mere. >>
+
+ Alors je sentis un grand frisson, et sans
+ cesser de lui tenir la main, je me penchai
+ sur son epaule, afin de lire les quatre vers
+ entre la coupe creuse et le serpent:
+
+ << Ce n'est pas la mort qui m'a enlevee, mais
+ les Nymphes des fontaines.  Je repose ici
+ sous une terre legere avec la chevelure
+ coupee de Xantho.  Qu'elle seule me pleure.
+ Je ne dis pas mon nom. >>
+
+ Longtemps nous sommes restees debout, et nous
+ n'avons pas verse la libation.  Car comment
+ appeler une ame inconnue d'entre les foules
+ de l'Hades?
+
+
+
+ 60 -- LES TROIS BEAUTES DE MNASIDIKA
+
+
+ Pour que Mnasidika soit protegee des dieux,
+ j'ai sacrifie a l'Aphrodita-qui-aime-les-sourires,
+ deux lievres males et deux colombes.
+
+ Et j'ai sacrifie a l'Ares deux coqs armes
+ pour la lutte et a la sinistre Hekata deux
+ chiens qui hurlaient sous le couteau.
+
+ Et ce n'est pas sans raison que j'ai implore
+ ces trois Immortels, car Mnasidika porte sur
+ son visage le reflet de leur triple divinite:
+
+ Ses levres sont rouges comme le cuivre, ses
+ cheveux bleuatres comme le fer, et ses yeux
+ noirs, comme l'argent.
+
+
+
+ 61 -- L'ANTRE DES NYMPHES
+
+
+ Tes pieds sont plus delicats que ceux de
+ Thetis argentine.  Entre tes bras croises tu
+ reunis tes seins, et tu les berces mollement
+ comme deux beaux corps de colombes.
+
+ Sous tes cheveux tu dissimules tes yeux
+ mouilles, ta bouche tremblante et les fleurs
+ rouges de tes oreilles; mais rien n'arretera
+ mon regard ni le souffle chaud du baiser.
+
+ Car, dans le secret de ton corps, c'est toi,
+ Mnasidika aimee, qui receles l'antre des
+ nymphes dont parle le vieil Homeros, le lieu
+ ou les naiades tissent des linges de pourpre,
+
+ Le lieu ou coulent, goutte a goutte, des
+ sources intarissables, et d'ou la porte du
+ Nord laisse descendre les hommes et ou la
+ porte du Sud laisse entrer les Immortels.
+
+
+
+ 62 -- LES SEINS DE MNASIDIKA
+
+
+ Avec soin, elle ouvrit d'une main sa tunique
+ et me tendit ses seins tiedes et doux, ainsi
+ qu'on offre a la deesse une paire de
+ tourterelles vivantes.
+
+ << Aime-les bien, me dit-elle; je les aime
+ tant!  Ce sont des cheris, des petits
+ enfants.  Je m'occupe d'eux quand je suis
+ seule.  Je joue avec eux; je leur fais
+ plaisir.
+
+ << Je les lave avec du lait.  Je les poudre
+ avec des fleurs.  Mes cheveux fins qui les
+ essuient sont chers a leurs petits bouts.  Je
+ les caresse en frissonnant.  Je les couche
+ dans de la laine.
+
+ << Puisque je n'aurai jamais d'enfants, sois
+ leur nourrisson, mon amour; et, puisqu'ils
+ sont si loin de ma bouche, donne-leur des
+ baisers de ma part. >>
+
+
+
+ 63 -- LA CONTEMPLATION (non traduite)
+
+
+
+ 64 -- LA POUPEE
+
+
+ Je lui ai donne une poupee, une poupee de
+ cire aux joues roses.  Ses bras sont attaches
+ par de petites chevilles, et ses jambes
+ elles-memes se plient.
+
+ Quand nous sommes ensemble elle la couche
+ entre nous et c'est notre enfant.  Le soir
+ elle la berce et lui donne le sein avant de
+ l'endormir.
+
+ Elle lui a tisse trois petites tuniques, et
+ nous lui donnons des bijoux le jour des
+ Aphrodisies, des bijoux et des fleurs aussi.
+
+ Elle a soin de sa vertu et ne la laisse pas
+ sortir sans elle; pas au soleil, surtout, car
+ la petite poupee fondrait en gouttes de cire.
+
+
+
+ 65 -- TENDRESSES
+
+
+ Ferme doucement tes bras, comme une ceinture,
+ sur moi.  O touche, o touche ma peau ainsi!
+ Ni l'eau ni la brise de midi ne sont plus
+ douces que ta main.
+
+ Aujourd'hui cheris-moi, petite soeur, c'est
+ ton tour.  Souviens-toi des tendresses que je
+ t'ai apprises la nuit derniere, et pres de moi
+ qui suis lasse agenouille-toi sans parler.
+
+ Tes levres descendent de mes levres.  Tous
+ tes cheveux defaits les suivent, comme la
+ caresse suit le baiser.  Ils glissent sur mon
+ sein gauche; ils me cachent tes yeux.
+
+ Donne-moi ta main.  Qu'elle est chaude!
+ Serre la mienne, ne la quitte pas.  Les mains
+ mieux que les bouches s'unissent, et leur
+ passion ne s'egale a rien.
+
+
+
+ 66 -- JEUX
+
+
+ Plus que ses balles ou sa poupee, je suis
+ pour elle un jouet.  De toutes les parties de
+ mon corps elle s'amuse comme une enfant,
+ pendant de longues heures, sans parler.
+
+ Elle defait ma chevelure et la reforme selon
+ son caprice, tantot nouee sous le menton
+ comme une etoffe epaisse, ou tordue en
+ chignon ou tressee jusqu'au bout.
+
+ Elle regarde avec etonnement la couleur
+ de mes cils, le pli de mon coude.  Parfois
+ elle me fait mettre a genoux et poser les
+ mains sur les draps;
+
+ Alors (et c'est un de ses jeux) elle glisse
+ sa petite tete par-dessous et imite le
+ chevreau tremblant qui s'allaite au ventre
+ de sa mere.
+
+
+
+ 67 -- EPISODE (non traduite)
+
+
+
+ 68 -- PENOMBRE
+
+
+ Sous le drap de laine transparent nous nous
+ sommes glissees, elle et moi.  Meme nos tetes
+ etaient blotties, et la lampe eclairait
+ l'etoffe au-dessus de nous.
+
+ Ainsi je voyais son corps cheri dans une
+ mysterieuse lumiere.  Nous etions plus pres
+ l'une de l'autre, plus libres, plus intimes, plus
+ nues.  << Dans la meme chemise, >> disait-elle.
+
+ Nous etions restees coiffees pour etre encore
+ plus decouvertes, et dans l'air etroit du
+ lit, deux odeurs de femmes montaient, des
+ deux cassolettes naturelles.
+
+ Rien au monde, pas meme la lampe, ne nous a
+ vues cette nuit-la.  Laquelle de nous fut
+ aimee, elle seule et moi le pourrions dire.
+ Mais les hommes n'en sauront rien.
+
+
+
+ 69 -- LA DORMEUSE
+
+
+ Elle dort dans ses cheveux defaits, les mains
+ melees derriere la nuque.  Reve-t-elle?  Sa
+ bouche est ouverte; elle respire doucement.
+
+ Avec un peu de cygne blanc, j'essuie, mais
+ sans l'eveiller, la sueur de ses bras, la
+ fievre de ses joues.  Ses paupieres fermees
+ sont deux fleurs bleues.
+
+ Tout doucement je vais me lever; j'irai
+ puiser l'eau, traire la vache et demander du
+ feu aux voisins.  Je veux etre frisee et
+ vetue quand elle ouvrira les yeux.
+
+ Sommeil, demeure encore longtemps entre ses
+ beaux cils recourbes et continue la nuit
+ heureuse par un songe de bon augure.
+
+
+
+ 70 -- LE BAISER
+
+
+ Je baiserai d'un bout a l'autre les longues
+ ailes noires de ta nuque, o doux oiseau,
+ colombe prise dont le coeur bondit sous ma
+ main.
+
+ Je prendrai ta bouche dans ma bouche
+ comme un enfant prend le sein de sa mere.
+ Frissonne!... car le baiser penetre
+ profondement et suffirait a l'amour.
+
+ Je promenerai mes levres comme du feu, sur
+ tes bras, autour de ton cou, et je ferai
+ tourner sur tes cotes chatouilleuses la
+ caresse etirante des ongles.
+
+ Ecoute bruire en ton oreille toute la rumeur
+ de la mer...  Mnasidika! ton regard
+ m'importune.  J'enfermerai dans mon baiser
+ tes paupieres freles et brulantes.
+
+
+
+ 71 -- LES SOINS JALOUX
+
+
+ Il ne faut pas que tu te coiffes, de peur que
+ le fer trop chaud ne brule ta nuque ou tes
+ cheveux.  Tu les laisseras sur tes epaules et
+ repandus le long de tes bras.
+
+ Il ne faut pas que tu t'habilles, de peur
+ qu'une ceinture ne rougisse les plis effiles
+ de ta hanche.  Tu resteras nue comme une
+ petite fille.
+
+ Meme il ne faut pas que tu te leves, de peur
+ que tes pieds fragiles ne s'endolorissent en
+ marchant.  Tu reposeras au lit, o victime
+ d'Eros, et je panserai ta pauvre plaie.
+
+ Car je ne veux voir sur ton corps d'autres
+ marques, Mnasidika, que la tache d'un baiser
+ trop long, l'egratignure d'un ongle aigu,
+ ou la barre pourpree de mon etreinte.
+
+
+
+ 72 -- L'ETREINTE EPERDUE
+
+
+ Aime-moi, non pas avec des sourires, des
+ flutes ou des fleurs tressees, mais avec ton
+ coeur et tes larmes, comme je t'aime avec ma
+ poitrine et avec mes gemissements.
+
+ Quand tes seins s'alternent a mes seins,
+ quand je sens ta vie contre ma vie, quand
+ tes genoux se dressent derriere moi, alors
+ ma bouche haletante ne sait meme plus
+ trouver la tienne.
+
+ Etreins-moi comme je t'etreins!  Vois, la
+ lampe vient de mourir, nous roulons dans la
+ nuit; mais je presse ton corps brulant et
+ j'entends ta plainte perpetuelle...
+
+ Gemis! gemis! gemis! o femme!  Eros
+ nous traine dans la douleur.  Tu souffrirais
+ moins sur ce lit pour mettre un enfant au
+ monde que pour accoucher de ton amour.
+
+
+
+ 73 -- REPRISE (non traduite)
+
+
+
+ 74 -- LE COEUR
+
+
+ Haletante, je lui pris la main et je
+ l'appliquai fortement sous la peau moite de
+ mon sein gauche.  Et je tournais la tete ici
+ et la et je remuais les levres sans parler.
+
+ Mon coeur affole, brusque et dur, battait
+ et battait ma poitrine, comme un satyre
+ emprisonne heurterait, ploye dans une outre.
+ Elle me dit: << Ton coeur te fait mal... >>
+
+ << O Mnasidika, repondis-je, le coeur des
+ femmes n'est pas la.  Celui-ci est un pauvre
+ oiseau, une colombe qui remue ses ailes
+ faibles.  Le coeur des femmes est plus terrible.
+
+ << Semblable a une petite baie de myrte,
+ il brule dans la flamme rouge et sous une
+ ecume abondante.  C'est la que je me sens
+ mordue par la vorace Aphrodite. >>
+
+
+
+ 75 -- PAROLES DANS LA NUIT
+
+
+ Nous reposons, les yeux fermes; le silence
+ est grand autour de notre couche.  Nuits
+ ineffables de l'ete!  Mais elle, qui me croit
+ endormie, pose sa main chaude sur mon bras.
+
+ Elle murmure: << Bilitis, tu dors? >>  Le coeur
+ me bat, mais sans repondre, je respire
+ regulierement comme une femme couchee dans
+ les reves.  Alors elle commence a parler:
+
+ << Puisque tu ne m'entends pas, dit-elle,
+ ah! que je t'aime! >>  Et elle repete mon nom.
+ << Bilitis...  Bilitis... >>  Et elle m'effleure du
+ bout de ses doigts tremblants:
+
+ << C'est a moi, cette bouche! a moi seule!
+ Y en a-t-il une plus belle au monde?  Ah!
+ mon bonheur, mon bonheur!  C'est a moi
+ ces bras nus, cette nuque et ces cheveux... >>
+
+
+
+ 76 -- L'ABSENCE
+
+
+ Elle est sortie, elle est loin, mais je la
+ vois, car tout est plein d'elle dans cette
+ chambre, tout lui appartient, et moi comme
+ le reste.
+
+ Ce lit encore tiede ou je laisse errer ma
+ bouche, est foule a la mesure de son corps.
+ Dans ce coussin tendre a dormi sa petite tete
+ enveloppee de cheveux.
+
+ Ce bassin est celui ou elle s'est lavee; ce
+ peigne a penetre les noeuds de sa chevelure
+ emmelee.  Ces pantoufles prirent ses pieds
+ nus.  Ces poches de gaze continrent ses seins.
+
+ Mais ce que je n'ose toucher du doigt, c'est
+ ce miroir ou elle a vu ses meurtrissures
+ toutes chaudes, et ou subsiste peut-etre
+ encore le reflet de ses levres mouillees.
+
+
+
+ 77 -- L'AMOUR
+
+
+ Helas, si je pense a elle, ma gorge se desseche,
+ ma tete retombe, mes seins durcissent et me
+ font mal, je frissonne et je pleure en marchant.
+
+ Si je la vois, mon coeur s'arrete, mes mains
+ tremblent, mes pieds se glacent, une rougeur
+ de feu monte a mes joues, mes tempes battent
+ douloureusement.
+
+ Si je la touche, je deviens folle, mes bras
+ se raidissent, mes genoux defaillent.  Je tombe
+ devant elle, et je me couche comme une
+ femme qui va mourir.
+
+ De tout ce qu'elle me dit je me sens blessee.
+ Son amour est une torture et les passants
+ entendent mes plaintes...  Helas!  Comment
+ puis-je l'appeler Bien-Aimee?
+
+
+
+ 78 -- LA PURIFICATION
+
+
+ Te voila! defais tes bandelettes, et tes
+ agrafes et ta tunique.  Ote jusqu'a tes
+ sandales, jusqu'aux rubans de tes jambes,
+ jusqu'a la bande de ta poitrine.
+
+ Lave le noir de tes sourcils, et le rouge de
+ tes levres.  Efface le blanc de tes epaules
+ et defrise tes cheveux dans l'eau.
+
+ Car je veux t'avoir toute pure, telle que tu
+ naquis sur le lit, aux pieds de ta mere feconde
+ et devant ton pere glorieux,
+
+ Si chaste que ma main dans ta main te fera
+ rougir jusqu'a la bouche, et qu'un mot de moi
+ sous ton oreille affolera tes yeux
+ tournoyants.
+
+
+
+ 79 -- LA BERCEUSE DE MNASIDIKA
+
+
+ Ma petite enfant, si peu d'annees que j'aie
+ de plus que toi-meme, je t'aime, non pas
+ comme une amante, mais comme si tu etais
+ sortie de mes entrailles laborieuses.
+
+ Lorsque etendue sur mes genoux, tes deux
+ bras freles autour de moi, tu cherches mon
+ sein, la bouche tendue, et me tettes avec
+ lenteur entre tes levres palpitantes,
+
+ Alors je reve qu'autrefois, j'ai allaite
+ reellement cette bouche douillette, souple et
+ baignee, ce vase myrrhin couleur de pourpre
+ ou le bonheur de Bilitis est mysterieusement
+ enferme.
+
+ Dors.  Je te bercerai d'une main sur mon
+ genou qui se leve et s'abaisse.  Dors ainsi.
+ Je chanterai pour toi les petites chansons
+ lamentables qui endorment les nouveaux-nes...
+
+
+
+ 80 -- PROMENADE AU BORD DE LA MER
+
+
+ Comme nous marchions sur la plage, sans
+ parler, et enveloppees jusqu'au menton
+ dans nos robes de laine sombre, des jeunes
+ filles joyeuses ont passe.
+
+ << Ah! c'est Bilitis et Mnasidika!  Voyez,
+ le beau petit ecureuil que nous avons pris:
+ il est doux comme un oiseau et effare comme
+ un lapin.
+
+ << Chez Lyde nous le mettrons en cage et nous
+ lui donnerons beaucoup de lait avec des
+ feuilles de salade.  C'est une femelle, elle
+ vivra longtemps. >>
+
+ Et les folles sont parties en courant.  Pour
+ nous, sans parler nous nous sommes assises,
+ moi sur une roche, elle sur le sable, et nous
+ avons regarde la mer.
+
+
+
+ 81 -- L'OBJET
+
+
+ << Salut, Bilitis, Mnasidika, salut.  -- Assieds-toi.
+ Comment va ton mari?  -- Trop bien.  Ne lui dites
+ pas que vous m'avez vue.  Il me tuerait s'il me
+ savait ici.  -- Sois sans crainte.
+
+ -- Et voila votre chambre? et voila votre
+ lit?  Pardonne-moi.  Je suis curieuse.  -- Tu
+ connais cependant le lit de Myrrhine.  -- Si
+ peu.  -- On la dit jolie.  -- Et lascive, o ma
+ chere! mais taisons-nous.
+
+ -- Que voulais-tu de moi?  -- Que tu me
+ pretes...  -- Parle.  -- Je n'ose nommer
+ l'objet.  -- Nous n'en avons pas.  -- Vraiment?
+ -- Mnasidika est vierge.  -- Alors, ou en
+ acheter?  -- Chez le cordonnier Drakhon.
+
+ -- Dis aussi: qui te vend ton fil a broder?
+ Le mien se casse des qu'on le regarde.  --
+ Je le fais moi-meme, mais Nais en vend
+ d'excellent.  -- A quel prix?  -- Trois oboles.
+ -- C'est cher.  Et l'objet?  -- Deux drachmes
+ -- Adieu. >>
+
+
+
+ 82 -- SOIR PRES DU FEU
+
+
+ L'hiver est dur, Mnasidika.  Tout est froid,
+ hors notre lit.  Leve-toi, cependant, viens
+ avec moi, car j'ai allume un grand feu avec
+ des souches mortes et du bois fendu.
+
+ Nous nous chaufferons accroupies, toutes
+ nues, nos cheveux sur le dos, et nous boirons
+ du lait dans la meme coupe et nous mangerons
+ des gateaux au miel.
+
+ Comme la flamme est sonore et gaie!  N'es-tu
+ pas trop pres?  Ta peau devient rouge.
+ Laisse-moi la baiser partout ou le feu l'a
+ faite brulante.
+
+ Au milieu des tisons ardents je vais chauffer
+ le fer et te coiffer ici.  Avec les charbons
+ eteints j'ecrirai ton nom sur le mur.
+
+
+
+ 83 -- PRIERES
+
+
+ Que veux-tu? dis-le.  S'il le faut, je
+ vendrai mes derniers bijoux pour qu'une
+ esclave attentive guette le desir de tes
+ yeux, la soif quelconque de tes levres.
+
+ Si le lait de nos chevres te semble fade, je
+ louerai pour toi, comme pour un enfant, une
+ nourrice aux mamelles gonflees qui chaque
+ matin t'allaitera.
+
+ Si notre lit te semble rude, j'acheterai tous
+ les coussins mous, toutes les couvertures de
+ soie, tous les draps fourres de plumes des
+ marchandes amathusiennes.
+
+ Tout.  Mais il faut que je te suffise, et si
+ nous dormions sur la terre, il faut que la
+ terre te soit plus douce que le lit chaud
+ d'une etrangere.
+
+
+
+ 84 -- LES YEUX
+
+
+ Larges yeux de Mnasidika, combien vous
+ me rendez heureuse quand l'amour noircit
+ vos paupieres et vous anime et vous noie
+ sous les larmes;
+
+ Mais combien folle, quand vous vous
+ detournez ailleurs, distraits par une femme
+ qui passe ou par un souvenir qui n'est pas
+ le mien.
+
+ Alors mes joues se creusent, mes mains
+ tremblent et je souffre...  Il me semble que
+ de toutes parts, et devant vous ma vie s'en va.
+
+ Larges yeux de Mnasidika, ne cessez pas de me
+ regarder! ou je vous trouerai avec mon
+ aiguille et vous ne verrez plus que la nuit
+ terrible.
+
+
+
+ 85 -- LES FARDS
+
+
+ Tout, et ma vie, et le monde, et les hommes,
+ tout ce qui n'est pas elle n'est rien.
+ Tout ce qui n'est pas elle, je te le donne,
+ passant.
+
+ Sait-elle que de travaux j'accomplis pour
+ etre belle a ses yeux, par ma coiffure et par
+ mes fards, par mes robes et mes parfums?
+
+ Aussi longtemps je tournerais la meule, je
+ ferais plonger la rame ou je becherais la
+ terre, s'il fallait a ce prix la retenir ici.
+
+ Mais faites qu'elle ne l'apprenne jamais,
+ Deesses qui veillez sur nous!  Le jour ou
+ elle saura que je l'aime elle cherchera une
+ autre femme.
+
+
+
+ 86 -- LE SILENCE DE MNASIDIKA
+
+
+ Elle avait ri toute la journee, et meme elle
+ s'etait un peu moquee de moi.  Elle avait
+ refuse de m'obeir, devant plusieurs femmes
+ etrangeres.
+
+ Quand nous sommes rentrees, j'ai affecte
+ de ne pas lui parler, et comme elle se jetait
+ a mon cou, en disant: << Tu es fachee? >> je
+ lui ai dit:
+
+ << Ah! tu n'es plus comme autrefois, tu n'es
+ plus comme le premier jour.  Je ne te
+ reconnais plus, Mnasidika. >>  Elle ne m'a rien
+ repondu;
+
+ Mais elle a mis tous ses bijoux qu'elle ne
+ portait plus depuis longtemps, et la meme
+ robe jaune brodee de bleu que le jour de
+ notre rencontre.
+
+
+
+ 87 -- SCENE
+
+
+ << Ou etais-tu?  -- Chez la marchande de fleurs.
+ J'ai achete des iris tres beaux.  Les voici,
+ je te les apporte.  -- Pendant si longtemps tu
+ as achete quatre fleurs?  -- La marchande m'a
+ retenue.
+
+ -- Tu as les joues pales et les yeux
+ brillants.  -- C'est la fatigue de la
+ route.  -- Tes cheveux sont mouilles et
+ meles.  -- C'est la chaleur et c'est le vent
+ qui m'ont toute decoiffee.
+
+ -- On a denoue ta ceinture.  J'avais fait le
+ noeud moi-meme, plus lache que celui-ci.  --
+ Si lache qu'elle s'est defaite; un esclave qui
+ passait me l'a renouee.
+
+ -- Il y a une trace a ta robe.  -- C'est l'eau
+ des fleurs qui est tombee.  -- Mnasidika, ma
+ petite ame, tes iris sont les plus beaux qu'il
+ y ait dans tout Mytilene.  -- Je le sais bien,
+ je le sais bien. >>
+
+
+
+ 88 -- ATTENTE
+
+
+ Le soleil a passe toute la nuit chez les
+ morts depuis que je l'attends, assise sur mon
+ lit, lasse d'avoir veille.  La meche de la lampe
+ epuisee a brule jusqu'a la fin.
+
+ Elle ne reviendra plus: voici la derniere
+ etoile.  Je sais bien qu'elle ne viendra plus.
+ Je sais meme le nom que je hais.  Et cependant
+ j'attends encore.
+
+ Qu'elle vienne maintenant! oui, qu'elle
+ vienne, la chevelure defaite et sans roses,
+ la robe souillee, tachee, froissee, la langue
+ seche et les paupieres noires!
+
+ Des qu'elle ouvrira la porte, je lui dirai...
+ mais la voici...  C'est sa robe que je touche,
+ ses mains, ses cheveux, sa peau.  Je l'embrasse
+ d'une bouche eperdue, et je pleure.
+
+
+
+ 89 -- LA SOLITUDE
+
+
+ Pour qui maintenant farderais-je mes levres?
+ Pour qui polirais-je mes ongles?  Pour qui
+ parfumerais-je mes cheveux?
+
+ Pour qui mes seins poudres de rouge, s'ils ne
+ doivent plus la tenter?  Pour qui mes bras
+ laves de lait s'ils ne doivent plus jamais
+ l'etreindre?
+
+ Comment pourrais-je dormir?  Comment
+ pourrais-je me coucher?  Ce soir ma main,
+ dans tout mon lit, n'a pas trouve sa main
+ chaude.
+
+ Je n'ose plus rentrer chez moi, dans la
+ chambre affreusement vide.  Je n'ose plus
+ rouvrir la porte.  Je n'ose meme plus rouvrir
+ les yeux.
+
+
+
+ 90 -- LETTRE
+
+
+ Cela est impossible, impossible.  Je t'en
+ supplie a genoux, avec larmes, toutes les
+ larmes que j'ai pleurees sur cette horrible
+ lettre, ne m'abandonne pas ainsi.
+
+ Songes-tu combien c'est affreux de te reperdre
+ a jamais pour la seconde fois, apres avoir
+ eu l'immense joie d'esperer te reconquerir.
+ Ah! mes amours! ne sentez-vous donc
+ pas a quel point je vous aime!
+
+ Ecoute-moi.  Consens a me revoir encore
+ une fois.  Veux-tu etre demain, au soleil
+ couchant, devant ta porte?  Demain, ou le jour
+ suivant.  Je viendrai te prendre.  Ne me refuse
+ pas cela.
+
+ La derniere fois peut-etre, soit, mais encore
+ cette fois, encore cette fois!  Je te le
+ demande, je te le crie, et songe que de ta
+ reponse depend le reste de ma vie.
+
+
+
+ 91 -- LA TENTATIVE
+
+
+ Tu etais jalouse de nous, Gyrinno, fille
+ trop ardente.  Que de bouquets as-tu fait
+ suspendre au marteau de notre porte!  Tu
+ nous attendais au passage et tu nous suivais
+ dans la rue.
+
+ Maintenant tu es selon tes voeux, etendue
+ a la place aimee, et la tete sur ce coussin
+ ou flotte une autre odeur de femme.  Tu es
+ plus grande qu'elle n'etait.  Ton corps
+ different m'etonne.
+
+ Regarde, je t'ai enfin cede.  Oui, c'est
+ moi.  Tu peux jouer avec mes seins, caresser
+ ma hanche, ouvrir mes genoux.  Mon corps
+ tout entier s'est livre a tes levres
+ infatigables, -- helas!
+
+ Ah!  Gyrinno! avec l'amour mes larmes aussi
+ debordent!  Essuie-les avec tes cheveux, ne
+ les baise pas, ma cherie; et enlace moi de
+ plus pres encore pour maitriser mes
+ tremblements.
+
+
+
+ 92 -- L'EFFORT
+
+
+ Encore! assez de soupirs et de bras etires!
+ Recommence!  Penses-tu donc que l'amour
+ soit un delassement?  Gyrinno, c'est
+ une tache, et de toutes la plus rude.
+
+ Reveille-toi!  Il ne faut pas que tu dormes!
+ Que m'importent tes paupieres bleues et
+ la barre de douleur qui brule tes jambes
+ maigres.  Astarte bouillonne dans mes reins.
+
+ Nous nous sommes couchees avant le crepuscule.
+ Voici deja la mauvaise aurore; mais je ne
+ suis pas lasse pour si peu.  Je ne dormirai
+ pas avant le second soir.
+
+ Je ne dormirai pas: il ne faut pas que tu
+ dormes.  Oh! comme la saveur du matin est
+ amere!  Gyrinno, appprecie-la.  Les baisers
+ sont plus difficiles, mais plus etranges, et
+ plus lents.
+
+
+
+ 93 -- MYRRHINE (non traduite)
+
+
+
+ 94 -- A GYRINNO
+
+
+ Ne crois pas que je t'aie aimee.  Je t'ai
+ mangee comme une figue mure, je t'ai bue
+ comme une eau ardente, je t'ai portee autour
+ de moi comme une ceinture de peau.
+
+ Je me suis amusee de ton corps, parce que
+ tu as les cheveux courts, les seins en pointe
+ sur ton corps maigre, et les mamelons noirs
+ comme deux petites dattes.
+
+ Comme il faut de l'eau et des fruits, une
+ femme aussi est necessaire, mais deja je ne
+ sais plus ton nom, toi qui as passe dans mes
+ bras comme l'ombre d'une autre adoree.
+
+ Entre ta chair et la mienne, un reve brulant
+ m'a possedee.  Je te serrais sur moi comme
+ sur une blessure et je criais: Mnasidika!
+ Mnasidika!  Mnasidika!
+
+
+
+ 95 -- LE DERNIER ESSAI
+
+
+ << Que veux-tu, vieille?  -- Te consoler.  -- C'est
+ peine perdue.  -- On m'a dit que depuis ta
+ rupture, tu allais d'amour en amour sans
+ trouver l'oubli ni la paix.  Je viens te
+ proposer quelqu'un.
+
+ -- Parle.  -- C'est une jeune esclave nee a
+ Sardes.  Elle n'a pas sa pareille au monde,
+ car elle est a la fois homme et femme, bien
+ que sa poitrine et ses longs cheveux et sa
+ voix claire fassent illusion.
+
+ -- Son age?  -- Seize ans.  -- Sa taille?  -- Grande.
+ Elle n'a connu personne ici, hors Psappha
+ qui en est eperdument amoureuse et a voulu
+ me l'acheter vingt mines.  Si tu la loues,
+ elle est a toi.  -- Et qu'en ferai-je?
+
+ Voici vingt-deux nuits que j'essaye en vain
+ d'echapper au souvenir...  Soit, je prendrai
+ celle-ci encore, mais previens la pauvre
+ petite, pour qu'elle ne s'effraye point si je
+ sanglote dans ses bras. >>
+
+
+
+ 96 -- LE SOUVENIR DECHIRANT
+
+
+ Je me souviens...  (a quelle heure du jour ne
+ l'ai-je pas devant mes yeux?) je me souviens
+ de la facon dont Elle soulevait ses cheveux
+ avec ses faibles doigts si pales.
+
+ Je me souviens d'une nuit qu'elle passa,
+ la joue sur mon sein, si doucement, que le
+ bonheur me tint eveillee, et le lendemain elle
+ avait au visage la marque de la papille ronde.
+
+ Je la vois tenant sa tasse de lait et me
+ regardant de cote, avec un sourire.  Je la
+ vois, poudree et coiffee, ouvrant ses grands
+ yeux devant son miroir, et retouchant du
+ doigt le rouge de ses levres.
+
+ Et surtout, si mon desespoir est une perpetuelle
+ torture, c'est que je sais, instant par
+ instant, comment elle defaille dans les bras
+ de l'autre, et ce qu'elle lui demande et ce
+ qu'elle lui donne.
+
+
+
+ 97 -- A LA POUPEE DE CIRE
+
+
+ Poupee de cire, jouet cheri qu'elle appelait
+ son enfant, elle t'a laissee toi aussi et elle
+ t'oublie comme moi, qui fus avec elle ton
+ pere ou ta mere, je ne sais.
+
+ La pression de ses levres avaient deteint
+ tes petites joues; et a ta main gauche voici
+ ce doigt casse qui la fit tant pleurer.  Cette
+ petite cyclas que tu portes, c'est elle qui te
+ l'a brodee.
+
+ A l'entendre, tu savais deja lire.  Pourtant
+ tu n'etais pas sevree, et le soir, penchee sur
+ toi, elle ouvrait sa tunique et te donnait le
+ sein, << afin que tu ne pleures pas >>, disait-elle.
+
+ Poupee, si je voulais la revoir, je te donnerais
+ a l'Aphrodite, comme le plus cher de mes cadeaux.
+ Mais je veux penser qu'elle est tout a fait morte.
+
+
+
+ 98 -- CHANT FUNEBRE
+
+
+ Chantez un chant funebre, muses Mytileniennes,
+ chantez!  La terre est sombre comme un vetement
+ de deuil et les arbres jaunes frissonnent comme
+ des chevelures coupees.
+
+ Heraios! o mois triste et doux! les feuilles
+ tombent doucement comme la neige; le soleil
+ est plus penetrant dans la foret plus eclaircie.
+ Je n'entends plus rien que le silence.
+
+ Voici qu'on a porte au tombeau Pittakos
+ charge d'annees.  Beaucoup sont morts, que
+ j'ai connus.  Et celle qui vit est pour moi
+ comme si elle n'etait plus.
+
+ Celui-ci est le dixieme automne que j'ai vu
+ mourir sur cette plaine.  Il est temps aussi
+ que je disparaisse.  Pleurez avec moi, muses
+ Mytileniennes, pleurez sur mes pas!
+
+
+
+
+                                III
+
+                   EPIGRAMMES DANS L'ILE DE CHYPRE
+
+
+       <Alla' me narhki'ssois anad_e'sate, kai` plagiau'l_on
+           geu'sate kai` krhoki'nois chrhi'sate gui^a my'rhois.
+        Kai` Mytil_enai'_o*i to`n pneu`mona te'gxate Bakch_o*i
+           xai` syzeu'xate moi ph_ola'da parhthenix_e'n.>
+
+                                          PHILODEME.
+
+
+
+ 99 -- HYMNE A ASTARTE
+
+
+ Mere inepuisable, incorruptible, creatrice,
+ nee la premiere, engendree par toi-meme,
+ concue de toi-meme, issue de toi seule et
+ qui te rejouis en toi, Astarte!
+
+ O perpetuellement fecondee, o vierge et
+ nourrice de tout, chaste et lascive, pure et
+ jouissante, ineffable, nocturne, douce,
+ respiratrice du feu, ecume de la mer!
+
+ Toi qui accordes en secret la grace, toi
+ qui unis, toi qui aimes, toi qui saisis d'un
+ furieux desir les races multipliees des betes
+ sauvages, et joins les sexes dans les forets,
+
+ O Astarte irresistible, entends-moi, prends-moi,
+ possede-moi, o Lune! et treize fois, chaque
+ annee, arrache a mes entrailles la libation
+ de mon sang!
+
+
+
+ 100 -- HYMNE A LA NUIT
+
+
+ Les masses noires des arbres ne bougent
+ pas plus que des montagnes.  Les etoiles
+ emplissent un ciel immense.  Un air chaud
+ comme un souffle humain caresse mes yeux
+ et mes joues.
+
+ O Nuit qui enfantas les Dieux! comme tu es
+ douce sur mes levres! comme tu es chaude
+ dans mes cheveux! comme tu entres en moi
+ ce soir, et comme je me sens grosse de tout
+ ton printemps!
+
+ Les fleurs qui vont fleurir vont toutes
+ naitre de moi.  Le vent qui respire est mon
+ haleine.  Le parfum qui passe est mon desir.
+ Toutes les etoiles sont dans mes yeux.
+
+ Ta voix, est-ce le bruit de la mer, est-ce
+ le silence de la plaine?  Ta voix, je ne la
+ comprends pas, mais elle me jette la tete aux
+ pieds et mes larmes lavent mes deux mains.
+
+
+
+ 101 -- LES MENADES
+
+
+ A travers les forets qui dominent la mer,
+ les Menades se sont ruees.  Maskhale aux
+ seins fougueux, hurlante, brandissait le
+ phallos, qui etait de  bois de sycomore et
+ barbouille de vermillon.
+
+ Toutes, sous la bassaris et les couronnes
+ de pampre, couraient et criaient et sautaient,
+ les crotales claquaient dans les  mains, et
+ les thyrses crevaient la peau des tympanons
+ retentissants.
+
+ Chevelures mouillees, jambes agiles, seins
+ rougis et bouscules, sueur des joues, ecume
+ des levres, o Dionysos, elles t'offraient
+ en retour l'ardeur que tu jetais en elles!
+
+ Et le vent de la mer relevant vers le ciel
+ les cheveux roux de Heliokomis, les tordait
+ comme une flamme furieuse sur une torche
+ de blanche cire.
+
+
+
+ 102 -- LA MER DE KYPRIS
+
+
+ Sur le plus haut promontoire je me suis
+ couchee en avant.  La mer etait noire comme
+ un champ de violettes.  La voie lactee
+ ruisselait de la grande mamelle divine.
+
+ Mille Menades autour de moi dormaient dans
+ les fleurs dechirees.  Les longues herbes
+ se melaient aux chevelures.  Et voici que
+ le soleil naquit dans l'eau orientale.
+
+ C'etaient les memes flots et le meme rivage
+ qui virent un jour apparaitre le corps blanc
+ d'Aphrodita...  Je cachai tout a coup mes
+ yeux dans mes mains.
+
+ Car j'avais vu trembler sur l'eau mille
+ petites levres de lumiere: le sexe pur ou le
+ sourire de Kypris Philommeides.
+
+
+
+ 103 -- LES PRETRESSES DE L'ASTARTE
+
+
+ Les pretresses de l'Astarte font l'amour au
+ lever de la lune; puis elles se relevent et
+ se baignent dans un bassin vaste aux
+ margelles d'argent.
+
+ De leurs doigts recourbes, elles peignent
+ leurs chevelures, et leurs mains teintes de
+ pourpre, melees a leurs boucles noires,
+ semblent des branches de corail dans une mer
+ sombre et flottante.
+
+ Elles ne s'epilent jamais, pour que le
+ triangle de la deesse marque leur ventre
+ comme un temple; mais elles se teignent au
+ pinceau et se parfument profondement.
+
+ Les pretresses de l'Astarte font l'amour au
+ coucher de la lune; puis dans une salle de
+ tapis ou brule une haute lampe d'or, elles se
+ couchent au hasard.
+
+
+
+ 104 -- LES MYSTERES
+
+
+ Dans l'enceinte trois fois mysterieuse, ou
+ les hommes ne penetrent pas, nous t'avons
+ fetee, Astarte de la Nuit, Mere du Monde,
+ Fontaine de la vie des Dieux!
+
+ J'en revelerai quelque chose, mais pas
+ plus qu'il n'est permis.  Autour du Phallos
+ couronne, cent vingt femmes se balancaient
+ en criant.  Les initiees etaient en habits
+ d'hommes, les autres en tunique fendue.
+
+ Les fumees des parfums, les fumees des
+ torches, flottaient entre nous comme des
+ nuees.  Je pleurais a larmes brulantes.
+ Toutes, aux pieds de la Borbeia nous nous
+ sommes jetees sur le dos.
+
+ Enfin, quand l'Acte religieux fut consomme,
+ et quand, dans le Triangle Unique on eut
+ plonge le phallos pourpre, alors le mystere
+ commenca, mais je n'en dirai pas davantage.
+
+
+
+ 105 -- LES COURTISANES EGYPTIENNES
+
+
+ Je suis allee avec Plango chez les courtisanes
+ egyptiennes, tout en haut de la vieille ville.
+ Elles ont des amphores de terre, des plateaux
+ de cuivre et des nattes jaunes ou elles
+ s'accroupissent sans effort.
+
+ Leurs chambres sont silencieuses, sans
+ angles et sans encoignures, tant les couches
+ successives de chaux bleue ont emousse les
+ chapiteaux et arrondi le pied des murs.
+
+ Elles se tiennent immobiles, les mains
+ posees sur les genoux.  Quand elles offrent
+ la bouillie elles murmurent: << Bonheur. >>
+ Et quand on les remercie, elles disent:
+ << Grace a toi. >>
+
+ Elles comprennent le hellene et feignent de
+ le parler mal pour se rire de nous dans leur
+ langue; mais nous, dent pour dent, nous
+ parlons lydien et elles s'inquietent tout a
+ coup.
+
+
+
+ 106 -- JE CHANTE MA CHAIR ET MA VIE
+
+
+ Certes je ne chanterai pas les amantes
+ celebres.  Si elles ne sont plus, pourquoi
+ en parler?  Ne suis-je pas semblable a elles?
+ N'ai-je pas trop de songer a moi-meme?
+
+ Je t'oublierai, Pasiphae, bien que ta passion
+ fut extreme.  Je ne te louerai pas, Syrinx
+ ni toi, Byblis, ni toi, par la deesse entre
+ toutes choisie, Helene aux bras blancs!
+
+ Si quelqu'un souffrit, je ne le sens qu'a
+ peine.  Si quelqu'un aima, j'aime davantage.
+ Je chante ma chair et ma vie, et non pas
+ l'ombre sterile des amoureuses enterrees.
+
+ Reste couche, o mon corps, selon ta mission
+ voluptueuse!  Savoure la jouissance
+ quotidienne et les passions sans lendemain.
+ Ne laisse pas une joie inconnue aux regrets
+ du jour de ta mort.
+
+
+
+ 107 -- LES PARFUMS
+
+
+ Je me parfumerai toute la peau pour attirer
+ les amants.  Sur mes belles jambes, dans
+ un bassin d'argent, je verserai du nard de
+ Tarsos et du metopion d'Aigypte.
+
+ Sous mes bras, de la menthe crepue; sur
+ mes cils et sur mes yeux, de la marjolaine
+ de Kos.  Esclave, defais ma chevelure et
+ emplis-la de fumee d'encens.
+
+ Voici l'oinanthe des montagnes de Kypre; je
+ la ferai couler entre mes seins; la liqueur
+ de rose qui vient de Phaselis embaumera ma
+ nuque et mes joues.
+
+ Et maintenant, repands sur mes reins la
+ bakkaris irresistible.  Il vaut mieux, pour
+ une courtisane, connaitre les parfums de
+ Lydie que les moeurs du Peloponnese.
+
+
+
+ 108 -- CONVERSATION
+
+
+ << Bonjour.  -- Bonjour aussi.  -- Tu es bien
+ pressee.  -- Peut-etre moins que tu ne
+ penses.  -- Tu es une jolie fille.  -- Peut-etre
+ plus que tu ne crois.
+
+ -- Quel est ton nom charmant?  -- Je ne dis
+ pas cela si vite.  -- Tu as quelqu'un ce
+ soir?  -- Toujours celui qui m'aime.  -- Et
+ comment l'aimes-tu?  -- Comme il veut.
+
+ -- Soupons ensemble.  -- Si tu le desires.
+ Mais que donnes-tu?  -- Ceci.  -- Cinq drachmes?
+ C'est pour mon esclave.  Et pour moi?
+ -- Dis toi-meme.  -- Cent.
+
+ -- Ou demeures-tu?  -- Dans cette maison
+ bleue.  -- A quelle heure veux-tu que je
+ t'envoie chercher?  -- Tout de suite si tu
+ veux.  -- Tout de suite.  -- Va devant. >>
+
+
+
+ 109 -- LA ROBE DECHIREE
+
+
+ << Hola! par les deux deesses, qui est
+ l'insolent qui a mis le pied sur ma
+ robe?  -- C'est un amoureux.  -- C'est un
+ sot.  -- J'ai ete maladroit, pardonne-moi.
+
+ --  L'imbecile! ma robe jaune est toute
+ dechiree par derriere, et si je marche ainsi
+ dans la rue, on va me prendre pour une
+ fille pauvre qui sert la Kypris inverse.
+
+ -- Ne t'arreteras-tu pas?  -- Je crois qu'il
+ me parle encore!  -- Me quitteras-tu ainsi
+ fachee?...  Tu ne reponds pas?  Helas!
+ je n'ose plus parler.
+
+ -- Il faut bien que je rentre chez moi
+ pour changer de robe.  -- Et je ne puis te
+ suivre?  -- Qui est ton pere?  -- C'est le
+ riche armateur Nikias.  -- Tu as de beaux
+ yeux, je te pardonne. >>
+
+
+
+ 110 -- LES BIJOUX
+
+
+ Un diademe d'or ajoure couronne mon front
+ etroit et blanc.  Cinq chainettes d'or, qui
+ font le tour de mes joues et de mon menton,
+ se suspendent aux cheveux par deux larges
+ agrafes.
+
+ Sur mes bras qu'envierait Iris, treize
+ bracelets d'argent s'etagent.  Qu'ils sont
+ lourds!  Mais ce sont des armes; et je sais
+ une ennemie qui en a souffert.
+
+ Je suis vraiment toute couverte d'or.  Mes
+ seins sont cuirasses de deux pectoraux d'or.
+ Les images des dieux ne sont pas aussi riches
+ que je le suis.
+
+ Et je porte sur ma robe epaisse une cointure
+ lamee d'argent.  Tu pourras y lire ce vers:
+ << Aime-moi eternellement; mais ne sois pas
+ afllige si je te trompe trois fois par jour. >>
+
+
+
+ 111 -- L'INDIFFERENT
+
+
+ Des qu'il est entre dans ma chambre, quel
+ qu'il soit (cela importe-t-il?): << Vois,
+ dis-je a l'esclave, quel bel homme! et
+ qu'une courtisane est heureuse! >>
+
+ Je le declare Adonis, Ares ou Herakles
+ selon son visage, ou le Vieillard des Mers,
+ si ses cheveux sont de pale argent.  Et
+ alors, quels dedains pour la jeunesse legere!
+
+ << Ah!  fais-je, si je n'avais pas demain a
+ payer mon fleuriste et mon orfevre, comme
+ j'aimerais a te dire: Je ne veux pas de ton
+ or!  Je suis ta servante passionnee! >>
+
+ Puis, quand il a referme ses bras sous mes
+ epaules, je vois un batelier du port passer
+ comme une image divine sur le ciel etoile
+ de mes paupieres transparentes.
+
+
+
+ 112 -- L'EAU PURE DU BASSIN
+
+
+ << Eau pure du bassin, miroir immobile, dis-moi
+ ma beaute.  -- O Bilitis, ou qui que tu sois,
+ Tethys peut-etre ou Amphritrite, tu es belle,
+ sache-le.
+
+ << Ton visage se penche sous ta chevelure
+ epaisse, gonflee de fleurs et de parfums.
+ Tes paupieres molles s'ouvrent a peine et
+ tes flancs sont las des mouvements de
+ l'amour.
+
+ << Ton corps fatigue du poids de tes seins
+ porte les marques fines de l'ongle et les
+ taches bleues du baiser.  Tes bras sont
+ rougis par l'etreinte.  Chaque ligne de ta
+ peau fut aimee.
+
+ -- Eau claire du bassin, ta fraicheur repose.
+ Recois-moi, qui suis lasse en effet.  Emporte
+ le fard de mes joues, et la sueur de mon
+ ventre et le souvenir de la nuit. >>
+
+
+
+ 113 -- LA FETE NOCTURNE (non traduite)
+
+
+
+ 114 -- VOLUPTE
+
+
+ Sur une terrasse blanche, la nuit, ils nous
+ laisserent evanouies dans les roses.  La
+ sueur chaude coulait comme des larmes, de nos
+ aisselles sur nos seins.  Une volupte
+ accablante empourprait nos tetes renversees.
+
+ Quatre colombes captives, baignees dans
+ quatre parfums, voleterent au dessus de nous
+ en silence.  De leurs ailes, sur les femmes
+ nues, ruisselaient des gouttes de senteur.
+ Je fus inondee d'essence d'iris.
+
+ O lassitude! je reposai ma joue sur le
+ ventre d'une jeune fille qui s'enveloppa de
+ fraicheur avec ma chevelure humide.  L'odeur
+ de sa peau safranee enivrait ma bouche
+ ouverte.  Elle ferma sa cuisse sur ma nuque.
+
+ Je dormis, mais un reve epuisant m'eveilla:
+ l'iynx, oiseau des desirs nocturnes, chantait
+ eperdument au loin.  Je toussai avec un frisson.
+ Un bras languissant comme une fleur s'elevait
+ peu a peu vers la lune, dans l'air.
+
+
+
+ 115 -- L'HOTELLERIE
+
+
+ Hotelier, nous sommes quatre.  Donne-nous
+ une chambre et deux lits.  Il est trop tard
+ maintenant pour rentrer a la ville et la
+ pluie a creve la route.
+
+ Apporte une corbeille de figues, du fromage
+ et du vin noir; mais ote d'abord mes sandales
+ et lave-moi les pieds, car la boue me
+ chatouille.
+
+ Tu feras porter dans la chambre deux bassins
+ avec de l'eau, une lampe pleine, un cratere
+ et des kylix.  Tu secoueras les couvertures
+ et tu battras les coussins.
+
+ Mais que les lits soient de bon erable et
+ que les planches soient muettes!  Demain
+ tu ne nous reveilleras pas.
+
+
+
+ 116 -- LA DOMESTICITE
+
+
+ Quatre esclaves gardent ma maison: deux
+ Thraces robustes a ma porte, un Sicilien a
+ ma cuisine et une Phrygienne docile et
+ muette pour le service de mon lit.
+
+ Les deux Thraces sont de beaux hommes.
+ Ils ont un baton a la main pour chasser les
+ amants pauvres et un marteau pour clouer
+ sur le mur les couronnes que l'on m'envoie.
+
+ Le Sicilien est un cuisinier rare; je l'ai
+ paye douze mines.  Aucun autre ne sait
+ comme lui preparer des croquettes frites et
+ des gateaux de coquelicots.
+
+ La Phrygienne me baigne, me coiffe et
+ m'epile.  Elle dort le matin dans ma chambre
+ et pendant trois nuits, chaque mois, elle me
+ remplace pres de mes amants.
+
+
+
+ 117 -- LE TRIOMPHE DE BILITIS
+
+
+ Les processionnaires m'ont portee en
+ triomphe, moi, Bilitis, toute nue sur un
+ char en coquille ou des esclaves, pendant la
+ nuit, avaient effeuille dix mille roses.
+
+ J'etais couchee, les mains sous la nuque,
+ mes pieds seuls etaient vetus d'or, et mon
+ corps s'allongeait mollement, sur le lit de
+ mes cheveux tiedes meles aux petales frais.
+
+ Douze enfants, les epaules ailees, me
+ servaient comme une deesse; les uns tenaient
+ un parasol, les autres me mouillaient de
+ parfums, ou brulaient de l'encens a la proue.
+
+ Et autour de moi j'entendais bruire la rumeur
+ ardente de la foule, tandis que l'haleine des
+ desirs flottait sur ma nudite, dans les
+ brumes bleues des aromates.
+
+
+
+ 118 -- A SES SEINS
+
+
+ Chairs en fleurs, o mes seins! que vous
+ etes riches de volupte!  Mes seins dans mes
+ mains, que vous avez de mollesses et de
+ moelleuses chaleurs et de jeunes parfums!
+
+ Jadis, vous etiez glaces comme une poitrine
+ de statue et durs comme d'insensibles
+ marbres.  Depuis que vous flechissez je vous
+ cheris davantage, vous qui futes aimes.
+
+ Votre forme lisse et renflee est l'honneur de
+ mon torse brun.  Soit que je vous emprisonne
+ sous la resille d'or, soit que je vous
+ delivre tout nus, vous me precedez de votre
+ splendeur.
+
+ Soyez donc heureux cette nuit.  Si mes doigts
+ enfantent des caresses, vous seuls le saurez
+ jusqu'a demain matin; car, cette nuit,
+ Bilitis a paye Bilitis.
+
+
+
+ 119 -- LIBERTE (non traduite)
+
+
+
+ 120 -- MYDZOURIS
+
+
+ Mydzouris, petite ordure, ne pleure plus.
+ Tu es mon amie.  Si ces femmes t'insultent
+ encore, c'est moi qui leur repondrai.  Viens
+ sous mon bras, et seche tes yeux.
+
+ Oui, je sais que tu es une horrible enfant
+ et que ta mere t'apprit de bonne heure a faire
+ preuve de tous les courages.  Mais tu es jeune
+ et c'est pourquoi tu ne peux rien faire qui
+ ne soit charmant.
+
+ La bouche d'une fille de quinze ans reste
+ pure malgre tout.  Les levres d'une femme
+ chenue, meme vierges, sont degradees; car
+ le seul opprobre est de vieillir et nous ne
+ sommes fletries que par la ride.
+
+ Mydzouris, j'aime tes yeux francs, ton
+ nom impudique et hardi, ta voix rieuse et
+ ton corps leger.  Viens chez moi, tu seras
+ mon aide, et quand nous sortirons ensemble,
+ les femmes te diront: Salut.
+
+
+
+ 121 -- LE BAIN
+
+
+ Enfant, garde bien la porte et ne laisse
+ pas entrer les passants, car moi et six filles
+ aux beaux bras nous nous baignons secretement
+ dans les eaux tiedes du bassin.
+
+ Nous ne voulons que rire et nager.  Laisse
+ les amants dans la rue.  Nous tremperons
+ nos jambes dans l'eau et, assises sur le bord
+ du marbre, nous jouerons aux osselets.
+
+ Nous jouerons aussi a la balle.  Ne laisse
+ pas entrer les amants; nos chevelures sont
+ trop mouillees; nos gorges ont la chair de
+ poule et le bout de nos doigts se ride.
+
+ D'ailleurs, il s'en repentirait, celui qui
+ nous surprendrait nues!  Bilitis n'est pas
+ Athena, mais elle ne se montre qu'a ses
+ heures et chatie les yeux trop ardents.
+
+
+
+ 122 -- AU DIEU DE BOIS
+
+
+ O Venerable Priapos, dieu de bois que j'ai
+ fait sceller dans le marbre du bord de mes
+ bains, ce n'est pas sans raison, gardien des
+ vergers, que tu veilles ici sur des
+ courtisanes.
+
+ Dieu, nous ne t'avons pas achete pour te
+ sacrifier nos virginites.  Nul ne peut donner
+ ce qu'il n'a plus, et les zelatrices de Pallas
+ ne courent pas les rues d'Amathonte.
+
+ Non.  Tu veillais autrefois sur les chevelures
+ des arbres, sur les fleurs bien arrosees,
+ sur les fruits lourds et savoureux.  C'est
+ pourquoi nous t'avons choisi.
+
+ Garde aujourd'hui nos tetes blondes, les
+ pavots ouverts de nos levres et les violettes
+ de nos yeux.  Garde les fruits durs de nos
+ seins et donne-nous des amants qui te
+ ressemblent.
+
+
+
+ 123 -- LA DANSEUSE AUX CROTALES
+
+
+ Tu attaches a tes mains legeres tes crotales
+ retentissants, Myrrhinidion ma cherie, et a
+ peine nue hors de la robe, tu etires tes membres
+ nerveux.  Que tu es jolie, les bras en l'air,
+ les reins arques et les seins rouges!
+
+ Tu commences: tes pieds l'un devant l'autre
+ se posent, hesitent, et glissent mollement.
+ Ton corps se plie comme une echarpe, tu
+ caresses ta peau qui frissonne, et la volupte
+ inonde tes longs yeux evanouis.
+
+ Tout a coup, tu claques des crotales!  Cambre-
+ toi sur les pieds dresses, secoue les reins,
+ lance les jambes et que tes mains pleines de
+ fracas appellent tous les desirs en bande
+ autour de ton corps tournoyant!
+
+ Nous, applaudissons a grands cris, soit que,
+ souriant sur l'epaule, tu agites d'un
+ fremissement ta croupe convulsive et musclee,
+ soit que tu ondules presque etendue, au
+ rhythme de tes souvenirs.
+
+
+
+ 124 -- LA JOUEUSE DE FLUTE
+
+
+ Melixo, les jambes  serrees, le corps penche,
+ les bras en avant, tu glisses ta double
+ flute legere entre tes levres mouillees de vin,
+ et tu joues au dessus de la couche ou Teleas
+ m'etreint encore.
+
+ Ne suis-je pas bien imprudente, moi qui loue
+ une aussi jeune fille pour distraire mes
+ heures laborieuses, moi qui la montre ainsi
+ nue aux regards curieux de mes amants, ne
+ suis-je pas inconsideree?
+
+ Non, Melixo, petite musicienne, tu es une
+ honnete amie.  Hier tu ne m'as pas refuse de
+ changer ta flute pour une autre quand je
+ desesperais d'accomplir un amour plein de
+ difficultes.  Mais tu es sure.
+
+ Car je sais bien a quoi tu penses.  Tu
+ attends la fin de cette nuit excessive qui
+ t'anime cruellement en vain et au premier
+ matin tu courras dans la rue, avec ton seul
+ ami Psyllos, vers ton petit matelas defonce.
+
+
+
+ 125 -- LA CEINTURE CHAUDE
+
+
+ << Tu crois que tu ne m'aimes plus, Teleas, et
+ depuis un mois tu passes tes nuits a table,
+ comme si les fruits, les vins, les miels
+ pouvaient te faire oublier ma bouche.  Tu
+ crois que tu ne m'aimes plus, pauvre fou! >>
+
+ Disant cela, j'ai denoue ma ceinture en
+ moiteur et je l'ai roulee autour de sa tete.
+ Elle etait toute chaude encore de la chaleur
+ de mon ventre; le parfum de ma peau sortait
+ de ses mailles fines.
+
+ Il la respira longuement, les yeux fermes,
+ puis je sentis qu'il revenait a moi et je vis
+ meme tres clairement ses desirs reveilles
+ qu'il ne me cachait point, mais, par ruse, je
+ sus resister.
+
+ << Non, mon ami.  Ce soir, Lysippos me possede.
+ Adieu! >> Et j'ajoutai en m'enfuyant: << O gourmand
+ de fruits et de legumes! le petit jardin de
+ Bilitis n'a qu'une figue, mais elle est bonne. >>
+
+
+
+ 126 -- A UN MARI HEUREUX
+
+
+ Je t'envie, Agorakrites, d'avoir une femme
+ aussi zelee.  C'est elle-meme qui soigne
+ l'etable, et le matin, au lieu de faire
+ l'amour elle donne a boire aux bestiaux.
+
+ Tu t'en rejouis.  Que d'autres, dis-tu, ne
+ songent qu'aux voluptes basses, veillent la
+ nuit, dorment le jour et demandent encore a
+ l'adultere une satiete criminelle.
+
+ Oui; ta femme travaille a l'etable.  On dit
+ meme qu'elle a mille tendresses pour le plus
+ jeune de tes anes.  Ah!  Ha! c'est un bel
+ animal!  Il a une touffe noire sur les yeux.
+
+ On dit qu'elle joue entre ses pattes, sous
+ son ventre gris et doux...  Mais ceux qui
+ disent cela sont des medisants.  Si ton ane
+ lui plait, Agorakrites, c'est que son regard
+ sans doute lui rappelle le tien.
+
+
+
+ 127 -- A UN EGARE
+
+
+ L'amour des femmes est le plus beau de
+ tous ceux que les mortels eprouvent, et tu
+ penserais ainsi, Kleon, si tu avais l'ame
+ vraiment voluptueuse; mais tu ne reves que
+ vanites.
+
+ Tu perds tes nuits a cherir les ephebes
+ qui nous meconnaissent.  Regarde-les donc!
+ Qu'ils sont laids!  Compare a leurs tetes
+ rondes nos chevelures immenses; cherche
+ nos seins blancs sur leurs poitrines.
+
+ A cote de leurs flancs etroits, considere
+ nos hanches luxuriantes, large couche creusee
+ pour l'amant.  Dis enfin quelles levres
+ humaines, sinon celles qu'ils voudraient
+ avoir, elaborent les voluptes?
+
+ Tu es malade, o Kleon, mais une femme
+ te peut guerir.  Va chez la jeune Satyra,
+ la fille de ma voisine Gorgo.  Sa croupe est
+ une rose au soleil, et elle ne te refusera pas
+ le plaisir qu'elle-meme prefere.
+
+
+
+ 128 -- THERAPEUTIQUE
+
+
+ O Asklepios, sois-moi propice, o dieu de
+ la sante divine, le jour ou l'eternelle nuit
+ noire menacera mes yeux effrayes; car le
+ poison de ma beaute, un jour, a servi de
+ remede.
+
+ On m'avait mandee en costume dans la chambre
+ d'un jeune homme que les femmes ne tentaient
+ point.  Des calecons creves se collaient a
+ mes cuisses, et mes seins jaillissaient nus
+ d'une brassiere brodee d'or.
+
+ J'ai danse selon le rite au son des crotales,
+ les douze desirs d'Aphrodite.  Et voici que
+ l'amour est entre en lui tout a coup, et sur
+ le lit de sa virginite j'ai recommence toute
+ la danse.
+
+ << Tu sais te faire aimer, disait-il, mais tu
+ n'en es pas emue.  Que faut-il faire pour
+ que tu m'aimes? >> Je le regardai plus
+ loin que les yeux et je lui dis avec lenteur:
+ << T'imaginer que tu es femme. >>
+
+
+
+ 129 -- LA COMMANDE
+
+
+ << Vieille, ecoute-moi.  Je donne un festin dans
+ trois jours.  Il me faut un divertissement.
+ Tu me loueras toutes tes filles. Combien en
+ as-tu et que savent-elles faire?
+
+ -- J'en ai sept.  Trois dansent la kordax
+ avec l'echarpe et le phallos.  Nephele aux
+ aisselles lisses mimera l'amour de la
+ colombe entre ses seins couleur de roses.
+
+ Une chanteuse en peplos brode chantera
+ des chansons de Rhodes, accompagnee par
+ deux auletrides qui auront des guirlandes
+ de myrte enroulees a leurs jambes brunes.
+
+ -- C'est bien.  Qu'elles soient epilees de
+ frais, lavees et parfumees des pieds a la
+ tete, pretes a d'autres jeux si on les leur
+ demande.  Va donner les ordres.  Adieu. >>
+
+
+
+ 130 -- LA FIGURE DE PASIPHAE
+
+
+ Dans une debauche que deux jeunes gens et des
+ courtisanes firent chez moi, ou l'amour
+ ruissela comme le vin, Damalis, pour feter
+ son nom, dansa la Figure de Pasiphae.
+
+ Elle avait fait faire a Kition deux masques
+ de vache et de taureau, pour elle et pour
+ Kharmantides.  Elle portait des cornes
+ terribles, et une queue veritable a son
+ calecon de cuir.
+
+ Les autres femmes menees par moi, tenant des
+ fleurs et des flambeaux, nous tournions sur
+ nous-memes avec des cris, et nous caressions
+ Damalis du bout de nos chevelures pendantes.
+
+ Ses mugissements et nos chants et les danses
+ effrenees ont dure plus que la nuit.  La
+ chambre vide est encore chaude.  Je regarde
+ mes mains rougies et les canthares de Khios
+ ou nagent des roses.
+
+
+
+ 131 -- LA JONGLEUSE
+
+
+ Quand la premiere aube se mela aux lueurs
+ affaiblies des flambeaux, je fis entrer dans
+ l'orgie une joueuse de flute vicieuse et
+ agile, qui tremblait un peu, ayant froid.
+
+ Louez la petite fille aux paupieres bleues,
+ aux cheveux courts, aux seins aigus, vetue
+ seulement d'une ceinture, d'ou pendaient des
+ rubans jaunes et des tiges d'iris noirs.
+
+ Louez-la! car elle fut adroite et fit des
+ tours difficiles.  Elle jonglait avec des
+ cerceaux, sans rien casser dans la salle, et
+ se glissait au travers comme une sauterelle.
+
+ Parfois elle faisait la roue sur les mains
+ et sur les pieds.  Ou bien les deux bras en
+ l'air et les genoux ecartes elle se courbait
+ a la renverse et touchait la terre en riant.
+
+
+
+ 132 -- LA DANSE DES FLEURS
+
+
+ Anthis, danseuse de Lydie, a sept voiles
+ autour d'elle.  Elle deroule le voile jaune,
+ sa chevelure noire se repand.  Le voile rose
+ glisse de sa bouche.  Le voile blanc tombe
+ laisse voir ses bras nus.
+
+ Elle degage ses petits seins du voile rouge
+ qui se denoue.  Elle abaisse le voile vert de
+ sa croupe jusqu'aux pieds.  Elle tire le
+ voile bleu de ses epaules, mais elle presse
+ sur sa pudeur le dernier voile transparent.
+
+ Les jeunes gens la supplient: elle secoue la
+ tete en arriere.  Au son des flutes seulement,
+ elle le dechire un peu, puis tout a fait, et,
+ avec les gestes de la danse, elle cueille les
+ fleurs de son corps,
+
+ En chantant: << Ou sont mes roses? ou sont mes
+ violettes parfumees?  Ou sont mes touffes de
+ persil?  -- Voila mes roses, je vous les donne.
+ Voila mes violettes, en voulez-vous?  Voila
+ mes beaux persils frises. >>
+
+
+
+ 133 -- LA DANSE DE SATYRA (non traduite)
+
+
+
+ 134 -- MYDZOURIS COURONNEE (non traduite)
+
+
+
+ 135 -- LA VIOLENCE
+
+
+ Non, tu ne me prendras pas de force, n'y
+ compte pas, Lamprias.  Si tu as entendu dire
+ qu'on a viole Parthenis, sache qu'elle y a
+ mis du sien, car on ne jouit pas de nous sans
+ y etre invite.
+
+ Oh! va de ton mieux, fais des efforts, c'est
+ manque.  Je me defends a peine, cependant.
+ Je n'appellerai pas au secours.  Et je ne
+ lutte meme pas; mais je bouge.  Pauvre ami,
+ c'est manque encore.
+
+ Continue.  Ce petit jeu m'amuse.  D'autant
+ que je suis sure de vaincre.  Encore un essai
+ malheureux, et peut-etre tu seras moins
+ dispose a me prouver tes desirs eteints.
+
+ Bourreau, que fais-tu!  Chien! tu me brises
+ les poignets! et ce genou qui m'eventre!
+ Ah! va, maintenant, c'est une belle victoire,
+ que de ravir a terre une jeune fille en larmes.
+
+
+
+ 136 -- CHANSON
+
+
+ Le premier me donna un collier, un collier de
+ perles qui vaut une ville, avec les palais et
+ les temples, et les tresors et les esclaves.
+
+ Le second fit pour moi des vers.  Il disait
+ que mes cheveux sont noirs comme ceux de la
+ nuit sur la mer et mes yeux bleus comme ceux
+ du matin.
+
+ Le troisieme etait si beau que sa mere ne
+ l'embrassait pas sans rougir.  Il mit ses
+ mains sur mes genoux, et ses levres sur mon
+ pied nu.
+
+ Toi, tu ne m'as rien dit.  Tu ne m'as rien
+ donne, car tu es pauvre.  Et tu n'es pas
+ beau, mais c'est toi que j'aime.
+
+
+
+ 137 -- CONSEILS A UN AMANT
+
+
+ Si tu veux etre aime d'une femme, o jeune
+ ami, quelle qu'elle soit, ne lui dis pas que
+ tu la veux, mais fais qu'elle te voie tous les
+ jours, puis disparais, pour revenir.
+
+ Si elle t'adresse la parole, sois amoureux
+ sans empressement.  Elle viendra d'elle-meme
+ a toi.  Sache alors la prendre de force, le
+ jour ou elle entend se donner.
+
+ Quand tu la recevras dans ton lit, neglige
+ ton propre plaisir.  Les mains d'une femme
+ amoureuse sont tremblantes et sans caresses.
+ Dispense-les d'etre zelees.
+
+ Mais toi, ne prends pas de repos.  Prolonge
+ les baisers a perte d'haleine.  Ne la laisse
+ pas dormir, meme si elle t'en prie.  Baise
+ toujours la partie de son corps vers laquelle
+ elle tourne les yeux.
+
+
+
+ 138 -- LES AMIES A DINER
+
+
+ Myromeris et Maskhale, mes amies, venez avec
+ moi, car je n'ai pas d'amant ce soir, et,
+ couchees sur des lits de byssos, nous
+ causerons autour du diner.
+
+ Une nuit de repos vous fera du bien: vous
+ dormirez dans mon lit, meme sans fards et mal
+ coiffees.  Mettez une simple tunique de laine
+ et laissez vos bijoux au coffre.
+
+ Nul ne vous fera danser pour admirer vos
+ jambes et les mouvements lourds de vos reins.
+ Nul ne vous demandera les Figures sacrees,
+ pour juger si vous etes amoureuses.
+
+ Et je n'ai pas commande, pour nous, deux
+ joueuses de flute aux belles bouches, mais
+ deux marmites de pois rissoles, des gateaux
+ au miel, des croquettes frites et ma derniere
+ outre de Khios.
+
+
+
+ 139 -- LE TOMBEAU D'UNE JEUNE COURTISANE
+
+
+ Ici git le corps delicat de Lyde, petite
+ colombe, la plus joyeuse de toutes les
+ courtisanes, qui plus que toute autre aima
+ les orgies, les cheveux flottants, les danses
+ molles et les tuniques d'hyacinthe.
+
+ Plus que toute autre elle aima les glottismes
+ savoureux, les caresses sur la joue, les jeux
+ que la lampe voit seule et l'amour qui brise
+ les membres.  Et maintenant, elle est une
+ petite ombre.
+
+ Mais avant de la mettre au tombeau, on l'a
+ merveilleusement coiffee et on l'a couchee
+ dans les roses; la pierre meme qui la recouvre
+ est tout impregnee d'essences et de parfums.
+
+ Terre sacree, nourrice de tout, accueille
+ doucement la pauvre morte, endors-la dans
+ tes bras o Mere! et fais pousser autour de
+ la stele, non les orties et les ronces, mais
+ les faibles violettes blanches.
+
+
+
+ 140 -- LA PETITE MARCHANDE DE ROSES
+
+
+ Hier, m'a dit Nais, j'etais sur la place,
+ quand une petite fille en loques rouges a
+ passe, portant des roses, devant un groupe de
+ jeunes gens.  Et voici ce que j'ai entendu:
+
+ << Achetez-moi quelque chose.  -- Explique-toi,
+ petite, car nous ne savons ce que tu vends:
+ toi? tes roses? ou tout a la fois?  -- Si
+ vous m'achetez toutes mes fleurs, vous aurez
+ la vendeuse pour rien.
+
+ -- Et combien veux-tu de tes roses?  -- Il faut
+ six oboles a ma mere ou bien je serai battue
+ comme une chienne.  -- Suis-nous.  Tu auras une
+ drachme.  -- Alors je vais chercher ma petite
+ soeur? >>
+
+ Cette enfant n'est pas courtisane, Bilitis,
+ nul ne la connait.  Vraiment n'est-ce pas un
+ scandale et tolererons-nous que ces filles
+ viennent salir dans la journee les lits qui
+ nous attendent le soir?
+
+
+
+ 141 -- LA DISPUTE
+
+
+ Ah! par l'Aphrodita, te voila! tete de
+ sang! pourriture! empuse! sterile! carcan!
+ gauchere! digne de rien! mauvaise truie!
+ N'essaie pas de me fuir, mais approche et
+ plus pres encore.
+
+ Voyez-moi cette femme de matelots, qui ne
+ sait pas meme plisser son vetement sur
+ l'epaule et qui met de si mauvais fard que
+ le noir de ses sourcils coule sur sa joue en
+ ruisseaux d'encre!
+
+ Tu es Phoinikienne: couche avec ceux de
+ ta race.  Pour moi, mon pere etait Hellene:
+ j'ai droit sur tous ceux qui portent le petase.
+ Et meme sur les autres, s'il me plait ainsi.
+
+ Ne t'arrete plus dans ma rue, ou je t'enverrai
+ dans l'Hades faire l'amour avec Kharon, et je
+ dirai tres justement: << Que la terre te soit
+ legere! >> pour que les chiens puissent te
+ deterrer.
+
+
+
+ 142 -- MELANCOLIE
+
+
+ Je frissonne; la nuit est fraiche, et la
+ foret toute mouillee.  Pourquoi m'as-tu conduite
+ ici? mon grand lit n'est-il pas plus
+ doux que cette mousse semee de pierres?
+
+ Ma robe a fleurs aura des taches de verdure;
+ mes cheveux seront meles de brindilles;
+ mon coude, regarde mon coude, comme
+ il est deja souille de terre humide.
+
+ Autrefois pourtant, je suivais dans les
+ bois celui...  Ah! laisse-moi quelque temps.
+ Je suis triste, ce soir.  Laisse-moi, sans parler,
+ la main sur les yeux.
+
+ En verite, ne peux-tu attendre!  sommes
+ nous des betes brutes pour nous prendre
+ ainsi!  Laisse-moi.  Tu n'ouvriras ni mes
+ genoux ni mes levres.  Mes yeux memes, de
+ peur de pleurer, se ferment.
+
+
+
+ 143 -- LA PETITE PHANION
+
+
+ Etranger, arrete-toi, regarde qui t'a fait
+ signe: c'est la petite Phanion de Kos, elle
+ merite que tu la choisisses.
+
+ Vois, ses cheveux frisent comme du persil,
+ sa peau est douce comme un duvet d'oiseau.
+ Elle est petite et brune.  Elle parle bien.
+
+ Si tu veux la suivre, elle ne te demandera
+ pas tout l'argent de ton voyage; non, mais
+ une drachme ou une paire de chaussures.
+
+ Tu trouveras chez elle un bon lit, des figues
+ fraiches, du lait, du vin, et, s'il fait
+ froid, il y aura du feu.
+
+
+
+ 144 -- INDICATIONS
+
+
+ S'il te faut, passant qui t'arretes, des cuisses
+ elancees et des reins nerveux, une gorge
+ dure, des genoux qui etreignent, va chez
+ Plango, c'est mon amie.
+
+ Si tu cherches une fille rieuse, avec des
+ seins exuberants, la taille delicate, la croupe
+ grasse et les reins creuses, va jusqu'au coin
+ de cette rue, ou demeure Spidorrhodellis.
+
+ Mais si les longues heures tranquilles dans
+ les bras d'une courtisane, la peau douce, la
+ chaleur du ventre et l'odeur des cheveux te
+ plaisent, cherche Milto, tu seras content.
+
+ N'espere pas beaucoup d'amour; mais
+ profite de son experience.  On peut tout
+ demander a une femme, quand elle est nue,
+ quand il fait nuit, et quand les cent drachmes
+ sont sur le foyer.
+
+
+
+ 145 -- LE MARCHAND DE FEMMES
+
+
+ << Qui est la?  -- Je suis le marchand de
+ femmes.  Ouvre la porte, Sostrata, je te
+ presente deux occasions.  Celle-ci d'abord.
+ Approche, Anasyrtolis, et defais-toi.  -- Elle
+ est un peu grosse.
+
+ -- C'est une beaute.  De plus, elle danse
+ la kordax et elle sait quatre-vingts
+ chansons.  -- Tourne-toi.  Leve les bras.
+ Montre tes cheveux.  Donne le pied.  Souris.
+ C'est bien.
+
+ -- Celle-ci, maintenant.  -- Elle est trop
+ jeune!  -- Non pas, elle a eu douze ans
+ avant-hier, et tu ne lui apprendrais plus
+ rien.  -- Ote ta tunique.  Voyons?  Non, elle
+ est maigre.
+
+ -- Je n'en demande qu'une mine.  -- Et la
+ premiere?  -- Deux mines trente.  -- Trois
+ mines les deux?  -- C'est dit.  -- Entrez la
+ et lavez-vous.  Toi, adieu. >>
+
+
+
+ 146 -- L'ETRANGER
+
+
+ Etranger, ne va pas plus loin dans la ville.
+ Tu ne trouveras ailleurs que chez moi des
+ filles plus jeunes ni plus expertes.  Je suis
+ Sostrata, celebre au dela de la mer.
+
+ Vois celle-ci dont les yeux sont verts
+ comme l'eau dans l'herbe.  Tu n'en veux pas?
+ Voici d'autres yeux qui sont noirs comme la
+ violette, et une chevelure de trois coudees.
+
+ J'ai mieux encore.  Xantho, ouvre ta cyclas.
+ Etranger, ses seins sont durs comme le coing,
+ touche-les.  Et son beau ventre, tu le voie,
+ porte les trois plis de Kypris.
+
+ Je l'ai achetee avec sa soeur, qui n'est pas
+ d'age a aimer encore, mais qui la seconde
+ utilement.  Par les deux deesses!  tu es de
+ race noble.  Phyllis et Xantho, suivez le
+ chevalier!
+
+
+
+ 147 -- PHYLLIS (non traduite)
+
+
+
+ 148 -- LE SOUVENIR DE MNASIDIKA
+
+
+ Elles dansaient l'une devant l'autre, d'un
+ mouvement rapide et fuyant; elles semblaient
+ toujours vouloir s'enlacer, et pourtant ne se
+ touchaient point, si ce n'est du bout des
+ levres.
+
+ Quand elles tournaient le dos en dansant,
+ elles se regardaient, la tete sur l'epaule,
+ et la sueur brillait sous leurs bras leves,
+ et leurs chevelures fines passaient devant
+ leurs seins.
+
+ La langueur de leurs yeux, le feu de leurs
+ joues, la gravite de leurs visages, etaient
+ trois chansons ardentes.  Elles se frolaient
+ furtivement, elles pliaient leurs corps sur
+ les hanches.
+
+ Et tout a coup, elles sont tombees, pour
+ achever a terre la danse molle...  Souvenir
+ de Mnasidika, c'est alors que tu m'apparus,
+ et tout, hors ta chere image, me fut importun.
+
+
+
+ 149 -- LA JEUNE MERE
+
+
+ Ne crois pas, Myromeris, que, d'avoir ete
+ mere, tu sois moindre en beaute.  Voici que
+ ton corps sous la robe a noye ses formes
+ greles dans une voluptueuse mollesse.
+
+ Tes seins sont deux vastes fleurs renversees
+ sur ta poitrine, et dont la queue coupee
+ nourrit une seve laiteuse.  Ton ventre
+ plus doux defaille sous la main.
+
+ Et maintenant considere la toute petite enfant
+ qui est nee du frisson que tu as eu un
+ soir dans les bras d'un passant dont tu ne
+ sais plus le nom.  Reve a sa lointaine destinee.
+
+ Ces yeux qui s'ouvrent a peine s'allongeront
+ un jour d'une ligne de fard noir, et ils
+ semeront aux hommes la douleur ou la joie,
+ d'un mouvement de leurs cils.
+
+
+
+ 150 -- L'INCONNU
+
+
+ Il dort.  Je ne le connais pas.  Il me fait
+ horreur.  Pourtant sa bourse est pleine d'or
+ et il a donne a l'esclave quatre drachmes en
+ entrant.  J'espere une mine pour moi-meme.
+
+ Mais j'ai dit a la Phrygienne d'entrer au lit
+ a ma place.  Il etait ivre et l'a prise pour
+ moi.  Je serais plutot morte dans les
+ supplices que de m'allonger pres de cet
+ homme.
+
+ Helas! je songe aux prairies de Tauros...
+ J'ai ete une petite vierge...  Alors, j'avais
+ la poitrine legere, et j'etais si folle
+ d'envie amoureuse que je haissais mes soeurs
+ mariees.
+
+ Que ne faisais-je pas pour obtenir ce que
+ j'ai refuse cette nuit!  Aujourd'hui mes
+ mamelles se plient, et dans mon coeur trop
+ use, Eros s'endort de lassitude.
+
+
+
+ 151 -- LA DUPERIE
+
+
+ Je m'eveille...  Est-il donc parti?  Il a
+ laisse quelque chose?  Non: deux amphores
+ vides et des fleurs souillees.  Tout le tapis
+ est rouge de vin.
+
+ J'ai dormi, mais je suis encore ivre...  Avec
+ qui donc suis-je rentree?...  Pourtant nous
+ nous sommes couches.  Le lit est meme trempe
+ de sueur.
+
+ Peut-etre etaient-ils plusieurs; le lit est
+ si bouleverse.  Je ne sais plus...  Mais on
+ les a vus!  Voila ma Phrygienne.  Elle dort
+ encore en travers de la porte.
+
+ Je lui donne un coup de pied dans la poitrine
+ et je crie: << Chienne, tu ne pouvais pas... >>
+ Je suis si enrouee que je ne puis parler.
+
+
+
+ 152 -- LE DERNIER AMANT
+
+
+ Enfant, ne passe pas sans m'avoir aimee.
+ Je suis encore belle, dans la nuit; tu verras
+ combien mon automne est plus chaud que le
+ printemps d'une autre.
+
+ Ne cherche pas l'amour des vierges.  L'amour
+ est un art difficile ou les jeunes filles
+ sont peu versees.  Je l'ai appris toute ma
+ vie pour le donner a mon dernier amant.
+
+ Mon dernier amant, ce sera toi, je le sais.
+ Voici ma bouche, pour laquelle un peuple a
+ pali de desir.  Voici mes cheveux, les memes
+ cheveux que Psappha la Grande a chantes.
+
+ Je recueillerai en ta faveur tout ce qu'il
+ m'est reste de ma jeunesse perdue.  Je brulerai
+ les souvenirs eux-memes.  Je te donnerai
+ la flute de Lykas, la ceinture de Mnasidika.
+
+
+
+ 153 -- LA COLOMBE
+
+
+ Depuis longtemps deja je suis belle; le jour
+ vient ou je ne serai plus femme.  Et alors je
+ connaitrai les souvenirs dechirants, les
+ brulantes envies solitaires et les larmes
+ dans les mains.
+
+ Si la vie est un long songe, a quoi bon lui
+ resister?  Maintenant, quatre et cinq fois la
+ nuit je demande la jouissance amoureuse, et
+ quand mes flancs sont epuises je m'endors ou
+ mon corps retombe.
+
+ Au matin, j'ouvre les paupieres et je
+ frissonne dans mes cheveux.  Une colombe est
+ sur ma fenetre; je lui demande en quel mois
+ nous sommes.  Elle me dit: << C'est le mois ou
+ les femmes sont en amour. >>
+
+ Ah! quel que soit le mois, la colombe dit
+ vrai, Kypris!  Et je jette mes deux bras
+ autour de mon amant, et avec de grands
+ tremblements j'etire jusqu'au pied du lit mes
+ jambes encore engourdies.
+
+
+
+ 154 -- LA PLUIE AU MATIN
+
+
+ La nuit s'efface.  Les etoiles s'eloignent.
+ Voici que les dernieres courtisanes sont
+ rentrees avec les amants.  Et moi, dans la
+ pluie du matin, j'ecris ces vers sur le
+ sable.
+
+ Les feuilles sont chargees d'eau brillante.
+ Des ruisseaux a travers les sentiers
+ entrainent la terre et les feuilles mortes.
+ La pluie, goutte a goutte, fait des trous
+ dans ma chanson.
+
+ Oh! que je suis triste et seule ici!  Les
+ plus jeunes ne me regardent pas; les plus ages
+ m'ont oubliee.  C'est bien.  Ils apprendront
+ mes vers, et les enfants de leurs enfants.
+
+ Voila ce que ni Myrtale, ni Thais, ni Glykera
+ ne se diront, le jour ou leurs belles joues
+ seront creuses.  Ceux qui aimeront apres moi
+ chanteront mes strophes ensemble.
+
+
+
+ 155 -- LA MORT VERITABLE
+
+
+ Aphrodita! deesse impitoyable, tu as voulu
+ que sur moi aussi la jeunesse heureuse aux
+ beaux cheveux s'evanouit en quelques jours.
+ Que ne suis-je morte tout a fait!
+
+ Je me suis regardee dans mon miroir: je n'ai
+ plus ni sourire ni larmes.  O doux visage
+ qu'aimait Mnasidika, je ne puis croire que tu
+ fus le mien!
+
+ Se peut-il que tout soit fini?  Je n'ai pas
+ encore vecu cinq fois huit annees, il me
+ semble que je suis nee d'hier, et deja voici
+ qu'il faut dire: On ne m'aimera plus.
+
+ Toute ma chevelure coupee, je l'ai tordue
+ dans ma ceinture et je te l'offre, Kypris
+ eternelle!  Je ne cesserai pas de t'adorer.
+ Ceci est le dernier vers de la pieuse
+ Bilitis.
+
+
+
+
+ 		    LE TOMBEAU DE BILITIS
+
+
+
+ 156 -- PREMIERE EPITAPHE
+
+
+ Dans le pays ou les sources naissent de la
+ mer, et ou le lit des fleuves est fait de
+ feuilles de roches, moi, Bilitis, je suis nee.
+
+ Ma mere etait Phoinikienne; mon pere
+ Damophylos, Hellene.  Ma mere m'a appris
+ les chants de Byblos, tristes comme la
+ premiere aube.
+
+ J'ai adore l'Astarte a Kypre.  J'ai connu
+ Psappha a Lesbos.  J'ai chante comment
+ j'aimais.  Si j'ai bien vecu, Passant, dis-le
+ a ta fille.
+
+ Et ne sacrifie pas pour moi la chevre noire;
+ mais, en libation douce, presse sa mamelle
+ sur ma tombe.
+
+
+
+ 157 -- SECONDE EPITAPHE
+
+
+ Sur les rives sombres du Melas, a Tamassos de
+ Pamphylie, moi, fille de Damophylos, Bilitis,
+ je suis nee.  Je repose loin de ma patrie, tu
+ le vois.
+
+ Toute enfant, j'ai appris les amours de
+ l'Adon et de l'Astarte, les mysteres de la
+ Syrie sainte, et la mort et le retour vers
+ Celle-aux-paupieres-arrondies.
+
+ Si j'ai ete courtisane, quoi de blamable?
+ N'etait-ce pas mon devoir de femme?
+ Etranger, la Mere-de-toutes-choses nous
+ guide.  La meconnaitre n'est pas prudent.
+
+ En gratitude a toi qui t'es arrete, je te
+ souhaite ce destin: Puisses-tu etre aime,
+ ne pas aimer.  Adieu.  Souviens-toi dans ta
+ vieillesse, que tu as vu mon tombeau.
+
+
+
+ 158 -- DERNIERE EPITAPHE
+
+
+ Sous les feuilles noires des lauriers, sous
+ les fleurs amoureuses des roses, c'est ici que
+ je suis couchee, moi qui sus tresser le vers
+ au vers, et faire fleurir le baiser.
+
+ J'ai grandi sur la terre des nymphes; j'ai
+ vecu dans l'ile des amies; je suis morte dans
+ l'ile de Kypris.  C'est pourquoi mon nom est
+ illustre et ma stele frottee d'huile.
+
+ Ne me pleure pas, toi qui t'arretes: on m'a
+ fait de belles funerailles, les pleureuses se
+ sont arrache les joues, on a couche dans ma
+ tombe mes miroirs et mes colliers.
+
+ Et maintenant, sur les pales prairies
+ d'asphodeles, je me promeme, ombre
+ impalpable, et le souvenir de ma vie
+ terrestre est la joie de ma vie souterraine.
+
+
+
+
+BIBLIOGRAPHIE
+
+
+I. -- BILITIS' SAEMMTLICHE LIEDER zum ersten Male herausgegeben
+und mit einem Woerterbuche versehen, von G. Heim -- Leipzig.
+1894.
+
+II. -- LES CHANSONS DE BILITIS, traduites du grec pour la
+premiere fois par P. L. (Pierre Louys). -- Paris. 1895.
+
+III. -- SIX CHANSONS DE BILITIS, traduites en vers par Mme Jean
+Bertheroy. -- _Revue pour les jeunes filles_. Paris. Armand
+Colin.  1896.
+
+IV. -- VINGT-SIX CHANSONS DE BILITIS, traduites en allemand par
+Richard Dehmel.-- _Die Gesellschaft_, Leipzig. 1896.
+
+V. -- VINGT CHANSONS DE BILITIS, traduites en allemand par le Dr
+Paul Goldmann. -- Frankfurter Zeitung. 1896.
+
+VI. -- LES CHANSONS DE BILITIS, par le professeur von
+Willamovitz-Moellendorf. -- Goettingsche Gelehrte. --
+Goettinge. 1896.
+
+VII, -- HUIT CHANSONS DE BILITIS, traduites en tcheque par
+Alexandre Backovsky.  -- Prague. 1897.
+
+VIII. -- QUATRE CHANSONS DE BILITIS, traduites en suedois par
+Gustav Uddgren. -- Nordisk Revy. -- Stockholm. 1897.
+
+IX. -- TROIS CHANSONS DE BILITIS, mises en musique par Claude
+Debussy. -- Paris.  Fromont. 1898, etc.
+
+
+
+
+                            TABLE
+
+
+ VIE DE BILITIS
+
+
+    I -- BUCOLIQUES EN PAMPHYLIE
+
+
+  1 -- L'ARBRE
+  2 -- CHANT PASTORAL
+  3 -- PAROLES MATERNELLES
+  4 -- LES PIEDS NUS
+  5 -- LE VIEILLARD ET LES NYMPHES
+  6 -- CHANSON
+  7 -- LE PASSANT
+  8 -- LE REVEIL
+  9 -- LA PLUIE
+ 10 -- LES FLEURS
+ 11 -- IMPATIENCE
+ 12 -- LES COMPARAISONS
+ 13 -- LA RIVIERE DE LA FORET
+ 14 -- PHITTA MELIAI
+ 15 -- LA BAGUE SYMBOLIQUE
+ 16 -- LES DANSES AU CLAIR DE LUNE
+ 17 -- LES PETITS ENFANTS
+ 18 -- LES CONTES
+ 19 -- L'AMIE MARIEE
+ 20 -- LES CONFIDENCES
+ 21 -- LA LUNE AUX YEUX BLEUS
+ 22 -- REFLEXIONS (non traduite)
+ 23 -- CHANSON  (Ombre du bois)
+ 24 -- LYKAS
+ 25 -- L'OFFRANDE A LA DEESSE
+ 26 -- L'AMIE COMPLAISANTE
+ 27 -- PRIERE A PERSEPHONE
+ 28 -- LA PARTIE D'OSSELETS
+ 29 -- LA QUENOUILLE
+ 30 -- LA FLUTE DE PAN
+ 31 -- LA CHEVELURE
+ 32 -- LA COUPE
+ 33 -- ROSES DANS LA NUIT
+ 34 -- LES REMORDS
+ 35 -- LE SOMMEIL INTERROMPU
+ 36 -- AUX LAVEUSES
+ 37 -- CHANSON
+ 38 -- BILITIS
+ 39 -- LA PETITE MAISON
+ 40 -- LA JOIE (non traduite)
+ 41 -- LA LETTRE PERDUE
+ 42 -- CHANSON
+ 43 -- LE SERMENT
+ 44 -- LA NUIT
+ 45 -- BERCEUSE
+ 46 -- LE TOMBEAU DES NAIADES
+
+
+    II -- ELEGIES A MYTILENE
+
+
+ 47 -- AU VAISSEAU
+ 48 -- PSAPPHA
+ 49 -- LA DANSE DE GLOTTIS ET DE KYSE
+ 50 -- LES CONSEILS
+ 51 -- L'INCERTITUDE
+ 52 -- LA RENCONTRE
+ 53 -- LA PETITE APHRODITE DE TERRE CUITE
+ 54 -- LE DESIR
+ 55 -- LES NOCES
+ 56 -- LE LIT (non traduite)
+ 57 -- LE PASSE QUI SURVIT
+ 58 -- LA METAMORPHOSE
+ 59 -- LE TOMBEAU SANS NOM
+ 60 -- LES TROIS BEAUTES DE MNASIDIKA
+ 61 -- L'ANTRE DES NYMPHES
+ 62 -- LES SEINS DE MNASIDIKA
+ 63 -- LA CONTEMPLATION (non traduite)
+ 64 -- LA POUPEE
+ 65 -- TENDRESSES
+ 66 -- JEUX
+ 67 -- EPISODE (non traduite)
+ 68 -- PENOMBRE
+ 69 -- LA DORMEUSE
+ 70 -- LE BAISER
+ 71 -- LES SOINS JALOUX
+ 72 -- L'ETREINTE EPERDUE
+ 73 -- REPRISE (non traduite)
+ 74 -- LE COEUR
+ 75 -- PAROLES DANS LA NUIT
+ 76 -- L'ABSENCE
+ 77 -- L'AMOUR
+ 78 -- LA PURIFICATION
+ 79 -- LA BERCEUSE DE MNASIDIKA
+ 80 -- PROMENADE AU BORD DE LA MER
+ 81 -- L'OBJET
+ 82 -- SOIR PRES DU FEU
+ 83 -- PRIERES
+ 84 -- LES YEUX
+ 85 -- LES FARDS
+ 86 -- LE SILENCE DE MNASIDIKA
+ 87 -- SCENE
+ 88 -- ATTENTE
+ 89 -- LA SOLITUDE
+ 90 -- LETTRE
+ 91 -- LA TENTATIVE
+ 92 -- L'EFFORT
+ 93 -- MYRRHINE (non traduite)
+ 94 -- A GYRINNO
+ 95 -- LE DERNIER ESSAI
+ 96 -- LE SOUVENIR DECHIRANT
+ 97 -- A LA POUPEE DE CIRE
+ 98 -- CHANT FUNEBRE
+
+
+    III -- EPIGRAMMES DANS L'ILE DE CHYPRE
+
+
+  99 -- HYMNE A ASTARTE
+ 100 -- HYMNE A LA NUIT
+ 101 -- LES MENADES
+ 102 -- LA MER DE KYPRIS
+ 103 -- LES PRETRESSES DE L'ASTARTE
+ 104 -- LES MYSTERES
+ 105 -- LES COURTISANES EGYPTIENNES
+ 106 -- JE CHANTE MA CHAIR ET MA VIE
+ 107 -- LES PARFUMS
+ 108 -- CONVERSATION
+ 109 -- LA ROBE DECHIREE
+ 110 -- LES BIJOUX
+ 111 -- L'INDIFFERENT
+ 112 -- L'EAU PURE DU BASSIN
+ 113 -- LA FETE NOCTURNE (non traduite)
+ 114 -- VOLUPTE
+ 115 -- L'HOTELLERIE
+ 116 -- LA DOMESTICITE
+ 117 -- LE TRIOMPHE DE BILITIS
+ 118 -- A SES SEINS
+ 119 -- LIBERTE (non traduite)
+ 120 -- MYDZOURIS
+ 121 -- LE BAIN
+ 122 -- AU DIEU DE BOIS
+ 123 -- LA DANSEUSE AUX CROTALES
+ 124 -- LA JOUEUSE DE FLUTE
+ 125 -- LA CEINTURE CHAUDE
+ 126 -- A UN MARI HEUREUX
+ 127 -- A UN EGARE
+ 128 -- THERAPEUTIQUE
+ 129 -- LA COMMANDE
+ 130 -- LA FIGURE DE PASIPHAE
+ 131 -- LA JONGLEUSE
+ 132 -- LA DANSE DES FLEURS
+ 133 -- LA DANSE DE SATYRA (non traduite)
+ 134 -- MYDZOURIS COURONNEE (non traduite)
+ 135 -- LA VIOLENCE
+ 136 -- CHANSON
+ 137 -- CONSEILS A UN AMANT
+ 138 -- LES AMIES A DINER
+ 139 -- LE TOMBEAU D'UNE JEUNE COURTISANE
+ 140 -- LA PETITE MARCHANDE DE ROSES
+ 141 -- LA DISPUTE
+ 142 -- MELANCOLIE
+ 143 -- LA PETITE PHANION
+ 144 -- INDICATIONS
+ 145 -- LE MARCHAND DE FEMMES
+ 146 -- L'ETRANGER
+ 147 -- PHYLLIS (non traduite)
+ 148 -- LE SOUVENIR DE MNASIDIKA
+ 149 -- LA JEUNE MERE
+ 150 -- L'INCONNU
+ 151 -- LA DUPERIE
+ 152 -- LE DERNIER AMANT
+ 153 -- LA COLOMBE
+ 154 -- LA PLUIE AU MATIN
+ 155 -- LA MORT VERITABLE
+
+
+    LE TOMBEAU DE BILITIS
+
+
+ 156 -- PREMIERE EPITAPHE
+ 157 -- SECONDE EPITAPHE
+ 158 -- DERNIERE EPITAPHE
+
+
+ BIBLIOGRAPHIE
+
+ TABLE
+
+
+
+
+
+
+
+The Project Gutenberg Etext of Les chansons de Bilitis, by Pierre Louys
+*********This file should be named 7blts11.txt or 7blts11.zip*********
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7blts12.txt
+VERSIONS based on separate sources get new LETTER, 7blts10a.txt
+
+Produced by Carlo Traverso, Robert Rowe, Charles Franks
+and the Online Distributed Proofreading Team.
+
+More information about this book is at the top of this file.
+
+We are now trying to release all our etexts one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+etexts, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any Etext before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+The most recent list of states, along with all methods for donations
+(including credit card donations and international donations), may be
+found online at http://www.gutenberg.net/donation.html
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this header are copyright (C) 2001 by Michael S. Hart
+and may be reprinted only when these Etexts are free of all fees.]
+[Project Gutenberg is a TradeMark and may not be used in any sales
+of Project Gutenberg Etexts or other materials be they hardware or
+software or any other related product without express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.10/04/01*END*
+
+End of the Project Gutenberg Etext of Les chansons de Bilitis, by Pierre Louys
+

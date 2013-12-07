@@ -1,0 +1,6440 @@
+
+Project Gutenberg Etext of 
+1.  The Lamentable Tragedy of Locrine
+2.  Mucedorus
+attributed in part to William Shakespeare
+PG has multiple editions of William Shakespeare's Complete Works
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+1.  The Lamentable Tragedy of Locrine
+
+2.  Mucedorus
+
+by William Shakespeare (Apocrypha)
+
+November, 1998 [Etext #1548]
+
+
+Project Gutenberg Etext of 
+1.  The Lamentable Tragedy of Locrine
+2.  Mucedorus
+attributed in part to Shakespeare
+******This file should be named 1ws4810.txt or 1ws4810.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 1ws4811.txt
+VERSIONS based on separate sources get new LETTER, 1ws4810a.txt
+
+
+This etext was prepared by the PG Shakespeare Team,
+a team of about twenty Project Gutenberg volunteers.
+
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT! keep
+these books in compliance with any particular paper edition.
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, leaving time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-six text
+files per month, or 432 more Etexts in 1999 for a total of 2000+
+If these reach just 10% of the computerized population, then the
+total should reach over 200 billion Etexts given away this year.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only ~5% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding; currently our funding is mostly
+from Michael Hart's salary at Carnegie-Mellon University, and an
+assortment of sporadic gifts; this salary is only good for a few
+more years, so we are looking for something to replace it, as we
+don't want Project Gutenberg to be so dependent on one person.
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg/CMU": and are
+tax deductible to the extent allowable by law.  (CMU = Carnegie-
+Mellon University).
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails. . .try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+We would prefer to send you this information by email.
+
+******
+
+To access Project Gutenberg etexts, use any Web browser
+to view http://promo.net/pg.  This site lists Etexts by
+author and by title, and includes information about how
+to get involved with Project Gutenberg.  You could also
+download our past Newsletters, or subscribe here.  This
+is one of our major sites, please email hart@pobox.com,
+for a more complete list of our various sites.
+
+To go directly to the etext collections, use FTP or any
+Web browser to visit a Project Gutenberg mirror (mirror
+sites are available on 7 continents; mirrors are listed
+at http://promo.net/pg).
+
+Mac users, do NOT point and click, typing works better.
+
+Example FTP session:
+
+ftp sunsite.unc.edu
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+***
+
+**Information prepared by the Project Gutenberg legal advisor**
+
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg Association at
+Carnegie-Mellon University (the "Project").  Among other
+things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association/Carnegie-Mellon
+     University" within the 60 days following each
+     date you prepare (or were legally required to prepare)
+     your annual (or equivalent periodic) tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association / Carnegie-Mellon University".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+This etext was prepared by the PG Shakespeare Team,
+a team of about twenty Project Gutenberg volunteers.
+
+
+
+
+
+1.  THE LAMENTABLE TRAGEDY OF LOCRINE
+
+The eldest son of King Brutus, discoursing the wars of the
+Britains and Huns, with their discomfiture, the Britain's
+victory with their accidents, and the death of Albanact.
+Play attributed in part to William Shakespeare.
+
+
+
+
+DRAMATIS PERSONAE.
+
+BRUTUS, King of Britain.
+LOCRINE, his son.
+CAMBER, his son.
+ALBANACT, his son.
+CORINEIUS, brother to Brutus.
+ASSARACHUS, brother to Brutus.
+THRASIMACHUS, brother to Brutus.
+DEBON, an old Officer.
+HUMBER, King of the Scythians.
+HUBBA, his son.
+THRASSIER, a Scythian Commander.
+STRUMBO, clown.
+TRUMPART, clown.
+OLIVER, clown.
+WILLIAM, clown.
+
+GWENDOLINE, Corineius his Daughter, married to Locrine.
+ESTRILD, Humber's Wife.
+ATE, the Goddess of Revenge.
+
+Ghosts of Albanact, and Corineius.
+
+
+
+ACT I.  PROLOGUE.
+
+
+Enter Ate with thunder and lightning all in black, with a
+burning torch in one hand, and a bloody sword in the other
+hand, and presently let there come forth a Lion running after
+a Bear or any other beast; then come forth an Archer who
+must kill the Lion in a dumb show, and then depart.  Remain
+Ate.
+
+ATE.
+In paenam sectatur & umbra.
+A Mighty Lion, ruler of the woods,
+Of wondrous strength and great proportion,
+With hideous noise scaring the trembling trees,
+With yelling clamors shaking all the earth,
+Traverst the groves, and chased the wandering beasts.
+Long did he range amid the shady trees,
+And drave the silly beasts before his face,
+When suddenly from out a thorny bush,
+A dreadful Archer with his bow ybent,
+Wounded the Lion with a dismal shaft.
+So he him stroke that it drew forth the blood,
+And filled his furious heart with fretting ire;
+But all in vain he threatened teeth and paws,
+And sparkleth fire from forth his flaming eyes,
+For the sharp shaft gave him a mortal wound.
+So valiant Brute, the terror of the world,
+Whose only looks did scare his enemies,
+The Archer death brought to his latest end.
+Oh what may long abide above this ground,
+In state of bliss and healthful happiness.
+
+[Exit.]
+
+
+ACT I.  SCENE I.
+
+Enter Brutus carried in a chair, Locrine, Camber, Albanact,
+Corineius, Gwendoline, Assarachus, Debon, Thrasimachus.
+
+BRUTUS.
+Most loyal Lords and faithful followers,
+That have with me, unworthy General,
+Passed the greedy gulf of Ocean,
+Leaving the confines of fair Italy,
+Behold, your Brutus draweth nigh his end,
+And I must leave you, though against my will.
+My sinews shrunk, my numbed senses fail,
+A chilling cold possesseth all my bones;
+Black ugly death, with visage pale and wan,
+Presents himself before my dazzled eyes,
+And with his dart prepared is to strike.
+These arms my Lords, these never daunted arms,
+That oft have quelled the courage of my foes,
+And eke dismay'd my neighbours arrogancy,
+Now yield to death, o'erlaid with crooked age,
+Devoid of strength and of their proper force,
+Even as the lusty cedar worn with years,
+That far abroad her dainty odor throws,
+Mongst all the daughters of proud Lebanon.
+This heart, my Lords, this near appalled heart,
+That was a terror to the bordering lands,
+A doeful scourge unto my neighbor Kings,
+Now by the weapons of unpartial death,
+Is clove asunder and bereft of life,
+As when the sacred oak with thunderbolts,
+Sent from the fiery circuit of the heavens,
+Sliding along the air's celestial vaults,
+Is rent and cloven to the very roots.
+In vain, therefore, I strangle with this foe;
+Then welcome death, since God will have it so.
+
+ASSARACHUS.
+Alas, my Lord, we sorrow at your case,
+And grieve to see your person vexed thus;
+But what so ere the fates determined have,
+It lieth not in us to disannul,
+And he that would annihilate his mind,
+Soaring with Icarus too near the sun,
+May catch a fall with young Bellerophon.
+For when the fatal sisters have decreed
+To separate us from this earthly mould,
+No mortal force can countermand their minds:
+Then, worthy Lord, since there's no way but one,
+Cease your laments, and leave your grievous moan.
+
+CORINEIUS.
+Your highness knows how many victories,
+How many trophies I erected have
+Triumphantly in every place we came.
+The Grecian Monarch, warlike Pandrassus,
+And all the crew of the Molossians;
+Goffarius, the arm strong King of Gauls,
+And all the borders of great Aquitaine,
+Have felt the force of our victorious arms,
+And to their cost beheld our chivalry.
+Where ere Aurora, handmaid of the Sun,
+Where ere the Sun, bright guardiant of the day,
+Where ere the joyful day with cheerful light,
+Where ere the light illuminates the world,
+The Trojan's glory flies with golden wings,
+Wings that do soar beyond fell ennui's flight.
+The fame of Brutus and his followers
+Pierceth the skies, and with the skies the throne
+Of mighty Jove, Commander of the world.
+Then worthy Brutus, leave these sad laments;
+Comfort your self with this your great renown,
+And fear not death though he seem terrible.
+
+BRUTUS.
+Nay, Corineius, you mistake my mind
+In construing wrong the cause of my complaints.
+I feared to yield my self to fatal death!
+God knows it was the least of all my thoughts;
+A greater care torments my very bones,
+And makes me tremble at the thought of it,
+And in you, Lordings, doth the substance lie.
+
+THRASI.
+Most noble Lord, if ought your loyal peers
+Accomplish may, to ease your lingering grief,
+I, in the name of all, protest to you,
+That we will boldly enterprise the same,
+Were it to enter to black Tartarus,
+Where triple Cerberus with his venomous throat,
+Scarreth the ghosts with high resounding noise.
+We'll either rent the bowels of the earth,
+Searching the entrails of the brutish earth,
+Or, with his Ixion's overdaring son,
+Be bound in chains of everduring steel.
+
+BRUTUS.
+Then harken to your sovereign's latest words,
+In which I will unto you all unfold
+Our royal mind and resolute intent:--
+When golden Hebe, daughter to great Jove,
+Covered my manly cheeks with youthful down,
+Th' unhappy slaughter of my luckless sire,
+Drove me and old Assarachus, mine eame,
+As exiles from the bounds of Italy:
+So that perforce we were constrained to fly
+To Graecia's Monarch noble Pandrassus.
+There I alone did undertake your cause,
+There I restored your antique liberty,
+Though Graecia frowned, and all Mollossia stormed,
+Though brave Antigonus, with martial band,
+In pitched field encountered me and mine,
+Though Pandrassus and his contributories,
+With all the route of their confederates,
+Sought to deface our glorious memory
+And wipe the name of Trojans from the earth,
+Him did I captivate with this mine arm,
+And by compulsion forced him to agree
+To certain articles which there we did propound.
+From Graecia through the boisterous Hellespont,
+We came unto the fields of Lestrigon,
+Whereas our brother Corineius was,
+Since when we passed the Cicillian gulf,
+And so transfretting the Illirian sea,
+Arrived on the coasts of Aquitaine,
+Where with an army of his barbarous Gauls
+Goffarius and his brother Gathelus
+Encountering with our host, sustained the foil.
+And for your sakes my Turnus there I lost,
+Turnus that slew six hundred men at arms
+All in an hour, with his sharp battle-axe.
+From thence upon the strons of Albion
+To Corus haven happily we came,
+And quelled the giants, come of Albion's race,
+With Gogmagog son to Samotheus,
+The cursed Captain of that damned crew.
+And in that Isle at length I placed you.
+Now let me see if my laborious toils,
+If all my care, if all my grievous wounds,
+If all my diligence were well employed.
+
+CORINEIUS.
+When first I followed thee & thine, brave king,
+I hazarded my life and dearest blood,
+To purchase favour at your princely hands,
+And for the same in dangerous attempts
+In sundry conflicts and in diverse broils,
+I showed the courage of my manly mind.
+For this I combated with Gathelus,
+The brother to Goffarius of Gaul;
+For this I fought with furious Gogmagog,
+A savage captain of a savage crew;
+And for these deeds brave Cornwall I received,
+A grateful gift given by a gracious King:
+And for this gift, this life and dearest blood,
+Will Corineius spend for Brutus good.
+
+DEB.
+And what my friend, brave prince, hath vowed to you,
+The same will Debon do unto his end.
+
+BRUTUS.
+Then, loyal peers, since you are all agreed,
+And resolute to follow Brutus hosts,
+Favor my sons, favor these Orphans, Lords,
+And shield them from the dangers of their foes.
+Locrine, the column of my family,
+And only pillar of my weakened age,
+Locrine, draw near, draw near unto thy sire,
+And take thy latest blessings at his hands:
+And for thou art the eldest of my sons,
+Be thou a captain to thy brethren,
+And imitate thy aged father's steps,
+Which will conduct thee to true honor's gate;
+For if thou follow sacred virtue's lore,
+Thou shalt be crowned with a laurel branch,
+And wear a wreath of sempiternal fame,
+Sorted amongst the glorious happy ones.
+
+LOCRINE.
+If Locrine do not follow your advise,
+And bear himself in all things like a prince
+That seeks to amplify the great renown
+Left unto him for an inheritage
+By those that were his ancestors,
+Let me be flung into the Ocean,
+And swallowed in the bowels of the earth,
+Or let the ruddy lightning of great Jove
+Descend upon this my devoted head.
+
+BRUTUS.
+
+[Taking Gwendoline by the hand.]
+
+But for I see you all to be in doubt,
+Who shall be matched with our royal son, 
+Locrine, receive this present at my hand,
+A gift more rich than are the wealthy mines
+Found in the bowels of America.
+Thou shalt be spoused to fair Gwendoline;
+Love her, and take her, for she is thine own,
+If so thy uncle and her self do please.
+
+CORINEIUS.
+And herein how your highness honors me
+It cannot now be in my speech expressed;
+For careful parents glory not so much
+At their honour and promotion,
+As for to see the issue of their blood
+Seated in honor and prosperity.
+
+GWENDOLINE.
+And far be it from any maiden's thoughts
+To contradict her aged father's will.
+Therefore, since he to whom I must obey
+Hath given me now unto your royal self,
+I will not stand aloof from off the lure,
+Like crafty dames that most of all deny
+That which they most desire to possess.
+
+BRUTUS.
+
+[Turning to Locrine.  Locrine kneeling.]
+
+Then now, my son, thy part is on the stage,
+For thou must bear the person of a King.
+
+[Puts the Crown on his head.]
+
+Locrine, stand up, and wear the regal Crown,
+And think upon the state of Majesty,
+That thou with honor well mayest wear the crown.
+And if thou tendrest these my latest words,
+As thou requirest my soul to be at rest,
+As thou desirest thine own security,
+Cherish and love thy new betrothed wife.
+
+LOCRINE.
+No longer let me well enjoy the crown,
+Than I do honour peerless Gwendoline.
+
+BRUTUS.
+Camber.
+
+CAMBER.
+My Lord.
+
+BRUTUS.
+The glory of mine age,
+And darling of thy mother Imogen,
+Take thou the South for thy dominion.
+From thee there shall proceed a royal race,
+That shall maintain the honor of this land,
+And sway the regal scepter with their hands.
+
+[Turning to Albanact.]
+
+And Albanact, thy father's only joy,
+Youngest in years, but not the youngest in mind,
+A perfect pattern of all chivalry,
+Take thou the North for thy dominion,
+A country full of hills and ragged rocks,
+Replenished with fierce untamed beasts,
+As correspondent to thy martial thoughts,
+Live long, my sons, with endless happiness,
+And bear firm concordance amongst your selves.
+Obey the counsels of these fathers grave,
+That you may better bear out violence.--
+But suddenly, through weakness of my age,
+And the defect of youthful puissance,
+My malady increaseth more and more,
+And cruel death hasteneth his quickened pace,
+To dispossess me of my earthly shape.
+Mine eyes wax dim, overcast with clouds of age,
+The pangs of death compass my crazed bones;
+Thus to you all my blessings I bequeath,
+And with my blessings, this my fleeting soul
+My glass is run, and all my miseries
+Do end with life; death closeth up mine eyes,
+My soul in haste flies to the Elysian fields.
+
+[He dieth.]
+
+LOCRINE.
+Accursed stars, damned and accursed stars,
+To abbreviate my noble father's life!
+Hard-hearted gods, and too envious fates,
+Thus to cut off my father's fatal thread!
+Brutus, that was a glory to us all,
+Brutus, that was a terror to his foes,
+Alas, too soon, by Demagorgon's knife,
+The martial Brutus is bereft of life!
+
+CORINEIUS.
+No sad complaints may move just Aeacus,
+No dreadful threats can fear judge Rhodomanth.
+Wert thou as strong as mighty Hercules,
+That tamed the huge monsters of the world,
+Playedst thou as sweet, on the sweet sounding lute,
+As did the spouse of fair Eurydice,
+That did enchant the waters with his noise,
+And made stones, birds, and beasts, to lead a dance,
+Constrained the hilly trees to follow him,
+Thou couldst not move the judge of Erebus,
+Nor move compassion in grim Pluto's heart;
+For fatal Mors expecteth all the world,
+And every man must tread the way of death.
+Brave Tantalus, the valiant Pelops' sire,
+Guest to the gods, suffered untimely death,
+And old Tithonus, husband to the morn,
+And eke grim Minos, whom just Jupiter
+Deigned to admit unto his sacrifice.
+The thundering trumpets of blood-thirsty Mars,
+The fearful rage of fell Tisiphone,
+The boistrous waves of humid Ocean,
+Are instruments and tools of dismal death.
+Then, novel cousin, cease to mourn his chance,
+Whose age & years were signs that he should die.
+It reseth now that we inter his bones,
+That was a terror to his enemies.
+Take up the course, and, princes, hold him dead,
+Who while he lived, upheld the Trojan state.
+Sound drums and trumpets; march to Troinouant,
+There to provide our chieftain's funeral.
+
+[Exeunt.]
+
+
+ACT 1.  SCENE 2.  The house of Strumbo.
+
+[Enter Strumbo above in a gown, with ink and paper
+in his hand, saying:--]
+
+STRUMBO.
+Either the four elements, the seven planets, and all the
+particular stars of the pole Antastick, are adversative
+against me, or else I was begotten and born in the wane
+of the Moon, when every thing as Lactantius in his
+fourth book of Consultations doth say, goeth asward.
+Aye, masters, aye, you may laugh, but I must weep;
+you may joy, but I must sorrow; shedding salt tears
+from the watery fountains of my most dainty fair eyes,
+along my comely and smooth cheeks, in as great plenty
+as the water runneth from the buckingtubs, or red wine
+out of the hogs heads:  for trust me, gentlemen and my
+very good friends, and so forth, the little god, nay the
+desparate god Cuprit, with one of his vengible birdbolts,
+hath shot me unto the heel:  so not only, but also, oh
+fine phrase, I burn, I burn, and I burn a, in love, in love,
+and in love a.  Ah, Strumbo, what hast thou seen? not
+Dina with the Ass Tom?  Yea, with these eyes thou hast
+seen her, and therefore pull them out, for they will work
+thy bale.  Ah, Strumbo, hast thou heard? not the voice
+of the Nightingale, but a voice sweeter than hers.  Yea,
+with these ears hast thou heard it, and therefore cut them
+off, for they have caused thy sorrow.  Nay, Strumbo, kill
+thy self, drown thy self, hang thy self, starve thy self.  Oh,
+but then I shall leave my sweet heart.  Oh my heart!  Now,
+pate, for thy master!  I will dite an eloquent love-pistle to
+her, and then she hearing the grand verbosity of my
+scripture, will love me presently.
+
+[Let him write a little and then read.]
+
+My pen is naught; gentlemen, lend me a knife.  I think
+the more haste the worst speed.
+
+[Then write again, and after read.]
+
+So it is, mistress Dorothy, and the sole essence of my 
+soul, that the little sparkles of affection kindled in me 
+towards your sweet self hath now increased to a great 
+flame, and will ere it be long consume my poor heart,
+except you, with the pleasant water of your secret
+fountain, quench the furious heat of the same.  Alas, I
+am a gentleman of good fame and name, majestical, in
+parrel comely, in gate portly.  Let not therefore your
+gentle heart be so hard as to despise a proper tall, young
+man of a handsome life, and by despising him, not only,
+but also to kill him.  Thus expecting time and tide, I bid
+you farewell.  Your servant, Signior Strumbo.
+
+Oh wit!  Oh pate!  O memory!  O hand!  O ink!  O paper!
+Well, now I will send it away.  Trompart, Trompart! what a 
+villain is this?  Why, sirra, come when your master calls
+you.  Trompart!
+
+[Trompart, entering, saith:]
+
+TROMPART.
+Anon, sir.
+
+STRUMBO.
+Thou knowest, my pretty boy, what a good mast I have been
+to thee ever since I took thee into my service.
+
+TROMPART.
+Aye, sir.
+
+STRUMBO.
+And how I have cherished thee always, as if you had been 
+the fruit of my loins, flesh of my flesh, and bone of my bone.
+
+TROMPART.
+Aye, sir.
+
+STRUMBO.
+Then show thy self herein a trusty servant, and carry this
+letter to mistress Dorothy, and tell her--
+
+[Speaking in his ear.  Exit Trompart.]
+
+Nay, masters, you shall see a marriage by and by.  But here
+she comes.  Now must I frame my amorous passions.
+
+[Enter Dorothy and Trompart.]
+
+DOROTHY.
+Signior Strumbo, well met.  I received your letters by your
+man here, who told me a pitiful story of your anguish, and
+so understanding your passions were so great, I came
+hither speedily.
+
+STRUMBO.
+Oh my sweet and pigsney, the fecundity of my ingenie is
+not so great, that may declare unto you the sorrowful sobs
+and broken sleeps, that I suffered for your sake; and 
+therefore I desire you to receive me into your familiarity.
+
+     For your love doth lie,
+     As near and as nigh
+     Unto my heart within,
+     As mine eye to my nose,
+     My leg unto my hose,
+     And my flesh unto my skin.
+
+DOROTHY.
+Truly, Master Strumbo, you speak too learnedly for me
+to understand the drift of your mind, and therefore tell
+your tale in plain terms, and leave off your dark riddles.
+
+STRUMBO.
+Alas, mistress Dorothy, this is my luck, that when I most
+would, I cannot be understood; so that my great learning
+is an inconvenience unto me.  But to speak in plain terms,
+I love you, mistress Dorothy, if you like to accept me into
+your familiarity.
+
+DOROTHY.
+If this be all, I am content.
+
+STRUMBO.
+Sayest thou so, sweet wench; let me lick thy toes.  Farewell,
+mistress.
+
+[Turning to the people.]
+
+If any of you be in love, provide ye a capcase full of new
+coined words, and then shall you soon have the succado
+de labres, and something else.
+
+[Exeunt.]
+
+
+ACT I.  SCENE 3.  An apartment in the palace.
+
+[Enter Locrine, Gwendoline, Camber, Albanact, Corineius,
+Assarachus, Debon, Thrasimachus.]
+
+LOCRINE.
+Uncle, and princes of brave Britany,
+Since that our noble father is entombed,
+As best beseemed so brave a prince as he,
+If so you please, this day my love and I,
+Within the temple of Concordia,
+Will solemnize our royal marriage.
+
+THRASIMACHUS.
+Right noble Lord, your subjects every one,
+Must needs obey your highness at command;
+Especially in such a cause as this,
+That much concerns your highness great content.
+
+LOCRINE.
+Then frolic, lordings, to fair Concord's walls,
+Where we will pass the day in knightly sports,
+The night in dancing and in figured masks,
+And offer to God Risus all our sports
+
+[Exeunt.]
+
+
+ACT II.  PROLOGUE.
+
+[Enter Ate as before.  After a little lightning and
+thundering, let there come forth this show:--Perseus
+and Andromeda, hand in hand, and Cepheus also, 
+with swords and targets.  Then let there come out of an
+other door, Phineus, all black in armour, with Aethiopians 
+after him, driving in Perseus, and having taken away
+Andromeda, let them depart, Ate remaining, saying:]
+
+ATE.
+Regit omnia numen.
+When Perseus married fair Andromeda,
+The only daughter of king Cepheus,
+He thought he had established well his Crown,
+And that his kingdom should for aie endure.
+But, lo, proud Phineus with a band of men,
+Contrived of sun-burnt Aethiopians,
+By force of arms the bride he took from him,
+And turned their joy into a flood of tears.
+So fares it with young Locrine and his love,
+He thinks this marriage tendeth to his weal;
+But this foul day, this foul accursed day,
+Is the beginning of his miseries.
+Behold where Humber and his Scithians
+Approacheth nigh with all his warlike train.
+I need not, I, the sequel shall declare,
+What tragic chances fall out in this war.
+
+
+ACT II.  SCENE I. 
+
+[Enter Humber, Hubba, Estrild, Segar, and their
+soldiers.]
+
+HUMBER.
+At length the snail doth clime the highest tops,
+Ascending up the stately castle walls;
+At length the water with continual drops,
+Doth penetrate the hardest marble stone;
+At length we are arrived in Albion.
+Nor could the barbarous Dacian sovereign,
+Nor yet the ruler of brave Belgia,
+Stay us from cutting over to this Isle,
+Whereas I hear a troop of Phrigians
+Under the conduct of Postumius' son,
+Have pitched up lordly pavilions,
+And hope to prosper in this lovely Isle.
+But I will frustrate all their foolish hope,
+And teach them that the Scithian Emperour
+Leads fortune tied in a chain of gold,
+Constraining her to yield unto his will,
+And grace him with their regal diadem,
+Which I will have mauger their treble hosts,
+And all the power their petty kings can make.
+
+HUBBA.
+If she that rules fair Rhamnis' golden gate
+Grant us the honour of the victory,
+As hitherto she always favoured us,
+Right noble father, we will rule the land,
+Enthronized in seats of Topaz stones,
+That Locrine and his brethren all may know,
+None must be king but Humber and his son.
+
+HUMBER.
+Courage, my son, fortune shall favour us,
+And yield to us the coronet of bay,
+That decked none but noble conquerours.
+But what saith Estrild to these regions?
+How liketh she the temperature thereof?
+Are they not pleasant in her gracious eyes?
+
+ESTRILD.
+The plains, my Lord, garnished with Flora's wealth,
+And overspread with party colored flowers,
+Do yield sweet contentation to my mind.
+The airy hills enclosed with shady groves,
+The groves replenished with sweet chirping birds,
+The birds resounding heavenly melody,
+Are equal to the groves of Thessaly,
+Where Phoebus with the learned Ladies nine,
+Delight themselves with music harmony,
+And from the moisture of the mountain tops,
+The silent springs dance down with murmuring streams,
+And water all the ground with crystal waves.
+The gentle blasts of Eurus, modest wind,
+Moving the pittering leaves of Silvan's woods,
+Do equal it with Temp's paradise;
+And thus consorted all to one effect,
+Do make me think these are the happy Isles,
+Most fortunate, if Humber may them win.
+
+HUBBA.
+Madam, where resolution leads the way,
+And courage follows with imboldened pace,
+Fortune can never use her tyranny;
+For valiantness is like unto a rock
+That standeth in the waves of Ocean,
+Which though the billows beat on ever side,
+And Boreas fell with his tempestuous storms
+Bloweth upon it with a hideous clamour,
+Yet it remaineth still unmoveable.
+
+HUMBER.
+Kingly resolved, thou glory of thy sire.
+But, worthy Segar, what uncouth novelties
+Bringst thou unto our royal majesty?
+
+SEGAR.
+My Lord, the youngest of all Brutus' sons,
+Stout Albanact, with millions of men,
+Approacheth nigh, and meaneth, ere the morn,
+To try your force by dint of fatal sword.
+
+HUMBER.
+Tut, let him come with millions of hosts;
+He shall find entertainment good enough.
+Yea, fit for those that are our enemies:
+For we'll receive them at the lance's points,
+And massacre their bodies with our blades:
+Yea, though they were in number infinite,
+More than the mighty Babylonian queen,
+Semiramis the ruler of the West,
+Brought gainst the Emperour of the Scithians;
+Yet would we not start back one foot from them:
+That they might know we are invincible.
+
+HUBBA.
+Now, by great Jove, the supreme king of heaven,
+And the immortal gods that live therein,
+When as the morning shows his cheerful face,
+And Lucifer, mounted upon his steed,
+Brings in the chariot of the golden sun,
+I'll meet young Albanact in the open field,
+And crack my lance upon his burganet,
+To try the valour of his boyish strength.
+There will I show such ruthful spectacles
+And cause so great effusion of blood,
+That all his boys shall wonder at my strength:
+As when the warlike queen of Amazon,
+Penthisilea, armed with her lance,
+Girt with a corslet of bright shining steel,
+Couped up the faintheart Graecians in the camp.
+
+HUMBER.
+Spoke like a warlike knight, my noble son;
+Nay, like a prince that seeks his father's joy.
+Therefore, tomorrow, ere fair Titan shine,
+And bashful Eos, messenger of light,
+Expels the liquid sleep from out men's eyes,
+Thou shalt conduct the right wing of the host;
+The left wing shall be under Segar's charge,
+The rearward shall be under me my self.
+And lovely Estrild, fair and gracious,
+If fortune favour me in mine attempts,
+And make the Queen of lovely Albion,
+Come, let us in and muster up our train,
+And furnish up our lusty soldiers,
+That they may be a bulwark to our state,
+And bring our wished joys to perfect end.
+
+
+ACT II.  SCENE II.
+
+
+[Enter Strumbo, Dorothy, Trompart, cobbling
+shoes and singing.  To them enter Captain.]
+
+TROMPART.
+We Cobblers lead a merry life:
+
+ALL.
+Dan, dan, dan, dan:
+
+STRUMBO.
+Void of all ennui and strife:
+
+ALL.
+Dan diddle dan.
+
+DOROTHY.
+Our ease is great, our labour small:
+
+ALL.
+Dan, dan, dan, dan.
+
+STRUMBO.
+And yet our gains be much withall:
+
+ALL.
+Dan diddle dan.
+
+DOROTHY.
+With this art so fine and fair:
+
+ALL.
+Dan, dan, dan, dan.
+
+TROMPART.
+No occupation may compare:
+
+ALL.
+Dan diddle dan.
+
+DOROTHY.
+For merry pastime and joyful glee:
+
+ALL.
+Dan, dan, dan, dan.
+
+STRUMBO.
+Most happy men we Cobblers be:
+
+ALL.
+Dan diddle dan.
+
+TROMPART.
+The can stands full of nappy ale:
+
+ALL.
+Dan, dan, dan, dan.
+
+STRUMBO.
+In our shop still withouten fail:
+
+ALL.
+Dan diddle dan.
+
+DOROTHY.
+This is our meat, this is our food:
+
+ALL.
+Dan, dan, dan, dan.
+
+TROMPART.
+This brings us to a merry mood:
+
+ALL.
+Dan diddle dan.
+
+STRUMBO.
+This makes us work for company:
+
+ALL.
+Dan, dan, dan, dan.
+
+DOROTHY.
+To pull the tankards cheerfully:
+
+ALL.
+Dan diddle dan.
+
+TROMPART.
+Drink to thy husband, Dorothy,
+
+ALL.
+Dan, dan, dan, dan.
+
+DOROTHY.
+Why, then, my Strumbo, there's to thee:
+
+ALL.
+Dan diddle dan.
+
+STRUMBO.
+Drink thou the rest, Trompart, amain:
+
+ALL.
+Dan, dan, dan, dan.
+
+DOROTHY.
+When that is gone, we'll fill't again:
+
+ALL.
+Dan diddle dan.
+
+CAPTAIN.
+The poorest state is farthest from annoy.
+How merrily he sitteth on his stool!
+But when he sees that needs he must be pressed,
+He'll turn his note and sing another tune.
+Ho, by your leave, master Cobbler.
+
+STRUMBO.
+You are welcome, gentleman.  What will you? any
+old shoes or buskins? or will you have your shoes
+clouted?  I will do them as well as any Cobbler in
+Cathnes whatsoever.
+
+CAPTAIN.
+
+[Showing him press money.]
+
+O master Cobbler, you are far deceived in me, for don
+you see this?  I come not to buy any shoes, but to buy
+your self; come, sir, you must be a soldier in the king's
+cause.
+
+STRUMBO.
+Why, but hear you, sir; has your king any commission to
+take any man against his will.  I promise you, I can scant
+believe it; or did he give you commission?
+
+
+CAPTAIN.
+O sir, ye need not care for that; I need no commission.
+Hold, here:  I command you, in the name of our king
+Albanact, to appear tomorrow in the town-house of
+Cathnes.
+
+STRUMBO.
+King Nactaball!  I cry God mercy! what have we to do
+with him, or he with us?  But you, sir master capontail,
+draw your pasteboard, or else I promise you, I'll give
+you a canuasado with a bastinado over your shoulders,
+and teach you to come hither with your implements.
+
+CAPTAIN.
+I pray thee, good fellow, be content; I do the king's
+command.
+
+STRUMBO.
+Put me out of your book, then.
+
+CAPTAIN.
+I may not.
+
+STRUMBO.
+
+[Snatching up the staff.]
+
+No!  Well, come, sir, will your stomach serve you? by
+gog's blue hood and halidom, I will have a bout with you.
+
+[Fight both.  Enter Thrasimachus.]
+
+THRASIMACHUS.
+How now, what noise, what sudden clamor's this?
+How now, my captain and the cobbler so hard at it?
+Sirs, what is your quarrel?
+
+CAPTAIN.
+Nothing, sir, but that he will not take press money.
+
+THRASIMACHUS.
+Here, good fellow; take it at my command,
+Unless you mean to be stretched.
+
+STRUMBO.
+Truly, master gentleman, I lack no money; if you
+please, I will resign it to one of these poor fellows.
+
+THRASIMACHUS.
+No such matter,
+Look you be at the common house tomorrow.
+
+[Exit Thrasimachus and the captain.]
+
+STRUMBO.
+O, wife, I have spun a fair thread!  If I had been 
+quiet, I had not been pressed, and therefore well may
+I wayment.  But come, sirrah, shut up, for we must to
+the wars.
+
+[Exeunt.]
+
+
+ACT II.  SCENE III.  The camp of Albanact.
+
+[Enter Albanact, Debon, Thrasimachus, and the Lords.]
+
+ALBA.
+Brave cavalries, princes of Albany,
+Whose trenchant blades with our deceased sire,
+Passing the frontiers of brave Graecia,
+Were bathed in our enemies' lukewarm blood,
+Now is the time to manifest your wills,
+Your haughty minds and resolutions.
+Now opportunity is offered
+To try your courage and your earnest zeal,
+Which you always protest to Albanact;
+For at this time, yea, at this present time,
+Stout fugitives, come from the Scithians' bounds,
+Have pestered every place with mutinies.
+But trust me, Lordings, I will never cease
+To persecute the rascal runnagates,
+Till all the rivers, stained with their blood,
+Shall fully show their fatal overthrow.
+
+DEBON.
+So shall your highness merit great renown,
+And imitate your aged father's steps.
+
+ALBA.
+But tell me, cousin, camest thou through the plains?
+And sawest thou there the fain heart fugitives
+Mustering their weather-beaten soldiers?
+What order keep they in their marshalling?
+
+THRASIMACHUS.
+After we passed the groves of Caledone,
+Where murmuring rivers slide with silent streams,
+We did behold the straggling Scithians' camp,
+Replete with men, stored with munition;
+There might we see the valiant minded knights
+Fetching careers along the spacious plains.
+Humber and Hubba armed in azure blue,
+Mounted upon their coursers white as snow,
+Went to behold the pleasant flowering fields;
+Hector and Troialus, Priamus lovely sons,
+Chasing the Graecians over Simoeis,
+Were not to be compared to these two knights.
+
+ALBA.
+Well hast thou painted out in eloquence
+The portraiture of Humber and his son,
+As fortunate as was Policrates;
+Yet should they not escape our conquering swords,
+Or boast of ought but of our clemency.
+
+[Enter Strumbo and Trompart, crying often;
+Wild fire and pitch, wild fire and pitch, &c.]
+
+THRASIMACHUS.
+What, sirs! what mean you by these clamors made,
+These outcries raised in our stately court?
+
+STRUMBO.
+Wild fire and pitch, wild fire and pitch.
+
+THRASIMACHUS.
+Villains, I say, tell us the cause hereof?
+
+STRUMBO.
+Wild fire and pitch, &c.
+
+THRASIMACHUS.
+Tell me, you villains, why you make this noise,
+Or with my lance I will prick your bowels out.
+
+ALBA.
+Where are your houses, where's your dwelling place?
+
+STRUMBO.
+Place?  Ha, ha, ha! laugh a month and a day at him.
+Place!  I cry God mercy: why, do you think that such
+poor honest men as we be, hold our habitacles in kings'
+palaces?  Ha, ha, ha!  But because you seem to be an
+abominable chieftain, I will tell you our state.
+
+     From the top to the toe,
+     From the head to the shoe;
+     From the beginning to the ending,
+     From the building to the burning.
+
+This honest fellow and I had our mansion cottage in the
+suburbs of this city, hard by the temple of Mercury.  And
+by the common soldiers of the Shitens, the Scithians--
+what do you call them?--with all the suburbs were burnt
+to the ground, and the ashes are left there, for the country
+wives to wash bucks withall.
+
+     And that which grieves me most,
+          My loving wife,
+          (O cruel strife!)
+     The wicked flames did roast.
+     And therefore, captain crust,
+     We will continually cry,
+     Except you seek a remedy
+     Our houses to reedify
+     Which now are burnt to dust.
+
+BOTH CRY.
+Wild fire and pitch, wild fire and pitch.
+
+ALBA.
+Well, we must remedy these outrages,
+And throw revenge upon their hateful heads.
+And you, good fellows, for your houses burnst,
+We will remunerate you store of gold,
+And build your houses by our palace gate.
+
+STRUMBO.
+Gate!  O petty treason to my person! nowhere 
+else but by your backside?  Gate!  Oh how I am
+vexed in my collar!  Gate!  I cry God mercy!  Do
+you hear, master king?  If you mean to gratify such
+poor men as we be, you must build our houses by
+the Tavern.
+
+ALBA.
+It shall be done, sir.
+
+STRUMBO.
+Near the Tavern, aye! by lady, sir, it was spoken like
+a good fellow.  Do you hear, sir? when our house is
+builded, if you do chance to pass or repass that way,
+we will bestow a quart of the best wine upon you.
+
+[Exit.]
+
+ALBA.
+It grieves me, lordings, that my subjects' goods
+Should thus be spoiled by the Scithians,
+Who, as you see, with lightfoot foragers
+Depopulate the places where they come.
+But cursed Humber thou shalt rue the day
+That ere thou camest unto Cathnesia.
+
+[Exeunt.]
+
+
+ACT II. SCENE IV.  The camp of Humber.
+
+[Enter Humber, Hubba, Trussier, and their soldiers.]
+
+HUMBER.
+Hubba, go take a coronet of our horse,
+As many lancers, and light armed knights
+As may suffice for such an enterprise,
+And place them in the grove of Caledon.
+With these, when as the skirmish doth increase,
+Retire thou from the shelters of the wood,
+And set upon the weakened Troyans' backs,
+For policy joined with chivalry
+Can never be put back from victory.
+
+[Exit.  Albanact enter and say (clowns with him).]
+
+ALBA.
+Thou base born Hun, how durst thou be so bold
+As once to menace warlike Albanact,
+The great commander of these regions?
+But thou shalt buy thy rashness with thy death,
+And rue too late thy over bold attempts;
+For with this sword, this instrument of death,
+That hath been drenched in my foe-men's blood,
+I'll separate thy body from they head,
+And set that coward blood of thine abroach.
+
+STRUMBO.
+Nay, with this staff, great Strumbo's instrument,
+I'll crack thy cockscomb, paltry Scithian.
+
+HUMBER.
+Nor wreak I of thy threat, thou princox boy,
+Nor do I fear thy foolish insolency;
+And but thou better use thy bragging blade,
+Then thou doest rule thy overflowing tongue,
+Superbious Brittain, thou shalt know too soon
+The force of Humber and his Scithians.
+
+[Let them fight.  Humber and his soldiers run in.]
+
+STRUMBO.
+O horrible, terrible.
+
+[Exit.]
+
+
+ACT II.  SCENE V.  Another part of the field of
+battle.
+
+[Sound the alarm.  Enter Humber and his soldiers.]
+
+HUMBER.
+How bravely this young Brittain, Albanact,
+Darteth abroad the thunderbolts of war,
+Beating down millions with his furious mood,
+And in his glory triumphs over all,
+Moving the mass squadrants of the ground;
+Heaps hills on hills, to scale the starry sky,
+As when Briareus, armed with an hundreth hands,
+Flung forth an hundreth mountains at great Jove,
+And when the monstrous giant Monichus
+Hurled mount Olympus at great Mars his target,
+And shot huge caedars at Minerva's shield.
+How doth he overlook with haughty front
+My fleeting hosts, and lifts his lofty face
+Against us all that now do fear his force,
+Like as we see the wrathful sea from far,
+In a great mountain heaped, with hideous noise,
+With thousand billows beat against the ships,
+And toss them in the waves like tennis balls.
+
+[Sound the alarm.]
+
+Aye me, I fear my Hubba is surprised.
+
+[Sound again.  Enter Albanact.]
+
+ALBA.
+Follow me, soldiers, follow Albanact;
+Pursue the Scithians flying through the field:
+Let none of them escape with victory;
+That they may know the Brittains' force is more
+Than all the power of the trembling Huns.
+
+THRASIMACHUS.
+Forward, brave soldiers, forward! keep the chase.
+He that takes captive Humber or his son
+Shall be rewarded with a crown of gold.
+
+[Sound alarm, then let them fight, Humber give 
+back, Hubba enter at their backs, and kill Debon, 
+let Strumbo fall down, Albanact run in, and
+afterwards enter wounded.]
+
+ALBA.
+Injurious fortune, hast thou crossed me thus?
+Thus, in the morning of my victories,
+Thus, in the prime of my felicity,
+To cut me off by such hard overthrow!
+Hadst thou no time thy rancor to declare,
+But in the spring of all my dignities?
+Hadst thou no place to spit thy venom out,
+But on the person of young Albanact?
+I, that ere while did scare mine enemies,
+And drove them almost to a shameful flight,
+I, that ere while full lion-like did fare
+Amongst the dangers of the thick thronged pikes,
+Must now depart most lamentably slain
+By Humber's treacheries and fortune's spites.
+Cursed be her charms, damned be her cursed charms
+That doth delude the wayward hearts of men,
+Of men that trust unto her fickle wheel,
+Which never leaveth turning upside down.
+O gods, O heavens, allot me but the place
+Where I may find her hateful mansion!
+I'll pass the Alps to watery Meroe,
+Where fiery Phoebus in his chariot,
+The wheels whereof are decked with Emeralds,
+Casts such a heat, yea such a scorching heat,
+And spoileth Flora of her checquered grass;
+I'll overrun the mountain Caucasus,
+Where fell Chimaera in her triple shape
+Rolleth hot flames from out her monstrous paunch,
+Searing the beasts with issue of her gorge;
+I'll pass the frozen Zone where icy flakes,
+Stopping the passage of the fleeting ships,
+Do lie like mountains in the congealed sea:
+Where if I find that hateful house of hers,
+I'll pull the pickle wheel from out her hands,
+And tie her self in everlasting bands.
+But all in vain I breath these threatenings;
+The day is lost, the Huns are conquerors,
+Debon is slain, my men are done to death,
+The currents swift swim violently with blood
+And last, O that this last night so long last,
+My self with wounds past all recovery
+Must leave my crown for Humber to possess.
+
+STRUMBO.
+Lord have mercy upon us, masters, I think this
+is a holy day; every man lies sleeping in the fields,
+but, God knows, full sore against their wills.
+
+THRASIMACHUS.
+Fly, noble Albanact, and save thy self.
+The Scithians follow with great celerity,
+And there's no way but flight, or speedy death;
+Fly, noble Albanact, and save thy self.
+
+[Exit Thrasimachus.  Sound the alarm.]
+
+ALBA.
+Nay, let them fly that fear to die the death,
+That tremble at the name of fatal mors.
+Never shall proud Humber boast or brag himself
+That he hath put young Albanact to flight;
+And least he should triumph at my decay,
+This sword shall reave his master of his life,
+That oft hath saved his master's doubtful life:
+But, oh, my brethren, if you care for me,
+Revenge my death upon his traitorous head.
+
+     Et vos queis domus est nigrantis regia ditis,
+     Qui regitis rigido stigios moderamine lucos:
+     Nox coeci regina poli, furialis Erinnis,
+     Diique deaeque omnes, Albanum tollite regem,
+     Tollite flumineis undis rigidaque palude.
+     Nune me fata vocant, loc condam pectore ferrum.
+
+[Thrusts himself through.  Enter Trompart.]
+
+TROMPART.
+O, what hath he done? his nose bleeds.
+But, oh, I smell a fox:
+Look where my master lies.  Master, master.
+
+STRUMBO.
+Let me alone, I tell thee, for I am dead.
+
+TROMPART.
+Yet one word, good master.
+
+STRUMBO.
+I will not speak, for I am dead, I tell thee.
+
+TROMPART.
+And is my master dead?
+O sticks and stones, brickbats and bones,
+     and is my master dead?
+O you cockatrices and you bablatrices,
+     that in the woods dwell:
+You briers and brambles, you cook's shops
+     and shambles,
+     come howl and yell.
+With howling & screeking, with wailing and
+     weeping,
+     come you to lament,
+O Colliers of Croyden, and rustics of Royden, 
+     and fishers of Kent;
+For Strumbo the cobbler, the fine merry cobbler
+     of Cathnes town:
+At this same stour, at this very hour,
+     lies dead on the ground.
+O master, thieves, thieves, thieves.
+
+STRUMBO.
+Where be they? cox me tunny, bobekin! let me
+be rising.  Be gone; we shall be robbed by and by.
+
+[Exeunt.]
+
+
+ACT II.  SCENE VI.  The camp of the Huns.
+
+[Enter Humber, Hubba, Segar, Thrassier, Estrild,
+and the soldiers.]
+
+HUMBER.
+Thus from the dreadful shocks of furious Mars,
+Thundering alarms, and Rhamnusias' drum,
+We are retired with joyful victory.
+The slaughtered Troyans, squeltring in their blood,
+Infect the air with their carcasses,
+And are a prey for every ravenous bird.
+
+ESTRILD.
+So perish they that are our enemies!
+So perish they that love not Humber's weal,
+And mighty Jove, commander of the world,
+Protect my love from all false treacheries.
+
+HUMBER.
+Thanks, lovely Estrild, solace to my soul.
+But, valiant Hubba, for thy chivalry,
+Declared against the men of Albany,
+Lo, here a flowering garland wreathed of bay,
+As a reward for thy forward mind.
+
+[Set it on his head.]
+
+HUBBA.
+This unexpected honor, noble sire,
+Will prick my courage unto braver deeds,
+And cause me to attempt such hard exploits,
+That all the world shall sound of Hubba's name.
+
+HUMBER.
+And now, brave soldiers, for this good success,
+Carouse whole cups of Amazonian wine,
+Sweeter than nectar or Ambrosia,
+And cast away the clods of cursed care,
+With goblets crowned with Semeleius' gifts.
+Now let us march to Abis' silver streams,
+That clearly glide along the Champaign fields,
+And moist the grassy meads with humid drops.
+Sound drums & trumpets, sound up cheerfully,
+Sith we return with joy and victory.
+
+[Exeunt.]
+
+
+ACT III.  PROLOGUE.
+
+[Enter Ate as before.  The dumb show.  A Crocodile
+sitting on a river's rank, and a little Snake stinging it.
+Then let both of them fall into the water.]
+
+ATE.
+Scelera in authorem cadunt.
+High on a bank by Nilus' boistrous streams,
+Fearfully sat the Aegiptian Crocodile,
+Dreadfully grinding in her sharp long teeth
+The broken bowels of a silly fish.
+His back was armed against the dint of spear,
+With shields of brass that shined like burnished gold;
+And as he stretched forth his cruel paws,
+A subtle Adder, creeping closely near,
+Thrusting his forked sting into his claws,
+Privily shed his poison through his bones;
+Which made him swell, that there his bowels burst,
+That did so much in his own greatness trust.
+So Humber, having conquered Albanact,
+Doth yield his glory unto Locrine's sword.
+Mark what ensues and you may easily see,
+That all our life is but a Tragedy.
+
+
+ACT III. SCENE I.  Troynouant.  An apartment in
+the Royal Palace.
+
+[Enter Locrine, Gwendoline, Corineius, Assaracus,
+Thrasimachus, Camber.]
+
+LOCRINE.
+And is this true?  Is Albanactus slain?
+Hath cursed Humber, with his straggling host,
+With that his army made of mungrel curs,
+Brought our redoubted brother to his end?
+O that I had the Thracian Orpheus' harp,
+For to awake out of the infernal shade
+Those ugly devils of black Erebus,
+That might torment the damned traitor's soul!
+O that I had Amphion's instrument,
+To quicken with his vital notes and tunes
+The flinty joints of every stony rock,
+By which the Scithians might be punished!
+For, by the lightening of almighty Jove,
+The Hun shall die, had he ten thousand lives:
+And would to God he had ten thousand lives,
+That I might with the arm-strong Hercules
+Crop off so vile an Hydra's hissing heads!
+But say me, cousin, for I long to hear,
+How Albanact came by untimely death.
+
+THRASIMACHUS.
+After the traitrous host of Scithians
+Entered the field with martial equipage,
+Young Albanact, impatient of delay,
+Led forth his army gainst the straggling mates,
+Whose multitude did daunt our soldiers' minds.
+Yet nothing could dismay the forward prince,
+But with a courage most heroical,
+Like to a lion mongst a flock of lambs,
+Made havoc of the faintheart fugitives,
+Hewing a passage through them with his sword.
+Yea, we had almost given them the repulse,
+When suddenly, from out the silent wood,
+Hubba, with twenty thousand soldiers,
+Cowardly came upon our weakened backs,
+And murthered all with fatal massacre.
+Amongst the which old Debon, martial knight,
+With many wounds was brought unto the death,
+And Albanact, oppressed with multitude,
+Whilst valiantly he felled his enemies,
+Yielded his life and honour to the dust.
+He being dead, the soldiers fled amain,
+And I alone escaped them by flight,
+To bring you tidings of these accidents.
+
+LOCRINE.
+Not aged Priam, King of stately Troy,
+Grand Emperor of barbarous Asia,
+When he beheld his noble minded sons
+Slain traitorously by all the Mermidons,
+Lamented more than I for Albanact.
+
+GWENDOLINE.
+Not Hecuba, the queen of Ilium
+When she beheld the town of Pergamus,
+Her palace, burnst with all devouring flames,
+Her fifty sons and daughters fresh of hue
+Murthered by wicked Pirrhus' bloody sword,
+Shed such sad tears as I for Albanact.
+
+CAMBER.
+The grief of Niobe, fair Athen's queen,
+For her seven sons, magnanimous in field,
+For her seven daughters, fairer than the fairest,
+Is not to be compared with my laments.
+
+CORINEIUS.
+In vain you sorrow for the slaughtered prince,
+In vain you sorrow for his overthrow;
+He loves not most that doth lament the most,
+But he that seeks to venge the injury.
+Think you to quell the enemy's warlike train
+With childish sobs and womanish laments?
+Unsheath your swords, unsheath your conquering swords,
+And seek revenge, the comfort for this sore.
+In Cornwall, where I hold my regiment,
+Even just ten thousand valiant men at arms
+Hath Corineius ready at command:
+All these and more, if need shall more require,
+Hath Corineius ready at command.
+
+CAMBER.
+And in the fields of martial Cambria,
+Close by the boistrous Iscan's silver streams,
+Where lightfoot fairies skip from bank to bank,
+Full twenty thousand brave courageous knights,
+Well exercised in feats of chivalry,
+In manly manner most invincible,
+Young Camber hath with gold and victual:
+All these and more, if need shall more require,
+I offer up to venge my brother's death.
+
+LOCRINE.
+Thanks, loving uncle, and good brother, too;
+For this revenge, for this sweet word, revenge
+Must ease and cease my wrongful injuries.
+And by the sword of bloody Mars, I swear,
+Ne'er shall sweet quiet enter this my front,
+Till I be venged on his traitorous head
+That slew my noble brother Albanact.
+Sound drums and trumpets; muster up the camp.
+For we will straight march to Albania.
+
+[Exeunt.]
+
+
+
+ACT III.  SCENE II.  The banks of the river,
+afterward the Humber.
+
+[Enter Humber, Estrild, Hubba, Trussier, and the
+soldiers.]
+
+HUMBER.
+Thus are we come, victorious conquerors,
+Unto the flowing current's silver streams,
+Which, in memorial of our victory,
+Shall be agnominated by our name,
+And talked of by our posterity:
+For sure I hope before the golden sun
+Posteth his horses to fair Thetis' plains,
+To see the water turned into blood,
+And change his bluish hue to rueful red,
+By reason of the fatal massacre
+Which shall be made upon the virent plains.
+
+[Enter the ghost of Albanact.]
+
+GHOST.
+See how the traitor doth presage his harm,
+See how he glories at his own decay,
+See how he triumphs at his proper loss;
+O fortune wild, unstable, fickle, frail!
+
+HUMBER.
+Me thinks I see both armies in the field:
+The broken lances climb the crystal skies;
+Some headless lie, some breathless on the ground,
+And every place is strewed with carcasses.
+Behold! the grass hath lost his pleasant green,
+The sweetest sight that ever might be see.
+
+GHOST.
+Aye, traitorous Humber, thou shalt find it so.
+Yea, to thy cost thou shalt the same behold,
+With anguish, sorrow, and with sad laments.
+The grassy plains, that now do please thine eyes,
+Shall ere the night be coloured all with blood;
+The shady groves which now inclose thy camp
+And yield sweet savours to thy damned corps,
+Shall ere the night be figured all with blood:
+The profound stream, that passeth by thy tents,
+And with his moisture serveth all thy camp,
+Shall ere the night converted be to blood,--
+Yea, with the blood of those thy straggling boys;
+For now revenge shall ease my lingering grief,
+And now revenge shall glut my longing soul.
+
+HUBBA.
+Let come what will, I mean to bear it out,
+And either live with glorious victory,
+Or die with fame renowned for chivalry.
+He is not worthy of the honey comb,
+That shuns the hives because the bees have stings:
+That likes me best that is not got with ease,
+Which thousand dangers do accompany;
+For nothing can dismay our regal mind,
+Which aims at nothing but a golden crown,
+The only upshot of mine enterprises.
+Were they enchanted in grim Pluto's court,
+And kept for treasure mongst his hellish crew,
+I would either quell the triple Cerberus
+And all the army of his hateful hags,
+Or roll the stone with wretched Sisiphos.
+
+HUMBER.
+Right martial be thy thoughts my noble son,
+And all thy words savour of chivalry.--
+
+[Enter Segar.]
+
+But warlike Segar, what strange accidents
+Makes you to leave the warding of the camp.
+
+SEGAR.
+To arms, my Lord, to honourable arms!
+Take helm and targe in hand; the Brittains come,
+With greater multitude than erst the Greeks
+Brought to the ports of Phrygian Tenidos.
+
+HUMBER.
+But what saith Segar to these accidents?
+What counsel gives he in extremities?
+
+SEGAR.
+Why this, my Lord, experience teacheth us:
+That resolution is a sole help at need.
+And this, my Lord, our honour teacheth us:
+That we be bold in every enterprise.
+Then since there is no way but fight or die,
+Be resolute, my Lord, for victory.
+
+HUMBER.
+And resolute, Segar, I mean to be.
+Perhaps some blissful star will favour us,
+And comfort bring to our perplexed state.
+Come, let us in and fortify our camp,
+So to withstand their strong invasion.
+
+[Exeunt.]
+
+
+ACT III.  SCENE III. Before the hut of a peasant.
+
+[Enter Strumbo, Trompart, Oliver, and his son
+William following them.]
+
+STRUMBO.
+Nay, neighbour Oliver, if you be so what, come,
+prepare your self.  You shall find two as stout
+fellows of us, as any in all the North.
+
+OLIVER.
+No, by my dorth, neighbor Strumbo.  Ich zee dat
+you are a man of small zideration, dat will zeek to
+injure your old vriends, one of your vamiliar guests; 
+and derefore, zeeing your pinion is to deal withouten
+reazon, ich and my zon William will take dat course,
+dat shall be fardest vrom reason.  How zay you, will
+you have my daughter or no?
+
+STRUMBO.
+A very hard question, neighbour, but I will solve it
+as I may.  What reason have you to demand it of me?
+
+WILLIAM.
+Marry, sir, what reason had you, when my sister was
+in the barn, to tumble her upon the hay, and to fish her 
+belly.
+
+STRUMBO.
+Mass, thou saist true.  Well, but would you have me
+marry her therefore?  No, I scorn her, and you.  Aye,
+I scorn you all.
+
+OLIVER.
+You will not have her then?
+
+STRUMBO.
+No, as I am a true gentleman.
+
+WILLIAM.
+Then will we school you, ere you and we part hence.
+
+[They fight.  Enter Margery and snatch the staff out
+of her brother's hand, as he is fighting.]
+
+STRUMBO.
+Aye, you come in pudding time, or else I had dressed them.
+
+MARGERY.
+You, master saucebox, lobcock, cockscomb, you slopsauce,
+lickfingers, will you not hear?
+
+STRUMBO.
+Who speak you to? me?
+
+MARGERY.
+Aye, sir, to you, John lackhonesty, little wit.  Is it you that
+will have none of me?
+
+STRUMBO.
+No, by my troth, mistress nicebice.  How fine you can
+nickname me.  I think you were brought up in the
+university of bridewell; you have your rhetoric so ready 
+at your tongue's end, as if you were never well warned
+when your were young.
+
+
+MARGERY.
+Why then, goodman cods-head, if you will have none
+of me, farewell.
+
+STRUMBO.
+If you be so plain, mistress drigle dragle, fare you well.
+
+MARGERY.
+Nay, master Strumbo, ere you go from hence, we must
+have more words.  You will have none of me?
+
+[They both fight.]
+
+STRUMBO.
+Oh my head, my head! leave, leave, leave!  I will, I will,
+I will!
+
+MARGERY.
+Upon that condition I let thee alone.
+
+OLIVER.
+How now, master Strumbo? hath my daughter taught you
+a new lesson?
+
+STRUMBO.
+Aye, but hear you, goodman Oliver; it will not be for my
+ease to have my head broken every day; therefore remedy
+this and we shall agree.
+
+OLIVER.
+Well, zon, well--for you are my zon now--all shall be
+remedied.  Daughter, be friends with him.
+
+[Shake hands.  Exeunt Oliver, William, and Margery.]
+
+STRUMBO.
+You are a sweet nut!  The devil crack you.  Masters, I
+think it be my luck; my first wife was a loving quiet
+wench, but this, I think, would weary the devil.  I would
+she might be burnt as my other wife was.  If not, I must
+run to the halter for help.  O codpiece, thou hast done thy
+master! this it is to be meddling with warm plackets.
+
+[Exeunt.]
+
+
+
+ACT III.  SCENE IV.  The camp of Locrine.
+
+[Enter Locrine, Camber, Corineius, Thrasimachus,
+Assarachus.]
+
+LOCRINE.
+Now am I guarded with an host of men,
+Whose haughty courage is invincible:
+Now am I hemmed with troops of soldiers,
+Such as might force Bellona to retire,
+And make her tremble at their puissance:
+Now sit I like the mighty god of war,
+When, armed with his coat of Adament,
+Mounted his chariot drawn with mighty bulls,
+He drove the Argives over Xanthus' streams:
+Now, cursed Humber, doth thy end draw nigh.
+Down goes the glory of thy victories,
+And all the fame, and all thy high renown
+Shall in a moment yield to Locrine's sword.
+Thy bragging banners crossed with argent streams,
+The ornaments of thy pavilions,
+Shall all be capituated with this hand,
+And thou thy self, at Albanactus' tomb,
+Shalt offered be in satisfaction
+Of all the wrongs thou didst him when he lived.--
+But canst thou tell me, brave Thrasimachus,
+How far we are distant from Humber's camp?
+
+THRASIMACHUS.
+My Lord, within yon foul accursed grove,
+That bears the tokens of our overthrow,
+This Humber hath intrenched his damned camp.
+March on, my Lord, because I long to see
+The treacherous Scithians squeltring in their gore.
+
+LOCRINE.
+Sweet fortune, favour Locrine with a smile,
+That I may venge my noble brother's death;
+And in the midst of stately Troinouant,
+I'll build a temple to thy deity
+Of perfect marble and of Iacinthe stones,
+That it shall pass the high Pyramids,
+Which with their top surmount the firmament.
+
+CAMBER.
+The armstrong offspring of the doubled night,
+Stout Hercules, Alemena's mighty son,
+That tamed the monsters of the threefold world,
+And rid the oppressed from the tyrant's yokes,
+Did never show such valiantness in fight,
+As I will now for noble Albanact.
+
+CORINEIUS.
+Full four score years hath Corineius lived,
+Sometime in war, sometime in quiet peace,
+And yet I feel my self to be as strong
+As erst I was in summer of mine age,
+Able to toss this great unwieldy club
+Which hath been painted with my foemen's brains;
+And with this club I'll break the strong array
+Of Humber and his straggling soldiers,
+Or lose my life amongst the thickest prease,
+And die with honour in my latest days.
+Yet ere I die they all shall understand
+What force lies in stout Corineius' hand.
+
+THRASIMACHUS.
+And if Thrasimachus detract the fight,
+Either for weakness or for cowardice,
+Let him not boast that Brutus was his eame,
+Or that brave Corineius was his sire.
+
+LOCRINE.
+Then courage, soldiers, first for your safety,
+Next for your peace, last for your victory.
+
+[Exeunt.]
+
+
+ACT III.  SCENE V.  The field of battle.
+
+[Sound the alarm.  Enter Hubba and Segar at
+one door, and Corineius at the other.]
+
+CORINEIUS.
+Art thou that Humber, prince of fugitives,
+That by thy treason slewst young Albanact?
+
+HUBBA.
+I am his son that slew young Albanact,
+And if thou take not heed, proud Phrigian,
+I'll send thy soul unto the Stigian lake,
+There to complain of Humber's injuries.
+
+CORINEIUS.
+You triumph, sir, before the victory,
+For Corineius is not so soon slain.
+But, cursed Scithians, you shall rue the day
+That ere you came into Albania.
+So perish thy that envy Brittain's wealth,
+So let them die with endless infamy;
+And he that seeks his sovereign's overthrow,
+Would this my club might aggravate his woe.
+
+[Strikes them both down with his club.]
+
+
+ACT III.  SCENE VI.  Another part of the field.
+
+[Enter Humber.]
+
+HUMBER.
+Where may I find some desert wilderness,
+Where I may breath out curse as I would,
+And scare the earth with my condemning voice;
+Where every echoes repercussion
+May help me to bewail mine overthrow,
+And aide me in my sorrowful laments?
+Where may I find some hollow uncoth rock,
+Where I may damn, condemn, and ban my fill
+The heavens, the hell, the earth, the air, the fire,
+And utter curses to the concave sky,
+Which may infect the airy regions,
+And light upon the Brittain Locrine's head?
+You ugly sprites that in Cocitus mourn,
+And gnash your teeth with dolorous laments:
+You fearful dogs that in black Laethe howl,
+And scare the ghosts with your wide open throats:
+You ugly ghosts that, flying from these dogs,
+Do plunge your selves in Puryflegiton:
+Come, all of you, and with your shriking notes
+Accompany the Brittains' conquering host.
+Come, fierce Erinnis, horrible with snakes;
+Come, ugly Furies, armed with your whips;
+You threefold judges of black Tartarus,
+And all the army of you hellish fiends,
+With new found torments rack proud Locrine's bones!
+O gods, and stars! damned be the gods & stars
+That did not drown me in fair Thetis' plains!
+Curst be the sea, that with outrageous waves,
+With surging billows did not rive my ships
+Against the rocks of high Cerannia,
+Or swallow me into her watery gulf!
+Would God we had arrived upon the shore
+Where Poliphemus and the Cyclops dwell,
+Or where the bloody Anthrophagie
+With greedy jaws devours the wandering wights!
+
+[Enter the ghost of Albanact.]
+
+But why comes Albanact's bloody ghost,
+To bring a corsive to our miseries?
+Is't not enough to suffer shameful flight,
+But we must be tormented now with ghosts,
+With apparitions fearful to behold?
+
+GHOST.
+Revenge! revenge for blood!
+
+HUMBER.
+So nought will satisfy your wandering ghost
+But dire revenge, nothing but Humber's fall,
+Because he conquered you in Albany.
+Now, by my soul, Humber would be condemned
+To Tantal's hunger or Ixion's wheel,
+Or to the vulture of Prometheus,
+Rather than that this murther were undone.
+When as I die I'll drag thy cursed ghost
+Through all the rivers of foul Erebus,
+Through burning sulphur of the Limbo-lake,
+To allay the burning fury of that heat
+That rageth in mine everlasting soul.
+
+GHOST.
+Vindicta, vindicta.
+
+[Exeunt.]
+
+
+ACT IV.  PROLOGUE.
+
+[Enter Ate as before.  Then let there follow
+Omphale, daughter to the king of Lydia, having
+a club in her hand, and a lion's skin on her back,
+Hercules following with a distaff.  Then let Omphale
+turn about, and taking off her pantole, strike Hercules
+on the head; then let them depart, Ate remaining,
+saying:]
+
+Quem non Argolici mandota severa Tyranni,
+Non potuit Juno vincere, vicit amor.
+
+Stout Hercules, the mirror of the world,
+Son to Alemena and great Jupiter,
+After so many conquests won in field,
+After so many monsters quelled by force,
+Yielded his valiant heart to Omphale,
+A fearful woman void of manly strength.
+She took the club, and wear the lion's skin;
+He took the wheel, and maidenly gan spin.
+So martial Locrine, cheered with victory,
+Falleth in love with Humber's concubine,
+And so forgetteth peerless Gwendoline.
+His uncle Corineius storms at this,
+And forceth Locrine for his grace to sue.
+Lo here the sum, the process doth ensue.
+
+[Exit.]
+
+
+ACT IV.  SCENE I.  The camp of Locrine.
+
+[Enter Locrine, Camber, Corineius, Assaracus,
+Thrasimachus, and the soldiers.]
+
+LOCRINE.
+Thus from the furty of Bellona's broils,
+With sound of drum and trumpets' melody,
+The Brittain king returns triumphantly.
+The Scithians slain with great occasion
+Do equalize the grass in multitude,
+And with their blood have stained the streaming brooks,
+Offering their bodies and their dearest blood
+As sacrifice to Albanactus' ghost.
+Now, cursed Humber, hast thou paid thy due,
+For thy deceits and crafty treacheries,
+For all thy guiles and damned strategems,
+With loss of life, and everduring shame.
+Where are thy horses trapped with burnished gold,
+Thy trampling coursers ruled with foaming bits?
+Where are thy soldiers, strong and numberless,
+Thy valiant captains and thy noble peers?
+Even as the country clowns with sharpest scythes
+Do mow the withered grass from off the earth,
+Or as the ploughman with his piercing share
+Renteth the bowels of the fertile fields,
+And rippeth up the roots with razours keen:
+So Locrine with his mighty curtleaxe
+Hath cropped off the heads of all thy Huns;
+So Locrine's peers have daunted all thy peers,
+And drove thin host unto confusion,
+That thou mayest suffer penance for thy fault,
+And die for murdering valiant Albanact.
+
+CORINEIUS.
+And thus, yea thus, shall all the rest be served
+That seek to enter Albion gainst our wills.
+If the brave nation of the Troglodites,
+If all the coalblack Aethiopians,
+If all the forces of the Amazons,
+If all the hosts of the Barbarian lands,
+Should dare to enter this our little world,
+Soon should they rue their overbold attempts,
+That after us our progeny may say,
+There lie the beasts that sought to usurp our land.
+
+LOCRINE.
+Aye, they are beasts that seek to usurp our land,
+And like to brutish beasts they shall be served.
+For mighty Jove, the supreme king of heaven,
+That guides the concourse of the Meteors,
+And rules the motion of the azure sky,
+Fights always for the Brittains' safety.--
+But stay! me thinks I hear some shriking noise,
+That draweth near to our pavilion.
+
+[Enter the soldiers leading in Estrild.]
+
+ESTRILD.
+What prince so ere, adorned with golden crown,
+Doth sway the regal scepter in his hand,
+And thinks no chance can ever throw him down,
+Or that his state shall everlasting stand:
+Let him behold poor Estrild in this plight,
+The perfect platform of a troubled wight.
+Once was I guarded with manortial bands,
+Compassed with princes of the noble blood;
+Now am I fallen into my foemen's hands,
+And with my death must pacific their mood.
+O life, the harbour of calamities!
+O death, the haven of all miseries!
+I could compare my sorrows to thy woe,
+Thou wretched queen of wretched Pergamus,
+But that thou viewdst thy enemies' overthrow.
+Night to the rock of high Caphareus,
+Thou sawest their death, and then departedst thence;
+I must abide the victor's insolence.
+The golds that pitied thy continual grief
+Transformed thy corps, and with thy corps thy care;
+Poor Estrild lives despairing of relief,
+For friends in trouble are but few and rare.
+What, said I few?  Aye! few or none at all,
+For cruel death made havoc of them all.
+Thrice happy they whose fortune was so good,
+To end their lives, and with their lives their woes!
+Thrice hapless I, whom fortune so withstood,
+That cruelly she gave me to my foes!
+Oh, soldiers, is there any misery,
+To be compared to fortune's treachery.
+
+LOCRINE.
+Camber, this same should be the Scithian queen.
+
+CAMBER.
+So may we judge by her lamenting words.
+
+LOCRINE.
+So fair a dame mine eyes did never see;
+With floods of woe she seems overwhelmed to be.
+
+CAMBER.
+O Locrine, hath she not a cause for to be sad?
+
+LOCRINE.
+
+[At one side of the stage.]
+
+If she have cause to weep for Humber's death,
+And shed salt tears for her overthrow,
+Locrine may well bewail his proper grief,
+Locrine may move his own peculiar woe.
+He, being conquered, died a speedy death,
+And felt not long his lamentable smart:
+I, being conqueror, live a lingering life,
+And feel the force of Cupid's sudden stroke.
+I gave him cause to die a speedy death,
+He left me cause to wish a speedy death.
+Oh that sweet face painted with nature's dye,
+Those roseall cheeks mixed with a snowy white,
+That decent neck surpassing ivory,
+Those comely breasts which Venus well might spite,
+Are like to snares which wily fowlers wrought,
+Wherein my yielding heart is prisoner caught.
+The golden tresses of her dainty hair,
+Which shine like rubies glittering with the sun,
+Have so entrapt poor Locrine's lovesick heart,
+That from the same no way it can be won.
+How true is that which oft I heard declared,
+One dram of joy, must have a pound of care.
+
+ESTRILD.
+Hard is their fall who, from a golden crown,
+Are cast into a sea of wretchedness.
+
+LOCRINE.
+Hard is their thrall who by Cupid's frown
+Are wrapt in waves of endless carefulness.
+
+ESTRILD.
+Oh kingdom, object to all miseries.
+
+LOCRINE.
+Oh love, the extremest of all extremities.
+
+[Let him go into his chair.]
+
+FIRST SOLDIER.
+My lord, in ransacking the Scithian tents,
+I found this Lady, and to manifest
+That earnest zeal I bear unto your grace,
+I here present her to your majesty.
+
+SECOND SOLDIER.
+He lies, my Lord; I found the Lady first,
+And here present her to your majesty.
+
+FIRST SOLDIER.
+Presumptuous villain, wilt thou take my prize?
+
+SECOND SOLDIER.
+Nay, rather thou deprivest me of my right.
+
+FIRST SOLDIER.
+Resign thy title, cative, unto me,
+Or with my sword I'll pierce thy coward's loins.
+
+SECOND SOLDIER.
+Soft words, good sir, tis not enough to speak;
+A barking dog doth seldom strangers bite.
+
+LOCRINE.
+Unreverent villains, strive you in our sight?
+Take them hence, Jailor, to the dungeon;
+There let them lie and try their quarrel out.
+But thou, fair princess, be no whit dismayed,
+But rather joy that Locrine favours thee.
+
+ESTRILD.
+How can he favor me that slew my spouse?
+
+LOCRINE.
+The chance of war, my love, took him from thee.
+
+ESTRILD.
+But Locrine was the causer of his death.
+
+LOCRINE.
+He was an enemy to Locrine's state,
+And slew my noble brother Albanact.
+
+ESTRILD.
+But he was linked to me in marriage bond,
+And would you have me love his slaughterer?
+
+LOCRINE.
+Better to live, than not to live at all.
+
+ESTRILD.
+Better to die renowned for chastity,
+Than live with shame and endless infamy.
+What would the common sort report of me,
+If I forget my love, and cleave to thee?
+
+LOCRINE.
+Kings need not fear the vulgar sentences.
+
+ESTRILD.
+But Ladies must regard their honest name.
+
+LOCRINE.
+Is it a shame to live in marriage bonds?
+
+ESTRILD.
+No, but to be a strumpet to a king.
+
+LOCRINE.
+If thou wilt yield to Locrine's burning love,
+Thou shalt be queen of fair Albania.
+
+ESTRILD.
+But Gwendoline will undermine my state.
+
+LOCRINE.
+Upon mine honor, thou shalt have no harm.
+
+ESTRILD.
+Then lo, brave Locrine, Estrild yields to thee;
+And by the gods, whom thou doest invocate,
+By the dead ghost of thy deceased sire,
+By thy right hand and by thy burning love,
+Take pity on poor Estrild's wretched thrall.
+
+CORINEIUS.
+Hath Locrine then forgot his Gwendoline,
+That thus he courts the Scithian's paramour?
+What, are the words of Brute so soon forgot?
+Are my deserts so quickly out of mind?
+Have I been faithful to thy sire now dead,
+Have I protected thee from Humber's hands,
+And doest thou quite me with ungratitude?
+Is this the guerdon for my grievous wounds,
+Is this the honour for my labor's past?
+Now, by my sword, Locrine, I swear to thee,
+This injury of thine shall be repaid.
+
+LOCRINE.
+Uncle, scorn you your royal sovereign,
+As if we stood for cyphers in the court?
+Upbraid you me with those your benefits?
+Why, it was a subject's duty so to do.
+What you have done for our deceased sire,
+We know, and all know you have your reward.
+
+CORINEIUS.
+Avaunt, proud princox; bravest thou me withall?
+Assure thy self, though thou be Emperor,
+Thou ne'er shalt carry this unpunished.
+
+CAMBER.
+Pardon my brother, noble Corineius;
+Pardon this once and it shall be amended.
+
+ASSARACHUS.
+Cousin, remember Brutus' latest words,
+How he desired you to cherish them;
+Let not this fault so much incense your mind,
+Which is not yet passed all remedy.
+
+CORINEIUS.
+Then, Locrine, lo, I reconcile my self;
+But as thou lovest thy life, so love thy wife.
+But if thou violate those promises,
+Blood and revenge shall light upon thy head.
+Come, let us back to stately Troinouant,
+Where all these matters shall be settled.
+
+LOCRINE.
+
+[To himself.]
+
+Millions of devils wait upon thy soul!
+Legions of spirits vex thy impious ghost!
+Ten thousand torments rack thy cursed bones!
+Let every thing that hath the use of breath
+Be instruments and workers of thy death!
+
+[Exeunt.]
+
+
+ACT IV.  SCENE II.  A forest.
+
+[Enter Humber alone, his hair hanging over his
+shoulders, his arms all bloody, and a dart in one
+hand.]
+
+HUMBER.
+What basilisk was hatched in this place,
+Where every thing consumed is to nought?
+What fearful Fury haunts these cursed groves,
+Where not a root is left for Humber's meat?
+Hath fell Alecto, with invenomed blasts,
+Breathed forth poison in these tender plains?
+Hath triple Cerberus, with contagious foam,
+Sowed Aconitum mongst these withered herbs?
+Hath dreadful Fames with her charming rods
+Brought barrenness on every fruitful tree?
+What, not a root, no fruit, no beast, no bird,
+To nourish Humber in this wilderness?
+What would you more, you fiends of Erebus?
+My very entrails burn for want of drink,
+My bowels cry, Humber, give us some meat.
+But wretched Humber can give you no meat;
+These foul accursed groves afford no meat,
+This fruitless soil, this ground, brings forth no meat.
+The gods, hard hearted gods, yield me no meat.
+Then how can Humber give you any meat?
+
+[Enter Strumbo with a pitchfork, and a scotch-cap,
+saying:]
+
+STRUMBO.
+How do you, masters, how do you? how have you
+scaped hanging this long time?  Yfaith, I have scaped
+many a scouring this year; but I thank God I have past
+them all with a good couragio, couragio, & my wife
+& I are in great love and charity now, I thank my
+manhood & my strength.  For I will tell you, masters:
+upon a certain day at night I came home, to say the
+very truth, with my stomach full of wine, and ran up
+into the chamber where my wife soberly sat rocking
+my little baby, leaning her back against the bed,
+singing lullaby.  Now, when she saw me come with
+my nose foremost, thinking that I had been drunk, as
+I was indeed, she snatched up a faggot stick in her
+hand, and came furiously marching towards me with
+a big face, as though she would have eaten me at a 
+bit; thundering out these words unto me:  Thou 
+drunken knave, where hast thou been so long?  I shall
+teach thee how to beknight me an other time; and so 
+she began to play knaves' trumps.  Now, although I
+trembled, fearing she would set her ten commandments
+in my face, I ran within her, and taking her lustily by 
+the middle, I carried her valiantly to the bed, and 
+flinging her upon it, flung my self upon her; and there
+I delighted her so with the sport I made, that ever after
+she would call me sweet husband, and so banished
+brawling for ever.  And to see the good will of the
+wench! she bought with her portion a yard of land, and
+by that I am now become one of the richest men in our
+parish.  Well, masters, what's a clock? is it now
+breakfast time; you shall see what meat I have here for
+my breakfast.
+
+[Let him sit down and pull out his vittails.]
+
+HUMBER.
+Was ever land so fruitless as this land?
+Was ever grove so graceless as this grove?
+Was ever soil so barren as this soil?
+Oh no: the land where hungry Fames dwelt
+May no wise equalize this cursed land;
+No, even the climate of the torrid zone
+Brings forth more fruit than this accursed grove.
+Ne'er came sweet Ceres, ne'er came Venus here;
+Triptolemus, the god of husbandmen,
+Ne'er sowed his seed in this foul wilderness.
+The hunger-bitten dogs of Acheron,
+Chased from the ninefold Puriflegiton,
+Have set their footsteps in this damned ground.
+The iron hearted Furies, armed with snakes,
+Scattered huge Hydras over all the plains,
+Which have consumed the grass, the herbs, the trees;
+Which have drunk up the flowing water springs.
+
+[Strumbo, hearing his voice, shall start up and put
+meat in his pocket, seeking to hide himself.]
+
+Thou great commander of the starry sky,
+That guidest the life of every mortal wight,
+From the inclosures of the fleeting clouds
+Fain down some food, or else I faint and die:
+Pour down some drink, or else I faint and die.
+O Jupiter, hast thou sent Mercury
+In clownish shape to minister some food?
+Some meat! some meat! some meat!
+
+STRUMBO.
+O, alas, sir, ye are deceived.  I am not Mercury;
+I am Strumbo.
+
+HUMBER.
+Give me some meat, villain; give me some meat,
+Or gainst this rock I'll dash thy cursed brains,
+And rent thy bowels with my bloody hands.
+Give me some meat, villain; give me some meat!
+
+STRUMBO.
+By the faith of my body, good fellow, I had rather
+give an whole oxe than that thou shouldst serve me
+in that sort.  Dash out my brains?  O horrible!
+terrible!  I think I have a quarry of stones in my 
+pocket.
+
+[Let him make as though he would give him some,
+and as he putteth out his hand, enter the ghost of
+Albanact, and strike him on the hand:  and so 
+Strumbo runs out, Humber following him.  Exit.]
+
+ALBANACT'S GHOST.
+Lo, here the gift of fell ambition,
+Of usurpation and of treachery!
+Lo, here the harms that wait upon all those
+That do intrude themselves in other's lands,
+Which are not under their dominion.
+
+[Exit.]
+
+
+ACT IV.  SCENE III.  A chamber in the Royal Palace.
+
+[Enter Locrine alone.]
+
+LOCRINE.
+Seven years hath aged Corineius lived,
+To Locrine's grief, and fair Estrild's woe,
+And seven years more he hopeth yet to live.
+Oh supreme Jove, annihilate this thought!
+Should he enjoy the air's fruition?
+Should he enjoy the benefit of life?
+Should he contemplate the radiant sun,
+That makes my life equal to dreadful death?
+Venus, convey this monster fro the earth,
+That disobeyeth thus thy sacred hests!
+Cupid, convey this monster to dark hell,
+That disanulls thy mother's sugared laws!
+Mars, with thy target all beset with flames,
+With murthering blade bereave him of his life,
+That hindreth Locrine in his sweetest joys!
+And yet, for all his diligent aspect,
+His wrathful eyes, piercing like Linces' eyes,
+Well have I overmatched his subtilty.
+Nigh Deurolitum, by the pleasant Lee,
+Where brackish Thamis slides with silver streams,
+Making a breach into the grassy downs,
+A curious arch, of costly marble fraught,
+Hath Locrine framed underneath the ground;
+The walls whereof, garnished with diamonds,
+With ophirs, rubies, glistering emeralds,
+And interlast with sun-bright carbuncles,
+Lighten the room with artificial day:
+And from the Lee with water-flowing pipes
+The moisture is derived into this arch,
+Where I have placed fair Estrild secretly.
+Thither eftsoons, accompanied with my page,
+I covertly visit my heart's desire,
+Without suspicion of the meanest eye;
+For love aboundeth still with policy:
+And thither still means Locrine to repair,
+Till Atropos cut off mine uncle's life.
+
+[Exit.]
+
+
+ACT IV.  SCENE IV.  The entrance of a cave,
+near which runs the river, afterward the Humber.]
+
+[Enter Humber alone, saying:]
+
+HUMBER.
+O vita misero longa, foelici brevis,
+Eheu! malorum fames extremum malum.
+
+Long have I lived in this desert cave,
+With eating haws and miserable roots,
+Devouring leaves and beastly excrements.
+Caves were my beds, and stones my pillow-bears,
+Fear was my sleep, and horror was my dream,
+For still me thought, at every boisterous blast,
+Now Locrine comes, now, Humber, thou must die:
+So that for fear and hunger, Humber's mind
+Can never rest, but always trembling stands,
+O, what Danubius now may quench my thirst?
+What Euphrates, what lightfoot Euripus,
+May now allay the fury of that heat,
+Which, raging in my entrails, eats me up?
+You ghastly devils of the ninefold Styx,
+You damned ghosts of joyless Acheron,
+You mournful souls, vexed in Abyss' vaults,
+You coalblack devils of Avernus' pond,
+Come, with your fleshhooks rent my famished arms,
+These arms that have sustained their master's life.
+Come, with your razors rip my bowels up,
+With your sharp fireforks crack my sterved bones:
+Use me as you will, so Humber may not live.
+Accursed gods, that rule the starry poles,
+Accursed Jove, king of the cursed gods,
+Cast down your lightning on poor Humber's head,
+That I may leave this deathlike life of mine!
+What, hear you not? and shall not Humber die?
+Nay, I will die, though all the gods say nay!
+And, gentle Aby, take my troubled corps,
+Take it and keep it from all mortal eyes,
+That none may say, when I have lost my breath,
+The very floods conspired gainst Humber's death.
+
+[Fling himself into the river.]
+
+[Enter the ghost of Albanact.]
+
+ALBANACT'S GHOST.
+En coedem sequitur coedes, in coede quiesco.
+Humber is dead! joy heavens! leap earth! dance trees!
+Now mayest thou reach thy apples, Tantalus,
+And with them feed thy hunger-bitten limbs!
+Now, Sisiphus, leave tumbling of thy rock,
+And rest thy restless bones upon the same!
+Unbind Ixion, cruel Rhadamanth,
+And lay proud Humber on the whirling wheel.
+Back will I post to hell mouth Taenarus,
+And pass Cocitus, to the Elysian fields,
+And tell my father Brutus of these news.
+
+[Exit.]
+
+
+
+ACT V.  PROLOGUE.
+
+[Enter Ate as before.  Jason, leading Creon's
+daughter.  Medea, following, hath a garland in
+her hand, and putting it on Creon's daughter's 
+head, setteth it on fire, and then, killing Jason 
+and her, departeth.]
+
+ATE.
+Non tam Tinacriis exaestuat Aetna cavernis,
+Laesae furtivo quam cor mulieris amore.
+
+Medea, seeing Jason leave her love,
+And choose the daughter of the Theban king,
+Went to her devilish charms to work revenge;
+And raising up the triple Hecate,
+With all the rout of the condemned fiends,
+Framed a garland by her magic skill,
+With which she wrought Jason and Creons.
+So Gwendoline, seeing her self misused,
+And Humber's paramour possess her place,
+Flies to the dukedom of Cornubia,
+And with her brother, stout Thrasimachus,
+Gathering a power of Cornish soldiers,
+Gives battle to her husband and his host,
+Nigh to the river of great Mertia.
+The chances of this dismal massacre
+That which insueth shortly will unfold.
+
+[Exit.]
+
+
+ACT V.  SCENE I.  A chamber in the Royal Palace.
+
+[Enter Locrine, Camber, Assarachus, Thrasimachus.]
+
+ASSARACHUS.
+But tell me, cousin, died my brother so?
+Now who is left to helpless Albion?
+That as a pillar might uphold our state,
+That might strike terror to our daring foes?
+Now who is left to hapless Brittain,
+That might defend her from the barbarous hands
+Of those that still desire her ruinous fall,
+And seek to work her downfall and decay?
+
+CAMBER.
+Aye, uncle, death is our common enemy,
+And none but death can match our matchless power:
+Witness the fall of Albioneus' crew,
+Witness the fall of Humber and his Huns.
+And this foul death hath now increased our woe,
+By taking Corineius from this life,
+And in his room leaving us worlds of care.
+
+THRASIMACHUS.
+But none may more bewail his mournful hearse,
+Than I that am the issue of his loins.
+Now foul befall that cursed Humber's throat,
+That was the causer of his lingering wound.
+
+LOCRINE.
+Tears cannot raise him from the dead again.
+But where's my Lady, mistress Gwendoline?
+
+THRASIMACHUS.
+In Cornwall, Locrine, is my sister now,
+Providing for my father's funeral.
+
+LOCRINE.
+And let her there provide her mourning weeds
+And mourn for ever her own widow-hood.
+Ne'er shall she come within our palace gate,
+To countercheck brave Locrine in his love.
+Go, boy, to Devrolitum, down the Lee,
+Unto the arch where lovely Estrild lies.
+Bring her and Sabren straight unto the court;
+She shall be queen in Gwendoline's room.
+Let others wail for Corineius' death;
+I mean not so to macerate my mind
+For him that barred me from my heart's desire.
+
+THRASIMACHUS.
+Hath Locrine, then, forsook his Gwendoline?
+Is Corineius' death so soon forgot?
+If there be gods in heaven, as sure there be,
+If there be fiends in hell, as needs there must,
+They will revenge this thy notorious wrong,
+And power their plagues upon thy cursed head.
+
+LOCRINE.
+What! prat'st thou, peasant, to thy sovereign?
+Or art thou strooken in some extasy?
+Doest thou not tremble at our royal looks?
+Dost thou not quake, when mighty Locrine frowns?
+Thou beardless boy, wer't not that Locrine scorns
+To vex his mind with such a heartless child,
+With the sharp point of this my battle-axe,
+I would send thy soul to Puriflegiton.
+
+THRASIMACHUS.
+Though I be young and of a tender age,
+Yet will I cope with Locrine when he dares.
+My noble father with his conquering sword,
+Slew the two giants, kings of Aquitaine.
+Thrasimachus is not so degenerate
+That he should fear and tremble at the looks
+Or taunting words of a venerian squire.
+
+LOCRINE.
+Menacest thou thy royal sovereign,
+Uncivil, not beseeming such as you?
+Injurious traitor (for he is no less
+That at defiance standeth with his king)
+Leave these thy taunts, leave these thy bragging words,
+Unless thou mean to leave thy wretched life.
+
+THRASIMACHUS.
+If princes stain their glorious dignity
+With ugly spots of monstrous infamy,
+They leese their former estimation,
+And throw themselves into a hell of hate.
+
+LOCRINE.
+Wilt thou abuse my gentle patience,
+As though thou didst our high displeasure scorn?
+Proud boy, that thou mayest know thy prince is moved,
+Yea, greatly moved at this thy swelling pride,
+We banish thee for ever from our court.
+
+THRASIMACHUS.
+Then, losell Locrine, look unto thy self,
+Thrasimachus will venge this injury.
+
+[Exit.]
+
+LOCRINE.
+Farewell, proud boy, and learn to use thy tongue.
+
+ASSARACHUS.
+Alas, my Lord, you should have called to mind
+The latest words that Brutus spake to you:
+How he desired you, by the obedience
+That children ought to bear unto the sire,
+To love and favour Lady Gwendoline.
+Consider this, that if the injury
+Do move her mind, as certainly it will,
+War and dissention follows speedily.
+What though her power be not so great as yours?
+Have you not seen a mighty elephant
+Slain by the biting of a silly mouse?
+Even so the chance of war inconstant is.
+
+LOCRINE.
+Peace, uncle, peace, and cease to talk hereof;
+For he that seeks, by whispering this or that,
+To trouble Locrine in his sweetest life,
+Let him persuade himself to die the death.
+
+[Enter the Page, with Estrild and Sabren.]
+
+ESTRILD.
+O, say me, Page, tell me, where is the king?
+Wherefore doth he send for me to the court?
+Is it to die? is it to end my life?
+Say me, sweet boy, tell me and do not feign!
+
+PAGE.
+No, trust me, madame; if you will credit the little honesty 
+that is yet left me, there is no such danger as you fear.  But
+prepare your self; yonder's the king.
+
+ESTRILD.
+Then, Estrild, life thy dazzled spirits up,
+And bless that blessed time, that day, that hour,
+That warlike Locrine first did favour thee.
+Peace to the king of Brittainy, my love!
+Peace to all those that love and favour him!
+
+LOCRINE.
+
+[Taking her up.]
+
+Doth Estrild fall with such submission
+Before her servant, king of Albion?
+Arise, fair Lady; leave this lowly cheer.
+Life up those looks that cherish Locrine's heart,
+That I may freely view that roseall face,
+Which so intangled hath my lovesick breast.
+Now to the court, where we will court it out,
+And pass the night and day in Venus' sports.
+Frolic, brave peers; be joyful with your king.
+
+[Exeunt.]
+
+
+ACT V.  SCENE II.  The camp of Gwendoline.
+
+[Enter Gwendoline, Thrasimachus, Madan, and
+the soldiers.]
+
+GWENDOLINE.
+You gentle winds, that with your modest blasts
+Pass through the circuit of the heavenly vault,
+Enter the clouds unto the throne of Jove,
+And there bear my prayers to his all hearing ears.
+For Locrine hath forsaken Gwendoline,
+And learnt to love proud Humber's concubine.
+You happy sprites, that in the concave sky
+With pleasant joy enjoy your sweetest love,
+Shed forth those tears with me, which then you shed,
+When first you would your ladies to your wills.
+Those tears are fittest for my woeful case,
+Since Locrine shuns my nothing pleasant face.
+Blush heavens, blush sun, and hide thy shining beams;
+Shadow thy radiant locks in gloomy clouds;
+Deny thy cheerful light unto the world,
+Where nothing reigns but falsehood and deceit.
+What said I? falsehood?  Aye, that filthy crime,
+For Locrine hath forsaken Gwendoline.
+Behold the heavens do wail for Gwendoline.
+The shining sun doth blush for Gwendoline.
+The liquid air doth weep for Gwendoline.
+The very ground doth groan for Gwendoline.
+Aye, they are milder than the Brittain king,
+For he rejecteth luckless Gwendoline.
+
+THRASIMACHUS.
+Sister, complaints are bootless in this cause;
+This open wrong must have an open plague,
+This plague must be repaid with grievous war,
+This war must finish with Locrine's death;
+His death will soon extinguish our complaints.
+
+GWENDOLINE.
+O no, his death will more augment my woes.
+He was my husband, brave Thrasimachus,
+More dear to me than the apple of mine eye,
+Nor can I find in heart to work his scathe.
+
+THRASIMACHUS.
+Madame, if not your proper injuries,
+Nor my exile, can move you to revenge,
+Think on our father Corineius' words;
+His words to us stands always for a law.
+Should Locrine live that caused my father's death?
+Should Locrine live that now divorceth you?
+The heavens, the earth, the air, the fire reclaims,
+And then why should all we deny the same?
+
+GWENDOLINE.
+Then henceforth, farewell womanish complaints!
+All childish pity henceforth, then, farewell!
+But, cursed Locrine, look unto thy self,
+For Nemesis, the mistress of revenge,
+Sits armed at all points on our dismal blades;
+And cursed Estrild, that inflamed his heart,
+Shall, if I live, die a reproachful death.
+
+MADAN.
+Mother, though nature makes me to lament
+My luckless father's froward lechery,
+Yet, for he wrongs my Lady mother thus,
+I, if I could, my self would work his death.
+
+THRASIMACHUS.
+See, madame, see, the desire of revenge
+Is in the children of a tender age!
+Forward, brave soldiers, into Mertia,
+Where we shall brave the coward to his face.
+
+[Exeunt.]
+
+
+ACT V. SCENE III.  The camp of Locrine.
+
+[Enter Locrine, Estrild, Sabren, Assarachus, and
+the soldiers.]
+
+LOCRINE.
+Tell me, Assarachus, are the Cornish chuffes
+In such great number come to Mertia?
+And have they pitched there their petty host,
+So close unto our royal mansion?
+
+ASSARACHUS.
+They are, my Lord, and mean incontinent
+To bid defiance to your majesty.
+
+LOCRINE.
+It makes me laugh, to think that Gwendoline
+Should have the heart to come in arms gainst me.
+
+ESTRILD.
+Alas, my Lord, the horse will run amain,
+When as the spur doth gall him to the bone.
+Jealousy, Locrine, hath a wicked sting.
+
+LOCRINE.
+Sayest thou so, Estrild, beauty's paragon?
+Well, we will try her choler to the proof,
+And make her know, Locrine can brook no braves.
+March on, Assarachus; thou must lead the way,
+And bring us to their proud pavilion.
+
+[Exeunt.]
+
+
+ACT V. SCENE IV.  The field of battle.
+
+[Enter the ghost of Corineius, with thunder and
+lightening.]
+
+CORINEIUS' GHOST.
+Behold, the circuit of the azure sky
+Throws forth sad throbs and grievous suspires,
+Prejudicating Locrine's overthrow.
+The fire casteth forth sharp darts of flames,
+The great foundation of the triple world
+Trembleth and quaketh with a mighty noise,
+Presaging bloody massacres at hand.
+The wandering birds that flutter in the dark,
+When hellish night, in cloudy chariot seated,
+Casteth her mists on shady Tellus' face,
+With sable mantles covering all the earth,
+Now flies abroad amid the cheerful day,
+Foretelling some unwonted misery.
+The snarling curs of darkened Tartarus,
+Sent from Avernus' ponds by Radamanth,
+With howling ditties pester every wood.
+The watery ladies and the lightfoot fawns,
+And all the rabble of the woody Nymphs,
+All trembling hide themselves in shady groves,
+And shroud themselves in hideous hollow pits.
+The boisterous Boreas thundreth forth revenge;
+The stony rocks cry out on sharp revenge;
+The thorny bush pronounceth dire revenge.
+
+[Sound the alarm.]
+
+Now, Corineius, stay and see revenge,
+And feed thy soul with Locrine's overthrow.
+Behold, they come; the trumpets call them forth;
+The roaring drums summon the soldiers.
+Lo, where their army glistereth on the plains!
+Throw forth thy lightning, mighty Jupiter,
+And power thy plagues on cursed Locrine's head.
+
+[Stand aside.]
+
+[Enter Locrine, Estrild, Assarachus, Sabren and 
+their soldiers at one door:  Thrasimachus, Gwendoline,
+Madan and their followers at an other.]
+
+LOCRINE.
+What, is the tiger started from his cave?
+Is Gwendoline come from Cornubia,
+That thus she braveth Locrine to the teeth?
+And hast thou found thine armour, pretty boy,
+Accompanied with these thy straggling mates?
+Believe me, but this enterprise was bold,
+And well deserveth commendation.
+
+GWENDOLINE.
+Aye, Locrine, traitorous Locrine! we are come,
+With full pretence to seek thine overthrow.
+What have I done, that thou shouldst scorn me thus?
+What have I said, that thou shouldst me reject?
+Have I been disobedient to thy words?
+Have I bewrayed thy Arcane secrecy?
+Have I dishonoured thy marriage bed
+With filthy crimes, or with lascivious lusts?
+Nay, it is thou that hast dishonoured it:
+Thy filthy minds, o'ercome with filthy lusts,
+Yieldeth unto affections filthy darts.
+Unkind, thou wrongst thy first and truest feer;
+Unkind, thou wrongst thy best and dearest friend;
+Unkind, thou scornst all skilfull Brutus' laws,
+Forgetting father, uncle, and thy self.
+
+ESTRILD.
+Believe me, Locrine, but the girl is wise,
+And well would seem to make a vestal Nun.
+How finely frames she her oration!
+
+THRASIMACHUS.
+Locrine, we came not here to fight with words,
+Words that can never win the victory;
+But for you are so merry in your frumps,
+Unsheath your swords, and try it out by force,
+That we may see who hath the better hand.
+
+LOCRINE.
+Thinkst thou to dare me, bold Thrasimachus?
+Thinkst thou to fear me with thy taunting braves,
+Or do we seem too weak to cope with thee?
+Soon shall I shew thee my fine cutting blade,
+And with my sword, the messenger of death,
+Seal thee an acquitance for thy bold attempts.
+
+[Exeunt.]
+
+[Sound the alarm.  Enter Locrine, Assarachus, and a 
+soldier at one door; Gwendoline, Thrasimachus, at
+an other; Locrine and his followers driven back.
+Then let Locrine & Estrild enter again in a maze.]
+
+LOCRINE.
+O fair Estrild, we have lost the field;
+Thrasimachus hath won the victory,
+And we are left to be a laughing stock,
+Scoft at by those that are our enemies.
+Ten thousand soldiers, armed with sword & shield,
+prevail against an hundreth thousand men;
+Thrasimachus, incensed with fuming ire,
+Rageth amongst the faintheart soldiers,
+Like to grim Mars, when covered with his targe
+He fought with Diomedes in the field,
+Close by the banks of silver Simois.
+
+[Sound the alarm.]
+
+O lovely Estrild, now the chase begins;
+Ne'er shall we see the stately Troynouant,
+Mounted on the coursers garnished all with pearls;
+Nor shall we view the fair Concordia,
+Unless as captives we be thither brought.
+Shall Locrine then be taken prisoner
+By such a youngling as Thrasimachus?
+Shall Gwendoline captivate my love?
+Ne'er shall mine eyes behold that dismal hour;
+Ne'er will I view that ruthful spectacle,
+For with my sword, this sharp curtleaxe,
+I'll cut in sunder my accursed heart.
+But O! you judges of the ninefold Styx,
+Which with incessant torments rack the ghosts
+Within the bottomless Abissus' pits,
+You gods, commanders of the heavenly spheres,
+Whose will and laws irrevocable stands,
+Forgive, forgive, this foul accursed sin!
+Forget, O gods, this foul condemned fault!
+And now, my sword, that in so many fights
+
+[Kiss his sword.]
+
+Hast saved the life of Brutus and his son,
+End now his life that wisheth still for death;
+Work now his death that wisheth still for death;
+Work now his death that hateth still his life.
+Farewell, fair Estrild, beauty's paragon,
+Framed in the front of forlorn miseries!
+Ne'er shall mine eyes behold thy sunshine eyes,
+But when we meet in the Elysian fields;
+Thither I go before with hastened pace.
+Farewell, vain world, and thy inticing snares!
+Farewell, foul sin, and thy inticing pleasures!
+And welcome, death, the end of mortal smart,
+Welcome to Locrine's overburthened heart!
+
+[Thrust himself through with his sword.]
+
+ESTRILD.
+Break, heart, with sobs and grievous suspires!
+Stream forth, you tears, from forth my watery eyes;
+Help me to mourn for warlike Locrine's death!
+Pour down your tears, you watery regions,
+For mighty Locrine is bereft of life!
+O fickle fortune! O unstable world!
+What else are all things that this globe contains,
+But a confused chaos of mishaps,
+Wherein, as in a glass, we plainly see,
+That all our life is but a Tragedy?
+Since mighty kings are subject to mishap--
+Aye, mighty kings are subject to mishap!--
+Since martial Locrine is bereft of life,
+Shall Estrild live, then, after Locrine's death?
+Shall love of life bar her from Locrine's sword?
+O no, this sword, that hath bereft his life,
+Shall now deprive me of my fleeting soul;
+Strengthen these hands, O mighty Jupiter,
+That I may end my woeful misery.
+Locrine, I come; Locrine, I follow thee.
+
+[Kill her self.]
+
+[Sound the alarm.  Enter Sabren.]
+
+SABREN.
+What doleful sight, what ruthful spectacle
+Hath fortune offered to my hapless heart?
+My father slain with such a fatal sword,
+My mother murthered by a mortal wound?
+What Thracian dog, what barbarous Mirmidon,
+Would not relent at such a rueful case?
+What fierce Achilles, what had stony flint,
+Would not bemoan this mournful Tragedy?
+Locrine, the map of magnanimity,
+Lies slaughtered in this foul accursed cave,
+Estrild, the perfect pattern of renown,
+Nature's sole wonder, in whose beauteous breasts
+All heavenly grace and virtue was inshrined:
+Both massacred are dead within this cave,
+And with them dies fair Pallas and sweet love.
+Here lies a sword, and Sabren hath a heart;
+This blessed sword shall cut my cursed heart,
+And bring my soul unto my parents' ghosts,
+That they that live and view our Tragedy
+May mourn our case with mournful plaudities.
+
+[Let her offer to kill her self.]
+
+Ay me, my virgin's hands are too too weak,
+To penetrate the bulwark of my breast;
+My fingers, used to tune the amorous lute,
+Are not of force to hold this steely glaive.
+So I am left to wail my parents' death,
+Not able for to work my proper death.
+Ah, Locrine, honored for thy nobleness!
+Ah, Estrild, famous for thy constancy!
+Ill may they fare that wrought your mortal ends!
+
+[Enter Gwendoline, Thrasimachus, Madan, and the
+soldiers.]
+
+GWENDOLINE.
+Search, soldiers, search, find Locrine and his love;
+Find the proud strumpet, Humber's concubine,
+That I may change those her so pleasing looks
+To pale and ignominious aspect.
+Find me the issue of their cursed love,
+Find me young Sabren, Locrine's only joy,
+That I may glut my mind with lukewarm blood,
+Swiftly distilling from the bastard's breast.
+My father's ghost still haunts me for revenge,
+Crying, Revenge my overhastened death.
+My brother's exile and mine own divorce
+Banish remorse clean from my brazen heart,
+All mercy from mine adamantine breasts.
+
+THRASIMACHUS.
+Nor doth thy husband, lovely Gwendoline,
+That wonted was to guide our stailess steps,
+Enjoy this light; see where he murdered lies
+By luckless lot and froward frowning fate;
+And by him lies his lovely paramour,
+Fair Estrild, gored with a dismal sword;--
+And as it seems, both murdered by themselves,
+Clasping each other in their feebled arms,
+With loving zeal, as if for company
+Their uncontented corps were yet content
+To pass foul Stix in Charon's ferry-boat.
+
+GWENDOLINE.
+And hath proud Estrild then prevented me?
+Hath she escaped Gwendoline's wrath
+Violently, by cutting off her life?
+Would God she had the monstrous Hydra's lives,
+That every hour she might have died a death
+Worse than the swing of old Ixion's wheel;
+And every hour revive to die again,
+As Titius, bound to housles Caucason,
+Doth feed the substance of his own mishap,
+And every day for want of food doth die,
+And every night doth live, again to die.
+But stay! methinks I hear some fainting voice,
+Mournfully weeping for their luckless death.
+
+SABREN.
+You mountain nymphs, which in these deserts reign,
+Cease off your hasty chase of savage beasts;
+Prepare to see a heart oppressed with care;
+Address your ears to hear a mournful style!
+No humane strength, no work can work my weal,
+Care in my heart so tyrant like doth deal.
+You Dryads and lightfoot Satyri,
+You gracious Faries which, at evening tide,
+Your closets leave with heavenly beauty stored,
+And on your shoulders spread your golden locks;
+You savage bears in caves and darkened dens,
+Come wail with me the martial Locrine's death;
+Come mourn with me for beauteous Estrild's death.
+Ah! loving parents, little do you know
+What sorrow Sabren suffers for your thrall.
+
+GWENDOLINE.
+But may this be, and is it possible?
+Lives Sabren yet to expiate my wrath?
+Fortune, I thank thee for this courtesy;
+And let me never see one prosperous hour,
+If Sabren die not a reproachful death.
+
+SABREN.
+Hard hearted death, that, when the wretched call,
+Art furthest off, and seldom hearest at all;
+But, in the midst of fortune's good success,
+Uncalled comes, and sheers our life in twain:
+When will that hour, that blessed hour, draw nigh,
+When poor distressed Sabren may be gone?
+Sweet Atropos, cut off my fatal thread!
+What art thou death? shall not poor Sabren die?
+
+GWENDOLINE.
+
+[Taking her by the chin shall say thus.]
+
+Yes, damsel, yes; Sabren shall surely die,
+Though all the world should seek to save her life;
+And not a common death shall Sabren die,
+But after strange and grievous punishments
+Shortly inflicted upon thy bastard's head,
+Thou shalt be cast into the cursed streams,
+And feed the fishes with thy tender flesh.
+
+SABREN.
+And thinkst thou then, thou cruel homicide,
+That these thy deeds shall be unpunished?
+No, traitor, no; the gods will venge these wrongs,
+The fiends of hell will mark these injuries.
+Never shall these blood-sucking masty curs,
+Bring wretched Sabren to her latest home;
+For I my self, in spite of thee and thine,
+Mean to abridge my former destinies,
+And that which Locrine's sword could not perform,
+This pleasant stream shall present bring to pass.
+
+[She drowneth her self.]
+
+GWENDOLINE.
+One mischief follows on another's neck.
+Who would have thought so young a maid as she
+With such a courage would have sought her death?
+And for because this River was the place
+Where little Sabren resolutely died,
+Sabren for ever shall this same be called.
+And as for Locrine, our deceased spouse,
+Because he was the son of mighty Brute,
+To whom we owe our country, lives and goods,
+He shall be buried in a stately tomb,
+Close by his aged father Brutus' bones,
+With such great pomp and great solemnity,
+As well beseems so brave a prince as he.
+Let Estrild lie without the shallow vaults,
+Without the honour due unto the dead,
+Because she was the author of this war.
+Retire, brave followers, unto Troynouant,
+Where we shall celebrate these exequies,
+And place young Locrine in his father's tomb.
+
+[Exeunt omnes.]
+
+[Enter Ate.]
+
+ATE.
+Lo here the end of lawless treachery,
+Of usurpation and ambitious pride;
+And they that for their private amours dare
+Turmoil our land, and set their broils abroach,
+Let them be warned by these premises.
+And as a woman was the only cause 
+That civil discord was then stirred up,
+So let us pray for that renowned maid,
+That eight and thirty years the scepter swayed,
+In quiet peace and sweet felicity;
+And every wight that seeks her grace's smart,
+Would that this sword were pierced in his heart!
+
+[Exit.]
+
+[Finis.]
+
+
+
+
+2.  A MOST PLEASANT COMEDY OF MUCEDORUS THE KING'S SON OF
+VALENTIA, AND AMADINE, THE KING'S DAUGHTER OF ARRAGON.
+
+
+
+
+THE PROLOGUE.
+
+Most sacred Majesty, whose great deserts
+Thy Subject England, nay, the World, admires:
+Which Heaven grant still increase: O may your Praise,
+Multiplying with your hours, your Fame still raise;
+Embrace your Counsel; Love, with Faith, them guide,
+That both, as one, bench by each other's side.
+So may your life pass on and run so even,
+That your firm zeal plant you a Throne in Heaven,
+Where smiling Angels shall your guardians be
+From blemished Traitors, stained with Perjury:
+And as the night's inferiour to the day,
+So be all earthly Regions to your sway.
+Be as the Sun to Day, the Day to Night;
+For, from your Beams, Europe shall borrow light.
+Mirth drown your bosom, fair Delight your mind,
+And may our Pastime your Contentment find.
+
+[Exit.]
+
+
+
+DRAMATIS PERSONAE.
+
+Eight persons may easily play it.
+
+
+THE KING and ROMBELO, for one.
+KING VALENCIA, for one.
+MUCEDORUS the prince of Valencia, for one.
+ANSELMO, for one.
+AMADINE the King's daughter of Arragon, for one.
+SEGASTO a Noble man, for one.
+ENVY; TREMELIO a Captain; BREMO a wild
+   man, for one.
+COMEDY, a BOY, an OLD WOMAN, ARIENA
+   Amadine's maid, for one.
+COLLEN a Counselor, a MESSENGER, for one.
+MOUSE the Clown, for one.
+
+
+
+INDUCTION.
+
+[Enter Comedy joyful with a garland of bays in
+her hand.]
+
+Why so! thus do I hope to please:
+Music revives, and mirth is tolerable,
+Comedy, play thy part and please,
+Make merry them that comes to joy with thee:
+Joy, then, good gentles; I hope to make you laugh.
+Sound forth Bellona's silver tuned strings.
+Time fits us well, the day and place is ours.
+
+[Enter Envy, his arms naked, besmeared with blood.]
+
+ENVY.
+Nay, stay, minion, there lies a block.
+What, all on mirth!  I'll interrupt your tale
+And mix your music with a tragic end.
+
+COMEDY.
+What monstrous ugly hag is this,
+That dares control the pleasures of our will?
+Vaunt, churlish cur, besmeared with gory blood,
+That seemst to check the blossoms of delight,
+And stifle the sound of sweet Bellona's breath:
+Blush, monster, blush, and post away with shame,
+That seekst disturbance of a goddess' deeds.
+
+ENVY.
+Post hence thy self, thou counter-checking trull;
+I will possess this habit, spite of thee,
+And gain the glory of thy wished port:
+I'll thunder music shall appall the nymphs,
+And make them shiver their clattering strings:
+Flying for succour to their dankish caves.
+
+[Sound drums within and cry, 'stab! stab!']
+
+Hearken, thou shalt hear a noise
+Shall fill the air with a shrilling sound,
+And thunder music to the gods above:
+Mars shall himself breathe down
+A peerless crown upon brave envy's head,
+And raise his chivall with a lasting fame.
+In this brave music Envy takes delight,
+Where I may see them wallow in their blood,
+To spurn at arms and legs quite shivered off,
+And hear the cries of many thousand slain.
+How likst thou this, my trull? this sport alone for me!
+
+COMEDY.
+Vaunt, bloody cur, nurst up with tiger's sap,
+That so dost seek to quail a woman's mind.
+Comedy is mild, gentle, willing for to please,
+And seeks to gain the love of all estates:
+Delighting in mirth, mixt all with lovely tales,
+And bringeth things with treble joy to pass.
+Thou, bloody, Envious, disdainer of men's joy,
+Whose name is fraught with bloody stratagems,
+Delights in nothing but in spoil and death,
+Where thou maist trample in their luke warm blood,
+And grasp their hearts within thy cursed paws:
+Yet vail thy mind, revenge thou not on me;
+A silly woman begs it at thy hands:
+Give me the leave to utter out my play,
+Forbear this place, I humbly crave thee: hence,
+And mix not death amongst pleasing comedies,
+That treats naught else but pleasure and delight.
+If any spark of human rests in thee,
+Forbear, be gone, tender the suite of me.
+
+ENVY.
+Why so I will; forbearance shall be such
+As treble death shall cross thee with despite,
+And make thee mourn where most thou joyest,
+Turning thy mirth into a deadly dole,
+Whirling thy pleasures with a peal of death,
+And drench thy methods in a sea of blood:
+This will I do, thus shall I bear with thee;
+And more to vex thee with a deeper spite,
+I will with threats of blood begin thy play,
+Favoring thee with envy and with hate.
+
+COMEDY.
+Then, ugly monster, do thy worst,
+I will defend them in despite of thee:
+And though thou thinkst with tragic fumes
+To brave my play unto my deep disgrace,
+I force it not, I scorn what thou canst do;
+I'll grace it so, thy self shall it confess
+From tragic stuff to be a pleasant comedy.
+
+ENVY.
+Why then, Comedy, send thy actors forth
+And I will cross the first steps of their tread:
+Making them fear the very dart of death.
+
+COMEDY.
+And I'll defend them maugre all thy spite:
+So, ugly fiend, farewell, till time shall serve,
+That we may meet to parle for the best.
+
+ENVY.
+Content, Comedy; I'll go spread my branch,
+And scattered blossoms from mine envious tree
+Shall prove to monsters, spoiling of their joys.
+
+[Exit.]
+
+
+ACT I.  SCENE I.  Valentia.  The Court.
+
+[Sound.  Enter Mucedorus and Anselmo his friend.]
+
+MUCEDORUS.
+Anselmo.
+
+ANSELMO.
+My Lord and friend.
+
+MUCEDORUS.
+True, my Anselmo, both thy Lord and friend
+Whose dear affections bosom with my heart,
+And keep their domination in one orb.
+
+ANSELMO.
+Whence near disloyalty shall root it forth,
+But faith plant firmer in your choice respect.
+
+MUCEDORUS.
+Much blame were mine, if I should other deem,
+Nor can coy Fortune contrary allow:
+But, my Anselmo, loth I am to say
+I must estrange that friendship--
+Misconsture not, tis from the Realm, not thee:
+Though Lands part Bodies, Hearts keep company.
+Thou knowst that I imparted often have
+Private relations with my royal Sire,
+Had as concerning beautious Amadine,
+Rich Aragon's bright Jewel, whose face (some say)
+That blooming Lilies never shone so gay,
+Excelling, not excelled:  yet least Report
+Does mangle Verity, boasting of what is not,
+Wing'd with Desire, thither I'll straight repair,
+And be my Fortunes, as my Thoughts are, fair.
+
+ANSELMO.
+Will you forsake Valencia, leave the Court,
+Absent you from the eye of Sovereignty?
+Do not, sweet Prince, adventure on that task,
+Since danger lurks each where: be won from it.
+
+MUCEDORUS.
+Desist dissuasion,
+My resolution brooks no battery;
+Therefore, if thou retain thy wonted form,
+Assist what I intend.
+
+ANSELMO.
+Your miss will breed a blemish in the Court,
+And throw a frosty dew upon that Beard,
+Whose front Valencia stoops to.
+
+MUCEDORUS.
+If thou my welfare tender, then no more;
+Let Love's strong magic charm thy trivial phrase,
+Wasted as vainly as to gripe the Sun:
+Augment not then more answers; lock thy lips,
+Unless thy wisdom suite me with disguise,
+According to my purpose.
+
+ANSELMO.
+That action craves no counsel,
+Since what you rightly are will more command,
+Than best usurped shape.
+
+MUCEDORUS.
+Thou still art opposite is disposition:
+A more obscure servile habillament
+Beseems this enterprise.
+
+ANSELMO.
+Than like a Florentine or Mountebank?
+
+MUCEDORUS.
+Tis much too tedious; I dislike thy judgement:
+My mind is grafted on an humbler stock.
+
+ANSELMO.
+Within my Closet does there hang a Cassock,
+Though base the weed is; twas a Shepherds,
+Which I presented in Lord Julio's Mask.
+
+MUCEDORUS.
+That, my Anselmo, and none else but that,
+Mask Mucedorus from the vulgar view!
+That habit suits my mind; fetch me that weed.
+
+[Exit Anselmo.]
+
+Better than Kings have not disdained that state,
+And much inferiour, to obtain their mate.
+
+[Enter Anselmo with a Shepherd's coat.]
+
+So!
+Let our respect command thy secrecy.
+At once a brief farewell:
+Delay to lovers is a second hell.
+
+[Exit Mucedorus.]
+
+ANSELMO.
+Prosperity forerun thee; Awkward chance
+Never be neighbour to thy wishes' venture:
+Content and Fame advance thee; ever thrive,
+And Glory thy mortality survive.
+
+[Exit.]
+
+
+ACT I. SCENE II.  A Forest in Arragon.
+
+[Enter Mouse with a bottle of Hay.]
+
+MOUSE.
+O horrible, terrible!  Was ever poor Gentleman
+so scared out of his seven Senses?  A Bear? nay,
+sure it cannot be a Bear, but some Devil in a
+Bear's Doublet:  for a Bear could never have had
+that agility to have frighted em.  Well, I'll see my
+Father hanged, before I'll serve his Horse any more:
+Well, I'll carry home my Bottle of Hay, and for 
+once make my Father's Horse turn puritan and
+observe Fasting days, for he gets not a bit.  But
+soft! this way she followed me, therefore I'll take
+the other Path; and because I'll be sure to have an
+eye on him, I will take hands with some foolish 
+Creditor, and make every step backward.
+
+[As he goes backwards the Bear comes in, and he
+tumbles over, and runs away and leaves his bottle
+of Hay behind him.]
+
+
+ACT I. SCENE III.  The same.
+
+[Enter Segasto running and Amadine after him,
+being pursued by a bear.]
+
+SEGASTO.
+Oh fly, Madam, fly or else we are but dead.
+
+AMADINE.
+Help, Segasto, help! help, sweet Segasto, or else
+I die.
+
+SEGASTO.
+Alas, madam, there is no way but flight;
+Then haste and save your self.
+
+[Segasto runs away.]
+
+AMADINE.
+Why then I die; ah help me in distress!
+
+[Enter Mucedorus like a shepherd with a sword
+drawn and a bear's head in his hand.]
+
+MUCEDORUS.
+Stay, Lady, stay, and be no more dismayed.
+That cruel beast most merciless and fell,
+Which hath bereaved thousands of their lives,
+Affrighted many with his hard pursues,
+Prying from place to place to find his prey,
+Prolonging thus his life by others' death,
+His carcass now lies headless, void of breath.
+
+AMADINE.
+That foul deformed monster, is he dead?
+
+MUCEDORUS.
+Assure your self thereof, behold his head:
+Which if it please you, Lady, to accept,
+With willing heart I yield it to your majesty.
+
+AMADINE.
+Thanks, worthy shepherd, thanks a thousand times.
+This gift, assure thy self, contents me more
+Than greatest bounty of a mighty prince,
+Although he were the monarch of the world.
+
+MUCEDORUS.
+Most gracious goddess, more than mortal wight,
+Your heavenly hue of right imports no less,
+Most glad am I in that it was my chance
+To undertake this enterprise in hand,
+Which doth so greatly glad your princely mind.
+
+AMADINE.
+No goddess, shepherd, but a mortal wight,
+A mortal wight distressed as thou seest:
+My father here is king of Arragon.
+I Amadine his only daughter am,
+And after him sole heir unto the crown.
+Now, where as it is my father's will
+To marry me unto Segasto, one,
+Whose wealth through father's former usury
+Is known to be no less than wonderful,
+We both of custom oftentimes did use,
+Leaving the court, to walk within the fields
+For recreation, especially in the spring,
+In that it yields great store of rare delights:
+And passing further than our wonted walks,
+Scarce were entered within these luckless woods,
+But right before us down a steep fall hill
+A monstrous ugly bear did hie him fast,
+To meet us both.  I faint to tell the rest,
+Good shepherd, but suppose the ghastly looks,
+The hideous fears, the thousand hundred woes,
+Which at this instant Amadine sustained.
+
+MUCEDORUS.
+Yet, worthy princess, let thy sorrow cease,
+And let this sight your former joys revive.
+
+AMADINE.
+Believe me, shepherd, so it doth no less.
+
+MUCEDORUS.
+Long may they last unto your heart's content.
+But tell me, Lady, what is become of him,
+Segasto called, what is become of him?
+
+AMADINE.
+I know not, I; that know the powers divine,
+But God grant this:  that sweet Segasto live.
+
+MUCEDORUS.
+Yet hard hearted he in such a case,
+So cowardly to save himself by flight:
+And leave so brave a princess to the spoil.
+
+AMADINE.
+Well, shepherd, for thy worthy valour tried,
+Endangering thy self to set me free,
+Unrecompensed, sure, thou shalt not be.
+In court thy courage shall be plainly known:
+Throughout the Kingdom will I spread thy name,
+To thy renown and never dying fame:
+And that thy courage may be better known,
+Bear thou the head of this most monstrous beast
+In open sight to every courtiers view:
+So will the king my father thee reward.
+Come, let's away, and guard me to the court.
+
+MUCEDORUS.
+With all my heart.
+
+[Exeunt.]
+
+
+ACT I. SCENE IV.  Outskirts of the Forest.
+
+[Enter Segasto solus.]
+
+SEGASTO.
+When heaps of harms to hover over head,
+Tis time as then, some say, to look about,
+And of ensuing harms to choose the least:
+But hard, yea hapless, is that wretches chance,
+Luckless his lot and caytiffe like acourste,
+At whose proceedings fortune ever frowns.
+My self I mean, most subject unto thrall,
+For I, the more I seek to shun the worst,
+The more by proof I find myself accurst:
+Ere whiles assaulted with an ugly bear,
+Fair Amadine in company all alone,
+Forthwith by flight I thought to save my self,
+Leaving my Amadine unto her shifts:
+For death it was for to resist the bear,
+And death no less of Amadine's harms to hear.
+Accursed I in lingering life thus long!
+In living thus, each minute of an hour
+Doth pierce my heart with darts of thousand deaths:
+If she by flight her fury do escape,
+What will she think?
+Will she not say--yea, flatly to my face,
+Accusing me of mere disloyalty--
+A trusty friend is tried in time of need,
+But I, when she in danger was of death
+And needed me, and cried, Segasto, help:
+I turned my back and quickly ran away.
+Unworthy I to bear this vital breath!
+But what! what needs these plaints?
+If Amadine do live, then happy I;
+She will in time forgive and so forget:
+Amadine is merciful, not Juno like,
+In harmful heart to harbor hatred long.
+
+[Enter Mouse, the Clown, running, crying:
+clubs.]
+
+MOUSE.
+Clubs, prongs, pitchforks, bills!  O help! a bear,
+a bear, a bear, a bear!
+
+SEGASTO.
+Still bears, and nothing else but bears.  Tell me,
+sirrah, where she is.
+
+MOUSE.
+O sir, she is run down the woods: I see her white
+head and her white belly.
+
+SEGASTO.
+Thou talkest of wonders, to tell me of white bears.
+But, sirra, didst thou ever see any such?
+
+MOUSE.
+No, faith, I never saw any such, but I remember
+my father's words:  he bade me take heed I was
+not caught with a white bear.
+
+SEGASTO.
+A lamentable tale, no doubt.
+
+MOUSE.
+I tell you what, sir, as I was going a field to serve 
+my father's great horse, & carried a bottle of hay 
+upon my head--now do you see, sir--I, fast 
+hoodwinked, that I could see nothing, perceiving
+the bear coming, I threw my hay into the hedge
+and ran away.
+
+SEGASTO.
+What, from nothing?
+
+MOUSE.
+I warrant you, yes, I saw something, for there was
+two load of thorns besides my bottle of hay, and
+that made three.
+
+SEGASTO.
+But tell me, sirra, the bear that thou didst see,
+Did she not bear a bucket on her arm?
+
+MOUSE.
+Ha, ha, ha!  I never saw bear go a milking in my
+life.  But hark you, sir, I did not look so high as
+her arm:  I saw nothing but her white head, and her
+white belly.
+
+SEGASTO.
+But tell me, sirra, where dost thou dwell?
+
+MOUSE.
+Why, do you not know me?
+
+SEGASTO.
+Why no, how should I know thee?
+
+MOUSE.
+Why, then, you know no body, and you know not
+me.  I tell you, sir, I am the goodman rats son of the
+next parish over the hill.
+
+SEGASTO.
+Goodman rats son:  why, what's thy name?
+
+MOUSE.
+Why, I am very near kin unto him.
+
+SEGASTO.
+I think so, but what's thy name?
+
+MOUSE.
+My name?  I have a very pretty name; I'll tell you
+what my name is:  my name is Mouse.
+
+SEGASTO.
+What, plain Mouse? 
+
+MOUSE.
+Aye, plain mouse with out either welt or guard.  But
+do you hear, sir, I am but a very young mouse, for my
+tail is scarce grown out yet; look you here else.
+
+SEGASTO.
+But, I pray thee, who gave thee that name?
+
+MOUSE.
+Faith, sir, I know not that, but if you would fain know,
+ask my father's great horse, for he hath been half a year
+longer with my father than I have.
+
+SEGASTO.
+This seems to be a merry fellow;
+I care not if I take him home with me.
+Mirth is a comfort to a troubled mind,
+A merry man a merry master makes.
+How saist thou, sirra, wilt thou dwell with me?
+
+MOUSE.
+Nay, soft, sir, two words to a bargain: pray you, what
+occupation are you?
+
+SEGASTO.
+No occupation, I live upon my lands.
+
+MOUSE.
+Your lands! away, you are no master for me:  why, do
+you think that I am so mad, to go seek my living in the
+lands amongst the stones, briars, and bushes, and tear
+my holy day apparel? not I, by your leave.
+
+SEGASTO.
+Why, I do not mean thou shalt.
+
+MOUSE.
+How then?
+
+SEGASTO.
+Why, thou shalt be my man, and wait upon me at the
+court.
+
+MOUSE.
+What's that?
+
+SEGASTO.
+Where the King lies.
+
+MOUSE.
+What's that same King, a man or woman?
+
+SEGASTO.
+A man as thou art.
+
+MOUSE.
+As I am? hark you, sir; pray you, what kin is he
+to good man king of our parish, the church warden?
+
+SEGASTO.
+No kin to him; he is the King of the whole land.
+
+MOUSE.
+King of the land!  I never see him.
+
+SEGASTO.
+If thou wilt dwell with me, thou shalt see him
+every day.
+
+MOUSE.
+Shall I go home again to be torn in pieces with
+bears? no, not I.  I will go home & put on a clean
+shirt, and then go drown my self.
+
+SEGASTO.
+Thou shalt not need; if thou wilt dwell with me,
+thou shalt want nothing.
+
+MOUSE.
+Shall I not? then here's my hand; I'll dwell with you.
+And hark you, sir, now you have entertained me, I
+will tell you what I can do:  I can keep my tongue 
+from picking and stealing, and my hands from lying
+and slandering, I warrant you, as well as ever you had
+man in all your life.
+
+SEGASTO.
+Now will I to court with sorrowful heart, rounded with
+  doubts.
+If Amadine do live, then happy I:
+Yea, happy I, if Amadine do live.
+
+[Exeunt.]
+
+
+ACT II.  SCENE I.  The Camp of the King of Arragon.
+
+[Enter the King with a young prince prisoner, Amadine,
+Tremelio, with Collen and counselors.]
+
+KING.
+Now, brave Lords, our wars are brought to end,
+Our foes to the foil, and we in safety rest:
+It us behooves to use such clemency
+In peace as valour in the war
+It is as great honor to be bountiful
+At home as to be conquerors in the field.
+Therefore, my Lords, the more to my content,
+Your liking, and your country's safeguard,
+We are disposed in marriage for to give
+Our daughter to Lord Segasto here,
+Who shall succeed the diadem after me,
+And reign hereafter as I tofore have done,
+Your sole and lawful King of Arragon:
+What say you, Lordings, like you of my advise?
+
+COLLEN.
+And please your Majesty, we do not only allow of 
+your highness pleasure, but also vow faithfully in
+what we may to further it.
+
+KING.
+Thanks, good my Lords, if long Adrostus live,
+He will at full requite your courtesies.
+Tremelio,
+In recompense of thy late valour done,
+Take unto thee the Catalonea prince,
+Lately our prisoner taken in the wars.
+Be thou his keeper, his ransom shall be thine:
+We'll think of it when leisure shall afford:
+Mean while, do use him well; his father is a King.
+
+TREMELIO.
+Thanks to your Majesty: his usage shall be such,
+As he thereat shall think no cause to grutce.
+
+[Exeunt Tremelio and Prince.]
+
+KING.
+Then march we on to court, and rest our wearied limbs.
+But, Collen, I have a tale in secret kept for thee:
+When thou shalt hear a watch word from thy king,
+Think then some weighty matter is at hand
+That highly shall concern our state,
+Then, Collen, look thou be not far from me:
+And for thy service thou to fore hast done,
+Thy trueth and valour proud in every point,
+I shall with bounties thee enlarge therefore:
+So guard us to the court.
+
+COLLEN.
+What so my sovereign doth command me do,
+With willing mind I gladly yield consent.
+
+[Exeunt.]
+
+
+ACT II. SCENE II.  The same.
+
+[Enter Segasto, and the Clown with weapons
+about him.]
+
+SEGASTO.
+Tell me, sirra, how do you like your weapons?
+ 
+MOUSE. 
+O very well, very well, they keep my sides warm.
+
+SEGASTO.
+They keep the dogs from your shins very well,
+do they not?
+
+MOUSE.
+How, keep the dogs from my shins?  I would 
+scorn but my shins should keep the dogs from them.
+
+SEGASTO.
+Well, sirra, leaving idle talk, tell me:
+Dost thou know captain Tremelio's chamber?
+
+MOUSE. 
+Aye, very well; it hath a door.
+
+SEGASTO.
+I think so, for so hath every chamber.
+But does thou know the man?
+
+MOUSE. 
+Aye, forsooth, he hath a nose on his face.
+
+SEGASTO.
+Why so hath every one.
+
+MOUSE.
+That's more than I know.
+
+SEGASTO.
+But doest thou remember the captain, that was
+here with the king even now, that brought the
+young prince prisoner?
+
+MOUSE. 
+O, very well.
+
+SEGASTO.
+Go unto him and bid him come to me.  Tell him
+I have a matter in secret to impart to him.
+
+MOUSE.
+I will, master:--master, what's his name?
+
+SEGASTO.
+Why, captain Tremelio.
+
+MOUSE. 
+O, the meal man.  I know him very well.  He
+brings meal every Saturday.  But hark you, master,
+must I bid him come to you or must you come to
+him?
+
+SEGASTO.
+No, sir, he must come to me.
+
+MOUSE. 
+Hark you, master, how if he be not at home?  What
+shall I do then?
+
+SEGASTO.
+Why, then thou leavest word with some of his folks.
+
+MOUSE. 
+Oh, master, if there be no body within, I will leave 
+word with his dog.
+
+SEGASTO.
+Why, can his dog speak?
+
+
+MOUSE. 
+I cannot tell; wherefore doth he keep his chamber else?
+
+SEGASTO.
+To keep out such knaves as thou art.
+
+MOUSE. 
+Nay, be lady, then go your self.
+
+SEGASTO.
+You will go, sir, will ye not?
+
+MOUSE.
+Yes, marry, will I.  O tis come to my head:
+And a be not within, I'll bring his chamber to you.
+
+SEGASTO.
+What, wilt thou pluck down the King's house?
+
+MOUSE.
+Nay, be lady, I'll know the price of it first.  Master,
+it is such a hard name, I have forgotten it again.  I
+pray you, tell me his name.
+
+SEGASTO.
+I tell thee, captain Tremelio.
+
+MOUSE.
+Oh, captain treble knave, captain treble knave.
+
+[Enter Tremelio.]
+
+TREMELIO.
+How now, sirra, doost thou call me?
+
+MOUSE.
+You must come to my master, captain treble knave.
+
+TREMELIO.
+My Lord Segasto, did you send for me?
+
+SEGASTO.
+I did, Tremelio.  Sirra, about your business.
+
+MOUSE.
+Aye, marry: what's that, can you tell?
+
+SEGASTO.
+No, not well.
+
+MOUSE.
+Marry, then, I can:  straight to the kitchen dresser,
+to John the cook, and get me a good piece of beef
+and brewis, and then to the buttery hatch to Thomas
+the butler for a jack of beer, and there for an hour
+I'll so be labour my self! therefore, I pray you, call
+me not till you think I have done, I pray you, good
+master.
+
+SEGASTO.
+Well, sir, away.
+
+[Exit Mouse.]
+
+Tremelio, this it is: thou knowest the valour of 
+Segasto spread through all the kingdom of Arragon,
+and such as hath found triumph and favours, never
+daunted at any time; but now a shepherd is admired
+at in court for worthiness, and Segasto's honour laid
+a side.  My will, therefore, is this, that thou dost find
+some means to work the shepherd's death.  I know
+thy strength sufficient to perform my desire, & thy
+love no other wise than to revenge my injuries.
+
+TREMELIO.
+It is not the frowns of a shepherd that Tremelio fears.
+Therefore, account it accomplished, what I take in hand.
+
+SEGASTO.
+Thanks, good Tremelio, and assure they self,
+What I promise that will I perform.
+
+TREMELIO.
+Thanks, my good Lord, and in good time see where
+He cometh: stand by a while, and you shall see
+Me put in practise your intended drifts.
+Have at thee, swain, if that I hit thee right.
+
+[Enter Mucedorus.]
+
+MUCEDORUS.
+Viled coward, so without cause to strike a man.
+Turn, coward, turn; now strike and do thy worst.
+
+[Mucedorus killeth him.]
+
+SEGASTO.
+Hold, shepherd, hold; spare him, kill him not!
+Accursed villain, tell me, what hast thou done?
+Ah, Tremelio, trusty Tremelio!
+I sorrow for thy death, and since that thou,
+Living, didst prove faithful to Segasto,
+So Segasto now, living, shall honour
+The dead corpse of Tremelio with revenge.
+Bloodthirsty villain,
+Born and bred to merciless murther,
+Tell me, how durst thou be so bold at once
+To lay thy hands upon the least of mine?
+Assure thy self,
+Thou shalt be used according to the law.
+
+MUCEDORUS.
+Segasto, cease, these threats are needless.
+Accuse not me of murther, that have done
+Nothing but in mine own defence.
+
+SEGASTO.
+Nay, shepherd, reason not with me.
+I'll manifest thy fact unto the King,
+Whose doom will be thy death, as thou deservest.
+What ho, Mouse, come away!
+
+[Enter Mouse.]
+
+MOUSE.
+Why how now, what's the matter?
+I thought you would be calling before I had done.
+
+SEGASTO.
+Come, help; away with my friend.
+
+MOUSE.
+Why, is he drunk? cannot he stand on his feet?
+
+SEGASTO.
+No, he is not drunk, he is slain.
+
+MOUSE.
+Flaine? no, by Lady, he is not flaine.
+
+SEGASTO.
+He's killed, I tell thee.
+
+MOUSE.
+What, do you use to kill your friends?
+I will serve you no longer.
+
+SEGASTO.
+I tell thee, the shepherd killed him.
+
+MOUSE.
+O, did a so? but, master, I will have all his
+apparel if I carry him away.
+
+SEGASTO.
+Why, so thou shalt.
+
+MOUSE.
+Come, then, I will help; mas, master, I think
+his mother song looby to him, he is so heavy.
+
+[Exeunt Segasto and Mouse.}
+
+MUCEDORUS.
+Behold the fickle state of man, always mutable,
+Never at one.  Sometimes we feed on fancies
+With the sweet of our desires; sometimes again
+We feel the heat of extreme misery.
+Now am I in favour about the court and country.
+To morrow those favours will turn to frowns:
+To day I live revenged on my foe,
+To morrow I die, my foe revenged on me.
+
+[Exit.]
+
+
+ACT II. SCENE III.  The Forest.
+
+[Enter Bremo, a wild man.]
+
+BREMO.
+No passengers this morning? what, not one?
+A chance that seldom doth befall.
+What, not one? then lie thou there,
+And rest thyself till I have further need,
+Now, Bremo, sith thy leisure so affords--
+An endless thing.  Who knows not Bremo's strength,
+Who like a king commands within these woods?
+The bear, the boar, dares not abide my sight,
+But hastes away to save themselves by flight:
+The crystal waters in the bubbling brooks,
+When I come by, doth swiftly slide away,
+And claps themselves in closets under banks,
+Afraid to look bold Bremo in the face:
+The aged oaks at Bremo's breath do bow,
+And all things else are still at my command.
+Else what would I?
+Rent them in pieces and pluck them from the earth,
+And each way else I would revenge my self.
+Why who comes here with whom I dare not fight?
+Who fights with me & doth not die the death?
+Not one:  What favour shews this sturdy stick to those,
+That here within these woods are combatants with me?
+Why, death, and nothing else but present death.
+With restless rage I wander through these woods,
+No creature here but feareth Bremo's force,
+Man, woman, child, beast and bird,
+And every thing that doth approach my sight,
+Are forced to fall if Bremo once but frown.
+Come, cudgel, come, my partner in my spoils,
+For here I see this day it will not be;
+But when it falls that I encounter any,
+One pat sufficeth for to work my will.
+What, comes not one? then let's begone;
+A time will serve when we shall better speed.
+
+[Exit.]
+
+
+ACT II. SCENE IV.  Arragon. a Room of State in
+the Court.
+
+[Enter the King, Segasto, the Shepherd, and the Clown,
+with others.]
+
+KING.
+Shepherd, thou hast heard thin accusers;
+Murther is laid to thy charge.
+What canst thou say? thou hast deserved death.
+
+
+MUCEDORUS.
+Dread sovereign, I must needs confess,
+I slew this captain in mine own defence,
+Not of any malice, but by chance;
+But mine accuser hath a further meaning.
+
+SEGASTO.
+Words will not here prevail,
+I seek for justice, & justice craves his death.
+
+KING.
+Shepherd, thine own confession hath condemned thee.
+Sirra, take him away, 7 do him to execution straight.
+
+MOUSE.
+So he shall, I warrant him; but do you hear, master
+King, he is kin to a monkey, his neck is bigger than
+his head.
+
+SEGASTO.
+Come, sirra, away with him, and hang him about the
+middle.
+
+MOUSE.
+Yes, forsooth, I warrant you:  come on, sir.  A, so like
+a sheep biter a looks!
+
+[Enter Amadine and a boy with a bear's head.]
+
+AMADINE.
+Dread sovereign and wellbeloved sire,
+On bended knees I crave the life of this
+Condemned shepherd, which heretofore preserved
+The life of thy sometime distressed daughter.
+
+KING.
+Preserved the life of my sometime distress daughter?
+How can that be?  I never knew the time
+Wherein thou wast distressed; I never knew the day
+But that I have maintained thy state,
+As best beseemed the daughter of a king.
+I never saw the shepherd until now.
+How comes it, then, that he preserved thy life?
+
+AMADINE.
+Once walking with Segasto in the woods,
+Further than our accustomed manner was,
+Right before us, down a steep fall hill,
+A monstrous ugly bear doth hie him fast
+To meet us both:  now whether this be true,
+I refer it to the credit of Segasto.
+
+SEGASTO.
+Most true, and like your majesty.
+
+KING.
+How then?
+
+AMADINE.
+The bear, being eager to obtain his prey,
+Made forward to us with an open mouth,
+As if he meant to swallow us both at once;
+The sight whereof did make us both to dread,
+But specially your daughter Amadine,
+Who, for I saw no succour incident
+But in Segasto's valour, I grew desperate,
+And he most cowardlike began to fly--
+Left me distressed to be devoured of him.
+How say you, Segasto, is it not true?
+
+KING.
+His silence verifies it to be true.  What then?
+
+AMADINE.
+Then I amazed, distressed, all alone,
+Did hie me fast to scape that ugly bear,
+But all in vain, for, why, he reached after me,
+And hardly I did oft escape his paws,
+Till at the length this shepherd came,
+And brought to me his head.
+Come hither boy:  lo, here it is,
+Which I present unto your majesty.
+
+KING.
+The slaughter of this bear deserves great fame.
+
+SEGASTO.
+The slaughter of a man deserves great blame.
+
+KING.
+Indeed occasion oftentimes so falls out.
+
+
+SEGASTO.
+Tremelio in the wars, O King, preserved thee.
+
+AMADINE.
+The shepherd in the woods, o king, preserved me.
+
+SEGASTO.
+Tremelio fought when many men did yield.
+
+AMADINE.
+So would the shepherd, had he been in field.
+
+MOUSE.
+So would my master, had he not run away.
+
+SEGASTO.
+Tremelio's force saved thousands from the foe.
+
+AMADINE.
+The shepherd's force would have saved thousands more.
+
+MOUSE.
+Aye, shipsticks, nothing else.
+
+KING.
+Segasto, cease to accuse the shepherd,
+His worthiness deserves a recompense,
+All we are bound to do the shepherd good:
+Shepherd, whereas it was my sentence, thou shouldst die,
+So shall my sentence stand, for thou shalt die.
+
+SEGASTO.
+Thanks to your majesty.
+
+KING.
+But soft, Segasto, not for this offence.--
+Long maist thou live, and when the sisters shall decree
+to cut in twain the twisted thread of life,
+Then let him die: for this I set thee free:
+And for thy valour I will honour thee.
+
+MUCEDORUS.
+Thanks to your majesty.
+
+KING.
+Come, daughter, let us now depart, to honour the
+worthy valour of the shepherd with our rewards.
+
+[Exeunt.]
+
+MOUSE.
+O master, hear you, you have made a fresh hand
+now you would be slow, you; why, what will you 
+do now? you have lost me a good occupation by 
+the means.  Faith, master, now I cannot hang the
+shepherd, I pray you, let me take the pains to hang
+you:  it is but half an hour's exercise.
+
+SEGASTO.
+You are still in your knavery, but sith a I cannot
+have his life I will procure his banishment for ever.
+Come one, sirra.
+
+MOUSE.
+Yes, forsooth, I come.--Laugh at him, I pray you.
+
+[Exeunt.]
+
+
+ACT III. SCENE I. Grove near the Court.
+
+[Enter Mucedorus solus.]
+
+MUCEDORUS.
+From Amadine and from her father's court,
+With gold and silver and with rich rewards,
+Flowing from the banks of golden treasuries,--
+More may I boast and say: but I,
+Was never shepheard in such dignity.
+
+[Enter the messenger and the clown.]
+
+MESSENGER.
+All hail, worthy shepherd.
+
+MOUSE.
+All reign, lowly shepherd..
+
+MUCEDORUS.
+Welcome, my friends; from whence come you?
+
+MESSENGER.
+The King and Amadine greets thee well, and after
+greetings done, bids thee depart the court: shepherd,
+begone.
+
+MUCEDORUS.
+Whose words are these? came these from Amadine?
+  
+MESSENGER.
+Aye, from Amadine.
+
+MOUSE.
+Aye, from Amadine.
+
+MUCEDORUS.
+Ah, luckless fortune, worse than Phaeton's tale,
+My former bliss is now become my bale.
+
+MOUSE.
+What, wilt thou poison thy self?
+
+MUCEDORUS.
+My former heaven is now become my hell.
+
+MOUSE.
+The worse ale house that I ever came in, in all my life.
+
+MUCEDORUS.
+What shall I do?
+
+MOUSE.
+Even go hang thy self half an hour.
+
+MUCEDORUS.
+Can Amadine so churlishly command,
+To banish the shepherd from her Father's court?
+
+MESSENGER.
+What should shepherds do in the court?
+
+MOUSE.   
+What should shepherds do amongst us? have we not
+Lords enough on us in the court?
+
+MUCEDORUS.
+Why, shepherds are men, and kings are no more.
+
+
+MESSENGER.
+Shepherds are men and masters over their flock.
+
+MOUSE.
+That's a lie:  who pays them their wages then?
+
+MESSENGER.
+Well, you are always interrupting of me, but you
+are best look to him, least you hang for him when
+he is gone.
+
+[Exit.]
+
+[The Clown sings.]
+
+MOUSE.
+And you shall hang for company,
+For leaving me alone.
+Shepherd, stand forth and hear thy sentence:
+Shepherd, begone within three days in pain of
+My displeasure:  shepherd, begone; shepherd, begone;
+begone, begone, begone, shepherd, shepherd, shepherd.
+
+[Exit.]
+
+MUCEDORUS.
+And must I go, and must I needs depart?
+Ye goodly groves, partakers of my songs
+In time tofore when fortune did not frown,
+Pour forth your plaints and wail a while with me;
+And thou bright sun, my comfort in the cold,
+Hide, hide thy face and leave me comfortless;
+Ye wholesome herbs, and sweet smelling favors,
+Ye each thing else prolonging life of man,
+Change, change your wonted course, that I,
+Wanting your aide, in woeful sort may die.
+
+[Enter Amadine and Ariana her maid.]
+
+AMADINE.
+Ariana, if any body ask for me,
+Make some excuse till I return.
+
+ARIANA.
+What and Segasto call?
+
+
+AMADINE.
+Do thou the like to him; I mean not to stay long.
+
+[Exit Ariana.]
+
+MUCEDORUS.
+This voice so sweet my pining spirits revives.
+
+AMADINE.
+Shepherd, well met; tell me how thou doest.
+
+MUCEDORUS.
+I linger life, yet wish for speedy death.
+
+AMADINE.
+Shepherd, although thy banishment already
+Be decreed, and all against my will,
+Yet Amadine--
+
+MUCEDORUS.
+Ah, Amadine, to hear of banishment
+Is death, aye, double death to me,
+But since I must depart, one thing I crave.
+
+AMADINE.
+Say on with all my heart.
+
+MUCEDORUS.
+That in absence, either far or near,
+You honor me, as servant, with your name.
+
+AMADINE.
+Not so.
+
+MUCEDORUS.
+And why?
+
+AMADINE.
+I honour thee, as sovereign, with my heart.
+
+MUCEDORUS.
+A shepherd and a sovereign? nothing like.
+
+AMADINE.
+Yet like enough where there is no dislike.
+
+
+MUCEDORUS.
+Yet great dislike, or else no banishment.
+
+AMADINE.
+Shepherd, it is only
+Segasto that procures thy banishment.
+
+MUCEDORUS.
+Unworthy wights are most in jealousy.
+
+AMADINE.
+Would God they would free thee from banishment,
+Or likewise banish me.
+
+MUCEDORUS.
+Amen, say I, to have your company.
+
+AMADINE.
+Well, shepherd, sith thou sufferest this for my sake,
+With thee in exile also let me live--
+On this condition, shepherd, thou canst love.
+
+MUCEDORUS.
+No longer love, no longer let me live!
+
+AMADINE.
+Of late I loved one indeed, now love I none but
+only thee.
+
+MUCEDORUS.
+Thanks, worthy princess; I borne likewise,
+Yet smother up the blast,
+I dare not promise what I may perform.
+
+AMADINE.
+Well, shepherd, hark what I shall say:
+I will return unto my Father's court,
+There for to provide me of such necessaries,
+As for our journey I shall think most fit;
+This being done, i will return to thee.
+Do thou, therefore, appoint the place where we may meet.
+
+MUCEDORUS.
+Down in the valley where I slew the bear:
+And there doth grow a fair broad branched beech,
+That overshades a well; so who comes first
+Let them abide the happy meeting of us both.
+How like you this?
+
+AMADINE.
+I like it very well.
+
+MUCEDORUS.
+Now, if you please, you may appoint the time.
+
+AMADINE.
+Full three hours hence, God willing, I will return.
+
+MUCEDORUS.
+The thanks that Paris gave the Grecian queen
+The like doth Mucedorus yield.
+
+AMADINE.
+Then, Mucedorus, for three hours farewell.
+
+[Exit.]
+
+MUCEDORUS.
+Your departure, lady, breeds a privy pain.
+
+[Exit.]
+
+
+ACT III. SCENE II. The Court.
+
+[Enter Segasto solus.]
+
+SEGASTO.
+Tis well, Segasto, that thou hast thy will;
+Should such a shepherd, such a simple swain
+As he, eclipse the credit famous through
+The court?  No, ply, Segasto, ply:
+Let it not in Arragon be said,
+A shepherd hath Segasto's honour won.
+
+[Enter Mouse the clown calling his master.]
+
+MOUSE.
+What ho, master, will you come away?
+
+SEGASTO.
+Will you come hither?  I pray you, what's the
+matter?
+
+MOUSE.
+Why, is it not past eleven a clock?
+
+SEGASTO.
+How then, sir?
+
+MOUSE.
+I pray you, come away to dinner.
+
+SEGASTO.
+I pray you, come hither.
+
+MOUSE.
+Here's such a do with you! will you never come?
+
+SEGASTO.
+I pray you, sir, what news of the message I sent
+you about?
+
+MOUSE.
+I tell you all the messes be on the table already.
+There wants not so much as a mess of mustard 
+half an hour ago.
+
+SEGASTO.
+Come, sir, your mind is all upon your belly;
+You have forgotten what I did bid you do.
+
+MOUSE.
+Faith, I know nothing, but you bade me go to
+breakfast.
+
+SEGASTO.
+Was that all?
+
+MOUSE.
+Faith, I have forgotten it; the very scent of the
+meat hath made me forget it quite.
+
+SEGASTO.
+You have forgotten the arrant I bid you do?
+
+MOUSE.
+What arrant? an arrant knave, or arrant whore?
+
+SEGASTO.
+Why, thou knave, did I not bid thee banish the
+shepherd?
+
+MOUSE.
+O, the shepherd's bastard.
+
+SEGASTO.
+I tell thee, the shepherd's banishment.
+
+MOUSE.
+I tell you the shepherd's bastard shall be well kept;
+I'll look to it myself else; but I pray you, come away
+to dinner.
+
+SEGASTO.
+Then you will not tell me whether you have banished
+him or no?
+
+MOUSE.
+Why, I cannot say banishment, and you would give me 
+a thousand pounds to say so.
+
+SEGASTO.
+Why, you whoreson slave, have you forgotten that I
+sent you and another to drive away the shepherd.
+
+MOUSE.
+What an ass are you; here's a stir indeed:  here's 
+'message,' 'arrant,' 'banishment,' and I cannot tell what.
+
+SEGASTO.
+I pray you, sir, shall I know whether you have drove him
+away?
+
+MOUSE.
+Faith, I think I have; and you will not believe me, ask my
+staff.
+
+SEGASTO.
+Why, can thy staff tell?
+
+MOUSE.
+Why, he was with me to.
+
+
+SEGASTO.
+Then happy I that have obtained my will.
+
+MOUSE.
+And happier I, if you would go to dinner.
+
+SEGASTO.
+Come, sirra, follow me.
+
+MOUSE.
+I warrant you, I will not loose an inch of you,
+now you are going to dinner.--I promise you, I
+thought seven year before I could get him away.
+
+[Exeunt.]
+
+
+ACT III. SCENE III. The Forest.
+
+[Enter Amadine sola.]
+
+AMADINE.
+God grant my long delay procures no harm
+Nor this my tarrying frustrate my pretence.
+My Mucedorus surely stays for me,
+And thinks me over long:  at length I come
+My present promise to perform.
+Ah, what a thing is firm unfained love!
+What is it which true love dares not tempt?
+My father he may make, but I must match;
+Segasto loves, but Amadine must like,
+Where likes her best; compulsion is a thrall:
+No, no, the hearty choice is all in all,
+The shepherd's virtue Amadine esteems.
+But, what, me thinks my shepherd is not come.
+I muse at that, the hour is sure at hand:
+Well here I'll rest till Mucedorus come.
+
+[She sits her down.]
+
+[Enter Bremo looking about, hastily taketh hold
+of her.]
+
+BREMO.
+A happy prey! now, Bremo, feed on flesh.
+Dainties, Bremo, dainties, thy hungry panch to fill!
+Now glut thy greedy guts with luke warm blood!
+Come, fight with me, I long to see thee dead.
+
+AMADINE.
+How can she fight that weapons cannot wield?
+
+BREMO.
+What, canst not fight? then lie thou down and die.
+
+AMADINE.
+What, must I die?
+
+BREMO.
+What needs these words?  I thirst to suck thy blood.
+
+AMADINE.
+Yet pity me and let me live a while.
+
+BREMO.
+No pity I, I'll feed upon thy flesh,
+I'll tear thy body piecemeal joint from joint.
+
+AMADINE.
+Ah, now I want my shepherd's company.
+
+BREMO.
+I'll crush thy bones betwixt two oaken trees.
+
+AMADINE.
+Haste, shepherd, haste, or else thou comst too late.
+
+BREMO.
+I'll suck the sweetness from thy marie bones.
+
+AMADINE.
+Ah spare, ah spare to shed my guiltless blood!
+
+BREMO.
+With this my bat will I beat out thy brains.
+Down, down, I say, prostrate thy self upon the ground.
+
+AMADINE.
+Then, Mucedorus, farewell; my hoped joys, farewell.
+Yea, farewell life, and welcome present death!
+
+[She kneels.]
+
+To thee, O God, I yield my dying ghost.
+
+BREMO.
+Now, Bremo, play thy part.--
+How now, what sudden chance is this?
+My limbs do tremble and my sinews shake,
+My unweakened arms have lost their former force:
+Ah Bremo, Bremo, what a foil hast thou,
+That yet at no time ever wast afraid
+To dare the greatest gods to fight with thee,
+
+[He strikes.]
+
+And now want strength for one down driving blow!
+Ah, how my courage fails when I should strike:
+Some new come spirit, abiding in my breast,
+Sayth, 'spare her, Bremo, spare her, do not kill.'
+Shall I spare her which never spared any?
+To it, Bremo, to it, say again.--
+I cannot wield my weapons in my hand;
+Me thinks I should not strike so fair a one:
+I think her beauty hath bewitched my force
+Or else with in me altered nature's course.
+Aye, woman, wilt thou live in woods with me?
+
+AMADINE.
+Fain would I live, yet loath to live in woods.
+
+BREMO.
+Thou shalt not choose, it shall be as I say, &
+therefore, follow me.
+
+[Exit.]
+
+
+ACT III. SCENE IV. The same.
+
+[Enter Mucedorus solus.]
+
+MUCEDORUS.
+It was my will an hour ago and more,
+As was my promise, for to make return,
+But other business hindered my pretence.
+It is a world to see when man appoints,
+And purposely one certain thing decrees,
+How many things may hinder his intent.
+What one would wish, the same is farthest off:
+But yet th' appointed time cannot be past,
+Nor hath her presence yet prevented me.
+Well, here I'll stay, and expect her coming.
+
+[They cry within, 'hold him, stay him, hold.']
+
+Some one or other is pursued, no doubt;
+Perhaps some search for me:  tis good
+To doubt the worst, therefore I'll begone.
+
+[Exit.]
+
+
+ACT III. SCENE V. The same.
+
+[Cry within 'hold him, hold him.'  Enter Mouse
+the Clown with a pot.]
+
+MOUSE.
+Hold him, hold him, hold him! here's a stir indeed.
+Here came hue after the crier:  and I was set close 
+at mother Nips' house, and there I called for three
+pots of ale, as tis the manner of us courtiers.  Now,
+sirra, I had taken the maiden head of two of them.
+Now, as I was lifting up the third to my mouth,
+there came:  hold him, hold him! now I could not
+tell whom to catch hold on, but I am sure I caught
+one:  perchance a may be in this pot.  Well, I'll
+see:  mas, I cannot see him yet; well, I'll look a 
+little further.  Mas, he is a little slave, if a be here.  
+Why, here's no body.  All this goes well yet:  but if 
+the old trot should come for her pot--aye, marry,
+there's the matter, but I care not; I'll face her out,
+and call her old rusty, dusty, musty, fusty, crusty
+firebrand, and worse than all that, and so face her
+out of her pot:  but soft, here she comes.
+
+[Enter the old woman.]
+
+OLD WOMAN.
+Come on, you knave:  where's my pot, you knave?
+
+MOUSE.
+Go look your pot:  come not to me for your pot
+twere good for you.
+
+OLD WOMAN.
+Thou liest, thou knave; thou hast my pot.
+
+MOUSE.
+You lie, and you say it.  I your pot!  I know what
+I'll say.
+
+OLD WOMAN.
+Why, what wilt thou say?
+
+MOUSE.
+But say I have him, and thou darst.
+
+OLD WOMAN.
+Why, thou knave, thou hast not only my pot but my
+drink unpaid for.
+
+MOUSE.
+You lie like an old--I will not say whore.
+
+OLD WOMAN.
+Dost thou call me whore? I'll cap thee for my pot.
+
+MOUSE.
+Cap me & thou darest, search me whether I have it
+or no.
+
+[She searcheth him, and he drinketh over her head
+and casts down the pot; she stumbleth at it; then
+they fall together by the ears; she takes her pot and
+goes out.  Exit.]
+
+[Enter Segasto.]
+
+SEGASTO.
+How now, sirra, what's the matter?
+
+MOUSE.
+Oh, flies, master, flies.
+
+SEGASTO.
+Flies? where are they?
+
+MOUSE.
+Oh here, master, all about your face.
+
+SEGASTO.
+Why, thou liest; I think thou art mad.
+
+MOUSE.
+Why, master, I have killed a duncart full at the least.
+
+SEGASTO.
+Go to, sirra! leaving this idle talk, give ear to me. 
+
+MOUSE.
+How? give you one of my ears? not & you were ten
+masters.
+
+SEGASTO.
+Why, sir, I bid you give ear to my words.
+
+MOUSE.
+I tell you I will not be made a curtall for no man's
+pleasure.
+
+SEGASTO.
+I tell thee, attend what I say:  go thy ways straight
+and rear the whole town.
+
+MOUSE.
+How? rear the town? even go your self; it is more
+than I can do:  why, do you think I can rear a town,
+that can scarce rear a pot of ale to my head?  I should
+rear a town, should I not?
+
+SEGASTO.
+Go to the custable and make a privy search, for the
+shepherd is run away with the King's daughter.
+
+MOUSE.
+How? is the shepherd run away with the king's
+daughter? or is the king's daughter run away with
+the shepherd?
+
+SEGASTO.
+I cannot tell, but they are both gone together.
+
+MOUSE.
+What a fool is she to run away with the shepherd!
+why, I think I am a little handsomer man than the
+shepherd my self; but tell me, master, must I make
+a privy search, or search in the privy?
+
+SEGASTO.
+Why, doest thou think they will be there?
+
+MOUSE.
+I cannot tell.
+
+SEGASTO.
+Well, then, search every where; leave no place 
+unsearched for them.
+
+[Exit.]
+
+MOUSE.
+Oh now am I in office; now will I to that old
+firebrand's house & will not leave one place
+unsearched:  nay, I'll to her ale stand & drink as
+long as I can stand, & when I have done, I'll let 
+out all the rest, to see if he be not bid in the barrel.
+& I find him not there, I'll to the cupboard; I'll
+not leave one corner of her house unsearched:
+yfaith, ye old crust, I will be with you now.
+
+[Exit.]
+
+
+ACT IV. SCENE I. Valentia. The Court.
+
+[Sound Music.]
+
+[Enter the King of Valentia, Anselmo, Roderigo,
+Lord Borachius, with others.]
+
+KING OF VALENTIA.
+Enough of Music, it but adds to torment;
+Delights to vexed spirits are as Dates
+Set to a sickly man, which rather cloy than comfort:
+Let me entreat you to entreat no more.
+
+RODERIGO.
+Let your strings sleep; have done there.
+
+[Let the music cease.]
+
+KING OF VALENTIA.
+Mirth to a soul disturb'd are embers turn'd,
+Which sudden gleam with molestation,
+But sooner loose their sight fort;
+Tis Gold bestowed upon a Rioter,
+Which not relieves, but murders him: Tis a Drug
+Given to the healthful, Which infects, not cures.
+How can a Father that hath lost his Son,
+A Prince both wise, virtuous, and valiant,
+Take pleasure in the idle acts of Time?
+No, no; till Mucedorus I shall see again,
+All joy is comfortless, all pleasure pain.
+
+ANSELMO.
+Your son my lord is well.
+
+KING OF VALENTIA.
+I pre-thee, speak that thrice.
+
+ANSELMO.
+The Prince, you Son, is safe.
+
+KING OF VALENTIA.
+O where, Anselmo? surfeit me with that.
+
+ANSELMO.
+In Aragon, my Liege;
+And at his parture, Bound my secrecy,
+By his affectious love, not to disclose it:
+But care of him, and pity of your age,
+Makes my tongue blab what my breast vow'd
+   concealment.
+
+KING OF VALENTIA.
+Thou not deceivest me?
+I ever thought thee What I find thee now,
+An upright, loyal man.  But what desire,
+Or young-fed humour Nurst within the brain,
+Drew him so privately to Aragon?
+
+ANSELMO.
+A forcing Adamant:
+Love, mixt with fear and doubtful jealousy,
+Whether report guilded a worthless trunk,
+Or Amadine deserved her high extolment.
+
+KING OF VALENTIA.
+See our provision be in readiness;
+Collect us followers of the comeliest hue
+For our chief guardians, we will thither wend:
+The crystal eye of Heaven shall not thrice wink,
+Nor the green Flood six times his shoulders turn,
+Till we salute the Aragonian King.
+Music speak loudly now, the season's apt,
+For former dolours are in pleasure wrapt.
+
+[Exeunt omnes.]
+
+
+ACT IV. SCENE II.  The Forest.
+
+[Enter Mucedorus to disguise himself.]
+
+MUCEDORUS.
+Now, Mucedorus, whither wilt thou go?
+Home to thy father, to thy native soil,
+Or try some long abode within these woods?
+Well, I will hence depart and hie me home.--
+What, hie me home, said? that may not be;
+In Amadine rests my felicity.
+Then, Mucedorus, do as thou didst decree:
+Attire thee hermit like within these groves,
+Walk often to the beach and view the well,
+Makes settles there and seat thy self thereon,
+And when thou feelest thy self to be a thirst,
+Then drink a hearty draught to Amadine.
+No doubt she thinks on thee,
+And will one day come pledge thee at this well.
+Come, habit, thou art fit for me:
+
+[He disguiseth himself.]
+
+No shepherd now, a hermit I must be.
+Me thinks this fits me very well;
+Now must I learn to bear a walking staff,
+And exercise some gravity withall.
+
+[Enter the Clown.]
+
+MOUSE.
+Here's throw the wods, and throw the wods, to
+look out a shepherd & a stray king's daughter:
+but soft, who have we here? what art thou?
+
+MUCEDORUS.
+I am a hermit.
+
+MOUSE.
+An emmet?  I never saw such a big emmet in
+all my life before.
+
+MUCEDORUS.
+I tell you, sir, I am an hermit, one that leads a
+solitary life within these woods.
+
+MOUSE.
+O, I know thee now, thou art he that eats up all
+the hips and haws; we could not have one piece
+of fat bacon for thee all this year.
+
+MUCEDORUS.
+Thou dost mistake me; but I pray thee, tell me
+what dost thou seek in these woods?
+
+MOUSE.
+What do I seek? for a stray King's daughter run
+away with a shepherd.
+
+MUCEDORUS.
+A stray King's daughter run away with a shepherd.
+Wherefore? canst thou tell?
+
+MOUSE.
+Yes, that I can; tis this:  my master and Amadine,
+walking one day abroad, nearer to these woods
+than they were used--about what I can not tell--but
+toward them comes running a great bear.  Now my
+master, he played the man and run away, & Amadine 
+crying after him:  now, sir, comes me a shepherd &
+strikes off the bear's head.  Now whether the bear
+were dead before or no I cannot tell, for bring twenty
+bears before me and bind their hands & feet and I'll
+kill them all:--now ever since Amadine hath been in
+love with the shepherd, and for good will she's even
+run away with the shepherd.
+
+MUCEDORUS.
+What manner of man was a? canst describe him unto me?
+
+MOUSE.
+Scribe him? aye, I warrant you, that I can:  a was a 
+little, low, broad, tall, narrow, big, well favoured 
+fellow, a jerkin of white cloth, and buttons of the same
+cloth.
+
+MUCEDORUS.
+Thou describest him well, but if I chance to see any
+such, pray you, where shall I find you, or what's your
+name?
+
+MOUSE.
+My name is called master mouse.
+
+MUCEDORUS.
+Oh, master mouse, I pray you what office might you
+bear in the court?
+
+MOUSE.
+Marry, sir, I am a rusher of the stable.
+
+MUCEDORUS.
+O, usher of the table.
+
+MOUSE.
+Nay, I say rusher and I'll prove mine office good; for
+look, sir, when any comes from under the sea or so,
+and a dog chance to blow his nose backward, then with
+a whip I give him the good time of the day, and straw
+rushes presently:  therefore, I am a rusher, a high office,
+I promise ye.
+
+MUCEDORUS.
+But where shall I find you in the Court?
+
+MOUSE.
+Why, where it is best being, either in the kitchen a
+eating or in the buttery drinking:  but if you come, I
+will provide for thee a piece of beef & brewis knockle
+deep in fat; pray you, take pains, remember master
+mouse.
+
+[Exit.]
+
+
+MUCEDORUS.
+Aye, sir, I warrant I will not forget you.  Ah, Amadine,
+What should become of thee?
+Whither shouldst thou go so long unknown?
+With watch and ward each passage is beset,
+So that she cannot long escape unknown.
+Doubtless she hath lost her self within these woods
+And wandring to and fro she seeks the well,
+Which yet she cannot find; therefore will I seek her out.
+
+[Exit.]
+
+
+ACT IV. SCENE III. The same.
+
+[Enter Bremo and Amadine.]
+
+BREMO.
+Amadine, how like you Bremo & his woods?
+
+AMADINE.
+As like the woods of Bremo's cruelty:
+Though I were dumb and could not answer him,
+The beasts themselves would with relenting tears
+Bewail thy savage and unhumane deeds.
+
+BREMO.
+My love, why dost thou murmur to thy self?
+Speak louder, for thy Bremo hears thee not.
+
+AMADINE.
+My Bremo? no, the shepherd is my love.
+
+BREMO.
+Have I not saved thee from sudden death,
+Giving thee leave to live that thou mightst love?
+And dost thou whet me on to cruelty?
+Come kiss me, sweet, for all my favours past.
+
+AMADINE.
+I may not, Bremo, and therefore pardon me.
+
+BREMO.
+See how she flings away from me; I will follow
+And give a rend to her.  Deny my love!
+Ah, worm of beauty, I will chastice thee;
+Come, come, prepare thy head upon the block.
+
+AMADINE.
+Oh, spare me, Bremo, love should limit life,
+Not to be made a murderer of him self.
+If thou wilt glut thy loving heart with blood,
+Encounter with the lion or the bear,
+And like a wolf pray not upon a lamb.
+
+BREMO.
+Why then dost thou repine at me?
+If thou wilt love me thou shalt be my queen:
+I will crown thee with a chaplet made of Ivy,
+And make the rose and lily wait on thee:
+I'll rend the burley branches from the oak,
+To shadow thee from burning sun.
+The trees shall spread themselves where thou dost go,
+And as they spread, I'll trace along with thee.
+
+AMADINE.
+ [Aside.] You may, for who but you?
+
+BREMO.
+Thou shalt be fed with quails and partridges,
+With black birds, larks, thrushes and nightingales.
+Thy drink shall be goat's milk and crystal water,
+Distilled from the fountains & the clearest springs.
+And all the dainties that the woods afford.
+I'll freely give thee to obtain thy love.
+
+AMADINE.
+[Aside.]  You may, for who but you?
+
+BREMO.
+The day I'll spend to recreate my love
+With all the pleasures that I can devise,
+And in the night I'll be thy bedfellow,
+And lovingly embrace thee in mine arms.
+
+AMADINE.
+[Aside.]  One may, so may not you.
+
+BREMO.
+The satyrs & the woodnymphs shall attend on thee
+And lull thee a sleep with music's sound,
+And in the morning when thou dost awake,
+The lark shall sing good morn to my queen,
+And whilst he sings, I'll kiss my Amadine.
+
+AMADINE.
+[Aside.]  You may, for who but you?
+
+BREMO.
+When thou art up, the wood lanes shall be strawed
+With violets, cowslips, and sweet marigolds
+For thee to trample and to trace upon,
+And I will teach thee how to kill the deer,
+To chase the hart and how to rouse the roe,
+If thou wilt live to love and honour me.
+
+AMADINE.
+[Aside.]  You may, for who but you?
+
+[Enter Mucedorus.]
+
+BREMO.
+Welcome, sir,
+An hour ago I looked for such a guest.
+Be merry, wench, we'll have a frolic feast:
+Here's flesh enough to suffice us both.
+Stay, sirra, wilt thou fight or dost thou yeel to die?
+
+MUCEDORUS.
+I want a weapon; how can I fight?
+
+BREMO.
+Thou wants a weapon? why then thou yeelst to die.
+
+MUCEDORUS.
+I say not so I do not yield to die.
+
+BREMO.
+Thou shalt not choose.  I long to see thee dead.
+
+AMADINE.
+Yet spare him, Bremo, spare him.
+
+BREMO.
+Away, I say, I will not spare him.
+
+MUCEDORUS.
+Yet give me leave to speak.
+
+BREMO.
+Thou shalt not speak.
+
+AMADINE.
+Yet give him leave to speak for my sake.
+
+BREMO.
+Speak on, but be not over long.
+
+MUCEDORUS.
+In time of yore, when men like brutish beasts
+Did lead their lives in loathsome cells and woods
+And wholly gave themselves to witless will,
+A rude unruly rout, then man to man
+Became a present prey, then might prevailed,
+The weakest went to walls:
+Right was unknown, for wrong was all in all.
+As men thus lived in this great outrage,
+Behold one Orpheus came, as poets tell,
+And them from rudeness unto reason brought,
+Who led by reason soon forsook the woods.
+Instead of caves they built them castles strong;
+Cities and towns were founded by them then:
+Glad were they, they found such ease,
+And in the end they grew to perfect amity;
+Weighing their former wickedness,
+They termed the time wherein they lived then
+A golden age, a goodly golden age.
+Now, Bremo, for so I hear thee called,
+if men which lived tofore as thou dost now,
+Wily in wood, addicted all to spoil,
+Returned were by worthy Orpheus' means,
+Let me like Orpheus cause thee to return
+From murder, bloodshed and like cruelty.
+What, should we fight before we have a cause?
+No, let's live and love together faithfully.
+I'll fight for thee.
+
+BREMO.
+Fight for me or die:  or fight or else thou diest.
+
+AMADINE.
+Hold, Bremo, hold!
+
+BREMO.
+Away, I say, thou troublest me.
+
+AMADINE.
+You promised me to make me your queen.
+
+BREMO.
+I did, I mean no less.
+
+AMADINE.
+You promised that I should have my will.
+
+BREMO.
+I did, I mean no less.
+
+AMADINE.
+Then save this hermit's life, for he may save us both.
+
+BREMO.
+At thy request I'll spare him, but never any after
+him.  Say, hermit, what canst thou do?
+
+MUCEDORUS.
+I'll wait on thee, sometime upon the queen.  Such
+Service shalt thou shortly have as Bremo never had.
+
+[Exeunt.]
+
+
+ACT IV. SCENE IV. The Court.
+
+[Enter Segasto, the Clown, and ROMBELO.]
+
+SEGASTO.
+Come, sirs; what, shall I never have you find out
+Amadine and the shepherd?
+
+MOUSE.
+And I have been through the woods, and through 
+the woods, and could see nothing but an emet.
+
+ROMBELO.
+Why, I see thousand emets; thou meanest a little one?
+
+MOUSE.
+Nay, that emet that I saw was bigger than thou art.
+
+ROMBELO.
+Bigger than I? what a fool have you to your man:
+I pray you, master, turn him away.
+
+SEGASTO.
+But dost thou hear? was he not a man?
+
+MOUSE.
+I think he was, for he said he did lead a saltseller
+life about the woods.
+
+SEGASTO.
+Thou wouldest say a solitary life about the woods.
+
+MOUSE.
+I think it was so, indeed.
+
+ROMBELO.
+I thought what a fool thou art.
+
+MOUSE.
+Thou art a wise man! why, he did nothing but sleep 
+since he went.
+
+SEGASTO.
+But tell me, Mouse, how did he go?
+
+MOUSE.
+In a white gown and a white hat on his head, and a
+staff in his hand.
+
+SEGASTO.
+I thought so:  it was a hermit that walked a solitary
+life in the woods.  Well, get you to dinner, and after
+never leave seeking till you bring some news of them,
+or I'll hang you both.
+
+[Exit.]
+
+MOUSE.
+How now, Rombelo? what shall we do now?
+
+ROMBELO.
+Faith, I'll home to dinner, and afterward to sleep.
+
+MOUSE.
+Why, then, thou wilt be hanged.
+
+ROMBELO.
+Faith, I care not, for i know I shall never find them:
+well, I'll once more abroad, & if I cannot find them,
+I'll never come home again.
+
+MOUSE.
+I tell thee what, Rombelo, thou shalt go in at one
+end of the wood and I at the other, and we will meet
+both together at the midst.
+
+ROMBELO.
+Content! let's away to dinner.
+
+[Exeunt.]
+
+
+ACT V. SCENE I. The Forest.
+
+[Enter Mucedorus solus.]
+
+MUCEDORUS.
+Unknown to any here within these woods
+With bloody Bremo do I led my life.
+The monster, he doth murther all he meets,
+He spareth none and none doth him escape.
+Who would continue, who but only I,
+In such a cruel cutthroat's company?
+Yet Amadine is there; how can I choose?
+Ah, silly soul, how often times she sits
+And sighs, and calls:  'come, shepherd, come,
+Sweet Mucedorus, come and set me free;
+When Mucedorus present stands her by:
+But here she comes.
+
+[Enter Amadine.]
+
+What news, fair Lady, as you walk these woods.
+
+AMADINE.
+Ah, hermit, none but bad & such as thou knowest.
+
+MUCEDORUS.
+How do you like your Bremo and his woods?
+
+AMADINE.
+Not my Bremo nor Bremo his woods.
+
+MUCEDORUS.
+And why not yours? me thinks he loves you well.
+
+AMADINE.
+I like him not, his love to me is nothing worth.
+
+MUCEDORUS.
+Lady, in this me thinks you offer wrong,
+To hate the man that ever loves you best.
+
+AMADINE.
+Ah hermit, I take no pleasure in his love;
+Neither yet doth Bremo like me best.
+
+MUCEDORUS.
+Pardon my boldness, fair lady:  sith we both
+May safely talk now out of Bremo's sight,
+Unfold to me, if so you please, the full discourse
+How, when, and why you came into these woods,
+And fell into this bloody butcher's hands.
+
+AMADINE.
+Hermit, I will;
+Of late a worthy shepherd I did love.
+
+MUCEDORUS.
+A shepherd, lady? sure a man unfit
+To match with you.
+
+AMADINE.
+Hermit, this is true, and when we had--
+
+MUCEDORUS.
+Stay there, the wild man comes.
+Refer the rest until another time.
+
+[Enter Bremo.]
+
+BREMO.
+What secret tale is this? what whispering have we here?
+Villain, I charge thee tell thy tale again.
+
+MUCEDORUS.
+If needs I must, lo, here it is again:
+When as we both had lost the sight of thee,
+It grieved us both, but specially thy queen,
+Who in thy absence ever fears the worst,
+Least some mischance befall your royal grace.
+'Shall my sweet Bremo wander through the woods?
+Toil to and fro for to redress my want,
+Hazard his life; and all to cherish me?
+I like not this,' quoth she,
+And thereupon craved to know of me
+If I could teach her handle weapons well.
+My answer was I had small skill therein,
+But glad, most mighty king, to learn of thee.
+And this was all.
+
+BREMO.
+Wast so? none can dislike of this.
+I'll teach
+You both to fight:  but first, my queen, begin.
+Here, take this weapon; see how thou canst use it.
+
+AMADINE.
+This is too big, I cannot wield it in my arm.
+
+BREMO.
+Ist so? we'll have a knotty crabtree staff
+For thee.--But, sirra, tell me, what saist thou?
+
+MUCEDORUS.
+With all my heart I willing am to learn.
+
+BREMO.
+Then take my staff & see how canst wield it.
+
+MUCEDORUS.
+First teach me how to hold it in my hand.
+
+BREMO.
+Thou holdest it well.
+Look how he doth; thou maist the sooner learn.
+
+MUCEDORUS.
+Next tell me how and when tis best to strike.
+
+BREMO.
+Tis best to strike when time doth serve,
+Tis best to loose no time.
+
+MUCEDORUS.
+[Aside.]  Then now or never is my time to strike.
+
+BREMO.
+And when thou strikest, be sure thou hit the head.
+
+MUCEDORUS.
+The head?
+
+BREMO.
+The very head.
+
+MUCEDORUS.
+Then have at thine!  [He strikes him down head.]
+So, lie there and die,
+A death no doubt according to desert,
+or else a worse as thou deservest a worse.
+
+AMADINE.
+It glads my heart this tyrant's death to see.
+
+MUCEDORUS.
+Now, lady, it remains in you
+To end the tale you lately had begun,
+Being interrupted by this wicked wight.
+You said you loved a shepherd.
+
+AMADINE.
+Aye, so I do, and none but only him,
+And will do still as long as life shall last.
+
+MUCEDORUS.
+But tell me, lady; sith I set you free,
+What course of life do you intend to take?
+
+AMADINE.
+I will disguised wander through the world,
+Till I have found him out.
+
+MUCEDORUS.
+How if you find your shepherd in these woods?
+
+AMADINE.
+Ah, none so happy then as Amadine.
+
+[He discloseth himself.]
+
+MUCEDORUS.
+In tract of time a man may alter much;
+Say, Lady, do you know your shepherd well?
+
+AMADINE.
+My Mucedorus! hath he set me free?
+
+MUCEDORUS.
+Mucedorus he hath set thee free.
+
+AMADINE.
+And lived so long unknown to Amadine!
+
+MUCEDORUS.
+Aye that's a question where of you may not be resolved.
+You know that I am banisht from the court;
+I know likewise each passage is best,
+So that we cannot long escape unknown:
+Therefore my will is this, that we return
+Right through the thickets to the wild man's cave,
+And there a while live on his provision,
+Until the search and narrow watch be past.
+This is my counsel, and I think it best.
+
+AMADINE.
+I think the very same.
+
+MUCEDORUS.
+Come, let's begone.
+
+[Enter the Clown who searches and falls over the wild
+man and so carry him away.]
+
+MOUSE.
+Nay, soft, sir; are you here? a bots on you!  I was like to
+be hanged for not finding you.  We would borrow a 
+certain stray king's daughter of you:  a wench, a wench,
+sir, we would have.
+
+MUCEDORUS.
+A wench of me! I'll make thee eat my sword.
+
+MOUSE.
+Oh Lord! nay, and you are so lusty, I'll call a cooling card 
+for you.  Ho, master, master, come away quickly.
+
+[Enter Segasto.]
+
+SEGASTO.
+What's the matter?
+
+MOUSE.
+Look, master, Amadine & the shepherd:  oh, brave!
+
+SEGASTO.
+What, minion, have I found you out?
+
+MOUSE.
+Nay, that's a lie, I found her out myself.
+
+SEGASTO.
+Thou gadding huswife,
+What cause hadst thou to gad abroad,
+When as thou knowest our wedding day so nigh?
+
+AMADINE.
+Not so, Segasto, no such thing in hand;
+Shew your assurance, then I'll answer you.
+
+SEGASTO.
+Thy father's promise my assurance is.
+
+AMADINE.
+But what he promist he hath not performed.
+
+SEGASTO.
+It rests in thee for to perform the same.
+
+AMADINE.
+Not I.
+
+SEGASTO.
+And why?
+
+AMADINE.
+So is my will, and therefore even so.
+
+MOUSE.
+Master, with a nonie, nonie, no!
+
+SEGASTO.
+Aye, wicked villain, art thou here?
+
+MUCEDORUS.
+What needs these words? we weigh them not.
+
+SEGASTO.
+We weigh them not, proud shepherd!  I scorn
+thy company.
+
+MOUSE.
+We'll not have a corner of thy company.
+
+MUCEDORUS.
+I scorn not thee, nor yet the least of thine.
+
+MOUSE.
+That's a lie, a would have killed me with his
+pugsnando.
+
+SEGASTO.
+This stoutness, Amadine, contents me not.
+
+AMADINE.
+Then seek an other that may you better please.
+
+MUCEDORUS.
+Well, Amadine, it only rests in thee
+Without delay to make thy choice of three:
+There stands Segasto, here a shepherd stands,
+There stands the third; now make thy choice.
+
+MOUSE.
+A Lord at the least I am.
+
+AMADINE.
+My choice is made, for I will none but thee.
+
+SEGASTO.
+A worthy mate, no doubt, for such a wife.
+
+MUCEDORUS.
+And, Amadine, why wilt thou none but me?
+I cannot keep thee as thy father did;
+I have no lands for to maintain thy state.
+Moreover, if thou mean to be my wife,
+Commonly this must be thy use:
+To bed at midnight, up at four,
+Drudge all day and trudge from place to place,
+Whereby our daily vittel for to win;
+And last of all, which is the worst of all,
+No princess then but plain a shepherd's wife.
+
+MOUSE.
+Then, god ge you go morrow, goody shepherd!
+
+AMADINE.
+It shall not need; if Amadine do live,
+Thou shalt be crowned king of Arragon.
+
+MOUSE.
+Oh, master, laugh! when he's King, then I'll be a
+queen.
+
+MUCEDORUS.
+Then know that which ne'er tofore was known:
+I am no shepherd, no Arragonian I,
+But born of Royal blood--my father's of
+Valentia King, my mother queen--who for
+Thy secret sake took this hard task in hand.
+
+AMADINE.
+Ah how i joy my fortune is so good.
+
+SEGASTO.
+Well now i see, Segasto shall not speed;
+But, Mucedorus, I as much do joy,
+To see thee here within our Court of Arragon,
+As if a kingdom had befain me.  This time
+I with my heart surrender it to thee.
+
+[He giveth her unto him.]
+
+And loose what right to Amadine I have.
+
+MOUSE.
+What a barn's door, and born where my father
+Was cunstable! a bots on thee, how dost thee?
+
+MUCEDORUS.
+Thanks, Segasto; but yet you leveled at the crown.
+
+MOUSE.
+Master, bear this and bear all.
+
+SEGASTO.
+Why so, sir?
+
+MOUSE.
+He says you take a goose by the crown.
+
+SEGASTO.
+Go to, sir:  away, post you to the king,
+Whose heart is fraught with careful doubts,
+Glad him up and tell him these good news,
+And we will follow as fast as we may.
+
+MOUSE.
+I go, master; I run, master.
+
+[Exeunt.]
+
+
+ACT V. SCENE II. Open Place near the Court of
+the King of Arragon.
+
+[Enter the King and Collen.]
+
+KING.
+Break, heart, and end my paled woes,
+My Amadine, the comfort of my life,
+How can I joy except she were in sight?
+Her absence breeds sorrow to my soul
+And with a thunder breaks my heart in twain.
+
+COLLEN.
+Forbear those passions, gentle King,
+And you shall see twill turn unto the best,
+And bring your soul to quiet and to joy.
+
+KING.
+Such joy as death, I do assure me that,
+And naught but death, unless of her I hear,
+And that with speed; I cannot sigh thus long--
+But what a tumult do I hear within?
+
+[The cry within, 'joy and happiness!']
+
+COLLEN.
+I hear a noise of over-passing joy
+Within the court; my Lord, be of good comfort--
+And here comes one in haste.
+
+[Enter the Clown running.]
+
+MOUSE.
+A King! a King! a King!
+
+COLLEN.
+Why, how now, sirra? what's the matter?
+
+MOUSE.
+O, tis news for a king, 'tis worth money.
+
+KING.
+Why, sirra, thou shalt have silver and gold if it be
+good.
+
+MOUSE.
+O, tis good, tis good.  Amadine--
+
+KING.
+Oh, what of her? tell me, & I will make thee a knight.
+
+MOUSE.
+How a spright? no, by lady, I will not be a spright.
+Masters, get ye away; if I be a spright, I shall be so lean
+I shall make you all afraid.
+
+COLLEN.
+Thou sot, the King means to make thee a gentleman.
+
+MOUSE.
+Why, I shall want parrell.
+
+KING.
+Thou shalt want for nothing.
+
+MOUSE.
+Then stand away, trick up thy self:  here they come.
+
+[Enter Segasto, Mucedorus, and Amadine.]
+
+
+AMADINE.
+My gratious father, pardon thy disloyal daughter.
+
+KING.
+What do mine eyes behold? my daughter Amadine?
+Rise up, dear daughter & let these, my embracing arms,
+Show some token of thy father's joy,
+Which ever since thy departure hath languished in sorrow.
+
+AMADINE.
+Dear father, never were your sorrows
+Greater than my griefs,
+Never you so desolate as I comfortless;
+Yet, nevertheless, acknowledging my self
+To be the cause of both, on bended knees
+I humbly crave your pardon.
+
+KING.
+I'll pardon thee, dear daughter:  but as for him--
+
+AMADINE.
+Ah, father, what of him?
+
+KING.
+As sure as I am a king, and wear the crown,
+I will revenge on that accursed wretch.
+
+MUCEDORUS.
+Yet, worthy prince, work not thy will in wrath;
+Show favour.
+
+KING.
+Aye, such favour as thou deservest.
+
+MUCEDORUS.
+I do deserve the daughter of a king.
+
+KING.
+Oh, impudent! a shepherd and so insolent!
+
+MUCEDORUS.
+No shepherd I, but a worthy prince.
+
+KING.
+In fair conceit, not princely born.
+
+MUCEDORUS.
+Yes, princely born:  my father is a king,
+My mother Queen, and of Valentia both.
+
+KING.
+What, Mucedorus! welcome to our court.
+What cause hadst thou to come to me disguised?
+
+MUCEDORUS.
+No cause to fear; I caused no offence
+But this:
+Desiring thy daughter's virtues for to see
+Disguised my self from out my father's court.
+Unknown to any, in secret I did rest,
+And passed many troubles near to death;
+So hath your daughter my partaker been,
+As you shall know hereafter more at large,
+Desiring you, you will give her to me,
+Even as mine own and sovereign of my life;
+Then shall I think my travels are well spent.
+
+KING.
+With all my heart, but this--
+Segasto claims my promise made to fore,
+That he should have her as his only wife,
+Before my counsel when we came from war.
+Segasto, may I crave thee let it pass,
+And give Amadine as wife to Mucedorus?
+
+SEGASTO.
+With all my heart, were it far a greater thing,
+And what I may to furnish up there rites
+With pleasing sports and pastimes you shall see.
+
+KING.
+Thanks, good Segasto, I will think of this.
+
+MUCEDORUS.
+Thanks, good my Lord, & while I live
+Account of me in what I can or may.
+
+AMADINE.
+And, good Segasto, these great courtesies
+Shall not be forgot.
+
+MOUSE.
+Why, hark you, master:  bones, what have you
+done?  What, given away the wench you made 
+me take such pains for? you are wise indeed!
+mas, and I had known of that I would have had
+her my self! faither, master, now we may go to
+breakfast with a woodcoke pie.
+
+SEGASTO.
+Go, sir, you were best leave this knavery.
+
+KING.
+Come on, my Lords, let's now to court,
+Where we may finish up the joyfullest day
+That ever hapt to a distressed King.
+Were but thy Father, the Valencia Lord,
+Present in view of this combining knot.
+
+[A shout within.  Enter a Messenger.]
+
+What shout was that?
+
+MESSENGER.
+My Lord, the great Valencia King,
+Newly arrived, entreats your presence.
+
+MUCEDORUS.
+My Father?
+
+KING OF ARRAGON.
+Prepared welcomes give him entertainment:
+A happier Planet never reigned than that,
+Which governs at this hour.
+
+[Sound.  Enter the King of Valencia, Anselmo, Rodrigo,
+Borachius, with others; the King runs and embraces
+his Son.]
+
+KING OF VALENCIA.
+Rise, honour of my age, food to my rest:
+Condemn not mighty King of Aragon
+My rude behaviour, so compelled by Nature,
+That manners stood unknowledged.
+
+KING OF ARRAGON.
+What we have to recite would tedious prove
+By declaration; therefore, in, and feast:
+To morrow the performance shall explain,
+What Words conceal; till then, Drums speak,
+   Bells ring,
+Give plausive welcomes to our brother King.
+
+[Sound Drums and Trumpets.  Exeunt omnes.]
+
+
+EPILOGUE.
+
+[Enter Comedy and Envy.]
+
+COMEDY.
+How now, Envy? what, blushest thou all ready?
+Peep forth, hide not thy head with shame,
+But with a courage praise a woman's deeds.
+Thy threats were vain, thou couldst do me no hurt.
+Although thou seemdst to cross me with despite,
+I overwhelmed, and turned upside down thy block
+And made thy self to stumble at the same.
+
+ENVY.
+Though stumbled, yet not overthrown.
+Thou canst not draw my heart to mildness;
+Yet must I needs confess thou hast done well,
+And played thy part with mirth and pleasant glee:
+Say all this, yet canst thou not conquer me;
+Although this time thou hast got--yet not the conquest
+   neither--
+A double revenge another time I'll have.
+
+COMEDY.
+Envy, spit thy gall;
+Plot, work, contrive; create new fallacies,
+Teem from thy Womb each minute a black Traitor,
+Whose blood and thoughts have twins conception:
+Study to act deeds yet unchronicled,
+Cast native Monsters in the molds of Men,
+Case vicious Devils under sancted Rochets,
+Unhasp the Wicket where all perjureds roost,
+And swarm this Ball with treasons:  do thy worst;
+Thou canst not hell-hound cross my star to night,
+Nor blind that glory, where I wish delight.
+
+ENVY.
+I can, I will.
+
+COMEDY.
+Nefarious Hag, begin,
+And let us tug, till one the mastery win.
+
+ENVY.
+Comedy, thou art a shallow Goose;
+I'll overthrow thee in thine own intent,
+And make thy fall my Comic merriment.
+
+COMEDY.
+Thy policy wants gravity; thou art 
+Too weak.  Speak, Fiend, as how?
+
+ENVY.
+Why, thus:
+From my foul Study will I hoist a Wretch,
+A lean and hungry Meager Cannibal,
+Whose jaws swell to his eyes with chawing Malice:
+And him I'll make a Poet.
+
+COMEDY.
+What's that to th' purpose?
+
+ENVY.
+This scrambling Raven, with his needy Beard,
+Will I whet on to write a Comedy,
+Wherein shall be compos'd dark sentences,
+Pleasing to factious brains:
+And every other where place me a Jest,
+Whose high abuse shall more torment than blows:
+Then I my self (quicker than Lightning)
+Will fly me to a puissant magistrate,
+And weighting with a Trencher at his back,
+In midst of jollity, rehearse those gauls,
+(With some additions)
+So lately vented in your Theater.
+He, upon this, cannot but make complaint,
+To your great danger, or at least restraint.
+
+COMEDY.
+Ha, ha, ha!  I laugh to hear thy folly;
+This is a trap for Boys, not Men, nor such,
+Especially desertful in their doings,
+Whose stay'd discretion rules their purposes.
+I and my faction do eschew those vices.
+But see, O see! the weary Sun for rest
+Hath lain his golden compass to the West,
+Where he perpetual bide and ever shine,
+As David's off-spring, in his happy Clime.
+Stoop, Envy, stoop, bow to the Earth with me,
+Let's beg our Pardons on our bended knee.
+
+[They kneel.]
+
+ENVY.
+My Power has lost her Might; Envy's date's expired.
+Yon splendant Majesty hath felled my sting,
+And I amazed am.
+
+[Fall down and quake.]
+
+COMEDY.
+Glorious and wise Arch-Caesar on this earth,
+At whose appearance, Envy's stroken dumb,
+And all bad things cease operation:
+Vouchsafe to pardon our unwilling error,
+So late presented to your Gracious view,
+And we'll endeavour with excess of pain,
+To please your senses in a choicer strain.
+Thus we commit you to the arms of Night,
+Whose spangled carcass would, for your delight,
+Strive to excell the Day; be blessed, then:
+Who other wishes, let him never speak.
+
+ENVY.
+Amen.
+To Fame and Honour we commend your rest;
+Live still more happy, every hour more blest.
+
+
+FINIS.
+
+
+
+
+
+End of Project Gutenberg Etext of Locrine and Mucedorus, both attributed in part
+to Shakespeare
+PG has multiple editions of William Shakespeare's Complete Works
+

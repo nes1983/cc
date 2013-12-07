@@ -1,0 +1,961 @@
+The Project Gutenberg Etext of Anatomie du Mouvement, poesie
+by Huguette Bertrand
+#2 in our series by Huguette Bertrand
+
+** This is a COPYRIGHTED Project Gutenberg Etext, Details Below **
+**     Please follow the copyright guidelines in this file.     **
+
+Copyright (C) 2002 by Huguette Bertrand
+
+We encourage you to keep this file, exactly as it is, on your
+own disk, thereby keeping an electronic path open for future
+readers.  Please do not remove this header information.
+
+This header should be the first thing seen when anyone starts to
+view the etext. Do not change or edit it without written permission.
+The words are carefully chosen to provide users with the
+information they need to understand what they may and may not
+do with the etext.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*****These Etexts Are Prepared By Thousands of Volunteers!*****
+
+Information on contacting Project Gutenberg to get etexts, and
+further information, is included below.  We need your donations.
+
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+
+
+Title: Anatomie du Mouvement, poesie
+
+Author: Huguette Bertrand
+
+Release Date: October, 2003 [Etext #4562]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on February 10, 2002]
+
+Edition: 10
+
+Language: French
+
+Character set encoding: ASCII
+
+The Project Gutenberg Etext of Anatomie du Mouvement, poesie
+by Huguette Bertrand
+*******This file should be named 7anat10.txt or 7anat10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 7anat11.txt
+VERSIONS based on separate sources get new LETTER, 7anat10a.txt
+
+We are now trying to release all our etexts one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+etexts, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any Etext before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext03 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext03
+
+Or /etext02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2001 as we release over 50 new Etext
+files per month, or 500 more Etexts in 2000 for a total of 4000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 4,000 Etexts.  We need
+funding, as well as continued efforts by volunteers, to maintain
+or increase our production and reach our goals.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted!  For more information
+about donations, please view http://promo.net/pg/donation.html
+We accept PayPal, as well as donation s via NetworkForGood.
+
+Donation checks should be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fundraising
+requirements for other states are met, additions to this list will be
+made and fundraising will begin in the additional states.
+
+We need your donations more than ever!
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**Information prepared by the Project Gutenberg legal advisor**
+(Three Pages)
+
+***START** SMALL PRINT! for COPYRIGHT PROTECTED ETEXTS ***
+
+TITLE AND COPYRIGHT NOTICE:
+
+Anatomie du Mouvement, poesie
+Copyright (C) 2002 by Huguette Bertrand
+
+This etext is distributed by Professor Michael S. Hart through the
+Project Gutenberg Association (the "Project") under the "Project
+Gutenberg" trademark and with the permission of the etext's
+copyright owner.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+
+LICENSE
+You can (and are encouraged!) to copy and distribute this
+Project Gutenberg-tm etext.  Since, unlike many other of the
+Project's etexts, it is copyright protected, and since the
+materials and methods you use will effect the Project's reputation,
+your right to copy and distribute it is limited by the copyright
+laws and by the conditions of this "Small Print!" statement.
+
+  [A]  ALL COPIES: You may distribute copies of this etext
+electronically or on any machine readable medium now known
+or hereafter discovered so long as you:
+
+     (1)  Honor the refund and replacement provisions of this
+"Small Print!" statement; and
+
+     (2)  Pay a royalty to the Foundation of 20% of the gross
+profits you derive calculated using the method you already use
+to calculate your applicable taxes.  If you don't derive
+profits, no royalty is due.  Royalties are payable to "Project
+Gutenberg Literary Archive Foundation" within the 60 days
+following each date you prepare (or were legally required
+to prepare) your annual (or equivalent periodic) tax return.
+
+  [B]  EXACT AND MODIFIED COPIES: The copies you distribute
+must either be exact copies of this etext, including this
+Small Print statement, or can be in binary, compressed, mark-
+up, or proprietary form (including any form resulting from
+word processing or hypertext software), so long as *EITHER*:
+
+     (1)  The etext, when displayed, is clearly readable, and
+does *not* contain characters other than those intended by the
+author of the work, although tilde (~), asterisk (*) and
+underline (_) characters may be used to convey punctuation
+intended by the author, and additional characters may be used
+to indicate hypertext links; OR
+
+     (2)  The etext is readily convertible by the reader at no
+expense into plain ASCII, EBCDIC or equivalent form by the
+program that displays the etext (as is the case, for instance,
+with most word processors); OR
+
+     (3)  You provide or agree to provide on request at no
+additional cost, fee or expense, a copy of the etext in plain
+ASCII.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+This etext may contain a "Defect" in the form of incomplete,
+inaccurate or corrupt data, transcription errors, a copyright
+or other infringement, a defective or damaged disk, computer
+virus, or codes that damage or cannot be read by your
+equipment.  But for the "Right of Replacement or Refund"
+described below, the Project (and any other party you may
+receive this etext from as a PROJECT GUTENBERG-tm etext)
+disclaims all liability to you for damages, costs and
+expenses, including legal fees, and YOU HAVE NO REMEDIES FOR
+NEGLIGENCE OR UNDER STRICT LIABILITY, OR FOR BREACH OF
+WARRANTY OR CONTRACT, INCLUDING BUT NOT LIMITED TO INDIRECT,
+CONSEQUENTIAL, PUNITIVE OR INCIDENTAL DAMAGES, EVEN IF YOU
+GIVE NOTICE OF THE POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.  Some states do not allow disclaimers of
+implied warranties or the exclusion or limitation of
+consequential damages, so the above disclaimers and exclusions
+may not apply to you, and you may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart and the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+
+*SMALL PRINT! Ver.12.12.00 FOR COPYRIGHT PROTECTED ETEXTS*END*
+
+
+
+
+Huguette Bertrand
+
+
+
+
+ANATOMIE DU MOUVEMENT
+
+poesie
+
+
+
+
+
+Editions En Marge
+
+=========================================
+
+                                                                tous ceux que l'on arrache au doute, 
+                                                                je les salue, bouches a nouveau ouvertes, 
+                                                                qui savaient deja ce que signifie le silence
+
+                                                                                                       Rainer-Maria Rilke
+
+
+*   *   *   *   *   *
+
+ESQUISSE
+
+C'est bien avec le poing qu'on recite le jour 
+quand les desirs sont a plaindre 
+En montant le volume du corps 
+les prix grimpent 
+et la folie est a son plus bas 
+Des formes terroristes devancent la memoire 
+Est-ce bien utile d'inventer de nouveaux visages 
+alors que les fenetres ne sont plus etanches 
+Au verso de la brutalite 
+il n'y a que de la poussiere 
+et de l'intimite 
+inventee pour l'anatomie branlante 
+C'est defonce et plein d'impasses 
+et ca chemine vers l'obsession la nuit 
+
+Les muscles se profilent au tangage des mots 
+que la main refuse 
+Ces moments de flottement entre les paumes 
+soulevent des enjeux 
+que les levres ne savent pas dissimuler 
+La journee en toute maladresse brule 
+d'une stimulation affectueuse de l'oeil 
+dessine des zones de haute precision 
+Alerte
+l'heure sonne la strategie 
+quand toutes les paniques ont ete regroupees 
+La ferveur est inevitable 
+La langue et ses malefices organisent 
+des aller-retour d'exil 
+et meme des rapprochements a ciel ouvert 
+
+La violence se fait discrete 
+douce comme un bruissement d'horloge 
+et la reponse est la 
+rouge 
+le soleil se leve encore 
+l'oeil cousu a la memoire 
+du voyageur 
+qui apprend a mourir 
+en cours de route 
+digne de la peur 
+avant le lait 
+apres les sueurs 
+et sa descente au fond des sens 
+comme une digestion 
+lorsque la bouche a plein regime s'ecrie 
+Attendez-moi 
+
+ce grand stress fut oublie 
+sur la batture 
+quand un bateau lent passa 
+aux pieds des enfants 
+trop grands 
+trop chers 
+leurs samedis trop frequentes 
+en attendant le dimanche 
+dans la ville 
+avec ses secrets qui penchent 
+tantot a droite 
+tantot a gauche 
+et le temps qui occupe le temps 
+quand on n'y est pas 
+
+a grands coups de flots 
+la seve des marees 
+embrassa le silence 
+de ces hommes impunis 
+et leurs femmes ont crache leurs visages 
+dans les sables que devorent 
+les vaisseaux endormis
+
+elles ouvrent au large 
+leurs hanches 
+ou le coulis fecond 
+engrosse leurs reves 
+infiniment 
+dans le goudron 
+
+devant ce miroir gris 
+c'etait ecrit 
+que l'oeil magique 
+fixe sur le ventre de l'idolatre 
+labourerait ses nuits 
+sans memoire
+
+le jour venu 
+il n'y aurait plus que des noeuds 
+sur les murs 
+et une parade de sentiments 
+d'origine inconnue 
+sur l'indifference du tapis
+
+c'etait ecrit aussi 
+que la Marie vengeur 
+du haut de son reve 
+briguerait le suffrage theatral 
+et qu'elle contesterait les bonheurs 
+qui font mal 
+
+mais ne reveillez plus la femme 
+qui n'a pas tort 
+de se lever en retard 
+surtout quand elle a passe minuit 
+sans broncher 
+devant une fenetre historique 
+alors que le monde 
+sous de lourdes paupieres 
+defilait sans payer 
+devant un vieux fusil 
+
+a l'heure dite 
+on eteignit les lumieres 
+de la rue 
+jonchee de foules 
+sous le manteau d'un ange gris 
+radoteux
+
+pendant ce temps 
+la superfemelle 
+qui avalait goulument son dejeuner 
+s'etouffa
+
+et vous etes parti 
+sans un mot dans les poches 
+un vieux bout de papier 
+dans vos souliers 
+en cas d'urgence 
+
+apres avoir gruge les villes 
+a petits pas fauves 
+vous etes rentre 
+par la porte arriere 
+l'ame chiffonnee
+
+mais le temps n'y etait plus 
+seul un grincement de coeur 
+enfouissait ses vides 
+dans les noirs secrets 
+d'un refrigerateur
+
+voir ce spasme enorme 
+au bar des megots 
+et les couples a talons hauts 
+une grosse biere passionnee 
+dans la foulee de l'oeil 
+bue comme un role sur mesure 
+
+un spot majuscule et rose 
+sillonne la salle 
+en quete du lieu precis 
+ou se deroulera l'eclat des sens
+
+il pleut a verse sur l'ecriture 
+effacant les sexes joyeux 
+ces jeux de theatre 
+et le retour 
+
+mais ce n'est l'affaire de personne 
+si la terre vieillit 
+d'un reve a la fois 
+avec son passe anterieur 
+evache sur l'horizon 
+devant les hommes et les femmes 
+des morts a plaindre 
+d'avoir vecu 
+en l'espace d'une poussiere 
+sans rincer l'histoire 
+a l'eau de Javel 
+pluvieuse comme un souvenir 
+d'ecriture 
+
+quand ce blues est incertain 
+j'implore les vierges de la modernite 
+les icones de la rue 
+les fonctionnaires et les fous 
+et je consacre mes jours 
+a dormir dans la poubelle du coeur 
+a l'envers
+
+parfois dans la chair 
+il y a des coups de semonce 
+du nucleaire qui pouffe de rire 
+et cette bagatelle qu'on appelle 
+tendresse 
+extra-legere "king size". 
+
+_______________________
+
+CYCLES AMOUREUX
+
+Sous les crocs du soir 
+les ventres amoureux 
+profanent 
+le corps depece du silence 
+ils palpent l'attente 
+jusqu'aux heures affolantes 
+du respir
+
+derriere le tableau 
+les battements de la forme 
+taire l'inconnu 
+cet echappe de la main 
+
+ca meurt toujours 
+a l'oppose d'un echo 
+quand le coeur s'enfonce dans l'absence 
+sous les orages de silences 
+et le tue-mouches
+
+le temps se rupture 
+et le corps vole en eclats 
+sa respiration sous les arbres 
+comme un objet sans repos 
+devenu vegetal 
+
+assises sur le monde 
+les amours lentes 
+greffees a nos tempes 
+s'eloignent comme des vierges ensemencees 
+vers le chaud melange du ciel 
+entre l'extase 
+et son reflet
+
+condamnees 
+elles s'offrent jusqu'aux larmes 
+des cinemas
+
+puis vint le delire 
+puis la mort 
+restituee 
+une derniere fois dans l'haleine 
+comme un tout rassemble 
+
+promise au desert 
+la vie genitale 
+commande des toasts 
+et du cafe 
+se noie dans toutes les directions 
+en laissant tomber ses fruits
+
+mais au pied du lit 
+il y a des novembres 
+abandonnes a la pluie 
+l'alchimie d'une chanson 
+bleu-or 
+et la porte de la memoire 
+toujours fermee 
+quand c'est necessaire 
+
+cet effeuillage discret de l'automne 
+s'achevera 
+des que la paume 
+aura tue le frisson 
+sur la peau ornementale des filles 
+qui grignotent la passion 
+dans l'instantane des amants 
+souls 
+leurs hanches 
+gravees dans le calcaire 
+aux mille glissements de coeur 
+eclates dans l'oeuf 
+
+le corps baise 
+en saumure poetique 
+se fane vite et ras 
+dans le remous des defroques 
+et du lancer leger
+
+sans sourciller 
+le midi mange-tout annonce des mots 
+des nymphes 
+et des moustiques 
+pour les cas d'apres-midi 
+comme si les oreillers etaient en manque 
+sur les draps propres 
+des amours empesees 
+
+enroulee dans le miel triste 
+et la plume d'oie 
+la peau chic 
+hume les bieres d'especes 
+en poursuivant les fossoyeurs 
+jusqu'au dix-huitieme trou
+
+ce dernier cratere amoureux 
+de la chair embrasse 
+a coups d'epee dans la poussiere 
+le cri neuf 
+definitif 
+
+malgre ce discours 
+cet espace blanc 
+et tout ce remplissage du silence 
+qu'on verse sur le pere 
+la mere les enfants 
+il y a memere dans la dramaturgie 
+ordonnee 
+multipliee par l'espace-temps
+
+on la retrouve en double 
+en triple 
+en quadrimoteur 
+sur les ailes du langage 
+elle flotte 
+sur la masse totale du poeme 
+etriquee
+
+devant cette affiche en folie 
+il a failli faire noir 
+mais de parole en parole 
+on s'est trompe de rue 
+puis on a marche sur des trous 
+mous 
+en faisant claquer nos doigts 
+dans l'oreille des sourds
+
+le bec en cul d'poule 
+on retourne au salon 
+l'instant d'une revolte 
+conservee dans la bienseance
+
+a tele-Douceur 
+passe-moi le beurre 
+du bonheur des morts apaises 
+et le popcorn 
+
+viens 
+on va faire la moue ensemble 
+dans un coin d'ombre 
+et puis on se promenera 
+dans la moiteur des yeux 
+sans personne pour nous moucher
+
+on investira le pont d'argile 
+et on tassera nos vieilles peurs 
+dans le courant de l'annee 
+sans interrompre 
+les pigeons dans les beaux draps 
+de soie 
+pour le plaisir des mains 
+et le desir encore 
+
+il n'y a rien d'inquietant 
+quand la chambre est assoupie 
+et que ses effluves aspergent 
+les corps endormis
+
+le chatoiement de la brise sur la peau 
+grise les spasmes 
+et la dentelle des rideaux
+
+comme un vieux fantome rabougri 
+le songe 
+songe 
+il rafle le sommeil 
+et tout recommence 
+
+de memoire distraite 
+on redessine le corps 
+qu'on range dans l'armoire 
+sous une pile de secrets 
+rapieces 
+que le temps renifle 
+en l'absence du poids des lettres 
+et des mots caches
+
+il ne reste plus qu'a disparaitre 
+dans les noirceurs 
+et les idees 
+puis a eteindre ce poeme 
+dans le cendrier 
+
+_______________________
+
+
+EFFLEUREMENT
+
+Affolement a la rencontre de la main 
+memoire a cinq doigts sur la bougeotte du monde 
+cette vagabonde empoigne la chair des images 
+effleure la voix 
+de l'autre
+
+elle ecrit entre les gestes
+jusqu'a la racine des pierres
+pour l'intense de nos sangs froids
+durs
+
+inclinee devant ce mystere 
+la main caresse ouvertement la vie 
+d'un elan vertigineux 
+transporte le sol 
+
+au fond 
+elle a froid 
+et ses bidules ne laissent aucune trace 
+jusqu'au moment 
+ou une petite chose tranquille 
+revint de vacances 
+avec le ciel dans sa valise 
+et des gants pour ramasser 
+les sortileges 
+repandus dans les nervures de l'automne 
+juste avant l'hiver 
+
+au theatre de l'espece 
+l'obstinee explore les desirs 
+jusqu'au ras des brulures
+
+ces espaces nus 
+abandonnes a l'ecriture 
+recomposent la prehistoire 
+a la recherche du mouvement 
+cette force chaude 
+d'un sourire inacheve 
+
+pendant ce temps 
+baiser a blanc au bord du lit 
+au bord de la route 
+au bord du bord 
+tandis qu'un vieux monde ergote 
+a l'angle Gorki et Lafontaine 
+le blues loin des oreilles indiscretes
+
+emmitoufle dans les mythes artificiels 
+l'oeil gitan 
+a travers les barbeles 
+veille
+au milieu 
+
+reprenons a partir de la blessure 
+qu'un matin embue invite 
+entre deux draps ivres 
+le corps en friche 
+embaume de soleil 
+de chocolat fondant 
+accompagne de frites-sauce-fromage 
+octroyees par le ministere 
+de la tourmente federative
+
+forcement 
+les roses ont le mal du tendre 
+quand le bonbon ne fond pas 
+
+mais tout ceci n'est qu'un oeil 
+dans l'oeil de l'autre 
+quand parler de l'amour 
+et d'une tete croche 
+c'est comme froler un voyage 
+lorsque la bouche largue ses amarres 
+sur une vieille peau
+
+en regard de nos mains recueillies
+tous les yeux 
+ont suivi 
+la silhouette du silence 
+vers des ombres a rayures d'enfants sales
+pilles par les jeux des absents
+images brulees
+devenues pays 
+et vastes saisons
+
+cette vision engendre un printemps feroce
+dans le ventre des coutumes 
+ses formes bohemiennes 
+promises a la torture 
+a travers les lieux tiedes 
+de la chair
+
+il se peut qu'une voix 
+a tete chercheuse prononce 
+une tonne de briques 
+sur les braguettes magiques
+qui en ont assez de languir 
+au pied de l'escalier 
+
+tout ca se ramasse a la cuillere 
+au cours d'un brunch menstruel 
+arome de noix 
+de camomille et de the glace 
+bouillie avortee dans des assiettes
+plaquees or 
+flanquees de fourchettes en plastique
+
+oedeme aux yeux 
+qu'allons-nous faire dans ces salles d'eau 
+sinon excrementer des figures de style 
+et "sniffer" des bulles 
+comme des eponges naissantes 
+
+ce bluff quotidien s'assoupit 
+dans le journal intime du matin 
+et les nouvelles croupissent 
+sous le choc des odeurs evenementielles
+
+alors 
+sonne l'heure de la debacle 
+
+_______________________
+
+
+INCIDENCES
+
+Couchee dans le duvet de l'automne 
+je crie en silence 
+sous la pluie verte et sourde 
+mon corps detrempe ramollit 
+et que viennent les mouches 
+braconner sur les restes 
+de ma folie
+
+entourez-moi de vos bruits d'ailes 
+enterrez-moi comme un hasard 
+jusqu'a la prochaine repousse 
+
+dans ce "nowhere" solitaire 
+des seances imaginaires 
+sous les caresses geniales 
+declenchent 
+l'ondulation sauvage 
+electrique
+
+pour l'amour de l'amour 
+cette vague s'abandonne 
+aux gemissements des sources
+mystere de la pluie 
+et des vents millenaires 
+
+enchaine 
+au chant use 
+des cris males 
+le temps s'agenouille
+crible de souvenirs 
+qu'un printemps febrile 
+etale 
+sur les draps livres au desir 
+
+saisir l'idole au bout de l'onde 
+en faire jaillir l'ecume 
+de mes promenades solitaires
+suppliant la rigidite des rocs 
+jusqu'au calme definitif
+
+je ne crois pas a la fin du monde 
+mais je suis polie 
+quand vient le temps de crever l'absence 
+dans la rondeur du paysage 
+
+sur le coeur sangle de metal 
+et de cuir 
+mes mains excessives peignent 
+des memoires 
+pour l'emouvance 
+fabriquee vraie 
+tout pres du loin
+territoires exageres 
+lorsque la silhouette se penche 
+doucement 
+sur l'infime 
+
+en apparat de mots-vampires 
+les dieux ecoeures fanatisent l'ardente 
+epuisee 
+sur les dalles fleuries 
+feux et vertiges aux fibres
+
+le corps errant 
+dans les secrets de l'autre nuit 
+je m'abime sous-cutanee 
+sous la pulsion d'ancetres 
+symboliques 
+
+une a l'infini 
+dans le clapotis des lumieres 
+la couleur de l'hiver 
+expire 
+esquisse transparente 
+et blessure d'or
+
+programmes au cul du jour 
+les doigts immobiles 
+essouffles 
+
+
+=====================================
+
+(C)  Editions En Marge et Huguette Bertrand
+St-Jerome (Quebec) Canada
+Depot legal / premier trimestre 1991
+Bibliotheque nationale du Quebec 
+Bibliotheque nationale du Canada 
+ISBN 2-9802204-O-X 
+Tous droits reserves - All rights reserved
+
+===========================================================
+
+Ce recueil de poesie est aussi edite sur le site web de la
+Bibliotheque nationale du Canada dans sa collection electronique
+a l'adresse suivante : 
+http://collection.nlc-bnc.ca/100/200/300/huguette_bertrand/anatomie/anatomie.htm
+
+This poetry book is also edited on the National Library of Canada's website
+in it's electronic collection at the following URL :
+http://collection.nlc-bnc.ca/100/200/300/huguette_bertrand/anatomie/anatomie.htm
+
+************
+Ce document fut presente en lecture gratuite sur le site du "Project Gutenberg"
+en janvier 2002 par l'auteure Huguette Bertrand, (Quebec) Canada
+
+This document has been released for free reading on "Project Gutenberg" 
+on January 2002 by the author Huguette Bertrand, (Quebec) Canada
+
+************
+Site personnel de l'auteure / The author's personal website : 
+
+Espace poetique de Huguette Bertrand :  [ http://www.espacepoetique.com ]
+
+Synopsis du site / Map site : [ http://www.espacepoetique.com/poete/map.html ]
+
+Courriel / Email :  [ huguettebertrand@videotron.ca ]
+
+
+End of the Project Gutenberg etext of Anatomie du Mouvement, poesie
+by Huguette Bertrand

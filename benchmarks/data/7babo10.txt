@@ -1,0 +1,1199 @@
+The Project Gutenberg EBook of Le Monde comme il va, vision de Babouc
+by Voltaire
+(#12 in our series by  Voltaire)
+
+Copyright laws are changing all over the world. Be sure to check the
+copyright laws for your country before downloading or redistributing
+this or any other Project Gutenberg eBook.
+
+This header should be the first thing seen when viewing this Project
+Gutenberg file.  Please do not remove it.  Do not change or edit the
+header without written permission.
+
+Please read the "legal small print," and other information about the
+eBook and Project Gutenberg at the bottom of this file.  Included is
+important information about your specific rights and restrictions in
+how the file may be used.  You can also find out about how to make a
+donation to Project Gutenberg, and how to get involved.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**eBooks Readable By Both Humans and By Computers, Since 1971**
+
+*****These eBooks Were Prepared By Thousands of Volunteers!*****
+
+
+Title: Le Monde comme il va, vision de Babouc
+
+Author:  Voltaire
+
+Release Date: February, 2004  [EBook #5138]
+[Yes, we are more than one year ahead of schedule]
+[This file was first posted on May 12, 2002]
+
+Edition: 10
+
+Language: French
+
+Character set encoding: ASCII
+
+*** START OF THE PROJECT GUTENBERG EBOOK, LE MONDE COMME IL VA, VISION DE BABOUC ***
+
+This eBook was produced by Carlo Traverso.
+
+
+
+
+
+
+
+Title: Le Monde comme il va, vision de Babouc
+
+Author: Voltaire  (Jean-Marie Arouet)  1694-1778
+
+Language: French
+
+Character set encoding: ISO-Latin-1
+
+
+
+
+We thank the Bibliotheque Nationale de France that has made available
+the image files at www://gallica.bnf.fr, authorizing the preparation
+of the etext through OCR.
+
+Nous remercions la Bibliotheque Nationale de France qui a mis a
+disposition les images dans www://gallica.bnf.fr, et a donne
+l'autorisation de les utiliser pour preparer ce texte.
+
+
+
+
+
+
+
+			     OEUVRES
+
+			       DE
+
+			    VOLTAIRE.
+
+			   TOME XXXIII
+
+	      DE L' IMPRIMERIE DE A.  FIRMIN DIDOT,
+
+			RUE JACOB, Ndeg. 24.
+
+
+
+
+			     OEUVRES
+
+			       DE
+
+			    VOLTAIRE
+
+	      PREFACES, AVERTISSEMENTS, NOTES, ETC.
+
+			PAR  M. BEUCHOT.
+
+			  TOME XXXIII.
+
+			ROMANS.  TOME I.
+
+			    A PARIS,
+
+		     CHEZ LEFEVRE, LIBRAIRE,
+
+	 RUE DE L'EPERON, Kdeg. 6.  WERDET ET LEQUIEN FILS,
+
+		     RUE DU BATTOIR, Ndeg. 2O.
+
+			   MDCCCXXIX.
+
+
+
+
+			    LE MONDE
+
+			   COMME IL VA
+
+			VISION DE BABOUC
+
+			      1746
+
+
+
+
+Preface de l'Editeur
+
+
+Longchamp, secretaire de Voltaire de 1746 a 1754, dit dans ses
+_Memoires_[*] que _Babouc, ou le Monde comme il va_, fut compose en
+1746, pendant la retraite de Voltaire a Sceaux ; et je n'ai rien
+trouve qui contredise Longchamp.  La plus ancienne edition que je
+connaisse est celle de 1748, dans le tome VIII de l'edition faite a
+Dresde des _Oeuvres de Voltaire_. Ce conte fait aussi partie du
+_Recueil de pieces en vers et en prose, par l'auteur de la tragedie
+de Semiramis_, 1750, in-12.
+
+  [*] _Memoires sur Voltaire_, etc., 1826, 2 vol. in-8deg.; voyez tom. II,
+  p. 240.
+
+C'est une imitation de _Babouc_, ou du moins de son titre, qu'a faite
+l'auteur inconnu d'une brochure intitulee: _La Lune comme elle va_,
+MDCCLXXXI, in-8deg., de trente-six pages; brochure au-dessous de la
+critique, et relative aux discussions entre Joseph II et les
+Hollandais pour l'ouverture de l'Escaut.
+
+La revolution francaise a fait naitre trois imitations de Babouc :
+I. _Le Retour de Babouc a Persepolis, ou la suite du Monde comme il
+va_, 1789, in-8deg., a eu deux editions; c'est un opuscule de trente
+pages: je n'ai pu en decouvrir l'auteur.  II. Le Fils de Babouc a
+Persepolis, ou le Monde nouveau, Paris, decembre, 1790, in-8deg., de
+cent vingt-quatre pages.  III. _Nouvelle Vision de Babouc, ou la Perse
+comme elle va_, 1796, in-8deg., de cent douze pages, contenant seulement
+la premiere partie, et l'annonce de la seconde. Je ne crois pas que la
+seconde partie ait paru. L'auteur s'appelait Bunel.
+
+				------
+
+Les notes sans signature, et qui sont indiquees par des lettres,
+sont de Voltaire.
+
+Les notes signees d'un K sont des editeurs de Kehl, MM. Condorcet
+et Decroix.  Il est impossible de faire rigoureusement la part de
+chacun.
+
+Les additions que j'ai faites aux notes de Voltaire ou aux notes
+des editeurs de Kehl, en sont separees par un --, et sont, comme
+mes notes, signees de l'initiale de mon nom.
+
+                                                 BEUCHOT.
+
+4 octobre 1829.
+
+
+
+
+
+				
+			    LE MONDE
+			  COMME IL VA,
+
+			VISION DE BABOUC.
+
+
+
+
+
+I.  Parmi les genies qui president aux empires du monde, Ituriel tient
+un des premiers rangs, et il a le departement de la Haute-Asie.  Il
+descendit un matin dans la demeure du Scythe Babouc, sur le rivage de
+l'Oxus, et lui dit: Babouc, les folies et les exces des Perses ont
+attire notre colere: il s'est tenu hier une assemblee des genies de la
+Haute-Asie pour savoir si on chatierait Persepolis, ou si on la
+detruirait.  Va dans cette ville, examine tout; tu reviendras m'en
+rendre un compte fidele, et je me determinerai sur ton rapport a
+corriger la ville, ou a l'exterminer.  Mais, seigneur, dit humblement
+Babouc, je n'ai jamais ete en Perse; je n'y connais personne.  Tant
+mieux, dit l'ange, tu ne seras point partial; tu as recu du ciel le
+discernement[1], et j'y ajoute le don d'inspirer la confiance; marche,
+regarde, ecoute, observe, et ne crains rien; tu seras partout bien
+recu.
+
+  [1] L'edition de 1750, dont j'ai parle dans ma preface, porte de
+  plus ces mots: <<C'est un assez beau present.>> B.
+
+
+Babouc monta sur son chameau, et partit avec ses serviteurs.  Au bout
+de quelques journees, il rencontra vers les plaines de Sennaar l'armee
+persane, qui allait combattre l'armee indienne.  Il s'adressa d'abord
+a un soldat qu'il trouva ecarte.  Il lui parla, et lui demanda quel
+etait le sujet de la guerre.  Par tous les dieux, dit le soldat, je
+n'en sais rien; ce n'est pas mon affaire; mon metier est de tuer et
+d'etre tue pour gagner ma vie; il n'importe qui je serve.  Je pourrais
+bien meme des demain passer dans le camp des Indiens; car on dit
+qu'ils donnent pres d'une demi-drachme de cuivre par jour a leurs
+soldats de plus que nous n'en avons dans ce maudit service de Perse.
+Si vous voulez savoir pourquoi on se bat, parlez a mon capitaine.
+
+Babouc ayant fait un petit present au soldat entra dans le camp.  Il
+fit bientot connaissance avec le capitaine, et lui demanda le sujet de
+la guerre.  Comment voulez-vous que je le sache? dit le capitaine, et
+que m'importe ce beau sujet? J'habite a deux cents lieues de
+Persepolis; j'entends dire que la guerre est declaree; j'abandonne
+aussitot ma famille, et je vais chercher, selon notre coutume, la
+fortune ou la mort, attendu que je n'ai rien a faire.  Mais vos
+camarades, dit Babouc, ne sont-ils pas un peu plus instruits que vous?
+Non, dit l'officier; il n'y a guere que nos principaux satrapes qui
+savent bien precisement pourquoi on s'egorge.
+
+Babouc etonne s'introduisit chez les generaux; il entra dans leur
+familiarite.  L'un d'eux lui dit enfin: La cause de cette guerre, qui
+desole depuis vingt ans l'Asie, vient originairement d'une querelle
+entre un eunuque d'une femme du grand roi de Perse, et un commis d'un
+bureau du grand roi des Indes.  Il s'agissait d'un droit qui revenait
+a peu pres a la trentieme partie d'une darique[2].  Le premier
+ministre des Indes et le notre soutinrent dignement les droits de
+leurs maitres.  La querelle s'echauffa.  On mit de part et d'autre en
+campagne une armee d'un million de soldats.  Il faut recruter cette
+armee tous les ans de plus de quatre cent mille hommes.  Les meurtres,
+les incendies, les ruines, les devastations se multiplient, l'univers
+souffre, et l'acharnement continue.  Notre premier ministre et celui
+des Indes protestent souvent qu'ils n'agissent que pour le bonheur du
+genre humain; et a chaque protestation il y a toujours quelques villes
+detruites et quelque province ravagee.
+
+   [2] La darique vaut vingt-quatre francs: vojez tome XXXII, page
+   494.  B.
+
+Le lendemain, sur un bruit qui se repandit que la paix allait etre
+conclue, le general persan et le general indien s'empresserent de
+donner bataille; elle fut sanglante.  Babouc en vit toutes les fautes
+et toutes les abominations; il fut temoin des manoeuvres des
+principaux satrapes, qui firent ce qu'ils purent pour faire battre
+leur chef.  Il vit des officiers tues par leurs propres troupes; il
+vit des soldats qui achevaient d'egorger leurs camarades expirants,
+pour leur arracher quelques lambeaux sanglants, dechires et couverts
+de fange.  Il entra dans les hopitaux ou l'on transportait les
+blesses, dont la plupart expiraient par la negligence inhumaine de
+ceux memes que le roi de Perse payait cherement pour les secourir.
+Sont-ce la des hommes, s'ecria Babouc, ou des betes feroces? Ah!  je
+vois bien que Persepolis sera detruite."
+
+Occupe de cette pensee, il passa dans le camp des Indiens; il y fut
+aussi bien recu que dans celui des Perses, selon ce qui lui avait ete
+predit; mais il y vit tous les memes exces qui l'avaient saisi
+d'horreur.  Oh, oh! dit-il en lui-meme, si l'ange Ituriel veut
+exterminer les Persans, il faut donc que l'ange des Indes detruise
+aussi les Indiens.  S'etant ensuite informe plus en detail de ce qui
+s'etait passe dans l'une et l'autre armee, il apprit des actions de
+generosite, de grandeur d'ame, d'humanite, qui l'etonnerent et le
+ravirent.  Inexplicables humains, s'ecria-t-il, comment pouvez-vous
+reunir tant de bassesse et de grandeur, tant de vertus et de crimes?
+
+ Cependant la paix fut declaree.  Les chefs des deux armees, dont
+aucun n'avait remporte la victoire, mais qui, pour leur seul interet,
+avaient fait verser le sang de tant d'hommes, leurs semblables,
+allerent briguer dans leurs cours des recompenses.  On celebra la paix
+dans des ecrits publics, qui n'annoncaient que le retour de la vertu
+et de la felicite sur la terre.  Dieu soit loue! dit Babouc;
+Persepolis sera le sejour de l'innocence epuree; elle ne sera point
+detruite, comme le voulaient ces vilains genies: courons sans tarder
+dans cette capitale de l'Asie.
+
+
+
+II.  Il arriva dans cette ville immense par l'ancienne entree, qui
+etait toute barbare, et dont la rusticite degoutante offensait les
+yeux[3].  Toute cette partie de la ville se ressentait du temps ou
+elle avait ete batie; car, malgre l'opiniatrete des hommes a louer
+l'antique aux depens du moderne, il faut avouer qu'en tout genre les
+premiers essais sont toujours grossiers.
+
+  [3] Persepolis etant Paris, l'entree toute barbare est celle du
+  faubourg Saint-Marceau: voyez le chapitre XXII de _Candide_.  B.
+
+Babouc se mela dans la foule d'un peuple compose de ce qu'il y avait
+de plus sale et de plus laid dans les deux sexes.  Cette foule se
+precipitait d'un air hebete dans un enclos vaste et sombre.  Au
+bourdonnement continuel, au mouvement qu'il remarqua, a l'argent que
+quelques personnes donnaient a d'autres pour avoir droit de s'asseoir,
+il crut etre dans un marche ou l'on vendait des chaises de paille;
+mais bientot, voyant que plusieurs femmes se mettaient a genoux, en
+fesant semblant de regarder fixement devant elles, et en regardant les
+hommes de cote, il s'apercut qu'il etait dans un temple.  Des voix
+aigres, rauques, sauvages, discordantes, fesaient retentir la voute de
+sons mal articules, qui fesaient le meme effet que les voix des
+onagres quand elles repondent, dans les plaines des Pictaves[4], au
+cornet a bouquin qui les appelle.  Il se bouchait les oreilles; mais
+il fut pres de se boucher encore les yeux et le nez, quand il vit
+entrer dans ce temple des ouvriers avec des pinces et des pelles.  Ils
+remuerent une large pierre, et jeterent a droite et a gauche une terre
+dont s'exhalait une odeur empestee; ensuite on vint poser un mort dans
+cette ouverture, et on remit la pierre par-dessus.  Quoi!  s'ecria
+Babouc, ces peuples enterrent leurs morts dans les memes lieux ou ils
+adorent la Divinite! Quoi! leurs temples sont paves de cadavres! Je ne
+m'etonne plus de ces maladies pestilentielles qui desolent souvent
+Persepolis.  La pourriture des morts, et celle de tant de vivants
+rassembles et presses dans le meme lieu, est capable d'empoisonner le
+globe terrestre.  Ah! la vilaine ville que Persepolis! Apparemment que
+les anges veulent la detruire pour en rebatir une plus belle, et la
+peupler d'habitants moins malpropres, et qui chantent mieux.  La
+Providence peut avoir ses raisons; laissons-la faire.
+
+  [4] Les Pietaves sont les Poitevins, habitants du Poitou.  B.
+
+
+
+III.  Cependant le soleil approchait du haut de sa carriere.  Babouc
+devait aller diner a l'autre bout de la ville, chez une dame pour
+laquelle son mari, officier de l'armee, lui avait donne des lettres.
+Il fit d'abord plusieurs tours dans Persepolis; il vit d'autres
+temples mieux batis et mieux ornes, remplis d'un peuple poli, et
+retentissant d'une musique harmonieuse; il remarqua des fontaines
+publiques, lesquelles, quoique mal placees[5], frappaient les yeux par
+leur beaute; des places ou semblaient respirer en bronze les meilleurs
+rois[6] qui avaient gouverne la Perse; d'autres places ou il entendait
+le peuple s'ecrier: Quand verrons-nous ici le maitre que nous
+cherissons? Il admira les ponts magnifiques eleves sur le fleuve, les
+quais superbes et commodes, les palais batis a droite et a gauche, une
+maison immense[7] ou des milliers de vieux soldats blesses et
+vainqueurs rendaient chaque jour graces au Dieu des armees.  Il entra
+enfin chez la dame, qui l'attendait a diner avec une compagnie
+d'honnetes gens.  La maison etait propre et ornee, le repas delicieux,
+la dame jeune, belle, spirituelle, engageante, la compagnie digne
+d'elle; et Babouc disait en lui-meme a tout moment: L'ange Ituriel se
+moque du monde de vouloir detruire une ville si charmante.
+
+  [5] C'est de Paris que Voltaire parle, sous le nom de Persepolis:
+  les fontaines mal placees sont la fontaine de la rue de Grenelle,
+  faubourg Saint Germain, et la fontaine des Innocents, qui etait
+  alors au coin des rues aux Fers et de Saint-Denis.  C'est de 1788
+  que date la construction de cette derniere fontaine telle qu'elle
+  est aujourd'hui. Voyez, dans le tome XIX, la liste des _Artistes
+  celebres du Siecle de Louis XIV_ (apres l'article MANSARD).  B.
+
+  [6] Les seuls rois qui eussent des statues etaient Henri IV, Louis
+  XIII, Louis XIV.  La statue de Louis XV ne Fut erigee que beaucoup
+  plus tard, en 1763; elle avait ete votee, en 1748, par le prevot des
+  marchands et les echevins de la ville de Paris.  B.
+
+  [7] L'Hotel des Invalides.  B.
+
+
+
+IV.  Cependant il s'apercut que la dame, qui avait commence par lui
+demander tendrement des nouvelles de son mari, parlait plus tendrement
+encore, sur la fin du repas, a un jeune mage.  Il vit un magistrat
+qui, en presence de sa femme, pressait avec vivacite une veuve; et
+cette veuve indulgente[7] avait une main passee autour du cou du
+magistrat, tandis qu'elle tendait l'autre a un jeune citoyen tres beau
+et tres modeste.  La femme du magistrat se leva de table la premiere,
+pour aller entretenir dans un cabinet voisin son directeur qui
+arrivait trop tard, et qu'on avait attendu a diner; et le directeur,
+homme eloquent, lui parla dans ce cabinet avec tant de vehemence et
+d'onction, que la dame avait quand elle revint les yeux humides, les
+joues enflammees, la demarche mal assuree, la parole tremblante.
+
+
+  [8] L'edition de 1750 porte: <<Cette veuve indulgente lorgnait
+  vivement le magistrat tandis qu'elle tendait la main a un jeune
+  citoyen, etc.>> B.
+
+Alors Babouc commenca a craindre que le genie Ituriel n'eut raison.
+Le talent qu'il avait d'attirer la confiance le mit des le jour meme
+dans les secrets de la dame: elle lui confia son gout pour le jeune
+mage, l'assura que dans toutes les maisons de Persepolis il trouverait
+l'equivalent de ce qu'il avait vu dans la sienne.  Babouc conclut
+qu'une telle societe ne pouvait subsister; que la jalousie, la
+discorde, la vengeance, devaient desoler toutes les maisons; que les
+larmes et le sang devaient couler tous les jours; que certainement les
+maris tueraient les galants de leurs femmes, ou en seraient tues; et
+qu'enfin Ituriel ferait fort bien de detruire tout d'un coup une ville
+abandonnee a de continuels desordres.
+
+
+
+V.  Il etait plonge dans ces idees funestes, quand il se presenta a la
+porte un homme grave, en manteau noir, qui demanda humblement a parler
+au jeune magistrat.  Celui-ci, sans se lever, sans le regarder, lui
+donna fierement, et d'un air distrait, quelques papiers, et le
+congedia.  Babouc demanda quel etait cet homme.  La maitresse de la
+maison lui dit tout bas: C'est un des meilleurs avocats de la ville;
+il y a cinquante ans qu'il etudie les lois.  Monsieur, qui n'a que
+vingt-cinq ans, et qui est satrape[9] de loi depuis deux jours, lui
+donne a faire l'extrait d'un proces qu'il doit juger demain; et qu'il
+n'a pas encore examine.  Ce jeune etourdi fait sagement, dit Babouc,
+de demander conseil a un vieillard; mais pourquoi n'est-ce pas ce
+vieillard qui est juge? Vous vous moquez, lui dit-on; jamais ceux qui
+ont vieilli dans les emplois laborieux et subalternes ne parviennent
+aux dignites.  Ce jeune homme a une grande charge, parceque son pere
+est riche, et qu'ici le droit de rendre la justice s'achete comme une
+metairie[10].  O moeurs! o malheureuse ville! s'ecria Babouc; voila le
+comble du desordre; sans doute, ceux qui ont ainsi achete le droit de
+juger vendent leurs jugements: je ne vois ici que des abimes
+d'iniquite.
+
+  [9] Satrape de loi signifie ici conseiller au parlement.  Il
+  arrivait souvent aux conseillers-rapporteurs de charger quelque
+  avocat de faire les extraits dos proces a juger.  B.
+
+  [10] Voltaire n'a cesse de s'elever contre la venalite des offices
+  de judicature; et c'est la suppression de la venalite qui l'avait
+  rendu partisan des mesures prises eu 1771.  Voyez l'_Histoire du
+  parlement_, chapitre LXIX, tome XXII, pages 366-67, dans les
+  _Melanges_, annee 1771, differentes pieces relatives au parlement
+  Maupeou; dans la _Correspondance_, la lettre a madame de Florian,
+  du 1er avril 1771, et autres lettres.  B.
+
+Comme il marquait ainsi sa douleur et sa surprise, un jeune guerrier,
+qui etait revenu ce jour meme de l'armee, lui dit: Pourquoi ne
+voulez-vous pas qu'on achete les emplois de la robe? j'ai bien achete,
+moi, le droit d'affronter la mort a la tete de deux mille hommes que
+je commande; il m'en a coute quarante mille dariques d'or cette annee,
+pour coucher sur la terre trente nuits de suite en habit rouge, et
+pour recevoir ensuite deux bons coups de fleches dont je me sens
+encore.  Si je me ruine pour servir l'empereur persan que je n'ai
+jamais vu, M. le satrape de robe peut bien payer quelque chose pour
+avoir le plaisir de donner audience a des plaideurs.  Babouc indigne
+ne put s'empecher de condamner dans son coeur un pays ou l'on mettait
+a l'encan les dignites de la paix et de la guerre; il conclut
+precipitamment que l'on y devait ignorer absolument la guerre et les
+lois, et que, quand meme Ituriel n'exterminerait pas ces peuples, ils
+periraient par leur detestable administration.
+
+
+Sa mauvaise opinion augmenta encore a l'arrivee d'un gros homme, qui,
+ayant salue tres familierement toute la compagnie, s'approcha du jeune
+officier, et lui dit: Je ne peux vous preter que cinquante mille
+dariques d'or; car, en verite, les douanes de l'empire ne m'en ont
+rapporte que trois cent mille cette annee.  Babouc s'informa quel
+etait cet homme qui se plaignait de gagner si peu; il apprit qu'il y
+avait dans Persepolis quarante[11] rois plebeiens qui tenaient a bail
+l'empire de Perse, et qui en rendaient quelque chose au monarque.
+
+  [11] _Quarante_ est ce qu'on lit dans les editions depuis 1756.  Les
+  editions de 1748 et 1750 portent, _soixante et douze_.  Le nombre
+  des fermiers-generaux a varie.  Louis XV, en 1765, avait cree vingt
+  nouvelles places.  Voyez, tome XXI, le chapitre XXXI du _Precis du
+  Siecle de Louis XV_.  B.
+
+
+
+VI.  Apres diner il alla dans un des plus superbes temples de la
+ville; il s'assit au milieu d'une troupe de femmes et d'hommes qui
+etaient venus la pour passer le temps.  Un mage parut dans une machine
+elevee, qui parla long-temps du vice et de la vertu.  Ce mage divisa
+en plusieurs parties ce qui n'avait pas besoin d'etre divise; il
+prouva methodiquement tout ce qui etait clair; il enseigna tout ce
+qu'on savait.  Il se passionna froidement, et sortit suant et hors
+d'haleine.  Toute l'assemblee alors se reveilla, et crut avoir assiste
+a une instruction.  Babouc dit: Voila un homme qui a fait de son
+mieux pour ennuyer deux ou trois cents de ses concitoyens; mais son
+intention etait bonne: il n'y a pas la de quoi detruire Persepolis.
+
+Au sortir de cette assemblee, on le mena voir une fete publique qu'on
+donnait tous les jours de l'annee; c'etait dans une espece de
+basilique, au fond de laquelle on voyait un palais.  Les plus belles
+citoyennes de Persepolis, les plus considerables satrapes ranges avec
+ordre formaient un spectacle si beau, que Babouc crut d'abord que
+c'etait la toute la fete.  Deux ou trois personnes, qui paraissaient
+des rois et des reines, parurent bientot dans le vestibule de ce
+palais; leur langage etait tres different de celui du peuple; il etait
+mesure, harmonieux, et sublime.  Personne ne dormait, on ecoutait dans
+un profond silence, qui n'etait interrompu que par les temoignages de
+la sensibilite et de l'admiration publique.  Le devoir des rois,
+l'amour de la vertu, les dangers des passions etaient exprimes par des
+traits si vifs et si touchants, que Babouc versa des larmes.  Il ne
+douta pas que ces heros et ces heroines, ces rois et ces reines qu'il
+venait d'entendre, ne fussent les predicateurs de l'empire.  Il se
+proposa meme d'engager Ituriel a les venir entendre; bien sur qu'un
+tel spectacle le reconcilierait pour jamais avec la ville.
+
+Des que cette fete fut finie, il voulut voir la principale reine qui
+avait debite dans ce beau palais une morale si noble et si pure; il se
+fit introduire chez sa majeste; on le mena par un petit escalier, au
+second etage, dans un appartement mal meuble, ou il trouva une femme
+mal vetue, qui lui dit d'un air noble et pathetique: Ce metier-ci ne
+me donne pas de quoi vivre; un des princes que vous avez vus m'a fait
+un enfant; j'accoucherai bientot; je manque d'argent, et sans argent
+on n'accouche point.  Babouc lui donna cent dariques d'or, en disant:
+S'il n'y avait que ce mal-la dans la ville, Ituriel aurait tort de se
+tant facher.
+
+De la il alla passer sa soiree chez des marchands de magnificences
+inutiles.  Un homme intelligent, avec lequel il avait fait
+connaissance, l'y mena; il acheta ce qui lui plut, et on le lui vendit
+avec politesse beaucoup plus qu'il ne valait.  Son ami, de retour chez
+lui, lui fit voir combien on le trompait.  Babouc mit sur ses
+tablettes le nom du marchand, pour le faire distinguer par Ituriel au
+jour de la punition de la ville.  Comme il ecrivait, on frappa a sa
+porte; c'etait le marchand lui-meme qui venait lui rapporter sa
+bourse, que Babouc avait laissee par megarde sur son comptoir.
+Comment se peut-il, s'ecria Babouc, que vous soyez si fidele et si
+genereux, apres n'avoir pas eu honte[12] de me vendre des colifichets
+quatre fois au-dessus de leur valeur? Il n'y a aucun negociant un peu
+connu dans cette ville, lui repondit le marchand, qui ne fut venu vous
+rapporter votre bourse; mais on vous a trompe quand on vous a dit que
+je vous avais vendu ce que vous avez pris chez moi quatre fois plus
+qu'il ne vaut, je vous l'ai vendu dix fois davantage: et cela est si
+vrai, que si dans un mois vous voulez le revendre, vous n'en aurez pas
+meme ce dixieme.  Mais rien n'est plus juste; c'est la fantaisie
+passagere[13] des hommes qui met le prix a ces choses frivoles; c'est
+cette fantaisie qui fait vivre cent ouvriers que j'emploie; c'est elle
+qui me donne une belle maison, un char commode, des chevaux; c'est
+elle qui excite l'industrie, qui entretient le gout, la circulation,
+et l'abondance.
+
+  [12] On lit _de honte_ dans l'edition de 1748, faite a Dresde; mais
+  l'edition de 1750, faite probablement sous les yeux de l'auteur,
+  quoique portant l'adresse d'Amslerdam, porte seulement: _eu
+  honte_.  B.
+
+  [13] C'est d'apres l'edition de 1750 que j'ai ajoute le mot
+  passagere.  B.
+
+Je vends aux nations voisines les memes bagatelles plus cherement qu'a
+vous, et par la je suis utile a l'empire.  Babouc, apres avoir un peu
+reve, le raya de ses tablettes[14]; car enfin, disait-il, les arts du
+luxe ne sont en grand nombre dans un empire que quand tous les arts
+necessaires sont exerces, et que la nation est nombreuse et opulente.
+Ituriel me parait un peu severe.
+
+  [14] C'est aussi d'apres l'edition de 1750 que je retablis la fin de
+  cet alinea.  B.
+
+
+
+VII.  Babouc, fort incertain sur ce qu'il devait penser de Persepolis,
+resolut de voir les mages et les lettres; car les uns etudient la
+sagesse, et les autres la religion; et il se flatta que ceux-la
+obtiendraient grace pour le reste du peuple.  Des le lendemain matin
+il se transporta dans un college de mages.  L'archimandrite lui avoua
+qu'il avait cent mille ecus de rente pour avoir fait voeu de pauvrete,
+et qu'il exercait un empire assez etendu en vertu de son voeu
+d'humilite; apres quoi il laissa Babouc entre les mains d'un petit
+frere qui lui fit les honneurs.
+
+Tandis que ce frere lui montrait les magnificences de cette maison de
+penitence, un bruit se repandit qu'il etait venu pour reformer toutes
+ces maisons.  Aussitot il recut des memoires de chacune d'elles; et
+les memoires disaient tous en substance: <<Conservez-nous, et detruisez
+toutes les autres.>> A entendre leurs apologies, ces societes etaient
+toutes necessaires; a entendre leurs accusations reciproques, elles
+meritaient toutes d'etre aneanties.  Il admirait comme il n'y avait
+aucune d'elles qui, pour edifier l'univers, ne voulut en avoir
+l'empire.  Alors il se presenta un petit homme qui etait un demi-mage,
+et qui lui dit: Je vois bien que l'oeuvre va s'accomplir; car Zerdust
+est revenu sur la terre; les petites filles prophetisent, en se fesant
+donner des coups de pincettes par-devant et le fouet par-derriere[15].
+Ainsi nous vous demandons votre protection contre le grand-lama.
+Comment! dit Babouc, contre ce pontife-roi qui reside au
+Thibet?--Contre lui-meme.--Vous lui faites donc la guerre, et vous
+levez contre lui des armees?--Non; mais il dit que l'homme est libre;
+et nous n'en croyons rien; nous ecrivons contre lui de petits livres
+qu'il ne lit pas; a peine a-t-il entendu parler de nous, il nous a
+seulement fait condamner, comme un maitre ordonne qu'on echenille les
+arbres de ses jardins.  Babouc fremit de la folie de ces hommes qui
+fesaient profession de sagesse, des intrigues de ceux qui avaient
+renonce au monde, de l'ambition et de la convoitise orgueilleuse de
+ceux qui enseignaient l'humilite et le desinteressement; il conclut
+qu'Ituriel avait de bonnes raisons pour detruire toute cette engeance
+
+  [15] Tel est le texte de 1748 et de toutes les autres editions.
+  Mais l'edition de 1750, que j'aurais peut-etre du suivre, porte:
+
+  <<... par-derriere.  Il est evident que le monde va finir: ne
+  pourriez-vous point, avant cette belle epoque, nous proteger contre
+  le grand-lama?--Quel galimatias, dit Babouc, contre le grand-lama?
+  contre ce pontife-roi qui reside au Thibet?--Oui, dit le petit
+  demi-mage avec un air opiniatre, contre lui-meme.--Vous lui faites
+  donc la guerre, vous avez donc des armees? dit Babouc.--Non, dit
+  l'autre, mais nous avons ecrit contre lui trois on quatre mille gros
+  livres qu'on ne lit point, et autant de brochures, que nous fesons
+  lire par des femmes: a peine a-t-il entendu, etc.>> B.
+
+
+
+VIII.  Retire chez lui, il envoya chercher des livres nouveaux pour
+adoucir son chagrin, et il pria quelques lettres a diner pour se
+rejouir.  Il en vint deux fois plus qu'il n'en avait demande, comme
+les guepes que le miel attire.  Ces parasites se pressaient de manger
+et de parler; ils louaient deux sortes de personnes, les morts et
+eux-memes, et jamais leurs contemporains, excepte le maitre de la
+maison.  Si quelqu'un d'eux disait un bon mot, les autres baissaient
+les yeux et se mordaient les levres de douleur de ne l'avoir pas dit.
+Ils avaient moins de dissimulation que les mages, parcequ'ils
+n'avaient pas de si grands objets d'ambition.  Chacun d'eux briguait
+une place de valet et une reputation de grand homme; ils se disaient
+en face des choses insultantes, qu'ils croyaient des traits d'esprit.
+[16]Ils avaient eu quelque connaissance de la mission de Babouc.  L'un
+d'eux le pria tout bas d'exterminer un auteur qui ne l'avait pas assez
+loue il y avait cinq ans; un autre demanda la perte d'un citoyen qui
+n'avait jamais ri a ses comedies; un troisieme demanda l'extinction de
+l'academie, parcequ'il n'avait jamais pu parvenir a y etre admis.  Le
+repas fini, chacun d'eux s'en alla seul, car il n'y avait pas dans
+toute la troupe deux hommes qui pussent se souffrir, ni meme se parler
+ailleurs que chez les riches qui les invitaient a leur table.  Babouc
+jugea qu'il n'y aurait pas grand mal quand cette vermine perirait dans
+la destruction generale.
+
+  [16] Cette phrase et la suivante furent ajoutees en 1756.  Les
+   editions de 1748 et 1750 portent: <<traits d'esprit.  Le repas fini,
+   etc.>> B.
+
+
+
+IX.  Des qu'il se fut defait d'eux, il se mit a lire quelques livres
+nouveaux.  Il y reconnut l'esprit de ses convives.  Il vit surtout
+avec indignation ces gazettes de la medisance, ces archives du mauvais
+gout, que l'envie, la bassesse et la faim ont dictees; ces laches
+satires ou l'on menage le vautour, et ou l'on dechire la colombe; ces
+romans denues d'imagination, ou l'on voit tant de portraits de femmes
+que l'auteur ne connait pas.
+
+Il jeta au feu tous ces detestables ecrits, et sortit pour aller le
+soir a la promenade.  On le presenta a un vieux lettre qui n'etait
+point venu grossir le nombre de ses parasites.  Ce lettre fuyait
+toujours la foule, connaissait les hommes, en fesait usage, et se
+communiquait avec discretion.  Babouc lui parla avec douleur de ce
+qu'il avait lu et de ce qu'il avait vu.
+
+Vous avez lu des choses bien meprisables, lui dit le sage lettre; mais
+dans tous les temps, dans tous les pays, et dans tous les genres, le
+mauvais fourmille, et le bon est rare.  Vous avez recu chez vous le
+rebut de la pedanterie, parceque, dans toutes les professions, ce
+qu'il y a de plus indigne de paraitre est toujours ce qui se presente
+avec le plus d'impudence.  Les veritables sages vivent entre eux
+retires et tranquilles; il y a encore parmi nous des hommes et des
+livres dignes de votre attention.  Dans le temps qu'il parlait ainsi,
+un autre lettre les joignit; leurs discours furent si agreables et si
+instructifs, si eleves au-dessus des prejuges et si conformes a la
+vertu, que Babouc avoua n'avoir jamais rien entendu de pareil.  Voila
+des hommes, disait-il tout bas, a qui l'ange Ituriel n'osera toucher,
+ou il sera bien impitoyable.
+
+Raccommode avec les lettres, il etait toujours en colere contre le
+reste de la nation.  Vous etes etranger, lui dit l'homme judicieux qui
+lui parlait; les abus se presentent a vos yeux en foule, et le bien
+qui est cache, et qui resulte quelquefois de ces abus memes, vous
+echappe.[17] Alors il apprit que parmi les lettres il y en avait
+quelques uns qui n'etaient pas envieux, et que parmi les mages meme il
+y en avait de vertueux.  Il concut a la fin que ces grands corps, qui
+semblaient en se choquant preparer leurs communes ruines, etaient au
+fond des institutions salutaires; que chaque societe de mages etait un
+frein a ses rivales; que si ces emules differaient dans quelques
+opinions, ils enseignaient tous la meme morale, qu'ils instruisaient
+le peuple, et qu'ils vivaient soumis aux lois; semblables aux
+precepteurs qui veillent sur le fils de la maison, tandis que le
+maitre veille sur eux-memes.  Il en pratiqua plusieurs, et vit des
+ames celestes.  Il apprit meme que parmi les fous [18] qui
+pretendaient faire la guerre au grand-lama, il y avait eu de tres
+grands hommes.  Il soupconna enfin qu'il pourrait bien en etre des
+moeurs de Persepolis comme des edifices, dont les uns lui avaient paru
+dignes de pitie, et les autres l'avaient ravi en admiration.
+
+  [17] Ce texte est de 1751.  Dans les editions de 1748 et 1750, on
+  lit: <<...vous echappe.  Alors ils le menerent chez le principal
+  mage, qu'on appelait le surveillant, Babouc vit dans ce mage un
+  homme digne d'etre a la tete des justes; il sut qu'il y en avait
+  beaucoup qui lui ressemblaient.  Il concut meme que ces grands corps,
+  etc.>>
+
+  Le mot eveque, en latin _episcopus_, vient du grec _episcopos_, qui
+  veut dire inspecteur.  En 1748 et 1750 l'archeveque de Paris etait
+  Christophe de Beaumont, alors recemment nomme, mais qui se rendit
+  bientot _ridicule et odieux a tout Paris_ (voyez tome XXII, page
+  339).  Beaumont, vingt-cinq ans apres, ne permit pas qu'a la mort
+  de Voltaire on fit le service d'usage jusque-la pour chaque membre
+  de l'academie francaise.  B.
+
+  [18] Les jansenistes.  B.
+
+
+
+X.  Il dit a son lettre: Je concois tres bien que ces mages, que
+j'avais crus si dangereux, sont en effet tres utiles, surtout quand un
+gouvernement sage les empeche de se rendre trop necessaires; mais vous
+m'avouerez au moins que vos jeunes magistrats, qui achetent une charge
+de juge des qu'ils ont appris a monter a cheval, doivent etaler dans
+les[19] tribunaux tout ce que l'impertinence a de plus ridicule, et
+tout ce que l'iniquite a de plus pervers; il vaudrait mieux sans doute
+donner ces places gratuitement a ces vieux jurisconsultes qui ont
+passe toute leur vie a peser le pour et le contre.
+
+  [19] L'edition de 1750 porte: leurs.  B.
+
+Le lettre lui repliqua: Vous avez vu notre armee avant d'arriver a
+Persepolis; vous savez que nos jeunes officiers se battent tres bien,
+quoiqu'ils aient achete leurs charges: peut-etre verrez-vous que nos
+jeunes magistrats ne jugent pas mal, quoiqu'ils aient paye pour juger.
+
+Il le mena le lendemain au grand tribunal, ou l'on devait rendre un
+arret important.  La cause etait connue de tout le monde.  Tous ces
+vieux avocats qui en parlaient etaient flottants dans leurs opinions;
+ils alleguaient cent lois, dont aucune n'etait applicable au fond de
+la question; ils regardaient l'affaire par cent cotes, dont aucun
+n'etait dans son vrai jour: les juges deciderent plus vite que les
+avocats ne douterent.  Leur jugement fut presque unanime; ils jugerent
+bien, parcequ'ils suivaient les lumieres de la raison; et les autres
+avaient opine mal, parcequ'ils n'avaient consulte que leurs livres.
+
+
+Babouc conclut qu'il y avait souvent de tres bonnes choses dans les
+abus.  Il vit des le jour meme que les richesses des financiers, qui
+l'avaient tant revolte, pouvaient produire un effet excellent, car
+l'empereur ayant eu besoin d'argent, il trouva en une heure, par leur
+moyen, ce qu'il n'aurait pas eu en six mois par les voies ordinaires;
+il vit que ces gros nuages, enfles de la rosee de la terre, lui
+rendaient en pluie ce qu'ils en recevaient[20].  D'ailleurs les
+enfants de ces hommes nouveaux, souvent mieux eleves que ceux des
+familles plus anciennes, valaient quelquefois beaucoup mieux; car rien
+n'empeche qu'on ne soit un bon juge, un brave guerrier, un homme
+d'etat habile, quand on a eu un pere bon calculateur.
+
+  [20] Voyez daus les _Melanges_, annee 1749, le morceau intitule:
+  _Embellissements de Paris_.  B.
+
+
+
+XI.  Insensiblement Babouc fesait grace a l'avidite du financier, qui
+n'est pas au fond plus avide que les autres hommes, et qui est
+necessaire[21].  Il excusait la folie de se ruiner pour juger et pour
+se battre, folie qui produit de grands magistrats et des heros.  Il
+pardonnait a l'envie des lettres, parmi lesquels il se trouvait des
+hommes qui eclairaient le monde; il se reconciliait avec les mages
+ambitieux et intrigants, chez lesquels il y avait plus de grandes
+vertus encore que de petits vices; mais il lui restait bien des
+griefs, et surtout les galanteries des dames; et les desolations qui
+en devaient etre la suite le remplissaient d'inquietude et d'effroi.
+
+  [21] 1750 porte: <<tres necessaire.>> B.
+
+Comme il voulait penetrer dans toutes les conditions humaines, il se
+fit mener chez un ministre; mais il tremblait toujours en chemin que
+quelque femme ne fut assassinee en sa presence par son mari.  Arrive
+chez l'homme d'etat, il resta deux heures dans l'antichambre sans etre
+annonce, et deux heures encore apres l'avoir ete.  Il se promettait
+bien dans cet intervalle de recommander a l'ange Ituriel et le
+ministre et ses insolents huissiers.  L'antichambre etait remplie de
+dames de tout etage, de mages de toutes couleurs, de juges, de
+marchands, d'officiers, de pedants; tous se plaignaient du ministre.
+L'avare et l'usurier disaient: Sans doute cet homme-la pille les
+provinces; le capricieux lui reprochait d'etre bizarre; le voluptueux
+disait: Il ne songe qu'a ses plaisirs; l'intrigant se flattait de le
+voir bientot perdu par une cabale; les femmes esperaient qu'on leur
+donnerait bientot un ministre plus jeune.
+
+Babouc entendait leurs discours; il ne put s'empecher de dire: Voila
+un homme bien heureux, il a tous ses ennemis dans son antichambre; il
+ecrase de son pouvoir ceux qui l'envient; il voit a ses pieds ceux qui
+le detestent.  Il entra enfin; il vit un petit vieillard courbe sous
+le poids des annees et des affaires, mais encore vif et plein
+d'esprit.[22]
+
+  [22] C'est le cardinal de Fleuri que Voltaire designe ici; il en
+  fait encore l'eloge dans le _Panegyrique de Louis XV_ (voyez les
+  _Melanges_, annee 1748).  B.
+
+Babouc lui plut, et il parut a Babouc un homme estimable.  La
+conversation devint interessante.  Le ministre lui avoua qu'il etait
+un homme tres malheureux, qu'il passait pour riche, et qu'il etait
+pauvre; qu'on le croyait tout puissant, et qu'il etait toujours
+contredit; qu'il n'avait guere oblige que des ingrats, et que dans un
+travail continuel de quarante annees il avait eu a peine un moment de
+consolation.  Babouc en fut touche, et pensa que, si cet homme avait
+fait des fautes, et si l'ange Ituriel voulait le punir, il ne fallait
+pas l'exterminer, mais seulement lui laisser sa place.
+
+
+
+XII.  Tandis qu'il parlait au ministre entre brusquement la belle dame
+chez qui Babouc avait dine; on voyait dans ses yeux et sur son front
+les symptomes de la douleur et de la colere.  Elle eclata en reproches
+contre l'homme d'etat, elle versa des larmes; elle se plaignit avec
+amertume de ce qu'on avait refuse a son mari une place ou sa naissance
+lui permettait d'aspirer, et que ses services et ses blessures
+meritaient; elle s'exprima avec tant de force, elle mit tant de graces
+dans ses plaintes, elle detruisit les objections avec tant d'adresse,
+elle fit valoir les raisons avec tant d'eloquence, qu'elle ne sortit
+point de la chambre sans avoir fait la fortune de son mari.
+
+Babouc lui donna la main: Est-il possible, madame, lui dit-il, que
+vous vous soyez donne toute cette peine pour un homme que vous n'aimez
+point, et dont vous avez tout a craindre?  Un homme que je n'aime
+point!  s'ecria-t-elle: sachez que mon mari est le meilleur ami que
+j'aie au monde, qu'il n'y a rien que je ne lui sacrifie, hors mon
+amant; et qu'il ferait tout pour moi, hors de quitter sa maitresse.
+Je veux vous la faire connaitre; c'est une femme charmante, pleine
+d'esprit, et du meilleur caractere du monde; nous soupons ensemble ce
+soir avec mon mari et mon petit mage; venez partager notre joie.
+
+La dame mena Babouc chez elle.  Le mari, qui etait enfin arrive plonge
+dans la douleur, revit sa femme avec des transports d'allegresse et de
+reconnaissance: il embrassait tour-a-tour sa femme, sa maitresse, le
+petit mage, et Babouc.  L'union, la gaiete, l'esprit, et les graces,
+furent l'ame de ce repas.  Apprenez, lui dit la belle dame chez
+laquelle il soupait, que celles qu'on appelle quelquefois de
+malhonnetes femmes ont presque toujours le merite d'un tres honnete
+homme; et pour vous en convaincre, venez demain diner avec moi chez la
+belle Teone[23].  Il y a quelques vieilles vestales qui la dechirent;
+mais elle fait plus de bien qu'elles toutes ensemble.  Elle ne
+commettrait pas une legere injustice pour le plus grand interet; elle
+ne donne a son amant que des conseils genereux; elle n'est occupee que
+de sa gloire: il rougirait devant elle, s'il avait laisse echapper une
+occasion de faire du bien; car rien n'encourage plus aux actions
+vertueuses que d'avoir pour temoin et pour juge de sa conduite une
+maitresse dont on veut meriter l'estime.
+
+  [23] On a pretendu que sous le nom de Teone Voltaire designait
+  madame du Chatelet; ce serait plutot la marquise de Pompadour.  B.
+
+
+Babouc ne manqua pas au rendez-vous.  Il vit une maison ou regnaient
+tous les plaisirs.  Teone regnait sur eux; elle savait parler a chacun
+son langage.  Son esprit naturel mettait a son aise celui des autres;
+elle plaisait sans presque le vouloir; elle etait aussi aimable que
+bienfesante; et, ce qui augmentait le prix de toutes ses bonnes
+qualites, elle etait belle.
+
+Babouc, tout Scythe et tout envoye qu'il etait d'un genie, s'apercut
+que, s'il restait encore a Persepolis, il oublierait Ituriel pour
+Teone.  Il s'affectionnait a la ville, dont le peuple etait poli,
+doux, et bienfesant, quoique leger, medisant, et plein de vanite.  Il
+craignait que Persepolis ne fut condamnee; il craignait meme le compte
+qu'il allait rendre.
+
+
+Voici comme il s'y prit pour rendre ce compte.  Il fit faire par le
+meilleur fondeur de la ville une petite statue composee de tous les
+metaux, des terres et des pierres les plus precieuses et les plus
+viles; il la porta a Ituriel: Casserez-vous, dit-il, cette jolie
+statue, parceque tout n'y est pas or et diamants? Ituriel entendit a
+demi-mot; il resolut de ne pas meme songer a corriger Persepolis, et
+de laisser aller le monde comme il va; car, dit-il, si tout n'est pas
+bien, tout est passable[24].  On laissa donc subsister Persepolis, et
+Babouc fut bien loin de se plaindre, comme Jonas, qui se facha de ce
+qu'on ne detruisait pas Ninive[25].  Mais quand on a ete trois jours
+dans le corps d'une baleine, on n'est pas de si bonne humeur que quand
+on a ete a l'opera, a la comedie, et qu'on a soupe en bonne compagnie.
+
+  [24] Fin du chapitre en 1748 et 1750.  Le reste fut ajoute en 1756.
+  B.
+
+  [25] Voyez, dans la Bible, le chapitre IV de _Jonas_.  B.
+
+
+
+
+
+
+
+
+
+*** END OF THE PROJECT GUTENBERG EBOOK, LE MONDE COMME IL VA, VISION DE BABOUC ***
+
+
+
+This file should be named 7babo10.txt or 7babo10.zip
+
+Corrected EDITIONS of our eBooks get a new NUMBER, 7babo11.txt
+
+VERSIONS based on separate sources get new LETTER, 7babo10a.txt
+
+
+
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the US
+unless a copyright notice is included.  Thus, we usually do not
+keep eBooks in compliance with any particular paper edition.
+
+We are now trying to release all our eBooks one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to tell us about any error or corrections,
+even years after the official publication date.
+
+Please note neither this listing nor its contents are final til
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg eBooks is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our Web sites at:
+http://gutenberg.net or
+http://promo.net/pg
+
+These Web sites include award-winning information about Project
+Gutenberg, including how to donate, how to help produce our new
+eBooks, and how to subscribe to our email newsletter (free!).
+
+
+Those of you who want to download any eBook before announcement
+can get to them as follows, and just download by date.  This is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext04 or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext04
+
+Or /etext03, 02, 01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any eBook selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.   Our
+projected audience is one hundred million readers.  If the value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour in 2002 as we release over 100 new text
+files per month:  1240 more eBooks in 2001 for a total of 4000+
+We are already on our way to trying for 2000 more eBooks in 2002
+If they reach just 1-2% of the world's population then the total
+will reach over half a trillion eBooks given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away 1 Trillion eBooks!
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+Here is the briefest record of our progress (* means estimated):
+
+eBooks Year Month
+
+    1  1971 July
+   10  1991 January
+  100  1994 January
+ 1000  1997 August
+ 1500  1998 October
+ 2000  1999 December
+ 2500  2000 December
+ 3000  2001 November
+ 4000  2001 October/November
+ 6000  2002 December*
+ 9000  2003 November*
+10000  2004 January*
+
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+As of February, 2002, contributions are being solicited from people
+and organizations in: Alabama, Alaska, Arkansas, Connecticut,
+Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
+Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New
+Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio,
+Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South
+Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West
+Virginia, Wisconsin, and Wyoming.
+
+We have filed in all 50 states now, but these are the only ones
+that have responded.
+
+As the requirements for other states are met, additions to this list
+will be made and fund raising will begin in the additional states.
+Please feel free to ask to check the status of your state.
+
+In answer to various questions we have received on this:
+
+We are constantly working on finishing the paperwork to legally
+request donations in all 50 states.  If your state is not listed and
+you would like to know if we have added it since the list you have,
+just ask.
+
+While we cannot solicit donations from people in states where we are
+not yet registered, we know of no prohibition against accepting
+donations from donors in these states who approach us with an offer to
+donate.
+
+International donations are accepted, but we don't know ANYTHING about
+how to make them tax-deductible, or even if they CAN be made
+deductible, and don't have the staff to handle it even if there are
+ways.
+
+Donations by check or money order may be sent to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+Contact us if you want to arrange for a wire transfer or payment
+method other than by check or money order.
+
+The Project Gutenberg Literary Archive Foundation has been approved by
+the US Internal Revenue Service as a 501(c)(3) organization with EIN
+[Employee Identification Number] 64-622154.  Donations are
+tax-deductible to the maximum extent permitted by law.  As fund-raising
+requirements for other states are met, additions to this list will be
+made and fund-raising will begin in the additional states.
+
+We need your donations more than ever!
+
+You can get up to date donation information online at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+Why is this "Small Print!" statement here? You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this eBook, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault. So, among other things, this "Small Print!" statement
+disclaims most of our liability to you. It also tells you how
+you may distribute copies of this eBook if you want to.
+
+*BEFORE!* YOU USE OR READ THIS EBOOK
+By using or reading any part of this PROJECT GUTENBERG-tm
+eBook, you indicate that you understand, agree to and accept
+this "Small Print!" statement. If you do not, you can receive
+a refund of the money (if any) you paid for this eBook by
+sending a request within 30 days of receiving it to the person
+you got it from. If you received this eBook on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM EBOOKS
+This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties. Special rules, set forth
+below, apply if you wish to copy and distribute this eBook
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these eBooks, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works. Despite these efforts, the Project's eBooks and any
+medium they may be on may contain "Defects". Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other eBook medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may
+receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this eBook within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from. If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy. If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the
+following that you do or cause:  [1] distribution of this eBook,
+[2] alteration, modification, or addition to the eBook,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this eBook electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     eBook or this "small print!" statement.  You may however,
+     if you wish, distribute this eBook in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The eBook, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The eBook may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the eBook (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          eBook in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the eBook refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.
+
+The Project gratefully accepts contributions of money, time,
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+[Portions of this eBook's header and trailer may be reprinted only
+when distributed free of all fees.  Copyright (C) 2001, 2002 by
+Michael S. Hart.  Project Gutenberg is a TradeMark and may not be
+used in any sales of Project Gutenberg eBooks or other materials be
+they hardware or software or any other related product without
+express permission.]
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+

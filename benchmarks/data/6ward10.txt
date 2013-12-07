@@ -1,0 +1,2097 @@
+Project Gutenberg's The Complete Works of Artemus Ward, Part 6
+#6 of this seven part series by Charles Farrar Browne
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+As of 12/12/00 contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Title: The Complete Works of Artemus Ward, Part 6
+
+Author: Charles Farrar Browne
+
+Release Date: June, 2002  [Etext #3276]
+[Yes, we are over one year ahead of schedule]
+[The actual date this file first posted = 03/09/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg's The Complete Works of Artemus Ward, Part 6
+*****This file should be named 6ward10.txt or 6ward10.zip*****
+
+Corrected EDITIONS of our etexts get a new NUMBER, 6ward11.txt
+VERSIONS based on separate sources get new LETTER, 6ward10a.txt
+
+This etext was produced by anonymous Project Gutenberg volunteers
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext02
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext02
+
+Or /etext01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Project Gutenberg Literary Archive Foundation,
+EIN [Employee Identification Number] 64-6221541,
+has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the extent
+permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation.  Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655-4109  [USA]
+
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may 
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the 
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.  
+
+The Project gratefully accepts contributions of money, time, 
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.03.09.01*END*
+[Portions of this header are copyright (C) 2001 by Michael Hart]
+
+
+
+
+
+This etext was produced by anonymous Project Gutenberg Volunteers
+
+
+
+
+
+The Project Gutenberg Etext of The Complete Works of
+Artemus Ward (Charles Farrar Browne) Part 6
+
+THE COMPLETE WORKS OF ARTEMUS WARD, PART 6, ARTEMUS WARD'S
+PANORAMA
+
+(CHARLES FARRAR BROWNE)
+
+With a biographical sketch by Melville D. Landon,
+"Eli Perkins"
+
+CONTENTS.
+
+PART VI.
+
+Artemus Ward's Panorama.
+
+6.1.  Prefatory Note by Melville D. Landon.
+
+6.2.  The Egyptian Hall Lecture.
+
+6.3.  "The Times" Notice.
+
+6.4.  Programme of the Egyptian Hall Lecture.
+
+6.5.  Announcement and Programme of the Dodworth Hall Lecture.
+
+PART VI.  ARTEMUS WARD'S PANORAMA.
+
+(ILLUSTRATED AS DELIVERED AT EGYPTIAN HALL, LONDON.)
+
+6.1.  PREFATORY NOTE BY MELVILLE D. LANDON.
+
+The fame of Artemus Ward culminated in his last lectures at
+Egyptian Hall, Piccadilly, the final one breaking off
+abruptly on the evening of the 23d of January, 1867.  That
+night the great humorist bade farewell to the public, and
+retired from the stage to die!  His Mormon lectures were
+immensely successful in England.  His fame became the talk
+of journalists, savants, and statesmen.  Every one seemed to
+be affected differently, but every one felt and acknowledged
+his power.  "The Honorable Robert Lowe," says Mr. E.P.
+HINGSTON, Artemus Ward's bosom friend, "attended the Mormon
+lecture one evening, and laughed as hilariously as any one
+in the room.  The next evening Mr. John Bright happened to
+be present.  With the exception of one or two occasional
+smiles, he listened with GRAVE attention."
+
+The "London Standard," in describing his first lecture in
+London, aptly said, "Artemus dropped his jokes faster than
+the meteors of last night succeeded each other in the sky.
+And there was this resemblance between the flashes of his
+humor and the flights of the meteors, that in each case one
+looked for jokes or meteors, but they always came just in
+the place that one least expected to find them.  Half the
+enjoyment of the evening lay, to some of those present, in
+listening to the hearty cachinnation of the people, who only
+found out the jokes some two or three minutes after they
+were made, and who laughed apparently at some grave
+statements of fact.  Reduced to paper, the showman's jokes
+are certainly not brilliant; almost their whole effect lies
+in their seeming impromptu character.  They are carefully
+led up to, of course; but they are uttered as if they are
+mere afterthoughts of which the speaker is hardly sure."
+
+His humor was so entirely fresh and unconventional, that it
+took his hearers by surprise, and charmed them.  His failing
+health compelled him to abandon the lecture after about
+eight or ten weeks.  Indeed, during that brief period he was
+once or twice compelled to dismiss his audience.  Frequently
+he sank into a chair and nearly fainted from the exertion of
+dressing.  He exhibited the greatest anxiety to be at his
+post at the appointed time, and scrupulously exerted himself
+to the utmost to entertain his auditors.  It was not because
+he was sick that the public was to be disappointed, or that
+their enjoyment was to be diminished.  During the last few
+weeks of his lecture-giving, he steadily abstained from
+accepting any of the numerous invitations he received.  Had
+he lived through the following London fashionable season,
+there is little doubt that the room at the Egyptian Hall
+would have been thronged nightly.  The English aristocracy
+have a fine, delicate sense of humor, and the success,
+artistic and pecuniary, of "Artemus Ward" would have
+rivalled that of the famous "Lord Dundreary."  There were
+many stupid people who did not understand the "fun" of
+Artemus Ward's books.  There were many stupid people who did
+not understand the fun of Artemus Ward's lecture on the
+Mormons.  Highly respectable people--the pride of their
+parish--when they heard of a lecture "upon the Mormons,"
+expected to see a solemn person, full of old saws and new
+statistics, who would denounce the sin of polygamy,--and
+rave without limit against Mormons.  These uncomfortable
+Christians do not like humor.  They dread it as a certain
+personage is said to dread holy water, and for the same
+reason that thieves fear policemen--it finds them out.  When
+these good idiots heard Artemus offer if they did not like
+the lecture in Piccadilly, to give them free tickets for the
+same lecture in California, when he next visited that
+country, they turned to each other indignantly, and said,
+"What use are tickets for California to US?  WE are not
+going to California.  No! we are too good, too respectable
+to go so far from home.  The man is a fool!"  One of these
+vestrymen complained to the doorkeeper, and denounced the
+lecturer as an impostor--"and," said the wealthy
+parishioner, "as for the panorama, it is the worst painted
+thing I ever saw."
+
+During the lecture Artemus was always as solemn as the
+grave.  Sometimes he would seem to forget his audience, and
+stand for several seconds gazing intently at his panorama.
+Then he would start up and remark apologetically, "I am very
+fond of looking at my pictures."  His dress was always the
+same--evening toilet.  His manners were polished, and his
+voice gentle and hesitating.  Many who had read of the man
+who spelled joke with a "g," looked for a smart old man with
+a shrewd cock eye, dressed in vulgar velvet and gold, and
+they were hardly prepared to see the accomplished gentleman
+with slim physique and delicate white hands.
+
+The letters of Artemus Ward in "Punch" from the tomb of
+Shakspeare and the London Tower, had made him famous in
+England, and in his audience were the nobility of the realm.
+His first lecture in London was delivered at Egyptian Hall,
+on Tuesday, November 13th, 1866.  The room used was that
+which had been occupied by Mr. Arthur Sketchley, adjoining
+the one in which Mr. Arthur Smith formerly made his
+appearances.  The stage, with the curtain down, had this
+appearance while Artemus was delivering his prologue:
+
+(Drawing of stage with curtain closed and eight footlights.)
+
+Punctually at eight o'clock he would step hesitatingly
+before the audience, and rubbing his hands bashfully,
+commence the lecture.
+
+6.2.  THE EGYPTIAN HALL LECTURE.
+
+You are entirely welcome, ladies and gentlemen, to my little
+picture-shop.
+
+I couldn't give you a very clear idea of the Mormons--and
+Utah--and the Plains--and the Rocky Mountains--without
+opening a picture-shop--and therefore I open one.
+
+I don't expect to do great things here--but I have thought
+that if I could make money enough to by me a passage to New
+Zealand I should feel that I had not lived in vain.
+
+I don't want to live in vain.--I'd rather live in Margate--
+or here.  But I wish when the Egyptians built this hall they
+had given it a little more ventilation.
+
+If you should be dissatisfied with anything here to-night--I
+will admit you all free in New Zealand--if you will come to
+me there for the orders.  Any respectable cannibal will tell
+you where I live.  This shows that I have a forgiving
+spirit.
+
+I really don't care for money.  I only travel round to see
+the world and to exhibit my clothes.  These clothes I have
+on were a great success in America.
+
+How often do large fortunes ruin young men!  I should like
+to be ruined, but I can get on very well as I am.
+
+I am not an Artist.  I don't paint myself--though perhaps if
+I were a middle-aged single lady I should--yet I have a
+passion for pictures--I have had a great many pictures--
+photographs taken of myself.  Some of them are very pretty--
+rather sweet to look at for a short time--and as I said
+before, I like them.  I've always loved pictures.
+
+I could draw on wood at a very tender age.  When a mere
+child I once drew a small cart-load of raw turnips over a
+wooden bridge.--the people of the village noticed me.  I
+drew their attention.  They said I had a future before me.
+Up to that time I had an idea it was behind me.
+
+Time passed on.  It always does, by the way.  You may
+possibly have noticed that Time passes on.--It is a kind of
+way Time has.
+
+I became a man.  I haven't distinguished myself at all as an
+artist--but I have always been more or less mixed up with
+Art.  I have an uncle who takes photographs--and I have a
+servant who--takes anything he can get his hands on.
+
+When I was in Rome--Rome in New York State I mean--a
+distinguished sculpist wanted to sculp me.  But I said "No."
+I saw through the designing man.  My model once in his
+hands--he would have flooded the market with my busts-- and
+I couldn't stand it to see everybody going round with a bust
+of me.  Everybody would want one of course--and wherever I
+should go I should meet the educated classes with my bust,
+taking it home to their families.  This would be more than
+my modesty could stand--and I should have to return to
+America--where my creditors are.
+
+I like Art.  I admire dramatic Art--although I failed as an
+actor.
+
+It was in my schoolboy days that I failed as an actor.
+(Artemus made many attempts as an amateur actor, but never
+to his own satisfaction.  He was very fond of the society of
+actors and actresses.  Their weaknesses amused him as much
+as their talents excited his admiration.  One of his
+favorite sayings was that the world was made up of "men,
+women, and the people on the stage.")--The play was 'Ruins
+of Pompeii.'--I played the Ruins.  It was not a very
+successful performance--but it was better than the "Burning
+Mountain."  He was not good.  He was a bad Vesuvius.
+
+The remembrance often makes me ask--"Where are the boys of
+my youth?"--I assure you this is not a conundrum.--Some are
+amongst you here--some in America--some are in gaol.--
+
+Hence arises a most touching question--"Where are the girls
+of my youth?"  Some are married--some would like to be.
+
+Oh my Maria!  Alas! she married another.  They frequently
+do.  I hope she is happy--because I am.  (Spoken with a
+sigh.  It was a joke which always told.  Artemus never
+failed to use it in his "Babes in the Wood" lecture, and the
+"Sixty Minutes in Africa," as well as in the Mormon story.)
+--some people are not happy.  I have noticed that.
+
+A gentleman friend of mine came to me one day with tears in
+his eyes.  I said, "Why these weeps?"  He said he had a
+mortgage on his farm--and wanted to borrow 200 pounds.  I
+lent him the money--and he went away.  Some time after he
+returned with more tears.  He said he must leave me for
+ever.  I ventured to remind him of the 200 pounds he
+borrowed.  He was much cut up. I thought I would not be hard
+upon him--so I told him I would throw off one hundred
+pounds.  He brightened--shook my hand--and said--"Old
+friend--I won't allow you to outdo me in liberality--I'll
+throw off the other hundred."
+
+As a manager I was always rather more successful than as an
+actor.
+
+Some years ago I engaged a celebrated Living American
+Skeleton for a tour through Australia.  He was the thinnest
+man I ever saw.  He was a splendid skeleton.  He didn't
+weigh anything scarcely--and I said to myself--the people of
+Australia will flock to see this tremendous curiosity.  It
+is a long voyage--as you know--from New York to Melbourne--
+and to my utter surprise the skeleton had no sooner got out
+to sea than he commenced eating in the most horrible manner.
+He had never been on the ocean before--and he said it agreed
+with him.--I thought so!--I never saw a man eat so much in
+my life.  Beef--mutton--pork--he swallowed them all like a
+shark--and between meals he was often discovered behind
+barrels eating hard-boiled eggs.  The result was that when
+we reached Melbourne this infamous skeleton weighed 64
+pounds more than I did!
+
+I thought I was ruined--but I wasn't.  I took him on to
+California--another very long sea voyage--and when I got him
+to San Francisco I exhibited him as a Fat Man.  (The reader
+need scarcely be informed that this narrative is about as
+real as "A. Ward's Snaiks," and about as much matter of fact
+as his journey through the States with a wax-work show.)
+
+This story hasn't anything to do with my Entertainment, I
+know--but one of the principal features of my Entertainment
+is that it contains so many things that don't have anything
+to do with it.
+
+My Orchestra is small--but I am sure it is very good--so far
+as it goes.  I give my pianist ten pounds a night--and his
+washing.  (That a good pianist could be hired for a small
+sum in England was a matter of amusement to Artemus.  More
+especially when he found a gentleman obliging enough to play
+anything he desired, such as break-downs and airs which had
+the most absurd relation to the scene they were used to
+illustrate.  In the United States his pianist was desirous
+of playing music of a superior order, much against the
+consent of the lecturer.)
+
+I like Music.--I can't sing.  As a singist I am not a
+success.  I am saddest when I sing.  So are those who hear
+me.  They are sadder even than I am.
+
+The other night some silver-voiced young men came under my
+window and sang--"Come where my love lies dreaming."--I
+didn't go.  I didn't think it would be correct.
+
+I found music very soothing when I lay ill with fever in
+Utah--and I was very ill--I was fearfully wasted.--My face
+was hewn down to nothing--and my nose was so sharp I didn't
+dare to stick it into other people's business--for fear it
+would stay there--and I should never get it again.  And on
+those dismal days a Mormon lady--she was married--tho' not
+so much so as her husband--he had fifteen other wives--she
+used to sing a ballad commencing "Sweet bird--do not fly
+away!"--and I told her I wouldn't.--She played the accordion
+divinely--accordionly I praised her.
+
+I met a man in Oregon who hadn't any teeth--not a tooth in
+his head--yet that man could play on the bass drum better
+than any man I ever met.--He kept a hotel.  They have queer
+hotels in Oregon.  I remember one where they gave me a bag
+of oats for a pillow--I had nightmares of course.  In the
+morning the landlord said--How do you feel--old hoss--hay?--
+I told him I felt my oats.
+
+(Though the serious part of the lecture was here entered
+upon, it was not delivered in a graver tone than that in
+which he had spoken the farcicalities of the prologue.  Most
+of the prefatory matter was given with an air of earnest
+thought; the arms sometimes folded, and the chin resting on
+one hand.  On the occasion of his first exhibiting the
+panorama at New York he used a fishing-rod to point out the
+picture with; subsequently he availed himself of an old
+umbrella.  In the Egyptian Hall he used his little
+riding-whip.)
+
+Permit me now to quietly state that altho' I am here with my
+cap and bells I am also here with some serious descriptions
+of the Mormons--their manners--their customs--and while the
+pictures I shall present to your notice are by no means
+works of art--they are painted from photographs actually
+taken on the spot (They were photographed by Savage &
+Ottinger, of Salt Lake City, the photographers to Brigham
+Young.)--and I am sure I need not inform any person present
+who was ever in the territory of Utah that they are as
+faithful as they could possibly be.  (Curtain.--The picture
+was concealed from view during the first part of the lecture
+by a crimson curtain.  This was drawn together or opened
+many times in the course of the lecture, and at odd points
+of the lecture.  I am not aware that Artemus himself could
+have explained why he caused the curtain to be drawn at one
+place and not at another.  Probably he thought it to be one
+of his good jokes that it should shut in the picture just
+when there was no reason for its being used.)
+
+I went to Great Salt Lake City by way of California?  (That
+is, he went by steamer from New York to Aspinwall, thence
+across the Isthmus of Panama by railway, and then from
+Panama to California by another steamboat.  A journey which
+then occupied about three weeks.)
+
+I went to California on the steamer "Ariel."
+
+This is the steamer "Ariel."  (Picture.)
+
+Oblige me by calmly gazing on the steamer "Ariel"--and when
+you go to California be sure and go on some other steamer--
+because the Ariel isn't a very good one.
+
+When I reached the "Ariel"--at pier No. 4--New York--I found
+the passengers in a state of great confusion about their
+things--which were being thrown around by the ship's porters
+in a manner at once damaging and idiotic.--So great was the
+excitement--my fragile form was smashed this way--and jammed
+that way--till finally I was shoved into a stateroom which
+was occupied by two middle-aged females--who said, "Base
+man--leave us--O leave us!"--I left them--Oh--I left them!
+
+We reach Acapulco on the coast of Mexico in due time.
+Nothing of special interest occurred at Acapulco--only some
+of the Mexican ladies are very beautiful.  They all have
+brilliant black hair--hair "black as starless night"--if I
+may quote from the "Family Herald".  It don't curl.--A
+Mexican lady's hair never curls--it is straight as an
+Indian's.  Some people's hair won't curl under any
+circumstances.--My hair won't curl under two shillings.
+(Artemus always wore his hair straight until his severe
+illness in Salt Lake City.  So much of it dropped off during
+his recovery that he became dissatisfied with the long
+meagre appearance his countenance presented when he surveyed
+it in the looking-glass.  After his lecture at the Salt Lake
+City Theatre he did not lecture again until we had crossed
+the Rocky Mountains and arrived at Denver City, the capital
+of Colorado.  On the afternoon he was to lecture there I met
+him coming out of an ironmonger's store with a small parcel
+in his hand.  "I want you, old fellow," he said; "I have
+been all around the city for them, and I've got them at
+last."  "Got what?" I asked.  "A pair of curling-tongs.  I
+am going to have my hair curled to lecture in to-night.  I
+mean to cross the plains in curls.  Come home with me and
+try to curl it for me.  I don't want to go to any idiot of a
+barber to be laughed at."  I played the part of friseur.
+Subsequently he became his own "curlist," as he phrased it.
+>From that day forth Artemus was a curly-haired man.)
+
+(Picture of) The great thoroughfare of the imperial city of
+the Pacific Coast (with a sign saying "Artemus Ward, Platts
+Hall every evening.")
+
+The Chinese form a large element in the population of San
+Francisco--and I went to the Chinese Theatre.
+
+A Chinese play often lasts two months.  Commencing at the
+hero's birth, it is cheerfully conducted from week to week
+till he is either killed or married.
+
+The night I was there a Chinese comic vocalist sang a
+Chinese comic song.  It took him six weeks to finish it--but
+as my time was limited, I went away at the expiration of 215
+verses.  There were 11,000 verses to this song--the chorus
+being "Tural lural dural, ri fol day"--which was repeated
+twice at the end of each verse--making--as you will at once
+see--the appalling number of 22,000 "tural lural dural, ri
+fol days"--and the man still lives.
+
+(Picture of) Virginia City--in the bright new State of
+Nevada.  (Virginia City itself is built on a ledge cut out
+of the side of Mount Davidson, which rises some 9000 feet
+above the sea level--the city being about half way up its
+side.  To Artemus Ward the wild character of the scenery,
+the strange manners of the red-shirted citizens, and the
+odd developments of the life met with in that uncouth
+mountain-town were all replete with interest.  We stayed
+there about a week.  During the time of our stay he explored
+every part of the place, met many old friends from the Eastern
+States, and formed many new acquaintances, with some of whom
+acquaintance ripened into warm friendship.  Among the latter
+was Mr. Samuel L. Clemens, now well known as "Mark Twain."
+He was then sub-editing one of the three papers published
+daily in Virginia--"The Territorial Enterprise."  Artemus
+detected in the writings of Mark Twain the indications of
+great humorous power, and strongly advised the writer to
+seek a better field for his talents.  Since then he has
+become a well-known lecturer and author.  With Mark Twain,
+Artemus made a descent into the Gould and Curry Silver Mine
+at Virginia, the largest mine of the kind, I believe in the
+world.  The account of the descent formed a long and very
+amusing article in the next morning's "Enterprise."  To
+wander about the town and note its strange developments
+occupied Artemus incessantly.  I was sitting writing letters
+at the hotel when he came in hurriedly, and requested me to
+go out with him.  "Come and see some joking much better than
+mine," said he.  He led me to where one of Wells, Fargo &
+Co's express wagons was being rapidly filled with silver
+bricks.  Ingots of the precious metal, each almost as large
+as an ordinary brick, were being thrown from one man to
+another to load the wagon, just as bricks or cheeses are
+transferred from hand to hand by carters in England.  "Good
+old jokes those, Hingston.  Good, solid Babes in the Wood,"
+observed Artemus.  Yet that evening he lectured in
+"Maguire's Opera House," Virginia City, to an audience
+composed chiefly of miners, and the receipts were not far
+short of eight hundred dollars.)
+
+A wonderful little city--right in the heart of the famous
+Washoe silver regions--the mines of which annually produce
+over twenty-five millions of solid silver.  This silver is
+melted into solid bricks--about the size of ordinary
+house-bricks--and carted off to San Francisco with mules.
+The roads often swarm with these silver wagons.
+
+One hundred and seventy-five miles to the east of this place
+are the Reese River Silver Mines--which are supposed to be
+the richest in the world.
+
+(Pointing to Panorama)
+The great American Desert in winter time--the desert which
+is so frightfully gloomy always.  No trees--no houses--no
+people--save the miserable beings who live in wretched huts
+and have charge of the horses and mules of the Overland Mail
+Company.
+
+(Picture of) Plains Between Virginia City and Salt Lake,
+(showing a carcass attended by various scavengers, with a
+building and mountains in the distance.)
+
+This picture is a great work of art.--It is an oil painting
+--done in petroleum.  It is by the Old Masters.  It was the
+last thing they did before dying.  They did this and then
+they expired.
+
+The most celebrated artists of London are so delighted with
+this picture that they come to the Hall every day to gaze at
+it.  I wish you were nearer to it--so you could see it
+better.  I wish I could take it to your residences and let
+you see it by daylight.  Some of the greatest artists in
+London come here every morning before daylight with lanterns
+to look at it. They say they never saw anything like it
+before--and they hope they never shall again.
+
+When I first showed this picture in New York, the audience
+were so enthusiastic in their admiration of this picture
+that they called for the Artist--and when he appeared they
+threw brickbats at him.  (This portion of the panorama was
+very badly painted.  When the idea of having a panorama was
+first entertained by Artemus, he wished to have one of great
+artistic merit.  Finding considerable difficulty in
+procuring one, and also discovering that the expense of a
+real work of art would be beyond his means, he resolved on
+having a very bad one or one so bad in parts that its very
+badness would give him scope for jest.  In the small towns
+of the Western States, it passed very well for a first-class
+picture, but what it was really worth in an artistic point
+of view its owner was very well aware.)
+
+(Next picture.) A bird's-eye view of Great Salt Lake City--
+the strange city in the Desert about which so much has been
+heard--the city of the people who call themselves Saints.
+
+I know there is much interest taken in these remarkable
+people--ladies and gentlemen--and I have thought it better
+to make the purely descriptive part of my Entertainment
+entirely serious.--I will not--then--for the next ten
+minutes--confine myself to my subject.
+
+Some seventeen years ago a small band of Mormons--headed by
+Brigham Young--commenced in the present thrifty metropolis
+of Utah.  The population of the territory of Utah is over
+100,000--chiefly Mormons--and they are increasing at the
+rate of from five to ten thousand annually.  The converts to
+Mormonism now are almost exclusively confined to English and
+Germans--Wales and Cornwall have contributed largely to the
+population of Utah during the last few years.  The
+population of Great Salt Lake City is 20,000.--The streets
+are eight rods wide--and are neither flagged nor paved.  A
+stream of pure mountain spring water courses through each
+street--and is conducted into the Gardens of the Mormons.
+The houses are mostly of adobe--or sun-dried brick--and
+present a neat and comfortable appearance.--They are usually
+a story and a half high.  Now and then you see a fine modern
+house in Salt Lake City--but no house that is dirty, shabby,
+and dilapidated--because there are no absolutely poor people
+in Utah.  Every Mormon has a nice garden--and every Mormon
+has a tidy dooryard.--Neatness is a great characteristic of
+the Mormons.
+
+The Mormons profess to believe that they are the chosen
+people of God--they call themselves Latter-day Saints--and
+they call us people of the outer world Gentiles.  They say
+that Mr. Brigham Young is a prophet--the legitimate
+successor of Joseph Smith--who founded the Mormon religion.
+They also say they are authorized--by special revelation
+from Heaven--to marry as many wives as they can comfortably
+support.
+
+This wife-system they call plurality--the world calls it
+polygamy.  That at its best it is an accursed thing--I need
+not of course inform you--but you will bear in mind that I
+am here as a rather cheerful reporter of what I saw in Utah
+--and I fancy it isn't at all necessary for me to grow
+virtuously indignant over something we all know is hideously
+wrong.
+
+You will be surprised to hear--I was amazed to see--that
+among the Mormon women there are some few persons of
+education--of positive cultivation.  As a class the Mormons
+are not educated people--but they are by no means the
+community of ignoramuses so many writers have told us they
+were.
+
+The valley in which they live is splendidly favored.  They
+raise immense crops.  They have mills of all kinds.  They
+have coal--lead--and silver mines.  All they eat--all they
+drink--all they wear they can produce themselves--and still
+have a great abundance to sell to the gold regions of Idaho
+on the one hand--and the silver regions of Nevada on the
+other.
+
+The President of this remarkable community--the head of the
+Mormon Church--is Brigham Young.--He is called President
+Young--and Brother Brigham.  He is about 54 years old--
+altho' he doesn't look to be over 45.  He has sandy hair and
+whiskers--is of medium height--and is a little inclined to
+corpulency.  He was born in the State of Vermont.  His power
+is more absolute than that of any living sovereign--yet he
+uses it with such consummate discretion that his people are
+almost madly devoted to him--and that they would cheerfully
+die for him if they thought the sacrifice were demanded--I
+cannot doubt.
+
+He is a man of enormous wealth.--One-tenth of everything
+sold in the territory of Utah goes to the Church--and Mr.
+Brigham Young is the Church. It is supposed that he
+speculates with these funds--at all events--he is one of the
+wealthiest men now living--worth several millions--without
+doubt.--He is a bold--bad man--but that he is also a man of
+extraordinary administrative ability no one can doubt who
+has watched his astounding career for the past ten years.
+It is only fair for me to add that he treated me with marked
+kindness during my sojourn in Utah.
+
+(Picture of) West Side of Main Street, Salt Lake City.  (A
+wagon and team stand outside the "City Bathing House" and a
+pennant flies over the "temperance hotel.")
+
+The West Side of Main Street--Salt Lake City--including a
+view of the Salt Lake Hotel.  It is a temperance hotel.  (At
+the date of our visit, there was only one place in Salt Lake
+City where strong drink was allowed to be sold.  Brigham
+Young himself owned the property, and vended the liquor by
+wholesale, not permitting any of it to be drunk on the
+premises.  It was a coarse, inferior kind of whisky, known
+in Salt Lake as "Valley Tan."  Throughout the city there was
+no drinking-bar nor billiard room, so far as I am aware.
+But a drink on the sly could always be had at one of the
+hard-goods stores, in the back office behind the pile of
+metal saucepans; or at one of the dry-goods stores, in the
+little parlor in the rear of the bales of calico.  At the
+present time I believe that there are two or three open bars
+in Salt Lake, Brigham Young having recognized the right of
+the "Saints" to "liquor up" occasionally.  But whatever
+other failings they may have, intemperance cannot be laid to
+their charge.  Among the Mormons there are no paupers, no
+gamblers, and no drunkards.)  I prefer temperance hotels--
+altho' they sell worse liquor than any other kind of hotels.
+But the Salt Lake Hotel sells none--nor is there a bar in
+all Salt Lake City--but I found when I was thirsty--and I
+generally am--that I could get some very good brandy of one
+of the Elders--on the sly--and I never on any account allow
+my business to interfere with my drinking.
+
+(Picture of) The Overland Mail Coach.--That is, the den on
+wheels in which we have been crammed for the past ten days
+and ten nights.--Those of you who have been in Newgate (The
+manner in which Artemus uttered this joke was peculiarly
+characteristic of his style of lecturing.  The commencement
+of the sentence was spoken as if unpremeditated; then when
+he had got as far as the word "Newgate," he paused, as if
+wishing to call back that which he had said.  The applause
+was unfailingly uproarious.)-------------------------------
+----------------------------and stayed there any length of
+time--as visitors--can realize how I felt.
+
+The American Overland Mail Route commences at Sacramento--
+California--and ends at Atchison--Kansas.  The distance is
+two thousand two hundred miles--but you go part of the way
+by rail.  The Pacific Railway is now completed from
+Sacramento--California--to Fulsom--California--which only
+leaves two thousand two hundred and eleven miles, to go by
+coach.  This breaks the monotony--it came very near breaking
+my back.
+
+(Picture of) The Mormon Theatre.
+
+This edifice is the exclusive property of Brigham Young.  It
+will comfortably hold 3,000 persons--and I beg you will
+believe me when I inform you that its interior is quite as
+brilliant as that of any theatre in London.  (Herein Artemus
+slightly exaggerated.  The coloring of the theatre was white
+and gold, but it was inefficiently lighted with oil lamps.
+When Brigham Young himself showed us round the theatre, he
+pointed out, as an instance of his own ingenuity, that the
+central chandelier was formed out of the wheel of one of his
+old coaches.  The house is now, I believe, lighted with gas.
+Altogether it is a very wondrous edifice, considering where
+it is built and who were the builders.)
+
+The actors are all Mormon amateurs, who charge nothing for
+their services.
+
+You must know that very little money is taken at the doors
+of this theatre. The Mormons mostly pay in grain--and all
+sorts of articles.
+
+The night I gave my little lecture there--among my receipts
+were corn--flour--pork--cheese--chickens--on foot and in the
+shell.
+
+One family went in on a live pig--and a man attempted to
+pass a "yaller dog" at the Box Office--but my agent repulsed
+him.  One offered me a doll for admission--another infants'
+clothing.--I refused to take that.--As a general rule I do
+refuse.
+
+In the middle of the parquet--in a rocking chair--with his
+hat on--sits Brigham Young.  When the play drags--he either
+goes out or falls into a tranquil sleep.
+
+A portion of the dress-circle is set apart for the wives of
+Brigham Young. From ten to twenty of them are usually
+present.  His children fill the entire gallery--and more
+too.
+
+(Picture of) East Side of Main Street, Salt Lake City.
+
+The East Side of Main Street--Salt Lake City--with a view of
+the Council Building--The legislature of Utah meets there.
+It is like all legislative bodies.  They meet this winter to
+repeal the laws which they met and made last winter--and
+they will meet next winter to repeal the laws which they met
+and made this winter.
+
+I dislike to speak about it--but it was in Utah that I made
+the great speech of my life.  I wish you could have heard
+it.  I have a fine education.  You may have noticed it.  I
+speak six different languages--London--Chatham--and Dover--
+Margate--Brighton--and Hastings.  My parents sold a cow--
+and sent me to college when I was quite young.  During the
+vacation I used to teach a school of whales--and there's
+where I learned to spout.--I don't expect applause for a
+little thing like that.  I wish you could have heard that
+speech--however.  If Cicero--he's dead now--he has gone
+from us--but if old Ciss (Here again no description can
+adequately inform the reader of the drollery which
+characterized the lecturer.  His reference to Cicero was
+made in the most lugubrious manner, as if he really deplored
+his death and valued him as a schoolfellow loved and lost.)
+could have heard that effort it would have given him the
+rinderpest.  I'll tell you how it was.  There are stationed
+in Utah two regiments of U.S. troops--the 21st from
+California--and the 37th from Nevada.  The 20-onesters asked
+me to present a stand of colors to the 37-sters--and I did
+it in a speech so abounding in eloquence of a bold and
+brilliant character--and also some sweet talk--real pretty
+shopkeeping talk--that I worked the enthusiasm of those
+soldiers up to such a pitch--that they came very near
+shooting me on the spot.
+
+(Picture of) Brigham Young's Harem.--These are the houses of
+Brigham Young. The first on the right is the Lion House--so
+called because a crouching stone lion adorns the central
+front window.  The adjoining small building is Brigham
+Young's office--and where he receives his visitors.--The
+large house in the centre of the picture--which displays a
+huge bee-hive--is called the Bee House--the bee-hive is
+supposed to be symbolical of the industry of the Mormons.--
+Mrs. Brigham Young the first--now quite an old lady--lives
+here with her children.  None of the other wives of the
+prophet live here.  In the rear are the schoolhouses where
+Brigham Young's children are educated.
+
+Brigham Young has two hundred wives.  Just think of that!
+Oblige me by thinking of that.  That is--he has eighty
+actual wives, and he is spiritually married to one hundred
+and twenty more.  These spiritual marriages--as the Mormons
+call them--are contracted with aged widows--who think it a
+great honor to be sealed--the Mormons call it being sealed--
+to the Prophet.
+
+So we may say he has two hundred wives.  He loves not
+wisely--but two hundred well.  He is dreadfully married.
+He's the most married man I ever saw in my life.
+
+I saw his mother-in-law while I was there.  I can't exactly
+tell you how many there is of her--but it's a good deal.  It
+strikes me that one mother-in-law is about enough to have in
+a family--unless you're very fond of excitement.
+
+A few days before my arrival in Utah--Brigham was married
+again--to a young and really pretty girl--but he says he
+shall stop now.  He told me confidentially that he shouldn't
+get married any more.  He says that all he wants now is to
+live in peace for the remainder of his days--and have his
+dying pillow soothed by the loving hands of his family.
+Well--that's all right--that's all right--I suppose--but if
+ALL his family soothe his dying pillow--he'll have to go
+out-doors to die.
+
+By the way--Shakespeare indorses polygamy.--He speaks of the
+Merry Wives of Windsor.  How many wives did Mr. Windsor
+have?--but we will let this pass.
+
+Some of these Mormons have terrific families.  I lectured
+one night by invitation in the Mormon village of Provost,
+but during the day I rashly gave a leading Mormon an order
+admitting himself and family--it was before I knew that he
+was much married--and they filled the room to overflowing.
+It was a great success--but I didn't get any money.
+
+(Picture of) Heber C. Kimball's Harem.--Mr. C. Kimball is
+the first vice-president of the Mormon church--and would--
+consequently--succeed to the full presidency on Brigham
+Young's death.
+
+Brother Kimball is a gay and festive cuss of some seventy
+summers--or some'ers thereabout.  He has one thousand head
+of cattle and a hundred head of wives.  (It is an
+authenticated fact that, in an address to his congregation
+in the Tabernacle, Heber C. Kimball once alluded to his
+wives by the endearing epithet of "my heifers;" and on
+another occasion politely spoke of them as "his cows."  The
+phraseology may possibly be a slight indication of the
+refinement of manners prevalent in Salt Lake City.)  He says
+they are awful eaters.
+
+Mr. Kimball had a son--a lovely young man--who was married
+to ten interesting wives.  But one day--while he was absent
+from home--these ten wives went out walking with a handsome
+young man--which so enraged Mr. Kimball's son--which made
+Mr. Kimball's son so jealous--that he shot himself with a
+horse pistuel.
+
+The doctor who attended him--a very scientific man--informed
+me that the bullet entered the inner parallelogram of his
+diaphragmatic thorax, superinducing membranous hemorrhage in
+the outer cuticle of his basiliconthamaturgist.  It killed
+him.  I should have thought it would.
+
+(Soft music.)  (Here Artemus Ward's pianist [following
+instructions] sometimes played the dead march from "Saul."
+At other times, the Welsh air of "Poor Mary Anne;" or
+anything else replete with sadness which might chance to
+strike his fancy.  The effect was irresistibly comic.)
+
+I hope his sad end will be a warning to all young wives who
+go out walking with handsome young men.  Mr. Kimball's son
+is now no more.  He sleeps beneath the cypress--the myrtle--
+and the willow.  This music is a dirge by the eminent
+pianist for Mr. Kimball's son.  He died by request.
+
+I regret to say that efforts were made to make a Mormon of
+me while I was in Utah.
+
+It was leap-year when I was there--and seventeen young
+widows--the wives of a deceased Mormon--offered me their
+hearts and hands.  I called on them one day--and taking
+their soft white hands in mine--which made eighteen hands
+altogether--I found them in tears.
+
+And I said--"Why is this thus?  What is the reason of this
+thusness?"
+
+They hove a sigh--seventeen sighs of different size--They
+said--
+
+"Oh--soon thou wilt be gonested away!"
+
+I told them that when I got ready to leave a place I
+wentested.
+
+They said--"Doth not like us?"
+
+I said--"I doth--I doth!"
+
+I also said--"I hope your intentions are honorable--as I am
+a lone child--my parents being far--far away."
+
+They then said--"Wilt not marry us?"
+
+I said--"Oh--no--it cannot was."
+
+Again they asked me to marry them--and again I declined.
+When they cried--
+
+"Oh--cruel man!  This is too much--oh! too much!"
+
+I told them that it was on account of the muchness that I
+declined.
+
+(Picture.)  This is the Mormon Temple.
+
+It is built of adobe--and will hold five thousand persons
+quite comfortably.  A full brass and string band often
+assists the choir of this church--and the choir--I may add--
+is a remarkably good one.
+
+Brigham Young seldom preaches now.  The younger elders--
+unless on some special occasion--conduct the services.  I
+only heard Mr. Young once.  He is not an educated man--but
+speaks with considerable force and clearness.  The day I was
+there there was nothing coarse in his remarks.
+
+(Picture of) The foundations of the Temple.
+
+These are the foundations of the magnificent Temple the
+Mormons are building.  It is to be built of hewn stone--and
+will cover several acres of ground.  They say it shall
+eclipse in splendor all other temples in the world.  They
+also say it shall be paved with solid gold.
+
+It is perhaps worthy of remark that the architect of this
+contemplated gorgeous affair repudiated Mormonism--and is
+now living in London.
+
+(Picture of) The Temple as it is to be.
+
+This pretty little picture is from the architect's design--
+and cannot therefore--I suppose--be called a fancy sketch.
+(Artemus had the windows of the temple in his panorama cut
+out and filled in with transparent colored paper, so that,
+when lighted from behind, it had the effect of one of the
+little plaster churches, with a piece of lighted candle
+inside, which the Italian image-boys display at times for
+sale in the streets.  Nothing in the course of the evening
+pleased Artemus more than to notice the satisfaction with
+which this meretricious piece of absurdity was received by
+the audience.)
+
+Should the Mormons continue unmolested--I think they will
+complete this rather remarkable edifice.
+
+(Picture of the) Great Salt Lake.
+
+Great Salt Lake.--The great salt dead sea of the desert.
+
+I know of no greater curiosity than this inland sea of thick
+brine.  It is eighty miles wide--and one hundred and thirty
+miles long.  Solid masses of salt are daily washed ashore in
+immense heaps--and the Mormon in want of salt has only to go
+to the shore of this lake and fill his cart.  Only--the salt
+for table use has to be subjected to a boiling process.
+
+These are facts--susceptible of the clearest possible proof.
+They tell one story about this lake--however--that I have my
+doubts about.  They say a Mormon farmer drove forty head of
+cattle in there once--and they came out firstrate pickled
+beef.--
+
+         *     *     *     *     *
+
+         *     *     *     *     *
+
+         *     *     *     *     *
+
+I sincerely hope you will excuse my absence--I am a man
+short--and have to work the moon myself.  (Here Artemus
+would leave the rostrum for a few moments, and pretend to be
+engaged behind.  The picture was painted for a night-scene,
+and the effect intended to be produced was that of the moon
+rising over the lake and rippling on the waters.  It was
+produced in the usual dioramic way, by making the track of
+the moon transparent and throwing the moon on from the
+bull's eye of the lantern.  When Artemus went behind, the
+moon would become nervous and flickering, dancing up and
+down in the most inartistic and undecided manner.  The
+result was that, coupled with the lecturer's oddly expressed
+apology, the "moon" became one of the best laughed-at parts
+of the entertainment.)
+
+I shall be most happy to pay a good salary to any
+respectable boy of good parentage and education who is a
+good moonist.
+
+(Picture of) The Endowment House.
+
+In this building the Mormon is initiated into the mysteries
+of the faith.
+
+Strange stories are told of the proceedings which are held
+in this building--but I have no possible means of knowing
+how true they may be.
+
+Salt Lake City is fifty-five miles behind us--and this is
+Echo Canyon--in reaching which we are supposed to have
+crossed the summit of the Wahsatch Mountains.  These
+ochre-colored bluffs--formed of conglomerate sandstone--and
+full of fossils--signal the entrance to the Canyon.  At its
+base lies Weber Station.
+
+Echo Canyon is about twenty-five miles long.  It is really
+the sublimest thing between the Missouri and the Sierra
+Nevada.  The red wall to the left develops farther up the
+Canyon into pyramids--buttresses--and castles--honey-combed
+and fretted in nature's own massive magnificence of
+architecture.
+
+In 1856--Echo Canyon was the place selected by Brigham Young
+for the Mormon General Wells to fortify and make impregnable
+against the advance of the American army--led by General
+Albert Sidney Johnson.  It was to have been the Thermopylae
+of Mormondom--but it wasn't general Wells was to have done
+Leonidas--but he didn't.
+
+(Picture of) Echo Canyon.
+
+The wild snowstorms have left us--and we have thrown our
+wolf-skin overcoats aside.  Certain tribes of far-western
+Indians bury their distinguished dead by placing them high
+in air and covering them with valuable furs--that is a very
+fair representation of these mid-air tombs.  Those animals
+are horses--I know they are--because my artist says so.  I
+had the picture two years before I discovered the fact.--The
+artist came to me about six months ago--and said--"It is
+useless to disguise it from you any longer--they are
+horses."
+
+(Picture of) A more cheerful view of the Desert.
+
+It was while crossing this desert that I was surrounded by a
+band of Ute Indians.  They were splendidly mounted--they
+were dressed in beaver-skins--and they were armed with
+rifles--knives--and pistols.
+
+(Picture of) Our Encounter with the Indians.
+
+What could I do?--What could a poor old orphan do?  I'm a
+brave man.--The day before the Battle of Bull's Run I stood
+in the highway while the bullets--those dreadful messengers
+of death--were passing all around me thickly--IN WAGONS--on
+their way to the battle-field.  (This was the great joke of
+Artemus Ward's first lecture, "The Babes in the Wood."  He
+never omitted it in any of his lectures, nor did it lose its
+power to create laughter by repetition.  The audiences at
+the Egyptian Hall, London, laughed as immoderately at it, as
+did those of Irving Hall, New York, or of the Tremont Temple
+in Boston.)  But there were too many of these Injuns--there
+were forty of them--and only one of me--and so I said--
+
+"Great Chief--I surrender."  His name was Wocky-bocky.
+
+He dismounted--and approached me.  I saw his tomahawk
+glisten in the morning sunlight.  Fire was in his eye.
+Wocky-bocky came very close to me and seized me by the hair
+of my head.  He mingled his swarthy fingers with my golden
+tresses--and he rubbed his dreadful Thomashawk across my
+lily-white face.  He said--
+
+"Torsha arrah darrah mishky bookshean!"
+
+I told him he was right.
+
+Wocky-bocky again rubbed his tomahawk across my face, and
+said--"Wink-ho--loo-boo!"
+
+Says I--"Mr. Wocky-bocky"--says I--"Wocky--I have thought so
+for years--and so's all our family."
+
+He told me I must go to the tent of the Strong-Heart and eat
+raw dog.  (While sojourning for a day in a camp of Sioux
+Indians we were informed that the warriors of the tribe were
+accustomed to eat raw dog to give them courage previous to
+going to battle.  Artemus was greatly amused with the
+information.  When, in after years, he became weak and
+languid, and was called upon to go to lecture, it was a
+favorite joke with him to inquire, "Hingston, have you got
+any raw dog?")  It don't agree with me.  I prefer simple
+food.  I prefer pork-pie--because then I know what I'm
+eating.  But as raw dog was all they proposed to give to me
+--I had to eat it or starve. So at the expiration of two days
+I seized a tin plate and went to the chief's daughter--and I
+said to her in a silvery voice--in a kind of German-silvery
+voice--I said--
+
+"Sweet child of the forest, the pale-face wants his dog."
+
+There was nothing but his paws!  I had paused too long!
+Which reminds me that time passes.  A way which time has.
+
+I was told in my youth to seize opportunity.  I once tried
+to seize one. He was rich.  He had diamonds on.  As I seized
+him--he knocked me down.  Since then I have learned that he
+who seizes opportunity sees the penitentiary.
+
+(Picture of) The Rocky Mountains.
+
+I take it for granted you have heard of these popular
+mountains.  In America they are regarded as a great success,
+and we all love dearly to talk about them.  It is a kind of
+weakness with us.  I never knew but one American who hadn't
+something--some time--to say about the Rocky Mountains--and
+he was a deaf and dumb man, who couldn't say anything about
+nothing.
+
+But these mountains--whose summits are snow-covered and icy
+all the year round--are too grand to make fun of.  I crossed
+them in the winter of '64--in a rough sleigh drawn by four
+mules.
+
+This sparkling waterfall is the Laughing-Water alluded to by
+Mr. Longfellow in his Indian poem--"Higher-Water."  The
+water is higher up there.
+
+                       (Music.)
+
+(Picture of) The plains of Colorado.
+
+These are the dreary plains over which we rode for so many
+weary days.  An affecting incident occurred on these plains
+some time since, which I am sure you will pardon me for
+introducing here.
+
+On a beautiful June morning--some sixteen years ago--
+
+          (Music, very loud till the scene is off.)
+
+         *     *     *     *     *
+
+         *     *     *     *     *
+
+         *     *     *     *     *
+
+--and she fainted on Reginald's breast!  (At this part of
+the lecture Artemus pretended to tell a story--the piano
+playing loudly all the time.  He continued his narration in
+excited dumb-show--his lips moving as though he were
+speaking.  For some minutes the audience indulged in
+unrestrained laughter.)
+
+(Picture of) The Prairie on Fire.
+
+A prairie on fire is one of the wildest and grandest sights
+that can be possibly imagined.
+
+These fires occur--of course--in the summer--when the grass
+is dry as tinder--and the flames rush and roar over the
+prairie in a manner frightful to behold.  They usually burn
+better than mine is burning to-night.  I try to make my
+prairie burn regularly--and not disappoint the public--but
+it is not as high-principled as I am.  (The scene was a
+transparent one--the light from behind so managed as to give
+the effect of the prairie on fire. Artemus enjoyed the joke
+of letting the fire go out occasionally, and then allowing
+it to relight itself.)
+
+(Picture of) Brigham Young at home.
+
+The last picture I have to show you represents Mr. Brigham
+Young in the bosom of his family.  His family is large--and
+the olive branches around his table are in a very tangled
+condition.  He is more a father than any man I know.  When
+at home--as you here see him--he ought to be very happy with
+sixty wives to minister to his comforts--and twice sixty
+children to soothe his distracted mind.  Ah! my friends--
+what is home without a family?
+
+What will become of Mormonism?  We all know and admit it to
+be a hideous wrong--a great immoral strain upon the
+'scutcheon of the United States.  My belief is that its
+existence is dependent upon the life of Brigham Young.  His
+administrative ability holds the system together--his power
+of will maintains it as the faith of a community.  When he
+dies--Mormonism will die too.  The men who are around him
+have neither his talent nor his energy.  By means of his
+strength it is held together.  When he falls--Mormonism will
+also fall to pieces.
+
+That lion--you perceive--has a tail.  It is a long one
+already.  Like mine--it is to be continued in our next.
+
+(Reprise of first picture of curtain and footlights.
+
+The curtain fell for the last time on Wednesday, the 23d of
+January 1867. Artemus Ward had to break off the lecture
+abruptly.  He never lectured again.)
+
+6.3.  "THE TIMES" NOTICE.
+
+"EGYPTIAN HALL.--Before a large audience, comprising an
+extraordinary number of literary celebrities, Mr. Artemus
+Ward, the noted American humorist, made his first appearance
+as a public lecturer on Tuesday evening, the place selected
+for the display of his quaint oratory being the room long
+tenanted by Mr. Arthur Sketchley.  His first entrance on the
+platform was the signal for loud and continuous laughter and
+applause, denoting a degree of expectation which a nervous
+man might have feared to encounter.  However, his first
+sentences, and the way in which they were received, amply
+sufficed to prove that his success was certain.  The dialect
+of Artemus bears a less evident mark of the Western World
+than that of many American actors, who would fain merge
+their own peculiarities in the delineation of English
+character; but his jokes are of that true Transatlantic
+type, to which no nation beyond the limits of the States can
+offer any parallel.  These jokes he lets fall with an air of
+profound unconsciousness--we may almost say melancholy--
+which is irresistibly droll, aided as it is by the effect of
+a figure singularly gaunt and lean and a face to match.  And
+he has found an audience by whom his caustic humor is
+thoroughly appreciated.  Not one of the odd pleasantries
+slipped out with such imperturbable gravity misses its mark,
+and scarcely a minute elapses at the end of which the sedate
+Artemus is not forced to pause till the roar of mirth has
+subsided.  There is certainly this foundation for an entente
+cordiale between the two countries calling themselves Anglo-
+Saxon, that the Englishman, puzzled by Yankee politics,
+thoroughly relishes Yankee jokes, though they are not in the
+least like his own.  When two persons laugh together, they
+cannot hate each other much so long as the laugh continues.
+
+"The subject of Artemus Ward's lecture is a visit to the
+Mormons, copiously illustrated by a series of moving
+pictures, not much to be commended as works of art, but for
+the most part well enough executed to give (fidelity
+granted) a notion of life as it is among the remarkable
+inhabitants of Utah.  Nor let the connoisseur, who detects
+the shortcomings of some of these pictures, fancy that he
+has discovered a flaw in the armor of the doughty Artemus.
+That astute gentleman knows their worth as well as anybody
+else, and while he ostensibly extols them, as a showman is
+bound to do, he every now and then holds them up to ridicule
+in a vein of the deepest irony.  In one case a palpable
+error of perspective, by which a man is made equal in size
+to a mountain, has been purposely committed, and the shouts
+of laughter that arise as soon as the ridiculous picture
+appears is tremendous.  But there is no mirth in the face of
+Artemus; he seems even deaf to the roar; and when he
+proceeds to the explanation of the landscape, he touches on
+the ridiculous point in a slurring way that provokes a new
+explosion.
+
+"The particulars of the lecture we need not describe.  Many
+accounts of the Mormons, more or less credible, and all
+authenticated, have been given by serious historians, and
+Mr. W.H. Dixon, who has just returned from Utah to London,
+is said to have brought with him new stores of solid
+information.  But to most of us Mormonism is still a
+mystery, and under those circumstances a lecturer who has
+professedly visited a country for the sake more of picking
+up fun than of sifting facts, and whose chief object it must
+be to make his narrative amusing, can scarcely be accepted
+as an authority.  We will, therefore, content ourselves with
+stating that the lecture is entertaining to such a degree
+that to those who seek amusement its brevity is its only
+fault; that it is utterly free from offence, though the
+opportunities for offence given by the subject of Mormonism
+are obviously numerous; that it is interspersed, not only
+with irresistible jokes, but with shrewd remarks, proving
+that Artemus Ward is a man of reflection, as well as a
+consummate humorist."
+
+6.4.  PROGRAMME OF THE EGYPTIAN HALL LECTURE.
+
+PROGRAMME USED AT
+
+                    EGYPTIAN HALL
+
+                     PICCADILLY.
+                    ____________
+
+         Every Night (Except Saturday) at 8.
+
+               SATURDAY MORNINGS AT 3.
+
+                   ____________
+
+                    ARTEMUS WARD
+
+                 AMONG THE MORMONS.
+
+                   .   .   .   .
+
+During the Vacation the Hall has been carefully Swept out
+and a new Door-Knob has been added to the Door.
+
+                   .   .   .   .
+
+MR. ARTEMUS WARD will call on the Citizens of London, at
+their residences, and explain any jokes in his narrative
+which they may not understand.
+
+                   .   .   .   .
+
+A person of long-established integrity will take excellent
+care of Bonnets, Cloaks, etc., during the Entertainment; the
+Audience better leave their money, however, with MR. WARD;
+he will return it to them in a day or two, or invest it for
+them in America as they may think best.
+
+->Nobody must say that he likes the Lecture unless he wishes
+to be thought eccentric; and nobody must say that he doesn't
+like it unless he really IS eccentric.  (This requires
+thinking over, but it will amply repay perusal.)
+
+                   .   .   .   .
+
+The Panorama used to Illustrate Mr. Ward's Narrative is
+rather more than Panoramas usually are.
+
+                   .   .   .   .
+
+MR. WARD will not be responsible for any debts of his own
+contracting.
+
+                   .   .   .   .
+PROGRAMME.
+
+                   .   .   .   .
+
+1.  APPEARANCE Of ARTEMUS WARD,
+
+Who will be greeted with applause.  -> The stall-keeper is
+particularly requested to attend to this. <-  When quiet has
+been restored, the Lecturer will present a rather frisky
+prologue, of about ten minutes in length, and of nearly the
+same width.  It perhaps isn't necessary to speak of the
+depth.
+
+2.
+
+THE PICTURES COMMENCE HERE, the first one being a view of
+the California Steamship.  Large crowd of citizens on the
+wharf, who appear to be entirely willing that ARTEMUS WARD
+shall go.  "Bless you, Sir!" they say.  "Don't hurry about
+coming back.  Stay away for years, if you want to!"  It was
+very touching.  Disgraceful treatment of the passengers, who
+are obliged to go forward to smoke pipes, while the steamer
+herself is allowed 2 Smoke Pipes amidships.  At Panama.  A
+glance at Mexico.
+
+3.  THE LAND Of GOLD.
+
+Montgomery Street, San Francisco.  The Gold Bricks.  Street
+Scenes.  "The Orphan Cabman, or the Mule Driver's Step-
+Father."  The Chinese Theatre.  Sixteen square yards of a
+Chinese Comic Song.
+
+4.  THE LAND Of SILVER.
+
+Virginia City, the wild young metropolis of the new Silver
+State.  Fortunes are made there in a day.  There are
+instances on record of young men going to this place without
+a shilling--poor and friendless--yet by energy,
+intelligence, and a careful disregard to business, they have
+been enabled to leave there, owing hundreds of pounds.
+
+5.  THE GREAT DESERT AT NIGHT.
+
+A dreary waste of Sand.  The Sand isn't worth saving,
+however.  Indians occupy yonder mountains.  Little Injuns
+seen in the distance trundling their war-hoops.
+
+6.  A BIRD'S-EYE VIEW OF GREAT SALT LAKE CITY.
+
+With some entirely descriptive talk.
+
+7.  MAIN STREET, EAST SIDE.
+
+The Salt Lake Hotel, which is conducted on Temperance
+principles.  The landlord sells nothing stronger than salt
+butter.
+
+8.  THE MORMON THEATRE.
+
+The Lady of Lyons was produced here a short time since, but
+failed to satisfy a Mormon audience, on account of there
+being only one Pauline in it.  The play was revised at once.
+It was presented the next night, with fifteen Paulines in
+the cast, and was a perfect success.  -> All these
+statements may be regarded as strictly true.  Mr. Ward would
+not deceive an infant.
+
+9.  MAIN STREET, WEST SIDE.
+
+This being a view of Main Street, West side, it is naturally
+a view of the West side of Main Street.
+
+10.  BRIGHAM YOUNG'S HAREM.
+
+Mr. Young is an indulgent father, and a numerous husband.
+For further particulars call on Mr. WARD, at Egyptian Hall,
+any Evening this week.  This paragraph is intended to blend
+business with amusement.
+
+11.  HEBER C. KIMBALL'S HAREM.
+
+We have only to repeat here the pleasant remarks above in
+regard to Brigham.
+
+                   .   .   .   .
+INTERMISSION Of FIVE MINUTES.
+
+                   .   .   .   .
+
+12.  THE TABERNACLE.
+
+13.  THE TEMPLE AS IT IS.
+
+14.  THE TEMPLE AS IT IS TO BE.
+
+15.  THE GREAT SALT LAKE.
+
+16.  THE ENDOWMENT HOUSE.
+
+The Mormon is initiated into the mysteries of his faith
+here.  The Mormon's religion is singular and his wives are
+plural.
+
+17.  ECHO CANYON.
+
+18.  THE DESERT AGAIN.
+
+A more cheerful view.  The Plains of Colorado.  The Colorado
+Mountains "might have been seen" in the distance, if the
+Artist had painted 'em.  But he is prejudiced against
+mountains, because his uncle once got lost on one.
+
+19.  BRIGHAM YOUNG AND HIS WIVES.
+
+The pretty girls of Utah mostly marry Young.
+
+20.  THE ROCKY MOUNTAINS.
+
+21.  THE PLAINS OF NEBRASKA.
+
+22.  THE PRAIRIE ON FIRE.
+
+                   .   .   .   .
+
+RECOMMENDATIONS.
+
+                         TOTNESS, Oct. 20th, 1866.
+
+MR. ARTEMUS WARD:
+
+My dear Sir,--My wife was dangerously unwell for over
+sixteen years.  She was so weak that she could not lift a
+teaspoon to her mouth.  But in a fortunate moment she
+commenced reading one of your lectures.  She got better at
+once.  She gained strength so rapidly that she lifted the
+cottage piano quite a distance from the floor, and then
+tipped it over on to her mother-in-law, with whom she had
+some little trouble.  We like your lectures very much.
+Please send me a barrel of them.  If you should require any
+more recommendations, you can get any number of them in this
+place, at two shillings each, the price I charge for this
+one, and I trust you may be ever happy.
+
+                   I am, Sir,
+             Yours truly, and so is my wife,
+                                     R. SPRINGERS.
+
+                   .   .   .   .
+
+An American correspondent of a distinguished journal in
+Yorkshire thus speaks of Mr. WARD'S power as an Orator:--
+
+"It was a grand scene, Mr. ARTEMUS WARD standing on the
+platform, talking; many of the audience sleeping tranquilly
+in their seats; others leaving the room and not returning;
+others crying like a child at some of the jokes--all, all
+formed a most impressive scene, and showed the powers of
+this remarkable orator.  And when he announced that he
+should never lecture in that town again, the applause was
+absolutely deafening."
+
+                   .   .   .   .
+
+  Doors open at Half-past Seven, commence at Eight.
+
+              Conclude at Half-past Nine.
+
+            EVERY EVENING EXCEPT SATURDAY.
+
+            SATURDAY AFTERNOONS AT 3 P.M.
+
+
+6.5.   ANNOUNCEMENT AND PROGRAMME OF THE DODWORTH HALL LECTURE
+
+The Lecture on the Mormons was thus announced to the public of New
+York, when Artemus Ward first appeared at Dodworth Hall:
+
+The Festivities at Dodworth Hall will be commenced by the pianist, a
+gentleman who used to board in the same street with Gottschalk.  The
+man who kept the boarding-house remembers it distinctly.  The
+overture will consist of a medley of airs, including the touching
+new ballads "Dear Sister, is there any Pie in the house"  "My
+Gentle Father, have you any Fine Cut about you?"  "Mother, is the
+Battle o'er and is it safe for me to come home from Canada?"  And
+(by request of several families who haven't heard it) "Tramp, tramp,
+tramp, the Boys are Marching."  While the enraptured ear drinks in
+the sweet music (we pay our pianist nine dollars a week, and "find
+him") the eye will be enchained by the magnificent green baize
+covering of the panorama.  This green baize cost 40 cents a yard at
+Mr. Stewart's store.  It was bought in deference to the present
+popularity of "The Wearing of the Green."  We shall keep up to the
+times if we spend the last dollar our friends have got.
+
+
+PROGRAMME OF THE DODWORTH HALL LECTURE.
+
+
+
+               ARTEMUS WARD,
+
+               his Programme.
+
+      DODWORTH HALL, 806 BROADWAY, NEW YORK.
+
+            OPEN EVERY EVENING.
+
+                   .   .   .   .
+
+    1.  Introductory.
+
+    2.  The Steamer Ariel, en route.
+
+    3.  San Francisco.
+
+    4.  The Washoe Silver Region.
+
+    5.  The Plains.
+
+    6.  The City of Saints.
+
+    7.  A Mormon Hotel.
+
+    8.  Brigham Young's Theatre.
+
+    9.  The Council-House.
+
+   10.  The Home of Brigham Young.
+
+   11.  Heber C. Kimball's Seraglio.
+
+   12.  The Mormon House of Worship.
+
+   13.  Foundations of the New Temple.
+
+   14.  Architect's View of the Temple when finished.
+
+   15.  The Great Dead Sea of the Desert.
+
+   16.  The House of Mystery.
+
+   17.  The Canyon.
+
+   18.  Mid-Air Sepulture.
+
+   19.  A Nice Family Party at Brigham Young's.
+
+It requires a large number of Artists to produce this
+Entertainment.  The casual observer can form no idea of the
+quantity of unfettered genius that is soaring, like a
+healthy Eagle, round this Hall, in connection with this
+Entertainment.  In fact, the following gifted persons
+compose the
+
+                    OFFICIAL BUREAU.
+
+Secretary of the Exterior...Mr. E.P. Hingston.
+
+Secretary of the Treasury...Herr Max Field,
+                 (Pupil of Signor Thomaso Jacksoni.)
+
+Mechanical Director and Professor of Carpentry...Signor G. Wilsoni.
+
+Crankist...Mons. Aleck.
+
+Assistant Crankist...Boy (orphan).
+
+Artists...Messrs. Hilliard & Maeder.
+
+Reserved Chairists...Messrs. Persee & Jerome.
+
+Moppist...Signorina O'Flaherty.
+
+Broomist...Mlle. Topsia de St. Moke.
+
+Hired Man...John.
+
+Fighting Editor...Chevalier McArone.
+
+Dutchman...By a Polish Refugee, named McFinnigin.
+
+Doortendist...Mons. Jacques Ridera.
+
+Gas Man...Artemus Ward.
+
+____________________________________________________
+
+This Entertainment will open with music.  The soldiers'
+Chorus from "Faust."  -> First time in this city. <-
+_____________________________________________________
+
+                   .   .   .   .
+
+Next comes a jocund and discursive preamble, calculated to
+show what a good education the Lecturer has.
+
+                   .   .   .   .
+
+View the first is a sea-view.--Ariel navigation.--Normal
+school of whales in the distance.--Isthmus of Panama.--
+Interesting interview with Old Panama himself, who makes all
+the hats.--Old Pan is a likely sort of man.
+
+                   .   .   .   .
+
+San Francisco.--City with a vigilant government.--Miners
+allowed to vote.  Old inhabitants so rich that they have
+legs with golden calves to them.
+
+                   .   .   .   .
+
+Town in the Silver region.--Good quarters to be found
+there.--Playful population, fond of high-low-jack and
+homicide.--Silver lying around loose.--Thefts of it termed
+silver-guilt.
+
+                   .   .   .   .
+
+The plains in Winter.--A wild Moor, like Othello.--Mountains
+in the distance forty thousand miles above the level of the
+highest sea (Musiani's chest C included).--If you don't
+believe this you can go there and measure them for yourself.
+
+                   .   .   .   .
+
+Mormondom, sometimes called the City of the Plain, but
+wrongly; the women are quite pretty.--View of Old Poly
+Gamy's house, &c.
+
+                   .   .   .   .
+
+The Salt Lake Hotel.--Stage just come in from its overland
+route and retreat from the Indians.--Temperance house.--No
+bar nearer than Salt Lake sand-bars.--Miners in shirts like
+Artemus Ward his Programme--they are read and will wash.
+
+                   .   .   .   .
+
+Mormon Theatre, where Artemus Ward lectured.--Mormons like
+theatricals, and had rather go to the Playhouse than to the
+Workhouse, any time.  Private boxes reserved for the ears of
+Brother Brigham's wives.
+
+                   .   .   .   .
+
+Intermission of Five Minutes.
+
+                   .   .   .   .
+
+Territorial State-House.--Seat of the Legislature.--About as
+fair a collection as that at Albany--and "we can't say no
+fairer than that."
+
+                   .   .   .   .
+
+Residence of Brigham Young and his wives.--Two hundred souls
+with but a single thought, Two hundred hearts that beat as
+one.
+
+                   .   .   .   .
+
+Seraglio of Heber C. Kimball.--Home of the Queens of Heber.-
+-No relatives of the Queen of Sheba.--They are a nice gang
+of darlings.
+
+                    .   .   .   .
+
+Mormon Tabernacle, where the men espouse Mormonism and the
+women espouse Brother Brigham and his Elders as spiritual
+Physicians, convicted of bad doct'rin.
+
+                   .   .   .   .
+
+Foundations of the Temple.--Beginning of a healthy little
+job.--Temple to enclose all out-doors, and be paved with
+gold at a premium.
+
+                   .   .   .   .
+
+The Temple when finished.--Mormon-idea of a meeting-house.--
+N.B. It will be bigger, probably, than Dodworth Hall.--one
+of the figures in the foreground is intended for Heber C.
+Kimball.--You can see, by the expression of his back, that
+he is thinking what a great man Joseph Smith was.
+
+                   .   .   .   .
+
+The Great Salt Lake.--Water actually thick with salt--too
+saline to sail in.--Mariners rocked on the bosom of this
+deep with rock salt.--The water isn't very good to drink.
+
+                   .   .   .   .
+
+House where Mormons are initiated.--Very secret and
+mysterious ceremonies.--Anybody can easily find out all
+about them though, by going out there and becoming a Mormon.
+
+                   .   .   .   .
+
+Echo Canyon.--A rough bluff sort of affair.--Great Echo.--
+When Artemus Ward went through, he heard the echoes of some
+things the Indians said there about four years and a half
+ago.
+
+                   .   .   .   .
+
+The Plains again, with some noble savages, both in the live
+and dead state.--The dead one on the high shelf was killed
+in a Fratricidal Struggle.--They are always having
+Fratricidal Struggles out in that line of country.--It would
+be a good place for an enterprising Coroner to locate.
+
+                   .   .   .   .
+
+Brigham Young surrounded by his wives--Those ladies are
+simply too numerous to mention.
+
+                   .   .   .   .
+
+-> Those of the Audience who do not feel offended with
+Artemus Ward are cordially invited to call upon him, often,
+at his fine new house in Brooklyn.  His house is on the
+right hand side as you cross the Ferry, and may be easily
+distinguished from the other houses by its having a Cupola
+and a Mortgage on it.
+
+                   .   .   .   .
+
+-> Soldiers on the battle-field will be admitted to this
+Entertainment gratis.
+
+                   .   .   .   .
+
+-> The Indians on the Overland Route live on Routes and
+Herbs.  They are an intemperate people.  They drink with
+impunity, or anybody who invites them.
+
+                   .   .   .   .
+
+-> Artemus Ward delivered Lectures before
+
+           ALL THE CROWNED HEADS OF EUROPE
+
+                 ever thought of delivering lectures.
+
+ ___________________________________________________________
+
+         TICKETS, 50 CTS.  RESERVED CHAIRS, 1 DOLLAR.
+
+   Doors open at 7.30 P.M.; Entertainment to commence at 8.
+____________________________________________________________
+
+->The Piano used is from the famous factory of Messrs
+Chicking & Sons, 653 Broadway.
+
+The Cabinet Organ is from the famous factory of Messrs Mason
+& Hamlin, Boston, and is furnished by Mason Brothers, 7
+Mercer Street, New York.
+
+
+
+
+
+End of Project Gutenberg's The Complete Works of Artemus Ward, Part 6
+

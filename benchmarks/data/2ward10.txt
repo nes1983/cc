@@ -1,0 +1,2498 @@
+Project Gutenberg's The Complete Works of Artemus Ward, Part 2
+#2 of this seven part series by Charles Farrar Browne
+
+Copyright laws are changing all over the world, be sure to check
+the laws for your country before redistributing these files!!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.
+
+Please do not remove this.
+
+This should be the first thing seen when anyone opens the book.
+Do not change or edit it without written permission.  The words
+are carefully chosen to provide users with the information they
+need about what they can legally do with the texts.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+The Project Gutenberg Literary Archive Foundation is a 501(c)(3)
+organization with EIN [Employee Identification Number] 64-6221541
+
+As of 12/12/00 contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.  Please feel
+free to ask to check the status of your state.
+
+International donations are accepted,
+but we don't know ANYTHING about how
+to make them tax-deductible, or
+even if they CAN be made deductible,
+and don't have the staff to handle it
+even if there are ways.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Title: The Complete Works of Artemus Ward, Part 2
+
+Author: Charles Farrar Browne
+
+Release Date: June, 2002  [Etext #3272]
+[Yes, we are over one year ahead of schedule]
+[The actual date this file first posted = 03/09/01]
+
+Edition: 10
+
+Language: English
+
+Project Gutenberg's The Complete Works of Artemus Ward, Part 2
+*****This file should be named 2ward10.txt or 2ward10.zip*****
+
+Corrected EDITIONS of our etexts get a new NUMBER, 2ward11.txt
+VERSIONS based on separate sources get new LETTER, 2ward10a.txt
+
+This etext was produced by anonymous Project Gutenberg volunteers
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT keep any
+of these books in compliance with any particular paper edition.
+
+We are now trying to release all our books one year in advance
+of the official release dates, leaving time for better editing.
+Please be encouraged to send us error messages even years after
+the official publication date.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.
+
+Most people start at our sites at:
+http://gutenberg.net
+http://promo.net/pg
+
+
+Those of you who want to download any Etext before announcement
+can surf to them as follows, and just download by date; this is
+also a good way to get them instantly upon announcement, as the
+indexes our cataloguers produce obviously take a while after an
+announcement goes out in the Project Gutenberg Newsletter.
+
+http://www.ibiblio.org/gutenberg/etext02
+or
+ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/etext02
+
+Or /etext01, 00, 99, 98, 97, 96, 95, 94, 93, 92, 92, 91 or 90
+
+Just search by the first five letters of the filename you want,
+as it appears in our Newsletters.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release fifty new Etext
+files per month, or 500 more Etexts in 2000 for a total of 3000+
+If they reach just 1-2% of the world's population then the total
+should reach over 300 billion Etexts given away by year's end.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only about 4% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding.
+
+The Project Gutenberg Literary Archive Foundation has been created
+to secure a future for Project Gutenberg into the next millennium.
+
+We need your donations more than ever!
+
+Presently, contributions are only being solicited from people in:
+Colorado, Connecticut, Idaho, Indiana, Iowa,
+Kentucky, Louisiana, Massachusetts, Montana,
+Nevada, Oklahoma, South Carolina, South Dakota,
+Texas, Vermont, and Wyoming.
+
+As the requirements for other states are met,
+additions to this list will be made and fund raising
+will begin in the additional states.
+
+These donations should be made to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Ave.
+Oxford, MS 38655-4109
+
+
+Project Gutenberg Literary Archive Foundation,
+EIN [Employee Identification Number] 64-6221541,
+has been approved as a 501(c)(3) organization by the US Internal
+Revenue Service (IRS).  Donations are tax-deductible to the extent
+permitted by law.  As the requirements for other states are met,
+additions to this list will be made and fund raising will begin in the
+additional states.
+
+All donations should be made to the Project Gutenberg Literary
+Archive Foundation.  Mail to:
+
+Project Gutenberg Literary Archive Foundation
+PMB 113
+1739 University Avenue
+Oxford, MS 38655-4109  [USA]
+
+
+We need your donations more than ever!
+
+You can get up to date donation information at:
+
+http://www.gutenberg.net/donation.html
+
+
+***
+
+If you can't reach Project Gutenberg,
+you can always email directly to:
+
+Michael S. Hart <hart@pobox.com>
+
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+Prof. Hart will answer or forward your message.
+
+We would prefer to send you information by email.
+
+
+***
+
+
+Example command-line FTP session:
+
+ftp ftp.ibiblio.org
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99 or etext00 through etext02, etc.
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+
+**The Legal Small Print**
+
+
+(Three Pages)
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you may distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-tm etexts,
+is a "public domain" work distributed by Professor Michael S. Hart
+through the Project Gutenberg Association (the "Project").
+Among other things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the "PROJECT GUTENBERG" trademark.
+
+Please do not use the "PROJECT GUTENBERG" trademark to market
+any commercial products without permission.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] Michael Hart and the Foundation (and any other party you may 
+receive this etext from as a PROJECT GUTENBERG-tm etext) disclaims
+all liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold Michael Hart, the Foundation,
+and its trustees and agents, and any volunteers associated
+with the production and distribution of Project Gutenberg-tm
+texts harmless, from all liability, cost and expense, including
+legal fees, that arise directly or indirectly from any of the 
+following that you do or cause:  [1] distribution of this etext,
+[2] alteration, modification, or addition to the etext,
+or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word
+     processing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Foundation of 20% of the
+     gross profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Literary Archive Foundation"
+     the 60 days following each date you prepare (or were
+     legally required to prepare) your annual (or equivalent
+     periodic) tax return.  Please contact us beforehand to
+     let us know your plans and to work out the details.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+Project Gutenberg is dedicated to increasing the number of
+public domain and licensed works that can be freely distributed
+in machine readable form.  
+
+The Project gratefully accepts contributions of money, time, 
+public domain materials, or royalty free copyright licenses.
+Money should be paid to the:
+"Project Gutenberg Literary Archive Foundation."
+
+If you are interested in contributing scanning equipment or
+software or other items, please contact Michael Hart at:
+hart@pobox.com
+
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.03.09.01*END*
+[Portions of this header are copyright (C) 2001 by Michael Hart]
+
+
+
+
+
+This etext was produced by anonymous Project Gutenberg Volunteers
+
+
+
+
+
+THE PROJECT GUTENBERG ETEXT OF THE COMPLETE WORKS OF
+ARTEMUS WARD (CHARLES FARRAR BROWNE) PART 2
+
+THE COMPLETE WORKS OF ARTEMUS WARD PART 2, WAR.
+
+(CHARLES FARRAR BROWNE)
+
+With a biographical sketch by Melville D. Landon, "Eli Perkins"
+
+CONTENTS.
+
+PART II.
+
+War.
+
+2.1.  The Show is Confiscated.
+
+2.2.  Thrilling Scenes in Dixie.
+
+2.3.  Fourth of July Oration.
+
+2.4.  The War Fever in Baldinsville.
+
+2.5.  A War Meeting.
+
+2.6.  The Draft in Baldinsville.
+
+2.7.  Surrender of Cornwallis.
+
+2.8.  Things in New York.
+
+2.9.  Touching Letter from a Gory Member Of The Home Guard
+
+2.10.  In Canada.
+
+2.11.  The Noble Red Man.
+
+2.12.  Artemus Ward in Richmond.
+
+2.13.  Artemus Ward to the Prince of Wales.
+
+
+PART II.  WAR.
+
+
+2.1.  THE SHOW IS CONFISCATED.
+
+You hav perhaps wondered wharebouts I was for these many dase
+gone and past.  Perchans you sposed I'd gone to the Tomb of
+the Cappylets, tho I don't know what those is.  It's a popler
+noospaper frase.
+
+Listen to my tail, and be silent that ye may here I've been
+among the Seseshers, a earnin my daily peck by my legitimit
+perfeshun, and havn't had no time to weeld my facile quill for
+"the Grate Komick paper," if you'll allow me to kote from your
+troothful advertisement.
+
+My success was skaly, and I likewise had a narrer scape of my
+life.  If what I've bin threw is "Suthren hosspitality," 'bout
+which we've hearn so much, then I feel bound to obsarve that
+they made two much of me.  They was altogether two lavish with
+their attenshuns.
+
+I went amung the Seseshers with no feelins of annermosity.  I
+went in my perfeshernal capacity.  I was actooated by one of
+the most Loftiest desires which can swell the human Buzzum,
+viz.:--to giv the peeple their money's worth, by showin them
+Sagashus Beests, and Wax Statoots, which I venter to say air
+onsurpast by any other statoots anywheres.  I will not call
+that man who sez my statoots is humbugs a lier and a hoss
+thief, but bring him be4 me and I'll wither him with one of my
+scornful frowns.
+
+But to proseed with my tail.  In my travels threw the Sonny
+South I heared a heap of talk about Seceshon and bustin up the
+Union, but I didn't think it mounted to nothin.  The
+politicians in all the villages was swearin that Old Abe
+(sometimes called the Prahayrie flower) shouldn't never be
+noggerated.  They also made fools of theirselves in varis
+ways, but as they was used to that I didn't let it worry me
+much, and the Stars and Stripes continued for to wave over my
+little tent.  Moor over, I was a Son of Malty and a member of
+several other Temperance Societies, and my wife she was a
+Dawter of Malty, an I sposed these fax would secoor me the
+infloonz and pertectiun of all the fust families.  Alas!  I
+was dispinted.  State arter State seseshed and it growed
+hotter and hotter for the undersined.  Things came to a
+climbmacks in a small town in Alabamy, where I was premtorally
+ordered to haul down the Stars & Stripes.  A deppytashun of
+red-faced men cum up to the door of my tent ware I was standin
+takin money (the arternoon exhibishun had commenst, an' my
+Italyun organist was jerkin his sole-stirrin chimes.)  "We air
+cum, Sir," said a millingtary man in a cockt hat, "upon a hi
+and holy mishun.  The Southern Eagle is screamin threwout this
+sunny land--proudly and defiantly screamin, Sir!"
+
+"What's the matter with him?" sez I; "don't his vittles sit
+well on his stummick?"
+
+"That Eagle, Sir, will continner to scream all over this Brite
+and tremenjus land!"
+
+"Wall, let him SCREAM.  If your Eagle can amuse hisself by
+screamin, let him went!"  The men anoyed me, for I was Bizzy
+makin change.
+
+"We are cum, Sir, upon a matter of dooty--"
+
+"You're right, Capting.  It's every man's dooty to visit my
+show," said I.
+
+"We air cum--"
+
+"And that's the reason you are here!" sez I, larfin one of my
+silvery larfs.  I thawt if he wanted to goak I'd giv him sum
+of my sparklin eppygrams.
+
+"Sir, you're inserlent.  The plain question is, will you haul
+down the Star-Spangled Banner, and hist the Southern flag!"
+
+"Nary hist!"  Those was my reply.
+
+"Your wax works and beests is then confisticated, & you air
+arrested as a Spy!"
+
+Sez I, "My fragrant roses of the Southern clime and Bloomin
+daffodils, what's the price of whisky in this town, and how
+many cubic feet of that seductive flooid can you individooally
+hold?"
+
+They made no reply to that, but said my wax figgers was
+confisticated.  I axed them if that was ginerally the stile
+among thieves in that country, to which they also made no
+reply, but said I was arrested as a Spy, and must go to
+Montgomry in iuns.  They was by this time jined by a large
+crowd of other Southern patrits, who commenst hollerin "Hang
+the baldheaded aberlitionist, and bust up his immoral
+exhibition!"  I was ceased and tied to a stump, and the crowd
+went for my tent--that water-proof pavilion, wherein
+instruction and amoosment had been so muchly combined, at 15
+cents per head--and tore it all to pieces.  Meanwhile dirty-
+faced boys was throwin stuns and empty beer bottles at my
+massiv brow, and takin other improper liberties with my
+person.  Resistance was useless, for a varity of reasons, as I
+readily obsarved.
+
+The Seseshers confisticated my statoots by smashin them to
+attums.  They then went to my money box and confisticated all
+the loose change therein contaned.  They then went and bust in
+my cages, lettin all the animils loose, a small but helthy
+tiger among the rest.  This tiger has a excentric way of
+tearin dogs to peaces, and I allers sposed from his gineral
+conduck that he'd hav no hesitashun in servin human beins in
+the same way if he could get at them.  Excuse me if I was
+crooil, but I larfed boysterrusly when I see that tiger spring
+in among the people.  "Go it, my sweet cuss!" I inardly
+exclaimed.  "I forgive you for bitin off my left thum with all
+my heart!  Rip 'em up like a bully tiger whose Lare has bin
+inwaded by Seseshers!"
+
+I can't say for certain that the tiger serisly injured any of
+them, but as he was seen a few days after, sum miles distant,
+with a large and well selected assortment of seats of trowsis
+in his mouth, and as he lookt as tho he'd been havin sum
+vilent exercise, I rayther guess he did.  You will therefore
+perceive that they didn't confisticate him much.
+
+I was carried to Montgomry in iuns and placed in durans vial.
+The jail was a ornery edifiss, but the table was librally
+surplied with Bakin an Cabbidge.  This was a good variety, for
+when I didn't hanker after Bakin I could help myself to the
+cabbige.
+
+I had nobody to talk to nor nothin to talk about, howsever,
+and I was very lonely, specially on the first day; so when the
+jailer parst my lonely sell I put the few stray hairs on the
+back part of my hed (I'm bald now, but thare was a time when I
+wore sweet auburn ringlets) into as dish-hevild a state as
+possible, & rollin my eyes like a manyyuck, I cride:  "Stay,
+jaler, stay!  I am not mad, but soon shall be if you don't
+bring me suthin to Talk!"  He brung me sum noospapers, for
+which I thanked him kindly.
+
+At larst I got a interview with Jefferson Davis, the President
+of the Southern Conthieveracy.  He was quite perlite, and axed
+me to sit down and state my case.  I did it, when he larfed
+and said his gallunt men had been a little 2 enthoosiastic in
+confisticatin my show.
+
+"Yes," sez I, "they confisticated me too muchly.  I had sum
+hosses confisticated in the same way onct, but the
+confisticaters air now poundin stun in the States Prison in
+Injinnapylus."
+
+"Wall, wall Mister Ward, you air at liberty to depart; you air
+friendly to the South, I know.  Even now we hav many frens in
+the North, who sympathize with us, and won't mingle with this
+fight."
+
+"J. Davis, there's your grate mistaik.  Many of us was your
+sincere frends, and thought certin parties amung us was fussin
+about you and meddlin with your consarns intirely too much.
+But J. Davis, the minit you fire a gun at the piece of dry-
+goods called the Star-Spangled Banner, the North gits up and
+rises en massy, in defence of that banner.  Not agin you as
+individooals,--not agin the South even--but to save the flag.
+We should indeed be weak in the knees, unsound in the heart,
+milk-white in the liver, and soft in the hed, if we stood
+quietly by, and saw this glorus Govyment smashed to pieces,
+either by a furrin or a intestine foe.  The gentle-harted
+mother hates to take her naughty child across her knee, but
+she knows it is her dooty to do it.  So we shall hate to whip
+the naughty South, but we must do it if you don't make back
+tracks at onct, and we shall wallup you out of your boots!  J.
+Davis, it is my decided opinion that the Sonny South is makin
+a egrejus mutton-hed of herself!"
+
+"Go on, sir, you're safe enuff.  You're two small powder for
+me!" sed the President of the Southern Conthieveracy.
+
+"Wait till I go home and start out the Baldinsville Mounted
+Hoss Cavalry!  I'm Capting of that Corpse, I am, and J. Davis,
+beware!  Jefferson D., I now leave you!  Farewell my gay Saler
+Boy!  Good-bye, my bold buccaneer!  Pirut of the deep blue
+sea, adoo! adoo!"
+
+My tower threw the Southern Conthieveracy on my way home was
+thrillin enuff for yeller covers.  It will form the subjeck of
+my next.  Betsy Jane and the projeny air well.
+
+Yours respectively,
+
+A. Ward.
+
+
+2.2.  THRILLING SCENES IN DIXIE.
+
+I had a narrer scape from the sonny South.  "The swings and
+arrers of outrajus fortin," alluded to by Hamlick, warn't
+nothin in comparison to my trubles.  I come pesky near swearin
+sum profane oaths more'n onct, but I hope I didn't do it, for
+I've promist she whose name shall be nameless (except that her
+initials is Betsy J.) that I'll jine the Meetin House at
+Baldinsville, jest as soon as I can scrape money enuff
+together so I can 'ford to be piuss in good stile, like my
+welthy nabers.  But if I'm confisticated agin I'm fraid I
+shall continner on in my present benited state for sum time.
+
+I figgered conspicyusly in many thrillin scenes in my tower
+from Montgomry to my humsted, and on sevril occasions I
+thought "the grate komick paper" wouldn't be inriched no more
+with my lubrications.  Arter biddin adoo to Jefferson D. I
+started for the depot.  I saw a nigger sittin on a fence a
+playin on a banjo, "My Afrikan Brother," sed I, coting from a
+Track I onct red, "you belong to a very interestin race.  Your
+masters is goin to war excloosively on your account."
+
+"Yes, boss," he replied, "an' I wish 'em honorable graves!"
+and he went on playin the banjo, larfin all over and openin
+his mouth wide enuff to drive in an old-fashioned 2 wheeled
+chaise.
+
+The train of cars in which I was to trust my wallerable life,
+was the scaliest, rickytiest lookin lot of consarns that I
+ever saw on wheels afore.  "What time does this string of
+second-hand coffins leave?" I inquired of the depot master.
+He sed direckly, and I went in & sot down.  I hadn't more'n
+fairly squatted afore a dark lookin man with a swinister
+expression onto his countenance entered the cars, and lookin
+very sharp at me, he axed what was my principles?
+
+"Secesh!" I ansered.  "I'm a Dissoluter.  I'm in favor of Jeff
+Davis, Bowregard, Pickens, Capt. Kidd, Bloobeard, Munro
+Edards, the devil, Mrs. Cunningham and all the rest of 'em."
+
+"You're in favor of the war?"
+
+"Certingly.  By all means.  I'm in favor of this war and also
+of the next war.  I've been in favor of the next war for over
+sixteen years!"
+
+"War to the knife!" sed the man.
+
+"Blud, Eargo, Blud!" sed I, tho them words isn't orrigernal
+with me, them words was rit by Shakspeare, who is ded.  His
+mantle fell onto the author of "The Seven Sisters," who's goin
+to hav a Spring overcoat made out of it.
+
+We got under way at larst, an' proceeded on our jerney at
+about the rate of speed which is ginrally obsarved by
+properly-conducted funeral processions.  A hansum yung gal,
+with a red musketer bar on the back side of her hed, and a
+sassy little black hat tipt over her forrerd, sot in the seat
+with me.  She wore a little Sesesh flag pin'd onto her hat,
+and she was a goin for to see her troo love, who had jined the
+Southern army, all so bold and gay.  So she told me.  She was
+chilly and I offered her my blanket.
+
+"Father livin?" I axed.
+
+"Yes, sir."
+
+"Got any Uncles?"
+
+"A heap.  Uncle Thomas is ded, tho."
+
+"Peace to Uncle Thomas's ashes, and success to him!  I will be
+your Uncle Thomas!  Lean on me, my pretty Secesher, and linger
+in Blissful repose!"  She slept as secoorly as in her own
+housen, and didn't disturb the sollum stillness of the night
+with 'ary snore!
+
+At the first station a troop of Sojers entered the cars and
+inquired if "Old Wax Works" was on bored.  That was the
+disrespectiv stile in which they referred to me.  "Becawz if
+Old Wax Works is on bored," sez a man with a face like a
+double-breasted lobster, "we're going to hang Old Wax Works!"
+
+"My illustrious and patriotic Bummers!" sez I, a gittin up and
+takin orf my Shappo, "if you allude to A. Ward, it's my
+pleasin dooty to inform you that he's ded.  He saw the error
+of his ways at 15 minutes parst 2 yesterday, and stabbed
+hisself with a stuffed sled-stake, dyin in five beautiful
+tabloos to slow moosic!  His last words was:  'My perfeshernal
+career is over!  I jerk no more!'"
+
+"And who be you?"
+
+"I'm a stoodent in Senator Benjamin's law offiss.  I'm going
+up North to steal some spoons and things for the Southern
+Army."
+
+This was satisfactory and the intossicated troopers went orf.
+At the next station the pretty little Secessher awoke and sed
+she must git out there.  I bid her a kind adoo and giv her sum
+pervisions.  "Accept my blessin and this hunk of ginger bred!"
+I sed.  She thankt me muchly and tript galy away.  There's
+considerable human nater in a man, and I'm afraid I shall
+allers giv aid and comfort to the enemy if he cums to me in
+the shape of a nice young gal.
+
+At the next station I didn't get orf so easy.  I was dragged
+out of the cars and rolled in the mud for several minits, for
+the purpose of "takin the conseet out of me," as a Secesher
+kindly stated.
+
+I was let up finally, when a powerful large Secesher came up
+and embraced me, and to show that he had no hard feelins agin
+me, put his nose into my mouth.  I returned the compliment by
+placin my stummick suddenly agin his right foot, when he
+kindly made a spittoon of his able-bodied face.  Actooated by
+a desire to see whether the Secesher had bin vaxinated I then
+fastened my teeth onto his left coat-sleeve and tore it to the
+shoulder.  We then vilently bunted out heads together for a
+few minutes, danced around a little, and sot down in a
+mudpuddle.  We riz to our feet agin and by a sudden and adroit
+movement I placed my left eye agin the Secesher's fist.  We
+then rushed into each other's arms and fell under a two-hoss
+wagon.  I was very much exhaustid and didn't care about gettin
+up agin, but the man sed he reckoned I'd better, and I
+conclooded I would.  He pulled me up, but I hadn't bin on my
+feet more'n two seconds afore the ground flew up and hit me in
+the hed.  The crowd sed it was high old sport, but I couldn't
+zackly see where the lafture come in.  I riz and we embraced
+agin.  We careered madly to a steep bank, when I got the upper
+hands of my antaggernist and threw him into the raveen.  He
+fell about forty feet, striking a grindstone pretty hard.  I
+understood he was injured.  I haven't heard from the
+grindstone.
+
+A man in a cockt hat cum up and sed he felt as though a
+apology was doo me.  There was a mistake.  The crowd had taken
+me for another man!  I told him not to mention it, and axed
+him if his wife and little ones was so as to be about, and got
+on bored the train, which had stopped at that station "20
+minits for refreshments."  I got all I wantid.  It was the
+hartiest meal I ever et.
+
+I was rid on a rale the next day, a bunch of blazin fire
+crackers bein tied to my coat tales.  It was a fine spectycal
+in a dramatic pint of view, but I didn't enjoy it.  I had
+other adventers of a startlin kind, but why continner?  Why
+lasserate the Public Boozum with these here things?  Suffysit
+to say I got across Mason & Dixie's line safe at last.  I made
+tracks for my humsted, but she to whom I'm harnist for life
+failed to recognize, in the emashiated bein who stood before
+her, the gushin youth of forty-six summers who had left her
+only a few months afore.  But I went into the pantry, and
+brought out a certin black bottle.  Raisin it to my lips, I
+sed "Here's to you, old gal!"  I did it so natral that she
+knowed me at once.  "Those form!  Them voice!  That natral
+stile of doin things!  'Tis he!" she cried, and rushed into my
+arms.  It was too much for her & she fell into a swoon.  I cum
+very near swoundin myself.
+
+No more to-day from yours for the Pepetration of the Union,
+and the bringin of the Goddess of Liberty out of her present
+bad fix.
+
+
+2.3.  FOURTH OF JULY ORATION.
+
+Delivered July 4th, at Weathersfield, Connecticut, 1859.
+
+[I delivered the follerin, about two years ago, to a large and
+discriminating awjince.  I was 96 minits passin a givin pint.
+I have revised the orashun, and added sum things which makes
+it approposser to the times than it otherwise would be.  I
+have also corrected the grammers and punktooated it.  I do my
+own punktooatin now days.  The Printers in "Vanity Fair"
+offiss can't punktooate worth a cent.]
+
+FELLER CITIZENS:  I've bin honored with a invite to norate
+before you to-day; and when I say that I skurcely feel ekal to
+the task, I'm sure you will believe me.
+
+Weathersfield is justly celebrated for her onyins and
+patritism the world over, and to be axed to paws and address
+you on this my fust perfeshernal tower threw New Englan,
+causes me to feel--to feel--I may say it causes me to FEEL.
+(Grate applaws.  They thought this was one of my
+eccentricities, while the fact is I was stuck.  This between
+you and I.)
+
+I'm a plane man.  I don't know nothin about no ded languages
+and am a little shaky on livin ones.  There4, expect no flowry
+talk from me.  What I shall say will be to the pint, right
+strate out.
+
+I'm not a politician and my other habits air good.  I've no
+enemys to reward, nor friends to sponge.  But I'm a Union man.
+I luv the Union--it is a Big thing--and it makes my hart bleed
+to see a lot of ornery peple a-movin heaven--no, not heaven,
+but the other place--and earth, to bust it up.  Toe much good
+blud was spilt in courtin and marryin that hily respectable
+female the Goddess of Liberty, to git a divorce from her now.
+My own State of Injianny is celebrated for unhitchin marrid
+peple with neatness and dispatch, but you can't get a divorce
+from the Goddess up there.  Not by no means.  The old gal has
+behaved herself too well to cast her off now.  I'm sorry the
+picters don't give her no shoes or stockins, but the band of
+stars upon her hed must continner to shine undimd, forever.
+I'm for the Union as she air, and withered be the arm of every
+ornery cuss who attempts to bust her up.  That's me.  I hav
+sed!  [It was a very sweaty day, and at this pint of the
+orashun a man fell down with sunstroke.  I told the awjince
+that considerin the large number of putty gals present I was
+more afraid of a DAWTER STROKE.  This was impromptoo, and
+seemed to amoose them very much.]
+
+Feller Citizens--I hain't got time to notis the growth of
+Ameriky frum the time when the Mayflowers cum over in the
+Pilgrim and brawt Plymouth Rock with them, but every skool boy
+nose our kareer has been tremenjis.  You will excuse me if I
+don't prase the erly settlers of the Kolonies.  Peple which
+hung idiotic old wimin for witches, burnt holes in Quakers'
+tongues and consined their feller critters to the tredmill and
+pillery on the slitest provocashun may hav bin very nice folks
+in their way, but I must confess I don't admire their stile,
+and will pass them by.  I spose they ment well, and so, in the
+novel and techin langwidge of the nusepapers, "peas to their
+ashis."  Thare was no diskount, however, on them brave men who
+fit, bled and died in the American Revolushun.  We needn't be
+afraid of setting 'em up two steep.  Like my show, they will
+stand any amount of prase.  G. Washington was abowt the best
+man this world ever sot eyes on.  He was a clear-heded,
+warm-harted, and stiddy goin man.  He never slopt over!  The
+prevailin weakness of most public men is to SLOP OVER!  [Put
+them words in large letters--A. W.]  They git filled up and
+slop.  They Rush Things.  They travel too much on the high
+presher principle.  They git on to the fust poplar hobbyhoss
+whitch trots along, not carin a sent whether the beest is even
+goin, clear sited and sound or spavined, blind and bawky.  Of
+course they git throwed eventooally, if not sooner.  When they
+see the multitood goin it blind they go Pel Mel with it,
+instid of exerting theirselves to set it right.  They can't
+see that the crowd which is now bearin them triumfantly on its
+shoulders will soon diskiver its error and cast them into the
+hoss pond of Oblivyun, without the slitest hesitashun.
+Washington never slopt over.  That wasn't George's stile.  He
+luved his country dearly.  He wasn't after the spiles.  He was
+a human angil in a 3 kornerd hat and knee britches, and we
+shan't see his like right away.  My frends, we can't all be
+Washingtons but we kin all be patrits & behave ourselves in a
+human and a Christian manner.  When we see a brother goin down
+hill to Ruin let us not give him a push, but let us seeze rite
+hold of his coat tails and draw him back to Morality.
+
+Imagine G. Washington and P. Henry in the character of
+seseshers!  As well fancy John Bunyan and Dr. Watts in
+spangled tites, doin the trapeze in a one-horse circus!
+
+I tell you, feller-citizens, it would have bin ten dollars in
+Jeff Davis's pocket if he'd never bin born!
+
+      *      *      *      *      *      *      *      *
+
+Be shure and vote at leest once at all elecshuns.  Buckle on
+yer armer and go to the Poles.  See two it that your naber is
+there.  See that the kripples air provided with carriages.  Go
+to the poles and stay all day.  Bewair of the infamous lise
+whitch the Opposishun will be sartin to git up fur perlitical
+effek on the eve of eleckshun.  To the poles and when you git
+there vote jest as you darn please.  This is a privilege we
+all persess, and it is 1 of the booties of this grate and free
+land.
+
+I see mutch to admire in New Englan.  Your gals in partickular
+air abowt as snug bilt peaces of Calliker as I ever saw.  They
+air fully equal to the corn fed gals of Ohio and Injianny and
+will make the bestest kind of wives.  It sets my Buzzum on
+fire to look at 'em.
+
+             Be still, my sole, be still,
+             & you, Hart, stop cuttin up!
+
+I like your skool houses, your meetin houses, your enterprise,
+gumpshun &c., but your favorit Bevridge I disgust.  I allude
+to New England Rum.  It is wuss nor the korn whisky of
+Injianny, which eats threw stone jugs & will turn the stummuck
+of the most shiftliss Hog.  I seldom seek consolashun in the
+flowin Bole, but tother day I wurrid down some of your Rum.
+The fust glass indused me to sware like a infooriated trooper.
+On takin the secund glass I was seezed with a desire to break
+winders, & arter imbibin the third glass I knockt a small boy
+down, pickt his pocket of a New York Ledger, and wildly
+commenced readin Sylvanus Kobb's last Tail.  Its drefful
+stuff--a sort of lickwid litenin, gut up under the personal
+supervishun of the devil--tears men's inards all to peaces and
+makes their noses blossum as the Lobster.  Shun it as you
+would a wild hyeny with a firebrand tied to his tale, and
+while you air abowt it you will do a first-rate thing for
+yourself and everybody abowt you by shunnin all kinds of
+intoxicatin lickers.  You don't need 'em no more'n a cat needs
+2 tales, sayin nothin abowt the trubble and sufferin they
+cawse.  But unless your inards air cast iron, avoid New
+England's favorite Bevrige.
+
+My frends, I'm dun.  I tear myself away from you with tears in
+my eyes & a pleasant oder of Onyins abowt my close.  In the
+langwidge of Mister Catterline to the Rummuns, I go, but
+perhaps I shall cum back agin.  Adoo, people of Weathersfield.
+Be virtoous & you'll be happy!
+
+
+2.4.  THE WAR FEVER IN BALDINSVILLE.
+
+As soon as I'd recooperated my physikil system, I went over
+into the village.  The peasantry was glad to see me.  The
+skoolmaster sed it was cheerin to see that gigantic intelleck
+among 'em onct more.  That's what he called me.  I like the
+skoolmaster, and allers send him tobacker when I'm off on a
+travelin campane.  Besides, he is a very sensible man.  Such
+men must be encouraged.
+
+They don't git news very fast in Baldinsville, as nothin but a
+plank road runs in there twice a week, and that's very much
+out of repair.  So my nabers wasn't much posted up in regard
+to the wars.  'Squire Baxter sed he'd voted the dimicratic
+ticket for goin on forty year, and the war was a dam black
+republican lie.  Jo. Stackpole, who kills hogs for the Squire,
+and has got a powerful muscle into his arms, sed he'd bet 5
+dollars he could lick the Crisis in a fair stand-up fight, if
+he wouldn't draw a knife on him.  So it went--sum was for war,
+and sum was for peace.  The skoolmaster, however, sed the
+Slave Oligarky must cower at the feet of the North ere a year
+had flowed by, or pass over his dead corpse.  "Esto perpetua!"
+he added!  "And sine qua non also!" sed I, sternly, wishing to
+make a impression onto the villagers.  "Requiescat in pace!"
+sed the skoolmaster, "Too troo, too troo!" I anserd, "it's a
+scanderlus fact!"
+
+The newspapers got along at last, chock full of war, and the
+patriotic fever fairly bust out in Baldinsville.  'Squire
+Baxter sed he didn't b'lieve in Coercion, not one of 'em, and
+could prove by a file of "Eagles of Liberty" in his garrit,
+that it was all a Whig lie, got up to raise the price of
+whisky and destroy our other liberties.  But the old 'Squire
+got putty riley, when he heard how the rebels was cuttin up,
+and he sed he reckoned he should skour up his old muskit and
+do a little square fitin for the Old Flag, which had allers
+bin on the ticket HE'D voted, and he was too old to Bolt now.
+The 'Squire is all right at heart, but it takes longer for him
+to fill his venerable Biler with steam than it used to when he
+was young and frisky.  As I previously informed you, I am
+Captin of the Baldinsville Company.  I riz gradooally but
+majestically from drummer's Secretary to my present position.
+But I found the ranks wasn't full by no means, and commenced
+for to recroot.  Havin notist a gineral desire on the part of
+young men who are into the crisis to wear eppylits, I
+detarmined to have my company composed excloosviely of
+offissers, everybody to rank as Brigadeer-Ginral.  The
+follerin was among the varis questions which I put to
+recroots:
+
+  Do you know a masked battery from a hunk of gingerbread?
+
+  Do you know a eppylit from a piece of chalk?
+
+  If I trust you with a real gun, how many men of your own
+company do you speck you can manage to kill durin the war?
+
+  Hav you ever heard of Ginral Price of Missouri, and can you
+avoid simler accidents in case of a battle?
+
+  Have you ever had the measles, and if so, how many?
+
+  How air you now?
+
+  Show me your tongue, &c., &c.  Sum of the questions was
+sarcusstical.
+
+The company filled up rapid, and last Sunday we went to the
+meetin house in full uniform.  I had a seris time gittin into
+my military harness, as it was bilt for me many years ago; but
+I finally got inside of it, tho' it fitted me putty clost.
+Howsever, onct into it, I lookt fine--in fact, aw-inspirin.
+"Do you know me, Mrs. Ward?" sed I, walking into the kitchin.
+
+"Know you, you old fool?  Of course I do."
+
+I saw at once she did.
+
+I started for the meetin house, and I'm afraid I tried to walk
+too strate, for I cum very near fallin over backards; and in
+attemptin to recover myself, my sword got mixed up with my
+legs, and I fell in among a choice collection of young ladies,
+who was standin near the church door a-seein the sojer boys
+come up.  My cockt hat fell off, and sumhow my coat tales got
+twisted round my neck.  The young ladies put their
+handkerchers to their mouths and remarked:  "Te he," while my
+ancient female single friend, Sary Peasley, bust out in a loud
+larf.  She exercised her mouth so vilently that her new false
+teeth fell out onto the ground.
+
+"Miss Peaseley," sed I, gittin up and dustin myself, "you must
+be more careful with them store teeth of your'n or you'll have
+to gum it agin!"
+
+Methinks I had her.
+
+I'd bin to work hard all the week, and I felt rather snoozy.
+I'm 'fraid I did git half asleep, for on hearin the minister
+ask, "Why was man made to mourn?" I sed, "I giv it up," havin
+a vague idee that it was a condrum.  It was a onfortnit
+remark, for the whole meetin house lookt at me with mingled
+surprise and indignation.  I was about risin to a pint of
+order, when it suddenly occurd to me whare I was, and I kept
+my seat, blushin like the red, red rose--so to speak.
+
+The next mornin I 'rose with the lark (N.B.--I don't sleep
+with the lark, tho.'  A goak).
+
+My little dawter was execootin ballids, accompanyin herself
+with the Akordeon, and she wisht me to linger and hear her
+sing:  "Hark I hear a angel singin, a angel now is onto the
+wing."
+
+"Let him fly, my child!" sed I, a-bucklin on my armer; "I must
+forth to my Biz."
+
+We air progressin pretty well with our drill.  As all air
+commandin offissers, there ain't no jelusy, and as we air all
+exceedin smart, it t'aint worth while to try to outstrip each
+other.  The idee of a company composed excloosively of
+Commanders-in-Chiefs, orriggernated, I spose I skurcely need
+say, in these Brane.  Considered AS a idee, I flatter myself
+it is putty hefty.  We've got all the tackticks at our tongs'
+ends, but what we particly excel in is restin muskits.  We can
+rest muskits with anybody.
+
+Our corpse will do its dooty.  We go to the aid of Columby--we
+fight for the stars!
+
+We'll be chopt into sassige meat before we'll exhibit our
+cote-tales to the foe.
+
+We'll fight till there's nothin left of us but our little toes
+and even they shall defiantly wiggle!
+
+                                "Ever of thee,"
+                                                 A. Ward.
+
+
+2.5.  A WAR MEETING.
+
+Our complaint just now is war meetin's.  They've bin havin 'em
+bad in varis parts of our cheerful Republic, and nat'rally we
+caught 'em here in Baldinsville.  They broke out all over us.
+They're better attended than the Eclipse was.
+
+I remember how people poured into our town last Spring to see
+the Eclipse.  They labored into a impression that they
+couldn't see it to home, and so they cum up to our place.  I
+cleared a very handsome amount of money by exhibitin' the
+Eclipse to 'em, in an open-top tent.  But the crowds is bigger
+now.  Posey County is aroused.  I may say, indeed, that the
+pra-hay-ories of Injianny is on fire.
+
+Our big meetin' came off the other night, and our old friend
+of the "Bugle" was elected Cheerman.
+
+The "Bugle-Horn of Liberty" is one of Baldinsville's most
+eminentest institootions.  The advertisements are well-
+written, and the deaths and marriages are conducted with
+signal ability.  The editor, MR. SLINKERS, is a polish'd,
+skarcastic writer.  Folks in these parts will not soon forgit
+how he used up the "Eagle of Freedom," a family journal
+published at Snootville, near here.  The controversy was about
+a plank road.  "The road may be, as our cotemporary says, a
+humbug; but OUR aunt isn't bald-heded, and WE haven't got a
+one-eyed sister Sal!  Wonder if the Editor of the "Eagle of
+Freedom" sees it?"  This used up the "Eagle of Freedom"
+feller, because his aunt's head does present a skinn'd
+appearance, and his sister SARAH is very much one-eyed.  For a
+genteel home-thrust, MR. SLINKERS has few ekals.  He is a man
+of great pluck likewise.  He has a fierce nostril, and I
+believe upon my soul that if it wasn't absolootly necessary
+for him to remain here and announce in his paper, from week to
+week, that "our Gov'ment is about to take vig'rous measures to
+put down the rebellion"--I b'lieve, upon my soul, this
+illustris man would enlist as a Brigadier Gin'ral, and git his
+Bounty.
+                         .  .  .  .
+
+I was fixin myself up to attend the great war meetin', when my
+daughter entered with a young man who was evijently from the
+city, and who wore long hair, and had a wild expression into
+his eye.  In one hand he carried a port-folio, and his other
+paw claspt a bunch of small brushes.  My daughter introduced
+him as MR. SWEIBIER, the distinguished landscape painter from
+Philadelphy.
+
+"He is a artist, papa.  Here is one of his master-pieces--a
+young mother gazin' admirin'ly upon her first-born," and my
+daughter showed me a really pretty picter, done in ile.  "Is
+it not beautiful, papa?  He throws so much soul into his
+work."
+
+"Does he? does he?" said I--"well, I reckon I'd better hire
+him to whitewash our fence.  It needs it.  What will you
+charge, sir," I continued, "to throw some soul into my fence?"
+
+My daughter went out of the room in very short meeter, takin'
+the artist with her, and from the emphatical manner in which
+the door slam'd, I concluded she was summat disgusted at my
+remarks.  She closed the door, I may say, in ITALICS.  I went
+into the closet and larfed all alone by myself for over half
+an hour.  I larfed so vi'lently that the preserve jars rattled
+like a cavalry offisser's sword and things, which it aroused
+my BETSY, who came and opened the door pretty suddent.  She
+seized me by the few lonely hairs that still linger sadly upon
+my bare-footed hed, and dragged me out of the closet,
+incidentally obsarving that she didn't exactly see why she
+should be compelled, at her advanced stage of life, to open a
+assylum for sooperanooated idiots.
+
+My wife is one of the best wimin on this continent, altho' she
+isn't always gentle as a lamb, with mint sauce.  No, not
+always.
+
+But to return to the war meetin'.  It was largely attended.
+The Editor of the "Bugle" arose and got up and said the fact
+could no longer be disguised that we were involved in a war.
+"Human gore," said he, "is flowin'.  All able-bodied men
+should seize a musket and march to the tented field.  I repeat
+it sir, to the tented field."
+
+A voice--"Why don't you go yourself, you old blowhard?"
+
+"I am identified, young man, with a Arkymedian leaver which
+moves the world," said the Editor, wiping his auburn brow with
+his left coat-tail; "I allude, young man, to the press:
+Terms, two dollars a year, invariably in advance.  Job
+printing executed with neatness and dispatch!"  And with this
+brilliant bust of elekance the Editor introduced Mr. J. Brutus
+Hinkins, who is suffering from an attack of College in a
+naberin' place.  Mr. Hinkins said Washington was not safe.
+Who can save our national capeetle?
+
+"DAN SETCHELL," I said.  "He can do it afternoons.  Let him
+plant his light and airy form onto the Long Bridge, make faces
+at the hirelin' foe, and they'll skedaddle!  Old SETCH can do
+it."
+
+"I call the Napoleon of Showmen," said the Editor of the
+"Bugle,"--"I call that Napoleonic man, whose life is adorned
+with so many noble virtues, and whose giant mind lights up
+this warlike scene--I call him to order."
+
+I will remark, in this connection, that the Editor of the
+"Bugle" does my job printing.
+
+"You," said Mr. Hinkins, "who live away from the busy haunts
+of men do not comprehend the magnitood of the crisis.  The
+busy haunts of men is where people comprehend this crisis.  We
+who live in the busy haunts of men--that is to say, we dwell,
+as it were, in the busy haunts of men."
+
+"I really trust that the gen'l'man will not fail to say
+suthin' about the busy haunts of men before he sits down,"
+said I.
+
+"I claim the right to express my sentiments here," said Mr.
+Hinkins, in a slightly indignant tone, "and I shall brook no
+interruption, if I am a Softmore."
+
+"You couldn't be MORE SOFT, my young friend," I observed,
+whereupon there was cries of Order! order!"
+
+"I regret I can't mingle in this strife personally," said the
+young man.
+
+"You might inlist as a liberty-pole," said I, in a silvery
+whisper.
+
+"But," he added, "I have a voice, and that voice is for war."
+The young man then closed his speech with some strikin and
+orginal remarks in relation to the star-spangled banner.  He
+was followed by the village minister, a very worthy man
+indeed, but whose sermons have a tendency to make people sleep
+pretty industriously.
+
+"I am willin' to inlist for one," he said.
+
+"What's your weight, parson?" I asked.
+
+"A hundred and sixty pounds," he said.
+
+"Well, you can inlist as a hundred and sixty pounds of
+morphine, your dooty bein' to stand in the hospitals arter a
+battle, and preach while the surgical operations is bein'
+performed!  Think how much you'd save the Gov'ment in
+morphine."
+
+He didn't seem to see it; but he made a good speech, and the
+editor of the "Bugle" rose to read the resolutions, commencin'
+as follers:
+
+RESOLVED, That we view with anxiety the fact that there is now
+a war goin' on, and
+
+RESOLVED, That we believe Stonewall Jackson sympathizes with
+the secession movement, and that we hope the nine-months men--
+
+At this point he was interrupted by the sounds of silvery
+footsteps on the stairs, and a party of wimin, carryin' guns
+and led by BETSY JANE, who brandish'd a loud and rattlin'
+umbereller, burst into the room.
+
+"Here," cried I, "are some nine-months wimin!"
+
+"Mrs. Ward," said the editor of the "Bugle"--"Mrs. WARD and
+ladies, what means this extr'ord'n'ry demonstration?"
+
+"It means," said that remarkable female "that you men air
+makin' fools of yourselves.  You air willin' to talk and urge
+others to go to the wars, but you don't go to the wars
+yourselves.  War meetin's is very nice in their way, but they
+don't keep STONEWALL JACKSON from comin' over to Maryland and
+helpin' himself to the fattest beef critters.  What we want is
+more cider and less talk.  We want you able-bodied men to stop
+speechifying, which don't 'mount to the wiggle of a sick cat's
+tail, and to go fi'tin'; otherwise you can stay to home and
+take keer of the children, while we wimin will go to the
+wars!"
+
+"Gentl'man," said I, "that's my wife!  Go in, old gal!" and I
+throw'd up my ancient white hat in perfeck rapters.
+
+"Is this roll-book to be filled up with the names of men or
+wimin?" she cried.
+
+"With men--with men!" and our quoty was made up that very
+night.
+
+There is a great deal of gas about these war meetin's.  A war
+meetin', in fact, without gas, would be suthin' like the play
+of HAMLET with the part of OTHELLO omitted.
+
+Still believin' that the Goddess of Liberty is about as well
+sot up with as any young lady in distress could expect to be,
+I am
+                         Yours more'n anybody else's,
+                                                 A. Ward.
+
+
+2.6.  THE DRAFT IN BALDINSVILLE.
+
+If I'm drafted I shall RESIGN.
+
+Deeply grateful for the onexpected honor thus confered upon me
+I shall feel compeld to resign the position in favor of sum
+more worthy person.  Modesty is what ails me.  That's what's
+kept me under.
+
+I meanter-say, I shall hav to resign if I'm drafted
+everywheres I've bin inrold.  I must now, furrinstuns, be
+inrold in upards of 200 different towns.  If I'd kept on
+travelin' I should hav eventooaly becum a Brigade, in which
+case I could have held a meetin' and elected myself Brigadeer-
+ginral quite unanimiss.  I hadn't no idea there was so many of
+me before.  But, serisly, I concluded to stop exhibitin', and
+made tracks for Baldinsville.
+
+My only daughter threw herself onto my boosum, and said, "It
+is me fayther!  I thank the gods!"
+
+She reads the "Ledger."
+
+"Tip us yer bunch of fives, old faker!" said ARTEMUS, Jr.  He
+reads the "Clipper."
+
+My wife was to the sowin' circle.  I knew she and the wimin
+folks was havin' a pleasant time slanderin' the females of the
+OTHER sowin' circle (which likewise met that arternoon, and
+was doubtless enjoyin' theirselves ekally well in slanderin'
+the fust-named circle), and I didn't send for her.  I allus
+like to see people enjoy theirselves.
+
+My son ORGUSTUS was playin' onto a floot.
+
+ORGUSTUS is a ethereal cuss.  The twins was bildin' cob-houses
+in a corner of the kitchin'.
+
+It'll cost some postage-stamps to raise this fam'ly, and yet
+it 'ud go hard with the old man to lose any lamb of the flock.
+
+An old bachelor is a poor critter.  He may have hearn the
+skylark or (what's nearly the same thing) MISS KELLOGG and
+CARLOTTY PATTI sing; he may have hearn OLE BULL fiddle, and
+all the DODWORTHS toot, an' yet he don't know nothin' about
+music--the real, ginuine thing--the music of the laughter of
+happy, well-fed children!  And you may ax the father of sich
+children home to dinner, feelin werry sure there'll be no
+spoons missin' when he goes away.  Sich fathers never drop tin
+five-cent pieces into the contribution box, nor palm shoe-pegs
+off onto blind hosses for oats, nor skedaddle to British sile
+when their country's in danger--nor do anything which is
+really mean.  I don't mean to intimate that the old bachelor
+is up to little games of this sort--not at all--but I repeat,
+he's a poor critter.  He don't live here; only stays.  He
+ought to 'pologize on behalf of his parients, for bein' here
+at all.  The happy marrid man dies in good stile at home,
+surrounded by his weeping wife and children.  The old bachelor
+don't die at all--he sort of rots away, like a pollywog's
+tail.
+                         .  .  .  .
+
+My townsmen were sort o' demoralized.  There was a evident
+desine to ewade the Draft, as I obsarved with sorrer, and
+patritism was below Par--and MAR, too.  [A jew desprit.]  I
+hadn't no sooner sot down on the piazzy of the tavoun than I
+saw sixteen solitary hossmen, ridin' four abreast, wendin'
+their way up the street.
+
+"What's them?  Is it cavilry?"
+
+"That," said the landlord, "is the stage.  Sixteen able-bodied
+citizens has literally bo't the stage line 'tween here and
+Scotsburg.  That's them.  They're Stage-drivers.  Stage-
+drivers is exempt!"
+
+I saw that each stage-driver carried a letter in his left
+hand.
+
+"The mail is hevy, to-day," said the landlord.  "Gin'rally
+they don't have more'n half a dozen letters 'tween 'em.  To-
+day they're got one a piece!  Bile my lights and liver!"
+
+"And the passengers?"
+
+"There ain't any, skacely, now-days," said the landlord, "and
+what few ther is very much prefer to walk, the roads is so
+rough."
+
+"And how ist with you?" I inquired of the editor of the
+"Bugle-Horn of Liberty," who sot near me.
+
+"I can't go," he said, shakin' his head in a wise way.
+"Ordinarily I should delight to wade in gore, but my bleedin'
+country bids me stay at home.  It is imperatively necessary
+that I remain here for the purpose of announcin', from week to
+week, that OUR GOV'MENT IS ABOUT TO TAKE VIGOROUS MEASURES TO
+PUT DOWN THE REBELLION!"
+
+I strolled into the village oyster-saloon, where I found Dr.
+SCHWAZEY, a leadin' citizen in a state of mind which showed
+that he'd bin histin' in more'n his share of pizen.
+
+"Hello, old Beeswax," he bellered; "how's yer grandmams?  When
+you goin' to feed your stuffed animils?"
+
+"What's the matter with the eminent physician?" I pleasantly
+inquired.
+
+"This," he said; "this is what's the matter.  I'm a habit-ooal
+drunkard!  I'm exempt!"
+
+"Jes' so."
+
+"Do you see them beans, old man?" and he pinted to a plate
+before him.  "Do you see 'em?"
+
+"I do.  They are a cheerful fruit when used tempritly."
+
+"Well," said he, "I hadn't eat anything since last week.  I
+eat beans now BECAUSE I eat beans THEN.  I never mix my
+vittles!"
+
+"It's quite proper you should eat a little suthin' once in a
+while," I said.  "It's a good idee to occasionally instruct
+the stummick that it mustn't depend excloosively on licker for
+its sustainance."
+
+"A blessin'," he cried; "a blessin' onto the hed of the man
+what invented beans.  A blessin' onto his hed!"
+
+"Which his name is GILSON!  He's a first family of Bostin,"
+said I.
+                         .  .  .  .
+
+This is a speciment of how things was goin' in my place of
+residence.
+                         .  .  .  .
+
+A few was true blue.  The schoolmaster was among 'em.  He
+greeted me warmly.  He said I was welkim to those shores.  He
+said I had a massiv mind.  It was gratifyin', he said, to see
+the great intelleck stalkin' in their midst onct more.  I have
+before had occasion to notice this schoolmaster.  He is
+evidently a young man of far more than ord'nary talents.
+
+The schoolmaster proposed we should git up a mass meetin'.
+The meetin' was largely attended.  We held it in the open air
+round a roarin' bonfire.
+
+The schoolmaster was the first orator.  He's pretty good on
+the speak.  He also writes well, his composition bein' seldom
+marred by ingrammatticisms. He said this inactivity surprised
+him.  "What do you expect will come of this kind of doin's?
+Nihil fit--"
+
+"Hooray for Nihil!" I interrupted.  "Fellow-citizens, let's
+giv three cheers for Nihil, the man who fit!"
+
+The schoolmaster turned a little red, but repeated--"Nihil
+fit."
+
+"Exactly," I said.  "Nihil FIT.  He wasn't a strategy feller."
+
+"Our venerable friend," said the schoolmaster, smilin'
+pleasantly, "isn't posted in Virgil."
+
+"No, I don't know him.  But if he's a able-bodied man he must
+stand his little draft."
+
+The schoolmaster wound up in eloquent style, and the
+subscriber took the stand.
+
+I said the crisis had not only cum itself, but it had brought
+all its relations.  It has cum, I said, with a evident
+intention of makin' us a good long visit.  It's goin' to take
+off its things and stop with us.  My wife says so too.  This
+is a good war.  For those who like this war, it's just such a
+kind of war as they like.  I'll bet ye.  My wife says so too.
+If the Federal army succeeds in takin' Washington, and they
+seem to be advancin' that way pretty often, I shall say it is
+strategy, and Washington will be safe.  And that noble banner,
+as it were--that banner, as it were--will be a emblem, or
+rather, I should say, that noble banner--AS IT WERE.  My wife
+says so too.  [I got a little mixed up here, but they didn't
+notice it.  Keep mum.]  Feller citizens, it will be a proud
+day for this Republic when Washington is safe.  My wife says
+so too.
+
+The editor of the "Bugle-Horn of Liberty" here arose and said:
+"I do not wish to interrupt the gentleman, but a impertant
+despatch has just bin received at the telegraph office here.
+I will read it.  It is as follows:  GOV'MENT IS ABOUT TO TAKE
+VIGOROUS MEASURES TO PUT DOWN THE REBELLION!  [Loud applause.]
+
+That, said I, is cheering.  That's soothing.  And Washington
+will be safe. [Sensation.]  Philadelphia is safe.  Gen.
+PATTERSON'S in Philadelphia.  But my heart bleeds partic'ly
+for Washington.  My wife says so too.
+
+There's money enough. No trouble about MONEY.  They've got a
+lot of first-class bank-note engravers at Washington (which
+place, I regret to say, is by no means safe) who turn out two
+or three cords of money a day--good money, too.  Goes well.
+These bank-note engravers made good wages.  I expect they lay
+up property.  They are full of Union sentiment.  There is
+considerable Union sentiment in Virginny, more especially
+among the honest farmers of the Shenandoah valley.  My wife
+says so too.
+
+Then it isn't money we want.  But we do want MEN, and we must
+have them.  We must carry a whirlwind of fire among the foe.
+We must crush the ungrateful rebels who are poundin' the
+Goddess of Liberty over the head with slung-shots, and
+stabbin' her with stolen knives!  We must lick 'em quick.  We
+must introduce a large number of first-class funerals among
+the people of the South.  Betsy says so too.
+
+This war hain't been too well managed.  We all know that.
+What then?  We are all in the same boat--if the boat goes
+down, we go down with her.  Hence we must all fight.  It ain't
+no use to talk now about who CAUSED the war.  That's played
+out.  The war is upon us--upon us all--and we must all fight.
+We can't "reason" the matter with the foe.  When, in the broad
+glare of the noonday sun, a speckled jackass boldly and
+maliciously kicks over a peanut-stand, do we "reason" with
+him?  I guess not.  And why "reason" with those other Southern
+people who are trying to kick over the Republic!  Betsy, my
+wife, says so too.
+
+The meeting broke up with enthusiasm.
+
+We shan't draft in Baldinsville if we can help it.
+
+
+2.7.  SURRENDER OF CORNWALLIS.
+
+It was customary in many of the inland towns of New England,
+some thirty years ago, to celebrate the anniversary of the
+surrender of Lord Cornwallis by a sham representation of that
+important event in the history of the Revolutionary War.  A
+town meeting would be called, at which a company of men would
+be detailed as British, and a company as Americans--two
+leading citizens being selected to represent Washington and
+Cornwallis in mimic surrender.
+
+The pleasant little town of W--, in whose schools the writer
+has been repeatedly "corrected," upon whose ponds he has often
+skated, upon whose richest orchards he has, with other
+juvenile bandits, many times dashed in the silent midnight;
+the town of W--, where it was popularly believed these bandits
+would "come to a bad end," resolved to celebrate the
+surrender.  Rival towns had celebrated, and W-- determined to
+eclipse them in the most signal manner.  It is my privilege to
+tell how W-- succeeded in this determination.
+
+The great day came.  It was ushered in by the roar of
+musketry, the ringing of the village church bell, the
+squeaking of fifes, and the rattling of drums.
+
+People poured into the village from all over the county.
+Never had W-- experienced such a jam.  Never had there been
+such an onslaught upon gingerbread carts.  Never had New
+England rum (for this was before Neal Dow's day) flowed so
+freely.  And W--'s fair daughters, who mounted the house-tops
+to see the surrender, had never looked fairer.  The old folks
+came, too, and among them were several war-scarred heroes, who
+had fought gallantly at Monmouth and Yorktown.  These brave
+sons of '76 took no part in the demonstration, but an honored
+bench was set apart for their exclusive use on the piazza of
+Sile Smith's store.  When they were dry all they had to do was
+to sing out to Sile's boy, Jerry, "a leetle New Englan' this
+way, if YOU please."  It was brought forthwith.
+
+At precisely 9 o'clock, by the schoolmaster's new "Lepeen"
+watch, the American and British forces marched on to the
+village green and placed themselves in battle array, reminding
+the spectator of the time when
+
+                 "Brave Wolfe drew up his men
+                     In a style most pretty,
+                  On the Plains of Abraham
+                        Before the city."
+
+The character of Washington had been assigned to 'Squire Wood,
+a well-to-do and influential farmer, while that of Cornwallis
+had been given to the village lawyer, a kind-hearted but
+rather pompous person, whose name was Caleb Jones.
+
+'Squire Wood, the Washington of the occasion, had met with
+many unexpected difficulties in preparing his forces, and in
+his perplexity he had emptied not only his own canteen but
+those of most of his aids.  The consequence was--mortifying as
+it must be to all true Americans--blushing as I do to tell it,
+Washington at the commencement of the mimic struggle was most
+unqualifiedly drunk.
+
+The sham fight commenced.  Bang! bang! bang! from the
+Americans--bang! bang! bang! from the British.  The bangs were
+kept hotly up until the powder gave out, and then came the
+order to charge.  Hundreds of wooden bayonets flashed fiercely
+in the sunlight, each soldier taking very good care not to hit
+anybody.
+
+"Thaz (hic) right," shouted Washington, who during the
+shooting had been racing his horse wildly up and down the
+line, "thaz right!  GIN it to 'em! Cut their tarnal heads
+off!"
+
+"On, Romans!" shrieked Cornwallis, who had once seen a
+theatrical performance and remembered the heroic appeals of
+the Thespian belligerents, "on to the fray!  No sleep till
+mornin'."
+
+"Let eout all their bowels," yelled Washington, "and down with
+taxation on tea!"
+
+The fighting now ceased, the opposing forces were properly
+arranged, and Cornwallis, dismounting, prepared to present his
+sword to Washington according to programme.  As he walked
+slowly towards the Father of His Country he rehearsed the
+little speech he had committed for the occasion, while the
+illustrious being who was to hear it was making desperate
+efforts to keep in his saddle.  Now he would wildly brandish
+his sword and narrowly escape cutting off his horse's ears,
+and then he would fall suddenly forward on to the steed's
+neck, grasping the mane as drowning men seize hold of straws.
+He was giving an inimitable representation of Toodles on
+horseback.  All idea of the magnitude of the occasion had left
+him, and when he saw Cornwallis approaching, with slow and
+stately step, and sword-hilt extended toward him, he inquired,
+
+"What'n devil YOU want, any (hic) how!"
+
+"General Washington," said Cornwallis, in dignified and
+impressive tones, "I tender you my sword.  I need not inform
+you, Sir, how deeply--"
+
+The speech was here suddenly cut short by Washington, who,
+driving the spurs into his horse, playfully attempted to ride
+over the commander of the British forces.  He was not
+permitted to do this, for his aids, seeing his unfortunate
+condition, seized the horse by the bridle, straightened
+Washington up in his saddle, and requested Cornwallis to
+proceed with his remarks.
+
+"General Washington," said Cornwallis, "the British Lion
+prostrates himself at the feet of the American Eagle!"
+
+"EAGLE?  EAGLE!" yelled the infuriated Washington, rolling off
+his horse and hitting Cornwallis a frightful blow on the head
+with the flat of his sword, "do you call me a EAGLE, you mean,
+sneakin' cuss?"  He struck him again, sending him to the
+ground, and said, "I'll learn you to call me a Eagle, you
+infernal scoundrel!"
+
+Cornwallis remained upon the ground only a moment.  Smarting
+from the blows he had received, he arose with an entirely
+unlooked for recuperation on the part of the fallen, and in
+direct defiance of historical example; in spite of the men of
+both nations, indeed, he whipped the Immortal Washington until
+he roared for mercy.
+
+The Americans, at first mortified and indignant at the conduct
+of their chief, now began to sympathize with him, and resolved
+to whip their mock foes in earnest.  They rushed fiercely upon
+them, but the British were really the stronger party and drove
+the Americans back.  Not content with this they charged madly
+upon them and drove them from the field--from the village, in
+fact.  There were many heads damaged, eyes draped in mourning,
+noses fractured and legs lamed--it is a wonder that no one was
+killed outright.
+
+Washington was confined to his house for several weeks, but he
+recovered at last.  For a time there was a coolness between
+himself and Cornwallis, but they finally concluded to join the
+whole county in laughing about the surrender.
+
+They live now.  Time, the "artist," has thoroughly whitewashed
+their heads, but they are very jolly still.  On town meeting
+days the old 'Squire always rides down to the village.  In the
+hind part of his venerable yellow wagon is always a bunch of
+hay, ostensibly for the old white horse, but really to hide a
+glass bottle from the vulgar gaze.  This bottle has on one
+side a likeness of Lafayette, and upon the other may be seen
+the Goddess of Liberty.  What the bottle contains inside I
+cannot positively say, but it is true that 'Squire Wood and
+Lawyer Jones visit that bottle very frequently on town-meeting
+days and come back looking quite red in the face.  When this
+redness in the face becomes of the blazing kind, as it
+generally does by the time the polls close, a short dialogue
+like this may be heard.
+
+"We shall never play surrender again, Lawyer Jones."
+
+"Them days is over, 'Squire Wood!"
+
+
+2.8.  THINGS IN NEW YORK.
+
+The stoodent and connyseer must have noticed and admired in
+varis parts of the United States of America large yeller
+hanbills, which not only air gems of art in theirselves, but
+they troothfully sit forth the attractions of my show--a show,
+let me here obsarve, that contains many livin' wild animils,
+every one of which has got a Beautiful Moral.
+
+Them hanbills is sculpt in New York.
+
+& I annoolly repair here to git some more on 'um;
+
+&, bein' here, I tho't I'd issoo a Adress to the public on
+matters and things.
+
+Since last I meyandered these streets, I have bin all over the
+Pacific Slopes and Utah.  I cum back now, with my virtoo
+unimpaired; but I've got to git some new clothes.
+
+Many changes has taken place, even durin' my short absence, &
+sum on um is Sollum to contempulate.  The house in Varick
+street, where I used to Board, is bein' torn down.  That
+house, which was rendered memoriable by my livin' into it, is
+"parsin' away! parsin' away!"  But some of the timbers will be
+made into canes, which will be sold to my admirers at the low
+price of one dollar each.  Thus is changes goin' on
+continerly.  In the New World it is war--in the Old World
+Empires is totterin' & Dysentaries is crumblin'.  These canes
+is cheap at a dollar.
+
+Sammy Booth, Duane street, sculps my hanbills, & he's artist.
+He studid in Rome--State of New York.
+
+I'm here to read the proof-sheets of my hanbils as fast as
+they're sculpt.  You have to watch these ere printers pretty
+close, for they're jest as apt to spel a wurd rong as anyhow.
+
+But I have time to look around sum & how do I find things?  I
+return to the Atlantic States after a absence of ten months, &
+what State do I find the country in?  Why I don't know what
+State I find it in.  Suffice it to say, that I do not find it
+in the State of New Jersey.
+
+I find sum things that is cheerin', particly the resolve on
+the part of the wimin of America to stop wearin' furrin goods.
+
+I never meddle with my wife's things.  She may wear muslin
+from Greenland's icy mountains, and bombazeen from Injy's
+coral strands, if she wants to; but I'm glad to state that
+that superior woman has peeled off all her furrin clothes and
+jumpt into fabrics of domestic manufactur.
+
+But, says sum folks, if you stop importin' things you stop the
+revenoo.  That's all right.  We can stand it if the Revenoo
+can.  On the same principle young men should continer to get
+drunk on French brandy and to smoke their livers as dry as a
+corn-cob with Cuby cigars because 4-sooth if they don't, it
+will hurt the Revenoo!  This talk 'bout the Revenoo is of the
+bosh boshy.  One thing is tol'bly certin--if we don't send
+gold out of the country we shall have the consolation of
+knowing that it is in the country.  So I say great credit is
+doo the wimin for this patriotic move--and to tell the trooth,
+the wimin genrally know what they're bout.  Of all the
+blessins they're the soothinist.  If there'd never bin any
+wimin, where would my children be to-day?
+
+But I hope this move will lead to other moves that air just as
+much needed, one of which is a genral and therrer curtainment
+of expenses all round.  The fact is we air gettin' ter'bly
+extravgant, and onless we paws in our mad career in less than
+two years the Goddess of Liberty will be seen dodgin' into a
+Pawn Broker's shop with the other gown done up in a bundle,
+even if she don't have to Spout the gold stars in her
+head-band.  Let us all take hold jintly, and live and dress
+centsibly, like our forefathers who know'd moren we do, if
+they warnt quite so honest!  (Suttle goaketh.)
+
+There air other cheerin' signs for Ameriky.  We don't, for
+instuns, lack great Gen'rals, and we certinly don't brave
+sojers--but there's one thing I wish we did lack, and that is
+our present Congress.
+
+I venture to say that if you sarch the earth all over with a
+ten-hoss power mikriscope, you won't be able to find such
+another pack of poppycock gabblers as the present Congress of
+the United States of America would be able to find--find among
+their constituents.
+
+Gentleman of the Senit & of the House, you've sot there and
+draw'd your pay and made summer-complaint speeches long enuff.
+The country at large, incloodin' the undersined, is disgusted
+with you.  Why don't you show us a statesman--sumbody who can
+make a speech that will hit the pop'lar hart right under the
+great Public weskit?  Why don't you show us a statesman who
+can rise up to the Emergency, and cave in the Emergency's
+head?
+
+Congress, you won't do.  Go home, you mizzerable devils--go
+home!
+
+At a special Congressional 'lection in my district the other
+day I delib'ritly voted for Henry Clay.  I admit that Henry is
+dead, but inasmuch as we don't seem to have a live statesman
+in our National Congress, let us by all means have a first-
+class corpse.
+
+Them who think that a cane made from the timbers of the house
+I once boarded in is essenshall to their happiness, should not
+delay about sendin' the money right on for one.
+
+My reported captur by the North American savijis of Utah, led
+my wide circle of friends and creditors to think that I had
+bid adoo to earthly things and was a angel playin' on a golden
+harp.  Hents my rival home was on expected.
+
+It was 11, P.M., when I reached my homestid and knockt a
+healthy knock on the door thereof.
+
+A nightcap thrusted itself out of the front chamber winder.
+(It was my Betsy's nightcap.)  And a voice said:
+
+"Who is it?"
+
+"It is a Man!" I answered, in a gruff vois.
+
+"I don't b'lieve it!" she sed.
+
+"Then come down and search me," I replied.
+
+Then resumin' my nat'ral voice, I said, "It is your own A. W.,
+Betsy!  Sweet lady, wake!  Ever of thou!"
+
+"Oh," she said, "it's you, is it?  I thought I smelt
+something."
+
+But the old girl was glad to see me.
+
+In the mornin' I found that my family were entertainin' a
+artist from Philadelphy, who was there paintin' some startlin
+water-falls and mountains, and I morin suspected he had a
+hankerin' for my oldest dauter.
+
+"Mr. Skimmerhorn, father," sed my dauter.
+
+"Glad to see you, Sir!" I replied in a hospittle vois--"Glad
+to see you."
+
+"He is an artist, father," sed my child.
+
+"A whichist?"
+
+"An artist.  A painter."
+
+"And glazier," I askt.  "Air you a painter and glazier, sir?"
+
+My dauter and wife was mad, but I couldn't help it; I felt in
+a comikil mood.
+
+"It is a wonder to me, Sir," sed the artist, "considerin what
+a widespread reputation you have, that some of our Eastern
+managers don't secure you."
+
+"It's a wonder to me," said I to my wife, "that somebody don't
+secure him with a chain."
+
+After breakfast I went over to town to see my old friends.
+The editor of the "Bugle" greeted me cordyully, and showed me
+the follerin' article he'd just written about the paper on the
+other side of the street:
+
+"We have recently put up in our office an entirely new sink,
+of unique construction--with two holes through which the
+soiled water may pass to the new bucket underneath.  What will
+the hell-hounds of "The Advertiser" say to this!  We shall
+continue to make improvements as fast as our rapidly
+increasing business may warrant.  Wonder whether a certain
+editor's wife thinks she can palm off a brass watch-chain on
+this community for a gold one?"
+
+"That," says the Editor, "hits him whar he lives.  That will
+close him up as bad as it did when I wrote an article
+ridicooling his sister, who's got a cock-eye."
+
+A few days after my return I was shown a young man, who says
+he'll be Dam if he goes to the war.  He was settin' on a
+barrel, and was indeed a Loathsum objeck.
+
+Last Sunday I heard Parson Batkins preach, and the good old
+man preached well, too, tho' his prayer was ruther lengthy.
+The Editor of the "Bugle," who was with me, sed that prayer
+would make fifteen squares, solid nonparil.
+
+I don't think of nothin' more to write about.  So, "B'leeve me
+if all those endearing young charms," &c., &c.
+
+                                                 A. Ward.
+
+
+2.9.  TOUCHING LETTER FROM A GORY MEMBER OF THE HOME GUARD.
+
+Broadway, Dec. 10, '61.
+
+Dear Father and Mother,--We are all getting along very well.
+We mess at Delmonico's.  Do not repine for your son.  Some
+must suffer for the glorious Stars and Stripes, and dear
+parents, why shouldn't I?  Tell Mrs. Skuller that we do not
+need the blankets she so kindly sent to us, as we bunk at the
+St. Nicholas and Metropolitan.  What our brave lads stand most
+in need of now is Fruit Cake and Waffles.  Do not weep for me.
+
+                                              Henry Adolphus.
+
+
+2.10.  IN CANADA.
+
+I'm at present existin' under a monikal form of Gov'ment.  In
+other words I'm travellin' among the crowned heds of Canady.
+They ain't pretty bad people.  On the cont'ry, they air
+exceedin' good people.
+
+Troo, they air deprived of many blessins.  They don't enjoy
+for instans, the priceless boon of a war.  They haven't any
+American Egil to onchain, and they hain't got a Fourth of July
+to their backs.
+
+Altho' this is a monikal form of Gov'ment, I am onable to
+perceeve much moniky.  I tried to git a piece in Toronto, but
+failed to succeed.
+
+Mrs. VICTORIA, who is Queen of England, and has all the
+luxuries of the markets, includin' game in its season, don't
+bother herself much about Canady, but lets her do 'bout as
+she's mighter.  She, however, gin'rally keeps her supplied
+with a lord, who's called a Gov'ner Gin'ral.  Sometimes the
+politicians of Canady make it lively for this lord--for Canady
+has politicians, and I expect they don't differ from our
+politicians, some of 'em bein' gifted and talented liars, no
+doubt.
+
+The present Gov'ner Gin'ral of Canady is Lord MONK.  I saw him
+review some volunteers at Montreal.  He was accompanied by
+some other lords and dukes and generals and those sort of
+things.  He rode a little bay horse, and his close wasn't any
+better than mine.  You'll always notiss, by the way, that the
+higher up in the world a man is, the less good harness he puts
+on.  Hence Gin'ral HALLECK walks the streets in plain
+citizen's dress, while the second lieutenant of a volunteer
+regiment piles all the brass things he can find onto his back,
+and drags a forty-pound sword after him.
+
+Monk has been in the lord bisniss some time, and I understand
+it pays, tho' I don't know what a lord's wages is.  The wages
+of sin is death and postage stamps.  But this has nothing to
+do with MONK.
+
+One of Lord MONK'S daughters rode with him on the field.  She
+has golden hair, a kind, good face, and wore a red hat.  I
+should be very happy to have her pay me and my family a visit
+at Baldinsville.  Come and bring your knittin', Miss MONK.
+Mrs. WARD will do the fair thing by you.  She makes the best
+slap-jacks in America.  As a slap-jackist, she has no ekal.
+She wears the Belt.
+
+What the review was all about, I don't know.  I haven't a
+gigantic intelleck, which can grasp great questions at onct.
+I am not a WEBSTER or a SEYMOUR.  I am not a WASHINGTON or a
+OLD ABE.  Fur from it.  I am not as gifted a man as HENRY WARD
+BEECHER.  Even the congregation of Plymouth Meetin'-House in
+Brooklyn will admit that.  Yes, I should think so.  But while
+I don't have the slitest idee as to what the review was fur, I
+will state that the sojers looked pooty scrumptious in their
+red and green close.
+
+Come with me, jentle reader, to Quebeck.  Quebeck was surveyed
+and laid out by a gentleman who had been afflicted with the
+delirium tremens from childhood, and hence his idees of things
+was a little irreg'ler.  The streets don't lead anywheres in
+partic'ler, but everywheres in gin'ral.  The city is bilt on a
+variety of perpendicler hills, each hill bein' a trifle wuss
+nor t'other one.  Quebeck is full of stone walls, and arches,
+and citadels and things.  It is said no foe could ever git
+into Quebeck, and I guess they couldn't.  And I don't see what
+they'd WANT to get in there for.
+
+Quebeck has seen lively times in a warlike way.  The French
+and Britishers had a set-to there in 1759.  JIM WOLFE
+commanded the latters, and JO. MONTCALM the formers.  Both
+were hunky boys, and fit nobly.  But WOLFE was too many
+measles for MONTCALM, and the French was slew'd.  WOLFE and
+MONTCALM was both killed.  In arter years a common monyment
+was erected by the gen'rous people of Quebeck, aided by a
+bully Earl named GEORGE DALHOUSIE, to these noble fellows.
+That was well done.
+
+Durin' the Revolutionary War B. ARNOLD made his way, through
+dense woods and thick snows, from Maine to Quebeck, which it
+was one of the hunkiest things ever done in the military line.
+It would have been better if B. ARNOLD'S funeral had come off
+immeditly on his arrival there.
+
+On the Plains of Abraham there was onct some tall fitin', and
+ever since then there has been a great demand for the bones of
+the slew'd on that there occasion.  But the real ginooine
+bones was long ago carried off, and now the boys make a hansum
+thing by cartin' the bones of hosses and sheep out there, and
+sellin' 'em to intelligent American towerists.  Takin' a
+perfessional view of this dodge, I must say that it betrays
+genius of a lorfty character.
+
+It reminded me of a inspired feet of my own.  I used to
+exhibit a wax figger of HENRY WILKINS, the Boy Murderer.
+HENRY had, in a moment of inadvertence, killed his Uncle
+EPHRAM and walked off with the old man's money.  Well, this
+stattoo was lost somehow, and not sposin' it would make any
+particler difference I substitooted the full-grown stattoo of
+one of my distinguished piruts for the Boy Murderer.  One
+night I exhibited to a poor but honest audience in the town of
+Stoneham, Maine.  "This, ladies and gentlemen," said I,
+pointing my umbrella (that weapon which is indispensable to
+every troo American) to the stattoo, "this is a life-like wax
+figger of the notorious HENRY WILKINS, who in the dead of
+night murdered his Uncle EPHRAM in cold blood.  A sad warning
+to all uncles havin' murderers for nephews.  When a mere child
+this HENRY WILKINS was compelled to go to the Sunday-school.
+He carried no Sunday-school book.  The teacher told him to go
+home and bring one.  He went and returned with a comic song-
+book.  A depraved proceedin'."
+
+"But," says a man in the audience, "when you was here before
+your wax figger represented HENRY WILKINS as a boy.  Now,
+HENRY was hung, and yet you show him to us now as a full-grown
+man!  How's that?"
+
+"The figger has growd, sir--it has growd," I said.
+
+I was angry.  If it had been in these times I think I should
+have informed agin him as a traitor to his flag, and had him
+put in Fort Lafayette.
+
+I say adoo to Quebeck with regret.  It is old-fogyish, but
+chock-full of interest.  Young gentlemen of a romantic turn of
+mind, who air botherin' their heads as to how they can spend
+their father's money, had better see Quebeck.
+
+Altogether I like Canady.  Good people and lots of pretty
+girls.  I wouldn't mind comin' over here to live in the
+capacity of a Duke, provided a vacancy occurs, and provided
+further I could be allowed a few star-spangled banners, a
+eagle, a boon of liberty, etc.
+
+Don't think I've skedaddled.  Not at all.  I'm coming home in
+a week.
+
+Let's have the Union restored as it was, if we can; but if we
+can't, I'M IN FAVOR OF THE UNION AS IT WASN'T.  But the Union,
+anyhow.
+
+Gentlemen of the editorial corpse, if you would be happy be
+virtoous!  I who am the emblem of virtoo, tell you so.
+
+                                 (Signed,)        "A Ward."
+
+
+2.11.  THE NOBLE RED MAN.
+
+The red man of the forest was form'ly a very respectful
+person.  Justice to the noble aboorygine warrants me in sayin'
+that orrigernerly he was a majestic cuss.
+
+At the time CHRIS. arrove on these shores (I allood to CHRIS.
+COLUMBUS), the savajis was virtoous and happy.  They were
+innocent of secession, rum, draw-poker, and sinfulness
+gin'rally.  They didn't discuss the slavery question as a
+custom.  They had no Congress, faro banks, delirium tremens,
+or Associated Press.  Their habits was consequently good.
+Late suppers, dyspepsy, gas companies, thieves, ward
+politicians, pretty waiter-girls, and other metropolitan
+refinements, were unknown among them.  No savage in good
+standing would take postage-stamps.  You couldn't have bo't a
+coonskin with a barrel of 'em.  The female Aboorygine never
+died of consumption, because she didn't tie her waist up in
+whale-bone things; but in loose and flowin' garments she
+bounded, with naked feet, over hills and plains, like the wild
+and frisky antelope.  It was a onlucky moment for us when
+CHRIS. sot his foot onto these 'ere shores.  It would have
+been better for us of the present day if the injins had given
+him a warm meal and sent him home ore the ragin' billers.  For
+the savages owned the country, and COLUMBUS was a fillibuster.
+CORTEZ, PIZARRO, and WALKER were one-horse fillibusters--
+COLUMBUS was a four-horse team fillibuster, and a large yaller
+dog under the waggin.  I say, in view of the mess we are
+makin' of things, it would have been better for us if cOLUMBUS
+had staid to home.  It would have been better for the show
+bisniss.  The circulation of "Vanity Fair" would be larger,
+and the proprietors would all have boozum pins!  Yes, sir, and
+perhaps a ten-pin alley.
+
+By which I don't wish to be understood as intimatin' that the
+scalpin' wretches who are in the injin bisness at the present
+day are of any account, or calculated to make home happy,
+specially the Sioxes of Minnesoty, who desarve to be murdered
+in the first degree, and if POPE will only stay in St. Paul
+and not go near 'em HIMSELF, I reckon they will be.
+
+
+2.12.  ARTEMUS WARD IN RICHMOND.
+
+                             Richmond, Va.--May, 18 & 65.
+
+                      OLONZO WARD.
+
+Afore I comments this letter from the late rebil capitol I
+desire to cimply say that I hav seen a low and skurrilus noat
+in the paper from a certin purson who singes hisself Olonzo
+Ward, & sez he is my berruther.  I did ONCE hav a berruther of
+that name, but I do not recugnize him now.  To me he is wuss
+than ded!  I took him from collige sum 16 years ago and gave
+him a good situation as the Bearded Woman in my Show.  How did
+he repay me for this kindness?  He basely undertook (one day
+while in a Backynalian mood on rum & right in sight of the
+aujience in the tent) to stand upon his hed, whareby he
+betray'd his sex on account of his boots & his Beard fallin'
+off his face, thus rooinin' my prospecks in that town, &
+likewise incurrin' the seris displeasure of the Press, which
+sed boldly I was triflin with the feelin's of a intelligent
+public.  I know no such man as Olonzo Ward.  I do not even
+wish his name breathed in my presents.  I do not recognize
+him.  I perfectly disgust him.
+
+                          RICHMOND.
+
+The old man finds hisself once more in a Sunny climb.  I cum
+here a few days arter the city catterpillertulated.
+
+My naburs seemed surprised & astonisht at this darin' bravery
+onto the part of a man at my time of life, but our family was
+never know'd to quale in danger's stormy hour.
+
+My father was a sutler in the Revolootion War.  My father once
+had a intervoo with Gin'ral La Fayette.
+
+He asked La Fayette to lend him five dollars, promisin' to pay
+him in the Fall; but Lafy said "he couldn't see it in those
+lamps."  Lafy was French, and his knowledge of our langwidge
+was a little shaky.
+
+Immejutly on my 'rival here I perceeded to the Spotswood
+House, and callin' to my assistans a young man from our town
+who writes a good runnin' hand, I put my ortograph on the
+Register, and handin' my umbrella to a baldheded man behind
+the counter, who I s'posed was Mr. Spotswood, I said, "Spotsy,
+how does she run?"
+
+He called a cullud purson, and said,
+
+"Show the gen'lman to the cowyard, and giv' him cart number
+1."
+
+"Isn't Grant here?" I said.  "Perhaps Ulyssis wouldn't mind my
+turnin' in with him."
+
+"Do you know the Gin'ral?" inquired Mr. Spotswood.
+
+"Wall, no, not 'zacky; but he'll remember me.  His
+brother-in-law's Aunt bought her rye meal of my uncle Levi
+all one winter.  My uncle Levi's rye meal was--"
+
+"Pooh! pooh!" said Spotsy, "don't bother me," and he shuv'd
+my umbrella onto the floor.  Obsravin' to him not to be so
+keerless with that wepin, I accompanid the African to my
+lodgins.
+
+"My brother," I sed, "air you aware that you've bin
+mancipated?  Do you realize how glorus it is to be free?  Tell
+me, my dear brother, does it not seem like some dreams, or do
+you realize the great fact in all its livin' and holy
+magnitood?"
+
+He sed he would take some gin.
+
+I was show'd to the cowyard and laid down under a one-mule
+cart.  The hotel was orful crowded, and I was sorry I hadn't
+gone to the Libby Prison.  Tho' I should hav' slept comf'ble
+enuff if the bed-clothes hadn't bin pulled off me durin' the
+night, by a scoundrul who cum and hitched a mule to the cart
+and druv it off.  I thus lost my cuverin', and my throat feels
+a little husky this mornin'.
+
+Gin'ral Hulleck offers me the hospitality of the city, givin
+me my choice of hospitals.
+
+He has also very kindly placed at my disposal a smallpox
+amboolance.
+
+                      UNION SENTIMENT.
+
+There is raly a great deal of Union sentiment in this city.  I
+see it on ev'ry hand.
+
+I met a man to-day--I am not at liberty to tell his name, but
+he is a old and inflooentooial citizen of Richmond, and sez
+he, "Why!  We've bin fightin' agin the Old Flag!  Lor' bless
+me, how sing'lar!"  He then borrer'd five dollars of me and
+bust into a flood of teers.
+
+Sed another (a man of standin' and formerly a bitter rebuel),
+"Let us at once stop this effooshun of Blud!  The Old Flag is
+good enuff for me.  Sir," he added, "you air from the North!
+Have you a doughnut or a piece of custard pie about you?"
+
+I told him no, but I knew a man from Vermont who had just
+organized a sort of restaurant, where he could go and make a
+very comfortable breakfast on New England rum and cheese.  He
+borrowed fifty cents of me, and askin' me to send him Wm.
+Lloyd Garrison's ambrotype as soon as I got home, he walked
+off.
+
+Said another, "There's bin a tremendous Union feelin here from
+the fust.  But we was kept down by a rain of terror.  Have you
+a dagerretype of Wendell Phillips about your person? and will
+you lend me four dollars for a few days till we air once more
+a happy and united people."
+
+                         JEFF. DAVIS.
+
+Jeff. Davis is not pop'lar here.  She is regarded as a
+Southern sympathizer. & yit I'm told he was kind to his
+Parents.  She ran away from 'em many years ago, and has never
+bin back.  This was showin' 'em a good deal of consideration
+when we refleck what his conduck has been.  Her captur in
+female apparel confooses me in regard to his sex, & you see I
+speak of him as a her as frekent as otherwise, & I guess he
+feels so hisself.
+
+                             R. LEE.
+
+Robert Lee is regarded as a noble feller.
+
+He was opposed to the war at the fust, and draw'd his sword
+very reluctant.  In fact, he wouldn't hav' drawd his sword at
+all, only he had a large stock of military clothes on hand,
+which he didn't want to waste.  He sez the colored man is
+right, and he will at once go to New York and open a Sabbath
+School for negro minstrels.
+
+                   THE CONFEDERATE ARMY.
+
+The surrender of R. Lee, J. Johnston and others leaves the
+Confedrit Army in a ruther shattered state.  That army now
+consists of Kirby Smith, four mules and a Bass drum, and is
+movin' rapidly to'rds Texis.
+
+                A PROUD AND HAWTY SUTHENER.
+
+Feelin' a little peckish, I went into a eatin' house to-day
+and encountered a young man with long black hair and slender
+frame.  He didn't wear much clothes, and them as he did wear
+looked onhealthy.  He frowned on me, and sed, kinder scornful,
+"So, Sir--you come here to taunt us in our hour of trouble, do
+you?"
+
+"No," said I, "I cum here for hash!"
+
+"Pish-haw!" he sed sneerinly, "I mean you air in this city for
+the purposes of gloating over a fallen people.  Others may
+basely succumb, but as for me, I will never yield--NEVER,
+NEVER!"
+
+"Hav' suthin' to eat!" I pleasantly suggested.
+
+"Tripe and onions!" he sed furcely; then he added, "I eat with
+you, but I hate you.  You're a low-lived Yankee!"
+
+To which I pleasantly replied, "How'l you have your tripe?"
+
+"Fried, mudsill! with plenty of ham-fat!"
+
+He et very ravenus.  Poor feller!  He had lived on odds and
+ends for several days, eatin' crackers that had bin turned
+over by revelers in the bread tray at the bar.
+
+He got full at last, and his hart softened a little to'ards
+me.  "After all," he sed, "you have sum people at the North
+who air not wholly loathsum beasts?"
+
+"Well, yes," I sed, "we hav' now and then a man among us who
+isn't a cold-bluded scoundril.  Young man," I mildly but
+gravely sed, "this crooil war is over, and you're lickt!  It's
+rather necessary for sumbody to lick in a good square, lively
+fite, and in this 'ere case it happens to be the United States
+of America.  You fit splendid, but we was too many for you.
+Then make the best of it, & let us all give in and put the
+Republic on a firmer basis nor ever.
+
+"I don't gloat over your misfortuns, my young fren'.  Fur from
+it.  I'm a old man now, & my hart is softer nor it once was.
+You see my spectacles is misten'd with suthin' very like
+tears.  I'm thinkin' of the sea of good rich Blud that has
+been spilt on both sides in this dredful war!  I'm thinkin' of
+our widders and orfuns North, and of your'n in the South.  I
+kin cry for both.  B'leeve me, my young fren', I kin place my
+old hands tenderly on the fair yung hed of the Virginny maid
+whose lover was laid low in the battle dust by a fed'ral
+bullet, and say, as fervently and piously as a vener'ble
+sinner like me kin say anythin', God be good to you, my poor
+dear, my poor dear."
+
+I riz up to go, & takin' my young Southern fren' kindly by the
+hand, I sed, "Yung man, adoo!  You Southern fellers is probly
+my brothers, tho' you've occasionally had a cussed queer way
+of showin' it!  It's over now.  Let us all line in and make a
+country on this continent that shall giv' all Europe the cramp
+in the stummuck ev'ry time they look at us!  Adoo, adoo!"
+
+And as I am through, I likewise say adoo to you, jentle
+reader, merely remarkin' that the Star-Spangled Banner is
+wavin' round loose agin, and that there don't seem to be
+anything the matter with the Goddess of Liberty beyond a slite
+cold.
+
+                                              Artemus Ward.
+
+
+2.13.  ARTEMUS WARD TO THE PRINCE OF WALES.
+
+FRIEND WALES,--You remember me.  I saw you in Canady a few
+years ago.  I remember you too.  I seldim forget a person.
+
+I hearn of your marriage to the Printcis Alexandry, & ment ter
+writ you a congratoolatory letter at the time, but I've bin
+bildin a barn this summer, & hain't had no time to write
+letters to folks.  Excoose me.
+
+Numeris changes has tooken place since we met in the body
+politic.  The body politic, in fack, is sick.  I sometimes
+think it has got biles, friend Wales.
+
+In my country we've got war, while your country, in
+conjunktion with Cap'n Sems of the "Alobarmy," manetanes a
+nootral position!
+
+I'm afraid I can't write goaks when I sit about it.  Oh no, I
+guess not!
+
+Yes, Sir, we've got a war, and the troo Patrit has to make
+sacrifisses, you bet.
+
+I have alreddy given two cousins to the war, & I stand reddy
+to sacrifiss my wife's brother ruther'n not see the rebelyin
+krusht.  And if wuss cums to wuss I'll shed ev'ry drop of blud
+my able-bodied relations has got to prosekoot the war.  I
+think sumbody oughter be prosekooted, & it may as well be the
+war as any body else.  When I git a goakin fit onto me it's no
+use to try ter stop me.
+
+You hearn about the draft, friend Wales, no doubt.  It caused
+sum squirmin', but it was fairly conducted, I think, for it
+hit all classes.  It is troo that Wendill Phillips, who is a
+American citizen of African scent, 'scaped, but so did
+Vallandiggum, who is Conservativ, and who wus resuntly sent
+South, tho' he would have bin sent to the Dry Tortoogus if Abe
+had 'sposed for a minit that the Tortoogusses would keep him.
+
+We hain't got any daily paper in our town, but we've got a
+female sewin' circle, which ansers the same purpuss, and we
+wasn't long in suspents as to who was drafted.
+
+One young man who was drawd claimed to be exemp because he was
+the only son of a widow'd mother who supported him.  A few
+able-bodid dead men was drafted, but whether their heirs will
+have to pay 3 hundrid dollars a peace for 'em is a question
+for Whitin', who 'pears to be tinkerin' up this draft bizniss
+right smart.  I hope he makes good wages.
+
+I think most of the conscrips in this place will go.  A few
+will go to Canady, stopping on their way at Concord, N.H.,
+where I understan there is a Muslum of Harts.
+
+You see I'm sassy, friend Wales, hittin' all sides; but no
+offense is ment.  You know I ain't a politician, and never
+was.  I vote for Mr. Union--that's the only candidate I've
+got.  I claim, howsever, to have a well-balanced mind; tho' my
+idees of a well-balanced mind differs from the idees of a
+partner I once had, whose name it was Billson.  Billson and me
+orjanized a strollin' dramatic company, & we played The
+Drunkard, or the Falling Saved, with a real drunkard.  The
+play didn't take particlarly, and says Billson to me, Let's
+giv 'em some immoral dramy.  We had a large troop onto our
+hands, consisting of eight tragedians and a bass drum, but I
+says, No, Billson; and then says I, Billson, you hain't got a
+well-balanced mind.  Says he, Yes, I have, old hoss-fly (he
+was a low cuss)--yes, I have.  I have a mind, says he, that
+balances in any direction that the public rekires.  That's wot
+I call a well-balanced mind.  I sold out and bid adoo to
+Billson.  He is now an outcast in the State of Vermont.  The
+miser'ble man once played Hamlet.  There wasn't any orchestry,
+and wishin' to expire to slow moosic, he died playin' on a
+claironett himself, interspersed with hart-rendin' groans, &
+such is the world!  Alars! alars! how onthankful we air to
+that Providence which kindly allows us to live and borrow
+money, and fail und do bizniss!
+
+But to return to our subjeck.  With our resunt grate triumps
+on the Mississippi, the Father of Waters (and them is waters
+no Father need feel 'shamed of--twig the wittikism?) and the
+cheerin' look of things in other places, I reckon we shan't
+want any Muslum of Harts.  And what upon airth do the people
+of Concord, N.H., want a Muslum of Harts for?  Hain't you got
+the State House now?  & what more do you want?
+
+But all this is furrin to the purpuss of this note, arter all.
+My objeck in now addressin' you is to giv you sum advice,
+friend Wales, about managin' your wife, a bizniss I've had
+over thirty years experience in.
+
+You had a good weddin.  The papers have a good deal to say
+about "vikins" in connexion thare with.  Not knowings what
+that air, and so I frankly tells you, my noble lord dook of
+the throne, I can't zackly say whether we hab 'em or not.  We
+was both very much flustrated.  But I never injoyed myself
+better in my life.
+
+Dowtless, your supper was ahead of our'n.  As regards eatin'
+uses, Baldinsville was allers shaky.  But you can git a good
+meal in New York, & cheap to.  You can git half a mackril at
+Delmonico's or Mr. Mason Dory's for six dollars, and biled
+pertaters throw'd in.
+
+As I sed, I manige my wife without any particler trouble.
+When I fust commenst trainin' her I institooted a series of
+experiments, and them as didn't work I abanding'd.  You'd
+better do similer.  Your wife may objeck to gittin' up and
+bildin' the fire in the mornin', but if you commence with her
+at once you may be able to overkum this prejoodiss.  I regret
+to obsarve that I didn't commence arly enuff.  I wouldn't have
+you s'pose I was ever kicked out of bed.  Not at all.  I
+simply say, in regard to bildin' fires, that, I didn't
+commence arly enuff.  It was a ruther cold mornin' when I fust
+proposed the idee to Betsy.  It wasn't well received, and I
+found myself layin' on the floor putty suddent.  I thought I'd
+git up and bild the fire myself.
+
+Of course now you're marrid you can eat onions.  _I_ allus
+did, and if I know my own hart, I allus will.  My daughter,
+who is goin' on 17 and is frisky, says they's disgustin.  And
+speaking of my daughter reminds me that quite a number of
+young men have suddenly discovered that I'm a very
+entertainin' old feller, and they visit us frekently,
+specially on Sunday evenins.  One young chap--a lawyer by
+habit--don't cum as much as he did.  My wife's father lives
+with us.  His intelleck totters a little, and he saves the
+papers containin' the proceedins of our State Legislater.  The
+old gen'l'man likes to read out loud, and he reads tol'ble
+well.  He eats hash freely, which makes his voice clear; but
+as he onfortnitly has to spell the most of his words, I may
+say he reads slow.  Wall, whenever this lawyer made his
+appearance I would set the old man a-reading the Legislativ'
+reports.  I kept the young lawyer up one night till 12 o'clock
+listenin to a lot of acts in regard to a drawbridge away orf
+in the east part of the State, havin' sent my daughter to bed
+at half-past 8.  He hasn't bin there since, and I understan'
+he says I go round swindlin' the Public.
+
+I never attempted to reorganize my wife but onct.  I shall
+never attempt agin.  I'd bin to a public dinner, and had
+allowed myself to be betrayed into drinkin' several people's
+healths; and wishin' to make 'em as robust as possible, I
+continnerd drinkin' their healths until my own became
+affected.  Consekens was, I presented myself at Betsy's
+bedside late at night with consid'ble licker concealed about
+my person.  I had sumhow got perseshun of a hosswhip on my way
+home, and rememberin' sum cranky observations of Mrs. Ward's
+in the mornin', I snapt the whip putty lively, and in a very
+loud woice, I sed, "Betsy, you need reorganizin'!  I have cum,
+Betsy," I continued--crackin the whip over the bed--"I have
+cum to reorganize you!  Haave you per-ayed tonight?"
+
+      *      *      *      *      *      *      *      *
+
+I dream'd that sumbody had laid a hosswhip over me sev'ril
+conseckootiv times; and when I woke up I found she had.  I
+hain't drank much of anythin' since, and if I ever have
+another reorganizin' job on hand I shall let it out.
+
+My wife is 52 years old, and has allus sustained a good
+character.  She's a good cook.  Her mother lived to a
+vener'ble age, and died while in the act of frying slapjacks
+for the County Commissioners.  And may no rood hand pluk a
+flour from her toomstun!  We hain't got any picter of the old
+lady, because she'd never stand for her ambrotipe, and
+therefore I can't giv her likeness to the world through the
+meejum of the illusterated papers; but as she wasn't a
+brigadier-gin'ral, particlerly, I don't s'pose they'd publish
+it, any how.
+
+It's best to give a woman considerable lee-way.  But not too
+much.  A naber of mine, Mr. Roofus Minkins, was once very sick
+with the fever, but his wife moved his bed into the door-yard
+while she was cleanin' house.  I toald Roofus this wasn't the
+thing, 'specially as it was rainin' vi'lently; but he said he
+wanted to giv his wife "a little lee-way."  That was 2 mutch.
+I told Mrs. Minkins that her Roofus would die if he staid out
+there into the rain much longer; when she said, "It shan't be
+my fault if he dies unprepared," at the same time tossin' him
+his mother's Bible.  It was orful!  I stood by, however, and
+nussed him as well's I could, but I was a putty wet-nuss, I
+tell you.
+
+There's varis ways of managin' a wife, friend Wales, but the
+best and only safe way is to let her do jist about as she
+wants to.  I 'dopted that there plan sum time ago, and it
+works like a charm.
+
+Remember me kindly to Mrs. Wales, and good luck to you both!
+And as years roll by, and accidents begin to happen to you--
+among which I hope there'll be Twins--you will agree with me
+that family joys air the only ones a man can bet on with any
+certinty of winnin'.
+
+It may interest you to know that I'm prosperin' in a pecoonery
+pint of view.  I make 'bout as much in the course of a year as
+a cab'net offisser does, & I understand my business a good
+deal better than some of them do.
+
+      Respecks to St. George & the Dragon.
+                                   Ever be 'appy.
+                                             A. Ward.
+
+
+
+
+
+End of Project Gutenberg's The Complete Works of Artemus Ward, Part 2
+

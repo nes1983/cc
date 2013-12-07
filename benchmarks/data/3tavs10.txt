@@ -1,0 +1,3461 @@
+Project Gutenberg Etext of The Three Taverns, by E. A. Robinson
+#3 in our series by Edwin Arlington Robinson
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+The Three Taverns
+
+by Edwin Arlington Robinson
+
+September, 1997  [Etext #1040]
+
+
+Project Gutenberg Etext of The Three Taverns, by E. A. Robinson
+*****This file should be named 3tavs10.txt or 3tavs10.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 3tavs11.txt.
+VERSIONS based on separate sources get new LETTER, 3tavs10a.txt.
+
+
+This etext was prepared by Alan. R. Light (alight@vnet.net,
+formerly alight@mercury.interpath.net).  To assure a high quality text,
+the original was typed in (manually) twice and electronically compared.
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, for time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+fifty hours is one conservative estimate for how long it we take
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-two text
+files per month, or 384 more Etexts in 1997 for a total of 1000+
+If these reach just 10% of the computerized population, then the
+total should reach 80 billion Etexts.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by the December 31, 2001.  [10,000 x 100,000,000=Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only 10% of the present number of computer users.  2001
+should have at least twice as many computer users as that, so it
+will require us reaching less than 5% of the users in 2001.
+
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg/CMU": and are
+tax deductible to the extent allowable by law.  (CMU = Carnegie-
+Mellon University).
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+
+We would prefer to send you this information by email
+(Internet, Bitnet, Compuserve, ATTMAIL or MCImail).
+
+******
+If you have an FTP program (or emulator), please
+FTP directly to the Project Gutenberg archives:
+[Mac users, do NOT point and click. . .type]
+
+ftp uiarchive.cso.uiuc.edu
+login:  anonymous
+password:  your@login
+cd etext/etext90 through /etext96
+or cd etext/articles [get suggest gut for more information]
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET INDEX?00.GUT
+for a list of books
+and
+GET NEW GUT for general information
+and
+MGET GUT* for newsletters.
+
+**Information prepared by the Project Gutenberg legal advisor**
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg Association at
+Carnegie-Mellon University (the "Project").  Among other
+things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association/Carnegie-Mellon
+     University" within the 60 days following each
+     date you prepare (or were legally required to prepare)
+     your annual (or equivalent periodic) tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association / Carnegie-Mellon University".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+This etext was prepared by Alan. R. Light (alight@vnet.net,
+formerly alight@mercury.interpath.net).  To assure a high quality text,
+the original was typed in (manually) twice and electronically compared.
+
+
+
+
+
+The Three Taverns
+A Book of Poems
+By Edwin Arlington Robinson  [American (Maine) Poet.  1869-1935.]
+
+
+
+
+
+[Note on text:  Italicized words or phrases are CAPITALIZED.
+Lines longer than 78 characters are broken and the continuation
+is indented two spaces.  Some obvious errors may have been corrected.]
+
+
+
+
+
+The Three Taverns
+A Book of Poems
+By Edwin Arlington Robinson
+Author of "The Man Against the Sky", "Merlin, A Poem", etc.
+
+
+
+
+To THOMAS SERGEANT PERRY and LILLA CABOT PERRY
+
+
+
+
+Contents
+
+
+
+The Valley of the Shadow
+The Wandering Jew
+Neighbors
+The Mill
+The Dark Hills
+The Three Taverns
+Demos I
+Demos II
+The Flying Dutchman
+Tact
+On the Way
+John Brown
+The False Gods
+Archibald's Example
+London Bridge
+Tasker Norcross
+A Song at Shannon's
+Souvenir
+Discovery
+Firelight
+The New Tenants
+Inferential
+The Rat
+Rahel to Varnhagen
+Nimmo
+Peace on Earth
+Late Summer
+An Evangelist's Wife
+The Old King's New Jester
+Lazarus
+
+
+Several poems included in this book appeared originally
+in American periodicals, as follows:  The Three Taverns, London Bridge,
+A Song at Shannon's, The New Tenants, Discovery, John Brown;
+Archibald's Example, The Valley of the Shadow; Nimmo; The Wandering Jew,
+Souvenir; Neighbors, Tact; Demos; The Mill, An Evangelist's Wife;
+Firelight; Late Summer; Inferential; The Flying Dutchman;
+On the Way, The False Gods; Peace on Earth; The Old King's New Jester.
+
+
+
+
+
+   -------------------
+    The Three Taverns
+   -------------------
+
+
+
+
+
+The Valley of the Shadow
+
+
+
+There were faces to remember in the Valley of the Shadow,
+There were faces unregarded, there were faces to forget;
+There were fires of grief and fear that are a few forgotten ashes,
+There were sparks of recognition that are not forgotten yet.
+For at first, with an amazed and overwhelming indignation
+At a measureless malfeasance that obscurely willed it thus,
+They were lost and unacquainted -- till they found themselves in others,
+Who had groped as they were groping where dim ways were perilous.
+
+There were lives that were as dark as are the fears and intuitions
+Of a child who knows himself and is alone with what he knows;
+There were pensioners of dreams and there were debtors of illusions,
+All to fail before the triumph of a weed that only grows.
+There were thirsting heirs of golden sieves that held not wine or water,
+And had no names in traffic or more value there than toys:
+There were blighted sons of wonder in the Valley of the Shadow,
+Where they suffered and still wondered why their wonder made no noise.
+
+There were slaves who dragged the shackles of a precedent unbroken,
+Demonstrating the fulfilment of unalterable schemes,
+Which had been, before the cradle, Time's inexorable tenants
+Of what were now the dusty ruins of their father's dreams.
+There were these, and there were many who had stumbled up to manhood,
+Where they saw too late the road they should have taken long ago:
+There were thwarted clerks and fiddlers in the Valley of the Shadow,
+The commemorative wreckage of what others did not know.
+
+And there were daughters older than the mothers who had borne them,
+Being older in their wisdom, which is older than the earth;
+And they were going forward only farther into darkness,
+Unrelieved as were the blasting obligations of their birth;
+And among them, giving always what was not for their possession,
+There were maidens, very quiet, with no quiet in their eyes:
+There were daughters of the silence in the Valley of the Shadow,
+Each an isolated item in the family sacrifice.
+
+There were creepers among catacombs where dull regrets were torches,
+Giving light enough to show them what was there upon the shelves --
+Where there was more for them to see than pleasure would remember
+Of something that had been alive and once had been themselves.
+There were some who stirred the ruins with a solid imprecation,
+While as many fled repentance for the promise of despair:
+There were drinkers of wrong waters in the Valley of the Shadow,
+And all the sparkling ways were dust that once had led them there.
+
+There were some who knew the steps of Age incredibly beside them,
+And his fingers upon shoulders that had never felt the wheel;
+And their last of empty trophies was a gilded cup of nothing,
+Which a contemplating vagabond would not have come to steal.
+Long and often had they figured for a larger valuation,
+But the size of their addition was the balance of a doubt:
+There were gentlemen of leisure in the Valley of the Shadow,
+Not allured by retrospection, disenchanted, and played out.
+
+And among the dark endurances of unavowed reprisals
+There were silent eyes of envy that saw little but saw well;
+And over beauty's aftermath of hazardous ambitions
+There were tears for what had vanished as they vanished where they fell.
+Not assured of what was theirs, and always hungry for the nameless,
+There were some whose only passion was for Time who made them cold:
+There were numerous fair women in the Valley of the Shadow,
+Dreaming rather less of heaven than of hell when they were old.
+
+Now and then, as if to scorn the common touch of common sorrow,
+There were some who gave a few the distant pity of a smile;
+And another cloaked a soul as with an ash of human embers,
+Having covered thus a treasure that would last him for a while.
+There were many by the presence of the many disaffected,
+Whose exemption was included in the weight that others bore:
+There were seekers after darkness in the Valley of the Shadow,
+And they alone were there to find what they were looking for.
+
+So they were, and so they are; and as they came are coming others,
+And among them are the fearless and the meek and the unborn;
+And a question that has held us heretofore without an answer
+May abide without an answer until all have ceased to mourn.
+For the children of the dark are more to name than are the wretched,
+Or the broken, or the weary, or the baffled, or the shamed:
+There are builders of new mansions in the Valley of the Shadow,
+And among them are the dying and the blinded and the maimed.
+
+
+
+
+The Wandering Jew
+
+
+
+I saw by looking in his eyes
+That they remembered everything;
+And this was how I came to know
+That he was here, still wandering.
+For though the figure and the scene
+Were never to be reconciled,
+I knew the man as I had known
+His image when I was a child.
+
+With evidence at every turn,
+I should have held it safe to guess
+That all the newness of New York
+Had nothing new in loneliness;
+Yet here was one who might be Noah,
+Or Nathan, or Abimelech,
+Or Lamech, out of ages lost, --
+Or, more than all, Melchizedek.
+
+Assured that he was none of these,
+I gave them back their names again,
+To scan once more those endless eyes
+Where all my questions ended then.
+I found in them what they revealed
+That I shall not live to forget,
+And wondered if they found in mine
+Compassion that I might regret.
+
+Pity, I learned, was not the least
+Of time's offending benefits
+That had now for so long impugned
+The conservation of his wits:
+Rather it was that I should yield,
+Alone, the fealty that presents
+The tribute of a tempered ear
+To an untempered eloquence.
+
+Before I pondered long enough
+On whence he came and who he was,
+I trembled at his ringing wealth
+Of manifold anathemas;
+I wondered, while he seared the world,
+What new defection ailed the race,
+And if it mattered how remote
+Our fathers were from such a place.
+
+Before there was an hour for me
+To contemplate with less concern
+The crumbling realm awaiting us
+Than his that was beyond return,
+A dawning on the dust of years
+Had shaped with an elusive light
+Mirages of remembered scenes
+That were no longer for the sight.
+
+For now the gloom that hid the man
+Became a daylight on his wrath,
+And one wherein my fancy viewed
+New lions ramping in his path.
+The old were dead and had no fangs,
+Wherefore he loved them -- seeing not
+They were the same that in their time
+Had eaten everything they caught.
+
+The world around him was a gift
+Of anguish to his eyes and ears,
+And one that he had long reviled
+As fit for devils, not for seers.
+Where, then, was there a place for him
+That on this other side of death
+Saw nothing good, as he had seen
+No good come out of Nazareth?
+
+Yet here there was a reticence,
+And I believe his only one,
+That hushed him as if he beheld
+A Presence that would not be gone.
+In such a silence he confessed
+How much there was to be denied;
+And he would look at me and live,
+As others might have looked and died.
+
+As if at last he knew again
+That he had always known, his eyes
+Were like to those of one who gazed
+On those of One who never dies.
+For such a moment he revealed
+What life has in it to be lost;
+And I could ask if what I saw,
+Before me there, was man or ghost.
+
+He may have died so many times
+That all there was of him to see
+Was pride, that kept itself alive
+As too rebellious to be free;
+He may have told, when more than once
+Humility seemed imminent,
+How many a lonely time in vain
+The Second Coming came and went.
+
+Whether he still defies or not
+The failure of an angry task
+That relegates him out of time
+To chaos, I can only ask.
+But as I knew him, so he was;
+And somewhere among men to-day
+Those old, unyielding eyes may flash,
+And flinch -- and look the other way.
+
+
+
+
+Neighbors
+
+
+
+As often as we thought of her,
+ We thought of a gray life
+That made a quaint economist
+ Of a wolf-haunted wife;
+We made the best of all she bore
+ That was not ours to bear,
+And honored her for wearing things
+ That were not things to wear.
+
+There was a distance in her look
+ That made us look again;
+And if she smiled, we might believe
+ That we had looked in vain.
+Rarely she came inside our doors,
+ And had not long to stay;
+And when she left, it seemed somehow
+ That she was far away.
+
+At last, when we had all forgot
+ That all is here to change,
+A shadow on the commonplace
+ Was for a moment strange.
+Yet there was nothing for surprise,
+ Nor much that need be told:
+Love, with his gift of pain, had given
+ More than one heart could hold.
+
+
+
+
+The Mill
+
+
+
+The miller's wife had waited long,
+ The tea was cold, the fire was dead;
+And there might yet be nothing wrong
+ In how he went and what he said:
+"There are no millers any more,"
+ Was all that she had heard him say;
+And he had lingered at the door
+ So long that it seemed yesterday.
+
+Sick with a fear that had no form
+ She knew that she was there at last;
+And in the mill there was a warm
+ And mealy fragrance of the past.
+What else there was would only seem
+ To say again what he had meant;
+And what was hanging from a beam
+ Would not have heeded where she went.
+
+And if she thought it followed her,
+ She may have reasoned in the dark
+That one way of the few there were
+ Would hide her and would leave no mark:
+Black water, smooth above the weir
+ Like starry velvet in the night,
+Though ruffled once, would soon appear
+ The same as ever to the sight.
+
+
+
+
+The Dark Hills
+
+
+
+Dark hills at evening in the west,
+Where sunset hovers like a sound
+Of golden horns that sang to rest
+Old bones of warriors under ground,
+Far now from all the bannered ways
+Where flash the legions of the sun,
+You fade -- as if the last of days
+Were fading, and all wars were done.
+
+
+
+
+The Three Taverns
+
+  When the brethren heard of us, they came to meet us
+  as far as Appii Forum, and The Three Taverns.
+                                        (Acts 28:15)
+
+
+
+Herodion, Apelles, Amplias,
+And Andronicus?  Is it you I see --
+At last?  And is it you now that are gazing
+As if in doubt of me?  Was I not saying
+That I should come to Rome?  I did say that;
+And I said furthermore that I should go
+On westward, where the gateway of the world
+Lets in the central sea.  I did say that,
+But I say only, now, that I am Paul --
+A prisoner of the Law, and of the Lord
+A voice made free.  If there be time enough
+To live, I may have more to tell you then
+Of western matters.  I go now to Rome,
+Where Caesar waits for me, and I shall wait,
+And Caesar knows how long.  In Caesarea
+There was a legend of Agrippa saying
+In a light way to Festus, having heard
+My deposition, that I might be free,
+Had I stayed free of Caesar; but the word
+Of God would have it as you see it is --
+And here I am.  The cup that I shall drink
+Is mine to drink -- the moment or the place
+Not mine to say.  If it be now in Rome,
+Be it now in Rome; and if your faith exceed
+The shadow cast of hope, say not of me
+Too surely or too soon that years and shipwreck,
+And all the many deserts I have crossed
+That are not named or regioned, have undone
+Beyond the brevities of our mortal healing
+The part of me that is the least of me.
+You see an older man than he who fell
+Prone to the earth when he was nigh Damascus,
+Where the great light came down; yet I am he
+That fell, and he that saw, and he that heard.
+And I am here, at last; and if at last
+I give myself to make another crumb
+For this pernicious feast of time and men --
+Well, I have seen too much of time and men
+To fear the ravening or the wrath of either.
+
+Yes, it is Paul you see -- the Saul of Tarsus
+That was a fiery Jew, and had men slain
+For saying Something was beyond the Law,
+And in ourselves.  I fed my suffering soul
+Upon the Law till I went famishing,
+Not knowing that I starved.  How should I know,
+More then than any, that the food I had --
+What else it may have been -- was not for me?
+My fathers and their fathers and their fathers
+Had found it good, and said there was no other,
+And I was of the line.  When Stephen fell,
+Among the stones that crushed his life away,
+There was no place alive that I could see
+For such a man.  Why should a man be given
+To live beyond the Law?  So I said then,
+As men say now to me.  How then do I
+Persist in living?  Is that what you ask?
+If so, let my appearance be for you
+No living answer; for Time writes of death
+On men before they die, and what you see
+Is not the man.  The man that you see not --
+The man within the man -- is most alive;
+Though hatred would have ended, long ago,
+The bane of his activities.  I have lived,
+Because the faith within me that is life
+Endures to live, and shall, till soon or late,
+Death, like a friend unseen, shall say to me
+My toil is over and my work begun.
+
+How often, and how many a time again,
+Have I said I should be with you in Rome!
+He who is always coming never comes,
+Or comes too late, you may have told yourselves;
+And I may tell you now that after me,
+Whether I stay for little or for long,
+The wolves are coming.  Have an eye for them,
+And a more careful ear for their confusion
+Than you need have much longer for the sound
+Of what I tell you -- should I live to say
+More than I say to Caesar.  What I know
+Is down for you to read in what is written;
+And if I cloud a little with my own
+Mortality the gleam that is immortal,
+I do it only because I am I --
+Being on earth and of it, in so far
+As time flays yet the remnant.  This you know;
+And if I sting men, as I do sometimes,
+With a sharp word that hurts, it is because
+Man's habit is to feel before he sees;
+And I am of a race that feels.  Moreover,
+The world is here for what is not yet here
+For more than are a few; and even in Rome,
+Where men are so enamored of the Cross
+That fame has echoed, and increasingly,
+The music of your love and of your faith
+To foreign ears that are as far away
+As Antioch and Haran, yet I wonder
+How much of love you know, and if your faith
+Be the shut fruit of words.  If so, remember
+Words are but shells unfilled.  Jews have at least
+A Law to make them sorry they were born
+If they go long without it; and these Gentiles,
+For the first time in shrieking history,
+Have love and law together, if so they will,
+For their defense and their immunity
+In these last days.  Rome, if I know the name,
+Will have anon a crown of thorns and fire
+Made ready for the wreathing of new masters,
+Of whom we are appointed, you and I, --
+And you are still to be when I am gone,
+Should I go presently.  Let the word fall,
+Meanwhile, upon the dragon-ridden field
+Of circumstance, either to live or die;
+Concerning which there is a parable,
+Made easy for the comfort and attention
+Of those who preach, fearing they preach in vain.
+You are to plant, and then to plant again
+Where you have gathered, gathering as you go;
+For you are in the fields that are eternal,
+And you have not the burden of the Lord
+Upon your mortal shoulders.  What you have
+Is a light yoke, made lighter by the wearing,
+Till it shall have the wonder and the weight
+Of a clear jewel, shining with a light
+Wherein the sun and all the fiery stars
+May soon be fading.  When Gamaliel said
+That if they be of men these things are nothing,
+But if they be of God they are for none
+To overthrow, he spoke as a good Jew,
+And one who stayed a Jew; and he said all.
+And you know, by the temper of your faith,
+How far the fire is in you that I felt
+Before I knew Damascus.  A word here,
+Or there, or not there, or not anywhere,
+Is not the Word that lives and is the life;
+And you, therefore, need weary not yourselves
+With jealous aches of others.  If the world
+Were not a world of aches and innovations,
+Attainment would have no more joy of it.
+There will be creeds and schisms, creeds in creeds,
+And schisms in schisms; myriads will be done
+To death because a farthing has two sides,
+And is at last a farthing.  Telling you this,
+I, who bid men to live, appeal to Caesar.
+Once I had said the ways of God were dark,
+Meaning by that the dark ways of the Law.
+Such is the glory of our tribulations;
+For the Law kills the flesh that kills the Law,
+And we are then alive.  We have eyes then;
+And we have then the Cross between two worlds --
+To guide us, or to blind us for a time,
+Till we have eyes indeed.  The fire that smites
+A few on highways, changing all at once,
+Is not for all.  The power that holds the world
+Away from God that holds himself away --
+Farther away than all your works and words
+Are like to fly without the wings of faith --
+Was not, nor ever shall be, a small hazard
+Enlivening the ways of easy leisure
+Or the cold road of knowledge.  When our eyes
+Have wisdom, we see more than we remember;
+And the old world of our captivities
+May then become a smitten glimpse of ruin,
+Like one where vanished hewers have had their day
+Of wrath on Lebanon.  Before we see,
+Meanwhile, we suffer; and I come to you,
+At last, through many storms and through much night.
+
+Yet whatsoever I have undergone,
+My keepers in this instance are not hard.
+But for the chance of an ingratitude,
+I might indeed be curious of their mercy,
+And fearful of their leisure while I wait,
+A few leagues out of Rome.  Men go to Rome,
+Not always to return -- but not that now.
+Meanwhile, I seem to think you look at me
+With eyes that are at last more credulous
+Of my identity.  You remark in me
+No sort of leaping giant, though some words
+Of mine to you from Corinth may have leapt
+A little through your eyes into your soul.
+I trust they were alive, and are alive
+Today; for there be none that shall indite
+So much of nothing as the man of words
+Who writes in the Lord's name for his name's sake
+And has not in his blood the fire of time
+To warm eternity.  Let such a man --
+If once the light is in him and endures --
+Content himself to be the general man,
+Set free to sift the decencies and thereby
+To learn, except he be one set aside
+For sorrow, more of pleasure than of pain;
+Though if his light be not the light indeed,
+But a brief shine that never really was,
+And fails, leaving him worse than where he was,
+Then shall he be of all men destitute.
+And here were not an issue for much ink,
+Or much offending faction among scribes.
+
+The Kingdom is within us, we are told;
+And when I say to you that we possess it
+In such a measure as faith makes it ours,
+I say it with a sinner's privilege
+Of having seen and heard, and seen again,
+After a darkness; and if I affirm
+To the last hour that faith affords alone
+The Kingdom entrance and an entertainment,
+I do not see myself as one who says
+To man that he shall sit with folded hands
+Against the Coming.  If I be anything,
+I move a driven agent among my kind,
+Establishing by the faith of Abraham,
+And by the grace of their necessities,
+The clamoring word that is the word of life
+Nearer than heretofore to the solution
+Of their tomb-serving doubts.  If I have loosed
+A shaft of language that has flown sometimes
+A little higher than the hearts and heads
+Of nature's minions, it will yet be heard,
+Like a new song that waits for distant ears.
+I cannot be the man that I am not;
+And while I own that earth is my affliction,
+I am a man of earth, who says not all
+To all alike.  That were impossible,
+Even as it were so that He should plant
+A larger garden first.  But you today
+Are for the larger sowing; and your seed,
+A little mixed, will have, as He foresaw,
+The foreign harvest of a wider growth,
+And one without an end.  Many there are,
+And are to be, that shall partake of it,
+Though none may share it with an understanding
+That is not his alone.  We are all alone;
+And yet we are all parcelled of one order --
+Jew, Gentile, or barbarian in the dark
+Of wildernesses that are not so much
+As names yet in a book.  And there are many,
+Finding at last that words are not the Word,
+And finding only that, will flourish aloft,
+Like heads of captured Pharisees on pikes,
+Our contradictions and discrepancies;
+And there are many more will hang themselves
+Upon the letter, seeing not in the Word
+The friend of all who fail, and in their faith
+A sword of excellence to cut them down.
+
+As long as there are glasses that are dark --
+And there are many -- we see darkly through them;
+All which have I conceded and set down
+In words that have no shadow.  What is dark
+Is dark, and we may not say otherwise;
+Yet what may be as dark as a lost fire
+For one of us, may still be for another
+A coming gleam across the gulf of ages,
+And a way home from shipwreck to the shore;
+And so, through pangs and ills and desperations,
+There may be light for all.  There shall be light.
+As much as that, you know.  You cannot say
+This woman or that man will be the next
+On whom it falls; you are not here for that.
+Your ministration is to be for others
+The firing of a rush that may for them
+Be soon the fire itself.  The few at first
+Are fighting for the multitude at last;
+Therefore remember what Gamaliel said
+Before you, when the sick were lying down
+In streets all night for Peter's passing shadow.
+Fight, and say what you feel; say more than words.
+Give men to know that even their days of earth
+To come are more than ages that are gone.
+Say what you feel, while you have time to say it.
+Eternity will answer for itself,
+Without your intercession; yet the way
+For many is a long one, and as dark,
+Meanwhile, as dreams of hell.  See not your toil
+Too much, and if I be away from you,
+Think of me as a brother to yourselves,
+Of many blemishes.  Beware of stoics,
+And give your left hand to grammarians;
+And when you seem, as many a time you may,
+To have no other friend than hope, remember
+That you are not the first, or yet the last.
+
+The best of life, until we see beyond
+The shadows of ourselves (and they are less
+Than even the blindest of indignant eyes
+Would have them) is in what we do not know.
+Make, then, for all your fears a place to sleep
+With all your faded sins; nor think yourselves
+Egregious and alone for your defects
+Of youth and yesterday.  I was young once;
+And there's a question if you played the fool
+With a more fervid and inherent zeal
+Than I have in my story to remember,
+Or gave your necks to folly's conquering foot,
+Or flung yourselves with an unstudied aim,
+Less frequently than I.  Never mind that.
+Man's little house of days will hold enough,
+Sometimes, to make him wish it were not his,
+But it will not hold all.  Things that are dead
+Are best without it, and they own their death
+By virtue of their dying.  Let them go, --
+But think you not the world is ashes yet,
+And you have all the fire.  The world is here
+Today, and it may not be gone tomorrow;
+For there are millions, and there may be more,
+To make in turn a various estimation
+Of its old ills and ashes, and the traps
+Of its apparent wrath.  Many with ears
+That hear not yet, shall have ears given to them,
+And then they shall hear strangely.  Many with eyes
+That are incredulous of the Mystery
+Shall yet be driven to feel, and then to read
+Where language has an end and is a veil,
+Not woven of our words.  Many that hate
+Their kind are soon to know that without love
+Their faith is but the perjured name of nothing.
+I that have done some hating in my time
+See now no time for hate; I that have left,
+Fading behind me like familiar lights
+That are to shine no more for my returning,
+Home, friends, and honors, -- I that have lost all else
+For wisdom, and the wealth of it, say now
+To you that out of wisdom has come love,
+That measures and is of itself the measure
+Of works and hope and faith.  Your longest hours
+Are not so long that you may torture them
+And harass not yourselves; and the last days
+Are on the way that you prepare for them,
+And was prepared for you, here in a world
+Where you have sinned and suffered, striven and seen.
+If you be not so hot for counting them
+Before they come that you consume yourselves,
+Peace may attend you all in these last days --
+And me, as well as you.  Yes, even in Rome.
+Well, I have talked and rested, though I fear
+My rest has not been yours; in which event,
+Forgive one who is only seven leagues
+From Caesar.  When I told you I should come,
+I did not see myself the criminal
+You contemplate, for seeing beyond the Law
+That which the Law saw not.  But this, indeed,
+Was good of you, and I shall not forget;
+No, I shall not forget you came so far
+To meet a man so dangerous.  Well, farewell.
+They come to tell me I am going now --
+With them.  I hope that we shall meet again,
+But none may say what he shall find in Rome.
+
+
+
+
+Demos I
+
+
+
+All you that are enamored of my name
+ And least intent on what most I require,
+ Beware; for my design and your desire,
+Deplorably, are not as yet the same.
+Beware, I say, the failure and the shame
+ Of losing that for which you now aspire
+ So blindly, and of hazarding entire
+The gift that I was bringing when I came.
+
+Give as I will, I cannot give you sight
+ Whereby to see that with you there are some
+ To lead you, and be led.  But they are dumb
+Before the wrangling and the shrill delight
+ Of your deliverance that has not come,
+And shall not, if I fail you -- as I might.
+
+
+
+
+Demos II
+
+
+
+So little have you seen of what awaits
+ Your fevered glimpse of a democracy
+ Confused and foiled with an equality
+Not equal to the envy it creates,
+That you see not how near you are the gates
+ Of an old king who listens fearfully
+ To you that are outside and are to be
+The noisy lords of imminent estates.
+
+Rather be then your prayer that you shall have
+ Your kingdom undishonored.  Having all,
+ See not the great among you for the small,
+But hear their silence; for the few shall save
+ The many, or the many are to fall --
+Still to be wrangling in a noisy grave.
+
+
+
+
+The Flying Dutchman
+
+
+
+Unyielding in the pride of his defiance,
+ Afloat with none to serve or to command,
+Lord of himself at last, and all by Science,
+ He seeks the Vanished Land.
+
+Alone, by the one light of his one thought,
+ He steers to find the shore from which we came, --
+Fearless of in what coil he may be caught
+ On seas that have no name.
+
+Into the night he sails; and after night
+ There is a dawning, though there be no sun;
+Wherefore, with nothing but himself in sight,
+ Unsighted, he sails on.
+
+At last there is a lifting of the cloud
+ Between the flood before him and the sky;
+And then -- though he may curse the Power aloud
+ That has no power to die --
+
+He steers himself away from what is haunted
+ By the old ghost of what has been before, --
+Abandoning, as always, and undaunted,
+ One fog-walled island more.
+
+
+
+
+Tact
+
+
+
+Observant of the way she told
+ So much of what was true,
+No vanity could long withhold
+ Regard that was her due:
+She spared him the familiar guile,
+ So easily achieved,
+That only made a man to smile
+ And left him undeceived.
+
+Aware that all imagining
+ Of more than what she meant
+Would urge an end of everything,
+ He stayed; and when he went,
+They parted with a merry word
+ That was to him as light
+As any that was ever heard
+ Upon a starry night.
+
+She smiled a little, knowing well
+ That he would not remark
+The ruins of a day that fell
+ Around her in the dark:
+He saw no ruins anywhere,
+ Nor fancied there were scars
+On anyone who lingered there,
+ Alone below the stars.
+
+
+
+
+On the Way
+
+  (Philadelphia, 1794)
+
+  Note. --  The following imaginary dialogue between Alexander Hamilton
+  and Aaron Burr, which is not based upon any specific incident
+  in American history, may be supposed to have occurred a few months previous
+  to Hamilton's retirement from Washington's Cabinet in 1795
+  and a few years before the political ingenuities of Burr --
+  who has been characterized, without much exaggeration,
+  as the inventor of American politics -- began to be conspicuously formidable
+  to the Federalists.  These activities on the part of Burr resulted,
+  as the reader will remember, in the Burr-Jefferson tie for the Presidency
+  in 1800, and finally in the Burr-Hamilton duel at Weehawken in 1804.
+
+
+
+        BURR
+
+Hamilton, if he rides you down, remember
+That I was here to speak, and so to save
+Your fabric from catastrophe.  That's good;
+For I perceive that you observe him also.
+A President, a-riding of his horse,
+May dust a General and be forgiven;
+But why be dusted -- when we're all alike,
+All equal, and all happy.  Here he comes --
+And there he goes.  And we, by your new patent,
+Would seem to be two kings here by the wayside,
+With our two hats off to his Excellency.
+Why not his Majesty, and done with it?
+Forgive me if I shook your meditation,
+But you that weld our credit should have eyes
+To see what's coming.  Bury me first if -I- do.
+
+
+        HAMILTON
+
+There's always in some pocket of your brain
+A care for me; wherefore my gratitude
+For your attention is commensurate
+With your concern.  Yes, Burr, we are two kings;
+We are as royal as two ditch-diggers;
+But owe me not your sceptre.  These are the days
+When first a few seem all; but if we live,
+We may again be seen to be the few
+That we have always been.  These are the days
+When men forget the stars, and are forgotten.
+
+
+        BURR
+
+But why forget them?  They're the same that winked
+Upon the world when Alcibiades
+Cut off his dog's tail to induce distinction.
+There are dogs yet, and Alcibiades
+Is not forgotten.
+
+
+        HAMILTON
+
+                   Yes, there are dogs enough,
+God knows; and I can hear them in my dreams.
+
+
+        BURR
+
+Never a doubt.  But what you hear the most
+Is your new music, something out of tune
+With your intention.  How in the name of Cain,
+I seem to hear you ask, are men to dance,
+When all men are musicians.  Tell me that,
+I hear you saying, and I'll tell you the name
+Of Samson's mother.  But why shroud yourself
+Before the coffin comes?  For all you know,
+The tree that is to fall for your last house
+Is now a sapling.  You may have to wait
+So long as to be sorry; though I doubt it,
+For you are not at home in your new Eden
+Where chilly whispers of a likely frost
+Accumulate already in the air.
+I think a touch of ermine, Hamilton,
+Would be for you in your autumnal mood
+A pleasant sort of warmth along the shoulders.
+
+
+        HAMILTON
+
+If so it is you think, you may as well
+Give over thinking.  We are done with ermine.
+What I fear most is not the multitude,
+But those who are to loop it with a string
+That has one end in France and one end here.
+I'm not so fortified with observation
+That I could swear that more than half a score
+Among us who see lightning see that ruin
+Is not the work of thunder.  Since the world
+Was ordered, there was never a long pause
+For caution between doing and undoing.
+
+
+        BURR
+
+Go on, sir; my attention is a trap
+Set for the catching of all compliments
+To Monticello, and all else abroad
+That has a name or an identity.
+
+
+        HAMILTON
+
+I leave to you the names -- there are too many;
+Yet one there is to sift and hold apart,
+As now I see.  There comes at last a glimmer
+That is not always clouded, or too late.
+But I was near and young, and had the reins
+To play with while he manned a team so raw
+That only God knows where the end had been
+Of all that riding without Washington.
+There was a nation in the man who passed us,
+If there was not a world.  I may have driven
+Since then some restive horses, and alone,
+And through a splashing of abundant mud;
+But he who made the dust that sets you on
+To coughing, made the road.  Now it seems dry,
+And in a measure safe.
+
+
+        BURR
+
+                        Here's a new tune
+From Hamilton.  Has your caution all at once,
+And over night, grown till it wrecks the cradle?
+I have forgotten what my father said
+When I was born, but there's a rustling of it
+Among my memories, and it makes a noise
+About as loud as all that I have held
+And fondled heretofore of your same caution.
+But that's affairs, not feelings.  If our friends
+Guessed half we say of them, our enemies
+Would itch in our friends' jackets.  Howsoever,
+The world is of a sudden on its head,
+And all are spilled -- unless you cling alone
+With Washington.  Ask Adams about that.
+
+
+        HAMILTON
+
+We'll not ask Adams about anything.
+We fish for lizards when we choose to ask
+For what we know already is not coming,
+And we must eat the answer.  Where's the use
+Of asking when this man says everything,
+With all his tongues of silence?
+
+
+        BURR
+
+                                  I dare say.
+I dare say, but I won't.  One of those tongues
+I'll borrow for the nonce.  He'll never miss it.
+We mean his Western Majesty, King George.
+
+
+        HAMILTON
+
+I mean the man who rode by on his horse.
+I'll beg of you the meed of your indulgence
+If I should say this planet may have done
+A deal of weary whirling when at last,
+If ever, Time shall aggregate again
+A majesty like his that has no name.
+
+
+        BURR
+
+Then you concede his Majesty?  That's good,
+And what of yours?  Here are two majesties.
+Favor the Left a little, Hamilton,
+Or you'll be floundering in the ditch that waits
+For riders who forget where they are riding.
+If we and France, as you anticipate,
+Must eat each other, what Caesar, if not yourself,
+Do you see for the master of the feast?
+There may be a place waiting on your head
+For laurel thick as Nero's.  You don't know.
+I have not crossed your glory, though I might
+If I saw thrones at auction.
+
+
+        HAMILTON
+
+                              Yes, you might.
+If war is on the way, I shall be -- here;
+And I've no vision of your distant heels.
+
+
+        BURR
+
+I see that I shall take an inference
+To bed with me to-night to keep me warm.
+I thank you, Hamilton, and I approve
+Your fealty to the aggregated greatness
+Of him you lean on while he leans on you.
+
+
+        HAMILTON
+
+This easy phrasing is a game of yours
+That you may win to lose.  I beg your pardon,
+But you that have the sight will not employ
+The will to see with it.  If you did so,
+There might be fewer ditches dug for others
+In your perspective; and there might be fewer
+Contemporary motes of prejudice
+Between you and the man who made the dust.
+Call him a genius or a gentleman,
+A prophet or a builder, or what not,
+But hold your disposition off the balance,
+And weigh him in the light.  Once (I believe
+I tell you nothing new to your surmise,
+Or to the tongues of towns and villages)
+I nourished with an adolescent fancy --
+Surely forgivable to you, my friend --
+An innocent and amiable conviction
+That I was, by the grace of honest fortune,
+A savior at his elbow through the war,
+Where I might have observed, more than I did,
+Patience and wholesome passion.  I was there,
+And for such honor I gave nothing worse
+Than some advice at which he may have smiled.
+I must have given a modicum besides,
+Or the rough interval between those days
+And these would never have made for me my friends,
+Or enemies.  I should be something somewhere --
+I say not what -- but I should not be here
+If he had not been there.  Possibly, too,
+You might not -- or that Quaker with his cane.
+
+
+        BURR
+
+Possibly, too, I should.  When the Almighty
+Rides a white horse, I fancy we shall know it.
+
+
+        HAMILTON
+
+It was a man, Burr, that was in my mind;
+No god, or ghost, or demon -- only a man:
+A man whose occupation is the need
+Of those who would not feel it if it bit them;
+And one who shapes an age while he endures
+The pin pricks of inferiorities;
+A cautious man, because he is but one;
+A lonely man, because he is a thousand.
+No marvel you are slow to find in him
+The genius that is one spark or is nothing:
+His genius is a flame that he must hold
+So far above the common heads of men
+That they may view him only through the mist
+Of their defect, and wonder what he is.
+It seems to me the mystery that is in him
+That makes him only more to me a man
+Than any other I have ever known.
+
+
+        BURR
+
+I grant you that his worship is a man.
+I'm not so much at home with mysteries,
+May be, as you -- so leave him with his fire:
+God knows that I shall never put it out.
+He has not made a cripple of himself
+In his pursuit of me, though I have heard
+His condescension honors me with parts.
+Parts make a whole, if we've enough of them;
+And once I figured a sufficiency
+To be at least an atom in the annals
+Of your republic.  But I must have erred.
+
+
+        HAMILTON
+
+You smile as if your spirit lived at ease
+With error.  I should not have named it so,
+Failing assent from you; nor, if I did,
+Should I be so complacent in my skill
+To comb the tangled language of the people
+As to be sure of anything in these days.
+Put that much in account with modesty.
+
+
+        BURR
+
+What in the name of Ahab, Hamilton,
+Have you, in the last region of your dreaming,
+To do with "people"?  You may be the devil
+In your dead-reckoning of what reefs and shoals
+Are waiting on the progress of our ship
+Unless you steer it, but you'll find it irksome
+Alone there in the stern; and some warm day
+There'll be an inland music in the rigging,
+And afterwards on deck.  I'm not affined
+Or favored overmuch at Monticello,
+But there's a mighty swarming of new bees
+About the premises, and all have wings.
+If you hear something buzzing before long,
+Be thoughtful how you strike, remembering also
+There was a fellow Naboth had a vineyard,
+And Ahab cut his hair off and went softly.
+
+
+        HAMILTON
+
+I don't remember that he cut his hair off.
+
+
+        BURR
+
+Somehow I rather fancy that he did.
+If so, it's in the Book; and if not so,
+He did the rest, and did it handsomely.
+
+
+        HAMILTON
+
+Commend yourself to Ahab and his ways
+If they inveigle you to emulation;
+But where, if I may ask it, are you tending
+With your invidious wielding of the Scriptures?
+You call to mind an eminent archangel
+Who fell to make him famous.  Would you fall
+So far as he, to be so far remembered?
+
+
+        BURR
+
+Before I fall or rise, or am an angel,
+I shall acquaint myself a little further
+With our new land's new language, which is not --
+Peace to your dreams -- an idiom to your liking.
+I'm wondering if a man may always know
+How old a man may be at thirty-seven;
+I wonder likewise if a prettier time
+Could be decreed for a good man to vanish
+Than about now for you, before you fade,
+And even your friends are seeing that you have had
+Your cup too full for longer mortal triumph.
+Well, you have had enough, and had it young;
+And the old wine is nearer to the lees
+Than you are to the work that you are doing.
+
+
+        HAMILTON
+
+When does this philological excursion
+Into new lands and languages begin?
+
+
+        BURR
+
+Anon -- that is, already.  Only Fortune
+Gave me this afternoon the benefaction
+Of your blue back, which I for love pursued,
+And in pursuing may have saved your life --
+Also the world a pounding piece of news:
+Hamilton bites the dust of Washington,
+Or rather of his horse.  For you alone,
+Or for your fame, I'd wish it might have been so.
+
+
+        HAMILTON
+
+Not every man among us has a friend
+So jealous for the other's fame.  How long
+Are you to diagnose the doubtful case
+Of Demos -- and what for?  Have you a sword
+For some new Damocles?  If it's for me,
+I have lost all official appetite,
+And shall have faded, after January,
+Into the law.  I'm going to New York.
+
+
+        BURR
+
+No matter where you are, one of these days
+I shall come back to you and tell you something.
+This Demos, I have heard, has in his wrist
+A pulse that no two doctors have as yet
+Counted and found the same, and in his mouth
+A tongue that has the like alacrity
+For saying or not for saying what most it is
+That pullulates in his ignoble mind.
+One of these days I shall appear again,
+To tell you more of him and his opinions;
+I shall not be so long out of your sight,
+Or take myself so far, that I may not,
+Like Alcibiades, come back again.
+He went away to Phrygia, and fared ill.
+
+
+        HAMILTON
+
+There's an example in Themistocles:
+He went away to Persia, and fared well.
+
+
+        BURR
+
+So?  Must I go so far?  And if so, why so?
+I had not planned it so.  Is this the road
+I take?  If so, farewell.
+
+
+        HAMILTON
+
+                           Quite so.  Farewell.
+
+
+
+
+John Brown
+
+
+
+Though for your sake I would not have you now
+So near to me tonight as now you are,
+God knows how much a stranger to my heart
+Was any cold word that I may have written;
+And you, poor woman that I made my wife,
+You have had more of loneliness, I fear,
+Than I -- though I have been the most alone,
+Even when the most attended.  So it was
+God set the mark of his inscrutable
+Necessity on one that was to grope,
+And serve, and suffer, and withal be glad
+For what was his, and is, and is to be,
+When his old bones, that are a burden now,
+Are saying what the man who carried them
+Had not the power to say.  Bones in a grave,
+Cover them as they will with choking earth,
+May shout the truth to men who put them there,
+More than all orators.  And so, my dear,
+Since you have cheated wisdom for the sake
+Of sorrow, let your sorrow be for you,
+This last of nights before the last of days,
+The lying ghost of what there is of me
+That is the most alive.  There is no death
+For me in what they do.  Their death it is
+They should heed most when the sun comes again
+To make them solemn.  There are some I know
+Whose eyes will hardly see their occupation,
+For tears in them -- and all for one old man;
+For some of them will pity this old man,
+Who took upon himself the work of God
+Because he pitied millions.  That will be
+For them, I fancy, their compassionate
+Best way of saying what is best in them
+To say; for they can say no more than that,
+And they can do no more than what the dawn
+Of one more day shall give them light enough
+To do.  But there are many days to be,
+And there are many men to give their blood,
+As I gave mine for them.  May they come soon!
+
+May they come soon, I say.  And when they come,
+May all that I have said unheard be heard,
+Proving at last, or maybe not -- no matter --
+What sort of madness was the part of me
+That made me strike, whether I found the mark
+Or missed it.  Meanwhile, I've a strange content,
+A patience, and a vast indifference
+To what men say of me and what men fear
+To say.  There was a work to be begun,
+And when the Voice, that I have heard so long,
+Announced as in a thousand silences
+An end of preparation, I began
+The coming work of death which is to be,
+That life may be.  There is no other way
+Than the old way of war for a new land
+That will not know itself and is tonight
+A stranger to itself, and to the world
+A more prodigious upstart among states
+Than I was among men, and so shall be
+Till they are told and told, and told again;
+For men are children, waiting to be told,
+And most of them are children all their lives.
+The good God in his wisdom had them so,
+That now and then a madman or a seer
+May shake them out of their complacency
+And shame them into deeds.  The major file
+See only what their fathers may have seen,
+Or may have said they saw when they saw nothing.
+I do not say it matters what they saw.
+Now and again to some lone soul or other
+God speaks, and there is hanging to be done, --
+As once there was a burning of our bodies
+Alive, albeit our souls were sorry fuel.
+But now the fires are few, and we are poised
+Accordingly, for the state's benefit,
+A few still minutes between heaven and earth.
+The purpose is, when they have seen enough
+Of what it is that they are not to see,
+To pluck me as an unripe fruit of treason,
+And then to fling me back to the same earth
+Of which they are, as I suppose, the flower --
+Not given to know the riper fruit that waits
+For a more comprehensive harvesting.
+
+Yes, may they come, and soon.  Again I say,
+May they come soon! -- before too many of them
+Shall be the bloody cost of our defection.
+When hell waits on the dawn of a new state,
+Better it were that hell should not wait long, --
+Or so it is I see it who should see
+As far or farther into time tonight
+Than they who talk and tremble for me now,
+Or wish me to those everlasting fires
+That are for me no fear.  Too many fires
+Have sought me out and seared me to the bone --
+Thereby, for all I know, to temper me
+For what was mine to do.  If I did ill
+What I did well, let men say I was mad;
+Or let my name for ever be a question
+That will not sleep in history.  What men say
+I was will cool no cannon, dull no sword,
+Invalidate no truth.  Meanwhile, I was;
+And the long train is lighted that shall burn,
+Though floods of wrath may drench it, and hot feet
+May stamp it for a slight time into smoke
+That shall blaze up again with growing speed,
+Until at last a fiery crash will come
+To cleanse and shake a wounded hemisphere,
+And heal it of a long malignity
+That angry time discredits and disowns.
+Tonight there are men saying many things;
+And some who see life in the last of me
+Will answer first the coming call to death;
+For death is what is coming, and then life.
+I do not say again for the dull sake
+Of speech what you have heard me say before,
+But rather for the sake of all I am,
+And all God made of me.  A man to die
+As I do must have done some other work
+Than man's alone.  I was not after glory,
+But there was glory with me, like a friend,
+Throughout those crippling years when friends were few,
+And fearful to be known by their own names
+When mine was vilified for their approval.
+Yet friends they are, and they did what was given
+Their will to do; they could have done no more.
+I was the one man mad enough, it seems,
+To do my work; and now my work is over.
+And you, my dear, are not to mourn for me,
+Or for your sons, more than a soul should mourn
+In Paradise, done with evil and with earth.
+There is not much of earth in what remains
+For you; and what there may be left of it
+For your endurance you shall have at last
+In peace, without the twinge of any fear
+For my condition; for I shall be done
+With plans and actions that have heretofore
+Made your days long and your nights ominous
+With darkness and the many distances
+That were between us.  When the silence comes,
+I shall in faith be nearer to you then
+Than I am now in fact.  What you see now
+Is only the outside of an old man,
+Older than years have made him.  Let him die,
+And let him be a thing for little grief.
+There was a time for service, and he served;
+And there is no more time for anything
+But a short gratefulness to those who gave
+Their scared allegiance to an enterprise
+That has the name of treason -- which will serve
+As well as any other for the present.
+There are some deeds of men that have no names,
+And mine may like as not be one of them.
+I am not looking far for names tonight.
+The King of Glory was without a name
+Until men gave him one; yet there He was,
+Before we found Him and affronted Him
+With numerous ingenuities of evil,
+Of which one, with His aid, is to be swept
+And washed out of the world with fire and blood.
+
+Once I believed it might have come to pass
+With a small cost of blood; but I was dreaming --
+Dreaming that I believed.  The Voice I heard
+When I left you behind me in the north, --
+To wait there and to wonder and grow old
+Of loneliness, -- told only what was best,
+And with a saving vagueness, I should know
+Till I knew more.  And had I known even then --
+After grim years of search and suffering,
+So many of them to end as they began --
+After my sickening doubts and estimations
+Of plans abandoned and of new plans vain --
+After a weary delving everywhere
+For men with every virtue but the Vision --
+Could I have known, I say, before I left you
+That summer morning, all there was to know --
+Even unto the last consuming word
+That would have blasted every mortal answer
+As lightning would annihilate a leaf,
+I might have trembled on that summer morning;
+I might have wavered; and I might have failed.
+
+And there are many among men today
+To say of me that I had best have wavered.
+So has it been, so shall it always be,
+For those of us who give ourselves to die
+Before we are so parcelled and approved
+As to be slaughtered by authority.
+We do not make so much of what they say
+As they of what our folly says of us;
+They give us hardly time enough for that,
+And thereby we gain much by losing little.
+Few are alive to-day with less to lose
+Than I who tell you this, or more to gain;
+And whether I speak as one to be destroyed
+For no good end outside his own destruction,
+Time shall have more to say than men shall hear
+Between now and the coming of that harvest
+Which is to come.  Before it comes, I go --
+By the short road that mystery makes long
+For man's endurance of accomplishment.
+I shall have more to say when I am dead.
+
+
+
+
+The False Gods
+
+
+
+"We are false and evanescent, and aware of our deceit,
+From the straw that is our vitals to the clay that is our feet.
+You may serve us if you must, and you shall have your wage of ashes, --
+Though arrears due thereafter may be hard for you to meet.
+
+"You may swear that we are solid, you may say that we are strong,
+But we know that we are neither and we say that you are wrong;
+You may find an easy worship in acclaiming our indulgence,
+But your large admiration of us now is not for long.
+
+"If your doom is to adore us with a doubt that's never still,
+And you pray to see our faces -- pray in earnest, and you will.
+You may gaze at us and live, and live assured of our confusion:
+For the False Gods are mortal, and are made for you to kill.
+
+"And you may as well observe, while apprehensively at ease
+With an Art that's inorganic and is anything you please,
+That anon your newest ruin may lie crumbling unregarded,
+Like an old shrine forgotten in a forest of new trees.
+
+"Howsoever like no other be the mode you may employ,
+There's an order in the ages for the ages to enjoy;
+Though the temples you are shaping and the passions you are singing
+Are a long way from Athens and a longer way from Troy.
+
+"When we promise more than ever of what never shall arrive,
+And you seem a little more than ordinarily alive,
+Make a note that you are sure you understand our obligations --
+For there's grief always auditing where two and two are five.
+
+"There was this for us to say and there was this for you to know,
+Though it humbles and it hurts us when we have to tell you so.
+If you doubt the only truth in all our perjured composition,
+May the True Gods attend you and forget us when we go."
+
+
+
+
+Archibald's Example
+
+
+
+Old Archibald, in his eternal chair,
+Where trespassers, whatever their degree,
+Were soon frowned out again, was looking off
+Across the clover when he said to me:
+
+"My green hill yonder, where the sun goes down
+Without a scratch, was once inhabited
+By trees that injured him -- an evil trash
+That made a cage, and held him while he bled.
+
+"Gone fifty years, I see them as they were
+Before they fell.  They were a crooked lot
+To spoil my sunset, and I saw no time
+In fifty years for crooked things to rot.
+
+"Trees, yes; but not a service or a joy
+To God or man, for they were thieves of light.
+So down they came.  Nature and I looked on,
+And we were glad when they were out of sight.
+
+"Trees are like men, sometimes; and that being so,
+So much for that."  He twinkled in his chair,
+And looked across the clover to the place
+That he remembered when the trees were there.
+
+
+
+
+London Bridge
+
+
+
+"Do I hear them?  Yes, I hear the children singing -- and what of it?
+Have you come with eyes afire to find me now and ask me that?
+If I were not their father and if you were not their mother,
+We might believe they made a noise. . . .  What are you -- driving at!"
+
+"Well, be glad that you can hear them, and be glad they are so near us, --
+For I have heard the stars of heaven, and they were nearer still.
+All within an hour it is that I have heard them calling,
+And though I pray for them to cease, I know they never will;
+For their music on my heart, though you may freeze it, will fall always,
+Like summer snow that never melts upon a mountain-top.
+Do you hear them?  Do you hear them overhead -- the children -- singing?
+Do you hear the children singing? . . .  God, will you make them stop!"
+
+"And what now in his holy name have you to do with mountains?
+We're back to town again, my dear, and we've a dance tonight.
+Frozen hearts and falling music?  Snow and stars, and -- what the devil!
+Say it over to me slowly, and be sure you have it right."
+
+"God knows if I be right or wrong in saying what I tell you,
+Or if I know the meaning any more of what I say.
+All I know is, it will kill me if I try to keep it hidden --
+Well, I met him. . . .  Yes, I met him, and I talked with him -- today."
+
+"You met him?  Did you meet the ghost of someone you had poisoned,
+Long ago, before I knew you for the woman that you are?
+Take a chair; and don't begin your stories always in the middle.
+Was he man, or was he demon?  Anyhow, you've gone too far
+To go back, and I'm your servant.  I'm the lord, but you're the master.
+Now go on with what you know, for I'm excited."
+
+                                                 "Do you mean --
+Do you mean to make me try to think that you know less than I do?"
+
+"I know that you foreshadow the beginning of a scene.
+Pray be careful, and as accurate as if the doors of heaven
+Were to swing or to stay bolted from now on for evermore."
+
+"Do you conceive, with all your smooth contempt of every feeling,
+Of hiding what you know and what you must have known before?
+Is it worth a woman's torture to stand here and have you smiling,
+With only your poor fetish of possession on your side?
+No thing but one is wholly sure, and that's not one to scare me;
+When I meet it I may say to God at last that I have tried.
+And yet, for all I know, or all I dare believe, my trials
+Henceforward will be more for you to bear than are your own;
+And you must give me keys of yours to rooms I have not entered.
+Do you see me on your threshold all my life, and there alone?
+Will you tell me where you see me in your fancy -- when it leads you
+Far enough beyond the moment for a glance at the abyss?"
+
+"Will you tell me what intrinsic and amazing sort of nonsense
+You are crowding on the patience of the man who gives you -- this?
+Look around you and be sorry you're not living in an attic,
+With a civet and a fish-net, and with you to pay the rent.
+I say words that you can spell without the use of all your letters;
+And I grant, if you insist, that I've a guess at what you meant."
+
+"Have I told you, then, for nothing, that I met him?  Are you trying
+To be merry while you try to make me hate you?"
+
+                                                 "Think again,
+My dear, before you tell me, in a language unbecoming
+To a lady, what you plan to tell me next.  If I complain,
+If I seem an atom peevish at the preference you mention --
+Or imply, to be precise -- you may believe, or you may not,
+That I'm a trifle more aware of what he wants than you are.
+But I shouldn't throw that at you.  Make believe that I forgot.
+Make believe that he's a genius, if you like, -- but in the meantime
+Don't go back to rocking-horses.  There, there, there, now."
+
+                                                              "Make believe!
+When you see me standing helpless on a plank above a whirlpool,
+Do I drown, or do I hear you when you say it?  Make believe?
+How much more am I to say or do for you before I tell you
+That I met him!  What's to follow now may be for you to choose.
+Do you hear me?  Won't you listen?  It's an easy thing to listen. . . ."
+
+"And it's easy to be crazy when there's everything to lose."
+
+"If at last you have a notion that I mean what I am saying,
+Do I seem to tell you nothing when I tell you I shall try?
+If you save me, and I lose him -- I don't know -- it won't much matter.
+I dare say that I've lied enough, but now I do not lie."
+
+"Do you fancy me the one man who has waited and said nothing
+While a wife has dragged an old infatuation from a tomb?
+Give the thing a little air and it will vanish into ashes.
+There you are -- piff! presto!"
+
+                                 "When I came into this room,
+It seemed as if I saw the place, and you there at your table,
+As you are now at this moment, for the last time in my life;
+And I told myself before I came to find you, `I shall tell him,
+If I can, what I have learned of him since I became his wife.'
+And if you say, as I've no doubt you will before I finish,
+That you have tried unceasingly, with all your might and main,
+To teach me, knowing more than I of what it was I needed,
+Don't think, with all you may have thought, that you have tried in vain;
+For you have taught me more than hides in all the shelves of knowledge
+Of how little you found that's in me and was in me all along.
+I believed, if I intruded nothing on you that I cared for,
+I'd be half as much as horses, -- and it seems that I was wrong;
+I believed there was enough of earth in me, with all my nonsense
+Over things that made you sleepy, to keep something still awake;
+But you taught me soon to read my book, and God knows I have read it --
+Ages longer than an angel would have read it for your sake.
+I have said that you must open other doors than I have entered,
+But I wondered while I said it if I might not be obscure.
+Is there anything in all your pedigrees and inventories
+With a value more elusive than a dollar's?  Are you sure
+That if I starve another year for you I shall be stronger
+To endure another like it -- and another -- till I'm dead?"
+
+"Has your tame cat sold a picture? -- or more likely had a windfall?
+Or for God's sake, what's broke loose?  Have you a bee-hive in your head?
+A little more of this from you will not be easy hearing.
+Do you know that?  Understand it, if you do; for if you won't. . . .
+What the devil are you saying!  Make believe you never said it,
+And I'll say I never heard it. . . .  Oh, you. . . .  If you. . . ."
+
+                                                                 "If I don't?"
+
+"There are men who say there's reason hidden somewhere in a woman,
+But I doubt if God himself remembers where the key was hung."
+
+"He may not; for they say that even God himself is growing.
+I wonder if he makes believe that he is growing young;
+I wonder if he makes believe that women who are giving
+All they have in holy loathing to a stranger all their lives
+Are the wise ones who build houses in the Bible. . . ."
+
+                                                         "Stop -- you devil!"
+
+". . . Or that souls are any whiter when their bodies are called wives.
+If a dollar's worth of gold will hoop the walls of hell together,
+Why need heaven be such a ruin of a place that never was?
+And if at last I lied my starving soul away to nothing,
+Are you sure you might not miss it?  Have you come to such a pass
+That you would have me longer in your arms if you discovered
+That I made you into someone else. . . .  Oh! . . .  Well, there are
+  worse ways.
+But why aim it at my feet -- unless you fear you may be sorry. . . .
+There are many days ahead of you."
+
+                                    "I do not see those days."
+
+"I can see them.  Granted even I am wrong, there are the children.
+And are they to praise their father for his insight if we die?
+Do you hear them?  Do you hear them overhead -- the children -- singing?
+Do you hear them?  Do you hear the children?"
+
+                                               "Damn the children!"
+
+                                                                     "Why?
+What have THEY done? . . .  Well, then, -- do it. . . .  Do it now,
+  and have it over."
+
+"Oh, you devil! . . .  Oh, you. . . ."
+
+                                        "No, I'm not a devil, I'm a prophet --
+One who sees the end already of so much that one end more
+Would have now the small importance of one other small illusion,
+Which in turn would have a welcome where the rest have gone before.
+But if I were you, my fancy would look on a little farther
+For the glimpse of a release that may be somewhere still in sight.
+Furthermore, you must remember those two hundred invitations
+For the dancing after dinner.  We shall have to shine tonight.
+We shall dance, and be as happy as a pair of merry spectres,
+On the grave of all the lies that we shall never have to tell;
+We shall dance among the ruins of the tomb of our endurance,
+And I have not a doubt that we shall do it very well.
+There! -- I'm glad you've put it back; for I don't like it.
+  Shut the drawer now.
+No -- no -- don't cancel anything.  I'll dance until I drop.
+I can't walk yet, but I'm going to. . . .  Go away somewhere,
+  and leave me. . . .
+Oh, you children!  Oh, you children! . . .  God, will they never stop!"
+
+
+
+
+Tasker Norcross
+
+
+
+"Whether all towns and all who live in them --
+So long as they be somewhere in this world
+That we in our complacency call ours --
+Are more or less the same, I leave to you.
+I should say less.  Whether or not, meanwhile,
+We've all two legs -- and as for that, we haven't --
+There were three kinds of men where I was born:
+The good, the not so good, and Tasker Norcross.
+Now there are two kinds."
+
+                           "Meaning, as I divine,
+Your friend is dead," I ventured.
+
+                                   Ferguson,
+Who talked himself at last out of the world
+He censured, and is therefore silent now,
+Agreed indifferently:  "My friends are dead --
+Or most of them."
+
+                   "Remember one that isn't,"
+I said, protesting.  "Honor him for his ears;
+Treasure him also for his understanding."
+Ferguson sighed, and then talked on again:
+"You have an overgrown alacrity
+For saying nothing much and hearing less;
+And I've a thankless wonder, at the start,
+How much it is to you that I shall tell
+What I have now to say of Tasker Norcross,
+And how much to the air that is around you.
+But given a patience that is not averse
+To the slow tragedies of haunted men --
+Horrors, in fact, if you've a skilful eye
+To know them at their firesides, or out walking, --"
+
+"Horrors," I said, "are my necessity;
+And I would have them, for their best effect,
+Always out walking."
+
+                      Ferguson frowned at me:
+"The wisest of us are not those who laugh
+Before they know.  Most of us never know --
+Or the long toil of our mortality
+Would not be done.  Most of us never know --
+And there you have a reason to believe
+In God, if you may have no other.  Norcross,
+Or so I gather of his infirmity,
+Was given to know more than he should have known,
+And only God knows why.  See for yourself
+An old house full of ghosts of ancestors,
+Who did their best, or worst, and having done it,
+Died honorably; and each with a distinction
+That hardly would have been for him that had it,
+Had honor failed him wholly as a friend.
+Honor that is a friend begets a friend.
+Whether or not we love him, still we have him;
+And we must live somehow by what we have,
+Or then we die.  If you say chemistry,
+Then you must have your molecules in motion,
+And in their right abundance.  Failing either,
+You have not long to dance.  Failing a friend,
+A genius, or a madness, or a faith
+Larger than desperation, you are here
+For as much longer than you like as may be.
+Imagining now, by way of an example,
+Myself a more or less remembered phantom --
+Again, I should say less -- how many times
+A day should I come back to you?  No answer.
+Forgive me when I seem a little careless,
+But we must have examples, or be lucid
+Without them; and I question your adherence
+To such an undramatic narrative
+As this of mine, without the personal hook."
+
+"A time is given in Ecclesiastes
+For divers works," I told him.  "Is there one
+For saying nothing in return for nothing?
+If not, there should be."  I could feel his eyes,
+And they were like two cold inquiring points
+Of a sharp metal.  When I looked again,
+To see them shine, the cold that I had felt
+Was gone to make way for a smouldering
+Of lonely fire that I, as I knew then,
+Could never quench with kindness or with lies.
+I should have done whatever there was to do
+For Ferguson, yet I could not have mourned
+In honesty for once around the clock
+The loss of him, for my sake or for his,
+Try as I might; nor would his ghost approve,
+Had I the power and the unthinking will
+To make him tread again without an aim
+The road that was behind him -- and without
+The faith, or friend, or genius, or the madness
+That he contended was imperative.
+
+After a silence that had been too long,
+"It may be quite as well we don't," he said;
+"As well, I mean, that we don't always say it.
+You know best what I mean, and I suppose
+You might have said it better.  What was that?
+Incorrigible?  Am I incorrigible?
+Well, it's a word; and a word has its use,
+Or, like a man, it will soon have a grave.
+It's a good word enough.  Incorrigible,
+May be, for all I know, the word for Norcross.
+See for yourself that house of his again
+That he called home:  An old house, painted white,
+Square as a box, and chillier than a tomb
+To look at or to live in.  There were trees --
+Too many of them, if such a thing may be --
+Before it and around it.  Down in front
+There was a road, a railroad, and a river;
+Then there were hills behind it, and more trees.
+The thing would fairly stare at you through trees,
+Like a pale inmate out of a barred window
+With a green shade half down; and I dare say
+People who passed have said:  `There's where he lives.
+We know him, but we do not seem to know
+That we remember any good of him,
+Or any evil that is interesting.
+There you have all we know and all we care.'
+They might have said it in all sorts of ways;
+And then, if they perceived a cat, they might
+Or might not have remembered what they said.
+The cat might have a personality --
+And maybe the same one the Lord left out
+Of Tasker Norcross, who, for lack of it,
+Saw the same sun go down year after year;
+All which at last was my discovery.
+And only mine, so far as evidence
+Enlightens one more darkness.  You have known
+All round you, all your days, men who are nothing --
+Nothing, I mean, so far as time tells yet
+Of any other need it has of them
+Than to make sextons hardy -- but no less
+Are to themselves incalculably something,
+And therefore to be cherished.  God, you see,
+Being sorry for them in their fashioning,
+Indemnified them with a quaint esteem
+Of self, and with illusions long as life.
+You know them well, and you have smiled at them;
+And they, in their serenity, may have had
+Their time to smile at you.  Blessed are they
+That see themselves for what they never were
+Or were to be, and are, for their defect,
+At ease with mirrors and the dim remarks
+That pass their tranquil ears."
+
+                                 "Come, come," said I;
+"There may be names in your compendium
+That we are not yet all on fire for shouting.
+Skin most of us of our mediocrity,
+We should have nothing then that we could scratch.
+The picture smarts.  Cover it, if you please,
+And do so rather gently.  Now for Norcross."
+
+Ferguson closed his eyes in resignation,
+While a dead sigh came out of him.  "Good God!"
+He said, and said it only half aloud,
+As if he knew no longer now, nor cared,
+If one were there to listen:  "Have I said nothing --
+Nothing at all -- of Norcross?  Do you mean
+To patronize him till his name becomes
+A toy made out of letters?  If a name
+Is all you need, arrange an honest column
+Of all the people you have ever known
+That you have never liked.  You'll have enough;
+And you'll have mine, moreover.  No, not yet.
+If I assume too many privileges,
+I pay, and I alone, for their assumption;
+By which, if I assume a darker knowledge
+Of Norcross than another, let the weight
+Of my injustice aggravate the load
+That is not on your shoulders.  When I came
+To know this fellow Norcross in his house,
+I found him as I found him in the street --
+No more, no less; indifferent, but no better.
+`Worse' were not quite the word:  he was not bad;
+He was not . . . well, he was not anything.
+Has your invention ever entertained
+The picture of a dusty worm so dry
+That even the early bird would shake his head
+And fly on farther for another breakfast?"
+
+"But why forget the fortune of the worm,"
+I said, "if in the dryness you deplore
+Salvation centred and endured?  Your Norcross
+May have been one for many to have envied."
+
+"Salvation?  Fortune?  Would the worm say that?
+He might; and therefore I dismiss the worm
+With all dry things but one.  Figures away,
+Do you begin to see this man a little?
+Do you begin to see him in the air,
+With all the vacant horrors of his outline
+For you to fill with more than it will hold?
+If so, you needn't crown yourself at once
+With epic laurel if you seem to fill it.
+Horrors, I say, for in the fires and forks
+Of a new hell -- if one were not enough --
+I doubt if a new horror would have held him
+With a malignant ingenuity
+More to be feared than his before he died.
+You smile, as if in doubt.  Well, smile again.
+Now come into his house, along with me:
+The four square sombre things that you see first
+Around you are four walls that go as high
+As to the ceiling.  Norcross knew them well,
+And he knew others like them.  Fasten to that
+With all the claws of your intelligence;
+And hold the man before you in his house
+As if he were a white rat in a box,
+And one that knew himself to be no other.
+I tell you twice that he knew all about it,
+That you may not forget the worst of all
+Our tragedies begin with what we know.
+Could Norcross only not have known, I wonder
+How many would have blessed and envied him!
+Could he have had the usual eye for spots
+On others, and for none upon himself,
+I smile to ponder on the carriages
+That might as well as not have clogged the town
+In honor of his end.  For there was gold,
+You see, though all he needed was a little,
+And what he gave said nothing of who gave it.
+He would have given it all if in return
+There might have been a more sufficient face
+To greet him when he shaved.  Though you insist
+It is the dower, and always, of our degree
+Not to be cursed with such invidious insight,
+Remember that you stand, you and your fancy,
+Now in his house; and since we are together,
+See for yourself and tell me what you see.
+Tell me the best you see.  Make a slight noise
+Of recognition when you find a book
+That you would not as lief read upside down
+As otherwise, for example.  If there you fail,
+Observe the walls and lead me to the place,
+Where you are led.  If there you meet a picture
+That holds you near it for a longer time
+Than you are sorry, you may call it yours,
+And hang it in the dark of your remembrance,
+Where Norcross never sees.  How can he see
+That has no eyes to see?  And as for music,
+He paid with empty wonder for the pangs
+Of his infrequent forced endurance of it;
+And having had no pleasure, paid no more
+For needless immolation, or for the sight
+Of those who heard what he was never to hear.
+To see them listening was itself enough
+To make him suffer; and to watch worn eyes,
+On other days, of strangers who forgot
+Their sorrows and their failures and themselves
+Before a few mysterious odds and ends
+Of marble carted from the Parthenon --
+And all for seeing what he was never to see,
+Because it was alive and he was dead --
+Here was a wonder that was more profound
+Than any that was in fiddles and brass horns.
+
+"He knew, and in his knowledge there was death.
+He knew there was a region all around him
+That lay outside man's havoc and affairs,
+And yet was not all hostile to their tumult,
+Where poets would have served and honored him,
+And saved him, had there been anything to save.
+But there was nothing, and his tethered range
+Was only a small desert.  Kings of song
+Are not for thrones in deserts.  Towers of sound
+And flowers of sense are but a waste of heaven
+Where there is none to know them from the rocks
+And sand-grass of his own monotony
+That makes earth less than earth.  He could see that,
+And he could see no more.  The captured light
+That may have been or not, for all he cared,
+The song that is in sculpture was not his,
+But only, to his God-forgotten eyes,
+One more immortal nonsense in a world
+Where all was mortal, or had best be so,
+And so be done with.  `Art,' he would have said,
+`Is not life, and must therefore be a lie;'
+And with a few profundities like that
+He would have controverted and dismissed
+The benefit of the Greeks.  He had heard of them,
+As he had heard of his aspiring soul --
+Never to the perceptible advantage,
+In his esteem, of either.  `Faith,' he said,
+Or would have said if he had thought of it,
+`Lives in the same house with Philosophy,
+Where the two feed on scraps and are forlorn
+As orphans after war.  He could see stars,
+On a clear night, but he had not an eye
+To see beyond them.  He could hear spoken words,
+But had no ear for silence when alone.
+He could eat food of which he knew the savor,
+But had no palate for the Bread of Life,
+That human desperation, to his thinking,
+Made famous long ago, having no other.
+Now do you see?  Do you begin to see?"
+
+I told him that I did begin to see;
+And I was nearer than I should have been
+To laughing at his malign inclusiveness,
+When I considered that, with all our speed,
+We are not laughing yet at funerals.
+I see him now as I could see him then,
+And I see now that it was good for me,
+As it was good for him, that I was quiet;
+For Time's eye was on Ferguson, and the shaft
+Of its inquiring hesitancy had touched him,
+Or so I chose to fancy more than once
+Before he told of Norcross.  When the word
+Of his release (he would have called it so)
+Made half an inch of news, there were no tears
+That are recorded.  Women there may have been
+To wish him back, though I should say, not knowing,
+The few there were to mourn were not for love,
+And were not lovely.  Nothing of them, at least,
+Was in the meagre legend that I gathered
+Years after, when a chance of travel took me
+So near the region of his nativity
+That a few miles of leisure brought me there;
+For there I found a friendly citizen
+Who led me to his house among the trees
+That were above a railroad and a river.
+Square as a box and chillier than a tomb
+It was indeed, to look at or to live in --
+All which had I been told.  "Ferguson died,"
+The stranger said, "and then there was an auction.
+I live here, but I've never yet been warm.
+Remember him?  Yes, I remember him.
+I knew him -- as a man may know a tree --
+For twenty years.  He may have held himself
+A little high when he was here, but now . . .
+Yes, I remember Ferguson.  Oh, yes."
+Others, I found, remembered Ferguson,
+But none of them had heard of Tasker Norcross.
+
+
+
+
+A Song at Shannon's
+
+
+
+Two men came out of Shannon's having known
+The faces of each other for as long
+As they had listened there to an old song,
+Sung thinly in a wastrel monotone
+By some unhappy night-bird, who had flown
+Too many times and with a wing too strong
+To save himself, and so done heavy wrong
+To more frail elements than his alone.
+
+Slowly away they went, leaving behind
+More light than was before them.  Neither met
+The other's eyes again or said a word.
+Each to his loneliness or to his kind,
+Went his own way, and with his own regret,
+Not knowing what the other may have heard.
+
+
+
+
+Souvenir
+
+
+
+A vanished house that for an hour I knew
+By some forgotten chance when I was young
+Had once a glimmering window overhung
+With honeysuckle wet with evening dew.
+Along the path tall dusky dahlias grew,
+And shadowy hydrangeas reached and swung
+Ferociously; and over me, among
+The moths and mysteries, a blurred bat flew.
+
+Somewhere within there were dim presences
+Of days that hovered and of years gone by.
+I waited, and between their silences
+There was an evanescent faded noise;
+And though a child, I knew it was the voice
+Of one whose occupation was to die.
+
+
+
+
+Discovery
+
+
+
+We told of him as one who should have soared
+And seen for us the devastating light
+Whereof there is not either day or night,
+And shared with us the glamour of the Word
+That fell once upon Amos to record
+For men at ease in Zion, when the sight
+Of ills obscured aggrieved him and the might
+Of Hamath was a warning of the Lord.
+
+Assured somehow that he would make us wise,
+Our pleasure was to wait; and our surprise
+Was hard when we confessed the dry return
+Of his regret.  For we were still to learn
+That earth has not a school where we may go
+For wisdom, or for more than we may know.
+
+
+
+
+Firelight
+
+
+
+Ten years together without yet a cloud,
+They seek each other's eyes at intervals
+Of gratefulness to firelight and four walls
+For love's obliteration of the crowd.
+Serenely and perennially endowed
+And bowered as few may be, their joy recalls
+No snake, no sword; and over them there falls
+The blessing of what neither says aloud.
+
+Wiser for silence, they were not so glad
+Were she to read the graven tale of lines
+On the wan face of one somewhere alone;
+Nor were they more content could he have had
+Her thoughts a moment since of one who shines
+Apart, and would be hers if he had known.
+
+
+
+
+The New Tenants
+
+
+
+The day was here when it was his to know
+How fared the barriers he had built between
+His triumph and his enemies unseen,
+For them to undermine and overthrow;
+And it was his no longer to forego
+The sight of them, insidious and serene,
+Where they were delving always and had been
+Left always to be vicious and to grow.
+
+And there were the new tenants who had come,
+By doors that were left open unawares,
+Into his house, and were so much at home
+There now that he would hardly have to guess,
+By the slow guile of their vindictiveness,
+What ultimate insolence would soon be theirs.
+
+
+
+
+Inferential
+
+
+
+Although I saw before me there the face
+Of one whom I had honored among men
+The least, and on regarding him again
+Would not have had him in another place,
+He fitted with an unfamiliar grace
+The coffin where I could not see him then
+As I had seen him and appraised him when
+I deemed him unessential to the race.
+
+For there was more of him than what I saw.
+And there was on me more than the old awe
+That is the common genius of the dead.
+I might as well have heard him:  "Never mind;
+If some of us were not so far behind,
+The rest of us were not so far ahead."
+
+
+
+
+The Rat
+
+
+
+As often as he let himself be seen
+We pitied him, or scorned him, or deplored
+The inscrutable profusion of the Lord
+Who shaped as one of us a thing so mean --
+Who made him human when he might have been
+A rat, and so been wholly in accord
+With any other creature we abhorred
+As always useless and not always clean.
+
+Now he is hiding all alone somewhere,
+And in a final hole not ready then;
+For now he is among those over there
+Who are not coming back to us again.
+And we who do the fiction of our share
+Say less of rats and rather more of men.
+
+
+
+
+Rahel to Varnhagen
+
+  Note. --  Rahel Robert and Varnhagen von Ense were married,
+  after many protestations on her part, in 1814.  The marriage -- so far
+  as he was concerned, at any rate -- appears to have been satisfactory.
+
+
+
+Now you have read them all; or if not all,
+As many as in all conscience I should fancy
+To be enough.  There are no more of them --
+Or none to burn your sleep, or to bring dreams
+Of devils.  If these are not sufficient, surely
+You are a strange young man.  I might live on
+Alone, and for another forty years,
+Or not quite forty, -- are you happier now? --
+Always to ask if there prevailed elsewhere
+Another like yourself that would have held
+These aged hands as long as you have held them,
+Not once observing, for all I can see,
+How they are like your mother's.  Well, you have read
+His letters now, and you have heard me say
+That in them are the cinders of a passion
+That was my life; and you have not yet broken
+Your way out of my house, out of my sight, --
+Into the street.  You are a strange young man.
+I know as much as that of you, for certain;
+And I'm already praying, for your sake,
+That you be not too strange.  Too much of that
+May lead you bye and bye through gloomy lanes
+To a sad wilderness, where one may grope
+Alone, and always, or until he feels
+Ferocious and invisible animals
+That wait for men and eat them in the dark.
+Why do you sit there on the floor so long,
+Smiling at me while I try to be solemn?
+Do you not hear it said for your salvation,
+When I say truth?  Are you, at four and twenty,
+So little deceived in us that you interpret
+The humor of a woman to be noticed
+As her choice between you and Acheron?
+Are you so unscathed yet as to infer
+That if a woman worries when a man,
+Or a man-child, has wet shoes on his feet
+She may as well commemorate with ashes
+The last eclipse of her tranquillity?
+If you look up at me and blink again,
+I shall not have to make you tell me lies
+To know the letters you have not been reading.
+I see now that I may have had for nothing
+A most unpleasant shivering in my conscience
+When I laid open for your contemplation
+The wealth of my worn casket.  If I did,
+The fault was not yours wholly.  Search again
+This wreckage we may call for sport a face,
+And you may chance upon the price of havoc
+That I have paid for a few sorry stones
+That shine and have no light -- yet once were stars,
+And sparkled on a crown.  Little and weak
+They seem; and they are cold, I fear, for you.
+But they that once were fire for me may not
+Be cold again for me until I die;
+And only God knows if they may be then.
+There is a love that ceases to be love
+In being ourselves.  How, then, are we to lose it?
+You that are sure that you know everything
+There is to know of love, answer me that.
+Well? . . .  You are not even interested.
+
+Once on a far off time when I was young,
+I felt with your assurance, and all through me,
+That I had undergone the last and worst
+Of love's inventions.  There was a boy who brought
+The sun with him and woke me up with it,
+And that was every morning; every night
+I tried to dream of him, but never could,
+More than I might have seen in Adam's eyes
+Their fond uncertainty when Eve began
+The play that all her tireless progeny
+Are not yet weary of.  One scene of it
+Was brief, but was eternal while it lasted;
+And that was while I was the happiest
+Of an imaginary six or seven,
+Somewhere in history but not on earth,
+For whom the sky had shaken and let stars
+Rain down like diamonds.  Then there were clouds,
+And a sad end of diamonds; whereupon
+Despair came, like a blast that would have brought
+Tears to the eyes of all the bears in Finland,
+And love was done.  That was how much I knew.
+Poor little wretch!  I wonder where he is
+This afternoon.  Out of this rain, I hope.
+
+At last, when I had seen so many days
+Dressed all alike, and in their marching order,
+Go by me that I would not always count them,
+One stopped -- shattering the whole file of Time,
+Or so it seemed; and when I looked again,
+There was a man.  He struck once with his eyes,
+And then there was a woman.  I, who had come
+To wisdom, or to vision, or what you like,
+By the old hidden road that has no name, --
+I, who was used to seeing without flying
+So much that others fly from without seeing,
+Still looked, and was afraid, and looked again.
+And after that, when I had read the story
+Told in his eyes, and felt within my heart
+The bleeding wound of their necessity,
+I knew the fear was his.  If I had failed him
+And flown away from him, I should have lost
+Ingloriously my wings in scrambling back,
+And found them arms again.  If he had struck me
+Not only with his eyes but with his hands,
+I might have pitied him and hated love,
+And then gone mad.  I, who have been so strong --
+Why don't you laugh? -- might even have done all that.
+I, who have learned so much, and said so much,
+And had the commendations of the great
+For one who rules herself -- why don't you cry? --
+And own a certain small authority
+Among the blind, who see no more than ever,
+But like my voice, -- I would have tossed it all
+To Tophet for one man; and he was jealous.
+I would have wound a snake around my neck
+And then have let it bite me till I died,
+If my so doing would have made me sure
+That one man might have lived; and he was jealous.
+I would have driven these hands into a cage
+That held a thousand scorpions, and crushed them,
+If only by so poisonous a trial
+I could have crushed his doubt.  I would have wrung
+My living blood with mediaeval engines
+Out of my screaming flesh, if only that
+Would have made one man sure.  I would have paid
+For him the tiresome price of body and soul,
+And let the lash of a tongue-weary town
+Fall as it might upon my blistered name;
+And while it fell I could have laughed at it,
+Knowing that he had found out finally
+Where the wrong was.  But there was evil in him
+That would have made no more of his possession
+Than confirmation of another fault;
+And there was honor -- if you call it honor
+That hoods itself with doubt and wears a crown
+Of lead that might as well be gold and fire.
+Give it as heavy or as light a name
+As any there is that fits.  I see myself
+Without the power to swear to this or that
+That I might be if he had been without it.
+Whatever I might have been that I was not,
+It only happened that it wasn't so.
+Meanwhile, you might seem to be listening:
+If you forget yourself and go to sleep,
+My treasure, I shall not say this again.
+Look up once more into my poor old face,
+Where you see beauty, or the Lord knows what,
+And say to me aloud what else there is
+Than ruins in it that you most admire.
+
+No, there was never anything like that;
+Nature has never fastened such a mask
+Of radiant and impenetrable merit
+On any woman as you say there is
+On this one.  Not a mask?  I thank you, sir,
+But you see more with your determination,
+I fear, than with your prudence or your conscience;
+And you have never met me with my eyes
+In all the mirrors I've made faces at.
+No, I shall never call you strange again:
+You are the young and inconvincible
+Epitome of all blind men since Adam.
+May the blind lead the blind, if that be so?
+And we shall need no mirrors?  You are saying
+What most I feared you might.  But if the blind,
+Or one of them, be not so fortunate
+As to put out the eyes of recollection,
+She might at last, without her meaning it,
+Lead on the other, without his knowing it,
+Until the two of them should lose themselves
+Among dead craters in a lava-field
+As empty as a desert on the moon.
+I am not speaking in a theatre,
+But in a room so real and so familiar
+That sometimes I would wreck it.  Then I pause,
+Remembering there is a King in Weimar --
+A monarch, and a poet, and a shepherd
+Of all who are astray and are outside
+The realm where they should rule.  I think of him,
+And save the furniture; I think of you,
+And am forlorn, finding in you the one
+To lavish aspirations and illusions
+Upon a faded and forsaken house
+Where love, being locked alone, was nigh to burning
+House and himself together.  Yes, you are strange,
+To see in such an injured architecture
+Room for new love to live in.  Are you laughing?
+No?  Well, you are not crying, as you should be.
+Tears, even if they told only gratitude
+For your escape, and had no other story,
+Were surely more becoming than a smile
+For my unwomanly straightforwardness
+In seeing for you, through my close gate of years
+Your forty ways to freedom.  Why do you smile?
+And while I'm trembling at my faith in you
+In giving you to read this book of danger
+That only one man living might have written --
+These letters, which have been a part of me
+So long that you may read them all again
+As often as you look into my face,
+And hear them when I speak to you, and feel them
+Whenever you have to touch me with your hand, --
+Why are you so unwilling to be spared?
+Why do you still believe in me?  But no,
+I'll find another way to ask you that.
+I wonder if there is another way
+That says it better, and means anything.
+There is no other way that could be worse?
+I was not asking you; it was myself
+Alone that I was asking.  Why do I dip
+For lies, when there is nothing in my well
+But shining truth, you say?  How do you know?
+Truth has a lonely life down where she lives;
+And many a time, when she comes up to breathe,
+She sinks before we seize her, and makes ripples.
+Possibly you may know no more of me
+Than a few ripples; and they may soon be gone,
+Leaving you then with all my shining truth
+Drowned in a shining water; and when you look
+You may not see me there, but something else
+That never was a woman -- being yourself.
+You say to me my truth is past all drowning,
+And safe with you for ever?  You know all that?
+How do you know all that, and who has told you?
+You know so much that I'm an atom frightened
+Because you know so little.  And what is this?
+You know the luxury there is in haunting
+The blasted thoroughfares of disillusion --
+If that's your name for them -- with only ghosts
+For company?  You know that when a woman
+Is blessed, or cursed, with a divine impatience
+(Another name of yours for a bad temper)
+She must have one at hand on whom to wreak it
+(That's what you mean, whatever the turn you give it),
+Sure of a kindred sympathy, and thereby
+Effect a mutual calm?  You know that wisdom,
+Given in vain to make a food for those
+Who are without it, will be seen at last,
+And even at last only by those who gave it,
+As one or more of the forgotten crumbs
+That others leave?  You know that men's applause
+And women's envy savor so much of dust
+That I go hungry, having at home no fare
+But the same changeless bread that I may swallow
+Only with tears and prayers?  Who told you that?
+You know that if I read, and read alone,
+Too many books that no men yet have written,
+I may go blind, or worse?  You know yourself,
+Of all insistent and insidious creatures,
+To be the one to save me, and to guard
+For me their flaming language?  And you know
+That if I give much headway to the whim
+That's in me never to be quite sure that even
+Through all those years of storm and fire I waited
+For this one rainy day, I may go on,
+And on, and on alone, through smoke and ashes,
+To a cold end?  You know so dismal much
+As that about me? . . .  Well, I believe you do.
+
+
+
+
+Nimmo
+
+
+
+Since you remember Nimmo, and arrive
+At such a false and florid and far drawn
+Confusion of odd nonsense, I connive
+No longer, though I may have led you on.
+
+So much is told and heard and told again,
+So many with his legend are engrossed,
+That I, more sorry now than I was then,
+May live on to be sorry for his ghost.
+
+You knew him, and you must have known his eyes, --
+How deep they were, and what a velvet light
+Came out of them when anger or surprise,
+Or laughter, or Francesca, made them bright.
+
+No, you will not forget such eyes, I think, --
+And you say nothing of them.  Very well.
+I wonder if all history's worth a wink,
+Sometimes, or if my tale be one to tell.
+
+For they began to lose their velvet light;
+Their fire grew dead without and small within;
+And many of you deplored the needless fight
+That somewhere in the dark there must have been.
+
+All fights are needless, when they're not our own,
+But Nimmo and Francesca never fought.
+Remember that; and when you are alone,
+Remember me -- and think what I have thought.
+
+Now, mind you, I say nothing of what was,
+Or never was, or could or could not be:
+Bring not suspicion's candle to the glass
+That mirrors a friend's face to memory.
+
+Of what you see, see all, -- but see no more;
+For what I show you here will not be there.
+The devil has had his way with paint before,
+And he's an artist, -- and you needn't stare.
+
+There was a painter and he painted well:
+He'd paint you Daniel in the lions' den,
+Beelzebub, Elaine, or William Tell.
+I'm coming back to Nimmo's eyes again.
+
+The painter put the devil in those eyes,
+Unless the devil did, and there he stayed;
+And then the lady fled from paradise,
+And there's your fact.  The lady was afraid.
+
+She must have been afraid, or may have been,
+Of evil in their velvet all the while;
+But sure as I'm a sinner with a skin,
+I'll trust the man as long as he can smile.
+
+I trust him who can smile and then may live
+In my heart's house, where Nimmo is today.
+God knows if I have more than men forgive
+To tell him; but I played, and I shall pay.
+
+I knew him then, and if I know him yet,
+I know in him, defeated and estranged,
+The calm of men forbidden to forget
+The calm of women who have loved and changed.
+
+But there are ways that are beyond our ways,
+Or he would not be calm and she be mute,
+As one by one their lost and empty days
+Pass without even the warmth of a dispute.
+
+God help us all when women think they see;
+God save us when they do.  I'm fair; but though
+I know him only as he looks to me,
+I know him, -- and I tell Francesca so.
+
+And what of Nimmo?  Little would you ask
+Of him, could you but see him as I can,
+At his bewildered and unfruitful task
+Of being what he was born to be -- a man.
+
+Better forget that I said anything
+Of what your tortured memory may disclose;
+I know him, and your worst remembering
+Would count as much as nothing, I suppose.
+
+Meanwhile, I trust him; and I know his way
+Of trusting me, as always in his youth.
+I'm painting here a better man, you say,
+Than I, the painter; and you say the truth.
+
+
+
+
+Peace on Earth
+
+
+
+He took a frayed hat from his head,
+And "Peace on Earth" was what he said.
+"A morsel out of what you're worth,
+And there we have it:  Peace on Earth.
+Not much, although a little more
+Than what there was on earth before.
+I'm as you see, I'm Ichabod, --
+But never mind the ways I've trod;
+I'm sober now, so help me God."
+
+I could not pass the fellow by.
+"Do you believe in God?" said I;
+"And is there to be Peace on Earth?"
+
+"Tonight we celebrate the birth,"
+He said, "of One who died for men;
+The Son of God, we say.  What then?
+Your God, or mine?  I'd make you laugh
+Were I to tell you even half
+That I have learned of mine today
+Where yours would hardly seem to stay.
+Could He but follow in and out
+Some anthropoids I know about,
+The God to whom you may have prayed
+Might see a world He never made."
+
+"Your words are flowing full," said I;
+"But yet they give me no reply;
+Your fountain might as well be dry."
+
+"A wiser One than you, my friend,
+Would wait and hear me to the end;
+And for His eyes a light would shine
+Through this unpleasant shell of mine
+That in your fancy makes of me
+A Christmas curiosity.
+All right, I might be worse than that;
+And you might now be lying flat;
+I might have done it from behind,
+And taken what there was to find.
+Don't worry, for I'm not that kind.
+`Do I believe in God?'  Is that
+The price tonight of a new hat?
+Has He commanded that His name
+Be written everywhere the same?
+Have all who live in every place
+Identified His hidden face?
+Who knows but He may like as well
+My story as one you may tell?
+And if He show me there be Peace
+On Earth, as there be fields and trees
+Outside a jail-yard, am I wrong
+If now I sing Him a new song?
+Your world is in yourself, my friend,
+For your endurance to the end;
+And all the Peace there is on Earth
+Is faith in what your world is worth,
+And saying, without any lies,
+Your world could not be otherwise."
+
+"One might say that and then be shot,"
+I told him; and he said:  "Why not?"
+I ceased, and gave him rather more
+Than he was counting of my store.
+"And since I have it, thanks to you,
+Don't ask me what I mean to do,"
+Said he.  "Believe that even I
+Would rather tell the truth than lie --
+On Christmas Eve.  No matter why."
+
+His unshaved, educated face,
+His inextinguishable grace,
+And his hard smile, are with me still,
+Deplore the vision as I will;
+For whatsoever he be at,
+So droll a derelict as that
+Should have at least another hat.
+
+
+
+
+Late Summer
+
+  (Alcaics)
+
+
+
+Confused, he found her lavishing feminine
+Gold upon clay, and found her inscrutable;
+ And yet she smiled.  Why, then, should horrors
+Be as they were, without end, her playthings?
+
+And why were dead years hungrily telling her
+Lies of the dead, who told them again to her?
+ If now she knew, there might be kindness
+Clamoring yet where a faith lay stifled.
+
+A little faith in him, and the ruinous
+Past would be for time to annihilate,
+ And wash out, like a tide that washes
+Out of the sand what a child has drawn there.
+
+God, what a shining handful of happiness,
+Made out of days and out of eternities,
+ Were now the pulsing end of patience --
+Could he but have what a ghost had stolen!
+
+What was a man before him, or ten of them,
+While he was here alive who could answer them,
+ And in their teeth fling confirmations
+Harder than agates against an egg-shell?
+
+But now the man was dead, and would come again
+Never, though she might honor ineffably
+ The flimsy wraith of him she conjured
+Out of a dream with his wand of absence.
+
+And if the truth were now but a mummery,
+Meriting pride's implacable irony,
+ So much the worse for pride.  Moreover,
+Save her or fail, there was conscience always.
+
+Meanwhile, a few misgivings of innocence,
+Imploring to be sheltered and credited,
+ Were not amiss when she revealed them.
+Whether she struggled or not, he saw them.
+
+Also, he saw that while she was hearing him
+Her eyes had more and more of the past in them;
+ And while he told what cautious honor
+Told him was all he had best be sure of,
+
+He wondered once or twice, inadvertently,
+Where shifting winds were driving his argosies,
+ Long anchored and as long unladen,
+Over the foam for the golden chances.
+
+"If men were not for killing so carelessly,
+And women were for wiser endurances,"
+ He said, "we might have yet a world here
+Fitter for Truth to be seen abroad in;
+
+"If Truth were not so strange in her nakedness,
+And we were less forbidden to look at it,
+ We might not have to look."  He stared then
+Down at the sand where the tide threw forward
+
+Its cold, unconquered lines, that unceasingly
+Foamed against hope, and fell.  He was calm enough,
+ Although he knew he might be silenced
+Out of all calm; and the night was coming.
+
+"I climb for you the peak of his infamy
+That you may choose your fall if you cling to it.
+ No more for me unless you say more.
+All you have left of a dream defends you:
+
+"The truth may be as evil an augury
+As it was needful now for the two of us.
+ We cannot have the dead between us.
+Tell me to go, and I go."  -- She pondered:
+
+"What you believe is right for the two of us
+Makes it as right that you are not one of us.
+ If this be needful truth you tell me,
+Spare me, and let me have lies hereafter."
+
+She gazed away where shadows were covering
+The whole cold ocean's healing indifference.
+ No ship was coming.  When the darkness
+Fell, she was there, and alone, still gazing.
+
+
+
+
+An Evangelist's Wife
+
+
+
+"Why am I not myself these many days,
+You ask?  And have you nothing more to ask?
+I do you wrong?  I do not hear your praise
+To God for giving you me to share your task?
+
+"Jealous -- of Her?  Because her cheeks are pink,
+And she has eyes?  No, not if she had seven.
+If you should only steal an hour to think,
+Sometime, there might be less to be forgiven.
+
+"No, you are never cruel.  If once or twice
+I found you so, I could applaud and sing.
+Jealous of -- What?  You are not very wise.
+Does not the good Book tell you anything?
+
+"In David's time poor Michal had to go.
+Jealous of God?  Well, if you like it so."
+
+
+
+
+The Old King's New Jester
+
+
+
+You that in vain would front the coming order
+With eyes that meet forlornly what they must,
+And only with a furtive recognition
+See dust where there is dust, --
+Be sure you like it always in your faces,
+Obscuring your best graces,
+Blinding your speech and sight,
+Before you seek again your dusty places
+Where the old wrong seems right.
+
+Longer ago than cave-men had their changes
+Our fathers may have slain a son or two,
+Discouraging a further dialectic
+Regarding what was new;
+And after their unstudied admonition
+Occasional contrition
+For their old-fashioned ways
+May have reduced their doubts, and in addition
+Softened their final days.
+
+Farther away than feet shall ever travel
+Are the vague towers of our unbuilded State;
+But there are mightier things than we to lead us,
+That will not let us wait.
+And we go on with none to tell us whether
+Or not we've each a tether
+Determining how fast or far we go;
+And it is well, since we must go together,
+That we are not to know.
+
+If the old wrong and all its injured glamour
+Haunts you by day and gives your night no peace,
+You may as well, agreeably and serenely,
+Give the new wrong its lease;
+For should you nourish a too fervid yearning
+For what is not returning,
+The vicious and unfused ingredient
+May give you qualms -- and one or two concerning
+The last of your content.
+
+
+
+
+Lazarus
+
+
+
+"No, Mary, there was nothing -- not a word.
+Nothing, and always nothing.  Go again
+Yourself, and he may listen -- or at least
+Look up at you, and let you see his eyes.
+I might as well have been the sound of rain,
+A wind among the cedars, or a bird;
+Or nothing.  Mary, make him look at you;
+And even if he should say that we are nothing,
+To know that you have heard him will be something.
+And yet he loved us, and it was for love
+The Master gave him back.  Why did He wait
+So long before He came?  Why did He weep?
+I thought He would be glad -- and Lazarus --
+To see us all again as He had left us --
+All as it was, all as it was before."
+
+Mary, who felt her sister's frightened arms
+Like those of someone drowning who had seized her,
+Fearing at last they were to fail and sink
+Together in this fog-stricken sea of strangeness,
+Fought sadly, with bereaved indignant eyes,
+To find again the fading shores of home
+That she had seen but now could see no longer.
+Now she could only gaze into the twilight,
+And in the dimness know that he was there,
+Like someone that was not.  He who had been
+Their brother, and was dead, now seemed alive
+Only in death again -- or worse than death;
+For tombs at least, always until today,
+Though sad were certain.  There was nothing certain
+For man or God in such a day as this;
+For there they were alone, and there was he --
+Alone; and somewhere out of Bethany,
+The Master -- who had come to them so late,
+Only for love of them and then so slowly,
+And was for their sake hunted now by men
+Who feared Him as they feared no other prey --
+For the world's sake was hidden.  "Better the tomb
+For Lazarus than life, if this be life,"
+She thought; and then to Martha, "No, my dear,"
+She said aloud; "not as it was before.
+Nothing is ever as it was before,
+Where Time has been.  Here there is more than Time;
+And we that are so lonely and so far
+From home, since he is with us here again,
+Are farther now from him and from ourselves
+Than we are from the stars.  He will not speak
+Until the spirit that is in him speaks;
+And we must wait for all we are to know,
+Or even to learn that we are not to know.
+Martha, we are too near to this for knowledge,
+And that is why it is that we must wait.
+Our friends are coming if we call for them,
+And there are covers we'll put over him
+To make him warmer.  We are too young, perhaps,
+To say that we know better what is best
+Than he.  We do not know how old he is.
+If you remember what the Master said,
+Try to believe that we need have no fear.
+Let me, the selfish and the careless one,
+Be housewife and a mother for tonight;
+For I am not so fearful as you are,
+And I was not so eager."
+
+                          Martha sank
+Down at her sister's feet and there sat watching
+A flower that had a small familiar name
+That was as old as memory, but was not
+The name of what she saw now in its brief
+And infinite mystery that so frightened her
+That life became a terror.  Tears again
+Flooded her eyes and overflowed.  "No, Mary,"
+She murmured slowly, hating her own words
+Before she heard them, "you are not so eager
+To see our brother as we see him now;
+Neither is He who gave him back to us.
+I was to be the simple one, as always,
+And this was all for me."  She stared again
+Over among the trees where Lazarus,
+Who seemed to be a man who was not there,
+Might have been one more shadow among shadows,
+If she had not remembered.  Then she felt
+The cool calm hands of Mary on her face,
+And shivered, wondering if such hands were real.
+
+"The Master loved you as He loved us all,
+Martha; and you are saying only things
+That children say when they have had no sleep.
+Try somehow now to rest a little while;
+You know that I am here, and that our friends
+Are coming if I call."
+
+                        Martha at last
+Arose, and went with Mary to the door,
+Where they stood looking off at the same place,
+And at the same shape that was always there
+As if it would not ever move or speak,
+And always would be there.  "Mary, go now,
+Before the dark that will be coming hides him.
+I am afraid of him out there alone,
+Unless I see him; and I have forgotten
+What sleep is.  Go now -- make him look at you --
+And I shall hear him if he stirs or whispers.
+Go! -- or I'll scream and bring all Bethany
+To come and make him speak.  Make him say once
+That he is glad, and God may say the rest.
+Though He say I shall sleep, and sleep for ever,
+I shall not care for that . . . Go!"
+
+                                      Mary, moving
+Almost as if an angry child had pushed her,
+Went forward a few steps; and having waited
+As long as Martha's eyes would look at hers,
+Went forward a few more, and a few more;
+And so, until she came to Lazarus,
+Who crouched with his face hidden in his hands,
+Like one that had no face.  Before she spoke,
+Feeling her sister's eyes that were behind her
+As if the door where Martha stood were now
+As far from her as Egypt, Mary turned
+Once more to see that she was there.  Then, softly,
+Fearing him not so much as wondering
+What his first word might be, said, "Lazarus,
+Forgive us if we seemed afraid of you;"
+And having spoken, pitied her poor speech
+That had so little seeming gladness in it,
+So little comfort, and so little love.
+
+There was no sign from him that he had heard,
+Or that he knew that she was there, or cared
+Whether she spoke to him again or died
+There at his feet.  "We love you, Lazarus,
+And we are not afraid.  The Master said
+We need not be afraid.  Will you not say
+To me that you are glad?  Look, Lazarus!
+Look at my face, and see me.  This is Mary."
+
+She found his hands and held them.  They were cool,
+Like hers, but they were not so calm as hers.
+Through the white robes in which his friends had wrapped him
+When he had groped out of that awful sleep,
+She felt him trembling and she was afraid.
+At last he sighed; and she prayed hungrily
+To God that she might have again the voice
+Of Lazarus, whose hands were giving her now
+The recognition of a living pressure
+That was almost a language.  When he spoke,
+Only one word that she had waited for
+Came from his lips, and that word was her name.
+
+"I heard them saying, Mary, that He wept
+Before I woke."  The words were low and shaken,
+Yet Mary knew that he who uttered them
+Was Lazarus; and that would be enough
+Until there should be more . . . "Who made Him come,
+That He should weep for me? . . .  Was it you, Mary?"
+The questions held in his incredulous eyes
+Were more than she would see.  She looked away;
+But she had felt them and should feel for ever,
+She thought, their cold and lonely desperation
+That had the bitterness of all cold things
+That were not cruel.  "I should have wept," he said,
+"If I had been the Master. . . ."
+
+                                   Now she could feel
+His hands above her hair -- the same black hair
+That once he made a jest of, praising it,
+While Martha's busy eyes had left their work
+To flash with laughing envy.  Nothing of that
+Was to be theirs again; and such a thought
+Was like the flying by of a quick bird
+Seen through a shadowy doorway in the twilight.
+For now she felt his hands upon her head,
+Like weights of kindness:  "I forgive you, Mary. . . .
+You did not know -- Martha could not have known --
+Only the Master knew. . . .  Where is He now?
+Yes, I remember.  They came after Him.
+May the good God forgive Him. . . .  I forgive Him.
+I must; and I may know only from Him
+The burden of all this. . . .  Martha was here --
+But I was not yet here.  She was afraid. . . .
+Why did He do it, Mary?  Was it -- you?
+Was it for you? . . .  Where are the friends I saw?
+Yes, I remember.  They all went away.
+I made them go away. . . .  Where is He now? . . .
+What do I see down there?  Do I see Martha --
+Down by the door? . . .  I must have time for this."
+
+Lazarus looked about him fearfully,
+And then again at Mary, who discovered
+Awakening apprehension in his eyes,
+And shivered at his feet.  All she had feared
+Was here; and only in the slow reproach
+Of his forgiveness lived his gratitude.
+Why had he asked if it was all for her
+That he was here?  And what had Martha meant?
+Why had the Master waited?  What was coming
+To Lazarus, and to them, that had not come?
+What had the Master seen before He came,
+That He had come so late?
+
+                           "Where is He, Mary?"
+Lazarus asked again.  "Where did He go?"
+Once more he gazed about him, and once more
+At Mary for an answer.  "Have they found Him?
+Or did He go away because He wished
+Never to look into my eyes again? . . .
+That, I could understand. . . .  Where is He, Mary?"
+
+"I do not know," she said.  "Yet in my heart
+I know that He is living, as you are living --
+Living, and here.  He is not far from us.
+He will come back to us and find us all --
+Lazarus, Martha, Mary -- everything --
+All as it was before.  Martha said that.
+And He said we were not to be afraid."
+Lazarus closed his eyes while on his face
+A tortured adumbration of a smile
+Flickered an instant.  "All as it was before,"
+He murmured wearily.  "Martha said that;
+And He said you were not to be afraid . . .
+Not you . . .  Not you . . .  Why should you be afraid?
+Give all your little fears, and Martha's with them,
+To me; and I will add them unto mine,
+Like a few rain-drops to Gennesaret."
+
+"If you had frightened me in other ways,
+Not willing it," Mary said, "I should have known
+You still for Lazarus.  But who is this?
+Tell me again that you are Lazarus;
+And tell me if the Master gave to you
+No sign of a new joy that shall be coming
+To this house that He loved.  Are you afraid?
+Are you afraid, who have felt everything --
+And seen . . . ?"
+
+                   But Lazarus only shook his head,
+Staring with his bewildered shining eyes
+Hard into Mary's face.  "I do not know,
+Mary," he said, after a long time.
+"When I came back, I knew the Master's eyes
+Were looking into mine.  I looked at His,
+And there was more in them than I could see.
+At first I could see nothing but His eyes;
+Nothing else anywhere was to be seen --
+Only His eyes.  And they looked into mine --
+Long into mine, Mary, as if He knew."
+
+Mary began to be afraid of words
+As she had never been afraid before
+Of loneliness or darkness, or of death,
+But now she must have more of them or die:
+"He cannot know that there is worse than death,"
+She said.  "And you . . ."
+
+                            "Yes, there is worse than death."
+Said Lazarus; "and that was what He knew;
+And that is what it was that I could see
+This morning in his eyes.  I was afraid,
+But not as you are.  There is worse than death,
+Mary; and there is nothing that is good
+For you in dying while you are still here.
+Mary, never go back to that again.
+You would not hear me if I told you more,
+For I should say it only in a language
+That you are not to learn by going back.
+To be a child again is to go forward --
+And that is much to know.  Many grow old,
+And fade, and go away, not knowing how much
+That is to know.  Mary, the night is coming,
+And there will soon be darkness all around you.
+Let us go down where Martha waits for us,
+And let there be light shining in this house."
+
+He rose, but Mary would not let him go:
+"Martha, when she came back from here, said only
+That she heard nothing.  And have you no more
+For Mary now than you had then for Martha?
+Is Nothing, Lazarus, all you have for me?
+Was Nothing all you found where you have been?
+If that be so, what is there worse than that --
+Or better -- if that be so?  And why should you,
+With even our love, go the same dark road over?"
+
+"I could not answer that, if that were so,"
+Said Lazarus, -- "not even if I were God.
+Why should He care whether I came or stayed,
+If that were so?  Why should the Master weep --
+For me, or for the world, -- or save Himself
+Longer for nothing?  And if that were so,
+Why should a few years' more mortality
+Make Him a fugitive where flight were needless,
+Had He but held his peace and given his nod
+To an old Law that would be new as any?
+I cannot say the answer to all that;
+Though I may say that He is not afraid,
+And that it is not for the joy there is
+In serving an eternal Ignorance
+Of our futility that He is here.
+Is that what you and Martha mean by Nothing?
+Is that what you are fearing?  If that be so,
+There are more weeds than lentils in your garden.
+And one whose weeds are laughing at his harvest
+May as well have no garden; for not there
+Shall he be gleaning the few bits and orts
+Of life that are to save him.  For my part,
+I am again with you, here among shadows
+That will not always be so dark as this;
+Though now I see there's yet an evil in me
+That made me let you be afraid of me.
+No, I was not afraid -- not even of life.
+I thought I was . . . I must have time for this;
+And all the time there is will not be long.
+I cannot tell you what the Master saw
+This morning in my eyes.  I do not know.
+I cannot yet say how far I have gone,
+Or why it is that I am here again,
+Or where the old road leads.  I do not know.
+I know that when I did come back, I saw
+His eyes again among the trees and faces --
+Only His eyes; and they looked into mine --
+Long into mine -- long, long, as if He knew."
+
+
+
+
+
+End of this Project Gutenberg Etext of The Three Taverns
+

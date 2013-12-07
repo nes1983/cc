@@ -1,0 +1,5259 @@
+***Project Gutenberg Etext of The Life of Sir John Oldcastle***
+Attributed in part to William Shakespeare.
+
+PG has multiple editions of William Shakespeare's Complete Works
+
+
+Copyright laws are changing all over the world, be sure to check
+the copyright laws for your country before posting these files!!
+
+Please take a look at the important information in this header.
+We encourage you to keep this file on your own disk, keeping an
+electronic path open for the next readers.  Do not remove this.
+
+
+**Welcome To The World of Free Plain Vanilla Electronic Texts**
+
+**Etexts Readable By Both Humans and By Computers, Since 1971**
+
+*These Etexts Prepared By Hundreds of Volunteers and Donations*
+
+Information on contacting Project Gutenberg to get Etexts, and
+further information is included below.  We need your donations.
+
+
+The Life of Sir John Oldcastle
+
+by William Shakespeare [Apocrypha]
+
+June, 1999 [Etext #1788]
+
+
+***Project Gutenberg Etext of The Life of Sir John Oldcastle***
+*****This file should be named 1ws5110.txt or 1ws5110.zip******
+
+Corrected EDITIONS of our etexts get a new NUMBER, 1ws5111.txt
+VERSIONS based on separate sources get new LETTER, 1ws5110a.txt
+
+
+This Etext prepared by Tony Adam
+anthony-adam@tamu.edu
+
+
+Project Gutenberg Etexts are usually created from multiple editions,
+all of which are in the Public Domain in the United States, unless a
+copyright notice is included.  Therefore, we usually do NOT! keep
+these books in compliance with any particular paper edition.
+
+
+We are now trying to release all our books one month in advance
+of the official release dates, leaving time for better editing.
+
+Please note:  neither this list nor its contents are final till
+midnight of the last day of the month of any such announcement.
+The official release date of all Project Gutenberg Etexts is at
+Midnight, Central Time, of the last day of the stated month.  A
+preliminary version may often be posted for suggestion, comment
+and editing by those who wish to do so.  To be sure you have an
+up to date first edition [xxxxx10x.xxx] please check file sizes
+in the first week of the next month.  Since our ftp program has
+a bug in it that scrambles the date [tried to fix and failed] a
+look at the file size will have to do, but we will try to see a
+new copy has at least one byte more or less.
+
+
+Information about Project Gutenberg (one page)
+
+We produce about two million dollars for each hour we work.  The
+time it takes us, a rather conservative estimate, is fifty hours
+to get any etext selected, entered, proofread, edited, copyright
+searched and analyzed, the copyright letters written, etc.  This
+projected audience is one hundred million readers.  If our value
+per text is nominally estimated at one dollar then we produce $2
+million dollars per hour this year as we release thirty-six text
+files per month, or 432 more Etexts in 1999 for a total of 2000+
+If these reach just 10% of the computerized population, then the
+total should reach over 200 billion Etexts given away this year.
+
+The Goal of Project Gutenberg is to Give Away One Trillion Etext
+Files by December 31, 2001.  [10,000 x 100,000,000 = 1 Trillion]
+This is ten thousand titles each to one hundred million readers,
+which is only ~5% of the present number of computer users.
+
+At our revised rates of production, we will reach only one-third
+of that goal by the end of 2001, or about 3,333 Etexts unless we
+manage to get some real funding; currently our funding is mostly
+from Michael Hart's salary at Carnegie-Mellon University, and an
+assortment of sporadic gifts; this salary is only good for a few
+more years, so we are looking for something to replace it, as we
+don't want Project Gutenberg to be so dependent on one person.
+
+We need your donations more than ever!
+
+
+All donations should be made to "Project Gutenberg/CMU": and are
+tax deductible to the extent allowable by law.  (CMU = Carnegie-
+Mellon University).
+
+For these and other matters, please mail to:
+
+Project Gutenberg
+P. O. Box  2782
+Champaign, IL 61825
+
+When all other email fails. . .try our Executive Director:
+Michael S. Hart <hart@pobox.com>
+hart@pobox.com forwards to hart@prairienet.org and archive.org
+if your mail bounces from archive.org, I will still see it, if
+it bounces from prairienet.org, better resend later on. . . .
+
+We would prefer to send you this information by email.
+
+******
+
+To access Project Gutenberg etexts, use any Web browser
+to view http://promo.net/pg.  This site lists Etexts by
+author and by title, and includes information about how
+to get involved with Project Gutenberg.  You could also
+download our past Newsletters, or subscribe here.  This
+is one of our major sites, please email hart@pobox.com,
+for a more complete list of our various sites.
+
+To go directly to the etext collections, use FTP or any
+Web browser to visit a Project Gutenberg mirror (mirror
+sites are available on 7 continents; mirrors are listed
+at http://promo.net/pg).
+
+Mac users, do NOT point and click, typing works better.
+
+Example FTP session:
+
+ftp sunsite.unc.edu
+login: anonymous
+password: your@login
+cd pub/docs/books/gutenberg
+cd etext90 through etext99
+dir [to see files]
+get or mget [to get files. . .set bin for zip files]
+GET GUTINDEX.??  [to get a year's listing of books, e.g., GUTINDEX.99]
+GET GUTINDEX.ALL [to get a listing of ALL books]
+
+***
+
+**Information prepared by the Project Gutenberg legal advisor**
+
+(Three Pages)
+
+
+***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN ETEXTS**START***
+Why is this "Small Print!" statement here?  You know: lawyers.
+They tell us you might sue us if there is something wrong with
+your copy of this etext, even if you got it for free from
+someone other than us, and even if what's wrong is not our
+fault.  So, among other things, this "Small Print!" statement
+disclaims most of our liability to you.  It also tells you how
+you can distribute copies of this etext if you want to.
+
+*BEFORE!* YOU USE OR READ THIS ETEXT
+By using or reading any part of this PROJECT GUTENBERG-tm
+etext, you indicate that you understand, agree to and accept
+this "Small Print!" statement.  If you do not, you can receive
+a refund of the money (if any) you paid for this etext by
+sending a request within 30 days of receiving it to the person
+you got it from.  If you received this etext on a physical
+medium (such as a disk), you must return it with your request.
+
+ABOUT PROJECT GUTENBERG-TM ETEXTS
+This PROJECT GUTENBERG-tm etext, like most PROJECT GUTENBERG-
+tm etexts, is a "public domain" work distributed by Professor
+Michael S. Hart through the Project Gutenberg Association at
+Carnegie-Mellon University (the "Project").  Among other
+things, this means that no one owns a United States copyright
+on or for this work, so the Project (and you!) can copy and
+distribute it in the United States without permission and
+without paying copyright royalties.  Special rules, set forth
+below, apply if you wish to copy and distribute this etext
+under the Project's "PROJECT GUTENBERG" trademark.
+
+To create these etexts, the Project expends considerable
+efforts to identify, transcribe and proofread public domain
+works.  Despite these efforts, the Project's etexts and any
+medium they may be on may contain "Defects".  Among other
+things, Defects may take the form of incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged
+disk or other etext medium, a computer virus, or computer
+codes that damage or cannot be read by your equipment.
+
+LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+But for the "Right of Replacement or Refund" described below,
+[1] the Project (and any other party you may receive this
+etext from as a PROJECT GUTENBERG-tm etext) disclaims all
+liability to you for damages, costs and expenses, including
+legal fees, and [2] YOU HAVE NO REMEDIES FOR NEGLIGENCE OR
+UNDER STRICT LIABILITY, OR FOR BREACH OF WARRANTY OR CONTRACT,
+INCLUDING BUT NOT LIMITED TO INDIRECT, CONSEQUENTIAL, PUNITIVE
+OR INCIDENTAL DAMAGES, EVEN IF YOU GIVE NOTICE OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+If you discover a Defect in this etext within 90 days of
+receiving it, you can receive a refund of the money (if any)
+you paid for it by sending an explanatory note within that
+time to the person you received it from.  If you received it
+on a physical medium, you must return it with your note, and
+such person may choose to alternatively give you a replacement
+copy.  If you received it electronically, such person may
+choose to alternatively give you a second opportunity to
+receive it electronically.
+
+THIS ETEXT IS OTHERWISE PROVIDED TO YOU "AS-IS".  NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
+TO THE ETEXT OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Some states do not allow disclaimers of implied warranties or
+the exclusion or limitation of consequential damages, so the
+above disclaimers and exclusions may not apply to you, and you
+may have other legal rights.
+
+INDEMNITY
+You will indemnify and hold the Project, its directors,
+officers, members and agents harmless from all liability, cost
+and expense, including legal fees, that arise directly or
+indirectly from any of the following that you do or cause:
+[1] distribution of this etext, [2] alteration, modification,
+or addition to the etext, or [3] any Defect.
+
+DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+You may distribute copies of this etext electronically, or by
+disk, book or any other medium if you either delete this
+"Small Print!" and all other references to Project Gutenberg,
+or:
+
+[1]  Only give exact copies of it.  Among other things, this
+     requires that you do not remove, alter or modify the
+     etext or this "small print!" statement.  You may however,
+     if you wish, distribute this etext in machine readable
+     binary, compressed, mark-up, or proprietary form,
+     including any form resulting from conversion by word pro-
+     cessing or hypertext software, but only so long as
+     *EITHER*:
+
+     [*]  The etext, when displayed, is clearly readable, and
+          does *not* contain characters other than those
+          intended by the author of the work, although tilde
+          (~), asterisk (*) and underline (_) characters may
+          be used to convey punctuation intended by the
+          author, and additional characters may be used to
+          indicate hypertext links; OR
+
+     [*]  The etext may be readily converted by the reader at
+          no expense into plain ASCII, EBCDIC or equivalent
+          form by the program that displays the etext (as is
+          the case, for instance, with most word processors);
+          OR
+
+     [*]  You provide, or agree to also provide on request at
+          no additional cost, fee or expense, a copy of the
+          etext in its original plain ASCII form (or in EBCDIC
+          or other equivalent proprietary form).
+
+[2]  Honor the etext refund and replacement provisions of this
+     "Small Print!" statement.
+
+[3]  Pay a trademark license fee to the Project of 20% of the
+     net profits you derive calculated using the method you
+     already use to calculate your applicable taxes.  If you
+     don't derive profits, no royalty is due.  Royalties are
+     payable to "Project Gutenberg Association/Carnegie-Mellon
+     University" within the 60 days following each
+     date you prepare (or were legally required to prepare)
+     your annual (or equivalent periodic) tax return.
+
+WHAT IF YOU *WANT* TO SEND MONEY EVEN IF YOU DON'T HAVE TO?
+The Project gratefully accepts contributions in money, time,
+scanning machines, OCR software, public domain etexts, royalty
+free copyright licenses, and every other sort of contribution
+you can think of.  Money should be paid to "Project Gutenberg
+Association / Carnegie-Mellon University".
+
+*END*THE SMALL PRINT! FOR PUBLIC DOMAIN ETEXTS*Ver.04.29.93*END*
+
+
+
+
+
+This Etext prepared by Tony Adam
+anthony-adam@tamu.edu
+
+
+
+
+
+The True and Honorable History of the Life of Sir John Oldcastle, 
+the Good Lord Cobham.  Attributed in part to William Shakespeare.
+
+
+
+The Actors Names in the History of Sir John Oldcastle.
+
+King Henry the Fifth.
+Sir John Old-castle, Lord Cobham.
+Harpoole, Servant to the Lord Cobham.
+Lord Herbert, with Gough his man.
+Lord Powis, with Owen and Davy his men.
+The Mayor of Hereford, and Sheriff of Herefordshire, with Bailiffs
+  and Servants.
+Two Judges of Assize.
+The Bishop of Rochester and Clun his Sumner.
+Sir John the Parson of Wrotham, and Doll his Concubine.
+The Duke of Suffolk.
+The Earl of Huntington.
+The Earl of Cambridge.
+Lord Scroop and Lord Grey.
+Chartres the French Agent.
+Sir Roger Acton.
+Sir Richard Lee.
+M. Bourn, M. Beverly, and Murley the Brewer of Dunstable, rebels.
+M. Butler, Gentleman of the Privy Chamber.
+Lady Cobham and Lady Powis.
+Cromer, Sheriff of Kent.
+Lord Warden of the Cinque Ports.
+Lieutenant of the Tower.
+The Mayor, Constable, and Gaoler of S. Albans.
+A Kentish Constable and an Ale-man.
+Soldiers and old men begging.
+Dick and Tom, servants to Murley.
+An Irishman.
+An Host, Hostler, a Carrier and Kate.
+
+
+
+THE PROLOGUE.
+
+The doubtful Title (Gentlemen) prefixt
+Upon the Argument we have in hand,
+May breed suspence, and wrongfully disturb
+The peaceful quiet of your settled thoughts.
+To stop which scruple, let this brief suffice:
+It is no pampered glutton we present,
+Nor aged Counsellor to youthful sin,
+But one, whose virtue shone above the rest,
+A valiant Martyr and a virtuous peer;
+In whose true faith and loyalty expressed
+Unto his sovereign, and his country's weal,
+We strive to pay that tribute of our Love,
+Your favours merit.  Let fair Truth be graced,
+Since forged invention former time defaced.
+
+
+ACT I. SCENE I. Hereford. A street.
+
+[Enter Lord Herbert, Lord Powis, Owen, Gough, Davy,
+and several other followers of the lords Herbert and Powis;
+they fight.  In the fight, enter the Sheriff and two of his men.]
+
+SHERIFF.
+My Lords, I charge ye in his Highness' name,
+To keep the peace, you, and your followers.
+
+HERBERT.
+Good Master Sheriff, look unto your self.
+
+POWIS.
+Do so, for we have other business.
+
+[Profer to fight again.]
+
+SHERIFF.
+Will ye disturb the Judges, and the Assize?
+Hear the King's proclamation, ye were best.
+
+POWIS.
+Hold then, let's hear it.
+
+HERBERT.
+But be brief, ye were best.
+
+BAILIFF.
+Oyes!
+
+DAVY.
+Cousin, make shorter O, or shall mar your Yes.
+
+BAILIFF.
+Oyes!
+
+OWEN.
+What, has her nothing to say but O yes?
+
+BAILIFF.
+Oyes!
+
+DAVY.
+O nay! pye Cosse plut down with her, down with her!
+A Pawesse! a Pawesse!
+
+GOUGH.
+A Herbert! a Herbert! and down with Powis!
+
+[Helter skelter again.]
+
+SHERIFF.
+Hold, in the King's name, hold.
+
+OWEN.
+Down i' tha knave's name, down.
+
+[In this fight, the Bailiff is knocked down, and the Sheriff
+and the other run away.]
+
+HERBERT.
+Powesse, I think thy Welsh and thou do smart.
+
+POWIS.
+Herbert, I think my sword came near thy heart.
+
+HERBERT.
+Thy heart's best blood shall pay the loss of mine.
+
+GOUGH.
+A Herbert! a Herbert!
+
+
+DAVY.
+A Pawesse! a Pawesse!
+
+[As they are lifting their weapons, enter the Mayor of 
+Hereford, and his Officers and Towns-men with clubs.]
+
+MAYOR.
+My Lords, as you are liege men to the Crown,
+True noblemen, and subjects to the King,
+Attend his Highness' proclamation,
+Commanded by the Judges of Assize,
+For keeping peace at this assembly.
+
+HERBERT.
+Good Master Mayor of Hereford be brief.
+
+MAYOR.
+Sergeant, without the ceremony of Oyes,
+Pronounce aloud the proclamation.
+
+SERVANT.
+The King's Justices, perceiving what public mischief may ensue
+this private quarrel, in his majesty's name do straightly charge 
+and command all persons, of what degree soever, to depart this
+city of Hereford, except such as are bound to give attendance at
+this Assize, and that no man presume to wear any weapon,
+especially welsh-hooks, forest bills--
+
+OWEN.
+Haw, no pill nor wells hoog? ha?
+
+MAYOR.
+Peace, and hear the proclamation.
+
+SERVANT.
+And that the Lord Powesse do presently disperse and discharge
+his retinue, and depart the city in the King's peace, he and his
+followers, on pain of imprisonment.
+
+DAVY.
+Haw? pud her Lord Pawesse in prison? A Pawes!
+A Pawesse! cossone live and tie with her Lord.
+
+GOUGH.
+A Herbert! a Herbert!
+
+
+[In this fight the Lord Herbert is wounded, and falls to the
+ground; the Mayor and his company go away, crying clubs;
+Powesse runs away; Gough and other of Herbert's faction
+busy themselves about Herbert; enter the two Judges in
+their robes, the Sheriff and his Bailiffs afore them, &c.]
+
+FIRST JUDGE.
+Where's the Lord Herbert? is he hurt or slain?
+
+SHERIFF.
+He's here, my Lord.
+
+SECOND JUDGE.
+How fares his Lordship, friends?
+
+GOUGH.
+Mortally wounded, speechless; he cannot live.
+
+FIRST JUDGE.
+Convey him hence; let not his wounds take air,
+And get him dressed with expedition.
+
+[Ex. Herbert & Gough.]
+
+Master Mayor of Hereford, Master Shrieve o' the shire,
+Commit Lord Powesse to safe custody,
+To answer the disturbance of the peace,
+Lord Herbert's peril, and his high contempt
+Of us, and you the King's commissioners.
+See it be done with care and diligence.
+
+SHERIFF.
+Please it your Lordship, my Lord Powesse is gone
+Past all recovery.
+
+SECOND JUDGE.
+Yet let search be made,
+To apprehend his followers that are left.
+
+SHERIFF.
+There are some of them.  Sirs, lay hold of them.
+
+OWEN.
+Of us? and why? what has her done, I pray you?
+
+SHERIFF.
+Disarm them, Bailiffs.
+
+MAYOR.
+Officers, assist.
+
+DAVY.
+Hear you, Lor shudge, what resson is for this?
+
+OWEN.
+Cosson pe puse for fighting for our Lord?
+
+FIRST JUDGE.
+Away with them.
+
+DAVY.
+Harg you, my Lord.
+
+OWEN.
+Gough my Lord Herbert's man's a shitten kanave.
+
+DAVY.
+Ise live and tie in good quarrel.
+
+OWEN.
+Pray you do shustice; let all be preson.
+
+DAVY.
+Prison! no.
+Lord shudge, I wool give you pale, good suerty.
+
+SECOND JUDGE.
+What Bail? what sureties?
+
+DAVY.
+Her coozin ap Ries, ap Evan, ap Morris, ap Morgan, ap
+Lluellyn, ap Madoc, ap Meredith, ap Griffen, ap Davy, ap
+Owen, ap Shinken Shones.
+
+SECOND JUDGE.
+Two of the most sufficient are ynow.
+
+SHERIFF.
+And 't please your Lordship, these are all but one.
+
+FIRST JUDGE.
+To Jail with them, and the Lord Herbert's men;
+We'll talk with them, when the Assize is done.
+
+[Exeunt.]
+
+Riotous, audacious, and unruly Grooms,
+Must we be forced to come from the Bench,
+To quiet brawls, which every Constable
+In other civil places can suppress?
+
+SECOND JUDGE.
+What was the quarrel that caused all this stir?
+
+SHERIFF.
+About religion, as I heard, my Lord.
+Lord Powesse detracted from the power of Rome,
+Affirming Wickliffe's doctrine to be true,
+And Rome's erroneous.  Hot reply was made
+By the lord Herbert, they were traitors all
+That would maintain it:  Powesse answered,
+They were as true, as noble, and as wise
+As he, that would defend it with their lives;
+He named for instance sir John Old-castle
+The Lord Cobham:  Herbert replied again,
+"He, thou, and all are traitors that so hold."
+The lie was given, the several factions drawn,
+And so enraged, that we could not appease it.
+
+FIRST JUDGE.
+This case concerns the King's prerogative,
+And's dangerous to the State and common wealth.
+Gentlemen, Justices, master Mayor, and master Shrieve,
+It doth behoove us all, and each of us
+In general and particular, to have care
+For suppressing of all mutinies,
+And all assemblies, except soldiers' musters
+For the King's preparation into France.
+We hear of secret conventicles made,
+And there is doubt of some conspiracies,
+Which may break out into rebellious arms
+When the King's gone, perchance before he go:
+Note as an instance, this one perilous fray;
+What factions might have grown on either part,
+To the destruction of the King and Realm.
+Yet, in my conscience, sir John Old-castle,
+Innocent of it, only his name was used.
+We, therefore, from his Highness give this charge:
+You, master Mayor, look to your citizens;
+You, master Sheriff, unto your shire; and you
+As Justices, in every one's precinct,
+There be no meetings.  When the vulgar sort
+Sit on their Ale-bench, with their cups and cans,
+Matters of state be not their common talk,
+Nor pure religion by their lips profaned.
+Let us return unto the Bench again,
+And there examine further of this fray.
+
+[Enter a Bailiff and a Servant.]
+
+SHERIFF.
+Sirs, have ye taken the lord Powesse yet?
+
+BAILIFF.
+No, nor heard of him.
+
+SERVANT.
+No, he's gone far enough.
+
+SECOND JUDGE.
+They that are left behind shall answer all.
+
+[Exeunt.]
+
+
+ACT I. SCENE II. Eltham. An antechamber in the
+palace.
+
+[Enter Suffolk, Bishop of Rochester, Butler, parson of
+Wrotham.]
+
+SUFFOLK.
+Now, my lord Bishop, take free liberty
+To speak your mind:  what is your suit to us?
+
+BISHOP.
+My noble Lord, no more than what you know,
+And have been oftentimes invested with:
+Grievous complaints have past between the lips
+Of envious persons to upbraid the Clergy,
+Some carping at the livings which we have,
+And others spurning at the ceremonies
+That are of ancient custom in the church.
+Amongst the which, Lord Cobham is a chief:
+What inconvenience may proceed hereof,
+Both to the King and to the commonwealth,
+May easily be discerned, when like a frenzy
+This innovation shall possess their minds.
+These upstarts will have followers, to uphold
+Their damned opinion, more than Harry shall
+To undergo his quarrel gainst the French.
+
+SUFFOLK.
+What proof is there against them to be had,
+That what you say the law may justify?
+
+BISHOP.
+They give themselves the name of Protestants,
+And meet in fields and solitary groves.
+
+SIR JOHN.
+Was ever heard, my Lord, the like til now?
+That thieves and rebels--sblood, heretics,
+Plain heretics, I'll stand tooth to their teeth--
+Should have, to colour their vile practices,
+A title of such worth as Protestant?
+
+[Enter one with a letter.]
+
+SUFFOLK.
+O, but you must not swear; it ill becomes
+One of your coat to rap out bloody oaths.
+
+BISHOP.
+Pardon him, good my Lord, it is his zeal;
+An honest country prelate, who laments
+To see such foul disorder in the church.
+
+SIR JOHN.
+There's one--they call him Sir John Old-castle--
+He has not his name for naught:  for like a castle
+Doth he encompass them within his walls;
+But till that castle be subverted quite,
+We ne'er shall be at quiet in the realm.
+
+BISHOP.
+That is not our suit, my Lord, that he be ta'en,
+And brought in question for his heresy.
+Beside, two letters brought me out of Wales,
+Wherein my Lord Hereford writes to me,
+What tumult and sedition was begun,
+About the Lord Cobham at the Sises there,
+(For they had much ado the calm the rage),
+And that the valiant Herbert is there slain.
+
+SUFFOLK.
+A fire that must be quenched.  Well, say no more,
+The King anon goes to the counsel chamber,
+There to debate of matters touching France:
+As he doth pass by, I'll inform his grace
+Concerning your petition:  Master Butler,
+If I forget, do you remember me.
+
+BUTLER.
+I will, my Lord.
+
+[Offer him a purse.]
+
+BISHOP.
+Not for a recompence,
+But as a token of our love to you,
+By me my Lords of the clergy do present
+This purse, and in it full a thousand Angels,
+Praying your Lordship to accept their gift.
+
+SUFFOLK.
+I thank them, my Lord Bishop, for their love,
+But will not take they money; if you please
+To give it to this gentleman, you may.
+
+BISHOP.
+Sir, then we crave your furtherance herein.
+
+BUTLER.
+The best I can, my Lord of Rochester.
+
+BISHOP.
+Nay, pray ye take it; trust me but you shall.
+
+SIR JOHN.
+--Were ye all thee upon New Market heath,
+You should not need strain curtsey who should ha't;
+Sir John would quickly rid ye of that care.
+
+SUFFOLK.
+The King is coming.  Fear ye not, my Lord;
+The very first thing I will break with him
+Shall be about your matter.
+
+[Enter King Henry and Huntington in talk.]
+
+KING.
+My Lord of Suffolk,
+Was it not said the Clergy did refuse
+To lend us money toward our wars in France?
+
+SUFFOLK.
+It was, my Lord, but very wrongfully.
+
+KING.
+I know it was, for Huntington here tells me,
+They have been very bountiful of late.
+
+SUFFOLK.
+And still they vow, my gracious Lord, to be so,
+Hoping your majesty will think of them
+As of your loving subjects, and suppress
+All such malicious errors as begin
+To spot their calling, and disturb the church.
+
+KING.
+God else forbid:  why, Suffolk, is there
+Any new rupture to disquiet them?
+
+SUFFOLK.
+No new, my Lord; the old is great enough,
+And so increasing as, if not cut down,
+Will breed a scandal to your royal state,
+And set your Kingdom quickly in an uproar.
+The Kentish knight, Lord Cobham, in despite
+Of any law, or spiritual discipline,
+Maintains this upstart new religion still,
+And divers great assemblies by his means
+And private quarrels are commenced abroad,
+As by this letter more at large, my liege,
+Is made apparent.
+
+KING.
+We do find it here:
+There was in Wales a certain fray of late,
+Between two noblemen, but what of this?
+Follows it straight, Lord Cobham must be he
+Did cause the same?  I dare be sworn, good knight,
+He never dreamt of any such contention.
+
+BISHOP.
+But in his name the quarrel did begin,
+About the opinion which he held, my liege.
+
+KING.
+How if it did? was either he in place,
+To take part with them, or abet them in it?
+If brabling fellows, whose inkindled blood,
+Seethes in their fiery veins, will needs go fight,
+Making their quarrels of some words that past
+Either of you, or you, amongst their cups,
+Is the fault yours, or are they guilty of it?
+
+SUFFOLK.
+With pardon of your Highness, my dread lord,
+Such little sparks, neglected, may in time
+Grow to a might flame:  but that's not all;
+He doth, beside, maintain a strange religion,
+And will not be compelled to come to mass.
+
+BISHOP.
+We do beseech you, therefore, gracious prince,
+Without offence unto your majesty,
+We may be bold to use authority.
+
+KING.
+As how?
+
+BISHOP.
+To summon him unto the Arches,
+Where such offences have their punishment.
+
+KING.
+To answer personally? is that your meaning?
+
+BISHOP.
+It is, my lord.
+
+KING.
+How, if he appeal?
+
+BISHOP.
+He cannot, my Lord, in such a case as this.
+
+SUFFOLK.
+Not where Religion is the plea, my lord.
+
+KING.
+I took it always, that our self stood out,
+As a sufficient refuge, unto whom
+Not any but might lawfully appeal.
+But we'll not argue now upon that point.
+For Sir John Old-castle, whom you accuse,
+Let me entreat you to dispence awhile
+With your high title of pre-eminence.
+
+[In scorn.]
+
+Report did never yet condemn him so,
+But he hath always been reputed loyal:
+And in my knowledge I can say thus much,
+That he is virtuous, wise, and honourable.
+If any way his conscience be seduced,
+To waver in his faith, I'll send for him,
+And school him privately; if that serve not,
+Then afterward you may proceed against him.
+Butler, be you the messenger for us,
+And will him presently repair to court.
+
+[Exeunt.]
+
+SIR JOHN.
+How now, my lord, why stand you discontent?
+In sooth, me thinks the King hath well decreed.
+
+BISHOP.
+Yea, yea, sir John, if he would keep his word;
+But I perceive he favours him so much,
+As this will be to small effect, I fear.
+
+SIR JOHN.
+Why, then, I'll tell you what y'are bets to do:
+If you suspect the King will be but cold
+In reprehending him, send you a process too
+To serve upon him:  so you may be sure
+To make him answer 't, howsoe'er it fall.
+
+ BISHOP.
+And well remembered!  I will have it so.
+A Sumner shall be sent about it straight.
+
+[Exit.]
+
+SIR JOHN.
+Yea, do so.  In the mean space this remains
+For kind sir John of Wrotham, honest Jack.
+Me thinks the purse of gold the Bishop gave
+Made a good show; it had a tempting look.
+Beshrew me, but my fingers' ends to itch
+To be upon those rudduks.  Well, tis thus:
+I am not as the world does take me for;
+If ever wolf were clothed in sheep's coat,
+Then I am he,--old huddle and twang, yfaith,
+A priest in show, but in plain terms a thief.
+Yet, let me tell you too, an honest thief,
+One that will take it where it may be spared,
+And spend it freely in good fellowship.
+I have as many shapes as Proteus had,
+That still, when any villainy is done,
+There may be none suspect it was sir John.
+Besides, to comfort me,--for what's this life,
+Except the crabbed bitterness thereof,
+Be sweetened now and then with lechery?--
+I have my Doll, my concubine, as twere,
+To frolic with, a lusty bouncing girl.
+But whilst I loiter here, the gold may scape,
+And that must not be so.  It is mine own;
+Therefore, I'll meet him on his way to court,
+And shrive him of it:  there will be the sport.
+
+[Exit.]
+
+
+ACT I. SCENE III. Kent. An outer court before
+lord Cobham's house.
+
+[Enter three or four poor people: some soldiers, 
+some old men.]
+
+FIRST.
+God help!  God help! there's law for punishing,
+But there's no law for our necessity:
+There be more stocks to set poor soldiers in,
+Than there be houses to relieve them at.
+
+
+OLD MAN.
+Faith, housekeeping decays in every place,
+Even as Saint Peter writ, still worse and worse.
+
+FOURTH.
+Master mayor of Rochester has given commandment,
+that none shall go abroad out of the parish; and they
+have set an order down forsooth, what every poor
+householder must give towards our relief:  where
+there be some ceased, I may say to you, had almost
+as much need to beg as we.
+
+FIRST.
+It is a hard world the while.
+
+OLD MAN.
+If a poor man come to a door to ask for God's sake,
+they ask him for a license, or a certificate from a
+Justice.
+
+SECOND.
+Faith we have none but what we bear upon our bodies,
+our maimed limbs, God help us.
+
+FOURTH.
+And yet, as lame as I am, I'll with the king into France,
+if I can crawl but a shipboard.  I had rather be slain in
+France, than starve in England.
+
+OLD MAN.
+Ha, were I but as lusty as I was at the battle of
+Shrewbury, I would not do as I do:  but we are now 
+come to the good lord Cobham's, to the best man to
+the poor that is in all Kent.
+
+FOURTH.
+God bless him! there be but few such.
+
+[Enter Lord Cobham with Harpoole.]
+
+COBHAM.
+Thou peevish, froward man, what wouldst thou have?
+
+HARPOOLE.
+This pride, this pride, brings all to beggary.
+I served your father, and your grandfather;
+Show me such two men now!
+No!  No!  Your backs, your backs, the devil and pride,
+Has cut the throat of all good housekeeping.--
+They were the best Yeomens' masters,
+That ever were in England.
+
+COBHAM.
+Yea, except thou have a crew of seely knaves
+And sturdy rogues still feeding at my gate,
+There is no hospitality with thee.
+
+HARPOOLE.
+They may sit at the gat well enough, but the devil of
+any thing you give them, except they will eat stones.
+
+COBHAM.
+Tis long, then, of such hungry knaves as you.
+
+[Pointing to the beggars.]
+
+Yea, sir, here's your retinue; your guests be come.
+They know their hours, I warrant you.
+
+OLD MAN.
+God bless your honour!  God save the good Lord Cobham
+And all his house!
+
+SOLDIER.
+Good your honour, bestow your blessed alms
+Upon poor men.
+
+COBHAM.
+Now, sir, here be your Alms knights.  Now are you
+As safe as the Emperour.
+
+HARPOOLE.
+My Alms knights! nay, th' are yours.
+It is a shame for you, and I'll stand too 't;
+Your foolish alms maintains more vagabonds,
+Than all the noblemen in Kent beside.
+Out, you rogues, you knaves! work for your livings!--
+Alas, poor men!  O Lord, they may beg their hearts out,
+There's no more charity amongst men than amongst
+So many mastiff dogs!--What make you here,
+You needy knaves?  Away, away, you villains.
+
+
+SECOND SOLDIER.
+I beseech you, sir, be good to us.
+
+COBHAM.
+Nay, nay, they know thee well enough.  I think that all
+the beggars in this land are thy acquaintance.  Go bestow
+your alms; none will control you, sir.
+
+HARPOOLE.
+What should I give them? you are grown so beggarly,
+you have scarce a bit of bread to give at your door.  You
+talk of your religion so long, that you have banished
+charity from amongst you; a man may make a flax shop
+in your kitchen chimneys, for any fire there is stirring.
+
+COBHAM.
+If thou wilt give them nothing, send them hence:  let
+them not stand here starving in the cold.
+
+HARPOOLE.
+Who!  I drive them hence?  If I drive poor men from your
+door, I'll be hanged; I know not what I may come to my
+self.  Yea, God help you, poor knaves; ye see the world,
+yfaith!  Well, you had a mother:  well, God be with thee,
+good Lady; thy soul's at rest.  She gave more in shirts 
+and smocks to poor children, than you spend in your 
+house, & yet you live a beggar too.
+
+COBHAM.
+Even the worst deed that ere my mother did was in
+relieving such a fool as thou.
+
+HARPOOLE.
+Yea, yea, I am a fool still.  With all your wit you will
+die a beggar; go too.
+
+COBHAM.
+Go, you old fool; give the poor people something.  Go
+in, poor men, into the inner court, and take such alms
+as there is to be had.
+
+SOLDIER.
+God bless your honor.
+
+HARPOOLE.
+Hang you, rogues, hang you; there's nothing but misery
+amongst you; you fear no law, you.
+
+[Exit.]
+
+OLD MAN.
+God bless you, good master Rafe, God save your life;
+you are good to the poor still.
+
+[Enter the Lord Powis disguised, and shroud himself.]
+
+COBHAM.
+What fellow's yonder comes along the grove?
+Few passengers there be that know this way:
+Me thinks he stops as though he stayed for me,
+And meant to shroud himself amongst the bushes.
+I know the Clergy hate me to the death,
+And my religion gets me many foes:
+And this may be some desperate rogue, suborned
+To work me mischief.--As it pleaseth God!
+If he come toward me, sure I'll stay his coming--
+Be he but one man--what so'er he be.
+
+[The Lord Powis comes on.]
+
+I have been well acquainted with that face.
+
+POWIS.
+Well met, my honorable lord and friend.
+
+COBHAM.
+You are welcome, sir, what ere you be;
+But of this sudden, sir, I do not know you.
+
+POWIS.
+I am one that wisheth well unto your honor;
+My name is Powis, an old friend of yours.
+
+COBHAM.
+My honorable lord, and worthy friend,
+What makes your lordship thus alone in Kent,
+And thus disguised in this strange attire?
+
+POWIS.
+My Lord, an unexpected accident
+Hath at this time inforc'd me to these parts;
+And thus it hapt:--Not yet full five days since,
+Now at the last Assize at Hereford,
+It chanced that the lord Herbert and my self,
+Mongst other things, discoursing at the table,
+Did fall in speech about some certain points
+Of Wickliffe's doctrine gainst the papacy
+And the religion catholique, maintained
+Through the most part of Europe at this day.
+This wilful teasty lord stuck not to say
+That Wickliffe was a knave, a schismatic,
+His doctrine devilish and heretical,
+And what soe'er he was maintained the same,
+Was traitor both to God and to his country.
+Being moved at his peremptory speech,
+I told him some maintained those opinions,
+Men, and truer subjects than lord Herbert was:
+And he replying in comparisons,
+Your name was urged, my lord, gainst his challenge,
+To be a perfect favourer of the truth.
+And to be short, from words we fell to blows,
+Our servants and our tenants taking parts--
+Many on both sides hurt--and for an hour
+The broil by no means could be pacified,
+Until the Judges, rising from the bench,
+Were in their persons forced to part the fray.
+
+COBHAM.
+I hope no man was violently slain.
+
+POWIS.
+Faith, none, I trust, but the lord Herbert's self,
+Who is in truth so dangerously hurt,
+As it is doubted he can hardly scape.
+
+COBHAM.
+I am sorry, my good lord, of these ill news.
+
+POWIS.
+This is the cause that drives me into Kent,
+To shroud my self with you, so good a friend,
+Until I hear how things do speed at home.
+
+COBHAM.
+Your lordship is most welcome unto Cobham;
+But I am very sorry, my good lord,
+My name was brought in question in this matter,
+Considering I have many enemies,
+That threaten malice, and do lie in wait
+To take advantage of the smallest thing.
+But you are welcome:  and repose your lordship,
+And keep your self here secret in my house,
+Until we hear how the lord Herbert speeds.
+Here comes my man.
+
+[Enter Harpoole.]
+
+Sirra, what news?
+
+HARPOOLE.
+Yonder's one master Butler of the privy chamber, 
+is sent unto you from the King.
+
+POWIS.
+I pray God the lord Herbert be not dead,
+And the King, hearing whither I am gone,
+Hath sent for me.
+
+COBHAM.
+Comfort your self my lord, I warrant you.
+
+HARPOOLE.
+Fellow, what ails thee? doost thou quake? dost thou
+shake? dost thou tremble? ha?
+
+COBHAM.
+Peace, you old fool!  Sirra, convey this gentleman
+in the back way, and bring the other into the walk.
+
+HARPOOLE.
+Come, sir; you are welcome, if you love my lord.
+
+POWIS.
+God have mercy, gentle friend.
+
+[Exeunt.]
+
+COBHAM.
+I thought as much:  that it would not be long,
+Before I heard of something from the King
+About this matter.
+
+[Enter Harpoole with Master Butler.]
+
+
+HARPOOLE.
+Sir, yonder my lord walks, you see him;
+I'll have your men into the Cellar the while.
+
+COBHAM.
+Welcome, good master Butler.
+
+BUTLER.
+Thanks, my good lord:  his Majesty doth commend
+His love unto your lordship,
+And wills you to repair unto the court.
+
+COBHAM.
+God bless his Highness, and confound his enemies!
+I hope his Majesty is well.
+
+BUTLER.
+In health, my lord.
+
+COBHAM.
+God long continue it!  Me thinks you look
+As though you were not well:  what ails you, sir?
+
+BUTLER.
+Faith, I have had a foolish odd mischance,
+That angers me:  coming over Shooters hill,
+There came a fellow to me like a Sailor,
+And asked me money; and whilst I stayed my horse
+To draw my purse, he takes th' advantage of
+A little bank and leaps behind me, whips
+My purse away, and with a sudden jerk,
+I know not how, threw me at least three yards
+Out of my saddle.  I never was so robbed
+In all my life.
+
+COBHAM.
+I am very sorry, sir, for your mischance.  We will send 
+our warrant forth, to stay such suspicious persons as
+shall be found.  Then, master Butler, we will attend you.
+
+BUTLER.
+I humbly thank your lordship, I will attend you.
+
+
+
+ACT II. SCENE I. The same.
+
+[Enter the Sumner.]
+
+SUMNER.
+I have the law to warrant what I do; and though the
+Lord Cobham be a noble man, that dispenses not
+with law:  I dare serve process were a five noble men.
+Though we Sumners make sometimes a mad slip in a 
+corner with a pretty wench, a Sumner must not go always 
+by seeing:  a man may be content to hide his eyes, where
+he may feel his profit.  Well, this is my Lord Cobham's
+house if I can devise to speak with him; if not, I'll clap
+my citation upon's door:  so my lord of Rochester bid
+me.  But me thinks here comes one of his men.
+
+[Enter Harpoole.]
+
+HARPOOLE.
+Welcome, good fellow, welcome; who wouldst thou
+speak with?
+
+SUMNER.
+With my lord Cobham I would speak, if thou be one of
+his men.
+
+HARPOOLE.
+Yes, I am one of his men, but thou canst not speak with
+my lord.
+
+SUMNER.
+May I send to him then?
+
+HARPOOLE.
+I'll tell thee that, when I know thy errand.
+
+SUMNER.
+I will not tell my errand to thee.
+
+HARPOOLE.
+Then keep it to thy self, and walk like a knave as thou
+camest.
+
+SUMNER.
+I tell thee, my lord keeps no knaves, sirra.
+
+HARPOOLE.
+Then thou servest him not, I believe:  what lord is thy
+master?
+
+SUMNER
+My lord of Rochester.
+
+HARPOOLE.
+In good time!  And what wouldst thou have with my
+lord Cobham?
+
+SUMNER.
+I come, by virtue of a process, to ascite him to appear 
+before my lord in the court at Rochester.
+
+HARPOOLE.
+[Aside.]  Well, God grant me patience!  I could eat this
+conger.  My lord is not at home; therefore it were good,
+Sumner, you carried your process back.
+
+SUMNER.
+Why, if he will not be spoken withal, then will I leave
+it here; and see you that he take knowledge of it.
+
+HARPOOLE.
+Swounds, you slave, do you set up your bills here! go to;
+take it down again.  Doest thou know what thou dost?
+Dost thou know on whom thou servest process?
+
+SUMNER.
+Yes, marry, do I; Sir John Old-castle, Lord Cobham.
+
+HARPOOLE.
+I am glad thou knowest him yet:  and, sirra, dost not thou
+know, that the lord Cobham is a brave lord, that keeps
+good beef and beer in his house, and every day feeds a
+hundred poor people at's gate, and keeps a hundred tall
+fellows?
+
+SUMNER.
+What's that to my process?
+
+HARPOOLE.
+Marry, this, sir! is this process parchment?
+
+SUMNER.
+Yes, marry.
+
+HARPOOLE.
+And this seal wax?
+
+SUMNER.
+It is so.
+
+HARPOOLE.
+If this be parchment, & this wax, eat you this
+parchment and this wax, or I will make parchment
+of your skin, and beat your brains into wax:  Sirra
+Sumner, dispatch; devour, sirra, devour.
+
+SUMNER.
+I am my lord of Rochester's Sumner; I came to do
+my office, and thou shalt answer it.
+
+HARPOOLE.
+Sirra, no railing, but betake you to your teeth.  Thou
+shalt eat no worse than thou bringst with thee:  thou
+bringst it for my lord, and wilt thou bring my lord
+worse than thou wilt eat thy self?
+
+SUMNER.
+Sirra, I brought it not my lord to eat.
+
+HARPOOLE.
+O, do you sir me now? all's one for that:  but I'll make
+you eat it, for bringing it.
+
+SUMNER.
+I cannot eat it.
+
+HARPOOLE.
+Can you not? sblood I'll beat you until you have a 
+stomach.
+
+[He beats him.]
+
+SUMNER.
+O hold, hold, good master serving-man!  I will eat it.
+
+HARPOOLE.
+Be champing, be chawing, sir; or I'll chaw you, you 
+rogue! the purest of the honey!  Tough wax is the 
+purest of the honey.
+
+SUMNER.
+O Lord, sir! oh! oh!
+
+[He eats.]
+
+HARPOOLE.
+Feed, feed! wholesome, rogue, wholesome!  Cannot you,
+like an honest Sumner, walk with the devil your brother,
+to fetch in your Bailiffs' rents, but you must come to a 
+noble man's house with process?  Sblood! if thy seal were
+as broad as the lead that covers Rochester church, thou
+shouldst eat it.
+
+SUMNER.
+O, I am almost choked!  I am almost choked!
+
+HARPOOLE.
+Who's within there? will you shame my Lord? is there 
+no beer in the house?  Butler!  I say.
+
+[Enter Butler.]
+
+BUTLER.
+Here, here.
+
+HARPOOLE.
+Give him Beer.
+
+[He drinks.]
+
+There; tough old sheepskin's bare, dry meat.
+
+SUMNER.
+O sir, let me go no further; I'll eat my word.
+
+HARPOOLE.
+Yea, marry, sit! so I mean: you shall eat more than your
+own word, for I'll make you eat all the words in the process.
+Why, you drab monger, cannot the secrets of all the wenches
+in a shire serve your turn, but you must come hither with a
+citation? with a pox!  I'll cite you.  [He has then done.]  A
+cup of sack for the Sumner.
+
+BUTLER.
+Here, sir, here.
+
+HARPOOLE.
+Here, slave, I drink to thee.
+
+SUMNER.
+I thank you, sir.
+
+HARPOOLE.
+Now if thou findst thy stomach well--because thou shalt
+see my Lord keep's meat in's house--if thou wilt go in, 
+thou shalt have a piece of beef to the break fast.
+
+SUMNER.
+No, I am very well, good Master serving-man, I thank
+you; very well sir.
+
+HARPOOLE.
+I am glad on't.  Then be walking towards Rochester to keep
+your stomach warm; and Sumner, if I may know you disturb
+a good wench within this Diocese; if I do not make thee eat
+her petticoat, if there were four yards of Kentish cloth in't,
+I am a villain.
+
+SUMNER.
+God be with you, Master serving-man.
+
+[Exit.]
+
+HARPOOLE.
+Farewell, Sumner.
+
+[Enter Constable.]
+
+CONSTABLE.
+God save you Master Harpoole.
+
+HARPOOLE.
+Welcome, Constable, welcome, Constable; what news with thee?
+
+CONSTABLE.
+And't please you, Master Harpoole, I am to make hue and cry,
+for a fellow with one eye that has robbed two Clothiers, and am
+to crave your hindrance, for to search all suspected places; and
+they say there was a woman in the company.
+
+HARPOOLE.
+Hast thou been at the Alehouse? hast thou sought there?
+
+CONSTABLE.
+I durst not search, sir, in my Lord Cobham's liberty, except I
+had some of his servants, which are for my warrant.
+
+HARPOOLE.
+An honest Constable! an honest Constable!  Call forth him
+that keeps the Alehouse here.
+
+CONSTABLE.
+Ho! who's within there?
+
+[Enter Ale-man.]
+
+ALE MAN.
+Who calls there? come near a God's name!  Oh, is't you,
+Master Constable and Master Harpoole? you are welcome
+with all my heart.  What make you here so early this morning?
+
+HARPOOLE.
+Sirra, what strangers do you lodge? there is a robbery done
+this morning, and we are to search for all suspected persons.
+
+ALE MAN.
+God's bores!  I am sorry for't: yfaith, sir, I lodge no body but
+a good honest merry priest,--they call him sir John a Wrotham--
+and a handsome woman that is his niece, that he says he has
+some suit in law for; and as they go up & down to London,
+sometimes they lie at my house.
+
+HARPOOLE.
+What, is he here in thy house now?
+
+ALE MAN.
+She is, sir.  I promise you, sir, he is a quiet man; and because
+he will not trouble too many rooms, he makes the woman lie
+every night at his bed's feet.
+
+HARPOOLE.
+Bring her forth!  Constable, bring her forth! let's see her, let's
+see her.
+
+ALE MAN.
+Dorothy, you must come down to Master Constable.
+
+
+DOLL.
+Anon, forsooth.
+
+[She enters.]
+
+HARPOOLE.
+Welcome, sweet lass, welcome.
+
+DOLL.
+I thank you, good Master serving-man, and master
+Constable also.
+
+HARPOOLE.
+A plump girl by the mass, a plump girl!  Ha, Doll, ha!
+Wilt thou forsake the priest, and go with me?
+
+CONSTABLE.
+A! well said, Master Harpoole; you are a merry old man,
+yfaith.  Yfaith, you will never be old.  Now, by the mack,
+a pretty wench indeed!
+
+HARPOOLE.
+Ye old mad merry Constable, art thou advised of that.  Ha,
+well said, Doll! fill some ale here.
+
+DOLL.
+[Aside.]  Oh, if I wist this old priest would not stick to me,
+by Jove, I would ingle this old serving-man.
+
+HARPOOLE.
+Oh you old mad colt! yfaith, I'll feak you! fill all the pots in
+the house there.
+
+CONSTABLE.
+Oh, well said, Master Harpoole! you are heart of oak when
+all's done.
+
+HARPOOLE.
+Ha, Doll, thou hast a sweet pair of lips, by the mass.
+
+DOLL.
+Truly you are a most sweet old man, as ever I saw; by my
+troth, you have a face, able to make any woman in love with you.
+
+HARPOOLE.
+Fill, sweet Doll; I'll drink to thee.
+
+DOLL.
+'I pledge you, sir, and thank you therefore,
+And I pray you let it come.'
+
+HARPOOLE.
+[Embracing her.]  Doll, canst thou love me?  A mad merry
+lass! would to God I had never seen thee!
+
+DOLL.
+I warrant you, you will not out of my thoughts this
+twelvemonth; truly you are as full of favour, as a man may be. 
+Ah, these sweet grey locks! by my troth, they are most lovely.
+
+CONSTABLE.
+God boores, master Harpoole, I will have one buss too.
+
+HARPOOLE.
+No licking for you, Constable! hand off, hand off!
+
+CONSTABLE.
+Bur lady, I love kissing as well as you.
+
+DOLL.
+Oh, you are an odd boy; you have a wanton eye of your own!
+ah, you sweet sugar lipped wanton, you will win as many 
+women's hearts as come in your company.
+
+[Enter Priest.]
+
+WROTHAM.
+Doll, come hither.
+
+HARPOOLE.
+Priest, she shall not.
+
+DOLL.
+I'll come anon, sweet love.
+
+WROTHAM.
+Hand off, old fornicator.
+
+HARPOOLE.
+Vicar, I'll sit here in spite of thee.  Is this fit stuff for a priest to
+carry up and down with him?
+
+
+WROTHAM.
+Ah, sirra, dost thou not know that a good fellow parson may
+have a chapel of ease, where his parish Church is far off?
+
+HARPOOLE.
+You whoreson stoned Vicar!
+
+WROTHAM.
+You old stale ruffin! you lion of Cotswold!
+
+HARPOOLE.
+Swounds, Vicar, I'll geld you!
+
+[Flies upon him.]
+
+CONSTABLE.
+Keep the King's peace!
+
+DOLL.
+Murder! murder! murder!
+
+ALE MAN.
+Hold! as you are men, hold! for God's sake be quiet!  Put up
+your weapons; you draw not in my house.
+
+HARPOOLE.
+You whoreson bawdy priest!
+
+WROTHAM.
+You old mutton monger!
+
+CONSTABLE.
+Hold, sir John, hold!
+
+DOLL.
+[To the Priest.]  I pray thee, sweet hear, be quiet.  I was but
+sitting to drink a pot of ale with him, even as kind a man as
+ever I met with.
+
+HARPOOLE.
+Thou art a thief, I warrant thee.
+
+WROTHAM.
+Then I am but as thou hast been in thy days.  Let's not be
+ashamed of our trade; the King has been a thief himself.
+
+
+DOLL.
+Come, be quiet.  Hast thou sped?
+
+WROTHAM.
+I have, wench:  here be crowns, yfaith.
+
+DOLL.
+Come, let's be all friends then.
+
+CONSTABLE.
+Well said, mistress Dorothy, yfaith.
+
+HARPOOLE.
+Thou art the maddest priest that ever I met with.
+
+WROTHAM.
+Give me thy hand, thou art as good a fellow.  I am a
+singer, a drinker, a bencher, a wencher!  I can say a
+mass, and kiss a lass!  Faith, I have a parsonage, and 
+because I would not be at too much charges, this wench
+serves me for a sexton.
+
+HARPOOLE.
+Well said, mad priest, we'll in and be friends.
+
+[Exeunt.]
+
+
+ACT II. SCENE II. London.  A room in the Axe Inn,
+without Bishop-gate.
+
+[Enter sir Roger Acton, master Bourne, master Beverly,
+and William Murley the brewer of Dunstable.]
+
+ACTON.
+Now, master Murley, I am well assured
+You know our arrant, and do like the cause,
+Being a man affected as we are.
+
+MURLEY.
+Mary, God dild ye, dainty my dear! no master, good sir
+Roger Acton Knight, master Bourne, and master Beverly
+esquires, gentlemen, and justices of the peace--no master I, 
+but plain William Murley, the brewer of Dunstable, your 
+honest neighbour, and your friend, if ye be men of my
+profession.
+
+BEVERLY.
+Professed friends to Wickliffe, foes to Rome.
+
+MURLEY.
+Hold by me, lad; lean upon that staff, good master
+Beverly:  all of a house.  Say your mind, say your mind.
+
+ACTON.
+You know our faction now is grown so great,
+Throughout the realm, that it begins to smoke
+Into the Clergy's eyes, and the King's ear.
+High time it is that we were drawn to head,
+Our general and officers appointed;
+And wars, ye wot, will ask great store of coin.
+Able to strength our action with your purse,
+You are elected for a colonel
+Over a regiment of fifteen bands.
+
+MURLEY.
+Fue, paltry, paltry! in and out, to and fro! be it more or
+less, upon occasion.  Lord have mercy upon us, what a
+world is this!  Sir Roger Acton, I am but a Dunstable
+man, a plain brewer, ye know:  will lusty Cavaliering 
+captains, gentlemen, come at my calling, go at my
+bidding?  Dainty my dear, they'll do a god of wax, a
+horse or cheese, a prick and a pudding.  No, no, ye 
+must appoint some lord, or knight at least, to that place.
+
+BOURNE.
+Why, master Murley, you shall be a Knight:
+Were you not in election to be shrieve?
+Have ye not past all offices but that?
+Have ye not wealth to make your wife a lady?
+I warrant you, my lord, our General
+Bestows that honor on you at first sight.
+
+MURLEY.
+Mary, God dild ye, dainty my dear!
+But tell me, who shall be our General?
+Where's the lord Cobham, sir John Old-castle,
+That noble alms-giver, housekeeper, virtuous,
+ Religious gentleman?  Come to me there, boys,
+Come to me there!
+
+ACTON.
+Why, who but he shall be our General?
+
+MURLEY.
+And shall he knight me, and make me colonel?
+
+ACTON.
+My word for that:  sir William Murley, knight.
+
+MURLEY.
+Fellow sir Roger Acton, knight, all fellows--I mean
+in arms--how strong are we? how many partners?  Our
+enemies beside the King are might:  be it more or less
+upon occasion, reckon our force.
+
+ACTON.
+There are of us, our friends, and followers,
+Three thousand and three hundred at the least;
+Of northern lads four thousand, beside horse;
+>From Kent there comes with sir John Old-castle
+Seven thousand; then from London issue out,
+Of masters, servants, strangers, prentices,
+Forty odd thousands into Ficket field,
+Where we appoint our special rendezvous.
+
+MURLEY.
+Fue, paltry, paltry, in and out, to and fro!  Lord have
+mercy upon us, what a world is this!  Where's that
+Ficket field, sir Roger?
+
+ACTON.
+Behind saint Giles in the field near Holborne.
+
+MURLEY.
+Newgate, up Holborne, S. Giles in the field, and to
+Tiborne: an old saw.  For the day, for the day?
+
+ACTON.
+On Friday next, the fourteenth day of January.
+
+MURLEY.
+Tyllie vallie, trust me never if I have any liking of that
+day! fue, paltry, paltry! Friday, quoth a!  Dismal day! 
+Childermass day this year was Friday.
+
+BEVERLY.
+Nay, master Murley, if you observe the days,
+We make some question of your constancy.
+All days are like to men resolved in right.
+
+MURLEY.
+Say Amen, and say no more; but say, and hold, 
+master Beverly:  Friday next, and Ficket field,
+and William Murley, and his merry men shall be 
+all one.  I have half a score jades that draw my
+beer carts,
+And every jade shall bear a knave,
+And every knave shall wear a jack,
+And every jack shall have a skull,
+And every skull shall shew a spear,
+And every spear shall kill a foe
+At Ficket field, at Ficket field.
+John and Tom, and Dick and Hodge,
+And Rafe and Robin, William & George,
+And all my knaves shall fight like men,
+At Ficket field on Friday next.
+
+BOURNE.
+What sum of money mean you to disburse?
+
+MURLEY.
+It may be modestly, decently, soberly, and handsomely
+I may bring five hundred pound.
+
+ACTON.
+Five hundred, man! five thousand's not enough!
+A hundred thousand will not pay our men
+Two months together.  Either come prepared
+Like a brave Knight, and martial Colonel,
+In glittering gold, and gallant furniture,
+Bringing in coin a cart load at he least,
+And all your followers mounted on good horse,
+Or never come disgraceful to us all. 
+
+BEVERLY.
+Perchance you may be chosen Treasurer.
+Ten thousand pound's the least that you can bring.
+
+MURLEY.
+Paltry, paltry! in and out, to and fro, upon occasion I
+have ten thousand pound to spend, and ten too.  And
+rather than the Bishop shall have his will of me for my 
+conscience, it shall out all.  Flame and flax, flame and
+flax! it was got with water and malt, and it shall fly 
+with fire and gun powder.  Sir Roger, a cart load of
+money till the axetree crack, my self and my men in
+Ficket field on Friday next:  remember my Knighthood,
+and my place.  There's my hand; I'll be there.
+
+[Exit.]
+
+ACTON.
+See what Ambition may persuade men to,
+In hope of honor he will spend himself.
+
+BOURNE.
+I never thought a Brewer half so rich.
+
+BEVERLY.
+Was never bankerout Brewer yet but one,
+With using too much malt, too little water.
+
+ACTON.
+That's no fault in Brewers now-adays.
+Come, away, about our business.
+
+[Exeunt.]
+
+
+ACT II. SCENE III. An audience-chamber in the
+palace at Eltham.
+
+[Enter King Henry, Suffolk, Butler, and Old-castle
+kneeling to the King.]
+
+KING.
+Tis not enough, Lord Cobham, to submit;
+You must forsake your gross opinion.
+The Bishops find themselves much injured,
+And though, for some good service you have done,
+We for our part are pleased to pardon you,
+Yet they will not so soon be satisfied.
+
+COBHAM.
+My gracious Lord, unto your Majesty,
+Next unto my God, I owe my life:
+And what is mine, either by nature's gift,
+Or fortune's bounty, all is at your service.
+But, for obedience to the Pope of Rome,
+I owe him none, nor shall his shaveling priests
+That are in England alter my belief.
+If out of holy Scripture they can prove,
+That I am in an error I will yield,
+And gladly take instruction at their hands;
+But otherwise, I do beseech your grace,
+My conscience may not be encroached upon.
+
+KING.
+We would be loath to press our subjects' bodies,
+Much less their souls, the dear redeemed part
+Of him that is the ruler of us all;
+Yet let me counsel ye, that might command:
+Do not presume to tempt them with ill words,
+Nor suffer any meetings to be had
+Within your house, but to the uttermost,
+Disperse the flocks of this new gathering sect.
+
+COBHAM.
+My liege, if any breathe, that dares come forth,
+And say my life in any of these points
+Deserves th'attaindor of ignoble thoughts,
+Here stand I, craving no remorse at all,
+But even the utmost rigor may be shown.
+
+KING.
+Let it suffice; we know your loyalty.
+What have you there?
+
+COBHAM.
+A deed of clemency;
+Your Highness' pardon for Lord Powis' life,
+Which I did beg, and you, my noble Lord,
+Of gracious favour did vouchsafe to grant.
+
+KING.
+But yet it is not signed with our hand.
+
+COBHAM.
+Not yet, my Liege.
+
+[One ready with pen and ink.]
+
+KING.
+The fact, you say, was done,
+Not of prepensed malice, but by chance.
+
+COBHAM.
+Upon mine honor so, no otherwise.
+
+KING.
+There is his pardon; bid him make amends,
+
+[Writes.] 
+
+And cleanse his soul to God for his offence.
+What we remit, is but the body's scourge--
+
+[Enter Bishop.]
+
+How now, Lord Bishop?
+
+BISHOP.
+Justice, dread Sovereign!
+As thou art King, so grant I may have justice.
+
+KING.
+What means this exclamation? let us know.
+
+BISHOP.
+Ah, my good Lord, the state's abused,
+And our decrees most shamefully profaned.
+
+KING.
+How? or by whom?
+
+BISHOP.
+Even by this heretic,
+This Jew, this Traitor to your majesty.
+
+COBHAM.
+Prelate, thou liest, even in thy greasy maw,
+Or whosoever twits me with the name
+Of either traitor, or of heretic.
+
+KING.
+Forbear, I say:  and, Bishop, shew the cause
+>From whence this late abuse hath been derived.
+
+BISHOP.
+Thus, mighty King:--By general consent,
+A messenger was sent to cite this Lord,
+To make appearance in the consistory;
+And coming to his house, a ruffian slave,
+One of his daily followers, met the man,
+Who, knowing him to be a parroter,
+Assaults him first and after, in contempt
+Of us and our proceedings, makes him cate
+The written process, parchment, scale and all:
+Whereby his master neither was brought forth,
+Nor we but scorned for our authority.
+
+KING.
+When was this done?
+
+BISHOP.
+At six a clock this morning.
+
+KING.
+And when came you to court?
+
+COBHAM.
+Last night, my Lord.
+
+KING.
+By this it seems, he is not guilty of it,
+And you have done him wrong t'accuse him so.
+
+BISHOP.
+But it was done, my lord, by his appointment,
+Or else his man durst ne'er have been so bold.
+
+KING.
+Or else you durst be bold to interrupt,
+And fill our ears with frivolous complaints.
+Is this the duty you do bear to us?
+Was't not sufficient we did pass our word
+To send for him, but you, misdoubting it,
+Or--which is worse--intending to forestall
+Our regal power, must likewise summon him?
+This savors of Ambition, not of zeal,
+And rather proves you malice his estate,
+Than any way that he offends the law.
+Go to, we like it not; and he your officer,
+That was employed so much amiss herein,
+Had his desert for being insolent.
+
+[Enter Huntington.]
+
+So, Cobham, when you please you may depart.
+
+COBHAM.
+I humbly bid farewell unto my liege.
+
+[Exit.]
+
+KING.
+Farewell.--What's the news by Huntington?
+
+HUNTINGTON.
+Sir Roger Acton and a crew, my Lord,
+Of bold seditious rebels are in Arms,
+Intending reformation of Religion.
+And with their Army they intend to pitch
+In Ficket field, unless they be repulsed.
+
+KING.
+So near our presence?  Dare they be so bold?
+And will proud war, and eager thirst of blood,
+Whom we had thought to entertain far off,
+Press forth upon us in our native bounds?
+Must we be forced to hansell our sharp blades
+In England here, which we prepared for France?
+Well, a God's name be it!  What's their number, say,
+Or who's the chief commander of this rout?
+
+HUNTINGTON.
+Their number is not known, as yet, my Lord,
+But tis reported Sir John Old-castle
+Is the chief man on whom they do depend.
+
+KING.
+How, the Lord Cobham?
+
+HUNTINGTON.
+Yes, my gracious Lord.
+
+BISHOP.
+I could have told your majesty as much
+Before he went, but that I saw your Grace
+Was too much blinded by his flattery.
+
+SUFFOLK.
+Send post, my Lord, to fetch him back again.
+
+BUTLER.
+Traitor unto his country, how he smoothed,
+And seemed as innocent as Truth it self!
+
+KING.
+I cannot think it yet he would be false;
+But if he be, no matter; let him go.
+We'll meet both him and them unto their woe.
+
+[Exeunt all but Bishop.]
+
+BISHOP.
+This falls out well, and at the last I hope
+To see this heretic die in a rope.
+
+
+ACT III. SCENE I.  An avenue leading to lord
+Cobham's house in Kent.
+
+[Enter Earl of Cambridge, Lord Scroop, Gray, and
+Chartres the French factor.]
+
+SCROOP.
+Once more, my Lord of Cambridge, make rehearsal,
+How you do stand entitled to the Crown.
+The deeper shall we print it in our minds,
+And every man the better be resolved,
+When he perceives his quarrel to be just.
+
+CAMBRIDGE.
+Then thus, Lord Scroop, sir Thomas Gray, & you,
+Monsieur de Chartres, agent for the French:--
+This Lionel, Duke of Clarence, as I said,
+Third son of Edward (England's King) the third,
+Had issue Phillip, his sole daughter and heir;
+Which Phillip afterward was given in marriage
+To Edmund Mortimer, the Earl of March,
+And by him had a son called Roger Mortimer;
+Which Roger, likewise, had of his descent
+Edmund, Roger, Anne, and Eleanor--
+Two daughters and two sons--but those three
+Died without issue.  Anne, that did survive,
+And now was left her father's only heir,
+My fortune was to marry, being too
+By my grandfather of Kind Edward's line:
+So of his sirname, I am called, you know,
+Richard Plantagenet.  My father was
+Edward, the Duke of York, and son and heir
+To Edmund Langley, Edward the third's fifth son.
+
+SCROOP.
+So that it seems your claim comes by your wife,
+As lawful heir to Roger Mortimer,
+The son of Edmund, which did marry Phillip,
+Daughter and heir to Lionel, Duke of Clarence.
+
+CAMBRIDGE.
+True, for this Harry and his father both,
+Harry the first, as plainly doth appear,
+Are false intruders and usurp the Crown.
+For when young Richard was at Pomfret slain,
+In him the title of prince Edward died,
+That was the eldest of king Edward's sons:
+William, of Hatfield, and their second brother,
+Death in his nonage had before bereft:
+So that my wife, derived from Lionel,
+Third son unto king Edward, ought proceed,
+And take possession of the Diadem
+Before this Harry, or his father king,
+Who fetched their title but from Lancaster,
+Forth of that royal line.  And being thus,
+What reason ist but she should have her right?
+
+SCROOP.
+I am resolved our enterprise is just.
+
+GRAY.
+Harry shall die, or else resign his crown.
+
+CHARTRES.
+Perform but that, and Charles, the king of France,
+Shall aid you, lords, not only with his men,
+But send you money to maintain your wars.
+Five hundred thousand crowns he bade me profer,
+If you can stop but Harry's voyage for France.
+
+SCROOP.
+We never had a fitter time than now,
+The realm in such division as it is.
+
+CAMBRIDGE.
+Besides, you must persuade ye, there is due
+Vengeance for Richard's murder, which, although
+It be deferred, yet will it fall at last,
+And now as likely as another time.
+Sin hath had many years to ripen in,
+And now the harvest cannot be far off,
+Wherein the weeds of usurpation
+Are to be cropped, and cast into the fire.
+
+SCROOP.
+No more, earl Cambridge; here I plight my faith,
+To set up thee and thy renowned wife.
+
+GRAY.
+Gray will perform the same, as he is knight.
+
+CHARTRES.
+And to assist ye, as I said before,
+Charters doth gage the honor of his king.
+
+SCROOP.
+We lack but now Lord Cobham's fellowship,
+And then our plot were absolute indeed.
+
+CAMBRIDGE.
+Doubt not of him, my lord; his life's pursued
+By the incensed Clergy, and of late,
+Brought in displeasure with the king, assures
+He may be quickly won unto our faction.
+Who hath the articles were drawn at large
+Of our whole purpose?
+
+GRAY.
+That have I, my Lord.
+
+CAMBRIDGE.
+We should not now be far off from his house;
+Our serious conference hath beguiled the way.
+See where his castle stands.  Give me the writing.
+When we are come unto the speech of him,
+Because we will not stand to make recount,
+Of that which hath been said, here he shall read
+
+[Enter Cobham.]
+
+Our minds at large, and what we crave of him.
+
+SCROOP.
+A ready way.  Here comes the man himself,
+Booted and spurred; it seems he hath been riding.
+
+CAMBRIDGE.
+Well met, lord Cobham.
+
+COBHAM.
+My lord of Cambridge?
+Your honor is most welcome into Kent,
+And all the rest of this fair company.
+I am new come from London, gentle Lords;
+But will ye not take Cowling for your host,
+And see what entertainment it affords?
+
+CAMBRIDGE.
+We were intended to have been your guests:
+But now this lucky meeting shall suffice
+To end our business, and defer that kindness.
+
+COBHAM.
+Business, my lord? what business should you have
+But to be merry?  We have no delicates,
+But this I'll promise you:  a piece of venison,
+A cup of wine, and so forth--hunters' fare;
+And if you please, we'll strike the stag our selves
+Shall fill our dishes with his well-fed flesh.
+
+SCROOP.
+That is, indeed, the thing we all desire.
+
+COBHAM.
+My lords and you shall have your choice with me.
+
+CAMBRIDGE.
+Nay, but the stag which we desire to strike
+Lives not in Cowling; if you will consent,
+And go with us, we'll bring you to a forest,
+Where runs a lusty herd; amongst the which
+There is a stag superior to the rest,
+A stately beast that, when his fellows run,
+He leads the race, and beats the sullen earth,
+As though he scorned it, with his trampling hooves.
+Aloft he bears his head, and with his breast,
+Like a huge bulwark, counter-checks the wind:
+And when he standeth still, he stretcheth forth
+His proud ambitious neck, as if he meant
+To wound the firmament with forked horns.
+
+COBHAM.
+Tis pity such a goodly beast should die.
+
+CAMBRIDGE.
+Not so, sir John, for he is tyrannous,
+And gores the other deer, and will not keep
+Within the limits are appointed him.
+Of late he's broke into a several,
+Which doth belong to me, and there he spoils 
+Both corn and pasture.  Two of his wild race,
+Alike for stealth and covetous encroaching,
+Already are removed; if he were dead,
+I should not only be secure from hurt,
+But with his body make a royal feast.
+
+SCROOP.
+How say you, then; will you first hunt with us?
+
+COBHAM.
+Faith, Lords, I like the pastime; where's the place>
+
+CAMBRIDGE.
+Peruse this writing; it will shew you all,
+And what occasion we have for the sport.
+
+[He reads.]
+
+COBHAM.
+Call ye this hunting, my lords?  Is this the stag
+You fain would chase--Harry our dread king?
+So we may make a banquet for the devil,
+And in the stead of wholesome meat, prepare
+A dish of poison to confound our selves.
+
+CAMBRIDGE.
+Why so, lord Cobham?  See you not our claim?
+And how imperiously he holds the crown?
+
+SCROOP.
+Besides, you know your self is in disgrace,
+Held as a recreant, and pursued to death.
+This will defend you from your enemies,
+And stablish your religion through the land.
+
+COBHAM.
+Notorious treason! yet I will conceal [Aside.]
+My secret thoughts, to sound the depth of it.
+My lord of Cambridge, I do see your claim,
+And what good may redound unto the land
+By prosecuting of this enterprise.
+But where are the men? where's power and furniture
+To order such an action?  We are weak;
+Harry, you know's a mighty potentate.
+
+CAMBRIDGE.
+Tut, we are strong enough:  you are beloved,
+And many will be glad to follow you;
+We are the like, and some will follow us.
+Besides, there is hope from France:  here's an ambassador
+That promiseth both men and money too.
+The commons likewise (as we hear) pretend
+A sudden tumult; we will join with them.
+
+COBHAM.
+Some likelihood, I must confess, to speed;
+But how shall I believe this is plain truth?
+You are, my lords, such men as live in Court,
+And highly have been favoured of the king,
+Especially lord Scroop, whom oftentimes 
+He maketh choice of for his bedfellow;
+And you, lord Gray, are of his privy counsel:
+Is not this a train to entrap my life?
+
+CAMBRIDGE.
+Then perish may my soul!  What, think you so?
+
+SCROOP.
+We'll swear to you.
+
+GRAY.
+Or take the sacrament.
+
+COBHAM.
+Nay, you are noble men, and I imagine,
+As you are honorable by birth and blood,
+So you will be in heart, in thought, in word.
+I crave no other testimony but this:
+That you would all subscribe, and set your hands
+Unto this writing which you gave to me.
+
+CAMBRIDGE.
+With all our hearts.  Who hath any pen and ink?
+
+SCROOP.
+My pocket should have one:  yea, here it is.
+
+CAMBRIDGE.
+Give it me, lord Scroop.--There is my name.
+
+SCROOP.
+And there is my name.
+
+GRAY.
+And mine.
+
+COBHAM.
+Sir, let me crave,
+That you would likewise write your name with theirs,
+For confirmation of your master's word,
+The king of France.
+
+CHARTRES.
+That will I, noble Lord.
+
+COBHAM.
+So now this action is well knit together,
+And I am for you.  Where's our meeting, lords?
+
+CAMBRIDGE.
+Here, if you please, the tenth of July next.
+
+COBHAM.
+In Kent? agreed:  now let us in to supper.
+I hope your honors will not away to night.
+
+CAMBRIDGE.
+Yes, presently; for I have far to ride,
+About soliciting of other friends.
+
+SCROOP.
+And we would not be absent from the court,
+Lest thereby grow suspicion in the king.
+
+COBHAM.
+Yet taste a cup of wine before ye go.
+
+CAMBRIDGE.
+Not now, my lord, we thank you:  so farewell.
+
+[Exeunt all but Cobham.]
+
+COBHAM.
+Farewell, my noble lords.--My noble lords?
+My noble villains, base conspirators.
+How can they look his Highness in the face,
+Whom they so closely study to betray?
+But I'll not sleep until I make it known.
+This head shall not be burdened with such thoughts,
+Nor in this heart will I conceal a deed
+Of such impiety against my king.
+Madam, how now?
+
+[Enter Harpoole and the rest.]
+
+LADY COBHAM.
+You are welcome home, my Lord.
+Why seem ye so disquiet in your looks?
+What hath befallen you that disquiets your mind?
+
+LADY POWIS.
+Bad news, I am afraid, touching my husband.
+
+COBHAM.
+Madam, not so:  there is your husband's pardon.
+Long may ye live, each joy unto the other.
+
+POWIS.
+So great a kindness as i know not how
+To make reply; my sense is quite confounded.
+
+COBHAM.
+Let that alone:  and madam, stay me not,
+For I must back unto the court again
+With all the speed I can.  Harpoole, my horse.
+
+LADY COBHAM.
+So soon, my Lord? what, will you ride all night?
+
+COBHAM.
+All night or day; it must be so, sweet wife.
+Urge me not why or what my business is,
+But get you in.  Lord Powis, bear with me,
+And madam, think your welcome ne'er the worse:
+My house is at your use. Harpoole, away.
+
+HARPOOLE.
+Shall I attend your lordship to the court?
+
+COBHAM.
+Yes, sir; your gelding! mount you presently.
+
+[Exeunt.]
+
+LADY COBHAM.
+I prithee, Harpoole, look unto thy Lord.
+I do not like this sudden posting back.
+
+POWIS.
+Some earnest business is a foot belike;
+What e'er it be, pray God be his good guide.
+
+LADY POWIS.
+Amen! that hath so highly us bested.
+
+LADY COBHAM.
+Come, madam, and my lord, we'll hope the best;
+You shall not into Wales till he return.
+
+POWIS.
+Though great occasion be we should depart,
+Yet madam will we stay to be resolved
+Of this unlooked for, doubtful accident.
+
+[Exeunt.]
+
+
+ACT III. SCENE II. A road near Highgate.
+
+[Enter Murley and his men, prepared in some filthy
+order for war.]
+
+MURLEY.
+Come, my hearts of flint, modestly, decently, soberly,
+and handsomely, no man afore his Leader; follow your
+master, your Captain, your Knight that shall be, for the
+honor of Meal-men, Millers, and Malt-men.  Dunne is the
+mouse.  Dick and tom, for the credit of Dunstable, ding
+down the enemy to morrow; ye shall not come into the
+field like beggars.  Where be Leonard and Laurence, my
+two loaders?  Lord have mercy upon us, what a world is
+this?  I would give a couple of shillings for a dozen of
+good feathers for ye, and forty pence for as many scarfs
+to set ye out withal.  Frost and snow! a man has no heart 
+to fight till he be brave.
+
+DICK.
+Master, I hope we be no babes.  For our manhood, our 
+bucklers and our town foot-balls can bear witness:  and 
+this light parrel we have shall off, and we'll fight naked
+afore we run away.
+
+TOM.
+Nay, I am of Laurence mind for that, for he means to
+leave his life behind him; he and Leonard, your two 
+loaders, are making their wills because they have wives.
+Now we Bachelors bid our friends scramble for our
+goods if we die:  but, master, pray ye, let me ride upon
+Cutte.
+
+MURLEY.
+Meal and salt, wheat and malt, fire and tow, frost and 
+snow! why, Tom, thou shalt.  Let me see:  here are you,
+William and George are with my cart, and Robin and
+Hodge holding my own two horses:  proper men, handsome
+men, tall men, true men.
+
+DICK.
+But, master, master, me thinks you are a mad man to hazard
+your own person and a cart load of money too.
+
+TOM.
+Yea, and, master, there's a worse matter in't.  If it be as I
+heard say, we go to fight against all the learned Bishops,
+that should give us their blessing; and if they curse us, we
+shall speed ne'er the better.
+
+DICK.
+Nay, bir lady, some say the King takes their part; and, master,
+dare you fight against the King?
+
+MURLEY.
+Fie, paltry, paltry! in and out, to and fro, upon occasion; if
+the King be so unwise to come there, we'll fight with him too.
+
+TOM.
+What, if ye should kill the King?
+
+MURLEY.
+Then we'll make another.
+
+DICK.
+Is that all? do ye not speak treason?
+
+MURLEY.
+If we do, who dare trip us? we come to fight for our conscience,
+and for honor. Little know you what is in my bosom; look here,
+mad knaves, a pair of gilt spurs.
+
+TOM.
+A pair of golden spurs?  Why do you not put them on your
+heels?  Your bosom's no place for spurs.
+
+MURLEY.
+Be't more or less upon occasion, Lord have mercy upon us,
+Tom, th'art a fool, and thou speakest treason to knighthood.
+Dare any wear golden or silver spurs till he be a knight?  No,
+I shall be knighted to morrow, and then they shall on.  Sirs,
+was it ever read in the church book of Dunstable, that ever
+malt man was made knight?
+
+TOM.
+No, but you are more:  you are meal-man, maltman, miller,
+corn-master and all.
+
+DICK.
+Yea, and half a brewer too, and the devil and all for wealth.
+You bring more money with you, than all the rest.
+
+MURLEY.
+The more's my honor.  I shall be a knight to morrow!  Let
+me spose my men:  Tom upon cut, Dick upon hob, Hodge
+upon Ball, Raph upon Sorell, and Robin upon the forehorse.
+
+[Enter Acton, Bourne, and Beverly.]
+
+TOM.
+Stand, who comes there?
+
+
+ACTON.
+All friends, good fellow.
+
+MURLEY.
+Friends and fellows, indeed, sir Roger.
+
+ACTON.
+Why, thus you shew your self a Gentleman,
+To keep your day, and come so well prepared.
+Your cart stands yonder, guarded by your men,
+Who tell me it is loaden with coin.
+What sum is there?
+
+MURLEY.
+Ten thousand pound, sir Roger:  and modestly,
+decently, soberly, and handsomely, see what I
+have here against I be knighted.
+
+ACTON.
+Gilt spurs? tis well.
+
+MURLEY.
+But where's your army, sir?
+
+ACTON.
+Dispersed in sundry villages about:
+Some here with us in Highgate, some at Finchley,
+Totnam, Enfield, Edmunton, Newington,
+Islington, Hogsdon, Pancredge, Kensington;
+Some nearer Thames, Ratcliffe, Blackwall and Bow;
+But our chief strength must be the Londoners,
+Which, ere the Sun to morrow shine,
+Will be near fifty thousand in the field.
+
+MURLEY.
+Mary, God dild ye, dainty my dear! but upon occasion,
+sir Roger Acton, doth not the King know of it, and
+gather his power against us?
+
+ACTON.
+No, he's secure at Eltham.
+
+MURLEY.
+What do the Clergy?
+
+ACTON.
+Fear extremely, yet prepare no force.
+
+MURLEY.
+In and out, to and fro, Bully my boikin, we shall carry
+the world afore us!  I vow by my worship, when I am 
+knighted, we'll take the King napping, if he stand on 
+their part.
+
+ACTON.
+This night we few in Highgate will repose.
+With the first cock we'll rise and arm our selves,
+To be in Ficket field by break of day,
+And there expect our General.
+
+MURLEY.
+Sir John Old-castle? what if he come not?
+
+BOURNE.
+Yet our action stands.
+Sir Roger Acton may supply his place.
+
+MURLEY.
+True, Master Bourne, but who shall make me knight?
+
+BEVERLY.
+He that hath power to be our General.
+
+ACTON.
+Talk not of trifles; come, let's away.
+Our friends of London long till it be day.
+
+[Exeunt.]
+
+
+ACT III. SCENE III. A high road in Kent.
+
+[Enter sir John of Wrotham and Doll.]
+
+DOLL.
+By my troth, thou art as jealous a man as lives.
+
+PRIEST.
+Canst thou blame me, Doll? thou art my lands, my goods,
+my jewels, my wealth, my purse.  None walks within xl.
+miles of London, but a plies thee as truly as the parish does
+the poor man's box.
+
+DOLL.
+I am as true to thee as the stone is in the wall; and thou
+knowest well enough, sir John, I was in as good doing,
+when I came to thee, as any wench need to be; and therefore
+thou hast tried me, that thou hast:  by God's body, I will
+not be kept as I have been, that I will not.
+
+PRIEST.
+Doll, if this blade hold, there's not a peddlar walks with a 
+pack, but thou shalt as boldly choose of his wares, as with
+thy ready money in a Merchant's shop.  We'll have as good 
+silver as the King coins any.
+
+DOLL.
+What, is all the gold spent you took the last day from the
+Courtier?
+
+PRIEST.
+Tis gone, Doll, tis flown; merely come, merely gone:  he
+comes a horse back that much pay for all.  We'll have as
+good meat as money can get, and as good gowns as can be
+bought for gold.  Be merry, wench, the malt-man comes on
+Monday.
+
+DOLL.
+You might have left me at Cobham, until you had been
+better provided for.
+
+PRIEST.
+No, sweet Doll, no:  I do not like that.  Yond old ruffian is
+not for the priest:  I do not like a new clerk should come in
+the old belfry.
+
+DOLL.
+Ah, thou art a mad priest, yfaith.
+
+PRIEST.
+Come, Doll; I'll see thee safe at some alehouse here at Cray,
+and the next sheep that comes shall leave his fleece.
+
+[Exeunt.]
+
+
+ACT III. SCENE IV. Blackheath.
+
+
+[Enter the King, Suffolk and Butler.]
+
+KING.
+[In great haste.]  My lord of Suffolk, post away for life,
+And let our forces of such horse and foot,
+As can be gathered up by any means,
+Make speedy rendezvous in Tuttle fields.
+It must be done this evening, my Lord;
+This night the rebels mean to draw to head
+Near Islington, which if your speed prevent not,
+If once they should unite their several forces,
+Their power is almost thought invincible.
+Away, my Lord; I will be with you soon.
+
+SUFFOLK.
+I go, my Sovereign, with all happy speed.
+
+[Exit.]
+
+KING.
+Make haste, my lord of Suffolk, as you love us.
+Butler, post you to London with all speed;
+Command the Mayor and shrieves, on their allegiance,
+The city gates be presently shut up
+And guarded with a strong sufficient watch,
+And not a man be suffered to pass
+Without a special warrant from our self.
+Command the Postern by the Tower be kept,
+And proclamation, on the pain of death,
+That not a citizen stir from his doors,
+Except such as the Mayor and Shrieves shall choose
+For their own guard and safety of their persons.
+Butler, away; have care unto my charge.
+
+BUTLER.
+I go, my Sovereign.
+
+KING.
+Butler!
+
+BUTLER.
+My Lord.
+
+KING.
+Go down by Greenwich, and command a boat
+At the Friar's bridge attend my coming down.
+
+BUTLER.
+I will, my Lord.
+
+[Exit.]
+
+KING.
+It's time, I think, to look unto rebellion,
+When Acton doth expect unto his aid
+No less than fifty thousand Londoners.
+Well, I'll to Westminster in this disguise,
+To hear what news is stirring in these brawls.
+
+[Enter sir John and Doll.]
+
+SIR JOHN.
+Stand, true-man! says a thief.
+
+KING.
+Stand, thief! says a true man.  How if a thief?
+
+SIR JOHN.
+Stand, thief, too.
+
+KING.
+Then, thief or true-man, I see I must stand.  I see,
+how soever the world wags, the trade of thieving yet
+will never down.  What art thou?
+
+SIR JOHN.
+A good fellow.
+
+KING.
+So am I too.  I see thou dost know me.
+
+SIR JOHN.
+If thou be a good fellow, play the good fellow's part:
+deliver thy purse without more ado.
+
+KING.
+I have no money.
+
+SIR JOHN.
+I must make you find some before we part.  If you have
+no money, you shall have war:  as many sound dry blows 
+as your skin can carry.
+
+KING.
+Is that the plain truth?
+
+SIR JOHN.
+Sirra, no more ado; come, come, give me the money you
+have.  Dispatch, I cannot stand all day.
+
+KING.
+Well, if thou wilt needs have it, there tis:  just the proverb,
+one thief robs another.  Where the devil are all my old
+thieves, that were wont to keep this walk?  Falstaff, the
+villain, is so fat, he cannot get on's horse, but me thinks
+Poines and Peto should be stirring here about.
+
+SIR JOHN.
+How much is there on't, of thy word?
+
+KING. 
+A hundred pound in Angels, on my word.
+The time has been I would have done as much
+For thee, if thou hadst past this way, as I have now.
+
+SIR JOHN.
+Sirra, what art thou? thou seem'st a gentleman.
+
+KING.
+I am no less; yet a poor one now, for thou hast all my money.
+
+SIR JOHN.
+>From whence cam'st thou?
+
+KING. 
+>From the court at Eltham.
+
+SIR JOHN.
+Art thou one of the King's servants?
+
+KING. 
+Yes, that I am, and one of his chamber.
+
+SIR JOHN.
+I am glad thou art no worse; thou mayest the better spare thy 
+money:  & thinkst thou thou mightst get a poor thief his
+pardon, if he should have need.
+ 
+KING.
+Yes, that I can.
+
+SIR JOHN.
+Wilt thou do so much for me, when I shall have occasion?
+
+KING. 
+Yes, faith will I, so it be for no murther.
+
+SIR JOHN.
+Nay, I am a pitiful thief; all the hurt I do a man, I take but
+his purse; I'll kill no man.
+
+KING. 
+Then, of my word, I'll do it.
+
+SIR JOHN.
+Give me thy hand of the same.
+
+KING.
+There tis.
+
+SIR JOHN.
+Me thinks the King should be good to thieves, because he has
+been a thief himself, though I think now he be turned true-man.
+
+KING. 
+Faith, I have heard indeed he has had an ill name that way in
+his youth; but how canst thou tell he has been a thief?
+
+SIR JOHN.
+How?  Because he once robbed me before I fell to the trade
+my self; when that foul villainous guts, that led him to all
+that rogery, was in's company there, that Falstaff.
+
+KING.
+[Aside.]  Well, if he did rob thee then, thou art but even with
+him now, I'll be sworn.--Thou knowest not the king now, I
+think, if thou sawest him?
+
+SIR JOHN.
+Not I, yfaith.
+
+KING.
+[Aside.]  So it should seem.
+
+
+SIR JOHN.
+Well, if old King Henry had lived, this King that is now had
+made thieving the best trade in England.
+
+KING.
+Why so?
+
+SIR JOHN.
+Because he was the chief warden of our company.  It's pity
+that e'er he should have been a King; he was so brave a 
+thief.  But, sirra, wilt remember my pardon if need be?
+
+KING.
+Yes, faith, will I.
+
+SIR JOHN.
+Wilt thou? well then, because thou shalt go safe--for thou 
+mayest hap (being so early) be met with again before thou
+come to Southwark--if any man, when he should bid thee
+good morrow, bid thee stand, say thou but Sir John, and he
+will let thee pass.
+
+KING.
+Is that the word? well, then, let me alone.
+
+SIR JOHN.
+Nay, sirra, because I think indeed I shall have some occasion
+to use thee, & as thou comest oft this way, I may light on thee
+another time not knowing thee, here! I'll break this Angel.
+Take thou half of it; this is a token betwixt thee and me.
+
+KING.
+God have mercy; farewell.
+
+[Exit.]
+
+SIR JOHN.
+O my fine golden slaves! here's for thee, wench, yfaith.  Now,
+Doll, we will revel in our bower! this is a tithe pig of my
+vicarage.  God have mercy, neighbour Shooters hill; you paid
+your tithe honestly.  Well, I hear there is a company of rebels
+up against the King, got together in Ficket field near Holborne,
+and as it is thought here in Kent, the King will be there to
+night in's own person; well, I'll to the King's camp, and it
+shall go hard, but, if there be any doings, I'll make some good
+boot amongst them.
+
+[Exit.]
+
+
+ACT IV. SCENE I. A field near London. King Henry's camp.
+
+[Enter King Henry, Suffolk, Huntington, and two with lights.]
+
+KING.
+My lords of Suffolk and of Huntington,
+Who scouts it now? or who stands Sentinels?
+What men of worth? what Lords do walk the round?
+
+SUFFOLK.
+May it please your Highness--
+
+KING.
+Peace, no more of that.
+The King's asleep; wake not his majesty
+With terms nor titles; he's at rest in bed.
+Kings do not use to watch themselves; they sleep,
+And let rebellion and conspiracy
+Revel and havoc in the common wealth.--
+Is London looked unto?
+
+HUNTINGTON.
+It is, my Lord:
+Your noble Uncle Exeter is there,
+Your brother Gloucester and my Lord of Warwick,
+Who, with the mayor and the Aldermen,
+Do guard the gates, and keep good rule within;
+The Earl of Cambridge and sir Thomas Gray
+Do walk the Round; Lord Scroop and Butler scout.
+So, though it please your majesty to jest,
+Were you in bed, well might you take your rest.
+
+KING.
+I thank ye, Lords, but you do know of old,
+That I have been a perfect night-walker.
+London, you say, is safely looked unto--
+Alas, poor rebels, there your aid must fail--
+And the Lord Cobham, sir John Old-castle,
+He's quiet in Kent.  Acton, ye are deceived;
+Reckon again, you count without your host;
+To morrow you shall give account to us.
+Til when, my friends, this long cold winter's night
+How can we spend?  King Harry is a sleep
+And all his Lords, these garments tell us so;
+All friends at football, fellows all in field,
+Harry, and Dick, and George.  Bring us a drum;
+Give us square dice, we'll keep this court of guard
+For all good fellows companies that come.
+Where's that mad priest ye told me was in Arms,
+To fight, as well as pray, if need required?
+
+SUFFOLK.
+He's in the Camp, and if he know of this,
+I undertake he would not be long hence.
+
+KING.
+Trip, Dick; trip, George.
+
+[They trip.]
+
+HUNTINGTON.
+I must have the dice.
+What do we play at?
+
+[They play at dice.]
+
+SUFFOLK.
+Passage, if ye please.
+
+HUNTINGTON.
+Set round then; so, at all.
+
+KING.
+George, you are out.
+Give me the dice.  I pass for twenty pound.
+Here's to our lucky passage into France.
+
+HUNTINGTON.
+Harry, you pass indeed, for you sweep all.
+
+SUFFOLK.
+A sign king Harry shall sweep all in France.
+
+[Enter Sir John.]
+
+SIR JOHN.
+Edge ye, good fellows; take a fresh gamester in.
+
+
+KING.
+Master Parson?  We play nothing but gold.
+
+SIR JOHN.
+And, fellow, I tell thee that the priest hath gold.  Gold?
+sblood, ye are but beggarly soldiers to me.  I think I have
+more gold than all you three.
+
+HUNTINGTON.
+It may be so, but we believe it not.
+
+KING.
+Set, priest, set.  I pass for all that gold.
+
+SIR JOHN.
+Ye pass, indeed.
+
+KING.
+Priest, hast thou any more?
+
+SIR JOHN.
+Zounds, what a question's that?
+I tell thee I have more than all you three.
+At these ten Angels!
+
+KING.
+I wonder how thou comest by all this gold;
+How many benefices hast thou, priest?
+
+SIR JOHN.
+Yfaith, but one.  Dost wonder how I come by gold?  I
+wonder rather how poor soldiers should have gold; for
+I'll tell thee, good fellow:  we have every day tithes,
+offerings, christenings, weddings, burials; and you poor
+snakes come seldom to a booty.  I'll speak a proud word:
+I have but one parsonage, Wrotham; tis better than the 
+Bishopric of Rochester.  There's ne'er a hill, heath, nor
+down in all Kent, but tis in my parish:  Barham down, 
+Chobham down, Gad's Hill, Wrotham hill, Black heath,
+Cock's heath, Birchen wood, all pay me tithe. Gold, 
+quoth a? ye pass not for that.
+
+SUFFOLK.
+Harry, ye are out; now, parson, shake the dice.
+
+SIR JOHN.
+Set, set; I'll cover ye at all.  A plague on't, I am out:  the
+devil, and dice, and a wench, who will trust them?
+
+SUFFOLK.
+Sayest thou so, priest?  Set fair; at all for once.
+
+KING.
+Out, sir; pay all.
+
+SIR JOHN.
+Sblood, pay me angel gold. 
+I'll none of your cracked French crowns nor pistolets.
+Pay me fair angel gold, as I pay you.
+
+KING.
+No cracked French crowns?  I hope to see more cracked
+French crowns ere long.
+
+SIR JOHN.
+Thou meanest of French men's crowns, when the King is
+in France.
+
+HUNTINGTON.
+Set round, at all.
+
+SIR JOHN.
+Pay all:  this is some luck.
+
+KING.
+Give me the dice, tis I must shred the priest:
+At all, sir John.
+
+SIR JOHN.
+The devil and all is yours.  At that!  Sdeath, what casting 
+is this?
+
+SUFFOLK.
+Well thrown, Harry, yfaith.
+
+KING.
+I'll cast better yet.
+
+SIR JOHN.
+Then I'll be hanged.  Sirra, hast thou not given thy soul to
+the devil for casting?
+
+
+KING.
+I pass for all.
+
+SIR JOHN.
+Thou passest all that e'er I played withal.
+Sirra, dost thou not cog, nor foist, nor slur?
+
+KING.
+Set, parson, set; the dice die in my hand:
+When parson, when? what, can ye find no more?
+Already dry? wast you bragged of your store?
+
+SIR JOHN.
+All's gone but that.
+
+HUNTINGTON.
+What? half a broken angel?
+
+SIR JOHN.
+Why sir, tis gold.
+
+KING.
+Yea, and I'll cover it.
+
+SIR JOHN.
+The devil do ye good on't, I am blind, ye have blown me up.
+
+KING.
+Nay, tarry, priest; ye shall not leave us yet.
+Do not these pieces fit each other well?
+
+SIR JOHN.
+What if they do?
+
+KING.
+Thereby begins a tale:
+There was a thief, in face much like Sir John--
+But twas not he, that thief was all in green--
+Met me last day at Black Heath, near the park,
+With him a woman.  I was all alone
+And weaponless, my boy had all my tools,
+And was before providing me a boat.
+Short tale to make, sir John--the thief, I mean--
+Took a just hundreth pound in gold from me.
+I stormed at it, and swore to be revenged
+If e'er we met.  He, like a lusty thief,
+Brake with his teeth this Angel just in two
+To be a token at our meeting next,
+Provided I should charge no Officer
+To apprehend him, but at weapon's point
+Recover that and what he had beside.
+Well met, sir John; betake ye to your tools
+By torch light, for, master parson, you are he
+That had my gold.
+
+SIR JOHN.
+Zounds, I won 't in play, in fair square play, of the
+keeper of Eltham park; and that I will maintain with
+this poor whinyard, be you two honest men to stand
+and look upon's, and let's alone, and take neither part.
+
+KING.
+Agreed!  I charge ye do not budget a foot.
+Sir John, have at ye.
+
+SIR JOHN.
+Soldier, ware your sconce.
+
+[Here, as they are ready to strike, enter Butler and draws
+his weapon and steps betwixt them.]
+
+BUTLER.
+Hold, villains, hold! my Lords, what do you mean,
+To see a traitor draw against the King?
+
+SIR JOHN.
+The King!  God's will, I am in a proper pickle.
+
+KING.
+Butler, what news? why dost thou trouble us?
+
+BUTLER.
+Please it your Highness, it is break of day,
+And as I scouted near to Islington,
+The gray eyed morning gave me glimmering
+Of armed men coming down Highgate hill,
+Who by their course are coasting hitherward.
+
+KING.
+Let us withdraw, my Lords.  Prepare our troops
+To charge the rebels, if there be such cause.
+
+For this lewd priest, this devilish hypocrite,
+That is a thief, a gamester, and what not,
+Let him be hanged up for example sake.
+
+SIR JOHN.
+Not so my gracious sovereign.  I confess that I am
+a frail man, flesh and blood as other are:  but, set my
+imperfections aside, by this light, ye have not a taller
+man, nor a truer subject to the Crown and State, than
+Sir John of Wrotham.
+
+KING.
+Will a true subject rob his King?
+
+SIR JOHN.
+Alas, twas ignorance and want, my gracious liege.
+
+KING.
+Twas want of grace.  Why, you should be as salt
+To season others with good document,
+Your lives as lamps to give the people light,
+As shepherds, not as wolves to spoil the flock.
+Go hang him, Butler.
+
+BUTLER.
+Didst thou not rob me?
+
+SIR JOHN.
+I must confess I saw some of your gold.  But, my dread
+Lord, I am in no humor for death; therefore, save my life.
+God will that sinners live; do not you cause me die.  Once
+in their lives the best may go astray, and if the world say
+true, your self (my liege) have been a thief.
+
+KING.
+I confess I have,
+But I repent and have reclaimed my self.
+
+SIR JOHN.
+So will I do, if you will give me time.
+
+KING.
+Wilt thou?  My lords, will you be his sureties?
+
+HUNTINGTON.
+That when he robs again, he shall be hanged.
+
+
+SIR JOHN.
+I ask no more.
+
+KING.
+And we will grant thee that.
+Live and repent, and prove an honest man,
+Which when I hear, and safe return from France,
+I'll give thee living:  till then take thy gold;
+But spend it better than at cards or wine,
+For better virtues fit that coat of thine.
+
+SIR JOHN.
+Vivat Rex & curat lex!  My liege, if ye have cause
+of battle, ye shall see Sir John of Wrotham bestir
+himself in your quarrel.
+
+[Exeunt.]
+
+
+ACT IV. SCENE II. A field of Battle near London.
+
+[After an alarum enter Harry, Suffolk, Huntington,
+Sir John, bringing forth Acton, Beverley, and Murley 
+prisoners.]
+
+KING.
+Bring in those traitors, whose aspiring minds
+Thought to have triumpht in our overthrow.
+But now ye see, base villains, what success
+Attends ill actions wrongfully attempted.
+Sir Roger Acton, thou retainst the name
+Of knight, and shouldst be more discreetly tempered,
+Than join with peasants:  gentry is divine,
+But thou hast made it more than popular.
+
+ACTON.
+Pardon, my Lord; my conscience urged me to it.
+
+KING.
+Thy conscience? then thy conscience is corrupt,
+For in thy conscience thou art bound to us,
+And in thy conscience thou shouldst love thy country;
+Else what's the difference twixt a Christian
+And the uncivil manners of the Turk?
+
+BEVERLEY.
+We meant no hurt unto your majesty,
+But reformation of Religion.
+
+KING.
+Reform Religion? was it that ye sought?
+I pray who gave you that authority?
+Belike, then, we do hold the scepter up
+And sit within the throne but for a cipher.
+Time was, good subjects would make known their grief
+And pray amendment, not enforce the same,
+Unless their King were tyrant, which I hope
+You cannot justly say that Harry is.
+What is that other?
+
+SUFFOLK.
+A malt-man, my Lord,
+And dwelling in Dunstable as he says.
+
+KING.
+Sirra, what made you leave your barley broth,
+To come in armour thus against your King?
+
+MURLEY.
+Fie, paltry, paltry; to and fro, in and out upon occasion;
+what a world's this!  Knight-hood (my liege) twas
+knight-hood brought me hither.  They told me I had
+wealth enough to make my wife a lady.
+
+KING.
+And so you brought those horses which we saw,
+Trapped all in costly furniture, and meant
+To wear these spurs when you were knighted once?
+
+MURLEY.
+In and out upon occasion, I did.
+
+KING.
+In and out upon occasion, therefore,
+You shall be handed, and in the stead of wearing
+These spurs upon your heels, about your neck
+They shall bewray your folly to the world.
+
+SIR JOHN.
+In and out upon occasion, that goes hard.
+
+MURLEY.
+Fie, paltry, paltry, to and fro; good my liege, a
+pardon.  I am sorry for my fault.
+
+KING.
+That comes too late:  but tell me, went there none
+Beside sir Roger Acton, upon whom
+You did depend to be your governour?
+
+MURLEY.
+None, none, my Lord, but sir John Old-castle.
+
+KING.
+Bears he part in this conspiracy?
+
+[Enter Bishop.]
+
+ACTON.
+We looked, my Lord, that he would meet us here.
+
+KING.
+But did he promise you that he would come?
+
+ACTON.
+Such letters we received forth of Kent.
+
+BISHOP.
+Where is my Lord the King?--Health to your grace.
+Examining, my Lord, some of these caitive rebels,
+It is a general voice amongst them all,
+That they had never come unto this place,
+But to have met their valiant general,
+The good Lord Cobham, as they title him:
+Whereby, my Lord, your grace may now perceive,
+His treason is apparent, which before
+He sought to colour by his flattery.
+
+KING.
+Now, by my royalty, I would have sworn
+But for his conscience, which I bear withal,
+There had not lived a more true hearted subject.
+
+BISHOP.
+It is but counterfeit, my gracious lord,
+And therefore, may it please your majesty
+To set your hand unto this precept here,
+By which we'll cause him forthwith to appear,
+And answer this by order of the law.
+
+KING.
+Bishop, not only that, but take commission
+To search, attach, imprison, and condemn
+This most notorious traitor as you please.
+
+BISHOP.
+It shall be done, my Lord, without delay.--
+So now I hold, Lord Cobham, in my hand,
+That which shall finish thy disdained life.
+
+KING.
+I think the iron age begins but now,
+(Which learned poets have so often taught)
+Wherein there is no credit to be given,
+To either words, or looks, or solemn oaths.
+For if there were, how often hath he sworn,
+How gently tuned the music of his tongue,
+And with what amiable face beheld he me,
+When all, God knows, was but hypocricy.
+
+[Enter Cobham.]
+
+COBHAM.
+Long life and prosperous reign unto my lord.
+
+KING.
+Ah, villain, canst thou wish prosperity,
+Whose heart includeth naught but treachery?
+I do arrest thee here my self, false knight,
+Of treason capital against the state.
+
+COBHAM.
+Of treason, mighty prince? your grace mistakes.
+I hope it is but in the way of mirth.
+
+KING.
+Thy neck shall feel it is in earnest shortly.
+Darst thou intrude into our presence, knowing
+How heinously thou hast offended us?
+But this is thy accustomed deceit;
+Now thou perceivest thy purpose is in vain,
+With some excuse or other thou wilt come,
+To clear thy self of this rebellion.
+
+
+COBHAM.
+Rebellion, good my Lord?  I know of none.
+
+KING.
+If you deny it, here is evidence.
+See you these men? you never counseled,
+Nor offered them assistance in their wars?
+
+COBHAM.
+Speak, sirs.  Not one but all; I crave no favour.
+Have ever I been conversant with you,
+Or written letters to encourage you,
+Or kindled but the least or smallest part
+Of this your late unnatural rebellion?
+Speak, for I dare the uttermost you can.
+
+MURLEY.
+In and out upon occasion, I know you not.
+
+KING.
+No? didst not say that sir John Old-castle
+Was one with whom you purposed to have met?
+
+MURLEY.
+True, I did say so, but in what respect?
+Because I heard it was reported so.
+
+KING.
+Was there no other argument but that?
+
+ACTON.
+To clear my conscience ere I die, my lord,
+I must confess, we have no other ground
+But only Rumor, to accuse this lord,
+Which now I see was merely fabulous.
+
+KING.
+The more pernitious you to taint him then,
+Whom you knew not was faulty, yea or no.
+
+COBHAM.
+Let this, my Lord, which I present your grace,
+Speak for my loyalty:  read these articles,
+And then give sentence of my life or death.
+
+KING.
+Earl Cambridge, Scroop, and Gray corrupted
+With bribes from Charles of France, either to win
+My Crown from me, or secretly contrive
+My death by treason?  Is this possible?
+
+COBHAM.
+There is the platform, and their hands, my lord,
+Each severally subscribed to the same.
+
+KING.
+Oh never heard of, base ingratitude!
+Even those I hug within my bosom most
+Are readiest evermore to sting my heart.
+Pardon me, Cobham, I have done thee wrong;
+Hereafter I will live to make amends.
+Is, then, their time of meeting no near hand?
+We'll meet with them, but little for their ease,
+If God permit.  Go, take these rebels hence;
+Let them have martial law:  but as for thee,
+Friend to thy king and country, still be free.
+
+[Exeunt.]
+
+MURLEY.
+Be it more or less, what a world is this?
+Would I had continued still of the order of knaves,
+And never sought knighthood, since it costs so dear.
+Sir Roger, I may thank you for all.
+
+ACTON.
+Now tis too late to have it remedied,
+I prithee, Murley, do not urge me with it.
+
+HUNTINGTON.
+Will you away, and make no more to do?
+
+MURLEY.
+Fie, paltry, paltry! to and fro, as occasion serves;
+If you be so hasty, take my place.
+
+HUNTINGTON.
+No, good sir knight, you shall begin in your hand.
+
+MURLEY.
+I could be glad to give my betters place.
+
+
+[Exeunt.]
+
+
+ACT IV. SCENE III. Kent. Court before lord 
+Cobham's house.
+
+[Enter Bishop, lord Warden, Cromer the Shrieve,
+Lady Cob, and attendants.]
+
+BISHOP.
+I tell ye, Lady, it's not possible
+But you should know where he conveys himself,
+And you have hid him in some secret place.
+
+LADY COBHAM.
+My Lord, believe me, as I have a soul,
+I know not where my lord my husband is.
+
+BISHOP.
+Go to, go to, ye are an heretic,
+And will be forced by torture to confess,
+If fair means will not serve to make ye tell.
+
+LADY COBHAM.
+My husband is a noble gentleman,
+And need not hide himself for any fact
+That ere I heard of; therefore wrong him not.
+
+BISHOP.
+Your husband is a dangerous schismatic,
+Traitor to God, the King, and common wealth:
+And therefore, master Croamer, shrieve of Kent,
+I charge you take her to your custody,
+And seize the goods of Sir John Old-castle
+To the King's use.  Let her go in no more,
+To fetch so much as her apparel out.
+There is your warrant from his majesty.
+
+LORD WARDEN.
+Good my Lord Bishop, pacify your wrath
+Against the Lady.
+
+BISHOP.
+Then let her confess
+Where Old-castle her husband is concealed.
+
+
+LORD WARDEN.
+I dare engage mine honor and my life,
+Poor gentlewoman, she is ignorant
+And innocent of all his practises,
+If any evil by him be practised.
+
+BISHOP.
+If, my Lord Warden? nay, then I charge you,
+That all the cinque Ports, whereof you are chief,
+Be laid forthwith, that he escape us not.
+Shew him his highness' warrant, Master Shrieve.
+
+LORD WARDEN.
+I am sorry for the noble gentleman--
+
+[Enter Old-castle and Harpoole.]
+
+BISHOP.
+Peace, he comes here; now do your office.
+
+COBHAM.
+Harpoole, what business have we here in hand?
+What makes the Bishop and the Sheriff here?
+I fear my coming home is dangerous,
+I would I had not made such haste to Cobham.
+
+HARPOOLE.
+Be of good cheer, my Lord:  if they be foes, we'll
+scramble shrewdly with them:  if they be friends,
+they are welcome.  One of them (my Lord Warden)
+is your friend; but me thinks my lady weeps; I like
+not that.
+
+CROAMER.
+Sir John Old-castle, Lord Cobham, in the King's 
+majesty's name, I arrest ye of high treason.
+
+COBHAM.
+Treason, Master Croamer?
+
+HARPOOLE.
+Treason, Master Shrieve? sblood, what treason?
+
+COBHAM.
+Harpoole, I charge thee, stir not, but be quiet still.
+Do ye arrest me, Master Shrieve, for treason?
+
+BISHOP.
+Yea, of high treason, traitor, heretic.
+
+COBHAM.
+Defiance in his face that calls me so.
+I am as true a loyal gentleman
+Unto his highness as my proudest enemy.
+The King shall witness my late faithful service,
+For safety of his sacred majesty.
+
+BISHOP.
+What thou art the king's hand shall testify:
+Shewt him, Lord Warden.
+
+COBHAM.
+Jesu defend me!
+Is't possible your cunning could so temper
+The princely disposition of his mind,
+To sign the damage of a loyal subject?
+Well, the best is, it bears an antedate,
+Procured by my absence, and your malice,
+But I, since that, have shewd my self as true
+As any churchman that dare challenge me.
+Let me be brought before his majesty;
+If he acquit me not, then do your worst.
+
+BISHOP.
+We are not bound to do king offices
+For any traitor, schismatic, nor heretic.
+The king's hand is our warrant for our work,
+Who is departed on his way for France,
+And at Southhampton doth repose this night.
+
+HARPOOLE.
+O that it were the blessed will of God, that thou
+and I were within twenty mile of it, on Salisbury
+plan!  I would lose my head if ever thou broughtst
+thy head hither again.
+
+[Aside.]
+
+COBHAM.
+My Lord Warden o' the cinque Ports, & my Lord of
+Rochester, ye are joint Commissioners:  favor me so much,
+On my expence to bring me to the king.
+
+BISHOP.
+What, to Southhampton?
+
+COBHAM.
+Thither, my good Lord,
+And if he do not clear me of all guilt,
+And all suspicion of conspiracy,
+Pawning his princely warrant for my truth:
+I ask no favour, but extremest torture.
+Bring me, or send me to him, good my Lord:
+Good my Lord Warden, Master Shrieve, entreat.
+
+[Here the Lord Warden, and Croamer uncover
+the Bishop, and secretly whispers with him.]
+
+Come hither, lady--nay, sweet wife, forbear
+To heap one sorrow on another's neck:
+Tis grief enough falsely to be accused,
+And not permitted to acquit my self;
+Do not thou with thy kind respective tears,
+Torment thy husband's heart that bleeds for thee,
+But be of comfort.  God hath help in store
+For those that put assured trust in him.
+Dear wife, if they commit me to the Tower,
+Come up to London to your sister's house:
+That being near me, you may comfort me.
+One solace find I settled in my soul,
+That I am free from treason's very thought:
+Only my conscience for the Gospel's sake
+Is cause of all the troubles I sustain.
+
+LADY COBHAM.
+O my dear Lord, what shall betide of us?
+You to the Tower, and I turned out of doors,
+Our substance seized unto his highness' use,
+Even to the garments longing to our backs.
+
+HARPOOLE.
+Patience, good madame, things at worst will mend,
+And if they do not, yet our lives may end.
+
+BISHOP.
+Urge it no more, for if an Angel spake,
+I swear by sweet saint Peter's blessed keys,
+First goes he to the Tower, then to the stake.
+
+CROAMER.
+But by your leave, this warrant doth not stretch
+To imprison her.
+
+BISHOP.
+No, turn her out of doors,
+
+[Lord Warden and Old-castle whisper.]
+
+Even as she is, and lead him to the Tower,
+With guard enough for fear of rescuing.
+
+LADY COBHAM.
+O, God requite thee, thou blood-thirsty man.
+
+COBHAM.
+May it not be, my Lord of Rochester?
+Wherein have I incurred your hate so far,
+That my appeal unto the King's denied?
+
+BISHOP.
+No hate of mine, but power of holy church,
+Forbids all favor to false heretics.
+
+COBHAM.
+Your private malice, more than public power,
+Strikes most at me, but with my life it ends.
+
+HARPOOLE.
+O that I had the Bishop in that fear,
+
+[Aside.]
+
+That once I had his Sumner by our selves!
+
+CROAMER.
+My Lord, yet grant one suit unto us all,
+That this same ancient serving man may wait
+Upon my lord his master in the Tower.
+
+BISHOP.
+This old iniquity, this heretic?
+That, in contempt of our church discipline,
+Compelled my Sumner to devour his process!
+Old Ruffian past-grace, upstart schismatic,
+Had not the King prayed us to pardon ye,
+Ye had fried for it, ye grizzled heretic.
+
+HARPOOLE.
+Sblood, my lord Bishop, ye do me wrong.  I am
+neither heretic nor puritan, but of the old church:
+I'll swear, drink ale, kiss a wench, go to mass, eat
+fish all Lent, and fast Fridays with cakes and wine,
+fruit and spicery, shrive me of my old sins afore
+Easter, and begin new afore whitsontide.
+
+CROAMER.
+A merry, mad, conceited knave, my lord.
+
+HARPOOLE.
+That knave was simply put upon the Bishop.
+
+BISHOP.
+Well, God forgive him and I pardon him.
+Let him attend his master in the Tower,
+For I in charity wish his soul no hurt.
+
+COBHAM.
+God bless my soul from such cold charity!
+
+BISHOP.
+Too th' Tower with him, and when my leisure serves,
+I will examine him of Articles.
+Look, my lord Warden, as you have in charge,
+The Shrive perform his office.
+
+LORD WARDEN.
+Yes, my lord.
+
+[Enter the Sumner with books.]
+
+BISHOP.
+What bringst thou there? what, books of heresy?
+
+SUMNER.
+Yea, my lord, here's not a latin book, no, not so much
+as our lady's Psalter.  Here's the Bible, the testament,
+the Psalms in meter, the sickman's salve, the treasure of
+gladness, and all in English, not so much but the Almanac's
+English.
+
+
+BISHOP.
+Away with them, to the fire with them, Clun!
+Now fie upon these upstart heretics.
+All English! burn them, burn them quickly, Clun!
+
+HARPOOLE.
+But do not, Sumner, as you'll answer it, for I have there
+English books, my lord, that I'll not part with for your
+Bishopric:  Bevis of Hampton, Owlglass, the Friar and
+the Boy, Eleanor Rumming, Robin hood, and other such
+godly stories, which if ye burn, by this flesh, I'll make ye
+drink their ashes in Saint Marget's ale.
+
+[Exeunt.]
+
+
+ACT IV. SCENE IV. The entrance of the Tower.
+
+[Enter Bishop of Rochester with his men in livery coats.]
+
+FIRST SERVANT.
+Is it your honor's pleasure we shall stay,
+Or come back in the afternoon to fetch you?
+
+BISHOP.
+Now you have brought me here into the Tower,
+You may go back unto the Porters Lodge,
+And send for drink or such things as you want,
+Where if I have occasion to employ you,
+I'll send some officer to call you to me.
+Into the city go not, I command you:
+Perhaps I may have present need to use you.
+
+SECOND SERVANT.
+We will attend your worship here without.
+
+BISHOP.
+Do so, I pray you.
+
+THIRD SERVANT.
+Come, we may have a quart of wine at the Rose at
+Barking, I warrant you, and come back an hour before
+he be ready to go.
+
+FIRST SERVANT.
+We must hie us then.
+
+THIRD SERVANT.
+Let's away.
+
+[Exeunt.]
+
+BISHOP.
+Ho, Master Lieutenant.
+
+LIEUTENANT.
+Who calls there?
+
+BISHOP.
+A friend of yours.
+
+LIEUTENANT.
+My lord of Rochester! your honor's welcome.
+
+BISHOP.
+Sir, here's my warrant from the Counsel,
+For conference with sir John Old-castle,
+Upon some matter of great consequence.
+
+LIEUTENANT.
+Ho, sir John!
+
+HARPOOLE.
+Who calls there?
+
+LIEUTENANT.
+Harpoole, tell Sir John, that my lord of Rochester
+Comes from the counsel to confer with him.
+
+HARPOOLE.
+I will, sir.
+
+LIEUTENANT.
+I think you may as safe without suspicion,
+As any man in England, as I hear,
+For it was you most labored his commitment.
+
+BISHOP.
+I did, sir, and nothing repent it, I assure you.
+
+[Enter sir John Old-castle and Harpoole.]
+
+
+Master Leiftenant, I pray you give us leave,
+I must confer here with sir John a little.
+
+LIEUTENANT.
+With all my heart, my lord.
+
+HARPOOLE.
+[Aside.]  My lord, be ruled by me:  take this occasion
+while tis offered, and on my life your lordship shall
+escape.
+
+COBHAM.
+No more, I say; peace, lest he should suspect it.
+
+BISHOP.
+Sir John, I am come unto you from the lords of his
+highness' most honorable counsel, to know if yet you
+do recant your errors, conforming you unto the holy
+church.
+
+COBHAM.
+My lord of Rochester, on good advise,
+I see my error, but yet, understand me,
+I mean not error in the faith I hold,
+But error in submitting to your pleasure;
+Therefore, your lordship, without more to do,
+Must be a means to help me to escape.
+
+BISHOP.
+What means, thou heretic?
+Darst thou but lift thy hand against my calling?
+
+COBHAM.
+No, not to hurt you for a thousand pound.
+
+HARPOOLE.
+Nothing but to borrow your upper garments a little;
+not a word more, for if you do, you die:  peace, for
+waking the children.  There; put them on; dispatch, my
+lord.  The window that goes out into the leads is sure
+enough, I told you that before:  there, make you ready;
+I'll convey him after, and bind him surely in the inner
+room.
+
+[Carries the bishop into the Tower, and returns.]
+
+
+COBHAM.
+This is well begun; God send us happy speed,
+Hard shift you see men make in time of need, Harpoole.
+
+[Puts on the bishop's cloak.]
+
+HARPOOLE.
+Here my Lord; come, come away.
+
+[Enter serving men again.]
+
+FIRST SERVANT.
+I marvel that my lord should stay so long.
+
+SECOND SERVANT.
+He hath sent to seek us, I dare lay my life.
+
+THIRD SERVANT.
+We come in good time; see, where he is coming.
+
+HARPOOLE.
+I beseech you, good my lord of Rochester, be favourable
+to my lord and master.
+
+COBHAM.
+The inner rooms be very hot and close,
+I do not like this air here in the Tower.
+
+HARPOOLE.
+His case is hard my lord.--You shall safely get out of the
+Tower; but I will down upon them, in which time get
+you away.
+
+COBHAM.
+Fellow, thou troublest me.
+
+HARPOOLE.
+Hear me, my Lord!--Hard under Islington wait you my
+coming; I will bring my Lady, ready with horses to convey
+you hence.
+
+COBHAM.
+Fellow, go back again unto thy Lord and counsel him.
+
+HARPOOLE.
+Nay, my good lord of Rochester, I'll bring you to Saint
+Albans through the woods, I warrant you.
+
+COBHAM.
+Villain, away.
+
+HARPOOLE.
+Nay, since I am past the Tower's liberty, thou part'st not so.
+
+[He draws.]
+
+COBHAM.
+Clubs, clubs, clubs!
+
+FIRST SERVANT.
+Murther, murther, murther!
+
+SECOND SERVANT.
+Down with him!
+
+[They fight.]
+
+THIRD SERVANT.
+A villain traitor!
+
+HARPOOLE.
+You cowardly rogues!
+
+[Sir John escapes.]
+
+[Enter Lieutenant and his men.]
+
+LIEUTENANT.
+Who is so bold as dare to draw a sword,
+So near unto the entrance of the Tower?
+
+FIRST SERVANT.
+This ruffian, servant to sir John Old-castle,
+Was like to have slain my Lord.
+
+LIEUTENANT.
+Lay hold on him.
+
+HARPOOLE.
+Stand off, if you love your puddings.
+
+[Rochester calls within.]
+
+BISHOP.
+Help, help, help!  Master Lieutenant, help!
+
+LIEUTENANT.    
+Who's that within? some treason in the Tower
+Upon my life.  Look in; who's that which calls?
+
+[Enter Rochester bound.]
+
+LIEUTENANT.
+Without your cloak, my lord of Rochester?
+
+HARPOOLE.
+There, now it works, then let me speed, for now
+Is the fittest time for me to scape away.
+
+[Exit.]
+
+LIEUTENANT.
+Why do you look so ghastly and affrighted?
+
+BISHOP.
+Old-castle, that traitor, and his man,
+When you had left me to confer with him,
+Took, bound, and stript me, as you see,
+And left me lying in his inner chamber,
+And so departed, and I--
+
+LIEUTENANT.
+And you? ne'er say that the Lord Cobham's man
+Did here set upon you like to murther you.
+
+FIRST SERVANT.
+And so he did.
+
+BISHOP.
+It was upon his master then he did,
+That in the brawl the traitor might escape.
+
+LIEUTENANT. 
+Where is this Harpoole?
+
+SECOND SERVANT.
+Here he was even now.
+
+
+LIEUTENANT.
+Where? can you tell?
+
+SECOND SERVANT.
+They are both escaped.
+
+LIEUTENANT.
+Since it so happens that he is escaped,
+I am glad you are a witness of the same,
+It might have else been laid unto my charge,
+That I had been consenting to the fact.
+
+BISHOP.
+Come, search shall be made for him with expedition,
+The havens laid that he shall not escape,
+And hue and cry continue through England,
+To find this damned, dangerous heretic.
+
+[Exeunt.]
+
+
+ACT V. SCENE I. A room in lord Cobham's house
+in Kent.
+
+[Enter Cambridge, Scroop, and Gray, as in a chamber, and
+set down at a table, consulting about their treason:  King
+Harry and Suffolk listening at the door.]
+
+CAMBRIDGE.
+In mine opinion, Scroop hath well advised,
+Poison will be the only aptest mean,
+And fittest for our purpose to dispatch him.
+
+GRAY.
+But yet there may be doubt in their delivery.
+Harry is wise; therefore, Earl of Cambridge,
+I judge that way not so convenient.
+
+SCROOP.
+What think ye then of this?  I am his bedfellow,
+And unsuspected nightly sleep with him.
+What if I venture in those silent hours,
+When sleep hath sealed up all mortal eyes,
+To murder him in bed? how like ye that?
+
+CAMBRIDGE.
+Herein consists no safety for your self,
+And, you disclosed, what shall become of us?
+But this day (as ye know) he will aboard--
+The winds so fair--and set away for France.
+If, as he goes, or entering in the ship,
+It might be done, then it were excellent.
+
+GRAY.
+Why any of these, or, if you will, I'll cause
+A present sitting of the Counsel, wherein
+I will pretend some matter of such weight
+As needs must have his royal company,
+And so dispatch him in the Counsel chamber.
+
+CAMBRIDGE.
+Tush, yet I hear not any thing to purpose.
+I wonder that lord Cobham stays so long;
+His counsel in this case would much avail us.
+
+[They rise from the table, and the King steps in
+to them, with his Lords.]
+
+SCROOP.
+What, shall we rise thus, and determine nothing?
+
+KING.
+That were a shame indeed; no, sit again,
+And you shall have my counsel in this case.
+If you can find no way to kill this King,
+Then you shall see how I can further ye:
+Scroop's way of poison was indifferent,
+But yet, being bed-fellow unto the King,
+And unsuspected sleeping in his bosom,
+In mine opinion, that's the likelier way,
+For such false friends are able to do much,
+And silent night is Treason's fittest friend.
+Now, Cambridge, in his setting hence for France,
+Or by the way, or as he goes abroad,
+To do the deed, what was indifferent too,
+Yet somewhat doubtful, might I speak my mind.
+For many reasons needless now to urge.
+Mary, Lord Gray came something near the point:
+To have the King at counsel, and there murder him,
+As Caesar was, amongst his dearest friends:
+None like to that, if all were of his mind.
+Tell me, oh tell me, you, bright honor's stains,
+For which of all my kindnesses to you,
+Are ye become thus traitors to your king,
+And France must have the spoil of harry's life?
+
+ALL.
+Oh pardon us, dread lord.
+
+[All kneeling.]
+
+KING.
+How, pardon ye? that were a sin indeed.
+Drag them to death, which justly they deserve,
+
+[They lead them away.]
+
+And France shall dearly buy this villainy,
+So soon as we set footing on her breast.
+God have the praise for our deliverance;
+And next, our thanks, Lord Cobham, is to thee,
+True perfect mirror of nobility.
+
+[Exeunt.]
+
+
+ACT V. SCENE II. A high road near St. Albans.
+
+[Enter Priest and Doll.]
+
+SIR JOHN.
+Come, Doll, come; be merry, wench.
+Farewell, Kent, we are not fond for thee.
+Be lusty, my lass, come, for Lancashire,
+We must nip the Boung for these crowns.
+
+DOLL.
+Why, is all the gold spent already that you had the
+other day?
+
+SIR JOHN.
+Gone, Doll, gone; flown, spent, vanished:  the devil,
+drink and the dice has devoured all.
+
+DOLL.
+You might have left me in Kent, that you might, until 
+you had been better provided, I could have stayed at
+Cobham.
+
+SIR JOHN.
+No, Doll, no, I'll none of that; Kent's too hot, Doll, 
+Kent's too hot.  The weathercock of Wrotham will 
+crow no longer:  we have pluckt him, he has lost
+his feathers; I have pruned him bare, left him thrice;
+is moulted, is moulted, wench.
+
+DOLL.
+Faith, sir John, I might have gone to service again;
+old master Harpoole told me he would provide me a
+mistress.
+
+SIR JOHN.
+Peace, Doll, peace.  Come, mad wench, I'll make thee
+an honest woman; we'll into Lancashire to our friends:
+the troth is, I'll marry thee.  We want but a little money
+to buy us a horse, and to spend by the way; the next
+sheep that comes shall lose his fleece, we'll have these
+crowns, wench, I warrant thee.
+
+[Enter the Irish man with his master slain.]
+
+Stay, who comes here? some Irish villain, me thinks,
+that has slain a man, and draws him out of the way to
+rifle him.  Stand close, Doll, we'll see the end.
+
+[The Irish man falls to rifle his master.]
+
+IRISHMAN.
+Alas, poe mester, Sir Rishard Lee, be saint Patrick is
+rob and cut thy trote for dee shaine, and dy money, and
+dee gold ring be me truly:  is love thee well, but now dow
+be kill, thee bee shitten kanave.
+
+SIR JOHN. 
+Stand, sirra; what art thou?
+
+IRISHMAN.
+Be saint Patrick, mester, is pore Irisman, is a leufter.
+
+SIR JOHN.
+Sirra, sirra, you are a damned rogue; you have killed a
+man here, and rifled him of all that he has.  Sblood, you
+rogue, deliver, or I'll not leave you so much as an Irish
+hair above your shoulders, you whoreson Irish dog.
+Sirra, untruss presently; come, off and dispatch, or by
+this cross I'll fetch your head off as clean as a bark.
+
+IRISHMAN.
+Wee's me, saint Patrick!  Ise kill me mester for chain
+and his ring, and nows be rob of all:  mee's undoo.
+
+[Priest robs him.]
+
+SIR JOHN.
+Avant, you rascal!  Go, sirra, be walking.  Come, Doll,
+the devil laughs, when one thief robs another:  come,
+mad wench, we'll to saint Albans, and revel in our 
+bower; hey, my brave girl.
+
+DOLL.
+O thou art old sir John when all's done, yfaith.
+
+[Exeunt.]
+
+ACT V. SCENE III. St. Albans.  The entrance of a
+carrier's inn.
+
+[Enter the host of the Bell with the Irish man.]
+
+IRISHMAN.
+Be me tro, mester, is pore Irisman, is want ludging, is
+have no money, is starve and cold:  good mester, give
+her some meat; is famise and tie.
+
+HOST.
+Yfaith, my fellow, I have no lodging, but what I keep
+for my guess, that I may not disappoint:  as for meat
+thou shalt have such as there is, & if thou wilt lie in
+the barn, there's fair straw, and room enough.
+
+IRISHMAN.
+Is thank my mester hartily, de straw is good bed for me.
+
+HOST.
+Ho, Robin!
+
+ROBIN.
+Who calls?
+
+HOST.
+Shew this poor Irishman into the barn; go, sirra.
+
+[Exeunt.]
+
+[Enter carrier and Kate.]
+
+CLUB.
+Ho, who's within here? who looks to the horses?
+God's hat! here's fine work:  the hens in the manger, 
+and the hogs in the litter.  A bots found you all; here's
+a house well looked to, yvaith.
+
+KATE.
+Mas, goffe Club, I'se very cawd.
+
+CLUB.
+Get in, Kate, get in to fire and warm thee.  Ho!  John
+Hostler.
+
+[Enter Hostler.]
+
+HOSTLER.
+What, gaffer Club? welcome to saint Albans.  How does
+all our friends in Lancashire?
+
+CLUB.
+Well, God have mercy, John; how does Tom; where's he?
+
+HOSTLER.
+O, Tom is gone from hence; he's at the three horse-loves
+at Stony-stratford.  How does old Dick Dunne?
+
+CLUB.
+God's hat, old Dunne has been moyerd in a slough in
+Brickhill-lane, a plague found it; yonder is such
+abomination weather as never was seen.
+
+HOSTLER.
+God's hat, thief, have one half peck of peas and oats more
+for that:  as I am John Ostler, he has been ever as good a 
+jade as ever travelled.
+
+CLUB.
+Faith, well said, old Jack; thou art the old lad still.
+
+HOSTLER.
+Come, Gaffer Club, unload, unload, and get to supper, and
+I'll rub dun the while.  Come.
+
+[Exeunt.]
+
+
+ACT V. SCENE IV. The same. A room in the carrier's inn.
+
+[Enter the host, sir John Old-castle, and Harpoole.]
+
+HOST.
+Sir, you are welcome to this house, to such as here is with
+all my heart, but, by the mass, I fear your lodging will be
+the worst.  I have but two beds, and they are both in a
+chamber, and the carrier and his daughter lies in the one,
+and you and your wife must lie in the other.
+
+COBHAM.
+In faith, sir, for my self I do not greatly pass.
+My wife is weary, and would be at rest,
+For we have travelled very far today;
+We must be content with such as you have.
+
+HOST.
+But I cannot tell how to do with your man.
+
+HARPOOLE.
+What, hast thou never an empty room in thy house for me?
+
+HOST.
+Not a bed, by my troth:  there came a poor Irish man, and
+I lodged him in the barn, where he has fair straw, though
+he have nothing else.
+
+HARPOOLE.
+Well, mine host, I pray thee help me to a pair of fair
+sheets, and I'll go lodge with him.
+
+HOST.
+By the mass, that thou shalt; a good pair of hempen
+sheets, were never lain in:  Come.
+
+[Exeunt.]
+
+
+
+ACT V. SCENE V. The same. A street.
+
+[Enter Constable, Mayor, and Watch.]
+
+MAYOR.
+What? have you searched the town?
+
+CONSTABLE.
+All the town, sir; we have not left a house
+unsearched that uses to lodge.
+
+MAYOR.
+Surely, my lord of Rochester was then deceived,
+Or ill informed of sir John Old-castle,
+Or if he came this way he's past the town.
+He could not else have scaped you in the search.
+
+CONSTABLE.
+The privy watch hath been abroad all night,
+And not a stranger lodgeth in the town
+But he is known; only a lusty priest
+We found in bed with a pretty wench,
+That says she is his wife--yonder at the sheeres;
+But we have charged the host with his forth coming
+Tomorrow morning.
+
+MAYOR.
+What think you best to do?
+
+CONSTABLE.
+Faith, master mayor, here's a few straggling houses
+beyond the bridge, and a little Inn where carriers use
+to lodge, though I think sure he would ne'er lodge
+there:  but we'll go search, & the rather, because there
+came notice to the town the last night of an Irish man,
+that had done a murder, whom we are to make search for.
+
+MAYOR.
+Come, I pray you, and be circumspect.
+
+[Exeunt.]
+
+
+ACT V. SCENE VI. The same. Before the Carrier's Inn.
+Enter Watch.
+
+FIRST WATCH.
+First beset the house, before you begin the search.
+
+SECOND WATCH.
+Content; every man take a several place.
+
+[Here is heard a great noise within.  Keep, keep,
+strike him down there, down with him]]
+
+[Enter Constable with the Irish man in Harpoole's
+apparel.]
+
+CONSTABLE.
+Come, you villainous heretic, confess where your
+master is.
+
+IRISHMAN.
+Vat mester?
+
+MAYOR.
+Vat mester, you counterfeit rebel? this shall not serve
+your turn.
+
+IRISHMAN.
+Be sent Patrick I ha no mester.
+
+CONSTABLE.
+Where's the lord Cobham, sir John Old-castle, that
+lately is escaped out of the Tower?
+
+IRISHMAN.
+Vat lort Cobham?
+
+MAYOR.
+You counterfeit, this shall not serve you; we'll torture
+you, we'll make you to confess where that arch-heretic,
+Lord Cobham, is:  come, bind him fast.
+
+IRISHMAN.
+Ahone, ahone, ahone, a Cree!
+
+CONSTABLE.
+Ahone, you crafty rascal!
+
+[Exeunt.]
+
+
+
+
+ACT V. SCENE VII. The same. The yard of the Inn.
+
+[Lord Cobham comes out in his gown stealing.]
+
+COBHAM.
+Harpoole, Harpoole, I hear a marvelous noise about
+the house:  God warrant us, I fear we are pursued:
+what, Harpoole.
+
+HARPOOLE.
+[Within.]  Who calls there?
+
+COBHAM.
+Tis I; dost thou not hear a noise about the house?
+
+HARPOOLE.
+Yes, mary, do I:--zwounds, I can not find my hose;
+this Irish rascal that was lodged with me all night 
+hath stolen my apparel, and has left me nothing but
+a lowsy mantle, and a pair of brogues.  Get up, get
+up, and if the carrier and his wench be asleep, change
+you with them as he hath done with me, and see if
+we can escape.
+
+[Exit lord Cobham.]
+
+[A hoise again heard about the house, a pretty while;
+then enter the Constable, meeting Harpoole in the
+Irish man's apparel.]
+
+CONSTABLE.
+Stand close, here comes the Irish man that did the
+murther; by all tokens, this is he.
+
+MAYOR.
+And perceiving the house beset, would get away.
+Stand, sirra.
+
+HARPOOLE.
+What are thou that bidst me stand?
+
+CONSTABLE.
+I am the Officer, and am come to search for an Irish
+man, such a villain as thy self, that hast murthered a
+man this last night by the high way.
+
+HARPOOLE.
+Sblood, Constable, art thou mad? am I an Irish man?
+
+MAYOR.
+Sirra, we'll find you an Irish man before we part:  lay
+hold upon him.
+
+CONSTABLE.
+Make him fast.  O thou bloody rogue!
+
+[Enter Lord Cobham and his lady in the carrier and
+wenches apparel.]
+
+COBHAM.
+What, will these Ostlers sleep all day?
+Good morrow, good morrow.  Come, wench, come.
+Saddle! saddle!  Now afore God too fair days, ha?
+
+CONSTABLE.
+Who comes there?
+
+MAYOR.
+Oh, tis Lancashire carrier; let him pass.
+
+COBHAM.
+What, will no body open the gates here?
+Come, let's int stable to look to our capons.
+
+[Exeunt Cobham and his Lady.]
+
+[The carrier calling.]
+
+CLUB.
+[Calling.]  Host! why ostler! zwooks, here's such a 
+bomination company of boys.  A pox of this pigsty
+at the house end:  it fills all the house full of fleas.
+Ostler! ostler!
+
+[Enter Ostler.]
+
+OSTLER.
+Who calls there? what would you have?
+
+CLUB.
+Zwooks, do you rob your guests? do you lodge rogues
+and slaves, and scoundrels, ha? they ha stolen our clothes 
+here:  why, ostler!
+
+OSTLER.
+A murrein choke you, what a bawlin you keep.
+
+[Enter Host.]
+
+HOST.
+How now, what would the carrier have? look up there.
+
+OSTLER.
+They say that the man and woman that lay by them have
+stolen their clothes.
+
+HOST.
+What, are the strange folks up yet that come in yester night?
+
+CONSTABLE.
+What, mine host, up so early?
+
+HOST.
+What, master Mayor, and master Constable!
+
+MAYOR.
+We are come to seek for some suspected persons,
+And such as here we found, have apprehended.
+
+[Enter the Carrier and Kate in lord Cobham and ladies apparel.]
+
+CONSTABLE.
+Who comes here?
+
+CLUB.
+Who comes here? a plague found ome! you bawl, quoth a!
+ods hat, I'll forzwear your house:  you lodged a fellow and
+his wife by that ha run away with our parrel, and left us such
+gew-gaws here!--Come Kate, come to me, thowse dizeard,
+yfaith.
+
+MAYOR.
+Mine host, know you this man?
+
+HOST.
+Yes, master Mayor, I'll give my word for him.  Why, neighbor
+Club, how comes this gear about?
+
+KATE.
+Now, a fowl ont, I can not make this gew-gaw stand on my
+head:  now the lads and the lasses won flout me too too--
+
+CONSTABLE.
+How came this man and woman thus attired?
+
+HOST.
+Here came a man and woman hither this last night, which I did
+take for substantial people, and lodged all in one chamber by
+these folks, me thinks, have been so bold to change apparel,
+and gone away this morning ere they rose.
+
+MAYOR.
+That was that villain traitor, Old-castle, that thus escaped us:
+make out hue and cry yet after him, keep fast that traitorous
+rebel, his servant, there:  farewell, mine host.
+
+CARRIER.
+Come, Kate Owdham, thou and Ise trimly dizard.
+
+[Exeunt.]
+
+
+ACT V. SCENE VIII. A wood near St. Albans.
+
+[Enter sir John Old-castle, and his Lady disguised.]
+
+COBHAM.
+Come, Madam, happily escaped; here let us sit.
+This place is far remote from any path,
+And here awhile our weary limbs may rest,
+To take refreshing, free from the pursuit
+Of envious Rochester.
+
+LADY COBHAM.
+But where, my Lord,
+Shall we find rest for our disquiet minds?
+There dwell untamed thoughts that hardly stop,
+To such abasement of disdained rags.
+We were not wont to travel thus by night,
+Especially on foot.
+
+COBHAM.
+No matter, love;
+Extremities admit no better choice,
+And were it not for thee, say froward time
+Imposed a greater task, I would esteem it
+As lightly as the wind that blows upon us;
+But in thy sufference I am doubly tasked.
+Thou wast not wont to have the earth thy stool,
+Nor the moist dewy grass thy pillow, nor
+Thy chamber to be the wide horizon.
+
+LADY COBHAM.
+How can it seem a trouble, having you
+A partner with me in the worst I feel?
+No, gentle Lord, your presence would give ease
+To death it self, should he now seize upon me.
+Behold what my foresight hath underta'en
+
+[Here's bread and cheese & a bottle.]
+
+For fear we faint; they are but homely cates,
+Yet sauced with hunger, they may seem as sweet
+As greater dainties we were wont to taste.
+
+COBHAM.
+Praise be to him whose plenty sends both this
+And all things else our mortal bodies need;
+Nor scorn we this poor feeding, nor the state
+We now are in, for what is it on earth,
+Nay, under heaven, continues at a stay?
+Ebbs not the sea, when it hath overflown?
+Follows not darkness when the day is gone?
+And see we not sometime the eye of heaven
+Dimmed with overflying clouds:  there's not that work
+Of careful nature, or of cunning art,
+(How strong, how beauteous, or how rich it be)
+But falls in time to ruin.  Here, gentle Madame,
+In this one draught I wash my sorrow down.
+
+[Drinks.]
+
+LADY COBHAM.
+And I, encouraged with your cheerful speech,
+Will do the like.
+
+COBHAM.
+Pray God poor Harpoole come.
+If he should fall into the Bishop's hands,
+Or not remember where we bade him meet us,
+It were the thing of all things else, that now
+Could breed revolt in this new peace of mind.
+
+LADY COBHAM.
+Fear not, my Lord, he's witty to devise,
+And strong to execute a present shift.
+
+COBHAM.
+That power be still his guide hath guided us!
+My drowsy eyes wax heavy:  early rising,
+Together with the travel we have had,
+Make me that I could gladly take a nap,
+Were I persuaded we might be secure.
+
+LADY COBHAM.
+Let that depend on me:  whilst you do sleep,
+I'll watch that no misfortune happen us.
+Lay then your head upon my lap, sweet Lord,
+And boldly take your rest.
+
+COBHAM.
+I shall, dear wife,
+Be too much trouble to thee.
+
+LADY COBHAM.
+Urge not that;
+My duty binds me, and your love commands.
+I would I had the skill with tuned voice
+To draw on sleep with some sweet melody,
+But imperfection, and unaptness too,
+Are both repugnant:  fear insert the one,
+The other nature hath denied me use.
+But what talk I of means to purchase that,
+Is freely happened? sleep with gentle hand
+Hath shut his eye-lids.  Oh victorious labour,
+How soon thy power can charm the bodies sense?
+And now thou likewise climbst unto my brain,
+Making my heavy temples stoop to thee.
+Great God of heaven from danger keep us free.
+
+[Both sleep.]
+
+[Enter sir Richard Lee, and his men.]
+
+LEE.
+A murder closely done, and in my ground?
+Search carefully, if any where it were,
+This obscure thicket is the likeliest place.
+
+SERVANT.
+Sir, I have found the body stiff with cold,
+And mangled cruelly with many wounds.
+
+LEE.
+Look if thou knowest him, turn his body up.--
+Alack, it is my son, my son and heir,
+Whom two years since I sent to Ireland,
+To practice there the discipline of war,
+And coming home (for so he wrote to me)
+Some savage heart, some bloody devilish hand,
+Either in hate, or thirsting for his coin,
+Hath here sluiced out his blood.  Unhappy hour,
+Accursed place, but most inconstant fate,
+That hadst reserved him from the bullet's fire,
+And suffered him to scape the wood-karn's fury,
+Didst here ordain the treasure of his life,
+(Even here within the arms of tender peace,
+And where security gave greatest hope)
+To be consumed by treason's wasteful hand!
+And what is most afflicting to my soul,
+That this his death and murther should be wrought
+Without the knowledge by whose means twas done.
+
+SECOND SERVANT.
+Not so, sir; I have found the authors of it.
+See where they sit, and in their bloody fists,
+The fatal instruments of death and sin.
+
+LEE.
+Just judgement of that power, whose gracious eye,
+Loathing the sight of such a heinous fact,
+Dazzled their senses with benumbing sleep,
+Till their unhallowed treachery were known!
+Awake, ye monsters; murderers, awake;
+Tremble for horror; blush, you cannot choose,
+Beholding this inhumane deed of yours.
+
+COBHAM.
+What mean you, sir, to trouble weary souls,
+And interrupt us of our quiet sleep?
+
+
+LEE.
+Oh devilish! can you boast unto your selves
+Of quiet sleep, having within your hearts
+The guilt of murder waking, that with cries
+Deafs the loud thunder, and solicits heaven
+With more than Mandrake's shrieks for your offence?
+
+LADY COBHAM.
+What murder? you upbraid us wrongfully.
+
+LEE.
+Can you deny the fact? see you not here
+The body of my son by you mis-done?
+Look on his wounds, look on his purple hue:
+Do we not find you where the deed was done?
+Were not your knives fast closed in your hands?
+Is not this cloth an argument beside,
+Thus stained and spotted with his innocent blood?
+These speaking characters, were nothing else
+To plead against ye, would convict you both.
+Bring them away, bereavers of my joy.
+At Hartford, where the Sizes now are kept,
+Their lives shall answer for my son's lost life.
+
+COBHAM.
+As we are innocent, so may we speed.
+
+LEE.
+As I am wronged, so may the law proceed.
+
+[Exeunt.]
+
+
+ACT V. SCENE IX. St. Albans.
+
+[Enter bishop of Rochester, constable of St. Albans,
+with sir John of Wrotham, Doll his wench, and the
+Irishman in Harpoole's apparel.]
+
+BISHOP.   
+What intricate confusion have we here?
+Not two hours since we apprehended one,
+In habit Irish, but in speech not so:
+And now you bring another, that in speech
+Is altogether Irish, but in habit
+Seems to be English:  yea and more than so, 
+The servant of that heretic Lord Cobham.
+
+IRISHMAN.
+Fait, me be no servant of the lord Cobham,
+Me be Mack Chane of Vister.
+
+BISHOP.
+Otherwise called Harpoole of Kent; go to, sir,
+You cannot blind us with your broken Irish.
+
+SIR JOHN.
+Trust me, my Lord Bishop, whether Irish,
+Or English, Harpoole or not Harpoole, that
+I leave to be decided by the trial:
+But sure I am this man by face and speech
+Is he that murdered young sir Richard Lee--
+I met him presently upon the fact--
+And that he slew his master for that gold;
+Those jewels, and that chain I took from him.
+
+BISHOP.
+Well, our affairs do call us back to London,
+So that we cannot prosecute the cause,
+As we desire to do; therefore we leave
+The charge with you, to see they be conveyed
+To Hartford Sise:  both this counterfeit
+And you, sir John of Wrotham, and your wench,
+For you are culpable as well as they,
+Though not for murder, yet for felony.
+But since you are the means to bring to light
+This graceless murder, you shall bear with you
+Our letters to the Judges of the bench,
+To be your friends in what they lawful may.
+
+BISHOP.
+So, away with them.
+
+[Exeunt.]
+
+
+ACT V. SCENE X. Hertford. A Hall of Justice.
+
+[Enter Gaoler and his man, bringing forth Old-castle.]
+
+GAOLER.
+Bring forth the prisoners, see the court prepared;
+The Justices are coming to the bench.
+So, let him stand; away, and fetch the rest.
+
+[Exeunt.]
+
+COBHAM.
+Oh, give me patience to endure this scourge,
+Thou that art fountain of that virtuous stream,
+And though contempt, false witness, and reproach
+Hang on these iron gyves, to press my life
+As low as earth, yet strengthen me with faith,
+That I may mount in spirit above the clouds.
+
+[Enter Gaoler, bringing in Lady Old-castle and
+Harpoole.]
+
+Here comes my lady:  sorrow, tis for her
+Thy wound is grievous; else I scoff at thee.
+What, and poor Harpoole! art thou ith bryars too?
+
+HARPOOLE.
+Ifaith, my Lord, I am in, get out how I can.
+
+LADY COBHAM.
+Say, gentle Lord, for now we are alone,
+And may confer, shall we confess in brief,
+Of whence, and what we are, and so prevent
+The accusation is commenced against us?
+
+COBHAM.
+What will that help us? being known, sweet love,
+We shall for heresy be put to death,
+For so they term the religion we profess.
+No, if it be ordained we must die,
+And at this instant, this our comfort be,
+That of the guilt imposed, our souls are free.
+
+HARPOOLE.
+Yea, yea, my lord, Harpoole is so resolved.
+I wreak of death the less, in that I die
+Not by the sentence of that envious priest
+The Bishop of Rochester:  oh, were it he,
+Or by his means that I should suffer here,
+It would be double torment to my soul.
+
+LADY COBHAM.
+Well, be it then according as heaven please.
+
+[Enter lord Judge, two Justices, Mayor of Saint
+Albans, lord Powesse and his lady, and old sir
+Richard Lee:  the Judge and Justices take their
+places.]
+
+JUDGE.
+Now, Master Mayor, what gentleman is that,
+You bring with you before us and the bench?
+
+MAYOR.
+The Lord Powis, if it like your honor,
+And this his Lady, travelling toward Wales,
+Who, for they lodged last night within my house,
+And my Lord Bishop did lay search for such,
+Were very willing to come on with me,
+Lest for their sakes suspicion me might wrong.
+
+JUDGE.
+We cry your honor mercy, good my Lord,
+Wilt please ye take your place.  Madame, your ladyship
+May here or where you will repose your self,
+Until this business now in hand be past.
+
+LADY POWIS.
+I will withdraw into some other room,
+So that your Lordship and the rest be pleased.
+
+JUDGE.
+With all our hearts:  attend the Lady there.
+
+LORD POWIS.
+Wife, I have eyed yond prisoners all this while,
+And my conceit doth tell me, tis our friend,
+The noble Cobham, and his virtuous Lady.
+
+LADY POWIS.
+I think no less:  are they suspected, trow ye,
+For doing of this murder?
+
+LORD POWIS.
+What is means
+I cannot tell, but we shall know anon.
+Mean space as you pass by them, ask the question,
+But do it secretly, you be not seen,
+And make some sign that I may know your mind.
+
+LADY POWIS.
+My Lord Cobham? madam?
+
+[As she passeth over the stage by them.]
+
+COBHAM.
+No Cobham now, nor madam, as you love us,
+But John of Lancashire, and Ione his wife.
+
+LADY POWIS.
+Oh tell, what is it that our love can do,
+To pleasure you? for we are bound to you.
+
+COBHAM.
+Nothing but this, that you conceal our names;
+So, gentle lady, pass for being spied.
+
+LADY POWIS.
+My heart I leave, to bear part of your grief.
+
+[Exit.]
+
+JUDGE.
+Call the prisoners to the bar.  Sir Richard Lee,
+What evidence can you bring against these people,
+To prove them guilty of the murder done?
+
+LEE.
+This bloody towel and these naked knives,
+Beside we found them sitting by the place,
+Where the dead body lay, within a bush.
+
+JUDGE.
+What answer you why law should not proceed,
+According to the evidence given in,
+To tax ye with the penalty of death?
+
+COBHAM.
+That we are free from murder's very thoughts,
+And know not how the gentleman was slain.
+
+FIRST JUSTICE.
+How came this linen cloth so bloody then?
+
+
+LADY COBHAM.
+My husband hot with travelling, my lord,
+His nose gushed out a bleeding, that was it.
+
+SECOND JUSTICE.
+But wherefore were your sharp edged knives 
+unsheathed?
+
+LADY COBHAM.
+To cut such simple victual as we had.
+
+JUDGE.
+Say we admit this answer to those articles,
+What made ye in so private a dark nook,
+So far remote from any common path,
+As was the thick where the dead corpse was thrown?
+
+COBHAM.
+Journeying, my lord, from London from the term,
+Down into Lancashire where we do dwell,
+And what with age and travel being faint,
+We gladly sought a place where we might rest,
+Free from resort of other passengers,
+And so we strayed into that secret corner.
+
+JUDGE.
+These are but ambages to drive of time,
+And linger Justice from her purposed end.
+But who are these?
+
+[Enter the Constable, bringing in the Irishman, sir
+John of Wrotham, and Doll.]
+
+CONSTABLE.
+Stay Judgement, and release those innocents,
+For here is he, whose hand hath done the deed,
+For which they stand indicted at the bar,--
+This savage villain, this rude Irish slave.
+His tongue already hath confessed the fact,
+And here is witness to confirm as much.
+
+SIR JOHN.
+Yes, my good Lords, no sooner had he slain
+His loving master for the wealth he had,
+But I upon the instant met with him,
+And what he purchased with the loss of blood:
+With strokes I presently bereaved him of;
+Some of the which is spent, the rest remaining
+I willingly surrender to the hands
+Of old sir Richard Lee, as being his.
+Beside, my Lord Judge, I greet your honor
+With letters from my Lord of Rochester.
+
+[Delivers a letter.]
+
+LEE.
+Is this the wolf whose thirsty throat did drink
+My dear son's blood? art thou the snake
+He cherished, yet with envious piercing sting
+Assailed him mortally? foul stigmatic,
+Thou venom of the country where thou livedst,
+And pestilence of this:  were it not that law
+Stands ready to revenge thy cruelty,
+Traitor to God, thy master, and to me,
+These hands should be thy executioner.
+
+JUDGE.
+Patience, sir Richard Lee, you shall have justice,
+And he the guerdon of his base desert.
+The fact is odious; therefore, take him hence,
+And being hanged until the wretch be dead,
+His body after shall be handed in chains
+Near to the place where he did act the murder.
+
+IRISHMAN.
+Prethee, Lord shudge, let me have mine own
+clothes, my strouces there, and let me be hanged
+in a with after my cuntry--the Irish--fashion.
+
+[Exit.]
+
+JUDGE.
+Go to; away with him.  And now, sir John,
+Although by you this murther came to light,
+And therein you have well deserved, yet upright law,
+So will not have you be excused and quit,
+For you did rob the Irishman, by which
+You stand attainted here of felony.
+Beside, you have been lewd, and many years
+Led a lascivious, unbeseeming life.
+
+
+SIR JOHN.
+Oh but, my Lord, he repents, sir John repents,
+and he will mend.
+
+JUDGE.
+In hope thereof, together with the favour,
+My Lord of Rochester entreats for you,
+We are content you shall be proved.
+
+SIR JOHN.
+I thank you good Lordship.
+
+JUDGE.
+These other falsely here accused, and brought
+In peril wrongfully, we in like sort
+Do set at liberty, paying their fees.
+
+LORD POWIS.
+That office, if it please ye, I will do,
+For countries sake, because I know them well.
+They are my neighbours, therefore of my cost
+Their charges shall be paid.
+
+LEE.
+And for amends,
+Touching the wrong unwittingly I have done,
+There are a few crowns more for them to drink.
+
+[Gives them a purse.]
+
+JUDGE.
+Your kindness merits praise, sir Richard Lee:
+So let us hence.
+
+[Exeunt all but Lord Powis and Old-castle.]
+
+LORD POWIS.
+But Powis still must stay.
+There yet remains a part of that true love
+He owes his noble friend unsatisfied,
+And unperformed, which first of all doth bind me
+To gratulate your lordship's safe delivery,
+And then entreat, that since unlooked for thus
+We here are met, your honor would vouchsafe,
+To ride with me to Wales, where to my power,
+(Though not to quittance those great benefits,
+I have received of you) yet both my house,
+My purse, my servants, and what else I have,
+Are all at your command.  Deny me not;
+I know the Bishop's hate pursues ye so,
+As there's no safety in abiding here.
+
+COBHAM.
+Tis true, my Lord, and God forgive him for it.
+
+LORD POWIS.
+Then, let us hence:  you shall be straight provided
+Of lusty geldings, and once entered Wales,
+Well may the Bishop hunt, but, spite his face,
+He never more shall have the game in chase.
+
+[Exeunt.]
+
+
+FINIS.
+
+
+
+
+
+END OF PROJECT GUTENBERG ETEXT OF "SIR JOHN OLDCASTLE."
+
