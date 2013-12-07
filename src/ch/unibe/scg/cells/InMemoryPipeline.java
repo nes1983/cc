@@ -32,9 +32,12 @@ import com.google.protobuf.ByteString;
 
 /** Implementation of a {@link Pipeline} meant to run in memory. */
 public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
-	final private static int PRINT_INTERVAL = 1; // in seconds.
-	final private static int SHUTDOWN_TIMEOUT = 20; // in seconds.
-	final private static int SAMPLE_SIZE = 100; // How much to sample from each shard to get splitters.
+	/** In seconds. */
+	final private static int PRINT_INTERVAL = 1;
+	/** In seconds. */
+	final private static int SHUTDOWN_TIMEOUT = 20;
+	/** How much to sample from each shard to get splitters. */
+	final private static int SAMPLE_SIZE = 8;
 	final private CellSource<IN> pipeSrc;
 	/** Result of the last pipeline run. */
 	private CellSource<OUT> pipeSink;
