@@ -18,6 +18,7 @@ import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
+
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
@@ -34,11 +35,11 @@ public class CellsInMemoryWordCountBenchmark {
 	private final static int TIMES = 50;
 
 	final static class WordCount {
-		int count;
 		final String word;
 		final String fileName;
+		int count;
 
-		WordCount(String word, int count, String fileName) {
+		WordCount(String word, String fileName, int count) {
 			this.count = count;
 			this.word = word;
 			this.fileName = fileName;
@@ -63,8 +64,8 @@ public class CellsInMemoryWordCountBenchmark {
 		@Override
 		public WordCount decode(Cell<WordCount> encoded) throws IOException {
 			return new WordCount(encoded.getRowKey().toStringUtf8(),
-					Ints.fromByteArray(encoded.getCellContents().toByteArray()),
-					encoded.getColumnKey().toStringUtf8());
+					encoded.getColumnKey().toStringUtf8(),
+					Ints.fromByteArray(encoded.getCellContents().toByteArray()));
 		}
 	}
 
@@ -109,7 +110,7 @@ public class CellsInMemoryWordCountBenchmark {
 						if (dictionary.containsKey(word)) {
 							dictionary.get(word).count++;
 						} else {
-							dictionary.put(word, new WordCount(word, 1, book.fileName));
+							dictionary.put(word, new WordCount(word, book.fileName, 1));
 						}
 					}
 				}
@@ -135,7 +136,7 @@ public class CellsInMemoryWordCountBenchmark {
 			for (WordCount wc : row) {
 				count += wc.count;
 			}
-			sink.write(new WordCount(first.word, count, first.fileName));
+			sink.write(new WordCount(first.word, first.fileName, count));
 		}
 	}
 
@@ -168,7 +169,7 @@ public class CellsInMemoryWordCountBenchmark {
 				}
 
 				timings[i] = (System.nanoTime() - startTime) / 1_000_000_000.0;
-				System.out.println( f.format(timings[i]) );
+				System.out.println(f.format(timings[i]));
 
 				if (dummy == 0) {
 					System.out.println();
