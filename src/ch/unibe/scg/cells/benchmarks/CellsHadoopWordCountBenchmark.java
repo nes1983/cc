@@ -4,12 +4,12 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
+
 import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.benchmarks.CellsInMemoryWordCountBenchmark.Book;
 import ch.unibe.scg.cells.benchmarks.CellsInMemoryWordCountBenchmark.WordCount;
 import ch.unibe.scg.cells.benchmarks.CellsInMemoryWordCountBenchmark.WordCountCodec;
 import ch.unibe.scg.cells.hadoop.HadoopPipeline;
-import ch.unibe.scg.cells.hadoop.RawTextFileFormat;
 import ch.unibe.scg.cells.hadoop.Table;
 import ch.unibe.scg.cells.hadoop.TableAdmin;
 import ch.unibe.scg.cells.hadoop.UnibeModule;
@@ -23,7 +23,7 @@ import com.google.protobuf.ByteString;
  * Benchmarks cells performance in cluster with wordcount problem.
  * Input hdfs folder can be specified via command line argument.
  */
-public class CellsHadoopWordCountBenchmark {
+public final class CellsHadoopWordCountBenchmark {
 	/**
 	 * Runs a wordcount benchmark in cluster. You can specify input folder with first argument.
 	 * The default input folder is "hdfs://haddock.unibe.ch/tmp/books"
@@ -39,7 +39,7 @@ public class CellsHadoopWordCountBenchmark {
 		try (Table<WordCount> tab = inj.getInstance(TableAdmin.class).createTemporaryTable(family)) {
 			HadoopPipeline<Book, WordCount> pipe = HadoopPipeline.fromHDFSToTable(
 					inj.getInstance(Configuration.class),
-					RawTextFileFormat.class,
+					RawFileFormat.class,
 					new Path(input),
 					tab);
 			CellsInMemoryWordCountBenchmark.run(pipe);
