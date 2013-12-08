@@ -14,6 +14,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -91,7 +92,10 @@ public class HadoopBenchmark {
 
 	/** Takes no arguments. */
 	public static void main(String[] args) throws Exception {
-		Job job = Job.getInstance(new Configuration(), "hadoop-wordcount-bench");
+		Configuration conf = new Configuration();
+		conf.setInt(MRJobConfig.NUM_REDUCES, 2);
+
+		Job job = Job.getInstance(conf, "hadoop-wordcount-bench");
 
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
