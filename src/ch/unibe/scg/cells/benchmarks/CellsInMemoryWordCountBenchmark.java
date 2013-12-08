@@ -107,11 +107,10 @@ public class CellsInMemoryWordCountBenchmark {
 			for (Book book : row) {
 				for (String word: book.content.split("\\s+")) {
 					if (!word.isEmpty()) {
-						if (dictionary.containsKey(word)) {
-							dictionary.get(word).count++;
-						} else {
-							dictionary.put(word, new WordCount(word, book.fileName, 1));
+						if (!dictionary.containsKey(word)) {
+							dictionary.put(word, new WordCount(word, book.fileName, 0));
 						}
+						dictionary.get(word).count++;
 					}
 				}
 			}
@@ -129,8 +128,8 @@ public class CellsInMemoryWordCountBenchmark {
 		public void close() throws IOException { }
 
 		@Override
-		public void map(WordCount first, OneShotIterable<WordCount> row, Sink<WordCount> sink) throws IOException,
-		InterruptedException {
+		public void map(WordCount first, OneShotIterable<WordCount> row, Sink<WordCount> sink)
+				throws IOException, InterruptedException {
 			int count = 0;
 
 			for (WordCount wc : row) {
