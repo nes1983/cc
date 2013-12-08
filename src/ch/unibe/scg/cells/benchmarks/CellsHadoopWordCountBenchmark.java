@@ -29,7 +29,7 @@ public final class CellsHadoopWordCountBenchmark {
 	 * The default input folder is "hdfs://haddock.unibe.ch/tmp/books"
 	 */
 	public static void main(String[] args) throws IOException, InterruptedException {
-		String input = "hdfs://haddock.unibe.ch/tmp/books";
+		String input = HadoopBenchmark.INPUT_PATH;
 		if (args.length > 0) {
 			input = args[0];
 		}

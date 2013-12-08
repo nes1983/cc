@@ -149,6 +149,7 @@ class GitInputFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableBy
 		public void close() throws IOException {
 			if (fs != null) {
 				fs.close();
+				fs = null;
 			}
 		}
 	}

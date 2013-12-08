@@ -81,16 +81,19 @@ public class CellsInMemoryWordCountBenchmark {
 
 	final static class BookCodec implements Codec<Book> {
 		private static final long serialVersionUID = 1L;
+		private static ByteString colKey = ByteString.copyFromUtf8("c");
 
 		@Override
 		public Cell<Book> encode(Book b) {
 			return Cell.make(ByteString.copyFromUtf8(b.fileName),
-					ByteString.copyFromUtf8(b.content), ByteString.EMPTY);
+					colKey,
+					ByteString.copyFromUtf8(b.content));
 		}
 
 		@Override
 		public Book decode(Cell<Book> encoded) throws IOException {
-			return new Book(encoded.getRowKey().toStringUtf8(), encoded.getColumnKey().toStringUtf8());
+			return new Book(encoded.getRowKey().toStringUtf8(),
+					encoded.getCellContents().toStringUtf8());
 		}
 	}
 
@@ -162,17 +165,15 @@ public class CellsInMemoryWordCountBenchmark {
 
 				run(pipe);
 
-				int dummy = 0;
+				long total = 0;
 				for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
-					dummy += Iterables.size(wcs);
+					total += Iterables.size(wcs);
 				}
 
 				timings[i] = (System.nanoTime() - startTime) / 1_000_000_000.0;
 				System.out.println(f.format(timings[i]));
 
-				if (dummy == 0) {
-					System.out.println();
-				}
+				System.out.println("Total words: " + total);
 			}
 		}
 

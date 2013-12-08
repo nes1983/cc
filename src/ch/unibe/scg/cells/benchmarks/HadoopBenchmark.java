@@ -66,9 +66,6 @@ public class HadoopBenchmark {
 		protected void setup(Context context) throws IOException {
 			Configuration config = Guice.createInjector(new UnibeModule()).getInstance(Configuration.class);
 			htable = new HTable(config, TEST_TABLE);
-			htable.setAutoFlush(false);
-			htable.setWriteBufferSize(1024 * 1024 * 12);
-			htable.getTableDescriptor().setDeferredLogFlush(true);
 		}
 
 		@Override
