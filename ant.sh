@@ -1,2 +1,2 @@
 #!/bin/bash
-ant -lib libs/jsch-0.1.48.jar $@
+ant -lib libs/jsch-0.1.42.jar $@
