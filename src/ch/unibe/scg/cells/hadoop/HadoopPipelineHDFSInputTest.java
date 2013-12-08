@@ -7,6 +7,14 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.InputSplit;
+import org.apache.hadoop.mapreduce.RecordReader;
+import org.apache.hadoop.mapreduce.TaskAttemptContext;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
@@ -26,6 +34,61 @@ import com.google.protobuf.ByteString;
 @SuppressWarnings("javadoc")
 public final class HadoopPipelineHDFSInputTest {
 	final private static ByteString family = ByteString.copyFromUtf8("f");
+
+	/**
+	 * A proxy object for SequenceFileAsBinaryInputFormat,
+	 * but using ImmutableBytesWritable in the generic type.
+	 */
+	private static class RawTextFileFormat
+			extends FileInputFormat<ImmutableBytesWritable, ImmutableBytesWritable> {
+		final private TextInputFormat underlying = new TextInputFormat();
+
+		@Override
+		public RecordReader<ImmutableBytesWritable, ImmutableBytesWritable>
+				createRecordReader(InputSplit split, TaskAttemptContext context)
+						throws IOException, InterruptedException {
+			return new RecordReaderProxy(underlying.createRecordReader(split, context));
+		}
+	}
+
+	private static class RecordReaderProxy
+			extends RecordReader<ImmutableBytesWritable, ImmutableBytesWritable> {
+		final private RecordReader<LongWritable, Text> underlying;
+
+		RecordReaderProxy(RecordReader<LongWritable, Text> recordReader) {
+			this.underlying = recordReader;
+		}
+
+		@Override
+		public void close() throws IOException {
+			underlying.close();
+		}
+
+		@Override
+		public ImmutableBytesWritable getCurrentKey() throws IOException, InterruptedException {
+			return new ImmutableBytesWritable(Longs.toByteArray(underlying.getCurrentKey().get()));
+		}
+
+		@Override
+		public ImmutableBytesWritable getCurrentValue() throws IOException, InterruptedException {
+			return new ImmutableBytesWritable(underlying.getCurrentValue().getBytes());
+		}
+
+		@Override
+		public float getProgress() throws IOException, InterruptedException {
+			return underlying.getProgress();
+		}
+
+		@Override
+		public void initialize(InputSplit split, TaskAttemptContext ctx) throws IOException, InterruptedException {
+			underlying.initialize(split, ctx);
+		}
+
+		@Override
+		public boolean nextKeyValue() throws IOException, InterruptedException {
+			return underlying.nextKeyValue();
+		}
+	}
 
 	private static class IdentityMapper implements Mapper<File, File> {
 		private static final long serialVersionUID = 1L;
