@@ -13,7 +13,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import ch.unibe.scg.cells.Cell;
-import ch.unibe.scg.cells.CellSource;
 import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.CellsModule;
 import ch.unibe.scg.cells.Codec;
@@ -23,6 +22,7 @@ import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
+import ch.unibe.scg.cells.Source;
 import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.Act;
 import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.ActCodec;
 import ch.unibe.scg.cells.hadoop.HadoopPipelineTest.In;
@@ -202,8 +202,8 @@ public final class ScgDemo {
 				= i.getInstance(InMemoryPipeline.Builder.class).make(in.asCellSource())) {
 			run(pipe);
 			long cnt = -1L;
-			try (CellSource<WordCount> eff = pipe.lastEfflux()) {
-				for (Iterable<WordCount> wcs : Cells.decodeSource(eff, new WordCountCodec())) {
+			try (Source<WordCount> rows = pipe.lastEfflux()) {
+				for (Iterable<WordCount> wcs : rows) {
 					for (WordCount wc : wcs) {
 						if (wc.word.equals("your")) {
 							cnt = wc.count;

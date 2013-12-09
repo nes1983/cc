@@ -241,7 +241,7 @@ public final class HadoopPipelineTest {
 						.make(Cells.shard(Cells.encode(readActsFromDisk(), new ActCodec())))) {
 			run(pipe);
 			long cnt = -1;
-			for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
+			for (Iterable<WordCount> wcs : pipe.lastEfflux()) {
 				for (WordCount wc : wcs) {
 					if (wc.word.equals("your")) {
 						cnt = wc.count;

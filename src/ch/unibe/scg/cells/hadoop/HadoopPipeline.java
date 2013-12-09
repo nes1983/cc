@@ -47,6 +47,7 @@ import ch.unibe.scg.cells.Mapper;
 import ch.unibe.scg.cells.OneShotIterable;
 import ch.unibe.scg.cells.Pipeline;
 import ch.unibe.scg.cells.Sink;
+import ch.unibe.scg.cells.Source;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
@@ -730,5 +731,10 @@ public class HadoopPipeline<IN, EFF> implements Pipeline<IN, EFF> {
 		I first = iter.next();
 		Iterable<I> gluedRow = Iterables.concat(Arrays.asList(first), new AdapterOneShotIterable<>(iter));
 		mapper.map(first, new AdapterOneShotIterable<>(gluedRow), sink);
+	}
+
+	@Override
+	public Source<EFF> lastEfflux() {
+		throw new RuntimeException("Not implemented"); // TODO: Implement.
 	}
 }

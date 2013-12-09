@@ -166,7 +166,7 @@ public class CellsInMemoryWordCountBenchmark {
 				run(pipe);
 
 				long total = 0;
-				for (Iterable<WordCount> wcs : Cells.decodeSource(pipe.lastEfflux(), new WordCountCodec())) {
+				for (Iterable<WordCount> wcs : pipe.lastEfflux()) {
 					total += Iterables.size(wcs);
 				}
 

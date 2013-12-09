@@ -23,6 +23,9 @@ public interface Pipeline<IN, EFF> {
 	/** Return a new pipeline segment, ready for mapping. */
 	MappablePipeline<IN, EFF> influx(Codec<IN> c);
 
+	/** @return result of the last pipeline run. */
+	Source<EFF> lastEfflux();
+
 	/** A segment that is shuffled and ready for mapping.  */
 	public static interface MappablePipeline<I, EFF> {
 		/** Set the mapper of influx {@code I} and efflux {@code E} */

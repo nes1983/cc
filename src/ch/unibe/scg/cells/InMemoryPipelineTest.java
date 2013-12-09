@@ -1,7 +1,6 @@
 package ch.unibe.scg.cells;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -65,29 +64,26 @@ public final class InMemoryPipelineTest {
 				.influx(new IdentityCodec())
 				.mapAndEfflux(new IdentityMapper(), new IdentityCodec());
 
-			try (CellSource<Cell<Void>> out = pipe.lastEfflux()) {
-				List<Cell<Cell<Void>>> actual = new ArrayList<>();
-				for (int i = 0; i < out.nShards(); i++) {
-					OneShotIterable<Cell<Cell<Void>>> shard = out.getShard(i);
-					for (Cell<Cell<Void>> c : shard) {
+			try (Source<Cell<Void>> rows = pipe.lastEfflux()) {
+				List<Cell<Void>> actual = new ArrayList<>();
+				for (Iterable<Cell<Void>> row : rows) {
+					for (Cell<Void> c : row) {
 						actual.add(c);
 					}
 				}
 
 				// Identity mapping should produce the same output as was input.
-				assertThat(actual, is(src));
+				assertEquals(src, actual);
 
 				// Check the grouping.
-				try (Source<Cell<Void>> rows = Cells.decodeSource(out, new IdentityCodec())) {
-					Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 0)),
-							Arrays.asList(src.get(0)));
-					Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 1)),
-							Arrays.asList(src.get(1), src.get(2)));
-					Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 2)),
-							Arrays.asList(src.get(3)));
-					Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 3)),
-							Arrays.asList(src.get(4), src.get(5)));
-				}
+				Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 0)),
+						Arrays.asList(src.get(0)));
+				Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 1)),
+						Arrays.asList(src.get(1), src.get(2)));
+				Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 2)),
+						Arrays.asList(src.get(3)));
+				Assert.assertEquals(Lists.newArrayList(Iterables.get(rows, 3)),
+						Arrays.asList(src.get(4), src.get(5)));
 			}
 		}
 	}

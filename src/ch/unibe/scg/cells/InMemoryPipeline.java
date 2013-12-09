@@ -40,7 +40,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 	final private static int SAMPLE_SIZE = 8;
 	final private CellSource<IN> pipeSrc;
 	/** Result of the last pipeline run. */
-	private CellSource<OUT> pipeSink;
+	private Source<OUT> pipeSink;
 	final private PipelineStageScope scope;
 	/** Synchronized set. */
 	final private Provider<Set<LocalCounter>> registry;
@@ -80,8 +80,8 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		}
 	}
 
-	/** @return result of the last pipeline run. */
-	public CellSource<OUT> lastEfflux() {
+	@Override
+	public Source<OUT> lastEfflux() {
 		return pipeSink;
 	}
 
@@ -107,7 +107,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 		@Override
 		public void mapAndEfflux(Mapper<I, OUT> m, Codec<OUT> sinkCodec)
 				throws IOException, InterruptedException {
-			pipeSink = run(src, srcCodec, m, sinkCodec);
+			pipeSink = Cells.decodeSource(run(src, srcCodec, m, sinkCodec), sinkCodec);
 		}
 	}
 
