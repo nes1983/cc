@@ -37,7 +37,7 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 	/** In seconds. */
 	final private static int SHUTDOWN_TIMEOUT = 20;
 	/** How much to sample from each shard to get splitters. */
-	final private static int SAMPLE_SIZE = 8;
+	final private static int SAMPLE_SIZE = 16;
 	final private CellSource<IN> pipeSrc;
 	/** Result of the last pipeline run. */
 	private Source<OUT> pipeSink;
