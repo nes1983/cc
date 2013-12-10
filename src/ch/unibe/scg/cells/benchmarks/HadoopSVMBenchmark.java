@@ -33,26 +33,22 @@ import ch.unibe.scg.cells.hadoop.UnibeModule;
 public class HadoopSVMBenchmark {
 	final static String TEST_TABLE = HadoopSVMBenchmark.class.getSimpleName();
 	final static String INPUT_PATH = "hdfs://haddock.unibe.ch/tmp/svmdata";
-	final static int DEFAULT_SHARDS = 80;
+	final static int DEFAULT_OUTPUTS = 80;
 
-	/**
-	 * The Map class has to make sure that the data is shuffled to the various machines.
-	 */
+	/** The Map class has to make sure that the data is shuffled to the various machines. */
 	public static class Map extends Mapper<ImmutableBytesWritable, ImmutableBytesWritable, LongWritable, Text> {
 		final private  Text outValue = new Text();
 		final private  LongWritable outKey = new LongWritable();
 
-		private int shards;
+		private int outputs = DEFAULT_OUTPUTS;
 
-		/**
-		 * Spread the data around on K different machines.
-		 */
+		/** Spread the data around on  different machines. */
 		@Override
 		public void map(ImmutableBytesWritable key, ImmutableBytesWritable value, Context context) throws IOException, InterruptedException {
 			try (Scanner sc = new Scanner(new String(value.get(), Charsets.ISO_8859_1))) {
 				int i = 0;
 				while (sc.hasNextLine()) {
-					if (i == shards) {
+					if (i == outputs) {
 						i = 0;
 					}
 
@@ -67,26 +63,20 @@ public class HadoopSVMBenchmark {
 
 		@Override
 		protected void setup(Context context) throws IOException {
-			String shardsFromConfig = context.getConfiguration().get("shard.count");
-			if (shardsFromConfig == null) {
-				shards = DEFAULT_SHARDS;
-			} else {
-				shards = Integer.parseInt(shardsFromConfig);
+			String shardsFromConfig = context.getConfiguration().get("outputs.count");
+			if (shardsFromConfig != null) {
+				outputs = Integer.parseInt(shardsFromConfig);
 			}
 		}
 	}
 
-	/**
-	 * Each of K reducers has to output one file containing the hyperplane.
-	 */
+	/** Reducer outputs one line containing the hyperplane. */
 	public static class Reduce  extends Reducer<LongWritable, Text, NullWritable, NullWritable> {
 		static byte[] FAMILY = "f".getBytes(Charsets.UTF_8);
 		static byte[] COLUMN = "c".getBytes(Charsets.UTF_8);
 		private HTable htable;
 
-		/**
-		 * Construct a hyperplane given the subset of training examples.
-		 */
+		/** Construct a hyperplane given the subset of training examples. */
 		@Override
 		public void reduce(LongWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 			List<TrainingInstance> trainingSet = new LinkedList<>();
@@ -122,7 +112,7 @@ public class HadoopSVMBenchmark {
 	 * The default path is "hdfs://haddock.unibe.ch/tmp/svmdata"
 	 */
 	public static void main(String[] args) throws Exception {
-		int shards = DEFAULT_SHARDS;
+		int shards = DEFAULT_OUTPUTS;
 
 		String input = INPUT_PATH;
 
@@ -150,7 +140,7 @@ public class HadoopSVMBenchmark {
 		job.setInputFormatClass(RawFileFormat.class);
 		job.setOutputFormatClass(NullOutputFormat.class);
 
-		conf.set("shard.count", Integer.toString(shards));
+		conf.set("outputs.count", Integer.toString(shards));
 		job.setNumReduceTasks(shards);
 
 		FileInputFormat.addInputPath(job, new Path(input));

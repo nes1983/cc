@@ -8,14 +8,9 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- * Support Vector Machine.
- */
+/** Support Vector Machine. */
 public class SVM {
-	/**
-	 * Implements the simple vector logic where each
-	 * component is a real number.
-	 */
+	/** Implements the simple vector logic where each component is a real number. */
 	private static class RealVector {
 		double[] w;
 
@@ -56,9 +51,7 @@ public class SVM {
 			return this;
 		}
 
-		/**
-		 * Subtracts a vector from this vector. Assumes equal dimensions.
-		 */
+		/** Subtracts a vector from this vector. Assumes equal dimensions. */
 		void subtract(RealVector other) {
 			double[] u = other.getFeatures();
 			for (int i = 0; i < u.length; ++i) {
@@ -66,9 +59,7 @@ public class SVM {
 			}
 		}
 
-		/**
-		 * Dot-product between two vectors. Assumes equal dimensions.
-		 */
+		/** Dot-product between two vectors. Assumes equal dimensions. */
 		double dotProduct(RealVector other) {
 			double result = 0.0;
 			double[] u = other.getFeatures();
@@ -78,9 +69,7 @@ public class SVM {
 			return result;
 		}
 
-		/**
-		 * Scales the coefficients of this vector by some real factor.
-		 */
+		/** Scales the coefficients of this vector by some real factor. */
 		RealVector scaleThis(double factor) {
 			for (int i = 0; i < this.w.length; ++i) {
 				this.w[i] *= factor;
@@ -122,9 +111,7 @@ public class SVM {
 		}
 	}
 
-	/**
-	 * Represents a training instance.
-	 */
+	/** Represents a training instance. */
 	static class TrainingInstance {
 		private RealVector features;
 		private int label;
@@ -341,17 +328,12 @@ public class SVM {
 		this.weights = weights;
 	}
 
-	/**
-	 * Trains SVM with a list of training instances, and with given maximum
-	 * number of iterations.
-	 */
+	/** Trains SVM with a list of training instances, and with given maximum number of iterations. */
 	static SVM trainSVM(List<TrainingInstance> trainingSet, int iterations) {
 		return new SVM(new BatchSVM(trainingSet).train(iterations));
 	}
 
-	/**
-	 * Instantiates SVM from weights given as a string.
-	 */
+	/** Instantiates SVM from weights given as a string. */
 	SVM(String input) {
 		List<Double> ll = new LinkedList<>();
 		try (Scanner sc = new Scanner(input)) {
@@ -370,9 +352,7 @@ public class SVM {
 		this.weights = new RealVector(w);
 	}
 
-	/**
-	 * Instantiates the SVM model as the average model of the input SVMs.
-	 */
+	/** Instantiates the SVM model as the average model of the input SVMs. */
 	SVM(List<SVM> svmList) {
 		int dim = svmList.get(0).getDimension();
 		RealVector w = new RealVector(dim);
@@ -388,9 +368,7 @@ public class SVM {
 		return weights.getDimension();
 	}
 
-	/**
-	 * Given a training instance it returns the result of sign(weights'instanceFeatures).
-	 */
+	/** Given a training instance it returns the result of sign(weights'instanceFeatures). */
 	int classify(TrainingInstance ti) {
 		RealVector features = ti.getFeatures();
 		double result = features.dotProduct(weights);

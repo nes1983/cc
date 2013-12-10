@@ -33,7 +33,7 @@ import ch.unibe.scg.cells.hadoop.UnibeModule;
  * A cells job for training a distributed svm. Map phase distributes data across machines,
  * reduce phase trains a set of svms on an subset of data.
  */
-public class CellsHadoopSVMBenchmark {
+public final class CellsHadoopSVMBenchmark {
 	static class StringCodec implements Codec<String> {
 		private static final long serialVersionUID = 1L;
 
@@ -58,7 +58,7 @@ public class CellsHadoopSVMBenchmark {
 		}
 	}
 
-	static class TrainingInstanceCodec implements Codec<TrainingInstanceLine> {
+	static class TrainingInstanceLineCodec implements Codec<TrainingInstanceLine> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
@@ -74,12 +74,14 @@ public class CellsHadoopSVMBenchmark {
 		}
 	}
 
-	final static class DataSharder implements Mapper<FileContent, TrainingInstanceLine> {
+	/** The class has to make sure that the data is shuffled to the various machines. */
+	final static class DataDistributor implements Mapper<FileContent, TrainingInstanceLine> {
 		private static final long serialVersionUID = 1L;
-		int shards = 80;
+		int outputs = 80;
 		@Override
 		public void close() throws IOException { }
 
+		/** Spread the data around on  different machines. */
 		@Override
 		public void map(FileContent first, OneShotIterable<FileContent> row, Sink<TrainingInstanceLine> sink)
 				throws IOException, InterruptedException {
@@ -89,7 +91,7 @@ public class CellsHadoopSVMBenchmark {
 					int i = 0;
 
 					while (sc.hasNextLine()) {
-						if (i == shards) {
+						if (i == outputs) {
 							i = 0;
 						}
 
@@ -101,12 +103,14 @@ public class CellsHadoopSVMBenchmark {
 		}
 	}
 
+	/** Reducer outputs one line containing the hyperplane. */
 	final static class SVMTrainer implements Mapper<TrainingInstanceLine, String> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void close() throws IOException { }
 
+		/** Construct a hyperplane given the subset of training examples. */
 		@Override
 		public void map(TrainingInstanceLine first, OneShotIterable<TrainingInstanceLine> row, Sink<String> sink)
 				throws IOException, InterruptedException {
@@ -122,9 +126,7 @@ public class CellsHadoopSVMBenchmark {
 		}
 	}
 
-	/**
-	 * Launches cells job. you can specify input path as parameter.
-	 */
+	/** Launches cells job. you can specify input path as parameter. */
 	public static void main(String[] args) throws IOException, InterruptedException {
 		String input = HadoopSVMBenchmark.INPUT_PATH;
 		if (args.length > 0) {
@@ -147,7 +149,6 @@ public class CellsHadoopSVMBenchmark {
 					tab);
 			run(pipe);
 
-
 			for (Iterable<String> lines : Cells.decodeSource(tab.asCellSource(), new StringCodec())) {
 				for( String line : lines) {
 					System.out.println(line);
@@ -159,8 +160,8 @@ public class CellsHadoopSVMBenchmark {
 	static void run(Pipeline<FileContent, String> pipe) throws IOException, InterruptedException {
 		pipe
 			.influx(new FileContentCodec())
-			.map(new DataSharder())
-			.shuffle(new TrainingInstanceCodec())
+			.map(new DataDistributor())
+			.shuffle(new TrainingInstanceLineCodec())
 			.mapAndEfflux(new SVMTrainer(), new StringCodec());
 	}
 }
