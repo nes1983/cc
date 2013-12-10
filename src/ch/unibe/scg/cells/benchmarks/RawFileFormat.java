@@ -11,7 +11,6 @@ import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
-
 import com.google.common.base.Charsets;
 import com.google.common.io.ByteStreams;
 
@@ -22,7 +21,7 @@ class RawFileFormat extends FileInputFormat<ImmutableBytesWritable, ImmutableByt
 		return new RawFileRecordReader();
 	}
 
-	/** Input format for a directory of fils. No recursion. */
+	/** Input format for a directory of files. No recursion. */
 	static class RawFileRecordReader extends
 			RecordReader<ImmutableBytesWritable, ImmutableBytesWritable> {
 		private ImmutableBytesWritable currentKey;

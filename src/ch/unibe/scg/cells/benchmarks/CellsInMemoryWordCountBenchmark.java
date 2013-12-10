@@ -8,7 +8,6 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
 import ch.unibe.scg.cells.Cell;
 import ch.unibe.scg.cells.Cells;
 import ch.unibe.scg.cells.Codec;
@@ -69,49 +68,49 @@ public class CellsInMemoryWordCountBenchmark {
 		}
 	}
 
-	final static class Book {
+	final static class FileContent {
 		final String fileName;
 		final String content;
 
-		Book(String fileName, String content) {
+		FileContent(String fileName, String content) {
 			this.fileName = fileName;
 			this.content = content;
 		}
 	}
 
-	final static class BookCodec implements Codec<Book> {
+	final static class FileContentCodec implements Codec<FileContent> {
 		private static final long serialVersionUID = 1L;
 		private static ByteString colKey = ByteString.copyFromUtf8("c");
 
 		@Override
-		public Cell<Book> encode(Book b) {
+		public Cell<FileContent> encode(FileContent b) {
 			return Cell.make(ByteString.copyFromUtf8(b.fileName),
 					colKey,
 					ByteString.copyFromUtf8(b.content));
 		}
 
 		@Override
-		public Book decode(Cell<Book> encoded) throws IOException {
-			return new Book(encoded.getRowKey().toStringUtf8(),
+		public FileContent decode(Cell<FileContent> encoded) throws IOException {
+			return new FileContent(encoded.getRowKey().toStringUtf8(),
 					encoded.getCellContents().toStringUtf8());
 		}
 	}
 
-	final static class WordParser implements Mapper<Book, WordCount> {
+	final static class WordParser implements Mapper<FileContent, WordCount> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
 		public void close() throws IOException { }
 
 		@Override
-		public void map(Book first, OneShotIterable<Book> row, Sink<WordCount> sink)
+		public void map(FileContent first, OneShotIterable<FileContent> row, Sink<WordCount> sink)
 				throws IOException, InterruptedException {
 			Map<String, WordCount> dictionary = new HashMap<>();
-			for (Book book : row) {
-				for (String word: book.content.split("\\s+")) {
+			for (FileContent file : row) {
+				for (String word: file.content.split("\\s+")) {
 					if (!word.isEmpty()) {
 						if (!dictionary.containsKey(word)) {
-							dictionary.put(word, new WordCount(word, book.fileName, 0));
+							dictionary.put(word, new WordCount(word, file.fileName, 0));
 						}
 						dictionary.get(word).count++;
 					}
@@ -159,9 +158,9 @@ public class CellsInMemoryWordCountBenchmark {
 		for (int i = 0; i < TIMES; i++) {
 			long startTime = System.nanoTime();
 
-			try (InMemoryPipeline<Book, WordCount> pipe
+			try (InMemoryPipeline<FileContent, WordCount> pipe
 						= Guice.createInjector(new LocalExecutionModule()).getInstance(InMemoryPipeline.Builder.class)
-								.make(Cells.shard(Cells.encode(readBooksFromDisk(input), new BookCodec())))) {
+								.make(Cells.shard(Cells.encode(readBooksFromDisk(input), new FileContentCodec())))) {
 
 				run(pipe);
 
@@ -183,18 +182,18 @@ public class CellsInMemoryWordCountBenchmark {
 
 	}
 
-	static void run(Pipeline<Book, WordCount> pipe) throws IOException, InterruptedException {
-		pipe.influx(new BookCodec())
+	static void run(Pipeline<FileContent, WordCount> pipe) throws IOException, InterruptedException {
+		pipe.influx(new FileContentCodec())
 			.map(new WordParser())
 			.shuffle(new WordCountCodec())
 			.mapAndEfflux(new WordCounter(), new WordCountCodec());
 	}
 
-	private static Iterable<Book> readBooksFromDisk(String path) {
-		final ImmutableList.Builder<Book> ret = ImmutableList.builder();
+	private static Iterable<FileContent> readBooksFromDisk(String path) {
+		final ImmutableList.Builder<FileContent> ret = ImmutableList.builder();
 		for (File f : new File(path).listFiles()) {
 			try {
-				ret.add(new Book(f.getName(),
+				ret.add(new FileContent(f.getName(),
 						CharStreams.toString(new InputStreamReader(new FileInputStream(f), Charsets.UTF_8))));
 			} catch (IOException e) {
 				e.printStackTrace();
