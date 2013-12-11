@@ -160,7 +160,7 @@ public class CellsInMemoryWordCountBenchmark {
 
 			try (InMemoryPipeline<FileContent, WordCount> pipe
 						= Guice.createInjector(new LocalExecutionModule()).getInstance(InMemoryPipeline.Builder.class)
-								.make(Cells.shard(Cells.encode(readBooksFromDisk(input), new FileContentCodec())))) {
+								.make(Cells.shard(Cells.encode(readFilesFromDisk(input), new FileContentCodec())))) {
 
 				run(pipe);
 
@@ -189,7 +189,7 @@ public class CellsInMemoryWordCountBenchmark {
 			.mapAndEfflux(new WordCounter(), new WordCountCodec());
 	}
 
-	private static Iterable<FileContent> readBooksFromDisk(String path) {
+	static Iterable<FileContent> readFilesFromDisk(String path) {
 		final ImmutableList.Builder<FileContent> ret = ImmutableList.builder();
 		for (File f : new File(path).listFiles()) {
 			try {
@@ -213,7 +213,7 @@ public class CellsInMemoryWordCountBenchmark {
 		return copy[copy.length / 2];
 	}
 
-	private static double min(double[] d) {
+	static double min(double[] d) {
 		if (d == null || d.length == 0) {
 			throw new IllegalArgumentException("Min of 0 elements is undefined.");
 		}

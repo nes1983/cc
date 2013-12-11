@@ -77,7 +77,7 @@ public final class CellsHadoopSVMBenchmark {
 	/** The class has to make sure that the data is shuffled to the various machines. */
 	final static class DataDistributor implements Mapper<FileContent, TrainingInstanceLine> {
 		private static final long serialVersionUID = 1L;
-		int outputs = 80;
+		static int outputs = 80;
 		@Override
 		public void close() throws IOException { }
 
@@ -140,6 +140,7 @@ public final class CellsHadoopSVMBenchmark {
 		c.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1100m");
 		c.setLong(MRJobConfig.REDUCE_MEMORY_MB, 1400L);
 		c.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1100m");
+		c.setLong(MRJobConfig.NUM_REDUCES, DataDistributor.outputs);
 
 		try (Table<String> tab = inj.getInstance(TableAdmin.class).createTemporaryTable(family)) {
 			HadoopPipeline<FileContent, String> pipe = HadoopPipeline.fromHDFSToTable(

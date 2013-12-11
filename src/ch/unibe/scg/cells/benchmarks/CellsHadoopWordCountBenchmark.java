@@ -39,6 +39,7 @@ public final class CellsHadoopWordCountBenchmark {
 		c.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx1100m");
 		c.setLong(MRJobConfig.REDUCE_MEMORY_MB, 1400L);
 		c.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx1100m");
+		c.setLong(MRJobConfig.NUM_REDUCES, 2);
 
 		try (Table<WordCount> tab = inj.getInstance(TableAdmin.class).createTemporaryTable(family)) {
 			HadoopPipeline<FileContent, WordCount> pipe = HadoopPipeline.fromHDFSToTable(
