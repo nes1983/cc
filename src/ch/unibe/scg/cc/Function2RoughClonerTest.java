@@ -58,7 +58,7 @@ public final class Function2RoughClonerTest {
 
 			// See paper: Table III
 			assertThat(
-					Iterables.size(Cells.decodeSource(pipe.lastEfflux(), i.getInstance(Function2RoughClonesCodec.class))),
+					Iterables.size(pipe.lastEfflux()),
 					is(2));
 
 			try(Source<Snippet> popularPartitions =

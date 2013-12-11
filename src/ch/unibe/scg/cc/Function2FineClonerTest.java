@@ -56,8 +56,7 @@ public final class Function2FineClonerTest {
 				.mapAndEfflux(i.getInstance(Function2FineCloner.class),
 						i.getInstance(Function2RoughClonesCodec.class));
 
-			try(Source<Clone> rows = Cells.decodeSource(pipe.lastEfflux(),
-					i.getInstance(Function2RoughClonesCodec.class))) {
+			try(Source<Clone> rows = pipe.lastEfflux()) {
 				assertTrue(rows.toString(), Pattern.matches("(?s)\\[\\[thisSnippet \\{\n" +
 						"  function: \".*?\"\n" +
 						"  position: 5\n" +

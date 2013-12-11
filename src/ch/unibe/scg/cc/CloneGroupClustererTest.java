@@ -52,8 +52,7 @@ public final class CloneGroupClustererTest {
 
 			// TODO: run: .effluxWithOfflineMapper(i.getInstance(CloneGroupClusterer.class),
 
-			try(Source<Clone> source
-					= Cells.decodeSource(pipe.lastEfflux(), i.getInstance(Function2RoughClonesCodec.class))) {
+			try(Source<Clone> source = pipe.lastEfflux()) {
 				assertThat(Iterables.toString(source), is(""));
 			}
 
