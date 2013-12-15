@@ -24,7 +24,8 @@ public final class UnibeModule extends AbstractModule {
 			ret.set(MRJobConfig.MAP_JAVA_OPTS, "-Xmx3500m");
 			ret.setLong(MRJobConfig.REDUCE_MEMORY_MB, 4000L);
 			ret.set(MRJobConfig.REDUCE_JAVA_OPTS, "-Xmx3500m");
-			ret.setInt(MRJobConfig.NUM_REDUCES, 300);
+			// adjust this when total memory of cluster changes
+			ret.setInt(MRJobConfig.NUM_REDUCES, 27);
 			ret.setInt(MRJobConfig.MAP_FAILURES_MAX_PERCENT, 99);
 			ret.setBoolean(MRJobConfig.MAP_SPECULATIVE, false);
 			ret.setInt(MRJobConfig.JVM_NUMTASKS_TORUN, -1);

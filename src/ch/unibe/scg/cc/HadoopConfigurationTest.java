@@ -187,11 +187,11 @@ public final class HadoopConfigurationTest {
 	private static List<Configuration> makeReducers(Configuration configuration) {
 		Configuration configurationV1 = new Configuration(configuration);
 		configurationV1.set(MRJobConfig.JOB_NAME, "Reducers lower");
-		configurationV1.setInt(MRJobConfig.NUM_REDUCES, 200);
+		configurationV1.setInt(MRJobConfig.NUM_REDUCES, 18);
 
 		Configuration configurationV2 = new Configuration(configuration);
 		configurationV2.set(MRJobConfig.JOB_NAME, "Reducers higher");
-		configurationV2.setInt(MRJobConfig.NUM_REDUCES, 400);
+		configurationV2.setInt(MRJobConfig.NUM_REDUCES, 38);
 
 		return Arrays.asList(configurationV1, configurationV2);
 	}
