@@ -100,6 +100,7 @@ public final class HadoopConfigurationTest {
 		configurations.addAll(makeReducers(new Configuration(ccConf)));
 		configurations.addAll(makeSlowStart(new Configuration(ccConf)));
 		configurations.addAll(makeReduceMemExperimental(new Configuration(ccConf)));
+		configurations.addAll(makeShuffleParallelCopies(new Configuration(ccConf)));
 		return configurations;
 	}
 
@@ -181,7 +182,11 @@ public final class HadoopConfigurationTest {
 		configurationV2.set(MRJobConfig.JOB_NAME, "Spilling higher");
 		configurationV2.setFloat(MRJobConfig.MAP_SORT_SPILL_PERCENT, 0.95f);
 
-		return Arrays.asList(configurationV1, configurationV2);
+		Configuration configurationV3 = new Configuration(configuration);
+		configurationV3.set(MRJobConfig.JOB_NAME, "Spilling much lower");
+		configurationV3.setFloat(MRJobConfig.MAP_SORT_SPILL_PERCENT, 0.1f);
+
+		return Arrays.asList(configurationV1, configurationV2, configurationV3);
 	}
 
 	private static List<Configuration> makeReducers(Configuration configuration) {
@@ -222,6 +227,23 @@ public final class HadoopConfigurationTest {
 		configurationV2.set(MRJobConfig.JOB_NAME, "Reduce Mem2Mem enabled, threshold 1000");
 		configurationV2.setBoolean(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, true);
 		configurationV2.setInt(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, 1000);
+
+		Configuration configurationV3 = new Configuration(configuration);
+		configurationV3.set(MRJobConfig.JOB_NAME, "Reduce Mem2Mem enabled, threshold 3000");
+		configurationV3.setBoolean(MRJobConfig.REDUCE_MEMTOMEM_ENABLED, true);
+		configurationV3.setInt(MRJobConfig.REDUCE_MERGE_INMEM_THRESHOLD, 3000);
+
+		return Arrays.asList(configurationV1, configurationV2, configurationV3);
+	}
+
+	private static List<Configuration> makeShuffleParallelCopies(Configuration configuration) {
+		Configuration configurationV1 = new Configuration(configuration);
+		configurationV1.set(MRJobConfig.JOB_NAME, "Shuffle Parallel Copies 2");
+		configurationV1.setInt(MRJobConfig.SHUFFLE_PARALLEL_COPIES, 2);
+
+		Configuration configurationV2 = new Configuration(configuration);
+		configurationV2.set(MRJobConfig.JOB_NAME, "Shuffle Parallel Copies 10");
+		configurationV2.setInt(MRJobConfig.SHUFFLE_PARALLEL_COPIES, 10);
 
 		return Arrays.asList(configurationV1, configurationV2);
 	}
