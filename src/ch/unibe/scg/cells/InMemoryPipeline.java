@@ -190,7 +190,6 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 										new AdapterOneShotIterable<>(row),
 										encode(sinks.get(shard), sinkCodec));
 								mappers.put(m);
-
 							}
 						} catch (Exception e) {
 							exceptionHolder.e = e;
@@ -396,7 +395,6 @@ public class InMemoryPipeline<IN, OUT> implements Pipeline<IN, OUT>, Closeable {
 			threadPool.awaitTermination(SHUTDOWN_TIMEOUT, TimeUnit.SECONDS);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt(); // Restore interrupted flag.
-			return;
 		}
 	}
 }
